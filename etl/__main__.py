@@ -13,7 +13,7 @@ def get_string_md5(string):
 
 
 def main():
-    with open(os.path.join(data_dir, 'sample')) as f:
+    with open(os.path.join(data_dir, 'sample'), encoding='utf-8') as f:
         for line in f:
             table = json.loads(line)
             if len(table['relation']) > 15:
