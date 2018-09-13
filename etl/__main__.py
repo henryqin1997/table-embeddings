@@ -37,7 +37,7 @@ class Table():
 
 
 def main():
-    with open(os.path.join(data_dir, 'sample')) as f:
+    with open(os.path.join(data_dir, 'sample'), encoding='utf-8') as f:
         for line in f:
             data = json.loads(line)
             if satisfy_variants(data) and len(data['relation']) in range(10, 20) and len(data['relation'][0]) in range(
