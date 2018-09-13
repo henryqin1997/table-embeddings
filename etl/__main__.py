@@ -17,13 +17,13 @@ class Table():
         assert satisfy_variants(data)
         self.data = data
 
-    def extract_header(self):
+    def get_header(self):
         if self.data['tableOrientation'] == 'HORIZONTAL':
             return [item[self.data['headerRowIndex']] for item in self.data['relation']]
         else:
             return self.data['relation'][self.data['headerRowIndex']]
 
-    def extract_entities(self):
+    def get_entities(self):
         relation = self.data['relation']
         if self.data['tableOrientation'] == 'HORIZONTAL':
             return [[item[i] for item in relation] for (i, val) in enumerate(relation[0]) if
@@ -46,8 +46,8 @@ def main():
                 json.dump(data,
                           open(os.path.join(data_dir, 'table-{}.json'.format(table.get_data_md5())), 'w+'),
                           indent=4)
-                print(table.extract_header())
-                print(table.extract_entities())
+                print(table.get_header())
+                print(table.get_entities())
                 print()
 
 
