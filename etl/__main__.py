@@ -8,6 +8,7 @@ from nltk.tag import StanfordNERTagger
 
 data_dir = './data'
 
+# os.environ['JAVAHOME'] = 'C:/Program Files/Java/jdk1.8.0_144/bin/java.exe'
 jar = './stanford-ner-2018-02-27/stanford-ner.jar'
 model = './stanford-ner-2018-02-27/classifiers/english.muc.7class.distsim.crf.ser.gz'
 model_class = 7
@@ -28,6 +29,7 @@ class Table():
         self.header = self.get_header()
         self.entities = self.get_entities()
         self.attributes = numpy.transpose(self.entities)
+        assert len(self.header) == len(self.attributes)
 
     def get_header(self):
         if self.data['tableOrientation'] == 'HORIZONTAL':
@@ -55,7 +57,7 @@ class Table():
         Each of the 10 columns correspond to a table attribute.
         Run Stanford NER on all values of each table attribute and mark the found tags as 1.
         """
-        m = numpy.zeros((model_class, 10))
+        m = numpy.zeros((len(tag_to_index), 10))
         for i, attribute in enumerate(self.attributes):
             if i >= 10:
                 break
@@ -68,6 +70,23 @@ class Table():
                         m[tag_to_index[ner_tag[1]]][i] = 1
                     except KeyError:
                         pass
+        return m
+
+    def generate_wordlist_matrix(self, wordlist_to_index):
+        """
+        Given a wordlist, e.g. {'Date': 0, 'Name': 1, 'Opponent': 2},
+        Generate a len(wordlist)*10 matrix.
+        Each of the 10 columns correspond to a table attribute.
+        If the label of this column is found in the wordlist, set 1 in that row.
+        """
+        m = numpy.zeros((len(wordlist_to_index), 10))
+        for i, label in enumerate(self.header):
+            if i >= 10:
+                break
+            try:
+                m[wordlist_to_index[label]][i] = 1
+            except KeyError:
+                pass
         return m
 
 
@@ -87,6 +106,7 @@ def main():
                     print(table.entities)
                     print(table.attributes)
                     print(table.generate_ner_matrix())
+                    print(table.generate_wordlist_matrix({'Date': 0, 'Name': 1, 'Opponent': 2}))
                     print()
 
 
