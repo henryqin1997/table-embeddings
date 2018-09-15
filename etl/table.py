@@ -84,7 +84,7 @@ class Table():
             if i >= 10:
                 break
             try:
-                m[wordlist_to_index[label.lower()]][i] = 1
+                m[wordlist_to_index[label.lower().strip()]][i] = 1
             except KeyError:
                 pass
         return m

@@ -4,6 +4,8 @@
 import json
 import os
 import numpy
+import operator
+from collections import defaultdict
 from .table import Table
 from .tagger import st, tag_to_index
 
@@ -20,9 +22,25 @@ def main():
     with open(os.path.join(data_dir, 'sample'), encoding='utf-8') as f:
         for line in f:
             data = json.loads(line)
-            if satisfy_variants(data) and len(data['relation']) in range(10, 20) and len(data['relation'][0]) in range(
-                    10, 20):
+            if satisfy_variants(data):
+                table = Table(data)
+                # # Filter table with labels <= 10
+                # if len(table.get_header()) <= 10:
                 tables.append(Table(data))
+
+    wordlist = defaultdict(int)
+    for table in tables:
+        for label in table.get_header():
+            label = label.lower().strip()
+            if label:
+                wordlist[label.lower().strip()] += 1
+    # Sort wordlist by frequency
+    wordlist = dict(sorted(wordlist.items(), key=operator.itemgetter(1), reverse=True))
+    with open(os.path.join(data_dir, 'wordlist.json'), 'w+') as f:
+        json.dump(wordlist, f, indent=4)
+
+    # Filter table with labels <= 10
+    tables = list(filter(lambda table: len(table.get_header()) <= 10, tables))
 
     for table in tables:
         if table.get_data_md5() == '0abc1124b6766c9bf281982a4e6adc5e':
