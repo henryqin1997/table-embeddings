@@ -8,7 +8,7 @@ from nltk.tag import StanfordNERTagger
 
 data_dir = './data'
 
-# os.environ['JAVAHOME'] = 'C:/Program Files/Java/jdk1.8.0_144/bin/java.exe'
+os.environ['JAVAHOME'] = 'C:/Program Files/Java/jdk1.8.0_144/bin/java.exe'
 jar = './stanford-ner-2018-02-27/stanford-ner.jar'
 model = './stanford-ner-2018-02-27/classifiers/english.muc.7class.distsim.crf.ser.gz'
 model_class = 7
@@ -26,25 +26,36 @@ class Table():
     def __init__(self, data):
         assert satisfy_variants(data)
         self.data = data
-        self.header = self.get_header()
-        self.entities = self.get_entities()
+        self.header = self.extract_header(data)
+        self.entities = self.extract_entities(data)
         self.attributes = numpy.transpose(self.entities)
         assert len(self.header) == len(self.attributes)
 
-    def get_header(self):
-        if self.data['tableOrientation'] == 'HORIZONTAL':
-            return numpy.array([item[self.data['headerRowIndex']] for item in self.data['relation']])
+    @staticmethod
+    def extract_header(data):
+        if data['tableOrientation'] == 'HORIZONTAL':
+            return numpy.array([item[data['headerRowIndex']] for item in data['relation']])
         else:
-            return numpy.array(self.data['relation'][self.data['headerRowIndex']])
+            return numpy.array(data['relation'][data['headerRowIndex']])
 
-    def get_entities(self):
-        relation = self.data['relation']
-        if self.data['tableOrientation'] == 'HORIZONTAL':
+    @staticmethod
+    def extract_entities(data):
+        relation = data['relation']
+        if data['tableOrientation'] == 'HORIZONTAL':
             return numpy.array([numpy.array([item[i] for item in relation]) for (i, val) in enumerate(relation[0]) if
-                                i != self.data['headerRowIndex']])
+                                i != data['headerRowIndex']])
         else:
             return numpy.array(
-                [numpy.array(relation[i]) for (i, val) in enumerate(relation) if i != self.data['headerRowIndex']])
+                [numpy.array(relation[i]) for (i, val) in enumerate(relation) if i != data['headerRowIndex']])
+
+    def get_header(self):
+        return self.header
+
+    def get_entities(self):
+        return self.entities
+
+    def get_attributes(self):
+        return self.attributes
 
     def get_data_md5(self):
         import hashlib
@@ -102,9 +113,9 @@ def main():
                     json.dump(data,
                               open(os.path.join(data_dir, 'table-{}.json'.format(table.get_data_md5())), 'w+'),
                               indent=4)
-                    print(table.header)
-                    print(table.entities)
-                    print(table.attributes)
+                    print(table.get_header())
+                    print(table.get_entities())
+                    print(table.get_attributes())
                     print(table.generate_ner_matrix())
                     print(table.generate_wordlist_matrix({'Date': 0, 'Name': 1, 'Opponent': 2}))
                     print()
