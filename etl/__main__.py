@@ -26,14 +26,14 @@ def main():
 
     for table in tables:
         if table.get_data_md5() == '0abc1124b6766c9bf281982a4e6adc5e':
-            json.dump(data,
+            json.dump(table.data,
                       open(os.path.join(data_dir, 'table-{}.json'.format(table.get_data_md5())), 'w+'),
                       indent=4)
             print(table.get_header())
             print(table.get_entities())
             print(table.get_attributes())
             print(table.generate_ner_matrix(st, tag_to_index))
-            print(table.generate_wordlist_matrix({'Date': 0, 'Name': 1, 'Opponent': 2}))
+            print(table.generate_wordlist_matrix({'date': 0, 'name': 1, 'opponent': 2}))
             print()
 
 

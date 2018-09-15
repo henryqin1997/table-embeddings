@@ -32,6 +32,9 @@ class Table():
             return numpy.array(
                 [numpy.array(relation[i]) for (i, val) in enumerate(relation) if i != data['headerRowIndex']])
 
+    def get_data(self):
+        return self.data
+
     def get_header(self):
         return self.header
 
@@ -81,7 +84,7 @@ class Table():
             if i >= 10:
                 break
             try:
-                m[wordlist_to_index[label]][i] = 1
+                m[wordlist_to_index[label.lower()]][i] = 1
             except KeyError:
                 pass
         return m
