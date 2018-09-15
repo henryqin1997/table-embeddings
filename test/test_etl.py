@@ -30,7 +30,7 @@ class TestETL(unittest.TestCase):
         m = numpy.zeros((7, 10))
         for (i, j) in [(5, 0), (0, 1), (2, 1), (5, 2)]:
             m[i][j] = 1
-        numpy.testing.assert_array_equal(self.table.generate_ner_matrix(etl.st), m)
+        numpy.testing.assert_array_equal(self.table.generate_ner_matrix(etl.st, etl.tag_to_index), m)
 
     def test_wordlist_matrix(self):
         wordlist = {'Date': 0, 'Name': 1, 'Opponent': 2}
