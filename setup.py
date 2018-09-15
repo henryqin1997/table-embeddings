@@ -4,12 +4,12 @@
 from setuptools import setup
 
 setup(
-    name='tables-embedding',
+    name='table-embeddings',
     version='0.1.0',
     author='Zian Ke, Ziheng Qin',
     author_email='kezian@umich.edu, henryqin@umich.edu',
-    url='https://github.com/henryqin1997/Tables-Embedding',
-    description='Table Embedding project under instruction of Mike Caferalla.',
+    url='https://github.com/henryqin1997/table-embeddings',
+    description='Table Embeddings project under instruction of Mike Caferalla.',
     license='MIT',
     packages=['etl'],
     include_package_data=True,
