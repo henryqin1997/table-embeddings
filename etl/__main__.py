@@ -86,7 +86,7 @@ def main():
                     print(table.header)
                     print(table.entities)
                     print(table.attributes)
-                    print(table.get_ner_matrix())
+                    print(table.generate_ner_matrix())
                     print()
 
 
