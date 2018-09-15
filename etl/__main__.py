@@ -8,7 +8,7 @@ from nltk.tag import StanfordNERTagger
 
 data_dir = './data'
 
-os.environ['JAVAHOME'] = 'C:/Program Files/Java/jdk1.8.0_144/bin/java.exe'
+# os.environ['JAVAHOME'] = 'C:/Program Files/Java/jdk1.8.0_144/bin/java.exe'
 jar = './stanford-ner-2018-02-27/stanford-ner.jar'
 model = './stanford-ner-2018-02-27/classifiers/english.muc.7class.distsim.crf.ser.gz'
 model_class = 7
@@ -24,7 +24,7 @@ def satisfy_variants(data):
 
 class Table():
     def __init__(self, data):
-        assert satisfy_variants(data)
+        # assert satisfy_variants(data)
         self.data = data
         self.header = self.extract_header(data)
         self.entities = self.extract_entities(data)
@@ -61,20 +61,25 @@ class Table():
         import hashlib
         return hashlib.md5(json.dumps(self.data).encode('utf-8')).hexdigest()
 
-    def generate_ner_matrix(self):
+    def generate_ner_matrix(self, tagger):
         """
         Generate a 7*10 array.
         Each of the 7 rows corresponds to a NER tag.
         Each of the 10 columns correspond to a table attribute.
         Run Stanford NER on all values of each table attribute and mark the found tags as 1.
         """
+        ner_tags_dict = {}
         m = numpy.zeros((len(tag_to_index), 10))
         for i, attribute in enumerate(self.attributes):
             if i >= 10:
                 break
             for value in attribute:
                 print(value)
-                ner_tags = st.tag(value.split())
+                try:
+                    ner_tags = ner_tags_dict[repr(value.split())]
+                except KeyError:
+                    ner_tags = tagger.tag(value.split())
+                    ner_tags_dict[repr(value.split())] = ner_tags
                 print(ner_tags)
                 for ner_tag in ner_tags:
                     try:
@@ -116,7 +121,7 @@ def main():
                     print(table.get_header())
                     print(table.get_entities())
                     print(table.get_attributes())
-                    print(table.generate_ner_matrix())
+                    print(table.generate_ner_matrix(st))
                     print(table.generate_wordlist_matrix({'Date': 0, 'Name': 1, 'Opponent': 2}))
                     print()
 

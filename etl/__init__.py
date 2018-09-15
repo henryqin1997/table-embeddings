@@ -1,1 +1,1 @@
-from .__main__ import Table
+from .__main__ import Table, st
