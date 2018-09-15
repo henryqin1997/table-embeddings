@@ -11,7 +11,7 @@ setup(
     url='https://github.com/henryqin1997/Tables-Embedding',
     description='Table Embedding project under instruction of Mike Caferalla.',
     license='MIT',
-    packages=['tables-embedding'],
+    packages=['etl'],
     include_package_data=True,
     zip_safe=False,
     install_requires=['nltk==3.3',
