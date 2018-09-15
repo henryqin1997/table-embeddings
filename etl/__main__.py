@@ -3,8 +3,17 @@
 
 import json
 import os
+import numpy
+from nltk.tag import StanfordNERTagger
 
 data_dir = './data'
+
+jar = './stanford-ner-2018-02-27/stanford-ner.jar'
+model = './stanford-ner-2018-02-27/classifiers/english.muc.7class.distsim.crf.ser.gz'
+model_class = 7
+tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERCENT': 4, 'DATE': 5, 'TIME': 6}
+
+st = StanfordNERTagger(model, jar, encoding='utf-8')
 
 
 def satisfy_variants(data):
@@ -16,39 +25,69 @@ class Table():
     def __init__(self, data):
         assert satisfy_variants(data)
         self.data = data
+        self.header = self.get_header()
+        self.entities = self.get_entities()
+        self.attributes = numpy.transpose(self.entities)
 
     def get_header(self):
         if self.data['tableOrientation'] == 'HORIZONTAL':
-            return [item[self.data['headerRowIndex']] for item in self.data['relation']]
+            return numpy.array([item[self.data['headerRowIndex']] for item in self.data['relation']])
         else:
-            return self.data['relation'][self.data['headerRowIndex']]
+            return numpy.array(self.data['relation'][self.data['headerRowIndex']])
 
     def get_entities(self):
         relation = self.data['relation']
         if self.data['tableOrientation'] == 'HORIZONTAL':
-            return [[item[i] for item in relation] for (i, val) in enumerate(relation[0]) if
-                    i != self.data['headerRowIndex']]
+            return numpy.array([numpy.array([item[i] for item in relation]) for (i, val) in enumerate(relation[0]) if
+                                i != self.data['headerRowIndex']])
         else:
-            return [relation[i] for (i, val) in enumerate(relation) if i != self.data['headerRowIndex']]
+            return numpy.array(
+                [numpy.array(relation[i]) for (i, val) in enumerate(relation) if i != self.data['headerRowIndex']])
 
     def get_data_md5(self):
         import hashlib
         return hashlib.md5(json.dumps(self.data).encode('utf-8')).hexdigest()
 
+    def generate_ner_matrix(self):
+        """
+        Generate a 7*10 array.
+        Each of the 7 rows corresponds to a NER tag.
+        Each of the 10 columns correspond to a table attribute.
+        Run Stanford NER on all values of each table attribute and mark the found tags as 1.
+        """
+        m = numpy.zeros((model_class, 10))
+        for i, attribute in enumerate(self.attributes):
+            if i >= 10:
+                break
+            for value in attribute:
+                print(value)
+                ner_tags = st.tag(value.split())
+                print(ner_tags)
+                for ner_tag in ner_tags:
+                    try:
+                        m[tag_to_index[ner_tag[1]]][i] = 1
+                    except KeyError:
+                        pass
+        return m
+
 
 def main():
+    # print(st.tag('Michael Cafarella is doing a project on Tables Embedding in September 2018'.split()))
     with open(os.path.join(data_dir, 'sample'), encoding='utf-8') as f:
         for line in f:
             data = json.loads(line)
             if satisfy_variants(data) and len(data['relation']) in range(10, 20) and len(data['relation'][0]) in range(
                     10, 20):
                 table = Table(data)
-                json.dump(data,
-                          open(os.path.join(data_dir, 'table-{}.json'.format(table.get_data_md5())), 'w+'),
-                          indent=4)
-                print(table.get_header())
-                print(table.get_entities())
-                print()
+                if table.get_data_md5() == '0abc1124b6766c9bf281982a4e6adc5e':
+                    json.dump(data,
+                              open(os.path.join(data_dir, 'table-{}.json'.format(table.get_data_md5())), 'w+'),
+                              indent=4)
+                    print(table.header)
+                    print(table.entities)
+                    print(table.attributes)
+                    print(table.get_ner_matrix())
+                    print()
 
 
 if __name__ == '__main__':
