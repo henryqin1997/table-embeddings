@@ -32,7 +32,7 @@ def main():
     for table in tables:
         for label in table.get_header():
             label = label.lower().strip()
-            if label:
+            if len(label) > 2:
                 wordlist[label.lower().strip()] += 1
     # Sort wordlist by frequency
     wordlist = dict(sorted(wordlist.items(), key=operator.itemgetter(1), reverse=True))
