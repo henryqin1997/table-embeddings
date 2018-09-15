@@ -74,13 +74,11 @@ class Table():
             if i >= 10:
                 break
             for value in attribute:
-                print(value)
                 try:
                     ner_tags = ner_tags_dict[repr(value.split())]
                 except KeyError:
                     ner_tags = tagger.tag(value.split())
                     ner_tags_dict[repr(value.split())] = ner_tags
-                print(ner_tags)
                 for ner_tag in ner_tags:
                     try:
                         m[tag_to_index[ner_tag[1]]][i] = 1
