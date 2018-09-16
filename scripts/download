@@ -1,4 +1,5 @@
 #!/bin/bash
+for i in `seq 0 50`
 do
     if [ ! -f webtables/$(printf %02d $i).downloaded ]; then
         rm -f webtables/$(printf %02d $i).tar.gz
