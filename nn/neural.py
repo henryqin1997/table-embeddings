@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 """The 0.1 version of the training network for Tables-Embedding Project"""
 
 import torch.nn as nn
@@ -25,5 +28,3 @@ class Net(nn.Module):
         xn = F.normalize(x, p=2, dim=1)
         xn = xn.view(-1)
         return xn
-
-
