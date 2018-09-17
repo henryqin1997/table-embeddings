@@ -4,7 +4,7 @@ do
     if [ ! -f webtables/$(printf %02d $i).extracted ]; then
         rm -f webtables/$(printf %02d $i).tar
         rm -rf webtables/$i
-        tar -xf webtables/$(printf %02d $i).tar.gz -C webtables
+        tar -xvf webtables/$(printf %02d $i).tar.gz -C webtables
         tar -xf webtables/$(printf %02d $i).tar -C webtables
         touch webtables/$(printf %02d $i).extracted
     fi
