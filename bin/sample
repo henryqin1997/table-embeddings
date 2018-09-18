@@ -1,0 +1,4 @@
+#!/bin/bash
+rm -rf data/input
+mkdir data/input
+cp webtables/*/*5-ip*25.json data/input
