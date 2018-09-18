@@ -6,9 +6,14 @@ import json
 import hashlib
 
 
+def satisfy_variants(data):
+    return data['tableType'] == 'RELATION' and data['hasHeader'] and data['headerRowIndex'] >= 0 and data[
+        'tableOrientation'] in ['HORIZONTAL', 'VERTICAL']
+
+
 class Table():
     def __init__(self, data):
-        # assert satisfy_variants(data)
+        assert satisfy_variants(data)
         self.data = data
         self.header = self.extract_header(data)
         self.entities = self.extract_entities(data)

@@ -7,14 +7,10 @@ import numpy
 import operator
 from collections import defaultdict
 from .table import Table
+from .table import satisfy_variants
 from .tagger import st, tag_to_index
 
 data_dir = './data'
-
-
-def satisfy_variants(data):
-    return data['tableType'] == 'RELATION' and data['hasHeader'] and data['headerRowIndex'] >= 0 and data[
-        'tableOrientation'] in ['HORIZONTAL', 'VERTICAL']
 
 
 def main():
