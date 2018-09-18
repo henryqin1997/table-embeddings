@@ -13,8 +13,8 @@ rm -rf $HADOOP_DIR/output1
 hadoop-2.9.1/bin/hadoop \
    jar $HADOOP_DIR/hadoop-streaming-2.7.2.jar \
    -D mapreduce.job.maps=32 \
-   -D mapreduce.job.reduces=16 \
-   -input data/sample \
+   -D mapreduce.job.reduces=32 \
+   -input data/input \
    -output $HADOOP_DIR/output1 \
    -mapper $EXEC_DIR/map1.py \
    -reducer $EXEC_DIR/reduce1.py \
@@ -24,7 +24,7 @@ rm -rf $HADOOP_DIR/output2
 
 hadoop-2.9.1/bin/hadoop \
    jar $HADOOP_DIR/hadoop-streaming-2.7.2.jar \
-   -D mapreduce.job.maps=32 \
+   -D mapreduce.job.maps=16 \
    -D mapreduce.job.reduces=16 \
    -input $HADOOP_DIR/output1 \
    -output $HADOOP_DIR/output2 \
