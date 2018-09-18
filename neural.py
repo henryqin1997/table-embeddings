@@ -15,8 +15,8 @@ class Net(nn.Module):
         self.fc2 = nn.Linear(2 * WORDLIST_LABEL_SIZE * 10, WORDLIST_LABEL_SIZE * 10)
 
     def forward(self, x):
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
+        x = self.fc1(x)
+        x = self.fc2(x)
         x = self.normalize(self, x)
         return x
 
