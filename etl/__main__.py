@@ -11,9 +11,28 @@ from .table import satisfy_variants
 from .tagger import st, tag_to_index
 
 data_dir = './data'
+wordlist_raw = './hadoop/output2/part-00000'
+
+
+def generate_wordlist(raw_file):
+    wordlist = {}
+    index = 0
+    with open(raw_file) as f:
+        lines = f.readlines()
+        for line in lines:
+            line = line.strip()
+            i = line.find('\t')
+            count = int(line[:i])
+            word = line[i + 1:]
+            if count > 1:
+                wordlist[word] = index
+                index += 1
+    return wordlist
 
 
 def main():
+    json.dump(generate_wordlist(wordlist_raw), open('data/wordlist.json', 'w+'), indent=4)
+    return
     tables = []
     with open(os.path.join(data_dir, 'sample'), encoding='utf-8') as f:
         for line in f:
