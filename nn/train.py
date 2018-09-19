@@ -12,9 +12,20 @@ def load_data():
     target = 0
     return input, target
 
+##########################333#3#
+#evaluation of model:
+#1. accuracy of prediction of label over target     #correct prediction/#targetlabel
+#2. accuracy of prediction of label over target when other doesn't count
+#   #correct prediction(no 'other')/#targetlabel(no other)
+
 
 def accuracy(): # to be implemented
     return 0
+
+def accuracy_no_other(): # to be implemented
+    return 0
+
+################################
 
 
 def train(input, target, net):
