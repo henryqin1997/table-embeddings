@@ -12,6 +12,7 @@ from .table import satisfy_variants
 from .tagger import st, tag_to_index
 
 data_dir = './data'
+webtables_dir = './webtables'
 wordlist_raw = './hadoop/output2/part-00000'
 tree_dir = './data/tree'
 num_folders = 51
@@ -58,30 +59,29 @@ def main():
     # json.dump(list_training_files(), open('data/training_files.json', 'w+'), indent=4)
     # return
 
+    training_files = json.load(open(training_files_json))
+    wordlist = json.load(open(wordlist_json))
     tables = []
-    with open(os.path.join(data_dir, 'sample'), encoding='utf-8') as f:
-        for line in f:
-            data = json.loads(line)
-            if satisfy_variants(data):
-                table = Table(data)
-                # # Filter table with labels <= 10
-                # if len(table.get_header()) <= 10:
-                tables.append(Table(data))
+    for training_file in training_files:
+        with open(os.path.join(webtables_dir, training_file), encoding='utf-8') as f:
+            for line in f:
+                data = json.loads(line)
+                if satisfy_variants(data):
+                    tables.append(Table(data))
 
     # Filter table with labels <= 10
     tables = list(filter(lambda table: len(table.get_header()) <= 10, tables))
 
     for table in tables:
-        if table.get_data_md5() == '0abc1124b6766c9bf281982a4e6adc5e':
-            json.dump(table.data,
-                      open(os.path.join(data_dir, 'table-{}.json'.format(table.get_data_md5())), 'w+'),
-                      indent=4)
-            print(table.get_header())
-            print(table.get_entities())
-            print(table.get_attributes())
-            print(table.generate_ner_matrix(st, tag_to_index))
-            print(table.generate_wordlist_matrix({'date': 0, 'name': 1, 'opponent': 2}))
-            print()
+        json.dump(table.data,
+                  open(os.path.join(data_dir, 'train', 'table-{}.json'.format(table.get_data_md5())), 'w+'),
+                  indent=4)
+        print(table.get_header())
+        print(table.get_entities())
+        print(table.get_attributes())
+        # print(table.generate_ner_matrix(st, tag_to_index))
+        # print(table.generate_wordlist_matrix(wordlist))
+        print()
 
 
 if __name__ == '__main__':
