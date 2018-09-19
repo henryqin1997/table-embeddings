@@ -68,17 +68,6 @@ def main():
                 # if len(table.get_header()) <= 10:
                 tables.append(Table(data))
 
-    wordlist = defaultdict(int)
-    for table in tables:
-        for label in table.get_header():
-            label = label.lower().strip()
-            if len(label) > 2:
-                wordlist[label.lower().strip()] += 1
-    # Sort wordlist by frequency
-    wordlist = dict(sorted(wordlist.items(), key=operator.itemgetter(1), reverse=True))
-    with open(os.path.join(data_dir, 'wordlist.json'), 'w+') as f:
-        json.dump(wordlist, f, indent=4)
-
     # Filter table with labels <= 10
     tables = list(filter(lambda table: len(table.get_header()) <= 10, tables))
 
