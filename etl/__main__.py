@@ -61,27 +61,22 @@ def main():
 
     training_files = json.load(open(training_files_json))
     wordlist = json.load(open(wordlist_json))
-    tables = []
     for training_file in training_files:
-        with open(os.path.join(webtables_dir, training_file), encoding='utf-8') as f:
-            for line in f:
-                data = json.loads(line)
-                if satisfy_variants(data):
-                    tables.append(Table(data))
-
-    # Filter table with labels <= 10
-    tables = list(filter(lambda table: len(table.get_header()) <= 10, tables))
-
-    for table in tables:
-        md5 = table.get_data_md5()
-        print(md5)
-        json.dump(table.data,
-                  open(os.path.join(data_dir, 'train', '{}_table.json'.format(md5)), 'w+'),
-                  indent=4)
-        numpy.savetxt(os.path.join(data_dir, 'train', '{}_ner.csv'.format(md5)),
-                      table.generate_ner_matrix(st, tag_to_index), fmt='%i', delimiter=",")
-        numpy.savetxt(os.path.join(data_dir, 'train', '{}_wordlist.csv'.format(md5)),
-                      table.generate_wordlist_matrix(wordlist), fmt='%i', delimiter=",")
+        data = json.load(open(os.path.join(webtables_dir, training_file), encoding='utf-8'))
+        if satisfy_variants(data):
+            table = Table(data)
+            # Filter table with labels <= 10
+            if len(table.get_header()) <= 10:
+                if not os.path.exists(os.path.join(data_dir, os.path.dirname(training_file))):
+                    os.makedirs(os.path.join(data_dir, os.path.dirname(training_file)))
+                basename = training_file.rstrip('.json')
+                json.dump(table.data,
+                          open(os.path.join(data_dir, 'train', training_file), 'w+'),
+                          indent=4)
+                numpy.savetxt(os.path.join(data_dir, 'train', '{}_ner.csv'.format(basename)),
+                              table.generate_ner_matrix(st, tag_to_index), fmt='%i', delimiter=",")
+                numpy.savetxt(os.path.join(data_dir, 'train', '{}_wordlist.csv'.format(basename)),
+                              table.generate_wordlist_matrix(wordlist), fmt='%i', delimiter=",")
 
 
 if __name__ == '__main__':
