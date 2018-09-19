@@ -1,0 +1,8 @@
+#!/bin/bash
+rm -rf data/tree
+mkdir data/tree
+for i in `seq 0 50`
+do
+    echo $i
+    ls webtables/$i > data/tree/$i
+done
