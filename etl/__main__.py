@@ -68,6 +68,7 @@ def main():
             table = Table(data)
             # Filter table with labels <= 10
             if len(table.get_header()) <= 10:
+                print(training_file)
                 if not os.path.exists(os.path.join(training_data_dir, os.path.dirname(training_file))):
                     os.makedirs(os.path.join(training_data_dir, os.path.dirname(training_file)))
                 basename = training_file.rstrip('.json')
