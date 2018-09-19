@@ -3,6 +3,7 @@
 
 """The 0.1 version of the training network for Tables-Embedding Project"""
 
+import torch.save
 import torch.nn as nn
 import torch.nn.functional as F
 
@@ -18,8 +19,8 @@ class Net(nn.Module):
         self.fc2 = nn.Linear(2 * WORDLIST_LABEL_SIZE * 10, WORDLIST_LABEL_SIZE * 10)
 
     def forward(self, x):
-        x = F.relu(self.fc1(x))
-        x = F.relu(self.fc2(x))
+        x = self.fc1(x)
+        x = self.fc2(x)
         x = self.normalize(self, x)
         return x
 
@@ -28,3 +29,9 @@ class Net(nn.Module):
         xn = F.normalize(x, p=2, dim=1)
         xn = xn.view(-1)
         return xn
+
+def save_model(model):
+    model.save_state_dict("mytraining.pt")
+
+def load_model(model):
+    model.load_state_dict(torch.load("mytraining.pt"))
