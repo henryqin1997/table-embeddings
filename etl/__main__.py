@@ -78,13 +78,10 @@ def main():
         json.dump(table.data,
                   open(os.path.join(data_dir, 'train', '{}_table.json'.format(md5)), 'w+'),
                   indent=4)
-        table.generate_ner_matrix(st, tag_to_index).dump(os.path.join(data_dir, 'train', '{}_ner.mat'.format(md5)))
-        table.generate_wordlist_matrix(wordlist).dump(os.path.join(data_dir, 'train', '{}_wordlist.mat'.format(md5)))
-        # print(table.get_header())
-        # print(table.get_entities())
-        # print(table.get_attributes())
-        # print(table.generate_ner_matrix(st, tag_to_index))
-        # print(table.generate_wordlist_matrix(wordlist))
+        numpy.savetxt(os.path.join(data_dir, 'train', '{}_ner.mat'.format(md5)),
+                      table.generate_ner_matrix(st, tag_to_index), fmt='%i', delimiter=",")
+        numpy.savetxt(os.path.join(data_dir, 'train', '{}_wordlist.mat'.format(md5)),
+                      table.generate_wordlist_matrix(wordlist), fmt='%i', delimiter=",")
 
 
 if __name__ == '__main__':
