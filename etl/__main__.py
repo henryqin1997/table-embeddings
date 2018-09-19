@@ -12,6 +12,7 @@ from .table import satisfy_variants
 from .tagger import st, tag_to_index
 
 data_dir = './data'
+training_data_dir = './data/train'
 webtables_dir = './webtables'
 wordlist_raw = './hadoop/output2/part-00000'
 tree_dir = './data/tree'
@@ -67,15 +68,15 @@ def main():
             table = Table(data)
             # Filter table with labels <= 10
             if len(table.get_header()) <= 10:
-                if not os.path.exists(os.path.join(data_dir, os.path.dirname(training_file))):
-                    os.makedirs(os.path.join(data_dir, os.path.dirname(training_file)))
+                if not os.path.exists(os.path.join(training_data_dir, os.path.dirname(training_file))):
+                    os.makedirs(os.path.join(training_data_dir, os.path.dirname(training_file)))
                 basename = training_file.rstrip('.json')
                 json.dump(table.data,
-                          open(os.path.join(data_dir, 'train', training_file), 'w+'),
+                          open(os.path.join(training_data_dir, training_file), 'w+'),
                           indent=4)
-                numpy.savetxt(os.path.join(data_dir, 'train', '{}_ner.csv'.format(basename)),
+                numpy.savetxt(os.path.join(training_data_dir, '{}_ner.csv'.format(basename)),
                               table.generate_ner_matrix(st, tag_to_index), fmt='%i', delimiter=",")
-                numpy.savetxt(os.path.join(data_dir, 'train', '{}_wordlist.csv'.format(basename)),
+                numpy.savetxt(os.path.join(training_data_dir, '{}_wordlist.csv'.format(basename)),
                               table.generate_wordlist_matrix(wordlist), fmt='%i', delimiter=",")
 
 
