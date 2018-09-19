@@ -1,6 +1,8 @@
 # Data
-data/
 webtables/
+data/*
+!data/wordlist.json
+!data/training_files.json
 
 # Stanford NER
 stanford-ner-2018-02-27/
