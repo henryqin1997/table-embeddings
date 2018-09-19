@@ -73,15 +73,21 @@ def main():
     tables = list(filter(lambda table: len(table.get_header()) <= 10, tables))
 
     for table in tables:
+        print(table.get_data_md5())
         json.dump(table.data,
-                  open(os.path.join(data_dir, 'train', 'table-{}.json'.format(table.get_data_md5())), 'w+'),
+                  open(os.path.join(data_dir, 'train', '{}_table.json'.format(table.get_data_md5())), 'w+'),
                   indent=4)
-        print(table.get_header())
-        print(table.get_entities())
-        print(table.get_attributes())
+        json.dump(table.generate_ner_matrix(st, tag_to_index),
+                  open(os.path.join(data_dir, 'train', '{}_ner.json'.format(table.get_data_md5())), 'w+'),
+                  indent=4)
+        json.dump(table.generate_wordlist_matrix(wordlist),
+                  open(os.path.join(data_dir, 'train', '{}_wordlist.json'.format(table.get_data_md5())), 'w+'),
+                  indent=4)
+        # print(table.get_header())
+        # print(table.get_entities())
+        # print(table.get_attributes())
         # print(table.generate_ner_matrix(st, tag_to_index))
         # print(table.generate_wordlist_matrix(wordlist))
-        print()
 
 
 if __name__ == '__main__':
