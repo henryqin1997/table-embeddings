@@ -53,9 +53,11 @@ def list_training_files():
 
 
 def main():
-    json.dump(generate_wordlist(), open('data/wordlist.json', 'w+'), indent=4)
-    json.dump(list_training_files(), open('data/training_files.json', 'w+'), indent=4)
-    return
+    # # Generate wordlist and training files list
+    # json.dump(generate_wordlist(), open('data/wordlist.json', 'w+'), indent=4)
+    # json.dump(list_training_files(), open('data/training_files.json', 'w+'), indent=4)
+    # return
+
     tables = []
     with open(os.path.join(data_dir, 'sample'), encoding='utf-8') as f:
         for line in f:
