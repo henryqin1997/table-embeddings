@@ -78,9 +78,9 @@ def main():
         json.dump(table.data,
                   open(os.path.join(data_dir, 'train', '{}_table.json'.format(md5)), 'w+'),
                   indent=4)
-        numpy.savetxt(os.path.join(data_dir, 'train', '{}_ner.mat'.format(md5)),
+        numpy.savetxt(os.path.join(data_dir, 'train', '{}_ner.csv'.format(md5)),
                       table.generate_ner_matrix(st, tag_to_index), fmt='%i', delimiter=",")
-        numpy.savetxt(os.path.join(data_dir, 'train', '{}_wordlist.mat'.format(md5)),
+        numpy.savetxt(os.path.join(data_dir, 'train', '{}_wordlist.csv'.format(md5)),
                       table.generate_wordlist_matrix(wordlist), fmt='%i', delimiter=",")
 
 
