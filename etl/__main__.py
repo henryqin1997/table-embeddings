@@ -3,6 +3,7 @@
 
 import json
 import os
+import re
 import numpy
 import operator
 from collections import defaultdict
@@ -12,12 +13,16 @@ from .tagger import st, tag_to_index
 
 data_dir = './data'
 wordlist_raw = './hadoop/output2/part-00000'
+tree_dir = './data/tree'
+num_folders = 51
+training_files_json = './data/training_files.json'
+wordlist_json = './data/wordlist.json'
 
 
-def generate_wordlist(raw_file):
+def generate_wordlist():
     wordlist = {}
     index = 0
-    with open(raw_file) as f:
+    with open(wordlist_raw) as f:
         lines = f.readlines()
         for line in lines:
             line = line.strip()
@@ -30,8 +35,26 @@ def generate_wordlist(raw_file):
     return wordlist
 
 
+def training_file_filter(file, i):
+    i = str(i)
+    return bool(re.match(r'(.+?){}-ip(.+?)25.json'.format(i.zfill(2)), file))
+
+
+def list_training_files():
+    all_files = []
+    for i in range(num_folders):
+        with open(os.path.join(tree_dir, str(i))) as f:
+            files = f.readlines()
+        files = list(
+            map(lambda file: os.path.join(str(i), file.strip()),
+                filter(lambda file: training_file_filter(file, i), files)))
+        all_files += files
+    return all_files
+
+
 def main():
-    json.dump(generate_wordlist(wordlist_raw), open('data/wordlist.json', 'w+'), indent=4)
+    json.dump(generate_wordlist(), open('data/wordlist.json', 'w+'), indent=4)
+    json.dump(list_training_files(), open('data/training_files.json', 'w+'), indent=4)
     return
     tables = []
     with open(os.path.join(data_dir, 'sample'), encoding='utf-8') as f:
