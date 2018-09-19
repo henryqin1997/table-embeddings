@@ -56,7 +56,7 @@ class Table():
         """
         Generate a 7*10 array.
         Each of the 7 rows corresponds to a NER tag.
-        Each of the 10 columns correspond to a table attribute.
+        Each of the 10 columns corresponds to a table attribute.
         Run Stanford NER on all values of each table attribute and mark the found tags as 1.
         """
         ner_tags_dict = {}
@@ -80,16 +80,19 @@ class Table():
     def generate_wordlist_matrix(self, wordlist_to_index):
         """
         Given a wordlist, e.g. {'Date': 0, 'Name': 1, 'Opponent': 2},
-        Generate a len(wordlist)*10 matrix.
-        Each of the 10 columns correspond to a table attribute.
+        Generate a (len(wordlist)+1)*10 matrix.
+        Each of the first len(wordlist) rows corresponds to a word in wordlist.
+        Each of the 10 columns corresponds to a table attribute.
         If the label of this column is found in the wordlist, set 1 in that row.
+        If the label is not found in the wordlist, set 1 in the last row.
         """
-        m = numpy.zeros((len(wordlist_to_index), 10))
+        m = numpy.zeros((len(wordlist_to_index) + 1, 10))
         for i, label in enumerate(self.header):
             if i >= 10:
                 break
             try:
                 m[wordlist_to_index[label.lower().strip()]][i] = 1
             except KeyError:
+                m[-1][i] = 1
                 pass
         return m
