@@ -2,12 +2,15 @@ import os
 
 import torch.nn as nn
 import torch.optim as optim
+from .__main__ import batch_size
 
 from neural import Net, WORDLIST_LABEL_SIZE
 
 
-def load_data():
+def load_data(size=batch_size, batch_index = 0):
     # load training data from file, to be implemented
+    # put size number of data into one array
+    # start from batch_index batch
     input = 0
     target = 0
     return input, target
