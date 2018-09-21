@@ -1,0 +1,9 @@
+#!/bin/bash
+for i in `seq 0 50`
+do
+    if [ ! -f webtables/$(printf %02d $i).downloaded ]; then
+        rm -f webtables/$(printf %02d $i).tar.gz
+        wget http://data.dws.informatik.uni-mannheim.de/webtables/2015-07/englishCorpus/compressed/$(printf %02d $i).tar.gz -P webtables
+        touch webtables/$(printf %02d $i).downloaded
+    fi
+done

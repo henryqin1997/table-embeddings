@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/
+
+# The path to the hadoop/ folder
+HADOOP_DIR=hadoop
+# The path to the pipeline executables
+EXEC_DIR=hadoop/exec
+
+
+rm -rf $HADOOP_DIR/output1
+
+hadoop-2.9.1/bin/hadoop \
+   jar $HADOOP_DIR/hadoop-streaming-2.7.2.jar \
+   -D mapreduce.job.maps=32 \
+   -D mapreduce.job.reduces=16 \
+   -input data/input \
+   -output $HADOOP_DIR/output1 \
+   -mapper $EXEC_DIR/map1.py \
+   -reducer $EXEC_DIR/reduce1.py \
+
+
+rm -rf $HADOOP_DIR/output2
+
+hadoop-2.9.1/bin/hadoop \
+   jar $HADOOP_DIR/hadoop-streaming-2.7.2.jar \
+   -D mapreduce.job.maps=4 \
+   -D mapreduce.job.reduces=1 \
+   -input $HADOOP_DIR/output1 \
+   -output $HADOOP_DIR/output2 \
+   -mapper $EXEC_DIR/map2.py \
+   -reducer $EXEC_DIR/reduce2.py \
