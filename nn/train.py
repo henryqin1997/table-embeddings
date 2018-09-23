@@ -3,7 +3,6 @@ import json
 import numpy
 import torch.nn as nn
 import torch.optim as optim
-from .__main__ import batch_size
 
 from neural import Net, WORDLIST_LABEL_SIZE
 
