@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "Column Name",
+            "DeviceKey",
+            "DeviceName",
+            "SlotNumber",
+            "MemorySize",
+            "MemoryTech",
+            "PartNumber",
+            "SnapshotID",
+            "MemoryType",
+            "FromFactor",
+            "SerialNumber",
+            "Location"
+        ],
+        [
+            "Description",
+            "Device key",
+            "Name of the device",
+            "Slot number in the system",
+            "Memory size in kilobytes",
+            "Technology type of memory module installed",
+            "Memory modules manufacturer part number",
+            "Snapshot ID",
+            "Memory type",
+            "Type of memory module installed",
+            "Memory modules serial number",
+            "Location for 64-bit Intel Platform systems. This field is blank for all other systems."
+        ]
+    ],
+    "pageTitle": "Reporting - Report Views",
+    "title": "",
+    "url": "http://www.hp.com/wwsolutions/misc/hpsim-helpfiles/mxhelp/mxportal/en/report_ref_reportingViews.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044271733.81/warc/CC-MAIN-20150728004431-00034-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 506011171,
+    "recordOffset": 506002969,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{34789=Product name (for example, ProLiant 1600, and Compaq Tru64 UNIX System)}",
+    "textBeforeTable": "R_ArrayControllers R_HPUXSoftwareProduct R_HPUXSoftwareBundle R_HPUXKernelParam R_HPUXNetworkDetails R_HPUXLogicalVolume R_HPUXLogicalVolume R_HPUXVolumeGroup R_HPUXFileSystem R_UnixIPRoute R_UnixIODevices R_UnixLogicalMemory R_UnixOSDetails R_Process R_DeviceLicenseInfo R_Software R_Racks R_PowerSupply R_PhysicalDisks R_OperatingSystem R_NetworkInterface R_LogicalDisks R_Inventory R_InstalledBoards R_DIMMSlots R_CPU R_Batteries R_ArrayControllers There are several database views that are included with HP Systems Insight Manager. These views can be used to generate reports in HP Systems Insight Manager. The following views are available: Database Views Reporting uses the following database views to generate reports. Each item in the",
+    "textAfterTable": "R_Batteries \u00a0Column Name\u00a0 Description DeviceKey Device key DeviceName Name of the device SerialNumber Serial number OtherIdentifyingInfo Asset tag number SnapshotID Snapshot ID Tag Tag R_CPU \u00a0Column Name\u00a0 Description DeviceKey Device key DeviceName Name of the device CPUType Type of CPU CPUSpeed CPU speed SlotNumber Slot number in the system FirmwareID Processor firmware ID ProcessorLoad Processor load ProcessorAllocated Processor status: 1=Allocated; 0=Not allocated SnapshotID Snapshot ID Location Location for 64-bit Intel Platform systems. This field is blank for all other systems. R_DIMMSlots \u00a0Column Name\u00a0 Description DeviceKey Device key DeviceName",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

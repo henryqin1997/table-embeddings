@@ -1,0 +1,63 @@
+{
+    "relation": [
+        [
+            "Command",
+            "( ccc )",
+            "\\ rest-of-line",
+            "ascii ccc",
+            "accept",
+            "expect",
+            "key",
+            "key?",
+            "parse",
+            "parse-word",
+            "safe-parse-word",
+            "word"
+        ],
+        [
+            "Stack Diagram",
+            "( -- )",
+            "( -- )",
+            "( -- char )",
+            "( addr len1 -- len2 )",
+            "( addr len -- )",
+            "( -- char )",
+            "( -- flag )",
+            "( char -- str len )",
+            "( -- str len )",
+            "( -- str len )",
+            "( char -- pstr )"
+        ],
+        [
+            "Description",
+            "Begin a comment.",
+            "Skip the rest of the line.",
+            "Get numerical value of first ASCII character of next word.",
+            "Get a line of edited input from the console input device; store at addr.len1 is the maximum allowed length. len2 is the actual length received.",
+            "Get and display a line of input from the console; store at addr. (Recommend using accept instead.)",
+            "Read a character from the console input device.",
+            "True if a key has been typed on the console input device.",
+            "Parse text from the input buffer delimited by char.",
+            "Skip leading spaces and parse text from the input buffer delimited by white space.",
+            "Similar to parse-word but intended for use in cases where the null string as input is indicative of an error.",
+            "Collect a string delimited by char from the input buffer and place it as a packed string in memory at pstr. (Recommend using parse instead.)"
+        ]
+    ],
+    "pageTitle": "",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19620-01/805-4436/6j4719cc1/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982013.25/warc/CC-MAIN-20150728002302-00237-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 63303631,
+    "recordOffset": 63281524,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 30 Dec 2010 15:42:19 GMT",
+    "textBeforeTable": "Table I-1 Stack Item Notation Stack Item Notation For the most part, the commands are listed in the order in which they were introduced in the chapters. Some of the tables in this appendix show commands that are not listed elsewhere in this manual. These additional commands (such as memory mapping or output display primitives, or machine-specific register commands) are also part of the set of words in the OpenBoot implementation of Forth; they are included with relevant groups of commands. This appendix contains the Forth commands supported by OpenBoot. Appendix I Forth Word Reference Previous: Appendix H Sun Ultra 450 UPA/PCI System OpenBoot 3.x Command Reference Manual OpenBoot 3.x Command Reference Manual \u00a0> Appendix I Forth Word Reference Documentation Home \u00a0>",
+    "textAfterTable": "ihandle Pointer for an instance of a package.\u00a0 n n1 n2 n3 Normal signed values (32-bit).\u00a0 nu nu1 Signed or unsigned values (32-bit).\u00a0 <nothing> Zero stack items.\u00a0 phandle Pointer for a package.\u00a0 phys Physical address (actual hardware address).\u00a0 phys.lo phys.hi Lower/upper cell of physical address\u00a0 pstr Packed string.\u00a0 quad qxxx Quadlet (32-bit value).\u00a0 qaddr Quadlet (32-bit) aligned address\u00a0 {text} Optional text. Causes default behavior if omitted.\u00a0 \"text<delim>\" Input buffer text, parsed when command is executed. Text delimiter is enclosed in <>.\u00a0 [text<delim>] Text immediately following on the same line as the command, parsed immediately. Text delimiter is",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

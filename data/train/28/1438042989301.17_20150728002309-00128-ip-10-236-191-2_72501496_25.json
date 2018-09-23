@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "store_name",
+            "contentID",
+            "filter",
+            "soft_delete",
+            "principal"
+        ],
+        [
+            "Description",
+            "Name of store",
+            "Unique identifier for the file to be deleted",
+            "A filter, if any, to be applied",
+            "If 0, execute a hard (permanent) delete. For any value other than 0, perform a soft delete (see \"Deletion Operations\").",
+            "File system user for whom the access check is made"
+        ]
+    ],
+    "pageTitle": "DBMS_DBFS_CONTENT",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/appdev.112/e23448/d_dbfs_content.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00128-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72547411,
+    "recordOffset": 72501496,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{351=The following constants are useful for declaring paths and item names. Paths are limited to 1024 characters and item names are limited to 256 characters.}",
+    "TableContextTimeStampAfterTable": "{1913=1024, 29000=262144, 25714=32768, 23026=2048, 28303=131072}",
+    "lastModified": "Tue, 19 May 2015 17:53:34 GMT",
+    "textBeforeTable": "Table 47-26 DELETECONTENT Procedure Parameters Parameters principal IN VARCHAR2 DEFAULT NULL); soft_delete IN BOOLEAN DEFAULT NULL, filter IN VARCHAR2 DEFAULT NULL, contentID IN RAW, store_name IN VARCHAR2 DEFAULT NULL, DBMS_DBFS_CONTENT.DELETECONTENT (  Syntax  This procedure deletes the file specified by the given contentID. DELETECONTENT Procedure      FEATURES_T Table Type Return Values     Feature set featureSet Description Parameter Table 47-25 DECODEFEATURES Function Parameters Parameters RETURN FEATURES_T DETERMINISTIC PIPELINED; featureSet IN INTEGER) DBMS_DBFS_CONTENT.DECODEFEATURES (  Syntax  Given a feature bit set integer value, this function returns a FEATURES_T table of the feature bits as FEATURE_T records. DECODEFEATURES Function       File system user for whom the access check is made principal",
+    "textAfterTable": "DELETEDIRECTORY Procedure This procedure deletes a directory. If recurse is nonzero, it recursively deletes all elements of the directory. A filter, if supplied, determines which elements of the directory are deleted. Syntax  DBMS_DBFS_CONTENT.DELETEDIRECTORY ( path IN VARCHAR2, filter IN VARCHAR2 DEFAULT NULL, soft_delete IN BOOLEAN DEFAULT NULL, recurse IN BOOLEAN DEFAULT FALSE, store_name IN VARCHAR2 DEFAULT NULL, principal IN VARCHAR2 DEFAULT NULL); Parameters Table 47-27 DELETEDIRECTORY Procedure Parameters Parameter Description path Name of path to the directory filter A filter, if any, to be applied soft_delete If 0, execute a hard (permanent) delete. For any value other than 0, perform a soft delete (see \"Deletion Operations\"). recurse If 0, do not execute recursively. Otherwise, recursively delete the directories and files below the given directory.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

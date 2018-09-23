@@ -1,0 +1,41 @@
+{
+    "relation": [
+        [
+            "Short notation",
+            "set -f",
+            "set -v",
+            "set -x"
+        ],
+        [
+            "Long notation",
+            "set -o noglob",
+            "set -o verbose",
+            "set -o xtrace"
+        ],
+        [
+            "Result",
+            "Disable file name generation using metacharacters (globbing).",
+            "Prints shell input lines as they are read.",
+            "Print command traces before executing command."
+        ]
+    ],
+    "pageTitle": "Bash Guide for Beginners",
+    "title": "",
+    "url": "http://mirror.facebook.net/ldp/LDP/Bash-Beginners-Guide/html/Bash-Beginners-Guide.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986615.83/warc/CC-MAIN-20150728002306-00149-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 160927343,
+    "recordOffset": 160799244,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{3851=Special thanks to Tabatha Marshall, who volunteered to do a complete review and spell and grammar check. We make a great team: she works when I sleep. And vice versa ;-)}",
+    "TableContextTimeStampAfterTable": "{327308=Use an if/then/elif/else construct that prints information about the current month. The script should print the number of days in this month, and give information about leap years if the current month is February., 563007=Section 1.2.2.10, 12351=Bash is an sh-compatible shell that incorporates useful features from the Korn shell (ksh) and C shell (csh). It is intended to conform to the IEEE POSIX P1003.2/ISO 9945.2 Shell and Tools standard. It offers functional improvements over sh for both programming and interactive use; these include command line editing, unlimited size command history, job control, shell functions and aliases, indexed arrays of unlimited size, and integer arithmetic in any base from two to sixty-four. Bash can run most sh scripts without modification.}",
+    "lastModified": "Mon, 19 Jan 2009 15:34:19 GMT",
+    "textBeforeTable": "Table 1. Typographic and usage conventions The following typographic and usage conventions occur in this text: 9. Conventions used in this document Compiles easily if you need to make your own, tested on a wide variety of UNIX, Linux, MS Windows and other systems. bash, available from http://www.gnu.org/directory/GNU/. The Bash shell is available on nearly every Linux system, and can these days be found on a wide variety of UNIX systems. 8. What do you need? The logos, trademarks and symbols used in this book are the properties of their respective owners. The author and publisher have made every effort in the preparation of this book to ensure the accuracy of the information. However, the information contained in this book is offered without warranty, either express or implied. Neither the author nor the publisher nor any dealer or distributor will be held liable for any damages caused or alleged to be caused either directly or indirectly by this book. * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; *",
+    "textAfterTable": "Name of a command that can be entered on the command line. VARIABLE Name of a variable or pointer to content of a variable, as in $VARNAME. option Option to a command, as in \"the -a option to the ls command\". argument Argument to a command, as in \"read man ls\". command options arguments Command synopsis or general usage, on a separated line. filename Name of a file or directory, for example \"Change to the /usr/bin directory.\" Key Keys to hit on the keyboard, such as \"type Q to quit\". Button Graphical button to click, like the OK button. Menu->Choice Choice to select from a graphical menu, for instance: \"Select Help->About Mozilla in your browser.\" Terminology Important term or concept: \"The Linux kernel is the heart of the system.\" \\ The backslash in a terminal view or command synopsis indicates an unfinished line. In other words, if you",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

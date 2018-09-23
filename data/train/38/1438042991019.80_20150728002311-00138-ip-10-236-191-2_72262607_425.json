@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "ATTRIBUTE TYPE",
+            "Availability",
+            "Stability Level"
+        ],
+        [
+            "ATTRIBUTE VALUE",
+            "SUNWldap-proxy",
+            "Evolving"
+        ]
+    ],
+    "pageTitle": "Directory Proxy Server Configuration (Sun Java System Directory Server Enterprise Edition 6.2 Man Page Reference)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19626-01/820-2495/6ne3hbfsh/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 425,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991019.80/warc/CC-MAIN-20150728002311-00138-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72293999,
+    "recordOffset": 72262607,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 27 Jan 2011 01:55:27 GMT",
+    "textBeforeTable": "Description aci-data-view \u2013 Directory Proxy Server configuration property NAME NAME | Description | Attributes | See Also aci-data-view(5dpconf) Directory Proxy Server Configuration Next: File Formats Previous: Directory Server Configuration Sun Java System Directory Server Enterprise Edition 6.2 Man Page Reference Sun Java System Directory Server Enterprise Edition 6.2 Man Page Reference \u00a0> Directory Proxy Server Configuration Documentation Home \u00a0>",
+    "textAfterTable": "Is multivalued\u00a0 No\u00a0 Requires restart\u00a0 Yes\u00a0 This property specifies the data view that Directory Proxy Server uses to store access controls. The value of this property is the name of one of the following configuration entities: jdbc-data-view, join-data-view, ldap-data-view, ldif-data-view. The default behavior for this property is as follows: No virtual access control policy. This property is used to configure the following features: virtual-aci. Attributes See attributes(5) for descriptions of the following attributes: ATTRIBUTE TYPE\u00a0 ATTRIBUTE VALUE\u00a0 Availability\u00a0 SUNWldap-proxy\u00a0 Stability Level\u00a0 Evolving\u00a0 See Also dpconf(1M) DPS 6.2\u00a0\u00a0Last Revised Aug. 29, 2007 NAME | Description | Attributes | See Also aci-manager-bind-dn(5dpconf) NAME | Description | Attributes | See Also NAME aci-manager-bind-dn \u2013 Directory Proxy Server configuration property Description",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}
