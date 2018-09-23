@@ -7,6 +7,6 @@ def plot_tvsv(training_accuracy,validation_accuracy,batch_size,it):
     plt.plot(batch,validation_accuracy,'r-',label="validation accuracy")
     plt.legend("training&validation accuracy plot")
     plt.xlabel("batch number")
-    plt.savefig("accuracy_fig{}.png".format(it))
     plt.show()
+    plt.savefig("accuracy_fig{}.png".format(it))
     return 0
