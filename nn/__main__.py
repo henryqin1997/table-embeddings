@@ -29,7 +29,7 @@ def main():  # to be implemented
 
     if os.path.isfile('mytraining.pt'):
         print("=> loading checkpoint mytraining.pt")
-        train.load_model(net, 'mytraining.pt')
+        neural.load_model(net, 'mytraining.pt')
         print("=> loaded checkpoint mytraining.pt")
 
 
