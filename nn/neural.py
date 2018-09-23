@@ -48,10 +48,10 @@ def load_model(model, name):
     model.load_state_dict(torch.load(name))
 
 
-def predict(net, input, ifbatch=False):
-    if ifbatch:
+def predict(net, input, batch_size=1):
+    if batch_size > 1:
         output_ = []
-        for i in range(__main__.batch_size):
+        for i in range(batch_size):
             values, indices = net(input[i]).view(-1,net.WORDLIST_LABEL_SIZE()).max(1)
             output = torch.zeros([net.WORDLIST_LABEL_SIZE(), 10])
             j = 0
@@ -61,7 +61,7 @@ def predict(net, input, ifbatch=False):
             output_.append(output)
         return output_
 
-    else:
+    elif batch_size == 1:
         output = net(input)
         values, indices = output.view(-1,net.WORDLIST_LABEL_SIZE()).max(1)
         output = np.zeros([net.WORDLIST_LABEL_SIZE(), 10])
@@ -70,3 +70,6 @@ def predict(net, input, ifbatch=False):
             output[indice][j] = 1
             j = j + 1
         return output
+    else:
+        print('error: batchsize no less than 1')
+        exit(0)
