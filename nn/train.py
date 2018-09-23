@@ -34,12 +34,36 @@ def load_data(batch_size, batch_index=0):
 #   #correct prediction(no 'other')/#targetlabel(no other)
 
 
-def accuracy():  # to be implemented
-    return 0
+def accuracy(prediction,target,batch_size):  # to be implemented
+    total_num=0
+    correct_num=0
+    batch_size = target.shape[0]
+    label_size = target.shape[1]
+    col_size = target.shape[2]
+    for batch_index in range(batch_size):
+        for col_index in range(col_size):
+            for label_index in range(label_size):
+                if target[batch_index,label_index,col_index]==1:
+                    if prediction[batch_index,label_index,col_index]==1 and target[batch_index,label_index,col_index]==1:
+                        correct_num=correct_num+1
+            total_num =total_num+numpy.sum(prediction[batch_index,:,col_index])
+    return correct_num/total_num
 
 
-def accuracy_no_other():  # to be implemented
-    return 0
+def accuracy_no_other(prediction,target):  # to be implemented
+    total_num=0
+    correct_num=0
+    batch_size=target.shape[0]
+    label_size=target.shape[1]-1
+    col_size=target.shape[2]
+    for batch_index in range(batch_size):
+        for col_index in range(col_size):
+            for label_index in range(label_size):
+                if target[batch_index,label_index,col_index]==1:
+                    if prediction[batch_index,label_index,col_index]==1 and target[batch_index,label_index,col_index]==1:
+                        correct_num=correct_num+1
+            total_num =total_num+numpy.sum(prediction[batch_index,:,col_index])
+    return correct_num/total_num
 
 
 ################################
