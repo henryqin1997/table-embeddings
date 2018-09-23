@@ -17,12 +17,13 @@ class Net(nn.Module):
         # COLUMN_DATA_TYPES*10 input, 2 internal layer, 1*10 output
         self.COLUMN_DATA_TYPES = COLUMN_DATA_TYPES
         self.WORDLIST_LABEL_SIZE = WORDLIST_LABEL_SIZE
-        self.fc1 = nn.Linear(self.COLUMN_DATA_TYPES * 10, 2 * self.WORDLIST_LABEL_SIZE * 10, True)
-        self.fc2 = nn.Linear(2 * self.WORDLIST_LABEL_SIZE * 10, self.WORDLIST_LABEL_SIZE * 10, True)
+        self.fc1 = nn.Linear(self.COLUMN_DATA_TYPES * 10, 2 * self.COLUMN_DATA_TYPES * 10 + 10, True)
+        self.fc2 = nn.Linear(2 * self.COLUMN_DATA_TYPES * 10 + 10, self.WORDLIST_LABEL_SIZE * 10, True)
 
     def forward(self, x):
         x = self.fc1(x)
         x = self.fc2(x)
+        x = F.elu(x)
         x = self.normalize(x)
         return x
 
