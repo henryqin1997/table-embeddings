@@ -40,7 +40,7 @@ class Net(nn.Module):
 
 
 def save_model(model, name):
-    model.save_state_dict(name)
+    torch.save(model.state_dict(), name)
 
 
 def load_model(model, name):
@@ -52,7 +52,7 @@ def predict(net, input, ifbatch=False):
         output_ = []
         for i in range(__main__.batch_size):
             values, indices = net(input[i]).view(-1,net.WORDLIST_LABEL_SIZE()).max(1)
-            output = np.zeros([net.WORDLIST_LABEL_SIZE(), 10])
+            output = torch.zeros([net.WORDLIST_LABEL_SIZE(), 10])
             j = 0
             for indice in indices:
                 output[indice][j] = 1

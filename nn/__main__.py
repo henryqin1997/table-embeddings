@@ -10,7 +10,7 @@ import torch.nn as nn
 import train
 import plot
 
-train_size = 50
+train_size = 2000
 batch_size = 50
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -37,6 +37,7 @@ def main():  # to be implemented
     criterion = nn.MSELoss()
 
     ###train part###
+
     while batch_size * batch_index < train_size:
 
         input, target = train.load_data(batch_size=batch_size, batch_index=batch_index)
@@ -57,24 +58,26 @@ def main():  # to be implemented
 
     print("end training")
 
-    train.save_model(net, 'mytraining.pt')
+    neural.save_model(net, 'mytraining.pt')
     print('model saved')
     ###train part end###
 
     ###test part###
+    '''
     with torch.no_grad():
         print("start predict")
         accuracy = []
         accuracy_no_other = []
         for test_index in range(40, 41):
             input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
-            prediction = neural.predict(net, input)
+            prediction = neural.predict(net, input, )
             prediction_no_other = neural.predict(net, input)
             accuracy.append(train.accuracy(prediction, target))
             accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target))
         plot.plottvsv(accuracy,accuracy_no_other,batch_size) #this is only for test
         print(accuracy)
         print(accuracy_no_other)
+    '''
     ###test part end###
 
 
