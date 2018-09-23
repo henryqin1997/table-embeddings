@@ -4,7 +4,7 @@ import numpy
 import torch.nn as nn
 import torch.optim as optim
 
-from neural import Net, WORDLIST_LABEL_SIZE
+from .neural import Net
 
 training_data_dir = './data/train'
 training_files_json = './data/training_files.json'
@@ -73,7 +73,7 @@ def train(input, target, net):
     optimizer = optim.SGD(net.parameters(), lr=0.001)
     optimizer.zero_grad()
     output = net(input)
-    target = target.view(-1, WORDLIST_LABEL_SIZE)
+    target = target.view(-1, net.WORDLIST_LABEL_SIZE())
     criterion = nn.MSELoss
     loss = criterion(output, target)
     loss.backward()
