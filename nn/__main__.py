@@ -4,11 +4,9 @@
 import os
 
 import neural
-import numpy as np
 import torch
 import torch.nn as nn
 import train
-import plot
 
 train_size = 2000
 batch_size = 50
@@ -42,7 +40,7 @@ def main():  # to be implemented
 
         input, target = train.load_data(batch_size=batch_size, batch_index=batch_index)
         print("start training")
-        for i in range(1):
+        for i in range(batch_size):
             print(batch_size*batch_index+i)
 
             target_ = torch.from_numpy(target[i]).float().view(-1).to(device)  # fix for critetion
