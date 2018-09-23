@@ -8,8 +8,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-import __main__
-
 
 class Net(nn.Module):
     def __init__(self, COLUMN_DATA_TYPES=7, WORDLIST_LABEL_SIZE=4356):
@@ -52,7 +50,7 @@ def predict(net, input, batch_size=1):
     if batch_size > 1:
         output_ = []
         for i in range(batch_size):
-            values, indices = net(input[i]).view(-1,net.WORDLIST_LABEL_SIZE()).max(1)
+            values, indices = net(torch.from_numpy(input[i]).float()).view(-1, net.WORDLIST_LABEL_SIZE()).max(1)
             output = torch.zeros([net.WORDLIST_LABEL_SIZE(), 10])
             j = 0
             for indice in indices:
@@ -62,7 +60,7 @@ def predict(net, input, batch_size=1):
         return output_
 
     elif batch_size == 1:
-        output = net(input)
+        output = net(torch.from_numpy(input).float())
         values, indices = output.view(-1,net.WORDLIST_LABEL_SIZE()).max(1)
         output = np.zeros([net.WORDLIST_LABEL_SIZE(), 10])
         j = 0
