@@ -28,9 +28,9 @@ class Net(nn.Module):
 
     def normalize(self, x):
         x.view(-1, self.WORDLIST_LABEL_SIZE)
-        xn = F.normalize(x, p=2, dim=1)
-        xn = xn.view(-1)
-        return xn
+        m = nn.Softmax()
+        x = m(x).view(-1)
+        return x
 
     def word_size(self):
         return self.WORDLIST_LABEL_SIZE
@@ -52,10 +52,10 @@ def predict(net, input, ifbatch=False):
         output_ = []
         for i in range(__main__.batch_size):
             values, indices = net(input[i]).view(-1,net.WORDLIST_LABEL_SIZE()).max(1)
-            output = np.zeros([10, net.WORDLIST_LABEL_SIZE()])
+            output = np.zeros([net.WORDLIST_LABEL_SIZE(), 10])
             j = 0
             for indice in indices:
-                output[j][indice] = 1
+                output[indice][j] = 1
                 j = j + 1
             output_.append(output)
         return output_
@@ -63,9 +63,9 @@ def predict(net, input, ifbatch=False):
     else:
         output = net(input)
         values, indices = output.view(-1,net.WORDLIST_LABEL_SIZE()).max(1)
-        output = np.zeros([10, net.WORDLIST_LABEL_SIZE()])
+        output = np.zeros([net.WORDLIST_LABEL_SIZE(), 10])
         j = 0
         for indice in indices:
-            output[j][indice] = 1
+            output[indice][j] = 1
             j = j + 1
         return output

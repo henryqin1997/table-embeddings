@@ -1,45 +1,80 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import plot
-import train
+import os
+
 import neural
 import numpy as np
+import torch
 import torch.nn as nn
-import torch.optim as optim
-import os
+import train
+import plot
 
 train_size = 50
 batch_size = 50
 
-def main():  #to be implemented
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+
+def main():  # to be implemented
     batch_index = 0
-    input, target = train.load_data(batch_size = batch_size, batch_index = batch_index)
-    net = neural.Net(WORDLIST_LABEL_SIZE = np.shape(target[0][0]))
+    input, target = train.load_data(batch_size = 1, batch_index=batch_index)
+    print('first load data')
+
+    print('wordlist length = {}'.format(len(target[0])))
+
+    net = neural.Net(WORDLIST_LABEL_SIZE = len(target[0])).to(device)
+
+    print("nn prepared")
+
     if os.path.isfile('mytraining.pt'):
         print("=> loading checkpoint mytraining.pt")
-        train.load_model(net,'mytraining.pt')
+        train.load_model(net, 'mytraining.pt')
         print("=> loaded checkpoint mytraining.pt")
-    optimizer = optim.SGD(net.parameters(), lr=0.001)
-    criterion = nn.MSELoss
+
+
+    optimizer = torch.optim.SGD(net.parameters(), lr=0.001)
+    criterion = nn.MSELoss()
 
     ###train part###
-    while batch_size*batch_index<train_size:
+    while batch_size * batch_index < train_size:
+
         input, target = train.load_data(batch_size=batch_size, batch_index=batch_index)
-        for i in range(batch_size):
+        print("start training")
+        for i in range(1):
+            print(batch_size*batch_index+i)
+
+            target_ = torch.from_numpy(target[i]).float().view(-1).to(device)  # fix for critetion
+            output = net(torch.from_numpy(input[i]).float().view(-1).to(device))
+
+            loss = criterion(output, target_)
+
             optimizer.zero_grad()
-            output = net(input)
-            target = target.view(-1, net.WORDLIST_LABEL_SIZE())
-            loss = criterion(output, target)
             loss.backward()
             optimizer.step()
+
         batch_index += 1
+
+    print("end training")
+
     train.save_model(net, 'mytraining.pt')
+    print('model saved')
     ###train part end###
 
     ###test part###
-
-
+    with torch.no_grad():
+        print("start predict")
+        accuracy = []
+        accuracy_no_other = []
+        for test_index in range(40, 41):
+            input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
+            prediction = neural.predict(net, input)
+            prediction_no_other = neural.predict(net, input)
+            accuracy.append(train.accuracy(prediction, target))
+            accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target))
+        plot.plottvsv(accuracy,accuracy_no_other,batch_size) #this is only for test
+        print(accuracy)
+        print(accuracy_no_other)
     ###test part end###
 
 
