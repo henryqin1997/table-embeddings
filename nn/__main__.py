@@ -56,10 +56,10 @@ def main():  # to be implemented
             accuracy_no_other = []
             for test_index in range(39):
                 input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
-                prediction = neural.predict(net, input, ifbatch=True)
-                prediction_no_other = neural.predict(net, input, ifbatch=True)
-                accuracy.append(train.accuracy(prediction, target, ifbatch=True))
-                accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, ifbatch=True))
+                prediction = neural.predict(net, input, batch_size)
+                prediction_no_other = neural.predict(net, input, batch_size)
+                accuracy.append(train.accuracy(prediction, target, batch_size))
+                accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, batch_index))
             plot.plottvsv(accuracy, accuracy_no_other, batch_size)  # this is only for test
             print(accuracy)
             print(accuracy_no_other)
@@ -73,10 +73,10 @@ def main():  # to be implemented
             accuracy_no_other = []
             for test_index in range(39, 40):
                 input, target = train.load_data(batch_size=27, batch_index=test_index)
-                prediction = neural.predict(net, input, ifbatch=True)
-                prediction_no_other = neural.predict(net, input, ifbatch=True)
-                accuracy.append(train.accuracy(prediction, target, ifbatch = True))
-                accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, ifbatch = True))
+                prediction = neural.predict(net, input, 27)
+                prediction_no_other = neural.predict(net, input, 27)
+                accuracy.append(train.accuracy(prediction, target, 27))
+                accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, 27))
             plot.plottvsv(accuracy,accuracy_no_other,batch_size) #this is only for test
             print(accuracy)
             print(accuracy_no_other)
