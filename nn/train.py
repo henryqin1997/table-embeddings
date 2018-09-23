@@ -1,13 +1,10 @@
-import os
 import json
+import os
+
 import numpy
-import torch.nn as nn
-import torch.optim as optim
 
-from .neural import Net
-
-training_data_dir = './data/train'
-training_files_json = './data/training_files.json'
+training_data_dir = '../data/train'
+training_files_json = '../data/training_files.json'
 training_files = json.load(open(training_files_json))
 
 
@@ -34,47 +31,62 @@ def load_data(batch_size, batch_index=0):
 #   #correct prediction(no 'other')/#targetlabel(no other)
 
 
-def accuracy(prediction,target,batch_size):  # to be implemented
-    total_num=0
-    correct_num=0
-    batch_size = target.shape[0]
-    label_size = target.shape[1]
-    col_size = target.shape[2]
-    for batch_index in range(batch_size):
+def accuracy(prediction, target, ifbatch=False):  # to be implemented
+    if ifbatch:
+        total_num = 0
+        correct_num = 0
+        batch_size = target.shape[0]
+        label_size = target.shape[1]
+        col_size = target.shape[2]
+        for batch_index in range(batch_size):
+            for col_index in range(col_size):
+                for label_index in range(label_size):
+                    if target[batch_index, label_index, col_index] == 1:
+                        if prediction[batch_index, label_index, col_index] == 1 and target[
+                            batch_index, label_index, col_index] == 1:
+                            correct_num = correct_num + 1
+                total_num = total_num + numpy.sum(prediction[batch_index, :, col_index])
+        return correct_num / total_num
+    else:
+        total_num = 0
+        correct_num = 0
+        label_size = target.shape[0]
+        col_size = target.shape[1]
         for col_index in range(col_size):
             for label_index in range(label_size):
-                if target[batch_index,label_index,col_index]==1:
-                    if prediction[batch_index,label_index,col_index]==1 and target[batch_index,label_index,col_index]==1:
-                        correct_num=correct_num+1
-            total_num =total_num+numpy.sum(prediction[batch_index,:,col_index])
-    return correct_num/total_num
+                if target[label_index, col_index] == 1:
+                    if prediction[label_index, col_index] == 1 and target[
+                        label_index, col_index] == 1:
+                        correct_num = correct_num + 1
+            total_num = total_num + numpy.sum(prediction[:, col_index])
+        return correct_num / total_num
 
 
-def accuracy_no_other(prediction,target):  # to be implemented
-    total_num=0
-    correct_num=0
-    batch_size=target.shape[0]
-    label_size=target.shape[1]-1
-    col_size=target.shape[2]
-    for batch_index in range(batch_size):
+def accuracy_no_other(prediction, target, ifbatch=False):  # to be implemented
+    if ifbatch:
+        total_num = 0
+        correct_num = 0
+        batch_size = target.shape[0]
+        label_size = target.shape[1] - 1
+        col_size = target.shape[2]
+        for batch_index in range(batch_size):
+            for col_index in range(col_size):
+                for label_index in range(label_size):
+                    if target[batch_index, label_index, col_index] == 1:
+                        if prediction[batch_index, label_index, col_index] == 1 and target[
+                            batch_index, label_index, col_index] == 1:
+                            correct_num = correct_num + 1
+                total_num = total_num + numpy.sum(prediction[batch_index, :, col_index])
+        return correct_num / total_num
+    else:
+        total_num = 0
+        correct_num = 0
+        label_size = target.shape[0] - 1
+        col_size = target.shape[1]
         for col_index in range(col_size):
             for label_index in range(label_size):
-                if target[batch_index,label_index,col_index]==1:
-                    if prediction[batch_index,label_index,col_index]==1 and target[batch_index,label_index,col_index]==1:
-                        correct_num=correct_num+1
-            total_num =total_num+numpy.sum(prediction[batch_index,:,col_index])
-    return correct_num/total_num
-
-
-################################
-
-
-def train(input, target, net):
-    optimizer = optim.SGD(net.parameters(), lr=0.001)
-    optimizer.zero_grad()
-    output = net(input)
-    target = target.view(-1, net.WORDLIST_LABEL_SIZE())
-    criterion = nn.MSELoss
-    loss = criterion(output, target)
-    loss.backward()
-    optimizer.step()
+                if target[label_index, col_index] == 1:
+                    if prediction[label_index, col_index] == 1 and target[label_index, col_index] == 1:
+                        correct_num = correct_num + 1
+            total_num = total_num + numpy.sum(prediction[:, col_index])
+        return correct_num / total_num
