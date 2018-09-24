@@ -41,11 +41,11 @@ def accuracy(prediction, target, ifbatch=False):  # to be implemented
         for batch_index in range(batch_size):
             for col_index in range(col_size):
                 for label_index in range(label_size):
-                    if target[batch_index, label_index, col_index] == 1:
-                        if prediction[batch_index, label_index, col_index] == 1 and target[
-                            batch_index, label_index, col_index] == 1:
-                            correct_num = correct_num + 1
-                total_num = total_num + numpy.sum(prediction[batch_index, :, col_index])
+                    if int(prediction[batch_index][label_index][col_index]) == 1 and int(target[batch_index][label_index][
+                        col_index]) == 1:
+                        correct_num = correct_num + 1
+                        break
+                total_num = total_num + int(sum(prediction[batch_index][:, col_index]))
         return correct_num / total_num
     else:
         total_num = 0
@@ -54,11 +54,11 @@ def accuracy(prediction, target, ifbatch=False):  # to be implemented
         col_size = target.shape[1]
         for col_index in range(col_size):
             for label_index in range(label_size):
-                if target[label_index, col_index] == 1:
-                    if prediction[label_index, col_index] == 1 and target[
-                        label_index, col_index] == 1:
-                        correct_num = correct_num + 1
-            total_num = total_num + numpy.sum(prediction[:, col_index])
+                if int(prediction[label_index][col_index]) == 1 and int(target[
+                    label_index][col_index]) == 1:
+                    correct_num = correct_num + 1
+                    break
+            total_num = total_num + int(sum(prediction[:, col_index]))
         return correct_num / total_num
 
 
@@ -67,26 +67,27 @@ def accuracy_no_other(prediction, target, ifbatch=False):  # to be implemented
         total_num = 0
         correct_num = 0
         batch_size = target.shape[0]
-        label_size = target.shape[1] - 1
+        label_size = target.shape[1]-1
         col_size = target.shape[2]
         for batch_index in range(batch_size):
             for col_index in range(col_size):
                 for label_index in range(label_size):
-                    if target[batch_index, label_index, col_index] == 1:
-                        if prediction[batch_index, label_index, col_index] == 1 and target[
-                            batch_index, label_index, col_index] == 1:
-                            correct_num = correct_num + 1
-                total_num = total_num + numpy.sum(prediction[batch_index, :, col_index])
+                    if int(prediction[batch_index][label_index][col_index]) == 1 and int(target[batch_index][label_index][
+                        col_index]) == 1:
+                        correct_num = correct_num + 1
+                        break
+                total_num = total_num + int(sum(prediction[batch_index][:, col_index]))
         return correct_num / total_num
     else:
         total_num = 0
         correct_num = 0
-        label_size = target.shape[0] - 1
+        label_size = target.shape[0]-1
         col_size = target.shape[1]
         for col_index in range(col_size):
             for label_index in range(label_size):
-                if target[label_index, col_index] == 1:
-                    if prediction[label_index, col_index] == 1 and target[label_index, col_index] == 1:
-                        correct_num = correct_num + 1
-            total_num = total_num + numpy.sum(prediction[:, col_index])
+                if int(prediction[label_index][col_index]) == 1 and int(target[
+                    label_index][col_index]) == 1:
+                    correct_num = correct_num + 1
+                    break
+            total_num = total_num + int(sum(prediction[:, col_index]))
         return correct_num / total_num
