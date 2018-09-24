@@ -54,7 +54,7 @@ def main():  # to be implemented
             print("start predict iteration {}".format(iteration))
             accuracy = []
             accuracy_no_other = []
-            for test_index in range(1):
+            for test_index in range(2):
                 print('train accuracy batch index {}'.format(test_index))
                 input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
                 target = torch.from_numpy(target).float()
@@ -65,9 +65,11 @@ def main():  # to be implemented
                 print('train accuracy batch index {} end'.format(test_index))
             print(accuracy)
             print(accuracy_no_other)
+            train_accuracy.append(np.average(np.average(np.array(accuracy))))
+            train_accuracy_no_other.append(np.average(np.average(np.array(accuracy_no_other))))
+            print(train_accuracy)
+            print(train_accuracy_no_other)
             return 0
-            train_accuracy.append(np.average(np.array(accuracy)))
-            train_accuracy_no_other.append(np.average(np.array(accuracy_no_other)))
 
         with torch.no_grad():
 
