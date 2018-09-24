@@ -31,63 +31,41 @@ def load_data(batch_size, batch_index=0):
 #   #correct prediction(no 'other')/#targetlabel(no other)
 
 
-def accuracy(prediction, target, if_batch):  # to be implemented
-    if if_batch>1:
+def accuracy(prediction, target, batch_size):  # to be implemented
+    if batch_size>1:
         total_num = 0
         correct_num = 0
-        batch_size = target.shape[0]
-        label_size = target.shape[1]
         col_size = target.shape[2]
         for batch_index in range(batch_size):
             for col_index in range(col_size):
-                for label_index in range(label_size):
-                    if int(prediction[batch_index][label_index][col_index]) == 1 and int(target[batch_index][label_index][
-                        col_index]) == 1:
-                        correct_num = correct_num + 1
-                        break
+                correct_num=correct_num+int(prediction[batch_index][:,col_index].dot(target[batch_index][:,col_index]))
                 total_num = total_num + int(sum(prediction[batch_index][:, col_index]))
         return correct_num / total_num
     else:
         total_num = 0
         correct_num = 0
-        label_size = target.shape[0]
         col_size = target.shape[1]
         for col_index in range(col_size):
-            for label_index in range(label_size):
-                if int(prediction[label_index][col_index]) == 1 and int(target[
-                    label_index][col_index]) == 1:
-                    correct_num = correct_num + 1
-                    break
+            correct_num = correct_num + int(prediction[:, col_index].dot(target[:, col_index]))
             total_num = total_num + int(sum(prediction[:, col_index]))
         return correct_num / total_num
 
 
-def accuracy_no_other(prediction, target, if_batch):  # to be implemented
-    if if_batch:
+def accuracy_no_other(prediction, target, batch_size):  # to be implemented
+    if batch_size>1:
         total_num = 0
         correct_num = 0
-        batch_size = target.shape[0]
-        label_size = target.shape[1]-1
         col_size = target.shape[2]
         for batch_index in range(batch_size):
             for col_index in range(col_size):
-                for label_index in range(label_size):
-                    if int(prediction[batch_index][label_index][col_index]) == 1 and int(target[batch_index][label_index][
-                        col_index]) == 1:
-                        correct_num = correct_num + 1
-                        break
-                total_num = total_num + int(sum(prediction[batch_index][:, col_index]))
+                correct_num=correct_num+int(prediction[batch_index][:-1,col_index].dot(target[batch_index][:-1,col_index]))
+                total_num = total_num + int(sum(prediction[batch_index][:-1, col_index]))
         return correct_num / total_num
     else:
         total_num = 0
         correct_num = 0
-        label_size = target.shape[0]-1
         col_size = target.shape[1]
         for col_index in range(col_size):
-            for label_index in range(label_size):
-                if int(prediction[label_index][col_index]) == 1 and int(target[
-                    label_index][col_index]) == 1:
-                    correct_num = correct_num + 1
-                    break
-            total_num = total_num + int(sum(prediction[:, col_index]))
+            correct_num = correct_num + int(prediction[:-1, col_index].dot(target[:-1, col_index]))
+            total_num = total_num + int(sum(prediction[:-1, col_index]))
         return correct_num / total_num
