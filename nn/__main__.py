@@ -18,6 +18,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
 def main():  # to be implemented
+    
     input, target = train.load_data(batch_size = 1, batch_index=0)
 
     file = open('log.txt','w')
@@ -46,7 +47,7 @@ def main():  # to be implemented
     validation_accuracy_no_other = []
     iteration = 0
 
-    while(iteration < 20):
+    while(iteration < 10):
 
         iteration += 1
 
@@ -143,6 +144,7 @@ def main():  # to be implemented
 
     ###test part end###
 
+    #print(train.accuracy_no_other(torch.from_numpy(np.array([[0,1,0],[1,0,1]])),torch.from_numpy(np.array([[0,1,0],[0, 0, 1]]))))
 
 if __name__ == '__main__':
     main()

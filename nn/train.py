@@ -31,7 +31,7 @@ def load_data(batch_size, batch_index=0):
 #   #correct prediction(no 'other')/#targetlabel(no other)
 
 
-def accuracy(prediction, target, batch_size):  # to be implemented
+def accuracy(prediction, target, batch_size=1):  # to be implemented
     if batch_size>1:
         total_num = 0
         correct_num = 0
@@ -51,7 +51,7 @@ def accuracy(prediction, target, batch_size):  # to be implemented
         return correct_num / total_num
 
 
-def accuracy_no_other(prediction, target, batch_size):  # to be implemented
+def accuracy_no_other(prediction, target, batch_size=1):  # to be implemented
     if batch_size>1:
         total_num = 0
         correct_num = 0
