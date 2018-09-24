@@ -19,18 +19,21 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 def main():  # to be implemented
     input, target = train.load_data(batch_size = 1, batch_index=0)
-    print('first load data')
 
-    print('wordlist length = {}'.format(len(target[0])))
+    file = open('log.txt','w')
+
+    file.write('first load data')
+
+    file.write('wordlist length = {}'.format(len(target[0])))
 
     net = neural.Net(WORDLIST_LABEL_SIZE = len(target[0])).to(device)
 
-    print("nn prepared")
+    file.write("nn prepared")
 
     if os.path.isfile('mytraining.pt'):
-        print("=> loading checkpoint mytraining.pt")
+        file.write("=> loading checkpoint mytraining.pt")
         neural.load_model(net, 'mytraining.pt')
-        print("=> loaded checkpoint mytraining.pt")
+        file.write("=> loaded checkpoint mytraining.pt")
 
 
     optimizer = torch.optim.SGD(net.parameters(), lr=0.001)
@@ -51,24 +54,24 @@ def main():  # to be implemented
 
         with torch.no_grad():
 
-            print("start predict iteration {}".format(iteration))
+            file.write("start predict iteration {}".format(iteration))
             accuracy = []
             accuracy_no_other = []
             for test_index in range(2):
-                print('train accuracy batch index {}'.format(test_index))
+                file.write('train accuracy batch index {}'.format(test_index))
                 input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
                 target = torch.from_numpy(target).float()
                 prediction = neural.predict(net, input, batch_size)
                 prediction_no_other = neural.predict(net, input, batch_size)
                 accuracy.append(train.accuracy(prediction, target, batch_size))
                 accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, batch_size))
-                print('train accuracy batch index {} end'.format(test_index))
-            print(accuracy)
-            print(accuracy_no_other)
+                file.write('train accuracy batch index {} end'.format(test_index))
+            file.write(accuracy)
+            file.write(accuracy_no_other)
             train_accuracy.append(np.average(np.average(np.array(accuracy))))
             train_accuracy_no_other.append(np.average(np.average(np.array(accuracy_no_other))))
-            print(train_accuracy)
-            print(train_accuracy_no_other)
+            file.write(train_accuracy)
+            file.write(train_accuracy_no_other)
             return 0
 
         with torch.no_grad():
