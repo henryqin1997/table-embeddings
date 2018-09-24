@@ -57,6 +57,7 @@ def main():  # to be implemented
             for test_index in range(39):
                 print('train accuracy batch index {}'.format(test_index))
                 input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
+                target = torch.from_numpy(target).float()
                 prediction = neural.predict(net, input, batch_size)
                 prediction_no_other = neural.predict(net, input, batch_size)
                 accuracy.append(train.accuracy(prediction, target, batch_size))
@@ -75,6 +76,7 @@ def main():  # to be implemented
             accuracy_no_other = []
             for test_index in range(39, 40):
                 input, target = train.load_data(batch_size=27, batch_index=test_index)
+                target = torch.from_numpy(target).float()
                 prediction = neural.predict(net, input, 27)
                 prediction_no_other = neural.predict(net, input, 27)
                 accuracy.append(train.accuracy(prediction, target, 27))
