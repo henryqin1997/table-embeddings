@@ -44,7 +44,7 @@ def save_model(model, name):
 
 
 def load_model(model, name):
-    model.load_state_dict(torch.load(name))
+    model.load_state_dict(torch.load(name, map_location=device))
 
 
 def predict(net, input, batch_size=1):
