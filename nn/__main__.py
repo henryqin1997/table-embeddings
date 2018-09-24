@@ -55,11 +55,13 @@ def main():  # to be implemented
             accuracy = []
             accuracy_no_other = []
             for test_index in range(39):
+                print('train accuracy batch index {}'.format(test_index))
                 input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
                 prediction = neural.predict(net, input, batch_size)
                 prediction_no_other = neural.predict(net, input, batch_size)
                 accuracy.append(train.accuracy(prediction, target, batch_size))
                 accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, batch_size))
+                print('train accuracy batch index {} end'.format(test_index))
             plot.plottvsv(accuracy, accuracy_no_other, batch_size)  # this is only for test
             print(accuracy)
             print(accuracy_no_other)
