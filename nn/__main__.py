@@ -89,7 +89,6 @@ def main():  # to be implemented
                 prediction_no_other = neural.predict(net, input, 27)
                 accuracy.append(train.accuracy(prediction, target, 27))
                 accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, 27))
-            plot.plottvsv(accuracy,accuracy_no_other,batch_size) #this is only for test
             print(accuracy)
             print(accuracy_no_other)
             validation_accuracy.append(np.average(np.average(np.array(accuracy))))
