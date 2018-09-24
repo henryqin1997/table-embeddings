@@ -59,7 +59,7 @@ def main():  # to be implemented
                 prediction = neural.predict(net, input, batch_size)
                 prediction_no_other = neural.predict(net, input, batch_size)
                 accuracy.append(train.accuracy(prediction, target, batch_size))
-                accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, batch_index))
+                accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, batch_size))
             plot.plottvsv(accuracy, accuracy_no_other, batch_size)  # this is only for test
             print(accuracy)
             print(accuracy_no_other)
