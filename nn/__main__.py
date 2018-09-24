@@ -55,10 +55,12 @@ def main():  # to be implemented
         with torch.no_grad():
 
             file.write("start predict iteration {}".format(iteration))
+            print("start predict iteration {}".format(iteration))
             accuracy = []
             accuracy_no_other = []
             for test_index in range(2):
                 file.write('train accuracy batch index {}'.format(test_index))
+                print('train accuracy batch index {}'.format(test_index))
                 input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
                 target = torch.from_numpy(target).float()
                 prediction = neural.predict(net, input, batch_size)
@@ -66,12 +68,13 @@ def main():  # to be implemented
                 accuracy.append(train.accuracy(prediction, target, batch_size))
                 accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, batch_size))
                 file.write('train accuracy batch index {} end'.format(test_index))
-            file.write(accuracy)
-            file.write(accuracy_no_other)
+                print('train accuracy batch index {} end'.format(test_index))
+            file.write('{}'.format(accuracy))
+            file.write('{}'.format(accuracy_no_other))
             train_accuracy.append(np.average(np.average(np.array(accuracy))))
             train_accuracy_no_other.append(np.average(np.average(np.array(accuracy_no_other))))
-            file.write(train_accuracy)
-            file.write(train_accuracy_no_other)
+            file.write('{}'.format(train_accuracy))
+            file.write('{}'.format(train_accuracy_no_other))
             return 0
 
         with torch.no_grad():
