@@ -43,7 +43,7 @@ def main():  # to be implemented
     validation_accuracy_no_other = []
     iteration = 0
 
-    while(iteration < 200):
+    while(iteration < 20):
 
         batch_index = 0
 
@@ -54,7 +54,7 @@ def main():  # to be implemented
             print("start predict iteration {}".format(iteration))
             accuracy = []
             accuracy_no_other = []
-            for test_index in range(39):
+            for test_index in range(1):
                 print('train accuracy batch index {}'.format(test_index))
                 input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
                 target = torch.from_numpy(target).float()
@@ -63,9 +63,9 @@ def main():  # to be implemented
                 accuracy.append(train.accuracy(prediction, target, batch_size))
                 accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, batch_size))
                 print('train accuracy batch index {} end'.format(test_index))
-            plot.plottvsv(accuracy, accuracy_no_other, batch_size)  # this is only for test
             print(accuracy)
             print(accuracy_no_other)
+            return 0
             train_accuracy.append(np.average(np.array(accuracy)))
             train_accuracy_no_other.append(np.average(np.array(accuracy_no_other)))
 
