@@ -3,6 +3,7 @@
 
 import json
 import os
+import sys
 import re
 import numpy
 import operator
@@ -18,7 +19,7 @@ webtables_dir = './webtables'
 wordlist_raw = './hadoop/output2/part-00000'
 tree_dir = './data/tree'
 num_folders = 51
-num_processors = 64
+num_processors = int(sys.argv[1])
 training_files_json = './data/training_files.json'
 wordlist_json = './data/wordlist.json'
 
@@ -85,7 +86,6 @@ def main():
     # json.dump(generate_wordlist(), open('data/wordlist.json', 'w+'), indent=4)
     # json.dump(list_training_files(), open('data/training_files.json', 'w+'), indent=4)
     # return
-
     training_files = json.load(open(training_files_json))
     for training_files_chunk in chunkify(training_files,num_processors):
         Process(target=conduct_etl, args=(training_files_chunk,)).start()
