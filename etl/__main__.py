@@ -41,7 +41,7 @@ def generate_wordlist():
 
 def training_file_filter(file, i):
     i = str(i)
-    return bool(re.match(r'(.+?){}-ip(.+?)25.json'.format(i.zfill(2)), file))
+    return bool(re.match(r'(.+?)25.json'.format(i.zfill(2)), file))
 
 
 def list_training_files():
@@ -83,10 +83,10 @@ def conduct_etl(training_files):
 
 
 def main():
-    # # Generate wordlist and training files list
+    # Generate wordlist and training files list
     # json.dump(generate_wordlist(), open('data/wordlist.json', 'w+'), indent=4)
-    # json.dump(list_training_files(), open('data/training_files.json', 'w+'), indent=4)
-    # return
+    json.dump(list_training_files(), open('data/training_files.json', 'w+'), indent=4)
+    return
 
     training_files = json.load(open(training_files_json))
     for training_files_chunk in chunks(training_files,num_processors):
