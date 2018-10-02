@@ -67,26 +67,26 @@ def conduct_etl(training_files):
         data = json.load(open(os.path.join(webtables_dir, training_file), encoding='utf-8'))
         if satisfy_variants(data):
             table = Table(data)
-            # Filter table with labels <= 10
-            if len(table.get_header()) <= 10:
-                print(training_file)
-                if not os.path.exists(os.path.join(training_data_dir, os.path.dirname(training_file))):
-                    os.makedirs(os.path.join(training_data_dir, os.path.dirname(training_file)))
-                basename = training_file.rstrip('.json')
-                json.dump(table.data,
-                          open(os.path.join(training_data_dir, training_file), 'w+'),
-                          indent=4)
-                numpy.savetxt(os.path.join(training_data_dir, '{}_ner.csv'.format(basename)),
-                              table.generate_ner_matrix(st, tag_to_index), fmt='%i', delimiter=",")
-                numpy.savetxt(os.path.join(training_data_dir, '{}_wordlist.csv'.format(basename)),
-                              table.generate_wordlist_matrix(wordlist), fmt='%i', delimiter=",")
+            # # Filter table with labels <= 10
+            # if len(table.get_header()) <= 10:
+            print(training_file)
+            if not os.path.exists(os.path.join(training_data_dir, os.path.dirname(training_file))):
+                os.makedirs(os.path.join(training_data_dir, os.path.dirname(training_file)))
+            basename = training_file.rstrip('.json')
+            json.dump(table.data,
+                      open(os.path.join(training_data_dir, training_file), 'w+'),
+                      indent=4)
+            numpy.savetxt(os.path.join(training_data_dir, '{}_ner.csv'.format(basename)),
+                          table.generate_ner_matrix(st, tag_to_index), fmt='%i', delimiter=",")
+            numpy.savetxt(os.path.join(training_data_dir, '{}_wordlist.csv'.format(basename)),
+                          table.generate_wordlist_matrix(wordlist), fmt='%i', delimiter=",")
 
 
 def main():
-    # Generate wordlist and training files list
+    # # Generate wordlist and training files list
     # json.dump(generate_wordlist(), open('data/wordlist.json', 'w+'), indent=4)
-    json.dump(list_training_files(), open('data/training_files.json', 'w+'), indent=4)
-    return
+    # json.dump(list_training_files(), open('data/training_files.json', 'w+'), indent=4)
+    # return
 
     training_files = json.load(open(training_files_json))
     for training_files_chunk in chunks(training_files,num_processors):
