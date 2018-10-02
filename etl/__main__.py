@@ -56,10 +56,8 @@ def list_training_files():
     return all_files
 
 
-def chunks(l, n):
-    """Yield successive n-sized chunks from l."""
-    for i in range(0, len(l), n):
-        yield l[i:i + n]
+def chunkify(lst,n):
+    return [lst[i::n] for i in range(n)]
 
 def conduct_etl(training_files):
     wordlist = json.load(open(wordlist_json))
@@ -89,7 +87,7 @@ def main():
     # return
 
     training_files = json.load(open(training_files_json))
-    for training_files_chunk in chunks(training_files,num_processors):
+    for training_files_chunk in chunkify(training_files,num_processors):
         Process(target=conduct_etl, args=(training_files_chunk,)).start()
 
 
