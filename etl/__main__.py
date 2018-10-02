@@ -7,6 +7,7 @@ import re
 import numpy
 import operator
 from collections import defaultdict
+from multiprocessing import Process
 from .table import Table
 from .table import satisfy_variants
 from .tagger import st, tag_to_index
@@ -17,6 +18,7 @@ webtables_dir = './webtables'
 wordlist_raw = './hadoop/output2/part-00000'
 tree_dir = './data/tree'
 num_folders = 51
+num_processors = 64
 training_files_json = './data/training_files.json'
 wordlist_json = './data/wordlist.json'
 
@@ -54,13 +56,12 @@ def list_training_files():
     return all_files
 
 
-def main():
-    # # Generate wordlist and training files list
-    # json.dump(generate_wordlist(), open('data/wordlist.json', 'w+'), indent=4)
-    # json.dump(list_training_files(), open('data/training_files.json', 'w+'), indent=4)
-    # return
+def chunks(l, n):
+    """Yield successive n-sized chunks from l."""
+    for i in range(0, len(l), n):
+        yield l[i:i + n]
 
-    training_files = json.load(open(training_files_json))
+def conduct_etl(training_files):
     wordlist = json.load(open(wordlist_json))
     for training_file in training_files:
         data = json.load(open(os.path.join(webtables_dir, training_file), encoding='utf-8'))
@@ -79,6 +80,17 @@ def main():
                               table.generate_ner_matrix(st, tag_to_index), fmt='%i', delimiter=",")
                 numpy.savetxt(os.path.join(training_data_dir, '{}_wordlist.csv'.format(basename)),
                               table.generate_wordlist_matrix(wordlist), fmt='%i', delimiter=",")
+
+
+def main():
+    # # Generate wordlist and training files list
+    # json.dump(generate_wordlist(), open('data/wordlist.json', 'w+'), indent=4)
+    # json.dump(list_training_files(), open('data/training_files.json', 'w+'), indent=4)
+    # return
+
+    training_files = json.load(open(training_files_json))
+    for training_files_chunk in chunks(training_files,num_processors):
+        Process(target=conduct_etl, args=(training_files_chunk,)).start()
 
 
 if __name__ == '__main__':
