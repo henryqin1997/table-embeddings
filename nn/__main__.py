@@ -11,7 +11,7 @@ import train
 import plot
 
 iteration_size = 200
-train_size = 1950
+train_size = 10000
 batch_size = 50
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -29,7 +29,7 @@ def main():  # to be implemented
 
     net = neural.Net(WORDLIST_LABEL_SIZE = len(target[0])).to(device)
 
-    file.write("nn prepared")
+    print("nn prepared")
 
     if os.path.isfile('mytraining.pt'):
         file.write("=> loading checkpoint mytraining.pt")
@@ -87,7 +87,7 @@ def main():  # to be implemented
             print("start predict train iteration {}\n".format(iteration))
             accuracy = []
             accuracy_no_other = []
-            for test_index in range(39):
+            for test_index in range(train_size/batch_size,(train_size+1000)/batch_size):
                 file.write('train accuracy batch index {}\n'.format(test_index))
                 print('train accuracy batch index {}\n'.format(test_index))
                 input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
@@ -110,7 +110,7 @@ def main():  # to be implemented
             print("start predict validation iteration {}\n".format(iteration))
             accuracy = []
             accuracy_no_other = []
-            for test_index in range(39, 40):
+            for test_index in range(train_size/batch_size,(train_size+1000)/batch_size):
                 input, target = train.load_data(batch_size=27, batch_index=test_index)
                 target = torch.from_numpy(target).float()
                 prediction = neural.predict(net, input, 27)
