@@ -1,0 +1,15 @@
+#!/bin/bash
+rm -f data/training_files_filtered.json
+echo "[" >> data/training_files_filtered.json
+for i in `seq 0 50`
+do
+    for f in data/train/$i/*; do
+        if [[ $f == *.json ]]
+        then
+            echo "    \"$i/`basename $f`\"," >> data/training_files_filtered.json
+        fi
+    done
+done
+truncate -s-2 data/training_files_filtered.json
+echo "
+]" >> data/training_files_filtered.json
