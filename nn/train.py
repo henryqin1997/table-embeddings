@@ -4,7 +4,7 @@ import os
 import numpy
 
 training_data_dir = '../data/train'
-training_files_json = '../data/training_files.json'
+training_files_json = '../data/training_files_filtered.json'
 training_files = json.load(open(training_files_json))
 
 
