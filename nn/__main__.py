@@ -111,12 +111,12 @@ def main():  # to be implemented
             accuracy = []
             accuracy_no_other = []
             for test_index in range(train_size/batch_size,(train_size+1000)/batch_size):
-                input, target = train.load_data(batch_size=27, batch_index=test_index)
+                input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
                 target = torch.from_numpy(target).float()
-                prediction = neural.predict(net, input, 27)
-                prediction_no_other = neural.predict(net, input, 27)
-                accuracy.append(train.accuracy(prediction, target, 27))
-                accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, 27))
+                prediction = neural.predict(net, input, batch_size)
+                prediction_no_other = neural.predict(net, input, batch_size)
+                accuracy.append(train.accuracy(prediction, target, batch_size))
+                accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, batch_size))
             print(accuracy)
             print(accuracy_no_other)
             validation_accuracy.append(np.average(np.average(np.array(accuracy))))
