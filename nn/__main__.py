@@ -109,16 +109,21 @@ def main():  # to be implemented
                 input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
                 target = torch.from_numpy(target).float()
                 prediction = neural.predict(net, input, batch_size)
-                prediction_no_other = neural.predict(net, input, batch_size)
+                prediction_poss = neural.predict_poss(net, input, batch_size)
                 accuracy.append(train.accuracy(prediction, target, batch_size))
-                accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, batch_size))
+                accuracy_no_other.append(train.accuracy_no_other(prediction, target, batch_size))
+                accuracy_poss.append(train.accuracy_possibility(prediction_poss,target,batch_size))
+                accuracy_threshold.append(train.accuracy_threshold(prediction_poss,target))
                 file.write('train accuracy batch index {} end\n'.format(test_index))
                 print('train accuracy batch index {} end\n'.format(test_index))
             train_accuracy.append(np.average(np.average(np.array(accuracy))))
             train_accuracy_no_other.append(np.average(np.average(np.array(accuracy_no_other))))
-
+            train_accuracy_poss.append(np.average(np.average(np.array(accuracy_poss))))
+            train_accuracy_threshold.append(np.average(np.average(np.array(accuracy_threshold))))
             file.write('iteration {} train_accuracy {}\n'.format(iteration, train_accuracy))
             file.write('train_accuracy_no_other {}\n'.format(train_accuracy_no_other))
+            file.write('train_accuracy_poss {}\n'.format(train_accuracy_poss))
+            file.write('train_accuracy_threshold {}\n'.format(train_accuracy_threshold))
             print(train_accuracy)
             print(train_accuracy_no_other)
 
@@ -127,19 +132,26 @@ def main():  # to be implemented
             print("start predict validation iteration {}\n".format(iteration))
             accuracy = []
             accuracy_no_other = []
+            accuracy_poss = []
+            accuracy_threshold = []
             for test_index in range(int(round(train_size/batch_size)),int(round((train_size+1000)/batch_size))):
                 input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
                 target = torch.from_numpy(target).float()
                 prediction = neural.predict(net, input, batch_size)
-                prediction_no_other = neural.predict(net, input, batch_size)
                 accuracy.append(train.accuracy(prediction, target, batch_size))
-                accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, batch_size))
+                accuracy_no_other.append(train.accuracy_no_other(prediction, target, batch_size))
+                accuracy_poss.append(train.accuracy_possibility(prediction_poss, target, batch_size))
+                accuracy_threshold.append(train.accuracy_threshold(prediction_poss, target))
             print(accuracy)
             print(accuracy_no_other)
             validation_accuracy.append(np.average(np.average(np.array(accuracy))))
             validation_accuracy_no_other.append(np.average(np.average(np.array(accuracy_no_other))))
+            validation_accuracy_poss.append(np.average(np.average(np.array(accuracy_poss))))
+            validation_accuracy_threshold.append(np.average(np.average(np.array(accuracy_threshold))))
             file.write('iteration {} validation_accuracy {}\n'.format(iteration, validation_accuracy))
             file.write('validation_accuracy_no_other {}\n'.format(validation_accuracy_no_other))
+            file.write('validation_accuracy_poss {}\n'.format(validation_accuracy_poss))
+            file.write('validation_accuracy_threshold {}\n'.format(validation_accuracy_threshold))
             print(validation_accuracy)
             print(validation_accuracy_no_other)
 
