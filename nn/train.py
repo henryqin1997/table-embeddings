@@ -31,6 +31,9 @@ def load_data(batch_size, batch_index=0):
         [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
          in batch_files_wordlist])
 
+    inputs_transformed = []
+    targets_transformed = []
+
     # Use One Hot Encoding and remove column with all zeros
     for i in range(len(inputs)):
         input = inputs[i]
@@ -50,9 +53,9 @@ def load_data(batch_size, batch_index=0):
                 target_transformed[current_index] = target[current_index]
                 current_index += 1
 
-        inputs[i] = input_transformed.transpose()
-        targets[i] = target_transformed.transpose()
-    return inputs, targets
+        inputs_transformed.append(input_transformed.transpose())
+        targets_transformed.append(target_transformed.transpose())
+    return numpy.array(inputs_transformed), numpy.array(targets_transformed)
 
 
 ##########################333#3#
