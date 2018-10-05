@@ -34,7 +34,7 @@ def load_data(batch_size, batch_index=0):
     # Use One Hot Encoding and remove column with all zeros
     for i in range(len(inputs)):
         input = inputs[i]
-        target = targets[1]
+        target = targets[i]
         assert len(input) == len(tag_to_index)
 
         input = numpy.array([one_hot(row) for row in input.transpose()])
