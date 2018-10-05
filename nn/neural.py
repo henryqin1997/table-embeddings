@@ -17,6 +17,8 @@ class Net(nn.Module):
         self.COLUMN_DATA_TYPES = COLUMN_DATA_TYPES
         self.WORDLIST_LABEL_SIZE = WORDLIST_LABEL_SIZE
         self.fc1 = nn.Linear(self.COLUMN_DATA_TYPES * 10, self.WORDLIST_LABEL_SIZE * 10, True)
+        self.fc1.bias.data.fill_(0)
+        nn.init.ones_(self.fc1)
         # self.fc1 = nn.Linear(self.COLUMN_DATA_TYPES * 10, 2 * self.COLUMN_DATA_TYPES * 10 + 10, True)
         # self.fc2 = nn.Linear(2 * self.COLUMN_DATA_TYPES * 10 + 10, self.WORDLIST_LABEL_SIZE * 10, True)
 
@@ -70,6 +72,25 @@ def predict(net, input, batch_size=1):
             output[indice][j] = 1
             j = j + 1
         return output
+    else:
+        print('error: batchsize no less than 1')
+        exit(0)
+
+def predict_poss(net, input, batch_size=1): #now predict the possibility to choose one answer(if we use possibility-based prediction)
+    if batch_size > 1:
+        output_ = []
+        for i in range(batch_size):
+            values = net(torch.from_numpy(input[i]).float().view(-1).to(device)).view(-1, net.word_size())
+            values_normed = torch.norm(values, p=1, dim=1)
+            values = values.div(values_normed.expand_as(values))
+            output_.append(values)
+        return output_
+
+    elif batch_size == 1:
+        values = net(torch.from_numpy(input).float().view(-1).to(device)).view(-1, net.word_size())
+        values_normed = torch.norm(values, p=1, dim=1)
+        values = values.div(values_normed.expand_as(values))
+        return values
     else:
         print('error: batchsize no less than 1')
         exit(0)

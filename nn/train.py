@@ -30,7 +30,6 @@ def load_data(batch_size, batch_index=0):
 # 2. accuracy of prediction of label over target when other doesn't count
 #   #correct prediction(no 'other')/#targetlabel(no other)
 
-
 def accuracy(prediction, target, batch_size=1):  # to be implemented
     if batch_size>1:
         total_num = 0
