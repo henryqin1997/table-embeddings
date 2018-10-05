@@ -1,11 +1,20 @@
 import json
 import os
-
 import numpy
 
 training_data_dir = '../data/train'
 training_files_json = '../data/training_files_filtered.json'
 training_files = json.load(open(training_files_json))
+tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERCENT': 4, 'DATE': 5, 'TIME': 6}
+
+
+def one_hot(row):
+    assert len(row) > 0
+    row_sum = sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))
+    row_converted = numpy.zeros(2 ** len(row))
+    assert row_sum < len(row_converted)
+    row_converted[row_sum] = 1
+    return row_converted
 
 
 def load_data(batch_size, batch_index=0):
@@ -21,7 +30,23 @@ def load_data(batch_size, batch_index=0):
     target = numpy.array(
         [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
          in batch_files_wordlist])
-    return input, target
+    assert len(input) == len(tag_to_index)
+
+    # Use One Hot Encoding and remove column with all zeros
+    input = numpy.array([one_hot(row) for row in input.transpose()])
+    target = target.transpose()
+
+    input_transformed = numpy.zeros(input.shape)
+    target_transformed = numpy.zeros(target.shape)
+
+    current_index = 0
+    for row in input:
+        if row[0] == 0:
+            input_transformed[current_index] = input[current_index]
+            target_transformed[current_index] = target[current_index]
+            current_index += 1
+
+    return input_transformed.transpose(), target_transformed.transpose()
 
 
 ##########################333#3#
