@@ -10,7 +10,7 @@ tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERC
 
 def one_hot(row):
     assert len(row) > 0
-    row_sum = round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)])))
+    row_sum = int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
     row_converted = numpy.zeros(2 ** len(row))
     assert row_sum < len(row_converted)
     row_converted[row_sum] = 1
