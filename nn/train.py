@@ -69,3 +69,13 @@ def accuracy_no_other(prediction, target, batch_size=1):  # to be implemented
             correct_num = correct_num + int(prediction[:-1, col_index].dot(target[:-1, col_index]))
             total_num = total_num + int(sum(prediction[:-1, col_index]))
         return correct_num / total_num
+
+def accuracy_possibility(prediction_poss, target, batch_size=1):
+    #to be implemented
+    accuracy = 0
+    return accuracy
+
+def accuracy_threshold(prediction_poss, target, batch_size=1, threshold = 0.05):
+    # to be implemented
+    accuracy = 0
+    return accuracy
