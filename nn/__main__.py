@@ -39,20 +39,28 @@ def main():  # to be implemented
         print("=> loaded checkpoint mytraining.pt")
 
 
-    optimizer = torch.optim.SGD(net.parameters(), lr=0.001)
+    optimizer = torch.optim.SGD(net.parameters(), lr=0.003)
     criterion = nn.MSELoss()
 
     ###train part###
 
     train_accuracy = []
     train_accuracy_no_other = []
+    train_accuracy_poss = []
+    train_accuracy_threshold = []
     validation_accuracy = []
     validation_accuracy_no_other = []
+    validation_accuracy_poss = []
+    validation_accuracy_threshold = []
+
     iteration = 0
-    '''
+
     while(iteration < 10):
 
         iteration += 1
+
+        if(iteration>=2):
+            optimizer = torch.optim.SGD(net.parameters(), lr=0.001)
 
         for ite in range(100):
 
@@ -77,59 +85,63 @@ def main():  # to be implemented
 
                 batch_index += 1
 
-            neural.save_model(net, 'mytraining.pt')
-            print('model saved')
-            file.write('model saved iteration{} : ite{}\n'.format(iteration, ite))
+            if ite%10 == 9:
+                neural.save_model(net, 'mytraining.pt')
+                print('model saved')
+                file.write('model saved iteration{} : ite{}\n'.format(iteration, ite))
 
         print("end training iteration {}\n".format(iteration))
         file.write("end training iteration {}\n".format(iteration))
-        '''
 
 
-    with torch.no_grad():
 
-        file.write("start predict iteration {}\n".format(iteration))
-        print("start predict train iteration {}\n".format(iteration))
-        accuracy = []
-        accuracy_no_other = []
-        for test_index in range(int(round(train_size/batch_size))):
-            file.write('train accuracy batch index {}\n'.format(test_index))
-            print('train accuracy batch index {}\n'.format(test_index))
-            input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
-            target = torch.from_numpy(target).float()
-            prediction = neural.predict(net, input, batch_size)
-            prediction_no_other = neural.predict(net, input, batch_size)
-            accuracy.append(train.accuracy(prediction, target, batch_size))
-            accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, batch_size))
-            file.write('train accuracy batch index {} end\n'.format(test_index))
-            print('train accuracy batch index {} end\n'.format(test_index))
-        train_accuracy.append(np.average(np.average(np.array(accuracy))))
-        train_accuracy_no_other.append(np.average(np.average(np.array(accuracy_no_other))))
-        file.write('iteration {} train_accuracy {}\n'.format(iteration, train_accuracy))
-        file.write('train_accuracy_no_other {}\n'.format(train_accuracy_no_other))
-        print(train_accuracy)
-        print(train_accuracy_no_other)
+        with torch.no_grad():
 
-    with torch.no_grad():
+            file.write("start predict iteration {}\n".format(iteration))
+            print("start predict train iteration {}\n".format(iteration))
+            accuracy = []
+            accuracy_no_other = []
+            accuracy_poss = []
+            accuracy_threshold = []
+            for test_index in range(int(round(train_size/batch_size))):
+                file.write('train accuracy batch index {}\n'.format(test_index))
+                print('train accuracy batch index {}\n'.format(test_index))
+                input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
+                target = torch.from_numpy(target).float()
+                prediction = neural.predict(net, input, batch_size)
+                prediction_no_other = neural.predict(net, input, batch_size)
+                accuracy.append(train.accuracy(prediction, target, batch_size))
+                accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, batch_size))
+                file.write('train accuracy batch index {} end\n'.format(test_index))
+                print('train accuracy batch index {} end\n'.format(test_index))
+            train_accuracy.append(np.average(np.average(np.array(accuracy))))
+            train_accuracy_no_other.append(np.average(np.average(np.array(accuracy_no_other))))
 
-        print("start predict validation iteration {}\n".format(iteration))
-        accuracy = []
-        accuracy_no_other = []
-        for test_index in range(int(round(train_size/batch_size)),int(round((train_size+1000)/batch_size))):
-            input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
-            target = torch.from_numpy(target).float()
-            prediction = neural.predict(net, input, batch_size)
-            prediction_no_other = neural.predict(net, input, batch_size)
-            accuracy.append(train.accuracy(prediction, target, batch_size))
-            accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, batch_size))
-        print(accuracy)
-        print(accuracy_no_other)
-        validation_accuracy.append(np.average(np.average(np.array(accuracy))))
-        validation_accuracy_no_other.append(np.average(np.average(np.array(accuracy_no_other))))
-        file.write('iteration {} validation_accuracy {}\n'.format(iteration, validation_accuracy))
-        file.write('validation_accuracy_no_other {}\n'.format(validation_accuracy_no_other))
-        print(validation_accuracy)
-        print(validation_accuracy_no_other)
+            file.write('iteration {} train_accuracy {}\n'.format(iteration, train_accuracy))
+            file.write('train_accuracy_no_other {}\n'.format(train_accuracy_no_other))
+            print(train_accuracy)
+            print(train_accuracy_no_other)
+
+        with torch.no_grad():
+
+            print("start predict validation iteration {}\n".format(iteration))
+            accuracy = []
+            accuracy_no_other = []
+            for test_index in range(int(round(train_size/batch_size)),int(round((train_size+1000)/batch_size))):
+                input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
+                target = torch.from_numpy(target).float()
+                prediction = neural.predict(net, input, batch_size)
+                prediction_no_other = neural.predict(net, input, batch_size)
+                accuracy.append(train.accuracy(prediction, target, batch_size))
+                accuracy_no_other.append(train.accuracy_no_other(prediction_no_other, target, batch_size))
+            print(accuracy)
+            print(accuracy_no_other)
+            validation_accuracy.append(np.average(np.average(np.array(accuracy))))
+            validation_accuracy_no_other.append(np.average(np.average(np.array(accuracy_no_other))))
+            file.write('iteration {} validation_accuracy {}\n'.format(iteration, validation_accuracy))
+            file.write('validation_accuracy_no_other {}\n'.format(validation_accuracy_no_other))
+            print(validation_accuracy)
+            print(validation_accuracy_no_other)
 
 
 
