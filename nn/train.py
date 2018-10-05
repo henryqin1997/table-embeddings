@@ -72,10 +72,32 @@ def accuracy_no_other(prediction, target, batch_size=1):  # to be implemented
 
 def accuracy_possibility(prediction_poss, target, batch_size=1):
     #to be implemented
-    accuracy = 0
-    return accuracy
+    return accuracy(prediction_poss,target,batch_size)
 
 def accuracy_threshold(prediction_poss, target, batch_size=1, threshold = 0.05):
     # to be implemented
     accuracy = 0
+    if batch_size>1:
+        total_num = 0
+        correct_num = 0
+        col_size = target.shape[2]
+        for batch_index in range(batch_size):
+            for col_index in range(col_size):
+                prob=int(prediction_poss[batch_index][:, col_index].dot(target[batch_index][:, col_index]))
+                if prob<threshold:
+                    prob=0
+                correct_num=correct_num+prob
+                total_num = total_num + int(sum(prediction_poss[batch_index][:, col_index]))
+        accuracy=correct_num / total_num
+    else:
+        total_num = 0
+        correct_num = 0
+        col_size = target.shape[1]
+        for col_index in range(col_size):
+            prob=int(prediction_poss[:, col_index].dot(target[:, col_index]))
+            if prob < threshold:
+                prob = 0
+            correct_num = correct_num + prob
+            total_num = total_num + int(sum(prediction_poss[:, col_index]))
+        accuracy=correct_num / total_num
     return accuracy
