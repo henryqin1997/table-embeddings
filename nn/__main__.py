@@ -11,7 +11,7 @@ import train
 import plot
 
 iteration_size = 200
-train_size = 10000
+train_size = 500
 batch_size = 50
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
