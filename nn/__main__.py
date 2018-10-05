@@ -33,21 +33,23 @@ def main():  # to be implemented
 
     if os.path.isfile('mytraining.pt'):
         file.write("=> loading checkpoint mytraining.pt")
+        print("=> loading checkpoint mytraining.pt")
         neural.load_model(net, 'mytraining.pt')
         file.write("=> loaded checkpoint mytraining.pt")
+        print("=> loaded checkpoint mytraining.pt")
 
 
     optimizer = torch.optim.SGD(net.parameters(), lr=0.001)
     criterion = nn.MSELoss()
 
     ###train part###
-    '''
+    
     train_accuracy = []
     train_accuracy_no_other = []
     validation_accuracy = []
     validation_accuracy_no_other = []
     iteration = 0
-
+    '''
     while(iteration < 10):
 
         iteration += 1
