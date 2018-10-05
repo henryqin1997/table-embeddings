@@ -103,7 +103,7 @@ def main():  # to be implemented
             accuracy_no_other = []
             accuracy_poss = []
             accuracy_threshold = []
-            for test_index in range(int(round(train_size/batch_size))):
+            for test_index in range(train_size/batch_size):
                 file.write('train accuracy batch index {}\n'.format(test_index))
                 print('train accuracy batch index {}\n'.format(test_index))
                 input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
@@ -134,7 +134,7 @@ def main():  # to be implemented
             accuracy_no_other = []
             accuracy_poss = []
             accuracy_threshold = []
-            for test_index in range(int(round(train_size/batch_size)),int(round((train_size+1000)/batch_size))):
+            for test_index in range(train_size//batch_size,(train_size+1000)//batch_size):
                 input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
                 target = torch.from_numpy(target).float()
                 prediction = neural.predict(net, input, batch_size)
