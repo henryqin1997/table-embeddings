@@ -17,8 +17,13 @@ class Net(nn.Module):
         self.COLUMN_DATA_TYPES = COLUMN_DATA_TYPES
         self.WORDLIST_LABEL_SIZE = WORDLIST_LABEL_SIZE
         self.fc1 = nn.Linear(self.COLUMN_DATA_TYPES * 10, self.WORDLIST_LABEL_SIZE * 10, True)
-        self.fc1.bias.data.fill_(0)
-        nn.init.ones_(self.fc1)
+        for m in self.modules():
+            if isinstance(m, nn.Linear):
+                size = m.weight.size()
+                fan_out = size[0]  # number of rows
+                fan_in = size[1]  # number of columns
+                nn.init.constant_(m.weight,1)
+                nn.init.constant_(m.bias,0)
         # self.fc1 = nn.Linear(self.COLUMN_DATA_TYPES * 10, 2 * self.COLUMN_DATA_TYPES * 10 + 10, True)
         # self.fc2 = nn.Linear(2 * self.COLUMN_DATA_TYPES * 10 + 10, self.WORDLIST_LABEL_SIZE * 10, True)
 
@@ -48,7 +53,6 @@ def save_model(model, name):
 
 def load_model(model, name):
     model.load_state_dict(torch.load(name, map_location=device))
-
 
 def predict(net, input, batch_size=1):
     if batch_size > 1:
