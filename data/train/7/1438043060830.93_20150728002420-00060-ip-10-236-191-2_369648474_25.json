@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6",
+            "Step 7"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Router> enable",
+            "configure terminal Example: Router# configure terminal",
+            "ipv6 pim [vrf vrf-name] bsr candidate bsr ipv6-address[hash-mask-length] [priority priority-value] Example: Router(config)# ipv6 pim bsr candidate bsr 2001:DB8:3000:3000::42 124 priority 10",
+            "interface type number Example: Router(config)# interface GigabitEthernet 1/0/0",
+            "ipv6 pim bsr border Example: Router(config-if)# ipv6 pim bsr border",
+            "exit Example: Router(config-if)# exit",
+            "show ipv6 pim [vrf vrf-name] bsr {election | rp-cache | candidate-rp} Example: Router# show ipv6 pim bsr election"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Configures a router to be a candidate BSR.",
+            "Specifies an interface type and number, and places the router in interface configuration mode.",
+            "Configures a border for all BSMs of any scope on a specified interface.",
+            "Enter this command twice to exit interface configuration mode and enter privileged EXEC mode.",
+            "Displays information related to PIM BSR protocol processing."
+        ]
+    ],
+    "pageTitle": "IPv6 Implementation Guide, Cisco IOS XE Release 3S - Implementing IPv6 Multicast [Cisco IOS XE 3S] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipv6/configuration/xe-3s/ipv6-xe-36s-book/ip6-multicast.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00060-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 369718895,
+    "recordOffset": 369648474,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{73907=An IPv6 multicast address is an IPv6 address that has a prefix of FF00::/8 (1111 1111). An IPv6 multicast address is an identifier for a set of interfaces that typically belong to different nodes. A packet sent to a multicast address is delivered to all interfaces identified by the multicast address. The second octet following the prefix defines the lifetime and scope of the multicast address. A permanent multicast address has a lifetime parameter equal to 0; a temporary multicast address has a lifetime parameter equal to 1. A multicast address that has the scope of a node, link, site, or organization, or a global scope has a scope parameter of 1, 2, 5, 8, or E, respectively. For example, a multicast address with the prefix FF02::/16 is a permanent multicast address with a link scope. The figure below shows the format of the IPv6 multicast address., 71027=IPv6 routers must also join the all-routers multicast group FF02:0:0:0:0:0:0:2 (scope is link-local).}",
+    "TableContextTimeStampAfterTable": "{75652=Displays the average join-prune aggregation for the most recently aggregated 1000, 10,000, and 50,000 packets for each interface., 432172=Bi-directional Protocol Independent Multicast (BIDIR-PIM) , June 20, 2003, 168081=Router# show ipv6 rpf 2001:DB8::1:1:2, 435093=RFC 2373, 431846=PIM Upstream Detection Among Multiple Addresses , February 2003, 431132=Protocol Independent Multicast - Sparse Mode PIM-SM): Protocol Specification (Revised) , March 6, 2003, 276324=Router(config-if)# ipv6 address FE80::40:1:3 link-local, 435639=RFC 2460, 436226=RFC 2462, 431506=Embedding the Address of RP in IPv6 Multicast Address , May 23, 2003, 435936=RFC 2461}",
+    "textBeforeTable": "DETAILED STEPS 7.\u00a0\u00a0\u00a0 show ipv6 pim [vrf vrf-name] bsr {election | rp-cache | candidate-rp} 6.\u00a0\u00a0\u00a0 exit 5.\u00a0\u00a0\u00a0 ipv6 pim bsr border 4.\u00a0\u00a0\u00a0 interface type number 3.\u00a0\u00a0\u00a0 ipv6 pim [vrf vrf-name] bsr candidate bsr ipv6-address[hash-mask-length] [priority priority-value] 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS Configuring a BSR and Verifying BSR Information Sending PIM RP Advertisements to the BSR Configuring a BSR and Verifying BSR Information Configuring a BSR",
+    "textAfterTable": "Sending PIM RP Advertisements to the BSR SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 ipv6 pim [vrf vrf-name] bsr candidate rp ipv6-address [group-list access-list-name] [priority priority-value] [interval seconds] [scope scope-value] [bidir] 4.\u00a0\u00a0\u00a0 interface type number 5.\u00a0\u00a0\u00a0 ipv6 pim bsr border DETAILED STEPS \u00a0 Command or Action Purpose Step\u00a01 enable Example: Router> enable \u00a0 Enables privileged EXEC mode.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

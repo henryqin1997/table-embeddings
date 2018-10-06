@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Setting",
+            "IP Addresses",
+            "Default Gateway",
+            "Static Routes",
+            "Other"
+        ],
+        [
+            "Requirements",
+            "Two may be required, the second functioning as a serviceability interface for your Unified ICM service provider.",
+            "None.",
+            "None.",
+            "Disable Windows Server 2003 or 2008 R2 networking on the Signaling Access Network."
+        ]
+    ],
+    "pageTitle": "Pre-installation Planning Guide for Cisco Unified ICM Enterprise and Hosted Release 9.0(1) - Datacom requirements [Cisco Unified Contact Center Enterprise] - Cisco",
+    "title": "Table 11 CallRouter Signaling Access LAN configuration",
+    "url": "http://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/ipcc_enterprise/ippcenterprise9_0_1/installation/guide/UCCE_BK_P549C6CE_00_pre-installation-planning-guide-for-cisco/CCMP_BK_P549C6CE_00_pre-installation-planning-guide-for-cisco_chapter_01010.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986148.56/warc/CC-MAIN-20150728002306-00089-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 376302187,
+    "recordOffset": 376268573,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{41771=To display this dialog box on Windows Server 2003, go to the Windows Server Start menu:}",
+    "TableContextTimeStampAfterTable": "{85235=On Windows Server 2008 R2 select Start > Control Panel > Network and Internet > View network status and tasks > Change adapter Settings. Press the ALT key to make the menu bar appear. Choose Advanced > Advanced Settings to display the Advanced Settings window., 83700=Disable Windows Server 2003 or 2008 R2 networking on the Signaling Access Network., 93043=Disable Windows Server 2003 or 2008 R2 networking on the private LAN interface. (See Disabling Windows Server 2003 and 2008 R2 Networking for more information.), 84488=You can disable Windows Server 2003 networking on the private LAN interface through the Network and Dial-up Connections window. Right click on the My Network Places icon on the Windows Server 2003 desktop. The Network and Dial-up Connections window appears. (Optionally, you can right-click on the My Computer icon, select Explore, then right click on My Network Places and select Properties.) Choose Advanced > Advanced Settings to display the Advanced Settings window., 49987=Unified ICME supports both Windows 2003 and Windows Active Directory domains. Native mode is required. Unified ICM user configuration data is stored in Active Directory Organizational Units (OU)., 80916=Disable Windows Server 2003 or 2008 R2 networking on the private LAN.}",
+    "textBeforeTable": "The bandwidth for the private WAN between the two sides of a duplexed central controller must support the total sustained call load for all ACD sites. In addition, bandwidth on this private WAN must provide some degree of burst resilience and enough reserve capacity to perform fault tolerant messaging and synchronization. The following table summarizes the network circuit requirements for visible and private networks within the Unified ICM system. The visible network bandwidth requirements for a typical Unified ICM system are about 1,000 bytes of data per call over the networks that carry call data. For example, if a remote PG is managing 15 calls per second at a contact center site, it needs to transfer 15,000 bytes of data over the visible WAN to the central site every second (a total of 120,000 bits per second, ignoring packet overhead). Network bandwidth requirements The three networks (visible, private, and signaling) should be on separate LAN segments. This requires the use of three Ethernet cards in the CallRouter machine. The Unified ICM system uses Ethernet for local area network connectivity. The particular Ethernet topology used is immaterial from an architectural standpoint. However, the topology used may be relevant from a network or systems management perspective. Typically, UTP is used in the private, visible, and signaling access LANs. Network Topology",
+    "textAfterTable": "Variable, depending on load. See the section Calculating QoS Bandwidth Requirements, page 11-11, for a means of calculating the minimum required bandwidthfor a Quality of Service (QoS) compliant network. Signaling Access Network Local area network that connects the NIC to the IXC carrier network or client network. Ethernet Unshielded Twisted Pair (UTP) 100 Mbps Visible and private LANs Local area networks that connect ICM nodes at a central site and PGs and Administration & Data Servers at remote contact center sites. Ethernet Unshielded Twisted Pair (UTP). Cisco requires using manageable hubs. 100 Mbps You may require additional bandwidth on the visible WAN. The actual requirement depends on a number of factors, including call load, the number of ACDs, the number of agents, and the number of Admin sites. Note If your network is utilizing the Cisco Unified ICM Quality of Service (QoS) feature, see Cisco ICM Quality Of Service (QoS), for additional latency considerations.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

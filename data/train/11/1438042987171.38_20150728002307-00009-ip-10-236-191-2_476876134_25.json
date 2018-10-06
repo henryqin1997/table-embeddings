@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Aug 14, 2003",
+            "May 21, 2010",
+            "May 28, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: TEXAS INSTRUMENTS INCORPORATED, TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:LUECK, ANDREW W.;MAIN, KEVIN K.;ENOCH, JEFFREY H.;REEL/FRAME:014408/0166;SIGNING DATES FROM 20030611 TO 20030811",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8"
+        ]
+    ],
+    "pageTitle": "Patent US20050038947 - PCI express to PCI translation bridge - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US20050038947?dq=7,603,356",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00009-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 476904095,
+    "recordOffset": 476876134,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6380=PCI Express provides for up to 8 virtual channels, VC0 through VC7, as illustrated by blocks 2120, 2121 . . . 212X in FIG. 2. The virtual channel 0, VC0, is the default channel which is utilized for transmitting non-time critical data, such as configuration data. Table 2 shows at locations 1B0h through 1ECh a port arbitration table for a first virtual channel, VC1. As stated earlier, only a signal virtual channel is shown in the present implementation, although 6 more virtual-channels can be provided. The isochronous data from device 238 is assigned by port arbitration circuit 214 implementing the port arbitration table for virtual channel VC1 shown in Table 2 into the queue 2121 for this virtual channel. The data from device 238 is assigned enough phases in virtual channel 1 to assure the isochrony of the data that is being transmitted upstream to the processor.}",
+    "TableContextTimeStampAfterTable": "{32709=In the present invention, it was chosen to place the registers in memory, which provides several advantages. First of all, the amount of memory space that is provided is in addition to the spaces set up in the standards so that it is up to the designer to decide how much memory space will be available. Secondly, when one addresses the configuration spaces shown in Tables 1 and 2, if the predominant processor for personal computers is utilized in the host, I/O cycles are required to address this configuration space. These cycles lock down the processor making it wait for the completion of the task before proceeding to the next task. This wastes valuable processor time. It should further be noted that this time may not be taken at boot up of the system. For example, the user may hot plug in a IEEE 1394 device while the system is operating, for example, requiring the bridge to now be configured for isochronous data transfer, which would then consume valuable processor time during the normal operation of the personal computer. If the registers are configured into memory space, they are addressed as a memory with an address and a read or write task., 22478=Peripheral Component Interconnect (PCI) is a parallel bus architecture developed in 1992 which has become the predominant local bus for personal computers and similar platforms. The implementation of this technology has come close to its practical limits of performance and can not easily be scaled up in frequency or down in voltage. A new architecture utilizing point-to-point transmission, having a higher speed, and which is scalable for future improvements, is known as PCI Express., 173119=When isochronous data is to be sent from the PCI Express fabric through port 204 downstream to a PCI device, such as device 238, a reverse process is applied. The reverse process is somewhat easier because PCI Express provides specifically for the transmission of isochronous data. The data is received on lines 204 and passes through PCI interface 206 into the virtual channel arbitration circuit 208. The virtual channel arbitration circuit 208 places the data in virtual channel 1, queue 2121, for example. This data then passes through port arbitration circuit 214 and into PCI transaction queues 218. The port arbitration circuit 214 signals the secondary bus traffic management circuit 220 to take possession of the bus in order that the isochronous data be transferred to the device 238. The secondary bus traffic management circuit 220 controls the PCI bus arbiter 226 to take control of the bus by sending a grant signal via request/grant lines 224 to the PCI bus interface 222. Once the bus is under the control of the bridge, the data can be transferred from the PCI transaction queues to the bus 228 and thus to device 238., 174432=The registers 216 are configured by the host processor which run software within the host to set the resources within the bridge that are needed for a particular transaction. Thus, if a user were to hot plug in a isochronous device, such as an IEEE 1394 device, the host processor would then configure the registers 216 in order to provide the ability to transfer isochronous data through the bridge. These configuration commands would come through the PCI Express fabric into port 204 through the PCI Express interface 206 and the virtual channel arbitration circuit 208 into the PCI Express configuration registers 210 and then into the upstream virtual channel window control registers 216.}",
+    "textBeforeTable": "Patent Citations While the invention has been shown and described with reference to preferred embodiments thereof, it is well understood by those skilled in the art that various changes and modifications can be made in the invention without departing from the spirit and scope of the invention as defined by the appended claims. The registers 216 are configured by the host processor which run software within the host to set the resources within the bridge that are needed for a particular transaction. Thus, if a user were to hot plug in a isochronous device, such as an IEEE 1394 device, the host processor would then configure the registers 216 in order to provide the ability to transfer isochronous data through the bridge. These configuration commands would come through the PCI Express fabric into port 204 through the PCI Express interface 206 and the virtual channel arbitration circuit 208 into the PCI Express configuration registers 210 and then into the upstream virtual channel window control registers 216. When isochronous data is to be sent from the PCI Express fabric through port 204 downstream to a PCI device, such as device 238, a reverse process is applied. The reverse process is somewhat easier because PCI Express provides specifically for the transmission of isochronous data. The data is received on lines 204 and passes through PCI interface 206 into the",
+    "textAfterTable": "US20040181617 * Mar 11, 2003 Sep 16, 2004 Dell Products L.P. System and method for using a switch to route peripheral and graphics data on an interconnect * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US7246191 Mar 31, 2005 Jul 17, 2007 Intel Corporation Method and apparatus for memory interface US7284077 * Sep 12, 2003 Oct 16, 2007 International Business Machines Corporation Peripheral interface system having dedicated communication channels US7356636 * Apr 22, 2005 Apr 8, 2008 Sun Microsystems, Inc. Virtualized PCI switch US7433984 * Oct 13, 2004 Oct 7, 2008 Texas Instruments Incorporated Time-based weighted round robin arbiter US7469312 Feb 24, 2005 Dec 23, 2008 International Business Machines Corporation Computer system bus bridge US7480757",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

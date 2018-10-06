@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Deployment Status",
+            "Edited",
+            "Patched",
+            "Deployed to Sandbox",
+            "Deployed",
+            "Error"
+        ],
+        [
+            "Meaning",
+            "The flexfield metadata definition has not been deployed yet. Updates of the metadata definition are not applied in the runtime yet.",
+            "The flexfield metadata definition has been modified through a patch, but the flexfield has not yet been deployed so the patched definition is not reflected in the runtime.",
+            "The current metadata for the flexfield is deployed in ADF artifacts and available as a flexfield-enabled sandbox. The status of the sandbox is managed by the Manage Sandboxes task available to the Administrator menu of Setup and Maintenance work area.",
+            "The current metadata for the flexfield is deployed in ADF artifacts and available to end users. There have not been any changes to the flexfield since it was last deployed in the mainline.",
+            "The deployment attempt in the mainline failed."
+        ]
+    ],
+    "pageTitle": "Oracle Fusion Applications Project Management Implementation Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E25054_01/fusionapps.1111/e20384/F642965AN24286.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00213-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 78883791,
+    "recordOffset": 78810204,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 20 Sep 2012 18:00:29 GMT",
+    "textBeforeTable": "A flexfield can have the following deployment statuses. Every flexfield has a: deployment status. Deployment Status You can deploy a flexfield to a sandbox for testing or to the mainline for use. To use a flexfield at runtime, the flexfield must have been deployed at least once. Deployment generates or refreshes the Application Development Framework (ADF) business component objects that render the flexfield in a user interface. Flexfields are deployed for the first time during the application provisioning process. Flexfield Deployment: Explained Flexfield Deployment Changed parameter default value does not update segment value. Only the changed derivation value updates the segment value. Default segment value is parameter's default value Yes, and different from default value Yes Parameter Changed parameter derivation value updates segment value Default segment value is parameter's default and derivation value Yes, and same as default value Yes Parameter N/A Default segment value is the parameter's default value No Yes Parameter Changed parameter derivation value updates segment value Default segment value Yes Yes Constant N/A Default segment value No Yes",
+    "textAfterTable": "Note Whenever a value set definition changes, the deployment status of a flexfield that uses that value set changes to edited. If the change results from a patch, the deployment status of the flexfield changes to patched. Initial Deployment Status of Flexfields The Oracle Fusion Applications installation loads flexfield metadata into the database. This initial load sets the flexfield status to Edited to indicate that the flexfield has not been deployed yet. The application provisioning process during installation deploys the predefined flexfields of the provisioned applications, which sets their status to Deployed if no errors are encountered. When accessing a provisioned application, deployed flexfields are ready to use. In some cases, flexfield availability at runtime requires setup, such as defining key flexfields. Metadata Validation Use the Validate Metadata command to view possible metadata errors before attempting to deploy the flexfield. Metadata validation is the initial phase of the Deploy and Deploy to Sandbox commands. By successfully validating metadata before running the deployment commands, you can avoid failures in the metadata validation phase of a deployment attempt. Errors in the metadata validation phase of deployment cause the deployment attempt to abort. Metadata validation results do not affect the deployment status of a flexfield. Flexfield Deployment Status: How It Is Calculated Flexfield deployment status indicates how the flexfield metadata definition in the Oracle Applications database relates to the Application Development Framework (ADF) business components generated into a Metadata Services (MDS)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

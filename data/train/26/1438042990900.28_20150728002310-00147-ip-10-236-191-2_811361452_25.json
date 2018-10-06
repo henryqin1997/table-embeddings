@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Data-attribute",
+            "data-icon",
+            "data-iconpos",
+            "data-inline",
+            "data-mini",
+            "data-native-menu",
+            "data-overlay-theme",
+            "data-placeholder",
+            "data-role",
+            "data-theme"
+        ],
+        [
+            "Value",
+            "Icons Reference",
+            "left | right | top | bottom | notext",
+            "true | false",
+            "true | false",
+            "true | false",
+            "letter (a-z)",
+            "true | false",
+            "none",
+            "letter (a-z)"
+        ],
+        [
+            "Description",
+            "Specifies the icon of the select element. Default is \"arrow-d\"",
+            "Specifies the position of the icon",
+            "Specifies whether the select element should be inline or not",
+            "Specifies whether the select should be of small or regular size",
+            "When set to false, it uses jQuery's own custom select menu (recommended if you want the select menu to display the same on all mobile devices)",
+            "Specifies the theme color of jQuery's own custom select menu (used together with data-native-menu=\"false\")",
+            "Can be set on an element of a non-native select",
+            "Prevents jQuery Mobile to style select elements as buttons",
+            "Specifies the theme color of the select element"
+        ]
+    ],
+    "pageTitle": "jQuery Mobile Data Attributes",
+    "title": "",
+    "url": "http://www.w3schools.com/jquerymobile/jquerymobile_ref_data.asp",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990900.28/warc/CC-MAIN-20150728002310-00147-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 811377410,
+    "recordOffset": 811361452,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 04 Aug 2015 13:28:08 GMT",
+    "textBeforeTable": "Deprecated in version 1.4. Use CSS Classes instead. Hyperlinks with data-role=\"button\". Button elements and links in toolbars and input fields are automatically styled as buttons, no need for data-role=\"button\". Button For the reference list below, bold value specifies the default value. jQuery Mobile uses the HTML5 data-* attribute to create a \"touch-friendly\" and attractive look for mobile devices. jQuery Data Attributes Next Chapter \u00bb \u00ab Previous jQuery Mobile Data Attributes jQ Icons jQ Events jQ Data Attributes jQ CSS Classes References jQ Mobile Examples Examples jQ Mobile Page Events jQ Mobile Orientation jQ Mobile Scroll jQ Mobile Touch jQ Mobile Events jQ Mobile Events jQ Mobile Themes jQ Mobile Themes jQ Mobile Form Sliders jQ Mobile Form Select jQ Mobile Form Inputs jQ Mobile Form Basic jQ Mobile Forms jQ Mobile",
+    "textAfterTable": "To group multiple buttons, use a container with the data-role=\"controlgroup\" attribute together with data-type=\"horizontal|vertical\" to specify whether to group buttons horizontally or vertically. Checkbox Pairs of labels and inputs with type=\"checkbox\". Data-attribute Value Description data-mini true | false Specifies whether the checkbox should be of small or regular size data-role none Prevents jQuery Mobile to style checkboxes as buttons data-theme letter (a-z) Specifies the theme color of the checkbox To group multiple checkboxes, use the data-role=\"controlgroup\" together with the data-type=\"horizontal|vertical\" to specify whether to group checkboxes horizontally or vertically. Collapsible A header element followed by any HTML markup inside a container with the data-role=\"collapsible\". Data-attribute Value Description data-collapsed true | false Specifies whether the content should be closed or expanded data-collapsed-cue-text sometext\u00a0 Specifies some text to provide audible feedback for users with screen reader software. Default is \"click to collapse contents\". data-collapsed-icon Icons Reference Specifies the icon of the collapsible button. Default is \"plus\" data-content-theme letter (a-z) Specifies the theme color of the collapsible content. Will also add rounded corners to the collapsible content data-expanded-cue-text sometext\u00a0 Specifies some text to provide audible feedback",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

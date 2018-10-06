@@ -1,0 +1,59 @@
+{
+    "relation": [
+        [
+            "Directive",
+            "mbstring.detect_order",
+            "mbstring.encoding_translation",
+            "mbstring.func_overload",
+            "mbstring.http_input",
+            "mbstring.http_output",
+            "mbstring.http_output_conv_mimetypes",
+            "mbstring.internal_encoding",
+            "mbstring.language",
+            "mbstring.strict_detection",
+            "mbstring.substitute_character"
+        ],
+        [
+            "Local Value",
+            "no value",
+            "Off",
+            "0",
+            "pass",
+            "pass",
+            "^(text/|application/xhtml\\+xml)",
+            "no value",
+            "neutral",
+            "Off",
+            "no value"
+        ],
+        [
+            "Master Value",
+            "no value",
+            "Off",
+            "0",
+            "pass",
+            "pass",
+            "^(text/|application/xhtml\\+xml)",
+            "no value",
+            "neutral",
+            "Off",
+            "no value"
+        ]
+    ],
+    "pageTitle": "phpinfo()",
+    "title": "",
+    "url": "http://www.thedeafnun.be/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986022.41/warc/CC-MAIN-20150728002306-00301-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 742798299,
+    "recordOffset": 742777721,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "",
+    "textAfterTable": "PHP Extension Build API20090626,NTS Debug Build no Thread Safety disabled Zend Memory Manager enabled Zend Multibyte Support disabled IPv6 Support enabled Registered PHP Streams https, ftps, compress.zlib, compress.bzip2, php, file, glob, data, http, ftp, phar, zip Registered Stream Socket Transports tcp, udp, unix, udg, ssl, sslv3, sslv2, tls Registered Stream Filters zlib.*, bzip2.*, convert.iconv.*, string.rot13, string.toupper, string.tolower, string.strip_tags, convert.*, consumed, dechunk This server is protected with the Suhosin Patch 0.9.10 Copyright (c) 2006-2007 Hardened-PHP Project Copyright (c) 2007-2012 SektionEins GmbH This program makes use of the Zend Scripting Language Engine: Zend\u00a0Engine\u00a0v2.3.0,\u00a0Copyright\u00a0(c)\u00a01998-2012\u00a0Zend\u00a0Technologies \u00a0\u00a0\u00a0\u00a0with\u00a0the\u00a0ionCube\u00a0PHP\u00a0Loader\u00a0v4.2.2,\u00a0Copyright\u00a0(c)\u00a02002-2012,\u00a0by\u00a0ionCube\u00a0Ltd. This program was built by Dotdeb. Configuration apache2handler Apache Version Apache Apache API Version 20051115 Server Administrator trianglejuice@mac.com Hostname:Port thedeafnun.be:80 User/Group",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

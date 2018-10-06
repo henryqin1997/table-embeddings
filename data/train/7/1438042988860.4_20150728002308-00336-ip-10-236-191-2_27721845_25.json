@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Text to be padded:",
+            "Block length in bytes to pad:",
+            "Expected padded block (hex):",
+            "Padded block (hex):",
+            "Extracted text:"
+        ],
+        [
+            "aaa",
+            "25",
+            "61 61 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 16",
+            "61 61 61 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 16",
+            "aaa"
+        ],
+        [
+            "",
+            "",
+            "",
+            "OK",
+            "OK"
+        ]
+    ],
+    "pageTitle": "XDiceLock 8.0.0.1 for Apple Mac OS X, ANSI_X_923 class (ANSI X.923 crypto pad algorithm) verified with data Normal text and PhysicalCryptoRandomStream class (memory pages kept in RAM, not swapped to file) \u00ab DiceLock Security Blog",
+    "title": "",
+    "url": "http://blog.dicelocksecurity.com/dicelock/apple-mac-os-x-xdicelock-8-0-0-1-ansi_x_923-class-normal-text-physicalcryptorandomstream-class-memory-pages-kept-in-ram-not-swapped-to-file/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00336-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 27743363,
+    "recordOffset": 27721845,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{125725=DiceLock is a trademark or registered trademark of his owner where applies. DiceLock research is the research to implement Self-corrector randomisation-encryption and method, european patent EP1182777 granted 08/21/2003 and US patent US7508945 granted 03/24/2009.}",
+    "textBeforeTable": "Once computed we\u2019ve got the following result: \u00a0 PhysicalCryptoRandomStream class makes use of mlock that uses physical nonpaged memory, preventing that memory from being paged to the swap area, so memory is not swapped to hard disk. The pages are guaranteed to stay in RAM until later PhysicalCryptoRansomStream object is deleted. In order to use PhysicalCryptoRandomStream class, the process must be privileged (CAP_IPC_LOCK) in order to lock memory, and since Linux 2.6.9, no limits are placed on the amount of memory that a privileged process can lock and the RLIMIT_MEMLOCK soft resource defines the limit on how much memory an unprivileged process may lock. Memory characteristic used in this test: \u2013 Cryptographic pad algorithm test: ANSI_X_923 class \u2013 Bit stream memory management: PhysicalCryptoRandomStream class (memory pages kept in RAM, not swapped to file) Verification components: Verified XDiceLock 8.0.0.1 for Apple Mac OS X At the bottom of the post you can find C++ source code being used to perform this test. As the new version XDiceLock 8.0.0.1 for Apple Mac OS X is developed, all individual components must be tested and verified, and in this article we verify ANSI X.923 class (computing ANSI X.923 cryptographic padding algorithm). Additionally DiceLock Digested configuration makes use currently of following hash digest algorithms: Sha 1, Sha 224, Sha 256, Sha 384, Sha 512, Ripemd 128, Ripemd 160, Ripemd 256 and Ripemd 320. DiceLock (both configurations) makes use",
+    "textAfterTable": "Text to be padded: aaa Block length in bytes to pad: 5 Expected padded block (hex): 61 61 61 00 02 Padded block (hex): 61 61 61 00 02 OK Extracted text: aaa OK Text to be padded: aaa Block length in bytes to pad: 6 Expected padded block (hex): 61 61 61 00 00 03 Padded block (hex): 61 61 61 00 00 03 OK Extracted text: aaa OK Text to be padded: aaa Block length in bytes to pad: 7 Expected padded block (hex): 61 61 61 00 00 00 04",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "FACE",
+            "TOP (North)",
+            "BOTTOM (South)",
+            "RIGHT (East)",
+            "LEFT (West)"
+        ],
+        [
+            "Other Half Position",
+            "Right (East)",
+            "Left (West)",
+            "Bottom (South)",
+            "Top (North)"
+        ]
+    ],
+    "pageTitle": "GTA2 Scripting Information by DMA Design - Project Cerbera",
+    "title": "Effect of FACE Values",
+    "url": "http://projectcerbera.com/gta/2/tutorials/scripting",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00146-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 196935260,
+    "recordOffset": 196852435,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampAfterTable": "{354214=Last modified on Friday 3rd April 2015 at 11:15pm UTC., 353854=\u00a91998\u20132015 Ben Millard, aka Cerbera., 319839=Integers are whole numbers in the range of -32767 to 32768. In GTA2script, they are mainly used in COUNTER as floats are used to represent coordinates in general., 132958=Densities work in a range of 0 to 1000. 0 guarantees no cars/peds are created, 1000 means the game will attempt to make 2 cars each cycle, 3 peds. 500 means 1 car each cycle, approx 1 or 2 peds., 133693=Thus, if you want no average cars, make sure all other ratios add upto 1000., 27071=1998 DMA Design Ltd., 353325=\u201cTwo years ago, Esenov was arrested after being accused of smuggling 800 copies of his banned books into Turkmenistan from Russia.\u201d \u2014The Open Society Institute, 181843=It will handle up to 99 minutes and 59 seconds, a total of 5999 seconds, displayed as 99:59. Any more than that and the graphics around the pager will be swapped. It will count down for the right length of time. The graphics go back to normal when it reaches 99:59 and lower., 1414=Started the conversion late on Xmas Day, 2010. Feedback is welcome in the GTAMP topic., 134075=Again, ped ratios work in a range of 0 to 1000, with all ratios adding up to a total of 1000 again. Each ratio is the \"chance\" of getting a random ped in the zone of this occupation. This time, on top of the given ratios, there is a \"dummy ped\" ratio, calculated by, 176312=Note that the same constraints of a mapzone declare exist - all the number of car ratios must add up to 1000 etc., 208165=Simple, quick & straightforward command - it does nothing! Just proceeds onto the next line of your script. May be useful inside WHILE_EXEC blocks etc\u2026, 33500=Counters have a range of values from -32768 to 32767. They have the value 0 by default. A different value can be given when they are declared., 133252=All car ratios must add up to 1000 and again work on a sort of percentage style. If you have a good car ratio of 100, then 1 time in 10, a good car will be created. If that ratio was 500, then 1 in 2 would be \"good\". On top of the ratios listed, there is an \"average car ratio\" which is automatically calculated}",
+    "lastModified": "Fri, 03 Apr 2015 23:15:52 GMT",
+    "textBeforeTable": "Can be displayed on-screen by using a separate ONSCREEN_COUNTER object and the ADD_ONSCREEN_COUNTER command. COUNTER name = value // only when declaring - need to use SET afterwards COUNTER name Counters have a range of values from -32768 to 32767. They have the value 0 by default. A different value can be given when they are declared.  Declares a counter variable & sets it to the default value for counters, 0. Counters can be used to keep track of mission counts etc as in GTA, or as simple On/Off flags. They can only store integer values. Fairly straightforward. Are also used in FOR loops etc to control program flow.  COUNTER These are all comparison expressions, = will not 'store' the given value in a counter.  Parameters (expression1) OR (expression2) (expression1) AND (expression2) NOT (expression) IF (NOT (IS_CHAR_STUNNED (enemy_ped)) OR (IS_CHAR_DEAD (enemy_ped)) ) IF ( (timer < timer2) AND (NOT (timer2 = 0))) IF ((missions_completed > 10) AND (IS_CHAR_DEAD (player)) ) Just to make things more flexible & complex, AND, NOT & OR can be used in expressions. NOT negates the result of an expression. AND evaluates both expressions, returning TRUE if both are TRUE. OR evaluates both expressions returning TRUE if either expression is TRUE. These can be used together:  IF (timer1 >= timer2) IF (time_delay <= 200) IF (missions_completed > 10) Example:  counter = counter counter = value counter >= counter counter >= value counter > counter counter > value",
+    "textAfterTable": "Parameters countername Name of a previously declared counter integervalue the value to store anothercounter Name of another previously declared COUNTER to copy value from. Yetanothercounter Name of yet another COUNTER to use\u2026. Value integer value to use in this arithmetic operation. FOR Loops (This feature is not available and was never used.) WHILE Loops \"While X Do Y\" is another simple looping mechanism, with an expression check at the start of the block of commands. It will execute Y while X evaluates to TRUE. X can be any valid expression, Y is any valid block of commands: WHILE (NOT (IS_CHAR_DEAD(ped_one)) ) // ped still alive --timer ENDWHILE WHILE (expression) DO_NOWT ENDWHILE WHILE_EXEC Loops Similar to the standard WHILE loop except all of the code in the command block gets executed this processing cycle, ie instead of doing it one line at a time, it does all the lines. Very powerful but use carefully - too much use will slow down the game: WHILE_EXEC (IS_PED_ALIVE(player)) IF (score > needed_score) // congrats message ENDIF IF (timer1 > endtimer) // different message ENDIF ENDWHILE WHILE_EXEC (expression) DO_NOWT ENDWHILE DO WHILE Loops Another loop variant. However, this loop guarantees to execute the commands in the block once as the end check is at the end of the loop: DO SET",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

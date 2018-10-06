@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jan 4, 2006",
+            "Sep 21, 2011",
+            "Dec 9, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: MICROSOFT CORPORATION, WASHINGTON Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:PUDIPEDDI, RAVISANKAR V.;SENG, KEVIN Y.;BUBAN, GARRET J.;REEL/FRAME:016971/0583 Effective date: 20051216",
+            "Year of fee payment: 4",
+            "Owner name: MICROSOFT TECHNOLOGY LICENSING, LLC, WASHINGTON Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:MICROSOFT CORPORATION;REEL/FRAME:034543/0001 Effective date: 20141014"
+        ]
+    ],
+    "pageTitle": "Patent US7409523 - Online storage volume shrink - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7409523?dq=7,468,661",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990900.28/warc/CC-MAIN-20150728002310-00185-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 476184327,
+    "recordOffset": 476143800,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations While the invention is susceptible to various modifications and alternative constructions, certain illustrated embodiments thereof are shown in the drawings and have been described above in detail. It should be understood, however, that there is no intention to limit the invention to the specific forms disclosed, but on the contrary, the intention is to cover all modifications, alternative constructions, and equivalents falling within the spirit and scope of the invention. By default, the call to Shrink may be synchronous and does not return until the entire shrink operation is complete. If it is not desirable to wait for the shrink to complete, the NOWAIT parameter can be specified, whereby the call returns asynchronously and shrink continues running. If QUERYMAX is specified, DiskPart displays an estimated maximum size that can reclaimed from the volume. If DESIRED/MINIMUM are not supplied, the command results in the code attempting to shrink to the best possible size (e.g., obtained via QueryMaxReclaimableBytes). If one value is supplied but not the other, the code assumes the other to be the same value. SHRINK [DESIRED=<Desired reclaimable bytes in MB>] [MINIMUM=<Minimum reclaimable bytes in MB>] [NOWAIT] [NOERR] SHRINK QUERYMAX DISKPART.EXE supports a new command named SHRINK. The volume to be operated selected in a typical manner, e.g.:",
+    "textAfterTable": "Adaptec, Inc. Method and apparatus for partitioning and formatting a storage media without rebooting by creating a logical device control block (DCB) on-the-fly US6711656 Dec 27, 2001 Mar 23, 2004 Hitachi, Ltd. Operation method of storage and storage and remote storage used therein US6850959 Oct 26, 2000 Feb 1, 2005 Microsoft Corporation Method and system for transparently extending non-volatile storage US20030191911 Apr 2, 2003 Oct 9, 2003 Powerquest Corporation Using disassociated images for computer and storage resource management US20030220951 May 8, 2003 Nov 27, 2003 Oracle International Corporation Dynamic disk space management by multiple database server instances in a cluster configuration US20040015672 Jul 9, 2003 Jan 22, 2004 Masse Wayne P. Method, system, and storage medium for optimizing disk space and information access US20040044698 Aug 25, 2003 Mar 4, 2004 Atsushi Ebata Method for rebalancing free disk space among network storages virtualized into a single file system view US20060242397 * Apr 14, 2006 Oct 26,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

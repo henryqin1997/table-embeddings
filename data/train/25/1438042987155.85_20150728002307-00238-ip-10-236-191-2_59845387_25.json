@@ -1,0 +1,71 @@
+{
+    "relation": [
+        [
+            "id",
+            "1",
+            "1"
+        ],
+        [
+            "select_type",
+            "SIMPLE",
+            "SIMPLE"
+        ],
+        [
+            "table",
+            "a",
+            "b"
+        ],
+        [
+            "type",
+            "const",
+            "index"
+        ],
+        [
+            "possible_keys",
+            "PRIMARY",
+            "idx_usergroup_nested_set_lookup"
+        ],
+        [
+            "key",
+            "PRIMARY",
+            "idx_usergroup_nested_set_lookup"
+        ],
+        [
+            "key_len",
+            "4",
+            "8"
+        ],
+        [
+            "ref",
+            "const",
+            "NULL"
+        ],
+        [
+            "rows",
+            "1",
+            "10"
+        ],
+        [
+            "Extra",
+            "",
+            "Using index"
+        ]
+    ],
+    "pageTitle": "Videos",
+    "title": "",
+    "url": "http://demos.techjoomla.com/jomsocial/index.php/more/jomsocial/videos.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00238-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 59904131,
+    "recordOffset": 59845387,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 30 Jul 2015 08:11:37 GMT",
+    "textBeforeTable": "Explain \u00a0\u00a0WHERE `session_id` = '4g4nb64jq6aks4r39igo0q4rd5' \u00a0\u00a0FROM `xcqpa_session` SELECT `data`",
+    "textAfterTable": "Call Stack JROOT/libraries/joomla/session/storage/database.php:44 JROOT/libraries/joomla/session/session.php:665 JROOT/libraries/joomla/session/session.php:603 JROOT/libraries/cms/application/cms.php:739 JROOT/libraries/cms/application/cms.php:131 JROOT/libraries/cms/application/site.php:63 JROOT/libraries/cms/application/cms.php:399 JROOT/libraries/joomla/factory.php:125 JROOT/index.php:42 [ Add xdebug.file_link_format directive to your php.ini file to have links for files.] Query Time: 0.43\u00a0ms After last query: 4.77\u00a0ms Query memory: 0.011\u00a0MB Memory before query: 4.546\u00a0MB Rows returned: 0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

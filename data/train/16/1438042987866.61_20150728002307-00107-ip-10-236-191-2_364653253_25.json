@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Command or Action",
+            "Router# show ip bgp",
+            "Router# show ip bgp community-list community-list-number",
+            "Router# show ip cef network",
+            "Router# show ip interface",
+            "Router# show ip route prefix"
+        ],
+        [
+            "Purpose",
+            "Displays entries in the BGP routing table, to verify that the correct community is set on the prefixes.",
+            "Displays routes permitted by the BGP community list, to verify that the correct prefixes are selected.",
+            "Displays entries in the Forwarding Information Base (FIB) table based on the IP address, to verify that CEF has the correct precedence value for the prefix.",
+            "Displays information about the interface.",
+            "Displays the current status of the routing table, to verify that the correct precedence values are set on the prefixes."
+        ]
+    ],
+    "pageTitle": "IP Routing: Protocol-Independent Configuration Guide, Cisco IOS Release 12.4T - Configuring IP Routing Protocol-Independent Features [Cisco IOS Software Releases 12.4 T] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_pi/configuration/12-4t/iri-12-4t-book/iri-ip-prot-indep.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987866.61/warc/CC-MAIN-20150728002307-00107-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 364705391,
+    "recordOffset": 364653253,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{252=Refer to RFC 1219 for detailed information about VLSMs and how to correctly assign addresses.}",
+    "TableContextTimeStampAfterTable": "{90101=Removes the configured metric and the metric-value of 1000 and retains the redistribute connected subnets command in the configuration., 89086=Removes the configured metric and the metric-value of 1000 and the configured subnets and retains the redistribute connected command in the configuration., 280848=The following example configures a key chain named trees. In this example, the software will always accept and send willow as a valid key. The key chestnut will be accepted from 1:30 p.m. to 3:30 p.m. and be sent from 2:00 p.m. to 3:00 p.m. The overlap allows for migration of keys or discrepancy in the set time of the router. Likewise, the key birch immediately follows chestnut, and there is a 30-minute leeway on each side to handle time-of-day differences., 232059=The following example illustrates the assignment of four area IDs to four IP address ranges. In the example, OSPF routing process 1 is initialized, and four OSPF areas are defined: 10.9.50.0, 2, 3, and 0. Areas 10.9.50.0, 2, and 3 mask-specific address ranges, whereas area 0 enables OSPF for all other networks., 86237=1.\u00a0\u00a0\u00a0 Router(config-router)# no redistribute connected metric 1000 subnets, 215204=The following example assigns the router with the address 192.168.7.18 an administrative distance of 100 and all other routers on subnet 192.168.7.0 an administrative distance of 200:, 86725=2.\u00a0\u00a0\u00a0 Router(config-router)# no redistribute connected metric 1000, 41840=IP policy routing can also be fast switched. Prior to fast-switched policy routing, policy routing could only be process switched, which meant that on most platforms, the switching rate was approximately 1000 to 10,000 packets per second. Such rates were not fast enough for many applications. Users that need policy routing to occur at faster speeds can now implement policy routing without slowing down the router., 234617=Consider the first network command. Area ID 10.9.50.0 is configured for the interface on which subnet 172.18.20.0 is located. Assume that a match is determined for Ethernet interface 0. Ethernet interface 0 is attached to Area 10.9.50.0 only., 297928=IP policy routing can also be fast-switched. Prior to fast-switched policy routing, policy routing could only be process-switched, which meant that on most platforms, the switching rate was approximately 1000 to 10,000 packets per second. Such rates were not fast enough for many applications. Users that need policy routing to occur at faster speeds can now implement policy routing without slowing down the router.}",
+    "textBeforeTable": "To monitor the QoS Policy Propagation via BGP configuration, use the following commands in EXEC mode, as needed. The commands listed in this section are optional. Monitoring QoS Policy Propagation via BGP Exits interface configuration mode and returns to privileged EXEC mode. \u00a0 Router(config-if)# end\u00a0 Step\u00a013 Classifies packets using IP Precedence. \u00a0 Router(config-if)# bgp-policy {source | destination} ip-prec-map\u00a0 Step\u00a012 Specifies the interfaces (or subinterface) and enters interface configuration mode. \u00a0 Router(config)# interface interface-type interface-number\u00a0 Step\u00a011 Defines an access list. \u00a0 Router(config)# access-list access-list-number {permit | deny} source\u00a0 Step\u00a010 Exits router configuration mode and returns the router to global configuration mode. \u00a0",
+    "textAfterTable": "Managing Authentication Keys To manage authentication keys, define a key chain, identify the keys that belong to the key chain, and specify how long each key is valid. Each key has its own key identifier (specified with the keykey-chain configuration command), which is stored locally. The combination of the key identifier and the interface associated with the message uniquely identifies the authentication algorithm and Message Digest 5 (MD5) authentication key in use. You can configure multiple keys with lifetimes. Only one authentication packet is sent, regardless of how many valid keys exist. The software examines the key numbers in order from lowest to highest and uses the first valid key that it encounters. The lifetimes allow for overlap during key changes. Note that the router must know the time. Refer to the Network Time Protocol (NTP) and calendar commands in the \"Performing Basic System Management\" chapter of the Network Management Configuration Guide. To manage authentication keys, perform the following task. SUMMARY STEPS 1.\u00a0\u00a0\u00a0 Router> enable 2.\u00a0\u00a0\u00a0 Router# configure terminal 3.\u00a0\u00a0\u00a0 Router(config)# key chain name-of-chain 4.\u00a0\u00a0\u00a0 Router(config-keychain)#",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

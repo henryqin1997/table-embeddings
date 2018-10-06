@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Name",
+            "Flags",
+            "AncOps"
+        ],
+        [
+            "Datatype",
+            "NUMBER",
+            "ODCIObjectList"
+        ],
+        [
+            "Purpose",
+            "The following flags can be set: QueryFirstRows - Set when the optimizer hint FIRST_ROWS is specified in the query QueryAllRows - Set when the optimizer hint ALL_ROWS is specified in the query",
+            "Ancillary operators referenced in the query"
+        ]
+    ],
+    "pageTitle": "19 Extensibility Constants, Types, and Mappings",
+    "title": "",
+    "url": "http://web.stanford.edu/dept/itss/docs/oracle/10g/appdev.101/b10800/dcicnstnts.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990611.52/warc/CC-MAIN-20150728002310-00254-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 258536515,
+    "recordOffset": 258521276,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 17 May 2004 17:04:20 GMT",
+    "textBeforeTable": "Table 19-22 ODCIQueryInfo Index Context Related Information - Attributes Object type. Stores information about the context of a query. It is passed as a parameter to the ODCIIndexStart routine. ODCIQueryInfo Contains the index partition name VARCHAR2(30) IndexPartition Contains the table partition name VARCHAR2(30) TablePartition Purpose Datatype Name Table 19-21 ODCIPartInfo Index-Related Information - Attributes Object type. Contains the names of both the table partition and the index partition. ODCIPartInfo VARRAY(32) OF ODCIObject Datatype Stores information about a list of schema objects. ODCIObjectList Name of object VARCHAR2(30) ObjectName",
+    "textAfterTable": "ODCIStatsOptions Object type. Stores options information for DBMS_STATS. Table 19-23 ODCIStatsOptions Cost Information - Attributes Name Datatype Purpose Sample NUMBER Sample size Options NUMBER DBMS_STATS options - see \"ODCICost\" Flags NUMBER DBMS_STATS flags - see \"ODCICost\" ODCITabFuncStats Object type. Stores cardinality information for a table function. Table 19-24 ODCITabFuncStats Parameter Parameter Datatype Purpose",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

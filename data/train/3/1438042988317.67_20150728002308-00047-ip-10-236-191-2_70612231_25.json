@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Bank Number",
+            "Branch Number",
+            "Account Number",
+            "Check Digit"
+        ],
+        [
+            "Rules",
+            "Optional. If entered, then the length should be 3 numeric characters.",
+            "Optional. If entered, then the length should be 3 numeric characters. If the Bank Number and Branch Number are entered, then both values must match.",
+            "Length should be 13 alphanumeric characters.",
+            "Optional. If a value is entered for the check digit, then the length should be 2 numeric characters."
+        ]
+    ],
+    "pageTitle": "Oracle Cash Management User Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18727_01/doc.121/e13483/T359831T498954.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00047-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70623195,
+    "recordOffset": 70612231,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{85736=Copyright \u00a9 2000, 2010, Oracle and/or its affiliates. All rights reserved.}",
+    "lastModified": "Tue, 23 Jun 2015 15:14:32 GMT",
+    "textBeforeTable": "The fields are checked for validity by adopting the following rules: Validation Rules Australia The Check Digit is might be mandatory depending upon the country-specific rules. The Account Number is mandatory for all countries. The Bank and Branch Number might be mandatory depending upon the country-specific rules. For all fields, white spaces and hyphens ('-') are removed before checking the number. The following points are applicable to all the countries: Bank Account Validation by Country The checks for unique banks, branches, accounts and the mandatory requirement of bank account number are not affected by this profile. If the profile is set to 'Yes', these validations will not fire. If the profile is set to 'Yes' a tip is displayed on the Bank, Branch and Account setup pages. This indicates that the validations have been disabled. A similar tip is displayed in the Supplier (Oracle Payments) Bank Setup UI. A new profile option, \"CE: Disable Bank Validations\" has been introduced. This profile can be set at the site, application, responsibility or user level. The profile is seeded with a default value of 'No' at the site level. The country-specific validations pertaining to the bank number, branch number, account number and check digit can be disabled by this profile option. Check Digit Account Number Branch Number Bank Number When entering new bank accounts, different countries can have certain",
+    "textAfterTable": "Austria Validation Rules The fields are checked for validity by adopting the following rules: Field Rules Bank Number Optional. Length should be of 5 numeric characters. Branch Number Mandatory. Length should be of 5 numeric characters. Account Number Length should be a maximum of 11 numeric characters. If the length is less than 11, then it is converted to a 11 digit number by prefixing it with as many leading zeroes as is necessary. Check Digit No validation. Belgium Validation Rules The fields are checked for validity by adopting the following rules: Field Rules Bank Number No validation. Branch Number No validation. Account Number Length should be of 12 numeric characters. It should be in the format 999-9999999-99. A check algorithm is applied on the Account Number. Check Digit",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

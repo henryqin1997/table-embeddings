@@ -1,0 +1,73 @@
+{
+    "relation": [
+        [
+            "string",
+            "integer",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "bool",
+            "",
+            "",
+            ""
+        ],
+        [
+            "$time_to_send",
+            "$id_user",
+            "$ip",
+            "$from",
+            "$to",
+            "$hdrs",
+            "$body",
+            "$delete_after_send",
+            "$sender",
+            "$recipient",
+            "$headers"
+        ],
+        [
+            "\u2014",
+            "\u2014",
+            "\u2014",
+            "\u2014",
+            "\u2014",
+            "\u2014",
+            "\u2014",
+            "\u2014",
+            "\u2014",
+            "\u2014",
+            "\u2014"
+        ],
+        [
+            "When mail have to be send",
+            "Sender id",
+            "Sender ip",
+            "Sender e-mail",
+            "Recipient e-mail",
+            "Mail headers (in RFC)",
+            "Mail body (in RFC)",
+            "Delete or not mail from db after send",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Docs For Class Mail_Queue_Container_mdb",
+    "title": "",
+    "url": "http://pear.php.net/package/Mail_Queue/docs/latest/Mail_Queue/Mail_Queue_Container_mdb.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988051.33/warc/CC-MAIN-20150728002308-00338-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 193477419,
+    "recordOffset": 193469217,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 30 Jun 2011 16:00:04 GMT",
+    "textBeforeTable": "Var: instance [line 173] Reference to the current database connection. $db = Class Variables Top ] [ License: The BSD License Deprecated: Deprecated: Link: http://pear.php.net/package/Mail_Queue Version: Release: @package_version@ Author: Lorenzo Alberton <dot alberton at quipo dot it l dot alberton at quipo dot it> Mail_Queue_Container_mdb 165] [line Class Details Check if the string is a regular string or a serialized array Mail_Queue_Container::_isSerialized() Remove the current (problematic) mail from the buffer, but don't delete it from the db: it might be a temporary issue. Mail_Queue_Container::skip() Set common option Mail_Queue_Container::setOption() Set mail as already sent. Mail_Queue_Container::setAsSent() Mail_Queue_Container::getQueueCount() Return mail by id $id (bypass mail_queue) Mail_Queue_Container::getMailById() Get next mail from queue. When exclude first time preload all queue Mail_Queue_Container::get() Remove from queue mail with $id identifier. Mail_Queue_Container::deleteMail() Check how many times mail was sent. Mail_Queue_Container::countSend() Class: Mail_Queue_Container Inherited Methods",
+    "textAfterTable": "Mail_Queue_Container_mdb (Constructor)\u00a0\u00a0\u00a0[line 208] Mail_Queue_Container_mdb Mail_Queue_Container_mdb( mixed $options) Contructor Mail_Queue_Container_mdb:: Mail_Queue_Container_mdb() Access: public Parameters: mixed\u00a0\u00a0 $options\u00a0\u00a0 \u2014 \u00a0\u00a0An associative array of option names and their values. See MDB_common::setOption for more information about connection options. [ Top ] __construct (Constructor)\u00a0\u00a0\u00a0[line 189] Mail_Queue_Container_mdb __construct( $options) Parameters: \u00a0\u00a0 $options\u00a0\u00a0 \u2014 \u00a0\u00a0 [ Top ] countSend\u00a0\u00a0\u00a0[line 380] mixed countSend( object Mail_Queue_Body $mail) Check how many times mail was sent. Return: Integer or Mail_Queue_Error class if error. Access: public Overrides Mail_Queue_Container::countSend() (Check how many times mail was sent.)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

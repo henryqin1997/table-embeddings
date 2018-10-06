@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "Value",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5-61439",
+            "61440-65535"
+        ],
+        [
+            "Name",
+            "Reserved",
+            "None",
+            "Source-Only",
+            "Destination-Only",
+            "Source-and-Destination",
+            "Unassigned",
+            "Private Use"
+        ],
+        [
+            "References",
+            "[RFC6407]",
+            "[RFC6407]",
+            "[RFC6407]",
+            "[RFC6407]",
+            "[RFC6407]",
+            "",
+            "[RFC6407]"
+        ]
+    ],
+    "pageTitle": "\"Magic Numbers\" for ISAKMP Protocol",
+    "title": "",
+    "url": "https://www.iana.org/assignments/isakmp-registry/isakmp-registry.xhtml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00079-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 913420928,
+    "recordOffset": 913412726,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 30 Jan 2014 17:45:17 GMT",
+    "textBeforeTable": "CSV Available Formats RFC6407] [ Reference Standards Action Registration Procedure(s) Address Preservation (Value 14) Reserved for private use 61440-65535 Unassigned 3-61439 [RFC4359] RSASSA-PSS 2 [RFC4359] RSASSA-PKCS1-v1_5 1 [RFC4359] Reserved 0 References Name Value Reserved for private use 61440-65535 Standards Action 0-61439 Registration Procedures Range CSV Available Formats RFC4359] [ Reference Signature Encoding Algorithm Values (Value 13) [RFC4304] 64-bit Sequence Number 1 [RFC4304] RESERVED 0 References Name Value CSV Available Formats RFC4304] [ Reference No additional class values will be assigned for this attribute. Registration Procedure(s) Extended (64-bit) Sequence Number (Value 11) Reserved for private use 61440-65535 Unassigned 3-61439 [RFC3168] Forbidden 2 [RFC3168] Allowed 1 [RFC3168] Reserved 0 References Name Value",
+    "textAfterTable": "SA Direction (Value 15) Registration Procedure(s) Standards Action Reference [ RFC6407] Available Formats CSV Value Name References 0 Reserved [RFC6407] 1 Sender-Only [RFC6407] 2 Receiver-Only [RFC6407] 3 Symmetric [RFC6407] 4-61439 Unassigned [RFC6407] 61440-65535 Private Use [RFC6407] IPSEC Labeled Domain Identifiers Registration Procedure(s) First come first serve Reference [ RFC2407] Note The IPSEC Labeled Domain Identifier is a 32-bit value which identifies a namespace in which the Secrecy and Integrity levels and categories values are said to exist. Requests for assignments of new IPSEC Labeled Domain Identifiers should be granted on demand. No accompanying documentation is required, though Internet Drafts are encouraged when appropriate. Available Formats CSV Value Domain References 0 Reserved [RFC2407] 0x80000000-0xffffffff Reserved for private use IPSEC Identification Type Reference [ RFC2407] Note The IPSEC Identification Type is an 8-bit value which is used as a discriminant for interpretation of the variable-length Identification Payload.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

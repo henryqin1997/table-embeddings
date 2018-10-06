@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "",
+            "Directory Server 5.2",
+            "Directory Server 11g Release 1 (11.1.1) in DS5-compatible-mode",
+            "Directory Server 11g Release 1 (11.1.1) in DS6-migration-mode",
+            "Directory Server 11g Release 1 (11.1.1) in DS6-mode"
+        ],
+        [
+            "Directory Server 5.2",
+            "X",
+            "X",
+            "",
+            ""
+        ],
+        [
+            "Directory Server 11g Release 1 (11.1.1) in DS5-compatible-mode",
+            "X",
+            "X",
+            "X",
+            ""
+        ],
+        [
+            "Directory Server 11g Release 1 (11.1.1) in DS6-migration-mode",
+            "",
+            "X",
+            "X",
+            "X"
+        ],
+        [
+            "Directory Server 11g Release 1 (11.1.1) in DS6-mode",
+            "",
+            "",
+            "X",
+            "X"
+        ]
+    ],
+    "pageTitle": "Part\u00a0I Directory Server Administration (Oracle Fusion Middleware Administration Guide for Oracle Directory Server Enterprise Edition)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19656-01/821-1504/6nmg10b1b/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 325,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00308-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73425531,
+    "recordOffset": 73240555,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{124063=The output shows that searches look through a maximum of 5000 entries, return a maximum of 2000 entries, and use a maximum of one hour (3600 seconds) of server time to process the search., 724001=For example, if you want to set replication to occur between 2:00 and 4:00 every night, type:, 363386=An IPv6 address in any of its legal forms and contained in square brackets [ and ], as defined by RFC 2373., 79105=The dse.ldif file is in the LDAP Data Interchange Format (LDIF). LDIF is a textual representation of entries, attributes, and their values, and is a standard format described in RFC 2849 (http://www.ietf.org/rfc/rfc2849)., 221112=To disable the non secure point, you must bind to the LDAP secure port. This example shows a bind to the default LDAP secure port, 1636, on the host server host1., 363176=An IPv4 address with wildcards to specify a subnetwork: 12.3.45.*, 93023=For example, to change the LDAP port number from 1389 to 1390, use this command:, 201127=When you request a certificate by using dsadm request-cert, the resulting certificate request is a binary certificate request unless you specify ASCII as output format. If you specify ASCII, the resulting certificate request is a PKCS #10 certificate request in PEM format. PEM is the Privacy Enhanced Mail format specified by RFCs 1421 through 1424 (http://www.ietf.org/rfc/rfc1421.txt) and is used to represent a base64-encoded certificate request in US-ASCII characters. The content of the request looks similar to the following example:, 367519=timeofday > \"0800\"; is true for access from 8:01 a.m. through 11:59 p.m., 169481=The way the directory uses smart referrals conforms to the standard specified in section 4.1.10 of RFC 4511 (http://www.ietf.org/rfc/rfc4511.txt)., 393950=Access is requested between 8:00 and 18:00, Monday through Thursday., 221833=You can now no longer bind on the non secure port 1389., 408295=Specify the \u201cGet Effective Rights\u201d control by using the ldapsearch command with the -J \"1.3.6.1.4.1.42.2.27.9.5.2\" option. By default, the control returns the effective rights of the bind DN entry on the entries and attributes in the search results., 93342=To enable the DSML secure port on port number 2250, use this command:, 363731=12AB::CD30:0:0:0:0, 900494=When exposing the MIB, you might want to use the RFC text files for this MIB. These files are available at http://www.ietf.org/rfc/rfc2605.txtand http://www.ietf.org/rfc/rfc2788.txt., 726212=For example, to use the fastest compression when sending replication updates to the consumer on host1:1389, type:, 367640=timeofday >= \"0800\"; is true for access from 8:00 a.m. through 11:59 p.m., 367762=timeofday < \"1800\"; is true for access from 12:00 midnight through 5:59 p.m.}",
+    "lastModified": "Thu, 27 Jan 2011 02:17:01 GMT",
+    "textBeforeTable": "dsconf Commands dsadm and Table\u00a01\u20131 Comparison of the The following table shows a comparison of the dsadm and dsconf commands. Comparison of dsadm and dsconf For more details, see the dsconf(1M) man page. Specifies that dsconf should open a clear connection by default. Environment variable: DIRSERV_UNSECURED. If this variable is not set, dsconf opens a secure connection by default. --unsecured -e, LDAP port number. Environment variable: DIRSERV_PORT. Default: 389. LDAP-port -p Host name. Environment variable: DIRSERV_HOST. Default: local host. host -h Password file for the user bind DN. Environment variable: LDAP_ADMIN_PWF. Default: Prompt for password. password-file -w User bind DN. Environment variable: LDAP_ADMIN_USER. Default: cn=Directory Manager. user DN -D The dsconf command requires some options that you can preset by using environment variables. If you do not specify an option when using the command, or do not set the environment variable, the default setting is used. You can configure environment variables for the following options: Setting Environment Variables for dsconf The directory for your installation depends on your operating system. Installation paths for all operating systems are listed in Default Paths and Command Locations. install-path/bin    The Directory Server command-line tools are contained in a default installation directory:",
+    "textAfterTable": "$ dsconf --help $ dsutil --help To obtain information about how to use a subcommand, type the appropriate command: $ dsadm subcommand --help $ dsconf subcommand --help $ dsutil subcommand --help Modifying Configuration Properties by Using dsconf Many of the dsconf subcommands enable you to view and modify configuration properties. To list the configuration properties used in Directory Server, type: $ dsconf help-properties To find a particular property, search the output of the help properties. For example, if you are using a UNIX platform and you want to search for all properties relating to referrals, use the following command.  $ dsconf help-properties | grep -i referral SER referral-url rw M LDAP_URL | undefined Referrals returned to clients requesting a DN not stored in this Directory Server (Default: undefined) SUF referral-mode rw disabled|enabled|only-on-write Specifies how referrals are",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

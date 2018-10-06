@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "local.enduseradmincred",
+            "local.enduseradmindn",
+            "local.ugldappoolsize",
+            "local.ugldapmaxpool",
+            "service.wcap.userprefs.ldapproxyauth"
+        ],
+        [
+            "Description/Default",
+            "Bind credentials (password) for LDAP user preferences authentication. No default.",
+            "DN used to bind to LDAP user preferences host. Must be specified. If blank (\" \") or not specified, assumes an anonymous bind.",
+            "Minimum number of LDAP client connections that are maintained for LDAP user preferences. The default is \u201c1\u201d.",
+            "Maximum number of LDAP client connections that are maintained for LDAP user preferences. The default is \u201c1024\u201d.",
+            "Enables anonymous search of the LDAP used for user preferences. The default is \u201cno\u201d, which allows anonymous access. Specifying \u201cyes\u201d means using proxy authentication to do the search."
+        ]
+    ],
+    "pageTitle": "Part\u00a0III Customizing Your Calendar Server Configuration (Sun Java System Calendar Server 6 2005Q4 Administration Guide)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19636-01/819-2433/funin/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00056-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 75455503,
+    "recordOffset": 75404851,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 03 Feb 2011 16:50:16 GMT",
+    "textBeforeTable": "Edit the ics.conf parameters as shown in the following table: Save your old ics.conf file by copying and renaming it. Change to the /etc/opt/SUNWics5/cal/config directory. Log in as an administrator with permission to change the configuration. To Configure Proxy Authentication To Enable Anonymous Access To Configure Proxy Authentication Communications Express requires the following things to be configured in the Calendar Server: Configuring for Communications Express Chapter\u00a011, Setting Up Hosted Domains Chapter\u00a010, Configuring Automatic Backups (csstored) Chapter\u00a09, Configuring Single Sign-on Chapter\u00a08, Configuring SSL Chapter\u00a07, Configuring for High Availability (Failover Service) Chapter\u00a06, Configuring Calendar Database Distribution Across Multiple Machines Additional configuration topics are covered in other, separate chapters. They include the following topics: Note \u2013 Configuring Calendar Server for LDAP Configuring Periodic Deadlock Checking for the Berkeley Databases Configuring Calendar Services Configuring Logins and Authentication Configuring Calendar Server",
+    "textAfterTable": "Save the file as ics.conf. Restart Calendar Server. cal_svr_base/SUNWics5/cal/sbin/start-cal See Also For instructions on configuring Communications Express, see the. To Enable Anonymous Access Log in as an administrator with permission to change the configuration. Change to the /etc/opt/SUNWics5/cal/config directory. Save your old ics.conf file by copying and renaming it. Edit the following parameters in the ics.conf to enable anonymous access: Parameters\u00a0 Description and Default Value \u00a0 service.wcap.anonymous. allowpubliccalendarwrite Enables or disables allowing anonymous access users to write to public calendars. Enable access by setting the value to \"yes\", which is the default. service.wcap.allowpublicwritablecalendars Enables users to have publicly writable calendars. This is enabled by default (set to \"yes\"). service.http.allowanonymouslogin Enable anonymous access (login) by setting this parameter to \"yes\", if necessary. The default value is \"yes\". service.calendarsearch.ldap For security purposes with anonymous logins enabled, you might want to disable",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Option",
+            "Exclude tax from calculation",
+            "Exclude freight from calculation",
+            "Discount allocation method",
+            "Always take discount"
+        ],
+        [
+            "Description",
+            "Subtracts the tax amount from the invoice amount during invoice entry, when calculating the discountable amount for an installment. If you enable this option, you cannot select a Discount Allocation Method of Tax lines and single distribution.",
+            "Subtracts the freight amount from the invoice amount during invoice entry, when calculating the discountable amount for an installment.",
+            "Allocates discounts across distributions.",
+            "Takes the available discount for a supplier, regardless of when you pay the invoice."
+        ]
+    ],
+    "pageTitle": "Oracle Fusion Applications Project Management Implementation Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E25054_01/fusionapps.1111/e20384/F552252AN304B5.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989826.86/warc/CC-MAIN-20150728002309-00293-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71711355,
+    "recordOffset": 71686125,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{80420=1000 - 000 - 0000 - 13020 - 0000, 87611=1300, 74876=21050, 78555=52340, 89086=1000 - 000 - 0000 - 13010 - 0000, 78209=52345, 53584=1400, 85673=21010, 80007=1000 - 000 - 0000 - 21030 - 0000, 81368=1000 - 000 - 0000 - 21050 - 0000, 87952=1200, 80364=1000 - 000 - 0000 - 21020 - 0000, 89842=1000, 9000, 61239=InFusion 1000, USA Chart of Accounts, 80063=1000 - 000 - 0000 - 13030 - 0000, 87924=52330, 89030=1000 - 000 - 0000 - 21010 - 0000, 11252=For example, to start numbering transactions with 1000, enter a last number of 999. Receivables automatically updates the Last Number fields on transaction sources, so you can review the transaction source later to see the last transaction number that was generated., 81424=1000 - 000 - 0000 - 13050 - 0000}",
+    "lastModified": "Thu, 20 Sep 2012 18:00:30 GMT",
+    "textBeforeTable": "This table lists the options you can set for discounts. You can also set these options on the supplier setup, except for Discount Allocation Method. The values for these options on the supplier setup are: Yes, No, Default from Payables Options. Discounts Amount tolerances Quantity tolerances Pay date basis Terms date basis Payment terms Payment priority Pay group Currency In addition to the options previously listed, you can specify default values for the following attributes on both the Manage Invoice Options page and on the supplier setup. Payables uses the default values from the Manage Invoice Options page, unless you specify a different value for the supplier. Transfers descriptive flexfield information from the purchase order distribution to the invoice distribution when you match an invoice to a purchase order. If you enable this option, make sure that the flexfield structure is the same for the purchase order distributions and the invoice distributions. Transfer PO distribution additional information Allows override of the invoice distribution created from matching an invoice to a purchase order. You cannot override the distribution for a matched invoice if you accrue at receipt. In addition, you cannot override the distribution if the purchase order is projects-related, and the item destination for the purchase order distribution is inventory. Allow matching distribution override Lets you perform a final match when you match an",
+    "textAfterTable": "Prepayments This table lists the options you can set for prepayments. Option Description Payment terms Represents default payment terms. For example, you may want to have immediate payment terms for all prepayment type invoices. Settlement days Specifies the number of days to add to the system date to calculate the default settlement date for a prepayment. You cannot apply a prepayment to an invoice until on or after the settlement date. You can also set this option on the supplier setup. The value for the supplier setup determines if this option is used. Use distribution from purchase order Builds the distribution combination for the matched invoice distribution by taking the purchase order distribution combination and overriding the natural account segment with the one from the supplier site prepayment distribution or, if not defined, from the common options prepayment distribution. Show available prepayments during invoice entry Displays the number and amount of available prepayments during invoice entry. Approvals You can use the invoice approval workflow to automate your invoice approval process. The workflow determines if an invoice requires approval, and if so, automatically routes the invoice to the applicable approvers",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

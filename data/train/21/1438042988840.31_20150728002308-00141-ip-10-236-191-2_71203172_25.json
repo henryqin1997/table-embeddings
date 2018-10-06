@@ -1,0 +1,41 @@
+{
+    "relation": [
+        [
+            "Column",
+            "CONFLICT_TYPE",
+            "METHOD_NAME"
+        ],
+        [
+            "Datatype",
+            "VARCHAR2(10)",
+            "VARCHAR2(80)"
+        ],
+        [
+            "NULL",
+            "-",
+            "NOT NULL"
+        ],
+        [
+            "Description",
+            "The type of conflict that the resolution method is designed to resolve: update, uniqueness, or delete.",
+            "The name of the Oracle-supplied method, or the name of the user-supplied method."
+        ]
+    ],
+    "pageTitle": "Replication Catalog Views",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B19306_01/server.102/b14227/rarrcatviews.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988840.31/warc/CC-MAIN-20150728002308-00141-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71232111,
+    "recordOffset": 71203172,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 13 May 2015 05:08:23 GMT",
+    "textBeforeTable": "USER_REPRESOLUTION_METHOD lists all of the conflict resolution methods available in the database. DBA_REPRESOLUTION_METHOD lists all of the conflict resolution methods available in the database. Related Views: Lists all of the conflict resolution methods available in the database. Initially, this view lists the standard methods provided with Advanced Replication. As you create new user functions and add them as conflict resolution methods for an object in the database, these functions are added to this view. ALL_REPRESOLUTION_METHOD USER_REPRESOLUTION view. SNAME column is not present in the Note: The Any user-supplied comments. - VARCHAR2(80) RESOLUTION_COMMENT For methods of type 'priority group', the name of the priority group. - VARCHAR2(30) PRIORITY_GROUP For methods of type 'user function', the name of the user-supplied conflict resolution method. NOT NULL VARCHAR2(92) FUNCTION_NAME The name of an Oracle-supplied conflict resolution method. For user-supplied methods, this value is 'user function'. NOT NULL VARCHAR2(80) METHOD_NAME The order that resolution methods are applied, with 1 applied first.",
+    "textAfterTable": "ALL_REPRESOLUTION_STATISTICS Lists information about successfully resolved update, uniqueness, and delete conflicts for all replicated tables accessible to the current user. These statistics are gathered for a table only if you have called the DBMS_REPCAT.REGISTER_STATISTICS procedure. Related Views: DBA_REPRESOLUTION_STATISTICS lists information about successfully resolved update, uniqueness, and delete conflicts for all replicated tables in the database. USER_REPRESOLUTION_STATISTICS lists information about successfully resolved update, uniqueness, and delete conflicts for all replicated tables owned by the current user. Column Datatype NULL Description SNAME VARCHAR2(30) NOT NULL The name of the replicated schema. ONAME VARCHAR2(30) NOT NULL The name of the replicated table. CONFLICT_TYPE VARCHAR2(10) - The type of conflict that was successfully resolved: delete, uniqueness, or update. REFERENCE_NAME VARCHAR2(30) NOT NULL",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

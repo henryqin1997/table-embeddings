@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Address",
+            "005C2BE0",
+            "005C2C80",
+            "005C2DE0",
+            "005C3940"
+        ],
+        [
+            "Function",
+            "GetWaterLevelNoWaves(float,float,float,float *)",
+            "GetWaterLevel(float,float,float,float *,bool)",
+            "CreateWavyAtomic(void)",
+            "Initialise(char *)"
+        ],
+        [
+            "Notes",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Function Memory Addresses (VC) - GTAModding",
+    "title": "",
+    "url": "http://www.gtamodding.com/index.php?title=Function_Memory_Addresses_(VC)",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044160065.87/warc/CC-MAIN-20150728004240-00241-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 482836060,
+    "recordOffset": 482815592,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 23 May 2015 09:05:10 GMT",
+    "textBeforeTable": "37 External links 36 cDMAudio 35 cAudioScriptObject 34 cMusicManager 33 cAudioManager 32 CWeaponInfo 31 CWeaponEffects 30 CWeapon 29 CShotInfo 28 CProjectileInfo 27 CExplosion 26 CBulletInfo 25 CWaterLevel 24 CPool<CVehicle, CAutomobile> 23 CVehicle 22 cTransmission 21 CPlane 20 CTrain 19 CHeli 18 cHandlingDataMgr 17 cBuoyancy 16 CDoor 15 CDamageManager 14 CCrane 13 CCranes 12 CTheCarGenerators 11 CBoat 10 CAutomobile 9 CKeyArray 8 CText 7 CPager 6 CMessages 5 CVisibilityPlugins 4 CTxdStore 3 CCullZones",
+    "textAfterTable": "No Category CAnimBlendAssociation::SetFinishCallback ((void (*)( CAnimBlendAssociation *,void *),void *)) 004016C0 No Category CAnimBlendAssociation::SetDeleteCallback ((void (*)( CAnimBlendAssociation *,void *),void *)) 00401700 No Category CAnimBlendAssociation::Start ((float)) 00401740 No Category CAnimBlendAssociation::SyncAnimation (( CAnimBlendAssociation *)) 00401770 No Category CAnimBlendAssociation::SetCurrentTime ((float)) 00402E20 No Category RpAnimBlendClumpGetFirstAssociation ( RpClump *) 00405640 No Category CAnimManager::BlendAnimation (( RpClump *, AssocGroupId,AnimationId,float )) 004058B0 No Category CAnimManager::AddAnimation (( RpClump *, AssocGroupId,AnimationId )) 00405960 No Category CAnimManager::GetAnimAssociation (( AssocGroupId,AnimationId )) 00405990 No Category CAnimManager::GetAnimation ((char const *, CAnimBlock *)) 004075D0 No Category RpAnimBlendGetNextAssociation ( CAnimBlendAssociation *) 00407780 No Category RpAnimBlendClumpGetAssociation ( RpClump *, uint ) 004077B0 No Category RpAnimBlendClumpRemoveAssociations ( RpClump *, uint ) 00407800 No Category RpAnimBlendClumpRemoveAllAssociations ( RpClump *) 00407830",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

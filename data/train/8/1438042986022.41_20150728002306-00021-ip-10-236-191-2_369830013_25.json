@@ -1,0 +1,30 @@
+{
+    "relation": [
+        [
+            "Task ID",
+            "ppp",
+            "aaa"
+        ],
+        [
+            "Operations",
+            "read, write",
+            "read, write"
+        ]
+    ],
+    "pageTitle": "Cisco ASR 9000 Series Aggregation Services Router Broadband Network Gateway Command Reference, Release 5.1.x - BNG PPP Commands [Cisco ASR 9000 Series Aggregation Services Routers] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r5-1/bng/command/reference/b_bng_cr51xasr9k/b_bng_cr51xasr9k_chapter_01100.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986022.41/warc/CC-MAIN-20150728002306-00021-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 369853679,
+    "recordOffset": 369830013,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Syntax Description authentication ppp no { list-name | default } [protocol] ] [ protocol protocol ppp authentication To enable Challenge Handshake Authentication Protocol (CHAP), MS-CHAP, or Password Authentication Protocol (PAP), and to specify the order in which CHAP, MS-CHAP, and PAP authentication is selected on the interface, use the ppp authentication command an appropriate configuration mode. To disable PPP authentication, use the no form of this command. ppp authentication (BNG) show ppp summary show ppp statistics show ppp interfaces (BNG) ppp timeout ppp ms-chap ppp max-failure (BNG) ppp max-configure (BNG) ppp max-bad-auth (BNG) ppp lcp ppp ipcp ppp chap ppp authentication (BNG) This module describes the Cisco\u00a0IOS\u00a0XR software commands used to configure the PPP commands for Broadband Network Gateway (BNG) on the Cisco ASR 9000 Series Router. For details regarding the related configurations, refer to the Cisco ASR 9000 Series Aggregation Services Router Broadband Network Gateway Configuration Guide. BNG PPP Commands show ppp summary show ppp statistics",
+    "textAfterTable": "Command Default PPP authentication is not enabled. Command Modes Dynamic template configuration Command History Release Modification Release 3.9.0 This command was introduced. Release 4.2.0 This command was supported in the dynamic template configuration mode for BNG. Usage Guidelines To use this command, you must be in a user group associated with a task group that includes appropriate task IDs. If the user group assignment is preventing you from using a command, contact your AAA administrator for assistance. When you enable CHAP or PAP authentication (or both), the local router requires the remote device to prove its identity before allowing data traffic to flow. PAP authentication requires the remote device to send a name and a password, which is checked against a matching entry in the local username database or in the remote security server database. CHAP authentication sends a challenge message to the remote device. The remote device encrypts the challenge",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Device> enable",
+            "configure terminal Example: Device# configure terminal",
+            "ip dhcp-server {ip-address | query lease {retries max-retransmissions | timeout timeout-query-seconds}} Example: Device(config)# ip dhcp-server query lease retries 3",
+            "end Example: Device(config)# end"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Configures the IP address of one or more DHCP servers available on the network, and specifies the DHCP Lease Query for routed IP sessions.",
+            "Exits global configuration mode."
+        ]
+    ],
+    "pageTitle": "Intelligent Services Gateway Configuration Guide, Cisco IOS XE Release 3S - Configuring ISG Access for IP Subscriber Sessions [Cisco IOS XE 3S] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/isg/configuration/xe-3s/isg-xe-3s-book/isg-acess-ip-sess.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00334-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 372837067,
+    "recordOffset": 372784676,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{28103=The ISG Session Multicast Coexistence feature introduces the ability to host all subscribers and services (data and multicast) on the same VLAN by enabling multicast and IP sessions to coexist on the same subinterface for Cisco ASR 1000 Series Aggregation routers. ISG IP sessions are supported on nonaccess-type subinterfaces. For an existing session or even when no session exists, this support helps multicast traffic to pass through the interfaces that are configured for IP sessions in both upstream and downstream directions without creating a session.}",
+    "textBeforeTable": "DETAILED STEPS 7.\u00a0\u00a0\u00a0 end 6.\u00a0\u00a0\u00a0 passthru downstream ipv6 5.\u00a0\u00a0\u00a0 initiator {dhcp [class-aware] | radius-proxy | unclassified ip-address [ipv4 | [ipv6] [list list-name]]} 4.\u00a0\u00a0\u00a0 ip subscriber routed 3.\u00a0\u00a0\u00a0 interface type number 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS IP subscribers that are routed through a Layer 3 access network with at least one transit router before reaching ISG are known as routed IP subscribers. Perform this task to configure ISG to create IP sessions for routed IP subscribers. Creating IP Subscriber Sessions for Routed ISG Subscribers Troubleshooting ISG IP Subscriber Sessions Clearing ISG IP Subscriber Sessions Verifying ISG IP Subscriber Sessions Configuring IP Session Recovery for DHCP-Initiated IP Sessions Creating ISG IP Subnet Sessions Creating ISG Static Sessions Creating ISG IP Interface Sessions Creating IP Subscriber Sessions for Layer 2-Connected ISG Subscribers Creating IP Subscriber Sessions",
+    "textAfterTable": "Device(config-subscriber)# initiator unclassified ip-address \u00a0 Enables ISG to create an IP subscriber session upon receipt of the specified packet type. Enter this command more than once to specify more than one method of IP session initiation. Note\u00a0\u00a0\u00a0 If the ISG device serves as either a DHCP relay or a DHCP server in the assignment of client IP addresses, ISG must be configured to initiate IP sessions on receiving DHCP DISCOVER packets. In other words, the initiator dhcp command must be configured instead of the initiator unclassified ip-address or initiator unclassified mac-address command. \u00a0 Step\u00a06 passthru downstream ipv6 Example: Device(config-subscriber)# passthru downstream ipv6 \u00a0 (Optional) Allows IPv6 downstream traffic from the ISG interface to pass through without a subscriber session. \u00a0 Step\u00a07 end Example: Device(config-subscriber)# end \u00a0 (Optional) Returns to privileged EXEC mode. \u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

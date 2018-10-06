@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "java.lang.NullPointerException",
+            "java.lang.IllegalAccessException",
+            "java.lang.IllegalArgumentException",
+            "java.lang.reflect.InvocationTargetException"
+        ],
+        [
+            "if the receiver is null for a non-static method",
+            "if the modeled method is not accessible",
+            "if an incorrect number of arguments are passed, the receiver is incompatible with the declaring class, or an argument could not be converted by a widening conversion",
+            "if an exception was thrown by the invoked method"
+        ]
+    ],
+    "pageTitle": "Harmony Kernel: java.lang.reflect.Method Class Reference",
+    "title": "",
+    "url": "http://harmony.apache.org/externals/kernel_doc/html/classjava_1_1lang_1_1reflect_1_1Method.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00040-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 112530066,
+    "recordOffset": 112521864,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{27203=Genereated on Tue Dec 9 14:09:48 2008 by Doxygen., 27260=(c) Copyright 2005, 2008 The Apache Software Foundation or its licensors, as applicable.}",
+    "lastModified": "Tue, 09 Dec 2008 15:03:45 GMT",
+    "textBeforeTable": "Exceptions: Type instances. An array of Returns: Gets the parameter types as an array of Type instances, in declaration order. If the method has no parameters, then an empty array is returned. \u00a0)\u00a0 ( Type [] java.lang.reflect.Method.getGenericParameterTypes Since: 1.5 An instance of String. Returns: Returns the String representation of the method's declaration, including the type parameters. \u00a0)\u00a0 ( String java.lang.reflect.Method.toGenericString Member Function Documentation Prevent this class from being instantiated. [private] \u00a0)\u00a0 ( java.lang.reflect.Method.Method Constructor & Destructor Documentation Prevent this class from being instantiated. \u00a0 Method ()",
+    "textAfterTable": "Since: 1.5 Type [] java.lang.reflect.Method.getGenericExceptionTypes ( \u00a0)\u00a0 Gets the exception types as an array of Type instances. If the method has no declared exceptions, then an empty array is returned. Returns: An array of Type instances. Exceptions: GenericSignatureFormatError\u00a0 if the generic method signature is invalid. TypeNotPresentException\u00a0 if the component type points to a missing type. MalformedParameterizedTypeException\u00a0 if the component type points to a type that can't be instantiated for some reason. Since: 1.5 Type java.lang.reflect.Method.getGenericReturnType ( \u00a0)\u00a0 Gets the return type as a Type instance. Returns: A Type instance. Exceptions: GenericSignatureFormatError\u00a0 if",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Factor",
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G"
+        ],
+        [
+            "Coarse and Fine Aggregate Factors:",
+            "\"Dummy Factor\"",
+            "\"Dummy Factor\"",
+            "\"Dummy Factor\"",
+            "\"Dummy Factor\"",
+            "\"Dummy Factor\"",
+            "\"Dummy Factor\"",
+            "\"Dummy Factor\""
+        ],
+        [
+            "Low Limit",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "High Limit",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ]
+    ],
+    "pageTitle": "Aggregate Image Measurement System 2 (AIMS2): Final Report - Aggregate Imaging System - Highways for LIFE - FHWA",
+    "title": "Table 2.19. Coarse and Fine Aggregate Factors and Limits Used in Experiment 4",
+    "url": "http://www.fhwa.dot.gov/hfl/partnerships/aims2/aims2_08.cfm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986148.56/warc/CC-MAIN-20150728002306-00233-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 444007023,
+    "recordOffset": 443968454,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{104335=RUGGEDNESS ANALYSIS USING ASTM E 1169-07, 103713=From the results of Experiments 1 and 2 discussed in this report, some factors were thought to be interacting with each other. This could cause factors effects to be artificially significant. ASTM C 1067-00 assumes that any interactions among factors tested are negligible and therefore not included in the test procedure. However, if the effect of the interactions are not negligible, the estimates of the effect could include be skewed due to interactions. Therefore, it was decided to conduct an additional ruggedness study using ASTM E 1169-07 to have a better understanding of the interaction of the factors., 104393=Another ruggedness study was conducted with a new set of ranges to identify factors that significantly influence the measurements provided by the AIMS2 and to estimate possible interaction between factors. The study was carried out in accordance with ASTM E 1169-07, \"Standard Practice for Conducting Ruggedness Tests.\" ASTM E 1169-07 differs from the ASTM C 1067, since ASTM E 1169 is able to identify interactions which may arise from the interference of the individual factors., 103002=SUMMARY OF ASCE ASTM C 1067-00 RUGGEDNESS, 6103=AIMS2 RUGGEDNESS ANALYSIS USING ASTM C 1067-00, 229268=4 Jay L. Devore (Ed.), Probability and Statistics for Engineering and the Sciences, 6th ed., 2004., 45696=Overall, the angularity and texture variations were significant due to the tray size, light illumination, ambient light, door position, focus, and zoom level. The sphericity and flat or elongated 3:1 results had more significant factors than the angularity and texture results. The tray size, light illumination, door position, focus, zoom level, and tray height affected both the sphericity and flat or elongated results. The ambient light affected only the flat or elongated results. Since the ambient light had a statistical significance on the results, but the AIMS2 door position did not, it was concluded the AIMS2 doors were not shedding the exterior light as designed. As will be discussed later, this lead to changing the doors to be non-transparent that did not allow ambient light into the system., 83029=The angularity results of both aggregates (light and dark) showed significant variation to only the light illumination. Several factors for the light aggregate angularity were significant including tray size, tray height and two \"dummy factors\". The texture results have significant variations due to changes in the tray size only. The sphericity and flat or elongated 3:1 results were affected by changes in the tray size, light illumination, tray height, ambient light, and two \"dummy factors\"., 103065=The ASTM C 1067-00 ruggedness study has lead to identifying significant factors affecting the AIMS2 results. The AIMS2 transparent doors were not able to control effect of ambient lighting changes as originally predicted, so the doors were replaced with non-transparent doors. The new doors were designed to block any ambient light which was showed to be affecting the results. When all \"dummy factors\" were used and all of the limits were selected to their correct values, AIMS2 was able to control the normal variations in the system such that the AIMS2 controlled factors have no statistical significant effect on the results., 7244=From these scans, an effect factor can be calculated to determine the statistical significance of the limits for each factor. ASTM C1067 contains details about calculations necessary for determining the effect factor. An effect factor \u2265 5.59 represents a significant effect with a 5% probability for drawing an erroneous conclusion (ASTM C1067, Section 7.6). If the effect factor is \u22645.59 then the factor is considered not significant (NS) with a 95% level of confidence., 6176=The first ruggedness analysis was carried out according to ASTM C 1067-00 \"Conducting a Ruggedness or Screening Program for Test Methods for Construction Materials.\" This test method was used to detect sources of variation in the test method due to the factors tested. Seven factors were selected for the fine and coarse aggregates based on previous experience with the experimental factors that could cause significant variation in the test results. The high and low limits for each factor were selected based on limits that could reasonably occur in the test if no particular measures were taken to control them., 17114=Experiment 1 was conducted for the evaluation of the coarse aggregates using the procedure in ASTM C 1067. The analysis was done for two coarse dark and light aggregates of the same size, 9.5 mm (0.375 in). Images of particles from the dark-colored and light-colored aggregate are shown in Figure 2.1., 6848=Following the ASTM C 1067-00 procedure, 16 scans were performed: two replicate sets of eight determinations each. A determination refers to a certain combination of the values for the factors included in the analysis. Scans 1 through 8 are duplicated for the study to obtain scans 9 through 16 in the analysis. Table 2.1 shows a template of the factors and limits for the scans preformed., 112895=The calculated effect of each factor as explained in ASTM E 1169-07 is used to determine the statistical significance of the factor on the results. As discussed earlier, the ASTM E 1169-07 method considers the interactions between factors in the test as oppose to the ASTM C 1067. If the effect of one factor depends on the level of another factor, then these two factors interacts. As a general rule, factors only interact when factors have large effects or statistical significance by themselves. The suffix \u2013I is used to indicate the two factor interaction. For example, the position of the door and the intensity of the ambient light may be interacting in causing error in the test results or a false increase in a factor\u2019s effect. If an interaction is found, and both the door position and ambient light have large effects, then the interaction is mostly likely caused by these two factors. In this case, the door position and ambient light will typically be found to be statistically significant. If for the interaction, there are no possible factors with large individual effects, then the cause of the interaction may be unclear. The unclear interactions could be caused by more than one set of two factor interactions. The list of possible two factor interactions for each interaction effect is shown in Table 2.26. ASTM E 1169-07 contains the required details to calculate the effect factor and interaction for the different main factors., 226542=The ruggedness study following ASTM C 1067-00 identified several factors that were found to be statistically significant in affecting the AIMS2 results. The transparent doors were not able to control the changes in ambient lighting, therefore these were replaced with non-transparent doors. The non-transparent doors were found to block the ambient light completely. There was concern that the results of the factors may be skewed due to the effect of interactions between the factors. Therefore, the ruggedness analysis was also conducted using the ASTM E 1169-07 procedure, which allows for the identification of the effects of the main factors and interactions between these factors. The ruggedness study following ASTM E 1169-07 lead to the identification of several significant factors that could affect the AIMS2 shape characteristics. Consequently, limits were proposed for these factors in order to eliminate their influence on the measured characteristics. The factors and limits listed in Table 2.48 are the recommended controls for the factors in order to ensure the ruggedness of the AIMS2 measurements. As long as these limits are achieved by the system, AIMS2 can control normal variations related to the factors without significantly changing the results.}",
+    "textBeforeTable": "Appendix A Chapter 2 RUGGEDNESS EVALUATION OF AIMS2 INTRODUCTION Different operational and environmental factors can cause significant variability in the resulting measurements if they are not identified and controlled. A ruggedness study was conducted to determine the sensitivity of the test method due to changes in levels of these important factors. The results of the ruggedness study can be used to establish appropriate ranges for the parameters in questions by determining the effect of worst-case variation in operating conditions within the tested tolerance range. Two different ASTM standards were used to conduct the ruggedness analysis and predict the effect of the factors tested. Several factors were selected for evaluating the ruggedness of measuring the characteristics of fine and coarse aggregates based on previous experience of the experimental variations that can affect the test results. The high and low limits for each factor were selected based on limits that would reasonably occur in the test if no particular measures were taken to control them. The factors selected were light illumination, tray size or color, door position, ambient light, zoom level, focus, tray height, number of fine aggregates, and CHPR value. The light illumination, used for both coarse and fine aggregates, is the top and bottom lighting required to capture aggregate images. The top light is required to capture aggregate texture images and the bottom lighting is required to capture the aggregate angularity images. The light intensity limits were selected to be above and below the operational settings.",
+    "textAfterTable": "C c C c C c C c D d D D D d d d d D D E e E e E e E E e E e F f F F f f F F f f F G g G G g g G g G G g Replicate Scans Number 2 Factor Low Limit High Limit Scan Number 9 10 11 12 13 14 15 16 A a A a a a a A A A A B b B b b B B b b B B C c C C c C c C c C c D d",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

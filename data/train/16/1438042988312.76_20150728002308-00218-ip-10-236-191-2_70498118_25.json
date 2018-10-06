@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Report Parameter",
+            "Resource Name",
+            "First Name",
+            "Last Name",
+            "User ID"
+        ],
+        [
+            "Description",
+            "Name of the resource",
+            "First name of the user",
+            "Last name of the user",
+            "ID of the user"
+        ]
+    ],
+    "pageTitle": "Using Reporting Features",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E14571_01/doc.1111/e14316/workingrep.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988312.76/warc/CC-MAIN-20150728002308-00218-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70523011,
+    "recordOffset": 70498118,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 13 May 2015 05:14:19 GMT",
+    "textBeforeTable": "The following table lists the report input parameters used to specify a criterion for subsetting data: Input Parameters It provides administrators or auditors the ability to view a current snapshot of all the policies defined in Oracle Identity Manager system, along with key information about each policy, and the number of instances in which each policy has been activated. 20.5.1.1 Access Policy Details Access Policy List by Role Access Policy Details Oracle Identity Management BI Publisher Reports provides the following access policy reports for Oracle Identity Manager: 20.5.1 Access Policy Reports User Reports Resource and Entitlement Reports Password Reports Role and Organization Reports Attestation, Request, and Approval Reports Access Policy Reports Oracle Identity Management Reports are classified into the following roles based on their functional areas: Oracle Identity Management Reports are now classified based on the functional areas. For instance, Access Policy Reports, Attestation, Request and Approval Reports, Password Policy Reports, and so on. It is no longer named Operational and Historical. If you want to run the reports for different date range, then please change the date type input parameters with your date ranges. Date Range is : Sysdate-30 To Sysdate. All the",
+    "textAfterTable": "Description Description of the policy Approval Required Approval required for the policy Creation Date Date when the policy is created Retrofit Access Policy Retrofit of the access policy Created By Name of the person who created the policy Priority Priority of the policy Columns The following table lists the columns of the report: Report Column Description Resource Name Name of the resource 20.5.1.2 Access Policy List by Role It lists all policies defined in Oracle Identity Manager system by role. This report can be used for operational and compliance purposes. Input Parameters The following table lists the report input parameters used to specify a criterion for subsetting data:",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

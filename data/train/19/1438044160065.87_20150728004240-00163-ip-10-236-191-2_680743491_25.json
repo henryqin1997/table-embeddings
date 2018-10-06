@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Tag",
+            "%Cl(xpos,ypos,maxwidth,maxheight,[horizontal alignment],[vertical alignment])",
+            "%Cd",
+            "%C"
+        ],
+        [
+            "Description",
+            "Define the picture settings. More details. Horizontal alignment can be 'l', 'r', or 'c', for left, right and center. Vertical alignment can be 't', 'b', or 'c', for top, bottom and center.",
+            "Display the album art bitmap. More details",
+            "Use in a conditional to check if album art has been loaded"
+        ]
+    ],
+    "pageTitle": "CustomWPS < Main < Wiki",
+    "title": "",
+    "url": "http://www.rockbox.org/wiki/CustomWPS?sortcol=1%3btable=23%3bup=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044160065.87/warc/CC-MAIN-20150728004240-00163-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 680775359,
+    "recordOffset": 680743491,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Viewport Colours 6-digit RGB888 colours - e.g. FF00FF Colour in the range 0 (= black) to 3 (= white) Greyscale no colours. tag ignored Mono Colour values LCD type Set the Info Viewport to use the viewport labeled label %VI(label) This viewport is used as Custom UI Viewport in case the theme doesn't have a ui viewport set in the theme.cfg. Using '-' for the label means it is used by default. Having this is strongly recommended since it makes you able to use Custom Status Bars with other themes. If label is set this viewport can be selectivly used as the Info Viewport using the %%VI tag %Vi(label,....) Description Tag Info Viewport (Base Skin (.sbs) only) The conditional viewport display tag must come before",
+    "textAfterTable": "These need to be before any other tags after a %V() line or scrolling lines will not work as expected. Viewport Line Text Styles Tag Description %Vs(mode[, param]) set the viewport text style to 'mode' for the remainder of the viewport Mode is: Mode Description clear restore the default style invert draw the line inverted color Draw the text coloured the value given in param. Functionally equivalent to using the %Vf() tag gradient Draw the next param lines using a gradient. by default the gradient is over 1 line. %Vg(gradient,2) will use 2 lines to fully change from the start colour to the end colour",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

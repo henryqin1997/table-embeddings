@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Router> enable",
+            "configure terminal Example: Router# configure terminal",
+            "interface type number Example: Router(config)# interface Ethernet 0/0",
+            "ipv6 nd secured trustpoint trustpoint-name Example: Router(config-if)# ipv6 nd secured trustpoint trustpoint1",
+            "no ipv6 nd secured full-secure Example: Router(config-if)# no ipv6 nd secured full-secure"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Specifies an interface type and number, and places the router in interface configuration mode.",
+            "Enables SeND on an interface and specifies which trustpoint should be used.",
+            "Provides the coexistence mode for secure and nonsecure ND messages on the same interface."
+        ]
+    ],
+    "pageTitle": "IPv6 Implementation Guide, Cisco IOS Release 15.2S - Implementing First Hop Security in IPv6 [Cisco IOS 15.2S] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipv6/configuration/15-2s/ipv6-15-2s-book/ip6-first-hop-security.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00081-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 378226215,
+    "recordOffset": 378177424,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{139409=Router(config)# crypto key generate rsa label SEND modulus 1024, 112897=Host(config)# crypto key generate rsa label SEND modulus 1024}",
+    "textBeforeTable": "DETAILED STEPS 5.\u00a0\u00a0\u00a0 no ipv6 nd secured full-secure 4.\u00a0\u00a0\u00a0 ipv6 nd secured trustpoint trustpoint-name 3.\u00a0\u00a0\u00a0 interface type number 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS During the transition to SeND secured interfaces, network operators may want to run a particular interface with a mixture of nodes accepting secured and unsecured neighbor discovery messages. Perform this task to configure the coexistence mode for secure and nonsecure ND messages on the same interface. Configuring Secured and Nonsecured Neighbor Discovery Message Coexistence Mode Specifies a trusted anchor on an interface and binds SeND to a trustpoint. \u00a0 Router(config-if)# ipv6 nd secured trustanchor anchor1 \u00a0 Example: ipv6 nd secured trustanchor trustanchor-name Step\u00a08 Specifies an",
+    "textAfterTable": "Configuring SeND Parameters Globally SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 ipv6 nd secured key-length [[minimum| maximum] value] 4.\u00a0\u00a0\u00a0 ipv6 nd secured sec-level minimum value DETAILED STEPS \u00a0 Command or Action Purpose Step\u00a01 enable Example: Router> enable \u00a0 Enables privileged EXEC mode. Enter your password if prompted. \u00a0 Step\u00a02 configure terminal Example: Router# configure terminal \u00a0 Enters global configuration mode. \u00a0 Step\u00a03",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

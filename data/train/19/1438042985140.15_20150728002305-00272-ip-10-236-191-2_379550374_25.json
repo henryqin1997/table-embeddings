@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2"
+        ],
+        [
+            "Command or Action",
+            "show users Example: switch# show users",
+            "clear line vty-line Example: switch(config)# clear line pts/12"
+        ],
+        [
+            "Purpose",
+            "Displays user session information.",
+            "Clears a user SSH session."
+        ]
+    ],
+    "pageTitle": "Cisco Nexus 7000 Series NX-OS Security Configuration Guide, Release 5.x - Configuring SSH and Telnet [Cisco Nexus 7000 Series Switches] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/5_x/nx-os/security/configuration/guide/b_Cisco_Nexus_7000_NX-OS_Security_Configuration_Guide__Release_5-x/b_Cisco_Nexus_7000_NX-OS_Security_Configuration_Guide__Release_5-x_chapter_01000.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985140.15/warc/CC-MAIN-20150728002305-00272-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 379576439,
+    "recordOffset": 379550374,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{864=By default, the Cisco NX-OS software generates an RSA key using 1024 bits.}",
+    "TableContextTimeStampAfterTable": "{111060=Changed the minimum RSA key size from 768 to 1024 bits., 50858=The bits argument is the number of bits used to generate the key. Beginning with Cisco NX-OS Release 5.1, the range is from 1024 to 2048. In Cisco NX-OS Release 5.0, the range is from 768 to 2048. The default value is 1024., 13853=You can generate an SSH server key based on your security requirements. The default SSH server key is an RSA key that is generated using 1024 bits., 17500=The bits argument is the number of bits used to generate the RSA key. Beginning with Cisco NX-OS Release 5.1, the range is from 1024 to 2048. In Cisco NX-OS Release 5.0, the range is from 768 to 2048. The default value is 1024., 17841=You cannot specify the size of the DSA key. It is always set to 1024 bits., 10093=RSA key generated with 1024 bits, 10407=1024}",
+    "textBeforeTable": "DETAILED STEPS 7.\u00a0\u00a0\u00a0 (Optional) copy running-config startup-config 6.\u00a0\u00a0\u00a0 (Optional) show ssh key 5.\u00a0\u00a0\u00a0 exit 4.\u00a0\u00a0\u00a0 feature ssh 3.\u00a0\u00a0\u00a0 ssh key {dsa [force] | rsa [bits [force]]} 2.\u00a0\u00a0\u00a0 no feature ssh 1.\u00a0\u00a0\u00a0 configure terminal SUMMARY STEPS You can generate an SSH server key based on your security requirements. The default SSH server key is an RSA key that is generated using 1024 bits. Generating SSH Server Keys Clearing SSH Sessions Deleting SSH Server Keys Disabling the SSH Server Clearing SSH Hosts Configuring SCP and SFTP Servers Configuring SSH Passwordless File Copy Starting SSH Sessions from Boot Mode Starting SSH Sessions Configuring a Maximum Number of SSH Login Attempts Specifying the SSH Public Keys for User Accounts Generating SSH",
+    "textAfterTable": "Step\u00a03 ssh key {dsa [force] | rsa [bits [force]]} Example: switch(config)# ssh key rsa 2048 \u00a0 Generates the SSH server key. The bits argument is the number of bits used to generate the RSA key. Beginning with Cisco NX-OS Release 5.1, the range is from 1024 to 2048. In Cisco NX-OS Release 5.0, the range is from 768 to 2048. The default value is 1024. You cannot specify the size of the DSA key. It is always set to 1024 bits. Use the force keyword to replace an existing key. \u00a0 Step\u00a04 feature ssh Example: switch(config)# feature ssh \u00a0 Enables SSH. \u00a0 Step\u00a05 exit Example: switch(config)# exit switch# \u00a0 Exits global configuration mode. \u00a0 Step\u00a06 show ssh key Example: switch# show ssh key \u00a0 (Optional) Displays the SSH server keys. \u00a0 Step\u00a07 copy running-config startup-config",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Attributes",
+            "Name",
+            "Src"
+        ],
+        [
+            "Description",
+            "The name of the assembly to be linked.",
+            "The path to the source file to be linked and compiled dynamically."
+        ]
+    ],
+    "pageTitle": "ASP.NET - Quick Guide",
+    "title": "",
+    "url": "http://www.tutorialspoint.com/cgi-bin/printversion.cgi?tutorial=asp.net&file=asp.net_quick_guide.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00331-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 803578491,
+    "recordOffset": 803498103,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{4035=The key development tool for building ASP.NET applications and front ends is Visual Studio. In this tutorial, we work with Visual Studio 2008., 7510=When a new website is created. VB2008 automatically creates the solution and displays it in the solution explorer., 358313=The main thread sleeps for 2000 ms, during which the child thread executes.}",
+    "textBeforeTable": "Before going to the next session on Visual Studio.Net, let us go through at the various components of the .Net framework 3.5. The following table describes the components of the .Net framework 3.5 and the job they perform: Components of .Net Framework 3.5 The ASP.NET runtime transforms the .aspx page into an instance of a class, which inherits from the base class page of the .Net framework. Therefore, each ASP.NET page is an object and all its components i.e., the server-side controls are also objects. ASP.NET is a technology, which works on the .Net framework that contains all web-related functionalities. The .Net framework is made of an object-oriented hierarchy. An ASP.NET web application is made of pages. When a user requests an ASP.NET page, the IIS delegates the processing of the page to the ASP.NET runtime system. Server controls, which help in developing complex user-interface. For example, the Calendar control or the Gridview control. Server side counterparts of almost all HTML elements or tags, such as <form> and <input>. The ASP.NET component model provides various building blocks of ASP.NET pages. Basically it is an object model, which describes: The ASP.NET Component Model This way, the server becomes aware of the overall application state and operates in a two-tiered connected way. The ASP.NET runtime carries the page state to and from the server across page requests while generating ASP.NET runtime codes, and incorporates the state of the server side components in hidden fields. User adds items to a",
+    "textAfterTable": "(4) Common Type System It provides guidelines for declaring, using, and managing types at runtime, and cross-language communication. (5) Metadata and Assemblies Metadata is the binary information describing the program, which is either stored in a portable executable file (PE) or in the memory. Assembly is a logical unit consisting of the assembly manifest, type metadata, IL code, and a set of resources like image files. (6) Windows Forms Windows Forms contain the graphical representation of any window displayed in the application. (7) ASP.NET and ASP.NET AJAX ASP.NET is the web development model and AJAX is an extension of ASP.NET for developing and implementing AJAX functionality. ASP.NET AJAX contains the components that allow the developer to update data on a website without a complete reload of the page. (8) ADO.NET It is the technology used for working with data and databases. It provides access to data sources like SQL server, OLE DB, XML etc. The ADO.NET allows connection to data sources for retrieving, manipulating, and updating data. (9) Windows Workflow Foundation (WF) It helps in building workflow-based applications in Windows. It contains activities, workflow runtime, workflow designer, and a rules engine. (10)Windows Presentation Foundation It provides a separation between the user interface and the business logic. It helps in developing visually stunning interfaces using documents, media, two and three dimensional graphics, animations, and more. (11) Windows Communication Foundation",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

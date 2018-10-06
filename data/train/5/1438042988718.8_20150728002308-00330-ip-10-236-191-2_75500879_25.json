@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "ctxHdl",
+            "flag"
+        ],
+        [
+            "IN / OUT",
+            "(IN)",
+            "(IN)"
+        ],
+        [
+            "Description",
+            "Context handle.",
+            "Turn on escaping?"
+        ]
+    ],
+    "pageTitle": "DBMS_XMLSAVE",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/appdev.112/e16760/d_xmlsav.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00330-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 75517273,
+    "recordOffset": 75500879,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 14 Aug 2010 15:00:22 GMT",
+    "textBeforeTable": "flag IN BOOLEAN := true); ctxHdl IN ctxType, PROCEDURE setSQLToXMLNameEscaping( Syntax  Turns on or off escaping of XML tags in the case that the SQL object name, which is mapped to a XML identifier, is not a valid XML identifier. SETSQLTOXMLNAMEESCAPING      Tag name. (IN) tag Context handle. (IN) ctxHdl Description IN / OUT Parameter tag IN VARCHAR2); ctxHdl IN ctxType, PROCEDURE setRowTag( Syntax  Names the tag used in the XML document to enclose the XML elements corresponding to db. records. SETROWTAG      Should XSU preserve whitespace? (IN) flag Context handle. (IN)",
+    "textAfterTable": "SETUPDATECOLUMN Adds a column to the update column list. In case of insert, the default is to insert values to all the columns in the table; on the other hand, in case of updates, the default is to only update the columns corresponding to the tags present in the ROW element of the XML document. When the update column list is specified, the columns making up this list alone will get updated or inserted into. Syntax PROCEDURE setUpdateColumn( ctxHdl IN ctxType, colName IN VARCHAR2); Parameter IN / OUT Description ctxHdl (IN) Context handle. colName (IN) Column to be added to the update column list. SETXSLT Registers an XSL transform to be applied to the XML to be saved. If a stylesheet was already registered, it gets",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

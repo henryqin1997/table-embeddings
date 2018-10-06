@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "a_id",
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        [
+            "a_text",
+            "red",
+            "yes",
+            "green",
+            "no"
+        ]
+    ],
+    "pageTitle": "SQL - The Full Wiki",
+    "title": "",
+    "url": "http://www.thefullwiki.org/SQL",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985140.15/warc/CC-MAIN-20150728002305-00074-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 747054703,
+    "recordOffset": 746997948,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{57404=Interested parties may purchase SQL standards documents from ISO or ANSI. A draft of SQL:2008 is freely available as a zip archive.[24], 3478=SQL (pronounced /\u02ccs\u025b.kw\u025bl/ SE-kwEL[1], often referred to as Structured Query Language[2][3]) is a database computer language designed for managing data in relational database management systems (RDBMS), and originally based upon Relational Algebra. Its scope includes data query and update, schema creation and modification, and data access control. SQL was one of the first languages for Edgar F. Codd's relational model in his influential 1970 paper, \"A Relational Model of Data for Large Shared Data Banks\"[4] and became the most widely used language for relational databases.[5][6], 13643=After testing SQL at customer test sites to determine the usefulness and practicality of the system, IBM began developing commercial products based on their System R prototype including System/38, SQL/DS, and DB2, which were commercially available in 1979, 1981, and 1983, respectively.[9], 47478=In addition to the standard SQL/PSM extensions and proprietary SQL extensions, procedural and object-oriented programmability is available on many SQL platforms via DBMS integration with other languages. The SQL standard defines SQL/JRT extensions (SQL Routines and Types for the Java Programming Language) to support Java code in SQL databases. SQL Server 2005 uses the SQLCLR (SQL Server Common Language Runtime) to host managed .NET assemblies in the database, while prior versions of SQL Server were restricted to using unmanaged extended stored procedures which were primarily written in C. Other database platforms, like MySQL and Postgres, allow functions to be written in a wide variety of languages including Perl, Python, Tcl, and C., 53964=Until 1996, the National Institute of Standards and Technology (NIST) data management standards program certified SQL DBMS compliance with the SQL standard. Vendors now self-certify the compliance of their products.[22], 52862=SQL was adopted as a standard by the American National Standards Institute (ANSI) in 1986 as SQL-86[20] and International Organization for Standardization (ISO) in 1987. The original SQL standard declared that the official pronunciation for SQL is \"es queue el\".[2] Many English-speaking database professionals still use the nonstandard[21] pronunciation /\u02c8si\u02d0kw\u0259l/ (like the word \"sequel\")., 11637=The first Relational Database Management System (RDBMS) was RDMS, developed at MIT in the early 1970s, soon followed by Ingres, developed in 1974 at U.C. Berkeley. Ingres implemented a query language known as QUEL, which was later supplanted in the marketplace by SQL.[8], 12398=In the late 1970s, Relational Software, Inc. (now Oracle Corporation) saw the potential of the concepts described by Codd, Chamberlin, and Boyce and developed their own SQL-based RDBMS with aspirations of selling it to the U.S. Navy, Central Intelligence Agency, and other U.S. government agencies. In the summer of 1979, Relational Software, Inc. introduced the first commercially available implementation of SQL, Oracle V2 (Version2) for VAX computers. Oracle V2 beat IBM's release of the System/38 RDBMS to market by a few weeks.[citation needed], 14180=Common criticisms of SQL include a perceived lack of cross-platform portability between vendors, inappropriate handling of missing data (see Null (SQL)), and unnecessarily complex and occasionally ambiguous language grammar and semantics. It also lacks the rigour of more formal languages such as Relational Algebra.}",
+    "textBeforeTable": "Note that SQL returns only results for which the WHERE clause returns a value of True. I.e., it excludes results with values of False, but also those whose value is Unknown. Additionally, since SQL operators return Unknown when comparing anything with Null, SQL provides two Null-specific comparison predicates: The IS NULL and IS NOT NULL test whether data is or is not Null.[14] SQL uses Null to handle missing information. It supports three-valued logic (3VL) and the rules governing SQL three-valued logic (3VL) are shown below (p and q represent logical states).[13] The word NULL is also a reserved keyword in SQL, used to identify the Null special marker. The idea of Null was introduced into SQL to handle missing information in the relational model. The introduction of Null (or Unknown) along with True and False is the foundation of Three-Valued Logic. Null does not have a value (and is not a member of any data domain) but is rather a placeholder or \u201cmark\u201d for missing information. Therefore comparisons with Null can never result in either True or False but always in the third logical result, Unknown.[12] Null and Three-Valued Logic (3VL)ORDERBYWHERE>.FROM*.AS,,SELECT,   title; price 10000 Book price 006 sales_tax price title isbn",
+    "textAfterTable": "Unknown Unknown False Unknown p OR q p True False Unknown q True True True True False True False Unknown Unknown True Unknown Unknown p NOT p True False False True Unknown Unknown p = q p True False Unknown q True True False Unknown False False True Unknown Unknown Unknown Unknown Unknown Universal quantification is not explicitly supported by SQL, and must be worked out as a negated existential quantification.[15][16][17] There is also the \"<row value expression> IS DISTINCT FROM <row value expression>\" infixed comparison operator which returns TRUE if both operands are equal or both are NULL. Likewise, IS NOT DISTINCT FROM is defined as \"NOT (<row value expression> IS DISTINCT FROM <row value expression>\") Data manipulation The Data Manipulation Language (DML) is the subset of SQL used to add, update and delete data: INSERT adds rows (formally tuples) to an existing table, e.g.,:",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

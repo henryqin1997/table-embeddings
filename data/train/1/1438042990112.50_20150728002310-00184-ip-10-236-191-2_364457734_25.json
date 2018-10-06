@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2"
+        ],
+        [
+            "Command or Action",
+            "Server# scope bios",
+            "Server /bios # clear-bios-password"
+        ],
+        [
+            "Purpose",
+            "Enters the BIOS command mode.",
+            "Clears the BIOS password. You must reboot the server for the clear password operation to take effect. You are prompted to create a new password when the server reboots."
+        ]
+    ],
+    "pageTitle": "CLI Configuration Guide for Cisco UCS E-Series Servers and the Cisco UCS E-Series Network Compute Engine Integrated Management Controller, Release 2.x - Managing the Server [Cisco UCS E-Series Servers] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/e/2-0/sw/cli/config/guide/b_2_0_CLI_Configuration_Guide/b_2_0_CLI_Configuration_Guide_chapter_011.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.50/warc/CC-MAIN-20150728002310-00184-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 364487631,
+    "recordOffset": 364457734,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Procedure You must log in with user or admin privileges to perform this task. Before You Begin Do not change the boot order while the host is performing BIOS power-on self test (POST). Note Configuring the Server Boot Order Configuring BIOS Settings Managing Server Power Unlocking Cisco IOS CLI Configuration Changes Locking Cisco IOS CLI Configuration Changes Shutting Down the Server Resetting the Server Configuring the Server Boot Order This chapter includes the following sections: Managing the Server Server BIOS Settings Restoring BIOS Defaults Clearing the BIOS Password Clearing the BIOS CMOS Configuring Server Management BIOS Settings Configuring Advanced BIOS Settings Viewing BIOS Status Configuring BIOS Settings Unlocking the Server's Front Panel Power Button Locking the Server's Front Panel Power Button Power-Cycling the Server Powering Off the Server",
+    "textAfterTable": "Note\u00a0\u00a0\u00a0 The options are not case sensitive. You can select one or more of the following: cdrom\u2014Bootable CD-ROM Virtual-CD fdd\u2014Floppy disk drive Virtual-Floppy hdd\u2014Hard disk drive RAID Cypress Virtual-HiFd pxe\u2014PXE boot GigEth0 GigEth1 GigEth2 GigEth3 efi\u2014Extensible Firmware Interface \u00a0 Step\u00a03 Server /bios # commit \u00a0 Commits the transaction to the system configuration. \u00a0 Step\u00a04 (Optional) Server /bios # show detail \u00a0 Displays the server boot order. \u00a0 The new boot order will be used on the next BIOS boot.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

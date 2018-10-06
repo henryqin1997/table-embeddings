@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Command",
+            "address-family (EIGRP)",
+            "clear ip eigrp neighbors",
+            "clear ip eigrp vrf neighbor",
+            "clear ip route",
+            "network (EIGRP)",
+            "redistribute maximum-prefix (EIGRP)",
+            "topology (EIGRP)"
+        ],
+        [
+            "Description",
+            "Enters address-family configuration mode to configure an EIGRP routing instance.",
+            "Deletes entries from the EIGRP neighbor table.",
+            "Deletes neighbor entries from the VRF table.",
+            "Deletes routes from the IP routing table.",
+            "Specifies the network for an EIGRP routing process.",
+            "Limits the number of prefixes redistributed into an EIGRP process.",
+            "Configures an EIGRP process to route IP traffic under the specified topology instance and enters address-family topology configuration mode."
+        ]
+    ],
+    "pageTitle": "Cisco IOS IP Routing: EIGRP Command Reference - I through R [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_eigrp/command/ire-cr-book/ire-i1.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00129-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 369553359,
+    "recordOffset": 369489914,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{50714=This command was introduced on Cisco ASR 1000 Series Routers.}",
+    "TableContextTimeStampAfterTable": "{243857=The following example, starting in global configuration mode, configures the maximum prefix limit for a single peer. The maximum limit is set to 1000 prefixes, and the warning threshold is set to 80 percent. When the maximum prefix limit is reached for the configured neighbor, adjacency with this neighbor will be brought down and all routes learned from it will be cleared. The neighbor will be placed in a penalty state for 4 minutes (user-defined penalty value). This function will not affect the relationship with any other neighbor., 323412=This command was implemented on the Cisco ASR 1000 Series Aggregation Services Routers.}",
+    "textBeforeTable": "Syntax Description key-chain as-number eigrp key-chain authentication ip no key-chain as-number eigrp key-chain authentication ip To enable authentication of Enhanced Interior Gateway Routing Protocol (EIGRP) packets, use the ip authentication key-chain eigrpcommand in interface configuration mode. To disable such authentication, use the no form of this command. ip authentication key-chain eigrp route-tag notation route-tag list router eigrp remote-neighbors source (EIGRP) redistribute maximum-prefix (EIGRP) redistribute eigrp populate bgp-extn-comm passive-interface (EIGRP) offset-list (EIGRP) nsf (EIGRP) next-hop-self network (EIGRP) neighbor maximum-prefix (EIGRP) neighbor description neighbor (EIGRP) metric weights (EIGRP) metric rib-scale metric maximum-hops metric holddown maximum-prefix match tag list match extcommunity log-neighbor-warnings log-neighbor-changes (IPv6 EIGRP) log-neighbor-changes (EIGRP) ipv6 summary-address eigrp ipv6 split-horizon eigrp ipv6 router eigrp ipv6 next-hop-self eigrp ipv6 hold-time eigrp ipv6 hello-interval eigrp ipv6 eigrp ipv6 bandwidth-percent eigrp",
+    "textAfterTable": "11.2F This command was introduced. 12.2(33)SRA This command was integrated into Cisco IOS Release 12.2(33)SRA. 12.2SX This command is supported in the Cisco IOS Release 12.2SX train. Support in a specific 12.2SX release of this train depends on your feature set, platform, and platform hardware. Cisco IOS XE Release 2.1 This command was integrated into Cisco IOS XE Release 2.1. 12.2(33)XNE This command was integrated into Cisco IOS Release 12.2(33)XNE. Cisco IOS XE Release 3.2S This command was modified. Support was added for this command in virtual network interface configuration mode. Examples The following example applies authentication to autonomous system 2 and identifies a key chain named SPORTS:  ip authentication key-chain eigrp 2 SPORTS Related Commands",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

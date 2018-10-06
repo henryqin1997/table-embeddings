@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "ld",
+            "res",
+            "errcodep",
+            "matcheddnp",
+            "errmsgp",
+            "referralsp",
+            "serverctrlsp",
+            "freeit",
+            "servercredp",
+            "retoidp",
+            "retdatap",
+            "err"
+        ],
+        [
+            "Description",
+            "The session handle.",
+            "The result of an LDAP operation as returned by ldap_result() or one of the synchronous API operation calls.",
+            "This result parameter is filled in with the LDAP error code field from the LDAPMessage message. This is the indication from the server of the outcome of the operation. NULL should be passed to ignore this field.",
+            "In the case of a return of LDAP_NO_SUCH_OBJECT, this result parameter is filled in with a DN indicating how much of the name in the request was recognized. NULL should be passed to ignore this field. The matched DN string should be freed by calling ldap_memfree() which is described later in this document.",
+            "This result parameter is filled in with the contents of the error message field from the LDAPMessage message. The error message string should be freed by calling ldap_memfree() which is described later in this document. NULL should be passed to ignore this field.",
+            "This result parameter is filled in with the contents of the referrals field from the LDAPMessage message, indicating zero or more alternate LDAP servers where the request is to be retried. The referrals array should be freed by calling ldap_value_free() which is described later in this document. NULL should be passed to ignore this field.",
+            "This result parameter is filled in with an allocated array of controls copied out of the LDAPMessage message. The control array should be freed by calling ldap_controls_free() which was described earlier.",
+            "A Boolean that determines whether the res parameter is disposed of or not. Pass any nonzero value to have these routines free res after extracting the requested information. This is provided as a convenience; you can also use ldap_msgfree() to free the result later. If freeit is nonzero, the entire chain of messages represented by res is disposed of.",
+            "For SASL bind results, this result parameter is filled in with the credentials passed back by the server for mutual authentication, if given. An allocated berval structure is returned that should be disposed of by calling ber_bvfree(). NULL should be passed to ignore this field.",
+            "For extended results, this result parameter is filled in with the dotted-OID text representation of the name of the extended operation response. This string should be disposed of by calling ldap_memfree(). NULL should be passed to ignore this field. The LDAP_NOTICE_OF_DISCONNECTION macro is defined as a convenience for clients that wish to check an OID to see if it matches the one used for the unsolicited Notice of Disconnection (defined in RFC 2251[2] section 4.4.1).",
+            "For extended results, this result parameter is filled in with a pointer to a struct berval containing the data in the extended operation response. It should be disposed of by calling ber_bvfree(). NULL should be passed to ignore this field.",
+            "For ldap_err2string(), an LDAP error code, as returned by ldap_parse_result() or another LDAP API call."
+        ]
+    ],
+    "pageTitle": "C API Reference - 11g Release 1 (11.1.1)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E25054_01/oid.1111/e10186/capi.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00103-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73577807,
+    "recordOffset": 73538990,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{32844=The LDAP session handle returned by ldap_init() is a pointer to an opaque data type representing an LDAP session. In RFC 1823 this data type was a structure exposed to the caller, and various fields in the structure could be set to control aspects of the session, such as size and time limits on searches., 54461=Standards track documents that extend this specification and specify new options should use values for option macros that are between 0x1000 and 0x3FFF inclusive. Private and experimental extensions should use values for the option macros that are between 0x4000 and 0x7FFF inclusive. All values less than 0x1000 and greater than 0x7FFF that are not defined in this document are reserved and should not be used. The following macro must be defined by C LDAP API implementations to aid extension implementers:, 68759=Additional parameters for the deprecated routines are not described. Interested readers are referred to RFC 1823., 27534=This section lists all the calls available in the LDAP C API found in RFC 1823., 213719=The first three examples show how to use the C API both with and without SSL and for SASL authentication. More complete examples are given in RFC 1823. The sample code for the command-line tool to perform an LDAP search also demonstrates use of the API in both the SSL and the non-SSL mode., 177435=See RFC 1823 for a description of parameters peculiar to the deprecated routines., 169443=The routines immediately following are deprecated. To learn more about them, see RFC 1823., 30813=192.168.1.10}",
+    "lastModified": "Thu, 20 Sep 2012 17:59:52 GMT",
+    "textBeforeTable": "Table 8-22 Parameters for Handling Errors and Parsing Results Table 8-22 lists and describes parameters for handling errors and parsing results. Parameters void ldap_perror( LDAP *ld, const char *msg ); ); int freeit LDAPMessage *res, LDAP *ld, ( int ldap_result2error The routines immediately following are deprecated. To learn more about them, see RFC 1823. char *ldap_err2string( int err ); #define LDAP_NOTICE_OF_DISCONNECTION \"1.3.6.1.4.1.1466.20036\" ); int freeit struct berval **retdatap, char **retoidp, LDAPMessage *res, LDAP *ld, ( int ldap_parse_extended_result ); int freeit struct berval **servercredp, LDAPMessage *res, LDAP *ld, ( int ldap_parse_sasl_bind_result ); int freeit LDAPControl ***serverctrlsp, char ***referralsp, char **errmsgp, char **matcheddnp, int *errcodep, LDAPMessage *res, LDAP *ld, ( int ldap_parse_result Syntax  ldap_err2string() is used to convert a numeric LDAP error code, as returned by ldap_parse_result(), ldap_parse_sasl_bind_result(), ldap_parse_extended_result() or one of the synchronous API operation calls, into an informative zero-terminated character string message describing the error. It returns a pointer to static data. The ldap_parse_result(), ldap_parse_sasl_bind_result(), and ldap_parse_extended_result() functions all skip over messages of type LDAP_RES_SEARCH_ENTRY and LDAP_RES_SEARCH_REFERENCE when looking for a result message to parse. They return the constant LDAP_SUCCESS if the result was successfully parsed and another LDAP error code if not.",
+    "textAfterTable": "Usage Notes See RFC 1823 for a description of parameters peculiar to the deprecated routines. 8.2.13 Stepping Through a List of Results Use the routines in this section to step through the list of messages in a result chain returned by ldap_result(). 8.2.13.1 ldap_first_message and ldap_next_message The result chain for search operations can include referral messages, entry messages, and result messages. ldap_count_messages() is used to count the number of messages returned. The ldap_msgtype() function, described previously, can be used to distinguish between the different message types. LDAPMessage *ldap_first_message( LDAP *ld, LDAPMessage *res ); LDAPMessage *ldap_next_message( LDAP *ld, LDAPMessage *msg ); int ldap_count_messages( LDAP *ld, LDAPMessage *res ); Parameters Table 8-23 lists and describes the parameters for stepping through a list of results. Table 8-23 Parameters for Stepping Through a List of Results Parameter",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

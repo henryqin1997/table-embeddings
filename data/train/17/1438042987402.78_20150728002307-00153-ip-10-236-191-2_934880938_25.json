@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Responder",
+            "Roberto Scano",
+            "Jan Richards",
+            "Alessandro Miele",
+            "Greg Pisocky",
+            "Jeanne F Spellman",
+            "Frederick Boland",
+            "Sueann Nichols",
+            "Alex Li"
+        ],
+        [
+            "A.3.4.2 tests",
+            "Accept the proposal",
+            "Recommend changes (see comments field)",
+            "Accept the proposal",
+            "The proposal needs more discussion (see comments field)",
+            "Accept the proposal",
+            "Accept the proposal",
+            "Accept the proposal",
+            "Recommend changes (see comments field)"
+        ],
+        [
+            "Comments on A.3.4.2",
+            "",
+            "ADD 3. Otherwise, select FAIL.",
+            "",
+            "Not quite sure what this is saying. The way this is written \"navigate between pieces of web content (elements, functions, etc.) where there is a programmatic relationship\" implies you can navigate the code. Isn't the point to exploit the relationships and \"flip flop\" between elements where there is an established relationship?",
+            "",
+            "",
+            "",
+            "Shouldn't there be a step before 1 to determine if the tool even handle contents that contains structure? Some content format do not have structure as intended here. There is very high likelihood that the relationship will appear in the form of tree structure. We should make that as an example to make the text more understandable."
+        ]
+    ],
+    "pageTitle": "Results of Questionnaire AUWG Survey for 7 January 2013 - part 2 (A.3) - Web-Based Straw-poll and Balloting System",
+    "title": "",
+    "url": "https://www.w3.org/2002/09/wbs/35520/20130107-2/results",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00153-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 934896566,
+    "recordOffset": 934880938,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampBeforeTable": "{4002=This questionnaire was open from 2012-12-28 to 2013-03-29.}",
+    "TableContextTimeStampAfterTable": "{3676=Test 0001 Author: Tim Boland, Jan, 18689=Test 0001 Author: Tim, Jan, 66349=Test Author: Tim Boland & Jan Richards}",
+    "lastModified": "Wed, 29 Jul 2015 10:34:11 GMT",
+    "textBeforeTable": "Details Neutral - will accept the consensus of the group Disagree with the proposal (see comments field) 1 The proposal needs more discussion (see comments field) Recommend changes (see comments field) 7 Accept the proposal Results All responders Choice Summary Select PASS (all functions must have passed) Go to the next function in the list (if any). Check that the system never requires the user to press a key within a time period of less than 20 seconds. If this is ever the case, then select FAIL. If the function must be accessed by traversing keyboard focus through the authoring tool user interface, check whether a visible focus indicator is provided for the function's user interface controls. If there is not, then select FAIL. Check that the function works correctly with the keyboard. If it does not, then select FAIL. For each function in the list: Open authoring tool on the selected platform and document (list) all functions of authoring tool (this could be from authoring tool documentation or author experience with the tool). Do not include any functions where path-dependent input is required. The path exception includes the any data continuously collected from pointing devices,",
+    "textAfterTable": "2. A.3.1.2 tests Success Criteria A.3.1.2 No Keyboard Traps: If keyboard focus can be moved to a component using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, authors are advised of the method for moving focus away. (Level A) Test 0001 Assertion: If keyboard focus can be moved to a component using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, authors are advised of the method for moving focus away. Test 0001 Author: Tim Boland, Jan If the platform on which the authoring tool is installed cannot be used with a keyboard (i.e. a mobile device that lacks a built in keyboard and cannot be connected via USB, Bluetooth, etc. to any form of external keyboard), then select SKIP. Determine whether there is a mechanism for traversing a visible keyboard focus through the user interface. If not, then select SKIP. For each screen of the user interface: Note the control on which the focus begins when the screen is opened.. Use the mechanism to traverse the user interface controls. If it is possible to have the keyboard focus traverse to all controls and",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

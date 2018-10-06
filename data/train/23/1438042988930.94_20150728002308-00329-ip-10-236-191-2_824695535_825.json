@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "id",
+            "num"
+        ],
+        [
+            "Datatype",
+            "ID",
+            "string (default)"
+        ],
+        [
+            "Required",
+            "no (default)",
+            "Yes"
+        ],
+        [
+            "Values",
+            "",
+            ""
+        ],
+        [
+            "Default",
+            "",
+            ""
+        ],
+        [
+            "Comments",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "SchemaDOC wo-published-application-v1-10.dtd",
+    "title": "",
+    "url": "http://www.wipo.int/pct-safe/epct/schemaDocs/1.10/wo-published-application-v1-10_dtd/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 825,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00329-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 824748047,
+    "recordOffset": 824695535,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 05 Jul 2012 14:49:00 GMT",
+    "textBeforeTable": "b, i, smallcaps, sub, sup, u uses attributes diagram Element title Element list title, wo-published-application Possible root elements: 336 element definitions and 520 element attribute definitions. Schema has: XML DTD : wo-published-application-v1-10.dtd",
+    "textAfterTable": "source <!ELEMENT title (#PCDATA | b | i | u | sup | sub | smallcaps)*> \u00a0 Element wo-published-application diagram description **************************************************************************** * SECTION II - DTD * **************************************************************************** Attributes for demand id = unique id for this application - could be file name country = st.3 code for application dtd-version = dtd version number lang = language of application - use ISO639 language code status = status of the application; values: new = new application file = filename of the whole application date-produced = YYYYMMDD e.g, 20011230 if desired, 12 characters maximum ipea = IPEA office name, country code ST.3 produced-by = creator of this document attributes lang, dtd-version, file, produced-by, date-produced, office-name, status uses abstract, abstract-figure, amend-statement, biological-material-doc, claims, description, drawings,",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

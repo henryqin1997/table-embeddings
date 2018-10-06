@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2"
+        ],
+        [
+            "Command or Action",
+            "terminal verify-only [username username] Example: switch# terminal verify-only",
+            "terminal no verify-only [username username] Example: switch# terminal no verify-only"
+        ],
+        [
+            "Purpose",
+            "Enables command authorization verification. After you enter this command, the Cisco NX-OS software indicates whether the commands you enter are authorized or not.",
+            "Disables command authorization verification."
+        ]
+    ],
+    "pageTitle": "Cisco Nexus 6000 Series NX-OS Security Configuration Guide, Release 6.0(2)N1(2) - Configuring TACACS+ [Cisco Nexus 6000 Series Switches] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus6000/sw/security/602_N1_2/b_6k_Security_Config_602N12/b_6k_Security_Config_602N12_chapter_0101.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991076.30/warc/CC-MAIN-20150728002311-00249-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 364104315,
+    "recordOffset": 364074880,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{110454=Configures the global dead-time interval. The default value is 0 minutes. The range is from 1 to 1440 minutes., 105482=Specifies the number minutes before the Cisco Nexus device checks a TACACS+ server that was previously unresponsive. The default value is 0 minutes and the valid range is 0 to 1440 minutes., 39576=Configures the monitoring dead time. The default is 0 minutes. The range is from 0 through 1440., 104468=Specifies parameters for server monitoring. The default username is test and the default password is test. The default value for the idle timer is 0 minutes and the valid range is from 0 to 1440 minutes.}",
+    "textBeforeTable": "Procedure Although by default, the TACACS+ feature is disabled on the Cisco Nexus device. You can enable the TACACS+ feature to access the configuration and verification commands for authentication. Enabling TACACS+ If needed, configure periodic TACACS+ server monitoring. Step\u00a06\u00a0\u00a0 TCP port Timeout interval Allow TACACS+ server specification at login Dead-time interval If needed, configure any of the following optional parameters: Step\u00a05\u00a0\u00a0 If needed, configure TACACS+ server groups with subsets of the TACACS+ servers for AAA authentication methods. Step\u00a04\u00a0\u00a0 Configure the preshared secret keys for the TACACS+ servers. Step\u00a03\u00a0\u00a0 Establish the TACACS+ server connections to the Cisco Nexus device. Step\u00a02\u00a0\u00a0 Enable TACACS+. Step\u00a01\u00a0\u00a0 Procedure",
+    "textAfterTable": "Step\u00a03 switch(config)# exit \u00a0 Exits configuration mode. \u00a0 Step\u00a04 switch# copy running-config startup-config \u00a0 (Optional) Copies the running configuration to the startup configuration. \u00a0 Configuring TACACS+ Server Hosts To access a remote TACACS+ server, you must configure the IPv4 or IPv6 address or the hostname for the TACACS+ server on the Cisco Nexus device. All TACACS+ server hosts are added to the default TACACS+ server group.You can configure up to 64 TACACS+ servers. If a preshared key is not configured for a configured TACACS+ server, a warning message is issued if a global key is not configured. If a TACACS+ server key is not configured, the global key (if configured) is used for that server. Before you configure TACACS+ server hosts, you should do the following: Enable TACACS+. Obtain the IPv4 or IPv6 addresses or the hostnames for the remote TACACS+ servers. Procedure \u00a0 Command or Action Purpose",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

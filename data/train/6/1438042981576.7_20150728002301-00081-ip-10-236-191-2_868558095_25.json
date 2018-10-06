@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "compositeName",
+            "revision",
+            "testsuiteName",
+            "jndiPropFile",
+            "oracleHome",
+            "javaHome"
+        ],
+        [
+            "Definition",
+            "Name of the SOA composite application.",
+            "Revision ID of the SOA composite application.",
+            "Name of the test suite.",
+            "Absolute path to the JNDI property file.",
+            "Optional. The oracle.home system property.",
+            "Optional. The java.passed.home system property."
+        ]
+    ],
+    "pageTitle": "Oracle SOA Suite Custom WLST Commands",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E21764_01/web.1111/e13813/custom_soa.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00081-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 868579963,
+    "recordOffset": 868558095,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 13 May 2015 05:19:30 GMT",
+    "textBeforeTable": "[oracleHome='oracleHome'], [javaHome='javaHome']) sca_test('compositeName', 'revision', 'testsuiteName', 'jndiPropFile',  Syntax      Tests deployed SOA composite applications prior to deployment in a production environment. You create suites of tests in Oracle JDeveloper. The sca_test command calls ant-sca-test.xml. Description    Use with WLST: Offline Command Category: Application Test Commands sca_test       Offline   Test deployed SOA composite applications.   sca_test      Use with WLST... To... Use this command...   Table 9-8 SOA Composite Application Test Command for WLST Configuration Use the SOA composite application test command, listed in Table 9-8, to test a SOA composite applications. SOA Composite Application Test Commands oracleHome=\"/scratch/myusername/beahome/AS11gR1SOA\")(\"/tmp/HelloSOAApplication/HelloSOAComposite\", \"HelloSOAComposite\", \"1.0\", sca_package  The following example packages the HelloSOAComposite application. The oracleHome property is set to find the ant-sca-compile.xml script. (\"/tmp/HelloSOAApplication/HelloSOAComposite\", \"HelloSOAComposite\", \"1.0\")sca_package  The following example packages the HelloSOAComposite application. wls:/mydomain/ServerConfig> wls:/mydomain/ServerConfig>",
+    "textAfterTable": "Examples The following example runs the OrderBookingMainTestsuite test suite.  wls:/mydomain/ServerConfig> sca_test('OrderBookingComposite', '1.0', 'OrderBookingMainTestsuite', '/tmp/tmp-jndi.properties', oracleHome='/scratch/<user>/beahome/AS11gR1SOA/', javaHome='/scratch/<user>/beahome/jdk160_05') SOA Composite Application HTTP Client-Based Export and Import Commands Use the SOA composite application commands, listed in Table 9-9, to export and import SOA composite applications based on the HTTP client. The SOA Infrastructure must be running to use these commands. Table 9-9 SOA Composite Application Export and Import Commands for WLST Configuration Use this command... To... Use with WLST... sca_exportComposite Export a SOA composite application into a SAR file. Offline sca_exportUpdates Export postdeployment changes of a SOA composite application into a JAR file. Offline sca_importUpdates Import postdeployment changes of a SOA composite application.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,67 @@
+{
+    "relation": [
+        [
+            "Code or Value",
+            "1",
+            "2",
+            "3",
+            "7",
+            "9",
+            "."
+        ],
+        [
+            "Value Description",
+            "Often",
+            "Sometimes",
+            "Never",
+            "Refused",
+            "Don't know",
+            "Missing"
+        ],
+        [
+            "Count",
+            "41",
+            "224",
+            "2404",
+            "2",
+            "12",
+            "7665"
+        ],
+        [
+            "Cumulative",
+            "41",
+            "265",
+            "2669",
+            "2671",
+            "2683",
+            "10348"
+        ],
+        [
+            "Skip to Item",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "NHANES 2005 - 2006: Food Security Data Documentation, Codebook, and Frequencies",
+    "title": "",
+    "url": "http://www.cdc.gov/nchs/nhanes/nhanes2005-2006/FSQ_D.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00196-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 363514775,
+    "recordOffset": 363493742,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampBeforeTable": "{12684=Since 1999, NHANES has assessed household food security with the US Food Security Survey Module (US FSSM)5. Individual-level food security items for adults and children were added to NHANES in 2000, and added for adolescents in 2005. The NHANES Food Security section (FSQ) also provides data on food assistance., 6019=Most NHANES survey questions that assess a specific aspect of food security are identical or very similar for adults, teens, and children. In this 2005-2006 FSQ release, data collected separately for different age groups are combined and released as one variable for each topic, although the actual survey instruments may be slightly different by participants\u2019 ages. The exact wording of the FSQ questionnaires used in the survey can be found through the \u201cQuestionnaire\u201d link accompanying this release., 10294=1. Food stamp authorization: Household and individual-level food stamp data were collected for all household members during the household interview. One adult usually responded for the entire household. NCHS created a variable for the number of people in the HH who received food stamp benefits. New in 2005-06, the respondent was asked the dollar amount of the most recent food stamp benefit. The household level variables for \u201cbenefit amount\u201d and \u201cnumber of all people in the household who were authorized for food stamps\u201d are released on all household participants\u2019 records., 4742=The most recent NHANES Analytic Guidelines (September 2006) are available at the NHANES website6., 11893=In the household interview, an adult responded to the US FSSM questions. There are 18 items for households with children under age 18 and 10 items for households without children. Questions refer to all household members, not just NHANES participants. All households were administered these questions in 2005-2006; no income screen was used. Three categorical household-level variables were created: household, adult, and child food security, as described by USDA5. Responses to the 10 or 18 US FSSM items and the categorical data derived from these responses are released on each household participant\u2019s record., 13803=Title: Food Security (FSQ_D ) Contact Number: 1-866-441-NCHS Years of Content: 2005 - 2006 First Published: January, 2008 Revised: NA Access Constraints: None Use Constraints: None Geographic Coverage: National Subject:The food security section provides data on household and individual level food security, food stamp benefits, and participation in the WIC program. Record Source: NHANES 2005 - 2006 Survey Methodology: NHANES 2005 - 2006 is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S. Medium: NHANES Web site; SAS transport files, 12946=The existence of food security and hunger in the U.S. has been noted for several decades. In the 1980-90\u2019s, qualitative and survey research were undertaken to characterize food security, and survey modules were developed to assess it 1-4., 10662=Individual-level questions are derived from a subset of the household-referenced questions. Release of adolescent individual-level food security data is new for 2005-2006. The same variable labels are used for all age groups. These data are released only on the individual participant\u2019s record.}",
+    "lastModified": "Fri, 09 May 2014 20:26:43 GMT",
+    "textBeforeTable": "Both males and females 0 YEARS - 150 YEARS Target: Collected on household level. English Instructions: Now I am going to read you several statements that people have made about their food situation. For these statements, please tell me whether the statement was often true, sometimes true, or never true for {you/your household} in the last 12 months, that is since last {DISPLAY CURRENT MONTH}. The first statement is . . . {I/we} worried whether {my/our} food would run out before {I/we} got money to buy more. English Text: HH Worried run out of food SAS Label: FSD032A Variable Name: FSD032A - HH Worried run out of food Both males and females 0 YEARS - 150 YEARS Target: Respondent sequence number. English Text: Respondent sequence number SAS Label: SEQN Variable Name: SEQN - Respondent sequence number Codebook and Frequencies Validation of the Radimer/Cornell measures of hunger and food insecurity. Kendall A, Olson CM, Frongillo EA Jr. J Nutr. 1995; 125: 2793-801. Understanding hunger and developing indicators to assess it in women and children. Radimer KL, Olson CM, Green JC, Campbell CC, Habicht J-P. J Nutr Educ. 1992; 24: 36s-45s. The National Health",
+    "textAfterTable": "FSD032B - HH Food didn't last Variable Name: FSD032B SAS Label: HH Food didn't last English Text: [The next statement is . . .] The food that {I/we} bought just didn't last, and {I/we} didn't have money to get more. English Instructions: Collected on household level. Target: Both males and females 0 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 1 Often true 503 503 2 Sometimes true 1652 2155 3 Never true 8063 10218 7 Refused 7 10225 9 Don't know 0 10225 . Missing 123 10348 FSD032C - HH Couldn't afford balanced meals Variable Name: FSD032C SAS Label: HH Couldn't afford balanced meals English Text: [The next statement is . . .] {I/we}",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

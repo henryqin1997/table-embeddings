@@ -1,0 +1,69 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "460.57500",
+            "465.57500",
+            "471.61250"
+        ],
+        [
+            "License",
+            "WNUL599",
+            "",
+            "WIL585"
+        ],
+        [
+            "Type",
+            "RM",
+            "M",
+            "RM"
+        ],
+        [
+            "Tone",
+            "131.8 PL",
+            "146.2 PL",
+            "131.8 PL"
+        ],
+        [
+            "Alpha Tag",
+            "Middleton FD",
+            "Middletn FD3",
+            "Middleton PD"
+        ],
+        [
+            "Description",
+            "Fire Department",
+            "Fire OPS-3",
+            "Police Department"
+        ],
+        [
+            "Mode",
+            "FMN",
+            "FM",
+            "FM"
+        ],
+        [
+            "Tag",
+            "Fire Dispatch",
+            "Fire-Tac",
+            "Law Dispatch"
+        ]
+    ],
+    "pageTitle": "Essex County, Massachusetts (MA) Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?ctid=1217&ts=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988065.26/warc/CC-MAIN-20150728002308-00288-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 650552058,
+    "recordOffset": 650536100,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{174953=District 15 Control - Andover, Test/Availability 09:30 Daily, 174828=District 5 Control - Beverly (Sometimes referred to as Beverly Control), Test/Availability 18:15 Daily}",
+    "textBeforeTable": "\u00a0154.0100 (114.8 PL) is used by Georgetown, Groveland, and West Newbury as a regional fireground channel. Other cities in the county have 154.0100 in their radios, with different PL tones.\u00a0 Essex County Municipalities //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag)",
+    "textAfterTable": "Frequency\u00a0 License\u00a0 Type\u00a0 Tone\u00a0 Alpha Tag\u00a0 Description\u00a0 Mode\u00a0 Tag\u00a0 155.87250\u00a0 WNEC686\u00a0 BM 654 DPL Amesbury FD Fire Department\u00a0 FMN\u00a0 Fire Dispatch\u00a0 482.83750\u00a0 KCB788\u00a0 BM 146.2 PL Amesbury PD Police Department\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

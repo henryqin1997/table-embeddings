@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Namelist Variable",
+            "iopfile Full pathname of IOP dataset. Default: set by build-namelist.",
+            "scm_clubb_iop_name IOP name for CLUBB running in single column mode Default: \"\"",
+            "scm_crm_mode Column radiation mode. Default: FALSE",
+            "scm_diurnal_avg If using diurnal averaging or not. Default: FALSE",
+            "scm_iop_srf_prop Use the specified surface properties. Default: FALSE",
+            "scm_relaxation Use relaxation. Default: FALSE",
+            "scmlat Latitude value of single column. Default: none.",
+            "scmlon Longitude value of single column. Default: none.",
+            "single_column Set to TRUE to turn on single column mode. Default: FALSE"
+        ],
+        [
+            "Type",
+            "char*128",
+            "char*200",
+            "logical",
+            "logical",
+            "logical",
+            "logical",
+            "real",
+            "real",
+            "logical"
+        ],
+        [
+            "Group",
+            "cam_inparm",
+            "cam_inparm",
+            "cam_inparm",
+            "cam_inparm",
+            "cam_inparm",
+            "cam_inparm",
+            "seq_infodata_inparm",
+            "seq_infodata_inparm",
+            "seq_infodata_inparm"
+        ]
+    ],
+    "pageTitle": "CAM Namelist Definition",
+    "title": "",
+    "url": "http://www.cesm.ucar.edu/cgi-bin/eaton/namelist/nldef2html-cam5_2",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00333-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 361550171,
+    "recordOffset": 361491551,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Physics - Single Column Mode solar_inparm logical Default: false Use spectral scaling in the radiation heating  #cccccc;\"> padding-left: 16px; margin-top: 4px; border-top: 1px dashed   solar_htng_spctrl_scl    solar_inparm integer   Default: none Format: YYYYMMDD of solar data. is \"SERIAL\" the solar_data_ymd is the start date of the time series solar_data_type is the date the solar data is fixed to. If is \"FIXED\" then solar_data_ymd solar_data_type If  #cccccc;\"> padding-left: 16px; margin-top: 4px; border-top: 1px dashed   solar_data_ymd    solar_inparm char*8   Default: SERIAL Can be set to \"FIXED\" or \"SERIAL\". . solar_data_file Type of time interpolation for data in  #cccccc;\"> padding-left: 16px; margin-top: 4px; border-top: 1px dashed   solar_data_type    solar_inparm integer   Default: current model time of day solar_data_ymd Seconds of the day corresponding to  #cccccc;\"> padding-left: 16px; margin-top: 4px; border-top: 1px dashed   solar_data_tod    solar_inparm char*256   Default: none as a time series Full pathname of dataset for file that contains the solar photon enerspectra or TSI data",
+    "textAfterTable": "Chemistry - CAM-CHEM and WACCM Namelist Variable Type Group aer_drydep_list  List of aerosol species that undergo dry deposition. Default: set by build-namelist. char*16(1000) chem_inparm aer_wetdep_list  List of aerosol species that undergo wet deposition. Default: set by build-namelist. char*16(1000) chem_inparm aerodep_flx_cycle_yr  The cycle year of the prescribed aerosol flux data if  aerodep_flx_type  is 'CYCLICAL'. Format: YYYY Default: 0 integer aerodep_flx_nl aerodep_flx_datapath  Full pathname of the directory that contains the files specified in  aerodep_flx_filelist . Default: set by build-namelist. char*256 aerodep_flx_nl aerodep_flx_file  Filename of dataset for prescribed aerosols. Default: set",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

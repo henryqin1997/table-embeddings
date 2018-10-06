@@ -1,0 +1,190 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2002-03",
+            "2003-04",
+            "2004-05",
+            "2005-06",
+            "CAREER"
+        ],
+        [
+            "School",
+            "Washington",
+            "Washington",
+            "Washington",
+            "Washington",
+            ""
+        ],
+        [
+            "Class",
+            "Fr",
+            "So",
+            "Jr",
+            "Sr",
+            ""
+        ],
+        [
+            "GP",
+            "13",
+            "31",
+            "26",
+            "33",
+            "103"
+        ],
+        [
+            "GS",
+            "2",
+            "31",
+            "4",
+            "33",
+            "70"
+        ],
+        [
+            "Dbl Dbl",
+            "0",
+            "1",
+            "2",
+            "5",
+            "8"
+        ],
+        [
+            "Tpl Dbl",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "40 Pts",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "20 Reb",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "20 Ast",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "Techs",
+            "0",
+            "0",
+            "1",
+            "1",
+            "2"
+        ],
+        [
+            "HOB",
+            ".121",
+            ".280",
+            ".239",
+            ".370",
+            ".280"
+        ],
+        [
+            "Ast/TO",
+            "0.72",
+            "1.21",
+            "1.45",
+            "1.80",
+            "1.42"
+        ],
+        [
+            "Stl/TO",
+            "0.22",
+            "0.42",
+            "0.40",
+            "0.61",
+            "0.47"
+        ],
+        [
+            "FT/FGA",
+            "0.62",
+            "0.45",
+            "0.37",
+            "0.47",
+            "0.45"
+        ],
+        [
+            "W's",
+            "4",
+            "19",
+            "21",
+            "26",
+            "70"
+        ],
+        [
+            "L's",
+            "9",
+            "12",
+            "5",
+            "7",
+            "33"
+        ],
+        [
+            "Win %",
+            "0.308",
+            "0.613",
+            "0.808",
+            "0.788",
+            "0.680"
+        ],
+        [
+            "OWS",
+            "0.16",
+            "1.80",
+            "3.18",
+            "7.30",
+            "12.53"
+        ],
+        [
+            "DWS",
+            "0.00",
+            "1.03",
+            "0.35",
+            "2.19",
+            "3.42"
+        ],
+        [
+            "WS",
+            "0.16",
+            "2.83",
+            "3.53",
+            "9.49",
+            "15.95"
+        ]
+    ],
+    "pageTitle": "Brandon Roy Player Profile, Minnesota Timberwolves, News, Rumors, NBA Stats, NCAA Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Brandon_Roy/Summary/69",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00260-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 21808915,
+    "recordOffset": 21778380,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{9215=Born: Jul 23, 1984 (31 years old), 7804=Draft Rights Trade: MIN to POR, Jun 28, 2006, 8153=Draft Entry: 2006 NBA Draft, 8053=Early Entry Info: 2002 Early Entrant (Withdrew)}",
+    "TableContextTimeStampAfterTable": "{111511=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved., 26470=* Since the 1946-1947 season}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 6 Years Of Service - ROY, 3x All-Star NBA Jump to: [ NBA ] [ NCAA ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": ".333 2.49 2.94 .848 6.63 0.60 1.98 2.57 2.74 0.79 0.26 1.62 1.17 12.19 2012-13 MIN 5 5 24.4 2.20 7.00 .314 0.00 1.80 .000 1.40 2.00 .700 5.35 0.60 2.20 2.80 4.60 0.60 0.00 1.00 1.40 5.80 CAREER \u00a0 326 300 35.5 6.82 14.87 .459 0.99 2.84 .348 4.19 5.24 .800 12.28 1.06 3.19 4.26 4.65 1.03 0.23 1.93 1.83 18.82 NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2006-07 POR 57 55 2014.5 349 765 .456 55 146 .377 202 241 .838 614 58 192 250 230 67 10 139 116 955 2007-08 POR 74 74 2792.0 531 1170 .454 73 215 .340 281 373 .753 995 81 267 348 430 79 16 147 136 1416 2008-09 POR 78 78 2903.4 633 1318 .480 83 220 .377 416 505 .824 1185 104 266 370 400 88 22 127 152 1765 2009-10 POR 65 65 2418.5 491 1038",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

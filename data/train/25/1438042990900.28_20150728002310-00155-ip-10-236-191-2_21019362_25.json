@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Modifier and Type",
+            "static void",
+            "static void",
+            "static void",
+            "static void",
+            "static AxisOperation",
+            "void"
+        ],
+        [
+            "Method and Description",
+            "Utils.addEndpointsToService(AxisService axisService)",
+            "Utils.addEndpointsToService(AxisService axisService, AxisConfiguration axisConfiguration)",
+            "Utils.addFlowHandlers(Flow flow, ClassLoader clsLoader)",
+            "Utils.deployModuleServices(AxisModule module, ConfigurationContext configCtx) Modules can contain services in some cases.",
+            "Utils.getAxisOperationForJmethod(Method method)",
+            "PhasesInfo.setOperationPhases(AxisOperation axisOperation)"
+        ]
+    ],
+    "pageTitle": "Uses of Class org.apache.axis2.AxisFault (Apache Axis2 - Root 1.6.3 API)",
+    "title": "Methods in org.apache.axis2.deployment.util that throw AxisFault",
+    "url": "http://axis.apache.org/axis2/java/core/api/org/apache/axis2/class-use/AxisFault.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990900.28/warc/CC-MAIN-20150728002310-00155-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 21059015,
+    "recordOffset": 21019362,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{637513=Copyright \u00a9 2004-2015 The Apache Software Foundation. All Rights Reserved.}",
+    "lastModified": "Sat, 27 Jun 2015 23:57:36 GMT",
+    "textBeforeTable": "Uses of AxisFault in org.apache.axis2 \u00a0 org.apache.axis2.wsdl.codegen.emitter.jaxws \u00a0 org.apache.axis2.util.threadpool \u00a0 org.apache.axis2.util \u00a0 org.apache.axis2.transport.xmpp.util \u00a0 org.apache.axis2.transport.xmpp Transport implementation for the UDP protocol. org.apache.axis2.transport.udp \u00a0 org.apache.axis2.transport.testkit.util \u00a0 org.apache.axis2.transport.testkit.axis2.endpoint \u00a0 org.apache.axis2.transport.testkit.axis2.client \u00a0 org.apache.axis2.transport.tcp \u00a0 org.apache.axis2.transport.mail \u00a0 org.apache.axis2.transport.local Provides classes and interfaces to define content type rules. org.apache.axis2.transport.jms.ctype JMS Listener Configuration (axis2.xml) org.apache.axis2.transport.jms \u00a0 org.apache.axis2.transport.java \u00a0 org.apache.axis2.transport.http.util \u00a0 org.apache.axis2.transport.http.server \u00a0 org.apache.axis2.transport.http \u00a0 org.apache.axis2.transport.base.endpoint.config Base classes for datagram transports. org.apache.axis2.transport.base.datagram \u00a0 org.apache.axis2.transport.base \u00a0 org.apache.axis2.transport \u00a0 org.apache.axis2.transaction \u00a0",
+    "textAfterTable": "Uses of AxisFault in org.apache.axis2.addressing Methods in org.apache.axis2.addressing that throw AxisFault \u00a0 Modifier and Type Method and Description static String EndpointReferenceHelper.fromOM(EndpointReference\u00a0epr, org.apache.axiom.om.OMElement\u00a0eprOMElement) Populates an endpoint reference based on the OMElement. static void EndpointReferenceHelper.fromOM(EndpointReference\u00a0epr, org.apache.axiom.om.OMElement\u00a0eprOMElement, String\u00a0addressingNamespace) Populates an endpoint reference based on the OMElement and WS-Addressing namespace that is passed in. static EndpointReference EndpointReferenceHelper.fromOM(org.apache.axiom.om.OMElement\u00a0eprOMElement) Populates an endpoint reference based on the OMElement that is passed in. static EndpointReference EndpointReferenceHelper.fromOM(String\u00a0eprString) Deprecated.\u00a0 use EndpointReferenceHelper.fromString(String) instead. static EndpointReference EndpointReferenceHelper.fromString(String\u00a0eprString) Populates an endpoint reference based on the String that is passed in. static InterfaceName EndpointReferenceHelper.getInterfaceNameMetadata(EndpointReference\u00a0epr,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

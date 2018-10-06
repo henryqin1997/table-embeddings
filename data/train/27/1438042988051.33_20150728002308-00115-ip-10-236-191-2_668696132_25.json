@@ -1,0 +1,68 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "453.62500",
+            "151.74500",
+            "463.42500"
+        ],
+        [
+            "License",
+            "WNMI289",
+            "WQAD876",
+            "WQNH408"
+        ],
+        [
+            "Type",
+            "RM",
+            "BM",
+            "RM"
+        ],
+        [
+            "Tone",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Alpha Tag",
+            "LSCC Securit",
+            "LSCC Maint",
+            "LSCC Maint"
+        ],
+        [
+            "Description",
+            "Security",
+            "Maintenance (Birmingham)",
+            "Maintenance (Bessemer)"
+        ],
+        [
+            "Mode",
+            "FM",
+            "FM",
+            "FM"
+        ],
+        [
+            "Tag",
+            "Security",
+            "Schools",
+            "Schools"
+        ]
+    ],
+    "pageTitle": "Jefferson County, Alabama (AL) Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?ctid=37&ts=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988051.33/warc/CC-MAIN-20150728002308-00115-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 668709839,
+    "recordOffset": 668696132,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Jefferson County Jefferson County //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { }); }); } act=1; setEsc(this,origHtml); this.innerHTML = getTagsHTML; getTagsHTML += '\\n'; } getTagsHTML += '' + tagNames[i] + '\\n'; for (var",
+    "textAfterTable": "Frequency\u00a0 License\u00a0 Type\u00a0 Tone\u00a0 Alpha Tag\u00a0 Description\u00a0 Mode\u00a0 Tag\u00a0 154.01000\u00a0 WPCR659\u00a0 BM Adger VFD Adger Volunteer Fire\u00a0 FM\u00a0 Fire-Talk\u00a0 154.14500\u00a0 WQBE803\u00a0 BM 151.4 PL Bagley Fire Bagley Fire & Rescue Service\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

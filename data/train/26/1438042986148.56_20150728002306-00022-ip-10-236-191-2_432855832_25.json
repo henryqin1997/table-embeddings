@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Name",
+            "",
+            "mapping",
+            "links"
+        ],
+        [
+            "Description",
+            "",
+            "Request the mapping of nodes in your NS file, to physical testbed nodes. This request is ignored if the experiment is not swapped in",
+            "Request information about all of the links in your experiment, including delay characteristics, IP address and mask"
+        ]
+    ],
+    "pageTitle": "Emulab.Net - Emulab Tutorial: XMLRPC Interface to Emulab",
+    "title": "",
+    "url": "http://www.emulab.net/xmlrpcapi.php3",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986148.56/warc/CC-MAIN-20150728002306-00022-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 432875471,
+    "recordOffset": 432855832,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 29 Jul 2015 06:49:03 GMT",
+    "textBeforeTable": "news: Get news item headers. The optional arguments are: /XMLRPC/emulab The emulab module provides general information about this Emulab installation. Finally, a quick note about the types accepted and returned by methods. Most methods will accept a real XML-RPC type and try to coerce a string into that type. For example, in python, passing True is equivalent to passing the string, \"true\". When returning data, the methods will prefer to return typed values, rather than formatted strings. Unless specifically stated, the return value of most commands is a simple integer reflecting an exit code from the server, and some output to help you determine what went wrong. Otherwise, the return value is documented in each method description. output: A string (with embedded newlines) to print out. This is useful for debugging and for guiding users through the perils of XMLRPC programming. value: A return value. May be any valid data type that can be transfered in XML. code: An integer code as defined in emulabclient.py. out. The response from the server is another hashed array (Python Dictionary) of the form: exp of the experiment he/she wants to swap, as well as the actual swap operation, in this case proj and The client specifies the response = server.swapexp(CURRENTVERSION, args) args[\"direction\"] = \"out\" args[\"exp\"] = \"myexp\" args[\"proj\"] = \"myproj\" args = {}; arguments: a hash table of argument/value pairs, which in Python is a",
+    "textAfterTable": "ending date +Inf. The date to stop searching for news items. The return value is a list of hash tables with the following elements: Name Type Description subject string The item's subject. author string The item's author. date date The date the item was posted. msgid integer The item's unique identifier. This value should be used as the anchor when redirecting to the web site (e.g. http://www.emulab.net/news.php3#32). /XMLRPC/user The user module provides access to user-specific information. nodecount: Get the number of nodes you have allocated. There are no arguments and the method returns an integer. membership: Get the list of projects and subgroups of which you are a member. The return value is a hash table where each entry is the name of a project and a list of subgroups. The optional arguments are: Name Type Default Description permission string readinfo The name of an action that the user would like to take. The result will then be narrowed to those groups where this action is possible. Supported values: readinfo - Read information about the project/group. createexpt - Create an experiment. makegroup - Create a sub-group. makeosid - Create an OS identifier. makeimageid - Create an image identifier.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

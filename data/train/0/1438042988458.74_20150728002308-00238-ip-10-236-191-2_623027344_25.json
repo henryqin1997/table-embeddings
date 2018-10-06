@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2008-01-01T00:00:00",
+            "2008-01-01T00:00:00",
+            "2010-10-01T00:00:00",
+            "2011-09-19T00:00:00"
+        ],
+        [
+            "Description",
+            "The ABGPS, IMU, and raw Optech 3100ea LiDAR scans are integrated using Optech Incorporated's DASHMap, version 1.1 software, Terrascan software and Microstation software. The resultant file is in a LAS binary file format. The LAS file version 1.1 format can be easily transferred from one file format to another. It is a binary file format that maintains information specific to the LiDAR data (return#, intensity value, xyz, etc.). The resultant points are referenced to the NAD83 horizontal datum and GRS80 vertical datum. The date and time for each flight line can be determined using the Julian date and time. The Julian date is a continuous count of days and fractions since noon Universal Time on January 1, 4713 BCE on the Julian calendar.",
+            "The unedited data are classified to facilitate the application of the appropriate feature extraction filters. A combination of proprietary filters are applied as appropriate for the production of bare earth digital terrain models (dtms). Interactive editing methods are applied to those areas where it is inappropriate or impossible to use the feature extraction filters, based upon the design criteria and/or limitations of the relevant filters. These same feature extraction filters are used to produce elevation height surfaces. The LiDAR mass points were delivered in American Society for Photogrammetry and Remote Sensing LAS 1.1 format. The header file for each dataset is complete as define by the LAS 1.1 specification. In addition, the following fields are included (Precision reported in brackets): Class (Integer); GPS Week Time (0.0001 seconds); Easting (0.01 meter); Northing (0.01 meter); Elevation (0.01 meter); Echo Number (Integer 1 to 4); Echo (Integer 1 to 4); Intensity (8 Bit Integer); Flightline (Integer); Scan Angle (Integer Degree). The LAS files do not include overlap. The data was classified as follows: Class 1 = Unclassified. This class includes vegetation, buildings, noise etc. Class 2 = Ground Class 7 = Noise Class 9 = Water",
+            "The NOAA Coastal Services Center (CSC) received files in LAS format. The files contained LiDAR intensity and elevation measurements. CSC performed the following processing on the data to make it available within Digital Coast: 1. The data were converted from State Plane Florida East coordinates to geographic coordinates. 2. The data were converted from NAVD88 heights to ellipsoid heights using Geoid03. 3. The LAS header fields were sorted by latitude and updated.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2007_FDEM_Brevard_m558.xml&view=ISO19115Components-HTMLTable&altview=none",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00238-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 623035546,
+    "recordOffset": 623027344,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:2007_FDEM_Brevard_m558Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "1 2007 Florida Division of Emergency Management (FDEM) Lidar Project: Brevard County 2008-01-01 1 Lidar 2007-01-01 1 Lidar Dataset Supplemental Information 2 None 1 North American Datum 1983 2007-01-19 Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 1 Citation URL ftp://csc.noaa.gov/pub/DigitalCoast/lidar1_z/geoid12a/data/558/supplemental/ 1 NOAA CSC (originator) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

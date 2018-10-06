@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5"
+        ],
+        [
+            "Command or Action",
+            "configure terminal Example: switch# configure terminal switch(config)#",
+            "no feature ssh Example: switch(config)# no feature ssh",
+            "exit Example: switch(config)# exit switch#",
+            "show ssh server Example: switch# show ssh server",
+            "copy running-config startup-config Example: switch# copy running-config startup-config"
+        ],
+        [
+            "Purpose",
+            "Enters global configuration mode.",
+            "Disables SSH.",
+            "Exits global configuration mode.",
+            "(Optional) Displays the SSH server configuration.",
+            "(Optional) Copies the running configuration to the startup configuration."
+        ]
+    ],
+    "pageTitle": "Cisco Nexus 7000 Series NX-OS Security Configuration Guide, Release 6.x - Configuring SSH and Telnet [Cisco Nexus 7000 Series Switches] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/6_x/nx-os/security/configuration/guide/b_Cisco_Nexus_7000_NX-OS_Security_Configuration_Guide__Release_6-x/b_Cisco_Nexus_7000_NX-OS_Security_Configuration_Guide__Release_6-x_chapter_01000.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00098-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 383123407,
+    "recordOffset": 383097056,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{961=By default, the Cisco NX-OS software generates an RSA key using 1024 bits.}",
+    "TableContextTimeStampAfterTable": "{18846=You cannot specify the size of the DSA key. It is always set to 1024 bits., 60438=The bits argument is the number of bits used to generate the key. Beginning with Cisco NX-OS Release 5.1, the range is from 1024 to 2048. In Cisco NX-OS Release 5.0, the range is from 768 to 2048. The default value is 1024., 14814=You can generate an SSH server key based on your security requirements. The default SSH server key is an RSA key that is generated using 1024 bits., 11212=1024, 123723=Changed the minimum RSA key size from 768 to 1024 bits., 18505=The bits argument is the number of bits used to generate the RSA key. Beginning with Cisco NX-OS Release 5.1, the range is from 1024 to 2048. In Cisco NX-OS Release 5.0, the range is from 768 to 2048. The default value is 1024., 10899=RSA key generated with 1024 bits}",
+    "textBeforeTable": "DETAILED STEPS 7.\u00a0\u00a0\u00a0 (Optional) copy running-config startup-config 6.\u00a0\u00a0\u00a0 (Optional) show ssh key 5.\u00a0\u00a0\u00a0 exit 4.\u00a0\u00a0\u00a0 feature ssh 3.\u00a0\u00a0\u00a0 ssh key {dsa [force] | rsa [bits [force]]} 2.\u00a0\u00a0\u00a0 no feature ssh 1.\u00a0\u00a0\u00a0 configure terminal SUMMARY STEPS You can generate an SSH server key based on your security requirements. The default SSH server key is an RSA key that is generated using 1024 bits. Generating SSH Server Keys Clearing SSH Sessions Deleting SSH Server Keys Disabling the SSH Server Clearing SSH Hosts Configuring SCP and SFTP Servers Configuring SSH Passwordless File Copy Starting SSH Sessions from Boot Mode Starting SSH Sessions Configuring a Login Grace Time for SSH Connections Configuring a Maximum Number of SSH Login Attempts Specifying the SSH Public Keys for User Accounts Generating SSH Server Keys This section describes how to configure SSH. Configuring SSH",
+    "textAfterTable": "Step\u00a06 show ssh key Example: switch# show ssh key \u00a0 (Optional) Displays the SSH server keys. \u00a0 Step\u00a07 copy running-config startup-config Example: switch# copy running-config startup-config \u00a0 (Optional) Copies the running configuration to the startup configuration. \u00a0 Specifying the SSH Public Keys for User Accounts You can configure an SSH public key to log in using an SSH client without being prompted for a password. You can specify the SSH public key in one of these formats: OpenSSH format IETF SECSH format Public Key Certificate in PEM format Specifying the SSH Public Keys in IETF SECSH Format Specifying the SSH Public Keys in OpenSSH Format Specifying the SSH Public Keys in IETF SECSH Format You can specify the SSH public keys in IETF SECSH format for user accounts.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

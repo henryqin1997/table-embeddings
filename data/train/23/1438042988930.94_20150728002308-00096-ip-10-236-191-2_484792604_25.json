@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jun 19, 2003",
+            "Aug 5, 2009",
+            "Nov 17, 2009",
+            "Mar 24, 2011",
+            "Jun 4, 2015",
+            "Jun 27, 2015"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "CC",
+            "FPAY",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Certificate of correction",
+            "Fee payment",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: SEVEN NETWORKS, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:BOYNTON, LEE R.;FIATAL, TREVOR A.;BURKE, SCOTT M.;AND OTHERS;REEL/FRAME:014189/0194 Effective date: 20030306",
+            "Owner name: VELOCITY FINANCIAL GROUP, INC.,MASSACHUSETTS Free format text: SECURITY AGREEMENT;ASSIGNOR:SEVEN NETWORKS, INC.;REEL/FRAME:023044/0834 Effective date: 20090720",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Owner name: SEVEN NETWORKS INC., CALIFORNIA Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:VELOCITY FINANCIAL GROUP, INC.;REEL/FRAME:035922/0345 Effective date: 20120228"
+        ]
+    ],
+    "pageTitle": "Patent US7305700 - Secure transport for mobile communication network - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7305700?dq=4393663",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00096-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 484828795,
+    "recordOffset": 484792604,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{107812=In one example, predetermined maximum packet length is configured to be 1000 bytes. If the transaction 160 is determined to be less than 1000 bytes, the contents of the clear, pp, and ee channels are encoded into a single packet. However, in this example, it is determined that 500 bytes of data exist in the pp channel and 4500 bytes of data exist in the ee channel. All the contents of the pp channel are encoded into a 500 byte packet 164. The data from the ee channel is encoded into four separate 1000 byte packets 166-174 and one 500 byte packet 174.}",
+    "textBeforeTable": "Patent Citations Having described and illustrated the principles of the invention in a preferred embodiment thereof, it should be apparent that the invention may be modified in arrangement and detail without departing from such principles. We claim all modifications and variation coming within the spirit and scope of the following claims. For the sake of convenience, the operations are described as various interconnected functional blocks or distinct software modules. This is not necessary, however, and there may be cases where these functional blocks or modules are equivalently aggregated into a single logic device, program or operation with unclear boundaries. In any event, the functional blocks and software modules or features of the flexible interface can be implemented by themselves, or in combination with other operations in either hardware or software. The system described above can use dedicated processor systems, micro controllers, programmable logic devices, or microprocessors that perform some or all of the operations. Some of the operations described above may be implemented in software and other operations may be implemented in hardware. If the information in the header packet 162 is authorized, the processing node decrypts and decodes data in the pp packet 164. If the data in the pp packet 164 is invalid or has been tampered with, the remaining ee packets 166-174 can be discarded without being further processed. The node receiving transaction 160 may receive, decrypt and decode different",
+    "textAfterTable": "Apr 22, 1997 Milkway Networks Corporation Apparatus and method for providing a secure gateway for communication and data exchanges between networks US5627658 Dec 14, 1994 May 6, 1997 Xerox Corporation Automatic networked facsimile queuing system US5630081 Sep 7, 1995 May 13, 1997 Puma Technology, Inc. Connection resource manager displaying link-status information using a traffic light iconic representation US5634053 Aug 29, 1995 May 27, 1997 Hughes Aircraft Company Federated information management (FIM) system and method for providing data site filtering and translation for heterogeneous databases US5647002 Sep 1, 1995 Jul 8, 1997 Lucent Technologies Inc. Synchronization of mailboxes of different types US5652884 Nov 14, 1994 Jul 29, 1997 Object Technology Licensing Corp. Method and apparatus for dynamic update of an existing object in an object editor US5666553 Jul 22, 1994 Sep 9, 1997 Puma Technology, Inc. Method for mapping, translating, and dynamically reconciling data between disparate computer platforms US5680542 Jun 7, 1995 Oct 21, 1997 Motorola,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

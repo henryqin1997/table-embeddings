@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "Fecha",
+            "30 Sep 1999",
+            "17 Abr 2009",
+            "9 Ago 2013",
+            "11 Oct 2013",
+            "11 Oct 2013"
+        ],
+        [
+            "C\ufffddigo",
+            "AS",
+            "FPAY",
+            "REMI",
+            "FPAY",
+            "SULP"
+        ],
+        [
+            "Evento",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Fee payment",
+            "Surcharge for late payment"
+        ],
+        [
+            "Descripci\ufffdn",
+            "Owner name: INTERNATIONAL BUSINESS MACHINES CORPORATION, NEW Y Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:MCCLAIN, MATTHEW DALE;ZUMBRUNNEN, BENJAMIN CHARLES;REEL/FRAME:010289/0463 Effective date: 19990924",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "Year of fee payment: 7"
+        ]
+    ],
+    "pageTitle": "Patente US6981211 - Method for processing a document object model (DOM) tree using a tagbean - Google Patentes",
+    "title": "",
+    "url": "http://www.google.es/patents/US6981211?dq=flatulence",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00236-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 490103287,
+    "recordOffset": 490060442,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6355=FIG. 11 is a flowchart illustrating this clean-up processing. The routine begins at step 1102 during the processing of the DOM tree with a current element being processed replacing itself with a placeholder element. The placeholder element includes attributes indicating its state. At step 1104, a test is performed to determine if a clean-up element already exists for the element being processed. If not, the current element then creates a clean-up element at step 1106. At step 1108, this clean-up element is added to the DOM in a position where it will be processed after all elements related to the current element have been processed. Thus, for example, the clean-up element is added to the DOM as a child node to the root position. If the outcome of the test at step 1104 indicates that such a clean-up element already exists, the current element need not create another clean-up element; rather, the current element need only move the existing clean-up element later in the DOM to ensure it is processed after any other related elements might be processed. This is step 1110. When the processing routine finally encounters the clean-up element, as indicated by a positive outcome of the test at step 1112, this element scans the entire DOM for all the related tags (now placeholders) of interest. This is step 1114. At step 1116, the clean-up element loads the state information from each and, at step 1118, processes them accordingly. When complete, at step 1120, the clean-up element removes itself from the DOM. In this way, the technique shifts processing from each individual element to a single, last-processed element.}",
+    "TableContextTimeStampAfterTable": "{29025=Page serving technologies are evolving at a rapid pace. Since 1997, three new major technologies have attempted to supplement, if not replace, dynamically generated HTML, i.e. database or CGI scripts used to generate a web page on the fly. These technologies are Microsoft's active server page (ASP), Sun Microsystems's Java server page (JSP), and the Extensible Style Sheet Language (XSL/XSLT) being promoted by the World Wide Web Consortium(W3C). They provide for the generation and serving of dynamic web page content by enabling a page creator to write HTML and then to embed pure programming logic inside the page markup. Microsoft's ASP and Sun's JSP are very similar in that they both are essentially web templates that enable given code (e.g., code written in Java) to be embedded in static HTML to be served in response to a client browser request. In an illustrative example, a server (and, in particular, a Java runtime servlet) responds to a client.jsp request as follows: the servlet retrieves a flat file corresponding to the requested page, translates that file into a Java servlet, compiles the servlet, class loads the servlet, and then invokes the servlet to cause given (e.g., customized) web content to be returned to the requesting browser. XSL/XSLT, to the contrary, is rooted in formatting and manipulating XML. XSLT, in particular, provides extensible mechanisms for defining templates to manipulate XML of any custom DTD., 27486=A Hypertext Markup Language (HTML) file uses a limited set of tags to convey basic information about the structure of a web document, e.g., whether given text is a heading or a paragraph. With HTML, the style and logic of the document are hardcoded. HTML does not provide tags that define the meaning of the page element. To address this limitation, web content is now being authored ineXtensible Markup Language (XML), which provides a way for an author to create a custom markup language to suit a particular kind of document. In XML, each document is an object, and each element of the document is an object. The logical structure of the document typically is specified in a Document Type Definition (DTD). A DTD may be used by the author to define a grammar for a set of tags for the document so that a given application may validate the proper use of the tags. A DTD comprises a set of elements and their attributes, as well as a specification of the relationship of each element to other elements. Once an element is defined, it may then be associated with a stylesheet, a script, HTML code or the like. Thus, with XML, an author may define his or her own tags and attributes to identify structural elements of a document, which may then be validated automatically. An XML document's internal data structure representation is a Document Object Model (DOM). The DOM makes it possible to address a given XML page element as a programmable object. It is basically a tree of all the nodes in an XML file.}",
+    "textBeforeTable": "Citas de patentes Further, as used herein, a Web \u201cclient\u201d should be broadly construed to mean any computer or component thereof directly or indirectly connected or connectable in any known or later-developed manner to a computer network, such as the Internet. The term Web \u201cserver\u201d should also be broadly construed to mean a computer, computer platform, an adjunct to a computer or platform, or any component thereof. Of course, a \u201cclient\u201d should be broadly construed to mean one who requests or gets the file, and \u201cserver\u201d is the entity which downloads the file. In addition, although the various methods described are conveniently implemented in a general purpose computer selectively activated or reconfigured by software, one of ordinary skill in the art would also recognize that such methods may be carried out in hardware, in firmware, or in more specialized apparatus constructed to perform the required method steps. As noted above, the inventive mechanism is preferably implemented in or as an adjunct to a web server. Thus, the invention does not require any modifications to conventional client hardware or software. Generalizing, the above-described functionality is implemented in software executable in a processor, namely, as a set of instructions (program code) in a code module resident in the random access memory of the computer. Until required by the computer, the set of instructions may be stored in another computer memory, for example, in a hard disk drive,",
+    "textAfterTable": "Method of markup language accessing of host systems and data using a constructed intermediary US6226675 16 Oct 1998 1 May 2001 Commerce One, Inc. Participant server which process documents for commerce in trading partner networks US6266681 8 Abr 1997 24 Jul 2001 Network Commerce Inc. Method and system for inserting code to conditionally incorporate a user interface component in an HTML document US6308198 30 Nov 1998 23 Oct 2001 Sun Microsystems, Inc. Method and apparatus for dynamically adding functionality to a set of instructions for processing a web document based on information contained in the web document US6330574 30 Mar 1998 11 Dic 2001 Fujitsu Limited Compression/decompression of tags in markup documents by creating a tag code/decode table based on the encoding of tags in a DTD included in the documents US6347307 13 Jun 2000 12 Feb 2002 Integral Development Corp. System and method for conducting web-based financial transactions in capital markets US6370561 5 Abr 1999 9 Abr 2002 Microsoft Corporation Method and system for invoking methods of objects over",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

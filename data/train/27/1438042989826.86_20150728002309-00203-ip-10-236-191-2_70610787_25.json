@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Execution Sequence",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        [
+            "Mapping Name",
+            "SDE_PSFT_Stage_GLHierarchy_AccountHierarchy_Extract",
+            "SDE_PSFT_Stage_GLHierarchy_GetAccountChartField",
+            "SDE_PSFT_GLSegmentDimension_GLAccount",
+            "SDE_PSFT_Stage_GLHierarchy_GetHierarchyLevel",
+            "SDE_PSFT_Stage_GLHierarchy_DeriveRange",
+            "SDE_PSFT_Stage_GLHierarchy_Flatten",
+            "SDE_PSFT_GLHierarchy_Derive"
+        ],
+        [
+            "Needs Customization?",
+            "Y",
+            "Y",
+            "Y",
+            "N",
+            "N",
+            "N",
+            "N"
+        ]
+    ],
+    "pageTitle": "Configuring Oracle Financial Analytics",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E20490_01/bia.7963/e19039/anyimp_configfinance.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989826.86/warc/CC-MAIN-20150728002309-00203-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70658227,
+    "recordOffset": 70610787,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{47706=Set the parameter $$INITIAL_EXTRACT_DATE to the date from which you want to extract data from your PeopleSoft application to the data warehouse. Ensure that this Parameter is the beginning of an accounting period and not just any date in the middle of a period. For example, if you decide to extract data from June 2005, and the June 2005 accounting period starts from 5th June, set the date to 5th June, 2005., 101211=Note: You cannot create aging snapshots for months prior to your initial load ETL. Aging snapshots are created one month at a time, as you go forward with your regular ETL runs. For example, if you start your system in January 2009 (that is, run the initial ETL some time in January 2009), and you set $$HISTORY_MONTHS to 12, you will have one snapshot at the end of January 2009, two at the end of February 2009, three at the end of March 2009 and so on until the end of December 2009 when you will have 12 snapshots., 48144=Setup the parameter $$YEAR to the same as the fiscal year of $$INITIAL_EXTRACT_DATE parameter above. For example, if June 2005 is fiscal year 2005, set this parameter to 2005., 199861=In SDE_PSFT_Stage_GLHierarchy_DepartmentHierarchy_Extract, open the source definition PSFT_TREE_VERTICAL_FLATTENING. Under the 'Properties' tab, change the Tree Name to DEPARTMENT_HIERARCHY, set the SetID to XYZ, and set the Effective date to 01/01/1900 00:00:00. Note that Tree Name, SetID, and Effective Date must be the same as the tree definition in the OLTP system., 48347=Set the parameter $$ACCOUNTING_PERIOD to the accounting period number of the $$INITIAL_EXTART_DATE parameter above. For example, if June 2005 is the 6th period of fiscal year 2005, set this parameter to 6., 154838=For customers of EBS 11i, 11.5.8, 11.5.9, and 11.5.10, the Oracle General Ledger Analytics application extracts only COGS transactions that have been posted to the general ledger, by default. All COGS transactions that have been transferred satisfy the following condition:, 157289=If you customized the mapping SDE_ORA_GLCOGSFact to extract from Oracle EBS versions 11.5.8, 11.5.9, or 11.5.10, modify the domain values file domainValues_Xact_Types_DocTypes_ora11i.csv., 69370=Section 5.2.4.11, \"About the Exchange Date for JD Edwards EnterpriseOne Account Receivables\", 150702=Section 5.3.2.10, \"How to Enable Project Analytics Integration with Financial Subject Areas\", 69216=Section 5.2.4.10, \"Configuring the Exchange Date for JD Edwards EnterpriseOne Accounts Payable\", 85061=This section explains how to configure the file_group_acct_codes_jde.csv. This flat file is used to identify the Group Account Codes for each object account range for each company. For example, for company 00001 you might specify group account codes for accounts 1000 to 2000 as REVENUE., 180717=For the leaf node in the detail tree shown in Figure 5-1, W_HIERARCHY_D will have a record for every existing record within this detail range. The extraction process will find the single record in the relevant table according to the tree's structure. For example, in the CA node (the one with the red square in Figure 5-1), the range is 2334-2434 and 3001-3001. The state table (for example, State_TBL) contains two records: 2340 and 3001. When generating the CA node, the extraction process will extract these two records and put them into W_HIERARCH_D, as shown in Table 5-11., 182789=2340}",
+    "lastModified": "Fri, 21 Dec 2012 18:35:22 GMT",
+    "textBeforeTable": "Table 5-15 General Ledger Chartfield Hierarchy Mappings The mappings that require customization for this example are shown in Table 5-15. This section provides an example of how to customize mappings for a GL Chartfield and Hierarchy extraction. In this example, the extraction involves a tree named DEPARTMENT_HIERARCHY with SetID XYZ on chartfield Department, which uses DEPT_TBL as its structure's Record Name and DEPTID as the Field Name. 5.3.3.3 General Ledger Chartfield and Chartfield Hierarchy Extraction Customization Oracle BI Applications provides two sets of mappings to extract Internal Organization Hierarchy and General Ledger Chartfield Hierarchy related trees. You can customize the extractions by copying the mappings and modifying the parameters. For instructions, see Section 5.3.3.3, \"General Ledger Chartfield and Chartfield Hierarchy Extraction Customization.\" Sample Mappings for Internal Organization Hierarchy and GL Chartfield Hierarchy Save the Execution Plans that you modified. For every Execution Plan that contains the Subject Areas that you modified, rebuild the Execution Plan. Go to the Execute view, and display the Execute view. Click Assemble to reassemble the Subject Areas that you have modified. Save the changes. Deselect the Inactive check box of the hierarchy you want to enable, as follows: - For GL Chartfield, deselect the Inactive check box",
+    "textAfterTable": "The following procedure shows the steps required to perform this extraction. Note that if your chartfields do not have hierarchies/trees defined in your PeopleSoft system, you might still want to extract just the chartfields and ignore the hierarchy extraction. To do this, in the following steps, perform only the tasks that correspond to the mapping SDE_PSFT_GLSegmentDimension_xyz and ignore the tasks that correspond to mappings SDE_PSFT_Stage_GLHierarchy_xyz. To customize mappings for a GL Chartfield and Hierarchy extraction: In Informatica PowerCenter Designer, create new mappings by copying the following existing mappings: SDE_PSFT_Stage_GLHierarchy_AccountHierarchy_Extract SDE_PSFT_Stage_GLHierarchy_GetAccountChartField SDE_PSFT_GLSegmentDimension_GLAccount Name the new mappings as follows: SDE_PSFT_Stage_GLHierarchy_DepartmentHierarchy_Extract SDE_PSFT_Stage_GLHierarchy_GetDepartmentChartField SDE_PSFT_GLSegmentDimension_Department Open the mapping SDE_PSFT_Stage_GLHierarchy_DepartmentHierarchy_Extract and edit the settings as follows: In SDE_PSFT_Stage_GLHierarchy_DepartmentHierarchy_Extract, open the source definition PSFT_TREE_VERTICAL_FLATTENING. Under the 'Properties' tab, change the Tree Name to DEPARTMENT_HIERARCHY, set the SetID to XYZ, and set the Effective date to 01/01/1900 00:00:00. Note that Tree Name, SetID, and Effective Date must be the same as the tree definition in the OLTP system. Open the Exp_TreeName_SetID Expression transformation, and change the values as follows: - Change the value of TREE_NAME to DEPARTMENT_HIERARCHY. - Change the value of SETID to XYZ. - Change the value of CHARTFIELD to Department. (This name is the same as that defined in file_glacct_segment_config_psft.csv.) Open the mapping SDE_PSFT_Stage_GLHierarchy_GetDepartmentChartField and edit the",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

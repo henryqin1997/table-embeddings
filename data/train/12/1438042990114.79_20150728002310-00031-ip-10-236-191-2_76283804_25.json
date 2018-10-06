@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Option/Argument",
+            "pathname",
+            "-e",
+            "-c",
+            "-e",
+            "-d"
+        ],
+        [
+            "Description",
+            "A SPARCstorage Array controller or an individual disk",
+            "Causes the SPARCstorage Array to save the change so it will persist across power-cycles",
+            "Enables fast writes for synchronous writes only",
+            "Enables fast writes",
+            "Disables fast writes"
+        ]
+    ],
+    "pageTitle": "",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19620-01/805-4451/6j47fj4me/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00031-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 76297839,
+    "recordOffset": 76283804,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 31 Dec 2010 10:10:26 GMT",
+    "textBeforeTable": "Table 2-1 Subcommand Support Matrix The following basic luxadm subcommands are supported on the StorEdge A5000 disk array, the SPARCstorage Array, and SPARCstorage RSM trays. See Appendix\u00a0A, Expert Mode Subcommands for information about export mode subcommands and their supported platforms. Subcommand Support Matrix For information on how to specify (address) a disk array, see \"Addressing\". \"Removing, Inserting, and Replacing Enclosures and Disks\" \"Displaying and Setting NVRAM\" \"Performing Enclosure and Disk Operations\" \"Accessing the Enclosure Services Card\" \"Downloading Firmware and fcode \" \"Displaying Enclosure and Disk Information\" \"Checking and Setting Disk LEDs\" \"Subcommand Support Matrix\" This chapter discusses the luxadm subcommands and is divided into the following sections: Chapter 2 luxadm Subcommands Next: Chapter 3 StorEdge A5000 Disk Array Hot-Plugging Procedures Previous: Chapter 1 luxadm Command Basics Platform Notes: Using luxadm Software Platform Notes: Using luxadm Software \u00a0> Chapter 2 luxadm Subcommands Documentation Home \u00a0>",
+    "textAfterTable": "display \u00a0yes \u00a0yes \u00a0 download \u00a0yes \u00a0yes \u00a0 enclosure_name \u00a0yes \u00a0 \u00a0 env_display \u00a0 \u00a0 \u00a0yes fast_write \u00a0 \u00a0yes \u00a0 fc_s_download \u00a0 \u00a0yes \u00a0 fcal_s_download \u00a0yes \u00a0 \u00a0 inquiry \u00a0yes \u00a0yes \u00a0yes insert_device \u00a0yes \u00a0 \u00a0yes led \u00a0yes \u00a0yes \u00a0yes led_blink \u00a0yes \u00a0 \u00a0 led_off",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

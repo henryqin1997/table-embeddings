@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jun 21, 2004",
+            "Dec 9, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: MICROSOFT CORPORATION, WASHINGTON Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:WU, WINNIE C.;DEEM, MICHAEL E.;SHEPPARD, EDWARD G.;AND OTHERS;REEL/FRAME:015475/0273;SIGNING DATES FROM 20030820 TO 20040616 Owner name: MICROSOFT CORPORATION, WASHINGTON Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:WU, WINNIE C.;DEEM, MICHAEL E.;SHEPPARD, EDWARD G.;AND OTHERS;SIGNING DATES FROM 20030820 TO 20040616;REEL/FRAME:015475/0273",
+            "Owner name: MICROSOFT TECHNOLOGY LICENSING, LLC, WASHINGTON Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:MICROSOFT CORPORATION;REEL/FRAME:034541/0477 Effective date: 20141014"
+        ]
+    ],
+    "pageTitle": "Patent US20050044089 - Systems and methods for interfacing application programs with an item-based ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US20050044089?dq=7,134,016",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989826.86/warc/CC-MAIN-20150728002309-00064-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 487318815,
+    "recordOffset": 487166240,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6542=Line 1 creates a new ItemContext object to access the \u201cWork Contacts\u201d on the storage platform share on the local computer. Lines 3 and 4 get a collection of Person objects where the Birthdate property specifies a date more recent then Dec. 31, 1999, as specified by the expression \u201cBirthdate>\u2018Dec. 31, 1999\u2019\u201d. The execution of this FindAll operation is illustrated in FIG. 23.}",
+    "TableContextTimeStampAfterTable": "{574655=According to one aspect of the present invention, at design time, the schema author submits a schema document 2010 and code for domain methods 2012 to the set of storage platform API design time tools 2008. These tools generate the client side data classes 2002 and the store schema 2014 and store class definitions 2016 for that schema. \u201cDomain\u201d refers to a particular schema; for instance, we talk about domain methods for classes in the Contacts schema, etc. These data classes 2002 are used at runtime by the application developer, in concert with the storage platform API runtime framework classes 2006, to manipulate the storage platform data.}",
+    "textBeforeTable": "Patent Citations } } bool EndRead( IAsyncResult result ); object state ); IAsyncResult BeginRead( AsyncCallback callback, { public interface IAsyncObjectReader : IObjectReader // Adds asynchronous methods to IObjectReader } void Close(\u2009); bool Read(\u2009); Type ObjectType {get;} bool HasResults {get;} bool IsClosed {get;} object Current {get;} { public interfac IObjectReader : IEnum rabl , IDisp sable // A common interface for iterating over objects. { namespace System }",
+    "textAfterTable": "Method and system for accessing a remote database using pass-through queries US5742813 * Sep 12, 1995 Apr 21, 1998 Cadis, Inc. Method and apparatus for concurrency in an object oriented database using lock inheritance based on class objects US5758153 * Oct 24, 1995 May 26, 1998 Object Technology Licensing Corp. Object oriented file system in an object oriented operating system US5864683 * Oct 12, 1994 Jan 26, 1999 Secure Computing Corporartion System for providing secure internetwork by connecting type enforcing secure computers to external network for limiting access to data based on user and process access rights US5893106 * Jul 11, 1997 Apr 6, 1999 International Business Machines Corporation Object oriented server process framework with interdependent-object creation US5900870 * Nov 9, 1994 May 4, 1999 Massachusetts Institute Of Technology Object-oriented computer user interface US5905987 * Mar 19, 1997 May 18, 1999 Microsoft Corporation Method, data structure,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

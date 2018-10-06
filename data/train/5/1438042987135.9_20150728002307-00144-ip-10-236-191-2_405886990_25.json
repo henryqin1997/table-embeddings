@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Name",
+            "source",
+            "[query]",
+            "callback"
+        ],
+        [
+            "Type",
+            "Object",
+            "Object",
+            "Function"
+        ],
+        [
+            "Description",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "node-couchdb-api",
+    "title": "",
+    "url": "http://www.dbarnes.info/node-couchdb-api/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00144-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 405903979,
+    "recordOffset": 405886990,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sun, 23 Sep 2012 14:16:15 GMT",
+    "textBeforeTable": "Get information about all the active tasks currently running on the server GET /_active_tasks server.activeTasks (callback) * var server = couchdb.srv(\"http://localhost:5984\"); // only 1 argument, a full URL string pointing to your Couch var couchdb = require(\"couchdb-api\"); A Server object represents a single CouchDB node/server instance. Server API API Reference npm install couchdb-api Installation HTTP COPY support More auth methods (cookie, oauth, etc.) Upcoming Utilizes mikeal's request module User API (_users db, see Server API) Attachments support Changes API (queries and streams) Built-in caching support (via HTTP Etags) Consistent with Node.js conventions Clean, discoverable API Features This is not an ORM for CouchDB, it's simply a JavaScript API to communicate with the CouchDB HTTP API. What is it not? An easy-to-use, powerful wrapper for the CouchDB HTTP API. It follows Node.js callback conventions, and takes care of many of the details of the HTTP request/response cycle, allowing you to focus on getting your job done. What is it? Callbacks Program Structure",
+    "textAfterTable": "Name Type Description callback Function server.auth Getter/setter property for HTTP Basic Auth parameters // get server.auth; // \"user:pass\" // set server.auth = [ \"user\", \"pass\" ]; server.auth = \"user:pass\"; server.db (name) Returns Database object Returns an object representing a database on this server Name Type Description name String server.info (callback) * GET / Get basic information about the server Name Type Description callback Function server.log ([query], callback) * GET /_log Get the text of the server's log file Name Type Description [query] Object callback Function server.login (user, pass, callback) *",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "iname",
+            "ivalue",
+            "multiple",
+            "name",
+            "tabindex",
+            "title",
+            "value",
+            "xml:lang",
+            "class",
+            "id"
+        ],
+        [
+            "Value",
+            "text",
+            "text",
+            "true false",
+            "text",
+            "number",
+            "text",
+            "text",
+            "language_code",
+            "class data",
+            "element ID"
+        ],
+        [
+            "Description",
+            "Names the variable that is set with the index result of the selection",
+            "Sets the pre-selected option element",
+            "Sets whether multiple items can be selected. Default is \"false\"",
+            "Names the variable that is set with the result of the selection",
+            "Sets the tabbing position for the select element",
+            "Sets a title for the list",
+            "Sets the default value of the variable in the \"name\" attribute",
+            "Sets the language used in the element",
+            "Sets a class name for the element.",
+            "A unique ID for the element."
+        ]
+    ],
+    "pageTitle": "WML Quick Guide",
+    "title": "",
+    "url": "http://www.tutorialspoint.com/wml/wml_quick_guide.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988065.26/warc/CC-MAIN-20150728002308-00252-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 801920119,
+    "recordOffset": 801885819,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{102201=The xmlns:wml attribute refers to the WML namespace for example : http://www.wapforum.org/2001/wml., 128706=\u00a9 Copyright 2015. All Rights Reserved.}",
+    "lastModified": "Fri, 31 Jul 2015 08:44:31 GMT",
+    "textBeforeTable": "To make your Apache WAP compatible, you have nothing to do very much. You simply need to add support for the MIME types and extensions listed below. In normal web applications, MIME type is set to text/html, designating normal HTML code. Images, on the other hand, could be specified as image/gif or image/jpeg, for instance. With this content type specification, the web browser knows the data type that the web server returns. Configuring Web Server: WML Script to enhance the functionality of WAP application. Wireless Markup Language(WML) to develop WAP application. You can write your WAP pages using the following languages: A WAP Phone Simulator: This is required to test your WAP Pages and to show all the WAP pages. A WAP Gateway Simulator: This is required to interact to your WAP server. A WAP enabled Web Server: You can enable your Apache or Microsoft IIS to serve all the WAP client request. To develop WAP applications, you will need the following: WML - Environment Don't go overboard with the use of graphics, as many target devices may not support them. Use standard layout tags such as <big> and <b>, and logically structure your information. Minimize menu levels to prevent users from getting lost and the system from slowing down. Keep URLs brief and easy to recall. Keep text brief and meaningful, and as far as possible try to precode options to minimize the rather painful experience of user data entry. Keep the",
+    "textAfterTable": "I am giving this section just for your reference, if you are not interested then you can skip this section. The figure below shows the WAP programming model. Note the similarities with the Internet model. Without the WAP Gateway/Proxy the two models would have been practically identical. WAP Gateway/Proxy is the entity that connects the wireless domain with the Internet. You should make a note that the request that is sent from the wireless client to the WAP Gateway/Proxy uses the Wireless Session Protocol (WSP). In its essence, WSP is a binary version of HTTP. A markup language - the Wireless Markup Language (WML) has been adapted to develop optimized WAP applications. In order to save valuable bandwidth in the wireless network, WML can be encoded into a compact binary format. Encoding WML is one of the tasks performed by the WAP Gateway/Proxy. How WAP Model Works? When it comes to actual use, WAP works like this: The user selects an option on their mobile device that has a URL with Wireless Markup language (WML) content assigned to it. The phone sends the URL request via the phone network to a WAP gateway, using the binary encoded WAP protocol. The gateway translates this WAP request into a conventional HTTP request for the specified URL, and sends it on to the Internet. The appropriate Web server picks up the HTTP request. The server processes the request, just as it would any",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

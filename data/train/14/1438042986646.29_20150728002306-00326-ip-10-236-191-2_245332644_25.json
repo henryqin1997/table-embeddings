@@ -1,0 +1,63 @@
+{
+    "relation": [
+        [
+            "r2530",
+            "9",
+            "10",
+            "",
+            "11",
+            "12",
+            "\u2026",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19"
+        ],
+        [
+            "r3230",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "\u2026",
+            "16",
+            "17",
+            "",
+            "18",
+            "19"
+        ],
+        [
+            "",
+            "",
+            "/* includes */",
+            "#include \"glm.h\"",
+            "#include",
+            "#include",
+            "",
+            "#include",
+            "#include",
+            "#include \"glm.h\"",
+            "",
+            "#include"
+        ]
+    ],
+    "pageTitle": "Changeset 3230 \u2013 osg",
+    "title": "",
+    "url": "http://trac.openscenegraph.org/projects/osg/changeset/3230/",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00326-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 245349863,
+    "recordOffset": 245332644,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{142818=Copyright, 2007 OSG Community. Kindly hosted by AI2, Universidad Politecnica de Valencia, Spain. www.ai2.upv.es}",
+    "textBeforeTable": "OpenSceneGraph/trunk/Make/dependencies Removed Added Unmodified Legend: src/osgUtil/SmoothingVisitor.cpp (modified) (1 diff) src/osgText/Text.cpp (modified) (1 diff) src/osgText/String.cpp (modified) (1 diff) src/osgText/DefaultFont.h (modified) (1 diff) src/osgTerrain/GNUmakefile (modified) (1 diff) src/osgProducer/KeyboardMouseCallback.cpp (modified) (1 diff) src/osgPlugins/txp/trpage_sys.h (modified) (1 diff) src/osgPlugins/obj/glm.cpp (modified) (2 diffs) src/osgPlugins/gdal/GNUmakefile (modified) (1 diff) src/osgPlugins/directx/directx.h (modified) (1 diff)",
+    "textAfterTable": "201 \u00a0 \u00a0 \u00a0 OSG_LIBS\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 = -losgGA -losgDB -losgUtil -losg \u00a0 202 \u00a0 \u00a0 \u00a0 GL_LIBS\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0= -lGLU -lGL \u00a0 203 \u00a0 \u00a0 \u00a0 X_INC\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0= -I/usr/X11R6/include\u00a0 204 \u00a0 \u00a0 \u00a0 X_LIBS\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 = -lXext -lXmu -lXi -lX11 \u00a0 205 \u00a0 \u00a0 \u00a0 SOCKET_LIBS\u00a0 \u00a0 \u00a0 \u00a0= -lsocket -lnsl\u00a0 206 \u00a0 \u00a0 \u00a0 INSTBINCMD\u00a0 \u00a0 \u00a0 \u00a0 = cp\u00a0 207 \u00a0 \u00a0 \u00a0 INSTDEVCMD\u00a0 \u00a0 \u00a0 \u00a0 = cp\u00a0 208 \u00a0 \u00a0 \u00a0 INST_LOCATION\u00a0 \u00a0 \u00a0= /opt/OpenSceneGraph\u00a0 209 \u00a0 \u00a0 \u00a0 MAKEDIST\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 = $(TOPDIR)/Make/makepkg\u00a0 210 \u00a0 \u00a0 \u00a0 OTHER_LIBS\u00a0 \u00a0 \u00a0 \u00a0 = -lOpenThreads\u00a0 \u00a0 200 \u00a0 \u00a0 201 \u00a0 DYNAMICLIBRARYLIB = -ldl\u00a0 \u00a0 202 \u00a0 OSG_LIBS\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 = -losgGA -losgDB -losgUtil -losg \u00a0 \u00a0 203 \u00a0 GL_LIBS\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0= -lGLU -lGL \u00a0 \u00a0 204 \u00a0 X_INC\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0= -I/usr/X11R6/include\u00a0 \u00a0 205 \u00a0 X_LIBS\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 = -lXext -lXmu -lXi -lX11 \u00a0 \u00a0 206 \u00a0 SOCKET_LIBS\u00a0 \u00a0 \u00a0 \u00a0= -lsocket -lnsl\u00a0 \u00a0 207 \u00a0 INSTBINCMD\u00a0 \u00a0 \u00a0 \u00a0 = cp\u00a0 \u00a0",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Dept (searchable)",
+            "Sales",
+            "Sales"
+        ],
+        [
+            "Site (searchable)",
+            "Vancouver",
+            "Vancouver"
+        ],
+        [
+            "Name (not searchable)",
+            "Hosteen",
+            "Lincoln"
+        ]
+    ],
+    "pageTitle": "Chapter 14 Administering NIS+ Tables (Solaris Naming Administration Guide)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19455-01/806-1387/6jam692aj/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00096-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 75520131,
+    "recordOffset": 75503027,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 03 Feb 2011 12:01:38 GMT",
+    "textBeforeTable": "For example, suppose you had a table containing one searchable column named city and a non-searchable column named country. The following rows would all be permitted: A table is keyed on its searchable columns. This means that each row in the table must have a unique combination of values in the searchable columns. For example, if a table has one searchable column, each table row must have a unique value in that column, no two rows can contain the same value. When an NIS+ table is created, one or more columns are designated searchable with either the S or the I flags as described in \"Specifying Table Columns\". You can use the niscat -o tablename command to display a list of a table's columns and their characteristics. nistbladm, Searchable Columns, Keys, and Column Values Some nistbladm operations require that you enter a column=value pair for every column in the table. Note - address=129.146.168.120.,name=regulus,dnsmaster address=129.146.168.120 or But notice in the table above that the machine regulus is multi-homed and has two IP addresses. In that case, the column=value of host=regulus identifies two rows. To identify just the first regulus row, you would enter either: name=altair,address=129.146.168.4. address=129.146.168.4 name=altair In this",
+    "textAfterTable": "But you could not have two rows like: City\u00a0 Country\u00a0 London\u00a0 Canada\u00a0 London\u00a0 England\u00a0 If a table has multiple searchable columns, it is the combination of values that must be unique. For example, suppose you had a table containing two searchable columns, Lastname, Firstname and a non-searchable column named city. The following rows would all be permitted: Lastname\u00a0 Firstname\u00a0 City\u00a0 Kuznetsov\u00a0 Sergei\u00a0 Odessa\u00a0 Kuznetsov\u00a0 Rima\u00a0 Odessa\u00a0 Sergei\u00a0 Alex\u00a0 Odessa\u00a0 But you could not have two rows like this: Lastname\u00a0 Firstname\u00a0 City\u00a0 Kuznetsov\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

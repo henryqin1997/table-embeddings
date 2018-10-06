@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Name",
+            "$group",
+            "$setting"
+        ],
+        [
+            "Type",
+            "string",
+            "string"
+        ],
+        [
+            "Description",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "eZ Components - Documentation - API Reference",
+    "title": "",
+    "url": "http://ezcomponents.org/docs/api/2007.1.1/Configuration/ezcConfiguration.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987127.36/warc/CC-MAIN-20150728002307-00277-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 84892046,
+    "recordOffset": 84883844,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{16551=ez components / documentation / api reference / 2007.1.1 / configuration}",
+    "textBeforeTable": "Parameters Initializes the configuration object with the groups and the comments. The $settings array contains all the setting groups. The $comments array has the same format. See ezcConfiguration::$settings and ezcConfiguration::$comments for an example of the layout. Constructs the configuration object. ezcConfiguration __construct( [array $settings = array()], [array $comments = array()] ) __construct Methods Sets the settings $setting in group $group to $values. setSettings( $group, $settings, $values, [$comments = null] ) public\u00a0void Sets the setting $setting in group $group to $value. setSetting( $group, $setting, $value, [$comment = null] ) public\u00a0void Removes the settings $settings from the group $group. removeSettings( $group, $settings ) public\u00a0void Removes the setting $setting from the group $group. removeSetting( $group, $setting ) public\u00a0void Removes the group $group from the settings. removeGroup( $group ) public\u00a0void Removes all groups, settings, values and comments. removeAllSettings( ) public\u00a0void Returns true if",
+    "textAfterTable": "addGroup void addGroup( string $group, [string $comment = null] ) Adds a the group $group with the comment $comment the settings. Parameters Name Type Description $group string \u00a0 $comment string \u00a0 Throws Class Description ezcConfigurationGroupExistsAlreadyException if the group that you are trying to add already exists. getAllComments array(array) getAllComments( ) Returns all the groups and their settings comments as an array. The returned array looks like: 1. \u00a0array(\u00a0'group1'\u00a0=>\u00a0array(\u00a0'#'\u00a0=>\u00a0'groupcomment', 2. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0'setting1'\u00a0=>\u00a0'comment1', 3. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0'setting2'\u00a0=>\u00a0'comment2'\u00a0), 4. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0'group2'\u00a0=>\u00a0array(\u00a0'setting3'\u00a0=>\u00a0'comment3'\u00a0)\u00a0); getAllSettings array(array) getAllSettings( ) Returns all the groups and their settings and values. The returned array looks like: 1. \u00a0array(\u00a0'group1'\u00a0=>\u00a0array(\u00a0'setting1'\u00a0=>\u00a0'value1', 2. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0'setting2'\u00a0=>\u00a0'value2'\u00a0), 3. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0'group2'\u00a0=>\u00a0array(\u00a0'setting3'\u00a0=>\u00a0'value3'\u00a0)\u00a0); getArraySetting array getArraySetting( string $group, string $setting ) Returns the value of the setting $setting in group $group. Uses the getSetting() method",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

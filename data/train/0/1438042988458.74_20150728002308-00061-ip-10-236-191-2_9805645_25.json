@@ -1,0 +1,59 @@
+{
+    "relation": [
+        [
+            "Module Name",
+            "C:\\\u200bWINDOWS\\\u200bsystem32\\\u200bntdll.dll",
+            "C:\\\u200bWINDOWS\\\u200bsystem32\\\u200bkernel32.dll",
+            "C:\\\u200bWINDOWS\\\u200bsystem32\\\u200bSHLWAPI.dll",
+            "C:\\\u200bWINDOWS\\\u200bsystem32\\\u200bADVAPI32.dll",
+            "C:\\\u200bWINDOWS\\\u200bsystem32\\\u200bRPCRT4.dll",
+            "C:\\\u200bWINDOWS\\\u200bsystem32\\\u200bSecur32.dll",
+            "C:\\\u200bWINDOWS\\\u200bsystem32\\\u200bGDI32.dll",
+            "C:\\\u200bWINDOWS\\\u200bsystem32\\\u200bUSER32.dll",
+            "C:\\\u200bWINDOWS\\\u200bsystem32\\\u200bmsvcrt.dll",
+            "C:\\\u200bWINDOWS\\\u200bsystem32\\\u200bIMM32.DLL"
+        ],
+        [
+            "Base Address",
+            "0x7C900000",
+            "0x7C800000",
+            "0x77F60000",
+            "0x77DD0000",
+            "0x77E70000",
+            "0x77FE0000",
+            "0x77F10000",
+            "0x7E410000",
+            "0x77C10000",
+            "0x76390000"
+        ],
+        [
+            "Size",
+            "0x000B0000",
+            "0x000F5000",
+            "0x00076000",
+            "0x0009B000",
+            "0x00092000",
+            "0x00011000",
+            "0x00047000",
+            "0x00090000",
+            "0x00058000",
+            "0x0001D000"
+        ]
+    ],
+    "pageTitle": "Anubis - Analysis Report",
+    "title": "",
+    "url": "http://anubis.iseclab.org/?action=result&task_id=1d87aea87cb145c04c545c131dfd41338&format=html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00061-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 10087711,
+    "recordOffset": 9805645,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "\u00a0 -\u00a0Information about Anubis' invocation \u00a0 1. General Information \u00a0 c) Other Activities \u00a0 b) File Activities \u00a0 a) Registry Activities \u00a0 General information \u00a0 Started by Isass.exe \u00a0 C:\\WINDOWS\\system32\\lvonjmx.exe \u00a0 lvonjmx.exe \u00a0 a) Process Activities \u00a0 General information \u00a0 Started by Isass.exe \u00a0 C:\\WINDOWS\\system32\\muyjwata.exe \u00a0 muyjwata.exe \u00a0 a) File Activities \u00a0 General information \u00a0 Started by Isass.exe \u00a0 C:\\WINDOWS\\system32\\fxpyz.exe \u00a0 fxpyz.exe \u00a0 d) Network Activities \u00a0 c) Process Activities \u00a0 b) File Activities",
+    "textAfterTable": "\u00a0 -\u00a0 Unknown UDP Traffic: \u00a0 from ANUBIS:1025 to 192.168.0.1:53 State: Normal establishment and termination - Transferred outbound Bytes: 60 - Transferred inbound Bytes: 701 \u00a0 -\u00a0 Unknown TCP Traffic: \u00a0 from ANUBIS:1193 to 128.130.56.165:135 State: Connection established, not terminated - Transferred outbound Bytes: ? - Transferred inbound Bytes: 0 from ANUBIS:1192 to 128.130.56.164:135 State: Connection established, not terminated - Transferred outbound Bytes: ? - Transferred inbound Bytes: 0 from ANUBIS:1191 to 128.130.56.163:135 State: Connection established, not terminated - Transferred outbound Bytes: ? - Transferred inbound Bytes: 0 from ANUBIS:1197 to 128.130.56.169:135 State: Connection established, not terminated - Transferred outbound Bytes: ? - Transferred inbound Bytes: 0 from ANUBIS:1194 to 128.130.56.166:135 State: Connection established, not terminated - Transferred outbound Bytes: ? - Transferred inbound Bytes: 0 from ANUBIS:1196 to 128.130.56.168:135 State: Connection established,",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

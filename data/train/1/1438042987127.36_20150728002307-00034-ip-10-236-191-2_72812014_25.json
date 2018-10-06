@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Input Parameter",
+            "MODE",
+            "TIME_LIMIT",
+            "RECOMMEND_ALL"
+        ],
+        [
+            "Description",
+            "The data to use for analyzing the segment.",
+            "The time limit for which the advisor should run, specified in seconds.",
+            "Whether the advisor should generate a recommendation for all segments."
+        ],
+        [
+            "Possible Values",
+            "LIMITED: Analysis is restricted to statistics available in the Automatic Workload Repository. COMPREHENSIVE: Analysis is based on both sampling and Automatic Workload Repository statistics.",
+            "Any number of seconds",
+            "TRUE: Findings are generated on all segments specified. FALSE: Findings are generated only for those objects that are eligible for shrink segment."
+        ],
+        [
+            "Default Value",
+            "COMPREHENSIVE",
+            "UNLIMITED",
+            "TRUE"
+        ]
+    ],
+    "pageTitle": "13 Managing Space for Schema Objects",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B14117_01/server.101/b10739/schema.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987127.36/warc/CC-MAIN-20150728002307-00034-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72843227,
+    "recordOffset": 72812014,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{3749=May save space, because the total data for a table or index is stored in fewer blocks (more rows or entries for each block), 4412=May require more blocks for the same amount of inserted data (inserting fewer rows for each block), 4547=May improve update performance, because the database does not need to migrate rows as frequently, if ever}",
+    "lastModified": "Tue, 27 Jul 2004 15:33:00 GMT",
+    "textBeforeTable": "Table 13-4 Input for DBMS_ADVISOR.SET_TASK_PARAMETER Use this procedure to describe the segment advice you need. Table 13-4 shows the relevant input parameters of this procedure. Parameters not listed here are not used by the Segment Advisor. SET_TASK_PARAMETER Unused. Specify NULL. index_subpartition_name index_name schema_name INDEX SUBPARTITION Unused. Specify NULL. table_subpartition_name table_name schema_name TABLE SUBPARTITION Unused. Specify NULL. index_partition_name index_name schema_name INDEX PARTITION Unused. Specify NULL. table_partition_name table_name schema_name TABLE PARTITION Unused. Specify NULL. NULL index_name schema_name INDEX Unused. Specify NULL. NULL table_name schema_name TABLE",
+    "textAfterTable": "The example that follows shows how to use the DBMS_ADVISOR procedures to activate the Segment Advisor for the sample table hr.employees. The user executing these procedures must have the EXECUTE object privilege on the package or the ADVISOR system privilege: variable id number; begin declare name varchar2(100); descr varchar2(500); obj_id number; begin name:=''; descr:='Segment Advisor Example'; dbms_advisor.create_task('Segment Advisor', :id, name, descr, NULL); dbms_advisor.create_object (name, 'TABLE', 'HR', 'EMPLOYEES', NULL, NULL, obj_id); dbms_advisor.set_task_parameter(name, 'RECOMMEND_ALL', 'TRUE'); dbms_advisor.execute_task(name); end; end; / The Segment Advisor creates several types of results: Findings If you have specified TRUE for RECOMMEND_ALL in the SET_TASK_PARAMETER procedure, then the advisor generates a finding for each segment that qualifies for analysis. You can retrieve the findings by querying the DBA_ADVISOR_FINDINGS data dictionary view. Recommendations If segment shrink would result in benefit, then the advisor generates a recommendation for the segment. You can retrieve the recommendations by querying the DBA_ADVISOR_RECOMMENDATIONS dictionary view. Actions Every advisory recommendation is associated with a suggested action to perform segment shrink. You can retrieve the action by querying the DBA_ADVISOR_ACTIONS data dictionary review. This view provides the SQL you need to perform segment shrink. Objects All findings, recommendations, and actions are associated with an object. If the input to the advisor results in analysis of more than one segment, as with a tablespace",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "year",
+            "month"
+        ],
+        [
+            "Description",
+            "Year component. Valid values are -10^9 through 10^9.",
+            "Month component. Valid values are -11 through 11."
+        ]
+    ],
+    "pageTitle": "IntervalYM Class",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/appdev.112/e10764/reference016.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00121-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70933041,
+    "recordOffset": 70924839,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 14 Aug 2010 15:00:04 GMT",
+    "textBeforeTable": "int month); int year, void set( Syntax  This method sets the interval to the values specified. set()     A day second interval. val     Description Parameter         const IntervalYM &val); IntervalYM& operator+=( Syntax  This method assigns the sum of IntervalYM and val to IntervalYM. operator+=()           The second interval to be compared. second   The first interval to be compared. first     Description Parameter         const IntervalYM &second); const IntervalYM",
+    "textAfterTable": "setNull() This method sets the interval to NULL. Syntax void setNull(); toText() This method returns the string representation of the interval. Syntax string toText( unsigned int lfprec, const string &nlsParam = \"\") const; Parameter Description lfprec Leading field precision. nlsParam The NLS parameters string. If nlsParam is specified, this determines the NLS parameters to be used for the conversion. If nlsParam is not specified, the NLS parameters are picked up from envp. toUText() Converts to a UString representation for the interval. Syntax UString toUText( unsigned int lfprec) cosnt;",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

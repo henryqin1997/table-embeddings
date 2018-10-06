@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Option",
+            "-m mount_point",
+            "-p file"
+        ],
+        [
+            "Description",
+            "Specifies the directory where the file system is mounted.",
+            "Specifies a file name to store the security metadata. The file is saved in the /mount_point/.Security/backup/ directory."
+        ]
+    ],
+    "pageTitle": "Oracle ACFS Command-Line Tools for Security",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/server.112/e16102/asmfs_util008.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00114-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 75750011,
+    "recordOffset": 75729938,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 19 May 2015 18:08:28 GMT",
+    "textBeforeTable": "Table 13-65 Options for the acfsutil sec save command Table 13-65 contains the options available with the acfsutil sec save command. acfsutil sec save -h displays help text and exits. file -p mount_point -m save sec acfsutil -h save sec acfsutil Syntax and Description Saves Oracle ACFS file system security metadata. Purpose acfsutil sec save -a my_new_rule -o ANY_TRUE my_security_ruleset -m /u01/app/acfsmounts/myacfs $ /sbin/acfsutil sec ruleset edit  Example 13-57 Using the acfsutil sec ruleset edit command  The following example shows the use of the acfsutil sec ruleset edit command. Examples Only a security administrator can run this command. The acfsutil sec ruleset edit command updates a rule set in the Oracle ACFS file system specified by the mount point.        Specifies options preceded by -o. The option specified can be ALL_TRUE or ANY_TRUE.   -o option     Specifies the rule to remove.   -d rule     Specifies the rule to add.   -a rule",
+    "textAfterTable": "The acfsutil sec save command saves the security metadata for an Oracle ACFS file system to an XML file. By default, the file is saved in the /mount_point/.Security/backup directory. This file can be backed up as a regular file by a backup application. System realms protect this file and allow only members of these realms to access this file and prevent all other users including the root user and system administrator from access. For information about the system-created security realms, refer to \"acfsutil sec prepare\". Only a security administrator can run this command. Examples The following example shows the use of the acfsutil sec save command. Example 13-58 Using the acfsutil sec save command  $ /sbin/acfsutil sec save -m /u01/app/acfsmounts/myacfs -p my_metadata_file.xml",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

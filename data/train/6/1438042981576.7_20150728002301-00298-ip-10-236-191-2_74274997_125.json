@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "Parameters",
+            "-FILE=",
+            "-TOFILE=",
+            "-OVERWRITE=",
+            "-CASESENS=",
+            "-HEADER=",
+            "-KEEP_FIRST_HEADER="
+        ],
+        [
+            "Mandatory",
+            "Yes",
+            "Yes",
+            "No",
+            "No",
+            "No",
+            "No"
+        ],
+        [
+            "Description",
+            "Full path of the files to concatenate. Use * to specify generic characters. Examples: /var/tmp/*.log (All files with the \"log\" extension in the folder /var/tmp) arch_*.lst (All files starting with arch_ and with \"lst\" extension)",
+            "Target file.",
+            "Indicates if the target file must be overwritten if it does exist. By default, the value is set to No.",
+            "Indicates if Oracle Data Integrator should be case sensitive when looking for the files. By default, files are searched in uppercase.",
+            "Number of header lines to be removed from the source files before concatenation. By default, no line is removed. When the HEADER parameter is omitted, the concatenation does not require file edition, and therefore runs faster.",
+            "Used to keep the header lines of the first file during the concatenation."
+        ]
+    ],
+    "pageTitle": "Organizing and Documenting your Work",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E25054_01/integrate.1111/E12643-04.epub",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00298-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74474495,
+    "recordOffset": 74274997,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{395559=10.21.34.11:1521:NY, 113869=Section 20.11.11, \"Accessing the Web Service from a Command Line\", 389506=You may face some situations where the names of your source or target datastores are dynamic. A typical example of this is when you need to load flat files into your Data Warehouse with a file name composed of a prefix and a dynamic suffix such as the current date. For example the order file for March 26 would be named ORD2009.03.26.dat., 154094=WS-Addressing SOAP Binding : http://www.w3.org/TR/2006/REC-ws-addr-soap-20060509/, 394591=10.21.32.198:1521:ORA1, 115455=The web services operations accept password in a plain text in the SOAP request. Consequently, it is strongly recommended to use secured protocols (HTTPS) to invoke web services over a non-secured network. You can alternately use external authentication. See Section 20.11.12, \"Using the Run-Time Web Services with External Authentication\" for more information., 114128=Section 20.11.13, \"Using WS-Addressing\", 876143=Purges all the sessions that were executed between 2001/03/25 00:00:00 and 2001/08/31 21:59:00., 790318=To delete all files under the C:\\temp directory whose modification time is between 10/01/2008 00:00:00 and 10/31/2008 22:59:00 where 10/01/2008 and 10/31/2008 are not inclusive:, 113991=Section 20.11.12, \"Using the Run-Time Web Services with External Authentication\", 791134=To delete all files under the C:\\temp directory whose modification time is later than 10/01/2008 08:00:00:, 114224=Section 20.11.14, \"Using Asynchronous Web Services with Callback\", 828333=OdiGenerateAllScen -PROJECT=1003 generates all scenarios in the project whose id is 1003 for the current repository., 395078=10.21.34.119:1525:SANF, 577230=JMX agent port number. The agent listens on this port for JMX request to provide its metrics. Default value is the listening port + 1000. For example, if <port>=20910 then <jmx_port>=21910., 113755=Section 20.11.10, \"Listing Scenarios Using a Web Service\", 854956=Windows NT, 2000, XP, using \"cmd\", 154279=WS-Addressing WSDL Binding : http://www.w3.org/TR/2006/WD-ws-addr-wsdl-20060216/, 790751=To delete all files under the C:\\temp directory whose modification time is earlier than the 10/31/2008 17:00:00. An error is thrown, if the directory contains no files to delete meeting the date criteria:, 614128=Sum of all amounts or items sold during October 2005 multiplied by the item price}",
+    "lastModified": "Thu, 20 Sep 2012 17:58:46 GMT",
+    "textBeforeTable": "Parameters [-CASESENS=<yes|no>] [-HEADER=<n>] [-KEEP_FIRST_HEADER=<yes|no] OdiFileAppend -FILE=<file> -TOFILE=<target_file> [-OVERWRITE=<yes|no>]  Usage  Use this command to concatenate a set of files into a single file. A.5.12 OdiFileAppend      OdiExportWork \"-TODIR=/temp/\" \"-ZIPFILE_NAME=workexport.zip\"  Export and zip the work repository into the /temp/workexport.zip export file. Examples   Result file java character encoding. Default value is ISO8859_1. Supported encodings are available at the following URL: http://java.sun.com/j2se/1.4.2/docs/guide/intl/encoding.doc.html No -JAVA_CHARSET=<charset> XML Version specified in the export file. Parameter xml version in the XML file header. <?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>. Default value is ISO-8859-1. Supported encodings are available at the following URL: http://java.sun.com/j2se/1.4.2/docs/guide/intl/encoding.doc.html No -XML_CHARSET=<charset> Name of the compressed file. No -ZIPFILE_NAME=<zipFileName> Target directory for the export. Yes -TODIR=<directory> Description Mandatory Parameters",
+    "textAfterTable": "Examples Concatenation of the files *.log of the folder: /var/tmp into the file\u0000\u0000\ufffd\ufffd\u007f /home/all_files.log  OdiFileAppend -FILE=/var/tmp/*.log -TOFILE=/home/all_files.log Concatenation of the files of the daily sales of each shop while keeping the header of the first file  OdiFileAppend -FILE=/data/store/sales_*.dat -TOFILE=/data/all_stores.dat -OVERWRITE=yes -HEADER=1 -KEEP_FIRST_HEADER=yes A.5.13 OdiFileCopy Use this command to copy files or folder. Usage  OdiFileCopy -DIR=<directory> -TODIR=<target_directory> [-OVERWRITE=<yes|no>] [-RECURSE=<yes|no>] [-CASESENS=<yes|no>] OdiFileCopy -FILE=<file> -TOFILE=<target_file>|-TODIR=<target_directory> [-OVERWRITE=<yes|no>] [-RECURSE=<yes|no>] [-CASESENS=<yes|no>] Parameters Parameters Mandatory Description -DIR=<directory> Yes if -FILE is omitted Directory (or folder) to copy -FILE=<file> Yes if -DIR is omitted The full path of the files to copy. Use * to specify the generic character. Examples: /var/tmp/*.log (All files with the \"log\" extension in folder /var/tmp) arch_*.lst (All files starting with arch_ and having the \"lst\" extension)",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

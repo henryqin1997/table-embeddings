@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Properties",
+            "Property in the location-alias configGroup:",
+            "alias_name"
+        ],
+        [
+            "Description",
+            "Action Framework configuration.",
+            "The URL corresponding to the action name Note that there may be more than one name/value pair"
+        ],
+        [
+            "Sample Value",
+            "",
+            "http://adc10001.us.oracle.com:9704/analytics"
+        ]
+    ],
+    "pageTitle": "Moving Components for Oracle Fusion Applications Across Environments - 11g Release 1 (11.1.3)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E25178_01/fusionapps.1111/e14496/test_to_prod.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00248-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73408691,
+    "recordOffset": 73333605,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{125722=Before you move the Webgate installation on Windows, if the target machine is running Windows 64 make sure that the Microsoft Visual Studio C++ 2005 runtime libraries (MSVCR80.dll and MSVCP80.dll) are installed. You can copy the libraries from SYSVOL\\windows\\SysWOW64 on the source machine to the same directory on the target machine., 184997=Section 17.6.6.10, 312416=/net/adc12345/dir123, 86535=The Java version should be at least 1.6.04., 312865=jdbc:wolf:thin:@xyz2120830.us.example.com:1521/ntlywcdb, 186546=Section 17.6.6.11, \"Editing Oracle WebCenter Content: Imaging Properties\", 297222=http://example.com:12345/search/query/OracleSearch, 314478=http://abcdef05.us.example.com:10615/crmSearch/searchfeedservlet/SecurityService?engineInstId=100010032752886, 310171=http://abcdef05.us.example.com:10615/crmSearch/searchfeedservlet/oracle.apps.contracts.dashBoard.textSearch.publicModel.view.ContractHeaderSearchVO/ConfigFeed?engineInstId=100010032752886, 206612=adbc1234, 151519=The following example shows how to create a copy of the source Node Manager configuration located in /net/abcdef03/scratch/work/mw2903/wlserver_10.3/common/nodemanager/abcdef04.us.example.com (with a folder corresponding to each Node Manager) into an archive file:, 296809=http://example.com:12345/search/api/admin/AdminService, 98493=The host must have JDK 1.6.04 or higher installed. In addition, ensure that the PATH, CLASSPATH, and JAVA_HOME environment variables point to the JDK., 293943=12311, 207828=1521}",
+    "lastModified": "Thu, 20 Sep 2012 17:33:28 GMT",
+    "textBeforeTable": "Table 17-20 Oracle BI Action Framework Table 17-20 describes the move plan properties that you can change for Oracle BI Action Framework 10218  The SSL port (if configured for SSL) where the Financial Reporting web application is running   SSL_Port    10217  The port where the Financial Reporting web application is running   port    example.com  The host name of the server hosting the Financial Reporting web application.   host       The Financial Reporting Web application configuration.   Properties in the PFINANCIAL_REPORTING_WEB_APP configProperty:    10218  The SSL port (if configured for SSL) where the Oracle Essbase APS web application is running   SSL_Port    10217  The port where the Oracle Essbase APS web application is running",
+    "textAfterTable": "17.6.6.5 Editing Oracle Data Integrator Properties You must modify the move plan to specify the Oracle Data Integrator properties for the target environment before you apply the copied configurations from the source environment to the target environment. Table 17-21 describes the Oracle Data Integrator properties. Edit the values of each property. Table 17-21 Oracle Data Integrator Properties Configuration Group Property Description Sample Value Master Repository Master Repository Id ODI Master Repository ID. It should be different than source repository ID 502 \u00a0 SUPERVISOR password file Password for the SUPERVISOR user in ODI repository when target ODI repository was created. /scratch/tank/src_bin/passwd_for_SUPERVISOR.txt Physical Data Servers Schema name",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

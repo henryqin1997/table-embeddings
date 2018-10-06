@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Filter Parameter",
+            "Resource Group Names",
+            "Agent Names",
+            "Skill Names"
+        ],
+        [
+            "Result",
+            "Displays information for agents that belong to the specified resource group or groups.",
+            "Displays information for the specified agents.",
+            "Displays information for agents that possess the specified skills."
+        ]
+    ],
+    "pageTitle": "Cisco Customer Response Applications Historical Reports User Guide (3.0) - Descriptions of Historical Reports\u00a0 [Cisco Unified Contact Center Express] - Cisco Systems",
+    "title": "",
+    "url": "http://www.cisco.com/en/US/products/sw/custcosw/ps1846/products_user_guide_chapter09186a0080146c43.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988065.26/warc/CC-MAIN-20150728002308-00127-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 368579033,
+    "recordOffset": 368563106,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Abandoned Call Detail Activity Report The Abandoned Call Detail Activity Report contains information about calls that are abandoned. For ICD calls, a call is abandoned if it is not answered by an agent and the caller hangs up or is disconnected. For IVR calls, a call is abandoned if it does not get past the workflow step that sets the handled flag. If a call has more than one leg that is abandoned (for example, an IVR call that is processed by different applications), each abandoned leg is displayed in this report. The Abandoned Call Detail Activity Report can include this chart: Note\u00a0\u00a0\u00a0When a report shows date and time information for an event or an activity, that date and time is the Cisco CRA server date and time. A table describing each filter parameter, if any, that is available for the report. You can use a filter parameter to limit information that appears in a report. For more information about filtering a report, see the \"Detailed Report Settings\" section. A table describing each sort criterion that is available for the report. For more information about sorting a report, see the \"Detailed Report Settings\" section. A table describing each field in the tabular section of the report. A table describing the information that is displayed in each chart",
+    "textAfterTable": "Field Description Call Start Time Date and time that this call leg started. Called Number Telephone number that the caller dialed. Call ANI1 Telephone number of the originator of the call. If originated by an agent, the ICD extension of the agent. If originated by a caller other than an agent, the telephone number of the caller. Initial Call Priority Priority that the Cisco ICD workflow assigned to the call when the call was received, from 1 (lowest) to 10 (highest). All calls start with a default priority of 1, unless a different priority is set in the workflow. Call Routed CSQ2 Names of up to the first three contact service queues to which the call was queued. Multiple contact service queue names are separated by commas. Agent Name Name of the agent, if any, who was presented with the call before the call was abandoned. Call Skills Call skills associated with the contact service queue to which the call was routed. Multiple skills are separated by commas. Final Call",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

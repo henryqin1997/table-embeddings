@@ -1,0 +1,108 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "470.10000",
+            "470.75000",
+            "154.43000",
+            "482.66250",
+            "482.83750",
+            "453.25000",
+            "453.25000",
+            "482.73750"
+        ],
+        [
+            "License",
+            "WPYD799",
+            "WPYD799",
+            "KCA585",
+            "WBT736",
+            "WBT736",
+            "WPRM381",
+            "WPRM381",
+            ""
+        ],
+        [
+            "Type",
+            "RM",
+            "RM",
+            "RM",
+            "RM",
+            "RM",
+            "BM",
+            "RM",
+            ""
+        ],
+        [
+            "Tone",
+            "210.7 PL",
+            "210.7 PL",
+            "173.8 PL",
+            "203.5 PL",
+            "67.0 PL",
+            "67.0 PL",
+            "123.0 PL",
+            "053 DPL"
+        ],
+        [
+            "Alpha Tag",
+            "Plymouth FD1",
+            "Plymouth FD2",
+            "Plym FD VHF",
+            "Plymouth PD",
+            "Plymouth PD2",
+            "Plymouth DPW",
+            "Plymth-DPWVL",
+            "Plymouth EMA"
+        ],
+        [
+            "Description",
+            "Fire Dispatch",
+            "Fire Secondary",
+            "Fire VHF",
+            "Police Dispatch",
+            "Police Secondary",
+            "Department of Public Works - Operations",
+            "Department of Public Works - Vehicle Location Data",
+            "Plymouth Emergency Management Agency"
+        ],
+        [
+            "Mode",
+            "FMN",
+            "FMN",
+            "FMN",
+            "FM",
+            "FM",
+            "FMN",
+            "FMN",
+            "FM"
+        ],
+        [
+            "Tag",
+            "Fire Dispatch",
+            "Fire-Tac",
+            "Fire Dispatch",
+            "Law Dispatch",
+            "Law Tac",
+            "Public Works",
+            "Public Works",
+            "Emergency Ops"
+        ]
+    ],
+    "pageTitle": "Plymouth County, Massachusetts (MA) Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?ctid=1224",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00186-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 671647813,
+    "recordOffset": 671632165,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Abington Municipalities //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { }); }); } act=1; setEsc(this,origHtml); this.innerHTML = getTagsHTML; getTagsHTML += '\\n'; } getTagsHTML += '' + tagNames[i] + '\\n'; for (var i=0; i",
+    "textAfterTable": "483.93750\u00a0 \u00a0 118.8 PL B'WaterUniSf University Safety Escort Vans\u00a0 FM\u00a0 Security\u00a0 Brockton Frequency\u00a0 License\u00a0 Type\u00a0 Tone\u00a0 Alpha Tag\u00a0 Description\u00a0 Mode\u00a0 Tag\u00a0 154.31000\u00a0 KNBH632\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 4,
+    "headerRowIndex": 0
+}

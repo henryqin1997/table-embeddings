@@ -1,0 +1,88 @@
+{
+    "relation": [
+        [
+            "Name",
+            "concurrent-native-callbacks",
+            "gochan",
+            "hardwood",
+            "high-load-scheduler",
+            "mailbox",
+            "mailbox-threads",
+            "remote-mailbox-threads",
+            "synch"
+        ],
+        [
+            "Description",
+            "Invoke callbacks from other native threads",
+            "unknown",
+            "An actor model library, inspired by Erlang",
+            "enhanced scheduler",
+            "Thread-safe queues with timeout",
+            "An enhancement for srfi-18 that connects a mailbox to each thread.",
+            "Enable mailbox-threads to be used across processes.",
+            "Synchronization Forms"
+        ],
+        [
+            "License",
+            "BSD",
+            "BSD",
+            "BSD",
+            "unknown",
+            "BSD",
+            "BSD",
+            "BSD",
+            "BSD"
+        ],
+        [
+            "Author",
+            "bevuta IT GmbH (Felix Winkelmann)",
+            "Adellica AS",
+            "Adrien Ramos",
+            "Joerg Wittenberger",
+            "felix winkelman and kon lovett",
+            "Christian Kellermann",
+            "Moritz Heidkamp",
+            "[[/users/kon-lovett|Kon Lovett]]"
+        ],
+        [
+            "Maintainer",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Version",
+            "0.8",
+            "0.2",
+            "0.4",
+            "0.1",
+            "2.1.5",
+            "1.4",
+            "0.0.3",
+            "2.1.2"
+        ]
+    ],
+    "pageTitle": "Eggs Unlimited (release branch 4)",
+    "title": "",
+    "url": "http://wiki.call-cc.org/chicken-projects/egg-index-4.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986148.56/warc/CC-MAIN-20150728002306-00006-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 264981255,
+    "recordOffset": 264947190,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{542=Last updated: Wed Jul 29 08:15:01 2015}",
+    "lastModified": "Wed, 29 Jul 2015 06:15:02 GMT",
+    "textBeforeTable": "Language extensions Unsupported or redundant Uncategorized or invalid category Concurrency and parallelism Miscellaneous Macros and meta-syntax Code generation User interface toolkits Cryptography Unit-testing Sound Tools Data formats and parsing Algorithms and data-structures Object-oriented programming Mathematical libraries Egg tools Documentation tools XML processing Web programming Interfacing to other languages OS interface Databases Input/Output Networking Logic programming Debugging tools Graphics Language extensions Categories List of available eggs  chicken-install -help For more information, enter  chicken-install -retrieve EXTENSIONNAME If you only want to download the extension source code, pass the -retrieve option to chicken-install:  csi -p \"(repository-path)\" You can obtain the repository location by running This will download anything needed to compile and install the library. If your extension repository is placed at a location for which you don't have write permissions, then run chicken-install with the -sudo option or run it as root (not recommended).  chicken-install EXTENSIONNAME Just enter Installation A library of extensions for the CHICKEN Scheme system. Last updated: Wed Jul 29 08:15:01 2015 Eggs Unlimited (release branch 4)   Bugs Tests API Eggs Manual Download Wiki",
+    "textAfterTable": "continuations Continuations as a separate datatype BSD Juergen Lorenz 1.2.4 datatype A facility for creating and deconstructing variant records (from EOPL) BSD felix winkelmann 1.4 datatypes Creating concrete and abstract types as in ML BSD Juergen Lorenz 1.2 date-literals A reader extension providing SRFI-19 date/time literals of the form <code>#@2007-12-31T23:59:59Z</code> MIT Arto Bendiken 1.1.1 dbc Design by contract BSD Juergen Lorenz 1.0.3 define-record-and-printer Trivial macro to define records and appropriate printers BSD Peter Danenberg 0.1.4 define-structure QobiScheme-compatible define-structure LGPL Andrei Barbu Andrei Barbu 2.2 environments User defined evaluation environments BSD felix 1.53 fast-generic fast-generic functions BSD felix winkelmann 0.4 fast-loop Fast extensible looping macros BSD Alex Shinn 0.4 feature-test Foreign feature testing BSD Jim Ursetto 0.1 fluids fluid variables - an alternative to SRFI-39 BSD Joo ChurlSoo 1.1 foof-loop Extensible looping macros (originally based on Alex Shinn's) Public Domain Taylor R Campbell; test suite by Peter Danenberg 8.1 foreigners Foreign helper macros for Chicken 4 BSD Jim Ursetto 1.4.1 interfaces Simple interface/implementation abstraction public domain felix winkelmann 0.3 jni JNI Bindings for Chicken Scheme BSD License bevuta IT GmbH (Patrick Brauer) 0.5 list-of Simple",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Item ID",
+            "2000001",
+            "2000002",
+            "2000003",
+            "2000004",
+            "2000005"
+        ],
+        [
+            "Item Name",
+            "Item_2000001",
+            "Item_2000002",
+            "Item_2000003",
+            "Item_2000004",
+            "Item_2000005"
+        ],
+        [
+            "Target Variable",
+            "TOTAL_SHRINK_COUNT_DECILE",
+            "TOTAL_SHRINK_COUNT_DECILE",
+            "TOTAL_SHRINK_COUNT_DECILE",
+            "TOTAL_SHRINK_COUNT_DECILE",
+            "TOTAL_SHRINK_COUNT_DECILE"
+        ],
+        [
+            "DT Prediction",
+            "7",
+            "4",
+            "8",
+            "3",
+            "10"
+        ],
+        [
+            "DT Probability",
+            "0.65",
+            "0.87",
+            "0.94",
+            "0.82",
+            "0.96"
+        ]
+    ],
+    "pageTitle": "Data Mining Models in Oracle Retail Data Model",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/doc.112/e20361/data_mining_rdm.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.88/warc/CC-MAIN-20150728002308-00027-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74113999,
+    "recordOffset": 74074724,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{258241=and EDUCATION 12th and INCOME LEVEL IS BETWEEN 1000 AND 2000, 70362=1150, 283768=1500, 96017=Helena Lamar, 69491=1100, 289646=1400, 69054=1250, 70798=1000}",
+    "lastModified": "Fri, 03 Jul 2015 16:44:45 GMT",
+    "textBeforeTable": "Table 10-26 Item POS Loss Analysis Item KPIs Prediction using DT Sample 1 Table 10-26 shows sample Item POS Loss Analysis Item KPIs Prediction using DT. Item POS Loss Analysis Item KPIs Prediction using DT 5 0.76 Y ALLOW_FOOD_STAMP_IND 4 0.87 N COUPON_RESTRICTED_IND 3 0.93 201 HAZARDOUS_MATERIAL_TYPE_CODE 2 1.26 N STORE_ORDER_ALLOWED_IND 1 1.63 EXTRA LIGHTING ENVIRONMENT_TYPE_CODE Rank Coefficient Attribute Value Attribute Name Table 10-25 Item POS Loss Analysis Attribute Ranking with SVM Factor",
+    "textAfterTable": "Table 10-27 shows sample Item POS Loss Analysis Item KPIs Prediction using DT. Table 10-27 Item POS Loss Analysis Item KPIs Prediction using DT Sample 2 Item ID Item Name Target Variable DT Prediction DT Probability 2000001 Item_2000001 TOTAL_THEFT_AMOUNT_QUINTILE 5 0.65 2000002 Item_2000002 TOTAL_THEFT_AMOUNT_QUINTILE 3 0.87 2000003 Item_2000003 TOTAL_THEFT_AMOUNT_QUINTILE 1 0.94 2000004 Item_2000004 TOTAL_THEFT_AMOUNT_QUINTILE 3 0.82 2000005 Item_2000005 TOTAL_THEFT_AMOUNT_QUINTILE 4",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

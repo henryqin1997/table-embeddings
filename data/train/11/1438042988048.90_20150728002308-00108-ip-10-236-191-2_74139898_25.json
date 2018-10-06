@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Column Name",
+            "Case ID column name",
+            "CLUSTER_ID",
+            "PROBABILITY"
+        ],
+        [
+            "Data Type",
+            "VARCHAR2 or NUMBER",
+            "NUMBER",
+            "NUMBER"
+        ]
+    ],
+    "pageTitle": "DBMS_DATA_MINING",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/appdev.112/e23448/d_datmin.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00108-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74209231,
+    "recordOffset": 74139898,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 19 May 2015 17:54:46 GMT",
+    "textBeforeTable": "Table 44-26 APPLY Results Table for Clustering Clustering is an unsupervised mining function, and hence there are no targets. The results of an APPLY operation will contain simply the cluster identifier corresponding to a case, and the associated probability. The results table has the columns described in Table 44-26. Clustering using k-Means or O-Cluster NUMBER PREDICTION VARCHAR2 or NUMBER Case ID column name Data Type Column Name Table 44-25 APPLY Results Table for Regression The results table for regression has the columns described in Table 44-25. Regression using SVM or GLM Values in the PREDICTION column can be either 0 or 1. When the prediction is 1, the case is a typical example. When the prediction is 0, the case is an outlier. NUMBER PROBABILITY",
+    "textAfterTable": "Feature Extraction using NMF Feature extraction is also an unsupervised mining function, and hence there are no targets. The results of an APPLY operation will contain simply the feature identifier corresponding to a case, and the associated match quality. The results table has the columns described in Table 44-27. Table 44-27 APPLY Results Table for Feature Extraction Column Name Data Type Case ID column name VARCHAR2 or NUMBER FEATURE_ID NUMBER MATCH_QUALITY NUMBER Examples This example applies the GLM regression model GLMR_SH_REGR_SAMPLE to the data in the MINING_DATA_APPLY_V view. The apply results are output to the table REGRESSION_APPLY_RESULT.  SQL> BEGIN DBMS_DATA_MINING.APPLY ( model_name => 'glmr_sh_regr_sample', data_table_name => 'mining_data_apply_v', case_id_column_name => 'cust_id', result_table_name => 'regression_apply_result'); END; / SQL> SELECT * FROM regression_apply_result WHERE cust_id > 101485; CUST_ID PREDICTION ---------- ---------- 101486 22.8048824 101487 25.0261101 101488 48.6146619 101489 51.82595 101490 22.6220714 101491 61.3856816 101492 24.1400748",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

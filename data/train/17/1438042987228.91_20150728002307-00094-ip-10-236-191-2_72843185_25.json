@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "Procedure/Function",
+            "dropPreferences()",
+            "createPreferences()",
+            "createDatastorePref()",
+            "createFilterPref()",
+            "createLexerPref()",
+            "createWordlistPref()",
+            "createStoplistPref()",
+            "createStoragePref()",
+            "createSectiongroupPref()",
+            "createIndex()",
+            "configureAutoSync()"
+        ],
+        [
+            "Description",
+            "Drops any existing preferences.",
+            "Creates preferences required for the ConText index on the XML DB hierarchy.",
+            "Creates a USER datastore preference for the ConText index.",
+            "Creates a filter preference for the ConText index.",
+            "Creates a lexer preference for the ConText index.",
+            "Creates a stoplist for the ConText index.",
+            "Creates a section group for the ConText index.",
+            "Creates a wordlist preference for the ConText index.",
+            "Creates a storage preference for the ConText index.",
+            "Creates the ConText index on the XML DB hierarchy.",
+            "Configures the ConText index for automatic maintenance (SYNC)."
+        ]
+    ],
+    "pageTitle": "F SQL and PL/SQL APIs: Quick Reference",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B14117_01/appdev.101/b10790/appfspe2.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987228.91/warc/CC-MAIN-20150728002307-00094-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72869623,
+    "recordOffset": 72843185,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 27 Jul 2004 16:35:00 GMT",
+    "textBeforeTable": "Table F-12 DBMS_XDBT Functions and Procedures See Also: Oracle XML API Reference Table F-12 summarizes the DBMS_XDBT functions and procedures. To set up automatic synchronization of the ConText index using the configureAutoSync() To create the ConText index using the createIndex() To create new index preferences using createPreferences() To drop existing index preferences using dropPreferences() To customize the package to set up the appropriate configuration Use DBMS_XDBT for the following tasks: DBMS_XDBT contains variables that describe the configuration settings for the ConText index. These are intended to cover the basic customizations that installations may require, but they are not a complete set. Using DBMS_XDBT you can set up an Oracle Text ConText index on the Oracle XML\u00a0DB repository hierarchy. DBMS_XDBT creates default preferences and the Oracle Text index. It also sets up automatic synchronization of the ConText index. DBMS_XDBT Retrieves the list of successors by resource id.",
+    "textAfterTable": "New PL/SQL APIs to Support XML Data in Different Character Sets The following lists the PL/SQL APIs added for this release to load, register schema, and retrieve XML data encoded in different character sets.: New DBMS_XDB APIs New CreateResource for BFILE and BLOB with csid argument FUNCTION CreateResource(abspath IN VARCHAR2, data IN BLOB, csid IN NUMBER := 0) RETURN BOOLEAN; FUNCTION CreateResource(abspath IN VARCHAR2, data IN BFILE, csid IN NUMBER := 0) RETURN BOOLEAN; New DBMS_XMLSCHEMA APIs New registerSchema for BLOB and BFILE with csid argument. procedure registerSchema(schemaURL IN varchar2, schemaDoc IN BLOB, local IN BOOLEAN := TRUE, genTypes IN BOOLEAN := TRUE, genbean IN BOOLEAN := FALSE, genTables IN BOOLEAN := TRUE, force IN BOOLEAN := FALSE, owner IN VARCHAR2 := '', csid IN NUMBER); procedure registerSchema(schemaURL IN varchar2, schemaDoc IN BFILE, local IN BOOLEAN := TRUE, genTypes IN BOOLEAN := TRUE, genbean IN BOOLEAN := FALSE, genTables IN BOOLEAN := TRUE, force IN BOOLEAN := FALSE, owner IN VARCHAR2 := '', csid IN NUMBER); New *URIType APIs New getBlob function with csid argument. URIType: MEMBER FUNCTION getBlob(csid IN NUMBER) RETURN blob, FTPURIType: OVERRIDING MEMBER FUNCTION getBlob(csid IN NUMBER) RETURN blob, HttpUriType: OVERRIDING MEMBER FUNCTION getBlob(csid IN NUMBER) RETURN blob, DBURIType: OVERRIDING MEMBER FUNCTION getBlob(csid IN NUMBER)",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

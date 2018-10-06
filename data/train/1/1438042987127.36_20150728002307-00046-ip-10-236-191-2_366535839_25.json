@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Command",
+            "show tcp nsr detail session-set",
+            "show tcp nsr session-set brief"
+        ],
+        [
+            "Description",
+            "Displays detailed information about the nonstop routing (NSR) state of the session sets on different nodes.",
+            "Displays brief information about the session sets for the state of nonstop routing (NSR) on different nodes."
+        ]
+    ],
+    "pageTitle": "Cisco IOS XR IP Addresses and Services Command Reference for the Cisco CRS Router, Release 4.1 - Transport Stack Commands [Cisco IOS XR Software (End-of-Sale)] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/crs/software/crs_r4-1/addr_serv/command/reference/b_ipaddr_cr41crs/b_ipaddr_cr41crs_chapter_01010.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987127.36/warc/CC-MAIN-20150728002307-00046-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 366598275,
+    "recordOffset": 366535839,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{2110=Window size in bytes. Range is 2048 to 65535 bytes.}",
+    "textBeforeTable": "Syntax Description node-id ] [ location value | all } { PID client ncd nsr clear To clear the counters of a specified client or all the clients of nonstop routing (NSR) Consumer Demuxer (NCD), use the clear nsr ncd client command in EXEC mode. clear nsr ncd client tcp window-size tcp timestamp tcp synwait-time tcp selective-ack tcp path-mtu-discovery tcp mss show udp statistics show udp extended-filters show udp detail pcb show udp brief show tcp nsr statistics summary show tcp nsr statistics session-set show tcp nsr statistics pcb show tcp nsr statistics client show tcp nsr session-set brief show tcp nsr detail session-set show tcp nsr detail pcb show tcp nsr detail client show tcp nsr client brief show tcp nsr brief show tcp statistics show tcp extended-filters show tcp detail show tcp brief show sctp summary show sctp statistics show sctp pcb detail show sctp pcb brief",
+    "textAfterTable": "Command Default The default value for the node-id argument is the current node in which the command is being executed. The PID value argument does not have a default value. Command Modes EXEC Command History Release Modification Release 3.6.0 This command was introduced. Usage Guidelines To use this command, you must be in a user group associated with a task group that includes the proper task IDs. If you suspect user group assignment is preventing you from using a command, contact your AAA administrator for assistance. The location keyword is used so that active and standby TCP instances are independently queried. The active and standby instances of some NSR-capable applications communicate through two queues, and these applications are multiplexed onto these queues. NSR consumer demuxer (NCD) is a process that provides the demuxing services on the receiver side. You can use the clear nsr ncd client command to troubleshoot traffic issues.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

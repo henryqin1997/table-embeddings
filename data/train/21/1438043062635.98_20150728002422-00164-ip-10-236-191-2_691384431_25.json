@@ -1,0 +1,68 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "483.66250",
+            "471.43750",
+            "45.68000"
+        ],
+        [
+            "License",
+            "WIJ204",
+            "WPXP316",
+            "WQBB419"
+        ],
+        [
+            "Type",
+            "RM",
+            "RM",
+            "BM"
+        ],
+        [
+            "Tone",
+            "103.5 PL",
+            "131.8 PL",
+            "203.5 PL"
+        ],
+        [
+            "Alpha Tag",
+            "Randolph FD",
+            "Randolph PD",
+            "Randolph DPW"
+        ],
+        [
+            "Description",
+            "Fire Dispatch",
+            "Police Dispatch",
+            "Department of Public Works"
+        ],
+        [
+            "Mode",
+            "FM",
+            "FM",
+            "FM"
+        ],
+        [
+            "Tag",
+            "Fire Dispatch",
+            "Law Dispatch",
+            "Public Works"
+        ]
+    ],
+    "pageTitle": "Norfolk County, Massachusetts (MA) Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?ctid=1223&ts=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00164-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 691401327,
+    "recordOffset": 691384431,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Avon Municipalities //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { }); }); } act=1; setEsc(this,origHtml); this.innerHTML = getTagsHTML; getTagsHTML += '\\n'; } getTagsHTML += '' + tagNames[i] + '\\n'; for (var i=0; i",
+    "textAfterTable": "Frequency\u00a0 License\u00a0 Type\u00a0 Tone\u00a0 Alpha Tag\u00a0 Description\u00a0 Mode\u00a0 Tag\u00a0 483.38750\u00a0 WPRG438\u00a0 RM 065 DPL Bellnghm FD Fire Dispatch\u00a0 FM\u00a0 Fire Dispatch\u00a0 471.02500\u00a0 WPXJ748\u00a0 RM 025 DPL Bellnghm PD Police Dispatch\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

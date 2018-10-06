@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Options: (checkbox)",
+            "bash 1.14.4",
+            "bash 2.0",
+            "(*) is default",
+            ""
+        ],
+        [
+            "(*) off (non-Posix mode)",
+            "set +o posix",
+            "set +o posix",
+            "",
+            ""
+        ],
+        [
+            "on (Posix mode)",
+            "set -o posix",
+            "set -o posix",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Bash module guide",
+    "title": "Output",
+    "url": "http://www.blackie.dk/dotfile/bash/bashguide.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00300-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 336056223,
+    "recordOffset": 336035223,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 24 Nov 2000 16:57:17 GMT",
+    "textBeforeTable": "Command(s) to execute before primary prompt You can make Bash execute one or several command(s) before issuing a primary prompt. table of contents Generel This configuration page covers generel options concerning prompting. table of contents Prompting A collection of pages, that will help you setup how Bash is to prompt you. table of contents User/Bash Interface In this section you can configure options concerning the interaction between User and Bash (i.e. commandline, completion and prompting etc.). table of contents www.imada.sdu.dk/~blackie/dotfile for further information. If you wish to know more about the dotfile generator, please turn to www.imada.sdu.dk/~pzacho/bash for updates. pzacho@imada.sdu.dk, or check out If you have any comments please do not hesitate writing me. My email address is: This module is prepared for the new version of Bash, namely version 2.0. However, I have not had the oportunity to see if it works properly, so please bear with erroneous output I rely on material describing the new",
+    "textAfterTable": "table of contents Expansion of prompting variables If this option is set, prompt strings undergo variable and parameter expansion after being expanded. Output Options: (checkbox) off on Bash 1.4.14 n/a n/a Bash 2.0 shopt -u promptvars shopt -s promptvars table of contents Primary prompt Here you can configure the primary prompt (prompt 1), which will be printed before reading your commands. Output Options: (fillout) Bash 1.4.14 export PS1=X Bash 2.0 export PS1=X table of contents Secondary prompt Here you can configure the secondary prompt (prompt 2), which will be printed if the commandline is stretched over more than one line. The prompt will not be displayed if commandline wraps, or commandline scroll, but if you hit ENTER, and Bash expects further information to execute the command. Output Options: (fillout) Bash 1.4.14 export PS2=X Bash 2.0 export PS2=X",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

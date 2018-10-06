@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6",
+            "Step 7"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Device> enable",
+            "configure terminal Example: Device# configure terminal",
+            "interface atm interface-number[.subinterface-number {mpls | multipoint | point-to-point}] Example: Device(config)# interface atm 6/0.20 point-to-point",
+            "pvc vpi/vci Example: Device(config-if)# pvc 20/10",
+            "vbr-nrt output-pcr output-scr output-maxburstsize Example: Device(config-if-atm-vc)# vbr-nrt 512 256 20",
+            "pppoe-client dial-pool-number number Example: Device(config-if-atm-vc)# pppoe-client dial-pool-number 6",
+            "end Example: Device(config-if-atm-vc)# end"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Specifies the ATM interface for which Multilink PPP must be configured and enters interface configuration mode.",
+            "Specifies the encapsulation type on an ATM permanent virtual circuit (PVC) and enters ATM virtual circuit configuration mode.",
+            "Configures the variable bit rate-nonreal time (VBR-NRT) and specifies output peak cell rate (PCR), output sustainable cell rate (SCR), and output maximum burst cell size for an ATM PVC.",
+            "Configures a PPPoE client.",
+            "Exits ATM virtual circuit configuration mode and returns to privileged EXEC mode."
+        ]
+    ],
+    "pageTitle": "Wide-Area Networking Configuration Guide: Multilink PPP, Cisco IOS XE Release 3S (Cisco ASR 1000) - Configuring Multilink PPP Connections for Broadband and Serial Topologies [Cisco ASR 1000 Series Aggregation Services Routers] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/wan_mlp/configuration/xe-3s/asr1000/wan-mlp-xe-3s-asr1000-book/wan_cfg_mlppp_conn_xe.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00275-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 372883371,
+    "recordOffset": 372838012,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{291517=RFC 1990, 290316=Multilink PPP Feature Functionality on the ASR 1000 Series Aggregation Services Router, 291804=RFC 2686, 5254=The Multilink PPP feature provides load balancing functionality over multiple WAN links while providing multivendor interoperability and support for packet fragmentation, proper sequencing, and load calculation on both inbound and outbound traffic. The Multilink PPP feature supports the fragmentation and packet sequencing specifications described in RFC 1990., 33457=For a more detailed explanation, refer to the \u201cBroadband Scalability and Performance\u201d module in the Cisco ASR 1000 Series Aggregation Services Routers Software Configuration Guide.}",
+    "textBeforeTable": "DETAILED STEPS 8.\u00a0\u00a0\u00a0 show ppp multilink 7.\u00a0\u00a0\u00a0 end 6.\u00a0\u00a0\u00a0 ppp multilink group group-number 5.\u00a0\u00a0\u00a0 ppp multilink 4.\u00a0\u00a0\u00a0 ip address address mask 3.\u00a0\u00a0\u00a0 interface multilink group-number 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS Creating a Multilink Bundle Changing the Default Endpoint Discriminator Configuring Minimum Multilink PPP Links Assigning an Interface to a Multilink Bundle Creating a Multilink Bundle Before configuring Multilink PPP connections between CPE and PTA devices, you must configure Multilink PPP by performing the following tasks: Configuring Multilink PPP Configuring Multilink PPP over Serial Interfaces Configuring Multilink PPP over Broadband Configuring Multilink PPP Interleaving and Queueing Configuring Multilink PPP How to Configure Multilink PPP Connections for Broadband and Serial",
+    "textAfterTable": "Step\u00a08 show ppp multilink Example: Device# show ppp multilink \u00a0 Displays Multilink PPP bundle information. \u00a0 Assigning an Interface to a Multilink Bundle Caution Do not install a route to the peer address while configuring a Multilink PPP lease line. The route can be disabled using the no ppp peer-neighbor-route command on the Multilink PPP bundle interface. SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 interface serial slot/subslot/port 4.\u00a0\u00a0\u00a0 no ip address 5.\u00a0\u00a0\u00a0 encapsulation ppp 6.\u00a0\u00a0\u00a0 keepalive seconds 7.\u00a0\u00a0\u00a0 ppp multilink 8.\u00a0\u00a0\u00a0 ppp multilink group",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "If You Are Booting From ...",
+            "Solaris installation CD",
+            "The network, and an installation server or remote CD drive are available"
+        ],
+        [
+            "Then ...",
+            "1. Insert the Solaris installation CD into the CD caddy. 2. Insert the CD caddy into the CD-ROM drive. 3. Boot from the installation CD in single-user mode: ok boot cdrom -s",
+            "Use the following command: ok boot net -s"
+        ]
+    ],
+    "pageTitle": "Chapter 10 SPARC: Booting a System (Tasks) (System Administration Guide, Volume 1)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19455-01/805-7228/6j6q7uepn/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00206-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 69911703,
+    "recordOffset": 69902642,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 03 Feb 2011 11:23:53 GMT",
+    "textBeforeTable": "ok setenv boot-device device[n] Change the boot-device setting by using the setenv command. The ok PROM prompt is displayed. ok > n    If the > PROM prompt is displayed, type n and press Return.       # init 0    Halt the system by using the init(1M) command.      SPARC: How to Change the Default Boot Device  Hardware configuration information, including the release number of the PROM, is displayed. The PROM release level is indicated by the ROM Rev. number.   Become superuser.      Ethernet address 8:0:20:a5:d1:3b, Host ID: nnnnnnnn. OpenBoot 3.15, 128 MB memory installed, Serial #nnnnnnnn. Sun Ultra 5/10 UPA/PCI (UltraSPARC-IIi 333MHz), No Keyboard ok banner   Display a system's PROM release level with the banner command.  SPARC: How to Find the PROM Release for a System All examples in this section use the ok prompt.            ok > n",
+    "textAfterTable": "ok printenv boot-device Save the new boot-device value by using the reset command. ok reset The new boot-device setting is written to the PROM. SPARC: Examples--Changing the Default Boot Device In this example, the default boot device is set to disk. # init 0 # INIT: New run level: 0 . . . The system is down. syncing file systems... done Program terminated ok setenv boot-device disk boot-device = disk ok printenv boot-device boot-device disk disk ok reset Sun Ultra 5/10 UPA/PCI (UltraSPARC-IIi 333MHz), No Keyboard OpenBoot 3.15, 128 MB memory installed, Serial #nnnnnnnn. Ethernet address 8:0:20:a5:d3:4b, Host ID: nnnnnnnn. Boot device: disk File and args: SunOS Release 5.8 Version 64-bit . . . pluto console login: In this example the default boot device is set to the network. # init 0 # INIT: New run level: 0 . . . The system is down. syncing file systems... done Program terminated ok setenv boot-device net boot-device = net ok printenv boot-device boot-device net disk ok reset Sun Ultra 5/10 UPA/PCI (UltraSPARC-IIi 333MHz), No Keyboard OpenBoot 3.15, 128 MB memory installed, Serial #nnnnnnnn. Ethernet address 8:0:20:a3:d54:4b, Host ID: nnnnnnnn. Boot device: net File and",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

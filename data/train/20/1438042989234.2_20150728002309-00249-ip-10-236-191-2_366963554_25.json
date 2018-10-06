@@ -1,0 +1,30 @@
+{
+    "relation": [
+        [
+            "Release",
+            "Release 3.5.0",
+            "Release 3.9.0"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "The evaluation and permanent keywords were added."
+        ]
+    ],
+    "pageTitle": "Cisco IOS XR System Management Command Reference for the Cisco CRS Router, Release 4.2.x - Software Entitlement Commands on the Cisco\u00a0IOS\u00a0XR Software [Cisco Carrier Routing System] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/crs/software/crs_r4-2/system_management/command/reference/b_sysman_cr42crs/b_sysman_cr42crs_chapter_01110.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00249-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 367000435,
+    "recordOffset": 366963554,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Command History Administration EXEC Command Modes No default behavior or values Command Default license clear To delete all licenses from the router persistent storage, use the clear license command in administration EXEC mode. clear license show license status show license udi show license pools show license log show license file show license features show license expired show license evaluation show license chassis show license backup show license available show license allocated show license active show license show hw-module linecard throughput license save credential license restore license remove license pool remove license pool create license move slot license move license backup license add license hw-module linecard throughput clear license log clear license",
+    "textAfterTable": "Usage Guidelines To use this command, you must be in a user group associated with a task group that includes appropriate task IDs. If the user group assignment is preventing you from using a command, contact your AAA administrator for assistance. The clear license command removes all licenses from the router persistent storage. Task ID Task ID Operations pkg-mgmt execute Examples In the following example, all licenses are removed from the router:  RP/0/RP0/CPU0:router# admin RP/0/RP0/CPU0:router(admin)# clear license clear license log To clear the operational or administrative logs for the license system, use the clear license log command in administration EXEC mode. clear license log { operational | administration } Syntax Description",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

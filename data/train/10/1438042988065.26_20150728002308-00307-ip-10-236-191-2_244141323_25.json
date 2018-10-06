@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Violation",
+            "Avoid unused imports such as 'Date'",
+            "Avoid unused imports such as 'BigDecimal'"
+        ],
+        [
+            "Line",
+            "3",
+            "4"
+        ]
+    ],
+    "pageTitle": "PMD Results - Turbine",
+    "title": "",
+    "url": "http://turbine.apache.org/turbine/development/turbine-2.3/pmd-report.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988065.26/warc/CC-MAIN-20150728002308-00307-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 244149525,
+    "recordOffset": 244141323,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 02 May 2013 20:12:53 GMT",
+    "textBeforeTable": "Summary The following document contains the results of PMD. PMD Results Opens in a new window External Link Legend FindBugs Report JCoverage Simian Report PMD Report Task List Project License Unit Tests Test Xref Source Xref JavaDoc Warnings Report JavaDoc Report JavaDocs File Activity Developer Activity Change Log Changes Checkstyle Metrics Project Reports Project Info About Project Documentation Todo How To Help Proposals Development JavaDocs Howtos Services Core DB Schema Changes Documentation Getting Started Specification Features Overview General Information META | Fulcrum | Turbine Home",
+    "textAfterTable": "Files Files Violations org/apache/turbine/Turbine.java 4 org/apache/turbine/modules/pages/JspPage.java 1 org/apache/turbine/modules/screens/JSONScreen.java 1 org/apache/turbine/modules/screens/JSONSecureScreen.java 1 org/apache/turbine/modules/screens/TemplateScreen.java 1 org/apache/turbine/om/security/TurbineUser.java 2 org/apache/turbine/services/factory/TurbineFactoryService.java 1 org/apache/turbine/services/intake/TurbineIntakeService.java 3 org/apache/turbine/services/intake/model/BooleanField.java 1 org/apache/turbine/services/intake/model/Group.java 1 org/apache/turbine/services/intake/validator/DateStringValidator.java 2 org/apache/turbine/services/jsp/TurbineJspService.java 1 org/apache/turbine/services/jsp/util/JspNavigation.java 1 org/apache/turbine/services/jsp/util/JspScreenPlaceholder.java 1 org/apache/turbine/services/localization/LocaleTokenizer.java 1 org/apache/turbine/services/localization/TurbineLocalizationService.java 1 org/apache/turbine/services/mimetype/util/CharSetMap.java 2 org/apache/turbine/services/mimetype/util/MimeTypeMap.java 2 org/apache/turbine/services/mimetype/util/MimeTypeMapper.java 2 org/apache/turbine/services/pull/TurbinePull.java 1 org/apache/turbine/services/pull/tools/TemplateLink.java 1 org/apache/turbine/services/schedule/BaseJobEntry.java 7 org/apache/turbine/services/schedule/BaseJobEntryPeer.java 6 org/apache/turbine/services/schedule/map/JobEntryMapBuilder.java 2 org/apache/turbine/services/security/ldap/LDAPUserManager.java 1 org/apache/turbine/services/security/torque/TorqueUserManager.java 1 org/apache/turbine/services/security/torque/om/BaseTurbineGroup.java 6 org/apache/turbine/services/security/torque/om/BaseTurbineGroupPeer.java 6 org/apache/turbine/services/security/torque/om/BaseTurbinePermission.java 6 org/apache/turbine/services/security/torque/om/BaseTurbinePermissionPeer.java 6",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

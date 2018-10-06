@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 10, 2002",
+            "Jun 16, 2005",
+            "May 3, 2010",
+            "Apr 24, 2014",
+            "Dec 9, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: MICROSOFT CORPORATION, WASHINGTON Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:MERCER, IAN CAMERON;LACHAPELLE, KEVIN LEIGH;REEL/FRAME:013567/0993 Effective date: 20021203",
+            "Owner name: MATSUSHITA ELECTRIC INDUSTRIAL CO., LTD., JAPAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:MIYAMOTO, HARUTOSHI;YANAGAWA, YOSHIFUMI;MATSUMI, CHIYOKO;AND OTHERS;REEL/FRAME:016151/0282;SIGNING DATES FROM 20050125 TO 20050209",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Owner name: MICROSOFT TECHNOLOGY LICENSING, LLC, WASHINGTON Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:MICROSOFT CORPORATION;REEL/FRAME:034541/0477 Effective date: 20141014"
+        ]
+    ],
+    "pageTitle": "Patent US20040078382 - Adaptive menu system for media players - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US20040078382?dq=6,274,924",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00010-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 473270223,
+    "recordOffset": 473222905,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{83566=[0074] The Identifier field is an eight byte entry containing \u201cMENU_HMT\u201d in ASCII. The Version field is a two byte entry representing the version of the specification used to author this file. For example, version 1.20 would be stored as 0\ufffd78 (120 decimal). The Size of MEN.HMT field is a four byte entry containing the size of MENU.HMT in bytes. The LCID field is a four byte entry for the Language ID of this MENU.HMT file. The Offset of First Menu field is a two byte entry representing the byte offset from the beginning of the MENU.HMT to the first Menu Header 706. The Menu Title Length field is a two byte entry containing the byte length of the menu title excluding the ending null UCS-2 character (two null bytes). The Menu Title field stores a menu title terminated with a null UCS-2 character (two null bytes). The maximum length for this entry is 65 UCS-2 characters including the null UCS-2 character. Players use this to display a title for the entire menu. An empty string (one NULL character) indicates that there is no title to display or that the authoring software has rendered the title onto the background image. For example: \u201cMy Hawaii Vacation\u201d, \u201c2002 School Party\u201d., 92177=[0076] The Size of Menu Header field is a four byte entry representing the size of the Menu Header 706 including the Menu Item 710 and Playlist Item 708 in bytes. The Offset to Parent Menu field is a four byte entry representing the byte offset from the beginning of MENU.HMT to the Parent Menu. This value is zero if this is the top level menu 704. The Background Image ID (4:3) field is a four byte entry defining the image to display as the background of this menu 704 on a 4:3 display. The image should be a 640\ufffd480 JPG file with an HMT extension. A value of zero indicates there is no background image. The value is the index of a Menu Image file in CONTENTS.HMT (see FIG. 9). Players should display the background image centered on the display preserving the aspect ratio. Players should use a background color if any to fill in any uncovered area. The Background Image ID (16:9) field is a four byte entry defining the image to display as the background of this menu on a 16:9 display. The image should be a 852\ufffd480 JPG file with an HMT extension. A value of zero indicates there is no background image. If this value is non zero then there should be a valid Background Image ID (4:3) as well. The value is the index of the Menu Image file in CONTENTS.HMT. Players should display the background image centered on the display preserving the aspect ratio., 157338=[0116] In alternative embodiment, the following files are included: <Thumbnail>.HMT and <Background>.HMT. There is one file for each thumbnail on the medium (e.g., 160\ufffd120 JPG format with .HMT extension). The authoring software may name the files as appropriate. The Thumbnail files are created in an \u2018IMAGES\u2019 subdirectory. There is one file for each menu background on the medium. Backgrounds with a 4:3 aspect ratio are in 640\ufffd480 JPG format with .HMT extension. Backgrounds with a 16:9 aspect ratio are in 852\ufffd480 JPG format with .HMT extension. The authoring software may name the files as appropriate. The Background files are created in the \u2018IMAGES\u2019 subdirectory., 36486=[0001] This application is based upon a U.S. Provisional Patent Application entitled \u201cCOMPRESSED MEDIA FORMAT SPECIFICATION,\u201d filed Oct. 16, 2002, naming Mercer et al. as inventors. The entirety of such provisional patent application is incorporated by reference herein., 142142=[0098] As illustrated in FIG. 10, the invention is operable as part of an exemplary compressed media format 1002 having a set of small files containing metadata, menus, and playlists in a compiled binary format designed for playback on feature-rich PC media players as well as low cost media players. See Appendix A for an example of accelerator files for use as part of an exemplary compressed media format. The exemplary compressed media format of the invention encompasses audio, still images, and video media files 1004 in various formats. The compressed media format for use with the invention defines a logical format for organizing compressed media files 1004 in a file system 1006 on computer-readable media 1008 such as optical discs (e.g., CD-ROM, CD-R, CD-RW, DVD-RAM, DVD-R, DVD-RW, DVD+RW, DVD+R, DVD-ROM), flash memory (e.g., COMPACTFLASH brand, secure digital, MEMORY STICK brand), magnetic media (e.g., hard disks), and the like., 141241=[0096] The data structures of the invention are organized such that only the current menu needs to be in memory associated with the media player. The flexible menu system of the invention scales from a minimal device (e.g., portable CD player) to a large, 16:9 television display (e.g., a DVD player menu). The medium specifies menu hierarchy, but the layout, thumbnails (consumer images, video thumbnails, or predefined art like these), and background image vary per media player. In one embodiment, menu or playlist names are user entered or auto-generated. Menus are filtered to display only those menu items that the player is capable of displaying or playing (e.g. an audio-only player will remove all image and video menu entries to display only pure-audio selections)., 73522=[0064] The layout of thumbnails on the screen and the number of thumbnails displayed per page is player dependent. Some players may choose to display a continuous scrolling list, others may chose to paginate the menu and offer next/previous selections. On a 4:3 TV set, players will typically display a grid of 3\ufffd2 thumbnails while on a 16:9 TV set they may chose to display a 4\ufffd2 grid instead.}",
+    "textBeforeTable": "Patent Citations [0182] This 4 bytes he offset from the beginning of TEXT.HMT for first byte of each Extra text entry. [0181] Offset of n-th Text Entry RESERVED 4-65,535 ALBUM ARTIST 3 COPYRIGHT 2 LYRICS 1 UNUSED 0 Value Extra Text Type Type of n-th Text Data TABLE A9 [0180] This 2 byte entry contains one of the values defined in the table below. [0179] Type of n-th Text Data [0178] This 1 byte entry is reserved for future use. [0177] Reserved [0176] This 1 byte entry represents of number of Extra",
+    "textAfterTable": "US6657117 * Jul 13, 2001 Dec 2, 2003 Microsoft Corporation System and methods for providing automatic classification of media entities according to tempo properties US6661437 * Dec 15, 1997 Dec 9, 2003 Thomson Licensing S.A. Hierarchical menu graphical user interface US6721489 * Mar 8, 2000 Apr 13, 2004 Phatnoise, Inc. Play list manager US6728729 * Apr 25, 2003 Apr 27, 2004 Apple Computer, Inc. Accessing media across networks US6735628 * Sep 20, 2002 May 11, 2004 Friskit, Inc. Media search and continuous playback of multiple media resources distributed on a network US6760721 * Apr 14, 2000 Jul 6, 2004 Realnetworks, Inc. System and method of managing metadata data US6839059 * Aug 31, 2000 Jan 4, 2005 Interactive Video Technologies, Inc. System and method for manipulation and interaction of time-based mixed media formats",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

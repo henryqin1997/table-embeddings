@@ -1,0 +1,182 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2009-10",
+            "2010-11 *",
+            "2010-11 *",
+            "2010-11 *",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "ERI",
+            "All Teams",
+            "RNO",
+            "AUS",
+            ""
+        ],
+        [
+            "GP",
+            "2",
+            "17",
+            "16",
+            "1",
+            "19"
+        ],
+        [
+            "GS",
+            "1",
+            "15",
+            "15",
+            "0",
+            "16"
+        ],
+        [
+            "Dbl Dbl",
+            "0",
+            "5",
+            "5",
+            "0",
+            "5"
+        ],
+        [
+            "Tpl Dbl",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "40 Pts",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "20 Reb",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "20 Ast",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "Techs",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "HOB",
+            ".268",
+            ".245",
+            ".248",
+            ".205",
+            ".247"
+        ],
+        [
+            "Ast/TO",
+            "0.62",
+            "0.91",
+            "0.87",
+            "0.00",
+            "0.87"
+        ],
+        [
+            "Stl/TO",
+            "1.00",
+            "0.49",
+            "0.47",
+            "0.00",
+            "0.56"
+        ],
+        [
+            "FT/FGA",
+            "0.32",
+            "0.27",
+            "0.29",
+            "0.00",
+            "0.28"
+        ],
+        [
+            "W's",
+            "1",
+            "11",
+            "11",
+            "0",
+            "12"
+        ],
+        [
+            "L's",
+            "1",
+            "6",
+            "5",
+            "1",
+            "7"
+        ],
+        [
+            "Win %",
+            "0.500",
+            "0.647",
+            "0.688",
+            "0.000",
+            "0.632"
+        ],
+        [
+            "OWS",
+            "0.08",
+            "1.20",
+            "1.03",
+            "0.16",
+            "1.23"
+        ],
+        [
+            "DWS",
+            "0.08",
+            "0.82",
+            "0.86",
+            "-0.02",
+            "0.93"
+        ],
+        [
+            "WS",
+            "0.16",
+            "2.02",
+            "1.89",
+            "0.14",
+            "2.16"
+        ]
+    ],
+    "pageTitle": "Danny Green Player Profile, San Antonio Spurs, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Events Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Danny_Green/Summary/1642",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989507.42/warc/CC-MAIN-20150728002309-00167-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 23030383,
+    "recordOffset": 22999277,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{8817=Free Agent: PO-2018; UFA-2019, 8516=Early Entry Info: 2008 Early Entrant (Withdrew), 8616=Draft Entry: 2009 NBA Draft, 9644=Born: Jun 22, 1987 (28 years old)}",
+    "TableContextTimeStampAfterTable": "{125159=* International basketball history from 2011-2012, 156270=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 6 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] [ High School ] [ Recent News ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "24.3 3.21 7.43 .432 1.94 4.68 .415 0.74 0.93 .794 7.27 0.37 3.00 3.37 1.53 0.96 0.90 1.57 1.12 9.09 2014-15 SAN 81 80 28.5 3.98 9.11 .436 2.36 5.64 .418 1.37 1.57 .874 9.72 0.67 3.57 4.23 1.95 1.25 1.07 2.01 1.15 11.68 CAREER \u00a0 323 257 24.4 3.34 7.61 .440 1.90 4.53 .420 0.96 1.16 .829 7.52 0.56 2.77 3.33 1.54 1.00 0.78 1.60 1.05 9.55 NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2009-10 CLE 20 0 114.8 15 39 .385 6 22 .273 4 6 .667 28 8 9 17 5 6 3 9 5 40 2010-11 SAN 8 0 91.5 17 35 .486 7 19 .368 0 0 .000 23 3 12 15 2 2 1 7 5 41 2011-12 SAN 66 38 1522.3 211 477 .442 102 234 .436 79 100 .790 462 54 174 228 86 58 46 107 67 603 2012-13",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

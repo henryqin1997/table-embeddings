@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "Release",
+            "12.2(15)T",
+            "12.2(25)S",
+            "12.2(28)SB",
+            "12.2(33)SRA",
+            "12.2(33)SXH",
+            "Cisco IOS XE Release 2.1",
+            "15.1(3)T",
+            "15.1(1)S",
+            "12.2(50)SY",
+            "15.3(3)M",
+            "Cisco IOS XE 3.3SE"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "This command was integrated into Cisco IOS Release 12.2(25)S.",
+            "This command was integrated into Cisco IOS Release 12.2(28)SB.",
+            "This command was integrated into Cisco IOS Release 12.2(33)SRA.",
+            "This command was integrated into Cisco IOS Release 12.2(33)SXH.",
+            "This command was integrated into Cisco IOS XE Release 2.1.",
+            "This command was modified. The valid range of the object-number argument increased to 1000.",
+            "This command was integrated into Cisco IOS Release 15.1(1)S.",
+            "This command was integrated into Cisco IOS Release 12.2(50)SY.",
+            "This command was modified. The ipv6 keyword was added.",
+            "This command was implemented in Cisco IOS XE Release 3.3SE."
+        ]
+    ],
+    "pageTitle": "Cisco IOS IP Application Services Command Reference - threshold metric through track timer [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipapp/command/iap-cr-book/iap-t1.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00180-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 354019007,
+    "recordOffset": 353992998,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{30339=This command was modified. The valid range of the object-number argument increased to 1000., 20995=Object number that represents the interface to be tracked. The range is from 1 to 1000., 34580=Object number in the range from 1 to 1000 representing the interface to be tracked., 28118=As of Cisco IOS Release 15.1(3)T, 15.1(1)S and 12.2(50)SY, a maximum of 1000 objects can be tracked. Although 1000 tracked objects can be configured, each tracked object uses CPU resources. The amount of available CPU resources on a router is dependent upon variables such as traffic load and how other protocols are configured and run. The ability to use 1000 tracked objects is dependent upon the available CPU. Testing should be conducted on site to ensure that the service works under the specific site traffic conditions., 5584=Number of the object to be tracked. The range is from 1 to 1000., 29947=This command was modified. The valid range for the object-number argument increased to 1000.}",
+    "TableContextTimeStampAfterTable": "{22685=Object number that represents the object to be tracked. The range is from 1 to 1000., 37319=Object number representing the object to be tracked. The range is from 1 to 1000., 50482=Object number of the object to be tracked. The range is from 1 to 1000., 57958=As of Cisco IOS Release 15.1(3)T, 15.1(1)S, and 12.2(50)SY, a maximum of 1000 objects can be tracked. Although 1000 tracked objects can be configured, each tracked object uses CPU resources. The amount of available CPU resources on a router is dependent upon variables such as traffic load and how other protocols are configured and run. The ability to use 1000 tracked objects is dependent upon the available CPU. Testing should be conducted on site to ensure that the service works under the specific site traffic conditions., 31639=As of Cisco IOS Release 15.1(3)T, 15.1(1)S, and 12.2(50)SY, a maximum of 1000 objects can be tracked. Although 1000 tracked objects can be configured, each tracked object uses CPU resources. The amount of available CPU resources on a router depends on variables such as traffic load and how other protocols are configured and run. The ability to use 1000 tracked objects depends on available CPU resources. Testing should be conducted to ensure that the service works under the specific site-traffic conditions.}",
+    "textBeforeTable": "Syntax Description metric threshold no number ] } [ up number number ] | down [ down number { up metric threshold To set a threshold metric, use the threshold metric command in tracking configuration mode. To remove the threshold metric value, use the no form of this command. threshold metric track timer track stub-object track rtr track resolution track list track ip sla track ip route track interface track application track abcd track threshold weight threshold percentage threshold metric threshold metric through track timer track timer track stub-object track rtr track resolution track list track ip sla track ip route track interface track application track abcd track threshold",
+    "textAfterTable": "12.2(28)SB This command was integrated into Cisco IOS Release 12.2(28)SB. 12.2(33)SRA This command was integrated into Cisco IOS Release 12.2(33)SRA. 12.2(33)SXH This command was integrated into Cisco IOS Release 12.2(33)SXH. Cisco IOS XE Release 2.1 This command was integrated into Cisco IOS XE Release 2.1. 15.3(3)M This command was integrated into Cisco IOS Release 15.3(3)M. Cisco IOS XE 3.3SE This command was implemented in Cisco IOS XE Release 3.3SE. Usage Guidelines This command is available only for IP-route threshold metric objects tracked by the track ip route metric threshold command in global configuration mode. The default up and down threshold values are 254 and 255, respectively. With these values, IP-route threshold tracking gives the same result as IP-route reachability tracking.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

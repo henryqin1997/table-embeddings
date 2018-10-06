@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Constant",
+            "beforeDescendants",
+            "afterDescendants",
+            "blocksDescendants"
+        ],
+        [
+            "Value",
+            "0",
+            "1",
+            "2"
+        ],
+        [
+            "Description",
+            "The ViewGroup will get focus before any of its descendants.",
+            "The ViewGroup will get focus only if none of its descendants want it.",
+            "The ViewGroup will block its descendants from receiving focus."
+        ]
+    ],
+    "pageTitle": "ViewGroup | Android Developers",
+    "title": "",
+    "url": "http://developer.android.com/reference/android/view/ViewGroup.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00057-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 64238711,
+    "recordOffset": 64137060,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{872332=Called by restoreHierarchyState(android.util.SparseArray) to retrieve the state for this view and its children. May be overridden to modify how restoring happens to a view's children; for example, some views may want to not store state for their children., 873838=Called by saveHierarchyState(android.util.SparseArray) to store the state for this view and its children. May be overridden to modify how freezing happens to a view's children; for example, some views may want to not store state for their children.}",
+    "textBeforeTable": "Must be one of the following constant values. Defines the relationship between the ViewGroup and its descendants when looking for a View to take focus. android:descendantFocusability setClipToPadding(boolean) Related Methods This corresponds to the global attribute resource symbol clipToPadding. This may also be a reference to a resource (in the form \"@[package:]type:name\") or theme attribute (in the form \"?[package:][type:]name\") containing a value of this type. Must be a boolean value, either \"true\" or \"false\". Defines whether the ViewGroup will clip its children to its padding, if padding is not zero. This property is set to true by default. android:clipToPadding setClipChildren(boolean) Related Methods This corresponds to the global attribute resource symbol clipChildren. This may also be a reference to a resource (in the form \"@[package:]type:name\") or theme attribute (in the form \"?[package:][type:]name\") containing a value of this type. Must be a boolean value, either \"true\" or \"false\". Defines whether a child is limited to draw inside of its bounds or not. This is useful with animations that scale the size of the children to more than 100% for instance. In such a case, this property should be set to false to allow the children to draw outside of their bounds.",
+    "textAfterTable": "This corresponds to the global attribute resource symbol descendantFocusability. Related Methods android:layoutAnimation Defines the layout animation to use the first time the ViewGroup is laid out. Layout animations can also be started manually after the first layout. Must be a reference to another resource, in the form \"@[+][package:]type:name\" or to a theme attribute in the form \"?[package:][type:]name\". This corresponds to the global attribute resource symbol layoutAnimation. Related Methods android:layoutMode Defines the layout mode of this ViewGroup. Must be one of the following constant values. Constant Value Description clipBounds 0 Use the children's clip bounds when laying out this container. opticalBounds 1 Use the children's optical bounds when laying out this container. This corresponds to the global attribute resource symbol layoutMode. Related Methods setLayoutMode(int) android:persistentDrawingCache Defines the persistence of the drawing cache. The drawing cache might be enabled by a ViewGroup for all its children in specific situations (for instance during a scrolling.) This property lets you persist the cache",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

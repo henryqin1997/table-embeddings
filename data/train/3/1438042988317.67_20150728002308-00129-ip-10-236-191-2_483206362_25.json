@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Date",
+            "29 sept. 2004",
+            "27 d\ufffdc. 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "\ufffdv\ufffdnement",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "",
+            "Year of fee payment: 4"
+        ]
+    ],
+    "pageTitle": "Brevet US7761693 - Data processing apparatus and method for performing arithmetic operations in ... - Google\ufffdBrevets",
+    "title": "",
+    "url": "http://www.google.fr/patents/US7761693?hl=fr",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00129-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 483270835,
+    "recordOffset": 483206362,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6493=Similarly, the page tables that need to be accessed by the MMU in order to retrieve the appropriate descriptors into the TLB 1015 will often store in excess of 256 bits of data, and may often be 128-bit aligned. Accordingly, the MMU 1005 can use the alignment information provided over path 1025 in order to determine the number of page tables to be accessed. Whilst in the example of FIG. 54A, the MMU 1005 may need to assume that more than one page table will need to be accessed, in the example of FIG. 54B, the MMU can determine from the alignment specifier that only a single page table needs to be accessed, and this information can be used to improve the efficiency of the access control functions performed by the MMU 1005.}",
+    "TableContextTimeStampAfterTable": "{230540=Saturation is a process that can be used to restrict a data element to a certain range by choosing the closest allowable value. For example if two unsigned 8-bit integers are multiplied using 8 bit registers, the result may overflow. In this case the most accurate result that could be given is binary 11111111, and thus, the number will be saturated to give this value. A similar problem may arise when shifting and narrowing, whereby a number that is narrowed cannot fit into the narrower space. In this case in the case of an unsigned number, when any of the bits that are discarded in the shift step are not zero then the number is saturated to the maximum allowable value. In the case of a signed number the problem is more complicated. In this case the number must be saturated to the maximum allowable positive number or maximum allowable negative number when the most Significant bit is different from any of the discarded bits., 386996=VAND Dd,#0b00001000, 0b1100, 333089=The LSU 22 is also arranged to communicate with a memory management unit (MMU) 1005, which typically incorporates a Translation Lookaside Buffer (TLB) 1015. As will be appreciated by those skilled in the art, an MMU is used to perform certain access control functions, for example conversion of virtual to physical addresses, determination of access permissions (i.e. whether the access can take place), etc. To do this, the MMU stores within the TLB 1015 descriptors obtained from page tables in memory. Each descriptor defines for a corresponding page of memory the necessary access control information relevant to that page of memory.}",
+    "textBeforeTable": "Citations de brevets Although a particular embodiment has been described herein, it will be appreciated that the invention is not limited thereto and that many modifications and additions thereto may be effected by one skilled in the art without departing from the scope and spirit of the invention as defined by the appended claims. For example, various combinations of the features of the following dependent claims could be made with the features of the independent claims without departing from the scope of the present invention. ). FIG. 63 Wherein the <mode> value 1100 refers to a generated constant comprising an expanded data portion (see VAND Dd,#0b00001000, 0b1100 shows how embodiments of the present technique can be used to generate a bit mask to extract a certain bit or bits from a number of data elements in a vector. In the example shown the fourth bit of each data element from a source vector is extracted. Initially the immediate 8 is expanded by repeating it and then this is followed by a logical AND instruction which ANDs the generated constant with a source vector to extract the desired bit from each data element. These operations are performed in response to the instruction FIG. 67 The ability to perform further data processing operations on the generated constants can have a variety of uses. For example,",
+    "textAfterTable": "18 d\ufffdc. 1992 18 avr. 1995 Xerox Corporation Performing arithmetic in parallel on composite operands with packed multi-bit components US5481743 30 sept. 1993 2 janv. 1996 Apple Computer, Inc. Minimal instruction set computer architecture and multiple instruction issue method US5530817 22 f\ufffdvr. 1993 25 juin 1996 Kabushiki Kaisha Toshiba Very large instruction word type computer for performing a data transfer between register files through a signal line path US5539479 * 31 mai 1995 23 juil. 1996 International Business Machines Corporation Video receiver display of cursor and menu overlaying video US5761103 8 mars 1995 2 juin 1998 Texas Instruments Incorporated Left and right justification of single precision mantissa in a double precision rounding unit US5808875 29 sept. 1997 15 sept. 1998 Intel Corporation Integrated circuit solder-rack interconnect module US5822619 14 mai 1996 13 oct. 1998 Sgs-Thomson Microelectronics Ltd. System and method for restructuring data strings US5826096 19 mai 1995 20 oct. 1998",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

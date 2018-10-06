@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "param_info",
+            "file_version",
+            "file",
+            "prefix"
+        ],
+        [
+            "information of parameter",
+            "parameter version of the file, must be <= provided parameter version",
+            "file to load from",
+            "prefix for members"
+        ]
+    ],
+    "pageTitle": "SHOGUN: CECOCRandomDenseEncoder Class Reference",
+    "title": "",
+    "url": "http://shogun-toolbox.org/doc/en/2.0.1/classshogun_1_1CECOCRandomDenseEncoder.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00193-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 212858023,
+    "recordOffset": 212842079,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{68405=Definition at line 1038 of file SGObject.cpp., 47230=Definition at line 1033 of file SGObject.cpp., 21883=Definition at line 1201 of file SGObject.cpp., 32688=Definition at line 1145 of file SGObject.cpp., 48847=Definition at line 1028 of file SGObject.cpp., 66663=Definition at line 1043 of file SGObject.cpp., 31124=Definition at line 1132 of file SGObject.cpp., 29683=Definition at line 1108 of file SGObject.cpp., 60989=Definition at line 1084 of file SGObject.cpp., 25569=E. Allwein, R. Schapire, and Y. Singer. Reducing multiclass to binary: A unifying approach for margin classifiers. Journal of Machine Learning Research, 1:113-141, 2002.}",
+    "lastModified": "Fri, 16 Nov 2012 02:52:21 GMT",
+    "textBeforeTable": "Parameters: constructor ) \u00a0 pposone = 0.5 float64_t\u00a0 codelen = 0, int32_t\u00a0 maxiter = 10000, int32_t\u00a0 ( CECOCRandomDenseEncoder Constructor & Destructor Documentation probability of +1 \u00a0 m_pposone float64_t\u00a0 code length \u00a0 m_codelen int32_t\u00a0 max number of iterations \u00a0 m_maxiter int32_t\u00a0 Protected Attributes update_parameter_hash () virtual bool\u00a0 save_serializable_post () throw (ShogunException) virtual void\u00a0 save_serializable_pre () throw (ShogunException) virtual void\u00a0 load_serializable_post () throw (ShogunException) virtual void\u00a0 load_serializable_pre () throw (ShogunException) virtual void\u00a0 one_to_one_migration_prepare (DynArray<",
+    "textAfterTable": "See also: get_default_code_length Definition at line 19 of file ECOCRandomDenseEncoder.cpp. virtual ~CECOCRandomDenseEncoder ( \u00a0)\u00a0 [virtual] destructor Definition at line 35 of file ECOCRandomDenseEncoder.h. Member Function Documentation void build_parameter_dictionary ( CMap< TParameter *, CSGObject * > &\u00a0 dict \u00a0)\u00a0 [inherited] Builds a dictionary of all parameters in SGObject as well of those of SGObjects that are parameters of this object. Dictionary maps parameters to the objects that own them. Parameters: dict\u00a0 dictionary of parameters to be built. Definition at line 1201 of file SGObject.cpp. SGMatrix< int32_t > create_codebook ( int32_t\u00a0 num_classes \u00a0)\u00a0 [virtual] init codebook. Parameters:",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

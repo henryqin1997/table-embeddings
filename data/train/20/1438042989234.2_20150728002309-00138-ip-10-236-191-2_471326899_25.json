@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US7502896 *",
+            "US20040071152 *",
+            "US20040085901 *",
+            "US20040186921 *"
+        ],
+        [
+            "Filing date",
+            "Jun 7, 2006",
+            "Oct 10, 2003",
+            "Nov 5, 2002",
+            "Feb 17, 2004"
+        ],
+        [
+            "Publication date",
+            "Mar 10, 2009",
+            "Apr 15, 2004",
+            "May 6, 2004",
+            "Sep 23, 2004"
+        ],
+        [
+            "Applicant",
+            "Stmicroelectronics Pvt. Ltd.",
+            "Intel Corporation, A Delaware Corporation",
+            "Hooper Donald F.",
+            "Intel Corporation, A California Corporation"
+        ],
+        [
+            "Title",
+            "System and method for maintaining the integrity of data transfers in shared memory configurations",
+            "Method and apparatus for gigabit packet assignment for multithreaded packet processing",
+            "Flow control in a network environment",
+            "Memory mapping in a multi-engine processor"
+        ]
+    ],
+    "pageTitle": "Patent US20060069882 - Memory controller for processor having multiple programmable units - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US20060069882?dq=5490230",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00138-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 471364451,
+    "recordOffset": 471326899,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{30919=This application is a continuation of, and claims priority to, U.S. patent application Ser. No. 09/387,109 filed on Aug. 31, 1999, entitled \u201cSDRAM CONTROLLER FOR PARALLEL PROCESSOR ARCHITECTURE,\u201d the contents of which are hereby incorporated by reference.}",
+    "textBeforeTable": "Referenced by It is to be understood that while the invention has been described in conjunction with the detailed description thereof, the foregoing description is intended to illustrate and not limit the scope of the invention, which is defined by the scope of the appended claims. Other aspects, advantages, and modifications are within the scope of the following claims. Other Embodiments Any microengine 22 that uses the FBI unsolicited push technique must test the protection flag prior to accessing the FBUS interface/microengine agreed upon transfer registers. If the flag is not asserted, then the transfer registers may be accessed by the microengine. If the flag is Asserted then the context should wait N cycles prior to accessing the registers. A priori this count is determined by the number of transfer registers being pushed, plus a frontend protection window. The basic idea is that the Microengine must test this flag then quickly move the data which it wishes to read from the read transfer registers to GPR's in contiguous cycles, so the push engine does not collide with the Microengine read. Generally, transfer registers require protection from the context controlling them to guarantee read correctness. In particular, if a write transfer register is being used by a thread_1 to provide data to the SDRAM 16 a, thread_1 must not overwrite this register until the signal back",
+    "textAfterTable": "* Cited by examiner Classifications U.S. Classification 711/151, 711/104, 711/150 International Classification G06F13/16, G06F13/00 Cooperative Classification G06F13/1642 European Classification G06F13/16A4 Legal Events Date Code Event Description Dec 17, 2007 AS Assignment Owner name: INTEL CORPORATION, CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:WHEELER, WILLIAM R.;BURRES, BRADLEY;ADILETTA, MATTHEW;AND OTHERS;REEL/FRAME:020256/0037 Effective date: 20011204 Sep 22, 2011 FPAY Fee payment Year of fee payment: 4 Rotate Original Image",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

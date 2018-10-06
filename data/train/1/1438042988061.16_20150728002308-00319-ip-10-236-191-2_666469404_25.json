@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "33.68000",
+            "154.13000"
+        ],
+        [
+            "License",
+            "KNNT266",
+            "WPDG639"
+        ],
+        [
+            "Type",
+            "BM",
+            "M"
+        ],
+        [
+            "Tone",
+            "179.9 PL",
+            ""
+        ],
+        [
+            "Alpha Tag",
+            "Fire Disp",
+            "Fireground"
+        ],
+        [
+            "Description",
+            "Fire Dispatch (\"Station T\")",
+            "Fireground"
+        ],
+        [
+            "Mode",
+            "FM",
+            "FM"
+        ],
+        [
+            "Tag",
+            "Fire Dispatch",
+            "Fire-Tac"
+        ]
+    ],
+    "pageTitle": "New London County, Connecticut (CT) Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?ctid=309&ts=2",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00319-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 666486687,
+    "recordOffset": 666469404,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Station \"KX\" in Colchester is a regional dispatch center for Fire & EMS for the towns of Bozrah, Colchester, and Salem in New London County Regional Public Safety New London County //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { });",
+    "textAfterTable": "465.58750\u00a0 KRU976\u00a0 M 179.9 PL KX Fire Blue Fireground Blue\u00a0 FMN\u00a0 Fire-Tac\u00a0 452.18750\u00a0 \u00a0 M 203.5 PL KX Fire Pol Fire Police\u00a0 FMN\u00a0 Fire-Tac\u00a0 155.22000\u00a0 KUE618\u00a0 BM 173.8 PL AmerEMSDisp American Ambulance Service - EMS Dispatch/Operations\u00a0 FMN\u00a0 EMS Dispatch\u00a0 153.45500\u00a0 WQPD518\u00a0 BM 186.2 PL AmericanAmb American Ambulance Service - Wheelchair Cars\u00a0 FMN\u00a0 EMS Dispatch\u00a0 155.28000\u00a0 KNAD902\u00a0 BM AmerLegEMS American Legion Ambulance (Griswold and Jewett City)\u00a0 FMN\u00a0 EMS Dispatch\u00a0 155.32500\u00a0 KYU482\u00a0 173.8 PL L&MH Medics Lawerence and Memorial Hospital Paramedics (Dispatched by Waterford and Groton Dispatch)\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,47 @@
+{
+    "relation": [
+        [
+            "Constant",
+            "src_over",
+            "src_in",
+            "src_atop",
+            "multiply",
+            "screen",
+            "add"
+        ],
+        [
+            "Value",
+            "3",
+            "5",
+            "9",
+            "14",
+            "15",
+            "16"
+        ],
+        [
+            "Description",
+            "The tint is drawn on top of the drawable. [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]",
+            "The tint is masked by the alpha channel of the drawable. The drawable\u2019s color channels are thrown out. [Sa * Da, Sc * Da]",
+            "The tint is drawn above the drawable, but with the drawable\u2019s alpha channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]",
+            "Multiplies the color and alpha channels of the drawable with those of the tint. [Sa * Da, Sc * Dc]",
+            "[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]",
+            "Combines the tint and drawable color and alpha channels, clamping the result to valid color values. Saturate(S + D)"
+        ]
+    ],
+    "pageTitle": "ProgressBar | Android Developers",
+    "title": "",
+    "url": "http://developer.android.com/reference/android/widget/ProgressBar.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00018-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 65511971,
+    "recordOffset": 65444649,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Must be one of the following constant values. Defines how the indeterminate mode should behave when the progress reaches max. android:indeterminateBehavior Related Methods This corresponds to the global attribute resource symbol indeterminate. This may also be a reference to a resource (in the form \"@[package:]type:name\") or theme attribute (in the form \"?[package:][type:]name\") containing a value of this type. Must be a boolean value, either \"true\" or \"false\". Allows to enable the indeterminate mode. In this mode the progress bar plays an infinite looping animation. android:indeterminate Related Methods This corresponds to the global attribute resource symbol animationResolution. This may also be a reference to a resource (in the form \"@[package:]type:name\") or theme attribute (in the form \"?[package:][type:]name\") containing a value of this type. Must be an integer value, such as \"100\". Timeout between frames of animation in milliseconds android:animationResolution XML Attributes AccessibilityEvent. Handles the request for sending an AccessibilityEvent event) sendAccessibilityEventUnchecked(",
+    "textAfterTable": "Related Methods android:indeterminateDuration Duration of the indeterminate animation. Must be an integer value, such as \"100\". This may also be a reference to a resource (in the form \"@[package:]type:name\") or theme attribute (in the form \"?[package:][type:]name\") containing a value of this type. This corresponds to the global attribute resource symbol indeterminateDuration. Related Methods android:indeterminateOnly Restricts to ONLY indeterminate mode (state-keeping progress mode will not work). Must be a boolean value, either \"true\" or \"false\". This may also be a reference to a resource (in the form \"@[package:]type:name\") or theme attribute (in the form \"?[package:][type:]name\") containing a value of this type. This corresponds to the global attribute resource symbol indeterminateOnly. Related Methods android:indeterminateTint Tint to apply to the indeterminate progress indicator. Must be a color value, in the form of \"#rgb\", \"#argb\", \"#rrggbb\", or \"#aarrggbb\". This may also be a reference to a resource (in the form \"@[package:]type:name\") or theme attribute (in the form \"?[package:][type:]name\") containing a value of this type. This corresponds to the global attribute resource symbol indeterminateTint. Related Methods",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

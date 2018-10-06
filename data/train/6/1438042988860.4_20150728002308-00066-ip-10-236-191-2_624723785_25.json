@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Title",
+            "Conservation Program Manager (PDF; 139 KB)",
+            "Conservation Program Manager (PDF; 145 KB)",
+            "Conservation Program Manager (PDF; 142 KB)"
+        ],
+        [
+            "Series",
+            "0343",
+            "0343",
+            "0343"
+        ],
+        [
+            "Grade",
+            "09",
+            "11",
+            "12"
+        ]
+    ],
+    "pageTitle": "Kansas Position Descriptions | NRCS",
+    "title": "0343 - Program Analyst",
+    "url": "http://www.nrcs.usda.gov/wps/portal/nrcs/detail/ks/people/employees/?cid=nrcs142p2_033300",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00066-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 624739719,
+    "recordOffset": 624723785,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "2210-Information Technology Specialist 1371-Cartographic Technician 1370-Cartographer 1350-Geologist 1111-Interdisciplinary 1084-Visual Information Specialist 1082-Editor 1035-Public Affairs Specialist 0890-Agricultural Engineer 0810-Civil Engineer 0809-Construction Control Inspector 0802-Engineering Technician (Civil) 0561-Budget Technician 0560-Budget Officer 0503-Fiscal Technician 0471-Agronomist 0470-Soil Scientist 0460-Forester 0458-Soil Conservation Technician 0457-Soil Conservationist 0454-Rangeland Management Specialist 0404-Biological Sciences Technician 0401-Natural Resource Specialist 0343-Program Analyst 0326-Office Automation 0318-Secretary 0303-Office Assistant 0201-Human Resources Specialist The following documents require Adobe Reader. Kansas Position Descriptions Kansas Position Descriptions } }); } } Galleria.run('#galleria'); // Initialize Galleria Galleria.loadTheme('/NRCS_WIDTheme/themes/html/NRCS_WIDTheme/js/gallery/themes/classic/galleria.classic.min.js'); // Load the classic theme $g(\".gallery_insert\").html(data); if(data != ''){ // alert(data); success: function(data) { cache: false, url: '/wps/PA_NRCSConsumption/wid/GalleryImageLoader.jsp?galId='+galId, $g.ajax({ //alert(galId); var $g = jQuery.noConflict(); function loadGallery(galId){ } $g(\".popUpBroken\").remove(); var $g = jQuery.noConflict(); function hidePopUp(broken_id){ } } }); } $g(\"#\"+broken_id).before(data); success: function(data) { cache: false, url: '/wps/PA_NRCSConsumption/brokenLink/?type=' + type +'&cid='+contentId +'&brokenId='+broken_id, $g.ajax({ if(type == 'publish' || type == 'archive' || type == 'broken_doc'){ } $g(\"#\"+broken_id).before(\" \u00a0 X \u00a0 This link appears to be broken. Reason: Publication does not exist. Publication may have been deleted from the System.\"); if(type == 'broken_pub'){ } $g(\"#\"+broken_id).before(\"",
+    "textAfterTable": "Title Series Grade Office Assistant (PDF; 219 KB) 0303 05 Office Assistant (PDF; 226 KB) 0303 07 0318 - Secretary Title Series Grade Secretary (OA) (PDF; 221 KB) 0318 09 0326 - Office Automation Title Series Grade Office Automation Assistant (PDF; 210 KB) 0326 05 0343 - Program Analyst Title Series Grade Conservation Program Manager (PDF; 139 KB) 0343 09 Conservation Program Manager (PDF; 145 KB) 0343 11 Conservation Program Manager (PDF; 142 KB) 0343 12 0401 - Natural Resource Specialist Title Series Grade Natural Resource Specialist (Biologist) (PDF; 160 KB) 401 12 Natural Resource Specialist (Resource Conservationist, Area Office) (PDF; 129 KB) 401 12 Natural Resource Specialist (Resource Conservationist, State Office) (PDF; 159 KB) 401 12 Natural Resource Specialist (State Resource Inventory Coordinator) (PDF; 206 KB) 401 12 Natural Resource Specialist (State Conservationist's Staff) (PDF; 185 KB) 401",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "151.66500",
+            "154.61500"
+        ],
+        [
+            "License",
+            "",
+            ""
+        ],
+        [
+            "Type",
+            "M",
+            "M"
+        ],
+        [
+            "Tone",
+            "",
+            ""
+        ],
+        [
+            "Alpha Tag",
+            "RHS Maint",
+            "RHS Staff"
+        ],
+        [
+            "Description",
+            "Royal High School - Maintenance",
+            "Royal High School - Staff"
+        ],
+        [
+            "Mode",
+            "FMN",
+            "FMN"
+        ],
+        [
+            "Tag",
+            "Schools",
+            "Schools"
+        ]
+    ],
+    "pageTitle": "Ventura County, California (CA) Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?ctid=238",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00336-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 665667931,
+    "recordOffset": 665647288,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Sheriff Ventura County //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { }); }); } act=1; setEsc(this,origHtml); this.innerHTML = getTagsHTML; getTagsHTML += '\\n'; } getTagsHTML += '' + tagNames[i] + '\\n'; for (var i=0;",
+    "textAfterTable": "156.15000\u00a0 WPMA238\u00a0 RM 123.0 PL VCSD 3 East Ch 3 - Dispatch East\u00a0 FMN\u00a0 Law Dispatch\u00a0 159.21000\u00a0 KMH693\u00a0 BM 110.9 PL VCSD 4 CMD Ch 4 - Command 4\u00a0 FMN\u00a0 Law Tac\u00a0 158.73000\u00a0 KC3010\u00a0 M 100.0 PL VCSD 5 CC W Ch 5 - Car-to-Car\u00a0 FM\u00a0 Law Talk\u00a0 156.01500\u00a0 KNNN385\u00a0 BM 100.0 PL VCSD 6 CWide Ch 6 - Countywide Mutual Aid (used for interop with all municipal PDs)\u00a0 FM\u00a0 Interop\u00a0 155.16000\u00a0 KNBZ695\u00a0 BM CSQ VCSD 9 SAR Ch 9 - Search & Rescue\u00a0 FM\u00a0 Emergency Ops\u00a0 151.05500\u00a0 KME545\u00a0 RM 206.5 PL VCSD",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

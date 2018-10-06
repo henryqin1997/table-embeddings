@@ -1,0 +1,91 @@
+{
+    "relation": [
+        [
+            "K",
+            "\u03bb",
+            "precision (%)",
+            "recall (%)",
+            "f-measure (%)"
+        ],
+        [
+            "5",
+            "3",
+            "81.25",
+            "100.00",
+            "89.66"
+        ],
+        [
+            "5",
+            "4",
+            "93.62",
+            "97.78",
+            "95.65"
+        ],
+        [
+            "5",
+            "5",
+            "97.87",
+            "97.87",
+            "97.87"
+        ],
+        [
+            "8",
+            "3",
+            "100.00",
+            "95.83",
+            "97.87"
+        ],
+        [
+            "8",
+            "4",
+            "100.00",
+            "85.42",
+            "92.13"
+        ],
+        [
+            "8",
+            "5",
+            "100.00",
+            "72.92",
+            "84.34"
+        ],
+        [
+            "10",
+            "3",
+            "100.00",
+            "81.25",
+            "89.66"
+        ],
+        [
+            "10",
+            "4",
+            "100.00",
+            "64.58",
+            "78.48"
+        ],
+        [
+            "10",
+            "5",
+            "100.00",
+            "58.33",
+            "73.68"
+        ]
+    ],
+    "pageTitle": "Introduction",
+    "title": "",
+    "url": "http://www.mdpi.com/1424-8220/11/9/8782/xml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985140.15/warc/CC-MAIN-20150728002305-00270-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 587619675,
+    "recordOffset": 587597160,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 14 May 2015 11:45:03 GMT",
+    "textBeforeTable": "Text line segmentation test results (Example #1). Table A1. . Table A1 All test results from algorithm #1 and #2 are reorganized according to segmentation error type. The results are presented in Evaluation of the Algorithm\u2019s Efficiency Based on Error Type (Example #1) 2. Line #3 = 1. Line #2 = 2, and Line #1 = 2, Furthermore, the number of objects per over-segmented lines is: = 0. mixlindet O = unlindet O = 2, and ovlindet O = 1, clindet O , the results are as follows: Figure A1(d) From Line #3 = 1. Line #2 = 3, and Line #1 = 4, Consequently, the number of objects per over-segmented line is: = 0. mixlindet O = unlindet O = 2, and ovlindet O = 1, clindet O , the results are as follows: Figure A1(c) From Text after segmentation made by the algorithm #2. (d) Text after segmentation made",
+    "textAfterTable": "According to RMSE , the algorithm #2 shows slightly better performances than algorithm #1 in the domain of text line segmentation. 4. Example #2 After the process of text line segmentation by the algorithms #1 and #2, obtained results are shown in Figure A2 . From Figure A2(c) , the results are as follows: O ovlindet = 0, O mixlindet = 0, n (representing the sequence of consecutive lines) = 2 [ 11 ]. Hence, it follows O unlindet = 1, i.e. , ( n \u22121) [ 11 ], and O clindet = 1 + 1 = 2 [ 11 ]. From Figure A2(d) , the results are as follows: O clindet = 1; O ovlindet = 0, O unlindet = 0, and O mixlindet = 2. Figure A2. Text line segmentation: (a) Original text. (b) Original text with reference objects. (c) Text after segmentation made by the algorithm",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

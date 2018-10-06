@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Command",
+            "hsrp redirects",
+            "show hsrp"
+        ],
+        [
+            "Description",
+            "Configures ICMP redirect messages to be sent when the HSRP is configured on an interface.",
+            "Displays HSRP information."
+        ]
+    ],
+    "pageTitle": "Cisco IOS XR IP Addresses and Services Command Reference for the Cisco CRS Router, Release 4.1 - HSRP Commands [Cisco IOS XR Software (End-of-Sale)] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/crs/software/crs_r4-1/addr_serv/command/reference/b_ipaddr_cr41crs/b_ipaddr_cr41crs_chapter_0110.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00024-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 364996147,
+    "recordOffset": 364970459,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{4372=If this command is not configured, and the hsrp use-bia command is not configured, the standard virtual MAC address is used: 0000.0C07.ACn, where n is the group number in hexadecimal. This address is specified in RFC\u00a02281, Cisco Hot Standby Router Protocol (HSRP).}",
+    "TableContextTimeStampAfterTable": "{1835=If the end nodes are configured to use 4000.1000.1060 as the MAC address of the network node, the command to configure the virtual MAC address is as follows:}",
+    "textBeforeTable": "Syntax Description [string] authentication [group-number] hsrp no string authentication [group-number] hsrp To configure an authentication string for the Hot Standby Router Protocol (HSRP), use the hsrp authentication command in HSRP interface configuration mode. To delete an authentication string, use the no form of this command. hsrp authentication show hsrp router hsrp interface (HSRP) hsrp use-bia hsrp track hsrp timers hsrp redirects hsrp priority hsrp preempt hsrp mac-address hsrp ipv4 hsrp delay hsrp bfd multiplier hsrp bfd minimum-interval hsrp bfd fast-detect hsrp authentication For detailed information about HSRP concepts, configuration tasks, and examples, refer to the Cisco\u00a0IOS\u00a0XR IP Addresses and Services Configuration Guide for the Cisco\u00a0CRS Router. This chapter describes the Cisco\u00a0IOS\u00a0XR software commands used to configure and monitor the Hot Standby Router Protocol (HSRP). HSRP Commands show hsrp router hsrp interface (HSRP) hsrp use-bia",
+    "textAfterTable": "The default group number is 0. The default authentication string is cisco. Command Modes HSRP interface configuration Command History Release Modification Release 2.0 This command was introduced. Usage Guidelines The authentication string is sent unencrypted in all HSRP messages. The same authentication string must be configured on all routers and access servers on a LAN to ensure interoperation. Authentication mismatch prevents a device from learning the designated Hot Standby IP address and the Hot Standby timer values from other routers configured with HSRP. Task ID Task ID Operations hsrp read, write Examples This example shows how to configure \u201ccompany1\u201d as the authentication string required to allow Hot Standby routers in",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

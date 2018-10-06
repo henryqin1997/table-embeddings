@@ -1,0 +1,58 @@
+{
+    "relation": [
+        [
+            "Element",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Required/ Optional",
+            "Optional",
+            "Optional",
+            "Optional",
+            "Optional",
+            "Optional",
+            "Required",
+            "Optional",
+            "Optional",
+            "Optional"
+        ],
+        [
+            "Description",
+            "Specifies the full class name of the standard MBean to instantiate and register with the Coherence management framework. The MBean class must be in the classpath to correctly instantiate. This element cannot be used with the element or the element.",
+            "Specifies the name of a class factory used to obtain MBeans to register with the Coherence management framework. The factory class must be in the classpath to correctly instantiate. This element is used with the element. This element cannot be used with the element or the element.",
+            "Specifies a JMX ObjectName query pattern. The query pattern is executed against a local MBean server and the resulting objects are registered with the Coherence management framework. This allows for a single point of consolidation of MBeans for the grid. For example, the following query includes all the MBeans under the java.lang domain in the Coherence management infrastructure. java.lang:* This element cannot be used with the element or the element.",
+            "Specifies the name of a default domain for the source MBean server. This is used to locate the MBean server where the mbean-query should be executed.",
+            "Specifies the method name on the factory class (specified by the element) that is used to instantiate the MBean.",
+            "Specifies the JMX ObjectName prefix for the MBean that is registered with the Coherence management framework. The prefix should be a comma-delimited Key=Value pair. The Coherence MBean naming convention stipulates that the name should begin with a type/value pair (for example, type=Platform).",
+            "Specifies whether the MBean is visible across the cluster. Valid values are true or false. If set to true, the MBean is registered only with a local MBean server and is not accessible by other cluster nodes. If set to false, the nodeId=... key attribute is added to its name and the MBean is visible from any of the managing nodes (nodes that set the element to values of all or remote-only). The default value is false.",
+            "Specifies whether the MBean should be instantiated and registered on this instance. Valid values are true or false. The default value is false.",
+            "Specifies whether the MBean should extend beyond the node connection life cycle. Valid values are true or false. If true, the MBean maintains the statistics and values across connections (coincides with the JVM life cycle). If false, the MBean is destroyed and re-created when a node is disconnected from the grid. The default value is false."
+        ]
+    ],
+    "pageTitle": "Operational Configuration Elements",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E24290_01/coh.371/e22837/appendix_operational.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00106-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 78971423,
+    "recordOffset": 78924258,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{232565=If the value does not contain a factor, a factor of mega is assumed. Legal values are positive integers between 1 and Integer.MAX_VALUE - 1023 (that is, 2,147,482,624 bytes). The default value is 1024MB., 156584=For unicast-listener, multicast-listener and packet-publisher: Specifies the number of packets of packet-size that the datagram socket are asked to size itself to buffer. See SO_SNDBUF and SO_RCVBUF. Actual buffer sizes may be smaller if the underlying socket implementation cannot support more than a certain size. The default values are 32 for publishing, 64 for multicast listening, and 1428 for unicast listening., 164071=Specifies the interval between heartbeats. Each member issues a unicast heartbeat, and the most senior member issues the cluster heartbeat, which is a broadcast message. The heartbeat is used by the tcp-ring-listener as part of fast death detection. The default value is 1000., 138778=Specifies the smallest available buffer size to be stored in a segment. This value must be a multiple of 1024. Therefore, the smallest possible buffer is 1024 bytes. The default value is 1KB., 230649=If the value does not contain a factor, a factor of mega is assumed. Legal values are positive integers between 1 and Integer.MAX_VALUE - 1023 (that is, 2,147,482,624 bytes). The default value is 1MB., 167073=Specifies the maximum size of the pool. The value is entered in bytes. By default, the <packet-pool> element is unspecified within the configuration and the size defaults to 0. For the packet publisher, 0 indicates that the buffer is calculated by factoring the preferred MTU size with 2048. For the incoming message handler, 0 indicates that the buffer is calculated by factoring the preferred MTU size with 8192., 145756=Specifies the number of milliseconds that a new member waits without finding any evidence of a cluster before starting its own cluster and electing itself as the senior cluster member. Legal values are from 1000 to 1000000. The default value is 3000., 176098=This value should be at least 512, and defaults to a value based on the local nodes MTU. An MTU of 1500 is assumed if the MTU cannot be obtained and results in a value of 1448.}",
+    "lastModified": "Wed, 13 May 2015 05:22:04 GMT",
+    "textBeforeTable": "Table A-26 Subelements of mbean Table A-26 describes the subelements of the mbean element. Elements The mbean element contains a list of elements to be instantiated and registered with the Coherence management framework. Description Used in: mbeans mbean Contains the Reporter's configuration. Optional <reporter> Contains the configuration information of a filter class that is used to filter MBeans before they are registered. Optional <mbean-filter> Contains a list of MBeans to be registered when a node joins the cluster. Optional <mbeans> Contains the configuration information for the MBeanServer factory that implements the com.tangosol.net.management.MBeanServerFinder interface, which is used to find an MBean server that is used by the Coherence JMX framework to register new or locate existing MBeans. The class name is entered using the <class-name> subelement and supports initialization parameters using the <init-params> element. Optional <server-factory> Specifies the name of the Invocation Service",
+    "textAfterTable": "mbeans Used in: management-config Description The mbeans element is the root element for defining custom mbeans and is the root element of a custom mbean configuration file. It contains a list of mbean elements to be instantiated and registered with the Coherence management framework. Elements Table A-27 describes the subelements of the mbeans element. Table A-27 Subelement of mbeans Element Required/ Optional Description <mbean> Required Specifies the MBean type, implementation, and ObjectName that are instantiated and registered with the Coherence management framework. mbean-filter Used in management-config. Description The mbean-filter element is used to specify a filter that evaluates MBean names before they are registered in the MBean server. The com.tangosol.net.management.ObjectNameExcludeFilter class is the default filter and is used to exclude MBeans from being registered based on their JMX object name using standard regex patterns. The list is entered as a list of names separated by any white space characters. The following MBeans are excluded by the out-of-box configuration:  <management-config> <mbean-filter> <class-name>com.tangosol.net.management.ObjectNameExcludeFilter</class-name> <init-params> <init-param>",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

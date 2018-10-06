@@ -1,0 +1,77 @@
+{
+    "relation": [
+        [
+            "id",
+            "1",
+            "1"
+        ],
+        [
+            "select_type",
+            "SIMPLE",
+            "SIMPLE"
+        ],
+        [
+            "table",
+            "c",
+            "i"
+        ],
+        [
+            "type",
+            "range",
+            "ref"
+        ],
+        [
+            "possible_keys",
+            "PRIMARY,category,published,access,trash",
+            "item,catid"
+        ],
+        [
+            "key",
+            "category",
+            "catid"
+        ],
+        [
+            "key_len",
+            "8",
+            "4"
+        ],
+        [
+            "ref",
+            "NULL",
+            "m1243_klub.c.id"
+        ],
+        [
+            "rows",
+            "10",
+            "218"
+        ],
+        [
+            "filtered",
+            "100.00",
+            "100.00"
+        ],
+        [
+            "Extra",
+            "Using index condition; Using temporary; Uruchomiono metod\u0119 filesort",
+            "Using index condition; Using where"
+        ]
+    ],
+    "pageTitle": "Klub Wy\u017c\u0142\u00f3w Weimarskich - Strona g\u0142\u00f3wna",
+    "title": "",
+    "url": "http://klub.weimaraner.pl/klub-forum/blog.php/?page_id=98",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00306-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 136343467,
+    "recordOffset": 136296693,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{17144=Piesek mieszka w Tczewie,obecni w\u0142a\u015bciciele mog\u0105 dowie\u015b\u0107 Hugo do Warszawy. Wszelkich informacji na temat pieska udzieli ch\u0119tnie obecna w\u0142a\u015bcicielka tel.791 076 155 oraz hodowczyni 660-448-369. Cena\u00a02000.00 z\u0142, 16302=Jest nam bardzo ci\u0119\u017cko ale z powodu problem\u00f3w finansowych,osobistych,zmiany mieszkania na mniejsze,nie mo\u017cemy zatrzyma\u0107 OMAR HUGA.Szukamy dla niego nowego odpowiedzialnego domku. Szczeniak ma 3 miesi\u0105ce,metryk\u0119 uprawniaj\u0105c\u0105 do wyrobu rodowodu ze ZKwP(FCI),aktualne szczepienia,swoje potrzeby za\u0142atwia ju\u017c na dworze co jest dodatkowym atutem.Jest radosny,lubi si\u0119 bawi\u0107 i przytula\u0107. Hodowla WEIMARANERS HOUSE z kt\u00f3rej pochodzi Hugo jest w sta\u0142ym kontakcie z obecnymi w\u0142a\u015bcicielami i wsp\u00f3lnie szukamy nowego Pana/Pani. Piesek jest z ostatniego miotu urodzi\u0142 si\u0119 10.04.2015,ojcem jest DANTON (ATRIA CORDIS) FCI matk\u0105 jest nasza suka ABIES (GOOD DOG)FCI Wszystkie osi\u0105gni\u0119cia rodzic\u00f3w znajdziecie Pa\u0144stwo na naszej stronie www.weimarskiwyzel.pl\u00a0, 35261=W dniu 13.07.2015 w hodowli Dotyk Po\u0142udnia na \u015bwiat przysz\u0142y szczeni\u0119ta miotu \u201eC\u201d (6 suczek i 2 pieski). Rodzicami zostali\u00a0JABO After Ishtar\u2013 M\u0142.CH.Pl., Ch.PL, Interchampion C.I.B., Zwyc. Klubu 2012, KWW III, MFT I, KWW I, KT I, Zwyc. Najlepszy Tropowiec CPC, PP I, HD-A, oraz Ch.PL CYGA z Zebrzydowic, PP II, HD-A.}",
+    "lastModified": "Fri, 31 Jul 2015 07:17:53 GMT",
+    "textBeforeTable": "Obja\u015bnienie \u00a0\u00a0WHERE `session_id` = 'r8st8u1ujf86h1n9ipl56def10' \u00a0\u00a0FROM `joomla_session` SELECT `data`",
+    "textAfterTable": "Stos wywo\u0142ania JROOT/libraries/joomla/session/storage/database.php:44 JROOT/libraries/joomla/session/session.php:665 JROOT/libraries/joomla/session/session.php:603 JROOT/libraries/cms/application/cms.php:739 JROOT/libraries/cms/application/cms.php:131 JROOT/libraries/cms/application/site.php:63 JROOT/libraries/cms/application/cms.php:399 JROOT/libraries/joomla/factory.php:125 JROOT/index.php:42 [ Dodaj dyrektyw\u0119 xdebug.file_link_format do pliku php.ini, aby uzyska\u0107 \u0142\u0105cza do plik\u00f3w] Czas zapytania: 0.62\u00a0ms Po ostatnim zapytaniu: 1.72\u00a0ms",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "String reportObjectAbsolutePathURL",
+            "String objectType",
+            "byte[] objectZippedData",
+            "String bipSessionToken"
+        ],
+        [
+            "Description",
+            "The path to the object in the catalog.",
+            "The type of object to upload. Valid values are: xdm (data model) xdo (report) xsb (sub-template) xss (style template)",
+            "The object to upload in zipped format.",
+            "The proprietary token string generated for the user by the BI Publisher server. With the bipSessionToken string, the user no longer needs to provide user credentials. The BI Publisher server can validate this token string and restore the BI Publisher server session to perform needed operation."
+        ]
+    ],
+    "pageTitle": "CatalogService",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E21764_01/bi.1111/e18863/catalogservice.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00313-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 77294383,
+    "recordOffset": 77286181,
+    "tableOrientation": "VERTICAL",
+    "lastModified": "Wed, 13 May 2015 05:19:36 GMT",
+    "textBeforeTable": "Table 6-26 Parameters for uploadObjectInSession() Method String uploadObject(String reportObjectAbsolutePathURL, String objectType, byte[] objectZippedData, String userID, String bipSessionToken); Signature For more information about in-session methods, see Section 1.2, \"About In-Session Methods.\" Use uploadObject() method to upload a new object to the BI Publisher catalog for a given user. 6.26 uploadObjectInSession() Method Specifies the password for the user name. String password Specifies a BI Publisher user name. String userID The object to upload in zipped format. byte[] objectZippedData The type of object to upload. Valid values are: xdm (data model) xdo (report) xsb (sub-template) xss (style template) String objectType The path to the object in the catalog. String reportObjectAbsolutePathURL Description Parameter Table 6-25 Parameters for uploadObject() Method String uploadObject(String reportObjectAbsolutePathURL, String objectType, byte[] objectZippedData, String userID, String password); Signature",
+    "textAfterTable": "6.27 uploadXLIFF() Method Use uploadXLIFF() method to upload a translation file (XLIFF) to the catalog. Signature boolean uploadXLIFF(String objectAbsolutePath, byte[] xliffData, String locale, String userID, String password); Table 6-27 Parameters for uploadXLIFF() Method Parameter Description String objectAbsolutePath The path to the XLIFF object to upload. byte[] xliffData The XLIFF fie to upload. String locale The locale to assign to the XLIFF (for example, en_US). String userID Specifies the BI Publisher user name. String password Specifies the password for the user name. 6.28 uploadXLIFFInSession() Method Use uploadXLIFF() method to upload a translation file (XLIFF) to the catalog for a given user. For more information about in-session methods, see Section 1.2, \"About In-Session Methods.\" Signature boolean",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

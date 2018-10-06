@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "",
+            "2007-09-17T00:00:00",
+            "2013-11-20T00:00:00",
+            "2013-12-06T00:00:00"
+        ],
+        [
+            "Description",
+            "1. Resolve kinematic corrections for aircraft position data using kinematic aircraft GPS and static ground GPS data. 2. Develop a smoothed best estimate of trajectory (SBET) file that blends the post-processed aircraft position with altitude. 3. Calculate laser point position by associating the SBET position to each laser point return time, scan angle, intensity, etc. Creates raw laser point cloud data for the entire survey in *.las. 4. Import raw laser points into manageable blocks (less than 500 mb) to perform manual relative accuracy calibration and filter for pits/birds. Ground points are then classified for individual flights lines (to be used for relative accuracy testing and calibration). 5. Using ground classification points per each flight line, the relative accuracy is tested. Automated line-to-line calibrations are then performed for system attitude parameters (pitch, roll, heading), mirror flex (scale) and GPS/IMU drift. Calibrations are performed on ground classified points from paired flights lines. Every flight line is used for relative accuracy calibration. 6. Position and attitude data are imported. Resulting data are classified as ground and non-ground points. Statistical absolute accuracy is assessed via direct comparisons of ground classified points to ground RTK survey data. Data are then converted to orthometric elevations (NAVD88) by applying a Geoid03 correction. Ground models are created as a triangulated surface and exported as ArcInfo ASCII grids at a 1-meter pixel resolution.",
+            "Acquisition. The LiDAR survey utilized a Leica ALS50 Phase II mounted in Cessna Caravan 208B. The full survey was conducted September 17, 2007. The Leica ALS50 Phase II system was set to acquire =105,000 laser pulses per second (i.e. 105 kHz pulse rate) and flown at 800 meters above ground level (AGL), capturing a scan angle of plus\\minus 14o from nadir2. These settings are developed to yield points with an average native density of =8 points per square meter over terrestrial surfaces. The native pulse density is the number of pulses emitted by the LiDAR system. Some types of surfaces (i.e., dense vegetation or water) may return fewer pulses than the laser originally emitted. Therefore, the delivered density can be less than the native density and lightly variable according to distributions of terrain, land cover and water bodies.",
+            "The NOAA Coastal Services Center (CSC) downloaded topographic files in LAZ format from PSLC's website. The files contained lidar easting, northing, elevation, intensity, return number, class, scan angle and GPS time measurements; the data was received in UTM Zone 11 (in meters) and vertical coordinates were referenced to NAVD88 in meters using the Geoid03 model. CSC performed the following processing for data storage and Digital Coast provisioning purposes: 1. The All-Return LAZ files were checked for bad elevations 2. The laz files were converted from a Projected Coordinate System (UTM Zone 11) to a Geographic Coordinate system (NAD83) 3. The laz files were then converted to ellipsoidal vertical units in meters.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Components NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/or2007_pslc_sumpter_m2606.xml",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/or2007_pslc_sumpter_m2606.xml&view=ISO19115Components-HTMLTable&title=Components%20NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/or2007_pslc_sumpter_m2606.xml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00173-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 605228992,
+    "recordOffset": 605220790,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:or2007_pslc_sumpter_m2606Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "1 2007 Puget Sound LiDAR Consortium (PSLC) Topographic LiDAR: Sumpter, OR 2013-11-25 1 Lidar Dataset Supplemental Information 1 None 1 North American Datum 1983 2007-01-19 1 none Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 1 Citation URL ftp://csc.noaa.gov/pub/DigitalCoast/lidar1_z/geoid12a/data/2606/supplemental/ 1 NOAA CSC (originator) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,222 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2011-12",
+            "2012-13",
+            "2013-14",
+            "2014-15 *",
+            "2014-15",
+            "2014-15",
+            "2014-15 *"
+        ],
+        [
+            "Team",
+            "BRU",
+            "ZGL",
+            "BRU",
+            "All Teams",
+            "NLEX",
+            "BRU",
+            "BRU"
+        ],
+        [
+            "GP",
+            "28",
+            "8",
+            "32",
+            "18",
+            "13",
+            "5",
+            "5"
+        ],
+        [
+            "GS",
+            "28",
+            "3",
+            "32",
+            "17",
+            "12",
+            "5",
+            "5"
+        ],
+        [
+            "Dbl Dbl",
+            "12",
+            "4",
+            "11",
+            "12",
+            "11",
+            "1",
+            "1"
+        ],
+        [
+            "Tpl Dbl",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "40 Pts",
+            "1",
+            "0",
+            "0",
+            "1",
+            "1",
+            "0",
+            "0"
+        ],
+        [
+            "20 Reb",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "20 Ast",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "Techs",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "HOB",
+            ".361",
+            ".351",
+            ".309",
+            ".335",
+            ".338",
+            ".326",
+            ".326"
+        ],
+        [
+            "Ast/TO",
+            "0.96",
+            "0.96",
+            "1.13",
+            "0.89",
+            "0.55",
+            "2.50",
+            "2.50"
+        ],
+        [
+            "Stl/TO",
+            "0.65",
+            "0.26",
+            "0.45",
+            "0.22",
+            "0.16",
+            "0.50",
+            "0.50"
+        ],
+        [
+            "FT/FGA",
+            "0.45",
+            "0.36",
+            "0.42",
+            "0.65",
+            "0.65",
+            "0.65",
+            "0.65"
+        ],
+        [
+            "W's",
+            "8",
+            "4",
+            "19",
+            "7",
+            "6",
+            "1",
+            "1"
+        ],
+        [
+            "L's",
+            "20",
+            "4",
+            "13",
+            "11",
+            "7",
+            "4",
+            "4"
+        ],
+        [
+            "Win %",
+            "0.286",
+            "0.500",
+            "0.594",
+            "0.389",
+            "0.462",
+            "0.200",
+            "0.200"
+        ],
+        [
+            "OWS",
+            "4.46",
+            "0.53",
+            "2.94",
+            "3.93",
+            "3.29",
+            "0.96",
+            "0.84"
+        ],
+        [
+            "DWS",
+            "1.24",
+            "0.55",
+            "1.77",
+            "1.00",
+            "0.52",
+            "-0.07",
+            "0.01"
+        ],
+        [
+            "WS",
+            "5.70",
+            "1.09",
+            "4.71",
+            "4.93",
+            "3.81",
+            "0.89",
+            "0.85"
+        ]
+    ],
+    "pageTitle": "Al Thornton Player Profile, Golden State Warriors, News, Rumors, NBA Stats, NCAA Stats, International Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Al_Thornton/Summary/39",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988051.33/warc/CC-MAIN-20150728002308-00178-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 21920091,
+    "recordOffset": 21877625,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{48267=Born: Dec 7, 1983 (31 years old), 47158=Draft Entry: 2007 NBA Draft}",
+    "TableContextTimeStampAfterTable": "{87952=* International basketball history from 2011-2012, 30454=* Since the 1946-1947 season, 123875=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 4 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ International ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "2.01 0.90 7.38 2010-11 * WAS 49 23 21.8 3.14 6.67 .471 0.08 0.51 .160 1.65 2.18 .757 4.67 0.94 2.24 3.18 1.04 0.57 0.18 2.10 0.90 8.02 2010-11 * GOS 22 0 14.3 2.32 4.73 .490 0.00 0.05 .000 1.32 1.59 .829 3.01 0.45 2.14 2.59 0.50 0.32 0.14 1.82 0.91 5.95 CAREER \u00a0 296 167 28.0 4.62 10.23 .452 0.26 0.90 .293 2.41 3.22 .747 6.08 1.32 2.84 4.17 1.19 0.62 0.51 2.60 1.43 11.92 NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2007-08 LAC 79 31 2157.8 374 871 .429 43 130 .331 214 288 .743 498 98 260 358 98 46 43 195 128 1005 2008-09 LAC 71 67 2654.1 469 1051 .446 20 79 .253 236 313 .754 575 122 246 368 103 59 62 227 130 1194 2009-10 * All Teams 75 46 2079.2 320 676 .473 11 31 .355 153 211",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

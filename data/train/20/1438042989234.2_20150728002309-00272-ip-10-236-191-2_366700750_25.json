@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3"
+        ],
+        [
+            "Command or Action",
+            "switch# configure terminal",
+            "switch(config)# interface type slot/port",
+            "switch(config -if)# no snmp trap link-status"
+        ],
+        [
+            "Purpose",
+            "Enters configuration mode.",
+            "Specifies the interface to be changed.",
+            "Disables SNMP link-state traps for the interface. Enabled by default."
+        ]
+    ],
+    "pageTitle": "Cisco Nexus 5000 Series NX-OS System Management Configuration Guide, Release 5.0(2)N1(1) - Configuring SNMP [Cisco Nexus 5000 Series Switches] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5000/sw/system_management/502_n1_1/b_Cisco_n5k_system_mgmt_cg_rel_502_n1_1/Cisco_n5k_system_mgmt_cg_rel_502_n1_1_chapter12.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00272-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 366725071,
+    "recordOffset": 366700750,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "DETAILED STEPS (Optional) switch# copy running-config startup-config 4.\u00a0\u00a0\u00a0 (Optional) switch# show snmp user 3.\u00a0\u00a0\u00a0 switch(config)# snmp-server user name [auth {md5 | sha} passphrase [auto] [priv [aes-128] passphrase] [engineID id] [localizedkey]] 2.\u00a0\u00a0\u00a0 switch# configuration terminal 1.\u00a0\u00a0\u00a0 SUMMARY STEPS To configure a user for SNMP, perform this task: Configuring SNMP Users Configuring SNMP Cisco NX-OS supports read-only access to Ethernet MIBs. SNMP has the following configuration guidelines and limitations: Configuration Guidelines and Limitations You can begin communicating with the agent once your user name is created, your roles are set up by your administrator, and you are added to the roles. SNMP access rights are organized by groups. Each group in SNMP is similar to a role through the CLI. Each group is defined with three accesses: read access, write access,",
+    "textAfterTable": "Step\u00a04 switch# copy running-config startup-config \u00a0 (Optional) Saves this configuration change. \u00a0 Enforcing SNMP Message Encryption You can configure SNMP to require authentication or encryption for incoming requests. By default the SNMP agent accepts SNMPv3 messages without authentication and encryption. When you enforce privacy, Cisco NX-OS responds with an authorization Error for any SNMPv3 PDU request using securityLevel parameter of either noAuthNoPriv or authNoPriv. You can enforce SNMP message encryption for a specific user. Command Purpose switch(config)# snmp-server user name enforcePriv Enforces SNMP message encryption for this user. You can enforce SNMP message encryption for all users. Command Purpose switch(config)# snmp-server globalEnforcePriv",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,87 @@
+{
+    "relation": [
+        [
+            "Variable Name",
+            "Over1",
+            "SameHouse",
+            "DiffHouse",
+            "DiffHouseSameCounty",
+            "DiffCounty",
+            "DiffCntySameState",
+            "DiffState",
+            "LivedAbroad"
+        ],
+        [
+            "Label",
+            "Population 1 year and over",
+            "Same house",
+            "Different house in the U.S.",
+            "Same county, different house",
+            "Different county",
+            "Different county, Same state",
+            "Different state",
+            "Lived Abroad 1 year ago"
+        ],
+        [
+            "Definition - Code used to derive",
+            "B07204i001",
+            "B07204i002",
+            "B07204i003",
+            "B07001i033",
+            "B07204i009",
+            "B07001i049",
+            "B07204i011",
+            "B07204i016"
+        ],
+        [
+            "Comment",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Universe Variable",
+            "",
+            "Over1",
+            "Over1",
+            "Over1",
+            "Over1",
+            "Over1",
+            "Over1",
+            "Over1"
+        ],
+        [
+            "Weight Variable",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "",
+    "title": "",
+    "url": "http://mcdc.missouri.edu/data/acs2010/Variables.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00046-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 155507175,
+    "recordOffset": 155489347,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 12 Oct 2012 15:48:24 GMT",
+    "textBeforeTable": "Universe=Total Population Table=D1. AGE Revised as of Fri Oct 12 10:48:24 2012 Metadata for ACS 2010 profiles",
+    "textAfterTable": "Age45_54 45 to 54 years B01001i015 + B01001i016 + B01001i039 + B01001i040 TotPop Age55_59 55 to 59 years B01001i017 + B01001i041 TotPop Age60_64 60 to 64 years B01001i018 + B01001i019 + B01001i042 + B01001i043 TotPop Age65_74 65 to 74 years B01001i020 + B01001i021 + B01001i022 + B01001i044 + B01001i045 + B01001i046 TotPop Age75_84 75 to 84 years B01001i023 + B01001i024 + B01001i047 + B01001i048 TotPop Over85 85 years and over B01001i025 + B01001i049 TotPop MedianAge Median age in years B01002i001 TotPop Over5 5 years and over B06007i001 TotPop Over15 15 years and over B12001i001 TotPop Under18 Under 18 years of Age B05003i003 + B05003i014 TotPop Over18 18 years and over B05003i008 + B05003i019 TotPop Over21 21 years and over B01001i009+B01001i010+B01001i011+B01001i012+B01001i013+B01001i014+B01001i015+B01001i016+B01001i017+B01001i018+B01001i019+B01001i020+B01001i021+B01001i022+B01001i023+B01001i024+B01001i025+B01001i033+B01001i034+B01001i035+B01001i036+B01001i037+B01001i038+B01001i039+B01001i040+B01001i041+B01001i042+B01001i043+B01001i044+B01001i045+B01001i046+B01001i047+B01001i048+B01001i049 TotPop Over25 25 years and over B15002i001 TotPop Over62 62 years and over B01001i019+B01001i020+B01001i021+B01001i022+B01001i023+B01001i024+B01001i025+B01001i043+B01001i044+B01001i045+B01001i046+B01001i047+B01001i048+B01001i049 TotPop Over65 65 years and over B23004i001 TotPop Table=D2. AGE AND SEX Universe=Total Population Variable Name Label Definition - Code",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

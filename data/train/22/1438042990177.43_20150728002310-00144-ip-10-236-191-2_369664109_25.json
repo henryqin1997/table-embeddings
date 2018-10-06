@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6",
+            "Step 7"
+        ],
+        [
+            "Command or Action",
+            "Device(config)# aaa new-model",
+            "Device(config)# aaa authentication arap Example: Enables authentication for ARAP users.",
+            "Device(config)# line number",
+            "Device(config-line)# autoselect arap",
+            "Device(config-line)# autoselect during-login",
+            "Device(config-line)# arap authentication list-name",
+            "Device(config-line)# end"
+        ],
+        [
+            "Purpose",
+            "Enables AAA globally.",
+            "",
+            "(Optional) Changes to line configuration mode.",
+            "(Optional) Enables autoselection of ARAP.",
+            "(Optional) Starts the ARAP session automatically at user login.",
+            "(Optional--not needed if default is used in the aaa authentication arap command) Enables TACACS+ authentication for ARAP on a line.",
+            "Returns to the privileged EXEC mode."
+        ]
+    ],
+    "pageTitle": "Authentication, Authorization, and Accounting Configuration Guide, Cisco IOS XE Release 3S (Cisco ASR 1000) - Configuring Authentication [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/sec_usr_aaa/configuration/xe-3s/asr1000/sec-usr-aaa-xe-3s-asr1000-book/sec-cfg-authentifcn.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00144-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 369735847,
+    "recordOffset": 369664109,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{50275=This command specifies RADIUS servers 172.16.2.3, 172.16.2.17, and 172.16.2.32 as members of the group ppprad., 349605=RFC 2904, 355793=In Cisco IOS XE Release 2.1, this feature was introduced on the Cisco ASR 1000 Series Aggregation Services Routers., 356843=In Cisco IOS XE Release 2.3, this feature was introduced on the Cisco ASR 1000 Series Aggregation Services Routers., 349333=RFC 2903, 349065=RFC 2433, 24918=This command specifies RADIUS servers 172.16.2.3, 172.16.2.17, and 172.16.2.32 as members of the group loginrad., 275020=Microsoft Challenge Handshake Authentication Protocol (MS-CHAP) is the Microsoft version of CHAP and is an extension of RFC 1994. Like the standard version of CHAP, MS-CHAP is used for PPP authentication; in this case, authentication occurs between a PC using Microsoft Windows NT or Microsoft Windows 95 and a Cisco device or access server acting as a network access server., 350158=RFC 2989, 348798=RFC 1334, 349880=RFC 2906, 364736=In Cisco IOS XE Release 2.4, this feature was introduced on the Cisco ASR 1000 Series Aggregation Services Routers., 83804=This command specifies RADIUS servers 172.16.2.3, 172.16.2.17, and 172.16.2.32 as members of the group araprad., 362023=Microsoft Challenge Handshake Authentication Protocol (MS-CHAP) is the Microsoft version of CHAP and is an extension of RFC 1994. Like the standard version of CHAP, MS-CHAP is used for PPP authentication; in this case, authentication occurs between a PC using Microsoft Windows NT or Microsoft Windows 95 and a Cisco router or access server acting as a network access server., 247059=PPP currently supports two authentication protocols: Password Authentication Protocol (PAP) and Challenge Handshake Authentication Protocol (CHAP). Both are specified in RFC 1334 and are supported on synchronous and asynchronous interfaces. Authentication via PAP or CHAP is equivalent to typing in a username and password when prompted by the server. CHAP is considered to be more secure because the remote user's password is never sent across the connection., 108762=This command specifies RADIUS servers 172.16.2.3, 172.16.2.17, and 172.16.2.32 as members of the group nasirad.}",
+    "textBeforeTable": "DETAILED STEPS 7.\u00a0\u00a0\u00a0 Device(config-line)# end 6.\u00a0\u00a0\u00a0 Device(config-line)# arap authentication list-name 5.\u00a0\u00a0\u00a0 Device(config-line)# autoselect during-login 4.\u00a0\u00a0\u00a0 Device(config-line)# autoselect arap 3.\u00a0\u00a0\u00a0 Device(config)# line number 2.\u00a0\u00a0\u00a0 Device(config)# aaa authentication arap 1.\u00a0\u00a0\u00a0 Device(config)# aaa new-model SUMMARY STEPS Use the following commands starting in global configuration mode: Using the aaa authentication arap command, you can create one or more lists of authentication methods that are tried when AppleTalk Remote Access Protocol (ARAP) users attempt to log in to the device. These lists are used with the arap authentication line configuration command. Configuring ARAP Authentication Using AAA Allocating additional background processes can be expensive. You should configure the minimum number",
+    "textAfterTable": "What to Do Next The list-name is any character string used to name the list you are creating. The method argument refers to the actual list of methods the authentication algorithm tries, in the sequence entered. To create a default list that is used when a named list is not specified in the arap authentication command, use the default keyword followed by the methods you want to use in default situations. The additional methods of authentication are used only if the previous method returns an error, not if it fails. To specify that the authentication should succeed even if all methods return an error, specify none as the final method in the command line. Note Because none allows all users logging in to be authenticated, it should be used as a backup method of authentication. The following table lists the supported login authentication methods. Table 6 AAA Authentication ARAP Methods Keyword Description",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

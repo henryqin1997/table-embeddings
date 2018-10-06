@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Related Topic",
+            "Command reference",
+            "Configuration guide",
+            "Cisco NX-OS licensing"
+        ],
+        [
+            "Document Title",
+            "Cisco NX-OS FCoE Command Reference Guide, Nexus 7000 and MDS 9500",
+            "Storage VDC on Cisco Nexus 7000 Series Switches Cisco Nexus 7000 Series NX-OS Virtual Device Context Configuration Guides Cisco Nexus 7000 Series NX-OS Quality of Service Configuration Guide Cisco MDS 9000 Family NX-OS Quality of Service Configuration Guide",
+            "Cisco NX-OS Licensing Guide"
+        ]
+    ],
+    "pageTitle": "Cisco NX-OS FCoE Configuration Guide for Nexus 7000 and MDS 9000 - Configuring FCoE [Cisco Nexus 7000 Series Switches] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/fcoe/configuration/guide/b_Cisco_NX-OS_FCoE_Configuration_Guide/configuring_fcoe.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989043.35/warc/CC-MAIN-20150728002309-00006-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 374590323,
+    "recordOffset": 374558973,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{6183=A Fibre Channel frame consists of 36 bytes of headers and up to 2112 bytes of data for a total maximum size of 2148 bytes. The encapsulated Fibre Channel frame has all the standard headers, which allow it to be passed to the storage network without further modification. To accommodate the maximum Fibre Channel frame in an FCoE frame, the class-fcoe is defined with a default Maximum Transmission Unit (MTU) of 2240 bytes., 37538=1500 MTU do not carry FCOE traffic in all FCOE supported platforms., 18910=Cisco Nexus 2232}",
+    "textBeforeTable": "FIP is encapsulated in an Ethernet packet with a dedicated EtherType, 0x8914. The packet has a 4-bit version field. Along with the source and destination MAC addresses, the FIP packet also contains a FIP operation code and a FIP operation subcode. The following table describes the FIP operation codes and subcodes. FIP Ethernet Frame Format You cannot map VLAN 1 or the native VLAN to an FCoE VSAN. Note The switch expects frames from a FIP T11-compliant CNA to be tagged with the VLAN tag for the FCoE VLAN. Frames that are not correctly tagged are discarded. The Ethernet frames that are sent by the switch to the adapter include the IEEE 802.1Q tag. This tag includes a field for the class of service (CoS) value used by the priority flow control (PFC). The IEEE 802.1Q tag also includes a VLAN field. VLAN Tagging for FCoE Frames A Fibre Channel frame consists of 36 bytes of headers and up to 2112 bytes of data for a total maximum size of 2148 bytes. The encapsulated Fibre Channel frame has all the standard headers, which allow it to be passed to the storage",
+    "textAfterTable": "0x0002 0x01 Virtual Link Instantiation Request 0x02 Virtual Link Instantiation Reply 0x0003 0x01 FIP Keepalive 0x02 FIP Clear Virtual Links 0x0004 0x01 FIP VLAN Request 0x02 FIP VLAN Notification DCBX Data Center Bridging Exchange Protocol The Data Center Bridging Exchange (DCBX) protocol is an extension of the Link Layer Discovery Protocol (LLDP). DCBX end points exchange request and acknowledgment messages. For flexibility, parameters are coded in a type-length-value (TLV) format. Cisco NX-OS switches support the Converged Enhanced Ethernet Data Center Bridging Exchange (CEE-DCBX) is supported on all T11-compliant Generation 2 CNAs. DCBX runs on the physical Ethernet link between the switch and the CNA. By default, DCBX is enabled on Ethernet interfaces. When an",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

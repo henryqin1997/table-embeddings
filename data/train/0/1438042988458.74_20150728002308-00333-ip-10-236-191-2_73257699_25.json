@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Properties",
+            "Syntax:",
+            "Parameters:",
+            "Generates:"
+        ],
+        [
+            "Definitions",
+            "htf.escape_sc(ctext in varchar2) return varchar2; htp.escape_sc(ctext in varchar2);",
+            "ctext - the string to convert.",
+            "The converted string."
+        ]
+    ],
+    "pageTitle": "The htp and htf Packages",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E14571_01/portal.1111/e12042/pshtp.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00333-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73286267,
+    "recordOffset": 73257699,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 13 May 2015 05:13:08 GMT",
+    "textBeforeTable": "Table 1-26 htf.escape_sc Table 1-26 describes the properties of htf.escape_sc. The procedure version of this subprogram does the same thing as htp.prints and htp.ps. > to &gt; < to &lt; \" to &quot: & to &amp; This replaces characters that have special meaning in HTML with their escape sequences. The following characters are converted: 1.27 htf.escape_sc <EM cattributes>ctext</EM> Generates: ctext - the text to emphasize. cattributes - other attributes to be included as-is in the tag. Parameters: htf.emphasis (ctext, cattributes) return varchar2; cattributes in varchar2 DEFAULT NULL); ctext in varchar2 htp.emphasis ( htf.em (ctext, cattributes) return varchar2; cattributes in varchar2 DEFAULT NULL); ctext in varchar2 htp.em (   Syntax:      Definitions Properties   Table 1-25 htp.emphasis, htp.em  Table 1-25 describes the properties of htp.emphasis, htp.em. This generates the <EM> and </EM> tags, which define text to be emphasized. 1.26 htp.emphasis, htp.em",
+    "textAfterTable": "1.28 htf.escape_url This replaces characters that have special meaning in HTML and HTTP with their escape sequences. The following characters are converted: & to &amp; \" to &quot; < to &lt; > to &gt; % to %25 Table 1-27 describes the properties of htf.escape_url. Table 1-27 htf.escape_url Properties Definitions Syntax:  htf.escape_url(p_url in varchar2) return varchar2; Parameters: p_url - the string to convert. Generates: The converted string. Note: This procedure is provided for backward compatibility reasons only. It does not comply with the Internet Engineering Task Force (IETF) Request for Comments (RFC) standards of URL encoding. If you need to encode URLs, it is recommended that you use the function utl_url.escape() that is available in the PL/SQL packages supplied with the Oracle Database. 1.29 htp.fontOpen, htp.fontClose",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

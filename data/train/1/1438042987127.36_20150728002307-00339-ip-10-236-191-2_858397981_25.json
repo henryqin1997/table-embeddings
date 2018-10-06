@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "a",
+            "152",
+            "153",
+            "154",
+            "155",
+            "",
+            "156",
+            "157",
+            "158"
+        ],
+        [
+            "b",
+            "152",
+            "153",
+            "154",
+            "",
+            "155",
+            "156",
+            "157",
+            "158"
+        ],
+        [
+            "of caveats:",
+            "define ``__init__`` as requiring any arguments.",
+            "",
+            "* Unlike the ``process_*`` methods which get called once per request,",
+            "``__init__`` gets called only *once*, when the web server starts up.",
+            "``__init__`` gets called only *once*, when the Web server starts up.",
+            "",
+            "Marking middleware as unused",
+            "~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+        ]
+    ],
+    "pageTitle": "11509.2.diff on Ticket #11509 \u2013 Attachment \u2013 Django",
+    "title": "",
+    "url": "https://code.djangoproject.com/attachment/ticket/11509/11509.2.diff",
+    "hasHeader": true,
+    "headerPosition": "FIRST_COLUMN",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987127.36/warc/CC-MAIN-20150728002307-00339-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 858417499,
+    "recordOffset": 858397981,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampAfterTable": "{128180=\u00a9 2005-2015 Django Software Foundation unless otherwise noted. Django is a registered trademark of the Django Software Foundation.}",
+    "textBeforeTable": "index 673c936..1bf8d6c 100644 diff --git a/docs/howto/jython.txt b/docs/howto/jython.txt 36 files changed, 58 insertions(+), 58 deletions(-) docs/howto/deployment/modpython.txt | 2 +- docs/howto/deployment/fastcgi.txt | 6 +++--- django/core/servers/fastcgi.py | 2 +- django/core/handlers/base.py | 2 +- django/contrib/sessions/models.py | 2 +- django/contrib/gis/gdal/srs.py | 2 +- tests/regressiontests/file_storage/tests.py | 2 +- .../custom_columns_regress/models.py | 4 ++-- tests/modeltests/custom_columns/tests.py | 4 ++-- docs/topics/install.txt | 6 +++--- docs/topics/http/urls.txt | 4 ++-- docs/topics/http/middleware.txt | 2 +- docs/topics/forms/media.txt | 4 ++-- docs/topics/email.txt | 2 +- docs/topics/conditional-view-processing.txt | 2 +- docs/topics/auth.txt | 2 +- docs/releases/1.1.txt | 2 +- docs/releases/1.1-beta-1.txt | 2 +- docs/releases/1.0.txt | 2 +- docs/ref/templates/builtins.txt | 2 +- docs/ref/request-response.txt | 6 +++--- docs/ref/middleware.txt | 2 +- docs/ref/forms/widgets.txt | 4 ++-- docs/ref/contrib/sites.txt | 2 +- docs/ref/contrib/gis/utils.txt | 2 +- docs/ref/contrib/gis/tutorial.txt | 8 ++++---- docs/ref/contrib/gis/model-api.txt | 4 ++-- docs/ref/contrib/gis/install.txt | 6 +++--- docs/ref/contrib/gis/index.txt | 4 ++-- docs/ref/contrib/gis/deployment.txt | 2 +- docs/misc/api-stability.txt | 2 +- docs/intro/whatsnext.txt | 4 ++-- docs/intro/index.txt | 2 +- docs/internals/svn.txt | 6 +++--- docs/internals/committers.txt | 4 ++-- docs/howto/jython.txt | 2 +- --- Subject: [PATCH] changed web to Web and website to Web site in various places Date: Tue, 21 Sep 2010 20:35:49 -0400 From: Derek Willis <dwillis@gmail.com> docs/howto/jython.txt From efefe283b861da61c75961b1db8f6e9af7dcc89e Mon Sep 17 00:00:00 2001  update to apply cleanly to trunk File 11509.2.diff, 32.9 KB (added by timo, 5 years ago) Ticket #11509: 11509.2.diff",
+    "textAfterTable": "docs/internals/committers.txt diff --git a/docs/internals/committers.txt b/docs/internals/committers.txt index b0bb18b..42a2ba3 100644 a b Journal-World`_ of Lawrence, Kansas, USA.\u00a0 39 39 40 40 `Wilson Miner`_ 41 41 \u00a0 \u00a0 Wilson's design-fu is what makes Django look so nice. He designed the 42 \u00a0 \u00a0 \u00a0 website you're looking at right now, as well as Django's acclaimed admin \u00a0 42 \u00a0 \u00a0 Web site you're looking at right now, as well as Django's acclaimed admin 43 43 \u00a0 \u00a0 interface. Wilson is the designer for EveryBlock_. 44 44 45 45 \u00a0 \u00a0 Wilson lives in San Francisco, USA. \u2026 \u2026 Joseph Kocherhans\u00a0 134 134 135 135 `Brian Rosner`_ 136 136 \u00a0 \u00a0 Brian is currently the tech lead at Eldarion_ managing and developing 137 \u00a0 \u00a0 \u00a0 Django / Pinax_ based websites. He enjoys learning more about programming \u00a0 137 \u00a0 \u00a0 Django / Pinax_ based Web sites. He enjoys learning more about",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "-n node_list",
+            "-s storageID_list",
+            "-t {software | data | ocr_vdisk}",
+            "-verbose"
+        ],
+        [
+            "Description",
+            "The comma-delimited list of nondomain qualified node names on which to conduct the verification. If you specify all, then CVU checks all of the nodes in the cluster. If you do not specify this option, then CVU checks only the local node.",
+            "A comma-delimited list of storage IDs, for example, /dev/sda,/dev/sdb. If you do not specify the -s option, then CVU discovers supported storage types and checks sharing for each of them.",
+            "The type of Oracle file that will be stored on the storage device. If you do not provide the -t option, then CVU discovers or checks the data file type.",
+            "CVU prints detailed output."
+        ]
+    ],
+    "pageTitle": "Cluster Verification Utility Reference",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/rac.112/e16794/cvu.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989507.42/warc/CC-MAIN-20150728002309-00067-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74606787,
+    "recordOffset": 74576259,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 14 Aug 2010 15:00:51 GMT",
+    "textBeforeTable": "Table A-22 cluvfy comp ssa Command Parameters Parameters [-t {software | data | ocr_vdisk}] [-verbose] cluvfy comp ssa [-n node_list] [-s storageID_list] Syntax  Use the cluvfy comp ssa component verification command to discover and check the sharing of the specified storage locations. CVU checks sharing for nodes in the node list. cluvfy comp ssa    cluvfy comp space -n all -l /home/dbadmin/products \u2013z 5G -verbose You can verify that each node has 5 GB of free space in the /home/dbadmin/products directory by running the following command: Verifying the availability of free space on all nodes  Examples  The space component does not support block or raw devices. Usage Notes   CVU prints detailed output. -verbose    The required disk space, in units of bytes (B), kilobytes (K), megabytes (M), or gigabytes (G). There should be no space between the numerical value and the byte indicator, for example, 2G.  -z disk_space {B|K|M|G}    The directory path to",
+    "textAfterTable": "Usage Notes The current release of cluvfy has the following limitations on Linux regarding shared storage accessibility check. Currently NAS storage (read/write, no attribute caching) and OCFS2 (version 1.2.1 or higher) are supported. For sharedness checks on NAS, cluvfy commands require that you have write permission on the specified path. If the cluvfy user does not have write permission, cluvfy reports the path as not shared. To perform discovery and shared storage accessibility checks for SCSI disks on Linux systems, CVU requires the CVUQDISK package. If you attempt to use CVU and the CVUQDISK package is not installed on all of the nodes in your Oracle RAC environment, then CVU responds with an error. See \"Shared Disk Discovery on Red Hat Linux\" for information about how to install the CVUQDISK package. Examples Example 1: Discovering All of the Available Shared Storage Systems on Your System To discover all of the shared storage systems available on your system, run the following command: cluvfy comp ssa -n all -verbose Example 2: Verifying the Accessibility of a Specific Storage Location You can verify the accessibility of specific storage locations, such as /dev/sda, for storing data files for all the cluster nodes by running a command similar to the following: cluvfy comp ssa",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

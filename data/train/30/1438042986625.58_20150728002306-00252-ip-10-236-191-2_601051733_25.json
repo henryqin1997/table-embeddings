@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Description",
+            "Measurements during daytime and during periods of strong solar activity are contaminated by external current systems, which are difficult to accurately model. Therefore, only nighttime data during magnetically quiet periods were used in estimating the WMM coefficients.",
+            "Some contributions to the measured magnetic field, such as the diamagnetic effect of ionospheric plasma (L?hr et al, 2003) or motional induction by tidal ocean currents (Kuvshinov and Olsen, 2005; Maus, 2007), can be accurately modeled and were corrected for prior to the estimation of the WMM main field coefficients.",
+            "To account for the contributions that have not been removed in the previous steps, an extended set of model parameters is co-estimated with the WMM model coefficients. These account for smaller-wavelength internal magnetic field contributions (spherical harmonic degree larger than 12), second time derivatives (secular acceleration) and contributions from currents external to the Earth. The set of WMM coefficients plus the extended model parameters is called a parent model of the WMM. Two different parent models were produced, reflecting different modeling strategies employed by NGDC for the main field model and BGS for the secular variation model.",
+            "Satellite, marine, and aeromagnetic measurements were compiled into an ellipsoidal degree-720 magnetic model of the Earth's lithosphere. This model accurately represents the crustal field down to wavelengths of approximately 56 kilometers. This results in a higher pointing accuracy."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Geophysical_Models/iso/xml/EMM2010.xml&view=ISO19115Components-HTMLTable&altview=none",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986625.58/warc/CC-MAIN-20150728002306-00252-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 601068127,
+    "recordOffset": 601051733,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.ngdc.mgg.geophysical_models:EMM2010Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Geophysical_Models View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "1 An ellipsoidal harmonic representation of Earth's lithospheric magnetic field to degree and order 720 2010-03-25 1 CHAMP Satellite Data 2009-12-31 1 Enhanced Magnetic Model 2010 2009-12-15 doi:10.7289/V5HH6H0D 1 GEODAS magnetic data 2013-02-06 1 INTERMAGNET Observatory Data 2009-12-31 1 GCMD Data Center Keywords NASA/GCMD Data Center Keywords 1 GCMD Location Keywords NASA/GCMD Location Keywords 1 GCMD Science Keywords NASA/GCMD Science Keywords 1 ORSTED Satellite Data 2009-12-31 3 WMM2010 Report The US/UK World Magnetic Model for 2010-2015 2009-12-01",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

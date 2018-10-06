@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Release",
+            "10.3",
+            "11.0",
+            "12.2(33)SRA",
+            "12.2SX"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "The one-time keyword was added.",
+            "This command was integrated into Cisco IOS Release 12.2(33)SRA.",
+            "This command is supported in the Cisco IOS Release 12.2SX train. Support in a specific 12.2SX release of this train depends on your feature set, platform, and platform hardware."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Security Command Reference: Commands A to C - all profile map configuration through browser-proxy [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/a1/sec-a1-cr-book/sec-cr-a3.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00134-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 365945383,
+    "recordOffset": 365842173,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{241688=The default delay is 1000 milliseconds., 317130=The following example shows how to enable reauthentication and sets the interval to 1800 seconds for an interface template:, 316555=The following example shows how to enable reauthentication and sets the interval to 1800 seconds:, 357755=The following example shows how to set the reauthentication interval on a port to 1500 seconds for an interface template:, 357206=The following example shows how to set the reauthentication interval on a port to 1800 seconds:, 669635=This command was introduced on the Cisco Aironet Access Point 1100 and the Cisco Aironet Access Point 1200., 243427=The following example shows how to configure the critical recovery delay period to 1500 milliseconds:, 536154=Win2000, 536259=Microsoft Windows 2000, 537397=The following example shows update parameters have been set for a Windows 2000 operating system, a URL of http:www.ourcompanysite.com/newclient, and versions 3.0.1(Rel) and 3.1(Rel):, 601035=Text string of the banner. Maximum number of characters = 1024., 163875=This command was introduced on Cisco ASR 1000 Series Routers., 23476=This command is used on the Cisco 1800, 2800, and 7200 series routers, Cisco 7301 router, and Integrated Services Routers (ISRs) as ASE sensors., 669989=This command was integrated into Cisco IOS Release 12.3(11)T and implemented on the following platforms: Cisco 2600XM, Cisco 2691, Cisco 2811, Cisco 2821, Cisco 2851, Cisco 3700, and Cisco 3800 series routers.}",
+    "textBeforeTable": "Syntax Description all no [no-auth] all To specify that all authentication and authorization requests be cached, use the allcommand in profile map configuration mode. To disable the caching of all requests, use the no form of this command. all (profile map configuration) browser-proxy browser-attribute import block count bind authenticate binary file bidirectional base-dn banner (WebVPN) banner (parameter-map webauth) banner backup group backup-gateway backoff exponential auto secure automate-tester (config-radius-server) automate-tester (config-ldap-server) auto-update client auto-rollover auto-enroll auth-type (ISG) auth-type authorize accept identity authorization username (tti-registrar) authorization username authorization list (tti-registrar) authorization list (global) authorization identity authorization address ipv4 authorization (tti-registrar) authorization (server-group) authorization authentication url authentication violation authentication trustpoint authentication timer restart authentication timer reauthenticate authentication timer inactivity authentication terminal authentication priority authentication port-control",
+    "textAfterTable": "Command History Release Modification 12.2(28)SB This command was introduced. 12.2(33)SRC This command was integrated into Cisco IOS Release 12.2(33)SRC. 15.0(1)M This command was integrated into Cisco IOS Release 15.0(1)M. Usage Guidelines Use the all command to cache all authentication and authorization requests. Use the all command for specific service authorization requests, but it should be avoided when dealing with authentication requests. Examples The following example caches all authorization requests in the localusers cache profile group. No authentication is performed for these users because the no-auth keyword is used.  Router# configure terminal Router(config)# aaa new-model Router(config)# aaa cache profile localusers Router(config-profile-map)# all no-auth Related Commands",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

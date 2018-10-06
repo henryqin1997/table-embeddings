@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Release",
+            "11.2",
+            "12.3(4)T",
+            "12.2(18)SXD",
+            "12.3(14)T",
+            "12.2(33)SRA"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "The dynamic keyword was added.",
+            "This command was integrated into Cisco IOS Release 12.2(18)SXD.",
+            "The default keyword was added.",
+            "The command was integrated into Cisco IOS Release 12.2(33)SRA"
+        ]
+    ],
+    "pageTitle": "Cisco IOS Security Command Reference: Commands S to Z - set aggressive-mode client-endpoint through show content-scan [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/s1/sec-s1-cr-book/sec-cr-s2.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00196-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 355427279,
+    "recordOffset": 355332275,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{17039=This command was introduced on Cisco ASR 1000 Series Routers.}",
+    "TableContextTimeStampAfterTable": "{57416=Specifies the 2048-bit DH identifier., 64869=The 1024-bit DH prime modulus group, group2, provides more security than group1 but requires more processing time than group1., 128835=Lifetime in seconds. The range is 120 to 2592000., 128121=Volume of traffic (in kilobytes) that can pass between IPsec peers using an SA. The range is 2560 to 4294967295., 132945=This command was modified. The days number-of-days keyword and argument pair was added, and the maximum value for the seconds number-of-seconds keyword and argument pair was extended from 86400 seconds to 2592000 seconds., 108956=In this example, the configured value of 750 seconds will be rounded up to 1200 seconds (the next multiple of 600), which becomes the idle polling interval. The connection to the idle peer will be closed after two successive idle pollings, resulting in an inactivity period of between 1200 and 2400 seconds before the connection is closed., 357728=The fields in the output of the show aaa serverscommand are mapped to Simple Network Management Protocol (SNMP) objects in the Cisco AAA-SERVER-MIB and are used in SNMP reporting. The first line of the sample output of the show aaa serverscommand (RADIUS: id 24, priority 1, host 172.31.164.120, auth-port 1645, acct-port 1646) is mapped to the Cisco AAA-SERVER-MIB as follows:, 279395=(Optional) Number of the authentication port. The default is 1645 (for a RADIUS server)., 56839=Specifies the 1024-bit DH identifier., 13805=Number of an access list. Values 100 through 199 are used for IP access lists (extended). The values 2000 through 2699 are used for expanded access lists (extended)., 139260=The following example shows how to set the timed lifetime for a specific crypto map entry named map1 to 2700 seconds (45 minutes):, 348115=UDP destination port on the AAA server that is used for accounting requests. The default value is 1646., 62387=Support for DH groups 14, 15, and 16 on the Cisco ASR 1000 series routers was integrated into Cisco IOS Release 12.4(22)T., 572442=(Optional) Egress or ingress VRF ID. Valid values are from 0 to 1024., 57127=Specifies the 1536-bit DH identifier., 62058=Support was added for DH groups 14, 15, and 16 on the Cisco ASR 1000 series routers., 190725=This command was introduced on Cisco ASR 1000 Series Routers., 280063=(Optional) Number of the accounting port. The default is 1646 (for a RADIUS server)., 280881=Currently, the port-number argument for the auth-port keyword and the port-number argument for the acct-port keyword default to 1645 and 1646, respectively. The default for the server-group-name argument is radius., 154942=(Optional) Size of the window. The value can be 64, 128, 256, 512, or 1024. This value sets the window size for a particular crypto map, dynamic crypto map, or crypto profile., 447605=Allows HTTP traffic for RFC 2616 supported methods., 347741=UDP destination port on the AAA server that is used for authentication and authorization requests. The default value is 1645., 138013=You should use a timed lifetime rather than a traffic-volume lifetime, because a small traffic-volume lifetime causes frequent SA rekeys. High throughput of encryption or decryption traffic can cause intermittent packet drops. The minimum traffic-volume lifetime threshold of 2560 kilobytes is not recommended on SAs that protect a medium-to-high throughput data link., 456403=This command is used on the Cisco 1800, 2800, and 7200 series routers, Cisco 7301 router, and Integrated Services Routers (ISRs) as ASE sensors., 30731=This command has been tested only with Windows 2000 L2TP/IPsec clients running hotfix 818043., 475081=*Sep 14 18:37:31.535:%AUDIT-1-RUN_VERSION:Hash:}",
+    "textBeforeTable": "Syntax Description client-endpoint client-endpoint aggressive-mode set no client-endpoint client-endpoint aggressive-mode set To specify the Tunnel-Client-Endpoint attribute within an Internet Security Association Key Management Protocol (ISAKMP) peer configuration, use the set aggressive-mode client-endpoint command in ISAKMP policy configuration mode. To remove this attribute from your configuration, use the no form of this command. set aggressive-mode client-endpoint show content-scan show class-map type urlfilter show class-map type inspect show call admission statistics show auto secure config show authentication sessions show authentication registrations show authentication interface show audit show ase show appfw show accounting show access-lists show access-lists compiled show access-group mode interface show aaa user show aaa subscriber profile show aaa servers show aaa service-profiles show aaa method-lists show aaa memory show aaa local user lockout show aaa dead-criteria show aaa common-criteria policy show aaa cache group show aaa cache filterserver show aaa attributes",
+    "textAfterTable": "Command History Release Modification 12.2(8)T This command was introduced. 12.2(18)SXD This command was integrated into Cisco IOS Release 12.2(18)SXD. 12.4(4)T Support for IPv6 was added. 12.2(33)SRA This command was integrated into Cisco IOS Release 12.2(33)SRA. Cisco IOS XE Release 2.1 This command was introduced on Cisco ASR 1000 Series Routers. Usage Guidelines Before you can use this command, you must enable the crypto isakmp peer command. To initiate an IKE aggressive mode negotiation and specify the RADIUS Tunnel-Client-Endpoint attribute, the set aggressive-mode client-endpoint command, along with the set aggressive-mode password command, must be configured in the ISAKMP peer policy. The Tunnel-Client-Endpoint attribute will be",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

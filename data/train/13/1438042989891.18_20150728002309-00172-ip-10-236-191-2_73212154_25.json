@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Value",
+            "A=FILE",
+            "A=TCP",
+            "A=IPC"
+        ],
+        [
+            "Description",
+            "Use for UNIX domain socket delivery",
+            "Use for TCP/IP connections",
+            "Is no longer available as a first mailer argument"
+        ]
+    ],
+    "pageTitle": "",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19253-01/816-4555/mailrefer-105/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00172-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73228548,
+    "recordOffset": 73212154,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{49976=The preceding example places a limit of 1000 on the number of messages that are delivered per connection on an smtp mailer., 39092=A new FEATURE() that turns off sendmail's default setting from m4\u2013generated configuration files to \u201clisten\u201d on several different ports, an implementation of RFC 2476.}",
+    "lastModified": "Thu, 06 Jan 2011 11:53:39 GMT",
+    "textBeforeTable": "sendmail Table\u00a014\u201319 Additional or Deprecated Command-Line Options From Version 8.12 of The following table describes additional or deprecated command-line options for sendmail. Other command-line options are described in the sendmail(1M) man page. Additional or Deprecated Command-Line Options From Version 8.12 of sendmail Prior to sendmail version 8.12, if you were not running sendmail in daemon mode, you would only prevent the delivery of inbound mail. Starting with sendmail version 8.12, if you are not running the sendmail daemon with the default configuration, you also prevent the delivery of outbound mail. The client queue runner (also known as the mail submission program) must be able to submit mail to the daemon on the local SMTP port. If the client queue runner tries to open an SMTP session with the local host and the daemon is not listening on the SMTP port, the mail remains in the queue. The default configuration does run a daemon, so this problem does not occur if you are using the default configuration. However, if you have disabled your daemon, refer to How to Manage Mail Delivery by Using an Alternate Configuration of sendmail.cf for a way to resolve this problem. The mail-submission program mode runs without root privilege, which might prevent sendmail from having access to certain files (such as the .forward files). Therefore, the -bv option for sendmail could give the user misleading output. No workaround is available.",
+    "textAfterTable": "-G Indicates that the message that is being submitted from the command line is for relaying, not for initial submission. The message is rejected if the addresses are not fully qualified. No canonicalization is done. As is noted in the Release Notes that are part of the sendmail distribution on ftp://ftp.sendmail.org, improperly formed messages might be rejected in future releases. -L tag Sets the identifier that is used for syslog messages to the supplied tag. -q[!]I substring Processes only jobs that contain this substring of one of the recipients. When ! is added, the option processes only jobs that do not have this substring of one of the recipients. -q[!]R substring Processes only jobs that contain this substring of the queue ID. When ! is added, the option processes only jobs that do not have this substring of the queue ID. -q[!]S substring Processes only jobs that contain this substring of the sender. When ! is added, the option processes only jobs that do not have this substring of the sender. -qf Processes saved",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

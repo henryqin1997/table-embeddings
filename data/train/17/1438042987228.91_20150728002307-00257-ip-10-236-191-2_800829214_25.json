@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Tag",
+            "1.",
+            "2.",
+            "3."
+        ],
+        [
+            "Description",
+            "the directories specified by the -I switches in the command line (see below), if any;",
+            "the directories specified by the GS_LIB environment variable, if any;",
+            "the directories specified by the GS_LIB_DEFAULT macro in the Ghostscript makefile when the executable was built. When gs is built on Unix, GS_LIB_DEFAULT is usually \"/usr/local/share/ghostscript/#.##:/usr/local/share/ghostscript/fonts\" where \"#.##\" represents the Ghostscript version number."
+        ]
+    ],
+    "pageTitle": "gs - Unix, Linux Command",
+    "title": "",
+    "url": "http://www.tutorialspoint.com/unix_commands/ghostscript.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987228.91/warc/CC-MAIN-20150728002307-00257-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 800845171,
+    "recordOffset": 800829214,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{6953=Copyright \u00a9 2014 by tutorialspoint}",
+    "textBeforeTable": "OPTIONS \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0%%HiResBoundingBox: 0.808497 25.009496 582.994503 731.809445 \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0%%BoundingBox: 0 25 583 732       prints out     \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0gs -sDEVICE=bbox golfer.ps       Most ISO and US paper sizes are recognized. See the usage documenatation for a full list, or the definitions in the initialization file \"gs_statd.ps\".  Ghostscript can do many things other than print or view PostScript and PDF files. For example, if you want to know the bounding box of a PostScript (or EPS) file, Ghostscript provides a special \"device\" that just prints out this information.  For example, using one of the example files distributed with Ghostscript,     \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0-sPAPERSIZE=legal      or   \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0-sPAPERSIZE=a4       for instance     \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0-sPAPERSIZE=<paper_size>       In this case you must also use the -q switch, to prevent Ghostscript from writing messages to standard output.  To select a specific paper size, use the command line switch     \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0-sOutputFile=%stdout%      or   \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0-sOutputFile=-       Note that the \u0092%\u0092 characters need to be doubled on MS Windows to avoid mangling by the command interpreter.  You can also send",
+    "textAfterTable": "-dname=token \u00a0 Define a name in \"systemdict\" with the given definition. The token must be exactly one token (as defined by the \"token\" operator) and may contain no whitespace. -Dname -dname Define a name in \"systemdict\" with value=null. -Sname=string \u00a0 -sname=string \u00a0 Define a name in \"systemdict\" with a given string as value. This is different from -d. For example, -dname=35 is equivalent to the program fragment \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0/name 35 def whereas -sname=35 is equivalent to \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0/name (35) def -q Quiet startup: suppress normal startup messages, and also do the equivalent of -dQUIET. -gnumber1xnumber2 \u00a0 Equivalent to -dDEVICEWIDTH=number1 and -dDEVICEHEIGHT=number2. This is for the benefit of devices (such as X11 windows) that require (or allow) width and height to be specified. -rnumber \u00a0 -rnumber1xnumber2",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

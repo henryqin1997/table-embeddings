@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2004-09-12T00:00:00",
+            "2005-01-05T00:00:00",
+            "2006-01-03T00:00:00"
+        ],
+        [
+            "Description",
+            "EarthData has developed a unique method for processing LIDAR data. The algorithms for filtering data were utilized within EarthData's proprietary software and commercial software written by TerraSolid. This software suite of tools provides efficient processing for small to large-scale projects and has been incorporated into ISO 9001 compliant production work flows. POINT CLOUD The following is a step-by-step breakdown of the process utilized to produce the variably-spaced point cloud surface data set. 1. Processing of the LIDAR data begins with refinement of the initial boresight alignment parameters provided by EarthData Aviation in the LITES configuration file delivered with the raw data. The technician also verifies that there are no voids, and that the data covers the entire project area. Calibration is accomplished using the tri-directional flight lines over the project airport, which is generally flat and free of major obstructions, trees or brush. Two overlapping bi-directional lines are flown along the length of the runway, and the cross flight line is perpendicular to both. All three lines are examined to ensure that they agree, within expected system tolerances, in the overlapping areas. The technician will review flight lines and locate the areas that contained systematic errors or distortions that were introduced by the LIDAR sensor. 2. Systematic distortions highlighted in step 1 were removed and the data was re-inspected. Corrections and adjustments can involve the application of angular deflection or compensation for curvature of the ground surface that can be introduced by crossing from on type of land cover to another. 3. All flight lines are processed with the refined calibration parameters obtained thru steps 1 and 2. All flight line are examined to ensure that they agree, within expected system tolerances, in the overlapping areas (side lap). 4. The LIDAR data for each flight line was trimmed in batch for the removal of the overlap areas between flight lines. The data was checked against a control network to ensure that vertical requirements were maintained. Conversion to the client-specified datum and projections were then completed. The LIDAR flight line data sets were then segmented into adjoining tiles for batch processing and data management. 5. The data was then edited for Blunder removal. 6. The data was processed interactively by the operator using LIDAR editing tools. During this final phase the operator generated a TIN based on a desired thematic layers to evaluate the automated classification performed in step 5. This allowed the operator to quickly re-classify points from one layer to another and recreate the TIN surface to see the effects of edits. The use of geo-referenced images were toggled on or off to aid the operator in identifying problem areas. The data was also examined with an automated profiling tool to aid the operator in the reclassification. 7. Orthometric heights were converted using the Geoid 03 undulation model. 8. The data was separated into (1) variably-spaced point cloud in LAS files. The files were written to PC readable CD-ROM.",
+            "The NOAA Coastal Services Center (CSC) received files in LAS format. The files contained lidar intensity and elevation measurements. CSC performed the following processing on the data to make it available within the Lidar Data Retrieval Tool (LDART): 1. The data were projected from UTM to geographic decimal degrees using the General Cartopgraphic Transformation Package. 2. The las files were sorted by latitude and the las header fields were completed. 3. The data were converted from orthometric to ellipsoidal heights using Geoid03.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2004_ME_m17.xml&view=ISO19115Components-HTMLTable",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00293-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 600731007,
+    "recordOffset": 600718249,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:2004_ME_m17Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "Component Title Date Citation Identifier 1 2004 Maine Lidar 2006-10-19 1 Coastal Miane LIDAR Scanning Project 2004-09-12 1 Ground Control Survey of Coastal Maine 2004-09-12 1 Lidar QA/QC Report 2 None 1 North American Datum 1983 2007-01-19 Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 1",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "copyMessage",
+            "forwardOnly",
+            "name"
+        ],
+        [
+            "Type",
+            "xs:boolean",
+            "xs:boolean",
+            "xs:string"
+        ],
+        [
+            "Description",
+            "Sets whether a copy of the message will be sent to each destination. Defaults to true so that the forward destination is set as the destination of the message",
+            "Sets if the virtual destination is forward only (and so there is no physical queue to match the virtual queue) or if there is also a physical queue with the same name).",
+            "Sets the name of this composite destination"
+        ]
+    ],
+    "pageTitle": "Schema for namespace: http://activemq.apache.org/schema/core",
+    "title": "",
+    "url": "http://activemq.apache.org/schema/core/activemq-core-5.3.1-schema.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00284-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 2592935,
+    "recordOffset": 2567881,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 31 Jan 2013 19:46:16 GMT",
+    "textBeforeTable": "Root Element",
+    "textAfterTable": "amqPersistenceAdapter An implementation of {@link PersistenceAdapter} designed for use with a {@link Journal} and then check pointing asynchronously on a timeout with some other long term persistent storage. org.apache.activemq.store.amq.AMQPersistenceAdapter amqPersistenceAdapterFactory An implementation of {@link PersistenceAdapterFactory} org.apache.activemq.store.amq.AMQPersistenceAdapterFactory authenticationUser A helper object used to configure simple authentiaction plugin org.apache.activemq.security.AuthenticationUser authorizationEntry Represents an entry in a {@link DefaultAuthorizationMap} for assigning different operations (read, write, admin) of user roles to a specific destination or a hierarchical wildcard area of destinations. org.apache.activemq.security.AuthorizationEntry authorizationMap Represents a destination based configuration of policies so that individual destinations or wildcard hierarchies of destinations can be configured using different policies. Each entry in the map represents the authorization ACLs for each operation. org.apache.activemq.security.DefaultAuthorizationMap authorizationPlugin An authorization plugin where each operation on a destination is checked against an authorizationMap org.apache.activemq.security.AuthorizationPlugin axionJDBCAdapter Axion specific Adapter. Axion does not seem to support ALTER statements or sub-selects. This means: - We cannot auto upgrade the schema was we roll out new versions of ActiveMQ - We cannot delete durable sub messages that have be acknowledged by all consumers. org.apache.activemq.store.jdbc.adapter.AxionJDBCAdapter blobJDBCAdapter This JDBCAdapter inserts and extracts BLOB data using the getBlob()/setBlob() operations. This is a little more involved since to insert a blob you have to: 1: insert empty blob. 2: select the blob 3: finally update the blob with data value. The databases/JDBC drivers that use this adapter are:",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

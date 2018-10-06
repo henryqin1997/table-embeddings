@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Name",
+            "geneorderedlocus_modificationdate_check",
+            "geneorderedlocus_updatedordeleted_check"
+        ],
+        [
+            "Constraint",
+            "CHECK ((modificationdate IS NOT NULL))",
+            "CHECK (((updatedordeleted = 'U'::bpchar) OR (updatedordeleted = 'D'::bpchar)))"
+        ]
+    ],
+    "pageTitle": "The Make2D-DB II Tool - Index for test_2dpage",
+    "title": "log.geneorderedlocus Constraints",
+    "url": "http://world-2dpage.expasy.org/swiss-2dpage/data/readme/database_schema/all.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 325,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986148.56/warc/CC-MAIN-20150728002306-00324-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 275521503,
+    "recordOffset": 275449940,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{481258=By convention: any database not present in XrefDB has an XrefDBCode > 1000, this is ensured by the update interface! * Applied Trigger: Trigger_XrefDBDynamic_insensitiveName *, 1539=A Make2D-DB II DATABASE: version 2.50, built 18-Jul-2006 Dumped on 2006-07-18}",
+    "textBeforeTable": "To do: generate and send automatically a unique - hidden - database identifier from ExPASy to the remote database, then LOCK table. Make also this identifier queriable from the remote main interface. Table: common.database Schema common xrefdbparent xrefdbdynamic xrefdb viewspotentrylast viewspotentry viewref viewmapentrylist viewentry tmp_last_entry tissuesptissuemapping tissuespaliase tissuesp tissue studygroup study spotidentificationtandemmssubset spotidentificationtandemms spotidentificationpeptmassf spotidentificationparent spotidentificationother spotidentificationaacid spotentrytopicparent spotentrymappingtopic spotentrygeneraltopic spotentry spotdatatandemms spotdatapeptmassf spotdataparent spotdataother spotdataaacid spot secondaryac samplepreparation sample release referencework referencetype referencelocationunpubobservations referencelocationthesis referencelocationsubmission referencelocationpatent referencelocationparent referencelocationother referencelocationjournal referencelocationbook referencedsample referencedproject referencedobjectparent referencedgel referencedentry reference project organism molecularfunction mappingtopicdefinition make2ddbtool journal genesynonym generaltopicentrydata generaltopicdefinition geneorf geneorderedlocus geneontologyparent genename geltissuesp gelpreparation gelinformatics gelimage geldynamic gelcomputabledynamic gel externalmainxrefdata enzymenomenclature entryxrefdbparent entryxrefdbdynamic entryxrefdb entryversionparent entryversiongeneral entryversion2d entrytheoreticalpimw entrygene entrygelmaster entrygelimage entry dynamicremotemake2ddbinterface contact commenttopic commententryparent commententryfreetext commententry2d citer cellularcomponent book biosourcepreparation biosourceinformation biosource biologicalprocess authorparent authorgroup",
+    "textAfterTable": "databasename character varying(128) NOT NULL databasedescription text databaserelease integer NOT NULL DEFAULT make2db_last_release() databasesubrelease smallint databasereleasedate date NOT NULL DEFAULT ('now'::text)::date databasereleasenotes text databasemainsummary text databaseinterfaceuri text databaseinterfaceurinumber smallint DEFAULT 1 copyright text contact text \u00a0 Permissions which apply to common.database User Select Insert Update Delete Reference Rule Trigger mostaguir \u2666 \u2666 \u2666 \u2666 \u2666 \u2666 \u2666 select2d \u2666 Index - Schema common",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

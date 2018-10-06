@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "",
+            "description",
+            "syntax",
+            "example(s)",
+            "context",
+            "see also"
+        ],
+        [
+            "observe",
+            "Observe a game in progress.",
+            "observe gamenumber",
+            "observe 12 You are now observing game 12.",
+            "observing",
+            "all, games, match, team, time, trail, unobserve, watching, who"
+        ]
+    ],
+    "pageTitle": "PandaNet - Internet Go | Documentation | Command overview | Ordered by name",
+    "title": "",
+    "url": "http://gobase.org/information/PandaNet/www2/InternetGo/Documentation/CommandOverview/ByName/",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00042-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 102730961,
+    "recordOffset": 102714567,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Commands ordered by name copyright (C) 2005 PANDANET documentation \"> border:0px solid red; padding-left:15px; padding-top:8px; height:22px; server center \"> border:0px solid red; padding-left:15px; padding-top:8px; height:22px; mypanda \"> border:0px solid red; padding-left:15px; padding-top:8px; height:22px; internet go \"> border:0px solid red; padding-left:15px; padding-top:8px; height:22px; 03-08-2015 updated: J. van der Steen author: Home > Internet Go > Documentation > Command overview > Ordered by name page:",
+    "textAfterTable": "playing see also kibitz, match, sgf, time adjourn description Request the adjournment of a game in progress. syntax adjourn adjourn move example(s) suff> adjourn duff> Your opponent requests an adjournment. Use <adjourn> to adjourn, or <decline adjourn> to decline. duff> adjourn Game has been adjourned. Game saved. notes For the 2nd form (adjourn move) see sealed. To adjourn the game, both players must enter adjourn. To restart an adjourned game, use the load command. context playing see also decline, load, resign, save, sealed, stored, uptime all description List the observers watching a game. syntax all [gamenumber] example(s) all 23 Observing game",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

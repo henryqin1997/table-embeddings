@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Name",
+            "Encapsulation",
+            "Protocol"
+        ],
+        [
+            "Description",
+            "Displays the name of the pseudowire class.",
+            "Displays the encapsulation type.",
+            "Displays the protocol type."
+        ]
+    ],
+    "pageTitle": "Cisco IOS XR Virtual Private Network Command Reference for the Cisco XR 12000 Series Router, Release 4.2.x - Virtual Private Network Commands [Cisco XR 12000 Series Router] - Cisco",
+    "title": "Table 6 show l2vpn pw-class Command Field Descriptions",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/xr12000/software/xr12k_r4-2/lxvpn/command/reference/b_vpn_cr42xr12k/b_vpn_cr42xr12k_chapter_01.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 225,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988511.77/warc/CC-MAIN-20150728002308-00067-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 369498779,
+    "recordOffset": 369434909,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{9494=For detailed information about virtual private network concepts, configuration tasks, and examples, refer to the Cisco\u00a0IOS\u00a0XR Virtual Private Network Configuration Guide for the Cisco\u00a0XR\u00a012000 Series Router}",
+    "TableContextTimeStampAfterTable": "{120297=Interval (in seconds) between control channel hello packets. The range is from 0 to 1000. Default is 60 seconds., 213229=To display the state of l2transport events, use the show controller internal command in Cisco\u00a0IOS\u00a0XR Interface and Hardware Component Configuration Guide for the Cisco\u00a0XR\u00a012000 Series Router, 309788=Value of the PWHE Ethernet interface. The range is from 1 to 32768., 213488=For more information about the Ethernet remote port shutdown feature, see Cisco\u00a0IOS\u00a0XR MPLS Configuration Guide for the Cisco\u00a0XR\u00a012000 Series Router., 337152=Configures the maximum number of retransmissions before determining that peer router does not respond. Range is 5 to 1000. Default is 15., 336745=Configures the number of SCCRQ messages resent before giving up on a particular control channel. Range is 1 to 1000. Default is 2.}",
+    "textBeforeTable": "Command History L2TP class configuration Command Modes None Command Default This command has no arguments or keywords. Syntax Description authentication no authentication To enable L2TP authentication for a specified L2TP class name, use the authentication command in L2TP class configuration mode. To return to the default behavior, use the no form of this command. authentication (L2TP) xconnect group tunnel-template transport mode (L2VPN) timeout setup (L2TP) tag-rewrite tag-impose switching-tlv (L2VPN) show tunnel-template show l2vpn xconnect show l2vpn resource show l2vpn pwhe show l2vpn pw-class show l2vpn index show l2vpn generic-interface-list show l2vpn forwarding l2tp show l2vpn forwarding show l2vpn collaborators show l2vpn atom-db show l2tp tunnel show l2tp session show l2tp counters forwarding session show l2tp class sequencing (L2VPN) rollover (L3VPN) retransmit (L2TP) receive-window (L2TP) p2p",
+    "textAfterTable": "You can also enable L2TP authentication for a specified class name from L2TP class configuration submode. To enter this submode, enter the l2tp-class command followed by the class name. Task ID Task ID Operations l2vpn read, write Examples The following example shows how to configure L2TP authentication for the specified L2TP class name \u201ccisco\u201d: RP/0/0/CPU0:router# configure RP/0/0/CPU0:router(config)# l2tp-class cisco RP/0/0/CPU0:router(config-l2tp-class)# authentication Related Commands Command Description hello-interval (L2TP) Configures the hello-interval value for L2TP (duration between control channel hello packets). \u00a0 hidden (L2TP) Enables hidden attribute-value pairs (AVPs). \u00a0 hostname (L2TP) Defines the name used in the L2TP hostname AVP. \u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

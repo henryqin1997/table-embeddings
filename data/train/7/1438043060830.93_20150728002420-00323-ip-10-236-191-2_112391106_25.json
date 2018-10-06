@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Prefix",
+            "xml",
+            "sys",
+            "xs"
+        ],
+        [
+            "Namespace",
+            "http://www.w3.org/XML/1998/namespace",
+            "http://geronimo.apache.org/xml/ns/deployment-1.2",
+            "http://www.w3.org/2001/XMLSchema"
+        ]
+    ],
+    "pageTitle": "Schema documentation: Apache Geronimo",
+    "title": "",
+    "url": "http://geronimo.apache.org/schemas-2.1/docs/geronimo-module-1.2.xsd.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00323-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 112413847,
+    "recordOffset": 112391106,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{195118=Nillable (Applies to element declarations). If an element declaration is nillable, instances can use the xsi:nil attribute. The xsi:nil attribute is the boolean attribute, nil, from the http://www.w3.org/2001/XMLSchema-instance namespace. If an element instance has an xsi:nil attribute set to true, it can be left empty, even though its element declaration may have required content.}",
+    "lastModified": "Tue, 15 Jan 2013 03:26:57 GMT",
+    "textBeforeTable": "Declared Namespaces This is an XML Schema Definition for Geronimo service deployment plan. This deployment plan is used for deploying service modules which contains non-application GBeans like thread pool, the tomcat/jetty container, security manager, etc. In case the Service deployment plan is provided internally in the java archive, it should be named META-INF/geronimo-service.xml. In case the Service deployment plan is provided externally, the deployment descriptor can be named anything and provided to the deploy tool. All the Service deployment plan must specify the top level element as module with namespace specified as xmlns=\"http://geronimo.apache.org/xml/ns/deployment-1.2\". The default location for this document is http://geronimo.apache.org/xml/ns/deployment-1.2 Typical Geronimo Service Deployment plan will look like this: <?xml version=\"1.0\" encoding=\"UTF-8\"?> <module xmlns=\"http://geronimo.apache.org/xml/ns/deployment-1.2\"> <environment> ... </environment> <gbean> ... </gbean> </module> Documentation By default, local attribute declarations have no namespace. By default, local element declarations belong to this schema's target namespace. Global element and attribute declarations belong to this schema's target namespace. Element and Attribute Namespaces http://geronimo.apache.org/xml/ns/deployment-1.2 Target Namespace Schema Document Properties top Glossary Legend Simple Type: importType Complex Type: xml-attributeType Complex Type: referencesType",
+    "textAfterTable": "Schema Component Representation < xs:schema targetNamespace=\" http://geronimo.apache.org/xml/ns/deployment-1.2\" elementFormDefault=\" qualified\" attributeFormDefault=\" unqualified\"> ... </ xs:schema> top Global Declarations Element: client-environment Name client-environment Type sys:environmentType Nillable no Abstract no Documentation The client-environment element is used only by Application Client modules to provide client module environment setting. It defines elements to store information like moduleId, dependencies, and classloader Info for the client-side application module. This information is used to identify the module in the client container only and it should not be directly used by deployment process. Logical Diagram",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

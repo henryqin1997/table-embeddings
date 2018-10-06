@@ -1,0 +1,214 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2011-12",
+            "2012-13 *",
+            "2012-13 *",
+            "2012-13 *",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "LAD",
+            "All Teams",
+            "RGV",
+            "SXF",
+            ""
+        ],
+        [
+            "GP",
+            "1",
+            "51",
+            "37",
+            "14",
+            "52"
+        ],
+        [
+            "GS",
+            "1",
+            "51",
+            "37",
+            "14",
+            "52"
+        ],
+        [
+            "Min",
+            "47.1",
+            "1881.1",
+            "1359.0",
+            "522.1",
+            "1928.2"
+        ],
+        [
+            "FGM",
+            "11",
+            "411",
+            "302",
+            "109",
+            "422"
+        ],
+        [
+            "FGA",
+            "24",
+            "864",
+            "615",
+            "249",
+            "888"
+        ],
+        [
+            "FG%",
+            ".458",
+            ".476",
+            ".491",
+            ".438",
+            ".475"
+        ],
+        [
+            "3FGM",
+            "2",
+            "96",
+            "76",
+            "20",
+            "98"
+        ],
+        [
+            "3FGA",
+            "10",
+            "260",
+            "188",
+            "72",
+            "270"
+        ],
+        [
+            "3P%",
+            ".200",
+            ".369",
+            ".404",
+            ".278",
+            ".363"
+        ],
+        [
+            "FTM",
+            "0",
+            "157",
+            "111",
+            "46",
+            "157"
+        ],
+        [
+            "FTA",
+            "0",
+            "188",
+            "132",
+            "56",
+            "188"
+        ],
+        [
+            "FT%",
+            ".000",
+            ".835",
+            ".841",
+            ".821",
+            ".835"
+        ],
+        [
+            "FIC",
+            "10",
+            "660",
+            "532",
+            "128",
+            "670"
+        ],
+        [
+            "OFF",
+            "0",
+            "30",
+            "23",
+            "7",
+            "30"
+        ],
+        [
+            "DEF",
+            "4",
+            "170",
+            "129",
+            "41",
+            "174"
+        ],
+        [
+            "Reb",
+            "4",
+            "200",
+            "152",
+            "48",
+            "204"
+        ],
+        [
+            "Ast",
+            "7",
+            "263",
+            "215",
+            "48",
+            "270"
+        ],
+        [
+            "Stl",
+            "2",
+            "59",
+            "49",
+            "10",
+            "61"
+        ],
+        [
+            "Blk",
+            "0",
+            "7",
+            "5",
+            "2",
+            "7"
+        ],
+        [
+            "PF",
+            "3",
+            "81",
+            "57",
+            "24",
+            "84"
+        ],
+        [
+            "TO",
+            "6",
+            "143",
+            "109",
+            "34",
+            "149"
+        ],
+        [
+            "Pts",
+            "24",
+            "1075",
+            "791",
+            "284",
+            "1099"
+        ]
+    ],
+    "pageTitle": "Andrew Goudelock Player Profile, Los Angeles Lakers, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Events Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Andrew-Goudelock/Summary/9577",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987552.57/warc/CC-MAIN-20150728002307-00111-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 22651215,
+    "recordOffset": 22604353,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{47788=Born: Dec 7, 1988 (26 years old), 46927=Draft Entry: 2011 NBA Draft}",
+    "TableContextTimeStampAfterTable": "{156796=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved., 119060=* International basketball history from 2011-2012}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 2 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "4 0 32 21 175 2012-13 LAL 1 0 6.2 0 2 .000 0 0 .000 0 0 .000 -0 1 0 1 0 0 0 0 0 0 CAREER \u00a0 41 0 424.8 68 176 .386 28 75 .373 11 12 .917 51 6 26 32 20 4 0 32 21 175 NBA Regular Season Stats - Misc Stats Season Team GP GS Dbl Dbl Tpl Dbl 40 Pts 20 Reb 20 Ast Techs HOB Ast/TO Stl/TO FT/FGA W's L's Win % OWS DWS WS 2011-12 LAL 40 0 0 0 0 0 0 0 .061 0.95 0.19 0.07 24 16 0.600 -0.07 0.17 0.11 2012-13 LAL 1 0 0 0 0 0 0 0 .000 0.00 0.00 0.00 1 0 1.000 -0.03 0.01 -0.03 CAREER \u00a0 41 0 0 0 0 0 0 0 .059 0.95 0.19 0.07 25 16 0.610 -0.13 0.22 0.09 NBA Regular Season Stats - Advanced Stats Season Team GP GS TS% eFG% ORB% DRB%",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

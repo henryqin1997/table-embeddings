@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "In this column\u2026",
+            "Amount Due Remaining",
+            "Trade Note Number",
+            "Due Date",
+            "Bill to Address"
+        ],
+        [
+            "Oracle Receivables prints\u2026",
+            "The amount that is due remaining for each installment",
+            "The trade note number for each installment",
+            "The due date of each installment",
+            "The bill to address for each installment"
+        ]
+    ],
+    "pageTitle": "Oracle Financials for the Americas User Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18727_01/doc.121/e13422/T474046T475652.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00254-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71236619,
+    "recordOffset": 71193683,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{259031=Copyright \u00a9 2006, 2010, Oracle and/or its affiliates. All rights reserved., 125467=Enter the effective dates for this combination. For a given combination, the default start date is the current date, and the default end date is 31 Dec 4712., 127648=Enter the effective dates for this fiscal classification. For a given combination, the default start date is the current date, and the default end date is 31 Dec 4712., 130082=Enter the effective dates for this exception. For a given combination, the default start date is the current date, and the default end date is 31 Dec 4712., 122978=Enter the effective dates for this tax group. For a given combination, the default start date is the current date, and the default end date is 31 December 4712.}",
+    "lastModified": "Tue, 23 Jun 2015 15:10:54 GMT",
+    "textBeforeTable": "Create and maintain as many lookup codes as you need for each lookup type. This table shows lookup types and their meanings. You cannot delete lookup codes once you enter them. Instead, you can inactivate a lookup code by giving it an inactive date. You can also delete the inactive date at a later time to reactivate a lookup code. Use the Lookup Codes window to define lookup codes. Lookup codes are codes that you create and associate with predefined lookup types. The lookup types determine specific transaction elements that run in Oracle Payables and Oracle Receivables. Defining Lookup Codes General Setup Brazil Next Previous Contents Oracle Financials for the Americas User Guide Release 12.1 Part Number E13422-03 Skip Headers Browser version script",
+    "textAfterTable": "Invoice Class (Payables only) The invoice type Invoice Series (Payables only) An invoice numbering sequence Item Fiscal Type The type of item for fiscal purposes Item Origin The kind of transaction Item Transaction Nature The transaction nature Legal Messages Exception Events (Receivables only) Legal exceptions to the basic tax rules State The name of a state in Brazil Tributary Federal Situation The tributary federal situation Tributary State Situation The tributary state situation To define lookup codes: Navigate to the Lookup Codes window. Query the lookup type in the Type field. Enter the name of the lookup code in the Code field. Enter the name for the lookup code that is displayed in the list of values in the Meaning field. Enter a description for the lookup code in the Description field. You can optionally enter an inactive date for the lookup code in the Effective Dates - To field. Repeat steps 2 to 6 for each lookup code that you define. Save your work. Defining a Business Day Calendar The business day calendar defines business days and non-business days for billing purposes.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

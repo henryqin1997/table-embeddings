@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "If You Want to Set a User's Environment Variables for The ...",
+            "C shell",
+            "Bourne or Korn shell"
+        ],
+        [
+            "Then Add the Following Line to the User Initialization File ...",
+            "setenv VARIABLE value Example: setenv MAIL /var/mail/ripley",
+            "VARIABLE=value; export VARIABLE Example: MAIL=/var/mail/ripley;export MAIL"
+        ]
+    ],
+    "pageTitle": "Chapter 2 Managing User Accounts and Groups (Overview) (System Administration Guide, Volume 1)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19455-01/805-7228/6j6q7ueoc/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00065-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 69889219,
+    "recordOffset": 69862131,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{23581=Seasonal themes, such as Santa in December, 64135=Indicates the number of days between January 1, 1970, and the last password modification date.\u00a0, 13623=As with user (login) names, you should adopt a scheme to assign unique UIDs. Some companies assign unique employee numbers, and administrators add 1000 to the employee number to create a unique UID number for each employee., 19990=262144 or greater \u00a0}",
+    "lastModified": "Thu, 03 Feb 2011 11:23:52 GMT",
+    "textBeforeTable": "Table 2-1 Reserved UID Numbers UID numbers must be a whole number less than or equal to 2147483647, and they are required for both regular user accounts and special system accounts. The table below lists the UID numbers reserved for user accounts and system accounts. Associated with each user name is a user identification (UID) number. The UID number identifies the user name to any system on which the user attempts to log in, and it is used by systems to identify the owners of files and directories. If you create user accounts for a single individual on a number of different systems, always use the same user name and user ID. In that way, the user can easily move files between systems without ownership problems. User ID Numbers Each new user name must be distinct from any mail aliases known to the system or to an NIS or NIS+ domain. Otherwise, mail might be delivered to the alias rather than to the actual user. Note - It is helpful to establish a standard way of forming user names, and the names should be easy for users to remember. A simple scheme when selecting a user name is to use the first name initial and first seven",
+    "textAfterTable": "General purpose accounts\u00a0 60001 \u00a0 nobody Unauthenticated users\u00a0 60002 \u00a0 noaccess Compatibility with Solaris 2.0 and compatible versions and SVR4 releases\u00a0 Although UID numbers 0 through 99 are reserved, you can add a user with one of these numbers. However, do not use them for regular user accounts. By definition, root always has UID 0, daemon has UID 1, and pseudo-user bin has UID 2. In addition, you should give uucp logins and pseudo user logins, like who, tty, and ttytype, low UIDs so they fall at the beginning of the passwd file. As with user (login) names, you should adopt a scheme to assign unique UIDs. Some companies assign unique employee numbers, and administrators add 1000 to the employee number to create a unique UID number for each employee. To minimize security risks, you should avoid reusing the UIDs from deleted accounts. If you must reuse a UID, \"wipe the slate clean\" so the new user is not affected by attributes set for a former user. For example, a former user might have been denied access to a printer--by being included in a printer deny list--but that attribute might not be",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

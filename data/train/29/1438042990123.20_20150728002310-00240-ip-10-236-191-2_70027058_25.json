@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "exp_tab",
+            "expr_col",
+            "xmlt_attr",
+            "xptag_list",
+            "operation"
+        ],
+        [
+            "Description",
+            "Name of table storing the expression set",
+            "Name of column in the table that stores the expressions",
+            "Name of the attribute with the XMLType datatype",
+            "An instance of EXF$XPATH_TAGS type with a partial list of XML elements and attributes",
+            "Operation to be performed on the list of index parameters. Default value: ADD. Valid values: ADD and DROP."
+        ]
+    ],
+    "pageTitle": "DBMS_EXPFIL",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/appdev.112/e16760/d_expfilref.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990123.20/warc/CC-MAIN-20150728002310-00240-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70046579,
+    "recordOffset": 70027058,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 14 Aug 2010 15:00:20 GMT",
+    "textBeforeTable": "Table 64-21 XPINDEX_PARAMETERS Procedure Parameters Parameters operation IN VARCHAR2 DEFAULT 'ADD'); xptag_list IN EXF$XPATH_TAGS, xmlt_attr IN VARCHAR2, expr_col IN VARCHAR2, expr_tab IN VARCHAR2, DBMS_EXPFIL.XPINDEX_PARAMETERS ( Syntax  This procedure is used in conjunction with the INDEX_PARAMETERS procedure to fine-tune the XPath-specific index parameters for each expression set. XPINDEX_PARAMETERS Procedure    / END; expr_col => 'interest'); DBMS_EXPFIL.VALIDATE_EXPRESSIONS (expr_tab => 'consumer', BEGIN The following command validates the expressions stored in the interest column of the consumer table. Examples    Related views: USER_EXPFIL_EXPRESSION_SETS, USER_EXPFIL_ASET_FUNCTIONS, and USER_EXPFIL_PREDTAB_ATTRIBUTES.   See the section on evaluation semantics in Oracle Database Rules Manager and Expression Filter Developer's Guide and BUILD_EXCEPTIONS_TABLE Procedure for more information.   By default, the expression validation procedure fails on the first expression that is invalid. Optionally, the caller can pass an exception table to store references to all the invalid expressions. In addition to validating expressions in the set, this procedure validates the parameters (stored and indexed attributes) of the associated index and the approved list of user-defined functions. Any errors in the index parameters or the user-defined function list are immediately reported to the caller.   The expressions stored in a table may have",
+    "textAfterTable": "Usage Notes When an attribute set is shared by multiple expression sets, the INDEX_PARAMETERS procedure can be used to tune the simple (non-XPath) index parameters for each expression set. The XPINDEX_PARAMETERS procedure is used in conjunction with the INDEX_PARAMETERS procedure to fine-tune the XPath-specific index parameters for each expression set. See also INDEX_PARAMETERS Procedure and the section on index tuning for XPath predicates in Oracle Database Rules Manager and Expression Filter Developer's Guide for more information. Related views: USER_EXPFIL_ATTRIBUTES, USER_EXPFIL_DEF_INDEX_PARAMS, and USER_EXPFIL_INDEX_PARAMS. Note: The values assigned to the tag_name argument of exf$xpath_tag type are case-sensitive. Examples The following command synchronizes the index parameters of the expression set (XPath and non-XPath) with the defaults associated with the corresponding attribute set: BEGIN DBMS_EXPFIL.INDEX_PARAMETERS(expr_tab => 'consumer', expr_col => 'interest', attr_list => null, operation => 'DEFAULT'); END; / The following command adds an XPath-specific index parameter to the expression set: BEGIN DBMS_EXPFIL.XPINDEX_PARAMETERS(expr_tab => 'consumer', expr_col => 'interest', xmlt_attr => 'details', xptag_list => exf$xpath_tags( exf$xpath_tag(tag_name => 'GPS', tag_indexed => 'TRUE', tag_type => NULL)), operation => 'ADD'); END; /",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Title:",
+            "Priority:",
+            "Status:",
+            "Issue tags:"
+        ],
+        [
+            "[meta] Convert all of system_config_form() to SystemConfigFormBase",
+            "Major",
+            "Reviewed & tested by the community",
+            ""
+        ],
+        [
+            "\u00bb Change notice: [meta] Convert all of system_config_form() to SystemConfigFormBase",
+            "\u00bb Critical",
+            "\u00bb Active",
+            "+Needs change record"
+        ]
+    ],
+    "pageTitle": "[meta] Convert all of system_config_form() to SystemConfigFormBase [#1924990] | Drupal.org",
+    "title": "",
+    "url": "https://www.drupal.org/node/1924990",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00075-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 906154971,
+    "recordOffset": 906141961,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampAfterTable": "{77590=Updated the notice: https://drupal.org/node/1910694/revisions/view/2680038/2742025}",
+    "lastModified": "Tue, 28 Jul 2015 10:27:02 GMT",
+    "textBeforeTable": "February 22, 2013 at 7:57pm CreditAttribution: tim.plunkett commented tim.plunkett Comment #0.0 Comments View ] [ PASSED: [[SimpleTest]]: [MySQL] 58,146 pass(es). tim.plunkett 2.37 KB system_config_form-1924990-7.patch #7 Author Size File Comment Files:\u00a0 #1924992: Convert user's system_config_form() to SystemConfigFormBase user module #1937998: Convert update's system_config_form() to SystemConfigFormBase update module #1925660: Convert system's system_config_form() to SystemConfigFormBase system module #1937968: Convert statistics's system_config_form() to SystemConfigFormBase statistics module",
+    "textAfterTable": "Comment #0.1 tim.plunkett CreditAttribution: tim.plunkett commented February 22, 2013 at 8:06pm Issue summary: View changes removed stray * Log in or register to post comments Comment #1 tim.plunkett CreditAttribution: tim.plunkett commented February 22, 2013 at 9:13pm Issue tags: +FormInterface Okay, I did user and aggregator as examples. All conversions should use routes and be defined as a service ID, so that config.factory can be injected in. Aggregator has the additional example of how to inject other dependencies.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

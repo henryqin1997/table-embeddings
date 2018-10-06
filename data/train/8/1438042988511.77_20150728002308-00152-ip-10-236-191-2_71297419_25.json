@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Fields",
+            "String name",
+            "String value"
+        ],
+        [
+            "Description",
+            "Specifies a character string that contains the name of the property, such as COLOR.",
+            "Specifies a character string that contains the value, such as RED."
+        ]
+    ],
+    "pageTitle": "Description of Structures in Oracle BI EE Web Services",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E28280_01/bi.1111/e16364/structures.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988511.77/warc/CC-MAIN-20150728002308-00152-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71323983,
+    "recordOffset": 71297419,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{1235=2048 = Permission to run an Oracle BI Publisher report live}",
+    "lastModified": "Wed, 14 Jan 2015 14:05:47 GMT",
+    "textBeforeTable": "Table 2-26 NameValuePair Structure Fields Table 2-26 lists the fields in this structure. Use this structure to denote named properties, such as COLOR=RED. This structure is used in the \"WebCatalogService Service\". 2.23 NameValuePair Structure Specifies catalog information about the object, supplied in the ItemInfo common structure. For information about the ItemInfo structure, see Section 2.17, \"ItemInfo Structure\". ItemInfo\u00a0itemInfo Specifies if the MRU item is a favorite item as well. Boolean\u00a0isFavorite Specifies the catalog path for the recent catalog object. String\u00a0catalogPath Description Fields Table 2-25 MRUItem Structure Fields Table 2-25 lists the fields in this structure. Use this structure to retrieve most recently used (MRU) item information during Presentation Catalog Service method invocations. This structure is used in the \"UserPersonalizationService Service\". 2.22 MRUItem Structure",
+    "textAfterTable": "2.24 NodeInfo Structure Use this structure to contain the information that identifies a single node. This structure is used in the \"ScorecardAssessmentService Service\". Table 2-27 lists the fields in this structure. Table 2-27 NodeInfo Structure Fields Fields Description String\u00a0NodeType Specifies the type of node. For more information, see Section 2.24.1, \"NodeTypes Enumeration\". String\u00a0NodeID Specifies the node's GUID. 2.24.1 NodeTypes Enumeration This enumeration defines the values for the different types of nodes. This enumeration is used in the \"NodeInfo Structure\". Table 2-28 lists the values in this enumeration. Table 2-28 NodeTypes Enumeration Values Values Description String\u00a0STRATEGY_NODE Specifies the node belongs to a strategy tree.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,55 @@
+{
+    "relation": [
+        [
+            "Search Behavior",
+            "With all words",
+            "With any words",
+            "With the exact phrase",
+            "Without the words",
+            "Words in proximity",
+            "Words in a sentence",
+            "Words in a paragraph",
+            "Words in same order"
+        ],
+        [
+            "Definition",
+            "Search documents having references to all the words.",
+            "Search documents having references to any of the words.",
+            "Search documents having references to the exact phrase.",
+            "Search documents excluding all the words.",
+            "Search documents containing two or more words within n words, where n is an integer that is defined by the system administrator.",
+            "Search documents having all the words in one sentence.",
+            "Search documents having all the words in one paragraph.",
+            "Search documents having all the words in the same order."
+        ],
+        [
+            "Example",
+            "Computer crashed returns documents containing both computer and crashed.",
+            "Software error returns documents containing either software or error.",
+            "Application Server returns documents matching the exact phrase Application Server.",
+            "DSL Modem returns documents that do not contain either DSL or Modem.",
+            "Cell phone returns documents with cell and phone within the specified number of words.",
+            "Office 2000 returns documents with Office and 2000 within one sentence.",
+            "Clear cache returns documents with clear and cache in one paragraph.",
+            "Meta data returns documents with meta and data in the same order."
+        ]
+    ],
+    "pageTitle": "PeopleSoft CRM 9.1 Automation and Configuration Tools PeopleBook",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E35909_01/crm91pbr1/eng/psbooks/cact/htm/cact27.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986148.56/warc/CC-MAIN-20150728002306-00128-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74076947,
+    "recordOffset": 74047595,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{93399=Office 2000 returns documents with Office and 2000 within one sentence.}",
+    "lastModified": "Mon, 18 Jun 2012 12:54:20 GMT",
+    "textBeforeTable": "Note. All search behaviors use the OR operator to process search requests. For example, if you enter the word computer for the with all words search behavior and you select both the Solution Description and Solution Summary fields as searchable fields, the system returns solutions that have the word computer found in their solution description or solution summary. Similarly, if the search behavior is without the words (and everything else remains the same), the system returns solutions that do not have the word computer in either the solution description or solution summary. In this case, if the word computer appears in the solution description but not the solution summary, the solution returns as a result of the search. This table describes each of the search behaviors that are available for searches: Understanding Search Behavior Define the file index list. View the HTTP index list. Configure the record index list. Configure search definitions. This section provides overview on search behavior and word variations and discusses how to: To configure search options, use the Search Page Definition (RB_VRTY_PG_CFG) component. Configuring Search Options",
+    "textAfterTable": "Understanding Word Variations This table describes each of the word variations that are available for searches: Word Variation Definition Example Alternate spellings Search documents ignoring typos in the search text. Temperaturee returns documents with temperature by ignoring the typo. Use stemmings Search documents for stemmed or derivative variations. Film returns documents with film, films, and filmed. Exact words Search documents for exact words in search text. Film returns documents with film only. Include synonyms Search documents for word and include words with the same meaning. Unix returns documents with linux, Unix, and AIX. Words with similar sounds Search documents for words with similar letter patterns. Sale returns documents with sale, sail, sell, shell, and scale.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

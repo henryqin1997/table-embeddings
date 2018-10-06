@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Type",
+            "SQLHSTMT",
+            "SQLINTEGER*"
+        ],
+        [
+            "Name",
+            "hStmt",
+            "rowCount"
+        ],
+        [
+            "Description",
+            "Statement handle.",
+            "Number of rows in the result set."
+        ]
+    ],
+    "pageTitle": "ODBC Support on Palm",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B19188_01/doc/B15920/nvpmodbc.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00174-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74006375,
+    "recordOffset": 73989122,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 29 Jun 2005 21:06:00 GMT",
+    "textBeforeTable": "Table C-23 SQLRowCount Arguments The arguments for SQLRowCount are listed in Table C-23: Arguments RETCODE SQLRowCount( hStmt, rowCount ) Syntax SQLRowCount returns the number of rows affected by a SQL SELECT, UPDATE, or DELETE statement.  C.1.21 SQLRowCount       SQLNumResultCols returns SQL_SUCCESS if it is successful. Otherwise, it returns SQL_ERROR. To find out the specifics about an error, the application can call SQLError with the specified statement handle.  Returns  Pointer to buffer to store the returned number of columns in the result set. columnCount SQLSMALLINT* Statement handle. hStmt SQLHSTMT Description Name Type Table C-22 SQLNumResultCols Arguments The arguments for SQLNumResultCols are listed in Table C-22: Arguments RETCODE SQLNumResultCols( hStmt, columnCount ) Syntax SQLNumResultCols returns the number of columns in the result set.  C.1.20 SQLNumResultCols",
+    "textAfterTable": "Returns SQLRowCount returns SQL_SUCCESS if it is successful. Otherwise, it returns SQL_ERROR. To find out the specifics about an error, the application can call SQLError with the specified statement handle. C.1.22 SQLTransact SQLTransact requests a commit or rollback for all active operations on all statements associated with an environment. Syntax RETCODE SQLTransact( hEnv, hDbc, completionType ) Arguments The arguments for SQLTransact are listed in Table C-24: Table C-24 SQLTransact Arguments Type Name Description SQLHENV hEnv Environment handle. SQLHDBC hDbc Connection handle. Not used. SQLUSMALLINT completionType The transaction action, which could be either SQL_COMMIT or SQL_ROLLBACK. Returns SQLTransact returns SQL_SUCCESS if it is successful. Otherwise, it returns SQL_ERROR. To find out the specifics about an error, the application can call",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

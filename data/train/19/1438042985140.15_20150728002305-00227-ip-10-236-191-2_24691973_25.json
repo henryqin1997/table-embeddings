@@ -1,0 +1,148 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2008-09",
+            "2009-10",
+            "CAREER"
+        ],
+        [
+            "School",
+            "Fresno State",
+            "Fresno State",
+            ""
+        ],
+        [
+            "Class",
+            "Fr",
+            "So",
+            ""
+        ],
+        [
+            "GP",
+            "34",
+            "29",
+            "63"
+        ],
+        [
+            "GS",
+            "32",
+            "29",
+            "61"
+        ],
+        [
+            "TS%",
+            ".592",
+            ".578",
+            ".585"
+        ],
+        [
+            "eFG%",
+            ".559",
+            ".506",
+            ".532"
+        ],
+        [
+            "ORB%",
+            "6.88",
+            "7.04",
+            "7.04"
+        ],
+        [
+            "DRB%",
+            "15.67",
+            "20.08",
+            "17.86"
+        ],
+        [
+            "TRB%",
+            "11.36",
+            "13.52",
+            "12.49"
+        ],
+        [
+            "AST%",
+            "12.16",
+            "22.56",
+            "16.63"
+        ],
+        [
+            "TOV%",
+            "16.12",
+            "18.25",
+            "17.21"
+        ],
+        [
+            "STL%",
+            "3.02",
+            "4.08",
+            "3.49"
+        ],
+        [
+            "BLK%",
+            "2.97",
+            "3.04",
+            "3.00"
+        ],
+        [
+            "USG%",
+            "22.04",
+            "27.93",
+            "24.71"
+        ],
+        [
+            "Total S %",
+            "161.40",
+            "168.66",
+            "164.61"
+        ],
+        [
+            "PPR",
+            "-3.14",
+            "-3.70",
+            "-3.39"
+        ],
+        [
+            "PPS",
+            "1.38",
+            "1.34",
+            "1.36"
+        ],
+        [
+            "ORtg",
+            "110.4",
+            "108.0",
+            "109.2"
+        ],
+        [
+            "DRtg",
+            "98.1",
+            "92.9",
+            "95.6"
+        ],
+        [
+            "PER",
+            "19.62",
+            "23.37",
+            "21.25"
+        ]
+    ],
+    "pageTitle": "Paul George Player Profile, Indiana Pacers, News, Rumors, NBA Stats, NCAA Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Paul-George/Summary/2305",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985140.15/warc/CC-MAIN-20150728002305-00227-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 24719311,
+    "recordOffset": 24691973,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{8292=Early Entry Info: 2010 Early Entrant, 8392=Draft Entry: 2010 NBA Draft, 8595=Free Agent: PO-2018; UFA-2019, 9688=Born: May 2, 1990 (25 years old)}",
+    "TableContextTimeStampAfterTable": "{113142=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved., 23166=* Since the 1946-1947 season}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 5 Years Of Service - All-NBA Defensive 1st, MIP, 2x All-Star NBA Jump to: [ NBA ] [ NCAA ] [ National ] [ Recent News ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "6.52 7.63 4.16 1.80 0.65 2.87 2.95 17.43 2013-14 IND 80 80 36.2 7.21 17.02 .424 2.27 6.25 .364 5.01 5.80 .864 13.71 0.80 5.97 6.78 3.54 1.89 0.28 2.48 2.80 21.71 2014-15 IND 6 0 15.2 3.00 8.17 .367 1.50 3.67 .409 1.33 1.83 .727 4.02 0.67 3.00 3.67 1.00 0.83 0.17 1.83 2.00 8.83 CAREER \u00a0 292 244 31.5 5.30 12.40 .428 1.68 4.67 .361 2.92 3.53 .827 10.73 0.85 5.18 6.03 2.88 1.60 0.47 2.58 2.25 15.21 NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2010-11 IND 61 19 1264.8 179 395 .453 41 138 .297 77 101 .762 339 37 187 224 65 62 26 127 70 476 2011-12 IND 66 66 1957.7 281 639 .440 90 234 .385 146 182 .802 632 55 314 369 157 108 38 191 117 798 2012-13 IND 79 79 2971.9 493 1176 .419 170 469 .362 221 274",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Command",
+            "call leg event-log",
+            "call leg event-log dump ftp",
+            "call leg event-log error-only",
+            "call leg event-log max-buffer-size",
+            "call leg history event-log save-exception-only",
+            "monitor call leg event-log"
+        ],
+        [
+            "Description",
+            "Enables event logging for voice, fax, and modem call legs.",
+            "Enables the voice gateway to write the contents of the call-leg event log buffer to an external file.",
+            "Restricts event logging to error events only for voice call legs.",
+            "Sets the maximum size of the event log buffer for each call leg.",
+            "Saves to history only event logs for call legs that had at least one error.",
+            "Displays the event log for an active call leg in real-time."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Voice Command Reference - S commands - show call history fax through show debug condition [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/voice/vcr4/vcr4-cr-book/vcr-s4.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00199-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 374464539,
+    "recordOffset": 374387527,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{470840=Indicates that this is a modem pass-through call and that named signaling events (NSEs)--a Cisco-proprietary version of named telephone events in RFC 2833--are used for signaling codec upspeed. The upspeed method is the method used to dynamically change the codec type and speed to meet network conditions. This means that you might move to a faster codec when you have both voice and data calls and then slow down when there is only voice traffic., 136301=Codec number., 253578=This command was implemented on the Cisco 1750 and Cisco 1751. This command was not supported on any other platforms in this release., 112146=This command was introduced on the Cisco 2600 series and Cisco 3600 series., 403907=Codec used for this call leg., 387817=Support was added for Voice over Frame Relay (VoFR) on the Cisco 2600 series and Cisco 3600 series., 183440=This command was modified to provide enhanced MGCP voice gateway interoperability to Cisco CallManager Version 3.1 for the Cisco 2600 series, Cisco 3600 series, and Cisco VG200., 481903=Total number of packet-loss events that were corrected using the RFC 2198 method., 183012=This command was integrated into Cisco IOS Release 12.2(11) and the Cisco CallManager Version 3.2. It was implemented on the Cisco IAD2420 series., 195954=Time-to-live value, or the amount of time, in seconds, for which a route from a neighbor is considered valid. Range is from 1 to 2147483647. Default is 1800 (30 minutes)., 56690=(Optional) Location of a particular dial peer. Range: 1 to 32767., 497159=This command was implemented for Voice over Frame Relay (VoFR) on the Cisco 2600 series and Cisco 3600 series., 240306=This command was implemented on the Cisco 1750 and Cisco 1751. This command is not supported on any other platforms in this release., 84699=This command was introduced on the Cisco 1750., 404010=Codec, 483524=Payload size, in bytes, for the codec used., 275329=This command was introduced on the Cisco 2600 series, Cisco 3600 series, Cisco 7200, Cisco MC3810, Cisco AS5300, and Cisco AS5800., 182614=The download-tones [ c1 | c2 ] keywords were added for the following platforms: Cisco 2610XM, Cisco 2611XM, Cisco 2620XM, Cisco 2621XM, Cisco 2650XM, Cisco 2651XM, Cisco 2691, Cisco 3640A, Cisco 3660, Cisco 3725, and Cisco 3745., 183767=This command was implemented on the Cisco 2600 series and Cisco 3600 series.}",
+    "TableContextTimeStampAfterTable": "{1781=Enables the set of commands used in the border-element configuration on the Cisco 2900 and Cisco 3900 series platforms.}",
+    "textBeforeTable": "Syntax Description number ] identifier | last time ] | id { less | more } [ duration identifier ] | compact [ id [ brief fax history call show To display the call history table for fax transmissions, use the show call history fax command in user EXEC or privileged EXEC mode. show call history fax show debug condition show cube status show cube debug category codes show csm call show csm show crm show controllers voice show controllers timeslots show controllers rs366 show connect show ces clock-select show cdapi show ccm-manager show call-router status show call-router routes show call treatment show call threshold show call spike status show call rsvp-sync stats show call rsvp-sync conf show call resource voice threshold show call resource voice stats show call prompt-mem-usage show callmon show call media forking show call",
+    "textAfterTable": "Command Modes User EXEC (>) Privileged EXEC (#) Command History Release Modification 11.3(1)T This command was introduced on the Cisco 3600 series. 12.0(3)XG This command was implemented for Voice over Frame Relay (VoFR) on the Cisco 2600 series and Cisco 3600 series. 12.0(4)XJ This command was modified for store-and-forward fax. 12.0(4)T This command was modified. The brief keyword was added, and the command was implemented on the Cisco 7200 series. 12.0(7)XK This command was modified. The brief keyword was implemented on the Cisco MC3810. 12.1(2)T This",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

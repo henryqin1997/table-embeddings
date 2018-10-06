@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "RFCs",
+            "RFC-959",
+            "RFC-1738 and RFC-2732",
+            "RFC-783"
+        ],
+        [
+            "Title",
+            "File Transfer Protocol",
+            "Uniform Resource Locators (URL)",
+            "Trivial File Transfer Protocol"
+        ]
+    ],
+    "pageTitle": "Cisco ASR 9000 Series Aggregation Services Router IP Addresses and Services Configuration Guide, Release 5.1.x - Implementing Host Services and Applications [Cisco ASR 9000 Series Aggregation Services Routers] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r5-1/addr_serv/configuration/guide/b_ipaddr_cg51xa9k/b_ipaddr_cg51xa9k_chapter_0110.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989826.86/warc/CC-MAIN-20150728002309-00173-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 380687375,
+    "recordOffset": 380661086,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{113362=RFC-1738 and RFC-2732, 101746=With a normal ping from Router A to Router B's Ethernet interface, the source address of the ping packet would be the address of the outgoing interface; that is, the address of the serial 0 interface (172.31.20.1). When Router B replies to the ping packet, it replies to the source address (that is, 172.31.20.1). This way, only the connectivity between the serial 0 interface of Router A (172.31.20.1) and the Ethernet interface of Router B (192.168.40.1) is tested., 102237=To test the connectivity between Router A's Ethernet 0 (172.16.23.2) and Router B's Ethernet 0 (192.168.40.1), we use the extended ping command. With extended ping, we get the option to specify the source address of the ping packet.}",
+    "textBeforeTable": "Feature History for Implementing Host Services and Applications For a complete description of host services and applications commands listed in this module, refer to the Cisco\u00a0ASR\u00a09000\u00a0Series Aggregation Services Router IP Addresses and Services Command Reference publication. To locate documentation of other commands that appear in this module, use the command reference master index, or search online. Note Cisco\u00a0IOS\u00a0XR software Host Services and Applications features on the router are used primarily for checking network connectivity and the route a packet follows to reach a destination, mapping a hostname to an IP address or an IP address to a hostname, and transferring files between routers and UNIX workstations. Implementing Host Services and Applications Additional References Configuring a Router to Use rcp, FTP, or TFTP Connections: Example Configuring Domain Services: Example Checking Network Connectivity: Example Configuration Examples for Implementing Host Services and Applications Configuring an IPSLA ICMP echo operation IPv6 Support for IP SLA ICMP Echo Operation Configuring syslog source-interface Transferring Files Using SCP Configuring Telnet Services",
+    "textAfterTable": "Configuring syslog source-interface IPv6 Support for IP SLA ICMP Echo Operation Configuration Examples for Implementing Host Services and Applications Additional References Prerequisites for Implementing Host Services and Applications The following prerequisites are required to implement Cisco\u00a0IOS\u00a0XR software Host Services and applications You must be in a user group associated with a task group that includes the proper task IDs. The command reference guides include the task IDs required for each command. If you suspect user group assignment is preventing you from using a command, contact your AAA administrator for assistance. Information About Implementing Host Services and Applications To implement Cisco\u00a0IOS\u00a0XR software Host Services and applications features discussed in this document, you should understand the following concepts: Network Connectivity Tools Domain Services TFTP Server File Transfer Services Cisco inetd Telnet Network Connectivity Tools Network connectivity tools enable you to check device connectivity by running traceroutes and pinging devices on the network. Ping Traceroute Ping The ping command is a common method for troubleshooting",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

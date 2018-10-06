@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Violation",
+            "Avoid unused local variables such as 'elem'.",
+            "Overriding method merely calls super"
+        ],
+        [
+            "Line",
+            "194",
+            "351 - 354"
+        ]
+    ],
+    "pageTitle": "Apache MyFaces JSF-2.0 Core Impl - PMD Results",
+    "title": "",
+    "url": "http://myfaces.apache.org/core20/myfaces-impl/pmd.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00045-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 174174255,
+    "recordOffset": 174160520,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 13 Jan 2015 00:42:17 GMT",
+    "textBeforeTable": "org/apache/myfaces/application/ApplicationImpl.java Files The following document contains the results of PMD 4.2.5. PMD Results License Security Thanks Sponsorship ASF Foundation JSF Tag Documentation Tag List Surefire Report Test Source Xref Source Xref Developer Activity File Activity Change Log JavaDocs Test JavaDocs JDepend FindBugs Report CPD Report PMD Report Project Reports Project Information Project Documentation",
+    "textAfterTable": "Avoid empty catch blocks 808 - 817 These nested if statements could be combined 1799 - 1802 These nested if statements could be combined 2196 - 2199 These nested if statements could be combined 2345 - 2348 These nested if statements could be combined 2575 - 2578 org/apache/myfaces/application/NavigationHandlerImpl.java Violation Line These nested if statements could be combined 184 - 190 Avoid empty catch blocks 464 - 470 These nested if statements could be combined 648 - 668 These nested if statements could be combined 677 - 686 Avoid unused method parameters such as 'facesContext'. 770 - 826 Avoid instantiating Boolean objects; reference Boolean.TRUE or Boolean.FALSE or call Boolean.valueOf() instead. 849 org/apache/myfaces/application/ResourceHandlerImpl.java Violation Line Avoid empty catch blocks 530 - 533 org/apache/myfaces/application/StateManagerImpl.java Violation Line Avoid unused local variables such as 'externalContext'. 231 org/apache/myfaces/application/ViewHandlerImpl.java Violation Line Avoid",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

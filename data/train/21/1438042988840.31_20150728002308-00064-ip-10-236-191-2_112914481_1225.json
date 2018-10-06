@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Property",
+            "bubbles",
+            "cancelable",
+            "currentTarget",
+            "target",
+            "tooltip"
+        ],
+        [
+            "Value",
+            "false",
+            "false",
+            "The Object that defines the event listener that handles the event. For example, if you use myButton.addEventListener() to register an event listener, myButton is the value of the currentTarget.",
+            "The Object that dispatched the event; it is not always the Object listening for the event. Use the currentTarget property to always access the Object listening for the event.",
+            "The ToolTip object to which this event applies."
+        ]
+    ],
+    "pageTitle": "UIComponent - Adobe ActionScript\u00ae 3 (AS3 Flex) API Reference",
+    "title": "",
+    "url": "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/mx/core/UIComponent.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1225,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988840.31/warc/CC-MAIN-20150728002308-00064-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 113011311,
+    "recordOffset": 112914481,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The properties of the event object have the following values: This event will only be dispatched when there are one or more relevant listeners attached to the dispatching object. add event. type property of the event object for an FlexEvent.ADD constant defines the value of the The This event is only dispatched when there are one or more relevant listeners attached to the dispatching object. Dispatched when the component is added to a container as a content child by using the addChild(), addChildAt(), addElement(), or addElementAt() method. If the component is added to the container as a noncontent child by using the rawChildren.addChild() or rawChildren.addChildAt() method, the event is not dispatched. Flash Player 9, AIR 1.1 Runtime Versions:\u00a0 Flex 3 Product Version:\u00a0 ActionScript 3.0 Language Version:\u00a0 mx.events.FlexEvent.ADDproperty FlexEvent.type = mx.events.FlexEventEvent Object Type: Event add Event Detail Matrix \u2014 The Matrix for the vertical gradient. Returns height:Number \u2014 The height of the gradient, in",
+    "textAfterTable": "creationComplete Event \u00a0 Event Object Type: mx.events.FlexEvent property FlexEvent.type = mx.events.FlexEvent.CREATION_COMPLETE Language Version:\u00a0 ActionScript 3.0 Product Version:\u00a0 Flex 3 Runtime Versions:\u00a0 Flash Player 9, AIR 1.1 Dispatched when the component has finished its construction, property processing, measuring, layout, and drawing. At this point, depending on its visible property, the component is not visible even though it has been drawn. The FlexEvent.CREATION_COMPLETE constant defines the value of the type property of the event object for a creationComplete event. The properties of the event object have the following values: Property Value bubbles false cancelable false currentTarget The Object that defines the event listener that handles the event. For example, if you use myButton.addEventListener() to register an event listener, myButton is the value of the currentTarget. target The Object that dispatched the event; it is not always the Object listening for the event. Use the currentTarget property to always access the Object listening for the event. currentStateChange Event",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

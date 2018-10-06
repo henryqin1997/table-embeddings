@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "file_version",
+            "current_version",
+            "file",
+            "prefix"
+        ],
+        [
+            "parameter version of the file",
+            "version from which mapping begins (you want to use VERSION_PARAMETER for this in most cases)",
+            "file to load from",
+            "prefix for members"
+        ]
+    ],
+    "pageTitle": "SHOGUN: CMulticlassOVREvaluation Class Reference",
+    "title": "",
+    "url": "http://shogun-toolbox.org/doc/en/2.0.1/classshogun_1_1CMulticlassOVREvaluation.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00244-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 227365740,
+    "recordOffset": 227349797,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{34445=Definition at line 1108 of file SGObject.cpp., 73173=Definition at line 1038 of file SGObject.cpp., 65753=Definition at line 1084 of file SGObject.cpp., 37452=Definition at line 1145 of file SGObject.cpp., 71430=Definition at line 1043 of file SGObject.cpp., 35887=Definition at line 1132 of file SGObject.cpp., 51989=Definition at line 1033 of file SGObject.cpp., 53607=Definition at line 1028 of file SGObject.cpp., 23523=Definition at line 1201 of file SGObject.cpp.}",
+    "lastModified": "Fri, 16 Nov 2012 02:52:17 GMT",
+    "textBeforeTable": "Parameters: Builds a dictionary of all parameters in SGObject as well of those of SGObjects that are parameters of this object. Dictionary maps parameters to the objects that own them. [inherited] \u00a0)\u00a0 dict CMap< TParameter *, CSGObject * > &\u00a0 ( void build_parameter_dictionary Member Function Documentation Definition at line 29 of file MulticlassOVREvaluation.cpp. destructor [virtual] \u00a0)\u00a0 ( ~CMulticlassOVREvaluation Definition at line 23 of file MulticlassOVREvaluation.cpp. constructor \u00a0)\u00a0 binary_evaluation CBinaryClassEvaluation *\u00a0 ( CMulticlassOVREvaluation Definition at line 18 of file MulticlassOVREvaluation.cpp. constructor \u00a0)\u00a0 ( CMulticlassOVREvaluation Constructor & Destructor Documentation",
+    "textAfterTable": "\u00a0)\u00a0 const [virtual, inherited] A deep copy. All the instance variables will also be copied. Definition at line 131 of file SGObject.h. float64_t evaluate ( CLabels *\u00a0 predicted, CLabels *\u00a0 ground_truth \u00a0 ) [virtual] evaluate accuracy Parameters: predicted\u00a0 labels to be evaluated ground_truth\u00a0 labels assumed to be correct Returns: mean of OvR binary evaluations Implements CEvaluation. Definition at line 40 of file MulticlassOVREvaluation.cpp. CBinaryClassEvaluation* get_binary_evaluation ( \u00a0)\u00a0 get evaluation Definition at line 49 of file MulticlassOVREvaluation.h. virtual EEvaluationDirection get_evaluation_direction ( \u00a0)\u00a0",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

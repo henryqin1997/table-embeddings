@@ -1,0 +1,214 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2013-14 *",
+            "2013-14 *",
+            "2013-14 *",
+            "2013-14 *",
+            "2013-14 *"
+        ],
+        [
+            "Team",
+            "All Teams",
+            "MON",
+            "MON",
+            "MON",
+            "MON"
+        ],
+        [
+            "GP",
+            "64",
+            "45",
+            "10",
+            "6",
+            "3"
+        ],
+        [
+            "GS",
+            "56",
+            "39",
+            "9",
+            "5",
+            "3"
+        ],
+        [
+            "Min",
+            "22.1",
+            "21.1",
+            "24.4",
+            "24.8",
+            "24.0"
+        ],
+        [
+            "FGM",
+            "4.36",
+            "4.11",
+            "4.50",
+            "4.67",
+            "7.00"
+        ],
+        [
+            "FGA",
+            "8.91",
+            "8.16",
+            "10.70",
+            "10.50",
+            "11.00"
+        ],
+        [
+            "FG%",
+            ".489",
+            ".504",
+            ".421",
+            ".444",
+            ".636"
+        ],
+        [
+            "3FGM",
+            "0.88",
+            "0.76",
+            "1.20",
+            "0.67",
+            "2.00"
+        ],
+        [
+            "3FGA",
+            "2.53",
+            "2.22",
+            "3.60",
+            "2.67",
+            "3.33"
+        ],
+        [
+            "3P%",
+            ".346",
+            ".340",
+            ".333",
+            ".250",
+            ".600"
+        ],
+        [
+            "FTM",
+            "1.53",
+            "1.67",
+            "0.90",
+            "1.17",
+            "2.33"
+        ],
+        [
+            "FTA",
+            "1.89",
+            "2.00",
+            "1.30",
+            "1.67",
+            "2.67"
+        ],
+        [
+            "FT%",
+            ".810",
+            ".833",
+            ".692",
+            ".700",
+            ".875"
+        ],
+        [
+            "FIC",
+            "5.14",
+            "5.00",
+            "4.34",
+            "5.38",
+            "9.42"
+        ],
+        [
+            "OFF",
+            "0.22",
+            "0.18",
+            "0.30",
+            "0.17",
+            "0.67"
+        ],
+        [
+            "DEF",
+            "1.39",
+            "1.29",
+            "1.40",
+            "1.83",
+            "2.00"
+        ],
+        [
+            "Reb",
+            "1.61",
+            "1.47",
+            "1.70",
+            "2.00",
+            "2.67"
+        ],
+        [
+            "Ast",
+            "1.16",
+            "1.13",
+            "1.00",
+            "1.83",
+            "0.67"
+        ],
+        [
+            "Stl",
+            "0.62",
+            "0.53",
+            "0.80",
+            "1.33",
+            "0.00"
+        ],
+        [
+            "Blk",
+            "0.09",
+            "0.11",
+            "0.10",
+            "0.00",
+            "0.00"
+        ],
+        [
+            "PF",
+            "1.88",
+            "1.93",
+            "1.60",
+            "2.00",
+            "1.67"
+        ],
+        [
+            "TO",
+            "0.92",
+            "0.91",
+            "0.70",
+            "1.00",
+            "1.67"
+        ],
+        [
+            "Pts",
+            "11.25",
+            "10.82",
+            "11.10",
+            "11.17",
+            "18.33"
+        ]
+    ],
+    "pageTitle": "Erick Green Player Profile, Denver Nuggets, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Erick-Green/Summary/3715",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00106-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 21519815,
+    "recordOffset": 21494958,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{8333=Draft Entry: 2013 NBA Draft, 8124=Draft Rights Trade: UTH to DEN, Jun 27, 2013, 9475=Born: May 9, 1991 (24 years old), 8527=Free Agent: RFA-2017}",
+    "TableContextTimeStampAfterTable": "{74244=* International basketball history from 2011-2012, 105214=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 1 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "24 31 39 12 0 26 14 146 NBA Regular Season Stats - Misc Stats Season Team GP GS Dbl Dbl Tpl Dbl 40 Pts 20 Reb 20 Ast Techs HOB Ast/TO Stl/TO FT/FGA W's L's Win % OWS DWS WS 2014-15 DEN 43 1 0 0 0 0 0 0 .061 2.79 0.86 0.07 15 28 0.349 -0.10 0.10 0.00 CAREER \u00a0 43 1 0 0 0 0 0 0 .061 2.79 0.86 0.07 15 28 0.349 -0.10 0.10 0.00 NBA Regular Season Stats - Advanced Stats Season Team GP GS TS% eFG% ORB% DRB% TRB% AST% TOV% STL% BLK% USG% Total S % PPR PPS ORtg DRtg PER 2014-15 DEN 43 1 .436 .420 1.76 6.62 4.08 14.95 7.72 1.45 0.00 18.97 150.77 2.84 0.90 95.1 112.1 8.86 CAREER \u00a0 43 1 .436 .420 1.76 6.62 4.08 14.95 7.72 1.45 0.00 18.97 150.77 2.84 0.90 95.1 112.1 8.86",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

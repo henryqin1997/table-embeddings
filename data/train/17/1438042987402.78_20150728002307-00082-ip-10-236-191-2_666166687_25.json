@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "154.32500",
+            "154.44500"
+        ],
+        [
+            "License",
+            "KDD977",
+            "KEJ693"
+        ],
+        [
+            "Type",
+            "RM",
+            "M"
+        ],
+        [
+            "Tone",
+            "",
+            ""
+        ],
+        [
+            "Alpha Tag",
+            "1",
+            "2"
+        ],
+        [
+            "Description",
+            "Fire Dispatch",
+            "Fire"
+        ],
+        [
+            "Mode",
+            "FM",
+            "FM"
+        ],
+        [
+            "Tag",
+            "Fire Dispatch",
+            "Fire-Talk"
+        ]
+    ],
+    "pageTitle": "Hudson County, New Jersey (NJ) Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?ctid=1779&ts=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00082-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 666182331,
+    "recordOffset": 666166687,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{59=Note: Agency uses \u201cMOTOTRBO\u201d\u00a0 Currently. no scanner currently can monitor this digital format. Unique ID: 11312}",
+    "TableContextTimeStampAfterTable": "{75762=EMS\u00a0is Disaptched by\u00a0Hoboken\u00a0Police over their 800mhz dispatch channels.\u00a0 Either channel can be used as a disaptch channel. As of 10/2014, Channel \"2\"\u00a0is currently used for day to day Police operations.}",
+    "textBeforeTable": "Law Enforcement Hudson County //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { }); }); } act=1; setEsc(this,origHtml); this.innerHTML = getTagsHTML; getTagsHTML += '\\n'; } getTagsHTML += '' + tagNames[i] + '\\n'; for (var",
+    "textAfterTable": "478.52500\u00a0 WPNS204\u00a0 RM 065 DPL HCSD 2 Sheriff 2\u00a0 FMN\u00a0 Law Dispatch\u00a0 151.38500\u00a0 KNGC323\u00a0 RM 023 DPL HCSD J1 Sheriff - Jail 1\u00a0 FMN\u00a0 Corrections\u00a0 155.11500\u00a0 KNGC323\u00a0 M 179.9 PL HCSD J2 Sheriff - Jail 2\u00a0 FMN\u00a0 Corrections\u00a0 155.53500\u00a0 WNVR976\u00a0 M 179.9 PL HCSD J3 Sheriff - Jail Tactical\u00a0 FM\u00a0 Corrections\u00a0 158.92500\u00a0 \u00a0 M 023 DPL HCSD YDC Sheriff - Youth Detention Center\u00a0 FM\u00a0 Corrections\u00a0 155.19000\u00a0 \u00a0 M 025 DPL HCSD JDC Sheriff - Juvenile Detention\u00a0 FM\u00a0 Corrections\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

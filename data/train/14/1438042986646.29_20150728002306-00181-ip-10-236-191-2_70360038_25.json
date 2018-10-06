@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Property",
+            "Default Value",
+            "Range of Values",
+            "Syntax"
+        ],
+        [
+            "Description",
+            "CHG for DB2/400, CS for DB2/OS390, DB2/UDB",
+            "{CHG|CS|RR|ALL|NC}",
+            "DRDA_ISOLATION_LEVEL={CHG|CS|RR|ALL|NC}"
+        ]
+    ],
+    "pageTitle": "Initialization Parameters",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B28359_01/gateways.111/b31046/app_initparam.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00181-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70378127,
+    "recordOffset": 70360038,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{80845=For a DB2/400 database:\u00a0TG4DRDA_DB2400, 95700=Defines the date format for dates used by the target system. This initialization parameter has the same function as the NLS_DATE_FORMAT initialization parameter for an Oracle database. The value can be any valid date mask listed in the Oracle Database SQL Language Reference, but must match the date format of the target system. For example, if the target system stores the date February 14, 2001 as 2001/02/14, set the parameter to yyyy/mm/dd. Note that characters must be lowercase., 97733=Specifies the language used in character date values coming from the non-Oracle system. Date formats can be language independent. For example, if the format is dd/mm/yyyy, all three components of the character date are numeric. In the format dd-mon-yyyy, however, the month component is the name abbreviated to three characters. The abbreviation is language dependent. For example, the abbreviation for the month April is \"apr\", which in French is \"avr\" (Avril)., 86791=ORA_MAX_DATE specifies the gateway maximum date value. If the fetched date value is larger than 4712-12-31, the gateway replaces the date value with the value defined by the ORA_MAX_DATE parameter. Any date between January\u00a01, 4712\u00a0BC and December\u00a031, 4712\u00a0AD is valid.}",
+    "lastModified": "Thu, 09 Jul 2015 23:26:46 GMT",
+    "textBeforeTable": "B.3.11 HS_FDS_FETCH_ROWS SINGLE_SITE provides read and write access to the non-Oracle database. However, the gateway cannot participate in distributed updates. READ_ONLY provides read access to the non-Oracle database. Recovery account password. The password is assigned with the HS_FDS_RECOVERY_PWD parameter. COMMIT_CONFIRM does not apply to Oracle Database Gateway for ODBC. The default value for Oracle Database Gateway for ODBC is SINGLE_SITE. Recovery account. The account name is assigned with the HS_FDS_RECOVERY_ACCOUNT parameter. Transaction log table. The default table name is HS_TRANSACTION_LOG. A different name can be set using the HS_FDS_TRANSACTION_LOG parameter. The transaction log table must be granted SELECT, DELETE, and INSERT privileges set to public. COMMIT_CONFIRM provides read and write access to the non-Oracle database and allows the gateway to be part of a distributed update. To use the commit-confirm model, the following items must be created in the non-Oracle database: The following values are possible: Specifies the type of transaction model that is used when the non-Oracle database is updated by a transaction. COMMIT_CONFIRM, READ_ONLY, SINGLE_SITE Range of Values COMMIT_CONFIRM Default Value Description Property",
+    "textAfterTable": "HS_FDS_FETCH_ROWS specifies the fetch array size. This is the number of rows to be fetched from the non-Oracle database and to return to Oracle database at one time. This parameter will be affected by the HS_RPC_FETCH_SIZE and HS_RPC_FETCH_REBLOCKING parameters. B.3.12 IFILE Property Description Default value None Range of values Valid parameter file names Use the IFILE initialization parameter to embed another initialization file within the current initialization file. The value should be an absolute path and should not contain environment variables. The three levels of nesting limit does not apply. See Also: Oracle Database Reference B.3.13 DRDA_CACHE_TABLE_DESC Property Description Default Value TRUE Range of Values {TRUE|FALSE} Syntax DRDA_CACHE_TABLE_DESC={TRUE|FALSE}",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

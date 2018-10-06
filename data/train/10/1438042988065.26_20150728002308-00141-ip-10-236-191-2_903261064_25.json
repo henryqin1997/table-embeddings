@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Name",
+            "use_dupservers",
+            "max_dupes",
+            "stripe",
+            "ds_meta_info",
+            "ds_max_ecl",
+            "ecl_override",
+            "ds_send_links",
+            "ds_paused"
+        ],
+        [
+            "Type",
+            "boolean",
+            "integer",
+            "integer",
+            "list-string",
+            "integer",
+            "string",
+            "boolean",
+            "boolean"
+        ],
+        [
+            "Value",
+            "yes|no",
+            "",
+            "",
+            "duplicates|redirects|mirrors|metadata",
+            "",
+            "",
+            "yes|no",
+            "yes|no"
+        ],
+        [
+            "Meaning",
+            "Specifies that the Web crawler should use one or more duplicate servers. This option is applicable only in a multi-node installation. Default: no",
+            "Specifies the maximum number of duplicates to record per Web item. Default: 10",
+            "Specifies the number of data files to distribute the checksum data into. Increasing this value may improve the performance of post processing. Default: 1",
+            "Specifies the kind of metadata a node scheduler should report to the indexing engine. Valid values are as follows: duplicates: Reports URIs that are duplicates of this item redirects: Reports URIs that are redirected to this item metadata: Reports meta data of this item mirrors: Reports all mirror URIs of this Web item",
+            "Specifies the maximum number of duplicates or redirects to report to the indexing engine, as specified by the ds_meta_info configuration parameter. Default: 10",
+            "Specifies a regular expression that identifies redirect and duplicate URIs that should be stored and possibly submitted to the indexing engine, even though max_dupes is reached. For example: .*index\\.html$",
+            "Specifies whether all extracted hyperlinks from a Web item should be sent to the indexing engine.",
+            "Specifies whether a node scheduler should suspend the submission of content to the indexing engine."
+        ]
+    ],
+    "pageTitle": "Web Crawler XML configuration reference",
+    "title": "",
+    "url": "https://technet.microsoft.com/en-us/library/ff354932(v=office.14).aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988065.26/warc/CC-MAIN-20150728002308-00141-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 903306099,
+    "recordOffset": 903261064,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{22790=Topic Last Modified: 2011-08-05, 22864=The FAST Search Web crawler automatically retrieves information from Web sites, and passes this information to the Microsoft FAST Search Server 2010 for SharePoint index. The FAST Search Web crawler is configured by creating an XML configuration file formatted as specified in this article, and submitting it to the Web crawler using the crawleradmin.exe command-line tool., 234632=The following example shows how the Web crawler uses different delay intervals during the week. On Wednesday between 9:00 a.m. and 7:00 p.m. the Web crawler uses a delay of 20 seconds. On Monday between 9:00 a.m. and 5:00 p.m. the crawler suspends crawling, and any other time of the week the Web crawler uses a delay of 60 seconds., 26491=Copy one of the three supplied crawl configuration templates found in <FASTSearchFolder>\\etc (where <FASTSearchFolder> is the path of the folder where you have installed FAST Search Server 2010 for SharePoint, for example C:\\FASTSearch) to a new file such as MyCollection.xml, or create a new file. Edit the file in a text editor to include the elements and settings that you must have., 170882=Default: 131072, 22712=Applies to: FAST Search Server 2010, 212223=Default: 1000, 28942=Install a FAST Search Server 2010 for SharePoint update or service pack., 80141=Default: 1500.0, 115130=A range of IPv6 address can be specified by writing an IPv6 address in string format and using a hyphen for the range. For example: 2002:CF2E:C500- C564:0:0:0:0:0 or ::ffff:207.46.197.0-100}",
+    "textBeforeTable": "Creating a new crawl configuration Host name refers to either \"contoso\" in http://contoso/ or \"download.contoso.com\" in http://download.contoso.com/. It can be either fully qualified or not. In this document, the difference between a Web site and a host name is that a Web site describes the actual site and its content, whereas the host name is the network name that is used to reach a given Web server. A single site might have multiple host names. Web site refers not to a SharePoint site, but to the content on a Web site such as www.contoso.com. Key terminology These configuration files must be formatted in compliance with the XML schema. This document includes a simple and a typical example of a configuration file. For an overview of the elements and sections in the configuration file, refer to the table in crawlercollectiondefaults.xml quick reference. The format specified in this document is also used by the crawlercollectiondefaults.xml file, which contains all the default options/values for new crawl collections. When you modify it, you change the defaults for all new collections. The default values are used for any option not specified in the XML configuration created for a specific crawl collection. The FAST",
+    "textAfterTable": "Note To modify a configuration file, verify that you meet the following minimum requirements: You are a member of the FASTSearchAdministrators local group on the computer where FAST Search Server 2010 for SharePoint is installed. To edit this file: Edit crawlercollectiondefaults.xml in a text editor to include the elements and settings that you must have. Use the existing file in <FASTSearchFolder>\\etc\\ as a starting point. Note Use a text editor (for example Notepad) to change crawlercollectiondefaults.xml. Do not use a general-purpose XML editor. Run nctrl.exe restart crawler to restart the FAST Search Web crawler process with the options that you set in step 1. Web Crawler XML configuration quick reference This table lists the elements in the Web Crawler XML configuration format. The elements can appear in any order with the following exceptions. CrawlerConfig holds the DomainSpecification element. The primary elements of SubDomain, Login, and Node occur inside the DomainSpecification element. The section and attrib sub-elements can occur in any of the primary elements, in any order. The member sub-elements must appear inside an attrib element only.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

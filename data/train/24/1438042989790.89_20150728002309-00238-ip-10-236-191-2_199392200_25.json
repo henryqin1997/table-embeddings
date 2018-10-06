@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "defaultMask",
+            "hostname"
+        ],
+        [
+            "Required?",
+            "no",
+            "no"
+        ],
+        [
+            "Description",
+            "Must be \"DEBUG\", \"INFO\", \"WARNING\", \"ERROR\" or \"FATAL\". The log mask is set to accept messages at or above the given level. If this parameter is omitted, the log mask is set to WARNING.",
+            "The hostname or IP address that Syslog believes to be the local host. This is set to whatever is returned by InetAddress.getLocalHost() if not specified."
+        ]
+    ],
+    "pageTitle": "Protomatter Syslog",
+    "title": "",
+    "url": "http://protomatter.sourceforge.net/1.1.6/javadoc/com/protomatter/syslog/syslog-whitepaper.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00238-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 199411807,
+    "recordOffset": 199392200,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 24 Nov 2001 05:04:55 GMT",
+    "textBeforeTable": "",
+    "textAfterTable": "Covers Release 1.1.6 Introduction Syslog was developed to fill the need for a simple and robust logging system that is not tied to any specific application server or to the concept of an application server in general. Since then, it has grown considerably and encompases many features that are not particularly simple. However, it is still very simple to use and can be used in various stages of complication. Syslog provides the following features: Simple logging API Background work queues (optional) Multiple message severities Logs the name of the thread that issued the message (optional) Logs the name of the host that issued the message (optional) Arbitrary log channel names Pluggable log message listeners Pluggable log formatting modules for each listener Pluggable log policy modules for each listener Startup class for WebLogic Server Configuration can be modified on-the-fly while the system is running A running configuration can be written to XML for re-load later JMS integration Remote logging capabilities New in 1.1.6: Easy-to-use Channel class for messages. Full JDK 1.4 logging system integration. Correct class name, method name and line number determined for each message (JDK 1.4 only). The general idea is that Syslog lets the programmer log messages easily through a clean API and then not worry about what happens to those messages.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

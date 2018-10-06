@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "Patent application number",
+            "20120131025",
+            "20120158672",
+            "20120158675",
+            "20120159098",
+            "20120166401",
+            "20130054533",
+            "20130060739"
+        ],
+        [
+            "Description",
+            "SCALABLE CHUNK STORE FOR DATA DEDUPLICATION - Data streams may be stored in a chunk store in the form of stream maps and data chunks. Data chunks corresponding to a data stream may be stored in a chunk container, and a stream map corresponding to the data stream may point to the data chunks in the chunk container. Multiple stream maps may be stored in a stream container, and may point to the data chunks in the chunk container in a manner that duplicate data chunks are not present. Techniques are provided herein for localizing the storage of related data chunks in such chunk containers, for locating data chunks stored in chunk containers, for storing data streams in chunk stores in localized manners that enhance locality and decrease defragmentation, and for reorganizing stored data streams in chunks stores.",
+            "Extensible Pipeline for Data Deduplication - The subject disclosure is directed towards data deduplication (optimization) performed by phases/modules of a modular data deduplication pipeline. At each phase, the pipeline allows modules to be replaced, selected or extended, e.g., different algorithms can be used for chunking or compression based upon the type of data being processed. The pipeline facilitates secure data processing, batch processing, and parallel processing. The pipeline is tunable based upon feedback, e.g., by selecting modules to increase deduplication quality, performance and/or throughput. Also described is selecting, filtering, ranking, sorting and/or grouping the files to deduplicate, e.g., based upon properties and/or statistical properties of the files and/or a file dataset and/or internal or external feedback.",
+            "Partial Recall of Deduplicated Files - The subject disclosure is directed towards changing a file from a fully deduplicated state to a partially deduplicated state in which some of the file data is deduplicated in a chunk store, and some is recalled into the file, that is, in the file's storage volume. A partial recall mechanism such as in a file system filter tracks (e.g., via a bitmap in a file reparse point) whether file data is maintained in the chunk store or has been recalled to the file. Data is recalled from the chunk store as needed, and committed (e.g., flushed) to the file. Also described is efficiently returning the file to a fully deduplicated state by using the tracking information to determine which parts of the file are already deduplicated into the chunk store so as to avoid their further deduplication processing.",
+            "GARBAGE COLLECTION AND HOTSPOTS RELIEF FOR A DATA DEDUPLICATION CHUNK STORE - Techniques for garbage collecting unused data chunks in storage are provided. According to one implementation, data chunks stored in a chunk container that are unused are identified based an analysis of one or more stream map chunks indicated as deleted. The identified data chunks are indicated as deleted. The storage space in the chunk container filled by the data chunks indicated as deleted may then be reclaimed. Techniques for selectively backing up data chunks are also provided. According to one implementation, a data chunk is received for storing in a chunk container. A backup copy of the received data chunk is stored in a backup container if the received data chunk is in a predetermined top percentage of most referenced data chunks in the chunk container and has a number of references greater than a predetermined reference threshold.",
+            "Using Index Partitioning and Reconciliation for Data Deduplication - The subject disclosure is directed towards a data deduplication technology in which a hash index service's index is partitioned into subspace indexes, with less than the entire hash index service's index cached to save memory. The subspace index is accessed to determine whether a data chunk already exists or needs to be indexed and stored. The index may be divided into subspaces based on criteria associated with the data to index, such as file type, data type, time of last usage, and so on. Also described is subspace reconciliation, in which duplicate entries in subspaces are detected so as to remove entries and chunks from the deduplication system. Subspace reconciliation may be performed at off-peak time, when more system resources are available, and may be interrupted if resources are needed. Subspaces to reconcile may be based on similarity, including via similarity of signatures that each compactly represents the subspace's hashes.",
+            "VERIFYING A DATA RECOVERY COMPONENT USING A MANAGED INTERFACE - The subject disclosure is directed towards verifying a data recovery component of a volume snapshot service using a managed interface. The managed interface enables interoperability between the data recovery component and one or more complementary data recovery components by converting compatible instructions for the data recovery component and a complementary data recovery component into native data recovery operations for the volume snapshot service and vice versa. Via the managed interface, the complementary data recovery component emulates the native data recovery operations. Using status information associated with such an emulation, the data recovery component is verifiable.",
+            "Optimization of a Partially Deduplicated File - The subject disclosure is directed towards transforming a file having at least one undeduplicated portion into a fully deduplicated file. For each of the at least one undeduplicated portion, a deduplication mechanism defines at least one chunk between file offsets associated with the at least one undeduplicated portion. Chunk boundaries associated with the at least one chunk are stored within deduplication metadata. The deduplication mechanism aligns the at least one chunk with chunk boundaries of at least one deduplicated portion of the file. Then, the at least one chunk is committed to a chunk store."
+        ],
+        [
+            "Published",
+            "05-24-2012",
+            "06-21-2012",
+            "06-21-2012",
+            "06-21-2012",
+            "06-28-2012",
+            "02-28-2013",
+            "03-07-2013"
+        ]
+    ],
+    "pageTitle": "Benton, US - Patent applications",
+    "title": "",
+    "url": "http://www.faqs.org/patents/inventor/benton-us-5/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988065.26/warc/CC-MAIN-20150728002308-00269-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 444991223,
+    "recordOffset": 444964075,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "James Robert Benton, Seattle, WA US 06-26-2014 DATA ERROR DETECTION AND CORRECTION USING HASH VALUES - The subject disclosure is directed towards a data storage service that uses hash values, such as substantially collision-free hash values, to maintain data integrity. These hash values are persisted in the form of mappings corresponding to data blocks in one or more data stores. If a data error is detected, these mappings allow the data storage service to search the one or more data stores for data blocks having matching hash values. If a data block is found that corresponds to a hash value for a corrupted or lost data block, the data storage service uses that data block to repair the corrupted or lost data block. 20140181575 Published Description Patent application number James R. Benton, Hanover, NH US 12-13-2012 METHOD AND SYSTEM FOR BROWSER-BASED CONTROL OF A REMOTE COMPUTER - A method and system for remote control of a presenter's computer screen using only web browsers is described. Viewers are able to view representation of a presenter's screen on a screen of the viewer's device and remotely control the presenter's screen directly from a web browser, without any downloads, plugins, or dialog boxes. Viewer control events are captured by the browser, sent to a server, and transmitted to the presenter's computer. A program running on the presenter's computer executes the control events, updates the presenter's screen, and transmits",
+    "textAfterTable": "Jeffrey G. Benton, Boulder, CO US Patent application number Description Published 20140202336 Systems And Method For Air Destratification And Circulation - A system for air destratification, circulation, and/or purification including an intake positioned proximate a ceiling of a space formed by a floor, a plurality of walls and the ceiling; an exhaust, positioned proximate the ceiling and separate from the intake; a fan structure comprising a motor mechanically coupled with fan blades; a first duct for coupling the intake to the fan structure; a second duct for coupling the exhaust to the fan structure; and at least one attachment for supporting the fan structure such that no additional stress is applied to the ceiling from the fan structure; wherein the fan structure moves air from the intake to the exhaust via the first and second ducts. The system may be capable of fitting within a single ceiling tile of a T-bar ceiling. 07-24-2014 Jim B. Benton, Huffman, TX US Patent application number Description Published 20100018714 TOOL USING OUTPUTS OF SENSORS RESPONSIVE TO SIGNALING - An apparatus for use in a wellbore includes a tool string and a plurality of sensors, which include at least a first sensor to detect pressure signals in an inner conduit of the tool string and at least a second sensor to detect pressure signals in an annulus outside the tool string. A controller actuates a",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

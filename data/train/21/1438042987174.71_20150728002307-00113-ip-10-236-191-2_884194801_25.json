@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Name",
+            "KDEHOME",
+            "PATH",
+            "LD_LIBRARY_PATH",
+            "KDETMP",
+            "KDEVARTMP",
+            "KDEDIR",
+            "KDEDIRS",
+            "LD_BIND_NOW"
+        ],
+        [
+            "Value",
+            "$HOME/.kde4",
+            "$KDEDIR/bin:$QTDIR/bin:/usr/local/bin:$PATH",
+            "$KDEDIR/lib:$QTDIR/lib:$LD_LIBRARY_PATH",
+            "/tmp/$USER-kde4",
+            "/var/tmp/$USER-kde4",
+            "$HOME/kde",
+            "$KDEDIR",
+            "42"
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Getting Started/Set up KDE 4 for development (es)\" - KDE TechBase",
+    "title": "",
+    "url": "https://techbase.kde.org/index.php?title=Getting_Started/Set_up_KDE_4_for_development_(es)&diff=60840&oldid=60335",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00113-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 884227267,
+    "recordOffset": 884194801,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": ".bashrc: Add / Copy button to add new environment variables. You will need the following, which are the same as in your Simply click the For some applications, like Konsole, this is not strictly necessary, but others like KMail will crash if you do not change this. start3app functions changes some environment variables, you need to change them back here so the KDE 4 applications can be run without problems from within KDevelop. Because the KMail will not work at all. Debug Arguments or debugging some applications like --nofork to the $KDE_BUILD/KDE/kdebase/apps/konsole/src/konsole. You should add Executable. For example, if you want to run Konsole, this is Make sure you use the correct binary as Run Options Add button. $HOME/kde/lib/kde4/plugins to the lineedit and then click the Change Plugin Paths dialog to add the plugin directory from KDE so you see the KDE widgets when designer is started. To do this add Designer Binary. Make sure to use the $HOME/qt-copy/bin/designer as Qt include syntax. Use Qt 4 style as $HOME/qt-copy/bin/qmake. Then choose QMake Binary path to Enable Qt options and choose Qt4 as your version. Set the Check C++ Support->Qt Options The Qt4 PCS Importer is",
+    "textAfterTable": "Build Options->Build Make sure the correct build directory is selected. Again, for Konsole, this would be $KDE_BUILD/KDE/kdebase/apps/konsole. Build Options->Make You might want to check Abort on first error. You also might want to add VERBOSE= or VERBOSE=1 to Additional make options to control the level of verbosity for the build process. If you have more than one processor or if you have access to an icecream cluster, you might want to check the Run multiple jobs option and set the Number of simultaneous jobs to the number of available processors. This increases the compile speed. It is the same as the -j option for make. Formatting You should set all options here to match the coding style of the project you are working on. CTags->General You need to correctly set the Path to ctags binary, which is /usr/bin/ctags on Debian-based systems. You probably want to enable the When more than one hit, go directly to the first option. Now you have finished adjusting your project-specific settings. Now you should remove some plugins you do not need, in Settings->Configure Plugins.... I for example disable the following plugins: Abbreviation Expansion, Code Snippets, Doxygen Support, Embedded Konsole, File Tree, Final Packaging Support,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

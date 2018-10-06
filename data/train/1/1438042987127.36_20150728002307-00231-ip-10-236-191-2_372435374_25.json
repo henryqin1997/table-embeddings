@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Router> enable",
+            "configure terminal Example: Router# configure terminal",
+            "ipv6 dhcp-relay option vpn Example: Router(config)# ipv6 dhcp-relay option vpn",
+            "interface type number Example: Router(config)# interface ethernet 0/0",
+            "ipv6 dhcp relay option vpn Example: Router(config-if)# ipv6 dhcp relay option vpn",
+            "ipv6 dhcp relay destination ipv6-address [interface-type interface-number | vrf vrf-name| global] Example: Router(config-if)# ipv6 dhcp relay destination FE80::250:A2FF:FEBF:A056 ethernet 0/0"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Enables the DHCP for IPv6 relay VRF-aware feature globally.",
+            "Specifies an interface type and number, and places the router in interface configuration mode.",
+            "Enables the DHCP for IPv6 relay VRF-aware feature on the specified interface. Enabling this command supersedes configuration using the ipv6 dhcp-relay option vpncommand.",
+            "Specifies a destination address to which client messages are forwarded."
+        ]
+    ],
+    "pageTitle": "IPv6 Configuration Guide, Cisco IOS Release 12.4T - Implementing DHCP for IPv6 [Cisco IOS Software Releases 12.4 T] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipv6/configuration/12-4t/ipv6-12-4t-book/ip6-dhcp.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987127.36/warc/CC-MAIN-20150728002307-00231-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 372479811,
+    "recordOffset": 372435374,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{35519=Router(config-dhcp)# prefix-delegation pool pool1 lifetime 1800 60, 253036=DHCPv6 clients are connected to this server on Ethernet interface 0/0. The server is configured to use parameters from the DHCP pool called dhcp-pool. This pool provides clients with the IPv6 address of a DNS server and the domain name to be used. It also specifies that prefixes can be delegated from the prefix pool called client-prefix-pool1. The prefixes delegated will have valid and preferred lifetimes of 1800 and 600 seconds. The prefix pool named client-prefix-pool1 has a prefix of length /40 from which it will delegate (sub)prefixes of length /48.}",
+    "textBeforeTable": "DETAILED STEPS 6.\u00a0\u00a0\u00a0 ipv6 dhcp relay destination ipv6-address [interface-type interface-number | vrf vrf-name| global] 5.\u00a0\u00a0\u00a0 ipv6 dhcp relay option vpn 4.\u00a0\u00a0\u00a0 interface type number 3.\u00a0\u00a0\u00a0 ipv6 dhcp-relay option vpn 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS Note that you do not have to configure this feature on specified interfaces; if you want the feature to be enabled globally on the router only, perform steps 1, 2, and 3. Configuring a VRF-Aware Relay Configuring a VRF-Aware Server Configuring a VRF-Aware Relay",
+    "textAfterTable": "Configuring a VRF-Aware Server SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 interface type number 4.\u00a0\u00a0\u00a0 ipv6 dhcp server vrf enable DETAILED STEPS \u00a0 Command or Action Purpose Step\u00a01 enable Example: Router> enable \u00a0 Enables privileged EXEC mode. Enter your password if prompted. \u00a0 Step\u00a02 configure terminal",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

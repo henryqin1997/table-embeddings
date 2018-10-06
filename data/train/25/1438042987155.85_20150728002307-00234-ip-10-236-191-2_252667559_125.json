@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "Name",
+            "promiseOrValue",
+            "callback",
+            "errback",
+            "progressHandler"
+        ],
+        [
+            "Type",
+            "",
+            "Function",
+            "Function",
+            "Function"
+        ],
+        [
+            "Optional",
+            "false",
+            "true",
+            "true",
+            "true"
+        ],
+        [
+            "Description",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "EmbedJS Function Reference",
+    "title": "",
+    "url": "http://uxebu.github.io/embedjs/docs/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00234-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 252693103,
+    "recordOffset": 252667559,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 14 Oct 2011 12:50:09 GMT",
+    "textBeforeTable": "addClass(node, classStr)function All other EmbedJS goodness lies within the functions listed below. For questions, comments and bugs concerning this reference, feel free to send a tweet to @embedjs or report the bug to the EmbedJS bugtracker on github. embed.version contains the version string of the loaded EmbedJS version. embed.doc holds a reference to the document in which EmbedJS was loaded. In a non-browser environment this will be null. embed.global holds a reference to the global scope in which EmbedJS was loaded. In browser context, this will be window. Below are listed all functions that are available in EmbedJS. However, there are some properties on the embed object that aren't functions, so here's a brief description of these: Welcome to the EmbedJS Function Reference! EmbedJS Function Reference xhrPut xhrPost xhrGet xhrDelete xhr when unsubscribe trim toJson toggleClass toDom toArray subscribe style stopEvent some setObject safeMixin replace removeClass removeAttr ready rawXhrPut rawXhrPost query publish place on objectToQuery mixin map loaded lastIndexOf",
+    "textAfterTable": "String ID or DomNode reference to add a class string too classStr String false A String class name to add, or several space-separated class names, or an array of class names. back to top addOnLoad(obj, functionName)function Summary Registers a function to be triggered after the DOM has finished loading and widgets declared in markup have been instantiated. Images and CSS files may or may not have finished downloading when the specified function is called. (Note that widgets' CSS and HTML code is guaranteed to be downloaded before said widgets are instantiated.) Alias embed.ready() is an alias for embed.addOnLoad() Examples \tembed.addOnLoad(functionPointer); embed.addOnLoad(object, \"functionName\"); embed.addOnLoad(object, function(){ /* ... */}); Feature Defined in feature \"html-ready \" Parameters Name Type Optional Description obj Object true functionName String|Function false back to top attachScript(params)function Summary creates a new <script> tag pointing to the specified URL and adds it to the document. Description Attaches the script element to the DOM. Use this method if you just want to attach a script to the DOM and do not care when or if it",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

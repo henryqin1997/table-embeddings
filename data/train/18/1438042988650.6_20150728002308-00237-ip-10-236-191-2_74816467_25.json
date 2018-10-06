@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "taskname",
+            "type",
+            "level",
+            "section",
+            "object_id",
+            "result_limit",
+            "owner_name"
+        ],
+        [
+            "Description",
+            "Name of task to report",
+            "Type of the report. Possible values are: TEXT, HTML, XML (see Table 123-4, \"DBMS_SQLDIAG Constants - Report Type (possible values) Constants\").",
+            "Format of the recommendations. Possible values are TYPICAL, BASIC, ALL (Table 123-5, \"DBMS_SQLDIAG Constants - Report Level (possible values) Constants\").",
+            "Particular section in the report. Possible values are: SUMMARY, FINDINGS, PLAN, INFORMATION, ERROR, ALL (Table 123-6, \"DBMS_SQLDIAG Constants - Report Section (possible values) Constants\").",
+            "Identifier of the advisor framework object that represents a given statement in a SQL Tuning Set (STS).",
+            "Number of statements in a STS for which the report is generated",
+            "Name of the task execution to use. If NULL, the report will be generated for the last task execution."
+        ]
+    ],
+    "pageTitle": "DBMS_SQLDIAG",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B28359_01/appdev.111/b28419/d_sqldiag.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00237-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74832219,
+    "recordOffset": 74816467,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{4111=1800}",
+    "lastModified": "Thu, 09 Jul 2015 23:29:24 GMT",
+    "textBeforeTable": "Table 123-26 REPORT_DIAGNOSIS_TASK Function Parameters Parameters RETURN CLOB; owner_name IN VARCHAR2 := NULL) result_limit IN NUMBER := NULL, object_id IN NUMBER := NULL, section IN VARCHAR2 := SECTION_ALL, level IN VARCHAR2 := LEVEL_TYPICAL, type IN VARCHAR2 := TYPE_TEXT, taskname IN VARCHAR2, DBMS_SQLDIAG.REPORT_DIAGNOSIS_TASK (  Syntax This function reports on a diagnostic task. It returns a CLOB containing the desired report. REPORT_DIAGNOSIS_TASK Function     By default, we move all SQL patches in category DEFAULT. See the Examples for details. Note that the subprogram issues a COMMIT after packing each SQL patch, so if an error is raised in mid-execution, some patches may be in the staging table.   Requires: ADMINISTER SQL PLAN MANAGEMENT OBJECT privilege and INSERT privilege on the staging table   Usage Notes  Schema where the table resides, or NULL for current schema (case-sensitive) staging_schema_owner (Mandatory) Name of the table to use (case-sensitive) staging_table_name Category to which to pack patches (% wildcards acceptable, case-insensitive) patch_category Name of patch to pack (% wildcards acceptable, case-sensitive) patch_name",
+    "textAfterTable": "RESET_DIAGNOSIS_TASK Procedure This procedure resets a diagnostic task. Syntax  DBMS_SQLDIAG.RESET_DIAGNOSIS_TASK ( taskname IN VARCHAR2); Parameters Table 123-27 RESET_DIAGNOSIS_TASK Procedure Parameters Parameter Description taskname Name of task RESUME_DIAGNOSIS_TASK Procedure This procedure resumes a diagnostic path. Syntax  DBMS_SQLDIAG.RESUME_DIAGNOSIS_TASK ( taskname IN VARCHAR2); Parameters Table 123-28 RESUME_DIAGNOSIS_TASK Procedure Parameters Parameter Description taskname Name of task SET_DIAGNOSIS_TASK_PARAMETER Procedure This procedure is called to update the value of a SQL diagnosis parameter of type VARCHAR2. The task must be set to its initial state before calling this procedure. The diagnosis parameters that can be set by this procedure are: MODE : diag scope (comprehensive, limited) _SQLDIAG_FINDING_MODE : findings in the report (see \"DBMS_SQLDIAG",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,190 @@
+{
+    "relation": [
+        [
+            "Year",
+            "2011",
+            "2009",
+            "2008",
+            "AVERAGES",
+            "TOTAL"
+        ],
+        [
+            "Event",
+            "U-20 European-A Championships",
+            "U-18 European-A Championships",
+            "U-16 European-A Championships",
+            "",
+            ""
+        ],
+        [
+            "GP",
+            "9",
+            "8",
+            "8",
+            "25",
+            "25"
+        ],
+        [
+            "Min",
+            "29:40",
+            "22:30",
+            "25:22",
+            "26:00",
+            "650:00"
+        ],
+        [
+            "FGM",
+            "6.1",
+            "4.6",
+            "4.9",
+            "5.2",
+            "131"
+        ],
+        [
+            "FGA",
+            "12.9",
+            "8.8",
+            "11.5",
+            "11.1",
+            "278"
+        ],
+        [
+            "FG%",
+            ".474",
+            ".529",
+            ".424",
+            ".471",
+            ".471"
+        ],
+        [
+            "3FGM",
+            "1.7",
+            "1.1",
+            "1.0",
+            "1.3",
+            "32"
+        ],
+        [
+            "3FGA",
+            "4.7",
+            "3.2",
+            "3.8",
+            "3.9",
+            "98"
+        ],
+        [
+            "3P%",
+            ".357",
+            ".346",
+            ".267",
+            ".327",
+            ".327"
+        ],
+        [
+            "FTM",
+            "3.0",
+            "2.8",
+            "3.1",
+            "3.0",
+            "74"
+        ],
+        [
+            "FTA",
+            "4.6",
+            "4.2",
+            "4.0",
+            "4.3",
+            "107"
+        ],
+        [
+            "FT%",
+            ".659",
+            ".647",
+            ".781",
+            ".692",
+            ".692"
+        ],
+        [
+            "Reb",
+            "3.3",
+            "2.4",
+            "3.0",
+            "2.9",
+            "73"
+        ],
+        [
+            "Ast",
+            "1.8",
+            "1.6",
+            "1.0",
+            "1.5",
+            "37"
+        ],
+        [
+            "Stl",
+            "1.9",
+            "1.6",
+            "1.1",
+            "1.6",
+            "39"
+        ],
+        [
+            "Blk",
+            "0.2",
+            "0.0",
+            "0.0",
+            "0.1",
+            "2"
+        ],
+        [
+            "PF",
+            "1.3",
+            "2.4",
+            "1.8",
+            "1.8",
+            "45"
+        ],
+        [
+            "TO",
+            "2.1",
+            "1.8",
+            "1.8",
+            "1.9",
+            "47"
+        ],
+        [
+            "Pts",
+            "16.9",
+            "13.1",
+            "13.9",
+            "14.7",
+            "368"
+        ],
+        [
+            "Place",
+            "Bronze",
+            "Silver",
+            "4th",
+            "-",
+            "-"
+        ]
+    ],
+    "pageTitle": "Evan Fournier Player Profile, Orlando Magic, News, Rumors, NBA Stats, International Stats, Events Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Evan_Fournier/Summary/24346",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00162-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 21341147,
+    "recordOffset": 21313576,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{9208=Born: Oct 29, 1992 (22 years old), 8209=Draft Entry: 2012 NBA Draft, 8109=Early Entry Info: 2012 Early Entrant, 8405=Free Agent: RFA-2016}",
+    "TableContextTimeStampAfterTable": "{59102=* International basketball history from 2011-2012, 93277=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 3 Years Of Service NBA Jump to: [ NBA ] [ International ] [ National ] [ High School ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2012-13 DEN 38 4 428.3 75 152 .493 22 54 .407 30 39 .769 101 6 29 35 44 19 1 65 32 202 2013-14 DEN 76 4 1503.5 228 544 .419 89 237 .376 93 123 .756 307 34 168 202 112 34 7 179 100 638 2014-15 ORL 58 32 1661.2 253 575 .440 85 225 .378 107 147 .728 355 28 125 153 120 40 2 116 82 698 CAREER \u00a0 172 40 3592.9 556 1271 .437 196 516 .380 230 309 .744 763 68 322 390 276 93 10 360 214 1538 NBA Regular Season Stats - Misc Stats Season Team GP GS Dbl Dbl Tpl Dbl 40 Pts 20 Reb 20 Ast Techs HOB Ast/TO Stl/TO FT/FGA W's L's Win % OWS DWS WS 2012-13 DEN 38 4 0 0 0 0 0 0 .077 1.38 0.59",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

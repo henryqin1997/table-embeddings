@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Column Name",
+            "SPW_OWNER",
+            "SPW_STOPLIST",
+            "SPW_TYPE",
+            "SPW_WORD",
+            "SPW_LANGUAGE"
+        ],
+        [
+            "Type",
+            "VARCHAR2(30)",
+            "VARCHAR2(30)",
+            "VARCHAR2(10)",
+            "VARCHAR2(80)",
+            "VARCHAR2(30)"
+        ],
+        [
+            "Description",
+            "Stoplist owner.",
+            "Stoplist name.",
+            "Stop type, either STOP_WORD, STOP_CLASS, STOP_THEME.",
+            "Stopword.",
+            "Stopword language."
+        ]
+    ],
+    "pageTitle": "G Oracle Text Views",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B14117_01/text.101/b10730/aviews.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990123.20/warc/CC-MAIN-20150728002310-00065-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71504575,
+    "recordOffset": 71482920,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 27 Jul 2004 16:18:00 GMT",
+    "textBeforeTable": "This view displays all the preference categories registered in the Text data dictionary. It can be queried by any user. G.1 CTX_CLASSES CTX_VERSION CTX_USER_THES_PHRASES CTX_USER_THESAURI CTX_USER_SUB_LEXERS CTX_USER_STOPWORDS CTX_USER_STOPLISTS CTX_USER_SQES CTX_USER_SECTION_GROUPS CTX_USER_SECTIONS CTX_USER_PREFERENCE_VALUES CTX_USER_PREFERENCES CTX_USER_PENDING CTX_USER_INDEX_VALUES CTX_USER_INDEX_SUB_LEXER_VALS CTX_USER_INDEX_SUB_LEXERS CTX_USER_INDEX_SET_INDEXES CTX_USER_INDEX_SETS CTX_USER_INDEX_PARTITIONS CTX_USER_INDEX_OBJECTS CTX_USER_INDEX_ERRORS CTX_USER_INDEXES CTX_TRACE_VALUES CTX_THES_PHRASES CTX_THESAURI CTX_SUB_LEXERS CTX_STOPWORDS CTX_STOPLISTS CTX_SQES CTX_SECTION_GROUPS CTX_SECTIONS CTX_PREFERENCE_VALUES CTX_PREFERENCES CTX_PENDING CTX_PARAMETERS CTX_OBJECT_ATTRIBUTE_LOV CTX_OBJECT_ATTRIBUTES CTX_OBJECTS CTX_INDEX_VALUES CTX_INDEX_SUB_LEXER_VALUES CTX_INDEX_SUB_LEXERS CTX_INDEX_SET_INDEXES",
+    "textAfterTable": "Type Description IDX_CHARSET_COLUMN VARCHAR2(256) Name of the charset column in base table. IDX_DOCID_COUNT NUMBER Number of documents indexed. IDX_FORMAT_COLUMNS VARCHAR2(256) Name of the format column in base table. IDX_KEY_NAME VARCHAR2(256) Primary key column(s). IDX_ID NUMBER Internal index id. IDX_LANGUAGE_COLUMN VARCHAR2(256) Name of the language column in base table. IDX_NAME VARCHAR2(30) Name of index. IDX_OWNER VARCHAR2(30) Owner of index. IDX_STATUS VARCHAR2(12) Status. IDX_SYNC_TYPE VARCHAR2(20) Type of synching: MANUAL, AUTOMATIC, or ON COMMIT. IDX_TABLE VARCHAR2(30) Table name. IDX_TABLE_OWNER VARCHAR2(30) Owner of table.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,59 @@
+{
+    "relation": [
+        [
+            "Directive",
+            "mysqli.allow_local_infile",
+            "mysqli.allow_persistent",
+            "mysqli.default_host",
+            "mysqli.default_port",
+            "mysqli.default_pw",
+            "mysqli.default_socket",
+            "mysqli.default_user",
+            "mysqli.max_links",
+            "mysqli.max_persistent",
+            "mysqli.reconnect"
+        ],
+        [
+            "Local Value",
+            "On",
+            "On",
+            "no value",
+            "3306",
+            "no value",
+            "no value",
+            "no value",
+            "Unlimited",
+            "Unlimited",
+            "Off"
+        ],
+        [
+            "Master Value",
+            "On",
+            "On",
+            "no value",
+            "3306",
+            "no value",
+            "no value",
+            "no value",
+            "Unlimited",
+            "Unlimited",
+            "Off"
+        ]
+    ],
+    "pageTitle": "phpinfo()",
+    "title": "",
+    "url": "http://www.pwdb.com.br/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00312-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 676395307,
+    "recordOffset": 676375467,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "",
+    "textAfterTable": "Zend Extension Build API220090626,NTS PHP Extension Build API20090626,NTS Debug Build no Thread Safety disabled Zend Memory Manager enabled Zend Multibyte Support disabled IPv6 Support enabled Registered PHP Streams https, ftps, compress.zlib, compress.bzip2, php, file, glob, data, http, ftp, phar, zip Registered Stream Socket Transports tcp, udp, unix, udg, ssl, sslv3, sslv2, tls Registered Stream Filters zlib.*, bzip2.*, convert.iconv.*, string.rot13, string.toupper, string.tolower, string.strip_tags, convert.*, consumed, dechunk This program makes use of the Zend Scripting Language Engine: Zend\u00a0Engine\u00a0v2.3.0,\u00a0Copyright\u00a0(c)\u00a01998-2010\u00a0Zend\u00a0Technologies \u00a0\u00a0\u00a0\u00a0with\u00a0the\u00a0ionCube\u00a0PHP\u00a0Loader\u00a0v4.0.14,\u00a0Copyright\u00a0(c)\u00a02002-2011,\u00a0by\u00a0ionCube\u00a0Ltd. Configuration bcmath BCMath support enabled Directive Local Value Master Value bcmath.scale 0 0 bz2 BZip2 Support Enabled Stream Wrapper support compress.bz2:// Stream Filter support bzip2.decompress, bzip2.compress BZip2 Version 1.0.5, 10-Dec-2007",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "cclear",
+            "cattributes"
+        ],
+        [
+            "Description",
+            "The value for the CLEAR attribute.",
+            "The other attributes to be included as-is in the tag."
+        ]
+    ],
+    "pageTitle": "HTF",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/appdev.112/e16760/w_htf.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00164-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72585551,
+    "recordOffset": 72545558,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 14 Aug 2010 15:00:23 GMT",
+    "textBeforeTable": "Table 181-22 DLISTOPEN Function Parameters Parameters RETURN VARCHAR2; cattributes IN VARCHAR2 DEFAULT NULL) cclear IN VARCHAR2 DEFAULT NULL, HTF.DLISTOPEN ( Syntax  This function generates the <DL> tag which starts a definition list. You end a definition list by means of the DLISTCLOSE Function. DLISTOPEN Function    <DD CLEAR=\"cclear\" cattributes>ctext This function generates Examples   The other attributes to be included as-is in the tag. cattributes The value for the CLEAR attribute. cclear The definition of the term. ctext Description Parameter Table 181-21 DLISTDEF Function Parameters Parameters RETURN VARCHAR2; cattributes IN VARCHAR2 DEFAULT NULL) cclear IN VARCHAR2 DEFAULT NULL, ctext",
+    "textAfterTable": "Usage Notes A definition list looks like a glossary: it contains terms and definitions. Terms are inserted using the DLISTTERM Function and definitions are inserted using the DLISTDEF Function. Examples This function generates <DL CLEAR=\"cclear\" cattributes> DLISTTERM Function This function generates the <DT> tag which defines a term in a definition list <DL>. Syntax HTF.DLISTTERM ( ctext IN VARCHAR2 DEFAULT NULL, cclear IN VARCHAR2 DEFAULT NULL, cattributes IN VARCHAR2 DEFAULT NULL) RETURN VARCHAR2; Parameters Table 181-23 DLISTTERM Function Parameters Parameter Description ctext The term. cclear The value for the CLEAR attribute. cattributes The other attributes to be included as-is in the tag.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "",
+            "",
+            "2013-11-18T00:00:00",
+            "2013-11-26T00:00:00"
+        ],
+        [
+            "Description",
+            "Acquisition. The LiDAR data was collected on October 28th, 2009, March 22, 2010 and June 12th-16th, 2010. The survey used both the Leica ALS50 Pase II and ALS 60 laser systems mounted in a Cessna Caravan 208. Near nadir scan angles were used to increase penetration of vegetation to ground surfaces. Ground level GPS and aircraft IMU were collected during the flight.",
+            "1. Flight lines and data were reviewed to ensure complete coverage of the study area and positional accuracy of the laser points. 2. Laser point return coordinates were computed using ALS Post Processor software, IPAS Pro GPS/INS software, and Waypoint GPS, based on independent data from the LiDAR system, IMU, and aircraft. 3. The raw LiDAR file was assembled into flight lines per return with each point having an associated x, y, and z coordinate. 4. Visual inspection of swath to swath laser point consistencies within the study area were used to perform manual refinements of system alignment. 5. Custom algorithms were designed to evaluate points between adjacent flight lines. Automated system alignment was computed based upon randomly selected swath to swath accuracy measurements that consider elevation, slope, and intensities. Specifically, refinement in the combination of system pitch, roll and yaw offset parameters optimize internal consistency. 6. Noise (e.g., pits and birds) was filtered using ALS postprocessing software, based on known elevation ranges and included the removal of any cycle slips. 7. Using TerraScan and Microstation, ground classifications utilized custom settings appropriate to the study area. 8. The corrected and filtered return points were compared to the RTK ground survey points collected to verify the vertical and horizontal accuracies. 9. Points were output as laser points, TINed and GRIDed surfaces",
+            "The NOAA Coastal Services Center (CSC) downloaded topographic files in text format from PSLC's website. The files contained lidar easting, northing, elevation, intensity, return number, class, scan angle and GPS time measurements. The data were received in Washington State Plane South Zone 4601, NAD83 coordinates and were vertically referenced to NAVD88 using the Geoid03 model. The vertical units of the data were feet. CSC performed the following processing for data storage and Digital Coast provisioning purposes: 1. The All-Return ASCII txt files were parsed to LAS files. 2. The All-Return ASCII files were converted from txt format to las format using LASTools' txt2las tool and reclassified to fit the CSC class list, N=1 (unclassified), G=2 (ground). 3. The las files were converted from orthometric (NAVD88) heights to ellipsoidal heights using Geoid03. 4. The las files' vertical units were converted from feet to meters, removing bad elevations. 5. The las files were converted from a Projected Coordinate System (WA SP South) to a Geographic Coordinate system (NAD83) 6. The las files' horizontal units were converted from feet to decimal degrees. 7. The data were converted to LAZ format.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/wa2009_2010_usgs_pslc_wenasvalley_m2588.xml&view=ISO19115Components-HTMLTable",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00002-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 612247966,
+    "recordOffset": 612239764,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:wa2009_2010_usgs_pslc_wenasvalley_m2588Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "1 2009-2010 Puget Sound LiDAR Consortium (PSLC) Topographic LiDAR: USGS Wenas Valley 2013-11-18 1 Lidar Dataset Supplemental Information 1 None 1 North American Datum 1983 2007-01-19 1 none Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 1 Citation URL ftp://csc.noaa.gov/pub/DigitalCoast/lidar1_z/geoid12a/data/2588/supplemental/ 1 NOAA CSC (originator) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration,",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

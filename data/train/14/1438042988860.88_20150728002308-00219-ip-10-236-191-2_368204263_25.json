@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Command",
+            "otv isis overlay",
+            "show otv"
+        ],
+        [
+            "Description",
+            "Creates an OTV IS-IS instance.",
+            "Displays information about OTV."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Wide-Area Networking Command Reference - hello through lz entropy-check [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/wan/command/wan-cr-book/wan-h1.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.88/warc/CC-MAIN-20150728002308-00219-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 368253059,
+    "recordOffset": 368204263,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{40793=Number of seconds that a router at one end of a Layer 2 control channel waits between sending hello keepalive packets to its peer router. The valid values range from 0 to 1000 seconds. The default value is 60 seconds.}",
+    "TableContextTimeStampAfterTable": "{68805=This command was implemented on the Cisco 1760, Cisco AS5300, Cisco AS5400, and Cisco AS5800 platforms., 240431=Time in milliseconds. Range: 1 to 32000. Default is 0 ms (disabled) and the recommended setting., 53671=The no ip dfbit set command is not supported on the Cisco 10720 Internet router and Cisco 12000 series Internet routers., 214376=You cannot set the N1 parameter to a value less than that required to support an X.25 data packet size of 128 bytes. All X.25 implementations must be able to support 128-byte data packets. Moreover, if you configure N1to be less than 2104 bits, you receive a warning message that X.25 might have problems because some nondata packets can use up to 259 bytes., 62467=The interface configured with the ip local interfacecommand must be a loopback interface on Cisco 12000 series Internet routers., 278209=The following example shows how to set the maximum LSP size to 1500 bytes:, 49990=On the Cisco 10720 Internet router and Cisco 12000 series Internet routers, the DF bit is on (enabled) by default. On other platforms, the DF bit is off (disabled) by default., 75885=The following example shows how to enable the discovery of the path MTU for pseudowires that are created from the pseudowire class named ether-pw. The vpdn pmtu command is used to configure the device to accept only path MTU values ranging from 576 to 1460 bytes. The device will ignore code 4 ICMP messages that specify a path MTU outside of this range., 74374=The following example configures a VPDN group named dial-in on a Layer 2 Tunnel Protocol (L2TP) tunnel server and uses the ip pmtu command to specify that tunnels associated with this VPDN group will participate in path MTU discovery. The vpdn pmtu command is used to configure the device to accept only path MTU values ranging from 576 to 1460 bytes. The device will ignore code 4 ICMP messages that specify a path MTU outside of this range., 276410=The default Layer 2 LSP MTU is 1392 bytes., 235390=The following example sets the T1 retransmission timer to 2000 ms:, 139278=For the Cisco 10720 and Cisco 12000 series Internet routers, an 8-byte cookie must be configured with this command., 150302=The following example shows how to configure the cookie field of 4 bytes starting at 12345 for the L2TPv3 headers in outgoing tunneled packets sent to the remote PE peer:}",
+    "textBeforeTable": "Syntax Description seconds hello no seconds hello To configure the interval used to exchange hello keepalive packets in a Layer 2 control channel, use the hellocommand in L2TP class configuration mode. To disable the sending of hello keepalive packets, use the no form of this command. hello lz entropy-check lsp-refresh-interval (OTV) lsp-mtu (OTV) lsp-gen-interval (OTV) logging event frame-relay x25 log-adjacency-changes (OTV) lapb t4 lapb t2 lapb t1 lapb protocol lapb n2 lapb n1 lapb modulo lapb k lapb interface-outage l2tp-class l2tp id l2tp hello l2tp cookie remote l2tp cookie local l2 vfi autodiscovery l2 router-id keepalive (LMI) ip ttl ip tos (L2TP) ip protocol ip pmtu ip local interface ip dfbit set interworking interface serial multipoint interface overlay interface nve interface mfr interface fr-atm inarp (Frame Relay VC-bundle-member) hostname",
+    "textAfterTable": "Command Default L2TP class configuration Command History Release Modification 12.0(23)S This command was introduced. 12.3(2)T This command was integrated into Cisco IOS Release 12.3(2)T. 12.2(25)S This command was integrated into Cisco IOS Release 12.2(25)S. 12.2(27)SBC Support for this command was integrated into Cisco IOS Release 12.2(27)SBC. Usage Guidelines You can configure different values with the hello command on the router at each end of a Layer 2 control channel. Examples The following example sets an interval of 120 seconds between sendings of hello keepalive messages in pseudowires that have been configured using the L2TP class configuration named \u201cl2tp class1\u201d:  Router(config) # l2tp-class l2tp-class1 Router(config-l2tp-class) # hello 120",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

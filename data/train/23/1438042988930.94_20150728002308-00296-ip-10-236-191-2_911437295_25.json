@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Title:",
+            "Category:",
+            "Priority:",
+            "Status:",
+            "Issue tags:"
+        ],
+        [
+            "CSS files order is incorrect in RTL",
+            "bug",
+            "Major",
+            "Reviewed & tested by the community",
+            ""
+        ],
+        [
+            "\u00bb Change notification: CSS files order is incorrect in RTL",
+            "\u00bb task",
+            "\u00bb Critical",
+            "\u00bb Needs review",
+            "+Needs change record, +7.23 release notes, +7.23 release blocker"
+        ]
+    ],
+    "pageTitle": "CSS files order is incorrect in RTL [#2028643] | Drupal.org",
+    "title": "",
+    "url": "https://www.drupal.org/node/2028643",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00296-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 911453271,
+    "recordOffset": 911437295,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{1293=Background and Solution: locale_css_alter() adds a tiny value of 0.01 to the CSS weight, but this is a larger weight than the next LTR file has. drupal_add_css() adds a tiny value to the weight by counting $options['weight'] += count($css) / 1000; what results in a smaller value than 0.01. By adding a value of 0.0001 we are always smaller than 1/1000 and it now doesn't matter how many CSS files are added or not, the weight of the RTL file will always higher than it's LTR file and always smaller than the next LTR file. This make sure it really works as documented in locale_css_alter().}",
+    "TableContextTimeStampAfterTable": "{35085=Just to explain, why this cannot fail again and why the current weight addition is not correct. drupal_add_css() adds a tiny value to the weight by counting $options['weight'] += count($css) / 1000;. Now with this small value we are smaller than 1/1000 and it now doesn't matter how many CSS files are added or not, we will always higher than the LTR file and always lower than the next LTR file. This make sure it really works as documented in locale_css_alter().}",
+    "lastModified": "Sun, 02 Aug 2015 03:22:25 GMT",
+    "textBeforeTable": "June 26, 2013 at 12:56pm CreditAttribution: hass commented hass Comment #0.0 Comments View ] [ PASSED: [[SimpleTest]]: [MySQL] 40,476 pass(es). hass 748 bytes Issue-2028643-by-hass-CSS-files-order-is-broken.patch #6 View ] [ PASSED: [[SimpleTest]]: [MySQL] 40,483 pass(es). hass 3.04 KB Issue-2028643-by-hass-CSS-files-order-is-broken.patch #11 View ] [ FAILED: [[SimpleTest]]: [MySQL] 40,411 pass(es), 3 fail(s), and 0 exception(s). tstoeckler 2.53 KB Issue-2028643-by-hass-CSS-files-order-is-broken_1.patch",
+    "textAfterTable": "Comment #0.1 hass CreditAttribution: hass commented June 26, 2013 at 12:56pm Issue summary: View changes a Log in or register to post comments Comment #0.2 hass CreditAttribution: hass commented June 26, 2013 at 12:57pm Issue summary: View changes Updated issue summary. Log in or register to post comments Comment #1 hass CreditAttribution: hass",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

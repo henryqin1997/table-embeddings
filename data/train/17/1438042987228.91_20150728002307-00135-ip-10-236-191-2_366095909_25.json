@@ -1,0 +1,30 @@
+{
+    "relation": [
+        [
+            "Command",
+            "route-map",
+            "route-replicate"
+        ],
+        [
+            "Description",
+            "Defines the conditions for redistributing routes from one routing protocol into another.",
+            "Replicates routes from another topology and another VRF."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Easy Virtual Network Command Reference - A through Z [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/evn/command/evn-cr-book/evn-a1.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987228.91/warc/CC-MAIN-20150728002307-00135-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 366135095,
+    "recordOffset": 366095909,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Syntax Description vrf-name vrf condition undebug vrf-name vrf condition debug To limit debug output to a specific virtual routing and forwarding (VRF) instance, use the debug condition vrf command in privileged EXEC mode. To remove the debug condition, use the undebug version of the command . debug condition vrf vrf list vrf forwarding vrf definition vnet trunk vnet tag vnet snmp context show vrf list show vrf counters show vnet tag show vnet counters show vnet show running-config vnet routing-context route-replicate (VRF address family) redistribute vrf member (VRF list) ip ospf vnet area exit-vrf-list exit-if-vnet description (VRF definition) debug vrf debug condition vrf A through Z vrf list vrf forwarding vrf definition vnet trunk vnet tag vnet",
+    "textAfterTable": "Command History Release Modification Cisco IOS XE Release 3.2S This command was introduced. 15.0(1)SY This command was integrated into Cisco IOS Release 15.0(1)SY. 15.1(1)SG This command was integrated into Cisco IOS Release 15.1(1)SG. Cisco IOS XE Release 3.3SG This command was integrated into Cisco IOS XE Release 3.3SG. 15.3(2)T This command was integrated into Cisco IOS Release 15.3(2)T. Usage Guidelines Use this command to limit debug output to a single VRF. Note Enhanced Interior Gateway Routing Protocol (EIGRP) does not support the debug condition vrf command.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

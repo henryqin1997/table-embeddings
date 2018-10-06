@@ -1,0 +1,47 @@
+{
+    "relation": [
+        [
+            "Code or Value",
+            "28808.888027 to 973951.60129",
+            "."
+        ],
+        [
+            "Value Description",
+            "Range of Values",
+            "Missing"
+        ],
+        [
+            "Count",
+            "1392",
+            "94"
+        ],
+        [
+            "Cumulative",
+            "1392",
+            "1486"
+        ],
+        [
+            "Skip to Item",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "NHANES 2010 - 2010: Sodium, potassium, and chloride in casual urine Data Documentation, Codebook, and Frequencies",
+    "title": "",
+    "url": "http://www.cdc.gov/nchs/nhanes/limited_access/SSUE10_R.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989142.82/warc/CC-MAIN-20150728002309-00083-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 356248691,
+    "recordOffset": 356232297,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{10560=1,275 participants aged 6 years and above from a one-third subsample of NHANES 2010 (for which urine iodine values are available) who provided a casual urine sample at the Mobile Examination Center and 1,345 participants aged 6 years and above from the same one-third subsample of NHANES 2010 who provided a first-morning void urine sample for a total of 2,620 samples; most participants provided both types of samples, 5794=The laboratory achieved satisfactory participation in the CAP proficiency testing surveys during 2011 for the urine chemistry surveys for sodium, potassium, and chloride and for the linearity and calibration verification surveys for sodium., 3432=Weights were created to account for non-response and to sum to the examination weights for 2010. The adjustment factors were based on age categories, race and Hispanic origin, and gender. The data were collected only for a single year (2010) rather than a typical NHANES 2-year data collection period, therefore, the single year urine sodium weight, WTFIN, should be used in estimating the prevalence and in testing statistical hypotheses using these data. The delete 1 Jackknife method rather than Taylor Series Linearization is recommended for variance estimation (Wolters, 2007). The delete 1 Jackknife method is a replication method, using a design based method for variance estimation. Fifteen delete 1 jackknife replicate weights, WTFIN01-WTFIN15, are provided for variance estimation using the delete 1 Jackknife method. To calculate the nominal degrees of freedom of the estimated variance, unmasked variance units (which differ from the Masked Variance Unit codes provided for the two year public-use files) are provided. These unmasked variance units are needed to determine the critical value for the Student\u2019s t statistic used to construct confidence intervals., 11540=Title: Sodium, potassium, and chloride in casual urine (SSUE10_R ) Contact Number: 1-866-441-NCHS Years of Content: 2010 - 2010 First Published: September, 2012 Revised: NA Access Constraints: RDC Only Use Constraints: RDC Only Geographic Coverage: National Subject:Sodium, potassium, and chloride in casual urine Record Source: NHANES 2010 - 2010 Survey Methodology: NHANES 2010 - 2010 is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S. Medium: NHANES Web site; SAS transport files, 10736=Measurement of sodium, potassium, and chloride in a subset of stored casual urine samples from NHANES 2010.}",
+    "lastModified": "Tue, 25 Jun 2013 12:28:02 GMT",
+    "textBeforeTable": "Both males and females 6 YEARS - 150 YEARS Target: Urine Sodium (mmol/L) MEC spot urine English Text: Urine Sodium (mmol/L) MEC spot urine SAS Label: SSUNAMP Variable Name: SSUNAMP - Urine Sodium (mmol/L) MEC spot urine Both males and females 6 YEARS - 150 YEARS Target: Respondent sequence number. English Text: Respondent sequence number SAS Label: SEQN Variable Name: SEQN - Respondent sequence number Codebook and Frequencies Wolters, KM. Variance Estimation, 2nd edition. Springer-Verlag Publishers. 2007. Chapter 4: jackknife method for variance estimation. Roche Diagnostics ISE/Na+, K+, Cl- Package insert, 2009-03, V6. Clinical Laboratory Improvement Amendment. Public Law 100-578. 1988. 10-31-1988. Caudill SP, Schleicher RL, Pirkle JL. 2008. Multi-rule quality control for the age-related eye disease study. Stat Med 27:4094-4106. References All statistical analyses using these data should assess the relative standard error of the estimates, the degrees of freedom and the design effect. The three diagnostics listed above are important to assess the reliability of the estimates. Please refer to the NHANES Analytic Guidelines and the on-line NHANES Tutorial for further details on the use of sample weights and other analytic issues. Both of these are available on the",
+    "textAfterTable": "SSUNAHP - Na (mmol/L) Urine first morning void Variable Name: SSUNAHP SAS Label: Na (mmol/L) Urine first morning void English Text: Urine Sodium (mmol/L) First morning void Target: Both males and females 6 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 7.1 to 359 Range of Values 1345 1345 . Missing 141 1486 SSUKMP - Urine Potassium (mmol/L) MEC spot urine Variable Name: SSUKMP SAS Label: Urine Potassium (mmol/L) MEC spot urine English Text: Urine Potassium (mmol/L) English Instructions: Urine Potassium (mmol/L) MEC spot urine Target: Both males and females 6 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 2.3 to 212 Range of Values 1275 1275 . Missing 211 1486",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

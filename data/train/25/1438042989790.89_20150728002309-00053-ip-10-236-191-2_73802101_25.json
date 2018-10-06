@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "num_table_name",
+            "cat_table_name",
+            "data_table_name",
+            "target_column_name",
+            "max_bin_num",
+            "exclude_list",
+            "num_schema_name",
+            "cat_schema_name",
+            "data_schema_name",
+            "rem_table_name",
+            "rem_schema_name"
+        ],
+        [
+            "Description",
+            "Name of the transformation definition table for numerical binning. You can use the CREATE_BIN_NUM Procedure to create the definition table. The following columns are required: COL VARCHAR2(30) VAL VNUMBER BIN VARCHAR2(4000) CREATE_BIN_NUM creates an additional column, ATT, which may be used for specifying nested attributes. This column is not used by INSERT_BIN_SUPER.",
+            "Name of the transformation definition table for categorical binning. You can use the CREATE_BIN_CAT Procedure to create the definition table. The following columns are required: COL VARCHAR2(30) VAL VARCHAR2(4000) BIN VARCHAR2(4000) CREATE_BIN_CAT creates an additional column, ATT, which is used for specifying nested attributes. This column is not used by INSERT_BIN_SUPER.",
+            "Name of the table containing the data to be transformed",
+            "Name of a column to be used as the target for the decision tree models",
+            "The maximum number of bins. The default is 1000.",
+            "List of columns to be excluded from the binning process. If you do not specify exclude_list, all CHAR, VARCHAR2, NUMBER, and FLOAT columns in the data source are binned. The format of exclude_list is: dbms_data_mining_transform.COLUMN_LIST('col1','col2', ...'coln')",
+            "Schema of num_table_name. If no schema is specified, the current schema is used.",
+            "Schema of cat_table_name. If no schema is specified, the current schema is used.",
+            "Schema of data_table_name. If no schema is specified, the current schema is used.",
+            "Name of a column removal definition table. The table must have the columns described in \"CREATE_COL_REM Procedure\". You can use CREATE_COL_REM to create the table. See Usage Notes.",
+            "Schema of rem_table_name. If no schema is specified, the current schema is used."
+        ]
+    ],
+    "pageTitle": "DBMS_DATA_MINING_TRANSFORM",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/appdev.112/e23448/d_dmtran.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00053-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73849703,
+    "recordOffset": 73802101,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{159546=The maximum number of bins. The default is 1000.}",
+    "lastModified": "Tue, 19 May 2015 17:53:36 GMT",
+    "textBeforeTable": "Table 45-24 INSERT_BIN_SUPER Procedure Parameters Parameters rem_schema_name IN VARCHAR2 DEFAULT NULL); rem_table_name IN VARCHAR2 DEFAULT NULL, data_schema_name IN VARCHAR2 DEFAULT NULL, cat_schema_name IN VARCHAR2 DEFAULT NULL, num_schema_name IN VARCHAR2 DEFAULT NULL, exclude_list IN COLUMN_LIST DEFAULT NULL, max_bin_num IN PLS_INTEGER DEFAULT 1000, target_column_name IN VARCHAR2, data_table_name IN VARCHAR2, cat_table_name IN VARCHAR2, num_table_name IN VARCHAR2, DBMS_DATA_MINING_TRANSFORM.INSERT_BIN_SUPER (  Syntax  INSERT_BIN_SUPER bins all the VARCHAR2, CHAR, NUMBER, and FLOAT columns in the data source unless you specify a list of columns to ignore. INSERT_BIN_SUPER uses an intelligent binning technique known as supervised binning. It builds a single-predictor decision tree and derives the bin boundaries from splits within the tree. This procedure performs numerical and categorical binning and inserts the transformation definitions in transformation definition tables. The procedure computes bin boundaries based on intrinsic relationships between predictors and a target. INSERT_BIN_SUPER Procedure      ,\"CUST_CITY\" FROM mining_data <=9000 THEN '2' WHEN \"CUST_CREDIT_LIMIT\"<=15000 THEN '3' END \"CUST_CREDIT_LIMIT\" <1500 THEN NULL WHEN \"CUST_CREDIT_LIMIT\"<=3000 THEN '1' WHEN \"CUST_CREDIT_LIMIT\" _OF_BIRTH\"<=1990 THEN '3' END \"CUST_YEAR_OF_BIRTH\",CASE WHEN \"CUST_CREDIT_LIMIT\" F_BIRTH\"<=1949 THEN '1' WHEN \"CUST_YEAR_OF_BIRTH\"<=1965 THEN '2' WHEN \"CUST_YEAR SELECT \"CUST_ID\",CASE WHEN \"CUST_YEAR_OF_BIRTH\"<1913 THEN NULL WHEN \"CUST_YEAR_O -------------------------------------------------------------------------------- TEXT SELECT text FROM user_views WHERE view_name in 'STACK_VIEW'; set long 3000 / END; xform_view_name => 'stack_view'); data_table_name => 'mining_data', xform_list => xforms, dbms_data_mining_transform.XFORM_STACK ( xform_list => xforms);",
+    "textAfterTable": "Usage Notes Columns that have no significant splits are not binned. You can remove the unbinned columns from the mining data by specifying a column removal definition table. If you do not specify a column removal definition table, the unbinned columns remain in the mining data. See Oracle Data Mining Concepts to learn more about decision trees in Oracle Data Mining Examples In this example, INSERT_BIN_SUPER computes the bin boundaries for predictors of cust_credit_limit and inserts the transformations in transformation definition tables. One predictor is numerical, the other is categorical. (INSERT_BIN_SUPER determines that the cust_postal_code column is not a significant predictor.) STACK procedures create transformation lists from the contents of the definition tables. The SQL expressions that compute the transformations are shown in the views MINING_DATA_STACK_NUM and MINING_DATA_STACK_CAT. The views are for display purposes only; they cannot be used to embed the transformations in a model.  CREATE OR REPLACE VIEW mining_data AS SELECT cust_id, cust_year_of_birth, cust_marital_status, cust_postal_code, cust_credit_limit FROM sh.customers; DESCRIBE mining_data Name Null? Type -------------------------------- -------- ------------------------------------ CUST_ID NOT NULL NUMBER CUST_YEAR_OF_BIRTH NOT NULL NUMBER(4) CUST_MARITAL_STATUS VARCHAR2(20) CUST_POSTAL_CODE NOT NULL VARCHAR2(10) CUST_CREDIT_LIMIT NUMBER BEGIN dbms_data_mining_transform.CREATE_BIN_NUM( bin_table_name => 'bin_num_tbl'); dbms_data_mining_transform.CREATE_BIN_CAT( bin_table_name => 'bin_cat_tbl'); dbms_data_mining_transform.CREATE_COL_REM( rem_table_name => 'rem_tbl'); END; / BEGIN COMMIT; dbms_data_mining_transform.INSERT_BIN_SUPER ( num_table_name => 'bin_num_tbl', cat_table_name => 'bin_cat_tbl', data_table_name => 'mining_data', target_column_name => 'cust_credit_limit', max_bin_num",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

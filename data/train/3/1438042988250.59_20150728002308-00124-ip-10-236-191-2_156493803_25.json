@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Element",
+            "groupId",
+            "artifactId",
+            "version"
+        ],
+        [
+            "Type",
+            "String",
+            "String",
+            "String"
+        ],
+        [
+            "Description",
+            "The group ID of the extension's artifact.",
+            "The artifact ID of the extension.",
+            "The version of the extension."
+        ]
+    ],
+    "pageTitle": "Maven Model - Maven",
+    "title": "",
+    "url": "http://maven.apache.org/ref/3.0.5/maven-model/maven.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988250.59/warc/CC-MAIN-20150728002308-00124-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 156513903,
+    "recordOffset": 156493803,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sun, 24 Feb 2013 09:10:23 GMT",
+    "textBeforeTable": "The <project> element is the root of the descriptor. The following table lists all of the possible child elements. project </project> </profiles> </profile> </reporting> </plugins> </plugin> <configuration/> <inherited/> </reportSets> </reportSet> <configuration/> <inherited/> <reports/> <id/> <reportSet> <reportSets> <version/> <artifactId/> <groupId/> <plugin> <plugins> <outputDirectory/> <excludeDefaults/> <reporting> <reports/> </pluginRepositories> </pluginRepository> <layout/> <url/> <name/> <id/> </snapshots> <checksumPolicy/> <updatePolicy/> <enabled/> <snapshots> </releases> <checksumPolicy/> <updatePolicy/> <enabled/> <releases> <pluginRepository> <pluginRepositories> </repositories> </repository> <layout/> <url/> <name/> <id/> </snapshots> <checksumPolicy/> <updatePolicy/> <enabled/> <snapshots> </releases> <checksumPolicy/> <updatePolicy/> <enabled/> <releases> <repository> <repositories> </dependencies> </dependency> <optional/> </exclusions> </exclusion> <groupId/> <artifactId/> <exclusion> <exclusions> <systemPath/> <scope/> <classifier/> <type/> <version/> <artifactId/> <groupId/> <dependency> <dependencies> </dependencyManagement> </dependencies> </dependency> <optional/> </exclusions> </exclusion> <groupId/> <artifactId/> <exclusion> <exclusions> <systemPath/> <scope/> <classifier/> <type/> <version/> <artifactId/> <groupId/> <dependency> <dependencies> <dependencyManagement> <properties/> <key>value</key> <properties> </distributionManagement> <status/> </relocation> <message/> <version/> <artifactId/> <groupId/> <relocation> <downloadUrl/> </site> <url/> <name/> <id/> <site> </snapshotRepository> <layout/> <url/> <name/> <id/> </snapshots> <checksumPolicy/> <updatePolicy/> <enabled/> <snapshots> </releases> <checksumPolicy/> <updatePolicy/> <enabled/> <releases> <uniqueVersion/> <snapshotRepository> </repository> <layout/> <url/> <name/> <id/> </snapshots> <checksumPolicy/> <updatePolicy/> <enabled/> <snapshots> </releases> <checksumPolicy/> <updatePolicy/> <enabled/> <releases> <uniqueVersion/> <repository> <distributionManagement> <modules/> </build> </plugins> </plugin> <configuration/> <inherited/> <goals/> </dependencies> </dependency> <optional/> </exclusions> </exclusion> <groupId/> <artifactId/> <exclusion> <exclusions> <systemPath/> <scope/> <classifier/> <type/> <version/> <artifactId/> <groupId/> <dependency> <dependencies> </executions> </execution> <configuration/> <inherited/> <goals/> <phase/> <id/> <execution> <executions> <extensions/> <version/> <artifactId/> <groupId/> <plugin> <plugins> </pluginManagement> </plugins> </plugin>",
+    "textAfterTable": "artifactId String The identifier for this artifact that is unique within the group given by the group ID. An artifact is something that is either produced or used by a project. Examples of artifacts produced by Maven for a project include: JARs, source and binary distributions, and WARs. version String The current version of the artifact produced by this project. packaging String The type of artifact this project produces, for example jar war ear pom. Plugins can create their own packaging, and therefore their own packaging types, so this list does not contain all possible types. Default value is: jar. name String The full name of the project. description String A detailed description of the project, used by Maven whenever it needs to describe the project, such as on the web site. While this element can be specified as CDATA to enable the use of HTML tags within the description, it is discouraged to allow plain text representation. If you need to modify the index page of the generated web site, you are able to specify your own instead of adjusting this text. url String The URL to the project's homepage. inceptionYear String The year of the project's inception, specified",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

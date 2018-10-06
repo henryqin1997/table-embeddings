@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "Value",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6-240",
+            "241-255"
+        ],
+        [
+            "SRTP encr alg",
+            "NULL",
+            "AES-CM",
+            "AES-F8",
+            "SEED-CTR",
+            "SEED-CCM",
+            "SEED-GCM",
+            "Unassigned",
+            "Reserved for Private Use"
+        ],
+        [
+            "Reference",
+            "[RFC3830]",
+            "[RFC3830]",
+            "[RFC3830]",
+            "[RFC5748]",
+            "[RFC5748]",
+            "[RFC5748]",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Multimedia Internet KEYing (Mikey) Payload Name Spaces",
+    "title": "",
+    "url": "http://www.iana.org/assignments/mikey-payloads/mikey-payloads.xhtml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00031-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 508288397,
+    "recordOffset": 508280195,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 30 Jan 2014 17:45:10 GMT",
+    "textBeforeTable": "CSV Available Formats RFC6309] RFC3830][ [ Reference IETF Review or IESG Approval Registration Procedure(s) Encryption algorithm (Value 0) Reserved 241-255 Unassigned 20-240 [RFC4771] SRTCP Authentication tag len 19 [RFC4771] SRTP Authentication tag len 18 [RFC4771] SRTCP Session Auth. key len 17 [RFC4771] SRTP Session Auth. key len 16 [RFC4771] SRTCP Auth. algorithm 15 [RFC4771] SRTP Auth. algorithm 14 [RFC4771] ROC transmission rate 13 [RFC3830] SRTP prefix length 12 [RFC3830] Authentication tag length 11 [RFC3830] SRTP authentication off/on 10 [RFC3830] sender's FEC order 9 [RFC3830] SRTCP encryption off/on 8 [RFC3830] SRTP encryption off/on 7 [RFC3830] Key derivation rate 6 [RFC3830] SRTP Pseudo Random Function 5 [RFC3830] Session Salt key length 4 [RFC3830] Session Auth. key length 3 [RFC3830] Authentication algorithm 2 [RFC3830] Session Encr. key length 1 [RFC3830] Encryption algorithm 0 Reference Meaning SRTP Type CSV Available Formats",
+    "textAfterTable": "Authentication algorithm (Value 2) Registration Procedure(s) IETF Review or IESG Approval Reference [ RFC3830][ RFC6309] Available Formats CSV Value SRTP auth alg Reference 0 NULL [RFC3830] 1 HMAC-SHA-1 [RFC3830] 2 RCCm1 [RFC4771] 3 RCCm2 [RFC4771] 4 RCCm3 [RFC4771] 5-240 Unassigned 241-255 Reserved for Private Use SRTP Pseudo Random Function (Value 5) Registration Procedure(s) IETF Review or IESG Approval Reference [ RFC3830][ RFC6309] Available Formats CSV Value SRTP PRF Reference 0 AES-CM [RFC3830] 1 SEED-CTR [RFC5748] 2-240 Unassigned 241-255 Reserved for Private Use sender's FEC order (Value 9) Registration Procedure(s) IETF Review or IESG Approval Reference [ RFC3830][ RFC6309] Available Formats CSV Value FEC order Reference 0 FEC-SRTP [RFC3830] 1-240 Unassigned 241-255 Reserved",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

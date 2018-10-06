@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Workbench Category",
+            "Built-in",
+            "Target",
+            "Imported"
+        ],
+        [
+            "Defined By",
+            "xmlns:=\"\"",
+            "targetNamespace=\"\"",
+            "xsd:import"
+        ],
+        [
+            "Purpose",
+            "Provides access to types defined in other XML schemas for use as is.",
+            "The namespace you use to qualify the types you define for your application. If set, all XML documents that use these types must use this namespace qualifier.",
+            "Provides access to types defined in the corresponding built-in XML schema so that you can extend the built-in types. Extended types must be qualified by the target namespace."
+        ],
+        [
+            "When Needed",
+            "If your project uses more than one XML schema or if you want to use xsi or xsd types.",
+            "You may need to specify a target namespace depending on how element and attribute form options are set (see Element and Attribute Form Options).",
+            "If your project uses more than one XML schema and you want to extend one or more built-in types."
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Using Workbench (ELUG)\" - Eclipsepedia",
+    "title": "",
+    "url": "http://wiki.eclipse.org/index.php?title=Using_Workbench_(ELUG)&diff=101770&oldid=101768",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00011-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 268752979,
+    "recordOffset": 268711250,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{270916=Copyright \u00a9 2014 The Eclipse Foundation. All Rights Reserved.}",
+    "textBeforeTable": "Workbench XML Schema Categories </xsd:schema> ... /> schemaLocation=\"object-persistence_1_0.xsd\" namespace=\"http://xmlns.oracle.com/ias/xsds/opm\" <xsd:import <! \u2013 Workbench Imported Namespace \u2013 > version=\"10.1.3\"> attributeFormDefault=\"unqualified\" elementFormDefault=\"qualified\" targetNamespace=\"<URI>\" <! \u2013 Workbench Target Namespace \u2013 > xmlns:<prefix>=\"<URI>\" <! \u2013 Workbench Built-in Namespace \u2013 > <xsd:schema   XML Schema with Namespace Options  When you import an XML schema (see How to Import an XML Schema) such as the one that the XML Schema with Namespace Options example shows, Workbench organizes the various namespaces that the XML schema identifies, as the Workbench XML Schema Categories table shows.  As defined in http://www.w3.org/TR/REC-xml-names/, an XML namespace is a collection of names, identified by a URI reference, which are used in XML documents as element types and attribute names. To promote reusability and modularity, XML document constructs should have universal names, whose scope extends beyond their containing document. XML namespaces are the mechanism which accomplishes this.  How to Configure XML Schema Namespace     If you are using XMLDescriptors, configure the descriptor with the XMLSchemaReference using XMLDescriptor method setSchemaReference.   If you are using EISDescriptors, the EclipseLink runtime does not use the schema reference; no further configuration is required.   Use Java to configure schema reference. Create a descriptor amendment method (see Configuring Amendment Methods) that instantiates the appropriate type of XMLSchemaReference (XMLSchemaClassPathReference, XMLSchemaFileReference, or XMLSchemaURLReference)",
+    "textAfterTable": "For more information, see XML Namespaces Overview. How to Configure XML Schema Namespace Using Workbench To specify the namespaces of a schema, use this procedure: Select a schema element in the Navigator. Its properties appear in the Editor. Click the Schema Document Info tab. The Schema Document Info tab appears. Schema Document Info Tab \u2013 Namespaces Field Complete the Namespaces fields on the Schema Document Info tab. Use the following information to complete each Namespaces field in the tab: Field Description Built-in Namespaces All namespaces defined by xmlns:<prefix>=\"<URI>\". Note that when a schema is imported to the Workbench (see How to Import an XML Schema), none of the built-in namespaces' URLs are selected. If you are using inheritance, declare the built-in namespace with xsi prefix. Otherwise, EclipseLink will throw exceptions.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

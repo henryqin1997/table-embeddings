@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "Method",
+            "CREATEURI",
+            "GETBLOB",
+            "GETCLOB",
+            "GETCONTENTTYPE",
+            "GETEXTERNALURL",
+            "GETURL",
+            "GETXML",
+            "XDBURITYPE"
+        ],
+        [
+            "Description",
+            "Returns the UriType corresponding to the specified URL.",
+            "Returns the BLOB corresponding to the contents of the document specified by the XDBURITYPE instance.",
+            "Returns the CLOB corresponding to the contents of the document specified by the XDBURITYPE instance.",
+            "Returns the content type of the document pointed to by the URI.",
+            "Returns the URL, in escaped format, stored inside the XDBURITYPE instance.",
+            "Returns the URL, in non-escaped format, stored inside the XDBURITYPE instance.",
+            "Returns the XMLType corresponding to the contents of the document specified by the URL.",
+            "Creates an instance of XDBURITYPE from the given URI."
+        ]
+    ],
+    "pageTitle": "Database URI TYPEs",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/appdev.112/e40758/t_dburi.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00322-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 68265527,
+    "recordOffset": 68249902,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 03 Jul 2015 16:44:08 GMT",
+    "textBeforeTable": "Table 246-4 XDBURITYPE Type Subprograms XDBURITYPE is a new subtype of URIType. It provides a way to expose documents in the Oracle XML DB hierarchy as URIs that can be embedded in any URIType column in a table. The URL part of the URI is the hierarchical name of the XML document it refers to. The optional fragment part uses the XPath syntax, and is separated from the URL part by '#'. The more general XPointer syntax for specifying a fragment is not currently supported. Summary of XDBURITYPE Subtype Subprograms Content type of the document to which URI is pointing. (OUT) content Description IN / OUT Parameter This function returns the XMLType located at the address specified by the URL and the content type. MEMBER FUNCTION getXML( \u00a0\u00a0\u00a0content OUT VARCHAR2) RETURN XMLType; This function returns the XMLType located at the address specified by the URL. MEMBER FUNCTION getXML() RETURN XMLType;",
+    "textAfterTable": "CREATEURI This static function constructs a XDBURITYPE instance. Parses the URL given and creates a XDBURITYPE instance. Syntax  STATIC FUNCTION createUri( url IN varchar2) RETURN XDBURITYPE Parameter IN / OUT Description url (IN) The URL string, in escaped format, containing a valid XDBURITYPE. GETBLOB This function returns the BLOB located at the address specified by the XDBURITYPE instance. The options are described in the following table. Syntax Description MEMBER FUNCTION getBlob() RETURN blob; This function returns the BLOB located at the address specified by the URL. MEMBER FUNCTION getBlob( \u00a0\u00a0\u00a0content OUT VARCHAR2) RETURN blob; This function returns the BLOB located at the address specified by the URL and the content type. FUNCTION getBlob( \u00a0\u00a0\u00a0csid IN NUMBER) RETURN",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

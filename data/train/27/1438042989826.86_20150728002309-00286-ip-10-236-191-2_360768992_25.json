@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Feature Name",
+            "CoPP",
+            "CoPP",
+            "CoPP"
+        ],
+        [
+            "Releases",
+            "4.2(6)",
+            "4.2(3)",
+            "4.2(1)"
+        ],
+        [
+            "Feature Information",
+            "Updated the default policies with support for MAC access lists and Layer 2 default and unpoliced classes. Also modified existing class maps to include support for ACL MAC L2PT, FabricPath, LLDP, flow control, and dot1x.",
+            "Updated the default policies with support for ACL DHCP.",
+            "Updated the default policies with support for WCCP and Cisco TrustSec."
+        ]
+    ],
+    "pageTitle": "Cisco Nexus 7000 Series NX-OS Security Configuration Guide, Release 4.2 - Configuring Control Plane Policing [Cisco Nexus 7000 Series Switches] - Cisco",
+    "title": "This table lists the release history for this feature. Table 2 Feature History for CoPP",
+    "url": "http://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/4_2/nx-os/security/configuration/guide/b_Cisco_Nexus_7000_NX-OS_Security_Configuration_Guide__Release_4-2/Cisco_Nexus_7000_NX-OS_Security_Configuration_Guide__Release_4-2_chapter22.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989826.86/warc/CC-MAIN-20150728002309-00286-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 360805999,
+    "recordOffset": 360768992,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{23674=Moderate\u2014This policy is 1 rate and 2 color and has a BC value of 310 ms (except for the important class, which has a value of 1250 ms). These values are 25 percent greater than the strict policy., 23298=Lenient\u2014This policy is 1 rate and 2 color and has a BC value of 375 ms (except for the important class, which has a value of 1500 ms). These values are 50 percent greater than the strict policy., 23988=Strict\u2014This policy is 1 rate and 2 color and has a BC value of 250 ms (except for the important class, which has a value of 1000 ms).}",
+    "TableContextTimeStampAfterTable": "{84870=The following example shows how to permit access from the 30.30.30.0/24 subnet in order to deploy CoPP to provide the equivalent of a VTY access class. This example explicitly allows Telnet/SSH/SNMP/NTP/RADIUS/TACACS+ inbound from 30.30.30/24 and anything outbound from the switch to 30.30.30.0/24., 96486=RFC 2698}",
+    "textBeforeTable": "Feature History for CoPP A Two Rate Three Color Marker RFC 2698 Title Standards Standards Cisco Nexus 7000 Series NX-OS Security Command Reference, Release 4.2 Command reference Cisco Nexus 7000 Series NX-OS Licensing Guide, Release 4.2 Licensing Document Title Related Topic Related Documents This section provides additional information related to implementing CoPP. Additional References for CoPP",
+    "textAfterTable": "Contacts | Feedback | Help | Site Map | Terms & Conditions | Privacy Statement | Cookie Policy | Trademarks",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

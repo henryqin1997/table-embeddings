@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Command",
+            "show mpls forwarding-table",
+            "show mpls label range"
+        ],
+        [
+            "Description",
+            "Displays labels currently being used for MPLS forwarding.",
+            "Displays statically configured label bindings."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Multiprotocol Label Switching Command Reference - mpls ldp atm vc-merge through mpls static binding ipv4 [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/mpls/command/mp-cr-book/mp-m2.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00289-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 368489235,
+    "recordOffset": 368421963,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{218186=This command was implemented on the Cisco 2600 and 3600 routers., 287958=The option number. A comparison of the number argument from several commands by the software sets up the order in which LDP evaluates access lists in the definition of a password for the neighbor. The valid range is from 1 to 32767., 221640=In the following example, LDP does not send a label-withdraw message to the neighbor whose router ID is 10.10.10.10 when a need exists to change the previously advertised label for a FEC:, 410346=If the interface MTU is greater than or equal to 1524 bytes, then you can set the maximum MPLS MTU as high as the interface MTU. For example, if the interface MTU is set to 1600 bytes, then you can set the MPLS MTU to a maximum of 1600 bytes. If you set the MPLS MTU to a value higher than the interface MTU, traffic is dropped., 233888=The following example specifies that the LSR accepts inbound label bindings from neighbor 10.19.19.19 in vrf vpn1 for prefixes permitted by the ACL named aclone:, 260061=In the following example, the router sets up a targeted session with the neighbor 10.10.10.10 using TDP as the label protocol:, 410698=For interfaces that do not allow you to configure the interface MTU value and for interfaces where the MTU is 1500 bytes, the MPLS MTU range is from 64 to 1524 bytes., 401835=(Optional) Allows you to set the MPLS MTU to a value higher than the interface MTU value on interfaces (such as Ethernet) that have a default interface MTU value of 1580 or less. The override keyword is not available for interface types that do not have a default MTU value of 1580 or less., 410082=If the interface MTU is less than 1524 bytes, you can set the maximum MPLS MTU to 24 bytes more than the interface MTU. For example, if the interface MTU is set to 1510 bytes, then you can set the maximum MPLS MTU to 1534 bytes (1510 + 24)., 173178=The following output shows the log entries when an LDP session with neighbor 192.168.1.100:0 goes down and comes up. The session went down because the discovery hold timer expired. The VRF table identifier for the neighbor is 1., 260348=In the following example, the router sets up a targeted session with the neighbor 10.10.10.10 using LDP as the label protocol:}",
+    "textBeforeTable": "Command History Global configuration (config) Command Modes The ATM-VC merge capability is enabled by default if the hardware supports this feature; otherwise, the feature is disabled. Command Default This command has no arguments or keywords. Syntax Description vc-merge atm ldp mpls no vc-merge atm ldp mpls To control whether the vc-merge (multipoint-to-point) capability is supported for unicast label virtual circuits (LVCs), use the mpls ldp atm vc-merge command in global configuration mode. To disable this feature, use the no form of this command. Effective with Cisco IOS Release 12.4(20)T, the mpls ldp atm vc-merge command is not available in Cisco IOS software. Note mpls ldp atm vc-merge mpls static binding ipv4 mpls request-labels for mpls prefix-map mpls oam mpls netflow egress mpls mtu mpls load-balance per-label",
+    "textAfterTable": "12.0(14)ST This command was integrated into Cisco IOS Release 12.0(14)ST. 12.1(2)T This command was integrated into Cisco IOS Release 12.1(2)T. 12.1(8a)E This command was integrated into Cisco IOS Release 12.1(8a)E and implemented on the Catalyst 6500 switch and the Cisco 7600 router. 12.2(2)T This command was integrated into Cisco IOS Release 12.2(2)T. 12.2(4)T This command was implemented on the Cisco MGX 8850 and MGX 8950 switches equipped with a Cisco MGX RPM-PR c. 12.2(8)T This command was integrated into Cisco IOS Release 12.2(8)T. 12.0(21)ST This command was integrated into Cisco IOS Release 12.0(21)ST. 12.0(22)S This command was integrated into Cisco IOS Release 12.0(22)S and implemented on the Cisco 10000(PRE-1) router.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

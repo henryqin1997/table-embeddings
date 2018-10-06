@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Field",
+            "TypeFoot 1",
+            "SizeFootref 1",
+            "Default"
+        ],
+        [
+            "Description",
+            "Use the Type list to choose the identity map as follows: Weak with Soft Subcache (SoftCacheWeakIdentityMap)\u2013cache first n elements in soft space, anything after that in weak space (see Section 102.2.1.4, \"Soft Cache Weak Identity Map and Hard Cache Weak Identity Map\") Weak with Hard Subcache (HardCacheWeakIdentityMap)\u2013cache first n elements in hard space, anything after that in weak space (see Section 102.2.1.4, \"Soft Cache Weak Identity Map and Hard Cache Weak Identity Map\") Weak (WeakIdentityMap)\u2013cache everything in weak space (see Section 102.2.1.2, \"Weak Identity Map\") Soft (SoftIdentityMap)\u2013cache everything in soft space (see Section 102.2.1.3, \"Soft Identity Map\") Full (FullIdentityMap)\u2013cache everything permanently (see Section 102.2.1.1, \"Full Identity Map\") None (NoIdentityMap)\u2013cache nothing (see Section 102.2.1.5, \"No Identity Map\") For more information, see Section 102.2.1, \"Cache Type and Object Identity\". Changing the project's default identity map does not affect descriptors that already exist in the project.",
+            "Specify the size of the cache as follows: When using Weak with Soft Subcache or Weak with Hard Subcache, the size is the size of the subcache. When using Full or Weak, the size indicates the starting size of the identity map.",
+            "When you enter a cache size, the Default check box is cleared. To reset the size to the default for the selected cache type, check the Default check box."
+        ]
+    ],
+    "pageTitle": "Configuring a Descriptor",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E17904_01/web.1111/b32441/descfg.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00034-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 69488835,
+    "recordOffset": 69418747,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{435951=Section 2.8.11, \"Mutability\", 103272=For more information on joining, see Section 108.7.1.5, \"Join Reading and Object-Level Read Queries\" and Section 109.2.1.10, \"Using Join Reading with ObjectLevelReadQuery\"., 454060=31/08/2004, 149623=Section 119.7.1.10, \"Configuring Named Query Advanced Options\", 453968=29/08/2004, 134917=Click Advanced to configure additional options. See Section 119.7.1.10, \"Configuring Named Query Advanced Options\"., 56889=Section 115.4.4, \"What You May Need to Know About Conforming Query Alternatives\"}",
+    "lastModified": "Wed, 13 May 2015 05:16:57 GMT",
+    "textBeforeTable": "Use the following table to enter data in following fields on the Caching tab: Description of \"Figure 119-25 Caching Tab, Identity Map Options\" Figure 119-25 Caching Tab, Identity Map Options Select the Caching tab in the Editor. The Caching tab appears. Select the descriptor in the Navigator. To specify the identity map information for a descriptor, use this procedure: 119.12.1 How to Configure Cache Type and Size at the Descriptor Level Using TopLink Workbench For more information about the cache, see Chapter 102, \"Introduction to Cache\". For detailed information on caching and object identity, and the recommended settings to maximize TopLink performance, see to Section 102.2.1, \"Cache Type and Object Identity\". This configuration overrides the default identity map configuration defined at the project level (see Section 117.10, \"Configuring Cache Type and Size at the Project Level\"). Footnote\u00a02\u00a0EIS root descriptors only (see Section 75.2.1.1, \"EIS Root Descriptors\"). Footnote\u00a01\u00a0Relational class descriptors only (see Section 22.2.1.1, \"Creating Relational Class Descriptors\").",
+    "textAfterTable": "Footnote\u00a01\u00a0If a descriptor is a child in an inheritance hierarchy, TopLink makes this field read only and displays the options from the parent root descriptor. For more information, see Section 16.2.3.3, \"Inheritance\". 119.12.2 How to Configure Cache Type and Size at the Descriptor Level Using Java Use one of the following ClassDescriptor methods to configure the descriptor to use the appropriate type of identity map: useFullIdentitMap useWeakIdentityMap useSoftIdentityMap useSoftCacheWeakIdentityMap useHardCacheWeakIdentityMap useNoIdentityMap Use the ClassDescriptor method setIdentityMapSize to configure the size of the identity map. 119.13 Configuring Cache Isolation at the Descriptor Level If you plan to use isolated sessions (see Section 102.2.7, \"Cache Isolation\"), you must configure descriptors as isolated for any object that you want confined to an isolated session cache. Configuring a descriptor to be isolated means that TopLink will not store the object in the shared session cache and the object will not be shared across client sessions. Each client will have their own object read directly from the database. Objects in an isolated client session cache can reference objects in their parent server session's shared session cache, but no objects in the shared session cache",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

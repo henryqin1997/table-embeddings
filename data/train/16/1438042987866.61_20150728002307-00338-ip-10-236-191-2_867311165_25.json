@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "qname",
+            "local",
+            "ns_URI",
+            "attrs_ref"
+        ],
+        [
+            "Description",
+            "element's qualified name",
+            "element's namespace local name",
+            "element's namespace URI",
+            "NodeList of element's attributes"
+        ]
+    ],
+    "pageTitle": "Package Parser APIs for C++",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E11882_01/appdev.112/e10771/parser.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987866.61/warc/CC-MAIN-20150728002307-00338-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 867323883,
+    "recordOffset": 867311165,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 03 Jul 2015 16:43:12 GMT",
+    "textBeforeTable": "throw (ParserException) = 0; DOMImplementation< Node>* impl_ptr = NULL) boolean no_mod = FALSE, DocumentTypeRef< Node>* dtd_ptr = NULL, boolean DTDvalidate = FALSE, InputSource* isrc_ptr, virtual DocumentRef< Node>* parse(  Syntax Parses the document and returns the tree root node parse()    (DOMParserIdType) Parser Id Returns virtual DOMParserIdType getParserId() const = 0;  Syntax getParserId()    (Context*) pointer to parser's context Returns virtual Context* getContext() const = 0;  Syntax Each parser object is allocated and executed in a particular Oracle XML context. This member function returns a pointer to this context. getContext()     Set the validator for this parser. setValidator() Parse and validate the document. parseSchVal() Parse DTD document. parseDTD() Parse the document. parse() Get parser id. getParserId() Returns parser's XML context (allocation and encodings).",
+    "textAfterTable": "impl_ptr optional DomImplementation pointer Returns (DocumentRef) document tree parseDTD() Parse DTD document. Syntax  virtual DocumentRef< Node>* parseDTD( InputSource* isrc_ptr, boolean no_mod = FALSE, DOMImplementation< Node>* impl_ptr = NULL) throw (ParserException) = 0; Parameter Description  isrc_ptr input source  no_mod TRUE if no modifications allowed  impl_ptr optional DomImplementation pointer Returns (DocumentRef) DTD document tree parseSchVal() Parses and validates the document. Sets the validator if the corresponding parameter is not NULL. Syntax  virtual DocumentRef< Node>* parseSchVal( InputSource* src_par, boolean no_mod = FALSE, DOMImplementation< Node>* impl_ptr = NULL, SchemaValidator< Node>* tor_ptr = NULL) throw (ParserException) = 0; Parameter Description  isrc_ptr",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

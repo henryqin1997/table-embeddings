@@ -1,0 +1,169 @@
+{
+    "relation": [
+        [
+            "Year",
+            "2012",
+            "2011",
+            "AVERAGES",
+            "TOTAL"
+        ],
+        [
+            "Event",
+            "EuroBasket Qualification",
+            "EuroBasket",
+            "",
+            ""
+        ],
+        [
+            "GP",
+            "8",
+            "5",
+            "13",
+            "13"
+        ],
+        [
+            "Min",
+            "26:52",
+            "31:00",
+            "28:27",
+            "370:00"
+        ],
+        [
+            "FGM",
+            "4.2",
+            "5.0",
+            "4.5",
+            "59"
+        ],
+        [
+            "FGA",
+            "9.8",
+            "13.2",
+            "11.1",
+            "144"
+        ],
+        [
+            "FG%",
+            ".436",
+            ".379",
+            ".410",
+            ".410"
+        ],
+        [
+            "3FGM",
+            "1.4",
+            "1.0",
+            "1.2",
+            "16"
+        ],
+        [
+            "3FGA",
+            "4.5",
+            "4.6",
+            "4.5",
+            "59"
+        ],
+        [
+            "3P%",
+            ".306",
+            ".217",
+            ".271",
+            ".271"
+        ],
+        [
+            "FTM",
+            "5.2",
+            "4.2",
+            "4.8",
+            "63"
+        ],
+        [
+            "FTA",
+            "6.4",
+            "5.0",
+            "5.8",
+            "76"
+        ],
+        [
+            "FT%",
+            ".824",
+            ".840",
+            ".829",
+            ".829"
+        ],
+        [
+            "Reb",
+            "6.8",
+            "6.4",
+            "6.6",
+            "86"
+        ],
+        [
+            "Ast",
+            "1.2",
+            "1.0",
+            "1.2",
+            "15"
+        ],
+        [
+            "Stl",
+            "0.9",
+            "1.2",
+            "1.0",
+            "13"
+        ],
+        [
+            "Blk",
+            "0.6",
+            "0.6",
+            "0.6",
+            "8"
+        ],
+        [
+            "PF",
+            "1.9",
+            "1.6",
+            "1.8",
+            "23"
+        ],
+        [
+            "TO",
+            "1.5",
+            "2.0",
+            "1.7",
+            "22"
+        ],
+        [
+            "Pts",
+            "15.1",
+            "15.2",
+            "15.2",
+            "197"
+        ],
+        [
+            "Place",
+            "-",
+            "17th",
+            "-",
+            "-"
+        ]
+    ],
+    "pageTitle": "Danilo Gallinari Player Profile, Denver Nuggets, News, Rumors, NBA Stats, International Stats, Events Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Danilo_Gallinari/Summary/761",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00197-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 23573635,
+    "recordOffset": 23543110,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{9632=Born: Aug 8, 1988 (26 years old), 8150=Early Entry Info: 2008 Early Entrant, 8404=Free Agent: UFA-2016, 8250=Draft Entry: 2008 NBA Draft}",
+    "TableContextTimeStampAfterTable": "{112851=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved., 43637=* Since the 1946-1947 season, 78903=* International basketball history from 2011-2012}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 7 Years Of Service NBA Jump to: [ NBA ] [ International ] [ National ] [ Recent News ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": ".893 9.97 1.00 3.77 4.77 1.71 0.79 0.38 2.44 1.21 15.92 2010-11 * DEN 14 12 30.9 3.86 9.36 .412 1.43 3.86 .370 5.57 7.21 .772 9.65 0.79 4.64 5.43 1.57 0.93 0.64 1.93 1.79 14.71 2011-12 DEN 43 40 31.4 4.49 10.84 .414 1.40 4.26 .328 4.23 4.86 .871 9.97 0.65 4.05 4.70 2.70 0.98 0.53 2.00 1.58 14.60 2012-13 DEN 71 71 32.5 5.13 12.27 .418 1.90 5.10 .373 4.03 4.90 .822 10.66 0.92 4.25 5.17 2.48 0.90 0.51 1.83 1.56 16.18 2014-15 DEN 59 27 24.2 3.86 9.63 .401 1.81 5.10 .355 2.90 3.24 .895 7.69 0.53 3.17 3.69 1.41 0.80 0.34 1.59 0.97 12.44 CAREER \u00a0 344 274 30.1 4.35 10.46 .416 1.81 4.94 .367 3.64 4.28 .851 9.14 0.76 3.73 4.49 1.83 0.85 0.49 2.01 1.29 14.16 NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2008-09 NYK 28 2 411.7 56 125 .448",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

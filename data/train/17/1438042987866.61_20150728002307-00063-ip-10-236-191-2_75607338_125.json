@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Attribute Name",
+            "connection-factory",
+            "request-channel",
+            "reply-channel",
+            "reply-timeout",
+            "request-timeout"
+        ],
+        [
+            "Allowed Values",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Attribute Description",
+            "The connection factory must be of type client.",
+            "The channel on which outgoing messages will arrive.",
+            "Optional. The channel to which reply messages may be sent if the original outbound message did not contain a reply channel header.",
+            "The time in milliseconds for which the gateway will wait for a reply. Default: 10000 (10 seconds).",
+            "If a single-use connection factory is not being used, The time in milliseconds for which the gateway will wait to get access to the shared connection."
+        ]
+    ],
+    "pageTitle": "Spring Integration Reference Manual",
+    "title": "",
+    "url": "http://docs.spring.io/spring-integration/docs/2.1.4.BUILD-SNAPSHOT/reference/htmlsingle/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987866.61/warc/CC-MAIN-20150728002307-00063-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 75800435,
+    "recordOffset": 75607338,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{505463=Value is set on the underlying class PollerMetadata Optional. If not specified it defaults to 1000 (milliseconds)., 860354=To avoid memory exhaustion due to a badly behaved client (one that does not adhere to the protocol of the configured serializer), these serializers impose a maximum message size. If the size is exceeded by an incoming message, an exception will be thrown. The default maximum message size is 2048 bytes, and can be increased by setting the maxMessageSize property. If you are using the default (de)serializer and wish to increase the maximum message size, you must declare it as an explicit bean with the property set and configure the connection factory to use that bean., 566084=* reply-timeout is unbounded for <gateway/> elements (created by the GatewayProxyFactoryBean). Inbound gateways for external integration (ws, http, etc.) share many characteristics and attributes with these gateways. However, for those inbound gateways, the default reply-timeout is 1000 milliseconds (1 second). If a downstream async handoff is made to another thread, you may need to increase this attribute to allow enough time for the flow to complete before the gateway times out., 892409=If there is not enough room in the temporary buffer to receive the newly read data, the reader thread will block until the assembler thread consumes some data. If the pool is exhausted, this will cause a deadlock, until another thread becomes available. The temporary buffer is currently 1024 bytes. In the simplest case, with one connection, and data greater than 1024 bytes, a pool-size of 2 will cause this deadlock to occur because a thread will never be made available., 2142=\u00a9 SpringSource Inc., 2012, 946429=In this example the database is polled every 1000 milliseconds, and the update and select queries are both executed in the same transaction. The transaction manager configuration is not shown, but as long as it is aware of the data source then the poll is transactional. A common use case is for the downstream channels to be direct channels (the default), so that the endpoints are invoked in the same thread, and hence the same transaction. Then if any of them fail, the transaction rolls back and the input data is reverted to its original state.}",
+    "textBeforeTable": "Table\u00a016.7.\u00a0TCP Outbound Gateway Attributes Specifies a TaskScheduler to use for managing the client-mode connection. Defaults to a ThreadPoolTaskScheduler with a pool size of `. true, false scheduler When in client-mode, specifies the number of milliseconds to wait between connection attempts, or after a connection failure. Default 60,000 (60 seconds). \u00a0 retry-interval When true, the inbound gateway will act as a client, with respect to establishing the connection and then receive (and reply to) incoming messages on that connection. Default = false. Also see retry-interval and scheduler. The connection factory must be of type 'client' and have single-use set to false. true, false client-mode If an Exception is thrown by a downstream component, the MessagingException message containing the exception and failed message is sent to this channel; any reply from that flow will then be returned as a response by the gateway.",
+    "textAfterTable": "17.\u00a0JDBC Support Spring Integration provides Channel Adapters for receiving and sending messages via database queries. Through those adapters Spring Integration supports not only plain JDBC SQL Queries, but also Stored Procedure and Stored Function calls. The following JDBC components are available by default: Inbound Channel Adapter Outbound Channel Adapter Outbound Gateway Stored Procedure Inbound Channel Adapter Stored Procedure Outbound Channel Adapter Stored Procedure Outbound Gateway Furthermore, the Spring Integration JDBC Module also provides a JDBC Message Store 17.1\u00a0Inbound Channel Adapter The main function of an inbound Channel Adapter is to execute a SQL SELECT query and turn the result set as a message. The message payload is the whole result set, expressed as a List, and the types of the items in the list depend on the row-mapping strategy that is used. The",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

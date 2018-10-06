@@ -1,0 +1,166 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2012-13",
+            "2013-14",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "AUS",
+            "AUS",
+            ""
+        ],
+        [
+            "GP",
+            "11",
+            "2",
+            "13"
+        ],
+        [
+            "GS",
+            "11",
+            "2",
+            "13"
+        ],
+        [
+            "Min",
+            "296.0",
+            "76.7",
+            "372.7"
+        ],
+        [
+            "FGM",
+            "63",
+            "24",
+            "87"
+        ],
+        [
+            "FGA",
+            "120",
+            "41",
+            "161"
+        ],
+        [
+            "FG%",
+            ".525",
+            ".585",
+            ".540"
+        ],
+        [
+            "3FGM",
+            "0",
+            "3",
+            "3"
+        ],
+        [
+            "3FGA",
+            "0",
+            "6",
+            "6"
+        ],
+        [
+            "3P%",
+            ".000",
+            ".500",
+            ".500"
+        ],
+        [
+            "FTM",
+            "27",
+            "5",
+            "32"
+        ],
+        [
+            "FTA",
+            "37",
+            "8",
+            "45"
+        ],
+        [
+            "FT%",
+            ".730",
+            ".625",
+            ".711"
+        ],
+        [
+            "FIC",
+            "116",
+            "44",
+            "160"
+        ],
+        [
+            "OFF",
+            "39",
+            "10",
+            "49"
+        ],
+        [
+            "DEF",
+            "57",
+            "8",
+            "65"
+        ],
+        [
+            "Reb",
+            "96",
+            "18",
+            "114"
+        ],
+        [
+            "Ast",
+            "12",
+            "11",
+            "23"
+        ],
+        [
+            "Stl",
+            "6",
+            "4",
+            "10"
+        ],
+        [
+            "Blk",
+            "11",
+            "4",
+            "15"
+        ],
+        [
+            "PF",
+            "40",
+            "10",
+            "50"
+        ],
+        [
+            "TO",
+            "24",
+            "8",
+            "32"
+        ],
+        [
+            "Pts",
+            "153",
+            "56",
+            "209"
+        ]
+    ],
+    "pageTitle": "Aron Baynes Player Profile, San Antonio Spurs, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Events Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Aron_Baynes/Summary/1790",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00318-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 21326311,
+    "recordOffset": 21291093,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{9625=Born: Dec 9, 1986 (28 years old), 8760=Free Agent: PO-2017; UFA-2018, 8553=Draft Entry: 2009 NBA Draft}",
+    "TableContextTimeStampAfterTable": "{139841=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved., 103904=* International basketball history from 2011-2012}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 3 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] [ National ] [ Recent News ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "CAREER \u00a0 139 21 12.6 1.97 3.78 .521 0.01 0.04 .200 0.83 0.99 .847 3.73 1.28 2.28 3.56 0.53 0.14 0.24 1.88 0.81 4.78 NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2012-13 SAN 16 0 141.4 18 36 .500 0 1 .000 7 12 .583 28 12 20 32 5 1 6 23 11 43 2013-14 SAN 53 4 490.8 71 163 .436 0 0 .000 19 21 .905 120 57 88 145 34 2 5 77 36 161 2014-15 SAN 70 17 1122.3 185 327 .566 1 4 .250 90 104 .865 370 109 209 318 35 16 22 162 65 461 CAREER \u00a0 139 21 1754.5 274 526 .521 1 5 .200 116 137 .847 518 178 317 495 74 19 33 262 112 665 NBA Regular Season Stats - Misc Stats Season Team GP GS",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

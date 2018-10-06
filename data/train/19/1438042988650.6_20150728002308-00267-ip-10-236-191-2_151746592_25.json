@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Common name",
+            "Payment Type",
+            "Invoice Number"
+        ],
+        [
+            "FaaS Field name",
+            "PaymentType",
+            "InvoiceNumber"
+        ],
+        [
+            "Example",
+            "Invoice",
+            "12345"
+        ],
+        [
+            "Maximum Length",
+            "",
+            "50"
+        ]
+    ],
+    "pageTitle": "Form Field Names",
+    "title": "",
+    "url": "http://manual.clickandpledge.com/Form-Field-Names.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00267-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 151779507,
+    "recordOffset": 151746592,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{3700=2200 Kraft Drive\u00a0\u00a0 \u00a0}",
+    "TableContextTimeStampAfterTable": "{381224=2013, 261989=12345, 389065=If a pull down menu is to be provided for selecting the date it is strongly recommended that the pull down menu does not offer 29, 30, 31 as available days to avoid problems with such months as February, April, etc., 309704=Spring 2011, 385542=\u00a0A payment form may ask the patron to start her payment on a specific date, e.g. beginning of the month.\u00a0In this case regardless of the day of the month that the payment is being initiated the payment will be charged on the first of the month.\u00a0If the requested day is invalid (February 31) an error will be returned as invalid date so it is important that the form does not allow for invalid dates to be set for processing., 388310=A typical scenario is when a donor wishes to start a recurring payment but wants the payment to be processed on the first of each month and continue every month, e.g. January 1, February 1, March\u00a01, etc.}",
+    "textBeforeTable": "The following provides a detailed list of field names in the FaaS platform. Card Holder Information \u00a0 Expiration date (month & year) CV2 Credit card number Last Name First Name Minimum fields required for credit card authorization are as follows: For a form to post to the FaaS service it has to have fields that match the field names as specified in the API. ChargeDate [Not supported for ACH] Postback Convenience Fee DecimalMark Order Mode Account Information Reference ID Service Response",
+    "textAfterTable": "BillingMI\u00a0\u00a0 \u00a0 G\u00a0\u00a0 \u00a0 1\u00a0\u00a0 \u00a0 Last name\u00a0\u00a0 \u00a0 BillingLastName\u00a0\u00a0 \u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

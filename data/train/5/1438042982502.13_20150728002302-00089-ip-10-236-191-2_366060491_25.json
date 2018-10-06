@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Router> enable",
+            "configure terminal Example: Router# configure terminal",
+            "router ospfv3 [process-id] Example: Router(config)# router ospfv3",
+            "address-family ipv6 unicast Example: Example: or Example: address-family ipv4 unicast Example: Router(config-router)# address-family ipv6 unicast Example: Example: or Example: Router(config-router)# address-family ipv4 unicast",
+            "event-log [one-shot | pause | size number-of-events] Example: Router(config-router)# event-log"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Enables OSPFv3 router configuration mode for the IPv4 or IPv6 address family.",
+            "Enters IPv6 address family configuration mode for OSPFv3. or Enters IPv4 address family configuration mode for OSPFv3.",
+            "Enable OSPFv3 event logging in an IPv4 OSPFv3 process."
+        ]
+    ],
+    "pageTitle": "Implementing OSPFv3\u00a0 [Support] - Cisco Systems",
+    "title": "",
+    "url": "http://www.cisco.com/en/US/docs/ios-xml/ios/ipv6/configuration/xe-3sg/ip6-ospf.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00089-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 366110935,
+    "recordOffset": 366060491,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{895=4.\u00a0\u00a0\u00a0 no compatible rfc1583}",
+    "TableContextTimeStampAfterTable": "{253390=Router(config-if)# ospfv3 encryption ipsec spi 1001 esp null md5 0 27576134094768132473302031209727, 438073=RFC 2401, 323342=Device(config-router)# no compatible rfc1583, 100288=Router(config-router)# auto-cost reference-bandwidth 1000, 438684=RFC 2406, 77126=These rules apply when the same ASBR is reachable through multiple areas, or when trying to decide which of several AS-external-LSAs should be preferred. In the former case the paths all terminate at the same ASBR, and in the latter the paths terminate at separate ASBRs or forwarding addresses. In either case, each path is represented by a separate routing table entry. This feature applies only when RFC 1583 compatibility is set to disabled using the no compatibility rfc1583 command (RFC 5340 provides an update to RFC 1583)., 437789=RFC 1583, 438390=RFC 2402, 109360=Router(config-router)# queue-depth update 1500, 253649=Router(config-if) ipv6 ospf encryption ipsec spi 1001 esp null sha1 123456789A123456789B123456789C123456789D}",
+    "textBeforeTable": "DETAILED STEPS 5.\u00a0\u00a0\u00a0 event-log [one-shot | pause | size number-of-events] 4.\u00a0\u00a0\u00a0 address-family ipv6 unicast 3.\u00a0\u00a0\u00a0 router ospfv3 [process-id] 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS This task can be performed in Cisco IOS XE Release 3.4S and later releases. Enabling Event Logging for LSA and SPF Rate Limiting for the IPv6 or IPv4 Address Family Configures LSA flood packet pacing. \u00a0 Router(config-rtr)# timers pacing flood 30 \u00a0 Example: timers pacing flood milliseconds Step\u00a07 Sets the minimum interval at which the software accepts the same LSA from OSPFv3 neighbors. \u00a0 Router(config-rtr)# timers lsa arrival 300 \u00a0 Example: timers",
+    "textAfterTable": "Enabling Event Logging for LSA and SPF Rate Limiting Clearing the Content of an Event Log Enabling Event Logging for LSA and SPF Rate Limiting This task can be performed in releases prior to Cisco IOS XE Release 3.4S. SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 ipv6 router ospf process-id 4.\u00a0\u00a0\u00a0 event-log [size [number of events]] [one-shot] [pause] DETAILED STEPS \u00a0 Command or Action Purpose Step\u00a01 enable Example: Router> enable \u00a0 Enables privileged EXEC mode. Enter your password if prompted. \u00a0 Step\u00a02",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

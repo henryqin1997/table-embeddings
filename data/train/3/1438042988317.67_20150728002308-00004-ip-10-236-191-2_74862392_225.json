@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "templateId",
+            "tokenType",
+            "description"
+        ],
+        [
+            "Definition",
+            "Specifies the name of the name of the WS-Trust validation template to be created.",
+            "Specifies the token type of the WS-Trust validation template. Possible values can be: username: indicates that the token type is UsernameToken saml11: indicates that the token type is a SAML 1.1 Assertion saml20: indicates that the token type is a SAML 2.0 Assertion x509: indicates that the token type is an X.509 certificate kerberos: indicates that the token type is a Kerberos token oam: indicates that the token type is an Oracle Access Manager token, supported by default : in this case, the token type is assumed to be a custom token type, referenced by (replace by a value)",
+            "Specifies an optional description."
+        ]
+    ],
+    "pageTitle": "Infrastructure Security Custom WLST Commands",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E15586_01/web.1111/e13813/custom_infra_security.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 225,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00004-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74949703,
+    "recordOffset": 74862392,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{113667=The following command generates a key pair with DN cn=www.acme.com, key size 1024, algorithm RSA and alias mykey in keys.jks, for Oracle Virtual Directory instance ovd1 in application server instance inst1:, 630602=cacheTimeOut\u2014Amount of time cached information remains in the OAM Agent cache when the information is neither used nor referenced. Default = 1800 (seconds)., 866907=HOK Symmetric Key Generation Algorithm: http://www.w3.org/2001/04/xmlenc#aes128-cbc, 240148=The following command deletes the engine with ID id1234., 55483=The following command generates a certificate signing request with DN cn=www.acme.com and key size 1024 in wallet1, for Oracle Internet Directory instance oid1, in application server instance inst1:, 702172=cacheTimeout\u2014Amount of time cached information remains in the OAM Agent cache when the information is neither used nor referenced. Default = 1800 (seconds)., 59941=The following command adds a self-signed certificate with DN cn=www.acme.com, key size 1024 to wallet1, for Oracle Internet Directory instance oid1, in application server instance inst1:, 237771=The following command deletes the authentication engine with ID id1234.}",
+    "lastModified": "Thu, 20 Sep 2012 17:25:21 GMT",
+    "textBeforeTable": "createWSTrustValidationTemplate(templateId, tokenType, description) Syntax       User Datastore Attribute: (empty) User Token Attribute: (empty) Attribute Based User Mapping (empty) Enable Attribute Based User Mapping: false Enable Simple User Mapping: false Map token: Map token to None The WS-Trust Token Mapping section will be created with the following default values: custom User Datastore Attribute: uid User Token Attribute: TPE_NAME_ID Attribute Based User Mapping (empty) Enable Attribute Based User Mapping: false Enable Simple User Mapping: true Map token: Map token to User The WS-Trust Token Mapping section will be created with the following default values: OAM User Datastore Attribute: mail User Token Attribute: TPE_KERBEROS_PRINCIPAL_FULL Attribute Based User Mapping (empty) Enable Attribute Based User Mapping: false Enable Simple User Mapping: true Map token: Map token to User The WS-Trust Token Mapping section will be created with the following default values: Kerberos",
+    "textAfterTable": "Example The following invocation creates a new WS-Trust validation template with default configuration data, and displays the result of the operation. createWSTrustValidationTemplate(templateId=\"custom-wss-validtemp\", tokenType=\"custom\", description=\"custom validation template\") deleteValidationTemplate Online command that deletes a validation template. Description Deletes a validation template referenced by the validationTemplateId parameter, and displays the result of the operation. Syntax deleteValidationTemplate(validationTemplateId) Argument Definition validationTemplateId Specifies the name of the validation template to be removed. Example The following invocation deletes a validation template referenced by the validationTemplateId parameter, and displays the result of the operation. deleteValidationTemplate(validationTemplateId=\"custom-wss-validtemp\")",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

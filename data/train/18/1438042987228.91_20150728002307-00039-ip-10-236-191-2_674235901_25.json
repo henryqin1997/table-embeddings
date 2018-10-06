@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Tag",
+            "%Cl(xpos,ypos,maxwidth,maxheight,[horizontal alignment],[vertical alignment])",
+            "%Cd",
+            "%C"
+        ],
+        [
+            "Description",
+            "Define the picture settings. More details. Horizontal alignment can be 'l', 'r', or 'c', for left, right and center. Vertical alignment can be 't', 'b', or 'c', for top, bottom and center.",
+            "Display the album art bitmap. More details",
+            "Use in a conditional to check if album art has been loaded"
+        ]
+    ],
+    "pageTitle": "CustomWPS < Main < Wiki",
+    "title": "",
+    "url": "http://www.rockbox.org/wiki/CustomWPS?sortcol=0%3btable=3%3bup=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987228.91/warc/CC-MAIN-20150728002307-00039-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 674262651,
+    "recordOffset": 674235901,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Info Viewport (Base Skin (.sbs) only) The conditional viewport display tag must come before the preload tag. Viewports can share identifiers so you don't end up with bloated code like %?C<%V(da)%V(db)%V(dc)|%V(de)%V(df)%V(dg)>. Display the 'identifier' viewport. e.g %?C<%C%Vd(a)|%Vd(b)> will show viewport 'a' if album art is found, and 'b' if it isnt. %Vd('identifier') Preload a viewport for later display. 'identifier' is a single lowercase letter (a-z) and '....' is the same as the usual %V tag (above) %Vl('identifier',....) Description Tag Conditional Viewports The width and height values may also be negative which means almost the same as above (e.g. %V(50,-,-50,-,-) will go from 50 to 170 on a 220-pixel display). The x, y, width and height value may be specified as percentages, the actual value will be calculated from the target's display at load time. Percentage parameters can be mixed with normal ones. Percentages can carry upto 1 fractional digit for increased precision. Example: %V(10.5%,10,80%,80,-) Any viewport can be conditionally displayed with minor changes to the above syntax.",
+    "textAfterTable": "Mono no colours. tag ignored Greyscale in the range 0 (= black) to 3 (= white) Colour 6-digit RGB888 colours - e.g. FF00FF Viewport Colours Tag Description %Vf(colour) colour is used for the remainder of the viewports foreground colour. %Vb(colour) colour is used for the remainder of the viewports background colour. %Vg(start, end [, text]) start end and optional text colour for gradient coloured lines. These need to be before any other tags after a %V() line or scrolling lines will not work as expected. Viewport Line Text Styles Tag Description",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

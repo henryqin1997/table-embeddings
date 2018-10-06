@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "Metric",
+            "DB Name",
+            "KPID",
+            "For Release 6 Number of buffers read from cache For Release 7 Buffers read (process object) rate from cache (per sec)",
+            "Object Name",
+            "Object Type",
+            "For Release 6 Number of APF buffers read from disk For Release 7 APF buffers read (process object) rate from disk (per sec)",
+            "For Release 6 Number of buffers read from disk For Release 7 Buffers read (process object) rate from disk (per sec)",
+            "SPID"
+        ],
+        [
+            "Description",
+            "Name of the database.",
+            "Kernel process identifier.",
+            "For System Monitoring Plug-In for Sybase Adaptive Server Enterprise (ASE) Release 6 (1.0.1.0.0) Number of buffers read from the cache since last collection. For System Monitoring Plug-In for Sybase Adaptive Server Enterprise (ASE) Release 7 (1.1.1.0.0) Rate at which the buffers were read from the cache since last collection, that is, the number of buffers read from cache since last collection divided by the elapsed time between two collections.",
+            "Name of the object.",
+            "Object type.",
+            "For System Monitoring Plug-In for Sybase Adaptive Server Enterprise (ASE) Release 6 (1.0.1.0.0) Number of APF buffers read from the disk since last collection. For System Monitoring Plug-In for Sybase Adaptive Server Enterprise (ASE) Release 7 (1.1.1.0.0) Rate at which the APF buffers were read from the disk since last collection, that is, the number of APF buffers read from the disk since last collection divided by the elapsed time between two collections.",
+            "For System Monitoring Plug-In for Sybase Adaptive Server Enterprise (ASE) Release 6 (1.0.1.0.0) Number of buffers read from the disk since last collection. For System Monitoring Plug-In for Sybase Adaptive Server Enterprise (ASE) Release 7 (1.1.1.0.0) Rate at which the buffers were read from the disk since last collection, that is, the number of buffers read from the disk since last collection divided by the elapsed time between two collections.",
+            "Session process identifier."
+        ]
+    ],
+    "pageTitle": "Sybase Adaptive Server Enterprise Database Metrics",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B16240_01/doc/em.102/b28748/database_sybase.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00241-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74291547,
+    "recordOffset": 74264441,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 15 Mar 2012 06:34:56 GMT",
+    "textBeforeTable": "Table 3-22 Process Objects Information Metrics Collection frequency - Every 30 mins The metrics in this category provide statistical information regarding objects that have been accessed by processes. Process Objects Information For System Monitoring Plug-In for Sybase Adaptive Server Enterprise (ASE) Release 6 (1.0.1.0.0) Number of packets sent since last collection. For System Monitoring Plug-In for Sybase Adaptive Server Enterprise (ASE) Release 7 (1.1.1.0.0) Rate at which the packets were sent since last collection, that is, the number of packets sent since last collection divided by the elapsed time between two collections. For Release 6 Number of packets sent For Release 7 Outgoing network IO traffic (process) rate (packets/sec) For System Monitoring Plug-In for Sybase Adaptive Server Enterprise (ASE) Release 6 (1.0.1.0.0) Number of packets received since last collection. For System Monitoring Plug-In for Sybase Adaptive Server Enterprise (ASE) Release 7 (1.1.1.0.0) Rate at which the packets were received since last collection, that is, the number of packets received since last collection divided by the elapsed time between two collections. For Release 6 Number of packets received For Release 7 Incoming network IO traffic (process) rate (packets/sec)",
+    "textAfterTable": "Running Procedures Statistics The metrics in this category provide a list of all procedures that are being executed by processes. Collection frequency - Every 30 mins Table 3-23 Running Procedures Statistics Metrics Metric Description Compile date Compile date of the procedure. Stack frame Stack frame of the procedure. DB Name Name of the database that contains the procedure. Memory Usage (KB) Number of kilobytes of memory used by the procedure. Procedure Name Name of the procedure. Procedure Type Type of the procedure. Owner Name",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

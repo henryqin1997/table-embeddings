@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Prefix",
+            "xml",
+            "css",
+            "xsd"
+        ],
+        [
+            "Namespace",
+            "http://www.w3.org/XML/1998/namespace",
+            "http://openejb.apache.org/xml/ns/corba-css-config-2.1",
+            "http://www.w3.org/2001/XMLSchema"
+        ]
+    ],
+    "pageTitle": "Schema documentation: Apache Geronimo",
+    "title": "",
+    "url": "http://geronimo.apache.org/schemas-2.1/docs/corba-css-config-2.1.xsd.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989826.86/warc/CC-MAIN-20150728002309-00216-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 100348443,
+    "recordOffset": 100332496,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{166685=Nillable (Applies to element declarations). If an element declaration is nillable, instances can use the xsi:nil attribute. The xsi:nil attribute is the boolean attribute, nil, from the http://www.w3.org/2001/XMLSchema-instance namespace. If an element instance has an xsi:nil attribute set to true, it can be left empty, even though its element declaration may have required content.}",
+    "lastModified": "Tue, 15 Jan 2013 03:26:57 GMT",
+    "textBeforeTable": "Declared Namespaces By default, local attribute declarations have no namespace. By default, local element declarations belong to this schema's target namespace. Global element and attribute declarations belong to this schema's target namespace. Element and Attribute Namespaces 1.0 Version http://openejb.apache.org/xml/ns/corba-css-config-2.1 Target Namespace Schema Document Properties top Glossary Legend Simple Type: associationOptionList Simple Type: associationOption Model Group: trustGroup Model Group: transportMechGroup Model Group: ittGroup Model Group: asMechGroup Complex Type: trustNooneType Complex Type: trustEveryoneType Complex Type: sasMechType Complex Type: entityType Complex Type: descriptionType Complex Type: cssType Complex Type: compoundSecMechType Complex Type: SSLType Complex Type: SECIOPType Complex Type: ITTPrincipalNameStaticType Complex Type: ITTPrincipalNameDynamicType Complex Type: ITTAnonymousType Complex Type: ITTAbsentType Complex Type: GSSUPStaticType Complex Type: GSSUPDynamicType",
+    "textAfterTable": "Schema Component Representation < xsd:schema targetNamespace=\" http://openejb.apache.org/xml/ns/corba-css-config-2.1\" elementFormDefault=\" qualified\" attributeFormDefault=\" unqualified\" version=\" 1.0\"> ... </ xsd:schema> top Global Declarations Element: css Name css Type css:cssType Nillable no Abstract no Logical Diagram XML Instance Representation < css:css> < css:description> css:descriptionType </",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

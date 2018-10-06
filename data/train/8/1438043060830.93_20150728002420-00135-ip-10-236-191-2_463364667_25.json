@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 1, 2006",
+            "Aug 26, 2008",
+            "Jul 16, 2013",
+            "Sep 18, 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: SPLITLOCK SYSTEMS PTY LTD ACN 101 927 048,AUSTRALI Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:TUNE, ANDREW DOMINIC;REEL/FRAME:018574/0701 Effective date: 20021021",
+            "Owner name: SPLITLOCK HOLDINGS PTY LTD,AUSTRALIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:SPLITLOCK SYSTEMS PTY LTD;REEL/FRAME:021443/0133 Effective date: 20080801",
+            "Owner name: SPLITLOCK GROUP, LTD, VIRGIN ISLANDS, U.S. Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:SPLITLOCK HOLDINGS PTY LTD;REEL/FRAME:030813/0598 Effective date: 20130426",
+            "Year of fee payment: 4"
+        ]
+    ],
+    "pageTitle": "Patent US7698560 - Information storage system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7698560?dq=6,370,566",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00135-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 463401795,
+    "recordOffset": 463364667,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6298=It is sometimes necessary to delete a customer's credit card information from the information storage system, for example, if the customer cancels their account with the client organisation. This is achieved through an information deletion process, comprising a client deletion process executed by the client computer 104, and a server deletion process executed by the information server 102. In order to delete a customer's credit card information, the client system 104 executes a client deletion process, as shown in FIG. 10. In order to delete a customer's credit card information, the customer number is provided to the process, and the customer's encoded credit card number is retrieved from the customer database at step 1002. At step 1004, a deletion request message is created including the customer number and the encoded digits of the customer's credit card number. At step 1006, the message is signed, encrypted and sent to the information server 102, as described above. The information server 102 executes a server deletion process, as shown in FIG. 11. The information server 102 receives the deletion request message at step 1102. At step 1104, the message is decrypted and verified. At step 1106, the customer number included in the message is hashed using the secure hash server 106, and at step 1108, the hash value is used as a database key to retrieve the customer's credit card digits from the registry 304. At step 1110, these digits are hashed and the hash value is compared to the hash value included in the deletion request message. If, at step 1112, the values are not found to be equal, then an error reply message is created at step 1114. Otherwise, at step 1116, the record in the registry 304 containing the customer's credit card digits is deleted, and at step 1118 a reply message is created, indicating the customer's data has been successfully deleted, and including the customer number as follows:}",
+    "TableContextTimeStampAfterTable": "{32400=The present patent application is a non-provisional application of International Application No. PCT/AU03/00433, filed Apr. 11, 2003., 114290=There is no requirement to use all of the information in the output (the hash digest) produced by the secure hash server 106: it can be readily identified that the size (number of bits) in the output of the secure hash server 106 is only that required to make co-incidental matches unlikely. The use of 64 bits (for example) is more than sufficient in most cases for this purpose, whereas common hash functions produce between 160 and 1024 bits in their output digests.}",
+    "textBeforeTable": "Patent Citations Many modifications will be apparent to those skilled in the art without departing from the scope of the present invention as herein described with reference to the accompanying drawings. The interposition of a transformation function (whether a simple subsetting function, such as the use of only the first 64 bits, or something more complex) can be used to provide a mechanism where an entire database can be re-keyed effectively instantly: something that might well be required in the event of a compromise of a client database. This re-keying can be done by storing the entire digest with each record, but comparing only against the output of the transformation function. Re-keying of a database of essentially arbitrary size can be achieved effectively instantly by simply changing the transformation function. There is no requirement to use all of the information in the output (the hash digest) produced by the secure hash server 106: it can be readily identified that the size (number of bits) in the output of the secure hash server 106 is only that required to make co-incidental matches unlikely. The use of 64 bits (for example) is more than sufficient in most cases for this purpose, whereas common hash functions produce between 160 and 1024 bits in their output digests. When data on the information server 102 is updated (such as when a customer of an organisation using the system informs",
+    "textAfterTable": "US6240184 Sep 2, 1998 May 29, 2001 Rsa Security Inc. Password synchronization US6393447 Oct 22, 1998 May 21, 2002 Lucent Technologies Inc. Method and apparatus for extracting unbiased random bits from a potentially biased source of randomness US6411715 Nov 10, 1998 Jun 25, 2002 Rsa Security, Inc. Methods and apparatus for verifying the cryptographic security of a selected private and public key pair without knowing the private key US6446052 Nov 18, 1998 Sep 3, 2002 Rsa Security Inc. Digital coin tracing using trustee tokens US6598031 * Jul 31, 2000 Jul 22, 2003 Edi Secure Lllp Apparatus and method for routing encrypted transaction card identifying data through a public telephone network US6722339 Mar 12, 2002 Apr 20, 2004 George D. Elliott Electromagnetic fuel ram-injector and improved ignitor US6813354 Mar 9, 2000 Nov 2, 2004 Lucent Technologies Inc. Mixing in small batches US6850916 * Mar 2, 1999",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

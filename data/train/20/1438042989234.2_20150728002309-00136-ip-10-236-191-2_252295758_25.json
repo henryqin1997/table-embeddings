@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Object Type",
+            "Table",
+            "Index",
+            "Tablespace"
+        ],
+        [
+            "Example of Object Reorganization Solution",
+            "DBMS_REDEFINITION PL/SQL package",
+            "Rebuild index",
+            "Rename tablespace"
+        ],
+        [
+            "Description of Solution",
+            "A PL/SQL package that provides a mechanism to redefine tables online",
+            "Rebuild an index that has previously been marked as unusable",
+            "Enables an existing tablespace to be renamed without rebuilding the tablespace and its contents"
+        ]
+    ],
+    "pageTitle": "10 Detailed Recovery Steps",
+    "title": "",
+    "url": "http://web.stanford.edu/dept/itss/docs/oracle/10g/server.101/b10726/recover.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00136-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 252336751,
+    "recordOffset": 252295758,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{86529=Gather the file number and file name from the error messages reported. Typical error messages are ORA-1157, ORA-1110 and ORA-1115, ORA-1110., 64024=Regularly monitor application logs (which may be distributed across the data server, middle-tier and the client machines), the alert log, and Oracle trace files for errors such as ORA-1578 and ORA-1110, 135286=Flashback Database is a new strategy for doing point-in-time recovery. It quickly rewinds an Oracle database to a previous time to correct any problems caused by logical data corruption or user error. Flashback logs are used to capture old versions of changed blocks. One way to think of it is as a continuous backup or storage snapshot. When recovery needs to be performed the flashback logs are quickly replayed to restore the database to a point in time before the error and just the changed blocks are restored. It is extremely fast and reduces recovery time from hours to minutes. In addition, it is easy to use. A database can be recovered to 2:05 p.m. by issuing a single statement. Before the database can be recovered, all instances of the database must be shut down and one of the instances subsequently mounted. The following is an example of a FLASHBACK DATABASE statement., 126567=We can confirm we have the correct employee by the fact that Ward's salary was $1875 at 09:00 a.m. Rather than using Ward's name, we can now use the employee number for subsequent investigation., 122307=This partial statement displays rows from the EMPLOYEES table starting from 2 p.m. on August 28, 2003. Developers can use this feature to build self-service error correction into their applications, empowering end users to undo and correct their errors without delay, rather than burdening administrators to perform this task. Flashback Query is very simple to manage, because the database automatically keeps the necessary information to reconstruct data for a configurable time into the past., 126119=Fortunately, the HR manager has provided information about the time when the change occurred. We can query the information as it was at 9:00 a.m. with Flashback Query., 65958=The file number is 22, the block number is 12698, and the file name is /oradata/SALES/users01.dbf., 125461=Consider a human resources (HR) example involving the SCOTT schema. the HR manager reports to the DBA that there is a potential discrepancy in Ward's salary. Sometime before 9:00 a.m., Ward's salary was increased to $1875. The HR manager is uncertain how this occurred and wishes to know when the employee's salary was increased. In addition, he has instructed his staff to reset the salary to the previous level of $1250, and this was completed around 9:15 a.m., 127722=We can see that WARD's salary was increased from $1250 to $1875 at 08:54:49 the same morning and was subsequently reset to $1250 at approximately 09:10:09., 149937=For details on usage and the other options to these commands, see MetaLink Notes 242993.1 and 189489.1 at http://metalink.oracle.com.}",
+    "lastModified": "Thu, 20 May 2004 01:25:20 GMT",
+    "textBeforeTable": "Table 10-8 Some Object Reorganization Capabilities Table 10-8 describes a few of the object reorganization capabilities available with Oracle Database 10g. Oracle's online object reorganization capabilities have been available since Oracle8i. These capabilities enable object reorganization to be performed even while the underlying data is being modified. 10.11 Online Object Reorganization Raise the compatibility level of both databases. Upgrade the database software on the standby database after you are satisfied with current operations. Switch the database clients to the new production database, so that the application and service become active. If application service levels degrade for some reason, then you can open the previous production database again, switch users back, and terminate the previous steps. Initiate a Data Guard switchover, making the original standby database the production database. This can occur in a few seconds. The role reversal that was just described includes the following steps: Description of the illustration maxav025.gif Figure 10-8 Both Databases Have Been Upgraded Upgrade the new standby database. Figure 10-8 shows the system after both databases have been",
+    "textAfterTable": "10.11.1 Online Table Reorganization In highly available systems, it is occasionally necessary to redefine large tables that are constantly accessed to improve the performance of queries or DML performed. Oracle provides the DBMS_REDEFINITION PL/SQL package to redefine tables online. This package provides a significant increase in availability compared to traditional methods of redefining tables that require tables to be taken offline. See Also: Oracle Database Administrator's Guide 10.11.2 Online Index Reorganization An index can be rebuilt online using the previous index definition, optionally moving the index to a new tablespace. See Also: Oracle Database Administrator's Guide 10.11.3 Online Tablespace",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

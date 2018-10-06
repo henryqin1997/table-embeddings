@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Code or Value",
+            "0",
+            "1",
+            "2",
+            "."
+        ],
+        [
+            "Value Description",
+            "At or above the detection limit",
+            "Below lower detection limit",
+            "Above upper detection limit",
+            "Missing"
+        ],
+        [
+            "Count",
+            "1678",
+            "5705",
+            "1",
+            "2056"
+        ],
+        [
+            "Cumulative",
+            "1678",
+            "7383",
+            "7384",
+            "9440"
+        ],
+        [
+            "Skip to Item",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "NHANES 2005 - 2006: Allergen Specific IgE(s) and Total IgE in Serum Data Documentation, Codebook, and Frequencies",
+    "title": "",
+    "url": "http://www.cdc.gov/nchs/nhanes/nhanes2005-2006/AL_IGE_D.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987552.57/warc/CC-MAIN-20150728002307-00148-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 346537951,
+    "recordOffset": 346519421,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{10259=The number and type of allergen-specific IgE tests performed varied by age. In the 2005-2006 survey, a basic subset of allergen-specific IgE antibodies were measured for all participants ages 1+ year (Group 1). Because a greater volume of blood could be drawn on older children and adults, the group of participant's ages 6+ years had an additional list of allergen-specific IgE antibodies tested (Group 2)., 13138=The overall NHANES 2005-2006 Allergy Component is designed to assess the allergen exposure, allergic sensitization, allergic symptoms and diseases, and their complex relationship in the general U.S. population. It consists of three parts: 1) collecting self-reported allergic diseases information through household interview questionnaires; 2) analyzing allergen and endotoxin from the dust extract; and 3) measuring total and allergen-specific immunoglobulin E (IgE) from a blood sample drawn at the NHANES mobile examination site)., 12289=Serum samples were analyzed for total and allergen-specific IgE using the Pharmacia Diagnostics ImmunoCAP 1000 System (Kalamazoo, Michigan). A detailed description of the laboratory method used can be found at NHANES 2005-2006 web page., 10597=Prior to the NHANES 2005-2006 survey, the only allergen-specific IgE serum testing was to latex antigen (NHANES III, NHANES 1999-2001) The blood sample collection for total and allergen-specific IgE for household, outdoor and food allergens was limited only to the NHANES 2005-2006 survey cycle, and did not continue in 2007., 14000=The primary purpose of the NHANES 2005-2006 Allergy Component is to study the effects of common indoor allergens on allergic sensitization in the general U.S. population. A nationally representative sample of household dust was collected to measure the amounts of common indoor allergens present which may be related to asthma and other allergic disease. A blood sample was also drawn at the NHANES examination site for IgE allergy antibody testing. The IgE studies, as a part of Allergy Component, measured both total IgE and also allergen-specific IgE responses to the same panel of allergens measured in the household dust collection. Also, IgE testing was performed for a panel of outdoor aeroallergens and for selected foods. IgE testing specific to these indoor, outdoor, and food allergens had not been previously performed in NHANES surveys., 12536=A full sample of NHANES 2005-2006 participants' ages 1 year and older were eligible for total and allergen-specific serum IgE testing., 3417=The analysis of NHANES 2005-2006 laboratory data including the AL_IGE_D data files must be conducted with the key survey design variables and weights, the basic demographic variables, and with related household, laboratory, and co-morbidity data. The NHANES 2005-2006 participant Household Interview Questionnaire Data Files contain demographic data, and health indicators such as allergy and asthma history (AGQ, RDQ, MCQ). The Family Interview data file contains data on housing characteristics and the home environment. The household dust laboratory data file contains data on the amount of specific allergen detected in the participant\u2019s household dust sample. The phlebotomy file includes auxiliary information such as the conditions precluding venipuncture., 4834=Upper Limit of Detection (ULOD): For total serum IgE measurement, all specimens obtained were analyzable, and there was no ULOD reported. The ULOD was the same for the each of the allergen-specific IgE antibody tests, and equal to 1000 kU/L., 14804=Title: Allergen Specific IgE(s) and Total IgE in Serum (AL_IGE_D ) Contact Number: 1-866-441-NCHS Years of Content: 2005 - 2006 First Published: January, 2009 Revised: February, 2013 Access Constraints: None Use Constraints: None Geographic Coverage: National Subject:Allergen Specific IgE(s) and Total IgE in Serum Record Source: NHANES 2005 - 2006 Survey Methodology: NHANES 2005 - 2006 is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S. Medium: NHANES Web site; SAS transport files, 3756=The NHANES quality control and quality assurance protocols (QA/QC) meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed quality control and quality assurance instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM)., 2534=For NHANES 2005-2006 IgE measurements, there were specific participants for whom the sum of their specific IgE test values exceeded their measured total IgE value. This may occur because of the cross-reactivity of specific IgE antibodies to either shared or conformationally similar epitopes of antigens for the allergens [2-5]. For example, trees, grasses, or dust mites have cross-reacting antibodies. The researcher is cautioned in the interpretation of these cross-reacting specific IgE measurements.}",
+    "lastModified": "Fri, 09 May 2014 20:26:00 GMT",
+    "textBeforeTable": "Both males and females 1 YEARS - 150 YEARS Target: Serum Total IgE antibody, result (kU/L) English Text: Serum total IgE antibody (kU/L) SAS Label: LBXIGE Variable Name: LBXIGE - Serum total IgE antibody (kU/L) Both males and females 1 YEARS - 150 YEARS Target: Respondent sequence number. English Text: Respondent sequence number SAS Label: SEQN Variable Name: SEQN - Respondent sequence number Codebook and Frequencies Weber RW. Patterns of pollen cross-allergenicity. J Allergy Clin Immunol 2003; 112: 229-239. Weber RW. Cross-reactivity of plant and animal allergens. Clin Rev Allergy Immunol 2001; 21: 153-202. Paganelli R, Ansotegui IJ, Sastre J, Lange CE, Roovers MH, de Groot H, Lindholm NB, Ewan PW. Specific IgE antibodies in the diagnosis of atopic disease. Clinical evaluation of a new in vitro test system, UniCAP, in six European allergy clinics. Allergy. 1998 53(8):763-8. Aalberse RC. Structural biology of allergens. J Allergy Clin Immunol 2000; 106: 228-238. Aalberse RC, Akkerdaas JH, van Ree R. Cross-reactivity of IgE antibodies to allergens. Allergy 2001; 56: 478-490. References For NHANES 2005-2006 IgE measurements, there were specific participants for whom the sum of their specific IgE test values exceeded their measured",
+    "textAfterTable": "Serum total IgE antibody comment code English Text: Serum total IgE antibody comment code Target: Both males and females 1 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 0 At or above the detection limit 8176 8176 1 Below lower detection limit 160 8336 2 Above upper detection limit 0 8336 . Missing 1104 9440 LBXID2 - D. Farinae IgE antibody (kU/L) Variable Name: LBXID2 SAS Label: D. Farinae IgE antibody (kU/L) English Text: Serum IgE antibody to Dermatophagoides Farinae, result (kU/L) Target: Both males and females 1 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 0.25 to 1000 Range of Values 8258 8258 . Missing 1182 9440",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

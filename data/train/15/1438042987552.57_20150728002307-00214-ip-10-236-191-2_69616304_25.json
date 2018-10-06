@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "composite",
+            "outXml",
+            "error",
+            "appHome",
+            "displayLevel",
+            "oracleHome"
+        ],
+        [
+            "Definition",
+            "Absolute path of a composite file in the expanded (unzipped) SAR directory.",
+            "Optional. Absolute path of an output XML file.",
+            "Optional. Absolute path of an error file.",
+            "Optional. Absolute path of the application home directory. This property is required if you have shared data.",
+            "Optional. The level of information to display. The default value is 1.",
+            "Optional. The oracle.home property."
+        ]
+    ],
+    "pageTitle": "Oracle SOA Suite Custom WLST Commands",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E15586_01/web.1111/e13813/custom_soa.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987552.57/warc/CC-MAIN-20150728002307-00214-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 69636215,
+    "recordOffset": 69616304,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 20 Sep 2012 17:25:21 GMT",
+    "textBeforeTable": "sca_compile(composite, [outXml], [error], [appHome], [displayLevel], [oracleHome]) Syntax      oracleHome property to set a value. scac_setProp command or the ant-sca-compile.xml script. This must be set once. You can use the oracle.home property to find the sca_compile command requires the Note: The Compiles a SOA composite application. Description Use with WLST: Offline Command Category: Application Compilation Commands sca_compile \"/scratch/myusername/beahome/AS11gR1SOA\") wls:/mydomain/ServerConfig> sca_setProp(\"oracle.home\", The following example sets the property name and property value. Example       Property value. propValue Property name. propName Definition Argument sca_setProp(propName, propValue) Syntax      Sets JVM system properties. This command",
+    "textAfterTable": "Examples The following example compiles the FirstComposite application. wls:/mydomain/ServerConfig> sca_compile(\"/tmp/FirstComposite_ rev1.0/composite.xml\", displayLevel=2)  The following example compiles the FirstComposite application and captures details in the myout.xml file. The error.out file captures any errors. wls:/mydomain/ServerConfig> sca_compile(\"/tmp/FirstComposite_ rev1.0/composite.xml\", outXml=\"/tmp/myout.xml\", error=\"error.out\") The following example compiles the FirstComposite application. The oracleHome property is set to find the ant-sca-compile.xml script. wls:/mydomain/ServerConfig> sca_compile(\"/tmp/FirstComposite_ rev1.0/composite.xml\", displayLevel=2,  oracleHome=\"/scratch/myusername/beahome/AS11gR1SOA\") SOA Composite Application Packaging Commands Use the packaging command, listed in Table 9-7, to package SOA composite applications into a composite SAR file. Table 9-7 SOA Composite Application Packaging Command for WLST Configuration Use this command... To... Use with WLST... sca_package Package the SOA composite application files into a composite SAR file.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

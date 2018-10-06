@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "MDX 1.1",
+            "VertexBuffer.Lock VertexBuffer.Unlock",
+            "IndexBuffer.Lock IndexBuffer.Unlock"
+        ],
+        [
+            "XNA Framework",
+            "VertexBuffer.SetData VertexBuffer.GetData",
+            "IndexBuffer.SetData IndexBuffer.GetData"
+        ]
+    ],
+    "pageTitle": "API Migration Guide: Managed DirectX 1.1 to XNA Framework",
+    "title": "",
+    "url": "https://msdn.microsoft.com/en-US/library/bb197956(v=xnagamestudio.30).aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987866.61/warc/CC-MAIN-20150728002307-00239-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 889138799,
+    "recordOffset": 889109340,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{43547=SurfaceFormat.Bgra2338}",
+    "textBeforeTable": "Another major difference in XNA Framework Graphics is the differentiation of \"in-game\" and \"content creation\" functions. In the native DirectX COM API, for example, there is no interface-level distinction between functions that should be used in-game versus those that should be reserved for content creation and processing. The XNA Framework concentrates only on the in-game portions of the API, so some Direct3D 9 features may appear to be missing. Functionality specific to content generation has been moved to its own API and utility set known as the XNA Framework Content Pipeline. XNA Framework Graphics has received a major API overhaul from MDX 1.1, but like MDX, XNA Framework Graphics uses core Direct3D 9 graphics technology. The key interface changes are in the device, effects, D3DX types, and resources. It is also important to note that there is no distinction now between a D3D and a D3DX class. The XNA Framework abstracts the Graphics API to omit any non-intuitive differentiation in the Graphics namespaces. Graphics The advantage of the XNA Framework is that it is compatible with WinForms applications, yet it does not depend on any WinForms or System.Drawing types. For applications that already use WinForms, converting to Game is not necessary unless you are moving to a cross-platform architecture. Also, using the Game interface will add support for the GraphicsDeviceManager, which simplifies device creation and management. The Game assembly is also a standard partial replacement for the DirectX Managed Utility Toolkit",
+    "textAfterTable": "MDX 1.1 XNA Framework Microsoft.DirectX.Direct3D.GraphicsStream No XNA Framework equivalent MDX supported a variety of direct memory access operations through the custom GraphicsStream type. Direct memory access is not a feature of the XNA Framework. Data access has been restricted to specific type-safe classes, generic accessors, and arrays. The new access patterns are not only easier to implement, but in many scenarios they are much faster. MDX 1.1 XNA Framework Microsoft.DirectX.Direct3D.SwapChain No XNA Framework equivalent Swap chains do not exist in the XNA Framework. This was done to improve cross-platform compatibility in the majority of XNA Game Studio rendering scenarios. Graphics Device Setup MDX 1.1 XNA Framework Microsoft.DirectX.Direct3D.Manager Microsoft.Xna.Framework.Graphics.GraphicsAdapter The static MDX Manager class has been largely reworked into a more organized set of interfaces based on the GraphicsAdapter class. The GraphicsAdapter class has an Adapters property, which is a collection of all the adapters on the current machine. This code example shows how to check a texture format to ensure that it is valid. C# Copy  // Check whether device 0 supports A8R8G8B8 in hardware. if ( GraphicsAdapter.Adapters[0].CheckDeviceFormat( DeviceType.Hardware, SurfaceFormat.Color, ResourceUsage.None,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

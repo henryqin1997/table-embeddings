@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Index2",
+            "0",
+            "1",
+            "2",
+            "4",
+            "7"
+        ],
+        [
+            "Tag Name",
+            "Encoding",
+            "NumChannels",
+            "SampleRate",
+            "AvgBytesPerSec",
+            "BitsPerSample"
+        ],
+        [
+            "Writable",
+            "N",
+            "N",
+            "N",
+            "N",
+            "N"
+        ],
+        [
+            "Values / Notes",
+            "--> RIFF AudioEncoding Values",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "RIFF Tags",
+    "title": "",
+    "url": "http://owl.phy.queensu.ca/~phil/exiftool/TagNames/RIFF.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00028-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 186294330,
+    "recordOffset": 186286128,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 14 May 2015 12:30:47 GMT",
+    "textBeforeTable": "Large AVI videos may be a concatenation of two or more RIFF chunks. For these files, information is extracted from subsequent RIFF chunks as sub-documents, but the Duration is calculated for the full video. The RIFF container format is used various types of fines including WAV, AVI, WEBP, LA, OFR, PAC and WV. According to the EXIF specification, Meta information is embedded in two types of RIFF LIST chunks: INFO and exif, and information about the audio content is stored in the fmt chunk. As well as this information, some video information and proprietary manufacturer-specific information is also extracted. RIFF Tags",
+    "textAfterTable": "'JUNK' OlympusJunk CasioJunk RicohJunk PentaxJunk PentaxJunk2 TextJunk - - - - - N --> Olympus AVI Tags --> EXIF Tags --> Ricoh AVI Tags --> Pentax Junk Tags --> Pentax Junk2 Tags 'JUNQ' OldXMP N \u00a0 'LIST_INFO' Info - --> RIFF Info Tags 'LIST_Tdat' Tdat - --> RIFF Tdat Tags 'LIST_exif' Exif - --> RIFF Exif Tags 'LIST_hdrl' Hdrl - --> RIFF Hdrl Tags 'LIST_hydt' PentaxData - --> Pentax AVI Tags 'LIST_ncdt' NikonData - --> Nikon AVI Tags 'VP8 ' VP8Bitstream - --> RIFF VP8 Tags 'VP8L' VP8L - --> RIFF VP8L Tags 'VP8X' VP8X - --> RIFF VP8X Tags 'XMP ' XMP - --> XMP Tags (WebP files) '_PMX' XMP - --> XMP Tags (AVI and WAV files) 'bext' BroadcastExtension - --> RIFF BroadcastExt Tags 'fmt ' AudioFormat - --> RIFF AudioFormat Tags 'olym' Olym - --> Olympus WAV Tags RIFF ALPH Tags WebP alpha chunk.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

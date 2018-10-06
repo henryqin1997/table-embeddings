@@ -1,0 +1,92 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "153.78500",
+            "153.99500",
+            "155.52000",
+            "155.52000",
+            "155.52000",
+            "155.52000"
+        ],
+        [
+            "License",
+            "WPZI206",
+            "WPZI206",
+            "WPZI206",
+            "WPZI206",
+            "WPZI206",
+            "WPZI206"
+        ],
+        [
+            "Type",
+            "RM",
+            "RM",
+            "BM",
+            "BM",
+            "BM",
+            "BM"
+        ],
+        [
+            "Tone",
+            "123.0 PL",
+            "116 DPL",
+            "023 DPL",
+            "025 DPL",
+            "036 DPL",
+            "054 DPL"
+        ],
+        [
+            "Alpha Tag",
+            "PAGE-ScBus",
+            "Page ScMaint",
+            "Page LVP Sc",
+            "Page Mdl Sc",
+            "Page DVI Sc",
+            "Page HS Ops"
+        ],
+        [
+            "Description",
+            "School Busses",
+            "Maintenance",
+            "Lake View Primary School Operations",
+            "Middle School Operations",
+            "Desert View Intermediate School Operations",
+            "High School Operations"
+        ],
+        [
+            "Mode",
+            "FM",
+            "FMN",
+            "FMN",
+            "FMN",
+            "FMN",
+            "FMN"
+        ],
+        [
+            "Tag",
+            "Schools",
+            "Schools",
+            "Schools",
+            "Schools",
+            "Schools",
+            "Schools"
+        ]
+    ],
+    "pageTitle": "Coconino County, Arizona (AZ) Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?ctid=95&ts=2",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00242-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 670133151,
+    "recordOffset": 670109055,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Coconino County Coconino County //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { }); }); } act=1; setEsc(this,origHtml); this.innerHTML = getTagsHTML; getTagsHTML += '\\n'; } getTagsHTML += '' + tagNames[i] + '\\n'; for (var",
+    "textAfterTable": "155.49000\u00a0 KNBC987\u00a0 RM 100.0 PL CCSO-3E/3F Sheriff Dispatch (Page)\u00a0 FMN\u00a0 Law Dispatch\u00a0 155.49000\u00a0 KNBC987\u00a0 RM 162.2 PL CCSO-3G Sheriff Dispatch (Fredonia)\u00a0 FMN\u00a0 Law Dispatch\u00a0 463.00000\u00a0 WNBZ205\u00a0 RM 136.5 PL CCO CTY EMS EMS\u00a0 FMN\u00a0 EMS Dispatch\u00a0 155.13000\u00a0 KCO68\u00a0 RM 127.3 PL CCSO-JAIL Jail\u00a0 FMN\u00a0 Corrections\u00a0 155.94000\u00a0 WNKB200\u00a0 RM 179.9 PL CCO PROBAT Probation Department\u00a0 FMN\u00a0 Corrections\u00a0 Air Evac - PHI, Inc Frequency\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

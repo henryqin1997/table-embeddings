@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3"
+        ],
+        [
+            "Command or Action",
+            "UCS-A# scope monitoring",
+            "UCS-A /monitoring # delete snmp-user user-name",
+            "UCS-A /monitoring # commit-buffer"
+        ],
+        [
+            "Purpose",
+            "Enters monitoring mode.",
+            "Deletes the specified SNMPv3 user.",
+            "Commits the transaction to the system configuration."
+        ]
+    ],
+    "pageTitle": "Cisco UCS Manager CLI Configuration Guide, Release 2.0 - Configuring Communication Services [Cisco UCS Manager] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/cli/config/guide/2-0/b_UCSM_CLI_Configuration_Guide_2_0/b_UCSM_CLI_Configuration_Guide_2_0_chapter_0110.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987628.47/warc/CC-MAIN-20150728002307-00049-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 378187727,
+    "recordOffset": 378158621,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{23157=The following example creates a keyring with a key size of 1024 bits:, 16392=Each PKI device holds a pair of asymmetric Rivest-Shamir-Adleman (RSA) encryption keys, one kept private and one made public, stored in an internal key ring. A message encrypted with either key can be decrypted with the other key. To send an encrypted message, the sender encrypts the message with the receiver's public key, and the receiver decrypts the message using its own private key. A sender can also prove its ownership of a public key by encrypting (also called 'signing') a known message with its own private key. If a receiver can successfully decrypt the message using the public key in question, the sender's possession of the corresponding private key is proven. Encryption keys can vary in length, with typical lengths from 512 bits to 2048 bits. In general, a longer key is more secure than a shorter key. Cisco UCS Manager provides a default key ring with an initial 1024-bit key pair, and allows you to create additional key rings.}",
+    "textBeforeTable": "Procedure Configuring CIM XML This service provides access to the Cisco UCS Manager CLI. This service is disabled by default. Telnet This service provides access to the Cisco UCS Manager CLI. This service is enabled on port 22. You cannot disable it, nor can you change the default port. SSH Enable this service only if your system includes integration with an SNMP server. If enabled, the default port is 161. You must configure the community and at least one SNMP trap. This service is disabled by default. SNMP This shell service is one of the standards defined by the Distributed Management Task Force. This service is enabled for read-only access and supports a limited subset of the protocols, such as the show command. You cannot disable it. SMASH CLP With HTTPS, all data is exchanged in encrypted mode through a secure",
+    "textAfterTable": "Step\u00a04 UCS-A /system/services # set cimxml port port-num \u00a0 Specifies the port to be used for the CIM XML connection. \u00a0 Step\u00a05 UCS-A /system/services # commit-buffer \u00a0 Commits the transaction to the system configuration. \u00a0 The following example enables CIM XML, sets the port number to 5988, and commits the transaction: UCS-A# scope system UCS-A /system # scope services UCS-A /system/services # enable cimxml UCS-A /system/services* # set cimxml port 5988 UCS-A /system/services* # commit-buffer UCS-A /system/services # Configuring HTTP Procedure \u00a0 Command or Action Purpose Step\u00a01 UCS-A# scope system \u00a0 Enters system mode. \u00a0 Step\u00a02 UCS-A /system # scope services \u00a0 Enters system services mode. \u00a0 Step\u00a03 UCS-A /system/services # enable http \u00a0 Enables the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

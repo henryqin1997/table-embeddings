@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2003-09-02T00:00:00",
+            "2008-11-04T00:00:00"
+        ],
+        [
+            "Description",
+            "Each raw data source was converted into ESRI Arc-compatible formats. The resulting files were converted and adjusted to predetermined projection (geographic), horizontal datum (NAD27), and vertical datum (MHW) using the ArcInfo PROJECT command and ArcView Spatial Analyst MAP CALCULATOR algorithm. An ArcView polyline shapefile was created to represent the coastline. The coastline is based on USGS hydrographic vectors. The USGS coastline was compared to high-resolution NGS vector shoreline; no discernible difference was found between the two datasets. Bathymetric contours and data points were digitized from raster charts and images. Each dataset was analyzed for quality. Anomalies were removed; approximately 30 points were removed from NOS hydrographic survey datasets. Overlapping contours and points were assessed for matching. Bathymetric data was prioritized by quality and date. Recent surveys superseded older data. A TIN (Triangulated Irregular Network) was created using bathymetric data and coastline vectors using ArcView 3D Spatial Analyst. A 0.88-arcsecond grid was created. The grid was contoured at 1-, and 5-meter contours to compare with the original datasets. Problematics areas were redone by adding additional contours in areas of low point density. The bathymetric grid was clipped to requested coordinates. USGS 30-meter DEMs were merged into a single grid and analyzed for quality. The dataset was compare to hydrographic and hypsographic contours, as well as USGS, NGS, and COOPs control points. Problematics areas (airport, grid overlaps) were redone by creating TINs using source data. The topographic grid was clipped to requested coordinates. The topographic and bathymetric grids were merged into a single 0.88-arcsecond grid. The 0.88-second grid was compared to the Yakutat AK 2.66-second grid to ensure continuity and quality. A gridmatching graphic (yak3_1.jpg) was produced to verify nest matching for modeling efforts. The final grid was analyzed for blunders, systematic errors, and logical consistency.",
+            "Metadata imported."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/DEM/iso/xml/525.xml&view=ISO19115Components-HTMLTable&altview=none",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00328-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 619152935,
+    "recordOffset": 619139889,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.ngdc.mgg.dem:525Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/DEM View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "Title Type 1 Footprints ArcGIS Map Service Digital Elevation Model Footprints ArcGIS Map Service ArcGIS Map Service Top CI_Citation Count Component Title Date Citation Identifier 1 Digital Elevation Model Footprints ArcGIS Map Service 2011-02-15 1 Electronic Nautical Charts 1 Mean High Water height 2012-08-05 1 NASA/GCMD Data Center Keywords 1 NASA/GCMD Data Resolution Keywords 1 NASA/GCMD Location Keywords 1 NASA/GCMD Platform Keywords 1 NASA/Global Change Master Directory (GCMD) Earth Science Services Keywords NASA/GCMD Services Keywords",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

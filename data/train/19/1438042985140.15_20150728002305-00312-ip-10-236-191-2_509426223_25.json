@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Value",
+            "0x00000001",
+            "0x00000002"
+        ],
+        [
+            "Meaning",
+            "S-bit (synchronous framing)",
+            "A-bit (asyncronous framing)"
+        ],
+        [
+            "Reference",
+            "[RFC2661]",
+            "[RFC2661]"
+        ]
+    ],
+    "pageTitle": "Layer Two Tunneling Protocol \"L2TP\"",
+    "title": "",
+    "url": "http://www.iana.org/assignments/l2tp-parameters/l2tp-parameters.xhtml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985140.15/warc/CC-MAIN-20150728002305-00312-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 509442184,
+    "recordOffset": 509426223,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 04 May 2015 07:30:13 GMT",
+    "textBeforeTable": "CSV Available Formats AVPs. It is a 32-bit bit field, with current defined bit values of: The Framing field is used by the Framing Capabilities and Framing Type  Note RFC2661] [ Reference Standards Action Registration Procedure(s) Framing Field definition [RFC3301] B-bit (ATM Bearer support) 0x00000004 [RFC2661] A-bit (Analogue access requested) 0x00000002 [RFC2661] D-bit (Digital access requested) 0x00000001 Reference Meaning Value CSV Available Formats RFC2661] [ AVPs. It is a 32-bit bit field, with current defined bit values of: The Bearer field is used by the Bearer Capabilities and Bearer Type  Note Reference Standards Action Registration Procedure(s) Bearer Field definition [RFC5085] Reserved 7 (0x80) [RFC5085] Reserved 6 (0x40) [RFC5885] BFD PW-ACH-encapsulated, for PW Fault Detection and AC/PW Fault Status Signaling 5 (0x20) [RFC5885] BFD PW-ACH-encapsulated, for PW Fault Detection only 4 (0x10) [RFC5885] BFD IP/UDP-encapsulated, for PW Fault Detection and AC/PW Fault Status Signaling 3 (0x08) [RFC5885]",
+    "textAfterTable": "Leading Bits of the L2TP AVP Header Registration Procedure(s) Standards Action Reference [ RFC2661][ RFC3931] Note There are six bits at the beginning of the L2TP AVP header. L2TPv2 and L2TPv3 share a common registry for the definitions of the six leading bits. Available Formats CSV Value Description Reference Bit 0 Mandatory Bit, \"M-bit\" [RFC2661][RFC3931] Bit 1 Hidden Bit, \"H-bit\" [RFC2661][RFC3931] Bit 2 Reserved [RFC2661][RFC3931] Bit 3 Reserved [RFC2661][RFC3931] Bit 4 Reserved [RFC2661][RFC3931] Bit 5 Reserved [RFC2661][RFC3931] Leading Bits of the L2TP Message Header Registration Procedure(s) Standards Action Reference [ RFC2661][ RFC3931] Note There are 12 bits at the beginning of the L2TP Message Header. L2TPv2 and L2TPv3 share a common registry for the definitions of the 12 leading bits. Available Formats CSV Value Description Reference Bit 0 Message Type, \"T-bit\" [RFC2661][RFC3931] Bit 1 Length Field is Present, \"L-bit\" [",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

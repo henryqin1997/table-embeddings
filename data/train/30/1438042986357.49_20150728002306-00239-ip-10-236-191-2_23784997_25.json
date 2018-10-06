@@ -1,0 +1,202 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2007-08",
+            "2008-09 *",
+            "2008-09 *",
+            "2008-09 *",
+            "2009-10",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "IWA",
+            "All Teams",
+            "IWA",
+            "AUS",
+            "IDA",
+            ""
+        ],
+        [
+            "GP",
+            "24",
+            "17",
+            "11",
+            "6",
+            "14",
+            "55"
+        ],
+        [
+            "GS",
+            "13",
+            "14",
+            "8",
+            "6",
+            "14",
+            "41"
+        ],
+        [
+            "Dbl Dbl",
+            "2",
+            "3",
+            "2",
+            "1",
+            "9",
+            "14"
+        ],
+        [
+            "Tpl Dbl",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "40 Pts",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "20 Reb",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "20 Ast",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "Techs",
+            "0",
+            "0",
+            "0",
+            "0",
+            "2",
+            "2"
+        ],
+        [
+            "HOB",
+            ".139",
+            ".168",
+            ".148",
+            ".203",
+            ".235",
+            ".174"
+        ],
+        [
+            "Ast/TO",
+            "0.71",
+            "0.97",
+            "0.73",
+            "1.42",
+            "0.80",
+            "0.83"
+        ],
+        [
+            "Stl/TO",
+            "0.68",
+            "0.65",
+            "0.68",
+            "0.58",
+            "0.41",
+            "0.56"
+        ],
+        [
+            "FT/FGA",
+            "0.33",
+            "0.28",
+            "0.29",
+            "0.25",
+            "0.37",
+            "0.33"
+        ],
+        [
+            "W's",
+            "9",
+            "9",
+            "4",
+            "5",
+            "9",
+            "27"
+        ],
+        [
+            "L's",
+            "15",
+            "8",
+            "7",
+            "1",
+            "5",
+            "28"
+        ],
+        [
+            "Win %",
+            "0.375",
+            "0.529",
+            "0.364",
+            "0.833",
+            "0.643",
+            "0.491"
+        ],
+        [
+            "OWS",
+            "0.97",
+            "1.13",
+            "0.43",
+            "0.68",
+            "1.21",
+            "3.31"
+        ],
+        [
+            "DWS",
+            "0.87",
+            "0.52",
+            "0.25",
+            "0.28",
+            "0.93",
+            "2.33"
+        ],
+        [
+            "WS",
+            "1.84",
+            "1.65",
+            "0.69",
+            "0.96",
+            "2.14",
+            "5.64"
+        ]
+    ],
+    "pageTitle": "Anthony Tolliver Player Profile, Detroit Pistons, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Anthony_Tolliver/Summary/328",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986357.49/warc/CC-MAIN-20150728002306-00239-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 23815883,
+    "recordOffset": 23784997,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{8482=Free Agent: UFA-2016, 8328=Draft Entry: 2007 NBA Draft, 9544=Born: Jun 1, 1985 (30 years old)}",
+    "TableContextTimeStampAfterTable": "{160444=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 8 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ Recent News ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "2011-12 MIN 51 0 17.3 1.39 3.57 .390 0.49 1.98 .248 0.80 1.08 .745 3.12 0.98 2.02 3.00 0.43 0.35 0.37 1.69 0.69 4.08 2012-13 ATL 62 11 15.5 1.32 3.48 .380 0.73 2.15 .338 0.71 0.82 .863 3.00 0.50 2.00 2.50 0.52 0.24 0.19 1.06 0.58 4.08 2013-14 CHA 64 9 20.3 2.02 4.80 .420 1.59 3.86 .413 0.52 0.64 .805 4.59 0.52 2.11 2.62 0.66 0.30 0.23 1.28 0.36 6.14 2014-15 * All Teams 76 11 18.9 2.12 5.17 .410 1.39 3.82 .366 0.71 0.91 .783 4.35 0.67 2.43 3.11 0.78 0.32 0.21 1.80 0.67 6.34 2014-15 * DET 52 11 22.3 2.60 6.13 .423 1.58 4.38 .360 0.96 1.21 .794 5.38 0.87 2.83 3.69 0.94 0.38 0.29 2.25 0.77 7.73 2014-15 * PHX 24 0 11.3 1.08 3.08 .351 1.00 2.58 .387 0.17 0.25 .667 2.11 0.25 1.58 1.83 0.42 0.17 0.04 0.83 0.46 3.33 CAREER \u00a0 383 64 19.8 2.08 5.03 .414 1.00 2.82 .356 1.01 1.28 .784 4.90 0.92 2.65 3.57 0.89 0.37 0.32 1.72 0.64 6.16 NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG%",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

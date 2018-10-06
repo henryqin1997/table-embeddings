@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Code or Value",
+            "1",
+            "2",
+            "7",
+            "9",
+            "."
+        ],
+        [
+            "Value Description",
+            "Same time",
+            "Different times",
+            "Refused",
+            "Don't know",
+            "Missing"
+        ],
+        [
+            "Count",
+            "262",
+            "26",
+            "0",
+            "1",
+            "3275"
+        ],
+        [
+            "Cumulative",
+            "262",
+            "288",
+            "288",
+            "289",
+            "3564"
+        ],
+        [
+            "Skip to Item",
+            "",
+            "RHQ340",
+            "RHQ355",
+            "RHQ355",
+            ""
+        ]
+    ],
+    "pageTitle": "NHANES 2003 - 2004: Reproductive Health Data Documentation, Codebook, and Frequencies",
+    "title": "",
+    "url": "http://www.cdc.gov/nchs/nhanes/nhanes2003-2004/RHQ_C.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.50/warc/CC-MAIN-20150728002310-00258-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 363553771,
+    "recordOffset": 363532791,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6998=Title: Reproductive Health (RHQ_C ) Contact Number: 1-866-441-NCHS Years of Content: 2003 - 2004 First Published: June, 2006 Revised: NA Access Constraints: None Use Constraints: None Geographic Coverage: National Subject:Reproductive Health Record Source: NHANES 2003 - 2004 Survey Methodology: NHANES 2003 - 2004 is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S. Medium: NHANES Web site; SAS transport files, 3521=RHD143: Are you pregnant now? This question is similar to RHQ140 in the 1999-2000 data release and, 3055=RHD152: What month of pregnancy are you in? Called RHQ150 in the 1999-2000 data release and RHQ151 in the 2001-2002 release. The age range for this questioned was broadened from 15-49 in 1999-2000 to 12-59., 3394=RHQ141 in the 2001-2002 release which asked \u201cDo you think that you are pregnant now?\u201d The age range was broadened from 15-49 in 1999-2000 to 12-59 for the following years. See also Laboratory file variable URXPREG, urine pregnancy test result, and combined pregnancy variable on the demographic file (DEMO_C).}",
+    "lastModified": "Fri, 09 May 2014 20:27:02 GMT",
+    "textBeforeTable": "0 to 120 Hard Edits: Females only 12 YEARS - 150 YEARS Target: CODE \"0\" IF HAVEN'T STARTED YET. CAPI INSTRUCTION: SOFT EDIT VALUES: 8-25 YEARS. HARD EDIT VALUES: AGE OF 1ST PERIOD CANNOT BE GREATER THAN CURRENT AGE. ENTER AGE IN YEARS. English Instructions: The next series of questions are about {your/SP's} reproductive history. I will begin by asking about {your/SP's} periods or menstrual cycles. How old {were you/was SP} when {you/SP} had {your/her} first menstrual period? English Text: Age when first menstrual period occurred SAS Label: RHQ010 Variable Name: RHQ010 - Age when first menstrual period occurred Females only 12 YEARS - 150 YEARS Target: Respondent sequence number. English Text: Respondent sequence number SAS Label: SEQN Variable Name: SEQN - Respondent sequence number Codebook and Frequencies N/A. References RHQ291: Age when had hysterectomy. Called RHQ290 in previous data releases. Please note that there are instances in which women reported an age of hysterectomy that is earlier than the age of last menstrual period (RHQ060). RHQ180: Age at first live birth. If a woman reported that she had only",
+    "textAfterTable": "RHQ015 English Instructions: BOX 1. CHECK ITEM RHQ.015: IF PERIODS HAVEN'T STARTED (CODED '0') IN RHQ.010 AND SP 12-13 YEARS OLD OR 50 YEARS OR OLDER, GO TO END OF SECTION. IF PERIODS HAVEN'T STARTED (CODED '0') IN RHQ.010 AND SP 14-49 YEARS OLD, GO TO RHQ.700. IF PERIODS HAVE STARTED AND SP REPORTS AGE (CODED '1'- '76) IN RHQ.010, OR IF SP REFUSED AGE (CODED '77') IN RHQ.010, GO TO RHQ.031, OTHERWISE, CONTINUE WITH RHQ.020. Target: Females only 12 YEARS - 150 YEARS RHQ020 - Age range at first menstrual period Variable Name: RHQ020 SAS Label: Age range at first menstrual period English Text: {Were you/Was SP}... Target: Females only 12 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 1 Younger than 10, 0 0 2 10 to 12, 6 6 3 13 to 15, or 13 19 4 16 or older? 3 22 7",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

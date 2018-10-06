@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Default Text Entry",
+            "Group:TestScores",
+            "Test Category",
+            "Column Header and Splitting",
+            "Content and Splitting",
+            "end:TestScores"
+        ],
+        [
+            "Form Field Help Text Entry",
+            "",
+            "",
+            "%",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Creating an RTF Template",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E10091_01/doc/bip.1013/b40017/T421739T481157.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00228-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74145987,
+    "recordOffset": 74087555,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{125874=The \"if\" statement is testing if the debit value is greater than 1000. If it is, then the next lines are invoked. Notice that the example embeds native XSL code inside the \"if\" statement., 5502=Using Microsoft Word's form field feature allows you to place the syntax in hidden form fields, rather than directly into the design of your template. BI Publisher supports Microsoft Word 2000 (or later) with Microsoft Windows version 2000 (or later)., 69655=Microsoft Word 2000 Users: After you add the background map and overlay the shape group, use the Grouping dialog to make the entire composition one group., 110067=For example, the following statement tests the AMOUNT element value. If the value is greater than 1000, show the word \"Higher\"; if it is less than 1000, show the word \"Lower\"; if it is equal to 1000, show \"Equal\":, 190117=To use the Oracle format mask or the Microsoft format mask, the numbers in your data source must be in a raw format, with no formatting applied (for example: 1000.00). If the number has been formatted for European countries (for example: 1.000,00) the format will not work., 123507=The template lists the accounts and their credit and debit values. In the final report we want to highlight in red any cell whose value is greater than 1000. The template for this is shown in the following figure:, 95228=http://myserver.domain:8888/CustomerReport/cstid=1234, 67874=The shape-size command is used to stretch or shrink the cylinder based on the values of the elements SOFTWARE, HARDWARE, and SERVICES. The value is divided by 1000 to set the stretch or shrink factor. For example, if the value is 2000, divide that by 1000 to get a factor of 2. The shape will generate as twice its current height., 230572=<?namespace:fsg=http://www.oracle.com/fsg/2002-30-20/?>, 243971=Copyright \u00a9 2005, 2006, Oracle. All rights reserved., 227965=The pipe (|) is equal to the logical OR operator. In addition, XPath recognizes the logical OR and AND, as well as the equality operators: <=, <, >, >=, ==, and !=. For example, we can find all CDs released in 1985 or later using the following expression:, 200620=2005-01-01T09:30:10-07:00, 243214=For more information on XSL-FO see the W3C Website at http://www.w3.org/2002/08/XSLFOsummary.html, 229441=You could also access all the CD tittles released in 1988 using the following:, 200655=The data after the \"T\" is optional, therefore the following date: 2005-01-01 can be formatted using either date formatting option. Note that if you do not include the time zone offset, the time will be formatted to the UTC time., 69826=Microsoft Word 2002/3 Users: These versions of Word have an option under Tools > Options, General tab to \"Automatically generate drawing canvas when inserting autoshapes\". Using this option removes the need to do the final grouping of the map and shapes. We can now generate a visually appealing output for our report as seen in the following figure:}",
+    "lastModified": "Thu, 29 Mar 2007 22:24:16 GMT",
+    "textBeforeTable": "The following table shows the entries made to complete the example. The Template Field Name is the display name from the template. The Default Text Entry is the value entered in the Default Text field of the Text Form Field Options dialog box (form field method only). The Placeholder Entry is the XML element tag name entered either in the Form Field Help Text field (form field method) or directly on the template. Complete the Example Select OK to apply. The Default text is displayed in the form field on your template. The figure below shows the Supplier field from the template with the added form field markup. In the help text entry field, enter the XML element's tag name using the syntax: <?XML element tag name?> You can enter multiple element tag names in the text entry field. In the example, the report field \"Supplier\" maps to the XML element VENDOR_NAME. In the Form Field Help Text field enter: <?VENDOR_NAME?> The following figure shows the Text Form Field Options dialog box and the Form Field Help Text dialog box with the appropriate entries for the Supplier field. Tip: For longer strings of BI Publisher syntax, use the Help Key (F1) tab instead of the Status Bar tab. The text entry field on the Help Key (F1) tab allows more characters.",
+    "textAfterTable": "Entered Amt 1000.00 <?ENT_AMT?> Accounted Amt 1000.00 <?ACCTD_AMT?> (Total of Entered Amt column) 1000.00 <?ENT_SUM_VENDOR?> (Total of Accounted Amt column) 1000.00 <?ACCTD_SUM_VENDOR?> The following figure shows the Payables Invoice Register with the completed form field placeholder markup. See the Payables Invoice Register with Completed Basic RTF Markup for the completed basic RTF markup. Defining Groups By defining a group, you are notifying BI Publisher that for each occurrence of an element, you want the included fields displayed. At runtime, BI Publisher will loop through the occurrences of the element and display the fields each time. In the example, for each occurrence of G_VENDOR_NAME in the XML file, we want the template to display its child elements VENDOR_NAME (Supplier Name), G_INVOICE_NUM (the Invoices group), Total Entered Amount, and Total Accounted Amount. And, for each occurrence of G_INVOICE_NUM (Invoices group), we want the template to display Invoice Number, Invoice Date, GL Date, Currency, Entered Amount, and Accounted Amount. To designate a group of repeating fields, insert the grouping tags around the elements to repeat. Insert the following tag before the first element: <?for-each:XML group element tag name?> Insert the following tag after the final element: <?end for-each?> Grouping scenarios Note that the group element must be a parent of",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

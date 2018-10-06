@@ -1,0 +1,58 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Sep 12, 2001",
+            "Jan 28, 2002",
+            "Jun 7, 2002",
+            "Aug 19, 2008",
+            "Jul 26, 2010",
+            "Sep 24, 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: SECURIFY, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:COOPER, GEOFFREY;SHERLOCK, KIERAN G.;SHAW, BOB;AND OTHERS;REEL/FRAME:012183/0948;SIGNING DATES FROM 20010808 TO 20010809",
+            "",
+            "",
+            "Year of fee payment: 4",
+            "Owner name: SECURE COMPUTING CORPORATION, CALIFORNIA Free format text: MERGER;ASSIGNOR:SECURIFY, INC.;REEL/FRAME:024733/0786 Effective date: 20081001 Owner name: SECURE COMPUTING, LLC, CALIFORNIA Free format text: CHANGE OF NAME;ASSIGNOR:SECURE COMPUTING CORPORATION;REEL/FRAME:024733/0792 Effective date: 20081120 Owner name: MCAFEE, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:SECURE COMPUTING, LLC;REEL/FRAME:024733/0803 Effective date: 20100521",
+            "Year of fee payment: 8"
+        ]
+    ],
+    "pageTitle": "Patent US6871284 - Credential/condition assertion verification optimization - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6871284?dq=7751826",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988511.77/warc/CC-MAIN-20150728002308-00186-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 472025711,
+    "recordOffset": 471946066,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6330=The preferred embodiment of the invention provides a link to network events detail information. In this example, a separate link 2206 builds a network events details page as shown in FIG. 23. FIG. 23 contains a table that may be sorted or reverse sorted by any of the columns displayed 2301 of all violating network events with such a rule/disposition pair that occurred in the chosen time period.}",
+    "TableContextTimeStampAfterTable": "{112601=The harvester can also be configured to read packet data and convert it to event data suitable for policy monitor 100. As an example, the harvester may be invoked as follows: harvester -i eth0 -c 1000 -enc qs.dme, 113073=The harvester can also be configured to read packet data, convert it to event data suitable for policy monitor 100, and stream such data directly to the policy monitor in real time. As an example, the harvester may be invoked as follows: harvester -i eth0 -c 1000 -enc 10.5.63.6:333, 112296=As an example, the harvester reads packets off the network when invoked as follows: harvester -i eth0 -c 1000 -dump qs.dmp, 140151=Using the Policy Generation Wizard, a user specifies a network security policy in terms of the network services provided by certain hosts to other hosts in the network. When such policy is processed, the wizard generates a formal and more detailed description of the network security policy using the policy language. The policy language specification may then be used to analyze network traffic using the policy monitor tool. The results of this analysis can be studied using the query tool. An exemplary policy language is taught in A Declarative Language for Specifying a Security Policy, patent application Ser. No. 09/479,781 filed on Jan. 7, 2000., 312177=The preferred embodiment of the invention comprises a technique for a policy engine internally to organize policy rules in order to effect an efficient evaluation of protocol events at runtime. Evaluation of a protocol event entails selecting one or more applicable policy rules using an evaluation algorithm. The preferred evaluation algorithm is described on pages 75 through 77 in A Declarative Language for Specifying a Security Policy, patent application Ser. No. 09/479,781 filed on Jan. 7, 2000. An excerpt describing the preferred evaluation algorithm is provided below in Table S., 112862=In this example, 1000 packets are read off the network interface labeled \u2018eth0\u2019, converted to event data suitable for policy monitor 100, and stored in the file \u2018qs.dme\u2019., 41147=This application is a Continuation-In-Part to U.S. Ser. No. 09/479,781 filed Jan. 7, 2000 now U.S. Pat. No. 6,779,120 and claims priority to U.S. Ser. No. 60/212,126 filed Jun. 16, 2000., 113404=In this example, 1000 packets are read off the network interface labeled \u2018eth0\u2019, converted to event data suitable for policy monitor 100, and transmitted in a TCP network stream to port 333 on the machine with IP address 10.5.63.6. This machine and TCP port may be configured so that the policy monitor 100 reads the data and processes it., 112460=In this example, 1000 packets are read from a network interface labeled \u2018eth0\u2019 and stored in file \u2018qs.dmp.\u2019, 54010=The policy definition language is described in A Declarative Language for Specifying A Security, U.S. patent application Ser. No. 09/479,781, (Jan. 7, 2000). The policy definition language is discussed herein to the extent necessary to explain such language to those skilled in the art in connection with the invention and the monitoring system disclosed herein. The declarative language system comprises a language as a tool for expressing network security policy in a formalized way. It allows the specification of security policy across a wide variety of networking layers and protocols. Using the language, a security administrator assigns a disposition to each and every network event that can occur in a data communications network. The event's disposition determines whether the event is allowed, i.e. conforms to the specified policy or disallowed and what action, if any, should be taken by a system monitor in response to that event. Possible actions include, for example, logging the information into a database, notifying a human operator, and disrupting the offending network traffic. Further details of the policy definition language can be found in the patent application cited herein above.}",
+    "textBeforeTable": "Patent Citations Although the invention has been described in detail with reference to particular preferred embodiments, persons possessing ordinary skill in the art to which this invention pertains will appreciate that various modifications and enhancements may be made without departing from the spirit and scope of the claims that follow. In the preferred embodiment of the invention, regardless of the time zone the user's or the policy monitoring systems runs on, such as, for example Universal Time Coordinates (UTC). Any time being displayed to the user, such as, for example, on a website or in contents of emails, is converted to the user's time zone and as such is explicitly displayed. In the preferred embodiment of the invention, each details page contains a button linking to a printer friendly version of the page. Context sensitive help per-page. The preferred embodiment of the invention provides links on each page that include, but are not limited to: 2701, respectively. FIG. 27 2601, and FIG. 26 2501, FIG. 25 2302, FIG. 23 2207, FIG. 22 The preferred embodiment provides links to descriptions of rules, dispositions, ip-addresses, and the like, displayed, for example in a pop up window whenever the user's cursor is over the respective field, as depicted in",
+    "textAfterTable": "Jul 25, 2006 Cisco Technology, Inc. Method and apparatus for determining enforcement security devices in a network topology US7162649 * Jun 30, 2000 Jan 9, 2007 Internet Security Systems, Inc. Method and apparatus for network assessment and authentication US7246101 * May 16, 2002 Jul 17, 2007 Hewlett-Packard Development Company, L.P. Knowledge-based system and method for reconstructing client web page accesses from captured network packets US7321969 * Apr 26, 2002 Jan 22, 2008 Entrust Limited Secure instant messaging system using instant messaging group policy certificates US7472114 Apr 27, 2004 Dec 30, 2008 Symantec Corporation Method and apparatus to define the scope of a search for information from a tabular data source US7526640 * Jun 30, 2003 Apr 28, 2009 Microsoft Corporation System and method for automatic negotiation of a security protocol US7526677 Oct 31, 2005 Apr 28, 2009 Microsoft Corporation Fragility handling US7533407 Apr",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

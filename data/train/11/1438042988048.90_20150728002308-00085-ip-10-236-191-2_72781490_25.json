@@ -1,0 +1,63 @@
+{
+    "relation": [
+        [
+            "User",
+            "guest_u",
+            "xguest_u",
+            "user_u",
+            "staff_u"
+        ],
+        [
+            "Domain",
+            "guest_t",
+            "xguest_t",
+            "user_t",
+            "staff_t"
+        ],
+        [
+            "X Window System",
+            "no",
+            "yes",
+            "yes",
+            "yes"
+        ],
+        [
+            "su and sudo",
+            "no",
+            "no",
+            "no",
+            "only sudo"
+        ],
+        [
+            "Execute in home directory and /tmp/",
+            "optional",
+            "optional",
+            "optional",
+            "optional"
+        ],
+        [
+            "Networking",
+            "no",
+            "only Firefox",
+            "yes",
+            "yes"
+        ]
+    ],
+    "pageTitle": "Security Guide",
+    "title": "",
+    "url": "http://docs.fedoraproject.org/en-US/Fedora/18/html-single/Security_Guide/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00085-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72993051,
+    "recordOffset": 72781490,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 27 Jul 2015 21:33:16 GMT",
+    "textBeforeTable": "Table\u00a09.1.\u00a0SELinux User Capabilities The following confined SELinux users are available in Fedora\u00a018: unconfined_t domain to its own confined domain, unconfined Linux users are still subject to the restrictions of that confined domain. The security benefit of this is that, even though a Linux user is running unconfined, the application remains confined, and therefore, the exploitation of a flaw in the application can be limited by policy. Note: this does not protect the system from the user. Instead, the user and the system are being protected from possible damage caused by a flaw in the application. Confined and unconfined Linux users are subject to executable and writeable memory checks, and are also restricted by MCS (and MLS, if the MLS policy is used). If unconfined Linux users execute an application that SELinux policy defines can transition from the /usr/sbin/userdel -r newuser command as the Linux root user to remove it, along with the Linux newuser's home directory. Log out of the Linux newuser's session, and log in with your account. If you do not want the Linux newuser user, run the unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 [newuser@localhost ~]$ id -Z id -Z command to view the context of a Linux user: Log out of your current session, and log in as the Linux newuser user. When you log in, pam_selinux maps the Linux user to an SELinux user (in this case, unconfined_u),",
+    "textAfterTable": "Linux users in the guest_t, xguest_t, and user_t domains can only run set user ID (setuid) applications if SELinux policy permits it (such as passwd). They can not run the su and /usr/bin/sudo setuid applications, and therefore, can not use these applications to become the Linux root user. Linux users in the guest_t domain have no network access, and can only log in via a terminal (including ssh; they can log in via ssh, but can not use ssh to connect to another system). The only network access Linux users in the xguest_t domain have is Firefox connecting to web pages. Linux users in the xguest_t, user_t and staff_t domains can log in via the X Window System and a terminal. By default, Linux users in the staff_t domain do not have permissions to execute applications with /usr/bin/sudo. These permissions must be configured by an administrator. By default, Linux users in the guest_t and xguest_t domains can not execute applications in their home directories or /tmp/, preventing them from executing applications (which inherit users' permissions) in directories they have write access to. This helps prevent flawed or malicious applications from modifying files",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 5,
+    "headerRowIndex": 0
+}

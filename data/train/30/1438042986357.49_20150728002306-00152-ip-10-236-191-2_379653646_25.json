@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Protocol",
+            "ATM",
+            "Frame Relay and Multilink Frame Relay",
+            "PPP and Multilink PPP",
+            "HDLC"
+        ],
+        [
+            "Platform",
+            "Cisco 7600",
+            "Cisco 7600",
+            "Cisco 7600",
+            "Cisco 7600"
+        ],
+        [
+            "12.2(33)SRA",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes"
+        ],
+        [
+            "12.2(33)SRB",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes"
+        ],
+        [
+            "12.2(33)SRC",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes"
+        ]
+    ],
+    "pageTitle": "High Availability Configuration Guide, Cisco IOS Release 12.2SY - Configuring Stateful Switchover [Cisco IOS Software Releases 12.2 SY] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ha/configuration/12-2sy/ha-12-2sy-book/ha_sso.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986357.49/warc/CC-MAIN-20150728002306-00152-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 379708831,
+    "recordOffset": 379653646,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{300174=In 12.0(24)S, support was added for the following line cards on the Cisco 12000 series Internet router:, 117313=Cisco 12000, 41776=Additionally, on the Cisco 10000 and 12000 series Internet routers, the line cards are not reset in RPR+ mode. This functionality provides a much faster switchover between the processors. Information synchronized to the standby RP includes running configuration information, startup information (Cisco 7304, Cisco 7500, Cisco 10000, and Cisco 12000 series networking devices), and changes to the chassis state such as online insertion and removal (OIR) of hardware. Line card, protocol, and application state information is not synchronized to the standby RP., 85988=For Cisco 7304, Cisco 10000, and Cisco 12000 series Internet routers that are configured to use SSO, online removal of the active RP automatically forces a stateful switchover to the standby RP., 174208=Router(config)# config-register 0x2102, 33646=On Cisco ASR 1000 series routers, SSO can also be used to enable a second Cisco software process on the same RP. This second Cisco IOS process acts as a standby process for the active Cisco software process, and also allows certain subpackages to be upgraded without experiencing any router downtime., 289183=SSO and RPR on the Cisco ASR 1000 series routers, 289324=Cisco ASR 1000 Series Aggregation Services Routers Software Configuration Guide, 300061=In 12.0(23)S, support was added for 1xGE and 3xGE line cards on the Cisco 12000 series Internet router., 65936=12000, 311284=In 12.2(28)S, support was added for the Cisco 12000 series Internet router., 228979=(Optional) For Cisco 12000 series Internet routers only. Resets and reloads the standby processor with the specified Cisco software image, and executes the image., 304849=In 12.0(26)S, support was added for the following line cards on the Cisco 12000 series Internet router:}",
+    "textBeforeTable": "Line Protocol Support in Cisco IOS Release 12.2SR Table 8 Yes Yes Cisco 10000 Yes Yes Cisco 7304 HDLC Yes Yes Cisco 10000 Yes Yes Cisco 7304 PPP and Multilink PPP Yes Yes Cisco 10000 Yes Yes Cisco 7304 Frame Relay and Multilink Frame Relay",
+    "textAfterTable": "Table 9 Line Protocol Support in Cisco IOS Release 12.2SX Protocol Platform 12.2(33)SXH ATM Cisco CAT6500 Yes Cisco 7600 Yes Frame Relay and Multilink Frame Relay Cisco CAT6500 Yes1 Cisco 7600 Yes PPP and Multilink PPP Cisco CAT6500 Yes Cisco 7600 Yes HDLC",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

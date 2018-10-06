@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "value_type",
+            "column_name",
+            "lob_operation_size"
+        ],
+        [
+            "Description",
+            "The type of value to set for the column. Currently, only new can be specified.",
+            "The name of the LOB column. An exception is raised if the column value does not exist in the LCR.",
+            "If lob_information for the LOB is or will be DBMS_LCR.LAST_LOB_CHUNK, then this parameter can be set to either a valid LOB ERASE value or a valid LOB TRIM value. A LOB ERASE value must be a positive integer less than or equal to DBMS_LOB.LOBMAXSIZE. A LOB TRIM value must be a nonnegative integer less than or equal to DBMS_LOB.LOBMAXSIZE. Otherwise, set to NULL."
+        ]
+    ],
+    "pageTitle": "Logical Change Record TYPEs",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B28359_01/appdev.111/b28419/t_lcr.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00184-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74511327,
+    "recordOffset": 74484361,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 09 Jul 2015 23:29:20 GMT",
+    "textBeforeTable": "Table 228-26 SET_LOB_OPERATION_SIZE Procedure Parameters Parameters lob_operation_size IN NUMBER); column_name IN VARCHAR2, value_type IN VARCHAR2, MEMBER PROCEDURE SET_LOB_OPERATION_SIZE(  Syntax Note: When you are processing a row LCR with a rule-based transformation, DML handler, or error handler, you cannot use this member procedure. Sets the operation size for the LOB column in the number of characters for CLOB columns and bytes for BLOB columns. SET_LOB_OPERATION_SIZE Member Procedure The LOB offset number. Valid values are NULL or a positive integer less than or equal to DBMS_LOB.LOBMAXSIZE. lob_offset The column name. An error is raised if the column value does not exist in the LCR. column_name The type of value to set for the column. Currently, only new can be specified. value_type Description Parameter Table 228-25 SET_LOB_OFFSET Procedure Parameters Parameters lob_offset IN NUMBER); column_name IN VARCHAR2, value_type IN VARCHAR2, MEMBER PROCEDURE SET_LOB_OFFSET(  Syntax Note:",
+    "textAfterTable": "SET_VALUE Member Procedure Overwrites the old or new value of the specified column. One reason to overwrite an old value for a column is to resolve an error that resulted from a conflict. Note: To add a column to a row LCR, run ADD_COLUMN. See Also: \"ADD_COLUMN Member Procedure\" Considerations for LOB Columns When processing a row LCR with LOB columns with a DML handler or error handler, and the handler is using LOB assembly (the assemble_lobs parameter is set to TRUE for the handler), you can use this member procedure in the handler procedure on a LOB column in a row LCR. If assemble_lobs is set to FALSE for the handler, then you cannot use this member procedure on a LOB column. To use a DML or error handler to set the value of a LOB column, specify the LOB locator for the column_value parameter in the member procedure. The SET_VALUE member procedure verifies that an ANYDATA encapsulated LOB locator is processed with a DML or error handler that is using LOB assembly. An error is raised under the following conditions: The handler attempts to enqueue a row LCR with an ANYDATA encapsulated LOB locator. An attempt is made to set a LOB column incorrectly. If an error is raised because of one of these conditions, then the transaction that includes",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

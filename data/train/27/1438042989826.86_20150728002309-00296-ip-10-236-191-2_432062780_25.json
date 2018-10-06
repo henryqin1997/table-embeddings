@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Patent application number",
+            "20090164469",
+            "20090165110",
+            "20090193493",
+            "20100205649",
+            "20140165139"
+        ],
+        [
+            "Description",
+            "ABDUCING ASSERTION TO SUPPORT ACCESS QUERY - Logical abduction is used to derive the premises that support an access query. In a logic-based access-control system, a query, as to one or more principals' right to access one or more resources, is a statement that can be either true or false. The statement evaluates to true if the principal is allowed to access the resource under the existing set of assertions. Assertions that, if made, would cause the statement to be true can be abduced from the query and from the policy against which the truth of the query is to be judged. The abduced assertions can be used to assist in making the appropriate assertions to cause the query to evaluate to true so that access to the resource can be granted.",
+            "DELEGATION IN LOGIC-BASED ACCESS CONTROL - Access to a resource may be controlled by a policy, such that a request to access the resource is either granted or denied based on what assertions have been made by various principals. To find the assertions that support a grant of access to the resource, a template may be created that defines the nature of assertions that would cause access to succeed. Assertions may be stored in the form of tokens. The template may be used to search an existing token store to find assertions that have been made, and/or to generate assertions that have not been found in the token store and that would satisfy the template. The assertions in the template may be created by performing an abductive reasoning process on an access query.",
+            "ACCESS POLICY ANALYSIS - Software tools assist an access-policy analyst or creator to debug and/or author access policies. An access request contains a query that evaluates to either true or false depending on whether access is to be allowed. Abduction may be used to generate assumptions that, if true, would cause the access request to be true. The tool may perform analysis on the generated assumptions, such as: comparing the assumptions with tokens to detect errors in the tokens or to suggest changes to the tokens that would cause the query to be satisfied, or comparing the assumptions to a meta-policy. The tool may allow an analysis, policy author, or other person to interactively walk through assumptions in order to see the implications of the access policy.",
+            "CREDENTIAL GATHERING WITH DEFERRED INSTANTIATION - Credentials may be gathered to support an access request. In one example, a template describes the credentials to be gathered. A set of credential providers may be consulted, in a particular sequence, to provide the credentials. Credentials may contain variables, and each credential provider may impose its own constraints on the values to be assigned to the variables. Instantiation of the variables may be deferred to a downstream credential provider, thereby allowing each credential provider to specify its constraints on the variables before specific values for the variables are chosen. In one example, an instantiation fact (or \u201cinst fact\u201d) is used to represent the deferred instantiation. A provider may use an inst fact to make its credentials conditional on the instantiation of the variables that the credential contains, where some downstream provider may attempt to instantiate the variables to specific values.",
+            "Security Language Translations with Logic Resolution - Security language constructs may be translated into logic language constructs and vice versa. Logic resolution may be effected using, for example, the logic language constructs. In an example implementation, translation of a security language assertion into at least one logic language rule is described. In another example implementation, translation of a proof graph reflecting a logic language into a proof graph reflecting a security language is described. In yet another example implementation, evaluation of a logic language program using a deterministic algorithm is described."
+        ],
+        [
+            "Published",
+            "06-25-2009",
+            "06-25-2009",
+            "07-30-2009",
+            "08-12-2010",
+            "06-12-2014"
+        ]
+    ],
+    "pageTitle": "Mackay, US - Patent applications",
+    "title": "",
+    "url": "http://www.faqs.org/patents/inventor/mackay-us-5/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989826.86/warc/CC-MAIN-20150728002309-00296-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 432087171,
+    "recordOffset": 432062780,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Jason F. Mackay, Redmond, WA US 06-21-2012 ANONYMOUS PRINCIPALS FOR POLICY LANGUAGES - Techniques to allow a security policy language to accommodate anonymous credentials are described. A policy statement in a security policy language can reference an anonymous credential. When the policy statement is evaluated to decide whether to grant access to a resource mediated by the policy statement, the anonymous credential is used. The policy language can be implemented to allow one anonymous credential to delegate access-granting rights to another anonymous credential. Furthermore, an anonymous credential can be re-randomized to avoid linkage between uses of the anonymous credential, which can compromise anonymity. 20120159577 Published Description Patent application number Jason Mackay, Sammamish, WA US 01-31-2013 MICROSCOPE STABILITY USING A SINGLE OPTICAL PATH AND IMAGE DETECTOR - Stabilization, via active-feedback positional drift-correction, of an optical microscope imaging system in up to 3-dimensions is achieved using the optical measurement path of an image sensor. Nanometer-scale stability of the imaging system is accomplished by correcting for positional drift using fiduciary references sparsely distributed within or in proximity to the experimental sample. 20130027518 Published Description Patent application number James F. Mackay, Madison, WI US 05-19-2011 PRODUCTION OF DISTILLATE FUELS FROM AN INTEGRATED MUNICIPAL SOLID WASTE/TRIGLYCERIDE CONVERSION PROCESS - A municipal solid waste material is converted to a refuse derived fuel then to syngas which is processed to produce",
+    "textAfterTable": "Patent applications by Jason F. Mackay, Redmond, WA US Jason Forrest Mackay, Sammamish, WA US Patent application number Description Published 20110296533 DYNAMIC ASSERTION PROVIDERS FOR LOGIC-BASED SECURITY POLICY LANGUAGES - Architecture that employs dynamic assertion providers in logic-based security policy languages. The dynamic assertion providers provide a mechanism by which data can be processed in an efficient, goal-directed manner. The application of dynamic assertion providers enables the inferencing over type hierarchies, including hierarchies of personally identifiable information and also for file systems which are hierarchal in nature. When searching for facts to bind against for a given subgoal, dynamic assertion providers are also queried. These objects follow an interface which can implement an arbitrary method to provide facts to the logic engine in a goal-directed, on-demand manner. Hierarchical types can be implemented using a hierarchy provider. 12-01-2011 Jeffrey S. Mackay, Las Vegas, NV US Patent application number Description Published 20080254947 EXERCISE TRAINING DEPICTING ENERGY FLOW - A method for the video display of exercises by an instructor, to a person performing the exercises, whereby digitized animation is utilized to depict energy flow in relation to the body to",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

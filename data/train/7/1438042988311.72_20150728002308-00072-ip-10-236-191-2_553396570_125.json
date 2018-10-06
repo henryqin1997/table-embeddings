@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "\u015eehir",
+            "Semt",
+            "M.Kare",
+            "Fiyat"
+        ],
+        [
+            ":",
+            ":",
+            ":",
+            ":"
+        ],
+        [
+            "Afyonkarahisar",
+            "ESENTEPE MAH.",
+            "100 m2",
+            "200,000 TL"
+        ]
+    ],
+    "pageTitle": "Kocatepe Emlak | Afyonkarahisar",
+    "title": "",
+    "url": "http://www.kocatepeemlak.com/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00072-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 553412548,
+    "recordOffset": 553396570,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Turkce \u00a0 Emlak Talepleriniz Yeni Emlak Ekle \u00a0 \u0130leti\u015fim Kaynaklar \u015eehir Tan\u0131t\u0131m\u0131 Sat\u0131\u015f Prosed\u00fcr\u00fc Hakk\u0131m\u0131zda Kiral\u0131klar Sat\u0131l\u0131klar",
+    "textAfterTable": "if (SpanName == 'PageImage') { document.getElementById(\"PageImageLoading\").style.display = 'block' document.getElementById(\"PageImage\").style.display = 'none' } document.getElementById(SpanName).innerHTML = \"Y\u00fckleniyor...\"; } */ if (xmlHttp.readyState==4) { if (xmlHttp.status == 200) { if (SpanName == 'PageImage') { document.getElementById(\"PageImageLoading\").style.display = 'block' document.getElementById(\"PageImage\").style.display = 'none' } document.getElementById(SpanName).innerHTML = xmlHttp.responseText; } } } function remove_loading() { document.getElementById(\"PageImageLoading\").style.display = 'none'; document.getElementById(\"PageImage\").style.display = 'block'; } function GetAjax(url, SpanName) { if (SpanName == 'ShowTownship') { url = url + document.getElementById(\"City\").value } if (SpanName == 'EstateShowTownship') { url = url + document.getElementById(\"EstateCity\").value } xmlHttp=GetXmlHttpObject() if (xmlHttp==null) { alert (\"Browseriniz AJAX desteklememektedir.\"); return; } //xmlHttp.onreadystatechange=stateChanged; xmlHttp.onreadystatechange=function(){stateChanged(SpanName);} xmlHttp.open(\"GET\",\"\"+url,true); xmlHttp.setRequestHeader(\"Content-type\", \"application/x-www-form-urlencoded; charset=utf-8\"); xmlHttp.send(null); }",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

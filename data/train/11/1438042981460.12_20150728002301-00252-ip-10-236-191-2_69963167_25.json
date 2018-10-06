@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "hdr",
+            "bucket"
+        ],
+        [
+            "Description",
+            "(Optional) Name of the HTTP request header used to communicate the distinguished name of the subject of the client\u2019s SSL/TLS certificate. The default value is Proxy-user-dn.",
+            "(Optional) Common to all obj.conf functions. Adds a bucket to monitor performance. For more information, see The bucket Parameter."
+        ]
+    ],
+    "pageTitle": "ObjectType (Sun Java System Web Server 7.0 Administrator's Configuration File Reference)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19146-01/819-2630/6n4thbivn/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00252-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 69979303,
+    "recordOffset": 69963167,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 26 Jan 2011 10:42:36 GMT",
+    "textBeforeTable": "block-auth-cert Parameter Table\u00a07\u201333 The following table describes parameter for the block-auth-cert function. Parameters The block-auth-cert function instructs the server not to forward the client\u2019s SSL/TLS certificate to remote servers. block-auth-cert set-variable match-browser In addition, the following common SAFs are valid for the ObjectType directive: type-j2ee type-by-extension type-by-exp ssl-client-config shtml-hacktype set-default-type set-cookie set-cache-control set-basic-auth http-client-config forward-via forward-user-dn forward-ssl-id forward-secret-keysize forward-proxy-auth forward-proxy-agent forward-keysize forward-jroute forward-issuer-dn forward-ip forward-cipher forward-cache-info forward-auth-cert force-type block-via block-user-dn block-ssl-id block-secret-keysize block-proxy-auth block-proxy-agent",
+    "textAfterTable": "ObjectType fn=\"block-auth-cert\" See Also forward-auth-cert block-cache-info The block-cache-info function instructs the server not to forward information about local cache hits to remote servers. Parameters The following table describes parameter for the block-cache-info function. Table\u00a07\u201334 block-cache-info Parameter Parameter\u00a0 Description\u00a0 bucket (Optional) Common to all obj.conf functions. Adds a bucket to monitor performance. For more information, see The bucket Parameter. Example ObjectType fn=\"block-cache-info\" See Also forward-cache-info block-cipher The block-cipher function instructs the server to forward the name of the client\u2019s SSL/TLS cipher suite to remote servers. Parameters The following table describes parameter for the block-cipher function. Table\u00a07\u201335 block-cipher Parameter Parameter\u00a0 Description\u00a0 bucket (Optional) Common to all obj.conf functions. Adds a bucket to monitor performance. For more information, see The bucket Parameter. Example ObjectType fn=\"block-cipher\" See Also",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

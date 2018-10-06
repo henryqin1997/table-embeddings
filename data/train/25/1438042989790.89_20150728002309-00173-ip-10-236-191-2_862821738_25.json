@@ -1,0 +1,47 @@
+{
+    "relation": [
+        [
+            "Name",
+            "WLS_BAM1",
+            "WLS_BAM2"
+        ],
+        [
+            "Listen Address",
+            "BAMHOST1VHN1",
+            "BAMHOST2 (BAM Server WLS_BAM2 does not use server migration)"
+        ],
+        [
+            "Listen Port",
+            "8001",
+            "8001"
+        ],
+        [
+            "SSL Listen Port",
+            "n/a",
+            "n/a"
+        ],
+        [
+            "SSL Enabled",
+            "No",
+            "No"
+        ]
+    ],
+    "pageTitle": "Configuring High Availability for Oracle SOA Suite",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E28280_01/core.1111/e10106/ha_soa.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00173-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 862982999,
+    "recordOffset": 862821738,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{242113=Section 5.13.21, \"Scaling the Topology\", 240802=Section 5.13.11, \"Extracting XEngine Files in the Second Node\", 241883=Section 5.13.19, \"Deploying Applications\", 531828=To start the Node Manager on SOAHOST2, OSBHOST1, and OSBHOST2, repeat the steps from Section 5.14.11.1, \"Starting Node Manager on SOAHOST1\" on those nodes., 291477=For information about configuring virtual IPs, see Section 12.2.3.5, \"Transforming the Administration Server for Cold Failover Cluster,\" where an example is provided for the Administration Server. Refer to Section 5.13.20, \"Configuring Server Migration for the WLS_SOA Servers\" for more details on configuring server migration for the SOA servers., 241326=Section 5.13.15, \"Configuring JMS Persistence Store as Shared Across the Servers\", 240649=Section 5.13.10, \"Propagating the Domain Configuration to SOAHOST2 with pack/unpack Utilities\", 424838=Section 5.14.19, \"Deploying Applications\", 240923=Section 5.13.12, \"Starting the System in SOAHOST2\", 633810=Section 5.15.18, \"Validating Access through Oracle HTTP Server\", 241466=Section 5.13.16, \"Configuring a Default Persistent Store for Transaction Recovery\", 563885=If a tablespace, schema multi data source, and data sources are already set up for SOA (as Section 5.14.20, \"Configuring Server Migration for the WLS_SOA Servers\" describes), then the OSB Cluster can reuse the existing leasing schema and data source and Step 1 and Step 2 below are not required. Instead, target the data sources and multi data sources created for SOA to the OSB Cluster., 241204=Section 5.13.14, \"Validating Access Through Oracle HTTP Server\", 241032=Section 5.13.13, \"Configuring Oracle HTTP Servers for the Administration Server and the WLS_SOAn Managed Servers\", 425068=Section 5.14.21, \"Configuring Server Migration for the WLS_OSB Servers\", 246855=Section 5.13.1.10, \"Installing Oracle HTTP Server on WEBHOST1 and WEBHOST2\", 425198=Section 5.14.22, \"Scaling the Topology\", 424457=Section 5.14.16, \"Validating Access Through Oracle HTTP Server\", 482007=For information about configuring virtual IPs, see Section 12.2.3.5, \"Transforming the Administration Server for Cold Failover Cluster,\" where an example is provided for the Administration Server. Refer to Section 5.14.20, \"Configuring Server Migration for the WLS_SOA Servers\" for more details on configuring server migration for the SOA servers., 424579=Section 5.14.17, \"Setting the Front End HTTP Host and Port\", 632970=Section 5.15.12, \"Propagating the Domain Configuration from BAMHOST1 with pack/unpack Utilities\", 633932=Section 5.15.19, \"Configuring Server Migration for the WLS_BAM Servers\", 424697=Section 5.14.18, \"Configuring a Default Persistent Store for Transaction Recovery\", 424938=Section 5.14.20, \"Configuring Server Migration for the WLS_SOA Servers\", 423738=Section 5.14.11, \"Starting the System in SOAHOST1\", 267033=Port: The port number for the database: 1521, 424024=Section 5.14.13, \"Extracting XEngine Files in the Second Node\", 424145=Section 5.14.14, \"Starting the System in SOAHOST2, OSBHOST1, and OSBHOST2\", 605681=For scaling out the SOA servers, see the steps in Section 5.13.21.2, \"Scaling Out the Topology (Adding Managed Servers to New Nodes).\", 632845=Section 5.15.11, \"Untargeting the BAM Server System from BAMHOST2\", 633638=Section 5.15.17, \"Configuring Oracle HTTP Servers for the Administration Server and the WLS_BAMn Managed Servers\", 424278=Section 5.14.15, \"Configuring Oracle HTTP Servers for the Administration Server, WLS_SOAn, and WLS_OSBn Managed Servers\", 423847=Section 5.14.12, \"Propagating the Domain Configuration to SOAHOST2, OSBHOST1, and OSBHOST2 with pack/unpack Utilities\", 423603=Section 5.14.10, \"Setting Connection Destination Identifiers for B2B Queues\", 632703=Section 5.15.10, \"Configuring a Default Persistence Store for Transaction Recovery\", 241607=Section 5.13.17, \"Setting the Front End HTTP Host and Port\", 241725=Section 5.13.18, \"Setting the WLS Cluster Address for Direct Binding/RMI Invocations to Composites\", 633357=Section 5.15.15, \"Configuring Oracle RAC Failover for the WLS_BAM Servers\", 430523=Section 5.14.1.10, \"Installing Oracle HTTP Server on WEBHOST1 and WEBHOST2\", 584097=For scaling up the SOA Servers, follow the steps in Section 5.13.21.1, \"Scaling Up the Topology (Adding Managed Servers to Existing Nodes).\", 368894=Do not specify the sub interface, such as eth0:1 or eth0:2. This interface is to be used without the :0 or :1. The Node Manager's scripts traverse the different:X enabled IPs to determine which to add or remove. For example, the valid values in Linux environments are eth0, eth1, or, eth2, eth3, ethn, depending on the number of interfaces configured., 286707=In the JDK Selection screen, select only Oracle JRockit 160_20_D1.0.1-2124 SDK, and click Next., 296293=JDK Selection: select Oracle JRockit 160_20_D1.0.1-2124 SDK., 241983=Section 5.13.20, \"Configuring Server Migration for the WLS_SOA Servers\", 633125=Section 5.15.13, \"Starting Node Manager on BAMHOST1 and BAMHOST2\", 633249=Section 5.15.14, \"Starting the Oracle BAM System\", 633490=Section 5.15.16, \"Configuring the BAM Web Applications to Use the BAM Server in BAMHOST1\", 570999=Do not specify the sub interface, such as eth0:1 or eth0:2. This interface is to be used without the :0, or :1. The Node Manager's scripts traverse the different :X enabled IPs to determine which to add or remove. For example, the valid values in Linux environments are eth0, eth1, or, eth2, eth3, ethn, depending on the number of interfaces configured., 726931=Do not specify the sub interface, such as eth0:1 or eth0:2. This interface is to be used without the:0 or :1. The Node Manager's scripts traverse the different :X enabled IPs to determine which to add or remove. For example, the valid values in Linux environments are eth0, eth1, or, eth2, eth3, ethn, depending on the number of interfaces configured.}",
+    "lastModified": "Wed, 14 Jan 2015 14:06:31 GMT",
+    "textBeforeTable": "Table 5-7 Configuring Managed Servers In the Configure Managed Servers screen, add the following managed servers: Verify that the UDD settings are UDD for UMSJMSSystemResource, SOAJMSModule, and BPMJMSModule. Click Next. SSL enabled: leave unchecked SSL listen port: N/A Listen Port: 7001 Listen Address: Enter the hostname for the VIP0 virtual IP Name: AdminServer In the Configure the Administration Server screen, enter the following values: Managed Servers, Clusters and Machines JMS Distributed Destinations Administration Server In the Select Optional Configuration screen, select the following: In the Test JDBC Data Sources screen, the connections are tested automatically. The Status column shows the results. Ensure that all connections were successful. If not, click Previous to correct your entries. Click Next when all the connections are successful. Click Next. Update each schema: select one data source at a time and add the appropriate details. Ensure that the information is entered for all schemas: SOA Infrastructure, User Messaging Service, OWSM MDS Schema, and SOA MDS Schema. For a multi data source, click Add. Enter details for Oracle RAC instances. Oracle recommends that you use SCAN addresses to specify the host and port for both",
+    "textAfterTable": "Do not delete any server that appears. You can modify the servers. If you delete a server and add a new one, targeting fails. Note: Although the standard recommendation is to run custom applications and other systems in a separate WebLogic Managed Server, the creation of the custom WLS managed servers described in Figure 5-41 is not addressed here. Click Next. In the Configure Clusters screen, add the following cluster: Name: SOA_Cluster Cluster Messaging Mode: unicast Multicast Address: N/A Multicast Port: N/A Cluster Address: Leave empty Click Next. In the Assign Servers to Clusters screen, assign the following servers to SOA_Cluster: WLS_SOA1 WLS_SOA2 Click Next. In the Configure Machines screen: Delete the LocalMachine that appears by default. Click the Unix Machine tab, and add the following machines: Table 5-8 Configuring Machines Name Node Manager Listen Address SOAHOST1 Hostname of SOAHOST1 SOAHOST2 Hostname of SOAHOST2",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

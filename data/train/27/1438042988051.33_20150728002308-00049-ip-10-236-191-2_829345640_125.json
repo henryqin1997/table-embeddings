@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "id",
+            "appl-type"
+        ],
+        [
+            "Datatype",
+            "ID",
+            "string (default)"
+        ],
+        [
+            "Required",
+            "no (default)",
+            "no (default)"
+        ],
+        [
+            "Values",
+            "",
+            ""
+        ],
+        [
+            "Default",
+            "",
+            ""
+        ],
+        [
+            "Comments",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "SchemaDOC wo-notification-v1-2.dtd",
+    "title": "",
+    "url": "http://www.wipo.int/pct-safe/epct/schemaDocs/1.8/wo-notification-v1-2_dtd/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988051.33/warc/CC-MAIN-20150728002308-00049-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 829372763,
+    "recordOffset": 829345640,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 27 Jul 2009 09:18:53 GMT",
+    "textBeforeTable": "application-reference, effective-date, notify-office, parties, signatories, wo-notification-doc uses lang, dtd-version, file, status, id, country, file-reference-id attributes ******************************************************************************** * wo-notification v1.2 2009 JULY * ******************************************************************************** * PUBLIC \"-//WIPO//DTD WO NOTIFICATION 1.2//EN\" \"wo-notification-v1-2.dtd\" * ******************************************************************************** * http://www.wipo.int/pct-safe/epct/schemaDocs/1.8/wo-notification-v1-2.dtd * ******************************************************************************** * contacts: * * WIPO: Michio Okamoto; michio.okamoto@wipo.int * ******************************************************************************** * revision history * ******************************************************************************** MO: 01/07/08 incorporated changes from PFCs: ..changed version number from v1.1 to v1.2 ..added attribute 'email-purpose' to email (PFC08/006) MO: 01/01/07 incorporated changes from PFCs: ..changed version number from v1.0 to v1.1 ..added element 'sup' to u (PFC06/003) ..added element 'sup' to i (PFC06/003) ..added element 'sup' to b (PFC06/003) ..added element 'sub' to u (PFC06/003) ..added element 'sub' to i (PFC06/003) ..added element 'sub' to b (PFC06/003) ..added element 'o' to invention-title, b, i, sup, sup2, sub, sub2, heading, claim-text, p, small-caps, dt, dd, li, crossref, figref, othercit, statement (PFC06/003) January 2005 ..released version number as v1.0 ******************************************************************************** Attributes for notification: lang = language of application - use ISO639 language code dtd-version = dtd version number file = filename of the whole application id = unique id for this application - could be file name status =",
+    "textAfterTable": "Attribute Datatype Required Values Default Comments lang string (default) Yes \u00a0 \u00a0 \u00a0 dtd-version string (default) no (default) \u00a0 \u00a0 \u00a0 file string (default) no (default) \u00a0 \u00a0 \u00a0 status string (default) no (default) \u00a0 \u00a0 \u00a0",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "Command",
+            "control-packets",
+            "mac-address",
+            "nas-port-id",
+            "pado",
+            "pppoe",
+            "service",
+            "service name match",
+            "sessions",
+            "tag",
+            "vendor-tag",
+            "virtual-template"
+        ],
+        [
+            "Description",
+            "Sets the 802.1P priority bits in 802.1Q frames containing PPPoE control packets.",
+            "Modifies the default MAC address of an interface to a user-defined address.",
+            "Specifies a format for broadband subscriber access line identification coding that complies with a specific set of defined requirements.",
+            "Configures PADO delay options.",
+            "Configures PPPoE server selection.",
+            "Associates services with this group.",
+            "Forces the PPPoE server to match the service name received in the PADI message from the PPPoE client to a PPPoE service profile from the policy map type service list.",
+            "Configures the PPPoE global profile with the maximum number of PPPoE sessions that will be permitted on a router and sets the PPPoE session-count threshold at which a SNMP trap will be generated.",
+            "Configures processing options for a tag.",
+            "Sets the PPPoE vendor-specific tag.",
+            "Configures a PPPoE profile with a virtual template to be used for cloning virtual access interfaces."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Broadband Access Aggregation and DSL Command Reference - ac name through logging rate-limit [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/bbdsl/command/bba-cr-book/bba-a1.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988312.76/warc/CC-MAIN-20150728002308-00124-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 361868251,
+    "recordOffset": 361802492,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{733=This command was implemented on the Cisco ASR 1000 series routers.}",
+    "TableContextTimeStampAfterTable": "{317498=This command was integrated into the Cisco IOS Release 12.3(4)XG on the Cisco 1700 series routers., 51131=Multiplier value that provides a scaling factor for determining total load. Valid values are from 1 to 1000, and the default is 100., 319433=This command was implemented on Cisco 1800 series routers., 348028=When a host (usually a PC) initiates a TCP session with a server, the host negotiates the IP segment size by using the MSS option field in the TCP SYN packet. The value of the MSS field is determined by the maximum transmission unit (MTU) configuration on the host. The default MSS size is 1460 bytes, when the default MTU of the containing IP datagram is 1500 bytes., 7229=This command was implemented on Cisco ASR 1000 series routers., 255578=The following example shows how to configure DSL ATM interface 0/1 to operate at a line rate of 1040 kbps., 301163=This command was introduced on the Cisco 1700 series routers., 302177=This command was integrated into Cisco IOS Release 12.2(8)T on the G.SHDSL WIC on the Cisco 2600 series and Cisco 3600 series routers., 34354=This command was integrated. This command is supported on ASR 1000 series., 343822=Maximum segment size, in bytes. The range is from 500 to 1460., 1282=On the Cisco 1000 series routers, if the number of rules is smaller than the largest similar Attribute 242 ACL, the processing of this new setting can use up substantial CPU resources because ACLs that previously would be considered as template ACL duplicates are instead compiled using TurboACL compilation without regard to other ACLs already in the router. If the ACLs have fewer than eight rules, the CPU increase will not be so noticeable, because ACLs will be compiled as MiniACLs., 18626=The ipv6 keyword was added to support RBE of IPv6 packets as specified in RFC 1483., 348418=The PPP over Ethernet (PPPoE) standard supports an MTU of only 1492 bytes. The disparity between the host and PPPoE MTU size can cause the router in between the host and the server to drop 1500-byte packets and terminate TCP sessions over the PPPoE network. Even if path MTU (which detects the correct MTU across the path) is enabled on the host, sessions may be dropped because system administrators sometimes disable the Internet Control Message Protocol (ICMP) error messages that must be relayed from the host for path MTU to work., 350759=ip mtu 1492, 19343=This command was introduced on Cisco ASR 1000 Series Routers., 349452=In most cases, the optimum value for the max-segment-size argument is 1452 bytes. This value and the 20-byte IP header, the 20-byte TCP header, and the 8-byte PPPoE header add up to a 1500-byte IP datagram that matches the MTU size of the Ethernet link., 19748=Use this command to configure RBE on an ATM interface. The atm route-bridgedcommand can also be used to integrate RBE with quality of service (QoS) features on the Cisco 800 and 1700 series routers., 231563=This command was integrated into Cisco IOS Release 12.2(8)T on the G.SHDSL WAN interface card (WIC) on the Cisco 2600 series and Cisco 3600 series routers., 318201=Support for the following additional annex parameters was integrated into Cisco IOS Release 12.3(11)T to support Cisco 1700, Cisco 2600, Cisco 2800, Cisco 3700, and Cisco 3800 series routers:, 231212=This command was integrated into Cisco IOS Release 12.2(4)XL on the G.SHDSL WIC on the Cisco 2600 series routers., 317836=This command was integrated into Cisco IOS Release 12.3(7)T on Cisco 2600 series, Cisco 3631, and Cisco 3700 series routers., 319732=Support for the following additional annex parameters was integrated into Cisco IOS Release 12.X(X)T to support Cisco to support Cisco 1700, Cisco 2600, Cisco 2800, Cisco 3700, and Cisco 3800 series routers:, 317178=This command was introduced on Cisco 2600 series and Cisco 3700 series routers., 168537=This command was introduced for the Cisco HWIC-4SHDSL and HWIC-2SHDSL running on the Cisco 1841 router, and on the Cisco 2800 and 3800 series access routers., 168238=This command was implemented on Cisco IAD2420 series IADs., 251318=Line rate, in kilobits per second, for the DSL ATM interface. Allowable entries are 72, 136, 200, 264, 392, 520, 776, 1032, 1160, 1544, 2056, and 2312., 254633=This command was integrated into Cisco IOS Release 12.2(8)T on the G.SHDSL WIC on the Cisco 2600 series and Cisco 3600 series routers., 166842=Cisco IAD2420 Series, 1215=Cisco 1000 Series Routers, 301465=This command was integrated into Cisco IOS Release 12.2(2)T for the Cisco 1700 series routers., 350419=ip tcp adjust-mss 1452, 301801=This command was integrated into Cisco IOS Release 12.2(4)XL for the G.SHDSL WAN interface card (WIC) on the Cisco 2600 series routers.}",
+    "textBeforeTable": "Syntax Description [number-of-rules] template access-list no [number-of-rules] template access-list To enable template access control list (ACL) processing (as defined by the Template ACL feature), use the access-list template command in global configuration mode. To disable template ACL processing, use the no form of this command. access-list template limit pado service-name logging rate-limit ip tcp adjust-mss ip mpf ip http digest algorithm dsl-mode shdsl symmetric annex dsl power-cutback dsl operating-mode gshdsl dsl operating-mode (ADSL over ISDN) dsl operating-mode dsl noise-margin dsl max-tone-bits dsl lom dsl linerate dsl gain-setting tx-offset dsl gain-setting rx-offset dsl equipment-type dsl enable-training-log dialer-list protocol dialer-group cwmp wan default cwmp wan cwmp agent controller shdsl control-packets vlan cos connection request password connection request username clear pppoe statistics clear pppoe relay context clear pppoe derived clear pppoe clear pppatm statistics",
+    "textAfterTable": "Usage Guidelines Reducing the number of rules for template ACL status can lower CPU utilization. Checking each ACL against other known ACLs in the system is easier if the matching task can be aborted earlier. Note Changes in CPU utilization occur only during session initialization. Steady-state CPU utilization is unaffected by these changes in ACL processing. If template ACL processing is disabled, the system replaces all existing template ACL instances with ACLs. Therefore, before you disable the feature, you must ensure that the number of template ACLs does not exceed the system capabilities. If template ACL processing is enabled, the system scans and evaluates all configured per-session ACLs, and then creates all required template ACLs. Default Settings If the number-of-rules argument is specified for the no version of the command, the default of 100 will be used, and only ACLs with 100 or fewer rules will be considered for template status. Cisco 1000 Series Routers On the Cisco 1000 series routers, if the number of rules is smaller than the largest similar Attribute 242 ACL, the processing of this new setting can use up substantial CPU resources because ACLs that previously would be considered as template ACL duplicates are instead compiled using TurboACL compilation without regard to other ACLs already in the router.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

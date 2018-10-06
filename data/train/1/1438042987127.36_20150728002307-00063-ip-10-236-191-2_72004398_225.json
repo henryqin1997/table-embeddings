@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Token Type",
+            "Username",
+            "SAML 1.1 or SAML 2.0",
+            "X.509",
+            "Kerberos"
+        ],
+        [
+            "Description",
+            "The validation template will be created with the following default values: Timestamp Lifespan: 600 seconds Enable Credential Validation: true Validation Source: Partner Token Mapping: Map token to Partner Enable Simple Partner Mapping: true Partner Datastore Attribute: username",
+            "The validation template will be created with the following default values: Authentication Timeout: 3600 seconds Timestamp Lifespan: 3600 seconds The Token Mapping section will be created with the following default values: Map token: Map token to Partner Enable Simple User Mapping: false Enable User NameID Mapping: false Enable Attribute Based User Mapping: false Enable Simple Partner Mapping: false Enable Partner NameID Mapping: false Empty fields: User Token Attribute, User Datastore Attribute and Attribute Based User Mapping Also: Partner Token Attribute: NameID Partner Datastore Attribute: username Partner NameID Mapping table will be provisioned with the following entries as NameID format, but without any data in the datastore column: urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos urn:oasis:names:tc:SAML:2.0:nameid-format:persistent User NameID Mapping table will be provisioned with the following entries as NameID format: urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName, empty datastore column urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName, dn set in the datastore column urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress, mail set in the datastore column urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified, empty datastore column urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos, empty datastore column urn:oasis:names:tc:SAML:2.0:nameid-format:persistent, empty datastore column",
+            "The Token Mapping section will be created with the following default values: Map token: Map token to Partner Enable Simple User Mapping: false Enable Attribute Based User Mapping: false Enable Simple Partner Mapping: true Empty fields: User Token Attribute, User Datastore Attribute and Attribute Based User Mapping Also: Partner Token Attribute: DN Partner Datastore Attribute: sslclientcertdn",
+            "The Token Mapping section will be created with the following default values: Map token: Map token to User Enable Simple User Mapping: true Enable Attribute Based User Mapping: false Enable Simple Partner Mapping: false Empty fields: Partner Token Attribute, Partner Datastore Attribute and Attribute Based User Mapping Also: User Token Attribute: TPE_KERBEROS_PRINCIPAL_FULL User Datastore Attribute: mail"
+        ]
+    ],
+    "pageTitle": "Infrastructure Security Custom WLST Commands - 11g Release 1 (10.3.6)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E25178_01/web.1111/e13813/custom_infra_security.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 225,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987127.36/warc/CC-MAIN-20150728002307-00063-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72094331,
+    "recordOffset": 72004398,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{243890=The following command deletes the engine with ID id1234., 63668=The following command adds a self-signed certificate with DN cn=www.acme.com, key size 1024 to wallet1, for Oracle Internet Directory instance oid1, in application server instance inst1:, 117395=The following command generates a key pair with DN cn=www.acme.com, key size 1024, algorithm RSA and alias mykey in keys.jks, for Oracle Virtual Directory instance ovd1 in application server instance inst1:, 241513=The following command deletes the authentication engine with ID id1234., 646257=cacheTimeOut\u2014Amount of time cached information remains in the OAM Agent cache when the information is neither used nor referenced. Default = 1800 (seconds)., 882576=HOK Symmetric Key Generation Algorithm: http://www.w3.org/2001/04/xmlenc#aes128-cbc, 59210=The following command generates a certificate signing request with DN cn=www.acme.com and key size 1024 in wallet1, for Oracle Internet Directory instance oid1, in application server instance inst1:, 717827=cacheTimeout\u2014Amount of time cached information remains in the OAM Agent cache when the information is neither used nor referenced. Default = 1800 (seconds).}",
+    "lastModified": "Thu, 20 Sep 2012 17:34:53 GMT",
+    "textBeforeTable": "Table 4-13 Default Configuration: createWSSValidationTemplate The WSS validation template is created with the values in Table 4-13, depending on the token type. Creates a new validation template with default configuration data, and displays the result of the operation. Description Online command that creates a new validation template with default configuration data. createWSSValidationTemplate getValidationTemplate(validationTemplateId=\"custom-wss-validtemp\") The following invocation retrieves the configuration data of a specific validation template, and displays the content of the template. Example       Specifies the name of the existing validation template. validationTemplateId     Definition Argument         getValidationTemplate(validationTemplateId) Syntax      Retrieves the configuration data of the validation template referenced by the validationTemplateId parameter, and displays the content of the template. Description",
+    "textAfterTable": "Syntax createWSSValidationTemplate(templateId, tokenType, defaultRequesterPPID, description) Argument Definition templateId Specifies the name of the name of the validation template to be created. tokenType Specifies the token type of the validation template. Possible values can be: username: indicates that the token type is UsernameToken saml11: indicates that the token type is a SAML 1.1 Assertion saml20: indicates that the token type is a SAML 2.0 Assertion x509: indicates that the token type is an X.509 certificate kerberos: indicates that the token type is a Kerberos token oam: indicates that the token type is OAM defaultRequesterPPID Specifies the Requester partner profile to use if OSTS is configured not to map the incoming message to a requester. description",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

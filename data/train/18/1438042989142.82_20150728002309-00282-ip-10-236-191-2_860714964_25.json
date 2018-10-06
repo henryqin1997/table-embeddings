@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "",
+            "32",
+            "33",
+            "34",
+            "35",
+            "",
+            "36",
+            "37",
+            "38"
+        ],
+        [
+            "",
+            "32",
+            "33",
+            "34",
+            "",
+            "35",
+            "36",
+            "37",
+            "38"
+        ],
+        [
+            "",
+            "}",
+            "if ( false !== strpos($location, 'upload.php') ) {",
+            "$location = remove_query_arg('message', $location);",
+            "$location = add_query_arg('posted', $attachment_id, $location);",
+            "$location = add_query_arg('posted', $attachment_id, $location);",
+            "} elseif ( false !== strpos($location, 'media.php') ) {",
+            "$location = add_query_arg('message', 'updated', $location);",
+            "}"
+        ]
+    ],
+    "pageTitle": "slashesanity-20121003.diff on Ticket #21767 \u2013 Attachment \u2013 WordPress Trac",
+    "title": "",
+    "url": "https://core.trac.wordpress.org/attachment/ticket/21767/slashesanity-20121003.diff",
+    "hasHeader": true,
+    "headerPosition": "FIRST_COLUMN",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989142.82/warc/CC-MAIN-20150728002309-00282-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 860750495,
+    "recordOffset": 860714964,
+    "tableOrientation": "VERTICAL",
+    "textBeforeTable": "wp-comments-post.php File slashesanity-20121003.diff, 51.7 KB (added by alexkingorg, 3 years ago) Ticket #21767: slashesanity-20121003.diff Back to Ticket #21767 Context Navigation Notifications Login Search: Create a New Ticket Trac Timeline Browse Source Components Tickets Handbook Blog Make WordPress Core Download WordPress Hosting Blog About Get Involved Documentation Forums Support Mobile",
+    "textAfterTable": "$comment_author_email = ( isset($_POST['email']) )\u00a0 \u00a0? trim( stripslashes($_POST['email'])) : null;\u00a0 \u00a0 52 $comment_author_url\u00a0 \u00a0= ( isset($_POST['url']) )\u00a0 \u00a0 \u00a0? trim( stripslashes($_POST['url'])) : null;\u00a0 \u00a0 53 $comment_content\u00a0 \u00a0 \u00a0 = ( isset($_POST['comment']) ) ? trim( stripslashes($_POST['comment'])) : null;\u00a0 54 54 \u00a0 55 55 // If the user is logged in\u00a0 56 56 $user = wp_get_current_user();\u00a0 wp-includes/default-filters.php \u00a0 14 14 \u00a0 15 15 // Strip, trim, kses, special chars for string saves\u00a0 16 16 foreach ( array( 'pre_term_name', 'pre_comment_author_name', 'pre_link_name', 'pre_link_target', 'pre_link_rel', 'pre_user_display_name', 'pre_user_first_name', 'pre_user_last_name', 'pre_user_nickname' ) as $filter ) {\u00a0 17 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 add_filter( $filter, 'sanitize_text_field' \u00a0);\u00a0 18 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 add_filter( $filter, 'wp_ filter_kses'\u00a0 \u00a0 \u00a0 );\u00a0 \u00a0 17 \u00a0 \u00a0 \u00a0 \u00a0 add_filter( $filter, 'sanitize_text_field' );\u00a0 \u00a0 18 \u00a0 \u00a0 \u00a0 \u00a0 add_filter( $filter, 'wp_ kses_data' );\u00a0 19 19 \u00a0 \u00a0 \u00a0 \u00a0 add_filter( $filter, '_wp_specialchars', 30 );\u00a0 20 20 }\u00a0 21 21 \u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

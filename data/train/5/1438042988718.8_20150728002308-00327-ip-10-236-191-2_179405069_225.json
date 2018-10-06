@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Field Name",
+            "LinkForm",
+            "PlacedResolutionUnit",
+            "PlacedXResolution",
+            "PlacedYResolution",
+            "Reference"
+        ],
+        [
+            "Writable",
+            "string",
+            "string",
+            "real",
+            "real",
+            "ResourceRef"
+        ],
+        [
+            "Values / Notes",
+            "",
+            "",
+            "",
+            "",
+            "--> ResourceRef Struct"
+        ]
+    ],
+    "pageTitle": "XMP Tags",
+    "title": "",
+    "url": "http://owl.phy.queensu.ca/~phil/exiftool/TagNames/XMP.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 225,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00327-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 179434523,
+    "recordOffset": 179405069,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{16890=Adobe-defined auxiliary EXIF tags. This namespace existed in the XMP specification until it was dropped in 2012, presumably due to the introduction of the EXIF 2.3 for XMP specification and the exifEX namespace at this time. For this reason, tags below with equivalents in the exifEX namespace are avoided when writing.}",
+    "lastModified": "Mon, 29 Jun 2015 11:25:58 GMT",
+    "textBeforeTable": "The tables below list tags from the official XMP specification (with an underlined Namespace in the HTML version of this documentation), as well as extensions from various other sources. See http://www.adobe.com/devnet/xmp/ for the official XMP specification. ExifTool will extract XMP information even if it is not listed in these tables, but other tags are not writable unless added as user-defined tags in the ExifTool config file. For example, the pdfx namespace doesn't have a predefined set of tag names because it is used to store application-defined PDF information, so although this information will be extracted, it is only writable if the corresponding user-defined tags have been created. For structures, the heading of the first column is Field Name. Field names are very similar to tag names, except they are used to identify fields inside structures instead of stand-alone tags. See the Field Name section of the Structured Information documentation for more details. The XMP tags are organized according to schema Namespace in the following tables. Note that a few of the longer namespace prefixes given below have been shortened for convenience (since the family 1 group names are derived from these by adding a leading \"XMP-\"). In cases where a tag name exists in more than one namespace, less common namespaces are avoided when writing. However, any namespace may be written by specifying a family 1 group name for the tag, eg) XMP-exif:Contrast or XMP-crs:Contrast. When deciding on which tags",
+    "textAfterTable": "cc - --> XMP cc Tags cell - --> XMP cell Tags creatorAtom - --> XMP creatorAtom Tags crs - --> XMP crs Tags dc - --> XMP dc Tags dex - --> XMP dex Tags DICOM - --> XMP DICOM Tags digiKam - --> XMP digiKam Tags dwc - --> DarwinCore Tags exif - --> XMP exif Tags exifEX - --> XMP exifEX Tags expressionmedia - --> XMP ExpressionMedia Tags extensis - --> XMP extensis Tags fpv - --> XMP fpv Tags getty - --> XMP GettyImages Tags GPano - --> XMP GPano Tags ics - --> XMP ics Tags iptcCore - --> XMP iptcCore Tags iptcExt - --> XMP iptcExt Tags lr - --> XMP Lightroom Tags mediapro - --> XMP MediaPro Tags microsoft - --> Microsoft XMP Tags MP - --> Microsoft MP Tags MP1 - --> Microsoft MP1 Tags",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

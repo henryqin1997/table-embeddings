@@ -1,0 +1,166 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2012-13",
+            "2013-14",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "SAN",
+            "SAN",
+            ""
+        ],
+        [
+            "GP",
+            "5",
+            "2",
+            "7"
+        ],
+        [
+            "GS",
+            "5",
+            "2",
+            "7"
+        ],
+        [
+            "Min",
+            "34.0",
+            "32.7",
+            "33.6"
+        ],
+        [
+            "FGM",
+            "8.20",
+            "5.00",
+            "7.29"
+        ],
+        [
+            "FGA",
+            "16.80",
+            "17.00",
+            "16.86"
+        ],
+        [
+            "FG%",
+            ".488",
+            ".294",
+            ".432"
+        ],
+        [
+            "3FGM",
+            "2.20",
+            "1.50",
+            "2.00"
+        ],
+        [
+            "3FGA",
+            "5.40",
+            "9.50",
+            "6.57"
+        ],
+        [
+            "3P%",
+            ".407",
+            ".158",
+            ".304"
+        ],
+        [
+            "FTM",
+            "3.00",
+            "7.50",
+            "4.29"
+        ],
+        [
+            "FTA",
+            "4.00",
+            "8.50",
+            "5.29"
+        ],
+        [
+            "FT%",
+            ".750",
+            ".882",
+            ".811"
+        ],
+        [
+            "FIC",
+            "16.55",
+            "10.19",
+            "14.73"
+        ],
+        [
+            "OFF",
+            "1.40",
+            "0.50",
+            "1.14"
+        ],
+        [
+            "DEF",
+            "6.20",
+            "3.50",
+            "5.43"
+        ],
+        [
+            "Reb",
+            "7.60",
+            "4.00",
+            "6.57"
+        ],
+        [
+            "Ast",
+            "2.80",
+            "3.50",
+            "3.00"
+        ],
+        [
+            "Stl",
+            "4.40",
+            "2.00",
+            "3.71"
+        ],
+        [
+            "Blk",
+            "1.00",
+            "1.00",
+            "1.00"
+        ],
+        [
+            "PF",
+            "3.20",
+            "3.00",
+            "3.14"
+        ],
+        [
+            "TO",
+            "3.60",
+            "1.00",
+            "2.86"
+        ],
+        [
+            "Pts",
+            "21.60",
+            "19.00",
+            "20.86"
+        ]
+    ],
+    "pageTitle": "Kent Bazemore Player Profile, Atlanta Hawks, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, Events Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Kent-Bazemore/Summary/18858",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00294-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 25771523,
+    "recordOffset": 25737293,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{8275=Free Agent: UFA-2016, 8113=Draft Entry: 2012 NBA Draft, 9229=Born: Jul 1, 1989 (26 years old)}",
+    "TableContextTimeStampAfterTable": "{123297=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 3 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "23 15 28.0 4.83 10.70 .451 1.43 3.87 .371 2.04 3.17 .644 7.70 0.22 3.13 3.35 3.09 1.35 0.30 2.61 2.22 13.13 2014-15 ATL 75 10 17.6 1.88 4.41 .426 0.64 1.76 .364 0.80 1.33 .600 4.03 0.28 2.68 2.96 1.04 0.69 0.44 1.69 0.97 5.20 CAREER \u00a0 203 25 12.3 1.63 3.89 .419 0.50 1.45 .344 0.75 1.25 .605 2.78 0.18 1.60 1.78 0.94 0.55 0.25 1.26 0.84 4.51 NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2012-13 GOS 61 0 266.8 43 116 .371 10 34 .294 27 44 .614 49 5 17 22 22 17 4 27 18 123 2013-14 * All Teams 67 15 911.2 147 343 .429 43 128 .336 66 109 .606 212 10 107 117 91 43 13 102 79 403 2013-14 * GOS 44 0 267.8 36 97 .371 10 39 .256 19 36 .528 35 5 35 40 20 12 6 42 28 101",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

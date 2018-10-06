@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Order",
+            "1",
+            "2"
+        ],
+        [
+            "String",
+            "\"\u00e1e\"",
+            "\"A\u00e9\""
+        ],
+        [
+            "Normalized",
+            "a, acute, e",
+            "A, e, acute"
+        ],
+        [
+            "Sort Key",
+            "a1 e1 0000 acute2 0000 a3 acute3 e3...",
+            "a1 e1 0000 acute2 0000 A3 acute3 e3..."
+        ]
+    ],
+    "pageTitle": "UTS #10: Unicode Collation Algorithm",
+    "title": "",
+    "url": "http://www.unicode.org/reports/tr10/tr10-29.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00242-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 809041887,
+    "recordOffset": 808966749,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{270372=Copyright \u00a9 1998-2014 Unicode, Inc. All Rights Reserved. The Unicode Consortium makes no expressed or implied warranty of any kind, and assumes no liability for errors or omissions. No liability is assumed for incidental and consequential damages in connection with or arising out of the use of the information or programs contained or accompanying this technical report. The Unicode Terms of Use apply., 134489=For example, the Java collation implementation only stored 8-bit quantities in level 2 and level 3. However, characters can be given L2 or L3 weights with greater values by using a series of two collation elements. For example, if characters require 2,000 weights at L2, then 248 characters can be given single keys, while 1,752 (2000 - 248) can be given two collation keys of the form [.yyyy.00zz.00ww] [.0000.00nn.0001]., 66272=In this example, the collation element [.15D5.0020.0004] gives the primary weight for a, and the collation element [.1632.0020.0004] gives the primary weight for e., 150164=To derive the collation elements, the value of the code point is used to calculate two numbers, by bit shifting and bit masking. The bit operations are chosen so that the resultant numbers have the desired ranges for constructing implicit weights. The first number is calculated by taking the code point expressed as a 32-bit binary integer CP and bit shifting it right by 15 bits. Because code points range from U+0000 to U+10FFFF, the result will be a number in the range 0 to 2116 (= 3310). This number is then added to the special value BASE.}",
+    "lastModified": "Sat, 24 May 2014 00:46:58 GMT",
+    "textBeforeTable": "The following list shows several simple mappings that are used in the examples illustrating the algorithm. Most of the mappings in a collation element table are simple: they consist of the mapping of a single character to a single collation element. 3.2 Simple Mappings D9. A contraction maps a sequence of Unicode characters to a sequence of (one or more) collation elements. D8. An expansion maps one Unicode character to a sequence of collation elements. D7. A simple mapping maps one Unicode character to one collation element. There are three kinds of collation element mappings used in the discussion below. These are defined as follows: For a given Collation Element Table, MINn is the least weight in any collation element at level n, and MAXn is the maximum weight in any collation element at level n. It may be a secondary, tertiary, quaternary, or completely ignorable collation element. If the UCA is extended to more levels, then an ignorable collation element includes those ignorable at those levels. D6. An ignorable collation element is ignorable at Level 1. D5. A\u00a0completely\u00a0ignorable\u00a0collation element\u00a0is\u00a0ignorable\u00a0at all levels (except the identical level). This is also known as a\u00a0Level 3 ignorable\u00a0or a\u00a0tertiary\u00a0ignorable. D4. A\u00a0quaternary collation element\u00a0is\u00a0ignorable\u00a0at Levels 1, 2, and 3 but not Level 4. This is also known as a\u00a0Level 2\u00a0ignorable\u00a0or a\u00a0secondary\u00a0ignorable. D3. A\u00a0tertiary collation element\u00a0is\u00a0ignorable\u00a0at Levels 1 and 2, but not Level 3.",
+    "textAfterTable": "0063 \"c\" [.0706.0020.0002] LATIN SMALL LETTER C 0043 \"C\" [.0706.0020.0008] LATIN CAPITAL LETTER C 0064 \"d\" [.0712.0020.0002] LATIN SMALL LETTER D 3.3 Multiple Mappings The mapping from characters to collation elements may not always be a simple mapping from one character to one collation element. In general, the mapping may be from one to many, from many to one, or from many to many. 3.3.1 Expansions The Latin letter \u00e6 is treated as a primary equivalent to an <a e>sequence, such as in the following example: Character Collation Element Name 00E6 [.15D5.0020.0004][.0000.0139.0004][.1632.0020.0004] LATIN SMALL LETTER AE; \"\u00e6\" In this example, the collation element [.15D5.0020.0004] gives the primary weight for a, and the collation element [.1632.0020.0004] gives the primary weight for e. 3.3.2 Contractions Similarly, where ch is treated as a single letter, as for instance in traditional Spanish, it is represented as a mapping from two characters to a single collation element, such as in the following example: Character Collation Element Name 0063 0068 [.0707.0020.0002] LATIN SMALL LETTER C, LATIN SMALL LETTER H; \"ch\" In this example, the collation element [.0707.0020.0002] has a primary value one greater than the primary",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

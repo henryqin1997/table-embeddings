@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "broadcast",
+            "destination",
+            "maxTraceDatagramSize",
+            "timeToLive"
+        ],
+        [
+            "Type",
+            "xs:boolean",
+            "xs:string",
+            "xs:integer",
+            "xs:integer"
+        ],
+        [
+            "Description",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Schema for namespace: http://activemq.apache.org/schema/core",
+    "title": "",
+    "url": "http://activemq.apache.org/schema/core/activemq-core-5.9.0-schema.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00170-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 2534415,
+    "recordOffset": 2500775,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 21 Oct 2013 12:07:50 GMT",
+    "textBeforeTable": "Root Element",
+    "textAfterTable": "abortSlowConsumerStrategy Abort slow consumers when they reach the configured threshold of slowness, default is slow for 30 seconds org.apache.activemq.broker.region.policy.AbortSlowConsumerStrategy authenticationUser A helper object used to configure simple authentiaction plugin org.apache.activemq.security.AuthenticationUser authorizationEntry Represents an entry in a {@link DefaultAuthorizationMap} for assigning different operations (read, write, admin) of user roles to a specific destination or a hierarchical wildcard area of destinations. org.apache.activemq.security.XBeanAuthorizationEntry authorizationMap org.apache.activemq.security.XBeanAuthorizationMap authorizationPlugin An authorization plugin where each operation on a destination is checked against an authorizationMap org.apache.activemq.security.AuthorizationPlugin axionJDBCAdapter Axion specific Adapter. Axion does not seem to support ALTER statements or sub-selects. This means: - We cannot auto upgrade the schema was we roll out new versions of ActiveMQ - We cannot delete durable sub messages that have be acknowledged by all consumers. org.apache.activemq.store.jdbc.adapter.AxionJDBCAdapter blobJDBCAdapter This JDBCAdapter inserts and extracts BLOB data using the getBlob()/setBlob() operations. This is a little more involved since to insert a blob you have to: 1: insert empty blob. 2: select the blob 3: finally update the blob with data value. The databases/JDBC drivers that use this adapter are: org.apache.activemq.store.jdbc.adapter.BlobJDBCAdapter broker An ActiveMQ Message Broker. It consists of a number of transport connectors, network connectors and a bunch of properties which can be used to configure the broker as its lazily created. org.apache.activemq.xbean.XBeanBrokerService brokerService Manages the life-cycle of an ActiveMQ Broker. A BrokerService consists of a",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

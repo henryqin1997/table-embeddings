@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Command",
+            "store",
+            "type"
+        ],
+        [
+            "Target",
+            "league of nations",
+            "q"
+        ],
+        [
+            "Value",
+            "searchString",
+            "javascript{storedVars[\u2018searchString\u2019].toUpperCase()}"
+        ]
+    ],
+    "pageTitle": "Selenium Commands \u2014 Selenium Documentation",
+    "title": "",
+    "url": "http://blargon7.com/selenium_docs/04_selenese_commands.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044160065.87/warc/CC-MAIN-20150728004240-00041-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 24138967,
+    "recordOffset": 24117546,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 17 Nov 2010 02:42:22 GMT",
+    "textBeforeTable": "The best use of this feature is to logically group your test commands, and start each group with an \u201cassert\u201d followed by one or more \u201cverify\u201d test commands. An example follows: Choosing between \u201cassert\u201d and \u201cverify\u201d comes down to convenience and management of failures. There\u2019s very little point checking that the first paragraph on the page is the correct one if your test has already failed when checking that the browser is displaying the expected page. If you\u2019re not on the correct page, you\u2019ll probably want to abort your test case so that you can investigate the cause and fix the issue(s) promptly. On the other hand, you may want to check many attributes of a page without aborting the test case on the first failure as this will allow you to review all failures on the page and take the appropriate action. Effectively an \u201cassert\u201d will fail the test and abort the current test case, whereas a \u201cverify\u201d will fail the test and continue to run the test case. Assertion or Verification?\u00b6 For example, if you are testing a text heading, the text and its position at the top of the page are probably relevant for your test. If, however, you are testing for the existence of an image on the home page, and the web designers frequently change the specific image file along with its position on the page, then you only want to test that an image (as",
+    "textAfterTable": "verifyText //h2 Downloads assertTable 1.2.1 Selenium IDE verifyTable 1.2.2 June 3, 2008 verifyTable 1.2.3 1.0 beta 2 The above example first opens a page and then \u201casserts\u201d that the correct page is loaded by comparing the title with the expected value. Only if this passes will the following command run and \u201cverify\u201d that the text is present in the expected location. The test case then \u201casserts\u201d the first column in the second row of the first table contains the expected value, and only if this passed will the remaining cells in that row be \u201cverified\u201d. verifyTextPresent\u00b6 The command verifyTextPresent is used to verify specific text exists somewhere on the page. It takes a single argument\u2013the text pattern to be verified. For example: Command Target Value verifyTextPresent Marketing Analysis \u00a0 This would cause Selenium to search for, and verify, that the text string \u201cMarketing Analysis\u201d appears somewhere on the page currently being tested. Use verifyTextPresent when you are interested in only the text itself being present on the page. Do not use this when you also need to test where the text occurs on the page. verifyElementPresent\u00b6 Use",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

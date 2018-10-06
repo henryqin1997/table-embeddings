@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "File",
+            "phpdocumentor-clean-icons.dev.svg",
+            "phpdocumentor-clean-icons.svg"
+        ],
+        [
+            "Role",
+            "Data",
+            "Data"
+        ],
+        [
+            "Description",
+            "Auxiliary data",
+            "Auxiliary data"
+        ]
+    ],
+    "pageTitle": "Threadator: Create threads and send messages between them - PHP Classes",
+    "title": "",
+    "url": "http://www.phpclasses.org/package/8564-PHP-Create-threads-and-send-messages-between-them.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00192-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 633611395,
+    "recordOffset": 633586613,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "AlexanderC This package can create threads and send messages between them. It can create a parallel process and execute PHP code of a given callback function on that process. It can also create mutexes that can be used to guarantee that only on process runs certain critical section code. The processes may communicate sending and receiving messages between the master process and child processes. The communication may be implemented with different drives to use for instance message queues or Redis. \u00a0 \u00a0 Author \u00a0 Description PHP 5, Unix, Language 5.5 Custom (specified... threadator 0.0.2 \u00a0 \u00a0 Categories \u00a0",
+    "textAfterTable": "Innovation award Nominee: 3x Details provided by the author \u00a0 \u00a0 # Main Goal The mail goal of [Threadator](https://github.com/AlexanderC/Threadator) package is to provide an easy way to run multithreaded applications in PHP. You may notice that there are other packages like this, but: - This is a modern package (Using Generators, Traits and other language sugar + build as a composer library) - It is providing most native implementation ever (all that you need are posix, pcntl) - You have full controll on your threads (Mutex and bidirectional Communication betweed threads and master) # Installation - Via [Composer](https://getcomposer.org/) \"alexanderc/threadator\": \"dev-master\" # Basic usage ```php <?php require '/path/to/vendor/autoload.php'; $runtime =",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

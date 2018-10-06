@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6",
+            "Step 7",
+            "Step 8",
+            "Step 9"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Device> enable",
+            "configure terminal Example: Device# configure terminal",
+            "router bgp autonomous-system-number Example: Device(config)# router bgp 100",
+            "neighbor {ip-address | ipv6-address | peer-group-name} remote-as as-number Example: Device(config-router)# neighbor 192.168.2.102 remote-as 100",
+            "neighbor {ip-address | ipv6-address | peer-group-name} update-source interface-type interface-number Example: Device(config-router)# neighbor 192.168.2.102 update-source Loopback 0",
+            "address-family ipv4 [mdt | multicast | tunnel | unicast [vrf vrf-name] | vrf vrf-name] Example: Device(config-router)# address-family ipv4",
+            "neighbor {ip-address | peer-group-name | ipv6-address} activate Example: Device(config-router-af)# neighbor 192.168.2.102 activate",
+            "neighbor { ip-address | ipv6-address | peer-group-name} send-label Example: Device(config-router-af)# neighbor 192.168.2.102 send-label",
+            "exit Example: Device(config-router-af)# exit"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Configures the BGP routing process.",
+            "Adds an entry to the multiprotocol BGP neighbor table for peering with the ASBR1.",
+            "Enables the BGP session to use a source address on the specified interface.",
+            "Enters address family configuration mode to configure a routing session using standard IPv4 address prefixes.",
+            "Enables the exchange of information for this address family with the specified BGP neighbor.",
+            "Enables label exchange for this address family to this neighbor in order to receive the remote PE IPv4 loopback with the label set to an end-to-end LSP.",
+            "Exits address family configuration mode."
+        ]
+    ],
+    "pageTitle": "IPv6 Implementation Guide, Cisco IOS Release 15.2S - Implementing IPv6 VPN over MPLS [Cisco IOS 15.2S] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipv6/configuration/15-2s/ipv6-15-2s-book/ip6-ov-mpls-6vpe.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00271-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 355678831,
+    "recordOffset": 355612676,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{9618=Device(config-vrf-af)# route target import 100:11, 6230=Device(config-vrf)# route target import 100:10, 57262=Device(config-router)# neighbor 192.168.2.11 remote-as 100, 461005=RFC 1918, 62769=Device(config-router-af)# neighbor 192.168.2.11 send-community extended, 125714=Device(config-router-af)# neighbor 192.168.2.21 send-community extended, 12813=Device(config-vrf-af)# route target import 100:12, 61404=Device(config-router-af)# neighbor 192.168.2.11 activate, 392923=Device(config-router-af)# network 192.168.2.27 mask 255.255.255.255, 59239=Device(config-router)# neighbor 192.168.2.11 update-source Loopback 0, 460416=RFC 1267, 24256=Device(config-if)# ip address 10.10.10.1 255.255.255.0, 5150=Device(config-vrf)# rd 100:1, 461293=RFC 2858, 460699=RFC 1772, 394359=Device(config-router-af)# network 192.168.2.15 mask 255.255.255.255}",
+    "textBeforeTable": "DETAILED STEPS 9.\u00a0\u00a0\u00a0 exit 8.\u00a0\u00a0\u00a0 neighbor { ip-address | ipv6-address | peer-group-name} send-label 7.\u00a0\u00a0\u00a0 neighbor {ip-address | peer-group-name | ipv6-address} activate 6.\u00a0\u00a0\u00a0 address-family ipv4 [mdt | multicast | tunnel | unicast [vrf vrf-name] | vrf vrf-name] 5.\u00a0\u00a0\u00a0 neighbor {ip-address | ipv6-address | peer-group-name} update-source interface-type interface-number 4.\u00a0\u00a0\u00a0 neighbor {ip-address | ipv6-address | peer-group-name} remote-as as-number 3.\u00a0\u00a0\u00a0 router bgp autonomous-system-number 2.\u00a0\u00a0\u00a0 configure terminal",
+    "textAfterTable": "Configuring Peering to Another ISP Route Reflector Perform this task to configure peering to an ISP route reflector named RR2. SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 router bgp autonomous-system-number 4.\u00a0\u00a0\u00a0 neighbor {ip-address | ipv6-address | peer-group-name} remote-as as-number 5.\u00a0\u00a0\u00a0 neighbor {ip-address | ipv6-address | peer-group-name} update-source interface-type interface-number 6.\u00a0\u00a0\u00a0 neighbor {ip-address | ipv6-address| peer-group-name} ebgp-multihop [ttl] 7.\u00a0\u00a0\u00a0 address-family vpnv6 [unicast] 8.\u00a0\u00a0\u00a0 neighbor {ip-address | peer-group-name | ipv6-address} activate 9.\u00a0\u00a0\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

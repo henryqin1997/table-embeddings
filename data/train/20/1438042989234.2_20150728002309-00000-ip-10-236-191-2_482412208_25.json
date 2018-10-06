@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Fecha",
+            "18 Jun 2001",
+            "9 Feb 2008",
+            "11 Jul 2012",
+            "5 May 2015",
+            "10 Jun 2015"
+        ],
+        [
+            "C\ufffddigo",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "AS"
+        ],
+        [
+            "Evento",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Assignment"
+        ],
+        [
+            "Descripci\ufffdn",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Owner name: ALCATEL-LUCENT USA, INC., NEW JERSEY Free format text: NOTICE OF GRANT OF SECURITY INTEREST IN PATENTS;ASSIGNOR:IKANOS COMMUNICATIONS, INC.;REEL/FRAME:035581/0710 Effective date: 20150430",
+            "Owner name: SILICON VALLEY BANK, CALIFORNIA Free format text: SECURITY INTEREST;ASSIGNOR:IKANOS COMMUNICATIONS, INC.;REEL/FRAME:035874/0351 Effective date: 20150602"
+        ]
+    ],
+    "pageTitle": "Patente US6842429 - Method and apparatus for synchronizing a packet based modem supporting ... - Google Patentes",
+    "title": "",
+    "url": "http://www.google.es/patents/US6842429?hl=es&dq=flatulence",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00000-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 482458807,
+    "recordOffset": 482412208,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{141600=The example initialization sequence requires the state to be changed to C_MEDLEY 816 after 2000 frames of C_REVERB 814. The core Cpu 334 reads a location in the framer's memory, which indicates the frame number at which the last state change was performed by the framer, let this be 500 for example. Then the core Cpu adds 2000 to this to get the absolute frame number (2500) at which to transition to Medley and sends the following TxCtlMsg., 105051=In the example initialization sequence shown, the ATU_C modem starts in state C_ACT, in which it transmits a single tone at frequency of 207 KHz for a fixed duration of 64 symbols. After this, the ATU_C enters the C_QUIET state, in which it does not transmit anything (transmit signal is zero). The ATU_R modem waits for the ATU_C to transition from C_ACT tone to C_QUIET. Then after some number of frames (within a maximum limit of 2000 frames), the ATU_R modem sends the R_ACK tone. On receiving the R_ACK tone, the ATU_C must transition to the C_REVERB state within 16 to 20 symbols. The ATU_C transmits a fixed pseudo-random (specified in the standard) modulated using 2-bit constellation on all the tones. The C_REVERB state is maintained for a fixed duration of 2000 symbols, after which it transitions to C_MEDLEY. The C_MEDLEY state is maintained for 1000 symbols, after which it transitions to C_SHOWTIME, at which point, the user's data is read from the ATM interface and then modulated on the tones and transmitted. This example sequence is intended for the purpose of illustrating how the state transitions are performed in the current invention. The example shows the state transitions occurring: a) after a fixed duration (such as C_ACT to C_QUIET after 64 symbols), and b) after receiving a signal from the other end (such as C_QUIET to C_REVERB). The actual state transitions of each of the X-DSL standards vary from one another, and are therefore stored in standards list in memory 328 for use in implementing any of the protocols., 69839=On the downstream (transmit) path a FIFO buffer 452 within the AFE PAD 340 holds incoming packets. These are passed to the components in the Framer and Encoder module 306 for processing. The components of that module include the framer 440, tone orderer 442, PRN generator 450, encoder 444 and gain scalar 446. They are coupled via a multiplexer 448 to the IDFT mapper 422. As was the case with the deframer, the framer will use protocol specific information associated with each of these channels to look for different frame and super frame boundaries. The tone orderer supports varying number of tones, bytes per tone and gain per tone for each of the X-DSL protocols. For example the number of tones for G.Lite is 128, for ADSL is 256 and for VDSL 2048. The number of bits to be extracted per tone is read from the tone-ordering table or register at the initiation of processing of each packet. For example as successive packets from channels implementing G.Lite, ADSL and VDSL pass through the DMT Tx engine the number of tones will vary from 128 for G.lite, to 256 for ADSL, to 2048 for VDSL. In the encoder 444 constellation mapping is performed based on the bit pattern of each packet. The output is a two dimensional signal constellation in the complex domain., 36861=This application claims the benefit of prior filed co-pending Provisional Application No. 60/179,862 entitled \u201cDMT ENGINE\u201d filed on Feb. 2, 2000 which is incorporated herein by reference in its entirety., 145587=The framer 440 puts the message in its message queue. When the channel's Current Frame Number reaches 2500, it will match the frame number in the TxCtlMsg, and the framer performs the state change. In the first frame of the new state, it creates the following TxPkt and sends it to the next module on the transmit data flow path., 155237=The example initialization sequence requires the state to be changed to C_MEDLEY after 1000 frames of C_MEDLEY. The core Cpu 334 sends the following TxCtlMsg to specify that the state change is to be done at frame number 3500 (since medley started at frame number 2500).}",
+    "textBeforeTable": "Citas de patentes The foregoing description of a preferred embodiment of the invention has been presented for purposes of illustration and description. It is not intended to be exhaustive or to limit the invention to the precise forms disclosed. Obviously many modifications and variations will be apparent to practitioners skilled in this art. It is intended that the scope of the invention be defined by the following claims and their equivalents. 430 packs the constellation decoded bits according to the bit table which was specified in FEQ parameter table. The deframer does the deframing according to the parameters specified. The tone reorderer \u2003Received samples Data: \u2003. . . \u2003Deframer_Parameter_Table_Num = F \u2003FEQ_Parameter_Table_Num = M \u2003Current State = Showtime_State Extended Commands: \u2003. . . \u2003Basic Rx Op: \u2003Extended Cmd Flag: FEQ,Deframer \u2003Channel Number = K Packet Header",
+    "textAfterTable": "Transport convergence sub-system with shared resources for multiport xDSL system US7075941 1 Mar 2001 11 Jul 2006 Real Communications, Inc. Scaleable architecture for multiple-port, system-on-chip ADSL communications systems US7085285 * 1 Mar 2001 1 Ago 2006 Realtek Semiconductor Corp. xDSL communications systems using shared/multi-function task blocks US7152101 * 28 Jun 2002 19 Dic 2006 Panasonic Communications Co., Ltd. Communication control method, communication control apparatus, and ADSL communication apparatus US7162732 27 Mar 2001 9 Ene 2007 Intel Corporation System and related methods facilitating the detection and acquisition of a data channel in a cable modem US7200138 1 Mar 2001 3 Abr 2007 Realtek Semiconductor Corporation Physical medium dependent sub-system with shared resources for multiport xDSL system US7243154 * 27 Jun 2002 10 Jul 2007 Intel Corporation Dynamically adaptable communications processor architecture and associated methods US7295571 12 Ene 2006 13 Nov 2007 Realtek Semiconductor Corp. xDSL function",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

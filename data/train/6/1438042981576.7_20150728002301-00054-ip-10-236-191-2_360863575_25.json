@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Code or Value",
+            "1",
+            "2",
+            "7",
+            "9",
+            "."
+        ],
+        [
+            "Value Description",
+            "Yes",
+            "No",
+            "Refused",
+            "Don't know",
+            "Missing"
+        ],
+        [
+            "Count",
+            "141",
+            "83",
+            "0",
+            "1",
+            "4647"
+        ],
+        [
+            "Cumulative",
+            "141",
+            "224",
+            "224",
+            "225",
+            "4872"
+        ],
+        [
+            "Skip to Item",
+            "",
+            "YDQC12E",
+            "YDQC12E",
+            "YDQC12E",
+            ""
+        ]
+    ],
+    "pageTitle": "NHANES 2000 - 2004: Conduct Disorder Data Documentation, Codebook, and Frequencies",
+    "title": "",
+    "url": "http://www.cdc.gov/nchs/nhanes/limited_access/YDQC.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00054-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 360916975,
+    "recordOffset": 360863575,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampBeforeTable": "{2585=Title: Conduct Disorder (YDQC ) Contact Number: 1-866-441-NCHS Years of Content: 2000 - 2004 First Published: October, 2006 Revised: NA Access Constraints: RDC Only Use Constraints: RDC Only Geographic Coverage: National Subject:Youth Mental Health Record Source: NHANES 2000 - 2004 Survey Methodology: NHANES 2000 - 2004 is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S. Medium: NHANES Web site; SAS transport files}",
+    "lastModified": "Tue, 25 Jun 2013 12:27:49 GMT",
+    "textBeforeTable": "Both males and females 8 YEARS - 15 YEARS Target: (Collection name = PCD001) English Instructions: Now I want to ask you some questions about other things ________ may have done that can get people into trouble.<p> For this set of questions I will start off by asking if [he/she] has done something at any time in [his/her] life, and then I'll ask whether [he/she] did it in the last year that is, since [[NAME EVENT]/[NAME CURRENT MONTH] of last year].<p> Some of the questions are very personal, but all of your answers are confidential and won't be repeated to anyone else.<p> Thinking about [his/her] whole life, has ________ ever secretly stolen money or other things from [you (or [his/her] family)/[his/her] family] or from other people [he/she] lives with? English Text: Ever stolen from people living with them SAS Label: YDQC01 Variable Name: YDQC01 - Ever stolen from people living with them Both males and females 8 YEARS - 15 YEARS Target: Respondent sequence number. English Text: Respondent sequence number SAS Label: SEQN Variable Name: SEQN - Respondent sequence number Codebook and Frequencies Title: Conduct Disorder (YDQC ) Contact Number: 1-866-441-NCHS Years of",
+    "textAfterTable": "YDQC02 - Ever shoplifted Variable Name: YDQC02 SAS Label: Ever shoplifted English Text: Has [he/she] ever shoplifted, that is stolen something from a store when [he/she] thought no one was looking? English Instructions: (Collection name = PCD002) Target: Both males and females 8 YEARS - 15 YEARS Code or Value Value Description Count Cumulative Skip to Item 1 Yes * 367 367 2 No 3607 3974 7 Refused 0 3974 9 Don't know 31 4005 . Missing 867 4872 YDQC03 - Ever stolen from someone absent Variable Name: YDQC03 SAS Label: Ever stolen from someone absent English Text: Has [he/she] ever stolen from anyone else when they weren't around or weren't looking? English Instructions: (Collection name = PCD003) Target: Both males and",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

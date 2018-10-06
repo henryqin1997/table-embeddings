@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Command",
+            "dynamic-template",
+            "dynamic-template type ppp",
+            "dynamic-template type ipsubscriber"
+        ],
+        [
+            "Description",
+            "Enables the dynamic template configuration mode.",
+            "Enables the ppp dynamic template type.",
+            "Enables the ipsubscriber dynamic template type."
+        ]
+    ],
+    "pageTitle": "Cisco ASR 9000 Series Aggregation Services Router Broadband Network Gateway Command Reference, Release 4.3.x - Dynamic Template Commands [Cisco ASR 9000 Series Aggregation Services Routers] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r4-3/bng/command/reference/b_bng_cr43xasr9k/b_bng_cr43asr9k_chapter_0101.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00086-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 373292857,
+    "recordOffset": 373276463,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Syntax Description no dynamic-template name } name | service name | ppp { ipsubscriber type dynamic-template Global Configuration mode. To disable this feature and exit the dynamic-template configuration mode, use the no form of this command. To group a set of configuration items that can be applied to a group of subscribers and to enter the dynamic-template configuration mode, use the dynamic-template command in the dynamic-template vrf (dynamic-template-BNG) service-policy (BNG) dynamic-template type service dynamic-template type ppp dynamic-template type ipsubscriber dynamic-template This module describes the Cisco\u00a0IOS\u00a0XR software commands used to configure the Dynamic Template commands for Broadband Network Gateway (BNG) on the Cisco ASR 9000 Series Router. For details regarding the related configurations, refer to the Cisco ASR 9000 Series Aggregation Services Router Broadband Network Gateway Configuration Guide. Dynamic Template Commands vrf (dynamic-template-BNG) service-policy (BNG) dynamic-template type service dynamic-template type ppp dynamic-template type ipsubscriber dynamic-template Dynamic Template",
+    "textAfterTable": "Command Default None Command Modes Global Configuration mode Command History Release Modification Release 4.2.0 This command was introduced. Usage Guidelines Use the dynamic-template command to enter dynamic template configuration mode. Task ID Task ID Operation config-services read, write Examples This is an example of configuring the dynamic-template command in the Global Configuration mode:  RP/0/RSP0/CPU0:router# configure RP/0/RSP0/CPU0:router(config)# dynamic-template RP/0/RSP0/CPU0:router(config-dynamic-template)# Related Commands Command",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

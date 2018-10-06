@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Property",
+            "count",
+            "key",
+            "name",
+            "type",
+            "TYPE_CATEGORY",
+            "TYPE_RATING"
+        ],
+        [
+            "Description",
+            "The number of results, out of the total search results returned, that comply with this filter.",
+            "A string that specifies the key that needs to be passed back to LocalSearchOverlay.search() method to retrieve the refined results.",
+            "A string that provides a readable description of the filter.",
+            "A string that specifies the filter type, of which there are two, represented by LocalSearchFilter.TYPE_RATING and LocalSearchFilter.TYPE_CATEGORY. Rating filters allow the user to refine the search by the rating of the search results usually from one to five stars. Category filters filter by a specific category of results. For example, a search for food might return category filters with names such as \"grocery\", \"fast food\", \"cafes\", etc.",
+            "Possible value for the LocalSearchFilter.type property. If the type property is equal to the LocalSearchFilter.TYPE_CATEGORY constant, the search() method of the LocalSearchOverlay class can use the key attribute as its categoryFilter parameter.",
+            "Possible value for the LocalSearchFilter.type property. If the type property is equal to the LocalSearchFilter.TYPE_RATING constant, the search() method of the LocalSearchOverlay class can use the key attribute as its ratingFilter parameter."
+        ]
+    ],
+    "pageTitle": "Yahoo! Maps Web Services - Flash\u00ae APIs Reference Manual",
+    "title": "",
+    "url": "https://developer.yahoo.com/maps/flash/V3/flashReference.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986022.41/warc/CC-MAIN-20150728002306-00293-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 879875051,
+    "recordOffset": 879851229,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{88827=Copyright \u00a9 2015 Yahoo! Inc. All rights reserved.}",
+    "textBeforeTable": "Properties ActionScript package name: com.yahoo.maps.overlays.data.LocalSearchFilter Inheritance: LocalSearchFilter Each time a successful search is performed when using the LocalSearchOverlay class, 0 to n filters are returned. Each filter represents a possible refinement of the search results. By using the key attribute of the filter, the same search terms will return refined results as described by the name attribute. LocalSearchFilter() A floating-point number that represents the measure of longitude on the map for the rectangle\u2019s ending point, or lower right-hand corner. maxLon A floating-point number that represents the measure of latitude on the map for the rectangle\u2019s ending point, or lower right-hand corner. maxLat A floating-point number that represents the measure of longitude on the map for the rectangle\u2019s starting point, or upper left-hand corner. minLon A floating-point number that represents the measure of latitude on the map for the rectangle\u2019s starting point, or upper left-hand corner. minLat Description Property Properties A floating-point number that represents the measure of longitude on the map for the rectangle's ending point, or lower right-hand corner. maxLon A floating-point number that represents the measure of latitude on the map for the rectangle's ending point, or lower right-hand corner. maxLat A floating-point number that represents the measure of longitude on the map for the",
+    "textAfterTable": "\u00a0 LocalSearchOverlay () The LocalSearchOverlay class allows developers to access the large database of business descriptions, ratings, and locations and plot them on a map. Inheritance: EventManager > Overlay > LocalSearchOverlay ActionScript package name: com.yahoo.maps.overlays.LocalSearchOverlay Methods Method Description clear() Clear the currently active search Return value: void search ( searchTerms, latlon, startIndex, results, radius, categoryFilter, ratingFilter ) Search for businesses using the specified criteria. Parameters: searchTerms - A string. The search terms used to search for businesses latLon - The latitude and longitude of a point on the map you would like base this search on startIndex - A number The index of the first result out of the total search results available that you would like to retrieve results - A number. The number of results that you would like to retrieve radius - A number. The radius in miles that you would like apply to search results. If null, the radius of the current viewable map is used. categoryFilter - A string. The category filter key used to filter search results ratingFilter - A string. The rating filter key used to filter search results Return value: void Properties Property Description EVENT_SEARCH_ERROR Static property",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Key",
+            "#nonSnarfingRegexp",
+            "#titleSnarfer",
+            "fetch.maximum"
+        ],
+        [
+            "Default",
+            "",
+            "false",
+            "0"
+        ],
+        [
+            "Description",
+            "if set, URLs matching the pattern are not snarfed.",
+            "Whether to fetch and show the title for pasted URLs.",
+            "Maximum bytes to fetch with the fetch command. If zero, fetch is disabled."
+        ]
+    ],
+    "pageTitle": "Supybook",
+    "title": "Tableplugins.Web",
+    "url": "http://supybook.fealdia.org/devel/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00251-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 229018791,
+    "recordOffset": 228986138,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{90016=Show formatted date for unix epoch timestamp seconds, for example Thu Jan 1 00:00:00 1970., 118168=Format string for timestamps (%I:%M %p, %B %d, %Y, eg. 08:41 PM, September 11, 2008)., 67065=owner ircquote <raw> - send raw as-is to the server. You need to know your way around RFC1459 pretty well to use this.}",
+    "lastModified": "Fri, 27 Dec 2013 15:44:55 GMT",
+    "textBeforeTable": "Some of the sections in this document have a list of related configuration items. They are listed similarly to the table below. In this example the config value could be modified with the config plugin.example.foo <True|False> command. If the key is prefixed with #, the config value can be set both globally and on channel-specific basis. Note Save configuration changes to disk. This should be done automatically as well, if the flush configuration item is True (the default). owner flush Show configuration items matching word. config search <word> Reloads configuration. Mostly useful if you\u2019ve had to modify the files by hand. config reload List configuration items in group. Subgroups are prefixed with @, channel-specific items with #. config list <group> Show help for a configuration item. config help <name> Export non-confidential parts of configuration to a file for debugging purposes. config export <filename> Get the default value of name. This does not change the value. No, there is no command to reset an item to default value. You need to use config <name> [config default <name>] for that. config default <name>",
+    "textAfterTable": "Many traditional IRC bots manage permissions of users using flags. Some network services in fact, do, too. Each user can have various flags on each channel. The flags can mean auto-op, op, use of !ban command and so forth. On side of those, there are often global user flags that entitle the user to full access, global auto-op, etc. Some bots also support channel flags that determine what bot functionality is available on the channel. Supybot does not have any flags. Instead, the permissions are managed using capabilities. There are two kinds of capabilities: user capabilities and channel capabilities. User capabilities are checked first when a user tries to run a command. If the user has an anticapability for the command (eg. -command, -Plugin.command) or the Plugin (-Plugin), it won\u2019t be run. Next, if the command was run on the channel, the channel capabilities are checked. The logic is same as above, but the checked capabilities are prefixed with #channel,, for example #channel,-Plugin.command. There are some special capabilities recognized by Supybot: owner For bot owners: the people who have \"physical\" access to the bot and its files. This cannot be granted online; the conf/users.conf file must be edited by hand followed by reload. Owners are exempt from #channel,op capability checks and channel anticapabilities. admin For bot administrators. Users with this",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

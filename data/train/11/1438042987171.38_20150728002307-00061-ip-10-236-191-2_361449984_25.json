@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Field",
+            "IP Destination autonomous system",
+            "IPv4 or IPv6 Destination Prefix",
+            "IPv4 or IPv6 Destination Mask",
+            "Interface Output",
+            "Flow Direction",
+            "Counter Bytes",
+            "Counter Packets",
+            "Time Stamp System Uptime First",
+            "Time Stamp System Uptime Last"
+        ],
+        [
+            "Key or Nonkey Field",
+            "Key",
+            "Key",
+            "Key",
+            "Key",
+            "Key",
+            "Nonkey",
+            "Nonkey",
+            "Nonkey",
+            "Nonkey"
+        ],
+        [
+            "Definition",
+            "Autonomous system of the destination IP address (peer or origin).",
+            "Destination IP address ANDed with the destination prefix mask.",
+            "Number of bits in the destination prefix.",
+            "Interface on which the traffic is transmitted.",
+            "Direction in which the flow is being monitored.",
+            "Number of bytes seen in the flow.",
+            "Number of packets seen in the flow.",
+            "System uptime (time, in milliseconds, since this device was first booted) when the first packet was switched.",
+            "System uptime (time, in milliseconds, since this device was first booted) when the last packet was switched."
+        ]
+    ],
+    "pageTitle": "Flexible Netflow Configuration Guide, Cisco IOS Release 15SY - Configuring Cisco IOS Flexible NetFlow with Predefined Records [Cisco IOS 15.2SY] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/fnetflow/configuration/15-sy/fnf-15-sy-book/cfg-fnflow-predf-rec.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00061-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 361479731,
+    "recordOffset": 361449984,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Key and Nonkey Fields Used by the Flexible NetFlow Destination Prefix Predefined Record Table 9 The table below lists the key and nonkey fields used in the Flexible NetFlow \"destination prefix\" predefined record. This predefined record can be used to analyze IPv4 and IPv6 traffic. Note Destination Prefix Predefined Record The Flexible NetFlow \"destination prefix\" predefined record creates flows based on destination prefix traffic flow data. The Flexible NetFlow \"destination prefix\" predefined record uses the same key and nonkey fields as the original NetFlow \"destination prefix\" aggregation cache. System uptime (time, in milliseconds, since this device was first booted) when the last packet was switched. Nonkey Time Stamp System Uptime Last System uptime (time, in milliseconds, since this device was first booted) when the first packet was switched. Nonkey Time Stamp System Uptime First",
+    "textAfterTable": "Destination Prefix ToS Predefined Record The Flexible NetFlow \"destination prefix ToS\" predefined record creates flows based on destination prefix and ToS traffic flow data. The Flexible NetFlow \"destination prefix ToS\" predefined record uses the same key and nonkey fields as the original NetFlow \"destination prefix ToS\" aggregation cache. This predefined record is particularly useful for capturing data with which you can examine the destinations of network traffic passing through a NetFlow-enabled device. Note This predefined record can be used to analyze only IPv4 traffic. The table below lists the key and nonkey fields used in the Flexible NetFlow \"destination prefix ToS\" predefined record. Table 10 Key and Nonkey Fields Used by the Flexible NetFlow Destination Prefix ToS Predefined Record Field Key or Nonkey Field Definition IP ToS Key",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

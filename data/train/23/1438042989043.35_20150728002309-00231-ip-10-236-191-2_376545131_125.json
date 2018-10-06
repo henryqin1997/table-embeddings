@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Release",
+            "Release 3.5.0",
+            "Release 3.8.0",
+            "Release 3.9.0"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "The keywords control word disable and vccv none were replaced by the keywords control word and vccv verification-type none .",
+            "The following keywords were added: preferred-path sequencing tag-rewrite transport-mode"
+        ]
+    ],
+    "pageTitle": "Cisco IOS XR Virtual Private Network Command Reference for the Cisco CRS Router, Release 4.1 - Virtual Private Network Commands [Cisco IOS XR Software (End-of-Sale)] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/crs/software/crs_r4-1/lxvpn/command/reference/b_vpn_cr41crs/b_vpn_cr41crs_chapter_01.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989043.35/warc/CC-MAIN-20150728002309-00231-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 376593051,
+    "recordOffset": 376545131,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{253149=Configures the maximum number of retransmissions before determining that peer router does not respond. Range is 5 to 1000. Default is 15., 252743=Configures the number of SCCRQ messages resent before giving up on a particular control channel. Range is 1 to 1000. Default is 2., 90376=Interval (in seconds) between control channel hello packets. The range is from 0 to 1000. Default is 60 seconds.}",
+    "textBeforeTable": "Command History L2TP class configuration Command Modes None Command Default This command has no arguments or keywords. Syntax Description authentication no authentication To enable L2TP authentication for a specified L2TP class name, use the authentication command in L2TP class configuration mode. To return to the default behavior, use the no form of this command. authentication (L2TP) xconnect group tunnel-template transport mode (L2VPN) timeout setup (L2TP) tag-rewrite show tunnel-template show l2vpn xconnect show l2vpn resource show l2vpn pw-class show l2vpn forwarding l2tp show l2vpn forwarding show l2vpn collaborators show l2tp tunnel show l2tp session show l2tp counters forwarding session show l2tp class rollover (L3VPN) retransmit (L2TP) receive-window (L2TP) p2p pw-class encapsulation mpls pw-class encapsulation l2tpv3 pw-class (L2VPN) password (L2TP) neighbor (L2VPN) mpls static label (L2VPN) monitor-session (l2vpn) logging (l2vpn) l2vpn",
+    "textAfterTable": "Task ID Operations l2vpn read, write Examples The following example shows how to configure L2TP authentication for the specified L2TP class name \u201ccisco\u201d: RP/0/RP0/CPU0:router# configure RP/0/RP0/CPU0:router(config)# l2tp-class cisco RP/0/RP0/CPU0:router(config-l2tp-class)# authentication Related Commands Command Description hello-interval (L2TP) Configures the hello-interval value for L2TP (duration between control channel hello packets). \u00a0 hidden (L2TP) Enables hidden attribute-value pairs (AVPs). \u00a0 hostname (L2TP) Defines the name used in the L2TP hostname AVP. \u00a0 l2tp-class Enters L2TP class configuration mode where you can define an L2TP signaling template. \u00a0 password (L2TP) Defines the password and password encryption type for control channel authentication. \u00a0",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

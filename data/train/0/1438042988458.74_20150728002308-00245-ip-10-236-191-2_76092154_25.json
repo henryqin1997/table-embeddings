@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Column",
+            "OWNER",
+            "TABLE_NAME",
+            "WORKSPACE",
+            "BEGIN_SAVEPOINT",
+            "END_SAVEPOINT"
+        ],
+        [
+            "Datatype",
+            "VARCHAR2(30)",
+            "VARCHAR2(30)",
+            "VARCHAR2(256)",
+            "VARCHAR2(256)",
+            "VARCHAR2(256)"
+        ],
+        [
+            "Null?",
+            "NOT NULL",
+            "NOT NULL",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Description",
+            "User name of the table owner.",
+            "Name of the version-enabled table.",
+            "Name of a workspace that was set as a result of a call to the SetCompressWorkspace procedure.",
+            "Savepoint on the first version of the compression range. If the firstSP parameter was null in the call to the SetCompressWorkspace procedure, this column contains BEGINNING.",
+            "Savepoint on the last version of the compression range. If both the firstSP and secondSP parameters were null in the call to the SetCompressWorkspace procedure, this column contains LATEST."
+        ]
+    ],
+    "pageTitle": "5 Workspace Manager Metadata Views",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B12037_01/appdev.101/b10824/long_views.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00245-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 76117611,
+    "recordOffset": 76092154,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 02 Feb 2004 03:45:00 GMT",
+    "textBeforeTable": "WM_COMPRESS_BATCH_SIZES contains information related to compression capabilities for version-enabled tables. This view is only available to users with the WM_ADMIN_ROLE role. 5.36 WM_COMPRESS_BATCH_SIZES USER_WORKSPACES contains information about workspaces created by the current user. Its columns are the same as those in ALL_WORKSPACES in Section 5.16. 5.35 USER_WORKSPACES USER_WORKSPACE_SAVEPOINTS contains information about savepoints in workspaces created by the current user. Its columns are the same as those in ALL_WORKSPACE_SAVEPOINTS in Section 5.15. 5.34 USER_WORKSPACE_SAVEPOINTS USER_WORKSPACE_PRIVS contains information about Workspace Manager privileges in workspaces created by the current user. Its columns are the same as those in ALL_WORKSPACE_PRIVS in Section 5.14. 5.33 USER_WORKSPACE_PRIVS USER_WM_VT_ERRORS contains information about the error that occurred during the last call to the DisableVersioning or CommitDDL procedure that specified a table of which the current user is the owner and on which the current user has one or more of the following privileges: SELECT, INSERT, DELETE, UPDATE. Its columns are the same as those in ALL_WM_VT_ERRORS in Section 5.13.",
+    "textAfterTable": "5.37 WM_COMPRESSIBLE_TABLES WM_COMPRESSIBLE_TABLES contains information about version-enabled tables that need to be compressed (if compression is to be performed) between two savepoints in a workspace. To create rows in this view, use the SetCompressWorkspace procedure. Column Datatype Null? Description OWNER VARCHAR2(30) NOT NULL User name of the table owner. TABLE_NAME VARCHAR2(30) NOT NULL Name of the version-enabled table. WORKSPACE VARCHAR2(256) Name of a workspace that was set as a result of a call to the SetCompressWorkspace procedure. BEGIN_SAVEPOINT VARCHAR2(256) Savepoint on the first version of the compression range. If the firstSP parameter was null in the call to the SetCompressWorkspace procedure, this column contains BEGINNING. END_SAVEPOINT",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

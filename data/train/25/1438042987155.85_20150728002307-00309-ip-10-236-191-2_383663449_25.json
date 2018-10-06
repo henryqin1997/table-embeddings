@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "Character",
+            "*",
+            "?",
+            "A",
+            "H",
+            "N",
+            "P",
+            "Q",
+            "U"
+        ],
+        [
+            "Description",
+            "The probe timed out.",
+            "Unknown packet type.",
+            "Administratively unreachable. Usually, this output means that an access list is blocking traffic.",
+            "Host unreachable.",
+            "Network unreachable.",
+            "Protocol unreachable.",
+            "Source quench.",
+            "Port unreachable."
+        ]
+    ],
+    "pageTitle": "System Management Configuration Guide, Cisco IOS XE Release 3SE (Catalyst 3850 Switches) - Troubleshooting the Software Configuration [Cisco Catalyst 3850 Series Switches] - Cisco",
+    "title": "Table 6 Traceroute Output Display Characters",
+    "url": "http://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3850/software/release/3se/system_management/configuration_guide/b_sm_3se_3850_cg/b_sm_3se_3850_cg_chapter_01110.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00309-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 383702135,
+    "recordOffset": 383663449,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{75222=The IEEE 802.3ab autonegotiation protocol manages the switch settings for speed (10 Mb/s, 100 Mb/s, and 1000 Mb/s, excluding SFP module ports) and duplex (half or full). There are situations when this protocol can incorrectly align these settings, reducing performance. A mismatch occurs under these circumstances:, 18152=TDR is supported only on 10/100/1000 copper Ethernet ports. It is not supported on 10-Gigabit Ethernet ports and on SFP module ports.}",
+    "textBeforeTable": "Use this command to ping another device on the network from the switch: Though other protocol keywords are available with the ping command, they are not supported in this release. Note IP routing is disabled by default on all switches. If you attempt to ping a host in a different IP subnetwork, you must define a static route to the network or have IP\u00a0routing configured to route between those subnets. Executing Ping You can check the physical or operational status of an SFP module by using the show interfaces transceiver privileged EXEC command. This command shows the operational status, such as the temperature and the current for an SFP module on a specific interface and the alarm status. You can also use the command to check the speed and the duplex settings on an SFP module. Monitoring SFP Module Status Monitoring SFP Module Status If the module is identified as a Cisco SFP module, but the system is unable to read vendor-data information to verify its accuracy, an SFP module error message is generated. In this case, you should remove and reinsert the SFP module. If it continues",
+    "textAfterTable": "Monitoring the Physical Path You can monitor the physical path that a packet takes from a source device to a destination device. Table 1\u00a0Monitoring the Physical Path Command Purpose tracetroute mac [interface interface-id] {source-mac-address} [interface interface-id] {destination-mac-address} [vlan vlan-id] [detail] Displays the Layer 2 path taken by the packets from the specified source MAC address to the specified destination MAC address. tracetroute mac ip {source-ip-address | source-hostname}{destination-ip-address | destination-hostname} [detail] Displays the Layer 2 path taken by the packets from the specified source IP address or hostname to the specified destination IP address or hostname. Executing IP Traceroute Note Though other protocol keywords are available with the traceroute privileged EXEC command, they are not supported in this release.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

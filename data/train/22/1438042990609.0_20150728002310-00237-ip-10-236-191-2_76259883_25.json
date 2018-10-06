@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "mapUnbounded StringToLob",
+            "StoreVarrayAsTable"
+        ],
+        [
+            "Values",
+            "true | false",
+            "true | false"
+        ],
+        [
+            "Default",
+            "false",
+            "false"
+        ],
+        [
+            "Description",
+            "If true, unbounded strings are mapped to CLOB by default. Similarly, unbounded binary data gets mapped to a Binary Large Object (BLOB), by default. If false, unbounded strings are mapped to VARCHAR2(4000) and unbounded binary components are mapped to RAW(2000).",
+            "If true, the VARRAY is stored as a table (OCT). If false, the VARRAY is stored in a LOB."
+        ]
+    ],
+    "pageTitle": "5 XML Schema Storage and Query : The Basics",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B14117_01/appdev.101/b10790/xdb05sto.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00237-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 76306947,
+    "recordOffset": 76259883,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{146972=XML Schema allows the time-zone component to be specified as Z to indicate UTC time zone. When a value with a trailing Z is stored in a TIMESTAMP WITH TIME ZONE column, the time zone is actually stored as +00:00. Thus, the retrieved value contains the trailing +00:00 and not the original Z., 147354=Example: If the value in the input XML document is 1973-02-12T13:44:32Z, the output will look like 1973-02-12T13:44:32.000000+00:00., 209417=Using the preceding mapping, a query which checks whether the PurchaseOrder with number 2100 contains a part with price greater than 2000:, 177256=An XPath predicate such as [ShipDate < '2003-02-01'] will always evaluate to false with functional evaluation, since the string value '2003-02-01' cannot be converted to a numeric quantity. With XPath rewrite, however, this gets translated to a SQL date comparison and will evaluate to true or false depending on the value of ShipDate.}",
+    "lastModified": "Tue, 27 Jul 2004 16:35:00 GMT",
+    "textBeforeTable": "Table 5-4 Annotations You Can Specify in XML Schema Declarations If true, instances of this element are stored such that they retain DOM fidelity on output. This implies that all comments, processing instructions, namespace declarations, and so on, are retained in addition to the ordering of elements. If false, the output need not be guaranteed to have the same DOM action as the input. true true | false maintainDOM Name of database user owning the type specified by SQLType. User registering XML Schema Any SQL username SQLSchema Specifies the name of the SQL type corresponding to this XML element declaration. Name generated from element name Any SQL type name SQLType Description Default Values Attribute",
+    "textAfterTable": "Querying a Registered XML Schema to Obtain Annotations The registered version of an XML Schema will contain a full set of XDB annotations. As was shown in Example 5-8, and Example 5-9, the location of the registered XML Schema depends on whether the schema is a local or global schema. This document can be queried to find out the values of the annotations that were supplied by the user, or added by the schema registration process. For instance, the following query shows the set of global complexType definitions declared by the XMLSchema and the corresponding SQL objects types: Example 5-15 Querying Metadata from a Registered XML Schema SELECT extractValue(value(ct), '/xs:complexType/@name', 'xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:xdb=\"http://xmlns.oracle.com/xdb\"') XMLSCHEMA_TYPE_NAME, extractValue(value(ct), '/xs:complexType/@xdb:SQLType', 'xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:xdb=\"http://xmlns.oracle.com/xdb\"') SQL_TYPE_NAME FROM resource_view, table( xmlsequence( extract( res, '/r:Resource/r:Contents/xs:schema/xs:complexType', 'xmlns:r=\"http://xmlns.oracle.com/xdb/XDBResource.xsd\" xmlns:po=\"http://xmlns.oracle.com/xdb/documentation/purchaseOrder\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:xdb=\"http://xmlns.oracle.com/xdb\"'))) ct WHERE equals_path( res, '/sys/schemas/SCOTT/xmlns.oracle.com/xdb/documentation/purchaseOrder.xsd') =1; XMLSCHEMA_TYPE_NAME SQL_TYPE_NAME -------------------------------- -------------------------------- PurchaseOrderType PURCHASEORDER_T LineItemsType LINEITEMS_T LineItemType LINEITEM_T PartType PART_T ActionsType ACTIONS_T RejectionType REJECTION_T ShippingInstructionsType SHIPPING_INSTRUCTIONS_T 7 rows selected. SQL Mapping Is Specified in the XML Schema During Registration Information regarding the SQL mapping is stored in the XML Schema document. The registration process generates the SQL types, as described in \"Mapping of Types Using DBMS_XMLSCHEMA\" and adds annotations to the XML Schema document to store the mapping information. Annotations are in",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

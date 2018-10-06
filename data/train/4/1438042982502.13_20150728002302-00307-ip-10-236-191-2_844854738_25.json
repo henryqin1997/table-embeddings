@@ -1,0 +1,68 @@
+{
+    "relation": [
+        [
+            "Get method",
+            "getFragment",
+            "getHost",
+            "getPass",
+            "getPath",
+            "getPort",
+            "getQuery",
+            "getScheme",
+            "getUser",
+            "getVar"
+        ],
+        [
+            "Set method",
+            "setFragment",
+            "setHost",
+            "setPass",
+            "setPath",
+            "setPort",
+            "setQuery",
+            "setScheme",
+            "setUser",
+            "setVar"
+        ],
+        [
+            "Description",
+            "Fragment (everything after the '#'). This is often referred to as an anchor.",
+            "Hostname or IP address. For example, 'www.joomla.org' or '192.168.2.45'.",
+            "Password part of the authority.",
+            "Path string. Note that the path always includes the leading \"/\" character.",
+            "Port number. Specific schemes (protocols) have their own defaults (for example, 'http' is port 80, 'ftp' is port 21).",
+            "Query in string format. For example, \"foo=bar&x=y\". See also buildQuery.",
+            "Scheme (protocol). For example, 'http', 'https', 'ftp'.",
+            "Username part of the authority.",
+            "An individual query item value from within the query part. See also delVar."
+        ],
+        [
+            "Example",
+            "anchorthis",
+            "www.example.com",
+            "itsasecret",
+            "/path/to/Joomla/index.php",
+            "8080",
+            "task=view&id=32",
+            "http",
+            "fredbloggs",
+            "32"
+        ]
+    ],
+    "pageTitle": "API15:JURI - Joomla! Documentation",
+    "title": "",
+    "url": "https://docs.joomla.org/index.php?title=API15:JURI&direction=prev&oldid=26154",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00307-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 844871132,
+    "recordOffset": 844854738,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The example column in the following table illustrates the result of each of the get methods on the URI above. scheme user pass host port path query fragment | | | | | | | | \\__/ \\________/ \\________/ \\_____________/ \\__/\\_______________________/ \\_____________/ \\________/ http://fredbloggs:itsasecret@www.example.com:8080/path/to/Joomla/index.php?task=view&id=32#anchorthis  Get and set methods are provided for all the component parts of a URI. The following names of the component parts are used:   Example of Get and Set Methods  <CodeExamplesForm /> Examples [Edit See Also] SeeAlso:JURI   jimport( 'joomla.environment.uri' );   Importing Returns the root URI for the request. root Returns the base URI for the request. base Returns a reference to a global JURI object, only creating it if it doesn't already exist. getInstance Checks if the supplied URL is internal isInternal Checks whether the current URI is using HTTPS isSSL Set the URI anchor string everything after the \"#\" setFragment Get the URI archor string everything after the \"#\" getFragment Set the URI path string setPath Gets",
+    "textAfterTable": "Chris Davenport 13:17, 17 April 2011 (CDT) Edit comment [Edit Descripton] JURI provides a number of methods and properties for handling Uniform Resource Identifiers (URIs). It also provides a means of obtaining the URI of the current request regardless of the web server on which Joomla is running. The formal structure of a URI is defined in RFC3986 and the following is an example taken from that document:  foo://example.com:8042/over/there?name=ferret#nose \\_/ \\______________/\\_________/ \\_________/ \\__/ | | | | | scheme authority path query fragment The scheme and path components are required, though the path may be empty (no characters). When authority is present, the path must either be empty or begin with a slash (\"/\") character. When authority is not present, the path cannot begin with two slash characters (\"//\"). The scheme usually specifies the internet protocol that is to be used to access the resource. For example, 'http' indicates that the HyperText Transfer Protocol is to be used. The authority field can be sub-divided into user information, host and port number parts. The user information part allows a URI to contain authentication information, usually in the form 'username:password', although this format is deprecated as \"The passing of authentication information in clear text has proven to be a security risk in almost every case where it has been used.\" However, as URIs containing authentication information are",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

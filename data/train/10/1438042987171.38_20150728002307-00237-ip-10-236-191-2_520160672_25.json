@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "If Return Identify Code is",
+            "00, 02, 05, 06, 08, 12, 14, 46, 53, 56, 60, 63, 64, 66, 68, 82, 83, 87, 88, A1, E2, E5, E8, F1, H2, L1, M1, N1, P1, P3, PL, R1, R2,",
+            "01, 03, E1",
+            "09, 10, 11, 42, S1, JN",
+            "00, 07, 18, 33, 34, 37, 44, 50, 52, 53, 54, 55, 56, 57, 58, 59, 61, 62, 67, 68, 72, 74, 82, 83, D6, E2, E5, E8, N2, T6, 7C, 7E, 7R, SG, Z6",
+            "00, 35, 74, 7C, 7E, 7R"
+        ],
+        [
+            "and MFI is",
+            "B",
+            "B",
+            "B",
+            "0",
+            "P"
+        ],
+        [
+            "\"MM\" of Tax Period must be",
+            "01\u201312",
+            "03, 06, 09, or 12",
+            "12",
+            "01\u201312",
+            "01\u201312"
+        ]
+    ],
+    "pageTitle": "Internal Revenue Manual - 2.4.8 Command Codes ESIGN and BSIGN",
+    "title": "",
+    "url": "http://www.irs.gov/irm/part2/irm_02-004-008.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00237-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 520188575,
+    "recordOffset": 520160672,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{22517=An Estate/Trust Series EIN must consist only of the 1041 filing requirement, no other filing requirements can be present. All others will be assigned as a Regular Series EIN., 3905=November 19, 2012, 11675=ESIGNT \u2014 During the daily analysis, those entities for which ESIGNT has been used will be dropped from the TIF, and further ERAS processing. See 2.4.8.10 for a description of ESIGNT., 11346=Federal National Mortgage Association (FNMA) \u2014 In BSC only, ERAS will process data from Federal National Mortgage Association on a monthly basis. This data contains an EIN and associated pool number. From this, ERAS will generate a TC 000 with the FRM-1041-FR set., 9847=FTDs \u2014 FTD data will be sent daily to a vendor for BMF entities with 941, 940, 943, 944, 945, 1042, 8804, CT\u20131, 1120 or 720 filing requirements (unless suppressed at the time of input).}",
+    "textBeforeTable": "These are the abbreviations unique to ERAS. 2.4.8.2\u00a0 (01-01-2007) Abbreviations Unique to ERAS Additional information concerning when to assign a new EIN and various rules as to how data is input, such as mailing and location addresses, can be found in IRM 2.7, Chapter 13, Assigning Employer Identification Numbers (EINs). Note: A notice is mailed to the taxpayer informing them of their assigned EIN and a record of the new account is sent to update the Master File. The taxpayer's entity information is entered into the IDRS system via the ESIGN screen, which sets up a new account on the IDRS database and issues a unique EIN. Return filed that includes a change of business Return filed without an EIN Request generated from the TELE-TIN program Form SS\u20134, Application for Employer Identification Number The process begins with the receipt of a: The EIN Research and Assignment System (ERAS) was designed to process requests for Employer Identification Numbers (EINs). 2.4.8.1\u00a0 (01-01-2001) Command Codes ESIGN and BSIGN General Information Terence V. Milholland Chief Technology Officer",
+    "textAfterTable": "NAP National Account Profile NSF Name Search Facility RTC Real Time Combined TIF Taxpayer Information File 2.4.8.3\u00a0 (01-01-2013) Records Produced During Daily Analysis TC000 \u2014 BMF and EPMF: A TC000 is generated to update the Master FIle with the new account. TC590 \u2014 BMF (non EO) Only: TC590 will be generated to suppress TDI issuance if the Wages Paid Date or Business Operational Date is in a future quarter within the current year or future year. FTDs \u2014 FTD data will be sent daily to a vendor for BMF entities with 941, 940, 943, 944, 945, 1042, 8804, CT\u20131, 1120 or 720 filing requirements (unless suppressed at the time of input). Notices \u2014 A notice will be generated for each entity (unless suppressed with Notice Information Code \" D\" or \"E\" at the time of input). How a Notice Information Code is input will determine which notice the taxpayer receives (See ESIGN Input format Notice Information element description (Exhibit 2.4.8\u20133)). Sequence Number \u2014 The sequence number, which was inserted into the input cycle field of the IDRS",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

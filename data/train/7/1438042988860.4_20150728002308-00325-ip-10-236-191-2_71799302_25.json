@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "ctxHdl",
+            "colName"
+        ],
+        [
+            "IN / OUT",
+            "(IN)",
+            "(IN)"
+        ],
+        [
+            "Description",
+            "Context handle.",
+            "Column whose value is to be assigned to the row id attribute."
+        ]
+    ],
+    "pageTitle": "DBMS_XMLQUERY",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/appdev.112/e16760/d_xmlque.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00325-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71815696,
+    "recordOffset": 71799302,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 19 May 2015 17:53:44 GMT",
+    "textBeforeTable": "colName IN VARCHAR2); ctxHdl IN ctxType, PROCEDURE SETROWIDATTRVALUE(  Syntax Specifies the scalar column whose value is to be assigned to the id attribute of the row enclosing tag. Passing NULL or an empty string for the colName assigns the row count value (0, 1, 2 and so on) to the row id attribute. SETROWIDATTRVALUE       Attribute name. (IN) attrName Context handle. (IN) ctxHdl Description IN / OUT Parameter attrName IN VARCHAR2); ctxHdl IN ctxType, PROCEDURE SETROWIDATTRNAME(  Syntax Sets the name of the id attribute of the row enclosing tag. Passing NULL or an empty string for the tag causes the row id attribute to be omitted. SETROWIDATTRNAME       Throws an OracleXMLNoRowsException if set to TRUE. (IN) flag Context handle. (IN) ctxHdl",
+    "textAfterTable": "SETROWSETTAG Sets the tag to be used to enclose the XML dataset. Syntax  PROCEDURE SETROWSETTAG( ctxHdl IN ctxType, tag IN VARCHAR2); Parameter IN / OUT Description ctxHdl (IN) Context handle. tag (IN) Tag name. SETROWTAG Sets the tag to be used to enclose the XML element corresponding to a db.record. Syntax  PROCEDURE SETROWTAG( ctxHdl IN ctxType, tag IN VARCHAR2); Parameter IN / OUT Description ctxHdl (IN) Context handle. tag (IN) Tag name. SETSKIPROWS Sets the number of rows to",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

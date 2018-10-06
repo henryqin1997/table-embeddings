@@ -1,0 +1,41 @@
+{
+    "relation": [
+        [
+            "Title",
+            "Valid credits Element With Single credit Element",
+            "Valid credits Element With Two credit Elements",
+            "More Than One credits Element",
+            "No credit Element in credits Element",
+            "Unknown Attribute in credits Element",
+            "Unknown Child Element in credits Element",
+            "Content in credits Element"
+        ],
+        [
+            "Description",
+            "The credits element matches the schema and it contains one credit child element. This should be linked to a testable assertion in the spec.",
+            "The credits element matches the schema and it contains two credit child elements. This should be linked to a testable assertion in the spec.",
+            "The credits element occurs more than once. This should be linked to a testable assertion in the spec.",
+            "The credits element does not contain a credit child element. This should be linked to a testable assertion in the spec.",
+            "The credits element contains an unknown attribute. This should be linked to a testable assertion in the spec.",
+            "The credits element contains an unknown child element. This should be linked to a testable assertion in the spec.",
+            "The credits element contains an content. This should be linked to a testable assertion in the spec."
+        ]
+    ],
+    "pageTitle": "TestPlan-Format - Fonts WG",
+    "title": "",
+    "url": "http://www.w3.org/Fonts/WG/wiki/TestPlan-Format",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00214-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 823638561,
+    "recordOffset": 823622931,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 23 Mar 2015 10:55:50 GMT",
+    "textBeforeTable": "signature (magicnumber) Header File Structure Tests Text color highlights on this page are as follows: red text indicates questions that need to be addressed by the Working Group, gray text indicates portions of the test suite that are not yet implemented and blue text indicates initial ideas about how the tests can be presented to User Agents. The work on the test suite that has been completed can bee seen in CVS or by visiting this page. Plan for testing all the assertions which apply to the WOFF file format itself. The majority of these will be tested by a validation tool. Test Plan - Format 3.3.1 4-Byte Alignment (private-padalign) 3.3 Private Data 3.2.10 extension element 3.2.9 licensee Element 3.2.8 trademark Element 3.2.7 copyright Element 3.2.6 license Element 3.2.5 description Element 3.2.4.1 credit Element 3.2.4 credits Element 3.2.3 vendor Element 3.2.2 uniqueid Element",
+    "textAfterTable": "Description Header Length Too Short The length field contains a value that is four bytes shorter than the actual data. Header Length Too Long The length field contains a value that is four bytes longer than the actual data. numTables Test Case Description Header Number of Tables Set to Zero The header contains 0 in the numTables field. A table directory and table data are present. totalSfntSize (longword) Test Case Description Header totalSfntSize Not a Multiple of 4 The totalSfntSize field contains a value that is missing padding bytes between two tables. Header Total SFNT Size Too Long The totalSfntSize field contains a value that is is four bytes too long. Header Total SFNT Size Too Short The totalSfntSize field contains a value that is is four bytes too short. reserved (reserved) Test Case Description Header Number of Tables Set to Zero The header contains 0 in the numTables field. A table directory and table data are present.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

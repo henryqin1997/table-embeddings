@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Element Name",
+            "Query String",
+            "Action"
+        ],
+        [
+            "Description",
+            "Displays the query string for which the request-filtering module either allows or denies access.",
+            "Displays the status of the query string, which will be either Always allow or Deny."
+        ]
+    ],
+    "pageTitle": "Request Filtering",
+    "title": "",
+    "url": "https://technet.microsoft.com/en-us/library/hh831518",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986357.49/warc/CC-MAIN-20150728002306-00000-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 897103135,
+    "recordOffset": 897081620,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{32740=Published: February 29, 2012, 32782=Updated: February 29, 2012, 32822=Applies To: Windows Server 2012, Windows Server 2012 R2}",
+    "textBeforeTable": "\u00a0 Feature Page Elements The following tables describe the UI elements that are available on the feature page and in the Actions pane. UI Elements for Request Filtering Allow or Deny Query String Dialog Boxes Query Strings Tab Add Header Dialog Box Headers Tab Allow or Deny Verb Dialog Boxes HTTP Verbs Tab Add Deny Sequence Dialog Box Allow URL Dialog Box URL Tab Add Hidden Segment Dialog Box Hidden Segments Tab Add Filtering Rule Dialog Box Rules Tab Allow or Deny File Name Extension Dialog Boxes File Name Extensions",
+    "textAfterTable": "Hidden Segments Specifies a list of hidden segments for which the request-filtering service denies access. These segments do not display in directory listings. URL Specifies a list of URL sequences for which the request-filtering service allows or denies access. HTTP Verbs Specifies a list of HTTP verbs for which the request-filtering service allows or denies access. Headers Specifies the headers and their size limits for which the request-filtering service denies access. Query Strings Specifies the query strings for which the request-filtering service denies access. Actions Pane Elements \u00a0 Element Name Description Edit Feature Settings Opens the Edit Request Filtering Settings dialog box that lets you configure general properties and request limits. Remove Removes a file name extension, rule, hidden segment, URL sequence, HTTP verb, header, or query string from the list. Edit Request Filtering Settings Dialog Box",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

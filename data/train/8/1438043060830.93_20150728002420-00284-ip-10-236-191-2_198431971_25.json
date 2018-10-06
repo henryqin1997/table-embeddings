@@ -1,0 +1,55 @@
+{
+    "relation": [
+        [
+            "HashSet",
+            "LinkedList",
+            "LinkedHashMap",
+            "CopyOnWriteArraySet",
+            "LinkedBlockingQueue",
+            "SynchronousQueue"
+        ],
+        [
+            "TreeSet",
+            "PriorityQueue",
+            "WeakHashMap",
+            "EnumSet",
+            "ArrayBlockingQueue",
+            "ConcurrentHashMap"
+        ],
+        [
+            "LinkedHashSet",
+            "HashMap",
+            "IdentityHashMap",
+            "EnumMap",
+            "PriorityBlockingQueue",
+            ""
+        ],
+        [
+            "ArrayList",
+            "TreeMap",
+            "CopyOnWriteArrayList",
+            "ConcurrentLinkedQueue",
+            "DelayQueue",
+            ""
+        ]
+    ],
+    "pageTitle": "",
+    "title": "",
+    "url": "http://ridiculousfish.com/blog/huge_post.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00284-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 198548399,
+    "recordOffset": 198431971,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampBeforeTable": "{56165=This is because, instead of omitting semicolons from the grammar, they are injected automatically by the lexer. This isn't an academic distinction, because the abstraction is leaky. For example, here's an error I got from the cgo tool:, 66143=Yahoo chat was not as full of sexually unfulfilled college girls as the spam bots would have you believe. Before the captchas arrived in 2007 (which did little in any case), Yahoo battled the bots by obfuscating the login protocol. And once the bots caught up, obfuscating it again. Rinse and repeat - by the end, the protocol had grown to outrageous complexity. A puny excerpt of the login sequence:}",
+    "TableContextTimeStampAfterTable": "{6009=52513, 323424=Floating point numbers are just like that, except the parts are all represented in binary and the base is 2. So the number .01171875, that's 3 / 256, would be written 11 x 2-100000000., 327369=Now the mantissa. Ugh. Ok, 358974.27 in straight binary is 1010111101000111110.010001010001 and then a bunch of others 0s and 1s. So the mantissa is that, minus the decimal place. And IEEE 754 says we get 23 bits for it. So first, chop off the most significant bit, because we know it will always be one, and throw out the decimal point, and then round to 23 bits. That's 01011110100011111001001, which is, uhh, 3098569. There. That's our mantissa, which occupies the remaining 23 bits., 4055=1247, 346616=Ok, we're in. Looks like a pretty standard-issue grammar. This \"objcmessageexpr\" thing looks promising. Search for it - it leads us to objc_build_message_expr(). grep for that...it's in /gcc-4061/gcc/objc/objc-act.c. Hey, check it out - at the top, it says that it implements classes and message passing for Objective-C. We're in the right place., 222203=So we reduced the failure count from 12462711 to 260. Much better, but still not perfect. Why are we still failing at times? The answer, of course, is that just because processor 0 writes in the order we want is no guarantee that processor1 will read in the desired order. Processor 1 may issue the reads in the wrong order, and processor 0 would write in between those two reads. We need a memory barrier in the reader thread, to force the reads into the right order as well:, 342014=Over an average of three runs, I benchmarked 25681135 messages a second. All right., 18063=1249, 19349=11315, 108159=This post is in homage to my old page, a triumph of curvaceousness. May it sleep roundly., 86261=So k = 35 forces the error term to be less than $\\frac 1 d$, and therefore k = 35 is a good enough approximation. This is good news, because then $m = \\lceil \\frac {2^{35}} {11} \\rceil = 3123612579 < 2^{32}$, so our magic number fits in 32 bits, and we don't need to worry about overflow! We can avoid the subtraction, addition, and extra shifting in the general algorithm. Indeed, clang outputs:}",
+    "lastModified": "Fri, 17 May 2013 08:05:07 GMT",
+    "textBeforeTable": "Array December 23rd, 2005 Our arrays, aren't. There, that's known as a teaser. You see it in television all the time. \"Find out which common household plant devours pets at night...but first.\" And then you have to sit through and watch the stuff about Brad and Angelina shacking up / Shaq driving his new Hummer / Hummer's new fragrance before they get to the good stuff, the petnivorous plants. I don't know what I'd do without TiVo. And here I've done the same thing as the networks. Shame on me. I'll get to it, I promise. But first But first, let's talk about data structures. I'll try to make this more interesting than Donald Trump's new reality fragrance SUV. Data structures are really important, we're lead to believe, so important that entire classes in CS curricula discuss nothing else all year. Gosh! Let's look at all the data structures we have available in Java. Maybe our readers know, and will be kind enough to leave a comment. aaron: We want to prevent the heap from being executable as well, and page granularity is pretty big; there would be a lot of unused executable space that's just asking to be taken advantage of. Plus malloc() is expensive. But perhaps you're right, and there is a better way. How do other compilers implement nested",
+    "textAfterTable": "That's 22, by my count, excluding the legacy classes like Vector. Here's the data structures we have in standard C++: vector deque list slist bit_vector set map multiset multimap hash_set hash_map hash_multiset hash_multimap stack queue priority_queue bitset That's, uh, 17. Here's what I noticed while writing these up: most of these classes tell you how they work, right in the name. CopyOnWriteArraySet is a set that implements copy-on-write and is backed by an array. ArrayList is a list implemented via an array. hash_multimap is a multi-map implemented via hashing. And so on. CoreFoundation I'm going to compare those to CoreFoundation. CoreFoundation, if you're a bit hazy, is Apple's framework that \"sits below\" Carbon and Cocoa, and is one of the few places where these two APIs meet. CoreFoundation has collections, so that other APIs like Quartz that take and return collections don't need separate Carbon and Cocoa interfaces. But the real reason I'm talking about CoreFoundation is that it's open source. Here's all the CoreFoundation collections, leaving out the immutable variants: CFMutableDictionary CFMutableBag CFMutableBitVector CFMutableSet CFMutableArray CFBinaryHeap CFMutableTree That's only 7! And these are all the files? Doesn't Apple know how important data structures are? And most of those names",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

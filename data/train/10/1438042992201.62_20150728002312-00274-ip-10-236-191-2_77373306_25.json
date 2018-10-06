@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Script",
+            "CKGENUSR.SQL",
+            "MIGRATE_REPOS_USERS.SQL",
+            "CKGENPRV.SQL",
+            "MIGRATE_REPOS_PRIVS.SQL"
+        ],
+        [
+            "Description",
+            "Located in Oracle_home\\REPADM61\\UTL directory. This script generates the migration script called MIGRATE_REPOS_USERS.SQL to the working directory.",
+            "When executed, this script creates Oracle database users on the target database (where the release 6i repository resides) with the same usernames and privileges as those from the source database (where the release 2.1.2 or 6.0 repository resides). It also creates a log file called MIGRATE_REPOS_USERS.LOG in the working directory. Note: Migrated subordinate users are given the default password \"changeme\".",
+            "Located in Oracle_home\\REPADM61\\UTL directory. This script generates the migration script called MIGRATE_REPOS_PRIVS.SQL to the working directory.",
+            "When executed, this script creates repository users with default repository privileges in the release 9i repository. Also creates a log file called MIGRATE_REPOS_PRIVS.LOG in the working directory."
+        ]
+    ],
+    "pageTitle": "Oracle9i SCM Repository Installation Guide - Installation, Migration and Upgrade",
+    "title": "",
+    "url": "http://download.oracle.com/otn_hosted_doc/designer/des9i_9029/cmnhlp72/rep_insgde/igrepos_9i.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992201.62/warc/CC-MAIN-20150728002312-00274-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 77410271,
+    "recordOffset": 77373306,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{116346=\u00a0\u00a0\u00a0 4.0.12.30.25 (6i Production) \u00a0\u00a0\u00a0 4.0.12.40.3 (6i Release 2) \u00a0\u00a0\u00a0 4.0.12.46.1 (6i Release 3), \u00a0\u00a0\u00a0 4.0.12.52.1 (6i Release 4) \u00a0\u00a0\u00a0 4.0.12.69.2 (6i Release 4.1 or 4.1.1) \u00a0\u00a0\u00a0 4.0.12.80.6 (6i Release 4.2 or 9i Release 2 (9.0.2.0)) \u00a0\u00a0\u00a0 4.0.12.88.2 (6i Release 4.3 or 9i Release 2 (9.0.2.1)) \u00a0\u00a0\u00a0 4.0.12.89.9 (6i Release 4.4 or 9i Release 2 (9.0.2.2)) \u00a0\u00a0\u00a0 4.0.12.90.11 (6i Release 4.5 or 9i Release 2 (9.0.2.3)) \u00a0\u00a0\u00a0 4.0.12.91.9 (6i Release 4.6 or 9i Release 2 (9.0.2.4)) \u00a0\u00a0\u00a0 4.0.12.92.12 (6i Release 4.7 or 9i Release 2 (9.0.2.5)) \u00a0\u00a0\u00a0 4.0.12.93.10 (6i Release 4.8 or 9i Release 2 (9.0.2.6))}",
+    "lastModified": "Sat, 12 May 2007 21:05:30 GMT",
+    "textBeforeTable": "\u00a0 In the Connect dialog box, fill in the fields as shown in the following table: Programs > Oracle9i Developer Suite - 9iDS_home > Oracle 9i Software Configuration Management\u00a0 > Repository Administration Utility \u00a0 \u00a0 \u00a0 Click the Start button and choose: Step 9 - Start the Repository Administration Utility Close SQL*Plus. The RESOURCE role grants unlimited quotas to the repository owner on all tablespaces, including SYSTEM. grant connect, resource to repos_owner; The CONNECT role enables the repository owner to connect to the repository. Grant connection and resource roles to the repository owner: grant ck_oracle_repos_owner to repos_owner; Grant the role to the repository owner: grant drop public synonym to repos_owner; grant create public synonym to repos_owner; One consideration will be how to give subordinate users access to the repository. For ten or more subordinate users, we recommend giving access using public synonyms. To enable the repository owner to grant and revoke access using public synonyms, you must make the following grants to the repository owner: \u00a0 \u00a0 If applicable, follow the further instructions that are displayed as part of the script. Note: Take extra care to grant select access correctly on SYS.V_$PARAMETER, otherwise the installation fails at stage CKGLBWRK. This results in an invalid JR_WORKAREA package and a failure to create the global shared workarea and system folder.",
+    "textAfterTable": "The following table shows Windows Registry key names, the parameters relevant to repository installation, and an indication of what each parameter value should be: Key Parameter Value should be... CHELP72 HELP72_RAU\u00a0 d:\\Oracle_home\\CDOC72\\HELP\\ CKRAU65.HLP\u00a0 REPADM61 EXECUTE_OBJSTAT d:\\Oracle_home\\BIN\\CKOS61.EXE REPADM61 EXECUTE_REPOSPARAM d:\\Oracle_home\\BIN\\CKCR61.EXE REPADM61 LOG_DIRECTORY_RAU\u00a0 d:\\Oracle_home\\REPADM61\\LOGS\u00a0 REPADM61 REPADM61\u00a0 d:\\Oracle_home\\REPADM61\u00a0 REPOS61 EXECUTE_EXPORT\u00a0 d:\\Oracle_home\\BIN\\EXP.EXE\u00a0 REPOS61 EXECUTE_IMPORT\u00a0 d:\\Oracle_home\\BIN\\IMP.EXE\u00a0 REPOS61 EXECUTE_PLUS_RAU\u00a0 d:\\Oracle_home\\BIN\\SQLPLUS.EXE\u00a0 \u00a0 Working directory\u00a0 Any writeable directory\u00a0 Check also that privileges have been set up as shown in the following table: Choose To Check Notes Privileges > Privileges granted for public access System privileges required for subordinate users to access the repository using public synonyms Must have CREATE PUBLIC SYNONYM and DROP PUBLIC SYNONYM if subordinate users are to access the repository using public synonyms; otherwise ignore.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

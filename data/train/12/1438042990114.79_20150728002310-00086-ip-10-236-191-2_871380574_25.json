@@ -1,0 +1,75 @@
+{
+    "relation": [
+        [
+            "Binding",
+            "BasicHttpBinding",
+            "NetTcpBinding",
+            "NetNamedPipeBinding",
+            "WSHttpBinding",
+            "WSDualHttpBinding",
+            "NetMsmqBinding"
+        ],
+        [
+            "Intranet",
+            "No",
+            "Yes",
+            "Yes",
+            "No",
+            "No",
+            "Yes"
+        ],
+        [
+            "Internet",
+            "No",
+            "Yes",
+            "No",
+            "Yes",
+            "Yes",
+            "No"
+        ],
+        [
+            "B2B",
+            "Yes",
+            "No",
+            "No",
+            "Yes",
+            "Yes",
+            "No"
+        ],
+        [
+            "Anonymous",
+            "No",
+            "Yes",
+            "No",
+            "Yes",
+            "Yes",
+            "Yes"
+        ],
+        [
+            "None",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes"
+        ]
+    ],
+    "pageTitle": "Chapter 10. Security",
+    "title": "",
+    "url": "https://msdn.microsoft.com/en-us/library/orm-9780596521301-02-10.aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00086-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 871463399,
+    "recordOffset": 871380574,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{261473=If you use SQL Server, .NET installs website administration pages under \\Inetpub\\wwwroot\\aspnet_webadmin\\<version number>. Developers can configure the application directly from within Visual Studio 2008. When you select ASP.NET Configuration from the Web Site menu, Visual Studio 2008 will launch the ASP.NET development server used for the administration pages, browse to the ASP.NET administration pages, and allow you to configure various parameters, including security. You can configure the following aspects for your application:, 433122=[8] I first published an earlier version of Credentials Manager in my article \"Manage Custom Security Credentials the Smart (Client) Way\" (CoDe Magazine, November 2005)., 262693=There are a number of significant shortcomings to using the Visual Studio 2008-driven administration pages. First, you need Visual Studio 2008. It is unlikely that application or system administrators will have Visual Studio 2008, let alone know how to use it. The administration pages use \"/\" by default for the application name, and do not offer any visual way to modify that. Also, you must create a web application to activate the administration pages and there is no remote access: the application and Visual Studio 2008 must be co-located in order for Visual Studio 2008 to be able to access the application's configuration file, and the ASP.NET development server used for the administration pages cannot accept remote calls. The browser-based user interface is somewhat annoying (you need to frequently click the Back button) and rather dull. Furthermore, many features that administrators are likely to want to use are not available via the administration pages, despite the fact that the underlying provider classes support those features. Some of the things missing from the Visual Studio 2008-driven administration pages include the ability to:}",
+    "textBeforeTable": "Table 10.9. Bindings and security scenarios Now that you have seen the making of the five key scenarios, Table 10.9, \"Bindings and security scenarios\" and Table 10.10, \"The security aspects of the various scenarios\" serve as a summary of their key elements. Table 10.9, \"Bindings and security scenarios\" lists the bindings used in each scenario. Note again that while technically you could use other bindings in almost all of the scenarios, my binding selections are aligned with the contexts in which the scenarios are used. Scenarios Summary Unlike in all the previous scenarios, in the absence of transfer security, callbacks come in under the client's own identity. The principal identity will be set to an instance of WindowsIdentity with the client's username. The callback will be authenticated, but there is no point in either impersonation or using role-based security since the client will only be authorizing itself. In addition, the security call context of the callback will be set to null. Callbacks Because the clients are anonymous, the service cannot impersonate any of its clients. Impersonation - - - Security context Windows - - - Security context",
+    "textAfterTable": "Table 10.10, \"The security aspects of the various scenarios\" shows how each of the security aspects defined at the beginning of this chapter (transfer security, service and client authentication, authorization, and impersonation) relates to each scenario. Table 10.10. The security aspects of the various scenarios Aspect Intranet Internet B2B Anonymous None Transport security Yes No No No No Message security No Yes Yes Yes No Service authentication Windows Certificate Certificate Certificate No Client authentication Windows ASP.NET Certificate No No Authorization Windows ASP.NET",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

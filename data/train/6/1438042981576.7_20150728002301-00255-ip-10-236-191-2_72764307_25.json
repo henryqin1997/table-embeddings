@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Property",
+            "Default Value",
+            "Range of Values",
+            "Syntax"
+        ],
+        [
+            "Description",
+            "FALSE",
+            "FALSE|TRUE",
+            "HS_FDS_GRAPHIC_TO_MBCS={FALSE|TRUE}"
+        ]
+    ],
+    "pageTitle": "Initialization Parameters",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/gateways.112/e12014/app_initparam.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00255-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72781991,
+    "recordOffset": 72764307,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 14 Aug 2010 15:00:30 GMT",
+    "textBeforeTable": "B.3.17 HS_FDS_FETCH_ROWS Note: If this parameter is not specified and the owner is not explicitly specified in the SQL statement, then the user name of the Oracle user or the user name specified when creating the database link is used. The name of the table owner that is used for the non-Oracle database tables if an owner is not specified in the SQL statements. Not applicable Range of Values None Default Value Description Property B.3.16 HS_FDS_DEFAULT_OWNER The name of the password of the recovery account is case-sensitive. HS_FDS_RECOVERY_PWD is used with the HS_FDS_RECOVERY_ACCOUNT. The recovery user connects to the IBM database if a distributed transaction is in doubt. Specifies the password of the recovery account used for the commit-confirm transaction model set up at the non-Oracle system. For more information about the commit-confirm model, see the HS_TRANSACTION_MODEL parameter.",
+    "textAfterTable": "HS_FDS_FETCH_ROWS specifies the fetch array size. This is the number of rows to be fetched from the non-Oracle database and to return to Oracle database at one time. This parameter will be affected by the HS_RPC_FETCH_SIZE and HS_RPC_FETCH_REBLOCKING parameters. B.3.18 HS_FDS_TRACE_LEVEL Property Description Default Value OFF Range of values OFF, ON, DEBUG Specifies whether error tracing is turned on or off for gateway connectivity. The following values are valid: OFF disables the tracing of error messages. ON enables the tracing of error messages that occur when you encounter problems. The results are written by default to a gateway log file in LOG directory where the gateway is installed. DEBUG enables the tracing of detailed error messages that can be used for debugging. B.3.19 HS_FDS_TRANSACTION_LOG",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

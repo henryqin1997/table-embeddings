@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "",
+            "From",
+            "To"
+        ],
+        [
+            "Declaration",
+            "- (void)replaceChildNode:(SCNNode *)child with:(SCNNode *)child2",
+            "- (void)replaceChildNode:(SCNNode *)oldChild with:(SCNNode *)newChild"
+        ]
+    ],
+    "pageTitle": "SceneKit Changes",
+    "title": "",
+    "url": "https://developer.apple.com/library/mac/releasenotes/General/APIDiffsMacOSX10_9/SceneKit.html",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986148.56/warc/CC-MAIN-20150728002306-00313-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 864741648,
+    "recordOffset": 864726067,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{88737=Copyright \u00a9 2015 Apple Inc. All rights reserved.}",
+    "textBeforeTable": "+[SCNCamera camera] Modified -[SCNCamera setProjectionTransform:] Added SCNCamera.orthographicScale Added SCNCamera.focalSize Added SCNCamera.focalDistance Added SCNCamera.focalBlurRadius Added SCNCamera.automaticallyAdjustsZRange Added SCNCamera.aperture Added SCNCamera.h -[SCNBoundingVolume setBoundingBoxMin:max:] Added SCNBoundingVolume.h #def SCN_EXTERN Added #def SCENEKIT_ENUM_AVAILABLE Added #def SCENEKIT_CLASS_AVAILABLE Added #def SCENEKIT_UNUSED Removed #def SCENEKIT_INLINE Removed #def SCENEKIT_EXTERN Removed #def SCENEKIT_DEPRECATED Removed SCNBase.h SCNAnimationEventBlock Added +[SCNAnimationEvent animationEventWithKeyTime:block:] Added SCNAnimationEvent Added -[SCNAnimatable resumeAnimationForKey:] Added -[SCNAnimatable pauseAnimationForKey:] Added -[SCNAnimatable isAnimationForKeyPaused:] Added CAAnimation.fadeOutDuration Added CAAnimation.fadeInDuration Added",
+    "textAfterTable": "SCNConstraint.h Added SCNConstraint Added SCNLookAtConstraint Added SCNLookAtConstraint.gimbalLockEnabled Added +[SCNLookAtConstraint lookAtConstraintWithTarget:] Added SCNLookAtConstraint.target Added SCNTransformConstraint Added +[SCNTransformConstraint transformConstraintInWorldSpace:withBlock:] SCNGeometry.h Added +[SCNGeometry geometry] Added SCNGeometry.levelsOfDetail Modified SCNGeometry Protocols From NSCopying, SCNAnimatable, SCNBoundingVolume To NSCopying, SCNAnimatable, SCNBoundingVolume, SCNShadable Modified +[SCNGeometry geometryWithSources:elements:] Declaration From + (id)geometryWithSources:(NSArray *)sources elements:(NSArray *)elements To + (instancetype)geometryWithSources:(NSArray *)sources elements:(NSArray *)elements Modified +[SCNGeometryElement geometryElementWithData:primitiveType:primitiveCount:bytesPerIndex:] Declaration From + (id)geometryElementWithData:(NSData *)data primitiveType:(SCNGeometryPrimitiveType)primitiveType primitiveCount:(NSInteger)primitiveCount bytesPerIndex:(NSInteger)bytesPerIndex To + (instancetype)geometryElementWithData:(NSData *)data primitiveType:(SCNGeometryPrimitiveType)primitiveType primitiveCount:(NSInteger)primitiveCount bytesPerIndex:(NSInteger)bytesPerIndex Modified +[SCNGeometrySource geometrySourceWithData:semantic:vectorCount:floatComponents:componentsPerVector:bytesPerComponent:dataOffset:dataStride:] Declaration From + (id)geometrySourceWithData:(NSData *)data semantic:(NSString *)semantic vectorCount:(NSInteger)vectorCount floatComponents:(BOOL)floatComponents componentsPerVector:(NSInteger)componentsPerVector bytesPerComponent:(NSInteger)bytesPerComponent dataOffset:(NSInteger)offset dataStride:(NSInteger)stride To",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

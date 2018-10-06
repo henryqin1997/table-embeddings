@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "Tag ID",
+            "'back_type'",
+            "'name'",
+            "'type'",
+            "'version'"
+        ],
+        [
+            "Tag Name",
+            "LookHeadBackType",
+            "LookHeadName",
+            "LookHeadType",
+            "LookHeadVersion"
+        ],
+        [
+            "Writable",
+            "N",
+            "N",
+            "N",
+            "N"
+        ],
+        [
+            "Values / Notes",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Leaf Tags",
+    "title": "",
+    "url": "http://owl.phy.queensu.ca/~phil/exiftool/TagNames/Leaf.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988051.33/warc/CC-MAIN-20150728002308-00057-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 186620688,
+    "recordOffset": 186612486,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 08 Dec 2010 16:12:31 GMT",
+    "textBeforeTable": "These tags are found in .MOS images from Leaf digital camera backs as written by Creo Leaf Capture. They exist within the Leaf-specific directory structure of EXIF tag 0x8606. The tables below list observed Leaf tags, however ExifTool will extract any tags found in the Leaf directories even if they don't appear in these tables. Leaf Tags",
+    "textAfterTable": "'camera_profile' CameraProfile - --> Leaf CameraProfile Tags 'icc_camera_profile' ICC_Profile - --> ICC_Profile Tags 'icc_camera_to_tone_matrix' ToneMatrix N \u00a0 'icc_camera_to_tone_space_flow' ToneSpaceFlow N \u00a0 'icc_rgb_ws_profile' RGB_Profile - --> ICC_Profile Tags 'image_offset' ImageOffset N \u00a0 'pattern_ratation_angle' PatternAngle N (\"ratation\" is not a typo) Leaf CameraProfile Tags All Tag ID's in the following table have a leading 'CamProf_' which has been removed. Tag\u00a0ID Tag Name Writable Values / Notes 'back_type' CameraBackType N \u00a0 'capture_profile' CaptureProfile - --> Leaf CaptureProfile Tags 'image_profile' ImageProfile - --> Leaf ImageProfile Tags 'name' CameraName N \u00a0 'type' CameraType N \u00a0 'version' CameraProfileVersion N \u00a0 Leaf CaptureProfile Tags All Tag ID's in the following table have a leading 'CaptProf_' which has been removed. Tag\u00a0ID Tag Name Writable Values / Notes 'CCD_rect' CCDRect N \u00a0 'CCD_valid_rect' CCDValidRect N \u00a0 'CCD_video_rect' CCDVideoRect N \u00a0 'back_type' CaptProfBackType N \u00a0 'center_dark_rect' CenterDarkRect N \u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

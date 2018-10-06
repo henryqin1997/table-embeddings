@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Column",
+            "SCN",
+            "RSP Time",
+            "Type",
+            "Time",
+            "Name"
+        ],
+        [
+            "Indicates",
+            "The SCN for the restore point.",
+            "The time specified in the CREATE RESTORE POINT statement; otherwise null.",
+            "GUARANTEED if a guaranteed restore point; null if a normal restore point.",
+            "The time that the restore point was created.",
+            "The name of the restore point."
+        ]
+    ],
+    "pageTitle": "LIST",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/backup.112/e10643/rcmsynta027.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00266-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71719547,
+    "recordOffset": 71700300,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 14 Aug 2010 15:00:26 GMT",
+    "textBeforeTable": "Table 2-26 List of Restore Points (LIST RESTORE POINT) The comment provided when the script was created. Description The name of the stored script. Script\u00a0Name Indicates Column Table 2-25 List of Stored Scripts in the Recovery Catalog (LIST SCRIPT NAMES) The time at which the incarnation was created. Reset\u00a0Time The SCN at which the incarnation was created. Reset\u00a0SCN CURRENT for the current incarnation, PARENT for the parent incarnations of the current incarnation, and ORPHAN for orphaned incarnations. STATUS The",
+    "textAfterTable": "Table 2-27 List of Failures Column Indicates Failure\u00a0ID The unique identifier for a failure. Priority The priority of the failure: CRITICAL, HIGH, or LOW. Failures with critical priority require immediate attention because they make the whole database unavailable. Typically, critical failures bring down the instance and are diagnosed during the subsequent startup. The database is not available until all critical failures are fixed (see ADVISE FAILURE). Failures with HIGH priority make a database partially unavailable or unrecoverable, and usually have to be repaired in a reasonably short time. Examples of such failures include physical data block corruptions, nonfatal I/O errors, missing archived redo log files or backup files, and so on. Failures with LOW priority can be ignored until more important failures are fixed. For example, a block corruption will be initially assigned a high priority, but if this block is not important for the database availability, you can use CHANGE FAILURE to change the priority to LOW.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

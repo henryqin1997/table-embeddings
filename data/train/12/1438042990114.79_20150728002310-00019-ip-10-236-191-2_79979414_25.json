@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "D",
+            "0",
+            "1"
+        ],
+        [
+            "Q",
+            "X",
+            "X"
+        ],
+        [
+            ">",
+            "Falling",
+            "Falling"
+        ],
+        [
+            "Qnext",
+            "0",
+            "1"
+        ]
+    ],
+    "pageTitle": "electromaniacs.com | Flip-flop circuits | Flipflop, Flipflops, Output, Clock, Input",
+    "title": "",
+    "url": "http://electromaniacs.com/content/view/204/9/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00019-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 79998023,
+    "recordOffset": 79979414,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{40514=The origin of the name for the JK flip-flop is detailed by P. L. Lindley, a JPL engineer, in a letter to EDN, an electronics newsletter. The letter is dated June 13, 1968, and was published in the August edition of the newsletter. In the letter, Mr. Lindley explains that he heard the story of the JK flip-flop from Dr. Eldred Nelson, who is responsible for coining the term while working at Hughes Aircraft., 18461=The first electronic flip-flop was invented in 1919 by William Eccles and F. W. Jordan (Radio Review Dez 1919 pages 143 following). It was initially called the Eccles-Jordan trigger circuit. The name flip-flop was later derived from the sound produced on a speaker connected with one of the backcoupled amplifiers output during the triggerprocess within the circuit.}",
+    "lastModified": "Mon, 03 Aug 2015 21:37:38 GMT",
+    "textBeforeTable": "Set-reset flip-flops (SR flip-flops) The SR (set-reset) flip-flop has two inputs: S (set) and R (reset). If R is active, the output goes to zero. If S is active, the output goes to one. If neither is activated, the previous state is maintained. Both inputs should not be activated simultaneously; however, if they are, the typical response is for both the inverted and non inverted outputs to have the same level. The behavior of the flip-flop can be described by the characteristic equation: Q+ = S + R'Q. The behavior of an SR flip-flop can written in the form of a truth table: Level-triggered flip-flops Level-triggered flip-flops respond whenever a signal level changes. // if (window.showTocToggle) { var tocShowText = \"show\"; var tocHideText = \"hide\"; showTocToggle(); } // 7 External links 6 See also 5 Flip-Flop integrated circuits 4 Timing and metastability 3 Uses 2.3 D flip-flop 2.2 JK flip-flop 2.1 Toggle flip-flops (T flip-flops) 2 Edge-triggered flip-flops 1.2 D-type transparent latch 1.1 Set-reset flip-flops (SR flip-flops) 1 Level-triggered flip-flops",
+    "textAfterTable": "0 1 X 0 1 0 X 1 1 1 X implementation dependent An SR flip-flop timing diagram. We can implement a the SR flip-flop with a pair of either NAND or NOR gates. The NOR version is conceptually easier as it has active high inputs. However, the NAND version is more widely known and used, as NAND gates were cheaper in transistor-transistor logic. We can also easily add an enable input. If this is implemented in the same gates as the flip-flop, then it serves to further invert the inputs - meaning a NAND based device will now have active high inputs. This input may be regarded as a clock but the flip-flop is still unsuitable for sequential design. When the clock goes high, the signal will propagate through all flip-flops, not just from one to the next. An SR flip-flop circuit diagram.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

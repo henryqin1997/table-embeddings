@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Release",
+            "Release 3.4.0",
+            "Release 3.5.0"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "The vrf vrf-name keyword and argument were added."
+        ]
+    ],
+    "pageTitle": "Multicast Routing and Forwarding Commands on Cisco IOS XR Software - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/crs/software/crs_r4-3/command/reference/b_mcast_cr43xcrs_chapter_011.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00030-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 367483703,
+    "recordOffset": 367408781,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{329090=The first four lines indicate that a total of 2709724 packets representing 184261232 bytes matched all (*, G) routes and were punted to line card CPU for further processing., 428276=The following is sample output from the show mhost groups command that shows the MHost groups 239.1.1.1, 224.0.0.22, 224.0.0.2, 224.0.0.1, 224.0.0.13, and 224.0.1.40 have joined on loopback 0 interface:, 159771=The MDT tunnel default size is 1376.}",
+    "textBeforeTable": "Command History Multicast VRF configuration Multicast routing address family IPv4 and IPv6 configuration Multicast routing configuration Command Modes This feature is disabled by default. Command Default This command has no keywords or arguments. Syntax Description per-prefix accounting no per-prefix accounting To enable accounting for multicast routing, use the accounting per-prefix command in the appropriate configuration mode. To return to the default behavior, use the no form of this command. accounting per-prefix vrf (multicast) ttl-threshold (multicast) static-rpf show mrib tlc show mrib table-info show mrib route outgoing-interface show mrib route-collapse show mrib route show mrib nsf show mrib mdt-interface show mrib label-table-info show mrib fgid show mrib client show mhost groups show mhost default-interface show mfib table-info show mfib route show mfib nsf show mfib mdt statistics show mfib interface show",
+    "textAfterTable": "Usage Guidelines To use this command, you must be in a user group associated with a task group that includes appropriate task IDs. If the user group assignment is preventing you from using a command, contact your AAA administrator for assistance. The accounting per-prefix command is used to enable per-prefix counters only in hardware. Cisco\u00a0IOS\u00a0XR Software counters are always present. When enabled, every existing and new (S, G) route is assigned forward, punt, and drop counters on the ingress route and forward and punt counters on the egress route. The (*, G) routes are assigned a single counter. There are a limited number of counters on all nodes. When a command is enabled, counters are assigned to routes only if they are available. Because the use of this counter can be resource-intensive when a large number of routes are configured, such as for multicast VPN (there is a limit of 150,000 routes to a router), use the show mfib hardware resource-counters command in EXEC mode to check resource allocation. Should hardware resource allocation be an issue, we recommend the use of the accounting per-prefix forward-only command. To verify the number",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

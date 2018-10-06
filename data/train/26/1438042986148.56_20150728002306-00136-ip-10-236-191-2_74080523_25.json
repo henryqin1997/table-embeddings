@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Enable Shared Credentials",
+            "Enable Public Credentials"
+        ],
+        [
+            "Description",
+            "Indicate whether this external application enables shared user credentials, and specify the credentials. Select Enable Shared Credentials, and then enter User Name and Password credentials for the shared user. When shared credentials are specified, every user accessing this external application, through WebCenter Spaces, is authenticated using the user name and password defined here. WebCenter users are not presented with a login form. Because WebCenter users do not need to define personal credentials of their own, external applications with shared credentials are not listed in the external application's change password task flows such as My Accounts (see also Section 35.7, \"Providing Login Information for External Applications\".)",
+            "Indicate whether unauthenticated users (public users) may access this external application. Select Enable Public Credentials, and then enter User Name and Password credentials for the public user. When public credentials are specified, public users accessing this external application through WebCenter Spaces public pages are logged in using the user name and password defined here. If public credentials are not specified, public users will see an authorization error indicating this external application is not accessible to public users."
+        ]
+    ],
+    "pageTitle": "Configuring Services, Portlet Producers, and External Applications",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E21764_01/webcenter.1111/e10149/config_svcs_prod_extapp.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986148.56/warc/CC-MAIN-20150728002306-00136-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74122191,
+    "recordOffset": 74080523,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 13 May 2015 05:18:34 GMT",
+    "textBeforeTable": "Table 6-26 External Application Connection - Shared User and Public User Credentials Specify shared and public user credentials, if required. For details, see Table 6-26. Click Delete to remove a login field. Display to User - Select to display the field on the external application login screen. If the field is not displayed (unchecked), then a default Value must be specified. Value - Enter a default value for the field or leave blank for a user to specify. This field is not applicable if the application uses basic authentication. Name - Enter the name that identifies the field on the HTML login form that may require user input to log in. This field is not applicable if the application uses basic authentication. If your application requires additional login criteria, expand Additional Login Fields. For example, in addition to user name and password, the Lotus Notes application requires two additional fields - Host and MailFilename. Click Add to specify an additional field for the login form. For each new field, do the following: Additional Login Fields Description Field",
+    "textAfterTable": "Click OK to register the application. 6.6.3 Working with Task Flows for External Applications To register external applications through an external application task flow you must have the following roles and permissions: AppConnectionManager role - Enables you to manage external applications. See also, \"Granting Application Roles Through Fusion Middleware Control\" in Oracle Fusion Middleware Administrator's Guide for Oracle WebCenter. View Page permission - Enables access to the page containing the task flow. See also, Section 23.1, \"Setting Access on a Page.\" This section includes the following subsections: Section 6.6.3.1, \"Adding an External Application Task Flow to a Page\" Section 6.6.3.2, \"Registering External Applications Through the External Application Task Flow\" Section 6.6.3.3, \"Adding an Application Navigator Task Flow to a Page\" Section 6.6.3.4, \"Making External Applications Available through the Application Navigator Task Flow\" Section 6.6.3.5, \"Setting External Application Task Flow Properties\" 6.6.3.1 Adding an External Application Task Flow to a Page Note: External applications links exposed in the Application Navigator task flow are not automatically removed when an external application is deleted. To prevent",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

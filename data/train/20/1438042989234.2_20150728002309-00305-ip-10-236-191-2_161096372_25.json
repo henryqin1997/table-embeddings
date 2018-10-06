@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Keywords",
+            "datain",
+            "lon_0"
+        ],
+        [
+            "Description",
+            "original 1-d or 2-d data. Default None.",
+            "center of map projection region. Defaut None, given by current map projection."
+        ]
+    ],
+    "pageTitle": "matplotlib basemap toolkit \u2014 Basemap Matplotlib Toolkit 1.0.8 documentation",
+    "title": "",
+    "url": "http://matplotlib.org/basemap/api/basemap_api.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00305-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 161122855,
+    "recordOffset": 161096372,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{35174=display blue marble image (from http://visibleearth.nasa.gov) as map background. Default image size is 5400x2700, which can be quite slow and use quite a bit of memory. The scale keyword can be used to downsample the image (scale=0.5 downsamples to 2700x1350)., 74526=display etopo relief image (from http://www.ngdc.noaa.gov/mgg/global/global.html) as map background. Default image size is 5400x2700, which can be quite slow and use quite a bit of memory. The scale keyword can be used to downsample the image (scale=0.5 downsamples to 5400x2700).}",
+    "lastModified": "Fri, 14 Feb 2014 19:25:23 GMT",
+    "textBeforeTable": "The desired projection is set with the projection keyword. Default is cyl. Supported values for the projection keyword are: Calling a Basemap class instance with the arguments lon, lat will convert lon/lat (in degrees) to x/y map projection coordinates (in meters). The inverse transformation is done if the optional keyword inverse is set to True. Sets up a basemap with specified map projection. and creates the coastline data structures in map projection coordinates. \u00b6 ) ax=None epsg=None, round=False, celestial=False, anchor='C', fix_aspect=True, boundinglat=None, satellite_height=35786000, suppress_ticks=True, no_rot=False, k_0=None, o_lat_p=None, o_lon_p=None, lon_2=None, lon_1=None, lon_0=None, lat_0=None, lat_2=None, lat_1=None, lat_ts=None, ellps=None, rsphere=6370997.0, area_thresh=None, resolution='c', projection='cyl', height=None, width=None, urcrnry=None, urcrnrx=None, llcrnry=None, llcrnrx=None, urcrnrlat=None, urcrnrlon=None, llcrnrlat=None, llcrnrlon=None, ( Basemap mpl_toolkits.basemap. class addcyclic(): Add cyclic (wraparound) point in longitude. shiftgrid(): shifts global lat/lon grids east or west. maskoceans(): mask \u2018wet\u2019 points of an input array. interp(): bilinear interpolation between rectilinear grids. Contains the Basemap class (which does most of the heavy lifting), and the following functions: Module for plotting data on maps with matplotlib. mpl_toolkits.basemap",
+    "textAfterTable": "aeqd Azimuthal Equidistant sinu Sinusoidal poly Polyconic omerc Oblique Mercator gnom Gnomonic moll Mollweide lcc Lambert Conformal tmerc Transverse Mercator nplaea North-Polar Lambert Azimuthal gall Gall Stereographic Cylindrical npaeqd North-Polar Azimuthal Equidistant mill Miller Cylindrical merc Mercator stere Stereographic eqdc Equidistant Conic rotpole Rotated Pole cyl Cylindrical Equidistant npstere North-Polar Stereographic spstere South-Polar Stereographic hammer Hammer geos Geostationary nsper Near-Sided Perspective eck4 Eckert IV aea Albers Equal Area kav7 Kavrayskiy VII spaeqd South-Polar Azimuthal Equidistant ortho Orthographic cass Cassini-Soldner vandg van der Grinten laea Lambert Azimuthal Equal Area splaea South-Polar Lambert Azimuthal robin Robinson For most map projections, the map projection region can either be specified by setting these keywords: Keyword Description llcrnrlon longitude of lower left hand corner of the desired map domain (degrees). llcrnrlat latitude of",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

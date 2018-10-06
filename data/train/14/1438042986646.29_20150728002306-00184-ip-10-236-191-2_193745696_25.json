@@ -1,0 +1,41 @@
+{
+    "relation": [
+        [
+            "option name",
+            "WorkingPrecision",
+            "Scale",
+            "Terms",
+            "Method"
+        ],
+        [
+            "default value",
+            "MachinePrecision",
+            "1",
+            "7",
+            "EulerSum"
+        ],
+        [
+            "",
+            "number of digits of precision to be used",
+            "size of steps in the evaluation",
+            "total number of terms generated in the sequence",
+            "method of evaluation, either EulerSum (numerical limit of difference quotients) or NIntegrate (Cauchy's integral formula)"
+        ]
+    ],
+    "pageTitle": "Numerical Calculus Package\u2014Wolfram Language Documentation",
+    "title": "",
+    "url": "http://reference.wolfram.com/language/NumericalCalculus/tutorial/NumericalCalculus.en.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00184-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 193765223,
+    "recordOffset": 193745696,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Out[4]= In[4]:= approaches infinity. You can also compute limits as Out[3]= In[3]:= The limit gives the number known as Euler's gamma. Out[2]= In[2]:= Computing numerical limits. Here is the numerical computation of a limit. numerically finds the limit as x approaches NLimit[expr,x->x0]",
+    "textAfterTable": "WynnDegree 1 degree to use in the Wynn method Options for NLimit. There are many specialized techniques for accelerating the convergence of a series. Faster convergence means that in a numerical evaluation fewer terms are needed to give a result of the desired accuracy. One such technique, Euler's transformation, is used by EulerSum. EulerSum is particularly good for working with alternating series and series whose terms have the form where is a polynomial in . It is a useful adjunct to the built\u2010in NSum, which is designed to be an effective general case algorithm. EulerSum[f,{i,imin,Infinity}] uses Euler's transformation to numerically evaluate Numerical evaluation of sums using Euler's transformation. option name default value WorkingPrecision MachinePrecision number of digits of precision to be",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

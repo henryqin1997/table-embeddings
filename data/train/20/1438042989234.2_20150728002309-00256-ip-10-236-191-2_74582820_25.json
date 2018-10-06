@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Parameters",
+            "transform_handle",
+            "name",
+            "value",
+            "old_value",
+            "new_value",
+            "object_type"
+        ],
+        [
+            "Description",
+            "Either (1) the handle returned from ADD_TRANSFORM, or (2) the enumerated constant SESSION_TRANSFORM that designates the DDL transform for the whole session. Note that the handle returned by OPEN is not a valid transform handle. For SET_REMAP_PARAM, the transform handle must designate the MODIFY transform.",
+            "The name of the parameter. Table 86-22 lists the transform parameters defined for the DDL transform, specifying the object_type it applies to, its datatype, and its meaning or effect. This includes its default value, if any, and whether the parameter is additive. Table 86-23 describes the parameters for the MODIFY transform in the SET_TRANSFORM_PARAM procedure. Table 86-24 describes the parameters for the MODIFY transform in the SET_REMAP_PARAM procedure.",
+            "The value of the transform. This parameter is valid only for SET_TRANSFORM_PARAM.",
+            "The old value for the remapping. This parameter is valid only for SET_REMAP_PARAM.",
+            "The new value for the remapping. This parameter is valid only for SET_REMAP_PARAM.",
+            "Designates the object type to which the transform or remap parameter applies. By default, it applies to the same object type as the transform. In cases where the transform applies to all object types within a heterogeneous collection, the following apply: If object_type is omitted, the parameter applies to all applicable object types within the heterogeneous collection. If object_type is specified, the parameter only applies to that object type. This allows a caller who has added a transform to a heterogeneous collection to specify different transform parameters for different object types within the collection."
+        ]
+    ],
+    "pageTitle": "DBMS_METADATA",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/appdev.112/e16760/d_metada.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00256-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74626671,
+    "recordOffset": 74582820,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 14 Aug 2010 15:00:21 GMT",
+    "textBeforeTable": "Table 86-21 SET_TRANSFORM_PARAM and SET_REMAP_PARAM Parameters Table 86-21 describes the parameters for the SET_TRANSFORM_PARAM and SET_REMAP_PARAM procedures. Parameters object_type IN VARCHAR2 DEFAULT NULL); new_value IN VARCHAR2, old_value IN VARCHAR2, name IN VARCHAR2, transform_handle IN NUMBER, DBMS_METADATA.SET_REMAP_PARAM ( object_type IN VARCHAR2 DEFAULT NULL); value IN NUMBER, name IN VARCHAR2, transform_handle IN NUMBER, DBMS_METADATA.SET_TRANSFORM_PARAM ( object_type IN VARCHAR2 DEFAULT NULL); value IN BOOLEAN DEFAULT TRUE, name IN VARCHAR2, transform_handle IN NUMBER, DBMS_METADATA.SET_TRANSFORM_PARAM ( object_type IN VARCHAR2 DEFAULT NULL); value IN VARCHAR2, name IN VARCHAR2, transform_handle IN NUMBER, DBMS_METADATA.SET_TRANSFORM_PARAM ( Syntax  Subprograms for Submitting XML to the Database Subprograms for Retrieving Multiple Objects From the Database See Also: For more information about related subprograms: These procedures are used for both retrieval and submission. SET_TRANSFORM_PARAM and SET_REMAP_PARAM specify parameters to the XSLT stylesheet identified by transform_handle.Use them to modify or customize the output of the transform. SET_TRANSFORM_PARAM and SET_REMAP_PARAM Procedures INCONSISTENT_ARGS. The attribute name is not valid for the object type associated with the OPEN context. INVALID_OPERATION. SET_PARSE_ITEM was called after the first call to FETCH_xxx for the OPEN context. After the first call to FETCH_xxx is made, no further calls to SET_PARSE_ITEM are permitted. INVALID_ARGVAL. A NULL or",
+    "textAfterTable": "Table 86-22 describes the object type, name, datatype, and meaning of the parameters for the DDL transform in the SET_TRANSFORM_PARAM procedure. Table 86-22 SET_TRANSFORM_PARAM: Transform Parameters for the DDL Transform Object Type Name Datatype Meaning All objects PRETTY BOOLEAN If TRUE, format the output with indentation and line feeds. Defaults to TRUE. All objects SQLTERMINATOR BOOLEAN If TRUE, append a SQL terminator (; or /) to each DDL statement. Defaults to FALSE. TABLE SEGMENT_ATTRIBUTES BOOLEAN If TRUE, emit segment attributes (physical attributes, storage attributes, tablespace, logging). Defaults to TRUE.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

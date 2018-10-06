@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "dateFrom",
+            "dateTo",
+            "timezone",
+            "by",
+            "hourly (Deprecated)"
+        ],
+        [
+            "Type",
+            "String",
+            "String",
+            "String",
+            "String",
+            "Boolean"
+        ],
+        [
+            "Required",
+            "No",
+            "No",
+            "No",
+            "No",
+            "No"
+        ],
+        [
+            "Description",
+            "Start date of the statistics collection, formatted as yyyyMMdd. If not provided, defaults to today\u2019s date.",
+            "End date of the statistics collection, formatted as yyyyMMdd. If not provided, defaults to today\u2019s date.",
+            "Timezone to serve statistics in, expressed as either UTC offset (\u201c+-HH:mm\u201d) or timezone name (\u201cCET\u201d). If not provided, defaults to EST.",
+            "Time slice to aggregate statistics by: \u201cday\u201d or \u201chour\u201d. If not provided, defaults to none (statistics will be aggregated over the provided date range).",
+            "Indicates if hourly statistics should be retrieved or not. If not provided, defaults to \u201cfalse\u201d. Value will be overridden by parameter \u201cby\u201d if specified."
+        ]
+    ],
+    "pageTitle": "SiteScout API | SiteScout",
+    "title": "",
+    "url": "http://www.sitescout.com/support/api/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990611.52/warc/CC-MAIN-20150728002310-00259-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 708058295,
+    "recordOffset": 708006257,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{712617=\u00a9 2014 SiteScoutAll Rights Reserved}",
+    "textBeforeTable": "Path: /advertisers/{advertiserId}/campaigns/stats HTTP Method: GET Accept: application/json and text/csv Rate limiting: 10 requests per minute, if date range exceeds 14 days Query Parameters: Retrieve Statistics for All Campaigns Retrieve Statistics for a Campaign, per Offer Retrieve Statistics for a Campaign, for a Particular Creative Retrieve Statistics for a Campaign, per Creative Retrieve Statistics for a Campaign, for a Particular Site, per Creative Retrieve Statistics for a Campaign, for a Particular Site, per Placement Retrieve Statistics for a Campaign, for a Particular Site Retrieve Statistics for a Campaign, per Site Retrieve Statistics for a Campaign Retrieve Statistics for All Campaigns METHODS Map of the Reporting API This part of the SiteScout API provides clients with an ability to retrieve real-time and historical statistics for advertising campaigns. Various types of campaign statistics are available; for instance, one can retrieve campaign statistics per site, per creative, or per offer. Furthermore, several types of statistics can be retrieved on an hourly basis and most of them are provided in both JSON and CSV formats. An API client indicates an intention to receive statistics in the CSV format by either appending \u201c.csv\u201d to path of the resource URI or setting the",
+    "textAfterTable": "sortBy String No Field to sort the returned list of items by. Valid values are virtually all values present in the returned representation. sortDirection String No Sorting direction. Two values are accepted: \u201casc\u201d for ascending and \u201cdesc\u201d for descending. If not provided, defaults to \u201cdesc\u201d. status String No Indicates if only campaigns with a certain status should be returned. Accepted values are \u201conline\u201d, \u201coffline\u201d, and \u201carchived\u201d. campaignIds String No Comma-separated list of campaign IDs to retrieve the statistics for. If provided, filter and status will be ignored. filter",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

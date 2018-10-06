@@ -1,0 +1,69 @@
+{
+    "relation": [
+        [
+            "n",
+            "0",
+            "50",
+            "100",
+            "200",
+            "400"
+        ],
+        [
+            "User time",
+            "0.080u",
+            "4.173u",
+            "8.475u",
+            "18.418u",
+            "44.521u"
+        ],
+        [
+            "GCs",
+            "0",
+            "40",
+            "80",
+            "163",
+            "334"
+        ],
+        [
+            "GC time",
+            "0.00",
+            "0.10",
+            "0.25",
+            "0.95",
+            "3.35"
+        ],
+        [
+            "Max heap",
+            "",
+            "62432",
+            "95840",
+            "159884",
+            "288020"
+        ],
+        [
+            "Max stack",
+            "",
+            "836",
+            "1410",
+            "3042",
+            "3768"
+        ]
+    ],
+    "pageTitle": "HacWrite",
+    "title": "",
+    "url": "http://www.cse.chalmers.se/~hallgren/Thesis/main.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.50/warc/CC-MAIN-20150728002310-00215-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 391028631,
+    "recordOffset": 390835930,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{4901=Ideas and implementation work by a number of people have increased the usefulness of the Fudget library. Jan Sparud's space-leak fix in an early version suddenly made it possible to run fudget programs until somebody pulls the plug. Jan also implemented an initial version of the name layout mechanism. Lennart Augustsson's integration of the Xlib interface with HBC's runtime system made fudget programs easier to use and more efficient. John Hughes invented the default parameter simulation, which made fudget programming much more pleasant., 557227=The 1994 version of WWWBrowser had the following features:, 8195=The work continued. A number of improvements to make it easer to write programs were made, and the library was converted into Haskell. Improvements to the layout system allowed layout and plumbing to be specified separately. A lot of distracting extra function arguments could be removed after a parameter passing mechanism with default values was introduced. The resulting version of the Fudget library was presented at the Spring School on Advanced Functional Programming in B\ufffdstad in 1995 [HC95]., 460381=As a concrete example, consider a grammar for a tiny expression language with arithmetic operations on numbers., 556395=In this section we will take a look at how such an application can be implemented on top of the Fudget library, in Haskell. An actual implementation, called WWWBrowser, was done mainly during the summer 1994. Some updates and improvements were made in the summer 1997. A window snapshot is shown in Figure\ufffd85., 589637=The source is about 1200 lines long., 557064=Figure 85. WWWbrowser, a simple web browser implemented using fudgets in 1994. It supports inlined images and forms., 779=Department of Computing Science Chalmers University of Technology G\ufffdteborg University S-412 96 G\ufffdteborg, Sweden G\ufffdteborg 1998, 1377=G\ufffdteborg 1998}",
+    "textBeforeTable": "The types of these combinators are: Figure 5. Serial composition, parallel composition, and loop. The high-level streams between fudgets are connected by the programmer using combinators. Three basic ways to combine fudgets (and stream processors in general) are serial composition, parallel composition and loops, see Figure\ufffd5. ho are the types of the messages in the high-level input and output streams, respectively. hi and F hi ho We will write the type of a fudget as A fudget has both low-level streams and high-level streams. The low-level streams are always connected to the I/O system, allowing the fudget to control a GUI element by receiving events and sending commands to the window system. The high-level streams can carry arbitrary (usually more abstract) values, and they connect the fudgets that make up a program in an application-specific way. Figure 4. The Fudget. where Our solution to building programs with this structure in a purely functional language, is based on a special kind of stream processor, the Fudget (see Figure\ufffd4. ``Fudget'' is an abbreviation of functional widget, where widget is an abbreviation of window gadget). GUI elements",
+    "textAfterTable": "II Programming with Fudgets The fudget concept and the Fudget library was first conceived and designed as an aid in constructing graphical user interfaces in a lazy functional language. Although the Fudget library now supports other kinds of I/O, the main part of the library still relates to GUI programming. In the Fudget library, each GUI element is represented as a fudget. The library provides fudgets for many common basic building blocks, like buttons, pop-up menus, text boxes, etc. The library also provides combinators that allow building blocks to be combined into complete user interfaces. This section introduces the Fudget library by presenting a number of GUI programming examples. They illustrate the basic principles of how to create complete programs from GUI elements and application-specific code. After the examples follows an overview of the library. We show some common GUI fudgets from the library, how to specify the layout of GUIs, different ways of writing abstract fudgets, and introduce stream processors, combinators for building networks of fudgets, and a scheme for parameter passing with default values. 8 A brief introduction to Haskell The purely functional programming language that we will use in the rest of the thesis is Haskell [ Pet97]. An introduction can be found at [ HPF97], and there are also two reports that define the language and its standard libraries [ PH97b][ PH97a]. We believe that the program examples will be readable",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "Parameter Name",
+            "Required",
+            "Default Value",
+            "Valid Values",
+            "Summary"
+        ],
+        [
+            "Description",
+            "\"oracle.sysman.eml.ip.render.elem.TableRender.filterSql\".",
+            "No.",
+            "Null.",
+            "Any valid SQL SELECT statement.",
+            "Defines the SQL query used to populate a list of values for a filter name that is presented in the UI as a drill-down menu instead of the text input field."
+        ]
+    ],
+    "pageTitle": "Adding Information Publisher Reports",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E24628_01/doc.121/e25161/info_pub.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00290-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 77063671,
+    "recordOffset": 77030605,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 22 Jul 2015 23:24:16 GMT",
+    "textBeforeTable": "Table 5-26 SQL Filter SQL Filter Defines the prompt used in the Reports page for the filter name. The filter value is accessed from the report element's SQL statement through ??EMIP_BIND_PARAM<name>??. Without any other filter-related parameters, this defines a filter which allows the user to provide a value via a text input field. Summary CF. Valid Values Null. Default Value Yes. Required \"oracle.sysman.eml.ip.render.elem.TableRender.filterPrompt<name>Filter\". Parameter Name Description Attribute Table 5-25 Define Filter Prompt Define Filter Prompt Defines filter names in a comma-separated list. This parameter also defines the ordering of filter elements. Summary Comma separated list of filter names. Valid Values Null.",
+    "textAfterTable": "List of Filter Names Table 5-27 List of Filter Names Attribute Description Parameter Name \"oracle.sysman.eml.ip.render.elem.TableRender.filterList<name>\". Required No. Default Value Null. Valid Values Comma separated list of values. Summary Defines a list of values for a filter name which is displayed in the UI as a drill-down menu. Translate List of Filter Names Table 5-28 Translate List of Filter Names Attribute Description Parameter Name \"oracle.sysman.eml.ip.render.elem.TableRender.filterTranslateValues<name>\". Required No. Default Value No.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

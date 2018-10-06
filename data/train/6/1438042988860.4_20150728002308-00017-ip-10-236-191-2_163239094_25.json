@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "Bug",
+            "Unchecked/unconfirmed cast from javax.faces.component.UIComponent to javax.faces.component.UISelectOne in org.apache.myfaces.shared_orchestra.renderkit.html.HtmlRadioRendererBase.encodeEnd(FacesContext, UIComponent)",
+            "Unchecked/unconfirmed cast from javax.faces.component.UIComponent to javax.faces.component.UIOutput in org.apache.myfaces.shared_orchestra.renderkit.html.HtmlRadioRendererBase.getConvertedValue(FacesContext, UIComponent, Object)",
+            "Unchecked/unconfirmed cast from javax.faces.model.SelectItem to javax.faces.model.SelectItemGroup in org.apache.myfaces.shared_orchestra.renderkit.html.HtmlRadioRendererBase.renderGroupOrItemRadio(FacesContext, UIComponent, SelectItem, Object, Converter, boolean)"
+        ],
+        [
+            "Category",
+            "STYLE",
+            "STYLE",
+            "STYLE"
+        ],
+        [
+            "Details",
+            "BC_UNCONFIRMED_CAST",
+            "BC_UNCONFIRMED_CAST",
+            "BC_UNCONFIRMED_CAST"
+        ],
+        [
+            "Line",
+            "59",
+            "300",
+            "165"
+        ],
+        [
+            "Priority",
+            "Low",
+            "Low",
+            "Low"
+        ]
+    ],
+    "pageTitle": "FindBugs Bug Detector Report",
+    "title": "",
+    "url": "http://myfaces.apache.org/orchestra/myfaces-orchestra-core12/findbugs.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00017-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 163250811,
+    "recordOffset": 163239094,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 12 Sep 2012 00:52:24 GMT",
+    "textBeforeTable": "Summary Effort is min Threshold is low FindBugs Version is 1.3.9 The following document contains the results of FindBugs Report FindBugs Bug Detector Report License Security Thanks Sponsorship ASF Foundation RAT Report Surefire Report Tag List Source Xref JavaDocs Developer Activity File Activity Change Log JDepend FindBugs Report CPD Report PMD Report Project Reports Project Information Project Documentation Glossary FAQs",
+    "textAfterTable": "1 org.apache.myfaces.orchestra.conversation.CurrentConversationAdvice 1 org.apache.myfaces.orchestra.conversation.CurrentConversationInfo 2 org.apache.myfaces.orchestra.conversation.jsf.AccessScopePhaseListener 1 org.apache.myfaces.orchestra.conversation.spring.AbstractSpringOrchestraScope 1 org.apache.myfaces.orchestra.conversation.spring.AbstractSpringOrchestraScope$1 1 org.apache.myfaces.orchestra.conversation.spring.JpaPersistenceContextFactory 1 org.apache.myfaces.orchestra.conversation.spring.OrchestraAdvisorBeanPostProcessor 3 org.apache.myfaces.orchestra.conversation.spring.ScopedBeanTargetSource 3 org.apache.myfaces.orchestra.conversation.spring.SimpleAdvisor 2 org.apache.myfaces.orchestra.lib._ReentrantLock 1 org.apache.myfaces.orchestra.lib.jsf.ExternalContextUtils 2 org.apache.myfaces.orchestra.requestParameterProvider.RequestParameterProviderManager 4 org.apache.myfaces.orchestra.urlParamNav.UrlParameterViewHandler 2 org.apache.myfaces.orchestra.viewController.AbstractAnnotationsViewControllerManager 1 org.apache.myfaces.orchestra.viewController.jsf.ViewControllerPhaseListener 2 org.apache.myfaces.shared_orchestra.renderkit.RendererUtils 2 org.apache.myfaces.shared_orchestra.renderkit.ViewSequenceUtils 2 org.apache.myfaces.shared_orchestra.renderkit.html.HTML 44 org.apache.myfaces.shared_orchestra.renderkit.html.HtmlCheckboxRendererBase 1 org.apache.myfaces.shared_orchestra.renderkit.html.HtmlFormRendererBase 2 org.apache.myfaces.shared_orchestra.renderkit.html.HtmlListboxRendererBase 1 org.apache.myfaces.shared_orchestra.renderkit.html.HtmlRadioRendererBase 3 org.apache.myfaces.shared_orchestra.renderkit.html.HtmlRendererUtils 6 org.apache.myfaces.shared_orchestra.renderkit.html.HtmlResponseWriterImpl 4 org.apache.myfaces.shared_orchestra.renderkit.html.HtmlSecretRendererBase 1 org.apache.myfaces.shared_orchestra.renderkit.html.HtmlTableRendererBase 7 org.apache.myfaces.shared_orchestra.renderkit.html.HtmlTextRendererBase 1 org.apache.myfaces.shared_orchestra.renderkit.html.HtmlTextareaRendererBase 1 org.apache.myfaces.shared_orchestra.renderkit.html.util.JavascriptUtils 2 org.apache.myfaces.shared_orchestra.test.ClassElementHandler 1 org.apache.myfaces.shared_orchestra.util.ExceptionUtils 1 org.apache.myfaces.shared_orchestra.util.LocaleUtils 1 org.apache.myfaces.shared_orchestra.util.MessageUtils 2 org.apache.myfaces.shared_orchestra.util.StateUtils 14 org.apache.myfaces.shared_orchestra.util.StringUtils 1 org.apache.myfaces.shared_orchestra.util.servlet.SourceCodeServlet 2 org.apache.myfaces.shared_orchestra.webapp.webxml.WebXmlParser 1 org.apache.myfaces.orchestra.conversation.ConversationManager Bug Category Details Line Priority Method org.apache.myfaces.orchestra.conversation.ConversationManager.<static initializer>()",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

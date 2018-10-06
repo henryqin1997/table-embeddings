@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2009-01-01T00:00:00",
+            "2009-01-01T00:00:00",
+            "2010-06-01T00:00:00",
+            "2011-10-31T00:00:00"
+        ],
+        [
+            "Description",
+            "The LiDAR data was collected between May 3, 2008 and April 25, 2009. The survey used a Leica ALS50 Phase II laser system mounted in a Cessna Caravan 208B. The system was set to acquire > or = 105,000 laser pulses per second (i.e. 105 kHz pulse rate) and flown at 900 meters above ground level (AGL), capturing a scan angle of +/- 14 degrees from nadir. These settings were developed to yield points with an average native density of > or = 8 points per square meter over terrestrial surfaces. The native pulse density is the number of pulses emitted by the LiDAR system. Some types of surfaces (i.e. dense vegetation or water) may return fewer pulses than the laser originally emitted. Therefore, the delivered density can be less than the native density and lightly variable according to distributions of terrain, land cover, and water bodies. The completed areas were surveyed with opposing flight line side-lap of > or = 50% (> or = 100% overlap) to reduce laser shadowing and increase surface laser painting. The system allows up to four range measurements per pulse, and all discernible laser returns were processed for the output dataset. During the LiDAR survey of the study area, a static (1 Hz recording frequency) ground survey was conducted over monuments with known coordinates. After the airborne survey, the static GPS data are processed using triangulation with CORS stations checked against the Online Positioning User Service (OPUS) to quantify daily variance. Multiple sessions are processed over the same monument to confirm the antenna height measurements and reported position accuracy. Multiple DGPS units are used for the ground real-time kinematic (RTK) portion of the survey. To collect accurate ground surveyed points, a GPS base unit is set up over monuments to broadcast a kinematic correction to a roving GPS unit. The ground crew uses a roving unit to receive radio-relayed kinematic corrected positions from the base unit. This method is referred to as real-time kinematic (RTK) surveying and allows precise location measurement (sigma < or = 1.5 cm (0.6 in)).",
+            "1. Laser point coordinates are computed using the IPAS and ALS Post Processor software suites based on independent data from the LiDAR system (pulse time, scan angle), and aircraft trajectory data (SBET). Laser point returns (first through fourth) are assigned an associated (x, y, z) coordinate along with unique intensity values (0-255). The data are output into large LAS v. 1.1 files; each point maintains the corresponding scan angle, return number (echo), intensity, and x, y, z (easting, northing, and elevation) information. 2. These initial laser point files are too large to process. To facilitate laser point processing, bins (polygons) are created to divide the dataset into manageable sizes (< 500 MB). Flightlines and LiDAR data are then reviewed to ensure complete coverage of the study area and positional accuracy of the laser points. 3. Once the laser point data are imported into bins in TerraScan, a manual calibration is performed to assess the system offsets for pitch, roll, heading, and mirror scale. Using a geometric relationship developed by Watershed Sciences, each of these offsets is resolved and corrected if necessary. 4. The LiDAR points are then filtered for noise, pits, and birds by screening for absolute elevation limits, isolated points, and height above ground. Each bin is then inspected for pits and birds manually; spurious points are removed. For a bin containing approximately 7.5-9.0 million points, an average of 50-100 points are typically found to be artificially low or high. These spurious non-terrestrial laser points must be removed from the dataset. Common sources of non-terrestrial returns are clouds, birds, vapor, and haze. 5. The internal calibration is refined using TerraMatch. Points from overlapping lines are tested for internal consistency and final adjustments are made for system misalignments (i.e., pitch, roll, heading offsets and mirror scale). Automated sensor attitude and scale corrections yield 3-5 cm improvements in the relative accuracy. Once the system misalignments are corrected, vertical GPS drift is then resolved and removed per flight line, yielding a slight improvement (<1 cm) in relative accuracy. At this point in the workflow, data have passed a robust calibration designed to reduce inconsistencies from multiple sources (i.e. sensor attitude offsets, mirror scale, GPS drift) using a procedure that is comprehensive (i.e. uses all of the overlapping survey data). Relative accuracy screening is complete. 6. The TerraScan software suite is designed specifically for classifying near-ground points (Soininen, 2004). The processing sequence begins by \"removing\" all points that are not \"near\" the earth based on geometric constraints used to evaluate multi-return points. The resulting bare earth (ground) model is visually inspected and additional ground point modeling is performed in site-specific areas (over a 50-meter radius) to improve ground detail. This is only done in areas with known ground modeling deficiencies, such as: bedrock outcrops, cliffs, deeply incised stream banks, and dense vegetation. In some cases, ground point classification includes known vegetation (i.e., understory, low/dense shrubs, etc.) and these points are manually reclassified as non-grounds.",
+            "The NOAA Coastal Services Center (CSC) received the files in las format. The files contained LiDAR elevation and intensity measurements. The data were in Oregon Lambert (NAD83), International Feet coordinates and NAVD88 (Geoid 03) vertical datum. CSC performed the following processing to the data to make it available within the Digital Coast: 1. The data were converted from Oregon Lambert (NAD83), International Feet coordinates to geographic coordinates. 2. The data were converted from NAVD88 (orthometric) heights to GRS80 (ellipsoid) heights using Geoid 03. 3. The vertical units of the data were converted from International feet to meters. 4. The data were sorted by latitude and the headers were updated.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2008_OR_DOGAMI_South_Coast_m519.xml&view=ISO19115Components-HTMLTable&altview=none",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.50/warc/CC-MAIN-20150728002310-00000-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 609283340,
+    "recordOffset": 609266946,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:2008_OR_DOGAMI_South_Coast_m519Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "1 2008 - 2009 Oregon Department of Geology and Mineral Industries (DOGAMI) South Coast LiDAR Project 2009-01-01 8 Lidar Project Reports 2 None 1 North American Datum 1983 2007-01-19 Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 8 Citation URL ftp://ftp.csc.noaa.gov/pub/crs/beachmap/qa_docs/or/2008-2009_south_coast/delivery_1/ 1 NOAA CSC (originator) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov originator",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

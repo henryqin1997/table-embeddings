@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Code or Value",
+            "1",
+            "2",
+            "3",
+            "."
+        ],
+        [
+            "Value Description",
+            "Positive",
+            "Negative",
+            "Inadequate",
+            "Missing"
+        ],
+        [
+            "Count",
+            "1",
+            "439",
+            "16",
+            "100"
+        ],
+        [
+            "Cumulative",
+            "1",
+            "440",
+            "456",
+            "556"
+        ],
+        [
+            "Skip to Item",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "NHANES 2005 - 2006: Human Papillomavirus (HPV) DNA Results from Vaginal Swab Samples: Digene Hybrid Capture and Roche Linear Array, Ages 14-17 Data Documentation, Codebook, and Frequencies",
+    "title": "",
+    "url": "http://www.cdc.gov/nchs/nhanes/limited_access/SWR_D_R.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00280-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 347603532,
+    "recordOffset": 347587138,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampBeforeTable": "{10781=Title: Human Papillomavirus (HPV) DNA Results from Vaginal Swab Samples: Digene Hybrid Capture and Roche Linear Array, Ages 14-17 (SWR_D_R ) Contact Number: 1-866-441-NCHS Years of Content: 2005 - 2006 First Published: November, 2010 Revised: NA Access Constraints: RDC Only Use Constraints: RDC Only Geographic Coverage: National Subject: Record Source: NHANES 2005 - 2006 Survey Methodology: NHANES 2005 - 2006 is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S. Medium: NHANES Web site; SAS transport files, 4653=While HC2 is approved for clinical testing, the self-collected vaginal sample does not meet clinical guidelines. The HPV PCR tests are research tests. The HPV laboratory followed strict research QC/QA and was CLIA certified August 2008. Detailed quality control and quality assurance instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC protocols. The analytical methods are described in the Description of the Laboratory Methodology section., 4041=The analysis of NHANES 2005\u20132006 laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2005\u20132006 Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews. They also contain all survey design variables and sample weights. Certain sensitive data on respondents under 18 years of age (e.g. HPV typing results, sexual behavior variables) are not included in the public use files. These data may be requested as described in the NHANES guidelines. The phlebotomy file includes auxiliary information such as the conditions precluding venipuncture. The household questionnaire and phlebotomy files may be linked to the laboratory data file using the unique survey participant identifier SEQN., 9330=Reducing the prevalence of HPV infection is a Developmental Healthy People 2010 objective: \u201cReducing the number of new HPV cases can help minimize the overall number of cases of high risk subtypes associated with cervical cancer in females...\u201d Detection and typing of HPV DNA in vaginal swabs (in conjunction with testing of NHANES sera for HPV antibody) will allow evaluation of trends in prevalence of type-specific HPV infection by age, sexual behavior, and race/ethnicity. Two HPV vaccines (Gardasil and Cervarix) are licensed and recommended for use in girls and women. Routine vaccination is recommended for girls 11 or 12 years of age, and catch-up vaccination through 26 years. One vaccine (Gardasil) is licensed and available for boys and men. As vaccine becomes more widely used, the national prevalence of HPV infection will be critical for evaluating vaccination strategies in the United States.}",
+    "lastModified": "Tue, 25 Jun 2013 12:27:02 GMT",
+    "textBeforeTable": "Females only 14 YEARS - 17 YEARS Target: Roche HPV linear array (LA) summary result English Text: Roche HPV linear array summary result SAS Label: LBDRPCR Variable Name: LBDRPCR - Roche HPV linear array summary result Females only 14 YEARS - 17 YEARS Target: Respondent sequence number. English Text: Respondent sequence number SAS Label: SEQN Variable Name: SEQN - Respondent sequence number Codebook and Frequencies Steinau M, Swan DC, Unger ER. Type-specific reproducibility of the Roche Linear Array HPV genotyping test. J Clin Virol 42: 412-414, 2008. Hc2 HPV DNA Test Package Insert, Digene Corporation. Gravitt PE, Peyton CL, Alessi TQ, Wheeler CM, Coutlee F, Hildesheim A, Schiffman MH, Scott DR, Apple RJ. Improved Amplification of Genital Human Papillomaviruses. J Clin Microbiol 2000; 38: 357-361. References Variables LBDRHP through LBDRPI are from the RUO Roche Linear Array HPV typing assay, however LBDR52 also includes information from a type-specific assay for HPV 52. The Linear Array typing strip includes an XR probe that hybridizes with HPV 52 as well as HPV types 33, 35 and 58. Samples positive for the XR probe and 33, 35, or 58 require specific testing to confirm",
+    "textAfterTable": "LBDRHP - Roche LA high positive globin control Variable Name: LBDRHP SAS Label: Roche LA high positive globin control English Text: Roche LA high positive globin control Target: Females only 14 YEARS - 17 YEARS Code or Value Value Description Count Cumulative Skip to Item 1 Positive 435 435 2 Negative 21 456 . Missing 100 556 LBDRLP - Roche LA low positive globin control Variable Name: LBDRLP SAS Label: Roche LA low positive globin control English Text: Roche LA low positive globin control Target: Females only 14 YEARS - 17 YEARS Code or Value Value Description Count Cumulative Skip to Item 1 Positive 430 430 2 Negative 26 456 . Missing 100",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

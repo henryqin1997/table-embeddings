@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Modifier and Type",
+            "boolean",
+            "boolean",
+            "boolean"
+        ],
+        [
+            "Method and Description",
+            "EqualStudentWeights.isBetterThanBestSolution(Solution currentSolution)",
+            "OriginalStudentWeights.isBetterThanBestSolution(Solution currentSolution)",
+            "PriorityStudentWeights.isBetterThanBestSolution(Solution currentSolution)"
+        ]
+    ],
+    "pageTitle": "Uses of Class net.sf.cpsolver.ifs.solution.Solution (Constraint Solver API Documentation -- CPSolver v1.2 build 151)",
+    "title": "Methods in net.sf.cpsolver.studentsct.weights with parameters of type Solution",
+    "url": "http://www.unitime.org/api/cpsolver-1.2/net/sf/cpsolver/ifs/solution/class-use/Solution.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00156-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 804713807,
+    "recordOffset": 804700137,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 07 Jul 2014 09:59:39 GMT",
+    "textBeforeTable": "Uses of Solution in net.sf.cpsolver.coursett Student Sectioning Weightings: various students weight models net.sf.cpsolver.studentsct.weights Student Sectioning: Various Neighbour Selection Criteria. net.sf.cpsolver.studentsct.heuristics.selection Student Sectioning: Heuristics. net.sf.cpsolver.studentsct.heuristics Student Sectioning Solver. net.sf.cpsolver.studentsct IFS Termination (termination condition) net.sf.cpsolver.ifs.termination IFS Solver net.sf.cpsolver.ifs.solver IFS Solution (also contains solution comparator) net.sf.cpsolver.ifs.solution IFS Heuristics (value and variable selection criteria) net.sf.cpsolver.ifs.heuristics IFS Extensions (conflict-based statistics, maintenance of arc consistency) net.sf.cpsolver.ifs.extension Simple Timetabling Problem. net.sf.cpsolver.ifs.example.tt Dynamic backtracking extension of IFS solver net.sf.cpsolver.ifs.dbt IFS: Various Problem-Independent Neighbourhoods. net.sf.cpsolver.ifs.algorithms.neighbourhoods IFS Neighbourhood Search Algorithms net.sf.cpsolver.ifs.algorithms This",
+    "textAfterTable": "Modifier and Type Method and Description void Test.bestCleared(Solution<Lecture,Placement>\u00a0solution)\u00a0 void Test.bestRestored(Solution<Lecture,Placement>\u00a0solution)\u00a0 void Test.bestSaved(Solution<Lecture,Placement>\u00a0solution)\u00a0 void Test.getInfo(Solution<Lecture,Placement>\u00a0solution, Map<String,String>\u00a0info)\u00a0 void Test.getInfo(Solution<Lecture,Placement>\u00a0solution, Map<String,String>\u00a0info, Collection<Lecture>\u00a0variables)\u00a0 void TimetableXMLLoader.load(Solution<Lecture,Placement>\u00a0currentSolution)\u00a0 void Test.notify(Solution<Lecture,Placement>\u00a0solution) Add a line into the output CSV file when a enw best solution is found. static void Test.printSomeStuff(",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Credit Card Program",
+            "American Express",
+            "Diner's Club",
+            "US Bank Visa",
+            "Bank of America Visa"
+        ],
+        [
+            "Control File",
+            "apxamex.ctl",
+            "apxdiner.ctl",
+            "apxusbv.ctl",
+            "apxboav.ctl"
+        ]
+    ],
+    "pageTitle": "Oracle Internet Expenses Implementation and Administration Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18727_01/doc.121/e13454/T214904T214908.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989826.86/warc/CC-MAIN-20150728002309-00158-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70919215,
+    "recordOffset": 70878972,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{141964=Note: Before enabling parallel approvals, see: Determining \"In-Process\" Expense Reports Before Enabling Parallel Approvals, My Oracle Support Note 391996.1., 139142=Cost Center Owners - Define cost center owners in Oracle Human Resources. See: Oracle HRMS Supplement for Implementing Auto Orgs, My Oracle Support Note 261362.1, for more information., 106394=American Express KR-1025 format (file name is Card Daily Data Feed), 157767=Copyright \u00a9 2000, 2009, Oracle and/or its affiliates. All rights reserved., 33226=Oracle Human Resources Management Systems Supplement for Implementing Auto Orgs, My Oracle Support Note Number 261362.1, 138715=Create your company cost center organizations and set the default approval managers. You can define cost center owners, cost center business managers, grants managers or project managers as default approvers. You can define default approval managers for routing according to line level or header information. See: Oracle HRMS Supplement for Implementing Auto Orgs, My Oracle Support Note 261362.1, for more information.}",
+    "lastModified": "Tue, 23 Jun 2015 15:12:54 GMT",
+    "textBeforeTable": "This table lists the applications related to the implementation of Internet Expenses. Base Application Requirements for Internet Expenses This chapter describes all of the setup tasks for all of the applications that work together with Oracle Internet Expenses. Some of these setup tasks are required tasks, meaning that the particular task is essential to the functioning of Internet Expenses. Other setup tasks depend upon the features that you intend to use or the integration that you intend to have between Internet Expenses and other Oracle applications. Oracle Internet Expenses and Other Oracle Applications Integrating with Other Applications Setup Steps in Oracle Payables Integrating with Oracle System Administration Integrating with Oracle Human Resources Integrating with Oracle Application Object Library Oracle Internet Expenses and Other Oracle Applications This chapter covers the following topics: Setting Up Applications for Oracle Internet Expenses Next Previous Contents Oracle Internet Expenses Implementation and Administration Guide Release 12.1 Part Number E13454-03 Skip Headers Browser version script",
+    "textAfterTable": "Oracle Common Modules - AK Required Oracle Application Object Library Required Oracle Human Resources Optional Oracle Projects Optional (Required if project and task information is required for expense reports) Oracle Approvals Management Optional Oracle Grants Accounting Optional Oracle iSupport Optional Oracle Payments Optional Implementation Checklist for Oracle Internet Expenses These tables provide a checklist of the required and optional implementation steps for Internet Expenses, with areas of integration and setup. Unless otherwise stated, each step includes a reference to more detailed sections within this chapter. Note: After you perform the implementation steps in the base applications, you may need to restart the Apache Listener to reflect the setup in Internet Expenses. Integrating with Oracle Application Object Library This table describes the setup steps to integrate with the Oracle Application Object Library. Step Number Step Description Required or Optional 1 Define Accounting Flexfield. See: Oracle Applications Flexfields Guide. Required 2 Update Oracle Internet Expenses messages. See: Updating Oracle Internet Expenses Messages. Optional 3 Define Global Policy information. See:",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

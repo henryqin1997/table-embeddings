@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Value",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5-255"
+        ],
+        [
+            "Name",
+            "Success",
+            "Invalid prefix length (MOBNET_INVALID_PREFIX_LEN)",
+            "Mobile Router is not authorized for prefix (MOBNET_UNAUTHORIZED)",
+            "Forwarding setup failed (MOBNET_FWDING_SETUP_FAILED)",
+            "Home Agent cannot assign a mobile network prefix (MOBNET_UNASSIGNED)",
+            "Unassigned"
+        ],
+        [
+            "Reference",
+            "[RFC5177]",
+            "[RFC5177]",
+            "[RFC5177]",
+            "[RFC5177]",
+            "[RFC6626]",
+            ""
+        ]
+    ],
+    "pageTitle": "Mobile IPv4 Numbers",
+    "title": "",
+    "url": "http://www.iana.org/assignments/mobileip-numbers/mobileip-numbers.xhtml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989142.82/warc/CC-MAIN-20150728002309-00315-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 513563893,
+    "recordOffset": 513547499,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 26 Jun 2015 01:23:57 GMT",
+    "textBeforeTable": "CSV Available Formats RFC5177] [ Reference Standards Action or IESG Approval Registration Procedure(s) Mobile Network Acknowledgement Extension [RFC4917] Foreign Agent 2 [RFC4917] Home Agent 1 Reference Name Subtype Value CSV Available Formats RFC4917] [ Reference Expert Review Registration Procedure(s) Message String Extension (Value 145) Unassigned 2-255 [RFC4881] Generic Handoff Failure 1 [RFC4881] Successful Handoff 0 Reference Description Value CSV Available Formats RFC4881] [ Reference IETF Consensus Registration Procedure(s) Code Values for Mobile IP Handoff Reply Messages (Value 17) Unassigned 8-255 [RFC4881] FA IPv4 Address 7 [RFC4881] Access Point Identifier 6 [RFC4881] Solicited IPv4 Address 5 [RFC4881] 64-bit Global ID, EUI-64 4 [RFC4881] Ethernet 48-bit MAC address 3 [RFC4881] 3GPP International Mobile Subscriber Identity 2",
+    "textAfterTable": "PMIPv4 Non-skippable Extension (Value 47) Registration Procedure(s) Expert Review Reference [ RFC5563] Available Formats CSV Value Name Reference 0 Unassigned [RFC5563] 1 PMIPv4 Per-Node Authentication Method [RFC5563] 2-255 Unassigned [RFC5563] PMIPv4 Skippable Extension (Value 147) Registration Procedure(s) Expert Review Reference [ RFC5563] Available Formats CSV Value Name Reference 0 Unassigned [RFC5563] 1 PMIPv4 Interface ID [RFC5563] 2 PMIPv4 Device ID [RFC5563] 3 PMIPv4 Subscriber ID [RFC5563] 4 Access Technology Type [RFC5563] 5-255 Unassigned [RFC5563] Dual Stack (DSMIPv4) Extension subtypes (Value 152) Registration Procedure(s) Expert Review Reference [ RFC5454] Available Formats CSV Value Name Reference 1 IPv6 Prefix Request [RFC5454] 2 IPv6 Prefix Reply [RFC5454] 3 IPv6 Tunneling Mode [",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

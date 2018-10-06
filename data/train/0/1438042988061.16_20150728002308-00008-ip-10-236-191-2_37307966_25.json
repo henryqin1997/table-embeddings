@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "CWE-ID",
+            "79",
+            "276",
+            "279",
+            "284",
+            "692",
+            "697",
+            "713",
+            "71"
+        ],
+        [
+            "Weakness Name",
+            "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+            "Incorrect Default Permissions",
+            "Incorrect Execution-Assigned Permissions",
+            "Improper Access Control",
+            "Incomplete Blacklist to Cross-Site Scripting",
+            "Insufficient Comparison",
+            "OWASP Top Ten 2007 Category A2 - Injection Flaws",
+            "Apple '.DS_Store'"
+        ],
+        [
+            "Weakness Relationship Type",
+            "Targeted",
+            "Targeted",
+            "Secondary",
+            "Secondary",
+            "Targeted",
+            "Targeted",
+            "Targeted",
+            "Targeted"
+        ]
+    ],
+    "pageTitle": "CAPEC - CAPEC-19: Embedding Scripts within Scripts (Version 2.6) \ufeff",
+    "title": "",
+    "url": "http://capec.mitre.org/data/definitions/19.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00008-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 37324360,
+    "recordOffset": 37307966,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{59469=Varies with instantiation of attack pattern. May contain network probe or attacks that run against or on host using host account permissions, 75905=This Web site is sponsored and managed by The MITRE Corporation to enable stakeholder collaboration. Copyright \u00a9 2007 - 2015, The MITRE Corporation. CAPEC and the CAPEC logo are trademarks of The MITRE Corporation.}",
+    "textBeforeTable": "Attack Motivation-Consequences Implementation: Privileges are constrained, if a script is loaded, ensure system runs in chroot jail or other limited authority mode Implementation: Patching software. There are many attack vectors for XSS on the client side and the server side. Many vulnerabilities are fixed in service packs for browser, web servers, and plug in technologies, staying current on patch release that deal with XSS countermeasures mitigates this. Implementation: Session tokens for specific host Implementation: Disable scripting languages such as JavaScript in browser Implementation: Perform output validation for all remote content. Implementation: Perform input validation for all remote content. Implementation: Ensure all content that is delivered to client is sanitized against an acceptable content specification. Design: Server side developers should not proxy content via XHR or other means, if a http proxy for remote content is setup on the server side, the client's browser has no way of discerning where the data is originating from. Design: Utilize strict type, character, and encoding enforcement Design: Use browser technologies that do not allow client side scripting. Solutions and Mitigations Ability to deploy a custom script on host",
+    "textAfterTable": "Injection Vector Malicious input delivered through standard script page, e.g. ASP web page Payload Varies with instantiation of attack pattern. May contain network probe or attacks that run against or on host using host account permissions Activation Zone Web server scripting host Payload Activation Impact Enables attacker to execute scripts on remote host Related Weaknesses CWE-ID Weakness Name Weakness Relationship Type 79 Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') Targeted 276 Incorrect",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

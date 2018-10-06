@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Sep 26, 2005",
+            "Sep 11, 2009",
+            "Aug 28, 2013"
+        ],
+        [
+            "Code",
+            "FPAY",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6362851 - Digital camera with separate function and option icons and control switches - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6362851?dq=%22frederick+douglis%22",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00165-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 477256655,
+    "recordOffset": 477196985,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{181125=This command sends a 32 bit time value to set the camera's clock. The value is the number of seconds since a fixed arbitrary date, e.g., 00:00, 1/1/94., 26142=This application is a continuation of Ser. No. 08/283,139 filed Jul. 29, 1994, U.S. Pat. No. 5,541,656.}",
+    "textBeforeTable": "Patent Citations It will be understood that the foregoing is merely illustrative of the principles of the invention, and that various modifications can be made by those skilled in the art without departing from the scope and spirit of the invention. Accordingly, the foregoing disclosure is intended to be illustrative, but not limiting, of the scope of the invention which is set forth in the following claims. End Sub ShutterButton = 0 CmdButton = 0 End Select segCamera (I_ON) Case Else \u2032 assume camera if not in list segWarn (I_ON) Case S_WARN segDelete (I_ON) Case S_DELETE segToCard (I_ON) Case S_CARD segBatt (I_ON)",
+    "textAfterTable": "Referenced by Citing Patent Filing date Publication date Applicant Title US6710809 * Feb 25, 2000 Mar 23, 2004 Minolta Co., Ltd. Battery-driven electric equipment US6750914 * Apr 12, 2002 Jun 15, 2004 Ricoh Company, Limited Image pick-up device US6779023 Oct 30, 2001 Aug 17, 2004 Sun Microsystems, Inc. System translates target address of crosshairs displayed on screen to corresponding mouse address of another computer for emulating mouse command to select a file US6834128 * Jun 16, 2000 Dec 21, 2004 Hewlett-Packard Development Company, L.P. Image mosaicing system and method adapted to mass-market hand-held digital cameras US6886056 * Sep 30, 2002 Apr 26, 2005 Nikon Corporation Digital image storage system and digital camera system US6903762 * Dec 13, 2000 Jun 7, 2005 Eastman Kodak Company Customizing a digital camera for a plurality of users",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

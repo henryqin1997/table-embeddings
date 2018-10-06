@@ -1,0 +1,93 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "154.75500",
+            "158.92500",
+            "155.82000",
+            "154.35500",
+            "154.96500",
+            "72.78000"
+        ],
+        [
+            "License",
+            "KYX862",
+            "WNWS292",
+            "WQJS454",
+            "",
+            "WNWS292",
+            "WPKF669"
+        ],
+        [
+            "Type",
+            "RM",
+            "M",
+            "RM",
+            "BM",
+            "RM",
+            "F"
+        ],
+        [
+            "Tone",
+            "156.7 PL",
+            "146.2 PL",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Alpha Tag",
+            "Pecat Police",
+            "Pecat PD Tac",
+            "Pecaton Fire",
+            "Pecaton FG",
+            "PecatonicaPW",
+            "Pecaton WDD"
+        ],
+        [
+            "Description",
+            "Police ('Mary' units) (DB: County)",
+            "Police: Tactical",
+            "Fire: Local",
+            "Fire: Alternate",
+            "Public Works",
+            "Water Distribution Data (CSQ)"
+        ],
+        [
+            "Mode",
+            "FM",
+            "FM",
+            "FMN",
+            "FM",
+            "FM",
+            "Telm"
+        ],
+        [
+            "Tag",
+            "Law Dispatch",
+            "Law Tac",
+            "Fire Dispatch",
+            "Fire-Tac",
+            "Public Works",
+            "Data"
+        ]
+    ],
+    "pageTitle": "Winnebago County, Illinois (IL) Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?ctid=691&ts=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00232-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 673211771,
+    "recordOffset": 673190505,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{55786=*WQPQ315 - 468.2125 Mobiles (NFM), 174744=*WQPK658 - Police: 159.1725 Repeater with 156.09 (DMR) Rockton Fire Protection District}",
+    "textBeforeTable": "Winnebago County 911/ETSB Winnebago County //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { }); }); } act=1; setEsc(this,origHtml); this.innerHTML = getTagsHTML; getTagsHTML += '\\n'; } getTagsHTML += '' + tagNames[i] + '\\n'; for",
+    "textAfterTable": "458.98750\u00a0 KD52701\u00a0 F Rockfrd Fire Fire: Rockford Fire (Digital)\u00a0 Telm\u00a0 Data\u00a0 155.22000\u00a0 KA90483\u00a0 M 127.3 PL Metro EMS Metro Medical Services [ROCCOM]\u00a0 FM\u00a0 EMS Dispatch\u00a0 465.00000\u00a0 WQFS761\u00a0 B WinCo EMS*D EMS: Paging (Digital) \u00a0 Telm\u00a0 Data\u00a0 Winnebago County Sheriff's Department Sheriff now licensed for 155.565R (was Rockford PD W Control 3 WQJ478 Expired] *WQSJ342 -\u00a0436.000 for Recon Scout (Bomb Robot) STARCOM21 Statewide Illinois P25 \u00a0\u00a0\u00a0 Project 25 Phase II \u00a0\u00a0\u00a0 Main Communications system for Sheriff and Rockford Police Frequency\u00a0 License\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

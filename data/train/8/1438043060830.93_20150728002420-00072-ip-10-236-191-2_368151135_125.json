@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Field",
+            "prm_stat success calls",
+            "prm_stat failure calls",
+            "Type",
+            "Allocated",
+            "Freed",
+            "Delta"
+        ],
+        [
+            "Description",
+            "The number of successful calls to allocate and free statistics blocks, for ingress and egress statistics.",
+            "The number of failed calls to allocate and free statistics blocks, for ingress and egress statistics.",
+            "Describes the structure type.",
+            "The number of blocks allocated per structure type.",
+            "The number of blocks freed per structure type.",
+            "The difference between allocated and freed blocks per structure type."
+        ]
+    ],
+    "pageTitle": "Cisco ASR 9000 Series Aggregation Services Router Multicast Command Reference, Release 4.3.x - Multicast Routing and Forwarding Commands [Cisco ASR 9000 Series Aggregation Services Routers] - Cisco",
+    "title": "This table describes the significant fields shown in the display. Table 3 show mfib hardware resource counters Field Descriptions",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r4-3/multicast/command/reference/b_mcast_cr43xasr9k/b_mcast_cr43xasr9k_chapter_011.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00072-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 368224407,
+    "recordOffset": 368151135,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{134200=Maximum number of data MDTs to be triggered. Range is 1 to 262143., 419177=The hardware information of MoFRR (multicast only fast reroute) enabled routes are also displayed. In IOS XR Software Release 3.9.0, the maximum platform supported MoFRR routes are 1024., 149791=The MDT tunnel default size is 1376.}",
+    "textBeforeTable": "Command History Multicast VRF configuration Multicast routing address family IPv4 configuration Multicast routing configuration Command Modes This feature is disabled by default. Command Default This command has no keywords or arguments. Syntax Description per-prefix accounting no per-prefix accounting To enable accounting for multicast routing, use the accounting per-prefix command in the appropriate configuration mode. To return to the default behavior, use the no form of this command. accounting per-prefix vrf (multicast) ttl-threshold (multicast) static-rpf show mrib tlc show mrib table-info show mrib route outgoing-interface show mrib route-collapse show mrib route show mrib platform trace show mrib nsf show mrib bvi show mrib client show mfib table-info show mfib route show mfib nsf show mfib interface show mfib hardware table show mfib hardware route summary show mfib hardware route statistics show mfib hardware route olist show mfib hardware",
+    "textAfterTable": "Examples The following example shows how to enable accounting for multicast routing:  RP/0/RSP0/CPU0:router(config)# multicast-routing RP/0/RSP0/CPU0:router(config-mcast)# accounting per-prefix Related Commands Command Description show mfib hardware route statistics Displays platform-specific Multicast Forwarding Information Base (MFIB) information for the packet and byte counters for each route. \u00a0 show mfib route Displays route entries in the Multicast Forwarding Information Base (MFIB). \u00a0 accounting per-prefix forward-only To reduce hardware statistics resource allocations when enabling accounting, particularly for multicast VPN (MVPN), use the accounting per-prefix forward-only command under multicast routing configuration mode. To return to the default mode of accounting per-prefix, use the no form of this command. accounting per-prefix forward-only no accounting per-prefix forward-only Syntax Description This command has no",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

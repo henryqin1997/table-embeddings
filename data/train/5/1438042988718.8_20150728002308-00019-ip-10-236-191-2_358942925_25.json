@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6"
+        ],
+        [
+            "Command or Action",
+            "UCS-A# scope security",
+            "UCS-A /security # scope tacacs",
+            "UCS-A /security/tacacs # create auth-server-group auth-server-group-name",
+            "UCS-A /security/tacacs/auth-server-group # create server-ref tacacs-provider-name",
+            "UCS-A /security/tacacs/auth-server-group/server-ref # set order order-num",
+            "UCS-A /security/tacacs/auth-server-group/server-ref # commit-buffer"
+        ],
+        [
+            "Purpose",
+            "Enters security mode.",
+            "Enters security TACACS mode.",
+            "Creates a TACACS provider group and enters authentication server group security TACACS mode.",
+            "Adds the specified TACACS provider to the TACACS provider group and enters server reference authentication server group security TACACS mode.",
+            "Specifies the order in which Cisco UCS uses this provider to authenticate users. Valid values include no-value and 0-16, with the lowest value indicating the highest priority. Setting the order to no-value is equivalent to giving that server reference the highest priority.",
+            "Commits the transaction to the system configuration."
+        ]
+    ],
+    "pageTitle": "Cisco UCS Manager CLI Configuration Guide, Release 2.0 - Configuring Authentication [Cisco UCS Manager] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/cli/config/guide/2-0/b_UCSM_CLI_Configuration_Guide_2_0/b_UCSM_CLI_Configuration_Guide_2_0_chapter_0111.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00019-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 358979479,
+    "recordOffset": 358942925,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{134530=Specify an integer between 60 and 172800. The default is 600 seconds., 135379=Specify an integer between 60 and 172800. The default is 7200 seconds.}",
+    "textBeforeTable": "Procedure If you are using Active Directory as your LDAP server, create a user account in the Active Directory server to bind with Cisco UCS. This account should be given a non-expiring password. The properties that you configure in this task are the default settings for all provider connections of this type defined in Cisco UCS Manager. If an individual provider includes a setting for any of these properties, Cisco UCS uses that setting and ignores the default setting. Configuring Properties for LDAP Providers Configuring LDAP Providers The LDAP group rule is used to determine whether Cisco UCS should use LDAP groups when assigning user roles and locales to a remote user. LDAP Group Rule objectCategory: CN=Attribute-Schema,CN=Schema,CN=Configuration,CN=X name: CiscoAVPair lDAPDisplayName: CiscoAVPair oMSyntax: 64 adminDescription: UCS User Authorization Field adminDisplayName: CiscoAVPair showInAdvancedViewOnly: TRUE isSingleValued: TRUE attributeSyntax: 2.5.5.12 attributeID: 1.3.6.1.4.1.9.287247.1 uSNCreated: 26318654 instanceType: 0x4 distinguishedName: CN=CiscoAVPair,CN=Schema,CN=Configuration,CN=X cn: CiscoAVPair objectClass: attributeSchema objectClass: top CN=Configuration,CN=X CN=CiscoAVPair,CN=Schema,  The following is a sample OID for a custom CiscoAVPair attribute: Sample OID for LDAP User Attribute        The cisco-av-pair name is the string that provides the attribute ID for the TACACS+ provider. The following syntax example shows how to",
+    "textAfterTable": "Step\u00a07 UCS-A /security/ldap # commit-buffer \u00a0 Commits the transaction to the system configuration. \u00a0 The following example sets the LDAP attribute to CiscoAvPair, the base distinguished name to \"DC=cisco-ucsm-aaa3,DC=qalab,DC=com\", the filter to sAMAccountName=$userid, and the timeout interval to 5 seconds, and commits the transaction: UCS-A# scope security UCS-A /security # scope ldap UCS-A /security/ldap # set attribute CiscoAvPair UCS-A /security/ldap* # set basedn \"DC=cisco-ucsm-aaa3,DC=qalab,DC=com\" UCS-A /security/ldap* # set filter sAMAccountName=$userid UCS-A /security/ldap* # set timeout 5 UCS-A /security/ldap* # commit-buffer UCS-A /security/ldap # What to Do Next Create an LDAP provider. Creating an LDAP Provider Cisco UCS Manager supports a maximum of 16 LDAP providers. Before You Begin If you are using Active Directory as your LDAP server, create a user account in the Active Directory server to bind with Cisco UCS. This account should be given a non-expiring password. In the LDAP server, perform one of the following configurations: Configure LDAP groups. LDAP groups contain user role and",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

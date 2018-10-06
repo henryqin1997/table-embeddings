@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "",
+            "From",
+            "To"
+        ],
+        [
+            "Protocols",
+            "NSCoding, NSCopying",
+            "NSCopying, NSSecureCoding"
+        ]
+    ],
+    "pageTitle": "Foundation Changes",
+    "title": "",
+    "url": "https://developer.apple.com/library/mac/releasenotes/General/APIDiffsMacOSX10_9/Foundation.html",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 225,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00023-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 860084727,
+    "recordOffset": 860063000,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{353577=Copyright \u00a9 2015 Apple Inc. All rights reserved.}",
+    "textBeforeTable": "+[NSArray array] Modified -[NSMutableArray init] Added -[NSArray init] Added -[NSArray firstObject] Added NSArray.h NSUbiquitousFileUnavailableError Added NSUbiquitousFileUbiquityServerNotAvailable Added NSUbiquitousFileNotUploadedDueToQuotaError Added NSUbiquitousFileErrorMinimum Added NSUbiquitousFileErrorMaximum Added FoundationErrors.h Foundation Foundation Changes Download Sample Code <> Table of Contents PDF Companion File OS X v10.9 API Diffs Search Mac Developer Library Search Developer Mac Developer Library",
+    "textAfterTable": "Modified +[NSArray arrayWithArray:] Declaration From + (id)arrayWithArray:(NSArray *)array To + (instancetype)arrayWithArray:(NSArray *)array Modified +[NSArray arrayWithObject:] Declaration From + (id)arrayWithObject:(id)anObject To + (instancetype)arrayWithObject:(id)anObject Modified +[NSArray arrayWithObjects:] Declaration From + (id)arrayWithObjects:(id)firstObj, ... To + (instancetype)arrayWithObjects:(id)firstObj, ... Modified +[NSArray arrayWithObjects:count:] Declaration From + (id)arrayWithObjects:(const id [])objects count:(NSUInteger)cnt To + (instancetype)arrayWithObjects:(const id [])objects count:(NSUInteger)cnt Modified -[NSArray initWithArray:] Declaration From - (id)initWithArray:(NSArray *)array To - (instancetype)initWithArray:(NSArray *)array Modified -[NSArray initWithArray:copyItems:] Declaration From - (id)initWithArray:(NSArray *)array copyItems:(BOOL)flag To - (instancetype)initWithArray:(NSArray *)array copyItems:(BOOL)flag Modified -[NSArray initWithObjects:] Declaration From - (id)initWithObjects:(id)firstObj, ... To - (instancetype)initWithObjects:(id)firstObj, ...",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

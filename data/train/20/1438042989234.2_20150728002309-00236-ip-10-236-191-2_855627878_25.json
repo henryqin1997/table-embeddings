@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "providerID",
+            "mapName",
+            "nestedMapName"
+        ],
+        [
+            "Definition",
+            "Specifies the provider ID.",
+            "Specifies the name of an existing property map.",
+            "Specifies the name of the property map to be nested inside mapName in cot.xml."
+        ]
+    ],
+    "pageTitle": "Oracle Identity Federation Command-Line Tools",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E17904_01/admin.1111/e13400/cmdline.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00236-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 855645579,
+    "recordOffset": 855627878,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{59946=The following command deletes the authentication engine with ID id1234., 62107=The following command deletes the engine with ID id1234.}",
+    "lastModified": "Wed, 13 May 2015 05:17:32 GMT",
+    "textBeforeTable": "addConfigListEntryInMap('configName', 'mapname', 'listName', 'value', 'type')  9.2.1.2 Syntax      This command adds a property value to a nested list inside a map in config.xml. 9.2.1.1 Description    Online command that adds a property value to a nested list inside a map. 9.2.1 addConfigListEntryInMap For more information, see the Oracle Fusion Middleware Administrator's Guide for Oracle Identity Federation.       Online   Set a property for a specific remote provider's configuration.   setFederationProperty     Online   Define a custom SP engine.   setCustomSPEngine     Online   Define a custom authentication engine.   setCustomAuthnEngine     Online   Set a configuration property.   setConfigProperty     Online   Delete a peer provider entry.   removePeerProviderEntry     Online   Delete a property from a map for",
+    "textAfterTable": "value Specifies the property value. type Specifies the type of property, BOOLEAN or STRING or LONG. 9.2.1.3 Example The following command adds valueA to a map list in server configuration:  wls:/mydomain/serverConfig> addConfigListEntryInMap('serverconfig','mymap','mylistA','valueA','string') 9.2.2 addConfigMapEntryInMap Online command that adds a nested map property entry in a map. 9.2.2.1 Description This command that adds a property name/value pair to a map nested inside a map in config.xml. 9.2.2.2 Syntax  addConfigMapEntryInMap('configName', 'mapname', 'nestedMapName', 'propName', 'value', 'type') Argument Definition configname Specifies the name of the configuration (for example, idpsaml20, serverconfig, spsaml20,..) to be updated. mapname Specifies the name of the property map to be changed in config.xml. nestedmapname name of the nested property map to be changed. propname",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

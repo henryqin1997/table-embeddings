@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Field",
+            "SSLVPN Package SSL-VPN-Client installed:",
+            "File: ... size: ...",
+            "Total files:"
+        ],
+        [
+            "Description",
+            "Displays the installation status of the CSD or SVC software package as \"installed\" or \"NONE.\"",
+            "The path, name, and size of each installation file.",
+            "Total number in the package."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Security Command Reference: Commands S to Z - show vlan group through switchport port-security violation [Support] - Cisco",
+    "title": "Table 8 show webvpn install package Field Descriptions",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/s1/sec-s1-cr-book/sec-cr-s6.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990900.28/warc/CC-MAIN-20150728002310-00076-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 371803375,
+    "recordOffset": 371692726,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{481036=Enables the generation of interim service accounting records at periodic intervals for subscribers. The minutes argument indicates the number of periodic intervals to send accounting update records from 1 to 71582 minutes., 582788=The maximum size of prefragmented packets that is supported by the adapter is only 1406 bytes. Sending packets larger than 1406 bytes could cause potential problems; as a result, there is a size restriction., 631963=Sets the duration for which all addresses are secured; valid values are from 1 to 1440 minutes., 679273=Protect--When the number of port-secure MAC addresses reaches the maximum limit that is allowed on the port, the packets with unknown source addresses are dropped until you remove a sufficient number of secure MAC addresses. Platform port-security disable traps is configurable only when the violation mode is set to protect. When this option is configured, drop entries will not be installed into hardware for violating addresses, thus allowing traffic to continue to flow to violating address from legitimate ports. To protect switch CPU against overload when this option is enabled, we recommend that you configure the port-security rate-limiter to 2000 packets per second with a burst rate of 10., 645672=MAC addresses for the interface; valid values are from 1 to 1024., 377125=This command was introduced on Cisco Aironet Access Point 1100 and Cisco Aironet Access Point 1200., 422748=The following example shows how to change the status of signature 9000:0 to enabled:, 580620=Size of MTU, in bytes. Range: 576 to 1406. Default:1406, 528151=DTLS is enabled by default on the Cisco ISR G2 series routers (3900, 2900, 1900, 890, and 880) and is disabled on other routers., 568430=The following example configures automatic detection of MSIE proxy settings and configures proxy exceptions for traffic from www.example.com and the 10.20.20.1 host:, 202013=Specifies the hello interval, in milliseconds, for a slave gateway. The range is from 100 to 30000. The default is 1000., 50879=Number of requests to the backend server having a header size greater than 1024 bytes., 665035=The maximum number of secure MAC addresses was changed from 1024 to 4097., 124073=The following example shows one XSM session (Session ID = 2) active on the Cisco device for the XSM client at IP address 172.17.129.134, and how long this session has been connected to the XSM server (Session 2: Connected since 22:47:07 UTC Mon Jan 8 2001). The output shows that the XSM, VDM, and EDM subsystems, and EDM and VDM history collecting are enabled. XSM configuration privilege level is set at 15, with XSM monitor privilege level set at 1., 450711=The Subject Alternative Name field in the X.509 certificate is defined in RFC 2511., 110097=This command was implemented on the following platforms: Cisco 2600XM, Cisco 2691, Cisco 2811, Cisco 2821, Cisco 2851, Cisco 3700, and Cisco 3800 series routers., 194896=If a subsignature is not specified, the default is 0. For example, if signature 1105 is specified without a subsignature, the router will interpret the signature as 1105:0., 581019=The default MTU size is 1406.}",
+    "textBeforeTable": "Syntax Description [number] status pair vasi show To display the status of a VRF-Aware Service Infrastructure (VASI) pair, use the show vasi paircommand in privileged EXEC mode. show vasi pair switchport port-security violation switchport port-security maximum switchport port-security mac-address switchport port-security aging switchport port-security svc wins-server svc split dns svc split svc rekey svc mtu svc msie-proxy server svc msie-proxy svc module svc keep-client-installed svc keepalive svc homepage svc dtls svc dpd-interval svc dns-server svc default-domain svc address-pool subscriber service subscriber access pppoe unique-key circuit-id subnet-acl subject-name subject-alt-name storage strict-http status standby-group sso-server ssl truspoint ssl-proxy module allowed-vlan ssl encryption ssid (local RADIUS server group) ssh split-dns source (parameter-map) source-interface (URL parameter-map) source interface (Diameter peer)",
+    "textAfterTable": "Privileged EXEC (#) Command History Release Modification Cisco IOS XE Release 2.6 This command was introduced. Examples The following is sample output from the show vasi pair command:  Router# show vasi pair status 100 Pair name Left state Right state Pair state ------------------------------------------------------------------------------ VASIPair100 down not configured need vasiright100 The table below describes the significant fields shown in the display. Table 1\u00a0show vasi pair status Field Descriptions Field Description Pair name Name of the VASI interface pair. Left state State of the vasileft interface. The values are as follows:",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

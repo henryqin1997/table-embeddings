@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Release",
+            "12.2(14)S",
+            "12.2(15)T",
+            "12.2(33)SRA",
+            "12.2SX"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "This command was integrated into Cisco IOS Release 12.2(15)T.",
+            "This command was integrated into Cisco IOS Release 12.2(33)SRA.",
+            "This command is supported in the Cisco IOS Release 12.2SX train. Support in a specific 12.2SX release of this train depends on your feature set, platform, and platform hardware."
+        ]
+    ],
+    "pageTitle": "IP Multicast Command Reference, Cisco IOS XE Release 3SE (Cisco WLC 5700 Series) - C through ip igmp [Cisco 5700 Series Wireless LAN Controllers] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipmulti/command/imc-xe-3se-5700-cr-book/imc-xe-3se-3850-cr-book_chapter_00.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00324-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 366307615,
+    "recordOffset": 366273845,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{37470=The following example shows how to clear the TCP connection to the MSDP peer at 10.3.32.154:, 28553=The following example shows how to clear the SA entries for the multicast group 10.3.50.152 from the cache:}",
+    "TableContextTimeStampAfterTable": "{116843=Specifies the VLAN ID. The range is from 1 to 1001. Do not enter leading zeroes., 97627=VLAN ID value. The range is from 1 to 1001. Do not enter leading zeroes., 86235=Even though the valid interval range is 100 to 1000 milliseconds, you cannot enter a value of 1000. If you want this value, you must enter the no ip igmp snooping last-member-query-interval command to return to the default value (1000 milliseconds)., 127153=Specifies the VLAN ID. The range is 1 to 1001. Do not enter leading zeroes., 81788=The default interval is 1000 milliseconds (1 second)., 6865=The following example shows how to filter a particular source S for a group G. In this example, Ethernet interface 0/3 is configured to filter source 232.2.2.2 for SSM group 232.2.30.30 in IGMPv3 reports., 107029=VLAN ID value. The range is between 1 to 1001. Do not enter leading zeroes., 70325=This command was implemented on the following platforms: Cisco 2600 series, Cisco 3600 series, and Cisco 3700 series routers., 6444=The following example shows how to permit all states for a source S. In this example, Ethernet interface 1/2 is configured to accept all groups for source 10.6.23.32 in IGMPv3 reports, which effectively accepts this source altogether., 5604=The following example shows how to deny all states for a source S. In this example, Ethernet interface 1/1 is configured to filter all groups for source 10.2.1.32 in IGMPv3 reports, which effectively denies this source., 71004=This command was integrated into Cisco IOS Release 12.3(4)T on the following platforms: Cisco 2600 series, Cisco 3600 series, and Cisco 3700 series routers., 81379=For bridge domain interfaces, the range is from 100 to 32767., 80918=Length of time, in milliseconds, after which the group record is deleted if no reports are received. The default is 1000. See the \u201cUsage Guidelines\u201d section for more information., 6024=The following example shows how to permit all states for a group G. In this example, Ethernet interface 1/1 is configured to accept all sources for SSM group 232.1.1.10 in IGMPv3 reports, which effectively accepts this group altogether.}",
+    "textBeforeTable": "Syntax Description interface-number ] [ interface-type cgmp ip clear To clear all group entries from the caches of Catalyst switches, use the clear ip cgmp command in privileged EXEC mode. clear ip cgmp ip igmp version ip igmp unidirectional-link ip igmp static-group ip igmp snooping vlan static ip igmp snooping vlan mrouter ip igmp snooping vlan immediate-leave ip igmp snooping vlan ip igmp snooping report-suppression ip igmp snooping last-member-query-interval ip igmp snooping ip igmp proxy-service ip igmp mroute-proxy ip igmp limit (interface) ip igmp limit (global) ip igmp helper-address ip igmp access-group ip cgmp clear ip msdp statistics clear ip msdp sa-cache clear ip msdp peer clear ip cgmp C through ip igmp ip igmp version ip igmp unidirectional-link ip igmp static-group ip igmp snooping vlan static ip",
+    "textAfterTable": "Release Modification 11.1 This command was introduced. 12.2(33)SRA This command was integrated into Cisco IOS Release 12.2(33)SRA. 12.2SX This command is supported in the Cisco IOS Release 12.2SX train. Support in a specific 12.2SX release of this train depends on your feature set, platform, and platform hardware. Usage Guidelines This command sends a Cisco Group Management Protocol (CGMP) leave message with a group address of 0000.0000.0000 and a unicast address of 0000.0000.0000. This message instructs the switches to clear all group entries they have cached. If an interface type and number are specified, the leave message is sent only on that interface. Otherwise, it is sent on all CGMP-enabled interfaces. Examples The following example clears the CGMP cache:  Router# clear ip cgmp Related Commands",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

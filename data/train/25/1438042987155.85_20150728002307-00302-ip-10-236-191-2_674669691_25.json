@@ -1,0 +1,100 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "482.51250",
+            "482.78750",
+            "483.21250",
+            "154.02500",
+            "154.83000",
+            "158.86500",
+            "453.05000"
+        ],
+        [
+            "License",
+            "KNA604",
+            "KNA604",
+            "WPRR959",
+            "KKC877",
+            "KKC877",
+            "WNFF918",
+            "KFI602"
+        ],
+        [
+            "Type",
+            "RM",
+            "RM",
+            "RM",
+            "RM",
+            "RM",
+            "BM",
+            "RM"
+        ],
+        [
+            "Tone",
+            "110.9 PL",
+            "110.9 PL",
+            "110.9 PL",
+            "110.9 PL",
+            "141.3 PL",
+            "110.9 PL",
+            "110.9 PL"
+        ],
+        [
+            "Alpha Tag",
+            "MtnView PD 1",
+            "MtnView PD 3",
+            "MtnView PD 4",
+            "MtnView FD 1",
+            "MtnViewFDC18",
+            "MtnViewFDT38",
+            "MtnView PW"
+        ],
+        [
+            "Description",
+            "Police Primary",
+            "Police Secondary",
+            "Police Shoreline",
+            "Fire Primary",
+            "Fire Command 18",
+            "Fire Tactical 38",
+            "Public Works"
+        ],
+        [
+            "Mode",
+            "FMN",
+            "FMN",
+            "FMN",
+            "FMN",
+            "FMN",
+            "FMN",
+            "FM"
+        ],
+        [
+            "Tag",
+            "Law Dispatch",
+            "Law Tac",
+            "Law Tac",
+            "Fire Dispatch",
+            "Fire-Tac",
+            "Fire-Tac",
+            "Public Works"
+        ]
+    ],
+    "pageTitle": "Santa Clara County, California (CA) Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?ctid=225",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00302-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 674690011,
+    "recordOffset": 674669691,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Sheriff Santa Clara County //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { }); }); } act=1; setEsc(this,origHtml); this.innerHTML = getTagsHTML; getTagsHTML += '\\n'; } getTagsHTML += '' + tagNames[i] + '\\n'; for (var",
+    "textAfterTable": "453.36250\u00a0 \u00a0 RM 186.2 PL ECC Ops Elmwood Correctional Complex Ops\u00a0 FM\u00a0 Corrections\u00a0 453.33750\u00a0 \u00a0 RM ECC Alarms Elmwood Correctional Complex Alarms\u00a0 FM\u00a0 Corrections\u00a0 453.51250\u00a0 \u00a0 RM EWF Ops Elmwood Women's Facility Ops\u00a0 FM\u00a0 Corrections\u00a0 453.48750\u00a0 \u00a0 RM EWF Alarm Elmwood Women's Facility Alarms\u00a0 FM\u00a0 Corrections\u00a0 453.63750\u00a0 \u00a0 RM 186.2 PL WDF COMN Common\u00a0 FM\u00a0 Corrections\u00a0 154.74000\u00a0 KMA376\u00a0 BM 162.2 PL CONTROL 7 Probation Dept/DOC Jail Transport\u00a0 FM\u00a0 Corrections\u00a0 155.79000\u00a0 WPTB860\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 4,
+    "headerRowIndex": 0
+}

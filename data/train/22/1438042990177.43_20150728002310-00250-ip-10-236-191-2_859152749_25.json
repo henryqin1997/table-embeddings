@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Method :",
+            "QManFault(EndpointReference,Exception)",
+            "QManFault(EndpointReference,QName,String)"
+        ],
+        [
+            "Javadocs:",
+            "1",
+            "1"
+        ],
+        [
+            "Source statements:",
+            "4",
+            "4"
+        ],
+        [
+            "Cyclometic complexity:",
+            "1",
+            "1"
+        ],
+        [
+            "Test References:",
+            "3",
+            "4"
+        ]
+    ],
+    "pageTitle": "",
+    "title": "",
+    "url": "http://xradar.sourceforge.net/reports/largeproject/classes/org.apache.qpid.management.wsdm.common-classes.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00250-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 859163675,
+    "recordOffset": 859152749,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 24 Nov 2009 13:53:28 GMT",
+    "textBeforeTable": "Package: org.apache.qpid.management.wsdm.common | Class source org.apache.qpid.management.wsdm.common.EntityInstanceNotFoundFault {overview} {architecture} {design} {code} {test} {source control} {system specific} [scorecard] [analysis] [explanations] [Statics] classes-org.apache.qpid.management.wsdm.common Designed for use with Checkstyle, CKJM, FindBugs, JavaNCSS, JDepend, Macaron, PMD, PMD-CPD, Java2HTML and Ant. Statics Report - System: 1.0, Version: 0, Date: Today http://xradar.sourceforge.net",
+    "textAfterTable": "Javadocs: Code violations: Style Errors: Unit Test Coverage Total : Per method : 2 2 Total : Per method : Per statement : 2 2 0.4 Total : Per method : Per statement : 28 28 5.6 Statement Test Coverage : Method Test Reference : 0 2 Method : Javadocs: Source statements: Cyclometic complexity: Test References: EntityInstanceNotFoundFault(EndpointReference,ObjectName) 1 2 1 3 View line in source Code Violation Rule Parameter 'endpointReference' is not assigned and could be declared final MethodArgumentCouldBeFinal Parameter 'targetEntityName' is not assigned and could be declared final MethodArgumentCouldBeFinal View line in source Style Error Column 0 Il manque un caract\u00e8re NewLine \u00e0 la fin du fichier 30 La ligne exc\u00e8de",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

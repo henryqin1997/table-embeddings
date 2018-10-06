@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "String reportObjectAbsolutePath",
+            "String newName",
+            "String bipSessionToken"
+        ],
+        [
+            "Description",
+            "The path to the object in the catalog to rename.",
+            "The new name for the object.",
+            "The proprietary token string generated for the user by the BI Publisher server. With the bipSessionToken string, the user no longer needs to provide user credentials. The BI Publisher server can validate this token string and restore the BI Publisher server session to perform needed operation."
+        ]
+    ],
+    "pageTitle": "CatalogService - 11g Release 1 (11.1.1)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E25054_01/fusionapps.1111/e20838/catalogservice.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00252-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71080067,
+    "recordOffset": 71070082,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 20 Sep 2012 18:00:06 GMT",
+    "textBeforeTable": "Table 6-22 Parameters for renameObjectInSession() Method boolean renameObjectInSession(String objectAbsolutePath, String newName, String bipSessionToken); Signature For more information about in-session methods, see Section 1.2, \"About In-Session Methods.\" Use renameObject() method to rename an object in the BI Publisher catalog for a given user. 6.22 renameObjectInSession() Method Specifies the password for the user name. String password Specifies a BI Publisher user name. String userID The new name to assign the object. String newName The path to the object in the catalog to rename. String reportObjectAbsolutePath Description Parameter Table 6-21 Parameters for renameObject() Method boolean renameObject(String reportObjectAbsolutePath, String newName, String userID, String password); Signature",
+    "textAfterTable": "6.23 updateObject() Method Use updateObject() method to update an object in the BI Publisher catalog. Signature boolean updateObject(String reportObjectAbsolutePath, byte[] objectData, String userID, String password); Table 6-23 Parameters for updateObject() Method Parameter Description String reportOjectAbsolutePath The path to the object to update in the catalog. For example: /HR Manager/Employee Reports/Employee Data Model.xdm byte[] objectData The data with which to update the object. String userID Specifies a BI Publisher user name. String password Specifies the password for the user name. 6.24 updateObjectInSession() Method Use updateObject() method to update an object in the BI Publisher catalog for a",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

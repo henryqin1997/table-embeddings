@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "153.74000",
+            "154.98000"
+        ],
+        [
+            "License",
+            "WQHA264",
+            "KNEH505"
+        ],
+        [
+            "Type",
+            "BM",
+            "RM"
+        ],
+        [
+            "Tone",
+            "",
+            "423 DPL"
+        ],
+        [
+            "Alpha Tag",
+            "Warren EMA",
+            "Warren FG/DP"
+        ],
+        [
+            "Description",
+            "Emergency Mgmt.",
+            "Fireground Primary / Highway"
+        ],
+        [
+            "Mode",
+            "FM",
+            "FM"
+        ],
+        [
+            "Tag",
+            "Emergency Ops",
+            "Multi-Dispatch"
+        ]
+    ],
+    "pageTitle": "Litchfield County, Connecticut (CT) Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?ctid=306",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00173-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 669161855,
+    "recordOffset": 669147527,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Litchfield County Fire Dispatch (LCD) Litchfield County //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { }); }); } act=1; setEsc(this,origHtml); this.innerHTML = getTagsHTML; getTagsHTML += '\\n'; } getTagsHTML += '' + tagNames[i] +",
+    "textAfterTable": "155.10750\u00a0 WPTL616\u00a0 BM 82.5 PL LCD Disp 1 Dispatch 1\u00a0 FMN\u00a0 Fire Dispatch\u00a0 155.12250\u00a0 WPTL616\u00a0 RM 532 DPL LCD Cmd 2/3 Command 2 (Reptr) / 3 (Direct)\u00a0 FMN\u00a0 Fire-Tac\u00a0 155.81250\u00a0 WPTL616\u00a0 BM 072 DPL LCD Scene 4 Scene 4 - Barkhamsted, Kent, and Salisbury\u00a0 FMN\u00a0 Fire-Tac\u00a0 155.82750\u00a0 WPTL616\u00a0 BM 025 DPL LCD Scene 5 Scene 5 - New Hartford and North Canaan\u00a0 FMN\u00a0 Fire-Tac\u00a0 156.00750\u00a0 WPTL616\u00a0 BM 051 DPL LCD Scene 6 Scene 6 - Falls Village and Harwinton\u00a0 FMN\u00a0 Fire-Tac\u00a0 155.81250\u00a0 WPTL616\u00a0 BM 172 DPL LCD Scene 7",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

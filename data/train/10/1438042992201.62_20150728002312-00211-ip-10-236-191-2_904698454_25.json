@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Method",
+            "Router ARP cache",
+            "DHCP",
+            "SNMP Device"
+        ],
+        [
+            "Details",
+            "Network Discovery queries the ARP cache of a router to find subnet information.",
+            "Network Discovery queries each DHCP server that you specify to discover the devices for which the DHCP server has provided a lease.",
+            "Network Discovery can directly query a SNMP device."
+        ],
+        [
+            "Limitation",
+            "Typically, data in a router ARP cache has a short time-to-live. When Network Discovery queries the ARP cache, the ARP cache might no longer contain information about the requested object.",
+            "Network Discovery supports only DHCP servers that run the Microsoft implementation of DHCP.",
+            "For Network Discovery to query a device, the device must have a local SNMP agent installed. You must also configure Network Discovery to use the community name that is being used by the SNMP agent."
+        ]
+    ],
+    "pageTitle": "Planning for Discovery in Configuration Manager",
+    "title": "",
+    "url": "https://technet.microsoft.com/en-us/6a0e2b40-672f-45e1-a12d-6d403ab39780",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992201.62/warc/CC-MAIN-20150728002312-00211-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 904726803,
+    "recordOffset": 904698454,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{7532=System\u00a0Center\u00a02012 Configuration\u00a0Manager introduces the following changes for discovery:, 7227=The information in this section also appears in the Getting Started with System Center 2012 Configuration Manager guide., 75918=Subnets 10.1.20.0 and 10.1.30.0, subnet A, and Router\u00a02 (found on the first hop)., 4195=System\u00a0Center\u00a02012 Configuration\u00a0Manager discovery identifies computer and user resources that you can manage by using Configuration Manager. It can also discover the network infrastructure in your environment. Discovery creates a discovery data record (DDR) for each discovered object and stores this information in the Configuration Manager database., 87391=Use the following best practices information to help you use discovery in System\u00a0Center\u00a02012 Configuration\u00a0Manager., 3897=Applies To: System Center 2012 Configuration Manager, System Center 2012 Configuration Manager SP1, System Center 2012 Configuration Manager SP2, System Center 2012 R2 Configuration Manager, System Center 2012 R2 Configuration Manager SP1, 75821=Router\u00a01 and subnet 10.1.10.0 (found with zero hops)., 29334=The Active Directory domain functional level is set to Windows\u00a0Server\u00a02003 or later., 3856=Updated: May 14, 2015}",
+    "textBeforeTable": "What\u2019s New in Configuration Manager Best Practices for Discovery Decide Where to Run Discovery About Discovery Data Records About Network Discovery About Heartbeat Discovery About Delta Discovery About Active Directory Forest Discovery Active Directory Group Discovery Active Directory User Discovery Active Directory System Discovery Shared Discovery Options About Active Directory System, User, and Group Discovery Methods Decide Which Discovery Methods to Use Discovery Methods in Configuration Manager Use the following sections to help you plan for discovery in Configuration Manager: You can use discovery information to create custom queries and collections that logically group resources for management tasks such as the assignment of custom client settings and software deployments. Computers must be discovered before you can use client push installation to install the Configuration Manager client on devices. When discovery of a resource is successful, discovery puts information about the resource in a file that is referred to as a discovery data record (DDR). DDRs are in turn processed by site servers and entered into the Configuration Manager database where they are then replicated by database-replication with all sites. The replication makes discovery data available at each site in the hierarchy, regardless of where it was discovered or processed. System\u00a0Center\u00a02012 Configuration\u00a0Manager discovery identifies computer and user resources that you can manage by using Configuration Manager. It can also discover the network infrastructure in your environment. Discovery creates a discovery data",
+    "textAfterTable": "Discovery Methods in Configuration Manager Before you enable discovery methods for Configuration Manager, ensure you understand what each method can discover. Because discovery can generate a large volume of network traffic, and the resultant DDRs can result in a significant use of CPU resources during processing, plan to use only those discovery methods that you require to meet your goals. You could use only one or two discovery methods to be successful, and you can always enable additional methods in a controlled manner to extend the level of discovery in your environment. Use the following table to help you plan for each of the six configurable discovery methods. Discovery method Enabled by default Accounts that run discovery More information Active Directory Forest Discovery No Active Directory Forest Discovery Account, or the computer account of the site server Can discover Active Directory sites and subnets, and then create Configuration Manager boundaries for each site and subnet from the forests that you have configured for discovery. When Active Directory Forest Discovery identifies a supernet that is assigned to an Active Directory site, Configuration Manager converts the supernet into an IP address range boundary. Supports a user-defined account to discover resources for each forest. Can publish to the Active Directory Domain Services of a forest when publishing to that forest is enabled, and the specified account has permissions to that forest.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

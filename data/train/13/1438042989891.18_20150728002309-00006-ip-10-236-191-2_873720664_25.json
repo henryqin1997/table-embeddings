@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Name",
+            "date",
+            "options"
+        ],
+        [
+            "Type",
+            "Date",
+            "Object"
+        ],
+        [
+            "Description",
+            "the date to retrieve events for (only the day is used; the time is ignored)",
+            "advanced filtering options"
+        ]
+    ],
+    "pageTitle": "Class CalendarApp \u00a0 | \u00a0 Apps Script \u00a0 | \u00a0 Google Developers",
+    "title": "",
+    "url": "https://developers.google.com/apps-script/reference/calendar/calendar-app?hl=fr-FR",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00006-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 873749887,
+    "recordOffset": 873720664,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{69640=Derni\u00e8re mise \u00e0 jour\u00a0: mai 19, 2015}",
+    "lastModified": "Tue, 19 May 2015 03:14:06 GMT",
+    "textBeforeTable": "Parameters Logger.log('Event ID: ' + event.getId()); new Date('July 20, 1969')); var event = CalendarApp.getDefaultCalendar().createAllDayEvent('Apollo 11 Landing', // Creates an all-day event for the moon landing and logs the ID.  Creates a new all-day event.   createAllDayEvent(title, date)   Detailed documentation      Subscribes the user to the calendar with the given ID, if the user is allowed to subscribe. Calendar subscribeToCalendar(id, options)   Subscribes the user to the calendar with the given ID, if the user is allowed to subscribe. Calendar subscribeToCalendar(id)   Sets the time zone of the calendar. Calendar setTimeZone(timeZone)   Sets whether the calendar's events are displayed in the user interface. Calendar setSelected(selected)   Sets the name of the calendar. Calendar setName(name)   Sets whether the calendar is visible in the user interface. Calendar setHidden(hidden)   Sets the description of the calendar. Calendar setDescription(description)   Sets the color of the calendar. Calendar setColor(color)   Creates a new recurrence object, which can be used to create rules for event recurrence. EventRecurrence newRecurrence()   Determines whether the calendar's events are displayed in the user interface. Boolean isSelected()   Determines whether the calendar is owned by the effective user. Boolean isOwnedByMe()   Determines whether the calendar is the default calendar for the effective",
+    "textAfterTable": "Return CalendarEvent \u2014 the created event createAllDayEvent(title, date, options) Creates a new all-day event.   // Creates an all-day event for the moon landing and logs the ID. var event = CalendarApp.getDefaultCalendar().createAllDayEvent('Apollo 11 Landing', new Date('July 20, 1969'), {location: 'The Moon'}); Logger.log('Event ID: ' + event.getId());  Parameters Name Type Description title String the title of the event date Date the date of the event (only the day is used; the time is ignored) options Object a JavaScript object that specifies advanced parameters, as listed below Advanced parameters Name Type Description description String the description of the event location String the location of the event guests String a comma-separated list of email addresses that should be added as guests sendInvites Boolean whether to send invitation emails (default: false) Return CalendarEvent \u2014 the created event createAllDayEventSeries(title, startDate, recurrence) Creates a new all-day event series.   // Creates an event series for a no-meetings day, taking place every Wednesday in 2013. var eventSeries = CalendarApp.getDefaultCalendar().createAllDayEventSeries('No Meetings', new Date('January 2, 2013 03:00:00 PM EST'), CalendarApp.newRecurrence().addWeeklyRule() .onlyOnWeekday(CalendarApp.Weekday.WEDNESDAY) .until(new Date('January 1, 2014'))); Logger.log('Event Series ID: ' + eventSeries.getId());",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

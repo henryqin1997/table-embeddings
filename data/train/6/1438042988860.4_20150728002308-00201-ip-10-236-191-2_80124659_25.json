@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "column_list",
+            "value_type"
+        ],
+        [
+            "Description",
+            "The names of the columns kept for the row LCR Specify a comma-delimited list of type VARCHAR2. This procedure removes columns that are not in the list from the current row LCR.",
+            "The type of value for which to keep the columns Specify old to keep the old values of the columns. An error is raised if the old values do not exist in the LCR. Specify new to keep the new values of the columns. An error is raised if the new values do not exist in the LCR. If * is specified, then the procedure keeps both the old and the new columns."
+        ]
+    ],
+    "pageTitle": "Logical Change Record TYPEs",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/appdev.112/e23448/t_lcr.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00201-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 80149719,
+    "recordOffset": 80124659,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 19 May 2015 17:53:02 GMT",
+    "textBeforeTable": "Table 249-26 KEEP_COLUMNS Procedure Parameters Parameters value_type IN VARCHAR2 DEFAULT '*'); column_list IN VARCHAR2, MEMBER PROCEDURE KEEP_COLUMNS(  Syntax    This procedure keeps a list of columns in a row LCR. The procedure deletes columns that are not in the list from the row LCR. KEEP_COLUMNS Member Procedure    g Release 2 (11.2.0.2). Note: This functionality is available starting with Oracle Database 11 This function is reserved for internal use only. IS_STATEMENT_LCR Member Function The column name column_name Description Parameter Table 249-25 GET_XML_INFORMATION Function Parameter Parameter RETURN NUMBER; column_name IN VARCHAR2) MEMBER FUNCTION GET_XML_INFORMATION(  Syntax  Returns NULL if the specified column does not exist. DBMS_LCR.NOT_XML indicates that the column is not an XMLType column. DBMS_LCR.XML_DOC indicates that the column contains an XML document. DBMS_LCR.XML_DIFF indicates that the column contains differences between old and new XML",
+    "textAfterTable": "RENAME_COLUMN Member Procedure Renames a column in a row LCR. Syntax  MEMBER PROCEDURE RENAME_COLUMN( from_column_name IN VARCHAR2, to_column_name IN VARCHAR2, value_type IN VARCHAR2 DEFAULT '*'); Parameters Table 249-27 RENAME_COLUMN Procedure Parameters Parameter Description from_column_name The existing column name to_column_name The new column name An error is raised if a column with the specified name already exists. value_type The type of value for which to rename the column Specify old to rename the old value of the column. An error is raised if the old value does not exist in the LCR. Specify new to rename the new value of the column. An error is raised if the new value does not exist in the LCR. If * is specified, then the procedure renames the column names for both old and new value. The procedure raises an error if either column value does",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Related Topic",
+            "Cisco IOS commands",
+            "Cisco IOS security commands",
+            "IKE and IKE policy configuration tasks IPsec transform configuration tasks",
+            "Basic deployment guidelines for enabling GET VPN in an enterprise network"
+        ],
+        [
+            "Document Title",
+            "Cisco IOS Master Command List, All Releases",
+            "Cisco IOS Security Command References",
+            "\"Configuring Internet Key Exchange for IPsec VPNs\" module in the Internet Key Exchange for IPsec VPNs Configuration Guide, Cisco IOS Release 15.2M&T",
+            "Cisco IOS GET VPN Solutions Deployment Guide"
+        ]
+    ],
+    "pageTitle": "Cisco Group Encrypted Transport VPN Configuration Guide, Cisco IOS Release 15.2M&T - GET VPN Support with Suite B\u00a0 [Support] - Cisco Systems",
+    "title": "",
+    "url": "http://www.cisco.com/en/US/docs/ios-xml/ios/sec_conn_getvpn/configuration/15-2mt/sec-get-vpn-suiteb.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00238-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 369883759,
+    "recordOffset": 369849148,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{198321=RFC 2401}",
+    "textBeforeTable": "Related Documents Additional References Device(config-gdoi-group)# end Device(config-gdoi-group)# client transform-sets g1 Device(config)# crypto gdoi group gdoigroupone Device(cfg-crypto-trans)# exit Device(config)# crypto ipsec transform-set g1 esp-gcm 192 Device# configure terminal Device> enable  The following example shows how to configure the acceptable transform sets used by TEKs for data encryption or authentication.  Configuring Acceptable Transform Sets for TEKs for Suite B    Device(config-gdoi-group)# end Device(config-gdoi-group)# client rekey hash sha384 Device(config-gdoi-group)# client rekey encryption 3des-cbc aes 192 aes 256 Device(config-gdoi-group)# server address ipv4 10.0.5.2 Device(config-gdoi-group)# identity address ipv4 10.2.2.2 Device(config)# crypto gdoi group gdoigroupone Device# configure terminal Device> enable  The following example shows how to configure the Suite B ciphers and hash algorithms for the KEK to be allowed by the GM. This example uses an identity address (compatible only with IPv4 data plane configurations). You could instead use an identity number (which would be compatible with IPv4 and IPv6 data plane configurations).  Configuring Ciphers or Hash Algorithms for the KEK for Suite B   Example: Configuring a Group Member for GET VPN Suite B   Device(gdoi-sa-ipsec)# end",
+    "textAfterTable": "Standards and RFCs Standard/RFC Title Federal Information Processing Standard (FIPS) Publication 140-2 Security Requirements for Cryptographic Modules RFC 2401 Security Architecture for the Internet Protocol RFC 4106 The Use of Galois/Counter Mode (GCM) in IPsec Encapsulating Security Payload (ESP) RFC 4543 The Use of Galois Message Authentication Code (GMAC) in IPsec ESP and AH RFC 4869 Suite B Cryptographic Suites for IPsec RFC 6054 Using Counter Modes with Encapsulating Security Payload (ESP) and Authentication Header (AH) to Protect Group Traffic",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

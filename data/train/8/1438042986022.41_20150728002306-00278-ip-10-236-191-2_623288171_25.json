@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2006-09-22T00:00:00",
+            "2011-04-28T00:00:00"
+        ],
+        [
+            "Description",
+            "The data are collected using a Cessna 310 aircraft. The NASA Experimental Advanced Airborne Research Lidar (EAARL) laser scanner collects the data using a green (532-nm) raster scanning laser while a digital camera acquires a visual record of the flight. The data are stored on hard drives and archived at the U.S. Geological Survey, FISC office in St. Petersburg, FL, and the NASA office at Wallops Flight Facility in Virginia. The navigational data are processed at Wallops Flight Facility. The navigational and raw data are then downloaded into the Advanced Lidar Processing System (ALPS). Data are converted from units of time to x,y,z points for elevation. The derived surface data can then be converted into raster data (GeoTIFFs).",
+            "The NOAA Coastal Services Center received the data in LAS format. The files contained Lidar elevation and intensity measurements. The data were projected in UTM coordinates (NAD83; Zone 15N) and referenced to the North American Vertical Datum of 1988 (NAVD88) using the Geoid03 model. The following processes were performed to make the data available within the Digital Coast: 1. The data were converted from UTM (NAD83; Zone 15N) to geographic coordinates (NAD83). 2. The data were converted from NAVD88 (orthometric) heights to GRS80 (ellipsoidal) heights using the Geoid03 model. 3. The data were reclassified to reflect a bare earth surface (class 0 to class 2). 4. The LAS data were sorted by latitude and the headers were updated."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2006_USGS_Jean_Lafitte_m578.xml&view=ISO19115Components-HTMLTable&altview=none",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986022.41/warc/CC-MAIN-20150728002306-00278-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 623296373,
+    "recordOffset": 623288171,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:2006_USGS_Jean_Lafitte_m578Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "Top CI_Citation Count Component Title Date Citation Identifier 1 2006 USGS/NPS/NASA Experimental Advanced Airborne Research Lidar (EAARL): Jean Lafitte National Historical Park and Preserve 2008-01-01 1 Basis and methods of NASA Airborne Topographic Mapper lidar surveys for coastal studies 2002-01-01 2 None 1 North American Datum 1983 2007-01-19 1 Small footprint, waveform-resolving lidar estimation of submerged and subcanopy topography in coastal environments 2009-01-01 Top CI_Series Count Component Name Issue Identification Page 1 International Journal of Remote Sensing 30(4); pp. 861-878 1 Journal of Coastal Research",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

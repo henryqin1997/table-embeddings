@@ -1,0 +1,41 @@
+{
+    "relation": [
+        [
+            "Registry path",
+            "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\MSDRM\\ServiceLocation\\EnterprisePublishing",
+            "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\MSDRM\\ServiceLocation\\Activation"
+        ],
+        [
+            "Type",
+            "Reg_SZ",
+            "Reg_SZ"
+        ],
+        [
+            "Value",
+            "Default",
+            "Default"
+        ],
+        [
+            "Data",
+            "http://ConnectorFQDN/_wmcs/licensing",
+            "http://ConnectorFQDN/_wmcs/certification"
+        ]
+    ],
+    "pageTitle": "Deploying the Azure Rights Management Connector",
+    "title": "",
+    "url": "https://technet.microsoft.com/library/dn375964.aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00062-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 879633923,
+    "recordOffset": 879601766,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{32876=Windows\u00a0Server\u00a02012, 96456=If you are using SharePoint\u00a02013, make manual registry edits by using the table in the following section to manually add registry settings on the servers., 50684=When you have installed the RMS connector on at least two computers, you are ready to authorize the servers and services that you want to use the RMS connector. For example, servers running Exchange\u00a0Server\u00a02013 or SharePoint\u00a0Server\u00a02013., 23498=The RMS connector is a small-footprint service that you install on-premises, on servers that run Windows Server\u00a02012\u00a0R2, Windows Server\u00a02012, or Windows Server\u00a02008\u00a0R2. In addition to running the connector on physical computers, you can also run it on virtual machines, including Azure IaaS VMs. After you install and configure the connector, it acts as a communications interface (a relay) between the on-premises servers and the cloud service., 20548=Applies To: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2, 32163=Some configurations for the RMS connector require federation. For example, access to SharePoint\u00a02013 protected libraries from Office\u00a02013 clients requires federation., 81756=Exchange Server\u00a02010 with Exchange 2010 Service Pack\u00a03 Rollup Update 6, 67895=A physical or virtual computer running Windows Server\u00a02012 or Windows Server\u00a02012\u00a0R2 (all editions), Windows Server\u00a02008\u00a0R2 or Windows Server\u00a02008\u00a0R2 Service Pack\u00a01 (all editions), Windows 8.1, Windows\u00a08, or Windows\u00a07., 93699=A SharePoint\u00a02013 server must also be running the latest version of the MSIPC client version\u00a02.1. You can download the latest MSIPC client from the Microsoft Download Center., 81881=You will also need to install on these servers, a version of the RMS client that includes support for RMS Cryptographic Mode\u00a02. The minimum version that is supported in Windows Server\u00a02008 is included in the hotfix that you can download from RSA key length is increased to 2048 bits for AD RMS in Windows Server 2008 R2 and in Windows Server 2008. The minimum version for Windows Server 2008\u00a0R2 can be downloaded from RSA key length is increased to 2048 bits for AD RMS in Windows 7 or in Windows Server 2008 R2. Windows Server\u00a02012 and Windows\u00a0Server 2012\u00a0R2 natively support Cryptographic Mode 2., 80001=In addition, if Office\u00a02010 is installed locally on an Exchange server, the client app\u2019s IRM features might work from that computer after the server is configured to use the connector, but this is not supported., 93627=SharePoint Server\u00a02010, 94962=These servers running SharePoint\u00a02010 must have installed a version of the MSDRM client that includes support for RMS Cryptographic Mode 2. The minimum version that is supported in Windows Server\u00a02008 is included in the hotfix that you can download from RSA key length is increased to 2048 bits for AD RMS in Windows Server 2008 R2 and in Windows Server 2008, and the minimum version for Windows Server\u00a02008\u00a0R2 can be downloaded from RSA key length is increased to 2048 bits for AD RMS in Windows 7 or in Windows Server 2008 R2. Windows Server\u00a02012 and Windows Server\u00a02012\u00a0R2 natively support Cryptographic Mode 2., 99040=Use the table in the following section only if you want to manually add or check registry settings on a server that runs SharePoint 2013., 93569=SharePoint Server\u00a02013, 86018=https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com, 85624=For example: LicensingIntranetDistributionPointUrl\u00a0\u00a0\u00a0: https://5c6bb73b-1038-4eec-863d-49bded473437.rms.na.aadrm.com/_wmcs/licensing, 81656=Exchange Server\u00a02013 with Exchange 2013 Cumulative Update\u00a03, 20511=Updated: June 1, 2015}",
+    "textBeforeTable": "Use this information to learn about the Microsoft Rights Management (RMS) connector and how you can use it to provide information protection with existing on-premises deployments that use Microsoft Exchange\u00a0Server, Microsoft SharePoint\u00a0Server, or file servers that run Windows Server and use the File Classification Infrastructure (FCI) capability of File Server Resource Manager. Applies To: Azure Rights Management, Windows Server 2012, Windows Server 2012 R2 Updated: June 1, 2015 \u00a0 Deploying the Azure Rights Management Connector Decommissioning and Deactivating Rights Management Deploying the Rights Management Connector Configuring Super Users for Rights Management and Discovery Services or Data Recovery Configuring Usage Rights for Rights Management Configuring Applications for Rights Management Configuring Custom Templates for Rights Management",
+    "textAfterTable": "The Microsoft Rights Management (RMS) connector lets you quickly enable existing on-premises servers to use their Information Rights Management (IRM) functionality with the cloud-based Microsoft Rights Management service (Azure RMS). With this functionality, IT and users can easily protect documents and pictures both inside your organization and outside, without having to install additional infrastructure or establish trust relationships with other organizations. You can use this connector even if some of your users are connecting to online services, in a hybrid scenario. For example, some users' mailboxes use Exchange Online and some users' mailboxes use Exchange Server. After you install the RMS connector, all users can protect and consume emails and attachments by using Azure RMS, and information protection works seamlessly between the two deployment configurations. The RMS connector is a small-footprint service that you install on-premises, on servers that run Windows Server\u00a02012\u00a0R2, Windows Server\u00a02012, or Windows Server\u00a02008\u00a0R2. In addition to running the connector on physical computers, you can also run it on virtual machines, including Azure IaaS VMs. After you install and configure the connector, it acts as a communications interface (a relay) between the on-premises servers and the cloud service. If you manage your own tenant key for Azure\u00a0RMS (the bring you own key, or BYOK scenario), the RMS connector and the on-premises servers that use it do not access the hardware security module (HSM) that contains your tenant key. This is because all cryptographic operations that use the tenant key are performed",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

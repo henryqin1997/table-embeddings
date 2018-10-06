@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "name",
+            "table",
+            "catalog",
+            "schema",
+            "pk-column-name",
+            "value-column-name",
+            "pk-column-value",
+            "initial-value",
+            "allocation-size"
+        ],
+        [
+            "Description",
+            "Name of the generator (required)",
+            "name of the table to use for sequences",
+            "Catalog to store the sequence table",
+            "Schema to store the sequence table",
+            "Name of the primary-key column in the table",
+            "Name of the value column in the table",
+            "Name of the value to use in the primary key column (for this row)",
+            "Initial value to use in the table",
+            "Number of values to allocate when needed"
+        ],
+        [
+            "Values",
+            "",
+            "SEQUENCE_TABLE",
+            "",
+            "",
+            "SEQUENCE_NAME",
+            "NEXT_VAL",
+            "{name of the class}",
+            "0",
+            "50"
+        ]
+    ],
+    "pageTitle": "DataNucleus Access Platform - JPA XML Meta-Data",
+    "title": "",
+    "url": "http://www.datanucleus.org/products/accessplatform_2_2/jpa/metadata_xml.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989507.42/warc/CC-MAIN-20150728002309-00279-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 389328495,
+    "recordOffset": 389310600,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 02 Sep 2011 01:08:08 GMT",
+    "textBeforeTable": "The <sequence-generator> element (under <entity-mappings>, or <entity> or <id>) defines a generator of sequence values, for use elsewhere in this persistence-unit. Metadata for sequence-generator tag The <access> element (under <entity-mappings>) contains the setting for how to access the persistent fields/properties. This can be set to either \"FIELD\" or \"PROPERTY\". Metadata for access tag The <catalog> element (under <entity-mappings>) contains the default catalog for all classes in this file. Metadata for catalog tag The <schema> element (under <entity-mappings>) contains the default schema for all classes in this file.",
+    "textAfterTable": "Attribute Description Values name Name of the generator (required) table name of the table to use for sequences SEQUENCE_TABLE catalog Catalog to store the sequence table schema Schema to store the sequence table pk-column-name Name of the primary-key column in the table SEQUENCE_NAME value-column-name Name of the value column in the table NEXT_VAL pk-column-value Name of the value to use in the primary key column (for this row) {name of the class} initial-value Initial value to use in the table 0 allocation-size Number of values to allocate when needed 50 Metadata for named-query tag The <named-query> element (under <entity-mappings> or under <entity>) defines a JPQL query that will be accessible at runtime",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

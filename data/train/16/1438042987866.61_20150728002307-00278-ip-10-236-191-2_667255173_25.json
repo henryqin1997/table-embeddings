@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "166.30000",
+            "166.30000"
+        ],
+        [
+            "License",
+            "",
+            ""
+        ],
+        [
+            "Type",
+            "RM",
+            "RM"
+        ],
+        [
+            "Tone",
+            "131.8 PL",
+            "131.8 PL"
+        ],
+        [
+            "Alpha Tag",
+            "BighornCyn M",
+            "BighornCyn S"
+        ],
+        [
+            "Description",
+            "Medicine Mountain",
+            "Fort Smith"
+        ],
+        [
+            "Mode",
+            "FMN",
+            "FMN"
+        ],
+        [
+            "Tag",
+            "Federal",
+            "Federal"
+        ]
+    ],
+    "pageTitle": "Wyoming Federal Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?aid=1908",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987866.61/warc/CC-MAIN-20150728002307-00278-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 667275763,
+    "recordOffset": 667255173,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Wind River Agency Bureau of Indian Affairs //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { }); }); } act=1; setEsc(this,origHtml); this.innerHTML = getTagsHTML; getTagsHTML += '\\n'; } getTagsHTML += '' + tagNames[i] +",
+    "textAfterTable": "171.65000\u00a0 \u00a0 RM 107 NAC Wind Riv Bk2 Black Mountain 2 digital\u00a0 P25\u00a0 Federal\u00a0 171.65000\u00a0 \u00a0 RM 118.8 PL Wind Riv Cpr Copper Mountain\u00a0 FMN\u00a0 Federal\u00a0 171.65000\u00a0 \u00a0 RM 118 NAC Wind Riv Cpr Copper Mountain digital\u00a0 P25\u00a0 Federal\u00a0 171.65000\u00a0 \u00a0 RM 136.5 PL Wind Riv Sig Signal Hill\u00a0 FMN\u00a0 Federal\u00a0 171.65000\u00a0 \u00a0 RM 136 NAC Wind Riv Sig Signal Hill digital\u00a0 P25\u00a0 Federal\u00a0 412.12500\u00a0 \u00a0 BM 69.3 PL Wind Riv Ex1 Mobile Extenders 1\u00a0 FMN\u00a0 Federal\u00a0 412.87500\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 4,
+    "headerRowIndex": 0
+}

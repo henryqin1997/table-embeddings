@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Prefix",
+            "xml",
+            "gernaming",
+            "sys",
+            "xsd"
+        ],
+        [
+            "Namespace",
+            "http://www.w3.org/XML/1998/namespace",
+            "http://geronimo.apache.org/xml/ns/naming-1.2",
+            "http://geronimo.apache.org/xml/ns/deployment-1.2",
+            "http://www.w3.org/2001/XMLSchema"
+        ]
+    ],
+    "pageTitle": "Schema documentation: Apache Geronimo",
+    "title": "",
+    "url": "http://geronimo.apache.org/schemas-2.1/docs/geronimo-naming-1.2.xsd.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989043.35/warc/CC-MAIN-20150728002309-00082-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 96779215,
+    "recordOffset": 96754935,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{303434=Nillable (Applies to element declarations). If an element declaration is nillable, instances can use the xsi:nil attribute. The xsi:nil attribute is the boolean attribute, nil, from the http://www.w3.org/2001/XMLSchema-instance namespace. If an element instance has an xsi:nil attribute set to true, it can be left empty, even though its element declaration may have required content.}",
+    "lastModified": "Tue, 15 Jan 2013 03:26:57 GMT",
+    "textBeforeTable": "Declared Namespaces This is a partial XML Schema Definition for common naming elements for resolving EJB, Web, services, or resource references. This schema will never be used directly but its elements are used in geronimo-application-client-2.0.xsd, geronimo-connector-1.2.xsd, geronimo-web-2.0.1.xsd, geronimo-tomcat-2.0.1.xsd, and geronimo-jetty-2.0.2.xsd. All the schema's or plans using elements of this schema must specify the top level element with one of the namespace specified as \"http://geronimo.apache.org/xml/ns/naming-1.2\". The default location for this document is http://geronimo.apache.org/xml/ns/naming-1.2 Documentation http://geronimo.apache.org/xml/ns/deployment-1.2 (at geronimo-module-1.2.xsd) This schema imports schema(s) from the following namespace(s): Schema Composition By default, local attribute declarations have no namespace. By default, local element declarations belong to this schema's target namespace. Global element and attribute declarations belong to this schema's target namespace. Element and Attribute Namespaces 1.0 Version http://geronimo.apache.org/xml/ns/naming-1.2 Target Namespace Schema Document Properties top Glossary Legend Simple Type: persistence-context-typeType Model Group: serverGroup Model Group: jndiEnvironmentRefsGroup Model Group: corbaNameGroup Complex Type: service-refType Complex Type: service-completionType Complex Type:",
+    "textAfterTable": "Schema Component Representation < xsd:schema targetNamespace=\" http://geronimo.apache.org/xml/ns/naming-1.2\" elementFormDefault=\" qualified\" attributeFormDefault=\" unqualified\" version=\" 1.0\"> < xsd:import namespace=\" http://geronimo.apache.org/xml/ns/deployment-1.2\" schemaLocation=\" geronimo-module-1.2.xsd\"/> ... </ xsd:schema> top Global Declarations Element: abstract-naming-entry The following elements can be used wherever this element is referenced: gbean-ref persistence-unit-ref persistence-context-ref Name abstract-naming-entry Used by (from the same schema document) Model Group jndiEnvironmentRefsGroup Type gernaming:abstract-naming-entryType Nillable no Abstract yes Documentation The element abstract-naming-entry is an abstract element used as a generic element for all the references.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

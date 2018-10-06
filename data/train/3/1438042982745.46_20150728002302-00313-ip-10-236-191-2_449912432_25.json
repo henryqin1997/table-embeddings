@@ -1,0 +1,111 @@
+{
+    "relation": [
+        [
+            "",
+            "Euro",
+            "Yen",
+            "UK Pd",
+            "Sw. Fr.",
+            "Cdn $"
+        ],
+        [
+            "Eurodollar futures: = 3",
+            "0.177",
+            "0.102",
+            "0.087",
+            "0.221",
+            "0.022"
+        ],
+        [
+            "Eurodollar futures: = 6",
+            "0.167",
+            "0.086",
+            "0.082",
+            "0.204",
+            "0.017"
+        ],
+        [
+            "Eurodollar futures: = 9",
+            "0.161",
+            "0.068",
+            "0.081",
+            "0.184",
+            "0.025"
+        ],
+        [
+            "Eurodollar futures: = 12",
+            "0.152",
+            "0.054",
+            "0.076",
+            "0.172",
+            "0.026"
+        ],
+        [
+            "Eurodollar futures: = 60",
+            "0.044",
+            "0.008",
+            "0.023",
+            "0.058",
+            "0.033"
+        ],
+        [
+            "US ETF",
+            "-0.309",
+            "-0.186",
+            "-0.174",
+            "-0.325",
+            "0.100"
+        ],
+        [
+            "Foreign Currency Futures: Euro",
+            "1",
+            "0.379",
+            "0.540",
+            "0.883",
+            "-0.014"
+        ],
+        [
+            "Foreign Currency Futures: Yen",
+            "",
+            "1",
+            "0.229",
+            "0.396",
+            "-0.005"
+        ],
+        [
+            "Foreign Currency Futures: UK Pd",
+            "",
+            "",
+            "1",
+            "0.496",
+            "-0.005"
+        ],
+        [
+            "Foreign Currency Futures: Sw. Fr.",
+            "",
+            "",
+            "",
+            "1",
+            "-0.024"
+        ]
+    ],
+    "pageTitle": "FRB: The Monetary Origins of Asymmetric Information in International Equity Markets",
+    "title": "",
+    "url": "http://www.federalreserve.gov/pubs/ifdp/2006/872/ifdp872.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00313-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 449974403,
+    "recordOffset": 449912432,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampBeforeTable": "{15216=One difficulty with combining our various data series is that the markets that we analyze have slightly different trading times. The Eurodollar and foreign currency futures contracts trade on the CME, where the trading hours are from 8:20 a.m. to 3.00 p.m. EST. The ETFs trade on the AMEX, where the trading hours are from 9:30 a.m. to 4.00 p.m. EST. In our analysis, we constrain the aggregate data set to a common period. We also divide the trading day into subperiods, to determine the influence of one market on the other. We therefore divide the day into eleven 30-minute intervals, with the first interval starting at 9:30 a.m. EST and the last interval ending at 3.00 p.m. EST. This results in a total of 15,598 half-hour observations for the entire data set. We use the last mid-quote recorded during each half-hour interval as our price.14Quote revisions are the log differences of these prices. Signed order flow is the total number of purchases less the total amount of sales during the interval., 37196=The final two columns of Table 8 show the coefficients associated with private and public information shocks that arise in the U.S. equity market. Public information shocks in the U.S. equity market ( ) are a part of the priced factor in foreign equity returns, in line with previous low-frequency studies that use excess U.S. equity market returns (e.g., Campbell and Hamao 1992, Bekaert and Hodrick 1992). The new result is that private information shocks are also a priced factor for the half-hour and daily intervals. The coefficients on unanticipated net purchases are positive and significant for these intervals. In addition, the private information shocks are large economically, with a one-standard-deviation shock being equivalent to per cent of the variation in daily expected returns. The -shock measures are large for the public information shocks even out to a weekly horizon, which suggests that public information shocks take a long time to be absorbed by the market. This may be misleading, however, since there will be factors other than the money market shocks, which will be analyzed by sophisticated investors. We conclude that sophisticated U.S. investors obtain information that is related to the common factors that influence asset prices around the world. When they trade in the U.S. equity index market, market makers in the ETFs can use this information to set foreign equity prices., 2562=We use this framework to extract monetary policy innovations. Piazzesi and Swanson (2004) note that daily changes in the price of a Eurodollar futures contract can be used as a measure of a monetary policy shock, since the risk-premium component is relatively stable over their 2-day window. We use the change in the price of a short-term Eurodollar futures contract at the time of the target rate announcement as our measure of a monetary policy shock. Our assumption is that neither the risk-premium component nor the on-shore - off-shore interest differential component will change significantly during this half-hour period. Below, in our analysis of the microstructure data, we will show how to get a good measure of the unanticipated move in the rate at high frequencies. For now, we provide some simple forecasts using daily data. In Figure 1, we show how the price of the 6-month Eurodollar futures contract is related to future Federal funds target moves. From June 1999 to June 2000, the Eurodollar futures lead the Federal funds target rate increases. Likewise, from November 2000 to November 2001, the Eurodollar futures lead the target rate decreases. In the earlier part of the sample, from April 1996 to June 1999, there are two `` false'' predictions, but, for the most part, the Eurodollar futures correctly predicts no changes in the target and leads the increase and decrease in the target rate., 19238=The U.S. and foreign ETF data are obtained from the Trades and Quotes (TAQ) database. The sample period consists of continuously recorded tick-by-tick data from April 1, 1996 to November 30, 2001 (1,206 days). To calculate ETF buyer-initiated orders and seller-initiated orders, we use the algorithm developed by Lee and Ready (1991).10 Order flow is the net amount of buyer-initiated less seller-initiated trades., 28998=This paper extends the existing literature in three ways. The first extension is to adapt techniques from the microstructure literature (primarily Hasbrouck 1991) to identify information shocks in aggregate U.S. stock and money markets from quote revisions and order flows sampled at high frequencies. These shocks can be orthogonalized into those due to private and public information. Using order flow sampled at high frequencies provides a powerful method of obtaining private information shocks (e.g., Hasbrouck 1991, Brennan and Subrahmanyam 1996, Madhavan, Richardson and Roomans 1997, and Yu 2003). Similarly, the effect of public news on asset prices can be measured more accurately using high-frequency data (Andersen et al. 2003). We can use the high-frequency shocks obtained from our time-series regressions as elements of the latent factor in a conditional asset-pricing model of the cross section of international returns. The model reveals that the shocks are both statistically and economically important., 19945=The foreign ETFs are shares of portfolios designed to track the performance of foreign market indexes compiled by Morgan Stanley Capital International (MSCI). They were launched under the World Equity Benchmark Shares (WEBS) brand and were renamed in 1998 as `` iShares,'' or index shares. They are managed by Barclays Global Fund Advisors and trade on the AMEX. We use bid quotes, ask quotes, and transactions prices for the ETFs of the U.S. and 10 foreign countries (Germany, Japan, the U.K., Switzerland, Canada, France, the Netherlands, Sweden, Australia, and Italy). We select these countries because they have developed equity markets and ETF data that are available over our sample period., 36882=Board of Governors of the Federal Reserve System International Finance Discussion Papers Number 872, September 2006 --- Screen Reader Version*, 4652=This paper uses the rate on Eurodollar futures contracts to estimate monetary policy shocks. Previous research has provided evidence on several components in the Eurodollar futures interest rate. Cochrane and Piazzesi (2002) show that the (spot) Eurodollar interest rate can successfully forecast moves in the Federal funds target rate, the rate which anchors moves in the spot Federal funds rate. Lee (2003) examines the close connection that exists between the overnight Federal funds market and its Eurodollar counterpart (the `` on-shore - off-shore interest differential''). He finds a small potential arbitrage between the two rates, but notes a number of frictions that may prevent arbitrage trades from happening. Stigum (1990, p. 911) also notes the close connection between the Eurodollar and domestic interest rate markets and quotes a Eurobanker as saying that `` Rarely does the tail wag the dog. The U.S. money market is the dog, the Euromarket the tail.'' She goes on to say that: `` The truth of this statement has created a foreign contingent of Fed watchers - in London, Paris, Singapore and other Eurocenters. ... Eurobankers must understand the workings of the U.S. money market and follow closely developments there.'' Piazzesi and Swanson (2004) show that Eurodollar futures rates predict future Federal funds rates. In addition, they find a significant time-varying risk premium in the futures rates, which can complicate the extraction of monetary policy forecasts from the futures' rates., 20572=The U.S. ETF is the Standard and Poor's (S&P) 500 fund (SPDR, or `` Spider'') that began trading on the AMEX in 1993.9 Elton et al. (2002) discuss the investment and tracking performance of this fund. They conclude that the SPDR closely tracks the S&P 500 index, because the difference between the two is less than 1.8 basis points per annum. The SPDR is a very liquid security; in mid-2003, the fund had over U.S. $37 billion in assets under management, with average daily trading volume totalling U.S. $4 billion.}",
+    "TableContextTimeStampAfterTable": "{60102=Using the latent-factor model to capture the cross section of returns has a number of advantages.32 In this study, as with other empirical studies of market frictions on asset prices (e.g., Pastor and Stambaugh 2002, Hou and Moskowitz 2003), we do not specify a model that directly ties asymmetric information to the cross section of expected international returns.33 Rather, the cross section of returns should be explained by those variables that can predict time variation in the investment-opportunity set. Given the time-series results above, the variables we have chosen should have some power to explain the cross section. The advantage of the latent-factor model is that it can capture the pricing ability of all of the variables in a parsimonious setting., 72073=In the international literature, private information is used as an explanation of the home bias phenomenon (French and Poterba 1991, Gehrig 1993, Brennan and Cao 1997, and Coval 1999). In this literature, sophisticated agents have superior information about returns on stocks in their own countries; e.g., German investors have superior knowledge about German firms, which U.S. investors could not obtain. This generates an additional source of risk to investing in international stocks, which leads agents to invest in domestic equities., 122926=The table shows summary statistics of quote revisions on Eurodollar futures contracts, Exchange Traded Funds (ETFs), and foreign currency futures contracts. The Eurodollar futures contracts are from the Chicago Mercantile Exchange (CME) and have a maturity of months. The US ETF is the Standard and Poor's 500 Depository Receipt (``Spider'') managed by State Street Global Advisors. The foreign country exchange traded funds are the ``ishares'' ETFs managed by Barclay's Global Advisors. The source of the ETF data is the TAQ database. The foreign currency futures data are also from the CME and are denominated in US dollars per unit of foreign exchange. All of the series are aggregated to 11 one-half hour intervals during the common trading times of the CME and the NYSE/AMEX exchanges. The sample period is April 1, 1996 to November 30, 2001 resulting in a total of 15,598 half-hour observations. The quote revisions are the (log) change in the last quote recorded during each one-half hour interval, multiplied by 100. The table shows the: mean; standard deviation; first and 99 fractiles; the per cent of all intervals which have an observation (``freq''); and asymptotic marginal significance levels (-values) of the Ljung-Box test statistics for autocorrelation out to the indicated lags. The intra-day seasonality has been removed from all of the quote revisions; the final column shows the -value of a test of the null hypothesis of no intra-day seasonality on the raw data., 43248=Our results have implications for studies that attempt to link private information and other market frictions to domestic asset prices. For example, other work has explored systematic factors in liquidity and their link to the cross section of U.S. stock returns (Chordia, Roll and Subrahmanyam 2000, Hasbrouck and Seppi 2001, and Pastor and Stambaugh 2003). We note that liquidity and trading based on private information are linked in many microstructure models. Our finding of a role of common private information may therefore provide some guidance for the economic origins of systematic liquidity., 140962=The table shows summary statistics of signed order flows of Eurodollar futures contracts, Exchange Traded Funds (ETFs), and foreign currency futures contracts. The sources of the data are given in Table 1a. Using all observations, the signs of the trades in the Eurodollar and foreign currency futures contracts have been estimated using the ``tick rule'' as detailed in the text. The ETF trades from the TAQ database have been labeled as purchases or sales according to the Lee and Ready (1991) algorithm. All of the order flow series are aggregated to 11 one-half hour intervals during the common trading times of the CME and the NYSE/AMEX exchanges. The sample period is April 1, 1996 to November 30, 2001 resulting in a total of 15,598 half-hour observations. The table shows the: mean; standard deviation; the 1 and 99 fractiles; the per cent of all intervals which have an observation (``freq''); and asymptotic marginal significance levels (-values) of the Ljung-Box test statistics for autocorrelation out to the indicated lags. The intra-day seasonality has been removed from all of the order flows; the final column shows the -value of a test of the null hypothesis of no intra-day seasonality on the raw data., 108575=13.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0As in Fair (2003), the euro futures contract series is the German Deutsche Mark futures contract prior to 1 June 1999, and the euro futures contract after that. Both contracts traded somewhat before and after this date, but this date is a reasonable splicing date, because at that time liquidity started to switch from the German Deutsche Mark market to the euro market.\u00a0Return to text, 107493=11.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0We could also have used federal funds futures contract data (e.g., Rudebusch 1998, Kuttner 2001, and Carlson, McIntire and Thomson 1995). We use the Eurodollar futures contract because it is more liquid than the Federal funds futures contract, implying that it may better reflect information about the state of the economy. We use futures market data because no high-frequency transactions data are available in the spot market.\u00a0Return to text, 119047=The two solid lines are the daily 6-month Eurodollar futures rate and the actual target-rate. The sample period is from April 1, 1996 to November 30, 2001. There were 20 target-rate changes in this period. The Eurodollar futures data are from the Chicago Mercantile Exchange (CME). The target rate is from the Federal Reserve Bank of New York., 110408=18.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Following the literature, we exclude the change to the target rate following the terrorist attacks of September 11, 2001.\u00a0Return to text, 78070=A number of studies have shown that asymmetric information is a significant driver of exchange rates (Lyons 1995, 2001; Evans and Lyons 2002; Covrig and Melvin 2002). If sophisticated investors generate private information about foreign exchange rates, they will be able to trade assets denominated in the foreign currencies and make a profit. This may be driving our results, since the return on the foreign ETF that is traded in U.S. markets is composed of a home currency return on the index plus a change in the value of the foreign exchange rate. It follows that the results of our previous analysis could be due to sophisticated investors generating private information about the foreign exchange component, rather than the foreign equity component.}",
+    "lastModified": "Wed, 20 Dec 2006 21:20:22 GMT",
+    "textBeforeTable": "Panel B: Foreign Currency Futures \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 1 -0.010 -0.154 -0.157 -0.168 -0.157 US ETF \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 1 0.333 0.317 0.283 0.245 = 60 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 1 0.901 0.835 0.696 = 12 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 1 0.873 0.733 = 9 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 1 0.773 = 6 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 1 = 3",
+    "textAfterTable": "\u00a0 Panel C: Exchange Traded Funds \u00a0 US Ger. Jap. UK Swiss Can. Fra. Neth Swe. Aus. US 1 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Germany 0.196 1 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Japan 0.144 0.148 1 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 UK 0.176 0.209 0.110 1 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Switzerland 0.168 0.173 0.082 0.195 1 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Canada",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

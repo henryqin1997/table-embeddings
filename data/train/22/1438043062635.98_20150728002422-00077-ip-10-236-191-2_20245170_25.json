@@ -1,0 +1,162 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2010-11",
+            "2011-12",
+            "2014-15",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "IDA",
+            "IDA",
+            "AUS",
+            ""
+        ],
+        [
+            "GP",
+            "9",
+            "6",
+            "2",
+            "17"
+        ],
+        [
+            "GS",
+            "1",
+            "2",
+            "1",
+            "4"
+        ],
+        [
+            "Dbl Dbl",
+            "0",
+            "1",
+            "0",
+            "1"
+        ],
+        [
+            "Tpl Dbl",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "40 Pts",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "20 Reb",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "20 Ast",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "Techs",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "HOB",
+            ".268",
+            ".292",
+            ".081",
+            ".253"
+        ],
+        [
+            "Ast/TO",
+            "1.42",
+            "2.73",
+            "7.00",
+            "2.14"
+        ],
+        [
+            "Stl/TO",
+            "0.37",
+            "0.60",
+            "0.00",
+            "0.46"
+        ],
+        [
+            "FT/FGA",
+            "0.20",
+            "0.22",
+            "0.29",
+            "0.21"
+        ],
+        [
+            "W's",
+            "5",
+            "2",
+            "1",
+            "8"
+        ],
+        [
+            "L's",
+            "4",
+            "4",
+            "1",
+            "9"
+        ],
+        [
+            "Win %",
+            "0.556",
+            "0.333",
+            "0.500",
+            "0.471"
+        ],
+        [
+            "OWS",
+            "0.81",
+            "-0.06",
+            "-0.05",
+            "0.74"
+        ],
+        [
+            "DWS",
+            "0.11",
+            "0.11",
+            "-0.01",
+            "0.22"
+        ],
+        [
+            "WS",
+            "0.92",
+            "0.05",
+            "-0.06",
+            "0.96"
+        ]
+    ],
+    "pageTitle": "Armon Johnson Player Profile, Orlando Magic, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Armon_Johnson/Summary/9037",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00077-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 20274727,
+    "recordOffset": 20245170,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{7976=Early Entry Info: 2010 Early Entrant, 8076=Draft Entry: 2010 NBA Draft, 8902=Born: Feb 23, 1989 (26 years old)}",
+    "TableContextTimeStampAfterTable": "{110193=* International basketball history from 2011-2012, 141211=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 2 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "0.00 0.00 .000 0.00 0.00 .000 2.00 0.00 1.00 1.00 0.00 1.00 0.00 0.00 1.00 2.00 CAREER \u00a0 47 0 8.5 1.40 3.06 .458 0.13 0.32 .400 0.40 0.60 .679 1.73 0.26 0.79 1.04 1.19 0.21 0.02 0.85 0.94 3.34 NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2010-11 POR 38 0 277.4 46 101 .455 5 12 .417 13 22 .591 53 11 25 36 45 5 1 31 38 110 2011-12 * All Teams 9 0 124.3 20 43 .465 1 3 .333 6 6 1.000 28 1 12 13 11 5 0 9 6 47 2011-12 * NJN 8 0 119.2 19 42 .452 1 3 .333 6 6 1.000 26 1 11 12 11 4 0 9 5 45 2011-12 * POR 1 0 5.1 1 1 1.000 0 0 .000 0 0 .000 2 0 1 1 0 1 0 0 1 2",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

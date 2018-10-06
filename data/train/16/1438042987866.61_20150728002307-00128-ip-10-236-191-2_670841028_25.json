@@ -1,0 +1,68 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "155.26500",
+            "158.94000",
+            "461.47500"
+        ],
+        [
+            "License",
+            "WQLL437",
+            "",
+            "WNLB595"
+        ],
+        [
+            "Type",
+            "RM",
+            "BM",
+            "RM"
+        ],
+        [
+            "Tone",
+            "71.9 PL",
+            "71.9 PL",
+            "94.8 PL"
+        ],
+        [
+            "Alpha Tag",
+            "Tri-Town EMS",
+            "TriTownEMS2",
+            "Swy Vlly EMS"
+        ],
+        [
+            "Description",
+            "Tritown Rescue Squad",
+            "Tritown Rescue Squad - Secondary",
+            "Seaway Valley Ambulance"
+        ],
+        [
+            "Mode",
+            "FM",
+            "FMN",
+            "FM"
+        ],
+        [
+            "Tag",
+            "EMS-Talk",
+            "EMS-Tac",
+            "EMS Dispatch"
+        ]
+    ],
+    "pageTitle": "St. Lawrence County, New York (NY) Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?ctid=1869&ts=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987866.61/warc/CC-MAIN-20150728002307-00128-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 670857871,
+    "recordOffset": 670841028,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Law Enforcement St Lawrence County //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { }); }); } act=1; setEsc(this,origHtml); this.innerHTML = getTagsHTML; getTagsHTML += '\\n'; } getTagsHTML += '' + tagNames[i] + '\\n'; for",
+    "textAfterTable": "Fire and EMS Frequency\u00a0 License\u00a0 Type\u00a0 Tone\u00a0 Alpha Tag\u00a0 Description\u00a0 Mode\u00a0 Tag\u00a0 154.35500\u00a0 WNKG573\u00a0 RM 179.9 PL SLC Fire R1 Fire/EMS Dispatch - North\u00a0 FMN\u00a0 Fire Dispatch\u00a0 154.35500\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

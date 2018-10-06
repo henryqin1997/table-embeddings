@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Release",
+            "12.2(14)SX",
+            "12.2(17d)SXB",
+            "12.2(18)SXE",
+            "12.2(33)SRA"
+        ],
+        [
+            "Modification",
+            "This command was introduced on the Supervisor Engine 720.",
+            "Support for this command on the Supervisor Engine 2 was integrated into Release 12.2(17d)SXB.",
+            "The module keyword was modified to support slot/subslot addressing for shared port adapters (SPAs) and SPA interface processors (SIPs), and the optional clei keyword was added. The interface keyword was replaced by the transceiver keyword.",
+            "This command was integrated into Cisco IOS Release 12.2(33)SRA."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Configuration Fundamentals Command Reference - show gsr through show monitor event trace [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/fundamentals/command/cf_command_ref/show_gsr_through_show_monitor_event_trace.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00103-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 368695631,
+    "recordOffset": 368596968,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{45780=To display hardware information on the Cisco 12000 series Gigabit Switch Routers (GSRs), use the show gsr command in EXEC mode., 41559=The following is sample output from the show gsr command for a Cisco 12012 router. This command shows the type and state of the card installed in the slot., 42620=This command was introduced to support the Cisco 12000 series GSRs., 41896=Use this command to determine the type of hardware installed in your Cisco 12000 series GSR router., 40916=The following is sample output from the show gsr chassis-info command for a Cisco 12012 router:}",
+    "TableContextTimeStampAfterTable": "{100649=The slot and summary keywords were added for the Cisco 12000., 372841=The following is sample output from the show memory ecc command from a 12000-series router running Cisco IOS Release 12.0(23)S:, 122151=The following is sample output from the show logging summary command for a Cisco 12012 router. A number in the column indicates that the syslog contains that many messages for the line card. For example, the line card in slot 9 has 1 error message, 4 warning messages, and 47 notification messages., 74581=For diagnostic purposes, the show inventorycommand can be used with the raw keyword to display every RFC 2737 entity including those without a PID, UDI, or other physical identification., 120963=*15:29:03.158 UTC Tue Feb 25 2003:, 73703=Entity product identifier. Equivalent to the entPhysicalModelName MIB variable in RFC 2737., 121994=.15:29:03.158 UTC Tue Feb 25 2003:, 74037=Entity version identifier. Equivalent to the entPhysicalHardwareRev MIB variable in RFC 2737., 98440=(Optional) Displays information in the syslog history table for a specific line card. Slot numbers range from 0 to 11 for the Cisco 12012 Internet router and from 0 to 7 for the Cisco 12008 Internet router., 74372=Entity serial number. Equivalent to the entPhysicalSerialNum MIB variable in RFC 2737., 121425=15:29:03.158 UTC Tue Feb 25 2003:}",
+    "textBeforeTable": "Syntax Description [details] ] [ chassis-info gsr show To display hardware information on the Cisco 12000 series Gigabit Switch Routers (GSRs), use the show gsr command in EXEC mode. show gsr show gsr through show monitor event trace show gsr through show monitor event trace show gsr through show monitor event trace show monitor event-trace show module show mls statistics show microcode show memory transient show memory traceback show memory statistics history show memory scan show memory processor show memory pci show memory multibus show memory lite-chunks show memory fragment show memory fast show memory failures alloc show memory events show memory ecc show memory detailed show memory debug unused",
+    "textAfterTable": "Release Modification 11.2GS This command was introduced to support the Cisco 12000 series GSRs. 12.2(33)SRA This command was integrated into Cisco IOS Release 12.2(33)SRA. Usage Guidelines Use this command to determine the type of hardware installed in your Cisco 12000 series GSR router. Examples The following is sample output from the show gsr command for a Cisco 12012 router. This command shows the type and state of the card installed in the slot.  Router# show gsr  Slot 0 type = Route Processor state = IOS Running MASTER Slot 7 type = 1 Port Packet Over SONET OC-12c/STM-4c state = Card Powered Slot 16 type = Clock Scheduler Card state = Card Powered PRIMARY CLOCK The following is sample output from the show gsr chassis-info command for a Cisco 12012 router:  Router# show gsr",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

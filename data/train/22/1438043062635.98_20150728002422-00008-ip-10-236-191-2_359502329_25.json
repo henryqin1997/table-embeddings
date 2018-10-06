@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Release",
+            "12.0(22)S",
+            "12.2(13)T"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "This command was integrated into Cisco IOS Release 12.2(13)T."
+        ]
+    ],
+    "pageTitle": "Cisco IOS SNMP Support Command Reference - snmp mib event trigger owner through snmp-server enable informs [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/snmp/command/nm-snmp-cr-book/nm-snmp-cr-s2.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00008-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 359537247,
+    "recordOffset": 359502329,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{323=Currently, two SNMP variables in the IP-FORWARD-MIB can be polled: 1.3.6.1.2.1.4.24.3 (ipCidrRouteNumber - Scalar) and 1.3.6.1.2.1.4.24.4.1 (ipCidrRouteEntry - Table).}",
+    "TableContextTimeStampAfterTable": "{58772=This command was introduced on Cisco ASR 1000 Aggregation Series Routers., 21723=(Optional) Specifies the interval of time between each attempt to set data, in seconds. The valid range is from 1 to 1000., 22353=The object identifier value. For example, sysName.0 or 1.3.6.1.4.1.9.9.10.1.3.0.5, 52572=Alternatively, an integer from 1300 to 1999 that specifies a list of IP addresses in the expanded range of standard access list numbers that are allowed to use the community string to gain access to the SNMP agent.}",
+    "textBeforeTable": "Syntax Description trigger-name name trigger-owner owner trigger event mib snmp no trigger-name name trigger-owner owner trigger event mib snmp To specify an event trigger owner while configuring management event trigger information, use the snmp mib event trigger owner command in global configuration mode. To disable event trigger configuration and set the default parameters, use the no form of this command. snmp mib event trigger owner snmp-server enable informs snmp-server drop vrf-traffic snmp-server context snmp-server contact snmp-server community snmp-server chassis-id snmp-server cache snmp set snmp trap link-status snmp mib target list snmp mib persist snmp mib notification-log globalsize snmp mib notification-log globalageout snmp mib notification-log default disable snmp mib notification-log default snmp mib flowmon alarmhistorysize snmp mib flash cache snmp mib expression owner snmp mib expression delta snmp mib event trigger owner snmp mib event trigger owner through snmp-server enable informs",
+    "textAfterTable": "Command Default By default, the trigger name and trigger owner are not defined. Command Modes Global configuration (config) Command History Release Modification 12.4(20)T This command was introduced. 12.2(50)SY This command was integrated into Cisco IOS Release 12.2(50)SY. Usage Guidelines The snmp mib event trigger owner command enables event trigger configuration mode to configure conditions to trigger events. While configuring a trigger, you can associate each trigger to an event and configure the objects to be monitored. Examples The following example shows how to specify a trigger owner: Router(config)# snmp mib event trigger owner owner1 name trigger1 Router(config-event-trigger)# end Related Commands",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Facet",
+            "titleBarAction",
+            "additionalActions"
+        ],
+        [
+            "Description",
+            "Used if an action is to be associated with title of the Show Detail Frame (HTML) component.",
+            "Used if some additional actions are to be added to the list of actions available on the Show Detail Frame (HTML) header."
+        ]
+    ],
+    "pageTitle": "Composer Component Properties and Files",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E28280_01/webcenter.1111/e10148/jpsdg_app_rc.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00114-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71839255,
+    "recordOffset": 71782431,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{163610=Section B.2.2.16, \"Sample adf-config.xml File\", 163422=Section B.2.2.14, \"taglib-config\", 163026=Section B.2.2.10, \"resource-string-editor\", 163128=Section B.2.2.11, \"enable-source-view\", 163317=Section B.2.2.13, \"persistent-change-manager\", 163515=Section B.2.2.15, \"security-config\", 11589=Specifies whether label creation must be enabled in the Customization Manager. When allowLabel is set to true, a Save and Label button is displayed on the Composer toolbar. For more information, see Section 17.4.14, \"Manage Application Customizations.\", 163226=Section B.2.2.12, \"enable-zoom\"}",
+    "lastModified": "Mon, 19 Jan 2015 10:57:57 GMT",
+    "textBeforeTable": "Table B-26 Show Detail Frame (HTML) Facets You can use the Show Detail Frame (HTML) facets to define and display custom actions on Show Detail Frame (HTML) components. Table B-26 describes the facets that enable you to display custom actions supported by the Show Detail Frame (HTML) component. Show Detail Frame Facets The Expression Builder option available when setting these attributes enables you to bind the component instance to a managed bean property. A method reference to an attribute change listener. Attribute change events are not delivered for any programmatic change to a property. They are only delivered when a renderer changes a property without the application's specific request. An example of an attribute change events might include the width of a column that supported client-side resizing. Yes javax.el.MethodExpression attributeChangeListener binding=\"#{yourManagedBean.Binding}\" An EL reference that stores the component instance in a bean. This can be used to give programmatic access to a component from a backing bean, or to move creation of the component to a backing bean. For example:   Yes   String   binding    \u00a0 \u00a0",
+    "textAfterTable": "JDeveloper displays all facets available to the Show Detail Frame (HTML) component in the Structure window. However, only those that contain UI components appear activated. B.5.3 Customizable Components (HTML) Style Selectors The tables in this section describe the style selectors that you can use to skin WebCenter Portal Customizable Components. This section contains the following subsections: Panel Customizable (HTML) Style Selectors Show Detail Frame (HTML) Style Selectors Property Keys Icon Selectors B.5.3.1 Panel Customizable (HTML) Style Selectors Use the style selectors listed in Table B-27 to skin Panel Customizable (HTML) components. For icon selectors relevant to the Panel Customizable component, see Section B.5.3.4, \"Icon Selectors.\" Table B-27 Panel Customizable (HTML) Style Selectors Style Selector Description  afh|panelCustomizable::no-header-content Specifies the style to render for all four component borders when the component header is turned off. B.5.3.2 Show Detail Frame (HTML) Style Selectors Use the style selectors listed",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

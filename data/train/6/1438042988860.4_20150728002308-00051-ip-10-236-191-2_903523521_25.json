@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "--connect",
+            "--connection-manager",
+            "--driver",
+            "--hadoop-home",
+            "--help",
+            "-P",
+            "--password",
+            "--username",
+            "--verbose",
+            "--connection-param-file"
+        ],
+        [
+            "Description",
+            "Specify JDBC connect string",
+            "Specify connection manager class to use",
+            "Manually specify JDBC driver class to use",
+            "Override $HADOOP_HOME",
+            "Print usage instructions",
+            "Read password from console",
+            "Set authentication password",
+            "Set authentication username",
+            "Print more information while working",
+            "Optional properties file that provides connection parameters"
+        ]
+    ],
+    "pageTitle": "Sqoop User Guide (v1.4.1-incubating)",
+    "title": "",
+    "url": "https://sqoop.apache.org/docs/1.4.1-incubating/SqoopUserGuide.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00051-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 903570012,
+    "recordOffset": 903523521,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{61301=When performing parallel imports, Sqoop needs a criterion by which it can split the workload. Sqoop uses a splitting column to split the workload. By default, Sqoop will identify the primary key column (if present) in a table and use it as the splitting column. The low and high values for the splitting column are retrieved from the database, and the map tasks operate on evenly-sized components of the total range. For example, if you had a table with a primary key column of id whose minimum value was 0 and maximum value was 1000, and Sqoop was directed to use 4 tasks, Sqoop would run four processes which each execute SQL statements of the form SELECT * FROM sometable WHERE id >= lo AND id < hi, with (lo, hi) set to (0, 250), (250, 500), (500, 750), and (750, 1001) in the different tasks., 75096=By default, data is not compressed. You can compress your data by using the deflate (gzip) algorithm with the -z or --compress argument, or specify any Hadoop compression codec using the --compression-codec argument. This applies to SequenceFile, text, and Avro files., 98259=You can import compressed tables into Hive using the --compress and --compression-codec options. One downside to compressing tables imported into Hive is that many codecs cannot be split for processing by parallel map tasks. The lzop codec, however, does support splitting. When importing tables with this codec, Sqoop will automatically index the files for splitting and configuring a new Hive table with the correct InputFormat. This feature currently requires that all partitions of a table be compressed with the lzop codec.}",
+    "lastModified": "Sat, 31 Mar 2012 02:50:16 GMT",
+    "textBeforeTable": "Table\u00a01.\u00a0Common arguments In this document, arguments are grouped into collections organized by function. Some collections are present in several tools (for example, the \"common\" arguments). An extended description of their functionality is given only on the first presentation in this document. Note While the Hadoop generic arguments must precede any import arguments, you can type the import arguments in any order with respect to one another. $ sqoop-import (generic-args) (import-args) $ sqoop import (generic-args) (import-args) 7.2.11. Importing Data Into HBase 7.2.10. Importing Data Into Hive 7.2.9. Large Objects 7.2.8. File Formats 7.2.7. Incremental Imports 7.2.6. Controlling type mapping 7.2.5. Controlling the Import Process 7.2.4. Controlling Parallelism 7.2.3. Free-form Query Imports 7.2.2. Selecting the Data to Import 7.2.1. Connecting to a Database Server 7.2.\u00a0Syntax The import tool imports an individual table from an RDBMS to HDFS. Each row from a table is represented as a separate record in HDFS. Records can",
+    "textAfterTable": "7.2.1.\u00a0Connecting to a Database Server Sqoop is designed to import tables from a database into HDFS. To do so, you must specify a connect string that describes how to connect to the database. The connect string is similar to a URL, and is communicated to Sqoop with the --connect argument. This describes the server and database to connect to; it may also specify the port. For example: $ sqoop import --connect jdbc:mysql://database.example.com/employees This string will connect to a MySQL database named employees on the host database.example.com. It\u2019s important that you do not use the URL localhost if you intend to use Sqoop with a distributed Hadoop cluster. The connect string you supply will be used on TaskTracker nodes throughout your MapReduce cluster; if you specify the literal name localhost, each node will connect to a different database (or more likely, no database at all). Instead, you should use the full hostname or IP address of the database host that can be seen by all your remote nodes. You might need to authenticate against the database before you can access it. You can use the --username and --password or -P parameters to supply a username and a password to the database. For example: $ sqoop import --connect jdbc:mysql://database.example.com/employees \\ --username aaron --password 12345",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

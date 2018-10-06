@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2011-04-15T00:00:00",
+            "2011-04-15T00:00:00",
+            "2011-04-15T00:00:00",
+            "2011-04-15T00:00:00",
+            "2011-04-15T00:00:00",
+            "2012-10-01T00:00:00",
+            "2013-01-22T00:00:00"
+        ],
+        [
+            "Description",
+            "Using a LH Systems ALS50 Light Detection And Ranging (LiDAR) system, 160 flight lines of high density data, at a nominal pulse spacing (NPS) of 2.0 meters, were collected over approximately 7,301 square meters (2,819 square miles) of Orleans, Plaquemines, St. Bernard and St. Tammany Parishes in southeastern Louisiana. Multiple returns were recorded for each laser pulse along with an intensity value for each return. A total of sixteen missions were flown over a 12 day period: January 11 - 14, 2011, January 21, 2011, January 29, 2011, February 11 - 15, 2011, February 21, 2011, February 28, 2001, and March 1, 2011 . A minimum of two airborne global positioning system (GPS) base stations were used in support of the LiDAR data acquisition. 22 ground control points were surveyed through static methods. The geoid used to reduce satellite derived elevations to orthometric heights was Geoid09. All data for Region 2 is referenced to UTM 16N for the area within its zone, NAD83, NAVD88, in meters. Airborne GPS data was differentially processed and integrated with the post processed IMU data to derive a smoothed best estimate of trajectory (SBET). The SBET was used to reduce the LiDAR slant range measurements to a raw reflective surface for each flight line. The coverage was classified to extract a bare earth digital elevation model (DEM) and separate last returns. In addition to the LAS deliverables, one layer of coverage was delivered in the ArcINFO ArcGrid binary format 2m cell size: bare-earth. The ArcGrid data was created using ArcMap v93. software. System Parameters: - Type of Scanner = LH Systems ALS50 - Data Acquisition Height = 2,377-meters AGL - Scanner Field of View = 40 degrees - Scan Frequency = 36.7 Hertz - Pulse Repetition Rate = 99.0 Kilohertz - Aircraft Speed = 140 Knots - Swath Width = 1730-meters - Number of Returns Per Pulse = Maximum of 4 - Distance Between Flight Lines = 1212-meters.",
+            "The ALS50 calibration and system performance is verified on a periodic basis using Woolpert's calibration range. The calibration range consists of a large building and runway. The edges of the building and control points along the runway have been located using conventional survey methods. Inertial measurement unit (IMU) misalignment angles and horizontal accuracy are calculated by comparing the position of the building edges between opposing flight lines. The scanner scale factor and vertical accuracy is calculated through comparison of LiDAR data against control points along the runway. Field calibration is performed on all flight lines to refine the IMU misalignment angles. IMU misalignment angles are calculated from the relative displacement of features within the overlap region of adjacent (and opposing) flight lines. The raw LiDAR data is reduced using the refined misalignment angles.",
+            "Once the data acquisition and GPS processing phases are complete, the LiDAR data was processed immediately to verify the coverage had no voids. The GPS and IMU data was post processed using differential and Kalman filter algorithms to derive a best estimate of trajectory. The quality of the solution was verified to be consistent with the accuracy requirements of the project.",
+            "The individual flight lines were inspected to ensure the systematic and residual errors have been identified and removed. Then, the flight lines were compared to adjacent flight lines for any mismatches to obtain a homogenous coverage throughout the project area. The point cloud underwent a classification process to determine bare-earth points and non-ground points utilizing \"first and only\" as well as \"last of many\" LiDAR returns. This process determined bare-earth points (Class 2), Noise (Class 7), Water (Class 9) Ignored ground (Class 10) and unclassified data (Class 1). The bare-earth (Class 2 - Ground) LiDAR points underwent a manual QA/QC step to verify that artifacts have been removed from the bare-earth surface. The surveyed ground control points are used to perform the accuracy checks and statistical analysis of the LiDAR dataset.",
+            "Breaklines defining lakes, greater than two acres, and double-line streams, wider than 30.5 meters (100 feet), were compiled using digital photogrammetric techniques as part of the hydrographic flattening process and provided as ESRI Polyline Z and Polygon Z shape files. Breaklines defining water bodies and streams were compiled for this task order. The breaklines were used to perform the hydrologic flattening of water bodies, and gradient hydrologic flattening of double line streams. Lakes, reservoirs and ponds, at a nominal minimum size of two (2) acres or greater, were compiled as closed polygons. The closed water bodies were collected at a constant elevation. Rivers and streams, at a nominal minimum width of 30.5 meters (100 feet), were compiled in the direction of flow with both sides of the stream maintaining an equal gradient elevation. The draping of the polygons and double lines streams was performed using proprietary software developed by Woolpert. The hydrologic flattening of the LiDAR data was performed for inclusion in the National Elevation Dataset (NED).",
+            "The NOAA Coastal Services Center (CSC) received topographic files in LAS format. The files contained lidar elevation and intensity measurements. The data were received in UTM Zone 16 (NAD83) coordinates and were vertically referenced to NAVD88 using the Geoid09 model. The vertical units of the data were meters. CSC performed the following processing for data storage and Digital Coast provisioning purposes: 1. The topographic las files were converted from orthometric (NAVD88) heights to ellipsoidal heights using Geoid09. 2. The data were converted to LAZ format.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2011_ARRA_LA_Region2_m1404.xml&view=ISO19115Components-HTMLTable&altview=none",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987866.61/warc/CC-MAIN-20150728002307-00225-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 620997770,
+    "recordOffset": 620981376,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:2011_ARRA_LA_Region2_m1404Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "1 North American Datum 1983 2007-01-19 Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 1 NOAA CSC (originator) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov originator http://coast.noaa.gov 1 NOAA CSC (publisher) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov publisher http://coast.noaa.gov 1 NOAA CSC(distributor) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov distributor http://coast.noaa.gov 1",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

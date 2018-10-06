@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Bits",
+            "0-1",
+            "2-7",
+            "8-19",
+            "20-31"
+        ],
+        [
+            "Type",
+            "constant \"1\"",
+            "opcode",
+            "unsigned",
+            "unsigned"
+        ],
+        [
+            "Field Description",
+            "These two bits must be the value 1 which identifies this as an instruction of format 1.",
+            "Specifies the opcode of the instruction. Note that the maximum opcode value is 63.",
+            "Specifies the slot number of the type for this instruction. Maximum slot number is 212-1=4095.",
+            "Specifies the slot number of the value for the first operand. Maximum slot number is 212-1=4095. Note that the value 212-1 denotes zero operands."
+        ]
+    ],
+    "pageTitle": "LLVM Bytecode File Format",
+    "title": "",
+    "url": "http://www.llvm.org/releases/1.3/docs/BytecodeFormat.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00275-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 556469694,
+    "recordOffset": 556453300,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 26 Feb 2010 01:13:53 GMT",
+    "textBeforeTable": "Most of the values written to LLVM bytecode files are small integers. To minimize the number of bytes written for these quantities, an encoding scheme similar to UTF-8 is used to write integer data. The scheme is known as variable bit rate (vbr) encoding. In this encoding, the high bit of each byte is used to indicate if more bytes follow. If (byte & 0x80) is non-zero in any given byte, it means there is another byte immediately following that also contributes to the value. For the final byte (byte & 0x80) is false (the high bit is not set). In each byte only the low seven bits contribute to the value. Consequently 32-bit quantities can take from one to five bytes to encode. In general, smaller quantities will encode in fewer bytes, as follows: Variable Bit-Rate Encoding To support cross-platform differences, the bytecode file is aligned on certain boundaries. This means that a small amount of padding (at most 3 bytes) will be added to ensure that the next entry is aligned to a 32-bit boundary. Alignment Fields use a condensed bit format specific to the type of information they must contain. As few bits as possible are written for each field. The sections that follow will provide the details on how these fields are written and how the bits are to be interpreted. Fields are units of information",
+    "textAfterTable": "5 28-34 34,359,738,367 6 35-41 4,398,046,511,103 7 42-48 562,949,953,421,311 8 49-55 72,057,594,037,927,935 9 56-62 9,223,372,036,854,775,807 10 63-69 1,180,591,620,717,411,303,423 Note that in practice, the tenth byte could only encode bit 63 since the maximum quantity to use this encoding is a 64-bit integer. Signed VBR values are encoded with the standard vbr encoding, but with the sign bit as the low order bit instead of the high order bit. This allows small negative quantities to be encoded efficiently. For example, -3 is encoded as \"((3 << 1) | 1)\" and 3 is encoded as \"(3 << 1) | 0)\", emitted with the standard vbr encoding above. Encoding Primitives Each field in the bytecode format is encoded into the file using a small set of primitive formats. The table below defines the encoding rules for the various primitives used and gives them each a type name. The type names used in the descriptions of blocks and fields in the Detailed Layoutnext section. Any type name with the suffix _vbr indicates a quantity that is encoded using variable bit rate encoding as described above. Type Rule unsigned A 32-bit unsigned integer that always occupies four consecutive bytes. The unsigned integer is encoded using LSB first ordering. That is bits 20 through 27 are in the byte with the lowest file",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

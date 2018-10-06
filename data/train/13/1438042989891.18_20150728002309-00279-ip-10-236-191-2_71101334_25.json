@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Code Id=\"code\" (required) Type=\"normalizedString\" [Key Id=\"codeKey\": CodeKey]",
+            "Added",
+            "Cancelled",
+            "Disputed",
+            "NoStatus",
+            "Revised"
+        ],
+        [
+            "Name Id=\"name\" (optional) Type=\"string\"",
+            "Line has been added.",
+            "Line has been cancelled.",
+            "Line is disputed.",
+            "Line has no status.",
+            "Line has been revised."
+        ]
+    ],
+    "pageTitle": "UBL 2.0 and UBL 2.1 qualified information items",
+    "title": "",
+    "url": "http://docs.oasis-open.org/ubl/prd1-UBL-2.1/cva/UBL-DefaultDTQ-2.1.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00279-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71162359,
+    "recordOffset": 71101334,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{8171=All supplementary components in UBL are defined by the UN/CEFACT Core Component Technical Specification (CCTS) Version 2.01 dated 15 November 2003 http://www.unece.org/cefact/ebxml/CCTS_V2-01_Final.pdf. Table 8-2 \"Approved Core Component Type Content and Supplementary Components\" lists the various supplementary components available. The UN/CEFACT UnqualifiedDataTypeSchemaModule-2.0.xsd schema fragment specifies the names of the attributes for supplementary components.}",
+    "lastModified": "Sat, 25 Sep 2010 11:00:00 GMT",
+    "textBeforeTable": "6 = Agency/Identifier United Nations Economic Commission for Europe = Agency/LongName (xml:lang=\"en\") http://docs.oasis-open.org/ubl/os-UBL-2.0-update/cl/gc/default/AllowanceChargeReasonCode-2.0.gc = LocationUri urn:oasis:names:specification:ubl:codelist:gc:AllowanceChargeReasonCode-2.0-update = CanonicalVersionUri urn:oasis:names:specification:ubl:codelist:gc:AllowanceChargeReasonCode = CanonicalUri D03A = Version UN/ECE 4465 = LongName (Identifier=\"listID\") Adjustment Reason Description = LongName (xml:lang=\"en\") AllowanceChargeReasonCode = ShortName List uri=../../os-UBL-2.0/cl/gc/default/AllowanceChargeReasonCode-2.0.gc value list: TransportMode-2.1 (detail) value list: TransportMode-2.0 (detail) instance metadata set: cctsV2.01-code address=\"cbc:TransportModeCode\" value list: TransportEquipmentType-2.1 (detail) value list: TransportEquipmentType-2.0 (detail) instance metadata set: cctsV2.01-code address=\"cbc:TransportEquipmentTypeCode\" value list: SubstitutionStatus-2.0 (detail) instance metadata set: cctsV2.01-code address=\"cbc:SubstitutionStatusCode\" value list: PaymentMeans-2.1 (detail) value list: PaymentMeans-2.0 (detail) instance metadata set: cctsV2.01-code address=\"cbc:PaymentMeansCode\" value list: PackagingType-2.1 (detail) value list: PackagingType-2.0 (detail) instance metadata set: cctsV2.01-code address=\"cbc:PackagingTypeCode\" value list: Operator-2.0 (detail) instance metadata set: cctsV2.01-code address=\"cbc:MathematicOperatorCode\" value list: LongitudeDirection-2.0 (detail) instance metadata set: cctsV2.01-code address=\"cbc:LongitudeDirectionCode\" value list: LineStatus-2.0 (detail) instance metadata set: cctsV2.01-code address=\"cbc:LineStatusCode\" value list: LatitudeDirection-2.0 (detail) instance metadata set: cctsV2.01-code address=\"cbc:LatitudeDirectionCode\" value list: DocumentStatus-2.0 (",
+    "textAfterTable": "6 Proof of delivery required 7 Payment on account 8 Returnable container charge included 9 Invoice error 10 Costs for draft 11 Bank charges 12 Agent commission 13 Counter claim 14 Wrong delivery 15 Goods returned to agent 16 Goods partly returned 17 Transport damage 18 Goods on consignment 19 Trade discount 20 Deduction for late delivery 21 Advertising costs",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

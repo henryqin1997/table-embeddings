@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3"
+        ],
+        [
+            "Command or Action",
+            "switch# configure terminal",
+            "switch(config)# spanning-tree mst instance-id root {primary | secondary} [diameter dia [hello-time hello-time]]",
+            "switch(config)# no spanning-tree mst instance-id root"
+        ],
+        [
+            "Purpose",
+            "Enters global configuration mode.",
+            "Configures a switch as the secondary root bridge as follows: For instance-id, you can specify a single instance, a range of instances separated by a hyphen, or a series of instances separated by a comma. The range is from 1 to 4094. For diameter net-diameter, specify the maximum number of hops between any two end stations. The default is 7. This keyword is available only for MST instance 0. For hello-time seconds, specify the interval in seconds between the generation of configuration messages by the root bridge. The range is from 1 to 10 seconds; the default is 2 seconds.",
+            "(Optional) Returns the switch priority, diameter, and hello-time to default values."
+        ]
+    ],
+    "pageTitle": "Cisco Nexus 6000 Series NX-OS Layer 2 Switching Configuration Guide, Release 6.x - Configuring Multiple Spanning Tree [Cisco Nexus 6000 Series Switches] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus6000/sw/layer2/6x/b_6k_Layer2_Config_6x/b_6k_Layer2_Config_602N12_chapter_0111.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987228.91/warc/CC-MAIN-20150728002307-00107-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 363573852,
+    "recordOffset": 363542512,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{94706=For priority, the range is from 0 to 61440 in increments of 4096; the default is 32768. A lower number indicates that the switch will most likely be chosen as the root bridge., 94948=Priority values are 0, 4096, 8192, 12288, 16384, 20480, 24576, 28672, 32768, 36864, 40960, 45056, 49152, 53248, 57344, and 61440. The system rejects all other values.}",
+    "textBeforeTable": "Procedure Changing the spanning tree mode disrupts traffic because all spanning tree instances are stopped for the previous mode and started for the new mode. Also, having two different spanning-tree modes on Virtual Port Channel (vPC) peer switches is an inconsistency, so this operation is disruptive. Caution You must enable MST; Rapid PVST+ is the default. Enabling MST To leave the MST configuration mode and commit all the changes that you made before you left the mode, enter the exit command. To leave the MST configuration mode without committing any changes, enter the abort command. The pending region configuration starts with the current region configuration. Each command reference line creates its pending regional configuration. When you are in the MST configuration mode, the following guidelines apply: When you work with private VLANs, enter the private-vlan synchronize command to map the secondary VLANs to the same MST instance as the primary VLAN.",
+    "textAfterTable": "This example shows how to enable MST on the switch: switch# configure terminal switch(config)# spanning-tree mode mst  Note Because STP is enabled by default, entering a show running-config command to view the resulting configuration does not display the command that you entered to enable STP. Entering MST Configuration Mode You enter MST configuration mode to configure the MST name, VLAN-to-instance mapping, and MST revision number on the switch. For two or more switches to be in the same MST region, they must have the identical MST name, VLAN-to-instance mapping, and MST revision number. Note Each command reference line creates its pending regional configuration in MST configuration mode. In addition, the pending region configuration starts with the current region configuration. When you are working in MST configuration mode, note the difference between the exit and abort commands. Procedure \u00a0 Command or Action Purpose Step\u00a01 switch# configure terminal \u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

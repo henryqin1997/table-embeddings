@@ -1,0 +1,47 @@
+{
+    "relation": [
+        [
+            "Code or Value",
+            "6",
+            "."
+        ],
+        [
+            "Value Description",
+            "Nicotine patches, gum, or other nicotine product",
+            "Missing"
+        ],
+        [
+            "Count",
+            "14",
+            "6744"
+        ],
+        [
+            "Cumulative",
+            "14",
+            "6758"
+        ],
+        [
+            "Skip to Item",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "NHANES 1999 - 2000: Smoking and Tobacco Use (MEC) Data Documentation, Codebook, and Frequencies",
+    "title": "",
+    "url": "http://www.cdc.gov/nchs/nhanes/nhanes1999-2000/SMQMEC.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00064-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 360096455,
+    "recordOffset": 360080061,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{4492=Title: Smoking and Tobacco Use (MEC) (SMQMEC ) Contact Number: 1-866-441-NCHS Years of Content: 1999 - 2000 First Published: June, 2002 Revised: NA Access Constraints: None Use Constraints: None Geographic Coverage: National Subject:Smoking and Tobacco Use Record Source: NHANES 1999 - 2000 Survey Methodology: NHANES 1999 - 2000 is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S. Medium: NHANES Web site; SAS transport files}",
+    "lastModified": "Fri, 09 May 2014 20:25:40 GMT",
+    "textBeforeTable": "Both males and females 12 YEARS - 19 YEARS Target: VERBAL INSTRUCTIONS TO SP: Please select Yes, No. English Instructions: The following questions are about cigarette smoking and other tobacco use. Have you ever tried cigarette smoking, even 1 or 2 puffs? English Text: Ever tried cigarette smoking SAS Label: SMQ620 Variable Name: SMQ620 - Ever tried cigarette smoking Both males and females 12 YEARS - 150 YEARS Target: Respondent sequence number. English Text: Respondent sequence number SAS Label: SEQN Variable Name: SEQN - Respondent sequence number Codebook and Frequencies N/A. References A subset of these questions, in addition to more detailed questions on cigarette or tobacco use, were asked of adults 20 years of age and older during the MEC CAPI Interview and the household interview. MEC ACASI Questionnaire In addition, a complete set of questions on tobacco use was obtained for adults 20+ years of age during the household interview. The SMQ questions were also collected for youths 12\u201319 years as part of the MEC audio-computer-assisted interview (ACASI) interview component. MEC CAPI Questionnaire Analytic Notes All survey participants ages",
+    "textAfterTable": "7 Refused 5 2162 SMD680 9 Don't know 2 2164 SMD680 . Missing 4594 6758 SMD630 - Age first smoked whole cigarette Variable Name: SMD630 SAS Label: Age first smoked whole cigarette English Text: How old were you when you smoked a whole cigarette for the first time? English Instructions: IF R SAYS LESS THAN 6 YEARS, ENTER 6 YEARS. VERBAL INSTRUCTIONS TO SP: Please enter an age or select Never smoked a whole cigarette. CAPI INSTRUCTION: ACCEPTABLE VALUES: 6-19 YEARS. ENTER AGE. Target: Both males and females 12 YEARS - 19 YEARS Hard Edits: 6 to 19 Code or Value Value Description Count Cumulative Skip to Item 6 to 19 Range of Values 692 692 55 Never smoked a whole cigarette 353 1045 SMD680 77 Refused 1 1046 SMD680 99 Don't know 3",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

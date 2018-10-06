@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "File",
+            "_alerts.scss",
+            "_all.scss",
+            "_buttons.scss"
+        ],
+        [
+            "Role",
+            "Data",
+            "Data",
+            "Data"
+        ],
+        [
+            "Description",
+            "Auxiliary data",
+            "Auxiliary data",
+            "Auxiliary data"
+        ]
+    ],
+    "pageTitle": "PHP Validator: Validate request values with given rules - PHP Classes",
+    "title": "",
+    "url": "http://www.phpclasses.org/package/8743-PHP-Validate-request-values-with-given-rules.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00186-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 663265627,
+    "recordOffset": 663249338,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{33458=Released under the MIT license<br> Copyright (c) 2014 Ravi Kumar}",
+    "textBeforeTable": "Ravi Kumar This class can validate request values with given rules. It can take an array of POST or GET request values and validate against a list of given rules. If the validation fails, the class returns a list of error objects that can return the error details for each of the request value. Currently the class supports validating values with rules that check required values, minimum and maximum length, email addresses, url, ip address, letters and digits, numbers, regular expression, unique value database field. \u00a0 \u00a0 Author \u00a0 Description PHP 5, Databases, Validation 5.4 MIT/X Consortium ... php-validator 1.0 \u00a0 \u00a0 Categories",
+    "textAfterTable": "content: '\\x3c!-- PHPClasses-Below-The-Fold --\\x3e\\n\\x3cscript type=\"text\\x2fjavascript\"\\x3e\\x3c!--\\nif(!googletag)\\n{\\nvar googletag = googletag || {};\\ngoogletag.cmd = googletag.cmd || [];\\n(function() {\\nvar gads = document.createElement(\"script\");\\ngads.async = true;\\ngads.type = \"text\\x2fjavascript\";\\nvar useSSL = \"https:\" == document.location.protocol;\\ngads.src = (useSSL ? \"https:\" : \"http:\") + \\n\"\\x2f\\x2fwww.googletagservices.com\\x2ftag\\x2fjs\\x2fgpt.js\";\\nvar node = document.getElementsByTagName(\"script\")[0];\\nnode.parentNode.insertBefore(gads, node);\\n})();\\n}\\n\\ngoogletag.cmd.push(function() {\\nvar slot = googletag.defineSlot(\"\\x2f1003428\\x2fPHPClasses-Below-The-Fold\", [300, 250], \"div-gpt-ad-1393793380546-1\");\\nslot.set(\"adsense_link_color\", \"0578C2\");\\nslot.set(\"adsense_url_color\", \"000000\");\\nslot.set(\"adsense_text_color\", \"000066\");\\nslot.set(\"adsense_channel_ids\", \"9690621395\");\\nslot.set(\"adsense_ad_types\", \"text_image\");\\nslot.addService(googletag.pubads());\\ngoogletag.enableServices();\\n});\\n\\x2f\\x2f --\\x3e\\x3c\\x2fscript\\x3e\\n\\x3cdiv align=\"center\"\\x3e\\x3cdiv id=\"div-gpt-ad-1393793380546-1\" style=\"width:300px; height:250px;\"\\x3e\\n\\x3cscript type=\"text\\x2fjavascript\"\\x3e\\x3c!--\\ngoogletag.cmd.push(function() { googletag.display(\"div-gpt-ad-1393793380546-1\"); });\\n\\x2f\\x2f --\\x3e\\x3c\\x2fscript\\x3e\\n\\x3c\\x2fdiv\\x3e\\x3c\\x2fdiv\\x3e\\n', inline: false, width: 336, height: 280, priority: 1 }); // --> Details provided by the author \u00a0 \u00a0 PHP Validator Validator class to validate form post values in a simple way. Usage  require_once 'classes/Database.php'; require_once 'classes/ErrorHandler.php'; require_once 'classes/Validator.php'; $db = new Database; $errorHandler = new ErrorHandler; $errosHtml = ''; if(!empty($_POST)) { $validator = new Validator($db, $errorHandler); $validation = $validator->check($_POST, [ 'username' => [ 'required' => true, 'maxlength' => 20, 'minlength' => 3, 'alnum' => true, 'unique' => 'users' ], 'email' => [ 'required' => true, 'maxlength' => 255, 'email' => true, 'unique' => 'users' ], 'password' => [ 'required' => true, 'minlength' => 7 ], 'password_again' => [ 'matches' => 'password' ] ]); if( $validation->fails() ) { //echo '<pre>', print_r( $validation, 1 ), '</pre>'; if( $validation->errors()->hasErrors('username') ) { $errosHtml = '<li>' . implode( '</li><li>' , $validation->errors()->all('username') ) . '</li>'; } if( $validation->errors()->hasErrors('email') ) { $errosHtml .= '<li>' . implode( '</li><li>' , $validation->errors()->all('email') ) . '</li>'; } if(",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

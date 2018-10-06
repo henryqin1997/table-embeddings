@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Event",
+            "close.bs.alert",
+            "closed.bs.alert"
+        ],
+        [
+            "Description",
+            "This event fires immediately when the close instance method is called.",
+            "This event is fired when the alert has been closed (will wait for CSS transitions to complete)."
+        ],
+        [
+            "Example",
+            "$('#myalert').bind('close.bs.alert', function () { // do something\u2026 })",
+            "$('#myalert').bind('closed.bs.alert', function () { // do something\u2026 })"
+        ]
+    ],
+    "pageTitle": "Bootstrap Quick Guide",
+    "title": "",
+    "url": "http://www.tutorialspoint.com/bootstrap/bootstrap_quick_guide.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00141-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 813969051,
+    "recordOffset": 813906765,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{13840=Bootstrap was developed by Mark Otto and Jacob Thornton at Twitter. It was released as an open source product in August 2011 on GitHub.}",
+    "TableContextTimeStampAfterTable": "{13320=initial-scale=1.0 ensures that when loaded, your web page will be rendered at a 1:1 scale, and no zooming will be applied out of the box., 363513=\u00a9 Copyright 2015. All Rights Reserved.}",
+    "textBeforeTable": "The following table summarizes aspects of how Bootstrap grid system works across multiple devices: Grid options For all devices no matter what kind with min-width: @screen-sm-min if the width of the screen gets smaller than @screen-sm-max, then do something. @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }  Let us consider this line: Media queries have two parts, a device specification and then a size rule. In the above case, the following rule is set: @media (min-width: @screen-lg-min) { ... } @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... } @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... } @media (max-width: @screen-xs-max) { ... }  Occasionally these are expanded to include a max-width to limit CSS to a narrower set of devices. @media (min-width: @screen-lg-min) { ... } /* Large devices (large desktops, 1200px and up) */ @media (min-width: @screen-md-min) { ... } /* Medium devices (desktops, 992px and up) */ @media (min-width: @screen-sm-min) { ... } /* Small devices (tablets, 768px and up) */ /* No media query since this is the default in Bootstrap */ /* Extra small devices (phones, less than 768px) */  Media Queries in Bootstrap allow you to move, show and hide content based on the viewport size. Following media queries are used in LESS files to create the key breakpoints in the Bootstrap grid system. Media query is a really fancy term for \"conditional CSS rule\". It simply applies some CSS, based",
+    "textAfterTable": "Class prefix .col-xs- .col-sm- .col-md- .col-lg- # of columns 12 12 12 12 Max column width Auto 60px 78px 95px Gutter width 30px (15px on each side of a column) 30px (15px on each side of a column) 30px (15px on each side of a column) 30px (15px on each side of a column) Nestable Yes Yes Yes Yes Offsets Yes Yes Yes Yes Column ordering Yes Yes Yes Yes Basic Grid Structure Following is basic structure of Bootstrap grid:  <div class=\"container\"> <div class=\"row\"> <div class=\"col-*-*\"></div> <div class=\"col-*-*\"></div> </div> <div class=\"row\">...</div> </div> <div class=\"container\">.... Let us see some simple grid examples: Example: Stacked-to-horizontal Example: Medium and Large Device Example: Mobile, tablet, desktops Responsive column resets With the four tiers of grids available, you are bound to run into issues where at certain breakpoints, the columns don't clear quite right as one is taller than the other. To fix that, use a combination of a class .clearfix and the responsive utility classes as shown in the following example:  <div class=\"container\"> <div class=\"row\" > <div class=\"col-xs-6 col-sm-3\" style=\"background-color: #dedef8; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> </div> <div class=\"col-xs-6 col-sm-3\" style=\"background-color: #dedef8;box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;\"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

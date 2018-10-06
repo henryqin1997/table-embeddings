@@ -1,0 +1,69 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "id",
+            "file",
+            "lang",
+            "carriers",
+            "status"
+        ],
+        [
+            "Datatype",
+            "ID",
+            "string (default)",
+            "string (default)",
+            "Enumeration",
+            "string (default)"
+        ],
+        [
+            "Required",
+            "no (default)",
+            "Yes",
+            "no (default)",
+            "no (default)",
+            "no (default)"
+        ],
+        [
+            "Values",
+            "",
+            "",
+            "",
+            "internal-electronic external-electronic paper",
+            ""
+        ],
+        [
+            "Default",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Comments",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "SchemaDOC package-data-v1-6.dtd",
+    "title": "",
+    "url": "http://www.wipo.int/pct-safe/epct/schemaDocs/1.8/package-data-v1-6_dtd/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00113-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 813370199,
+    "recordOffset": 813338563,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 27 Jul 2009 09:16:04 GMT",
+    "textBeforeTable": "amendment, application-body-doc, application-request, bib-changes, biological-material, chapter2-demand, copy-general-power-of-attorney, correspondence, declaration-doc, dtext, fee-calculation-sheet, general-power-of-attorney, lack-of-signature, notification, other-documents, pre-conversion-files-package, preliminary-examination-report, priority-document, published-application, restore-rights-reason, ro-request-receiving-info-doc, search-report-doc, separate-power-of-attorney, sequence-list, signatories, table-external, translation-of-application, transmittal-info, trans-preliminary-examination-report, trans-search-report, wrapped-document, xmit-receipt-doc uses lang, dtd-version, file, produced-by, date-produced, country, status attributes ******************************************************************************** * package-data v1.6 2009 JULY * ******************************************************************************** * PUBLIC \"-//WIPO//DTD PACKAGE DATA 1.6//EN\" \"package-data-v1-6.dtd\" * ******************************************************************************** * http://www.wipo.int/pct-safe/epct/schemaDocs/1.8/package-data-v1-6.dtd * ******************************************************************************** * contacts: * * EPO: Paul Brewin; pbrewin@epo.org * * JPO: Hideto Tanaka; tanaka-hideto@jpo.go.jp * * USPTO: Bruce B. Cox; bruce.cox@uspto.gov * * WIPO: Michio Okamoto; michio.okamoto@wipo.int * ******************************************************************************** * revision history * ******************************************************************************** MO: 01/07/09 incorporated changes from PFC ..changed version number from v1.5 to v1.6 ..added attribute 'electronic-format-type' to sequence-list (PFC09/001) ..added attribute 'part-of-application' to sequence-list (PFC09/001) MO: 01/07/08 incorporated changes from PFCs: ..changed version number from v1.4 to v1.5 ..added element 'xmit-receipt-doc'",
+    "textAfterTable": "file string (default) no (default) \u00a0 \u00a0 \u00a0 produced-by Enumeration Yes \u00a0 applicant\u00a0 RO\u00a0 ISA\u00a0 IPEA\u00a0 IB\u00a0 DO\u00a0 EO\u00a0 national-office\u00a0 regional-office\u00a0 \u00a0 \u00a0 date-produced string (default) no (default) \u00a0 \u00a0 \u00a0 country string (default) no (default) \u00a0 \u00a0 \u00a0 status string (default) no (default) \u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

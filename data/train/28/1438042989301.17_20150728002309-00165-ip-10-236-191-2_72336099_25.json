@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "File",
+            "mail.jsp",
+            "mailindex.jsp",
+            "mailmsgs.jsp",
+            "mailreader.jsp",
+            "mailutil.jsp"
+        ],
+        [
+            "Description",
+            "Mailing list browser applications that selectively include HTML code returned by other JSP files, depending on what the end user wants to view",
+            "JSP page that displays all email sources (mailing lists) of an Oracle Ultra Search instance",
+            "JSP page that displays all emails for an email source (mailing list)",
+            "JSP page that displays an email",
+            "JSP page that defines various functions that are used by mailreader.jsp"
+        ]
+    ],
+    "pageTitle": "9 Oracle Ultra Search Developer's Guide and API Reference",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B13789_01/ultra.101/b10731/api.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00165-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72366687,
+    "recordOffset": 72336099,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 22 Mar 2004 20:34:00 GMT",
+    "textBeforeTable": "Note: All end-user query strings are encased in square braces. For example, the end user query string Oracle Applications is notated as [Oracle Applications]. The following table summarizes the rules for the Oracle Ultra Search end user query syntax: Operators: The default implementation defines three operators. They are the [+], [-] and [*] operators. These operators are defined by the default implementation. Change these operators to whatever you prefer in your own custom implementation. The plus operator [+] specifies that the token immediately following it must appear in all documents included in the search result. The minus operator [-] specifies that the token immediately following it cannot appear in any document included in the search result. The asterisk [*] specifies a wildcard search. It matches zero or more characters. A token starting with the asterisk is ignored. The asterisk can only be specified at the end (right side) or middle of a token. For example, \"hel*o\" and \"hell*\" use the asterisk correctly, but \"*ello\" is unacceptable. Token: A token is a string enclosed in double-quotes (\"). It can be a single word or a phrase. The end user query syntax defined by the default query",
+    "textAfterTable": "9.3.1.2 Scoring Classes There are three ways documents are matched against an end user query string. These three ways are known as scoring \"classes.\" Documents are scored and ranked higher if they satisfy the requirements for a higher class. Within each class, documents are also ranked differently depending on how well they match the conditions of that scoring class. Class 1 is the most heavily weighted class. The score is derived from the number of occurrences of a precise phrase in a document. A document that has more instances of the precise phrase have a higher score than another document that has fewer occurrences of the precise phrase. Class 2 is the next more heavily weighted class. In this class, the closer the tokens appear in a document, the higher the score becomes. For example, an end user query string [Oracle Applications Financials] can result in three documents found. None of the three documents contain the precise phrase \"Oracle Applications Financials.\" However, document X contains the all three tokens \"Oracle\", \"Applications\", and \"Financials\" in the same sentence separated by other words. Document Y contains the individual tokens in the same paragraph but in different sentences. Document Z contains the same three tokens, but each token resides in different paragraphs. In this scenario, document X has the highest score, because the tokens are closest together. Likewise, Y has a higher score than Z. Class 3 is the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

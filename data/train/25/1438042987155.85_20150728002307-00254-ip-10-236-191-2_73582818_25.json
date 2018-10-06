@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Virtual IP Address",
+            "123.2.2.115",
+            "123.2.2.116",
+            "123.2.2.117"
+        ],
+        [
+            "Virtual Host NameFoot 1",
+            "STBYADMINVHN",
+            "STBYBIVHN1",
+            "STBYBIVHN2"
+        ],
+        [
+            "Alias Host Name",
+            "ADMINVHN",
+            "BIVHN1",
+            "BIVHN2"
+        ]
+    ],
+    "pageTitle": "Design Considerations",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E23943_01/doc.1111/e15250/design_consid.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00254-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73611159,
+    "recordOffset": 73582818,
+    "tableOrientation": "VERTICAL",
+    "lastModified": "Wed, 13 May 2015 05:20:48 GMT",
+    "textBeforeTable": "Table 3-26 Virtual IP Addresses, Virtual Host Names, and Alias Host Names for Oracle Business Intelligence Standby Site Hosts If you use separate DNS servers to resolve host names, then you can use the same virtual IP addresses and virtual host names for the production site hosts and standby site hosts, and you do not need to define the alias host names on the standby site hosts that are recommended in Table 3-11. See Section 3.1.1.3, \"Resolving Host Names Using Separate DNS Servers\" for more information about using separate DNS servers to resolve host names. Note: Table 3-26 shows the virtual IP addresses, virtual host names, and alias host names that will be used for the Oracle Business Intelligence EDG deployment standby site hosts. Figure 4-11 shows the configuration for the Oracle Business Intelligence EDG deployment at the standby site. Footnote\u00a01\u00a0See Section 3.1.1.3, \"Resolving Host Names Using Separate DNS Servers\" and Section 3.1.1.4, \"Resolving Host Names Using a Global DNS Server\" for information on defining physical host names. None BIVHN2 123.1.2.117 None BIVHN1 123.1.2.116 None ADMINVHN",
+    "textAfterTable": "Footnote\u00a01\u00a0See Section 3.1.1.3, \"Resolving Host Names Using Separate DNS Servers\" and Section 3.1.1.4, \"Resolving Host Names Using a Global DNS Server\" for information on defining physical host names. 3.1.3 Load Balancers Considerations Oracle Fusion Middleware components require a hardware load balancer when deployed in high availability topologies. It is recommended that the hardware load balancer have the following features: Ability to load-balance traffic to a pool of real servers through a virtual host name: Clients access services using the virtual host name (instead of using actual host names). The load balancer can then load balance requests to the servers in the pool. Port translation configuration. Monitoring of ports (HTTP and HTTPS). Virtual servers and port configuration: Ability to configure virtual server names and ports on your external load balancer, and the virtual server names and ports must meet the following requirements: The load balancer should allow configuration of multiple virtual servers. For each virtual server, the load balancer should allow configuration of traffic management on more than one port. For example, for Oracle Internet Directory clusters, the load balancer must be configured with a virtual server and ports for LDAP and LDAPS traffic. The virtual server names must be associated with IP addresses and be part of your DNS.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

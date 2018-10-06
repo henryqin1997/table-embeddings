@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "ownname",
+            "stattab"
+        ],
+        [
+            "Description",
+            "Name of the schema",
+            "User statistics table identifier"
+        ]
+    ],
+    "pageTitle": "DBMS_STATS",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B28359_01/appdev.111/b28419/d_stats.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00322-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72233695,
+    "recordOffset": 72175022,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{259424=The result is less than 2500 rows (too small a sample) and, 1311=32768}",
+    "lastModified": "Thu, 09 Jul 2015 23:29:24 GMT",
+    "textBeforeTable": "Table 127-26 DROP_STAT_TABLE Procedure Parameters Parameters stattab VARCHAR2); ownname VARCHAR2, DBMS_STATS.DROP_STAT_TABLE (  Syntax This procedure drops a user statistics table. DROP_STAT_TABLE Procedure     ORA-20001: Error when processing extension   ORA-20000: Insufficient privileges or extension does not exist.   Exceptions If no extended statistics set is created for the extension, this function throws an error. Usage Notes  Can be either a column group or an expression. Suppose the specified table has two column c1, c2. An example column group can be \"(c1, c2)\" and an example expression can be \"(c1 + c2)\". extension Name of the table tabname Owner name of a table ownname Description Parameter Table 127-25 DROP_EXTENDED_STATS Procedure Parameters Parameters extension VARCHAR2); tabname VARCHAR2, ownname VARCHAR2, DBMS_STATS.DROP_EXTENDED_STATS (  Syntax This function drops the statistics entry that is created for the user specified extension. This cancels the effects of the CREATE_EXTENDED_STATS Function.",
+    "textAfterTable": "Exceptions ORA-20000: Table does not exists or insufficient privileges. EXPORT_COLUMN_STATS Procedure This procedure retrieves statistics for a particular column and stores them in the user statistics table identified by stattab. Syntax  DBMS_STATS.EXPORT_COLUMN_STATS ( ownname VARCHAR2, tabname VARCHAR2, colname VARCHAR2, partname VARCHAR2 DEFAULT NULL, stattab VARCHAR2, statid VARCHAR2 DEFAULT NULL, statown VARCHAR2 DEFAULT NULL); Parameters Table 127-27 EXPORT_COLUMN_STATS Procedure Parameters Parameter Description ownname Name of the schema tabname Name of the table to which this column belongs colname Name of the column or extension partname Name of the table partition. If the table is partitioned and if partname is NULL, then global and partition column statistics are exported. stattab User statistics table identifier describing where to store the statistics statid Identifier (optional) to associate with these",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

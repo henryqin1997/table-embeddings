@@ -1,0 +1,30 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "Data_Originator",
+            "Archive"
+        ],
+        [
+            "Example Value",
+            "ContactOrganizationContainer",
+            "ContactOrganizationContainer"
+        ]
+    ],
+    "pageTitle": "GLAH03 Data Dictionary Template",
+    "title": "",
+    "url": "http://nsidc.org/data/docs/daac/glas-global-engineering/data-dictionary-glah03.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00162-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 185795547,
+    "recordOffset": 185761948,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "File-Level (Global) Attributes GLAH03 Product Data Dictionary NSIDC's Green Data Center Support NSIDC Contact Us Use & Copyright NSIDC Monthly Highlights Jobs Our Sponsors NSIDC People ABOUT US Educational Resources Quick Facts Photo Gallery Studying the Cryosphere Snow, Ice and Climate Change What is the Cryosphere? ABOUT THE CRYOSPHERE NSIDC Notes (newsletter) NSIDC Monthly Highlights Events Data Updates & Announcements NSIDC In the News Arctic Sea Ice News & Analysis Press Room NEWS NSIDC Scientific Expeditions Scientific Publications Research Projects Scientists RESEARCH Roger G. Barry Resource Office for Cryospheric Studies (ROCS) NASA Distributed Active Archive Center at NSIDC (NSIDC DAAC) NOAA at NSIDC NASA IceBridge Exchange for Local Observations and Knowledge of the Arctic (ELOKA) Antarctic Glaciological Data Center PROGRAMS Request User Support Submit Data Data Updates & Announcements Data Analysis & Imaging Tools Data Collections Easy-to-use Data Products Data Search & Access Tools NSIDC Data Search DATA",
+    "textAfterTable": "title GLAS/ICESat L1A Global Engineering Data (HDF5) comment The level 1A global engineering data (GLAH03) data granules contain approximately 190 minutes (2 orbits) of GLAS instrument housekeeping data including temperatures, voltages, and currents. summary GLAH03 contains the instrument engineering data and is a time-ordered level 1A data product. The data has been converted from the raw form to engineering units. The data was used to calibrate measurements contained on GLAH01 and GLAH02 and to perform GLAS instrument performance assessment. Each GLAH03 file was created from an equivalent GLA03 binary formatted file. The provenance metadata shows the history that created the GLA03. license http://nsidc.org/data/icesat/disclaimer.html references not_set, http://nsidc.org/daac/icesat/index.html (GLAS Product page at NSIDC) AccessConstraints Data may not be reproduced or distributed without including the CitationForExternalPublication for this product included in this Metadata. Data may not be distributed in an altered form without the written permission of the GLAS Science Team. CitationforExternalPublication The data used in this study were produced by the GLAS Science Team at the ICESat Science Investigator-led Processing System (I-SIPS) at NASA/GSFC. The data archive site is the NSIDC DAAC. contributor_role Data Originator, Investigator, Producer, Producer contributor_name David W. Hancock (David.W.Hancock@nasa.gov), Bob E Schutz (schutz@utcsr.ae.utexas.edu), Jay Zwally (Jay.Zwally@nasa.gov), John P DiMarzio (John.P.Dimarzio.1@nasa.gov) creator_name ICESat Science Investigator-led Processing System (I-SIPS) creator_email David.W.Hancock@nasa.gov publisher_name NSIDC User Services publisher_email nsidc@nsidc.org publisher_url http://nsidc.org/daac/icesat/index.html platform Ice, Cloud,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

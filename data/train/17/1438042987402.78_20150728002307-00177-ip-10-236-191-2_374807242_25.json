@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "Feature Name",
+            "EoMPLS over GRE",
+            "GRE Tunnel IP Source and Destination VRF Membership",
+            "GRE Tunnel Keepalive",
+            "IP over IPv6 Tunnels",
+            "IP Precedence for GRE Tunnels",
+            "IP Tunnel\u2014 SSO",
+            "Tunnel ToS"
+        ],
+        [
+            "Releases",
+            "Cisco IOS XE Release 2.5",
+            "Cisco IOS XE Release 2.2",
+            "Cisco IOS XE Release 2.1",
+            "Cisco IOS XE Release 2.4",
+            "Cisco IOS XE Release 2.1",
+            "Cisco IOS XE Release 3.6",
+            "Cisco IOS XE Release 2.1"
+        ],
+        [
+            "Feature Information",
+            "The EoMPLS over GRE feature allows you to tunnel Layer 2 traffic through a Layer 3 MPLS network. This feature also helps to create the GRE tunnel as hardware-based switched, and with high performance that encapsulates EoMPLS frames within the GRE tunnel. No new commands were introduced or modified by this feature.",
+            "The GRE Tunnel IP Source and Destination VRF Membership feature allows you to configure the source and destination of a tunnel to belong to any VPN VRF table. The following command was introduced or modified: tunnel vrf.",
+            "The GRE Tunnel Keepalive feature provides the capability of configuring keepalive packets to be sent over IP-encapsulated GRE tunnels. You can specify the rate at which keepalives will be sent and the number of times that a device will continue to send keepalive packets without a response before the interface becomes inactive. GRE keepalive packets may be sent from both sides of a tunnel or from just one side. The following command was introduced by this feature: keepalive (tunnel interfaces) .",
+            "The following commands were modified by this feature: tunnel destination, tunnel mode, and tunnel source.",
+            "This feature was introduced on Cisco ASR 1000 Aggregation Services Routers.",
+            "High availability support was added to IP Tunnels. No new commands were introduced or modified by this feature.",
+            "The Tunnel ToS feature allows you to configure the ToS and Time-to-Live (TTL) byte values in the encapsulating IP header of tunnel packets for an IP tunnel interface on a router. The Tunnel ToS feature is supported in Cisco Express Forwarding, fast switching, and process switching forwarding modes. The following commands were introduced or modified by this feature: show interfaces tunnel, tunnel tos, tunnel, and ttl."
+        ]
+    ],
+    "pageTitle": "Interface and Hardware Component Configuration Guide, Cisco IOS XE Release 3S (ASR 1000) - Implementing Tunnels [Support] - Cisco",
+    "title": "Table 2 Feature Information for Implementing Tunnels",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/interface/configuration/xe-3s/asr1000/ir-xe-3s-asr1000-book/ir-impl-tun-xe.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00177-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 374845619,
+    "recordOffset": 374807242,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{239=Cisco ASR 1000 Series Aggregation Services Routers support VPN routing and forwarding (VRF)-aware generic routing encapsulation (GRE) tunnel keepalive features., 113832=RFC 1483, 114142=RFC 2003, 116203=RFC 2780, 115935=RFC 2547, 114714=RFC 2460, 11622=The ToS and TTL byte values are defined in RFC 791. RFC 2474, and RFC 2780 obsolete the use of the ToS byte as defined in RFC 791. RFC 791 specifies that bits 6 and 7 of the ToS byte (the first two least significant bits) are reserved for future use and should be set to 0. For Cisco IOS XE Release 2.1, the Tunnel ToS feature does not conform to this standard and allows you to use the whole ToS byte value, including bits 6 and 7, and to decide to which RFC standard the ToS byte of your packets should conform., 115629=RFC 2516, 125534=This feature was introduced on Cisco ASR 1000 Aggregation Services Routers., 115004=RFC 2473, 117127=RFC 2893, 113542=RFC 1323, 115305=RFC 2474, 116830=RFC 2890, 116540=RFC 2784, 113269=RFC 1191, 114423=RFC 2018}",
+    "textBeforeTable": "Determine the tunnel mode command keyword, if appropriate. The table below shows how to determine the appropriate keyword to be used with the tunnel mode command. Step\u00a02\u00a0\u00a0 Determine the passenger protocol. A passenger protocol is the protocol that you are encapsulating. Step\u00a01\u00a0\u00a0 DETAILED STEPS 2.\u00a0\u00a0\u00a0 Determine the tunnel mode command keyword, if appropriate. 1.\u00a0\u00a0\u00a0 Determine the passenger protocol. A passenger protocol is the protocol that you are encapsulating. SUMMARY STEPS Before configuring a tunnel, you must determine the type of tunnel you want to create. Determining the Tunnel Type Verifying Tunnel Configuration and Operation Configuring 6to4 Tunnels Configuring an IPv4 GRE Tunnel Determining the Tunnel Type How to Implement Tunnels For examples of how to implement some QoS features on a tunnel interface, see the section\u201cConfiguring QoS Options on Tunnel Interfaces Examples\u201d on page 32.",
+    "textAfterTable": "Configuring an IPv4 GRE Tunnel Perform this task to configure a GRE tunnel. A tunnel interface is used to pass protocol traffic across a network that does not normally support the protocol. To build a tunnel, you must define a tunnel interface on each of the two routers, and the tunnel interfaces must reference each other. At each router, the tunnel interface must be configured with a Layer 3 address. The tunnel endpoints, tunnel source, and tunnel destination must be defined, and the type of tunnel must be selected. Optional steps can be performed to customize the tunnel. Remember to configure the router at each end of the tunnel. If only one side of a tunnel is configured, the tunnel interface may still come up and stay up (unless keepalive is configured), but packets going into the tunnel will be dropped. GRE Tunnel Keepalive What to Do Next GRE Tunnel Keepalive Keepalive packets can be configured to be sent over IP-encapsulated GRE tunnels. You can specify the rate at which keepalives are sent and the number of times that a device will continue to send keepalive packets without a response before the interface becomes inactive. GRE keepalive packets may be sent from both sides of a tunnel or from just one side.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6",
+            "Step 7"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Device> enable",
+            "configure terminal Example: Device# configure terminal",
+            "router eigrp autonomous-system Example: Device(config)# router eigrp 101",
+            "eigrp event-log-size size Example: Device(config-router)# eigrp event-log-size 5000010",
+            "eigrp log-neighbor-changes Example: Device(config-router)# eigrp log-neighbor-changes",
+            "eigrp log-neighbor-warnings [seconds] Example: Device(config-router)# eigrp log-neighbor-warnings 300",
+            "end Example: Device(config-router)# end"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Enables an EIGRP routing process and enters router configuration mode. A maximum of 30 EIGRP routing processes can be configured.",
+            "(Optional) Sets the size of the EIGRP event log.",
+            "(Optional) Enables logging of EIGRP neighbor adjacency changes. By default, the system logs EIGRP neighbor adjacency changes to help you monitor the stability of the routing system and detect problems.",
+            "(Optional) Enables the logging of EIGRP neighbor warning messages.",
+            "Exits router configuration mode and returns to privileged EXEC mode."
+        ]
+    ],
+    "pageTitle": "IP Routing: EIGRP Configuration Guide, Cisco IOS XE Release 3SE (Catalyst 3850 Switches) - EIGRP [Cisco Catalyst 3850 Series Switches] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_eigrp/configuration/xe-3se/3850/ire-xe-3se-3850-book/ire-enhanced-igrp.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00130-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 367242359,
+    "recordOffset": 367183194,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{54331=Enhanced Interior Gateway Routing Protocol (EIGRP) authentication is configurable on a per-interface basis; packets exchanged between neighbors connected through an interface are authenticated. EIGRP supports message digest algorithm 5 (MD5) authentication to prevent the introduction of unauthorized information from unapproved sources. MD5 authentication is defined in RFC 1321.}",
+    "TableContextTimeStampAfterTable": "{86993=Device(config-router)# default-metric 1000 100 250 100 1500, 123836=Device(config-router-af-topology)# summary-metric 192.168.0.0/16 10000 10 255 1 1500}",
+    "textBeforeTable": "DETAILED STEPS 7.\u00a0\u00a0\u00a0 end 6.\u00a0\u00a0\u00a0 eigrp log-neighbor-warnings [seconds] 5.\u00a0\u00a0\u00a0 eigrp log-neighbor-changes 4.\u00a0\u00a0\u00a0 eigrp event-log-size size 3.\u00a0\u00a0\u00a0 router eigrp autonomous-system 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS Configuring the EIGRP Event Logging Autonomous System Configuration Exits address family topology configuration mode and returns to privileged EXEC mode. \u00a0 Device(config-router-af-topology)# end \u00a0 Example: end Step\u00a010 (Optional) Configures a fixed metric for",
+    "textAfterTable": "Configuring the EIGRP Event Logging Named Configuration SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 router eigrp virtual-instance-name 4.\u00a0\u00a0\u00a0Enter one of the following: address-family ipv4 [multicast] [unicast] [vrf vrf-name] autonomous-system autonomous-system-number address-family ipv6 [unicast] [vrf vrf-name] autonomous-system autonomous-system-number 5.\u00a0\u00a0\u00a0 eigrp log-neighbor-warnings [seconds] 6.\u00a0\u00a0\u00a0 eigrp log-neighbor-changes 7.\u00a0\u00a0\u00a0 topology {base | topology-name tid number} 8.\u00a0\u00a0\u00a0 eigrp event-log-size size",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

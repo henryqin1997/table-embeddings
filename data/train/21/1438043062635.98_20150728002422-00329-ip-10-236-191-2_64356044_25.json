@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "tenant_id",
+            "server_id",
+            "key"
+        ],
+        [
+            "Style",
+            "URI",
+            "URI",
+            "URI"
+        ],
+        [
+            "Type",
+            "csapi:UUID",
+            "csapi:UUID",
+            "csapi:MetadataKey"
+        ],
+        [
+            "Description",
+            "The tenant ID in a multi-tenancy cloud.",
+            "The UUID for the server.",
+            "A string. Maximum length is 255 characters."
+        ]
+    ],
+    "pageTitle": "OpenStack API Documentation",
+    "title": "",
+    "url": "http://developer.openstack.org/api-ref-compute-v2.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00329-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 64401303,
+    "recordOffset": 64356044,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 05 Aug 2015 04:22:08 GMT",
+    "textBeforeTable": "Response parameters computeFault (400, 500, \u2026), serviceUnavailable (503), badRequest (400), unauthorized (401), forbidden (403), badMethod (405), overLimit (413), itemNotFound (404) Error response codes 300 , 200 Normal response codes detail Lists information about all Compute API versions. \u00a0 List API versions / GET Lists information for all API versions. API versions The Compute API returns the 403 forbidden error code if you exceed your allotted quota for the operation. Effective in the OpenStack Kilo release, XML support in requests and responses was removed for the Compute API v2. Launches virtual machines from images and images stored on persistent volumes. API v1.1 is identical to API v2. Compute API v2 (SUPPORTED) Search Search on this page",
+    "textAfterTable": "} ], \"status\": \"SUPPORTED\", \"version\": \"\", \"min_version\": \"\", \"updated\": \"2011-01-21T11:33:21Z\" }, { \"id\": \"v2.1\", \"links\": [ { \"href\": \"http://openstack.example.com/v2.1/\", \"rel\": \"self\" } ], \"status\": \"CURRENT\", \"version\": \"2.3\", \"min_version\": \"2.1\", \"updated\": \"2013-07-23T11:33:21Z\" } ] } This operation does not accept a request body. Limits Gets rate and absolute limits. An absolute limit value of -1 indicates that the absolute limit for the item is infinite. GET \u200b{tenant_id}\u200b/limits List limits Lists the current absolute and rate limits for a specified project. \u00a0 detail An absolute limit value of -1 indicates that the absolute limit for the item is infinite. Normal response codes 200 , 203 Error response codes computeFault (400, 500, \u2026), serviceUnavailable (503), badRequest (400), unauthorized (401), forbidden (403), badMethod (405), overLimit (413) Request parameters Parameter Style Type Description tenant_id URI csapi:UUID The tenant ID in a multi-tenancy cloud.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

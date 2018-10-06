@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Track",
+            "V5",
+            "V4",
+            "V3",
+            "V2",
+            "V1"
+        ],
+        [
+            "PHRASE",
+            "(thl logo)",
+            "(collaborating institutions) For example: Columbia University / Tibet Academy of Social Sciences / Tibet University / University of Virginia / (one per line, no commas or \"the\")",
+            "Produced by",
+            "Published by the Tibetan and Himalayan Digital Library",
+            "THL Community License \u00a9 2007 www.thdl.org"
+        ],
+        [
+            "FONT SIZE",
+            "(fixed)",
+            "26 Al Bayan; style=plain",
+            "20 Al Bayan (plain)",
+            "20 Al Bayan (plain)",
+            "18, Al Bayan (plain)"
+        ],
+        [
+            "ORIGIN (Spatial Location)",
+            "(fixed)",
+            "0,-95",
+            "0,-165",
+            "0,200",
+            "0,250"
+        ],
+        [
+            "TRACKING (T), LEADING (L), ASPECT (A)",
+            "N/A",
+            "T=3, L=31, A=1",
+            "T=2, L=0, A=1",
+            "T=2, L=0, A=1",
+            "T=1, L=0, A=1"
+        ]
+    ],
+    "pageTitle": "The Tibetan and Himalayan Library",
+    "title": "",
+    "url": "http://www.thlib.org/tools/wiki/Editing%20titles.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00080-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 755584179,
+    "recordOffset": 755551365,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{107908=THL Community License \u00a9 2015 www.thlib.org}",
+    "textBeforeTable": "IMPORTANT NOTE: The best way to quickly achieve THL standard title and credit slates is to copy them from an existing Final Cut Pro project file. A Final Cut Pro project file containing samples of THL standard title and credit slates may be found under the Audio/Video section of Collab, under \"Resources\", in a folder named \"Final Cut Pro\". [https://collab.itc.virginia.edu/portal/site/f383c4fa-4979-45a0-808c-d9a3fe34c1a8/page/77045c94-efe9-47e9-8054-2e68e38056f5] Utilizing these title and credit slate samples will be a great help. However, you will still need to make minor adjustments to your slates. For example, spatial layout such as horizontal or vertical centering/spacing will vary according to the length of one's title phrases. Therefore, you will still need to know how to make such changes in Final Cut Pro. In particular, the following controls will be crucial: (double-click on any text slate in the timeline. This will launch it in the viewer. Click the \"controls\" tab to access the following settings.) 6. Add title slates to the beginning of the video sequence You should now have 3 copies of a given sequence showing in your project bin; for example: \"2616_ong_skor_med\", \"2616_ong_skor_high\", \"2616_ong_skor_lan\". Duplicate the sequence again, and name the third sequence \"\u2026_lan\", signifying an \"LAN/Intranet\" level compression. Rename this new sequence, replacing \"_med\" with \"_high\", signifying a \"Broadband-High\" level compression. Control+click on this sequence in your project bin, and choose \"duplicate\" from the pop-up menu. In your project bin, rename your sequence, adding the suffix \"_med\"",
+    "textAfterTable": "Double click on a sequence and it will appear in the \u201cTimeline\u201d window at the bottom of the screen. In your browser window select \u201cEffects\u201d then navigate to \u201cVideo Generators\u201d > \u201cText\u201d. Under the \u201cText\u201d heading click and drag the \u201cText\u201d icon into the first video track (V1). Right-click on the grey area above the \u201cV1\u201d label in the \u201cTimeline\u201d window and select \u201cAdd Track\u201d. Repeat this step and you will have three video tracks, V1, V2, and V3. Repeat step 2 twice by dragging the \u201cText\u201d icon into track V2 and V3. TIP: You can save time by copying and pasting a title slate from another title and using it as a template. Make sure to change the title, THL ID number and make sure the copyright date is correct. For videos greater than 60 seconds long, your trilingual title slates should last 5 seconds altogether. The text in the video track is 10 seconds long by default so you will have to reduce each of the three text bars down to 1.66 seconds (5 seconds divided by 3), or 1 second and 20 frames for NTSC, and 1 second and 16 frames for PAL. You can alter the duration of any slate by left clicking on the end of the text footage and dragging left to shorten it, or drag right to lengthen it. (Again, having once set these slates up, you can save time by copying and pasting previous slates into new projects, while being",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

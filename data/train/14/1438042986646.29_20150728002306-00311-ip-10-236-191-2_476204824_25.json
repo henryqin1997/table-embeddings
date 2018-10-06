@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Fecha",
+            "6 Nov 1998",
+            "21 Jul 2006",
+            "6 Jul 2010",
+            "15 Jul 2010",
+            "21 Jul 2010",
+            "6 Dic 2011",
+            "1 May 2012",
+            "25 Jun 2014"
+        ],
+        [
+            "C\ufffddigo",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Evento",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Descripci\ufffdn",
+            "Owner name: 3COM CORPORATION, CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:FIJOLEK, JOHN G.;BESER, NURETTIN B.;REEL/FRAME:009567/0742 Effective date: 19981023",
+            "Year of fee payment: 4",
+            "Owner name: HEWLETT-PACKARD COMPANY, CALIFORNIA Free format text: MERGER;ASSIGNOR:3COM CORPORATION;REEL/FRAME:024630/0820 Effective date: 20100428",
+            "Owner name: HEWLETT-PACKARD COMPANY, CALIFORNIA Free format text: CORRECTIVE ASSIGNMENT TO CORRECT THE SEE ATTACHED;ASSIGNOR:3COM CORPORATION;REEL/FRAME:025039/0844 Effective date: 20100428",
+            "Year of fee payment: 8",
+            "Owner name: HEWLETT-PACKARD DEVELOPMENT COMPANY, L.P., TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:HEWLETT-PACKARD COMPANY;REEL/FRAME:027329/0044 Effective date: 20030131",
+            "Owner name: HEWLETT-PACKARD DEVELOPMENT COMPANY, L.P., TEXAS Free format text: CORRECTIVE ASSIGNMENT PREVIUOSLY RECORDED ON REEL 027329 FRAME 0001 AND 0044;ASSIGNOR:HEWLETT-PACKARD COMPANY;REEL/FRAME:028911/0846 Effective date: 20111010",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patente US6510162 - System and method for managing channel usage in a data over cable system - Google Patentes",
+    "title": "",
+    "url": "http://www.google.es/patents/US6510162?dq=flatulence",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00311-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 476260483,
+    "recordOffset": 476204824,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{48844=Above modem interface 48 in data link layer 42 is Point-to-Point Protocol (\u201cPPP\u201d) layer 50, hereinafter PPP 50. As is known in the art, PPP is used to encapsulate network layer datagrams over a serial communications link. For more information on PPP see Internet Engineering Task Force (\u201cIETF\u201d) Request for Comments (\u201cRFC\u201d), RFC-1661, RFC-1662 and RFC-1663 incorporated herein by reference., 83831=After receiving TCD 70 message and TSI message 76, cable modem 16 continues to establish access to data network 28 (and resources on the network) by first dialing into TRAC 24 and establishing a telephony PPP 50 session. Upon the completion of a successful PPP 50 connection, cable modem 16 performs PPP Link Control Protocol (\u201cLCP\u201d) negotiation with TRAC 24. Once LCP negotiation is complete, the cable modem 16 requests Internet Protocol Control Protocol (\u201cIPCP\u201d) address negotiation. For more information on IPCP see RFC-1332 incorporated herein by reference. During IPCP negotiation, cable modem 16 negotiates an IP address with TRAC 24 for sending IP data packet responses back to data network 28 via TRAC 24., 50794=Above the network layer are a Simple Network Management Protocol (\u201cSNMP\u201d) layer 62, Trivial File Protocol (\u201cTFTP\u201d) layer 64, Dynamic Host Configuration Protocol (\u201cDHCP\u201d) layer 66 and a UDP manager 68. SNMP layer 62 is used to support network management functions. For more information on SNMP layer 62 see RFC-1157 incorporated herein by reference. TFTP layer 64 is a file transfer protocol used to download files and configuration information. For more information on TFTP layer 64, see RFC-1350 incorporated herein by reference. DHCP layer 66 is a protocol for passing configuration information to hosts on an IP network. For more information on DHCP layer 66 see RFC-1541 and RFC-2131 incorporated herein by reference. UDP manager 68 distinguishes and routes packets to an appropriate service (e.g., a virtual tunnel). More or few protocol layers could also be used with data-over-cable system 10., 36393=The description that follows fully incorporates by reference the following co-pending patent applications: \u201cSYSTEM AND METHOD FOR CABLE MODEM MANAGEMENT\u201d, U.S. patent Ser. No. 09/018,404 to John Fijolek et al. (filed Feb. 4, 1998 and assigned to the assignee of the present invention); \u201cMETHOD AND SYSTEM FOR PROVIDING QUALITY-OF-SERVICE IN A DATA-OVER-CABLE SYSTEM\u201d, U.S. Pat. No. 6,223,222; \u201cMETHOD AND SYSTEM FOR PROVIDING QUALITY-OF-SERVICE IN A DATA-OVER-CABLE SYSTEM USING CONFIGURATION PROTOCOL MESSAGING\u201d, U.S. patent Ser. No. 09/079,322 to John Fijolek et al. (filed May 14, 1998); and \u201cMETHOD AND SYSTEM FOR BUNDLING DATA IN A DATA-OVER-CABLE SYSTEM\u201d, U.S. patent Ser. No. 09/085,586 to Nurettin B. Beser (filed May 27, 1998).}",
+    "textBeforeTable": "Citas de patentes While the invention has been described in conjunction with presently preferred embodiments of the invention, persons of skill in the art will appreciate that variations may be made without departure from the scope and spirit of the invention. This true scope and spirit is defined by the appended claims, interpreted in light of the foregoing. At decision block 180, the cable modem is checked to determine if it is communicating. If it is communicating, the restart command waits at step 182 for the wait-time in the configuration file. In FIG. 8B, the cable modem checks at decision block 192 to determine if it has become inactive before the expiration of the wait time in step 182. If the wait-time had not expired when the cable modem became inactive, the cable modem is restarted at step 194. If the wait-time expired, an error is indicated at step 196. The method of FIG. 8A begins at step 170 by looking up the channels used by the cable modems in the cable modem system. A user at the network management station 120 may invoke a network management program to analyze the channel usage in the system. The channel usage is checked to determine if it is unbalanced at decision block 172. If the channel usage is not unbalanced, the method in FIG. 8A proceeds to the end. If the channel usage is unbalanced, the network administrator 110 decides",
+    "textAfterTable": "US5610910 17 Ago 1995 11 Mar 1997 Northern Telecom Limited Access to telecommunications networks in multi-service environment US5623542 14 Jun 1996 22 Abr 1997 Antec Corp. Combination telephone network interface and cable television apparatus and cable television module US5623601 21 Nov 1994 22 Abr 1997 Milkway Networks Corporation Apparatus and method for providing a secure gateway for communication and data exchanges between networks US5636211 15 Ago 1995 3 Jun 1997 Motorola, Inc. Universal multimedia access device US5675732 8 May 1995 7 Oct 1997 Lucent Technologies Inc. Dynamic channel assignment for TCP/IP data transmitted via cable television channels by managing the channels as a single sub network US5675742 26 Jun 1995 7 Oct 1997 Digital Equipment Corporation System for setting congestion avoidance flag at intermediate node to reduce rates of transmission on selected end systems which utilizing above their allocated fair shares US5678041 25 Ago 1995 14 Oct 1997 At&T System and method for restricting user access rights on the internet based",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

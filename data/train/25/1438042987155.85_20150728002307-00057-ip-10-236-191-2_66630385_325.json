@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Pseudo classes",
+            "disclosed",
+            "flow",
+            "positioned-from-end"
+        ],
+        [
+            "Description",
+            "",
+            "when the panelSplitter is being displayed in a dimensionsFrom=children mode",
+            ""
+        ]
+    ],
+    "pageTitle": "Selectors for Skinning ADF Faces Components",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E35521_01/apirefs.111230/e17497/toc.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 325,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00057-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 66723803,
+    "recordOffset": 66630385,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 11 Nov 2014 20:16:28 GMT",
+    "textBeforeTable": "Color are included in other components. Then to change the color scheme, you would change these core/accent color ramps and it will affect all the components it is including in. Global Selectors Global Selectors are selectors that affect more than one component. If the selector name ends in the :alias pseudo-class, then the selector is most likely included in other component-specific selectors. Defining properties for a selector that ends in :alias will most likely affect the skin for more than one component. For example, most, if not all of our components use the .AFDefaultFontFamily:alias definition to specify the font-family. If your skin overrides the .AFDefaultFontFamily:alias selector with a different font-family, that change will affect all the components that have included it in their selector definition. } background-color: red; { af|inputText::content /* Component-specific selector. */ } font-family: Tahoma, Verdana, Helvetica, sans-serif; .AFDefaultFontFamily:alias { /* Global selectors affect more than one component */ Examples of some ADF Faces Skin selectors:  This document lists the selectors that can be used in an ADF Faces skin .css file to skin ADF Faces components. Overview  Renderer Selectors   Themes Common Pseudo-classes Message Selectors Drag and Drop Pseudo-classes Inline Editing Pseudo-classes Poll component timeout Pseudo-classes Note Window Selectors Popup Selectors Global Resource Strings Miscellaneous Component Group: Tabs Component Group: PanelHeader Component Group: PanelBox and Region Component Group: Menu Component Group: Form Controls Component",
+    "textAfterTable": ".AFDarkForeground:alias The dark foreground color in the core color ramp. .AFMediumBackground:alias The medium background color in the core color ramp. .AFMediumForeground:alias The medium foreground color in the core color ramp. .AFLightBackground:alias The light background color in the core color ramp. .AFLightForeground:alias The light foreground color in the core color ramp. .AFVeryLightBackground:alias The very light background color in the core color ramp. .AFVeryLightForeground:alias The very light foreground color in the core color ramp. .AFVeryDarkAccentBackground:alias The darkest background color in the accent color ramp. .AFVeryDarkAccentForeground:alias The darkest foreground color in the accent color ramp. .AFDarkAccentBackground:alias The dark background color in the accent color ramp. .AFDarkAccentForeground:alias The dark foreground color in the accent color ramp. .AFMediumAccentBackground:alias The medium background color in the accent color ramp. .AFMediumAccentForeground:alias The medium foreground color in the accent color ramp. .AFLightAccentBackground:alias The light background color in the accent color ramp. .AFLightAccentForeground:alias The light foreground color in the accent color ramp. .AFVeryLightAccentBackground:alias The lightest background",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

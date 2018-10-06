@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Method",
+            "TimeSeries",
+            "TimeSeries"
+        ],
+        [
+            "Return",
+            "# of events",
+            "# of events"
+        ],
+        [
+            "Arguments",
+            "TSeries, time window, integrated, condition",
+            "TSeries, event function, condition"
+        ],
+        [
+            "Description",
+            "Make time series of event rate.",
+            "Make time series of values of event function."
+        ]
+    ],
+    "pageTitle": "Event Analysis Tool: Quick Start Guide",
+    "title": "Table 26: Time Series Method",
+    "url": "http://www.ligo-wa.caltech.edu/~daniel.sigg/quickstart/EventAnalysis/quickstart.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00000-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 560327643,
+    "recordOffset": 560298570,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{339=Masahiro Ito, Daniel Sigg, January 2002}",
+    "lastModified": "Wed, 03 Apr 2002 21:12:35 GMT",
+    "textBeforeTable": "In general, the number of event layouts will be far less than the number of actual events. To make the code efficient the package maintains a global list of all event layouts and each event will just store a pointer to one of the global layouts. In order to be able to distinguish events of different type each layout must have assigned a unique event type name. For instance, coincidence events are stored with type name \"CoincidenceN\" with N = 2, 3 for double and triple coincidences, respectively. Apart from its type the event layout maintains a list of columns; each column has a name, a type and an offset into the data block associated with it. The column name has to be unique within an event of a certain type, but can be the same for columns with the same meaning in events of different types. As a matter of fact, all events have the following columns in common: \u00a0 Fig. 1: Representation of an event. One of the features of interferometeric gravitational wave detectors is that events do not follow a standard layout. In high energy physics an event is usually described as an n-tuple with each column having a specific meaning. Rather than building on n-tuples with implicit column definition, the event analysis package uses a \"free format\". An event is defined by an event layout and an event data block. The Figure below depicts",
+    "textAfterTable": "ColumnNumber describes the number of columns used by this event Int Every event must contain a time, and for most analysis algorithms events have to be ordered in time. The Name field is intended to identify the subtype of an event. For GDS triggers the name field is used directly, whereas for most ldas events the search field is used instead. For efficieny reason an indexed string list is used and the name field is of type integer. A special \"Filter\" class exists to select events based on their type and name. The \"Name\" class is used to lookup a string index and to add a new string to the index. The Ifo field is intended as a bit encoded value with each bit representing a detector. An event from one detector would set one of the bits, an event from another detector would set another bit, whereas the coincidence event would the set both bits. This way one can keep track of where the events were originally generated. A special \"IfoSet\" class exist to facilitate this capability. Both the Name and the Ifo field are mainly there for convenience and to avoid costly string comparison operations. The column number field is mainly used internally to keep track of the length of the data block. This makes it possible to later add columns to existing events without the need to update all previously created events of the same type. When a column is read from",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

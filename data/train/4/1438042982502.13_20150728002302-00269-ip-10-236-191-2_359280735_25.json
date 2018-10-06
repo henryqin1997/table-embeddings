@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Identifer",
+            "CSCti74890",
+            "CSCtd17972",
+            "CSCtl71749",
+            "CSCtf76715",
+            "CSCth60440",
+            "CSCtg11841",
+            "CSCti28460",
+            "CSCtk34315"
+        ],
+        [
+            "Severity",
+            "3",
+            "3",
+            "3",
+            "3",
+            "3",
+            "6",
+            "6",
+            "6"
+        ],
+        [
+            "Component",
+            "cdp-driver",
+            "video",
+            "video",
+            "win32app",
+            "win32app",
+            "win32app",
+            "win32app",
+            "win32app"
+        ],
+        [
+            "Headline",
+            "Sometimes CUVA can\u2019t associate with IPPhone if wireless NIC enabled",
+            "No video in sTransfer of RT call to TB over SIP ICT",
+            "EP 8961-CUVA: No video being displayed on CUVA",
+            "CUVA: No remote on cuva when in a call with TB-1700-MXP",
+            "CUVA not receive video for ~20 secs after swapping a call on secure phone",
+            "Cuva installs When CUCIMOC/CUPCv8 is installed",
+            "CUVA needs to support 560x320 resolution",
+            "CUVA needs to support 480x352 resolution"
+        ]
+    ],
+    "pageTitle": "Cisco Unified Video Advantage 2.3 Release Notes - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/video/cuva/2_3_2/ReleaseNotes/CUCI_BK_C2D8AB2B_00_cisco-unified-video-advantage-23.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00269-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 359316995,
+    "recordOffset": 359280735,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{110102=If the setting for Disable whitelists and use Regular mode is utilized, interoperability issues resulting in black video are observed if Cisco IP Phones 894x or 7985 are on the remote end of the video call. The same issues are observed when making a conference call to a MCU if the Cisco Unified Communications Manager handling the call does not have the feature implemented in CSCti71796. The following versions of Cisco Unified Communications Manager have this feature: 8.5.1ES7, 8.5.1SU1, 8.6.1a, 9.0.1a. If the setting for Disable whitelists and use Restrictive mode is utilized, these issues are not observed but there is lower quality video with these and other endpoints., 155451=The Cisco implementation of TCP header compression is an adaptation of a program developed by the University of California, Berkeley (UCB) as part of UCB's public domain version of the UNIX operating system. All rights reserved. Copyright \u00a9 1981, Regents of the University of California., 111384=Cisco Unified Video Advantage Release 2.3 supports configuring port ranges for RTP/RTCP video streams. Cisco Unified Video Advantage Release 2.3 will use ports 21000/21001 by default. This can be configured by using the UDPSTART and UDPEND MSI switches. These two switches are the values of the start and end ports in the range. The following rules must be considered when choosing a port range:, 157741=Copyright \u00a9 2014, Cisco Systems, Inc. All rights reserved., 113266=The following example would configure a port range of 22222/25555:}",
+    "textBeforeTable": "Cisco Unified Video Advantage does not support versions of Microsoft Windows or Cisco Unified Communications Manager that are not listed in this document or the Installation and Troubleshooting Guide for Cisco Unified Video Advantage . Note Cisco Unified Video Advantage 2.3(2) removes support for Microsoft Windows XP. It is listed here for reference when used with earlier versions of the product. Note Cisco Unified Video Advantage is not supported in VMware, Citrix, Terminal Services, Remote Desktop or other thin client environments. Note The computer on which the Cisco Unified Video Advantage software is installed must meet the specifications listed below. PC Requirements Video camera\u2014See Supported Video Cameras. Any video-enabled Cisco Unified IP Phone\u2014See Supported Cisco Unified IP Phones. Personal computer (PC)\u2014See PC Requirements. Cisco Unified Video Advantage has these requirements: Client",
+    "textAfterTable": "CPU speed and type: Core 2 Duo 2 GHz or higher compatible processor Free disk space: 300 MB Memory: 2 GB RAM Dedicated video memory: 64 MB Video card driver: install the latest version for your operating system A non-ISA full-duplex sound card (integrated or PCI-based) or USB sound device A 10/100/1000BASE-T Ethernet cable connected to your Cisco Unified IP Phone PC port At least 1 free USB port (version 2.0) Internal Hardware Microsoft Windows XP CPU speed and type: Pentium 1.6 GHz Processor or higher compatible processor Memory: 2 GB RAM Free disk space: 300 MB Video display: Minimum: DirectX 9.0c (or higher) compatible graphics card with 32MB of video RAM. For dual-headed configurations, 64MB. Recommended: DirectX 9.0c (or higher) compatible graphics card with 64MB",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Property",
+            "JNDI Name",
+            "Enabled",
+            "External JNDI Name",
+            "Resource Type",
+            "Factory Class",
+            "Description",
+            "Properties"
+        ],
+        [
+            "Description",
+            "Provides a unique name for the new external JNDI resource.",
+            "Determines if this external JNDI resource is enabled at runtime.",
+            "Name of the external JNDI resource.",
+            "Fully qualified type of resource.",
+            "Class that instantiates resources of this type.",
+            "Provides a short description for the external JNDI resource.",
+            "Optionally provides CLI properties. Enabled by clicking the Add Property button."
+        ]
+    ],
+    "pageTitle": "Chapter\u00a011 Working With Java and Web Applications (Sun Java System Web Server 7.0 Update 7 Administrator's Guide)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19146-01/821-0793/6nlqqubcl/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00240-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71550639,
+    "recordOffset": 71528270,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{73529=Maximum number of instances that should be contacted while attempting to find the backup of a session. The range of value is 1 to 2147.0483647.0, or -1 for no limit.\u00a0, 19798=Maximum depth for the servlet container allowing nested request dispatches. The range of values can be between 0 and 2147.0483647.0. The default value is 20.\u00a0}",
+    "lastModified": "Wed, 26 Jan 2011 11:00:56 GMT",
+    "textBeforeTable": "Table\u00a011\u20131 Servlet Container Parameters The following table describes the parameters available on the servlet container page. Servlet Container Global Parameters Click Java > Servlet Container. Click the Configurations tab to see the list of available configurations and select the configuration you need. To Set Up Servlet Container This section describes the procedure for configuring the servlet container. Configuring Your Servlet Container --precompilejsp mywebapp.war --port=8989 --vs=vs1 --config=config1 --file-on-server --uri=/mywebapp wadm> add-webapp --user=admin-user --password-file=admin.passwd   To pre-compile JSPs in a web application while deploying the web application, execute the command with \u2013precompilejsp option as given below: Pre-compiling JSPs During Deployment        --uri=/mywebapp /space/tmp/mywebapp --port=8989 --vs=vs1 --config=config1 --file-on-server wadm> add-webapp --user=admin-user --password-file=admin.passwd   A directory on the administration server host machine can be deployed to a configuration using the \u2013file-on-server option. Execute the following command: Deploying a Web Application Directory         See CLI Reference, add-webapp(1). For large web applications, using a target directory outside Web Server's installation directory improves Admin Server's performance. The CLI add-webapp(1) --directory option is used for this purpose.   --port=8888 --config=config1 --vs=HOSTNAME --uri=/hello /home/test/hello.war wadm>",
+    "textAfterTable": "Display Exception Displays an exception on the browser. This option is useful only in development environment. Disable this option in production environment.\u00a0 Decode Cookies The servlet container decodes the plus character in cookie value to space.\u00a0 Reuse Session IDs Indicates whether any existing session ID number is reused when creating a new session for that client. The default value is false.\u00a0 Secure Session Cookie Dynamic/True/False. This parameter controls under what conditions the JSESSIONID cookie is marked secure. Use dynamic (default) to mark the cookie secure only when the request was received on a secure connection (HTTPS).\u00a0 Select True to always mark it secure and false to never mark it secure.\u00a0 Configuring Server Lifecycle Modules Java Server Lifecycle Modules are Java classes that listen for server lifecycle events in order to perform certain tasks. The server supports running short or long duration Java-based tasks within the web server environment. These tasks are automatically initiated upon server startup and are notified upon server shutdown. So now you can link tasks such as instantiating singletons and RMI servers. A brief description of the Server's lifecycle is given below. Introduction to Server Lifecycle",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

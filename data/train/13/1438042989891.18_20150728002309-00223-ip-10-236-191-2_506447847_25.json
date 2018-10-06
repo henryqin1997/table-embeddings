@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Bit Number",
+            "7",
+            "6",
+            "5-0"
+        ],
+        [
+            "Name",
+            "N: Treat as a Non-IP Packet",
+            "I: Interface and Label Stack Object Request",
+            "Unassigned"
+        ],
+        [
+            "Reference",
+            "[RFC4379]",
+            "[RFC4379]",
+            ""
+        ]
+    ],
+    "pageTitle": "Multi-Protocol Label Switching (MPLS) Label Switched Paths (LSPs) Ping Parameters",
+    "title": "",
+    "url": "http://www.iana.org/assignments/mpls-lsp-ping-parameters/mpls-lsp-ping-parameters.xhtml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00223-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 506456049,
+    "recordOffset": 506447847,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 08 Jul 2015 17:27:23 GMT",
+    "textBeforeTable": "CSV Available Formats RFC7537] [ Reference Standards Action Registration Procedure(s) DS Flags [RFC7110] Reserved for Experimental Use 0xFFFC-0xFFFF [RFC7110] Unassigned 0x0006-0xFFFB [RFC7110] The specified Reply Path was not found, the echo reply was sent via pure IP forwarding (non-MPLS) path 0x0005 [RFC7110] The specified Reply Path was not found, the echo reply was sent via other LSP 0x0004 [RFC7110] The echo reply was sent successfully using the specified Reply Path 0x0003 [RFC7110] One or more of the sub-TLVs in the Reply Path TLV were not understood 0x0002 [RFC7110] Malformed Reply Path TLV was received 0x0001 [RFC7110] No return code 0x0000 Reference Meaning Value CSV Available Formats RFC7110] [ Reference Standards Action Registration Procedure(s) Reply Path Return Codes Unassigned 8-255 [RFC7555] 0 16 IPv6 Protocol Adj 7 [RFC7555] 0 4 IPv4 Protocol Adj 6 [RFC6426][RFC7555] Reserved 5 [RFC4379] 4 16",
+    "textAfterTable": "Multipath Types Registration Procedure(s) Standards Action Reference [ RFC7537] Available Formats CSV Value Meaning Reference 0 no multipath [RFC4379] 1 Unassigned 2 IP address [RFC4379] 3 Unassigned 4 IP address range [RFC4379] 5-7 Unassigned 8 Bit-masked IP address set [RFC4379] 9 Bit-masked label set [RFC4379] 10-250 Unassigned 251-254 Reserved for Experimental Use [RFC7537] 255 Reserved [RFC7537] Pad Types Registration Procedure(s) Standards Action Reference [ RFC7537] Available Formats CSV Value Meaning Reference 0 Reserved [RFC7537] 1 Drop Pad TLV from reply [RFC4379] 2 Copy Pad TLV to reply [RFC4379] 3-250 Unassigned 251-254 Reserved for Experimental Use [RFC7537] 255 Reserved [RFC7537] Interface and Label Stack Address Types Registration Procedure(s) Standards Action",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

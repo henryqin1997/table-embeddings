@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "CDD/Repository Data Type",
+            "Unspecified Unsigned byte Unsigned word Unsigned longword Unsigned quadword Unsigned octaword",
+            "Signed byte Signed word Signed longword Signed quadword Signed octaword",
+            "F_floating D_floating G_floating H_floating",
+            "F_floating complex D_floating complex G_floating complex H_floating complex",
+            "Text Varying text 2",
+            "Numeric string: Unsigned Left separate Left overpunch Right separate Right overpunch Zoned sign",
+            "Packed decimal string",
+            "Bit Bit unaligned",
+            "Date and time",
+            "Date Virtual field Varying string 2"
+        ],
+        [
+            "C Data Type",
+            "Unsupported unsigned char unsigned short unsigned int Unsupported Unsupported",
+            "char short int Unsupported Unsupported",
+            "float 1 double 1 double 1 Unsupported",
+            "Unsupported Unsupported Unsupported Unsupported",
+            "char [ n] Unsupported",
+            "Unsupported Unsupported Unsupported Unsupported Unsupported Unsupported",
+            "Unsupported",
+            "Bit field 3 Bit field 3",
+            "Unsupported",
+            "Unsupported Ignored Unsupported"
+        ]
+    ],
+    "pageTitle": "HP OpenVMS systems - C",
+    "title": "Table C-2 Mapping Between CDD/Repository and HP C Data Types",
+    "url": "http://h71000.www7.hp.com/commercial/c/docs/5492profile_038.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985140.15/warc/CC-MAIN-20150728002305-00064-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 115785544,
+    "recordOffset": 115769593,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Typing EXIT (or pressing Ctrl/Z) ends an SCA subsystem session and returns you to the DCL level. C.3.3 Programming Language Placeholders and Tokens The LSE language-sensitive features simplify the tasks of developing and maintaining software systems. These features include language-specific placeholders and tokens, aliases, comment and indentation control, and templates for subroutine libraries. You can use LSE as a traditional text editor. In addition, you can use the power of LSE's tokens and placeholders to step through each program construct and supply text for those constructs that need it. Placeholders are markers in the source code that indicate where you can provide program text. These placeholders help you to supply the appropriate syntax in a given context. You do not need to type placeholders; they are inserted for you by LSE. Placeholders are surrounded by brackets or braces and at (@) signs. Placeholders are either optional or required. Required placeholders, indicated by braces ({}), represent places in the source code where you must provide program text. Optional placeholders, indicated by brackets ([]), represent places in the source code where you can either provide additional constructs or erase the placeholder. You can move forward or backward from placeholder to placeholder. In addition, you can delete or expand placeholders as needed. Tokens typically represent keywords in HP C. When expanded, tokens provide additional language constructs. You can type tokens directly into the buffer. You use",
+    "textAfterTable": "[Enter] [Return] ENTER RETURN Selects a menu option. To display a list of all the defined tokens provided by HP C, enter the following LSE command:  LSE> SHOW TOKEN To display a list of all the defined placeholders provided by HP C, enter the following LSE command:  LSE> SHOW PLACEHOLDER To put either list into a separate file, first enter the appropriate SHOW command to put the list into the $SHOW buffer. Then enter the following commands:  LSE> GOTO BUFFER $SHOW LSE> WRITE filename To obtain a hard copy of the list, use the PRINT command at DCL level to print the file you created. To obtain information about a particular token or placeholder, specify a token name or placeholder name after the SHOW TOKEN or SHOW PLACEHOLDER command. C.3.4 Compiling Source Code To compile your source code and to review compilation errors without leaving the editing session, use the LSE commands COMPILE and REVIEW. The COMPILE command issues a DCL command in a subprocess to invoke the HP C compiler. The",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

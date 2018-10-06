@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Name",
+            "USERNAME",
+            "USER_ID",
+            "ACCOUNT_STATUS",
+            "LOCK_DATE",
+            "EXPIRY_DATE",
+            "DEFAULT_TABLESPACE",
+            "TEMPORARY_TABLESPACE",
+            "CREATED",
+            "INITIAL_RSRC_CONSUMER_GROUP",
+            "EXTERNAL_NAME"
+        ],
+        [
+            "Type",
+            "VARCHAR2(30)",
+            "NUMBER",
+            "VARCHAR2(32)",
+            "DATE",
+            "DATE",
+            "VARCHAR2(30)",
+            "VARCHAR2(30)",
+            "DATE",
+            "VARCHAR2(30)",
+            "VARCHAR2(4000)"
+        ],
+        [
+            "Value",
+            "-",
+            "0",
+            "OPEN",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+        ]
+    ],
+    "pageTitle": "Data Dictionary",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/gateways.112/e12070/apc.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00008-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70250923,
+    "recordOffset": 70235294,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 03 Jul 2015 16:45:02 GMT",
+    "textBeforeTable": "Table C-26 USER_USERS NULL VARCHAR2(3) MONITORING NULL VARCHAR2(8) SKIP_CORRUPT NULL VARCHAR2(15) DURATION NULL VARCHAR2(3) USER_STATS NULL VARCHAR2(3) GLOBAL_STATS NULL VARCHAR2(8) ROW_MOVEMENT NULL VARCHAR2(7) BUFFER_POOL NULL VARCHAR2(3) NESTED NULL VARCHAR2(1) SECONDARY NULL VARHCAR2(1) TEMPORARY NULL VARCHAR2(12) IOT_TYPE",
+    "textAfterTable": "Table C-27 USER_VIEWS Name Type Value VIEW_NAME VARCHAR2(30) - TEXT_LENGTH NUMBER 0 TEXT LONG NULL TYPE_TEXT_LENGTH NUMBER 0 TYPE_TEXT VARCHAR2(4000) NULL OID_TEXT_LENGTH NUMBER 0 OID_TEXT VARCHAR2(4000) NULL VIEW_TYPE_OWNER VARCHAR2(30) NULL VIEW_TYPE VARCHAR2(30) NULL",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

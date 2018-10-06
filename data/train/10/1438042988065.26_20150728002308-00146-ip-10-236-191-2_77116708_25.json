@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "Exception",
+            "BindException",
+            "ConversionNotSupportedException",
+            "HttpMediaTypeNotAcceptableException",
+            "HttpMediaTypeNotSupportedException",
+            "HttpMessageNotReadableException",
+            "HttpMessageNotWritableException",
+            "HttpRequestMethodNotSupportedException",
+            "MethodArgumentNotValidException",
+            "MissingServletRequestParameterException",
+            "MissingServletRequestPartException",
+            "NoSuchRequestHandlingMethodException",
+            "TypeMismatchException"
+        ],
+        [
+            "HTTP Status Code",
+            "400 (Bad Request)",
+            "500 (Internal Server Error)",
+            "406 (Not Acceptable)",
+            "415 (Unsupported Media Type)",
+            "400 (Bad Request)",
+            "500 (Internal Server Error)",
+            "405 (Method Not Allowed)",
+            "400 (Bad Request)",
+            "400 (Bad Request)",
+            "400 (Bad Request)",
+            "404 (Not Found)",
+            "400 (Bad Request)"
+        ]
+    ],
+    "pageTitle": "17.\u00a0Web MVC framework",
+    "title": "",
+    "url": "http://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/mvc.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988065.26/warc/CC-MAIN-20150728002308-00146-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 77184319,
+    "recordOffset": 77116708,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The DefaultHandlerExceptionResolver translates Spring MVC exceptions to specific error status codes. It is registered by default with the MVC namespace, the MVC Java config, and also by the the DispatcherServlet (i.e. when not using the MVC namespace or Java config). Listed below are some of the exceptions handled by this resolver and the corresponding status codes: Spring MVC may raise a number of exceptions while processing a request. The SimpleMappingExceptionResolver can easily map any exception to a default error view as needed. However, when working with clients that interpret responses in an automated way you will want to set specific status code on the response. Depending on the exception raised the status code may indicate a client error (4xx) or a server error (5xx). 17.11.3\u00a0Handling Standard Spring MVC Exceptions Much like standard controller methods annotated with a @RequestMapping annotation, the method arguments and return values of @ExceptionHandler methods can be flexible. For example, the HttpServletRequest can be accessed in Servlet environments and the PortletRequest in Portlet environments. The return type can be a String, which is interpreted as a view name, a ModelAndView object, a ResponseEntity, or you can also add the @ResponseBody to have the method return value converted with message converters and written to the response stream. The @ExceptionHandler value can be set to an array",
+    "textAfterTable": "The DefaultHandlerExceptionResolver works transparently by setting the status of the response. However, it stops short of writing any error content to the body of the response while your application may need to add developer-friendly content to every error response for example when providing a REST API. You can prepare a ModelAndView and render error content through view resolution -- i.e. by configuring a ContentNegotiatingViewResolver, MappingJacksonJsonView, and so on. However, you may prefer to use @ExceptionHandler methods instead. If you prefer to write error content via @ExceptionHandler methods you can extend ResponseEntityExceptionHandler instead. This is a convenient base for @ControllerAdvice classes providing an @ExceptionHandler method to handle standard Spring MVC exceptions and return ResponseEntity. That allows you to customize the response and write error content with message converters. See the Javadoc of ResponseEntityExceptionHandler for more details. 17.11.4\u00a0Annotating Business Exceptions With @ResponseStatus A business exception can be annotated with @ResponseStatus. When the exception is raised, the ResponseStatusExceptionResolver handles it by setting the status of the response accordingly. By default the DispatcherServlet registers the ResponseStatusExceptionResolver and it is available for use. 17.11.5\u00a0Customizing the Default Servlet Container Error Page When the status of the response is set to",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Release",
+            "11.2GS",
+            "11.1CC",
+            "12.2(25)S",
+            "12.2(28)SB",
+            "12.2(33)SRA",
+            "12.2(33)SXH"
+        ],
+        [
+            "Modification",
+            "This command was introduced to support the Cisco 12012 Internet router.",
+            "Support was added for multiple platforms.",
+            "This command was integrated into Cisco IOS Release 12.2(25)S.",
+            "This command was integrated into Cisco IOS Release 12.2(28)SB and implemented on the Cisco 7000 series router. This command is not supported on the Cisco 10000 series router.",
+            "This command was integrated into Cisco IOS Release 12.2(33)SRA.",
+            "This command was integrated into Cisco IOS Release 12.2(33)SXH."
+        ]
+    ],
+    "pageTitle": "Cisco IOS IP Switching Command Reference - cef table consistency-check through clear pxf [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipswitch/command/isw-cr-book/isw-a1.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00033-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 368419687,
+    "recordOffset": 368383097,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{172771=The following example clears all line card routes in an MFIB table on a Cisco 12000 series Internet router:, 4130=(Optional) Specifies the maximum number of prefixes to check per scan. The range is from 2 to 10000. The default count number is 1000 prefixes per scan for the scan-rib-ios and scan-ios-rib keywords. The default count number is 0 for the lc-detect, scan-lc-rp, and scan-rp-lc keywords., 208564=12.3BC, 172214=Cisco 12000 Series Internet Router, 77282=This command was introduced to support the Cisco 12000 series Internet routers., 10785=This command was integrated into Cisco IOS XE Release 2.1 and implemented on the Cisco ASR 1000 Series Aggregation Services Router., 164339=The following example shows how to reset the packet and byte counts to zero for Cisco Express Forwarding entries on the 172.17.10.10 network:, 60340=This command was introduced to support the Cisco 12012 Internet router., 172290=On a Cisco 12000 series Internet router the clear ip mds command must be run in privileged EXEC mode on a linecard., 208663=This command was integrated into Cisco IOS Release 12.3BC. The context and ipv6 keyword options are not supported.}",
+    "textBeforeTable": "Syntax Description seconds ] | error-message | auto-repair | data-checking ] seconds ] | period [ period count-number [ count { lc-detect | scan-lc-rp | scan-rp-lc | scan-rib-ios | scan-ios-rib } [ type { ipv4 | ipv6 } consistency-check table cef no seconds ] | data-checking ] seconds ] | holddown [ holddown seconds [ delay seconds ] | error-message | auto-repair seconds ] | period [ period count-number [ count { lc-detect | scan-lc-rp | scan-rp-lc | scan-rib-ios | scan-ios-rib } [ type { ipv4 | ipv6 } consistency-check table cef To enable Cisco Express Forwarding table consistency checker types and parameters, use the cef table consistency-check command in global configuration mode. To disable consistency checkers, use the no form of this command. cef table consistency-check clear pxf clear mls cef ip accounting per-prefix clear ip traffic clear ip mds linecard clear ip mds forwarding clear ip mds clear ip cef prefix-statistics clear ip cef inconsistency",
+    "textAfterTable": "(Optional) Operates on the RSP (opposite of the scan-lc-rp consistency checker) by examining the FIB table for a configurable time period and sending the next x prefixes to the line card. The line card does an exact lookup. If it finds the prefix missing, the line card reports an inconsistency and signals the RSP for confirmation. scan-rib-ios (Optional) Compares the Routing Information Base (RIB) to the FIB table and provides the number of entries missing from the FIB table. scan-ios-rib (Optional) Compares the FIB table to the RIB and provides the number of entries missing from the RIB. count count-number (Optional) Specifies the maximum number of prefixes to check per scan. The range is from 2 to 10000. The default count number is 1000 prefixes per scan for the scan-rib-ios and scan-ios-rib keywords. The default count number is 0 for the lc-detect, scan-lc-rp, and scan-rp-lc keywords. period seconds (Optional) Period between scans.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

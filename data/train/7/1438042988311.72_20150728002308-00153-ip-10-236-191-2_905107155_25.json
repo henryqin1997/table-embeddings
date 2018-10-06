@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Title:",
+            "Version:",
+            "Priority:"
+        ],
+        [
+            "filefield_paths_filefield_paths_process_file() uses file_directory setting instead of filefield paths file path for comparison.",
+            "7.x-1.x-dev",
+            "Minor"
+        ],
+        [
+            "\u00bb All text-based fields wiped empty after replacing a file in a node and saving.",
+            "\u00bb 7.x-1.0-beta4",
+            "\u00bb Normal"
+        ]
+    ],
+    "pageTitle": "All text-based fields wiped empty after replacing a file in a node and saving. [#1355170] | Drupal.org",
+    "title": "",
+    "url": "https://www.drupal.org/node/1355170",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00153-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 905127547,
+    "recordOffset": 905107155,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampAfterTable": "{66420=I have a dev-site that I just upgraded from D6 to D7. I can verify that the bug is triggered on my site when using the beta3 and latest dev-version of this module (2012-Mar-26) when removing and uploading an image during the same edit., 100844=Hi jastraat! Current dev version (7.x-1.x-dev dated 2012-Aug-10) does NOT include any of the proposed patches. Are you sure you have applied the patch from #32 manually? If you did, you should have received some kind of error in your log. Can you post it here in a complete form? I'd like to help you, but I need to see the value of $regex. That \"offset 246\" refers to 246th character in $regex variable. And the value of $regex is logged to drupal logs via the function watchdog. BTW you can \"debug\" your problem yourself by adding this to the module's code at line 300 before preg_replace:, 55858=preg_replace(\"/(https:\\/\\/localhost\\/system\\/files\\/geogallery\\/%5Bcurrent-page%3Aurl%3Aargs%3A1%5D\\/pic_2011-02-18_1921.jpg|\\/system\\/files\\/geogallery\\/%5Bcurrent-page%3Aurl%3Aargs%3A1%5D\\/pic_2011-02-18_1921.jpg|private:\\/\\/)(styles\\/.*?\\/private\\/|)(geogallery\\/[current-page:url:args:1]\\/pic_2011-02-18_1921.jpg)/e\", \"_filefield_paths_replace_path_uri_scheme('\\1', 'private://geogallery/[current-page:url:args:1]/pic_2011-02-18_1921.jpg', 'private://geogallery/pic_2011-02-18_1921.jpg') . '\\2geogallery/pic_2011-02-18_1921.jpg'\", \"my_body_text\");}",
+    "lastModified": "Fri, 31 Jul 2015 19:40:03 GMT",
+    "textBeforeTable": "November 29, 2011 at 4:32pm CreditAttribution: jastraat commented jastraat Comment #3 Log in or register to post comments It also has the rather devastating effect of clearing all text fields within the node being saved. November 28, 2011 at 9:31pm CreditAttribution: jastraat commented jastraat Comment #2 Log in or register to post comments This occurs after removing an image from an image field and then uploading a new one with a new name. November 28, 2011 at 9:30pm CreditAttribution: jastraat commented jastraat Comment #1",
+    "textAfterTable": "Log in or register to post comments Comment #4 jastraat CreditAttribution: jastraat commented December 19, 2011 at 7:46pm Priority: Normal \u00bb Major This error is entirely related to the new function introduced in the following commit: http://drupalcode.org/project/filefield_paths.git/commit/0a3908f This commit didn't reference an issue, so I'm afraid I don't even understand what problem it's trying to address. The PHP error generated is unfortunately destroying all text content within the node however, so this rather critical. Log in or register to post comments Comment #5 Deciphered CreditAttribution: Deciphered commented February 6, 2012 at 7:38am",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

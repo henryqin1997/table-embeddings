@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "serverName",
+            "nodeName"
+        ],
+        [
+            "Definition",
+            "The name of the server",
+            "The name of the node"
+        ]
+    ],
+    "pageTitle": "wsadmin Command Reference",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E17904_01/web.1111/e17764/wsadmin_commands.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989142.82/warc/CC-MAIN-20150728002309-00284-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71883527,
+    "recordOffset": 71854216,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{136220=This example sets the PortNumber attribute for the SOADatasource data source to 1521., 161082=The following example converts the myDatasource data source from a normal JDBC data source to an Oracle RAC data source, sets the Service Name to myRACService, and sets the Oracle RAC database hosts and ports to hostRac1.example.com:1521, hostRac2.example.com:1234, and hostRac3.example.com:4567., 155064=The following example sets the Oracle RAC database hosts and ports for the SOADatasource data source to example.host1:1521 and example.host2:1521.}",
+    "lastModified": "Wed, 13 May 2015 05:16:54 GMT",
+    "textBeforeTable": "OracleMWConfigUtilities.showServer(serverName, nodeName) Syntax Displays the child nodes and attributes for the specified server on the specified node. 5.2.3.3 showServer [trw] NodeIPV6ListenerAddress [trw] NodeMulticastListenerAddress [trw] NodeDiscoveryListenerAddress [trw] IpcListenerAddress [trw] SibMQSSLListenerAddress [trw] SibMQListenerAddress [trw] SipSSLListenerAddress [trw] SipListenerAddress [trw] DcsUnicastListenerAddress [trw] Cisv2SSLMutualAuthListenerAddress [trw] Cisv2SSLServerAuthListenerAddress [trw] SasSSLServerAuthListenerAddress [trw] OrbListenerAddress [trw] BootstrapListenerAddress [trw] SibSSLListenerAddress [trw] SibListenerAddress [trw] SoapListenerAddress [trw] HttpsListenerAddress [trw] HttpListenerAddress [trw] AdminSSLListenerAddress [trw] AdminListenerAddress print OracleMWConfigUtilities.showEndPointsUsingObject(server) server = OracleMWConfig.getChildByName('Server','OracleAdminServer')  The following example displays the list of end points for the OracleAdminServer server. Example  The server object serverObject Definition Argument OracleMWConfigUtilities.showEndPointsUsingObject(serverObject) Syntax Displays the list of end points for the specified server. 5.2.3.2 showEndPointsUsingObject [trw] NodeIPV6ListenerAddress [trw] NodeMulticastListenerAddress [trw] NodeDiscoveryListenerAddress [trw] IpcListenerAddress [trw] SibMQSSLListenerAddress [trw] SibMQListenerAddress [trw] SipSSLListenerAddress [trw] SipListenerAddress [trw] DcsUnicastListenerAddress [trw] Cisv2SSLMutualAuthListenerAddress [trw] Cisv2SSLServerAuthListenerAddress [trw] SasSSLServerAuthListenerAddress [trw] OrbListenerAddress [trw] BootstrapListenerAddress [trw] SibSSLListenerAddress [trw] SibListenerAddress [trw] SoapListenerAddress [trw] HttpsListenerAddress [trw] HttpListenerAddress [trw] AdminSSLListenerAddress [trw] AdminListenerAddress print OracleMWConfigUtilities.showEndPointsUsingName('OracleAdminServer','TEST01Node03')  The following example displays the list of end points for the server OracleAdminServer on the TEST01Node03 node. Example",
+    "textAfterTable": "Example The following example displays the attributes for the myServer server on the TEST01Nod03 node.  OracleMWConfigUtilities.showServer('myServer', 'TEST01Node03') [ar-] Name [soa_server1] [ar-] NodeName [adc6140173Node02] [arw] DevelopmentMode [false] [trw] ListenerAddress 5.2.3.4 getEndPointHostUsingName Returns the value of the Host attribute of the specified end point for the specified server name and node name. Syntax OracleMWConfigUtilities.getEndPointHostUsingName(serverName, nodeName, endPointName) Argument Definition serverName The name of the server nodeName The name of the node endPointName The name of the end point Example The following example returns the value of the Host attribute for the SoapListenerAddress end point on the OracleAdminServer server on node TEST01Node03.  host = OracleMWConfigUtilities.getEndPointHostUsingName ('OracleAdminServer','TEST01Node03','SoapListenerAddress') print host myserver.domain.com 5.2.3.5 getEndPointHostUsingObject Returns the value of the Host attribute of the specified end point for the specified server. Syntax OracleMWConfigUtilities.getEndPointHostUsingObject(serverObject,endPointName) Argument Definition",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

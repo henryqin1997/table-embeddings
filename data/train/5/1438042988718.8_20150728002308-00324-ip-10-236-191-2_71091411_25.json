@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "Segment Code",
+            "Name",
+            "Description",
+            "Sequence Number",
+            "Prompt",
+            "Short Prompt",
+            "Display Width",
+            "Column Name",
+            "Default Value Set Code"
+        ],
+        [
+            "Value",
+            "INFUSION_AM_CO",
+            "InFusion America Company",
+            "InFusion America Inc. Company",
+            "1",
+            "Company",
+            "CO",
+            "2",
+            "Segment1",
+            "INFUSION_AM_COMPANY"
+        ]
+    ],
+    "pageTitle": "Materials Management and Logistics Implementation Guide - 11g Release 7 (11.1.7)",
+    "title": "",
+    "url": "http://docs.oracle.com/cloud/131/user_services/OAMAT/F434144AN121C5.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00324-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71193515,
+    "recordOffset": 71091411,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{514024=Jorge Sanchez is a contractor who is starting work in your department next week. His hours will be flexible, so you need to create a new time shift with flexible details that he can use to record his time. He will have a flexible start time from 7:00 a.m. to 9:00 a.m. and a flexible end time from 4:00 p.m. to 6:00 p.m. His core work hours will be from 9:00 a.m. to 4:00 p.m., 472154=Calendar period naming format: Select the calendar period format to append the period's start date's year to the prefix. For the period covering September 1, 2011 to December 31, 2011, then 2011 or just 11, depending on the period format selected, is appended to each period's name. For the remaining periods covering January 1, 2012 to August 31, 2012, then 2012 or 12, is appended to each period's name., 470449=Period 1 covers 01-Jan-2011 to 31-Jan-2011 and period 2 covers 01-Mar-2011 to 31-Mar-2011, and period 3 covers 01-Feb-2011 to 28-Feb-2011., 469917=01-Jan-2011 to 28-Jan-2011 and 31-Jan-2011 to 28-Feb-2011, 513553=Your division has decided that the employees in the office must clock in and out for lunch starting next week. All employees will take the same lunch hour. Add punch shift details to the existing shift so that employees punch in at 8:00 a.m.; they punch out for lunch from 11:30 a.m. to 12:30 p.m.; they punch back in at 12:30 p.m.; and they punch out for the day at 5:00 p.m., 471801=The period naming format determines the year that is appended to the prefix for each period in the calendar. For the example, your accounting year has a set of twelve accounting period with a start date of September 1, 2011 and the end date is August 31, 2012, with each period's date range following the natural calendar month date range., 511622=An exception is a record of a date that overrides the availability of a resource to which a schedule has been assigned. For example, a resource is assigned a schedule that includes December 25 as a working day. An exception can be created for December 25 and applied to that schedule to override resource availability for that date. Exceptions can also be for a date time period such as 9 a.m. to 11 a.m. on December 25th., 469735=01-Jan-2011 to 31-Jan-2011 and 30-Jan-2011 to 28-Feb-2011, 471068=July 1, 2010 in a 2012 calendar, 356285=1111, 406564=An account combination is a completed code of segment values that uniquely identifies an account in the chart of accounts, for example 01-2900-500-123, might represent InFusion America (company)-Monitor Sales (division)-Revenue (account)-Air Filters (product)., 466803=The year displayed in the period names is based on the selected period name format and the dates the period covers or if the period crosses years, on the year of the start date of the period. For example, April 10, 2010 to May 9, 2010 has the period name of Apr-10 and December 10, 2010 to January 9, 2011 has the name of Dec-10. If period frequency is Other, then the period format region is hidden. The application generates a temporary period name for calendars with period frequency of Other, using a fixed format of Period numberYY. You can override this format with your own customized period names., 469576=Jan '11, 360919=1053, 469419=Jan 11, 339786=For detailed information on importing geographies using file-based import, refer to Document No. 1481758.1, Importing Master Reference Geography Data, on the Oracle Support site., 356483=1112, 515098=The employees in the Human Resources department all work 8 hours a day, but the start and end times vary by employee. Some employees start at early as 6:00 a.m., while others don't start until 9:00 a.m. Create an elapsed shift with a duration of 8 hours, where all employees are assumed to be available for the number of hours in the shift at any time during the day., 512848=Next month you are adding a second shift for your manufacturing operations. This new shift will start right after your regular first shift. You can create a time shift that starts at 4:00 p.m. and ends at 12:00 a.m. There are restrictions in updating existing shifts and patterns. Shifts and patterns cannot be updated if the change affects a schedule, that is they are associated to a schedule. If a shift is created but not assigned to a pattern (or assigned to a pattern but the pattern is not assigned to a schedule) it can be updated. If a pattern is created and not assigned to a schedule it can be updated., 472573=Fiscal period naming format: Select the fiscal period format to always append the period's year assignment to the prefix. If the accounting periods in the set of twelve are all assigned the year of 2012, then 2012 or just 12, depending on the period format selected, is appended to the period name of all 12 periods.}",
+    "lastModified": "Fri, 25 Oct 2013 08:46:05 GMT",
+    "textBeforeTable": "Enter the following parameters: To create a new segment, click the Create to open the Create Key Flexfield Segment page. Click Save. Select the - Delimiter to visually separate your segment values. Enter a unique Structure Code, INFUSION_AM_COA_STRUCTURE, and Name, InFusion America COA Structure. Provide an optional Description, InFusion America Inc. Chart of Accounts Structure. Select the General Ledger row and click the Create to open the Create Key Flexfield Structure page. Click Manage Structures to open the Manage Key Flexfield Structures page. Select General Ledger from the Module list of values and click Search. Navigate to the Manage Chart of Accounts page from the Functional Setup Manger by querying on Manage Chart of Accounts and clicking on the Go To Task. You are creating a chart of accounts structure as you setup your chart of accounts for your enterprise, InFusion America, Inc. Follow these steps: Chart of Account Structure The chart of accounts instance is exposed in the user interfaces and processes. By default, a chart of accounts instance inherits all the attributes of the chart of accounts structure, meaning that all instances of the same structure share a common shape and have the same segments in the same order. However, at the chart of accounts instance level, you can override the default value set assignments for your segments and assign a unique account hierarchy that determines",
+    "textAfterTable": "Select a segment label, Primary Balancing Segment, to indicate its purpose within your chart of accounts. Note Two segment labels are required: primary balancing segment and natural account segment. These labels are not used with each other or with other labels in a specific segment. Click Save and Close. Click Done. Define additional segments following the same process. Chart of Account Instance You are creating a chart of accounts instance as you setup your chart of accounts for your enterprise, InFusion America, Inc. Follow these steps: Navigate to the Manage Chart of Accounts page from the Functional Setup Manger by querying on Manage Chart of Accounts and clicking on the Go To Task. Select General Ledger from the Module list of values and click Search. Select the General Ledger row and click Manage Structure Instances to open the Manage Key Flexfield Structure Instance page. Click the Create icon to open the Create Key Flexfield Structure Instance page. Enter a unique Structure Instance Code, INFUSION_AM_COA_INSTANCE, and Name, InFusion America COA Instance. Provide an optional Description, InFusion America Inc. Chart of Accounts Structure Instance. Select Dynamic combination creation allowed to indicate that you want to dynamically generate account combinations. Associate your instance with your Structure Name, InFusion America Structure. Note By default, an instance inherits the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

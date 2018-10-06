@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Language",
+            "Korean",
+            "Japanese",
+            "Chinese"
+        ],
+        [
+            "Lexer",
+            "KOREAN_MORPH_LEXER",
+            "JAPANESE_LEXER, JAPANESE_VGRAM_LEXER",
+            "CHINESE_LEXER,CHINESE_VGRAM_LEXER"
+        ]
+    ],
+    "pageTitle": "Indexing with Oracle Text",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B19306_01/text.102/b14217/ind.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00115-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 69563203,
+    "recordOffset": 69528696,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{3235=The CONTEXT grammar can be used with query templating., 3121=Grammar is called CTXCAT, which supports logical operations, phrase queries, and wildcarding., 1620=Grammar is called the CONTEXT grammar, which supports a rich set of operations., 1720=The CTXCAT grammar can be used with query templating.}",
+    "lastModified": "Wed, 13 May 2015 05:07:03 GMT",
+    "textBeforeTable": "Table 3-3 Lexers for Asian Languages You index these languages with specific lexers: 3.2.8.5 Korean, Japanese, and Chinese Indexing See Also: Oracle Text Reference to learn more about the BASIC_LEXER You can enable and disable the creation of composite indexes with the composite attribute of the BASIC_LEXER preference. For example, in German, a query on the term Bahnhof (train station) returns documents that contain Bahnhof or any word containing Bahnhof as a sub-composite, such as Hauptbahnhof, Nordbahnhof, or Ostbahnhof. German and Dutch text contain composite words. By default, Oracle Text creates composite indexes for these languages. The result is that a query on a term returns words that contain the term as a sub-composite. 3.2.8.4 Composite Words See Also: Oracle Text Reference to learn more about the BASIC_LEXER",
+    "textAfterTable": "These lexers have their own sets of attributes to control indexing. See Also: Oracle Text Reference to learn more about these lexers 3.2.9 Fuzzy Matching and Stemming Fuzzy matching enables you to match similarly spelled words in queries. Stemming enables you to match words with the same linguistic root. For example a query on $speak, expands to search for all documents that contain speak, speaks, spoke, and spoken. Fuzzy matching and stemming are automatically enabled in your index if Oracle Text supports this feature for your language. Fuzzy matching is enabled with default parameters for its similarity score lower limit and for its maximum number of expanded terms. At index time you can change these default parameters. To improve the performance of stem queries, you can create a stem index by enabling the index_stems attribute of the BASIC_LEXER. See Also: Oracle Text Reference",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

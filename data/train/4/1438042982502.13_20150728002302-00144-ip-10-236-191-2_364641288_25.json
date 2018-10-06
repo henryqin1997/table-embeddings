@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Release",
+            "12.2(50)SY",
+            "15.0(2)SE",
+            "Cisco IOS XE Release 3.2SE"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "This command was integrated into Cisco IOS Release 15.0(2)SY.",
+            "This command was integrated into Cisco IOS XE Release 3.2SE."
+        ]
+    ],
+    "pageTitle": "IPv6 Command Reference, Cisco IOS XE Release 3SE (Catalyst 3850 Switches) - ipv6-i1 [Cisco Catalyst 3850 Series Switches] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipv6/command/ipv6-xe-3se-3850-cr-book/ipv6-xe-3se-3850-cr-book_chapter_01.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00144-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 364680895,
+    "recordOffset": 364641288,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{18544=Reachability can also be established indirectly by using Neighbor Discovery Protocol (NDP) inspection up to the VERIFY_MAX_RETRIES value (the default is 10 seconds). When there is no response, entries are considered stale and are deleted after the stale lifetime value is reached (the default is 1440 minutes)., 11260=This argument must be in the form documented in RFC 2373 where the address is specified in hexadecimal using 16-bit values between colons., 21812=Stale lifetime: 1440 minutes, 21762=Down lifetime: 1440 minutes}",
+    "textBeforeTable": "Syntax Description [policy-name] attach-policy guard dhcp ipv6 no [policy-name] attach-policy guard dhcp ipv6 Syntax Available In VLAN Configuration Mode vlan-id ] ] [ . .. vlan-id { add | all | except | none | remove } [policy-name] ] [ vlan [ attach-policy guard dhcp ipv6 no vlan-id ] ] [ . .. vlan-id { add | all | except | none | remove } [policy-name] ] [ vlan [ attach-policy guard dhcp ipv6 Syntax Available In Interface Configuration Mode To attach a Dynamic Host Configuration Protocol for IPv6 (DHCPv6) guard policy, use the ipv6 dhcp guard attach-policy command in interface configuration or VLAN configuration mode. To unattach the DHCPv6 guard policy, use the no form of this command. ipv6 dhcp guard attach-policy ipv6 prefix-list ipv6 neighbor tracking ipv6 neighbor binding vlan ipv6 neighbor binding max-entries ipv6 neighbor binding logging ipv6 nd suppress policy ipv6 nd suppress attach-policy",
+    "textAfterTable": "none (Optional) Attaches a DHCPv6 guard policy to none of the specified VLAN(s). remove (Optional) Removes a DHCPv6 guard policy from the specified VLAN(s). vlan-id (Optional) Identity of the VLAN(s) to which the DHCP guard policy applies. Command Default No DHCPv6 guard policy is attached. Command Modes Interface configuration (config-if) VLAN configuration (config-vlan) Command History Release Modification 15.2(4)S This command was introduced. Cisco IOS XE Release 3.2SE This command was integrated into Cisco IOS XE Release 3.2SE. Usage Guidelines This command allows you",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

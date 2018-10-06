@@ -1,0 +1,85 @@
+{
+    "relation": [
+        [
+            "CustID",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        [
+            "FirstName",
+            "David",
+            "Magic",
+            "Bubba",
+            "Ron",
+            "Steve"
+        ],
+        [
+            "LastName",
+            "Giard",
+            "Johnson",
+            "Smith",
+            "Mason",
+            "Smith"
+        ],
+        [
+            "StreetAddress",
+            "123 Oxford Ct",
+            "456 Hollywood Blvd",
+            "789 Killbubbakill St",
+            "501 E Grand River Ave",
+            "900 Belle St"
+        ],
+        [
+            "City",
+            "Erlanger",
+            "Lansing",
+            "Baltimore",
+            "Okemos",
+            "Detroit"
+        ],
+        [
+            "State",
+            "KY",
+            "MI",
+            "MD",
+            "MI",
+            "MI"
+        ],
+        [
+            "ZipCode",
+            "40111",
+            "45222",
+            "10111",
+            "45333",
+            "48888"
+        ],
+        [
+            "TotalSales",
+            "1000.00",
+            "1500.00",
+            "1000.00",
+            "2000.00",
+            "5000.00"
+        ]
+    ],
+    "pageTitle": "The Wit and Ramblings of David Giard - SQL Server",
+    "title": "",
+    "url": "http://www.davidgiard.com/SyndicationService.asmx/GetRssCategory?categoryName=SQL%20Server",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990900.28/warc/CC-MAIN-20150728002310-00321-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 395274191,
+    "recordOffset": 395193386,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{467777=Microsoft Visual Studio Team System 2008 Database Edition (aka \u201cData Dude\u201d) provides tools for managing and deploying SQL Server databases.\u00a0, 705363=There are some limitations.\u00a0 In order to use Data Dude, you must have either SQL Server 2008 or SQL Express installed locally on your development machine and you (the logged-in user) must have \"Create Database\" rights on that local installation.\u00a0 To my knowledge, Data Dude only works with SQL Server 2000 and 2005 databases.\u00a0 Plans to integrate with SQL Server 2008 have been announced but I don't know Microsoft's plans for other database engines.\u00a0\u00a0 I also occasionally find myself wishing Data Dude could accomplish its tasks more easily or in a more automated fashion.\u00a0 I wish, for example, I could specify that I always want to ignore database users in a database and always want to migrate everything else when using the Schema Compare tool.\u00a0 But overall, the tools in this product have increased my productivity significantly.\u00a0 Nearly every application I write has a database element to it and anything that can help me with database development, management and deployment improves the quality of my applications., 369509=Saturday April 4 at the Robert C. Pew Grand Rapids Campus of Grand Valley State Universityin Grand Rapids, Shane Jordan and I will be delivering a session on the basics of SQL Server.\u00a0 This will cover many of the same topics as the Back To Basics: SQL 101\u00a0series I have writton on this blog., 341420=In this case, we don't see the row for Kentucky and New York because they had total sales summing less than $1000, 702325=Visual Studio Team System 2008 Database Edition is a mouthful to say, so a lot of people affectionately call it \u201cData Dude\u201d., 625445=1. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Launch Visual Studio and open your Database Project. (For info on how to create a database project from a SQL Server database see: http://www.davidgiard.com/2008/08/11/DataDudeTutorial1CreatingADatabaseProject.aspx ), 339941=We can run our query to get the TotalSales sum for each state, but show only those states that have total sales of more than 2000, using the following query, 329594=This returns 14,750 which is the sum of 1000 + 1500 + 1000 + 2000 + 5000 + 250 + 4000, 525229=In order to write unit tests for your stored procedures, those stored procedures must be in a database project.\u00a0 For information on how to create a database project from a SQL Server database see: http://www.davidgiard.com/2008/08/11/DataDudeTutorial1CreatingADatabaseProject.aspx, 662456=Now, let\u2019s discuss how to create a database project to manage an existing SQL Server 2005 database., 470300=1. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Launch Visual Studio 2008, 623372=Microsoft Visual Studio Team System 2008 Database Edition (aka \u201cData Dude\u201d) provides tools for managing and deploying SQL Server databases.\u00a0, 142599=SQL Server 2008 R2 provides some new tools to help deploy database schemas., 143100=In the past, Microsoft has released tools to help developers manage the deployment of database schema changes. Visual Studio Database Edition (aka \u201cData Dude\u201d) was bundled into Visual Studio 2010. But these tools are geared toward developers \u2013 not to DBAs. Most DBAs don\u2019t work in Visual Studio. And in large enterprise applications, it is the DBAs who are managing the deployment of the database schemas. Without tools, this coordination requires a lot of manual steps., 331262=This returns 12,500, which is 1500 + 2000 + 5000 + 4000, or the sum of the TotalSales column for only those customers in Michigan., 143585=SQL Server 2008 R2 includes support for Data Tier Applications. A Data Tier Application (mysteriously abbreviated \u201cDAC\u201d) is a package containing instructions for deploying a database schema. DBAs and developers can use SQL Server Management Studio to create \u201cDACPAC\u201d files for a given database. They can then use that DACPAC file to create or update a database with an existing schema., 144331=To create a DAC in SQL Server 2008 R2, launch SQL Server Management Studio, connect to a server, and expand the Databases node. Right-click the name of the database you want to deploy and select Tasks | Extract Data Tier Application\u2026 from the context menu. The Extract Data Tier Application wizard launches and an introduction window (Figure 1) displays., 62369=Here is a video of Jason Follas's Using Geospatial Data With SQL Azure presentation at the 2012 Detroit Day of Azure., 462577=Below is a list of my recent series of articles on Visual Studio 2008 Database Edition (aka \u201cData Dude\u201d), 482049=c. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 You can view the script to learn what Data Dude is doing.\u00a0 It\u2019s interesting to note that constraints on each table are dropped before copying data, then created after the data is copied.\u00a0 This speeds up the process.\u00a0 Also, note the use of transactions to prevent incomplete data copies.\u00a0 Below is a sample script updating data in one table. /* This script was created by Visual Studio on 8/15/2008 at 8:57 AM. Run this script on dgiard.Test_QA.dbo to make it the same as dgiard.Test_Dev.dbo. This script performs its actions in the following order: 1. Disable foreign-key constraints. 2. Perform DELETE commands. 3. Perform UPDATE commands. 4. Perform INSERT commands. 5. Re-enable foreign-key constraints. Please back up your target database before running this script. */ SET NUMERIC_ROUNDABORT OFF GO SET XACT_ABORT, ANSI_PADDING, ANSI_WARNINGS, CONCAT_NULL_YIELDS_NULL, ARITHABORT, QUOTED_IDENTIFIER, ANSI_NULLSON GO /*Pointer used for text / image updates. This might not be needed, but is declared here just in case*/ DECLARE @pv binary(16) BEGINTRANSACTION ALTERTABLE [dbo].[OrderDetails] DROPCONSTRAINT [FK_OrderDetails_Orders] ALTERTABLE [dbo].[OrderDetails] DROPCONSTRAINT [FK_OrderDetails_Products] ALTERTABLE [dbo].[Orders] DROPCONSTRAINT [FK_Orders_Customers] DELETEFROM [dbo].[ProductTypes] WHERE [ProductTypeID]=N'5646953f-7b89-4862-bcf3-bf53450d28bb' INSERTINTO [dbo].[ProductTypes] ([ProductTypeID], [ProductTypeName]) VALUES (N'7beb0d99-d034-41b9-bbf7-f9cdcdbedc30', N'Furniture') INSERTINTO [dbo].[ProductTypes] ([ProductTypeID], [ProductTypeName]) VALUES (N'abc19a14-5968-4c5f-9f0f-4debc034cb90', N'Hardware') INSERTINTO [dbo].[ProductTypes] ([ProductTypeID], [ProductTypeName]) VALUES (N'b9e446ed-eeb1-4334-b191-c70a55ef1a05', N'Books') ALTERTABLE [dbo].[OrderDetails] ADDCONSTRAINT [FK_OrderDetails_Orders] FOREIGNKEY ([OrderID]) REFERENCES [dbo].[Orders] ([OrderID]) ALTERTABLE [dbo].[OrderDetails] ADDCONSTRAINT [FK_OrderDetails_Products] FOREIGNKEY ([ProductID]) REFERENCES [dbo].[Products] ([ProductID]) ALTERTABLE [dbo].[Orders] ADDCONSTRAINT [FK_Orders_Customers] FOREIGNKEY ([CustomerID]) REFERENCES [dbo].[Customers] ([CustID]) COMMITTRANSACTION, 8622=Spatial data types were introduced in SQL Server 2008. These data types allow you to store location information directly in your data rows and quickly query that information to create shapes and to determine locations, distances, and points within a given shape., 456869=In this interview, Jason Follas explains spatial data types, which were introduced in SQL Server 2008, 524782=Microsoft Visual Studio Team System 2008 Database Edition (aka \u201cData Dude\u201d) provides tools to help developers write unit tests against SQL Server stored procedures.\u00a0 The tool integrates with MSTest, wich is a testing framework many developers are already using for their other unit tests., 664319=4. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Under Templates, select SQL Server 2005 Wizard., 660429=1. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 The current version of Data Dude only works on SQL Server 2000 and SQL Server 2005.\u00a0 Visual Studio 2008 Service Pack 1 should provide support for SQL Server 2008.\u00a0 I will describe an example using SQL Server 2005., 659749=Microsoft Visual Studio Team System 2008 Database Edition (aka \u201cData Dude\u201d) provides tools for managing and deploying SQL Server databases.\u00a0 In order to use Data Dude to manage an existing SQL Server database, the first step is to create a database project.\u00a0}",
+    "textBeforeTable": "Afer adding a few rows to the table, the data looks like this. money TotalSales nvarchar(10) \u00a0ZipCode char(2) State nvarchar(255) \u00a0City nvarchar(255) StreetAddress nvarchar(50) LastName nvarchar(50) FirstName Data Type Name For demos in this article, we will use a table named Customer that contains\u00a0the followong\u00a0columns: NOTE: 1 http://davidgiard.com/SyndicationService.asmx/GetEntryCommentsRss?guid=e319538e-1502-490c-870c-1a0bfc912bb7 http://davidgiard.com/CommentView,guid,e319538e-1502-490c-870c-1a0bfc912bb7.aspx http://davidgiard.com/PermaLink,guid,e319538e-1502-490c-870c-1a0bfc912bb7.aspx http://davidgiard.com/pingback.aspx http://davidgiard.com/Trackback.aspx?guid=e319538e-1502-490c-870c-1a0bfc912bb7 SQL Server Public Speaking Back To Basics http://davidgiard.com/CommentView,guid,54a5b741-5a68-4d55-bc41-1fab2f33490a.aspx <p> Saturday April 4 at the Robert C. Pew Grand Rapids Campus of Grand Valley State Universityin Grand Rapids, Shane Jordan and I will be delivering a session on the basics of SQL Server.&nbsp; This will cover many of the same topics as the <em>Back To Basics: SQL 101&nbsp;</em>series I have writton on this blog. </p> <p> The session is part of the West Michigan .Net",
+    "textAfterTable": "Retrieving data is one of the most common tasks performed on a relational database. Fortunately, SQL Server includes a language that allows users (and programs) to retrieve the data they want. This language is called Structured Query Language. It is usually abbreviated \"SQL\" and often pronounced \"SEE-kwuhl\". Getting data from a database is known as querying the database. The code to retrieve that data is a query. When this code is written in SQL (as most of my queries are), it is known as a SQL query. The basic syntax for a SQL query that retrieves data from a single table is SELECT [List of Columns] \u00a0\u00a0\u00a0\u00a0FROM [Table Name] \u00a0\u00a0\u00a0\u00a0WHERE [Filter Condition] \u00a0\u00a0\u00a0\u00a0ORDER BY [Sort column or columns] In SQL, line breaks and extra spaces are not important. The language parser is smart enough to figure out when a statement or command ends, so I usually try to format my SQL statements to make them easy to read. Only the SELECT and FROM parts of the query are required, so let's start with those. EvenEven though the \"SELECT\" keyword typically comes first in this type of query, I'll start",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Expression",
+            "Event Context #{wcEventContext.events.WebCenterResourceSelected} Document Name #{wcEventContext.events.WebCenterResourceSelected.name} Document Creator #{wcEventContext.events.WebCenterResourceSelected.createdBy} Document Last Modified By #{wcEventContext.events.WebCenterResourceSelected.lastModifiedBy}",
+            "",
+            "Event Context #{wcEventContext.events.WebCenterUserSelected} User Name #{wcEventContext.events.WebCenterUserSelected.userName} User GUID #{wcEventContext.events.WebCenterUserSelected.userGUID} portal Name #{wcEventContext.events.WebCenterUserSelected.portalName} portal GUID #{wcEventContext.events.WebCenterUserSelected.portalGUID}",
+            "Event Context #{wcEventContext.events.WebCenterConnectionSelected} Profile User Name #{wcEventContext.events.WebCenterConnectionSelected.profileUserName} Profile User GUID #{wcEventContext.events.WebCenterConnectionSelected.profileUserGUID} Connected User Name #{wcEventContext.events.WebCenterConnectionSelected.userName} Connected User GUID #{wcEventContext.events.WebCenterConnectionSelected.userGUID}",
+            "#{wcEventContext.events.WebCenterSpaceSelected.SpaceName}",
+            "#{wcEventContext.events.WebCenterSpaceSelected.SpaceGUID}"
+        ],
+        [
+            "Function",
+            "Use in context wiring between producer and consumer task flows. Returns a map that relates some piece of metadata from the producer to some piece of metadata from the consumer, for example, from a document creator to the creator's Profile. Producer task flows include: Document Manager Recent Documents Document List Viewer",
+            "Consumer task flows include: Activity Graph - Similar Items (show other documents that may be of interest to the user) Links (show the items that are linked to the selected document) Profile (view the Profile of the document's author) Activity Stream (view activities related to this document) Tags (tags on this document and a means of accessing the Tag Center)",
+            "Use in context wiring between producer and consumer task flows. Returns a map that relates some piece of metadata from the producer to some piece of metadata from the consumer, for example, from a user to the user's connections. Producer task flows include: Connections Portal Members Consumer task flows include: Connections (show connections of the selected user) Documents task flows (show documents created by the selected user) Activity Stream (view this user's activities) Tags (tags created by this user) Profile (show this user's Profile)",
+            "--",
+            "Returns the name of the selected portal",
+            "Returns the GUID of the selected portal"
+        ]
+    ],
+    "pageTitle": "Expression Language Expressions",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E29542_01/webcenter.1111/e63259/jpsdg_app_els.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00267-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 867544243,
+    "recordOffset": 867495007,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{148885=id:gsr3396194a_3a72_44d6_90b4_57fd6efe4ff7 resourceScope:Scope[name=defaultScope, guid=s8bba98ff_4cbb_40b8_beee_296c916a23ed] resourceType:siteTemplate serviceId:oracle.webcenter.siteresources.sitetemplate category: displayName:Fusion Side Navigation displayNameKey:SITE_TEMPLATE_FUS_SIDE_STRETCH_NAV_DN description:Stretching Page Layout with Side Navigation. Use Fusion FX Skin. descriptionKey:SITE_TEMPLATE_FUS_SIDE_STRETCH_NAV_DESC contentDirectory:/oracle/webcenter/siteresources/shared metadataFile: jspx:/oracle/webcenter/webcenterapp/view/templates/WCSiteTemplateSideNavStretch.jspx pageDef:/oracle/webcenter/webcenterapp/bindings/pageDefs/oracle_webcenter_webcenterapp_view_templates_WCSiteTemplateSideNavStretchPageDef.xml iconURI: excludeFrom: usesCustomSecurity:false visible:TRUE seeded:true createdBy:system createdDate:Fri Jul 02 05:44:19 PDT 2010 modifiedBy:system resourceBundle:oracle.webcenter.sitetemplate.view.resource.SiteTemplateBundle modifiedDate:Fri Jul 02 05:44:19 PDT 2010 logoUrl:/adf/webcenter/srm_dflt_logo_qualifier.png attributes:[], 191261=oracle.webcenter.spaces.internal.model.SpaceImpl@1392793, 288504=2008-11-19T10:18:36, 156032=2010-11-17T13:27:52}",
+    "lastModified": "Fri, 24 Apr 2015 09:42:43 GMT",
+    "textBeforeTable": "Table F-26 EL Expressions Relevant to Event Contexts Oracle Fusion Middleware Building Portals with Oracle WebCenter Portal. \"Wiring Pages, Task Flows, Portlets, and ADF Components\" chapter in See Also: For more information about event wiring, see the #{wcEventContext.events.WebCenterUserSelected.UserName}  All of the payloads for the ELs in Table F-26 are Maps. To dereference a map entry, use the standard EL for Maps: #{wcEventContext.events.WebCenterUserSelected}  For example: #{wcEventContext.events.eventName}  For example, for the whole payload, use the following EL: You can access all or part of the event payloads provided in Table F-26 once they have been raised. Table F-26 lists EL expressions relevant to the types of portal events that can trigger the passing of payloads (rather than events relevant to the events feature). F.14.7 EL Expressions Relevant to Portal Event Contexts       Returns true if current page is in Composer mode. Returns false if current page is not in Composer mode #{changeModeBean.inEditMode} A string of 60 or so characters that uniquely identifies the current page to the security system, for example: oracle_webcenter_page_scopedMD_s8bba98ff_4cbb_40b8_beee_296c916a23ed_user_Umonty_Page4PageDef #{pageDocBean.pageSecurityTarget}",
+    "textAfterTable": "F.14.8 Utilitarian EL Expressions Table F-27 lists utilitarian EL expressions and describes the types of functionality they provide. Table F-27 Utilitarian EL Expressions Expression Function #{userPreferences.currentDate} Returns the current date in the format specified in the current user's preferences. #{WCTruncator['text']['numberOfChars']} Returns a truncation of the string specified as text to the number of characters specified as numberOfChars, followed by a trailing ellipsis, for example: #{WCTruncator['abracadabra']['5']} evaluates to abrac... #{facesContext.viewRoot.locale} #{facesContext.externalContext.requestLocale} Both of these expressions return the request locale (that is, the browser locale setting). #{adfFacesContext.skinFamily} Returns the current application skin family. Returns the same value as #{requestContext.skinFamily}. F.15 EL Expressions Related to Device Settings This",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

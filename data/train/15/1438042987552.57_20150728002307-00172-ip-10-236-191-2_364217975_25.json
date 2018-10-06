@@ -1,0 +1,47 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Router> enable",
+            "configure terminal Example: Router# configure terminal",
+            "boot network {ftp:[[[//[username [:password ]@]location ]/directory ]/filename ] | rcp:[[[//[username@]location ]/directory ]/filename ] | tftp:[[[//location ]/directory ]/filename ]} Example: Router(config)# boot network tftp:hostfile1",
+            "service config Example: Router(config)# service config",
+            "end Example: Router(config)# end",
+            "Router#copysystem:running-confignvram:startup-config Example: Router# copy system:running-config nvram:startup-config"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Specifies the network configuration file to download at startup, and the protocol to be used (TFTP, rcp, or FTP). If you do not specify a network configuration filename, the Cisco IOS software uses the default filename network-confg. If you omit the address, the router uses the broadcast address. You can specify more than one network configuration file. The software tries them in order entered until it loads one. This procedure can be useful for keeping files with different configuration information loaded on a network server.",
+            "Enables the system to automatically load the network file upon restart.",
+            "Exits global configuration mode.",
+            "Saves the running configuration to the startup configuration file."
+        ]
+    ],
+    "pageTitle": "Managing Configuration Files Configuration Guide, Cisco IOS XE Release 3SE (Catalyst 3850 Switches) - Managing Configuration Files [Cisco Catalyst 3850 Series Switches] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/config-mgmt/configuration/xe-3se/cat3850/config-mgmt-xe-3se-cat3850-book/cm-config-files.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987552.57/warc/CC-MAIN-20150728002307-00172-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 364250079,
+    "recordOffset": 364217975,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "DETAILED STEPS 6.\u00a0\u00a0\u00a0 Router#copysystem:running-confignvram:startup-config 5.\u00a0\u00a0\u00a0 end 4.\u00a0\u00a0\u00a0 service config 3.\u00a0\u00a0\u00a0 boot network {ftp:[[[//[username [:password ]@]location ]/directory ]/filename ] | rcp:[[[//[username@]location ]/directory ]/filename ] | tftp:[[[//location ]/directory ]/filename ]} 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS To configure the Cisco IOS software to download a network configuration file from a server at startup, complete the tasks in this section: Configuring the Router to Download the Network Configuration File Configuration register is 0x010F Current CONFIG_FILE variable = slot0:config2 CONFIG_FILE variable = nvram: BOOT variable = slot0:rsp-boot-m Router# show bootvar [ok] Router# copy system:running-config nvram:startup-config Router(config)# end Router(config)# boot config slot0:config2 Router# configure terminal Router# copy system:running-config slot0:config2   The following example copies the running configuration file to the first PCMCIA slot of the RSP card in a Cisco 7500 series router. This configuration is then used as the startup configuration when the system",
+    "textAfterTable": "Configuring the Router to Download the Host Configuration File To configure the Cisco IOS software to download a host configuration file from a server at startup, complete the tasks in this section: SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 boot host {ftp:[[[//[username [:password ]@]location ]/directory ]/filename ] | rcp:[[[//[username@]location ]/directory ]/filename ] | tftp:[[[//location ]/directory ]/filename ] } 4.\u00a0\u00a0\u00a0 service config 5.\u00a0\u00a0\u00a0 end 6.\u00a0\u00a0\u00a0 copy system:running-config nvram:startup-config DETAILED STEPS \u00a0 Command or Action Purpose",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

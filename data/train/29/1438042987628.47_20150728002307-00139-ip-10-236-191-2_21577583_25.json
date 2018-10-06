@@ -1,0 +1,122 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2009-10",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "IDA",
+            ""
+        ],
+        [
+            "GP",
+            "5",
+            "5"
+        ],
+        [
+            "GS",
+            "2",
+            "2"
+        ],
+        [
+            "Dbl Dbl",
+            "1",
+            "1"
+        ],
+        [
+            "Tpl Dbl",
+            "0",
+            "0"
+        ],
+        [
+            "40 Pts",
+            "0",
+            "0"
+        ],
+        [
+            "20 Reb",
+            "0",
+            "0"
+        ],
+        [
+            "20 Ast",
+            "0",
+            "0"
+        ],
+        [
+            "Techs",
+            "0",
+            "0"
+        ],
+        [
+            "HOB",
+            ".347",
+            ".347"
+        ],
+        [
+            "Ast/TO",
+            "2.08",
+            "2.08"
+        ],
+        [
+            "Stl/TO",
+            "0.62",
+            "0.62"
+        ],
+        [
+            "FT/FGA",
+            "0.28",
+            "0.28"
+        ],
+        [
+            "W's",
+            "3",
+            "3"
+        ],
+        [
+            "L's",
+            "2",
+            "2"
+        ],
+        [
+            "Win %",
+            "0.600",
+            "0.600"
+        ],
+        [
+            "OWS",
+            "0.61",
+            "0.61"
+        ],
+        [
+            "DWS",
+            "0.08",
+            "0.08"
+        ],
+        [
+            "WS",
+            "0.69",
+            "0.69"
+        ]
+    ],
+    "pageTitle": "Patty Mills Player Profile, San Antonio Spurs, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Events Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Patrick_Mills/Summary/1632",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987628.47/warc/CC-MAIN-20150728002307-00139-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 21607219,
+    "recordOffset": 21577583,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{8906=Free Agent: UFA-2017, 8743=Draft Entry: 2009 NBA Draft, 10006=Born: Aug 11, 1988 (26 years old), 8643=Early Entry Info: 2009 Early Entrant}",
+    "TableContextTimeStampAfterTable": "{106761=* International basketball history from 2011-2012, 146049=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 6 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] [ National ] [ High School ] [ Recent News ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "0.50 0.80 1.70 0.42 0.02 0.98 0.97 5.52 2011-12 SAN 16 3 16.3 3.94 8.12 .485 1.50 3.50 .429 0.94 0.94 1.000 6.30 0.25 1.50 1.75 2.44 0.62 0.06 0.88 1.62 10.31 2012-13 SAN 58 2 11.3 1.95 4.16 .469 0.90 2.24 .400 0.28 0.33 .842 2.95 0.16 0.71 0.86 1.07 0.45 0.07 0.95 0.67 5.07 2013-14 SAN 81 2 18.9 3.81 8.22 .464 1.67 3.93 .425 0.90 1.01 .890 6.63 0.42 1.67 2.09 1.84 0.84 0.11 1.41 0.78 10.20 2014-15 SAN 51 0 15.7 2.51 6.59 .381 1.22 3.57 .341 0.65 0.78 .825 3.89 0.41 1.06 1.47 1.71 0.55 0.04 1.14 0.69 6.88 CAREER \u00a0 280 7 14.5 2.71 6.16 .439 1.15 2.94 .391 0.63 0.75 .843 4.25 0.31 1.02 1.34 1.61 0.57 0.06 1.11 0.82 7.20 NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2009-10 POR 10 0 37.7 10 24 .417 2 4 .500 4 7",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

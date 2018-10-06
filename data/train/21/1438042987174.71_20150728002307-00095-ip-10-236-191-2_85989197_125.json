@@ -1,0 +1,63 @@
+{
+    "relation": [
+        [
+            "field_name",
+            "A2W_PLLB_SP1_DIV",
+            "A2W_PLLB_SP1_CHENB",
+            "A2W_PLLB_SP1_BYPEN"
+        ],
+        [
+            "start_bit",
+            "0",
+            "8",
+            "9"
+        ],
+        [
+            "end_bit",
+            "7",
+            "8",
+            "9"
+        ],
+        [
+            "set",
+            "0x000000ff",
+            "0x00000100",
+            "0x00000200"
+        ],
+        [
+            "clear",
+            "0xffffff00",
+            "0xfffffeff",
+            "0xfffffdff"
+        ],
+        [
+            "reset",
+            "0x0",
+            "0x1",
+            "0x0"
+        ],
+        [
+            "description",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "BCM2835 registers - eLinux.org",
+    "title": "",
+    "url": "http://elinux.org/index.php?title=BCM2835_registers&redirect=no",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00095-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 86044651,
+    "recordOffset": 85989197,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 06 Jul 2015 12:57:17 GMT",
+    "textBeforeTable": "Register Regions The transformation tries to follow the formatting of the Broadcom peripheral document and also tries to provide \"some consistent\" structuring for each Register section right from the start. and transforms the defined macros into different formats (html, markdown, mediawiki) brcm_usrlib/dag/vmcsx/vcinclude/bcm2708_chip/register_map_macros.h brcm_usrlib/dag/vmcsx/vcinclude/bcm2708_chip/register_map.h This list of registers is generated from the GPU related code published by Broadcom (http://www.broadcom.com/docs/support/videocore/Brcm_Android_ICS_Graphics_Stack.tar.gz) by the script in https://github.com/msperl/rpi-registers which parses the header files in the source code by including: Preamble Back to RPi_Hardware#Components search navigation, Jump to: From eLinux.org BCM2835 registers",
+    "textAfterTable": "0x7e240000 CAM0 0x7e800000 CAM1 0x7e801000 CCP2TX 0x7e001000 CM 0x7e101000 CMI 0x7e802000 CPG 0x7e211000 DMA 0x7e007fe0 DMA0 0x7e007000 DMA1 0x7e007100 DMA2 0x7e007200 DMA3 0x7e007300 DMA4 0x7e007400 DMA5 0x7e007500 DMA6 0x7e007600 DMA7 0x7e007700 DMA8 0x7e007800 DMA9 0x7e007900 DMA10 0x7e007a00 DMA11 0x7e007b00 DMA12 0x7e007c00 DMA13 0x7e007d00 DMA14 0x7e007e00 DMA15 0x7ee05000 DPHY_CSR 0x7ee07000 DPI",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 4,
+    "headerRowIndex": 0
+}

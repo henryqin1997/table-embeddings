@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Task ID",
+            "mpls-te",
+            "ouni"
+        ],
+        [
+            "Operations",
+            "execute",
+            "execute"
+        ]
+    ],
+    "pageTitle": "Cisco IOS XR MPLS Command Reference for the Cisco XR 12000 Series Router, Release 4.1 - RSVP Infrastructure Commands [Cisco IOS XR Software (End-of-Sale)] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/xr12000/software/xr12k_r4-1/mpls/command/reference/b_mpls_cr41xr12k/b_mpls_cr41xr12k_chapter_0100.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00093-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 362369155,
+    "recordOffset": 362310440,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{2084=The protocol has been extended to signal Multiprotocol Label Switching traffic engineering (MPLS-TE) tunnels, as specified in the IETF RFC 3209, RSVP-TE: Extensions to RSVP for LSP Tunnels and Optical UNI tunnels, as specified in the Optical Internetworking Forum (OIF) document OIF2000.125.7, User Network Interface (UNI) 1.0, Signalling Specification . The RSVP implementation supports fault handling as specified in IETF RFC 3473, Generalized Multiprotocol Label Switching (GMPLS) Signaling RSVP-TE extensions. The RSVP implementation also supports cryptographic authentication and refresh overhead reduction as specified in the RFC2747, RSVP Cryptographic Authentication and RFC2961, RSVP Refresh Overhead Reduction Extensions respectively., 1248=For detailed information about MPLS concepts, configuration tasks, and examples, see Cisco\u00a0IOS\u00a0XR MPLS Configuration Guide for the Cisco\u00a0XR\u00a012000 Series Router., 2435=This module describes the commands to configure and use Resource Reservation Protocol (RSVP) . RSVP is a signaling protocol used to set up, maintain, and control end-to-end quality-of-service (QoS) reservations over IP. RSVP is specified in Internet Engineering Task Force (IETF) RFC 2205 (ftp://ftp.isi.edu/in-notes/rfc2205.txt).}",
+    "TableContextTimeStampAfterTable": "{120781=For inheritance procedures, see Cisco IOS XR MPLS Configuration Guide for the Cisco XR 12000 Series Router., 522123=The following example shows how to return the maximum acknowledgment message size to the default of 1000 bytes on POS interface 0/4/0/1:, 132078=The following example shows how to configure a lifetime of 2000 seconds for each SA in RSVP authentication configuration mode:, 379468=RSVP header information as described in RFC 2205., 128035=seconds: 1800 (30 minutes), 132591=The following example shows how to configure a lifetime of 2000 seconds for each SA in RSVP neighbor authentication configuration mode:, 505040=The following features of the IETF refresh reduction standard RFC\u00a02961 are enabled with this command:, 45480=The following example shows how to limit the total of all RSVP reservations on POS interface 0/3/0/0 to 7500 kbps, and allows each single flow to reserve no more than 1000 kbps:, 396023=Address of the upstream peer who sent us the Path message. May be the interface address or node-id depending on LSP (packet or optical)., 225137=This command was supported on the Cisco XR 12000 Series Router., 466955=(Optional) Specifies the length, in milliseconds, between scheduling intervals. Range is 250 to 2000., 133133=The following example shows how to configure a lifetime of 2000 seconds for each SA in RSVP interface authentication configuration mode:}",
+    "textBeforeTable": "Command History RSVP neighbor configuration RSVP interface configuration Global configuration Command Modes The default value is no authentication, which means that the feature is disabled. Command Default This command has no arguments or keywords. Syntax Description authentication no authentication To enter RSVP authentication mode, use the authentication command in global configuration mode, RSVP interface configuration mode, or RSVP neighbor configuration mode. To remove authentication parameters in the applicable mode, use the no form of this command. authentication (RSVP) window-size (RSVP) signalling refresh reduction summary signalling refresh reduction reliable signalling refresh reduction disable signalling refresh reduction bundle-max-size signalling refresh missed signalling refresh interval signalling rate-limit signalling prefix-filtering default-deny-action signalling prefix-filtering access-list signalling hello graceful-restart refresh misses signalling hello graceful-restart refresh interval signalling graceful-restart signalling dscp (RSVP) show rsvp session show rsvp sender show rsvp reservation show rsvp request show rsvp interface show rsvp hello instance interface-based show rsvp hello instance",
+    "textAfterTable": "Usage Guidelines To use this command, you must be in a user group associated with a task group that includes appropriate task IDs. If the user group assignment is preventing you from using a command, contact your AAA administrator for assistance. Task ID Task ID Operations mpls-te read, write ouni read, write Examples The following example shows how to enter RSVP authentication configuration mode from global configuration mode:  RP/0/0/CPU0:router# configure RP/0/0/CPU0:router(config)# rsvp authentication RP/0/0/CPU0:router(config-rsvp-auth)# The following example shows how to activate the RSVP on an interface and enter RSVP authentication configuration mode:  RP/0/0/CPU0:router# configure RP/0/0/CPU0:router(config)# rsvp interface pos 0/2/1/0 RP/0/0/CPU0:router(config-rsvp-if)# authentication RP/0/0/CPU0:router(config-rsvp-if-auth)# The following example shows how to configure the RSVP neighbor with IP address 1.1.1.1 and enter neighbor authentication configuration mode:  RP/0/0/CPU0:router# configure RP/0/0/CPU0:router(config)# rsvp neighbor 1.1.1.1 authentication RP/0/0/CPU0:router(config-rsvp-nbor-auth)# Related Commands",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

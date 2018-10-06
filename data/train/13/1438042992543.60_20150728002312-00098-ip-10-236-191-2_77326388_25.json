@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Existing Worklist Report",
+            "Unattended Tasks report",
+            "Task Cycle Time report",
+            "Task Productivity report",
+            "Task Priority Report"
+        ],
+        [
+            "Corresponding Database View",
+            "WFUNATTENDEDTASKS_VIEW",
+            "WFTASKCYCLETIME_VIEW",
+            "WFPRODUCTIVITY_VIEW",
+            "WFTASKPRIORITY_VIEW"
+        ]
+    ],
+    "pageTitle": "Introduction to Human Workflow Services",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E15586_01/integration.1111/e10224/bp_workflow.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00098-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 77386363,
+    "recordOffset": 77326388,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{49055=Section 31.1.11, \"Task Instance Attributes\", 122364=Section 27.3.12, \"How to Specify a Workflow Digital Signature Policy\" for details about specifying digital signatures and digital certificates in the Human Task Editor, 181827=For more information, see Section 27.3.10.3, \"Setting Up Reminders.\", 176838=For more information, see Section 27.3.10.5, \"Securing Notifications to Exclude Details.\", 181468=If the relativeDate is EXPIRATION, the recurrence is 2, the reminder duration is PT1D, the task expires at 3/26/2005 10:00 AM, and the task was assigned at 3/24/2005 3:00 PM, then only one reminder is sent at 3/25/2005 10:00 AM., 186494=Section 27.3.10.8, \"Sending Task Attachments with Email Notifications\", 181060=If the relativeDate is EXPIRATION, the recurrence is 2, the reminder duration is PT1D, and the task expires at 3/26/2005 10:00 AM, then reminders are sent at 3/24/2005 10:00 AM and 3/25/2005 10:00 AM if the task was assigned before 3/24/2005 10:00 AM., 174901=For more information, see Section 27.3.10.7, \"Making Email Messages Actionable.\", 162704=The actions for which a task notification can be sent are described in Section 27.3.10.1, \"Notifying Recipients of Changes to Task Status.\", 162900=Notifications can be sent to users involved in the task in various capacities. These users are described in Section 27.3.10.1, \"Notifying Recipients of Changes to Task Status.\", 180650=If the relativeDate is ASSIGNED, the recurrence is EVERY, the reminder duration is PT1D, and the task is assigned at 3/24/2005 10:00 AM, then reminders are sent at 3/25/2005 10:00 AM, 3/26/2005 10:00 AM, 3/27/2005 10:00 AM, and so on until the user acts on the task., 163470=Section 27.3.10, \"How to Specify Participant Notification Preferences\" to configure task notifications in the Human Task Editor}",
+    "lastModified": "Thu, 20 Sep 2012 17:24:37 GMT",
+    "textBeforeTable": "Table 31-22 Report Views This section describes database views that enable queries against the Oracle workflow services schema to receive reports. Table 31-22 lists the reports exposed in Oracle BPM Worklist and the database views corresponding to these reports. 31.8 Database Views for Oracle Workflow For more information about IWorkflowConstants.java, see Oracle Fusion Middleware Workflow Services Java API Reference for Oracle SOA Suite. String TASK_STATE_WITHDRAWN = \"WITHDRAWN\"; String TASK_STATE_SUSPENDED = \"SUSPENDED\"; String TASK_STATE_STALE = \"STALE\"; String TASK_STATE_OUTCOME_UPDATED = \"OUTCOME_UPDATED\"; String TASK_STATE_INFO_REQUESTED = \"INFO_REQUESTED\"; String TASK_STATE_EXPIRED = \"EXPIRED\"; String TASK_STATE_ERRORED = \"ERRORED\"; String TASK_STATE_DELETED = \"DELETED\"; String TASK_STATE_COMPLETED = \"COMPLETED\"; String TASK_STATE_ASSIGNED = \"ASSIGNED\"; String TASK_STATE_ALERTED = \"ALERTED\"; The following list identifies all the task states available in a human task. The constants for all states are defined in IWorkflowConstants.java. 31.7 Task States in a Human Task java -jar ../../../modules/com.bea.core.jarbuilder_1.3.0.0.jar Generate the wlfullclient.jar as follows: cd ${bea.home}/wlserver_10.3/server/lib  The wlfullclient.jar file must be generated.   ${bea.home}/AS11gR1SOA/soa/modules/oracle.soa.workflow_11.1.1/bpm-services.jar ${bea.home}/AS11gR1SOA/soa/modules/oracle.soa.fabric_11.1.1/bpm-infra.jar ${bea.home}/AS11gR1SOA/webservices/wsclient_extended.jar",
+    "textAfterTable": "31.8.1 Unattended Tasks Report View Table 31-23 describes the WFUNATTENDEDTASKS_VIEW report view. Table 31-23 Unattended Tasks Report View Name Type TASKIDFoot\u00a01\u00a0 VARCHAR2(64) TASKNAME VARCHAR2(200) TASKNUMBER NUMBER CREATEDDATE DATE EXPIRATIONDATE DATE STATE VARCHAR2(100) PRIORITY NUMBER ASSIGNEEGROUPS VARCHAR2(2000) Footnote\u00a01\u00a0NOT NULL column For example: Query unattended tasks that have an expiration date",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

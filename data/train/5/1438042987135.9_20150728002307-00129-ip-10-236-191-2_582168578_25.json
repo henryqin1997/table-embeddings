@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "Record Type",
+            "06",
+            "07",
+            "0A",
+            "0C"
+        ],
+        [
+            "Length",
+            "4",
+            "10",
+            "10",
+            "2"
+        ],
+        [
+            "Description",
+            "number of minutes document has been edited for (stored as 4 byte int)",
+            "document creation time. See time format below",
+            "time document last revised. See time format below",
+            "Number of times document saved"
+        ]
+    ],
+    "pageTitle": "Lotus 123 - .wk4 format",
+    "title": "",
+    "url": "http://www.mettalogic.co.uk/tim/l123/l123r4.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00129-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 582183295,
+    "recordOffset": 582168578,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{821=This document is \u00a92002 by Tim Colgate. You may redistribute this document freely provided you retain the above copyright message and attribution. Please send corrections and suggestions to me.}",
+    "lastModified": "Thu, 11 Nov 2010 17:39:29 GMT",
+    "textBeforeTable": "Description of record types Before starting the description, some terms will be defined: } } ... switch (code) { } break; printf(\"error: attempted to read %d bytes, got %d\\n\", len, byt); if (byt != len) { int byt = read(0, rec, len); printf(\"Code %2X, len %5d\\n\", code, len); int len = hdr[2] + hdr[3]*256; int code = hdr[0] + hdr[1]*256; while (read(0, hdr, 4) == 4) { unsigned char rec[65536]; unsigned char hdr[4];     Some simple code to process records in the file might look like this:   For example: record type 0x1B with a length of 0x138 would be stored as: 1B 00 38 01  Summary of file format The format of a Lotus 123R4 file is a series of variable-length binary records. Each record consist of a four byte header and a variable length body. The first two bytes of the header contain the record type and bytes three and four hold the length of the body (which may be zero). As the x86 architecture is little-endian, all numbers stored in the file are stored least significant byte first.   This is a work in progress. I've described what I've found to date. I've found many bytes which always have the same value. These may be for future expansion, or are set by a feature I've never used. If you write an input filter from this document, you should check all fixed-value bytes and output a",
+    "textAfterTable": "01 End Section 07 column width 13 Cells to Format 16 Text 17 long double 18 encoded number 19 Formula 1A Formula result if text 1B Styles etc. 1B - subtype B0 36 sheet name 1B - subtype D7 07 row height 1B - subtype E6 0F background style 1B - subtype E7 32 named style 1B - subtype F0 0F text style 00 - Start Section Length: 26 bytes This record appears twice in a file (it may appear a third time - see Description of document info fields - but has a different meaning in that case). The first time this record appears, bytes[12,13] contain the number of occasions on which the workbook was edited. Somewhere in this record is probably a Lotus version number. I find bytes[0..3] always contain: 02 10 04 00. 01 - End Section Length: 0 bytes This record appears twice in a file (it may appear a third time - see Description of document info fields - but has a different meaning in that case). This record has no body. 07 - column width Length:",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

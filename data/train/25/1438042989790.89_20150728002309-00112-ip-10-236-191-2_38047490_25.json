@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "CWE-ID",
+            "89",
+            "209",
+            "74",
+            "20",
+            "390",
+            "697",
+            "713",
+            "707"
+        ],
+        [
+            "Weakness Name",
+            "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+            "Information Exposure Through an Error Message",
+            "Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')",
+            "Improper Input Validation",
+            "Detection of Error Condition Without Action",
+            "Insufficient Comparison",
+            "OWASP Top Ten 2007 Category A2 - Injection Flaws",
+            "Improper Enforcement of Message or Data Structure"
+        ],
+        [
+            "Weakness Relationship Type",
+            "Targeted",
+            "Targeted",
+            "Secondary",
+            "Secondary",
+            "Secondary",
+            "Secondary",
+            "Secondary",
+            "Secondary"
+        ]
+    ],
+    "pageTitle": "CAPEC - CAPEC-7: Blind SQL Injection (Version 2.6) \ufeff",
+    "title": "",
+    "url": "http://capec.mitre.org/data/definitions/7.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00112-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 38063884,
+    "recordOffset": 38047490,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{72488=This Web site is sponsored and managed by The MITRE Corporation to enable stakeholder collaboration. Copyright \u00a9 2007 - 2015, The MITRE Corporation. CAPEC and the CAPEC logo are trademarks of The MITRE Corporation., 45111=CVE-2006-4705}",
+    "textBeforeTable": "Attack Motivation-Consequences Strong input validation - All user-controllable input must be validated and filtered for illegal characters as well as SQL content. Keywords such as UNION, SELECT or INSERT must be filtered in addition to characters such as a single-quote(') or SQL-comments (--) based on the context in which they appear. Security by Obscurity is not a solution to preventing SQL Injection. Rather than suppress error messages and exceptions, the application must handle them gracefully, returning either a custom error page or redirecting the user to a default page, without revealing any information about the database or the application internals. Solutions and Mitigations The only indicators of successful Blind SQL Injection are the application or database logs that show similar queries with slightly differing logical conditions that increase in complexity over time. However, this requires extensive logging as well as knowledge of the queries that can be used to perform such injection and return meaningful information from the database.",
+    "textAfterTable": "Injection Vector User-controllable input to the application Payload SQL statements intended to bypass checks or retrieve information about the database Activation Zone Back-end database Payload Activation Impact The injected SQL statements are such that they result in a true/false query to the database. If the database evaluates a statement to be logically true, it responds with the requested data. If the condition is evaluated to be logically false, an error is returned. The attacker modifies the Boolean condition each time to gain information from the database. Related Weaknesses",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

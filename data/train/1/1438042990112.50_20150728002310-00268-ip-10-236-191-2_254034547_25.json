@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "xctx",
+            "attr",
+            "ostream"
+        ],
+        [
+            "In/Out",
+            "IN",
+            "IN",
+            "IN"
+        ],
+        [
+            "Description",
+            "XML context",
+            "attribute node",
+            "output stream object"
+        ]
+    ],
+    "pageTitle": "Attr Interface",
+    "title": "",
+    "url": "http://web.stanford.edu/dept/itss/docs/oracle/10g/appdev.101/b10789/dom_c001.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.50/warc/CC-MAIN-20150728002310-00268-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 254042749,
+    "recordOffset": 254034547,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 17 May 2004 17:05:06 GMT",
+    "textBeforeTable": "xmlattrnode *attr) xmlctx *xctx, oratext* XmlDomGetAttrLocal(  Syntax  A length-encoded version is available as XmlDomGetAttrURILen which returns the local name as a pointer and length, for use if the data is known to use XMLType backing store. Returns an attribute's namespace local name (in the data encoding). If the attribute's name is not fully qualified (has no prefix), then the local name is the same as the name. XmlDomGetAttrLocal    Sets an attribute value stream style (chunked). XmlDomSetAttrValueStream Set an attribute's value. XmlDomSetAttrValue Return an attribute's \"owning\" element. XmlDomGetOwnerElem Get attribute value stream-style,i.e.chunked. XmlDomGetAttrValueStream Return attribute's value as length-encoded string. XmlDomGetAttrValueLen Return attribute's value as NULL-terminated string. XmlDomGetAttrValue Returns an attribute's namespace URI as length-encoded string. XmlDomGetAttrURILen Returns an attribute's namespace URI as NULL-terminated string.",
+    "textAfterTable": "See Also: XmlDomGetAttrLocalLen, XmlDomGetAttrName, XmlDomGetAttrURI, XmlDomGetAttrPrefix XmlDomGetAttrLocalLen Returns an attribute's namespace local name (in the data encoding). If the attribute's name is not fully qualified (has no prefix), then the local name is the same as the name. A NULL-terminated version is available as XmlDomGetAttrLocal which returns the local name as NULL-terminated string. If the backing store is known to be XMLType, then the attribute's data will be stored internally as length-encoded. Using the length-based GetXXX functions will avoid having to copy and NULL-terminate the data. If both the input buffer is non-NULL and the input buffer length is nonzero, then the value will be stored in the input buffer. Else, the implementation will return its own buffer. If the actual length is greater than buflen, then a truncated value will be copied into the buffer and len will return the actual length. Syntax oratext* XmlDomGetAttrLocalLen( xmlctx *xctx, xmlattrnode *attr, oratext *buf, ub4 buflen, ub4 *len)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

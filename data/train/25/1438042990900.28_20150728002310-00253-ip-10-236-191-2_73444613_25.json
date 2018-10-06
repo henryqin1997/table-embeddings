@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "c",
+            "name",
+            "value"
+        ],
+        [
+            "Description",
+            "ID number of the cursor from which to get the values.",
+            "Name of the variable for which you are retrieving the value.",
+            "Single row option: Returns the value of the variable for the specified position. Oracle raises the exception ORA-06562, inconsistent_type, if the type of this output parameter differs from the actual type of the value, as defined by the call to BIND_VARIABLE. Array option: Local variable that has been declared . For bulk operations, value is an OUT NOCOPY parameter."
+        ]
+    ],
+    "pageTitle": "DBMS_SQL",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B28359_01/appdev.111/b28419/d_sql.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990900.28/warc/CC-MAIN-20150728002310-00253-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73476439,
+    "recordOffset": 73444613,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 09 Jul 2015 23:29:26 GMT",
+    "textBeforeTable": "Table 122-26 VARIABLE_VALUE Procedure Parameters Parameters pragma restrict_references(variable_value,RNDS,WNDS);  Pragmas Varchar2_Table Urowid_Table Timestamp_With_Time_Zone_Table Timestamp_With_ltz_Table; Timestamp_Table Time_With_Time_Zone_Table Time_Table Number_Table Interval_Year_To_Month_Table Interval_Day_To_Second_Table Date_Table Clob_Table Blob_Table Bfile_Table Binary_Float_Table Binary_Double_Table  For bulk operations, <table_type> can be: value OUT NOCOPY <table_type>); name IN VARCHAR2, c IN INTEGER, DBMS_SQL.VARIABLE_VALUE (  The following syntax enables the VARIABLE_VALUE procedure to accommodate bulk operations: value OUT ROWID); name IN VARCHAR2, c IN INTEGER, DBMS_SQL.VARIABLE_VALUE_ROWID ( value OUT RAW); name IN VARCHAR2, c IN INTEGER, DBMS_SQL.VARIABLE_VALUE_RAW ( value OUT CHAR CHARACTER SET ANY_CS); name IN VARCHAR2, c IN INTEGER, DBMS_SQL.VARIABLE_VALUE_CHAR (  For variables containing CHAR, RAW, and ROWID data, you can use the following variations on the syntax: Opaque types REFs collections (VARRAYs and nested tables) user-defined object types YMINTERVAL_UNCONSTRAINED VARCHAR2 CHARACTER SET ANY_CS UROWID TIMESTAMP_UNCONSTRAINED TIMESTAMP_TZ_UNCONSTRAINED TIMESTAMP_LTZ_UNCONSTRAINED TIME_UNCONSTRAINED TIME_TZ_UNCONSTRAINED NUMBER DSINTERVAL_UNCONSTRAINED DATE CLOB CHARACTER SET ANY_CS BLOB BFILE BINARY_FLOAT BINARY_DOUBLE  Where <datatype> can be any one of the following types: value OUT NOCOPY <datatype>); name IN VARCHAR2, c IN INTEGER, DBMS_SQL.VARIABLE_VALUE (  Syntax This procedure returns the value of the named variable for a given cursor. It is used to return the values of bind variables inside PL/SQL blocks or DML statements with returning clause. VARIABLE_VALUE Procedures   / END; CLOSE src_cur; -- Close cursor END IF; END LOOP; DBMS_OUTPUT.PUT_LINE(empnos(i) || ' ' || depts(i)); FOR i IN 1 .. empnos.COUNT",
+    "textAfterTable": "Scripting on this page enhances content navigation, but does not change the content in any way.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

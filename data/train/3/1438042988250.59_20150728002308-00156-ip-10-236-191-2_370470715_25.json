@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Release",
+            "Release 3.2.2",
+            "Release 3.4.0"
+        ],
+        [
+            "Modification",
+            "This command was introduced and is supported only on the 4-port OC-192c/STM-64c POS/DPT PLIM.",
+            "This command was first supported on the 16-port OC-48c/STM-16c POS/DPT PLIM."
+        ]
+    ],
+    "pageTitle": "Cisco IOS XR Interface and Hardware Component Command Reference for the Cisco CRS Router, Release 4.2.x - SRP Commands on the Cisco IOS XR Software [Cisco Carrier Routing System] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/crs/software/crs_r4-2/interfaces/command/reference/b_interfaces_cr42crs/b_interfaces_cr42crs_chapter_010000.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988250.59/warc/CC-MAIN-20150728002308-00156-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 370502703,
+    "recordOffset": 370470715,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{120224=Last received topology packet 00:00:04}",
+    "textBeforeTable": "Syntax Description node-id } interface-path-id | location srp { interface counters srp clear To clear the SRP counters, use the clear srp counters command in EXEC mode. clear srp counters srp topology-timer srp shutdown srp rate-limit srp priority-threshold srp manual-switch srp mac-reject srp mac-count srp ips wtr-timer srp ips timer srp ips request forced-switch srp ips delay trigger-keepalive show srp show controllers srp interface srp hw-module port clear srp counters Throughout the remainder of this publication, the term SRP is used to describe features related to the DPT product family. Note SRP is a MAC-layer protocol developed by Cisco and is used in conjunction with Cisco DPT products. DPT products deliver scalable Internet service, reliable IP-aware optical transport, and simplified network operations. These solutions allow you to scale and distribute your IP services across a reliable optical packet ring infrastructure. This module provides command line interface (CLI) commands for configuring Spatial Reuse",
+    "textAfterTable": "Command Default No default behavior or values Command Modes EXEC Command History Release Modification Release 3.2.2 This command was introduced and is supported only on the 4-port OC-192c/STM-64c POS/DPT PLIM. Release 3.4.0 This command was introduced on the 16-port OC-48c/STM-16c POS/DPT PLIM. Usage Guidelines For the interface-path-id argument, use the following guidelines: If specifying a physical interface, the naming notation is rack/slot/module/port. The slash between values is required as part of the notation. An explanation of each component of the naming notation is as follows: rack: Chassis number of the rack. slot: Physical slot number of the line card. module: Module number. A physical layer interface module (PLIM) is always 0.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

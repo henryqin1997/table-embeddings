@@ -1,0 +1,58 @@
+{
+    "relation": [
+        [
+            "Date",
+            "May 16, 2003",
+            "Apr 24, 2007",
+            "May 29, 2007",
+            "Aug 10, 2010",
+            "Sep 20, 2010",
+            "Sep 22, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "CC",
+            "CC",
+            "CC",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Certificate of correction",
+            "Certificate of correction",
+            "Certificate of correction",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: CISCO TECHNOLOGY, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:WEN-HSIUNG, WEN-HSIUNG;WU, FANG;PELTON, GREGORY D.;REEL/FRAME:014095/0009;SIGNING DATES FROM 20030515 TO 20030516",
+            "",
+            "",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8"
+        ]
+    ],
+    "pageTitle": "Patent US7194137 - Variable length coding method and apparatus for video compression - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7194137?dq=Xerox+%2B+%22centroid",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00164-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 473649031,
+    "recordOffset": 473601895,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6640=FIG. 3 shows the length of each codeword for a common 2-D VLC used for the H.261 standard. The MPEG-1 and MPEG-2 2D-VLC tables are similar to that for H.261. Only the 113 most likely-to-occur symbols (runlength, amplitude-level) are represented. MPEG-1 and MPEG-2 use similar tables. In MPEG-1, the non-common events are encoded by 20 bits or 28 bits. The escape symbol is 6 bits, followed by a code for the runlength of zeroes followed by the amplitude level code. The 20-bit escape codewords describe levels in the range [\u2212127, +127] while the 28-bit double escape codewords have a range of [\u2212255, +255]. MPEG-2 increases the span to the full dynamic range of quantized inverse DCT coefficients, [\u22122047, +2047] and simplifies the escape mechanism with a single representation for such an event. The total length of the MPEG-2 escape codeword is 24 bits (6-bit escape code followed by a 6-bit runlength value and 12-bit amplitude level code).}",
+    "TableContextTimeStampAfterTable": "{146750=The quantity Si-j-k in this case is the statistic for a run of k 0-amplitudess to be followed by j repeats of the sequence i. Therefore, S101-3-4 is the sequence of coefficient-amplitudes 000101101 which is four 0's followed by two repeats of the sequence 101., 59179=Because of the widespread use of image coding, many patents have been issued on different forms of VLC. U.S. Pat. No. 4,698,672 issued Oct. 6, 1987 to Wen-hsiung Chen, one of the inventors of the present invention, for example described one form of a two-dimensional variable length coding method., 168366=1CT C11001-1-1 C1001-1-1 3 CT 3C4 EOB, 60848=Extensions and variations to the common 2D-VLC method are known. For example, the ITU H.263 compression standard defines one such variation sometimes called three-dimensional VLC (3D-VLC). See PCT patent publication WO 9318616 published Sep. 16, 1993 titled PICTURE DATA ENCODING METHOD (or its U.S. equivalent, U.S. Pat. No. 5,579,413 titled PICTURE DATA ENCODING METHOD) and also the ITU-T H.263 standard. In 3D-VLC, each symbol (\u201cevent\u201d) is a triplet (LAST, RUN, LEVEL) that includes: LAST, a binary flag that indicates whether or not the current non-zero amplitude-value is the last non-zero coefficient in the block, RUN, the runlength of zero-value coefficients that precede the current non-zero amplitude, i.e., the number of zeroes since the last non-zero coefficient-amplitude, and LEVEL, the current non-zero coefficient-amplitude value. Thus, there is no need for a separate EOB codeword; whether or not the non-zero coefficient is the last one is incorporated into the event. U.S. Pat. No. 5,579,413 is incorporated herein by reference.}",
+    "textBeforeTable": "Patent Citations Thus, while there has been described what is believed to be the preferred embodiments of the invention, those skilled in the art will recognize that other and further modifications may be made thereto without departing from the spirit of the invention, and it is intended to claim all such changes and modifications as fall within the scope of the invention. Note also that the present invention does not depend on the particular type of VLC used, and can work, for example, with Huffman coding and with arithmetic coding methods. Furthermore, while embodiments have been described that used fixed encoding for the events based on assumed or a-priori likelihoods of occurrence of the events (also called the symbols), i.e., the likelihoods of occurrence of the events do not change, other embodiments use adaptive encoding, i.e., the encoding is changeable according to statistical data such as histograms collected from the actual coefficients. While one embodiment described herein includes a memory that stores a coding table, other embodiments store the coding information in the form of a data structure other than a table, e.g., a structure that includes a tree. Other data structures also may be used. Similarly, while one embodiment described herein includes a memory that stores a decoding, other embodiments store the decoding information in the form of a data structure other than a table for the decoding. Note also that the term",
+    "textAfterTable": "Jun 26, 1990 Telettra Telefonia Elettronica E Radio Spa Variable length code and devices for high frequency transmission US4985700 Feb 22, 1989 Jan 15, 1991 Canon Kabushiki Kaisha Variable-length coding/decoding device US4985766 Sep 23, 1988 Jan 15, 1991 British Telecommunications Public Limited Company Video coder US5006930 Mar 6, 1990 Apr 9, 1991 RAI Radiotelevisions Italiano, S.p.A. Device for reducing the redundancy in blocks of digital video data in DCT encoding US5045938 Jul 24, 1990 Sep 3, 1991 Victor Company Of Japan, Ltd. Method and apparatus for encoding using variable length codes US5062152 Jul 20, 1988 Oct 29, 1991 British Telecommunications Public Limited Company Pcm signal coding US5086488 Aug 9, 1990 Feb 4, 1992 Mitsubishi Denki Kabushiki Kaisha Transform coding apparatus US5128758 Jun 2, 1989 Jul 7, 1992 North American Philips Corporation Method and apparatus for digitally processing a high definition television augmentation signal US5136376 Oct 12,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

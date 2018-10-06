@@ -1,0 +1,84 @@
+{
+    "relation": [
+        [
+            "Select Type",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE"
+        ],
+        [
+            "Table",
+            "session_activity",
+            "user",
+            "user_profile",
+            "user_option"
+        ],
+        [
+            "Type",
+            "range",
+            "eq_ref",
+            "eq_ref",
+            "eq_ref"
+        ],
+        [
+            "Possible Keys",
+            "view_date",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY"
+        ],
+        [
+            "Key",
+            "view_date",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY"
+        ],
+        [
+            "Key Len",
+            "4",
+            "4",
+            "4",
+            "4"
+        ],
+        [
+            "Ref",
+            "",
+            "jfuqua_xenforo.session_activity.user_id",
+            "jfuqua_xenforo.user.user_id",
+            "jfuqua_xenforo.user.user_id"
+        ],
+        [
+            "Rows",
+            "136",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Extra",
+            "Using where",
+            "",
+            "Using where",
+            "Using where"
+        ]
+    ],
+    "pageTitle": "XenForo Debug Output",
+    "title": "",
+    "url": "http://gotitans.com/forums/the-lounge.10/page-5?_debug=1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00142-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 104856038,
+    "recordOffset": 104847836,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 29 Jul 2015 22:09:19 GMT",
+    "textBeforeTable": "Run Time: 0.001575 WHERE data_key IN ('options', 'languages', 'contentTypes', 'codeEventListeners', 'deferredRun', 'simpleCache', 'addOns', 'defaultStyleProperties', 'routesPublic', 'routeFiltersIn', 'routeFiltersOut', 'nodeTypes', 'bannedIps', 'discouragedIps', 'styles', 'displayStyles', 'userBanners', 'smilies', 'bbCode', 'threadPrefixes', 'trophyUserTitles', 'reportCounts', 'moderationCounts', 'userModerationCounts', 'notices', 'userFieldsInfo') FROM xf_data_registry SELECT data_key, data_value   Queries (29, time: 0.0453s, 19.6%) Memory: 16.6270 MB (Peak: 19.6040 MB) Page Time: 0.2310s",
+    "textAfterTable": "\u00a0  SELECT event.* , category.*, user.*, user_profile.*, IF(user.username IS NULL, event.username, user.username) AS username FROM xf_nflj_sportsbook_event AS event LEFT JOIN xf_nflj_sportsbook_category AS category ON (category.category_id = event.category_id) LEFT JOIN xf_user AS user ON (user.user_id = event.user_id) LEFT JOIN xf_user_profile AS user_profile ON (user_profile.user_id = event.user_id) WHERE (event.category_id IN ('1')) AND (event.date_close < 1438380558) AND (event.event_status = 'open') ORDER BY event.date_close ASC LIMIT 5 Run Time: 0.001570 Select Type Table Type Possible Keys Key Key Len Ref Rows Extra SIMPLE event range category_date_edit category_date_edit 4 \u00a0 167 Using index condition; Using where; Using filesort SIMPLE category eq_ref PRIMARY PRIMARY 4 jfuqua_xenforo.event.category_id 1 \u00a0 SIMPLE user eq_ref PRIMARY PRIMARY 4 jfuqua_xenforo.event.user_id 1 \u00a0 SIMPLE user_profile eq_ref PRIMARY PRIMARY 4 jfuqua_xenforo.event.user_id 1 \u00a0  SELECT event.* , category.*, user.*, user_profile.*, IF(user.username IS NULL, event.username, user.username) AS username FROM xf_nflj_sportsbook_event AS event LEFT JOIN xf_nflj_sportsbook_category AS category ON (category.category_id = event.category_id) LEFT JOIN xf_user AS user ON (user.user_id = event.user_id) LEFT JOIN xf_user_profile AS user_profile ON (user_profile.user_id = event.user_id) WHERE (event.category_id IN ('1')) AND (event.event_status IN ('open','closed')) ORDER BY event.date_edit DESC LIMIT 5 Run Time: 0.002031 Select Type Table Type Possible Keys Key Key Len Ref Rows Extra SIMPLE event range category_date_edit category_date_edit 4 \u00a0 167 Using where SIMPLE category eq_ref PRIMARY PRIMARY 4 jfuqua_xenforo.event.category_id 1 \u00a0 SIMPLE user eq_ref PRIMARY",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

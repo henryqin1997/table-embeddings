@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2008-05-31T00:00:00",
+            "2008-12-09T00:00:00",
+            "2008-12-11T00:00:00",
+            "2008-12-12T00:00:00",
+            "2009-09-01T00:00:00",
+            "2011-07-26T00:00:00"
+        ],
+        [
+            "Description",
+            "1. Lidar, GPS, and IMU data was processed together using lidar processing software. 2. The lidar data set for each flight line was checked for project area coverage and lidar post spacing was checked to ensure it meets project specifications. 3. The lidar collected at the calibration area and project area were used to correct the rotational, atmospheric, and vertical elevation differences that are inherent to lidar data. 4. Intensity rasters were generated to verify that intensity was recorded for each lidar point. 5. Lidar data was transformed to the specified project coordinate system. 6. By utilizing the ground survey data collected at the calibration site and project area, the lidar data was vertically biased to the ground. 7. Comparisons between the biased lidar data and ground survey data within the project area were evaluated and a final RMSE value was generated to ensure the data meets project specifications. 8. Lidar data in overlap areas of project flight lines were trimmed and data from all swaths were merged into a single data set. 9. The data set was trimmed to the digital project boundary including an additional buffer zone of 50 feet (buffer zone assures adequate contour generation from the DEM). 10.The resulting data set is referred to as the raw lidar data.",
+            "1. The raw lidar data was processed through a minimum block mean algorithm, and points were classified as either bare earth or non-bare earth. 2. User developed \"macros\" that factor mean terrain angle and height from the ground were used to determine bare earth point classification. 3. The next phase of the surfacing process was a 2D edit procedure that ensures the accuracy of the automated feature classification. 4. Editors used a combination of imagery, intensity of the lidar reflection, profiles, and tin-editing software to assess points. 5. The lidar data was filtered, as necessary, using a quadric error metric to remove redundant points. This method leaves points where there is a change in the slope of surfaces (road ditches) and eliminates points from evenly sloped terrain (flat field) where the points do not affect the surface. 6. The algorithms for filtering data were utilized within Fugro EarthData's proprietary software and commercial software written by TerraSolid. 7. The flight line overlap points were merged back into filtered data set for delivery product. 8. The point cloud data were delivered tiled in LAS 1.1 format; class 12 - flight line overlap points, class 9 - points in water, class 8 - model-key points, class 2 - ground points, and class 1 - all other.",
+            "Lidar intensity images were generated in TerraSolid software. The images are then brought up in Photoshop to see if a curve is needed to modify the radiometrics and to ensure they match from group to group. Along with looking for missing coverage and clipping to the boundary, the following steps are run in Photoshop: 1. Flip 0 values to 1 2. Change 3-band images to 1 band 3. Restore GeoTIFF headers. The intensity images were delivered in GeoTIFF format.",
+            "Tiled lidar LAS datasets are imported into a single multipoint geodatabase featureclass. Only Ground and Model-Keypoint are imported. An ArcGIS geodatabase terrain feature class is created using the terrain creation dialogue provided through ArcCatalog. The multipoint featureclass is imported as mass point features in the terrain. An overall tile boundary for the county is input as a soft clip feature for the terrain. The terrain pyramid level resolutions and scales are automatically calculated based on the point coverage for the county.",
+            "The NOAA Coastal Services Center (CSC) received files in LAS format. The files contained LiDAR intensity and elevation measurements. CSC performed the following processing on the data to make it available within Digital Coast: 1. The data were converted from State Plane, SPCS Zone 3900 coordinates to geographic coordinates. 2. The data were converted from NAVD88 heights to ellipsoid heights using Geoid03. 3. The LAS header fields were sorted by latitude and updated.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Components NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2008_SC_Laurens_m506.xml",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2008_SC_Laurens_m506.xml&view=ISO19115Components-HTMLTable&title=Components%20NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2008_SC_Laurens_m506.xml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990900.28/warc/CC-MAIN-20150728002310-00233-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 621116832,
+    "recordOffset": 621100438,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:2008_SC_Laurens_m506Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "Aerial Acquisition of Lidar Data for 16 counties in the State of South Carolina 2008-02-15 1 Laurens County, SC - Digital Orthophotography 1 Lidar Dataset Supplemental Information 2 None 1 North American Datum 1983 2007-01-19 1 South Carolina Lidar, Quality Control Surveys, 16 Counties 2008-01-31 Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 1 Citation URL",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

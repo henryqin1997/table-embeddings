@@ -1,0 +1,93 @@
+{
+    "relation": [
+        [
+            "name",
+            "id",
+            "rule",
+            "type",
+            "att",
+            "val",
+            "description"
+        ],
+        [
+            "type",
+            "unsigned int",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        [
+            "size",
+            "10",
+            "255",
+            "255",
+            "255",
+            "128",
+            "255"
+        ],
+        [
+            "default",
+            "default",
+            "default",
+            "default",
+            "default",
+            "default",
+            "default"
+        ],
+        [
+            "null",
+            "no",
+            "no",
+            "no",
+            "yes",
+            "yes",
+            "no"
+        ],
+        [
+            "key",
+            "primary",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "extra attributes",
+            "autoincrement",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "description",
+            "unique ID",
+            "Domain policy rule name which is equal to the URI as published in the domain policy NAPTRs.",
+            "Domain policy rule type. In the case of federation names, this is \"fed\". For standard referrals according to draft-lendl-speermint-technical-policy-00, this is \"std\". For direct domain lookups, this is \"dom\". Default value is \"type\".",
+            "It contains the AVP's name. If the rule stored in this row triggers, than dp_can_connect() will add an AVP with that name.",
+            "It contains the values for AVPs created by dp_can_connect(). Default value is \"val\"",
+            "Comment about the rule"
+        ]
+    ],
+    "pageTitle": "openSIPS | Documentation / DB schema - ver 1.4",
+    "title": "",
+    "url": "http://www.opensips.org/Documentation/Install-DBSchema-1-4",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00091-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 629685379,
+    "recordOffset": 629665655,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{5311=Copyright \u00a9 2007 OpenSIPS development Team}",
+    "textBeforeTable": "Table 1-1. Table \"acc\" This table is used by the ACC module for keeping track of missed calls. This table is similar to the 'acc' table. More information is available at: http://www.opensips.org/html/docs/modules/1.4.x/acc.html missed_calls This table is used by the ACC module to report on transactions - accounted calls. More information is available at: http://www.opensips.org/html/docs/modules/1.4.x/acc.html acc Chapter 1. Accounting Table \"location\" indexes 27-2. Table \"location\" 27-1. Table \"globalblacklist\" indexes 26-4. Table \"globalblacklist\" 26-3. Table \"userblacklist\" indexes 26-2. Table \"userblacklist\" 26-1. Table \"uri\" indexes 25-2. Table \"uri\" 25-1. Table \"version\" 24-1. Table \"speed_dial\" indexes 23-2. Table \"speed_dial\" 23-1. Table \"sip_trace\" indexes 22-2. Table \"sip_trace\" 22-1. Table \"rls_watchers\" indexes 21-4. Table \"rls_watchers\" 21-3. Table \"rls_presentity\" indexes 21-2. Table \"rls_presentity\" 21-1. Table \"aliases\" indexes 20-2. Table \"aliases\" 20-1. Table \"pua\" 19-9. Table \"xcap\" indexes 19-8. Table \"xcap\" 19-7. Table \"watchers\" indexes 19-6. Table \"watchers\"",
+    "textAfterTable": "sip_reason string 32 '' no \u00a0 \u00a0 SIP reply reason time datetime not specified default no \u00a0 \u00a0 Date and time when this record was written. Table 1-2. Table \"acc\" indexes name type links description callid_idx default callid Table 1-3. Table \"missed_calls\" name type size default null key extra attributes description id unsigned int 10 default no primary autoincrement unique ID method string 16 '' no \u00a0 \u00a0 A method is the primary function that a request is meant to invoke on a server. from_tag string 64 '' no \u00a0 \u00a0 The tag parameter serves as a general mechanism to identify a dialog, which is the combination of the Call-ID along with two tags, one from participant",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

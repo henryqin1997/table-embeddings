@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jul 15, 2003",
+            "Feb 5, 2010",
+            "Jun 22, 2010",
+            "Jun 24, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: SAMSUNG ELECTRONICS CO., LTD., KOREA, REPUBLIC OF Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:KIM, SOENG-HUN;PARK, JOON-GOO;CHOI, SUNG-HO;AND OTHERS;REEL/FRAME:014263/0912 Effective date: 20030617",
+            "Owner name: QUALCOMM INCORPORATED,CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:SAMSUNG ELECTRONICS CO., LTD;REEL/FRAME:023905/0498 Effective date: 20091127 Owner name: QUALCOMM INCORPORATED, CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:SAMSUNG ELECTRONICS CO., LTD;REEL/FRAME:023905/0498 Effective date: 20091127",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8"
+        ]
+    ],
+    "pageTitle": "Patent US7171212 - Method for setting up signaling connection in a mobile communication system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7171212?dq=5,072,412",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00112-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 482348655,
+    "recordOffset": 482311646,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{33109=This application claims priority under 35 U.S.C. \ufffd 119 to an application entitled \u201cMethod for Setting Up Signaling Connection in a Mobile Communication System\u201d filed in the Korean Intellectual Property Office on May 17, 2002 and assigned Ser. No. 2002-27514, the contents of which are incorporated herein by reference.}",
+    "textBeforeTable": "Patent Citations While the invention has been shown and described with reference to a certain preferred embodiment thereof, it will be understood by those skilled in the art that various changes in form and details may be made therein without departing from the spirit and scope of the invention as defined by the appended claims. As described above, the present invention can simplify a signaling connection procedure required to provide an MBMS service in a mobile communication system, thereby efficiently providing the MBMS service. Also, the invention simplifies a procedure for providing an MBMS service in a mobile communication system, thereby contributing to a decrease in a load of the mobile communication system. In addition, steps 913 to 918 are applied even to transmission of a downstream MBMS-related message transmitted from the SGSN to the RNC. That is, if the SGSN receives an MBMS-related message from a transit N/W, the SGSN first performs an MBMS identifier search operation, thereby recognizing a related SGSN Service Context. Thereafter, the SGSN forms the MBMS-related message as an SCCP message according to Iu signaling connection info of the recognized SGSN Service Context, and transmits the SCCP message to the RNC. The RNC recognizes a related RNC Service Context using LR_RNC and LR_CN of the SCCP message, and updates the recognized RNC Service Context according to information on the received MBMS-related message. For example, if the downstream MBMS-related message is",
+    "textAfterTable": "Group transmission in a packet radio network * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US7778638 * Feb 27, 2007 Aug 17, 2010 Lg Electronics Inc. Method of roaming in broadcast service and system and terminal thereof US7925258 Jul 7, 2010 Apr 12, 2011 Lg Electronics Inc. Method of roaming in broadcast service and system and terminal thereof US8103305 * Dec 13, 2004 Jan 24, 2012 Broadcom Corporation Method and system for cellular network and integrated broadcast television (TV) downlink with intelligent service control with feedback information US8140086 Mar 14, 2011 Mar 20, 2012 Wireless Technology Solutions Llc Initial connection establishment in a wireless communication system US8219084 Apr 7, 2011 Jul 10, 2012 Lg Electronics Inc. Method of roaming in broadcast service and system and terminal thereof US8243642 *",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

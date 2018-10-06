@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Engine",
+            "AlgorithmParameters",
+            "KeyAgreement",
+            "KeyFactory",
+            "KeyPairGenerator",
+            "Signature"
+        ],
+        [
+            "Algorithm Name(s)",
+            "EC",
+            "ECDH",
+            "EC",
+            "EC",
+            "NONEwithECDSA SHA1withECDSA SHA224withECDSA SHA256withECDSA SHA384withECDSA SHA512withECDSA"
+        ]
+    ],
+    "pageTitle": "Java Cryptography Architecture Oracle Providers Documentation",
+    "title": "",
+    "url": "http://docs.oracle.com/javase/8/docs/technotes/guides/security/SunProviders.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987552.57/warc/CC-MAIN-20150728002307-00341-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70588015,
+    "recordOffset": 70568286,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 03 Apr 2015 03:20:22 GMT",
+    "textBeforeTable": "The following algorithms are available in the SunEC provider: Applications can now use the standard JCA/JCE APIs to access ECC functionality without the dependency on external ECC libraries(via SunPKCS11), as was the case in the JDK 6 release. The SunEC provider implements Elliptical Curve Cryptography (ECC). ECC is emerging as an attractive public-key cryptosystem for mobile/wireless and other environments. Compared to traditional cryptosystems like RSA, ECC offers equivalent security with smaller key sizes, which results in faster computations, lower power consumption, as well as memory and bandwidth savings. The SunEC Provider Keysize ranges from 512 bits to 16,384 bits (depending on the underlying Microsoft Windows cryptographic service provider). 1024 RSA Restrictions/Comments Default Keysize Alg. Name KeyGenerator The SunMSCAPI provider uses the following default keysizes (in bits) and enforce the following restrictions: Keysize Restrictions MD5withRSA MD2withRSA NONEwithRSA SHA1withRSA SHA256withRSA SHA384withRSA SHA512withRSA Signature Windows-PRNG The name of the native pseudo-random number generation (PRNG) algorithm. SecureRandom Windows-MY The keystore type that identifies the native Microsoft Windows MY keystore. It contains the user's personal certificates and associated private keys. Windows-ROOT The keystore type that identifies the native Microsoft Windows ROOT keystore. It contains the certificates of Root certificate authorities and other",
+    "textAfterTable": "Keysize Restrictions The SunEC provider uses the following default keysizes (in bits) and enforces the following restrictions: KeyPairGenerator Alg. Name Default Keysize Restrictions/Comments EC 256 Keysize must range from 112 to 571 (inclusive). The OracleUcrypto Provider The Solaris-only security provider OracleUcrypto leverages the Solaris Ucrypto library to offload and delegate cryptographic operations supported by the Oracle SPARC T4 based on-core cryptographic instructions. The OracleUcrypto provider itself does not contain cryptographic functionality; it is simply a conduit between the Java environment and the Solaris Ucrypto library. If the underlying Solaris Ucrypto library does not support a particular algorithm, then the OracleUcrypto provider will not support it either. Consequently, at runtime, the supported algorithms consists of the intersection of those that the Solaris Ucrypto library supports and those that the OracleUcrypto provider recognizes. Note that the OracleUcrypto provider is included only in Oracle's JDK. It is not part of OpenJDK. The following algorithms are available in the OracleUcrypto provider: Engine Algorithm Name(s) Cipher AES RSA AES/ECB/NoPadding AES/ECB/PKCS5Padding AES/CBC/NoPadding AES/CBC/PKCS5Padding AES/CTR/NoPadding AES/GCM/NoPadding AES/CFB128/NoPadding AES/CFB128/PKCS5Padding RSA/ECB/PKCS1Padding RSA/ECB/NoPadding Signature MD5withRSA SHA1withRSA SHA256withRSA SHA384withRSA SHA512withRSA MessageDigest",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6",
+            "Step 7",
+            "Step 8"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Router> enable",
+            "configure terminal Example: Router# configure terminal",
+            "ethernet cfm domain domain-name level level-id Example: Router(config)# ethernet cfm domain ServiceProvider level 4",
+            "mep crosscheck mpid id vlan vlan-id [mac mac-address] Example: Router(config-ether-cfm)# mep crosscheck mpid 401 vlan 100",
+            "exit Example: Router(config-ether-cfm)# exit",
+            "ethernet cfm mep crosscheck start-delay delay Example: Router(config)# ethernet cfm mep crosscheck start-delay 60",
+            "exit Example: Router(config)# exit",
+            "ethernet cfm mep crosscheck {enable | disable} level {level-id | level-id-level-id [,level-id-level-id]} vlan {vlan-id | any | vlan-id-vlan-id [,vlan-id-vlan-id]} Example: Router# ethernet cfm mep crosscheck enable level 4 vlan 100"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Defines a CFM domain at a specified level and enters Ethernet CFM configuration mode.",
+            "Statically defines a remote MEP on a specified VLAN within the domain.",
+            "Returns the CLI to global configuration mode.",
+            "Configures the maximum amount of time that the device waits for remote MEPs to come up before the cross-check operation is started.",
+            "Returns the CLI to privileged EXEC mode.",
+            "Enables cross-checking between MEPs."
+        ]
+    ],
+    "pageTitle": "Carrier Ethernet Configuration Guide, Cisco IOS Release 12.4T - Configuring Ethernet Connectivity Fault Management in a Service Provider Network [Cisco IOS Software Releases 12.4 T] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/cether/configuration/12-4t/ce-12-4t-book/ce-cfm.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988065.26/warc/CC-MAIN-20150728002308-00188-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 370290883,
+    "recordOffset": 370232184,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{644619=ITU-T Y.1731 OAM Mechanisms for Ethernet-Based Networks, 578961=Router(config-ether-cfm)# mep crosscheck mpid 200 evc evc_100 mac 1010.1010.1010, 640785=Configuring IP SLAs Metro-Ethernet 3.0 ITU T Y.1731 Operations, 587315=Router(config-if-srv)# cfm mep domain CUSTOMER outward mpid 1001}",
+    "textBeforeTable": "DETAILED STEPS 8.\u00a0\u00a0\u00a0 ethernet cfm mep crosscheck {enable | disable} level {level-id | level-id-level-id [,level-id-level-id]} vlan {vlan-id | any | vlan-id-vlan-id [,vlan-id-vlan-id]} 7.\u00a0\u00a0\u00a0 exit 6.\u00a0\u00a0\u00a0 ethernet cfm mep crosscheck start-delay delay 5.\u00a0\u00a0\u00a0 exit 4.\u00a0\u00a0\u00a0 mep crosscheck mpid id vlan vlan-id [mac mac-address] 3.\u00a0\u00a0\u00a0 ethernet cfm domain domain-name level level-id 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS Perform this task to configure and enable cross-checking for an inward facing MEP. This task requires you to configure and enable cross-checking on two devices. This task is optional. Configuring and Enabling Cross-Checking for an Inward Facing MEP on the U PE-B",
+    "textAfterTable": "Example The following example configures cross-checking on an inward facing MEP (U-PE B)  U-PE B ethernet cfm domain ServiceProvider level 4 mep crosscheck mpid 401 vlan 100 ! ethernet cfm mep crosscheck start-delay 60 The following example enables cross-checking on an inward facing MEP (U-PE B)  U-PE B U-PEB# ethernet cfm mep crosscheck enable level 4 vlan 100 Configuring and Enabling Cross-Checking for an Outward Facing MEP on the CE-A SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 ethernet cfm domain domain-name level level-id [direction outward] 4.\u00a0\u00a0\u00a0 mep crosscheck mpid id vlan vlan-id [mac mac-address] 5.\u00a0\u00a0\u00a0 exit 6.\u00a0\u00a0\u00a0 ethernet cfm mep crosscheck start-delay delay 7.\u00a0\u00a0\u00a0 exit 8.\u00a0\u00a0\u00a0 ethernet cfm mep crosscheck",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

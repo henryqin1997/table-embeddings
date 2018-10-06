@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2007-01-01T00:00:00",
+            "2009-03-25T00:00:00",
+            "2009-07-28T00:00:00"
+        ],
+        [
+            "Description",
+            "1. Fly lidar with Optech 2050 at nominal 1.4 m point spacing. 2. Process Airborne GPS using the GrafNAV V7.50 software by Waypoint Consulting of Calgary, Alberta, Canada. 3. Process IMU data using the PosPac V4.2 software by Applanix Corporation of Richmond Hill, Ontario, Canada. 4. Reflective Surface Generation using the ASL Post Processor software by Leica Geosystems software of Terrasolid Limited of Helsinki, Finland.",
+            "The NOAA Coastal Services Center (CSC) received the files in ASCII format. The files contained Lidar elevation and intensity measurements. The data were in State Plane New York West, FIPS 3103 coordinates, horizontal units of measure of US survey feet and in NAVD88 Geoid 03 vertical datum with vertical units of measure of feet. CSC performed the following processing to the data to make it available within the Digital Coast: 1. The data were converted from NY State Plane coordinates to geographic coordinates. 2. The data were converted from NAVD88 (orthometric) heights to GRS80 (ellipsoid) heights using Geoid 03. 3. The LAS data were sorted by latitude and the headers were updated. 4. The data were filtered to remove outliers.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2007_NY_Niagara_m112.xml&view=ISO19115Components-HTMLTable",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00079-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 600620915,
+    "recordOffset": 600612713,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:2007_NY_Niagara_m112Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "Component Title Date Citation Identifier 1 2007 Federal Emergency Management Agency (FEMA) Niagara County New York Lidar 2008-08-01 1 Lidar Final Report 2 None 1 North American Datum 1983 2007-01-19 Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 1 Citation URL ftp://ftp.csc.noaa.gov/pub/crs/beachmap/qa_docs/ny/erie/Final_LiDAR_Report_Niagara_Erie.doc 1 DHS/FEMA > Federal Emergency Management Agency, U.S. Department of Homeland Security",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

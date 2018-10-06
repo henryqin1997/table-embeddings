@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Release",
+            "12.3(7)T",
+            "12.2(25)S",
+            "12.2(28)SB",
+            "12.2(25)SG",
+            "12.2(33)SRA",
+            "12.2(33)SXH",
+            "Cisco IOS XE Release 2.1",
+            "15.1(4)M"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "This command was integrated into Cisco IOS Release 12.2(25)S.",
+            "This command was integrated into Cisco IOS Release 12.2(28)SB.",
+            "This command was integrated into Cisco IOS Release 12.2(25)SG.",
+            "This command was integrated into Cisco IOS Release 12.2(33)SRA.",
+            "This command was integrated into Cisco IOS Release 12.2(33)SXH.",
+            "This command was introduced on Cisco ASR 1000 Series Routers.",
+            "The vrf vrf-name keyword and argument were added."
+        ]
+    ],
+    "pageTitle": "Cisco IOS IPv6 Command Reference - IPv6 Commands: show ipv6 na to show ipv6 pr [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipv6/command/ipv6-cr-book/ipv6-s4.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00196-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 378882027,
+    "recordOffset": 378801660,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{9981=This command was integrated into Cisco IOS XE Release 2.1 and introduced on Cisco ASR 1000 Series devices., 15316=This argument must be in the form documented in RFC 2373 where the address is specified in hexadecimal using 16-bit values between colons.}",
+    "TableContextTimeStampAfterTable": "{324503=Hello due in 0:00:06, 24251=1 to 1000, 136361=(Optional) Link-local IPv6 address of the neighbor. This argument must be in the form documented in RFC 2373 where the address is specified in hexadecimal using 16-bit values between colons., 526656=This command was implemented on Cisco ASR 1000 Series Aggregation Services Routers., 197740=last restart 00:00:15 ago (took 36 secs), 112062=Minimum LSA arrival 1000 msecs, 104209=Routing process \"ospfv3 1\" with ID 10.10.10.1, 108663=NULL Encryption SHA-1 Auth, SPI 1001, 134653=(Optional) Displays all the LSAs of the advertising router. This argument must be in the form documented in RFC 2740 where the address is specified in hexadecimal using 16-bit values between colons., 176452=Rcv Changed Type-0x2009 LSA, 407717=To display the average join-prune aggregation for the most recently aggregated 1000, 10,000, and 50,000 packets for each interface, use the show ipv6 pim join-prune statistic command in user EXEC or privileged EXEC mode., 171053=This command was introduced on Cisco ASR 1000 Series Routers., 413759=When Protocol Independent Multicast (PIM) sends multiple joins and prunes simultaneously, it aggregates them into a single packet. The show ipv6 pim join-prune statistic command displays the average number of joins and prunes that were aggregated into a single packet over the last 1000 PIM join-prune packets, over the last 10,000 PIM join-prune packets, and over the last 50,000 PIM join-prune packets.}",
+    "textBeforeTable": "Command History User EXEC Privileged EXEC Command Modes This command has no arguments or keywords. Syntax Description statistics nat ipv6 show To display Network Address Translation--Protocol Translation (NAT-PT) statistics, use the show iv6 nat statisticscommand in user EXEC or privileged EXEC mode. show ipv6 nat statistics show ipv6 protocols show ipv6 prefix-list show ipv6 port-map show ipv6 policy show ipv6 pim tunnel show ipv6 pim traffic show ipv6 pim topology show ipv6 pim range-list show ipv6 pim neighbor show ipv6 pim limit show ipv6 pim join-prune statistic show ipv6 pim interface show ipv6 pim group-map show ipv6 pim df winner show ipv6 pim df show ipv6 pim bsr show ipv6 pim anycast-RP show ipv6 ospf virtual-links show ipv6 ospf traffic show ipv6 ospf timers rate-limit show ipv6 ospf summary-prefix show ipv6 ospf statistics show",
+    "textAfterTable": "Total active translations Number of translations active in the system. This number increments by one each time a translation is created and is decremented each time a translation is cleared or times out. Displays the numbers for each type of translation. NAT-PT interfaces The interfaces, by type and number, that are configured to run NAT-PT translations. Hits Number of times the software does a translations table lookup and finds an entry. Misses Number of times the software does a translations table lookup, fails to find an entry, and must try to create one. Expired translations Cumulative count of translations that have expired since the router was booted. Related Commands Command",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,41 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "value",
+            "foreignKey"
+        ],
+        [
+            "Type",
+            "PrimaryKeyJoinColumn[]",
+            "ForeignKey"
+        ],
+        [
+            "Description",
+            "Array of column definitions for the primary key",
+            "Foreign key details if wanting to override provider default"
+        ],
+        [
+            "Default",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "DataNucleus - JPA Annotations",
+    "title": "",
+    "url": "http://www.datanucleus.org/products/accessplatform/jpa/annotations.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986148.56/warc/CC-MAIN-20150728002306-00190-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 387866223,
+    "recordOffset": 387847108,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 29 Jul 2015 01:04:00 GMT",
+    "textBeforeTable": "Annotations supported by DataNucleus are shown below. Not all have their documentation written yet. The annotations/attributes coloured in brighter green are ORM and really should be placed in XML rather than directly in the class using annotations. The annotations coloured in blue are DataNucleus extensions and should be used only where you don't mind losing implementation-independence. You have to import \"org.datanucleus.api.jpa.annotations.XXX\" where XXX is the annotation name of a DataNucleus value-added annotation You have to import \"javax.persistence.XXX\" where XXX is the annotation name of a JPA annotation JPA doesn't provide for some key JDO concepts and DataNucleus provides its own annotations for these cases. Annotations are prefixed by the @ symbol and can take properties (in brackets after the name, comma-separated) You can annotate fields or getters with field-level information. It doesn't matter which. Annotations can be added in two places - for the class as a whole, or for a field in particular. Annotations should really only be used for attributes of persistence that you won't be changing at deployment. Things such as table and column names shouldn't really be specified using annotations although it is permitted. Instead it would be better to put such information in an ORM file. You must have the persistence-api (or javax.persistence) jar in your CLASSPATH since this provides the annotations You must have the datanucleus-api-jpa jar available in your CLASSPATH. Java provides the ability to use annotations, and DataNucleus supports both JPA and JDO annotations. In this section",
+    "textAfterTable": "@PersistenceAware Class Specifies that the class is not persistent but needs to be able to access fields of persistent classes (DataNucleus extension). @IdClass Class Defines the primary key class for this class @Cacheable Class Specifies that instances of this class can be cached in the L2 cache @DatastoreId Class Defines a class as using datastore-identity (DataNucleus extension). @EntityListeners Class Specifies class(es) that are listeners for events from instances of this class @NamedQueries Class Defines a series of named JPQL queries for use in the current persistence unit @NamedQuery Class Defines a named JPQL query for use in the current persistence unit @NamedNativeQuery Class Defines a named SQL query for use in the current persistence unit @NamedNativeQueries Class Defines a series of named SQL queries for use in the current persistence unit @NamedStoredProcedureQuery Class Defines a named stored procedure query for use in the current persistence unit @NamedStoredProcedureQueries Class Defines a series of named stored procedure queries for use in the current persistence unit @SqlResultSetMapping Class Defines a result mapping for an SQL query for use in the current persistence unit @SqlResultSetMappings Class Defines a series of mappings for SQL queries for use in the current persistence unit",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

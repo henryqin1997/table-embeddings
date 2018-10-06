@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6",
+            "Step 7",
+            "Step 8"
+        ],
+        [
+            "Command or Action",
+            "UCS-A# scope fex fex-num",
+            "UCS-A/fex # create fault-suppress-task name",
+            "UCS-A/fex/fault-suppress-task # set fault-suppress-policy policy-name",
+            "UCS-A/fex/fault-suppress-task # create local-schedule",
+            "UCS-A/fex/fault-suppress-task/local-schedule # create occurrence single-one-time",
+            "UCS-A/fex/fault-suppress-task/local-schedule/single-one-time # set date month day-of-month year hour minute seconds",
+            "UCS-A/fex/fault-suppress-task/local-schedule/single-one-time # set max-duration {none | num-of-days num-of-hours num-of-minutes num-of-seconds}",
+            "UCS-A/fex/fault-suppress-task/local-schedule/single-one-time # commit-buffer"
+        ],
+        [
+            "Purpose",
+            "Enters fex mode for the specified FEX.",
+            "Creates a fault-suppress-task on the fex, and enters the fault-suppress-task mode. This name can be between 1 and 16 alphanumeric characters. You cannot use spaces or any special characters other than - (hyphen), _ (underscore), : (colon), and . (period), and you cannot change this name after the object has been saved.",
+            "Specifies the fault suppression policy you want to apply. This can be one of the following: default-fex-all-maint\u2014Suppresses faults for the FEX and all power supplies, fan modules, and IOMs in the FEX. default-fex-phys-maint\u2014Suppresses faults for the FEX and all fan modules and power supplies in the FEX. default-iom-maint\u2014Suppresses faults for IOMs in a chassis or FEX.",
+            "Creates a local schedule and enters local-schedule mode.",
+            "Creates a one-time occurrence, and enters single-one-time mode.",
+            "Specifies the date and time that this occurrence should run.",
+            "Specifies the maximum length of time that this task can run. To run the task until it is manually stopped, enter none or omit this step.",
+            "Commits the transaction to the system configuration."
+        ]
+    ],
+    "pageTitle": "Cisco UCS Manager CLI Configuration Guide, Release 2.1 - Configuring Settings for Faults, Events, and Logs [Cisco UCS Manager] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/cli/config/guide/2-1/b_UCSM_CLI_Configuration_Guide_2_1/b_UCSM_CLI_Configuration_Guide_2_1_chapter_0101110.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.88/warc/CC-MAIN-20150728002308-00282-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 358220380,
+    "recordOffset": 358189070,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{42033=The following example shows how to create a fault suppression task called task2 for the IOM on a FEX, set the start date to January 1, 2013 at 11:00, and commit the transaction:, 41089=The following example shows how to create a fault suppression task called task2 for the IOM on a chassis, set the start date to January 1, 2013 at 11:00, and commit the transaction:, 74082=The following example shows how to create a fault suppression task called task2 for the FEX, apply the default-fex-all-maint policy to the task, set the start date to January 1, 2013 at 11:00, and commit the transaction:, 103192=The following example shows how to create a fault suppression task called task2 for the server, set the start date to January 1, 2013 at 11:00, and commit the transaction:, 9916=The following example shows how to create a fault suppression task called task2 for the chassis, apply the default-chassis-all-maint policy to the task, set the start date to January 1, 2013 at 11:00, and commit the transaction:, 130158=The following example shows how to create a fault suppression task called task2 under the accounting service profile, set the start date to January 1, 2013 at 11:00, and commit the transaction:, 160197=The following example shows how to create a fault suppression task called task2 under the Root organization, set the start date to January 1, 2013 at 11:00, and commit the transaction:}",
+    "textBeforeTable": "Procedure Configuring the Fault Collection Policy If the condition reoccurs during the retention interval, the fault returns to the active state. If the condition does not reoccur, the fault is deleted. The cleared fault enters the retention interval. This interval ensures that the fault reaches the attention of an administrator even if the condition that caused the fault has been alleviated and the fault has not been deleted prematurely. The retention interval retains the cleared fault for the length of time specified in the global fault policy. If the condition reoccurs during the flapping interval, the fault returns to the active state. If the condition does not reoccur during the flapping interval, the fault is cleared. When the fault is alleviated, it enters a flapping or soaking interval that is designed to prevent flapping. Flapping occurs when a fault is raised and cleared several times in rapid succession. During the flapping interval, the fault retains its severity for the length of time specified in the global fault policy. A condition occurs in the system and Cisco UCS Manager raises a fault. This is the active state. A fault in Cisco UCS",
+    "textAfterTable": "Fault suppression allows you to suppress SNMP trap and Call Home notifications during a planned maintenance time. You can create a fault suppression task to prevent notifications from being sent whenever a transient fault is raised or cleared. Faults remain suppressed until the time duration has expired, or the fault suppression tasks have been manually stopped by the user. After the fault suppression has ended, Cisco UCS Manager will send notifications for any outstanding suppressed faults that have not been cleared. Fault suppression uses the following: Fixed Time Intervals or Schedules You can use the following to specify the maintenance window during which you want to suppress faults. Fixed time intervals allow you to create a start time and a duration when fault suppression is active. Fixed time intervals cannot be reused. Schedules are used for one time occurrences or recurring time periods and can be saved and reused. Suppression PoliciesThese policies define which causes and types of faults you want to suppress. Only one policy can be assigned to a task. The following policies are defined by Cisco UCS Manager: default-chassis-all-maint\u2014Suppresses faults for the chassis and all components installed into the chassis, including all blade servers, power supplies, fan modules, and IOMs.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

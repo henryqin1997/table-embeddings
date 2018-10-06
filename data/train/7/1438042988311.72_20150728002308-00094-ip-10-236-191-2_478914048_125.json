@@ -1,0 +1,55 @@
+{
+    "relation": [
+        [
+            "modules/",
+            "Module",
+            "idpriv-drop",
+            "idpriv-droptemp",
+            "priv-set"
+        ],
+        [
+            "lib/",
+            "Header",
+            "#include \"idpriv.h\"",
+            "#include \"idpriv.h\"",
+            "#include \"priv-set.h\""
+        ],
+        [
+            "lib/",
+            "Implementation",
+            "idpriv-drop.c",
+            "idpriv-droptemp.c",
+            "priv-set.c"
+        ],
+        [
+            "m4/",
+            "Autoconf macro",
+            "idpriv.m4 00gnulib.m4 gl_IDPRIV",
+            "idpriv.m4 00gnulib.m4 gl_IDPRIV",
+            "priv-set.m4 00gnulib.m4 gl_PRIV_SET"
+        ],
+        [
+            "",
+            "Depends on",
+            "unistd extensions",
+            "unistd extensions",
+            "errno extern-inline stdbool"
+        ]
+    ],
+    "pageTitle": "Gnulib Module List",
+    "title": "",
+    "url": "http://www.gnu.org/software/gnulib/MODULES.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00094-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 479010475,
+    "recordOffset": 478914048,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Support for obsolete systems lacking ANSI C 89 Gnulib Module List This is a list of the modules which make up gnulib, with dependencies.",
+    "textAfterTable": "These modules are not listed among dependencies below, for simplicity. If your package requires portability to old, obsolete systems, you need to list these modules explicitly among the modules to import through gnulib-tool. Support for systems lacking ANSI C 89 atexit atexit function: register a function to be called at program termination. strtod strtod function: convert string to double. strerror strerror function: return string describing error code. strerror-override strerror_override function: provide strings for gnulib-specific errno values mktime mktime function: convert broken-down time to linear time. Enhancements for ANSI C 89 functions Diagnostics <assert.h> assert Allow the installer to disable assertions through \"configure --disable-assert\". assure Run-time assert-like macros. verify Compile-time assert-like macros. Mathematics <math.h> fpieee Ensure IEEE compliant floating-point operations (overflow and division by zero).",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

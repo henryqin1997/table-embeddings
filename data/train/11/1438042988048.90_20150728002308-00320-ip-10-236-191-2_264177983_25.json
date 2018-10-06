@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "r2c",
+            "expression"
+        ],
+        [
+            "Description",
+            "The name of a column populated by a ROW2CELL clause in a call to OLAP_TABLE. ROW2CELL is a component of a limit map parameter of the OLAP_TABLE function. See \"Limit Map Parameter\".",
+            "A date calculation that will be performed in the analytic workspace."
+        ]
+    ],
+    "pageTitle": "21 DBMS_AW",
+    "title": "",
+    "url": "http://web.stanford.edu/dept/itss/docs/oracle/10g/olap.101/b10334/dbms_aw.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00320-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 264195635,
+    "recordOffset": 264177983,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 17 May 2004 17:05:22 GMT",
+    "textBeforeTable": "Table 21-17 OLAP_EXPRESSION_DATE Function Parameters Parameters RETURN DATE; expression IN VARCHAR2 ) r2c IN RAW(32), OLAP_EXPRESSION_DATE( Syntax  The OLAP_EXPRESSION_DATE function enables you to execute single-row date functions in an analytic workspace and thus generate custom measures in SELECT statements. In addition to calculating an expression, OLAP_EXPRESSION_DATE can be used in the WHERE and ORDER BY clauses to modify the result set of a SELECT. OLAP_EXPRESSION_DATE Function    See \"Embedding Custom Measures in SELECT Statements\". Example  You can use OLAP_EXPRESSION_BOOL only with a table object returned by the OLAP_TABLE function. The returned table object must have a column populated by a ROW2CELL. Refer to Chapter 26, \"OLAP_TABLE\" for more information about using this function. Note  To return text, numeric, or date data, use the OLAP_EXPRESSION_TEXT, OLAP_EXPRESSION, or OLAP_EXPRESSION_DATE functions in this package. Return values are numbers 1 (true) or 0 (false). An evaluation of expression for each row of the table object returned by the OLAP_TABLE function. Returns  A boolean calculation that will be performed in the",
+    "textAfterTable": "Returns An evaluation of expression for each row of the table object returned by the OLAP_TABLE function. To return text, boolean, or numeric data, use the OLAP_EXPRESSION_TEXT, OLAP_EXPRESSION_BOOL, or OLAP_EXPRESSION functions in this package. Note You can use OLAP_EXPRESSION_DATE only with a table object returned by the OLAP_TABLE function. The returned table object must have a column populated by a ROW2CELL. Refer to Chapter 26, \"OLAP_TABLE\" for more information about using this function. Example See \"Embedding Custom Measures in SELECT Statements\". OLAP_EXPRESSION_TEXT Function The OLAP_EXPRESSION_TEXT function enables you to execute single-row text functions in an analytic workspace and thus generate custom measures in SELECT statements. In addition to calculating an expression, OLAP_EXPRESSION_TEXT can be used in the WHERE and ORDER BY clauses to modify the result set of a SELECT. Syntax OLAP_EXPRESSION_TEXT( r2c IN RAW(32), expression IN VARCHAR2 ) RETURN VARCHAR2; Parameters Table 21-18 OLAP_EXPRESSION_TEXT Function Parameters",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

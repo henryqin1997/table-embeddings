@@ -1,0 +1,41 @@
+{
+    "relation": [
+        [
+            "Fecha",
+            "2 Abr 2014",
+            "30 Oct 2014"
+        ],
+        [
+            "C\ufffddigo",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Evento",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Descripci\ufffdn",
+            "Year of fee payment: 4",
+            "Owner name: SEVEN NETWORKS INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:BOYNTON, LEE R.;FIATAL, TREVOR A.;BURKE, SCOTT M.;AND OTHERS;REEL/FRAME:034068/0303 Effective date: 20030306"
+        ]
+    ],
+    "pageTitle": "Patente US7827597 - Secure transport for mobile communication network - Google Patentes",
+    "title": "",
+    "url": "http://www.google.es/patents/US7827597?dq=flatulence",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00055-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 474367855,
+    "recordOffset": 474326785,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{30837=The present application is a continuation and claims priority to pending U.S. patent application Ser. No. 10/339,369, filed Jan. 9, 2003, which is a nonprovisional of U.S. patent application Ser. No. 60/346,881, filed Jul. 8, 2002, and U.S. patent application No. 60/403,249, filed Aug. 12, 2002, all of which are incorporated by reference., 105554=In one example, predetermined maximum packet length is configured to be 1000 bytes. If the transaction 160 is determined to be less than 1000 bytes, the contents of the clear, pp, and ee channels are encoded into a single packet. However, in this example, it is determined that 500 bytes of data exist in the pp channel and 4500 bytes of data exist in the ee channel. All the contents of the pp channel are encoded into a 500 byte packet 164. The data from the ee channel is encoded into four separate 1000 byte packets 166-174 and one 500 byte packet 174.}",
+    "textBeforeTable": "Citas de patentes Having described and illustrated the principles of the invention in a preferred embodiment thereof, it should be apparent that the invention may be modified in arrangement and detail without departing from such principles. We claim all modifications and variation coming within the spirit and scope of the following claims. For the sake of convenience, the operations are described as various interconnected functional blocks or distinct software modules. This is not necessary, however, and there may be cases where these functional blocks or modules are equivalently aggregated into a single logic device, program or operation with unclear boundaries. In any event, the functional blocks and software modules or features of the flexible interface can be implemented by themselves, or in combination with other operations in either hardware or software. The system described above can use dedicated processor systems, micro controllers, programmable logic devices, or microprocessors that perform some or all of the operations. Some of the operations described above may be implemented in software and other operations may be implemented in hardware. If the information in the header packet 162 is authorized, the processing node decrypts and decodes data in the pp packet 164. If the data in the pp packet 164 is invalid or has been tampered with, the remaining ee packets 166-174 can be discarded without being further processed. The node receiving transaction 160 may receive, decrypt and decode",
+    "textAfterTable": "US4831582 7 Nov 1986 16 May 1989 Allen-Bradley Company, Inc. Database access machine for factory automation network US4875159 22 Dic 1987 17 Oct 1989 Amdahl Corporation Version management system using plural control fields for synchronizing two versions of files in a multiprocessor system US4897781 13 Feb 1987 30 Ene 1990 International Business Machines Corporation System and method for using cached data at a local node after re-opening a file at a remote node in a distributed networking environment US5263157 15 Feb 1990 16 Nov 1993 International Business Machines Corporation Method and system for providing user access control within a distributed data processing system by the exchange of access control profiles US5357431 25 Ene 1993 18 Oct 1994 Fujitsu Limited Character string retrieval system using index and unit for making the index US5386564 24 Feb 1993 31 Ene 1995 Hewlett-Packard Company Conversion of data and objects across classes in an object management system US5392390 10 Abr 1992 21 Feb 1995 Intellilink Corp.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

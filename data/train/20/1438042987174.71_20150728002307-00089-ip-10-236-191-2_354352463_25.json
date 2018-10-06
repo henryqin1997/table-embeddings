@@ -1,0 +1,47 @@
+{
+    "relation": [
+        [
+            "Code or Value",
+            "0.0055 to 5.1055",
+            "."
+        ],
+        [
+            "Value Description",
+            "Range of Values",
+            "Missing"
+        ],
+        [
+            "Count",
+            "1896",
+            "389"
+        ],
+        [
+            "Cumulative",
+            "1896",
+            "2285"
+        ],
+        [
+            "Skip to Item",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "NHANES 2003 - 2004: Non-dioxin-like Polychlorinated Biphenyls Data Documentation, Codebook, and Frequencies",
+    "title": "",
+    "url": "http://www.cdc.gov/nchs/nhanes/nhanes2003-2004/L28NPB_C.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00089-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 354371311,
+    "recordOffset": 354352463,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampBeforeTable": "{20681=Title: Non-dioxin-like Polychlorinated Biphenyls (L28NPB_C ) Contact Number: 1-866-441-NCHS Years of Content: 2003 - 2004 First Published: April, 2008 Revised: NA Access Constraints: None Use Constraints: None Geographic Coverage: National Subject:Non-dioxin-like Polychlorinated Biphenyls Record Source: NHANES 2003 - 2004 Survey Methodology: NHANES 2003 - 2004 is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S. Medium: NHANES Web site; SAS transport files, 18371=Serum specimens (1\u20131.5 mL) to be analyzed for PCBs and persistent pesticides are spiked with 13C12-labeled internal standards and the analytes of interest are isolated in hexane using a C18 solid phase extraction (SPE) procedure followed by extraction through neutral silica and Florosil SPE columns. PCBs and pesticides are eluted from the Florosil column with hexane and 1:1 dichloromethane /hexane. For PCBs and pesticides, each analytical run consists of nine unknown specimens, one method blank, and two quality control samples. Beforequantification, the vials are reconstituted with 10\u03bcL 13C-labeled external standard. Sample extracts are then analyzed simultaneously for PCBs and pesticides by HRGC/ID-HRMS where 1 \u03bcL is injected, using a GC Pal (Leap Technology) auto sampler, into a Hewlett-Packard 6890 gas chromatograph operated in the splitless injection mode with a flow of 1 mL/min helium through a DB-5ms capillary column (30 m x0.25 mm x0.25 \u03bcm film thickness) where analytes are separated prior to entering a Thermo Finnigan MAT95 XP (5 kV) magnetic sector mass spectrometer operated in EI mode at 40 eV, using selected ion monitoring (SIM) at 10,000 resolving power (10% valley). Two ion current responsescorresponding to two masses are monitored for each native (12C) compound and it corresponding 13C-internal standard. The instrumental response factor for each analyte is calculated as the sum of the two 12C-isomers divided by the sum of two 13C-isomers., 9029=The analysis of NHANES 2003-2004 laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2003-2004 Demographic Data File contains demographic and sample design variables. The recommended procedure for variance estimation requires use of stratum and PSU variables (SDMVSTRA and SDMVPSU, respectively) in the demographic data file., 13866=The NHANES QA/QC protocols meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed QA/QC instructions are discussed in the NHANES LPM., 8582=This laboratory data file can be linked to the other NHANES 2003-2004data files using the unique survey participant identifier SEQN.}",
+    "lastModified": "Fri, 09 May 2014 20:26:21 GMT",
+    "textBeforeTable": "Both males and females 12 YEARS - 150 YEARS Target: Two-year MEC weights of subsample C English Text: Two-year MEC weights of subsample C SAS Label: WTSC2YR Variable Name: WTSC2YR - Two-year MEC weights of subsample C Both males and females 12 YEARS - 150 YEARS Target: Respondent sequence number. English Text: Respondent sequence number SAS Label: SEQN Variable Name: SEQN - Respondent sequence number Codebook and Frequencies Van den Berg M, Birnbaum L, Bosveld ATC et al. Toxic Equivalency Factors (TEFs) for PCBs, PCDDs, and PCDFs for Humans and Wildlife. Environmental Health Perspectives 106: 775-792 (1998). Turner W., DiPietro E., Lapeza C., Green V., Gill J., Patterson, D.G. , Jr. A Fast Universal Automated Cleanup System for the Isotope-Dilution High-Resolution Mass Spectrometric Analysis of PCDDs, PCDFs, Coplanar PCBs, PCB Congeners, andPersistent Pesticides from the Same Serum Sample. Organohalogen Compounds 1997:31;26\u201331. Turner W., DiPietro E., Cash T.P., McClure P.C., Patterson, D.G Jr., and Shirkhan An Improved SPE Extraction and Automated Sample Cleanup Method for Serum PCDDs, PCDFs, and Coplanar PCBs. Organohalogen Compounds 1994:19;31\u201335. Taylor J.K. Quality Assurance of Chemical Measurements. Anal. Chem. 53: 1588A-1592A, 1596A (1981). Phillips, D.L., Pirkle, J.L., Burse V.W., Bernert, J.T., Henderson, L.O., and Needham,",
+    "textAfterTable": "LBX044 - PCB44 (ng/g) Variable Name: LBX044 SAS Label: PCB44 (ng/g) English Text: PCB44 (ng/g) Target: Both males and females 12 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 0.0004 to 0.4912 Range of Values 1890 1890 . Missing 395 2285 LBX044LA - PCB44 Lipid Adj (ng/g) Variable Name: LBX044LA SAS Label: PCB44 Lipid Adj (ng/g) English Text: PCB44 Lipid Adjusted (ng/g) Target: Both males and females 12 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 0.08 to 85.4 Range of Values 1890 1890 . Missing 395 2285 LBD044LC - PCB44 Comment Code Variable Name: LBD044LC SAS Label: PCB44 Comment Code English",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Attribute Name",
+            "agent_id",
+            "client_ip",
+            "Policy_appdomain",
+            "Policy_res",
+            "policy_name",
+            "res_host",
+            "res_port",
+            "res_type",
+            "res_url"
+        ],
+        [
+            "Description",
+            "Name of the requesting agent.",
+            "IP address of the user browser.",
+            "Name of the Application Domain holding the policy matched for the request.",
+            "Resource host ID and URL pattern matched for the request.",
+            "Name of the specific policy matched for the request.",
+            "Requested resource's hostname.",
+            "Requested resource's port number.",
+            "Requested resource's type.",
+            "Requested resource URL."
+        ]
+    ],
+    "pageTitle": "Managing Policies to Protect Resources and Enable SSO",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E27559_01/admin.1112/e27239/app_domn.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00279-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71363063,
+    "recordOffset": 71301313,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{128096=Runtime resource: myhost.domain.com:1234/cgi-bin/myres3, 192994=Notes: Time is specified using a full 24-hour range. For instance, midnight is specified as 00:00:00 and 11:00 PM is specified as 23:00:00., 132740=\\$1000, 191843=Time periods must be specified in the HH:MM:SS (hour, minute, and second) format based on a 24-hour clock based on Greenwich Mean Time (GMT). Midnight is specified as 00:00:00 (start). The day ends at 24:59:59., 132784=results in the value $1000 appearing in the returned value., 129656=Session creation/expiration/count: Tue Oct 23 17:47:42 PST 2011/Wed Oct 24 01:47:42 PST 2011/7}",
+    "lastModified": "Thu, 12 Mar 2015 22:31:23 GMT",
+    "textBeforeTable": "Table 17-26 Attribute Names for Request Built-ins Table 17-26 identifies the list of built-in attribute names for Request Built-ins: Request Built-ins Literal value with no special wildcard characters. Value ENDS WITH CONTAINS EQUALS STARTS WITH Allowed operators: Operator Entered manually into a text field if the Namespace is User Selected from a list if the Namespace is Request (Table 17-26) or Session (Table 17-27) Attribute name, which can be added as follows, depending on the: Name User (User Attributes) Session (User Session) Session Built-ins Request Built-ins Supported namespaces: Namespace Description Condition Table 17-25 Attribute Condition Elements Figure 17-32 Add Attributes Dialog \"Defining Attribute Conditions\"",
+    "textAfterTable": "Session Built-ins Table 17-27 identifies the list of attribute names for Session-based attribute-type conditions. Table 17-27 Attribute Names for Session Built-ins Attribute Name Description Authentication Level Current authentication level for the session. Authentication Scheme Name of the authentication scheme executed to achieve the current authentication level. Session Count Session count for the user bound to this session. Session Creation Time Session creation time. Session Expiry Time Session expiration time. Example: Attribute Condition Data (Aggregation of Conditions) Table 17-28 illustrates sample condition data for each allowable namespace. Table 17-28 Attribute Condition Data (Aggregation of Conditions) Namespace Name Operator Value Request-Builtins",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

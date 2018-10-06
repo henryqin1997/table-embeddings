@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "appName",
+            "planPath",
+            "options"
+        ],
+        [
+            "Definition",
+            "Name of the application, as specified in the current plan.xml file.",
+            "Optional. Name of the new deployment plan file. The filename can be absolute or relative to the application directory.",
+            "Optional. Comma-separated list of deployment options, specified as name-value pairs. For a list of valid deployment options, see options argument description in deploy."
+        ]
+    ],
+    "pageTitle": "WLST Command and Variable Reference",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E21764_01/web.1111/e13813/reference.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00110-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 873095379,
+    "recordOffset": 873026598,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{357542=The following example instructs WLST to wait 1000 seconds for HTTP sessions to complete or timeout (at 1000 seconds) before shutting down myserver:}",
+    "lastModified": "Wed, 13 May 2015 05:19:31 GMT",
+    "textBeforeTable": "updateApplication(appName, [planPath], [options])  Syntax      The updateApplication command returns a WLSTProgress object that you can access to check the status of the command. For more information about the WLSTProgress object, see \"WLSTProgress Object\" in Oracle WebLogic Scripting Tool. In the event of an error, the command returns a WLSTException. Updates an application configuration using a new deployment plan. The application must be fully configured and available in the WebLogic domain. Description    Use with WLST: Online Command Category: Deployment Commands updateApplication    wls:/mydomain/serverConfig> Deployment Message : no message Deployment State : completed Deployment command type: undeploy Current Status of your Deployment: Completed the undeployment of Application with status to AdminServer .> <Initiating undeploy operation for application, businessApp [archive: null], <Jul 20, 2005 9:34:15 AM EDT> <Info> <J2EE Deployment SPI> <BEA-260121> Undeploying application businessApp ... wls:/mydomain/serverConfig> undeploy('businessApp', timeout=60000)  The following example removes the businessApp application from all target servers. WLST waits 60,000 ms for the process to complete. Example       Optional. Comma-separated list of deployment options, specified as name-value pairs. For a list of valid deployment options, see options argument description in deploy. options",
+    "textAfterTable": "Example The following example updates the application configuration for BigApp using the plan.xml file located in c:/myapps/BigApp/newPlan.  wls:/offline> progress=updateApplication('BigApp',  'c:/myapps/BigApp/newPlan/plan.xml', stageMode='STAGE', testMode='false') Updating the application... Successfully updated the application. The previous example stores the WLSTProgress object returned in a user-defined variable, in this case, progress. You can then use the progress variable to access the state of the updateApplication command. For example:  wls:/mydomain/serverConfig/Servers> progress.getState() 'completed' wls:/mydomain/serverConfig/Servers> For more information about the WLSTProgress object, see \"WLSTProgress Object\" in Oracle WebLogic Scripting Tool. Diagnostics Commands Use the WLST diagnostics commands, listed in Table 3-6, to retrieve diagnostics data by executing queries against the WebLogic Diagnostics Framework (WLDF) data stores. For more information about WLDF, see Configuring and Using the Diagnostics Framework for Oracle WebLogic Server. Table 3-6 Diagnostic Command for WLST Configuration This command... Enables you to... Use with WLST... exportDiagnosticData Execute a query against the specified log file.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

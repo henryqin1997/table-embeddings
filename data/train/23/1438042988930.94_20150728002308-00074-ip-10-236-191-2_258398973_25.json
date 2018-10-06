@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "lfPrec",
+            "nlsParam"
+        ],
+        [
+            "Description",
+            "Leading field precision.",
+            "The nls parameters string. If nlsParam is specified, this determines the nls parameters to be used for the conversion. If nlsParam is not specified, the nls parameters are picked up from envp."
+        ]
+    ],
+    "pageTitle": "Interval Y M Class",
+    "title": "",
+    "url": "http://web.stanford.edu/dept/itss/docs/oracle/10g/appdev.101/b10778/reference014.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00074-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 258406951,
+    "recordOffset": 258398973,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 17 May 2004 17:04:12 GMT",
+    "textBeforeTable": "const string &nlsParam = \"\") const; unsigned int lfPrec, string toText(  Syntax  This method returns the string representation of the interval. toText()    void setNull();  Syntax  This method sets the interval to NULL. setNull()    Month component. Valid values are -11 through 11. month   Year component. Valid values are -10^9 through 10^9. year     Description Parameter     int month); int year, void set(  Syntax  This method sets the interval to the values specified. set()          A day second interval. val",
+    "textAfterTable": "Previous Next Copyright\u00a0\u00a9\u00a01999, 2003\u00a0Oracle\u00a0Corporation All Rights Reserved. Home Book List Contents Index Master\u00a0Index Feedback",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

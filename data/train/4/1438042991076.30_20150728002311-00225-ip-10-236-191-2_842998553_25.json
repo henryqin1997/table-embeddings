@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Function",
+            "gethostname(char *name, size_t len)",
+            "getservbyname(const char *name,const char *proto)",
+            "gethostbyname(const char *name)",
+            "getservbyport(int port, const char *proto)",
+            "getservent(void)",
+            "getprotobyname(const char *name)",
+            "getprotobynumber(int proto)",
+            "getprotoent(void)",
+            "getnetbyname(const char *name)",
+            "getnetbyaddr(long net, int type)",
+            "getaddrinfo(const char *node, const char *service, const struct addrinfo *hints, struct addrinfo **res) void freeaddrinfo(struct addrinfo *res)",
+            "getnetent(void)"
+        ],
+        [
+            "Description",
+            "returns hostname of local host",
+            "returns a structure of type servent for the given host name and protocol",
+            "returns a structure of type hostent for the given host name",
+            "returns a servent structure for the line that matches the port port given in network byte order using protocol proto. If proto is NULL, any protocol will be matched.",
+            "returns a structure servent containing the broken out fields from the line in /etc/services",
+            "returns a structure protoent containing the broken out fields from the line in /etc/protocols",
+            "returns a protoent structure for the line that matches the protocol number",
+            "returns a structure protoent containing the broken out fields from the line in /etc/protocols",
+            "a structure netent containing the broken out fields from the line in /etc/networks",
+            "returns a netent structure for the line that matches the network number net of type \"type\"",
+            "Returns 0 if it succeeds or an error code. Network address and service translation freeaddrinfo() frees the memory that was allocated by getaddrinfo()",
+            "returns a structure netent containing the broken out fields from the line in /etc/networks"
+        ]
+    ],
+    "pageTitle": "Sockets",
+    "title": "",
+    "url": "http://www.yolinux.com/TUTORIALS/Sockets.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991076.30/warc/CC-MAIN-20150728002311-00225-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 843024551,
+    "recordOffset": 842998553,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{67790=Posts are 16 bit identifiers. Many are reserved and managed by the Internet Assigned Numbers Authority (IANA). See RFC 1700., 2986=Sockets are an inter-process network communication implementation using a Internet Protocol (IP) stack on an Ethernet transport. Sockets are language and protocol independent and available to \"C\", Perl, Python, Ruby and Java (and more) programmers. The \"C\" language BSD API is used on Linux, all popular variants of Unix, Microsoft Windows (NT,2000,XP,... and later) and even embedded OSs like VxWorks. It is by far the most popular implementation of inter-process network communication., 67627=The use of port numbers below 1024 are limited to the root process. For a list of port numbers with established uses see the file /etc/services.}",
+    "lastModified": "Sun, 28 Dec 2014 17:51:47 GMT",
+    "textBeforeTable": "Sockets are an inter-process network communication implementation using a Internet Protocol (IP) stack on an Ethernet transport. Sockets are language and protocol independent and available to \"C\", Perl, Python, Ruby and Java (and more) programmers. The \"C\" language BSD API is used on Linux, all popular variants of Unix, Microsoft Windows (NT,2000,XP,... and later) and even embedded OSs like VxWorks. It is by far the most popular implementation of inter-process network communication. Sockets allow one process to communicate with another whether it is local on the same computer system or remote over the network. Many other higher level protocols are built upon sockets technology. The sockets API provides many configuration options so we will try and cover the socket API components and then give examples of a few implementations. It would be very difficult to cover all variations of its use. Sockets utilize the following standard protocols: Description: Free Information Technology Magazines and Document Downloads",
+    "textAfterTable": "netdb.h Used for domain/DNS hostname lookup sys/select.h Used by the select(), pselect() functions and defines FD_CLR, FD_ISSET, FD_SET, FD_ZERO macros sys/time.h select() uses argument of type struct timeval and pselect() uses struct timespec defined by this include file. arpa/inet.h Definitions for internet operations. Prototypes functions such as htonl(), htons(), ntohl(), ntohs(), inet_addr(), inet_ntoa(), etc ... unistd.h Defines constants and types errno.h Defines sytem error numbers Create the socket instance: Open a socket using TCP: Basic declarations and call to \"socket\".  #include <iostream> #include <sys/types.h> // Types used in sys/socket.h and netinet/in.h #include <netinet/in.h> // Internet domain address structures and functions #include <sys/socket.h> // Structures and functions used for socket API #include <netdb.h> // Used for domain/DNS hostname lookup #include <unistd.h> #include <stdlib.h> #include <errno.h> using namespace std; main() { int socketHandle; // create socket if((socketHandle = socket(AF_INET, SOCK_STREAM, IPPROTO_IP)) < 0) { close(socketHandle); exit(EXIT_FAILURE); } ... ... } Socket function prototype: int socketHandle = socket(int socket_family, int socket_type, int protocol); Choose socket communications family/domain: Internet IPV4: AF_INET Internet IPV6: AF_INET6 Unix path name (communicating processes are on the same system): AF_UNIX Choose socket type: TCP: SOCK_STREAM UDP: SOCK_DGRAM Raw protocol at network layer: SOCK_RAW",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,142 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2011-12",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "AUS",
+            ""
+        ],
+        [
+            "GP",
+            "9",
+            "9"
+        ],
+        [
+            "GS",
+            "4",
+            "4"
+        ],
+        [
+            "Min",
+            "34.0",
+            "34.0"
+        ],
+        [
+            "FGM",
+            "4.78",
+            "4.78"
+        ],
+        [
+            "FGA",
+            "12.33",
+            "12.33"
+        ],
+        [
+            "FG%",
+            ".387",
+            ".387"
+        ],
+        [
+            "3FGM",
+            "2.11",
+            "2.11"
+        ],
+        [
+            "3FGA",
+            "5.22",
+            "5.22"
+        ],
+        [
+            "3P%",
+            ".404",
+            ".404"
+        ],
+        [
+            "FTM",
+            "3.67",
+            "3.67"
+        ],
+        [
+            "FTA",
+            "4.67",
+            "4.67"
+        ],
+        [
+            "FT%",
+            ".786",
+            ".786"
+        ],
+        [
+            "FIC",
+            "8.64",
+            "8.64"
+        ],
+        [
+            "OFF",
+            "0.67",
+            "0.67"
+        ],
+        [
+            "DEF",
+            "2.78",
+            "2.78"
+        ],
+        [
+            "Reb",
+            "3.44",
+            "3.44"
+        ],
+        [
+            "Ast",
+            "3.33",
+            "3.33"
+        ],
+        [
+            "Stl",
+            "1.11",
+            "1.11"
+        ],
+        [
+            "Blk",
+            "0.22",
+            "0.22"
+        ],
+        [
+            "PF",
+            "2.00",
+            "2.00"
+        ],
+        [
+            "TO",
+            "2.11",
+            "2.11"
+        ],
+        [
+            "Pts",
+            "15.33",
+            "15.33"
+        ]
+    ],
+    "pageTitle": "Flip Murray Player Profile, Memphis Grizzlies, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Flip_Murray/Summary/237",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992201.62/warc/CC-MAIN-20150728002312-00121-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 20870767,
+    "recordOffset": 20840303,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{7998=Draft Entry: 2002 NBA Draft, 8859=Born: Jul 29, 1979 (36 years old)}",
+    "TableContextTimeStampAfterTable": "{72667=* Since the 1946-1947 season, 134074=* International basketball history from 2011-2012, 161998=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 8 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "2 0 10.0 1.00 2.50 .400 0.00 0.50 .000 0.00 0.00 .000 0.25 0.00 1.50 1.50 1.00 0.00 0.00 0.00 2.00 2.00 2003-04 SEA 82 18 24.6 4.74 11.16 .425 0.82 2.79 .293 2.05 2.87 .715 5.96 0.55 1.94 2.49 2.50 0.99 0.34 1.93 1.82 12.35 2004-05 SEA 49 6 18.0 2.67 7.41 .361 0.49 1.94 .253 1.20 1.63 .738 2.85 0.31 1.69 2.00 1.33 0.61 0.22 1.20 1.16 7.04 2005-06 * All Teams 76 27 27.8 4.22 10.11 .418 0.49 1.86 .262 2.26 3.18 .711 5.02 0.43 1.58 2.01 2.59 0.89 0.14 1.75 1.78 11.20 2005-06 * SEA 48 2 22.6 3.73 9.40 .397 0.35 1.58 .224 2.06 2.88 .717 4.03 0.38 1.42 1.79 2.50 0.62 0.08 1.44 1.65 9.88 2005-06 * CLE 28 25 36.7 5.07 11.32 .448 0.71 2.32 .308 2.61 3.71 .702 6.72 0.54 1.86 2.39 2.75 1.36 0.25 2.29 2.00 13.46 2006-07 DET 69 18 21.4 2.57 6.35 .404 0.35 1.20 .289 1.26 1.74 .725 4.26 0.38 1.26 1.64 2.71 0.71 0.19 1.39 1.30 6.74 2007-08 * All Teams 42 19 20.8 3.67 8.74 .420 0.48 1.50 .317 1.62 2.33 .694 5.45 0.55 1.43 1.98 3.43 0.90 0.10 1.19 2.00 9.43 2007-08 * IND 23 17 22.9 4.22 9.91 .425 0.61 1.57 .389 2.00",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

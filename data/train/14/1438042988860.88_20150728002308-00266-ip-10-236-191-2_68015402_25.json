@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "API Call",
+            "Asynchronous",
+            "Description",
+            "Returns",
+            "Arguments",
+            "lcb_t instance"
+        ],
+        [
+            "lcb_set_stat_callback (lcb_t instance)",
+            "no",
+            "@fixme",
+            "(none)",
+            "",
+            "The handle to the couchbase instance."
+        ]
+    ],
+    "pageTitle": "Couchbase C SDK 2.0 \u2014 Developer Guide",
+    "title": "",
+    "url": "http://docs.couchbase.com/couchbase-sdk-c-2.0/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.88/warc/CC-MAIN-20150728002308-00266-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 68046447,
+    "recordOffset": 68015402,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{134402=Don\u2019t define size_t and ssize_t for VS2008, 20510=Building and installing on Microsoft Windows depends on nmake and tools in Microsoft Visual Studio 2010.}",
+    "lastModified": "Sat, 30 May 2015 02:15:06 GMT",
+    "textBeforeTable": "libcouchbase provides a well defined API for accessing the data stored in a Couchbase cluster. The supported methods are listed in the following tables. C Method Summary\u00b6 API Introduction\u00b6 On Linux you may find these examples in TODO\u2026 In addition to the other sections of this manual, namely the Getting Started guide and the API reference, a libcouchbase distribution includes an examples directory and a tools directory, each of which show simple Couchbase tools and and example libcouchbase programs. Additional Resources\u00b6 } return 0; lcb_destroy(instance); lcb_wait(instance); } } return 1; fprintf(stderr, \"Failed to get: %s\\n\", lcb_strerror(NULL, err)); if (err != LCB_SUCCESS) { err = lcb_get(instance, NULL, 1, commands); cmd.v.v0.nkey = 3; cmd.v.v0.key = \"foo\"; memset(&cmd, 0, sizeof(cmd)); commands[0] = &cmd; const lcb_get_cmd_t *commands[1]; lcb_get_cmd_t cmd; { lcb_wait(instance); } } return 1; fprintf(stderr, \"Failed to set: %s\\n\", lcb_strerror(NULL, err)); if (err != LCB_SUCCESS) { err = lcb_store(instance, NULL, 1, commands); cmd.v.v0.nbytes = 3; cmd.v.v0.bytes = \"bar\"; cmd.v.v0.nkey = 3; cmd.v.v0.key = \"foo\"; cmd.v.v0.operation = LCB_SET; memset(&cmd, 0, sizeof(cmd)); commands[0] = &cmd; const lcb_store_cmd_t *commands[1]; lcb_store_cmd_t cmd; { lcb_wait(instance); /* Run the event loop and wait until we've connected */ (void)lcb_set_store_callback(instance, store_callback); (void)lcb_set_get_callback(instance, get_callback); } return 1; lcb_destroy(instance); lcb_strerror(NULL, err)); fprintf(stderr, \"Failed to initiate connect: %s\\n\", if ((err = lcb_connect(instance)) != LCB_SUCCESS) { /* Initiate the connect sequence in libcouchbase */ (void)lcb_set_error_callback(instance, error_callback); } return 1; lcb_strerror(NULL, err));",
+    "textAfterTable": "const void* cookie This is a cookie the client may attach to all requests that will be included in all callbacks. It is not required and may be NULL if you have no need for it. const void* key An identifier in the database size_t nkey Number of bytes in the key int64_t delta The delta to increment/decrement time_t exptime The expiry time for the object. Values larger than 30*24*60*60 seconds (30 days) are interpreted as absolute times (from the epoch). bool create Should the key be created if it does not exist? uint64_t initial The initial value for the key if created Errors LCB_ETMPFAIL No vbucket configuration available LCB_SUCCESS Command successfully scheduled API Call lcb_arithmetic_by_key (lcb_t instance, const void* cookie, const void* hashkey, size_t nhashkey, const void* key, size_t nkey, int64_t delta, time_t exptime, bool create, uint64_t initial) Asynchronous no Description Spool an arithmetic operation to the cluster, but use another key to locate the server. The operation may be sent immediately, but you won\u2019t be sure (or get the result) until you run the event loop",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

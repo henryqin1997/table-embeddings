@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "File",
+            "SCHEDLOCK",
+            "admins",
+            "bin",
+            "logs",
+            "model",
+            "requests",
+            "system",
+            "temp",
+            "tmp"
+        ],
+        [
+            "Type",
+            "File",
+            "Directory",
+            "Directory",
+            "Link",
+            "Link",
+            "Directory",
+            "Directory",
+            "Link",
+            "Directory"
+        ],
+        [
+            "Description",
+            "Lock file for the scheduler. Check for this file if the scheduler terminates and will not restart.",
+            "Link to /etc/lp.",
+            "Link to /usr/lib/lp/bin.",
+            "Link to ../lp/logs where completed print requests are logged.",
+            "Link to /usr/lib/lp/model.",
+            "Directory that contains subdirectories for each configured printer where print requests are logged until printed. Users cannot access this log.",
+            "A print status file for the system.",
+            "Link to /var/spool/lp/tmp/hostname, which contains the spooled requests.",
+            "Directory for each configured printer where print requests are logged until printed. Changes to existing print requests are also recorded in this directory."
+        ]
+    ],
+    "pageTitle": "LP Print Service - System Administration Guide: Printing",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E23823_01/html/819-7355/printref-18623.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00000-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 78349216,
+    "recordOffset": 78333264,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 18 Jul 2012 10:48:43 GMT",
+    "textBeforeTable": "Table\u00a012-11 Contents of the /var/spool/lp Directory Files queued for printing are stored in the /var/spool/lp directory until they are printed, which might be only seconds. The following table shows the contents of the /var/spool/lp directory. Spooling Directories The request is temporarily stopped. 0x8000 The printer had to change filters. 0x4000 The administrator placed a hold on the request. 0x2000 A remote system has accepted the request (obsolete). 0x1000 A notification is running. 0x0800 The user will be notified. 0x0400 The request is in transit to a remote printer (obsolete). 0x0200 The request failed filtering or printing.",
+    "textAfterTable": "Filtering Print Files Print filters are programs on the print server that convert the content of a queued file from one format to another format. A print filter can be as simple or as complex as needed. The Oracle Solaris OS provides print filters in the /usr/lib/lp/postscript directory that cover most situations where the destination printer requires the data to be in PostScript format. If you need filters for non-PostScript printers, you have to create the filters and add them to the systems that need filters. A set of print filter descriptor files are provided in the /etc/lp/fd directory. These descriptor files describe the characteristics of the filter (for example, fast or slow filter). These description files point to the filter program (for example, to /usr/lib/lp/postscript/postdaisy). How the Printer Interface Program Works The LP print service interacts with other parts of the Oracle Solaris OS. The print service uses a standard printer interface program to do the following: Initialize the printer port, if necessary. The standard printer interface program uses the stty command to initialize the printer port. Initialize the printer. The standard printer interface program uses the terminfo database and the TERM shell variable to find the appropriate control sequences. Print a banner page, if necessary. Print the correct number of copies specified by the print request.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

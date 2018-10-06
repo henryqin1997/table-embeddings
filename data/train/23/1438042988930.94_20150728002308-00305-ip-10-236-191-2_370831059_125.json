@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Release",
+            "Release 3.6.0",
+            "Release 3.7.0",
+            "Release 3.8.0",
+            "Release 3.9.0"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "No modification.",
+            "No modification.",
+            "No modification."
+        ]
+    ],
+    "pageTitle": "OSPFv3 Commands on Cisco IOS XR Software - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/crs/software/crs_r3-9/routing/command/reference/rr39crs1book_chapter5.html?referring_site=smartnavRD",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00305-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 370926439,
+    "recordOffset": 370831059,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{755949=1000 milliseconds, 385270=This argument must be in the form documented in RFC 2373, in which the address is specified in hexadecimal using 16-bit values between colons., 189214=The following example shows how to prevent OSPFv3 from redistributing routes that have 2001:e624 as the first 32 bits of the address. In addition, routes with a prefix beginning with 2064 are not redistributed from Border Gateway Protocol (BGP) autonomous system 1, and only those routes are redistributed from BGP autonomous system 5., 762312=The following example shows how to set the minimum interval for accepting the same LSA at 2000 milliseconds:, 778100=Interval (in seconds) at which LSAs are grouped and refreshed, checksummed, or aged. Range is 10 to 1800 seconds., 309677=(Optional) Specifies an unsigned integer value (in seconds) reflecting the poll interval. RFC 1247 recommends that this value be much larger than the hello interval. The poll-interval keyword does not apply to point-to-multipoint interfaces., 444498=The following example shows how to assign the IP address of 10.0.0.10 to the OSPFv3 process 109:, 295431=This example shows how to set a maximum of 2000 prefixes that can be redistributed into OSPFv3 process 1. If the number of prefixes redistributed reaches 75 percent of 2000 (1500 prefixes), a warning message is logged. Another warning is logged if the limit is reached and no more routes are redistributed., 743481=This argument must be in the form documented in RFC 2373, where the address is specified in hexadecimal using 16-bit values between colons., 810455=This example shows how to customize OSPFv3 LSA throttling so that the start interval is 200 milliseconds, the hold interval is 10,000 milliseconds, and the maximum interval is 45,000 milliseconds. The minimum interval between instances of receiving the same LSA is 2000 milliseconds., 269726=Maximum number of interfaces that can be configured for this OSPFv3 process. Range is 1 to 1024., 823295=The following example shows how to change the start, hold, and maximum wait interval values to 5, 1000, and 90,000\u00a0milliseconds, respectively:, 355861=If not specified, the default packet size is 1500 bytes., 308609=Link- local IP Version 6 (IPv6) address of the neighbor. This argument must be in the form documented in RFC 2373, in which the address is specified in hexadecimal using 16-bit values between colons.}",
+    "textBeforeTable": "Command History Interface configuration Area configuration Router configuration Command Modes If not specified, the default packet size is 1500 bytes. Command Default Size in bytes. Range is 256 to 10000 bytes. bytes To configure the size of Open Shortest Path First Version 3 (OSPFv3) packets up to the size specified by the maximum transmission unit (MTU), use the packet-size command in the appropriate mode. To disable this function and reestablish the default packet size, use the no form of this command. packet-size (OSPFv3) RP/0/RP0/CPU0:router(config)#\u00a0ospfv3 name-lookup  The following example shows how to configure OSPFv3 to look up DNS names for use in all OSPFv3 show command displays: Examples     Syntax Description packet-size no bytes packet-size",
+    "textAfterTable": "Usage Guidelines To use this command, you must be in a user group associated with a task group that includes the proper task IDs. If you suspect user group assignment is preventing you from using a command, contact your AAA administrator for assistance. Use the packet-size command to customize the size of OSPFv3 packets. The OSPFv3 protocol compares the packet size and the MTU size and uses the lower packet size value. Task ID Task ID Operations ospf read, write Examples The following example shows how to configure the packet size:  RP/0/RP0/CPU0:router#\u00a0configure RP/0/RP0/CPU0:router(config)#\u00a0router ospf osp3 RP/0/RP0/CPU0:router(config-ospfv3)# packet-size 3500 passive (OSPFv3) To suppress the sending of Open Shortest Path First Version 3 (OSPFv3) packets on an interface, use the passive command in the appropriate mode. To remove the passive configuration, use the no form of this command.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

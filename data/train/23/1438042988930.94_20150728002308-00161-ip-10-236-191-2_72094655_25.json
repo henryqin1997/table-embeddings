@@ -1,0 +1,58 @@
+{
+    "relation": [
+        [
+            "Parameters",
+            "-PROJECT=",
+            "-FOLDER=",
+            "-MODE=",
+            "-GRPMARKER=",
+            "-MARKER=",
+            "-GENERATE_PACK=",
+            "-GENERATE_POP=",
+            "-GENERATE_TRT=",
+            "-GENERATE_VAR="
+        ],
+        [
+            "Mandatory",
+            "Yes",
+            "No",
+            "No",
+            "No",
+            "No",
+            "No",
+            "No",
+            "No",
+            "No"
+        ],
+        [
+            "Description",
+            "ID of the Project containing the components to generate scenarios for.",
+            "ID of the Folder containing the components to generate scenarios for.",
+            "Scenario generation mode: Replace (default): causes the last scenario generated for the component to be replaced by the new one generated, with no change of name or version. Any schedules linked to this scenario will be deleted. If no scenario exists yet, a new one is generated. Create: creates a new scenario with the same name as the latest scenario generated for the component, with the version number automatically incremented (if the latest version is an integer) or sets to the current date (if the latest version is not an integer). If no scenario has been created yet for the component, a first version of the scenario is automatically created. New scenarios are named after the component according to the Scenario Naming Convention user parameter.",
+            "Group containing the marker used to filter the components for which scenarios must be generated. When GRPMARKER and MARKER are specified, scenarios will be (re-)generated only for components flagged the marker identified by the marker code and the marker group code.",
+            "Marker used to filter the components for which scenarios must be generated. When GRPMARKER and MARKER are specified, scenarios will be (re-)generated only for components flagged the marker identified by the marker code and the marker group code.",
+            "Specifies whether scenarios attached to packages should be (re-)generated. The Default value is YES.",
+            "Specifies whether scenarios attached to interfaces should be (re-)generated. The Default value is NO.",
+            "Specifies whether scenarios attached to procedures should be (re-)generated. The Default value is NO.",
+            "Specifies whether scenarios attached to variables should be (re-)generated. The Default value is NO."
+        ]
+    ],
+    "pageTitle": "Oracle Data Integrator Tools Reference - 11g Release 1 (11.1.1)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E25054_01/integrate.1111/e12643/appendix_a.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00161-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72154735,
+    "recordOffset": 72094655,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{208774=Purges all the sessions that were executed between 2001/03/25 00:00:00 and 2001/08/31 21:59:00., 162102=OdiGenerateAllScen -PROJECT=1003 generates all scenarios in the project whose id is 1003 for the current repository., 188000=Windows NT, 2000, XP, using \"cmd\", 124563=To delete all files under the C:\\temp directory whose modification time is earlier than the 10/31/2008 17:00:00. An error is thrown, if the directory contains no files to delete meeting the date criteria:, 124131=To delete all files under the C:\\temp directory whose modification time is between 10/01/2008 00:00:00 and 10/31/2008 22:59:00 where 10/01/2008 and 10/31/2008 are not inclusive:, 124945=To delete all files under the C:\\temp directory whose modification time is later than 10/01/2008 08:00:00:}",
+    "lastModified": "Thu, 20 Sep 2012 17:58:44 GMT",
+    "textBeforeTable": "Parameters [-GENERATE_VAR=<YES|NO>] [-GENERATE_POP=<YES|NO>] [-GENERATE_TRT=<YES|NO>] -MARKER=<marker_code>] [-GENERATE_PACK=<YES|NO>] [-MODE=<REPLACE|CREATE>] [-GRPMARKER=<marker_group_code> OdiGenerateAllScen -PROJECT=<project_id> [-FOLDER=<folder_id>] Usage  Use this command to generate a set of scenarios from design-time components (Packages, Interfaces, Procedures, or Variables) contained in a folder or a project, filtered by markers. A.5.19 OdiGenerateAllScen      OdiFtpPut -HOST=machine.oracle.com -USER=test_ftp -PASSWORD=<password> -LOCAL_DIR=C:\\temp -LOCAL_FILE=Sales1.txt -REMOTE_DIR=/Sample1.txt To copy the Sales1.txt file under the local directory C:\\temp\\ to the remote directory / on the FTP server machine as a Sample1.txt file: OdiFtpPut -HOST=machine.oracle.com -USER=test_ftp -PASSWORD=<password> -LOCAL_DIR=C:\\temp -LOCAL_FILE=Sales*.txt -REMOTE_DIR=/ To copy all files matching the Sales*.txt pattern under the local directory C:\\temp\\ to the remote directory / on the FTP server machine: -LOCAL_DIR=C:\\temp\\test_copy -REMOTE_DIR=/test_copy555\" OdiFtpPut -HOST=machine.oracle.com -USER=test_ftp -PASSWORD=<password> To copy the local directory C:\\temp\\test_copy recusively to the remote directory /test_copy555 on the FTP server machine: Examples   The time in seconds after which the socket connection will timeout No -TIMEOUT=<timeout value> If set to No the FTP Session will use Active Mode. The Default value is yes, it runs in passive mode No -PASSIVE_MODE arch_*.lst (All files starting with arch_ and with the",
+    "textAfterTable": "Examples OdiGenerateAllScen -PROJECT=1003 generates all scenarios in the project whose id is 1003 for the current repository. A.5.20 OdiImportObject Use this command to import the contents of an export file into a repository. This command reproduces the behavior of the import feature available from the user interface. Be careful when using this tool. It may work incorrectly when importing objects that depend on objects that do not exist in the repository. It is recommended that you use this API for importing high-level objects (Projects, models, etc). WARNING: The import mode and the order in which objects are imported into a repository should be carefully specified. Refer to Chapter 19, \"Exporting/Importing\" for more information on import. Usage OdiImportObject -FILE_NAME=<FileName> [-WORK_REP_NAME=<workRepositoryName>] -IMPORT_MODE=<DUPLICATION | SYNONYM_INSERT | SYNONYM_UPDATE | SYNONYM_INSERT_UPDATE> [-IMPORT_SCHEDULE=<yes|no>] Parameters Parameters Mandatory Description -FILE_NAME=<FileName> Yes Name of the XML export file to import.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

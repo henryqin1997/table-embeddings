@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "Name",
+            "ChainID",
+            "MMId",
+            "NumRes",
+            "SeqChainId"
+        ],
+        [
+            "Sample values",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Type",
+            "String",
+            "Int32",
+            "Int32",
+            "Int32"
+        ],
+        [
+            "Required",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "The Windows Azure Protein Databank (PDBA) of 3D Biological Macromolecular Structures | Microsoft Azure Marketplace",
+    "title": "",
+    "url": "https://datamarket.azure.com/dataset/teradiscoveries/pdb_access_1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00074-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 858561135,
+    "recordOffset": 858548907,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{44028=Learn how to use Microsoft PowerPivot for Excel 2010, with this and other DataMarket data, to create compelling self-service BI solutions.}",
+    "textBeforeTable": "Input parameters: Atom This service supports both fixed and flexible query. Some queries may include required input parameters. (learn more about query types) https://api.datamarket.azure.com/TeraDiscoveries/PDB_Access_1/v1/ Service root URL Sample Images Details Publisher Offer Terms The RCSB Protein Data Bank (http://www.rcsb.org) is the single worldwide repository of information about the 3D structures of large biological molecules. This offering places this information on Windows Azure to be used in bioinformatics. Included is information about the macromolecules\u2019 atomic structure, bond characteristics, residues and crystallography. This offering also contains information on the published work that describes how this data was obtained. Get support for this offering 6/26/2012 Date added: Reference, Health and Wellness, Science & Statistics Categories: TeraDiscoveries Published by: Data The Windows Azure Protein Databank (PDBA) of 3D Biological Macromolecular Structures",
+    "textAfterTable": "Results: Name Type AltLoc String AtomId Int32 AtomType String ChainId String Charge String Element String ICode String IsTerm Boolean MMId Int32 ModelSerialNum Int32 Name String Occupancy Decimal ResSeq Int32 Serial Int32 TempFactor Decimal U11 Int32 U12 Int32 U13 Int32 U22 Int32 U23 Int32 U33 Int32 x Decimal y Decimal z Decimal Author Input parameters: Name Sample values Type Required AuthorId Int32 AuthorName String MMId Int32 Results: Name Type AuthorId Int32 AuthorName String",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "Severity",
+            "Warning",
+            "Warning",
+            "Warning",
+            "Warning",
+            "Warning",
+            "Warning",
+            "Warning",
+            "Warning"
+        ],
+        [
+            "Category",
+            "javadoc",
+            "javadoc",
+            "javadoc",
+            "javadoc",
+            "javadoc",
+            "javadoc",
+            "javadoc",
+            "javadoc"
+        ],
+        [
+            "Rule",
+            "JavadocMethod",
+            "JavadocMethod",
+            "JavadocMethod",
+            "JavadocMethod",
+            "JavadocMethod",
+            "JavadocMethod",
+            "JavadocMethod",
+            "JavadocMethod"
+        ],
+        [
+            "Message",
+            "Missing a Javadoc comment.",
+            "Expected @param tag for 'transferEvent'.",
+            "Expected @param tag for 'transferEvent'.",
+            "Expected @param tag for 'buffer'.",
+            "Expected @param tag for 'length'.",
+            "Missing a Javadoc comment.",
+            "Missing a Javadoc comment.",
+            "Missing a Javadoc comment."
+        ],
+        [
+            "Line",
+            "34",
+            "41",
+            "48",
+            "48",
+            "48",
+            "52",
+            "56",
+            "60"
+        ]
+    ],
+    "pageTitle": "Apache Maven Wagon :: API \u2013 Checkstyle Results",
+    "title": "",
+    "url": "https://maven.apache.org/wagon/wagon-provider-api/checkstyle.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00316-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 882593391,
+    "recordOffset": 882577550,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 23 May 2015 19:24:06 GMT",
+    "textBeforeTable": "Summary The following document contains the results of Checkstyle 5.7.\u00a0 Checkstyle Results Version: 2.9 | Last Published: 2015-05-21 Checkstyle Results / API / Wagon / Maven / Apache Thanks Sponsoring Apache Foundation How Apache Works ASF Wagon Surefire Skins Shared Components SCM Resource Bundles Plugin Tools Plugin Testing Plugins Parent POMs",
+    "textAfterTable": "4 0 org/apache/maven/wagon/PathUtils.java 0 7 0 org/apache/maven/wagon/ResourceDoesNotExistException.java 0 3 0 org/apache/maven/wagon/StreamWagon.java 0 15 0 org/apache/maven/wagon/StreamingWagon.java 0 17 0 org/apache/maven/wagon/Streams.java 0 4 0 org/apache/maven/wagon/TransferFailedException.java 0 3 0 org/apache/maven/wagon/UnsupportedProtocolException.java 0 3 0 org/apache/maven/wagon/Wagon.java 1 32 0 org/apache/maven/wagon/WagonException.java 0 2 0 org/apache/maven/wagon/WagonUtils.java 0 2 0 org/apache/maven/wagon/authentication/AuthenticationException.java 0 3 0 org/apache/maven/wagon/authorization/AuthorizationException.java 0 3 0 org/apache/maven/wagon/events/SessionEvent.java 0 1 0 org/apache/maven/wagon/events/TransferEvent.java 0 6 0 org/apache/maven/wagon/events/TransferListener.java 0 8 0 org/apache/maven/wagon/observers/AbstractTransferListener.java 0 8 0 org/apache/maven/wagon/observers/ChecksumObserver.java 0 11 0 org/apache/maven/wagon/observers/Debug.java 0 19 0 org/apache/maven/wagon/proxy/ProxyInfo.java 3 6 0 org/apache/maven/wagon/proxy/ProxyInfoProvider.java 0 1 0 org/apache/maven/wagon/repository/Repository.java 0 24 0 org/apache/maven/wagon/resource/Resource.java 0 11 0 Rules Category Rule Violations Severity coding HiddenField ignoreConstructorParameter: \"true\" ignoreSetter: \"true\" 17 \u00a0Warning javadoc JavadocMethod scope: \"protected\" 296 \u00a0Warning JavadocVariable scope: \"protected\" 11 \u00a0Info",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

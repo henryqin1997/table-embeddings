@@ -1,0 +1,63 @@
+{
+    "relation": [
+        [
+            "Name",
+            "-assemblyInstanceId",
+            "-applianceInstanceId",
+            "-applianceIndex",
+            "-connectionName"
+        ],
+        [
+            "Alias",
+            "as",
+            "ap",
+            "ai",
+            "c"
+        ],
+        [
+            "Req'd",
+            "false",
+            "false",
+            "false",
+            "true"
+        ],
+        [
+            "Default Values",
+            "none",
+            "none",
+            "none",
+            "none"
+        ],
+        [
+            "Possible Values",
+            "A string representing the assemblyInstanceId.",
+            "A string representing the applianceId.",
+            "A string representing the instanceId.",
+            "A string representing the name of the connection to the Deployer."
+        ],
+        [
+            "Description",
+            "One or more assemblyInstanceIds.",
+            "One or more applianceIds.",
+            "One or more instanceIds.",
+            "The name of a connection to the Deployer."
+        ]
+    ],
+    "pageTitle": "Command Line Reference",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E28280_01/doc.1111/e22514/cmdlineref.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00290-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72947663,
+    "recordOffset": 72889385,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 14 Jan 2015 14:05:30 GMT",
+    "textBeforeTable": "Table A-26 describeApplianceInstances options Table A-26 shows the command options for describeApplianceInstances. A.1.26.3 Options Describes one or more deployed instances of an assembly. A.1.26.2 Description $ abctl describeApplianceInstances [-assemblyInstanceId String...] [-applianceInstanceId String...] [-applianceIndex String...] -connectionName String  A.1.26.1 Synopsis     Details for this command follow. A.1.26 describeApplianceInstances      $ abctl deployAssemblyInstance -assemblyInstanceId MyId  A.1.25.4.1 Deploying an Assembly Instance     Here are some command examples. A.1.25.4 Examples           Specifies the amount of time to wait for an asynchronous operation to complete successfully.   A string representing the number of seconds.   5   false   pt   -pollTime     Specifies whether to wait for an asynchronous operation",
+    "textAfterTable": "A.1.26.4 Examples Here are some command examples. A.1.26.4.1 Describe Appliance Instances  $ abctl describeApplianceInstances A.1.27 describeAssemblyArchives Details for this command follow. A.1.27.1 Synopsis  $ abctl describeAssemblyArchives [-assembly String...] -connectionName String A.1.27.2 Description Describes one or more assemblies in the Deployer. A.1.27.3 Options Table A-27 shows the command options for describeAssemblyArchives. Table A-27 describeAssemblyArchives options Name Alias Req'd Default Values Possible Values Description -assembly a false none A list of the assemblies to describe. Specifies the assemblies to describe.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "match-expr",
+            "cache-on-match",
+            "cache-on-match-failure"
+        ],
+        [
+            "Default",
+            "equals",
+            "true",
+            "false"
+        ],
+        [
+            "Description",
+            "(optional) Specifies the type of comparison performed with the value. Allowed values are equals, not-equals, greater, lesser, and in-range. If match-expr is greater or lesser, the value must be a number. If match-expr is in-range, the value must be of the form n1-n2, where n1 and n2 are numbers.",
+            "(optional) If true, caches the response if matching succeeds.",
+            "(optional) If true, caches the response if matching fails."
+        ]
+    ],
+    "pageTitle": "C (Sun Java System Application Server Platform Edition 9 Application Deployment Guide)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19501-01/819-3660/6n5s7klpo/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00203-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71356900,
+    "recordOffset": 71344063,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 27 Jan 2011 00:07:28 GMT",
+    "textBeforeTable": "cache Subelements Table A\u20139 The following table describes subelements for the cache element. Subelements sun-web-app (sun-web.xml) Superelements Configures caching for web application components. cache C Next: D Previous: B Sun Java System Application Server Platform Edition 9 Application Deployment Guide Appendix\u00a0A Deployment Descriptor Files \u00a0> C Sun Java System Application Server Platform Edition 9 Application Deployment Guide \u00a0> Documentation Home \u00a0>",
+    "textAfterTable": "cache-mapping zero or more\u00a0 Maps a URL pattern or a servlet name to its cacheability constraints.\u00a0 Attributes The following table describes attributes for the cache element. Table A\u201310 cache Attributes Attribute\u00a0 Default\u00a0 Description\u00a0 max-entries 4096 (optional) Specifies the maximum number of entries the cache can contain. Must be a positive integer.\u00a0 timeout-in-seconds 30 (optional) Specifies the maximum amount of time in seconds that an entry can remain in the cache after it is created or refreshed. Can be overridden by a timeout element. enabled true (optional) Determines whether servlet and JSP caching is enabled.\u00a0 Properties The following table describes properties for the cache element. Table A\u201311 cache Properties Property\u00a0 Default\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

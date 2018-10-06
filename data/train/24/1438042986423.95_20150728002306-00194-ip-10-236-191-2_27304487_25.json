@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Text to be padded:",
+            "Block length in bytes to pad:",
+            "Expected padded block (hex):",
+            "Padded block (hex):",
+            "Extracted text:"
+        ],
+        [
+            "aaa",
+            "25",
+            "61 61 61 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16",
+            "61 61 61 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16",
+            "aaa"
+        ],
+        [
+            "",
+            "",
+            "",
+            "OK",
+            "OK"
+        ]
+    ],
+    "pageTitle": "XDiceLock 8.0.0.1 for Apple Mac OS X, PKCS7 class (PKCS7 crypto pad algorithm) verified with data Normal text and DefaultCryptoRandomStream class (default virtual memory management) \u00ab DiceLock Security Blog",
+    "title": "",
+    "url": "http://blog.dicelocksecurity.com/dicelock/apple-mac-os-x-xdicelock-8-0-0-1-pkcs7-class-normal-text-defaultcryptorandomstream-class-default-virtual-memory-management/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00194-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 27329135,
+    "recordOffset": 27304487,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{125121=DiceLock is a trademark or registered trademark of his owner where applies. DiceLock research is the research to implement Self-corrector randomisation-encryption and method, european patent EP1182777 granted 08/21/2003 and US patent US7508945 granted 03/24/2009.}",
+    "textBeforeTable": "Once computed we\u2019ve got the following result: \u00a0 DefaultCryptoRandomStream class makes use of default virtual memory where the system can move pages of physical memory to and from a paging file on disk (manipulation of physical memory by the system is completely transparent to applications). Memory characteristic used in this test: \u2013 Cryptographic pad algorithm test: PKCS7 class \u2013 Bit stream memory management: DefaultCryptoRandomStream class (default virtual memory management) Verification components: Verified XDiceLock 8.0.0.1 for Apple Mac OS X At the bottom of the post you can find C++ source code being used to perform this test. As the new version XDiceLock 8.0.0.1 for Apple Mac OS X is developed, all individual components must be tested and verified, and in this article we verify PKCS7 class (computing PKCS7 cryptographic padding algorithm). Additionally DiceLock Digested configuration makes use currently of following hash digest algorithms: Sha 1, Sha 224, Sha 256, Sha 384, Sha 512, Ripemd 128, Ripemd 160, Ripemd 256 and Ripemd 320. DiceLock (both configurations) makes use of the following random number tests: Frequency Test, Block Frequency Test, Cumulative Sum Forward Test, Cumulative Sum Reverse Test, Runs Test, Longest Run Of Ones Test, Rank Test, Universal Test, Approximate Entropy Test, Serial Test and Discrete Fourier Transform Test. DiceLock encryption architecture improves symmetric ciphers like block cipher as Advanced Encryption Standard (AES 128, AES 192 and AES 256) with different block cipher operation modes and",
+    "textAfterTable": "Text to be padded: aaa Block length in bytes to pad: 5 Expected padded block (hex): 61 61 61 02 02 Padded block (hex): 61 61 61 02 02 OK Extracted text: aaa OK Text to be padded: aaa Block length in bytes to pad: 6 Expected padded block (hex): 61 61 61 03 03 03 Padded block (hex): 61 61 61 03 03 03 OK Extracted text: aaa OK Text to be padded: aaa Block length in bytes to pad: 7 Expected padded block (hex): 61 61 61 04 04 04 04",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

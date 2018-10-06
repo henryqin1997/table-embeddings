@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Prefix",
+            "Next Hop",
+            "Interface"
+        ],
+        [
+            "Description",
+            "Nonrecursive prefixes detected on the node.",
+            "Routing next hop.",
+            "Interface associated with the nonrecursive prefix."
+        ]
+    ],
+    "pageTitle": "Cisco ASR 9000 Series Aggregation Services Router IP Addresses and Services Command Reference, Release 4.1 - Cisco Express Forwarding Commands [Cisco IOS XR Software (End-of-Sale)] - Cisco",
+    "title": "This table describes the significant fields shown in the display. Table 12 show cef ipv4 non-recursive Command Field Descriptions",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r4-1/addr_serv/command/reference/b_ipaddr_cr41asr9k/b_ipaddr_cr41asr9k_chapter_011.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00308-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 363101515,
+    "recordOffset": 363038376,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Syntax Description node-id ] interface-instance | location [ interface-type ipv4-address ] | mpls | ipv6 ] [ nexthop [ ipv4 statistics adjacency clear To clear adjacency packet and byte counter statistics, use the clear adjacency statistics command in EXEC mode. clear adjacency statistics show cef vrf show cef mpls unresolved show cef mpls interface show cef mpls adjacency hardware show cef mpls adjacency show cef ipv6 unresolved show cef ipv6 summary show cef ipv6 resource show cef ipv6 non-recursive show cef ipv6 interface show cef ipv6 hardware show cef ipv6 exceptions show cef ipv6 exact-route show cef ipv6 drops show cef ipv6 adjacency hardware show cef ipv6 adjacency show cef ipv6 show cef ipv4 unresolved show cef ipv4 summary show cef ipv4 resource show cef ipv4 non-recursive show cef ipv4 interface bgp-policy-statistics show cef ipv4 interface show cef ipv4 hardware show cef ipv4 exceptions show cef ipv4 exact-route show cef",
+    "textAfterTable": "Physical interface instance. Naming notation is rack/slot/module/port and a slash mark between values is required as part of the notation. rack: Chassis number of the rack. slot: Physical slot number of the line card. module: Module number. A physical layer interface module (PLIM) is always 0. port: Physical port number of the interface. Note\u00a0\u00a0\u00a0 In references to a Management Ethernet interface located on a route processor card, the physical slot number is alphanumeric ( RSP0 ) and the module is CPU0. Example: interface MgmtEth0/ RSP0 Virtual interface instance. Number range varies depending on interface type. For more information about the syntax for the router, use the question mark (?) online help function. location node-id (Optional) Clears detailed adjacency statistics for the designated node. The node-id argument is entered in the rack/slot/module notation. Command Default No default behavior or values Command Modes EXEC Command History",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

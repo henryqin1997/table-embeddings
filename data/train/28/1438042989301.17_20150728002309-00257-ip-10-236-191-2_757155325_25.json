@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Description",
+            "CC1101EM 315 and 433MHz Reference Design",
+            "CC1101EM 868 and 915MHz Reference Design",
+            "CC1110EM 315MHz Reference Design",
+            "CC1110EM 433MHz Reference Design"
+        ],
+        [
+            "Part Number",
+            "CC1101EM433_REFDES",
+            "CC1101EM868-915_REFDES",
+            "CC1110EM315_REFDES",
+            "CC1110EM433_REFDES"
+        ],
+        [
+            "Company",
+            "Texas Instruments",
+            "Texas Instruments",
+            "Texas Instruments",
+            "Texas Instruments"
+        ],
+        [
+            "Tool Type",
+            "Reference Designs",
+            "Reference Designs",
+            "Reference Designs",
+            "Reference Designs"
+        ]
+    ],
+    "pageTitle": "Block Diagram (SBD) - Portable Ultrasound - TI.com",
+    "title": "",
+    "url": "http://www.ti.com/solution/ultrasound_system_portable",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00257-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 757181775,
+    "recordOffset": 757155325,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "ajaxCall(stringConcatenated1,'tiDesign'); stringConcatenated1 = string4 + string5 + string6; string6 = '585'; string5 = '/docs/getcomponentaction.tsp?compVariationId=9379&appId='; string4 = '/foldercomponents'; // first string var string4, string5, string6,stringConcatenated1;",
+    "textAfterTable": "Description What's New TI speeds ultrasound design and reduces board space by more than 50% with the TX810, the industry's first integrated transmit/receive switch Similar to the fixed Ultrasound systems, portable ultrasound systems use an array of receivers to build an image by time shifting, scaling, and intelligently summing echo energy. However, the challenge with developing a portable system is maintaining a acceptable image quality while achieving portability in terms of size and runtime. Often this is accomplished by reducing the number of channels used in the device, trading off image quality and information for a reduction in power consumption and size. The concept of time shifting and scaling, which is based on receiving signals from a transducer array, provides the ability to \"focus\" on a single point in the scan region. By subsequently focusing at different points, an image is assembled. Using more integrated solutions can help increase signal integrity and reliability. Using a HV pulsar which integrates the DAC, a low pass filter as well as an amplifier is an example of this, simplifying the filtering requirements and reducing the noise in the transmit signal chain. Likewise using the complete integrated analog portable ultrasound receive frontend reduces the noise and the number of components needed to support the channels used in the design. Since the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

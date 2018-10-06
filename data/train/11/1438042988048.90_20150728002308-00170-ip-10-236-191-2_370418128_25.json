@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Router> enable",
+            "configure terminal Example: Router# configure terminal",
+            "router eigrp virtual-instance-name Example: Router(config)# router eigrp virtual-name1",
+            "Do one of the following: address-family ipv4 [multicast] [unicast] [vrf vrf-name] autonomous-system autonomous-system-number address-family ipv6 [unicast] [vrf vrf-name] autonomous-system autonomous-system-number Example: Router(config-router)# address-family ipv4 autonomous-system 45000 Router(config-router)# address-family ipv6 autonomous-system 45000",
+            "network ip-address [wildcard-mask] Example: Router(config-router-af)# network 172.16.0.0",
+            "end Example: Router(config-router-af)# end"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Configures the EIGRP routing process and enters router configuration mode.",
+            "Enters address family configuration mode to configure an EIGRP IPv4 or IPv6 routing instance.",
+            "Specifies a network for the EIGRP routing process.",
+            "Exits address family configuration mode and returns to privileged EXEC mode."
+        ]
+    ],
+    "pageTitle": "Configuring EIGRP\u00a0 [Support] - Cisco Systems",
+    "title": "",
+    "url": "http://www.cisco.com/en/US/docs/ios-xml/ios/iproute_eigrp/configuration/15-2s/config-eigrp.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00170-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 370497763,
+    "recordOffset": 370418128,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{668387=Router B will accept key 1 or key 2, and will use key 1 to send MD5 authentication, because key 1 is the first valid key of the key chain. Key 1 will no longer be valid to be used for sending after December 4, 2006. After this date, key 2 would be used to send MD5 authentication because it is valid until January 4, 2007., 49115=EIGRP authentication is configurable on a per-interface basis. Packets exchanged between neighbors connected through an interface are authenticated. Message digest algorithm 5 (MD5) authentication is supported to prevent the introduction of unauthorized information from unapproved sources. MD5 authentication is defined in RFC 1321. The Hash-based Message Authentication Code (HMAC)-Secure Hash Algorithms (SHA)-256 authentication method is also supported. When you use the HMAC-SHA-256 authentication method, a shared secret key is configured in all routers attached to a common network. For each packet, the key is used to generate and verify a message digest that gets added to the packet. The message digest is a one-way function of the packet and the secret key. For more information on HMAC-SHA-256 authentication, see FIPS PUB 180-2, SECURE HASH STANDARD (SHS) for the SHA-256 algorithm, and RFC 2104 for the HMAC algorithm., 662782=Router B will accept key 1 or key 2, and will use key 1 to send MD5 authentication, because key 1 is the first valid key of the key chain. Key 1 will no longer be valid after December 4, 2006. After this date, key 2 would be used to send MD5 authentication, and this key is valid until January 4, 2007., 277029=Router(config-router-af-topology)# summary-metric 192.168.0.0/16 10000 10 255 1 1500, 368225=Router(config-keychain-key)# send-lifetime 04:00:00 Dec 4 2006 infinite, 366912=Router(config-keychain-key)# accept-lifetime 04:00:00 Jan 4 2007 infinite, 237926=Router(config-router)# default-metric 1000 100 250 100 1500, 719230=RFC 1321, 719554=RFC 2104}",
+    "textBeforeTable": "DETAILED STEPS 6.\u00a0\u00a0\u00a0 end 5.\u00a0\u00a0\u00a0 network ip-address [wildcard-mask] address-family ipv6 [unicast] [vrf vrf-name] autonomous-system autonomous-system-number address-family ipv4 [multicast] [unicast] [vrf vrf-name] autonomous-system autonomous-system-number 4.\u00a0\u00a0\u00a0Do one of the following: 3.\u00a0\u00a0\u00a0 router eigrp virtual-instance-name 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS Configuring the router eigrp command with the virtual-instance-name argument creates an EIGRP configuration referred to as an EIGRP named configuration. The EIGRP named configuration does not create an",
+    "textAfterTable": "Enabling the EIGRP IPv6 VRF-Lite Named Configuration SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 router eigrp virtual-instance-name 4.\u00a0\u00a0\u00a0 address-family ipv6 vrf vrf-name autonomous-system autonomous-system-number 5.\u00a0\u00a0\u00a0 end DETAILED STEPS \u00a0 Command or Action Purpose Step\u00a01 enable Example: Router> enable \u00a0 Enables privileged EXEC mode. Enter your password if prompted. \u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

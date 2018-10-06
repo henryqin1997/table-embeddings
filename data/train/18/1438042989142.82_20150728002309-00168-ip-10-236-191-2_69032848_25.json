@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Function",
+            "slapi_dn_beparent()",
+            "slapi_dn_ignore_case()",
+            "slapi_dn_isbesuffix()",
+            "slapi_dn_isbesuffix_norm()",
+            "slapi_dn_isparent()",
+            "slapi_dn_isroot()",
+            "slapi_dn_issuffix()",
+            "slapi_dn_normalize()",
+            "slapi_dn_normalize_case()",
+            "slapi_dn_normalize_to_end()",
+            "slapi_dn_parent()",
+            "slapi_dn_plus_rdn()"
+        ],
+        [
+            "Description",
+            "Gets a copy of the DN of the parent of an entry.",
+            "Converts all characters in a DN to lowercase.",
+            "Determines if a DN is the suffix of the local database.",
+            "Determines if a DN is the suffix of the local database.",
+            "Determines if a DN is the parent of a specific DN.",
+            "Determines if a DN is the root DN for the local database.",
+            "Determines if a DN is equal to a specified suffix.",
+            "Converts a DN to canonical format.",
+            "Converts a DN to canonical format and all characters to lower case.",
+            "Normalizes part of a DN value.",
+            "Gets the DN of the parent of an entry.",
+            "Adds an RDN to a DN."
+        ]
+    ],
+    "pageTitle": "Part\u00a0II Directory Server Plug-In API Reference (Sun Java System Directory Server Enterprise Edition 6.0 Developer's Guide)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19693-01/819-0996/6n3cr1rc1/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989142.82/warc/CC-MAIN-20150728002309-00168-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 69135323,
+    "recordOffset": 69032848,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{821590=May be NULL if no backend is associated with the current operation., 445977=SLAPI_MATCHINGRULE_SYNTAX, the matching rule syntax OID string 1.3.6.1.4.1.1466.115.121.1.15, 854340=Function called at server startup. May be called more than once.\u00a0}",
+    "lastModified": "Thu, 27 Jan 2011 03:01:18 GMT",
+    "textBeforeTable": "Table 15\u20131 Quick Reference to Data Structures Quick Reference Tables This chapter covers data types and structures for use in plug-in functions. Table 15\u20131 summarizes the list of available data structures. Table 15\u20132 summarizes the list of callbacks. Chapter\u00a015 Data Type and Structure Reference For help developing Directory Server plug-ins, read Part\u00a0I, Directory Server Plug-In API Guide. Chapter\u00a018, Parameter Block Reference covers the server parameter block holding data pertaining to a particular operation Chapter\u00a017, Function Reference, Part II continues coverage of the plug-in API functions, in alphabetic order Chapter\u00a016, Function Reference, Part I covers plug-in API functions, both by functional area and also in alphabetic order Chapter\u00a015, Data Type and Structure Reference covers key data structures, not including the server parameter block This part includes the following chapters: The Directory Server plug-in API allows you to develop plug-ins, libraries registered with a Directory Server instance that customize and extend server capabilities. This part provides a complete reference to the API. Part\u00a0II Directory Server Plug-In API Reference Next: Appendix\u00a0A NameFinder Application Previous: Part\u00a0I Directory Server Plug-In API Guide Sun Java System Directory Server Enterprise Edition",
+    "textAfterTable": "Slapi_MatchingRuleEntry Matching rule handled by the plug-in\u00a0 Slapi_Mod A modification to an individual attribute\u00a0 Slapi_Mods Set of modifications to a directory entry\u00a0 Slapi_Mutex Mutex for thread synchronization\u00a0 Slapi_Operation Pending LDAP operation\u00a0 Slapi_PBlock Parameter block containing LDAP operation data\u00a0 Slapi_PluginDesc Plug-in description that you provide\u00a0 Slapi_RDN Relative Distinguished Name\u00a0 Slapi_Value Individual attribute value\u00a0 Slapi_ValueSet Set of values of an attribute\u00a0 vattr_type_thang Attribute that may be virtual\u00a0 Table 15\u20132 Quick Reference to Callbacks Data Structure or Callback\u00a0 Short Description\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

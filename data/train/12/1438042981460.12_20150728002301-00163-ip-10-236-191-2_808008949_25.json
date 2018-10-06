@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Tag",
+            "config_directory (see \u0092postconf -d\u0092 output)",
+            "daemon_timeout (18000s)",
+            "defer_transports (empty)",
+            "delay_logging_resolution_limit (2)",
+            "helpful_warnings (yes)",
+            "ipc_timeout (3600s)",
+            "process_id (read-only)",
+            "process_name (read-only)",
+            "queue_directory (see \u0092postconf -d\u0092 output)",
+            "syslog_facility (mail)",
+            "syslog_name (postfix)"
+        ],
+        [
+            "Description",
+            "The default location of the Postfix main.cf and master.cf configuration files.",
+            "How much time a Postfix daemon process may take to handle a request before it is terminated by a built-in watchdog timer.",
+            "The names of message delivery transports that should not deliver mail unless someone issues \"sendmail -q\" or equivalent.",
+            "The maximal number of digits after the decimal point when logging sub-second delay values.",
+            "Log warnings about problematic configuration settings, and provide helpful suggestions.",
+            "The time limit for sending or receiving information over an internal communication channel.",
+            "The process ID of a Postfix command or daemon process.",
+            "The process name of a Postfix command or daemon process.",
+            "The location of the Postfix top-level queue directory.",
+            "The syslog facility of Postfix logging.",
+            "The mail system name that is prepended to the process name in syslog records, so that \"smtpd\" becomes, for example, \"postfix/smtpd\"."
+        ]
+    ],
+    "pageTitle": "qmgr - Unix, Linux Command",
+    "title": "",
+    "url": "http://www.tutorialspoint.com/cgi-bin/printversion.cgi?tutorial=unix_commands&file=qmgr.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00163-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 808017151,
+    "recordOffset": 808008949,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "qmgr(8) daemon maintains the following queues: The    MAIL QUEUES  Mail addressed to the local double-bounce address is logged and discarded. This stops potential loops caused by undeliverable bounce notifications. mastertrivial-rewriteqmgr DESCRIPTION     (8) process manager. (8) daemon. This program expects to be run from the (8) daemon awaits the arrival of incoming mail and arranges for its delivery via Postfix delivery processes. The actual mail routing strategy is delegated to the  The     qmgr [generic Postfix daemon options]    SYNOPSIS NAME       qmgr - Unix, Linux Command Copyright \u00a9 tutorialspoint.com     qmgr - Postfix queue manager    Advertisements",
+    "textAfterTable": "defer Per-recipient status information about why mail is delayed. These files are maintained by the defer(8) daemon. trace Per-recipient status information as requested with the Postfix \"sendmail -v\" or \"sendmail -bv\" command. These files are maintained by the trace(8) daemon. The qmgr(8) daemon is responsible for asking the bounce(8), defer(8) or trace(8) daemons to send delivery reports. STRATEGIES   The queue manager implements a variety of strategies for either opening queue files (input) or for message delivery (output). Tag Description leaky bucket This strategy limits the number of messages in the active queue and prevents the queue manager from running out of memory under heavy load. fairness When the active queue has room, the queue manager takes one message from the incoming queue and one from the deferred queue. This prevents a large mail backlog from blocking the delivery of new mail. slow start This strategy eliminates \"thundering herd\" problems by slowly adjusting the number of parallel deliveries to the same destination. round The queue",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

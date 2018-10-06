@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "appStripe",
+            "resourceTypeName"
+        ],
+        [
+            "Definition",
+            "Specifies the application stripe from where to fetch the resource type.",
+            "Specifies the name of the resource type to fetch."
+        ]
+    ],
+    "pageTitle": "Infrastructure Security Custom WLST Commands - 11g Release 1 (10.3.6)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E25178_01/web.1111/e13813/custom_infra_security.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00063-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74061423,
+    "recordOffset": 73969007,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{243890=The following command deletes the engine with ID id1234., 63668=The following command adds a self-signed certificate with DN cn=www.acme.com, key size 1024 to wallet1, for Oracle Internet Directory instance oid1, in application server instance inst1:, 117395=The following command generates a key pair with DN cn=www.acme.com, key size 1024, algorithm RSA and alias mykey in keys.jks, for Oracle Virtual Directory instance ovd1 in application server instance inst1:, 241513=The following command deletes the authentication engine with ID id1234., 646257=cacheTimeOut\u2014Amount of time cached information remains in the OAM Agent cache when the information is neither used nor referenced. Default = 1800 (seconds)., 882576=HOK Symmetric Key Generation Algorithm: http://www.w3.org/2001/04/xmlenc#aes128-cbc, 59210=The following command generates a certificate signing request with DN cn=www.acme.com and key size 1024 in wallet1, for Oracle Internet Directory instance oid1, in application server instance inst1:, 717827=cacheTimeout\u2014Amount of time cached information remains in the OAM Agent cache when the information is neither used nor referenced. Default = 1800 (seconds).}",
+    "lastModified": "Thu, 20 Sep 2012 17:34:53 GMT",
+    "textBeforeTable": "createCred(map, key, user, password, [desc]) Optional arguments are enclosed in square brackets. Syntax      Creates a new credential in the domain credential store with a given map name, key name, type, user name and password, URL and port number. In the event of an error, the command returns a WLSTException. This command runs in interactive mode only. Description    Online command that creates a new credential in the domain credential store. createCred    password=\"myPassw\", desc=\"updated passw cred to connect to app xyz\") wls:/mydomain/serverConfig> updateCred(map=\"myMap\", key=\"myKey\", user=\"myUsr\",  The following invocation updates a password credential with the specified data: Example       Specifies a string describing the credential. desc   Specifies the credential password. password   Specifies the credential user name. user   Specifies a key name. key",
+    "textAfterTable": "user Specifies the credential user name. password Specifies the credential password. desc Specifies a string describing the credential. Example The following invocation creates a new password credential with the specified data: wls:/mydomain/serverConfig> createCred(map=\"myMap, key=\"myKey\", user=\"myUsr\",  password=\"myPassw\", desc=\"updated usr name and passw to connect to app xyz\") deleteCred Online command that removes a credential in the domain credential store. Description Removes a credential with given map name and key name from the domain credential store. In the event of an error, the command returns a WLSTException. Syntax deleteCred(map,key) Argument Definition",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

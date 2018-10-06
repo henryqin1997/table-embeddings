@@ -1,0 +1,75 @@
+{
+    "relation": [
+        [
+            "Destination",
+            "Valencia",
+            "S. P Torell\u00f3-Vic",
+            "Pals",
+            "Zaragoza",
+            "Blanes",
+            "Lloret de Mar",
+            "Vielha",
+            "Previous"
+        ],
+        [
+            "Co.",
+            "BA",
+            "PO",
+            "SA",
+            "AR",
+            "BB",
+            "SA",
+            "AL",
+            ""
+        ],
+        [
+            "Platform",
+            "19",
+            "22",
+            "30",
+            "07",
+            "03",
+            "02",
+            "30",
+            ""
+        ],
+        [
+            "Scheduled",
+            "11:15",
+            "11:20",
+            "11:25",
+            "11:35",
+            "11:35",
+            "11:45",
+            "11:45",
+            ""
+        ],
+        [
+            "Real",
+            "11:12",
+            "11:37",
+            "11:48",
+            "11:55",
+            "11:51",
+            "11:51",
+            "11:35",
+            "Next"
+        ]
+    ],
+    "pageTitle": "Oficial site: Estaci\u00f3n de autobuses Barcelona Nord",
+    "title": "",
+    "url": "https://www.barcelonanord.cat/en/home/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987228.91/warc/CC-MAIN-20150728002307-00170-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 884060171,
+    "recordOffset": 884027525,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "ARRIVALS DEPARTURES var comienzo_slider_llegadas_responsive = '34'; var comienzo_slider_salidas_responsive = '42'; var comienzo_slider_llegadas = '9'; var comienzo_slider_salidas = '12'; }); }); } results: function() {} noResults: '', messages: { }, }); \"width\": \"56%\" $(this).autocomplete(\"widget\").css({ open: function (event, ui) { appendTo: '#auxdiv', minLength: 3, }, }) ); return matcher.test( value ) || matcher.test( normalize( value ) ); value = value.label || value.value || value; response( $.grep( availableTags, function( value )",
+    "textAfterTable": "Destination Co. Platform Scheduled Real Ll\u00edvia AL 32 09:30 09:39 Lloret de Mar SA 25 09:45 09:57 Santiago Composte RC 27 09:45 09:57 Valencia BA 23 10:00 10:07 Lloret-Tossa Mar SA 24 10:00 10:07 Alicante BA 22 10:00 10:07 Cadaqu\u00e9s SA 26 10:15 10:19 Previous Next Destination Co. Platform Scheduled Real Lleida AL 19 10:15 10:19 Marrakech AP 9 10:30 12:28 Andorra (Directe) AL 33 10:30 10:32 Zaragoza-Madrid AR 21 10:30 10:37 Lleida N-II AL 30 10:30 10:38 Pals SA 26 10:30 10:37 Girona-Aeroport BG 29 10:45 10:49 Previous Next Destination Co. Platform Scheduled Real Lloret-Tossa Mar SA 24 10:45 10:56 Girona-Figueres BB 27 10:45 10:49 Solsona AL 19 11:00 11:05 Lloret-Tossa Mar SA 24 11:15 11:23 La Bisbal SA",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

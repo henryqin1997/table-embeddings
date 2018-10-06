@@ -1,0 +1,67 @@
+{
+    "relation": [
+        [
+            "Numbers",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "Total: 15"
+        ],
+        [
+            "Alphabet",
+            "Z",
+            "y",
+            "X",
+            "w",
+            "V",
+            ""
+        ],
+        [
+            "Dates",
+            "02-02-2004",
+            "13-apr-2005",
+            "17.aug.2006",
+            "01.Jan.2005",
+            "05/12/2006",
+            ""
+        ],
+        [
+            "Currency",
+            "5.00",
+            "",
+            "6.50",
+            "4.20",
+            "7.15",
+            "Total: 29.55"
+        ],
+        [
+            "Unsortable",
+            "This",
+            "Column",
+            "Is",
+            "Unsortable",
+            "See?",
+            "Original example"
+        ]
+    ],
+    "pageTitle": "Help:Sorting/ja - Meta",
+    "title": "",
+    "url": "https://meta.wikimedia.org/wiki/Help:Sorting/ja",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.50/warc/CC-MAIN-20150728002310-00123-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 875776183,
+    "recordOffset": 875750872,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{9908=The sort modes (the data types, which, in addition to the choice \"ascending\" or \"descending\", determine the sorting order) are as follows; in the given order (as soon as there is a match, subsequent criteria are not applicable, e.g., 24-12-2007 is a date, not a number. For the criteria, tags (e.g. span, sup, sub) are ignored., 33627=The first example demonstrates that text is positioned at zero, and that e.g. e3 for 1000 is not allowed; use 1e3 instead. Using Template:E, a number in scientific notation can be displayed with a superscript, while still allowing numeric sorting (compare the method described in the next section). It also shows that \"-\" should be used, not \"\u2212\". The first element \"12 or 13 sm=n\" has a visible \"sm=n\", although it is normally made invisible; when this element is at the top, numeric sorting mode applies., 54703={{formatnum:{{padleft:{{#expr:((299792458.056 - .5) round 0)}}|16|0}}}}.{{padleft:{{#expr:(1000000*(299792458.056 - ((299792458.056 - .5) round 0))) round 0}}|6|0}} gives:, 78465=For years BC we can use, for example, !9937-09-23 for -0062-09-23 (subtract the year number BC from 10000, or the absolute value of the astronomical year from 9999).}",
+    "lastModified": "Fri, 03 Jul 2015 17:11:57 GMT",
+    "textBeforeTable": "Text after a number (e.g. a footnote) does not affect the sorting order, if the sorting mode is numeric. However, if the number at the top has text after it, this makes the sorting mode alphabetic, unless it ends with a (typically invisible) \"sm=n\".Remember that the results depend on fixes and enhancements in MediaWiki:Common.js; the description applies to the version on Meta. Copies of this help page on other sites are useful for comparison. A sysop can copy the JavaScript-code from Meta. Examples[edit] The sort mode is determined by the table element that is currently in the first non-blank row below the header. (To minimize the deviation from wikibits.js, the code \"ns=..\" works in the first element below the header instead of in the header.) In the case of different data types within one column (according to the criteria mentioned above) the sort mode may change after sorting, which can give a cycle of four or even more instead of two. This is confusing and gives undesired sorting orders, so that can better be avoided. However, it can be complicated to assess whether an element can ever be at the top after any sorting operations on the same and other columns, and this can also change after deleting a row, or adding a column. Therefore it is wise to make sure that every element matches the criterion for the",
+    "textAfterTable": "123 564,589.7e12 9 -80 80 abc 5 abc 80 70 600 first alphabetic, later also numeric mode 123.4 ghi 2,500,000,000 300,000,000 3,000,000 abc 5,000,000 2,000 def 4,000 9,999 800,000 900,000 currencies $ 9 $ 80 $ 70 $ 600 currencies \u20ac 9 \u20ac 80 \u20ac 70 \u20ac 600 currencies \u00a3 9 \u00a3 80 \u00a3 70 \u00a3 600 currencies \u00a5 9 \u00a5 80 \u00a5 70 \u00a5 600 comparison a 9 a 80 a 70 a 600 comparison e 9 e 80 e 70 e 600",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 4,
+    "headerRowIndex": 0
+}

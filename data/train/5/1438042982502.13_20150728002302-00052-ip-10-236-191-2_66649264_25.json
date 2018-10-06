@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Function",
+            "slapi_send_ldap_referral()",
+            "slapi_send_ldap_result()",
+            "slapi_send_ldap_search_entry()"
+        ],
+        [
+            "Description",
+            "Processes an entry\u2019s LDAP v3 referrals.",
+            "Sends a result code back to the client.",
+            "Sends an entry found by a search back to the client."
+        ]
+    ],
+    "pageTitle": "Functions by Functional Area (Sun Java System Directory Server Enterprise Edition 6.0 Developer's Guide)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19693-01/819-0996/gaobb/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00052-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 66665219,
+    "recordOffset": 66649264,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 27 Jan 2011 03:00:54 GMT",
+    "textBeforeTable": "Table 16\u20131 Functions for Handling Parameter Blocks This section categorizes plug-in functions by functional area. Functions by Functional Area Next: Function Descriptions, Part I Previous: Chapter\u00a015 Data Type and Structure Reference Sun Java System Directory Server Enterprise Edition 6.0 Developer's Guide Chapter\u00a016 Function Reference, Part I \u00a0> Functions by Functional Area Part\u00a0II Directory Server Plug-In API Reference \u00a0> Sun Java System Directory Server Enterprise Edition 6.0 Developer's Guide \u00a0> Documentation Home \u00a0>",
+    "textAfterTable": "slapi_pblock_set() Sets the value of a parameter block.\u00a0 Table 16\u20132 Functions for Handling Memory Function\u00a0 Description\u00a0 slapi_ch_array_free() Frees an existing array.\u00a0 slapi_ch_bvdup() Makes a copy of an existing berval structure. slapi_ch_bvecdup() Makes a copy of an array of existing berval structures. slapi_ch_calloc() Allocates space for an array of a number of elements of a specified size.\u00a0 slapi_ch_free() Frees space allocated by the slapi_ch_malloc(), slapi_ch_realloc(), and slapi_ch_calloc() functions. slapi_ch_free_string() Frees an existing string.\u00a0 slapi_ch_malloc() Allocates space in memory.\u00a0 slapi_ch_realloc() Changes the size of a block of allocated memory.\u00a0 slapi_ch_strdup() Makes a",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

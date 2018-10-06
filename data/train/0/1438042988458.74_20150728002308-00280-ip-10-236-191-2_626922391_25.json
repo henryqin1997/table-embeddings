@@ -1,0 +1,41 @@
+{
+    "relation": [
+        [
+            "BugId",
+            "6895447",
+            "6851973"
+        ],
+        [
+            "Category",
+            "java",
+            "jgss"
+        ],
+        [
+            "Subcategory",
+            "classes_util_i18n",
+            "krb5plugin"
+        ],
+        [
+            "Description",
+            "(tz) Support tzdata2009p",
+            "ignore incoming channel binding if acceptor does not set one"
+        ]
+    ],
+    "pageTitle": "Java SE 1.4.2 Advanced",
+    "title": "",
+    "url": "http://www.oracle.com/technetwork/java/javase/documentation/overview-142120.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00280-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 626952323,
+    "recordOffset": 626922391,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{101852=Refer to Gnome bug 440691 and to CR 6771532 for further information., 87703=Refer also to 6831124 for further information., 104756=We have filed a P1 (critical) bug 502926 with Novell. Refer also to CR 6831124 for further information., 87500=We have filed a P1 (critical) bug 502926 with Novell. Novell has a fix for the problem and is now working on its delivery., 120544=Solaris users can use the -XX:-UseVMInterruptibleIO JVM Option Switch in order to have applications on Solaris behave similarly under interrupt conditions to applications on Linux or Windows. Refer to 6382902.}",
+    "textBeforeTable": "Bug Fixes \u00a0 Changes in 1.4.2_24-rev-b06 \u00a0 (tz) Support tzdata2009r classes_util_i18n java 6899397 RegTest-test java/nio/channels/FileChannel/Transfer.java fails classes_nio java 4824045 call_catch_cleanup clones nodes without recomputing anti dependences compiler2 hotspot 6560907 Description Subcategory Category BugId Bug Fixes \u00a0 Changes in 1.4.2_24-rev-b07 \u00a0 classes_util_i18n|(tz) Support tzdata2009s java 2185534 6904611 Description Subcategory Category BugId Bug Fixes \u00a0 Changes in 1.4.2_24-rev-b08 \u00a0 Multithreaded application hangs accessing LDAP ldap jndi 6516308 ignore incoming channel binding if acceptor does not set one krb5plugin jgss 6851973 j4b revisions are not recognized as \"platform versions\" install javawebstart 6715420 Service Tag support for JRE for solaris/linux/windows sunservicetags java 6803304 (tz) Support tzdata2009s classes_util_i18n java 6904611 RegTest-test java/nio/channels/FileChannel/Transfer.java fails classes_nio java 4824045 call_catch_cleanup clones nodes without recomputing anti dependences compiler2 hotspot 6560907 Description Subcategory Category BugId Bug fixes are listed in the following table. \u00a0 Bug Fixes \u00a0 There",
+    "textAfterTable": "\u00a0 Changes in 1.4.2_24-rev-b05 Please note that fixes from prior revisions (1.4.2_23-rev) are included in this revision. \u00a0 Changes in 1.4.2_24 The full internal version number for this update release is 1.4.2_24-b04 (where \"b\" means \"build\"). The external version number is 1.4.2_24. OlsonData 2009m This release contains Olson time zone data version 2009m. For more information, refer to Timezone Data Versions in the JRE Software . Root Certificates There are no updates to Root Certificates in this release. \u00a0 Bug Fixes This release contains fixes for one or more security vulnerabilities. For more information, please see Sun Alerts 270474, 270475, and 270476. Bug fixes for vulnerabilities are listed in the following table. BugId Category Subcategory Description 6631533 java classes_2d ICC_Profile allows detecting if some files exist 6815780 java classes_2d TrueType font parsing crash when stressing Sun Bug 6751322 test case 6822057 java classes_2d X11 and Win32GraphicsDevice don't clone arrays returned from getConfigurations() 6862969 java classes_2d JPEG JFIF Decoder issue 6862970 java classes_2d Image Color Profile parsing issue 6872357 java classes_2d JRE AWT setDifflCM vulnerable to Stack Overflow 6872358 java classes_2d JRE AWT",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

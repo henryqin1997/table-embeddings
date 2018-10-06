@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Attribute Name",
+            "escapeText",
+            "trim",
+            "user"
+        ],
+        [
+            "Type",
+            "boolean",
+            "boolean",
+            "java.lang.String"
+        ],
+        [
+            "Description",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Maven 1.x - Tag Documentation",
+    "title": "",
+    "url": "http://maven.apache.org/archives/maven-1.x/tags.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00025-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 157331319,
+    "recordOffset": 157323117,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 22 Apr 2013 05:47:28 GMT",
+    "textBeforeTable": "[tag libraries] [tags] Tag Libraries The following document contains a summary of all theJellytag libraries. [tag libraries] [tags] Tag Documentation Opens in a new window External Link Legend Development Process FAQs Checkstyle Simian Report CPD Report PMD Report Jira Roadmap Report Jira Report Task List PDF Documentation Link Check Report Project License Unit Tests Test Xref Source Xref Jelly Tag Documentation JDiff JavaDoc Warnings Report JavaDoc Report JavaDocs Developer Activity File Activity Change Log Metrics Project Reports Project Info About Project Documentation For Developers Related projects Maven projects Related links Powered by Maven Resources PDF",
+    "textAfterTable": "jelly:jeez This tag library groups together the ant and werkz tag libraries into one namespace.This allows Maven scripts to set this as the default namespace to avoid folks having to usenamespace prefixes for common stuff. Tag Name Description tagDef This tag defines a dynamic tag in Jelly script. When the tag is invokedany attributes will be passed in as variables and the definition of thetag can use <define:invokeBody&gtto invoke its body. This tag is similar to the <define:tag>tag in the definetag library. target Wraps a Werkz <goal> to appear as anant <target> . jelly:maven Various jelly tags provided by Maven to allow easier access its facilities. Tag Name Description addPath This class takes a given path using an id and appends anotherpath (using refid ) to it. concat Concat a set of files together into a single file. copyResources A tag to copy resources to a given directory get A tag to retrieve values from plugins input Concat a set of files together into a single file. installPlugin A",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

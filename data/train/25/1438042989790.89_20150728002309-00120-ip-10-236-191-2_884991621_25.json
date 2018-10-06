@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "[in]",
+            "[in]",
+            "[in]"
+        ],
+        [
+            "last_access_time",
+            "last_modified_time",
+            "cc"
+        ],
+        [
+            "The last time the file was accessed.",
+            "The last time the file was modified.",
+            "A CompletionCallback to be called upon completion of Touch()."
+        ]
+    ],
+    "pageTitle": "pp::FileRef Class Reference - Google Chrome",
+    "title": "",
+    "url": "https://developer.chrome.com/native-client/pepper_dev/cpp/classpp_1_1_file_ref",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00120-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 885008731,
+    "recordOffset": 884991621,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Parameters: A constructor used when you have an existing PP_Resource for a FileRef and which to create a C++ object that takes an additional reference to the resource. [explicit] ) resource PP_Resource\u00a0 ( pp::FileRef::FileRef Default constructor for creating an is_null() FileRef object. [inline] ) ( pp::FileRef::FileRef Constructor & Destructor Documentation The FileRef class represents a \"weak pointer\" to a file in a file system. Detailed Description ReadDirectoryEntries (const CompletionCallbackWithOutput< std::vector< DirectoryEntry > > &callback) int32_t\u00a0 Query (const CompletionCallbackWithOutput< PP_FileInfo > &callback) int32_t\u00a0",
+    "textAfterTable": "pp::FileRef::FileRef ( PassRef\u00a0 , PP_Resource\u00a0 resource\u00a0 ) A constructor used when you have received a PP_Resource as a return value that has already been reference counted. Parameters: [in] resource A PP_Resource corresponding to file reference. pp::FileRef::FileRef ( const FileSystem &\u00a0 file_system, const char *\u00a0 path\u00a0 ) A constructor that creates a weak pointer to a file in the given file system. File paths are POSIX style. If the path is malformed, the resulting FileRef will have a null PP_Resource. Parameters: [in] file_system A FileSystem corresponding to a file system type. [in] path A path to the file. Must begin with a '/' character.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

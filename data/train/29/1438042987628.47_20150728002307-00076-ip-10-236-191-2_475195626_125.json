@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jun 21, 2004",
+            "Dec 9, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: MICROSOFT CORPORATION, WASHINGTON Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:WU, WINNIE C.;DEEM, MICHAEL E.;SHEPPARD, EDWARD G.;AND OTHERS;REEL/FRAME:015475/0273;SIGNING DATES FROM 20030820 TO 20040616 Owner name: MICROSOFT CORPORATION, WASHINGTON Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:WU, WINNIE C.;DEEM, MICHAEL E.;SHEPPARD, EDWARD G.;AND OTHERS;SIGNING DATES FROM 20030820 TO 20040616;REEL/FRAME:015475/0273",
+            "Owner name: MICROSOFT TECHNOLOGY LICENSING, LLC, WASHINGTON Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:MICROSOFT CORPORATION;REEL/FRAME:034541/0477 Effective date: 20141014"
+        ]
+    ],
+    "pageTitle": "Patent US20050044089 - Systems and methods for interfacing application programs with an item-based ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US20050044089?dq=6978253",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987628.47/warc/CC-MAIN-20150728002307-00076-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 475342123,
+    "recordOffset": 475195626,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6508=Line 1 creates a new ItemContext object to access the \u201cWork Contacts\u201d on the storage platform share on the local computer. Lines 3 and 4 get a collection of Person objects where the Birthdate property specifies a date more recent then Dec. 31, 1999, as specified by the expression \u201cBirthdate>\u2018Dec. 31, 1999\u2019\u201d. The execution of this FindAll operation is illustrated in FIG. 23.}",
+    "TableContextTimeStampAfterTable": "{574643=According to one aspect of the present invention, at design time, the schema author submits a schema document 2010 and code for domain methods 2012 to the set of storage platform API design time tools 2008. These tools generate the client side data classes 2002 and the store schema 2014 and store class definitions 2016 for that schema. \u201cDomain\u201d refers to a particular schema; for instance, we talk about domain methods for classes in the Contacts schema, etc. These data classes 2002 are used at runtime by the application developer, in concert with the storage platform API runtime framework classes 2006, to manipulate the storage platform data.}",
+    "textBeforeTable": "Patent Citations } } bool EndRead( IAsyncResult result ); object state ); IAsyncResult BeginRead( AsyncCallback callback, { public interface IAsyncObjectReader : IObjectReader // Adds asynchronous methods to IObjectReader } void Close(\u2009); bool Read(\u2009); Type ObjectType {get;} bool HasResults {get;} bool IsClosed {get;} object Current {get;} { public interfac IObjectReader : IEnum rabl , IDisp sable // A common interface for iterating over objects. { namespace System }",
+    "textAfterTable": "State data persistence in a distributed computing environment US7739316 * Aug 21, 2003 Jun 15, 2010 Microsoft Corporation Systems and methods for the implementation of base schema for organizing units of information manageable by a hardware/software interface system * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US7392263 Jun 17, 2005 Jun 24, 2008 Microsoft Corporation File system represented inside a database US7401089 * Aug 17, 2005 Jul 15, 2008 Microsoft Corporation Storage reports file system scanner US7412452 * Jan 20, 2005 Aug 12, 2008 Pi Corporation Data storage and retrieval system with intensional category representations to provide dynamic categorization of information items US7475424 * Sep 2, 2004 Jan 6, 2009 International Business Machines Corporation System and method for on-demand dynamic control of security policies/rules by a client computing device",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

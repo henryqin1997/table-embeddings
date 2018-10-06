@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Function",
+            "CPAcquireContext",
+            "CPGetProvParam",
+            "CPReleaseContext",
+            "CPSetProvParam"
+        ],
+        [
+            "Description",
+            "Acquires a handle to a particular key container within the CSP.",
+            "Retrieves attributes of the CSP.",
+            "Releases the handle acquired by CPAcquireContext.",
+            "Sets specific attributes of a CSP."
+        ]
+    ],
+    "pageTitle": "Cryptography Functions (Windows)",
+    "title": "",
+    "url": "https://msdn.microsoft.com/en-us/library/aa380252(d=printer)",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00212-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 871957359,
+    "recordOffset": 871909285,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The cryptographic XML functions provide an API for creating and representing digital signatures by using XML formatted data. For information about XML formatted signatures, see the XML-Signature Syntax and Processing specification at http://go.microsoft.com/fwlink/p/?linkid=139649. CryptXML Functions Object Locator Functions WinTrust Functions Catalog Functions Catalog Definition Functions Callback Functions Certificate Services Backup and Restore Functions CSP Auxiliary Functions CSP Hashing and Digital Signature Functions CSP Data Encryption Functions CSP Key Generation and Exchange Functions CSP Connection Functions CSP Functions PFX Functions Remote Object Retrieval Functions OID Support Functions Key Identifier Functions Enhanced Key Usage Functions Data Conversion Functions Data Management Functions Auxiliary Functions Simplified Message Functions Low-level Message Functions Message Functions Certificate Chain Verification Functions Verification Functions Using CTLs Certificate Verification Functions MakeCert Functions Extended Property Functions Certificate Trust List Functions Certificate Revocation List Functions Certificate Functions Certificate and Certificate Store Maintenance Functions Certificate Store Functions Certificate and Certificate Store Functions Hash and Digital Signature Functions Data Encryption and Decryption Functions Object Encoding and Decoding Functions Key Generation and Exchange Functions Service Provider Functions Base Cryptography Functions Signer Functions CryptXML Functions Cryptography functions are categorized according to usage",
+    "textAfterTable": "CryptXmlDllCloseDigest Frees the CRYPT_XML_DIGEST allocated by the CryptXmlDllCreateDigest function. CryptXmlDllCreateDigest Creates a digest object for the specified method. CryptXmlDllCreateKey Parses the KeyValue element and creates a Cryptography API: Next Generation (CNG) BCrypt key handle to verify a signature. CryptXmlDllDigestData Puts data into the digest. CryptXmlDllEncodeAlgorithm Encodes SignatureMethod or DigestMethod elements for agile algorithms with default parameters. CryptXmlDllEncodeKeyValue Encodes a KeyValue element. CryptXmlDllFinalizeDigest Retrieves the digest value. CryptXmlDllGetAlgorithmInfo Decodes the XML algorithm and returns information about the algorithm. CryptXmlDllGetInterface Retrieves a pointer to the cryptographic extension functions for the specified algorithm. CryptXmlDllSignData Signs data. CryptXmlDllVerifySignature Verifies a signature. CryptXmlEncode Encodes signature data by using the supplied XML writer callback function. CryptXmlGetAlgorithmInfo Decodes the CRYPT_XML_ALGORITHM structure and returns information about the algorithm. CryptXmlGetDocContext Returns the document context specified by the supplied handle. CryptXmlGetReference Returns the Reference element specified by the supplied handle. CryptXmlGetSignature Returns an XML Signature",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Command",
+            "database",
+            "distance",
+            "pool (DHCP IPv6)"
+        ],
+        [
+            "Description",
+            "Configures a Dynamic Host Configuration Protocol (DHCP) for IPv6 binding database agent.",
+            "Specifies an administrative distance for Dynamic Host Configuration Protocol (DHCP) for IPv6 Prefix Delegation.",
+            "Configures a Dynamic Host Configuration Protocol (DHCP) for the IPv6 server configuration information pool and enters DHCP for IPv6 pool configuration mode."
+        ]
+    ],
+    "pageTitle": "Cisco IOS XR IP Addresses and Services Command Reference for the Cisco CRS Router, Release 4.1 - DHCP Commands [Cisco IOS XR Software (End-of-Sale)] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/crs/software/crs_r4-1/addr_serv/command/reference/b_ipaddr_cr41crs/b_ipaddr_cr41crs_chapter_0100.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00268-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 364305007,
+    "recordOffset": 364263342,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{1868=IPv6 address in the form documented in RFC 2373, where the address is specified in hexadecimal using 16-bit values between colons., 19364=This argument must be in the form documented in RFC 2373 where the address is specified in hexadecimal using 16-bit values between colons.}",
+    "TableContextTimeStampAfterTable": "{29078=This argument must be in the form documented in RFC 2373, where the address is specified in hexadecimal using 16-bit values between colons., 86350=This argument must be in the form documented in RFC 2373, where the address is specified in hexadecimal using 16-bit values between colons, 206075=(optional) IPv6 address. The ipv6-address argument must be in the form documented in RFC 2373, where the address is specified in hexadecimal using 16-bit values between colons., 243415=IPv6 address. The ipv6-address argument must be in the form documented in RFC\u00a02373, where the address is specified in hexadecimal using 16-bit values between colons.}",
+    "textBeforeTable": "Command History DHCP IPv6 interface server configuration Command Modes DHCPv6 service on an interface is disabled. Command Default This command has no keywords or arguments. Syntax Description allow-hint no allow-hint To allow the server to delegate a valid client-suggested prefix in the solicit and request messages, use the allow-hint command in Dynamic Host Configuration Protocol (DHCP) IPv6 interface server configuration mode. To disable the delegation of a valid client-suggested prefix, use the no form of the command. allow-hint vrf (relay profile) sip domain-name sip address show dhcp ipv6 pool show dhcp ipv6 interface show dhcp ipv6 database show dhcp ipv6 binding show dhcp ipv6 show dhcp ipv4 relay statistics show dhcp ipv4 relay profile name show dhcp ipv4 relay profile relay information policy relay information option allow-untrusted relay information option relay information check rapid-commit profile relay preference pool (DHCP IPv6) pd (prefix-delegation -",
+    "textAfterTable": "Task ID Task ID Operations ip-services read, write Examples The following is an example of the allow-hint command:  RP/0/RP0/CPU0:router# configure RP/0/RP0/CPU0:router(config)# dhcp ipv6 interface pos 0/5/0/0 server RP/0/RP0/CPU0:router(config-dhcpv6-if)# allow-hint broadcast-flag policy check To configure Dynamic Host Configuration Protocol (DHCP) IPv4 Relay to broadcast only BOOTREPLY packets if the DHCP IPv4 broadacst flag is set in the DHCP IPv4 header, use the broadcast-flag policy check command in DHCP IPv4 relay profile configuration submode . By default, the DHCP IPv4 Relay always broadcasts BOOTREPLY packets. To restore the default, use the no form of this command. broadcast-flag policy{ check} no broadcast-flag policy{ check} Syntax Description check Checks the broadcast flag in packets.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

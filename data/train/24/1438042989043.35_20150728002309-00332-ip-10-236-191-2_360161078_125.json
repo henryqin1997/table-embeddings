@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Serial ENABLE:",
+            "Network ENABLE:",
+            "Send HayesAT CONNECT",
+            "Response timer expired",
+            "Serial DATA:",
+            "Network DATA:",
+            "Disconnect timer expired",
+            "Serial ACK:",
+            "Serial DISABLE:",
+            "Network DISABLE:"
+        ],
+        [
+            "Description",
+            "Enable event received from the serial interface.",
+            "Enable event received from the network.",
+            "Interpreted version of the Hayes AT command that is sent to the serial interface.",
+            "The response timer has expired.",
+            "Data received from the serial interface.",
+            "Data received from the network.",
+            "Hayes AT event is received by the serial interface.",
+            "Acknowledgment received from the serial interface.",
+            "Disable event received from the serial interface.",
+            "Disable event received from the network."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Debug Command Reference - Commands A through D - debug aaa accounting through debug auto-config [Support] - Cisco",
+    "title": "Table 23 debug aspp event Field Descriptions",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/debug/command/a1/db-a1-cr-book/db-a1.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989043.35/warc/CC-MAIN-20150728002309-00332-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 360264215,
+    "recordOffset": 360161078,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{125451=Used with service=slip, service=ppp, and protocol=ip. Contains the IP address that the remote host should use when connecting via SLIP or PPP/IP. For example, addr=172.30.23.11., 36750=Jul 16 03:15:05: AAA/SG/SERVER_SELECT: [2] transactions remaining in batch. Reusing server.}",
+    "TableContextTimeStampAfterTable": "{506440=Jun 27 22:15:09.284:, 23698=This command was introduced for the Cisco 2600 series and the Cisco 3600 series., 335263=This command is used on the Cisco 1800, 2800, and 7200 series routers, Cisco 7301 router, and Integrated Services Routers (ISRs) as ASE sensors., 493910=Jun 27 22:03:17.996:, 422723=This command was introduced on Cisco 7500, 10000, and 12000 series Internet routers., 323917=The first line indicates that the device at IP address 192.0.2.7 and with the MAC address 0000.0c01.e117 sent an ARP request for the MAC address of the host at 192.0.2.96. The series of zeros (0000.0000.0000) following this address indicate that the device is currently unaware of the MAC address., 496563=Jun 27 15:14:13.456:, 324657=The third line indicates that the device receives an ARP request from the host at 172.16.6.10 requesting the MAC address for the host at 192.0.2.62:, 478334=00:15:05, 324360=The second line indicates that the device at IP address 192.0.2.7 receives a reply from the host at 192.0.2.96 indicating that the host MAC address is 0800.2010.b908:, 409223=This command was introduced on the Cisco 1700 series routers., 192172=The fifth line indicates that the router responds that the zone name of network 31902 is US-Florida, and the zone length of that zone name is 10:, 409529=This command was implemented on the Cisco IAD2420 Series., 90242=*Sep 20 08:29:22.266: Advance 12 bytes (aligned) to next TLV., 397556=01:14:35, 479731=Direction in which the cells are traveling. May be one of the following values:}",
+    "textBeforeTable": "Related Commands task_id=70 service=exec port=10 protocol=telnet address=172.31.3.78 cmd=glare bytes_in=308 bytes_out=76 paks_in=45 paks_out=54 elapsed_time=14 16:49:47: AAA/ACCT: Connection acct stop: 16:49:32: AAA/ACCT: Connect start, line 10, glare 16:49:21: AAA/ACCT: EXEC acct start, line 10 Router# debug aaa accounting  The following is sample output from the debugaaaaccounting command: Examples     You can also use the showaccountingcommand to step through all active sessions and to print all the accounting records for actively accounted functions. The showaccounting command allows you to display the active \"accountable events\" on the system. It provides systems administrators a quick look at what is happening, and may also be useful for collecting information in the event of a data loss of some kind on the accounting server. The showaccounting command displays additional data on the internal state of the authentication, authorization, and accounting (AAA) security system if debugaaaaccounting is turned on as well. The information displayed by the debugaaaaccounting command is independent of the accounting protocol used to transfer the accounting information to a server. Use the debugtacacs and debugradius protocol-specific commands to get more detailed information about protocol-level issues. Usage Guidelines",
+    "textAfterTable": "Syntax Description This command has no arguments or keywords. Command Modes Privileged EXEC (#) Command History Release Modification 15.0(1)M This command was introduced in a release earlier than Cisco IOS Release 15.0(1)M. 12.2(33)SRC This command was integrated into a release earlier than Cisco IOS Release 12.2(33)SRC. 12.2(33)SXI This command was integrated into a release earlier than Cisco IOS Release 12.2(33)SXI. Cisco IOS XE Release 2.1 This command was integrated into a release earlier than Cisco IOS XE Release 2.1. Usage Guidelines Use the debugaaaauthentication command to learn the methods of authentication being used.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Proxy Binding Update Received Stats",
+            "Proxy Binding Acknowledgment Sent Stats",
+            "Proxy Binding Revocation Acknowledgment Received Stats",
+            "Proxy Binding Revocation Acknowledgment Sent Stats",
+            "Proxy Binding Revocation Indication Received Stats",
+            "Proxy Binding Revocation Indication Sent Stats"
+        ],
+        [
+            "Description",
+            "The Proxy Binding Update (PBU) received by the LMA.",
+            "The Proxy Binding Revocation Acknowledgment (PBRA) message sent from the LMA to the MAG and vice versa.",
+            "The Proxy Binding Revocation Acknowledgment (PBRA) message received by the MAG from the LMA and vice versa.",
+            "The Proxy Binding Revocation Acknowledgment (PBRA) message sent from from the LMA to the MAG and vice versa.",
+            "The Proxy Binding Revocation Indication (PBRI) message received by the MAG from the LMA and vice versa.",
+            "The Proxy Binding Revocation Indication message sent from the LMA to the MAG and vice versa."
+        ]
+    ],
+    "pageTitle": "Cisco IOS IP Mobility Command Reference - nai (proxy mobile ipv6) through tunnel mode gre [Support] - Cisco",
+    "title": "Table 18 show ipv6 mobile pmipv6 mag stats Field Descriptions",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipmobility/command/imo-cr-book/imo-n1.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00041-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 361433051,
+    "recordOffset": 361336206,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{151649=Minimum LSA arrival 1000 msecs, 605472=Specifies the requested lifetime (in seconds) of each registration. The shortest value between the configured lifetime and the foreign agent advertised registration lifetime is used. In IPv4, the range is from 3 to 65534; the default is 65534 (infinity). In IPv6, the range is from 4 to 262143; the default is 262143 (infinity). This default ensures that the advertised lifetime is used, excluding infinity., 159502=Routing process \"ospfv3 1\" with ID 10.10.10.1, 603954=Specifies the maximum wait period (in milliseconds) before retransmission of a registration request. In IPv4, the range is 10 to 10000 (10 seconds); the default is 5000 milliseconds (5 seconds). In IPv6, the maximum range is from 1000 to 256000. In IPv6, the retry number range is from 0 to 10. Each successive retransmission timeout period is twice the previous period, if the previous period was less than the maximum value. Retransmission stops after the maximum number of retries., 29942=For a complete description of this notification and additional MIB functions, see the RFC2006-MIB.my file, available on Cisco.com at http://www.cisco.com/public/mibs/v2/., 676693=The following configuration example shows how to associate the mobile router address, 10.1.1.10, with the mobile networks:, 604710=Specifies the wait period (in milliseconds) before sending a retransmission the first time no reply is received from the foreign agent. In IPv4, the range is from 10 to 10000 milliseconds (10 seconds); the default is 1000 milliseconds (1 second). In IPv6, the range is from 1000 to 256000., 30442=SNMP Mobile IP notifications can be sent as traps or inform requests. This command enables both traps and inform requests. This command enables Mobile IP Authentication Failure notifications. This notification is defined in RFC2006-MIB.my as the mipAuthFailure notification type {mipMIBNotifications 1}. This notification, when enabled, is triggered when there is an authentication failure for the Mobile IP entity during validation of the mobile registration request or reply., 155048=NULL Encryption SHA-1 Auth, SPI 1001, 393790=Next CCoA reg attempt in 00:00:55 seconds}",
+    "textBeforeTable": "Syntax Description @realm [user] nai no @realm [user] nai To configure the Network Access Identifier (NAI) for the mobile node (MN) within the PMIPV6 domain, use the nai command in PMIPV6 domain configuration mode. To disable the NAI configuration, use the no form of this command. nai (proxy mobile IPv6) vrfid (proxy mobile IPv6) tunnel nat tunnel mtu tunnel acl tunnel mode gre ttl (IP multiplexing) transport (pmipv6 lma mll customer) template tunnel (mobile router) template tunnel (mobile networks) source (IP multiplexing) snmp-server enable traps ipmobile singlepacket shutdown (IP multiplexing) show vmi neighbors show mux profile show mux interface show mux cache show mux show mcsa statistics show ipv6 ospf interface show ipv6 ospf show ipv6 mobile pmipv6 mag stats show ipv6 mobile pmipv6 mag globals show ipv6 mobile pmipv6 mag binding show ipv6 mobile pmipv6 lma tunnel show ipv6 mobile pmipv6 lma stats show",
+    "textAfterTable": "Release Modification Cisco IOS XE Release 3.4S This command was introduced. 15.2(4)M This command was integrated into Cisco IOS Release 15.2(4)M. Examples The following example shows how to configure the NAI within the PMIPV6 domain:  Device(config)# ipv6 mobile pmipv6-domain dn1 Device(config-ipv6-pmipv6-domain)# nai example@example.com Device(config-ipv6-pmipv6-domain-mn)# Related Commands Command Description ipv6 mobile pmipv6-domain Configures the PMIPV6 domain. network To associate a network, to which an IPv4 or IPv6 pool can be configured, with a Local Mobility Anchor (LMA) or a mobile node (MN), use the network command in LMA configuration mode or",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Patent application number",
+            "20100057741",
+            "20120151268",
+            "20140289567"
+        ],
+        [
+            "Description",
+            "SOFTWARE RESOURCE ACCESS UTILIZING MULTIPLE LOCK TABLES - A computing system includes a plurality of coupled computing systems, a centralized server and a data set. The system also includes a data sharing controller which includes a primary lock structure that is coupled to the data set when an address space for the data set is allocated and a plurality of secondary lock tables. Each secondary lock table is assigned to a different portion of the data set.",
+            "SYSTEM, METHOD, AND COMPUTER PROGRAM PRODUCT FOR ERROR CODE INJECTION - In one embodiment, a computer program product for injecting error code includes a computer readable storage medium having computer readable program code embodied therewith. The computer readable program code includes computer readable program code configured to determine critical points in executing code of software under test, computer readable program code configured to determine an appropriate response action for each critical point based on an error encountered at each critical point, computer readable program code configured to inject a critical point segment into the executing code at a corresponding critical point, and computer readable program code configured to output a unique identifier of each critical point segment. In another embodiment, a system includes a processor, and a computer readable storage medium having computer readable program code embodied therewith having the above described functionality. Other systems and computer program products are described according to more embodiments.",
+            "SYSTEM, METHOD, AND COMPUTER PROGRAM PRODUCT FOR ERROR CODE INJECTION - In various embodiments, a method, system, and computer program product for injecting error code include logic and/or program instructions configured for determining critical points in executing code of software under test, building a testcase to invoke the software under test, determining an appropriate response action for each critical point based on an error encountered at each critical point, injecting a critical point segment into the executing code at a corresponding critical point, and outputting a unique identifier of each critical point segment, the testcase being configured to issue commands, with each command limiting which of one or more critical points remains active based on one of: a number of times the one or more critical points have been accessed in the executing code, a number of times a critical point has been skipped, and an amount of times a critical point has been accessed versus skipped."
+        ],
+        [
+            "Published",
+            "03-04-2010",
+            "06-14-2012",
+            "09-25-2014"
+        ]
+    ],
+    "pageTitle": "Menendez, US - Patent applications",
+    "title": "",
+    "url": "http://www.faqs.org/patents/inventor/menendez-us-5/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992201.62/warc/CC-MAIN-20150728002312-00308-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 445173359,
+    "recordOffset": 445149055,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Terri A. Menendez, Morgan Hill, CA US 09-25-2014 PROVIDING RECORD-LEVEL SHARING (RLS) TO LOCAL DATA SETS - Systems, methods, and computer program products are described for providing record-level sharing (RLS) for data sets to local users of a system. In one embodiment, a process includes requesting access to a data set from a record-oriented file system in which the file system manages records on behalf of one or more users, and the access is requested for a first local user. The process proceeds by locking the data set in the file system such that no direct access of the data set is allowed. Read and/or write requests for the data set are processed using the representation of the data set in the designated server address space. The data set in the file system is updated with any changes made to the representation of the data set in the designated server address space. 20140289209 09-18-2014 PROVIDING RECORD-LEVEL ALTERNATE-INDEX UPGRADE LOCKING - In one embodiment, a method includes receiving a request to perform an update on a base data set in a record-oriented file system, locate all alternate index (AIX) records for the base data set, each AIX record including an alternate key field along with one or more relative byte address (RBA) values when the base data set is an entry sequenced data set (ESDS) or one or more primary keys when the base data set is a key sequenced data set (KSDS). Each",
+    "textAfterTable": "Patent applications by Terri A. Menendez, Morgan Hill, CA US Victor M. Menendez, Carrollton, TX US Patent application number Description Published 20110172832 SYSTEM AND METHOD FOR CONDITIONING AIR - A system for conditioning air in a structure includes a first conditioning system and a second conditioning system. The first conditioning system is capable of supplying conditioned air to a first space of the structure. The first space is enclosed, at least in part, by one or more external walls. The second conditioning system is capable of supplying conditioned air to a second space of the structure that is located above the first space. The second space is enclosed, at least in part, by a roof that is sealed to prevent a flow of air between the second space and an outside environment. The first space and the second space are separated by a ceiling that permits thermal energy to pass between the first space and the second space. 07-14-2011 20140298831 Systems and Methods for Conditioning Air - A system for conditioning air in a structure includes a first conditioning system and a second conditioning system. The first conditioning system is capable of supplying conditioned air",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "",
+            "144",
+            "145",
+            "146",
+            "147",
+            "",
+            "148",
+            "149",
+            "150"
+        ],
+        [
+            "",
+            "144",
+            "145",
+            "146",
+            "",
+            "147",
+            "148",
+            "149",
+            "150"
+        ],
+        [
+            "",
+            "* @return mixed Null if an input isn't valid, otherwise the sanitized value.",
+            "*/",
+            "public function sanitize( $value ) {",
+            "$value = wp_unslash( $value );",
+            "$value = stripslashes_deep( $value );",
+            "return apply_filters( \"customize_sanitize_{$this->id}\", $value, $this );",
+            "}",
+            ""
+        ]
+    ],
+    "pageTitle": "21767.19.diff on Ticket #21767 \u2013 Attachment \u2013 WordPress Trac",
+    "title": "",
+    "url": "https://core.trac.wordpress.org/attachment/ticket/21767/21767.19.diff",
+    "hasHeader": true,
+    "headerPosition": "FIRST_COLUMN",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00155-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 863353987,
+    "recordOffset": 863277817,
+    "tableOrientation": "VERTICAL",
+    "textBeforeTable": "wp-login.php Revert 23416, 23419, 23445 except for wp_reset_vars() changes. File 21767.19.diff, 157.7 KB (added by ryan, 2 years ago) Ticket #21767: 21767.19.diff Back to Ticket #21767 Context Navigation Notifications Login Search: Create a New Ticket Trac Timeline Browse Source Components Tickets Handbook Blog Make WordPress Core Download WordPress Hosting Blog About Get Involved Documentation Forums Support",
+    "textAfterTable": "\u2026 \u2026 \u00a0 434 434 \u00a0 \u00a0 \u00a0 \u00a0 do_action('lost_password');\u00a0 435 435 \u00a0 \u00a0 \u00a0 \u00a0 login_header(__('Lost Password'), '<p class=\"message\">' . __('Please enter your username or email address. You will receive a link to create a new password via email.') . '</p>', $errors);\u00a0 436 436 \u00a0 437 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 $user_login = isset($_POST['user_login']) ? wp_unslash($_POST['user_login']) : '';\u00a0 \u00a0 437 \u00a0 \u00a0 \u00a0 \u00a0 $user_login = isset($_POST['user_login']) ? stripslashes($_POST['user_login']) : '';\u00a0 438 438 \u00a0 439 439 ?>\u00a0 440 440 \u00a0 \u2026 \u2026 \u00a0 533 533 \u00a0 \u00a0 \u00a0 \u00a0 $user_login = '';\u00a0 534 534 \u00a0 \u00a0 \u00a0 \u00a0 $user_email = '';\u00a0 535 535 \u00a0 \u00a0 \u00a0 \u00a0 if ( $http_post ) {\u00a0 536 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 $user_login = wp_unslash( $_POST['user_login'] );\u00a0 537 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 $user_email = wp_unslash( $_POST['user_email'] );\u00a0 \u00a0 536 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 $user_login = $_POST['user_login'];\u00a0 \u00a0 537 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 $user_email = $_POST['user_email'];\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

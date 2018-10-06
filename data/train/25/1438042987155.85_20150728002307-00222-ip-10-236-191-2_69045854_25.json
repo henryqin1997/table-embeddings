@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Factor",
+            "Organization hierarchy proximity",
+            "Position hierarchy proximity",
+            "Manager hierarchy proximity",
+            "Location proximity",
+            "Selection history",
+            "Social network",
+            "Totals"
+        ],
+        [
+            "Relationship Strength (%)",
+            "100",
+            "0",
+            "100",
+            "80",
+            "40",
+            "100",
+            ""
+        ],
+        [
+            "Weighting",
+            "0.5",
+            "0.5",
+            "0.5",
+            "0.5",
+            "0.5",
+            "0.5",
+            "3"
+        ],
+        [
+            "Result (%)",
+            "50",
+            "0",
+            "50",
+            "40",
+            "20",
+            "50",
+            "210"
+        ]
+    ],
+    "pageTitle": "Oracle Fusion Applications Workforce Development Implementation Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E25054_01/fusionapps.1111/e20380/F492942AN2DB05.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00222-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 69080383,
+    "recordOffset": 69045854,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{100193=01 January, 2011, 108648=Starts on 1 January, 2011. Ends on 31 December, 2011., 57081=The changed work location is copied automatically to the keywords table on 27 January, 2011., 117990=You have set up the May Day calendar event for all locations in your enterprise. However, you want the event to be referred to as Labour Day for your France location. On the Calendar Event page, select the France location node on your geographical hierarchy and use the Override tool to enter a new name for the event., 112916=January 1, 2011, 107791=Vijay Singh is scheduled to attend the Advanced Communication Skills training course on 8 February, 2011 during which time, the work schedule must indicate that he is unavailable., 56825=Although the work location on 10 January, 2011 was Headquarters, assignment 12345 does not appear in the search results because the work location stored in the keywords table at the time of the search is Regional Office., 95306=Click Create in the choice list to create a resource exception called Advanced Communication Skills that starts on 8 February, 2011 and ends on the same day., 112765=December 31, 2011, 56969=You search for a person on 1 February, 2011 using the keyword Headquarters and the effective as-of date 10 January, 2011., 100042=31 December, 2011, 57207=You change the work location of assignment 12345 from Headquarters to Regional Office on 27 January, 2011., 116154=January 1, 2011 to December 31, 2011., 103710=1700 hrs}",
+    "lastModified": "Thu, 20 Sep 2012 18:00:58 GMT",
+    "textBeforeTable": "The relationship strength for each individual factor is multiplied by a weighting value, which is 0.5 by default, as shown in the following example. If the searcher is in the same social network as the person, then the relationship-strength value is 100%; otherwise, the relationship-strength value is 0%. The number of times the searcher selects a person's assignment from the search results is recorded automatically. This value is compared with the maximum number of times the searcher has selected any person and assignment in a specified period. For example, if the searcher selects Andrew Jones 10 times in a week and Gloria Schmidt twice in a week, then the relationship strength values are 100% for Andrew Jones and 20% for Gloria Schmidt. The period of time during which the searcher's selection history is recorded is 7 days by default. You can set this value for the enterprise on the HR: Selection History Timeout profile option. People in a different country from the searcher have no relationship with the searcher. 20 Same country 40 Same town or city 60 Same postal code 80 Same building 100 Same floor of building Relationship Strength (%) Location (right column).\" cellspacing=\"0\"",
+    "textAfterTable": "You can change the weighting values for individual factors on the relevant profile options, such as HR: Manager Hierarchy Weight and HR: Location Proximity Weight, to change the relative importance of those factors. Each search result has a default searcher rating of 3, which has no effect on the relationship strength. However, the searcher can set this rating for individual results to a value between 1 and 5; values above 3 increase the relationship strength and values below 3 decrease it. Each rating value is associated with a multiplying factor. The highest multiplying factor (the one used when the searcher sets the rating for a search result to 5) is specified on the profile option HR: Relationship Priority Factor, which is set to 2 by default. This table shows the default multiplying factors Searcher Rating Multiplying Factor 1 1/2 2 1/1.5 3 1 4 1.5 5 2 The total of the individual relationship-strength percentages is multiplied by the multiplying factor associated with the searcher's rating. For example, if the default rating (3)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

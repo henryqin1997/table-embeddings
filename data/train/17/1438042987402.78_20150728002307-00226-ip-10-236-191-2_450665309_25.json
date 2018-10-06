@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "Variable",
+            "Constant",
+            "Log of AADT1*AADT2",
+            "PROT_LT",
+            "PKLEFT2",
+            "VEICOM",
+            "PKTRUCK",
+            "K2"
+        ],
+        [
+            "Original Estimate (s.e., p-value)1",
+            "-6.1236 (2.5973, 0.0184)",
+            "0.4643 (0.1483, 0.0017)",
+            "-0.6110 (0.1507, 0.0001)",
+            "-0.0134 (0.0048, 0.0052)",
+            "0.1243 (0.0507, 0.0142)",
+            "0.0300 (0.0141, 0.0331)",
+            "0.1186"
+        ],
+        [
+            "Recalibrated Estimate (s.e., p-value)",
+            "-6.0566 (3.3474, 0.1091)",
+            "0.4546 (0.1940, 0.0191)",
+            "-0.7273 (0.2546, 0.0043)",
+            "-0.0100 (0.0102, 0.3249)",
+            "-0.0692 (0.0681, 0.3093)",
+            "0.0236 (0.0153, 0.1245)",
+            "0.2801"
+        ]
+    ],
+    "pageTitle": "2. Validation of Accident Models (Continuation) - Validation of Accident Models for Intersections, May 2005 - FHWA-RD-03-037",
+    "title": "",
+    "url": "http://www.fhwa.dot.gov/publications/research/safety/03037/02b.cfm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00226-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 450691695,
+    "recordOffset": 450665309,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{162629=The summary statistics shown in table 39 indicate that fewer accidents per year occurred during the additional years (1996-97) than during the original years (1993-95). Again, note that the original years INJACC and INJACCI data were not obtained., 123482=1 Vogt, 1999, p123, 193039=1 Vogt, 1999, (p. 57), 114221=1 Vogt, 1999, p124, 54032=1 Vogt and Bared, 1998, (p. 116), 226327=1 Vogt, 1999, (p. 111), 180839=Table 34 shows a comparison of GOF measures between the original main model in the Vogt report and for this model applied to the 1996-97 data.(2) The Pearson product-moment correlation coefficient for the additional years of data was estimated as slightly higher than the original years. The MAD per year was similar, but the MPB per year was somewhat larger for the additional years of data. The MSPE per year squared was again lower than the MSE per year squared of the original model, indicating a good fit to the additional years of data., 241074=U.S. Department of Transportation Federal Highway Administration 1200 New Jersey Avenue, SE Washington, DC 20590 202-366-4000, 197952=The summary statistics shown in table 30 reveal that the accident frequencies were lower during the additional years. Mean, median, and maximum of the accident frequencies were almost half of those for the 1993-1995 period. Recall that the original 1993-95 INJACC and INJACCI data were not obtained., 217472=1 Vogt, 1999, (p. 112), 137941=Table 45 shows a comparison of GOF measures between the original main model in the Vogt report for the original data and the original model applied to the 1996-97 data.(2), 230643=Table 23 shows a comparison of GOF measures between the original main models in the Vogt report (1999) applied to the original 1993-95 data and to the 1996-97 data. The Pearson product-moment correlation coefficient was higher for the original years of data than for the additional years of data. The MAD per year was similar, but the MPB per year was larger for the model for the additional years of data. The MSPE per year squared for the additional years was higher than the MSE per year squared for the original years, but the difference was not great., 107881=1 Vogt, 1999, (p. 124), 217366=Table 25 shows a comparison of GOF measures between the original main model in the Vogt report applied the original data and to the 1996-97 data.(2), 157765=1 Vogt, 1999, (p. 61), 208562=1 Vogt, 1999, (p. 113), 171996=1 Vogt, 1999, (p. 118), 180945=1 Vogt, 1999, (p. 117), 189284=1 Vogt, 1999, (p. 116), 69641=1 Vogt and Bared, 1998, (p. 115), 133097=1 Vogt, 1999, (p. 123), 152732=1 Vogt, 1999, (p. 122), 152626=Table 41 shows a comparison of GOF measures between the original main models in the Vogt report applied to the original data and the 1996-97 data.(2), 105144=For this validation activity, the models were used to predict accidents for the Georgia data that also were used to re-estimate the models. Data from 1996 and 1997 in Georgia were used for accident related variables; Other variables used, such as roadway geometrics and traffic volumes, were based on the 1997 road characteristic files maintained by the Georgia Department of Transportation and on data collected in the field during the summer of 2001. Recall that for Georgia data, two sets of accidents were extracted-those within 0.08 km (0.05 miles) of the intersection and those within 0.06 km (0.04 miles).}",
+    "textBeforeTable": "Table 23. Validation Statistics for TOTACC Type III Model Using Additional Years of Data 2 K: Overdispersion value 1 Vogt, 1999, (p. 111) 0.6356 0.3893 2 K (0.0439, 0.7719) 0.0127 (0.0239, 0.1023) 0.0391 DRWY1 (0.0440, 0.2414) -0.0515 (0.0249, 0.0285) -0.0546 MEDWIDTH1 (0.1286, 0.00001) 0.5214 (0.0866, 0.0024) 0.2624 Log of AADT2 (0.3677, 0.0016) 1.1597 (0.2527, 0.0001) 1.1479 Log of AADT1 (3.3378, 0.00001) -14.4477 (2.3575, 0.0001) -12.2196 Constant p-value) Additional Years Estimate (s.e.,",
+    "textAfterTable": "Variable Original Estimates (s.e., p-value) 1 Additional Years Estimate (s.e., p-value) Constant -15.4661 (3.4685, 0.0001) -16.7738 (3.8495, 0.00001) Log of AADT1 1.4331 (0.3608, 0.0001) 1.3497 (0.4098, 0.0010) Log of AADT2 0.2686 (0.0988, 0.0065) 0.5439 (0.1434, 0.0001) MEDWIDTH1 -0.0612 (0.0360, 0.0888) -0.0308 (0.0465, 0.5074) DRWY1 0.0560 (0.0289, 0.0525) 0.0358 (0.0486, 0.4608) K 2 0.5118 0.7220 1 Vogt, 1999, (p. 112) 2 K: Overdispersion value",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

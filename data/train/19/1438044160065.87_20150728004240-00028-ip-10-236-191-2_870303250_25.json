@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Username",
+            "alice",
+            "bob",
+            "charlie",
+            "david",
+            "robert"
+        ],
+        [
+            "FirstName",
+            "Alice",
+            "Robert",
+            "Charles",
+            "David",
+            "Robert"
+        ],
+        [
+            "LastName",
+            "Smith",
+            "Jones",
+            "Johnson",
+            "Jones",
+            "Williams"
+        ],
+        [
+            "FullName",
+            "Alice Smith",
+            "Robert Jones",
+            "Charles Johnson",
+            "David Jones",
+            "Robert Williams"
+        ],
+        [
+            "Email",
+            "alice@mycorp.com",
+            "bob@mycorp.com",
+            "charlie@mycorp.com",
+            "david@mycorp.com",
+            "williams@mycorp.com"
+        ]
+    ],
+    "pageTitle": "Configuring Oracle Identity Federation",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E21764_01/admin.1111/e13400/configoif.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044160065.87/warc/CC-MAIN-20150728004240-00028-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 870363759,
+    "recordOffset": 870303250,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{77889=openssl req -config openssl.cnf -newkey rsa:1024 -keyout../../config/attributePlug-in/key.pem -out../../config/attributePlug-in/req.pem, 80598=Challenge Parameter: ssoCookie:Expires=Tue, 1 Nov 2005 00:00:00 GMT}",
+    "lastModified": "Wed, 13 May 2015 05:18:38 GMT",
+    "textBeforeTable": "Consider the following user table, named \"UserInformation\", and suppose the JNDI name of the data source is \"MyCorpUserDS\". Example Click OK. User Description Attribute: The name of the User Description column in the user table. User ID Attribute: The name of the User ID column in the user table. Login Table: The name of the user table. JNDI Name: The JNDI of the data source created in the WebLogic Administration Console. Enter the following properties: Select Database from the Repository Type dropdown list. In the User Data Store section, click Edit. Navigate to Administration, then Data Stores. Log in to Fusion Middleware Control and navigate to the Oracle Identity Federation instance Follow these steps to configure an RDBMS user data store: Configure an RDBMS User Data Store Choose a name and a JNDI name for the new data source, and enter the database information. Choose the WebLogic managed server where Oracle Identity Federation is deployed as the target of this data source. Click New. Navigate to Services, then JDBC, then Data Sources. Log in to the WebLogic Administration Console. Oracle",
+    "textAfterTable": "Oracle Identity Federation configuration for the user data store might look like this: JNDI Name: MyCorpUserDS Login Table: UserInformation User ID Attribute: Username User Description Attribute: Full Name Alternatively, the configuration could be: JNDI Name: MyCorpUserDS Login Table: UserInformation User ID Attribute: Username User Description Attribute: Username 5.13.1.2 Configuring Oracle Identity Federation for an LDAP User Data Store Follow these steps to configure an LDAP user data store: Log in to Fusion Middleware Control and navigate to the Oracle Identity Federation instance. Navigate to Administration, then Data Stores. In the User Data Store section, click Edit. Select LDAP Directory from the Repository Type dropdown list. The fields to set up this configuration are as follows: Connection URL - This is the LDAP URL to connect to the server. For example, ldap://ldap.oif.com:389. Bind DN - This is the administrator account DN to use to connect to the LDAP server. For example, cn=orcladmin Password - Administrator password to connect to LDAP server",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

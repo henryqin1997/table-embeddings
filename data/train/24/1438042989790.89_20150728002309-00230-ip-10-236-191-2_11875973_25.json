@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "--enclosed-by",
+            "--escaped-by",
+            "--fields-terminated-by",
+            "--lines-terminated-by",
+            "--mysql-delimiters",
+            "--optionally-enclosed-by"
+        ],
+        [
+            "Description",
+            "Sets a required field enclosing character",
+            "Sets the escape character",
+            "Sets the field separator character",
+            "Sets the end-of-line character",
+            "Uses MySQL\u2019s default delimiter set: fields: , lines: \\n escaped-by: \\ optionally-enclosed-by: '",
+            "Sets a field enclosing character"
+        ]
+    ],
+    "pageTitle": "Sqoop User Guide (v1.4.3-cdh4.7.0)",
+    "title": "",
+    "url": "http://archive.cloudera.com/cdh4/cdh/4/sqoop/SqoopUserGuide.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00230-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 11936899,
+    "recordOffset": 11875973,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{112587=You can import compressed tables into Hive using the --compress and --compression-codec options. One downside to compressing tables imported into Hive is that many codecs cannot be split for processing by parallel map tasks. The lzop codec, however, does support splitting. When importing tables with this codec, Sqoop will automatically index the files for splitting and configuring a new Hive table with the correct InputFormat. This feature currently requires that all partitions of a table be compressed with the lzop codec., 73655=When performing parallel imports, Sqoop needs a criterion by which it can split the workload. Sqoop uses a splitting column to split the workload. By default, Sqoop will identify the primary key column (if present) in a table and use it as the splitting column. The low and high values for the splitting column are retrieved from the database, and the map tasks operate on evenly-sized components of the total range. For example, if you had a table with a primary key column of id whose minimum value was 0 and maximum value was 1000, and Sqoop was directed to use 4 tasks, Sqoop would run four processes which each execute SQL statements of the form SELECT * FROM sometable WHERE id >= lo AND id < hi, with (lo, hi) set to (0, 250), (250, 500), (500, 750), and (750, 1001) in the different tasks., 88454=By default, data is not compressed. You can compress your data by using the deflate (gzip) algorithm with the -z or --compress argument, or specify any Hadoop compression codec using the --compression-codec argument. This applies to SequenceFile, text, and Avro files., 365991=Please note that it\u2019s very important to specify this weird path /dev/../dev/urandom as it is due to a Java bug 6202721, or /dev/urandom will be ignored and substituted by /dev/random.}",
+    "lastModified": "Wed, 28 May 2014 21:58:47 GMT",
+    "textBeforeTable": "Table\u00a06.\u00a0Output line formatting arguments: Sqoop handles large objects (BLOB and CLOB columns) in particular ways. If this data is truly large, then these columns should not be fully materialized in memory for manipulation, as most columns are. Instead, their data is handled in a streaming fashion. Large objects can be stored inline with the rest of the data, in which case they are fully materialized in memory on every access, or they can be stored in a secondary storage file linked to the primary data storage. By default, large objects less than 16 MB in size are stored inline with the rest of the data. At a larger size, they are stored in files in the _lobs subdirectory of the import target directory. These files are stored in a separate format optimized for large record storage, which can accomodate records of up to 2^63 bytes each. The size at which lobs spill into separate files is controlled by the --inline-lob-limit argument, which takes a parameter specifying the largest lob size to keep inline, in bytes. If you set the inline LOB limit to 0, all large objects will be placed in external storage. 7.2.10.\u00a0Large Objects By default, data is not compressed. You can compress your data by using the deflate (gzip) algorithm with the -z or --compress argument, or specify any Hadoop compression",
+    "textAfterTable": "When importing to delimited files, the choice of delimiter is important. Delimiters which appear inside string-based fields may cause ambiguous parsing of the imported data by subsequent analysis passes. For example, the string \"Hello, pleased to meet you\" should not be imported with the end-of-field delimiter set to a comma. Delimiters may be specified as: a character (--fields-terminated-by X) an escape character (--fields-terminated-by \\t). Supported escape characters are: \\b (backspace) \\n (newline) \\r (carriage return) \\t (tab) \\\" (double-quote) \\\\' (single-quote) \\\\ (backslash) \\0 (NUL) - This will insert NUL characters between fields or lines, or will disable enclosing/escaping if used for one of the --enclosed-by, --optionally-enclosed-by, or --escaped-by arguments. The octal representation of a UTF-8 character\u2019s code point. This should be of the form \\0ooo, where ooo is the octal value. For example, --fields-terminated-by \\001 would yield the ^A character. The hexadecimal representation of a UTF-8 character\u2019s code point. This should be of the form \\0xhhh, where hhh is the hex value. For example, --fields-terminated-by \\0x10 would yield the carriage return character.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,41 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "bin_table_name",
+            "data_table_name",
+            "xform_view_name",
+            "literal_flag",
+            "bin_schema_name",
+            "data_schema_name",
+            "xform_schema_name"
+        ],
+        [
+            "Description",
+            "Name of the categorized binning definition table generated using CREATE_BIN_CAT procedure",
+            "Name of the table containing the data",
+            "View representing the transformed output",
+            "Literal flag",
+            "Name of the schema hosting the bin definition table",
+            "Name of the schema hosting the data table",
+            "Name of the schema hosting the view representing the transformed output"
+        ]
+    ],
+    "pageTitle": "DBMS_DATA_MINING_TRANSFORM",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B19306_01/appdev.102/b14258/d_dmtran.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00293-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70301431,
+    "recordOffset": 70275431,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 13 May 2015 05:07:09 GMT",
+    "textBeforeTable": "Table 26-20 XFORM_BIN_CAT Procedure Parameters Parameters xform_schema_name IN VARCHAR2 DEFAULT NULL); data_schema_name IN VARCHAR2 DEFAULT NULL, bin_schema_name IN VARCHAR2 DEFAULT NULL, literal_flag IN BOOLEAN DEFAULT FALSE, xform_view_name IN VARCHAR2, data_table_name IN VARCHAR2, bin_table_name IN VARCHAR2, DBMS_DATA_MINING_TRANSFORM.XFORM_BIN_CAT (  Syntax This procedure creates the view that performs categorical binning. Only the columns that are specified in the definition table are transformed; the remaining columns do not change. XFORM_BIN_CAT Procedure   / END;  'norm_zscore_table', 'build_table'); DBMS_DATA_MINING_TRANSFORM.INSERT_NORM_LIN_ZSCORE(  BEGIN  The simplest invocation of this routine populates normalization definitions in the norm_zscore_table for all the numerical attributes found in build_table. Examples Columns with all NULL values or only one unique value are ignored. For a given input table, you can iteratively call this routine several times with selective exclusion of attributes (that is, column names) using the exclude_list parameter for a particular binning specification. Usage Notes  Name of the schema hosting the table with data data_schema_name Name of the schema hosting the normalization definition table norm_schema_name Number of significant digits round_num List of columns (attributes) to be excluded",
+    "textAfterTable": "Usage Notes The bin table created by CREATE_BIN_CAT and populated with bin definitions by INSERT_BIN_CAT_FREQ is used to guide the query generation process to construct categorical binning expressions of the following form:  DECODE(\"col\", val_1, bin_1, ... val_N, bin_N, NULL, NULL, bin_(N+1)) \"col\" This expression maps values val_1,..., val_N into N bins bin_1,..., bin_N, and other values into bin_(N+1), while NULL values remain unchanged. bin_(N+1) is optional. If not specified, it defaults to NULL. To specify bin_(N+1) provide a row with val set to NULL. The literal_flag parameter indicates whether the values in bin are valid SQL literals. When the flag is set to TRUE, the value of bin is used as is in query generation; otherwise it is converted into a valid text literal (surrounded by quotes and each single quote is replaced by two single quotes). By default, the flag is set to FALSE. One example of when it can be set to TRUE is in cases when all bin are numbers. In that case the transformed column will be numeric as opposed to textual (default behavior). Set literal_flag to TRUE when the data is binned for an O-Cluster model build. The col parameter is case-sensitive since it generates quoted identifiers. In cases when there are multiple entries with the same col,val combination with different bin, the behavior is undefined \u2014 any one of the bin values might be used. Examples Example 1. bin_cat contains four",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

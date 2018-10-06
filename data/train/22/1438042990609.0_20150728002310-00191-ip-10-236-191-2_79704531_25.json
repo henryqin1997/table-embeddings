@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Feature",
+            "Push",
+            "Roller lowest",
+            "Roller low",
+            "Roller medium",
+            "Roller high",
+            "Roller Highest"
+        ],
+        [
+            "Speed",
+            "20000",
+            "10000",
+            "20000",
+            "30000",
+            "40000",
+            "50000"
+        ]
+    ],
+    "pageTitle": "DF2014:Minecart - Dwarf Fortress Wiki",
+    "title": "",
+    "url": "http://dwarffortresswiki.org/index.php/Minecart",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00191-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 79762719,
+    "recordOffset": 79704531,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{2337=A minecart is a tool intended for hauling, introduced in version 0.34.08. It can be made of wood at a carpenter's workshop or metal at a metalsmith's forge (using the metalcrafting labor.) Minecarts store up to five times as many items as wheelbarrows and are quite a bit faster than dwarves hauling objects by hand, but have the disadvantages of requiring a dedicated track network, a complex route planning phase, and the possibility of dwarves blundering into the path of carts filled with lead ore. Tracks may be carved into stone, or constructed; the latter allows above-ground routes, but these are more difficult to set up due to their additional material requirements., 299791=If the cart is traveling at a speed that will not derail, or is forced to turn by a supporting wall, it will subtract 1000 from the \"forwards\" velocity of the cart, and redirect all forward velocity to the direction of the curve. This change in the direction of velocity overwrites any \"diagonal\" velocity, which can prevent diagonal velocity derailments, but any perpendicular velocity is not preserved, and is instead discarded.}",
+    "lastModified": "Thu, 30 Jul 2015 03:22:50 GMT",
+    "textBeforeTable": "Examples of the capacity of one cart Minecarts have five times the capacity of wheelbarrows. [edit] Capacity and weights To control which items to transport you can add conditions specifying: (1) which kind of items to be loaded, and unloaded, (2) stockpile links to define which stockpile(s) the items should be un/loaded to and from. After you have created the stops and assigned a cart to the track, you must create logic routes connecting several stops and designate starting conditions for each stop. This is done with the hauling key. The most basic conditions are how the cart's movement is initiated and in which direction the cart should start moving. Carts can be either be Pushed (a dwarf stands at a stop and gives the cart a single push) or Guided (a dwarf continually pushes the cart forward, guiding it along the track). The hauling labor required for pushing and guiding carts is called \"Push/Haul Vehicles\" and is turned on by default. Minecarts can be used to",
+    "textAfterTable": "spears 1250 cloth 2500 The weight of the loaded minecart does not affect the initial velocity received from pushing or launching from a roller. However, the load of a minecart does affect whether a pressure plate triggers or not, based on the pressure plate's setting. Weights of different carts Type of cart Empty cart Fully loaded (items) oaken minecart 28\u0393 378\u0393 (10 oak logs) platinum minecart 856\u0393 10482\u0393 (83 gold bars) The weight of a minecart is one twenty-fifth (1/25) the density of its material in Urists. Because pressure plates can be set to trigger at intervals of 50 Urists, minecarts with weights just under a multiple of 50 are ideal for switching based on whether they're full or empty. The best minecart materials for full/empty switching are as follows: Material Minecart weight Content weight required to trigger Banana roasts required to trigger (for scale) Bismuth (moods only) 391 9 15 Brass 342 8 14",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6"
+        ],
+        [
+            "Command or Action",
+            "UCS-A# scope org org-name",
+            "UCS-A /org # scope service-profile profile-name",
+            "UCS-A /org/service-profile # create initiator-group group-name",
+            "UCS-A /org/service-profile/initiator-group # create initiator vhba-name",
+            "UCS-A /org/service-profile/initiator-group # set storage-connection-policy policy-name",
+            "UCS-A /org/service-profile # commit-buffer"
+        ],
+        [
+            "Purpose",
+            "Enters organization mode for the specified organization. To enter the root organization mode, type / as the org-name .",
+            "Enters organization service profile mode for the specified service profile.",
+            "Creates the specified initiator group for Fibre Channel zoning and enters service profile initiator group mode.",
+            "Creates the specified vHBA initiator in the initiator group. If desired, repeat this step to add a second vHBA initiator to the group.",
+            "Associates the specified storage connection policy with the service profile.",
+            "Commits the transaction to the system configuration."
+        ]
+    ],
+    "pageTitle": "Cisco UCS Manager CLI Configuration Guide, Release 2.1 - Configuring Service Profiles [Cisco UCS Manager] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/cli/config/guide/2-1/b_UCSM_CLI_Configuration_Guide_2_1/b_UCSM_CLI_Configuration_Guide_2_1_chapter_0100000.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988250.59/warc/CC-MAIN-20150728002308-00223-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 363090943,
+    "recordOffset": 363054854,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{67063=Enter an integer between 1500 and 9216., 79314=You can specify a WWPN in the range from 20:00:00:00:00:00:00:00 to 20:FF:FF:FF:FF:FF:FF:FF or from 50:00:00:00:00:00:00:00 to 5F:FF:FF:FF:FF:FF:FF:FF.}",
+    "textBeforeTable": "Procedure Creating a Service Profile Template Creating a Service Profile Instance from a Service Profile Template Creating a Service Profile Template Service profiles created from an updating template inherit all the properties of the template and remain connected to the template. Any changes to the template automatically update the service profiles created from the template. Updating template Service profiles created from an initial template inherit all the properties of the template. Service profiles created from an initial service profile template are bound to the template. However, changes to the initial template do not automatically propagate to the bound service profiles. If you want to propagate changes to bound service profiles, unbind and rebind the service profile to the initial template. Initial template Cisco UCS supports the following types of service profile templates: For example, if you need several service profiles with similar values to configure servers to host database software, you can create a service profile template, either manually or from an existing service profile. You then use the template to create the service profiles. If you need only one service profile with similar values to an existing service profile, you can clone a service profile in the Cisco UCS Manager GUI.",
+    "textAfterTable": "Step\u00a06 UCS-A /org/service-profile # set dynamic-vnic-conn-policy policy-name \u00a0 Associates the specified dynamic vNIC connection policy with the service profile. \u00a0 Step\u00a07 UCS-A /org/service-profile # set ext-mgmt-ip-state {none | pooled} \u00a0 Specifies how the management IP address will be assigned to the service profile. You can set the management IP address policy using the following options: None-- The service profile is not assigned an IP address. Pooled-- The service profile is assigned an IP address from the management IP pool. Note\u00a0\u00a0\u00a0 Setting the management IP address to static for a service profile template will result in an error. \u00a0 Step\u00a08 UCS-A /org/service-profile # set host-fw-policy policy-name \u00a0 Associates the specified host firmware policy with the service profile. \u00a0 Step\u00a09 UCS-A /org/service-profile # set identity {dynamic-uuid {uuid | derived} | dynamic-wwnn {wwnn | derived} | uuid-pool pool-name |",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

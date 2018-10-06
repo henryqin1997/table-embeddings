@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2008-02-10T00:00:00",
+            "2008-03-14T00:00:00",
+            "2008-07-16T00:00:00",
+            "2008-07-16T00:00:00",
+            "2008-07-21T00:00:00",
+            "2009-04-21T00:00:00"
+        ],
+        [
+            "Description",
+            "EarthData International, Inc. collected ALS-50-derived LiDAR over Okaloosa County, Florida with a 1.5m, nominal post spacing using a Cessna 310 aircraft. The collection for the entire project area was accomplished in one day on February 10, 2008. The collection was performed by EarthData International, Inc., using a Leica ALS50-II MPiA LiDAR system, serial number ALS039, including an inertial measuring unit (IMU) and a dual frequency GPS receiver. This project required 3 lifts of flight lines to be collected. The lines were flown at an average of 6,000 feet above mean terrain using a pulse rate of 122,500 pulses per second.",
+            "The airborne GPS data were processed and integrated with the IMU. The results were imported into the processing system for use in the LiDAR boresight. The raw LiDAR data was downloaded onto a production server. The ground control and airport GPS base station were used in conjunction with the processed ABGPS results for the LiDAR boresight. The properly formatted processing results were used for subsequent processing.",
+            "EarthData has developed a unique method for processing LiDAR data to identify and remove elevation points falling on vegetation, buildings, and other aboveground structures. The algorithms for filtering data were utilized within EarthData's proprietary software and commercial software written by TerraSolid. This software suite of tools provides efficient processing for small to large-scale, projects and has been incorporated into ISO 9001 compliant production work flows. The following is a step-by-step breakdown of the process. 1. Using the LiDAR data set provided by EarthData Aviation, the technician performs calibrations on the data set. 2. The technician performed a visual inspection of the data to verify that the flight lines overlap correctly. The technician also verified that there were no voids, and that the data covered the project limits. The technician then selected a series of areas from the data set and inspected them where adjacent flight lines overlapped. These overlapping areas were merged and a process which utilizes 3-D Analyst and EarthData's proprietary software was run to detect and color code the differences in elevation values and profiles. The technician reviewed these plots and located the areas that contained systematic errors or distortions that were introduced by the LiDAR sensor. 3. Systematic distortions highlighted in step 2 were removed and the data was re-inspected. Corrections and adjustments can involve the application of angular deflection or compensation for curvature of the ground surface that can be introduced by crossing from one type of land cover to another. 4. The LiDAR data for each flight line was trimmed in batch for the removal of the overlap areas between flight lines. The data was checked against a control network to ensure that vertical requirements were maintained. Conversion to the client-specified datum and projections were then completed. The LiDAR flight line data sets were then segmented into adjoining tiles for batch processing and data management. 5. The initial batch-processing run removed 95% of points falling on vegetation. The algorithm also removed the points that fell on the edge of hard features such as structures, elevated roadways and bridges. 6. The operator interactively processed the data using LiDAR editing tools. During this final phase the operator generated a TIN based on a desired thematic layer to evaluate the automated classification performed in step 5. This allowed the operator to quickly re-classify points from one layer to another and recreate the TIN surface to see the effects of edits. Geo-referenced images were toggled on or off to aid the operator in identifying problem areas. The data was also examined with an automated profiling tool to aid the operator in the reclassification. 7. The point cloud data were delivered in LAS 1.1 format. 9 - points in water, 2 - ground points, and 1 - all other.",
+            "The LiDAR ground points created in Process Step 3 were loaded into a Terrascan project. The export lattice model function in Terrascan was then used to create and output the LiDAR DEM grid to the Arc ASCII Raster format. As a final step, the Arc ASCII Raster format grid tiles were converted to ESRI Grid format using an Arc command.",
+            "The NOAA Coastal Services Center (CSC) received files in LAS format. The files contained LiDAR intensity and elevation measurements. CSC performed the following processing on the data to make it available within the LiDAR Data Retrieval Tool (LDART): 1. The LAS files were converted from UTM coordinates to geographic coordinates. 2. The data were converted from NAVD88 (orthometric) heights to GRS80 (ellipsoid) heights using Geoid 03. 3. The LAS header fields were sorted by latitude and updated. 4. The data was filtered to eliminate outliers.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2008_FL_Okaloosa_m85.xml&view=ISO19115Components-HTMLTable",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989142.82/warc/CC-MAIN-20150728002309-00335-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 604664212,
+    "recordOffset": 604648327,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:2008_FL_Ofaloosa_m85Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "Lidar QA/QC Report 2 None 1 North American Datum 1983 2007-01-19 Top CI_Series Count Component Name Issue Identification Page 1 LiDAR 1 Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 1 Citation URL ftp://ftp.csc.noaa.gov/pub/crs/beachmap/qa_docs/fl/okaloosa/20081204_Okaloosa_QA-QC_Report.pdf 1 NOAA CSC (originator) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov originator http://coast.noaa.gov",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

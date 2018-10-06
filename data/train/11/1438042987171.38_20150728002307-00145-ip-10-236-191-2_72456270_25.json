@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "General Options",
+            "Cache Timeout",
+            "Default Authentication",
+            "Disable GZIP Compression"
+        ],
+        [
+            "Description",
+            "Amount of time in minutes that the web server holds user credentials. To maintain the Content Server user credentials, you should select a finite time for the web server to cache user data.",
+            "The first time a user logs in to the Content Server instance, a cookie is sent to the filter. If you change the default authentication from the default Basic to NTLM, the first time a user logs in to the Content Server instance the user will not be prompted to log in again because their credentials will automatically be authenticated.",
+            "For optimal performance, the Content Server instance compresses the HTML response pages. This option is useful for debugging purposes. TRUE: Prevents the Content Server instance from compressing HTML response pages. FALSE: Configures the Content Server instance to compress HTML response pages. This is the default setting."
+        ]
+    ],
+    "pageTitle": "A User Interface",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E23943_01/doc.1111/e10792/e01_interface.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00145-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72564687,
+    "recordOffset": 72456270,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{754496=Section A.4.3.10, \"Export Archive Screen\", 477216=Section A.3.3.12, \"Add/Edit Parameter Screen\", 477422=Section A.3.3.14, \"Add Resource Screen\", 386133=Section A.2.4.15, \"Add Metadata Field Name Screen\", 68621=Section A.1.3.10, \"Hint Cache Updater Page\", 385785=Section A.2.4.12, \"Select Users Screen\", 676316=Section A.4.1.10, \"Action History Page\", 477854=Section A.3.3.18, \"Preview Action Information Screen\", 630127=Sets environment variable MaxFolders. 1000 is the largest allowed value. The default setting is 1000., 478085=Section A.3.3.20, \"Column Information Screen\", 155036=Section A.1.6.14, \"Outgoing Http Provider Page\", 477967=Section A.3.3.19, \"Add/Edit SearchResults Template Screen\", 154613=Section A.1.6.10, \"keepaliveoutgoing Provider Page\", 386243=Section A.2.4.16, \"Edit Metadata Field Screen\", 154829=Section A.1.6.12, \"ssloutgoing Provider Page\", 476975=Section A.3.3.10, \"Add Template Table Information Screen\", 477092=Section A.3.3.11, \"Add/Edit HTML Resource Include/String Screen\", 385564=Section A.2.4.10, \"User Admin Screen: Aliases Tab\", 477321=Section A.3.3.13, \"Add/Edit Query Screen\", 477521=Section A.3.3.15, \"Resource Selection Dialog Screen\", 60235=You can specify multiple IP addresses, separated by pipes (\u00a0|\u00a0). Make sure that there are no spaces on either side of the pipe character. (For example, 127.0.0.1|10.10.50.143), 712350=Section A.4.2.10, \"View Exported Content Items Screen\", 477736=Section A.3.3.17, \"Preview Information for Service Screen\", 386349=Section A.2.4.17, \"Update Database Design Screen\", 478303=Section A.3.3.22, \"Add/Edit Preference Screen\", 478190=Section A.3.3.21, \"Add/Edit Intradoc Template Screen\", 78505=Thus, if you set this value to 2000 and a document fails, the entire batch would be reprocessed. This would take longer than if you use the default setting and an item fails. But, if there are no failures in the batch, then setting this value higher accelerates the process., 385884=Section A.2.4.13, \"Sub-Administration Interface: Edit Rights Screen\", 65184=For Windows 2000 systems, the default is c:/Program Files/Internet Explorer/iexplore.exe., 154934=Section A.1.6.13, \"JPS User Provider Page\", 385674=Section A.2.4.11, \"Add New Alias/Edit Alias Screen\", 386012=Section A.2.4.14, \"User Admin Screen: Information Fields Tab\", 477633=Section A.3.3.16, \"Add/Edit Service Screen\", 154724=Section A.1.6.11, \"sslincoming Provider Page\", 630525=Sets environment variable MaxContent. 1000 is the largest allowed value. The default setting is 1000.}",
+    "lastModified": "Wed, 13 May 2015 05:21:05 GMT",
+    "textBeforeTable": "To access this page, choose Administration then Filter Administration. This screen is used to configure and troubleshoot web server filter communication with the Content Server instance. Because an Oracle WebLogic Server Administration Server handles web server communication, most of the options on this screen are not relevant except for the GZIP encoding option. The settings can still be modified and can be relevant if a separate web server is used as an access point for the this Content Server instance. A.1.5.1 Configure Web Server Filter Page \"WebUrlMaps Screen\" \"Configure Web Server Filter Page\" This section covers these topics: A.1.5 Web Server Interface Algorithm associated with a field. Generation Algorithm Brief description of the function of a field. Description Name of a field in the current path metadata configuration. Field Name Description Element",
+    "textAfterTable": "When you select any of the logging options, a web server filter log file is created as follows: Apache: IntradocDir/data/users/authfilt.log Logging Options Description CGI_DEBUG If selected, enables logging of high-level information that is passed through the web server filter. This is helpful in determining password and user authentication problems. CGI_SEND_DUMP If selected, enables logging of all incoming data that is passed through the web server filter. CGI_RECEIVE_DUMP Enables logging of all outgoing data that is passed through the web server filter. FILTER_DEBUG If selected, enables logging of events that occur inside the web server filter. PLUGIN_DEBUG If selected, enables logging of events that occur inside any web server",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

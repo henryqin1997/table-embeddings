@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "",
+            "",
+            "2013-10-01T00:00:00",
+            "2013-11-19T00:00:00"
+        ],
+        [
+            "Description",
+            "Point Generation. The points are generated as Terrascan binary Format using Terrapoint?s proprietary Laser Postprocessor Software. This software combines the Raw Laser file and GPS/IMU information to generate a point cloud for each individual flight. All the point cloud files encompassing the project area were then divided into quarter quad tiles. The referencing system of these tiles is based upon the project boundary minimum and maximums. This process is carried out in Terrascan. The bald earth is subsequently extracted from the raw LiDAR points using Terrascan in a Microstation environment. The automated vegetation removal process takes place by building an iterative surface model. This surface model is generated using three main parameters: Building size, Iteration angle and Iteration distance. The initial model is based upon low points selected by a roaming window and are assumed to be ground points. The size of this roaming window is determined by the building size parameter. These low points are triangulated and the remaining points are evaluated and subsequently added to the model if they meet the Iteration angle and distance constraints (fig. 1). This process is repeated until no additional points are added within an iteration. There is also a maximum terrain angle constraint that determines the maximum terrain angle allowed within the model. Multiple process dates.",
+            "Processing. 1. Flight lines and data were reviewed to ensure complete coverage of the study area and positional accuracy of the laser points. 2. Laser point return coordinates were computed using the REALM survey suite and PosPac based on independent data from the LiDAR system, IMU, and aircraft. 3. The raw LiDAR file was assembled into flight lines per return with each point having an associated x, y, and z coordinate. 4. Visual inspection of swath to swath laser point consistencies within the study area were used to perform manual refinements of system alignment. 5. Custom algorithms were designed to evaluate points between adjacent flight lines. Automated system alignment was computed based upon randomly selected swath to swath accuracy measurements that consider elevation, slope, and intensities. Specifically, refinement in the combination of system pitch, roll and yaw offset parameters optimize internal consistency. 6. Noise (e.g., pits and birds) was filtered using REALM software tools based on known elevation ranges and included the removal of any cycle slips. 7. Using TerraScan and Microstation, ground classifications utilized custom settings appropriate to the study area. 8. The corrected and filtered return points were compared to the RTK ground survey points collected to verify the vertical and horizontal accuracies. 9. Points were broken into processing bins and output areas and output as laser points, TINed and GRIDed surfaces. Bare earth DEMs meet PSLC specifications.",
+            "The NOAA Coastal Services Center (CSC) downloaded topographic files in .txt format from PSLC's website. The files contained lidar elevation, intensity, return number, class, scan angle and GPS time measurements. The data were received in Washington State Plane North Zone 4601, NAD83 coordinates and were vertically referenced to NAVD88 using the Geoid03 model. The vertical units of the data were feet. CSC performed the following processing for data storage and Digital Coast provisioning purposes: 1. The All-Return ASCII txt files were parsed to convert GPS Week Time to Adjusted Standard GPS Time. 2. The All-Return ASCII files were converted from txt format to las format using LASTools' txt2las tool and reclassified to fit the CSC class list, N=1, G=2, V=1, B=7. Vegetation points were set to \"unclassified\" due to the uncertainty of all vegetation points falling into one category rather than low, medium or high vegetation. 3. The las files were converted from orthometric (NAVD88) heights to ellipsoidal heights using Geoid03. 4. The las files' vertical units were converted from feet to meters. 5. The las files were converted from a Projected Coordinate System (WA SP North) to a Geographic Coordinate system (NAD83) 6. The las files' horizontal units were converted from feet to decimal degrees and converted to laz format.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/wa2005_pslc_northpugetlowlands_m2579.xml&view=ISO19115Components-HTMLTable",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989142.82/warc/CC-MAIN-20150728002309-00035-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 619090839,
+    "recordOffset": 619082205,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:wa2005_pslc_northpugetlowlands_m2579Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "1 2005 Puget Sound LiDAR Consortium (PSLC) Topographic LiDAR: North Puget Sound Lowlands 2013-10-29 1 Extent Shapefile 1 Lidar QC Report 1 None 1 North American Datum 1983 2007-01-19 1 none Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 2 Citation URL ftp://csc.noaa.gov/pub/DigitalCoast/lidar1_z/geoid12a/data/2579/supplemental/wa2005_pslc_northpugetlowlands.pdf 1 NOAA CSC (originator)",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

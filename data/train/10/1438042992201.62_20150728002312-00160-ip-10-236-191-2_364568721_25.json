@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Elapsed time since counters cleared",
+            "Valid PIM Packets",
+            "HelloJoin-PruneRegisterRegister StopAssert Bidir DF Election",
+            "Malformed Packets",
+            "Bad Checksums",
+            "Socket Errors",
+            "Packets dropped due to invalid socket",
+            "Packets which couldn't be accessed",
+            "Packets sent on Loopback Errors",
+            "Packets received on PIM-disabled Interface",
+            "Packets received with Unknown PIM Version"
+        ],
+        [
+            "Description",
+            "Time (in days and hours) that had elapsed since the counters were cleared with the clear pim counters command.",
+            "Total PIM packets that were received and sent.",
+            "Specific type of PIM packets that were received and sent.",
+            "Invalid packets due to format errors that were received and sent.",
+            "Packets received or sent due to invalid checksums.",
+            "Packets received or sent due to errors from the router\u2019s IP host stack sockets.",
+            "Packets received or sent due to invalid sockets in the router\u2019s IP host stack.",
+            "Packets received or sent due to errors when accessing packet memory.",
+            "Packets received or sent due to use of loopback interfaces.",
+            "Packets received or sent due to use of interfaces not enabled for PIM.",
+            "Packets received or sent due to invalid PIM version numbers in the packet header."
+        ]
+    ],
+    "pageTitle": "Cisco ASR 9000 Series Aggregation Services Router Multicast Command Reference, Release 4.2.x - Multicast PIM Commands on the Cisco\u00a0ASR\u00a09000 Series Router [Cisco ASR 9000 Series Aggregation Services Routers] - Cisco",
+    "title": "This table describes the significant fields shown in the display. Table 1 show pim traffic Field Descriptions",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r4-2/multicast/command/reference/b_mcast_cr42asr9k/b_mcast_cr42asr9k_chapter_0101.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992201.62/warc/CC-MAIN-20150728002312-00160-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 364633863,
+    "recordOffset": 364568721,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{268538=The show pim join-prune statistics command displays the average PIM join and prune groups for the most recent packets (in increments of 1000/10000/50000) that either were sent out or received from each PIM interface. If fewer than 1000/10000/50000 join and prune group messages are received since PIM was started or the statistics were cleared, the join-prune aggregation shown in the command display is zero (0)., 273810=Number of join and prune states aggregated into received messages in the last 1000/10000/50000 received join and prune messages., 402511=03:54:23, 181710=The following example shows how to set the PIM rendezvous point address to 172.16.6.21 for groups 225.2.2.0 - 225.2.2.255:, 393171=Up: 00:00:13, 314637=Up: 03:47:09, 273409=Number of join and prune states aggregated into transmitted messages in the last 1000/10000/50000 transmitted join and prune messages.}",
+    "textBeforeTable": "Syntax Description accept-register no access-list-name accept-register To configure a rendezvous point (RP) router to filter Protocol Independent Multicast (PIM) register messages, use the accept-register command in PIM configuration mode. To return to the default behavior, use the no form of this command. accept-register ssm spt-threshold infinity show pim vrf vrf_name topology show pim vrf vrf_name rpf show pim vrf vrf_name mdt cache show pim tunnel info show pim traffic show pim topology summary show pim topology interface-flag show pim topology entry-flag show pim topology detail show pim topology show pim summary show pim rpf summary show pim rpf route-policy test show pim rpf route-policy statistics show pim rpf hash show pim rpf show pim range-list show pim nsf show pim neighbor show pim mstatic show pim join-prune statistic show pim interface show pim group-map show pim context table show pim context show auto-rp candidate-rp rp-static-deny rpf-vector",
+    "textAfterTable": "multicast read, write Examples The following example shows how to restrict the rendezvous point. Sources in the Source Specific Multicast (SSM) range of addresses are not allowed to register with the rendezvous point. These statements need to be configured only on the rendezvous point.  RP/0/RSP0/CPU0:router(config)# router pim RP/0/RSP0/CPU0:router(config-pim-default-ipv4)# accept-register no-ssm-range RP/0/RSP0/CPU0:router(config-pim-default-ipv4)# exit RP/0/RSP0/CPU0:router(config)# ipv4 access-list no-ssm-range RP/0/RSP0/CPU0:router(config-ipv4-acl)# deny ipv4 any 232.0.0.0 0.255.255.255 RP/0/RSP0/CPU0:router(config-ipv4-acl)# permit any auto-rp candidate-rp To configure a router as a Protocol Independent Multicast (PIM) rendezvous point (RP) candidate that sends messages to the well-known CISCO-RP-ANNOUNCE multicast group (224.0.1.39), use the auto-rp\u00a0candidate-rp command in PIM configuration mode. To return to the default behavior, use the no form of this command. auto-rp candidate-rp type interface-path-id scope ttl-value [ group-list access-list-name ] [ interval seconds ] no auto-rp candidate-rp type interface-path-id scope ttl-value [ group-list access-list-name ] [ interval seconds ] Syntax Description",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

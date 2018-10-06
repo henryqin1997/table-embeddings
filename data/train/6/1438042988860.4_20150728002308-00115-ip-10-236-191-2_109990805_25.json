@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "query",
+            "src_format",
+            "src_value",
+            "dest_format",
+            "dest_value"
+        ],
+        [
+            "a GstQuery",
+            "the storage for the GstFormat of the source value, or NULL.",
+            "the storage for the source value, or NULL.",
+            "the storage for the GstFormat of the destination value, or NULL.",
+            "the storage for the destination value, or NULL."
+        ],
+        [
+            "",
+            "[out][allow-none]",
+            "[out][allow-none]",
+            "[out][allow-none]",
+            "[out][allow-none]"
+        ]
+    ],
+    "pageTitle": "GstQuery: GStreamer 1.0 Core Reference Manual",
+    "title": "",
+    "url": "http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstQuery.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00115-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 110015119,
+    "recordOffset": 109990805,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 24 Jun 2015 21:02:48 GMT",
+    "textBeforeTable": "Functions GstQuery GstQuery \u2014 Provide functions to create queries, and to set and parse values in them. Top\u00a0\u00a0|\u00a0 Description\u00a0\u00a0|\u00a0 Object Hierarchy",
+    "textAfterTable": "const gchar\u00a0* gst_query_type_get_name\u00a0() GQuark gst_query_type_to_quark\u00a0() GstQuery\u00a0* gst_query_ref\u00a0() void gst_query_unref\u00a0() GstQuery\u00a0* gst_query_copy\u00a0() #define gst_query_make_writable() #define gst_query_is_writable() gboolean gst_query_replace\u00a0() GstStructure\u00a0* gst_query_writable_structure\u00a0() GstQuery\u00a0* gst_query_new_custom\u00a0() const GstStructure\u00a0* gst_query_get_structure\u00a0() GstQuery\u00a0* gst_query_new_convert\u00a0() void gst_query_set_convert\u00a0() void gst_query_parse_convert\u00a0() GstQuery\u00a0* gst_query_new_position\u00a0() void",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

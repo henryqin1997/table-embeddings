@@ -1,0 +1,30 @@
+{
+    "relation": [
+        [
+            "Release",
+            "Release 2.0",
+            "Release 3.2"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "The command was made available in administration EXEC mode. The components , files , and none keywords were removed and replaced by the detail , verbose , and brief keywords, respectively. The summary keyword was removed. The default output display was changed to match the output that displayed when the optional summary keyword was entered in previous releases."
+        ]
+    ],
+    "pageTitle": "Cisco IOS XR System Management Command Reference for the Cisco CRS Router, Release 4.2.x - Software Package Management Commands on the Cisco\u00a0IOS\u00a0XR Software [Cisco Carrier Routing System] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/crs/software/crs_r4-2/system_management/command/reference/b_sysman_cr42crs/b_sysman_cr42crs_chapter_01111.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00219-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 379778231,
+    "recordOffset": 379700018,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Syntax Description { node-id | all } ] [ location boot-options install clear clear install boot-options command in administration EXEC mode. To clear the boot options for a specified location or for all locations, use the clear install boot-options show install which show install rollback show install request show install pie-info show install package show install log show install inactive show install committed show install boot-options show install auto-abort-timer show install audit show install active show install install verify healthcheck install rollback to install remove install label install deactivate install commit install boot-options install auto-abort-timer stop install attach install add install activate install abort clear install rollback oldest clear install log-history oldest clear install label clear install boot-options For detailed information about the concepts and tasks necessary to manage Cisco\u00a0IOS\u00a0XR software see Cisco\u00a0IOS\u00a0XR Getting Started Guide for the Cisco\u00a0CRS Router. This",
+    "textAfterTable": "Command Modes Administration EXEC Command History Release Modification Release 3.7.0 This command was introduced. Usage Guidelines To use this command, you must be in a user group associated with a task group that includes appropriate task IDs. If the user group assignment is preventing you from using a command, contact your AAA administrator for assistance. Use the clear install boot-options command to clear boot options that were set using the install boot-options command. Task ID Task ID Operations pkg-mgmt read, write Examples The following example shows how to clear the boot options for all locations:  RP/0/RP0/CPU0:router(admin)#clear install boot-options",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

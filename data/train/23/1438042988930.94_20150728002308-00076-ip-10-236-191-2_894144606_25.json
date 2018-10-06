@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Entry",
+            "EnableObjectRouting, EnableObjectRoutingByteTags, and EnableObjectRoutingIdentityTags",
+            "InitialOrientation",
+            "IsUserDebugDefault",
+            "OutofOrderRestartDelay",
+            "OutofOrderRestartQuota",
+            "ServiceApplicationRestartDelay",
+            "ShellPath",
+            "SingleAppMode",
+            "TableMode"
+        ],
+        [
+            "Description",
+            "The EnableObjectRouting, EnableObjectRoutingByteTags, and EnableObjectRoutingIdentityTags keys determine whether object routing is enabled for a particular type of tag. Object routing tags are applicable only when there are installed applications that have registered for object routing in their XML registration file (which must include the appropriate section). Valid values for EnableObjectRouting, EnableObjectRoutingByteTags, and EnableObjectRoutingIdentityTags are 0 and 1. 1 indicates that the item is enabled; 0 indicates that the item is disabled. Object routing is enabled if both of the following occur: EnableObjectRouting=1 (enabled) EnableObjectRoutingIdentityTags=1 (enabled) or EnableObjectRoutingByteTags=1 (enabled) Object routing is disabled if both of the following occur: EnableObjectROutingIdentityTags=0 (disabled) EnableObjectRoutingByteTags=0 (disabled) Object routing is disabled in this situation even if EnableObjectRouting=1 (enabled).",
+            "(Optional) InitialOrientation is the initial orientation (relative to the bottom of the Windows Vista display) of the application that runs in single-application mode. When a user starts an application from Launcher, the application uses the InitialOrientation property to determine which side of the unit has the orientation so that the application is oriented in the same direction. Specify the InitialOrientation property in your application only if the application has a specific orientation. An application can have four sides or only two sides. If the application has four sides, the application does not have to set the orientation. Valid values are \"bottom\" or \"top\".",
+            "Do not modify this registry key.",
+            "The OutofOrderRestartDelay entry determines how many minutes pass before the Microsoft Surface unit is restarted after the second out-of-order event. The restart delay for the first out-of-order event in a 24-hour period is always 10 minutes and is not configurable. Valid values range from 10 through 1440. (1440 equals 24 hours.)",
+            "The OutofOrderRestartQuota entry determines how many times during a 24-hour period the Microsoft Surface unit restarts after an out-of-order event. Valid values range from 0 through 10.",
+            "For Microsoft Surface units that are running a service application, if that application crashes or exits with a non-zero exit code, Surface Shell waits for the ServiceApplicationRestartDelay period and then restarts the service application. There is no limit to the number of times that the Microsoft Surface software restarts a service application. The Microsoft Surface software does not restart services if they exit normally (with an exit code of zero), and it does not monitor if service applications stop responding (hang).",
+            "Do not modify this registry key.",
+            "(Required for single-application mode.) The SingleAppMode subkey enables or disables single-application mode. Valid values are 0 (disabled) or 1 (enabled).",
+            "Do not modify this registry key."
+        ],
+        [
+            "Default value",
+            "Developer units: 1 Commercial units: 1",
+            "bottom",
+            "",
+            "Developer units: 60 minutes Commercial units: 60 minutes",
+            "Developer units: 0 Commercial units: 3",
+            "10 seconds",
+            "",
+            "Developer units: 0 Commercial units: 0",
+            ""
+        ]
+    ],
+    "pageTitle": "Registry Keys",
+    "title": "",
+    "url": "https://technet.microsoft.com/en-us/library/ee692118(v=Surface.10).aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00076-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 894174339,
+    "recordOffset": 894144606,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{99733=Valid values range from 10 through 1440. (1440 equals 24 hours.)}",
+    "textBeforeTable": "\u00a0 TagInfo/v1.0 Hive The following sections describe the relevant Surface registry keys, grouped by their registry hive. You can search this page for the key that you are interested in. Based on how you log on to the Microsoft Surface unit (as an administrator, user, or user with troubleshooting enabled), Surface Shell customizes the Microsoft Surface experience by automatically changing the relevant Microsoft Surface-specific registry keys to match the \"mode\". These registry changes are organized into \"profiles\" so that it is easy for you to understand and adjust these changes, if it is necessary. The Microsoft Surface registry keys are grouped into two types: mode-based registry keys and global registry keys. All mode-based registry keys are located under the HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Surface\\v1.0\\ModeProfiles hive. The rest of the HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Surface\\ registry keys are considered global and are independent of modes. Registry Keys Venue Kit Common Hardware Tasks SurfUser Tool PsExec Tool",
+    "textAfterTable": "BoundingBoxWidth=3.4 BoundingBoxHeight=2.1 PhysicalCenterOffsetFromTagX=0 PhysicalCenterOffsetFromTagY=0 OrientationOffsetFromTag=0 Text=\"This text will be shown below your object.\" The following illustration shows a business card that is vertically oriented. In this example, the tag is above and to the left of the center and is also canted to the right. This byte tag's registry information might look like the following example. Copy  [HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Surface\\TagInfo\\v1.0\\ByteTags\\9C] BoundingBoxHeight=2.1 PhysicalCenterOffsetFromTagX=0.4 PhysicalCenterOffsetFromTagY=0.2 OrientationOffsetFromTag=-355 Text=\"This text will be shown below your object.\" The following illustration shows an off-center and canted tag that is positioned below and left of the center. This byte tag's registry information might look like the following example. Copy  [HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Surface\\TagInfo\\v1.0\\ByteTags\\CB] BoundingBoxWidth=3.4 BoundingBoxHeight=2.1 PhysicalCenterOffsetFromTagX=-1.2 PhysicalCenterOffsetFromTagY=-0.5 OrientationOffsetFromTag=-56 Text=\"This text will be shown below your object.\" BoundingBoxWidth Developer units: 3.25\" Commercial units: 3.25\" BoundingBoxHeight",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

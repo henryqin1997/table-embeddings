@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Param",
+            "$string",
+            "$db"
+        ],
+        [
+            "Default",
+            "required",
+            "null"
+        ],
+        [
+            "Description",
+            "The string to escape.",
+            "The database connection."
+        ]
+    ],
+    "pageTitle": "DB - Classes - FuelPHP Documentation",
+    "title": "",
+    "url": "http://fuelphp.com/docs/classes/database/db.html",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00181-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 98445320,
+    "recordOffset": 98437118,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{32564=\u00a9 FuelPHP Development Team 2010-2015 - FuelPHP is released under the MIT license.}",
+    "lastModified": "Wed, 20 May 2015 20:47:42 GMT",
+    "textBeforeTable": "Parameters Yes Static The query method returns a new Database_Query_Builder object. The exact object depends on the type passed. If no type was passed, Fuel chooses DB::SELECT if the SQL query begins with 'SELECT', and it will return a Database_Query_Builder_Select object. query($sql, $type = null) The DB class allows you to build and execute database queries and fetch the result. DB Class table of contents \u00a0 FuelPHP, a PHP 5.3 Framework Documentation",
+    "textAfterTable": "Returns Returns a Database_Query_Builder object of the requested type. Example // Will prepare: SELECT * FROM `users` $query = DB::query('SELECT * FROM `users`'); Note that it is important to pass the correct type. The database driver will treat them differently. If you have a query that must return a resultset, but is not a SELECT, use DB::SELECT to make sure the result is returned correctly. last_query() The last_query method returns the last executed SQL query. Static Yes Parameters Param Default Description $db null The database connection. Returns The last executed SQL query. Example // execute a query $user = DB::select()->from('users')->where('id', 1)->execute(); echo DB::last_query(); // SELECT * FROM `users` WHERE `id` = 1 select() The select method returns a new Database_Query_Builder_Select object. Static Yes Parameters Param Default Description $columns null Columns to select. Returns Returns a Database_Query_Builder_Select object. Example // Will prepare: SELECT * $query = DB::select(); // Will prepare: SELECT `id`, `name` $query = DB::select('id', 'name'); select_array($columns) The select_array method returns a",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

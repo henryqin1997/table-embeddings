@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "parameter",
+            "token *",
+            "video_ref *"
+        ],
+        [
+            "description",
+            "Valid API authentication token. See svp_auth_get_token service.",
+            "Video reference ID. See svp_list_videos service."
+        ]
+    ],
+    "pageTitle": "Getting Started with the Developer API | Learn how to upload, encode, host and stream videos",
+    "title": "",
+    "url": "http://streamingvideoprovider.co.uk/kb/index.php/article/api",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987127.36/warc/CC-MAIN-20150728002307-00139-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 231331363,
+    "recordOffset": 231304868,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{2820=Version: 1.26 Last update: 13/07/2015, 44972=Returns the current streams (VP) credits amount with the SVP platform. May be used for custom tracking or notifications., 163363=Last updated on July 15, 2015 with 338908 views, 144326=Available values: 16:9 & 4:3. If this parameter is passed player dimension is calculated proportionally by video_width or video_height parameter (only one of these parameters have to be passed)., 172172=Copyright \u00a9 2006-2012 StreamingVideoProvider Ltd. Registered in England & Wales, Company No. 06565144 - Terms & Conditions - Privacy -}",
+    "textBeforeTable": "NOTE: Max 2.00 GB file size allowed. Notes: This is a synchronous service call that books an asynchronous upload and returns immediately! Actual file pull will start asynchronously from a separate server and may take some time. Do not delete the video file immediately, wait for a notification or do so with a clean up scheduled job on your server, in an hour for example! Books an upload of a video file from one of the predefined publisher locations. Description: 2 . svp_upload_video </response> <auth_token>xxxxxxxxxxxxxxxxx</auth_token> <result>OK</result> <response> Example success response: Authentication token code or error code if error occurs. Returned data: Valid API authentication token. token Your publisher API Code. api_code * Your publisher API Key. api_key * description parameter Notes: The authentication token has a meaning similar to session ID. The lifetime of the authentication token is currently 48h. If the service is been accessed with valid token within this time, the",
+    "textAfterTable": "file_name * Video resource file name without path. Example: myvideo.mp4 whitelabel WhiteLabel SVP video destination. Available values: yes & no (default). If value is yes you can re-brand this kind of player and insert your own logo or text (watermark). NOTE: If video file is registered under channel playlist and whitelabel parameter is not present, video destination will be established from default branding option in the channel. video_title Title to be associated with this video in the video list. tag_number Integer user data. May be used at publisher's discretion. For example category or internal user ID. tag_string String(100) user data. May be used at publisher's discretion. For example tagging information. channel_ref TV or PPV channel under which the video is to be associated with. Useful if you need to publish videos in a TV or PPV channel automatically. Take a look at svp_list_channels service for information how to get reference IDs dynamically. user_ref SVP User reference ID filter. Only applicable for resellers!!! Returned data:",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

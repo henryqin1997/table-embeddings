@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "option",
+            "url.redirect",
+            "url.redirect-code"
+        ],
+        [
+            "description",
+            "redirects a set of URLs externally",
+            "defines the http code that is sent with the redirect URL"
+        ],
+        [
+            "note",
+            "",
+            "Added in 1.5.0"
+        ]
+    ],
+    "pageTitle": "Docs ConfigurationOptions - Lighttpd - lighty labs",
+    "title": "",
+    "url": "http://redmine.lighttpd.net/projects/lighttpd/wiki/Docs_ConfigurationOptions",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00286-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 207314564,
+    "recordOffset": 207303665,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Lighttpd Core\u00b6 mod_webdav - WebDAV mod_usertrack - user track (cookies) mod_uploadprogress - upload progress (1.5.0) mod_userdir - user directories mod_trigger_b4_dl - trigger before download mod_status - server status mod_ssi - server side includes mod_simple_vhost - simple virtual host mod_setenv - set HTTP Environment mod_secure_download - secure and fast download mod_scgi - SCGI mod_rrdtool - rrdtool mod_rewrite - rewriting mod_redirect - redirect mod_proxy - proxy mod_mysql_vhost - Mysql virtual hosting mod_mimemagic - determines the MIME type of a file by looking at a few bytes of its contents mod_mem_cache - local file accelerating mod_indexfile - Precautions and documentation mod_flv_streaming - flv streaming mod_fastcgi - fastcgi mod_extforward - use X-Forwarded-For mod_expire - cached expiration mod_evhost - enhanced virtual host mod_evasive - evasive mod_dirlisting - directory listing mod_deflate - dynamic compression (1.5.0) mod_compress - compress output mod_cml - Cache Meta Language mod_cgi - cgi mod_cache - web accelerating mod_auth - authentication mod_alias - directory aliases mod_accesslog - access log files mod_access - access restrictions Core Debug Info SSL Lighttpd Core Configuration File Options Here you will find a list of all available configuration lighttpd. They are grouped by module, and a link to each module configuration will provide with more detail",
+    "textAfterTable": "etag.use-mtime Determines if mtime-value is used in ETag generation Details etag.use-size Determines if size-value is used in ETag generation Details index-file.names list of files to search for if a directory is requested Details mimetype.assign list of known mimetype mappings Details mimetype.use-xattr try to use XFS-style extended attribute interface for retreiving the Content-Type Details server.bind IP address, hostname or absolute path to the unix-domain socket Details server.chroot root-directory of the server Details server.core-files enable core files Details server.dir-listing enable/disable dir listing Details server.document-root document-root of the webserver Details server.errorfile-prefix path prefix for special status codes pages Details server.error-handler-404 uri to call if the requested file results in a 404 Details server.errorlog pathname of the error-log Details server.errorlog-use-syslog* send",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

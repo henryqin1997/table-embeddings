@@ -1,0 +1,30 @@
+{
+    "relation": [
+        [
+            "Counter",
+            "Number or Replicates Created",
+            "Replicate_State"
+        ],
+        [
+            "Description",
+            "Displays the number of replicates that were created by Informix for the DB tables. This counter displays information during Replication Setup.",
+            "This counter represents the state of replication. The following list provides possible values: 0 = Initializing. The counter equals 0 when the server is not defined or when the server is defined but realizes the template has not completed. 1 = Replication setup script fired from this node. Cisco recommends that you run utils dbreplication status on the CLI to determine the location and cause of the failure. 2 = Good Replication. 3 = Replication. A counter value of 3 indicates replication in the cluster is bad. It does not mean that replication failed on a particular server in the cluster. Cisco recommends that you run utils dbreplication status on the CLI to determine the location and cause of the failure. 4 = Replication setup did not succeed."
+        ]
+    ],
+    "pageTitle": "Administration Console User Guide for Cisco Unified Intelligence Center, Release 9.0(1) - Tools Drawer [Cisco Unified Contact Center Enterprise] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/intelligence_suite/intelligence_suite_901/user/guide/CUIC_BK_A60303B5_00_admin-console-901/CUIC_BK_A60303B5_00_admin-console-901_chapter_0111.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989507.42/warc/CC-MAIN-20150728002309-00284-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 381146735,
+    "recordOffset": 381108195,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The Connector handles HTTP/HTTPS requests and sends HTTP/HTTPS responses that occur when Cisco Unified Intelligence Center web pages are accessed. There are two instances of this object based on the Secure Sockets Layer (SSL) status of the URLs for web applications: http-8443 for SSL (HTTPS) connections and http-8081 for non-SSL (HTTP) connections. The Tomcat Connector object provides information about Tomcat non-secure and secure Hypertext Transport Protocol (HTTP) connectors. A Tomcat Connector represents an endpoint that receives requests and sends responses. CUIC Tomcat Connector Thread TCP System SchedulerInfo Reporting Engine Info Ramfs Processor Process Partition Number of Replicates Created and State of Replication Network Interface Memory IP6 IP Intelligence Center Thread Pool Section Intelligence Center System Condition Table Intelligence Center License Information section Intelligence Center JVM Statistics Intelligence Center General Information section Enterprise Replication Perfmon Counters Enterprise Replication DBSpace Monitors DBPerformance Info DB User Host Information Counters DB Local DSN DB Change Notification Subscriptions DB Change Notification Server DB Change Notification Client CUIC Tomcat Web Application CUIC Tomcat JVM",
+    "textAfterTable": "ThreadsBusy The Connector's current number of busy/in-use request processing threads. ThreadsMax The Connector's maximum number of request processing threads. ThreadsTotal The Connector's current total number of request processing threads, including available and in-use threads. CUIC Tomcat JVM The Tomcat Java Virtual Machine (JVM) object provides information about the Tomcat JVM, which represents, among other things, a pool of common resource memory used by Unified Intelligence Center. Counter Description KBytesMemoryFree The amount of free dynamic memory block (heap memory) in the Tomcat Java Virtual Machine. The dynamic memory block stores all objects created by Tomcat and its web applications such as Cisco Unified Intelligence Center. When the amount of free dynamic memory is low, more memory is automatically allocated and total memory size (represented by the KbytesMemoryTotal counter) increases up to the maximum (represented by the KbytesMemoryMax counter). You can determine the amount of",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}
