@@ -27,7 +27,7 @@ def main():  # to be implemented
 
     file.write('wordlist length = {}'.format(len(target[0])))
 
-    net = neural.Net(WORDLIST_LABEL_SIZE = len(target[0])).to(device)
+    net = neural.Net(COLUMN_DATA_TYPES=len(input[0]),WORDLIST_LABEL_SIZE = len(target[0])).to(device)
 
     print("nn prepared")
 
