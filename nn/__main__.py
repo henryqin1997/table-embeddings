@@ -60,7 +60,7 @@ def main():  # to be implemented
         iteration += 1
 
 
-        optimizer = torch.optim.SGD(net.parameters(), lr=1/(100*ite))
+        optimizer = torch.optim.SGD(net.parameters(), lr=1/(100*iteration))
 
         for ite in range(100):
 
