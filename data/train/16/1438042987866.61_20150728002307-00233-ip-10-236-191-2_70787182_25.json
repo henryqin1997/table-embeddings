@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Keywords and Parameters",
+            "FOR :array_size FOR integer",
+            "statement_id",
+            "USING DESCRIPTOR SQLDA_descriptor",
+            "USING",
+            "host_variable",
+            "indicator_variable"
+        ],
+        [
+            "Description",
+            "Host variable containing the number of rows to be processed. Number of rows to be processed. Limits the number of times the statement is executed when the USING clause contains array host variables If you omit this clause, Oracle9i executes the statement once for each component of the smallest array.",
+            "A precompiler identifier associated with the SQL statement or PL/SQL block to be executed. Use the embedded SQL PREPARE statement to associate the precompiler identifier with the statement or PL/SQL block.",
+            "Uses an Oracle descriptor. CANNOT be used together with an ANSI descriptor (INTO clause).",
+            "Specifies a list of host variables with optional indicator variables that Oracle9i substitutes as input variables into the statement to be executed. The host and indicator variables must be either all scalars or all arrays.",
+            "Host variables.",
+            "Indicator variables."
+        ]
+    ],
+    "pageTitle": "F Embedded SQL Statements and Precompiler Directives",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B12037_01/appdev.101/a96109/pcoafemb.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987866.61/warc/CC-MAIN-20150728002307-00233-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70828163,
+    "recordOffset": 70787182,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 02 Feb 2004 03:40:00 GMT",
+    "textBeforeTable": "Keywords and Parameters Description of the illustration execo.gif Syntax You must first prepare the SQL statement or PL/SQL block with an embedded SQL PREPARE statement. Prerequisites In Oracle dynamic SQL, to execute a DELETE, INSERT, or UPDATE statement or a PL/SQL block that has been previously prepared with an embedded SQL PREPARE statement. Purpose F.23 EXECUTE (Executable Embedded SQL) EXECUTE IMMEDIATE (Executable Embedded SQL). Related Topics END-EXEC. END; END IF; THEN RAISE NAME-MISSING; IF :EMP-NAME:IND-NAME IS NULL WHERE EMPNO = :EMP-NUMBER; FROM EMP INTO :EMP-NAME:IND-NAME, :JOB-TITLE, :SALARY SELECT ENAME, JOB, SAL BEGIN EXEC SQL EXECUTE Placing this EXECUTE statement in an Oracle Precompiler program embeds a PL/SQL block in the program:  Example  Since the Oracle Precompilers treat an embedded PL/SQL block like a single embedded SQL statement, you can embed a PL/SQL block anywhere in an Oracle Precompiler program that you can embed a SQL statement. For more information on embedding PL/SQL blocks in Oracle Precompiler programs,",
+    "textAfterTable": "Usage Note For more information on this statement, see Chapter 9, \" Oracle Dynamic SQL\". Example This example illustrates the use of the EXECUTE statement in a Pro*COBOL embedded SQL program: EXEC SQL PREPARE MY-STATEMENT FROM MY-STRING END-EXEC. EXEC SQL EXECUTE MY-STATEMENT USING :MY-VAR END-EXEC. Related Topics DECLARE DATABASE (Oracle Embedded SQL Directive). PREPARE (Executable Embedded SQL). F.24 EXECUTE DESCRIPTOR (Executable Embedded SQL Purpose In ANSI SQL Method 4, to execute a DELETE, INSERT, or UPDATE statement or a PL/SQL block that has been previously prepared with an embedded SQL PREPARE statement. Prerequisites You must first prepare the SQL statement or PL/SQL block with an embedded SQL PREPARE statement. Syntax Description of the illustration execa.gif Keywords and Parameters",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

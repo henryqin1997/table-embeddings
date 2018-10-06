@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Modifier and Type",
+            "class",
+            "class"
+        ],
+        [
+            "Class and Description",
+            "GreekLowerCaseFilter Normalizes token text to lower case, removes some Greek diacritics, and standardizes final sigma to sigma.",
+            "GreekStemFilter A TokenFilter that applies GreekStemmer to stem Greek words."
+        ]
+    ],
+    "pageTitle": "Uses of Class org.apache.lucene.analysis.TokenStream (Lucene 3.6.0 API)",
+    "title": "Subclasses of TokenStream in org.apache.lucene.analysis.el",
+    "url": "http://lucene.apache.org/core/3_6_0/api/all/org/apache/lucene/analysis/class-use/TokenStream.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00336-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 147788003,
+    "recordOffset": 147758715,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 12 Apr 2012 02:55:34 GMT",
+    "textBeforeTable": "Uses of TokenStream in org.apache.lucene.analysis The highlight package contains classes to provide \"keyword in context\" features typically used to highlight search terms in the text of results pages. org.apache.lucene.search.highlight A simple query parser implemented with JavaCC. org.apache.lucene.queryParser High-performance single-document main memory Apache Lucene fulltext search index. org.apache.lucene.index.memory Expert: attributes streaming definition for indexing facets org.apache.lucene.facet.index.streaming Indexing of document categories org.apache.lucene.facet.index Association category enhancements org.apache.lucene.facet.enhancements.association Enhanced category features org.apache.lucene.facet.enhancements Document for indexing and searching. The logical representation of a org.apache.lucene.document IndexableBinaryStringTools, to allow it to be stored as an index term. CollationKey as a String using Collator, and then encode the CollationKey using the provided CollationKeyFilter converts each token into its binary org.apache.lucene.collation Tokenizer that is aware of Wikipedia syntax.",
+    "textAfterTable": "TokenStream from a canned list of Tokens. class\u00a0 CharTokenizer An abstract base class for simple, character-oriented tokenizers. class\u00a0 EmptyTokenizer Emits no tokens class\u00a0 FilteringTokenFilter Abstract base class for TokenFilters that may remove tokens. class\u00a0 ISOLatin1AccentFilter Deprecated.\u00a0 If you build a new index, use ASCIIFoldingFilter which covers a superset of Latin 1. This class is included for use with existing indexes and will be removed in a future release (possibly Lucene 4.0). class\u00a0 KeywordMarkerFilter Marks terms as keywords via the KeywordAttribute. class\u00a0 KeywordTokenizer Emits the entire input as a single token. class\u00a0 LengthFilter Removes words that are too long or too short from the stream. class\u00a0 LetterTokenizer A LetterTokenizer is a tokenizer that divides text at non-letters. class\u00a0 LimitTokenCountFilter This TokenFilter",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

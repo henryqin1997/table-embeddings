@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Element",
+            "name Element",
+            "password Element"
+        ],
+        [
+            "Required",
+            "only one",
+            "only one"
+        ],
+        [
+            "Description",
+            "Contains the name of the principal",
+            "Contains the password for the principal"
+        ]
+    ],
+    "pageTitle": "Elements in the sun-web.xml File (Sun Java System Web Server 7.0 Update 4 Developer's Guide to Java Web Applications)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19316-01/820-6603/abxgi/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00314-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70827571,
+    "recordOffset": 70807988,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 03 Feb 2011 10:03:55 GMT",
+    "textBeforeTable": "sun-web-app Subelements Table\u00a0A\u20133 The following table describes subelements for the sun-web-app element. Subelements This element Web Server- specific configuration for a web application. This element is the root element. The sun-web.xml file contain only one sun-web-app. sun-web-app Element description Element property Element sun-web-app Element General elements are as follows: General Elements For an alphabetical list of elements in sun-web.xml, see Alphabetical List of sun-web.xml Elements <!DOCTYPE sun-web-app PUBLIC -//Sun Microsystems, Inc.//DTD Application Server 8.1 Servlet 2.5//EN\" http://www.sun.com/software/appserver/dtds/sun-web-app_2_4-1.dtd\"> Each sun-web.xml file must begin with the following DOCTYPE header: Subelements must be defined in the order in which they are listed in each section, unless otherwise noted. Note \u2013 This section also includes an alphabetical list of the elements for quick reference. See Alphabetical List of sun-web.xml Elements. Internationalization Elements JSP Element Classloader Element Caching Elements Reference Elements Session Elements Security Elements General Elements This section describes the XML elements in the sun-web.xml file. Elements are grouped as follows:",
+    "textAfterTable": "session-config Element zero or one\u00a0 Specifies the session manager, session cookie, and other session-related information\u00a0 resource-env-ref Element zero or more\u00a0 Maps the absolute JNDI name to the resource-env-ref in the corresponding Java EE XML file resource-ref Element zero or more\u00a0 Maps the absolute JNDI name to the resource-ref in the corresponding Java EE XML file service-ref Element zero or more\u00a0 Specifies runtime settings for a web service reference\u00a0 cache Element zero or one\u00a0 Configures caching for web application components\u00a0 class-loader Element zero or one\u00a0 Specifies classloader configuration information\u00a0 jsp-config Element zero or one\u00a0 Specifies JSP configuration information\u00a0 locale-charset-info Element zero or one\u00a0 Specifies internationalization settings\u00a0 property Element",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

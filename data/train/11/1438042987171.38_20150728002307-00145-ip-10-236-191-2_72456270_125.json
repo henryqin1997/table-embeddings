@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Element",
+            "Track Content Access Only",
+            "Do Not Populate Access Log Columns",
+            "Simplify User Agent String",
+            "Maximum Days to Retain Data",
+            "Do Not Archive Expired Data",
+            "Enter Maximum URL Length",
+            "Enter Maximum Proxy Name Length",
+            "Post Reduction Executable",
+            "Web Beacon ID List",
+            "Update",
+            "Reset",
+            "Revert To Install Settings"
+        ],
+        [
+            "Description",
+            "If selected, specifies to track content access only. By default, the checkbox is selected.",
+            "Specifies the access log columns to not populate.",
+            "If selected, simplifies the user agent string. By default, the checkbox is selected.",
+            "Specifies the maximum number of days that data is retained. The default setting is 60.",
+            "If selected, specifies to not archive expired data. By default, the checkbox is selected.",
+            "Enter the maximum number of characters for the length of URLs. The default setting is 3000.",
+            "Enter the maximum number of characters for the length of a proxy name. The default setting is 50.",
+            "Specifies a post-reduction executable. There is no default.",
+            "Specifies a list of web beacon IDs.",
+            "Updates the component configuration with the modified field settings.",
+            "Returns modified field settings to their previous values.",
+            "Changes component configuration field settings to their install setting values."
+        ]
+    ],
+    "pageTitle": "A User Interface",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E23943_01/doc.1111/e10792/e01_interface.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00145-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72564687,
+    "recordOffset": 72456270,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{754496=Section A.4.3.10, \"Export Archive Screen\", 477216=Section A.3.3.12, \"Add/Edit Parameter Screen\", 477422=Section A.3.3.14, \"Add Resource Screen\", 386133=Section A.2.4.15, \"Add Metadata Field Name Screen\", 68621=Section A.1.3.10, \"Hint Cache Updater Page\", 385785=Section A.2.4.12, \"Select Users Screen\", 676316=Section A.4.1.10, \"Action History Page\", 477854=Section A.3.3.18, \"Preview Action Information Screen\", 630127=Sets environment variable MaxFolders. 1000 is the largest allowed value. The default setting is 1000., 478085=Section A.3.3.20, \"Column Information Screen\", 155036=Section A.1.6.14, \"Outgoing Http Provider Page\", 477967=Section A.3.3.19, \"Add/Edit SearchResults Template Screen\", 154613=Section A.1.6.10, \"keepaliveoutgoing Provider Page\", 386243=Section A.2.4.16, \"Edit Metadata Field Screen\", 154829=Section A.1.6.12, \"ssloutgoing Provider Page\", 476975=Section A.3.3.10, \"Add Template Table Information Screen\", 477092=Section A.3.3.11, \"Add/Edit HTML Resource Include/String Screen\", 385564=Section A.2.4.10, \"User Admin Screen: Aliases Tab\", 477321=Section A.3.3.13, \"Add/Edit Query Screen\", 477521=Section A.3.3.15, \"Resource Selection Dialog Screen\", 60235=You can specify multiple IP addresses, separated by pipes (\u00a0|\u00a0). Make sure that there are no spaces on either side of the pipe character. (For example, 127.0.0.1|10.10.50.143), 712350=Section A.4.2.10, \"View Exported Content Items Screen\", 477736=Section A.3.3.17, \"Preview Information for Service Screen\", 386349=Section A.2.4.17, \"Update Database Design Screen\", 478303=Section A.3.3.22, \"Add/Edit Preference Screen\", 478190=Section A.3.3.21, \"Add/Edit Intradoc Template Screen\", 78505=Thus, if you set this value to 2000 and a document fails, the entire batch would be reprocessed. This would take longer than if you use the default setting and an item fails. But, if there are no failures in the batch, then setting this value higher accelerates the process., 385884=Section A.2.4.13, \"Sub-Administration Interface: Edit Rights Screen\", 65184=For Windows 2000 systems, the default is c:/Program Files/Internet Explorer/iexplore.exe., 154934=Section A.1.6.13, \"JPS User Provider Page\", 385674=Section A.2.4.11, \"Add New Alias/Edit Alias Screen\", 386012=Section A.2.4.14, \"User Admin Screen: Information Fields Tab\", 477633=Section A.3.3.16, \"Add/Edit Service Screen\", 154724=Section A.1.6.11, \"sslincoming Provider Page\", 630525=Sets environment variable MaxContent. 1000 is the largest allowed value. The default setting is 1000.}",
+    "lastModified": "Wed, 13 May 2015 05:21:05 GMT",
+    "textBeforeTable": "You must restart the Content Server instance after making any component configuration change. Note: Choose Administration then Configuration for instance. Click Enabled Component Details, then click Configure next to the ContentTracker component name. If the component is not enabled, click Disabled Component Details to find the component to configure. Open the Admin Server Page, select Component Manager, click advanced component manager, select ContentTracker from the Update Component Configuration list, then click Update. There are two ways to access the Update Component Configuration screen: This screen is used to modify configuration settings for the Content Tracker component. A.3.7.3 Content Tracker Update Component Configuration Screen Changes component configuration field settings to their install setting values. Revert To Install Settings Returns modified field settings to their previous values. Reset Updates the component configuration with the modified field settings. Update",
+    "textAfterTable": "A.3.7.4 Content Tracker Reports Update Component Configuration Screen This screen is used to modify configuration settings for the Content Tracker Reports component. There are two ways to access the Update Component Configuration screen: Open the Admin Server Page, select Component Manager, click advanced component manager, select ContentTrackerReports from the Update Component Configuration list, then click Update. Choose Administration then Configuration for instance. Click Enabled Component Details, then click Configure next to the ContentTrackerReports component name. If the component is not enabled, click Disabled Component Details to find the component to configure. Note: You must restart the Content Server instance after making any component configuration change. Element Description Enable Security Checks on Queries If selected, enables security checks on Content Tracker Report queries. By default, the checkbox is not selected.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

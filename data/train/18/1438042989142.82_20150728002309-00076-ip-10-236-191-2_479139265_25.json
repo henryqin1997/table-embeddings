@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 21, 1998",
+            "Jun 4, 2007",
+            "Jul 6, 2010",
+            "Jul 15, 2010",
+            "Jun 2, 2011",
+            "Dec 6, 2011",
+            "May 1, 2012",
+            "Jul 10, 2015"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS",
+            "REMI"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Maintenance fee reminder mailed"
+        ],
+        [
+            "Description",
+            "Owner name: 3COM CORPORATION, CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:AKGUN, ALI;FIJOLEK, JOHN C.;SANGSTON, STEVEN W.;AND OTHERS;REEL/FRAME:009685/0736 Effective date: 19981215",
+            "Year of fee payment: 4",
+            "Owner name: HEWLETT-PACKARD COMPANY, CALIFORNIA Free format text: MERGER;ASSIGNOR:3COM CORPORATION;REEL/FRAME:024630/0820 Effective date: 20100428",
+            "Owner name: HEWLETT-PACKARD COMPANY, CALIFORNIA Free format text: CORRECTIVE ASSIGNMENT TO CORRECT THE SEE ATTACHED;ASSIGNOR:3COM CORPORATION;REEL/FRAME:025039/0844 Effective date: 20100428",
+            "Year of fee payment: 8",
+            "Owner name: HEWLETT-PACKARD DEVELOPMENT COMPANY, L.P., TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:HEWLETT-PACKARD COMPANY;REEL/FRAME:027329/0044 Effective date: 20030131",
+            "Owner name: HEWLETT-PACKARD DEVELOPMENT COMPANY, L.P., TEXAS Free format text: CORRECTIVE ASSIGNMENT PREVIUOSLY RECORDED ON REEL 027329 FRAME 0001 AND 0044;ASSIGNOR:HEWLETT-PACKARD COMPANY;REEL/FRAME:028911/0846 Effective date: 20111010",
+            ""
+        ]
+    ],
+    "pageTitle": "Patent US6657991 - Method and system for provisioning network addresses in a data-over-cable system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6657991?dq=6650327",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989142.82/warc/CC-MAIN-20150728002309-00076-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 479199731,
+    "recordOffset": 479139265,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{79859=Above the telephony interface 48, in the data link layer 42, is a Point-to-Point Protocol (\u201cPPP\u201d) layer 50, hereinafter PPP 50. As is known in the art, PPP is used to encapsulate network layer datagrams over a serial communications link. For more information on PPP see Internet Engineering Task Force (\u201cIETF\u201d) Request for Comments (\u201cRFC\u201d), RFC-1661, RFC-1662 and RFC-1663, incorporated herein by reference. Information for IETF RFCs can be found on the World Wide Web at URLs \u201cds.internic.net\u201d or \u201cwww.ietf.org.\u201d, 112497=If telephony return is being used, after receiving the TCD 70 message and the TSI message 76, the CM 16 continues to establish access to data network 28 (and resources on the network) by first dialing into the TRAC 24 and establishing a telephony PPP 50 session. Upon the completion of a successful PPP 50 connection, the CM 16 performs PPP 50 Link Control Protocol (\u201cLCP\u201d) negotiation with the TRAC 24. Once LCP negotiation is complete, the CM 16 requests Internet Protocol Control Protocol (\u201cIPCP\u201d) address negotiation for an upstream telephony return path. For more information on IPCP see, RFC-1332, incorporated herein by reference. During IPCP negotiation, the CM 16 negotiates an IP 54 address with the TRAC 24 for sending IP 54 data packet responses back to data network 28 via the TRAC 24, via PPP 50., 119642=FIG. 5 is a block diagram illustrating an exemplary DHCP 66 message structure 108. The format of the DHCP 66 messages is based on the format of BOOTstrap Protocol (\u201cBOOTP\u201d) messages described in RFC-951 and RFC-1542, incorporated herein by reference. From a network host client's point of view, the DHCP 66 is an extension of the BOOTP mechanism. This behavior allows existing BOOTP clients to interpret with the DHCP 66 servers without requiring any change to network host the clients' BOOTP initialization software. The DHCP 66 provides persistent storage of network parameters for network host clients., 82166=Above the network layer are a Simple Network Management Protocol (\u201cSNMP\u201d) layer 62, Trivial File Transfer Protocol (\u201cTFTP\u201d) layer 64, Dynamic Host Configuration Protocol (\u201cDHCP\u201d) layer 66 and a UDP manager 68. SNMP layer 62 is used to support network management functions. For more information on SNMP layer 62 see, RFC-1157, incorporated herein by reference. TFTP layer 64 is a file transfer protocol used to download files and configuration information. For more information on TFTP layer 64 see, RFC-1350, incorporated herein by reference. The DHCP layer 66 is a protocol for passing configuration information to hosts on an IP 54 network. For more information on the DHCP layer 66 see, RFC-1541, and RFC-2131, incorporated herein by reference. UDP manager 68 distinguishes and routes packets to an appropriate service (e.g., a virtual tunnel). More or few protocol layers could also be used with data-over-cable system 10., 232055=In one preferred embodiment of the present invention, a private address marker is selected as a first private network address (e.g., 10.1.1.1) within a group of private network addresses defined by a private network address scope (e.g., 10.1.1.0). The public address marker can be selected in a similar way. However, the present invention is not limited to selecting the address markers as a first network address defined by the network address scope, and other network address markers with other netmask can also selected (e.g., a first IP 54 address of 10.1.1.12 for a private address marker, or 149.112.8.76 for a public address marker).}",
+    "textBeforeTable": "Patent Citations The claims should not be read as limited to the described order or elements unless stated to that effect. Therefore, all embodiments that come within the scope and spirit of the following claims and equivalents thereto are claimed as the invention. In view of the wide variety of embodiments to which the principles of the invention can be applied, it should be understood that the illustrated embodiments are exemplary only, and should not be taken as limiting the scope of the present invention. For example, the Steps of the flow diagrams may be taken in sequences other than those described, and more or fewer elements or components may be used in the block diagrams. In addition, the present invention can be practiced with software, hardware, or a combination thereof. It should be understood that the programs, processes, methods, systems and apparatus described herein are not related or limited to any particular type of computer apparatus (hardware or software), unless indicated otherwise. Various types of general purpose or specialized computer apparatus may be used with or perform operations in accordance with the teachings described herein. The provisioning of network addresses allows two or more virtual networks to be created on the data-over-cable system. The provisioning of network addresses may also reduce a number of public addresses required for a data-over-cable system (e.g., for \u201calways-on\u201d cable modems). Methods for preferred embodiments of the present invention, may allow the",
+    "textAfterTable": "Fluke Corporation Method of configuring a valid IP address and detecting duplicate IP addresses in a local area network US5761602 Sep 13, 1995 Jun 2, 1998 Wagner Dsp Technologies Hybrid multichannel data transmission system utilizing a broadcast medium US5778181 Mar 14, 1996 Jul 7, 1998 Actv, Inc. Enhanced video programming system and method for incorporating and displaying retrieved integrated internet information segments US5790198 May 4, 1994 Aug 4, 1998 Starsight Telecast, Inc. Television schedule information transmission and utilization system and process US5790548 Apr 18, 1996 Aug 4, 1998 Bell Atlantic Network Services, Inc. Universal access multimedia data network US5790677 Jun 29, 1995 Aug 4, 1998 Microsoft Corporation System and method for secure electronic commerce transactions US5790770 Jul 18, 1996 Aug 4, 1998 Fujitsu Network Communications, Inc. Method and apparatus for reducing information loss in a communications network US5790806 Apr 3, 1996 Aug 4, 1998 Scientific-Atlanta, Inc. Cable data network architecture",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Option",
+            "-runSql",
+            "-sqlScript",
+            "-connectString"
+        ],
+        [
+            "Description",
+            "Instructs OPatch to read the SQL script from the patch and run it on the specified SIDs. You must specify this option for the patchmd.xml SQL script specification and custom SQL script.",
+            "Specifies OPatch to run this custom SQL script. This is an optional parameter.",
+            "Provides a list of database instance SIDs, user, and password to be patched. Each entry is separated by a comma ( , ). The value for this option has the following format: SID1:USER1:PASSWORD1:NODE1, SID2:USER2:PASSWORD2:NODE2"
+        ]
+    ],
+    "pageTitle": "Patching Oracle Software with OPatch",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/em.112/e12255/oui7_opatch.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987127.36/warc/CC-MAIN-20150728002307-00285-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 77368619,
+    "recordOffset": 77323710,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{214464=For example, if a log file is created on May 17th, 2008 at 11.55 PM, it will be named as follows:}",
+    "lastModified": "Sat, 14 Aug 2010 15:00:29 GMT",
+    "textBeforeTable": "Table 7-22 Schema Patching Options Table 7-22 shows the schema patching options that OPatch supports for Apply and Rollback: Schema Patching Options Standalone SQL execution Schema patching options The following sections discuss these topics: PL/SQL patch \u2014 This also patches the Oracle database with updated procedures and schema changes, as for the SQL patch. However, a PL/SQL patch also mentions the procedure names in its patch metadata so that these procedures can be backed up for rollback. SQL patch \u2014 This patches the Oracle database with updated procedures and schema changes. There are two types of schema patches: Schema Patching OPatch reports that both the patch inventory and patch binary are in the Oracle home. OPatch examines the files in /patch_loc/123451 to make sure the Oracle home was patched with the same bits. OPatch examines /patch_loc/123451 to make sure it is a valid patch area. OPatch detects this is a standalone Oracle home. OPatch Response",
+    "textAfterTable": "Standalone SQL Execution OPatch provides a utility to run only the SQL scripts to patch specified database instances. Use this utility only when you cannot apply or roll back SQL procedure actions using normal Apply or Rollback sessions. The syntax for Apply is as follows: opatch util applySql \u2013id <patchIDs> -connectString <SID1:USER1:PASSWORD1:NODE1> The syntax for Rollback is as follows: opatch util rollbackSql \u2013ph <patchLocation> (or) \u2013phBaseFile <filename> (or) \u2013phBaseDir <dirname> -connectString <SID1:USER1:PASSWORD1:NODE1> Online Patching Regular patches typically contain .o (object) files and/or .a (archive) libraries, and therefore require a relink of the RDBMS binary. Online patches, however, contain .so files, which are dynamic/shared libraries, and do not require a relink of the RDBMS binary. Consequently, since a relink is not needed, you can apply or roll back online patches while the RDBMS instance is running. This simplifies administration, because no downtime is needed, and also results in a much quicker turnaround time for installing or de-installing Online Patches. A regular RDBMS patch can require many minutes to install, since it requires instance shutdown, a relink, and instance startup. On the other hand, you can install an online patch in just a few seconds.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

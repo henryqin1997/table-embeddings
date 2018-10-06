@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Release",
+            "Release 3.0",
+            "Release 3.2",
+            "Release 3.7.2",
+            "Release 4.2.3"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "This command was introduced.",
+            "This command was first introduced.",
+            "This command was supported on 1 Gigabit Ethernet optical and copper SFPs."
+        ]
+    ],
+    "pageTitle": "Cisco IOS XR Interface and Hardware Component Command Reference for the Cisco XR 12000 Series Router, Release 4.3.x - Ethernet Interface Commandson the Cisco\u00a0IOS\u00a0XR Softwarethe Cisco\u00a0ASR\u00a09000 Series Router [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/xr12000/software/xr12k_r4-3/interfaces/command/reference/b_interfaces_cr43xxr12k/b_interfaces_cr43xxr12k_chapter_011.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988065.26/warc/CC-MAIN-20150728002308-00280-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 373213303,
+    "recordOffset": 373148683,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{9059=This module provides command line interface (CLI) commands for configuring Ethernet interfaces on the Cisco\u00a0XR\u00a012000 Series RouterCisco\u00a0CRS RouterCisco\u00a0ASR\u00a09000 Series Router., 38656=speed { 10 | 100 | 1000 }}",
+    "TableContextTimeStampAfterTable": "{423873=Configures the interface to transmit at 1000 Mbps (1 Gbps)., 48862=Specifies or creates a Gigabit Ethernet (1000 Mbps) interface., 423746=1000}",
+    "textBeforeTable": "Syntax Description milliseconds ] } [ down milliseconds milliseconds ] | up [ up milliseconds { down carrier-delay To delay the processing of hardware link down notifications, use the carrier-delay command in interface configuration mode. carrier-delay speed (Fast Ethernet) small-frame-padding show mac-accounting (Ethernet) show lldp traffic show lldp neighbors show lldp interface show lldp errors show lldp entry show lldp show controllers (Ethernet) packet-gap non-standard negotiation auto mac-address (Ethernet) mac-accounting loopback (Ethernet) lldp tlv-select disable lldp timer lldp reinit lldp holdtime lldp (interface) lldp interface (Ethernet) flow-control duplex half (Fast Ethernet) duplex full (Fast Ethernet) clear mac-accounting (Ethernet) clear lldp carrier-delay This module provides command line interface (CLI) commands for configuring Ethernet interfaces on the Cisco\u00a0XR\u00a012000 Series RouterCisco\u00a0CRS RouterCisco\u00a0ASR\u00a09000 Series Router. Ethernet Interface Commandson the Cisco\u00a0IOS\u00a0XR Softwarethe Cisco\u00a0ASR\u00a09000 Series Router",
+    "textAfterTable": "Command History Release Modification Release 3.2 This command was introduced. Release 3.2 This command was introduced. Release 3.4.0 The msec keyword was replaced by the down keyword, and the value of the milliseconds argument was increased to 0 through 65535. The up keyword was added, and the value of the milliseconds argument was set at 0 through 65535. Release 3.7.2 This command was introduced. Usage Guidelines When you delay the processing of hardware link down notifications, the higher layer routing protocols are unaware of a link until that link is stable. If the carrier-delay down milliseconds command is configured on a physical link that fails and cannot be recovered, link down detection is increased, and it",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

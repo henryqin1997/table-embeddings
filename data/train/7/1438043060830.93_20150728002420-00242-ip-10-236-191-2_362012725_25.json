@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Code or Value",
+            "1",
+            "2",
+            "3",
+            "4",
+            "."
+        ],
+        [
+            "Value Description",
+            "Sensitive",
+            "Resistant",
+            "Intermediate",
+            "No Result",
+            "Missing"
+        ],
+        [
+            "Count",
+            "0",
+            "0",
+            "0",
+            "0",
+            "9929"
+        ],
+        [
+            "Cumulative",
+            "0",
+            "0",
+            "0",
+            "0",
+            "9929"
+        ],
+        [
+            "Skip to Item",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "NHANES 2001 - 2002: Methicillin-Resistant Staphylococcus aureus (MRSA) Data Documentation, Codebook, and Frequencies",
+    "title": "",
+    "url": "http://www.cdc.gov/nchs/nhanes/nhanes2001-2002/L35_B.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00242-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 362029119,
+    "recordOffset": 362012725,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{3629=The NHANES quality control and quality assurance protocols (QA/QC) meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed quality control and quality assurance instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC protocols., 3239=The analysis of NHANES 2001\u20132002 laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2001\u20132002 Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews. They also contain all survey design variables and sample weights for these age groups. The phlebotomy file includes auxiliary information such as the conditions precluding venipuncture. The household questionnaire and phlebotomy files may be linked to the laboratory data file using the unique survey participant identifier SEQN., 8506=Title: Methicillin-Resistant Staphylococcus aureus (MRSA) (L35_B ) Contact Number: 1-866-441-NCHS Years of Content: 2001 - 2002 First Published: July, 2004 Revised: September, 2006 Access Constraints: None Use Constraints: None Geographic Coverage: National Subject:Methicillin-Resistant Staphylococcus aureus (MRSA) Record Source: NHANES 2001 - 2002 Survey Methodology: NHANES 2001 - 2002 is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S. Medium: NHANES Web site; SAS transport files}",
+    "lastModified": "Fri, 09 May 2014 20:26:37 GMT",
+    "textBeforeTable": "Both males and females 1 YEARS - 150 YEARS Target: S. aureus present 1 English Text: S. aureus present 1 SAS Label: LBXMS1 Variable Name: LBXMS1 - S. aureus present 1 Both males and females 1 YEARS - 150 YEARS Target: Respondent sequence number. English Text: Respondent sequence number SAS Label: SEQN Variable Name: SEQN - Respondent sequence number Codebook and Frequencies N/A. References Other organism characteristic (e.g., enterotoxin) testing is still in progress. These data will be added to this file in a future release. Every 10th isolate susceptible to OX (i.e., MSSA) by disk diffusion was saved for additional testing of organism characteristics. These tests include antimicrobial susceptibility testing (MIC) by broth microdilution using NCCLS reference methods; strain typing by PFGE using SmaI enzyme. S. aureus present and organism identified as MSSA If LBXMS1 = 1 and LBXM1 = 1, further organism characteristic testing was performed. Isolates resistant to OX (i.e., MRSA), isolates intermediate to OX, and every 10th isolate susceptible to OX (i.e., MSSA) by disk diffusion were saved for additional testing of organism characteristics. These tests include antimicrobial susceptibility testing (minimum inhibitory",
+    "textAfterTable": "MRSA 1 English Text: MRSA 1 Target: Both males and females 1 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 1 Yes 75 75 2 No 2889 2964 . Missing 6965 9929 LBXMT1 - Tetracycline 1 Variable Name: LBXMT1 SAS Label: Tetracycline 1 English Text: Tetracycline 1 Target: Both males and females 1 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 1 Sensitive 356 356 2 Resistant 12 368 3 Intermediate 4 372 4 No Result 0 372 . Missing 9557 9929",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

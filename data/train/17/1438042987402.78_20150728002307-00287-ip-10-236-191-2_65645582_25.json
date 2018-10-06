@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "Element",
+            "columns.column.id",
+            "columns.column.name",
+            "columns.column.value"
+        ],
+        [
+            "Type",
+            "String",
+            "String",
+            "String"
+        ],
+        [
+            "Required",
+            "Yes",
+            "No",
+            "Yes"
+        ],
+        [
+            "Constraints",
+            "1 or more characters",
+            "1 or more characters",
+            "1 or more characters"
+        ],
+        [
+            "Description",
+            "ID of the column (containing list item detail).",
+            "Name of the column.",
+            "Value of the column."
+        ]
+    ],
+    "pageTitle": "Integrating with Oracle WebCenter Spaces",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E12839_01/webcenter.1111/e10148/jpsdg_spaces.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00287-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 65679311,
+    "recordOffset": 65645582,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 13 May 2015 05:12:24 GMT",
+    "textBeforeTable": "Table 27-25 Writable Elements for urn:oracle:webcenter:space:list:column Table 27-25 lists the writable elements for this resource. Writable Elements for column response - body: None request - body: None DELETE response - body: column request - body: column PUT response - body: column query parameters: None request - body: None GET The following methods are supported by this resource: Supported Methods for column column columns list lists resourceindex spaces resourceindex  This section shows how the client can navigate through the hypermedia to access this resource: Navigation Paths to column Use this resource type to identify the URI to use to view (GET), update (PUT), and delete (DELETE) a list column (list item detail). The response from a GET operation includes the specific column identified by the URI. The response from a PUT operation includes the modified version of the column identified by the URI. The response from a DELETE operation is a 204 status code. 27.3.4.13 urn:oracle:webcenter:space:list:column       urn:oracle:webcenter:space:list:column \u00a0 urn:oracle:webcenter:space:list",
+    "textAfterTable": "Read-only Elements for column Table 27-26 lists the read-only elements for this resource. Table 27-26 Read-only Elements for urn:oracle:webcenter:space:list:column Element Type Description id String ID of the column (list item detail). Resource Types Linked to From column Table 27-19 lists the resource types that the client can link to from this resource. Table 27-27 Related Resource Types for urn:oracle:webcenter:space:list:column rel resourceType self urn:oracle:webcenter:space:list:column 27.4 Exposing Enterprise Applications in WebCenter Spaces You can expose various enterprise applications inside WebCenter Spaces, including: Custom WebCenter applications\u2014applications developed using the WebCenter Framework. Other portals in the WebCenter Suite\u2014for example, Oracle Portal.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 4,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Device> enable",
+            "configure terminal Example: Device# configure terminal",
+            "profile flow port-map protocol-name[tcp | udp] port-number Example: Device(config)# profile flow port-map rtsp udp 1051",
+            "end Example: Device(config)# end"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Configures a user-defined port number by overriding the standard port number for the specified protocol.",
+            "Returns to privileged EXEC mode."
+        ]
+    ],
+    "pageTitle": "Media Services Proxy - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/msp/configuration/xe-3sg/med-ser-prxy-xe.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00211-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 364176787,
+    "recordOffset": 364127720,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{43427=V1.0.19, 57812=10.0.0.95, 7633=1718, 82665=For instance, you can create an MSP profile where a SIP flow matching payload type 96, bandwidth of 64 kb/s, and an audio codec of G.711 can initiate RSVP bandwidth reservations., 47057=1720, 31307=Video Codec}",
+    "TableContextTimeStampAfterTable": "{112571=The following EEM script lets the system automatically the H.323 flow matching payload type 96, bandwidth of 64 kb/s, and an audio codec of G.711, and also to provide RSVP bandwidth reservations:, 53404=Device(config-ms-md)# bandwidth 1200, 86928=Device(config)# profile flow port-map rtsp udp 1051, 106078=The following example shows how to manually configure RSVP parameters of bandwidth 1056 kb/s, max burst 3000, and a defending priority 2 that can be applied to a flow:}",
+    "textBeforeTable": "DETAILED STEPS 4.\u00a0\u00a0\u00a0 end 3.\u00a0\u00a0\u00a0 profile flow port-map protocol-name[tcp | udp] port-number 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS By default, standard TCP or UDP ports are used for device and flow identification. You can perform the following task to override the standard port numbers and configure user-defined port numbers for the specified protocols. Configuring User-Defined Port Numbers for Protocols Returns to privileged EXEC mode. \u00a0 Device(config-ms-rsvp)# end \u00a0 Example: end Step\u00a08 Configures the defending or the preemption priority for the flow. \u00a0 Device(config-ms-rsvp)# priority defending 2 \u00a0 Example: priority {defending defend-value | premption prempt-value}",
+    "textAfterTable": "Verifying the MSP Configuration Use the following commands to verify the MSP configuration. You can use the show commands in any order: SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 show profile flow 3.\u00a0\u00a0\u00a0 show profile flow statistics [protocol] 4.\u00a0\u00a0\u00a0 show profile device DETAILED STEPS Step\u00a01\u00a0\u00a0 enable Enables privileged EXEC mode. Step\u00a02\u00a0\u00a0 show profile flow Displays the number of flows that have been identified. Example: Device# show profile flow Source-IP sPort Dest-IP dPort protocol Media Services profile 10.1.1.1 2000 10.2.2.2 2001 UDP msp_service_A 10.1.1.4 3000 10.2.2.4 2001 UDP msp_service_B Step\u00a03\u00a0\u00a0 show profile flow statistics [protocol] Displays profile statistics for a given protocol to identify packet drops associated with the protocol, if",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

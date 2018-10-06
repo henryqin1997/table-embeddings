@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Name",
+            "$id",
+            "$text",
+            "$chars",
+            "$type",
+            "$path",
+            "$color",
+            "$position",
+            "$size",
+            "$rotation"
+        ],
+        [
+            "Type",
+            "string",
+            "string",
+            "string",
+            "int",
+            "string",
+            "ezcGraphColor",
+            "ezcGraphCoordinate",
+            "float",
+            "float"
+        ],
+        [
+            "Description",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "eZ Components - Documentation - API Reference",
+    "title": "",
+    "url": "http://ezcomponents.org/docs/api/2008.2.3/Graph/ezcGraphFlashDriver.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991076.30/warc/CC-MAIN-20150728002311-00239-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 85012472,
+    "recordOffset": 84996522,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{11134=ez components / documentation / api reference / 2008.2.3 / graph}",
+    "textBeforeTable": "Member Variables --ezcGraphFlashDriver | ezcGraphDriver Parents  18. \u00a0\u00a0\u00a0$graph->render(\u00a0400,\u00a0200,\u00a0'tutorial_driver_flash.swf'\u00a0); 17. \u00a0 16. \u00a0\u00a0\u00a0)\u00a0); 15. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0'Konqueror'\u00a0=>\u00a0474, 14. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0'Safari'\u00a0=>\u00a0652, 13. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0'Opera'\u00a0=>\u00a01464, 12. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0'Explorer'\u00a0=>\u00a010917, 11. \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0'Mozilla'\u00a0=>\u00a019113, 10. \u00a0\u00a0\u00a0$graph->data['Access\u00a0statistics']\u00a0=\u00a0new\u00a0ezcGraphArrayDataSet(\u00a0array( 9. \u00a0 8. \u00a0\u00a0\u00a0$graph->driver->options->compression\u00a0=\u00a07; 7. \u00a0 6. \u00a0\u00a0\u00a0$graph->options->font\u00a0=\u00a0'tutorial_font.fdb'; 5. \u00a0\u00a0\u00a0$graph->driver\u00a0=\u00a0new\u00a0ezcGraphFlashDriver(); 4. \u00a0 3. \u00a0\u00a0\u00a0$graph->legend\u00a0=\u00a0false; 2. \u00a0\u00a0\u00a0$graph->title\u00a0=\u00a0'Access\u00a0statistics';  1. \u00a0\u00a0\u00a0$graph\u00a0=\u00a0new\u00a0ezcGraphPieChart();   source] ezcGraphDriverOptions. [ ezcGraphFlashDriverOptions extending the basic  Driver to create Flash4 (SWF) files as graph output. The options of this class are defined in The options of this class are defined in the option class  Class: ezcGraphFlashDriver [ Credits ] [ ChangeLog ] [ Element index ] [ Class tree ] [ Gallery ] [ Tutorial ]  Graph: ezcGraphFlashDriver       All Elements All Classes    WorkflowSignalSlotTiein (1.0) WorkflowEventLogTiein (1.1)",
+    "textAfterTable": "public\u00a0void drawCircle( $center, $width, $height, $color, [$filled = true] ) Draw circle public\u00a0void drawCircleSector( $center, $width, $height, $startAngle, $endAngle, $color, [$filled = true] ) Draws a sector of cirlce public\u00a0void drawCircularArc( $center, $width, $height, $size, $startAngle, $endAngle, $color, [$filled = true] ) Draws a circular arc public\u00a0void drawImage( $file, $position, $width, $height ) Draw an image public\u00a0void drawLine( $start, $end, $color, [$thickness = 1.] ) Draws a line public\u00a0void drawPolygon( $points, $color, [$filled = true], [$thickness = 1.] ) Draws a single polygon. public\u00a0void drawTextBox( $string, $position, $width, $height, $align, [$rotation = null] ) Writes text in a box of desired size public\u00a0SWFMovie getDocument( ) Returns unique movie object as a parent canvas for all swf objects. public\u00a0string getMimeType( )",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Column",
+            "fld#",
+            "attr#",
+            "numval",
+            "charval",
+            "dateval",
+            "qual"
+        ],
+        [
+            "Type",
+            "number(9,0)",
+            "number(9,0)",
+            "number(9,0)",
+            "varchar2(40)",
+            "date",
+            "number (9,0)"
+        ],
+        [
+            "Content",
+            "Data Field Definition number from pga_data(fld#). Primary key.",
+            "Attribute id from pga_data_attr(attr#). Primary key.",
+            "Attribute's numeric value. For example: number for \"LEVEL\" number for \"REMAPSWN\" (redefines) number for \"REPGRPFF\" (occurs n) number for \"REPGRPVF\" (odo first n) number for \"REPGRPVL\" (odo last n) If a non-numeric attribute, this item is NULL.",
+            "Attribute's character value. fname for \"RENAMEMF (renames first) fname for \"RENAMEML\" (renames last) fname for \"REMAPSMF\" (redefines first) fname for \"REMAPSML\" (redefines last) fname for \"REMAPSWM\" (redefines when) fname for \"REPGRPVM\" (odo member) string for \"REMAPSWC\" (redefines) string for \"REPGRPKA\" (occurs key) string for \"REPGRPKD\" (occurs key) string for \"REPGRPIX\" (occurs index) string for \"PLSTYPE\" (PL/SQL data type) string for \"JUST\" string for \"SYNC\" string for \"REMOTE_LANGUAGE\" fname for \"LENGTH\" If a non-character attribute, this item is NULL. Max length => NLS_charset string length",
+            "Attribute's date value. Always null, included for completeness.",
+            "Qualified name number. Foreign key."
+        ]
+    ],
+    "pageTitle": "Database Gateway for APPC Data Dictionary",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/gateways.112/e12071/apa.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00173-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71783491,
+    "recordOffset": 71767097,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 14 Aug 2010 15:00:31 GMT",
+    "textBeforeTable": "Table A-22 pga_data_values Table A-22 presents the column, type and content information for pga_data_values: A row exists in the pga_data_values table for each attribute of each data item defined by each data definition. A.2.3.10 pga_data_values If not null, required keyword. char(1) required Type of Oracle column from which attribute value is retrieved from pga_data_values. For example: 'NUM ' => pga_data_values(numval) 'CHAR'=> pga_data_values(charval) 'DATE' => pga_data_values(dateval) varchar2(4) coltype Attribute id assigned. Foreign key. pga_data_values(attr#). Set from an Oracle sequence object for each supported data attribute inserted into the PG DD. number(9,0) attr# Max length => attr name string lengths \"LENGTH\" (LENGTH IS variable) \"REMOTE_LANGUAGE\" \"LOCAL_LANGUAGE\" \"SYNC\" (aligned aggregate data) \"JUST\" (justified char data) \"PLSTYPE\" \"REPGRPIX\" (either index name) \"REPGRPKD\" (either Key Desc name) \"REPGRPKA\" (either Key Asc name) \"REPGRPVM\" (odo depending member) \"REPGRPVL\" (odo last n) \"REPGRPVF\" (odo first n) \"REPGRPFF\" (occurs n) \"REMAPSWN\" (redefines when num value) \"REMAPSWC\" (redefines when char value)",
+    "textAfterTable": "Previous Next Copyright\u00a0\u00a9\u00a01996, 2009,\u00a0Oracle\u00a0and/or\u00a0its\u00a0affiliates.\u00a0All\u00a0rights\u00a0reserved. Legal Notices Home Book List Contents Index Master Index Contact Us Scripting on this page enhances content navigation, but does not change the content in any way.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

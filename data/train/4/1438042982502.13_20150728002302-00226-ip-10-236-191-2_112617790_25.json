@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "HP-Ada",
+            "C++",
+            "MACRO-64"
+        ],
+        [
+            "BASIC",
+            "COBOL",
+            "Pascal"
+        ],
+        [
+            "BLISS",
+            "Fortran",
+            "PL/I"
+        ],
+        [
+            "C",
+            "MACRO-32 1",
+            ""
+        ]
+    ],
+    "pageTitle": "OpenVMS Debugger Manual",
+    "title": "",
+    "url": "http://h71000.www7.hp.com/doc/84final/4538/4538pro_061.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00226-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 112633745,
+    "recordOffset": 112617790,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "B.3.6 Specifying Program Locations and the Current Value of an Entity The following built-in symbols enable you to specify program locations and the current value of an entity: Index Contents Previous OpenVMS Debugger Manual HP OpenVMS Systems Documentation",
+    "textAfterTable": "In the following example, the variable WIDTH is examined; the value 12 is then deposited into the current location (WIDTH); this is verified by examining the current location:  DBG> EXAMINE WIDTH MOD\\WIDTH: 7 DBG> DEPOSIT . = 12 DBG> EXAMINE . MOD\\WIDTH: 12 DBG> EXAMINE %CURLOC MOD\\WIDTH: 12 DBG> In the next example, the next and previous locations in an array are examined:  DBG> EXAMINE PRIMES(4) MOD\\PRIMES(4): 7 DBG> EXAMINE %NEXTLOC MOD\\PRIMES(5): 11 DBG> EXAMINE [Return] ! Examine next location MOD\\PRIMES(6): 13 DBG> EXAMINE %PREVLOC MOD\\PRIMES(5): 11 DBG> EXAMINE ^ MOD\\PRIMES(4): 7 DBG> Note that using the Return key to signify the logical successor does not apply to all contexts. For example, you cannot press the Return key after typing the command DEPOSIT to indicate the next location, but you can always use the symbol %NEXTLOC for that purpose. B.3.7 Using Symbols and Operators in Address Expressions The following list describes the symbols and operators that you can use in address expressions. A unary operator has one operand. A binary operator has two operands. Symbol Description %LABEL Specifies that the numeric literal that",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2011-01-01T00:00:00",
+            "2012-08-01T00:00:00",
+            "2013-01-22T00:00:00"
+        ],
+        [
+            "Description",
+            "Applanix software was used in the post processing of the airborne GPS and inertial data that is critical to the positioning and orientation of the sensor during all flights. POSPac MMS provides the smoothed best estimate of trajectory (SBET) that is necessary for Optech's post processor to develop the point cloud from the LiDAR missions. The point cloud is the mathematical three dimensional collection of all returns from all laser pulses as determined from the aerial mission. At this point this data is ready for analysis, classification, and filtering to generate a bare earth surface modelin which the above ground features are removed from the data set. The point cloud was manipulated within the Optech or Leica software; GeoCue, TerraScan, and TerraModeler software was used for the automated data classification, manual cleanup, and bare earth generation from this data. Project specific macros were used to classify the ground and to remove the side overlap between parallel flight lines. All data was manually reviewed and any remaining artifacts removed using functionality provided by TerraScan and TerraModeler. Class 2 LIDAR was used to create a bare earth surface model. The surface model was then used to heads-up digitize 2D breaklines of inland streams and rivers. Inland Ponds and Lakes of 0.5 acres or greater were also collected along with the Coastal Shoreline for the ten \"coastal\" counties and 2.0 acres for the seven \"inland\" counties. Elevation values were assigned to all Inland Ponds, Lakes, and Shorelines using TerraModeler functionality. Elevation values were assigned to all Inland streams and rivers using Photo Science proprietary software. All Class 2 LIDAR data falling inside of the collected breaklines were then classified to Class 9 and Class 2 LIDAR data falling within a proximity of three feet will be classified to Class 10 using TerraScan macro functionality. The breakline files were translated to ESRI Shapefile format using ESRI conversion tools. Data was then run through additional macros to ensure deliverable classification levels matching LAS ASPRS Classification structure. GeoCue functionality was used to ensure correct LAS Version. In house software was used as a final QA/QC check to provide LAS Analysis of the delivered tiles. Tiles were run through automated scripting within ArcMap and were combined with the Hydro Flattened Breaklines to create the 4' DEM. Final DEM tiles were clipped to the tile boundary in order to provide a seamless dataset. A manual QA review of the tiles was completed in ArcMap and Global Mapper to ensure full coverage with no gaps or slivers within the project area.",
+            "The NOAA Coastal Services Center (CSC) received the files in las format. The files contained lidar elevation and intensity measurements. The data were in State Plane projection (NAD83, Georgia West), and vertically referenced to NAVD88 using the Geoid 09 model. Both horizontal and vertical units were in survey feet. CSC performed the following processing for data storage and Digital Coast provisioning purposes: 1. The data were converted from Georgia State Plane coordinates to geographic (NAD83) coordinates. 2. The data were converted from orthometric (NAVD88) heights to ellipsoidal heights (GRS80) using Geoid 09. 3. The data were converted from vertical units of survey feet to meters 4. Elevation outliers were removed. 5. The data were converted to LAZ format.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2011_12_GA_DNR_m1390.xml&view=ISO19115Components-HTMLTable&altview=none",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.50/warc/CC-MAIN-20150728002310-00201-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 592407091,
+    "recordOffset": 592398889,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:2011_12_GA_DNR_m1390Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "Component Title Date Citation Identifier 1 2011 Georgia Department of Natural Resources (GADNR) Environmental Protection Division (EPD) Lidar: Seven Counties (Bibb, Harris, Heard, Jasper, Jones, Monroe, Walton) 2012-09-01 2 None 1 North American Datum 1983 2007-01-19 Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 1 NOAA CSC (originator) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov originator http://coast.noaa.gov 1 NOAA CSC (publisher) DOC/NOAA/NOS/OCM > Office for Coastal Management, National",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

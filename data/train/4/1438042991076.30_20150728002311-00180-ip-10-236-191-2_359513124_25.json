@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Cisco Express Forwarding Operation",
+            "Gets the Cisco Express Forwarding operational instance of the peer entity",
+            "Gets how many times the session with the Peer resets"
+        ],
+        [
+            "MIB Objects",
+            "cefPeerOperState",
+            "cefPeerNumberOfResets"
+        ]
+    ],
+    "pageTitle": "IP Switching Cisco Express Forwarding Configuration Guide, Cisco IOS Release 15SY - SNMP CEF-MIB Support [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipswitch_cef/configuration/15-sy/isw-cef-15-sy-book/isw-cef-snmp-mib.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991076.30/warc/CC-MAIN-20150728002311-00180-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 359543975,
+    "recordOffset": 359513124,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{177237=This example shows the addition of a throttling interval of 1000 seconds for the sending of Cisco Express Forwarding inconsistency notifications to the SNMP host using an SNMP command:, 176080=This example shows the addition of a throttling interval of 1000 seconds for the sending of Cisco Express Forwarding inconsistency notifications to the SNMP host using CLI commands:, 99142=Alternatively, an integer from 1300 to 1999 that specifies a list of IP addresses in the expanded range of standard access list numbers. Devices at these addresses are allowed to use the community string to gain access to the SNMP agent., 160635=Router(config)# snmp mib cef throttling-interval 2500}",
+    "textBeforeTable": "CEF Peer Table--Cisco Express Forwarding Operations and Associated MIB Objects Table 11 The table below lists the Cisco Express Forwarding monitoring operations and associated MIB objects provided by the CEF Peer table (or Linecard table) (cefPeerTable). external (2) internal (1) cefIntNonrecursiveAccouting Gets or sets Cisco Express Forwarding nonrecursive accounting on the interface perDestination (2) perPacket (1) cefIntLoadSharing Gets or sets the type of Cisco Express Forwarding Load sharing on the interface cefDisabled (3) distCefEnabled (2) cefEnabled (1) cefIntSwitchingState Gets or sets the Cisco Express Forwarding switching state of the interface MIB Objects Cisco Express Forwarding Operation",
+    "textAfterTable": "The table below lists the Cisco Express Forwarding monitoring operation and associated MIB object provided by the CEF Peer FIB table (cefPeerFIBTable). Table 12 CEF Peer FIB Table--Cisco Express Forwarding Operation and Associated MIB Object Cisco Express Forwarding Operation MIB Objects Gets the current Cisco Express Forwarding FIB operation state of the peer entity cefPeerFIBOperState The table below lists the Cisco Express Forwarding monitoring operations and associated MIB objects provided by the CEF Prefix Length Statistics table (cefStatsPrefixTable). Table 13 CEF Prefix Length Statistics Table--Cisco Express Forwarding Operations and Associated MIB Objects Cisco Express Forwarding Operation MIB Object Gets the number of queries (lookups) in the FIB database for a prefix length cefStatsPrefixQueries",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

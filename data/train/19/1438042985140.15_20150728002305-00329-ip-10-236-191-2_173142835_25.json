@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "ADF",
+            "(n/a)",
+            "messageDescUrl",
+            "messageTargetFrame",
+            "tip",
+            "valign"
+        ],
+        [
+            "Trinidad",
+            "contentStyle",
+            "(removed)",
+            "(removed)",
+            "(removed)",
+            "(removed)"
+        ],
+        [
+            "Notes",
+            "use contentStyle to set the style for the content part of the component. In ADF, inlineStyle was the closest equivalent, but inlineStyle was rendered on both the label and the content. In Trinidad, inlineStyle and styleClass are rendered on the root dom element.",
+            "see messaging framework documentation",
+            "see messaging framework documentation",
+            "use the new help facet - see below. To upgrade put an outputText in the new help facet and set the outputText's 'value' attribute to the old tip text.",
+            "we default this to look correct, so this attribute is not needed. You can use styleClass and skinning together to override the default vertical alignment of the label and contents."
+        ]
+    ],
+    "pageTitle": "API Changes from Oracle's ADF Faces",
+    "title": "",
+    "url": "http://myfaces.apache.org/trinidad/api-changes.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985140.15/warc/CC-MAIN-20150728002305-00329-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 173154055,
+    "recordOffset": 173142835,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{69105=\u00a9 2001-2012 The Apache Software Foundation}",
+    "lastModified": "Wed, 12 Sep 2012 02:06:08 GMT",
+    "textBeforeTable": "Changed Attributes: Trinidad: column ADF: column Component Name: column Components processScope has been renamed to pageFlowScope. For compatibility, however, there is still a deprecated getProcessScope() method and processScope EL variable. Developers should switch to the new getPageFlowScope() method pageFlowScope EL variable. ProcessScope todo Additional Notes: Trinidad: example ADF: example Class Name: Java Components styleClass/inlineStyle Attributes Java API Changes from Oracle's ADF Faces under the License. --> specific language governing permissions and limitations KIND, either express or implied. See the License for the \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY software distributed under the License is distributed on an Unless required by applicable law or agreed to in writing, http://www.apache.org/licenses/LICENSE-2.0 with the License. You may obtain a copy of the License at \"License\"); you may not use this file except in compliance to you under the Apache License, Version 2.0 (the regarding copyright ownership. The ASF licenses this file distributed with this work for additional information or more contributor license agreements. See the NOTICE file",
+    "textAfterTable": "Additional Notes: todo commandMenuItem Component Name: ADF: commandMenuItem Trinidad: commandNavigationItem Changed Attributes: ADF Trinidad Notes (n/a) destination The URI this component references when activated. This is an alternative to using an action. (n/a) targetFrame The name of the target frame (when using destination). type (removed) No longer applicable. If you must filter based on type, use EL on the rendered attribute to determine whether or not a navigation item is visible. Additional Notes: There is still a commandMenuItem component, but it is different than the ADF commandMenuItem component! In the current release commandMenuItem is for use with the new components panelMenu and panelMenuBar. This component obsoletes goMenuItem. goButton Component Name: ADF: goButton Trinidad: goButton Changed Attributes: ADF Trinidad Notes longDesc (n/a) Removed; this was simply ignored in ADF. goLink Component Name: ADF: goLink Trinidad: goLink Changed Attributes: ADF Trinidad Notes",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

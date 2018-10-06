@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Before",
+            "ReadOnlyMapFactory",
+            "ReadOnlyMapFactory.create()",
+            "ReadOnlyMapFactory.create( key, value )",
+            "ReadOnlyMapFactory.create( map )",
+            "ReadOnlyMapFactory.create().add( element ).export()"
+        ],
+        [
+            "After",
+            "MapFactory",
+            "MapFactory.start()",
+            "MapFactory.singleton( key, value )",
+            "MapFactory.unmodifiable( map )",
+            "MapFactory.start().add( element ).result()"
+        ]
+    ],
+    "pageTitle": "Migration Guide for Sapphire 0.6",
+    "title": "",
+    "url": "http://www.eclipse.org/sapphire/releases/0.6.2/documentation/releases/0.6/migration.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989826.86/warc/CC-MAIN-20150728002309-00314-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 430837403,
+    "recordOffset": 430829201,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 11 Mar 2014 15:59:40 GMT",
+    "textBeforeTable": "DefaultValueService Hide If Disabled Hint Node Factory Visibility Node Visibility Section Visibility Conditional ValidationChangedEvent Status Service SapphireWizard SapphireUiDefFactory SapphireSpacer SapphireSeparator SapphireSection SapphirePropertyEnabledCondition SapphirePartContainer SapphirePart SapphireModelCondition SapphireEditorForXml SapphireEditor SapphireDialog SapphireDiagramEditor SapphireControl ReadOnlySetFactory ReadOnlyMapFactory ReadOnlyListFactory PropertyEditorDef PartDef ModelProperty ModelElementType MasterDetailsEditorPage MasterDetailsContentOutline MasterDetailsContentNode ISapphireWizardPageDef ISapphireWizardDef ISapphireSpacerDef ISapphireSeparatorDef ISapphireSectionDef ISapphireDialogDef ISapphireCompositeDef IModelElement FormPartDef FormPart FormEditorPage Filter FactsService FactsAggregationService EnablementService DerivedValueService DefaultValueService Table of Contents This documents covers code changes that need to be made by Sapphire adopters as part of migrating to 0.6 release. Only changes from the previous release are covered. Migration Guide for 0.6 0.6 Releases > Sapphire Developer Guide >",
+    "textAfterTable": "EnablementService Before After public class ExampleEnablementService extends EnablementService { @Override protected EnablementServiceData data() { ... } } public class ExampleEnablementService extends EnablementService { @Override public EnablementServiceData data() { ... } } FactsAggregationService Before After List<String> facts = element.service( property, FactsAggregationService.class ).facts() SortedSet<String> facts = element.service( property, FactsAggregationService.class ).facts() FactsService Before After public class ExampleFactsService extends FactsService { @Override protected void facts( List<String> facts ) { ... } } public class ExampleFactsService extends FactsService { @Override protected void facts( SortedSet<String> facts ) { ... } } Filter Before After org.eclipse.sapphire.modeling.util.Filter org.eclipse.sapphire.util.Filter public class ExampleFilter extends Filter<String> { @Override public boolean check( String element ) { ... } } public class ExampleFilter extends Filter<String> { @Override public boolean allows( String element ) { ... } } FormEditorPage Before After new FormEditorPage { this, element, new Path( \"org.eclipse.sapphire.examples/org/eclipse/sapphire/examples/Examples.sdef/ExamplePage\" ) } new FormEditorPage { this, element, DefinitionLoader .context( getClass().getClassLoader() ) .sdef( \"org.eclipse.sapphire.examples.Examples\" )",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

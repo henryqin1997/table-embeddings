@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Class",
+            "CurrencyFunction",
+            "DefaultValueFunction",
+            "DistanceFunction",
+            "DivideFunction",
+            "ExistsFunction",
+            "GeoDistanceFunction",
+            "GeoHashFunction",
+            "IfFunction",
+            "MaxFunction",
+            "NotFunction",
+            "ProductFunction",
+            "QueryFunction",
+            "TermFrequencyFunction"
+        ],
+        [
+            "Solr Function",
+            "currency(field_name,[CODE])",
+            "def(field|function,defaultValue)",
+            "dist(power, pointA, pointB)",
+            "div(x,y)",
+            "exists(field|function)",
+            "geodist(sfield, latitude, longitude)",
+            "geohash(latitude, longitude)",
+            "if(value|field|function,trueValue,falseValue)",
+            "max(field|function,value)",
+            "not(field|function)",
+            "product(x,y,...)",
+            "query(x)",
+            "termfreq(field,term)"
+        ]
+    ],
+    "pageTitle": "Spring Data Solr",
+    "title": "",
+    "url": "http://docs.spring.io/spring-data/solr/docs/1.1.1.RELEASE/reference/htmlsingle/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00218-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71928431,
+    "recordOffset": 71896560,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{766=Copyright \u00a9 2012 - 2014 The original author(s)}",
+    "textBeforeTable": "Table\u00a03.1.\u00a0Functions Solr supports several functional expressions within queries. Followig functions are supported out of the box. Custom functions can be added by implementing Function 3.11\u00a0Using Functions HighlightPage<Product> findByName(String name, Pageable page); @Highlight(prefix = \"<b>\", postfix = \"</b>\")  Example\u00a03.15.\u00a0  In order to apply Highlighting to derived queries use @Highlight. If no fields are defined highlighting will be aplied on all fields.   query.setHighlightOptions(new HighlightOptions().addHighlightParameter(\"hl.bs.country\", \"at\")); SimpleHighlightQuery query = new SimpleHighlightQuery(new SimpleStringCriteria(\"name:with\"));  Example\u00a03.14.\u00a0  Not all parameters are available via setters/getters but can be added directly.   HighlightPage<Product> page = solrTemplate.queryForHighlightPage(query, Product.class); query.setHighlightOptions(new HighlightOptions()); SimpleHighlightQuery query = new SimpleHighlightQuery(new SimpleStringCriteria(\"name:with\"));  Example\u00a03.13.\u00a0       Field specific highlight parameters can be set by adding FieldWithHighlightParameters to HighlightOptions.    Note    To highlight matches in search result add HighlightOptions to the SimpleHighlightQuery. Providing HighlightOptions without any further attributes",
+    "textAfterTable": "Example\u00a03.16.\u00a0 SimpleQuery query = new SimpleQuery(new SimpleStringCriteria(\"text:ipod\")); query.addFilterQuery(new FilterQuery(Criteria.where(QueryFunction.query(\"name:sol*\")))); Part\u00a0II.\u00a0Appendix Appendix\u00a0A.\u00a0Namespace reference A.1\u00a0The <repositories /> element The <repositories /> element triggers the setup of the Spring Data repository infrastructure. The most important attribute is base-package which defines the package to scan for Spring Data repository interfaces.[3] Table\u00a0A.1.\u00a0Attributes Name Description base-package Defines the package to be used to be scanned for repository interfaces extending *Repository (actual interface is determined by specific Spring Data module) in auto detection mode. All packages below the configured package will be scanned, too. Wildcards are allowed. repository-impl-postfix Defines the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Connection URL",
+            "Bind DN",
+            "User ID Attribute",
+            "User Description Attribute",
+            "Person Object Class",
+            "Base DN"
+        ],
+        [
+            "Value",
+            "If LDAP, provide the URL as ldap://host:port",
+            "cn=directory manager and provide password in the password field",
+            "Login user id",
+            "Same as User ID Attribute",
+            "As appropriate, for example inetorgperson",
+            "Same as DN of searchbase"
+        ]
+    ],
+    "pageTitle": "Deploying Oracle Identity Federation",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E10773_01/doc/oim.1014/b25355/deployment.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00045-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74504827,
+    "recordOffset": 74460634,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{16961=http://infra.example.com:1810/emd/console, 42921=http://oif.example.org:1810/emd/console, 43271=- In the new entry, enter LD_ASSUME_KERNEL in the Name field, and enter 2.4.19 in the Value field. Leave the Append checkbox unchecked.}",
+    "lastModified": "Tue, 16 Oct 2007 20:01:08 GMT",
+    "textBeforeTable": "Enter the following repository parameters: Select Oracle Access Manager as the active repository. In the Oracle Identity Federation administration console, go to IDM Data Store -> User Data Store. Create a policy domain to protect any test resource using the Fed SSO - SAML 2.0/Liberty 1.x authentication Scheme. At the Access System Console, create a host identifier with name Fed HostID in the format: fully-qualified-SPhost:port Note: The Access management Service should be ON for the AccessGate Configuration. Use Oracle Access Manager to configure an AccessGate instance for Oracle Identity Federation. Install the Oracle Access Manager Access Server SDK at OIF_Install_Dir/fed/shareid. The Access Server SDK is installed at OIF_Install_Dir/fed/shareid/AccessServerSDK. Enter the Common Domain Name in the format: .mycompany.com Enter the Provider URL as http://fully-qualified-IdPhost:port/fed/idp Go to Server Properties -> Identity Provider -> Global Settings. Enter the Provider URL as http://fully-qualified-host:port/fed/sp. Go to Server Properties -> Service Provider -> Global Settings. The Server Port and SOAP Port are the same as the fedadmin",
+    "textAfterTable": "Accept the default values for the remaining fields. For the Oracle Access Manager configuration parameters, provide following information: Field Value Master Admin Login ID admin userid Master Admin Password admin user password Authorization result for unprotected resources Allow Oracle Access Manager Cookie Domain Fully qualified host name Basic Authentication Scheme Name Oracle Access and Identity Basic Over LDAP (for Oracle Access Manager 10.1.4 and above) or Basic Over LDAP (for 7.0.4). Click Apply. On the same page, go to Federation Data Store. Select the active repository. Enter the following repository parameters: Field Value Connection URL If LDAP, provide the URL as",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

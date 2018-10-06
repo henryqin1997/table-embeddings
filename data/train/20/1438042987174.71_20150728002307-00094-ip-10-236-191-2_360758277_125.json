@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Command",
+            "mtu",
+            "show isis interface"
+        ],
+        [
+            "Description",
+            "Adjusts the maximum packet size or MTU size.",
+            "Displays information about the IS-IS interface."
+        ]
+    ],
+    "pageTitle": "Cisco ASR 9000 Series Aggregation Services Router Routing Command Reference, Release 4.3.x - IS-IS Commands [Cisco ASR 9000 Series Aggregation Services Routers] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r4-3/routing/command/reference/b_routing_cr43xasr9k/b_routing_cr43xasr9k_chapter_0100.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00094-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 360880043,
+    "recordOffset": 360758277,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{271796=seconds : 1200 seconds (20 minutes), 224191=The following example shows how to set the MTU size to 1300 bytes:, 221704=Under normal conditions, the default MTU size should be sufficient. However, if the MTU size of a link is less than 1500 bytes, the LSP MTU size must be lowered accordingly on each router in the network. If this action is not taken, routing becomes unpredictable., 94220=Advertised hold time in IS-IS hello packets is set to the hello multiplier times the hello interval. Range is 3 to 1000. Neighbors declare an adjacency to this down router after not having received any IS-IS hello packets during the advertised hold time. The hold time (and thus the hello multiplier and the hello interval) can be set on an individual interface basis, and can be different between different networking devices in one area., 930458=Summary prefix designated for a range of IPv6 prefixes. The ipv6-prefix argument must be in the form documented in RFC 2373, in which the address is specified in hexadecimal using 16-bit values between colons., 625197=(Optional) Specifies that the output be restricted to the first number of entries. Range is 1 to 1000., 624763=(Optional) Specifies that the output be restricted to the last number of entries. Range is 1 to 1000., 282437=See RFC 2973 for details about the mesh group specification.}",
+    "textBeforeTable": "Syntax Description { unicast | multicast } { ipv4 | ipv6 } address-family no { unicast | multicast } { ipv4 | ipv6 } address-family To enter address family configuration mode for configuring Intermediate System-to-Intermediate System (IS-IS) routing that use standard IP Version 4 (IPv4) and IP Version 6 (IPv6) address prefixes, use the address-family command in router configuration or interface configuration mode. To disable support for an address family, use the no form of this command. address-family (IS-IS) trace (IS-IS) topology-id tag (IS-IS) suppressed summary-prefix (IS-IS) spf prefix-priority (IS-IS) spf-interval snmp-server traps isis single-topology shutdown (IS-IS) show protocols (IS-IS) show isis topology show isis statistics show isis spf-log show isis route show isis protocol show isis neighbors show isis mpls traffic-eng tunnel show isis mpls traffic-eng advertisements show isis mpls traffic-eng adjacency-log show isis mesh-group show isis lsp-log show isis interface show isis hostname show isis fast-reroute show isis",
+    "textAfterTable": "Command Default An address family is not specified. The default subaddress family (SAFI) is unicast. Command Modes Router configuration Interface configuration Command History Release Modification Release 3.7.2 This command was introduced. Release 3.9.0 Support for IPv6 was added. Usage Guidelines To use this command, you must be in a user group associated with a task group that includes appropriate task IDs. If the user group assignment is preventing you from using a command, contact your AAA administrator for assistance. Use the address family command to place the router or interface in address family configuration mode. In router address family configuration mode, you can configure routing that uses standard IPv4 or IPv6 address prefixes. An address family must be specified in interface configuration mode. In interface address family configuration mode, you can alter interface parameters for IPv4or IPv6. You must specify an",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

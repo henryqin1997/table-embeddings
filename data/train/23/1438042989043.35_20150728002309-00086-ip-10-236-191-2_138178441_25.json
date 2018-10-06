@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Violation",
+            "Avoid unused constructor parameters such as 'declaringClass'.",
+            "Avoid unused constructor parameters such as 'methodName'.",
+            "Avoid unused constructor parameters such as 'fileName'.",
+            "Avoid unused constructor parameters such as 'lineNumber'."
+        ],
+        [
+            "Line",
+            "37",
+            "38",
+            "39",
+            "40"
+        ]
+    ],
+    "pageTitle": "Log4j Core \u2013 PMD Results - Apache Log4j Core",
+    "title": "",
+    "url": "http://logging.apache.org/log4j/2.x/log4j-core/pmd.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989043.35/warc/CC-MAIN-20150728002309-00086-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 138186643,
+    "recordOffset": 138178441,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{52356=Copyright \u00a9 1999-2015 Apache Software Foundation. All Rights Reserved.}",
+    "lastModified": "Fri, 15 May 2015 04:21:20 GMT",
+    "textBeforeTable": "org/apache/logging/log4j/core/LoggerContext.java Files The following document contains the results of PMD 5.2.3. PMD Results RAT Report Surefire Report JIRA Report Changes Report Log4j Project Reports Project Summary Source Repository Project License Issue Tracking Mailing Lists Project Team Dependency Management Dependency Convergence Dependencies Log4j Project Information PMD CPD Source Xref FindBugs JavaDocs Checkstyle Rat Report Failsafe Report Component Reports Component Information Component Documentation",
+    "textAfterTable": "245\u2013247 Avoid empty catch blocks 292\u2013294 org/apache/logging/log4j/core/appender/MemoryMappedFileManager.java Violation Line Useless parentheses. 314 org/apache/logging/log4j/core/appender/RollingRandomAccessFileAppender.java Violation Line Avoid unused constructor parameters such as 'bufferSize'. 60 org/apache/logging/log4j/core/appender/db/jdbc/ColumnConfig.java Violation Line Useless parentheses. 120 Useless parentheses. 120 Useless parentheses. 120 org/apache/logging/log4j/core/appender/db/jpa/converter/StackTraceElementAttributeConverter.java Violation Line Avoid empty catch blocks 71\u201373 org/apache/logging/log4j/core/appender/mom/JmsManager.java Violation Line Avoid empty catch blocks 129\u2013130 Avoid empty catch blocks 133\u2013134 org/apache/logging/log4j/core/appender/rewrite/RewriteAppender.java Violation Line Overriding method merely calls super 75\u201377 org/apache/logging/log4j/core/appender/rolling/PatternProcessor.java Violation Line Avoid unused private methods such as 'patternContains(String,char)'. 272 org/apache/logging/log4j/core/async/DaemonThreadFactory.java Violation Line Avoid using java.lang.ThreadGroup; it is not thread safe 35",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

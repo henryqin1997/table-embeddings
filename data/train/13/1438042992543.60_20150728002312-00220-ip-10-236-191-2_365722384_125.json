@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Field",
+            "101600",
+            "201700",
+            "from Serial2",
+            "VC 700"
+        ],
+        [
+            "Description",
+            "Identifies the Calling (source) Address of the connection. If a Calling Address Extension was encoded in the call facilities, it is also displayed. If the source host is a CMNS host, its MAC address is also displayed.",
+            "Identifies the Called (destination) Address of the connection. If a Called Address Extension was encoded in the call facilities, it is also displayed. If the destination host is a CMNS host, its MAC address is also displayed.",
+            "Indicates the direction of the call and the connecting interface.",
+            "Identifies the circuit type and LCN for the connecting interface. VC indicates an SVC and PVC indicates a PVC. If the remote host is a CMNS host, its MAC address is also displayed."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Wide-Area Networking Command Reference - show smds addresses through waas export [Support] - Cisco",
+    "title": "Table 42 show x25 vc Locally Switched PVC-to-SVC Traffic Field Descriptions",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/wan/command/wan-cr-book/wan-s2.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00220-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 365847363,
+    "recordOffset": 365722384,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{44359=c141.5555.1212, 37718=172.16.42.112}",
+    "TableContextTimeStampAfterTable": "{622146=This command was implemented on the Cisco ASR 1000 series routers., 722895=The DXI 3.2 support also includes the heartbeat process as specified in the SIG-TS-001/1991 standard, revision 3.2. The heartbeat (active process) is enabled when both DXI and keepalives are enabled on the interface. The echo (passive process) is enabled when DXI is enabled on the interface. The heartbeat mechanism automatically generates a heartbeat poll frame every 10 seconds. This default value can be changed with the keepalive (LMI) command., 504781=destination host 10.0.0.32 port 9999, 585301=201700, 787151=The following example illustrates how to enable multicasting. In addition to IP and ARP requests to E100.0999.9999, the router at address C120.4444.9999 will also receive a copy of the multicast request. The host at address 172.16.1.15 is incapable of receiving broadcast packets., 786466=The following example illustrates how to enable pseudobroadcasting. The router at address C120.4444.9999 will receive a copy of the broadcast request because the broadcast keyword is specified with the smds static-map command. The host at address 172.16.1.15 is incapable of receiving multicast packets. The multicasting is simulated with this feature., 577378=ietf--The IETF\u2019s standard RFC 1356 method for identifying the protocol is used., 509774=X.121 1311001, 584836=101600, 875634=Frame Relay DLCI number, in the range 16 to 1007., 716482=Addresses are entered in the Cisco SMDS configuration software using an E prefix for multicast addresses and a C prefix for unicast addresses. Cisco IOS software expects the addresses to be entered in E.164 format, which is 64 bits. The first 4 bits are the address type, and the remaining 60 bits are the address. If the first 4 bits are 1100 (0xC), the address is a unicast SMDS address, which is the address of an individual SMDS host. If the first 4 bits are 1110 (0xE), the address is a multicast SMDS address, which is used to broadcast a packet to multiple end points. The 60 bits of the address are in binary-coded decimal (BCD) format. Each 4 bits of the address field presents a single telephone number digit, allowing for up to 15 digits. At a minimum, you must specify at least 11 digits (44 bits). Unused bits at the end of this field are filled with ones., 575772=ietf--The IETF\u2019s standard RFC 1356 method was used to set up a single protocol virtual circuit., 503783=12131, 875941=(Optional) Frame Relay SSCS DLCI number, in the range of 16 to 991. Default is 1022., 706638=The range is from 0 to 1440.}",
+    "textBeforeTable": "Command History Privileged EXEC Command Modes This command has no arguments or keywords. Syntax Description addresses smds show To display the individual addresses and the interface they are associated with, use the show smds addresses privileged EXEC command. show smds addresses waas-ssl-trustpoint waas export waas enable waas config waas cm-register url vpls-id vc-group timeout setup threshold ecn threshold de tfo optimize tfo auto-discovery blacklist suppress-server-encoding enable status admin-down disconnect spf-interval (OTV) source-interface loopback snmp-server enable traps waas smds static-map smds multicast ip smds multicast bridge smds multicast arp smds multicast smds glean smds enable-arp smds dxi smds address skeptical interval (OTV) shutdown (FR-ATM) show xconnect show x29 access-lists show x28 hunt-group show x25 xot show x25",
+    "textAfterTable": "The following is sample output from the show smds addresses command:  Router# show smds addresses SMDS address - Serial0 c141.5555.1212.FFFF The table below describes the fields shown in the display. Table 1\u00a0show smds addresses Field Descriptions Field Description Serial0 Interface to which this SMDS address has been assigned. c141.5555.1212 SMDS address that has been assigned to the interface. show smds map To display all Switched Multimegabit Data Service (SMDS) addresses that are mapped to higher-level protocol addresses, use the show smds map privileged EXEC command. show smds map Syntax Description This command has no arguments or keywords. Command Modes Privileged",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

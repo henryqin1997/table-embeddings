@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "uplo",
+            "n",
+            "alpha",
+            "a",
+            "lda",
+            "x",
+            "incx",
+            "beta",
+            "y",
+            "incy",
+            "pack"
+        ],
+        [
+            "Description",
+            "Specifies whether the upper or lower triangular part of the array A is to be referenced: uplo = 'U'or 'u'. Only the upper triangular part ofA is to be referenced. uplo = 'L' or 'l'. Only the lower triangular part of A is to be referenced.",
+            "Specifies the order of the matrix A. n must be at least zero.",
+            "SCALAR_FLOAT/DOUBLE. Specifies the scalar alpha.",
+            "UTL_NLA_ARRAY_FLT/DBL of DIMENSION (lda,n). Before entry with uplo = 'U' or 'u', the leading n by n upper triangular part of the array A must contain the upper triangular part of the symmetric matrix and the strictly lower triangular part of A is not referenced. Before entry with uplo = 'L' or 'l', the leading n by n lower triangular part of the array A must contain the lower triangular part of the symmetric matrix and the strictly upper triangular part of A is not referenced.",
+            "Specifies the first dimension of a as declared in the calling (sub) program. lda must be at least max(1,n).",
+            "UTL_NLA_ARRAY_FLT/DBL of dimension at least (1+(n-1)*abs(incx)) Before entry, the incremented array X must contain the n element vector x.",
+            "Specifies the increment for the elements of x. Must not be zero.",
+            "SCALAR_FLOAT/DOUBLE. Specifies the scalar beta. When beta is supplied as zero then y need not be set on input.",
+            "UTL_NLA_ARRAY_FLT/DBL of dimension at least (1+(n-1)*abs(incy)) Before entry, the incremented array Y must contain the n element vector y. On exit, Y is overwritten by the updated vector y.",
+            "Specifies the increment for the elements of y. Must not be zero.",
+            "(Optional) Flags the packing of the matrices: 'C': column-major (default) 'R': row-major"
+        ]
+    ],
+    "pageTitle": "UTL_NLA",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/appdev.112/e23448/u_nla.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988065.26/warc/CC-MAIN-20150728002308-00226-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72656003,
+    "recordOffset": 72614854,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 19 May 2015 17:53:28 GMT",
+    "textBeforeTable": "Table 232-26 BLAS_SYMV Procedure Parameters Parameters pack IN flag DEFAULT 'C'); incy IN POSITIVEN, y IN OUT UTL_NLA_ARRAY_FLT, beta IN SCALAR_FLOAT, incx IN POSITIVEN, x IN UTL_NLA_ARRAY_FLT, lda IN POSITIVEN, a IN UTL_NLA_ARRAY_FLT, alpha IN SCALAR_FLOAT, n IN POSITIVEN, uplo IN flag, UTL_NLA.BLAS_SYMV (  pack IN flag DEFAULT 'C'); incy IN POSITIVEN, y IN OUT UTL_NLA_ARRAY_DBL, beta IN SCALAR_DOUBLE, incx IN POSITIVEN, x IN UTL_NLA_ARRAY_DBL, lda IN POSITIVEN, a IN UTL_NLA_ARRAY_DBL, alpha IN SCALAR_DOUBLE, n IN POSITIVEN, uplo IN flag, UTL_NLA.BLAS_SYMV (  Syntax   BLAS Level 2 (Matrix-Vector Operations) Subprograms for other subprograms in this group See Also:  where alpha and beta are scalars, x and y are n element vectors and A is an n by n symmetric matrix. y := alpha*A*x + beta*y  This procedure performs the matrix-vector operation BLAS_SYMV Procedures       'R': row-major 'C': column-major (default) (Optional) Flags the packing of the matrices: pack Specifies the first dimension of C as declared in the calling (sub) program. ldc must be at least max (1,m). ldc",
+    "textAfterTable": "BLAS_SYR Procedures This procedure performs the rank 1 operation  A := alpha*x*x' + A where alpha is a real scalar, x is an n element vector, and A is an n by n symmetric matrix. See Also: BLAS Level 2 (Matrix-Vector Operations) Subprograms for other subprograms in this group Syntax  UTL_NLA.BLAS_SYR ( uplo IN flag, n IN POSITIVEN, alpha IN SCALAR_DBL, x IN OUT UTL_NLA_ARRAY_DBL, incx IN POSITIVEN, a IN OUT UTL_NLA_ARRAY_DBL, lda IN POSITIVEN, pack IN flag DEFAULT 'C');  UTL_NLA.BLAS_SYR ( uplo IN flag, n IN POSITIVEN, alpha IN SCALAR_FLT, x IN OUT UTL_NLA_ARRAY_FLT, incx IN POSITIVEN, a IN OUT UTL_NLA_ARRAY_FLT, lda IN POSITIVEN, pack IN flag DEFAULT 'C'); Parameters Table 232-27 BLAS_SYR Procedure Parameters Parameter Description uplo Specifies whether the upper or lower triangular part of the array A is to be referenced: uplo = 'U'or 'u' : Only the upper triangular part of A is to be referenced. uplo = 'L'or 'l' : Only the",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

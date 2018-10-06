@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "store_name",
+            "blksize",
+            "tbytes",
+            "fbytes",
+            "nfile",
+            "ndir",
+            "nlink",
+            "nref"
+        ],
+        [
+            "Description",
+            "Name of store",
+            "Natural tablespace blocksize that holds the store. If multiple tablespaces with different blocksizes are used, any valid blocksize is acceptable.",
+            "Total size of the store in bytes computed over all segments that comprise the store",
+            "Free or unused size of the store in bytes computed over all segments that comprise the store",
+            "Number of currently available files in the store",
+            "Number of currently available directories in the store",
+            "Number of currently available links in the store",
+            "Number of currently available references in the store"
+        ]
+    ],
+    "pageTitle": "DBMS_DBFS_CONTENT_SPI",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/appdev.112/e40758/d_dbfs_content_spi.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00073-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 82793151,
+    "recordOffset": 82769253,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 03 Jul 2015 16:44:05 GMT",
+    "textBeforeTable": "Table 48-26 SPACEUSAGE Procedure Parameters Parameters nref OUT INTEGER); nlink OUT INTEGER, ndir OUT INTEGER, nfile OUT INTEGER, fbytes OUT INTEGER, tbytes OUT INTEGER, blksize OUT INTEGER, store_name IN VARCHAR2, DBMS_DBFS_CONTENT_SPI.SPACEUSAGE (  Syntax  This procedure queries file system space usage statistics. Providers are expected to support this subprogram for their stores and to make a best effort determination of space usage, especially if the store consists of multiple tables, indexes, LOBs, and so on. SPACEUSAGE Procedure       Context with which to access the path items (seE DBMS_DBFS_CONTENT_CONTEXT_T Object Type) ctx One or more properties and their values to be set depending on prop_flags (see DBMS_DBFS_CONTENT_PROPERTIES_T Table Type) properties Name of path to path item path Unique identifier for the item to be associated contentID Name of the store store_name Description Parameter",
+    "textAfterTable": "Usage Notes A space usage query on the top-level root directory returns a combined summary of the space usage of all available distinct stores under it (if the same store is mounted multiple times, it is still counted only once). Since database objects are dynamically expandable, it is not easy to estimate the division between \"free\" space and \"used\" space. UNLOCKPATH Procedure This procedure unlocks path items that were previously locked with the LOCKPATH Procedure. Syntax  DBMS_DBFS_CONTENT_SPI.UNLOCKPATH ( store_name IN VARCHAR2, path IN VARCHAR2, ctx IN DBMS_CONTENT_CONTEXT_T); Parameters Table 48-27 UNLOCKPATH Procedure Parameters Parameter Description store_name Name of store path Name of path to the path items ctx Context with which to access the path items (see DBMS_DBFS_CONTENT_CONTEXT_T Object Type)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

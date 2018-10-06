@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US9032187 *",
+            "US20120166770 *"
+        ],
+        [
+            "Filing date",
+            "20 Dec 2011",
+            ""
+        ],
+        [
+            "Publication date",
+            "12 May 2015",
+            "28 Jun 2012"
+        ],
+        [
+            "Applicant",
+            "Cambridge Silicon Radio Limited",
+            "Cambridge Silicon Radio Limited"
+        ],
+        [
+            "Title",
+            "Instruction execution",
+            "Instruction Execution"
+        ]
+    ],
+    "pageTitle": "Patent US7421572 - Branch instruction for processor with branching dependent on a specified bit ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.ca/patents/US7421572",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00112-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 478849659,
+    "recordOffset": 478809004,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{5969=Referring to FIG. 5, the microengines 22 a\u201322 f support various branch instructions such as those that branch on condition codes. In addition, the microengines also support branch instructions that branch on any specified bit being set or cleared. This class of branch instructions allows a programmer to specify which bit of a register to use as a branch control bit. The instruction format includes a bit_position field that specifies the bit position in a longword. Valid bit positions in this implementation are bits 0:31. The branch target is a label specified in the instruction.}",
+    "textBeforeTable": "Patent Citations Other embodiments are within the scope of the appended claims. If <d5:d4>=1,1, then the destination address does not address a valid register, thus, no dest operand is written back. d3 = 1 text d5 = 1, d4 = 0, d0 d1 d2 con- d3 d4 d5 SDRAM: d3 = 0 text ASB: d5 = 1, d4 = 0, d0 d1 d2 con- d3 d4 d5 SRAM/ text d5 = 0, d4 = 1 d0 d1 d2 d3 con- d4 d5 B GPR: text d5 = 0, d4 = 0 d0 d1 d2 d3 con- d4 d5 A GPR:",
+    "textAfterTable": "US3577189 * 15 Jan 1969 4 May 1971 Ibm Apparatus and method in a digital computer for allowing improved program branching with branch anticipation reduction of the number of branches, and reduction of branch delays US3792441 8 Mar 1972 12 Feb 1974 Burroughs Corp Micro-program having an overlay micro-instruction US3881173 14 May 1973 29 Apr 1975 Amdahl Corp Condition code determination and data processing US3913074 18 Dec 1973 14 Oct 1975 Honeywell Inf Systems Search processing apparatus US3940745 26 Apr 1974 24 Feb 1976 Ing. C. Olivetti & C., S.P.A. Data processing unit having a plurality of hardware circuits for processing data at different priority levels US4023023 27 Nov 1974 10 May 1977 Compagnie Internationale Pour L'informatique Field selection data operating device US4130890 8 Jun 1977 19 Dec 1978 Itt Industries, Inc. Integrated DDC memory with bitwise erase US4392758 23 Jan 1981 12 Jul 1983 International",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 4,
+    "headerRowIndex": 0
+}

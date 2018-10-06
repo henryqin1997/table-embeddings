@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2011-12-13T00:00:00",
+            "2012-03-06T00:00:00",
+            "2012-03-26T00:00:00",
+            "2012-09-01T00:00:00",
+            "2012-12-01T00:00:00",
+            "2013-01-22T00:00:00"
+        ],
+        [
+            "Description",
+            "The Leica ALS50/60 LiDAR systems calibration and performance is verified on a periodic basis using Woolpert's calibration range. The calibration range consists of a large building and runway. The edges of the building and control points along the runway have been located using conventional survey methods. Inertial measurement unit (IMU) misalignment angles and horizontal accuracy are calculated by comparing the position of the building edges between opposing flight lines. The scanner scale factor and vertical accuracy is calculated through comparison of LiDAR data against control points along the runway. Field calibration is performed on all flight lines to refine the IMU misalignment angles. IMU misalignment angles are calculated from the relative displacement of features within the overlap region of adjacent (and opposing) flight lines. The raw LiDAR data is reduced using the refined misalignment angles.",
+            "Using a Leica LiDAR system, 84 flight lines of high density data, at a nominal pulse spacing (NPS) of 1.0 meter, were collected over Floyd, Oconee, Paulding and Polk Counties, GA (approximately 694.2 square miles). Multiple returns were recorded for each laser pulse along with an intensity value for each return. A total of five (5) missions were flown on March 6, 19, 20, 25 and 26 in 2012. The geoid used to reduce satellite derived elevations to orthometric heights was Geoid09. The horizontal datum used for this survey is NAD 1983 NSRS2007, Georgia State Plane Coordinate System, West Zone 1002, and expressed in US Survey Feet. The vertical datum used for this survey is North American Vertical Datum 1988 (NAVD88), and expressed in US Survey Feet. Airborne GPS data was differentially processed and integrated with the post processed IMU data to derive a smoothed best estimate of trajectory (SBET). The SBET was used to reduce the LiDAR slant range measurements to a raw reflective surface for each flight line. The aerial LiDAR was collected at the following sensor specifications for the Oconee County Project: Post Spacing (Minimum): 3.28 ft / 1.0 m AGL (Above Ground Level) average flying height: 6,500 ft / 1,981 m MSL (Mean Sea Level) average flying height: 6,940 ft / 2,115 m Average Ground Speed: 130 knots / 149 mph Field of View (full): 40 degrees Pulse Rate: 115.6 kHz Sensor Scan Rate: 41.8 Hz Side Lap (Minimum): 25% Flight Lines Flown at these specifications: 1 - 27 (All) The aerial LiDAR was collected at two different sensor specifications for the Floyd, Polk, and Paulding Counties Project: Those LIDAR flight lines that entered the Atlanta Class B Airspace restriction area were flown at a lower altitude specification in order to maintain an altitude of 6500 feet MSL. These instructions were mandated by Atlanta Tracon. Post Spacing (Minimum): 3.28 ft / 1.0 m AGL (Above Ground Level) average flying height: 6,500 ft / 1,981 m MSL (Mean Sea Level) average flying height: 7,075 ft / 2,156 m Average Ground Speed: 130 knots / 149 mph Field of View (full): 40 degrees Pulse Rate: 115.6 kHz Sensor Scan Rate: 41.8 Hz Side Lap (Minimum): 25% Flight Lines Flown at these specifications: 1 - 20 Post Spacing (Minimum): 3.28 ft / 1.0 m AGL (Above Ground Level) average flying height: 5,925 ft / 1,825 m MSL (Mean Sea Level) average flying height: 6,500 ft / 1,981 m Average Ground Speed: 130 knots / 149 mph Field of View (full): 44 degrees Pulse Rate: 124.0 kHz Sensor Scan Rate: 43.1 Hz Side Lap (Minimum): 25% Flight Lines Flown at these specifications 21 - 57",
+            "Once the data acquisition and GPS processing phases are complete, the LiDAR data was processed immediately to verify the coverage had no voids. The GPS and IMU data was post processed using differential and Kalman filter algorithms to derive a best estimate of trajectory. The quality of the solution was verified to be consistent with the accuracy requirements of the task order.",
+            "The individual flight lines were inspected to ensure the systematic and residual errors have been identified and removed. Then, the flight lines were compared to adjacent flight lines for any mismatches to obtain a homogenous coverage throughout the project area. The point cloud underwent a classification process to determine bare-earth points and non-ground points utilizing \"first and only\" as well as \"last of many\" LiDAR returns. This process determined bare-earth points (Class 2), noise (Class 7), water (Class 9) ignored ground (Class 10), unclassified data (Class 1), and overlap points (Class 12). The bare-earth (Class 2 - Ground) LiDAR points underwent a manual QA/QC step to verify that artifacts have been removed from the bare-earth surface. The surveyed ground control points are used to perform the accuracy checks and statistical analysis of the LiDAR dataset.",
+            "The NOAA Coastal Services Center (CSC) received topographic files in LAS format. The files contained lidar elevation and intensity measurements. The data were received in Georgia State Plane West 1002 (NAD83) coordinates and were vertically referenced to NAVD88 using the Geoid09 model. The vertical units of the data were feet. CSC performed the following processing for data storage and Digital Coast provisioning purposes: 1. The topographic las files were converted from orthometric (NAVD88) heights to ellipsoidal heights using Geoid09. 2. The topographic las files' vertical units were converted from survey feet to meters. 3. The topographic las files were converted from a Projected Coordinate System (GA SPW 1002) to a Geographic Coordinate system (GCS). 4. The topographic las files' horizontal units were converted from survey feet to decimal degrees. 5. The data were converted to LAZ format.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Components NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2012_georgia_floydPolkPauldingOconee_m1420.xml",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2012_georgia_floydPolkPauldingOconee_m1420.xml&view=ISO19115Components-HTMLTable&title=Components%20NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2012_georgia_floydPolkPauldingOconee_m1420.xml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00102-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 613317052,
+    "recordOffset": 613300658,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:2012_georgia_floydPolkPauldingOconee_m1420Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "None 1 North American Datum 1983 2007-01-19 Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 1 NOAA CSC (originator) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov originator http://coast.noaa.gov 1 NOAA CSC (publisher) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov publisher http://coast.noaa.gov 1 NOAA CSC(distributor) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,142 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2008-09",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "IDA",
+            ""
+        ],
+        [
+            "GP",
+            "1",
+            "1"
+        ],
+        [
+            "GS",
+            "1",
+            "1"
+        ],
+        [
+            "Min",
+            "39.2",
+            "39.2"
+        ],
+        [
+            "FGM",
+            "10.00",
+            "10.00"
+        ],
+        [
+            "FGA",
+            "19.00",
+            "19.00"
+        ],
+        [
+            "FG%",
+            ".526",
+            ".526"
+        ],
+        [
+            "3FGM",
+            "0.00",
+            "0.00"
+        ],
+        [
+            "3FGA",
+            "0.00",
+            "0.00"
+        ],
+        [
+            "3P%",
+            ".000",
+            ".000"
+        ],
+        [
+            "FTM",
+            "0.00",
+            "0.00"
+        ],
+        [
+            "FTA",
+            "0.00",
+            "0.00"
+        ],
+        [
+            "FT%",
+            ".000",
+            ".000"
+        ],
+        [
+            "FIC",
+            "17.50",
+            "17.50"
+        ],
+        [
+            "OFF",
+            "4.00",
+            "4.00"
+        ],
+        [
+            "DEF",
+            "7.00",
+            "7.00"
+        ],
+        [
+            "Reb",
+            "11.00",
+            "11.00"
+        ],
+        [
+            "Ast",
+            "1.00",
+            "1.00"
+        ],
+        [
+            "Stl",
+            "0.00",
+            "0.00"
+        ],
+        [
+            "Blk",
+            "3.00",
+            "3.00"
+        ],
+        [
+            "PF",
+            "1.00",
+            "1.00"
+        ],
+        [
+            "TO",
+            "1.00",
+            "1.00"
+        ],
+        [
+            "Pts",
+            "20.00",
+            "20.00"
+        ]
+    ],
+    "pageTitle": "Lance Allred Player Profile, Cleveland Cavaliers, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Lance_Allred/Summary/249",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00045-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 24265327,
+    "recordOffset": 24221516,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{47841=Born: Feb 2, 1981 (34 years old), 47096=Draft Entry: 2005 NBA Draft}",
+    "TableContextTimeStampAfterTable": "{100300=* International basketball history from 2011-2012, 149027=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 1 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2007-08 CLE 3 0 10.1 1 4 .250 0 0 .000 1 2 .500 -0 0 1 1 0 0 0 1 0 3 CAREER \u00a0 3 0 10.1 1 4 .250 0 0 .000 1 2 .500 -0 0 1 1 0 0 0 1 0 3 NBA Regular Season Stats - Misc Stats Season Team GP GS Dbl Dbl Tpl Dbl 40 Pts 20 Reb 20 Ast Techs HOB Ast/TO Stl/TO FT/FGA W's L's Win % OWS DWS WS 2007-08 CLE 3 0 0 0 0 0 0 0 .011 0.00 0.00 0.50 0 3 0.000 -0.03 0.00 -0.03 CAREER \u00a0 3 0 0 0 0 0 0 0 .011 0.00 0.00",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

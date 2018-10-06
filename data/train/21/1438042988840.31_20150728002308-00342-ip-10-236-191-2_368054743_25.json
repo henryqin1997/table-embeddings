@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Document Title",
+            "Cisco IOS IP Routing: LISP Command Reference",
+            "Enterprise IPv6 Transitions Strategy Using the Locator/ID Separation Protocol",
+            "Cisco IOS LISP0 Virtual Interface, Application Note, Version 1.0",
+            "Cross-Platform Release Notes for Cisco IOS Release 15.2M&T"
+        ],
+        [
+            "Location",
+            "http:/\u200b/\u200bwww.cisco.com/\u200ben/\u200bUS/\u200bdocs/\u200bios-xml/\u200bios/\u200biproute_lisp/\u200bcommand/\u200bip-lisp-cr-book.html",
+            "Cisco LISP Software Image Download Page",
+            "Cisco LISP Software Image Download Page",
+            "http:/\u200b/\u200bwww.cisco.com/\u200ben/\u200bUS/\u200bdocs/\u200bios/\u200b15_2m_and_t/\u200brelease/\u200bnotes/\u200b15_\u200b2m_\u200band_\u200bt.html"
+        ]
+    ],
+    "pageTitle": "IP Routing: LISP Configuration Guide, Cisco IOS Release 15M&T - LISP Shared Model Virtualization [Cisco IOS 15.4M&T] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_lisp/configuration/15-mt/irl-15-mt-book/irl-share-virtual.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988840.31/warc/CC-MAIN-20150728002308-00342-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 368097935,
+    "recordOffset": 368054743,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Related Documents Additional References Complete configuration examples are available within each task under the \u201cHow to Configure LISP Shared Model Virtualization\u201d section. Configuration Examples for LISP Shared Model Virtualization Negative cache entry, action: send-map-request 0.0.0.0/0, uptime: 00:00:02, expires: never, via static send map-request LISP IPv4 Mapping Cache, 1 entries Router# show ip lisp map-cache instance-id 101 Router# clear ip lisp map-cache instance-id 101 10.0.1.2 00:20:13 up 1/1 Locator Uptime State Pri/Wgt 192.168.2.0/24, uptime: 00:20:13, expires: 23:39:39, via map-reply, complete Negative cache entry, action: send-map-request 0.0.0.0/0, uptime: 00:25:17, expires: never, via static send map-request LISP IPv4 Mapping Cache for EID-table vrf PURPLE (IID 101), 2 entries Router# show ip lisp map-cache instance-id 101 clear [ip | ipv6] lisp map-cache The clear ip lisp map-cache and clear ipv6 lisp map-cache commands remove all IPv4 or IPv6 dynamic LISP map-cache entries stored by the router. This can be useful trying to quickly verify the operational status of the LISP control plane. This command applies to a LISP device that maintains a map cache (for example, if configured as an ITR or PITR). Example: The following",
+    "textAfterTable": "Standards Standard Title IANA Address Family Numbers http:/\u200b/\u200bwww.iana.org/\u200bassignments/\u200baddress-family-numbers/\u200baddress-family-numbers.xml MIBs MIB MIBs Link None To locate and download MIBs for selected platforms, Cisco IOS software releases, and feature sets, use Cisco MIB Locator found at the following URL: http:/\u200b/\u200bwww.cisco.com/\u200bgo/\u200bmibs RFCs RFC Title draft-ietf-lisp-22 Locator/ID Separation Protocol (LISP) http:/\u200b/\u200btools.ietf.org/\u200bhtml/\u200bdraft-ietf-lisp-22",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

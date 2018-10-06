@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "admin",
+            "groupClass",
+            "queue",
+            "read",
+            "topic",
+            "write"
+        ],
+        [
+            "Type",
+            "xs:string",
+            "xs:string",
+            "xs:string",
+            "xs:string",
+            "xs:string",
+            "xs:string"
+        ],
+        [
+            "Description",
+            "",
+            "",
+            "A helper method to set the destination from a configuration file",
+            "",
+            "A helper method to set the destination from a configuration file",
+            ""
+        ]
+    ],
+    "pageTitle": "Schema for namespace: http://activemq.org/config/1.0",
+    "title": "",
+    "url": "http://activemq.apache.org/schema/core/activemq-core-5.0.0.xsd.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00095-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 3158639,
+    "recordOffset": 3139090,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 31 Jan 2013 19:46:16 GMT",
+    "textBeforeTable": "Root Element",
+    "textAfterTable": "authorizationEntry Represents an entry in a {@link DefaultAuthorizationMap} for assigning different operations (read, write, admin) of user roles to a specific destination or a hierarchical wildcard area of destinations. org.apache.activemq.security.AuthorizationEntry authorizationMap Represents a destination based configuration of policies so that individual destinations or wildcard hierarchies of destinations can be configured using different policies. Each entry in the map represents the authorization ACLs for each operation. org.apache.activemq.security.DefaultAuthorizationMap authorizationPlugin An authorization plugin where each operation on a destination is checked against an authorizationMap org.apache.activemq.security.AuthorizationPlugin axionJDBCAdapter Axion specific Adapter. Axion does not seem to support ALTER statements or sub-selects. This means: - We cannot auto upgrade the schema was we roll out new versions of ActiveMQ - We cannot delete durable sub messages that have be acknowledged by all consumers. org.apache.activemq.store.jdbc.adapter.AxionJDBCAdapter blobJDBCAdapter This JDBCAdapter inserts and extracts BLOB data using the getBlob()/setBlob() operations. This is a little more involved since to insert a blob you have to: 1: insert empty blob. 2: select the blob 3: finally update the blob with data value. The databases/JDBC drivers that use this adapter are: org.apache.activemq.store.jdbc.adapter.BlobJDBCAdapter broker An ActiveMQ Message Broker. It consists of a number of transport connectors, network connectors and a bunch of properties which can be used to configure the broker as its lazily created. org.apache.activemq.xbean.XBeanBrokerService bytesJDBCAdapter This JDBCAdapter inserts and extracts BLOB data using the setBytes()/getBytes() operations. The databases/JDBC drivers that",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

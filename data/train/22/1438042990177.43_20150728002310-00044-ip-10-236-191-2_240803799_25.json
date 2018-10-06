@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "",
+            "Xenopus ANatomical entity (XAN)",
+            "Xenopus ANatomical entity (XAN)",
+            "Xenopus ANatomical entity (XAN)",
+            "Xenopus ANatomical entity (XAN)"
+        ],
+        [
+            "XA term",
+            "genital system",
+            "portion of tissue",
+            "viscus",
+            "heart"
+        ],
+        [
+            "FDR (all)",
+            "0",
+            "0.2098",
+            "0.9995",
+            "0.461"
+        ],
+        [
+            "SDXA level",
+            "Least Informative",
+            "Least Informative",
+            "Least Informative",
+            "Informative"
+        ],
+        [
+            "Annotation (direct or inherited)",
+            "Direct",
+            "Inherited",
+            "Inherited",
+            "Inherited"
+        ]
+    ],
+    "pageTitle": "SMAD/FHA domain superfamily",
+    "title": "",
+    "url": "http://supfam.cs.bris.ac.uk/SUPERFAMILY/cgi-bin/scop.cgi?ipid=SSF49879",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00044-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 240857159,
+    "recordOffset": 240803799,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{702804=FHA and SMAD (MH2) domains share a common structure consisting of a sandwich of eleven beta strands in two sheets with Greek key topology. Forkhead-associated (FHA) domains were originally identified as a sequence profile of about 75 amino acids, whereas the full-length domain is closer to about 150 amino acids. FHA domains are found in transcription factors, kinesin motors, and in a variety of other signalling molecules in organisms ranging from eubacteria to humans. FHA domains are protein-protein interaction domains that are specific for phosphoproteins. FHA-containing proteins function in maintaining cell-cycle checkpoints, DNA repair and transcriptional regulation. FHA domain proteins include the Chk2/Rad53/Cds1 family of proteins that contain one or more FHA domains, as well as a Ser/Thr kinase domain [11106755, 12121644, 12049740].}",
+    "textBeforeTable": "Superfamily statistics EssC N-terminal domain-like [\u00a0141143] \u00a0 Interferon regulatory factor 3 (IRF3), transactivation domain [\u00a0101630] \u00a0 FHA domain [\u00a049885] (11) \u00a0 SMAD domain [\u00a049880] (4) Families: \u00a0 SMAD/FHA domain [\u00a049879] (4) Superfamily: \u00a0 SMAD/FHA domain [\u00a049878] Fold: \u00a0 All beta proteins [\u00a048724] (174) Class: \u00a0 SCOP hierarchy in SUPERFAMILY [\u00a00] (11) Root: \u00a0 SMAD/FHA domain superfamilySCOP classification Taxonomic Distribution Domain Combinations Sequence Alignments Genome",
+    "textAfterTable": "Document: Function annotation of SCOP domain superfamilies Gene Ontology (high-quality)(show details) Highlighted in gray are those with either FDR_singleton>0.001 or FDR_all>0.001 GO term FDR (singleton) FDR (all) IC level SDFO level Annotation (direct or inherited) Biological Process (BP) regulation of macromolecule metabolic process 0.00002707 0.00008417 0.7873 -- DIRECT Biological Process (BP) signaling 0.0006685 0 0.841 -- DIRECT Biological Process (BP) biological_process 0.4851 0.2317 0 -- INHERITED FROM: regulation of macromolecule metabolic process || signaling || growth Biological Process (BP) regulation of biological process 0.001424 0.001518 0.4208 -- INHERITED FROM: regulation of macromolecule metabolic process Biological Process (BP) biological regulation 0.002521 0 0.3975 -- INHERITED FROM: regulation of macromolecule metabolic process Biological Process (BP) regulation of metabolic process 0.02032 0.00007859 0.6426 Least Informative INHERITED FROM: regulation of macromolecule metabolic process Biological Process (BP) growth 0.00007378 0.000000482 1.518 Informative DIRECT",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

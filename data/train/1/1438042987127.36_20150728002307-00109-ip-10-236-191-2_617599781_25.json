@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2010-06-15T00:00:00",
+            "2010-07-01T00:00:00",
+            "2010-07-15T00:00:00",
+            "2010-07-20T00:00:00",
+            "2010-08-05T00:00:00",
+            "2010-09-01T00:00:00",
+            "2010-09-15T00:00:00"
+        ],
+        [
+            "Description",
+            "All datasets obtained by NGDC were converted to common horizontal datums of WGS 84 geographic, respectively, using FME. They were also converted to common file formats, ESRI point shapefiles and xyz files, for visualization and inspection.",
+            "Conversion grids were created to convert all data from common vertical datums of MHW. Grids were created using the difference values from tide stations from the Virgin Islands region and the Inverse Distance Weighting tool in ArcMap. Data were converted to MHW by subtracting the grid value from the data elevation value.",
+            "Datasets were visually inspected with ArcGIS for identification and editing of data anomalies. Datasets were then compared with overlapping datasets to ensure data consistency.",
+            "Multibeam sonar surveys were gridded to 3 arc-second spacing (~90 meters) using MB-System's 'mbgrid' tool. The resulting Arc ASCII grids were imported into ArcGIS.",
+            "xyz files of the bathymetric data were surfaced using ESRI's ArcGIS onto a 3 arc-second grid that was then converted to an xyz file.",
+            "xyz files for each input dataset were gridded using MB-System's 'mbgrid' tool, which utilizes a high-tension spline interpolation method to fill grid cells with no input elevation values. Preferential weighting was given to more recent, higher-accuracy datasets.",
+            "The DEM was quantitatively evaluated by comparing with NGS geodetic monuments. It was visually evaluated by converting to UTM-zone coordinates (units of meters horizontally and vertically) and then creating a slope grid to identify gridding artifacts in the DEM."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/DEM/iso/xml/675.xml&view=ISO19115Components-HTMLTable",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987127.36/warc/CC-MAIN-20150728002307-00109-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 617617707,
+    "recordOffset": 617599781,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.ngdc.mgg.dem:675Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/DEM View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "2010-01-01 1 CCMA Biogeography Gridded Multibeam 2007-01-01 1 Digital Elevation Model Footprints ArcGIS Map Service 2011-02-15 1 Digital Elevation Models of the U.S. Virgin Islands: Procedures, Data Sources, and Analysis 2010-10-08 1 Digital Elevation Models: Color Shaded Relief ArcGIS Image Service 2011-10-19 1 Electronic Navigational Charts 2009-01-01 1 Gridded multibeam data provided by the University of Virgin Islands 2009-01-01 1 Mean High Water height 2012-08-05 1 NASA/GCMD Data Center Keywords 1 NASA/GCMD Data Resolution Keywords",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Tag",
+            "%Cl(xpos,ypos,maxwidth,maxheight,[horizontal alignment],[vertical alignment])",
+            "%Cd",
+            "%C"
+        ],
+        [
+            "Description",
+            "Define the picture settings. More details. Horizontal alignment can be 'l', 'r', or 'c', for left, right and center. Vertical alignment can be 't', 'b', or 'c', for top, bottom and center.",
+            "Display the album art bitmap. More details",
+            "Use in a conditional to check if album art has been loaded"
+        ]
+    ],
+    "pageTitle": "CustomWPS < Main < Wiki",
+    "title": "",
+    "url": "http://www.rockbox.org/wiki/CustomWPS?sortcol=2%3btable=24%3bup=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00268-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 688946815,
+    "recordOffset": 688919910,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Draw a rectangle! (optionally with a gradient) Then add %V(0,0,-,-,-) and continue with your skin as normal. Any viewports you want drawn on the backdrop need the %VB tag but otherwise code as normal. Use %x(filename, 0, 0) to draw a backdrop image (If you want one!) Add a full screen viewport at the start of the skin .. i.e %V(0,0,-,-,-) %VB Don't draw text here as it may not work too well. If the skin has this any %X() tag will be ignored and the whole screen will have a solid background (with the colour specified in the settings), so to get the most out of this feature: Rockbox uses two framebuffers when it does a screen redraw. The bottom layer is used for the backdrop image (the static parts of the display behind text for example), and the upper layer (the text/images). Using this tag you can tell the skin engine to instead draw everything in this viewport onto the backdrop layer instead of the foreground layer. Draw on the backdrop layer %VB Description Tag Viewport Draw Layer",
+    "textAfterTable": "Description %Fl(fontid,filename,glyphs) fontid is the font identification number number that is used to reference the font in a viewport decleration. 0 and 1 are reserved so can't be used. filename is the font filename to load. glyphs is an optional specification of how many glyphs to reserve memory for. This should be large enough to prevent frequent glyph loading from disk. The default is 256 glyphs if not specified. fonts live in /.rockbox/fonts/ e.g. %Fl(2,12-Font.fnt,150) Status Bar These tags override the player setting for the display of the status bar, they must be on their own line. Tag Description %we Status Bar Enabled %wd Status Bar Disabled %wi Display the inbuilt statusbar in the current viewport It can also be used for the Custom Status Bar ID3 Tag Info Remember that this information is",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

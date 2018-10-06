@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "instName",
+            "compName",
+            "compType",
+            "listener"
+        ],
+        [
+            "Definition",
+            "Specifies the name of the application server instance.",
+            "Specifies the name of the component instance.",
+            "Specifies the type of component. Valid values are 'ovd', 'oid', 'ohs', and 'webcache'.",
+            "Specifies the name of the component listener."
+        ]
+    ],
+    "pageTitle": "Infrastructure Security Custom WLST Commands",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E23943_01/web.1111/e13813/custom_infra_security.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00057-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 76045916,
+    "recordOffset": 75961395,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{825683=HOK Symmetric Key Generation Algorithm: http://www.w3.org/2001/04/xmlenc#aes128-cbc, 609755=cacheTimeOut\u2014Amount of time cached information remains in the OAM Agent cache when the information is neither used nor referenced. Default = 1800 (seconds)., 53920=The following command generates a certificate signing request with DN cn=www.acme.com and key size 1024 in wallet1, for Oracle Internet Directory instance oid1, in application server instance inst1:, 234401=The following command deletes the authentication engine with ID id1234., 674366=cacheTimeout\u2014Amount of time cached information remains in the OAM Agent cache when the information is neither used nor referenced. Default = 1800 (seconds)., 58353=The following command adds a self-signed certificate with DN cn=www.acme.com, key size 1024 to wallet1, for Oracle Internet Directory instance oid1, in application server instance inst1:, 236465=The following command deletes the engine with ID id1234., 110900=The following command generates a key pair with DN cn=www.acme.com, key size 1024, algorithm RSA and alias mykey in keys.jks, for Oracle Virtual Directory instance ovd1 in application server instance inst1:}",
+    "lastModified": "Wed, 13 May 2015 05:20:25 GMT",
+    "textBeforeTable": "getSSL(instName, compName, compType, listener)  Syntax      This command lists the configured SSL attributes for the specified component listener. For Oracle Internet Directory, the listener name is always sslport1. Description    Online command that lists the configured SSL attributes. getSSL    wls:/mydomain/serverConfig> getKeyStoreObject('inst1', 'ovd1', 'ovd','keys.jks', 'password', 'Certificate', '1')  The following command shows a certificate with index 1 present in keys.jks, for Oracle Virtual Directory instance ovd1, in application server instance inst1: wls:/mydomain/serverConfig> getKeyStoreObject('inst1', 'ovd1', 'ovd','keys.jks', 'password', 'TrustedCertificate', '1')  The following command shows a trusted certificate with index 1 present in keys.jks, for Oracle Virtual Directory instance ovd1, in application server instance inst1: Examples       Specifies the index number of the keystore object as returned by the listKeyStoreObjects command. index Specifies the type of the keystore object to be listed. Valid values are 'Certificate' and 'TrustedCertificate'. type Specifies the password of the keystore. password Specifies the name",
+    "textAfterTable": "Example The following command shows the SSL attributes configured for Oracle Internet Directory instance oid1, in application server instance inst1, for listener sslport1:  wls:/mydomain/serverConfig> getSSL('inst1', 'oid1', 'oid', 'sslport1') getWalletObject Online command that displays information about a certificate or other object in an Oracle wallet. Description This command displays a specific certificate signing request, certificate or trusted certificate present in an Oracle wallet for the specified component instance (Oracle HTTP Server, Oracle WebCache or Oracle Internet Directory). The wallet object is indicated by its index number, as given by the listWalletObjects command. For certificates or trusted certificates, it shows the certificate details including DN, key size, algorithm and other data. For certificate signing requests, it shows the subject DN, key size and algorithm. Syntax  getWalletObject(instName, compName, compType, walletName, password, type, index) Argument Definition instName Specifies the name of the application server instance. compName Specifies the name",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

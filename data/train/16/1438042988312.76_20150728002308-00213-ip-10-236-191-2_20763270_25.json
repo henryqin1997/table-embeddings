@@ -1,0 +1,162 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2007-08",
+            "2009-10",
+            "2010-11",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "NMX",
+            "RNO",
+            "RNO",
+            ""
+        ],
+        [
+            "GP",
+            "5",
+            "26",
+            "20",
+            "51"
+        ],
+        [
+            "GS",
+            "5",
+            "0",
+            "7",
+            "12"
+        ],
+        [
+            "Dbl Dbl",
+            "0",
+            "1",
+            "1",
+            "2"
+        ],
+        [
+            "Tpl Dbl",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "40 Pts",
+            "1",
+            "0",
+            "0",
+            "1"
+        ],
+        [
+            "20 Reb",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "20 Ast",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "Techs",
+            "0",
+            "1",
+            "1",
+            "2"
+        ],
+        [
+            "HOB",
+            ".409",
+            ".268",
+            ".184",
+            ".248"
+        ],
+        [
+            "Ast/TO",
+            "0.67",
+            "2.96",
+            "0.96",
+            "1.68"
+        ],
+        [
+            "Stl/TO",
+            "0.42",
+            "0.80",
+            "0.37",
+            "0.54"
+        ],
+        [
+            "FT/FGA",
+            "0.42",
+            "0.31",
+            "0.59",
+            "0.43"
+        ],
+        [
+            "W's",
+            "2",
+            "18",
+            "13",
+            "33"
+        ],
+        [
+            "L's",
+            "3",
+            "8",
+            "7",
+            "18"
+        ],
+        [
+            "Win %",
+            "0.400",
+            "0.692",
+            "0.650",
+            "0.647"
+        ],
+        [
+            "OWS",
+            "0.51",
+            "1.15",
+            "0.31",
+            "1.85"
+        ],
+        [
+            "DWS",
+            "0.10",
+            "0.86",
+            "0.71",
+            "1.77"
+        ],
+        [
+            "WS",
+            "0.62",
+            "2.01",
+            "1.02",
+            "3.62"
+        ]
+    ],
+    "pageTitle": "D.J. Strawberry Player Profile, Phoenix Suns, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/DJ_Strawberry/Summary/15",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988312.76/warc/CC-MAIN-20150728002308-00213-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 20810363,
+    "recordOffset": 20763270,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{46793=Draft Entry: 2007 NBA Draft, 47648=Born: Jun 15, 1985 (30 years old)}",
+    "TableContextTimeStampAfterTable": "{165062=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved., 102623=* International basketball history from 2011-2012}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 1 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "2007-08 PHX 33 0 270.2 29 92 .315 6 25 .240 9 19 .474 39 9 19 28 30 12 6 36 11 73 CAREER \u00a0 33 0 270.2 29 92 .315 6 25 .240 9 19 .474 39 9 19 28 30 12 6 36 11 73 NBA Regular Season Stats - Misc Stats Season Team GP GS Dbl Dbl Tpl Dbl 40 Pts 20 Reb 20 Ast Techs HOB Ast/TO Stl/TO FT/FGA W's L's Win % OWS DWS WS 2007-08 PHX 33 0 0 0 0 0 0 0 .042 2.73 1.09 0.21 23 10 0.697 -0.38 0.20 -0.19 CAREER \u00a0 33 0 0 0 0 0 0 0 .042 2.73 1.09 0.21 23 10 0.697 -0.38 0.20 -0.19 NBA Regular Season Stats - Advanced Stats Season Team GP GS TS% eFG% ORB% DRB% TRB% AST% TOV% STL% BLK% USG% Total S % PPR PPS ORtg DRtg PER",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

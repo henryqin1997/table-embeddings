@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Element",
+            "External Item",
+            "Barcode",
+            "Status",
+            "Transfer Method",
+            "Info icon"
+        ],
+        [
+            "Description",
+            "The name of the individual physical item in a reservation request.",
+            "The barcode value of the individual item in a reservation request.",
+            "The current status of the individual item in a reservation request.",
+            "The selected transfer method for the individual item in a reservation request.",
+            "Displays the Request Item Information Page."
+        ]
+    ],
+    "pageTitle": "A User Interface",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E17904_01/doc.1111/e10733/e01_interface.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00000-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70361591,
+    "recordOffset": 70320401,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{146547=Providing a time along with a date is optional. If a time is not specified, 12:00 PM (midnight) is assumed.}",
+    "lastModified": "Wed, 13 May 2015 05:17:59 GMT",
+    "textBeforeTable": "Note that not all menu options appear on this screen for all users. The menu options depend on the rights assigned. To access this page, click Information then View Request Items from the Page menu on the Request Information Page. Permissions: The PCM.Reservation.Edit right is required to use this screen. This right is assigned by default to the PCM Administrator role. A reservation may consist of more than one requested item. Use this page to view a list of all individual items included in a reservation request. A.9.5 Items for Request Page Note that not all menu options appear on this screen for all users. The menu options depend on the rights assigned. This page shows the current properties of the selected reservation request. It also shows if the reservation request has been completed. A reservation request is considered completed if none of its request items are still pending (in process), on a waiting list, or checked out. To access this page, click Information then Request Information from an item's Action menu on the Reservation Search Results Page. Permissions: The PCM.Reservation.Read right is required to use this screen. This right is assigned by default to the PCM Requestor and PCM Administrator roles.",
+    "textAfterTable": "A.9.6 Request Item Information Page Use this page to view the properties of an individual item in an existing reservation request. These properties include the offsite request status, the status of hte request, and the name of the request. Permissions: The PCM.Reservation.Edit right is required to use this screen. This right is assigned by default to the PCM Administrator role. To access this page, click Request Item Information from the item's Actions menu on the Items for Request Page. Note that not all menu options appear on this screen for all users. The menu options depend on the rights assigned. A.9.7 Edit Request Item Page Use this page to modify the properties of an item in an existing reservation request. It can be used to change the status of the item and add or modify comments. Permissions: The PCM.Reservation.Edit right is required to use this screen. You must also have the PCM.Reservation.Process right to change the status of an item. These rights are assigned by default to",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

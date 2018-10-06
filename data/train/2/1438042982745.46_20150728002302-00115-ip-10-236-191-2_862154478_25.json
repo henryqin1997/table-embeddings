@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "integer",
+            "integer",
+            "string",
+            "boolean",
+            "boolean",
+            "boolean",
+            "integer"
+        ],
+        [
+            "(optional) windowId",
+            "(optional) index",
+            "(optional) url",
+            "(optional) active",
+            "(optional) selected",
+            "(optional) pinned",
+            "(optional) openerTabId"
+        ],
+        [
+            "The window to create the new tab in. Defaults to the current window.",
+            "The position the tab should take in the window. The provided value will be clamped to between zero and the number of tabs in the window.",
+            "The URL to navigate the tab to initially. Fully-qualified URLs must include a scheme (i.e. 'http://www.google.com', not 'www.google.com'). Relative URLs will be relative to the current page within the extension. Defaults to the New Tab Page.",
+            "Since Chrome 16. Whether the tab should become the active tab in the window. Does not affect whether the window is focused (see windows.update). Defaults to true.",
+            "Deprecated since Chrome 33. Please use active. Whether the tab should become the selected tab in the window. Defaults to true",
+            "Since Chrome 9. Whether the tab should be pinned. Defaults to false",
+            "Since Chrome 18. The ID of the tab that opened this tab. If specified, the opener tab must be in the same window as the newly created tab."
+        ]
+    ],
+    "pageTitle": "chrome.tabs - Google Chrome",
+    "title": "",
+    "url": "https://developer.chrome.com/extensions/tabs",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00115-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 862176067,
+    "recordOffset": 862154478,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{65617=A data URL which encodes an image of the visible area of the captured tab. May be assigned to the 'src' property of an HTML Image element for display., 24743=Gets the tab that this script call is being made from. May be undefined if called from a non-tab context (for example: a background page or popup view).}",
+    "textBeforeTable": "The callback parameter should be a function that looks like this: function( Tab tab) {...}; callback function tabId integer Parameters Retrieves details about the specified tab. chrome.tabs.get(integer tabId, function callback) get Methods Not fully implemented. You must build Chromium from source to try this API. Learn more. An ID which represents the absence of a browser tab. chrome.tabs.TAB_ID_NONE -1 Properties \"normal\", \"popup\", \"panel\", \"app\", or \"devtools\" Enum WindowType The type of window. \"loading\", or \"complete\" Enum TabStatus Whether the tabs have completed loading. Since Chrome 43. Used to return the default zoom level for the current tab in calls to tabs.getZoomSettings. (optional) defaultZoomFactor double Defines whether zoom changes will persist for the page's origin, or only take effect in this tab; defaults to per-origin when in automatic mode, and per-tab otherwise. (optional) scope ZoomSettingsScope Defines how zoom changes are handled, i.e. which entity is responsible",
+    "textAfterTable": "connect runtime.Port chrome.tabs.connect(integer tabId, object connectInfo) Connects to the content script(s) in the specified tab. The runtime.onConnect event is fired in each content script running in the specified tab for the current extension. For more details, see Content Script Messaging. Parameters integer tabId object (optional) connectInfo string (optional) name Will be passed into onConnect for content scripts that are listening for the connection event. integer (optional) frameId Since Chrome 41. Open a port to a specific frame identified by frameId instead of all frames in the tab. sendRequest chrome.tabs.sendRequest(integer tabId, any request, function responseCallback) Deprecated since Chrome 33. Please use runtime.sendMessage. Sends a single request to the content script(s) in the specified tab, with an optional callback to run when a response is sent back. The extension.onRequest event is fired in each content script running in the specified tab for the current extension. Parameters integer tabId any request",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

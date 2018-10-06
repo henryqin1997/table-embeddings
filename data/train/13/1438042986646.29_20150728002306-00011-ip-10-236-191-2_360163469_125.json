@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Release",
+            "12.2(33)SRE",
+            "12.2(33)XNE"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "This command was modified. It was integrated into Cisco IOS Release 12.2(33)XNE."
+        ]
+    ],
+    "pageTitle": "Cisco IOS IPv6 Command Reference - IPv6 Commands: ipv6 a to ipv6 g [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipv6/command/ipv6-cr-book/ipv6-i1.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00011-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 360227163,
+    "recordOffset": 360163469,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{15967=This command was introduced on Cisco ASR 1000 Series Routers., 3326=This command was introduced on Cisco ASR 1000 series devices.}",
+    "TableContextTimeStampAfterTable": "{168810=Distributed Cisco Express Forwarding for IPv6 is disabled on the Cisco 7500 series routers and enabled on the Cisco 12000 series Internet routers., 142460=This command was implemented on Cisco ASR 1000 Series Aggregation Services Routers., 27780=The sub-bitsargument must be in the form documented in RFC 2373 where the address is specified in hexadecimal using 16-bit values between colons., 81584=This command was introduced on Cisco ASR 1000 Series Routers., 31229=This command was integrated into Cisco ASR 1000 Series devices., 174274=The ipv6 cef distributed command is not supported on the Cisco 12000 series Internet routers because distributed Cisco Express Forwarding for IPv6 is enabled by default on this platform., 143471=The ipv6 cef command is not available on the Cisco 12000 series Internet routers because this distributed platform operates only in distributed Cisco Express Forwarding for IPv6 mode., 100864=This argument must be in the form documented in RFC 2373 where the address is specified in hexadecimal using 16-bit values between colons., 40611=This argument must be in the form documented in RFC 2373 where the address is specified in hexadecimal using 16-bit values between colons., 7175=The following example is from a device running Cisco IOS Release 12.2(2)T or later releases, 12.0(21)ST, or 12.0(22)S. The example configures the IPv6 ACL named list2 and applies the ACL to outbound traffic on Ethernet interface 0. Specifically, the first ACL entry keeps all packets from the network FEC0:0:0:2::/64 (packets that have the site-local prefix FEC0:0:0:2 as the first 64 bits of their source IPv6 address) from exiting out of Ethernet interface 0. The second entry in the ACL permits all other traffic to exit out of Ethernet interface 0. The second entry is necessary because an implicit deny all condition is at the end of each IPv6 ACL.}",
+    "textBeforeTable": "Syntax Description access-class ipv6 no { in | out } ipv6-access-list-name access-class ipv6 To filter incoming and outgoing connections to and from the router based on an IPv6 access list, use the ipv6 access-classcommand in line configuration mode. To disable the filtering of incoming and outgoing connections to the router, use the no form of this command. ipv6 access-class ipv6 general-prefix ipv6 enable ipv6 eigrp ipv6 dhcp server vrf enable ipv6 dhcp server ipv6 dhcp-relay source-interface ipv6 dhcp-relay show bindings ipv6 dhcp-relay bulk-lease ipv6 dhcp relay source-interface ipv6 dhcp-relay option vpn ipv6 dhcp relay destination ipv6 dhcp pool ipv6 dhcp ping packets ipv6 dhcp guard policy ipv6 dhcp guard attach-policy ipv6 dhcp framed password ipv6 dhcp debug redundancy ipv6 dhcp database ipv6 dhcp client pd ipv6 dhcp client information refresh minimum ipv6 dhcp binding track ppp ipv6 destination-guard policy ipv6 destination-guard attach-policy ipv6 crypto map ipv6 cga rsakeypair",
+    "textAfterTable": "Command Default The filtering of incoming and outgoing connections to and from the router is not enabled. Command Modes Line configuration Command History Release Modification 12.2(2)T This command was introduced. 12.0(21)ST This command was integrated into Cisco IOS Release 12.0(21)ST. 12.0(22)S This command was integrated into Cisco IOS Release 12.0(22)S. 12.2(14)S This command was integrated into Cisco IOS Release 12.2(14)S. 12.2(28)SB This command was integrated into Cisco IOS Release 12.2(28)SB. 12.2(25)SG This command was integrated into Cisco IOS Release 12.2(25)SG. 12.2(33)SRA",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "Column name",
+            "GRANTEE",
+            "OWNER",
+            "TABLE_NAME",
+            "GRANTOR",
+            "PRIVILEGE",
+            "GRANTABLE",
+            "HIERARCHY"
+        ],
+        [
+            "Type",
+            "VARCHAR2(30) INLINE",
+            "VARCHAR2(30) INLINE",
+            "VARCHAR2(30) INLINE",
+            "VARCHAR2(30) INLINE",
+            "VARCHAR2(40) INLINE NOT NULL",
+            "VARCHAR2(3) INLINE NOT NULL",
+            "VARCHAR2(3) INLINE NOT NULL"
+        ],
+        [
+            "Description",
+            "Name of the user with the privilege",
+            "Object owner",
+            "Object name",
+            "Name of the user who granted the privilege",
+            "Privilege name",
+            "Value NO",
+            "Value NO"
+        ]
+    ],
+    "pageTitle": "System Tables\u00a0",
+    "title": "",
+    "url": "http://download.oracle.com/otn_hosted_doc/timesten/1122/doc/timesten.1122/e21644/systemtables.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00123-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74288295,
+    "recordOffset": 74246846,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 21 Jan 2015 00:24:08 GMT",
+    "textBeforeTable": "Columns ADMIN Required privileges SYS.USER_TAB_PRIVS SYS.ALL_TAB_PRIVS Related views The DBA_TAB_PRIVS view lists the object privileges granted to all users and to PUBLIC. SYS.DBA_TAB_PRIVS SYS.USER_TABLES SYS.ALL_TABLES Related views The SYS.DBA_TABLES view describes all tables in the database. See \"SYS.ALL_TABLES\" for column descriptions. SYS.DBA_TABLES YES if user can grant the privilege; NO if not The value is YES only for the ADMIN privilege. VARCHAR2(3) INLINE NOT NULL ADMIN_OPTION Privilege name VARCHAR2(40) INLINE NOT NULL PRIVILEGE Name of the user with the privilege VARCHAR2(30) INLINE GRANTEE Description. Type Column name",
+    "textAfterTable": "SYS.DBA_TAB_SIZES The DBA_TAB_SIZES view contains information about the size of tables that are available in the database. Requires ADMIN privileges. It has the same columns as SYS.ALL_TAB_SIZES. Related views SYS.ALL_TAB_SIZES SYS.USER_TAB_SIZES SYS.DBA_USERS The DBA_USERS view describes all users of the database. Related views SYS.ALL_USERS SYS.USER_USERS Columns Column name Type Description. USERNAME VARCHAR2(30) INLINE Name of the user USER_ID TT_INTEGER NOT NULL ID number of the user PASSWORD VARCHAR2(30) INLINE Value NULL",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

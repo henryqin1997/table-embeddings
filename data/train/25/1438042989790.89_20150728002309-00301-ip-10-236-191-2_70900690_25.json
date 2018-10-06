@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "-device volume_device",
+            "-path mountpoint_path",
+            "-volume volume_name",
+            "-diskgroup disk_group_name",
+            "-node node_list | -serverpool server_pool_list",
+            "-user user_list",
+            "-fstype {ACFS | EXT3 | EXT4}",
+            "-fsoptions options",
+            "-description description",
+            "-appid application_id",
+            "-autostart {ALWAYS | NEVER | RESTORE}"
+        ],
+        [
+            "Description",
+            "Specify the path to the file system volume device you want to add.",
+            "Specify the mount point path that is used to set up dependencies on other resources for nested mounts. This must be an absolute path.",
+            "Specify the name of the volume.",
+            "The name of the Oracle ACFS disk group to which you want to add the device.",
+            "Specify a comma-delimited list of nodes on which to mount the file system device. If you specify a list of nodes or a server pool, then SRVCTL creates a single-node file system resource. Without any nodes or server pools, SRVCTL creates a file system resource that runs on every cluster node. Specify a comma-delimited list of server pools in which a file system will run. If you specify a list of server pools, then you dynamically limit the number or type of nodes on which a file system will run. Note that this does not count as a clusterwide file system for later usage that may require a clusterwide Oracle ACFS resource, such as HANFS. Note: Nodes and server pools are mutually exclusive.",
+            "Specify a comma-delimited list of users authorized to mount and unmount the file system. If you specify no users, then only root can mount and unmount the file system. If the file system is for Oracle Database software, then specify the name of the Oracle home owner.",
+            "Specify the type of file system to be mounted. The default value is ACFS. If the type of file system to be mounted is not ACFS, then it must be a single-node file system, and you must specify -node or -serverpool.",
+            "Specify options used to mount the file system. The options are file system and operating system dependent.",
+            "Specify a description of the file system. This is stored as an attribute for later viewing by an administrator.",
+            "Specify an application ID, which is a unique identifier used to group file systems into logical groupings. This method is used to group file systems that may be different on different nodes but are used by an application that must have a dependency on the resource type, which is ora.id.fs.type.",
+            "Specify the file system resource autostart policy. ALWAYS: The file system resource always automatically starts. NEVER: The file system does not automatically start. RESTORE: The file system is restored to its last state. This is the default option."
+        ]
+    ],
+    "pageTitle": "Rapid Home Provisioning and Server Control Command Reference",
+    "title": "",
+    "url": "http://docs.oracle.com/database/121/CWADD/ghcref.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00301-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70927755,
+    "recordOffset": 70900690,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{124781=The following command adds a management listener that is listening on port 1341 to the cluster:}",
+    "lastModified": "Thu, 02 Jul 2015 09:57:36 GMT",
+    "textBeforeTable": "Table F-26 srvctl add filesystem Parameters -fstype parameter only for Linux. EXT4 values for the EXT3 and Note: Oracle supports the [-appid application_id] [-autostart {ALWAYS | NEVER | RESTORE}] [-fstype {ACFS | EXT3 | EXT4}] [-fsoptions options] [-description description] [-node node_list | -serverpool server_pool_list] [-user user_list] [-volume volume_name] [-diskgroup disk_group_name] srvctl add filesystem -device volume_device -path mountpoint_path  Use the srvctl add filesystem command with the following syntax: Syntax and Parameters      To manage Oracle ACFS on Oracle Database 12c installations, use the SRVCTL binary in the Oracle Grid Infrastructure home for a cluster (Grid home). If you have Oracle RAC or Oracle Database installed, then you cannot use the SRVCTL binary in the database home to manage Oracle ACFS.   Use this command only with Oracle Clusterware.   Notes: An Oracle ACFS file system resource is typically created for use with application resource dependency lists. For example, if an Oracle ACFS file system is configured for use as an Oracle Database home, then a resource created for the file system can be included in the resource dependency list of the Oracle Database application. This will cause the file system and stack to be automatically mounted because of the start action of the database application. Adds a device containing a file",
+    "textAfterTable": "Usage Notes You must run this command as root user on Linux and UNIX platforms, or as an Administrator user on Windows platforms. Examples To add the d1volume1-295 disk device in the disk group RAC_DATA as the Oracle ACFS volume VOLUME1 with a mount point of /oracle/cluster1/acfs:  # srvctl add filesystem -device /dev/asm/d1volume1-295 -path /oracle/cluster1/acfs1 To add an Oracle ACFS file system on the dynamic volume device asm-test-55, with this file system mounted on one of the specified nodes at a time:  # srvctl add filesystem -fstype ACFS -device asm-test-55 -path myacfs -node node1,node2,node3 srvctl add gns Use this command to add the Grid Naming Service (GNS) to a cluster when you are using a DHCP public network or to create a client cluster. Note: Use this command only with Oracle Clusterware. Syntax and Parameters Use the srvctl add gns command with one of the following syntax models: To add GNS to a cluster that is not currently running GNS:  srvctl add gns [-domain domain_name] -vip {vip_name | ip_address} [-verbose] To change a cluster that is not running GNS to be a client",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Status",
+            "new",
+            "new"
+        ],
+        [
+            "File",
+            "interdiff.txt",
+            "views_integration-588728-33.patch"
+        ],
+        [
+            "Size",
+            "78.53 KB",
+            "163.03 KB"
+        ]
+    ],
+    "pageTitle": "Meta: Views integration redux [#588728] | Drupal.org",
+    "title": "",
+    "url": "https://www.drupal.org/node/588728",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00063-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 900685427,
+    "recordOffset": 900662881,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{24840=http://skitch.com/vertice/d1177/t}",
+    "lastModified": "Sun, 02 Aug 2015 21:35:41 GMT",
+    "textBeforeTable": "\u00bb Needs review Active Status: September 30, 2009 at 11:10am CreditAttribution: univate commented univate Comment #2 Log in or register to post comments I think we should avoid *depending* on views and keep on doing our own stuff for now. Adding views hooks so that fields show up in views and can be part of filters is fine, however. September 28, 2009 at 2:37pm CreditAttribution: anarcat commented anarcat Comment #1 Comments univate 21.57 KB hosting_views2.patch #2",
+    "textAfterTable": "Here is a start, I think it defines almost all the main fields and there are a few filters as well, it probably needs a little more work, but its functional and you should be able to generate a lot of the current tables used in the hosting front end with this views support. Log in or register to post comments Comment #3 adrian CreditAttribution: adrian commented October 9, 2009 at 7:04am Status: Needs review \u00bb Needs work this is excellent so far, but there needs to be some special handling regarding relationships. it is giving us 'hosting site => platform id' and 'hosting site => profile id', but what it should be doing is generating a text field linked to the right node. but really, this is almost committable. Log in or register to post comments",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

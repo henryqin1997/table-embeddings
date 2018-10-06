@@ -1,0 +1,41 @@
+{
+    "relation": [
+        [
+            "Sr.",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        [
+            "Note",
+            "HelloWorldTest class was generated in the com.tutorialspoint.client package under the HelloWorld/test directory.",
+            "HelloWorldTest class will contain unit test cases for HelloWorld.",
+            "HelloWorldTest class extends the GWTTestCase class in the com.google.gwt.junit.client package.",
+            "HelloWorldTest class has an abstract method (getModuleName) that must return the name of the GWT module. For HelloWorld, this is com.tutorialspoint.HelloWorldJUnit.",
+            "HelloWorldTest class is generated with two sample test cases testFieldVerifier, testSimple. We've added testGreetingService.",
+            "These methods use one of the many assert* functions that it inherits from the JUnit Assert class, which is an ancestor of GWTTestCase.",
+            "The assertTrue(boolean) function asserts that the boolean argument passed in evaluates to true. If not, the test will fail when run in JUnit."
+        ]
+    ],
+    "pageTitle": "GWT - Quick Guide",
+    "title": "",
+    "url": "http://www.tutorialspoint.com/gwt/gwt_quick_guide.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00191-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 802594983,
+    "recordOffset": 802552497,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{6406=You can download the latest version of Tomcat from http://tomcat.apache.org/. Once you downloaded the installation, unpack the binary distribution into a convenient location. For example in C:\\apache-tomcat-6.0.33 on windows, or /usr/local/apache-tomcat-6.0.33 on Linux/Unix and set CATALINA_HOME environment variable pointing to the installation locations., 190703=\u00a9 Copyright 2015. All Rights Reserved.}",
+    "textBeforeTable": "GWT requires JDK 1.6 or higher so the very first requirement is to have JDK installed in your machine. System Requirement This tutorial will guide you on how to prepare a development environment to start your work with GWT Framework. This tutorial will also teach you how to setup JDK, Tomcat and Eclipse on your machine before you setup GWT Framework: GWT - Environment Setup GWT also provides a GWT Hosted Web Browser which lets you run and execute your GWT applications in hosted mode, where your code runs as Java in the Java Virtual Machine without compiling to JavaScript. GWT UI building library : This part of GWT consists of many subparts which includes the actual UI components, RPC support, History management, and much more. JRE Emulation library : Google Web Toolkit includes a library that emulates a subset of the Java runtime library. The list includes java.lang, java.lang.annotation, java.math, java.io, java.sql, java.util and java.util.logging GWT Java to JavaScript compiler : This is the most important part of GWT which makes it a powerful tool for building RIAs. The GWT compiler is used to translate all the application code written in Java into JavaScript. The GWT framework can be divided into following three major parts: The GWT Components Not designer's friendly: GWT is not suitable for web designers who prefer using plain HTML with placeholders for inserting dynamic content at later point in time. Not degradable: If your application user disables Javascript then user will",
+    "textAfterTable": "Linux Open Command Terminal $ java -version Mac Open Terminal machine:~ joseph$ java -version Let's verify the output for all the operating systems: OS Generated Output Windows java version \"1.6.0_21\" Java(TM) SE Runtime Environment (build 1.6.0_21-b07) Java HotSpot(TM) Client VM (build 17.0-b17, mixed mode, sharing) Linux java version \"1.6.0_21\" Java(TM) SE Runtime Environment (build 1.6.0_21-b07) Java HotSpot(TM) Client VM (build 17.0-b17, mixed mode, sharing) Mac java version \"1.6.0_21\" Java(TM) SE Runtime Environment (build 1.6.0_21-b07) Java HotSpot(TM)64-Bit Server VM (build 17.0-b17, mixed mode, sharing) Step 2 - Setup Java Development Kit (JDK): If you do not have Java installed then you can install the Java Software Development Kit (SDK) from Oracle's Java site: Java SE Downloads. You will find instructions for installing JDK in downloaded files, follow the given instructions to install and configure the setup. Finally set PATH and JAVA_HOME environment variables to refer to the directory that contains java and javac, typically java_install_dir/bin and java_install_dir respectively. Set the JAVA_HOME environment variable to point to the base directory location where Java is installed on your machine. For example OS Output Windows Set the environment variable JAVA_HOME to C:\\Program Files\\Java\\jdk1.6.0_21 Linux export JAVA_HOME=/usr/local/java-current Mac export JAVA_HOME=/Library/Java/Home Append Java compiler",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "n",
+            "value"
+        ],
+        [
+            "Description",
+            "DOMNODE",
+            "BINARYINPUTSTREAM"
+        ]
+    ],
+    "pageTitle": "DBMS_XMLDOM",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/appdev.112/e16760/d_xmldom.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00067-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 76307055,
+    "recordOffset": 76262633,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{1059=The implementation of this interface follows the REC-DOM-Level-1-19981001.}",
+    "lastModified": "Tue, 19 May 2015 17:54:16 GMT",
+    "textBeforeTable": "Table 171-126 SETNODEVALUEASBINARYSTREAM Function & Procedure Parameters Parameters value in SYS.UTL_BINARYINPUTSTREAM); n in DOMNODE, DBMS_XMLDOM.SETNODEVALUEASBINARYSTREAM (  Using this procedure, the application passes in an implementation of sys.utl_BinaryInputStream from which XDB reads data to populate the node. The data type of the node must be RAW or BLOB \u2013 if not an exception is raised. RETURN SYS.UTL_BINARYOUTPUTSTREAM; n IN DOMNODE) DBMS_XMLDOM.SETNODEVALUEASBINARYSTREAM (  This function returns an instance of the PL/SQL XMLBINARYOUTPUTSTREAM into which the caller can write the node value. The data type of the node must be RAW or BLOB \u2013 if not, an exception is raised. Syntax   DOMNode Subprograms See Also:  The operation of these subprograms is described with each syntax implementation. SETNODEVALUEASBINARYSTREAM Function & Procedure       The value to which node is set nodeValue DOMNode n Description Parameter Table 171-125 SETNODEVALUE Procedure Parameters Parameters",
+    "textAfterTable": "SETNODEVALUEASCHARACTERSTREAM Function & Procedure The operation of these subprograms is described with each syntax implementation. See Also: DOMNode Subprograms Syntax This function returns an instance of the PL/SQL XMLCHARACTEROUTPUTSTREAM type into which the caller can write the node value. The data type of the node can be any valid XDB data type. If the type is not character or CLOB, the character data written to the stream is converted to the node data type. If the data type of the node is character or CLOB, then the character data written to the stream is converted from PL/SQL session character set to the character set of the node.  DBMS_XMLDOM.SETNODEVALUEASCHARACTERSTREAM ( n IN DOMNODE) RETURN SYS.UTL_CHARACTEROUTPUTSTREAM; Using this procedure, the application passes in an implementation of SYS.UTL_CHARACTERINPUTSTREAM from which XDB reads to populate the node. The data type of the node may be any valid type supported by XDB. If a non-character data type, the character data read from the stream is converted to the data type of the node. If the data type of the node is either character or CLOB, then no conversion occurs and the character set of the node becomes the character set of the PL/SQL session.  DBMS_XMLDOM.SETNODEVALUEASCHARACTERSTREAM ( n IN DOMNODE, value IN SYS.UTL_CHARACTERINPUTSTREAM);",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

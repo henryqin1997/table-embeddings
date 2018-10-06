@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Product",
+            "Portal",
+            "Forms",
+            "Reports",
+            "Discoverer"
+        ],
+        [
+            "File",
+            "portal.conf",
+            "forms.conf",
+            "reports_ohs.conf",
+            "module_disco.conf"
+        ]
+    ],
+    "pageTitle": "Configuring High Availability for Oracle Portal, Forms, Reports, and Discoverer",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E27559_01/doc.1112/e28391/classic.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00285-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70784131,
+    "recordOffset": 70726463,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 12 Mar 2015 22:37:53 GMT",
+    "textBeforeTable": "There are different files to edit for Portal, Forms, Reports, and Discoverer, as shown in the following table: ORACLE_INSTANCE/config/OHS/ohs1/moduleconf  To make the Oracle HTTP Server aware of APPHOST2, edit files located in the following directory: When the installation was first created, it was configured so that all Web Logic requests were directed to the initially created Managed Servers residing on APPHOST1. Now that APPHOST2 exists, both the Oracle HTTP Servers on APPHOST1 and APPHOST2 must be made aware of all of the Oracle WebLogic Managed Servers. 14.6.5.4.3 Update Oracle HTTP Server Configuration to be Cluster Aware       </VirtualHost> UseCanonicalName On RewriteOptions inherit RewriteEngine On ServerName apphost2.example.com:7777 <VirtualHost *:7778> </VirtualHost> UseCanonicalName On RewriteOptions inherit RewriteEngine On ServerName http://mysite.example.com:80 <VirtualHost *:7778> NameVirtualHost *:7778  In a text editor, update the file to change APPHOST1 to APPHOST2: For the site to function properly with the load balancer, you must add two virtual hosts. You can configure the virtual hosts using Oracle Enterprise Manager Fusion Middleware Control, edit the file ORACLE_INSTANCE/config/OHS/ohs1/httpd.conf, or edit the virtual_hosts.conf file located in the in ORACLE_INSTANCE/config/OHS/ohs1/moduleconf directory (copied from APPHOST1). 14.6.5.4.2 Configure Virtual Hosts        ORACLE_INSTANCE/config ORACLE_INSTANCE/config",
+    "textAfterTable": "Edit the files as follows: Remove the lines that begin with WebLogicHost and WebLogicPort and add the following lines:  WebLogicCluster apphost1:9001,apphost2:9001 Change any lines that begin with WebLogicCluster to look similar to this:  WebLogicCluster apphost1:9001,apphost2:9001 For example, change the following:  <Location /portal> SetHandler weblogic-handler WebLogicHost apphost1.example.com WebLogicPort PORT </Location> to this:  <Location /portal> SetHandler weblogic-handler WebLogicCluster apphost1.example.com:PORT,apphost2.example.com:PORT </Location> Change the following:  <Location /Forms> SetHandler weblogic-handler WebLogicCluster apphost1.example.com:PORT </Location> to this:  <Location /Forms> SetHandler weblogic-handler WebLogicCluster apphost1.example.com:PORT,apphost2.example.com:PORT </Location> Repeat these steps on APPHOST2. 14.6.5.4.4 Change the Web Cache Passwords Web Cache passwords are randomly generated, however they are required in later stages. It is therefore recommended that the Web Cache passwords be changed from the default value to a new known value. To change the default password, follow these steps: In the Navigator window, expand the Web Tier tree. Click on the component wc1. From the drop down list at the top of the page, select Administration - Passwords. Enter new invalidation and administration passwords, confirm them, and click Apply. Note: The passwords used in this procedure must be the same as those used on APPHOST1. This is required for",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

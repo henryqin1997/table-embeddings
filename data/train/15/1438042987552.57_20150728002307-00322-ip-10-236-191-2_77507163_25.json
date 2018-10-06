@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Property",
+            "namedFunctionalBlockId",
+            "validatorCategoryId",
+            "validatorMode"
+        ],
+        [
+            "Description",
+            "The unique id of the NamedFunctionalBlock to associate with a validator.",
+            "Use this property to categorize a group of validations related to a functional block and its mode property. For example, setting this property to \"AddressInfo\" and the mode property to \"PROMPT,\" then also setting the validatorCategoryId property in DataValidator Properties and/or ColumnValidator Properties to \"AddressInfo\" means that any field set for validation with the specified validator in the Data and/or TableData dictionaries will share the \"PROMPT\" mode.",
+            "This property determines what occurs if the validation fails. Choices include: CONTINUE ABORT (default) PROMPT"
+        ]
+    ],
+    "pageTitle": "BPM Imaging Solution Reference",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E28280_01/doc.1111/e17953/e01_tables_imaging_bpm.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987552.57/warc/CC-MAIN-20150728002307-00322-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 77537711,
+    "recordOffset": 77507163,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{79954=For more information, see Section 5.4.10., 205154=Use the PS_AXF_PROPERTIES table to define properties for an AXF integration with Oracle PeopleSoft. See Section 6.4.12., 150297=http://www.w3.org/XML/1998/namespace, 189961=AXF_PAPERCLIP: Set to TRUE to enable the paperclip option, or FALSE (default) to disable it. Also see Section 6.4.11.}",
+    "lastModified": "Wed, 14 Jan 2015 14:04:39 GMT",
+    "textBeforeTable": "Table A-26 NamedFunctionalBlockValidator Properties This ruleset defines settings for functional block validations, such as the associated functional block and what should occur upon error (continue, abort, or prompt). A.1.6.5 NamedFunctionalBlockValidator Cancel: cancels the Named Functional Block No: continues the Named Functional Block Yes: continue the Named Functional Block after reverting task payload changes to the state when the task was opened. Note that comments added since the task has been opened will not be reverted. RollbackSavedChanges prompts the user: No: cancels the Named Functional Block Yes: continues the Named Functional Block The type of the prompt. Possible values are OkCancelFunctionalBlockContinuation and RollbackSavedChanges. OkCancelFunctionalBlockContinuation prompts the user: promptType PromptModeType.AFTER_VALIDATION PromptModeType.BEFORE_VALIDATION When the prompt occurs. Possible values are: promptMode The message shown in the pop-up window. promptMessage The display order of the prompts. order The unique id of the NamedFunctionalBlock. For example values",
+    "textAfterTable": "A.1.7 LookupAndValidator Dictionary The LookupAndValidator dictionary contains the following rulesets: StaticLookup DynamicLookup DynamicLookupBindVariable LookupParameter DynamicLookupRelatedBinding Validator ValidatorParameter A.1.7.1 StaticLookup This ruleset defines a list of static lookups and their values and display order. You can use these fixed list lookups in Data or DataTable dictionaries to implement the lookup. For example values for this table, see Table 5-26. Table A-27 StaticLookup Properties Property Description lookupId Unique ID that links this item with the other lookup definition rulesets and Data Dictionary and TableData Dictionary. displayName Name to display in the selection list. value When the user selects a display name from the static dropdown, place this value into the field with which this lookup is associated.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

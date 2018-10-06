@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Release",
+            "1.2(1)",
+            "1.4(1)"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "This command was added in the VM FEX command mode."
+        ]
+    ],
+    "pageTitle": "Cisco UCS C-Series Servers Integrated Management Controller CLI Command Reference, Release 1.5 - Commands [Cisco Integrated Management Controller] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/c/sw/cli/command/reference/1-5/b_Cisco_UCS_C-series_CLI_Command_Reference_151/b_Cisco_UCS_C-series_CLI_Command_Reference_151_chapter_010.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 225,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00045-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 366164839,
+    "recordOffset": 366046631,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{931548=The default is 2000 milliseconds., 595555=The server is approximately 1500 meters above sea level., 1144652=Port number 2068 is used for KVM communication., 1146175=This example specifies that port number 2068 is used for KVM communication:, 688317=The NIV channel number. Specify a number between 1 and 1000., 985780=The default msec value is 2000 milliseconds., 781083=In addition, some operating systems, such as Windows 2008, ignore this parameter in favor of their own power plan., 931030=Specifies the error detect timeout value (EDTOV), the number of milliseconds to wait before the system assumes that an error has occurred. The range is 1000 to 100000; the default is 2000 milliseconds.}",
+    "textBeforeTable": "Command History Firmware (/cimc/firmware) Command Modes None Command Default This command has no arguments or keywords. activate To activate CIMC firmware, use the activate command. activate (firmware) upload (certificate) update-all update-adapter-fw update (firmware) update (/bios) unmap undo-prepare-for-removal top terminate (user-session) start-learn-cycle start-initialization start show voltage (sensor) show vmfex show vmedia show virtual-drive-count show virtual-drive show version show v3users show user-session show user show trap-destination show trans-queue show temperature (sensor) show tech-support (cimc) show storageadapter show startup-firmware-images show ssh show sol show snmp show settings show server-management show server show scsi-io show running-firmware-images show rss show role-group show remote-syslog-severity show recv-queue show psu-redundancy (sensor) show psu (sensor)",
+    "textAfterTable": "Examples This example shows how to activate CIMC firmware: server# scope cimc server /cimc # scope firmware server /cimc/firmware # activate server /cimc/firmware # Related Commands Command Description show cimc \u00a0 show version \u00a0 activate-adapter-fw To activate an adapter firmware image, use the activate-adapter-fw command. activate-adapter-fw pci-slot image Syntax Description pci-slot The PCI slot number of the adapter card. image The number of the firmware image to be activated. This can be the number 1 or 2. Command Default None Command Modes Chassis (/chassis) Command History Release",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

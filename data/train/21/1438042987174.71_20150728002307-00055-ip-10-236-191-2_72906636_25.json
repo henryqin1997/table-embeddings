@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "first",
+            "second"
+        ],
+        [
+            "Description",
+            "First timestamp to be compared.",
+            "Second timestamp to be compared."
+        ]
+    ],
+    "pageTitle": "Timest amp Class",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B13789_01/appdev.101/b10778/reference031.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00055-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72915993,
+    "recordOffset": 72906636,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{1040=Timestamp time components, such as hour, minute, second and fractional section are in the time zone specified fo the Timestamp. This is new behavior for the 10g release; previous versions supported GMT values of time components. Time components were only converted to the time zone specified by Timestamp when they were stored in the database. For example, the following Timestamp() call constructs a Timestamp value 13-Nov 2003 17:24:30.0 in timezone +5:30., 366=The behavior of this call in previous releases would interpret the timestamp components as GMT, resulting in a timestamp value of 13-Nov 2003 11:54:30.0 in timezone +5:30. Users were forced to convert the timestamps to GMT before invoking the constructor.}",
+    "lastModified": "Mon, 22 Mar 2004 20:42:00 GMT",
+    "textBeforeTable": "const Timestamp &second); const Timestamp &first, bool operator<=(  Syntax  Compares the timestamps specified. If the first timestamp is less than or equal to the second timestamp then TRUE is returned; otherwise, FALSE is returned. If either timestamp is NULL then FALSE is returned. operator<=()    Second timestamp to be compared. second   First timestamp to be compared. first     Description Parameter     const Timestamp &second); const Timestamp &first, bool operator<(  Syntax  Returns TRUE if first is less than second, FALSE otherwise. If either a or b is NULL then FALSE is returned. operator<()          Second timestamp to be compared. second   First timestamp to",
+    "textAfterTable": "setDate() Sets the year, month, day components contained for this timestamp Syntax void setDate( int year, unsigned int month, unsigned int day); Parameter Description year Year component. Valid values are -4713 through 9999. month Month component. Valid values are 1 through 12. day Day component. Valid values are 1 through 31. setNull() Set the timestamp to NULL. Syntax void setNull(); setTime() Sets the day, hour, minute, second and fractional second components for this timestamp. Syntax void setTime( unsigned int hour, unsigned int minute,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Option",
+            "-autorefreshPaused",
+            "-C chkPtFreq",
+            "-convertCGTypes",
+            "-delayFkeys | -noDelayFkeys",
+            "-localhost hostName",
+            "-noCharsetConversion",
+            "-restorePublicPrivs"
+        ],
+        [
+            "Description",
+            "Restores cache groups with AUTOREFRESH attribute with autorefresh state paused. Otherwise the state is set to OFF.",
+            "Specifies that ttMigrate should checkpoint the database after restoring every chkPtFreq megabytes of data. A value of zero (the default) specifies that ttMigrate should never checkpoint the database.",
+            "Determines the best type mapping from the underlying Oracle database tables to TimesTen cached tables using: The types of the columns in the Oracle database tables. The types of the columns stored in the migration file. The TimesTen-to-Oracle type mapping rules. If this option is specified with either the-convertTypesToOra or the -convertTypesToTT option, this option takes precedence for cached tables. This option does not impact non-cached tables. For more information, see \"Mappings between Oracle Database and TimesTen data types\" in Oracle TimesTen Application-Tier Database Cache User's Guide.",
+            "-delayFkeys - Delay creation of foreign keys until all tables have been restored. This can improve performance for parallel migration (ttMigrate -numThreads). -noDelayFkeys - Create foreign keys as part of the CREATE TABLE operation. -noDelayFkeys is the default.",
+            "Explicitly identifies the name or IP address of the local host when restoring replicated tables.",
+            "Restores data, retaining the connection character set that is stored in the data file. ttMigrate does not convert the connection character set to match the database character set. If not set, ttMigrate restores the data and converts the connection character set to be the same as the database character set. See also: -saveAsCharset. This option may be useful for legacy TimesTen users who may have migrated pre-11.2.2 data into a 11.2.2 or later release of TimesTen as TIMESTEN8 or another character set such as WE8ISO8895P1, when the data is actually in another character set. If, at a later time you want to have that data interpreted according to its actual character set, use this option to migrate the data into a database that uses the data's actual character set with no character set conversion.",
+            "Restores privileges that were granted to PUBLIC after the database was created. By default, the ttMigrate utility does not restore privileges granted to PUBLIC. You must explicitly specify this option to restore privileges to PUBLIC."
+        ]
+    ],
+    "pageTitle": "Utilities",
+    "title": "",
+    "url": "https://docs.oracle.com/database/121/TTREF/util.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00285-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 858300015,
+    "recordOffset": 858186118,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{102363=Example: 03-Jan-2011 07:47:23, 70199=The default value is 1024., 48486=TimesTen truncates the data and issues a warning if you select -dateMode date in output mode and one or more date columns have a time component that is not 12:00:00 am., 363521=Numeric literals. Example: 1234.5, 175769=On Windows 2008, a user with Administrators privileges can execute all commands as Administrator. On other supported Windows platforms, any user that has Administrator privileges can execute all commands in this utility., 164495=For example, for a database consisting of files/home/payroll/2011.ds0, /home/payroll/2011.ds1, and several transaction log files /home/payroll/2011.logn,dspath is/home/payroll/2011., 99137=Example: 03-Jan-2011, 99814=Example: 03-01-2011, 601162=When you call the procedure, a report that describes the current state of the system is displayed to stdout. To get the status for the cachedb1_1122 DSN, use the following:, 103132=Example: 03-01-2011 07:47:23, 99476=Example: 01/03/2011, 363183=SQL_TIMESTAMP columns can be added using dynamic parameters. (For example, values like '1998-09-08 12:1212')., 667826=The following command displays all locks for transaction 2045.000005:, 102002=Example: 2011-01-03 07:47:23, 224379=For example, for a database consisting of files/home/payroll/2011.ds0, /home/payroll/2011.ds1, and several transaction log files /home/payroll/2011.logn,dspath is /home/payroll/2011., 103494=Example: Jan 03 2011 07:47:23, 101075=Example: 07:47:23, 155761=For example, for a database consisting of files/home/payroll/2011.ds0, /home/payroll/2011.ds1, and several transaction log files /home/payroll/2011.logn, dspath is /home/payroll/2011., 102748=Example: 01/03/2011 07:47:23, 83649=01101000 11001010 01001001 11101111, 676300=For example, for a database consisting of files/home/payroll/2011.ds0, /home/payroll/2011.ds1 and several transaction log files /home/payroll/2011.logn,dspath is /home/payroll/2011., 100153=Example: Jan 03 2011, 460118=To change the port number of the TimesTen instance to 12345, use:, 98776=Example: 2011-01-03}",
+    "lastModified": "Thu, 02 Jul 2015 09:42:52 GMT",
+    "textBeforeTable": "The following ttMigrate options are available in restore mode (-r) only: Prints the release number of ttMigrate and exits. -V | -version Specifies the verbosity level for messages printed when ttMigrate saves or restores a database. One of: 0 - Shows errors and warnings only. 1 - Prints the name of each table as it is saved or restored. 2 - Prints the name of each table or index as it is saved or restored. 3 (default) - Prints the name of each table or index as it is saved or restored and prints a dot (.) for each 10,000 rows saved or restored. ttMigrate ignores the -v option in List, Long-list, Describe and Long-describe modes. -v verbosity Specifies that ttMigrate should update statistics on restored tables and materialized views. ttMigrate ignores this option when the -c or -a options are given. If you specify both -estimateStats and -updateStats, statistics on restored tables are updated, not estimated. Use of this flag may improve the performance of materialized view restoration and may also improve the performance of queries on the restored tables and views. -updateStats Saves an object",
+    "textAfterTable": "Modes Create mode (-c) and Append mode (-a) In create mode, ttMigrate saves migrate objects from a TimesTen database into a new binary data file. If the data file does not exist, ttMigrate creates it. Otherwise, ttMigrate overwrites the existing file, destroying its contents. The data file format used by ttMigrate is independent of any release of TimesTen, so it is possible to use ttMigrate to migrate data from one TimesTen release to another. In Append mode, ttMigrate appends migrate objects from a TimesTen database to an existing data file. If the data file does not exist, ttMigrate creates it. For each ordinary (non-cached) table, ttMigrate saves: The table description: the name and type of each of the table's columns, including primary key and nullability information. The table's index definitions: the name of each index and the columns contained in the index. The actual contents of the index are not saved; ttMigrate only saves the information needed to rebuild the index when the table is restored. The table's foreign key definitions. You can disable the saving of foreign key definitions using the -nf option. The rows of the table. You can disable the saving of rows using the -nr option. For each cache group, ttMigrate saves the following:",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

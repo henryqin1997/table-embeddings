@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Action",
+            "Reboot / re-start",
+            "Shut down (halt) machine abruptly",
+            "Shut down (halt) machine gracefully",
+            "Elapsed time (and other statistics) since last reboot",
+            "List installed patches"
+        ],
+        [
+            "UNIX options & filespec",
+            "reboot",
+            "poweroff halt -p shutdown -h now init 6",
+            "shutdown -ry 10 -a to Use file /etc/shutdown.allow -c to cancel scheduled shutdown.",
+            "uptime",
+            "showrev -p patchadd -p"
+        ],
+        [
+            "DOS filespec & options",
+            "-",
+            "-",
+            "-",
+            "NET STATISTICS",
+            "-"
+        ]
+    ],
+    "pageTitle": "UNIX vs. DOS Operating Systems",
+    "title": "",
+    "url": "http://www.wilsonmar.com/1opsys.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988312.76/warc/CC-MAIN-20150728002308-00019-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 836111207,
+    "recordOffset": 836080443,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{117609=Portions \u00a9Copyright 1996-2014 Wilson Mar. All rights reserved. | Privacy Policy | Last updated, 98870=/rdb from Revolutionary Software is a commercial product ($249 for Linux/BSD $495 for Sun/AIX/HP/Windows) implemented as a suite of 131 UNIX shell level commands. It's described in UNIX relational database management: application development in the UNIX environment and the 1988 UNIX Relational Database Management, both by Rod Manis, Evan Schaffer, and Robert Jorgensen., 13977=Windows 2000 & Unix Integration Guide by Burnett, Steven Forrest.; Gunter, David.; Gunter, Lola. (Berkeley, Calif. McGraw-Hill Professional, 2000)}",
+    "lastModified": "Sun, 24 Aug 2014 01:51:34 GMT",
+    "textBeforeTable": "Command Interpreter Shells -- Their Prompts and History SlickRun is a free floating command line utility for Windows so that command aliases (known as MagicWords) provide instant access to any program or website. Poof! by Kilowatt Software provides 135 Windows command line tools. use it instead of Microsoft NT Power Toys which has been removed from Microsoft's website. Memconf by Tom Schmidt is a Perl5 script that displays the size of each SIMM/DIMM memory module installed in Sun/HP-UX systems. Listed in the SunManagers FAQ. Installing Windows clobbers the dual-boot disk created when Linux is installed. Linux can serve Windows clients via the Samba package. Windows 2000",
+    "textAfterTable": "Bourne Again Shell bash $ .profile & .bash_profile Created for use in the GNU project started by Richard Stallman of the Free Software Foundation (FSF) to replace all commercial UNIX utilities with freely distributable copyleft. Written by Brian Fox from Sunday, January 10, 1988 until 1993 when Chet Ramey became the official maintainer. C csh % .login .cshrc (for settings) Developed by William Joy (later Sun Microsystems' chief technology officer) and others at UC Berkeley during the early 1980s for C programming flexiblity. Provides the most shortcuts, but is slower than other shells. Korn ksh $ - Developed by David Korn in the early 1980s. It combines many of the best features of earlier command processors, so is considered a superset of the Bourne shell. POSIX sh $ - IEEE Std 1003.1 and IEEE Std 1003.2 supported by SunOS and Solaris Microsoft Shell msh > - Product code named \"MONAD\" in the 2004 Longhorn release of Windows provides manipulation of .NET objects and new WinFS type queries. Introduces user-declared System.Management.Automation namespace \"commandlets\" like unix pipes and \"-whatif\" directive for testing them. The C shell and Korn shell is preferred over the original Bourne shell which did not have",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

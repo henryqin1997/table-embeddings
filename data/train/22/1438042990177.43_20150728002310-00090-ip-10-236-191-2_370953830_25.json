@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5"
+        ],
+        [
+            "Command or Action",
+            "UCS-A# scope org org-name",
+            "UCS-A /org # scope service-profile profile-name",
+            "UCS-A /org/service-profile # scope vnic vnic-name",
+            "UCS-A /org/service-profile/vnic # set identity dynamic-mac derived",
+            "UCS-A /org/service-profile/vnic # commit-buffer"
+        ],
+        [
+            "Purpose",
+            "Enters the command mode for the organization that contains the service profile for which you want to reset the MAC address. If the system does not include multi-tenancy, type / as the org-name to enter the root organization.",
+            "Enters the command mode for the service profile that requires the MAC address of the associated server to be reset to a different MAC address.",
+            "Enters the command mode for the vNIC for which you want to reset the MAC address.",
+            "Specifies that the vNIC will obtain a MAC address dynamically from a pool.",
+            "Commits the transaction to the system configuration."
+        ]
+    ],
+    "pageTitle": "Cisco UCS Manager CLI Configuration Guide, Release 1.4 - Configuring Service Profiles [Cisco UCS Manager] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/cli/config/guide/1-4/b_UCSM_CLI_Configuration_Guide_1_4/b_UCSM_CLI_Configuration_Guide_1_4_chapter_011011.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00090-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 370980444,
+    "recordOffset": 370953830,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Procedure Creating a Service Profile Template Power capping is not supported for rack servers. If you include a power control policy in a service profile that is associated with a rack-mount server, the policy is not implemented. No Power Capping Support for Rack-Mount Servers You can configure up to 56 vNICs per supported adapter, such as the Cisco UCS P81E Virtual Interface Card (N2XX-ACPCI01), on any rack-mount server that is integrated with Cisco UCS Manager. Limit to the Number of vNICs that Can Be Configured on a Rack-Mount Server In addition to any guidelines or recommendations that are specific to policies and pools included in service profiles and service profile templates, such as the local disk configuration policy, you need to be aware of the following guidelines and recommendations that impact the ability to associate a service profile with a server: Guidelines and Recommendations for Service Profiles Service profiles created from an updating template inherit all the properties of the template and remain connected to the template. Any changes to the template automatically update the service profiles created from the template. Updating template Service profiles created from an initial template inherit all the properties of the template. However, after",
+    "textAfterTable": "Note\u00a0\u00a0\u00a0 If your description includes spaces, special characters, or punctuation, you must begin and end your description with quotation marks. The quotation marks will not appear in the description field of any show command output. \u00a0 Step\u00a06 UCS-A /org/service-profile # set dynamic-vnic-conn-policy policy-name \u00a0 Associates the specified dynamic vNIC connection policy with the service profile. \u00a0 Step\u00a07 UCS-A /org/service-profile # set ext-mgmt-ip-state {none | pooled} \u00a0 Specifies how the management IP address will be assigned to the service profile. You can set the management IP address policy using the following options: None-- The service profile is not assigned an IP address. Pooled-- The service profile is assigned an IP address from the management IP pool. Note\u00a0\u00a0\u00a0 Setting the management IP address to static for a service profile template will result in an error. \u00a0 Step\u00a08 UCS-A /org/service-profile # set host-fw-policy policy-name \u00a0 Associates the specified",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

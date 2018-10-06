@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "",
+            "2008-11-04T00:00:00"
+        ],
+        [
+            "Description",
+            "Each raw data source was converted into ESRI ArcGIS formats. The resulting files were converted and adjusted to predetermined projection (geographic), horizontal datum (NAD27), and vertical datum (MHW). A polyline shapefile was created to represent the coastline. The coastline is a culmination of USGS hydrographic vectors, NOS high-resolution coastline, USACE data, and local knowledge of the area. A TIN (Triangulated Irregular Network) was created using bathymetric data point and coastline points. An 0.88-second grid was created from the tin. The data were assessed for quality and anomalies were removed. The grid was compared to its raw dataset. The 0.88-second grid was clipped to requested coordinates. A 0.88-arcsecond grid was created using USGS DEMs and UAF DEMs. The data were assessed for quality by comparing with raw datasets and control data. The topographic and bathymetric grids were merged into a single grid. The final grid was analyzed for blunders, systematic errors, and logical consistency.",
+            "Metadata imported."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/DEM/iso/xml/524.xml&view=ISO19115Components-HTMLTable",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00008-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 617526474,
+    "recordOffset": 617510080,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.ngdc.mgg.dem:524Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/DEM View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "Title Type 1 Footprints ArcGIS Map Service Digital Elevation Model Footprints ArcGIS Map Service ArcGIS Map Service Top CI_Citation Count Component Title Date Citation Identifier 1 Digital Elevation Model Footprints ArcGIS Map Service 2011-02-15 1 GEODAS Vol 2, Ver 4.1 2002-01-01 1 High-resolution vector shoreline, survey control points 1 Hydrographic Surveys for Sitka 2001-01-01 1 Hypsographic and hydrographic vector data, DEMs 1 Mean High Water height 2012-08-05 1 MrSID Historical Charts 1",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

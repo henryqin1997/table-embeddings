@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Second-Order Filter Structure",
+            "Cascaded Form 1",
+            "Cascaded Form 2",
+            "Cascaded Transposed Form 1",
+            "Double Precision Cascaded Form 1",
+            "Parallel Form 1",
+            "Parallel Transposed Form 1"
+        ],
+        [
+            "S/N Ratio (dB) Results for 16th-order Equalizer",
+            "-75 dB",
+            "-63 dB",
+            "-70 dB",
+            "-100 dB",
+            "-85 dB",
+            "-79 dB"
+        ]
+    ],
+    "pageTitle": "Planet Analog - Articles - The Relationship of Dynamic Range to Data Word Size in Digital Audio Processing",
+    "title": "",
+    "url": "http://www.planetanalog.com/document.asp?doc_id=527307&piddl_msgorder=thrd",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00292-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 637305455,
+    "recordOffset": 637243722,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{33014=Floating-point arithmetic was traditionally used for applications that have very high dynamic range requirements, such as image processing, graphics, and military/space applications. The dynamic range offered for 32-bit IEEE floating-point arithmetic is 1530 dB. Typically in the past, trade-offs were considered with price vs. performance when deciding on the use of floating-point processors. Until recently, the higher cost made 32-bit floating point DSPs unreasonable for use in audio. Today, designers can achieve high-quality audio using either 32-bit fixed- or floating-point processing with the introduction of the lower-cost 32-bit processors, at a cost comparable to 16-bit and 24-bit DSPs., 31024=It is important to know that the IEEE standard always refers to the mantissa in signed-magnitude format, and not in twos-complement format. The extra hidden bit effectively improves the precision to 24 bits and also insures any number ranges from 1 (1.0000....00) to 2 (1.1111....11) since the hidden bit is always assumed to be a 1., 80778=Another March 1996 AES Journal publication by W. Chen came to the same conclusion. In order to maintain the 96-dB signal-to-noise ratio for 24-bit processing of second-order IIR filters, a double-precision filter structure was required to ensure that the digital equalizer output's noise floor was greater than 96 dB. Chen researched various second-order realizations to determine the best structure when performing 24-bit processing on 16-bit input. In one test case, he implemented a single high-pass second-order filter using direct-form-1 structures, finding these implementations to yield an SNR between 85 to 88 dB, which is lower than the 96 dB theoretical maximum of the ideal 16-bit ADC., 53755=Using the \"6-dB-Per-Bit-Rule,\" 32-bit IEEE floating point dynamic range is determined to be 1530 dB. For floating point this is calculated by the size of the exponent\"6 dB x 255 exponent levels = 1530 dB. (255 levels come from the fact that there is an 8-bit exponent). For floating-point audio processing, we can see there is much more dynamic range available than the 120 dB required for covering the full audio dynamic range capabilities of the human ear., 79918=In a 1993 AES Journal publication, R. Wilson demonstrated that even for recursive second-order IIR filter computations on a 24-bit DSP, the noise floor of the digital filter can still go above that of the 16-bit sample and hence become audible. To compensate for this the use of error feedback schemes (error spectrum shaping) or double-precision arithmetic were recommended, especially for extremely critical frequency response designs. The use of double-precision math can add processor computational overhead by more than a factor of five in the filter computations, while doubling memory storage requirements.}",
+    "textBeforeTable": "The Relationship of Dynamic Range to Data Word Size in Digital Audio One of the top considerations when designing an audio system is determining acceptable signal quality for the application. Table 1 shows some comparisons of signal quality for some audio applications, devices and equipment. Floating-point arithmetic was traditionally used for applications that have very high dynamic range requirements, such as image processing, graphics, and military/space applications. The dynamic range offered for 32-bit IEEE floating-point arithmetic is 1530 dB. Typically in the past, trade-offs were considered with price vs. performance when deciding on the use of floating-point processors. Until recently, the higher cost made 32-bit floating point DSPs unreasonable for use in audio. Today, designers can achieve high-quality audio using either 32-bit fixed- or floating-point processing with the introduction of the lower-cost 32-bit processors, at a cost comparable to 16-bit and 24-bit DSPs. For audio-processing, the dynamic range of floating point may be unnecessary for some algorithms, but the flexibility in programming in floating-point is desirable, especially for high-level",
+    "textAfterTable": "16-bit Audio Converters 90 to 95 dB Digital Broadcast TV 85 dB Mini-Disk Player 90 dB CD Player 92 to 96 dB 18-bit Audio Converters 104 dB Digital Audio Tape (DAT) 110 dB 20-bit Audio Converters 110 dB 24-bit Audio Converters 110 to 120 dB Analog Microphone 120 dB Table 1: Some dynamic range comparisons \"Recent advancements within the past decade in human hearing indicate the sensitivity of the human ear is such that the dynamic range between the quietest sound detectable and the maximum sound which can be experienced without pain is approximately 120dB. Further studies suggest there is critically important audio information at frequencies up to 40 kHz and possibly 80 kHz\" Audio equipment retailers and consumers often use the phrase 'CD-quality sound' when referring to high-dynamic-range audio. Compare sound quality of a CD player to that of an AM radio broadcast. For higher quality CD audio, noise is not audible, especially during quiet passages in music.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Status",
+            "new",
+            "new"
+        ],
+        [
+            "File",
+            "test-1-local-pass.png",
+            "test-1-testbot-fail.png"
+        ],
+        [
+            "Size",
+            "14.87 KB",
+            "24.75 KB"
+        ]
+    ],
+    "pageTitle": "Replace calls to drupal_container()->get('module_handler') service with Drupal::moduleHandler() [#1957154] | Drupal.org",
+    "title": "",
+    "url": "https://www.drupal.org/node/1957154",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00158-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 914111192,
+    "recordOffset": 914094798,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sun, 02 Aug 2015 22:26:46 GMT",
+    "textBeforeTable": "\u00bb Postponed Active Status: March 31, 2013 at 5:37am CreditAttribution: xjm commented xjm Comment #4 Log in or register to post comments There's a slightly more advanced task related to these issues. TestBase should do already does a \\Drupal::setContainer($this->container). So, instances of $this->container->get('servicename') could also be cleaned up in tests. Skipping them for now to stick with the program. March 31, 2013 at 5:13am CreditAttribution: xjm commented xjm Comment #3 Log in or register to post comments Beta-testing these issues. \u00bb xjm Unassigned Assigned:",
+    "textAfterTable": "View ] StatisticsSettingsForm takes an injected module handler and container, interestingly. Not sure about the changes in DUTB; I have a sneaking suspicion there might have been an \"intended\" behavior here of using drupal_container() to get the original container rather than the test environment's. Ditto ModuleApiTest, ModulesDisabledUpgradePathTest, and UpgradePathTestBase. We might need to update the instructions to skip tests on a first pass and do them separately. Log in or register to post comments Comment #5 Berdir CreditAttribution: Berdir commented April 5, 2013 at 12:12am Status: Postponed \u00bb Needs review Log in or register to post comments Comment #6 April 5, 2013 at 5:16am",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

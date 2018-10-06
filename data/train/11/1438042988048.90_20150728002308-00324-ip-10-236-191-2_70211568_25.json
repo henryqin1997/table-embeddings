@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Parameter Name",
+            "appAccountId",
+            "appInstGroupId",
+            "getAppInstGroupReturn",
+            "ACCESS_DENIED",
+            "CommonException"
+        ],
+        [
+            "Type",
+            "xsd:string",
+            "xsd:string",
+            "tns1:AppInstGroup",
+            "N/A",
+            "N/A"
+        ],
+        [
+            "Description",
+            "Input parameter. The ID of the Application Account.",
+            "Input parameter. The ID of the Application Instance.",
+            "return parameter. A data structure with details about the Application Instance. See \"AppInstGroup\".",
+            "Exception",
+            "Exception"
+        ]
+    ],
+    "pageTitle": "Service Provider Service",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E16625_01/doc.50/e16618/prm_spservice.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00324-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70227962,
+    "recordOffset": 70211568,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 30 Oct 2012 06:07:26 GMT",
+    "textBeforeTable": "Table 6-22 getAppInstGroup(appAccountId, appInstGroupId) Retrieves details about a specific Application Instance. getAppInstGroup Exception N/A CommonException Exception N/A ACCESS_DENIED Return parameter. A list of all Service Application Instance IDs matching the given criteria. Array of xsd:string listAppInstGroupsReturn Input parameter. Indicates which states to filter the result on. See \"State\" tns1:State state Input parameter. The ID of the Application Account. xsd:string appAccountId Description Type Parameter Name Table 6-21 listAppInstGroups(appAccountId, state) Lists all Application",
+    "textAfterTable": "getSpAccountSla Deprecated. Use \"getSpAccountSlaByType\". Note: The new mechanism (getSpAccountSlaByType) adds a parameter, slaType. Requests made using getSpAccountSla have this parameter hardcoded to a value of service_provider. Retrieves the Service Provider SLA of the currently logged in service provider. This operation takes no input parameters. Table 6-23 getSpAccountSla() Parameter Name Type Description getSpAccountSlaReturn xsd:string Return parameter. The Service Provider SLA. ACCESS_DENIED N/A Exception CommonException N/A Exception getSpAccountSlaByType Retrieves an SLA of a given type for the Service Provider Account. Table 6-24 getSpAccountSlaByType(slaType)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "151.80500",
+            "154.26500",
+            "154.26500",
+            "453.47500"
+        ],
+        [
+            "License",
+            "WPFC398",
+            "WQAX259",
+            "KNBL895",
+            "WNSG206"
+        ],
+        [
+            "Type",
+            "BM",
+            "BM",
+            "BM",
+            "BM"
+        ],
+        [
+            "Tone",
+            "",
+            "156.7 PL",
+            "",
+            ""
+        ],
+        [
+            "Alpha Tag",
+            "OldForge EMS",
+            "OldForgeFire",
+            "Old Forge FG",
+            "OldForge FG4"
+        ],
+        [
+            "Description",
+            "Old Forge EMS-1",
+            "Old Forge Fire Disp",
+            "Old Forge Fireground",
+            "Old Forge-4"
+        ],
+        [
+            "Mode",
+            "FM",
+            "FM",
+            "FM",
+            "FM"
+        ],
+        [
+            "Tag",
+            "EMS-Tac",
+            "Fire Dispatch",
+            "Law Tac",
+            "Law Tac"
+        ]
+    ],
+    "pageTitle": "Lackawanna County, Pennsylvania (PA) Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?ctid=2275&ts=2",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00230-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 673168134,
+    "recordOffset": 673151740,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "County Law Enforcement Frequencies Lackawanna County //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { }); }); } act=1; setEsc(this,origHtml); this.innerHTML = getTagsHTML; getTagsHTML += '\\n'; } getTagsHTML += '' + tagNames[i] + '\\n';",
+    "textAfterTable": "158.85000\u00a0 WPCG649\u00a0 RM 156.7 PL LackCoDANrc1 Co DA - Narcotics (encryption used)\u00a0 FM\u00a0 Law Tac\u00a0 460.22500\u00a0 KXX477\u00a0 RM LackCoDANrc2 Co DA - Narcotics (encryption used)\u00a0 FM\u00a0 Law Tac\u00a0 151.49000\u00a0 WPLT277\u00a0 BM 073 DPL LackSheriff1 Co Sheriff\u00a0 FM\u00a0 Law Dispatch\u00a0 155.49000\u00a0 WPLP967\u00a0 RM LackSheriff2 Co Sheriff (future)\u00a0 FM\u00a0 Law Dispatch\u00a0 453.25000\u00a0 WNUH812\u00a0 RM 173.8 PL LackPRCTrans Co Prison Transport(PRC)\u00a0 FM\u00a0 Corrections\u00a0 151.02500\u00a0 WPLT277\u00a0 R 125 DPL LackSheriff3 Lackawanna County Sheriff\u00a0 FM\u00a0 Law Dispatch\u00a0 County Fire and",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

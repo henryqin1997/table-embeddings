@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Option",
+            "-n",
+            "-i"
+        ],
+        [
+            "Description",
+            "Node name",
+            "ASM instance name."
+        ]
+    ],
+    "pageTitle": "B Server Control (SRVCTL) Reference",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B12037_01/rac.101/b10765/srvctladmin.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988051.33/warc/CC-MAIN-20150728002308-00156-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73982568,
+    "recordOffset": 73955306,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 02 Feb 2004 02:55:00 GMT",
+    "textBeforeTable": "Table B-17 srvctl enable asm Option srvctl enable asm -n <node_name [-i <asn_inst_name>] Use the srvctl enable asm command with the following syntax: Syntax and Options   Enables an ASM instance. srvctl enable asm    srvctl enable service -d crm -s crm -i crm1 The following example enables a service to use a preferred instance: srvctl enable service -d crm -s crm The following example globally enables a service: Examples    Instance name. -i <inst_name> Single service name. -s <service_name> Comma-separated list of service names. -s <service_name_list> Unique name for the database. -d <db_unique_name> Description Option Table B-16 srvctl enable service",
+    "textAfterTable": "Example An example of this command is: srvctl enable asm -n crmnode1 -i asm1 srvctl disable Disables a specified object (cluster database, database instance, ASM instance, or service). SRVCTL disable is intended to be used when an object is to be repaired or is down for maintenance to prevent inappropriate automatic restarts. When you issue the disable command, the object is disabled and unavailable to run under CRS for automatic startup, failover, or restart. If you specify -i <instance_name, then SRVCTL only disables the service from running on the specified instance. Table B-18 srvctl disable Summary Command Description srvctl disable database Disables the cluster database srvctl disable instance Disables an instance srvctl disable service Disables a service srvctl disable asm Disables an ASM instance",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

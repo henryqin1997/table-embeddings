@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "option name",
+            "\"LocalExtrapolation\"",
+            "Method",
+            "\"StepSizeRatioBounds\"",
+            "\"StepSizeSafetyFactors\"",
+            "\"StiffnessTest\""
+        ],
+        [
+            "default value",
+            "True",
+            "None",
+            "{,4}",
+            "Automatic",
+            "Automatic"
+        ],
+        [
+            "",
+            "specify whether to advance the solution using local extrapolation according to (4)",
+            "specify the method to use as the base integration scheme",
+            "specify the bounds on a relative change in the new step size from the current step size as low \u2264 \u2264 high",
+            "specify the safety factors to incorporate into the error estimate (5) used for adaptive step sizes",
+            "specify whether to use the stiffness detection capability"
+        ]
+    ],
+    "pageTitle": "DoubleStep Method for NDSolve\u2014Wolfram Language Documentation",
+    "title": "",
+    "url": "http://reference.wolfram.com/language/tutorial/NDSolveDoubleStep.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00148-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 210798775,
+    "recordOffset": 210781428,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Option Summary In general the method is more appropriate for constructing high-order integration schemes from low-order methods. Out[20]= In[20]:= A second application of is used to obtain a method of order six, which uses adaptive step sizes. The inner specification of constructs a method of order five. The following example extrapolates the classical Runge\u2013Kutta method of order four using two applications of (3). Higher Order are used to raise the order and provide an adaptive step-size estimate. Nested applications of In[19]:= property is specified. This shows how to define the property. assumes by default that a method is not appropriate for stiff problems (and",
+    "textAfterTable": "Options of the method . The default setting of Automatic for the option indicates that the stiffness test is activated if a nonstiff base method is used. The default setting of Automatic for the option uses the values for a stiff base method and for a nonstiff base method. Give Feedback Thank you for your feedback! Documentation Feedback Please complete this field. Name (optional) Email address (optional) Send Feedback",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

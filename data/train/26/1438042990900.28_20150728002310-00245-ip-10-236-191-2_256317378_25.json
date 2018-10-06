@@ -1,0 +1,99 @@
+{
+    "relation": [
+        [
+            "Model",
+            "Home Hub 2",
+            "Home Hub 2",
+            "Home Hub 3"
+        ],
+        [
+            "Version",
+            "Type A",
+            "Type B",
+            "Type A"
+        ],
+        [
+            "Status",
+            "r44985",
+            "14.07",
+            "r43879"
+        ],
+        [
+            "Target(s)",
+            "brcm63xx",
+            "lantiq",
+            "lantiq"
+        ],
+        [
+            "Platform",
+            "Broadcom BCM6358",
+            "Lantiq Danube",
+            "Lantiq XWAY ARX168"
+        ],
+        [
+            "CPU Speed (MHz)",
+            "300",
+            "333",
+            "333"
+        ],
+        [
+            "Flash (MB)",
+            "16",
+            "0.5+32NAND",
+            "32"
+        ],
+        [
+            "RAM (MB)",
+            "64",
+            "64",
+            "64"
+        ],
+        [
+            "Wireless NIC",
+            "Broadcom BCM4322 (mini-PCI or onboard)",
+            "Atheros AR9160 (onboard)",
+            "Atheros AR9227 (onboard)"
+        ],
+        [
+            "Wireless Standard",
+            "b/g/n",
+            "b/g/n",
+            "b/g/n"
+        ],
+        [
+            "Wired Ports",
+            "4",
+            "4",
+            "5x 100M + DSL"
+        ],
+        [
+            "VLAN Config",
+            "Yes",
+            "?",
+            "?"
+        ],
+        [
+            "USB",
+            "1x 2.0",
+            "1x 2.0",
+            "1x 2.0"
+        ]
+    ],
+    "pageTitle": "Table of Hardware [OpenWrt Wiki]",
+    "title": "",
+    "url": "http://wiki.openwrt.org/toh/start",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990900.28/warc/CC-MAIN-20150728002310-00245-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 256360043,
+    "recordOffset": 256317378,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{580146=Note that with the release of 'Attitude Adjustment (12.09 final)' on 25th April 2013, lower end devices with only 16 MiB RAM will easily run out of memory. Recommended image for bcm47xx based devices is Backfire with brcm-2.4.}",
+    "textBeforeTable": "Evaluation boards / unbranded boards Supported Hardware - Router type Adding devices to the Table of Hardware Help maintain this page: If you would like to add to or update this page, please read the guide at Installing OpenWrt on your Router. Installing OpenWrt on your Router: Here's the guide to Devices listed in this table have full or reasonably complete support and can be considered ready for use. For an explanation of the column headings, read the Legend below. This is a draft replacement for the top of the TOH page. Please comment in the Improve the TOH Wiki forum thread. The original text from the head of this page has been moved to the bottom of this page. Thanks. -richbhanover Table of Hardware Dataclouds Datalists ToH mkII Legend Adding devices Table of Hardware - Legacy Text Medion Buffalo",
+    "textAfterTable": "2x 2.0 No Marvell RD-A370-A1 - 15.05-rc1, R35058 mvebu Marvell Armada 370 1200 1024 512 2x mini-PCIe ? 5x Gbit Yes 2x 2.0 Yes Marvell RD-MV784MP-GP - 15.05-rc1, R35058 mvebu Marvell Armada XP MV78460 4x1600 1024 3x1024 3x PCIe ? 4x Gbit Yes 2x 2.0 Yes Marvell DB-A380-DDR3-AP - R44267 mvebu Marvell Armada 38x 2x1600 1024 2048 3x mini-PCIe ? 3x Gbit ? 1x 2.0, 1x 3.0 Yes Freescale P1020EWLAN -",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 4,
+    "headerRowIndex": 0
+}

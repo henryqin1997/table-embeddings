@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Element",
+            "enabled",
+            "host",
+            "session-replication"
+        ],
+        [
+            "Occurrences",
+            "0 or 1",
+            "1",
+            "0 or 1"
+        ],
+        [
+            "Description",
+            "Determines whether the instance is enabled at runtime. The default value is true.",
+            "The network address of the instance. The value is the host name or the IP address.",
+            "Configures the Servlet session replication for the instance. For more details, see session-replication."
+        ]
+    ],
+    "pageTitle": "List of Elements (Oracle iPlanet Web Server 7.0.9 Administrator's Configuration File Reference)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19146-01/821-1827/6nmpl1gop/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988312.76/warc/CC-MAIN-20150728002308-00191-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70969203,
+    "recordOffset": 70939410,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{15050=The maximum number of groups per user for which the server will cache the membership information. The value can be from 1 to 1024.\u00a0, 178033=Specifies the port on which the server will listen. The default port number is 1099., 60694=The maximum number of DNS lookup results to cache. The value can be from 32 to 32768.\u00a0, 219002=The name of the month. The value can be Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, or Dec., 47137=The maximum number of response elements a REPORT response body can have. The value can be from 0 to 2147483647. The default value is 1000.}",
+    "lastModified": "Wed, 26 Jan 2011 11:10:32 GMT",
+    "textBeforeTable": "access-log Subelements Table\u00a03\u20131 List of The access-log element can contain the following subelements: Subelements The access-log element configures an HTTP access log. This element may appear zero or more times within the server element and zero or more times within the virtual-server element. For more information, see server, and virtual-server. access-log web-app virtual-server variable token time thread-pool stats ssl-session-cache ssl soap-auth-provider snmp single-sign-on session-replication servlet-container server search-collection search-app response-policy request-policy qos-limits qos property-db property profiler pkcs11 bypass pkcs11 mime-file mail-resource log lock-db localization",
+    "textAfterTable": "format 0 or 1\u00a0 The format of the access log entries. The default format is the CLF (common log file) format. For more information on the access log format, see Appendix\u00a0C, Using the Custom Log File Format. See Also access-log-buffer audit-accesses event log access-log-buffer The access-log-buffer element configures the access log buffering subsystem. This element may appear zero or one time within the server element. For more information, see server. Subelements The access-log-buffer element can contain the following subelements: Table\u00a03\u20132 List of access-log-buffer Subelements Element\u00a0 Occurrences\u00a0 Description\u00a0 direct-io 0 or 1\u00a0 Indicates whether the file system should cache access log writes. The default value, false, indicates that the file system should cache access log writes. Setting the value to true indicates that the file system should not cache access log writes. The setting is purely advisory; either the server or the operating system may choose to ignore it.\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

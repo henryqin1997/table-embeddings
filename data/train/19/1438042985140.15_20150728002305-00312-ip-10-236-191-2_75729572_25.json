@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Modifier and Type",
+            "class",
+            "class"
+        ],
+        [
+            "Class and Description",
+            "MLet Allows you to instantiate and register one or several MBeans in the MBean server coming from a remote URL.",
+            "PrivateMLet An MLet that is not added to the ClassLoaderRepository."
+        ]
+    ],
+    "pageTitle": "Uses of Class java.lang.ClassLoader (Java Platform SE 7 )",
+    "title": "Subclasses of ClassLoader in javax.management.loading",
+    "url": "http://docs.oracle.com/javase/7/docs/api/java/lang/class-use/ClassLoader.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985140.15/warc/CC-MAIN-20150728002305-00312-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 75741699,
+    "recordOffset": 75729572,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{115747=Submit a bug or feature For further API reference and developer documentation, see Java SE Documentation. That documentation contains more detailed, developer-targeted descriptions, with conceptual overviews, definitions of terms, workarounds, and working code examples. Copyright \u00a9 1993, 2014, Oracle and/or its affiliates. All rights reserved.}",
+    "lastModified": "Sat, 04 Oct 2014 01:06:01 GMT",
+    "textBeforeTable": "Uses of ClassLoader in java.net Returns an instance of a proxy class for the specified interfaces that dispatches method invocations to the specified invocation handler. Proxy.newProxyInstance(ClassLoader\u00a0loader, Class<?>[]\u00a0interfaces, InvocationHandler\u00a0h) static Object java.lang.Class object for a proxy class given a class loader and an array of interfaces. Returns the Proxy.getProxyClass(ClassLoader\u00a0loader, Class<?>...\u00a0interfaces) static Class<?> Method and Description Modifier and Type \u00a0 Methods in java.lang.reflect with parameters of type ClassLoader Uses of ClassLoader in java.lang.reflect Finds or creates an instance of a method type, given the spelling of its bytecode descriptor. MethodType.fromMethodDescriptorString(String\u00a0descriptor, ClassLoader\u00a0loader) static MethodType Method and Description Modifier and Type \u00a0 Methods in java.lang.invoke with parameters of type",
+    "textAfterTable": "Modifier and Type Method and Description static URLClassLoader URLClassLoader.newInstance(URL[]\u00a0urls, ClassLoader\u00a0parent) Creates a new instance of URLClassLoader for the specified URLs and parent class loader. Constructors in java.net with parameters of type ClassLoader \u00a0 Constructor and Description URLClassLoader(URL[]\u00a0urls, ClassLoader\u00a0parent) Constructs a new URLClassLoader for the given URLs. URLClassLoader(URL[]\u00a0urls, ClassLoader\u00a0parent, URLStreamHandlerFactory\u00a0factory) Constructs a new URLClassLoader for the specified URLs, parent class loader, and URLStreamHandlerFactory. Uses of ClassLoader in java.nio.file Methods in java.nio.file with parameters of type ClassLoader \u00a0 Modifier and Type Method and Description static FileSystem FileSystems.newFileSystem(Path\u00a0path, ClassLoader\u00a0loader) Constructs a new FileSystem to access",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

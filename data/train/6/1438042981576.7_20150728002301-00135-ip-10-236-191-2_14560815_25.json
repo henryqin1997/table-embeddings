@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "--direct",
+            "--export-dir",
+            "-m,--num-mappers",
+            "--table",
+            "--update-key",
+            "--update-mode",
+            "",
+            "--input-null-string",
+            "--input-null-non-string",
+            "--staging-table",
+            "--clear-staging-table",
+            "--batch"
+        ],
+        [
+            "Description",
+            "Use direct export fast path",
+            "HDFS source path for the export",
+            "Use n map tasks to export in parallel",
+            "Table to populate",
+            "Anchor column to use for updates. Use a comma separated list of columns if there are more than one column.",
+            "Specify how updates are performed when new rows are found with non-matching keys in database.",
+            "Legal values for mode include updateonly (default) and allowinsert.",
+            "The string to be interpreted as null for string columns",
+            "The string to be interpreted as null for non-string columns",
+            "The table in which data will be staged before being inserted into the destination table.",
+            "Indicates that any data present in the staging table can be deleted.",
+            "Use batch mode for underlying statement execution."
+        ]
+    ],
+    "pageTitle": "Sqoop User Guide (v1.3.0-cdh3u6)",
+    "title": "",
+    "url": "http://archive.cloudera.com/cdh/3/sqoop/SqoopUserGuide.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00135-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 14604251,
+    "recordOffset": 14560815,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{74260=By default, data is not compressed. You can compress your data by using the deflate (gzip) algorithm with the -z or --compress argument, or specify any Hadoop compression codec using the --compression-codec argument. This applies to SequenceFile, text, and Avro files., 97429=You can import compressed tables into Hive using the --compress and --compression-codec options. One downside to compressing tables imported into Hive is that many codecs cannot be split for processing by parallel map tasks. The lzop codec, however, does support splitting. When importing tables with this codec, Sqoop will automatically index the files for splitting and configuring a new Hive table with the correct InputFormat. This feature currently requires that all partitions of a table be compressed with the lzop codec., 60461=When performing parallel imports, Sqoop needs a criterion by which it can split the workload. Sqoop uses a splitting column to split the workload. By default, Sqoop will identify the primary key column (if present) in a table and use it as the splitting column. The low and high values for the splitting column are retrieved from the database, and the map tasks operate on evenly-sized components of the total range. For example, if you had a table with a primary key column of id whose minimum value was 0 and maximum value was 1000, and Sqoop was directed to use 4 tasks, Sqoop would run four processes which each execute SQL statements of the form SELECT * FROM sometable WHERE id >= lo AND id < hi, with (lo, hi) set to (0, 250), (250, 500), (500, 750), and (750, 1001) in the different tasks.}",
+    "lastModified": "Wed, 03 Apr 2013 17:49:36 GMT",
+    "textBeforeTable": "Table\u00a017.\u00a0Export control arguments: Optional properties file that provides connection parameters --connection-param-file <filename> Print more information while working --verbose Set authentication username --username <username> Set authentication password --password <password> Read password from console -P Print usage instructions --help Override $HADOOP_HOME --hadoop-home <dir> Manually specify JDBC driver class to use --driver <class-name> Specify connection",
+    "textAfterTable": "The --table and --export-dir arguments are required. These specify the table to populate in the database, and the directory in HDFS that contains the source data. You can control the number of mappers independently from the number of files present in the directory. Export performance depends on the degree of parallelism. By default, Sqoop will use four tasks in parallel for the export process. This may not be optimal; you will need to experiment with your own particular setup. Additional tasks may offer better concurrency, but if the database is already bottlenecked on updating indices, invoking triggers, and so on, then additional load may decrease performance. The --num-mappers or -m arguments control the number of map tasks, which is the degree of parallelism used. MySQL provides a direct mode for exports as well, using the mysqlimport tool. When exporting to MySQL, use the --direct argument to specify this codepath. This may be higher-performance than the standard JDBC codepath. Note When using export in direct mode with MySQL, the MySQL bulk utility mysqlimport must be available in the shell path of the task process. The --input-null-string and --input-null-non-string arguments are optional. If --input-null-string is not specified, then the string \"null\" will be interpreted as null for",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

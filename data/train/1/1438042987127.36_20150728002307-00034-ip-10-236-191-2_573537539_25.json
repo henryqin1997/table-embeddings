@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "n",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        [
+            "L(n)",
+            "3",
+            "4",
+            "7",
+            "11"
+        ],
+        [
+            "F(n+1)",
+            "2",
+            "3",
+            "5",
+            "8"
+        ],
+        [
+            "L(n)F(n+1)",
+            "6",
+            "12",
+            "35",
+            "88"
+        ],
+        [
+            "nearest Fib",
+            "5=F(5)",
+            "13=F(7)",
+            "34=F(9)",
+            "89=F(11)"
+        ]
+    ],
+    "pageTitle": "The Lucas Numbers",
+    "title": "",
+    "url": "http://www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/lucasNbs.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987127.36/warc/CC-MAIN-20150728002307-00034-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 573553933,
+    "recordOffset": 573537539,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{32860=With thanks to R S (Chuck) Tiberio of Wellesley, MA, USA for pointing out to me the basic relationships that this trick depends upon. He was one of the solvers of the original problem which you can find in: Problem 402 in The College Mathematics Journal, vol. 21, No. 4, September 1990, page 339.}",
+    "lastModified": "Thu, 14 Aug 2014 15:07:07 GMT",
+    "textBeforeTable": "In the table above, multiply a Lucas number L(n) by the Fibonacci number in the next column F(n+1). Can we write this in terms of another Fibonacci number? ... 123 76 47 29 18 11 7 4 3 1 2 Ln: ... 55 34 21 13 8 5 3 2 1 1 0 Fn: ... 10 9 8 7 6 5 4 3 2 1 0 n: Can = L(n+1) by the First Formula for Lucas Numbers above = F(n) + F(n+2) by the Fibonacci Rule = F(n) + ( F(n) + F(n+1) ) 2 F(n) + F(n+1)",
+    "textAfterTable": "This suggests L(n) F(n+1) = F(2n+1) \u20131 Try the previous investigation but with F(n) and L(n+1) If we sum the first k Fibonacci numbers, the answer is almost another Fibonacci number. First that a good guess at the exact formula by continuing the calculating the pattern for a few more terms: F 1 = ? F 1 + F 2 = ? F 1 + F 2 + F 3 = ? ... What is the formula? The sum of the first n Fibonacci numbers is F(n+2) \u2013 1 Now try the same pattern as in the previous question, but using Lucas numbers to sum instead of Fibonaccis. Start from L(0)=2. What is the formula this time? The sum of the first n Lucas numbers L(n+2) \u2013 1 It is perhaps surprising that almost always when when we try to find a formula derived from Fibonacci numbers we find the Lucas numbers are there too! There are many more formulae involving Fibonacci and Lucas numbers and Phi and phi on my Fibonacci and Phi Formulae page. 2, 1, 3, 4, 7, 11, 18, 29, 47, 76, 123, 199, 322, 521, 843 ..More..",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

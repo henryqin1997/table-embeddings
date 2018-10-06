@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Name",
+            "TABLE_NAME",
+            "COLUMN_NAME",
+            "COMMENTS"
+        ],
+        [
+            "Null?",
+            "-",
+            "-",
+            "-"
+        ],
+        [
+            "Type",
+            "VARCHAR2(256)",
+            "VARCHAR2(256)",
+            "VARCHAR2(1)"
+        ],
+        [
+            "Value",
+            "-",
+            "-",
+            "NULL"
+        ]
+    ],
+    "pageTitle": "Data Dictionary",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B28359_01/gateways.111/b31049/apc.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00300-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73780071,
+    "recordOffset": 73759542,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 09 Jul 2015 23:26:46 GMT",
+    "textBeforeTable": "Table C-25 USER_COL_COMMENTS \"TABLE\" or \"VIEW\" VARCHAR2(5) - TABLE_TYPE - VARCHAR2(256) - TABLE_NAME Value Type Null? Name Table C-24 USER_CATALOG - DATE NOT NULL CREATED \"Y\" VARCHAR2(1) - INDEX_PRIV \"Y\" VARCHAR2(1) - ALTER_PRIV \"A\" VARCHAR2(1) - REFERENCES_PRIV \"A\" VARCHAR2(1) - UPDATE_PRIV",
+    "textAfterTable": "Table C-26 USER_CONS_COLUMNS Name Null? Type Value OWNER NOT NULL VARCHAR2(30) - CONSTRAINT_NAME NOT NULL VARCHAR2(30) - TABLE_NAME NOT NULL VARCHAR2(30) - COLUMN_NAME - VARCHAR2(8192) - POSITION - FLOAT(53) - Table C-27 USER_CONSTRAINTS Name Null? Type Value OWNER - VARCHAR2(256) - CONSTRAINT_NAME",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

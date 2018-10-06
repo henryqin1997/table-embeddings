@@ -1,0 +1,142 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2014-15",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "MNE",
+            ""
+        ],
+        [
+            "GP",
+            "1",
+            "1"
+        ],
+        [
+            "GS",
+            "1",
+            "1"
+        ],
+        [
+            "Min",
+            "28.9",
+            "28.9"
+        ],
+        [
+            "FGM",
+            "1",
+            "1"
+        ],
+        [
+            "FGA",
+            "12",
+            "12"
+        ],
+        [
+            "FG%",
+            ".083",
+            ".083"
+        ],
+        [
+            "3FGM",
+            "0",
+            "0"
+        ],
+        [
+            "3FGA",
+            "8",
+            "8"
+        ],
+        [
+            "3P%",
+            ".000",
+            ".000"
+        ],
+        [
+            "FTM",
+            "4",
+            "4"
+        ],
+        [
+            "FTA",
+            "6",
+            "6"
+        ],
+        [
+            "FT%",
+            ".667",
+            ".667"
+        ],
+        [
+            "FIC",
+            "6",
+            "6"
+        ],
+        [
+            "OFF",
+            "0",
+            "0"
+        ],
+        [
+            "DEF",
+            "5",
+            "5"
+        ],
+        [
+            "Reb",
+            "5",
+            "5"
+        ],
+        [
+            "Ast",
+            "7",
+            "7"
+        ],
+        [
+            "Stl",
+            "4",
+            "4"
+        ],
+        [
+            "Blk",
+            "1",
+            "1"
+        ],
+        [
+            "PF",
+            "2",
+            "2"
+        ],
+        [
+            "TO",
+            "4",
+            "4"
+        ],
+        [
+            "Pts",
+            "6",
+            "6"
+        ]
+    ],
+    "pageTitle": "Marcus Smart Player Profile, Boston Celtics, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, Events Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Marcus-Smart/Summary/24275",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00206-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 24113391,
+    "recordOffset": 24083693,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{8619=Draft Entry: 2014 NBA Draft, 9790=Born: Mar 6, 1994 (21 years old), 8519=Early Entry Info: 2014 Early Entrant, 8971=Free Agent: TO-2016; TO-2017; RFA-2018}",
+    "TableContextTimeStampAfterTable": "{12419=* Since the 1946-1947 season, 104638=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 1 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ National ] [ High School ] [ Recent News ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2014-15 BOS 67 38 1808.2 175 477 .367 91 272 .335 82 127 .646 446 61 161 222 208 99 18 176 90 523 CAREER \u00a0 67 38 1808.2 175 477 .367 91 272 .335 82 127 .646 446 61 161 222 208 99 18 176 90 523 NBA Regular Season Stats - Misc Stats Season Team GP GS Dbl Dbl Tpl Dbl 40 Pts 20 Reb 20 Ast Techs HOB Ast/TO Stl/TO FT/FGA W's L's Win % OWS DWS WS 2014-15 BOS 67 38 0 0 0 0 0 1 .148 2.31 1.10 0.27 35 32 0.522 0.73 2.30 3.02 CAREER \u00a0 67 38 0 0 0 0 0 1 .148 2.31 1.10",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

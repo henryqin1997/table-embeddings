@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Sample Layout Template Name",
+            "SupplierContract",
+            "CustomerContract"
+        ],
+        [
+            "Description",
+            "Layout of contract information for buy-intent contracts.",
+            "Layout of contract information for sell-intent contracts, including partner agreements."
+        ],
+        [
+            "Location in BI Publisher Catalog Directory",
+            "Enterprise Contracts/Contract Printing/Contract Preview",
+            "Enterprise Contracts/Contract Printing/Contract Preview"
+        ]
+    ],
+    "pageTitle": "Oracle Fusion Procurement, Supplier Contracts and Agreements Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E37017_01/doc.1115/e22850/F444209AN21A3A.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00199-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70342131,
+    "recordOffset": 70326533,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 07 Dec 2012 12:55:28 GMT",
+    "textBeforeTable": "The contract layout template This layout template provides the layout for printing the contract except for the contract terms. There are two sample layout templates available for you to copy and edit. Both sample layout templates are stored in the same directory. The application uses two layout templates for printing enterprise contracts, including partner agreements: Printing Enterprise Contracts The catalog includes additional layout templates which are used internally by the application. You can edit only the layout templates listed below. Restriction You can download the sample templates, copy them, and edit the copies. When you upload your edited copy to the same directory, it becomes immediately available for use within the application. The sample layout templates are available in different subfolders within the Enterprise Contracts folder in the catalog. You can navigate to the folders in the catalog either from the Reports and Analytics pane or by selecting the Reports and Analytics link in the Navigator. Contact your system administrator to grant you the appropriate BI duty roles if these are not available. Previewing and importing clauses into the Contract Terms Library Previewing contract terms templates Printing the report of contract deviations that can be attached to contract approval notifications Printing purchasing and sourcing documents Printing enterprise contracts, including partner agreements You can copy and edit layout templates used for: Previewing and printing clauses, reports, contracts, and contract terms uses a number of Oracle Business Intelligence (BI) Publisher layout templates",
+    "textAfterTable": "The contract terms layout template This template provides the layout of the structured terms for printing and for downloading the contract terms for editing offline in Microsoft Word. File Name Description Location in BI Publisher Catalog Directory ContractTermsECM Layout for printing the contract terms in enterprise contracts when the contract terms are authored in the application. Enterprise Contracts/Contract Terms Printing/Contract Terms Download and Preview You specify which templates you want to use during contract type setup. This means that you can create different layout templates for each contract type. To set up contract types, select Manage Contract Types action from the Setup and Maintenance work area or Contract Types under the Setup task heading in the Contracts work area. The following figure outlines how the application uses the layout templates when you print an enterprise contract: The application uses the contract layout template, specified in the Contract Layout field of the contract type, to create a PDF of the contract. If the contract does not include any contract terms, this is the only layout template used. If the contract includes structured terms, then the application uses the contract terms layout template specified in the Terms Layout Template field to create the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

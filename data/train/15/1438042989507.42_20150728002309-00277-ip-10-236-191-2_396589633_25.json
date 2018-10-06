@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "group",
+            "dialout",
+            "dip",
+            "cdrom",
+            "audio",
+            "video",
+            "scanner",
+            "adm",
+            "staff"
+        ],
+        [
+            "description for accessible files and devices",
+            "full and direct access to serial ports (\"/dev/ttyS[0-3]\")",
+            "limited access to serial ports for Dialup IP connection to trusted peers",
+            "CD-ROM, DVD+/-RW drives",
+            "audio device",
+            "video device",
+            "scanner(s)",
+            "system monitoring logs",
+            "some directories for junior administrative work: \"/usr/local\", \"/home\""
+        ]
+    ],
+    "pageTitle": "Chapter\u00a01.\u00a0GNU/Linux tutorials",
+    "title": "",
+    "url": "http://www.debian.org/doc/manuals/debian-reference/ch01.en.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989507.42/warc/CC-MAIN-20150728002309-00277-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 396636171,
+    "recordOffset": 396589633,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{235983=Let's consider a text file called \"DPL\" in which some pre-2004 Debian project leader's names and their initiation date are listed in a space-separated format., 122669=Press Enter on a file, and the appropriate program handles the content of the file (see Section\u00a09.3.11, \u201cCustomizing program to be started\u201d). This is a very convenient MC feature., 148091=Many programs use the environment variables \"$EDITOR\" or \"$VISUAL\" to decide which editor to use (see Section\u00a01.3.5, \u201cThe internal editor in MC\u201d and Section\u00a09.3.11, \u201cCustomizing program to be started\u201d). For the consistency on the Debian system, set these to \"/usr/bin/editor\". (Historically, \"$EDITOR\" was \"ed\" and \"$VISUAL\" was \"vi\".), 193455=Here the command-line argument \"-R\" changes date(1) behavior to output RFC2822 compliant date string.}",
+    "lastModified": "Wed, 03 Dec 2014 15:28:27 GMT",
+    "textBeforeTable": "Table\u00a01.7.\u00a0List of notable system-provided groups for file access Some notable system-provided groups allow their members to access particular files and devices without root privilege. The hardware devices are just another kind of file on the Debian system. If you have problems accessing devices such as CD-ROM and USB memory stick from a user account, you should make that user a member of the relevant group. Alternatively, you may dynamically add users to groups during the authentication process by adding \"auth optional pam_group.so\" line to \"/etc/pam.d/common-auth\" and setting \"/etc/security/group.conf\". (See Chapter\u00a04, Authentication.) Note In order to make group permissions to be applied to a particular user, that user needs to be made a member of the group using \"sudo vigr\" for /etc/group and \"sudo vigr -s\" for /etc/gshadow. You need to login after logout (or run \"exec newgrp\") to enable the new group configuration. 1.2.5.\u00a0Permissions for groups of users (group) Enable UPG by putting \"umask 002\" in the ~/.bashrc file. Tip",
+    "textAfterTable": "Tip You need to belong to the dialout group to reconfigure modem, dial anywhere, etc. But if root creates pre-defined configuration files for trusted peers in \"/etc/ppp/peers/\", you only need to belong to the dip group to create Dialup IP connection to those trusted peers using pppd(8), pon(1), and poff(1) commands. Some notable system-provided groups allow their members to execute particular commands without root privilege. Table\u00a01.8.\u00a0List of notable system provided groups for particular command executions group accessible commands sudo execute sudo without their password lpadmin execute commands to add, modify, and remove printers from printer databases For the full listing of the system provided users and groups, see the recent version of the \"Users and Groups\" document in \"/usr/share/doc/base-passwd/users-and-groups.html\" provided by the base-passwd package. See",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

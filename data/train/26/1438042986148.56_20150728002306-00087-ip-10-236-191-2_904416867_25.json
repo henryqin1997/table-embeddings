@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Priority:",
+            "Status:",
+            "Issue tags:"
+        ],
+        [
+            "Normal",
+            "Needs review",
+            "-Quick fix"
+        ],
+        [
+            "\u00bb Critical",
+            "\u00bb Needs work",
+            ""
+        ]
+    ],
+    "pageTitle": "comment-by-anonymous class never appears [#1110650] | Drupal.org",
+    "title": "",
+    "url": "https://www.drupal.org/node/1110650",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986148.56/warc/CC-MAIN-20150728002306-00087-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 904440431,
+    "recordOffset": 904416867,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampAfterTable": "{38100=Free-trolling aside, it was actually introducing by http://drupal.org/node/306358#comment-1012865, 103652=I'd suggest to only roll the previous patch back if we don't manage to fix it properly until Jan 31st., 125369=In my localhost: - Only tests patch: Test comment user interfaces. 2019 passes, 12 fails. - Full patch: Test comment user interfaces. 2031 passes, 0 fails.}",
+    "lastModified": "Wed, 29 Jul 2015 08:04:56 GMT",
+    "textBeforeTable": "March 30, 2011 at 1:21pm CreditAttribution: JohnAlbin commented JohnAlbin Comment #1 Comments View ] [ PASSED: [[SimpleTest]]: [MySQL] 29,388 pass(es). JohnAlbin 537 bytes 1110650-1-comment-by-anonymous.patch #1 View ] [ PASSED: [[SimpleTest]]: [MySQL] 33,633 pass(es). linclark 545 bytes 1110650-03-comment-by-anonymous.patch #3 View ] [ FAILED: [[SimpleTest]]: [MySQL] Unable to apply patch 1110650-comment-classes-6.patch. This may be a -p0 (old style) patch, which is no longer supported by the testbots. dixon_",
+    "textAfterTable": "new 1110650-1-comment-by-anonymous.patch 537 bytes PASSED: [[SimpleTest]]: [MySQL] 29,388 pass(es). [ View ] And here's a patch. Log in or register to post comments Comment #2 franz CreditAttribution: franz commented July 29, 2011 at 7:06pm http://drupal.org/node/306358#comment-1637480 Perhaps you could ask yourself why, since it was your patch that got committed. =) Free-trolling aside, it was actually introducing by http://drupal.org/node/306358#comment-1012865 I don't see a reason to make this check strict with '===', +1 to this patch Log in or register to post comments Comment #3 linclark CreditAttribution: linclark",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

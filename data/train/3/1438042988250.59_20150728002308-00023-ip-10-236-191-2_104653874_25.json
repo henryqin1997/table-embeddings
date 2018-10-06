@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Prefix",
+            "xml",
+            "tomcat",
+            "xs"
+        ],
+        [
+            "Namespace",
+            "http://www.w3.org/XML/1998/namespace",
+            "http://geronimo.apache.org/xml/ns/web/tomcat/config-1.0",
+            "http://www.w3.org/2001/XMLSchema"
+        ]
+    ],
+    "pageTitle": "Schema documentation: Apache Geronimo",
+    "title": "",
+    "url": "http://geronimo.apache.org/schemas-2.1/docs/geronimo-tomcat-config-1.0.xsd.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988250.59/warc/CC-MAIN-20150728002308-00023-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 104670268,
+    "recordOffset": 104653874,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{54400=Nillable (Applies to element declarations). If an element declaration is nillable, instances can use the xsi:nil attribute. The xsi:nil attribute is the boolean attribute, nil, from the http://www.w3.org/2001/XMLSchema-instance namespace. If an element instance has an xsi:nil attribute set to true, it can be left empty, even though its element declaration may have required content.}",
+    "lastModified": "Tue, 15 Jan 2013 03:26:57 GMT",
+    "textBeforeTable": "Declared Namespaces This is an XML Schema Definition for Geronimo tomcat specific configuration. It is a used as a sub part of the web application deployment plan. The elements defined in this plan are included in container-config element of web application plan. The top level element included in container-config is tomcat with namespace specified as xmlns=\"http://geronimo.apache.org/xml/ns/web/tomcat/config-1.0\". The default location for this document is http://geronimo.apache.org/xml/ns/web/tomcat/config-1.0 Documentation By default, local attribute declarations have no namespace. By default, local element declarations belong to this schema's target namespace. Global element and attribute declarations belong to this schema's target namespace. Element and Attribute Namespaces 1.0 Version http://geronimo.apache.org/xml/ns/web/tomcat/config-1.0 Target Namespace Schema Document Properties top Glossary Legend Complex Type: tomcat-configType Complex Type: emptyType Global Definitions Element: tomcat Global Declarations Schema Document Properties Table of Contents // --> } gc.style.display=\"block\"; if (gc != null) { var gc = getElementObject(\"globalControls\");",
+    "textAfterTable": "Schema Component Representation < xs:schema targetNamespace=\" http://geronimo.apache.org/xml/ns/web/tomcat/config-1.0\" elementFormDefault=\" qualified\" attributeFormDefault=\" unqualified\" version=\" 1.0\"> ... </ xs:schema> top Global Declarations Element: tomcat Name tomcat Type tomcat:tomcat-configType Nillable no Abstract no Documentation The tomcat element is the root of the deployment descriptor for a tomcat specific configuration in web application. Note that the sub-elements of this element should be as in the given order in a sequence. Logical Diagram XML Instance Representation <",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "int",
+            "int",
+            "int",
+            "int",
+            "string"
+        ],
+        [
+            "$pn_years",
+            "$pn_day",
+            "$pn_month",
+            "$pn_year",
+            "$ps_format"
+        ],
+        [
+            "\u2014",
+            "\u2014",
+            "\u2014",
+            "\u2014",
+            "\u2014"
+        ],
+        [
+            "years to add",
+            "the day of the month, default is current local day",
+            "the month, default is current local month",
+            "the year in four digit format, default is current local year",
+            "string specifying how to format the output"
+        ]
+    ],
+    "pageTitle": "Docs For Class Date_Calc",
+    "title": "",
+    "url": "http://pear.php.net/package/Date/docs/latest/Date/Date_Calc.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00274-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 189362799,
+    "recordOffset": 189345484,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{72560=The algorithm is valid for all years (positive and negative), and also for years preceding 4714 B.C., 254162=Returned value is an integer from 1 to 53. Week 53 will start on 31st December and have only one day, except in a leap year, in which it will start a day earlier and contain two days., 137019=Both August and Aug would return 8., 247379=Note also that the last day week of the year is likely to extend into the following year, except in the case that the last day of the week falls on 31st December., 246970=Week 1 is determined to be the week that includes the 4th January, and therefore can be defined as the first week of the year that has at least 4 days. The previous week is counted as week 52 or 53 of the previous year. Note that this definition depends on which day is the first day of the week, and that if this is not passed as the '$pn_firstdayofweek' parameter, the default is assumed., 247560=Also note that this is very similar to the ISO week returned by Date::isoWeekDate(), the difference being that the ISO week always has 7 days, and if the 4th of January is a Friday, for example, ISO week 1 would start on Monday, 31st December in the previous year, whereas the week defined by this function would start on 1st January, but would be only 6 days long. Of course you can also set the day of the week, whereas the ISO week starts on a Monday by definition., 243409=Week 1 is determined to be the week that includes the 1st January, even if this week extends into the previous year, in which case the week will only contain between 1 and 6 days of the current year. Note that this definition depends on which day is the first day of the week, and that if this is not passed as the '$pn_firstdayofweek' parameter, the default is assumed., 86345=The algorithm is valid for all years (positive and negative), and also for years preceding 4714 B.C. (i.e. for negative 'Julian Days'), and so the only limitation is platform-dependent (for 32-bit systems the maximum year would be something like about 1,465,190 A.D.)., 75420=The algorithm is valid for all years (positive and negative), and also for years preceding 4713 B.C., 72056=Returns the no of days since Monday, 24th November, 4714 B.C. in the proleptic Gregorian calendar (which is 24th November, -4713 using 'Astronomical' year numbering, and 1st January, 4713 B.C. in the proleptic Julian calendar). This is also the first day of the 'Julian Period' proposed by Joseph Scaliger in 1583, and the number of days since this date is known as the 'Julian Day'. (It is not directly to do with the Julian calendar, although this is where the name is derived from.), 250826=Week 1 is determined to be the week that includes the 7th January, and therefore can be defined as the first full week of the year. The previous week is counted as week 52 or 53 of the previous year. Note that this definition depends on which day is the first day of the week, and that if this is not passed as the '$pn_firstdayofweek' parameter, the default is assumed., 243982=Returned value is an integer from 1 to 54. The year will only contain 54 weeks in the case of a leap year in which 1st January is the last day of the week, and 31st December is the first day of the week. In this case, both weeks 1 and 54 will contain one day only., 238210=Returned value is an integer from 1 to 5. Week 5 will start on the 29th of the month and have between 1 and 3 days, except in February in a non-leap year, when there will be 4 weeks only., 74918=Returns the no of days since Monday, 1st January, 4713 B.C. in the proleptic Julian calendar (which is 1st January, -4712 using 'Astronomical' year numbering, and 24th November, 4713 B.C. in the proleptic Gregorian calendar). This is also the first day of the 'Julian Period' proposed by Joseph Scaliger in 1583, and the number of days since this date is known as the 'Julian Day'. (It is not directly to do with the Julian calendar, although this is where the name is derived from.), 243798=Note also that the last day week of the year is also likely to contain less than seven days, except in the case that the last day of the week falls on 31st December., 13469=It does not rely on 32-bit system time stamps, so it works dates before 1970 and after 2038., 86632=N.B. Monday, 24th November, 4714 B.C. is Julian Day '0'., 63860=This function is used to alleviate the problem with 32-bit numbers for dates pre 1970 or post 2038, as strftime() has on most systems. Most of the formatting options are compatible.}",
+    "lastModified": "Tue, 08 Oct 2013 05:30:12 GMT",
+    "textBeforeTable": "Parameters: Access: public Since: Method available since Release 1.5.0 Return: the date in the desired format To subtract days use a negative value for the '$pn_days' parameter Returns the date the specified no of days from the given date string addDays( int $pn_days, int $pn_day, int $pn_month, int $pn_year, [string $ps_format = DATE_CALC_FORMAT]) addDays\u00a0\u00a0\u00a0[line 1553] Method Detail Top ] [ License: BSD License Since: Class available since Release 1.2 Link: http://pear.php.net/package/Date Copyright: 1999-2007 Monte Ohrt, Pierre-Alain Joye, Daniel Convissor, C.A. Woodcock Version: Release: 1.5.0a1 Author: Daniel Convissor <danielc@php.net> Author: Monte Ohrt <monte@ispi.net> Author: C.A. Woodcock <c01234@netcomuk.co.uk> It does not rely on 32-bit system time stamps, so it works dates before 1970 and after 2038. Calculates, manipulates and retrieves dates 117] [line Class Details Inherited Methods Inherited Variables weeksInMonth weekOfYearAbsolute weekOfYear7th weekOfYear4th weekOfYear1st weekOfYear weekOfMonthAbsolute weekOfMonth secondsPastTheHour",
+    "textAfterTable": "[ Top ] addHours\u00a0\u00a0\u00a0[line 694] array addHours( int $pn_hours, int $pn_day, int $pn_month, int $pn_year, int $pn_hour) Returns the date the specified no of hours from the given date To subtract hours use a negative value for the '$pn_hours' parameter Return: array of year, month, day, hour Since: Method available since Release 1.5.0 Access: public Parameters: int\u00a0\u00a0 $pn_hours\u00a0\u00a0 \u2014 \u00a0\u00a0hours to add int\u00a0\u00a0 $pn_day\u00a0\u00a0 \u2014 \u00a0\u00a0the day of the month int\u00a0\u00a0 $pn_month\u00a0\u00a0 \u2014 \u00a0\u00a0the month int\u00a0\u00a0 $pn_year\u00a0\u00a0 \u2014 \u00a0\u00a0the year int\u00a0\u00a0 $pn_hour\u00a0\u00a0 \u2014 \u00a0\u00a0the hour [ Top ] addMinutes\u00a0\u00a0\u00a0[line 751] array addMinutes( int $pn_minutes, int $pn_day, int $pn_month, int $pn_year, int $pn_hour, int $pn_minute) Returns the date the specified no of minutes from the given date To subtract minutes use a negative value for the '$pn_minutes'",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

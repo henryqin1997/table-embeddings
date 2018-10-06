@@ -1,0 +1,72 @@
+{
+    "relation": [
+        [
+            "Seq",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        [
+            "Len",
+            "3",
+            "2",
+            "20",
+            "80",
+            "15",
+            "1",
+            "100"
+        ],
+        [
+            "Fmt",
+            "",
+            "ID",
+            "ST",
+            "ST",
+            "NM",
+            "ID",
+            "CE"
+        ],
+        [
+            "Opt",
+            "R",
+            "R",
+            "R",
+            "O",
+            "O",
+            "O",
+            "O"
+        ],
+        [
+            "Element Name",
+            "Segment ID = \"MSA\"",
+            "Acknowledgment Code",
+            "Message Control ID",
+            "Text Message",
+            "Expected Sequence Number",
+            "Delayed Acknowledgment Type",
+            "Error Condition"
+        ]
+    ],
+    "pageTitle": "HL7 Interface Documentation",
+    "title": "",
+    "url": "http://www.hosinc.com/products/interfaces/interface_documentation.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00191-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 506957299,
+    "recordOffset": 506912496,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{237376=BID QJ246&0800,2200, 187076=1010.3 HEIGHT AS4, 316944=As of 10-29-2001, only fields 1-18 are supported for outbound DFT messages.\u00a0 Inbound DFT messages may include fields 19-25, however they will be ignored by the interface.\u00a0 Fields listed below may currently used by the interface for some inbound or outbound messages, depending upon the vendor. Fields that are not listed are not currently in use with any vendor., 66065=MSH|^~\\&|AccMgr|1|||20050110045504||ADT^A01|599102|P|2.3||| EVN|A01|20050110045502||||| PID|1||10006579^^^1^MRN^1||DUCK^DONALD^D||19241010|M||1|111 DUCK ST^^FOWL^CA^999990000^^M|1|8885551212|8885551212|1|2||40007716^^^AccMgr^VN^1|123121234|||||||||||NO NK1|1|DUCK^HUEY|SO|3583 DUCK RD^^FOWL^CA^999990000|8885552222||Y|||||||||||||| PV1|1|I|PREOP^101^1^1^^^S|3|||37^DISNEY^WALT^^^^^^AccMgr^^^^CI|||01||||1|||37^DISNEY^WALT^^^^^^AccMgr^^^^CI|2|40007716^^^AccMgr^VN|4|||||||||||||||||||1||G|||20050110045253|||||| GT1|1|8291|DUCK^DONALD^D||111^DUCK ST^^FOWL^CA^999990000|8885551212||19241010|M||1|123121234||||#Cartoon Ducks Inc|111^DUCK ST^^FOWL^CA^999990000|8885551212||PT| DG1|1|I9|71596^OSTEOARTHROS NOS-L/LEG ^I9|OSTEOARTHROS NOS-L/LEG ||A| IN1|1|MEDICARE|3|MEDICARE|||||||Cartoon Ducks Inc|19891001|||4|DUCK^DONALD^D|1|19241010|111^DUCK ST^^FOWL^CA^999990000|||||||||||||||||123121234A||||||PT|M|111 DUCK ST^^FOWL^CA^999990000|||||8291 IN2|1||123121234|Cartoon Ducks Inc|||123121234A|||||||||||||||||||||||||||||||||||||||||||||||||||||||||8885551212 IN1|2|NON-PRIMARY|9|MEDICAL MUTUAL CALIF.|PO BOX 94776^^HOLLYWOOD^CA^441414776||8003621279|PUBSUMB|||Cartoon Ducks Inc||||7|DUCK^DONALD^D|1|19241010|111 DUCK ST^^FOWL^CA^999990000|||||||||||||||||056269770||||||PT|M|111^DUCK ST^^FOWL^CA^999990000|||||8291 IN2|2||123121234|Cartoon Ducks Inc||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||8885551212 IN1|3|SELF PAY|1|SELF PAY|||||||||||5||1, 187770=OBX||ST|1010.1^WEIGHT^AS4||65|KG<cr>, 324664=MSH|^~\\&|CPOE1|SITEA|ASCEND|SITEA|200802210600||ORM^O01|0221200806000626|P^|2.3|||||||| PID|1||16095||WILLY^CHILLY||19361206000000|M|||13901 ICEFLOW ST^^FARGO^ND^99999 |||||M||110151001|222-22-2222|||||||||||| OBX|1|ST|1010.1^Body Weight||80.74|KG| OBX|2|ST|1010.3^Height||166.37|CM| AL1|1|FA|^MILK ^||NAUSEA/VOMITING|| AL1|2||^^||Tongue swells|| AL1|3|MA|^LATEX^||RASH|| PV1|1|I |E ^301 ^1 ^CPOE HOSPITAL^A|3|||BIRDC^BIRD^CHEERY^F|FreeP^FREESTONE^PEACH^A|^^^|OS ||||1|||BIRDC^BIRD^CHEERY^F|020|1||||||||||||||||||||CPOE HOSPITAL|||||20080221055400||||||||| PV2||||RT TOTAL KNEE||||||||||||||||||||||||||||||||||| ORC|NW|342974^CPOESYS|^||||1&MCG^Once&^D30^20060221055800^^ROUTINE^ROUTINE^^^||20080221060005|||LINDJ^LIND^JENNY^EDELWEISS||||||| RXO|327000510^FENTANYL INJ^CDM|50||MCG|INJECTABLE||||||1&MCG||||||D30|50|MCG|||| RXR|IV ^Intravenous||||, 87211=MSH||Ascend|Lab|Ascend|Lab|20080826010407||ORU^R01|0000998398|P|2.4|1|||NE||ASCII||| PID|1|^^^^^^^|000000216490|^^^^^^^|Sample^Joe|^|19501010120000|M|||Sunny Acres^123 Green Acres^Santa Rosa^CA^95403^United States of America^H^^^^||(707)547-1711^PRN^^^^^^^~(707)547-1711^PRN^^^^^^|||||204411|||||||||||||||||||| ORC|RE|1138972^BIOHEMATOLOGY|^||CM|E|||20080826115200|^^||9584^FeelGood^Doctor||||||||||||100 Healing Way^^Santa Rosa^CA^95403^^M^^^^| NTE|1||^This requisition was edited and resaved on the:2008/08/26 12:09:08 PM|GR NTE|2||^This requisition was edited and resaved on the:2008/08/26 12:10:02 PM|GR OBR|1|1138972^BIOHEMATOLOGY|000000799869^BIOHEMATOLOGY|1843^CBC^^^^PANEL|S|20080826115200|20080826120900|||||||20080826120900|^^^^|^^||||||||||||||||||^^||||||||||||| OBX|1|ST|1843^CBC^^^^PANL|1|Result|||N|||F|||||^^||| OBR|2|1138972^BIOHEMATOLOGY|000000799871^BIOHEMATOLOGY|2604^CMP^^^^PANEL|S|20080826115200|20080826120900|||||||20080826120900|^^^^|^^||||||||||||||||||^^||||||||||||| OBX|1|ST|2604^CMP^^^^PANL|1|Result|||N|||F|||||^^||| OBR|3|1138972^BIOHEMATOLOGY|000000799874^BIOHEMATOLOGY|2701^INR^2703^^^TEST|S|20080826115200|20080826120900|||||||20080826120900|^^^^|^^||||||||||||||||||^^||||||||||||| NTE|1||^INRTherapeutic range for INR is 2.00 to 3.00 |GR OBX|1|NM|2701^INR^2703^^^TEST|1|1.03||0.76 - 1.28|N|||F|||||00040^FAKE^MELODY||| OBR|4|1138972^BIOHEMATOLOGY|000000799875^BIOHEMATOLOGY|2741^PTT^^^^TEST|S|20080826115200|20080826120900|||||||20080826120900|^^^^|^^||||||||||||||||||^^||||||||||||| OBX|1|NM|2741^PTT^^^^TEST|1|30|secs|23 - 40|N|||F|||||00040^FAKE^MELODY|||, 187860=OBX||ST|1010.3^HEIGHT^AS4||180|CM<cr>, 122=Documentation Version: 5-5-2010, 235064=e.g., ^TID&0800,1600,2200^\", 187140=1010.1 WEIGHT AS4, 325591=MSH|^~\\&|ASCEND|SITEA|CPOE1|SITEA|200802210814||RDE^O01|RDE157750|P|2.3||||||| PID|||16095||WILLY^CHILLY||19361206|M|||13901 ICEFLOW ST^^FARGO^ND^99999^^R|||||||110151001|222222222||||||||||| PV1||020|E^301^301||||BIRDC^BIRD^CHEERY|||||||||||020||||||||||||||||||||||||||200802210554|||||||| OBX|1|ST|1010.3^HEIGHT^AS4||165.0|CM|||||M|||||| OBX|2|ST|1010.1^BODY WEIGHT^AS4||81.2|KG|||||M|||||| AL1|1|MA|^MILK||| AL1|2|MA|^LATEX||| AL1|3|MA|^COD||| AL1|4|MA|^SULFA||| ORC|NW|342974|203432||||^ONCE^^200802210558^200802210558^ROUTINE||200802210601||^FARMCIST^JOE|LINDJ^Lind^Jenny|PHARMACY||200802210558|||| RXE|^ONCE^^200802210558^200802210558^ROUTINE|327000510^FENTANYL INJ^CHARGE_CODE|50||MCG|BOTTLE^BOTTLE|^Once ROUTINE ; X 30 Days|||1|||||||||||||||||||| RXR|IV^intravenous||| RXC|A|327000510^FENTANYL INJ|50|MCG||}",
+    "lastModified": "Wed, 05 May 2010 21:52:29 GMT",
+    "textBeforeTable": "The Data Type Category will appear in subsequent field definition tables to identify the format of the field or its components. Data Types The interface will usually not further subdivide fields below the \"component\" level unless otherwise noted. However, refer to standard HL7 documentation for standard subcomponent (and below) definitions if desired. Occasionally, components may divided into subcomponents, separated by the subcomponent separator, \"&\". Rules for their use are similar to those for the component separator. Blank components are shown with two component separators with nothing between them: \"^^\". If all remaining components in a field definition have no data and are optional, the sending system may drop them. The receiving system should treat dropped components as blank. \"\u0085.|last_name^first_name^initial^^|\u0085.\" A few HL7 fields are defined as having more than one portion, each of which is separated by a component separator, \"^\". These field types are called \"composite\" fields. For example, the patient\u0092s name field is usually sent as several components: Field Components and Subcomponents Fields are transmitted as character strings. Refer to the \"Data Types\" table below for a listing of the types of data found in the fields. Although field lengths are listed in the message and segment definition tables below, the interface will not \"pad\" the field with spaces when sending messages. Although the interface can receive fields padded with spaces, the sending system is not required to",
+    "textAfterTable": "Entity identifier <entity identifier (ST)> ^ <assigning authority (HD)> RP Reference pointer <pointer (ST) > ^ < application ID (HD)> ^ <main type (ID)> & <subtype (ID)> PL Patient location <point of care (IS )> ^ <room (IS )> ^ <bed (IS)> ^ <facility (HD)> ^ < location status (IS )> ^ <patient location type (IS)> ^ <building (IS )> ^ <floor (IS )> PT Processing type <processing ID (ID)> ^ <processing mode (ID)> Date/Time \u00a0 \u00a0 DT Date YYYY[MM[DD]] TM Time HH[MM[SS[.S[S[S[S]]]]]][+/-ZZZZ] TS Time stamp YYYY[MM[DD[HHMM[SS[.S[S[S[S]]]]]]]][+/-ZZZZ] ^ <degree of precision> Coded Values \u00a0 \u00a0 CE Coded element <identifier (ID)> ^ <text (ST)> ^ <name of coding system (ST)> ^ <alternate identifier (ID)>",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 4,
+    "headerRowIndex": 0
+}

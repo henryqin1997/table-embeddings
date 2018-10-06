@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Required",
+            "required",
+            "required",
+            "required",
+            "required",
+            "optional",
+            "optional",
+            "optional",
+            "optional"
+        ],
+        [
+            "Name",
+            "from_date",
+            "to_date",
+            "unit",
+            "addiction_unit",
+            "event",
+            "where",
+            "on",
+            "limit"
+        ],
+        [
+            "Type",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "integer"
+        ],
+        [
+            "Description",
+            "The date in yyyy-mm-dd format from which to begin generating cohorts from. This date is inclusive.",
+            "The date in yyyy-mm-dd format from which to stop generating cohorts from. This date is inclusive.",
+            "The overall time period to return frequency of actions for. Can be \"day\", \"week\", or \"month\".",
+            "The granularity to return frequency of actions at. Can be \"hour\" or \"day\"",
+            "The event to generate returning counts for. Applies to both birth and compounded retention. If not specified, we look across all events.",
+            "An expression to filter the returning events by. See the expression section.",
+            "The property expression to segment the selected event on. See the expression section.",
+            "Return the top limit segmentation values. This parameter does nothing if \"on\" is not specified."
+        ]
+    ],
+    "pageTitle": "Data Export API - Mixpanel | Help",
+    "title": "",
+    "url": "https://mixpanel.com/docs/api-documentation/data-export-api",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990611.52/warc/CC-MAIN-20150728002310-00318-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 878200307,
+    "recordOffset": 878172704,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{34445=The number of days each user has to complete the funnel, starting from the time they triggered the first step in the funnel. May not be greater than 60 days. Note that we will query for events past the end of to_date to look for funnel completions., 79749=An expression consists of a property, combined with one or more operators that can perform mathematical operations, logical operations, or typecasts. Expression are then applied in the where and on parameters of the segmentation API. The full grammar for expressions is given here:}",
+    "textBeforeTable": "Parameters List the annotations for the given date range. Description URI: http://mixpanel.com/api/2.0/annotations/ Method: annotations Annotations %22%2C+%22account-page%22%5D&unit=day 842c351a&api_key=f0aa346688cee071cd85d857285a3464&type=average&event=%5B%22splash+features< http://mixpanel.com/api/2.0/events/?interval=7&expire=1275624968&sig=046ceec93983811dad0fb20f Lastly, include sig with your URL request along with the normal parameters to consume data securely. Your URL should look similar to this however varying on the endpoint you are requesting data from:  sig = md5(args_concat + api_secret) # expire=1248499222format=jsoninterval=24unit=hour # Output: api_key=ed0b8ff6cc3fbb37a521b40019915f18event=[\"pages\"] args_concat = join(args_sorted) args_sorted = sort_args_alphabetically_by_key(args) (e.g. api_key, unit, interval, expire, format, etc.) excluding sig. args = all query parameters going to be sent out with the request Calculate the signature of the request using your api_secret. Calculating the signature is done in parts: sort the parameters you are including with the URL alphabetically, join into a string resulting in key=valuekey2=value2 (excluding ampersands), concatenate the result with the api_secret by appending it, and lastly md5 hash the final string. This hash is used for the sig parameter in the request therefore it should not be be calculated with sig as a parameter. The purpose of this process is to prevent unauthorized attempts to consume your data as much as possible. Pseudo code:   expire is any UTC time in the future that represents how long you wish the request consuming",
+    "textAfterTable": "Type Description required date string The time in yyyy-mm-hh HH:MM:SS when you want to create the annotation at. required description string The annotation description. Example URL http://mixpanel.com/api/2.0/annotations/create?date=2014-05-15+00%3A00%3A00&description=Launched+version+2.0! Return format {\"error\": false} Method: update URI: http://mixpanel.com/api/2.0/annotations/update Description Update an annotation to the new time or description. Parameters Required Name Type Description required id string The ID of the annotation you wish to update. required date string The time in yyyy-mm-hh HH:MM:SS to update the annotation to. required description string The annotation description to update the annotation to. Example URL http://mixpanel.com/api/2.0/annotations/update?id=148&date=2014-03-09+12%3A34%3A56&description=Concuded button A/B test. Return format {\"error\": false} Method: delete URI: http://mixpanel.com/api/2.0/annotations/delete Description Delete an annotation. Parameters",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

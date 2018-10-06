@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Start",
+            "1Q 15:00 BLT 20",
+            "1Q 04:47 BLT 25",
+            "2Q 07:44 BLT 25",
+            "2Q 00:19 BLT 21",
+            "3Q 10:38 BLT 20",
+            "3Q 04:05 BLT 22",
+            "3Q 01:16 BLT 28",
+            "4Q 04:28 BLT 45",
+            "4Q 00:46 BLT 35"
+        ],
+        [
+            "Plays",
+            "8",
+            "13",
+            "6",
+            "2",
+            "9",
+            "3",
+            "5",
+            "8",
+            "3"
+        ],
+        [
+            "Yds",
+            "62",
+            "75",
+            "18",
+            "16",
+            "43",
+            "5",
+            "16",
+            "55",
+            "15"
+        ],
+        [
+            "Poss",
+            "3:09",
+            "6:20",
+            "4:33",
+            "0:19",
+            "4:17",
+            "1:17",
+            "2:34",
+            "2:33",
+            "0:46"
+        ],
+        [
+            "Result",
+            "Missed FG",
+            "Touchdown",
+            "Punt",
+            "End of Half",
+            "Interception",
+            "Interception",
+            "Punt",
+            "Touchdown",
+            "End of Game"
+        ]
+    ],
+    "pageTitle": "Baltimore Ravens vs. San Diego Chargers - 2011 Week 15 GameTracker - CBSSports.com",
+    "title": "",
+    "url": "http://www.cbssports.com/nfl/gametracker/live/NFL_20111218_BAL@SD",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00300-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 347745387,
+    "recordOffset": 347690474,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "BAL SD Drive Chart Scoring Summary }); //atreroGameTracker.checkPagination() // DDS - Removed 4/8/13 - User may have more data more than 2 weeks old // See if we hide the button entirely $(document).trigger('atreroUpdate'); // Fire this so templates can execute their javascript functions highlightButton(); atreroGameTracker = new CBSi.widget.Atrero({'pollInterval':300, 'addLeague':'1', 'nodeServer':'http://api.cbssports.com/na', 'version':'v5', 'pagination':false, 'container':'#atreroGameTracker', 'categories':'latest', 'recordsInSet':50, 'view':'SynopsisWithoutLogoMini', 'ids':'59', 'childContainer':'#atreroInner', 'omniture_arena':'NFL'}); $(document).ready(function(){ }; }); $('#atreroMoreBarArrows').removeClass('blueArrow'); $('#atreroMoreBarTextOnly').removeClass('blueText'); $(\"#atreroMoreBarCtr\").mouseout(function(){ }); $('#atreroMoreBarArrows').addClass('blueArrow'); $('#atreroMoreBarTextOnly').addClass('blueText'); $(\"#atreroMoreBarCtr\").mouseover(function(){ $('#atreroMoreBarTextOnly').text('MORE '); highlightButton = function() { var atreroGameTracker = null; // This keeps the widgets individual so we can have more than one per page.",
+    "textAfterTable": "Start Plays Yds Poss Result 1Q 11:51 SD 26 12 74 7:04 Touchdown 2Q 13:27 SD 20 9 53 5:43 Field Goal 2Q 03:11 SD 20 7 80 2:52 Touchdown 3Q 15:00 SD 20 8 80 4:22 Touchdown 3Q 06:21 BLT 42 5 42 2:16 Touchdown 3Q 02:48 BLT 27 4 8 1:32 Missed FG 4Q 13:42 SD 1 14 89 9:14 Field Goal 4Q 01:55 BLT 44 4 9 1:09 Downs",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 4,
+    "headerRowIndex": 0
+}

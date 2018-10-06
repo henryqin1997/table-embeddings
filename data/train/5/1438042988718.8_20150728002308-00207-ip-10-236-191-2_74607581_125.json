@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "ATTRIBUTE TYPE",
+            "Availability",
+            "Stability Level"
+        ],
+        [
+            "ATTRIBUTE VALUE",
+            "SUNWdsee7",
+            "Standard: IETF, RFC 2256"
+        ]
+    ],
+    "pageTitle": "LDAP Schema Attribute Types (Sun Directory Server Enterprise Edition 7.0 Man Page Reference)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19424-01/820-4813/6ng8jv82s/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00207-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74653647,
+    "recordOffset": 74607581,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{290211=Standard: IETF, RFC 2079, 620704=This represents time as the number of seconds since January 1, 1970., 180697=Reflects the maximum security strength factor value for SASL. The default value is 32767. The value of this attribute must be greater than or equal to the value of dsSaslMinSSF., 694814=Identifies the versions of the LDAP protocol implemented by the server. This attribute is defined in RFC 2252., 18760=Standard: IETF, RFC 2252, 13962=Standard: IETF, RFC 1274, 262272=Standard: IETF, RFC 2713, 31106=Standard: IETF, RFC 2307, 650342=Related to the /etc/shadow file, this attribute specifies number of days between January 1, 1970, and the date that the password was last modified., 105517=Standard: IETF, RFC 2247, 11279=Standard: IETF, RFC 2256, 10080=This attribute is defined in RFC 2256, but Directory Server does not support alias dereferencing. The value of aliasedObjectName attributes are never used by Directory Server., 469320=The valid range of this attribute is 0 to 32767, with a default value of 3. When set to 0, this attribute disables lockout., 46110=External: IETF, RFC 2798, 471928=Specifies the number of seconds that must elapse betweenpassword modifications. Use this attribute with the passwordInHistory attribute to prevent users from quickly cycling through passwords so they can use their old passwords again. The default value, 0, indicates that the user can change the password again immediately after updating the password. The valid range of this attribute is from 0 to 2147472000 seconds, which is 24855 days.}",
+    "lastModified": "Wed, 26 Jan 2011 22:39:20 GMT",
+    "textBeforeTable": "See attributes(5) for descriptions of the following attributes: Attributes Directory String, multi-valued. SYNTAX Provides an abstract of a document entry. Description X-ORIGIN 'Internet White Pages Pilot' ) SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 DESC 'Pilot attribute type' NAME 'abstract' ( 0.9.2342.19200300.102.1.9  Synopsis   abstract\u2013 Pilot attribute type  Name  Name | Synopsis | Description | SYNTAX | Attributes  abstract(5dsat)  LDAP Schema Attribute Types        Next: LDAP Schema Object Classes Previous: LDAP Schema Collections  Sun Directory Server Enterprise Edition 7.0 Man Page Reference Sun Directory Server Enterprise Edition 7.0 Man Page Reference \u00a0> LDAP Schema Attribute Types Documentation Home \u00a0>",
+    "textAfterTable": "DSEE 7.0\u00a0\u00a0Last Revised Sep 21, 2006 Name | Synopsis | Description | SYNTAX | Attributes accountUnlockTime(5dsat) Name | Synopsis | Description | SYNTAX | Usage | Attributes Name accountUnlockTime\u2013 Sun ONE defined password policy attribute type Synopsis ( 2.16.840.1.113730.3.1.95 NAME 'accountUnlockTime' DESC 'Sun ONE defined password policy attribute type' SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 SINGLE-VALUE USAGE directoryOperation X-DS-USE 'internal' X-ORIGIN 'Sun ONE Directory Server' ) Description Indicates the exact time after which a user can attempt to bind to the directory (after an account lockout). This attribute is used only when the password policy is enabled. SYNTAX Generalized Time, single-valued. Usage Attribute specific to this Directory Server instance and version of the schema. Operational attribute used by the directory service; returned in ldapsearch only when specifically requested. Attributes See attributes(5) for descriptions of the following attributes: ATTRIBUTE TYPE\u00a0 ATTRIBUTE VALUE\u00a0 Availability\u00a0 SUNWdsee7\u00a0 Stability Level\u00a0 Evolving\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

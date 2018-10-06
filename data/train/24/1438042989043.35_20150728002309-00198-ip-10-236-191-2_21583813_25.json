@@ -1,0 +1,190 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2011-12 *",
+            "2011-12 *",
+            "2011-12 *",
+            "2011-12 *"
+        ],
+        [
+            "Team",
+            "All Teams",
+            "ZAL",
+            "ZAL",
+            "ZAL"
+        ],
+        [
+            "GP",
+            "19",
+            "7",
+            "6",
+            "6"
+        ],
+        [
+            "GS",
+            "14",
+            "4",
+            "5",
+            "5"
+        ],
+        [
+            "Min",
+            "19.3",
+            "21.3",
+            "21.1",
+            "15.1"
+        ],
+        [
+            "FGM",
+            "2.53",
+            "2.57",
+            "2.67",
+            "2.33"
+        ],
+        [
+            "FGA",
+            "5.37",
+            "6.00",
+            "6.50",
+            "3.50"
+        ],
+        [
+            "FG%",
+            ".471",
+            ".429",
+            ".410",
+            ".667"
+        ],
+        [
+            "3FGM",
+            "0.42",
+            "0.43",
+            "0.33",
+            "0.50"
+        ],
+        [
+            "3FGA",
+            "1.26",
+            "1.14",
+            "1.83",
+            "0.83"
+        ],
+        [
+            "3P%",
+            ".333",
+            ".375",
+            ".182",
+            ".600"
+        ],
+        [
+            "FTM",
+            "2.58",
+            "1.43",
+            "4.00",
+            "2.50"
+        ],
+        [
+            "FTA",
+            "3.63",
+            "3.00",
+            "4.83",
+            "3.17"
+        ],
+        [
+            "FT%",
+            ".710",
+            ".476",
+            ".828",
+            ".789"
+        ],
+        [
+            "FIC",
+            "5.14",
+            "4.70",
+            "6.69",
+            "4.10"
+        ],
+        [
+            "OFF",
+            "0.58",
+            "0.57",
+            "1.00",
+            "0.17"
+        ],
+        [
+            "DEF",
+            "1.68",
+            "2.43",
+            "1.83",
+            "0.67"
+        ],
+        [
+            "Reb",
+            "2.26",
+            "3.00",
+            "2.83",
+            "0.83"
+        ],
+        [
+            "Ast",
+            "1.84",
+            "1.57",
+            "2.33",
+            "1.67"
+        ],
+        [
+            "Stl",
+            "0.95",
+            "0.86",
+            "1.50",
+            "0.50"
+        ],
+        [
+            "Blk",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00"
+        ],
+        [
+            "PF",
+            "1.89",
+            "1.86",
+            "2.00",
+            "1.83"
+        ],
+        [
+            "TO",
+            "1.37",
+            "1.00",
+            "1.50",
+            "1.67"
+        ],
+        [
+            "Pts",
+            "8.21",
+            "7.43",
+            "9.67",
+            "7.67"
+        ]
+    ],
+    "pageTitle": "Ty Lawson Player Profile, Denver Nuggets, News, Rumors, NBA Stats, NCAA Stats, International Stats, Events Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Ty-Lawson/Summary/1612",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989043.35/warc/CC-MAIN-20150728002309-00198-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 21613719,
+    "recordOffset": 21583813,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{8447=Early Entry Info: 2008 Early Entrant (Withdrew), 2009 Early Entrant, 8547=Draft Entry: 2009 NBA Draft, 8720=Free Agent: UFA-2017, 8127=Draft Rights Trade: MIN to DEN, Jun 25, 2009, 9660=Born: Nov 3, 1987 (27 years old)}",
+    "TableContextTimeStampAfterTable": "{25016=* Since the 1946-1947 season, 100186=* International basketball history from 2011-2012, 135861=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 6 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ International ] [ High School ] [ Recent News ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "DEN 62 61 35.8 5.60 13.00 .431 1.16 3.26 .356 5.23 6.55 .798 14.53 0.65 2.82 3.47 8.76 1.61 0.16 1.82 3.23 17.58 2014-15 DEN 75 75 35.5 5.39 12.35 .436 0.93 2.73 .341 3.53 4.84 .730 14.27 0.56 2.56 3.12 9.60 1.23 0.12 1.71 2.47 15.24 CAREER \u00a0 416 307 31.1 5.10 10.93 .466 0.97 2.63 .369 3.08 3.99 .771 11.72 0.68 2.23 2.90 6.59 1.22 0.09 1.66 2.25 14.24 NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2009-10 DEN 65 8 1317.3 201 390 .515 34 83 .410 106 140 .757 427 42 82 124 203 48 2 89 82 542 2010-11 DEN 80 31 2102.7 346 688 .503 69 171 .404 172 225 .764 764 67 142 209 377 80 4 133 137 933 2011-12 DEN 61 61 2124.0 374 767 .488 73 200 .365 178 216 .824 818 54 173 227 399 82 6 94 149 999",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

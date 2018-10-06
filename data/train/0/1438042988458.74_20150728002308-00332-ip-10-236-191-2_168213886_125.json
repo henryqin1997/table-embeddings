@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Bug",
+            "Unchecked/unconfirmed cast from javax.faces.component.UIComponent to org.apache.myfaces.custom.schedule.HtmlSchedule in org.apache.myfaces.custom.schedule.ScheduleDetailedDayRenderer.encodeBegin(FacesContext, UIComponent)",
+            "Unchecked/unconfirmed cast from javax.faces.component.UIComponent to org.apache.myfaces.custom.schedule.HtmlSchedule in org.apache.myfaces.custom.schedule.ScheduleDetailedDayRenderer.encodeChildren(FacesContext, UIComponent)",
+            "integral division result cast to double or float in org.apache.myfaces.custom.schedule.ScheduleDetailedDayRenderer.writeBackgroundStart(FacesContext, HtmlSchedule, ResponseWriter)",
+            "integral division result cast to double or float in org.apache.myfaces.custom.schedule.ScheduleDetailedDayRenderer.writeEntries(FacesContext, HtmlSchedule, ScheduleDay, ResponseWriter)",
+            "integral division result cast to double or float in org.apache.myfaces.custom.schedule.ScheduleDetailedDayRenderer.writeForegroundStart(FacesContext, HtmlSchedule, ResponseWriter)"
+        ],
+        [
+            "Category",
+            "STYLE",
+            "STYLE",
+            "STYLE",
+            "STYLE",
+            "STYLE"
+        ],
+        [
+            "Details",
+            "BC_UNCONFIRMED_CAST",
+            "BC_UNCONFIRMED_CAST",
+            "ICAST_IDIV_CAST_TO_DOUBLE",
+            "ICAST_IDIV_CAST_TO_DOUBLE",
+            "ICAST_IDIV_CAST_TO_DOUBLE"
+        ],
+        [
+            "Line",
+            "82",
+            "116",
+            "422",
+            "654",
+            "764"
+        ],
+        [
+            "Priority",
+            "Low",
+            "Low",
+            "Medium",
+            "Medium",
+            "Medium"
+        ]
+    ],
+    "pageTitle": "FindBugs Bug Detector Report",
+    "title": "",
+    "url": "http://myfaces.apache.org/tomahawk-project/tomahawk20/findbugs.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00332-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 168257431,
+    "recordOffset": 168213886,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 12 Sep 2012 01:36:51 GMT",
+    "textBeforeTable": "Summary Effort is min Threshold is low FindBugs Version is 1.3.9 The following document contains the results of FindBugs Report FindBugs Bug Detector Report License Security Thanks Sponsorship ASF Foundation JSF Tag Documentation Surefire Report Tag List Test Source Xref Source Xref Test JavaDocs JavaDocs Developer Activity File Activity Change Log JDepend FindBugs Report CPD Report PMD Report Project Reports Project Information Project Documentation",
+    "textAfterTable": "org.apache.myfaces.component.html.ext.BaseSortableModel$RowDataComparator 1 org.apache.myfaces.component.html.ext.HtmlDataTableHack$EditableValueHolderState 1 org.apache.myfaces.component.html.ext.HtmlDataTableTagHandler 1 org.apache.myfaces.component.html.ext.SortCriterion 1 org.apache.myfaces.component.html.ext.SortableModel$Comp 1 org.apache.myfaces.component.html.ext.SortableModel$Inverter 1 org.apache.myfaces.component.html.ext.UIComponentPerspective 1 org.apache.myfaces.component.html.ext._SerializableDataModel 2 org.apache.myfaces.component.html.util.ExtensionsFilter 1 org.apache.myfaces.component.html.util.MultipartFilter 3 org.apache.myfaces.component.html.util.ParameterResourceHandler 1 org.apache.myfaces.component.html.util.StreamingAddResource 3 org.apache.myfaces.component.html.util.StreamingResourceLoader 1 org.apache.myfaces.component.html.util.StreamingThreadManager 1 org.apache.myfaces.custom.aliasbean.AliasBeanTagHandler 1 org.apache.myfaces.custom.aliasbean.AliasBeansScopeTagHandler 1 org.apache.myfaces.custom.autoscroll.AutoscrollBehavior 1 org.apache.myfaces.custom.buffer.BufferRenderer 2 org.apache.myfaces.custom.buffer.BufferTag 1 org.apache.myfaces.custom.calendar.AbstractHtmlInputCalendar 1 org.apache.myfaces.custom.calendar.AbstractHtmlInputCalendarTag 1 org.apache.myfaces.custom.calendar.HtmlCalendarRenderer 7 org.apache.myfaces.custom.calendar.HtmlCalendarRenderer$1 1 org.apache.myfaces.custom.calendar.HtmlInputCalendarTag 1 org.apache.myfaces.custom.captcha.AbstractCAPTCHAComponent 3 org.apache.myfaces.custom.captcha.CAPTCHARenderer 1 org.apache.myfaces.custom.captcha.CAPTCHAResource$WrappedByteArrayOutputStream 2 org.apache.myfaces.custom.captcha.CAPTCHAResourceHandlerWrapper 5 org.apache.myfaces.custom.captcha.CAPTCHATag 1 org.apache.myfaces.custom.captcha.util.CAPTCHAImageGenerator 1 org.apache.myfaces.custom.captcha.util.CAPTCHATextGenerator 1 org.apache.myfaces.custom.captcha.util.ColorGenerator 1 org.apache.myfaces.custom.checkbox.HtmlCheckboxTag 1 org.apache.myfaces.custom.collapsiblepanel.HtmlCollapsiblePanelRenderer 2 org.apache.myfaces.custom.collapsiblepanel.HtmlCollapsiblePanelTag 1 org.apache.myfaces.custom.collapsiblepanel.HtmlHeaderLinkTag 2 org.apache.myfaces.custom.column.HtmlColumnTag 3 org.apache.myfaces.custom.column.HtmlSimpleColumn 4 org.apache.myfaces.custom.crosstable.HtmlColumns 1 org.apache.myfaces.custom.crosstable.HtmlColumnsTag 1 org.apache.myfaces.custom.crosstable.UIColumns 1 org.apache.myfaces.custom.crosstable.UIColumns$EditableValueHolderState",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

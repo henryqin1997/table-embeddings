@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Element",
+            "",
+            ""
+        ],
+        [
+            "Required/Optional",
+            "Optional",
+            "Optional"
+        ],
+        [
+            "Description",
+            "A text description of this security constraint.",
+            "Defines which security roles can access resources defined in this security-constraint. Security role names are mapped to principals using the security-role-ref."
+        ]
+    ],
+    "pageTitle": "A web.xml Deployment Descriptor Elements",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E21764_01/web.1111/e13712/web_xml.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00335-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70952147,
+    "recordOffset": 70930019,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 13 May 2015 05:19:28 GMT",
+    "textBeforeTable": "Table A-26 auth-constraint Elements The following table describes the elements you can define within an auth-constraint element. The optional auth-constraint element defines which groups or principals have access to the collection of Web resources defined in this security constraint. This is an element within the security-constraint. auth-constraint Use one or more of the <http-method> elements to declare which HTTP methods (usually, GET or POST) are subject to the authorization constraint. If you omit the <http-method> element, the default behavior is to apply the security constraint to all HTTP methods. Optional <http-method>     Use one or more of the <url-pattern> elements to declare to which URL patterns this security constraint applies. If you do not use at least one of these elements, this <web-resource-collection> is ignored by WebLogic Server.   Optional  <url-pattern>     A text description of this security constraint.   Optional  <description>     The name of this Web resource collection.   Required  name> <web-resource-",
+    "textAfterTable": "user-data-constraint This is an element within the security-constraint. The user-data-constraint element defines how the client should communicate with the server. The following table describes the elements you may define within a user-data-constraint element. Table A-27 user-data-constraint Elements Element Required/Optional Description  <description> Optional A text description.  <transport- guarantee> Required Specifies that the communication between client and server. WebLogic Server establishes a Secure Sockets Layer (SSL) connection when the user is authenticated using the INTEGRAL or CONFIDENTIAL transport guarantee. Range of values: NONE\u2014The application does not require any transport guarantees. INTEGRAL\u2014The application requires that the data be sent between the client and server in such a way that it cannot be changed in transit. CONFIDENTIAL\u2014The application requires that data be transmitted so as to prevent other entities from observing the contents of the transmission. login-config Use the optional login-config element to configure",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

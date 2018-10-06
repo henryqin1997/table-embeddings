@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Description",
+            "User input of area of interest and time for desired data grid into a web interface.",
+            "User data is sent via HTTP request to a java servelet hosted on a local NGDC server. This checks that all of the necessary information to run the model executable correctly is present and in the correct format.",
+            "NGDC server accesses a C executable, in this case the IGRF executable, and inputs the user data and runs the executable to obtain desired output parameters in XML format.",
+            "The XML created by the executable is sent back to NGDC server and input into the Java servelet which reformats the output into the format designated by the user at the begining of the process. This reformatted information is returned to the User's webpage."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Geophysical_Models/iso/xml/Magnetic_Field_Calculator.xml&view=ISO19115Components-HTMLTable",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00231-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 613943755,
+    "recordOffset": 613935553,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.ngdc.mgg.geophysical_models:Magnetic_Field_CalculatorGet DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Geophysical_Models View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "1 IGRF11 Spherical Harmonic Model. 2010-10-12 1 International Geomagnetic Reference Field 11 2010-10-12 1 Magnetic Field Calculator 2009-12-01 1 GCMD Data Center Keywords NASA/GCMD Data Center Keywords 1 GCMD Location Keywords NASA/GCMD Location Keywords 1 GCMD Science Keywords NASA/GCMD Science Keywords 2 WMM2010 Report The US/UK World Magnetic Model for 2010-2015 2009-12-01 1 World Geodetic System 1984 2007-08-27 Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

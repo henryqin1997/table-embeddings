@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "additionalJars [Tomcat 3.3.1]",
+            "jarSeparator [Tomcat 3.3.1]",
+            "jaxp",
+            "jaxpDir",
+            "jaxpJars",
+            "useNoParent",
+            "useApplicationLoader",
+            "use11Loader [Tomcat 3.3.1]"
+        ],
+        [
+            "Description",
+            "List of jars to be added to each web application separated by the specified jarSeparator. If not an absolute path, the path is assumed to be relative to TOMCAT_HOME/lib/container.",
+            "String containing the character to be used as a jar separator. This separator is used by the additionalJars and jaxpJars lists.",
+            "Enables providing a default XML parser to web applications that don't already have one. If the javax.xml.parsers.SAXParserFactory class is found in a web application, it is assumed to already contain an XML parser and no action is taken for that web application.",
+            "Directory where Jaxp jars are located.",
+            "List of jars to be added. The list is separated by colons in Tomcat 3.3, or by jarSeparator in Tomcat 3.3.1 and later.",
+            "If true, sets the context classloader's parent to null. If false, then contexts which are \"trusted\" will get the Server Classloader as the parent. The parent classloader for contexts which are not \"trusted\" are controlled by the useApplicationLoader attribute.",
+            "If true, when useNoParent is false, sets the context classloader's parent to the Apps Classloader. If false, when useNoParent is false, sets the context classloader's parent to the Server Classloader.",
+            "If true, use the SimpleClassLoader (normally used in JDK 1.1.8 environments) even under Java2. Otherwise the default URLClassLoader is used when running with Java2. The primary reason for this attribute is as a workaround for known jar reloading problems in the URLClassLoader of some JVM's. If you have problems with reloading web applications after updating jars, try setting this attribute true. This provides compatiblity with Tomcat 3.2.x. with respect to jar reloading."
+        ],
+        [
+            "Default",
+            "none",
+            ":",
+            "true",
+            "lib/container",
+            "jaxp.jar:crimson.jar:xalan.jar:xerces.jar",
+            "false",
+            "true",
+            "false"
+        ]
+    ],
+    "pageTitle": "Server.xml Configuration in Tomcat 3.3",
+    "title": "",
+    "url": "http://tomcat.apache.org/tomcat-3.3-doc/serverxml.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987228.91/warc/CC-MAIN-20150728002307-00229-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 235626511,
+    "recordOffset": 235597111,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sun, 25 Mar 2012 19:52:59 GMT",
+    "textBeforeTable": "All modules have the following common attributes: Common Parameters Note: The property values may themselves use \"variable substitution\", provided the specified property is already defined. Include \"-name value\" as command line arguments, where name doesn't match any of the arguments supported by the \"start\" task. For example:  bin/startup -my.prop myvalue </ContextManager> This form of setting properties is logged if the ContextManager's debug level is one or greater. ... <Property name=\"my.prop\" value=\"myvalue\" /> <ContextManager ... > Include a Property element within the scope of the ContextManager element in server.xml. For example:  Include a name=\"value\" specification on the ContextManager element in server.xml, where name doesn't correspond to a ContextManager attribute. For example:   <ContextManager ... my.prop=\"myvalue\" ... >  There are two predefined ContextManager properties, \"tomcat.home\" and \"tomcat.install\". These correspond to the ContextManager home and installDir attributes, respectively. There are three methdos for setting additional ContextManager properties. The variable must specify a ContextManager property or System property, with ContextManager properties taking precedence. If a matching property isn't found, the attribute string is left as is. Note that the properties are not the same as attributes, and attributes are not accessible via variable substitution. In Tomcat 3.3.1, each attribute value may use the ant-style variable substitution by using \"${variable}\" in the attribute string, i.e. attribute=\"text${variable}text\". (Note: A bug prevented this from working in Tomcat 3.3.) Variable substitution The modules can be configured and assembled in several ways, but the default and most flexible",
+    "textAfterTable": "property_name\" value=\" property_value\"> Adds arbitrary name/values to ContextManager. The properties can be used for variable substitutions, instead of attributes. <module name=\" module_name\" javaClass=\" full.class.name\"> Adds a module to the configuration. All modules included in the standard distribution are defined in modules.xml, but you can define additional tags and their associated class in server.xml. This behaves like taskdef in ant. Attributes Attribute Description Default installDir Base directory for tomcat installation. It is typically guessed by the startup program, but you can override it here. TOMCAT_HOME or one level above the location of the startup script or tomcat.jar (if \"java -jar\" is used for startup). workDir Directory where temporary files will be created. Relative paths are interpreted as relative to TOMCAT_HOME. work home Base directory for the tomcat instance. While 'install' is used to find the libraries, 'home' is used to resolve almost all relative paths - webapps, work, etc. TOMCAT_HOME or the value guessed by the startup program. Example(s)  <ContextManager install=\"/opt/tomcat\" workDir=\"/var/tomcat\" home=\"/var\" /> Module Configuration Elements It is the set of modules and their configuration that control the behavior of the Tomcat web server. By specifying which modules and their attributes, you have a lot of flexibility in controlling the features of your instance of Tomcat. Note that \"interceptor\" is a name that used in the past, prior to the adoption",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

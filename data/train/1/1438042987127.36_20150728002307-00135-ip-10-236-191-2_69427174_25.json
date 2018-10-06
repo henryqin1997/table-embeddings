@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Maximum Number",
+            "2000",
+            "1328",
+            "300",
+            "1000",
+            "500",
+            "50",
+            "1000",
+            "500",
+            "3500"
+        ],
+        [
+            "Details",
+            "Audio ports using G.711 or G.729 (without LEC)",
+            "Audio ports using G.729 (with LEC), G.722, or iLBC",
+            "Video ports using standard rate video",
+            "Web sessions per Application Server",
+            "Number of concurrent audio and web meetings per Application Server",
+            "Simultaneous meetings that can be recorded",
+            "Largest possible audio meeting (or 999 when recorded1",
+            "Largest possible web meeting using Meeting Center meetings1",
+            "Largest possible meeting using Event Center as follows: Up to 500 users with speaking privileges on the Cisco Unified MeetingPlace audio bridge Up to 3000 users with listening-only privileges on the audio broadcast"
+        ]
+    ],
+    "pageTitle": "Cisco Unified MeetingPlace, Release 7.0 -- System Capacity Quick Reference Tables - DocWiki",
+    "title": "",
+    "url": "http://docwiki.cisco.com/w/index.php?title=Cisco_Unified_MeetingPlace,_Release_7.0_--_System_Capacity_Quick_Reference_Tables&oldid=33938",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987127.36/warc/CC-MAIN-20150728002307-00135-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 69442732,
+    "recordOffset": 69427174,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{13076=1000, 12660=1500, 41621=2000, 41754=1328, 36818=1300, 33334=2x1500}",
+    "textBeforeTable": "Capacity Does not support Cisco WebEx-scheduled meetings Supports both Cisco Unified MeetingPlace-scheduled meetings and reservationless meetings Single node configuration using the Hardware Media Server and Cisco Unified MeetingPlace web conferencing Six Video blades Six Audio blades Two Windows servers (the system supports a minimum of 2 servers but scales to 6 servers depending on your configuration and features) One Cisco Unified MeetingPlace Application Server using a minimum MCS-7845-I3-RC1 or equivalent. This configuration assumes the following: Configuration Details Release 7.0.3 (MR2) with Cisco Unified MeetingPlace Web Conferencing 9.6 Recommended Practices 9.5 Redundancy 9.4 Call Rate 9.3 Sizes 9.2 Capacity 9.1 Configuration Details 9 Release 8.0 Using a Hardware Media Server from Cisco WebEx 8.6 Recommended Practices 8.5 Redundancy 8.4 Call Rate 8.3 Sizes 8.2 Capacity 8.1 Configuration Details 8 Release",
+    "textAfterTable": "300 Largest possible web meeting when not using SSL or recording3 300 Largest possible web meeting when using SSL or recording3 20 Simultaneous Conference Manager sessions 1 Database replication connection per Windows cluster (internal and external). Customers desiring redundancy for the SQL database must set up a database cluster sharing that one replication connection. Footnote 1: When using a 7835 (I2 or H2) server, the maximum audio ports supports is 500, independent of audio mode. Footnote 2: We recommend that you schedule larger meetings. Footnote 3: The Cisco MCS 7845-I3 Web Server supports a maximum of 600 web ports per server. However, the largest supported web meeting per server is subject to the size of the largest supported audio meeting per server. Audio meetings are restricted to 300 ports due to the rate at which a single Audio blade can accept traffic. Sizes Maximum Size Component 250,000 User profiles in the database 400,000 Meetings in the database Call Rate Maximum Details 180 seconds Time to get all ports",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

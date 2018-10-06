@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2013-06-13T00:00:00",
+            "2013-11-23T00:00:00",
+            "2013-12-31T00:00:00"
+        ],
+        [
+            "Description",
+            "The technician processed the raw data to LAS format flight lines using the final GPS/IMU solution. This LAS data set was used as source data for boresight. The technician used commercial software to calculate initial boresight adjustment angles based on sample areas selected in the lift- mini project. These areas cover calibration flight lines collected in the lift, cross tie, and production flight lines. These areas are well distributed in the lift coverage and cover multiple terrain types that are necessary for boresight angle calculation. The technician then analyzed the result and made any necessary additional adjustment until it is acceptable for the mini project. Once the boresight angle calculation is complete for the mini project, the adjusted settings were applied to all of the flight lines of the lift and checked for consistency. The technician utilized commercial and proprietary software packages to analyze the matching between flight line overlaps for the entire lift to ensure that systematic errors are minimized for the lift and the results meet project requirements. Once all lifts are completed with boresight adjustment individually, the technician checked and corrected the vertical misalignment of all flight lines and also the matching between data and ground truth. The technician ran a final vertical accuracy check of the boresighted flight lines against the surveyed ground control points after the z correction to ensure the accuracy requirement of 18.5cm RMSE was met; see Attachment B: Accuracy Assessment Report for results. Pre-processing. Once boresighting is complete for the project, the project was set up for automatic classification first. The LiDAR data was cut to production tiles. The flight line overlap points, Noise points and Ground points were classified automatically in this process. Post-processing. Fugro has developed a unique method for processing LiDAR data to identify and re-classify elevation points falling on vegetation, building, and other above ground structures into separate data layers. The steps are as follows: Fugro utilized commercial software as well as proprietary software for automatic filtering. The parameters used in the process were customized for each terrain type to obtain optimum results. Once the automated filtering was completed, the files were run through a visual inspection to ensure that the filtering was not too aggressive or not aggressive enough. In cases where the filtering was too aggressive and important terrain features were filtered out, the data was either run through a different filter within local area or was corrected during the manual filtering process. Interactive editing was completed in visualization software which provides manual and automatic point classification tools. Fugro utilized commercial and proprietary software for this process. Vegetation and artifacts remaining after automatic data post-processing were reclassified manually through interactive editing. The hard edges of ground features that were automatically filtered out during the automatic filtering process were brought back into ground class during manual editing. The technician reviewed the LiDAR points with color shaded TINs for anomalies in ground class during interactive filtering. All LAS tiles went through peer review after the first round of interactive editing was finished. This helps to catch misclassification that may have been missed by the interactive editing. After the manual editing and peer review, and finalization of bare earth filtering, all tiles went through another final automated classification routine. This process ensures only the required classifications are used in the final product (all points classified into any temporary classes during manual editing were then re-classified into the project specified classifications). The classified LiDAR point cloud work tiles went through a water classification routine based on the collected water polygons. Also, during this process, the points originally classified as flight line overlap went through an automated classification to filter ground points and low points inside overlap areas.",
+            "The NOAA Coastal Services Center (CSC) received topographic files in .laz format from the Mississippi Department of Environmental Quality (MDEQ). The files contained lidar elevation measurements. The data were received in Mississippi State Plane West 2302, NAD83 coordinates and were vertically referenced to NAVD88 using the Geoid12a model. The vertical units of the data were feet. CSC performed the following processing for data storage and Digital Coast provisioning purposes: 1. The topographic laz files were converted from a Projected Coordinate System (Mississippi State Plane West 2302) to a Geographic Coordinate system (NAD83). 2. The topographic laz files' horizontal units were converted from feet to decimal degrees. 3. The topographic laz files were cleaned of erroneous bad elevations. 4. The topographic laz files' were converted from NAVD88 elevations to NAD83 ellipsoidal elevations using Geoid12a 5. Classification 11 was moved to classification 12 due to CSC system requirements (CSC class 11 is reserved for bathymetric points, though these points are truly overlap points, Class 12).",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Components NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/ms2013_mdeq_fema_rankinsimpson_m2595.xml",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/ms2013_mdeq_fema_rankinsimpson_m2595.xml&view=ISO19115Components-HTMLTable&title=Components%20NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/ms2013_mdeq_fema_rankinsimpson_m2595.xml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00273-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 630254924,
+    "recordOffset": 630245242,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:ms2013_mdeq_fema_rankinsimpson_m2595Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "Component Title Date Citation Identifier 1 2013 MDEQ-FEMA Rankin-Simpson Co. Lidar Survey 2013-11-23 2 Lidar Final Report 2 None 1 North American Datum 1983 2007-01-19 1 none Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 2 Citation URL http://csc.noaa.gov/htdata/lidar1_z/geoid12a/data/2595/supplemental/ms2013_mdeq_fema_rankinsimpson.pdf 1 DHS/FEMA > Federal Emergency Management Agency,",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

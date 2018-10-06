@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "API Call",
+            "Asynchronous",
+            "Description",
+            "Returns",
+            "Arguments",
+            "string key",
+            "object defaultvalue",
+            "Integer offset",
+            "ulong casunique"
+        ],
+        [
+            "object.Decrement(key, defaultvalue, offset, casunique)",
+            "no",
+            "Decrement the value of an existing numeric key. The Couchbase Server stores numbers as unsigned values. Therefore the lowest you can decrement is to zero.",
+            "CasResult ( Cas result of bool )",
+            "",
+            "Document ID used to identify the value",
+            "Value to be stored if key does not already exist",
+            "Integer offset value to increment/decrement (default 1)",
+            "Unique value used to verify a key/value combination"
+        ]
+    ],
+    "pageTitle": "Couchbase .NET SDK 1.2 \u2014 Developer Guide",
+    "title": "",
+    "url": "http://docs.couchbase.com/couchbase-sdk-net-1.2/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988250.59/warc/CC-MAIN-20150728002308-00059-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 67529159,
+    "recordOffset": 67471351,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{35795=This tutorial assumes that you have Visual Studio 2010 installed, along with ASP.NET MVC 4. You may use any edition of Visual Studio or you may use Visual Web Developer. Visual Studio 2012 will also work for this tutorial, but the screenshots included will be from Visual Studio 2012 Professional., 36370=You also may use an older version of ASP.NET MVC if you do not have MVC 4 installed, but as with using Visual Web Developer or Visual Studio 2012, the templates shown in the screenshots will vary from what you see., 102534=You should change the URI above to point at your server by replacing 10.0.0.33 with the IP address or hostname of your Couchbase server machine. Be sure you set your bucket name and password. You can also set the connection to use the default bucket, by setting the bucket attribute to default and leaving the bucketPassword attribute empty. In this case we have configured the server with a bucket named \u2018private\u2019 and with a password \u2018private.\u2019, 53207=At this point, you should build your application and navigate to the Breweries path (e.g., http://localhost:52962/breweries ). If all went well, you should see a list of breweries., 245017=queueTimeout (00:00:00.100) Specifies the amount of time after which the getting of a connection from the pool will fail. The default is 100 msec.}",
+    "lastModified": "Sat, 30 May 2015 02:15:19 GMT",
+    "textBeforeTable": ".Net Connection Operations\u00b6 .NET Method Summary\u00b6 Finally, a single tutorial can address only so many concerns.\u00a0 Clearly some shortcuts were taken with validation, exception handling and the like.\u00a0 Certain architectural patterns, such as dependency injection and MVVM were also omitted for the sake of brevity.\u00a0 The intent of this tutorial was to provide an intermediate introduction to Couchbase development with.NET.\u00a0 Your app should be able to make use of some or all of the patterns described. The code for this sample app is on GitHub at https://github.com/couchbaselabs/beer-sample-net.\u00a0 It contains all the code from this tutorial, plus the beer pages.\u00a0 It also contains some very minor style and navigation improvements (such as a home page).\u00a0 At this point, the brewery features are complete.\u00a0 Creating a set of pages for the beer documents is a similar exercise that is left to the reader.\u00a0 Using scaffolding and reusing the patterns from working with breweries, it shouldn\u2019t take much effort to build those features.\u00a0 Conclusion\u00b6 Compile and run these last changes.\u00a0 Navigate to /locations/details and you should see a map such as the one shown below. The details of the HERE API are beyond the scope of this tutorial.\u00a0 The basic idea though is that when the map is rendered, the bounding box coordinates are obtained and passed (via AJAX) to the Details POST method on",
+    "textAfterTable": "<add uri=\"http://10.0.0.34:8091/pools\"/> </servers> You should change the URI above to point at your server by replacing 10.0.0.33 with the IP address or hostname of your Couchbase server machine. Be sure you set your bucket name and password. You can also set the connection to use the default bucket, by setting the bucket attribute to default and leaving the bucketPassword attribute empty. In this case we have configured the server with a bucket named \u2018private\u2019 and with a password \u2018private.\u2019 Connections that you create with the.Net SDK are also thread-safe objects; for persisted connections, you can use a connection pool which contains multiple connection objects. You should create only a single static instance of a Couchbase client per bucket, in accordance with.Net framework. The persistent client will maintain connection pools per server node. For more information, see MSDN: AppDomain Class. Store Operations\u00b6 The Couchbase.NET Client Library store operations set information within the Couchbase database. These are distinct from the update operations in that the key does not have to exist within the Couchbase database before being stored. Store Methods\u00b6 The Store() methods add or replace a value in the database with the specified key. The behavior of Store and ExecuteStore operations is defined by setting the first parameter to a value from the StoreMode enumeration. StoreMode.Add - Add a key to the database, failing if the key exists StoreMode.Replace - Replace a key",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

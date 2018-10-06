@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Rule",
+            "Source",
+            "Results"
+        ],
+        [
+            "[:^L:] { a > b ;",
+            "a xa a",
+            "b xa b"
+        ]
+    ],
+    "pageTitle": "Transform Rule Tutorial - ICU User Guide",
+    "title": "",
+    "url": "http://userguide.icu-project.org/transforms/general/rules",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991076.30/warc/CC-MAIN-20150728002311-00020-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 238363831,
+    "recordOffset": 238343259,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{9782=Copyright (c) 2000 - 2009 IBM and Others}",
+    "lastModified": "Tue, 28 Jul 2015 07:39:06 GMT",
+    "textBeforeTable": "This direction is not reversible. The following table illustrates this situation: We will also verify that every Latin letter maps to a Greek letter. This insures that when we reverse the transliteration that the process can handle all the Latin letters. Some of the characters may not be visible on the screen unless you have a Unicode font with all the Greek letters. If you have a licensed copy of Microsoft\u00ae Office, you can use the \"Arial Unicode MS\" font, or you can download the CODE2000 font for free. For more information, see Display Problems? on the Unicode web site. In this example, we start with a set of rules for Greek since they provide a real example based on mathematics. We will use the rules that do not involve the pronunciation of Modern Greek; instead, we will use rules that correspond to the way that Greek words were incorporated into the English language. For example, we will transliterate \"\u0392\u03b9\u03bf\u03bb\u03bf\u03b3\u03af\u03b1-\u03a6\u03c5\u03c3\u03b9\u03bf\u03bb\u03bf\u03b3\u03af\u03b1\" as \"Biolog\u00eda-Physiolog\u00eda\", not as \"Violoh\u00eda-Fisioloh\u00eda\". To illustrate some of the trickier cases, we will also transliterate the Greek accents that are no longer in use in modern Greek. See Properties",
+    "textAfterTable": "In non-complex cases, we have a one-to-one relationship between letters in both Greek and Latin. These rules map between a source string and a target string. The following shows this relationship: \u03c0 <> p; This rule states that when you transliterate from Greek to Latin, convert \u03c0 to p and when you transliterate from Latin to Greek, convert p to \u03c0. The syntax is string1 <> string2 ; We will start by adding a whole batch of simple mappings. These mappings will not work yet, but we will start with them. For now, we will not use the uppercase versions of characters. One to One Mappings \u03b1 <> a; \u03b2 <> b; \u03b3 <> g; \u03b4 <> d; \u03b5 <> e; We will also add rules for completeness. These provide fallback mappings for Latin characters that do not normally result from transliterating Greek characters. Completeness Mappings \u03ba < c; \u03ba < q; Context and Range We have completed the simple one-to-one mappings and the rules for completeness. The next step is to look at the characters in context. In Greek, for example, the transform converts a \"\u03b3\" to an \"n\" if it is before any of the following characters: \u03b3,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

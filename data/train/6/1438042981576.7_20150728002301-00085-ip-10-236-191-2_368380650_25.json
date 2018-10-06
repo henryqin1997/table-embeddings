@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Command",
+            "database-mapping",
+            "debug lisp control-plane all"
+        ],
+        [
+            "Description",
+            "Configures an IPv6 EID-to-RLOC mapping relationship and its associated traffic policy.",
+            "Displays all possible debugging messages for the LISP control plane."
+        ]
+    ],
+    "pageTitle": "Cisco IOS IP Routing: LISP Command Reference - LISP Debug Commands [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_lisp/command/ip-lisp-cr-book/lisp-debug-cmds.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00085-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 368430715,
+    "recordOffset": 368380650,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{266839=The following is sample output from the debug lisp filter rloc command. In this example, a debug LISP filter is set for the locator 172.16.156.23, and then the debug lisp control-plane lig command is enabled. The lig command is used for the EID 172.16.12.1 (which is mapped to the locator 172.16.156.23 and matches the locator filter), and then repeated for the EID 172.16.8.1 (for which the locator does not match the locator filter) for comparison:, 367649=The following is sample output from the debug lisp forwarding virtual-interface-address command. In this example, the IP address of the LISP site (EID) interface is changed from 172.16.21.1/32 to 172.16.21.2/32., 248389=The following is sample output from the debug lisp filter eid command. In this example, a debug LISP filter is set for the EID 172.16.12.1/32, and then the debug lisp control-plane lig command is enabled. The lig command is used for the EID 172.16.12.1, and then repeated for the EID 172.16.8.1 for comparison. As shown, no debug output is displayed in the second case because the EID does not match the filter:, 249130=In this example, a debug LISP filter is set for the EID 172.16.12.1/32,}",
+    "textBeforeTable": "Command History Privileged EXEC (#) Command Modes This command has no arguments or keywords. Syntax Description Debugging output takes priority over other network traffic. The debug lisp control-plane all command generates more output than any other debug lisp control-plane command and can alter timing in the network node. Use of this command can severely diminish router performance or even render it unusable. In virtually all cases, you should use specific debug lisp control-plane commands. Caution Because the debug lisp control-plane all command can generate many messages and alter timing in the network node, use it only when instructed by authorized support personnel. Caution To turn on all possible debugging messages related to the Locator/ID Separation Protocol (LISP) control plane, use the debug all control-plane lisp debug no all control-plane lisp debug",
+    "textAfterTable": "Cisco IOS XE Release 3.3.0S This command was integrated into Cisco IOS XE Release 3.3.0S. 15.1(4)M This command was integrated into Cisco IOS Release 15.1(4)M. Usage Guidelines The debug lisp control-plane all command displays all possible debugging messages for the LISP control plane to help troubleshoot various LISP issues. Examples The following is sample output from the debug lisp control-plane all command. In this example, the lig command is used to query the mapping system for a remote endpoint identifier (EID) that is not currently in the local map cache as a test of the LISP control plane:  Router# debug lisp control-plane all Dec 15 16:30:19.524 PST: LISP RIB_RWATCH: Debugging is ON Router# lig self Mapping information for EID 172.16.21.0 from 172.16.156.222 with RTT 4 msecs 172.16.21.0/24, uptime: 00:00:00, expires: 23:59:57, via map-reply, self Locator Uptime State Pri/Wgt 192.168.156.222 00:00:00 up 1/100 Router# Dec 15 16:30:34.476 PST: LISP: LIG LIG request for IPv4, EIDs self, count 3. Dec 15 16:30:34.476 PST: LISP: Remote EID prefix 172.16.21.0/32, Change state to incomplete (method: LIG, state: unknown, rlocs: 0, local). Dec 15 16:30:34.508",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

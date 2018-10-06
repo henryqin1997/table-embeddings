@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "table_name",
+            "hist",
+            "isTopology",
+            "validTime",
+            "undo_space"
+        ],
+        [
+            "Description",
+            "Name of the table or (if isTopology is TRUE) Oracle Spatial topology, or a comma-delimited list of names of tables related by multilevel referential integrity constraints. (Multilevel referential integrity constraints are explained in Section 1.9.1.) The length of a table name must not exceed 25 characters. The table must not contain any columns with names that start with WM_ or WM$. The table name is not case sensitive.",
+            "History option, for tracking modifications to table_name. Must be one of the following values: NONE: No modifications to the table are tracked. (This is the default.) VIEW_W_OVERWRITE: The with overwrite (W_OVERWRITE) option. A view named _HIST (described in Section 5.43) is created to contain history information, but it will show only the most recent modifications to the same version of the table. A history of modifications to the version is not maintained; that is, subsequent changes to a row in the same version overwrite earlier changes. (The CREATETIME column of the _HIST view contains only the time of the most recent update.) VIEW_WO_OVERWRITE: The without overwrite (WO_OVERWRITE) option. A view named _HIST (described in Section 5.43) is created to contain history information, and it will show all modifications to the same version of the table. A history of modifications to the version is maintained; that is, subsequent changes to a row in the same version do not overwrite earlier changes.",
+            "A Boolean value (TRUE or FALSE). TRUE indicates that the value specified for the table_name parameter is the name of an Oracle Spatial topology (not a database table name), as explained in Section 1.14. FALSE (the default) indicates that the value specified for the table_name parameter is not an Oracle Spatial topology name.",
+            "A Boolean value (TRUE or FALSE). TRUE causes valid time support to be included. Workspace Manager valid time support is explained in Chapter 3. FALSE (the default) causes valid time support not to be included.",
+            "A string containing UNLIMITED (for no specified limit) or a number representing the maximum number of bytes for undo space available for the version-enable operation. Example: '1048576' for 1 megabyte. Any value specified overrides the value of the UNDO_SPACE Workspace Manager system parameter (described in Section 1.5)."
+        ]
+    ],
+    "pageTitle": "4 DBMS_WM Package: Reference",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B14117_01/appdev.101/b10824/long_ref.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00026-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74009211,
+    "recordOffset": 73942626,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{443687=The following example sets the session valid time to include all of the year 1998., 335495=The following example removes Workspace4 as a parent workspace of Workspace3. (See the hierarchy illustration in Figure 1-3 in Section 1.1.10.), 206247=If table_name is a version-enabled table, this function returns the name of the table, whose name is in the form <table_name>_LT, that was created by Workspace Manager when the EnableVersioning procedure was called. For information about these <table_name>_LT tables, see Section 1.1.11., 12184=The following example adds Workspace4 as a parent workspace of Workspace3. (See the hierarchy illustration in Figure 1-3 in Section 1.1.10.), 334226=This procedure is part of the support for the multiparent workspaces feature, which is described in Section 1.1.10. This procedure must be used only on a parent workspace that was previously added to the child workspace using the AddAsParentWorkspace procedure., 10617=This procedure is part of the support for the multiparent workspaces feature, which is described in Section 1.1.10. If workspace has only one parent workspace, this procedure makes workspace a multiparent workspace. If workspace is already a multiparent workspace, this procedure adds another parent workspace to workspace., 234524=The following example goes to a point at or near midnight at the start of 29-Jun-2001, depending on the history option currently in effect.}",
+    "lastModified": "Tue, 27 Jul 2004 16:30:00 GMT",
+    "textBeforeTable": "Table 4-21 EnableVersioning Procedure Parameters Parameters undo_space IN VARCHAR2 DEFAULT NULL); validTime IN BOOLEAN DEFAULT FALSE, isTopology IN BOOLEAN DEFAULT FALSE, hist IN VARCHAR2 DEFAULT 'NONE', table_name IN VARCHAR2, DBMS_WM.EnableVersioning( Syntax  Version-enables a table, creating the necessary structures to enable the table to support multiple versions of rows. EnableVersioning      DBMS_WM.DropReplicationSupport(); The following example drops replication support that had previously been enabled using the GenerateReplicationSupport procedure. Examples  This procedure drops replication support for any version-enabled tables at the nonwriter sites; however, it does not version-disable any version-enabled tables. You must execute this procedure as the replication administrator user at the writer site. To use this procedure, you must understand how replication applies to Workspace Manager objects, as explained in Appendix C. You must also understand the major Oracle replication concepts and techniques, which are documented in Oracle Database Advanced Replication and Oracle Database Advanced Replication Management API Reference. Usage Notes  None. Parameters  DBMS_WM.DropReplicationSupport(); Syntax  Deletes replication support objects that were created",
+    "textAfterTable": "Usage Notes The table that is being version-enabled must have a primary key defined. Only the owner of a table or a user with the WM_ADMIN role can enable versioning on the table. Tables that are version-enabled and users that own version-enabled tables cannot be deleted. You must first disable versioning on the relevant table or tables. Tables owned by SYS cannot be version-enabled. An exception is raised if one or more of the following apply: table_name is already version-enabled. table_name contains a list of tables and any of the tables has a referential integrity constraint with a table that is not in the list. table_name contains any columns whose names start with WM_ or WM$. If the table is version-enabled with the VIEW_WO_OVERWRITE hist option specified, this option can later be disabled and re-enabled by calling the SetWoOverwriteOFF and SetWoOverwriteON procedures. The history option enables you to log and audit modifications. The history option affects the behavior of the GotoDate procedure. See the Usage Notes for that procedure. If you want to version-enable a table in an Oracle replication environment, see Section C.2 for guidelines and other information. For information about Workspace Manager support for tables in an Oracle Spatial topology, see Section 1.14. Current notes and restrictions include the following: If you have referential integrity constraints on",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

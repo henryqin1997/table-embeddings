@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Option",
+            "connect \"/usr/bin/chat -f /etc/ppp/myisp-chat\"",
+            "user myname",
+            "remotename myisp",
+            "noauth",
+            "noipdefault",
+            "defaultroute",
+            "updetach",
+            "noccp"
+        ],
+        [
+            "Definition",
+            "Call the peer by using the chat script /etc/ppp/myisp-chat.",
+            "Use this account name for the local machine. myname is the name for this machine in the peer's /etc/ppp/pap-secrets file.",
+            "Recognize myisp as the name of the peer in the local machine's /etc/ppp/pap-secrets file.",
+            "Do not require calling peers to provide authentication credentials.",
+            "Do not use a default IP address for the local machine.",
+            "Use the default route that is assigned to the local machine.",
+            "Log errors in the PPP log files, rather than on the standard output.",
+            "Do not use CCP compression."
+        ]
+    ],
+    "pageTitle": "",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19253-01/816-4555/modemtm-1/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988051.33/warc/CC-MAIN-20150728002308-00305-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72301211,
+    "recordOffset": 72182702,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{539347=When uucico reads NY in the Systems file, uucico searches the Dialcodes file for NY and obtains the dialing sequence 1=212. 1=212 is the dialing sequence that is needed for any phone call to New York City. This sequence includes the number 1, an \u201cequal sign\u201d (=) meaning pause and wait for a secondary dial tone, and the area code 212. uucico sends this information to the dialer, then returns to the Systems file for the remainder of the phone number, 5551212., 508656=Some devices can be used at any speed, so the keyword Any can be used in the Class field. If Any is used, the line matches any speed that is requested in the Speed field of the Systems file. If this field is Any and the Systems file Speed field is Any, the speed defaults to 2400 bps., 461344=The directory /var/spool/uucppublic is the one place in every system to which UUCP by default is able to copy files. Every user has permission to change to /var/spool/uucppublic and read and write files in the directory. However, the directory's sticky bit is set, so the directory's mode is 01777. As a result, users cannot remove files that have been copied to it and that belong to uucp. Only you, as UUCP administrator logged in as root or uucp, can remove files from this directory. To prevent the uncontrolled accumulation of files in this directory, you should ensure that you remove files from it periodically., 9148=Sun, Andrew. Using and Managing PPP. O'Reilly & Associates, 1999., 482769=This field, also known as the Class field, specifies the transfer speed of the device that is used in establishing the communication link. The UUCP speed field can contain a letter and speed, such as C1200 or D1200, to differentiate between classes of dialers. Refer to Class Field in the /etc/uucp/Devices File., 539315=NY5551212, 9023=Carlson, James. PPP Design, Implementation, and Debugging. 2nd ed. Addison-Wesley, 2000., 337900=OK ATDT1-123-555-1234, 399321=pppoe.so is the PPPoE shared object that must be loaded by PPPoE to provide PPPoE capability to access servers and clients. The pppoe.so shared object limits MTU and MRU to 1492, filters packets from the driver, and handles runtime PPPoE messages., 10330=1661 and 1662, which describe the major features of PPP, 480011=The time portion should be a range of times that are specified in 24-hour notation, for example, 0800-1230 for 8:30 a.m. to 12:30 p.m. If no time portion is specified, any time of day is assumed to be allowed for the call., 10409=1334, which describes authentication protocols, such as Password Authentication Protocol (PAP) and Challenge-Handshake Authentication Protocol (CHAP), 10582=1332, an informational RFC that describes PPP over Ethernet (PPPoE), 325917=Call the remote peer by using the phone number 123-555-1212.\u00a0, 119063=Assigns the IP address 10.0.0.80 to all peers that are calling in over serial port ttya, 371624=secret5748 and secret91011 indicates the CHAP secret for each caller., 30184=Solaris PPP 4.0 does not implement the PPP Encryption Control Protocol (ECP), which is described in RFC 1968., 137655=192.168.130.10:10.0.0.25, 507177=The Class field contains the speed of the device, if the keyword ACU or Direct is used in the Type field. However, the Class field can contain a letter and a speed, such as C1200 or D1200, to differentiate between classes of dialers, such as Centrex or Dimension PBX., 3821=Since the early 1990s, PPP has been a widely used Internet standard for sending datagrams over a communications link. The PPP standard is described in RFC 1661 by the Point-to-Point Working Group of the Internet Engineering Task Force (IETF). PPP is commonly used when remote computers call an Internet service provider (ISP) or a corporate server that is configured to receive incoming calls., 390251=pppoe.so is the PPPoE shared object file that must be invoked by PPPoE access servers and clients. This file limits MTU and MRU to 1492, filters packets from the driver, and negotiates the PPPoE tunnel, along with pppoed. On the access server side, pppoe.so is automatically invoked by the pppd daemon.}",
+    "lastModified": "Thu, 06 Jan 2011 11:50:41 GMT",
+    "textBeforeTable": "Both dial-up and leased-line links involve two peers that are connected by a communications medium. The next table summarizes the differences between the link types. Comparison of Dial-up and Leased-Line Links A hardwired, leased-line PPP configuration involves two peers that are connected by a link. This link consists of a switched or an unswitched digital service leased from a provider. Solaris PPP 4.0 works over any full-duplex, point-to-point leased-line medium. Typically, a company rents a hardwired link from a network provider to connect to an ISP or other remote site. Leased-Line PPP Overview The dial-out machine can then run telnet or a similar command to a host that is reachable through the dial-in server. PPP's Network Control Protocols (NCPs) negotiate the use of network protocols, such as IPv4 or IPv6. If necessary, the peers authenticate each other. PPP on both peers enters Establish phase, where Link Control Protocol (LCP) negotiates basic link parameters and the use of authentication. When modem-to-modem negotiation is completed, the modem on the dial-out machine reports \u201cCONNECT.\u201d Modem attached to the dial-in server begins link negotiation with the modem on the dial-out machine. Modem dials the phone number to establish a telephone connection with the modem on the dial-in server. The series of text strings that the dial-out machine sends to the modem and dial-in",
+    "textAfterTable": "are described in the following context.\" src=\"http://docsmaster.sfbay.sun.com:8081/stage-1-book-export/xml-formatted//816-4555/images/basic-leased.gif\" /> The leased-line link contains the following parts: Two peers, each peer at one end of the link. Each peer might be a workstation or server. Often the peer functions as a router between its network or the Internet, and the opposite peer. Synchronous interface on each peer. Some machines that run Solaris software require you to purchase a synchronous interface card, such as HSI/P, to connect to a leased line. Other machines, such as UltraSPARC\u00ae workstations, have built-in synchronous interfaces. CSU/DSU synchronous digital unit on each peer, which connects the synchronous port to the leased line. A CSU might be built-in to the DSU, or owned by you, or leased from a provider, depending on your locale. The DSU gives the Solaris machine a standard synchronous serial interface. With Frame Relay, the Frame Relay Access Device (FRAD) performs the serial interface adaptation. Leased line, providing switched or unswitched digital services. Some examples are SONET/SDH, Frame Relay PVC, and T1. What Happens During Leased-Line Communications On most types of leased lines, peers do not actually dial each other. Rather, a company purchases a leased-line service to connect explicitly between two fixed locations. Sometimes the two peers at either end of the leased line are at different physical locations of the same company. Another scenario is a",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

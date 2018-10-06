@@ -1,0 +1,73 @@
+{
+    "relation": [
+        [
+            "Value",
+            "0",
+            "1",
+            "14",
+            "15",
+            "16",
+            "17",
+            "30",
+            "31",
+            "32",
+            "33"
+        ],
+        [
+            "p",
+            "0",
+            "0",
+            "0",
+            "0",
+            "10",
+            "10",
+            "10",
+            "10",
+            "110",
+            "110"
+        ],
+        [
+            "q (base 4)",
+            "00",
+            "01",
+            "32",
+            "33",
+            "00",
+            "01",
+            "32",
+            "33",
+            "000",
+            "001"
+        ],
+        [
+            "q (binary)",
+            "0000",
+            "0001",
+            "1110",
+            "1111",
+            "0000",
+            "0001",
+            "1110",
+            "1111",
+            "000000",
+            "000001"
+        ]
+    ],
+    "pageTitle": "5.3.\u00a0Internal file formats",
+    "title": "",
+    "url": "http://www.nongnu.org/chmspec/latest/Internal.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.88/warc/CC-MAIN-20150728002308-00071-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 615991903,
+    "recordOffset": 615967546,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{64010=Each 0x1000 byte block has the following format., 52802=This file is made up of 0x1000 byte blocks, but this is only apparent because of extra bytes interrupting what would otherwise be a stream of 20/28 byte structs. If the other parts (DWORDs & 16 byte structs) didn't fit into these blocks then presumably this would show up in the other parts too., 121089=This file has a 76 byte header, then 2048 byte blocks. First come all the listing blocks, then all the index blocks. This file is similar to the directory entries in the ITSF format, except that the index blocks are at the end instead of interspersed with the listing blocks. All block indices below are zero based. This file forms a tree, with the last (index mostly) block being the root of the tree. If there is more than one level of index blocks then the root block will have two children; the first in the block header and the second in the entry. WARNING: just as in the ITSF directory there can be garbage in the free space, so respect that first WORD and use it. I'm not yet sure how the listing blocks are split up, though it is probably the same as the ITSF directory (space filling).}",
+    "textBeforeTable": "Table\u00a05.24.\u00a0Example of scale and root encoding where scale is greater than 2. A scale other than 2 has never been seen, so it is hard to say how s/r encoding works when s=4, etc. The following is how it might work using s=4, r=2 i.e. a base-4 digit is added each time, meaning two bits added each time.: 000000 11110 64 11111 1110 63 11110 1110 62 00010 1110 34 00001 1110 33 00000 1110 32 1111 110 31 1110 110 30 0010 110 18 0001 110 17 0000 110 16 111 10 15 010 10 10 001 10 9 000 10 8 111 0 7 010 0 2 001 0 1 000 0 0 q p Value Table\u00a05.23.\u00a0Example of scale and root encoding The integer is encoded as two parts, p (prefix) and q",
+    "textAfterTable": "Of course, this is all wild speculation, since examples with s other than 2 haven't been seen... But the codes do work this way (i.e. prepending a 1 to the prefix multiplies the additive value 'b' by s and adds another log2(s) bits.) 5.3.13.4.\u00a0Examples This is all fairly complex, so some examples will be extremely useful here. First a short ficticious example, then an example from the real world. The following table is a ficticious example of how the words appear in leaf nodes. The storage of words in index nodes is the same as in leaf nodes, except some fields are gone. Table\u00a05.25.\u00a0Example leaf node entries Stored word Whole word Length+1 to add Position to add at Context john john 5 0 0 \u00a0\u00a0sh josh 3 2 0 \u00a0\u00a0\u00a0\u00a0ington joshington 7 4 0 \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 joshington 1 10 1 (title) This example is taken from a copy of windows.chm, the system documentation apparently distributed with some version of Windows 98: Hex dump of two leaf node entries:  000223d: 02 00 31 ...0...........1 0002240: 00 0a 03 04 00 00 00 00 1d 01",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

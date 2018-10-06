@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Column Name",
+            "TRC_ID",
+            "TRC_VALUE"
+        ],
+        [
+            "Type",
+            "BINARY_INTEGER",
+            "NUMBER"
+        ],
+        [
+            "Description",
+            "Trace ID.",
+            "Current trace value."
+        ]
+    ],
+    "pageTitle": "Oracle Text Views",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B19306_01/text.102/b14218/aviews.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.50/warc/CC-MAIN-20150728002310-00269-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 77399267,
+    "recordOffset": 77379800,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 13 May 2015 05:07:03 GMT",
+    "textBeforeTable": "This view contains one row for each active trace, and shows the current value of each trace. CTX_TRACE_VALUES Thesaurus scope notes. VARCHAR2(2000) THP_SCOPE_NOTE Thesaurus qualifier. VARCHAR2(256) THP_QUALIFIER Thesaurus phrase. VARCHAR2(256) THP_PHRASE Thesaurus name. VARCHAR2(30) THP_THESAURUS Description Type Column Name This view displays phrase information for all thesauri in the Text data dictionary. It can be queried by any user. CTX_THES_PHRASES Thesaurus name. VARCHAR2(30) THS_NAME Thesaurus owner. VARCHAR2(30) THS_OWNER Description Type Column Name This view displays information about all the thesauri",
+    "textAfterTable": "CTX_USER_INDEXES This view displays all indexes that are registered in the Text data dictionary for the current user. It can be queried by all users. Column Name Type Description IDX_CHARSET_COLUMN VARCHAR2(256) Name of the charset column of base table. IDX_DOCID_COUNT NUMBER Number of documents indexed. IDX_FORMAT_COLUMN VARCHAR2(256) Name of the format column of base table. IDX_ID NUMBER Internal index id. IDX_KEY_NAME VARCHAR(256) Primary key column(s). IDX_LANGUAGE_COLUMN VARCHAR2(256) Name of the language column of base table. IDX_NAME VARCHAR2(30) Name of index. IDX_STATUS VARCHAR2(12) Status, either INDEXED or INDEXING. IDX_SYNC_INTERVAL VARCHAR2(2000) This is the interval string required by scheduler job.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

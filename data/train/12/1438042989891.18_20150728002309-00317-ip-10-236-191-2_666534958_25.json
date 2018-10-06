@@ -1,0 +1,84 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "154.10000",
+            "154.13000",
+            "154.19000",
+            "155.64000",
+            "158.85750"
+        ],
+        [
+            "License",
+            "",
+            "",
+            "",
+            "KNCD578",
+            ""
+        ],
+        [
+            "Type",
+            "BM",
+            "BM",
+            "BM",
+            "BM",
+            "RM"
+        ],
+        [
+            "Tone",
+            "",
+            "",
+            "136.5 PL",
+            "860 NAC",
+            ""
+        ],
+        [
+            "Alpha Tag",
+            "RaymondFD1",
+            "RaymondFD2",
+            "Raymond FD",
+            "Raymond PD",
+            "Raymond PD"
+        ],
+        [
+            "Description",
+            "Raymond Fire Channel 1",
+            "Raymond Fire Channel 2",
+            "Raymond Fire Department",
+            "Raymond Police Dispatch",
+            "Raymond Police Channel 2"
+        ],
+        [
+            "Mode",
+            "FMN",
+            "FMN",
+            "FM",
+            "P25",
+            "FMN"
+        ],
+        [
+            "Tag",
+            "Fire Dispatch",
+            "Fire Dispatch",
+            "Fire Dispatch",
+            "Law Dispatch",
+            "Law Dispatch"
+        ]
+    ],
+    "pageTitle": "Rockingham County, New Hampshire (NH) Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?ctid=1768",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00317-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 666551935,
+    "recordOffset": 666534958,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "\u00a0Rockingham County switches all units to the \"C\" channel, which is a repeater, after midnight for officer safety. Law Enforcement Rockingham County //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { }); }); } act=1; setEsc(this,origHtml); this.innerHTML = getTagsHTML; getTagsHTML +=",
+    "textAfterTable": "154.19000\u00a0 WNEB875\u00a0 B 136.5 PL Seacoast NET Seacoast Fire Mutual Aid Dispatch\u00a0 FMN\u00a0 Fire Dispatch\u00a0 155.34000\u00a0 KNEM443\u00a0 BM 141.3 PL Med-1 EMS Med-1 EMS-to-Hospital\u00a0 FMN\u00a0 Hospital\u00a0 155.38500\u00a0 KNEM443\u00a0 BM 141.3 PL Med-2 EMS Med-2 EMS-to-Hospital (rarely used)\u00a0 FMN\u00a0 Hospital\u00a0 Services Frequency\u00a0 License\u00a0 Type\u00a0",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Assigned:",
+            "Status:",
+            "Issue tags:"
+        ],
+        [
+            "pfrenssen",
+            "Needs work",
+            "-Needs reroll"
+        ],
+        [
+            "\u00bb Unassigned",
+            "\u00bb Needs review",
+            ""
+        ]
+    ],
+    "pageTitle": "Remove taxonomy term description field; provide description field for forum taxonomy [#569434] | Drupal.org",
+    "title": "",
+    "url": "https://www.drupal.org/node/569434",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00257-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 906687395,
+    "recordOffset": 906629571,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{216677=Based on #57, the 0s for vid should have been taken care of. But this patch still needs tests. I've been out of the loop on a number of things Drupal related (and entirely my fault) but should be able to dedicate more and more time again soon. I'm assigning it to myself for now (hopefully this gets me to commit to figuring out tests) and if I don't do so myself, someone can unassign me if I don't answer back before September 14., 405334=+++ b/core/modules/taxonomy/taxonomy.module @@ -1199,3 +1187,54 @@ function taxonomy_library_info() { + * Adds the default description field to a taxonomy term type. ... +function taxonomy_add_description_field(VocabularyInterface $type, $label = 'Description') {}",
+    "lastModified": "Tue, 04 Aug 2015 09:45:31 GMT",
+    "textBeforeTable": "October 13, 2009 at 2:50pm CreditAttribution: catch commented catch Comment #3 Log in or register to post comments See also #557292: TF #3: Convert node title to fields for node title. This would allow for translation of terms in core when translatable fields fully lands - which ought to let us deprecate some or all of i18n_taxonomy.module in contrib. September 5, 2009 at 5:39pm CreditAttribution: catch commented catch Comment #1 Comments Jody Lynn 14.79 KB 569434.patch #9 Jody Lynn",
+    "textAfterTable": "Log in or register to post comments Comment #4 sun CreditAttribution: sun commented November 7, 2009 at 4:47am #553326: Provide consistency to the way field UI is presented adds a 'format' column to taxonomy_term_data... Log in or register to post comments Comment #6 xjm CreditAttribution: xjm commented November 20, 2011 at 1:41pm Title: Convert taxonomy term subject and description to fields \u00bb Convert taxonomy term description to a normal field Marked #1152624: Add label for 'Description' field in view mode as duplicate of this",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Optimization",
+            "Keep-alive Enabled",
+            "Compress Text",
+            "Compress Images",
+            "Cache Static Content",
+            "Combine JS/CSS"
+        ],
+        [
+            "Percent of pages with a passing grade (2010)",
+            "87%",
+            "62.5%",
+            "59.5%",
+            "53.5%",
+            "19%"
+        ]
+    ],
+    "pageTitle": "ProjectX Blog",
+    "title": "",
+    "url": "http://www.projectx.co.nz/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989507.42/warc/CC-MAIN-20150728002309-00338-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 657611955,
+    "recordOffset": 657592339,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{16542=All of the site were selected from the previous full download speed audit in July. Full results and videos of all 40 tests are available on the Google docs spreadsheet.}",
+    "TableContextTimeStampAfterTable": "{25090=projectx@projectx:/px/sites/httparchive$ ab -n 1000 -c 100 http://www.projectx.co.nz/ This is ApacheBench, Version 2.3 <$Revision: 655654 $> Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/ Licensed to The Apache Software Foundation, http://www.apache.org/, 26411=Connection Times (ms) min mean[+/-sd] median max Connect: 0 1 3.2 0 13 Processing: 474 10689 2000.6 11051 12967 Waiting: 272 10458 1996.3 10821 12692 Total: 487 10690 1997.7 11051 12967, 38558=How? We used the website webpagetest.org website on 1.5Mb DSL connection\u00a0Broadband in Wellington NZ to simulate a fair test of all the webpages. The test took page over the weekend 4th and 5th of December. *** (The ird.govt.nz site was re-tested on the 8th of December after they improved their download size from >2Mb), 47282=How? We used the website\u00a0webpagetest.org website on 1.5Mb DSL connection\u00a0Broadband in Wellington NZ to simulate a fair test of all the webpages. The test took page over the weekend 4th and 5th of December., 53374=I\u2019ve been inspired by Pat Meenan\u2019s excellent posts of the State of optimization summary and the state of web performance optimization 2010 , so I thought I\u2019d do another \u201cHomepage hall of shame\u201c. \u2013 which is a web performance review of the top 100 NZ based websites. (Top 100 sites is based on Alexa traffic)., 25409=Benchmarking www.projectx.co.nz (be patient) Completed 100 requests Completed 200 requests Completed 300 requests Completed 400 requests Completed 500 requests Completed 600 requests Completed 700 requests Completed 800 requests Completed 900 requests Completed 1000 requests Finished 1000 requests, 26641=Percentage of the requests served within a certain time (ms) 50% 11051 66% 11220 75% 11381 80% 11525 90% 11927 95% 12409 98% 12687 99% 12799 100% 12967 (longest request), 15871=How? We used the website\u00a0webpagetest.org website on 20Mb Office connection\u00a0Broadband in Wellington NZ to simulate a fair test of all the webpages. The test took page over the week of 2nd to 11th of July., 25955=Concurrency Level: 100 Time taken for tests: 112.181 seconds Complete requests: 1000 Failed requests: 0 Write errors: 0 Total transferred: 85937000 bytes HTML transferred: 85698000 bytes Requests per second: 8.91 [#/sec] (mean) Time per request: 11218.133 [ms] (mean) Time per request: 112.181 [ms] (mean, across all concurrent requests) Transfer rate: 748.10 [Kbytes/sec] received, 27382=projectx@projectx:~$ ab -n 1000 -c 100 http://www.projectx.co.nz/ This is ApacheBench, Version 2.3 <$Revision: 655654 $> Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/ Licensed to The Apache Software Foundation, http://www.apache.org/, 7629=How? We used the website webpagetest.org website on 1.5Mb DSL connection\u00a0Broadband and 20Mb Office network connection in Wellington NZ to simulate a fair test of all the webpages. The test took page over the week of the 2nd to 11th of July., 28227=Concurrency Level: 100 Time taken for tests: 0.366 seconds Complete requests: 1000 Failed requests: 0 Write errors: 0 Total transferred: 86009000 bytes HTML transferred: 85689000 bytes Requests per second: 2733.35 [#/sec] (mean) Time per request: 36.585 [ms] (mean) Time per request: 0.366 [ms] (mean, across all concurrent requests) Transfer rate: 229582.36 [Kbytes/sec] received, 29104=Its a massive improvement from 8 reqs/sec to 2700 reqs/sec. Now I can remove Nginx from the mix, and now to tune mod_pagespeed to optimise my site}",
+    "textBeforeTable": "10 slowest homepages I want to see if the \u201cquality\u201d of a page affects the ability of the browser to download and render the pages faster. Also, I want to see if network speed has any affect on the ability of browser to the load the pages faster. From a technical point of view (browserscope), both browsers have network similar capabilities \u2013 both browsers can load from 6 hosts at once and have a maximum of 35 connections open at one time. Summary results Chrome vs Ie8 Homepage testing \u2013 20mbit network connection 10 fastest homepages 10 worst optimised homepages 10 top optimised homepages I\u2019ve created a mini-test of 40 New Zealand homepages. I\u2019ve split the test into 4 tests of download performance, that represent a cross-section of the best and the worst that NZ homepages have to offer. Recently, Gomez released information that Google Chrome was the fastest browser from real world testing. That got me thinking, how does Chrome compare to IE8 for New Zealand webpages. For most websites, IE8 is the most popular browser, so it will be an interesting piece of research. Introduction August 30th, 2011 NZ Homepage Drag Race \u2013 Chrome vs IE8 \u2013 which is faster ? Just another",
+    "textAfterTable": "4% 0.06s 10 slowest homepages 20mb Chrome 10/10 114% 5.02s Chrome vs Ie8 Homepage testing \u2013 1.5mbit network connection Test Network Winner % faster Ave secs faster Top 10 optimised homepages 1.5mb Chrome 5/10 0% 0.15s Worst 10 optimised homepages 1.5mb Chrome 10/10 41% 1.49s Top 10 fastest homepages 1.5mb Chrome 6/10 21% 0.29s Top 10 slowest homepages 1.5mb Chrome 10/10 68% 7.18s All of the site were selected from the previous full download speed audit in July. Full results and videos of all 40 tests are available on the Google docs spreadsheet. Key findings Chrome is at least 51% faster than IE8 faster across all tests. There was some \u201cglitches\u201d where IE8 was faster by a couple of seconds eg. On Geekzone.co.nz, IE8 loaded the page 2 secs faster than Chrome. IE8 and Chrome were more evenly matched for the top optimised pages. For DSL speed, it was a tie 5-5 between Chrome and IE8, 20mbit it was 7-3 in favour of Chrome. The most interesting point of the tests was for the slowest and",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

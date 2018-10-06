@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Release",
+            "12.2(28)SB",
+            "12.2(31)SB2"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "The variable keyword and varname argument were added."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Intelligent Services Gateway Command Reference - A through L\u00a0 [Support] - Cisco Systems",
+    "title": "",
+    "url": "https://www.cisco.com/en/US/docs/ios-xml/ios/isg/command/A_through_L.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00176-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 898730607,
+    "recordOffset": 898629421,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{79113=The following example configures ISG to listen for accounting packets on port 1200 for the RADIUS proxy client with the IP address 10.10.10.10:, 75534=Port on which ISG listens for accounting packets from RADIUS proxy clients. The default is 1646., 760255=2016, 332610=The following example shows the configuration of global RADIUS proxy parameters and client-specific parameters for two RADIUS proxy clients. Client 10.1.1.1 is configured to listen for accounting packets on port 1813 and authentication packets on port 1812. Because a shared secret is not configured specifically for client 10.1.1.1, it will inherit the shared secret specification, which is \u00e2\u0080\u009ccisco\u00e2\u0080\u009d, from the global RADIUS proxy configuration. Client 10.2.2.2 will use \u00e2\u0080\u009csystems\u00e2\u0080\u009d as the shared secret and will use the default ports for listening for accounting and authentication packets., 205872=(Optional) Specifies the relative priority of the traffic class. Traffic class priority determines the order in which traffic policies are applied to a session. Range is 1 to 1000, where 1 is the highest priority and 1000 is the lowest. Default is 0 (undefined)., 582066=Interval, in minutes, between prepaid accounting record updates. Range is from 1 to 1440., 267353=The following example clears all sessions associated with the RADIUS proxy client that has the IP address 10.10.10.10 and associated is with the VRF \u00e2\u0080\u009cblue\u00e2\u0080\u009d:, 78890=The following example configures ISG to listen for accounting packets on port 1200 for all RADIUS proxy clients:, 758947=32256, 760582=1008, 761796=1024, 118826=The following example configures ISG to listen for authentication packets on port 1200 for all RADIUS proxy clients:, 115516=Port on which ISG listens for authentication packets from RADIUS proxy clients. The default is 1645., 762331=The following example results in 64 ports per bundle and 1008 bundles per group:, 35643=The following example configures the ISG to act as a AAA server when interacting with the client at IP address 10.12.12.12:, 113296=To specify the port on which Intelligent Services Gateway (ISG) listens for authentication packets from RADIUS proxy clients, use the authentication port command in RADIUS proxy server configuration or RADIUS proxy client configuration mode. To return to the default setting in which ISG listens for accounting packets on port 1645, use the no form of this command., 76075=ISG listens for accounting packets from RADIUS proxy clients on port 1646., 119057=The following example configures ISG to listen for authentication packets on port 1200 for the RADIUS proxy client with the IP address 10.10.10.10 :, 575296=Number of the multiservice interface. Range is 0 to 1024., 116061=ISG listens for authentication packets from RADIUS proxy clients on port 1645.}",
+    "textBeforeTable": "Command History Control policy-map class configuration Command Modes The control policy will not initiate authentication. Command Default Specifies the default AAA method list to which the authentication request will be sent. default Specifies the AAA method list to which the authentication request will be sent. list-name (Optional) Specifies that authentication will be performed using an authentication, authorization, and accounting (AAA) method list. aaa list Specifies that user authentication will be performed on the contents of the varname value, if present. varname (Optional) Authenticates using the contents of the varnamevalue instead of the unauthenticated username. If you do not specify an aaa list, the default AAA authentication list is used. variable",
+    "textAfterTable": "Usage Guidelines The authenticate command configures an action in a control policy map. Control policies define the actions the system will take in response to specified events and conditions. A control policy map is used to configure an ISG control policy. A control policy is made of one or more control policy rules. A control policy rule is an association of a control class and one or more actions. The control class defines the conditions that must be met before the actions will be executed. The actions are numbered and executed sequentially within the policy rule. Note that if you specify the default method list, the default list will not appear in the output of the show running-config command. For example, if you configure the following command:  Router(config-control-policymap-class-control)# 1 authenticate aaa list default  the following will display in the output for the show running-config command:  1 authenticate Named method lists will display in the show running-config command output. Examples The following example shows an ISG configured to initiate an authentication request upon account logon. The authentication request will be sent to the AAA method list called AUTH-LIST.  policy-map type control LOGIN class type control",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

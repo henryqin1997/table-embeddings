@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Property",
+            "bubbles",
+            "cancelable",
+            "currentTarget",
+            "columnIndex",
+            "rowIndex",
+            "column",
+            "target",
+            "type"
+        ],
+        [
+            "Value",
+            "false",
+            "true",
+            "The Object that defines the event listener that handles the event. For example, if you use myButton.addEventListener() to register an event listener, myButton is the value of the currentTarget.",
+            "The zero-based column index of the requested item editor.",
+            "The zero-based row index of the requested item editor.",
+            "The column of the cell associated with the edit request.",
+            "The Object that dispatched the event; it is not always the Object listening for the event. Use the currentTarget property to always access the Object listening for the event.",
+            "GridItemEditorEvent.GRID_ITEM_EDITOR_SESSION_STARTING"
+        ]
+    ],
+    "pageTitle": "DataGrid - Adobe ActionScript\u00ae 3 (AS3 Flex) API Reference",
+    "title": "",
+    "url": "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/spark/components/DataGrid.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 325,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00142-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 109297223,
+    "recordOffset": 109223806,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The properties of the event object have the following values: caretChange event, which indicates that the current caret position has just been changed. type property of the event object for a GridSelectionEvent.CARET_CHANGE constant defines the value of the The To handle this event, assign an event handler to the grid skin part of the DataGrid control. Dispatched by the grid skin part when the caret position, size, or visibility has changed due to user interaction or being programmatically set. Flash Player 10, AIR 2.5 Runtime Versions:\u00a0 Flex 4.5 Product Version:\u00a0 ActionScript 3.0 Language Version:\u00a0 spark.events.GridCaretEvent.CARET_CHANGEproperty GridCaretEvent.type = spark.events.GridCaretEventEvent Object Type: Event caretChange Event Detail Boolean \u2014 true if the editor session was started. Returns false if the editor session was cancelled or was otherwise unable to be started. Note that an editor session cannot be started in a column that is not visible. Returns columnIndex:int \u2014 The zero-based column index of the cell",
+    "textAfterTable": "type GirdCaretEvent.CARET_CHANGE gridClick Event \u00a0 Event Object Type: spark.events.GridEvent property GridEvent.type = spark.events.GridEvent.GRID_CLICK Language Version:\u00a0 ActionScript 3.0 Product Version:\u00a0 Flex 4.5 Runtime Versions:\u00a0 Flash Player 10, AIR 2.5 Dispatched by the grid skin part when the mouse is clicked over a cell. To handle this event, assign an event handler to the grid skin part of the DataGrid control. The value of the type property for a gridClick GridEvent. The properties of the event object have the following values: Property Value bubbles false cancelable false currentTarget The Object that defines the event listener that handles the event. For example, if you use myButton.addEventListener() to register an event listener, myButton is the value of the currentTarget. column The column where the event occurred, or null if the event did not occur over a column. columnIndex The index of the column where the event occurred, or -1 if the event did not occur over a grid column. grid The Grid",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

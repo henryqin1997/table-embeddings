@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "model_name",
+            "data_table_name",
+            "case_id_column_name",
+            "result_table_name",
+            "data_schema_name"
+        ],
+        [
+            "Description",
+            "Name of the model in the form [schema_name.]model_name. If you do not specify a schema, your own schema is used.",
+            "Name of table or view representing data to be scored",
+            "Name of the case identifier column",
+            "Name of the table to store apply results",
+            "Name of the schema containing the data to be scored"
+        ]
+    ],
+    "pageTitle": "DBMS_DATA_MINING",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/appdev.112/e16760/d_datmin.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00267-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70790039,
+    "recordOffset": 70722592,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 14 Aug 2010 15:00:20 GMT",
+    "textBeforeTable": "Table 44-22 APPLY Procedure Parameters Parameters data_schema_name IN VARCHAR2 DEFAULT NULL); result_table_name IN VARCHAR2, case_id_column_name IN VARCHAR2, data_table_name IN VARCHAR2, model_name IN VARCHAR2, DBMS_DATA_MINING.APPLY ( Syntax  \"Scoring and Deployment\" in Oracle Data Mining Application Developer's Guide and \"Data Mining Functions\" in Oracle Database SQL Language Reference can also be performed directly in SQL using the Data Mining functions. See Note: Scoring In Oracle Data Mining, the apply operation is not applicable to association models and attribute importance models. For predictive mining functions, the apply process generates predictions in a target column. For descriptive mining functions such as clustering, the apply process assigns each case to a cluster with a probability. This procedure applies a mining model to the data of interest, and generates the results in a table. The apply process is also referred to as scoring. APPLY Procedure 100010 Cluster 8 100009 Cluster 8 100008 Cluster 14 100007 Cluster 18 100006 Cluster 7 100005 Cluster 19 100004 Cluster 18 100003 Cluster 14 100002 Cluster 14 100001 Cluster 18 ------- ------------------------------------------------ CUST_ID CLUSTER_ID ORDER by cust_id; WHERE cust_id < 100011 FROM sh_aprep_num SELECT cust_id, cluster_id(sh_clus using *) cluster_id /",
+    "textAfterTable": "Usage Notes The data provided for APPLY must undergo the same preprocessing as the data used to create and test the model. When you use Automatic Data Preparation, the preprocessing required by the algorithm is handled for you by the model \u2014 both at build time and apply time. (See \"Automatic Data Preparation\".) APPLY creates a table in the user's schema to hold the results. The columns are algorithm-specific. The columns in the results table are listed in Table 44-23 through Table 44-27. The case ID column name in the results table will match the case ID column name provided by you. The type of the incoming case ID column is also preserved in APPLY output. Note: Make sure that the case ID column does not have the same name as one of the columns that will be created by APPLY. For example, when applying a classification model, the case ID in the scoring data must not be ' PREDICTION' or ' PROBABILITY' (See Table 44-23). The data type for the 'PREDICTION', 'CLUSTER_ID', and 'FEATURE_ID' output columns is influenced by any reverse expression that is embedded in the model by the user. If the user does not provide a reverse expression that alters the scored value type, then the types will conform to the descriptions in the following tables. See \"ALTER_REVERSE_EXPRESSION Procedure\".",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

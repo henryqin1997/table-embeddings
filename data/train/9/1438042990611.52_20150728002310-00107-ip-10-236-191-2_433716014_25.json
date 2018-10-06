@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "",
+            "Model Better",
+            "RW Better"
+        ],
+        [
+            "h=1",
+            "8",
+            "2"
+        ],
+        [
+            "h=3",
+            "8",
+            "1"
+        ],
+        [
+            "h=6",
+            "8",
+            "0"
+        ],
+        [
+            "h=9",
+            "8",
+            "0"
+        ],
+        [
+            "h=12",
+            "10",
+            "0"
+        ]
+    ],
+    "pageTitle": "FRB: The Taylor Rule and Forecast Intervals for Exchange Rates",
+    "title": "",
+    "url": "http://www.federalreserve.gov/pubs/ifdp/2009/963/revision/ifdp963r.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990611.52/warc/CC-MAIN-20150728002310-00107-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 433770127,
+    "recordOffset": 433716014,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{1=Molodtsova and Papell (2009) find strong out-of-sample exchange rate predictability for Taylor rule models even at the short horizon. In our paper, the evidence for exchange rate predictability at short horizons is not very strong. This finding may be a result of some assumptions we have used to simplify our computation. For instance, an -coverage forecast interval in our paper is always constructed using the and quantiles. Alternatively, we can choose quantiles that minimize the length of intervals, given the nominal coverage.22 In addition, the development of more powerful testing methods may also be helpful. The evidence of exchange rate predictability in Molodtsova and Papell (2009) is partly driven by the testing method recently developed by Clark and West (2006, 2007). We acknowledge that whether or not short-horizon results can be improved remains an interesting question, but do not pursue this in the current paper. The purpose of this paper is to show the connection between the exchange rate and economic fundamentals from an interval forecasting perspective. Predictability either at short- or long-horizons will serve this purpose.}",
+    "TableContextTimeStampAfterTable": "{310040=West, K. D. (1996) \"Asymptotic Inference About Predictive Ability,\" Econometrica 64, 1067-1084., 305180=Engel, C. and K. D. West (2006) \"Taylor Rules and the Deutschmark-Dollar Real Exchange Rate,\" Journal of Money, Credit and Banking 38(5), 1175-1194., 305844=Giacomini, R. and H. White (2006) \"Tests of Conditional Predictive Ability,\" Econometrica 74, 1545-1578., 302913=Clarida, R., Gali, J. and M. Gertler (1998) \"Monetary Rules in Practice: Some International Evidence,\" European Economic Review 42, 1033-1067., 90718=We believe other issues, such as parameter instability (Rossi, 2005), nonlinearity (Kilian and Taylor, 2003), real time data (Faust, Rogers, and Wright, 2003, Molodtsova, Nikolsko-Rzhevskyy, and Papell, 2008a, 2008b), and model selection (Sarno and Valente, forthcoming) are all contributing to the Meese-Rogoff puzzle. Panel data are also found helpful in detecting exchange rate predictability, especially at long horizons. For instance, see Mark and Sul (2001), Engel, Mark, and West (2007), and Rogoff and Stavrakeva (2008). It would be interesting to incorporate these studies into interval forecasting. We leave these extensions for future research., 301993=Cheung, Y., M. D. Chinn, and A. Pascual (2005) \"Empirical Exchange Rate Models of the Nineties: Are Any Fit to Survive?\" Journal of International Money and Finance 24, 1150-1175., 341029=2.\u00a0\u00a0Email: jian.wang@dal.frb.org Address: Research Department, Federal Reserve Bank of Dallas, 2200 N. Pearl Street, Dallas, TX 75201 Phone: (214) 922-6471.\u00a0Return to text, 341301=3.\u00a0\u00a0Email: jason.j.wu@frb.gov Address: Board of Governors of the Federal Reserve System, 20th and C Streets, Washington, D.C. 20551 Phone: (202) 452-2556.\u00a0Return to text, 314=Board of Governors of the Federal Reserve System International Finance Discussion Papers Number 963, March 2009 --- Screen Reader Version*, 5803=Recently, there is a growing strand of literature that uses Taylor rules to model exchange rate determination. Engel and West (2005) derive the exchange rate as a present-value asset price from a Taylor rule model. They also find a positive correlation between the model-based exchange rate and the actual real exchange rate between the US dollar and the Deutschmark (Engel and West, 2006). Mark (2007) examines the role of Taylor-rule fundamentals for exchange rate determination in a model with learning. In his model, agents use least-square learning rules to acquire information about the numerical values of the model's coefficients. He finds that the model is able to capture six major swings of the real Deutschmark-Dollar exchange rate from 1973 to 2005. Molodtsova and Papell (2009) find significant short-term out-of-sample predictability of exchange rates with Taylor-rule fundamentals for 11 out of 12 currencies vis-\u00e1-vis the U.S. dollar over the post-Bretton Woods period. Molodtsova, Nikolsko-Rzhevskyy, and Papell (2008a, 2008b) find evidence of out-of-sample predictability for the dollar/mark nominal exchange rate with forecasts based on Taylor rule fundamentals using real-time data, but not revised data. Chinn (forthcoming) also finds that Taylor rule fundamentals do better than other models at the one year horizon. With a present-value asset pricing model as discussed in Engel and West (2005), Chen and Tsang (2009) find that information contained in the cross-country yield curves are useful in predicting exchange rates.}",
+    "lastModified": "Mon, 14 Jul 2014 19:25:17 GMT",
+    "textBeforeTable": "Table\u00a01.-Panel 2:\u00a0\u00a0Results of Benchmark Taylor Rule Model, Coverage Test Note: \u2013h denotes forecast horizons for monthly data. \u2013For each horizon (h), the first column (Cov.) reports empirical coverages given a nominal coverage of 90%. The second column (Leng.) reports the length of forecast intervals in terms of percentage change of the exchange rate. Empirical coverages and lengths are averages across N(h) out-of-sample trials. \u2013Superscripts a, b, c in the column of Cov. (Leng.) denote rejections of equal coverage accuracy (equal length) in favor of the economic model at a 10%, 5% and 1% confidence level respectively. Superscripts x, y, z are defined analogously for rejections in favor of the random walk \u00a025.905c \u00a00.855\u00a0 \u00a026.942c \u00a00.900\u00a0 \u00a023.317c \u00a00.912\u00a0 \u00a016.592c \u00a00.923\u00a0 \u00a08.413a \u00a00.919\u00a0 British Pound \u00a035.008c \u00a00.899\u00a0 \u00a030.780c \u00a00.963\u00a0 \u00a026.553c \u00a00.963\u00a0 \u00a019.655\u00a0 \u00a00.916\u00a0 \u00a09.358c \u00a00.947\u00a0 Swiss Franc \u00a037.432c \u00a00.834\u00a0 \u00a028.090c \u00a00.820\u00a0 \u00a023.930c \u00a00.874\u00a0 \u00a015.413c \u00a00.860\u00a0 \u00a07.360c \u00a00.839\u00a0 Swedish Krona \u00a032.092c \u00a00.867\u00a0 \u00a027.086\u00a0 \u00a00.825\u00a0 \u00a023.552c \u00a00.894c \u00a018.758z \u00a00.928\u00a0 \u00a08.580z \u00a00.901\u00a0 Portuguese Escudo \u00a040.177c \u00a00.959a \u00a030.902c \u00a00.941b \u00a027.458c \u00a00.933\u00a0 \u00a018.615c \u00a00.907\u00a0 \u00a08.726c \u00a00.917\u00a0 Dutch Guilder \u00a037.728c \u00a00.883\u00a0 \u00a033.793c \u00a00.932\u00a0 \u00a028.451c \u00a00.892\u00a0 \u00a019.762\u00a0 \u00a00.909\u00a0 \u00a09.633z \u00a00.915\u00a0 Japanese Yen \u00a037.151c \u00a00.874\u00a0 \u00a032.545c \u00a00.846\u00a0 \u00a026.788c \u00a00.910\u00a0 \u00a018.305\u00a0 \u00a00.875\u00a0 \u00a08.291c \u00a00.899\u00a0 Italian Lira \u00a039.618c \u00a00.969\u00a0 \u00a033.734c \u00a00.960a \u00a027.923c \u00a00.894\u00a0 \u00a018.634c \u00a00.879\u00a0 \u00a08.327c \u00a00.927\u00a0 Deutschmark \u00a036.883c \u00a00.934\u00a0 \u00a029.924c \u00a00.957\u00a0 \u00a026.007c \u00a00.928c \u00a015.728c",
+    "textAfterTable": "Note: In this panel, a better model is the one with more accurate empirical coverages. RW is the abbreviation of Random Walk. Table\u00a01.-Panel 3:\u00a0\u00a0Results of Benchmark Taylor Rule Model, Length Test Given Equal Coverage Accuracy \u00a0 h=1 h=3 h=6 h=9 h=12 Model Better 8 8 8 8 10 RW Better 2 1 0 0 0 Note: In this panel, a better model is the one with tighter forecast intervals given equal coverage accuracy. Table\u00a01.-Panel 4:\u00a0\u00a0Results of Benchmark Taylor Rule Model, Coverage Test and Length Test Given Equal Coverage Accuracy \u00a0 h=1 h=3 h=6 h=9 h=12 Model Better 8 8 10 10 11 RW Better 2 1 0 0 1 Note: In this panel, a better model is the one with either more accurate coverages or tighter forecast intervals given equal coverage accuracy. Table\u00a02.-Panel 1:\u00a0\u00a0Results of Benchmark Taylor Rule Model Two \u00a0 Cov. h=1 Leng. h=1 Cov. h=3 Leng. h=3 Cov. h=6 Leng. h=6 Cov. h=9 Leng. h=9 Cov. h=12 Leng. h=12 Australian Dollar \u00a00.884\u00a0 \u00a07.146y \u00a00.899\u00a0 \u00a015.086c",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

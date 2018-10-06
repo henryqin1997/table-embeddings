@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Bug",
+            "Dead store to existingParameters in org.apache.myfaces.lifecycle.CODIClientSideWindow.addParameters(ExternalContext, String, boolean, boolean, boolean)",
+            "Dead store to urlContainsWindowId in org.apache.myfaces.lifecycle.CODIClientSideWindow.addParameters(ExternalContext, String, boolean, boolean, boolean)"
+        ],
+        [
+            "Category",
+            "STYLE",
+            "STYLE"
+        ],
+        [
+            "Details",
+            "DLS_DEAD_LOCAL_STORE",
+            "DLS_DEAD_LOCAL_STORE"
+        ],
+        [
+            "Line",
+            "334",
+            "335"
+        ],
+        [
+            "Priority",
+            "Medium",
+            "Medium"
+        ]
+    ],
+    "pageTitle": "Apache MyFaces JSF-2.2 Core Impl - FindBugs Bug Detector Report",
+    "title": "",
+    "url": "http://myfaces.apache.org/core22/myfaces-impl/findbugs.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986148.56/warc/CC-MAIN-20150728002306-00324-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 174146527,
+    "recordOffset": 174113950,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 13 Jan 2015 00:55:41 GMT",
+    "textBeforeTable": "Summary Effort is min Threshold is low FindBugs Version is 1.3.9 The following document contains the results of FindBugs Report FindBugs Bug Detector Report License Security Thanks Sponsorship ASF Foundation JSF Tag Documentation Tag List Surefire Report Test Source Xref Source Xref Developer Activity File Activity Change Log Test JavaDocs JavaDocs Cobertura Test Coverage JDepend FindBugs Report CPD Report PMD Report Project Reports Project Information Project Documentation",
+    "textAfterTable": "org.apache.myfaces.application.ApplicationImpl 8 org.apache.myfaces.application.ApplicationImpl$SystemListenerEntry 2 org.apache.myfaces.application.DefaultResourceHandlerSupport 3 org.apache.myfaces.application.NavigationHandlerImpl 4 org.apache.myfaces.application.NavigationHandlerImpl$KeyComparator 1 org.apache.myfaces.application.ResourceHandlerImpl 3 org.apache.myfaces.application.jsp.ServletViewResponseWrapper 1 org.apache.myfaces.application.viewstate.IntByteArraySerializedViewKey 2 org.apache.myfaces.application.viewstate.IntIntSerializedViewKey 1 org.apache.myfaces.application.viewstate.RandomKeyFactory 1 org.apache.myfaces.application.viewstate.SecureRandomKeyFactory 1 org.apache.myfaces.application.viewstate.SerializedViewCollection 5 org.apache.myfaces.application.viewstate.ServerSideStateCacheImpl 2 org.apache.myfaces.application.viewstate.ServerSideStateCacheImpl$1 1 org.apache.myfaces.cdi.dependent.DependentBeanEntry 1 org.apache.myfaces.cdi.dependent.DependentInstanceEntry 1 org.apache.myfaces.cdi.util.BeanProvider 1 org.apache.myfaces.cdi.util.CDIExternalArtifactResolver 2 org.apache.myfaces.cdi.util.ContextualInstanceInfo 2 org.apache.myfaces.cdi.util.ContextualStorage 3 org.apache.myfaces.cdi.view.ViewScopeBeanHolder 3 org.apache.myfaces.cdi.view.ViewScopeContextualStorage 4 org.apache.myfaces.cdi.view._ContextualKey 1 org.apache.myfaces.config.DefaultFacesConfigurationMerger$1 1 org.apache.myfaces.config.FacesConfigValidator 1 org.apache.myfaces.config.FacesConfigurator 3 org.apache.myfaces.config.NamedEventManager 1 org.apache.myfaces.config.annotation.AnnotationConfigurator 4 org.apache.myfaces.config.annotation.DefaultAnnotationProvider 5 org.apache.myfaces.config.annotation.NoInjectionAnnotationLifecycleProvider 3 org.apache.myfaces.config.annotation.ResourceAnnotationLifecycleProvider 4 org.apache.myfaces.config.annotation._ClassByteCodeAnnotationFilter 3 org.apache.myfaces.config.annotation._PackageInfo 1 org.apache.myfaces.config.annotation._PackageInfo$1 1 org.apache.myfaces.config.element.ConfigOthersSlot 1 org.apache.myfaces.config.element.FacesConfigNameSlot 1 org.apache.myfaces.config.element.facelets.FaceletBehaviorTag 1 org.apache.myfaces.config.element.facelets.FaceletComponentTag 1 org.apache.myfaces.config.element.facelets.FaceletConverterTag 1 org.apache.myfaces.config.element.facelets.FaceletHandlerTag 1 org.apache.myfaces.config.element.facelets.FaceletSourceTag 1",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

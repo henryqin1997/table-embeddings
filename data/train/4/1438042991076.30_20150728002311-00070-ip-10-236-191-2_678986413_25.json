@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Tag",
+            "%Cl(xpos,ypos,maxwidth,maxheight,[horizontal alignment],[vertical alignment])",
+            "%Cd",
+            "%C"
+        ],
+        [
+            "Description",
+            "Define the picture settings. More details. Horizontal alignment can be 'l', 'r', or 'c', for left, right and center. Vertical alignment can be 't', 'b', or 'c', for top, bottom and center.",
+            "Display the album art bitmap. More details",
+            "Use in a conditional to check if album art has been loaded"
+        ]
+    ],
+    "pageTitle": "CustomWPS < Main < Wiki",
+    "title": "",
+    "url": "http://www.rockbox.org/wiki/CustomWPS?sortcol=1%3btable=10%3bup=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991076.30/warc/CC-MAIN-20150728002311-00070-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 679015375,
+    "recordOffset": 678986413,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Fonts if both colours are left out the viewports foreground colour will be used if one colour is specified it will fill the rectangle that colour. if both colours are specified it will gradient fill the rectangle. Colour a rectangle at pixel (x,y), width/height can be - to fill the viewport. %dr(x,y,width,height[colour1[,colour2]]) Description Tag Draw a rectangle! (optionally with a gradient) Then add %V(0,0,-,-,-) and continue with your skin as normal. Any viewports you want drawn on the backdrop need the %VB tag but otherwise code as normal. Use %x(filename, 0, 0) to draw a backdrop image (If you want one!) Add a full screen viewport at the start of the skin .. i.e %V(0,0,-,-,-) %VB Don't draw text here as it may not work too well. If the skin has this any %X() tag will be ignored and the whole screen will have a solid background (with the colour specified in the settings), so to get the most out of this feature: Rockbox uses two framebuffers when it does a screen redraw. The bottom layer is used for the backdrop image",
+    "textAfterTable": "Description %we Status Bar Enabled %wd Status Bar Disabled %wi Display the inbuilt statusbar in the current viewport It can also be used for the Custom Status Bar ID3 Tag Info Remember that this information is not always available, so use the conditionals to show alternate information in preference to assuming. Tag Description %ia ID3 Artist* %ic ID3 Composer* %iA ID3 Album Artist* %id ID3 Album Name* %iG ID3 Grouping %ig ID3 Genre Name",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

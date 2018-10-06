@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Trunk Port Alarm",
+            "SD",
+            "OTUK-SD",
+            "ODUK-SD-PM",
+            "ODUK-SD-TCM1",
+            "ODUK-SD-TCM2"
+        ],
+        [
+            "LMP Failure",
+            "SD",
+            "SD",
+            "SD",
+            "SD",
+            "SD"
+        ],
+        [
+            "Direction",
+            "Tx",
+            "Tx",
+            "Tx",
+            "Tx",
+            "Tx"
+        ]
+    ],
+    "pageTitle": "Cisco ONS 15454 DWDM Troubleshooting Guide, Release 9.4 - Alarm Troubleshooting [Cisco ONS 15454 Series Multiservice Transport Platforms] - Cisco",
+    "title": "Table 2 Transponder Trunk Alarms that Cause LMP-SD",
+    "url": "http://www.cisco.com/c/en/us/td/docs/optical/15000r9_4/dwdm/troubleshooting/guide/b_454d94_ts/b_454d94_ts_chapter_011.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 325,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00299-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 370038295,
+    "recordOffset": 369874848,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{415341=Invisible laser radiation could be emitted from the end of the unterminated fiber cable or connector. Do not stare into the beam directly with optical instruments. Viewing the laser output with certain optical instruments (for example, eye loupes, magnifiers, and microscopes) within a distance of 100 mm could pose an eye hazard. Statement 1056, 722655=On the OC192 LR/STM64 LH 1550 card:, 26488=Invisible laser radiation could be emitted from the end of the unterminated fiber cable or connector. Do not stare into the beam directly with optical instruments. Viewing the laser output with certain optical instruments (for example, eye loupes, magnifiers, and microscopes) within a distance of 100 mm could pose an eye hazard. Statement 1056, 27861=Class 1 laser product. Statement 1008, 560382=Logical Object: EQPT, ML1000, ML100T, MLFX, STSMON, VT-MON, 794630=Invisible laser radiation may be emitted from disconnected fibers or connectors. Do not stare into beams or view directly with optical instruments. Statement 1051., 614357=Logical Object: CEMR, CE1000, CE100T, FCMR, GFP-FAC, ML1000, ML100T, MLFX, 614454=The GFP Client Signal Fail Detected alarm is a secondary alarm raised on local GFP data ports when a remote Service-Affecting (SA) alarm causes invalid data transmission. The alarm is raised locally on CE-100T-8, CE-1000-4, CE-MR-10, FC_MR-4, ML100T, ML1000, ML100X-8, ML-MR-10, MXP_MR_25G, and MXPP_MR_25G GFP data ports and does not indicate that a Service-Affecting (SA) failure is occurring at the local site, but that a CARLOSS, LOS, or SYNCLOSS alarm caused by an event such as a pulled receive cable is affecting a remote data port's transmission capability. This alarm can be demoted when a facility loopback is placed on the FC_MR-4 port., 475314=2.\u00a0\u00a0\u00a0 If the condition does not clear, log into the Technical Support Website at http://www.cisco.com/techsupport for more information or call Cisco TAC 1 800 553-2447., 189482=Class 1M laser radiation when open. Do not view directly with optical instruments. Statement 1053, 388251=By default, an ENCAP-MISMATCH-P alarm causes an ML-Series or CE-1000 card data link to go down. This behavior can be modified using the command line interface (CLI) command in interface configuration mode: no pos trigger defect encap., 979164=When the LOS-P alarm is raised on the COM-RX port of the 32DMX-C, 32DMX-L, 40DMX-C, 40-DMX-CE, or WXC cards, it can indicate the presence of undesirable counter-propagating light entering the card from the drop ports. The counter-propagating light can be inserted into these cards as a result of incorrect cabling of transponder or line cards to the fiber patch-panel (in particular, swapping RX with TX patchcords). This behavior is only applicable to optical modules with vendor IDs 2049, 2050, 2304, and 2306. You can view the vendor IDs at CTC > Card View > Inventory tab., 385034=The Encapsulation C2 Byte Mismatch Path alarm applies to ML-Series Ethernet cards or the CE-1000 card. It occurs when the first three following conditions are met and one of the last two is false:, 751677=The Inhibit Switch To Working Request on Equipment condition occurs on traffic cards when the ability to switch to working has been disabled. If the card is part of a 1:1 or 1+1 protection scheme, traffic remains locked onto the protect system. If the card is part of a 1:N protection scheme, traffic can be switched between protect cards when the switch to working is disabled., 416080=Use of controls, adjustments, or performing procedures other than those specified could result in hazardous radiation exposure. Statement 1057, 389465=3.\u00a0\u00a0\u00a0 If the alarm does not clear, use the CLI to ensure that the remaining settings are correctly configured on the ML-Series or CE-1000 card:, 27276=Use of controls, adjustments, or performing procedures other than those specified could result in hazardous radiation exposure. Statement 1057, 386573=For example, an ENCAP-MISMATCH-P alarm is raised if a circuit created between two ML-Series or two CE-1000 cards has generic framing procedure (GFP) framing provisioned on one end and HDLC framing with LEX encapsulation provisioned on the other. The GFP framing card transmits and expects a C2 byte of 0x1B, while the HDLC framing card transmits and expects a C2 byte of 0x01., 748326=The Inhibit Switch To Protect Request on Equipment condition occurs on traffic cards when the ability to switch to protect has been disabled. If the card is part of a 1:1 or 1+1 protection scheme, traffic remains locked onto the working system. If the card is part of a 1:N protection scheme, traffic can be switched between working cards when the switch to protect is disabled., 749419=2.\u00a0\u00a0\u00a0 If it is raised against a 1:1 card, complete the Initiate a 1:1 Card Switch Command procedure to switch it back.}",
+    "textBeforeTable": "Table 1 lists all logical alarm objects used in this chapter. Alarm Logical Objects Alarm Logical Objects Alarm logical object names can appear as abbreviated versions of standard terms used in the system and the documentation. For example, the OCN logical object refers to the OC-N signal. Logical object names or industry-standard terms are used within the entries as appropriate. Note Alarm profile list objects are defined in Table 1. The CTC alarm profile list organizes all alarms and conditions according to the logical objects they are raised against. These logical objects represent physical objects such as cards, logical objects such as circuits, or transport and signal monitoring entities such as the SONET or ITU-T G.709 optical overhead bits. One alarm can appear in multiple entries. It can be raised against multiple objects. For example, the loss of signal (LOS) alarm can be raised against the optical signal (OC-N) or the optical transport layer overhead (OTN) as well as other objects. Therefore, both OCN: LOS and OTN: LOS appear in the list (as well as the other objects). Logical Objects The CTC default alarm profile in",
+    "textAfterTable": "ENVALRM An environmental alarm port. EQPT A card, its physical objects, and its logical objects as they are located in any of the eight noncommon card slots. The EQPT object is used for alarms that refer to the card itself and all other objects on the card including ports, lines, synchronous transport signals (STS), and virtual tributaries (VT). ESCON Enterprise System Connection fiber optic technology, referring to the following TXP cards: TXP_MR_2.5G, TXPP_MR_2.5G, MXP_MR_2.5G, MXPP_MR_2.5G. EXT-SREF BITS outgoing references (SYNC-BITS1, SYNC-BITS2). FAN Fan-tray assembly. FC Fibre channel data transfer architecture, referring to the following muxponder (MXP) or TXP cards: MXP_MR_2.5G, MXPP_MR_2.5G, MXP_MR_10DME_C, MXP_MR_10DME_L, TXP_MR_2.5G, TXPP_MR_2.5G, TXP_MR_10E, TXP_MR_10E_C, TXP_MR_10E_L, GE_XP, 10GE_XP, ADM-10G, and OTU2_XP. GE Gigabit Ethernet, referring to the following MXP or TXP cards: MXP_MR_2.5G, MXPP_MR_2.5G, TXP_MR_2.5G, TXPP_MR_2.5G, TXP_MR_10G, TXP_MR_10E,TXP_MR_10E_C, TXP_MR_10E_L, MXP_MR_10DME_C, MXP_MR_10DME_L, GE-XP, 10GE-XP, ADM-10G, and OTU2_XP. ISC",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

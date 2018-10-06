@@ -1,0 +1,83 @@
+{
+    "relation": [
+        [
+            "Code",
+            "BRW",
+            "MLO",
+            "NWR",
+            "SMO",
+            "SPO",
+            "SUM"
+        ],
+        [
+            "Name",
+            "Barrow, Alaska",
+            "Mauna Loa, Hawaii",
+            "Niwot Ridge, Colorado",
+            "Tutuila",
+            "South Pole, Antarctica",
+            "Summit"
+        ],
+        [
+            "Country",
+            "United States",
+            "United States",
+            "United States",
+            "American Samoa",
+            "United States",
+            "Greenland"
+        ],
+        [
+            "Latitude",
+            "71.323",
+            "19.536",
+            "40.053",
+            "-14.247",
+            "-89.980",
+            "72.596"
+        ],
+        [
+            "Longitude",
+            "-156.611",
+            "-155.576",
+            "-105.586",
+            "-170.564",
+            "-24.800",
+            "-38.422"
+        ],
+        [
+            "Elevation (meters)",
+            "11.0",
+            "3397.0",
+            "3523.0",
+            "42.0",
+            "2810.0",
+            "3209.5"
+        ],
+        [
+            "Time from GMT",
+            "-9 hours",
+            "-10 hours",
+            "-7 hours",
+            "-11 hours",
+            "+12 hours",
+            "-2 hours"
+        ]
+    ],
+    "pageTitle": "ESRL Global Monitoring Division - Observation Sites",
+    "title": "",
+    "url": "http://esrl.noaa.gov/gmd/dv/site/site_table.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00260-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 82776091,
+    "recordOffset": 82750711,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "140 sites in 45 countries SELECT DISTINCT site.num,code,name,country,lat,lon,elev,lst2utc FROM site,site_project WHERE site.num=site_project.site_num AND site_project.status_num in (1,3,5) AND lat>-90 AND lon>-900 AND site_project.project_num IN (1) AND code not like 'POC000' ORDER BY code Carbon Cycle Surface Flasks Water Vapor Profiles Water Vapor Trace gases from GGGRN Flasks Trace gases Airborne Flasks Trace Gases Unmanned Aircraft Systems (UAS) Trace Gases Airborne, Large Balloons and Aircraft HATS In Situ Observatory HATS Flask Sampling Halocarbons and Trace Gases Ozone Airborne Ozone In Situ Tall Tower Dobson Umkehr Ozone Ozonesonde Dobson Total Ozone Surface Ozone Ozone Black Carbon Meteorology Meteorology Antarctic UV GAW Radiation NEUBrew UV and Ozone Integrated Surface Irradiance Study Surface Radiation Budget Monitoring Baseline Surface Radiation Network Radiation In-Situ Observatory Solar Radiation Aerosol Mobile and Cooperative Platforms Lidar Aerosol Airborne, Light Aircraft Aerosol Surface In-Situ Aerosols Carbon Cycle Surface In Situ Carbon Cycle In Situ Observatory Carbon Cycle In Situ Tall Tower Carbon Cycle Airborne Flasks Carbon Cycle Surface Flasks Carbon Cycle Gases Select Project label { margin-bottom: 5px; } fieldset { margin-bottom: 10px; } }",
+    "textAfterTable": "ASK Assekrem Algeria 23.262 5.632 2710.0 +1 hours AVI* St. Croix, Virgin Islands United States 17.750 -64.750 3.0 -4 hours AZR Terceira Island, Azores Portugal 38.766 -27.375 19.0 -1 hours BAL* Baltic Sea Poland 55.350 17.220 3.0 +1 hours BAO Boulder Atmospheric Observatory, Colorado United States 40.050 -105.004 1584.0 -7 hours BHD Baring Head Station New Zealand -41.408 174.871 85.0 +12 hours BKT Bukit Kototabang Indonesia -0.202 100.318 845.0 +7 hours BME* St. Davids Head, Bermuda United Kingdom 32.368 -64.648 12.0 -4 hours BMW Tudor Hill, Bermuda United Kingdom 32.265 -64.879 30.0 -4 hours BRW Barrow, Alaska United States 71.323 -156.611 11.0 -9 hours BSC* Black Sea, Constanta Romania 44.178 28.665 0.0 +2 hours CBA Cold Bay, Alaska United States 55.210 -162.720 21.3 -9 hours CGO Cape Grim, Tasmania Australia -40.683 144.690 94.0 +10 hours CHR Christmas Island Republic of Kiribati 1.700 -157.152 0.0 -10 hours CIB Centro de",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

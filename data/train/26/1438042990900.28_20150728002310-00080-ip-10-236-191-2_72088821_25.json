@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "jcr:title",
+            "War and peace",
+            "Cinderella"
+        ],
+        [
+            "jcr:description",
+            "novel",
+            "fairytale"
+        ],
+        [
+            "jcr:path",
+            "/document1",
+            "/document2"
+        ],
+        [
+            "jcr:score",
+            "3806",
+            "3806"
+        ]
+    ],
+    "pageTitle": "Reference Guide / eXo JCR",
+    "title": "",
+    "url": "http://docs.jboss.org/exojcr/1.14.12-GA/developer/en-US/html_single/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990900.28/warc/CC-MAIN-20150728002310-00080-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72289735,
+    "recordOffset": 72088821,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{1596=MySQL 5.0.18 MYSQL Connector/J 5.0.8, 164070=Roy T. Fielding, JSR 170 Overview: Standardizing the Content Repository Interface (March 13, 2005), 264208=Copyright \u00a9 2012 eXoPlatform SAS, 973=MS SQL Server 2005 SP3 JDBC Driver 3.0, 163820=Benjamin Mestrallet, Tuan Nguyen, Gennady Azarenkov, Francois Moron and Brice Revenant eXo Platform v2, Portal, JCR, ECM, Groupware and Business Intelligence. (January 2006), 53422=JCR MySQL-backend requires special dialect MySQL-UTF8 to be used for internationalization support. But the database default charset should be latin1 to use limited index space effectively (1000 bytes for MyISAM engine, 767 for InnoDB). If database default charset is multibyte, a JCR database initialization error is thrown concerning index creation failure. In other words, JCR can work on any singlebyte default charset of database, with UTF8 supported by MySQL server. But we have tested it only on latin1 database default charset., 1537=MySQL 5.1.36 MYSQL Connector/J 5.1.14, 912=MS SQL Server 2008 JDBC Driver 3.0}",
+    "TableContextTimeStampAfterTable": "{244974=jcr:content (nt:resource) jcr:lastModified=\"2007-01-19T15:34:15.917+02:00\", 680025=Beware of setting maxThreads too big, this can cause OutOfMemoryError. We've got it with maxThreads=1250 on such machine:, 395660=When you have already some FTP server installed in your system , this parameter needs to be changed (2121 for example) to avoid conflicts or if the port is protected., 392655=If you have Microsoft Office 2010 applications or Microsoft Office 2007 applications installed on a client computer. From that client computer, you try to access an Office file that is stored on a web server that is configured for Basic authentication. The connection between your computer and the web server does not use Secure Sockets Layer (SSL). When you try to open or to download the file, you experience the following symptoms:, 244448=jcr:content (nt:resource) jcr:lastModified=\"2006-01-19T15:34:15.917+02:00\", 385697=At present, eXo JCR WebDav server is tested by using MS Internet Explorer, Dav Explorer, Xythos Drive, Microsoft Office 2003 (as client), and Ubuntu Linux., 635371=* Roy T. Fielding, JSR 170 Overview: Standardizing the Content Repository Interface (March 13, 2005), 684676=If you intend to use Infinispan, you will have to increase the PermGen size to at least 256 Mo due to the latest versions of JGroups that are needed by Infinispan (please note that Infinspan is only dedicated to the community for now, no support will be provided). In case, you intend to use JBoss Cache, you can keep on using JGroups 2.6.13.GA which means that you don't need to increase the PermGen size., 244711=jcr:content (nt:resource) jcr:lastModified=\"2005-01-19T15:34:15.917+02:00\", 8750=One more mandatory JCR requirement for underlying databases is a case sensitive collation. Microsoft SQL Server both 2005 and 2008 customers must configure their server with collation corresponding to personal needs and requirements, but obligatorily case sensitive. For more information please refer to Microsoft SQL Server documentation page \"Selecting a SQL Server Collation\" here., 225959=document1 (mix:title) jcr:title=\"War and peace\" jcr:description=\"novel\" prop_pagecount=1000, 208091=document1 (mix:title) jcr:title=\"War and peace\" prop_pagecount=1000, 243669=Find all nodes of primary type \"nt:resource\" whose jcr:lastModified property value is greater than 2006-06-04 and less than 2008-06-04.}",
+    "lastModified": "Tue, 15 Oct 2013 23:50:18 GMT",
+    "textBeforeTable": "Table\u00a01.14.\u00a0Table content Table content is } Value[] values = row.getValues(); // get values of the row Row row = rit.nextRow(); { while (rit.hasNext()) RowIterator rit = result.getRows(); String[] columnNames = result.getColumnNames(); We can also get a table: NodeIterator will return \"folder1\", \"folder2\",\"document1\",\"document2\",\"document3\", and each other nodes in workspace if they are here. } Node findedNode = it.nextNode(); { if(it.hasNext()) NodeIterator it = result.getNodes(); Let's get nodes: 1.31.9.2.3.\u00a0Fetching result QueryResult result = query.execute(); // execute query and fetch result Query query = queryManager.createQuery(xpathStatement, Query.XPATH); String xpathStatement = \"//element(*,nt:base)\"; // create query QueryManager queryManager = workspace.getQueryManager(); // make XPath query XPath QueryResult result = query.execute(); // execute query and fetch result Query query = queryManager.createQuery(sqlStatement, Query.SQL); String sqlStatement = \"SELECT * FROM nt:base\"; // create query QueryManager queryManager = workspace.getQueryManager(); // make SQL query SQL 1.31.9.2.2.\u00a0Query execution document3 (nt:folder) document2 (nt:unstructured) folder2 (nt:folder) document1 (nt:file) folder1 (nt:folder) root Repository contains many different nodes. 1.31.9.2.1.\u00a0Repository structure: Find all nodes in the repository. Only those nodes are found to which the session has READ permission. See also Access Control.",
+    "textAfterTable": "/folder1/folder2/document3 1000 ... ... 1.31.9.3.\u00a0Finding Nodes by Primary Type Find all nodes whose primary type is \"nt:file\". 1.31.9.3.1.\u00a0Repository structure: The repository contains nodes with different primary types and mixin types. root document1 primarytype = \"nt:unstructured\" mixintype = \"mix:title\" document2 primarytype = \"nt:file\" mixintype = \"mix:lockable\" document3 primarytype = \"nt:file\" mixintype = \"mix:title\" 1.31.9.3.2.\u00a0Query execution SQL // make SQL query QueryManager queryManager = workspace.getQueryManager(); // create query String sqlStatement = \"SELECT * FROM nt:file\"; Query query = queryManager.createQuery(sqlStatement, Query.SQL); // execute query and fetch result QueryResult result = query.execute(); XPath // make XPath query QueryManager queryManager = workspace.getQueryManager(); // create query String xpathStatement = \"//element(*,nt:file)\"; Query query = queryManager.createQuery(xpathStatement, Query.XPATH); // execute query and fetch result QueryResult result = query.execute(); 1.31.9.3.3.\u00a0Fetching result Let's get nodes: NodeIterator it = result.getNodes(); if(it.hasNext()) { Node findedNode = it.nextNode(); } NodeIterator will return \"document2\" and \"document3\". We can also get a table: String[] columnNames = result.getColumnNames(); RowIterator rit = result.getRows(); while (rit.hasNext()) { Row row = rit.nextRow(); // get values of the row Value[] values = row.getValues();",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

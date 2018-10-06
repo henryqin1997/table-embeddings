@@ -1,0 +1,69 @@
+{
+    "relation": [
+        [
+            "#",
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        [
+            "Rule",
+            "CheckChildrenNodes",
+            "CheckParentNode",
+            "CheckExpressionLanguageSupport",
+            "CheckExpression"
+        ],
+        [
+            "Seq",
+            "0",
+            "1",
+            "20",
+            "100"
+        ],
+        [
+            "Tag",
+            "pass1",
+            "pass1",
+            "pass1",
+            "pass1"
+        ],
+        [
+            "Description",
+            "Check my children nodes (types and occurances) Author: michal.chmielewski@oracle.com",
+            "Check to make sure that my parent node is within a set of allowed nodes Author: michal.chmielewski@oracle.com",
+            "Checks the expression language for support in the BPEL model Author: michal.chmielewski@oracle.com",
+            "Checks the actual expression using the expression language validator. Author: michal.chmielewski@oracle.com"
+        ],
+        [
+            "Date",
+            "02/15/2007",
+            "02/15/2007",
+            "10/2/2006",
+            "10/2/2006"
+        ],
+        [
+            "SA",
+            "2,002",
+            "2,001",
+            "4",
+            "0"
+        ]
+    ],
+    "pageTitle": "BPEL Validator Rules",
+    "title": "",
+    "url": "http://www.eclipse.org/bpel/developers/validator/sa.php",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988511.77/warc/CC-MAIN-20150728002308-00267-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 420129987,
+    "recordOffset": 420099689,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "{http://docs.oasis-open.org/wsbpel/2.0/process/executable}assign 5 rules in class org.eclipse.bpel.validator.rules.AssignValidator Validators BPEL Validator Rules Users Developers New & Noteworthy Installation Downloads About This Project Project Home About Us Projects Resources Committers Members Users Downloads Home My Foundation Portal \u00a0Eclipse Wiki \u00a0Planet Eclipse \u00a0Eclipse Forums \u00a0Bugzilla \u00a0Eclipse YouTube Channel \u00a0Eclipse Marketplace",
+    "textAfterTable": "5 CheckValidate 10 pass1 - 0 {http://docs.oasis-open.org/wsbpel/2.0/process/executable}branches 5 rules in class org.eclipse.bpel.validator.rules.BranchesValidator # Rule Seq Tag Description Date SA 1 CheckSuccessfulBranchesOnly 0 pass1 - 0 2 CheckChildrenNodes 0 pass1 Check my children nodes (types and occurances) Author: michal.chmielewski@oracle.com 02/15/2007 2,002 3 CheckParentNode 1 pass1 Check to make sure that my parent node is within a set of allowed nodes Author: michal.chmielewski@oracle.com 02/15/2007 2,001 4 CheckExpressionLanguageSupport 20 pass1 Checks the expression language for support in the BPEL model Author: michal.chmielewski@oracle.com 10/2/2006 4 5 CheckExpression 100 pass1 Checks the actual expression using the expression language validator. Author: michal.chmielewski@oracle.com 10/2/2006 0 {urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0}branches 12 rules in class org.eclipse.bpel.validator.xpath.Branches # Rule Seq Tag Description Date SA 1 CheckGetVariableProperty 0 bpel.functions Arguments to getVariableProperty must be quoted strings Author: michal.chmielewski@oracle.com 01/29/2007 30 2 CheckGetVariableProperty2ndArgument 0 bpel.functions The second argument MUST be a string literal conforming to the definition of QName in section 3 Author: michal.chmielewski@oracle.com 01/29/2007 31 3 CheckDoXslTransform 10 bpel.functions 1st arguments to doXslTransform must be quoted string Author: michal.chmielewski@oracle.com 01/29/2007 39 4 CheckDoXslTransform 11 bpel.functions There must be an even number of arguments doXslTransform Author: michal.chmielewski@oracle.com",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

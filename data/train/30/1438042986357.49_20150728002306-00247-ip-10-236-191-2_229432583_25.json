@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Feature",
+            "Object instantiation/wiring",
+            "Automatic IObjectPostProcessor registration",
+            "Automatic IObjectFactoryPostProcessor registration",
+            "Convenient IMessageSource access",
+            "ApplicationEvent publication",
+            "Singleton service locator style access",
+            "Declarative registration of custom resource protocol handler, XML Parsers for object definitions, and type aliases"
+        ],
+        [
+            "IObjectFactory",
+            "Yes",
+            "No",
+            "No",
+            "No",
+            "No",
+            "No",
+            "No"
+        ],
+        [
+            "IApplicationContext",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes"
+        ]
+    ],
+    "pageTitle": "Chapter\u00a05.\u00a0The IoC container",
+    "title": "",
+    "url": "http://springframework.net/doc-latest/reference/html/objects.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986357.49/warc/CC-MAIN-20150728002306-00247-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 229513063,
+    "recordOffset": 229432583,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{348043=Then the value of 1000 will be used to overlay the value of 2000 set in the Spring.NET configuration file shown below}",
+    "lastModified": "Tue, 02 Aug 2011 14:09:38 GMT",
+    "textBeforeTable": "Table\u00a05.7.\u00a0Feature Matrix Find below a feature matrix that lists what features are provided by the IObjectFactory and IApplicationContext interfaces (and attendant implementations). The following sections describe functionality that IApplicationContext adds to the basic IObjectFactory capabilities in a lot more depth than the said feature matrix.) As the IApplicationContext includes all the functionality the object factory via its inheritance of the IObjectFactory interface, it is generally recommended to be used over the IObjectFactory except for a few limited situations where memory consumption might be critical. This may become more important if the .NET Compact Framework is supported. The history of IObjectFactory comes from the Spring Java framework, where the use of Spring in Applets was a concern to reduce memory consumption. However, for most 'typical' enterprise applications and systems, the IApplicationContext is what you will want to use. Spring generally makes heavy use of the IObjectPostProcessor extension point (to effect proxying and suchlike), and if you are using just a plain IObjectFactory then a fair amount of support such as transactions and AOP will not take effect (at least not without some extra steps on your part), which could be confusing because nothing will actually be wrong with the configuration. Short version: use an IApplicationContext unless you have a really good reason for not doing so. For those of you that are looking for slightly more depth",
+    "textAfterTable": "5.11.\u00a0Configuration of IApplicationContext Well known locations in the .NET application configuration file are used to register resource handlers, custom parsers, type alias, and custom type converts in addition to the context and objects sections mentioned previously. A sample .NET application configuration file showing all these features is shown below. Each section requires the use of a custom configuration section handler. Note that the types shown for resource handlers and parsers are fictional. <configuration> <configSections> <sectionGroup name=\"spring\"> <section name=\"context\" type=\"Spring.Context.Support.ContextHandler, Spring.Core\"/> <section name=\"objects\" type=\"Spring.Context.Support.DefaultSectionHandler, Spring.Core\" /> <section name=\"parsers\" type=\"Spring.Context.Support.NamespaceParsersSectionHandler, Spring.Core\"/> <section name=\"resourceHandlers\" type=\"Spring.Context.Support.ResourceHandlersSectionHandler, Spring.Core\"/> <section name=\"typeAliases\" type=\"Spring.Context.Support.TypeAliasesSectionHandler, Spring.Core\"/> <section name=\"typeConverters\" type=\"Spring.Context.Support.TypeConvertersSectionHandler, Spring.Core\"/> </sectionGroup> </configSections> <spring> <parsers> <parser type=\"Spring.Aop.Config.AopNamespaceParser, Spring.Aop\" /> <parser type=\"Spring.Data.Config.DatabaseNamespaceParser, Spring.Data\" /> </parsers>",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

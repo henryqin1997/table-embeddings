@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Name",
+            "oItem",
+            "e"
+        ],
+        [
+            "Type",
+            "Object",
+            "BiMouseEvent"
+        ],
+        [
+            "Optional",
+            "",
+            ""
+        ],
+        [
+            "Default",
+            "",
+            ""
+        ],
+        [
+            "Descripton",
+            "The item that was pressed",
+            "The mousedown event object"
+        ]
+    ],
+    "pageTitle": "Bindows\u2122 : BiSelectionModel",
+    "title": "",
+    "url": "http://www.bindows.net/documentation/api/BiTreeViewViewManager/BiSelectionModel.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00182-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 323610519,
+    "recordOffset": 323602317,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Parameters new BiSelectionModel ( oOwner ) Constructor This class extends BiEventTarget and therefore all methods and fields available for BiEventTarget are also available for BiSelectionModel . This class provides a basic selection model This treats children as selectable items inside a component. The items can be of any type but if they are not BiComponents you will have to override the following methods and properties: first, last, items, getNext, getPrevious, scrollItemIntoView, getItemLeft, getItemTop, getItemWidth and getItemHeight. To update the visuals (to show what is selected) override the following methods: updateItemSelectionState, updateItemAnchorState and updateItemLeadState. BiSelectionModel document.write( NAV.getNavTree( rootPath, this.location.toString() ) ); document.write( NAV.getNavHeader( rootPath ) ); document.write( NAV.getTopNav( rootPath ) ); document.write( NAV.getTopSubHeader( rootPath ) ); document.write( NAV.getTopHeader( rootPath ) );",
+    "textAfterTable": "get set Descripton anchorItem BiComponent/Object This item is used when doing multiple selection with the shift key canDeselect Boolean Whether the user can deselect items. If this is false you need to select something else to deselect an item dragSelection Boolean Drag selection is used to hold down the mouse to select mutliple items first BiComponent/Object Returns the first selectable item items BiComponent[]/Object[] Returns an array containing the items last BiComponent/Object Returns the last selectable item leadItem BiComponent/Object This item is used when doing multiple selection. This is the last item selected. multipleSelection Boolean Whether the selection model supports multiple selection owner BiComponent This is the owner component that is containing the selectable objects. This should not be set after the selection model",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

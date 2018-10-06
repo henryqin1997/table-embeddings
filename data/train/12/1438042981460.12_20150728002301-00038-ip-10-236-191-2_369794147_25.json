@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Router> enable",
+            "configure terminal Example: Router# configure terminal",
+            "ip sla auto template type ip udp-jitter template-name Example: Router(config)# ip sla auto template type ip voip_g711alaw",
+            "codec codec-type [advantage-factor value][codec-numpackets number-of-packets][codec-interval milliseconds][codec-size number-of-bytes] Example: Router(config-tplt-udp-jtr)# codec g711alaw",
+            "description description Example: Router(config-tplt-udp-jtr)# description oper template for voip udp",
+            "end Example: Router(config-tplt-udp-jtr)# end"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Begins configuring a template and enters IP SLA template configuration mode.",
+            "Sets the codec for the operation being configured.",
+            "(Optional) Adds descriptive text to the template being configured.",
+            "Returns to privileged EXEC mode."
+        ]
+    ],
+    "pageTitle": "IP SLAs Configuration Guide, Cisco IOS Release 15M&T - Configuring Auto IP SLAs in IP SLAs Engine 3.0 [Cisco IOS 15.4M&T] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipsla/configuration/15-mt/sla-15-mt-book/sla_auto_eng3.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00038-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 369840751,
+    "recordOffset": 369794147,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{50919=An IP SLAs UDP jitter codec operation for analyzing VoIP SLAs will fail if control protocol is disabled., 50716=The show auto templatecommand for UDP jitter lists the values for the \u201cNumber of statistic distribution buckets kept\u201d and \u201cStatistic distribution interval (milliseconds),\u201d but these values do not apply to UDP jitter codec operations.}",
+    "TableContextTimeStampAfterTable": "{169675=(Optional) Required for analyzing VoIP SLAs. Sets the codec for the operation being configured., 159796=4.\u00a0\u00a0\u00a0 codec codec-type [advantage-factor value] [codec-numpackets number-of-packets] [codec-interval milliseconds] [codec-size number-of-bytes], 171197=For UDP jitter codec operations--Do not disable control protocol., 154918=Sets the codec for the operation being configured., 148939=4.\u00a0\u00a0\u00a0 codec codec-type [advantage-factor value][codec-numpackets number-of-packets][codec-interval milliseconds][codec-size number-of-bytes]}",
+    "textBeforeTable": "DETAILED STEPS 4.\u00a0\u00a0\u00a0 exit 3.\u00a0\u00a0\u00a0 ip sla responder auto-register {source-ipaddress|source-hostname} [client-id client-id] [endpoint-list template-name] [retry-timer minutes] 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS Configuring Automatic Registration of Responder on the Destination Device Configuring an Auto-Measure Group on the Source Device Adding Proactive Threshold Monitoring to a Template on the Source Device Configuring a Template on the Source Device Configuring a Scheduler on the Source Device Configuring an Endpoint List on the Source Device Configuring Automatic Registration of Responder on the Destination Device How to Configure Auto IP SLAs in IP SLAs Engine 3.0 Destination Cisco devices and Cisco IOS IP SLAs Responders in Cisco devices can be configured to automatically register with the source. The source will discover the destination\u2019s address and put it in an endpoint list. Automatic Registration of Destinations for Auto IP SLAs Operations",
+    "textAfterTable": "SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 ip sla auto discovery 4.\u00a0\u00a0\u00a0 ip sla auto endpoint-list type ip template-name 5.\u00a0\u00a0\u00a0 description description 6.\u00a0\u00a0\u00a0 discover [port port] 7.\u00a0\u00a0\u00a0 access-list {standard-range | expanded-range} 8.\u00a0\u00a0\u00a0 ageout seconds 9.\u00a0\u00a0\u00a0 measurement-retry number-of-retries 10.\u00a0\u00a0\u00a0 end 11.\u00a0\u00a0\u00a0 show ip sla auto discovery DETAILED STEPS \u00a0 Command or Action Purpose Step\u00a01 enable Example:  Router> enable \u00a0 Enables privileged EXEC mode. Enter your password if",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

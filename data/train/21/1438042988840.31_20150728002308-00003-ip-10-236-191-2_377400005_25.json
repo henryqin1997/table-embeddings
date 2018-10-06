@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Release",
+            "Release 3.7.2",
+            "Release 3.9.0",
+            "Release 4.2.0"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "L2VPN Address Family support was added.",
+            "The mvpn SAFI was introduced under IPv4 and IPv6."
+        ]
+    ],
+    "pageTitle": "Cisco ASR 9000 Series Aggregation Services Router Routing Command Reference, Release 4.2.x - Border Gateway Protocol Commands [Cisco ASR 9000 Series Aggregation Services Routers] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r4-2/routing/command/reference/b_routing_cr42asr9k/b_routing_cr42asr9k_chapter_01.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988840.31/warc/CC-MAIN-20150728002308-00003-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 377529775,
+    "recordOffset": 377400005,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{673348=The following example shows how to allow a BGP connection to neighbor 172.20.16.6 of up to 255 hops away:, 289913=The following example shows how to divide the autonomous system into autonomous systems 4001, 4002, 4003, 4004, 4005, 4006, and 4007 with the confederation identifier 5. Neighbor 10.2.3.4 is a router inside the confederation. Neighbor 172.20.16.6 is outside the routing domain confederation. To the outside world, there appears to be a single autonomous system with the number 5., 311107=The following example shows how to set the half-life value to 30 minutes, the reuse value to 1500, the suppress value to 10000, and the max-suppress-time to 120 minutes:, 966872=Size, in bytes, of the receive-side socket buffer. Range is 512 to 131072., 1102744=Size, in bytes, of the send-side socket buffer. Range is 4096 to 131072., 307418=suppress : 2000, 1103062=(Optional) Size, in bytes, of the BGP process send buffer. Range is 4096 to 131072., 967192=(Optional) Size, in bytes, of the receive buffer in BGP. Range is 512 to 131072., 300724=The following example shows that autonomous systems 1095, 1096, 1097, and 1098 belong to a single confederation:}",
+    "textBeforeTable": "Syntax Description accept-own no [inheritance-disable] accept-own To enable handling of self-originated VPN routes containing ACCEPT_OWN community attribute, use the accept-own command in neighbor VPNv4 or VPNv6 address family configuration mode. To disable this functionality, either use the no form of this command or use the command with inheritance-disable keyword. accept-own weight vrf (BGP) username (rpki-server) use update-source update out logging update in error-handling extended update in error-handling basic disable update limit sub-group update limit address-family update limit ttl-security transport (rpki-server) timers bgp timers (BGP) table-policy speaker-id soft-reconfiguration inbound socket send-buffer-size socket receive-buffer-size site-of-origin (BGP) signalling disable shutdown (rpki-server) shutdown (BGP) show svd state show svd role show protocols (BGP) show bgp vrf imported-routes show bgp update-group show bgp truncated-communities show bgp summary nsr show bgp summary show bgp sessions show bgp session-group show bgp route-policy",
+    "textAfterTable": "Command History Release Modification Release 4.1.1 This command was introduced. Usage Guidelines To use this command, you must be in a user group associated with a task group that includes appropriate task IDs. If the user group assignment is preventing you from using a command, contact your AAA administrator for assistance. Task ID Task ID Operation bgp read, write Examples This example shows how to enable handling of accept-own community:  RP/0/RSP0/CPU0:router#configure RP/0/RSP0/CPU0:router(config)#router bgp 100 RP/0/RSP0/CPU0:router(config-bgp)#neighbor 10.2.3.4 RP/0/RSP0/CPU0:router(config-bgp-nbr)#address-family vpnv4 unicast RP/0/RSP0/CPU0:router(config-bgp-nbr-af)#accept-own additional-paths install backup Note Effective with Release 4.0.0, the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

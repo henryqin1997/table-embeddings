@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "author",
+            "Smith",
+            "Brown",
+            "Smith",
+            "James"
+        ],
+        [
+            "title",
+            "\"Pigs\"",
+            "\"Pets\"",
+            "\"Dogs\"",
+            "\"Dogs\""
+        ]
+    ],
+    "pageTitle": "Ch 18: Sets, Classes and Relations",
+    "title": "",
+    "url": "http://www.jsoftware.com/docs/help602/learning/18.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00179-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 539229147,
+    "recordOffset": 539218432,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{1=The examples in this chapter were executed using J version 601-o-beta. This chapter last updated 9 Jul 2006 . Copyright \u00a9 Roger Stokes 2006. This material may be freely reproduced, provided that this copyright notice is also reproduced.}",
+    "lastModified": "Tue, 04 Mar 2008 01:06:48 GMT",
+    "textBeforeTable": "and we aim to catalog such publications. A suitable data structure for such a catalog might be a table relating authors to titles and another table relating titles to subjects. For example: \"Dogs\" by Smith and James, on dogs \"Pets\" by Brown, on cats and dogs \"Pigs\" by Smith, on the subject of pigs 18.4 Relations Suppose there are a number of publications, such as: +-+-+ |L|1| +-+-+ |E|2| +-+-+ |T|2| +-+-+ |U|1| +-+-+ |C|1| +-+-+ 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 1 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 LETTUCE y u /. y = y y u =: {. ; # Here is a variation. We note that we have in effect a classification scheme where we have as many different classes as different letters: each letter is (the key of) its own class. Thus we can write an expression of the form y u /. y. The applied verb u will see, each time, a list of letters, all the same. It counts them, with #, and takes the first, with {., to be a label for the",
+    "textAfterTable": "title subject \"Pigs\" pigs \"Pets\" dogs \"Pets\" cats \"Dogs\" dogs Such tables we may call \"relations\". The order of the rows is not significant. Here,for the sake of simplicity, we will stick to relations with two columns. Now we choose a representation for our relations. For a first approach, we choose tables of boxed strings. The authors-titles relation is:  ] AT =: (\". ;. _2) 0 : 0 'Smith' ; 'Pigs' 'Brown' ; 'Pets' 'Smith' ; 'Dogs' 'James' ; 'Dogs' ) +-----+----+ |Smith|Pigs| +-----+----+ |Brown|Pets| +-----+----+ |Smith|Dogs| +-----+----+ |James|Dogs| +-----+----+ and the titles-subjects relation is:  ] TS =: (\". ;. _2) 0 : 0 'Pigs' ; 'pigs' 'Pets' ; 'cats' 'Pets' ; 'dogs' 'Dogs' ; 'dogs' ) +----+----+ |Pigs|pigs| +----+----+ |Pets|cats| +----+----+ |Pets|dogs| +----+----+ |Dogs|dogs| +----+----+ 18.4.1 Join of Relations From the authors-titles relation AT and the titles-subjects relation TS we can compute an authors-subjects relation showing which author has written a title on which subject. We say that AT and TS are to be joined with respect to titles, and we would expect the join to look like this:  +-----+----+ |Smith|pigs| +-----+----+ |Brown|cats| +-----+----+ |Brown|dogs| +-----+----+ |Smith|dogs| +-----+----+ |James|dogs| +-----+----+ The plan for this",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

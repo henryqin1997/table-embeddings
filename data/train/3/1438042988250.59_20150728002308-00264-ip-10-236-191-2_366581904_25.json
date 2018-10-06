@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "RFC",
+            "RFC 1058",
+            "RFC 2082",
+            "RFC 2091",
+            "RFC 2453"
+        ],
+        [
+            "Title",
+            "Routing Information Protocol",
+            "RIP-2 MD5 Authentication",
+            "Triggered Extensions to RIP to Support Demand Circuits",
+            "RIP version 2"
+        ]
+    ],
+    "pageTitle": "IP Routing: RIP Configuration Guide, Cisco IOS Release 15M&T - Configuring Routing Information Protocol [Cisco IOS 15.4M&T] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_rip/configuration/15-mt/irr-15-mt-book/irr-cfg-info-prot.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988250.59/warc/CC-MAIN-20150728002308-00264-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 366620635,
+    "recordOffset": 366581904,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{128175=Configures the IP-RIP Delay Start feature on the interface. The device will delay sending the first MD5 authentication packet to the RIPv2 neighbor for the number of seconds specified by the delay argument. The range is from 0 to 1800., 147237=RFC 2091, 133646=The Ethernet interfaces for Router A, Router B, and Router C (connected to IP networks 10.13.50.0, 10.155.120.0, and 10.20.40.0, respectively all have split horizon enabled by default, while the serial interfaces connected to networks 172.16.1.0 and 192.168.1.0 all have split horizon disabled with the no ip split-horizon command.The figure below shows the topology and interfaces., 147546=RFC 2453, 20613=The differences in vendor implementations of MD5 authentication for RIPv2 are probably a result of the ambiguity of the relevant RFC (RFC 2082) with respect to packet loss. RFC 2082 suggests that devices should be ready to accept either a sequence number of 0 or a sequence number higher than the last sequence number received. For more information about MD5 message reception for RIPv2, see section 3.2.2 of RFC 2082 at the following url: http:/\u200b/\u200bwww.ietf.org/\u200brfc/\u200brfc2082.txt., 146684=RFC 1058, 146967=RFC 2082, 82048=To overcome these limitations, triggered extensions to RIP cause RIP to send information on the WAN only when there has been an update to the routing database. Periodic update packets are suppressed over the interface on which this feature is enabled. RIP routing traffic is reduced on point-to-point, serial interfaces. Therefore, you can save money on an on-demand circuit for which you are charged for usage. Triggered extensions to RIP partially support RFC 2091, Triggered Extensions to RIP to Support Demand Circuits ., 156064=address family --A group of network protocols that share a common format of network address. Address families are defined by RFC 1700.}",
+    "textBeforeTable": "Related Documents The following sections provide references related to configuring Routing Information Protocol. Additional References Example: IP-RIP Delay Start on a Frame Relay Interface Router(config-router)# Router(config-router-af)# exit-address-family Router(config-router-af)# version 2 Router(config-router-af)# no auto-summary Router(config-router-af)# default-metric 2 Router(config-router-af)# network 20.0.0.0 Router(config-router-af)# redistribute connected Router(config-router)# address-family ipv4 vrf notusingtimers Router(config-router)# Router(config-router-af)# exit-address-family Router(config-router-af)# version 2 Router(config-router-af)# no auto-summary Router(config-router-af)# default-metric 2 Router(config-router-af)# network 20.0.0.0 Router(config-router-af)# redistribute connected Router(config-router-af)# timers basic 20 40 60 80 Router(config-router)# address-family ipv4 vrf xyz Router(config-router)# Router(config-router-af)# exit-address-family Router(config-router-af)# version 2 Router(config-router-af)# no auto-summary Router(config-router-af)# default-metric 5 Router(config-router-af)# network 10.0.0.0 Router(config-router-af)# redistribute connected Router(config-router-af)# timers basic 10 20 20 20 Router(config-router)# address-family ipv4 vrf abc Router(config-router)# Router(config-router)# no auto-summary Router(config-router)# default-metric 10 Router(config-router)# network 5.0.0.0 Router(config-router)# redistribute connected Router(config-router)# timers basic 5 10 15 20 Router(config-router)# version 2 Router(config)# router rip   The following example shows how to adjust individual address family timers. Note that the address family \"notusingtimers\" will use the system defaults of 30, 180, 180, and",
+    "textAfterTable": "Standards Standard Title None -- MIBs MIB MIBs Link No new or modified MIBS are supported and support for existing MIBs has not been modified. To locate and download MIBs for selected platforms, Cisco IOS releases, and feature sets, use Cisco MIB Locator found at the following URL: http://www.cisco.com/go/mibs RFCs RFC Title RFC 1058 Routing Information Protocol",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

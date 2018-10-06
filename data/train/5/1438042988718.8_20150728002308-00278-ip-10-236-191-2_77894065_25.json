@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "If you want to...",
+            "Find an entity object of a given type by its primary key",
+            "Access the current DBTransaction object",
+            "Find any EntityDefImpl object by its fully qualified name",
+            "Retrieve the value of an entity object's custom property",
+            "Set the value of an entity object's custom property",
+            "Create a new instance of an entity object",
+            "Iterate over the entity instances in the cache of this entity type",
+            "Access an array list of entity definition objects for entities that extend the current one."
+        ],
+        [
+            "Call this method in the EntityDefImpl class",
+            "findByPrimaryKey() Notes: For a tip about getting findByPrimaryKey() to find entity instances of subtype entities as well, see Section 38.7.4.2, \"Finding Subtype Entities by Primary Key.\"",
+            "getDBTransaction()",
+            "findDefObject() (static method)",
+            "getProperty(), getProperties()",
+            "setProperty()",
+            "createInstance2() Notes: Alternatively, you can expose custom createXXX() methods with your own expected signatures in that same custom EntityDefImpl subclass. See Section E.2.5.2, \"Methods You Typically Write in Your Custom EntityDefImpl Class\" for details.",
+            "getAllEntityInstancesIterator()",
+            "getExtendedDefObjects()"
+        ]
+    ],
+    "pageTitle": "Most Commonly Used ADF Business Components Methods",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E21043_01/web.1111/b31974/appendix_mostcommon.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00278-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 77916663,
+    "recordOffset": 77894065,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 28 Jan 2011 10:33:22 GMT",
+    "textBeforeTable": "Table E-18 Methods You Typically Call on EntityDefImpl Table E-18 describes the operations that you can perform on an entity object using the EntityDefImpl class. E.2.5.1 Methods You Typically Call on EntityDefImpl The EntityDefImpl class is a singleton, shared metadata object for all entity objects of a given type in a single Java VM. It defines the structure of the entity instances and provides methods to create new entity instances and find existing instances by their primary key. E.2.5 EntityDefImpl Class WARNING: It is also possible to override the validateEntity() method to write entity-level validation code; however, if you want to maintain the benefits of the ADF bundled exception mode \u2014 where the framework collects and reports a maximal set of validation errors back to the client user interface \u2014 use the MethodValidator approach suggested in Table E-16. This allows the framework to automatically collect all of your exceptions that your validation methods throw without your having to understand the bundled exception implementation mechanism. Overriding the validateEntity() method directly shifts the responsibility onto your own code to correctly catch and bundle the exceptions that Oracle ADF would have caught by default, which",
+    "textAfterTable": "E.2.5.2 Methods You Typically Write in Your Custom EntityDefImpl Class Table E-19 describes the operations that you can perform on an entity object using your custom EntityDefImpl class. Table E-19 Methods You Typically Write on EntityDefImpl If you want to... Write a method like this in your custom EntityDefImpl class Allow other classes to create an entity instance with an initial type-safe set of attribute values or setup information createXXXX(Type1arg1,..., TypeNargN) Notes: Internally, using this method would create and populate an instance of a NameValuePairs object (which implements AttributeList) and call the protected method createInstance(), passing that NameValuePairs object. Make sure that the method is public if other classes need to be able to call it. E.2.5.3 Methods You Typically Override in Your Custom EntityDefImpl Table E-20 describes the operations that",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

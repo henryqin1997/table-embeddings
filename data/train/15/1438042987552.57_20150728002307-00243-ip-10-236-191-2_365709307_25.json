@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Task ID",
+            "sysmgr",
+            "root-lr"
+        ],
+        [
+            "Operations",
+            "read, write",
+            "read, write"
+        ]
+    ],
+    "pageTitle": "Cisco ASR 9000 Series Aggregation Services Router System Management Command Reference, Release 4.1 - Hardware Redundancy and Node Administration Commands on the Cisco\u00a0ASR\u00a09000 Series Router [Cisco IOS XR Software (End-of-Sale)] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r4-1/system_management/command/reference/b_sysman_cr41asr9k/b_sysman_cr41asr9k_chapter_01000.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987552.57/warc/CC-MAIN-20150728002307-00243-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 365771315,
+    "recordOffset": 365709307,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{122454=Feed protected power capacity. This value applies to the ASR\u00a09010 AC system only., 121975=Protected power capacity of the chassis with power module redundancy (ASR\u00a09010 AC 3+3, ASR\u00a09010 DC 5+1, ASR\u00a09006 AC 2+1, ASR\u00a09010 DC 2+1)., 348475=Enter the show inventory command with the raw keyword to display every RFC 2737 entity installed in the router, including those without a PID, unique device identifier (UDI), or other physical identification., 339287=DS1631 (0x0803c2e4) device status}",
+    "textBeforeTable": "Syntax Description { all | node-id } location { client-stats | controller-stats | server-stats } clear canbus To clear the counters used for statistics regarding the CAN bus, use the clear canbus command in administration EXEC mode. clear canbus upgrade hw-module fpd show version show redundancy show plugin slot counts show platform show operational show led show inventory show hw-module subslot status show hw-module subslot registers show hw-module subslot plim-subblock show hw-module subslot errors show hw-module subslot counters show hw-module subslot config show hw-module subslot brief show hw-module profile show hw-module fpd show fpd package show environment show dsc show canbus redundancy switchover power budget reservation power budget enforcement disable led mode hw-module subslot reload hw-module reset auto hw-module profile scale hw-module profile feature hw-module power disable hw-module power location hw-module location reload fpd auto-upgrade clear plugin slot counts clear",
+    "textAfterTable": "Command Default None Command Modes Administration EXEC Command History Release Modification Release 3.7.2 This command was introduced. Usage Guidelines Task ID Task ID Operation sysmgr read Examples The following example illustrates how to use the clear canbus command:  RP/0/RSP0/CPU0:router(admin)# clear canbus server-stats location all Related Commands Related Information Command Description show canbus Displays the statistics regarding the CAN bus. clear plugin slot counts",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

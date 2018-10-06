@@ -1,0 +1,41 @@
+{
+    "relation": [
+        [
+            "System",
+            "OpenVMS",
+            "UNIX",
+            "",
+            "---"
+        ],
+        [
+            "File Specification",
+            "BEATLE::DBA0:[MCCARTNEY]SONGS.LIS",
+            "beatle!/usr1/mccartney/songs.lis",
+            "",
+            "BEATLE::DBA0:[MCCARTNEY.C]/songs.lis"
+        ],
+        [
+            "Valid/Invalid",
+            "Valid",
+            "Valid",
+            "",
+            "Invalid"
+        ]
+    ],
+    "pageTitle": "HP OpenVMS systems documentation",
+    "title": "Table 1-3 Valid and Invalid UNIX and OpenVMS File Specifications",
+    "url": "http://h71000.www7.hp.com/doc/83final/5763/5763pro_002.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044160065.87/warc/CC-MAIN-20150728004240-00229-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 112750191,
+    "recordOffset": 112735298,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "These tools work by hiding the conflicting symbols from one of the C RTLs being linked. Which tool is required depends on what C RTLs are used by the main application and the shareable image. Table 1-1 shows typical C RTL conflicts and the interoperability tool required to resolve it. In the table, VAXCRTL.EXE refers to either VAXCRTL.EXE or VAXCRTLG.EXE. DECC$EMPTY.EXE VAXC$EMPTY.EXE VAXC$LCL.OPT 1.3.2 Resolving Link-Time Conflicts with Multiple C RTLs This section describes the use of interoperability tools to resolve link-time conflicts when using multiple C RTLs. When migrating to the HP C RTL, multiple C RTLs will likely be needed to link an application. One C RTL might be explicitly linked against. A second C RTL might not be explicitly linked against, but brought into the link by means of a shareable image. For example, when developing a Motif program using HP C, the application must be linked against the HP C RTL and against the Motif images. Motif currently brings the VAX C RTL into the link. Problems encountered when linking with multiple C RTLs are a result of the OpenVMS linker resolving symbol references in the image being linked by searching the transitive closure of shareable images and libraries. That is, when linking with a shareable image, the linker searches that shareable image and all shareable images referenced in that shareable image. So when linking with VAXCRTL.EXE and with",
+    "textAfterTable": "LINK-W-MULDEF VAXCRTL.EXE/VAXCRTLG.EXE VAXC$EMPTY LINK-W-MULDEF VAXC2DECC.EXE/VAXCRTL.EXE VAXC$EMPTY 1.3.2.1 Using VAXC$LCL.OPT VAXC$LCL.OPT is required when building any shareable image linked with the VAX C RTL object library or HP C RTL object library. If the shareable image is built without using VAXC$LCL.OPT, the C RTL global symbols are visible in the shareable image and cause linker conflicts when users of the image link against it. For example:  %LINK-E-MULSHRPSC, psect C$$TRNS_VALUES defined in shareable image IMAGE1.EXE; is multiply defined in shareable image SYS$LIBRARY:VAXCRTL.EXE;1 -LINK-E-NOIMGFIL, image file not created In this example, the shareable image IMAGE1 uses VAXCRTL.OLB, and the image being linked uses VAXCRTL.EXE. For a successful link, relink the shareable image using VAXC$LCL.OPT:  $ LINK/SHARE IMAGE1.OBJ, IMAGE1.OPT/OPTIONS, SYS$LIBRARY:VAXCRTL/LIBRARY, - _$ SYS$LIBRARY:VAXC$LCL.OPT/OPTIONS The following message also indicates a conflict involving the VAX C RTL object library:  %LINK-E-SHRPSCLNG, Psect STDIN has length of 8 in module C$EXTERNDATA file SYS$LIBRARY:DECCRTL.OLB;2 which exceeds length of 4 in shareable image IMAGE1.EXE; -LINK-E-NOIMGFIL, image file not created In this example, the shareable image IMAGE1 uses VAXCRTL.OLB, and the image being",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

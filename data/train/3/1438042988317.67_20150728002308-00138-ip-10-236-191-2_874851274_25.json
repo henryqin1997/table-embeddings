@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Element",
+            "User Access List field",
+            "Add User button",
+            "Group Access List field",
+            "Add Group button",
+            "Role Access List field",
+            "Add Role button"
+        ],
+        [
+            "Description",
+            "Specifies the access control list users who have access to the item and the permissions assigned to each user. In the selection box, enter the first two characters of a name to see a list of names that begin with those characters. Use the \"*\" wildcard character to match one or more characters. For example, to see all names that start with the letter S, enter \"S*\". For more information about permissions, see Section A.4.2, \"Access Control List Permissions.\"",
+            "Adds the selected name to the user access list. New or modified items are shown in red. To remove a name from the list, click the red X next to the name.",
+            "Specifies the access control list groups who have access to the item and the permissions assigned to each group. In the selection box, enter the first two characters of a name to see a list of names that begin with those characters. Use the \"*\" wildcard character to match one or more characters. For example, to see all names that start with the letter S, enter \"S*\". For more information about permissions, see Section A.4.2, \"Access Control List Permissions.\"",
+            "Adds the selected name to the group access list. To remove a name from the list, click the red X next to the name.",
+            "Specifies the access control list roles who have access to the item and the permissions assigned to each role. In the selection box, enter the first two characters of a name to see a list of names that begin with those characters. Use the \"*\" wildcard character to match one or more characters. For example, to see all names that start with the letter S, enter \"S*\". For more information about permissions, see Section A.4.2, \"Access Control List Permissions.\"",
+            "Adds the selected name to the role access list. To remove a name from the list, click the red X next to the name."
+        ]
+    ],
+    "pageTitle": "A User Interface",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E21764_01/doc.1111/e10797/e01_interface.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00138-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 874907247,
+    "recordOffset": 874851274,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 13 May 2015 05:18:48 GMT",
+    "textBeforeTable": "Access control list security for users, groups, and roles provide fields similar to the following: Note: By default, blank access control lists do not affect access to the content item. This feature is configurable, however, so that explicit access is required (blank access control lists prevent access to the item). Role Access List Group Access List User Access List Depending on how access control list security is configured, three new fields are available for use when adding, modifying, or searching for content items: An access control list is a list of users, groups, or enterprise roles with permission to access or interact with a content item. A.4.1 Access Control List Users, Groups, and Roles Access Control List Permissions Access Control List Users, Groups, and Roles This section covers the following topics: This functionality must be enabled by your system administrator. A.4 Access Control Lists (ACL) Resets the fields on this page to the previously saved settings. Reset button",
+    "textAfterTable": "A.4.2 Access Control List Permissions Each item in the user, group, or role access control lists can have the following permissions: Permissions Description Read Allowed to view the content item. Write Allowed to view, check in, check out, and get a copy of the content item. Delete Allowed to view, check in, check out, get a copy, and delete the content item. Admin Allowed to view, check in, check out, get a copy, and delete the content item, as well as modify the access control list entries and the permissions assigned to them. To assign a permission, click the associated icon. Permissions are \u201ccumulative.\u201d If you assign write, you automatically assign read. If you assign admin, you automatically assign read, write, and delete. To remove a permission, click the previous icon in the sequence. For example, to remove the admin permission, click the icon for the delete permission.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

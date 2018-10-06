@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Release",
+            "12.4(11)T",
+            "12.4(22)T",
+            "15.1(4)M"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "The command was modified. The stun-ice keyword was added.",
+            "This command was modified. The msrpc keyword was added."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Security Command Reference: Commands S to Z - show parameter-map type consent through show users [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/s1/sec-s1-cr-book/sec-cr-s5.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00106-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 378511979,
+    "recordOffset": 378363795,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{293458=Displays information about the specified IPsec flow in the instance. The range is from 0 to 32767., 340158=To confirm and display the Unicast Reverse Path Forwarding (uRPF) configuration on a forwarding processor of the Cisco ASR 1000 Series Aggregation Services Routers, use the show platform software urpf qfp active configuration command in the privileged EXEC mode., 722988=A Home Agent (HA) IP address used during a MIP session by the user as defined in IETF RFC 2002. The format is IPv4 Address., 899996=10.23.23.23 is the IP address of the destination PE router., 1032368=This command was implemented on the Cisco ASR 1000 series routers., 569689=This command was integrated into Cisco IOS Release 12.3(11)T and implemented on the following platforms: Cisco 2600XM, Cisco 2691, Cisco 2811, Cisco 2821, Cisco 2851, Cisco 3700, and Cisco 3800 series routers., 1002602=This command was implemented on the Cisco ASR 1000 Series Aggregation Service Routers., 894594=rd 100:1, 735892=A shared key for MN-HA that may appear in a RADIUS Access-Accept message. The MN-HA shared key is encrypted using a method based on the RSA Message Digest Algorithm MD5 [RFC 1321] as described in Section 3.5 of RFC 2868. The format is Binary., 137928=This command was introduced on the Cisco ASR 1000 Series Routers., 147049=This command was introduced on the Cisco ASR 1000 Series Aggregation Services Routers., 894935=route-target import 100:1, 894900=route-target export 100:1, 936525=(Optional) The number of SSH server connections on the router. Range is from 0 to 1510. The default value is 0., 569333=This command was introduced on the Cisco Aironet Access Point 1100 and the Cisco Aironet Access Point 1200., 294813=This command was introduced on Cisco ASR 1000 Series Routers., 514778=This command was implemented on Cisco ASR 1000 series routers., 895702=Routes tagged with the route-target import 100:1 are imported into VRF vpn3., 898902=area 1 sham-link 10.43.43.43 10.23.23.23 cost 10, 690735=Indicates the modem speed at which this fax-mail was initially transmitted or received. Possible values are 1200, 4800, 9600, and 14400. The format is String., 1099490=This command was implemented on the Cisco ASR 1000 Series Aggregation Sevices Routers., 895431=Routes tagged with route-target export 100:1 are exported from VRF vpn3.}",
+    "textBeforeTable": "Syntax Description [ parameter-map-name | default ] consent type parameter-map show To display consent parameter map information, use the show parameter-map type consentcommand in privileged EXEC mode. show parameter-map type consent show users show user-group show usbtoken show usb tree show usb-devices summary show usb port show usb driver show usb device show usb controllers show tunnel endpoints show tech-support ipsec show tech-support alg show tcp intercept statistics show tcp intercept connections show tacacs show ssl-proxy module state show ssh show snmp mib nhrp status show smm show secure bootset show sasl show running-config vrf show running-config show redundancy linecard-group show redundancy application transport show redundancy application protocol show redundancy application if-mgr show redundancy application group show redundancy application faults group show redundancy application data-interface show redundancy application control-interface group show redundancy application asymmetric-routing",
+    "textAfterTable": "Command History Release Modification 12.4(15)T This command was introduced. 12.4(20)T The command was modified. The parameter-map-name argument was added. Examples The following is sample output from the show parameter-map type consentcommand. The fields are self-explanatory.  Router# show parameter-map type consent parameter-map type consent map1 Syslog : Enabled File download time(in minutes) : 456 Number of Accepted Users : 0 Number of Denied Users : 0 show parameter-map type inspect To display user-configured or default inspect-type parameter maps, use the show parameter-map type inspect command in privileged EXEC mode. show parameter-map type inspect [ parameter-map-name | default | global ] Syntax Description",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "ctxHdl",
+            "name",
+            "value"
+        ],
+        [
+            "IN / OUT",
+            "(IN)",
+            "(IN)",
+            "(IN)"
+        ],
+        [
+            "Description",
+            "Context handle.",
+            "Parameter name.",
+            "Parameter value as an XPath expression"
+        ]
+    ],
+    "pageTitle": "DBMS_XMLSAVE",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/appdev.112/e23448/d_xmlsav.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00171-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72976619,
+    "recordOffset": 72963137,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 19 May 2015 17:54:50 GMT",
+    "textBeforeTable": "value IN VARCHAR2); name IN VARCHAR2, ctxHdl IN ctxType, PROCEDURE setXSLTParam(  Syntax Sets the value of a top-level stylesheet parameter. The parameter is expected to be a valid XPath expression; literal values would therefore have to be explicitly quoted. SETXSLTPARAM       CLOB containing the stylesheet to register. (IN) stylesheet URL for include, import, and external entities. (IN) ref URI to the stylesheet to register. (IN) uri Context handle. (IN) ctxHdl Description IN / OUT Parameter   Passes in the stylesheet through a CLOB. PROCEDURE setXSLT( \u00a0\u00a0\u00a0ctxHdl IN ctxType, \u00a0\u00a0\u00a0stylesheet IN CLOB, \u00a0\u00a0\u00a0ref IN VARCHAR2 := null); Passes in the stylesheet through a URI. PROCEDURE setXSLT( \u00a0\u00a0\u00a0ctxHdl IN ctxType, \u00a0\u00a0\u00a0uri IN VARCHAR2, \u00a0\u00a0\u00a0ref IN VARCHAR2 := null);",
+    "textAfterTable": "UPDATEXML Updates the table specified at the context creation time with data from the XML document, and returns the number of rows updated. The options are described in the following table. Syntax Description FUNCTION updateXML( \u00a0\u00a0\u00a0ctxHdl IN ctxType, \u00a0\u00a0\u00a0xDoc IN VARCHAR2) RETURN NUMBER; Passes in the xDoc parameter as a VARCHAR2. FUNCTION updateXML( \u00a0\u00a0\u00a0ctxHdl IN ctxType, \u00a0\u00a0\u00a0xDoc IN CLOB) RETURN NUMBER; Passes in the xDoc parameter as a CLOB. Parameter IN / OUT Description ctxHdl (IN) Context handle. xDoc (IN) String containing the XML document.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

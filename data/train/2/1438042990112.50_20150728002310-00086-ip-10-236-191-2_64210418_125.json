@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Sr. Number",
+            "1.",
+            "2.",
+            "3.",
+            "4.",
+            "5.",
+            "6.",
+            "8."
+        ],
+        [
+            "Attribute",
+            "EFFECTIVE FROM DATE",
+            "EFFECTIVE TO DATE",
+            "IN PLATFORM CODE",
+            "IN PLATFORM DESC",
+            "IN PLATFORM NAME",
+            "NETWORK CODE",
+            "STATUS CODE"
+        ],
+        [
+            "Description",
+            "Active from. Standard SCD field, Effective Start Date",
+            "Date the party left the program. Will be null if the party is currently a member of the program.",
+            "Id for IN Platform.",
+            "IN Platform description.",
+            "IN Platform name.",
+            "The network which is used by this platform",
+            "An indicator of the address current status. For instance, this address may be valid, invalid, temporary, and so on."
+        ],
+        [
+            "Sample Value",
+            "12/31/2005 12:00:00 AM",
+            "12/31/2005 12:00:00 AM",
+            "5101",
+            "",
+            "",
+            "1",
+            ""
+        ]
+    ],
+    "pageTitle": "Logical Data Model Dimensions",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/doc.112/e15886/dimensional.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.50/warc/CC-MAIN-20150728002310-00086-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 64334171,
+    "recordOffset": 64210418,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{62636=Suite 1111, 140087=12/31/2005 0:00, 45375=3/3/2008 12:00:00 AM, 100355=Unique identifier for revenue band. For example: 0_1000, 1000_3000., 144191=BY 2005 Q1, 154916=BY 2005 M1 HM1, 198259=CY 2005 Q1, 100492=ARPU1000, 134774=BY 2005, 138803=BY 2005 HY1, 945629=For example: 12/31/2005 12:00:00 AM, 149476=BY 2005 M1, 1011318=4/1/2008 5:00:00 PM, 29603=12/31/2005 12:00:00 AM, 38912=4/4/2006 12:00:00 AM, 469381=10/11/2008 0:00, 100880=ARPU Ranging From 0-1000}",
+    "lastModified": "Sat, 14 Aug 2010 15:00:29 GMT",
+    "textBeforeTable": "Table 3-122 IN Platform Detail Table 3-122 shows IN Platform Detail: Detail level of the dimension. Stores the IN Platform Detail Information. Code for All IN Platform. ALL IN PLATFORM CODE 1. Description Attribute Sr. Number Table 3-121 IN Platform Total Table 3-121 shows IN Platform Total: All IN Platform are most aggregate level of the dimension. IN Platform Level Description of the illustration image054.gif Standard IN Platform Hierarchy: IN Platform Hierarchies Description: IN PLATFORM IN Platform",
+    "textAfterTable": "Initiative Type Description: INITIATIVE TYPE Initiative Type Hierarchies Standard Initiative Type Hierarchy: Description of the illustration image056.gif Initiative Type Levels Table 3-123 shows Initiative Type Total: All Initiative Type are most aggregate level of the dimension. Table 3-123 Initiative Type Total Sr. Number Attribute Description 1. ALL INITIATIVE TYPE CODE Code for All Initiative Type. Table 3-124 shows Initiative Type Detail: Detail level of the dimension. Stores the Initiative Type Detail Information. Table 3-124 Initiative Type Detail",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

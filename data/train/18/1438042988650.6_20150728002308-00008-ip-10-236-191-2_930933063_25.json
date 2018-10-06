@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Interface/Class",
+            "ReportEngine",
+            "ReportRequest",
+            "ReportRequestContext",
+            "ReportFormat",
+            "ReportFormatExporter",
+            "ReportDataSourceType"
+        ],
+        [
+            "Utility/Interface",
+            "ReportEngineUtil",
+            "Serializable",
+            "Serializable",
+            "None",
+            "None",
+            "None"
+        ],
+        [
+            "Main involved classes",
+            "ServletContext",
+            "Map",
+            "Map, HashMap",
+            "None",
+            "reportRequest,ReportResultContainer",
+            "None"
+        ],
+        [
+            "Description",
+            "Report engine interface",
+            "Report request",
+            "Report request context",
+            "Report formats: CSV(\"csv\"), HTML(\"html\"), PDF(\"pdf\"), RTF(\"rtf\"), TXT(\"txt\"), XLS(\"xls\"), XML(\"xml\")",
+            "Report format exporter",
+            "Report data source types: CSV(\"csv\"), EMPTY(\"empty\"), JDBC(\"jdbc\"), PORTAL(\"portal\"), XLS(\"xls\"), XML(\"xml\")"
+        ]
+    ],
+    "pageTitle": "Common API in Liferay Portal Systems Development | PACKT Books",
+    "title": "",
+    "url": "https://www.packtpub.com/books/content/common-api-liferay-portal-systems-development",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00008-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 930965851,
+    "recordOffset": 930933063,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{140015=It's one of the fastest moving field in tech - discover what thousands of real web developers think of the state of the industry in 2015. Is Angular all-powerful, or is its throne in danger?, 9942=The biggest web developer salary and skills survey of 2015, 23510=January 2012}",
+    "textBeforeTable": "The following table shows user-related service interfaces, extensions, utilities, wrappers, and their main methods: Services The following figure depicts these entities and their relationships. The entity User has a one-to-one association with the entity Contact, which may have many contacts as children. And the entity Contact has a one-to-one association with the entity Account, which may have many accounts as children. The entity Contact can have a many-to-many association with the entities Address, EmailAddress, Phone, Website, and Ticket. Logically, the entities Address, EmailAddress, Phone, Website, and Ticket may have a many-to-many association with the other entities, such as Group, Organization, and UserGroup as shown in the following image: Models and services The portal has defined user management with a set of entities, such as, User, Contact, Address, EmailAddress, Phone, Website, and Ticket, and so on at /portal/service.xml. In the following section, we're going to address the User entity, its association, and relationship. User management (For more resources on Liferay, see here.) Build dynamic, content-rich, and social systems on top of Liferay with this book and ebook",
+    "textAfterTable": "WebsiteService, WebsiteLocalService PersistedModelLocalService Website(Local)ServiceUtil, Website(Local)ServiceWrapper add*, create*, delete*, get*, update*, dynamicQuery, and so on. TicketLocalService PersistedModelLocalService TicketLocalServiceUtil, TicketLocalServiceWrapper add*, create*, delete*, get*, update*, dynamicQuery, and so on. \u00a0 Relationships The portal also defined many-to-many relationships between User and Group, User and Organization, User and Team, User and UserGroup, as shown in the following code: \t<column name=\"groups\" type=\"Collection\"  entity=\"Group\" mapping-table=\"Users_Groups\" /> \t<column name=\"userGroups\" type=\"Collection\"  entity=\"UserGroup\" mapping-table=\"Users_UserGroups\" /> In particular, you will be able to find a similar definition at /portal/service.xml. Sample portal service portlet The portal provides a sample portal service plugin called sample-portal-service-portlet (refer to the plugin details at /portlets/sample-portal-service-portlet). The following is the code snippet: \tList organizations =  OrganizationServiceUtil.getUserOrganizations(  themeDisplay.getUserId());  // add your logic The previous code shows how to consume Liferay services through regular Java calls. These services include com.liferay.portal.service.OrganizationServiceUtil and the model involves com.liferay.portal.model.Organization. Similarly, you can use other services, for example, com.liferay.portal.service.UserServiceUtil and com.liferay.portal.service.GroupServiceUtil; and models, for example, com.liferay.portal.model.User, com.liferay.portal.model.Group. Of course, you can find other services and models\u2014you will find services located at the com. liferay.portal.service package in the /portal-service/src folder. In the same way, you will find models located at the com.liferay.portal.model package in the /portal-service/src folder. What's the difference between *LocalServiceUtil and *ServiceUtil?",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

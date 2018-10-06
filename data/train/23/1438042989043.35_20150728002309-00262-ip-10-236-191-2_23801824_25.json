@@ -1,0 +1,238 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2013-14",
+            "2014-15 *",
+            "2014-15",
+            "2014-15",
+            "2014-15 *",
+            "2014-15 *"
+        ],
+        [
+            "Team",
+            "LIA",
+            "All Teams",
+            "MAN",
+            "MAN",
+            "JIL",
+            "MAN"
+        ],
+        [
+            "GP",
+            "38",
+            "44",
+            "41",
+            "3",
+            "41",
+            "3"
+        ],
+        [
+            "GS",
+            "34",
+            "40",
+            "38",
+            "2",
+            "38",
+            "2"
+        ],
+        [
+            "Min",
+            "35.6",
+            "39.5",
+            "41.3",
+            "16.1",
+            "41.3",
+            "16.1"
+        ],
+        [
+            "FGM",
+            "8.97",
+            "12.18",
+            "12.83",
+            "3.33",
+            "12.83",
+            "3.33"
+        ],
+        [
+            "FGA",
+            "18.97",
+            "25.39",
+            "26.71",
+            "7.33",
+            "26.71",
+            "7.33"
+        ],
+        [
+            "FG%",
+            ".473",
+            ".480",
+            ".480",
+            ".455",
+            ".480",
+            ".455"
+        ],
+        [
+            "3FGM",
+            "1.68",
+            "3.14",
+            "3.37",
+            "0.00",
+            "3.37",
+            "0.00"
+        ],
+        [
+            "3FGA",
+            "6.05",
+            "9.66",
+            "10.22",
+            "2.00",
+            "10.22",
+            "2.00"
+        ],
+        [
+            "3P%",
+            ".278",
+            ".325",
+            ".329",
+            ".000",
+            ".329",
+            ".000"
+        ],
+        [
+            "FTM",
+            "4.97",
+            "7.32",
+            "7.78",
+            "1.00",
+            "7.78",
+            "1.00"
+        ],
+        [
+            "FTA",
+            "6.55",
+            "9.82",
+            "10.34",
+            "2.67",
+            "10.34",
+            "2.67"
+        ],
+        [
+            "FT%",
+            ".759",
+            ".745",
+            ".752",
+            ".375",
+            ".752",
+            ".375"
+        ],
+        [
+            "FIC",
+            "16.05",
+            "24.35",
+            "25.71",
+            "5.75",
+            "25.71",
+            "5.75"
+        ],
+        [
+            "OFF",
+            "1.58",
+            "2.07",
+            "2.17",
+            "0.67",
+            "2.17",
+            "0.67"
+        ],
+        [
+            "DEF",
+            "3.89",
+            "5.36",
+            "5.59",
+            "2.33",
+            "5.59",
+            "2.33"
+        ],
+        [
+            "Reb",
+            "5.47",
+            "7.43",
+            "7.76",
+            "3.00",
+            "7.76",
+            "3.00"
+        ],
+        [
+            "Ast",
+            "6.00",
+            "8.02",
+            "8.41",
+            "2.67",
+            "8.41",
+            "2.67"
+        ],
+        [
+            "Stl",
+            "2.45",
+            "2.59",
+            "2.68",
+            "1.33",
+            "2.68",
+            "1.33"
+        ],
+        [
+            "Blk",
+            "0.32",
+            "0.48",
+            "0.49",
+            "0.33",
+            "0.49",
+            "0.33"
+        ],
+        [
+            "PF",
+            "3.16",
+            "3.00",
+            "3.05",
+            "2.33",
+            "3.05",
+            "2.33"
+        ],
+        [
+            "TO",
+            "3.55",
+            "3.43",
+            "3.61",
+            "1.00",
+            "3.61",
+            "1.00"
+        ],
+        [
+            "Pts",
+            "24.61",
+            "34.82",
+            "36.80",
+            "7.67",
+            "36.80",
+            "7.67"
+        ]
+    ],
+    "pageTitle": "Dominique Jones Player Profile, Dallas Mavericks, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Dominique_Jones/Summary/6412",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989043.35/warc/CC-MAIN-20150728002309-00262-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 23844079,
+    "recordOffset": 23801824,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{47947=Born: Oct 15, 1988 (26 years old), 47227=Draft Entry: 2010 NBA Draft, 46893=Draft Rights Trade: MEM to DAL, Jun 24, 2010, 47127=Early Entry Info: 2010 Early Entrant}",
+    "TableContextTimeStampAfterTable": "{87797=* International basketball history from 2011-2012, 121487=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 3 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "19 5 3 7 10 42 2011-12 DAL 33 1 268.3 29 73 .397 1 8 .125 29 37 .784 70 9 35 44 42 10 5 28 28 88 2012-13 DAL 29 3 337.6 40 109 .367 1 9 .111 35 53 .660 99 18 27 45 83 14 2 29 38 116 CAREER \u00a0 80 4 741.0 83 227 .366 2 21 .095 78 107 .729 204 33 81 114 144 29 10 64 76 246 NBA Regular Season Stats - Misc Stats Season Team GP GS Dbl Dbl Tpl Dbl 40 Pts 20 Reb 20 Ast Techs HOB Ast/TO Stl/TO FT/FGA W's L's Win % OWS DWS WS 2010-11 DAL 18 0 0 0 0 0 0 0 .050 1.90 0.50 0.38 10 8 0.556 -0.18 0.18 0.01 2011-12 DAL 33 1 0 0 0 0 0 0 .060 1.50 0.36 0.51 15 18 0.455 -0.12 0.32 0.20 2012-13 DAL 29 3 0 0 0 0 0 0 .114 2.18 0.37 0.49 9 20 0.310 -0.25 0.14 -0.11 CAREER \u00a0 80 4",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

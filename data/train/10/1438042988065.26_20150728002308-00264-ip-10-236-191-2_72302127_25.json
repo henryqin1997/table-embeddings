@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "appName",
+            "planPath",
+            "options"
+        ],
+        [
+            "Definition",
+            "Name of the application to be redeployed.",
+            "Optional. Name of the deployment plan file. The filename can be absolute or relative to the application directory. This argument defaults to the plan/plan.xml file in the application directory, if one exists.",
+            "Optional. Comma-separated list of deployment options, specified as name-value pairs. For a list of valid deployment options, see options argument description in deploy. In addition, the following deployment option can be specified for the redeploy command: appPath\u2014Name of the archive file or root of the exploded archive directory to be redeployed. deploymentPrincipalName\u2014String value specifying the principal for redeploying the file or archive during server starts. You can use this option to overwrite the current in the config.xml file."
+        ]
+    ],
+    "pageTitle": "WLST Command and Variable Reference - 11g Release 1 (10.3.6)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E28271_01/web.1111/e13813/reference.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988065.26/warc/CC-MAIN-20150728002308-00264-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72368799,
+    "recordOffset": 72302127,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{391367=The following example instructs WLST to wait 1000 seconds for HTTP sessions to complete or timeout (at 1000 seconds) before shutting down myserver:}",
+    "lastModified": "Thu, 20 Sep 2012 07:52:24 GMT",
+    "textBeforeTable": "redeploy(appName, [planPath], [options]) Syntax      For more information about redeploying applications, see \"Overview of Common Deployment Scenarios\" in Deploying Applications to Oracle WebLogic Server. In the event of an error, the command returns a WLSTException. The redeploy command returns a WLSTProgress object that you can access to check the status of the command. For more information about the WLSTProgress object, see \"WLSTProgress Object\" in Oracle WebLogic Scripting Tool. Reloads classes and redeploys a previously deployed application. Description    Use with WLST: Online Command Category: Deployment Commands redeploy    For more information about the WLSTPlan object, see \"WLSTPlan Object\" in Oracle WebLogic Scripting Tool. MyWAR app.foo MyEJB jndi.ejb wls:/offline> myPlan.showVariables() The previous example stores the WLSTPlan object returned in the myPlan variable. You can then use myPlan variable to display information about the plan, such as the variables. For example: Successfully loaded the application. Loading application from c:/myapps/myejb.jar and deployment plan from c:/myplans/myejb/plan.xml ... wls:/offline> myPlan=loadApplication('c:/myapps/myejb.jar', 'c:/myplans/myejb/plan.xml') The following example loads the c:/myapps/myejb.jar application using the plan file at c:/myplans/myejb/plan.xml. Example",
+    "textAfterTable": "Example The following example redeploys myApp application using the plan.xml file located in the c:/myapps directory. wls:/mydomain/serverConfig> progress=redeploy('myApp' 'c:/myapps/plan.xml') Redeploying application 'myApp' ... Redeployment of 'myApp' is successful wls:/mydomain/serverConfig> The previous example stores the WLSTProgress object returned in a user-defined variable, in this case, progress. You can then use the progress variable to access the state of the redeploy command. For example: wls:/mydomain/serverConfig/Servers> progress.getState() 'completed' wls:/mydomain/serverConfig/Servers> For more information about the WLSTProgress object, see \"WLSTProgress Object\" in Oracle WebLogic Scripting Tool. startApplication Command Category: Deployment Commands Use with WLST: Online Description Starts an application, making it available to users. The application must be fully configured and available in the WebLogic domain. The startApplication command returns a WLSTProgress object that you can access to check the status of the command. For more information about the WLSTProgress object, see \"WLSTProgress Object\" in Oracle WebLogic Scripting Tool. In the event of an error, the command returns a WLSTException. Syntax startApplication(appName, [options])",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

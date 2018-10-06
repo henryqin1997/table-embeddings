@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Name",
+            "Description",
+            "PSTN Failover Strip Digits",
+            "PSTN Failover Prepend Digits",
+            "Use HostedDN as PSTN Failover"
+        ],
+        [
+            "Description",
+            "Enter the name of the hosted DN group. Valid entries include alphanumeric characters, hyphen, period, underscore, and blank space. You can enter up to 50 characters. The value that you enter displays in the Find and List Hosted DN Group window, the Hosted DN Group Configuration window, the Hosted DN Pattern Configuration window, and the CCD Advertising Service Configuration window,",
+            "Enter a description for the hosted DN group. You can enter all characters except for \\, \u201c, < >, &, and %. You can enter up to 128 characters.",
+            "Enter the number of digits that you want stripped from the hosted DN if the call fails over to the PSTN. You can enter a value between 0 and 16.",
+            "Enter the international escape character, +, or digits (0-9) that you want to add to the beginning of the directory number if the call fails over to the PSTN. You can enter up to 16 characters. For example, enter an access or area code.",
+            "If you check this check box, Cisco Unified Communications Manager ignores the configuration that you entered in the PSTN Failover Strip Digits or PSTN Failover Prepend Digits. If you do not need to strip digits from or prepend digits to the hosted DN when the call fails over to the PSTN, check the Use Hosted DN as PSTN Failover check box. When you check the check box, the PSTN Failover Strip Digits or PSTN Failover Prepend Digits fields display as disabled. If you check the check box, the entity that makes the outbound call uses the original hosted DN range for PSTN failover."
+        ]
+    ],
+    "pageTitle": "Cisco Unified Communications Manager Features and Services Guide, Release 9.1(1) - Call Control Discovery [Cisco Unified Communications Manager (CallManager)] - Cisco",
+    "title": "Table 6 Hosted DN Group Configuration Settings",
+    "url": "http://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cucm/admin/9_1_1/ccmfeat/CUCM_BK_C3E0EFA0_00_cucm-features-services-guide-91/CUCM_BK_C3E0EFA0_00_cucm-features-services-guide-91_chapter_0100.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00020-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 370290883,
+    "recordOffset": 370240254,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{46288=If you want to do so, you can purge learned patterns that you no longer want to use, and you can block the learned patterns so that Cisco Unified Communications Manager ignores the patterns when they are advertised by remote call-control entities. For example, if you want to block a learned pattern with prefix 235 from remote call-control entity, xyz with IP address of 111.11.11.11, you can block the pattern specifically for this call-control entity by entering the relevant information in the Block Learned Patterns window; in this example, after you save the configuration, the CCD requesting service searches the local cache and purges the learned patterns with 235 prefix from remote call-control entity xyz with IP address of 111.11.11.11. Any subsequent notifications with this information gets blocked and ignored by Cisco Unified Communications Manager. Be aware that blocking and purging of patterns is based on exact match; for example, configuring 235XX blocks 235XX, not any subsets of that pattern. Be aware that if you do not specify a remote call-control entity and IP address for the entity, Cisco Unified Communications Manager purges and blocks the pattern for all remote call-control entities that use it.}",
+    "TableContextTimeStampAfterTable": "{165988=The port that you enter must match the port number that you configure on the SAF forwarder. The port range on the SAF forwarder is 1024 to 65535., 147755=You can enter a number (minutes) from 0 to 525600; the default equals 2880.}",
+    "textBeforeTable": "The following table provides a brief overview of terminology that is associated with the call control discovery feature. For detailed information on each concept, click the links in the Description column in the table. Call Control Discovery Terminology SAF Forwarders Requesting Service Advertising Service Call Control Discovery Terminology All components for the call control discovery feature work together, so review all sections to understand how the feature works. Tip Network withdrawal support CCD requesting service and SAF-enabled trunks Learned patterns and the CCD requesting service Advertising service, SAF-enabled trunks, and hosted DN patterns Call Control Discovery terminology This section contains detailed information about the following topics: Components of Call Control Discovery Provide redundancy to advertise and listen for information, so if a SAF forwarders",
+    "textAfterTable": "Resides in Cisco Unified Communications Manager Allows the local Cisco Unified Communications Manager to listen for advertisements from remote call-control entities that use the SAF network. Ensures that learned patterns (hosted DN patterns from remote call-control entities) get inserted into digit analysis on the local Cisco Unified Communications Manager Performs load balancing for calls to learned patterns Handles withdrawals for Cisco Unified Communications Manager from the SAF network Configured under Call Routing > Call Control Discovery > Requesting Service in Cisco Unified Communications Manager Administration. Related Topics - Requesting Service Hosted DN patterns Directory number patterns that belong to the local call-control entity Tip\u00a0\u00a0\u00a0 For example, hosted DN patterns that you configure in Cisco Unified Communications Manager Administration under Call Routing > Call Control Discovery > Hosted DN Pattern are directory numbers pattern ranges for the local",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

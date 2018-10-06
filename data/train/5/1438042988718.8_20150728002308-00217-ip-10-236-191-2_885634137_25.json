@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Name",
+            "childIndex",
+            "table"
+        ],
+        [
+            "Type",
+            "Integer",
+            "Table"
+        ],
+        [
+            "Description",
+            "the index at which to insert",
+            "the table to insert"
+        ]
+    ],
+    "pageTitle": "Class HeaderSection \u00a0 | \u00a0 Apps Script \u00a0 | \u00a0 Google Developers",
+    "title": "",
+    "url": "https://developers.google.com/apps-script/reference/document/header-section",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00217-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 885665391,
+    "recordOffset": 885634137,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{62063=Last updated May 19, 2015.}",
+    "lastModified": "Tue, 19 May 2015 03:13:58 GMT",
+    "textBeforeTable": "Parameters The image will be contained in a new Paragraph. Creates and appends a new InlineImage from the specified image blob. appendImage(image) HorizontalRule \u2014 the new horizontal rule Return The HorizontalRule will be contained in a new Paragraph. Creates and appends a new HorizontalRule. appendHorizontalRule() Detailed documentation Sets the link url. HeaderSection setLinkUrl(url) Determines whether the element is at the end of the Document. Boolean isAtDocumentEnd() Retrieves the element's previous sibling element. Element getPreviousSibling() Retrieves the element's next sibling element. Element getNextSibling() Retrieves the link url. String getLinkUrl() Retrieves all the Footnotes contained in the section. Footnote[] getFootnotes() Brief description Return type Method Deprecated methods Sets the text alignment. HeaderSection setTextAlignment(textAlignment) Sets the contents as plain text. HeaderSection setText(text) Sets the element's attributes. HeaderSection setAttributes(attributes) Replaces all occurrences of a given text pattern with a given replacement string, using regular expressions. Element replaceText(searchPattern, replacement) Removes the element from its parent. HeaderSection removeFromParent() Removes the specified child element. HeaderSection",
+    "textAfterTable": "appendImage(image) Appends the given InlineImage. The InlineImage will be contained in a new Paragraph. Use this version of appendImage when appending a copy of an existing InlineImage. Parameters Name Type Description image InlineImage the image data Return InlineImage \u2014 the appended image appendListItem(listItem) Appends the given ListItem. Use this version of appendListItem when appending a copy of an existing ListItem. Parameters Name Type Description listItem ListItem the list item to append Return ListItem \u2014 the appended list item appendListItem(text) Creates and appends a new ListItem containing the specified text contents. Consecutive list items are added as part of the same list. Parameters Name Type Description text String the list item's text contents Return ListItem \u2014 the new list item appendParagraph(paragraph) Appends the given Paragraph. Use this version of appendParagraph when appending a copy of an existing Paragraph. Parameters Name Type Description paragraph Paragraph the paragraph",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

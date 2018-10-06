@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Component Type",
+            "MessageChannel",
+            "MessageSource",
+            "MessageHandler"
+        ],
+        [
+            "ObjectName",
+            "o.s.i:type=MessageChannel,name=",
+            "o.s.i:type=MessageSource,name=,bean=",
+            "o.s.i:type=MessageSource,name=,bean="
+        ]
+    ],
+    "pageTitle": "Spring Integration Reference Manual",
+    "title": "",
+    "url": "http://docs.spring.io/spring-integration/reference/htmlsingle/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00028-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 80062463,
+    "recordOffset": 79865713,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{799070=* reply-timeout is unbounded for <gateway/> elements (created by the GatewayProxyFactoryBean). Inbound gateways for external integration (ws, http, etc.) share many characteristics and attributes with these gateways. However, for those inbound gateways, the default reply-timeout is 1000 milliseconds (1 second). If a downstream async handoff is made to another thread, you may need to increase this attribute to allow enough time for the flow to complete before the gateway times out., 885546=The RequestHandlerCircuitBreakerAdvice has two properties: threshold and halfOpenAfter. The threshold property represents the number of consecutive failures that need to occur before the breaker goes open. It defaults to 5. The halfOpenAfter property represents the time after the last failure that the breaker will wait before attempting another request. Default is 1000 milliseconds., 704601=Value is set on the underlying class PollerMetadata Optional. If not specified it defaults to 1000 (milliseconds)., 1788=Copyright \u00a9 2009, 2010, 2011, 2012, 2013, 2014, 2015 Pivotal, Inc. All Rights Reserved.}",
+    "textBeforeTable": "Table\u00a08.1.\u00a0 All the MessageChannel, MessageHandler and MessageSource instances in the application are wrapped by the MBean exporter to provide management and monitoring features. The generated JMX object names for each component type are listed in the table below: MBean ObjectNames If there is a need to provide more options, or have several IntegrationMBeanExporter beans e.g. for different MBean Servers, or to avoid conflicts with the standard Spring MBeanExporter (e.g. via @EnableMBeanExport), you can simply configure an IntegrationMBeanExporter as a generic bean. } } return new MBeanServerFactoryBean(); public MBeanServerFactoryBean mbeanServer() { @Bean public class ContextConfiguration { @EnableIntegrationMBeanExport(server = \"mbeanServer\", managedComponents = \"input\") @EnableIntegration @Configuration  Starting with Spring Integration 4.0 the @EnableIntegrationMBeanExport annotation has been introduced for convenient configuration of a default (integrationMbeanExporter) bean of type IntegrationMBeanExporter with several useful options at the @Configuration class level. For example:  The MBean exporter is orthogonal to the one provided in Spring core - it registers message channels and message handlers, but not itself. You can expose the exporter itself, and certain other components in Spring Integration, using the standard <context:mbean-export/> tag. The exporter has a some metrics attached to",
+    "textAfterTable": "The bean attribute in the object names for sources and handlers takes one of the values in the table below: Table\u00a08.2.\u00a0 Bean Value Description endpoint The bean name of the enclosing endpoint (e.g. <service-activator>) if there is one anonymous An indication that the enclosing endpoint didn't have a user-specified bean name, so the JMX name is the input channel name internal For well-known Spring Integration default components handler None of the above: fallback to the toString() of the object being monitored (handler or source) Custom elements can be appended to the object name by providing a reference to a Properties object in the object-name-static-properties attribute. Also, since Spring Integration 3.0, you can use",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

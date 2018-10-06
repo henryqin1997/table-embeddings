@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Component:",
+            "Status:",
+            "Issue tags:"
+        ],
+        [
+            "field system",
+            "Reviewed & tested by the community",
+            "-documentation"
+        ],
+        [
+            "\u00bb documentation",
+            "\u00bb Fixed",
+            ""
+        ]
+    ],
+    "pageTitle": "Fix type-hinting for FieldInfo methods [#2092265] | Drupal.org",
+    "title": "",
+    "url": "https://www.drupal.org/node/2092265",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986022.41/warc/CC-MAIN-20150728002306-00029-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 899999867,
+    "recordOffset": 899983473,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{60059=#12: drupal8.field-system.2092265-12.patch queued for re-testing., 57149=The last submitted patch, drupal8.field-system.2092265-12.patch, failed testing.}",
+    "lastModified": "Wed, 29 Jul 2015 05:31:49 GMT",
+    "textBeforeTable": "September 18, 2013 at 3:30pm CreditAttribution: andypost commented andypost Comment #1 Comments View ] [ PASSED: [[SimpleTest]]: [MySQL] 59,775 pass(es). andypost 5.45 KB drupal8.field-system.2092265-1.patch #1 View ] [ PASSED: [[SimpleTest]]: [MySQL] 59,167 pass(es). andypost 4.82 KB drupal8.field-system.2092265-7.patch #7 View ] [ PASSED: [[SimpleTest]]: [MySQL] 59,297 pass(es). andypost 4.92 KB drupal8.field-system.2092265-9.patch #9",
+    "textAfterTable": "new drupal8.field-system.2092265-1.patch 5.45 KB PASSED: [[SimpleTest]]: [MySQL] 59,775 pass(es). [ View ] Initial patch Log in or register to post comments Comment #2 yched CreditAttribution: yched commented September 21, 2013 at 10:44am +++ b/core/modules/field/lib/Drupal/field/FieldInfo.php @@ -218,7 +220,7 @@ public function getFieldMap() { +\u00a0\u00a0 * @return \\Drupal\\field\\FieldInterface[] Never saw that syntax before, but it seems we start to use it in other places in core... Is that an offical doc standard now ? Log in or register to post comments Comment #3 yched CreditAttribution: yched commented",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

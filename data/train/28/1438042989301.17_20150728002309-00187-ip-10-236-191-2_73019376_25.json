@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Offset Variable",
+            "%CURNUM",
+            "%PREVNUM",
+            "%NEXTNUM"
+        ],
+        [
+            "Value",
+            "the current offset number",
+            "the previous offset number",
+            "the next offset number"
+        ]
+    ],
+    "pageTitle": "8 CTX_DOC Package",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B14117_01/text.101/b10730/cdocpkg.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00187-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73042895,
+    "recordOffset": 73019376,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 27 Jul 2004 16:18:00 GMT",
+    "textBeforeTable": "The CTX_DOC package includes the following procedures and functions: The policy_* procedures mirror the conventional in-memory document services and are used with policy name replacing index name, and document of type VARCHAR2, CLOB, BLOB or BFILE replacing textkey. Thus, you need not create an index to obtain document services output with these procedures. Many of these procedures exist in two versions: those that make use of indexes, and those that don't. Those that don't are called \"policy-based\" procedures. They are offered because there are times when you might like to use document services on a single document without creating a context index in advance. Policy-based procedures enable you to do this. This chapter describes the CTX_DOC PL/SQL package for requesting document services, such as highlighting extracted text or generating a list of themes for a document. 8 CTX_DOC Package View PDF Next Previous",
+    "textAfterTable": "IFILTER Generates a plain text version of binary data. Can be called from a USER_DATASTORE procedure. MARKUP Generates a plain text or HTML version of a document with query terms highlighted PKENCODE Encodes a composite textkey string (value) for use in other CTX_DOC procedures POLICY_FILTER Generates a plain text or HTML version of a document, without requiring an index. POLICY_GIST Generates a Gist or theme summaries for a document, without requiring an index. POLICY_HIGHLIGHT Generates plain text or HTML highlighting offset information for a document, without requiring an index. POLICY_MARKUP Generates a plain text or HTML version of a document with query terms highlighted, without requiring an index. POLICY_THEMES Generates a list of themes for a document, without requiring an index. POLICY_TOKENS Generates all index tokens for a document, without requiring an index. SET_KEY_TYPE",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

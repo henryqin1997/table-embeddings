@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Element",
+            "Install ID field",
+            "Custom Class Path field",
+            "Custom Library Path field",
+            "Feature Extensions field",
+            "Additional Components field",
+            "OK button",
+            "Cancel button",
+            "Help button"
+        ],
+        [
+            "Description",
+            "Stores the user's preference settings that are specified during the component installation.",
+            "Lists the class paths of additional classes or jar files that are included in the classpath that is required for the component to function.",
+            "Lists the paths of library or other executable files required for the component.",
+            "Lists the specific types of features or functions that the component provides.",
+            "Lists the additional components that must be installed along with the component.",
+            "Accepts the field values and closes the screen.",
+            "Closes the screen.",
+            "Displays the help page for this screen."
+        ]
+    ],
+    "pageTitle": "A User Interface",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E17904_01/doc.1111/e10792/e01_interface.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00130-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 883437167,
+    "recordOffset": 883335973,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{73984=You can specify multiple IP addresses, separated by pipes (\u00a0|\u00a0). Make sure that there are no spaces on either side of the pipe character. (For example, 127.0.0.1|10.10.50.143), 91946=Thus, if you set this value to 2000 and a document fails, the entire batch would be reprocessed. This would take longer than if you use the default setting and an item fails. But, if there are no failures in the batch, then setting this value higher accelerates the process., 78773=For Windows 2000 systems, the default is c:/Program Files/Internet Explorer/iexplore.exe.}",
+    "lastModified": "Wed, 13 May 2015 05:18:01 GMT",
+    "textBeforeTable": "The Advanced Build Settings Review screen is accessed by clicking the OK button on the Build Settings Screen. It shows those options which have been specified. A.3.4.5 Advanced Build Settings Review Screen Displays the help page for this screen. Help button Closes the screen without building the component Zip file. Cancel button Returns to the previous screen. OK button This field allows installation components to install individual add-on components or to generate a grouping of multiple components into a single installation package. Enter any additional components that must be installed along with this component using the following format: component_name:component.zip:preference_data_parameter_name The preference_data_parameter_name is optional. If a parameter name is not specified, the component is installed by default. The preference data parameter must be defined in the Preference Data Setup section of the Install/Uninstall Settings tab. You must include a colon (:) after component.zip even if you are not including a preference_data_parameter_name. If excluding preference_data_parameter_name, the format is: component_name:component.zip: Separate multiple entries with commas, as in the following: component_name:component.zip:,component_name:component.zip:",
+    "textAfterTable": "A.3.5 Component Manager Page The Component Manager page is used to enable and disable server components. To access the Component Manager page, select the Administration tray in the portal navigation bar, then click Admin Server. Click Component Manager in the navigation bar on the Admin Server Page. Element Description Component Manager checkboxes Select an item to display a specific set of server components grouped by function. Options include: All Features Folders Document Management Inbound Refinery Web Content Management Integration For more detailed control of components, click",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Device> enable",
+            "clear ip bgp {* | autonomous-system-number | neighbor-address} [soft [in | out] ] Example: Device# clear ip bgp *",
+            "show ip bgp [network-address] [network-mask] [longer-prefixes] [prefix-list prefix-list-name | route-map route-map-name] [shorter prefixes mask-length] Example: Device# show ip bgp 10.1.1.0 255.255.255.0",
+            "show ip bgp neighbors [neighbor-address] [received-routes | routes | advertised-routes | paths regexp | dampened-routes | received prefix-filter] Example: Device# show ip bgp neighbors 192.168.3.2 advertised-routes",
+            "show ip bgp paths Example: Device# show ip bgp paths",
+            "show ip bgp summary Example: Device# show ip bgp summary"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Clears and resets BGP neighbor sessions: In the example provided, all BGP neighbor sessions are cleared and reset.",
+            "Displays all the entries in the BGP routing table: In the example provided, the BGP routing table information for the 10.1.1.0 network is displayed.",
+            "Displays information about the TCP and BGP connections to neighbors. In the example provided, the routes advertised from the device to BGP neighbor 192.168.3.2 on another device are displayed.",
+            "Displays information about all the BGP paths in the database.",
+            "Displays information about the status of all BGP connections."
+        ]
+    ],
+    "pageTitle": "IP Routing: BGP Configuration Guide, Cisco IOS Release 15M&T - BGP 4 [Cisco IOS 15.4M&T] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_bgp/configuration/15-mt/irg-15-mt-book/irg-bgp4.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988312.76/warc/CC-MAIN-20150728002308-00252-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 362581615,
+    "recordOffset": 362527937,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{3842=BGP is an interdomain routing protocol designed to provide loop-free routing links between organizations. BGP is designed to run over a reliable transport protocol; it uses TCP (port 179) as the transport protocol because TCP is a connection-oriented protocol. The destination TCP port is assigned 179, and the local port is assigned a random port number. Cisco software supports BGP version 4 and it is this version that has been used by Internet service providers (ISPs) to help build the Internet. RFC 1771 introduced and discussed a number of new BGP features to allow the protocol to scale for Internet use. RFC 2858 introduced multiprotocol extensions to allow BGP to carry routing information for IP multicast routes and multiple Layer 3 protocol address families, including IPv4, IPv6, and CLNS.}",
+    "TableContextTimeStampAfterTable": "{307842=RFC 2918, 307530=RFC 2858, 306549=RFC 1774, 306849=RFC 1930, 307207=RFC 2519, 9170=Dynamic inbound soft reset\u2014The route refresh capability, as defined in RFC 2918, allows the local device to reset inbound routing tables dynamically by exchanging route refresh requests to supporting peers. The route refresh capability does not store update information locally for nondisruptive policy changes. It instead relies on dynamic exchange with supporting peers. Route refresh must first be advertised through BGP capability negotiation between peers. All BGP devices must support the route refresh capability. To determine if a BGP device supports this capability, use the show ip bgp neighbors command. The following message is displayed in the output when the device supports the route refresh capability:, 305903=RFC 1772, 306239=RFC 1773}",
+    "textBeforeTable": "DETAILED STEPS 10.\u00a0\u00a0\u00a0 show ip bgp [network] [network-mask] 9.\u00a0\u00a0\u00a0 end 8.\u00a0\u00a0\u00a0 bgp log-neighbor-changes 7.\u00a0\u00a0\u00a0 bgp fast-external-fallover 6.\u00a0\u00a0\u00a0 timers bgp keepalive holdtime 5.\u00a0\u00a0\u00a0 bgp router-id ip-address 4.\u00a0\u00a0\u00a0 network network-number [mask network-mask] [route-map route-map-name] 3.\u00a0\u00a0\u00a0 router bgp autonomous-system-number 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS Figure 2. BGP Topology with Two Autonomous Systems The configuration in this task is done at Router A in the figure below and would need to be repeated with appropriate changes to the IP addresses (for example, at Router B) to fully achieve a BGP process between the two devices. No address family is configured",
+    "textAfterTable": "Step\u00a06 timers bgp keepalive holdtime Example:  Device(config-router)# timers bgp 70 120 \u00a0 (Optional) Sets BGP network timers. Use the keepalive argument to specify the frequency, in seconds, with which the software sends keepalive messages to its BGP peer. By default, the keepalive timer is set to 60 seconds. Use the holdtime argument to specify the interval, in seconds, after which the software, having not received a keepalive message, declares a BGP peer dead. By default, the holdtime timer is set to 180 seconds. \u00a0 Step\u00a07 bgp fast-external-fallover Example:  Device(config-router)# bgp fast-external-fallover \u00a0 (Optional) Enables the automatic resetting of BGP sessions. By default, the BGP sessions of any directly adjacent external peers are reset if the link used to reach them goes down. \u00a0 Step\u00a08 bgp log-neighbor-changes Example:",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

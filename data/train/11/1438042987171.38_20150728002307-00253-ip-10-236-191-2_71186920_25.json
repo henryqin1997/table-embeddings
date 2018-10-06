@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "F/V",
+            "allocmem",
+            "dos_alloc, _dos_allocmem",
+            "dos_avail",
+            "dos_calloc",
+            "dos_free, _dos_freemem",
+            "_dos_setblock, dos_setblock, setblock",
+            "farcalloc",
+            "farcoreleft",
+            "farfree",
+            "farmalloc",
+            "farrealloc",
+            "freemem"
+        ],
+        [
+            "Description",
+            "Allocates a memory block from the OS.",
+            "Allocates a memory block from the OS.",
+            "Returns the amount of memory available from the OS.",
+            "Allocates, clears a memory block from the OS.",
+            "Frees a memory block allocated from the OS.",
+            "Calls the OS to resize a block of memory.",
+            "Allocates and clears an array from the OS far heap.",
+            "Returns the largest memory block left in the OS far heap.",
+            "Frees memory allocated from the OS far heap.",
+            "Allocates memory from the OS far heap.",
+            "Resizes a memory block allocated from the OS far heap.",
+            "Releases an OS memory block."
+        ]
+    ],
+    "pageTitle": "Overview - Digital Mars",
+    "title": "OS Memory Management",
+    "url": "http://digitalmars.com/rtl/rtl.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00253-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71210535,
+    "recordOffset": 71186920,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sun, 19 Jun 2011 00:00:40 GMT",
+    "textBeforeTable": "Some function descriptions have a Special Results table that describes how the function handles certain kinds of arguments. In these tables, the column headings have the following meanings: Math Function Results int access(char *path, int mode); Using its synonym yields: int _access(char *path, int mode); The synonym and name are interchangeable in an application; one can be substituted for the other. Thus, if the prototype for the _access function is: Synonym: access Name: _access Synonym Usage Many of the names for functions, variables, or other values can have a synonym. For example, the _access function has a synonym:  C functions can be called from either C or C++ programs, but the C++ classes can be used only with C++ programs.   The library includes functions typically defined by ANSI standard or UNIX C libraries, plus enhancements to the standard set. It includes C++ classes for working with streams and for performing mathematical computations.  Digital Mars C++ Runtime Library Reference The runtime library contains a comprehensive set of functions and classes that support program development in C and C++. The library supports 16 and 32-bit protected mode applications, as well as 32-bit DOS-extended applications.      /**/google_color_text = \"000000\"; /**/google_color_url = \"008000\"; /**/google_color_link = \"0000FF\"; /**/google_color_bg = \"F0F0F0\"; /**/google_color_border = \"000000\"; /**/google_ad_channel =\"3448066137\"; /**/google_ad_format = \"120x90_0ads_al_s\"; /**/google_ad_height = 90; /**/google_ad_width = 120; /**/google_alternate_color = \"eeeeee\"; /**/google_ad_client = \"pub-5628673096434613\";",
+    "textAfterTable": "This chapter groups related functions and variables into categories. Missing from the categories are the functions in the Iostream Library. Table heading F/V means Function/Variable. 80x86 These functions provide easy access from C to 80x86 registers, ports, and segmented memory. 80x86 F/V Description _cpumode Determines if the CPU is in real or protected mode. cputype Returns the type of 80x86 CPU in the computer. _FP_OFF Returns the offset portion of a far pointer. _FP_SEG Returns the segment portion of a far pointer. getDS Returns the 80x86 data segment register. _inp, _inpw, inpl Reads from an 80x86 hardware port. _int86, int86_real, _int86x, int86x_real Generates an 80x86 interrupt, setting and returning registers. _MK_FP Creates a far pointer from a segment and offset. _movedata Copies data between segments. _outp, outpw, outpl Outputs to an 80x86 hardware port. peek, peekb, peekbytes Gets data from another segment. poke, pokeb, pokebytes Puts data into another segment. _segread Gets the current values of the 80x86 segment registers. BIOS These functions directly access the ROM BIOS routines that are built into every PC compatible computer. BIOS F/V Description bioscom, _bios_serialcom Specifies a COM port to use for serial I/O. _bios_disk, biosdisk",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

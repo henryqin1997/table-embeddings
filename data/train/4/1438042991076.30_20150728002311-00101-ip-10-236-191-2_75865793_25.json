@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Quantity",
+            "1",
+            "2",
+            "8",
+            "",
+            "1",
+            "2"
+        ],
+        [
+            "Cisco Part Number",
+            "N20-B6620-1",
+            "N20-X00002",
+            "N01-M304GB1",
+            "",
+            "N20-AQ0002",
+            "N20-BHTS1"
+        ],
+        [
+            "Description",
+            "UCS B200 M1 Blade Server w/o CPU, memory, HDD, mezzanine",
+            "2.53GHz Xeon E5540 80W CPU/8MB cache/DDR3 1066MHz",
+            "4GB DDR3-1333MHz RDIMM/PC3-10600/dual rank 1Gb DRAMs",
+            "Diskless",
+            "UCS M71KR-Q QLogic Converged Network Adapter/PCIe/2port 10Gb",
+            "Auto-included: CPU Heat Sink for UCS B200 M1 Blade Server"
+        ]
+    ],
+    "pageTitle": "UC Virtualization Supported Hardware - DocWiki",
+    "title": "",
+    "url": "http://docwiki.cisco.com/w/index.php?title=UC_Virtualization_Supported_Hardware&diff=47053&oldid=47052",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991076.30/warc/CC-MAIN-20150728002311-00101-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 75887355,
+    "recordOffset": 75865793,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{23912=Half-width Blade Server Dual E5-2680 (8-core / 2.7 GHz) 96 GB RAM Diskless - VMware + UC apps boot from FC SAN Cisco VIC 1240, 84855=UCSC-PSU2-1200, 27914=1RU Rack-mount Server Dual E5-2609 (4-core, 2.4 GHz) 32 GB RAM VMware + UC apps boot from DAS (4x 500GB 7.2K SFF disks, RAID10) Ethernet ports on motherboard, 74723=2.70 GHz E5-2680 130W 8C/20MB Cache/DDR3 1600MHz, 119345=QLogic QLE2462, 4Gb dual port Fibre Channel Host Bus Adapter, 73042=2.4 GHz E7-2870 130W 10C/30M Cache, 73218=2X8GB DDR3-1333-MHz RDIMM/PC3-10600/dual rank/x4/1.35v, 26527=2RU Rack-mount Server Dual E5-2680 (8-core, 2.7 GHz) 96 GB RAM VMware + UC apps boot from DAS (2 logical volumes, each 8x 300GB 15K SFF disks, RAID5) Ethernet ports on motherboard + 3rd-party NICs, 71215=2X8GB DDR3-1333-MHz RDIMM/PC3-10600/dual rank/x2/1.35v, 27203=1RU Rack-mount Server Dual E5-2643 (4-core, 3.3 GHz) 64 GB RAM VMware + UC apps boot from DAS (8x 300GB 15K SFF disks, RAID5) Ethernet ports on motherboard + 3rd-party NIC, 83178=C260-BASE-2646, 83761=2X4GB DDR3-1333-MHz RDIMM/PC3-10600/single rank/x1/1.35v, 72993=UCS-CPU-E72870, 110592=R210-2121605, 75335=VIC 1240 modular LOM for M3 blade servers, 74673=UCS-CPU-E5-2680}",
+    "textBeforeTable": "This BOM was also quotable via fixed-configuration bundle UCS-B440M2-VCDL1. B440 M2 TRC#1 UC on UCS TRC Bills of Material (BOMs) Cisco TAC is not obligated troubleshoot UC apps issues in a deployment with insufficient or overloaded I/O devices. Storage access adapters must be able to accommodate the storage IOPS (described in the Storage section of this policy). LAN access adapters must be able to accommodate the LAN usage of UC VMs (described in UC app design guides). In most cases detailed capacity planning is not required for LAN IO or storage access IO. TRC adapter choices have been made to accommodate the IO of all UC on UCS app co-residency scenarios that will fit on the TRC. For guidance on active vs. standby network ports, see the Cisco UC Design Guide] and QoS Design Considerations for Virtual UC with UCS It is the customer's responsibility to ensure the external LAN and storage access meet UC app design requirements. IO Capacity and Performance There are no UC restrictions on hardware vendors for I/O Devices other than that VMware HCL and the server vendor/model must be compatible with them and support them. The customer is also responsible for configuring redundant devices",
+    "textAfterTable": "4 N20-BHTS3 Auto-included: CPU heat sink for UCS B440 Blade Server 1 N20-LBLKU Auto-included: Blanking panel for B440 M1 battery backup bay B230 M2 TRC#1 This BOM was also quotable via fixed-configuration bundle UCS-B230M2-VCDL1 (has extra RAM vs. minimum below). Quantity Cisco Part Number Description 1 B230-BASE-M2UPG UCS B230 M2 Blade Server w/o CPU, memory, SSD, mezzanine1 2 UCS-CPU-E72870 2.4 GHz E7-2870 130W 10C/30M Cache 8 UCS-MR-2X082RX-B 2X8GB DDR3-1333-MHz RDIMM/PC3-10600/dual rank/x4/1.35v 1 N20-AC0002 UCS M81KR Virtual Interface Card/PCIe/2-port 10Gb1 16 UCS-MKIT-082RX-B Auto-included: Mem kit for UCS-MR-2X082RX-B 2 N20-BBLKD-7MM Auto-included: UCS 7MM SSD Blank Filler 2 N20-BHTS6 Auto-included: CPU heat sink for UCS B230 Blade Server B200 M3 TRC#1 Quantity",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

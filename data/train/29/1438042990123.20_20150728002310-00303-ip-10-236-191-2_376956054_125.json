@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Command",
+            "debug device-sensor",
+            "device-sensor accounting",
+            "device-sensor filter-list cdp",
+            "device-sensor filter-list dhcp",
+            "device-sensor filter-list lldp",
+            "show device-sensor cache"
+        ],
+        [
+            "Description",
+            "Enables debugging for device sensor.",
+            "Adds the device sensor protocol data to accounting records and generates additional accounting events when new sensor data is detected.",
+            "Creates a Cisco Discovery Protocol filter containing a list of options that can be included or excluded in the device sensor output.",
+            "Creates a DHCP filter containing a list of options that can be included or excluded in the device sensor output.",
+            "Creates an LLDP filter containing a list of TLV fields that can be included or excluded in the device sensor output.",
+            "Displays device sensor cache entries."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Security Command Reference: Commands D to L - database archive through dns [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/d1/sec-d1-cr-book/sec-cr-d1.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990123.20/warc/CC-MAIN-20150728002310-00303-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 377069107,
+    "recordOffset": 376956054,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{411126=This argument must be in the form documented in RFC 2373 where the address is specified in hexadecimal using 16-bit values between colons., 698763=Maximum interval, in seconds, for the Gateway General Packet Radio Service (GPRS) Support Node (GGSN) to attempt reconnection to a Diameter peer after being disconnected due to a transport failure. The range is from 1 to 1000. The default is 30., 414916=This destination-ipv6-address argument must be in the form documented in RFC 2373 where the address is specified in hexadecimal using 16-bit values between colons., 699740=Maximum interval, in seconds, the GGSN waits for a Diameter peer response to a watchdog packet. The range is from 1 to 1000. The default is 30., 700791=The valid range, in seconds, from 1 to 1000. The default is 30., 437506=This command was introduced on Cisco ASR 1000 Aggregation Series Routers., 487732=deny url \u201chttps://10.168.2.228:34,80-90,100-/public\u201d, 773799=The following example specifies that preauthentication be performed on all DNIS numbers except for two DNIS numbers (12345 and 12346), which have been defined in the DNIS group called hawaii:, 79609=Length of time, in minutes, for which an LDAP server is skipped over by transaction requests. The range is from 1 to 1440., 411944=This source-ipv6-address argument must be in the form documented in RFC 2373 where the address is specified in hexadecimal using 16-bit values between colons., 387497=The following example denies HTTP traffic on Monday through Friday from 8:00 a.m. to 6:00 p.m.:, 459840=Specifies any source or any destination host as an abbreviation for the src_mac_maskor dest_mac_maskvalue of 1111.1111.1111, which declares all digits to be wildcards ., 87775=Length of time, in minutes, for which a RADIUS server is skipped over by transaction requests, up to a maximum of 1440 minutes (24 hours)., 699335=Maximum interval, in seconds, the GGSN waits for a Diameter peer to respond before trying another peer. The range is from 1 to 1000. The default is 30., 487514=The following example shows that all packets from the URL \u201chttps://10.168.2.228:34,80-90,100-/public\u201d will be denied:}",
+    "textBeforeTable": "Syntax Description interface-number interface-type data no interface-number interface-type data To configure the data interface type and number for a redundancy group, use the datacommand in redundancy application group configuration mode. To remove the configuration, use the no form of this command. data dns dnis bypass (AAA preauthentication configuration) dnis (RADIUS) dnis (AAA preauthentication) dn (IKEv2) dn disconnect ssh disable open-media-channel diameter vendor supported diameter timer diameter redundancy diameter peer diameter origin realm diameter origin host dialer aaa dhcp timeout dhcp server (isakmp) dhcp (IKEv2) device-sensor notify device-sensor filter-spec http device-sensor filter-spec device-sensor filter-list lldp device-sensor filter-list dhcp device-sensor filter-list cdp device-sensor accounting device-role device (identity profile) destination realm destination host description (isakmp peer) description (IKEv2 keyring) description (identity profile) description (identity policy) description (identify zone) description (dot1x credentials)",
+    "textAfterTable": "Release Modification Cisco IOS XE Release 3.1S This command was introduced. Usage Guidelines Use the data command to configure the data interface. The data interface can be the same physical interface as the control interface. Examples The following example shows how to configure the data Gigabit Ethernet interface for group1:  Router# configure terminal Router(config)# redundancy Router(config-red)# application redundancy Router(config-red-app)# group 1 Router(config-red-app-grp)# data GigabitEthernet 0/0/0 Related Commands Command Description application redundancy Enters redundancy application configuration mode. authentication Configures clear text authentication and MD5 authentication for a redundancy group.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

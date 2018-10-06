@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Tag",
+            "--copy-links",
+            "--links --copy-unsafe-links",
+            "--copy-unsafe-links",
+            "--links --safe-links",
+            "--links"
+        ],
+        [
+            "Description",
+            "Turn all symlinks into normal files (leaving no symlinks for any other options to affect).",
+            "Turn all unsafe symlinks into files and duplicate all safe symlinks.",
+            "Turn all unsafe symlinks into files, noisily skip all safe symlinks.",
+            "Duplicate safe symlinks and skip unsafe ones.",
+            "Duplicate all symlinks."
+        ]
+    ],
+    "pageTitle": "rsync - Unix, Linux Command",
+    "title": "",
+    "url": "http://www.tutorialspoint.com/cgi-bin/printversion.cgi?tutorial=unix_commands&file=rsync.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00109-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 811495555,
+    "recordOffset": 811450193,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{114749=782448  63%  110.64kB/s    0:00:04, 115498=1238099 100%  146.38kB/s    0:00:08  (5, 57.1% of 396)}",
+    "textBeforeTable": "Some of the additional features of rsync are: The rsync remote-update protocol allows rsync to transfer just the differences between two sets of files across the network connection, using an efficient checksum-search algorithm described in the technical report that accompanies this package. rsync is a program that behaves in much the same way that rcp does, but has many more options and uses the rsync remote-update protocol to greatly speed up file transfers when the destination file is being updated. DESCRIPTION rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST] rsync [OPTION]... [USER@]HOST::SRC [DEST] rsync [OPTION]... [USER@]HOST:SRC [DEST] rsync [OPTION]... SRC rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST rsync [OPTION]... SRC [SRC]... DEST SYNOPSIS NAME rsync - faster, flexible replacement for rcp Advertisements rsync - Unix, Linux Command Copyright \u00a9 tutorialspoint.com",
+    "textAfterTable": "support for anonymous or authenticated rsync daemons (ideal for mirroring) GENERAL Rsync copies files either to or from a remote host, or locally on the current host (it does not support copying files between two remote hosts). There are two different ways for rsync to contact a remote system: using a remote-shell program as the transport (such as ssh or rsh) or contacting an rsync daemon directly via TCP. The remote-shell transport is used whenever the source or destination path contains a single colon (:) separator after a host specification. Contacting an rsync daemon directly happens when the source or destination path contains a double colon (::) separator after a host specification, OR when an rsync:// URL is specified (see also the \"USING RSYNC-DAEMON FEATURES VIA A REMOTE-SHELL CONNECTION\" section for an exception to this latter rule). As a special case, if a single source arg is specified without a destination, the files are listed in an output format similar to \"ls -l\". As expected, if neither the source or destination path specify a remote host, the copy occurs locally (see also the --list-only option). SETUP See the file README for installation instructions. Once installed, you can use rsync to any machine that you can access via a remote shell (as well as some that you can access using the rsync daemon-mode protocol). For remote",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

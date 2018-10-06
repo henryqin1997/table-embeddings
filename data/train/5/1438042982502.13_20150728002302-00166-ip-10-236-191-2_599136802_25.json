@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "",
+            "2011-04-26T00:00:00"
+        ],
+        [
+            "Description",
+            "The vertical values in this data set have been filtered through visual inspection to find abnormally high and abnormally low values. In addition, this data was processed using a spatial filtering program that identifies and discards outlier elevation measurements. This program reads each elevation measurement within a file and identifies \"spatially close\" points (i.e. those neighboring points within a fixed radius of the point). The mean and standard deviation is calculated using the elevations of these points. If the elevation difference from the mean of the point under consideration is more than 2 standard deviations and greater than a defined distance the point is discarded.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/1998_FallEC_m6.xml&view=ISO19115Components-HTMLTable",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00166-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 599145004,
+    "recordOffset": 599136802,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:1998_FallEC_m6Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "Top CI_Citation Count Component Title Date Citation Identifier 1 1996-2000 NOAA/USGS/NASA Airborne LiDAR Assessment of Coastal Erosion (ALACE) Project for the US Coastline 2 None Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 NOAA CSC (originator) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov originator http://coast.noaa.gov 1 NOAA CSC (publisher) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov publisher http://coast.noaa.gov 1 NOAA CSC (pointOfContact) DOC/NOAA/NOS/OCM > Office for Coastal",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

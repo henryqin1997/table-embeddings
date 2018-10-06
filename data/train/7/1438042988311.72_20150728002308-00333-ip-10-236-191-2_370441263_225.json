@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Local Configuration",
+            "Current DSBM",
+            "Interface",
+            "IP Address",
+            "DSBM candidate",
+            "I am DSBM",
+            "Priority",
+            "Rate",
+            "Burst",
+            "Peak",
+            "Min Unit",
+            "Max Unit"
+        ],
+        [
+            "Description",
+            "The local DSBM candidate configuration.",
+            "The current DSBM configuration.",
+            "Name of the DSBM candidate interface on the router.",
+            "IP address of the local DSBM candidate or the current DSBM.",
+            "Yes if the iprsvpdsbmcandidate command was issued for this SBM to configure it as a DSBM candidate. No if it was not so configured.",
+            "Yes if the local candidate is the DSBM. No if the local candidate is not the DSBM.",
+            "Priority configured for the local DSBM candidate or the current SBM.",
+            "The average rate, in kbps, for the DSBM candidate.",
+            "The maximum burst size, in KB, for the DSBM candidate.",
+            "The peak rate, in kbps, for the DSBM candidate.",
+            "The minimum policed unit, in bytes, for the DSBM candidate.",
+            "The maximum packet size, in bytes, for the DSBM candidate."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Quality of Service Solutions Command Reference - show ip rsvp hello client lsp summary through show lane qos database [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/qos/command/qos-cr-book/show_ip_rsvp_hello_client_lsp_summary_through_show_lane_qos_database.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 225,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00333-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 370570087,
+    "recordOffset": 370441263,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{956257=To show more detail about the sender whose destination port is 1000 (as shown in Example 6), specify the command with the destination port filter:}",
+    "textBeforeTable": "show ip rsvp sbm detail Field Descriptions Table 59 The table below describes the significant fields shown in the display. Max Unit:unlimited Max Unit:unlimited Min Unit:unlimited Min Unit:unlimited Peak:500 Kbytes/sec Peak:500 Kbytes/sec Burst:1000 Kbytes Burst:1000 Kbytes Rate:500 Kbytes/sec Rate:500 Kbytes/sec Non Resv Send Limit Non Resv Send Limit Priority:100 Priority:100 DSBM candidate:yes I Am DSBM:yes IP Address:10.2.2.150 IP Address:10.2.2.150 Local Configuration Current DSBM Router# show ip rsvp sbm detailInterface:Ethernet2   The following example displays information about the RSVP-enabled Ethernet interface 2 on router1. In the left column, the local SBM configuration is shown; in the right column, the corresponding information for the current DSBM is shown. In this example, the information is the same because the DSBM won election.  Priority configured for this interface. My Priority Yes if the iprsvpdsbmcandidate command was issued for this SBM to configure it as a DSBM candidate. No if it was not so configured. DSBM Candidate Priority of the DSBM. DSBM Priority",
+    "textAfterTable": "Related Commands Command Description debug ip rsvp Displays information about SBM message processing, the DSBM election process, and standard RSVP enabled message processing information. debug ip rsvp detail Displays detailed information about RSVP and SBM. debug ip rsvp detail sbm Displays detailed information about SBM messages only, and SBM and DSBM state transitions. ip rsvp dsbm candidate Configures an interface as a DSBM candidate. ip rsvp dsbm non-resv-send-limit Configures the NonResvSendLimit",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

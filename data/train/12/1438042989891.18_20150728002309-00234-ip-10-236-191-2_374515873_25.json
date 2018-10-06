@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Release",
+            "15.4(1)T",
+            "Cisco IOS XE Release 3.11S"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "This command was integrated into Cisco IOS XE Release 3.11S."
+        ]
+    ],
+    "pageTitle": "Cisco IOS IP Routing: LISP Command Reference - LISP Router Configuration Commands [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_lisp/command/ip-lisp-cr-book/lisp-rtr-config-cmds.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00234-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 374547691,
+    "recordOffset": 374515873,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{13672=The following example shows how to enter LISP EID table configuration mode and configure the database-mapping command with the dynamic-EID prefix 172.16.91.0/24:}",
+    "textBeforeTable": "Syntax Description } interface-name | auto-discover-rlocs interface-name | ipv6-interface eid-prefix/prefix-length { locator | ipv4-interface database-mapping no weight weight priority priority } interface-name | auto-discover-rlocs interface-name | ipv6-interface eid-prefix/prefix-length { locator | ipv4-interface database-mapping To configure an IPv4 or IPv6 endpoint identifier-to-routing locator (EID-to-RLOC) mapping relationship and an associated traffic policy for Locator/ID Separation Protocol (LISP), use the database-mapping command in LISP EID-table or LISP EID-table dynamic-EID configuration mode. To remove the configured database mapping, use the no form of this command. database-mapping (LISP EID-table) xtr instance-id rtr-locator-set rloc-prefix other-xtr-probe map-cache loc-reach-algorithm locator-table locator-scope locator-down eid-table eid-notify key eid-notify authentication-key database-mapping (LISP EID-table) LISP Router Configuration Commands xtr instance-id rtr-locator-set rloc-prefix other-xtr-probe map-cache loc-reach-algorithm locator-table",
+    "textAfterTable": "auto-discover-rlocs Configures the Egress Tunnel Router (ETR) to discover the locators of all routers configured to function as both an ETR and an Ingress Tunnel Router (ITR)\u2014such routers are referred to as xTRs\u2014in the ETR LISP site when the site uses multiple xTRs and each xTR is configured to use DHCP-learned locators or configured with only its own locators. priority priority Specifies the priority assigned to the RLOC. Valid values are from 0 to 255. weight weight Specifies the weight assigned to the locator. Valid values are from 0 to 100. Command Default No LISP database entries are defined. Command Modes LISP EID-table configuration (config-router-lisp-eid-table) LISP EID-table dynamic-EID (config-router-lisp-eid-table-dynamic-eid) Note The EID-table dynamic-EID command mode only supports the locator-set option for configuring RLOCs and its associated policies. Command History",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

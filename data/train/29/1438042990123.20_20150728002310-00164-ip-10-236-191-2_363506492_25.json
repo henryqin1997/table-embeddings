@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Command",
+            "aaa accounting delay-start",
+            "aaa accounting",
+            "debug aaa pod",
+            "radius-server host"
+        ],
+        [
+            "Description",
+            "Delays generation of the start accounting record until the user IP address is established.",
+            "Enables accounting records.",
+            "Displays debug messages for POD packets.",
+            "Identifies a RADIUS host."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Security Command Reference: Commands A to C - aaa max-sessions through algorithm [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/a1/sec-a1-cr-book/sec-cr-a2.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990123.20/warc/CC-MAIN-20150728002310-00164-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 363612495,
+    "recordOffset": 363506492,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{17709=On platforms with multiple interfaces (ports) per slot, the Cisco RADIUS implementation will not provide a unique NAS-Port attribute that permits distinguishing between the interfaces. For example, if a dual PRI interface is in slot 1, calls on both Serial1/0:1 and Serial1/1:1 will appear as NAS-Port = 20101 due to the 16-bit field size limitation associated with RADIUS IETF NAS-Port attribute., 10134=On platforms with multiple interfaces (ports) per slot, the Cisco RADIUS implementation will not provide a unique NAS-Port attribute that permits distinguishing between the interfaces. For example, if a dual PRI interface is in slot 1, calls on both Serial1/0:1 and Serial1/1:1 will appear as NAS-Port = 20101 due to the 16-bit field size limitation of the RADIUS IETF NAS-Port attribute., 43753=Number of estimated AAA maximum sessions. The range is from 1024 to 64000.}",
+    "TableContextTimeStampAfterTable": "{459518=In this example, Accounting-Off records are generated when private server (server-private 10.10.10.10) is deleted from a server-group., 663756=Sets the call proceeding time interval, in seconds, for SIP calls that do not receive a response. The range is from 30 to 1800. The default is 180., 404354=Number of the dynamic access list. The ranges are from 100 to 199 and from 2000 to 2699., 73873=The following example configures the ISG to act as a AAA server when interacting with the client at IP address 10.12.12.12:, 28000=(Optional) Network access server User Datagram Protocol (UDP) port to use for packet of disconnect (POD) requests. Default value is 1700., 276476=The following example uses a time range to deny HTTP traffic on Monday through Friday from 8:00 a.m. to 6:00 p.m.:, 555815=(Optional) Specifies the User Datagram Protocol (UDP) port for the RADIUS accounting server for accounting requests. The default port is 1646., 200567=Number of an access list. This is a decimal number from 100 to 199 or from 2000 to 2699., 288596=Number of an access list. This is a decimal number from 1 to 99 or from 1300 to 1999., 108279=This command was integrated into Cisco IOS XE Release 2.1 and implemented on the Cisco ASR 1000 Series Aggregation Services Routers., 301240=The following example of a standard access list allows access for devices with IP addresses in the range from 10.29.2.64 to 10.29.2.127. All packets with a source address not in this range will be rejected., 556713=(Optional) Specifies the UDP port for the RADIUS authentication server. The default port is 1645., 518390=This command was implemented on the Cisco ASR 1000 series routers., 300562=The following example of a standard access list allows access for devices with IP addresses in the range from 10.29.2.64 to 10.29.2.127. All packets with a source address not in this range will be rejected., 310819=Number of the access list. This is a number from 1200 to 1299., 301602=The following example of a standard access list allows access for devices with IP addresses in the range from 10.29.2.64 to 10.29.2.127. All packets with a source address not in this range will be rejected. In addition, the logging mechanism is enabled and the word SampleUserValue is appended to each syslog entry., 158015=Number of an IP access list. This is a decimal number from 1 to 199 or from 1300 to 2699 ., 59460=(Optional) Time between downloads, in minutes. The range is from 1 to 1440 minutes.}",
+    "textBeforeTable": "Syntax Description max-sessions aaa no maximum-number-of-sessions max-sessions aaa To set the maximum number of simultaneous authentication, authorization, and accounting (AAA) connections permitted for a user, use the aaa max-sessions command in global configuration mode. To disable the maximum number of sessions, use the no form of this command. aaa max-sessions algorithm alg sip timer alg sip processor alg sip blacklist alert-severity alert (zone-based policy) alert administrator authorization list administrator authentication list addressed-key address ipv6 (TACACS+) address ipv4 (GDOI) address ipv6 (config-radius-server) address ipv4 (config-radius-server) address ipv4 address (IKEv2 keyring) address add (WebVPN) activate action-type acl drop acl (WebVPN) acl (ISAKMP) accounting dhcp source-ip aaa list accounting acknowledge broadcast accounting (server-group) accounting (line) accounting (gatekeeper) accounting access-template access-session accounting access-restrict access-profile access-list remark access-list dynamic-extend access-listcompiledipv4limitmemory access-listcompileddata-linklimitmemory",
+    "textAfterTable": "Command History Release Modification 15.0(1)M This command was introduced in a release earlier than Cisco IOS Release 15.0(1)M. 12.2(33)SRC This command was integrated into a release earlier than Cisco IOS Release 12.2(33)SRC. 12.2(33)SXI This command was integrated into a release earlier than Cisco IOS Release 12.2(33)SXI. Cisco IOS XE Release 2.1 This command was integrated into Cisco IOS XE Release 2.1. Usage Guidelines The aaa max-sessions command enables you to set the maximum number of simultaneous connections permitted for a user. The aaa max-sessions command can be used only if the aaa new-model command is configured. Examples The following example shows how to adjust the initial hash size for the maximum number of simultaneous AAA sessions:  Router# configure",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

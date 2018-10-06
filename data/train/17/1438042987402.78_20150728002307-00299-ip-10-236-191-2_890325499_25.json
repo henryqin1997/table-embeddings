@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Application protocol",
+            "Kerberos",
+            "Kerberos",
+            "Kerberos Password V5",
+            "Kerberos Password V5",
+            "DC Locator"
+        ],
+        [
+            "Protocol",
+            "TCP",
+            "UDP",
+            "UDP",
+            "TCP",
+            "UDP"
+        ],
+        [
+            "Ports",
+            "88",
+            "88",
+            "464",
+            "464",
+            "389"
+        ]
+    ],
+    "pageTitle": "Service overview and network port requirements for Windows",
+    "title": "",
+    "url": "https://support2.microsoft.com/kb/832017/en-us?sd=rss&spid=14134",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00299-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 890380471,
+    "recordOffset": 890325499,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Expand this table Collapse this table Note Packet filters for L2TP traffic are not required, because L2TP is protected by IPsec ESP. Expand this image Collapse this image LSASS 224196: Restricting Active Directory replication traffic and client RPC traffic to a specific port System service name: Finally, you can hard-code the port that is used for Active Directory replication by following the steps in Microsoft Knowledge Base article IPsec Internet Security Association and Key Management Protocol (ISAKMP) (UDP port 500) IPsec Network Address Translator Traversal NAT-T (UDP port 4500) IPsec Encapsulating Security Protocol (ESP) (IP protocol 50) An encapsulated solution might consist of a VPN gateway located behind a filtering router that uses Layer 2 Tunneling Protocol (L2TP) together with IPsec. In this encapsulated scenario, you must allow the following items through the router instead of opening all the ports and protocols listed in this topic: If your computer network environment uses only versions of Windows earlier than Windows Server 2008 and Windows Vista, you must enable connectivity over the low port range of 1025 through 5000. Low port range of 1025 through 5000 High port range of 49152 through 65535 If your computer network environment uses",
+    "textAfterTable": "LDAP Server UDP 389 LDAP SSL TCP 636 IPsec ISAKMP UDP 500 NAT-T UDP 4500 RPC TCP 135 RPC randomly allocated high TCP ports\u00b9 TCP 1024 - 5000 49152 - 65535\u00b2 SMB TCP 445 \u00b9 For more information about how to customize this port, see \"Domain controllers and Active Directory\" in the \"References\" section. This also includes remote WMI and DCOM communications first used in Windows Server 2012 domain controller promotion during prerequisite validation and with the Server Manager tool. \u00b2 This is the range in Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008, and Windows Vista. Application Layer Gateway Service This subcomponent of the Internet Connection Sharing/Internet Connection Firewall (ICF) service provides support for plug-ins that allow network protocols to pass through the firewall and work behind Internet Connection Sharing. Application Layer Gateway (ALG) plug-ins can open ports and change data (such as ports and IP addresses) that are embedded in packets. FTP is the only network protocol that has a plug-in that is included with Windows Server. The ALG FTP plug\u2013in supports active FTP sessions through the network address translation (NAT) engine that these components use. The ALG FTP plug\u2013in supports these sessions by redirecting all traffic that meets the following criteria to a private listening port in the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

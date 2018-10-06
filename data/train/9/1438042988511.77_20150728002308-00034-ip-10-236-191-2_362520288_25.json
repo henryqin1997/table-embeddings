@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Router> enable",
+            "configure terminal Example: Router# configure terminal",
+            "controller e3 slot/port Example: Router(config)# controller e3 1/1",
+            "loopback {local | network {line | payload} } Example: Router(config-controller)# loopback local",
+            "no loopback Example: Router(config-controller)# no loopback",
+            "exit Example: Router(config-controller)# exit"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Enters controller configuration mode for the specified slot/port.",
+            "Loops the E3 line toward the line and back toward the router. Keywords are as follows: local-- Loops the data back toward the router and sends an AIS signal out toward the network. network line payload -- Sets loopback toward the network before going through the framer (line) or after going through the framer (payload).",
+            "Removes the loop.",
+            "Exits the current mode."
+        ]
+    ],
+    "pageTitle": "ISDN Voice Configuration Guide, Cisco IOS Release 12.4T - Clear Channel T3 E3 with Integrated CSU DSU [Cisco IOS Software Releases 12.4 T] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/voice/isdn/configuration/12-4t/vi-12-4t-book/vi-t3e3-csu-dsu.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988511.77/warc/CC-MAIN-20150728002308-00034-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 362543975,
+    "recordOffset": 362520288,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{7435=Cisco 2691, 115614=Router(config-controller)# bert pattern 2^20 interval 1440, 6697=Cisco 2650}",
+    "textBeforeTable": "DETAILED STEPS 6.\u00a0\u00a0\u00a0 exit 5.\u00a0\u00a0\u00a0 no loopback 4.\u00a0\u00a0\u00a0 loopback {local | network {line | payload} } 3.\u00a0\u00a0\u00a0 controller e3 slot/port 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS To configure loopback for E3, perform the following steps. Configuring Loopback for E3 Exits the current mode. \u00a0 Router(config-controller)# exit \u00a0 Example: exit Step\u00a06 Disables the BER test pattern. \u00a0 Router(config-controller)# no bert \u00a0 Example: no bert Step\u00a05 \u00a0 interval time --Duration of",
+    "textAfterTable": "Configuring the National Bit in the G.751 Frame for E3 To configure the national bit in the G.751 frame for E3, perform the following steps. SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 controller e3 slot/port 4.\u00a0\u00a0\u00a0 national bit { 1 | 0 } 5.\u00a0\u00a0\u00a0 exit DETAILED STEPS \u00a0 Command or Action Purpose Step\u00a01 enable Example: Router> enable \u00a0 Enables privileged EXEC mode. Enter your password if prompted. \u00a0 Step\u00a02 configure terminal Example:",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Field",
+            "amount",
+            "code"
+        ],
+        [
+            "Description",
+            "xs:decimal The converted amount.",
+            "xs:string The currency code for the converted amount. Possible values are: Australian Dollar \u2013 AUD Brazilian Real \u2013 BRL Note: The Real is supported as a payment currency and currency balance only for Brazilian PayPal accounts. Canadian Dollar \u2013 CAD Czech Koruna \u2013 CZK Danish Krone \u2013 DKK Euro \u2013 EUR Hong Kong Dollar \u2013 HKD Hungarian Forint \u2013 HUF Israeli New Sheqel \u2013 ILS Japanese Yen \u2013 JPY Malaysian Ringgit \u2013 MYR Note: The Ringgit is supported as a payment currency and currency balance only for Malaysian PayPal accounts. Mexican Peso \u2013 MXN Norwegian Krone \u2013 NOK New Zealand Dollar \u2013 NZD Philippine Peso \u2013 PHP Polish Zloty \u2013 PLN Pound Sterling \u2013 GBP Singapore Dollar \u2013 SGD Swedish Krona \u2013 SEK Swiss Franc \u2013 CHF Taiwan New Dollar \u2013 TWD Thai Baht \u2013 THB Turkish Lira \u2013 TRY Note: The Turkish Lira is supported as a payment currency and currency balance only for Turkish PayPal accounts. U.S. Dollar \u2013 USD"
+        ]
+    ],
+    "pageTitle": "Pay API Operation - PayPal Developer",
+    "title": "",
+    "url": "https://developer.paypal.com/webapps/developer/docs/classic/api/adaptive-payments/Pay_API_Operation/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00040-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 870282723,
+    "recordOffset": 870263953,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{90558=Copyright \u00a9 1999 - 2014 PayPal. All rights reserved.}",
+    "lastModified": "Wed, 29 Jul 2015 04:19:38 GMT",
+    "textBeforeTable": "CurrencyType Fields ap:FundingPlanCharge The amount to be charged to this funding plan. charge ap:CurrencyConversion The currency conversion associated with the funding plan. currencyConversion common:CurrencyType Fees to be paid by the sender. senderFees ap:FundingSource Backup funding source. backupFundingSource common:CurrencyType Amount of available funding. fundingAmount xs:string ID for this funding plan. fundingPlanId Description Field FundingPlan Fields PayError indicates the error, if any, that resulted on an attempted payment to a receiver. payError Description Field PayErrorList Fields xs:string Telephone extension. extension xs:string Telephone number. phoneNumber xs:string Telephone country code. countryCode Description Field PhoneNumberType Response Fields xs:string Account ID value (which is the same as the Payer ID value used in the Express Checkout API). The account ID value is an encrypted PayPal account ID. accountId common:PhoneNumberType Sender's phone number. phone xs:string Sender's email address. Maximum length: 127 characters email Description Field AccountIdentifier Fields ap:TaxIdDetails Tax ID details (For Brazil only)",
+    "textAfterTable": "FundingSource Fields Field Description lastFourOfAccountNumber xs:string Last 4 digits or characters in account number. type xs:string Type of funding source, which is one of the following values:. UNDEFINED BALANCE BANK_INSTANT BANK_DELAYED CREDITCARD DEBITCARD ACCOUNTS_RECEIVABLE displayName xs:string Display name of funding source. fundingSourceId xs:string Funding source ID. allowed xs:boolean Whether the funding source is allowed for this payment: true \u2013 You can use this funding source for the payment false \u2013 You cannot use this funding source (default) CurrencyConversion Fields Field Description from ap:CurrencyType The currency to be converted. to ap:CurrencyType The currency resulting from the conversion. exchangeRate xs:decimal The exchange rate for the from currency to the to currency. FundingPlanCharge Fields Field Description charge common:CurrencyType Amount charged to funding source. fundingSource ap:FundingSource Funding source being charged. WarningDataLists Fields",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

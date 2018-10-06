@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Pseudo classes",
+            "core",
+            "highlight",
+            "default",
+            "light",
+            "medium",
+            "dark"
+        ],
+        [
+            "Description",
+            "styles when the ramp attribute is core. For example, the ramp is set to \"core\" and background set to \"default\" the style used for this is \"af|panelBox::footer-start:core:default\".",
+            "styles when the ramp attribute is highlight",
+            "styles when the background attribute is default",
+            "styles when the background attribute is light",
+            "styles when the background attribute is medium",
+            "styles when the background attribute is dark"
+        ]
+    ],
+    "pageTitle": "Selectors for Skinning ADF Faces Components",
+    "title": "",
+    "url": "https://docs.oracle.com/middleware/1212/adf/TROSS/toc.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 325,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00013-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 877719163,
+    "recordOffset": 877610071,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 08 Dec 2014 03:52:47 GMT",
+    "textBeforeTable": "Color->Unclassified Color Colors that are not classified as either Anchor, Derivative, or Specialty colors. Color are included in other components. Then to change the color scheme, you would change these core/accent color ramps and it will affect all the components it is including in. Global Selectors Global Selectors are selectors that affect more than one component. If the selector name ends in the :alias pseudo-class, then the selector is most likely included in other component-specific selectors. Defining properties for a selector that ends in :alias will most likely affect the skin for more than one component. For example, most, if not all of our components use the .AFDefaultFontFamily:alias definition to specify the font-family. If your skin overrides the .AFDefaultFontFamily:alias selector with a different font-family, that change will affect all the components that have included it in their selector definition. } background-color: red; { af|inputText::content /* Component-specific selector. */ } font-family: Tahoma, Verdana, Helvetica, sans-serif; .AFDefaultFontFamily:alias { /* Global selectors affect more than one component */ Examples of some ADF Faces Skin selectors:  This document lists the skin-selectors that can be used in an ADF Faces skin .css file to skin ADF Faces components. Overview  Renderer Selectors   Themes Common Pseudo-classes Message Selectors Drag and Drop Pseudo-classes Inline Editing Pseudo-classes Poll component timeout Pseudo-classes Note Window Selectors Popup Selectors Global Resource Strings Miscellaneous Component Group: Tabs Component Group: PanelHeader Component Group:",
+    "textAfterTable": ".AFMediumForeground:alias The medium foreground color in the core color ramp. Only used by fusion skins. .AFLightBackground:alias The light background color in the core color ramp. Only used by fusion skins. .AFLightForeground:alias The light foreground color in the core color ramp. Only used by fusion skins. .AFVeryLightBackground:alias The very light background color in the core color ramp. Only used by fusion skins. .AFVeryLightForeground:alias The very light foreground color in the core color ramp. Only used by fusion skins. .AFVeryDarkAccentBackground:alias The darkest background color in the accent color ramp. Only used by fusion skins. .AFVeryDarkAccentForeground:alias The darkest foreground color in the accent color ramp. Only used by fusion skins. .AFDarkAccentBackground:alias The dark background color in the accent color ramp. Only used by fusion skins. .AFDarkAccentForeground:alias The dark foreground color in the accent color ramp. Only used by fusion skins. .AFMediumAccentBackground:alias The medium background color in the accent color ramp. Only used by fusion skins. .AFMediumAccentForeground:alias The medium foreground color in the accent color ramp.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

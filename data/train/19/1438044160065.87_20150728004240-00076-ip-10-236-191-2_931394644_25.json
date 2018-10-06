@@ -1,0 +1,47 @@
+{
+    "relation": [
+        [
+            "Property Name",
+            "type",
+            "wwn",
+            "portWwn",
+            "nodeWwn",
+            "iscsiName",
+            "iscsiAlias"
+        ],
+        [
+            "Type",
+            "enum(SCSI Adapter Type)",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string"
+        ],
+        [
+            "Description",
+            "SCSI target type",
+            "Node and Port WWN of fibre channel target",
+            "Port WWN of fibre channel target",
+            "Node WWN of fibre channel target",
+            "ISCSI name of target",
+            "ISCSI alias of target"
+        ]
+    ],
+    "pageTitle": "VMware vCenter Storage Monitoring Service API Reference Documentation",
+    "title": "",
+    "url": "https://www.vmware.com/support/developer/vc-sdk/sms-sdk-exp/doc/ReferenceGuide/result-contextEntity_relationships.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044160065.87/warc/CC-MAIN-20150728004240-00076-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 931402846,
+    "recordOffset": 931394644,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "VM : Datastore ~ ~ Datacenter ~ ~ ~ ~ ~ Host",
+    "textAfterTable": "freeSpace long byte Space available on the Datastore percentFree double percent % Space available on the Datastore entityUsed long byte Total space used on the Datastore by Virtual Machine files percentUsed double percent Percentage of space used on the Datastore by Virtual Machine files entitySnapshot long byte Total space used on the Datastore by snapshot files percentSnapshot double percent Percentage of space used on the Datastore by snapshot files entityDiskUsed long byte Total space used on the Datastore by Virtual Disks percentDiskUsed double percent Percentage of space used on the Datastore by Virtual Disks entitySwap long byte Total space used on the Datastore by swap files percentSwap double percent Percentage of space used on the Datastore by swap files entityOtherUsed long byte Total space used on the Datastore by files such as configuration, suspend data, NVRAM, screenshots and others. This does not include Virtual Disks, snapshots or swap files percentOtherUsed double percent Percentage of space used on the Datastore by files such as configuration, suspend data, NVRAM, screenshots and others. This does not include Virtual Disks, snapshots or swap files entityShared long byte Total space used on the Datastore by shared files percentShared double percent Percentage of space used on the Datastore by shared files entityNumVmDisk long Number of Virtual Disks used by the Virtual Machine, present on this Datastore",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

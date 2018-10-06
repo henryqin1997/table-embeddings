@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "",
+            "",
+            "2013-12-04T00:00:00",
+            "2013-12-31T00:00:00"
+        ],
+        [
+            "Description",
+            "Acquisition. The LiDAR survey utilized a Leica ALS50-II sensor in a Cessna Caravan 208B. Depending on acquisition day, weather, and terrain, the Leica systems were set to acquire 105,000 laser pulses per second (i.e.105 kHz pulse rate) and flown at 900 meters above ground level (AGL), capturing a scan angle of +/- 14 degrees from nadir. These settings were developed to yield points with an average native pulse density of 8 pulses per square meter over terrestrial surfaces. It is not uncommon for some types of surfaces to return fewer pulses than the laser originally emitted. These discrepancies between ?native? and ?delivered? density will vary depending on terrain, land cover, and the prevalence of water bodies. All areas were surveyed with an opposing flight line side-lap of more than 60% (less than 100% overlap) to reduce laser shadowing and increase surface laser painting. The Leica laser systems allow up to four range measurements (returns) per pulse, and all discernable laser returns were processed for the output dataset. To accurately solve for laser point position (geographic coordinates x, y, z) the positional coordinates of the airborne sensor and the attitude of the aircraft were recorded continuously throughout the LiDAR data collection mission. Aircraft position was measured twice per second (2 Hz) by an onboard differential GPS unit. Aircraft attitude was measured 200 times per second (200 Hz) as pitch, roll and yaw (heading) from an onboard inertial measurement unit (IMU). To allow for post-processing correction and calibration, aircraft/sensor position and attitude data are indexed by GPS time.",
+            "1. Resolved kinematic corrections for aircraft position data using kinematic aircraft GPS and static ground GPS data. Software - Waypoint GPS v.8.10, Trimble Business Center 2.6 2. Developed a smoothed best estimate of trajectory (SBET) file that blends post-processed aircraft position with attitude data. Sensor head position and attitude were calculated throughout the survey. The SBET data were used extensively for laser point processing. Software - IPAS TC v.3.1 3. Calculated laser point position by associating SBET position to each laser point return time, scan angle, intensity, etc. Created raw laser point cloud data for the entire survey in *.las (ASPRS v. 1.2) format. Software - ALS Post Processing Software v.2.74, Corpscon 6 4. Imported raw laser points into manageable blocks (less than 500 MB) to perform manual relative accuracy calibration and filter for pits/birds. Ground points were then classified for individual flight lines (to be used for relative accuracy testing and calibration). Software - TerraScan v.12.004 5. Using ground classified points per each flight line, the relative accuracy was tested. Automated line-to-line calibrations were then performed for system attitude parameters (pitch, roll, heading), mirror flex (scale) and GPS/IMU drift. Calibrations were performed on ground classified points from paired flight lines. Every flight line was used for relative accuracy calibration. Software - TerraMatch v.12.001 6. Position and attitude data were imported. Resulting data were classified as ground and non-ground points. Statistical absolute accuracy was assessed via direct comparisons of ground classified points to ground RTK survey data. Data were then converted to orthometric elevations (NAVD88) by applying a Geoid03 correction. Software: TerraScan v.12.004, TerraModeler v.12.002 7. Bare Earth models were created as a triangulated surface and exported as ArcInfo ASCII grids at a 3?foot pixel resolution. Highest Hit models were created for any class at 3-foot grid spacing and exported as ArcInfo ASCII grids. Software - TerraScan v.12.004, ArcMap v.10.0, TerraModeler v.12.002",
+            "The NOAA Coastal Services Center (CSC) downloaded topographic files in LAZ format from PSLC's website. The files contained lidar easting, northing, elevation, intensity, return number, class, scan angle and GPS time measurements; the data was received in state plane Washington (in feet) and vertical coordinates were referenced to NAVD88 in feet using the Geoid03 model. CSC performed the following processing for data storage and Digital Coast provisioning purposes: 1. The All-Return LAZ files were checked for bad elevations 2. The laz files were converted from a Projected Coordinate System (SP 4602) to a Geographic Coordinate system (NAD83) 3. The laz files were then converted to ellipsoidal vertical units in meters using the geoid03 conversion.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Components NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/wa2011_pslc_quinault_m2603.xml",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/wa2011_pslc_quinault_m2603.xml&view=ISO19115Components-HTMLTable&title=Components%20NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/wa2011_pslc_quinault_m2603.xml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992201.62/warc/CC-MAIN-20150728002312-00069-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 600772358,
+    "recordOffset": 600755964,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:wa2011_pslc_quinault_m2603Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "1 2011 Puget Sound LiDAR Consortium (PSLC) Topographic LiDAR: Quinault River Basin 2013-12-05 1 Lidar Dataset Supplemental Information 1 None 1 North American Datum 1983 2007-01-19 1 none Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 1 Citation URL ftp://csc.noaa.gov/pub/DigitalCoast/lidar1_z/geoid12a/data/2603/supplemental/ 1 NOAA CSC (originator) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration,",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,69 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "id",
+            "file",
+            "lang",
+            "carriers",
+            "status"
+        ],
+        [
+            "Datatype",
+            "ID",
+            "string (default)",
+            "string (default)",
+            "Enumeration",
+            "string (default)"
+        ],
+        [
+            "Required",
+            "no (default)",
+            "Yes",
+            "no (default)",
+            "no (default)",
+            "no (default)"
+        ],
+        [
+            "Values",
+            "",
+            "",
+            "",
+            "internal-electronic external-electronic paper",
+            ""
+        ],
+        [
+            "Default",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Comments",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "SchemaDOC package-data-v1-6.dtd",
+    "title": "",
+    "url": "http://www.wipo.int/pct-safe/epct/schemaDocs/1.10/package-data-v1-6_dtd/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988840.31/warc/CC-MAIN-20150728002308-00271-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 839551951,
+    "recordOffset": 839517251,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 22 Apr 2010 14:27:18 GMT",
+    "textBeforeTable": "amendment, application-body-doc, application-request, bib-changes, biological-material, chapter2-demand, copy-general-power-of-attorney, correspondence, declaration-doc, dtext, fee-calculation-sheet, general-power-of-attorney, lack-of-signature, notification, other-documents, pre-conversion-files-package, preliminary-examination-report, priority-document, published-application, restore-rights-reason, ro-request-receiving-info-doc, search-report-doc, separate-power-of-attorney, sequence-list, signatories, table-external, translation-of-application, transmittal-info, trans-preliminary-examination-report, trans-search-report, wrapped-document, xmit-receipt-doc uses lang, dtd-version, file, produced-by, date-produced, country, status attributes ******************************************************************************** * package-data v1.6 2010 APRIL * ******************************************************************************** * PUBLIC \"-//WIPO//DTD PACKAGE DATA 1.6//EN\" \"package-data-v1-6.dtd\" * ******************************************************************************** * http://www.wipo.int/pct-safe/epct/schemaDocs/1.9/package-data-v1-6.dtd * ******************************************************************************** * contacts: * * EPO: Paul Brewin; pbrewin@epo.org * * JPO: Hideto Tanaka; tanaka-hideto@jpo.go.jp * * USPTO: Bruce B. Cox; bruce.cox@uspto.gov * * WIPO: Shuhei YOSHIURA; shuhei.yoshiura@wipo.int * ******************************************************************************** * revision history * ******************************************************************************** MO: 01/07/09 incorporated changes from PFC ..changed version number from v1.5",
+    "textAfterTable": "file string (default) no (default) \u00a0 \u00a0 \u00a0 produced-by Enumeration Yes \u00a0 applicant\u00a0 RO\u00a0 ISA\u00a0 IPEA\u00a0 IB\u00a0 DO\u00a0 EO\u00a0 national-office\u00a0 regional-office\u00a0 \u00a0 \u00a0 date-produced string (default) no (default) \u00a0 \u00a0 \u00a0 country string (default) no (default) \u00a0 \u00a0 \u00a0 status string (default) no (default) \u00a0 \u00a0 \u00a0 source",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

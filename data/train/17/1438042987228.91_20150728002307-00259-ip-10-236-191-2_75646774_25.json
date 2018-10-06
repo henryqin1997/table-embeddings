@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Field",
+            "String faxNumber",
+            "String faxServer"
+        ],
+        [
+            "Description",
+            "Required. The number to which to send the fax (for example, 916505069560). If this field is empty, a SOAP fault is thrown with the following message: Fax Number is not specified.",
+            "Required. The fax server (defined on the BI Publisher Administration page) to which to send the fax (for example, ipp://mycupsserver:631/printers/fax2). If this field is empty, a SOAP fault is thrown with the following message: Fax server is not specified."
+        ]
+    ],
+    "pageTitle": "Data Types in Oracle BI Publisher Web Services",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E28280_01/bi.1111/e22259/datatypes.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987228.91/warc/CC-MAIN-20150728002307-00259-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 75675187,
+    "recordOffset": 75646774,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{44427=See Section 2.3.17, \"BIPDataSource.\", 140929=See Section 2.3.40, \"MetaDataList.\", 16324=See Section 2.3.31, \"JobInfo.\", 20391=See Section 2.3.38, \"LocalDeliveryOption.\", 131574=Passes the parameter names defined for the report through the ArrayOfString data type. See Section 2.3.13, \"ArrayOfString.\", 134196=Passes the layout names of the report templates through the ArrayOfString data type. See Section 2.3.13, \"ArrayOfString.\", 19005=See Section 2.3.34, \"JobOutputDelivery.\", 137907=If the data source for the report is not defined, you can dynamically define it. See Section 2.3.17, \"BIPDataSource.\", 28782=See Section 2.3.50, \"TemplateFormatsLabelValues.\", 10985=See Section 2.3.23, \"EMailDeliveryOption.\", 119427=See Section 2.3.11, \"ArrayOfParamNameValue.\", 24471=See Section 2.3.43, \"PrintDeliveryOption.\", 41768=See Section 2.3.16, \"ArrayOfWebDAVDeliveryOption.\", 43832=See Section 2.3.20, \"DeliveryChannels.\", 128225=excel2000 (Microsoft Excel 2000), 30184=See Section 2.3.51, \"WebDAVDeliveryOption.\", 41419=See Section 2.3.12, \"ArrayOfPrintDeliveryOption.\", 1134=2007-10-26T21:32:52, 17639=See Section 2.3.33, \"JobOutput.\", 12354=See Section 2.3.24, \"FaxDeliveryOption.\", 110740=See Section 2.3.10, \"ArrayOfMetaData.\", 136238=The output format of the requested report. See Section 2.3.46.1, \"Values for attributeFormat.\", 138721=The parameter name-value pairs to be used in the submission of this report request, passed through the ParamNameValues data type. See Section 2.3.42, \"ParamNameValues.\", 13721=See Section 2.3.26, \"FTPDeliveryOption.\", 166753=Contains the TemplateFormatLabelValue label-value pairs. See Section 2.3.14, \"ArrayOfTemplateFormatLabelValue.\", 31765=Contains the elements to specify a JDBC data source. See Section 2.3.28, \"JDBCDataSource.\", 144217=excel2000, 27166=See Section 2.3.49, \"TemplateFormatLabelValue.\", 15026=See Section 2.3.27, \"ItemData.\", 160099=Information about the request included through the ReportRequest data type. See Section 2.3.46, \"ReportRequest.\", 21714=See Section 2.3.39, \"MetaData.\", 118054=See Section 2.3.13, \"ArrayOfString.\", 167186=The available locale options defined for a template passed in the ArrayOfString data type. See Section 2.3.13, \"ArrayOfString.\", 32144=Contains the elements to specify a file data source. See Section 2.3.25, \"FileDataSource.\", 132856=Passes the report name-value pairs through the ArrayOfParamNameValue data type. See Section 2.3.11, \"ArrayOfParamNameValue.\", 130137=Passes the list of template format labels through the ArrayOfTemplateFormatsLabelValues data type. See Section 2.3.15, \"ArrayOfTemplateFormatLabelValues.\", 23087=See Section 2.3.41, \"ParamNameValue.\"}",
+    "lastModified": "Wed, 14 Jan 2015 14:06:04 GMT",
+    "textBeforeTable": "Table 2-26 Fields Provided by FaxDeliveryOption This type is used in the ArrayOfFaxDeliveryOption complex data type. Use this data type to define the options to set for facsimile (fax) delivery of a report. 2.3.24 FaxDeliveryOption Required. The addresses to which to send the e-mail. If this field is empty, a SOAP fault is thrown with the following message: Recipient (TO) email address is not specified. String emailTo The subject line of the e-mail. String emailSubject The e-mail server name, for example: \"Oracle Mail\". String emailServerName The e-mail address to appear in the Reply-to field. String emailReplyTo Required. The e-mail address that will appear as the From address. If this field is empty, a SOAP fault is thrown with the following message: Sender (From) email address is not specified. String emailFrom The e-mail addresses to receive copies of the e-mail. String emailCC",
+    "textAfterTable": "2.3.25 FileDataSource Use this data type to dynamically create a connection to a file data source when you run a report. You can specify a direct path to a location on your server, or indicate that the file is in the temporary directory This data type is used in the BIPDataSource complex data type. The following table lists the fields: Table 2-27 Fields Provided by FileDataSource Field Description String dynamicDataSourcePath To specify a path to a data source that resides on an available server, specify the full path to the data source and set temporaryDataSource to \"false\". For example: \"D:\\BI\\OracleBI\\xmlp\\XMLP\\DemoFiles\\Balance.xml\")\" If the file is located in the system temporary directory, set temporaryDataSource to true, and specify the file name here. For example: \"Balance.xml\". boolean temporaryDataSource Set to \"true\" when the file data source is in the system temporary directory. Set to \"false\" when dynamicDataSourcePath specifies the full path.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

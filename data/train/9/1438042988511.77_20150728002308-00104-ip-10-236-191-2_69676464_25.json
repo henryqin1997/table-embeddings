@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "String reportAbsolutePath",
+            "byte[] xliffData",
+            "String layoutFileName",
+            "String locale",
+            "String bipSessionToken"
+        ],
+        [
+            "Description",
+            "The path to the report to that contains the XLIFF file to update. For example: /HR Manager/Employee Reports/Employee Listing.xdo",
+            "The XLIFF fie to upload.",
+            "The file name of the layout for which the XLIFF file is to be updated. For example: employee_listing.rtf.",
+            "The locale to assign to the XLIFF (for example, en_US).",
+            "The proprietary token string generated for the user by the BI Publisher server. With the bipSessionToken string, the user no longer needs to provide user credentials. The BI Publisher server can validate this token string and restore the BI Publisher server session to perform needed operation."
+        ]
+    ],
+    "pageTitle": "ReportService",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E23943_01/bi.1111/e22259/reportservice.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988511.77/warc/CC-MAIN-20150728002308-00104-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 69694143,
+    "recordOffset": 69676464,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{8447=See Section 2.3.44, \"ReportDataChunk.\", 15038=See Section 2.3.45, \"ReportDefinition.\", 20870=See Section 2.3.46, \"ReportRequest.\", 80100=excel2000 (Microsoft Excel 2000), 49265=See Section 2.3.46, \"ReportRequest\" and Section 2.3.47, \"ReportResponse.\", 19826=See Section 2.3.42, \"ParamNameValues.\", 34240=See Section 2.3.41, \"ParamNameValue.\"}",
+    "lastModified": "Wed, 13 May 2015 05:21:42 GMT",
+    "textBeforeTable": "Table 4-26 Parameters for updateXLIFFForReportInSession() Method boolean updateXLIFFForReportInSession(String reportAbsolutePath, byte[] xliffData, String layoutFileName, String locale, String bipSessionToken); Signature For more information about in-session methods, see Section 1.2, \"About In-Session Methods.\" Use updateXLIFFForReportInSession() method to update a translation file (XLIFF) associated with a layout definition in the BI Publisher catalog based on the bipSessionToken of a given user. 4.26 updateXLIFFForReportInSession() Method Specifies the password for the user name. String password Specifies the BI Publisher user name. String userID The locale to assign to the XLIFF (for example, en_US). String locale The file name of the layout for which the XLIFF file is to be updated. For example: employee_listing.rtf. String layoutFileName The XLIFF fie to upload. byte[] xliffData The path to the report to that contains the XLIFF file to update. For example: /HR Manager/Employee Reports/Employee Listing.xdo String reportAbsolutePath Description",
+    "textAfterTable": "4.27 uploadReportDataChunk() Method Use uploadReportDataChunk() method to upload a report data chunk. Note: When using uploadReportDataChunk() or downloadReportDataChunk() in a clustered environment, you must set the System Temporary Directory to be a shared directory accessible to all servers within the cluster. To set the System Temporary Directory: Sign in to BI Publisher with Administrator privileges. Click the Administration link. Under System Maintenance, click Server Configuration. Under General Properties in the System Temporary Directory property, enter the absolute path to a directory accessible to all servers in the cluster. For example, the directory can exist under ${xdo.server.config.dir}/temp but you must enter the absolute path, such as /net/subfoldera/scratch/subfolderb/11gcat/temp Repeat this procedure for all servers in the cluster, entering the same value for System Temporary Directory. Signature uploadReportDataChunk(String fileID, byte[] reportDataChunk, String reportRawDataChunk, String userID, String password); Table 4-27 Parameters for uploadReportDataChunk() Method Parameter Description String fileID In the first call, you do not need to provide the fileID, after the successful uploading of the first chunk of XML data, it will return a",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

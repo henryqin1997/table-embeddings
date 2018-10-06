@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "RFCs",
+            "RFC 3471",
+            "RFC 3473",
+            "RFC 4208",
+            "RFC 4872",
+            "RFC 4874",
+            "RFC 6205"
+        ],
+        [
+            "Title",
+            "Generalized Multi-Protocol Label Switching (GMPLS) Signaling Functional Description",
+            "Generalized Multi-Protocol Label Switching (GMPLS) Signaling Resource ReserVation Protocol-Traffic Engineering (RSVP-TE) Extensions",
+            "Generalized Multiprotocol Label Switching (GMPLS) User-Network Interface (UNI): Resource ReserVation Protocol-Traffic Engineering (RSVP-TE) Support for the Overlay Model",
+            "RSVP-TE Extensions in Support of End-to-End Generalized Multi-Protocol Label Switching (GMPLS) Recovery",
+            "Exclude Routes - Extension to Resource ReserVation Protocol-Traffic Engineering (RSVP-TE)",
+            "Generalized Labels for Lambda-Switch-Capable (LSC) Label Switching Routers"
+        ]
+    ],
+    "pageTitle": "Cisco ASR 9000 Series Aggregation Services Router MPLS Configuration Guide, Release 5.1.x - Implementing GMPLS UNI [Cisco ASR 9000 Series Aggregation Services Routers] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r5-1/mpls/configuration/guide/b_mpls_cg51xasr9k/b_mpls_cg51xasr9k_chapter_0110.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00289-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 360740983,
+    "recordOffset": 360719699,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{43032=If no signalled name is configured, TE will generate a default name in the form of router-name_tunnel-id_destination-address, for example, te-ma1_123_10.10.10.10.}",
+    "textBeforeTable": "Feature History for Implementing GMPLS UNI There is a weak trust model between the entities operating the optical and packet networks. The optical and packet network are managed by different service providers. Different groups within a service provider are responsible for managing packet and optical networks. A GMPLS overlay model is required to connect packet routers with the optical network in these scenarios: The Generalized Multiprotocol Label Switching (GMPLS) User Network Interface (UNI) creates a circuit connection between two clients (UNI-C) of an optical network. This connection is achieved by signaling exchanges between UNI Client (UNI-C) and UNI Network (UNI-N) nodes, where UNI-C nodes are router nodes and UNI-N nodes are optical nodes. Implementing GMPLS UNI Additional References Configuring LSP Diversity: Example Configuring Tail UNI-C for a GMPLS Tunnel: Example Configuring Head UNI-C for a GMPLS Tunnel: Example Configuration Examples for GMPLS UNI Configuring RSVP Optical Refresh Interval and Missed Count Configuring an LMP Controller Configuring an LMP Neighbor Configuring Optical Router ID",
+    "textAfterTable": "You must be in a user group associated with a task group that includes the proper task IDs. The command reference guides include the task IDs required for each command. If you suspect user group assignment is preventing you from using a command, contact your AAA administrator for assistance. Router that runs Cisco\u00a0IOS\u00a0XR software. Installation of the Cisco\u00a0IOS\u00a0XR software mini-image on the router. Installation of the Cisco IOS XR MPLS software package on the router. Restrictions for Implementing GMPLS UNI The total number of configured GMPLS UNI controllers should not exceed the platform scale limit of 500 GMPLS interfaces. Each UNI-N (ingress or egress) should be routable from its adjacent UNI-C. The UNI-C nodes need to be routable from the UNI-N nodes too. GMPLS UNI is supported only over DWDM controllers and so, over POS and GigabitEthernet interfaces. GMPLS UNI is supported only with these Cisco ASR 9000 Enhanced Ethernet Line Cards: A9K-MOD80-SE : 80G Modular Line Card, Service Edge Optimized",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

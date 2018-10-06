@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Built-in Namespaces",
+            "Target Namespaces",
+            "Imported Namespaces",
+            "Prefix",
+            "Declare"
+        ],
+        [
+            "Description",
+            "All namespaces defined by xmlns:=\"\". Note that when a schema is imported to the Workbench (see How to Import an XML Schema), none of the built-in namespaces' URLs are selected. If you are using inheritance, declare the built-in namespace with xsi prefix. Otherwise, EclipseLink will throw exceptions.",
+            "All namespaces defined by targetNamespace=\"\".",
+            "All namespaces defined by xsd:import.",
+            "Double-click in the Prefix field to specify the prefix that corresponds to the given namespace. When the EclipseLink runtime marshalls (writes) an object to an XML document, it uses the namespace prefixes you specify here. When the EclipseLink runtime unmarshalls (reads) an XML document, the document may use any prefix value as long as it corresponds to the appropriate namespace. For more information, see EclipseLink Runtime Namespace Resolution.",
+            "When selected, XML documents must use the corresponding URI qualifier when referring to types from this namespace. XML documents may use a different prefix value as long as that value is associated with the appropriate namespace URI. For more information, see EclipseLink Runtime Namespace Resolution."
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Using Workbench (ELUG)\" - Eclipsepedia",
+    "title": "",
+    "url": "http://wiki.eclipse.org/index.php?title=Using_Workbench_(ELUG)&diff=101743&oldid=101742",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987127.36/warc/CC-MAIN-20150728002307-00260-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 263172963,
+    "recordOffset": 263124239,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{270467=Copyright \u00a9 2014 The Eclipse Foundation. All Rights Reserved.}",
+    "textBeforeTable": "Use the following information to complete each Namespaces field in the tab: Complete the Namespaces fields on the Schema Document Info tab. Click the Schema Document Info tab. The Schema Document Info tab appears. Schema Document Info Tab \u2013 Namespaces Field Select a schema element in the Navigator. Its properties appear in the Editor. To specify the namespaces of a schema, use this procedure: How to Configure XML Schema Namespace Using Workbench For more information, see XML Namespaces Overview. If your project uses more than one XML schema and you want to extend one or more built-in types. Provides access to types defined in the corresponding built-in XML schema so that you can extend the built-in types. Extended types must be qualified by the target namespace. xsd:import Imported You may need to specify a target namespace depending on how element and attribute form options are set (see Element and Attribute Form Options). The",
+    "textAfterTable": "How to Configure XML Schema Namespace Using Java Using Java, to configure XML schema namespaces for an EIS descriptor (with XML records) or an XML descriptor, create a descriptor amendment method (see Configuring Amendment Methods) that uses EISDescriptor or XMLDescriptor method getNamespaceResolver to configure the descriptor's NamespaceResolver accordingly, as this example shows. Configuring Namespaces public void addToDescriptor(ClassDescriptor descriptor) { descriptor.getNamespaceResolver.put( prefix, namespaceURI ); } Using Classes Using Workbench, you can create Java classes and packages. This section includes information on the following: How to Create Classes How to Configure Classes How to Import and Update Classes How to Manage Nondescriptor Classes How to Rename Packages How to Create Classes We recommend that you develop your Java classes using an IDE such as Eclipse and import these existing classes into Workbench (see How to Import and Update Classes) However, it is sometimes convenient to create and configure classes in Workbench: for example, when generating an object model from a database schema. This section includes information on using Workbench to create Java classes. For more information on using Workbench to edit classes, see How to Create Classes. How to Create Classes Using Workbench To",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

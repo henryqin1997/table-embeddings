@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Class",
+            "EventManager",
+            "Overlay"
+        ],
+        [
+            "Inherited Methods",
+            "addEventListener, removeAllEventListeners, removeEventListeners",
+            "hide, isInitialized, isVisible, show"
+        ]
+    ],
+    "pageTitle": "Yahoo! Maps Web Services - Flash\u00ae APIs Reference Manual",
+    "title": "",
+    "url": "https://developer.yahoo.com/maps/flash/V3.5/flashReference.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987866.61/warc/CC-MAIN-20150728002307-00250-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 889268619,
+    "recordOffset": 889241664,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{128503=Copyright \u00a9 2015 Yahoo! Inc. All rights reserved.}",
+    "textBeforeTable": "Inherited Methods The url (string) specifies the URL of the RSS feed to load. The url provided must be absolute, not relative. To avoid the need for a crossdomain policy file on the server hosting the rss feed, the request is proxied through a Yahoo! server, therefore the feed must be publicly accessible. url Description Parameter Constructor ActionScript package name: com.yahoo.maps.overlays.GeoRSSOverlay Inheritance: EventManager > Overlay > GeoRSSOverlay The GeoRSSOverlay class allows you to load a document and plot a feed of GeoRSS items on the map. GeoRSSOverlay (url) Return value: void scope [JavaScript only] - object, the scope the listener function is to be called in functionName - string, the listener function eventType - string, the event type which is being listened for Removes the specified event listener for this object that have been subscribed by using addEventListener(). Parameters: removeEventListener (eventType, functionName, scope ) Remove all event listeners for this object that have been subscribed by using addEventListener(). Return value: void JavaScript only: removeAllEventListeners() Return value: void scope [JavaScript only] - An object that specifies the scope in which to call the listener function. functionName - string, the function to be called when the event occurs .",
+    "textAfterTable": "Usage Example:  import com.yahoo.maps.overlays.GeoRSSOverlay; var rssOverlay = new GeoRSSOverlay(\"https://developer.yahoo.com/maps/sample.xml\"); function addNewOverlay():Void { myMap.addOverlay(rssOverlay); } Languages () Holds static references to the supported, valid map languages Inheritance: Languages ActionScript package name: com.yahoo.maps.api.Languages Properties Property Description en_US Static property that contains the name of the \"en_US\" (English) map language type. es_ES Static property that contains the name of the \"es_ES\" (Espanol) map language type. it_IT Static property that contains the name of the \"it_IT\" (Italiano) map language type. de_DE Static property that contains the name of the \"de_DE\" (Deutsch) map language type. fr_CA Static property that contains the name of the \"fr_CA\" (French-Canadian) map language type. fr_FR Static property that contains the name of the \"fr_FR\" (French) map language type. all Static property that contains an array of all the map language types. \u00a0 Usage Example:  import com.yahoo.maps.api.Languages; function setMapLocale(type:String):Void { myMap.setLocale(type); } setMapLocale(Languages.it_IT); LatLon (latitude, longitude) Represents a point on the map through the intersection of latitude and longitude coordinates. Inheritance: LatLon ActionScript package name: com.yahoo.maps.LatLon Constructor Parameter Description",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

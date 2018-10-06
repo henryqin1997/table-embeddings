@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Release",
+            "Release 3.2",
+            "Release 3.3.0",
+            "Release 3.4.0",
+            "Release 3.6.0"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "Support was added for the detail and verbose keywords.",
+            "Support was added for EXEC mode.",
+            "Support was added for the from and reverse keywords."
+        ]
+    ],
+    "pageTitle": "Cisco IOS XR System Management Command Reference for the Cisco XR 12000 Series Router, Release 4.0 - Software Package Management Commands on the Cisco\u00a0IOS\u00a0XR Software [Cisco IOS XR Software (End-of-Sale)] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/xr12000/software/xr12k_r4-0/system_management/command/reference/b_yr40xr12k/b_yr40xr12k_chapter_01111.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00284-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 375676239,
+    "recordOffset": 375597714,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{51384=For detailed information about the concepts and tasks necessary to manage Cisco\u00a0IOS\u00a0XR software see Cisco\u00a0IOS\u00a0XR Getting Started Guide for the Cisco\u00a0XR\u00a012000 Series Router.}",
+    "TableContextTimeStampAfterTable": "{61672=SDR-specific activation is supported for specific packages and upgrades, such as optional packages and Software Maintenance Upgrades (SMUs). Packages that do not support SDR-specific activation can be activated for all SDRs simultaneously only from administration EXEC mode. For detailed instructions, see the Managing Cisco IOS XR Software Packages module of Cisco\u00a0IOS\u00a0XR System Management Configuration Guide for the Cisco\u00a0XR\u00a012000 Series Router.}",
+    "textBeforeTable": "Syntax Description { node-id | all } ] [ location boot-options install clear clear install boot-options command in administration EXEC mode. To clear the boot options for a specified location or for all locations, use the clear install boot-options show install which show install rollback show install request show install pie-info show install package show install log show install inactive show install committed show install boot-options show install auto-abort-timer show install audit show install active show install install verify packages install verify healthcheck install rollback to install remove install label install deactivate install commit install boot-options install auto-abort-timer stop install attach install add install activate install abort clear install rollback oldest clear install log-history oldest clear install label clear install boot-options For detailed information about the concepts and tasks necessary to manage Cisco\u00a0IOS\u00a0XR software see Cisco\u00a0IOS\u00a0XR Getting Started Guide for the",
+    "textAfterTable": "Release Modification Release 3.7.0 This command was introduced. Usage Guidelines To use this command, you must be in a user group associated with a task group that includes appropriate task IDs. If the user group assignment is preventing you from using a command, contact your AAA administrator for assistance. Use the clear install boot-options command to clear boot options that were set using the install boot-options command. Task ID Task ID Operations pkg-mgmt read, write Examples The following example shows how to clear the boot options for all locations:  RP/0/0/CPU0:router(admin)#clear install boot-options Install operation 4 '(admin) clear install boot-options location all' started by user 'salevy' via CLI at 14:03:34 DST Sat Mar 15 2008. Proceed with clearing boot options",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,66 @@
+{
+    "relation": [
+        [
+            "Station",
+            "Wuhan",
+            "Changsha South",
+            "Heng Mountain West",
+            "Chenzhou West",
+            "Guangzhou Bei North",
+            "Guangzhou Nan South"
+        ],
+        [
+            "Stations in Chinese",
+            "\u6b66\u6c49",
+            "\u957f\u6c99\u5357",
+            "\u8861\u5c71\u897f",
+            "\u90f4\u5dde\u897f",
+            "\u5e7f\u5dde\u5317",
+            "\u5e7f\u5dde\u5357"
+        ],
+        [
+            "Arrival Time",
+            "-",
+            "18:52",
+            "19:24",
+            "20:07",
+            "21:14",
+            "21:37"
+        ],
+        [
+            "Dept. Time",
+            "17:27",
+            "18:55",
+            "19:26",
+            "20:09",
+            "21:16",
+            "-"
+        ],
+        [
+            "Distance(km)",
+            "0",
+            "362",
+            "498",
+            "692",
+            "1022",
+            "1069"
+        ]
+    ],
+    "pageTitle": "Wuhan Trains, Wuhan Train Schedule",
+    "title": "",
+    "url": "http://www.chinatravel.com/china-travel-tools/china-trains/wuhan-train-schedule-2.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986022.41/warc/CC-MAIN-20150728002306-00106-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 363437436,
+    "recordOffset": 363421486,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{501=Wuhan is geographically located in the middle of China. There are direct trains to Wuhan from every major city in China. The current Wuhan train station was built in 2009. The annual number of passengers will be over 17 million passengers by 2020. Tourists usually transfer to the Three Gorges Dam in Yichang after they arrive in Wuhan. The Yellow Crane Tower in Wuhan is also a popular tourist attraction in Wuhan. Many ancient Chinese poems are about the tower.}",
+    "textBeforeTable": "G1117 Prices Distance (KM) Dep. Time - Arr. Time Arrival City Train No. Wuhan is geographically located in the middle of China. There are direct trains to Wuhan from every major city in China. The current Wuhan train station was built in 2009. The annual number of passengers will be over 17 million passengers by 2020. Tourists usually transfer to the Three Gorges Dam in Yichang after they arrive in Wuhan. The Yellow Crane Tower in Wuhan is also a popular tourist attraction in Wuhan. Many ancient Chinese poems are about the tower. Wuhan Train Station Wuhan Train Schedules }); //$(\"#js_trainSearBox select\").chosen({disable_search_threshold: 10}); //\u641c\u7d22\u4e0b\u62c9\u6846 }); } }, 100); $('#ui-datepicker-div').css(\"z-index\", 9999); function () { setTimeout( beforeShow : function () { showButtonPanel : true, numberOfMonths : 2, maxDate : \"5m\", minDate : 2, duration : 0, showAnim : \"fadeIn\", $(\".calendar\").datepicker({ $(function(){",
+    "textAfterTable": "Qingyuan \u6e05\u8fdc 13:05 13:07 986 Guangzhou Nan South \u5e7f\u5dde\u5357 13:35 - 1069 Guangzhou Nan South 09:18 - 13:35 1069 KM First Seat:US$121 Second Seat:US$76 G1119 Station Stations in Chinese Arrival Time Dept. Time Distance(km) Wuhan \u6b66\u6c49 - 09:35 0 Xianning North \u54b8\u5b81\u5317 09:59 10:01 85 Changsha South \u957f\u6c99\u5357 11:00 11:05 362 Zhuzhou West \u682a\u6d32\u897f 11:20 11:22 414 Laiyang West \u8012\u9633\u897f 12:01 12:08 594 Shaoguan \u97f6\u5173 12:55 12:58 842 Guangzhou Bei North \u5e7f\u5dde\u5317 13:37 13:39 1022 Guangzhou Nan South \u5e7f\u5dde\u5357 14:00 - 1069 Guangzhou Nan South 09:35 - 14:00 1069 KM First Seat:US$121 Second Seat:US$76 G1120 Station Stations in Chinese Arrival Time Dept. Time Distance(km) Guangzhou Nan South \u5e7f\u5dde\u5357 - 10:58 0 Shaoguan \u97f6\u5173 11:49 11:51 227 Chenzhou West \u90f4\u5dde\u897f 12:22 12:24 377 Hengyang East \u8861\u9633\u4e1c 12:57 12:59 530 Zhuzhou West \u682a\u6d32\u897f 13:26 13:28 655 Changsha",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

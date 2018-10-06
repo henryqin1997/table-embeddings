@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Attribute Name",
+            "escapeText",
+            "trim"
+        ],
+        [
+            "Type",
+            "boolean",
+            "boolean"
+        ],
+        [
+            "Description",
+            "Sets whether the body of the tag should be escaped as text (so that areescaped as < and >), which is the default or leave the text as XML.",
+            "Sets whether whitespace inside this tag should be trimmed or not.Defaults to true so whitespace is trimmed"
+        ]
+    ],
+    "pageTitle": "Jelly - Tag Documentation",
+    "title": "",
+    "url": "http://commons.apache.org/proper/commons-jelly/tags.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989507.42/warc/CC-MAIN-20150728002309-00060-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 49649641,
+    "recordOffset": 49641439,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 17 Jan 2013 22:30:45 GMT",
+    "textBeforeTable": "[tag libraries] [tags] Tag Libraries The following document contains a summary of all theJellytag libraries. [tag libraries] [tags] Tag Documentation Wiki Releasing Components Building Components Contributing Patches Volunteering Dormant Sandbox Components Home Commons Development Process Jelly Tag Documentation Dependency Convergence Releases Task List PMD Report Project License Test Xref Source Xref Unit Tests JavaDoc Warnings Report JavaDoc Report JavaDocs Checkstyle Changes Project Reports Project Info Downloads About commons-jelly Project Documentation Tag Libraries Core Tags XML Pipeline JellySWT JellySwing JellyUnit Features To Do List",
+    "textAfterTable": "Tag Name Description arg An argument to a org.apache.commons.jelly.tags.core.NewTagor org.apache.commons.jelly.tags.core.InvokeTag.This tag MUST be enclosed within an org.apache.commons.jelly.tags.core.ArgTagParentimplementation. break A tag which terminates the execution of the current <forEach>or &lg;while>loop. This tag can take an optional boolean test attribute which if its truethen the break occurs otherwise the loop continues processing. case A tag which conditionally evaluates its body ifmy valueattribute equals my ancestor <switch>tag's \"on\"attribute.This tag must be contained within the body of some <switch>tag. catch A tag which catches exceptions thrown by its body.This allows conditional logic to be performed based on if exceptionsare thrown or to do some kind of custom exception logging logic. choose A tag which conditionally evaluates its body based on some condition default A tag which conditionally evaluates its body ifnone of its preceeding sibling <case>tags have been evaluated.This tag must be contained within the body of some <switch>tag. expr A tag which evaluates an expression file A tag that pipes its body to a file denoted by the name attribute or to an in memory Stringwhich is then output to a variable denoted by the var variable. forEach Iterates over a collection, iterator or an array of objects.Uses the same syntax as the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5"
+        ],
+        [
+            "Command or Action",
+            "UCS-A# scope eth-storage",
+            "UCS-A /eth-storage # scope fabric {a | b }",
+            "UCS-A /eth-storage/fabric # scope port-channel port-chan-name",
+            "UCS-A /eth-storage/fabric/port-channel # {enable | disable }",
+            "UCS-A /eth-storage/fabric/port-channel # commit-buffer"
+        ],
+        [
+            "Purpose",
+            "Enters Ethernet storage mode.",
+            "Enters Ethernet storage mode for the specified fabric.",
+            "Enters Ethernet storage port channel mode.",
+            "Enables or disables the administrative state of the port channel. The port channel is disabled by default.",
+            "Commits the transaction to the system configuration."
+        ]
+    ],
+    "pageTitle": "Cisco UCS Manager CLI Configuration Guide, Release 1.4 - Configuring Ports [Cisco UCS Manager] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/cli/config/guide/1-4/b_UCSM_CLI_Configuration_Guide_1_4/b_UCSM_CLI_Configuration_Guide_1_4_chapter_0101.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00278-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 367774915,
+    "recordOffset": 367747993,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{41096=The following example enables default zoning for a VSAN called accounting with VSAN ID 2112 and FCoE VSAN ID 4021 and commits the transaction:, 44894=The following example disables default zoning for a VSAN called accounting with VSAN ID 2112 and FCoE VSAN ID 4021 and commits the transaction:}",
+    "textBeforeTable": "Procedure You can only configure server ports on the fixed port module. Expansion modules do not include server ports. Configuring a Server Port Server Ports You can only configure uplink Fibre Channel ports on an expansion module. The fixed module does not include uplink Fibre Channel ports. By default, Fibre Channel ports are uplink. However, you can configure them to function as Fibre Channel storage ports. This is useful in cases where a Cisco UCS requires a connection to a Direct-Attached Storage (DAS) device. Uplink Fibre Channel ports handle FCoE traffic between the fabric interconnect and the next layer of the storage area network. All network-bound FCoE traffic is pinned to one of these ports. Uplink Fibre Channel Ports You can configure uplink Ethernet ports on either the fixed module or an expansion module. Appliance FCoE Uplink Server By default, Ethernet ports are unconfigured. However, you can configure them to function in the following ways: Uplink Ethernet ports handle Ethernet traffic between the fabric interconnect and the next layer of the network. All network-bound Ethernet",
+    "textAfterTable": "UCS-A /eth-server # scope fabric b UCS-A /eth-server/fabric # create interface 1 12 UCS-A /eth-server/fabric* # commit-buffer UCS-A /eth-server/fabric # Unconfiguring a Server Port Procedure \u00a0 Command or Action Purpose Step\u00a01 UCS-A# scope eth-server \u00a0 Enters Ethernet server mode. \u00a0 Step\u00a02 UCS-A /eth-server # scope fabric {a | b} \u00a0 Enters Ethernet server fabric mode for the specified fabric. \u00a0 Step\u00a03 UCS-A /eth-server/fabric # delete interface slot-num port-num \u00a0 Deletes the interface for the specified Ethernet server port. \u00a0 Step\u00a04 UCS-A /eth-server/fabric # commit-buffer \u00a0 Commits the transaction to the system configuration. \u00a0 The following example unconfigures Ethernet server port 12 on slot 1 of fabric B and commits the transaction: UCS-A# scope eth-server UCS-A /eth-server # scope fabric",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

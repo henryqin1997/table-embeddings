@@ -1,0 +1,58 @@
+{
+    "relation": [
+        [
+            "Source",
+            "S1",
+            "S2",
+            "S3"
+        ],
+        [
+            "7/10/98 (Thu)",
+            "0",
+            "80",
+            "20"
+        ],
+        [
+            "7/11/98 (Fri)",
+            "0",
+            "80",
+            "20"
+        ],
+        [
+            "7/14/98 (Mon)",
+            "0",
+            "80",
+            "20"
+        ],
+        [
+            "7/15/98 (Tu)",
+            "60",
+            "84",
+            "21"
+        ],
+        [
+            "7/16/98 (Wed)",
+            "66",
+            "88",
+            "22"
+        ]
+    ],
+    "pageTitle": "Oracle Advanced Supply Chain Planning Implementation and User's Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18727_01/doc.121/e13358/T309464T309472.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987866.61/warc/CC-MAIN-20150728002307-00171-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72857919,
+    "recordOffset": 72792079,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{99117=S3: 1000 + 21 = 1021, 186940=Since 20 January is a non-workday, the planning engine moves to 19 January to begin lead-time offsetting and calculates Suggested Start Date 12 January., 7290=In the first phase of SR-C01, SAC is replenished equally by AUS and NYC. From 01-JUL-1997, AUS no longer supplies SAC, which receives all transfers from NYC: (mrp_suprulex.if), 274415=Run on May 5, 186765=The planning engine creates a planned order against item A for quantity 45 with suggested ship date 20 January. Processing lead-time for item A is 5 days., 187304=Wednesday 17 January > -2, 184869== February 24 - 4 days, 213533=Suggested Ship Date of Demand = Day 5 8:00 (Monday), 184709== February 28 (weekly demands are bucketed into Friday), 348067=Required capacity: 525,000 resource hours per batch (2500 units * 15 pounds/unit * 14 hours), 126103=Runtime activity of Operation 20 can start any time after 1:00 pm (9:45 am + 3 hours + 15 min = 1:00 pm) with respect to the Activities Finish Times Constraint., 275089=Job 2: Operations scheduled in the past and completion date of May 6 is earlier than Planning Time Fence Date., 99685=(S2 + 1525)/2810 = 0.6, 99086=S2: 1400 + 125 = 1525, 187268=Thursday 18 January > -1, 130456=Break 2 = 30 minutes starting at 2:00 pm, 187139=Monday 20 January (non-workday) > Suggested Ship Date, 92661=S2 = 1400, 177471=A third planned order of quantity 400 is against the increase in the transient safety stock to quantity 1200 on day 5. The planning engine splits the planned order of quantity 400 into two planned orders of quantity 200 (according to profile option MSO: Demand Size Tolerance Before Splitting Planned Orders). The demand on day 6 pegs to one planned order of quantity 200; the demand on day 8 pegs to the other planned order of quantity 200., 187489=Friday 12 January > -5 and Suggested Start Date, 128006=Runtime activity of Operation 20 can start any time after 12:45 pm (9:45 am + 3 hours = 12:45 pm) with respect to the Activities Finish Times Constraint., 133397=An activity is scheduled 13-JAN 22:41:00 to 13-JAN 22:59:00, 129357=Break 3 = 15 minutes starting at 2:00 pm, 125890=Runtime activity of Operation 10 starts at 9:45 am., 126850=Break 2 = 15 minutes starting at 2:00 pm, 64234=Has received sales orders for purchase order 1, lines 1 and 2; they consume your forecast for the demands on 29 April and 03 May., 330681=May create a planned order on one item and cancel purchase orders on another item in order to follow purchase order availability sequence., 93112=Total target allocation = historical allocation + unsatisfied demand = 2400 + 130 = 2530, 133477=The planning engine creates incremental planned orders quantity 5 for 13-JAN 22:41:00 and quantity 25 for 13-JAN 22:44:00, 275417=Job 6: This job is firmed to complete on May 10., 187547=Thursday 11 January, 187409=Sunday 14 January (non-workday), 130898=Runtime activity of Operation 20 can start any time after 1:00 p.m. [9:45 a.m. + (3 hours) + (30 min -15 min) = 1:00 p.m.] with respect to the Activities Finish Times Constraint., 184526== February 28 - 4 days, 184083=An order quantity of 1 is placed for item A on Friday February 28., 92722=Total allocations for S2 and S3 = 2400, 187376=Monday 15-January > -4, 213371=Suggested Due Date of Demand = Day 1 15:00 (Thursday), 186569=The workday calendar shows the week of 15 January as 5 workdays (Monday 15 January to Friday 19 January) followed by 2 non-workdays (Saturday 20 January to Sunday 21 January)., 133619=The planned order demand becomes quantity 30 on 13-JAN 22:44:00, 99147=Total Allocations for S2 and S3 = 2546, 282562=Job 1: Rescheduled out to meet its demand on time. May overload or compress resources., 213449=Material Available Date for Demand = Day 3 12:00 (Saturday), 347639=Order Qty: 2500, 224993=The lead-time examples use these three calendars. They refer to dates as days, for example, Day 1 and Day 2, rather than as specific dates such as September 1., 93294=Allocation to S2 + 1400 (historical allocation) / 2530 (total target allocation) = 0.6 (source percent), 99507=Total Target Allocation = Historical allocation + New allocation = 2546 + 264 = 2810, 187341=Tuesday 16 January > -3, 187204=Friday 19 January > Beginning of lead-time offsetting, 334379=May only use part of the on-hand of a substitute component if it is higher than order modifiers but not a multiple of them, 187100=Sunday 21 January (non-workday), 184899== February 18 (Monday), 187448=Saturday 13 January (non-workday), 184557== February 24 (Monday), 130517=Break 3 = 15 minutes starting at 2:15 pm, 92691=S3 = 1000, 274648=Planning Time Fence Date is based on the item attribute (User defined, 4 days) as May 9 and considers working days in the organization. The calendar for this organization has no non-work days in the organization calendar., 125828=Break 1 = 15 minutes starting at 10:00 am, 69264=This table shows the supply commit which is the statement of supplier capacity through its last entry date of 3 June. If an item-supplier site does not appear in the supply commit, the planning engine uses the Approved Supplier List Supplier Capacity., 284953=Job 3: Operations 10, 20, and 30 have Start Date earlier than Planning Time Fence Date (May 9); do not reschedule. Operation 40 starts after Planning Time Fence Date; schedule out based on the required demand date. Reschedule out completion date., 129586=Runtime activity of Operation 20 can start any time after 12:45 pm (9:45 am + 3 hours = 12:45 pm) with respect to the Activities Finish Times Constraint., 185051== February 21 (weekly demands are bucketed into Friday), 349386=Copyright \u00a9 2002, 2011, Oracle and/or its affiliates. All rights reserved.}",
+    "lastModified": "Tue, 23 Jun 2015 15:09:08 GMT",
+    "textBeforeTable": "A global sourcing rule has an unspecified receiving organization. In the following table, rows below override rows above them. Columns on the right override columns on the left. Assignments Hierarchy Choose Purge. Select an assignment set name. To purge a sourcing rule or bill of distribution Save your work. Enter the name of the sourcing rule or bill of distribution. Enter the sourcing rule or bill of distribution as the Type. Enter an Item/Category if you selected Item or Item-Org as the Assign To type. Enter the specific site to which you want to assign a sourcing rule or bill of distribution. Enter the name of the customer to which you want to assign a sourcing rule or bill of distribution. Enter an organization name, if the Assigned To type requires one. Note: You cannot assign customers modelled as organizations to a global sourcing rule Select an Assigned To type. Note: You can assign a sourcing rule or bill of distribution to a category only if you have updated the profile option MRP:Sourcing Rule Category Set. See: MRP:Sourcing Rule Category Set Enter an assignment set name and description. Note: The assignment specified in profile option MRP: Default Sourcing Assignment Set is the only one used by Oracle Purchasing for its processing Navigate to the Sourcing Rule/Bill of Distribution Assignments window. To assign",
+    "textAfterTable": "Item Yes No Yes Items in an Organization No Yes No Since not all assignment types are valid for both sourcing rules and bills of distribution, the effect of the Sourcing Rules vs. Bill of Distribution Assignments table is illustrated in a linear hierarchy in the following table. The rows below override rows above them. Assignment to Levels Assignment Scope Sourcing Mechanism Global Global Sourcing Rule Global Bill of Distribution Organization Local Sourcing Rule Category of Item Global Sourcing Rule Category of Item Bill of Distribution Category of Items Local Sourcing Rule in an Organization \u00a0 Item Local Sourcing Rule Item Bill of Distribution Items in an Organization Local Sourcing Rule Viewing Sourcing Rules You can quickly and easily retrieve sourcing rules for reference. After retrieving a sourcing rule, you can display it in a convenient, hierarchical representation, or you can locate the assignment sets in which it is assigned. To view sourcing rules Navigate to the View Sourcing Rule or",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

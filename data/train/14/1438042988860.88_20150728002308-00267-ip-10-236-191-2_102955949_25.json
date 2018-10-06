@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Prefix",
+            "xml",
+            "tomcat",
+            "xs",
+            "naming",
+            "app",
+            "sys",
+            "ee"
+        ],
+        [
+            "Namespace",
+            "http://www.w3.org/XML/1998/namespace",
+            "http://geronimo.apache.org/xml/ns/j2ee/web/tomcat-2.0.1",
+            "http://www.w3.org/2001/XMLSchema",
+            "http://geronimo.apache.org/xml/ns/naming-1.2",
+            "http://geronimo.apache.org/xml/ns/j2ee/application-2.0",
+            "http://geronimo.apache.org/xml/ns/deployment-1.2",
+            "http://java.sun.com/xml/ns/persistence"
+        ]
+    ],
+    "pageTitle": "Schema documentation: Apache Geronimo",
+    "title": "",
+    "url": "http://geronimo.apache.org/schemas-2.1/docs/geronimo-tomcat-2.0.1.xsd.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.88/warc/CC-MAIN-20150728002308-00267-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 102971901,
+    "recordOffset": 102955949,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{85702=Nillable (Applies to element declarations). If an element declaration is nillable, instances can use the xsi:nil attribute. The xsi:nil attribute is the boolean attribute, nil, from the http://www.w3.org/2001/XMLSchema-instance namespace. If an element instance has an xsi:nil attribute set to true, it can be left empty, even though its element declaration may have required content.}",
+    "lastModified": "Tue, 15 Jan 2013 03:26:57 GMT",
+    "textBeforeTable": "Declared Namespaces This is an XML Schema Definition for Geronimo tomcat web application deployment plan. In case the web application deployment plan is provided internally in the web archive, it should be named META-INF/geronimo-web.xml. In case the web application deployment plan is provided externally, the deployment descriptor can be named anything and provided to the deploy tool. Alternatively, it can be included in the EAR and referenced by an alt-dd element of the EAR deployment plan. All the web application deployment plan must specify the top level element as web-app with namespace specified as xmlns=\"http://geronimo.apache.org/xml/ns/j2ee/web/tomcat-2.0.1\". The default location for this document is http://geronimo.apache.org/xml/ns/j2ee/web/tomcat-2.0.1 Documentation http://java.sun.com/xml/ns/persistence (at http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd) http://geronimo.apache.org/xml/ns/deployment-1.2 (at geronimo-module-1.2.xsd) http://geronimo.apache.org/xml/ns/j2ee/application-2.0 (at geronimo-application-2.0.xsd) http://geronimo.apache.org/xml/ns/naming-1.2 (at geronimo-naming-1.2.xsd) This schema imports schema(s) from the following namespace(s): Schema Composition By default, local attribute declarations have no namespace. By default, local element declarations belong to this schema's target namespace. Global element and attribute declarations belong to this schema's target namespace. Element and Attribute Namespaces 1.1 Version http://geronimo.apache.org/xml/ns/j2ee/web/tomcat-2.0.1 Target Namespace Schema Document Properties top Glossary Legend Complex",
+    "textAfterTable": "Schema Component Representation < xs:schema targetNamespace=\" http://geronimo.apache.org/xml/ns/j2ee/web/tomcat-2.0.1\" elementFormDefault=\" qualified\" attributeFormDefault=\" unqualified\" version=\" 1.1\"> < xs:import namespace=\" http://geronimo.apache.org/xml/ns/naming-1.2\" schemaLocation=\" geronimo-naming-1.2.xsd\"/> < xs:import namespace=\" http://geronimo.apache.org/xml/ns/j2ee/application-2.0\" schemaLocation=\" geronimo-application-2.0.xsd\"/> < xs:import namespace=\" http://geronimo.apache.org/xml/ns/deployment-1.2\" schemaLocation=\" geronimo-module-1.2.xsd\"/> < xs:import namespace=\" http://java.sun.com/xml/ns/persistence\" schemaLocation=\" http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd\"/> ... </ xs:schema> top Global Declarations Element: web-app Name web-app Type tomcat:web-appType Nillable no Abstract no Documentation The web-app element is the root of the deployment descriptor for a Geronimo tomcat web application. Note that the sub-elements of this element should be as in the given order in a sequence.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

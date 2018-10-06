@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "Name",
+            "setInt",
+            "setByte",
+            "setBytes",
+            "setShort",
+            "setLong",
+            "setFloat",
+            "setDouble",
+            "setBoolean",
+            "setChar",
+            "setString",
+            "setObject"
+        ],
+        [
+            "Description",
+            "Store integer in message map by name",
+            "Store byte value in message map by name",
+            "Store byte array in message map by name",
+            "Store short integer in message map by name",
+            "Store long integer in message map by name",
+            "Store floating-point value in message map by name",
+            "Store double-precision value in message map by name",
+            "Store boolean value in message map by name",
+            "Store character in message map by name",
+            "Store string in message map by name",
+            "Store object in message map by name"
+        ]
+    ],
+    "pageTitle": "Chapter\u00a02 Using the Java API (Sun GlassFish Message Queue 4.4 Developer's Guide for Java Clients)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19879-01/821-0029/aeqax/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044160065.87/warc/CC-MAIN-20150728004240-00211-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 75155435,
+    "recordOffset": 75114336,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{86499=The Message Queue client runtime sets the JMSTimestamp header field to the time it delivers the message to the broker, expressed as a long integer in standard Java format (milliseconds since midnight, January 1, 1970 UTC). The message\u2019s lifetime, specified when the message is sent, is added to this value and the result is stored in the JMSExpiration header field. (The default lifetime value of 0, represented by the static constant Message.DEFAULT_TIME_TO_LIVE, denotes an unlimited lifetime. In this case, the expiration time is also set to 0 to indicate that the message never expires.) As with the message identifier, client applications that do not use a message\u2019s time stamp can improve performance by suppressing its generation with the message producer method setDisableMessageTimestamp (see Sending Messages).}",
+    "lastModified": "Thu, 27 Jan 2011 00:02:44 GMT",
+    "textBeforeTable": "Table\u00a02\u20131 Interface Classes for Messaging Domains JMS applications are free to use either of these messaging models, or even to mix them both within the same application. Historically, the JMS API provided a separate set of domain-specific object classes for each model. While these domain-specific interfaces continue to be supported for legacy purposes, client programmers are now encouraged to use the newer unified domain interface, which supports both models indiscriminately. For this reason, the discussions and code examples in this manual focus exclusively on the unified interfaces wherever possible. Table\u00a02\u20131 shows the API classes for all three domains. In the publish/subscribe (or pub/sub) model, a single message can be delivered from a producer to any number of consumers. The producer publishes the message to a topic, from which it is then delivered to all active consumers that have subscribed to the topic. Any number of producers can publish messages to a given topic, and each message can be delivered to any number of subscribed consumers. The model also supports the notion of durable subscriptions, in which a consumer registered with a topic need not be active at the time a message is published; when the consumer subsequently becomes active, it will receive the message. If no active consumers are registered for a topic, the topic does not hold the messages it receives unless it has inactive consumers with durable subscriptions.",
+    "textAfterTable": "Sometimes, however, it may be more convenient to dispense with JNDI lookup and simply create your own connection factory by direct instantiation. Although hard-coding configuration values for a particular JMS provider directly into your application code sacrifices flexibility and provider-independence, this approach might make sense in some circumstances: for example, in the early stages of application development and debugging, or in applications where reconfigurability and portability to other providers are not important concerns. The following sections describe these two approaches to obtaining a connection factory: by JNDI lookup or direct instantiation. Looking Up a Connection Factory With JNDI Example\u00a02\u20131 shows how to look up a connection factory object in the JNDI object store. The code example is explained in the procedure that follows. Note \u2013 If a Message Queue client is a J2EE component, JNDI resources are provided by the J2EE container. In such cases, JNDI lookup code may differ from that shown here; see your J2EE provider documentation for details. Example\u00a02\u20131 Looking Up a Connection Factory // Create the environment for constructing the initial JNDI // naming context. Hashtable env = new Hashtable(); // Store the environment attributes that tell JNDI which initial context // factory to use and where to find the provider.// env.put(Context.INITIAL_CONTEXT_FACTORY, \"com.sun.jndi.fscontext.RefFSContextFactory\"); env.put(Context.PROVIDER_URL, \"file:///C:/imq_admin_objects\"); // Create the initial context. Context ctx = new InitialContext(env); //",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

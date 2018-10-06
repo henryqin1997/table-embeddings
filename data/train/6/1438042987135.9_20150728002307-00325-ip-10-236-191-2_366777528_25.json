@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Release",
+            "15.3(2)T",
+            "Cisco IOS XE Release 3.9S"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "This command was integrated into Cisco IOS XE Release 3.9S."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Security Command Reference: Commands S to Z - tacacs-server administration through title-color [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/s1/sec-s1-cr-book/sec-cr-t1.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00325-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 366856143,
+    "recordOffset": 366777528,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{341923=(Optional) Port number for authentication requests; the host is not used for authentication if set to 0. If unspecified, the port number defaults to 1646., 423263=Specifies the timeout interval, in seconds. The range is from 1 to 1000. The default is 5., 446540=idle 2100 session 43200, 128290=Specifies the length of OoO queues. The range is from 0 to 1024. The default is 16., 343564=(Optional) Number of requests per second that are to be sent to the server. Range: 1 to 1000. Default: 10., 478209=Maximum interval, in seconds, for the Gateway General Packet RadioService (GPRS) Support Node (GGSN) to attempt reconnection to a Diameter peer after after being disconnected because of a transport failure. The range is from 1 to 1000. The default is 30., 180838=This command was introduced on Cisco ASR 1000 Series Routers., 207345=The following example routes packets from the source system host1 to example.com, then to 10.1.0.11, and finally back to host1 :, 478790=Maximum interval, in seconds, the GGSN waits for a Diameter peer to respond before trying another peer. The range is from 1 to 1000. The default is 30., 136032=The default OOO queue size is 1024 KB., 479139=Maximum interval, in seconds, the GGSN waits for a Diameter peer response to a watchdog packet. The range is from 1 to 1000. The default is 30., 17675=(Optional) Integer value, in seconds, of the timeout interval. The value is from 1 through 1000., 342643=(Optional) Port number for accounting requests; the host is not used for accounting if set to 0. If unspecified, the port number defaults to 1646., 47515=Timeout interval, in seconds. The range is from 1 to 1000. The default is 5., 169990=The window-scale extension expands the definition of the TCP window to 32 bits and then uses a scale factor to carry this 32-bit value in the 16-bit Window field of the TCP header. The firewall enforces the strict checking of the TCP window scale option. See RFC 1323 for more information on this function., 480145=The valid range, in seconds, from 1 to 1000. The default is 30.}",
+    "textBeforeTable": "Syntax Description server tacacs no name server tacacs To configure the TACACS+ server for IPv6 or IPv4 and enter TACACS+ server configuration mode, use the tacacs servercommand in global configuration mode. To remove the configuration, use the no form of this command. tacacs server title-color title timers hellotime timers delay timer reauthentication (config-if-cts-dot1x) timer (Diameter peer) timeout retransmit timeout login response timeout file download timeout (TACACS+) timeout (policy group) timeout (parameter-map) timeout (GTP) timeout (config-radius-server) timeout (application firewall application-configuration) throttle threat-detection rate threat-detection basic-threat text-color test urlf cache snapshot test cws test crypto self-test test aaa group template variable p template username template location template http welcome template http start template http introduction template http error template http completion template http admin-introduction template file template config template (identity profile)",
+    "textAfterTable": "Command Modes Global configuration (config) Command History Release Modification Cisco IOS XE Release 3.2S This command was introduced. Usage Guidelines The tacacs server command configures the TACACS server using the name argument and enters TACACS+ server configuration mode. The configuration is applied once you have finished configuration and exited TACACS+ server configuration mode. Examples The following example shows how to configure the TACACS server using the name server1 and enter TACACS+ server configuration mode to perform further configuration:  Router(config)# tacacs server server1 Router(config-server-tacacs)# Related Commands Command Description address ipv6 (TACACS+)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

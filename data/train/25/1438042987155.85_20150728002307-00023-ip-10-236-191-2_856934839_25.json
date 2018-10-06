@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "",
+            "442",
+            "443",
+            "444",
+            "445",
+            "",
+            "446",
+            "447",
+            "448"
+        ],
+        [
+            "",
+            "442",
+            "443",
+            "444",
+            "",
+            "445",
+            "446",
+            "447",
+            "448"
+        ],
+        [
+            "",
+            "$where .= $wpdb->prepare( \" AND CAST($alias.meta_value AS {$meta_type}) {$meta_compare} {$meta_compare_string}\", $meta_value );",
+            "}",
+            "",
+            "return apply_filters _ref_array( 'get_meta_sql', array( compact( 'join', 'where' ), $meta_query, $meta_type, $primary_table, $primary_id_column, &$context ) );",
+            "return apply_filters ( 'get_meta_sql', array( compact( 'join', 'where' ), $meta_query, $meta_type, $primary_table, $primary_id_column, $context ) );",
+            "}",
+            "",
+            "/**"
+        ]
+    ],
+    "pageTitle": "16767.2.patch on Ticket #16767 \u2013 Attachment \u2013 WordPress Trac",
+    "title": "",
+    "url": "https://core.trac.wordpress.org/attachment/ticket/16767/16767.2.patch",
+    "hasHeader": true,
+    "headerPosition": "FIRST_COLUMN",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00023-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 856964431,
+    "recordOffset": 856934839,
+    "tableOrientation": "VERTICAL",
+    "textBeforeTable": "wp-admin/includes/class-wp-importer.php Patch against trunk, merged with latest 16661 patch File 16767.2.patch, 43.1 KB (added by hakre, 4 years ago) Ticket #16767: 16767.2.patch Back to Ticket #16767 Context Navigation Notifications Login Search: Create a New Ticket Trac Timeline Browse Source Components Tickets Handbook Blog Make WordPress Core Download WordPress Hosting Blog About Get Involved Documentation Forums Support",
+    "textAfterTable": "wp-admin/includes/class-wp-list-table.php \u00a0 86 86 \u00a0 87 87 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 $screen = get_current_screen();\u00a0 88 88 \u00a0 89 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 add_filter( \"manage_{$screen->id}_columns\", array( &$this, 'get_columns' ), 0 );\u00a0 \u00a0 89 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 add_filter( \"manage_{$screen->id}_columns\", array( $this, 'get_columns' ), 0 );\u00a0 90 90 \u00a0 91 91 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 if ( !$args['plural'] )\u00a0 92 92 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 $args['plural'] = $screen->base;\u00a0 \u2026 \u2026 \u00a0 95 95 \u00a0 96 96 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 if ( $args['ajax'] ) {\u00a0 97 97 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 // wp_enqueue_script( 'list-table' );\u00a0 98 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 add_action( 'admin_footer', array( &$this, '_js_vars' ) );\u00a0",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

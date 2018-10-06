@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Variable",
+            "filesystem",
+            "options"
+        ],
+        [
+            "Description",
+            "Specifies the memory device to format. The supported file systems are: bootflash: compactflash: flash: harddisk: harddiska: disk0: disk1: Enter format ? to see the devices supported on your router.",
+            "Enter format filesystem: ? to see the available options. For more information, see Cisco IOS XR System Management Command Reference for the Cisco CRS Router."
+        ]
+    ],
+    "pageTitle": "Cisco\u00a0IOS\u00a0XR System Management Configuration Guide for the Cisco CRS Router, Release 5.1.x - Managing the Router Hardware [Cisco Carrier Routing System] - Cisco",
+    "title": "Table 8 format command Syntax Description",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/crs/software/crs_r5-1/sys_management/configuration/guide/b-sysman-cg51xcrs/b-sysman-cg51xcrs_chapter_0110.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986022.41/warc/CC-MAIN-20150728002306-00121-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 371629067,
+    "recordOffset": 371575075,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{92580=Causes the active RP to reload the Cisco\u00a0IOS\u00a0XR software according to the configuration register setting (for example, 0x0 to enter ROMMON bootstrap mode and 0x2102 to reload the RP to EXEC mode). The reload command can be entered in EXEC or administration EXEC modes, and you can see additional options by entering the reload ? command. See the Reloading the Active RP for more information., 98236=4.\u00a0\u00a0\u00a0 (Optional) config-register 0x2102, 103558=Sets the configuration register to 0x2102. This step is necessary only if the register is not set to 0x2102 in the running configuration.}",
+    "textBeforeTable": "For complete descriptions of the commands listed in this module, see Additional References. To locate documentation for other commands that might appear in the course of performing a configuration task, search online in Cisco\u00a0IOS\u00a0XR Commands Master List for the Cisco\u00a0CRS Router. This chapter describes the command-line interface (CLI) techniques and commands used to manage and configure the hardware components of a router running the Cisco\u00a0IOS\u00a0XR software. Managing the Router Hardware Additional References Examples Upgrading the CPU Controller Bits Examples Removing and Replacing Cisco 4-Slot Line Card Chassis Switch Fabric Cards Examples Removing and Replacing 8-Slot Line Card Chassis Switch Fabric Cards Examples Removing and Replacing Cisco 16-Slot Line Card Chassis Switch Fabric Cards Card support Advantages Real Time Power Monitoring Replacing a Line Card or PLIM with a Different Media Type Replacing a Line Card or PLIM with the Same Media Type and a Different Port Count Replacing a Line Card or PLIM with the Same Media Type and",
+    "textAfterTable": "Reloading, Shutting Down, or Power Cycling a Node Flash Disk Recovery Using Controller Commands to Manage Hardware Components Formatting Hard Drives, Flash Drives, and Other Storage Devices Removing and Replacing Cards Upgrading the CPU Controller Bits Additional References Prerequisites for Managing Router Hardware You must be in a user group associated with a task group that includes the proper task IDs. The command reference guides include the task IDs required for each command. If you suspect user group assignment is preventing you from using a command, contact your AAA administrator for assistance. Displaying Hardware Status This section describes how to display different types of hardware status information. Displaying SDR Hardware Version Information Displaying System Hardware Version Information Displaying the Chassis Serial Numbers Displaying the Configured Chassis Serial Numbers Displaying Software and Hardware Information Displaying Router Power Consumption Displaying SDR Node IDs and Status Displaying Router Node IDs and Status Displaying Router Environment Information Displaying RP Redundancy Status Displaying Field-Programmable Device Compatibility Displaying SDR Hardware Version Information",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

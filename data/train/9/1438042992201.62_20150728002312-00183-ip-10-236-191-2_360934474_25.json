@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Release",
+            "12.4(20)T",
+            "12.2(33)SXI",
+            "12.2(33)SRD",
+            "12.2(33)SRE"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "This command was integrated into Cisco IOS Release 12.2(33)SXI on Catalyst 6500 series routers.",
+            "This command was integrated into Cisco IOS Release 12.2(33)SRD on Cisco 7600 series routers.",
+            "This command was integrated into Cisco IOS Release 12.2(33)SRE."
+        ]
+    ],
+    "pageTitle": "monitor capture through show monitor capture - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/epc/command/monitor_capture_through_show_monitor_capture.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992201.62/warc/CC-MAIN-20150728002312-00183-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 360962431,
+    "recordOffset": 360934474,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{119961=The IP expanded access list (standard or extended). The range is from 1300 to 2699., 18969=IP expanded access list (standard or extended). Range: 1300 to 2699., 28973=The format for time and date is hh:mm:ss dd mmm yyyy. The time zone is GMT. The hour is specified in 24-hour notation, and the month is specified by a three-letter abbreviation. For example, to set a capture starting time of 7:30 pm on October 31, 2008, use the notation 19:30:00 31 oct 2008., 16579=Specifies the capture buffer size in kilobytes. Range: 32 to 65535. Default: 2048 Kb., 40342=(Optional) The IP expanded access list number. Range is from 1300 to 2699.}",
+    "textBeforeTable": "Command History Privileged EXEC (#) Command Modes (Optional) Displays the capture status. status (Optional) Specifies the hexadecimal dump length of the captured packets. The range is from 14 to 256. dump-length (Optional) Prevents wrapping of the display output. nowrap (Optional) Specifies the hexadecimal dump of the captured packets. dump (Optional) Provides a detailed output of the captured packet information. detail The IP expanded access list (standard or extended). The range is from 1300 to 2699. exp-acl-list The IP access list (standard or extended). The range is from 0 to 199. acl-list (Optional) Displays the output of captured packets",
+    "textAfterTable": "Usage Guidelines Note The availability of keywords depends on your system and platform. If you are using Cisco 6500 series routers or Cisco 7600 series, refer to the following usage guidelines: You can enter the show monitor capture command when the capture buffer is not in the running state. You can enter the show monitor capture status command even when the capture is enabled to see how many packets are captured. If you enter the show monitor capture command without any keywords or arguments, the output displays the configurations. If you enter the dump nowrap keywords, one hexadecimal line is printed per packet. Up to 72 characters of packet bytes is dumped. If you enter the dump nowrap dump-length keywords and argument value , the specified length of bytes per line is dumped. If you enter the brief keyword, only the src ip, dest ip, src port, dest port, and protocol fields are displayed along with the packet length and item number. If you enter the detail keyword, packets are decoded to the layer 4 protocol level and displayed. If you",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

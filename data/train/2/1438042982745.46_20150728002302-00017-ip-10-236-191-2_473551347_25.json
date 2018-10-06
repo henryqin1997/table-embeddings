@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Exception Type",
+            "OverflowException",
+            "ArgumentException"
+        ],
+        [
+            "Condition",
+            "The TimeSpan represented by value is greater than System.TimeSpan.MaxValue or less than System.TimeSpan.MinValue.",
+            "value is equal to System.Double.NaN."
+        ]
+    ],
+    "pageTitle": "System.TimeSpan Structure",
+    "title": "",
+    "url": "http://www.gnu.org/software/dotgnu/pnetlib-doc/System/TimeSpan.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00017-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 473559549,
+    "recordOffset": 473551347,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{18979=The value of the timespan 'ts' is 00:03:34.7483647, 1508=A TimeSpan can be represented as a string in the format \"[-]d.hh:mm:ss.ff\" where \"-\" is an optional sign for negative TimeSpan values, the \"d\" component is days, \"hh\" is hours, \"mm\" is minutes, \"ss\" is seconds, and \"ff\" is fractions of a second. For example, a TimeSpan initialized with 1013 ticks would be represented as \"11.13:46:40\", which is 11 days, 13 hours, 46 minutes, and 40 seconds., 88570=11.13:46:40, 71607=This field is a TimeSpan containing System.Int64.MaxValue ticks, the maximum TimeSpan value. The string representation of this value is positive 10675199.02:48:05.4775807., 56354=TimeSpan two, without d. and .ff: 23:45:54, 19053=ts.Add(ts) = 00:07:09.4967294, 72743=This field is a TimeSpan containing System.Int64.MinValue ticks, the minimum TimeSpan value. The string representation of this value is negative 10675199.02:48:05.4775808., 56281=TimeSpan one, with d. and .ff: 1.23:45:54.3210000, 27199=The absolute value of TimeSpan -00:03:34.7483648 is 00:03:34.7483648, 79497=11.13:46:40.3456789}",
+    "textBeforeTable": "Exceptions TimeSpan. Int32 that specifies the number of seconds with which to initialize the new A seconds TimeSpan. Int32 that specifies the number of minutes with which to initialize the new A minutes TimeSpan. Int32 that specifies the number of hours with which to initialize the new A hours Parameters TimeSpan with the specified numbers of hours, minutes, and seconds. Constructs and initializes a new Summary public TimeSpan(int hours, int minutes, int seconds); TimeSpan(int, int, int) Constructor System.TimeSpan Structure See Also TimeSpanInt64 ticks System Namespace , . that specifies the number of ticks with which to initialize the new A Parameters TimeSpan with the specified number of ticks. Constructs and initializes a new Summary public TimeSpan(long ticks); TimeSpan(long) Constructor TimeSpan.Days Property TimeSpan.Hours Property TimeSpan.Milliseconds Property TimeSpan.Minutes Property TimeSpan.Seconds Property TimeSpan.Ticks Property",
+    "textAfterTable": "The specified hours, minutes, and seconds are converted to ticks, and that value is used to initialize the new TimeSpan. See Also System.TimeSpan Structure, System Namespace TimeSpan(int, int, int, int, int) Constructor public TimeSpan(int days, int hours, int minutes, int seconds, int milliseconds); Summary Constructs and initializes a new TimeSpan with the specified numbers of days, hours, minutes, seconds, and milliseconds. Parameters days A Int32 that specifies the number of days with which to initialize the new TimeSpan. hours A Int32 that specifies the number of hours with which to initialize the new TimeSpan. minutes A Int32 that specifies the number of minutes with which to initialize the new TimeSpan. seconds A Int32 that specifies the number of seconds with which to initialize the new TimeSpan. milliseconds A Int32 that specifies the number of milliseconds with which to initialize the new TimeSpan. Exceptions Exception Type Condition ArgumentOutOfRangeException The parameters specify a TimeSpan value less than System.TimeSpan.MinValue",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

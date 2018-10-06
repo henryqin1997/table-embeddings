@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "Setting",
+            "Documentation",
+            "..."
+        ],
+        [
+            "Value",
+            "An example test suite",
+            "See test documentation"
+        ],
+        [
+            "Value",
+            "documentation with",
+            "for more documentation"
+        ],
+        [
+            "Value",
+            "*some* _formatting_.",
+            "examples."
+        ]
+    ],
+    "pageTitle": "Robot Framework User Guide",
+    "title": "Test suite documentation example",
+    "url": "https://robotframework.googlecode.com/svn/tags/robotframework-2.0/doc/userguide/RobotFrameworkUserGuide.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989507.42/warc/CC-MAIN-20150728002309-00309-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 881468275,
+    "recordOffset": 881372223,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{18726=Robot Framework requires Jython version 2.2. The earlier Jython version 2.1 is not compatible with Robot, and also 2.2 betas and alphas have some problems and are not supported. Unfortunately, also Jython 2.2.1 has certain Unicode problems (for more information, see http://bugs.jython.org/issue1802339 and http://bugs.jython.org/issue1032), which makes it incompatible with Robot Framework. Hopefully these problems will be fixed in future versions.}",
+    "TableContextTimeStampAfterTable": "{318246=Times must be given as timestamps in the format YYYY-MM-DD hh:mm:ss.mil, where all separators are optional and the parts from milliseconds to hours can be omitted. For example, 2008-06-11 17:59:20.495 is equivalent both to 20080611-175920.495 and 20080611175920495, and also mere 20080611 would work., 493752=Generated on: 2008-06-24 11:36 UTC.}",
+    "lastModified": "Tue, 24 Jun 2008 11:52:50 GMT",
+    "textBeforeTable": "In HTML files, the test data is defined in separate tables (see the example below). Robot Framework recognizes these test data tables based on the text in their first cell. Everything outside recognized tables is ignored. HTML format Source distribution contains both HTML and TSV test data templates and they can also be obtained from Robot Framework's download page. Robot Framework test data is defined in tabular format, using either the HTML (hypertext markup language) or TSV (tab-separated values) format. Robot Framework selects a parser for the test data based on the file extension. The extension is case-insensitive, and the recognized extensions are .html, .htm and .xhtml for HTML, and .tsv for TSV. 2.1.2\u00a0\u00a0\u00a0Supported file formats Variable files to provide more flexible ways to create variables than resource files Resource files with variables and higher-level user keywords Test libraries containing the lowest-level keywords In addition to this, there are: Test suite directories can have a special initialization file. A test suite directory can also contain other test suite directories, and this hierarchical structure can be as deeply nested as needed. A directory containing test case files forms a higher-level test suite. Such a test suite directory has suites created from test case files as",
+    "textAfterTable": "Variable Value Value Value ${MESSAGE} Hello, world! Test Case Action Argument Argument My Test [Documentation] Example test Log ${MESSAGE} My Keyword /tmp Another Test Should Be Equal ${MESSAGE} Hello, world! Keyword Action Argument Argument My Keyword [Argument] ${path} Directory Should Exist ${path} Test data in HTML files can be edited with whichever editor you prefer, but a graphic editor, where you can actually see the tables, is recommended. There is also a tool called Robot IDE available that is actually designed for editing the test data. HTML entity references (for example, &auml;) are supported. Additionally, any encoding can be used, assuming that it is specified in the data file. Normal HTML files must use the META",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

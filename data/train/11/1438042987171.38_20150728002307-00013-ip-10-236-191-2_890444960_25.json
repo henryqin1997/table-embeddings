@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "application",
+            "moduleOrCompName",
+            "moduleType",
+            "serviceRefName",
+            "portInfoName",
+            "policyURI",
+            "subjectType"
+        ],
+        [
+            "Definition",
+            "Name and path of the application for which you want to detach a policy from a Web service client port. For example, /domain/server/application#version_number To detach a policy from a client port of a Web service application, this argument is required.",
+            "Name of the Web module or SOA composite (for example HelloWorld[1.0]) for which you want to detach the policy from a client port. To detach a policy from a client port of a SOA composite, the composite name is required (for example default/HelloWorld[1.0]), and the moduleType argument must be set to soa.",
+            "Module type. Valid options are: soa\u2014SOA composite. web\u2014Oracle Infrastructure Web Services packaged as a Web module (including an EJB). wls\u2014Java EE Web services. wsconn\u2014Use with a connection-based Web service client such as an ADF DC Web service client, ADF JAX-WS Indirection Proxy, or WebCenter client.",
+            "The service reference name of the application or composite.",
+            "The client port from which you want to detach the Oracle WSM client policy.",
+            "The Oracle WSM policy name URI, for example \"oracle/wss_username_token_client_policy\" If the policy specified is not attached, an error message is displayed and/or an exception is thrown.",
+            "Optional. Policy subject type. Valid options are: P\u2014Port. The default is P. O\u2014Not supported in this release."
+        ]
+    ],
+    "pageTitle": "Web Services Custom WLST Commands",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E29542_01/web.1111/e13813/custom_webservices.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00013-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 890484919,
+    "recordOffset": 890444960,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{95667=A Web service cannot contain both a WebLogic Web service policy and an Oracle Web service policy. If you have a Web service with a WebLogic Web service policy, you must first detach it before attaching the Oracle Web service policy. The following example detaches the WebLogic Web service policy Wssp1.2-2007-Saml2.0-SenderVouches-Wss1.1.xml from the port SimplePort in the Java EE Web service SimpleEjbService and attaches the Oracle Web service policy oracle/wss_username_token_service_policy.}",
+    "lastModified": "Fri, 28 Nov 2014 10:31:22 GMT",
+    "textBeforeTable": "serviceRefName, portInfoName, policyURI, [subjectType=None] ) detachWebServiceClientPolicy(application,moduleOrCompName,moduleType,  Syntax      Policy changes made using this WLST command are only effective after you restart your application. For ADF and WebCenter applications, a message is displayed to remind you to restart your application. Note: Detach a policy from a Web service client port of an application or SOA composite. Description Use with WLST: Online Command Category: Policy Management detachWebServiceClientPolicy 'UpperCaseImplPort',[\"oracle/wss10_saml20_token_client_policy\",\"oracle/wss11_message_protection_client_policy\"], true) 'owsm_mbean.resouce_pattern.web.ClientJWS/sei2','wls','owsm_mbean.resouce_pattern.web.ClientJWS/sei2',' wls:/wls-domain/serverConfig>enableWebServiceClientPolicies('/wls-domain/AdminServer/ClientJWS',  The following example enables the client policies oracle/wss10_saml20_token_client_policy and oracle/wss11_message_protection_client_policy of the port UpperCaseImplPort of the Java EE Web service module owsm_mbean.resouce_pattern.web.ClientJWS/sei2. [\"oracle/log_policy\", \"oracle/wss_username_token_client_policy\"], true ) 'WssUsernameClient','JRFWssUsernamePort', ('/soainfra/soa1/jwsclient_1#1.1.0','WssUsernameClient','wsconn', wls:/wls-domain/serverConfig>enableWebServiceClientPolicies  The following example enables the client policies oracle/log_policy and oracle/wss_username_token_client_policy of the port JRFWssUsernamePort of the Web module WssUsernameClient. The Web service is part of the application jwsclient_1#1.1.0 for the server soa1 in the domain soainfra. Example       O\u2014Not supported in this release. P\u2014Port. The default is P. Optional. Policy subject type. Valid options are: subjectType If you omit",
+    "textAfterTable": "Examples The following example detaches the client policy oracle/wss_username_token_client_policy from the port JRFWssUsernamePort of the Web module WssUsernameClient. The Web service is part of the application jwsclient_1#1.1.0 for the server soa1 in the domain soainfra.  wls:/wls-domain/serverConfig>detachWebServiceClientPolicy ('/soainfra/soa1/jwsclient_1#1.1.0','WssUsernameClient','wsconn', 'WssUsernameClient','JRFWssUsernamePort','oracle/wss_username_token_client_policy') The following example detaches the client policy oracle/log_policy from the client port HelloWorld_pt in the SOA composite default/HelloWorld[1.0].  wls:/wls-domain/serverConfig>detachWebServiceClientPolicy(None,  'default/HelloWorld[1.0]','soa','client','HelloWorld_pt','oracle/log_policy' ) The following command detaches the client policy oracle/wss_username_token_client_policy from the client port UpperCaseImplPort in the Java EE client module wsm_mbean.resouce_pattern.web.ClientJWS/sei2.  wls:/wls-domain/serverConfig> detachWebServiceClientPolicy('/wls-domain/AdminServer/ClientJWS', 'owsm_mbean.resouce_pattern.web.ClientJWS/sei2', 'wls', 'owsm_mbean.resouce_pattern.web.ClientJWS/sei2', 'UpperCaseImplPort', \"oracle/wss_username_token_client_policy\") detachWebServiceClientPolicies Command Category: Policy Management Use with WLST: Online Description Detach multiple policies from a Web service client port of an application or SOA composite. Note: Policy changes made using this WLST command are only effective after you restart your application. For ADF and WebCenter applications, a message is displayed to remind you to restart your application. Syntax  detachWebServiceClientPolicies(application,moduleOrCompName,moduleType, serviceRefName,portInfoName,policyURIs, [subjectType=None] ) Argument Definition application",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

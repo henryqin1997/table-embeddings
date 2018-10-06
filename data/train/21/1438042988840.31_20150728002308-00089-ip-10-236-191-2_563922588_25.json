@@ -1,0 +1,70 @@
+{
+    "relation": [
+        [
+            "Guest",
+            "GNU/kFreeBSD CURRENT",
+            "GNU/kFreeBSD 9.0",
+            "GNU/kFreeBSD 8.3",
+            "GNU/kFreeBSD"
+        ],
+        [
+            "Guest bitness",
+            "32, 64",
+            "32, 64",
+            "32, 64",
+            "32"
+        ],
+        [
+            "Host version",
+            "qemu-kvm-0.14.1+noroms-0ubuntu6.2",
+            "qemu-kvm-0.14.1+noroms-0ubuntu6.2",
+            "qemu-kvm-0.14.1+noroms-0ubuntu6.2",
+            "kvm-16 + CVS"
+        ],
+        [
+            "Host cpu",
+            "Intel, AMD",
+            "Intel, AMD",
+            "Intel, AMD",
+            "AMD"
+        ],
+        [
+            "Host bitness",
+            "32, 64",
+            "32, 64",
+            "32, 64",
+            "64"
+        ],
+        [
+            "Status",
+            "Works, but significant more CPU needed compared to regular Debian GNU/Linux and FreeBSD CURRENT",
+            "Works, but significant more CPU needed compared to regular Debian GNU/Linux and FreeBSD 9.0",
+            "Works, but significant more CPU needed compared to regular Debian GNU/Linux and FreeBSD 8.3",
+            "Works"
+        ],
+        [
+            "Comments",
+            "by Thomas Schweikle / Xompu",
+            "by Thomas Schweikle / Xompu",
+            "by Thomas Schweikle / Xompu",
+            ""
+        ]
+    ],
+    "pageTitle": "Guest Support Status - KVM",
+    "title": "",
+    "url": "http://www.linux-kvm.org/page/Guest_Support_Status",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988840.31/warc/CC-MAIN-20150728002308-00089-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 563939951,
+    "recordOffset": 563922588,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 23 Jun 2015 22:18:00 GMT",
+    "textBeforeTable": "Windows Family Qemu/kvm will likely run most production operating systems, but this page is maintained nonetheless for general information purposes. Updates are welcomed. Note: Guest Support Status 2.8 Others 2.7.3 QNX 2.7.2 Debian GNU/Hurd 2.7.1 Minix 2.7 Other UNIX systems 2.6 UNIX Family: Solaris/OpenSolaris 2.5.8 DragonflyBSD 2.5.7 Darwin 2.5.6 PC-BSD 2.5.5 MirBSD 2.5.4 NetBSD 2.5.3 Debian GNU/kFreeBSD 2.5.2 FreeBSD 2.5.1 OpenBSD 2.5 UNIX Family: BSD 2.4.12 Mikrotik 2.4.11 Crux Linux 2.4.10 Mandriva 2.4.9 Mandrake Linux 2.4.8 Arch Linux 2.4.7 Gentoo 2.4.6 SystemRescueCD 2.4.5 Qemu-Puppy 2.4.4 Slackware 2.4.3 openSUSE 2.4.2 SUSE Linux Enterprise Server 2.4.1 Android",
+    "textAfterTable": "Windows 2008 Small Business Server 64 qemu-kvm-0.11.0 AMD 64 Works (reboot from guest doesn't correctly work) Installed on 2 GB RAM, 1 CPU core. Host is: Ubuntu Server 9.10 64-bit, 2 x Six-Core AMD Opteron(tm) Processor 2425 HE, 8 x 4 GB DDR2, ISCSI for Guest discspace. Don't use virtio drivers (harddisc/network), use IDE (harddisc) and e1000 (network) emulation instead. By Mark. Windows 2008 Standard 64 qemu-kvm-0.11.0 AMD 64 Works (reboot from guest doesn't correctly work) Installed on 2 GB RAM, 1 CPU core. Host is: Ubuntu Server 9.10 64-bit, 2 x Six-Core AMD Opteron(tm) Processor 2425 HE, 8 x 4 GB DDR2, ISCSI for Guest discspace. Don't use virtio drivers (harddisc/network), use IDE (harddisc) and e1000 (network) emulation instead. By Mark. Windows 2008 Standard 32 qemu-kvm-0.11.0 Intel 32 Works Installed on 1.5 GB RAM, 2 CPU core. Host is: Fedora 14 32-bit, Intel(R) Core(TM)2 CPU 6300 @ 1.86GHz, 3 x 1 GB DDR2 + 1 x 2 GB DDR2, single SATA for host, separate SATA for guest. Working just fine with virtio or Realtek for network. CPU usage near 100% when viewing with KVM console, 14% when viewing through Remmina RDP. Windows 2008 R2 RTM 64",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

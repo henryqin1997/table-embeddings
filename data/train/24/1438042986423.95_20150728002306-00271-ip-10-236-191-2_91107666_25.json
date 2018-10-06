@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Pin",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        [
+            "Signal",
+            "RxD0",
+            "GND",
+            "TxD0",
+            "GND",
+            "RxD1",
+            "GND",
+            "TxD1"
+        ],
+        [
+            "Pin",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "14",
+            "15"
+        ],
+        [
+            "Signal",
+            "GND",
+            "GND",
+            "Vcc",
+            "Vcc",
+            "Vcc",
+            "Vcc",
+            "Vcc"
+        ]
+    ],
+    "pageTitle": "FAQABOSS",
+    "title": "",
+    "url": "http://faqaboss.sunhelp.org/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00271-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 91125639,
+    "recordOffset": 91107666,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{615=Information in this document comes from James Birdsall's Sun Hardware Reference, from Brian Wong's Configuration and Capacity Planning for Solaris Servers, from personal experience, and from innumerable Usenet posts. Much material has also been provided by James Lockwood. Furthermore, he and many others have contributed valuable suggestions. This document is copyright (c) 1999-2001 Brian L. Brush. You may distribute it freely in unmodified form., 1219=I'm a Unix system administrator. Solaris is my specialty, and I work both as an employee and as a consultant. I worked at Academic Computing at the University of South Florida from October, 1994, until September, 1999. In those years, I helped move the department from a few low-end SPARCstations running SunOS 4.1.x to several mid-range Ultra Enterprise systems running Solaris 2.x. I'm now a system administrator at [company reference omitted due to instructions from on high]. For the gory details about me, check my C.V., 30566=The story for the SPARCserver 1000 is somewhat different, but it still isn't a practical machine for most individuals. The 1000 is essentially a 2000 in a desktop enclosure with only one XDBus instead of two. Although it uses less power and is less expensive, the system's architecture is designed for moving large amounts of data: the higher latency suffered by most smaller operations is not good for most single-user workstations., 30305=Yes, the SPARCcenter 2000 is physically impressive, but remember that size doesn't matter. If you need the power and expandability of a 2000 and can afford it, you should be looking at a newer platform. I doubt many individuals are in such a position., 34122=Sun's MBus, introduced with the SPARCsystem 600MP in 1991, is a circuit-switched processor/memory bus designed to support multiprocessing. In addition to the 6xx series, the SPARCstation 10 and 20 use the MBus to provide SMP capabilities. Each of those machines has two MBus slots; each slot holds one MBus module; each MBus module provides either one or two processors (see MBus module configurations)., 25390=The 10 marks Sun's foray into desktop SMP (once again in the wake of Solbourne). In addition to four SBus slots, this pizza box system has two MBus slots for processor modules. The floppy drive is standard equipment, and there is room for two 3.5\" hard drives. The maximum of 512 MB of RAM is once again impressive for its day, and the system can use four processors. For analogue audio I/O, the system requires a speaker box--unique to the SPARCstation 10--that incorporates the necessary serial audio codec. The rare SX model has an on-board 24-bit SX frame buffer.}",
+    "lastModified": "Fri, 29 Jan 2010 00:47:46 GMT",
+    "textBeforeTable": "SPARCstation 1 (4/60) Now, after that interlude, some information on the SPARCstations: Some have parallel ports and on-board frame buffers; a few have more exotic additions like ISDN. SBus slot(s) serial ports sound support ethernet adapter SCSI controller Unless otherwise noted, all SPARCstations have some form of the following on their motherboards: Standard Equipment Solaris is a good option for newer machines (4 and up) equipped with enough RAM. It is particularly useful for providing robust SMP on the MP-capable desktop machines (namely, the 10 and 20). The free Unix operating systems that run on SPARC hardware--namely, Linux, NetBSD, and OpenBSD--are good alternatives for the older machines. They are lightweights compared with Solaris and are recent and well supported. SunOS is just too old for most of us. Don't use it unless you have a good reason. I'm finally convinced of what Sun has been saying for a while now: Solaris is faster than SunOS in most aspects, but slower in many ways because of increased functionality. On the slowest machines, it's so slow it's nearly unusable, making the increased functionality a moot point. It also makes better use of RAM but requires more of it. Some older workstations have maximum RAM configurations that are just too low to make Solaris a reasonable proposition. Operating Systems Sun has a penchant for renaming (and retroactively renaming) products: witness the renaming of SunOS 4.1.4 to Solaris 1.1.2, etc.",
+    "textAfterTable": "Notes: The first SPARCstation is housed in a pizza box with three SBus slots. There is room for a floppy drive and two 3.5\" hard drives. The maximum of 64 MB of RAM is impressive for such a vintage. Conclusion: Dirt cheap but terribly slow; good for Linux or non-graphical use. SPARCstation 1+ (4/65) Code Name: Campus B Chassis: Square pizza box Processors: LSI L64801 @ 25 MHz Weitek 3172 FPU MMU: Sun 4c Hardware Contexts: 8 Level-2 Cache: 64 KB write-through; direct-mapped, virtually indexed, virtually tagged, 16-byte lines; 50 ns cycle RAM: 100 ns 1 x 9 or 4 x 9 30-pin SIMMs 16 slots 4 slots per bank (64 MB max) Bus: 3 Sbus slots @ 25 MHz (slot 3 slave-only) Audio: AMD AM79C30A Floppy Disk Drive: 3.5\" 1.44 MB SCSI Drive Bays: 2 x 3.5\" on sleds Notes: Little more than a SPARCstation 1 with a faster processor clock--25 MHz vs. 20 MHz. Comparable to IPC. Conclusion: Dirt cheap but terribly slow; good for Linux or non-graphical use. SPARCstation IPC (4/40) Code Name: Phoenix Chassis: Lunch box Processors: Fujitsu MB86901A",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

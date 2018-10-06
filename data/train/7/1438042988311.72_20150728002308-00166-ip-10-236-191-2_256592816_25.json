@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Egg",
+            "futures",
+            "mailbox",
+            "synch"
+        ],
+        [
+            "Licence",
+            "BSD",
+            "BSD",
+            "BSD"
+        ],
+        [
+            "Author",
+            "felix winkelmann",
+            "Felix Winkelmann and Kon Lovett",
+            "Kon Lovett"
+        ],
+        [
+            "Description",
+            "Concurrent evaluation of expressions",
+            "Thread-safe queues with timeout",
+            "Synchronization Forms"
+        ]
+    ],
+    "pageTitle": "Eggs Unlimited (release branch 3, updated Tue May 25 21:04:35 2010) - The Chicken Scheme wiki",
+    "title": "",
+    "url": "http://wiki.call-cc.org/eggref/3/index?action=show",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00166-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 256614735,
+    "recordOffset": 256592816,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 30 May 2015 12:42:02 GMT",
+    "textBeforeTable": "Language extensions List of available eggs If you are looking for 3rd party libraries used by one the extensions, check out the CHICKEN tarball repository. If you would like to access the subversion repository, see eggs tutorial.  $ chicken-setup -help For more information, enter By default the archive will be unpacked into a temporary directory (named EXTENSIONNAME.egg-dir and the directory will be removed if the installation completed successfully. To keep the extracted files add -keep to the options passed to chicken-setup. $ chicken-setup -fetch EXTENSIONNAME  If you only want to download the extension and install it later, pass the -fetch option to chicken-setup:  $ chicken-setup -repository This will download anything needed to compile and install the library. If your extension repository is placed at a location for which you don't have write permissions, then run chicken-setup as root. You can obtain the repository location by running  $ chicken-setup EXTENSIONNAME Just enter Installation Note: the development of CHICKEN 3 is frozen. Consider using the current CHICKEN version and its corresponding eggs. A library of extensions for the Chicken Scheme system. Eggs Unlimited (release branch 3, updated Tue May 25 21:04:35 2010)     Unsupported or redundant Concurrency and parallelism Miscellaneous Macros and meta-syntax Code generation User interface toolkits Cryptography Unit-testing Sound Tools Data formats and parsing Algorithms and data-structures Object-oriented",
+    "textAfterTable": "codewalk BSD felix winkelmann macro-expansion and code-walking contracts BSD felix winkelmann Simple contract-oriented programming datatype BSD felix winkelmann A facility for creating and deconstructing variant records (from EOPL) date-literals MIT Arto Bendiken A reader extension providing SRFI-19 date/time literals of the form #@2007-12-31T23:59:59Z defun-cond BSD Kon Lovett Create condition convenience procedures environments BSD felix winkelmann User defined evaluation environments extended-cond Public Domain Shawn Wagner cond conforming to SRFI-61 (Guard clauses) case conformating to SRFI-87 (Passing the matched value to a function) Generic case and switch versions that take a user-defined equality function. foof-loop Public Domain Taylor R Campbell Extensible looping macros (originally based on Alex Shinn's) fspath BSD Kon Lovett CommonLISP similar namestring & pathname generalised-case BSD Peter Bex A generalised version of CASE that accepts an equality predicate generator BSD Kon Lovett Provides generator-like coroutine operations. job-worker BSD Kon Lovett Background Job/Worker Associates lexmod BSD Taylor Campbell A portable module system based on lexical scope loop GPL-2 Heinrich Taube The Common Lisp LOOP macro loopy-loop Public Domain Alex Shinn Alex Shinn's LOOP macro make LGPL-1 PLT, adapted to Chicken by felix winkelmann The PLT 'make'",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

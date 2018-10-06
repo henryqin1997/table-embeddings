@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Number of Inputs",
+            "10",
+            "11, ..., 15",
+            "16, \u2026"
+        ],
+        [
+            "User Scenario",
+            "A user places 10 fingers on the screen.",
+            "A user places 10 fingers on the screen. While the first user is maintaining their 10 fingers on the screen, a second user touches the screen with 5 fingers.",
+            "A user places 10 fingers on the screen. While the first user is maintaining their 10 fingers on the screen, a second user touches the screen using more than 5 fingers."
+        ],
+        [
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Expected Behavior",
+            "All 10 touch inputs must be accurately reported.",
+            "The initial 10 touch inputs from the first user must be accurately reported throughout the user scenario. The additional 1 to 5 touch inputs from the second user must not be reported.",
+            "It is ideal to maintain the same behavior as 11,\u2026, 15 number of inputs above. If it cannot be guaranteed the initial 10 inputs from the first user can be accurately reported, report the first user\u2019s 10 inputs as up and stop reporting all inputs. It is acceptable to immediately begin reporting the initial 10 inputs after the inputs from the second user are removed. Under no circumstance should the reporting of the original users inputs be random and or switch between the users."
+        ]
+    ],
+    "pageTitle": "Device.Digitizer Requirements",
+    "title": "",
+    "url": "https://msdn.microsoft.com/en-US/library/windows/hardware/jj134351",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00062-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 872622427,
+    "recordOffset": 872598542,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{54991=Updated: September 4, 2013, 49732=Jun. 26, 2013, 53158=Mar. 01, 2012}",
+    "textBeforeTable": "\u00a0 Base for\u00a0Digitizers Device.Digitizer.Base Updated: September 4, 2013 Device.Digitizer Requirements Service Manufacture Test Customize Develop Design Get Started Windows hardware Windows hardware }; signOutText: 'Sign Out' signInText: 'Sign In', }, preferredIdp: 'msa', }, { aadInfo: }, isSupported: true meUrl: 'https://login.live.com/me.srf?wa=wsignin1.0', switchUrl: '', accountSettingsUrl: 'https://account.microsoft.com/', signOutUrl: '/en-us/store/signout', signInUrl: '/en-us/store/signin', { msaInfo: { rpData: lcaDisclaimerEnabled: false, market: 'en-US', custom: {chevHtml:''}, containerId: 'meControl', var meControlInitOptions = {",
+    "textAfterTable": "\u00a0 Enforcement Date Mar. 01, 2012 Device.Digitizer.Base.HighQualityDigitizerInput Digitizers must provide a high-quality input experience \u00a0 Target Feature Device.Digitizer.Base Applies to Windows 7 Client x86, x64 Description For devices that support pen or touch input, a pen or touch device must appear to Windows as a human interface device (HID) pen or touch device, respectively. If the device appears a mouse, pen and touch features will not be enabled, and the mouse input requirements will apply. Pen digitizer requirements are as follows: Pen digitizers must appear to the operating system as HID pen digitizers and not as mouse or other proprietary devices. Sample rate must be at least 100 Hertz. Resolution must be at least 600 pixels per inch and at least five times the display resolution. While hovering within 5 millimeters, the pen's position and the position that the device reports must be within 2 millimeters of each other. This accuracy requirement applies whether the input is stationary or in motion. The physical contact with the device and the contact position that the device reports must be within 2 millimeters of each other. This accuracy requirement applies whether the input is stationary or in motion. Touch digitizer requirements are as follows: Touch digitizers must appear to the operating system as HID",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

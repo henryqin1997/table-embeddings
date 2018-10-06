@@ -1,0 +1,72 @@
+{
+    "relation": [
+        [
+            "Code or Value",
+            "1",
+            "2",
+            "3",
+            "4",
+            "7",
+            "9",
+            "."
+        ],
+        [
+            "Value Description",
+            "No difficulty",
+            "Some difficulty",
+            "Much difficulty",
+            "Unable to do",
+            "Refused",
+            "Don't know",
+            "Missing"
+        ],
+        [
+            "Count",
+            "1840",
+            "314",
+            "76",
+            "32",
+            "1",
+            "0",
+            "7230"
+        ],
+        [
+            "Cumulative",
+            "1840",
+            "2154",
+            "2230",
+            "2262",
+            "2263",
+            "2263",
+            "9493"
+        ],
+        [
+            "Skip to Item",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "NHANES 1999 - 2000: Physical Functioning Data Documentation, Codebook, and Frequencies",
+    "title": "",
+    "url": "http://www.cdc.gov/nchs/nhanes/nhanes1999-2000/PFQ.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988511.77/warc/CC-MAIN-20150728002308-00051-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 350953083,
+    "recordOffset": 350935193,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{3778=Title: Physical Functioning (PFQ ) Contact Number: 1-866-441-NCHS Years of Content: 1999 - 2000 First Published: June, 2002 Revised: NA Access Constraints: None Use Constraints: None Geographic Coverage: National Subject:Physical Functioning Record Source: NHANES 1999 - 2000 Survey Methodology: NHANES 1999 - 2000 is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S. Medium: NHANES Web site; SAS transport files}",
+    "lastModified": "Fri, 09 May 2014 20:25:39 GMT",
+    "textBeforeTable": "Both males and females 1 YEARS - 4 YEARS Target: The next set of questions is about limitations caused by any long-term physical, mental or emotional problem or illness. Please do not include temporary conditions, such as a cold. Is {SP} limited in the kind or amount of play activities {he/she} can do because of a physical, mental or emotional problem? English Text: Physical, mental, emotional limitations SAS Label: PFQ010 Variable Name: PFQ010 - Physical, mental, emotional limitations Both males and females 1 YEARS - 120 YEARS Target: Respondent sequence number. English Text: Respondent sequence number SAS Label: SEQN Variable Name: SEQN - Respondent sequence number Codebook and Frequencies N/A. References \u00a0 All participants 1 year and older. Eligible Sample All participants 20 years of age and older were asked about their ability to work at a job or business. Participants were also asked a series of questions designed to measure their functional status. These questions were phrased to assess the individual\u2019s level of difficulty in performing the task without using any special equipment. Functional limitations were assessed based on scales of activities of daily living (ADLs), instrumental",
+    "textAfterTable": "Able to take part in most type of play English Text: Is {SP} able to take part at all in the usual kinds of play activities done by most children {his/her} age? Target: Both males and females 1 YEARS - 4 YEARS Code or Value Value Description Count Cumulative Skip to Item 1 Yes 18 18 2 No 4 22 7 Refused 0 22 9 Don't know 0 22 . Missing 9471 9493 PFQ020 - Crawl, walk, run, play limitations Variable Name: PFQ020 SAS Label: Crawl, walk, run, play limitations English Text: {Do you/Does SP} have an impairment or health problem that limits {your/his/her} ability to {crawl, walk or play} {walk, run or play} {walk or run}? English Instructions: CAPI INSTRUCTION: IF CHILD'S AGE = 1-4, DISPLAY \"CRAWL, WALK OR PLAY\". IF CHILD'S AGE = 5-15, DISPLAY \"WALK, RUN OR PLAY\". IF SP'S AGE =",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "namespace",
+            "repository",
+            "partition",
+            "type",
+            "jndi",
+            "path"
+        ],
+        [
+            "Definition",
+            "The namespace used for looking up the shared repository to set connection details.",
+            "Optional. The name of the application's shared repository.",
+            "Optional. The name of the partition for the application's shared metadata.",
+            "Optional. The type of connection, file or database, to the repository. Valid values are 'File' or 'DB' (case insensitive).",
+            "Optional. The JNDI location for the database connection. This argument is required if the type is set to DB. This argument will not be considered if the type is set to File.",
+            "Optional. The location of the file metadata store. This argument is required if the type is set to File. This argument will not be considered if the type is set to DB."
+        ]
+    ],
+    "pageTitle": "4 Metadata Services (MDS) Custom WLST Commands",
+    "title": "",
+    "url": "http://docs.oracle.com/middleware/1212/core/FCCCR/custom_mds.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00052-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72338043,
+    "recordOffset": 72315271,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 26 Mar 2015 11:52:23 GMT",
+    "textBeforeTable": "[, partition] [, type] [, jndi] [, path]) archiveConfigObject.setAppSharedMetadataRepository(namespace [, repository]  The syntax for setAppSharedMetadataRepository is:  Optional. The directory for the metadata files. This argument is required if the type is set to File. This argument is not considered if the type is set to DB. path     Optional. The JNDI location for the database connection. This argument is required if the type is set to DB. This argument is not considered if the type is set to File.  jndi     Optional. The type of connection, file or database, to the repository. Valid values are 'File' or 'DB' (case insensitive).  type     Optional. The name of the partition for the application's metadata.  partition     Optional. The name of the application's repository.  repository      Definition Argument     [, type] [, jndi] [, path]) archiveConfigObject.setAppMetadataRepository([repository] [, partition]  The syntax for setAppMetadataRepository",
+    "textAfterTable": "The syntax for save is:  archiveConfigObject.save([toLocation]) Argument Definition  toLocation Optional. The file name, including the absolute path to store the changes. If this option is not provided, the changes are written to the archive represented by this configuration object. Examples In the following example, if the adf-config.xml file in the archive does not have the application and shared metadata repositories defined, then you should provide the complete connection information.  wls:/offline> archive = getMDSArchiveConfig(fromLocation='/tmp/testArchive.ear') wls:/offline> archive.setAppMetadataRepository(repository='AppRepos1', partition='partition1', type='DB', jndi='mds-jndi1') wls:/offline> archive.setAppSharedMetadataRepository(namespace='/a', repository='SharedRepos1', partition='partition2', type='File', path='/temp/dir') wls:/offline> archive.save() In the following example, if the adf-config.xml file in the archive already has the application and shared metadata repositories defined, all arguments are optional. You can set only the arguments you want to change.  wls:/offline> archive = getMDSArchiveConfig(fromLocation='/tmp/testArchive.ear') wls:/offline> archive.setAppMetadataRepository(partition='MDS-partition2') wls:/offline> archive.setAppSharedMetadataRepository(namespace='/a', repository='SharedRepos2') wls:/offline> archive.save(toLocation='/tmp/targetArchive.ear') importMAR Command Category: Application Management Deployment Use with WLST: Online",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

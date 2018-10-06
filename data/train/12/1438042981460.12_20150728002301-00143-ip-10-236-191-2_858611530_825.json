@@ -1,0 +1,30 @@
+{
+    "relation": [
+        [
+            "",
+            "From",
+            "To"
+        ],
+        [
+            "Deprecation",
+            "none",
+            "iOS 7.0"
+        ]
+    ],
+    "pageTitle": "iOS 6.1 to iOS 7.0 API Differences",
+    "title": "",
+    "url": "https://developer.apple.com/library/ios/releasenotes/General/iOS70APIDiffs/index.html",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 825,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00143-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 858675283,
+    "recordOffset": 858611530,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "#def NSINTEGER_DEFINED Modified /usr/include/objc/NSObjCRuntime.h #def kNotifyVFSUpdate Added /usr/include/notify_keys.h #def LAUNCH_KEY_PROCESSTYPE_STANDARD Added #def LAUNCH_KEY_PROCESSTYPE_INTERACTIVE Added #def LAUNCH_KEY_PROCESSTYPE_BACKGROUND Added #def LAUNCH_KEY_PROCESSTYPE_APP Added #def LAUNCH_KEY_PROCESSTYPE_ADAPTIVE Added #def LAUNCH_JOBKEY_PROCESSTYPE Added #def LAUNCH_JOBKEY_DEFAULTS Added #def LAUNCH_JOBKEY_CFBUNDLEIDENTIFIER Added /usr/include/launch.h dispatch_source_timer_flags_t Added dispatch_source_memorypressure_flags_t Added #def DISPATCH_TIMER_STRICT Added #def DISPATCH_SOURCE_TYPE_MEMORYPRESSURE Added #def DISPATCH_SOURCE_TYPE_DECL Added #def DISPATCH_MEMORYPRESSURE_WARN Added #def DISPATCH_MEMORYPRESSURE_NORMAL Added #def DISPATCH_MEMORYPRESSURE_CRITICAL Added /usr/include/dispatch/source.h #def DISPATCH_CURRENT_QUEUE_LABEL Added /usr/include/dispatch/queue.h dispatch_introspection_hook_queue_item_enqueue() Added",
+    "textAfterTable": "Modified NSInteger Header From Foundation/NSObjCRuntime.h To objc/NSObjCRuntime.h Modified #def NSIntegerMax Header From Foundation/NSObjCRuntime.h To objc/NSObjCRuntime.h Modified #def NSIntegerMin Header From Foundation/NSObjCRuntime.h To objc/NSObjCRuntime.h Modified NSUInteger Header From Foundation/NSObjCRuntime.h To objc/NSObjCRuntime.h Modified #def NSUIntegerMax Header From Foundation/NSObjCRuntime.h To objc/NSObjCRuntime.h /usr/include/objc/NSObject.h Modified NSObject Header From Foundation/NSObject.h To objc/NSObject.h Modified NSObject Header From Foundation/NSObject.h To objc/NSObject.h Modified +[NSObject alloc] Header From Foundation/NSObject.h To objc/NSObject.h Modified +[NSObject",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

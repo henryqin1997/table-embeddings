@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Where",
+            "val",
+            "allowed_type",
+            "",
+            ""
+        ],
+        [
+            "Is",
+            "the value of the parameter to be passed to an Invoke call. The parameter set is the nth parameter in the parameter list, where n is the numbers of times SetArg has been called after an InitArg call.",
+            "from the following list.",
+            "boolean byte char short int long float double",
+            "java.long.String oracle.win.com.Automation oracle.win.com.Currency java.util.Calendar"
+        ]
+    ],
+    "pageTitle": "3 Oracle COM Automation Feature Core Functionality",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B14117_01/win.101/b10116/ch3core.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00029-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74058869,
+    "recordOffset": 74042475,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{63639=The Currency Java class represents the CURRENCY COM Automation datatype. CURRENCY is a an 8-byte number where the last 4 digits represent the fractional part of the value. For example, the number 12345 actually represents the value 1.2345. CURRENCY has a range of (+/-)922337203685477.5807., 7474=An HRESULT is a COM error code of the hexadecimal form 0x800nnnnn. However, it has the decimal form -214nnnnnnn. For example, passing an invalid object name when creating a COM object causes the HRESULT of -2147221005 to be returned, which is 0x800401f3 in hexadecimal form.}",
+    "lastModified": "Tue, 27 Jul 2004 17:10:00 GMT",
+    "textBeforeTable": "PROCEDURE SetArg(paramvalue any_PL/SQL_datatype, datatype VARCHAR2);  Syntax  SetArg sets a parameter's value to be passed by value. Used to construct the parameter list for the next Invoke call. SetArg      See \"Invoke\" for sample code.  Code Sample  See the section on SetArg datatype strings in \"SetArg \" for information about IN and OUT parameters.  Remarks   any datatype supported by COM Automation Feature. any_PL/SQL_datatype pDATE - date pBOOL - boolean pBSTR - String pDISPATCH - dispatch pointer pCY - currency (value -9999999999.9999 to 9999999999.9999) (This is an Oracle restriction) pSCODE - error code pR8 - IEEE 8 byte real pR4 - IEEE 4 byte real pI4 - 4 byte integer pI2 - 2 byte integer pUI1 - byte integer The available datatypes are: the COM Automation datatype of the parameter. type the value of the",
+    "textAfterTable": "CY - currency (value -9999999999.9999 to 9999999999.9999) (This is an Oracle restriction) pCY - currency (value -9999999999.9999 to 9999999999.9999) (This is an Oracle restriction) DISPATCH - dispatch pointer pDISPATCH - dispatch pointer BSTR - String pBSTR - String BOOL - boolean pBOOL - boolean DATE - date pDATE - date any_PL/SQL_datatype any datatype supported by COM Automation Feature. Remarks Each SetArg procedure sets the nth parameter value. The InitArg call initializes the parameter set. After InitArg has been called, a SetArg call sets the first parameter to the specified value. A second SetArg call sets the second parameter in the parameter list. Subsequent calls set the nth parameters in the parameter list, where n is the number of times SetArg has been called after an InitArg call. Another call to InitArg resets the argument list and a call to SetArg sets the first parameter again. Datatypes without the initial p are IN parameters. Those datatypes prefaced by an initial p are IN OUT or OUT parameters. Code Sample See \"Invoke\"",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

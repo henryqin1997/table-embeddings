@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "Property",
+            "ALGORITHM_NAME",
+            "ITERATION_COUNT",
+            "BASE64_SALT",
+            "BASE64_PASSWORD_HASH"
+        ],
+        [
+            "Description",
+            "The name of the hashing algorithm used to generate the BASE64_PASSWORD_HASH.",
+            "The number of iterations executed when generating the BASE64_PASSWORD_HASH",
+            "The salt byte array used to salt the first hash iteration, formatted as a Base64 string.",
+            "The computed hash byte array formatted as a Base64 string"
+        ],
+        [
+            "Valid Values",
+            "MD5, SHA-1, SHA-256, SHA-384, SHA-512",
+            "Integer greater than 0 (1 or more)",
+            "Base64 String, if your password hashes do you have salt, you can leave it blank ($stormpath2$ALGORITHM_NAME$ITERATION_COUNT$$BASE64_PASSWORD_HASH)",
+            "Base64 String"
+        ]
+    ],
+    "pageTitle": "Stormpath REST API Product Guide - Stormpath",
+    "title": "",
+    "url": "http://docs.stormpath.com/rest/product-guide/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00241-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72316119,
+    "recordOffset": 72232818,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{20113=The Stormpath SAuthc1 digest algorithm is NOT the same as RFC 2617 HTTP digest authentication. The Stormpath SAuthc1 digest-based authentication scheme is more secure than standard HTTP digest authentication., 64911=If you wanted all accounts modified at in the 12th hour UTC on Feb 03, 2015:, 62925=The brackets [] denote inclusion, but createdAt and modifiedAt also support exclusion with parentheses (). For example, if you wanted to get all accounts created between Jan 12, 2015 and Jan 14, 2015 not including the 14th, you would request:, 64493=For example if you wanted all accounts created in Jan 2015 :, 61458=createdAt and modifiedAt query parameters are a type of Attribute Search that allow you to filter or search collections that were created or modified at a particular time. The query parameters are supported for all collections. This includes Account, Group, Directory, Application. As an example, if you want wanted to get all accounts created between Jan 12, 2015 and Jan 14, 2015 you would request:}",
+    "lastModified": "Fri, 31 Jul 2015 22:43:23 GMT",
+    "textBeforeTable": "Create POST responses contain: Response \"https://api.stormpath.com/v1/tenants/$YOUR_TENANT_ID/applications\" }` \\ \"status\": \"enabled\" \"description\": \"Desired description\", \"name\": \"Desired name\", -d '{ -H \"Content-Type: application/json;charset=UTF-8\" \\ -H \"Accept: application/json\" \\ -u $API_KEY_ID:$API_KEY_SECRET \\ curl -X POST \\ An example Create POST Request: Requests that contain body content must specify the HTTP Content-Type header with a value of application/json. Request You create a resource by submitting an HTTP POST to a resource URI. Any POST body must be represented as JSON. Creating Resources  The Stormpath REST API currently only supports JSON resource representations. If you would like other formats supported, please email us at support@stormpath.com to let us know! Resource Format   The Stormpath SAuthc1 digest algorithm is NOT the same as RFC 2617 HTTP digest authentication. The Stormpath SAuthc1 digest-based authentication scheme is more secure than standard HTTP digest authentication. If you port the algorithm to other languages, please let us know. We are happy to help. Email us at support@stormpath.com and we will help as best as we can. Python: Sauthc1Signer (the call method) PHP: Sauthc1Signer (the signRequest method) Ruby: Sauthc1Signer (the sign_request method) Java: SAuthc1RequestAuthenticator (the authenticate method) Finally, if you would like to use Stormpath digest authentication in a programming language that Stormpath does not yet support, you can attempt to port the algorithm to that language. You can try to replicate the algorithm and use Stormpath existing code",
+    "textAfterTable": "201 CREATED The request was successful, we created a new resource, and the response body contains the representation. The Location header contains the new resource\u2019s canonical URI. 400 BAD REQUEST The data given in the POST or PUT failed validation. Inspect the response body for details. 401 UNAUTHORIZED Authentication credentials are required to access the resource. All requests must be authenticated. 403 FORBIDDEN The supplied authentication credentials are not sufficient to access the resource. 404 NOT FOUND We could not locate the resource based on the specified URI. 405 METHOD NOT ALLOWED POST is not supported for the resource. 409 CONFLICT You cannot create or update a resource because another resource already exists or conflicts with one you are submitting. 415 UNSUPPORTED MEDIA TYPE You did not specify the request Content-Type header to have a value of application/json. Only application/json is currently supported. 429 TOO MANY REQUESTS Your application is sending too many simultaneous requests. 500 SERVER ERROR We could not create or update the resource. Please try again. 503 SERVICE UNAVAILABLE We are temporarily unable to service the request. Please wait for a",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

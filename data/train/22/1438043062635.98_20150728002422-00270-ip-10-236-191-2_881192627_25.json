@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Method",
+            "DataAdapter with UpdateBatch=1",
+            "DataAdapter with UpdateBatch=100",
+            "Entity Framework Object Services",
+            "LINQ to SQL"
+        ],
+        [
+            "Average time",
+            "353 ms",
+            "288 ms",
+            "143 ms",
+            "1333 ms"
+        ]
+    ],
+    "pageTitle": "Chapter 16. Making It Real: Connections, Transactions, Performance, and More",
+    "title": "",
+    "url": "https://msdn.microsoft.com/en-us/library/orm-9780596520281-01-16.aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00270-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 881243759,
+    "recordOffset": 881192627,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{123883=In an early 2008 blog post titled \"Exploring the Performance of the ADO.NET Entity Framework-Part 1\" (http://blogs.msdn.com/adonet/archive/2008/02/04/exploring-the-performance-of-the-ado-net-entity-framework-part-1.aspx/), Brian Dawson of the Entity Framework team breaks down query time by task. In his tests, 56 percent of the total time for processing a query is devoted to \"view generation.\" View generation refers to the process of creating the native command from an Entity SQL ObjectQuery or a call to SaveChanges. Fifty-six percent!, 163877=1333 ms}",
+    "textBeforeTable": "Table 16.7. Comparing DataAdapter UpdateBatch to Entity Framework and LINQ to SQL The results are interesting. The Entity Framework is faster than DataAdapter and LINQ to SQL, as you can see in Table 16.7, \"Comparing DataAdapter UpdateBatch to Entity Framework and LINQ to SQL\". Remember that these tests are meant only to be relative to one another. I conducted them on my computer, which might not be as tricked out as the average server. The tests are not meant to indicate the actual potential of any of the tested technologies' performance overall. Note To be fair, there are two tests for DataSet. The first uses the default Update, which sends one command at a time to the database. The second leverages UpdateBatch and sets the batch to 100 commands at a time. The final times represent the average of performing this entire operation 10 times. For the following tests, I modified the previous tests to include updates and inserts, and because this is much more intensive and time-consuming than just querying data, there are only 10 iterations of the tests, not 100. Each test queries for the entire set of customers (approximately 450), iterates through those customers, and modifies a single field in each one. Once those modifications are made, 10 new customers are added. Finally, the appropriate update method is called (DataAdapter.Update, DataContext.SubmitChanges, or ObjectContext.SaveChanges). In talking",
+    "textAfterTable": "You can perform updates with \"classic ADO.NET\" in a variety of ways, and you may achieve different results relative to the two newer technologies. But this at least gives you an idea that something very smart is happening under the covers of the Entity Framework when SaveChanges is called. Entities in Multithreaded Applications Like much of .NET, the Entity Framework is not thread-safe. This means that to use the Entity Framework in multithreaded environments, you need to either explicitly keep individual ObjectContexts in separate threads, or be very conscientious about locking threads so that you don't get collisions. Note Straight from the source (MSDN docs): \"ObjectContext only supports Single-Threaded scenarios.\" Here are some examples of a few ways to use ObjectContext in separate threads. Forcing an ObjectContext to Use Its Own Thread Example 16.22, \"Forcing an ObjectContext to use its own thread\" uses a separate class for managing the ObjectContext and performing the database interaction. The main program then creates a separate thread when it needs the ObjectContext to do something. Delegates and callbacks are used so that it's possible for entities to be returned from the separate thread. Notice that every time the ObjectContext is about to be impacted, a lock is placed on it. C#",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

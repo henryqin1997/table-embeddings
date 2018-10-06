@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Reference Type",
+            "Bind variable",
+            "Direct PL/SQL",
+            "PL/SQL"
+        ],
+        [
+            "Syntax",
+            ":SYSDATE_YYYYMMDD",
+            "APEX_APPLICATION.G_SYSDATE (DATE DATATYPE)",
+            "V('SYSDATE_YYYYMMDD')"
+        ]
+    ],
+    "pageTitle": "Application Builder Concepts",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/appdev.112/e11947/concept.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00257-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71093427,
+    "recordOffset": 71067746,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{41257=In order to use zero as the session ID in your application, you have to generate at least one link having a zero session ID. The use of this first link starts the zero session ID mechanism. One approach would be to provide a single static link with a zero session ID on the application home page. For example, where you might normally code the link to page 2 as f?p=&APP_ID.:2:&APP_SESSION, you would code f?p=&APP_ID.:2:0., 56471=Sets the session state of an item called MY_ITEM to the value 1234, 57460=Sets the value of MY_ITEM1 to 1234, sets the value of MY_ITEM2 to null (indicated by the comma used as placeholder), and sets the value of MY_ITEM3 to 5678}",
+    "lastModified": "Sat, 14 Aug 2010 15:00:15 GMT",
+    "textBeforeTable": "Table 3-22 SYSDATE_YYYYMMDD Syntax Direct PL/SQL APEX_APPLICATION.G_SYSDATE (DATE DATATYPE) PL/SQL V('SYSDATE_YYYYMMDD') Bind variable :SYSDATE_YYYYMMDD  SYSDATE_YYYYMMDD represents the current date on the database server, with the YYYYMMDD format mask applied. You may use this value instead of repeated calls to the SYSDATE() function. The following list describes the supported syntax for referencing SYSDATE_YYYYMMDD. SYSDATE_YYYYMMDD   #SQLERRM# SQLERRM is a template substitution only available in the Applications Region Error Message. The following describes the correct syntax for a region template substitution reference: SQLERRM       Oracle Database PL/SQL Packages and Types Reference for information about htp packages Oracle Database Advanced Application Developer's Guide for information about developing Web applications with PL/SQL See Also: Note that htp.p('hello') is a call to a PL/SQL Web Toolkit package to print out the specified text string. END IF; htp.p('hello'); IF V ('REQUEST') = 'GO' THEN The following is a similar example using PL/SQL: Remember that the fourth argument in the f?p syntax is REQUEST. This example goes to application 100, page",
+    "textAfterTable": "WORKSPACE_IMAGES Use this substitution string to reference uploaded images, JavaScript, and cascading style sheets that are shared over many applications within a workspace. Table 3-23 describes the supported syntax for referencing WORKSPACE_IMAGES. Table 3-23 WORKSPACE_IMAGES Syntax Reference Type Syntax Bind variable :WORKSPACE_IMAGES Direct PL/SQL Not available PL/SQL V('WORKSPACE_IMAGES') Substitution string &WORKSPACE_IMAGES. Template substitution #WORKSPACE_IMAGES# See Also: \"APP_IMAGES\" and \"IMAGE_PREFIX\"",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

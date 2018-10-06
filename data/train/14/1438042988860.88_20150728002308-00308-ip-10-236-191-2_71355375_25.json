@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Variable",
+            "Background processing",
+            "Concurrent processing",
+            "Online processing"
+        ],
+        [
+            "Description",
+            "When you save a material transaction, control is returned to you immediately. Transactions are then processed on a periodic basis.",
+            "When you save a material transaction, a concurrent process is spawned and control is returned to you immediately. The concurrent request number representing the concurrent process executing the issue or return transactions for the job or repetitive schedule is displayed.",
+            "When you save a material transaction, the transaction is processed while you wait and control is returned once transaction processing is completed. If you are using average costing, and the TP:INV: Transaction Processing Mode profile option in Oracle Inventory is set to Form level processing, you must set this profile option to Online to ensure that transactions are processed in the proper sequence."
+        ]
+    ],
+    "pageTitle": "Oracle Work in Process User's Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18727_01/doc.121/e13678/T228107T228110.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.88/warc/CC-MAIN-20150728002308-00308-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71397543,
+    "recordOffset": 71355375,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{174166=Copyright \u00a9 1999, 2010, Oracle and/or its affiliates. All rights reserved.}",
+    "lastModified": "Tue, 23 Jun 2015 15:24:18 GMT",
+    "textBeforeTable": "Set up Inventory as described in the Setup Steps, Oracle Inventory User's GuideEnsure that all of the following steps are completed: Oracle Inventory Setup Steps You may need to perform some or all of the following steps to set up Work in Process. These steps are discussed in detail in the Setting Up sections of the related Oracle product user's guides. Related Product Setup Steps There are 12 steps to set up Work in Process, three of which are required. All of the steps are visually depicted on the Work in Process Setup Flowchart, see: Setup Flowchart Set up Work in Process Setting up Oracle Workflow. Managing data security, which includes setting up responsibilities to allow access to a specific set of business data and complete a specific set of transactions, and assigning individual users to one or more of these responsibilities. Performing system-wide setup tasks such as configuring concurrent managers and printers. You need to complete several other setup steps, including: Set up underlying Oracle Applications Technology This section contains an overview of the tasks that you need to complete to set up Oracle Work in Process, including related product setup steps. Before beginning, consider the following: Overview of Setting Up Security Functions Profile Option Descriptions Profile Options Production Lines Defining Labor Rates Defining Schedule Groups",
+    "textAfterTable": "Launch your transaction managers Common Manufacturing Define your account aliases (optional) Common Manufacturing Define your transaction reason codes (optional) Common Manufacturing Define your units of measure (UOMs) Common Manufacturing Define your subinventories Common Manufacturing Define your stock locators Common Manufacturing Oracle Bills of Material Set up Bills of Material as described in Setup Steps, Oracle Bills of Material User's Guide. Ensure that all of the following steps have been completed: Step Reference Create your bills of material Common Manufacturing Define your resources Common Manufacturing Define your departments, department classes, resource shifts, and department resources Common Manufacturing Define your standard operations Common Manufacturing Create your routings (optional) Common Manufacturing Define simulation sets Common Manufacturing Calculate your manufacturing lead times (optional) Common Manufacturing Create your workday calendar Common Manufacturing Oracle Engineering Set the set up steps in the Oracle Engineering User's Guide.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Parameter Line Entry",
+            "[Solar]",
+            "SunThreshold=75",
+            "RStransfactor=0.8",
+            "SolarMinimum=0",
+            "LuxToWM2=0.0079",
+            "UseBlakeLarsen=0"
+        ],
+        [
+            "Function",
+            "Section Name - the following parameters are set from the Solar Setup dialog in Cumulus",
+            "If you have a solar sensor: Cumulus tries to determine whether the sun is shining by determining whether the current solar radiation value is above a certain percentage of the current theoretical maximum. The value you supply here is used as that percentage. The default value is 75%.",
+            "Cumulus uses the Ryan-Stolzenbach formula to determine the current theoretical maximum solar radiation at your location at the current moment in time. This formula has a factor to allow for the transmission of the radiation through the atmosphere; the default is 0.80.",
+            "This setting allows you to specify a minimum solar radiation value which needs to be reached before it can be considered to be sunny. Note that this setting does not replace the calculation using the current theoretical maximum, it specifies an additional condition which has to be met. This setting therefore allows you to cater for the periods at the beginning and end of the day when the theoretical maximum is very low.",
+            "Edit cumulus.ini to add this parameter if you have a Fine Offset station with a solar detector. These supply 'Lux' values rather than 'W/m2' values that Davis stations supply. Cumulus attempts to convert from Lux to W/m2 using the supplied multiplication factor. You can add this parameter if you want to use a value other than the default of 0.0079, which is the generally accepted standard conversion factor for sunlight.",
+            "Called B/l on screen. Set this to 1 if you have a Blake-Larsen Sun Recorder, and you want Cumulus to get today's sunshine hours from it. You need to configure the Blake-Larsen software to put the SRsunshine.dat file into the Cumulus data folder so that Cumulus can read it."
+        ]
+    ],
+    "pageTitle": "Cumulus.ini - CumulusWiki",
+    "title": "",
+    "url": "http://wiki.sandaysoft.com/a/Cumulus.ini",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989507.42/warc/CC-MAIN-20150728002309-00241-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 252027215,
+    "recordOffset": 251980800,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{50984=When set, at Cumulus start-up and at 04:00 each day, Cumulus will set the Davis VP/VP2 clock to within a minute of the same time as the PC. (From build 3015 for MX)., 53299=This is the period which Cumulus waits between reads of the data from Davis stations, the value is in milliseconds. The default is 500 ms; if you suspect that data is being missed, you could try reducing this figure. For VirtualVP users, tests revealed that VP2SleepInterval = 1100 seems to work the best. It updates every two seconds with few exceptions. See note in readme.txt about VP2SleepInterval - in v1.9.3 release it is around line 50. Related FAQ: FAQ#My_Davis_station_shows_a_higher_maximum_wind_speed_than_Cumulus, 52767=Comunications port used if VP type has TCP/IP selected. Default is 2222, 82582=When set, at Cumulus start-up and at 04:00 each day, Cumulus will set the Davis VP/VP2 clock to within a minute of the same time as the PC}",
+    "textBeforeTable": "See individual parameters for specific instructions on setting them. In many cases this is by using Station Configuration Screen, but if the parameter line does not exist in your file, then insert it using a file editor as per instructions above. Section: Station The entries shown in the 'parameter line entry' column include the default value from the configuration screen where applicable, a typical example value where appropriate, or just the attribute and an equals sign where there is no typical value. The section called \"[FTP site]\" should obey that use of capitals and lower-case. Introduction File Contents The parameter lines (attribute=value) can be in any order, but must be in the correct section. You might find it helpful to sort the attributes within a section into alphabetical order, to ensure you have no duplicates and to make it easier to find the particular parameter line you may wish to edit in the future. You should use a text editor (not a rich text editor nor word processor) to edit this file as only letters, numerical digits, decimal separators and the equals symbol are allowed in any parameter. If you use a spreadsheet program to make use of the manipulation it offers, ensure it is set to output in pure text. If your system is configured to use a comma for a decimal separator, then you should use a comma",
+    "textAfterTable": "Model=\"your Model description\" The weather station model description - you choose what text appears for this on (from version 1.9.x) 'Display' settings screen within Configuration menu - the field is at the bottom left of that screen). Port=0 Selected in the Station Configuration Screen Settings block. Com port in your computer which is connected to your weather station if connected via a serial port. Defaults to port 0. Latitude=0 You are advised not to directly edit this parameter in the file, but to type Latitude (unsigned) Degrees, Minutes, Seconds and select 'N' or 'S' in the Station Configuration Screen Location block. Value in this parameter is Latitude in Decimal Degrees based on what you have entered, Positive for North, Negative for South Longitude=0 You are advised not to directly edit this parameter in the file, but to type Longitude (unsigned) Degrees, Minutes, Seconds and select 'E' or 'W' in the Station Configuration Screen Location block. Value in this parameter is Longitude in Decimal Degrees based on what you have entered, Positive for East, Negative for West LatTxt= You are advised not to directly edit this parameter in the file, but to type Latitude Degrees, Minutes, Seconds in the Station Configuration Screen Location block. Latitude in text string format of hemisphere D, M and S. HTML ampersand codes are used for spaces and unit characters. LonTxt= Longitude in",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

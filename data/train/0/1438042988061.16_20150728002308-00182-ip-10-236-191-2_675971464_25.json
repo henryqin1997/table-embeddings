@@ -1,0 +1,84 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "154.37000",
+            "159.42000",
+            "154.77000",
+            "155.31000",
+            "154.96500"
+        ],
+        [
+            "License",
+            "WQAE561",
+            "WQAE561",
+            "WPYG376",
+            "WQJ357",
+            "KNAN806"
+        ],
+        [
+            "Type",
+            "RM",
+            "M",
+            "RM",
+            "BM",
+            "BM"
+        ],
+        [
+            "Tone",
+            "127.3 PL",
+            "127.3 PL",
+            "203.5 PL",
+            "110.9 PL",
+            "97.4 PL"
+        ],
+        [
+            "Alpha Tag",
+            "Wrthngtn FD",
+            "Wrthngtn FG",
+            "Wrthngtn PD",
+            "Wrthngtn PD",
+            "Wrthngtn DPW"
+        ],
+        [
+            "Description",
+            "Fire (Northampton SP)",
+            "Fireground Ops",
+            "Police (SP Northampton Dispatch)",
+            "Police Local Ops",
+            "Public Works"
+        ],
+        [
+            "Mode",
+            "FMN",
+            "FMN",
+            "FMN",
+            "FMN",
+            "FMN"
+        ],
+        [
+            "Tag",
+            "Fire Dispatch",
+            "Fire-Tac",
+            "Law Dispatch",
+            "Law Dispatch",
+            "Public Works"
+        ]
+    ],
+    "pageTitle": "Hampshire County, Massachusetts (MA) Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?ctid=1220",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00182-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 675984579,
+    "recordOffset": 675971464,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Hampshire County Hampshire County //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { }); }); } act=1; setEsc(this,origHtml); this.innerHTML = getTagsHTML; getTagsHTML += '\\n'; } getTagsHTML += '' + tagNames[i] + '\\n'; for (var",
+    "textAfterTable": "460.22500\u00a0 KNEZ569\u00a0 BM 206.5 PL WMLEC-PD1 WMLEC Police Intercity\u00a0 FMN\u00a0 Multi-Tac\u00a0 158.85000\u00a0 KNEZ569\u00a0 RM Hmpshr Jail1 Jail & House of Correction\u00a0 FMN\u00a0 Corrections\u00a0 453.55000\u00a0 WNCE391\u00a0 RM Hmpshr Jail4 Jail & House of Correction\u00a0 FMN\u00a0 Corrections\u00a0 Amherst Frequency\u00a0 License\u00a0 Type\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 5,
+    "headerRowIndex": 0
+}

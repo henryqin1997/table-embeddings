@@ -1,0 +1,162 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2012-13 *",
+            "2012-13 *",
+            "2012-13 *",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "All Teams",
+            "AUS",
+            "TEX",
+            ""
+        ],
+        [
+            "GP",
+            "11",
+            "6",
+            "5",
+            "11"
+        ],
+        [
+            "GS",
+            "1",
+            "0",
+            "1",
+            "1"
+        ],
+        [
+            "TS%",
+            ".547",
+            ".582",
+            ".525",
+            ".547"
+        ],
+        [
+            "eFG%",
+            ".517",
+            ".544",
+            ".500",
+            ".517"
+        ],
+        [
+            "ORB%",
+            "1.72",
+            "1.09",
+            "2.10",
+            "1.72"
+        ],
+        [
+            "DRB%",
+            "8.09",
+            "7.42",
+            "8.90",
+            "8.09"
+        ],
+        [
+            "TRB%",
+            "5.00",
+            "4.51",
+            "5.40",
+            "5.00"
+        ],
+        [
+            "AST%",
+            "6.32",
+            "4.18",
+            "8.65",
+            "6.32"
+        ],
+        [
+            "TOV%",
+            "12.49",
+            "9.42",
+            "14.28",
+            "12.49"
+        ],
+        [
+            "STL%",
+            "3.09",
+            "2.35",
+            "3.62",
+            "3.09"
+        ],
+        [
+            "BLK%",
+            "0.28",
+            "0.70",
+            "0.00",
+            "0.28"
+        ],
+        [
+            "USG%",
+            "24.38",
+            "21.76",
+            "26.35",
+            "24.38"
+        ],
+        [
+            "Total S %",
+            "159.85",
+            "184.60",
+            "148.41",
+            "159.85"
+        ],
+        [
+            "PPR",
+            "-4.41",
+            "-2.86",
+            "-5.48",
+            "-4.41"
+        ],
+        [
+            "PPS",
+            "1.19",
+            "1.24",
+            "1.15",
+            "1.19"
+        ],
+        [
+            "ORtg",
+            "101.8",
+            "114.1",
+            "93.8",
+            "101.8"
+        ],
+        [
+            "DRtg",
+            "102.2",
+            "99.4",
+            "106.2",
+            "102.2"
+        ],
+        [
+            "PER",
+            "15.61",
+            "16.58",
+            "14.75",
+            "15.62"
+        ]
+    ],
+    "pageTitle": "Luther Head Player Profile, Sacramento Kings, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Luther_Head/Summary/176",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00004-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 23969755,
+    "recordOffset": 23925154,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{46864=Born: Nov 26, 1982 (32 years old), 45867=Draft Entry: 2005 NBA Draft}",
+    "TableContextTimeStampAfterTable": "{30877=* Since the 1946-1947 season, 100528=* International basketball history from 2011-2012, 121835=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 6 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] [ National ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "0.62 1.69 .370 0.59 0.75 .792 3.31 0.19 1.44 1.62 1.81 0.53 0.06 1.16 0.78 4.66 2008-09 * HOU 22 4 14.6 1.77 4.59 .386 0.64 1.73 .368 0.64 0.73 .875 2.90 0.14 1.09 1.23 1.59 0.27 0.05 0.68 0.73 4.82 2008-09 * MIA 10 0 17.6 1.60 4.30 .372 0.60 1.60 .375 0.50 0.80 .625 4.22 0.30 2.20 2.50 2.30 1.10 0.10 2.20 0.90 4.30 2009-10 IND 47 10 17.3 2.89 6.62 .437 0.79 2.23 .352 1.02 1.23 .828 3.87 0.13 1.57 1.70 1.53 0.38 0.19 1.13 1.15 7.60 2010-11 SAC 36 14 16.3 1.89 4.56 .415 0.69 1.78 .391 1.08 1.39 .780 3.97 0.44 1.22 1.67 1.94 0.28 0.25 1.19 0.89 5.56 CAREER \u00a0 348 82 22.4 2.95 6.97 .423 1.30 3.34 .388 0.98 1.27 .773 5.37 0.32 2.11 2.43 2.15 0.73 0.12 1.47 1.26 8.17 NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2005-06",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

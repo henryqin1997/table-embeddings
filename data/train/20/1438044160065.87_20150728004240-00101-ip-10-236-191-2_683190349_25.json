@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "logdate",
+            "webs"
+        ],
+        [
+            "Description",
+            "YYYYMM to generate statistics for",
+            "comma-separated list of webs to run stats on"
+        ],
+        [
+            "Default",
+            "current month",
+            "all accessible webs"
+        ]
+    ],
+    "pageTitle": "CommandAndCGIScripts < System < Wiki",
+    "title": "",
+    "url": "http://www.rockbox.org/wiki/System/CommandAndCGIScripts?sortcol=1;table=24;up=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044160065.87/warc/CC-MAIN-20150728004240-00101-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 683218047,
+    "recordOffset": 683190349,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Common parameters All the scripts accept a number of common parameters. The first two components of the URL after the script name are taken as the web and the topic, respectively. Standard URL parameters are: $ ../tools/mailnotify -q -nonews -nochanges -Main -System $ cd bin  tools script from the command line, you normally need to be cd'd to the =bin directory e.g.  When calling a not be URL-encoded. All parameters require a value, even if that is the empty string. Note that parameters passed on the command-line should $ save -topic MyWeb.MyTopic -user admin -action save -text \"New text of the topic\" $ cd /usr/local/foswiki/bin   Parameters are passed on the command line using '-name' - for example, www. nobody or bin directory on the perl path to run the scripts from the command line. To avoid issues with file permissions, run the scripts as the web server user such as must be have the  Command-line  You guest).  CGI environment  In the CGI environment parameters are passed to the scripts via the URL and URL parameters. Environment variables are also used to determine the user performing the action. If the environment is not set up, the default user is used (usually  General Information   in italics describes default behaviour if no value is given. required means the parameter is required, and has no default. text  Note that a",
+    "textAfterTable": "foswikioriginalquery The original query that was being made before a redirect for user confirmation was required. \u00a0 foswiki_redirect_cache Foswiki sometimes caches long lists of parameters that must survive over a sequence of browser redirects. This parameter identifies one of these caches. The parameter value is a \"magic number\" that uniquely idenitifies a file in the working/tmp directory. These files have a very short lifetime, and are destroyed when the cache is read. \u00a0 logout requests the LoginManager to log the current user out (this happens at the begining of the request so will terminate any other operation requested) \u00a0 refresh If the Foswiki page cache is in use, setting this parameter will invalidate the cache. Valid values are on and all. See PageCaching for more information on the page cache. \u00a0 response Used as part of the request validation process. \u00a0 skin Overrides the default skin path (see Skins) value of the SKIN preference",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

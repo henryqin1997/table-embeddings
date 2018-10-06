@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "Expression",
+            "address.phone LIKE '12%3'",
+            "asentence.word LIKE 'l_se'",
+            "aword.underscored LIKE '\\_%' ESCAPE '\\'",
+            "address.phone NOT LIKE '12%3'"
+        ],
+        [
+            "TRUE",
+            "'123' '12993'",
+            "'lose'",
+            "'_foo'",
+            "'1234'"
+        ],
+        [
+            "FALSE",
+            "'1234'",
+            "'loose'",
+            "'bar'",
+            "'123' '12993'"
+        ]
+    ],
+    "pageTitle": "Part\u00a0VI Persistence (The Java EE 6 Tutorial)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19798-01/821-1841/bnbpy/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990611.52/warc/CC-MAIN-20150728002310-00341-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 78986219,
+    "recordOffset": 78932802,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{244491=In this query, the results will be ordered by the pet owner\u2019s postal code from lowest to highest. That is, pets whose owner lives in the 10001 zip code will appear before pets whose owner lives in the 91000 zip code., 243964=In this query, the results will be ordered by the pet\u2019s birthday from highest to lowest. That is, pets born in December will appear before pets born in May.}",
+    "lastModified": "Thu, 24 Feb 2011 15:31:16 GMT",
+    "textBeforeTable": "Table\u00a020\u20131 Cascade Operations for Entities The javax.persistence.CascadeType enumerated type defines the cascade operations that are applied in the cascade element of the relationship annotations. Table\u00a020\u20131 lists the cascade operations for entities. Entities that use relationships often have dependencies on the existence of the other entity in the relationship. For example, a line item is part of an order; if the order is deleted, the line item also should be deleted. This is called a cascade delete relationship. Cascade Operations and Relationships Java Persistence query language and Criteria API queries often navigate across relationships. The direction of a relationship determines whether a query can navigate from one entity to another. For example, a query can navigate from LineItem to Product but cannot navigate in the opposite direction. For Order and LineItem, a query could navigate in both directions because these two entities have a bidirectional relationship. Queries and Relationship Direction In a unidirectional relationship, only one entity has a relationship field or property that refers to the other. For example, LineItem would have a relationship field that identifies Product, but Product would not have a relationship field or property for LineItem. In other words, LineItem knows about Product, but Product doesn\u2019t know which LineItem instances refer to it. Unidirectional Relationships For many-to-many bidirectional relationships, either side may be the owning side. For one-to-one bidirectional relationships, the owning side corresponds",
+    "textAfterTable": "If the parent entity is removed from the current persistence context, the related entity will also be removed.\u00a0 Cascade delete relationships are specified using the cascade=REMOVE element specification for @OneToOne and @OneToMany relationships. For example: @OneToMany(cascade=REMOVE, mappedBy=\"customer\") public Set<Order> getOrders() { return orders; } Orphan Removal in Relationships When a target entity in one-to-one or one-to-many relationship is removed from the relationship, it is often desirable to cascade the remove operation to the target entity. Such target entities are considered \u201corphans,\u201d and the orphanRemoval attribute can be used to specify that orphaned entities should be removed. For example, if an order has many line items and one of them is removed from the order, the removed line item is considered an orphan. If orphanRemoval is set to true, the line item entity will be deleted when the line item is removed from the order. The orphanRemoval attribute in @OneToMany and @oneToOne takes a Boolean value and is by default false. The following example will cascade the remove operation to the orphaned customer entity when it is removed from the relationship: @OneToMany(mappedBy=\"customer\", orphanRemoval=\"true\") public List<Order> getOrders() { ... } Embeddable Classes in Entities Embeddable classes are used to represent the state of an entity but don\u2019t have a persistent identity of their own, unlike entity classes. Instances of an embeddable class",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

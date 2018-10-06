@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Tag",
+            "",
+            ""
+        ],
+        [
+            "Description",
+            "Delete revisions from revision rev, including rev itself, to the end of the branch containing rev. None of the revisions to be deleted may have branches or locks. If any of the revisions to be deleted have symbolic names, and one specifies one of the :: syntaxes, then cvs will give an error and not delete any revisions. If you really want to delete both the symbolic names and the revisions, first delete the symbolic names with cvs tag -d, then run cvs admin -o. If one specifies the non-:: syntaxes, then cvs will delete the revisions but leave the symbolic names pointing to nonexistent revisions. This behavior is preserved for compatibility with previous versions of cvs, but because it isn\\(aqt very useful, in the future it may change to be like the :: case. Due to the way cvs handles branches rev cannot be specified symbolically if it is a branch. see node \u0091Magic branch numbers\\(aq in the CVS manual, for an explanation. Make sure that no-one has checked out a copy of the revision you outdate. Strange things will happen if he starts to edit it and tries to check it back in. For this reason, this option is not a good way to take back a bogus commit; commit a new revision undoing the bogus change instead (see node \u0091Merging two revisions\\(aq in the CVS manual).",
+            "-q"
+        ]
+    ],
+    "pageTitle": "cvs - Unix, Linux Command",
+    "title": "",
+    "url": "http://www.tutorialspoint.com/cgi-bin/printversion.cgi?tutorial=unix_commands&file=cvs.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00030-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 781927555,
+    "recordOffset": 781886281,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{512=One such format is month/day/year. This may confuse people who are accustomed to having the month and day in the other order; 1/4/96 is January 4, not April 1.}",
+    "textBeforeTable": "SYNOPSIS NAME cvs - Concurrent Versions System Advertisements cvs - Unix, Linux Command Copyright \u00a9 tutorialspoint.com",
+    "textAfterTable": "Structure Overall structure of CVS commands The overall format of all cvs commands is: Tag Description cvs [ cvs_options ] cvs_command [ command_options ] [ command_args ] cvs The name of the cvs program. cvs_options Some options that affect all sub-commands of cvs. These are described below. cvs_command One of several different sub-commands. Some of the commands have aliases that can be used instead; those aliases are noted in the reference manual for that command. There are only two situations where you may omit cvs_command: cvs -H elicits a list of available commands, and cvs -v displays version information on cvs itself.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

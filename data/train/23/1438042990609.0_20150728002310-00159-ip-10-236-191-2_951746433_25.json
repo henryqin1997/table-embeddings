@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "docids",
+            "emailids",
+            "permission",
+            "notify",
+            "message"
+        ],
+        [
+            "Value",
+            "string",
+            "string",
+            "string - (readonly|readwrite|coowner)",
+            "boolean - (true|false)",
+            "string"
+        ],
+        [
+            "Description",
+            "Mandatory. Id of the document or file to be shared",
+            "Mandatory. mail id of the users to share",
+            "Mandatory. file shared to the user with the specified permission",
+            "Optional. notifies the shared user when file or document is shared via mail",
+            "Optional. message to the shared user via mail"
+        ]
+    ],
+    "pageTitle": "Zoho Docs API Help",
+    "title": "",
+    "url": "https://www.zoho.com/docs/zoho-docs-api.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00159-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 951762399,
+    "recordOffset": 951746433,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{100189=\u00a9 2015, ZOHO Corp. ,}",
+    "lastModified": "Mon, 27 Apr 2015 06:05:51 GMT",
+    "textBeforeTable": "Parameters POST Method https://accounts.zoho.com/apiauthtoken/nb/create URL Structure Generates the AuthToken. Description API Mode Browser Mode API Mode To generate AuthToken, you need to send an request to Zoho Accounts as described below. AuthToken can be generated in two ways: Generate AuthToken To use Zoho Docs API's, you will require Zoho Docs Authentication Token from Zoho Accounts. Please make sure that you have access to retrieve or extract the data from Zoho Docs API service. Authentication Token Authorize Request Editor/Remote API Data API Zoho Docs offers the following APIs: Zoho Docs APIs can be integrated into an existing document system extending the range of functionality. Partners can build their own applications and leverage the collaboration and document editing capabilities using integrated Zoho services. The Zoho Docs APIs provide a means for document storage and document editing so that partners can focus on their core applications and services rather than build and manage a storage solution. The Zoho Docs APIs provide partners and organizations with a more tightly integrated means of interacting with Zoho's applications for secure storage and document editing functionalities. Zoho Docs APIs \u00a0 Errors Codes Tags Publish Share Folders Folders File Revisions",
+    "textAfterTable": "Browser Mode Description Generates the AuthToken. URL Structure https://accounts.zoho.com/apiauthtoken/create Method GET Parameters Parameter Value Description SCOPE string - (ZohoPC/docsapi) Mandatory. Specify the value as ZohoPC/docsapi DISPLAY_NAME string - (ZOHODOCS) Mandatory. Specify your user app name Returns Returns the generated AuthToken for the specified user. Sample Response for AuthToken # #Tue Aug 27 16:26:02 IST 2013 AUTHTOKEN=f46973ff35f9778a940a89fa7a48cd7f RESULT=TRUE Manage AuthToken You can view, delete and regenerate the Auth Token generated for your account from the 'My Zoho Account' Page. \u00a0 Log into Zoho Docs Open [Username] > My Zoho Account In the My Zoho Account page, click Settings > Active Authtokens In this page, you can also Remove or Regenerate Auth Tokens. Note: Removing an Auth Token will delete the token permanently. If you regenerate Auth Token, update your program with the new token. \u00a0 Upload Files /upload Description Uploads a file using POST semantics. URL Structure https://apidocs.zoho.com/files/v1/upload?authtoken=AuthToken&scope=docsapi Method POST Parameters Parameter Value Description filename string Mandatory. Name of the file to be uploaded",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

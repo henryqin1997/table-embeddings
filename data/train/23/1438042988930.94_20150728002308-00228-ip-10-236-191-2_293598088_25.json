@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Test",
+            "",
+            "mpfLocalNoBuffer",
+            "mpfLocalBuffer100",
+            "mpfRemoteNoBuffer",
+            "mpfRemoteBuffer100",
+            "mpfRemoteBuffer1000"
+        ],
+        [
+            "msgPerSec",
+            "",
+            "3705",
+            "7966",
+            "331",
+            "1440",
+            "2100"
+        ],
+        [
+            "tcpPerSec",
+            "",
+            "-",
+            "-",
+            "331",
+            "14",
+            "16"
+        ],
+        [
+            "client idle",
+            "",
+            "0%",
+            "0%",
+            "52%",
+            "52%",
+            "31%"
+        ],
+        [
+            "server idle",
+            "",
+            "-",
+            "-",
+            "40%",
+            "43%",
+            "18%"
+        ]
+    ],
+    "pageTitle": "",
+    "title": "",
+    "url": "http://www.aps.anl.gov/epics/modules/bus/mpf/R1-2/mpf.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00228-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 293624143,
+    "recordOffset": 293598088,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "\u00a0 Studying this example should give a good idea of how MPF works. In particular look at the following files because they give examples of things developers are likely to do. The first column of each row is a controller to set the scan rate for that row. The last 8 rows are also string records for serialServer. One for each port. The next 8 rows are the string records for serialServer. One for each port. The next four row are the string records for the serverChar8array The first four rows are the ai records. The medm display consists of the following: 16 sets of records like the previous set except that they send messages to the serialServers. There are two sets for each of the 8 octal/serial ports. } The calc record\u00a0 counts from 0 to 1000 and links to a stringout record which reads the value of the calc record and forward links to a\u00a0 stringin record.\u00a0 The stringin record reads the value from the stringout record and sends it to serverChar8array. The reply from serverChar8array is put into the val field. \u00a0\u00a0\u00a0 field(INP, \"#C1 S0 @Char8Array,Char8Array:StringOut$(ind)\") \u00a0\u00a0\u00a0 field(DTYP,\"MPF stringin\") { record(stringin,\"Char8Array:StringIn$(ind)\") } \u00a0\u00a0\u00a0 field(FLNK,\"Char8Array:StringIn$(ind)\") \u00a0\u00a0\u00a0 field(OMSL,\"closed_loop\") \u00a0\u00a0\u00a0 field(DOL,\"Char8Array:calc$(ind)\") { record(stringout,\"Char8Array:solnk$(ind)\") } \u00a0\u00a0\u00a0 field(INPA,\"Char8Array:calc$(ind)\") \u00a0\u00a0\u00a0 field(FLNK,\"Char8Array:solnk$(ind)\") \u00a0\u00a0\u00a0 field(CALC,\"a=1000?0:a+1\") { record(calc,\"Char8Array:calc$(ind)\")  Four sets of records which communicate with serverChar8array are present.\u00a0 Each set consists of the following records:  Four ai records which use DevMpfInt32Test. this",
+    "textAfterTable": "epics applications mpfLib - Everthing needed by the message passing facility. mpfDevLib - DevMpf and devStringMpf devAiIp330Scan.o server applications mpfLib - Everthing needed by the message passing facility ipLib - IP support plus generic serial and gpib support. mpfServerLib - Serial and Gpib servers GpibGsTi9914.o OctalUART.o ip330ScanLib - ip330Scan.o and ip330ScanServer.o complete list GpibGsTi9914.o - Greensprings IP Gpib support GpibHideosLocal.o - Local interface for drvGbib GpibHideosRemote.o - Remote interface for drvGpib IndustryPackMVME162.o - Industry Pack Carrier support for mv162. OctalUART.o - GreenSprings Octal Uart support clientChar8Array.o v- Client test clientInt32.o - Client test devAiIp330Scan.o - Acromag IP 330 scanning support iocCore - epics base iocCore for use by tests. ip330ScanLib - ip330Scan.o and ip330ScanServer.o ipLib - SerialPort.o serialPortSniff.o\u00a0 Gpib.o IndustryPackModule.o IndustryPackCarrier.o mpfDevLib - DevMpf.o devStringMpf.o mpfDevTest - Library for tests. mpfKernelLib - Message.o localRouter.o RMRClient.o RMRServer.o Tcp.o TcpBadProto.o mpfLib - mpfUtilLib mpfKernelLib mpfMessageLib mpfMessageLib - Code for all message types mpfServerLib - serialServer.o gpibServer.o mpfServerTest - Library for tests. mpfTest - Library for tests. mpfUtilLib - FreeList.o DLList.o WatchDog.o DataFreeList.o mpf/dbd The following provide device definitions for use by epics applications: devAiIp330Scan.dbd - Acromag IP330 scan support devMpf.dbd - Generic stringin support MPF Directory Structure Components which are of interest in the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

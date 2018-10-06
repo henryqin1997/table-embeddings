@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Primitive",
+            "byte",
+            "short",
+            "int",
+            "long",
+            "float",
+            "double"
+        ],
+        [
+            "java.lang Class",
+            "Byte",
+            "Short",
+            "Integer",
+            "Long",
+            "Float",
+            "Double"
+        ],
+        [
+            "Conversion to the Primitive Type",
+            "byteValue()",
+            "shortValue()",
+            "intValue()",
+            "longValue()",
+            "floatValue()",
+            "doubleValue()"
+        ],
+        [
+            "Returns",
+            "byte",
+            "short",
+            "int",
+            "long",
+            "float",
+            "double"
+        ]
+    ],
+    "pageTitle": "Lesson 13:Introduction to Built-In Classes",
+    "title": "",
+    "url": "http://www.functionx.com/java/Lesson13.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00176-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 460891724,
+    "recordOffset": 460883522,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sun, 05 Apr 2015 00:37:20 GMT",
+    "textBeforeTable": "Each of these classes is based on the Number class that is derived from the Object class. All these classes are part of the java.lang package. Each Number-based class provides a method that can be used to convert its value to the primitive equivalent. These methods are: Double double Float float Long long Integer int Short short Byte byte Equivalent java.lang Class Primitive Java has an extensive support for numbers. To make it possible, a class named Number was derived from Object. Based on this Number class, the following classes were derived: Numeric Values To support Boolean values, a class named Boolean was derived from the Object class. Boolean Values To support characters, a class named Character was derived from the Object class. The Character class is defined in the java.lang package. Character Values To provide an enhanced support for primitive types, a class was created for each of",
+    "textAfterTable": "Each Number-based classes is equipped with two constants named MIN_VALUE and MAX_VALUE. The MAX_VALUE constant represents the highest value that a variable declared from that class can bear. The MIN_VALUE constant represents the lowest value that a variable declared from that class can bear. Each Number-based class overrides the toString() and the equals() methods of their ancestor the Object class. Te overridden toString() method makes it possible to use a variable declared from their class as a string. The equals() method makes it possible to compare two variables declared and initialized from the same class. Parsing a String So far in previous lessons, to retrieve a value from a primitive type, we were using the Scanner class. Each Number-based class is equipped with a method that can be used to retrieve a value from the user and convert it to the value based on the class.\u00a0 These methods are: Primitive java.lang Class Method Parser Returns byte Byte parseByte(String str) byte short Short parseShort(String str) short int Integer parseInteger(String str) int long Long parseLong(String str) long float Float parseFloat(String str) float",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

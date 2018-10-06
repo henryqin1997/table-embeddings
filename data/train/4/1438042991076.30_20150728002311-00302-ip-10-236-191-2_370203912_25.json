@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Parameters",
+            "CIM server",
+            "CIM server security protocol",
+            "D_S_TOV",
+            "E_D_TOV",
+            "R_A_TOV",
+            "Timeout period to invoke fctrace",
+            "Number of frame sent by the fcping feature",
+            "Remote capture connection protocol",
+            "Remote capture connection mode",
+            "Local capture frame limits",
+            "FC ID allocation mode",
+            "Loop monitoring",
+            "Interop mode"
+        ],
+        [
+            "Default",
+            "Disabled",
+            "HTTP",
+            "5,000 milliseconds",
+            "2,000 milliseconds",
+            "10,000 milliseconds",
+            "5 seconds",
+            "5 frames",
+            "TCP",
+            "Passive",
+            "10 frames",
+            "Auto mode",
+            "Disabled",
+            "Disabled"
+        ]
+    ],
+    "pageTitle": "Cisco Nexus 7000 Series NX-OS SAN Switching Configuration Guide - Advanced Fibre Channel Features [Cisco Nexus 7000 Series Switches] - Cisco",
+    "title": "Table 3 Default Settings for Advanced Features",
+    "url": "http://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/nx-os/san_switching/configuration_guide/b_Cisco_Nexus_7000_NX-OS_SAN_Switching_Configuration_Guide/b_Cisco_Nexus_7000_NX-OS_SAN_Switching_Configuration_Guide_chapter_01101.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991076.30/warc/CC-MAIN-20150728002311-00302-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 370224307,
+    "recordOffset": 370203912,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Cisco SAN switches support three network address authority (NAA) address formats. (see the following table). The world wide name (WWN) in the switch is equivalent to the Ethernet MAC address. As with the MAC address, you must uniquely associate the WWN to a single device. The principal switch selection and the allocation of domain IDs rely on the WWN. World Wide Names 10\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a05000 ms\u00a0\u00a0\u00a05000 ms\u00a0\u00a0\u00a03000 ms\u00a0\u00a0\u00a010000 ms ------------------------------------------------- vsan no.\u00a0\u00a0F_S_TOV\u00a0\u00a0\u00a0D_S_TOV\u00a0\u00a0\u00a0E_D_TOV\u00a0\u00a0\u00a0R_A_TOV switch# show fctimer vsan 10  The following example displays the configured TOV for VSAN 10:      The F_S_TOV constant, though not configured, is displayed in the output of the show fctimer command.  Note   5000 ms\u00a0\u00a0\u00a05000 ms\u00a0\u00a0\u00a02000 ms\u00a0\u00a0\u00a010000 ms ---------------------------------------- F_S_TOV\u00a0\u00a0\u00a0D_S_TOV\u00a0\u00a0\u00a0E_D_TOV\u00a0\u00a0\u00a0R_A_TOV switch# show fctimer  Use the show fctimer command to display the configured fctimer values. The following example displays the configured global TOVs:    Verifying Configured fctimer Values            The number of pending fctimer configuration operations cannot be more than 15. After 15 operations, you must commit or abort the pending configurations before performing any more operations.",
+    "textAfterTable": "\u00a0\u00a0\u00a01\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a064\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a048 ( 75%)\u00a0\u00a0\u00a0\u00a0\u00a0\u00a016\u00a0\u00a0\u00a0\u00a0NONE \u00a02,5\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0524288\u00a0\u00a0\u00a0\u00a0442368 ( 84%)\u00a0\u00a0\u00a073728\u00a0\u00a0\u00a0\u00a0NONE This example shows how to display the information for block ID 51: switch# show wwn status block-id 51 WWNs in this block: 21:00:ac:16:5e:52:00:03 to 21:ff:ac:16:5e:52:00:03 Num. of WWNs:: Configured: 256 Allocated:\u00a0\u00a0\u00a0\u00a00 Available: 256 Block Allocation Status: FREE This example shows how to display the WWN for a specific switch: switch# show wwn switch Switch WWN is 20:00:ac:16:5e:52:00:00 Link Initialization WWN Usage Exchange Link Protocol (ELP) and Exchange Fabric Protocol (EFP) use WWNs during link initialization. ELPs and EFPs both use the VSAN WWN by default during link initialization. However, the ELP usage changes based on the peer switch\u2019s usage: If the peer switch ELP uses the switch WWN, then the local switch also uses the switch WWN. If the peer switch ELP uses the VSAN WWN, then the local switch also uses the VSAN WWN. Configuring a Secondary MAC Address You can allocate secondary MAC addresses. SUMMARY STEPS 1.\u00a0\u00a0\u00a0 configure terminal 2.\u00a0\u00a0\u00a0 wwn secondary-mac wwn-id",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

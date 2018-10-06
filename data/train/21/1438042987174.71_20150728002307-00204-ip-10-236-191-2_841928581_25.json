@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Round",
+            "R32",
+            "R16",
+            "Q",
+            "S"
+        ],
+        [
+            "Result",
+            "Win",
+            "Win",
+            "Win",
+            "Loss"
+        ],
+        [
+            "Opponent",
+            "Shelby Rogers (USA)",
+            "[6] Sloane Stephens (USA)",
+            "[Q] Urszula Radwanska (POL)",
+            "[3] Venus Williams (USA)"
+        ],
+        [
+            "Rank",
+            "72",
+            "35",
+            "179",
+            "19"
+        ],
+        [
+            "Score",
+            "1-6 6-4 6-3",
+            "1-6 6-4 6-1",
+            "2-6 6-2 6-1",
+            "6-0 6-3"
+        ]
+    ],
+    "pageTitle": "Players | WTA Tennis English",
+    "title": "",
+    "url": "http://www.wtatennis.com/players/player/16533/title/lauren-davis",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00204-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 841958735,
+    "recordOffset": 841928581,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{1606=Grand Slam // GREAT BRITAIN // 29-Jun-2015 // $20,458,117 // Grass (Outdoor) // Draw: 128M/128Q/64D // Rank: - // Seed/Entry: /MD}",
+    "TableContextTimeStampAfterTable": "{41311=WTA // AUSTRALIA // 11-Jan-2015 // $226,750 // Hard (Outdoor) // Draw: 32M/32Q/16D // Rank: 52 // Seed/Entry: /MD, 42501=WTA // NEW ZEALAND // 05-Jan-2015 // $226,750 // Hard (Outdoor) // Draw: 32M/32Q/16D // Rank: 54 // Seed/Entry: /MD, 26212=Grand Slam // FRANCE // 24-May-2015 // $15,980,135 // Clay (Outdoor) // Draw: 128M/128Q/64D // Rank: - // Seed/Entry: /MD, 34769=WTA // USA // 24-Mar-2015 // $5,219,780 // Hard (Outdoor) // Draw: 128M/64Q/32D // Rank: 61 // Seed/Entry: /MD, 30069=WTA // SPAIN // 02-May-2015 // $4,059,850 // Clay (Outdoor) // Draw: 64M/32Q/32D // Rank: 60 // Seed/Entry: /MD, 23244=WTA // GREAT BRITAIN // 15-Jun-2015 // $665,900 // Grass (Outdoor) // Draw: 64M/32Q/16D // Rank: 63 // Seed/Entry: /MD, 35976=WTA // USA // 11-Mar-2015 // $5,219,780 // Hard (Outdoor) // Draw: 128M/64Q/32D // Rank: 55 // Seed/Entry: /MD, 37468=WTA // MEXICO // 02-Mar-2015 // $426,750 // Hard (Outdoor) // Draw: 32M/32Q/16D // Rank: 54 // Seed/Entry: /MD, 21480=WTA // GREAT BRITAIN // 21-Jun-2015 // $665,900 // Grass (Outdoor) // Draw: 64M/32Q/16D // Rank: 79 // Seed/Entry: /Q, 31601=Fed Cup // ITALY // 18-Apr-2015 // $0 // Clay (Outdoor) // Draw: 8M/0Q/2D // Rank: 57 // Seed/Entry: /MD, 24436=WTA // GREAT BRITAIN // 08-Jun-2015 // $226,750 // Grass (Outdoor) // Draw: 32M/32Q/16D // Rank: 63 // Seed/Entry: /MD, 38642=WTA // MEXICO // 23-Feb-2015 // $226,750 // Hard (Outdoor) // Draw: 32M/32Q/16D // Rank: - // Seed/Entry: /MD, 32765=WTA // USA // 06-Apr-2015 // $665,900 // Clay (Outdoor) // Draw: 64M/32Q/16D // Rank: 66 // Seed/Entry: /MD, 39837=Grand Slam // AUSTRALIA // 19-Jan-2015 // $15,561,973 // Hard (Outdoor) // Draw: 128M/128Q/64D // Rank: 53 // Seed/Entry: /MD, 28604=WTA // ITALY // 11-May-2015 // $2,428,490 // Clay (Outdoor) // Draw: 64M/32Q/32D // Rank: 57 // Seed/Entry: /MD, 27422=WTA // FRANCE // 17-May-2015 // $226,750 // Clay (Outdoor) // Draw: 32M/32Q/16D // Rank: 64 // Seed/Entry: /MD}",
+    "textBeforeTable": "Nanchang, CHINA. Jul 27 - Aug 02 Jiangxi Women's Tennis Open \">RTS http://www.wtatennis.com/road-singles-leaderboard WTA TV http://www.wtatennis.com/wtatv LIVE SCORES http://www.protennislive.com/LSHD/main.html?year=2015&amp;wkno=99&amp;eventid=&amp;tour=2&amp;lang=en&amp;ref=http://www.wtatennis.com NANCHANG FREE LIVE STREAMING http://www.wtatennis.com/news/article/4890487/title/watch-free-live-streaming-from-nanchang \u4e2d\u6587 Espa\u00f1ol English If you continue using our website, we will assume that you consent to the cookies we set. To find out more about cookies, please see our Privacy Policy We use cookies on this website...",
+    "textAfterTable": "ballA: 0, ballB: 0, ptA: 0, ptB: 0 } var int_42071 = setInterval(function() { $.ajax({ type: 'get', url: match_42071.url, dataType: 'xml', cache: false, success: function(data) { $(data).find('stats').each(function() { var this_ = $(this); match_42071.info = this_.find('MatchInfo'); match_42071.player1_set1 = (match_42071.info.attr('s1A') != '') ? match_42071.info.attr('s1A') : ''; match_42071.player1_set2 = (match_42071.info.attr('s2A') != '') ? match_42071.info.attr('s2A') : ''; match_42071.player1_set3 = (match_42071.info.attr('s3A') != '') ? match_42071.info.attr('s3A') : ''; match_42071.player2_set1 = (match_42071.info.attr('s1B') != '') ? match_42071.info.attr('s1B') : ''; match_42071.player2_set2 = (match_42071.info.attr('s2B') != '') ? match_42071.info.attr('s2B') : ''; match_42071.player2_set3 = (match_42071.info.attr('s3B') != '') ? match_42071.info.attr('s3B') : ''; match_42071.tb1 = match_42071.info.attr('tb1'); match_42071.tb2 = match_42071.info.attr('tb2'); match_42071.tb3 = match_42071.info.attr('tb3'); match_42071.ballA = match_42071.info.attr('ballA'); match_42071.ballB = match_42071.info.attr('ballB'); match_42071.ptA = match_42071.info.attr('ptA'); match_42071.ptB = match_42071.info.attr('ptB'); // apply to elements $('.42071 .ptA').text(match_42071.ptA); $('.42071 .ptB').text(match_42071.ptB); $('.42071 .p1s1 span').text(match_42071.player1_set1); $('.42071 .p1s2 span').text(match_42071.player1_set2); $('.42071 .p1s3 span').text(match_42071.player1_set3); $('.42071 .p2s1 span').text(match_42071.player2_set1); $('.42071 .p2s2 span').text(match_42071.player2_set2); $('.42071 .p2s3 span').text(match_42071.player2_set3); //$('.liveScoreBox sup').text(''); if (match_42071.player1_set1 > match_42071.player2_set1) { match_42071.player_set1_won = 1; $('.42071 .p1s1 span').addClass('pink'); $('.42071 .p2s1 span').removeClass('pink'); if (match_42071.tb1 != '') { $('.42071 .p2s1 sup').text(' ' + match_42071.tb1); if (parseInt(match_42071.tb1) >= 6) { $('.42071 .p1s1 sup').text(' ' + (parseInt(match_42071.tb1) + 2)); } else { $('.42071 .p1s1 sup').text('7'); } } } else if (match_42071.player1_set1 < match_42071.player2_set1) { match_42071.player_set1_won = 2; $('.42071 .p2s1 span').addClass('pink'); $('.42071 .p1s1 span').removeClass('pink'); if (match_42071.tb1 != '') { $('.42071 .p1s1 sup').text(' ' + match_42071.tb1); if (parseInt(match_42071.tb1) >= 6) { $('.42071 .p2s1 sup').text(' ' + (parseInt(match_42071.tb1) + 2)); } else { $('.42071 .p2s1 sup').text('7'); } } } if (match_42071.player1_set2 > match_42071.player2_set2) { match_42071.player_set2_won = 1; $('.42071 .p1s2 span').addClass('pink'); $('.42071 .p2s2 span').removeClass('pink'); if (match_42071.tb2 !=",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

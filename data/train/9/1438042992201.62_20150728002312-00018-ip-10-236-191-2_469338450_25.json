@@ -1,0 +1,66 @@
+{
+    "relation": [
+        [
+            "Date",
+            "24 Nov 1998",
+            "5 Apr 2001",
+            "6 Dec 2006",
+            "26 Sep 2008",
+            "26 Sep 2012",
+            "7 Mar 2013",
+            "12 May 2014",
+            "9 Oct 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "AS",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: LUCENT TECHNOLOGIES INC., NEW JERSEY Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:ETZEL, MARK H.;FRANK, ROBERT JOHN;HEER, DANIEL NELSON;AND OTHERS;REEL/FRAME:009626/0556;SIGNING DATES FROM 19980910 TO 19981113",
+            "Owner name: THE CHASE MANHATTAN BANK, AS COLLATERAL AGENT, TEX Free format text: CONDITIONAL ASSIGNMENT OF AND SECURITY INTEREST IN PATENT RIGHTS;ASSIGNOR:LUCENT TECHNOLOGIES INC. (DE CORPORATION);REEL/FRAME:011722/0048 Effective date: 20010222",
+            "Owner name: LUCENT TECHNOLOGIES INC., NEW JERSEY Free format text: TERMINATION AND RELEASE OF SECURITY INTEREST IN PATENT RIGHTS;ASSIGNOR:JPMORGAN CHASE BANK, N.A. (FORMERLY KNOWN AS THE CHASE MANHATTAN BANK), AS ADMINISTRATIVE AGENT;REEL/FRAME:018590/0287 Effective date: 20061130",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Free format text: SECURITY INTEREST;ASSIGNOR:ALCATEL-LUCENT USA INC.;REEL/FRAME:030510/0627 Effective date: 20130130 Owner name: CREDIT SUISSE AG, NEW YORK",
+            "Owner name: ALCATEL-LUCENT USA INC., NEW JERSEY Effective date: 20081101 Free format text: MERGER;ASSIGNOR:LUCENT TECHNOLOGIES INC.;REEL/FRAME:032874/0823",
+            "Owner name: ALCATEL-LUCENT USA INC., NEW JERSEY Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:CREDIT SUISSE AG;REEL/FRAME:033950/0001 Effective date: 20140819"
+        ]
+    ],
+    "pageTitle": "Patent US6876744 - Methods and apparatus for enhanced CMEA including a CMEA iteration preceded ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.co.uk/patents/US6876744",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992201.62/warc/CC-MAIN-20150728002312-00018-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 469364887,
+    "recordOffset": 469338450,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6169=FIG. 8 is a diagram showing a wireless telephone system 800 including a handset 900 and a base station 1000. Both the handset 900 and the base station 1000 are equipped to perform message transmission and processing according to the present invention. The telephone handset 900 includes a transceiver 902, an input/output (I/O) interface 904, an encryption/decryption processor 906, and a key generator 908. The key generator 908 receives and employs stored secret data for key generation. Stored secret data is preferably stored in nonvolatile memory 910 such as an EEPROM or a Flash memory. The key generator also generates secret values K0-K3 used to produce secret offsets. The key generator may be designed to generate secret values K0-K3 using any of a number of techniques commonly known in the art. A set of secret values K0-K3 is preferably generated for each wireless telephone call, and the values K0-K3 are preferably held constant throughout the call. The key generator 908 stores the generated keys and secret values K0-K3 in memory 912. The encryption/decryption processor also includes memory 914 for storage of keys received from the key generator 908, an initialization value used in production of secret offsets, ciphertext message octets, and a static tbox table which may be generated and used if it is desired to implement the tbox function as a static table. The telephone handset 900 also includes a message generator 916, which generates messages to be encrypted by the encryption/decryption processor 906 and transmitted by the transceiver 902.}",
+    "TableContextTimeStampAfterTable": "{28310=This application claims the benefit of U.S. Provisional Application Ser. No. 60/053,412, filed Jul. 22, 1997, and U.S. Provisional Application Ser. No. 60/054,018, filed Jul. 29, 1997., 146984=Depending on speed requirements and memory constraints, the handset 900 or the base station 1000 may be designed to implement the tbox as a function or as a static table. Implementation of tbox as a static table requires increased memory but provides greater speed., 33416=Enhancements to the CMEA function exist, disclosed in our patent application Ser. No. 09/059,107, now issued patent U.S. Pat. No. 6,266,411, entitled \u201cMethods and Apparatus for Multiple-Iteration filed on Apr. 13, 1998, and our patent application Ser. No. PCT/US98/07404, entitled \u201cMethods and Apparatus For Enhanced Security Expansion of a Secret Key Into a Lookup Table\u201d filed on Apr. 13, 1998. These enhancements provide significantly increased security to the CMEA process. However, additional enhancements would provide further increased security.}",
+    "textBeforeTable": "Patent Citations While the present invention is disclosed in the context of a presently preferred embodiment, it will be recognized that a wide variety of implementations may be employed by persons of ordinary skill in the art consistent with the above discussion and the claims which follow below. The above-described enhancements to the CMEA process, while substantially increasing security, do not substantially increase processing or system resources, and are therefore well suited to use in an environment such as a wireless telephone system. Mobile units and base stations in such systems often have limited processing power. Depending on speed requirements and memory constraints, the handset 900 or the base station 1000 may be designed to implement the tbox as a function or as a static table. Implementation of tbox as a static table requires increased memory but provides greater speed. , for encryption and decryption. The base station 1000 includes a transceiver 1002, I/O interface 1004, encryption/decryption processor 1006, key generator 1008, nonvolatile memory 1010, memory 1012, memory 1014, and message generator 1014. These components are similar to corresponding components of the handset 900, but are configured to implement the reverse ECMEA process. Thus, a message encrypted by the handset 900 is decrypted by the base station 1000, and a message encrypted by the base station 1000 is decrypted by the handset 900. FIG. 5 When an encrypted message is received by",
+    "textAfterTable": "U.S. Classification 380/28, 380/281, 380/247 International Classification H04L9/06, H04L29/06, H04W12/02, H04W12/00 Cooperative Classification H04L9/0618, H04L63/0428, H04L2209/80, H04W12/02 European Classification H04L63/04B, H04W12/02, H04L9/06 Legal Events Date Code Event Description 24 Nov 1998 AS Assignment Owner name: LUCENT TECHNOLOGIES INC., NEW JERSEY Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:ETZEL, MARK H.;FRANK, ROBERT JOHN;HEER, DANIEL NELSON;AND OTHERS;REEL/FRAME:009626/0556;SIGNING DATES FROM 19980910 TO 19981113 5 Apr 2001 AS Assignment Owner name: THE CHASE MANHATTAN BANK, AS COLLATERAL AGENT, TEX Free format text: CONDITIONAL ASSIGNMENT OF AND SECURITY INTEREST IN PATENT RIGHTS;ASSIGNOR:LUCENT TECHNOLOGIES INC. (DE CORPORATION);REEL/FRAME:011722/0048 Effective date: 20010222 6 Dec 2006 AS Assignment Owner name: LUCENT",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

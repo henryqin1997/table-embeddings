@@ -1,0 +1,99 @@
+{
+    "relation": [
+        [
+            "Uses Rule",
+            "",
+            "",
+            "1",
+            "1"
+        ],
+        [
+            "Line",
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        [
+            "Line Type",
+            "Expense",
+            "Liability",
+            "AP",
+            "AR"
+        ],
+        [
+            "Legal Entity",
+            "InFusion Farms",
+            "InFusion Farms",
+            "InFusion Farms",
+            "InFusion Farms"
+        ],
+        [
+            "CO",
+            "3100",
+            "3100",
+            "3100",
+            "3100"
+        ],
+        [
+            "CC",
+            "100",
+            "500",
+            "100",
+            "500"
+        ],
+        [
+            "PROD",
+            "1200",
+            "1300",
+            "1200",
+            "1300"
+        ],
+        [
+            "ACCT",
+            "52330",
+            "40118",
+            "21010",
+            "13010"
+        ],
+        [
+            "IC",
+            "0000",
+            "0000",
+            "0000",
+            "0000"
+        ],
+        [
+            "Debit",
+            "150",
+            "",
+            "",
+            "150"
+        ],
+        [
+            "Credit",
+            "",
+            "150",
+            "150",
+            ""
+        ]
+    ],
+    "pageTitle": "Oracle Fusion Accounting Hub Implementation Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E25178_01/fusionapps.1111/e20374/F484501AN2545D.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987228.91/warc/CC-MAIN-20150728002307-00216-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74226287,
+    "recordOffset": 74211083,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{55596=1000, 66163=52340, 75202=1300, 7837=3200- 130- 1200- 41112- 0000, 75515=52330, 6566=3100- 100- 0000- 21020- 4000, 8072=4000- 110- 0000- 21020- 3100, 47633=3000- 100- 0000- 21011- 4000, 6857=3100- 100- 0000- 21011- 4000, 77433=1000, 9000, 67671=1000 - 000 - 0000 - 13030 - 0000, 34884=InFusion 1000, USA Chart of Accounts, 52899=21012, 65817=52345, 9298=5000- 120- 1300- 52345- 0000, 67972=1000 - 000 - 0000 - 21020 - 0000, 5414=4000- 100- 1200- 41111- 0000, 67615=1000 - 000 - 0000 - 21030 - 0000, 8363=4000- 110- 0000- 21013- 3100, 54077=21011, 68028=1000 - 000 - 0000 - 13020 - 0000, 6909=3100- 100- 0000- 52330- 0000, 27229=1400, 68976=1000 - 000 - 0000 - 21050 - 0000, 48111=3000- 100- 1200- 52330- 0000, 15518=21020, 49275=5000- 100- 0000- 21010- 4000, 51721=21013, 9876=3100- 100- 1200- 52330- 0000, 7785=3200- 130- 0000- 21012- 5000, 49514=4000- 110- 1200- 41111- 0000, 62484=21050, 49753=5000- 100- 1200- 52330- 0000, 69032=1000 - 000 - 0000 - 13050 - 0000, 76677=1000 - 000 - 0000 - 13010 - 0000, 75543=1200, 76621=1000 - 000 - 0000 - 21010 - 0000, 6279=5000- 120- 0000- 21020- 3200, 50543=21014, 73264=21010}",
+    "lastModified": "Thu, 20 Sep 2012 17:33:05 GMT",
+    "textBeforeTable": "Journal after Balancing Journal Balancing 150 \u00a0 0000 40118 1300 500 4000 InFusion Textiles Liability 2 \u00a0 150 0000 52330 1200 100 3100 InFusion Farms Expense 1 Credit Debit IC ACCT PROD CC CO Legal Entity Line Type Line before balancing.\" cellspacing=\"0\" cellpadding=\"4\" border=\"1\" width=\"100%\"> Transaction Type Category Source AP Account AR Account Chart of Accounts Rule Number accounts rule.\" cellspacing=\"0\" cellpadding=\"4\" border=\"1\" width=\"100%\">",
+    "textAfterTable": "Legal Entity and Chart of Accounts Rules In this example the legal Entity InFusion Textiles intercompany manufacturing activities are tracked separately from its non-manufacturing activities. In order to achieve this legal entity level rules are defined specifically between the legal entity InFusion Textiles and the two manufacturing legal entities, InFusion Products (East) and InFusion Products (West). A chart of accounts rule is created to cover all other intercompany activities. Setup InFusion USA Chart of Accounts Segment Qualifier Primary Balancing Segment Second Balancing Segment Third Balancing Segment Account Intercompany Segment Segment Name Company Cost Center Product Account Intercompany Ledger, Legal Entity, Primary Balancing Segment Value Assignments Ledger Legal",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

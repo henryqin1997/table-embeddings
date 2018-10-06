@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "a",
+            "239",
+            "240",
+            "241",
+            "242",
+            "",
+            "243",
+            "244",
+            "245"
+        ],
+        [
+            "b",
+            "239",
+            "240",
+            "241",
+            "",
+            "242",
+            "243",
+            "244",
+            "245"
+        ],
+        [
+            "class AppCache(object):",
+            "for model in models:",
+            "# Store as 'name: model' pair in a dictionary",
+            "# in the app_models dictionary",
+            "model_name = model._meta. object_name.lower()",
+            "model_name = model._meta. model_name",
+            "model_dict = self.app_models.setdefault(app_label, SortedDict())",
+            "if model_name in model_dict:",
+            "# The same model may be imported via different paths (e.g."
+        ]
+    ],
+    "pageTitle": "0001-Fixed-19689-Deprecated-meta-s-module_name-in-favor-o.patch on Ticket #19689 \u2013 Attachment \u2013 Django",
+    "title": "",
+    "url": "https://code.djangoproject.com/attachment/ticket/19689/0001-Fixed-19689-Deprecated-meta-s-module_name-in-favor-o.patch",
+    "hasHeader": true,
+    "headerPosition": "FIRST_COLUMN",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00202-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 863146531,
+    "recordOffset": 863126841,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampAfterTable": "{182959=\u00a9 2005-2015 Django Software Foundation unless otherwise noted. Django is a registered trademark of the Django Software Foundation.}",
+    "textBeforeTable": "index 2011017..d11ba3d 100644 diff --git a/django/contrib/admin/actions.py b/django/contrib/admin/actions.py 30 files changed, 94 insertions(+), 84 deletions(-) tests/regressiontests/admin_custom_urls/models.py | 2 +- django/views/generic/list.py | 4 +-- django/views/generic/detail.py | 6 ++-- django/db/models/related.py | 10 +++---- django/db/models/options.py | 29 ++++++++++++++------ django/db/models/loading.py | 2 +- django/db/models/fields/related.py | 8 +++--- django/db/models/base.py | 4 +-- django/core/xheaders.py | 2 +- django/core/serializers/python.py | 2 +- django/core/management/sql.py | 4 +-- django/core/cache/backends/db.py | 2 +- django/contrib/gis/sitemaps/kml.py | 2 +- django/contrib/contenttypes/models.py | 10 +++---- django/contrib/contenttypes/management.py | 2 +- django/contrib/contenttypes/generic.py | 4 +-- django/contrib/comments/views/comments.py | 4 +-- django/contrib/comments/moderation.py | 4 +-- django/contrib/auth/management/__init__.py | 2 +- django/contrib/auth/context_processors.py | 16 +++++------ django/contrib/admindocs/views.py | 12 ++++---- django/contrib/admin/widgets.py | 4 +-- django/contrib/admin/views/main.py | 2 +- django/contrib/admin/util.py | 2 +- django/contrib/admin/templatetags/admin_urls.py | 3 +- .../contrib/admin/templates/admin/change_form.html | 2 +- .../templates/admin/auth/user/change_password.html | 2 +- django/contrib/admin/sites.py | 6 ++-- django/contrib/admin/options.py | 24 ++++++++-------- django/contrib/admin/actions.py | 2 +- --- model_name. Subject: [PATCH] Fixed #19689 -- Deprecated meta's module_name in favor of Date: Mon, 4 Feb 2013 19:42:40 -0500 From: Simon Charette <charette.s@gmail.com> django/contrib/admin/actions.py From 694946a6899e37a56f645ea13fdf77e4f9e8cf61 Mon Sep 17 00:00:00 2001  File 0001-Fixed-19689-Deprecated-meta-s-module_name-in-favor-o.patch, 41.8 KB (added by charettes, 2 years ago) Ticket #19689: 0001-Fixed-19689-Deprecated-meta-s-module_name-in-favor-o.patch Back to Ticket #19689 Context Navigation Search Wiki Timeline Reports",
+    "textAfterTable": "django/contrib/admin/options.py diff --git a/django/contrib/admin/options.py b/django/contrib/admin/options.py index 8e0aacc..8de3112 100644 a b class ModelAdmin(BaseModelAdmin):\u00a0 371 371 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 return self.admin_site.admin_view(view)(*args, **kwargs) 372 372 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 return update_wrapper(wrapper, view) 373 373 374 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 info = self.model._meta.app_label, self.model._meta.mod ule_name \u00a0 374 \u00a0 \u00a0 \u00a0 \u00a0 info = self.model._meta.app_label, self.model._meta.mod el_name 375 375 376 376 \u00a0 \u00a0 \u00a0 \u00a0 urlpatterns = patterns('', 377 377 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 url(r'^$', \u2026 \u2026 class ModelAdmin(BaseModelAdmin):\u00a0 783 783 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 form_template = self.change_form_template 784 784 785 785 \u00a0 \u00a0 \u00a0 \u00a0 return TemplateResponse(request, form_template or [ 786 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \"admin/%s/%s/change_form.html\" % (app_label, opts. object_name.lower()), \u00a0 786 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \"admin/%s/%s/change_form.html\" % (app_label, opts. model_name), 787 787 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \"admin/%s/change_form.html\" % app_label,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Stage",
+            "Symptoms",
+            "Possible Root Cause",
+            "IIR Logs",
+            "Recovery"
+        ],
+        [
+            "Checkpoint",
+            "Fusion DQ Cleansing Services or Fusion DQ Batch Cleanse Jobs fail with an Engine Connection Error ZCQ_CMN_ENG_CONNECT_ERR, thus failing the Cleansing Check Point.",
+            "ASM Key stored in InformaticaIR/ssaas/ad5/ad/db is either incorrect or corrupt.",
+            "// junk or error ASM key error [523163604 ssasrsv 14/ 12] errmsg_put 'as_init: Object init failed: (-1600) Critical Error: No valid unlock code was given' [523163604 ssasrsv 14/ 12] errmsg_put 'ssaas5.c 1338 rc 4' [523163604 ssasrsv 14/ 12] errmsg_put 'ssaas5.c 1390 rc 1 4*100' [523163605 ssasrsv 14/ 12] errmsg_put 'ssaas5.c 3097 rc 2 401*100' [523163605 ssasrsv 14/ 12] errmsg_put 'ssasesi_addr_init: Error -40102 initializing Addr Std module' [523163605 ssasrsv 14/ 12] errmsg_put 'ssasesi.c 13477 rc 9 40102*100'",
+            "Get the correct ASM key from Address Doctor and replace the existing key in the file called key in InformaticaIR/ssaas/ad5/ad/db. Subsequently, restart the IIR Server."
+        ]
+    ],
+    "pageTitle": "Oracle Fusion Applications Customer Data Management Implementation Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E25178_01/fusionapps.1111/e20433/F424128AN2F787.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00328-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72422247,
+    "recordOffset": 72377260,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{171094=1666, 170287=1668, 170578=1669, 169121=SSA_CSPORT=1669, 169156=SSA_RBPORT=1668, 169191=SSA_COPORT=1667, 117042=Enter the Server Address and Server Port of the IIR Matching Server. The default port is 1666. To know the current port, use grep SSA_SEPORT=$<PROV.TOP>/InformaticaIR/env/isss., 56445=Select Date and Time: 3/23/11 9:30:15 AM, 169353=SSA_LIPORT= <value set for the property provisioning.setup.app-ports.core.iir.port>=1601, 141890=Here is a placeholder example: http://xyz123.us.zzz.com:1612/systems, 115696=Enter the Server Address and Server Port of the IIR Cleansing server. The default port is 1666. To know the current port, use grep SSA_SEPORT=$<PROV.TOP>/InformaticaIR/env/isss., 121587=1660 (if available, this port should work fine as the default port, 170808=1667, 133825=Rulebase sdb:file:c:\\a3i\\ids\\rule In use by ssa.identitysystems.com IP=203.2.203.109 on port=1668, SSA_RB_RESTART_ID=281753650, 169086=SSA_XMPORT=1670, 169226=SSA_SEPORT=1666, 169619=The seven ports are listed here. For example, if the port value set for provisioning.setup.app-ports.core.iir.port uses the default value 1601, the ports occupied for Informatica Identity Resolution would have the following values:, 171352=1601, 169051=SSA_HTPORT= <value set for the property provisioning.setup.app-ports.core.iir.port> + 11= 1612, 159989=RBPORT1 = Rulebase Server Port (SSA_RBPORT defined in InformaticaIR/env/isss on IIR Host 2. The default port is 1668.}",
+    "lastModified": "Thu, 20 Sep 2012 17:33:19 GMT",
+    "textBeforeTable": "Tier 4 Get the correct ASM key from Address Doctor and replace the existing key in the file called key in InformaticaIR/ssaas/ad5/ad/db. Subsequently, restart the IIR Server. Recovery \u00a0 [523163408 ssasrsv 14/ 12] errmsg_put 'ssasesi.c 13477 rc 9 40102*100' [523163408 ssasrsv 14/ 12] errmsg_put 'ssasesi_addr_init: Error -40102 initializing Addr Std module' [523163408 ssasrsv 14/ 12] errmsg_put 'ssaas5.c 3097 rc 2 401*100' [523163408 ssasrsv 14/ 12] errmsg_put 'ssaas5.c 1390 rc 1 4*100' [523163408 ssasrsv 14/ 12] errmsg_put 'ssaas5.c 1338 rc 4'  [523163408 ssasrsv 14/ 12] errmsg_put 'as_init: Object init failed: (-1601) Critical Error: The engine usage period has expired'  IIR Logs     ASM Key stored in InformaticaIR/ssaas/ad5/ad/db has expired.   Possible Root Cause     Fusion DQ Cleansing Services or Fusion DQ Batch Cleanse Jobs fail with an Engine Connection Error ZCQ_CMN_ENG_CONNECT_ERR, thus failing the Cleansing Check Point.   Symptoms     Checkpoint   Stage    Tier 3     Setup IIR Host and Port in Cleansing Configuration page   Recovery     NA   IIR Logs     IIR connection setup is missing or incorrect in the cleansing configuration. Using the Manage",
+    "textAfterTable": "Tier 5 Stage Checkpoint Symptoms Fusion DQ Cleansing Services or Fusion DQ Batch Cleanse Jobs fail with an Engine Connection Error ZCQ_CMN_ENG_CONNECT_ERR, thus failing the Cleansing Check Point. Possible Root Cause ASM Key stored in InformaticaIR/ssaas/ad5/ad/db does not exist. IIR Logs  [523163811 ssasrsv 14/ 12] errmsg_put 'fopen('/slot/ems4517/appmgr/InformaticaIR/ssaas/ad5/ad/db/key', 'r') failed 16: No such file or directory' [523163811 ssasrsv 14/ 12] errmsg_put 'fopen.c 985 rc 19' [523163811 ssasrsv 14/ 12] errmsg_put 'fopen.c 1070 rc 3 19*100' [523163811 ssasrsv 14/ 12] errmsg_put 'fopen.c 1141 rc 2' [523163811 ssasrsv 14/ 12] errmsg_put 'ssasesil_addr_get_key_and_workdir: open Addr Std license key file '/slot/ems4517/appmgr/InformaticaIR/ssaas/ad5/ad/db/key' failed' [523163811 ssasrsv 14/ 12] errmsg_put 'ssasesi.c 13293 rc 6' [523163811 ssasrsv 14/ 12] errmsg_put 'ssasesi.c 13443 rc 6 6*100' \u00a0 Recovery Get the correct ASM key from Address Doctor and create a file called key in InformaticaIR/ssaas/ad5/ad/db. Subsequently, restart the IIR Server. IIR Cleansing Server Administration Troubleshooting: Explained The Cleansing Server Administration troubleshooting process indicates certain symptoms, lists possible root causes, contains the log descriptions, and prescribes the recovery procedure. Stage",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

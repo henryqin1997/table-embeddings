@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "id",
+            "1",
+            "1"
+        ],
+        [
+            "select_type",
+            "SIMPLE",
+            "SIMPLE"
+        ],
+        [
+            "table",
+            "r",
+            "e"
+        ],
+        [
+            "type",
+            "index",
+            "ref"
+        ],
+        [
+            "possible_keys",
+            "",
+            "reunion_id"
+        ],
+        [
+            "key",
+            "PRIMARY",
+            "reunion_id"
+        ],
+        [
+            "key_len",
+            "4",
+            "4"
+        ],
+        [
+            "ref",
+            "",
+            "alumniclass_com_-_main.r.reunion_id"
+        ],
+        [
+            "rows",
+            "67208",
+            "1"
+        ],
+        [
+            "filtered",
+            "100.00",
+            "100.00"
+        ],
+        [
+            "Extra",
+            "Using where; Using temporary; Using filesort",
+            ""
+        ]
+    ],
+    "pageTitle": "Amundsen High School Alumni Class Reunion Chicago Vikings",
+    "title": "",
+    "url": "http://www.reunionposts.org/2517/amundsen-chicago-illinois-il-alumni-class-reunion",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00011-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 681490983,
+    "recordOffset": 681462548,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{43638=Copyright \u00a9 2015 ReunionPosts.org ReunionPosts.org is an affiliate of AlumniClass.com.}",
+    "textBeforeTable": "close all to the top backtrace affected rows: 0 execution time: 0.666 ms (0.41%) 'utf8_general_ci' COLLATE 'utf8' NAMES SET 001 globals unsuccessful queries: 0 successful queries: 37\u00a0(163.769 ms)",
+    "textAfterTable": ". * , si .products_added , su .uri FROM schools s LEFT JOIN school_info si ON si .school_id = s .id LEFT JOIN school_uris su ON su .id = s .id WHERE s .id = '2517' execution time: 0.855 ms (0.52%) returned rows: 1 explain backtrace to the top close all id name type_id headline_id no_formatting mascot slogan state city country primarycolor bgcolor url direct_url aa_url sports_url alumni_page_check school_site_check school_site_check_eml memprice memprice_lifetime memprice_annual memprice_old membership_type annual_fee annual_fee_commence total_members visits link_status batch reunion_status show_notice show_stats ssa_block ac_block colors_added membership_email apparel_email apparel_email2 school_email reunion_email trial_mode alt_reg campaign_emails no_emails last_reunion_notice flagged v2 products_added uri 2517 amundsen 1 1 0 Vikings Home of the vikings IL Chicago 1 #B80000 #b80000 http://www.amundsenhs.org/ http://www.amundsenhs.org/ 0 1399401332 1315413866 20 50 20 20 1 0 1297447200",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

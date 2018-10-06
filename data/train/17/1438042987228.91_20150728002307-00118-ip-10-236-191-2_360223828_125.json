@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Command",
+            "ip dns name-list",
+            "show debugging",
+            "show ip dns name-list",
+            "show logging"
+        ],
+        [
+            "Description",
+            "Defines a list of pattern-matching rules in which each rule permits or denies the use of a DNS view list member to handle a DNS query based on whether the query hostname matches the specified regular expression.",
+            "Displays the state of each debugging option.",
+            "Displays a particular DNS name list or all configured name lists.",
+            "Displays the contents of logging buffers."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Debug Command Reference - Commands I through L - debug iapp through debug ip ftp [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/debug/command/i1/db-i1-cr-book/db-i1.html?referring_site=smartnavRD",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987228.91/warc/CC-MAIN-20150728002307-00118-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 360301167,
+    "recordOffset": 360223828,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{430519=RFC 1075, 451509=(Optional) The IP access list number that you can specify. If the datagram is not permitted by that access list, the related debugging output (or IP error) is suppressed. Standard, extended, and expanded access lists are supported. The range of standard and extended access lists is from 1 to 199. The range of expanded access lists is from 1300 to 2699., 429074=RFC 1112, 146792=The following is sample output from the debug ip bgp sso command with the events keyword. The following output indicates that the 10.34.32.154 BGP session is no longer SSO capable., 237598=A link was added to IP address 10.10.10.2 for dialer profile Dialer1 through Dialer1., 151963=(Optional) Number of expanded access lists used to filter debugging messages. The range that can be specified is from 1300 to 2699., 462106=IP:s=10.0.19.100 (Ethernet0/1), 249505=CEF-Acct:snapshoting loadinfo 0x63FF2000, 262549=mtu 1000, 262854=datagramsize 1414, 263153=data_bytes 1414, 117315=(Optional) Number of the expanded access list used to filter debugging messages. The range is from 1300 to 2699., 237005=CEF-Dialer (legacy):add link to 10.10.10.2 via Dialer1 through BRI0/0:1, 460367=1d08h:IP:s=10.0.19.100 (Ethernet0/1), d=10.2.2.2, len 28, dispose ip.hopcount, 237171=A link was added to IP address 10.10.10.2 for legacy Dialer1 through physical interface BRI0/0:1., 237408=CEF-Dialer (profile dynamic encap (not MLP)):add link to 10.10.10.2 via Dialer1 through Dialer1, 156422=The following is sample output from the debug ip bgp updates command. The output shows that the BGP session was cleared between neighbor 10.4.9.21 and the local router 10.4.9.4. There are no field description tables for this command because the debugging output from this command depends on the subsequent commands that are entered., 37911=Aug 20 00:41:17.843 UTC, 460189=1d08h:IP:s=10.0.19.100 (Ethernet0/1), d=10.1.1.1, len 28, dispose udp.noport, 460289=1d08h: UDP src=41921, dst=33434, 430885=RFC 1583}",
+    "textBeforeTable": "Syntax Description { packets | event | error } iapp debug [no] Use the debug iapp privileged EXEC command to begin debugging of IAPP operations. Use the noform of this command to stop the debug operation. debug iapp debug ip ftp debug ip flow export debug ip flow cache debug ip error debug ip eigrp notifications debug ip eigrp debug ip dvmrp debug ip drp debug ip dns view-list debug ip dns view debug ip dns name-list debug ip dhcp server snmp debug ip dhcp server redundancy debug ip dhcp server debug ip dfp agent debug ip ddns update debug ip cef table debug ip cef subblock debug ip cef rrhash debug ip cef hash debug ip cef fragmentation debug ip cef accounting non-recursive debug ip cef debug ip casa wildcards debug ip casa packets debug ip casa affinities debug ip bgp vpnv6 unicast debug ip",
+    "textAfterTable": "Command Modes Privileged EXEC (#) Command History Release Modification 12.2(11)JA This command was introduced. 12.2SX This command is supported in the Cisco IOS Release 12.2SX train. Support in a specific 12.2SX release of this train depends on your feature set, platform, and platform hardware. Examples This example shows how to begin debugging of IAPP packets:  SOAP-AP# debug iapp packet This example shows how to begin debugging of IAPP events:  SOAP-AP# debug iapp events This example shows how to begin debugging of IAPP errors:  SOAP-AP# debug iapp errors Related Commands Command Description show",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

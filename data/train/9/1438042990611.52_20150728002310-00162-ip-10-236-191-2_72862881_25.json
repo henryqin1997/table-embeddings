@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "wallet_path",
+            "wallet_password",
+            "enable_cookies",
+            "max_cookies",
+            "max_cookies_per_site"
+        ],
+        [
+            "Description",
+            "Directory path that contains the Oracle wallet. The format is file:directory-path",
+            "The password needed to open the wallet. If the wallet is auto-login enabled, the password may be omitted and should be set to NULL. See the Oracle Database Advanced Security Administrator's Guide for detailed information about wallets.",
+            "Sets whether HTTP requests using this request context should support HTTP cookies or not: TRUE to enable the support, FALSE to disable it.",
+            "Sets the maximum total number of cookies that will be maintained in this request context",
+            "Sets the maximum number of cookies per each Web site that will be maintained in this request context"
+        ]
+    ],
+    "pageTitle": "UTL_HTTP",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/appdev.112/e16760/u_http.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990611.52/warc/CC-MAIN-20150728002310-00162-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72912507,
+    "recordOffset": 72862881,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{80198=Returns a PL/SQL table of 2000-byte pieces of the data retrieved from the given URL, 219414=This function returns up to the first 2000 bytes of data retrieved from the given URL. This function can be used directly in SQL queries. The URL may contain the username and password needed to authenticate the request to the server. The format is, 231135=REQUEST_PIECES returns a PL/SQL table of type UTL_HTTP.HTML_PIECES. Each element of that PL/SQL table is a string of maximum length 2000. The elements of the PL/SQL table returned by REQUEST_PIECES are successive pieces of the data obtained from the HTTP request to that URL., 224188=The URL passed as an argument to this function is not examined for illegal characters, for example, spaces, according to URL specification RFC 2396. The caller should escape those characters with the UTL_URL package. See the comments of the package for the list of legal characters in URLs. Note that URLs should consist of US-ASCII characters only. The use of non-US-ASCII characters in a URL is generally unsafe., 229047=(Optional) The maximum number of pieces (each 2000 characters in length, except for the last, which may be shorter), that REQUEST_PIECES should return. If provided, then that argument should be a positive integer., 139287=BEGIN_REQUEST can send a URL whose length is up to 32767 bytes. However, different Web servers impose different limits on the length of the URL they can accept. This limit is often about 4000 bytes. If this limit is exceeded, the outcome will depend on the Web server. For example, a Web server might simply drop the HTTP connection without returning a response of any kind. If this happens, a subsequent invocation of the GET_RESPONSE Function will raise the PROTOCOL_ERROR exception., 138721=The URL passed as an argument to this function is not examined for illegal characters, such as spaces, according to URL specification RFC 2396. You should escape those characters with the UTL_URL package to return illegal and reserved characters. URLs should consist of US-ASCII characters only. See Chapter 237, \"UTL_URL\" for a list of legal characters in URLs. Note that URLs should consist of US-ASCII characters only. The use of non-US-ASCII characters in a URL is generally unsafe., 79833=Returns up to the first 2000 bytes of the data retrieved from the given URL. This function can be used directly in SQL queries., 231751=The URL passed as an argument to this function will not be examined for illegal characters, for example, spaces, according to URL specification RFC 2396. The caller should escape those characters with the UTL_URL package. See the comments of the package for the list of legal characters in URLs. Note that URLs should consist of US-ASCII characters only. The use of non-US-ASCII characters in a URL is generally unsafe., 223735=The return type is a string of length 2000 or less, which contains up to the first 2000 bytes of the HTML result returned from the HTTP request to the argument URL., 226489=This function returns a PL/SQL table of 2000-byte pieces of the data retrieved from the given URL. You can define a username/password for the proxy to be specified in the proxy string. The format is}",
+    "lastModified": "Sat, 14 Aug 2010 15:00:23 GMT",
+    "textBeforeTable": "Table 223-22 CREATE_REQUEST_CONTEXT Function Parameters Parameters RETURN request_context_key; max_cookies_per_site IN PLS_INTEGER DEFAULT 20) max_cookies IN PLS_INTEGER DEFAULT 300, enable_cookies IN BOOLEAN DEFAULT TRUE, wallet_password IN VARCHAR2 DEFAULT NULL, wallet_path IN VARCHAR2 DEFAULT NULL, UTL_HTTP.CREATE_REQUEST_CONTEXT ( Syntax  HTTP Request Contexts Subprograms Request Context and See Also: This function creates a request context. A request context is a context that holds a wallet and a cookie for private use in making a HTTP request. This allows the HTTP request to use a wallet and a cookie table that will not be shared with other applications making HTTP requests in the same database session. CREATE_REQUEST_CONTEXT Function Note that the use of a NULL value in a parameter when this procedure is called means that the caller does not care about its value when the package decides which persistent connection to close. If you want a NULL value in a parameter to match only a NULL value of the parameter of a persistent connection (which is when you want to close a specific persistent connection), you should use the CLOSE_PERSISTENT_CONN procedure that closes a specific persistent connection. Connections to the same Web server at different TCP/IP ports are counted individually. The host names of the Web servers are identified as specified in the URL",
+    "textAfterTable": "Return Values The request context created. Examples DECLARE request_context UTL_HTTP.REQUEST_CONTEXT_KEY; req utl_http.req; BEGIN request_context := UTL_HTTP.CREATE_REQUEST_CONTEXT( wallet_path => 'file:/oracle/wallets/test_wallets', wallet_password => NULL, enable_cookies => TRUE, max_cookies => 300, max_cookies_per_site => 20); req := UTL_HTTP.BEGIN_REQUEST( url => 'http://www.example.com/', request_context => request_context); END; DESTROY_REQUEST_CONTEXT Procedure This procedure destroys a request context in UTL_HTTP. A request context cannot be destroyed when it is in use by a HTTP request or response. See Also: Request Context and HTTP Request Contexts Subprograms Syntax UTL_HTTP.DESTROY_REQUEST_CONTEXT ( request_context request_context_key); Parameters Table 223-23 DESTROY_REQUEST_CONTEXT Procedure Parameters Parameter Description request_context Request context to destroy Examples DECLARE request_context UTL_HTTP.REQUEST_CONTEXT_KEY; BEGIN request_context := UTL_HTTP.CREATE_REQUEST_CONTEXT(\u2026); \u2026 UTL_HTTP.DESTROY_REQUEST_CONTEXT(request_context); END; END_REQUEST Procedure",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

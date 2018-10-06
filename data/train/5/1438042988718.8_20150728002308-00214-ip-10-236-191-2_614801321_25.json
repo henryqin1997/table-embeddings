@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2010-11-30T00:00:00",
+            "2012-02-01T00:00:00",
+            "2013-01-22T00:00:00"
+        ],
+        [
+            "Description",
+            "These data were collected using a HEII system. The system collects topographic lidar data at 64kHz, bathymetric lidar data at 4kHz and RGB imagery at 1Hz. Aircraft position, velocity and acceleration information are collected using an Applanix POS A/V 410. All raw data are processed using AHAB's Coastal Survey Studio (CSS) software. Aircraft position data are processed using POSPac software and the results are combined with the lidar data to produce 3-D positions for each lidar shot. Fledermaus and GreenC Solutions software is used to inspect and QA/QC data, and anomalous data are flagged as invalid. Data are exported to LAS format using GreenC Solutions and imported to Terrascan for classification. A customized classification macro is used to distinguish ground points (2) and unclassified points (1). The classification results are reviewed and any misclassified points are manually edited. In areas of dense vegetation the bare ground points might be incorrectly classified due to the inability of the laser to penetrate the canopy and reach the bare ground. Classified data are exported from Terrascan and Blue Marble Desktop converts all classified LAS data from UTM to NAD83 geographic coordinates and NAVD88 heights using the Geoid 09 model.",
+            "The NOAA Coastal Services Center (CSC) received data in LAS v1.2 format. The files contained LiDAR elevation measurements. The data were received in geographic coordinates (NAD83) and vertically referenced to NAVD88 using the Geoid09 model. The vertical units of data were meters. The data were classified according to ASPRS LAS classification scheme (1 = unclassified, 2 = ground). CSC performed the following processing for data storage and Digital Coast provisioning purposes: 1. The LAS files were converted from orthometric heights to ellipsoidal heights (GRS80) using Geoid 09. 2. The LAS data were sorted by latitude and the headers were updated. 3. The data were converted to LAZ format.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2010_USACE_NE_m1174.xml&view=ISO19115Components-HTMLTable&altview=none",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00214-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 614809523,
+    "recordOffset": 614801321,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:2010_USACE_NE_m1174Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "Component Title Date Citation Identifier 1 2010 US Army Corps of Engineers (USACE) Joint Airborne Lidar Bathymetry Technical Center of eXpertise (JALBTCX) Lidar: Northeast (Topo) 3 None 1 North American Datum 1983 2007-01-19 Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 1 NOAA CSC (originator) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov originator http://coast.noaa.gov 1 NOAA CSC (publisher) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

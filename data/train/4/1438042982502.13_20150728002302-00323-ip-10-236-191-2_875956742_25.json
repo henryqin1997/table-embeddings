@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "SiteName",
+            "database",
+            "toNames",
+            "toEmails",
+            "smtphost",
+            "fromName",
+            "fromEmail"
+        ],
+        [
+            "Needs Editing",
+            "Yes",
+            "Maybe",
+            "Yes",
+            "Yes",
+            "Maybe",
+            "Maybe",
+            "Maybe"
+        ],
+        [
+            "Value",
+            "Set to the resource group name of your SE as registered in OIM.",
+            "Set to the database section containing the login details for your Gratia Collector (a few, non-functioning examples sections are included). Installing a Gratia Collector is covered here, but ask around on osg-hadoop: Nebraska will usually run these reports for you if requested.",
+            "Python list for the \"to names\" for the report email.",
+            "Python list for the \"to emails\" for the report email.",
+            "Hostname of a SMTP server that accepts email from this host.",
+            "Set to the \"from name\" for the report email.",
+            "Set to the \"from email\" for the report email."
+        ]
+    ],
+    "pageTitle": "Hadoop20Install < ReleaseDocumentation < TWiki",
+    "title": "",
+    "url": "https://twiki.grid.iu.edu/bin/view/ReleaseDocumentation/Hadoop20Install",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00323-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 875995759,
+    "recordOffset": 875956742,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "/etc/gratia_reporting/reporting_cms.cfg/etc/gratia_reporting/etc/gratia_reporting/reporting.cfg Configuration file ). You will do this once for every report you want to send out. (for example, to a new filename in Copy the file /var/log/gratia_reporting.log No Log files /etc/gratia_reporting/logging.cfg No Logging Configuration /etc/gratia_reporting/gratia_reporting/gratia_reporting.cron (move to /etc/cron.d) Yes Cron template /etc/gratia_reporting Yes Report Configuration Location Needs Editing? Purpose This RPM uses Linux-standard file locations. Here are the most relevant file and",
+    "textAfterTable": "Cron Copy the file /etc/gratia_reporting/gratia_reporting.cron to /etc/cron.d. There is one line per report; comment out all except the hadoop report. It is the line containing -n hadoop. Update the line to point at your new configuration file. Sample report Show Full Output Hide Full Output This is a sample report from the Nebraska HDFS instance.  ============================================================ The Hadoop Chronicle | 85 % | 2009-09-25 ============================================================ -------------------- | Global Storage | ----------------------------------------------------- | | Today | Yesterday | One Week | ----------------------------------------------------- | Total Space (GB) | 311,470 | 357,818 | 368,711 | | Free Space (GB) | 47,304 | 93,719 | 128,391 | | Used Space (GB) | 264,166 | 264,100 | 240,320 | | Used Percentage | 85% | 74% | 65% | ----------------------------------------------------- -------------- | CMS /store | ------------------------------------------------------------------------------------------------------------------------------------- | Path | Size(GB) | 1 Day Change | 7 Day Change | Remaining | # Files | 1 Day Change | 7 Day Change | Remaining | ------------------------------------------------------------------------------------------------------------------------------------- | /store/user | 771 | 0 | UNKNOWN | NO QUOTA | 4,859 | 0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

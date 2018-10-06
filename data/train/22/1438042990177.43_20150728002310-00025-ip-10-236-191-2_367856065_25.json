@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Command",
+            "call application voice account-id-method",
+            "param",
+            "param convert-discpi-after-connect",
+            "param event-log",
+            "param language",
+            "param mode",
+            "param pin-len",
+            "param redirect-number",
+            "param reroutemode",
+            "param retry-count",
+            "param security",
+            "param uid-length",
+            "param warning-time"
+        ],
+        [
+            "Description",
+            "Configures the fax detection IVR application to use a particular method to assign the account identifier.",
+            "Loads and configures parameters in a package or a service (application).",
+            "Enables or disables conversion of a DISCONNECT message with Progress Indicator set to PROG_INBAND (PI=8) to a regular DISCONNECT message when the call is in the active state.",
+            "Enables or disables logging for linkable Tcl functions (packages).",
+            "Configures the language parameter in a service or package on the gateway.",
+            "Configures the call transfer mode for a package.",
+            "Defines the number of characters in the PIN for an application.",
+            "Defines the telephone number to which a call is redirected--for example, the operator telephone number of the service provider--for an application.",
+            "Configures the call transfer reroutemode (call forwarding) for a package.",
+            "Defines the number of times a caller is permitted to reenter the PIN for a designated application and passes that information to the application.",
+            "Configures security for linkable Tcl functions (packages).",
+            "Defines the number of characters in the UID for a package.",
+            "Defines the number of seconds of warning that a user receives before the allowed calling time expires."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Voice Command Reference - K through R - package through pattern [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/voice/vcr3/vcr3-cr-book/vcr-p1.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00025-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 367917019,
+    "recordOffset": 367856065,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{112740=The MT package is a subset of the MS package, and it is used with certain operator services on terminating MF trunks on trunking gateway endpoints, as described in PacketCable PSTN Gateway Call Signaling Protocol Specification (TGCP) PKT-SP-TGCP-D02-991028, December 1, 1999.}",
+    "textBeforeTable": "Syntax Description package-name package no location package-name package To enter application-parameter configuration mode to load and configure a package, use the package command in application configuration mode. There is no no form of this command. package pattern passthru-hdr-unsupp passthru-hdr paramspace session_xwork convert-discpi-after-connect paramspace language paramspace callsetup reroutemode paramspace callsetup mode paramspace appcommon security paramspace appcommon event-log paramspace param warning-time param voice-dtmf param uid-len param security param retry-count param reroutemode param redirect-number param prompt param pin-len param mode param mail-script param language param global-password param fax-dtmf param event-log param dsn-script param convert-discpi-after-connect param authentication enable param authen-method param authen-list param accounting-list param accounting enable param account-id-method param access-method param package session_xwork package persistent package language package callsetup package appcommon package",
+    "textAfterTable": "Router(config-app)# package frlang http://server-1/language_translate.tcl Related Commands Command Description call application voice Defines the name of a voice application and specify the location of the Tcl or VoiceXML document to load for this application. package appcommon Configures parameters in the built-in common voice application package. package callsetup Configures parameters in the built-in call setup package. package language Loads an external Tcl language module for use with an IVR application. package session_xwork Configure parameters in the built-in session_xwork package. package appcommon",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

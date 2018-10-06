@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "",
+            "From",
+            "To"
+        ],
+        [
+            "Declaration",
+            "+ (id)indexPathWithIndexes:(NSUInteger *)indexes length:(NSUInteger)length",
+            "+ (id)indexPathWithIndexes:(const NSUInteger[])indexes length:(NSUInteger)length"
+        ]
+    ],
+    "pageTitle": "iOS 5.1 to iOS 6.0 API Differences",
+    "title": "",
+    "url": "https://developer.apple.com/library/ios/releasenotes/General/iOS60APIDiffs/index.html",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 225,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985140.15/warc/CC-MAIN-20150728002305-00342-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 858711067,
+    "recordOffset": 858641506,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{1058678=Copyright \u00a9 2015 Apple Inc. All rights reserved.}",
+    "textBeforeTable": "vImageConvert_ARGB8888toRGB888() Modified vImageFlatten_RGBAFFFFToRGBFFF() Added vImageFlatten_RGBA8888ToRGB888() Added #def vImageFlatten_RGBA8888ToBGR888 Added vImageFlatten_BGRAFFFFToRGBFFF() Added vImageFlatten_BGRA8888ToRGB888() Added #def vImageFlatten_BGRA8888ToBGR888 Added vImageConvert_RGBA8888toRGB888() Added #def vImageConvert_RGBA8888toBGR888 Added vImageConvert_RGB888toRGBA8888() Added vImageConvert_RGB888toBGRA8888() Added vImageConvert_BGRA8888toRGB888() Added #def vImageConvert_BGRA8888toBGR888 Added #def vImageConvert_BGR888toRGBA8888 Added #def vImageConvert_BGR888toBGRA8888 Added Conversion.h vImageUnpremultiplyData_RGBA16U() Added #def vImageUnpremultiplyData_BGRA16U Added vImageUnpremultiplyData_ARGB16U() Added vImagePremultiplyData_RGBA16U() Added #def vImagePremultiplyData_BGRA16U Added vImagePremultiplyData_ARGB16U() Added vImageClipToAlpha_RGBAFFFF() Added vImageClipToAlpha_RGBA8888() Added #def vImageClipToAlpha_BGRAFFFF Added #def vImageClipToAlpha_BGRA8888 Added Alpha.h Accelerate Social PassKit MediaToolbox AdSupport",
+    "textAfterTable": "Modified vImageConvert_RGB888toARGB8888() Declaration From vImage_Error vImageConvert_RGB888toARGB8888 ( const vImage_Buffer *rgbSrc, const vImage_Buffer *aSrc, Pixel_8 alpha, const vImage_Buffer *argbDest, bool premultiply, vImage_Flags flags); To vImage_Error vImageConvert_RGB888toARGB8888 ( const vImage_Buffer *, const vImage_Buffer *, Pixel_8, const vImage_Buffer *, bool, vImage_Flags); Modified vImageFlatten_ARGBFFFFToRGBFFF() Declaration From vImage_Error vImageFlatten_ARGBFFFFToRGBFFF ( const vImage_Buffer *argbFFFFSrc, const vImage_Buffer *rgbFFFdest, Pixel_FFFF backgroundColor, bool isImagePremultiplied, vImage_Flags flags); To vImage_Error vImageFlatten_ARGBFFFFToRGBFFF ( const vImage_Buffer *, const vImage_Buffer *, Pixel_FFFF, bool, vImage_Flags); Modified vImageFlatten_ARGB8888ToRGB888() Declaration From vImage_Error vImageFlatten_ARGB8888ToRGB888 ( const vImage_Buffer *argb8888Src, const vImage_Buffer *rgb888dest, Pixel_8888 backgroundColor, bool isImagePremultiplied, vImage_Flags flags); To vImage_Error vImageFlatten_ARGB8888ToRGB888 ( const vImage_Buffer *, const vImage_Buffer *, Pixel_8888, bool, vImage_Flags); Geometry.h Added vImageHorizontalReflect_Planar16U() Added vImageRotate90_Planar16U() Added vImageVerticalReflect_Planar16U() Modified vImageAffineWarpCG_ARGBFFFF() Architectures From",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

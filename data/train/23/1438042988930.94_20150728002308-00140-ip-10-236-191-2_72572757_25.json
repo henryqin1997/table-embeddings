@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "workload_name",
+            "import_mode",
+            "priority",
+            "saved_rows",
+            "failed_rows"
+        ],
+        [
+            "Description",
+            "The workload object name that uniquely identifies an existing workload.",
+            "Specifies the action to be taken when storing the workload. Possible values are: APPEND Indicates that the collected workload will be added to any existing workload in the task. NEW Indicates that the collected workload will be the exclusive workload for the task. If an existing workload is found, an exception will be thrown. REPLACE Indicates the collected workload will be the exclusive workload for the task. If an existing workload is found, it will be deleted prior to saving the new workload. The default value is NEW.",
+            "Specifies the application priority for each statement that is saved in the workload object. The value must be one of the following 1-HIGH, 2-MEDIUM, or 3-LOW.",
+            "Returns the number of rows saved as output parameters.",
+            "Returns the number of rows that were not saved due to syntax or validation errors."
+        ]
+    ],
+    "pageTitle": "DBMS_ADVISOR",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/appdev.112/e16760/d_advis.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00140-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72610159,
+    "recordOffset": 72572757,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 14 Aug 2010 15:00:20 GMT",
+    "textBeforeTable": "Table 18-22 IMPORT_SQLWKLD_SQLCACHE Procedure Parameters Parameters failed_rows OUT NUMBER); saved_rows OUT NUMBER, priority IN NUMBER := 2, import_mode IN VARCHAR2 := 'NEW', workload_name IN VARCHAR2, DBMS_ADVISOR.IMPORT_SQLWKLD_SQLCACHE ( Syntax  This procedure creates a SQL workload from the current contents of the server's SQL cache. gR1. Note: This procedure is deprecated in Release 11 IMPORT_SQLWKLD_SQLCACHE Procedure / END; failed); DBMS_ADVISOR.IMPORT_SQLWKLD_SCHEMA(workload_name, 'REPLACE', 1, saved, DBMS_ADVISOR.SET_SQLWKLD_PARAMETER(workload_name,'VALID_TABLE_LIST','SH.%'); DBMS_ADVISOR.CREATE_SQLWKLD(workload_name, 'My Workload'); workload_name := 'My Workload'; BEGIN failed NUMBER; saved NUMBER; workload_name VARCHAR2(30); DECLARE Examples  If a task contains valid recommendations from a prior run, adding or modifying task will mark the task as invalid, preventing the viewing and reporting of potentially valuable recommendation data. If the VALID_TABLE_LIST parameter is not set, the search space may become very large and require a significant amount of time to complete. Oracle recommends that you limit your search space to specific set of tables. To successfully import a hypothetical workload, the target schemas must contain dimensions. Usage Notes  This call returns the number of rows saved and failed as output parameters. Return Values   Returns the number of rows actually saved in the repository.",
+    "textAfterTable": "Return Values This call returns the number of rows saved and failed as output parameters. Usage Notes A workload cannot be modified or deleted if it is currently referenced by an active task. A task is considered active if it is not in its initial state. See RESET_TASK Procedure to set a task to its initial state. Examples DECLARE workload_name VARCHAR2(30); saved NUMBER; failed NUMBER; BEGIN workload_name := 'My Workload'; DBMS_ADVISOR.CREATE_SQLWKLD(workload_name, 'My Workload'); DBMS_ADVISOR.SET_SQLWKLD_PARAMETER(workload_name,'VALID_TABLE_LIST','SH.%'); DBMS_ADVISOR.IMPORT_SQLWKLD_SQLCACHE(workload_name, 'REPLACE', 1, saved, failed); END; / IMPORT_SQLWKLD_STS Procedure Note: This procedure is deprecated in Release 11 gR1. This procedure loads a SQL workload from an existing SQL Tuning Set. A SQL Tuning Set is typically created from the server workload repository using various time and data filters. Syntax DBMS_ADVISOR.IMPORT_SQLWKLD_STS ( workload_name IN VARCHAR2, sts_name IN VARCHAR2, import_mode IN VARCHAR2 := 'NEW', priority IN NUMBER := 2, saved_rows OUT NUMBER, failed_rows OUT NUMBER); DBMS_ADVISOR.IMPORT_SQLWKLD_STS ( workload_name IN VARCHAR2, sts_owner IN VARCHAR2, sts_name IN VARCHAR2, import_mode IN VARCHAR2 := 'NEW', priority IN NUMBER := 2, saved_rows OUT NUMBER, failed_rows OUT NUMBER); Parameters Table 18-23 IMPORT_SQLWKLD_STS Procedure Parameters",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

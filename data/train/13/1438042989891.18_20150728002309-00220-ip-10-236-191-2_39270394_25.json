@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Modifier and Type",
+            "class",
+            "class",
+            "class"
+        ],
+        [
+            "Class and Description",
+            "DirectVmBlockingProducer The direct producer.",
+            "DirectVmProcessor",
+            "DirectVmProducer The direct-vm producer"
+        ]
+    ],
+    "pageTitle": "Uses of Interface org.apache.camel.Processor (Camel :: Core 2.15.0 API)",
+    "title": "Classes in org.apache.camel.component.directvm that implement Processor",
+    "url": "http://camel.apache.org/maven/current/camel-core/apidocs/org/apache/camel/class-use/Processor.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00220-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 39306407,
+    "recordOffset": 39270394,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 10 Mar 2015 14:12:19 GMT",
+    "textBeforeTable": "Uses of Processor in org.apache.camel.builder.xml DefaultErrorHandlerBuilder.setOnRedelivery(Processor\u00a0onRedelivery)\u00a0 void DefaultErrorHandlerBuilder.setFailureProcessor(Processor\u00a0failureProcessor)\u00a0 void before a redelivery attempt. Sets a processor that should be processed DefaultErrorHandlerBuilder.onRedelivery(Processor\u00a0processor) DefaultErrorHandlerBuilder DeadLetterChannelBuilder.createErrorHandler(RouteContext\u00a0routeContext, Processor\u00a0processor)\u00a0 Processor DefaultErrorHandlerBuilder.createErrorHandler(RouteContext\u00a0routeContext, Processor\u00a0processor)\u00a0 Processor LoggingErrorHandlerBuilder.createErrorHandler(RouteContext\u00a0routeContext, Processor\u00a0processor)\u00a0 Processor NoErrorHandlerBuilder.createErrorHandler(RouteContext\u00a0routeContext, Processor\u00a0processor)\u00a0 Processor ErrorHandlerBuilderRef.createErrorHandler(RouteContext\u00a0routeContext, Processor\u00a0processor)\u00a0 Processor Method and Description Modifier and Type \u00a0 Methods in org.apache.camel.builder with parameters of type Processor Throws an exception ProcessorBuilder.throwException(Exception\u00a0ex)",
+    "textAfterTable": "Modifier and Type Class and Description class\u00a0 BeanProcessor A Processor which converts the inbound exchange to a method invocation on a POJO class\u00a0 BeanProducer Bean Producer Methods in org.apache.camel.component.bean that return Processor \u00a0 Modifier and Type Method and Description Processor ConstantTypeBeanHolder.getProcessor()\u00a0 protected Processor BeanProcessor.getProcessor()\u00a0 Processor BeanHolder.getProcessor() Gets a Processor for this bean, if supported. Processor RegistryBean.getProcessor()\u00a0 Processor ConstantBeanHolder.getProcessor()\u00a0 Methods in org.apache.camel.component.bean with parameters of type Processor \u00a0 Modifier and Type Method and Description Consumer BeanEndpoint.createConsumer(",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

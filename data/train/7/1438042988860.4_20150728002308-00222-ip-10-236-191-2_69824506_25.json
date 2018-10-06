@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Field",
+            "ArrayOfEMailDeliveryOption emailOptions",
+            "ArrayOfFaxDeliveryOption faxOptions",
+            "ArrayOfFTPDeliveryOption ftpOptions",
+            "ArrayOfLocalDeliveryOption localOptions",
+            "ArrayOfPrintDeliveryOption printOptions",
+            "ArrayOfWebDAVDeliveryOption webDAVOption"
+        ],
+        [
+            "Description",
+            "See Section 2.3.2, \"ArrayOfEMailDeliveryOption.\"",
+            "See Section 2.3.3, \"ArrayOfFaxDeliveryOption.\"",
+            "See Section 2.3.4, \"ArrayOfFTPDeliveryOption.\"",
+            "See Section 2.3.9, \"ArrayOfLocalDeliveryOption.\"",
+            "See Section 2.3.12, \"ArrayOfPrintDeliveryOption.\"",
+            "See Section 2.3.16, \"ArrayOfWebDAVDeliveryOption.\""
+        ]
+    ],
+    "pageTitle": "Data Types in Oracle BI Publisher Web Services - 11g Release 1 (11.1.1)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E25054_01/fusionapps.1111/e20838/datatypes.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00222-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 69848339,
+    "recordOffset": 69824506,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{128119=See Section 2.3.11, \"ArrayOfParamNameValue.\", 166315=Contains the TemplateFormatLabelValue label-value pairs. See Section 2.3.14, \"ArrayOfTemplateFormatLabelValue.\", 136741=excel2000 (Microsoft Excel 2000), 138496=Passes the list of template format labels through the ArrayOfTemplateFormatsLabelValues data type. See Section 2.3.15, \"ArrayOfTemplateFormatLabelValues.\", 40061=Contains the elements to specify a file data source. See Section 2.3.25, \"FileDataSource.\", 5218=2007-10-26T21:32:52, 23314=See Section 2.3.33, \"JobOutput.\", 18709=See Section 2.3.26, \"FTPDeliveryOption.\", 126515=See Section 2.3.13, \"ArrayOfString.\", 146718=The parameter name-value pairs to be used in the submission of this report request, passed through the ParamNameValues data type. See Section 2.3.42, \"ParamNameValues.\", 49916=See Section 2.3.16, \"ArrayOfWebDAVDeliveryOption.\", 119435=See Section 2.3.10, \"ArrayOfMetaData.\", 145964=If the data source for the report is not defined, you can dynamically define it. See Section 2.3.17, \"BIPDataSource.\", 24909=See Section 2.3.34, \"JobOutputDelivery.\", 34428=See Section 2.3.49, \"TemplateFormatLabelValue.\", 52713=See Section 2.3.17, \"BIPDataSource.\", 159529=Information about the request included through the ReportRequest data type. See Section 2.3.46, \"ReportRequest.\", 139813=Passes the parameter names defined for the report through the ArrayOfString data type. See Section 2.3.13, \"ArrayOfString.\", 15515=See Section 2.3.23, \"EMailDeliveryOption.\", 140975=Passes the report name-value pairs through the ArrayOfParamNameValue data type. See Section 2.3.11, \"ArrayOfParamNameValue.\", 49597=See Section 2.3.12, \"ArrayOfPrintDeliveryOption.\", 31291=See Section 2.3.43, \"PrintDeliveryOption.\", 28076=See Section 2.3.39, \"MetaData.\", 26524=See Section 2.3.38, \"LocalDeliveryOption.\", 39712=Contains the elements to specify a JDBC data source. See Section 2.3.28, \"JDBCDataSource.\", 29678=See Section 2.3.41, \"ParamNameValue.\", 37904=See Section 2.3.51, \"WebDAVDeliveryOption.\", 166718=The available locale options defined for a template passed in the ArrayOfString data type. See Section 2.3.13, \"ArrayOfString.\", 142195=Passes the layout names of the report templates through the ArrayOfString data type. See Section 2.3.13, \"ArrayOfString.\", 52178=See Section 2.3.20, \"DeliveryChannels.\", 21770=See Section 2.3.31, \"JobInfo.\", 17113=See Section 2.3.24, \"FaxDeliveryOption.\", 148746=See Section 2.3.40, \"MetaDataList.\", 20243=See Section 2.3.27, \"ItemData.\", 36273=See Section 2.3.50, \"TemplateFormatsLabelValues.\", 144438=The output format of the requested report. Valid values are: pdf, rtf, html, excel, excel2000, mhtml, csv, data, flash, and powerpoint.}",
+    "lastModified": "Thu, 20 Sep 2012 18:00:06 GMT",
+    "textBeforeTable": "Table 2-22 Fields Provided by DeliveryChannels The following table lists the fields: This data type is used by the DeliveryRequest and ScheduleRequest complex data types. Use this data type to define the specifications to deliver a report to multiple destinations. 2.3.20 DeliveryChannels The owner of the catalog object. String owner The type of catalog object. Valid values are: xdm (data model) xdo (report) xsb (sub-template) xss (style template) String objectType The subtype of the catalog object. For Folder object, object type and subtype are Folder. For Report object, object type is ReportItem and subtype is xdo. For Data Model object, object Type is ReportItem and subtype is xdm. For Style Template object, object type is StyleTemplate and subtype is RTF or XSL. For Sub Template object, object Type is SubTemplate and subtype is RTF or XSL. String objectSubType The name of the catalog object. String objectName The absolute path to the catalog object.",
+    "textAfterTable": "2.3.21 DeliveryRequest Use this data type to define the specifications to deliver a report to multiple destinations. The following table lists the fields: Table 2-23 Fields Provided by DeliveryRequest Field Description String contentType The content type of the generated document. Possible values are: \"text/html;charset=UTF-8\" \"text/plain;charset=UTF-8\" \"application/pdf\" \"application/vnd.ms-powerpoint\" \"application/vnd.ms-powerpoint\" \"application/vnd.ms-excel\" \"application/msword\" \"application/x-shockwave-flash\" \"text/xml\" \"message/rfc822\" DeliveryChannels deliveryChannels See Section 2.3.20, \"DeliveryChannels.\" byte[] documentData The output document. BIPDataSource dynamicDataSource See Section 2.3.17, \"BIPDataSource.\" 2.3.22 DeliveryServiceDefinition Use this data type to return data in the response for the getDeliveryServiceDefinition() Method. Use",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

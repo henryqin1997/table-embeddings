@@ -1,0 +1,142 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2010-11",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "TUL",
+            ""
+        ],
+        [
+            "GP",
+            "4",
+            "4"
+        ],
+        [
+            "GS",
+            "4",
+            "4"
+        ],
+        [
+            "Min",
+            "36.9",
+            "36.9"
+        ],
+        [
+            "FGM",
+            "6.75",
+            "6.75"
+        ],
+        [
+            "FGA",
+            "13.25",
+            "13.25"
+        ],
+        [
+            "FG%",
+            ".509",
+            ".509"
+        ],
+        [
+            "3FGM",
+            "1.00",
+            "1.00"
+        ],
+        [
+            "3FGA",
+            "3.25",
+            "3.25"
+        ],
+        [
+            "3P%",
+            ".308",
+            ".308"
+        ],
+        [
+            "FTM",
+            "5.00",
+            "5.00"
+        ],
+        [
+            "FTA",
+            "5.75",
+            "5.75"
+        ],
+        [
+            "FT%",
+            ".870",
+            ".870"
+        ],
+        [
+            "FIC",
+            "12.03",
+            "12.03"
+        ],
+        [
+            "OFF",
+            "0.50",
+            "0.50"
+        ],
+        [
+            "DEF",
+            "2.50",
+            "2.50"
+        ],
+        [
+            "Reb",
+            "3.00",
+            "3.00"
+        ],
+        [
+            "Ast",
+            "6.50",
+            "6.50"
+        ],
+        [
+            "Stl",
+            "1.50",
+            "1.50"
+        ],
+        [
+            "Blk",
+            "0.50",
+            "0.50"
+        ],
+        [
+            "PF",
+            "3.50",
+            "3.50"
+        ],
+        [
+            "TO",
+            "4.50",
+            "4.50"
+        ],
+        [
+            "Pts",
+            "19.50",
+            "19.50"
+        ]
+    ],
+    "pageTitle": "Jerome Dyson Player Profile, New Orleans Pelicans, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Events Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Jerome_Dyson/Summary/4354",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00235-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 24369159,
+    "recordOffset": 24325830,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{46983=Draft Entry: 2010 NBA Draft, 47906=Born: May 1, 1987 (28 years old)}",
+    "TableContextTimeStampAfterTable": "{98503=* International basketball history from 2011-2012, 150745=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 1 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] [ National ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2011-12 NOP 9 1 180.2 19 48 .396 1 8 .125 28 36 .778 34 2 17 19 18 11 2 19 20 67 CAREER \u00a0 9 1 180.2 19 48 .396 1 8 .125 28 36 .778 34 2 17 19 18 11 2 19 20 67 NBA Regular Season Stats - Misc Stats Season Team GP GS Dbl Dbl Tpl Dbl 40 Pts 20 Reb 20 Ast Techs HOB Ast/TO Stl/TO FT/FGA W's L's Win % OWS DWS WS 2011-12 NOP 9 1 0 0 0 0 0 0 .125 0.90 0.55 0.75 6 3 0.667 -0.13 0.32 0.18 CAREER \u00a0 9 1 0 0 0 0 0 0 .125 0.90 0.55",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

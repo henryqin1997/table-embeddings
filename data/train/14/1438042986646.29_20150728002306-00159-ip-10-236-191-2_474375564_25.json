@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jan 27, 2000",
+            "Oct 24, 2003",
+            "May 2, 2008",
+            "Jun 24, 2010",
+            "Apr 25, 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: HITACHI LTD., JAPAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:SHEPHERD, DAVID E.;REEL/FRAME:010563/0146 Effective date: 20000113",
+            "",
+            "Year of fee payment: 4",
+            "Owner name: RENESAS ELECTRONICS CORPORATION,JAPAN Free format text: CHANGE OF NAME;ASSIGNOR:RENESAS TECHNOLOGY CORPORATION;REEL/FRAME:024588/0306 Effective date: 20100401 Owner name: RENESAS ELECTRONICS CORPORATION, JAPAN Free format text: CHANGE OF NAME;ASSIGNOR:RENESAS TECHNOLOGY CORPORATION;REEL/FRAME:024588/0306 Effective date: 20100401",
+            "Year of fee payment: 8"
+        ]
+    ],
+    "pageTitle": "Patent US6820195 - Aligning load/store data with big/little endian determined rotation distance ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6820195?dq=5,579,517",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00159-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 474418679,
+    "recordOffset": 474375564,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{26706=To understand what an unaligned word reference is, there needs to be a description of an aligned word reference. If a data object is of size N bytes at address A, then the object is aligned if A mod N=0. Table 1 shows examples of aligned and unaligned accesses of data, were the byte offsets are specified for the low-order three bits of the address (Computer Architecture A Quantitative Approach, John Hennessy and David Patterson, Morgan Kaufmann, Publishers, Inc., Copyright 1990, page 96, herein referred to as \u201cHennessy\u201d)., 31047=FIG. 1 illustrates a prior art alignment network 114. In FIG. 1, memory 100 shows eight consecutive bytes (i.e., a byte equals 8 bits): Y3, Y2, Y1, D4, D3, D2, D1, and X4. Each byte in memory 100 is given an address which ranges from 0 to 7. For example, address 2 in memory 100 has memory contents Y1. The desired data bytes that are used in this and the following examples are D4 at address 3, D3 at address 4, D2 at address 5, and D1 at address 6. Each of these desired data bytes are to be loaded and stored to and from register R 110. Register R 110 has 4 byte positions: P4, P3, P2, and P1. Memory slice 112 of memory 100 shows a desired data byte D4 at address 3. D4 could be loaded from memory slice 112 through the alignment network 114 into register R 115 at positions P4, P3, P2, or P1. In this case D4 is loaded from memory slice 112 at address 3 to P4 in register R 115 through alignment network 114. Similarly, desired data bytes D3, D2, and D1 located in memory 100 addresses 4, 5, and 6 can be loaded through a similar alignment network to positions P3, P2, and P1 in register R 115 to give register R 110. This type of hardware alignment network 114 could be seen in Intel's 8086 and 8088 which came out in the late 1970s. The Intel 8088 was word and byte addressable. The 8088 used a cross-bar switch to swap bytes (Structured Computer Organization, 3rd Edition, Andrew Tanenbaum, Copyright 1990, pages 215-217, pages 230-237). Note that Intel 8088 instruction set had separate instructions for shifting and rotating as these were considered different operations. For example, shifting one bit left would discard the leftmost bit, while rotating left would cycle the leftmost bit around to the rightmost bit., 145728=FIG. 15 illustrates a simplified block diagram of the Sign Selection block 680 of the present invention. FIG. 15 shows how the lspalgn_signbit 684 is determined from the operation, address and endianness in a specific embodiment. The inputs to block 1012 generate a select signal, sel[2:0], 1016 which controls a 8-to-1 mux 1020 on the signbits (63, 55, 47, 39, 31, 23, 15, 7) from the input word, lspalgn_data. Note if the result type is unsigned, a signbit 684 of 0 is returned., 33231=FIG. 2 illustrates a prior art example of aligning a misaligned data word using shifting operations. An example can be seen in U.S. Pat. No. 4,814,976, RISC Computer With Unaligned Reference Handling And Method For The Same, Hansen, et al., issued Mar. 21, 1989 (herein referred to as \u201cHansen\u201d). The contents of memory 100 at address 0-3 are loaded into register 120, locations PA4 to PA1. The contents of memory 100 in addresses 4 to 7 are loaded into register B 130 at locations PB4 to PB1. Register A 120 is then shifted left three places, so that D4 is in position PA4. Register B 130 is shifted right one place so that D3 is in location PB3, D2 is in PB2, and D1 is in PB1. Register A 122 is merged 144 with register B 132 to give the desired data located in the proper position in register R 110. The merge 144 was done by either overwriting locations PA3 to PA1 in register A 122 with locations PB3 to PB1 in register B 132 or the appropriate positions in register B 132 were overwritten by the appropriate places in register A 122. In the alternative, the merge 144 may copy the contents of PA4 in register A 122 to position P4 in register R 110 and may copy the contents of PB3, PB2, and PB1 of register B 132 into locations P3, P2, and P1 of register R 110., 146340=FIG. 16 illustrates a simplified block diagram of the Sign (zero) Extension Block 690 of the present invention. FIG. 16 shows how each byte in the output is selected in a mux (1030, 1032, 1034, 1036) from \u201c0\u201d 688, rotate output 686 or signbit 684, depending on the size, e.g. size[2:0] 1042, the mask (for unaligned loads), e.g., mask[1] 1040, and opcode (the signal lsp_opc_ex3, although not shown is an input to each control block 1040, 1042, 1044, and 1046). The size array is an encoding:}",
+    "textBeforeTable": "Patent Citations In the foregoing specification, the invention has been described with reference to specific exemplary embodiments thereof. Other embodiments will be apparent to those of ordinary skill in the art. For example, the instructions may be 16 or 64 bits in length and the microprocessor may operate with 8, 16, 32, or 128 bit busses and words. Thus it is evident that various modifications and changes may be made thereunto without departing from the broader spirit and scope of the invention as set forth in the appended claims and their full scope of equivalents. Conclusion where LSU_SIZE_n is the encoding of data of size n bytes. The mask is used to mask the rotate output 686 (on a per byte basis), so that for unaligned loads, bytes below the lowest byte read are masked to \u201c0\u201d. This masking is merged in the same step as the sign/zero extension 690. 'define LSU_SIZE_1 3\u2032b000 'define LSU_SIZE_2 3\u2032b001 'define LSU_SIZE_4 3\u2032b011 'define LSU_SIZE_8 3\u2032b111 FIG. 16 illustrates a simplified block diagram of the Sign (zero) Extension Block 690 of the present invention. FIG. 16 shows how each byte in the output is selected in a mux (1030, 1032, 1034, 1036) from \u201c0\u201d 688, rotate output 686 or signbit 684, depending on the size, e.g. size[2:0] 1042, the mask (for unaligned loads), e.g., mask[1] 1040, and opcode (the signal lsp_opc_ex3, although not shown is an",
+    "textAfterTable": "International Business Machines Corporation Computer system accelerator for multi-word cross-boundary storage access US5386565 Jan 11, 1991 Jan 31, 1995 Hitachi, Ltd. Method and system for controlling/monitoring computer system having plural operating systems to run thereon US5423010 * Jan 24, 1992 Jun 6, 1995 C-Cube Microsystems Structure and method for packing and unpacking a stream of N-bit data to and from a stream of N-bit data words US5423050 Sep 23, 1994 Jun 6, 1995 Ncr Corporation Intermodule test across system bus utilizing serial test bus US5434804 Dec 29, 1993 Jul 18, 1995 Intel Corporation Method and apparatus for synchronizing a JTAG test control signal to an on-chip clock signal US5440705 Apr 30, 1990 Aug 8, 1995 Advanced Micro Devices, Inc. Address modulo adjust unit for a memory management unit for monolithic digital signal processor US5448576 Oct 29, 1992 Sep 5, 1995 Bull Hn Information Systems Inc. Boundary scan architecture extension US5452432 Jul 23, 1993 Sep 19,",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

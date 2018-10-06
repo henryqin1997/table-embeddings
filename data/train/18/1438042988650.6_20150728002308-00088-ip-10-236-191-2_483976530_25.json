@@ -1,0 +1,69 @@
+{
+    "relation": [
+        [
+            "Date",
+            "30 juil. 1999",
+            "13 mars 2002",
+            "11 juin 2004",
+            "17 f\ufffdvr. 2005",
+            "21 d\ufffdc. 2007",
+            "6 mai 2009",
+            "26 janv. 2011",
+            "4 mars 2013",
+            "11 nov. 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "SULP"
+        ],
+        [
+            "\ufffdv\ufffdnement",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Surcharge for late payment"
+        ],
+        [
+            "Description",
+            "Owner name: CALEB TECHNOLOGIES CORP., TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:YU, GANG;ARGUELLO, MICHAEL F.;REEL/FRAME:010142/0117 Effective date: 19990730",
+            "",
+            "",
+            "Year of fee payment: 4",
+            "Owner name: ACCENTURE GLOBAL SERVICES GMBH, SWITZERLAND Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:NAVITAIRE, INC.;REEL/FRAME:020279/0647 Effective date: 20071220",
+            "Year of fee payment: 8",
+            "Owner name: ACCENTURE GLOBAL SERVICES LIMITED, IRELAND Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:ACCENTURE GLOBAL SERVICES GMBH;REEL/FRAME:025700/0287 Effective date: 20100901",
+            "Year of fee payment: 12",
+            ""
+        ]
+    ],
+    "pageTitle": "Brevet US6314361 - Optimization engine for flight assignment, scheduling and routing of ... - Google\ufffdBrevets",
+    "title": "",
+    "url": "http://www.google.fr/patents/US6314361?hl=fr",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00088-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 484019367,
+    "recordOffset": 483976530,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{50215=\u201cA Decision Support Framework for Airline Flight Cancellations and Delays\u201d, by Ahmad I. Z. Jarrah, Gang Yu, Nirup Krishnamurthy, and Anada Rakshit, Transportation Science, vol. 27, No.3, August, pp 266-280, Operations Research Society of America (1993), proposes two separate models for re-routing aircraft in response to irregular operations. One model is provided to manage flight delays, and the other contemplates only flight cancellations. The models are presented as minimum cost network flow problems that can be solved readily. However, no integrated cancellation and delay process is presented. In contrast, the present invention addresses both cancellations and delays as it generates solutions, and handles all user requirements and operations constraints within a unified framework. Further, the current invention is not related to minimum cost network flow solution techniques., 51889=In \u201cBalancing User Preferences for Aircraft Schedule Recovery During Airline Irregular Operations\u201d, by Benjamin G. Thengvall, Jonathan F. Bard, and Gang Yu, submitted for publication (March, 1998), the authors present a time-space network for modeling the irregular operations re-routing of aircraft. The resulting model handles delays and cancellations simultaneously, and attempts to limit the disruptions to the original aircraft routings. This model is a network flow with side constraints, and it is solved with traditional network flow and integer programming algorithms. Once the problem is modeled, the corresponding mathematical program is solved with commercial, general purpose network and integer program solvers. In contrast, the invention under consideration within the Aircraft Optimization Engine solves the problem at hand differently. It employs a process that generates solutions through the execution of operations on the grounded aircraft routes. It also solves the problem more robustly because it does not limit flight delays to specific time intervals as in the above paper. Additionally, the current invention is more successful at limiting the number of disrupted routings due to the design of the operations. Furthermore, the operations can be executed much more quickly to generate solutions than the methods required to solve network flow models., 42732=Prior publications of general interest as background information include the following: \u201cModel To Reduce Airline Schedule Disturbances\u201d, by Dusan Teodorovic and Goran Stojkovic, Journal of Transportation Engineering, July/August (1995); \u201cSwapping Applications In A Daily Airline Fleet Assignment\u201d, by Kalyan T. Talluri, Transportation Science, Vol. 30, No.3, August (1996); \u201cOptimization And Persistence\u201d, by Gerald G. Brown, Robert F. Dell, and R. Kevin Wood, Institute For Operations Research, Interfaces 27: 5 September-October, pp. 15-37 (1997). \u201cReal-Time Decision Support For Integration Of Airline Flight Cancellations And Delays Part I: Mathematical Formulation\u201d, by Jia-Ming Cao and Adib Kanafani, Transportation Planning and Technology, Vol.20, pp. 183-199 (1997); \u201cReal-Time Decision Support For Integration Of Airline Flight Cancellations And Delays Part II: Algorithm And Computational Experiments\u201d, by Jia-Ming Cao and Adib Kanafani, Transportation Planning and Technology, Vol. 20, pp. 201-217 (1997); \u201cA Lagrangian Relaxation Approach to Assigning Aircraft to Routes in Hub and Spoke Networks\u201d, by Mark S. Daskin and Nichlaos D. Panayotopoulos, Transportation Science, vol.23, pp. 91-99, (1989); \u201cSystem Operations Advisor: A Real-Time Decision Support System for Managing Airline Operations at United Airlines\u201d by Ananda Rakshit, Nirup Krishnamurthy and Gang Yu, Interfaces 26: 2 March-April, pp.50-58, Institute for Operations Research and the Management Sciences (1996); \u201cModel For Operational Daily Airline Scheduling\u201d, by Dusan Teodorovic and Goran Stojkovic, Transportation Planning and Technology, vol. 14, pp.273-285, Gordon and Breach Science Publishers Inc. (1990); \u201cOptimal dispatching strategy on an airline network after a schedule perturbation\u201d, by Dusan Teodorovic and Slobodan Guberinic, North-Holland European Journal of Operational Research 15, pp. 178-182, Elsevier Science Publishers B.V. (1984); \u201cAmerican Airlines Arrival Slot Allocation System (ASAS)\u201d, by Alberto Vasquez-Marquez, Interfaces 21: 1 January-February, pp. 42-61, The Institute of Management Sciences (1991); \u201cThe Multi-Airport Ground-Holding Problem In Air Traffic Control\u201d, by Peter B. Vranas, Dimitris J. Bertsimas, and Amedeo R. Odoni, Operations Research, vol. 42, No. 2, March-April, Operations Research Society of America (1994); \u201cAirline Scheduling for the Temporary Closure of Airports\u201d, by Shangyao Yan and Chung-Gee Lin, Transportation Science, vol. 31, No. 1, pp. 72-82, Institute for Operations Research and the Management Sciences (1997); \u201cMultifleet routing and multistop flight scheduling for schedule perturbation\u201d, by Shangyao Yan and Yu-ping Tu, European Journal of Operational Research 103, pp. 155-169 (1997); \u201cA Decision Support Framework For Handling Schedule Perturbation\u201d, by Shangyao Yan and Dah-Hwei Yang, Transprn.-B, vol. 30, No. 6, pp.405-419, Elsevier Science Ltd. (1996); \u201cA Decision Support Framework For Multi-Fleet Routing And Multi-Stop Flight Scheduling\u201d, by Shangyao Yan and Hwei-Fwa Young, Transpn. Res.-A, vol. 30, No. 5, pp. 379-398, Elsevier Science Ltd. (1996); \u201cReal-Time Mission-Critical Decision Support Systems for Managing and Controlling Airlines' Operations\u201d, by Gang Yu, Proceedings of International Conference On Management Science and The Economic Development of China (Hong Kong, 1996); and \u201cOn the Airline Schedule Perturbation Problem Caused by the Ground Delay Program\u201d, by Songjun Luo and Gang Yu, Transportation Science, vol. 31, No. 4, November 1997, Institute for Operations Research and the Management Sciences (1997)., 51125=\u201cAn Optimization Model For Aircraft Routing In Response To Groundings And Delays\u201d, by Michael F. Arguello, Jonathan F. Bard, and Gang Yu, submitted for publication (March, 1997), introduces a time-band model for re-routing aircraft in response to irregular operations. The model approximates the operational problem, integrates the handling of delays and cancellations, and is readily solvable. Further, the model is a minimum cost network flow with side constraints, and is solved through use of traditional network flow algorithms that are commercially available in general purpose network and integer program solvers. However, there is no constraint to affect a minimum number of flight routes, and no ability to meet real-time requirements.}",
+    "textBeforeTable": "Citations de brevets The Reverse Binary Operations proceed exactly like the Binary Operations in FIGS. 6A and 6B with the following exceptions. After logic step 105, proceed directly to logic step 109, skipping logic steps 106, 107, and 108. Additionally, after logic step 113, logic path 114 is skipped and the logic flow process proceeds directly to logic step 126, where it is determined if more cancellation sequences exist in G. If so, logic step 127 is skipped and the logic flow process continues to logic step 109. If not, then the logic flow process skips logic steps 130 and 135, and continues to logic step 136. In general, these modifications avoid the Swap and its combination operations which are performed in the Binary Operations, and need not be repeated in the Reverse Binary Operations. The Reverse Binary Operations can be entered immediately after logic step 44 in FIG. 3. After logic step 44, the Grounded Aircraft Route and the Available Aircraft Routes are respectively re-labeled as Available Aircraft Route and Grounded Aircraft Routes. The Reverse Binary Operations then are entered. Upon completion of the Reverse Binary Operations, the Grounded Aircraft Routes and the Available Aircraft Route are re-labeled so that the Available Aircraft Route becomes the Grounded Aircraft Route, and the Grounded Aircraft Routes become Available Aircraft Routes according to their original labels. Thereafter, the Three-Way Operation is entered at logic step 45. Recall that for the",
+    "textAfterTable": "Hitachi, Ltd. Method for facility location US5897620 8 juil. 1997 27 avr. 1999 Priceline.Com Inc. Method and apparatus for the sale of airline-specified flight tickets US5913912 28 mai 1996 22 juin 1999 Fujitsu Limited Flight strips management method and system EP0743580A1 19 mars 1996 20 nov. 1996 The Boeing Company Least time alternate destination planner EP0826946A1 26 ao\ufffdt 1997 4 mars 1998 SEXTANT AVIONIQUE (Soci\ufffdt\ufffd Anonyme) Method for assisting the piloting of an aircraft Citations hors brevets R\ufffdf\ufffdrence 1 Ahmad I. Z. Jarrah, Gang Yu, Nirup Krishnamurthy, and Anada Rakshit, \"A Decision Support Framework for Airline Flight Cancellations and Delays\", Transportation Science, vol. 27, No. 3, pp. 266-280, Operations Research Society of America (1993) United States. 2 Alberto Vasquez-Marquez, \"American Airlines Arrival Slot Allocation System (ASAS)\", Interfaces 21:1 Jan.-Feb., pp. 42-61, The Institute of Management Sciences (1991) United States. No month. 3",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,30 @@
+{
+    "relation": [
+        [
+            "Opciones",
+            "On",
+            "Off"
+        ],
+        [
+            "Descripci\u00f3n",
+            "Enables generating the detailed server status.",
+            "Disables generating the detailed server status."
+        ]
+    ],
+    "pageTitle": "Gu\u00eda de Administraci\u00f3n del Sistema",
+    "title": "",
+    "url": "https://logan.fedorapeople.org/pub/Spanish/Guias_en_proceso_de_traduccion/System_Administrators_Guide/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00061-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 877697155,
+    "recordOffset": 877504323,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Tabla 13.7. Available ExtendedStatus options Off. Tabla\u00a013.7, \u201cAvailable ExtendedStatus options\u201d. The default option is option has to be a valid keyword as described in The ExtendedStatus option ExtendedStatus directive allows you to enable detailed server status information. It takes the following form: The ExtendedStatus ErrorLog logs/error_log Ejemplo 13.35. Using the ErrorLog directive logs/error_log /etc/httpd/ by default). The default option is ServerRoot directive (that is, path refers to a log file, and can be either absolute, or relative to the directory that is specified by the The ErrorLog path ErrorLog directive allows you to specify a file to which the server errors are logged. It takes the following form: The ErrorLog ErrorDocument 404 /404-not_found.html ErrorDocument 403 \"Access Denied\"  Ejemplo 13.34. Using the ErrorDocument directive  \"). action can be either a URL (both local and external), or a message string enclosed in double quotes (that is, 500 (Internal Server Error). The 404 (Not Found), or 403 (Forbidden), error-code has to be a valid code such",
+    "textAfterTable": "Ejemplo 13.36. Using the ExtendedStatus directive ExtendedStatus On Group The Group directive allows you to specify the group under which the httpd service will run. It takes the following form: Group group The group has to be an existing UNIX group. The default option is apache. Note that Group is no longer supported inside <VirtualHost>, and has been replaced by the SuexecUserGroup directive. Ejemplo 13.37. Using the Group directive Group apache HeaderName The HeaderName directive allows you to specify a file to be prepended to the beginning of the server-generated directory listing. It takes the following form: HeaderName filename The filename is a name of the file to look for in the requested directory. By default, the server looks for HEADER.html. Ejemplo 13.38. Using the HeaderName directive HeaderName HEADER.html HostnameLookups The HostnameLookups directive allows you to enable automatic resolving of IP addresses. It",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

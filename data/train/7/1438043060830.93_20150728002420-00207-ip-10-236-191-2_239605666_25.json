@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Number",
+            "Status",
+            "Submitted",
+            "By",
+            "Title",
+            "Details",
+            "Comments",
+            "Impact",
+            "Resolution"
+        ],
+        [
+            "104",
+            "Resolved",
+            "2 Nov 2000",
+            "Chikara Konno (konno@fnshp.tokai.jaeri.go.jp)",
+            "PDF same as CDF for law-7 charged-particle emission",
+            "I think that acer.8863 and acer.8864 should be cut since PDF data become the same as CDF data in the angular distribution of the particle production data for law 7....",
+            "The problem was an incorrect pointer for the statement that readjusted the normalization and adjusted the number of significant figures for the PDF in the routine for charged-particle emission in acer.",
+            "Only affects ACE files for evaluations using Law 7 for describing the energy-angle emission of secondary charged particles. The one case of this in ENDF/B-VI is alpha emission from the (n,2n)3alpha reaction in Be-9.",
+            "Fixed in up28 (5 Nov 2000)."
+        ]
+    ],
+    "pageTitle": "",
+    "title": "",
+    "url": "http://t2.lanl.gov/nis/codes/njoy99/Issues.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00207-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 239637803,
+    "recordOffset": 239605666,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{85610=Fixed in up32 (5 Nov 2000)., 102461=Fixed in up35 (8 Feb 01), 240101=Fixed in up87 (02 Jul 03)., 237678=Fixed in up86 (10 Dec 02)., 97817=Fixed in up45 (8 Apr 01) and up46 (9 Apr 01)., 95399=Fixed in up31 (5 Nov 2000)., 88018=Fixed in up28 (5 Nov 2000)., 116190=Fixed in up43 (27 Mar 01)., 89926=Of the changes that Ulrich proposed, some had already been included in up20 in August before he made his report, but he also discovered that the pointer to the moreio call was not being incremented as new pages were brought in, which had the affect of losing some of the words further down in the record and clobbering the first part of the record that was read in earlier. The problem only occurs for very long records like those in the very detailed Be-9 evaluation from EFF-3.0., 39353=21 Jul 2000, 235387=Fixed in up85 (25 Feb 02)., 236459=Gary Russell (Manual Lujan Center, LANL), 72102=Fixed in up23, up24, and up25 (28 Sep 2000 and 11 Oct 2000)., 193272=Fixed in up72 (03 Sep 02)., 201238=Fixed in up75 (09 Oct 02)., 66064=28 Sep 2000, 207597=May have some small effect for capture at high energies in U-238, but this has not been quantified. It does help in reducing worries with code intercomparisons a bit., 67392=Fixed in up21 (28 Sep 2000)., 118345=Fixed in up44 (29 Mar 01)., 46366=3 Aug 2000, 86400=2 Nov 2000, 218610=Fixed in up80 (10 Dec 02)., 186686=Fixed in up69 (07 Dec 01)., 81589=17 Oct 2000, 96190=23 Jan 01, 124822=Fixed in up49 (9 Apr 01)., 72923=11 Oct 2000, 150831=20 Jul 01, 142822=Fixed in up56 (12 Jun 01)., 147191=Fixed in up57 (12 Jun 01)., 64028=16 Sep 2000, 135043=12 Jun 01, 175594=Fixed in up66 (12 Feb 02)., 153260=24 Sep 01, 130157=13 Apr 01, 53484=Fixed in up18 and up19 (3 Aug 2000)., 79434=6 Oct 2000, 101112=5 Feb 01, 103248=8 Feb 01, 246477=Fixed in up90 (06 Aug 03)., 127145=Fixed in up50 (9 Apr 01)., 74552=Fixed in up25 (11 Oct 2000)., 36504=Fixed in up15 (31 Jul 2000)., 113045=This is easy to fix, and we had already made this change in NJOY 2001. Note that when running these kinds of diffs between listings made on different computers, there will always be a large number of differences because the random number sequences will be different. This also will change with NJOY 2001., 122681=Fixed in up48 (9 Apr 01)., 129303=Fixed in up51 (12 Apr 01)., 132668=11 Jun 01, 78644=Fixed in up27 (27 Oct 2000), 75341=12 Oct 2000, 195344=Fixed in up73 (03 Sep 02)., 191008=Fixed in up71 (25 Aug 02)., 138413=Fixed in up55 (12 Jun 01)., 127933=12 Apr 01, 80800=Fixed in up30 (5 Nov 2000), 233138=Fixed in up84 (30 Sep 02)., 35389=23 Jul 2000, 207913=Fixed in up78 (10 Oct 02)., 136387=Fixed in up54 (12 Jun 01)., 205532=Fixed in up77 (11 Oct 02)., 184027=Only on people working with EAF-2001., 121478=30 Mar 01, 167508=07 Dec 01, 113704=Fixed in up42 (27 Mar 01)., 244325=Fixed in up89 (29 Jul 03)., 83838=25 Oct 2000, 109422=Fixed in up40 (23 Mar 01)., 77369=27 Oct 2000, 154820=Fixed in up60 (24 Sep 01)., 188783=Fixed in up70 (20 Feb 02)., 173234=Affects runs using EAF2001 for nuclide production calculations., 182093=Fixed in up68 (18 Apr 02)., 104497=Fixed in up36 (8 Feb 01), 22966=Fix radionuclide production for EAF2001, 63245=Fixed in up20 (16 Sep 00)., 37293=31 Jul 2000, 70029=Fixed in up22 (28 Sep 2000)., 47435=Fixed in up18 (3 Aug 2000)., 111353=Fixed in up41 (27 Mar 01)., 163005=28 Sep 01, 40813=Fixed in up15 for HEATR and up16 for GROUPR (21 Jul 2000)., 203274=Fixed in up76 (09 Oct 02)., 148551=Using diff to compare results from NJOY99 and NJOY2001 shows small differences in multigroup results and differences in the ACER energy grids., 179977=Fixed in up67 (12 Feb 02)., 166719=Fixed in up63 (15 Oct 01)., 230607=Fixed in up83 (12 Feb 03)., 226623=Fixed in up81 (02 Dec 02)., 83048=Fixed in up29 (5 Nov 2000)., 165082=15 Oct 01, 164228=Fixed in up62 (28 Sep 01)., 120690=Fixed in up47 (9 Apr 01)., 212256=Fixed in up79 (10 Oct 02)., 134212=Fixed in up53 (11 Jun 01)., 173447=Fixed in up65 (10 Dec 01)., 101927=When we increased the number of gamma groups allowed in up25, we forgot to reset the maximum value that is used by the error check. Just change the value 150 to 400 in groupr.2000., 106881=Fixed in up37 (reconr), up38 (njoy), and up39(gaminr), all 8 Feb 01., 58982=Error message installed in up20 (16 Aug 2000), but that doesn't really solve the problem!, 125610=9 Apr 01, 158119=25 Sep 01, 148045=10 Jul 01, 93388=2 Oct 2000, 76579=Fixed in up26 (12 Oct 2000), 242338=Fixed in up88 (28 Jul 03)., 228568=Fixed in up82 (28 Jan 03)., 183732=This was needed for EAF-2001. The teperature field is not being used for resonance reconstruction, but it is passed to the output file for later use., 107712=22 Mar 01, 197371=Fixed in up74 (03 Sep 02)., 152406=Fixed in up59 (20 Jul 01)., 88808=15 Nov 2000, 43297=Fixed in up17 (31 Jul 2000)., 54281=11 Aug 2000, 159482=Fixed in up61 (25 Sep 01)., 61991=16 Aug 00, 131814=Fixed in up52 (13 Apr 01)., 68177=10 Jun 1999, 149977=Fixed in up58 (10 Jul 01)., 56456=Fixed in up20 (16 Aug 2000)., 119134=13 Mar 2001, 168902=Fixed in up64 (07 Dec 01)., 59832=16 Aug 2000}",
+    "lastModified": "Fri, 06 May 2011 20:47:29 GMT",
+    "textBeforeTable": "Fixed in up18 (3 Aug 2000). Resolution Probably only this one material Impact Must set the nonlin flag. Comments Problems seen in nubar. Details Interpolation for JENDL-3.2 U-235 nubar Title Bob MacFarlane (ryxm@lanl.gov) By 3 Aug 2000 Submitted Resolved Status 88 Number Fixed in up18 (3 Aug 2000). Resolution This is a trivial cosmetic patch and will not affect any results. Impact Just a small patch required. Comments The ACER message about energy-dependent yields gives MT=0 for the reaction",
+    "textAfterTable": "Number 90 Status Resolved Submitted 11 Aug 2000 By Waclaw Gudowski (wacek@neutron.kth.se) Title Error in MCNP/sabcol reported for nonthermal problem Details MCNP crashes with error in sabcol when using data from ENDF/B-VI Release 6. Comments There turned out to be two problems here. When processing angular distributions using ltt=3 with newfor=0 (MCNP4B compatibility), there was an extra tosend that caused the code to skip over the first reaction after the elastic MF=4. This lead to a bad tyr=0 value, which somehow causes MCNP to issue a confusing error message about sabcol, even when no S(alpha,beta) data are being used. Second, the code was finding the wrong value for the lct parameter (lab or cm) for sections of File 4 that were fully isotropic. This also can result in an incorrect value for the ACE tyr parameter, which leads to the strange message from sabcol. This problem was introduced",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

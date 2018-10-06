@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Release",
+            "Release 3.2",
+            "Release 3.3.0",
+            "Release 3.4.0",
+            "Release 3.5.0",
+            "Release 3.7.0",
+            "Release 3.9.0",
+            "Release 4.2.0"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "This command was supported in VRF and VRF neighbor configuration modes. The vpnv4 unicast keywords were added.",
+            "The labeled-unicast keyword was supported",
+            "The following keywords were added: vpnv6 unicast ipv4 tunnel ipv4 mdt ipv6 labeled-unicast",
+            "The Address Family Submode Support table was added.",
+            "L2VPN Address Family support was added.",
+            "The mvpn SAFI was introduced under IPv4 and IPv6."
+        ]
+    ],
+    "pageTitle": "Cisco IOS XR Routing Command Reference for the Cisco XR 12000 Series Router, Release 4.2.x - BGP Commands on Cisco IOS XR Software [Cisco XR 12000 Series Router] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/xr12000/software/xr12k_r4-2/routing/command/reference/b_routing_cr42xr12k/b_routing_cr42xr12k_chapter_01.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00276-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 380531391,
+    "recordOffset": 380419776,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{279=For detailed information about BGP concepts, configuration tasks, and examples, see the Implementing BGP module in the Cisco\u00a0IOS\u00a0XR Routing Configuration Guide for the Cisco\u00a0XR\u00a012000 Series Router.}",
+    "TableContextTimeStampAfterTable": "{294703=The following example shows how to divide the autonomous system into autonomous systems 4001, 4002, 4003, 4004, 4005, 4006, and 4007 with the confederation identifier 5. Neighbor 10.2.3.4 is a router inside the confederation. Neighbor 172.20.16.6 is outside the routing domain confederation. To the outside world, there appears to be a single autonomous system with the number 5., 48197=Use the additional-path selection command with an appropriate route-policy to calculate backup paths and to enable Prefix Independent Convergence (PIC) functionality. Refer BGP Prefix Independent Convergence Unipath Primary/Backup section in Cisco\u00a0IOS\u00a0XR Routing Configuration Guide for the Cisco\u00a0XR\u00a012000 Series Router for details on the PIC functionality., 145344=Hub and spoke VPN networks require looping back of routing information to the hub PE through the hub customer edge (CE). See Cisco\u00a0IOS\u00a0XR MPLS Configuration Guide for the Cisco\u00a0XR\u00a012000 Series Router for information on hub and spoke VPN networks. This looping back, in addition to the presence of the PE ASN, causes the looped-back information to be dropped by the hub PE., 710892=The following example shows how to allow a BGP connection to neighbor 172.20.16.6 of up to 255 hops away:, 1046282=(Optional) Size, in bytes, of the receive buffer in BGP. Range is 512 to 131072., 832846=Use the maximum-paths command to allow the BGP protocol to install multiple paths into the routing table for each prefix. Multiple paths are installed for external peers that are from the same autonomous system and are equal cost (according to the BGP best-path algorithm). Similarly, multiple paths are installed for internal peers that are equal cost based on the BGP best-path algorithm. The IGP metric to the BGP next hop is the same as the best-path IGP metric unless the router is configured for unequal cost iBGP multipath or eiBGP multipath. See Implementing BGP in the Cisco\u00a0IOS\u00a0XR Routing Configuration Guide for the Cisco\u00a0XR\u00a012000 Series Router for information on the BGP best-path algorithm., 312949=suppress : 2000, 139393=See Cisco\u00a0IOS\u00a0XR MPLS Configuration Guide for the Cisco\u00a0XR\u00a012000 Series Routerfor information on using the allocate-label command for L3VPN inter-AS deployments and carrier-supporting-carrier IPv4 BGP label distribution., 306126=The following example shows that autonomous systems 1095, 1096, 1097, and 1098 belong to a single confederation:, 1045963=Size, in bytes, of the receive-side socket buffer. Range is 512 to 131072., 318509=The following example shows how to set the half-life value to 30 minutes, the reuse value to 1500, the suppress value to 10000, and the max-suppress-time to 120 minutes:, 432333=For more details on router IDs, see the Cisco\u00a0IOS\u00a0XR Routing Configuration Guide for the Cisco\u00a0XR\u00a012000 Series Router}",
+    "textBeforeTable": "Syntax Description accept-own no [inheritance-disable] accept-own To enable handling of self-originated VPN routes containing ACCEPT_OWN community attribute, use the accept-own command in neighbor VPNv4 or VPNv6 address family configuration mode. To disable this functionality, either use the no form of this command or use the command with inheritance-disable keyword. accept-own weight reset-on-import disable weight reset-on-import weight vrf (BGP) username (rpki-server) use update-source update out logging update in error-handling extended update in error-handling basic disable update limit sub-group update limit address-family update limit ttl-security transport (rpki-server) timers bgp timers (BGP) table-policy speaker-id soft-reconfiguration inbound socket send-buffer-size socket receive-buffer-size site-of-origin (BGP) shutdown (rpki-server) shutdown (BGP) show svd state show svd role show protocols (BGP) show bgp vrf imported-routes show bgp update-group show bgp truncated-communities show bgp table show bgp summary nsr show bgp summary show bgp",
+    "textAfterTable": "Task ID Operation bgp read, write Examples This example shows how to enable handling of accept-own community:  RP/0/0/CPU0:router#configure RP/0/0/CPU0:router(config)#router bgp 100 RP/0/0/CPU0:router(config-bgp)#neighbor 10.2.3.4 RP/0/0/CPU0:router(config-bgp-nbr)#address-family vpnv4 unicast RP/0/0/CPU0:router(config-bgp-nbr-af)#accept-own additional-paths install backup Note Effective with Release 4.0.0, the additional-paths install backup command was deprecated and replaced by the additional-paths selection command. See the additional-paths selection command for more information. To install a backup path into the forwarding table and provide prefix independent convergence (PIC) in case of a PE-CE link failure, use the additional-paths install backup command in an appropriate address family configuration mode. To prevent installing the backup path, use the no form of this command. To disable prefix independent convergence, use the disable keyword. additional-paths install backup",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Category",
+            "Valid Values",
+            "Example",
+            "Syntax",
+            "Default",
+            "Context"
+        ],
+        [
+            "Value",
+            "SSLv2, SSLv3, TLSv1, ALL",
+            "To specify only SSL version 3.0, set this directive to the following: SSLProtocol +SSLv3",
+            "SSLProtocol [+-] protocol",
+            "SSLProtocol ALL",
+            "server configuration, virtual host"
+        ]
+    ],
+    "pageTitle": "Enabling SSL for Oracle HTTP Server",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B14099_19/web.1012/b14009/ssl.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988511.77/warc/CC-MAIN-20150728002308-00164-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70575343,
+    "recordOffset": 70551746,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{14539=This feature adds support SSL protocol features called variously \"step-up\", \"server gated crypto\" or \"global server ID\". \"Step-up\" is a feature that allows old, weak encryption browsers, to \"step-up\" so that public keys greater than 512 bits and bulk encryption keys greater than 64 bits can be used in the SSL protocol. This means that server X.509 certificates that contain public keys in excess of 512 bits and which contain \"step-up\" digital rights can now be used by Oracle Application Server. Such certificates are often called \"128 bit\" certificates, even though the certificate itself typically contains a 1024 bit certificate. The Verisign Secure Site Pro is an example of such a certificate which can now be used by Oracle Application Server., 76361=The expression must match the following syntax (given as a BNF grammar notation):}",
+    "lastModified": "Sat, 06 Aug 2005 19:06:04 GMT",
+    "textBeforeTable": "Specifies SSL protocol(s) for mod_ossl to use when establishing the server environment. Clients can only connect with one of the specified protocols. 9.4.1.11 SSLProtocol server configuration Context SSLPassPhraseDialog builtin Default SSLPassPhraseDialog exec:/usr/local/apache/sbin/pfilter Example SSLPassPhraseDialog type Syntax exec:path/to/program - when the server is started, mod_ossl calls an external program configured for each wallet. This program is invoked with two arguments: servername:portnumber and RSA or DSA. builtin: when the server is started, mod_ossl prompts for a password for each wallet. This cannot be used when Oracle HTTP Server is managed by OPMN. No user interaction is allowed when Oracle HTTP Server is started by OPMN. Valid Values Value Category Type of",
+    "textAfterTable": "9.4.1.12 SSLRequire Denies access unless an arbitrarily complex boolean expression is true. Category Value Syntax SSLRequire expression Default None Context directory The expression must match the following syntax (given as a BNF grammar notation): expr ::= \"true\" | \"false\" \"!\" expr expr \"&&\" expr expr \"||\" expr \"(\" expr \")\" comp ::=word \"==\" word | word \"eq\" word word \"!=\" word |word \"ne\" word word \"<\" word |word \"lt\" word word \"<=\" word |word \"le\" word word \">\" word |word \"gt\" word word \">=\" word |word \"ge\" word word \"=~\" regex word \"!~\" regex wordlist ::= word wordlist \",\" word word ::= digit cstring variable function digit ::= [0-9]+ cstring ::= \"...\" variable ::= \"%{varname}\" Table 9-3 and Table 9-4 list standard and SSL variables. These are valid values for varname.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

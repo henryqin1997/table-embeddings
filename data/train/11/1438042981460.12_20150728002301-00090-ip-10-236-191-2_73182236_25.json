@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "name",
+            "config-ref",
+            "heartbeat-port",
+            "heartbeat-address",
+            "heartbeat-enabled"
+        ],
+        [
+            "Default",
+            "none",
+            "default config element\u2019s name attribute value, server-config",
+            "none; value automatically generated",
+            "none; value automatically generated",
+            "false (developer profile) true (cluster and enterprise profiles)"
+        ],
+        [
+            "Description",
+            "Specifies the name of the cluster.",
+            "References the configuration used by the cluster.",
+            "Specifies the communication port the Group Management Service uses to listen for group events. Must be a valid port number.",
+            "Specifies the address the Group Management Service uses to listen for group events. Must be a multicast address.",
+            "(optional) If true, the Group Management Service is started as a lifecycle module in each server instance in the cluster and in the Domain Administration Server. The Domain Administration Server participates in each cluster that has this attribute set to true."
+        ]
+    ],
+    "pageTitle": "Chapter\u00a01 The domain.xml File (Sun GlassFish Enterprise Server 2.1 Administration Reference)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19316-01/820-4338/abhaq/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00090-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73256271,
+    "recordOffset": 73182236,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{549164=Specifies a comma-separated list of Cache-Control response directives. For a list of valid directives, see section 14.9 of the document at http://www.ietf.org/rfc/rfc2616.txt., 19702=1440 (cluster and enterprise profiles), 262500=32768, 327285=The LOCAL setting implicitly sets up a 1:1 relationship between an Enterprise Server instance and a Message Queue broker. When you create an Enterprise Server cluster, a Message Queue cluster is automatically created as well. During cluster creation, each instance in the Enterprise Server cluster is automatically configured with a broker in the Message Queue cluster, and a unique broker port is determined., 269122=1072, 215923=1500, 223608=2048, 228451=Port number on which the listener listens. Legal values are 1 - 65535. On UNIX, creating sockets that listen on ports 1 - 1024 requires superuser privileges. Configuring an SSL listener to listen on port 443 is standard., 338917=Specifies the port number on with the naming service (RMI registry) listens for RMI client connections. The only use of this naming service is to download the RMI stubs. If the default port is occupied, a free port is used. Legal values are 1 - 65535. On UNIX, creating sockets that listen on ports 1 - 1024 requires superuser privileges., 215238=2000, 269188=(optional) Port number for the listener. Legal values are 1 - 65535. On UNIX, creating sockets that listen on ports 1 - 1024 requires superuser privileges., 224648=1024}",
+    "lastModified": "Thu, 03 Feb 2011 09:34:51 GMT",
+    "textBeforeTable": "access-log Attributes Table\u00a01\u20131 The following table describes attributes for the access-log element. Attributes none Subelements http-service Superelements Defines access log settings for each http-access-log subelement of each virtual-server. access-log A A B C D E F GH I J K L M N O P R S T U V W Alphabetical List of Elements . . description . system-property . . load-balancer P . load-balancers . . . . health-checker . . . server-ref . . . . health-checker . . . cluster-ref . . lb-config P . lb-configs . . . . module-log-levels P . . . log-service P . . . auth-realm P . . . . ssl . . . jmx-connector P . . node-agent P . node-agents . . . . description . . . system-property . . . application-ref . . . resource-ref . . . . health-checker . . . server-ref . clusters . . cluster P . . . . description . . . system-property . . . resource-ref . . . application-ref . . server P . servers . . . . description . . . system-property . . . . . . description . . .",
+    "textAfterTable": "action Specifies the action of a management rule. The action is implemented as an MBean. Superelements management-rule Subelements none Attributes The following table describes attributes for the action element. Table\u00a01\u20132 action Attributes Attribute\u00a0 Default\u00a0 Description\u00a0 action-mbean-name none\u00a0 Specifies the name of the mbean that performs the action of a management rule. This MBean must implement javax.management.NotificationListener. admin-object-resource Defines an administered object for an inbound resource adapter. Superelements resources Subelements The following table describes subelements for the admin-object-resource element. Table\u00a01\u20133 admin-object-resource Subelements Element\u00a0 Required\u00a0 Description\u00a0 description zero or one\u00a0 Contains a text description of this element.\u00a0 property zero or more\u00a0 Specifies a property or a",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

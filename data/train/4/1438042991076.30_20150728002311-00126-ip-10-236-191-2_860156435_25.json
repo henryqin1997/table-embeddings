@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Name",
+            "attribute",
+            "value"
+        ],
+        [
+            "Type",
+            "String",
+            "String"
+        ],
+        [
+            "Description",
+            "the CSS attribute, in camel-case (\"fontSize\", not \"font-size\"), as listed here",
+            "the CSS value"
+        ]
+    ],
+    "pageTitle": "Class ToggleButton \u00a0 | \u00a0 Apps Script \u00a0 | \u00a0 Google Developers",
+    "title": "",
+    "url": "https://developers.google.com/apps-script/reference/ui/toggle-button",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991076.30/warc/CC-MAIN-20150728002311-00126-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 860184103,
+    "recordOffset": 860156435,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{1004=Deprecated. The UI service was deprecated on December 11, 2014. To create user interfaces, use the HTML service instead.}",
+    "TableContextTimeStampAfterTable": "{75041=Last updated May 19, 2015.}",
+    "lastModified": "Tue, 19 May 2015 03:14:03 GMT",
+    "textBeforeTable": "Parameters ServerHandler for more information. In addition, the values of certain widgets can be sent up with the event as well, as \"callback elements.\" See the documentation of } var source = parameter.source; // the id of the widget that fired this event. var eventType = parameter.eventType; // the type of event, in this case \"blur\". var parameter = eventInfo.parameter; function handlerFunction(eventInfo) { } return app; app.add(button); button.addBlurHandler(handler); var handler = app.createServerHandler(\"handlerFunction\"); var button = app.createButton(\"a button\"); var app = UiApp.createApplication(); function doGet() {   The handler passes back some information to the server about what happened. This information can be accessed as follows:   Note that you can have multiple handlers for the same event on the same widget. They will be called in the order that they were added to the widget, although ServerHandlers may appear to happen simultaneously.  Add a handler for blur events (losing keyboard focus).   Deprecated. This function is deprecated and should not be used in new scripts.  addBlurHandler(handler)   Deprecated methods      Sets the width of this ToggleButton. ToggleButton setWidth(width)   Sets whether this ToggleButton is visible. ToggleButton setVisible(visible)   Sets the hover title of this ToggleButton. ToggleButton setTitle(title)   Set the display text of this ToggleButton. ToggleButton setText(text)   Sets the text",
+    "textAfterTable": "addClickHandler(handler) Deprecated. This function is deprecated and should not be used in new scripts. Add a handler for click events. Note that you can have multiple handlers for the same event on the same widget. They will be called in the order that they were added to the widget, although ServerHandlers may appear to happen simultaneously. The handler passes back some information to the server about what happened. This information can be accessed as follows:   function doGet() { var app = UiApp.createApplication(); var button = app.createButton(\"a button\"); var handler = app.createServerHandler(\"handlerFunction\"); button.addClickHandler(handler); app.add(button); return app; } function handlerFunction(eventInfo) { var parameter = eventInfo.parameter; // the type of event, in this case \"click\". var eventType = parameter.eventType; // the id of the widget that fired this event. var source = parameter.source; // mouse x and y position relative to the widget that fired the event. var x = parameter.x; var y = parameter.y; // mouse x and y position within the browser window's client area. var clientX = parameter.clientX; var clientY = parameter.clientY; // mouse x and y position within the user's display. var screenX = parameter.screenX; var screenY = parameter.screenY; // the mouse button used. Left is 1, right is 2, and middle is 4. var button = parameter.button; // whether the various modifier keys were also pressed (true or false) var shift = parameter.shift; var alt = parameter.alt;",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

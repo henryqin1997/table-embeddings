@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Pair",
+            "EUR / USD",
+            "GBP / USD",
+            "USD / JPY",
+            "EUR / CHF",
+            "EUR / GBP"
+        ],
+        [
+            "Ask",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "Bid",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "Ch.%",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ]
+    ],
+    "pageTitle": "Capital.gr",
+    "title": "",
+    "url": "http://english.capital.gr/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00162-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 86531255,
+    "recordOffset": 86506141,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MAJOR CURRENCIES } } return i.toString() + \",\" + f; { else } return \"-\" + i.toString() + \",\" + f; { if (AValue < 0) }; } } f = f + \"0\"; { for (var ii=0; ii <= ADec-f.length; ii++) { else } } f = \"0\" + f.toString(); { for (var ii=0; ii <= ADec-f.length; ii++) { if (parseInt(f) < power) { if (f.toString().length < ADec) //f = f.substring(0, ADec) f = Math.abs(parseInt(f)).toString(); f = Math.round(f * power); f = Math.abs(f)-Math.abs(i); var power = Math.pow(10, ADec); var f = Math.abs(parseFloat(AValue)); var i = Math.abs(parseInt(AValue)); if (!ADec) { ADec = 2; } { function formatFloatJ(AValue, ADec) } }); } } $('#'+symbol).addClass(\"wmBlackPos\") { else } $('#'+symbol).addClass(\"wmRedPos\") { else if (change2 < 0) } $('#'+symbol).addClass(\"wmGreenPos\") { if(change2 > 0) $('#'+symbol+' .wc').text(change); $('#'+symbol+' .wp').text(perc+'%'); $('#'+symbol+' .wv').text(last); change = formatFloatJ(change,2); change2 = change; change = $(this).attr(\"c\"); perc = formatFloatJ(perc,2); perc = $(this).attr(\"p\"); last = formatFloatJ(last,2); last = $(this).attr(\"l\"); { if($('#'+symbol).length > 0) symbol = symbol.replace(\"_\",\"\"); symbol = symbol.replace(\"/\",\"\"); symbol = symbol.replace(\",\",\"\"); symbol = $(this).attr(\"n\"); { $(xml).find(\"s\").each(function() var change2; var change; var perc; var last; var symbol; { function parseXml(xml) } }); success: parseXml dataType: \"xml\", url: \"/services/stockValues/worldMarketsBoxNew.xml?a=\" + Math.round(Math.random() * 999999999999), type: \"GET\", $.ajax({ { function getDelayedData() } })// end getJson }//end textStatus} } //end for } } $('#fxcm'+aName).addClass(\"wmBlackPos\") { else } $('#fxcm'+aName).addClass(\"wmRedPos\") { else if (aChange2 < 0",
+    "textAfterTable": "0 0 0 0 0 0 0 0 0 0 REAL TIME STOCK QUOTES",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

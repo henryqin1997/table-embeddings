@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Property",
+            "bubbles",
+            "cancelable",
+            "currentTarget",
+            "target"
+        ],
+        [
+            "Value",
+            "false",
+            "false",
+            "The Object that defines the event listener that handles the event. For example, if you use myButton.addEventListener() to register an event listener, myButton is the value of the currentTarget.",
+            "The Object that dispatched the event; it is not always the Object listening for the event. Use the currentTarget property to always access the Object listening for the event."
+        ]
+    ],
+    "pageTitle": "FlexEvent - Adobe ActionScript\u00ae 3 (AS3 Flex) API Reference",
+    "title": "",
+    "url": "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/mx/events/FlexEvent.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00041-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 104647922,
+    "recordOffset": 104631528,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The properties of the event object have the following values: This event will only be dispatched when there are one or more relevant listeners attached to the dispatching object. The FlexEvent.ADD constant defines the value of the type property of the event object for an add event. Flash Player 9, AIR 1.1 Runtime Versions:\u00a0 Flex 3 Product Version:\u00a0 ActionScript 3.0 Language Version:\u00a0 public static const ADD:String = \"add\" Constant ADD Constant Detail cancelable:Boolean (default = false) \u2014 Specifies whether the behavior associated with the event can be prevented. \u00a0 bubbles:Boolean (default = false) \u2014 Specifies whether the event can bubble up the display list hierarchy. \u00a0 type:String \u2014 The event type; indicates the action that caused the event. Parameters Constructor. Flash Player 9, AIR 1.1 Runtime Versions:\u00a0 Flex 3 Product",
+    "textAfterTable": "ADD_FOCUS_MANAGER Constant \u00a0 public static const ADD_FOCUS_MANAGER:String = \"addFocusManager\" Language Version:\u00a0 ActionScript 3.0 Product Version:\u00a0 Flex 4 Runtime Versions:\u00a0 Flash Player 10, AIR 1.5 The FlexEvent.ADD_FOCUS_MANAGER constant defines the value of the type property of the event object for an addFocusManager event. This event is dispatched from an IFocusManagerContainer when its focusManager is assigned. The properties of the event object have the following values: Property Value bubbles false cancelable false currentTarget The Object that defines the event listener that handles the event. For example, if you use myButton.addEventListener() to register an event listener, myButton is the value of the currentTarget. target The Object that dispatched the event; it is not always the Object listening for the event. Use the currentTarget property to always access the Object listening for the event. APPLICATION_COMPLETE Constant \u00a0 public static const APPLICATION_COMPLETE:String = \"applicationComplete\"",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

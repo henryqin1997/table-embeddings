@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Code or Value",
+            "40 to 21000",
+            "."
+        ],
+        [
+            "Value Description",
+            "Range of Values",
+            "Missing"
+        ],
+        [
+            "Count",
+            "796",
+            "4927"
+        ],
+        [
+            "Cumulative",
+            "796",
+            "5723"
+        ],
+        [
+            "Skip to Item",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "NHANES 2007 - 2008: Dietary Supplement Use 24-Hour: Individual Dietary Supplements -- First Day Data Documentation, Codebook, and Frequencies",
+    "title": "",
+    "url": "http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/DS1IDS_E.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00151-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 365005135,
+    "recordOffset": 364975171,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampBeforeTable": "{16190=Reasonable match (DSDMTCH=4) indicates that the product name may be incomplete or could be complete but other products of this brand also start with these same words so this cannot be assured. In these cases, the entered name is matched to either: a) the most frequently reported of these products in the NHANES 2007-2008 data, if this could be determined; b) the best selling product by this company that matches the entered name; or c) the most basic product by this company, as assessed by label wording., 20077=Product information is released from the in-house PLD as the NHANES Dietary Supplement Database (NHANES-DSD) which contains detailed information on the dietary supplements and antacids reported by survey participants since NHANES 1999. The NHANES-DSD release consists of three datasets which contain information on products: Dietary Supplement Product Information (DSPI) Dietary Supplement Ingredient Information (DSII) Dietary Supplement Blend Information (DSBI) The supplement ID numbers (DSDSUPID) located in files DS1IDS_E and DS2IDS_E of this release can be used to merge with the NHANES-DSD files. For more information on the NHANES-DSD, please refer to the documentation and release files located on the NHANES website: http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/quex07_08.htm., 5795=Sample weights for dietary intake data: The NHANES participants were selected on the basis of a national probability design. In order to increase the number of participants for specific demographic groups, a multi-stage, unequal probability of selection design was implemented. In 2007-2008, the NHANES oversamples African Americans, Mexican Americans, all Hispanics, low income persons, and persons 60 years and older. Sample weights are constructed that encompass the unequal probabilities of selection, as well as adjustments for non-participation by selected sample persons. In order to produce national, representative estimates, the appropriate sample weights must be used., 5086=For the 2007-2008 NHANES, there were 12,943 persons selected; of these 9,762 were considered respondents to the MEC examination and data collection. However, only 9,255 of the MEC respondents provided complete dietary intakes for Day 1. Furthermore, of those providing the Day 1 data, only 7,838 provided complete dietary intakes for Day 2., 34996=The objective of the dietary supplement component of the 24-hour dietary recall interviews is to obtain information from NHANES participants on the types and amounts of dietary supplements (DS) consumed during the 24-hour period prior to the interview (midnight to midnight). From 1999-2006, the dietary interviews only asked about food and beverages consumed. Beginning in 2007, data is now collected on the usage of all vitamins, minerals, herbals and other dietary supplements as well as non-prescription antacids, as part of the dietary interviews., 6864=Number of days of intake: Because two days of data are included in the 2007-2008 release, a variable has been included to indicate the number of days of intake available for each participant. The variable name is DRDINT., 35896=Title: Dietary Supplement Use 24-Hour: Individual Dietary Supplements -- First Day (DS1IDS_E ) Contact Number: 1-866-441-NCHS Years of Content: 2007 - 2008 First Published: July, 2010 Revised: NA Access Constraints: None Use Constraints: None Geographic Coverage: National Subject:Dietary interview dietary supplement component provides detailed dietary supplement intake information from NHANES participants. Record Source: NHANES 2007 - 2008 Survey Methodology: NHANES 2007 - 2008 is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S. Medium: NHANES Web site; SAS transport files, 33211=Similar to the format of food intake files, two types of supplement intake data are available from 24-hour dietary interview for the 2007-2008 survey cycle: Individual Dietary Supplements files and Total Dietary Supplements files. Each dietary supplement data file is accompanied by a PDF file containing its documentation, codebook, and frequencies. The documentation section of the file for each of the two types of dietary supplement data files is identical., 34431=The continuous NHANES has been collecting data on study participants\u2019 use of dietary supplements, in the past 30 days, during the Dietary Supplements Section (DSQ) in the household interview since 1999. However, prior to this data release, estimating total nutrient intakes from all sources (foods, beverages and DS), has been difficult because of the different data collection methods, referent time frames, and data formats. Now with these data collected using similar methods over the same time frame, nutrients from all sources can be easily combined. This will allow researchers to improve the total nutrient intake estimations as well as examine associations by nutrient source such as from foods versus supplements. The improved nutrient estimates will increase researchers\u2019 ability to examine nutrient-disease or nutrient-health associations and to estimate percentages of the population with intakes over or under various nutrient standards.}",
+    "TableContextTimeStampAfterTable": "{72980=Individual fatty acids: 4:0 (g) 6:0 (g) 8:0 (g) 10:0 (g) 12:0 (g) 14:0 (g) 16:0 (g) 18:0 (g) 16:1 (g) 18:1 (g) 20:1 (g) 22:1 (g) 18:2 (g) 18:3 (g) 18:4 (g) 20:4 (g) 20:5 n-3 (g) 22:5 n-3 (g) 22:6 n-3 (g)}",
+    "lastModified": "Fri, 09 May 2014 20:28:53 GMT",
+    "textBeforeTable": "Both males and females 0 YEARS - 150 YEARS Target: Dietary day one sample weight English Text: Dietary day one sample weight SAS Label: WTDRD1 Variable Name: WTDRD1 - Dietary day one sample weight Both males and females 0 YEARS - 150 YEARS Target: Respondent sequence number. English Text: Respondent sequence number SAS Label: SEQN Variable Name: SEQN - Respondent sequence number Codebook and Frequencies 3. Institute of Medicine. Dietary Reference Intakes: The Essential Guide to Nutrient Requirements. Washington, DC. National Academies Press, 2006 2. Centers for Disease Control and Prevention, National Center for Health Statistics. National Health and Nutrition Examination Survey Phone Follow-Up Dietary Interviewer Procedure Manual. Hyattsville, MD: U.S. Department of Health and Human Services, Centers for Disease Control and Prevention, 2008. Available from: http://www.cdc.gov/nchs/data/nhanes/nhanes_07_08/manual_dietarypfu.pdf [Accessed on: 5/25/10] 1. Centers for Disease Control and Prevention, National Center for Health Statistics. National Health and Nutrition Examination Survey MEC In-Person Dietary Interviewers Procedure Manual. Hyattsville, MD: U.S. Department of Health and Human Services, Centers for Disease Control and Prevention, 2008. Available from: http://www.cdc.gov/nchs/data/nhanes/nhanes_07_08/DIETARY_MEC.pdf [Accessed on: 5/25/10] References Note that all sample weights are",
+    "textAfterTable": "WTDR2D - Dietary two-day sample weight Variable Name: WTDR2D SAS Label: Dietary two-day sample weight English Text: Dietary two-day sample weight Target: Both males and females 0 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 1513.0983763 to 372117.36058 Range of Values 5202 5202 . Missing 521 5723 DR1DRSTZ - Dietary recall status Variable Name: DR1DRSTZ SAS Label: Dietary recall status English Text: Dietary recall status Target: Both males and females 0 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 1 Reliable and met the minimum criteria 5704 5704 2 Not reliable or not met the minimum criteria 0 5704 4 Reported consuming breast-milk 19 5723 5",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "structure",
+            "first_fieldname",
+            "args"
+        ],
+        [
+            "a GstStructure",
+            "the name of the first field to read",
+            "variable arguments"
+        ],
+        [
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "GstStructure: GStreamer 1.0 Core Reference Manual",
+    "title": "",
+    "url": "http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gstreamer/html/GstStructure.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00031-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 111414619,
+    "recordOffset": 111394913,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 24 Jun 2015 21:02:48 GMT",
+    "textBeforeTable": "Functions GstStructure GstStructure \u2014 Generic structure containing fields of names and values Top\u00a0\u00a0|\u00a0 Description\u00a0\u00a0|\u00a0 Object Hierarchy",
+    "textAfterTable": "GstStructure\u00a0* gst_structure_new_id_empty\u00a0() GstStructure\u00a0* gst_structure_new\u00a0() GstStructure\u00a0* gst_structure_new_valist\u00a0() GstStructure\u00a0* gst_structure_new_id\u00a0() GstStructure\u00a0* gst_structure_new_from_string\u00a0() GstStructure\u00a0* gst_structure_copy\u00a0() void gst_structure_free\u00a0() const gchar\u00a0* gst_structure_get_name\u00a0() gboolean gst_structure_has_name\u00a0() void gst_structure_set_name\u00a0() GQuark gst_structure_get_name_id\u00a0() gboolean gst_structure_id_get\u00a0() gboolean gst_structure_id_get_valist\u00a0() const GValue\u00a0* gst_structure_id_get_value\u00a0() void gst_structure_id_set_value\u00a0()",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

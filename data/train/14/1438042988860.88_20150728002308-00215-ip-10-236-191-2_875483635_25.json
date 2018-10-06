@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Name",
+            "TASKIDFoot 1",
+            "TASKNAME",
+            "TASKNUMBER",
+            "PRIORITY",
+            "OUTCOME",
+            "ASSIGNEDDATE",
+            "UPDATEDDATE",
+            "UPDATEDBY"
+        ],
+        [
+            "Type",
+            "VARCHAR2(64)",
+            "VARCHAR2(200)",
+            "NUMBER",
+            "NUMBER",
+            "VARCHAR2(100)",
+            "DATE",
+            "DATE",
+            "VARCHAR2(64)"
+        ]
+    ],
+    "pageTitle": "Introduction to Human Workflow Services",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E28280_01/dev.1111/e10224/bp_workflow.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.88/warc/CC-MAIN-20150728002308-00215-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 875543163,
+    "recordOffset": 875483635,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampAfterTable": "{43223=Section 34.1.11, \"Task Instance Attributes\", 173772=If the relativeDate is ASSIGNED, the recurrence is EVERY, the reminder duration is PT1D, and the task is assigned at 3/24/2005 10:00 AM, then reminders are sent at 3/25/2005 10:00 AM, 3/26/2005 10:00 AM, 3/27/2005 10:00 AM, and so on until the user acts on the task., 174183=If the relativeDate is EXPIRATION, the recurrence is 2, the reminder duration is PT1D, and the task expires at 3/26/2005 10:00 AM, then reminders are sent at 3/24/2005 10:00 AM and 3/25/2005 10:00 AM if the task was assigned before 3/24/2005 10:00 AM., 174592=If the relativeDate is EXPIRATION, the recurrence is 2, the reminder duration is PT1D, the task expires at 3/26/2005 10:00 AM, and the task was assigned at 3/24/2005 3:00 PM, then only one reminder is sent at 3/25/2005 10:00 AM.}",
+    "lastModified": "Wed, 14 Jan 2015 14:07:39 GMT",
+    "textBeforeTable": "Table 34-26 Task Priority Report View Table 34-26 describes the WFTASKPRIORITY_VIEW report view. 34.8.4 Task Priority Report View lastupdateddate > (current_date -100) GROUP BY username, taskname; SELECT username, taskname, count(taskid) FROM WFPRODUCTIVITY_VIEW WHERE  Example 34-40 Number of Tasks of Each Task Type Worked on in the Last 100 Days  Count the number of tasks of each task type that the user has worked on in the last 100 days, as shown in Example 34-40.   BY username, taskname; SELECT username, taskname, count(taskid) FROM WFPRODUCTIVITY_VIEW GROUP  Example 34-39 Number of Tasks of Each Task Type on Which the User has Worked  Count the number of tasks of each task type on which the user has worked, as shown in Example 34-39.   lastupdateddate > (current_date -7) GROUP BY username; SELECT username, count(taskid) FROM WFPRODUCTIVITY_VIEW WHERE  Example 34-38 Number of Tasks Updated in the Last 7 Days  Count the number of tasks that the user has updated (one task may have been updated multiple times) in the last seven days, as shown in Example 34-38.   lastupdateddate > (current_date -30) GROUP BY username; SELECT username, count(distinct(taskid)) FROM",
+    "textAfterTable": "Footnote\u00a01\u00a0NOT NULL column For example: Query the number of tasks updated by each user in each task priority, as shown in Example 34-41. Example 34-41 Number of Tasks Updated by Each User in Each Task Priority  SELECT updatedby, priority, count(taskid) FROM WFTASKPRIORITY_VIEW GROUP BY updatedby, priority; Query task-to-outcome distribution, as shown in Example 34-42. Example 34-42 Task-to-outcome Distribution  SELECT taskname, decode(outcome, '', 'COMPLETED', outcome), count (taskid) FROM WFTASKPRIORITY_VIEW GROUP BY taskname, outcome; Query the number of tasks updated by the given user in each priority, as shown in Example 34-43. Example 34-43 Number of Tasks Updated by the Given User in Each Priority  SELECT priority, count(taskid) FROM WFTASKPRIORITY_VIEW WHERE updatedby='jstein' GROUP BY priority;",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

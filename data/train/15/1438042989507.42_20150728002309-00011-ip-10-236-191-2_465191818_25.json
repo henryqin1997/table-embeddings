@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Control",
+            "Combo Box",
+            "Combo Box",
+            "Button"
+        ],
+        [
+            "Name",
+            "cbxColumnNames",
+            "cbxSortOrder",
+            "cmdRemoveFilterSort"
+        ],
+        [
+            "Caption",
+            "Sort by:",
+            "in",
+            "Remove Filter/Sort"
+        ],
+        [
+            "Additional Properties",
+            "Row Source Type: Value List",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Lesson 18: Introduction to Data Analysis",
+    "title": "",
+    "url": "http://www.functionx.com/vbaccess2010/Lesson18.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989507.42/warc/CC-MAIN-20150728002309-00011-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 465207418,
+    "recordOffset": 465191818,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sun, 05 Apr 2015 03:16:07 GMT",
+    "textBeforeTable": "Using the objects in the Controls section of the Ribbon, complete the design of the Footer section as follows: \u00a0 Change the label to in and click Finish In the third page of the wizard, accept the first radio button and click Next Click Next Press the down arrow key and type Descending Order \u00a0 Click under Col1 and type Ascending Order In the first page of the Combo Box Wizard, click the second radio button (I Will Type In The Values That I Want) and click Next In the Controls section of the Ribbon, click the Combo Box and click on the right side of the previously added combo box in the Form footer section In the Properties window, change its Name to cbxColumnNames Click Finish Change the label to Sort by: In the third page of the wizard, accept the first radio button and click Next Click Next Complete the list with Manufacturer, Category, Sub-Category, Item Name, Unit Price, and Price After Discount Press the down arrow key and type Date Entered Click under Col1 and type Item Number In the first page of the Combo Box Wizard, click the second radio button (I Will Type In The Values That I Want) In the Properties window, change the combo box' Name to cbxSortOrder",
+    "textAfterTable": "Sorting Records With SQL In the SQL, to sort a field in ascending order, you can include the ORDER BY clause in your statement. The syntax used would be: SELECT What FROM WhatObject ORDER BY WhatField; The field used as the basis must be recognized as part of the selected columns. Imagine you have created a list of staff members made of their first and last names in a table named Employees. If you want to order the list in alphabetical order based on the LastName column, you would use a statement such as: SELECT FirstName, LastName FROM Employees ORDER BY LastName; If you use the * operator to include all fields, you can order the list based on any of the table's fields, as we learned during data analysis. Imagine that you have created a query that includes all fields. The following statement would list the records of the Employees table based on the alphabetical order of the LastName column: SELECT * FROM Employees ORDER BY LastName; By default, records are ordered in ascending order. Nevertheless, the ascending order is controlled using the ASC keyword specified after the based field. For example, to sort the last names in ascending order of a query that includes the first and last names, the above statement can also be written",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

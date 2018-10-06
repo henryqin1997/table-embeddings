@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "[in]",
+            "[in,out]",
+            "[in]"
+        ],
+        [
+            "ssl",
+            "buffer",
+            "size"
+        ],
+        [
+            "the ssl client/server to query.",
+            "buffer of size bytes to hold cipher name",
+            "maximum number of bytes in buffer."
+        ]
+    ],
+    "pageTitle": "C AMQP Protocol Engine API: proton/ssl.h File Reference",
+    "title": "",
+    "url": "http://qpid.apache.org/releases/qpid-proton-0.5/protocol-engine/c/api/ssl_8h.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00255-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 204189159,
+    "recordOffset": 204180169,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 28 Aug 2013 14:05:04 GMT",
+    "textBeforeTable": "Parameters: A transport must have an SSL object in order to \"speak\" SSL over its connection. This method allocates an SSL object associates it with the transport. Create a new SSL session object associated with a transport. ) transport pn_transport_t *\u00a0 ( PN_EXTERN pn_ssl_t* pn_ssl Function Documentation require valid certificate and matching name PN_SSL_VERIFY_PEER_NAME\u00a0 do not require a certificate nor cipher authorization PN_SSL_ANONYMOUS_PEER\u00a0 require peer to provide a valid identifying certificate PN_SSL_VERIFY_PEER\u00a0 internal use only PN_SSL_VERIFY_NULL\u00a0 Enumerator: ANONYMOUS_PEER is configured by default. VERIFY_PEER_NAME is like VERIFY_PEER, but also requires the peer's identity as contained in the certificate to be valid (see pn_ssl_set_peer_hostname). VERIFY_PEER will only connect to those peers that provide a valid identifying certificate signed by a trusted CA and are using an authenticated cipher. ANONYMOUS_PEER does not require a valid certificate, and permits use",
+    "textAfterTable": "PN_EXTERN pn_ssl_domain_t* pn_ssl_domain ( pn_ssl_mode_t\u00a0 mode ) Create an SSL configuration domain This method allocates an SSL domain object. This object is used to hold the SSL configuration for one or more SSL sessions. The SSL session object (pn_ssl_t) is allocated from this object. Parameters: [in] mode the role, client or server, assumed by all SSL sessions created with this domain. Returns: a pointer to the SSL domain, if SSL support is present. PN_EXTERN int pn_ssl_domain_allow_unsecured_client ( pn_ssl_domain_t *\u00a0 domain ) Permit a server to accept connection requests from non-SSL clients. This configures the server to \"sniff\" the incoming client data stream, and dynamically determine whether SSL/TLS is being used. This option is disabled by default: only clients using SSL/TLS are accepted. Parameters: [in] domain the domain (server) that will accept the client connections. Returns: 0 on",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

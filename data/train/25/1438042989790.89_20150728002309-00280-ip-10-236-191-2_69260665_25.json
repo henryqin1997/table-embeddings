@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "login",
+            "passwd"
+        ],
+        [
+            "Description",
+            "The login name",
+            "The login password"
+        ]
+    ],
+    "pageTitle": "Environment Class",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B13789_01/appdev.101/b10778/reference012.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00280-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 69269947,
+    "recordOffset": 69260665,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 22 Mar 2004 20:41:00 GMT",
+    "textBeforeTable": "const &passwd); const string &login, void setLDAPLoginNameAndPassword(  Syntax  Specifies the login distinguished name and password used when connecting to an LDAP server. setLDAPLoginNameAndPassword()    The port for LDAP port   The host for LDAP host     Description Parameter     unsigned int port); const string &host, void setLDAPHostAndPort(  Syntax  Specifies the host on which the LDAP server is running, and the port on which it is listening for requests. setLDAPHostAndPort()          The authentication mode mode     Description Parameter",
+    "textAfterTable": "terminateConnection() Closes the connection to the environment, and frees all related system resources. Syntax void terminateConnection( Connection *connection); Parameter Description connection A pointer to the connection instance to be terminated. terminateConnectionPool() Closes the connections in the connection pool, and frees all related system resources. Syntax void terminateConnectionPool( ConnectionPool *poolPointer); Parameter Description poolPointer A pointer to the connection pool instance to be terminated.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

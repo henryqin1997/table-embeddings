@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "A",
+            "Name",
+            "Bacon Jr., Dan K."
+        ],
+        [
+            "B",
+            "First Name (Dan)",
+            "=MID(A2,SEARCH(\" \",A2,SEARCH(\" \",A2,1)+1)+1,SEARCH(\" \",A2,SEARCH(\" \",A2,SEARCH(\" \",A2,1)+1)+1)-SEARCH(\" \",A2,SEARCH(\" \",A2,1)+1))"
+        ],
+        [
+            "C",
+            "Middle Name (K.)",
+            "=RIGHT(A2,LEN(A2)-SEARCH(\" \",A2,SEARCH(\" \",A2,SEARCH(\" \",A2,1)+1)+1))"
+        ],
+        [
+            "D",
+            "Last Name (Bacon)",
+            "=LEFT(A2, SEARCH(\" \",A2,1))"
+        ],
+        [
+            "E",
+            "Suffix (Jr.)",
+            "=MID(A2,SEARCH(\" \", A2,1)+1,(SEARCH(\" \",A2,SEARCH(\" \",A2,1)+1)-2)-SEARCH(\" \",A2,1))"
+        ]
+    ],
+    "pageTitle": "Split text among columns by using functions",
+    "title": "",
+    "url": "https://support.office.com/en-us/article/Split-text-among-columns-by-using-functions-f836abfc-9d4b-4586-acee-a042b469b30f?CorrelationId=6d7de1aa-d0a4-42bb-b75c-88771b71d1df&ui=en-US&rs=en-US&ad=US",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00091-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 878618895,
+    "recordOffset": 878602501,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampAfterTable": "{77878=Applies To: Excel 2010, 14582=Last Name ( Kurjan ), 5040=Eric S. Kurjan, 14773=Eric S. Kurjan, 5278=Kurjan}",
+    "textBeforeTable": "2 1 In this example, the last name comes first, followed by the suffix. The comma separates the last name and suffix from the first name and middle initial. Example 8: Bacon Jr., Dan K. Top of Page Count the total length of the text string in A2, and then subtract the number of characters from the left up to the first space, found in step 1. The result is the number of characters to be extracted from the right of the full name. (15 - 6 = 9) Search for the numeric position of the first space in A2, starting from the left. (6) Use the LEN and SEARCH functions to find the value for num_chars: The last name starts with the ninth character from the right (v) and ends at the first character from the right (n). The formula extracts nine characters from the right of the full name. Last name Search for the numeric position of the first space in A2, starting from the left. (6) Use the SEARCH",
+    "textAfterTable": "Note \u00a0\u00a0In the following graphics, the highlight in the full name shows the character that the matching SEARCH formula is looking for. First name The first name starts with the twelfth character (D) and ends with the fifteenth character (the third space). The formula extracts three characters, starting from the twelfth position. Use nested SEARCH functions to find the value for start_num: Search for the numeric position of the first space in A2, starting from the left. (6) Add 1 to get the character after the first space (J). The result is the character number at which you want to start searching for the second space. (6 + 1 = 7) Search for the second space in A2, starting from the seventh position (J), found in step 2. (11) Add 1 to get the character after the second space (D). The result is the starting position of the first name. (11 + 1 = 12) Use nested SEARCH functions to find the value for num_chars: Search for the numeric position of the character after the second space (D). The result is the character number at which you want to start searching for the third space. (12) Search for the numeric position of the third space in",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

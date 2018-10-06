@@ -1,0 +1,72 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2012-11-01T00:00:00",
+            "2012-11-01T00:00:00",
+            "2012-12-01T00:00:00",
+            "2012-12-01T00:00:00",
+            "2012-12-01T00:00:00",
+            "2012-12-01T00:00:00",
+            "2012-12-01T00:00:00",
+            "2012-12-01T00:00:00",
+            "2013-01-01T00:00:00",
+            "2013-02-20T00:00:00"
+        ],
+        [
+            "Description",
+            "LIDAR ACQUISITION: A LiDAR survey was conducted between Nov 11 and Nov 22, 2012. An Optech 3100 sensor aboard a Cessna 206/G was utilized for the survey. Flight altitude was planned at 1,250-meters. See \"PROJEC REPORT\" for details regarding the flight.",
+            "CHECK POINT SURVEY: A GPS survey was conducted to assess the accuracy of the LiDAR data. See \"SURVEY REPORT\" for details of the check point survey.",
+            "LiDAR CALIBRATION: Data collection of the survey area resulted in a total of one-hundred and five flightlines, including eight control lines, covering the project area. The range files, flight logs, raw air and ground GPS files were then taken to the office for data processing using DashMap v 5.2 (Optech, Inc.). DashMap uses the SBET to generate a set of data points for each laser return in the LAS file format. Each data point is assigned an echo value so it can be segregated based on the first and last pulse information. This project's data were processed in strip form, meaning each flight line was processed independently. Processing the lines individually provides the data analyst with the ability to QC the overlap between lines. Each strip was then imported into a project using TerraScan (Terrasolid, Ltd.) and the project management tool GeoCue (GeoCue Corp.). By creating a project the various flightlines are combined while breaking the dataset as a whole into manageable pieces. This process also converts the dataset from UTM (NAD83, 2011) to the Geographic Coordinate System (NAD 83, 2011). The ellipsoid height values were converted to NAVD88, Meters, orthometric values using Geoid 12A, provided by National Geodetic Survey (NGS). Individual lines were then checked against adjacent lines and intersecting control lines to ensure a cohesive dataset.",
+            "LiDAR CLASSIFICATION & BREAKLINE COLLECTION: A classification routine was applied to extract the initial surface model. This initial surface model was then reduced using Magnolia Rivers' proprietary methods to create the final bare-earth dataset. Upon reaching a satisfactory classification result, the bare-earth data were then checked against the control and validation points across the project area. The results of these checks showed the DEM meeting accuracy requirements. Hydro-Flattening breaklines were collected where necessary to support the final digital elevation models. A Triangular Irregular Network (TIN) was generated using the lidar ground points for each preliminary tiled deliverable and the breaklines were placed in 2D with each element's height being adjusted to the surface to create a 3D element in the MicroStation (Bentley Systems, Inc.) environment.",
+            "INTENSITY IMAGERY: The intensity images were created for this project using GeoCue (version 2012.1.27.5). The images were derived from the full LiDAR point cloud native radiometric intensity values. As per the project specifications the intensity orthos were produced at a 1-meter pixel size for the entire project. The initial GeoTIFF images were produced in UTM Zone 19N NAD83(2011) and were then transformed (reprojected) to the geographic coordinate system for delivery using Global Mapper software (version 13.2.2; Blue Marble Geographics) and clipped to the deliverable tile boundaries with an additional 2-meter buffer applied to each tile.",
+            "MODEL KEY POINTS: Model key-points were classified (ASPRS Class 8) using the TerraScan (Terrasolid Ltd.) Classify Model Keypoints routine to classify LiDAR points that fell within a specified tolerance of the full resolution ground model (i.e. all classified ground returns) resulting in a reduced resolution surface model that meets a given accuracy. An accuracy tolerance of 0.15 meters was used for this processing.",
+            "DIGITAL ELEVATION MODELS: Digital Elevation Models (DEMs) of the bare earth ground surface were generated using the TerraModeler (Terrasolid Ltd.) software. The DEMs were produced by sampling elevations at a 1-meter posting from a triangulated irregular network (TIN) model based on all classified ground returns and 3-D breakline features and output as an ESRI ASCII GRID formatted file. These ASCII GRID files were then converted to ESRI Binary GRID format. Initially, these GRIDs were generated from points and breaklines in the UTM projection (Zone 19N, NAD83(2011)). These UTM GRIDs were then transformed to geographic coordinates, using Global Mapper software, for delivery. Geographic GRIDs were clipped to the deliverable tile extents with an additional 2-meter buffer applied to each tile.",
+            "LIDAR FLIGHT LINE POLYGONS: Boundary polygons were created from the collected LiDAR swaths as ESRI shapefiles using a triangulation algorithm that produces an tight fitting outer boundary with concavities that accurately represent the swaths as flown. The planned flight line number, swath file name and date of acquisition were then added as shapefile attributes.",
+            "The NOAA Coastal Services Center (CSC) received topographic files in LAS format. The files contained lidar elevation and intensity measurements. The data were received in geographic coordinates (NAD83) and were vertically referenced to NAVD88 using the Geoid12a model. The vertical units of the data were meters. CSC performed the following processing for data storage and Digital Coast provisioning purposes: 1. The topographic las files were converted from orthometric (NAVD88) heights to ellipsoidal heights using Geoid12a. 2. The data were converted to LAZ format.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Components NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2012_USACE_PostSandy_MA_RI_m1435.xml",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2012_USACE_PostSandy_MA_RI_m1435.xml&view=ISO19115Components-HTMLTable&title=Components%20NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2012_USACE_PostSandy_MA_RI_m1435.xml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00050-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 616368679,
+    "recordOffset": 616359284,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:2012_USACE_PostSandy_MA_RI_m1435Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 1 NOAA CSC (originator) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov originator http://coast.noaa.gov 1 NOAA CSC (publisher) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov publisher http://coast.noaa.gov 1 NOAA CSC(distributor) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov distributor http://coast.noaa.gov 1 NOAA CSC (processor) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration,",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

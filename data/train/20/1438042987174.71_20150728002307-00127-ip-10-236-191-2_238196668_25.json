@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "\"text\" or string=\"text\"",
+            "args=\"param1, param2\""
+        ],
+        [
+            "Description",
+            "The text to be displayed (the translatable string).",
+            "a comma-separated list of arguments to be interpolated in the string, replacing [_N] placeholders in it."
+        ],
+        [
+            "Default",
+            "none",
+            "none"
+        ]
+    ],
+    "pageTitle": "Macros < System < Foswiki",
+    "title": "",
+    "url": "http://tig.csail.mit.edu/wiki/System/Macros?sortcol=1;table=2;up=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00127-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 238284463,
+    "recordOffset": 238196668,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Parameters: BUTTON{\"text\" ...} -- renders a nice button Related: BR, BB, BB2, BB3, BB4, CARET, VBAR Current value: BULLET = \u2022 BULLET -- bullet character StandardColors DefaultPreferences, ENDCOLOR, Related: %RED% some text %ENDCOLOR% %GREEN% more text %ENDCOLOR% %ENDCOLOR%, e.g. write %ENDCOLOR%. If you want to switch from one color to another one you first need to end the active color with %<color>% text must end with BROWN is one of the shortcut macros predefined in DefaultPreferences. See the section shortcut macros in that topic for a complete list of colors. Example: %BROWN% brown text %ENDCOLOR% Expands to: brown text BROWN -- start brown colored text Related: BULLET, BB, BB2, BB3, BB4, CARET, VBAR Current value: BR = BR -- line break StandardColors DefaultPreferences, ENDCOLOR, Related: %RED% some text %ENDCOLOR% %GREEN% more text %ENDCOLOR% %ENDCOLOR%, e.g. write",
+    "textAfterTable": "class extra class: use foswikiRight or foswikiLeft to specify aligment; use cyan, red, green for different background colors; use simple for a non-3D button \u00a0 href url of the click target # icon icon to be put on the left; note, this can be any icon attached to the {IconSearchPath}; see also VarJQICON \u00a0 id html id for this button \u00a0 onclick javascript event triggered when clicking the button \u00a0 onmouseout javascript event triggered when the pointer leaves the button \u00a0 onmouseover javascript event triggered when the pointer hovers over the button \u00a0 target topic to open when clicking on the button \u00a0 title popup title displayed when hovering over the button",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

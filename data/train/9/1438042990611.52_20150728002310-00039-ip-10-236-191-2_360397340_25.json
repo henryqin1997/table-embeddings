@@ -1,0 +1,47 @@
+{
+    "relation": [
+        [
+            "Code or Value",
+            "47 to 109",
+            "."
+        ],
+        [
+            "Value Description",
+            "Range of Values",
+            "Missing"
+        ],
+        [
+            "Count",
+            "6422",
+            "558"
+        ],
+        [
+            "Cumulative",
+            "6422",
+            "6980"
+        ],
+        [
+            "Skip to Item",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "NHANES 2005 - 2006: Standard Biochemistry Profile Data Documentation, Codebook, and Frequencies",
+    "title": "",
+    "url": "http://www.cdc.gov/nchs/nhanes/nhanes2005-2006/BIOPRO_D.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990611.52/warc/CC-MAIN-20150728002310-00039-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 360414375,
+    "recordOffset": 360397340,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampBeforeTable": "{6890=The NHANES quality control and quality assurance protocols (QA/QC) meet the 1988 Clinical Laboratory Improvement Act mandates. Detailed quality control and quality assurance instructions are discussed in the NHANES Laboratory/Medical Technologists Procedures Manual (LPM). Read the LABDOC file for detailed QA/QC protocols., 7949=LBDSIRSI The iron in \u03bcg/dL (LBXSIR) was converted to \u03bcmol/L (LBDSIRSI) by multiplying by 0.1791., 8310=LBDSCHSI The cholesterol in mg/dL (LBXSCH) was converted to mmol/L (LBDSCHSI) by multiplying by 0.02586., 31853=Title: Standard Biochemistry Profile (BIOPRO_D ) Contact Number: 1-866-441-NCHS Years of Content: 2005 - 2006 First Published: March, 2008 Revised: NA Access Constraints: None Use Constraints: None Geographic Coverage: National Subject:Biochemistry Profile Record Source: NHANES 2005 - 2006 Survey Methodology: NHANES 2005 - 2006 is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S. Medium: NHANES Web site; SAS transport files, 7469=LBDSTRSI The triglycerides in mg/dL (LBXSTR) were converted to mmol/L (LBDSTRSI) by multiplying by 0.01129., 6374=The analysis of NHANES 2005-2006 laboratory data must be conducted with the key survey design and basic demographic variables. The NHANES 2005-2006 Household Questionnaire Data Files contain demographic data, health indicators, and other related information collected during household interviews. They also contain all survey design variables and sample weights for these age groups. The phlebotomy file includes auxiliary information such as the conditions precluding venipuncture. The household questionnaire and phlebotomy files may be linked to the laboratory data file using the unique survey participant identifier SEQN., 2276=Comparison of means and regression analysis revealed high overall agreement but a significant difference between the two methods (bias). The mean (SD) serum creatinine at CCRL, NHANES, and their difference were 1.010 (0.313), 1.049 (0.320), and -0.040 (0.047) mg/dL, respectively (paired t-test, p <0.0001). The Pearson\u2019s correlation was 0.989. The Deming regression of CCRL (Y) on NHANES (X) had an intercept of -0.016 (SE, 0.008) and a slope of 0.978 (SE, 0.007). Thus, a correction of the NHANES 2005-2006 serum creatinine values is highly recommended. The following formula should be used to adjust the NHANES serum creatinine values to ensure comparability with standard creatinine:, 4396=Correction of serum creatinine values in NHANES 2005-2006 is highly recommended: Serum creatinine was assayed from a random sample of 195 stored specimens from participants aged 60 years or older in NHANES 2005-2006 to determine if the original values obtained by the NHANES laboratory were comparable to values obtained from a method traceable to a \u201cgold standard\u201d (and referred to as \u201cstandard creatinine\u201d). The Cleveland Clinic Foundation Research Laboratory (CCRL) analyzed the serum creatinine specimens using a Roche coupled enzymatic assay (creatininase, creatinase, sarcosine oxidase, kits # 1775677 and 1775766) performed on a Roche P Module instrument. College of American Pathologists (CAP) Creatinine Accuracy Calibration Verification/Linearity Survey LN24 (LN24) samples were used as accuracy controls to verify that the calibration of the Roche enzymatic method was traceable to LC-IDMS and correctly implemented in the CCRL. The Roche method exhibits total imprecision ranging from 1.2% C.V. at 1.00 mg/dL (88.4 mol/L) to 1.6% at 3.84 mg/dL (339.5 mol/L). Serum creatinine by the Roche method was compared to the original NHANES 2005-2006 measurements which used a Jaffe rate method performed on a Beckman Synchron LX20. The design and methods for this calibration study were identical to those used for the NHANES III, 1999-2000, 2001-2002, and 2003-2004 surveys (Selvin et al., 2007)., 21878=The 18 analytes described in this method constitute the routine biochemistry profile. The analyses are performed with a Beckman Synchron LX20. Each analyte is described separately within each pertinent section of this document. NOTE: Glucose, cholesterol, and triglycerides were analyzed as part of this profile, but the results do not replace the formalized reference methods data from NHANES 2005-2006 samples analyzed at other institutions.}",
+    "lastModified": "Fri, 09 May 2014 20:26:07 GMT",
+    "textBeforeTable": "Both males and females 12 YEARS - 150 YEARS Target: Albumin (g/dL) English Text: Albumin (g/dL) SAS Label: LBXSAL Variable Name: LBXSAL - Albumin (g/dL) Both males and females 12 YEARS - 150 YEARS Target: Respondent sequence number. English Text: Respondent sequence number SAS Label: SEQN Variable Name: SEQN - Respondent sequence number Codebook and Frequencies Selvin E, Manzi J, Stevens LA, Van Lente F, Lacher DA, Levey AS et al. Calibration of serum creatinine in the National Health and Nutrition Examination Surveys (NHANES) 1988-1994, 1999-2004. Am J Kidney Dis 2007; 50(6):918-926. References Standard creatinine (mg/dL) = -0.016 + 0.978 X (NHANES 05-06 uncalibrated serum creatinine, mg/dL) Comparison of means and regression analysis revealed high overall agreement but a significant difference between the two methods (bias). The mean (SD) serum creatinine at CCRL, NHANES, and their difference were 1.010 (0.313), 1.049 (0.320), and -0.040 (0.047) mg/dL, respectively (paired t-test, p <0.0001). The Pearson\u2019s correlation was 0.989. The Deming regression of CCRL (Y) on NHANES (X) had an intercept of -0.016 (SE, 0.008) and a slope of 0.978 (SE, 0.007). Thus, a correction of the NHANES 2005-2006 serum creatinine values is highly",
+    "textAfterTable": "LBDSALSI - Albumin (g/L) Variable Name: LBDSALSI SAS Label: Albumin (g/L) English Text: Albumin (g/L) Target: Both males and females 12 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 23 to 54 Range of Values 6434 6434 . Missing 546 6980 LBXSATSI - Alanine aminotransferase ALT (U/L) Variable Name: LBXSATSI SAS Label: Alanine aminotransferase ALT (U/L) English Text: Alanine aminotransferase ALT (U/L) Target: Both males and females 12 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 5 to 272 Range of Values 6349 6349 . Missing 631 6980 LBXSASSI - Aspartate aminotransferase AST (U/L) Variable Name: LBXSASSI SAS Label: Aspartate aminotransferase AST (U/L)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

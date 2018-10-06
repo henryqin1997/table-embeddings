@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US8370391 *",
+            "US20080222515 *"
+        ],
+        [
+            "Filing date",
+            "Mar 25, 2008",
+            "Feb 26, 2007"
+        ],
+        [
+            "Publication date",
+            "Feb 5, 2013",
+            "Sep 11, 2008"
+        ],
+        [
+            "Applicant",
+            "Microsoft Corporation",
+            "Microsoft Corporation"
+        ],
+        [
+            "Title",
+            "Functional updates for tree processing",
+            "Parameterized types and elements in xml schema"
+        ]
+    ],
+    "pageTitle": "Patent US7617234 - XML schema for binding data - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7617234?dq=6,493,558",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00303-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 467264123,
+    "recordOffset": 467216778,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{107757=This embodiment as discussed above is part of an exemplary XML schema for a word processor application 202. The exemplary schema may be incorporated as part of a broad-based schema used as part of a word processor application 202, such as the XML schema used for WORD 2003, which is used to represent a word processor document. According to an embodiment of the invention, the schema, among other things, operates to persist information about one or more data bindings 205 associated with one or more content regions 207 in a word processor document 204., 44495=The term \u201ccontent region\u201d refers to a bounded and/or optionally labeled region of a document which serves as a container for a type of content entered by a user. See \u201cMethods, System, and Computer-Readable Medium For Managing Specific Types of Content In An Electronic Document,\u201d filed on Sep. 30, 2004 and assigned U.S. Ser. No. 10/955,612, by the present assignee, which is hereby incorporated by reference in its entirety., 98422=An illustrative word processor schema is described in application Ser. No. 10/187,060, filed Jun. 28, 2002, entitled \u201cWord-Processing Document Stored in a Single XML File that may be Manipulated by Applications that Understand XML\u201d, which is herein incorporated by reference, and includes details on how a word processor application operates to save out contents of a word processor document in XML file format. According to an embodiment of the invention described herein, an XML schema 210 is operable to represent a data binding 205 in a word processor document 204. The word processor application 202 preferably includes a schema 210 which recognizes and acts upon data bindings 205, including defining how data bindings 205 are saved and loaded by the word processor application 202., 66175=The one or more data bindings 205 can be used to \u201cbind\u201d content of a data source (XML data 209 in the data store 208), herein termed XML data 209, to locations in the document 204. XML data 209, as used herein, includes any type of content such as text (plain or richly formatted), images, content of a specific type (dates), etc. The structure of a data binding 205 may be described as an XPath link, which allows the word processor application 202 to connect to/synchronize with/persist links to XML nodes 213 in an XML data store 208 associated with a document 204. The XML data store 208 is most preferably a part of the document 204 (i.e. the store 208 is saved to with the word processor file and travels or associates with the particular document 204). A data binding 205 may also contain information to control how the data 209 should be transformed between the presentation (the word processor's document surface 203, for example) and the data store 208. A user of the word processor application 202 can allow the data 209 stored in the data store 208 (the data that is manipulated by the backend applications) to be stored in a standard format, but present the same information in a word processor document 204 in a friendlier format (e.g. the user sees Jan. 29, 2004, but the data is stored in dateTime format as 29-01-004T12:00:00.0000). As another example, the data binding information can contain an image\u2014to the data 209 this image is represented as a seemingly meaningless string of characters, but the same transformation principle described above means that the user will see an image in the content region 207 of the word processor document 204. The user can add/change the image and the XML-encoded representation will be persisted to the XML data 209 so that any backend process can store/manipulate that information., 26787=This application is a continuation-in-part of U.S. application Ser. No. 11/030,423, owned by Microsoft Corporation and filed with the United States Patent and Trademark Office on Jan. 6, 2005, entitled \u201cData Binding in a Word Processing Application,\u201d which is herein incorporated by reference in its entirety.}",
+    "textBeforeTable": "Patent Citations The above specification, examples and data provide a complete description of the manufacture and use of the composition of the invention. Since many embodiments of the invention can be made without departing from the spirit and scope of the invention, the invention resides in the claims hereinafter appended. It should be appreciated that the logical operations of various embodiments of the present invention are implemented (1) as a sequence of computer implemented acts or program modules running on a computing system and/or (2) as interconnected machine logic circuits or circuit modules within the computing system. The implementation is a matter of choice dependent on the performance requirements of the computing system implementing the invention. Accordingly, logical operations making up the embodiments of the present invention described herein are referred to variously as operations, structural devices, acts or modules. It will be recognized by one skilled in the art that these operations, structural devices, acts and modules may be implemented in software, firmware, special purpose digital logic, and any combination thereof without deviating from the spirit and scope of the present invention as recited within the claims set forth herein. The data binding 205 includes a reference to the unique ID for the associated XML data 209, the XPath of the target node 213, and any necessary prefix mappings.",
+    "textAfterTable": "US5630131 Nov 14, 1994 May 13, 1997 Object Technology Licensing Corp. Method and apparatus for importing and exporting archive files for a graphical user interface US5715415 Jun 5, 1996 Feb 3, 1998 Microsoft Corporation Computer application with help pane integrated into workspace US5717741 Mar 28, 1996 Feb 10, 1998 Bellsouth Corp. Method for handling telephonic messages US5845299 Jul 29, 1996 Dec 1, 1998 Rae Technology Llc Draw-based editor for web pages US5903902 Sep 9, 1996 May 11, 1999 Design Intelligence, Inc. Design engine with tree and component structure US5910075 Feb 10, 1998 Jun 8, 1999 Arnell; Louis G. Portable remote-controlled door closer US5911068 Nov 17, 1997 Jun 8, 1999 Microsoft Corporation Container independent control architecture US5974430 Sep 30, 1997 Oct 26, 1999 Unisys Corp. Method for dynamically embedding objects stored in a web server within HTML for display by a web browser US5991878",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 4,
+    "headerRowIndex": 0
+}

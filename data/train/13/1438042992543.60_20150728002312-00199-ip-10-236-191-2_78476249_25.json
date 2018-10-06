@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "Legal Entities",
+            "Primary Ledger"
+        ],
+        [
+            "Description",
+            "U.S. East; Balancing Segment Value Assigned: 01 U.S. West; Balancing Segment Value Assigned: 11",
+            "Outdoor Outfitters (USD) Chart of Accounts: Corporate Accounting Calendar: Corporate Currency: USD Subledger Accounting Method: Standard Accrual"
+        ]
+    ],
+    "pageTitle": "Oracle Financials Implementation Guide",
+    "title": "Accounting Setup for U.S. Legal Entities",
+    "url": "http://docs.oracle.com/cd/E18727_01/doc.121/e13425/T348488T348495.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00199-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 78491611,
+    "recordOffset": 78476249,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{2757=Outdoor Outfitters, a U.S. based retail apparel company, wants to use a single instance of Oracle Applications. It has two legal entities located in the U.S., U.S. East, and U.S. West. Both of these legal entities operate in a country that does not enforce strict rules regarding tax and document sequencing. Both legal entities can also share the same chart of accounts, accounting calendar (that is based on the fiscal year end of January 31), currency, subledger accounting method, and ledger processing options., 77600=Copyright \u00a9 2005, 2010, Oracle and/or its affiliates. All rights reserved.}",
+    "lastModified": "Tue, 23 Jun 2015 15:11:08 GMT",
+    "textBeforeTable": "Outdoor Outfitters wants to use the five-segment chart of accounts structure for their corporate chart of accounts described in the following table. Outdoor Outfitters uses a combination of third-party systems and Oracle financial applications. The following requirements apply to this example: Additional Requirements Security Consolidation Accounting Setup for U.S. Legal Entities Additional Requirements This section includes the following parts: Outdoor Outfitters, a U.S. based retail apparel company, wants to use a single instance of Oracle Applications. It has two legal entities located in the U.S., U.S. East, and U.S. West. Both of these legal entities operate in a country that does not enforce strict rules regarding tax and document sequencing. Both legal entities can also share the same chart of accounts, accounting calendar (that is based on the fiscal year end of January 31), currency, subledger accounting method, and ledger processing options. Accounting Setup with Multiple Legal Entities \u2013 U.S. Only Operations Each accounting setup example describes the recommended implementation options, such as the number of ledgers, balancing segment value assignment issues, security issues, and consolidation issues. This appendix provides comprehensive examples for different accounting environment type that you can create using Accounting Setup Manager (ASM). The examples relate to a company called Outdoor Outfitters, a U.S.-based retail apparel company implementing the",
+    "textAfterTable": "Cost Center 3 Account Natural Account 4 Product \u00a0 5 Future Use \u00a0 The following table outlines the ledger requirements for each of the U.S. legal entities. Ledger Requirements for U.S. Legal Entities Legal Entity Chart of Accounts Calendar Primary Currency Subledger Accounting Methods Ledger Processing Options U.S. East Corporate Corporate USD Standard Accrual Both legal entities can share the same ledger processing options U.S. West Corporate Corporate USD Standard Accrual \u00a0 Both legal entities can share the same primary ledger attributes. Neither legal entity has special requirements to open and close accounting periods independent from the other. Both legal entities engage in intercompany accounting. For month-end consolidation purposes, Outdoor Outfitters wants to keep their consolidation adjustments and elimination entries completely separate from the day-to-day transactions of their legal entities. Each legal entity is sensitive about data security. Both U.S. East and U.S. West do not want to share their accounting information with each other. They do not want their respective users to be able to enter or view",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "servername",
+            "username",
+            "password"
+        ],
+        [
+            "Description",
+            "Optional. Specifies the server to connect to. Default value is \"localhost:3306\"",
+            "Optional. Specifies the username to log in with. Default value is the name of the user that owns the server process",
+            "Optional. Specifies the password to log in with. Default is \"\""
+        ]
+    ],
+    "pageTitle": "PHP MySQL Connect to a Database, Learn PHP MySQL Connect to a Database",
+    "title": "",
+    "url": "http://www.codedcode.com/php/php-mysql-connect.asp",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00153-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 372534835,
+    "recordOffset": 372526633,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "\u00a0 mysql_connect(servername,username,password); Connecting to a MySQL Database Before you can access and work with data in a database, you must create a connection to the database. In PHP, this is done with the mysql_connect() function. Syntax The free MySQL Database is very often used with PHP. PHP MySQL Connect to a Database>>",
+    "textAfterTable": "Note: There are more available parameters, but the ones listed above are the most important. Visit our full PHP MySQL Reference for more details. Example In the following example we store the connection in a variable ($con) for later use in the script. The \"die\" part will be executed if the connection fails: <?php $con = mysql_connect(\"localhost\",\"peter\",\"abc123\"); if (!$con) { die('Could not connect: ' . mysql_error()); } // some code ?> \u00a0 Closing a Connection The connection will be closed as soon as the script ends. To close the connection before, use the mysql_close() function. <?php $con = mysql_connect(\"localhost\",\"peter\",\"abc123\"); if (!$con) { die('Could not connect: ' . mysql_error()); } // some code mysql_close($con); ?> \u00a0 << Back",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

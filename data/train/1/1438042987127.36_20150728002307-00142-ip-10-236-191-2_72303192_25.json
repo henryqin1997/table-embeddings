@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "thunk",
+            "value"
+        ],
+        [
+            "Description",
+            "The Callback object to be invoked at end-of-call migration.",
+            "If you need additional information stored within an object to be passed into act, you can register this object within the value parameter. In some cases, the value parameter is necessary to hold state the callback needs. However, most users do not need to specify a value."
+        ]
+    ],
+    "pageTitle": "2 Java Applications on Oracle Database",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B14117_01/java.101/b12021/appover.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987127.36/warc/CC-MAIN-20150728002307-00142-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72349051,
+    "recordOffset": 72303192,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 27 Jul 2004 15:22:00 GMT",
+    "textBeforeTable": "public static void registerCallback(Callback thunk); public static void registerCallback(Callback thunk, Object value);  You can register your Callback object by itself or with a value object. If you need additional information stored within an object to be passed into act, you can register this object within the value parameter.   The registerCallback method installs a Callback object within a registry. At the end of the call, OracleJVM invokes the act methods of all registered Callback objects.   EndOfCallRegistry.registerCallback method You can find other ways in which end-of-call notification will be useful to your applications. The following sections give the details for methods within the EndOfCallRegistry class and the Callback interface: A weak table holds the registry of end-of-call callbacks. If either the Callback object or value are not reachable (see JLS section 12.6) from the Java program, both object and value will be dropped from the table. The use of a weak table to hold callbacks also means that registering a callback will not prevent the garbage collector from reclaiming that object. Therefore, you must hold on to the callback yourself if you need it\u2014you cannot rely on the table holding it back. } } .... private Object createCachedField() { } return cachedField; } cachedField = createCachedField(); EndOfCallRegistry.registerCallback(self); // register self, and fill it in. // if cachedField",
+    "textAfterTable": "EndOfCallRegistry.runCallbacks method static void runCallbacks() The JVM calls this method at end-of-call and calls act for every Callback object registered using registerCallback. You should never call this method in your code. It is called at end-of-call, before object migration and before the last finalization step. Callback Interface Interface oracle.aurora.memoryManager.Callback Any object you want to register using EndOfCallRegistry.registerCallback implements the Callback interface. This interface can be useful in your application, where you require notification at end-of-call. Callback.act method public void act(Object value) You can implement any activity that you require to occur at the end of the call. Normally, this method will contain procedures for clearing any memory that would be saved to session space. 2.11.2 Operating System Resources Affected Across Calls In shared server mode, the OracleJVM closes any open operating system resources at the end of a database call, as shown in the following table:",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,202 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2007-08 *",
+            "2007-08 *",
+            "2007-08 *",
+            "2010-11",
+            "2014-15",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "All Teams",
+            "ANA",
+            "RGV",
+            "ERI",
+            "TEX",
+            ""
+        ],
+        [
+            "GP",
+            "45",
+            "35",
+            "10",
+            "49",
+            "7",
+            "101"
+        ],
+        [
+            "GS",
+            "20",
+            "20",
+            "0",
+            "42",
+            "5",
+            "67"
+        ],
+        [
+            "Dbl Dbl",
+            "10",
+            "7",
+            "3",
+            "12",
+            "0",
+            "22"
+        ],
+        [
+            "Tpl Dbl",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "1"
+        ],
+        [
+            "40 Pts",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "1"
+        ],
+        [
+            "20 Reb",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "20 Ast",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "Techs",
+            "0",
+            "0",
+            "0",
+            "8",
+            "2",
+            "10"
+        ],
+        [
+            "HOB",
+            ".171",
+            ".168",
+            ".180",
+            ".291",
+            ".130",
+            ".229"
+        ],
+        [
+            "Ast/TO",
+            "0.42",
+            "0.41",
+            "0.46",
+            "1.00",
+            "0.62",
+            "0.76"
+        ],
+        [
+            "Stl/TO",
+            "0.54",
+            "0.55",
+            "0.50",
+            "0.56",
+            "0.77",
+            "0.56"
+        ],
+        [
+            "FT/FGA",
+            "0.42",
+            "0.42",
+            "0.42",
+            "0.43",
+            "0.22",
+            "0.41"
+        ],
+        [
+            "W's",
+            "20",
+            "14",
+            "6",
+            "32",
+            "2",
+            "54"
+        ],
+        [
+            "L's",
+            "25",
+            "21",
+            "4",
+            "17",
+            "5",
+            "47"
+        ],
+        [
+            "Win %",
+            "0.444",
+            "0.400",
+            "0.600",
+            "0.653",
+            "0.286",
+            "0.535"
+        ],
+        [
+            "OWS",
+            "-0.10",
+            "-0.47",
+            "0.36",
+            "4.08",
+            "-0.29",
+            "3.86"
+        ],
+        [
+            "DWS",
+            "2.15",
+            "1.70",
+            "0.45",
+            "2.89",
+            "0.13",
+            "4.98"
+        ],
+        [
+            "WS",
+            "2.06",
+            "1.24",
+            "0.80",
+            "6.97",
+            "-0.17",
+            "8.84"
+        ]
+    ],
+    "pageTitle": "Ivan Johnson Player Profile, Atlanta Hawks, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Ivan_Johnson/Summary/6787",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988051.33/warc/CC-MAIN-20150728002308-00246-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 23582139,
+    "recordOffset": 23552343,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{8214=Draft Entry: 2008 NBA Draft, 9080=Born: Apr 10, 1984 (31 years old)}",
+    "TableContextTimeStampAfterTable": "{15487=* Since the 1946-1947 season, 143548=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved., 117486=* International basketball history from 2011-2012}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 2 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "226 32 43 18 116 69 356 2012-13 ATL 69 5 1034.8 185 356 .520 1 13 .077 81 131 .618 334 76 190 266 46 56 14 131 71 452 CAREER \u00a0 125 5 1969.2 326 631 .517 3 19 .158 153 231 .662 598 141 351 492 78 99 32 247 140 808 NBA Regular Season Stats - Misc Stats Season Team GP GS Dbl Dbl Tpl Dbl 40 Pts 20 Reb 20 Ast Techs HOB Ast/TO Stl/TO FT/FGA W's L's Win % OWS DWS WS 2011-12 ATL 56 0 3 0 0 0 0 4 .084 0.46 0.62 0.36 35 21 0.625 0.50 1.75 2.25 2012-13 ATL 69 5 3 0 0 0 0 4 .090 0.65 0.79 0.37 35 34 0.507 0.55 1.73 2.27 CAREER \u00a0 125 5 6 0 0 0 0 8 .087 0.56 0.71 0.37 70 55 0.560 1.05 3.46 4.51 NBA Regular Season Stats - Advanced Stats Season Team GP GS TS% eFG% ORB%",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

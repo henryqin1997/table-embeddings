@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "word",
+            "handkerchief",
+            "satisfaction",
+            "displeasure",
+            "instruments",
+            "circumstance"
+        ],
+        [
+            "word_count",
+            "29",
+            "5",
+            "4",
+            "4",
+            "3"
+        ],
+        [
+            "dense_rank",
+            "1",
+            "2",
+            "3",
+            "3",
+            "4"
+        ]
+    ],
+    "pageTitle": "Query Reference - BigQuery \u2014 Google Cloud Platform",
+    "title": "",
+    "url": "https://cloud.google.com/bigquery/query-reference",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00309-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 875144219,
+    "recordOffset": 875103765,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{54989=Returns: 2012-10-01, 62970=SELECT STRFTIME_UTC_USEC(1274259481071200, \"%Y-%m-%d\");, 54922=SELECT DATE(TIMESTAMP('2012-10-01 02:03:04'));, 53891=Returns: 2013-02-01, 64455=SELECT TIMESTAMP_TO_SEC(TIMESTAMP(\"2012-10-01 01:02:03\"));, 38595=The following query returns the average and standard deviation of birth weights in Ohio in 2003, grouped by mothers who do and do not smoke., 54236=Returns: 01:32:56, 65921=For example, if unix_timestamp occurs on May 19th at 08:58, this function returns a UNIX timestamp for May 19th at 00:00 (midnight)., 58717=SELECT MINUTE(TIMESTAMP('2012-10-02 05:23:48'));, 64996=SELECT TIMESTAMP_TO_USEC(TIMESTAMP(\"2012-10-01 01:02:03\"));, 58034=Returns: 2010-05-19 08:58:01.071200, 57373=Returns the day of the year of a TIMESTAMP data type as an integer between 1 and 366, inclusively. The integer 1 refers to January 1., 57104=SELECT DAYOFWEEK(TIMESTAMP(\"2012-10-01 02:03:04\"));, 68453=For example, if unix_timestamp occurs in 2010, the function returns 1274259481071200, the microsecond representation of 2010-01-01 00:00., 64075=SELECT TIMESTAMP_TO_MSEC(TIMESTAMP(\"2012-10-01 01:02:03\"));, 61926=SELECT SECOND(TIMESTAMP('2012-10-02 05:23:48'));, 63056=Returns: 2010-05-19, 58351=SELECT HOUR(TIMESTAMP('2012-10-02 05:23:48'));, 63425=Returns: 02:03:04, 55812=Returns: 2017-10-01 02:03:04 UTC, 26576=If you require greater accuracy from COUNT(DISTINCT), you can specify a second parameter, n, which gives the threshold below which exact results are guaranteed. By default, n is 1000, but if you give a larger n, you will get exact results for COUNT(DISTINCT) up to that value of n. However, giving larger values of n will reduce scalability of this operator and may substantially increase query execution time or cause the query to fail., 59082=SELECT MONTH(TIMESTAMP('2012-10-02 05:23:48'));, 55869=SELECT DATE_ADD(TIMESTAMP(\"2012-10-01 02:03:04\"), -5, \"YEAR\");, 63358=SELECT TIME(TIMESTAMP('2012-10-01 02:03:04'));, 56706=SELECT DAY(TIMESTAMP('2012-10-02 05:23:48'));, 56297=SELECT DATEDIFF(TIMESTAMP('2012-10-02 05:23:48'), TIMESTAMP('2011-06-24 12:18:35'));, 66990=For example, if unix_timestamp occurs on March 19th, this function returns a UNIX timestamp for March 1st of the same year., 60922=SELECT QUARTER(TIMESTAMP(\"2012-10-01 02:03:04\"));, 66463=For example, if unix_timestamp occurs at 08:58, this function returns a UNIX timestamp for 08:00 on the same day., 74247=Returns a human-readable IP address, in the form 10.1.5.23 or 2620:0:1009:1:216:36ff:feef:3f. Examples:, 59616=Returns: 2012-10-01 01:02:04 UTC, 61339=Returns: 2012-12-20 02:03:07 UTC, 68971=SELECT YEAR(TIMESTAMP('2012-10-02 05:23:48'));, 55972=Returns: 2007-10-01 02:03:04 UTC, 60519=SELECT PARSE_UTC_USEC(\"2012-10-01 02:03:04\");, 63690=SELECT TIMESTAMP(\"2012-10-01 01:02:03\");, 55710=SELECT DATE_ADD(TIMESTAMP(\"2012-10-01 02:03:04\"), 5, \"YEAR\");, 54601=Returns: 2013-02-01 01:33:35 UTC, 57535=SELECT DAYOFYEAR(TIMESTAMP(\"2012-10-01 02:03:04\"));, 59492=Returns: 2012-10-01 01:02:03 UTC, 69038=Returns: 2012, 67824=For example, if unix_timestamp occurs on Friday, 2008-04-11, and you set day_of_week to 2 (Tuesday), the function returns a UNIX timestamp for Tuesday, 2008-04-08.}",
+    "lastModified": "Thu, 16 Jul 2015 21:51:50 GMT",
+    "textBeforeTable": "Syntax You can also refer to an alias in the GROUP BY or ORDER BY clauses. HAVING count_corpus_words > 4000; GROUP BY corpus FROM publicdata:samples.shakespeare SELECT corpus, count(word) AS count_corpus_words An alias in a HAVING clause.  WHERE count_corpus_words > 4000 GROUP BY corpus) AS sub_shakespeare FROM publicdata:samples.shakespeare (SELECT corpus, count(word) AS count_corpus_words FROM SELECT corpus, count_corpus_words An alias in a subselect query. The restriction is specified in the outer WHERE clause.    You can apply a restriction to an aggregate function using one of the following options:  Scoped aggregation This feature applies only to tables that have nested fields. Uses an aggregate function and the WITHIN keyword to aggregate repeated values within a defined scope. For example:  SELECT COUNT(m1.f2) WITHIN RECORD FROM Table;  The scope can be RECORD, which corresponds to entire row, or a node (repeated field in a row). Aggregation functions operate over the values within the scope and return aggregated results for each record or node.   Group aggregation Uses an aggregate function and a GROUP BY clause that specifies a non-aggregated field to summarize rows by group. For example:  SELECT COUNT(f1) FROM ds.Table GROUP BY b1;  The TOP function represents a specialized case of group aggregation.   Table aggregation Uses an aggregate function to summarize all qualifying rows in the table. For example:",
+    "textAfterTable": "COVAR_POP(numeric_expr1, numeric_expr2) Computes the population covariance of the values computed by numeric_expr1 and numeric_expr2. COVAR_SAMP(numeric_expr1, numeric_expr2) Computes the sample covariance of the values computed by numeric_expr1 and numeric_expr2. EXACT_COUNT_DISTINCT(field) Returns the exact number of non-NULL, distinct values for the specified field. For better scalability and performance, use COUNT(DISTINCT field). FIRST(expr) Returns the first sequential value in the scope of the function. GROUP_CONCAT('str' [, separator]) Concatenates multiple strings into a single string, where each value is separated by the optional separator parameter. If separator is omitted, BigQuery returns a comma-separated string. If a string in the source data contains a double quote character, GROUP_CONCAT returns the string with double quotes added. For example, the string a\"b would return as \"a\"\"b\". Use GROUP_CONCAT_UNQUOTED if you prefer that these strings do not return with double quotes added. Example: SELECT GROUP_CONCAT(x) FROM (SELECT 'a\"b' AS x), (SELECT 'cd' AS x); GROUP_CONCAT_UNQUOTED('str' [, separator]) Concatenates multiple strings into a single string, where each value is separated by the optional separator parameter. If separator is omitted, BigQuery returns a comma-separated string. Unlike GROUP_CONCAT, this function will not add double quotes to returned values that include a double quote character. For example, the string a\"b would return as a\"b. Example: SELECT GROUP_CONCAT_UNQUOTED(x) FROM (SELECT 'a\"b' AS x), (SELECT 'cd' AS x); LAST(field) Returns the last sequential value in the scope of the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

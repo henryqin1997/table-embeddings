@@ -1,0 +1,72 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2009-07-15T00:00:00",
+            "2009-07-17T00:00:00",
+            "2009-08-01T00:00:00",
+            "2009-09-15T00:00:00",
+            "2009-09-20T00:00:00",
+            "2009-11-14T00:00:00",
+            "2009-11-16T00:00:00",
+            "2009-12-20T00:00:00",
+            "2013-03-01T00:00:00",
+            "2013-04-25T00:00:00"
+        ],
+        [
+            "Description",
+            "Create a smoothed-best estimated trajectory (SBET) of the sensor at a rate of 200 Hz, by integrating the airborne GPS and IMU data The basis of the GPS coordinates were established using OPUS, and were referenced to NAD83 (CORS96) with ellipsoidal heights. The mean GPS positional accuracy for this area was +/- 0.08 meters.",
+            "Integrate SBET and raw laser data to produce point cloud data in LAS 1.2 format for each flight line.",
+            "Compute the roll, pitch, heading, and mirror scale correction factors for each flight line, then apply corrections to the corresponding flight line.",
+            "Automated classification of the bare-earth data from the lidar point cloud using a series of algorithms customized for the types of terrain encountered in the project.",
+            "Manual classification of any data which appears to be bare-earth but was not properly classified using the automated methods.",
+            "Convert point clouds with GPS week timestamps, to point clouds with absolute GPS timestamps, in LAS 1.2 format.",
+            "Data verified using survey control points, located throughout the area.",
+            "Create point clouds in LAS 1.2 format for all returns with GPS week timstamps.",
+            "The NOAA Coastal Services Center (CSC) received topographic files in LAS 1.2 format. The files contained lidar elevation and intensity measurements. The data were received in projected coordinates of NAD83 UTM6N, meters and were vertically referenced to NAVD88 orthometric elevations using GEOID06(Alaska). The vertical units of the data were meters. CSC performed the following processing for data storage and Digital Coast provisioning purposes: 1. The topographic las files were converted from Projected Coordinates (NAD83 UTM6N, meters) to Geographic Coordinates (NAD83, decimal degrees). 2. The topographic las files were vertically converted from orthometric elevations (NAVD88) to ellipsoidal elevations (NAD83) with GEOID06. 3. The data were converted to LAZ format.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/ak2009_aerometric_yukonflats_m1467.xml&view=ISO19115Components-HTMLTable",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044160065.87/warc/CC-MAIN-20150728004240-00278-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 618497878,
+    "recordOffset": 618489676,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:ak2009_aerometric_yukonflats_m1467Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 1 Aero-Metric, Inc. originator 1 NOAA CSC (originator) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov originator http://coast.noaa.gov 1 NOAA CSC (publisher) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov publisher http://coast.noaa.gov 1 NOAA CSC(distributor) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov distributor http://coast.noaa.gov 1 NOAA CSC (processor) DOC/NOAA/NOS/OCM >",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

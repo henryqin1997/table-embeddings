@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "Bit",
+            "7-3",
+            "2",
+            "1",
+            "0"
+        ],
+        [
+            "Description",
+            "Reservations, can not be changed",
+            "DC-DC2 operating mode control",
+            "DC-DC3 operating mode control 0: PFM / PWM auto-switching 1: fixed PWM",
+            "Reservations, can not be changed"
+        ],
+        [
+            "R/W",
+            "",
+            "RW",
+            "RW",
+            ""
+        ],
+        [
+            "Default Value",
+            "",
+            "0",
+            "0",
+            ""
+        ]
+    ],
+    "pageTitle": "AXP209 - linux-sunxi.org",
+    "title": "",
+    "url": "http://linux-sunxi.org/AXP209",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00214-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 144560259,
+    "recordOffset": 144543494,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{62606=0:0-2.0475 V 1:0.7-2.7475 V, 44116=00:4.1 V; 01:4.15 V; 10:4.2 V; 11:4.36 V, 65950=00:4.0 V; 01:4.15 V; 10:4.45 V; 11:4.55 V, 60987=00:20 uA; 01:40 uA; 10:60 uA; 11:80 uA, 47201=00:3.1 V; 01:3.0 V; 10:3.6 V; 11:2.5 V, 48939=0:8 mS; 1:64 mS}",
+    "lastModified": "Wed, 05 Aug 2015 02:12:31 GMT",
+    "textBeforeTable": "Pin Description dynamic real-time decryption algorithm 128bit OTP password storage Decryption module timing and the output voltage can be customized Built-in MOSFET Internal precision reference voltage (0.5%) Highly integrated Support OTG VBUS power state setting / monitoring Overtemperature protection (OTP) Overcurrent protection (OCP) Over/Under-voltage protection (OVP / UVP) Supports soft power-on for input & output External power detection (insert / remove / drive capacity) Output PWROK, indicating system reset or shutdown instructions Support the output voltage monitoring, self-diagnostic function Support for external wake source Soft and hard power shutdown support Soft reset and hard reset support System Management Provide 12 registers for data storage during system power-off Built-in configurable timer Built-in GPIO IRQs and Sleep Managment TWSI (I2C) interface for data exchange Application Processor Interface (Host Interface) Internal temperature sensor Two-level low-power warning and protection Provides information, such as power consumption (mA or mW), the remaining battery capacity (% or mAh), the state of charge (%) and the remaining time for battery to charge Built-in Fuelgauge system Built-in 12 Bit ADC, 12-way for current and",
+    "textAfterTable": "4 N_OE I Power output on/off switch GND: on IPSOUT: off 5 GPIO2 IO REG92H[2:0] GPIO 2 6 N_VBUSEN I VBUS to IPSOUT Selection GND:IPSOUT select VBUS High:IPSOUT do not select VBUS 7 VIN2 PI DCDC2 input source 8 LX2 IO Inductor Pin for DCDC2 9 PGND2 G NMOS Ground for DCDC2 10 DCDC2 I DC-DC2 feedback pin 11 LDO4 O Output Pin of LDO4 12 LDO2 O Output Pin of LDO2 13 LDO24IN PI Input to LDO2 and LDO4 14 VIN3 PI DCDC3 input source 15 LX3 IO Inductor Pin for DCDC3 16 PGND3 G",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

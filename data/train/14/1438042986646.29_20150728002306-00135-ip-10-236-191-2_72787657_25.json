@@ -1,0 +1,41 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "application",
+            "moduleOrCompName",
+            "moduleType",
+            "serviceRefName",
+            "portInfoName",
+            "policyURI",
+            "subjectType"
+        ],
+        [
+            "Definition",
+            "Name and path of the application for which you want to detach a policy from a Web service client port. For example, /domain/server/application#version_number To detach a policy from a client port of a Web service application, this argument is required.",
+            "Name of the Web module or SOA composite (for example HelloWorld[1.0]) for which you want to detach the policy from a client port. To detach a policy from a client port of a SOA composite, the composite name is required (for example default/HelloWorld[1.0]), and the moduleType argument must be set to soa.",
+            "Module type. Valid options are: web\u2014Use with asynchronous Web service callback client. soa\u2014Required for a SOA composite. wsconn\u2014Use with a connection-based Web service client such as an ADF DC Web service client, ADF JAX-WS Indirection Proxy, or WebCenter client.",
+            "The service reference name of the application or composite.",
+            "The client port from which you want to detach the Oracle WSM client policy.",
+            "The Oracle WSM policy name URI, for example oracle/wss_username_token_client_policy\" If the policy specified is not attached, an error message is displayed and/or an exception is thrown.",
+            "Optional. Policy subject type. Valid options are: P\u2014Port. The default is P. O\u2014Not supported in this release."
+        ]
+    ],
+    "pageTitle": "Web Services Custom WLST Commands",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E23943_01/web.1111/e13813/custom_webservices.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00135-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72825455,
+    "recordOffset": 72787657,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 13 May 2015 05:20:24 GMT",
+    "textBeforeTable": "serviceRefName, portInfoName, policyURI, [subjectType=None] ) detachWebServiceClientPolicy(application,moduleOrCompName,moduleType,  Syntax      Policy changes made using this WLST command are only effective after you restart your application. For ADF and WebCenter applications, a message is displayed to remind you to restart your application. Note: Detach a policy from a Web service client port of an application or SOA composite. Description Use with WLST: Online Command Category: Policy Management detachWebServiceClientPolicy [\"oracle/log_policy\", \"oracle/wss_username_token_client_policy\"], true ) 'WssUsernameClient','JRFWssUsernamePort', ('/soainfra/soa1/jwsclient_1#1.1.0','WssUsernameClient','wsconn', wls:/wls-domain/serverConfig>enableWebServiceClientPolicies  The following example enables the client policies oracle/log_policy and oracle/wss_username_token_client_policy of the port JRFWssUsernamePort of the Web module WssUsernameClient. The Web service is part of the application jwsclient_1#1.1.0 for the server soa1 in the domain soainfra. Example       O\u2014Not supported in this release. P\u2014Port. The default is P. Optional. Policy subject type. Valid options are: subjectType If you omit this argument, the policies are enabled. false\u2014Disables the policy. true\u2014Enables the policy. The default is true. Optional. Specifies whether to enable or",
+    "textAfterTable": "Examples The following example detaches the client policy oracle/wss_username_token_client_policy from the port JRFWssUsernamePort of the Web module WssUsernameClient. The Web service is part of the application jwsclient_1#1.1.0 for the server soa1 in the domain soainfra.  wls:/wls-domain/serverConfig>detachWebServiceClientPolicy ('/soainfra/soa1/jwsclient_1#1.1.0','WssUsernameClient','wsconn', 'WssUsernameClient','JRFWssUsernamePort','oracle/wss_username_token_client_policy') The following example detaches the client policy oracle/log_policy from the client port HelloWorld_pt in the SOA composite default/HelloWorld[1.0].  wls:/wls-domain/serverConfig>detachWebServiceClientPolicy(None,  'default/HelloWorld[1.0]','soa','client','HelloWorld_pt','oracle/log_policy' ) detachWebServiceClientPolicies Command Category: Policy Management Use with WLST: Online Description Detach multiple policies from a Web service client port of an application or SOA composite. Note: Policy changes made using this WLST command are only effective after you restart your application. For ADF and WebCenter applications, a message is displayed to remind you to restart your application. Syntax  detachWebServiceClientPolicies(application,moduleOrCompName,moduleType, serviceRefName,portInfoName,policyURIs, [subjectType=None] ) Argument Definition application Name and path of the application for which you want to detach multiple policies from a Web service client port. For example, /domain/server/application#version_number To",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

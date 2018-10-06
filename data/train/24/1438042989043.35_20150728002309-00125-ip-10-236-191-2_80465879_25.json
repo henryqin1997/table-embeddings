@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Settings",
+            "ORASFNML",
+            "ORASFNMC"
+        ],
+        [
+            "Description",
+            "This integer field holds the length of the filename stored in ORASFNMC.",
+            "This string field holds the filename. At most, the first 70 characters are stored."
+        ]
+    ],
+    "pageTitle": "8 Error Handling and Diagnostics",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B12037_01/appdev.101/a96109/pco08err.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989043.35/warc/CC-MAIN-20150728002309-00125-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 80493735,
+    "recordOffset": 80465879,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{103917=ORA-01425, 106522=SQL-02118, 94698=ORA-01403, 114719=ORA-01100 .. 01250, 115376=ORA-12500 .. 12599, 112452=ORA-01900 .. 02099, 116338=ORA-02400 .. 02419, 101440=ORA-01455, 100830=ORA-01406, 116468=ORA-12300 .. 12499, 106454=ORA-01410, 116286=ORA-01495 .. 01499, 104746=ORA-01488, 106505=SQL-02117, 114333=ORA-06200 .. 06249 SQL-02128, 101457=ORA-01457, 112400=ORA-01490 .. 01493, 116260=ORA-01400 .. 01489, 114264=SQL-02128, 112530=ORA-02450 .. 02499, 45895=SQLWARN(0) is set because Oracle9i returned a warning (one of the warning flags, SQLWARN(1) through SQLWARN(7), is also set) or SQLCODE has a positive value other than +1403. For example, SQLWARN(1) is set when Oracle9 assigns a truncated column value to an output host variable., 100274=SQL-02112, 112478=ORA-02140 .. 02289, 106488=SQL-02114, 47678=SQLCODE has a value of +1403 (or +100 when MODE={ANSI | ANSI14 | ANSI13} or when END_OF_FETCH=100) when the end of fetch has been reached. This can happen when all the rows that meet the search criteria have been fetched or no rows meet that criteria., 112383=ORA-01031, 115350=ORA-12100 .. 12299, 116442=ORA-12000 .. 12019, 106150=ORA-02290 .. 02299, 114281=ORA-02700 .. 02899, 101423=ORA-01438, 112426=ORA-01700 .. 01799, 116312=ORA-01500 .. 01699, 116494=ORA-12700 .. 21999, 106539=SQL-02122, 101131=SQL-02124, 116364=ORA-02425 .. 02449, 113583=ORA-02376 .. 02399, 112504=ORA-02420 .. 02424}",
+    "lastModified": "Mon, 02 Feb 2004 03:40:00 GMT",
+    "textBeforeTable": "This sub-record identifies the file containing the current SQL statement and so helps you find errors when multiple files are precompiled for one application. It contains the following two fields: 8.4.5.9 ORASFNM Statements parsed by Pro*COBOL, such as CONNECT, FETCH, and COMMIT, are not saved in the ORACA. This string field holds the text of the current SQL statement. At most, the first 70 characters of text are saved. ORASTXTC This integer field holds the length of the current SQL statement. ORASTXTL Description Settings This sub-record helps you find faulty SQL statements. It lets you save the text of the last SQL statement parsed by Oracle9i. It contains the following two fields: 8.4.5.8 ORASTXT The ORACA provides an enhanced set of diagnostics; the following variables help you to locate errors quickly. 8.4.5.7 Diagnostics The SQL statement text is",
+    "textAfterTable": "8.4.5.10 ORASLNR This integer field identifies the line at (or near) which the current SQL statement can be found. 8.4.5.11 Cursor Cache Statistics The variables below let you gather cursor cache statistics. They are automatically set by every COMMIT or ROLLBACK statement your program issues. Internally, there is a set of these variables for each CONNECTed database. The current values in the ORACA pertain to the database against which the last commit or rollback was executed. 8.4.5.12 ORAHOC This integer field records the highest value to which MAXOPENCURSORS was set during program execution. 8.4.5.13 ORAMOC This integer field records the maximum number of open cursors required by your program. This number can be higher than ORAHOC if MAXOPENCURSORS was set too low, which forced Pro*COBOL to extend the cursor cache. 8.4.5.14 ORACOC This integer field records the current number of open cursors required by your program. 8.4.5.15 ORANOR This integer field records the number of cursor",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

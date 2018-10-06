@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6",
+            "Step 7"
+        ],
+        [
+            "Command or Action",
+            "configure Example: RP/0/0/CPU0:router# configure",
+            "router vrrp Example: RP/0/0/CPU0:router(config)# router vrrp",
+            "interface type interface-path-id Example: RP/0/0/CPU0:router(config-vrrp)# interface TenGigE 0/2/0/1",
+            "address-family ipv4 Example: RP/0/0/CPU0:router(config-vrrp-if)# address-family ipv4",
+            "vrrp group-no Example: RP/0/0/CPU0:router(config-vrrp-address-family)# vrrp 1",
+            "name name Example: RP/0/0/CPU0:router(config-vrrp-vritual-router)# name s1",
+            "Use the commit or end command."
+        ],
+        [
+            "Purpose",
+            "Enters global configuration mode.",
+            "EnablesVRRP configuration mode.",
+            "Enables RP interface configuration mode on a specific interface.",
+            "Enables VRRP address-family configuration mode on a specific interface.",
+            "Enables VRRP group configuration mode on a specific interface.",
+            "Configures a VRRP session name.",
+            "commit\u2014Saves the configuration changes and remains within the configuration session. end\u2014Prompts user to take one of these actions: Yes\u2014 Saves configuration changes and exits the configuration session. No\u2014Exits the configuration session without committing the configuration changes. Cancel\u2014Remains in the configuration mode, without committing the configuration changes."
+        ]
+    ],
+    "pageTitle": "Cisco IOS XR IP Addresses and Services Configuration Guide for the Cisco XR 12000 Series Router, Release 4.3.x - Implementing VRRP [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/xr12000/software/xr12k_r4-3/addr_serv/configuration/guide/b_ipaddr_cg43xxr12k/b_ipaddr_cg42xr12k_chapter_01010.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987628.47/warc/CC-MAIN-20150728002307-00073-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 367464747,
+    "recordOffset": 367432867,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{150907=Configuring Modular QoS Congestion Avoidance on Cisco\u00a0IOS\u00a0XR Modular Quality of Service Configuration Guide for the Cisco\u00a0XR\u00a012000 Series Router, 152165=Cisco\u00a0IOS\u00a0XR Getting Started Guide for the Cisco\u00a0XR\u00a012000 Series Router, 151786=Cisco\u00a0IOS\u00a0XR Commands Master List for the Cisco\u00a0XR\u00a012000 Series Router, 151358=VRRP Commands on Cisco\u00a0IOS\u00a0XR IP Addresses and Services Command Reference for the Cisco\u00a0XR\u00a012000 Series Router, 150430=Configuring Modular Quality of Service Congestion Management on Cisco\u00a0IOS\u00a0XR Modular Quality of Service Configuration Guide for the Cisco\u00a0XR\u00a012000 Series Router, 149905=Quality of Service Commands on Cisco\u00a0IOS\u00a0XR Modular Quality of Service Command Reference for the Cisco\u00a0XR\u00a012000 Series Router, 152562=Configuring AAA Services on Cisco\u00a0IOS\u00a0XR System Security Configuration Guide for the Cisco\u00a0XR\u00a012000 Series Router}",
+    "textBeforeTable": "DETAILED STEPS 13.\u00a0\u00a0\u00a0 Use the commit or end command. 12.\u00a0\u00a0\u00a0 delay [minimum seconds] [ reload seconds] 11.\u00a0\u00a0\u00a0 track interface type instance interface-path-id [priority-decrement] 10.\u00a0\u00a0\u00a0 timer [msec] interval [force] 9.\u00a0\u00a0\u00a0 preempt [delay seconds] [disable] 8.\u00a0\u00a0\u00a0 priority priority 7.\u00a0\u00a0\u00a0 accept-mode{disable} 6.\u00a0\u00a0\u00a0 text-authentication 5.\u00a0\u00a0\u00a0 vrrp vrid version { 2 | 3 } 4.\u00a0\u00a0\u00a0 address-family {ipv4 | ipv6} 3.\u00a0\u00a0\u00a0 interface type interface-path-id 2.\u00a0\u00a0\u00a0 router vrrp 1.\u00a0\u00a0\u00a0 configure SUMMARY STEPS The sections that follow describe how to customize your VRRP configuration. Customizing the behavior of VRRP is optional. Be aware that as soon as you enable a VRRP group, that group is operating. It is possible that if you first enable a VRRP group before customizing VRRP, the router could take over control of the group and become the master virtual router before you have",
+    "textAfterTable": "When a VRRP packet arrives from another router in the VRRP group, its authentication string is compared to the string configured on the local system. If the strings match, the message is accepted. If they do not match, the packet is discarded. All routers within the group must be configured with the same authentication string. To disable VRRP authentication, use the no command. Note\u00a0\u00a0\u00a0 Plain text authentication is not meant to be used for security. It simply provides a way to prevent a misconfigured router from participating in VRRP. \u00a0 Step\u00a07 accept-mode{disable} Example:  RP/0/0/CPU0:router# (config-vrrp-virtual-router)# accept-mode disable \u00a0 Enters the IPv4 or IPv6 address family submode. \u00a0 Step\u00a08 priority priority Example:  RP/0/0/CPU0:router# (config-vrrp-virtual-router)# priority 254 \u00a0 (Optional) Sets the priority of the virtual router. Use the priority command to control which router becomes the master router. The priority command is",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Command",
+            "clear ipv6 neighbors",
+            "ipv6 enable",
+            "show ipv6 neighbors"
+        ],
+        [
+            "Description",
+            "Deletes all entries in the IPv6 neighbors discovery cache, except static entries.",
+            "Disables IPv6 processing on an interface that has not been configured with an explicit IPv6 address.",
+            "Displays IPv6 neighbors discovery cache information."
+        ]
+    ],
+    "pageTitle": "Cisco ASR 9000 Series Aggregation Services Router IP Addresses and Services Command Reference, Release 4.1 - Network Stack IPv4 and IPv6 Commands [Cisco IOS XR Software (End-of-Sale)] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r4-1/addr_serv/command/reference/b_ipaddr_cr41asr9k/b_ipaddr_cr41asr9k_chapter_01000.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987552.57/warc/CC-MAIN-20150728002307-00236-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 352338743,
+    "recordOffset": 352267674,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{178562=0 milliseconds (unspecified) is advertised in router advertisements, and the value 1000 is used for the neighbor discovery activity of the router itself., 40396=One common application that requires IPv4 helper addresses is Dynamic Host Configuration Protocol (DHCP), which is defined in RFC 1531. DHCP protocol information is carried inside of BOOTP packets. To enable BOOTP broadcast forwarding for a set of clients, configure an IPv4 helper address on the networking device interface physically closest to the client. The IPv4 helper address should specify the address of the DHCP server. If you have multiple servers, you can configure one IPv4 helper address for each server. Because BOOTP packets are forwarded by default, DHCP information can now be forwarded by the networking device. The DHCP server now receives broadcasts from the DHCP clients., 199476=All prefixes configured on interfaces that originate IPv6 router advertisements are advertised with a valid lifetime of 2592000 seconds (30 days) and a preferred lifetime of 604800 seconds (7 days), and with both the \u201conlink\u201d and \u201cautoconfig\u201d flags set., 218326=seconds : 1800 seconds, 159620=The interval between the sending of duplicate address detection neighbor solicitation messages (the duplicate address detection timeout interval) is specified by the neighbor discovery-related variable RetransTimer (as specified in RFC\u00a02461, Neighbor Discovery for IP Version\u00a06 [IPv6]), which is used to determine the time between retransmissions of neighbor solicitation messages to a neighbor when the address is being resolved or when the reachability of a neighbor is being probed. This is the same management variable used to specify the interval for neighbor solicitation messages during address resolution and neighbor unreachability detection. Use the ipv6 nd ns-interval command to configure the interval between neighbor solicitation messages that are sent during duplicate address detection., 146821=MTU in bytes. Range is 1280 to 65535 for IPv6 packets. The maximum MTU size that can be set on an interface depends on the interface medium., 178163=Interval (in milliseconds) between IPv6 neighbor solicit transmissions. Range is 1000 to 3600000., 204085=The following example includes the IPv6 prefix 2001:0DB8::/35 in router advertisements sent out GigabitEthernet interface\u00a00/1/0/0 with a valid lifetime of 1000 seconds and a preferred lifetime of 900 seconds:, 159254=The DupAddrDetectTransmits node configuration variable (as specified in RFC\u00a02462, IPv6 Stateless Address Autoconfiguration) is used to automatically determine the number of consecutive neighbor solicitation messages that are sent on an interface while duplicate address detection is performed on a tentative unicast IPv6 address., 283826=The following example creates a local IPv4 address pool named \u201cpool2,\u201d which contains all IPv4 addresses in the range 172.16.23.0 to 172.16.23.255:, 284184=The following example configures a pool of 1024 IP addresses:, 98857=This argument must be in the form documented in RFC 2373 where the address is specified in hexadecimal using 16-bit values between colons., 4512=The following example shows how to set 192.168.1.27 as the primary address and 192.168.7.17 and 192.168.8.17 as the secondary addresses on GigabitEthernet interface 0/1/1/0:, 195716=This keyword must be in the form documented in RFC 2373 where the address is specified in hexadecimal using 16-bit values between colons.}",
+    "textBeforeTable": "Syntax Description node-id ] [ location neighbors ipv6 clear To delete all entries in the IPv6 neighbor discovery cache, except static entries, use the clear ipv6 neighbors command in EXEC mode. clear ipv6 neighbors vrf mode vrf (mhost) vrf (description) vrf(address-family) vrf show vrf show mpa ipv6 show mpa ipv4 show mpa groups show mpa client show ipv6 traffic show ipv6 neighbors summary show ipv6 neighbors show ipv6 interface show ipv6 interface show ipv4 traffic show local pool show ipv4 interface show clns statistics show arm vrf-summary show arm summary show arm registrations producers show arm router-ids show arm database show arm conflicts local pool ipv6 unreachables disable ipv6 neighbor ipv6 nd suppress-ra ipv6 nd scavenge-timeout ipv6 nd redirects ipv6 nd reachable-time ipv6 nd ra-lifetime ipv6 nd ra-interval",
+    "textAfterTable": "Command History Release Modification Release 3.7.2 This command was introduced. Usage Guidelines If the location option is specified, only the neighbor entries specified in the location node-id keyword and argument are cleared. Task ID Task ID Operations network read, write IPv6 execute Examples In the following example, only the highlighted entry is deleted:  RP/0/RSP0/CPU0:router# clear ipv6 neighbors ?  location specify a node name  RP/0/RSP0/CPU0:router# show ipv6 neighbor IPv6 Address Age Link-layer Addr State Interface 8888::3 - 1234.2345.9877 REACH GigabitEthernet0/0/0/0 8888::8 - 1234.2345.9877 REACH GigabitEthernet/0/0/0 fe80::205:1ff:fe9f:6400 1335 0005.019f.6400 STALE GigabitEthernet0/0/0/0 fe80::206:d6ff:fece:3808 1482 0006.d6ce.3808 STALE GigabitEthernet0/0/0/0 fe80::200:11ff:fe11:1112",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

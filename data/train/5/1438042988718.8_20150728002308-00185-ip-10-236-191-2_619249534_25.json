@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2007-06-11T00:00:00",
+            "2011-05-10T00:00:00",
+            "2011-06-20T00:00:00"
+        ],
+        [
+            "Description",
+            "LIDAR data was collected using Merrick's ALS60 sensor. The raw data was verified in MARS software for complete coverage of the project area, and boresighted to align the flightlines. Raw data files were parsed into manageable client-specific tiles. These tiles were then processed through automated filtering that separates the data into different classification groups: error points, ground points, and canopy/building points. The data was next taken into a graphic environment to reclassify the erroneous points that may remain in the LIDAR point cloud after auto filter.",
+            "The NOAA Coastal Services Center (CSC) received files in LAS format. The files contained LiDAR intensity and elevation measurements. CSC performed the following processing on the data for data storage purposes and Digital Coast provisioning: 1. The data were converted from UTM, Zone 16 coordinates to geographic (NAD83) coordinates; 2. The data were filtered to remove elevation outliers; 3. The data were converted from NAVD88 heights to ellipsoid heights using Geoid03; 4. The LAS header fields were sorted by latitude and updated;",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Components NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2010_NWFWMD_Mission2010_m581.xml",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2010_NWFWMD_Mission2010_m581.xml&view=ISO19115Components-HTMLTable&title=Components%20NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/2010_NWFWMD_Mission2010_m581.xml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00185-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 619257736,
+    "recordOffset": 619249534,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:2010_NWFWMD_Mission2010_m581Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "Component Title Date Citation Identifier 1 2010 Northwest Florida Water Management District (NWFWMD) Lidar: Mission 2010 (Portions of Liberty and Calhoun Counties) 2011-05-01 1 Ground Control 2010-01-01 1 Lidar Survey Collection Report 3 None 1 North American Datum 1983 2007-01-19 Top CI_Series Count Component Name Issue Identification Page 1 Ground Control Ground Control Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

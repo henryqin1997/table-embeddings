@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "instName",
+            "compName",
+            "compType"
+        ],
+        [
+            "Definition",
+            "Specifies the name of the application server instance.",
+            "Specifies the name of the component instance",
+            "Specifies the type of component. Valid value is 'ovd'."
+        ]
+    ],
+    "pageTitle": "Configuring SSL in Oracle Fusion Middleware",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E21764_01/core.1111/e10105/sslconfig.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00308-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 879078899,
+    "recordOffset": 879037254,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{4979=The minimum key size for enabling FIPS mode is 1024 bits. Ensure that the keys used in FIPS mode are at least 1024 bits., 3024=A minimum key size of 1024 bits is recommended for certificates used for SSL. Higher key size provides more security but at the cost of reduced performance. Pick an appropriate key size value depending on your security and performance requirements., 5443=See Section 6.9.28, \"Properties Files for SSL\" for details about specifying the SSL properties file with the configureSSL command.}",
+    "TableContextTimeStampAfterTable": "{70145=The following command generates a key pair with DN cn=www.acme.com, key size 1024, algorithm RSA and alias mykey in keys.jks, for Oracle Virtual Directory instance ovd1 in application server instance inst1:, 16810=The following command generates a certificate signing request with DN cn=www.acme.com and key size 1024 in wallet1, for Oracle Internet Directory instance oid1, in application server instance inst1:, 29532=For details about the format of properties files, see Section 6.9.28, \"Properties Files for SSL.\", 20967=The following command adds a self-signed certificate with DN cn=www.acme.com, key size 1024 to wallet1, for Oracle Internet Directory instance oid1, in application server instance inst1:}",
+    "lastModified": "Wed, 13 May 2015 05:19:50 GMT",
+    "textBeforeTable": "addSelfSignedCertificate('instName', 'compName', 'compType', 'walletName', 'password', 'DN', 'keySize')  6.9.2.2 Syntax      This command creates a key pair and wraps it in a self-signed certificate in an Oracle wallet for the specified component instance (Oracle HTTP Server, Oracle WebCache or Oracle Internet Directory). Only keys based on the RSA algorithm are generated. 6.9.2.1 Description    Online command that adds a self-signed certificate. 6.9.2 addSelfSignedCertificate    wls:/mydomain/serverConfig> addCertificateRequest('inst1', 'oid1', 'oid','wallet1', 'password', 'cn=www.acme.com', '1024',)  The following command generates a certificate signing request with DN cn=www.acme.com and key size 1024 in wallet1, for Oracle Internet Directory instance oid1, in application server instance inst1: 6.9.1.3 Example       Specifies the key size in bits. keySize Specifies the Distinguished Name of the key pair entry. DN Specifies the password of the wallet. password Specifies the name of the wallet file. walletName Specifies the type of component. Valid values are 'ohs', 'oid', and 'webcache'. compType",
+    "textAfterTable": "walletName Specifies the name of the wallet file. password Specifies the password of the wallet. DN Specifies the Distinguished Name of the key pair entry. keySize Specifies the key size in bits. 6.9.2.3 Example The following command adds a self-signed certificate with DN cn=www.acme.com, key size 1024 to wallet1, for Oracle Internet Directory instance oid1, in application server instance inst1:  wls:/mydomain/serverConfig> addSelfSignedCertificate('inst1', 'oid1', 'oid','wallet1', 'password', 'cn=www.acme.com', '1024') 6.9.3 changeKeyStorePassword Online command that changes the keystore password. 6.9.3.1 Description This command changes the password of a Java Keystore (JKS) file for an Oracle Virtual Directory instance. 6.9.3.2 Syntax  changeKeyStorePassword('instName', 'compName', 'compType', 'keystoreName', 'currPassword', 'newPassword') Argument Definition instName Specifies the name of the application server instance. compName",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

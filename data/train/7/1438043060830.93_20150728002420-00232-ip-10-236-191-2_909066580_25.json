@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Status",
+            "new",
+            "new"
+        ],
+        [
+            "File",
+            "deadlock-april-9.sql_.txt",
+            "deadlock-march-21.sql_.txt"
+        ],
+        [
+            "Size",
+            "25.11 KB",
+            "43.11 KB"
+        ]
+    ],
+    "pageTitle": "Do not use InnoDB for the semaphore table, use Memory [#1898204] | Drupal.org",
+    "title": "",
+    "url": "https://www.drupal.org/node/1898204",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00232-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 909096451,
+    "recordOffset": 909066580,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{1033=Various links on drupal.stackexchange.com where people are complaining about this issue. http://drupal.stackexchange.com/questions/113042/after-enabling-mysql-re... http://drupal.stackexchange.com/questions/23500/enabling-modules-my-site... http://drupal.stackexchange.com/questions/22145/pdo-deadlocks-galore-on-...}",
+    "TableContextTimeStampAfterTable": "{215811=Record lock, heap no 37 PHYSICAL RECORD: n_fields 2; compact format; info bits 32 0: len 30; hex 7468656d655f72656769737472793a72756e74696d653a64617461737068; asc theme_registry:runtime:datasph; (total 39 bytes); 1: len 30; hex 37333337363632353735346536346664396136323639392e393936373630; asc 73376625754e64fd9a62699.996760; (total 32 bytes);, 214604=*** (2) TRANSACTION: TRANSACTION 94404352108, ACTIVE 0 sec inserting mysql tables in use 1, locked 1 4 lock struct(s), heap size 1184, 9 row lock(s), undo log entries 1 MySQL thread id 13629711, OS thread handle 0x7fd4d60e2700, query id 2112336628 10.112.0.203 myds update INSERT INTO semaphore \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 (name, value, expire) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 VALUES ('theme_registry:runtime:datasphere:cache', '118714896854e64fd54a3021.88813258', 1424379896.3439) *** (2) HOLDS THE LOCK(S): RECORD LOCKS space id 4021130 page no 4 n bits 120 index `name` of table `merchant_portal`.`semaphore` trx id 94404352108 lock mode S Record lock, heap no 1 PHYSICAL RECORD: n_fields 1; compact format; info bits 0 0: len 8; hex 73757072656d756d; asc supremum;;, 217616=*** (2) WAITING FOR THIS LOCK TO BE GRANTED: RECORD LOCKS space id 4021130 page no 4 n bits 120 index `name` of table `merchant_portal`.`semaphore` trx id 94404352108 lock_mode X locks gap before rec insert intention waiting Record lock, heap no 41 PHYSICAL RECORD: n_fields 2; compact format; info bits 32 0: len 30; hex 7468656d655f72656769737472793a72756e74696d653a64617461737068; asc theme_registry:runtime:datasph; (total 39 bytes); 1: len 30; hex 3135393133333133373535346536346664353439313934302e3537343831; asc 159133137554e64fd5491940.57481; (total 33 bytes);, 199983=@nnewton Did you use hash or btree indexes on the memory table? http://www.percona.com/blog/2008/02/01/performance-gotcha-of-mysql-memor..., 216172=Record lock, heap no 41 PHYSICAL RECORD: n_fields 2; compact format; info bits 32 0: len 30; hex 7468656d655f72656769737472793a72756e74696d653a64617461737068; asc theme_registry:runtime:datasph; (total 39 bytes); 1: len 30; hex 3135393133333133373535346536346664353439313934302e3537343831; asc 159133137554e64fd5491940.57481; (total 33 bytes);, 31690=Note about using memory table (something that could be done for semaphore) http://stackoverflow.com/questions/4586559/how-to-change-a-heap-memory-m... http://www.mysqlperformanceblog.com/2008/02/01/performance-gotcha-of-mys... http://stackoverflow.com/questions/7306316/btree-vs-hashtable http://dev.mysql.com/doc/refman/5.1/en/memory-storage-engine.html, 158955=I was still having issues with this table when using READ-COMMITTED; once I switched to memory the issues went away. Also noted that I'm using a BTREE index instead of HASH due to this http://www.mysqlperformanceblog.com/2008/02/01/performance-gotcha-of-mys... where they report HASH gives 80 deletes per second (12.5ms table locked) and BTREE gives 15,000 of deletes per second for the memory table. Having a table level lock last for 0.07ms is a good tradeoff if that eliminates deadlocks., 165568=Currently we'll get a deadlock about once every other day on the cache_field table (totally fine) but the last trigger of our nagios alert happened on april 9th (when things could be going bad)., 189670=This is Drupal 7.34 using Innodb and MySQL 5.5.23, the stray trx locks started after copying the database down from the production site (on a VPS) onto my work machine running Windows. There are a fair few third party modules on the site, but all of the ones that're removed have been uninstalled correctly. As recommended elsewhere I've made sure the innodb_buffer_pool_size is generous - I set it to a gig., 83778=I could not change that table back to MYISAM due to 'MySQL: Specified key was too long; max key length is 1000 bytes' error!, 89833=Still getting deadlocks on the semaphore table. Changing the engine to memory seems to help; just be sure to use a BTREE index instead of a HASH index. HASH is the default for MEMORY and still has issues that BTREE fixes. http://www.mysqlperformanceblog.com/2008/02/01/performance-gotcha-of-mys...}",
+    "lastModified": "Wed, 05 Aug 2015 04:24:38 GMT",
+    "textBeforeTable": "February 1, 2013 at 1:55am CreditAttribution: mikeytown2 commented mikeytown2 Comment #2 Log in or register to post comments <?php $tables = array( \u00a0 'cache' => 'MyISAM', \u00a0 'cache_bootstrap' => 'MyISAM', \u00a0 'cache_menu' => 'MyISAM', \u00a0 'semaphore' => 'MyISAM', \u00a0 'variable' => 'MyISAM', ); system_install_convert_db_engine($tables); function system_install_convert_db_engine($tables) { \u00a0 static $engines = array(); \u00a0 // Get all Database Engine types. \u00a0 if (empty($engines)) { \u00a0\u00a0\u00a0 $engine_query = db_query('SHOW ENGINES'); \u00a0\u00a0\u00a0 foreach ($engine_query as $engine) { \u00a0\u00a0\u00a0\u00a0\u00a0 $engines[$engine->Engine]",
+    "textAfterTable": "View ] Patch to fix fresh installs. Log in or register to post comments Comment #3 mikeytown2 CreditAttribution: mikeytown2 commented February 1, 2013 at 1:55am Status: Active \u00bb Needs review Log in or register to post comments Comment #4 mikeytown2 CreditAttribution: mikeytown2 commented February 1, 2013 at 8:10pm Status: Active \u00bb Needs review Status File Size",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

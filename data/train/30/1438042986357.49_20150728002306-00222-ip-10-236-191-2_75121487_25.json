@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "dependency_name",
+            "object_name",
+            "attribute_list",
+            "attribute_table"
+        ],
+        [
+            "Description",
+            "The name of the value dependency. If a dependency with the specified name does not exist, then it is created. If a dependency with the specified name exists, then the specified object and attributes are added to the dependency. If NULL, an error is raised.",
+            "The name of the table, specified as [schema_name.]table_name. For example, hr.employees. If the schema is not specified, then the current user is the default. If NULL and the specified dependency exists, then the dependency is removed. If NULL and the specified dependency does not exist, then an error is raised. If NULL, then attribute_list and attribute_table also must be NULL.",
+            "A comma-delimited list of column names in the table. There must be no spaces between entries.",
+            "A PL/SQL associative array of type DBMS_UTILITY.NAME_ARRAY that contains names of columns in the table. The first column name should be at position 1, the second at position 2, and so on. The table does not need to be NULL terminated."
+        ]
+    ],
+    "pageTitle": "DBMS_APPLY_ADM",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/appdev.112/e23448/d_apply.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986357.49/warc/CC-MAIN-20150728002306-00222-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 75166331,
+    "recordOffset": 75121487,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 19 May 2015 17:53:04 GMT",
+    "textBeforeTable": "Table 21-26 SET_VALUE_DEPENDENCY Procedure Parameters Parameters attribute_table IN DBMS_UTILITY.NAME_ARRAY); object_name IN VARCHAR2, dependency_name IN VARCHAR2, DBMS_APPLY_ADM.SET_VALUE_DEPENDENCY( attribute_list IN VARCHAR2); object_name IN VARCHAR2, dependency_name IN VARCHAR2, DBMS_APPLY_ADM.SET_VALUE_DEPENDENCY(  Syntax   Oracle Streams Concepts and Administration See Also:  This procedure is overloaded. The attribute_list and attribute_table parameters are mutually exclusive. An apply component uses the name of a value dependencies to detect dependencies between row logical change records (row LCRs) that contain the columns defined in the value dependency. Value dependencies can define virtual foreign key relationships between tables, but, unlike foreign key relationships, value dependencies can involve more than two database objects. This procedure sets or removes a value dependency. A value dependency is a virtual dependency definition that defines a relationship between the columns of two or more tables. SET_VALUE_DEPENDENCY Procedure      This example sets a conflict handler that is called if a conflict occurs for the salary or commission_pct column in the hr.employees table. If such a conflict occurs, then the salary column is evaluated to resolve the conflict. If a conflict occurs only for a column that is not in the column list, such as the job_id column, then this conflict handler is not called. / END; column_list => cols); resolution_column => 'salary', method_name",
+    "textAfterTable": "Usage Notes The following usage notes apply to this procedure: The SET_VALUE_DEPENDENCY Procedure and XStream Outbound Servers The SET_VALUE_DEPENDENCY Procedure and XStream Inbound Servers The SET_VALUE_DEPENDENCY Procedure and XStream Outbound Servers This procedure has no effect on XStream outbound servers. The SET_VALUE_DEPENDENCY Procedure and XStream Inbound Servers This procedure functions the same way for apply processes and inbound servers. START_APPLY Procedure This procedure directs the apply component to start applying messages. Syntax  DBMS_APPLY_ADM.START_APPLY( apply_name IN VARCHAR2); Parameter Table 21-27 START_APPLY Procedure Parameter Parameter Description apply_name The apply component name. A NULL setting is not allowed. Do not specify an owner. Usage Notes The following usage notes apply to this procedure: Apply Component Status The START_APPLY Procedure and XStream Outbound Servers The START_APPLY Procedure",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

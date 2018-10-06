@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Element",
+            "Partition Name",
+            "Partition Root",
+            "Capacity Check Interval",
+            "Slack Bytes",
+            "Duplication Methods",
+            "Is Active",
+            "Update",
+            "Reset"
+        ],
+        [
+            "Description",
+            "Defines the unique name of the partition. The partition name is displayed on the Partition Listing Page and is part of the path expression used by Content Server to store content. As such, it must be unique for each partition created, and has the same character limitations as Idoc Script and HTML path expressions.",
+            "Defines the root level of the path to where content is stored for this partition and is one of the arguments passed to the algorithm used by Content Server to choose a storage location for content.",
+            "Specifies the interval used in determining the disk space available for use by this partition. Expressed in seconds. This argument may not work on all platforms.",
+            "Specifies the point at which a partition is full and can no longer accept content. If the available space on the partition is lower than the specified number of slack bytes, the partition no longer accepts new content.",
+            "Specifies how native files are treated when not converted to a web-viewable rendition. For example, many image files do not require a rendition to be web-viewable. Linking to the native file instead of copying them to the web path helps manage storage space. copy (default): copies the native file to the web path. link: Resolves the web path to the native file in the vault",
+            "Specifies whether the partition is active and available for new content.",
+            "Submits the information specified creates or updates the partition.",
+            "Resets the information to the previous state before updating the partition."
+        ]
+    ],
+    "pageTitle": "A.1 System Properties and Settings Interface",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E14571_01/doc.1111/e10792/e01_interface001.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00307-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 75009419,
+    "recordOffset": 74957783,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{93248=Thus, if you set this value to 2000 and a document fails, the entire batch would be reprocessed. This would take longer than if you use the default setting and an item fails. But, if there are no failures in the batch, then setting this value higher accelerates the process., 80066=For Windows 2000 systems, the default is c:/Program Files/Internet Explorer/iexplore.exe., 75264=You can specify multiple IP addresses, separated by pipes (\u00a0|\u00a0). Make sure that there are no spaces on either side of the pipe character. (For example, 127.0.0.1|10.10.50.143)}",
+    "lastModified": "Wed, 13 May 2015 05:14:22 GMT",
+    "textBeforeTable": "The Add/Edit Partition Page is used to create and modify partitions used by Content Server to store content. To access the Add/Edit Partition page, click Add Partition on the Partition Listing Page. Values entered here are stored in the Partition List Table in the fsconfig.hda file, located in the IntradocDir/data/filestore/config/ directory. A.1.4.2 Add/Edit Partition Page Clicking Add Partition displays the Add/Edit Partition Page, which can be used to add and activate a new partition for use by Content Server. Add Partition Displays the item action menu for each partition, from which you can choose to edit or delete the partition. Action Displays whether a partition is active (TRUE) or not (FALSE). Active partitions are available to store content. Is Active Displays the root level to where content is being stored for this partition and is one of the arguments passed to the algorithm used by Content Server to choose a storage location for content. This value can be a static string, such as C:/vault, an",
+    "textAfterTable": "A.1.4.3 FileStore Provider Information Page The FileStore Provider Information page for a FileStore provider displays information about the selected provider, including the connection state, last activity date, and the provider type, class, and connection. To display the FileStore Provider Information page, click Info next to a FileStore provider on the Providers Page. Click Edit on the FileStore Provider Information page to display the Edit File Store Provider Page, where details of the FileStore Provider can be modified. A.1.4.4 Edit File Store Provider Page The Edit File Store Provider page is used to modify the existing file store. To access the Edit File Store page, click Edit on the FileStore Provider Information Page. The information entered on this page is stored in the provider.hda file located in the IntradocDir/data/providers/defaultfilestore directory. The default values will handle most storage scenarios.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

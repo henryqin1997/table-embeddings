@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Element",
+            "description",
+            "property"
+        ],
+        [
+            "Required",
+            "zero or one",
+            "zero or more"
+        ],
+        [
+            "Description",
+            "Contains a text description of this element.",
+            "Specifies a property or a variable."
+        ]
+    ],
+    "pageTitle": "Chapter\u00a01 The domain.xml File (Sun Java System Application Server Platform Edition 8.2 Administration Reference)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19830-01/819-4723/6n6rtcrn5/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00060-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72052387,
+    "recordOffset": 72010945,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{242843=1024, 123512=(optional) Number of acceptor threads for the listener, typically the number of processors in the machine. Legal values are 1 - 1024 ., 139454=(optional) Port number for the listener. Legal values are 1 - 65535. On UNIX, creating sockets that listen on ports 1 - 1024 requires superuser privileges., 123011=Port number on which the listener listens. Legal values are 1 - 65535. On UNIX, creating sockets that listen on ports 1 - 1024 requires superuser privileges. Configuring an SSL listener to listen on port 443 is standard., 336829=Specifies a comma-separated list of Cache-Control response directives. For a list of valid directives, see section 14.9 of the document at http://www.ietf.org/rfc/rfc2616.txt., 323483=2048, 139388=1072}",
+    "lastModified": "Thu, 27 Jan 2011 05:33:30 GMT",
+    "textBeforeTable": "admin-object-resource Subelements Table 1\u20131 The following table describes subelements for the admin-object-resource element. Subelements resources Superelements Defines an administered object for an inbound resource adapter. admin-object-resource A A B C D E F H I J L M O P R S T U V W Alphabetical List of Elements . . description . system-property . . . . description . . . system-property . . . resource-ref . . . application-ref . . server P . servers . . . . description . . . system-property . . . . . filter-config P . . . . . listener-config P . . . . alert-subscription . . . alert-service P . . . . thread-pool . . . thread-pools . . . . jvm-options . . . . . jvm-options . . . . profiler P . . . java-config P . . . . module-monitoring-levels P . . . monitoring-service P . . . transaction-service P . . . . . . response-policy . . . . . . request-policy . . . . . provider-config P . . . . message-security-config . . . . audit-module P . . . . jacc-provider P . . . . auth-realm P . .",
+    "textAfterTable": "Attributes The following table describes attributes for the admin-object-resource element. Table 1\u20132 admin-object-resource Attributes Attribute\u00a0 Default\u00a0 Description\u00a0 jndi-name none\u00a0 Specifies the JNDI name for the resource.\u00a0 res-type none\u00a0 Specifies the fully qualified type of the resource.\u00a0 res-adapter none\u00a0 Specifies the name of the inbound resource adapter, as specified in the name attribute of a connector-module element. object-type user (optional) Defines the type of the resource. Allowed values are:\u00a0 system-all - A system resource for all server instances and the domain application server. system-admin - A system resource only for the domain application server. system-instance - A system resource for all server instances only. user - A user resource. enabled true (optional) Determines",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

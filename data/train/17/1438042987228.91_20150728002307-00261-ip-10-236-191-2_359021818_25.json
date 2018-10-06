@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5"
+        ],
+        [
+            "Command or Action",
+            "switch# configure terminal",
+            "switch(config)# port-profile [type {vethernet}] profile-name",
+            "switch(config-port-prof)# state enabled",
+            "switch(config-port-prof)# show port-profile [brief | expand-interface | usage] [name profile-name]",
+            "switch(config-port-prof)# copy running-config startup-config"
+        ],
+        [
+            "Purpose",
+            "Enters global configuration mode.",
+            "Enters port profile configuration mode for the named vEthernet port profile.",
+            "Enables the port profile and applies its configuration to the assigned ports. If the port profile is a VMware port group, the port group will be created in the vswitch on vCenter Server.",
+            "Displays the configuration for verification.",
+            "(Optional) Saves the change persistently through reboots and restarts by copying the running configuration to the startup configuration."
+        ]
+    ],
+    "pageTitle": "Cisco Nexus 1000V Port Profile Configuration Guide, Release 4.2(1)SV2(1.1) - Creating Port Profiles [Cisco Nexus 1000V Switch for VMware vSphere] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus1000/sw/4_2_1_s_v_2_1_1/port_profile/configuration/guide/b_Port_Profile_Configuration_Guide_Release_4_2_1SV2_1_1/b_Port_Profile_Configuration_Guide_Release_4_2_1SV2_1_1_chapter_011.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987228.91/warc/CC-MAIN-20150728002307-00261-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 359044107,
+    "recordOffset": 359021818,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{26797=2-1005, 27221=1006-4094, 80471=The valid range is 1 to 1024.}",
+    "textBeforeTable": "Procedure You have identified the characteristics needed for this port profile. You know whether the ports need to be initialized with system settings. You are logged in to the CLI in EXEC mode. Before You Begin Creating a Port Profile Configuring Port Profiles Static vEthernet port-bindings Port profile name vmware port-group name 32 min-ports 32 max-ports VLAN 1 access port vlan vethernet type - system vlan vlan_list access switchport mode (access or",
+    "textAfterTable": "Step\u00a04 switch(config-port-prof)# show port-profile [brief | expand-interface | usage] [name profile-name]\u00a0 (Optional) Displays the configuration for verification. \u00a0 Step\u00a05 switch(config-port-prof)# copy running-config startup-config\u00a0 (Optional) Saves the change persistently through reboots and restarts by copying the running configuration to the startup configuration. \u00a0 This example shows how to create a new port profile: switch(config)# port-profile type ethernet AllAccess1 switch(config-port-prof)# description all_access switch(config-port-prof)# show port-profile name AllAccess1 port-profile AllAccess1 description: all_access type: ethernet status: disabled capability l3control: no pinning control-vlan: - pinning packet-vlan: - system vlans: none port-group: max ports: - inherit: config attributes: evaluated config attributes: assigned interfaces: switch(config-port-prof)# Configuring VMware Attributes Before You Begin You are logged in to the CLI in EXEC mode. You know if you will configure the VMware port group with the same name as the port profile or if you will specify an alternate name for the VMware port group. Procedure \u00a0 Command or Action Purpose",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,47 @@
+{
+    "relation": [
+        [
+            "Rok",
+            "2013",
+            "2014"
+        ],
+        [
+            "Q1",
+            "100.35",
+            "101.12"
+        ],
+        [
+            "Q2",
+            "100.20",
+            "101.53"
+        ],
+        [
+            "Q3",
+            "100.44",
+            "101.86"
+        ],
+        [
+            "Q4",
+            "100.68",
+            "102.33"
+        ]
+    ],
+    "pageTitle": "EUROPA \u2013 Talous",
+    "title": "",
+    "url": "http://europa.eu/about-eu/facts-figures/economy/index_fi.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00136-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 80337519,
+    "recordOffset": 80307121,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{167490=Henkil\u00f6autoilla teht\u00e4vien matkojen osuus kaikesta tieliikenteest\u00e4 on kasvanut jonkin verran suhteessa muihin ajoneuvoihin (mm. linja-autot) vuodesta 2008. EU tukee investointeja rautatieliikenteeseen ja sen rakenneuudistuksiin., 217503=Palvelualan ty\u00f6llisyys vuoteen 2010 verrattuna (2010=100), 272094=Kaupan alalla vallitsee maailmanlaajuinen taantuma, mutta EU on edelleen maailman johtava kauppamahti. Sen osuus koko maailman tuonnista oli 16,4\u00a0% vuonna 2011. Seuraavaksi suurimmat tuontimarkkinat ovat Yhdysvallat (15,5\u00a0%) ja Kiina (11,9\u00a0%). EU oli vuonna 2011 my\u00f6s suurin viej\u00e4: sen osuus kaikesta viennist\u00e4 oli 15,4\u00a0%; Kiinan osuus oli 13,4\u00a0% ja Yhdysvaltain 10,5 %., 259338=Teollisuuden (rakennustoimintaa lukuun ottamatta) ty\u00f6ntekij\u00f6iden osuus vuoteen 2010 verrattuna (2010 = 100), 167230=Talouskriisist\u00e4 huolimatta maailmanlaajuisen lentoliikenteen kasvu n\u00e4ytt\u00e4\u00e4 jatkuvan noin 5\u00a0%:n vuosivauhtia vuoteen 2030 saakka. Liikenteen lis\u00e4\u00e4ntyess\u00e4 lis\u00e4\u00e4ntyy my\u00f6s huoli turvallisuudesta. EU:n ilmailupolitiikan tavoitteena on tehd\u00e4 Euroopan ilmatilasta maailman turvallisin.}",
+    "lastModified": "Mon, 27 Jul 2015 10:47:43 GMT",
+    "textBeforeTable": "Maataloudessa ty\u00f6skentelev\u00e4t chart.render(\"labour_force\"); chart.setXMLUrl(\"/about-eu/facts-figures/economy/labour_force_data_fi.xml\"); var chart = new FusionCharts( \"/wel/fusioncharts/v0322/StackedBar2D.swf\", \"surface\", \"500\", \"800\", \"0\", \"1\" ); var $jquery = jQuery.noConflict(); }); }); }); return false; } }); id: \"energy_import_obj\" height: \"800\", width: \"500\", dataFormat: \"xmlurl\", dataSource: \"/about-eu/facts-figures/economy/energy_import_data_fi.xml\", swfUrl: \"/wel/fusioncharts/v0322/StackedBar2D.swf\", $jquery(\"#content_tab_energy_import_1 > #energy_import\").insertFusionCharts({ { if(this.id == 'tab_energy_import_1') $('content_'+this.id).removeClass('_hide_'); $$('.content_tab_energy_import').addClass('_hide_'); this.addClass('active'); $$('.title_tab_energy_import').removeClass('active'); el.addEvent('click', function(lnk_el){ $$('div.tab_energy_import_title_container').getElements('a').each(function(el){ $('content_tab_energy_import_2').addClass('_hide_'); }); }); return false; } }); id: \"electricity_obj\" height: \"520\", width: \"500\", dataFormat: \"xmlurl\", dataSource: \"/about-eu/facts-figures/economy/electricity_data_fi.xml\", swfUrl: \"/wel/fusioncharts/v0322/Bar2D.swf\", $jquery(\"#content_tab_electricity_1 > #electricity\").insertFusionCharts({",
+    "textAfterTable": "2.30% Espanja 81.49% 11.49% 7.02% Irlanti 92.94% 5.97% 1.10% Islanti 66.34% 28.55% 5.12% Italia 92.17% 4.66% 3.18% It\u00e4valta 91.36% 7.75% 0.88% Kreikka 93.46% 2.06% 4.47% Kroatia 96.24% 2.76% 1.00% Kypros 92.62% 5.14% 2.24% Latvia 90.11% 9.61% 0.28% Liettua 91.64% 7.57% 0.80% Luxemburg 79.88% 17.19% 2.93% Malta 95.09% 4.69% 0.22% Portugali 89.42% 6.83% 3.75% Puola 97.02% 2.26% 0.73% Ranska 51.58% 40.51% 7.91% Romania 97.04% 1.45% 1.50% Ruotsi 82.76% 14.99% 2.26% Saksa 71.67% 21.4% 6.93% Slovakia 49.60% 48.35% 2.05% Slovenia 96.08% 1.52% 2.40% Suomi 85.77% 10.89% 3.34% Tanska 69.65% 28.46% 1.89% T\u0161ekki 31.57% 65.94% 2.49% Unkari 90.45% 7.79% 1.76% Viro 74.5% 24.42% 1.08% Yhdistynyt Kuningaskunta 72.82% 22.70% 4.48% L\u00e4hde: Eurostat",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

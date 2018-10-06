@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Intf Name",
+            "Intf State",
+            "LineP State",
+            "Encap Type",
+            "MTU (byte)",
+            "BW (Kbps)"
+        ],
+        [
+            "Description",
+            "Interface identifier, in the type*rack/slot/module/port notation.",
+            "Indicates whether the interface is in the admin-up or admin down state.",
+            "Line protocol state.",
+            "Encapsulation type for the specified interface. Can be HDLC or PPP.",
+            "Maximum transmission unit (MTU) value configured for the specified interface, in bytes.",
+            "Bandwidth of the interface, in kbps."
+        ]
+    ],
+    "pageTitle": "Cisco IOS XR Interface and Hardware Component Command Reference for the Cisco XR 12000 Series Router, Release 4.3.x - Packet-over-SONET Interface Commands on the Cisco\u00a0IOS\u00a0XR Softwarethe Cisco\u00a0ASR\u00a09000 Series Router [Support] - Cisco",
+    "title": "Table 2 show interfaces pos Field Descriptions",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/xr12000/software/xr12k_r4-3/interfaces/command/reference/b_interfaces_cr43xxr12k/b_interfaces_cr43xxr12k_chapter_01011.html?referring_site=smartnavRD",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988511.77/warc/CC-MAIN-20150728002308-00120-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 369214063,
+    "recordOffset": 369197407,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{36764=(Optional) Enables RFC1490/RFC2427 encapsulation., 49917=This module provides command line interface (CLI) commands for configuring Packet-over-SONET/SDH (POS) on the Cisco\u00a0XR\u00a012000 Series RouterCisco\u00a0CRS RouterCisco\u00a0ASR\u00a09000 Series Router.}",
+    "TableContextTimeStampAfterTable": "{18722=Number of microseconds of minimum delay after sending a packet. Range is from 0 to 1023. Default is 0 (disabled).}",
+    "textBeforeTable": "Syntax Description [ 16 | 32 ] crc no { 16 | 32 } crc To set the length of the cyclic redundancy check (CRC) on a Packet-over-SONET/SDH (POS) interface, use the crc command in POS configuration mode. To return the CRC setting on a POS interface to the 32-bit default setting, use the no form of this command. crc (POS) transmit-delay show interfaces pos pos keepalive (POS) interface pos encapsulation (POS) crc (POS) The real-time POS functionality is performed in hardware, according to the hardware configuration setup. Configured hardware events are detected by the framer application-specific integrated circuits (ASICs) and the control is passed to the software. The generic POS driver is responsible for providing a mechanism to configure the hardware on a per-interface basis, to handle interface state transitions, and to collect POS-related statistics. In addition to high-bandwidth efficiency, POS offers secure and reliable transmission for data. Reliable data transfer depends on timing integrity. POS provides a method for efficiently carrying data packets in SONET or Synchronous Digital Hierarchy (SDH) frames. High-bandwidth capacity and efficient link utilization are characteristics that make POS largely preferred for building",
+    "textAfterTable": "Release 2.0 This command was introduced. Release 3.2 This command was introduced. Release 4.0.0 This command was introduced. Usage Guidelines CRC is an error-checking technique that uses a calculated numeric value to detect errors in transmitted data. The designators 16 and 32 indicate the length (in bits) of the frame check sequence (FCS). A CRC of 32 bits provides more powerful error detection, but adds overhead. Both the sender and receiver must use the same setting. CRC-16, the most widely used error checking method throughout the United States and Europe, is used extensively with WANs. CRC-32 is specified by IEEE standard 802 and as an option by some point-to-point transmission standards. It is often used on Switched Multimegabit Data Service (SMDS) networks and LANs. Task ID Task ID Operations pos-dpt",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

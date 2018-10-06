@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Dwelling type",
+            "Occupied private dwellings",
+            "Unoccupied private dwellings"
+        ],
+        [
+            "2000 NSW",
+            "130",
+            "1,181"
+        ],
+        [
+            "%",
+            "9.9 %",
+            "90.1 %"
+        ],
+        [
+            "NSW",
+            "1,717,701",
+            "265,338"
+        ],
+        [
+            "%",
+            "86.6 %",
+            "13.4 %"
+        ],
+        [
+            "Australia",
+            "5,864,573",
+            "934,471"
+        ],
+        [
+            "%",
+            "86.3 %",
+            "13.7 %"
+        ]
+    ],
+    "pageTitle": "Suburb Finder",
+    "title": "",
+    "url": "http://property.skynews.com.au/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00284-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 192157307,
+    "recordOffset": 192137864,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 30 Jul 2015 07:34:28 GMT",
+    "textBeforeTable": "29 Median Age: 6,953 Female: 7,355 Male: 14,308 Population: Dwellings Work Family Population $639 Median weekly income: 8,286 Number of dwellings: 1.2 Average # of children: 29 Median Age: 2,522 Families: 6,953 Female: 7,355 Male: 14,308 Population: Sydney, NSW, 2000 } markers['MortgageBrokerDocs'] = []; function AddMoneyDocs() { } contextMenu.registerEvent(suburbOutline); contextMenu.registerEvent(map); contextMenu = new ContextMenu(map, bounds, 'SSC12192'); //Set up Context Menu */ GetLayers(); AddMoneyDocs(); /* }); content: '', maxWidth:264 infoWindow = new google.maps.InfoWindow({ suburbOutline.setMap(map); });",
+    "textAfterTable": "Female 6,953 24.3 % 3,508,780 25.4 % 10,873,706 25.3 % Age 2000 NSW % NSW % Australia % 0-4 years 345 2.4 % 458,735 6.6 % 1,421,048 6.6 % 5-9 years 113 0.8 % 434,608 6.3 % 1,351,921 6.3 % 10-14 years 130 0.9 % 439,169 6.3 % 1,371,055 6.4 % 15-19 years 623 4.4 % 443,417 6.4 % 1,405,798 6.5 % 20-24 years 2,765 19.3 % 449,686 6.5 % 1,460,677 6.8 % 25-29 years 3,511 24.5 % 473,161 6.8 % 1,513,235 7.0 % 30-34 years 2,400 16.8 % 468,337 6.8 % 1,453,775 6.8 % 35-39 years 1,041 7.3 % 488,125 7.1 % 1,520,138 7.1 %",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

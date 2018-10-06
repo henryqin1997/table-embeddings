@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Related Topic",
+            "Cisco IOS XR SNMP commands",
+            "MIB information",
+            "Cisco IOS XR commands",
+            "Getting started with Cisco IOS XR software",
+            "Information about user groups and task IDs",
+            "Cisco IOS XR Quality of Service"
+        ],
+        [
+            "Document Title",
+            "SNMP Server Commands on the Cisco ASR 9000 Series Router module of Cisco ASR 9000 Series Aggregation Services Router System Management Command Reference",
+            "Cisco ASR 9000 Series Aggregation Services Routers MIB Specifications Guide",
+            "Cisco ASR 9000 Series Aggregation Services Router Commands Master List",
+            "Cisco ASR 9000 Series Aggregation Services Router Getting Started Guide",
+            "Configuring AAA Services on the Cisco ASR 9000 Series Router module of Cisco ASR 9000 Series Aggregation Services Router System Security Configuration Guide",
+            "Cisco ASR 9000 Series Aggregation Services Router Modular Quality of Service Configuration Guide"
+        ]
+    ],
+    "pageTitle": "Cisco ASR 9000 Series Aggregation Services Router System Management Configuration Guide, Release 4.2.x - Implementing SNMP on the Cisco\u00a0ASR\u00a09000 Series Router [Cisco ASR 9000 Series Aggregation Services Routers] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r4-2/system_management/configuration/guide/b_sysman_cg42asr9k/b_sysman_cg42asr9k_chapter_01100.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00311-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 367165635,
+    "recordOffset": 367131022,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{3112=The Management Information Base (MIB) is a virtual information storage area for network management information, which consists of collections of managed objects. Within the MIB there are collections of related objects, defined in MIB modules. MIB modules are written in the SNMP MIB module language, as defined in STD 58, RFC\u00a02578, RFC\u00a02579, and RFC\u00a02580. Note that individual MIB modules are also referred to as MIBs; for example, the Interfaces Group MIB (IF-MIB) is a MIB module within the MIB on your system., 4666=The SNMP manager is the system used to control and monitor the activities of network hosts using SNMP. The most common managing system is called a network management system (NMS). The term NMS can be applied to either a dedicated device used for network management, or the applications used on such a device. A variety of network management applications are available for use with SNMP. These features range from simple command-line applications to feature-rich graphical user interfaces (such as the CiscoWorks\u00a02000 line of products).}",
+    "textBeforeTable": "For detailed conceptual information about SNMP on the Cisco\u00a0IOS\u00a0XR software and complete descriptions of the SNMP commands listed in this module, see Related Documents. For information on specific MIBs, refer to Cisco\u00a0ASR\u00a09000 Series Aggregation Services Routers MIB Specifications Guide. To locate documentation for other commands that might appear in the course of performing a configuration task, search online in Cisco\u00a0ASR\u00a09000 Series Aggregation Services Router Commands Master List. This module describes the new and revised tasks you need to implement SNMP on your Cisco\u00a0IOS\u00a0XR network. Simple Network Management Protocol (SNMP) is an application-layer protocol that provides a message format for communication between SNMP managers and agents. SNMP provides a standardized framework and a common language used for the monitoring and management of devices in a network. Implementing SNMP Additional References Setting an IP DSCP Value for SNMP Traffic: Example Setting an IP Precedence Value for SNMP Traffic: Example Configuring Trap Notifications: Example Configuring SNMPv3: Examples Configuration Examples for Implementing SNMP Configuring LinkUp and LinkDown Traps for a Subset of Interfaces Configuring MIB Data to be Persistent Setting IP Precedence and DSCP Values Changing Notification Operation Values",
+    "textAfterTable": "Configuration Examples for Implementing SNMP Additional References Prerequisites for Implementing SNMP You must be in a user group associated with a task group that includes the proper task IDs. The command reference guides include the task IDs required for each command. If you suspect user group assignment is preventing you from using a command, contact your AAA administrator for assistance. Restrictions for SNMP Use on Cisco IOS XR Software SNMP outputs are only 32-bits wide and therefore cannot display any information greater than 232. 232 is equal to 4.29 Gigabits. Note that a 10 Gigabit interface is greater than this and so if you are trying to display speed information regarding the interface, you might see concatenated results. Information About Implementing SNMP To implement SNMP, you need to understand the concepts described in this section. SNMP Functional Overview SNMP Notifications SNMP Versions SNMPv3 Benefits SNMPv3 Costs IP Precedence and DSCP Support for SNMP SNMP Functional Overview The SNMP framework consists of three parts:",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

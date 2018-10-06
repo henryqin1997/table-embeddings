@@ -1,0 +1,82 @@
+{
+    "relation": [
+        [
+            "Column Name",
+            "ID",
+            "OCURRED",
+            "TIMEID",
+            "USERID",
+            "EVENTID",
+            "TAGS",
+            "GROUPSPACE_",
+            "WEBCENTER_RESOURCE_",
+            "APPLICATION_"
+        ],
+        [
+            "NOT NULL?",
+            "NOT NULL",
+            "NOT NULL",
+            "NOT NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+        ],
+        [
+            "Data Type",
+            "NUMBER(38)",
+            "DATE",
+            "NUMBER(38)",
+            "NUMBER(38)",
+            "NUMBER(38)",
+            "NUMBER(38)",
+            "NUMBER(38)",
+            "NUMBER(38)",
+            "NUMBER(38)"
+        ],
+        [
+            "Description",
+            "Internal table ID.",
+            "Date event occurred.",
+            "Time dimension event occurred. This column is used for partitioning.",
+            "User ID dimension.",
+            "Event ID dimension.",
+            "Tag added to the document.",
+            "Space ID dimension.",
+            "WebCenter resource ID.",
+            "Application ID dimension."
+        ],
+        [
+            "Foreign Key",
+            "",
+            "",
+            "ASDIM_TIME.ID",
+            "ASDIM_USERS.ID",
+            "ASSYS_EVENTFACTS.ID",
+            "",
+            "ASDIM_WC_GROUPSP_0.ID",
+            "",
+            "ASDIM_WC_APPLICA_0.ID"
+        ]
+    ],
+    "pageTitle": "I WebCenter Analytics Database Schema",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E21764_01/webcenter.1111/e10148/jpsdg_app_aschema.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00240-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74929011,
+    "recordOffset": 74893112,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{442249=12345, 440183=+5411-2222-1234}",
+    "lastModified": "Wed, 13 May 2015 05:18:31 GMT",
+    "textBeforeTable": "Fact table that stores event information captured by the Analytics service when someone creates a page. I.2.1 ASFACT_WC_PAGECRE_0 This section describes each of the tables listed in Table I-1, \"Analytics Facts Tables (Prefixed ASFACT_WC)\". Analytics fact tables are created when the Analytics Collector runs for the first time. Each fact table stores a specific event type, for example, page views, Space views, document uploads, blog views, wiki edits, and so on. Columns in these fact table mostly contain integer IDs that reference descriptive data stored in dimension tables. I.2 Analytics Fact Table Descriptions ASFACT_WC_DOCLIB__7 {HTTP://WWW.ORACLE.COM/ANALYTICS/WC}DOCLIB_DOCUMENTDELETES ASFACT_WC_DOCLIB__6 {HTTP://WWW.ORACLE.COM/ANALYTICS/WC}DOCLIB_DOCUMENTCOMMENT ASFACT_WC_DOCLIB__5 {HTTP://WWW.ORACLE.COM/ANALYTICS/WC}DOCLIB_DOCUMENTLIKE ASFACT_WC_DOCLIB__4 {HTTP://WWW.ORACLE.COM/ANALYTICS/WC}DOCLIB_DOCUMENTTAG ASFACT_WC_DOCLIB__3 {HTTP://WWW.ORACLE.COM/ANALYTICS/WC}DOCLIB_DOCUMENTEDIT ASFACT_WC_DOCLIB__2 {HTTP://WWW.ORACLE.COM/ANALYTICS/WC}DOCLIB_DOCUMENTCREATE ASFACT_WC_DOCLIB__1 {HTTP://WWW.ORACLE.COM/ANALYTICS/WC}DOCLIB_DOCUMENTDOWNLOADS ASFACT_WC_DOCLIB__0 {HTTP://WWW.ORACLE.COM/ANALYTICS/WC}DOCLIB_DOCUMENTVIEWS ----------------------------------------- Table Name Event Display Name  Sample Report Output ORDER BY 1; WHERE tablename like 'ASFACT_WC_DOCLIB%' FROM assys_events displayname \"Event Display Name\" SELECT tablename \"Table Name\",  This section provides a sample SQL query to return the names of tables associated with a specific event. This query uses a filter to return tables associated with the Documents service. I.1.2.1 Sample SQL Query: Finding Table Names Associated with Specific Events           Stores out-of-the-box analytics reports.",
+    "textAfterTable": "I.2.2 ASFACT_WC_PAGEDEL_0 Fact table that stores event information captured by the Analytics service when someone deletes a page. Column Name NOT NULL? Data Type Description Foreign Key ID NOT NULL NUMBER(38) Internal table ID. \u00a0 OCURRED NOT NULL DATE Date event occurred. \u00a0 TIMEID NOT NULL NUMBER(38) Time the dimension event occurred. This column is used for partitioning. ASDIM_TIME.ID USERID NULL NUMBER(38) User ID dimension. ASDIM_USERS.ID EVENTID NULL NUMBER(38) Event ID dimension. ASSYS_EVENTFACTS.ID GROUPSPACE_ NULL NUMBER(38) Space ID dimension. ASDIM_WC_GROUPSP_0.ID PAGE_ NULL NUMBER(38) Page ID dimension. ASDIM_WC_PAGES_0.ID",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

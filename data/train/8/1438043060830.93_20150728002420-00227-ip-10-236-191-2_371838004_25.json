@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Start",
+            "1Q 15:00 SD 29",
+            "1Q 10:16 SD 41",
+            "1Q 00:12 SD 2",
+            "2Q 09:46 SD 46",
+            "2Q 04:49 SD 40",
+            "2Q 01:53 PIT 49",
+            "3Q 08:41 SD 31",
+            "4Q 14:15 SD 18",
+            "4Q 00:11 SD 21"
+        ],
+        [
+            "Plays",
+            "4",
+            "6",
+            "3",
+            "5",
+            "3",
+            "4",
+            "9",
+            "17",
+            "1"
+        ],
+        [
+            "Yds",
+            "16",
+            "59",
+            "-2",
+            "8",
+            "-4",
+            "32",
+            "45",
+            "78",
+            "-16"
+        ],
+        [
+            "Poss",
+            "2:09",
+            "3:30",
+            "0:26",
+            "3:04",
+            "1:45",
+            "0:30",
+            "4:20",
+            "7:34",
+            "0:11"
+        ],
+        [
+            "Result",
+            "Interception",
+            "Touchdown",
+            "Safety",
+            "Punt",
+            "Punt",
+            "Interception",
+            "Missed FG",
+            "Field Goal",
+            "End of Game"
+        ]
+    ],
+    "pageTitle": "San Diego Chargers vs. Pittsburgh Steelers - 2008 Week 11 GameTracker - CBSSports.com",
+    "title": "",
+    "url": "http://www.cbssports.com/nfl/gametracker/live/NFL_20081116_SD@PIT",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00227-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 371892083,
+    "recordOffset": 371838004,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "SD PIT Drive Chart Scoring Summary }); //atreroGameTracker.checkPagination() // DDS - Removed 4/8/13 - User may have more data more than 2 weeks old // See if we hide the button entirely $(document).trigger('atreroUpdate'); // Fire this so templates can execute their javascript functions highlightButton(); atreroGameTracker = new CBSi.widget.Atrero({'pollInterval':300, 'addLeague':'1', 'nodeServer':'http://api.cbssports.com/na', 'version':'v5', 'pagination':false, 'container':'#atreroGameTracker', 'categories':'latest', 'recordsInSet':50, 'ids':'59', 'view':'SynopsisWithoutLogoMini', 'childContainer':'#atreroInner', 'omniture_arena':'NFL'}); $(document).ready(function(){ }; }); $('#atreroMoreBarArrows').removeClass('blueArrow'); $('#atreroMoreBarTextOnly').removeClass('blueText'); $(\"#atreroMoreBarCtr\").mouseout(function(){ }); $('#atreroMoreBarArrows').addClass('blueArrow'); $('#atreroMoreBarTextOnly').addClass('blueText'); $(\"#atreroMoreBarCtr\").mouseover(function(){ $('#atreroMoreBarTextOnly').text('MORE '); highlightButton = function() { var atreroGameTracker = null; // This keeps the widgets individual so we can have more than one per page.",
+    "textAfterTable": "Start Plays Yds Poss Result 1Q 12:51 PIT 41 6 26 2:35 Missed FG 1Q 06:46 PIT 31 10 67 6:34 Downs 2Q 14:46 PIT 6 9 18 5:00 Punt 2Q 06:42 PIT 9 4 24 1:53 Punt 2Q 03:04 PIT 14 3 9 1:11 Punt 2Q 01:23 PIT 43 8 54 1:23 Field Goal 3Q 15:00 PIT 23 14 54 6:19 Field Goal 3Q 04:21 PIT 32 10 30 5:06 Punt 4Q 06:41 PIT 13 13 73 6:30 Field Goal",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 4,
+    "headerRowIndex": 0
+}

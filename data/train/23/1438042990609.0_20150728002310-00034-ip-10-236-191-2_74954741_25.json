@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Column",
+            "DESCRIPTOR_ID",
+            "ENTITY_OWNER",
+            "ENTITY_NAME",
+            "CHILD_ENTITY_NAME",
+            "SECONDARY_CHILD_ENTITY_NAME"
+        ],
+        [
+            "Data Type",
+            "NUMBER",
+            "VARCHAR2(30)",
+            "VARCHAR2(30)",
+            "VARCHAR2(30)",
+            "VARCHAR2(30)"
+        ],
+        [
+            "NULL",
+            "NOT NULL",
+            "NOT NULL",
+            "NOT NULL",
+            "",
+            ""
+        ],
+        [
+            "Description",
+            "Name of the reserved attribute or dimension type. The reserved dimension attributes are listed in Table 11-1, \"Reserved Dimension Attributes\". The reserved level attributes are listed in Table 14-1, \"Reserved Level Attributes\".",
+            "Owner of the metadata entity.",
+            "Name of the metadata entity.",
+            "Name of the child entity (if applicable). A dimension attribute is a child entity of a dimension. A level attribute is a child entity of a dimension attribute.",
+            "Name of the secondary child entity name (if applicable). A dimension attribute is a child entity of a dimension. A level attribute is a child entity of a dimension attribute. A level attribute could be the secondary child entity of a dimension."
+        ]
+    ],
+    "pageTitle": "5 OLAP Catalog Metadata Views",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B12037_01/olap.101/b10334/views_cwm2.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00034-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74969097,
+    "recordOffset": 74954741,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 02 Feb 2004 04:02:00 GMT",
+    "textBeforeTable": "ALL_OLAP2_ENTITY_DESC_USES lists the reserved attributes and shows whether or not dimensions are time dimensions. 5.20 ALL_OLAP2_ENTITY_DESC_USES Data type of the column containing the level attribute. NOT NULL VARCHAR2(10) DTYPE Name of the column containing the level attribute. NOT NULL VARCHAR2(30) COLUMN_NAME Name of the dimension table containing the level and level attribute columns. NOT NULL VARCHAR2(30) TABLE_NAME Owner of the dimension table containing the level and level attribute. NOT NULL VARCHAR2(30) TABLE_OWNER Name of the level. NOT NULL VARCHAR2(30) LEVEL_NAME Name of the level attribute, or name of the column if the level attribute name is not specified. NOT NULL VARCHAR2(30) LVL_ATTRIBUTE_NAME Name of a dimension attribute grouping containing this level attribute. VARCHAR2(30) ATTRIBUTE_NAME",
+    "textAfterTable": "5.21 ALL_OLAP2_ENTITY_EXT_PARMS ALL_OLAP2_ENTITY_EXT_PARMS lists the following OLE DB metadata descriptors: Default Member, Dense Indicator, Fact Table Join, and Estimated Cardinality. The OLE DB metadata descriptors are described in Table 8-1, \"OLAP Catalog Metadata Descriptors\". Column Data Type NULL Description DESCRIPTOR_ID NUMBER(38) ID of the metadata descriptor. DESCRIPTOR_NAME VARCHAR2(240) One of the following metadata descriptor names: Default Member \u2014 The default dimension member within a hierarchy. The Default Member descriptor is set by the CWM2_OLAP_CLASSIFY.ADD_ENTITY_DEFAULTMEMBER_USE procedure (described). Dense Indicator \u2014 Specifies whether the data is sparse or dense over a dimension of a cube. The Dense Indicator descriptor is set by the CWM2_OLAP_CLASSIFY.ADD_ENTITY_DENSEINDICATOR_USE procedure (described). Fact Table Join \u2014 Specifies the key columns in a dimension table that satisfy the foreign key columns in the fact table. The Fact Table Join descriptor applies only to CWM2 metadata. The Fact Table Join descriptor is set by the",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

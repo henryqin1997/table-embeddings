@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Related Topic",
+            "Configuring a networking device for the first time using the Cisco IOS XE software feature AutoInstall.",
+            "Configuring a networking device using Cisco IOS XE Setup mode",
+            "Configuration fundamentals and associated commands"
+        ],
+        [
+            "Document Title",
+            "Using AutoInstall to Remotely Configure Cisco Networking Devices",
+            "Using Setup Mode to Configure a Cisco Networking Device",
+            "Cisco IOS XE Configuration Fundamentals Configuration Guide for your release and the release-independent Cisco IOS Configuration Fundamentals Command Reference"
+        ]
+    ],
+    "pageTitle": "Configuration Fundamentals Configuration Guide, Cisco IOS Release 15SY - Using AutoInstall to Remotely Configure Cisco Networking Devices [Cisco IOS 15.2SY] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/fundamentals/configuration/15_sy/fundamentals-15-sy-book/cf-autoinstall.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00065-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 375441539,
+    "recordOffset": 375408209,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{109191=Connect R3 to the Fast Ethernet network and power it on. The following message will be displayed on the terminal connected to R1 when R3 is assigned the IP address 172.16.28.1., 19318=If the new device does not learn the IP address of the TFTP server via DHCP option 150, it will transmit the TFTP session initialization requests as network layer broadcasts using the IP destination broadcast address of 255.255.255.255. Routers block network layer broadcast datagrams which prevents the TFTP session initialization requests from reaching the TFTP server, and AutoInstall will fail. The solution to this problem is to use the ip helper-address address command. The ip helper-address address command changes the broadcast address of TFTP session initialization request from 255.255.255.255 to the address that is configured with the address argument. For example, the ip helper-address 172.16.29.252 command will change IP destination broadcast address of 255.255.255.255 to 172.16.29.252., 110509=Connect R2 to the Fast Ethernet network and power it on. The following message will be displayed on the terminal connected to R1 when R2 is assigned the IP address 172.16.28.1., 8061=In the figure below R2 is the staging router. R2 has the frame-relay map ip 172.16.27.100 100 broadcast command configured on interface serial 0. When R2 receives the BOOTP request for an IP address from R3 during the AutoInstall process, R3 will reply with 172.16.27.100., 104657=You need to ensure that there is only one IP address available from the DHCP server at any time. Configure the following command to exclude every IP address except 172.16.28.1 from the DHCP pool., 107872=Connect R4 to the Fast Ethernet network and power it on. The following message will be displayed on the terminal connected to R1 when R4 is assigned the IP address 172.16.28.1., 135247=In Cisco IOS XE Release 2.1, this feature was introduced on Cisco ASR 1000 Series Routers., 25910=The figure below shows an example topology using AutoInstall over Frame Relay-ATM Interworking Connections. Router R6 does the Frame Relay to ATM Service Internetworking (FRF8) conversion for Frame Relay DLCI 50 to ATM VPI/VCI 5/50. The LS1010 switch routes the VPI/VCI combination used by R6 (5/50) to the VPI/VCI combination used by R4 (6/60)., 113492=R1(config)# no ip dhcp excluded-address 172.16.28.2 172.16.28.255, 105266=Verify that the configuration file for R1 has a DHCP server pool configured to provide a single IP address (172.16.28.1) to a DHCP client., 113322=The command for excluding all of the IP addresses except 172.16.28.1 from the DHCP pool on the router is no longer required, and must be removed.}",
+    "textBeforeTable": "The table below shows the values for converting characters to their hexadecimal equivalents. The last row in the second table below shows the client identifier for Fast Ethernet 3/0 on R6 (nullcisco-0006.53b7.8e71-fa3/0). The short interface name for Fast Ethernet interfaces is fa. Note The MAC address for FastEthernet 3/0 on R6 is 0006.53b7.8e71. The format of the client identifier for this interface is nullcisco-0006.53b7.8e71-fa3/0. R6> . . . Hardware is AmdFE, address is 0006.53b7.8e71 (bia 0006.53b7.8e71) FastEthernet3/0 is up, line protocol is up R6> show interface fastethernet 3/0   Use the show interface interface-type interface-number command to display the information and statistics for a Fast Ethernet interface.  IF-MIB::ifName.4 = STRING: BR0/0 IF-MIB::ifName.3 = STRING: Se0/0 IF-MIB::ifName.2 = STRING: Et0/0 IF-MIB::ifName.1 = STRING: AT2/0 snmpwalk -c public ponch ifName   The values for the short-if-name field can be obtained from an SNMP workstation with the Cisco MIBs installed. This is an example of how to map ifIndex to an interface on Cisco IOS:   The format is nullcisco-0006.53b7.8e71-fa3/0 where 0006.53b7.8e71 is the MAC address and fa3/0 is the short interface name for the interface that the IP address request is made for.   0063.6973.636f.2d30.3030.362e.3533.6237.2e38.6537.312d.4661.332f.30",
+    "textAfterTable": "NUL 1a SUB 34 4 4e N 68 h 01 SOH 1b ESC 35 5 4f O 69 I 02 STX 1c FS 36 6 50 P",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

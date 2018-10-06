@@ -1,0 +1,63 @@
+{
+    "relation": [
+        [
+            "Constant",
+            "mrNone",
+            "mrOk",
+            "mrCancel",
+            "mrAbort",
+            "mrRetry",
+            "mrIgnore",
+            "mrYes",
+            "mrNo",
+            "mrAll",
+            "mrNoToAll",
+            "mrYesToAll"
+        ],
+        [
+            "Value",
+            "0",
+            "idOK",
+            "idCancel",
+            "idAbort",
+            "idRetry",
+            "idIgnore",
+            "idYes",
+            "idNo",
+            "mrNo + 1",
+            "mrAll + 1",
+            "mrNoToAll + 1"
+        ],
+        [
+            "Description",
+            "No special role",
+            "The user clicked OK or pressed Enter (assuming the button has the Default property set to true) to close",
+            "The used clicked Cancel or pressed Esc (assuming the button has the Cancel property set to true) to close",
+            "The user clicked Abort to close",
+            "The user clicked Retry to close",
+            "The user clicked Ignore to close",
+            "The user clicked Yes to close",
+            "The user clicked No to close",
+            "The user clicked All to close",
+            "The user clicked No To All to close",
+            "The user clicked Yes To All to close"
+        ]
+    ],
+    "pageTitle": "Win32 Controls: The Button",
+    "title": "",
+    "url": "http://www.functionx.com/cppbuilder/controls/button.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00314-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 465828463,
+    "recordOffset": 465811549,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 04 Apr 2015 17:31:14 GMT",
+    "textBeforeTable": "The possible values of the ModalResult property are: As mentioned already, a dialog box can be created with one or more buttons. If you create a modal dialog box and equip it with more than one button, when the user closes it, you must know what button the user had clicked. To support this, the VCL provides the ModalResult property. This property autonomously can control the behavior of the closing dialog box depending on the button that was clicked. The ModalResult property is an integer defined as TModalResult and provides various values that each can be used on a button of a dialog box. To set the desired value, after adding a button to a dialog box and while the button is selected, on the Object Inspector, access its ModalResult property and select the desired value. The Modal Result of a Button We already know that, to close a form or dialog box, you can call the TCustomForm::Close() method. Microsoft Windows provides a convenient means of closing a form or dialog box if you don't care about that changes that may have taken place on its own. The VCL supports this in a Boolean property named Cancel, which is a member",
+    "textAfterTable": "If the form that is hosting the button is not the first form or dialog (in other words, if the form is accessed by a call from another form), you can use the ModalResult property to conveniently associate an action. By default, the ModalResul is set to mrNone. The ModalResult property is an integer that represents a button that the user has clicked on a dependent dialog box. To use a button as a valid integral ModalResult value, set its ModalResult property. When coding the result of the user clicking one of the buttons, call the TForm::ShowModal() method (once again, the ShowModal() method actually belongs to the TCustomForm class) and assign it the corresponding value of the TModalResult integer. The following example uses two forms. The first form has a button used to call the second. The second form has buttons with different ModalResult values. After the user clicks the button on the first form, the second would display, the program simply finds out what button was clicked, and the programmer can act accordingly: //--------------------------------------------------------------------------- void __fastcall TForm1::Button1Click(TObject *Sender) { if( Form2->ShowModal() == mrOk ) Caption = \"I am OK now\"; else if( Form2->ShowModal() == mrCancel ) Caption = \"Soldier, dismiss!!!\"; else { Form2->Close(); Caption = \"What happened? Where are you?\"; } } //--------------------------------------------------------------------------- A Picture on a Button",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

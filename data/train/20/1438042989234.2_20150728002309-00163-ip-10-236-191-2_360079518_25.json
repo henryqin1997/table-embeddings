@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Device> enable",
+            "configure terminal Example: Device# configure terminal",
+            "router ospf process-id Example: Device(config)# router ospf 109",
+            "timers throttle spf spf-start spf-hold spf-max-wait Example: Device(config-router)# timers throttle spf 5 1000 9000",
+            "end Example: Device(config-router)# end"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Enables OSPF routing and enters router configuration mode.",
+            "Configures route calculation timers.",
+            "Exits router configuration mode and returns to privileged EXEC mode."
+        ]
+    ],
+    "pageTitle": "IP Routing: OSPF Configuration Guide, Cisco IOS Release 12.4T - Configuring OSPF [Cisco IOS Software Releases 12.4 T] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_ospf/configuration/12-4t/iro-12-4t-book/iro-cfg.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00163-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 360133599,
+    "recordOffset": 360079518,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{2423=The OSPF NSSA feature is described by RFC 3101. In Cisco IOS Release 15.1(2)S and later releases, RFC 3101 replaces RFC 1587. RFC 3101 is backward compatible with RFC 1587. For a detailed list of differences between them, see Appendix F of RFC 3101. NSSA support was first integrated into Cisco IOS Release 11.2. OSPF NSSA is a nonproprietary extension of the existing OSPF stub area feature., 20907=Cisco supports RFC 1253, OSPF Version 2 Management Information Base, August 1991. The OSPF MIB defines an IP routing protocol that provides management information related to OSPF and is supported by Cisco routers., 17608=The Cisco implementation conforms to the OSPF Version 2 specifications detailed in the Internet RFC 2328. The following list outlines key features supported in the Cisco OSPF implementation:}",
+    "TableContextTimeStampAfterTable": "{68095=You can use the always keyword in the area nssa translate command to configure an NSSA ABR device as a forced NSSA LSA translator. This command can be used if RFC 3101 is disabled and RFC 1587 is used., 283508=Specifies that RFC 1587 is active or that the OSPF NSSA area is RFC 1587 compatible., 76525=Enables the device to be RFC 1587 compliant., 330746=This feature adds support for the OSPF NSSA specification described by RFC 3101. RFC3101 replaced RFC 1587 and is backward compatible with RFC1587., 279894=In the following example, the output for the show ip ospf and show ip ospf database nssa commands shows an Open Shortest Path First Not-So-Stubby Area (OSPF NSSA) area where RFC 3101 is disabled, RFC 1587 is active, and an NSSA Area Border Router (ABR) device is configured as a forced NSSA LSA translator. If RFC 3101 is disabled, the forced NSSA LSA translator remains inactive., 291825=Consider the first network area command. Area ID 10.9.50.0 is configured for the interface on which subnet 192.168.10.0 is located. Assume that a match is determined for Ethernet interface 0. Ethernet interface 0 is attached to area 10.9.50.0 only., 290053=The following example illustrates the assignment of four area IDs to four IP address ranges. In the example, OSPF routing process 109 is initialized, and four OSPF areas are defined: 10.9.50.0, 2, 3, and 0. Areas 10.9.50.0, 2, and 3 mask specific address ranges, and area 0 enables OSPF for all other networks., 324029=The OSPF NSSA Option January 2003, 330903=The following commands were introduced or modified: area nssa translate, compatible rfc1587., 7208=The OSPF on-demand circuit is an enhancement to the OSPF protocol that allows efficient operation over on-demand circuits such as ISDN, X.25 switched virtual circuits (SVCs), and dialup lines. This feature supports RFC 1793, Extending OSPF to Support Demand Circuits., 318909=The following example prevents flooding of OSPF LSAs to point-to-multipoint networks to the neighbor at IP address 10.10.10.45:, 323673=The OSPF NSSA Option, March 1994, 19735=A link-state update packet containing a router LSA typically has a fixed overhead of 196 bytes, and an additional 12 bytes are required for each link description. With a huge buffer size of 18024 bytes, there can be a maximum of 1485 link descriptions., 14498=The default value of pacing between LSA groups is 240 seconds (4 minutes). The range is from 10 seconds to 1800 seconds (30 minutes)., 323568=RFC 1587, 71736=4.\u00a0\u00a0\u00a0 compatible rfc1587, 332247=The area nssa translate (OSPFv3), compatible rfc1587 (OSPFv3), and show ospfv3 commands were added. The nssa-only keyword was added to the summary-prefix (OSPFv3) command., 4906=In Cisco IOS Release 10.3 and later releases, by default OSPF calculates the OSPF metric for an interface according to the bandwidth of the interface. For example, a 64-kbps link gets a metric of 1562, and a T1 link gets a metric of 64.}",
+    "textBeforeTable": "DETAILED STEPS 5.\u00a0\u00a0\u00a0 end 4.\u00a0\u00a0\u00a0 network ip-address wildcard-mask area area-id 3.\u00a0\u00a0\u00a0 router ospf process-id 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS Enabling OSPF Monitoring and Maintaining OSPF Displaying OSPF Update Packet Pacing Ignoring MOSPF LSA Packets Reducing LSA Flooding Blocking OSPF LSA Flooding Changing the LSA Group Pacing Interval Logging Neighbors Going Up or Down Configuring OSPF over On-Demand Circuits Configuring Route Calculation Timers Configuring OSPF on Simplex Ethernet Interfaces Changing the OSPF Administrative Distances Controlling Default Metrics Forcing the Router ID Choice with a Loopback Interface Configuring Lookup of DNS Names Generating a Default Route Establishing Virtual Links Configuring Route Summarization When Redistributing Routes into OSPF Configuring Route Summarization Between OSPF Areas Configuring OSPF NSSA Parameters Configuring OSPF Area Parameters Configuring OSPF over Different Physical Networks Configuring OSPFv2 NSSA Configuring OSPF Interface Parameters",
+    "textAfterTable": "Configuring OSPF Interface Parameters SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 interface type number 4.\u00a0\u00a0\u00a0 ip ospf cost cost 5.\u00a0\u00a0\u00a0 ip ospf retransmit-interval seconds 6.\u00a0\u00a0\u00a0 ip ospf transmit-delay seconds 7.\u00a0\u00a0\u00a0 ip ospf priority number-value 8.\u00a0\u00a0\u00a0 ip ospf hello-interval seconds 9.\u00a0\u00a0\u00a0 ip ospf dead-interval seconds 10.\u00a0\u00a0\u00a0 ip ospf authentication-key key 11.\u00a0\u00a0\u00a0 ip ospf message-digest-key key-id md5 key 12.\u00a0\u00a0\u00a0 ip ospf",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

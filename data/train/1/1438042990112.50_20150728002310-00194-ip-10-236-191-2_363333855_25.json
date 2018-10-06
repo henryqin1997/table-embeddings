@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Release",
+            "12.0(5)T",
+            "12.2(33)SRA",
+            "12.4(11)T",
+            "12.2SX"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "This command was integrated into Cisco IOS Release 12.2(33)SRA.",
+            "The suppress and stop keywords were added.",
+            "This command is supported in the Cisco IOS Release 12.2SX train. Support in a specific 12.2SX release of this train depends on your feature set, platform, and platform hardware."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Security Command Reference: Commands A to C - aaa accounting through aaa local authentication attempts max-fail [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/security/a1/sec-a1-cr-book/sec-cr-a1.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.50/warc/CC-MAIN-20150728002310-00194-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 363427855,
+    "recordOffset": 363333855,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{615837=If auth-port and acct-port are not specified, the default value of auth-port is 1645 and the default value of acct-port is 1646., 225534=This command was introduced on the following Cisco router platforms: Cisco 806, Cisco 831, Cisco 836, Cisco 837, Cisco 1701, Cisco 1710, Cisco 1721, Cisco 1751-V, and Cisco 1760., 211252=Any group of characters, excluding the one used as the delimiter. The maximum number of characters that you can display is 2996., 571447=Support for the login keyword was added into Cisco IOS Release 12.2(2)T and this command was implemented for the Cisco 2600 series, Cisco 3600 series, and Cisco 7200 platforms., 274881=This command was integrated into Cisco IOS XE Release 3.1S and implemented on the Cisco ASR 1000 Series Aggregation Services Routers., 225952=This command was integrated into Cisco IOS Release 12.3(4)T. Router support was added for the following platforms: Cisco 1751, Cisco 2610XM - Cisco 2611XM, Cisco 2620XM - Cisco 2621XM, Cisco 2650XM - Cisco 2651XM, Cisco 2691, Cisco 3640, Cisco 3640A, and Cisco 3660., 571915=This command was implemented on the Cisco 806, Cisco 828, Cisco 1710, Cisco SOHO 78, Cisco 3631, Cisco 3725, Cisco 3745, and Cisco URM for IGX8400 platforms., 225139=This command was implemented on the following platforms for the Cisco Ethernet Switch Module: Cisco 2600 series, Cisco 3600 series, and Cisco 3700 series.}",
+    "textBeforeTable": "Syntax Description list-name { psk | cert | eap } accounting aaa no list-name { psk | cert | eap } accounting aaa To enable AAA accounting for IPsec sessions, use the aaa accounting command in IKEv2 profile configuration mode. To disable AAA accounting, use the no form of this command. aaa accounting (IKEv2 profile) aaa local authentication attempts max-fail aaa intercept aaa group server tacacs+ aaa group server radius aaa group server ldap aaa group server diameter aaa dnis map authorization network group aaa dnis map authentication group aaa dnis map accounting network aaa configuration aaa common-criteria policy aaa cache profile aaa cache filterserver aaa cache filter aaa authorization template aaa authorization reverse-access aaa authorization list aaa authorization console aaa authorization config-commands aaa authorization cache filterserver aaa authorization (IKEv2 profile) aaa authorization aaa authentication username-prompt aaa authentication token key aaa authentication suppress null-username aaa authentication",
+    "textAfterTable": "Command Default AAA accounting is disabled. Command Modes IKEv2 profile configuration (config-ikev2-profile) Command History Release Modification 15.1(1)T This command was introduced. Cisco IOS XE Release 3.3S This command was integrated into Cisco IOS XE Release 3.3S. 15.2(4)S This command was integrated into Cisco IOS Release 15.2(4)S. Usage Guidelines Use the aaa accounting command to enable and specify the method list for AAA accounting for IPsec sessions. The aaa accounting command can be specific to an authentication method or common to all authentication methods, but not both at the same time. If no method list is specified, the list is common across authentication methods. Examples The following example defines an AAA accounting configuration",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

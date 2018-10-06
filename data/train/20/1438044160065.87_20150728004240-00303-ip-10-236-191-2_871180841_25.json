@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Datasource Extension",
+            "org.jboss.jca.adapters.jdbc.spi.ExceptionSorter",
+            "org.jboss.jca.adapters.jdbc.spi.StaleConnection",
+            "org.jboss.jca.adapters.jdbc.spi.ValidConnection"
+        ],
+        [
+            "Configuration Parameter",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Description",
+            "Checks whether an SQLException is fatal for the connection on which it was thrown",
+            "Wraps stale SQLExceptions in a org.jboss.jca.adapters.jdbc.StaleConnectionException",
+            "Checks whether a connection is valid for use by the application"
+        ]
+    ],
+    "pageTitle": "Administration and Configuration Guide",
+    "title": "",
+    "url": "https://access.redhat.com/documentation/en-US/JBoss_Enterprise_Application_Platform/6.1/html-single/Administration_and_Configuration_Guide/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044160065.87/warc/CC-MAIN-20150728004240-00303-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 871334235,
+    "recordOffset": 871180841,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 10 Apr 2014 03:17:00 GMT",
+    "textBeforeTable": "Table\u00a06.14.\u00a0Datasource Extensions Datasource deployments can use several extensions in the JDBC resource adapter to improve the connection validation, and check whether an exception should reestablish the connection. Those extensions are: 6.6.3.\u00a0Datasource Extensions Report a bug jdbc:microsoft:sqlserver://SERVER_NAME:PORT;DatabaseName=DATABASE_NAME Microsoft SQLServer jdbc:db2://SERVER_NAME:PORT/DATABASE_NAME IBM DB2 jdbc:oracle:thin:@ORACLE_HOST:PORT:ORACLE_SID Oracle jdbc:mysql://SERVER_NAME:PORT/DATABASE_NAME MySQL jdbc:postgresql://SERVER_NAME:PORT/DATABASE_NAME PostgreSQL Connection URL Datasource Table\u00a06.13.\u00a0 6.6.2.\u00a0Datasource Connection URLs Report a bug org.jboss.jca.core.spi.recoveryRecoveryPlugin class, to be used for recovery. An implementation of the recover-plugin A username/password pair or security domain to use for recovery. recover-credential",
+    "textAfterTable": "JBoss EAP 6 also features implementations of these extensions for several supported databases. Extension Implementations Generic org.jboss.jca.adapters.jdbc.extensions.novendor.NullExceptionSorter org.jboss.jca.adapters.jdbc.extensions.novendor.NullStaleConnectionChecker org.jboss.jca.adapters.jdbc.extensions.novendor.NullValidConnectionChecker org.jboss.jca.adapters.jdbc.extensions.novendor.JDBC4ValidConnectionChecker PostgreSQL org.jboss.jca.adapters.jdbc.extensions.postgres.PostgreSQLExceptionSorter org.jboss.jca.adapters.jdbc.extensions.postgres.PostgreSQLValidConnectionChecker MySQL org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLExceptionSorter org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLReplicationValidConnectionChecker org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLValidConnectionChecker IBM DB2 org.jboss.jca.adapters.jdbc.extensions.db2.DB2ExceptionSorter org.jboss.jca.adapters.jdbc.extensions.db2.DB2StaleConnectionChecker org.jboss.jca.adapters.jdbc.extensions.db2.DB2ValidConnectionChecker Sybase org.jboss.jca.adapters.jdbc.extensions.sybase.SybaseExceptionSorter org.jboss.jca.adapters.jdbc.extensions.sybase.SybaseValidConnectionChecker Microsoft SQLServer org.jboss.jca.adapters.jdbc.extensions.mssql.MSSQLValidConnectionChecker Oracle org.jboss.jca.adapters.jdbc.extensions.oracle.OracleExceptionSorter org.jboss.jca.adapters.jdbc.extensions.oracle.OracleExceptionSorter org.jboss.jca.adapters.jdbc.extensions.oracle.OracleValidConnectionChecker Report a bug 6.6.4.\u00a0View Datasource Statistics",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

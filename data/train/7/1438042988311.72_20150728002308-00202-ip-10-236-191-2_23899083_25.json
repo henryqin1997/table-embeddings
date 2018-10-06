@@ -1,0 +1,122 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2012-13",
+            "2014-15"
+        ],
+        [
+            "Team",
+            "MON",
+            "FUE"
+        ],
+        [
+            "GP",
+            "2",
+            "1"
+        ],
+        [
+            "GS",
+            "1",
+            "1"
+        ],
+        [
+            "TS%",
+            ".294",
+            ".698"
+        ],
+        [
+            "eFG%",
+            ".125",
+            ".714"
+        ],
+        [
+            "ORB%",
+            "4.10",
+            "0.00"
+        ],
+        [
+            "DRB%",
+            "15.44",
+            "28.50"
+        ],
+        [
+            "TRB%",
+            "9.13",
+            "13.08"
+        ],
+        [
+            "AST%",
+            "6.20",
+            "6.93"
+        ],
+        [
+            "TOV%",
+            "16.39",
+            "11.26"
+        ],
+        [
+            "STL%",
+            "2.03",
+            "0.00"
+        ],
+        [
+            "BLK%",
+            "3.37",
+            "0.00"
+        ],
+        [
+            "USG%",
+            "21.54",
+            "16.95"
+        ],
+        [
+            "Total S %",
+            "92.50",
+            "121.43"
+        ],
+        [
+            "PPR",
+            "-4.97",
+            "-1.26"
+        ],
+        [
+            "PPS",
+            "0.75",
+            "1.57"
+        ],
+        [
+            "ORtg",
+            "62.8",
+            "117.6"
+        ],
+        [
+            "DRtg",
+            "101.3",
+            "117.1"
+        ],
+        [
+            "PER",
+            "1.19",
+            "12.69"
+        ]
+    ],
+    "pageTitle": "Zach Andrews Player Profile, Los Angeles D-Fenders, News, Rumors, NCAA Stats, D-League Stats, International Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Zach_Andrews/Summary/7081",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00202-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 23925927,
+    "recordOffset": 23899083,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{8024=Draft Entry: 2007 NBA Draft, 8861=Born: Mar 9, 1985 (30 years old)}",
+    "TableContextTimeStampAfterTable": "{64601=* International basketball history from 2011-2012, 87413=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Summer League Stats - Per Game More NBA Transactions \u00bb Dec 24, 2011 - Zach Andrews, previously with the Los Angeles Lakers, became a free agent. Dec 22, 2011 - The Los Angeles Lakers placed the contract of Zach Andrews on waivers. Dec 9, 2011 - Zach Andrews signed a contract with the Los Angeles Lakers. Jun 28, 2007 - Zach Andrews went undrafted in the 2007 NBA Draft making him an Unrestricted FA. NBA Transactions 0 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\",",
+    "textAfterTable": ".000 0.00 0.00 .000 2.80 1.60 1.20 2.80 0.00 0.80 0.40 0.80 0.60 1.60 NBA Summer League Stats - Totals Season Team Location GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2013-14 Select Las Vegas 5 0 41.5 4 10 .400 0 0 .000 0 0 .000 14 8 6 14 0 4 2 4 3 8 CAREER \u00a0 \u00a0 5 0 41.5 4 10 .400 0 0 .000 0 0 .000 14 8 6 14 0 4 2 4 3 8 NBA Summer League Stats - Misc Stats Season Team Location GP GS Dbl Dbl Tpl Dbl 40 Pts 20 Reb 20 Ast Techs HOB Ast/TO Stl/TO FT/FGA W's L's Win % OWS DWS WS 2013-14 Select Las Vegas 5 0 0 0 0 0 0 1 .031 0.00 1.33 0.00 4 1",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

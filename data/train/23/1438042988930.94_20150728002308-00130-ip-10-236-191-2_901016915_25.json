@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "Class",
+            "DATABASE",
+            "OBJECT",
+            "SCHEMA",
+            "TYPE",
+            "CONTRACT, MESSAGE TYPE, or SERVICE",
+            "SYMMETRIC KEY",
+            "CERTIFICATE or ASYMMETRIC KEY",
+            "ENDPOINT"
+        ],
+        [
+            "Condition",
+            "Cannot change the owner of system databases master, model, tempdb, the resource database, or a database that is used as a distribution database. The principal must be a login. If the principal is a Windows login without a corresponding SQL Server login, the principal must have CONTROL SERVER permission and TAKE OWNERSHIP permission on the database. If the principal is a SQL Server login, the principal cannot be mapped to a certificate or asymmetric key. Dependent aliases will be mapped to the new database owner. The DBO SID will be updated in both the current database and in sys.databases.",
+            "Cannot change ownership of triggers, constraints, rules, defaults, statistics, system objects, queues, indexed views, or tables with indexed views.",
+            "When ownership is transferred, permissions on schema-contained objects that do not have explicit owners will be dropped. Cannot change the owner of sys, dbo, or information_schema.",
+            "Cannot change ownership of a TYPE that belongs to sys or information_schema.",
+            "Cannot change ownership of system entities.",
+            "Cannot change ownership of global temporary keys.",
+            "Cannot transfer ownership of these entities to a role or group.",
+            "The principal must be a login."
+        ]
+    ],
+    "pageTitle": "ALTER AUTHORIZATION (Transact-SQL)",
+    "title": "",
+    "url": "https://technet.microsoft.com/en-us/library/ms187359",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00130-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 901033079,
+    "recordOffset": 901016915,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{47933=Beginning with SQL Server 2005, a user can own an OBJECT or TYPE that is contained by a schema owned by another database user. This is a change of behavior from earlier versions of SQL Server. For more information, see OBJECTPROPERTY (Transact-SQL) and TYPEPROPERTY (Transact-SQL)., 33825=Applies To: SQL Server 2014, SQL Server 2016 Preview, 34041=Applies to: SQL Server (SQL Server 2008 through current version), Azure SQL Database, Azure SQL Data Warehouse Public Preview., 37929=Applies to: SQL Server 2008 through SQL Server 2016, SQL Database V12., 37488=Applies to: SQL Server 2008 through SQL Server 2016, Azure SQL Database., 38374=Applies to: SQL Server 2008 through SQL Server 2016., 49959=In SQL Server 2005, the behavior of schemas changed from the behavior in earlier versions of SQL Server. Code that assumes that schemas are equivalent to database users may not return correct results. Old catalog views, including sysobjects, should not be used in a database in which any of the following DDL statements has ever been used: CREATE SCHEMA, ALTER SCHEMA, DROP SCHEMA, CREATE USER, ALTER USER, DROP USER, CREATE ROLE, ALTER ROLE, DROP ROLE, CREATE APPROLE, ALTER APPROLE, DROP APPROLE, ALTER AUTHORIZATION. In a database in which any of these statements has ever been used, you must use the new catalog views. The new catalog views take into account the separation of principals and schemas that was introduced in SQL Server 2005. For more information about catalog views, see Catalog Views (Transact-SQL)., 43944=Applies to: SQL Server 2012 through SQL Server 2016.}",
+    "textBeforeTable": "Changes the ownership of a securable. Applies To: SQL Server 2014, SQL Server 2016 Preview \u00a0 SQL Server 2005 SQL Server 2008 SQL Server 2008 R2 SQL Server 2012 Other Versions ALTER AUTHORIZATION (Transact-SQL) ALTER XML SCHEMA COLLECTION (Transact-SQL) ALTER WORKLOAD GROUP (Transact-SQL) ALTER VIEW (Transact-SQL) ALTER USER (Transact-SQL) ALTER TRIGGER (Transact-SQL) ALTER TABLE (Transact-SQL) ALTER SYMMETRIC KEY (Transact-SQL) ALTER SERVICE MASTER KEY (Transact-SQL)",
+    "textAfterTable": "| CONTRACT | TYPE | DATABASE | ENDPOINT | FULLTEXT CATALOG | FULLTEXT STOPLIST | MESSAGE TYPE | REMOTE SERVICE BINDING | ROLE | ROUTE | SCHEMA | SEARCH PROPERTY LIST | SERVER ROLE | SERVICE | SYMMETRIC KEY | XML SCHEMA COLLECTION } Arguments <class_type> Is the securable class of the entity for which the owner is being changed. OBJECT is the default. OBJECT Applies to: SQL Server 2008 through SQL Server 2016, Azure SQL Database. ASSEMBLY Applies to: SQL Server 2008 through SQL Server 2016, SQL Database V12. ASYMMETRIC KEY Applies to: SQL Server 2008 through SQL Server 2016. CERTIFICATE Applies to: SQL Server 2008 through SQL Server 2016. CONTRACT Applies to: SQL Server 2008 through SQL Server 2016. TYPE Applies to: SQL Server 2008 through SQL Server 2016, Azure SQL Database. DATABASE Applies to: SQL Server 2008 through",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

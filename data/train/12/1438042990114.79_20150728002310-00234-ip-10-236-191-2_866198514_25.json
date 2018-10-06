@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "filterid",
+            "destinationid",
+            "enable",
+            "server"
+        ],
+        [
+            "Definition",
+            "Optional. The unique identifier for the filter.",
+            "The unique identifier for the specific destination. The destination must exist.",
+            "Optional. Enables the filter. Valid values are true and false. The default is true.",
+            "Optional. The server on which to perform this operation. The default is the server to which you are connected."
+        ]
+    ],
+    "pageTitle": "6 DMS Custom WLST Commands",
+    "title": "",
+    "url": "https://docs.oracle.com/middleware/1212/core/FCCCR/custom_dms.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00234-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 866225283,
+    "recordOffset": 866198514,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 26 Mar 2015 11:52:23 GMT",
+    "textBeforeTable": "addDMSEventRoute([filterid=filter_id], destinationid=destination_id, [enable=true|false] [,server=server_name])  Syntax      You must be connected to the Administration Server to add an event route. If you are not, an error is returned. Adds the specified event route to the Event Tracing configuration. If an event route with the same ID already exists, the command returns an error and does not add the event route. Description    Use with WLST: Online Command Category: DMS Event Tracing addDMSEventRoute    Filter \"mds2\" added. AND CONTEXT user equals bruce IGNORECASE=true'}) props={'condition': 'NOUNTYPE equals MDS_Connections etypes='NOUN:CREATE,HTTP_REQUEST:START', addDMSEventFilter(id='mds2', name='MyFilter',  The following example adds a filter with two event/action pairs: Unable to add filter \"mds1\" as a filter with that ID already exists for server \"AdminServer\". props={'condition': 'NOUNTYPE equals MDS_Connections AND CONTEXT user equals bruce'}) addDMSEventFilter(id='mds1', name='MyFilter',  The following example attempts to add a filter with the same id. The command returns an error: Filter \"mds1\" added. props={'condition': 'NOUNTYPE equals MDS_Connections AND CONTEXT user equals bruce IGNORECASE'}) addDMSEventFilter(id='mds1', name='MyFilter',  The following example adds a filter with the name MyFilter, specifying a Noun type and context: Examples",
+    "textAfterTable": "Examples The following example adds an event route with the filter id of mds1 and the destination id of destination1:  addDMSEventRoute(filterid='mds1', destinationid='destination1', enable='false') Event-route for filter \"mds1\", destination \"destination1\" added for server \"AdminServer\". The following example attempts to add an event route that already exists:  addDMSEventRoute(filterid='mds1', destinationid='destination1', enable='false') Unable to add event route as a mapping with filter \"mds1\" and destination \"destination1\" already exists for server \"AdminServer\". enableDMSEventTrace Command Category: DMS Event Tracing Use with WLST: Online Description Enables an event trace and creates a filter with a specified condition and destination and an enabled event-route. This is a simple way to start filtering, without having to explicitly create a filter, destination and event-route, but with less configuration options. The specified destination must exist. You must be connected to the Administration Server to enable a DMS event trace. If you are not, an error is returned. If you require a more complex configuration, use the addDMSEventDestination, addDMSEventFilter, and addDMSEventRoute. Syntax  enableDMSEventTrace(destinationid=destinationid [, etypes=etype] [, condition=condition] [, server=server_name])",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

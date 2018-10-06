@@ -1,0 +1,67 @@
+{
+    "relation": [
+        [
+            "parameters",
+            "-C -i",
+            "",
+            "-C -p 1",
+            "-C -p 2",
+            "",
+            "-C -p 4"
+        ],
+        [
+            "oublock",
+            "1430",
+            "1550",
+            "1500",
+            "1100+620",
+            "800+770",
+            "530+350+540+470"
+        ],
+        [
+            "writes",
+            "2165",
+            "2300",
+            "2500",
+            "2500",
+            "2320",
+            "2600"
+        ],
+        [
+            "source time",
+            "12",
+            "14",
+            "14",
+            "13",
+            "13",
+            "13"
+        ],
+        [
+            "sink time",
+            "11",
+            "13",
+            "12",
+            "-",
+            "-",
+            "-"
+        ]
+    ],
+    "pageTitle": "Sendmail X: Performance Tests and Results",
+    "title": "",
+    "url": "http://www.sendmail.org/~ca/email/sm-X/design-2005-05-05/main/node6.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987228.91/warc/CC-MAIN-20150728002307-00219-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 704054927,
+    "recordOffset": 704024006,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampAfterTable": "{54785=2004-03-05 source, relay, and sink on zardoc (OpenBSD 3.2), 35628=2004-06-23 Upgraded v-bsd.perf-lab to FreeBSD 4.9 (2 processors), using softupdates., 30679=2003-11-19 sm-9.0.0.9 running on v-bsd.perf-lab (2 processors, FreeBSD 3.4), 20576=smtpc -t 100 -s 1000, 15172=2004-03-08 source: s-6.perf-lab; sink: v-sun;, 31326=2004-03-04 source: s-6.perf-lab; relay: v-bsd; sink: v-sun, 49355=2004-03-17 checks/t-readwrite on v-bsd (FreeBSD 4.9, SCSI):, 281925=Random access goes down as much as 1000 to 2000 lookups per second., 33721=2004-03-26 source: v-6.perf-lab running smtpc -t 100 -s 5000; relay: v-bsd.perf-lab; sink: v-sun.perf-lab, 18426=Test date: 2003-05-25, version: smX.0.0.6, machine: PC, AMD Duron 700MHz, 512MB RAM, SuSE 8.1, 201113=Some preliminary, very simple performance tests with Berkeley DB 4.0.14 have been made. Two benchmark programs have been used: bench_001 and bench_002 which use Btree and Queue as access methods. They are based on examples_c/bench_001.c that comes with Berkeley DB. Notice: the access method Queue requires fixed size records and the access methods is record numbers (simply increasing). This method may be used for the backup of the incoming EDB. Notice: the tests have not (yet) been run multiple times, at least not systematically. Testing showed that the runtimes may vary noticable. However, the data can be used to show some trends., 14368=2004-03-04 source: s-6.perf-lab; sink: v-sun.perf-lab, 41597=2004-03-23 source: basil.ps-lab MTA: wasabi.ps-lab (FreeBSD 4.9, machine 16 in Section 5.2.1.1) sink: v-sun.perf-lab, 32978=sm8.12.11, 32602=sm8.12.11 -odq, 35763=time ./smtpc2 -O 10 -t 100 -s 1000 -r v-bsd.perf-lab:1234, 80655=The following table lists the results for group commits (C) together with various buffer sizes (256, 1024, 4096, 8192, and 16384). As usual the entries are execution time in seconds. The program writes 2000 records in total, e.g., for size 16384 that is 31MB data., 20538=FS: ReiserFS version 3.6.25, 12826=2004-03-02, 14714=./smtpc -t 100 -s 1000, 54022=2004-03-17 checks/t-readwrite on v-sun (SunOS 5.8, SCSI):, 194229=SR Office DriveMark 2002 in IO/Sec taken from [Ra01]:, 47684=2004-03-16 source: s-6.perf-lab, time ./smtpc -s 1000 -t 100 -r localhost:1234; sink: -v-bsd.perf-lab, smtps3, file system: UFS, softupdates, 55684=2004-03-17 checks/t-readwrite on aix-3 (AIX 4.3, SCSI, jfs):, 17308=On FreeBSD 4.6 (machine 14, see Section 5.2.1.1) (source, sink, sm-9 of 2002-10-01 on the same machine):, 14658=2004-03-08 source: s-6.perf-lab; sink: v-bsd;, 20430=2004-03-23 source: basil.ps-lab MTA: cilantro.ps-lab (Linux 2.4.18-64GB-SMP) sink: v-sun.perf-lab, 33349=This looks like a problem in queue only mode: there's way too much data written: almost 3 times the amount of background delivery mode. Why does sm8 send 1000 more message in queue only mode?, 31173=time ./smtpc2 -O 10 -fa@s-6.perf-lab -Rnobody@v-bsd.perf-lab -t 100 -s 1000 -r mon.perf-lab:1234, 23461=2004-03-25:, 45196=2004-03-16 results for wiz: source: time ./smtpc -s 1000 -t 100 -r localhost:1234; sink: smtps3, file system: UFS, softupdates, 17850=time ./smtp-source -s 50 -m 100 localhost:1234, 31106=2004-03-02 source: s-6.perf-lab; relay: mon; sink: v-bsd, 19332=2004-03-17 checks/t-readwrite on destiny (Linux, IDE, ext2):, 33551=2004-03-05 source, relay, sink: wiz (FreeBSD 4.8), 271966=On FreeBSD 4.9, UFS, softupdates, SCSI, smX.0.0.12, relay 5000 messages, 100 threads:, 52397=2004-03-09 sm-9.0.0.12 running on v-sun.perf-lab, 52456=time ./smtpc -O 20 -fa@s-6.perf-lab.sendmail.com -Rnobody@v-bsd.perf-lab.sendmail.com -t 100 -s 1000 -r v-sun.perf-lab.sendmail.com:1234, 50769=2004-03-17 checks/t-readwrite on wiz (FreeBSD 4.8, IDE):, 50466=-p specifies the number of processes to start, -f specifies the number of files to write per process. The test cases above write 1000 files with either 1 or 10 processes. As it can be seen, it is significantly more efficient to use 10 processes if softupdates are turned on., 16568=Test setup with a sendmail X prototype of 2002-09-04: v-aix.perf-lab running QMGR, SMTPS, and SMTPC. Relaying from localhost to v-bsd.perf-lab. Source program running on v-aix:, 51780=2003-11-21 sm-9.0.0.9 running on v-sun.perf-lab, 19900=2004-03-17 checks/t-readwrite on ia64-2 (Linux, SCSI, reiserfs):, 18004=time ./smtp-source -c -s 100 -m 200 localhost:1234, 36223=The following tests were performed: sink (smtps3) on v-bsd.perf-lab, source (smtpc) on s-6.perf-lab sending 1000 mails. All numbers for write operations are rounded; if there are numbers in parentheses then those denote the value of ru_oublock (getrusage(2)) for smtps/qmgr or sm8. If two times are given (separated by /) then the second time denotes the output (elapsed time) for the sink., 25851=2004-03-25: gatling -m 100 -c 5000 -z 1 -Z 1 (1KB message size), 31395=options: -t 100 -s 1000, 73892=Next version fsperf1.c: allow for hashing (00 - 99, up to two levels). Use enough files to defeat the (2MB) cache of IDE disks. The parameters for the following table are 1000 operations and 1000 files, hence each file is used once. Additional parameters are listed in the heading. c: create, h 1: one level hashing, r: rename file twice, p: populate directories before test, then just reuse the files., 67143=(2004-07-14) With and without fsync(2) (-S), 271892=2004-03-26 Effect of logging using logging to files via sm I/O.}",
+    "lastModified": "Thu, 05 May 2005 20:41:19 GMT",
+    "textBeforeTable": "v-sun (8 clients): Tests have been performed with myslam (a multi-threaded SMTP client), using 7 to 8 client machines, 50 threads per client, and 5000 messages per client. Entries in the tables down below denote execution time in seconds unless otherwise noted, hence smaller values are better. schmidt: Linux 2.4, uses 15 threads per client only, otherwise the machine just ``dies''. v-aix: AIX, 4 processors v-bsd: FreeBSD 3.4, 2 PIII processors, 2 GB RAM v-sun: Sun SPARCserver E450, 4 processors Test machines are: smtps: state-threads, see Section 3.20.3.1. thrpool: uses a worker model with concurrency limiting, see Section 3.20.4.1. thrperconn: one thread per connection. smtp-sink from postfix. This is an entirely event driven program. Test programs are: For simple performance comparisons several SMTP sinks have been implemented or tested. SMTP Sink Remark (placed here so it doesn't get lost): there is a restricted number ( 60000) of possible open connections to one port. Could that limit the throughput we are trying to achieve or is such a high number of connections unfeasible? SMTP Server Daemon Sendmail X: Performance Tests and Results",
+    "textAfterTable": "0.4 0.9 4KB/msg (160MB) 3.3 2.9 0.6 2.1 32KB/msg (1280MB) 6.5 6.3 - 11.9 v-bsd: parameters smtp-sink smtps thrperconn thrpool 1KB msg size 97 87 380 140 4KB msg size 108 130 1150 156 32KB msg size 208 197 fails 330 -w 1 165 138 484 223 v-aix: parameters smtp-sink smtps thrperconn thrpool 1KB msg size 38 28 - 31 4KB msg size 34 33 - 31 32KB msg size 125 125 - 125 -w 1 125 125 - 155 \u00a0 \u00a0 \u00a0 \u00a0 125 for 250/3 schmidt: parameters smtp-sink smtps thrperconn thrpool 1KB msg size 45 44 165 74 4KB msg size 54 45 418",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

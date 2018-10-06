@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Element",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Required/Optional",
+            "Required",
+            "Optional",
+            "Required",
+            "Required",
+            "Required"
+        ],
+        [
+            "Description",
+            "Specifies the output device used by the logging system. Legal values are: stdout stderr (default) jdk log4j file name If log4j is specified, the Log4j libraries must be in the classpath. In both cases, the appropriate logging configuration mechanism (system properties, property files, and so on) are necessary to configure the JDK/Log4j logging libraries. Preconfigured system property override is tangosol.coherence.log.",
+            "Specifies a logger name within chosen logging system that logs Coherence related messages. This value is only used by the JDK and log4j logging systems. The default value is Coherence. Preconfigured system property override is tangosol.coherence.log.logger.",
+            "Specifies which logged messages are output to the log destination. Legal values are: 0 \u2013 only output without a logging severity level specified are logged 1 \u2013 all the above plus errors 2 \u2013 all the above plus warnings 3 \u2013 (default) all the above plus informational messages 4-9 \u2013 all the above plus internal debugging messages (the higher the number, the more the messages) -1 \u2013 no messages Preconfigured system property override is tangosol.coherence.log.level.",
+            "Specifies how messages that have a logging level specified are formatted before passing them to the log destination. The value of the message-format element is static text with the following replaceable parameters: {date} \u2013 the date/time format (to a millisecond) at which the message was logged {version} \u2013 the Oracle Coherence exact version and build details {level} \u2013 the logging severity level of the message {thread} \u2013 the thread name that logged the message {member} \u2013 the cluster member id (if the cluster is currently running) {location} \u2013 the fully qualified cluster member id: cluster-name, site-name, rack-name, machine-name, process-name and member-name (if the cluster is currently running) {role} \u2013 the specified role of the cluster member {text} \u2013 the text of the message The default value is: {date} Oracle Coherence {version} <{level}> (thread={thread}, member={member}): {text}",
+            "Specifies the maximum number of characters that the logger daemon processes from the message queue before discarding all remaining messages in the queue. Note that the message that caused the total number of characters to exceed the maximum is NOT truncated, and all messages that are discarded are summarized by the logging system with a single log entry detailing the number of messages that were discarded and their total size. The truncation of the logging is only temporary, since when the queue is processed (emptied), the logger is reset so that subsequent messages are logged. The purpose of this setting is to avoid a situation where logging can itself prevent recovery from a failing condition. For example, with tight timings, logging can actually change the timings, causing more failures and probably more logging, which becomes a vicious cycle. A limit on the logging being done at any one point in time is a \"pressure valve\" that prevents such a vicious cycle from occurring. Note that logging occurs on a dedicated low-priority thread to even further reduce its impact on the critical portions of the system. Legal values are positive integers or 0. Zero implies no limit. The default value in production mode is 4096 and 2147483647 in development mode. Preconfigured system property override is tangosol.coherence.log.limit."
+        ]
+    ],
+    "pageTitle": "Operational Configuration Elements",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18686_01/coh.37/e18677/appendix_operational.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00022-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 75161827,
+    "recordOffset": 75107794,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{184149=This value should be at least 512, and defaults to a value based on the local nodes MTU. An MTU of 1500 is assumed if the MTU cannot be obtained., 224945=If the value does not contain a factor, a factor of mega is assumed. Legal values are positive integers between 1 and Integer.MAX_VALUE - 1023 (that is, 2,147,482,624 bytes). The default value is 1024MB., 153267=Specifies the number of milliseconds that a new member waits without finding any evidence of a cluster before starting its own cluster and electing itself as the senior cluster member. Legal values are from 1000 to 1000000. The default value is 3000., 172044=Specifies the interval between heartbeats. Each member issues a unicast heartbeat, and the most senior member issues the cluster heartbeat, which is a broadcast message. The heartbeat is used by the tcp-ring-listener as part of fast death detection. The default value is 1000., 164570=For unicast-listener, multicast-listener and packet-publisher: Specifies the number of packets of packet-size that the datagram socket are asked to size itself to buffer. See SO_SNDBUF and SO_RCVBUF. Actual buffer sizes may be smaller if the underlying socket implementation cannot support more than a certain size. The default values are 32 for publishing, 64 for multicast listening, and 1428 for unicast listening., 146308=Specifies the smallest available buffer size to be stored in a segment. This value must be a multiple of 1024. Therefore, the smallest possible buffer is 1024 bytes. The default value is 1KB., 175039=Specifies the maximum size of the pool. The value is entered in bytes. By default, the <packet-pool> element is unspecified within the configuration and the size defaults to 0. For the packet publisher, 0 indicates that the buffer is calculated by factoring the preferred MTU size with 2048. For the incoming message handler, 0 indicates that the buffer is calculated by factoring the preferred MTU size with 8192., 223774=If the value does not contain a factor, a factor of mega is assumed. Legal values are positive integers between 1 and Integer.MAX_VALUE - 1023 (that is, 2,147,482,624 bytes). The default value is 1MB.}",
+    "lastModified": "Wed, 13 May 2015 05:18:23 GMT",
+    "textBeforeTable": "Table A-26 logging-config Subelements The following table describes the subelements of the logging-config element. Elements Used in: coherence. logging-config Specifies whether the product is being used in a development or production mode. Valid values are prod (Production), and dev (Development). Note: This value cannot be overridden in tangosol-coherence-override.xml. It must be specified in tangosol-coherence.xml or (preferably) supplied as system property tangosol.coherence.mode on the Java command line. The default value is dev. Optional <license-mode> Specifies the product edition that the member uses. This allows multiple product editions to be used within the same cluster, with each member specifying the edition that it is using. Valid values are: GE (Grid Edition), EE (Enterprise Edition), SE (Standard Edition), RTC (Real-Time Client), DC (Data Client). The default value is GE. Optional <edition-name> Description Required/Optional Element Table A-25 license-config Subelements Table A-25 describes the subelements of the license-config element. Used in: coherence. license-config",
+    "textAfterTable": "management-config Used in: coherence. Elements Table A-27 describes the subelements of the management-config element. Table A-27 management-config Subelements Element Optional/Required Description <managed-nodes> Required Specifies whether a cluster node's JVM has an [in-process] MBean server and if so, whether this node allows management of other nodes' managed objects. Legal values are: none \u2013 (default) No MBean server is instantiated on this cluster node. local-only \u2013 Manage only MBeans which are local to this cluster node (that is, within the same JVM). remote-only \u2013 Manage MBeans on other remotely manageable cluster nodes. See <allowed-remote-management> subelement. Requires Coherence Enterprise Edition or higher all \u2013 Manage both local and remotely manageable cluster nodes. See <allowed-remote-management> subelement. Requires Coherence Enterprise Edition or higher. Preconfigured system property override is tangosol.coherence.management. <allow-remote-management> Required Specifies whether this cluster node exposes its managed objects to remote MBean server(s). Legal values are: true or false. The default value is true. Preconfigured system property override is tangosol.coherence.management.remote.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

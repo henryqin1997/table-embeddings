@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Character",
+            ".",
+            "*",
+            "+",
+            "?",
+            "^",
+            "$",
+            "_ (underscore)"
+        ],
+        [
+            "Special Meaning",
+            "Matches any single character, including white space.",
+            "Matches 0 or more sequences of the pattern.",
+            "Matches 1 or more sequences of the pattern.",
+            "Matches 0 or 1 occurrences of the pattern.",
+            "Matches the beginning of the string.",
+            "Matches the end of the string.",
+            "Matches a comma (,), left brace ({), right brace (}), left parenthesis ( ( ), right parenthesis ( ) ), the beginning of the string, the end of the string, or a space."
+        ]
+    ],
+    "pageTitle": "Cisco Nexus 7000 Series NX-OS Fundamentals Configuration Guide, Release 4.1 - Understanding the Command-Line Interface [Cisco Nexus 7000 Series Switches] - Cisco",
+    "title": "This table lists the keyboard characters that have special meanings. Table 7 Special Characters with Special Meaning",
+    "url": "http://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/4_1/nx-os/fundamentals/configuration/guide/b_Cisco_Nexus_7000_Series_NX-OS_Fundamentals_Configuration_Guide__Release_4-1/Cisco_Nexus_7000_Series_NX-OS_Fundamentals_Configuration_Guide__Release_4-1_chapter4.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00281-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 362960087,
+    "recordOffset": 362922020,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "You can also use other keyboard characters (such as ! or ~) as single-character patterns, but certain keyboard characters have special meanings when used in regular expressions. Special Characters Anchoring Multiple-Character Patterns Special Characters The Cisco NX-OS software supports regular expressions for searching and filtering in CLI output, such as the show commands. Regular expressions are case sensitive and allow for complex matching requirements. Understanding Regular Expressions Enters the correct syntax for the clock set command. switch# switch# clock set 13:32:00 18 April 2008<CR>     Displays the correct arguments for the year.  switch# clock set 13:32:00 18 April <2000-2030> Enter the year (no abbreviation) switch# clock set 13:32:00 18 April ?     Adds the date to the clock setting. The CLI indicates an error with the caret symbol (^) at 08.  % Invalid input detected at '^' marker. switch# clock set 13:32:00 18 April",
+    "textAfterTable": "To use these special characters as single-character patterns, remove the special meaning by preceding each character with a backslash (\\). This example contains single-character patterns that match a dollar sign ($), an underscore (_), and a plus sign (+), respectively: \\$ \\_ \\+ Multiple-Character Patterns You can also specify a pattern that contains multiple characters by joining letters, digits, or keyboard characters that do not have special meanings. For example, a4% is a multiple-character regular expression. With multiple-character patterns, the order is important. The regular expression a4% matches the character a followed by a 4 followed by a percent sign (%). If the string does not have a4%, in that order, pattern matching fails. The multiple-character regular expression a. (the character a followed by a period) uses the special meaning of the period character to match the letter a followed by any single character. With this example, the strings ab, a!, or a2 are all valid matches for the regular expression. You can remove the special meaning of a special character by inserting a backslash before it. For example, when the expression a\\. is used in the command syntax, only the string a. will be matched. Anchoring You can match",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

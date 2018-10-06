@@ -1,0 +1,166 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2011-12",
+            "2012-13",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "DAK",
+            "MNE",
+            ""
+        ],
+        [
+            "GP",
+            "2",
+            "2",
+            "4"
+        ],
+        [
+            "GS",
+            "2",
+            "2",
+            "4"
+        ],
+        [
+            "Min",
+            "31.6",
+            "37.2",
+            "34.4"
+        ],
+        [
+            "FGM",
+            "7.00",
+            "6.00",
+            "6.50"
+        ],
+        [
+            "FGA",
+            "13.00",
+            "13.00",
+            "13.00"
+        ],
+        [
+            "FG%",
+            ".538",
+            ".462",
+            ".500"
+        ],
+        [
+            "3FGM",
+            "0.00",
+            "0.00",
+            "0.00"
+        ],
+        [
+            "3FGA",
+            "0.00",
+            "1.00",
+            "0.50"
+        ],
+        [
+            "3P%",
+            ".000",
+            ".000",
+            ".000"
+        ],
+        [
+            "FTM",
+            "2.50",
+            "3.50",
+            "3.00"
+        ],
+        [
+            "FTA",
+            "3.50",
+            "4.50",
+            "4.00"
+        ],
+        [
+            "FT%",
+            ".714",
+            ".778",
+            ".750"
+        ],
+        [
+            "FIC",
+            "15.81",
+            "12.81",
+            "14.31"
+        ],
+        [
+            "OFF",
+            "3.00",
+            "2.50",
+            "2.75"
+        ],
+        [
+            "DEF",
+            "7.50",
+            "5.00",
+            "6.25"
+        ],
+        [
+            "Reb",
+            "10.50",
+            "7.50",
+            "9.00"
+        ],
+        [
+            "Ast",
+            "1.00",
+            "2.00",
+            "1.50"
+        ],
+        [
+            "Stl",
+            "1.00",
+            "4.00",
+            "2.50"
+        ],
+        [
+            "Blk",
+            "4.00",
+            "0.50",
+            "2.25"
+        ],
+        [
+            "PF",
+            "4.50",
+            "4.00",
+            "4.25"
+        ],
+        [
+            "TO",
+            "2.00",
+            "2.00",
+            "2.00"
+        ],
+        [
+            "Pts",
+            "16.50",
+            "15.50",
+            "16.00"
+        ]
+    ],
+    "pageTitle": "Chris Wright Player Profile, Milwaukee Bucks, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Events Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Chris_Wright/Summary/2536",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00010-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 26119791,
+    "recordOffset": 26089458,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{8591=Draft Entry: 2011 NBA Draft, 8491=Early Entry Info: 2010 Early Entrant (Withdrew), 9435=Born: Sep 30, 1988 (26 years old)}",
+    "TableContextTimeStampAfterTable": "{156553=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved., 122833=* International basketball history from 2011-2012}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 2 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] [ National ] [ High School ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2011-12 GOS 24 1 185.8 23 45 .511 0 0 .000 24 31 .774 68 19 26 45 4 7 13 22 8 70 2013-14 MIL 8 0 125.5 21 35 .600 0 1 .000 6 15 .400 37 10 10 20 5 7 5 17 5 48 CAREER \u00a0 32 1 311.4 44 80 .550 0 1 .000 30 46 .652 105 29 36 65 9 14 18 39 13 118 NBA Regular Season Stats - Misc Stats Season Team GP GS Dbl Dbl Tpl Dbl 40 Pts 20 Reb 20 Ast Techs HOB Ast/TO Stl/TO FT/FGA W's L's Win % OWS DWS WS 2011-12 GOS 24 1 0 0 0 0 0 0",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

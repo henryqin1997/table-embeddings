@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6",
+            "Step 7",
+            "Step 8"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Device> enable",
+            "configure terminal Example: Device# configure terminal",
+            "crypto ikev2 name-mangler mangler-name Example: Device(config)# crypto ikev2 name-mangler mangler1",
+            "dn {common-name | country | domain | locality | organization | organization-unit | state} Example: Device(config-ikev2-name-mangler)# dn state",
+            "eap {all | dn {common-name | country | domain | locality | organization | organization-unit | state} | prefix | suffix {delimiter {. | @ | \\}}} Example: Device(config-ikev2-name-mangler)# eap prefix delimiter @",
+            "email {all | domain | username} Example: Device(config-ikev2-name-mangler)# email username",
+            "fqdn {all | domain | hostname} Example: Device(config-ikev2-name-mangler)# fqdn domain",
+            "end Example: Device(config-ikev2-name-mangler)# end"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Defines a name mangler and enters IKEv2 name mangler configuration mode.",
+            "Derives the name from any of the following fields in the remote identity of type DN (distinguished name). common-name country domain locality organization organization-unit state",
+            "Derives the name from the remote identity of type EAP (Extensible Authentication Protocol). all--Derives the name from the entire EAP identity. dn--Derives the name from any of the following fields in the remote EAP identity of type DN: common-name country domain locality organization organization-unit state prefix--Derives the name from the prefix in the EAP identity. suffix--Derives the name from the suffix in the EAP identity. delimiter {. | @ | \\}--Specifies the delimiter in the EAP identity that separates the prefix and the suffix.",
+            "Derives the name from the remote identity of type e-mail. all--Derives the name from the entire remote IKE identity of type e-mail. domain--Derives the name from the domain part of the remote IKE identity. username--Derives the name from the username part of the remote IKE identity.",
+            "Derives the name from the remote identity of type FQDN (Fully Qualified Domain Name). all--Derives the name from the entire remote IKE identity of type FQDN. domain--Derives the name from the domain part of the remote IKE identity. hostname--Derives the name from the hostname part of the remote IKE identity.",
+            "Exits IKEv2 name mangler configuration mode and returns to privileged EXEC mode."
+        ]
+    ],
+    "pageTitle": "Configuring FlexVPN Server\u00a0 [Support] - Cisco Systems",
+    "title": "",
+    "url": "http://www.cisco.com/en/US/docs/ios-xml/ios/sec_conn_ike2vpn/configuration/15-2mt/sec-cfg-flex-serv.html?referring_site=smartnavRD",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00191-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 382588035,
+    "recordOffset": 382550481,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{88285=Device(config-ikev2-author-policy)# ipsec flow-limit 12500}",
+    "textBeforeTable": "DETAILED STEPS 8.\u00a0\u00a0\u00a0 end 7.\u00a0\u00a0\u00a0 fqdn {all | domain | hostname} 6.\u00a0\u00a0\u00a0 email {all | domain | username} 5.\u00a0\u00a0\u00a0 eap {all | dn {common-name | country | domain | locality | organization | organization-unit | state} | prefix | suffix {delimiter {. | @ | \\}}} 4.\u00a0\u00a0\u00a0 dn {common-name | country | domain | locality | organization | organization-unit | state} 3.\u00a0\u00a0\u00a0 crypto ikev2 name-mangler mangler-name 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS Perform this task to specify the IKEv2 name mangler, which is used to derive a name for authorization requests and obtain AAA preshared keys. The name is derived from specified portions of different",
+    "textAfterTable": "Configuring the IKEv2 Authorization Policy Perform this task to configure the IKEv2 authorization policy. SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 crypto ikev2 authorization policy policy-name 4.\u00a0\u00a0\u00a0aaa attribute list list-name 5.\u00a0\u00a0\u00a0backup-gateway string 6.\u00a0\u00a0\u00a0banner banner-text 7.\u00a0\u00a0\u00a0configuration url url 8.\u00a0\u00a0\u00a0configuration version version 9.\u00a0\u00a0\u00a0def-domain domain-name 10.\u00a0\u00a0\u00a0 dhcp {giaddr ip-address | server {ip-address | hostname} | timeout seconds} 11.\u00a0\u00a0\u00a0 [ipv6] dns primary-server [secondary-server] 12.\u00a0\u00a0\u00a0include-local-lan 13.\u00a0\u00a0\u00a0ipsec flow-limit number 14.\u00a0\u00a0\u00a0 netmask mask",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

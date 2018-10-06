@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "param_info",
+            "file_version",
+            "file",
+            "prefix"
+        ],
+        [
+            "information of parameter",
+            "parameter version of the file, must be <= provided parameter version",
+            "file to load from",
+            "prefix for members"
+        ]
+    ],
+    "pageTitle": "SHOGUN: CDiceKernelNormalizer Class Reference",
+    "title": "",
+    "url": "http://shogun-toolbox.org/doc/en/2.0.1/classshogun_1_1CDiceKernelNormalizer.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989142.82/warc/CC-MAIN-20150728002309-00106-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 217158883,
+    "recordOffset": 217144789,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{49531=Definition at line 1033 of file SGObject.cpp., 24716=Definition at line 1201 of file SGObject.cpp., 30936=Definition at line 1132 of file SGObject.cpp., 51146=Definition at line 1028 of file SGObject.cpp., 32498=Definition at line 1145 of file SGObject.cpp., 78087=Definition at line 1038 of file SGObject.cpp., 29497=Definition at line 1108 of file SGObject.cpp., 69692=Definition at line 1084 of file SGObject.cpp., 76347=Definition at line 1043 of file SGObject.cpp.}",
+    "lastModified": "Fri, 16 Nov 2012 02:52:19 GMT",
+    "textBeforeTable": "Parameters: default constructor \u00a0)\u00a0 use_opt_diag = false bool\u00a0 ( CDiceKernelNormalizer Constructor & Destructor Documentation m_type ENormalizerType\u00a0 use_optimized_diagonal_computation bool\u00a0 num_diag_rhs int32_t\u00a0 diag_rhs float64_t *\u00a0 num_diag_lhs int32_t\u00a0 diag_lhs float64_t *\u00a0 Protected Attributes update_parameter_hash () virtual bool\u00a0 save_serializable_post () throw (ShogunException) virtual void\u00a0 save_serializable_pre () throw (ShogunException) virtual void\u00a0 load_serializable_post () throw (ShogunException) virtual void\u00a0 load_serializable_pre () throw (ShogunException) virtual void\u00a0 one_to_one_migration_prepare (DynArray< TParameter * > *param_base, const SGParamInfo *target, TParameter *&replacement, TParameter *&to_migrate, char *old_name=NULL) virtual void\u00a0",
+    "textAfterTable": "\u00a0)\u00a0 [virtual] default destructor Definition at line 47 of file DiceKernelNormalizer.h. Member Function Documentation bool alloc_and_compute_diag ( CKernel *\u00a0 k, float64_t *&\u00a0 v, int32_t\u00a0 num \u00a0 ) alloc and compute the vector containing the square root of the diagonal elements of this kernel. Definition at line 125 of file DiceKernelNormalizer.h. void build_parameter_dictionary ( CMap< TParameter *, CSGObject * > &\u00a0 dict \u00a0)\u00a0 [inherited] Builds a dictionary of all parameters in SGObject as well of those of SGObjects that are parameters of this object. Dictionary maps parameters to the objects that own them. Parameters: dict\u00a0 dictionary of parameters to be built. Definition at line",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

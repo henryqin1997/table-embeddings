@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "DateTime",
+            "2010-12-01T00:00:00",
+            "2010-12-01T00:00:00",
+            "2011-01-01T00:00:00",
+            "2013-01-01T00:00:00",
+            "2013-04-25T00:00:00"
+        ],
+        [
+            "Description",
+            "The ABGPS, inertial measurement unit (IMU), and raw scans are collected during the LiDAR aerial survey. The ABGPS monitors the xyz position of the sensor and the IMU monitors the orientation. During the aerial survey, laser pulses reflected from features on the ground surface are detected by the receiver optics and collected by the data logger. GPS locations are based on data collected by receivers on the aircraft and base stations on the ground. The ground base stations are placed no more than 40 km radius from the flight survey area.",
+            "The ABGPS, IMU, and raw scans are integrated using proprietary software developed by Optech and delivered with the Optech ALTM 213 System. The resultant file is in a LAS binary file format. The LAS version 1.2 file format can be easily transferred from one file format to another. It is a binary file format that maintains information specific to the LiDAR data (return number, intensity value, xyz, etc.). The resultant points are produced in the NAD83 UTM Zone 15 coordinate system, with units in meters and referenced to the NAVD88 datum. The LiDAR mass points were processed in American Society for Photogrammetry and Remote Sensing LAS 1.2 format. The header file for each dataset is complete as defined by the LAS 1.2 specification. The datasets were divided into a 1500 meters by 1500 meters tiling scheme. The tiles are contiguous, do not overlap, and are suitable for seamless topographic data mosaics that include no \"no data\" areas. The names of the tiles include alphabetic column and numeric row designations and all files utilize the LAS file extension.",
+            "The unedited data are classified to facilitate the application of the appropriate feature extraction filters. A combination of proprietary filters are applied as appropriate for the production of bare earth models (DEMs). Interactive editing methods are applied to those areas where it is inappropriate or impossible to use the feature extraction filters, based upon the design criteria and/or limitations of the relevant filters. These same feature extraction filters are used to produce elevation height surfaces.",
+            "The NOAA Coastal Services Center (CSC) received topographic files in LAS format. The files contained lidar elevation and intensity measurements. The data were received in NAD83 UTM Zone 15 Coordinates and were vertically referenced to NAVD88 using the Geoid09 model. The vertical units of the data were meters. CSC performed the following processing for data storage and Digital Coast provisioning purposes: 1. The topographic las files were converted from orthometric (NAVD88) heights to ellipsoidal heights using Geoid09. 2. The topographic las files were converted from UTM Zone 15 (meters) to Geographic coordinates (decimal degrees). 3. ASPRS Class 11 (Withheld) was changed to Class 13 (Withheld). 4. The data were converted to LAZ format.",
+            "The NOAA National Geophysical Data Center (NGDC) received lidar data files via ftp transfer from the NOAA Coastal Services Center. The data are currently being served via NOAA CSC Digital Coast at http://www.csc.noaa.gov/digitalcoast/. The data can be used to re-populate the system. The data are archived in LAS or LAZ format. The LAS format is an industry standard for LiDAR data developed by the American Society of Photogrammetry and Remote Sensing (ASPRS); LAZ is a loseless compressed version of LAS developed by Martin Isenburg (http://www.laszip.org/). The data are exclusively in geographic coordinates (either NAD83 or ITRF94). The data are referenced vertically to the ellipsoid (either GRS80 or ITRF94), allowing for the ability to apply the most up to date geoid model when transforming to orthometric heights."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Lidar/iso/xml/usgs2010_AtchafalayaBasinLouisiana_m1433.xml&view=ISO19115Components-HTMLTable",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.92/warc/CC-MAIN-20150728002310-00147-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 603430104,
+    "recordOffset": 603421902,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.csc.maps:usgs2010_AtchafalayaBasinLouisiana_m1433Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Lidar View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "1 Lidar Dataset Supplemental Information 2 None 1 North American Datum 1983 2007-01-19 Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::4269 1 Citation URL ftp://csc.noaa.gov/pub/DigitalCoast/lidar1_z/geoid12a/data/1433/supplemental/ 1 NOAA CSC (originator) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean Service, National Oceanic and Atmospheric Administration, U.S. Department of Commerce coastal.info@noaa.gov originator http://coast.noaa.gov 1 NOAA CSC (publisher) DOC/NOAA/NOS/OCM > Office for Coastal Management, National Ocean",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

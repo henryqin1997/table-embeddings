@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Status",
+            "new",
+            "new"
+        ],
+        [
+            "File",
+            "comments-after.png",
+            "comments-before.png"
+        ],
+        [
+            "Size",
+            "77.39 KB",
+            "83.57 KB"
+        ]
+    ],
+    "pageTitle": "Convert the comments administration screen to a view [#1986606] | Drupal.org",
+    "title": "",
+    "url": "https://www.drupal.org/node/1986606",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00210-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 895310459,
+    "recordOffset": 895238966,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{799042=Have you seen #202? This problem is not introduced here. It is inherited from D7/D6 and we never corrected it. This issue always came up. We don't have a sperate link for deleting the comment like node has node/nid/delete there is nothing for the comment like this when we converted comment paths to route this question came up but that was consider out of scope because priority was route conversion at that time. When we introduced list builder for entities we ignore comments because we have to isolate between admin page and delete page which we never did. Operations links can only exist if we have a list builder and for comments and that is why we have to use dropbutton here. See #2491875-14: EntityViewsData adds Operations links to all entities, which won't work if the entity type has no list builder as well. Thank you for adding the related issue., 364438=Will tackle this in Sprint 29 March.}",
+    "lastModified": "Wed, 29 Jul 2015 22:23:49 GMT",
+    "textBeforeTable": "\u00bb Needs work Active Status: May 25, 2013 at 4:20pm CreditAttribution: pcambra commented pcambra Comment #2 Log in or register to post comments +drupalconportland Issue tags: \u00bb pcambra Unassigned Assigned: May 24, 2013 at 4:26pm CreditAttribution: pcambra commented pcambra Comment #1 Comments pcambra 28.9 KB 1986606-comments_admin_views-2.patch #2",
+    "textAfterTable": "View ] Here's a very initial take, listing has been exported to views and added some bulk operations. TODO's Add operations edit link (it's throwing an error). Add count for unapproved comments on the top. \"Unapproved comments (5)\" Tweak bulk operations form: unpublish & delete Update tests Expose some filters by default? Log in or register to post comments Comment #3 pcambra CreditAttribution: pcambra commented June 2, 2013 at 2:14pm Status: Needs work \u00bb Needs review Status File Size new interdiff.txt 17.61 KB new 1986606-comments_admin_views-3.patch 31.38 KB FAILED: [[SimpleTest]]: [MySQL] 56,119 pass(es), 3 fail(s), and 0 exception(s). [ View ]",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

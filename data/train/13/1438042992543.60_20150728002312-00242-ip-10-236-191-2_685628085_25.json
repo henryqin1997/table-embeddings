@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Tag",
+            "%Cl(xpos,ypos,maxwidth,maxheight,[horizontal alignment],[vertical alignment])",
+            "%Cd",
+            "%C"
+        ],
+        [
+            "Description",
+            "Define the picture settings. More details. Horizontal alignment can be 'l', 'r', or 'c', for left, right and center. Vertical alignment can be 't', 'b', or 'c', for top, bottom and center.",
+            "Display the album art bitmap. More details",
+            "Use in a conditional to check if album art has been loaded"
+        ]
+    ],
+    "pageTitle": "CustomWPS < Main < Wiki",
+    "title": "",
+    "url": "http://www.rockbox.org/wiki/CustomWPS?sortcol=0%3btable=28%3bup=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00242-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 685655007,
+    "recordOffset": 685628085,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Conditional Viewports Any viewport can be conditionally displayed with minor changes to the above syntax. The width and height values may also be negative which means almost the same as above (e.g. %V(50,-,-50,-,-) will go from 50 to 170 on a 220-pixel display). The x, y, width and height value may be specified as percentages, the actual value will be calculated from the target's display at load time. Percentage parameters can be mixed with normal ones. Percentages can carry upto 1 fractional digit for increased precision. Example: %V(10.5%,10,80%,80,-) The x and y values may be negative which means \"pixels from the far edge\".. i.e x == -50 means 50 pixels from the right edge default shade (2bit lcd's) is black FG on white BG default colour (16 bit lcd's) is the theme colours default font is the user font default width/height is the remaining part of the screen Only the x and y values need to be specified. The rest can be left empty if you want to use their default values (use '-' to achieve this, e.g. %V(0,0,-,-,1)). Viewports cannot be layered transparently over one another. Subsequent viewport definitions will be drawn over any other viewports already drawn onto that area of the screen. If any viewports are defined, you cannot display text in the default viewport (use it for images only)",
+    "textAfterTable": "The conditional viewport display tag must come before the preload tag. Info Viewport (Base Skin (.sbs) only) Tag Description %Vi(label,....) This viewport is used as Custom UI Viewport in case the theme doesn't have a ui viewport set in the theme.cfg. Using '-' for the label means it is used by default. Having this is strongly recommended since it makes you able to use Custom Status Bars with other themes. If label is set this viewport can be selectivly used as the Info Viewport using the %%VI tag %VI(label) Set the Info Viewport to use the viewport labeled label LCD type Colour values Mono no colours. tag ignored Greyscale in the range 0 (= black) to 3 (= white) Colour 6-digit RGB888 colours - e.g. FF00FF",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

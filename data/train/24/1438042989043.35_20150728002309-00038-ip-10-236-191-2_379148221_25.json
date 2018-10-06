@@ -1,0 +1,30 @@
+{
+    "relation": [
+        [
+            "Related Topic",
+            "IPv6 network management and security topics",
+            "IPv6 Command Reference"
+        ],
+        [
+            "Document Title",
+            "IPv6 Configuration Library, Cisco IOS XE Release 3SE (Catalyst 3850 Switches) http:/\u200b/\u200bwww.cisco.com/\u200ben/\u200bUS/\u200bdocs/\u200bios-xml/\u200bios/\u200bipv6/\u200bconfig_library/\u200bxe-3se/\u200b3850/\u200bipv6-xe-3se-3850-library.html",
+            "IPv6 Command Reference, Cisco IOS XE Release 3SE (Catalyst 3850 Switches) http:/\u200b/\u200bwww.cisco.com/\u200ben/\u200bUS/\u200bdocs/\u200bios-xml/\u200bios/\u200bipv6/\u200bcommand/\u200bipv6-xe-3se-3850-cr-book.html"
+        ]
+    ],
+    "pageTitle": "Consolidated Platform Configuration Guide, Cisco IOS XE Release 3.3SE (Cisco WLC 5700 Series) - Configuring IPv6 First Hop Security [Cisco 5700 Series Wireless LAN Controllers] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/wireless/controller/5700/software/release/3se/consolidated_guide/configuration_guide/b_multi_3se_5700_cg/b_multi_3se_5700_cg_chapter_01011010.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989043.35/warc/CC-MAIN-20150728002309-00038-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 379180115,
+    "recordOffset": 379148221,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Related Documents Additional References Confirms that the policy is attached to the specified VLANs without exiting the configuration mode. \u00a0 do show running-config Example: Controller#(config-if)# do show running-config \u00a0 Step\u00a04 Attaches the IPv6 Neighbor Discovery policy to the specified VLANs across all switch and stack interfaces. The default policy is attached if the attach-policy option is not used. The default policy is, device-role client, no trusted-port. \u00a0 \u00a0 ipv6 dhcp guard [attach-policy policy_name] Example: Controller(config-vlan-config)#ipv6 dhcp guard attach-policy example_policy Step\u00a03     Specifies the VLANs to which the IPv6 Snooping policy will be attached ; enters the VLAN interface configuration mode. \u00a0  vlan configuration vlan_list  Example: Controller(config)# vlan configuration 334  \u00a0  Step\u00a02     Enters the global configuration mode. \u00a0  configure terminal  Example: Controller# configure terminal \u00a0  Step\u00a01",
+    "textAfterTable": "Error Message Decoder Description Link To help you research and resolve system error messages in this release, use the Error Message Decoder tool. https:/\u200b/\u200bwww.cisco.com/\u200bcgi-bin/\u200bSupport/\u200bErrordecoder/\u200bindex.cgi Technical Assistance Description Link The Cisco Support website provides extensive online resources, including documentation and tools for troubleshooting and resolving technical issues with Cisco products and technologies. To receive security and technical information about your products, you can subscribe to various services, such as the Product Alert Tool (accessed from Field Notices), the Cisco Technical Services Newsletter, and Really Simple Syndication (RSS) Feeds. Access to most tools on the Cisco Support website requires a Cisco.com user ID and password. http:/\u200b/\u200bwww.cisco.com/\u200bsupport",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

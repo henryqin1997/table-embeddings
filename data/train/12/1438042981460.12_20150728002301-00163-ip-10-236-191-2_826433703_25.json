@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Characteristic",
+            "Superclass Role:",
+            "Related Concepts:",
+            "Supported States and Properties:",
+            "Inherited States and Properties:",
+            "Name From:",
+            "Accessible Name Required:"
+        ],
+        [
+            "Value",
+            "command",
+            "HTML link",
+            "aria-expanded (state)",
+            "aria-atomic aria-busy (state) aria-controls aria-describedby aria-disabled (state) aria-dropeffect aria-flowto aria-grabbed (state) aria-haspopup aria-hidden (state) aria-invalid (state) aria-label aria-labelledby aria-live aria-owns aria-relevant",
+            "contents author",
+            "True"
+        ]
+    ],
+    "pageTitle": "Accessible Rich Internet Applications (WAI-ARIA) 1.0",
+    "title": "Characteristics of link",
+    "url": "http://www.w3.org/TR/wai-aria/complete",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00163-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 826544259,
+    "recordOffset": 826433703,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampBeforeTable": "{152413=Copyright \u00a9 2008-2014 W3C\u00ae (MIT, ERCIM, Keio, Beihang), All Rights Reserved. W3C liability, trademark and document use rules apply., 88996=Normative sections provide requirements that authors, user agents, and assistive technologies MUST follow for an implementation to conform to this specification. The keywords MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, RECOMMENDED, MAY, and OPTIONAL in this document are to be interpreted as described in Keywords for use in RFCs to indicate requirement levels [RFC2119]. RFC-2119 keywords are formatted in uppercase and contained in a strong element with class=\"rfc2119\". When the keywords shown above are used, but do not share this format, they do not convey formal information in the RFC 2119 sense, and are merely explanatory, i.e., informative. As much as possible, such usages are avoided in this specification., 147768=This document was produced by a group operating under the 5 February 2004 W3C Patent Policy. W3C maintains a public list of any patent disclosures made in connection with the deliverables of the group; that page also includes instructions for disclosing a patent. An individual who has actual knowledge of a patent which the individual believes contains Essential Claim(s) must disclose the information in accordance with section 6 of the W3C Patent Policy.}",
+    "lastModified": "Mon, 24 Mar 2014 14:46:48 GMT",
+    "textBeforeTable": "Note: Elements with the role alert have an implicit aria-live value of assertive, and an implicit aria-atomic value of true. Alerts are assertive live regions and will be processed as such by assistive technologies. Neither authors nor user agents are required to set or manage focus to them in order for them to be processed. Since alerts are not required to receive focus, content authors SHOULD NOT require users to close an alert. If the operating system allows, the user agent SHOULD fire a system alert event through the accessibility API when the WAI-ARIA alert is created. If an alert requires focus to close the alert, then content authors SHOULD use alertdialog instead. Alerts are used to convey messages to alert the user. In the case of audio warnings this is an accessible alternative for a hearing-impaired user. The alert role goes on the node containing the alert message. Alerts are specialized forms of the status role, which will be processed as an atomic live region. A message with important, and usually time-sensitive, information. See related alertdialog and status. # alert (role) A browser or application window. window (abstract role) An interactive component of a graphical user interface (GUI).",
+    "textAfterTable": "alertdialog (role) # A type of dialog that contains an alert message, where initial focus goes to an element within the dialog. See related alert and dialog. Alert dialogs are used to convey messages to alert the user. The alertdialog role goes on the node containing both the alert message and the rest of the dialog. Content authors SHOULD make alert dialogs modal by ensuring that, while the alertdialog is shown, keyboard and mouse interactions only operate within the dialog. Unlike alert, alertdialog can receive a response from the user. For example, to confirm that the user understands the alert being generated. When the alert dialog is displayed, authors SHOULD set focus to an active element within the alert dialog, such as a form edit field or an OK button. The user agent SHOULD fire a system alert event through the accessibility API when the alert is created, provided one is specified by the intended accessibility API. Authors SHOULD use aria-describedby on an alertdialog to point to the alert message element in the dialog. If they do not, assistive technologies will resort to their internal recovery mechanism to determine the contents of an alert message. Characteristics of alertdialog Characteristic Value",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Item",
+            "Login name",
+            "Group identifier",
+            "Home directory",
+            "Login shell"
+        ],
+        [
+            "Description",
+            "You can use any name for the user. This guide refers to the user as the oracle user.",
+            "The primary group of the oracle user must have write permission for the oraInventory directory. You can use any name for the group. This guide uses the name oinstall.",
+            "The home directory for the oracle user can be consistent with the home directories of other users.",
+            "The default login shell can be the C, Bourne, or Korn shell."
+        ]
+    ],
+    "pageTitle": "Requirements",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B19375_07/doc/frs/install/B19314_02/reqs.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00118-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 80589775,
+    "recordOffset": 80562713,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{44975=ports 1830-1849 required for Oracle Enterprise Manager (agent), 50680=kernel-default-2.6.5-7.97, 142583=If a database listener is using port 1521, you may be able to use it for the metadata repository database., 142698=If another application is using port 1521, stop it or configure it to use a different port. Alternatively, you can change the database listener to use a port other than 1521, but you can do this only after installation. See the Oracle Application Server Administrator's Guide for details., 44871=ports 1812-1829 required for Oracle Enterprise Manager (console), 90991=The ports for Oracle HTTP Server Listen and SSL Listen can be any available port. The example uses ports 81 and 444. These port numbers do not have to be less than 1024. If you select port numbers less than 1024, start Oracle HTTP Server and OracleAS Web Cache as the root user., 50613=kernel-bigsmp-2.6.5-7.97, 33042=kernel-hugemem-2.6.9-11.EL, 26110=kernel-2.4.21-20.EL, 106095=Set it to 2.4.19 on Linux Red Hat 3.0 systems., 69222=By default, the installer configures Oracle HTTP Server to use port 7777, not port 80. Port 7777 is the default port because on UNIX, components that use port numbers lower than 1024 require additional steps to be done as the root user before the components can run. Because the installer does not have root access, it has to use a port greater than 1024., 32980=kernel-smp-2.6.9-11.EL, 26238=kernel-hugemem-2.4.21-20.EL, 79167=If you use a port number less than 1024 for a component, you must run the component as the root user., 79313=If you use a port number less than 1024 for a component, the installer will not be able to start up the component at the end of installation. You may need to configure the component first before starting it. See the appropriate component documentation for details., 26172=kernel-smp-2.4.21-20.EL, 142337=The installer displays a warning if port 1521 is in use by any application, including database listeners of any version. You must stop the application using port 1521, then click Retry in the warning dialog box., 40825=If the kernel version contains the string 2.4.21, SP3 is installed. SP3 is certified for Oracle Application Server 10g Forms and Reports Services 10g Release 2 (10.1.2)., 32922=kernel-2.6.9-11.EL, 142258=Port 1521, 50748=kernel-smp-2.6.5-7.97, 45077=ports 1850-1869 required for Oracle Enterprise Manager (RMI)}",
+    "lastModified": "Wed, 25 Jan 2006 21:16:40 GMT",
+    "textBeforeTable": "Table 3-7 Properties of the Operating System User Who Runs the Installer If you do not already have a user for installing Oracle products, create a user with the properties listed in Table 3-7. If the computer contains other Oracle products, then it means that you may already have an operating system user. Check the /etc/oraInst.loc file. This file lists the location of the inventory directory and the group that owns it. If this file does not exist, it means that no Oracle products are installed on your computer. The inventory directory, which is used by the installer for all Oracle products ORACLE_HOME, which contains files for the product you are installing Create an operating system user to install and upgrade Oracle products. The operating system user running the installer must have write permission for the following directories: 3.7 Operating System User If you are not sure whether an inventory directory already exists on the computer, check the /etc/oraInst.loc file. This file lists the location of the inventory directory and the group that owns it. If this file does not exist, it means that no Oracle products are installed on the computer.",
+    "textAfterTable": "Note:Use the oracle user only for installing and maintaining Oracle products. Never use the oracle user for purposes unrelated to the installer. Do not use root as the oracle user. Creating a Local Operating System User To create a local operating system user: To create the oracle user, enter a command similar to the following: # /usr/sbin/useradd -g oinstall -G dba[,oper] oracle In this command: The -g option specifies the primary group, which must be the Oracle Inventory group, for example oinstall The -G option specifies the secondary groups, which must include the OSDBA group and if required, the OSOPER group, for example dba or dba,oper Set the password of the oracle user: # passwd oracle The local operating system user has been created. To check the groups to which an operating system user belongs, run the groups command with the name",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,41 @@
+{
+    "relation": [
+        [
+            "Task",
+            "Configure the PCM environment",
+            "Run batch services"
+        ],
+        [
+            "Required RM Right",
+            "PCM.Admin.Manager",
+            "PCM.Admin.Manager"
+        ],
+        [
+            "Requestor",
+            "",
+            ""
+        ],
+        [
+            "Admin",
+            "X",
+            "X"
+        ]
+    ],
+    "pageTitle": "B Summary of Security Rights and Roles",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E14571_01/doc.1111/e10640/e02_securitymatrix.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00191-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73532917,
+    "recordOffset": 73522335,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 13 May 2015 05:14:30 GMT",
+    "textBeforeTable": "The following table describes the default rights assigned to the default roles for tasks involving triggers. B.1.1 Triggers The default roles are rma (User), rmalocalrecordsofficer (Officer), and rmaadmin (Admin). This section describes the default rights and roles for tasks encountered while using Oracle URM. B.1 Rights and Roles for Oracle URM \"Physical Content Management Rights and Roles\" \"Rights and Roles for Oracle URM\" This chapter describes the following topics: This chapter provides tables that show the default rights assigned to default roles for different functions in the product. The information here is the same as that described in \"Security Classifications Tasks and Defaults for Predefined Roles\". It is merely presented in a different manner. B Summary of Security Rights and Roles 21/24 Skip Headers-->",
+    "textAfterTable": "X Edit a trigger Admin.Triggers \u00a0 X X Delete a trigger Admin.Triggers and Delete permission for the trigger's security group. The Delete permission is not granted by default. \u00a0 X X B.1.2 Periods The following table describes the default rights assigned to the default roles for tasks involving periods. Task Required RM Right User Officer Admin View information about periods Admin.Triggers or Admin.RecordManager \u00a0 X X Create a period Admin.RecordManager \u00a0 \u00a0 X Edit a custom period Admin.RecordManager \u00a0 \u00a0 X Delete a custom period Admin.RecordManager \u00a0 \u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

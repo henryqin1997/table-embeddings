@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Hardware",
+            "Neo 1973",
+            "FreeRunner",
+            "GTA04",
+            "HTC-Dream",
+            "Other"
+        ],
+        [
+            "Works",
+            "?",
+            "yes",
+            "?",
+            "?",
+            "yes"
+        ]
+    ],
+    "pageTitle": "Distributions - Openmoko",
+    "title": "",
+    "url": "http://wiki.openmoko.org/index.php?title=Distributions&diff=91668&oldid=84032",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00039-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 264474623,
+    "recordOffset": 264448840,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{25868=According to a survey from March 2010 SHR is by far the most used distribution (59%), followed by Debian (10%), QtMoko (9%), Android (8%), Hackable:1 (5%) and Qt Extended Improved (4%)., 55953=As of release 12.2, Slackware is now officially supported on the Neo Freerunner [1] --djdas 15:54, 13 June 2009 (UTC)There aren't any confirmations of ArmedSlack running on Freerunner either on the website or the official ML, do you have any link pointing on that? --User:Ajh 22:11, 22 April 2010 (UTC) Wrote preliminary installation instructions on my user page., 50245=On 5th March 2009 Qt Software released Qt Extended 4.4.3. On 3rd March 2009 Qt Software announced that Qt Extended 4.4.3 would be the last release of the Qt Extended product. Prior to version 4.3, Qt Extended was known as Qtopia., 58174=FDOM was a distribution based on Om 2008, updated with many ready-to-use applications and with fixes posted in the mailing lists., 91504=Hackable1 is a community distribution for hackable devices like the Neo Freerunner. It is based on Debian and 2007.2 userland which has been abandoned by Openmoko. It follows the GNOME mobile platform., 53932=SHR is a community driven distribution. It contains some basic EFL based applications which make use of the FSO. There currently is an EFL (with elementary) dialer, messages and contacts application programmed in C, as well as a nice Settings-GUI in Python. As of April 12th, 2009, there is no stable release of this distribution yet, as the SHR team doesn't feel it to be good enough. You can find images though on the SHR buildhost.}",
+    "textBeforeTable": "[edit] Android [edit] Overview Marketing Mistakes and pre-installed distributions. Upgrade path between these distributions are mostly not tested, thus updating by changing the feeds will most likely end in broken packages or even an unbootable system. It is advisable to reflash the whole filesystem with dfu-util to switch between the different distributions, with the reminder that a dual-boot setup (e.g. via MicroSD or NFS) can be used. Most of these distributions also have package repositories. It is a BAD idea to feed from another distribution's repository. E.g. see installing alien packages. Most distributions use the same bootloader, kernel, drivers and hardware. Therefore, the same low level bugs are commonly found in all distributions. Stable in the FreeRunner world does not mean the same thing as stable in the Debian world. [edit] Please note According to a survey from March 2010 SHR is by far the most used distribution (59%), followed by Debian (10%), QtMoko (9%), Android (8%), Hackable:1 (5%) and Qt Extended Improved (4%). [edit] Popularity Besides, some",
+    "textAfterTable": "Android is a software stack for mobile devices developed by the The Open Handset Alliance. Openmoko is fully supporting Android running on the Freerunner. Android Cupcake is stable and usable on the FreeRunner as an everyday phone. Froyo is also available but there are, however, still some caveats. Check out the main Android-on-Freerunner project page for all details. Main article: Android [edit] Debian Hardware Works Neo 1973 yes FreeRunner yes GTA04 ? HTC-Dream yes Other yes Debian is \"the universal operating system\". It comes with thousands and thousands of packages (most of them designed for desktops or servers so far). So in the words of Joachim \"nomeata\" Breitner from the pkg-fso team, this is not really a distribution in the Openmoko sense of the word, but rather a different underlying system for Openmoko distributions. At the moment, we ship the software from the FSO stack, but hopefully we\u2019ll also have, for example, the SHR software in our archive.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

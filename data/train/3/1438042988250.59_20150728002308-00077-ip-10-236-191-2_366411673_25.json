@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4"
+        ],
+        [
+            "Command or Action",
+            "UCS-A# scope fc-storage",
+            "UCS-A /fc-storage # scope vsan vsan-name vsan-id fcoe-id",
+            "UCS-A /fc-storage/vsan # set default-zoning disabled",
+            "UCS-A /fc-storage/vsan # commit-buffer"
+        ],
+        [
+            "Purpose",
+            "Enters Fibre Channel storage mode.",
+            "Enters Fibre Channel storage VSAN mode.",
+            "Disables default zoning. When default zoning is disabled, all traffic is denied among members of the default zone.",
+            "Commits the transaction."
+        ]
+    ],
+    "pageTitle": "Cisco UCS Manager CLI Configuration Guide, Release 2.0 - Configuring Ports and Port Channels [Cisco UCS Manager] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/unified_computing/ucs/sw/cli/config/guide/2-0/b_UCSM_CLI_Configuration_Guide_2_0/b_UCSM_CLI_Configuration_Guide_2_0_chapter_0101.html?referring_site=smartnavRD",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988250.59/warc/CC-MAIN-20150728002308-00077-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 366443715,
+    "recordOffset": 366411673,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{190631=The following example disables fabric channel member port 1 31 on fabric port channel 1025 and commits the transaction:, 177630=When you configure the links between the Cisco UCS 2200 Series IOM and a Cisco UCS 6200 series fabric interconnect in fabric port channel mode, the available VIF namespace on the adapter varies depending on where the IOM uplinks are connected to the fabric interconnect ports., 94891=The following example disables default zoning for a VSAN called accounting with VSAN ID 2112 and FCoE VSAN ID 4021 and commits the transaction:, 91093=The following example enables default zoning for a VSAN called accounting with VSAN ID 2112 and FCoE VSAN ID 4021 and commits the transaction:}",
+    "textBeforeTable": "Procedure In the Cisco UCS Manager CLI, there are no new commands to support Unified Ports. Instead, you change the port mode by scoping to the mode for the desired port type and then creating a new interface. When you create a new interface for an already configured slot ID and port ID, UCS Manager deletes the previously configured interface and creates a new one. If a port mode change is required because you configure a port that previously operated in Ethernet port mode to a port type in Fibre Channel port mode, UCS Manager notes the change. Changing the port mode on either module can cause an interruption in data traffic because changes to the fixed module require a reboot of the fabric interconnect and changes on an expansion module require a reboot of that module. If the Cisco UCS domain has a cluster configuration that is set up for high availability and servers with service profiles that are configured for failover, traffic fails over to the other fabric interconnect and data traffic is not interrupted when the port mode is changed on the fixed module. Caution Configuring the Port Mode A standalone configuration has only one fabric interconnect. After you make port changes to the fixed module, the fabric",
+    "textAfterTable": "For configuring Ethernet SPAN ports. eth-uplink For configuring Ethernet uplink ports. fc-storage For configuring Fibre Channel storage ports. fc-traffic-mon For configuring Fibre Channel SPAN ports. fc-uplink For configuring Fibre Channel uplink ports and Fibre Channel uplink port channels. \u00a0 Step\u00a02 UCS-A /port-type-mode # scope fabric {a | b}\u00a0 Enters the specified port type mode for the specified fabric. \u00a0 Step\u00a03 UCS-A /port-type-mode/fabric # create interface slot-id port-id\u00a0 Creates an interface for the specified port type. If you are changing the port type from Ethernet port mode to Fibre Channel port mode, or vice-versa, the following warning appears: Warning: This operation will change the port mode (from Ethernet to FC or vice-versa). When committed, this change will require the module to restart. \u00a0 Step\u00a04 Create new interfaces for other ports belonging to the Ethernet or Fibre Channel port block.\u00a0 There are several restrictions that govern how Ethernet and Fibre Channel ports can be arranged on a fixed or expansion module. Among other restrictions, it",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

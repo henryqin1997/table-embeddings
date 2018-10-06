@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "file",
+            "/var/www/html/reunionposts.org/www/_packages/zebra_database/Zebra_Database.php",
+            "/var/www/html/reunionposts.org/www/sites/front/pages/reunions.php",
+            "/var/www/html/reunionposts.org/www/sites/front/pages/reunions.php",
+            "/var/www/html/reunionposts.org/www/sites/front/pages/reunions.php"
+        ],
+        [
+            "function",
+            "query()",
+            "select()",
+            "BuildContent()",
+            "__construct()"
+        ],
+        [
+            "line",
+            "2664",
+            "471",
+            "48",
+            "604"
+        ]
+    ],
+    "pageTitle": "West High School Alumni Class Reunion Anchorage Eagles",
+    "title": "",
+    "url": "http://www.reunionposts.org/6353/west-anchorage-alaska-ak-alumni-class-reunion",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 225,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00336-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 693542875,
+    "recordOffset": 693513632,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{63113=Copyright \u00a9 2015 ReunionPosts.org ReunionPosts.org is an affiliate of AlumniClass.com.}",
+    "textBeforeTable": "close all to the top backtrace affected rows: 0 execution time: 0.550 ms (0.30%) 'utf8_general_ci' COLLATE 'utf8' NAMES SET 001 globals unsuccessful queries: 0 successful queries: 57\u00a0(180.718 ms)",
+    "textAfterTable": "002 SELECT s . * , si .products_added , su .uri FROM schools s LEFT JOIN school_info si ON si .school_id = s .id LEFT JOIN school_uris su ON su .id = s .id WHERE s .id = '6353' execution time: 0.789 ms (0.44%) returned rows: 1 explain backtrace to the top close all id name type_id headline_id no_formatting mascot slogan state city country primarycolor bgcolor url direct_url aa_url sports_url alumni_page_check school_site_check school_site_check_eml memprice memprice_lifetime memprice_annual memprice_old membership_type annual_fee annual_fee_commence total_members visits link_status batch reunion_status show_notice show_stats ssa_block ac_block colors_added membership_email apparel_email apparel_email2 school_email reunion_email trial_mode alt_reg campaign_emails no_emails last_reunion_notice flagged v2 products_added uri 6353 west 1 1 0 Eagles Home of the eagles AK anchorage 1 #000000 #FFA500",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

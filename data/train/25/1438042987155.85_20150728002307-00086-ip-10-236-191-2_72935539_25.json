@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "Base Table PK",
+            "DMLTYPE$$"
+        ],
+        [
+            "Definition",
+            "The primary key of the parent base table.",
+            "This can have the values 'I' for insert, 'D' for delete, or 'U' for Update."
+        ]
+    ],
+    "pageTitle": "Synchronization",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E12095_01/doc.10303/e12090/sync.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00086-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73021691,
+    "recordOffset": 72935539,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{128561=Section 2.4.1.12, \"Modifying a Publication Item\", 37144=The operations for each publication item are processed according to table weight. The publication creator assigns the table weight to publication items within a specific publication. This value can be an integer between 1 and 1023. For example, a publication can have more than one publication item of weight \"2\" which would have INSERT operations performed after those for any publication item of a lower weight within the same publication. You define the order weight for tables when you add a publication item to the publication. See Section 2.4.1.7.2, \"Using Table Weight\" for more information., 128668=Section 2.4.1.13, \"Callback Customization for DML Operations\", 304265=Create a custom DML procedure. See Section 2.4.1.13, \"Callback Customization for DML Operations\" for an example of how to create a custom DML procedure., 128424=Section 2.4.1.11, \"Bringing the Data From the Subscription Down to the Client\", 375396=In the normal synchronization process, when the compose phase is completed, all clients that have data in the Out Queue are notified to download the data. If, for example, you have 2000 clients, having all 2000 clients request a download at the same time could overrun your server and cause a performance issue. In this scenario, you could take control of the notification process and notify 100 clients at a time over the span of a couple of hours. This way, all of the clients receive the data in a timely fashion and your server is not overrun., 251001=The AfterSyncMapCleanup procedure is called at the end of the map cleanup. If you set any parameters in the BeforeSyncMapCleanup callback, you can set them back to the original settings in this procedure. See Section 2.7.1.10, \"BeforeSyncMapCleanup\" for more information., 160772=Specify the time (PARAM_START_TIME) for an automatic synchronization to start. The format of time is standard date string: H24:MI:SS e.g. 00:00:00 or 23:59:00 The time is GMT. If not set, the synchronization starts when the Sync Agent starts and all other conditions are satisfied Set the period (PARAM_PERIOD), in seconds, to specify the frequency of scheduled synchronization events., 173524=See Section 2.4.1.12, \"Modifying a Publication Item\" for details on how to change the definition., 243292=Section 2.7.1.12, \"Example Using the Customize Package\", 73462=Select Specify Time if you want to automatically synchronize at a specific hour, such as 8:00 AM, everyday., 128788=Section 2.4.1.14, \"Restricting Predicate\", 243194=Section 2.7.1.11, \"AfterSyncMapCleanup\", 243406=Section 2.7.1.13, \"Error Handling For CUSTOMIZE Package\", 35969=If this parameter is set to 1000, Oracle Database Lite calls commits for every 1000 inserts. This value should be more than 100. The default value for auto_commit_count is 250 records on WINCE; this variable is not valid on WIN32 and LINUX platforms., 196648=A restricting predicate can be assigned to a publication item as it is added to a publication.The predicate is used to limit data downloaded to the client. The parameter, which is for advanced use, can be null. For using a restricting predicate, see Section 1.2.10 \"Priority-Based Replication\" in the Oracle Database Lite Troubleshooting and Tuning Guide., 128317=Section 2.4.1.10, \"Instantiate the Subscription\", 243095=Section 2.7.1.10, \"BeforeSyncMapCleanup\"}",
+    "lastModified": "Mon, 01 Feb 2010 23:16:12 GMT",
+    "textBeforeTable": "getBaseTableDMLLogName View Structure Parameters Table 2-21 The parameters for getBaseTableDMLLogName view structure are listed in Table 2-21: <Base Table PK> DMLTYPE$$ You can embed the returned value into dynamic SQL statements. There may be multiple physical logs if the publication item has multiple base tables. The parent base table physical primary key corresponds to the primary key of the publication item. The structure of the log is as follows:  The base table name. baseTable The schema name of the base table owner. owner Definition Parameter Table 2-20 getBaseTableDMLLogName Parameters The parameters for getBaseTableDMLLogName are listed in Table 2-20: public string getBaseTableDMLLogName(String owner, String baseTable) Returns the name for the physical DML log table or",
+    "textAfterTable": "2.6.3.9 Retrieve View of the Map Table With the getMapView Method Returns a view of the map table which can be used in a dynamic SQL statement and contains a primary key list for each client device. The view can be an inline view. public String getMapView() throws Throwable The structure of the map table view is as follows: CLID$$CS <Pub Item PK> DMLTYPE$$ The parameters of the map table view are listed in Table 2-22: Table 2-22 getMapView View Structure Parameters Parameter Definition CLID$$CS This is the client ID column. Base Table PK The primary key columns of the publication item. DMLTYPE$$",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

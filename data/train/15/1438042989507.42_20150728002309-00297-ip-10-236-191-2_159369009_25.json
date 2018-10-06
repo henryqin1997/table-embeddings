@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Violation",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Message",
+            "Missing a Javadoc comment.",
+            "Missing a Javadoc comment.",
+            "Missing a Javadoc comment.",
+            "Missing a Javadoc comment."
+        ],
+        [
+            "Line",
+            "32",
+            "34",
+            "37",
+            "39"
+        ]
+    ],
+    "pageTitle": "Checkstyle Results",
+    "title": "",
+    "url": "http://maven.apache.org/plugins-archives/maven-shade-plugin-2.0/checkstyle.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989507.42/warc/CC-MAIN-20150728002309-00297-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 159377695,
+    "recordOffset": 159369009,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 04 Dec 2012 08:36:58 GMT",
+    "textBeforeTable": "Summary The following document contains the results of Checkstyle.\u00a0 Checkstyle Results Thanks Sponsoring Apache Foundation How Apache Works ASF Wagon Surefire Skins Shared Components SCM Plugins Maven 2 & 3 Maven 1.x JXR Doxia Archetype Ant Tasks Maven Projects Plugin Documentation Sonar FindBugs Report Test JavaDocs JavaDocs Tag List Source Xref Test Source Xref Cobertura Test Coverage CPD Report PMD Report Checkstyle Surefire Report Project Reports Project Information Project Documentation Using an other Shader implementation",
+    "textAfterTable": "org/apache/maven/plugins/shade/DefaultShader.java 0 1 6 org/apache/maven/plugins/shade/ShadeRequest.java 0 12 0 org/apache/maven/plugins/shade/Shader.java 1 0 0 org/apache/maven/plugins/shade/filter/Filter.java 0 3 0 org/apache/maven/plugins/shade/filter/MinijarFilter.java 0 8 3 org/apache/maven/plugins/shade/filter/SimpleFilter.java 0 5 0 org/apache/maven/plugins/shade/mojo/ArchiveFilter.java 0 3 0 org/apache/maven/plugins/shade/mojo/ArtifactSet.java 0 2 0 org/apache/maven/plugins/shade/mojo/PackageRelocation.java 0 5 0 org/apache/maven/plugins/shade/mojo/RelativizePath.java 0 0 18 org/apache/maven/plugins/shade/mojo/ShadeMojo.java 0 6 7 org/apache/maven/plugins/shade/pom/MavenJDOMWriter.java 0 293 1 org/apache/maven/plugins/shade/pom/PomWriter.java 0 2 0 org/apache/maven/plugins/shade/relocation/Relocator.java 1 5 2 org/apache/maven/plugins/shade/relocation/SimpleRelocator.java 0 7 7 org/apache/maven/plugins/shade/resource/ApacheLicenseResourceTransformer.java 0 4 0 org/apache/maven/plugins/shade/resource/ApacheNoticeResourceTransformer.java 0 4 0 org/apache/maven/plugins/shade/resource/AppendingTransformer.java 0 5 0 org/apache/maven/plugins/shade/resource/ComponentsXmlResourceTransformer.java 1 4 0 org/apache/maven/plugins/shade/resource/DontIncludeResourceTransformer.java 0 5 0 org/apache/maven/plugins/shade/resource/IncludeResourceTransformer.java 0 5 0 org/apache/maven/plugins/shade/resource/ManifestResourceTransformer.java 0 4 1 org/apache/maven/plugins/shade/resource/ResourceTransformer.java 0 4 0 org/apache/maven/plugins/shade/resource/ServicesResourceTransformer.java 0 4 0 org/apache/maven/plugins/shade/resource/XmlAppendingTransformer.java 1 5 0 Rules Rules Violations Severity FileLength 1 \u00a0Error RegexpHeader headerFile: \"target/checkstyle-header.txt\" 1 \u00a0Error FileTabCharacter eachLine: \"true\" 5 \u00a0Error",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

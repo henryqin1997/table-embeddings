@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "file_version",
+            "current_version",
+            "file",
+            "prefix"
+        ],
+        [
+            "parameter version of the file",
+            "version from which mapping begins (you want to use VERSION_PARAMETER for this in most cases)",
+            "file to load from",
+            "prefix for members"
+        ]
+    ],
+    "pageTitle": "SHOGUN: CSparseFeatures< ST > Class Template Reference",
+    "title": "",
+    "url": "http://www.shogun-toolbox.org/doc/en/2.0.1/classshogun_1_1CSparseFeatures.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00245-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 709714555,
+    "recordOffset": 709684882,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{68633=Definition at line 1201 of file SGObject.cpp., 180313=Definition at line 1033 of file SGObject.cpp., 74879=Definition at line 1021 of file SparseFeatures.cpp., 137981=Definition at line 1108 of file SGObject.cpp., 209099=Definition at line 1043 of file SGObject.cpp., 210833=Definition at line 1038 of file SGObject.cpp., 197540=Definition at line 1084 of file SGObject.cpp., 181922=Definition at line 1028 of file SGObject.cpp., 140970=Definition at line 1145 of file SGObject.cpp., 139414=Definition at line 1132 of file SGObject.cpp.}",
+    "lastModified": "Fri, 16 Nov 2012 02:52:17 GMT",
+    "textBeforeTable": "Parameters: constructor \u00a0)\u00a0 size = 0 int32_t\u00a0 ( CSparseFeatures Constructor & Destructor Documentation m_subset_stack CSubsetStack *\u00a0 feature weighting in combined dot features \u00a0 combined_weight float64_t\u00a0 feature_cache CCache< SGSparseVectorEntry < ST > > *\u00a0 array of sparse vectors of size num_vectors \u00a0 sparse_feature_matrix SGSparseVector< ST > *\u00a0 total number of features \u00a0 num_features int32_t\u00a0 total number of vectors \u00a0 num_vectors int32_t\u00a0 Protected Attributes update_parameter_hash () virtual bool\u00a0 save_serializable_post () throw (ShogunException) virtual void\u00a0 save_serializable_pre () throw (ShogunException) virtual void\u00a0 load_serializable_post",
+    "textAfterTable": "SGSparseVector< ST > *\u00a0 src, int32_t\u00a0 num_feat, int32_t\u00a0 num_vec, bool\u00a0 copy = false \u00a0 ) convenience constructor that creates sparse features from the ones passed as argument Parameters: src\u00a0 dense feature matrix num_feat\u00a0 number of features num_vec\u00a0 number of vectors copy\u00a0 true to copy feature matrix Definition at line 21 of file SparseFeatures.cpp. CSparseFeatures ( SGSparseMatrix< ST >\u00a0 sparse \u00a0)\u00a0 convenience constructor that creates sparse features from sparse features Parameters: sparse\u00a0 sparse matrix Definition at line 37 of file SparseFeatures.cpp.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

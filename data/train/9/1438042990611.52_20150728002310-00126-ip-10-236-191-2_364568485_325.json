@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Release",
+            "Release 3.8.0",
+            "Release 3.9.0"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "The Usage Guidelines was updated to describe overflow detection."
+        ]
+    ],
+    "pageTitle": "Cisco IOS XR MPLS Command Reference for the Cisco CRS Router, Release 4.3.x - MPLS Traffic Engineering Commands [Cisco Carrier Routing System] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/crs/software/crs_r4-3/mpls/command/reference/b_mpls_cr43xcrs/b_mpls_cr43crs_chapter_011.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 325,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990611.52/warc/CC-MAIN-20150728002310-00126-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 364683143,
+    "recordOffset": 364568485,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{6768=Frequency, in minutes, for the automatic bandwidth application. The range is from 5 to 10080 (7 days). The default is 1440., 530225=Time, in milliseconds, between sending hello keep alive message. Range is 100 to 21845., 7183=minutes : 1440 (24 hours), 10414=The following example shows how to configure application frequency to 1000 minutes for MPLS-TE interface 1:, 554303=The following example shows how configure the LMP router ID for IPv4 address 172.24.20.164:, 739218=Path option number. Range is from 1 to 1000., 719727=Specifies a path setup option to protect a path. The range is from 1 to 1000., 242481=The following example shows how to set the destination address for tunnel-te1 to 10.10.10.10:, 530572=Time, in milliseconds, to wait without receiving a hello from the neighbor before declaring the IPCC down again. Range is 100 to 21845., 719373=Path option number. Range is from 1 to 1000., 120636=In the following example, backup tunnel 2 is used by LSPs that take their bandwidth from the sub-pool (class-type 1 tunnels) only. Backup tunnel 2 provides bandwidth protection for up to 1000 units.}",
+    "textBeforeTable": "Syntax Description bandwidth ] minimum [ min percentage adjustment-threshold no bandwidth ] minimum [ min percentage adjustment-threshold To configure the tunnel bandwidth change threshold to trigger an adjustment, use the adjustment-threshold command in MPLS-TE automatic bandwidth interface configuration mode. To disable this feature, use the no form of this command. adjustment-threshold (MPLS-TE) tunnel-id (auto-tunnel backup) topology holddown sigerr (MPLS-TE) timeout (soft-preemption) timers removal unused (auto-tunnel backup) timers loose-path (MPLS-TE) switching transit (GMPLS) switching endpoint (GMPLS) switching (GMPLS) srlg soft-preemption snmp traps mpls traffic-eng signalling advertise explicit-null (MPLS-TE) signalled-name signalled-bandwidth show srlg show mpls traffic-eng link-management soft-preemption show mpls traffic-eng tunnels auto-bw brief show mpls traffic-eng tunnels show mpls traffic-eng topology show mpls traffic-eng preemption log show mpls traffic-eng pce tunnels show mpls traffic-eng pce peer show mpls traffic-eng maximum tunnels show mpls traffic-eng lmp show mpls traffic-eng link-management summary show mpls traffic-eng link-management statistics show mpls traffic-eng link-management interfaces",
+    "textAfterTable": "percentage: 5 minimum bandwidth: 10 Command Modes MPLS-TE automatic bandwidth interface configuration Command History Release Modification Release 3.8.0 This command was introduced. Usage Guidelines To use this command, you must be in a user group associated with a task group that includes appropriate task IDs. If the user group assignment is preventing you from using a command, contact your AAA administrator for assistance. If you configure or modify the adjustment threshold while the automatic bandwidth is already running, the next band-aids application is impacted for that tunnel. The new adjustment threshold determines if an actual bandwidth takes place. Examples The following example configures the tunnel bandwidth change threshold to trigger an adjustment:  RP/0/RP0/CPU0:router# configure RP/0/RP0/CPU0:router(config)# interface tunnel-te 1 RP/0/RP0/CPU0:router(config-if)# auto-bw RP/0/RP0/CPU0:router(config-if-tunte-autobw)# adjustment-threshold 20 min 500 Related Commands",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

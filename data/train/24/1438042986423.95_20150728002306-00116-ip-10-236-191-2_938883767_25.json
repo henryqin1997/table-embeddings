@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Name",
+            "secretKey",
+            "consumerKey",
+            "sharedSecret"
+        ],
+        [
+            "Type",
+            "string",
+            "string",
+            "string"
+        ],
+        [
+            "Argument",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Description",
+            "If using oAuth your app's secret. Must be used with auth.consumerKey",
+            "If using oAuth, your app's consumer key. Must be used with auth.secretKey",
+            "If using shared secrets, your shared secret"
+        ]
+    ],
+    "pageTitle": "parsely",
+    "title": "",
+    "url": "https://www.npmjs.com/package/parsely",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00116-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 938893799,
+    "recordOffset": 938883767,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Parameters: Returns a list of posts, authors, section topics or tags depending on specified type. Docs: analytics/{type} <static> byType(type, opts, auth, cb) \u2192 {object} analytics.js , lineno 3 Source: API npm\u00a0install cd\u00a0node-parsely git\u00a0clone\u00a0https://github.com/toddself/node-parsely  Development  }); \u00a0\u00a0console.log(data); \u00a0\u00a0} \u00a0\u00a0\u00a0\u00a0console.log(err); \u00a0\u00a0if(err){ parsely.analytics.byType('query',\u00a0'posts',\u00a0{days:\u00a01",
+    "textAfterTable": "days string <optional> Number of days since today to consider for _hits value. Defaults to 3. period_start mixed <optional> Period of data to cover. Must supply opts.period_end as well period_end mixed <optional> Period of data to cover, cannot be in the future. Must use opts.period_start as well. pub_date_state mixed <optional> Start date of content publication to consider. Must use opts.pub_date_end as well. pub_date_end mixed <optional> End date of content publication to consider. Must use opts.pub_date_start as well. sort string <optional> Sort value. Defaults to _hits limit string <optional> Number of records to retrieve, detauls to 10 page string <optional> Page number of results set, defaults to 1 auth object <optional> Authorization information. If not using, pass in null or undefined Properties Name Type Argument Description secretKey string <optional> If using oAuth your app's secret. Must be used with auth.consumerKey consumerKey string <optional> If using oAuth, your app's consumer key. Must be used with auth.secretKey sharedSecret string",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

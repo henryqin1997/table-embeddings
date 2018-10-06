@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Aug 16, 2007",
+            "Aug 18, 2009",
+            "Dec 22, 2009",
+            "May 10, 2011",
+            "Jun 9, 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "RF",
+            "CC",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Reissue application filed",
+            "Certificate of correction",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: CLINICAL DECISION SUPPORT, LLC, TENNESSEE Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:FIRST OPINION CORPORATION;REEL/FRAME:019716/0845 Effective date: 20070730",
+            "Effective date: 20090324",
+            "",
+            "Year of fee payment: 4",
+            "Owner name: SUNTRUST BANK, AS ADMINISTRATIVE AGENT, GEORGIA Free format text: SECURITY AGREEMENT;ASSIGNORS:HEALTHWAYS, INC.;CLINICAL DECISION SUPPORT, LLC;HEALTHHONORS, LLC;REEL/FRAME:028349/0418 Effective date: 20120608"
+        ]
+    ],
+    "pageTitle": "Patent US7297111 - Computerized medical diagnostic and treatment advice system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7297111?dq=U.S.+Patent+No.+4,528,643",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00277-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 479532379,
+    "recordOffset": 479428763,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6675=At the completion of the evaluation process 254, treatment table process 256, or future process 280, the system 100 loops back to state 344 and recites the system selection menu to the caller. If the caller chooses the End Call selection at state 344, the MDATA system 100 moves to a decision state 345. At decision state 345, the system 100 determines if process 254, process 256, or process 280 did not occur in Information mode. i.e., did occur in either Real mode or Pending Mode, and examines the patient's symbol table to determine if any of the configured memory variables are past medical history conditions that need to be saved to the patient's medical history file. If both conditions are true at state 345, the system 100 advances to a decision state 346 to determine if the consultation is being performed in Real mode. If not, the consultation is being performed in Pending mode. and the system 100 then writes any new patient information obtained during the consultation to the Pending file 269. If state 346 proves to be true, i.e., Real mode, for each past medical condition that needs to be saved, the MDATA system 100 asks the patient at state 348 to grant permission to save the datum to the patient's medical history file and to confirm that the datum is correct. For example, during a consultation for cough, the MDATA system 100 learned that the patient has been diagnosed as being HIV positive. The system 100 will ask. \u201cMay I record the information about your HIV diagnosis in your medical record?\u201d If the patient responds \u201cyes\u201d, then the system 100 will ask, \u201cPlease verify that your diagnosis for HIV was positive, is this correct?\u201d If the patient responds \u201cyes\u201d, then the system 100 writes this fact to the patient's medical history file. After confirmation, each data item is stored in the patient's file in the patient medical history database 268 (FIG. 6).}",
+    "TableContextTimeStampAfterTable": "{284248=Here the meta function will find the number of complaints of headaches that occurred between Jun. 1, 1993 and Dec. 31, 1993., 285182=Here the meta function will find the number of complaints that were found to be caused by bacterial infection between Jun. 1, 1993 and Dec. 31, 1993. The problems (complaints) caused by bacterial infection could be in different parts of the body., 50226=This application is a divisional of U.S. patent application Ser. No. 10/371,873, filed Feb. 20, 2003, entitled COMPUTERIZED MEDICAL DIAGNOSTIC AND TREATMENT ADVICE SYSTEM, which is a divisional of U.S. patent application Ser. No. 09/265,226, filed Mar. 8, 1999, now U.S. Pat. No. 6,748,353, issued Jun. 8, 2004, entitled AUTHORING LANGUAGE TRANSLATOR OF MEDICAL DATA BASED ON PARSING A PROGRAM COMPRISED OF NODES AND LISTS, which is a divisional of U.S. patent application Ser. No. 08/176,041, filed Dec. 29, 1993, now U.S. Pat. No. 5,660,176, issued Aug. 26, 1997, entitled COMPUTERIZED MEDICAL DIAGNOSTIC AND TREATMENT ADVICE SYSTEM, which is related to U.S. application Ser. No. 08/176,857, filed Dec. 29, 1993, for \u201cCOMPUTERIZED MEDICAL DIAGNOSTIC SYSTEM INCLUDING META FUNCTION\u201d, now U.S. Pat. No. 5,724,968, issued Mar. 10, 1998, and U.S. application Ser. No. 08/176,858, filed Dec. 29, 1993, for \u201cCOMPUTERIZED MEDICAL DIAGNOSTIC SYSTEM INCLUDING RE-ENTER FUNCTION AND SENSITIVITY FACTORS\u201d, now U.S. Pat. No. 5,594,638, issued Jan. 14, 1997, each of which is also hereby incorporated by reference., 294098=The meta function counts the number of complaints of headache between Jun. 1, 1993 and Dec. 31, 1993. If the number of complaints found (MC) is greater than or equal to 3. then the evaluation process branches to node 100; otherwise it branches to node 101., 320503=A \u201ctele-stethoscope\u201d 780 is a device that allows the sounds a physician would hear through a stethoscope to be transmitted over the telephone. The tele-stethoscope 780 is functionally similar to that described in the 1992 Arthur D. Little report entitled \u201cTelecommunications: Can It Help Solve America's Health Care Problems?\u201d. The tele-stethoscope 780 permits the MDATA system 100 to greatly expand the spectrum of its sound analyses to include heart murmurs, the bruits of intracranial aneurysms, breathing sounds like the wheezes of asthma and the rales of congestive heart failure, or even the bowel sounds of an intestinal obstruction., 284585=Here the meta function will find the number of complaints involving the gastro-intestinal system between Jun. 1, 1993 and Dec. 31, 1993. For example, if a patient consulted the MDATA system 100 once for abdominal pain, once for vomiting, and once for diarrhea, but each on a different occasion, the system would recognize that these are all problems involving the gastrointestinal tract., 227731=At the completion of state 1006, i.e., the voice sample passes, the computer 102 continues process 276 at state 1005 wherein the operating mode is set to Real. The system 100 then advises the caller at state 1007 that new patient information will be saved to the patient's medical record., 285637=Here the meta function will find the number of complaints of headache that were found to be caused by infection between Jun. 1, 1993 and Dec. 31, 1993.}",
+    "textBeforeTable": "Patent Citations While the above detailed description has shown, described and pointed out the fundamental novel features of the invention as applied to various embodiments, it will be understood that various omissions and substitutions and changes in the form and details of the device illustrated may be made by those skilled in the art, without departing from the spirit of the invention. When possible, the MDATA system 100 takes into account the past medical history of the patient, especially those pieces of information learned from past consultations with the MDATA system 100, before advice is given. In addition, the advice given is different depending upon the age and sex of the patient. The \u201cmeta\u201d functions provide another advantage by allowing the MDATA system 100 to evaluate a problem in the context of the patient's prior consultations with the system. An exact record of the questions asked and the answers given is stored in the patient's database. The MDATA system time-and-date stamps the responses to the questions (as transaction records) so that an exact reconstruction of the patient's interview(s) can be generated for use by a physician or other health care professional. The system also keeps a record of what version of an algorithm has been consulted as well as the sensitivity factor set for that consultation. At the conclusion of the interaction, the MDATA system can tell the patient how long the consultation has taken",
+    "textAfterTable": "US4712562 Oct 1, 1986 Dec 15, 1987 Jacques J. Ohayon Outpatient monitoring systems US4733354 * Nov 23, 1984 Mar 22, 1988 Brian Potter Method and apparatus for automated medical diagnosis using decision tree analysis US4825869 Sep 28, 1987 May 2, 1989 Telectronics N.V. System for automatically performing a clinical assessment of an implanted pacer based on information that is telemetrically received US4838275 Jul 20, 1987 Jun 13, 1989 Lee Arnold St J Home medical surveillance system US4839822 Aug 13, 1987 Jun 13, 1989 501 Synthes (U.S.A.) Computer system and method for suggesting treatments for physical trauma US4868763 Feb 17, 1987 Sep 19, 1989 Hitachi, Ltd. Knowledge-based system having plural processors US4945476 Feb 26, 1988 Jul 31, 1990 Elsevier Science Publishing Company, Inc. Interactive system and method for creating and editing a knowledge base for use as a computerized aid to the cognitive process of diagnosis US4962491 Feb 12,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

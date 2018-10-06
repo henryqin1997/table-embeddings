@@ -1,0 +1,30 @@
+{
+    "relation": [
+        [
+            "Category",
+            "Forums",
+            "Blogs"
+        ],
+        [
+            "Links",
+            "Visual Studio Visualization & Modeling Tools",
+            "Visual Studio ALM + Team Foundation Server Blog Dependency Graphs and DGML How to Understand Your Code Using Dependency Graphs, Sequence Diagrams, and the Architecture Explorer What are Dependency Graph Analyzers?"
+        ]
+    ],
+    "pageTitle": "Visualize Code Dependencies on Dependency Graphs",
+    "title": "",
+    "url": "https://msdn.microsoft.com/en-us/library/dd409453(d=printer,v=vs.110)",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00159-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 884281979,
+    "recordOffset": 884253400,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Visualize specific dependencies in your solution: In Solution Explorer, select items that interest you. You can select projects, assembly references, folders, files, types, and their members. To find a specific item, use the Solution Explorer search box. On the Solution Explorer toolbar, choose Create a new graph document . - or - Drag the items from Solution Explorer to an existing graph. Get an overview of your solution: On the Architecture menu, choose Generate Dependency Graph, For Solution. You get a graph that shows the top-level assemblies. You can now explore these assemblies by expanding them. Move the mouse pointer on top of an assembly, and then choose the chevron (^) button when it appears. Do the same for namespaces, types, and members to continue exploring your code. To see dependencies across groups, choose an item on the graph. For more information, see Get an overview of your solution. You can also run analyzers to find potential problems in your code. See Find Potential Problems in Code on Dependency Graphs. How",
+    "textAfterTable": "Dependency graphs provide a visual way for you to examine code and understand its dependencies without having to look through files and lines of code. You can see items and relationships as just nodes and links, or arrows. For example, suppose you have a code review to perform. You have a set of files that contain pending changes. You can visualize the code and dependencies for those changes by creating a dependency graph from those files. See Visualize specific dependencies in your solution. By default, container relationships are represented as groups, which you can expand and collapse. Tip The Refetch Children button lets you retrieve group members that exist in code but don't appear on the graph. We've also applied a different style to the Calls links so you can see it more easily. See Edit and Customize Dependency Graphs. You can also view container relationships as links. Open the shortcut menu for the graph, choose Group, Turn Off Grouping: You can also run analyzers to find potential problems in your code. See Find Potential Problems in",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

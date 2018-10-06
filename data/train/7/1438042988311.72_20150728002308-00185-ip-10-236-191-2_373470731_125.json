@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Release",
+            "15.2(2)E",
+            "Cisco IOS XE 3.6E"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "This command was integrated into the Cisco IOS XE 3.6E release."
+        ]
+    ],
+    "pageTitle": "Cisco IOS IP Addressing Services Command Reference - show ip masks through vrf DHCP pool [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipaddr/command/ipaddr-cr-book/ipaddr-s1.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00185-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 373600315,
+    "recordOffset": 373470731,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{13837=created 00:00:12, 791509=area 1 sham-link 10.43.43.43 10.23.23.23 cost 10, 788309=Routes tagged with the route-target import 100:1 are imported into VRF vpn3., 788038=Routes tagged with route-target export 100:1 are exported from VRF vpn3., 846879=IP uses a 32-bit mask that indicates which address bits belong to the network and subnetwork fields, and which bits belong to the host field. This range of IP addresses is called a netmask. By default, show commands display an IP address and then its netmask in dotted decimal notation. For example, a subnet would be displayed as 131.108.11.55 255.255.255.0., 489207=IPv6 network number to include in router advertisements. This argument must be in the form documented in RFC 2373 where the address is specified in hexadecimal using 16-bit values between colons., 543899=(Optional) Year. Valid values are from 1993 to 2035., 792603=10.23.23.23 is the IP address of the destination PE router., 14160=expire 01:59:47, 435130=(Optional) IPv6 network number to include in router advertisements. This argument must be in the form documented in RFC 2373 where the address is specified in hexadecimal using 16-bit values between colons., 423286=(Optional) IPv6 network number to include in router advertisements. This argument must be in the form documented in RFC 2373 where the address is specified in hexadecimal using 16-bit values between colons., 543582=(Optional) Month of the year. Valid values are from January to December., 922528=Associating a pool with a VRF allows overlapping addresses with other pools that are not on the same VRF. Only one pool can be associated with each VRF. If the pool is configured with the origin dhcp command or origin aaa command, the VRF information is sent in the subnet request. If the VRF is configured with an RFC 2685 VPN ID, the VPN ID will be sent instead of the VRF name., 8684=1 to 1000, 798036=An IPv6 address. The ipv6-address argument must be in the form documented in RFC 2373 where the address is specified in hexadecimal using 16-bit values between colons., 787507=route-target export 100:1, 787542=route-target import 100:1, 525698=Month of the year. Valid values are from January to December., 847366=However, you can specify that the display of the network mask appear in hexadecimal format or bit count format instead. The hexadecimal format is commonly used on UNIX systems. The previous example would be displayed as 131.108.11.55 0XFFFFFF00., 787201=rd 100:1, 526004=Year. Valid values are from 1993 to 2035.}",
+    "textBeforeTable": "Syntax Description address masks ip show To display the masks used for network addresses and the number of subnets using each mask, use the show ip masks command in EXEC mode. show ip masks vrf (DHCPv6 pool) vrf (DHCP pool) view (DNS) utilization mark low utilization mark high update dns update arp trusted-port (DHCPv6 Guard) timers hellotime term ip netmask-format subnet prefix-length source-interface (mDNS) snmp-server enable traps dhcp sip domain-name sip address show running-config vrf show running-config mdns-sd service-list show running-config mdns-sd service-instance show running-config mdns-sd policy show redundancy application transport show redundancy application protocol show redundancy application if-mgr show redundancy application group show redundancy application faults group show redundancy application data-interface show redundancy application control-interface group show platform software trace message show platform hardware qfp feature alg statistics sip show platform hardware qfp feature show nhrp group-map show nhrp",
+    "textAfterTable": "Command History Release Modification 10.0 This command was introduced. 12.2(33)SRA This command was integrated into Cisco IOS Release 12.2(33)SRA. 12.2SX This command is supported in the Cisco IOS Release 12.2SX train. Support in a specific 12.2SX release of this train depends on your feature set, platform, and platform hardware. Usage Guidelines The show ip masks command is useful for debugging when a variable-length subnet mask (VLSM) is used. It shows the number of masks associated with the network and the number of routes for each mask. Examples The following is sample output from the show ip masks command:  Router# show ip masks 172.16.0.0 Mask Reference count 255.255.255.255 2 255.255.255.0 3 255.255.0.0 1 show ip nat limits all-host",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

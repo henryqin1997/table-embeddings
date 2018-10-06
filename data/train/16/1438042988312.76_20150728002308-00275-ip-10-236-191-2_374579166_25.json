@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6",
+            "Step 7",
+            "Step 8"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Device> enable",
+            "configure terminal Example: Device# configure terminal",
+            "ethernet cfm domain domain-name level level-id Example: Device(config)# ethernet cfm domain ServiceProvider level 4",
+            "mep crosscheck mpid id vlan vlan-id [mac mac-address] Example: Device(config-ether-cfm)# mep crosscheck mpid 402 vlan 100",
+            "exit Example: Device(config-ether-cfm)# exit#",
+            "ethernet cfm mep crosscheck start-delay delay Example: Device(config)# ethernet cfm mep crosscheck start-delay 60",
+            "exit Example: Device(config)# exit",
+            "ethernet cfm mep crosscheck {enable | disable} level {level-id | level-id-level-id [,level-id-level-id]} vlan {vlan-id | any | vlan-id-vlan-id [,vlan-id-vlan-id]} Example: Device# ethernet cfm mep crosscheck enable level 4 vlan 100"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Defines a CFM domain at a specified level and enters Ethernet CFM configuration mode.",
+            "Statically defines a remote MEP on a specified VLAN within the domain.",
+            "Returns to global configuration mode.",
+            "Configures the maximum amount of time that the device waits for remote MEPs to come up before the cross-check operation is started",
+            "Returns to privileged EXEC mode.",
+            "Enables cross-checking between remote MEPs in the domain and MEPs learned through CCMs."
+        ]
+    ],
+    "pageTitle": "Carrier Ethernet Configuration Guide, Cisco IOS XE Release 3S (Cisco ASR 900 Series) - Configuring Ethernet Connectivity Fault Management in a Service Provider Network [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/cether/configuration/xe-3s/asr903/ce-xe-3s-asr903-book/ce-cfm.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988312.76/warc/CC-MAIN-20150728002308-00275-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 374640891,
+    "recordOffset": 374579166,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{588330=ITU-T Y.1731 OAM Mechanisms for Ethernet-Based Networks}",
+    "textBeforeTable": "DETAILED STEPS 6.\u00a0\u00a0\u00a0 Determine customer MEPs. 5.\u00a0\u00a0\u00a0 Determine customer MIPs. 4.\u00a0\u00a0\u00a0 Determine service provider MEPs. 3.\u00a0\u00a0\u00a0 Determine service provider MIPs. 2.\u00a0\u00a0\u00a0 Determine operator level MEPs. 1.\u00a0\u00a0\u00a0 Determine operator level MIPs. SUMMARY STEPS Determination of whether the domain should be inward or outward. Assignment of maintenance levels and names to domains based on agreement between the service provider and operator or operators. Determination of the nesting and disjoint maintenance domains. Determination of the number of maintenance domains in the network. Agreement by all organizational entities on the responsibilities, roles, and restrictions for each organizational entity. Understanding of the type and scale of services to be offered. Understanding of organizational entities involved in managing the network; for example, operators, service providers, network operations centers (NOCs), and customer service centers. Knowledge and understanding of the network topology. Before You Begin",
+    "textAfterTable": "Step\u00a06 Determine customer MEPs. \u00a0 Customer MEPs are on customer equipment. Assign an outward facing MEP within an outward domain at the appropriate customer level at the handoff between the service provider and the customer. \u00a0 Examples The figure below shows an example of a network with a service provider and two operators, A and B. Three domains are to be established to map to each operator and the service provider. In this example, for simplicity we assume that the network uses Ethernet transport end to end. CFM, however, can be used with other transports. What to Do Next After you have defined the Ethernet CFM domains, configure Ethernet CFM functionality by first provisioning the network and then provisioning service. Configuring Ethernet CFM Configuring Ethernet CFM consists of the following tasks: Provisioning the Network Provisioning Service Configuring and Enabling the Cross-Check Function Configuring CFM over Bridge Domains Troubleshooting Tips",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

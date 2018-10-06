@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Property",
+            "bubbles",
+            "cancelable",
+            "currentTarget",
+            "target"
+        ],
+        [
+            "Value",
+            "false",
+            "false; there is no default behavior to cancel.",
+            "The object that is actively processing the Event object with an event listener.",
+            "The LoaderInfo object associated with the SWF file being unloaded or replaced."
+        ]
+    ],
+    "pageTitle": "LoaderInfo - Adobe ActionScript\u00ae 3 (AS3 ) API Reference",
+    "title": "",
+    "url": "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/LoaderInfo.html?allClasses=1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00243-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 109536223,
+    "recordOffset": 109513352,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "This event has the following properties: complete event object. type property of a Event.COMPLETE constant defines the value of the Dispatched when data has loaded successfully. In other words, it is dispatched when all the content has been downloaded and the loading has finished. The complete event is always dispatched after the init event. The init event is dispatched when the object is ready to access, though the content may still be downloading. The AIR 1.0, Flash Player 9, Flash Lite 4 Runtime Versions:\u00a0 ActionScript 3.0 Language Version:\u00a0 flash.events.Event.COMPLETEproperty Event.type = flash.events.EventEvent Object Type: Event complete Event Detail SecurityError \u2014 The caller is not running in the local trusted sandbox. Throws LoaderInfo \u2014 The associated LoaderInfo object. Returns null when called in non-debugger builds (or when debugging is not enabled) or if the referenced object does not have an associated LoaderInfo object (such as some objects used by the AIR runtime). Returns",
+    "textAfterTable": "Related API Elements Loader.load() httpStatus Event \u00a0 Event Object Type: flash.events.HTTPStatusEvent property HTTPStatusEvent.type = flash.events.HTTPStatusEvent.HTTP_STATUS Language Version:\u00a0 ActionScript 3.0 Runtime Versions:\u00a0 AIR 1.0, Flash Player 9, Flash Lite 4 Dispatched when a network request is made over HTTP and an HTTP status code can be detected. The HTTPStatusEvent.HTTP_STATUS constant defines the value of the type property of a httpStatus event object. This event has the following properties: Property Value bubbles false cancelable false; there is no default behavior to cancel. currentTarget The object that is actively processing the Event object with an event listener. status The HTTP status code returned by the server. target The network object receiving an HTTP status code. Related API Elements Loader.load() init Event \u00a0 Event Object Type: flash.events.Event property Event.type = flash.events.Event.INIT",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

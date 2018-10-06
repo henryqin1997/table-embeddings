@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Command",
+            "show atm pvc",
+            "show atm vc",
+            "show atm vp",
+            "show connect",
+            "show frame-relay pvc",
+            "show interfaces",
+            "show l2tun session",
+            "show mpls l2transport binding",
+            "show mpls l2transport vc"
+        ],
+        [
+            "Description",
+            "Displays all ATM PVCs and traffic information.",
+            "Displays all ATM PVCs and SVCs and traffic information.",
+            "Displays the statistics for all VPs on an interface or for a specific VP.",
+            "Displays configuration information about drop-and-insert connections that have been configured on a router.",
+            "Displays statistics about PVCs for Frame Relay interfaces.",
+            "Displays statistics for all interfaces configured on the router or access server.",
+            "Displays the current state of Layer 2 sessions and protocol information about L2TP control channels.",
+            "Displays VC label binding information.",
+            "Displays information about AToM VCs that have been enabled to route Layer 2 packets on a router."
+        ]
+    ],
+    "pageTitle": "Cisco IOS Multiprotocol Label Switching Command Reference - show mpls oam echo statistics through switching tlv [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/mpls/command/mp-cr-book/mp-s3.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 225,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00324-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 385337559,
+    "recordOffset": 385195328,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{506769=Cisco 3660, 3845, 7200, 7400, 7500, Cisco ASR 903 Series Routers, and Cisco ASR 1000 Series Routers, 461930=Displays the EFP information in slot 0 of a Cisco ASR 1000 Series Aggregation Services Router\u2019s ESP., 457549=The show platform software ethernet f1 efp command displays the EFP information in slot 1 of a Cisco ASR 1000 Series Aggregation Services Router's ESP, irrespective of whether the slot is in the active state or the standby state., 452031=To display the Ethernet Flow Point (EFP) information in slot 1 of a Cisco ASR 1000 Series Aggregation Services Router\u2019s embedded service processor (ESP), use the show platform software ethernet f1 efp command in privileged EXEC mode., 842497=default RD 100:1, 993453=Alternatively, an integer from 1300 to 1999 that specifies a list of IP addresses in the expanded range of standard access list numbers that are allowed to use the community string to gain access to the SNMP agent., 451378=Displays the EFP information in slot 1 of a Cisco ASR 1000 Series Aggregation Services Router\u2019s ESP., 731278=route-target export 100:3 route-target import 100:3, 620475=According to the output from the show interfaces command for the serial 2/0 interface, the interface has a bandwidth (BW) of 2048 kbps., 505887=This command was modified. The pseudowire interface type was added on Cisco 1000 Series Routers., 446590=This command was introduced on the Cisco ASR 1000 Series Aggregation Services Routers., 621081=20 % * 2048 kbps = 409600 bps, 502572=This command was integrated into Cisco IOS XE Release 2.1 and was implemented on the Cisco ASR 1000 series router., 999711=This command was introduced on Cisco ASR 1000 Aggregation Series Routers., 441476=To display the Ethernet Flow Point (EFP) information in slot 0 of a Cisco ASR 1000 Series Aggregation Services Router\u2019s embedded service processor (ESP), use the show platform software ethernet f0 efp command in privileged EXEC mode., 730971=rd 100:3, 735627=area 1 sham-link 10.43.43.43 10.23.23.23 cost 10, 413463=Tunnel 1001, 634957=As of Cisco IOS Release 12.2(31)SB2, matching packets on the basis of VLAN ID numbers is supported on the Catalyst 1000 platform only., 467168=This command was introduced on the Cisco ASR 1000 Series Aggregation Services Routers., 446997=The show platform software ethernet f0 efp command displays the EFP information in slot 0 of a Cisco ASR 1000 Series Aggregation Services Router\u2019s ESP, irrespective of whether the slot is in the active state or the standby state., 579397=The following sample output from the show policy-map interface command displays the statistics for the Serial2/0 interface, to which a policy map called \u201cpolicy1\u201d is attached. The discarding action has been specified for all the packets belonging to a class called \u201cc1.\u201d In this example, 32000 bps of traffic is sent (\u201coffered\u201d) to the class and all of them are dropped. Therefore, the drop rate shows 32000 bps., 843120=RT:100:1, 622787=40 % * 2048 kbps = 819200 bps}",
+    "textBeforeTable": "Syntax Description [summary] statistics echo oam mpls show To display statistics about Multiprotocol Label Switching (MPLS) Operation, Administration, and Maintenance (OAM) echo request packets, use the show mpls oam echo statistics command in privileged EXEC mode. show mpls oam echo statistics switching tlv switching-point status redundancy status protocol notification static status control-plane route-watch status (pseudowire class) spanning-tree mst configuration spanning-tree mode source template type pseudowire snmp-server host snmp-server group snmp-server enable traps mpls vpn snmp-server enable traps mpls traffic-eng snmp-server enable traps mpls rfc vpn snmp-server enable traps mpls rfc ldp snmp-server enable traps mpls p2mp-traffic-eng snmp-server enable traps mpls ldp snmp-server enable traps (MPLS) snmp-server community snmp mib mpls vpn signaling protocol shutdown (mpls) show xtagatm vc show xtagatm cross-connect show xtagatm cos-bandwidth-allocation show xconnect show vrf show vfi show tech-support mpls show spanning-tree mst show",
+    "textAfterTable": "This command was integrated into Cisco IOS Release 12.2(31)SB2. 12.2(33)SXI This command was integrated into Cisco IOS Release 12.2(33)SXI. Usage Guidelines You can use theshow mpls oam echo statistics command to display the following: Currently configured TLV version for MPLS OAM operations. Return code distribution among the received MPLS echo reply packets. Statistics of sent and received MPLS echo packets, and counts of incomplete packet dispatches and timed out MPLS echo requests. If you enter the summary keyword, the Echo Reply count shows all the echo reply packets, regardless of whether they are valid responses to a sent request packet. Therefore, the number of return codes will not match the number of echo reply packets received. Examples The following example displays sample detailed output when the summary keyword is not specified:  Router# show mpls oam echo statistics  Cisco TLV version: RFC 4379 Compliant Return code distribution: !--Success (3) - 5 B--Unlabeled output interface (9) - 0 D--DS map",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

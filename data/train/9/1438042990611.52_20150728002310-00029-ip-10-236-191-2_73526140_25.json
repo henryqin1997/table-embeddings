@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Column Name",
+            "PRODUCT_ID",
+            "AD_ID",
+            "AD_COMPOSITE",
+            "AD_SOURCETEXT",
+            "AD_FINALTEXT",
+            "AD_FLTEXTN",
+            "AD_TEXTDOCS_NTAB",
+            "AD_PHOTO",
+            "AD_GRAPHIC",
+            "AD_HEADER"
+        ],
+        [
+            "Null?",
+            "NOT NULL",
+            "NOT NULL",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Type",
+            "NUMBER(6)",
+            "NUMBER(6)",
+            "BLOB",
+            "CLOB",
+            "CLOB",
+            "NCLOBO",
+            "TEXTDOC_TAB",
+            "BLOB",
+            "BINARY FILE LOB",
+            "ADHEADER_TYP"
+        ]
+    ],
+    "pageTitle": "Sample Schema Scripts and Object Descriptions",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/server.112/e10831/scripts.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990611.52/warc/CC-MAIN-20150728002310-00029-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73549503,
+    "recordOffset": 73526140,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 14 Aug 2010 15:00:53 GMT",
+    "textBeforeTable": "Table 5-22 PM.PRINT_MEDIA Table Description ORDSYS.ORDDOC \u00a0 PRODUCT_TESTIMONIALS CLOB \u00a0 PRODUCT_TEXT ORDSYS.ORDAUDIO \u00a0 PRODUCT_AUDIO ORDSYS.ORDVIDEO \u00a0 PRODUCT_VIDEO ORDSYS.ORDIMAGE \u00a0 PRODUCT_THUMBNAIL ORDSYS.ORDIMAGESIGNATURE This type, ORDImageSignature, is deprecated; do not use it in new code. Existing occurrences of this object type will continue to function as in the past. \u00a0 PRODUCT_PHOTO_SIGNATURE ORDSYS.ORDIMAGE \u00a0 PRODUCT_PHOTO NUMBER(6) NOT NULL PRODUCT_ID Type Null? Column Name",
+    "textAfterTable": "IX Schema This section lists the names of the scripts that create the Information Exchange (IX) schema group and describes the objects in the schemas. Table 5-23 lists the IX scripts in alphabetical order, while Table 5-24 lists its objects. Table 5-23 Information Exchange (IX) Schema Scripts Script Name Description cix_v3.sql Creates the IX schema objects dix_v3.sql Drops the IX schema objects ix_main.sql Main script for the IX schema; calls other scripts vix_v3.sql Enables, disables, and verifies IX objects Table 5-24 IX Objects",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

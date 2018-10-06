@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Ada",
+            "C++",
+            "MACRO-32",
+            "SCAN"
+        ],
+        [
+            "BASIC",
+            "COBOL",
+            "Pascal",
+            ""
+        ],
+        [
+            "BLISS",
+            "DIBOL",
+            "PL/I",
+            ""
+        ],
+        [
+            "C",
+            "Fortran",
+            "RPG II",
+            ""
+        ]
+    ],
+    "pageTitle": "HP OpenVMS systems documentation",
+    "title": "",
+    "url": "http://h71000.www7.hp.com/doc/82final/4538/4538pro_063.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988840.31/warc/CC-MAIN-20150728002308-00264-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 110560910,
+    "recordOffset": 110552708,
+    "tableOrientation": "VERTICAL",
+    "textBeforeTable": "B.3.6 Specifying Program Locations and the Current Value of an Entity The following built-in symbols enable you to specify program locations and the current value of an entity: DBG> ! Treat address 5432 as hexadecimal, and operand 222 as decimal DBG> DEPOSIT/INST %HEX 5432 = 'MOVL ^O%DEC 222, R1' DBG> SYMBOLIZE %HEX 27C9E3 ! Symbolize a hexadecimal address 91 ! hexadecimal and 10 as octal DBG> EVALUATE %HEX (20+ %OCT 10 +33) ! Treat 20 and 33 as 83 DBG> EVALUATE %HEX (20+33) ! Treat both 20 and 33 as hexadecimal 65 ! Resulting value is decimal DBG> EVALUATE %HEX 20 + 33 ! Treat 20 as hexadecimal, 33 as decimal DBG> SET RADIX DECIMAL 0A DBG> EVALUATE/HEX %DEC 10 16 DBG> EVALUATE/DEC %OCT (10 + 10) 2 DBG> EVALUATE/DEC %BIN 10 32 DBG> EVALUATE/DEC %HEX (10 + 10) 16 DBG> EVALUATE/DEC %HEX 10    B.3.5 Controlling the Input Radix  The built-in symbols %BIN, %DEC, %HEX, and %OCT can be used in address expressions and language expressions to specify that an integer literal that follows (or all integer literals in a parenthesized expression that follows) should be interpreted",
+    "textAfterTable": "DBG> EXAMINE WIDTH MOD\\WIDTH: 7 DBG> DEPOSIT . = 12 DBG> EXAMINE . MOD\\WIDTH: 12 DBG> EXAMINE %CURLOC MOD\\WIDTH: 12 DBG> In the next example, the next and previous locations in an array are examined:  DBG> EXAMINE PRIMES(4) MOD\\PRIMES(4): 7 DBG> EXAMINE %NEXTLOC MOD\\PRIMES(5): 11 DBG> EXAMINE [Return] ! Examine next location MOD\\PRIMES(6): 13 DBG> EXAMINE %PREVLOC MOD\\PRIMES(5): 11 DBG> EXAMINE ^ MOD\\PRIMES(4): 7 DBG> Note that using the Return key to signify the logical successor does not apply to all contexts. For example, you cannot press the Return key after typing the command DEPOSIT to indicate the next location, but you can always use the symbol %NEXTLOC for that purpose. B.3.7 Using Symbols and Operators in Address Expressions The following list describes the symbols and operators that you can use in address expressions. A unary operator has one operand. A binary operator has two operands. Symbol Description %LABEL Specifies that the numeric literal that follows is a program label (for languages like Fortran that have numeric program labels). You can qualify the label with a pathname prefix that specifies the containing module. %LINE",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

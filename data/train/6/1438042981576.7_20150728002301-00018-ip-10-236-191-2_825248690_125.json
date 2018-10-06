@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Value",
+            "ascending",
+            "descending",
+            "none",
+            "other"
+        ],
+        [
+            "Description",
+            "Items are sorted in ascending order by this column.",
+            "Items are sorted in descending order by this column.",
+            "There is no defined sort applied to the column.",
+            "A sort algorithm other than ascending or descending has been applied."
+        ]
+    ],
+    "pageTitle": "Accessible Rich Internet Applications (WAI-ARIA) 1.1",
+    "title": "Values:",
+    "url": "http://www.w3.org/TR/2014/WD-wai-aria-1.1-20140612/",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00018-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 825373295,
+    "recordOffset": 825248690,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{194042=To comment, send email to public-pfwg-comments@w3.org (comment archive) or file an issue in W3C Bugzilla . Comments are requested by 11 July 2014. In-progress updates to the document may be viewed in the publicly visible editors' draft., 198982=Copyright \u00a9 2013-2014 W3C\u00ae (MIT, ERCIM, Keio, Beihang), All Rights Reserved. W3C liability, trademark and document use rules apply., 193087=This document was produced by a group operating under the 5 February 2004 W3C Patent Policy. W3C maintains a public list of any patent disclosures made in connection with the deliverables of the group; that page also includes instructions for disclosing a patent. An individual who has actual knowledge of a patent which the individual believes contains Essential Claim(s) must disclose the information in accordance with section 6 of the W3C Patent Policy.}",
+    "TableContextTimeStampAfterTable": "{492414=JC 2014-06-03. I don't have the same concern with \"author should\" requirements as \"author must\" requirements. When possible, native markup features for image accessibility are the best choice. This particular requirement is especially important given the concerns raised with the following UA requirements., 496738=MC 2013-09-23 There is commented out text with explanation \"Values table is redundant b/c the value type is URI\". This is true but we have discussed a significant difference between URI to another page and URI to a fragment in the current page. The values table might be a place to explain that. Though that might be awkward. Still, if we don't include the values table, it will be the only ARIA property for which we don't, so I'd want to make that decision very consciously., 102004=JC 2014-06-03. Now that 1.1 will include a table role, we need to differentiate the short descrition more sufficiently. Emphasize that grids are \"interactive\" tables that maintain a selection state., 493530=JC 2014-06-03. The previous paragraph may be at-risk. Implementors from Mozilla, Google, and Apple have expressed concern over the RFC-2119 \"SHOULD\" requirement above: If the statement remains as-is, @aria-describedat would break the ARIA pattern to not affect mainstream UI. Dominic M. mentioned that if this pattern changed, developers may become more \"suspicious of ARIA and not want to apply simple accessibility bug fixes without worrying about the implications for their design.\" Alex S. said, UI-based requirements \"should be rather part of HTML than ARIA.\", 492170=MC 2013-09-23 We have tried to minimize \"author must\" statements and should look at other ways to express the above requirements, perhaps as simple as saying \"if you don't do this it won't work\".}",
+    "lastModified": "Wed, 11 Jun 2014 14:25:54 GMT",
+    "textBeforeTable": "true/false Value: All elements of the base markup Used in Roles: Value Characteristic Characteristics: When @aria-atomic is true, assistive technologies MAY choose to combine several changes and present the entire changed region at once. If @aria-atomic is explicitly set to true, assistive technologies will present the entire contents of the element. If @aria-atomic is explicitly set to false, assistive technologies will stop searching up the ancestor chain and present only the changed node to the user. If none of the ancestors have explicitly set @aria-atomic, the default is that @aria-atomic is false, and assistive technologies will only present the changed node to the user. When the content of a live region changes, user agents SHOULD examine the changed element and traverse the ancestors to find the first element with @aria-atomic set, and apply the appropriate behavior for the cases below. Both accessibility APIs and the Document Object Model [DOM-Level-2-Core] provide events to allow the assistive technologies to determine changed areas of the document. Indicates whether assistive technologies will present all, or only parts of, the changed region based on the change notifications defined by the",
+    "textAfterTable": "Characteristics: Characteristic Value Related Concepts: XForms selection attribute in select Used in Roles: combobox textbox Value: token Values: Value Description both A list of choices appears and the currently selected suggestion also appears inline. inline The system provides text after the caret as a suggestion for how to complete the field. list A list of choices appears from which the user can choose. none No input completion suggestions are provided. aria-busy (state) Indicates whether an element, and its subtree, are currently being updated. The default is that @aria-busy is false. If authors know that multiple parts of the same element need to be loaded or modified, they can set @aria-busy to true when the first part is loaded, and then set @aria-busy to false when the last part is loaded. When a widget is missing required owned elements due to script execution or loading, authors MUST mark a",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

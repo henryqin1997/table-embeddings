@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Type",
+            "Application",
+            "Application",
+            "Application",
+            "Os",
+            "Os",
+            "Os",
+            "Os",
+            "Os",
+            "Os",
+            "Os"
+        ],
+        [
+            "Description",
+            "Microsoft Visual C++ cpe:/a:microsoft:visual_c++:2008:redistribution_pkg cpe:/a:microsoft:visual_c++:2008:sp1_redistribution_pkg cpe:/a:microsoft:visual_c++:2005:sp1_redistribution_pkg",
+            "Microsoft Visual Studio cpe:/a:microsoft:visual_studio:2008:sp1 cpe:/a:microsoft:visual_studio:2008 cpe:/a:microsoft:visual_studio:2005:sp1 cpe:/a:microsoft:visual_studio:2005:sp1:64_bit_hosted_visual_c++_tools",
+            "Microsoft Visual Studio .Net cpe:/a:microsoft:visual_studio_.net:2003:sp1",
+            "Microsoft Windows 2000 cpe:/o:microsoft:windows_2000:-:sp4",
+            "Microsoft Windows 2003 Server cpe:/o:microsoft:windows_2003_server:-:sp2:itanium cpe:/o:microsoft:windows_2003_server:-:sp2 cpe:/o:microsoft:windows_2003_server:-:sp2:x64",
+            "Microsoft Windows Server cpe:/o:microsoft:windows_server:2008:-:x64 cpe:/o:microsoft:windows_server:2008:-:x32 cpe:/o:microsoft:windows_server:2008:::itanium",
+            "Microsoft Windows Server 2003 cpe:/o:microsoft:windows_server_2003::sp2:itanium cpe:/o:microsoft:windows_server_2003::sp2:x64 cpe:/o:microsoft:windows_server_2003::sp2",
+            "Microsoft Windows Server 2008 cpe:/o:microsoft:windows_server_2008:-:sp2:itanium cpe:/o:microsoft:windows_server_2008:-:sp2:x32 cpe:/o:microsoft:windows_server_2008:-:-:x64 cpe:/o:microsoft:windows_server_2008:-:-:x32 cpe:/o:microsoft:windows_server_2008:-:sp2:x64 cpe:/o:microsoft:windows_server_2008:::itanium",
+            "Microsoft Windows Vista cpe:/o:microsoft:windows_vista:-:sp1 cpe:/o:microsoft:windows_vista:-:sp2 cpe:/o:microsoft:windows_vista:-:-:x64 cpe:/o:microsoft:windows_vista::sp1:x64 cpe:/o:microsoft:windows_vista cpe:/o:microsoft:windows_vista::sp2:x64",
+            "Microsoft Windows Xp cpe:/o:microsoft:windows_xp:-:sp2:x64 cpe:/o:microsoft:windows_xp:-:sp2 cpe:/o:microsoft:windows_xp:-:sp3 cpe:/o:microsoft:windows_xp::sp2:professional_x64"
+        ],
+        [
+            "Count",
+            "3",
+            "4",
+            "1",
+            "1",
+            "3",
+            "3",
+            "3",
+            "6",
+            "6",
+            "4"
+        ]
+    ],
+    "pageTitle": "MS09-035 - Alert Detail - Security Database",
+    "title": "",
+    "url": "http://www.security-database.com/detail.php?alert=MS09-035",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990611.52/warc/CC-MAIN-20150728002310-00223-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 704426887,
+    "recordOffset": 704381856,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{1943=Revision Note: V3.1 (July 27, 2011): Corrected the update verification information for Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package, Microsoft Visual C++ 2008 Redistributable Package, and Microsoft Visual C++ 2008 Service Pack 1 Redistributable Package. Removed the registry key information in favor of product codes. This is an informational change only.Summary: This security update addresses several privately reported vulnerabilities in the public versions of the Microsoft Active Template Library (ATL) included with Visual Studio. This security update is specifically intended for developers of components and controls. Developers who build and redistribute components and controls using ATL should install the update provided in this bulletin and follow the guidance provided to create, and distribute to their customers, components and controls that are not vulnerable to the vulnerabilities described in this security bulletin., 547060=28 July 2014, 546602=06 July 2015, 547870=Copyright Security-Database 2006-2015 - Powered by themself ;) in\u00a00.2169s\u00a0}",
+    "textBeforeTable": "Executive Summary 10- MS09-035 \u00a0 OVAL : Open Vulnerability and Assessment Language CWE : Common Weakness Enumeration CAPEC : Common Pattern Enumeration CVE : Common Vulnerability Enumeration Contacts About us About US Blog CVSS Calculator OVAL Definitions OVAL Repository CPE : Common Plateform Enumeration DPE : Default Password Enumeration CAPEC : Common Pattern Enumeration CWE : Common Weakness Enumeration vDNA : Vulnerability DNA API Documentation vDNA : Vulnerability DNA API Resources HP VMware US-CERT Gentoo Ubuntu Sun Cisco VU-CERT RedHat Mandriva Debian Microsoft (SA) Microsoft",
+    "textAfterTable": "Description: Stack-based buffer overflow in the CComVariant::ReadFromStream function in the Active Template Library (ATL), as used in the MPEG2TuneRequest ActiveX control in msvidctl.dll in DirectShow, in Microsoft Windows 2000 SP4, XP SP2 and SP3, Server 2003 SP2, Vista Gold, SP1, and SP2, and Server 2008 Gold and SP2 allows remote attackers to execute arbitrary code via a crafted web page, as exploited in the wild in July 2009, aka \"Microsoft Video ActiveX Control Vulnerability.\" Family: windows Class: vulnerability Reference(s): CVE-2008-0015 Version: 16 Platform(s): Microsoft Windows 2000 Microsoft Windows XP Microsoft Windows Server 2003 Microsoft Windows Vista Microsoft Windows Server 2008 Product(s): Microsoft Outlook Express Windows Media Player Windows ATL Component DHTML Editing Component ActiveX Control HtmlInput Object ActiveX Control Definition Synopsis: Microsoft Outlook Express 5.5 SP2 on Windows 2000 Microsoft Windows 2000 is installed AND\u00a0Microsoft Outlook Express 5.5 SP2 is installed. AND\u00a0the version of Msoe.dll is less than 5.50.5003.1000 OR\u00a0Microsoft Outlook Express 6 SP1 on Windows 2000",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

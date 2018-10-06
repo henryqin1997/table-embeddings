@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "strategy",
+            "generator"
+        ],
+        [
+            "Description",
+            "Generation strategy. Please refer to the Identity Generation Guide",
+            "Name of the generator to use if wanting to override the default DataNucleus generator for the specified strategy. Please refer to the and"
+        ],
+        [
+            "Values",
+            "auto | identity | sequence | table",
+            ""
+        ]
+    ],
+    "pageTitle": "DataNucleus - JPA XML Meta-Data",
+    "title": "",
+    "url": "http://www.datanucleus.org/products/accessplatform_3_2/jpa/metadata_xml.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00058-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 389694075,
+    "recordOffset": 389679928,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 11 Aug 2014 10:25:06 GMT",
+    "textBeforeTable": "The <sequence-generator> element (under <entity-mappings>, or <entity> or <id>) defines a generator of sequence values, for use elsewhere in this persistence-unit. Metadata for sequence-generator tag The <access> element (under <entity-mappings>) contains the setting for how to access the persistent fields/properties. This can be set to either \"FIELD\" or \"PROPERTY\". Metadata for access tag The <catalog> element (under <entity-mappings>) contains the default catalog for all classes in this file. Metadata for catalog tag The <schema> element (under <entity-mappings>) contains the default schema for all classes in this file. Metadata for schema tag The <package> element (under <entity-mappings>) contains the text defining the package into which all classes in this file belong. Metadata for package tag The <xml-mapping-metadata-complete> element (under <persistence-unit-metadata>) when specified defines that the classes in this file are fully specified with just their metadata and that any annotations should be ignored. Metadata for xml-mapping-metadata-complete tag The <description> element (<entity-mappings>) contains the text",
+    "textAfterTable": "initial-value Initial value for the sequence 1 allocation-size Number of values that the sequence allocates when needed 50 Metadata for table-generator tag The <table-generator> element (under <entity-mappings>, or <entity> or <id>) defines a generator of sequence values using a datastore table, for use elsewhere in this persistence-unit. Attribute Description Values name Name of the generator (required) table name of the table to use for sequences SEQUENCE_TABLE catalog Catalog to store the sequence table schema Schema to store the sequence table pk-column-name Name of the primary-key column in the table SEQUENCE_NAME value-column-name Name of the value column in the table NEXT_VAL pk-column-value Name of the value to use in the primary key column (for this row) {name of the class} initial-value Initial value to use in the table 0 allocation-size Number of values to allocate when needed 50 Metadata for named-query tag The <named-query> element (under <entity-mappings> or under <entity>) defines a JPQL query that will be accessible at runtime via the name. The element itself will contain the text of the query. It has",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

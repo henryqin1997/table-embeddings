@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Field Name",
+            "SubcommitteeID",
+            "CommitteeID",
+            "Subcommittee",
+            "Description"
+        ],
+        [
+            "Data Type",
+            "AutoNumber",
+            "Number",
+            "Text",
+            "Memo"
+        ],
+        [
+            "Additional Properties",
+            "Primary Key Caption: Subcommittee ID",
+            "Caption: Committee Default Value: None",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "The US Senate Database",
+    "title": "",
+    "url": "http://www.yevol.com/en/access2003/databases/ussenate1.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989043.35/warc/CC-MAIN-20150728002309-00151-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 859270832,
+    "recordOffset": 859262630,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 30 Jan 2013 21:56:10 GMT",
+    "textBeforeTable": "Create another table in Design View with the following fields: \u00a0\u00a0 Close the table Set the first religion to Unknown, the second to Mormon, the third to Jewish, the fourth to Catholic, the fifth to Baptist, and the sixth to Methodist Save it as Religions and switch it Datasheet View \u00a0 Memo Comments Field Size: 40 Default Value: \"Unknown\" Text Religion Primary Key Caption: Religion ID AutoNumber ReligionID Additional Properties Data Type Field Name Create another table in Design View with the following fields: \u00a0\u00a0 Close the table \u00a0 Separated 5 \u00a0 Widow 4 \u00a0 Divorced 3 This is for somebody who is currently married Married 2 This is for somebody who has never been married Single 1 Notes Marital Status Marital Status ID Save it as MaritalStatus and switch to Datasheet View. Fill it up as follows: \u00a0\u00a0 \u00a0 Memo Description Field Size: 20 Caption: Marital Status",
+    "textAfterTable": "State ID State State Name 1 AL Alabama 2 AK Alaska 3 AZ Arizona 4 AR Arkansas Close the table Create another table in Design View with the following fields: \u00a0\u00a0 Field Name Data Type Additional Properties CommitteeID AutoNumber Primary Key Caption: Committee ID Committee Text \u00a0 Description Memo \u00a0 Save it as Committees and switch it to Datasheet View Fill it up as follows: \u00a0\u00a0 Committee ID Committee Description 1 Agriculture, Nutrition, and Forestry \u00a0 2 Appropriations \u00a0 3 Armed Forces \u00a0 4 Banking, Housing, and Urban Affairs \u00a0 Close the table Create another table in Design View with the following fields: \u00a0\u00a0 Field Name Data Type Description Additional Properties CMStatusID AutoNumber Committee Membership Status ID",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

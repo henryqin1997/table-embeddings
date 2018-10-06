@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Feature",
+            "Hardware iSCSI Multipath",
+            "Configuring iSCSI Multipath"
+        ],
+        [
+            "Releases",
+            "4.2(1)SV1(4)",
+            "4.0(4)SV1(1)"
+        ],
+        [
+            "Feature Information",
+            "Added support for hardware iSCSI Multipath.",
+            "This feature was introduced."
+        ]
+    ],
+    "pageTitle": "Cisco Nexus 1000V System Management Configuration Guide, Release 4.2(1)SV2(2.1) - Configuring iSCSI Multipath [Cisco Nexus 1000V Switch for VMware vSphere] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus1000/sw/4_2_1_s_v_2_2_1/system_management/b_Cisco_Nexus_1000V_System_Management_Configuration_Guide_2_2_1/b_Cisco_Nexus_1000V_System_Management_Configuration_Guide_2_2_1_chapter_01110.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00304-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 374616247,
+    "recordOffset": 374588999,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The default settings in the iSCSI Multipath configuration are listed in the following table. Supported iSCSI Adapters For detailed information about how to use sn iSCSI storage area network (SAN), see the iSCSI SAN Configuration Guide. In Hardware iSCSI, one VMHBA is created for each physical NIC that supports iSCSI offload in hardware. In Software iSCSI, only one VMHBA is created for all physical NICs. Storage Binding Each Linux kernel port is pinned to the iSCSI host bus adapter (VMHBA) associated with the physical NIC to which the Linux kernel port is pinned. The ESX or ESXi host creates the following VMHBAs for the physical NICs. Uplink Pinning Each Linux kernel port created for iSCSI access is pinned to one physical NIC. This overrides any NIC teaming policy or port bundling policy. All traffic from the Linux kernel port uses only the pinned uplink to reach the upstream switch. Setting up iSCSI Multipath is accomplished in the following steps: The daemon on an KVM server communicates with the iSCSI target in multiple sessions using two or more Linux kernel NICs on the host and pinning them to physical NICs on the Cisco Nexus 1000V. Uplink",
+    "textAfterTable": "Switchport mode (port-profile) Access State (port-profile) Disabled iSCSI Multipath Setup on the VMware Switch Before enabling or configuring multipathing, networking must be configured for the software or hardware iSCSI adapter. This involves creating a Linux kernel iSCSI port for the traffic between the iSCSI adapter and the physical NIC. Uplink pinning is done manually by the admin directly on the OpenStack Controller. Storage binding is also done manually by the admin directly on the KVM host or using RCLI. For software iSCSI, only oneVMHBA is required for the entire implementation. All Linux kernel ports are bound to this adapter. For example, in the following illustration, both vmk1 and vmk2 are bound to VMHBA35. For hardware iSCSI, a separate adapter is required for each NIC. Each Linux kernel port is bound to the adapter of the physical KVM NIC to which it is pinned. For example, in the following illustration, vmk1 is bound to VMHBA33, the iSCSI adapter associated with vmnic1 and to which vmk1 is pinned. Similarly vmk2 is bound to VMHBA34. Figure 1. iSCSI Multipathing The following",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

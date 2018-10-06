@@ -1,0 +1,47 @@
+{
+    "relation": [
+        [
+            "Round",
+            "R128",
+            "R64"
+        ],
+        [
+            "Result",
+            "Win",
+            "Loss"
+        ],
+        [
+            "Opponent",
+            "Monica Niculescu (ROU)",
+            "Coco Vandeweghe (USA)"
+        ],
+        [
+            "Rank",
+            "49",
+            "37"
+        ],
+        [
+            "Score",
+            "6-4 6-1",
+            "6-4 6-4"
+        ]
+    ],
+    "pageTitle": "Players | WTA Tennis English",
+    "title": "",
+    "url": "http://www.wtatennis.com/players/player/7941/title/samantha-stosur",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00129-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 839600259,
+    "recordOffset": 839555325,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{2492=WTA // AUSTRIA // 20-Jul-2015 // $226,750 // Clay (Outdoor) // Draw: 32M/32Q/16D // Rank: 23 // Seed/Entry: 2/MD}",
+    "TableContextTimeStampAfterTable": "{47348=WTA // FRANCE // 17-May-2015 // $226,750 // Clay (Outdoor) // Draw: 32M/32Q/16D // Rank: 26 // Seed/Entry: 3/W, 64454=WTA // AUSTRALIA // 04-Jan-2015 // $876,900 // Hard (Outdoor) // Draw: 32M/32Q/16D // Rank: 21 // Seed/Entry: /MD, 61513=Grand Slam // AUSTRALIA // 19-Jan-2015 // $15,561,973 // Hard (Outdoor) // Draw: 128M/128Q/64D // Rank: 21 // Seed/Entry: 20/MD, 58537=WTA // UNITED ARAB EMIRATES // 15-Feb-2015 // $2,212,250 // Hard (Outdoor) // Draw: 64M/32Q/32D // Rank: - // Seed/Entry: /MD, 49623=WTA // ITALY // 11-May-2015 // $2,428,490 // Clay (Outdoor) // Draw: 64M/32Q/32D // Rank: 27 // Seed/Entry: /W, 40972=WTA // SWEDEN // 13-Jul-2015 // $226,750 // Clay (Outdoor) // Draw: 32M/32Q/16D // Rank: 23 // Seed/Entry: 2/MD, 55715=WTA // USA // 11-Mar-2015 // $5,219,780 // Hard (Outdoor) // Draw: 128M/64Q/32D // Rank: 25 // Seed/Entry: 21/MD, 50817=WTA // SPAIN // 02-May-2015 // $4,059,850 // Clay (Outdoor) // Draw: 64M/32Q/32D // Rank: 26 // Seed/Entry: /MD, 62985=WTA // AUSTRALIA // 11-Jan-2015 // $644,900 // Hard (Outdoor) // Draw: 32M/32Q/16D // Rank: 20 // Seed/Entry: /MD, 54039=WTA // USA // 24-Mar-2015 // $5,219,780 // Hard (Outdoor) // Draw: 128M/64Q/32D // Rank: - // Seed/Entry: 23/MD, 45592=Grand Slam // FRANCE // 24-May-2015 // $15,980,135 // Clay (Outdoor) // Draw: 128M/128Q/64D // Rank: - // Seed/Entry: 26/MD, 52571=WTA // USA // 06-Apr-2015 // $665,900 // Clay (Outdoor) // Draw: 64M/32Q/16D // Rank: 26 // Seed/Entry: 9/MD, 57364=WTA // QATAR // 23-Feb-2015 // $665,900 // Hard (Outdoor) // Draw: 32M/32Q/16D // Rank: 25 // Seed/Entry: /MD, 60047=Fed Cup // GERMANY // 07-Feb-2015 // $0 // Hard (Indoor) // Draw: 8M/0Q/2D // Rank: 25 // Seed/Entry: /MD, 44196=WTA // GREAT BRITAIN // 21-Jun-2015 // $665,900 // Grass (Outdoor) // Draw: 64M/32Q/16D // Rank: 22 // Seed/Entry: 16/MD, 42435=Grand Slam // GREAT BRITAIN // 29-Jun-2015 // $20,458,117 // Grass (Outdoor) // Draw: 128M/128Q/64D // Rank: 23 // Seed/Entry: 22/MD}",
+    "textBeforeTable": "Florianopolis, BRAZIL. Jul 27 - Aug 01 Brasil Tennis Cup \">RTS http://www.wtatennis.com/road-singles-leaderboard WTA TV http://www.wtatennis.com/wtatv LIVE SCORES http://www.protennislive.com/LSHD/main.html?year=2015&amp;wkno=99&amp;eventid=&amp;tour=2&amp;lang=en&amp;ref=http://www.wtatennis.com NANCHANG FREE LIVE STREAMING http://www.wtatennis.com/news/article/4890487/title/watch-free-live-streaming-from-nanchang \u4e2d\u6587 Espa\u00f1ol English If you continue using our website, we will assume that you consent to the cookies we set. To find out more about cookies, please see our Privacy Policy We use cookies on this website...",
+    "textAfterTable": "tournament_id: 3024, url: '/dynamicxml/tennis/12781/scores/3024/2015/stats_42111.xml', info: null, player1_set1: '', player1_set2: '', player1_set3: '', player2_set1: '', player2_set2: '', player2_set3: '', player_set1_won: '', player_set2_won: '', player_set3_won: '', tb1: 0, tb2: 0, tb3: 0, ballA: 0, ballB: 0, ptA: 0, ptB: 0 } var int_42111 = setInterval(function() { $.ajax({ type: 'get', url: match_42111.url, dataType: 'xml', cache: false, success: function(data) { $(data).find('stats').each(function() { var this_ = $(this); match_42111.info = this_.find('MatchInfo'); match_42111.player1_set1 = (match_42111.info.attr('s1A') != '') ? match_42111.info.attr('s1A') : ''; match_42111.player1_set2 = (match_42111.info.attr('s2A') != '') ? match_42111.info.attr('s2A') : ''; match_42111.player1_set3 = (match_42111.info.attr('s3A') != '') ? match_42111.info.attr('s3A') : ''; match_42111.player2_set1 = (match_42111.info.attr('s1B') != '') ? match_42111.info.attr('s1B') : ''; match_42111.player2_set2 = (match_42111.info.attr('s2B') != '') ? match_42111.info.attr('s2B') : ''; match_42111.player2_set3 = (match_42111.info.attr('s3B') != '') ? match_42111.info.attr('s3B') : ''; match_42111.tb1 = match_42111.info.attr('tb1'); match_42111.tb2 = match_42111.info.attr('tb2'); match_42111.tb3 = match_42111.info.attr('tb3'); match_42111.ballA = match_42111.info.attr('ballA'); match_42111.ballB = match_42111.info.attr('ballB'); match_42111.ptA = match_42111.info.attr('ptA'); match_42111.ptB = match_42111.info.attr('ptB'); // apply to elements $('.42111 .ptA').text(match_42111.ptA); $('.42111 .ptB').text(match_42111.ptB); $('.42111 .p1s1 span').text(match_42111.player1_set1); $('.42111 .p1s2 span').text(match_42111.player1_set2); $('.42111 .p1s3 span').text(match_42111.player1_set3); $('.42111 .p2s1 span').text(match_42111.player2_set1); $('.42111 .p2s2 span').text(match_42111.player2_set2); $('.42111 .p2s3 span').text(match_42111.player2_set3); //$('.liveScoreBox sup').text(''); if (match_42111.player1_set1 > match_42111.player2_set1) { match_42111.player_set1_won = 1; $('.42111 .p1s1 span').addClass('pink'); $('.42111 .p2s1 span').removeClass('pink'); if (match_42111.tb1 != '') { $('.42111 .p2s1 sup').text(' ' + match_42111.tb1); if (parseInt(match_42111.tb1) >= 6) { $('.42111 .p1s1 sup').text(' ' + (parseInt(match_42111.tb1) + 2)); } else { $('.42111 .p1s1 sup').text('7'); } } } else if (match_42111.player1_set1 < match_42111.player2_set1) { match_42111.player_set1_won = 2; $('.42111 .p2s1 span').addClass('pink'); $('.42111 .p1s1 span').removeClass('pink'); if (match_42111.tb1 != '') { $('.42111 .p1s1 sup').text(' ' + match_42111.tb1); if (parseInt(match_42111.tb1) >= 6) { $('.42111 .p2s1 sup').text(' '",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

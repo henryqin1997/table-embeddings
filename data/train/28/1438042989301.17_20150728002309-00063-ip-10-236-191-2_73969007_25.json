@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "instName",
+            "compName",
+            "compType",
+            "walletName",
+            "password",
+            "path"
+        ],
+        [
+            "Definition",
+            "Specifies the name of the application server instance.",
+            "Specifies the name of the component instance.",
+            "Specifies the type of component. Valid values are 'oid', 'ohs', and 'webcache'.",
+            "Specifies the name of the wallet file.",
+            "Specifies the password of the wallet.",
+            "Specifies the absolute path of the directory under which the object is exported."
+        ]
+    ],
+    "pageTitle": "Infrastructure Security Custom WLST Commands - 11g Release 1 (10.3.6)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E25178_01/web.1111/e13813/custom_infra_security.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00063-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74061423,
+    "recordOffset": 73969007,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{243890=The following command deletes the engine with ID id1234., 63668=The following command adds a self-signed certificate with DN cn=www.acme.com, key size 1024 to wallet1, for Oracle Internet Directory instance oid1, in application server instance inst1:, 117395=The following command generates a key pair with DN cn=www.acme.com, key size 1024, algorithm RSA and alias mykey in keys.jks, for Oracle Virtual Directory instance ovd1 in application server instance inst1:, 241513=The following command deletes the authentication engine with ID id1234., 646257=cacheTimeOut\u2014Amount of time cached information remains in the OAM Agent cache when the information is neither used nor referenced. Default = 1800 (seconds)., 882576=HOK Symmetric Key Generation Algorithm: http://www.w3.org/2001/04/xmlenc#aes128-cbc, 59210=The following command generates a certificate signing request with DN cn=www.acme.com and key size 1024 in wallet1, for Oracle Internet Directory instance oid1, in application server instance inst1:, 717827=cacheTimeout\u2014Amount of time cached information remains in the OAM Agent cache when the information is neither used nor referenced. Default = 1800 (seconds).}",
+    "lastModified": "Thu, 20 Sep 2012 17:34:53 GMT",
+    "textBeforeTable": "exportWallet(instName, compName, compType, walletName,password, path) Syntax      This command exports an Oracle wallet, configured for a specified component instance (Oracle HTTP Server, Oracle WebCache or Oracle Internet Directory), to file(s) under the given directory. If the exported file is an auto-login only wallet, the file name is 'cwallet.sso'. If it is password-protected wallet, two files are created: 'ewallet.p12' and 'cwallet.sso'. Description    Online command that exports an Oracle wallet. exportWallet    wls:/mydomain/serverConfig> exportKeyStoreObject('inst1', 'ovd1', 'ovd','keys.jks', 'password', 'TrustedCertificate', '/tmp','mykey') The following command exports a trusted certificate indicated by alias mykey in keys.jks, for Oracle Virtual Directory instance ovd1, in application server instance inst1. The trusted certificate is exported under the directory /tmp: wls:/mydomain/serverConfig> exportKeyStoreObject('inst1', 'ovd1', 'ovd','keys.jks', 'password', 'Certificate', '/tmp','mykey') The following command exports a certificate or certificate chain indicated by alias mykey in keys.jks, for Oracle Virtual Directory instance ovd1, in application server instance inst1. The certificate or certificate chain is exported under the directory /tmp: wls:/mydomain/serverConfig> exportKeyStoreObject('inst1', 'ovd1', 'ovd','keys.jks', 'password', 'CertificateRequest', '/tmp','mykey') The following command generates and exports a certificate signing request from the key-pair indicated by alias mykey in keys.jks, for Oracle Virtual Directory instance ovd1 in application server instance inst1. The certificate signing request is",
+    "textAfterTable": "Examples The following command exports auto-login wallet wallet1 for Oracle Internet Directory instance oid1 to file cwallet.sso under /tmp: wls:/mydomain/serverConfig> exportWallet('inst1', 'oid1', 'oid', 'wallet1','','/tmp') The following command exports password-protected wallet wallet2 for Oracle Internet Directory instance oid1 to two files, ewallet.p12 and cwallet.sso, under /tmp: wls:/mydomain/serverConfig> exportWallet('inst1', 'oid1', 'oid', 'wallet2', 'password', '/tmp') exportWalletObject Online command that exports a certificate or other wallet object to a file. Description This command exports a certificate signing request, certificate, certificate chain or trusted certificate present in an Oracle wallet to a file for the specified component instance (Oracle HTTP Server, Oracle WebCache or Oracle Internet Directory). DN is used to indicate the object to be exported. Syntax exportWalletObject(instName, compName, compType, walletName, password, type, path, DN) Argument Definition instName Specifies the name of the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

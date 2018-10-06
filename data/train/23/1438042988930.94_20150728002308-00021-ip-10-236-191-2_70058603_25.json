@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Return",
+            "success",
+            "error_no_such_breakpt",
+            "error_idle_breakpt"
+        ],
+        [
+            "Description",
+            "Success",
+            "No such breakpoint exists",
+            "Cannot enable an unused breakpoint"
+        ]
+    ],
+    "pageTitle": "DBMS_DEBUG",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/appdev.112/e40758/d_debug.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00021-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70090263,
+    "recordOffset": 70058603,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{122447=Calls to DBMS_DEBUG will succeed only if either the caller or the specified debug role carries the DEBUG CONNECT SESSION privilege. Failing that, an ORA-1031 error will be raised. Other exceptions are also possible if a debug role is specified but the password does not match, or if the calling user has not been granted the role, or the role is application-enabled and this call does not originate from within the role-enabling package., 100189=A bitmap representing the executable lines of 'program'. If line number N is executable, bit number N MOD 8 will be set to 1 at linemap position N / 8. The length of returned linemap is either maxline divided by 8 (plus one if maxline MOD 8 is not zero) or 32767 in the unlikely case of maxline being larger than 32767 * 8.}",
+    "lastModified": "Fri, 03 Jul 2015 16:44:05 GMT",
+    "textBeforeTable": "Table 52-16 ENABLE_BREAKPOINT Function Return Values Return Values Breakpoint number from a previous call to SET_BREAKPOINT breakpoint Description Parameter Table 52-15 ENABLE_BREAKPOINT Function Parameters Parameters RETURN BINARY_INTEGER; breakpoint IN BINARY_INTEGER) DBMS_DEBUG.ENABLE_BREAKPOINT (  Syntax  This function is the reverse of disabling. This enables a previously disabled breakpoint. ENABLE_BREAKPOINT Function       Cannot disable an unused breakpoint error_idle_breakpt No such breakpoint exists error_no_such_breakpt \u00a0 success Description Returns Table 52-14 DISABLE_BREAKPOINT Function Return Values Return Values",
+    "textAfterTable": "EXECUTE Procedure This procedure executes SQL or PL/SQL code in the target session. The target session is assumed to be waiting at a breakpoint (or other event). The call to DBMS_DEBUG.EXECUTE occurs in the debug session, which then asks the target session to execute the code. Syntax  DBMS_DEBUG.EXECUTE ( what IN VARCHAR2, frame# IN BINARY_INTEGER, bind_results IN BINARY_INTEGER, results IN OUT NOCOPY dbms_debug_vc2coll, errm IN OUT NOCOPY VARCHAR2); Parameters Table 52-17 EXECUTE Procedure Parameters Parameter Description what SQL or PL/SQL source to execute frame# The context in which to execute the code. Only -1 (global context) is supported at this time. bind_results Whether the source wants to bind to results in order to return values from the target session: 0 = No 1 = Yes results Collection in which to place results, if bind_results",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

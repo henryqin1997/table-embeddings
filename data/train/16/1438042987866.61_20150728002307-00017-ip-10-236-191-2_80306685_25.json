@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Table Name",
+            "JTF_RS_ SALESREPS",
+            "",
+            "HZ_LOCATIONS",
+            "",
+            "AR_SYSTEM_ PARAMTERS_ ALL"
+        ],
+        [
+            "Column",
+            "SALES_TAX_ GEOCODE",
+            "SALES_TAX_INSIDE_CITY_ LIMITS",
+            "SALES_TAX_ GEOCODE",
+            "SALES_TAX_INSIDE _CITY_ LIMITS",
+            "SALES_TAX_ GEOCODE"
+        ],
+        [
+            "Window",
+            "Sales Force",
+            "Sales Force",
+            "Customer Addresses",
+            "Customer Addresses",
+            "System Options"
+        ],
+        [
+            "Field Name",
+            "Geo Override",
+            "Inside City Limits",
+            "Geo Override",
+            "Inside City Limits",
+            "Geo Override"
+        ],
+        [
+            "Description",
+            "Point of Order Origin jurisdiction code (Taxware) Point of Order Acceptance GeoCode (Vertex)",
+            "Indicates whether the POA address is inside the city limits (Vertex Only)",
+            "Ship-to GeoCode",
+            "Indicates whether the ship-to address is inside the city limits (Vertex Only)",
+            "Point of Order Acceptance jurisdiction code (Taxware Only)"
+        ]
+    ],
+    "pageTitle": "Oracle E-Business Tax: Vertex Q-Series and Taxware Sales/Use Tax System Implementation Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18727_01/doc.121/e13632/T467157T467163.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987866.61/warc/CC-MAIN-20150728002307-00017-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 80319087,
+    "recordOffset": 80306685,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{48928=Copyright \u00a9 2006, 2010, Oracle and/or its affiliates. All rights reserved.}",
+    "lastModified": "Tue, 23 Jun 2015 15:22:56 GMT",
+    "textBeforeTable": "The table below contains the tax functions contained in ARP_TAX_VIEW_TAXWARE ARP_TAX_VIEW_VERTEX packages and the values assigned to Vertex and Taxware API parameters by the calling procedures in the packages ZX_TAXWARE_USER_PKG and ZX_VERTEX_USER_PKG. The packages ARP_TAX_VIEW_TAXWARE and ARP_TAX_VIEW_VERTEX contain the tax functions for Taxware and Vertex respectively. These tax functions contain default logic that can be re-written for an installation. The tax functions are called from the procedures in the packages ZX_TAXWARE_USER_PKG and ZX_VERTEX_USER_PKG, which insert records in ZX_PRVDR_HDR_EXTNS_GT and ZX_PRVDR_LINE_EXTNS_GT tables. Tax service providers require some attributes that do not exist as standard columns in the E-Business Suite tables or can be mapped to an attribute out of two or more potential attribute in E-Business Suite. To achieve this, view ZX_O2C_CALC_TXN_INPUT_V has some extra columns. There are tax functions that populate the values of these extra columns in the tables ZX_PRVDR_HDR_EXTNS_GT and ZX_PRVDR_LINE_EXTNS_GT used for the view. Customizable Tax Functions The tax service providers tax calculation APIs get the input from the view ZX_O2C_CALC_TXN_INPUT_V. For the list of available attributes refer to the view description in the Oracle E-Business Suite Electronic Technical Reference Manual. Available Parameters Technical Reference Previous Contents Oracle E-Business Tax: Vertex Q-Series and Taxware Sales/Use Tax",
+    "textAfterTable": "JurLink.ShipFr.State = substr(SHIP_FROM_ADDRESS_CODE,2,2) JurLink.ShipFr.Zip = substr(SHIP_FROM_ADDRESS_CODE,4,5) JurLink.ShipFr.Geo = substr(SHIP_FROM_ADDRESS_CODE,9,2) .fJurisSFGeoCd = substr(SHIP_FROM_ADDRESS_CODE,2,9) .fJurisSFInCi = substr(SHIP_FROM_ADDRESS_CODE,1,1) POA_ADDRESS_CODE LINE_EXT_VARCHAR_ATTRIBUTE11 Taxware: Organization jurisdiction code Vertex: Salesperson jurisdiction code JurLink.POA.State = substr(POA_ADDRESS_CODE,2,2) JurLink.POA.Zip = substr(POA_ADDRESS_CODE,4,5) JurLink.POA.Geo = substr(POA_ADDRESS_CODE,9,2) .fJurisOAGeoCd = substr(POA_ADDRESS_CODE,2,9) .fJurisOAInCi = substr(POA_ADDRESS_CODE,1,1) CUSTOMER_CODE LINE_EXT_VARCHAR_ATTRIBUTE12 Bill To Party Number (PARTY_NUMBER of HZ_PARTIES) TaxLink.CustNo .fTDMCustCd COMPANY_CODE LINE_EXT_VARCHAR_ATTRIBUTE14 01 TaxLink.CompanyID .fTDMCompCd DIVISION_CODE LINE_EXT_VARCHAR_ATTRIBUTE15 01 TaxLink.DivCode .fTDMDivCd SERVICE_INDICATOR LINE_EXT_VARCHAR_ATTRIBUTE1 Profile: ZX_TAXVDR_SERVICEIND JurLink.ServInd N/A TAX_SEL_PARM LINE_EXT_NUMBER_ATTRIBUTE6 Profile: ZX_TAXVDR_TAXSELPARAM TaxSelParm N/A CUSTOMER_NAME LINE_EXT_VARCHAR_ATTRIBUTE13 Bill To Party Name (PARTY_NAME of HZ_PARTIES) TaxLink.CustName N/A VENDOR_CONTROL_EXEMPTIONS LINE_EXT_VARCHAR_ATTRIBUTE16 Job Number (ATTRIBUTE1 from RA_CUST_TRX_TYPES) TaxLink.JobNo N/A USE_NEXPRO LINE_EXT_VARCHAR_ATTRIBUTE17 Profile: ZX_TAXVDR_USENEXPRO TaxLinkUseNexproInd N/A POO_ADDRESS_CODE LINE_EXT_VARCHAR_ATTRIBUTE20 Salesperson jurisdiction code JurLink.POO.State = substr(POO_ADDRESS_CODE,2,2) JurLink.POO.Zip = substr(POO_ADDRESS_CODE,4,5) JurLink.POO.Geo = substr(POO_ADDRESS_CODE,9,2) N/A CALCULATION_FLAG LINE_EXT_VARCHAR_ATTRIBUTE21 00000 (Calculate tax at all jurisdiction levels) TaxLink.NoStaTax TaxLink.StaExempt TaxLink.NoCnTax TaxLink.CnExempt TaxLink.NoLoTax TaxLink.LoExempt TaxLink.NoSecCnTax TaxLink.SecCnExempt TaxLink.NoSecLoTax TaxLink.SecLoExempt N/A TRX_LINE_TYPE LINE_EXT_VARCHAR_ATTRIBUTE1 SALE",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

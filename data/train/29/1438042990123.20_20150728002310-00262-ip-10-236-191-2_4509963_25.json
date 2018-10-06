@@ -1,0 +1,32 @@
+{
+    "relation": [
+        [
+            "Example",
+            "IQUI BBBB",
+            "IQUI BBBB IDCCCC MSCats\\sare\\horrible DI1 TL-1"
+        ],
+        [
+            "Description",
+            "A QUI that is sent from the hub indicating that the client BBBB has disconnected.",
+            "A QUI that is sent from the hub indicating that the client BBBB has disconnected. The originator of the action is the client with the SID CCCC. The message \"Cats are horrible\" is included. All clients should terminate their connections with the client BBBB (DI1). The client should never attempt to reconnect (TL-1)."
+        ]
+    ],
+    "pageTitle": "ADC Protocol",
+    "title": "",
+    "url": "http://adc.sourceforge.net/ADC.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990123.20/warc/CC-MAIN-20150728002310-00262-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 4533852,
+    "recordOffset": 4509963,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{1396=Many ideas for the protocol come from Jan Vidar Krey\u2019s DCTNG draft. Major contributors include Dustin Brody, Walter Doekes, Timmo Stange, Fredrik Ullner, Fredrik Stenberg and others. Jon Hess contributed the original Direct Connect idea through the Neo-Modus Direct Connect client / hub.}",
+    "lastModified": "Sun, 30 Jun 2013 12:07:58 GMT",
+    "textBeforeTable": "6.3.1. STA 6.3. Commands <data> CSND \u2026 CGET \u2026 CINF IDxxx CINF IDxxx TO<token> CSUP ADBASE ADTIGR \u2026 CSUP ADBASE ADTIGR \u2026 Server Client 6.2. Client \u2013 Client connection \u2026 \u2026 BINF <Client-SID> BINF <all clients> HPAS \u2026 IGPA \u2026 BINF <my-sid> ID\u2026 PD\u2026 IINF CT32 \u2026 ISID <client-sid> ISUP ADBASE ADTIGR \u2026 HSUP ADBASE ADTIGR",
+    "textAfterTable": "6.3.2. SUP Example Description ISUP ADBASE ADTIGR ADBLOM A SUP sent from a hub indicating that the hub has added the features BASE, TIGR and BLOM. HSUP RMBLOM ADZLIF A SUP sent from a client to the hub indicating that the client has added the fature ZLIF and removed the feature BLOM. 6.3.3. SID Example Description ISID BBBB An SID is sent from the hub indicating that the client\u2019s SID from then on shall be BBBB. 6.3.4. INF Example Description IINF CT32 NIexample_hub DEThe\\s\\simple\\shub An INF is sent from the hub containing its own information: the name is \"example_hub\" and description \"The simple hub\". BINF BBBB HN0 HR1 HO2 NIsample_user DEsample\\scontent SF123456 SS42 I4192.168.0.1 U46666 IDIPJJWEPPPLCA3PF2ZCRRYO4F2ZX2EV2JMW2KC3I PDIJJJWEPPPLCA33F2ZCR7YO4F6ZXWE4NJ3WQ3C3I An INF sent from a",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

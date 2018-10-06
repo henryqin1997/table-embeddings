@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3"
+        ],
+        [
+            "Command or Action",
+            "Router(config)# interface type number . subinterface-number {multipoint | point-to-point}",
+            "Router(config-subif)# ip address ip-address mask",
+            "Router(config-subif)# map-group group-name"
+        ],
+        [
+            "Purpose",
+            "Specifies a subinterface configured for SVC operation.",
+            "Specifies the subinterface IP address, if needed.",
+            "Assigns a map group to the subinterface."
+        ]
+    ],
+    "pageTitle": "Wide-Area Networking Configuration Guide: Frame Relay, Cisco IOS Release 15S - Configuring Frame Relay [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/wan_frly/configuration/15-s/wan-frly-15-s-book/wan-cfg-frm-rly.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00073-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 372549539,
+    "recordOffset": 372460749,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{212438=Static routes cannot be configured over tunnel interfaces on the Cisco 800 series, 1600 series, and 1700 series platforms. Static routes can only be configured over tunnel interfaces on platforms that have the Enterprise feature set., 86217=Cisco-proprietary fragmentation is used on data packets on a PVC that is also used for voice traffic. When the vofr cisco command is configured on a DLCI and fragmentation is enabled on a map class, the Cisco 2600 series, 3600 series, and 7200 series routers can interoperate as tandem nodes (but cannot perform call termination) with Cisco MC3810 concentrators running Cisco IOS releases prior to 12.0(3)XG or 12.0(4)T., 1927=Frame Relay supports encapsulation of all supported protocols in conformance with RFC 1490, Multiprotocol Interconnect over Frame Relay, allowing interoperability among multiple vendors. Use the IETF form of Frame Relay encapsulation if your device or access server is connected to another vendor\u2019s equipment across a Frame Relay network. IETF encapsulation is supported either at the interface level or on a per-VC basis., 382892=The following configuration provides backward compatibility and interoperability with versions not compliant with RFC 1490. The ietf keyword is used to generate RFC 1490 traffic. This configuration is possible because of the flexibility provided by separately defining each map entry., 9894=When LMI autosense is active, it sends out a full status request, in all three LMI types, to the switch. The order is ANSI, ITU, cisco, but it is done in rapid succession. software provides the ability to listen in on both DLCI 1023 (cisco LMI) and DLCI 0 (ANSI and ITU) simultaneously., 96769=TCP/IP header compression, as described by RFC 1144, Compressing TCP/IP Headers for Low-Speed Serial Links is designed to improve the efficiency of bandwidth utilization over low-speed serial links. A typical TCP/IP packet includes a 40-byte datagram header. Once a connection is established, the header information is redundant and need not be repeated in every packet that is sent. Reconstructing a smaller header that identifies the connection, indicates the fields that have changed and the amount of change reduces the number of bytes transmitted. The average compressed header is 10 bytes long., 59606=PPP over Frame Relay is only supported on IP. IP datagrams are transported over the PPP link using RFC 1973 compliant Frame Relay framing. The frame format is shown in the figure below., 293974=Configures Frame Relay fragmentation for the map class. The fragment_size argument defines the payload size of a fragment; it excludes the Frame Relay headers and any Frame Relay fragmentation header. The valid range is from 16 to 1600 bytes, and the default is 53., 374076=Map class \"slow_vcs\" uses a peak rate of 9600 and average rate of 4800 bps. Because BECN feedback is enabled, the output rate will be cut back to as low as 2400 bps in response to received BECNs. This map class is configured to use custom queueing using queue-list 1. In this example, queue-list 1 has 3 queues, with the first two being controlled by access lists 100 and 115., 398492=Static routes cannot be configured over tunnel interfaces on the Cisco 800 series, 1600 series, and 1700 series platforms. Static routes can only be configured over tunnel interfaces on platforms that have the Enterprise feature set., 58461=Point-to-point protocol (PPP) over Frame Relay allows a router to establish end-to-end PPP sessions over Frame Relay. This is done over a PVC, which is the only circuit currently supported. The PPP session does not occur unless the associated Frame Relay PVC is in an \"active\" state. The Frame Relay PVC can coexist with other circuits using different Frame Relay encapsulation methods, such as RFC 1490 and the Cisco proprietary method, over the same Frame Relay link. There can be multiple PPP over Frame Relay circuits on one Frame Relay link., 102930=Real-time Transport Protocol (RTP) is a protocol used for carrying packetized audio and video traffic over an IP network, providing end-to-end network transport functions intended for these real-time traffic applications and multicast or unicast network services. RTP is described in RFC 1889. RTP is not intended for data traffic, which uses TCP or UDP.}",
+    "textBeforeTable": "DETAILED STEPS 5.\u00a0\u00a0\u00a0 end 4.\u00a0\u00a0\u00a0 encapsulation frame-relay[ietf] 3.\u00a0\u00a0\u00a0 interface typenumber 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS To enable Frame Relay encapsulation on the interface level, use the following commands beginning in global configuration mode: Frame Relay encapsulation is a prerequisite for any Frame Relay commands on an interface. Note Enabling Frame Relay Encapsulation on an Interface Customizing Frame Relay for Your Network Configuring Frame Relay Switching Configuring Frame Relay Traffic Shaping Enabling Frame Relay SVC Service Explicitly Configuring the LMI Configuring Static Address Mapping Enabling Frame Relay Encapsulation on an Interface How to Configure Frame Relay DLCI priority levels provide a way to define multiple parallel DLCIs for different types of traffic. DLCI priority levels do not assign priority queues within the device or access server. In fact, they",
+    "textAfterTable": "Device# configure terminal \u00a0 Enters global configuration mode. \u00a0 Step\u00a03 interface typenumber Example:  Device(config)# int ethernet 0/1 \u00a0 Specifies the interface, and enters interface configuration mode. \u00a0 Step\u00a04 encapsulation frame-relay[ietf] Example:  Device(config-if)# encapsulation frame-relay ietf \u00a0 Enables and specifies the Frame Relay encapsulation method. \u00a0 Step\u00a05 end Example:  Device(config-if)# end \u00a0 Returns to privileged EXEC mode. \u00a0 Configuring Static Address Mapping To establish static mapping according to your network needs, use one of the following commands in interface configuration mode: Command Purpose Router(config-if)# frame-relay map protocol protocol-address dlci",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

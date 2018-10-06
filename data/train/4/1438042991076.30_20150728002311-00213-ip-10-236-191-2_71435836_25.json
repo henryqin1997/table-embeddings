@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Option",
+            "-a",
+            "-g",
+            "-s"
+        ],
+        [
+            "Description",
+            "Displays the VIP address configuration",
+            "Displays the GSD configuration",
+            "Displays the Oracle Notification Service configuration"
+        ]
+    ],
+    "pageTitle": "Server Control Utility Reference",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/rac.112/e41960/srvctladmin.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991076.30/warc/CC-MAIN-20150728002311-00213-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71510639,
+    "recordOffset": 71435836,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{93829=Local port on which Oracle Enterprise Manager listens. The default port is 2016., 85348=The following command adds a listener named listener112 that is listening on port 1341 and runs from the /ora/ora112 home directory on every node in the cluster:, 108896=If this option is not specified, then the default TCP port of 1521 is used.}",
+    "lastModified": "Fri, 31 Jul 2015 12:08:22 GMT",
+    "textBeforeTable": "Table A-26 srvctl config nodeapps Option Note: This command is only available with Oracle Clusterware. srvctl config nodeapps [-a] [-g] [-s]  Use the srvctl config nodeapps command with the following syntax: Syntax and Options   Displays the VIP configuration for each node in the cluster. srvctl config nodeapps      srvctl config listener  An example of this command is: Example       Print detailed configuration information. -a     Listener name. If you do not specify this option, then the name of the listener defaults to LISTENER.  -l listener_name      Description Option   Table A-25 srvctl config listener Options   srvctl config listener [-l listener_name] [-a]  Use the srvctl config listener command with the following syntax: Syntax and Options   Displays a list of configured listeners that are registered with Oracle Clusterware",
+    "textAfterTable": "Example An example of this command is:  $ srvctl config nodeapps -a -g -s srvctl config oc4j Displays configuration information for the OC4J instance. Note: This command is only available with Oracle Clusterware.  srvctl config oc4j srvctl config ons Displays configuration information for the Oracle Notification Service daemon. Note: This command is only available with Oracle Clusterware.  srvctl config ons srvctl config scan Displays the configuration information for all SCAN VIPs, by default, or a specific SCAN VIP identified by ordinal_number. Syntax and Options Use the srvctl config scan command with the following syntax:  srvctl config scan [-i ordinal_number] The only option available for this command is -i ordinal_number, which identifies any one of the three SCAN VIPs, and can take a range of values from 1 to 3. Note: This command is only available with Oracle Clusterware. Example An example of this",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Code or Value",
+            "1",
+            "2",
+            "7",
+            "9",
+            "."
+        ],
+        [
+            "Value Description",
+            "Yes",
+            "No",
+            "Refused",
+            "Don't know",
+            "Missing"
+        ],
+        [
+            "Count",
+            "3009",
+            "742",
+            "0",
+            "0",
+            "6371"
+        ],
+        [
+            "Cumulative",
+            "3009",
+            "3751",
+            "3751",
+            "3751",
+            "10122"
+        ],
+        [
+            "Skip to Item",
+            "",
+            "End of Section",
+            "End of Section",
+            "End of Section",
+            ""
+        ]
+    ],
+    "pageTitle": "NHANES 2003 - 2004: Diet Behavior and Nutrition Data Documentation, Codebook, and Frequencies",
+    "title": "",
+    "url": "http://www.cdc.gov/nchs/nhanes/nhanes2003-2004/DBQ_C.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992201.62/warc/CC-MAIN-20150728002312-00083-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 360318561,
+    "recordOffset": 360302603,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampBeforeTable": "{6049=The Diet Behavior and Nutrition (variable name prefix DBQ) section provides personal interview data on various dietary behavior and nutrition related topics. Many of the questions were included in NHANES II (1976-80), Hispanic HANES (1982-84), NHANES III (1988-94), and NHANES 1999-2002. Topics included in the section are:, 1560=A set of questions on the consumption of dark green vegetables and dried beans or peas that was asked in the DBQ section for 2001-2002 was not continued in this section for 2003-2004., 1921=A new question (DBD229) was added to the NHANES 2001-2002 questionnaire to determine whether the respondent received free or reduced price meal at the summer program. Only youth 4-19 years old who reported receiving free or reduced meals in school were asked this question. Analysts need to be aware of this specific skip pattern for this question., 6805=Title: Diet Behavior and Nutrition (DBQ_C ) Contact Number: 1-866-441-NCHS Years of Content: 2003 - 2004 First Published: July, 2006 Revised: August, 2006 Access Constraints: None Use Constraints: None Geographic Coverage: National Subject:Diet Behavior and Nutrition Record Source: NHANES 2003 - 2004 Survey Methodology: NHANES 2003 - 2004 is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S. Medium: NHANES Web site; SAS transport files}",
+    "lastModified": "Fri, 09 May 2014 20:26:55 GMT",
+    "textBeforeTable": "Both males and females 0 YEARS - 6 YEARS Target: Now I'm going to ask you some general questions about {SP's} eating habits. Was {SP} ever breastfed or fed breastmilk? English Text: Ever breastfed or fed breastmilk SAS Label: DBQ010 Variable Name: DBQ010 - Ever breastfed or fed breastmilk Both males and females 0 YEARS - 150 YEARS Target: Respondent sequence number. English Text: Respondent sequence number SAS Label: SEQN Variable Name: SEQN - Respondent sequence number Codebook and Frequencies N/A. References A set of questions on the consumption of dark green vegetables and dried beans or peas that was asked in the DBQ section for 2001-2002 was not continued in this section for 2003-2004. A new question (DBD229) was added to the NHANES 2001-2002 questionnaire to determine whether the respondent received free or reduced price meal at the summer program. Only youth 4-19 years old who reported receiving free or reduced meals in school were asked this question. Analysts need to be aware of this specific skip pattern for this question. Responses to these questions are collected as \u201ccode all that apply.\u201d A respondent could report more than one",
+    "textAfterTable": "DBD020 - Age started eating other foods(days) Variable Name: DBD020 SAS Label: Age started eating other foods(days) English Text: How old was {SP} when {he/she} was first fed something other than breastmilk or water? Target: Both males and females 0 YEARS - 6 YEARS Code or Value Value Description Count Cumulative Skip to Item 1 to 577 Range of Values 1119 1119 0 Never 39 1158 DBD085 777777 Refused 0 1158 DBD085 999999 Don't know 1 1159 DBD085 . Missing 8963 10122 DBD030 - Age stopped breastfeeding(days) Variable Name: DBD030 SAS Label: Age stopped breastfeeding(days) English Text: How old was {SP} when {he/she} completely stopped breastfeeding or being fed breastmilk? Target: Both males and females 0 YEARS - 6 YEARS Code or Value Value Description Count Cumulative",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

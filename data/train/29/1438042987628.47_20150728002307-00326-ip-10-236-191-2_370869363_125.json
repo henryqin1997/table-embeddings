@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Router> enable",
+            "configure terminal Example: Router# configure terminal",
+            "voice service voip Example: Router(config)# voice service voip",
+            "sip Example: Router(conf-voi-ser)# sip",
+            "caller-info pstn-to-sip {unscreened discard | {from | remote-party-id | asserted-id] {name set name | number set number}}} Example: Router(conf-ser-sip)# caller-info pstn-to-sip asserted-id name set example",
+            "exit Example: Router (conf-ser-sip)# exit"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Enters voice service VoIP configuration mode.",
+            "Enters SIP configuration mode.",
+            "Configures a name that is populated in the asserted-id field.",
+            "Exits the current mode."
+        ]
+    ],
+    "pageTitle": "SIP Configuration Guide, Cisco IOS Release 12.4T - Configuring SIP Message Timer and Response Features [Cisco IOS Software Releases 12.4 T] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/voice/sip/configuration/12-4t/sip-12-4t-book/voi-sip-timer.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987628.47/warc/CC-MAIN-20150728002307-00326-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 370995747,
+    "recordOffset": 370869363,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{27754=The following example shows an initial INVITE message with a hostname. The highlighted line represents the updates to reflect RFC 2327., 65662=In RFC 2833, unused corresponds to the volume field, but is not used in NOTIFY-based out-of-band DTMF relay., 31357=The session information is optional, therefore internal structures are not built to expect this parameter. Specifically, internal memory is only allocated for this parameter when it is present in SDP, or when the application specifies that it be built into an outgoing message. In order to protect the internal operation of the Cisco IOS gateway, the maximum allowable length of a received session information line is 1000 characters. Session information lines over 1000 characters are truncated., 69102=The NOTIFY-based out-of-band DTMF relay mechanism is similar to the DTMF message format described in RFC 2833. NOTIFY-based out-of-band DTMF relay consists of 4 bytes in a binary encoded format. The message format is shown in the figure below; the table below describes the fields., 28183=The following example shows a configured list of hostnames. The highlighted lines represent the updates to reflect RFC 2327., 221768=ISDN messages follow the format specified in ISDN Primary Rate Interface Call Control Switching and Signalling Generic Requirements for Class II Equipment, TR-NWT-001268, Revisions 1-4, Telcordia Technologies Technical Reference, 2001 and ISDN Basic Rate Interface Call Control Switching and Signalling Generic Requirements, GR-268-CORE, July 1998, to signal call control. ISDN messages are composed of information elements (IEs). The Cisco IOS VoiceXML feature uses Calling Party Number and Display Text IEs to provide specified screening and presentation treatment. The Calling Party Number IE specifies the origin of the calling number and presentation status, and the Display Text IE supplies calling party name information that is formatted for display by a terminal for a human user. See the Setup message in \"ISDN Syntax\" for sample IE information., 62381=Every DTMF event corresponds to at least two NOTIFY message requests: an initial NOTIFY message and an end NOTIFY message. There might also be some update NOTIFY message requests involved, if the total duration of the event is greater than the negotiated max-duration interval. Because DTMF events generally last for less than 1000 ms, setting the duration using the notify telephone-event command to more than 1000 ms reduces the total number of NOTIFY messages sent. The default value of the notify telephone-event command is 2000 ms.}",
+    "TableContextTimeStampAfterTable": "{309969=Router(config-sip-ua)# credentials number 1234 username abc password pass realm cisco.com, 317062=Router(config-dial-peer)# voice-class sip associate registered-number 1234, 316867=Router(config-voi-serv-sip)# associate registered-number 1234, 218280=Router(conf-serv-sip)# outbound-proxy ipv4:10.1.1.1, 507942=RFC 2833}",
+    "textBeforeTable": "DETAILED STEPS 6.\u00a0\u00a0\u00a0 exit 5.\u00a0\u00a0\u00a0 caller-info pstn-to-sip {unscreened discard | {from | remote-party-id | asserted-id] {name set name | number set number}}} 4.\u00a0\u00a0\u00a0 sip 3.\u00a0\u00a0\u00a0 voice service voip 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS Configuring a Name and Number in the asserted-id Header Exits the current mode. \u00a0 Router (conf-ser-sip)# exit \u00a0 Example: exit Step\u00a06 Configures a privacy header. In this example, a P-Preferred-Identity header is configured. \u00a0",
+    "textAfterTable": "Configuring SIP History-info Header Support You can configure SIP History-info Header Support in two different configuration modes: voice service sip configuration (global level) and dial peer voice configuration (dial-peer level) mode. The gateway first checks if support is configured under the dial peer voice configuration mode, and failing a match, then defaults to the voice service configuration. If support is not configured in either mode, then the header is not added. Configuring SIP History-info Header Support Globally Configuring SIP History-info Header Support at the Dial-Peer Level Configuring Call Routing on SIP History-info Header Support Globally Configuring Call Routing on SIP History-info Header Support at the Dial-Peer Level Configuring SIP History-info Header Support Globally Perform this task to configure history-info header support at a global level in SIP configuration (conf-serv-sip) mode. SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 voice service voip 4.\u00a0\u00a0\u00a0 sip 5.\u00a0\u00a0\u00a0 history-info 6.\u00a0\u00a0\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

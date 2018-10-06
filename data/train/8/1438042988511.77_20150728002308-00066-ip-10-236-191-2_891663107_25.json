@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "Key",
+            "neighbour_counts",
+            "neighbours",
+            "asn",
+            "type",
+            "power",
+            "v4_peers/v6_peers",
+            "query_startime/query_endtime",
+            "resource"
+        ],
+        [
+            "Info",
+            "Shows total counts for the neighbours, including the total number of \"left\", \"right\" and \"unique\" neighbours found. Neighbours that have been seen as left neighbours, but only as direct peers of one of our route collectors (RIS collectors), are flagged \"uncertain\" because our own peering with this ASN could artifically include it as neigbour. ASNs that have been seen as a left neighbour and not as a direct peer with RIS are not flagged as \"uncertain\".",
+            "Contains all neighbours that were seen at the defined timestamp.",
+            "Defines the neighbouring ASN.",
+            "Shows information about the neighbour's position (\"left\" or \"right\"). The type \"uncertain\" is explained in the \"neighbour_counts\" section.",
+            "This represents the number of AS paths (\"path count\") containing this combination of ASN neighbours with the stated type (\"left\"/\"right\"). For compatibility reasons, this attribute has kept its name but will change with the next major release.",
+            "Shows the total number of (full-table) peers, grouped by IP version, seeing this neighbour/position combination. Accumulated number of routes (prefixes) seen by peers. If all peers see the same route (prefix + AS path) then this number is equal to peers * routes. It is an indicator of how widely used this AS path combination is.",
+            "For reasons explained in the input parameter section, the query_starttime and query_endtime refer to the same point in time that the result is valid for.",
+            "Defines the resource used for the query."
+        ]
+    ],
+    "pageTitle": "RIPEstat \u2014 RIPEstat Data API",
+    "title": "",
+    "url": "https://stat.ripe.net/docs/data_api",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988511.77/warc/CC-MAIN-20150728002308-00066-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 891715195,
+    "recordOffset": 891663107,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{115931=e.g. https://stat.ripe.net/data/asn-neighbours-history/data.json?resource=AS1205, 246031=e.g. https://stat.ripe.net/data/registry-browser/data.json?resource=193.0.20.0/24, 236783=e.g. https://stat.ripe.net/data/prefix-routing-consistency/data.json?resource=193.0.20.0/24, 103816=e.g. https://stat.ripe.net/data/asn-neighbours/data.json?resource=AS1205&starttime=2011-12-01T12:00:00&endtime=2011-12-06T12:00:00, 108649=e.g. https://stat.ripe.net/data/asn-neighbours/data.json?resource=AS1205&query_time=2011-12-01T12:00:00, 121840=e.g. https://stat.ripe.net/data/bgpplay/data.json?resource=140.78/16&starttime=2012-12-21T07:00&endtime=2012-12-21T12:00, 74688=e.g. https://stat.ripe.net/data/announced-prefixes/data.json?resource=AS3333&starttime=2011-12-12T12:00, 69260=e.g. https://stat.ripe.net/data/allocation-history/data.json?resource=140.78/16&starttime=2011-12-12T12:00, 143831=e.g. https://stat.ripe.net/data/bgp-update-activity/data.json?resource=140.78/16&starttime=2011-12-12T12:00, 175945=IPv4 information is based on GeoLite data created by MaxMind, which is Copyright 2008 MaxMind, Inc. All Rights Reserved. Please consult MaxMind's license before using this data for non-internal usage. For details on the accuracy of this data, please visit MaxMind's product website., 166243=e.g. https://stat.ripe.net/data/country-resource-list/data.json?resource=at&time=2012-12-01T12:00, 205162=e.g. https://stat.ripe.net/data/mlab-bandwidth/data.json?resource=cy&starttime=2013-08-21T07:00&endtime=2013-18-27T12:00, 97763=e.g. https://stat.ripe.net/data/asn-neighbours/data.json?resource=AS1205&starttime=2011-12-01T12:00:00, 156655=e.g. https://stat.ripe.net/data/country-resource-stats/data.json?resource=at&starttime=2012-12-01T12:00&resolution=5m, 241572=e.g. https://stat.ripe.net/data/prefix-size-distribution/data.json?resource=AS3333&time=2011-12-05T12:00:00, 200589=e.g. https://stat.ripe.net/data/mlab-activity-count/data.json?resource=193.0.0.0/16&starttime=2013-08-21T07:00&endtime=2013-18-27T12:00, 217068=e.g. https://stat.ripe.net/data/prefix-count/data.json?resource=AS3333&starttime=2008-01-01T00:00:00, 131044=e.g. https://stat.ripe.net/data/bgp-start/data.json?resource=140.78/16&timestamp=2012-12-21T12:00, 209303=e.g. https://stat.ripe.net/data/mlab-clients/data.json?resource=193.0.0.0/16&starttime=2013-08-21T07:00&endtime=2013-18-27T12:00, 136651=e.g. https://stat.ripe.net/data/bgp-updates/data.json?resource=140.78/16&endtime=2012-12-21T12:00}",
+    "textBeforeTable": "To support JSON-P all RIPEstat Data API calls support a \"callback\" parameter. This parameter can be set to the name of the Javascript function that will be called, with the output data as its argument. Common Request Parameters Using data calls Note: Data call URLs previously began with /plugin/. This will keep working for the forseable future, but /data/ should now be preferred. \"name\" is one of the data calls listed below. Where: https://stat.ripe.net/data/<name>/meta and to get metadata for a data call, including its methodology: https://stat.ripe.net/data/<name>/data.json?param1=value1&param2=value2&... The basic URL for requesting data is: URL The RIPEstat Data API is the public data interface for RIPEstat. It is the only data source for the RIPEstat widgets. Overview RIPEstat Data API }) populateMenu(); }); }); $(this).next().toggle(); $(obj).click(function () { $(\".version-title\").each(function (index, obj) { }); $(obj).children().eq(0).html(\"Available versions for this data call:\"); $(\".versions\").each(function (index, obj) { /* versions */ $(window).scroll( function() { scrollCallback( initialOffset, menuContainer ) } ); var initialOffset = menuContainer.offset().top; var menuContainer = $(\"#menu\"); collapse_portlet_nav(); $(function () { } menu.append(items); }); items += \" \" + label + \"\"; var name = el.attr(\"name\"); } label = text.substring(0, 25) + \"...\"; if (text.length > 25) { var label = text; var text = el.text(); el = $(el); $(\"#data_calls h2 a\").each(function (el_i, el) {",
+    "textAfterTable": "https://stat.ripe.net/data/<datacallname>/data.json?resource=AS3333&sourceapp=<YourId> For the format please just use alphanumeric values with no whitespace or special characters. Output Data Structure The resulting data has a key=>value structure. Each data call has its own output fields, which are detailed in the individual sections. The common fields that are provided by every call are: key type value status string Indicates the status of the result of the data call. Possible values are \"ok\" for a successful query, \"error\" for unsuccessful query and \"maintenance\" in case the data call is undergoing maintenance. In case of an error see the messages field for details. status_code integer Same as the HTTP status code. In case of server errors the HTTP status code will be set appropriately. data_call_status string Indicates the status of the data call. Possible values: supported This data call is meant to be stable and without bugs. Any bugs reported will be fixed asap. deprecated(usually provided with an expiration date) This data call is meant to be deprecated and is about to be removed either by the expiration date or soon. PLEASE CHECK ON THIS FLAG REGULARLY IF YOU WANT TO HAVE A RELIABLE SOURCE OF DATA! development This data call is currently work in",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

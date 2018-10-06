@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Router> enable",
+            "clear ipv6 ospf [process-id] events Example: Router# clear ipv6 ospf 1 events"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Clears the OSPFv3 event log content based on the OSPFv3 routing process ID."
+        ]
+    ],
+    "pageTitle": "IPv6 Implementation Guide, Cisco IOS XE Release 3S - Implementing OSPFv3 [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipv6/configuration/xe-3s/ipv6-xe-3s-book/ip6-ospf.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044160065.87/warc/CC-MAIN-20150728004240-00164-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 369974715,
+    "recordOffset": 369924313,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{98623=4.\u00a0\u00a0\u00a0 no compatible rfc1583, 16528=These rules apply when the same ASBR is reachable through multiple areas, or when trying to decide which of several AS-external-LSAs should be preferred. In the former case the paths all terminate at the same ASBR, and in the latter the paths terminate at separate ASBRs or forwarding addresses. In either case, each path is represented by a separate routing table entry. This feature applies only when RFC 1583 compatibility is set to disabled using the no compatibility rfc1583 command (RFC 5340 provides an update to RFC 1583).}",
+    "TableContextTimeStampAfterTable": "{323304=RFC 2402, 150113=Router(config-if) ipv6 ospf encryption ipsec spi 1001 esp null sha1 123456789A123456789B123456789C123456789D, 215179=Device(config-router)# no compatible rfc1583, 149876=Router(config-if)# ospfv3 encryption ipsec spi 1001 esp null md5 0 27576134094768132473302031209727, 322751=RFC 1583, 5376=Router(config-router)# auto-cost reference-bandwidth 1000, 13872=Router(config-router)# queue-depth update 1500, 323574=RFC 2406, 323011=RFC 2401}",
+    "textBeforeTable": "DETAILED STEPS 2.\u00a0\u00a0\u00a0 clear ipv6 ospf [process-id] events 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS Clearing the Content of an Event Log Enables event logging. \u00a0 Router(config-rtr)# event-log size 10000 one-shot \u00a0 Example: event-log [size [number of events]] [one-shot] [pause] Step\u00a04 Enables OSPFv3 router configuration mode. \u00a0 Router(config)# ipv6 router ospf 1 \u00a0 Example: ipv6 router ospf process-id Step\u00a03 Enters global configuration mode. \u00a0 Router# configure terminal \u00a0 Example: configure terminal",
+    "textAfterTable": "Calculating OSPFv3 External Path Preferences per RFC 5340 SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 router ospfv3 [process-id] 4.\u00a0\u00a0\u00a0 no compatible rfc1583 DETAILED STEPS \u00a0 Command or Action Purpose Step\u00a01 enable Example: Device> enable \u00a0 Enables privileged EXEC mode. Enter your password if prompted. \u00a0 Step\u00a02 configure terminal Example: Device# configure terminal \u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

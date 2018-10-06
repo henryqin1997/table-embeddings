@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "First Party Legal Entity",
+            "EMEA LE",
+            "GB LE",
+            "FR LE",
+            "DE LE",
+            "APAC LE",
+            "AU LE",
+            "SI LE",
+            "NZ LE",
+            "NAM LE",
+            "US LE",
+            "CA LE"
+        ],
+        [
+            "Country",
+            "UK",
+            "UK",
+            "FR",
+            "DE",
+            "AU",
+            "AU",
+            "SI",
+            "NZ",
+            "US",
+            "US",
+            "CA"
+        ]
+    ],
+    "pageTitle": "Oracle Fusion Applications Procurement Implementation Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E25054_01/fusionapps.1111/e20383/F274736AN2DBDD.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00078-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73671575,
+    "recordOffset": 73615728,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{17650=For example, if the Cutoff Day is 11, Day of Month is 15, and Months Ahead is 0, and you enter an invoice with a terms date of January 12, the installment due date is February 15. If Months Ahead is 1, the installment due date is March 15. If the Cutoff Day is 11, Day of Month is 15, and Months Ahead is 0, and you enter an invoice with a terms date of January 10, the installment due date is January 15., 65399=1000 USD, 66301=The following table illustrates the calculation methodology used with each of these options when a transaction line amount is 1000 USD and the applicable tax rate is 10% of the taxable basis amount, for example, line amount:, 203067=The end date is defined as the last date that the object can be active. The object is end dated one second after the date specified by the value of End Date, that is the next day at 12:00:01 a.m. You cannot set the end date in the past. Also, you can change the end date from a condition when the object is ended to a new end date greater than or equal to the system date, causing the object to go from inactive to active. The end date value is optional during catalog or category creation., 65336=1100 USD, 65440=1000 USD * 10/100, 90790=ABC Corporation is a business with a chain of bookstores across Canada. It intends to implement the Oracle Fusion Tax solution at its store in the province of Alberta. The GST rate of 5% is applicable for sales in Alberta. Input Tax Credit is available for GST included in purchases. ABC Corporation's primary ledger is CA Ledger, and the business unit is CA Operations. The tax account 0001-1500-1100-1000 is reserved for the Tax Recoverable or Liability account., 65217=1000 USD * 10/110}",
+    "lastModified": "Thu, 20 Sep 2012 17:59:55 GMT",
+    "textBeforeTable": "The legal entities for: To create the appropriate tax configurations, you must set up the following: Prerequisites Create tax regimes for each country and the appropriate tax configuration options. Sales, marketing, and manufacturing organization has a first party legal entity and business unit. Countries which have the regional corporate centers have a first party legal entity and business unit for each corporate center. Each country has a single first party legal entity with a single business unit, except for: Europe, Middle East, and Africa (EMEA), based in London, UK Asian and Pacific (APAC), based in Melbourne, Australia North America (NAM), based in Redwood City, California, US Your company has their regional centers in: This example demonstrates how you set up the appropriate tax configuration options for your company that has three regional centers. These centers are responsible for tax setup and maintenance among other corporate activities. Each of these regional corporate centers is associated with a first party legal entity and business unit. Setting Up Tax Configuration Options: Worked Example The tax determination process uses only the tax exceptions owned by the specific first party organization Party-specific configuration The tax determination process uses only the tax exceptions defined and maintained by the global configuration owner. Common configuration Tax Exceptions Available Configuration",
+    "textAfterTable": "The sales, marketing, and manufacturing organization's business unit uses the tax configuration of the legal entity. The relevant tax regimes for each country's tax include: Region Country Tax Regime Tax EMEA United Kingdom GB VAT GB VAT EMEA France FR VAT FR VAT EMEA Germany DE VAT DE VAT APAC Australia AU GST AU GST APAC Singapore SI VAT SI VAT APAC New Zealand NZ VAT NZ VAT NAM United States US SALES TAX US STATE SALES TAX US COUNTY SALES TAX US CITY SALES TAX NAM Canada CA HST & GST CA HST CA GST Setting Up Tax Configuration Options",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

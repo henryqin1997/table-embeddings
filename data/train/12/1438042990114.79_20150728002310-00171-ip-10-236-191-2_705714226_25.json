@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "id",
+            "78316",
+            "77508",
+            "74883",
+            "74278",
+            "65077"
+        ],
+        [
+            "Description",
+            "GNU C Library (glibc) Multiple Function EMFILE Error Handling Remote DoS",
+            "GNU C Library time/tzfile.c __tzfile_read() Function Timezone File Handling R...",
+            "GNU C Library addmntent Function mtab Write RLIMIT_FSIZE Value Handling Local...",
+            "GNU C Library ldd LD_TRACE_LOADED_OBJECTS Check Modified Executable Loader Lo...",
+            "GNU C Library ld.so elf/dynamic-link.h elf_get_dynamic_info Crafted ELF Progr..."
+        ]
+    ],
+    "pageTitle": "RHSA-2012:0126 - Alert Detail - Security Database",
+    "title": "",
+    "url": "http://www.security-database.com/detail.php?alert=RHSA-2012:0126",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00171-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 705740919,
+    "recordOffset": 705714226,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{3488=An integer overflow flaw, leading to a heap-based buffer overflow, was found in the way the glibc library loaded ELF (Executable and Linking Format) files. If a carefully-crafted ELF file was loaded by an application linked against glibc, it could cause the application to crash or, potentially, execute arbitrary code with the privileges of the user running the application. (CVE-2010-0830), 2820=An integer overflow flaw, leading to a heap-based buffer overflow, was found in the way the glibc library read timezone files. If a carefully-crafted timezone file was loaded by an application linked against glibc, it could cause the application to crash or, potentially, execute arbitrary code with the privileges of the user running the application. (CVE-2009-5029), 5313=599056 - CVE-2010-0830 glibc: ld.so d_tag signedness error in elf_get_dynamic_info 688980 - CVE-2011-1089 glibc: Suid mount helpers fail to anticipate RLIMIT_FSIZE 692393 - CVE-2009-5064 glibc: ldd unexpected code execution issue 761245 - CVE-2009-5029 glibc: __tzfile_read integer overflow to buffer overflow 767299 - CVE-2011-4609 glibc: svc_run() produces high cpu usage when accept() fails with EMFILE error, 3206=A flaw was found in the way the ldd utility identified dynamically linked libraries. If an attacker could trick a user into running ldd on a malicious binary, it could result in arbitrary code execution with the privileges of the user running ldd. (CVE-2009-5064), 3898=It was found that the glibc addmntent() function, used by various mount helper utilities, did not handle certain errors correctly when updating the mtab (mounted file systems table) file. If such utilities had the setuid bit set, a local attacker could use this flaw to corrupt the mtab file. (CVE-2011-1089), 5058=This update is available via the Red Hat Network. Details on how to use the Red Hat Network to apply this update are available at https://access.redhat.com/kb/docs/DOC-11259, 4225=A denial of service flaw was found in the remote procedure call (RPC) implementation in glibc. A remote attacker able to open a large number of connections to an RPC service that is using the RPC implementation from glibc, could use this flaw to make that service use an excessive amount of CPU time. (CVE-2011-4609), 186826=28 July 2014, 187636=Copyright Security-Database 2006-2015 - Powered by themself ;) in\u00a00.4297s\u00a0, 186368=06 July 2015, 4560=Red Hat would like to thank the Ubuntu Security Team for reporting CVE-2010-0830, and Dan Rosenberg for reporting CVE-2011-1089. The Ubuntu Security Team acknowledges Dan Rosenberg as the original reporter of CVE-2010-0830.}",
+    "textBeforeTable": "this. This Alert is flagged as TOP 25 Common Weakness Enumeration from CWE/SANS. For more information, you can read Executive Summary 6.9- RHSA-2012:0126 \u00a0 OVAL : Open Vulnerability and Assessment Language CWE : Common Weakness Enumeration CAPEC : Common Pattern Enumeration CVE : Common Vulnerability Enumeration Contacts About us About US Blog CVSS Calculator OVAL Definitions OVAL Repository CPE : Common Plateform Enumeration DPE : Default Password Enumeration CAPEC : Common Pattern Enumeration CWE : Common Weakness Enumeration vDNA : Vulnerability DNA API Documentation vDNA : Vulnerability DNA API Resources HP VMware US-CERT Gentoo",
+    "textAfterTable": "Last vendor Modification 2012-02-13 Severity (Vendor) Moderate Revision 01 Security-Database Scoring CVSS v2 Cvss vector : (AV:L/AC:M/Au:N/C:C/I:C/A:C) Cvss Base Score 6.9 Attack Range Local Cvss Impact Score 10 Attack Complexity Medium Cvss Expoit Score 3.4 Authentication None Required Calculate full CVSS 2.0 Vectors scores Detail Problem Description: Updated glibc packages that fix multiple security issues are now available for Red Hat Enterprise Linux 5. The Red Hat Security Response Team has rated this update as having moderate security impact. Common Vulnerability Scoring System (CVSS) base scores, which give detailed severity ratings, are available for each vulnerability from the CVE links in the References section. 2. Relevant releases/architectures: Red Hat Enterprise Linux (v. 5 server) - i386, ia64, ppc, s390x, x86_64 Red Hat Enterprise Linux Desktop (v. 5 client) - i386, x86_64 3. Description: The glibc packages contain the standard C libraries used by multiple programs on the system. These packages contain the standard C and the standard math libraries. Without these two libraries, a Linux system cannot function properly. An integer overflow flaw, leading to a heap-based buffer overflow, was found in the way the glibc library read timezone files. If a carefully-crafted timezone file was loaded by an application linked against glibc, it could cause the application to crash or, potentially,",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

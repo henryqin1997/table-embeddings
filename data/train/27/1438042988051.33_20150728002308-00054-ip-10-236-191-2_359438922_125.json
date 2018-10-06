@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "Release",
+            "Release 3.7.2",
+            "Release 4.2.0"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "The keyword tunnel-tp was introduced."
+        ]
+    ],
+    "pageTitle": "Cisco ASR 9000 Series Aggregation Services Router VPN and Ethernet Services Command Reference, Release 4.3.x - Point to Point Layer 2 Services Commands [Cisco ASR 9000 Series Aggregation Services Routers] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/asr9000/software/asr9k_r4-3/lxvpn/command/reference/b_vpn_cr43xasr9k/b_lxvpn_cr42asr9k_chapter_011.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 125,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988051.33/warc/CC-MAIN-20150728002308-00054-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 359510851,
+    "recordOffset": 359438922,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{232317=Value of the PWHE Ethernet interface. The range is from 1 to 32768.}",
+    "textBeforeTable": "Syntax Description value pw-id IP-address neighbor backup no value pw-id IP-address neighbor backup To configure the backup pseudowire for the cross-connect, use the backup command in L2VPN xconnect p2p pseudowire configuration mode. To disable this feature, use the no form of this command. backup (L2VPN) xconnect group ttl (l2vpn) transport mode vlan passthrough transport mode (L2VPN) tos (l2vpn) tag-impose source (p2p) show l2vpn xconnect show l2vpn trace show l2vpn resource show l2vpn pwhe show l2vpn pw-class show l2vpn provision queue show l2vpn nsr show l2vpn index show l2vpn generic-interface-list show l2vpn forwarding message counters show l2vpn forwarding show l2vpn discovery show l2vpn database show l2vpn collaborators show l2vpn atom-db show l2vpn show generic-interface-list sequencing (L2VPN) p2p pw-grouping pw-ether pw-class encapsulation mpls pw-class encapsulation l2tpv3 pw-class (L2VPN) protocol l2tpv3 preferred-path nsr (L2VPN)",
+    "textAfterTable": "None Command Modes L2VPN xconnect p2p pseudowire configuration Command History Release Modification Release 3.7.2 This command was introduced. Usage Guidelines Use the backup command to enter L2VPN xconnect p2p pseudowire backup configuration mode. Task ID Task ID Operations l2vpn read, write Examples The following example shows how to configure backup pseudowires:  RP/0/RSP0/CPU0:router# configure RP/0/RSP0/CPU0:router(config)# l2vpn RP/0/RSP0/CPU0:router(config-l2vpn)# xconnect group gr1 RP/0/RSP0/CPU0:router(config-l2vpn-xc)# p2p p001 RP/0/RSP0/CPU0:router(config-l2vpn-xc-p2p)# neighbor 10.1.1.1 pw-id 2 RP/0/RSP0/CPU0:router(config-l2vpn-xc-p2p-pw)# backup neighbor 10.2.2.2 pw-id 5 RP/0/RSP0/CPU0:router(config-l2vpn-xc-p2p-pw-backup)# Related Commands Command Description",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

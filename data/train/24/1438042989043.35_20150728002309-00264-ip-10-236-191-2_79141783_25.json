@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "D3",
+            "0",
+            "0",
+            "1",
+            "1"
+        ],
+        [
+            "D2",
+            "0",
+            "1",
+            "0",
+            "0"
+        ],
+        [
+            "Description",
+            "32K Intrinsic RAM",
+            "Expansion ROM",
+            "32K Expansion RAM",
+            "Cartridge ROM"
+        ]
+    ],
+    "pageTitle": "ADAM Technical Manual",
+    "title": "",
+    "url": "http://drushel.cwru.edu/atm/atm.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989043.35/warc/CC-MAIN-20150728002309-00264-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 79179619,
+    "recordOffset": 79141783,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{2717=\u00a9 1984 Coleco Industries, Inc. All rights reserved, 74755=The comparator interfaces the data drive 6801 to AdamNet. The RAM circuitry consists of two 1024 x 4 RAM integrated circuits, connected in parallel to provide an 8-bit data bus., 828=\u00a9 1984 Coleco Industries, Inc., 932=ADAMTM, SmartBasicTM, SmartWRITERTM, and AdamNETTM are trademarks of Coleco Industries, Inc. ColecoVision\u00ae is a registered trademark of Coleco Industries, Inc. Buck RogersTM indicates a trademark of the Dillie Family Trust \u00a9 1982 The Dille Family Trust. Planet of ZoomTM and SEGA\u00ae are trademarks of SEGA Enterprises, Inc. \u00a9 1982 SEGA Enterprises, Inc., 109625=Data is stored on tape in blocks of 1K (1024 bytes). An EOS file occupies a number of contiguous blocks, allocated upon file creation. EOS files can be any number of blocks, but are limited by the physical storage space available., 23649=The 6801 chip provides 2048 bytes of ROM, 128 bytes of RAM, and a UART. The Master 6801 is configured for single chip mode operation and runs, as do Adam's other 6801s, at a 1 MHz rate. This frequency is derived from an external 4 MHz crystal and the 6801's internal divide-by-4 circuitry., 69672=The RF modulator uses the 1889 chip to interface audio, color difference, and luminance signals to the antenna terminals of a TV receiver. It consists of two VHF channels, 3 or 4, selectable by a slide switch with determined LC tank circuits. The chroma subcarrier is derived from the 3.58 MHz system clock to ensure accuracy and stability. The sound oscillator's frequency modulator is achieved by using a 4.5 MHz tank circuit and deviating the center frequency via a varactor diode. Due to the incompatible signal level between the VDP 9928 and the 1889, a DC restoration circuit ensures the DC level of the video signal, 109991=The EOS file manager accesses and controls a file through a File Control Block (FCB) maintained in RAM. The FCB contains static and dynamic information about the file. THe FCB is created when a file is opened and destroyed when the file is closed. Application programs are limited to two FCBs at any one time. Each FCB is 36 bytes long. A data buffer, 1024 bytes long, is associated with each FCB.}",
+    "lastModified": "Mon, 17 Sep 2007 19:21:22 GMT",
+    "textBeforeTable": "The expansion port is connected to the Memory and I/O Board at P1. 2.1.8\u00a0\u00a0Expansion Port This connector allows for expansion RAM and/or ROM up to 64K bytes, and is labelled J5. 2.7.1c\u00a0\u00a0Connector #3 This connector is designed for expansion ROM and I/O devices and is soldered to the Memory and I/O Board. It is labelled J6. 2.1.7b\u00a0\u00a0Connector #2 This connector is soldered to the Memory and I/O Board, and is labelled J7. 2.1.7a\u00a0\u00a0Connector #1 Three card edge connectors are provided for future development. Refer to Subsection 2.1.9 for pin connections. 2.1.7\u00a0\u00a0Card Edge Expansion Connectors A quad comparator circuit provides data to and from the Master 6801 microcomputer via a half-duplex 62.5 kilobaud serial network called AdamNET. The comparator can also reset all the devices on AdamNET via MIOC control. AdamNET links the tape drive, printer, and keyboard to the Master 6801. Each of these peripherals has a 6801 and a quad comparator circuit that controls AdamNET. Besides the data signal and reset signal, ground and power are provided as part of the AdamNET bus. 2.1.6.\u00a0\u00a0AdamNet Interface Circuitry The dynamic RAM circuit consists of eight 64K RAM chips arranged so that each represents one specific data bus bit. Information written to or read from RAM is controlled by the /BWR, /RAS, and /CAS1 signals. The latched Z80 address bus BA0-BA15 (or BA0-BA6, RA7, BA8-BA15) is provided along with MUX from the MIOC to the two data selector multipexer, which",
+    "textAfterTable": "BD3 Tristate, I/O 1, 2 33 NTSC composite video input, 6 VDC, 1.5 VAC \u00a0 4 BA14 Tristate output 1, 2 34 /GAME_MODE_RESET output \u00a0 5 Y2 LS138 decoder output \u00a0 35 Sound chip 76489 disable, 0 VDC \u00a0 6 Y1 LS138 decoder output \u00a0 36 Not in use \u00a0 7 /HALT input 1, 2 37 BA11 Tristate output 1, 2 8 /BWR Tristate output 1, 2 38 BA12 Tristate output 1, 2 9 /NMI input/output 1 39 VDP Sync/Reset input 1 10 /SPINNER_INT_DISABLE input 1 40 /BIORQ Tristate output \u00a0 11 /BUSRQ input 1 41 Not",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

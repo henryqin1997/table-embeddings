@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "Name",
+            "IPSec",
+            "L2TP",
+            "SSL",
+            "WEP",
+            "WPA",
+            "AES",
+            "PGP",
+            "802.1x"
+        ],
+        [
+            "Meaning",
+            "Internet Protocol Security",
+            "Layer 2 Tunneling Protocol",
+            "Secure Sockets Layer",
+            "Wired Equivalent Privacy",
+            "WiFi Protected Access",
+            "Advanced Encryption Standard",
+            "Pretty Good Privacy",
+            "-"
+        ],
+        [
+            "Function",
+            "Provides authentication and encryption over the internet; works with IPv4 and IPv6; used to secure VPN",
+            "Supports non-TCP/IP protocols VPN over the internet; combines the best features of PPTP and L2F",
+            "Uses a private key to encrypt data that is transferred over the SSL connection; service independent and can secure different network applications",
+            "Encrypts and protects data packets over radio frequencies; does not offer end-end security",
+            "Offers improved data encryption and user authentication using the wireless devices MAC address; uses TKIP encryption",
+            "A cryptographic cipher that uses Rijndael algorithm",
+            "An encryption utility based on public key encryption designed to encrypt email transmissions",
+            "Method for passing EAP over both wired and wireless networks; provides authentication services for wireless networks not using PPP"
+        ]
+    ],
+    "pageTitle": "Network+ Tables & Charts - Proprofs",
+    "title": "",
+    "url": "http://www.proprofs.com/mwiki/index.php/Network%2B_Tables_%26_Charts",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986022.41/warc/CC-MAIN-20150728002306-00185-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 672346443,
+    "recordOffset": 672322255,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sun, 14 Nov 2010 06:08:00 GMT",
+    "textBeforeTable": "Network topologies [edit section] Tables & Charts Thanks to Allister for compiling the tables & charts and sharing it with everyone. [edit section] Acknowledgement You are here: Home > Schools > Comptia > Network+ Certification > Wiki Home > Network+ Wiki search navigation , Jump to: Network+ Tables & Charts From Proprofs Network+ Tables & Charts updateLink(\"ca-watch\", \"/mwiki/skins/monobook/watchIcon.gif\", \" watch\"); updateLink(\"ca-history\", \"/mwiki/skins/monobook/historyIcon.gif\", \" history\"); updateLink(\"ca-edit\", \"/mwiki/skins/monobook/editpageIcon.gif\", \" edit this page\"); updateLink(\"ca-talk\", \"/mwiki/skins/monobook/discussIcon.gif\", \" discuss\"); updateLink(\"ca-nstab-main\", \"/mwiki/skins/monobook/articleIcon.gif\", \" article\");",
+    "textAfterTable": "Ethernet 10, 100, 1000 Mbps CSMA/CD physical star, logical bus UTP, STP, fiber optics 802.5 Token ring 4, 16 Mbps Token passing physical star, logical ring STP 802.11 Wireless networks 1, 11, 54 Mbps CSMA/CA cellular Atmosphere FDDI Fiber Distributed Data Interface 100 Mbps Token passing dual ring Fiber optics Ethernet specifications Designation Cable Type Max Length Speed Connector Topology Standard 10BASE-T Cat3 UTP 100 m 10 Mbps RJ45 star IEEE 802.3i 10BASE-FL MMF 2000 m 10 Mbps ST star IEEE 802.3j 100BASE-TX",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

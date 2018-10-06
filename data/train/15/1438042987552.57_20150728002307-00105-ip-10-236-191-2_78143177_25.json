@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Arguments",
+            "[in] srcLOB",
+            "[in] [optional] amount",
+            "[in] [optional] Offset",
+            "[in] [optional] srcOffset",
+            "[out] IsEqual"
+        ],
+        [
+            "Description",
+            "Input OraBLOB, OraCLOB, or OraBFILE object whose value is to be compared.",
+            "An Integer specifying the number of bytes or characters to compare. The default value of amount is from the Offset to the end of each LOB.",
+            "An Integer specifying the 1-based Offset in bytes (OraBLOB or OraBFILE) or characters (OraCLOB) in the value of this object. Default value is 1.",
+            "An Integer specifying the 1-based Offset in bytes (OraBLOB or OraBFILE) or characters (OraCLOB) in the value of the srcLob object. Default value is 1.",
+            "A Boolean representing the result of a compare operation."
+        ]
+    ],
+    "pageTitle": "Server Methods",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B28359_01/win.111/b28378/sermthod.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987552.57/warc/CC-MAIN-20150728002307-00105-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 78228679,
+    "recordOffset": 78143177,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{7650=The ORATYPE_RAW_BIN ServerType value is used when binding to Oracle Raw columns. A byte array is used to Put or Get values. The maximum allowable size of an ORATYPE_RAW_BIN bind buffers is 2000 bytes when bound to a column of a table and 32 KB when bound to a stored procedure. For example code, see the samples in the ORACLE_BASE\\ORACLE_HOME\\OO4O\\VB\\Raw directory., 50384=The ServerType value ORATYPE_RAW_BIN is used when binding to Oracle Raw columns. A byte array is used to Put or Get values. The maximum allowable size of ORATYPE_RAW_BIN bind buffers is 2000 bytes when bound to a column of a table: the maximum allowable size is 32 KB when bound to a stored procedure. No element (see ElementSize argument) can be greater than 4000 bytes when binding to stored procedures, 2000 bytes against columns of tables. For example code, see the samples in the ORACLE_BASE\\ORACLE_HOME\\OO4O\\VB\\Raw directory.}",
+    "lastModified": "Thu, 09 Jul 2015 23:26:42 GMT",
+    "textBeforeTable": "The arguments for the method are: Arguments IsEqual = OraBfile.Compare srcBfile, amount, Offset, srcOffset IsEqual = OraClob.Compare srcClob, amount, Offset, srcOffset IsEqual = OraBlob.Compare srcBlob, amount, Offset, srcOffset  Usage Compares the specified portion of the LOB value of an OraBLOB or OraCLOB object (or OraBFILE object) to the LOB value of the input OraBLOB or OraCLOB object (or OraBFILE object). Description OraBFILE Object OraBLOB, OraCLOB Objects Applies To Compare (OraLOB) Method      \"Microsoft Transaction Server Support\" Rollback Method ResetTrans Method BeginTrans Method AutoCommit Property See Also: End Sub MsgBox \"Salary changes committed.\" OraSession.CommitTrans 'End Transaction processing. Commit the changes to the database 'to the database. 'Currently, the changes have NOT been committed MsgBox \"All salaries set to ZERO.\" Loop OraDynaset.MoveNext OraDynaset.Update fld.value = 0 OraDynaset.Edit Do Until OraDynaset.EOF = True 'Traverse until EOF is reached, setting each employees salary to zero. Set fld = OraDynaset.Fields(\"sal\") 'Setup a field object to save object references. OraSession.BeginTrans 'Start Transaction processing. Set OraDynaset = OraDatabase.CreateDynaset(\"select * from emp\", 0&) 'Create the OraDynaset Object. Set OraDatabase = OraSession. OpenDatabase(\"ExampleDb\", \"scott/tiger\", 0&) 'Create the OraDatabase Object by opening a connection to Oracle. Set OraSession =",
+    "textAfterTable": "Remarks The Compare method returns True if comparison succeeds; otherwise, it returns False. If the amount to be compared causes the comparison to take place beyond the end of one LOB but not beyond the end of the other, the comparison fails. Such a comparison could succeed only if the amount of data from the Offset to the end is the exactly the same for both LOBs. This call is currently implemented by executing a PL/SQL block that utilizes DBMS_LOB.INSTR(). ConnectSession Method Applies To OraSession Object Description Returns the OraSession object with the specified name that is associated with the OraClient object of the specified session. Usage  Set orasession2 = orasession1.ConnectSession(session_name) Arguments The arguments for the method are: Arguments Description session_name A String specifying the name of the session. Remarks This method is provided for simplicity and is equivalent to iterating through the OraSessions collection of the OraClient object of the current session and searching for a session named session_name. The OraSessions collection contains only sessions created through the",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Command",
+            "pax",
+            "tar",
+            "cpio"
+        ],
+        [
+            "Function",
+            "Copy files, special files, or file systems that require multiple tape volumes or when you want to copy files to and from POSIX-compliant systems",
+            "Copy files and directory subtrees to a single tape",
+            "Copy files, special files, or file systems that require multiple tape volumes or when you want to copy files from SunOS 5.8 systems to SunOS 4.0/4.1 systems"
+        ],
+        [
+            "Advantages",
+            "Better portability than the tar or cpio commands for POSIX-compliant systems Multi-vendor support",
+            "Available on most UNIX operating systems Public domain versions are readily available",
+            "Packs data onto tape more efficiently than tar Skips over any bad spots in a tape when restoring. Provides options for writing files with different header formats (tar, ustar, crc, odc, bar) for portability between different system types Creates multi-tape volumes"
+        ],
+        [
+            "Disadvantages",
+            "See disadvantages for tar command, except that pax can create multi-tape volumes",
+            "Is not aware of file system boundaries Full pathname length cannot exceed 255 characters Does not copy empty directories or special files such as device files Cannot be used to create multi-tape volumes",
+            ""
+        ]
+    ],
+    "pageTitle": "Chapter 46 Copying UFS Files and File Systems (Tasks) (System Administration Guide, Volume 1)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19455-01/805-7228/6j6q7uf1u/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00253-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73109588,
+    "recordOffset": 73093194,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{75377=ustar or USTAR - IEEE/P1003 Data Interchange}",
+    "lastModified": "Thu, 03 Feb 2011 11:24:20 GMT",
+    "textBeforeTable": "Table 46-1 When to Use Various Backup Commands The table below describes when to use the various backup commands. When you need to back up and restore complete file systems, use the ufsdump and ufsrestore commands described in Chapter\u00a045, The ufsdump and ufsrestore Commands (Reference). When you want to copy or move individual files, portions of file systems, or complete file systems, you can use the procedures described in this chapter as an alternative to ufsdump and ufsrestore. Commands for Copying File Systems \"How to Retrieve bar Files From a Diskette\" \"How to Create an Archive for Older SunOS Releases\" \"How to Archive Files to Multiple Diskettes\" \"How to Retrieve Files From a Diskette (tar)\" \"How to List the Files on a Diskette (tar)\" \"How to Copy Files to a Single Formatted Diskette (tar)\" \"How to Extract Files From a Remote Tape Drive\" \"How to Copy Files to a Remote Tape Drive (tar and dd)\" \"How to Retrieve Specific Files From a Tape (cpio)\" \"How to Retrieve All Files From a Tape (cpio)\" \"How to List the Files on a Tape (cpio)\" \"How to Copy",
+    "textAfterTable": "volcopy Yes\u00a0 Yes\u00a0 Physical\u00a0 tar No\u00a0 No\u00a0 Logical\u00a0 cpio No\u00a0 Yes\u00a0 Logical\u00a0 pax Yes\u00a0 Yes\u00a0 Logical\u00a0 dd Yes\u00a0 No\u00a0 Physical\u00a0 ufsdump/ufsrestore Yes\u00a0 Yes\u00a0 Logical\u00a0 The following sections describe the advantages and disadvantages of each method and provide examples of how to use the commands. Copying File Systems Between Disks Two commands are used to copy file systems between disks: volcopy dd The next section describes how to use the dd command to copy file systems between disks. Making a Literal File System Copy The dd command makes a literal (block-level) copy of a complete UFS file system to another file system or to a tape.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

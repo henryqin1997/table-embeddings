@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "ld",
+            "base",
+            "scope",
+            "filter",
+            "attrs",
+            "attrsonly",
+            "tv",
+            "res"
+        ],
+        [
+            "Description",
+            "A valid LDAP session handle.",
+            "The DN of the entry at which to start the search.",
+            "One of SCOPE_BASE (0x00), SCOPE_ONELEVEL (0x01), or SCOPE_SUBTREE (0x02), indicating the scope of the search.",
+            "A character string representing the search filter. The value NULL can be passed to indicate that the filter \"(objectclass=*)\", which matches all entries, is to be used.",
+            "A collection of strings indicating which attributes to return for each matching entry. Passing NULL for this parameter causes all available user attributes to be retrieved. The special constant string NO_ATTRS (\"1.1\") may be used as the only string in the array to indicate that no attribute types are to be returned by the server. The special constant string ALL_USER_ATTRS (\"*\") can be used in the attrs array along with the names of some operational attributes to indicate that all user attributes plus the listed operational attributes are to be returned.",
+            "A boolean value that must be zero if both attribute types and values are to be returned, and nonzero if only types are wanted.",
+            "The time out value, expressed in seconds and microseconds, that should be used for this search.",
+            "This is a result parameter which contains the results of the search upon completion of the call. If no results are returned, *res is set to NULL."
+        ]
+    ],
+    "pageTitle": "DBMS_LDAP PL/SQL Reference - 11g Release 1 (11.1.1)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E28271_01/oid.1111/e10186/dbmsldap_ref.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987552.57/warc/CC-MAIN-20150728002307-00292-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 69552751,
+    "recordOffset": 69520227,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{20637=31202, 21519=31204, 21138=31203, 22385=31206, 21964=31205}",
+    "lastModified": "Thu, 20 Sep 2012 07:50:18 GMT",
+    "textBeforeTable": "Table 9-22 SEARCH_ST Function Parameters Parameters RETURN PLS_INTEGER; ) res OUT MESSAGE tv IN TIMEVAL, attronly IN PLS_INTEGER, attrs IN STRING_COLLECTION, filter IN VARCHAR2, scope IN PLS_INTEGER, base IN VARCHAR2, ld IN SESSION, ( FUNCTION search_st Syntax  The function search_st() performs a synchronous search in the LDAP server with a client-side time out. It returns control to the PL/SQL environment only after all of the search results have been sent by the server or if the search request is timed out by the client or the server. 9.4.7 FUNCTION search_st      DBMS_LDAP.search_st(), DBMS_LDAP.first_entry(), DBMS_LDAP.next_entry. See Also  The function search_s() issues a search operation and does not return control to the user environment until all of the results have been returned from the server. Entries returned from the search, if any, are contained in the res parameter. This parameter is opaque to the caller. Entries, attributes, and values can be extracted by calling the parsing routines described in this chapter. Usage Notes   For all other errors. The error string associated with this exception explains the error in detail.",
+    "textAfterTable": "Return Values Table 9-23 SEARCH_ST Function Return Values Value Description PLS_INTEGER DBMS_LDAP.SUCCESS if the search operation succeeded. An exception is raised in all other cases. res If the search succeeded and there are entries, this parameter is set to a non-null value which can be used to iterate through the result set. Exceptions Table 9-24 SEARCH_ST Function Exceptions Exception Description invalid_session Raised if the session handle",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

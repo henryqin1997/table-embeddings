@@ -1,0 +1,35 @@
+{
+    "relation": [
+        [
+            "Directive",
+            "pcre.backtrack_limit",
+            "pcre.recursion_limit"
+        ],
+        [
+            "Local Value",
+            "100000",
+            "100000"
+        ],
+        [
+            "Master Value",
+            "100000",
+            "100000"
+        ]
+    ],
+    "pageTitle": "phpinfo()",
+    "title": "",
+    "url": "http://www.hammercollection.com/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.92/warc/CC-MAIN-20150728002310-00015-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 483081270,
+    "recordOffset": 483073068,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "",
+    "textAfterTable": "Configure Command cscript /nologo configure.js \"--enable-snapshot-build\" \"--with-gd=shared\" Server API ISAPI Virtual Directory Support enabled Configuration File (php.ini) Path C:\\WINDOWS Loaded Configuration File C:\\WINDOWS\\php.ini PHP API 20041225 PHP Extension 20060613 Zend Extension 220060519 Debug Build no Thread Safety enabled Zend Memory Manager enabled IPv6 Support enabled Registered PHP Streams php, file, data, http, ftp, compress.zlib Registered Stream Socket Transports tcp, udp Registered Stream Filters convert.iconv.*, string.rot13, string.toupper, string.tolower, string.strip_tags, convert.*, consumed, zlib.* This program makes use of the Zend Scripting Language Engine: Zend\u00a0Engine\u00a0v2.2.0,\u00a0Copyright\u00a0(c)\u00a01998-2007\u00a0Zend\u00a0Technologies PHP Credits Configuration PHP Core Directive Local Value Master Value allow_call_time_pass_reference Off Off allow_url_fopen On On allow_url_include Off Off always_populate_raw_post_data Off",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

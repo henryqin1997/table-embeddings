@@ -1,0 +1,110 @@
+{
+    "relation": [
+        [
+            "To RI->From OI",
+            "Pre V5.3-003 or",
+            "OpenVMS",
+            "V5.3-003",
+            "V5.3-004 / V5.3-004A",
+            "V5.4-000 / V5.4-000A",
+            "V5.4-001",
+            "V5.4-002",
+            "V5-4+ future (expected)"
+        ],
+        [
+            "Pre-V5.3-003 or OpenVMS+",
+            "NO",
+            "NO",
+            "NO",
+            "NO",
+            "NO",
+            "NO",
+            "NO",
+            "NO"
+        ],
+        [
+            "V5.3-003",
+            "?",
+            "YES *",
+            "YES",
+            "YES",
+            "YES*",
+            "YES*",
+            "YES*",
+            "YES*"
+        ],
+        [
+            "V5.3-004 / V5.3-004A",
+            "?",
+            "YES*",
+            "YES",
+            "YES",
+            "YES*",
+            "YES*",
+            "YES*",
+            "YES*"
+        ],
+        [
+            "V5.4-000 / V5.4-000A",
+            "?",
+            "YES*",
+            "YES",
+            "YES",
+            "YES*",
+            "NO",
+            "NO",
+            "NO"
+        ],
+        [
+            "V5.4-001",
+            "?",
+            "YES*",
+            "YES",
+            "YES",
+            "YES*",
+            "YES*",
+            "NO",
+            "NO"
+        ],
+        [
+            "V5.4-002",
+            "?",
+            "YES*",
+            "YES",
+            "YES",
+            "YES*",
+            "YES*",
+            "YES*",
+            "YES*"
+        ],
+        [
+            "Future (anticipated)",
+            "?",
+            "YES*",
+            "YES",
+            "YES",
+            "YES*",
+            "YES*",
+            "YES*",
+            "YES*"
+        ]
+    ],
+    "pageTitle": "GT.M V5.4-002B Release Notes",
+    "title": "",
+    "url": "http://tinco.pair.com/bhaskar/gtm/doc/articles/GTM_V5.4-002_Release_Notes.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992201.62/warc/CC-MAIN-20150728002312-00132-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 242322443,
+    "recordOffset": 242266257,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{92773=C9B04-001673, 167504=FOR accepts a subscripted control variable in all circumstances. In addition it provides better detection, handling and reporting of cases where the control variable is KILL\u2019d within the scope of the FOR. Note that NOUNDEF, which treats undefined values as the empty string, does not apply to missing FOR control variables when they are incremented, as that would tend to create apparently unintended indefinite loops. For example FOR A=1:1:10 KILL A gives an UNDEF error on the increment from 1 to 2 even in NOUNDEF mode. In V5.4-002 the most troublesome constructs gave a FORCTRLINDX error; prior to that they could produce unreliable results including segmentation violation (UNIX SIG-11 and OpenVMS ACCVIO). In addition, when the control variable disappeared in the scope of the FOR, the UNDEF message sometimes did not contain the name of the variable. (C9L03-003392), 90872=S9K08-002783, 91113=S9K10-002786, 158420=M-profiling more accurately reports time for large M programs with extensive routine invocations and tracks nested invocations as long as GT.M has available stack. In V5.4-002A, M-profiling over-reported time and, upon exceeding 1024 levels of nesting, aggregated all further time in one special entry. Note that the M-profiling changes in V5.4-002A were still more representative of relative time spent than in earlier versions. (C9L04-003409), 77349=S9I05-002683, 30483=GT.M should also run on recent releases of other major Linux distributions with a contemporary 2.6 Linux kernel, glibc (version 2.5-49 or later) and ncurses (version 5.5-24 or later). The minimum CPU must have the instruction set of a 686 (Pentium Pro) or equivalent., 93733=C9D11-002456, 78065=S9L06-002816, 79008=S9L06-002822, 91810=S9I05-002990, 112130=The new local variable implementation fixed an issue in collation that affected alternative collation for globals as well; refer to C9905-001087., 94580=C9H02-002826, 94799=C9H08-002889, 5608=Added an entry for S9I05-002990., 93035=C9B11-001805, 78805=S9L06-002821, 88068=S9D12-002400, 77598=S9I12-002716, 89153=See C9H02-002826., 793=Copyright \u00a9 2011 Fidelity Information Services, Inc. All Rights Reserved, 90619=S9K07-002782, 532=Copyright \u00a9 2011 Fidelity National Information Services, Inc., 89725=S9K05-002770, 89966=S9K05-002773, 113399=While the numeric anomaly cleanup relates to the handling of numbers, it could affect unusual global subscripts; refer to C9H02-002826., 83660=S9L04-002809, 78295=S9L06-002817, 78562=S9L06-002820, 83453=S9L03-002807, 92526=C9B03-001660, 29325=GT.M should also run on recent releases of other major Linux distributions with a contemporary 2.6 Linux kernel, glibc (version 2.5-24 or later) and ncurses (version 5.5 or later)., 89263=S9I04-002680, 92292=C9905-001087, 93523=C9D07-002340, 90377=S9K07-002781, 91597=S9K12-002798, 91356=S9K10-002787, 89041=S9F05-002547, 88313=S9E02-002419, 93278=C9C01-001892, 87958=See C9H02-002826., 88558=S9E02-002420, 3759=Improved the description of S9I12-002716., 94375=C9H02-002824, 142847=$NEXT(), which is deprecated, handles a constructed string that evaluates to -1 as a \"starting value\" and therefore picks up large negative subscripts (S9D06-002331, S9F05-002547, C9H02-002826), 1825=November 29, 2011, 93947=C9E11-002658, 139802=ZGOTO accepts a negative level and treats it as $zlevel-intexpr. In prior versions, negative arguments produced a ZGOTOLTZERO error. GT.M handles all identified ZGOTO cases correctly, including ZLINKFILE, INVOBJ, MEMORY (exhausted), GTMASSERT errors and various signals on UNIX and ACCVIOs on OpenVMS. (S9606-000216, C9D06-002318, C9H04-002845), 89493=S9K02-002753, 5525=Changed C9L03-003389 to S9J10-002744., 88805=S9E04-002445, 2528=In S9J10-002744, corrected the syntax of ZHALT., 22326=GT.M should also run on recent releases of other major Linux distributions with a contemporary 2.6 Linux kernel, glibc (version 2.5-24 or later) and ncurses (version 5.5-24 or later). FIS has verified that GT.M passes comprehensive testing on RHEL 5.x on machines that have single cells (no more than 8 CPUs). Multi-cell machines are not considered suitable for production use until they are certified., 87846=S9D06-002331, 83262=S9L03-002804, 6485=Improved the description of S9K10-002786., 28235=GT.M support starts at SuSE Linux Enterprise Server 10 Service Pack 3. On SuSE Linux Enterprise Server 11 or later, we require the installation of the SuSE provided libelf0-0.8.10-37.10, or later, package. Future GT.M releases are likely to no longer support SLES 10 and to support only SLES 11., 90157=S9K06-002779, 85287=S9J10-002744, 77833=S9L06-002813, 94159=C9E12-002687, 77152=S9C01-002024}",
+    "lastModified": "Tue, 29 Nov 2011 09:02:40 GMT",
+    "textBeforeTable": "As of the publication date, FIS supports this release on the following hardware and operating system versions. Contact FIS for a current list of supported platforms. Over time, computing platforms evolve. Vendors obsolete hardware architectures. New versions of operating systems replace old ones. We at FIS continually evaluate platforms and versions of platforms that should be Supported for GT.M. In the table below, we document not only the ones that are currently Supported for this release, but also alert you to our future plans given the evolution of computing platforms. If you are an FIS customer, and these plans would cause you hardship, please contact your FIS account executive promptly to discuss your needs. Platforms V5.4-002 contains numerous fixes, remedied mis-features, and smaller enhancements. For a comprehensive list, refer to Change History. Please refer to the description of C9K09-003324 for changes to the configure script used to install GT.M. A new option generates code to evaluate elements of Boolean expressions in an alternative order that ensures expresion components with side effects evluated before the Boolena evaluation as an alternative to GT.M's default behavior which stops the evaluation of Boolean expressions once the final outcome is determined. An \"unlink all\" capability for UNIX platforms allows a process to disassociate itself from all routines that it has linked, release memory, and continue execution with a new entryref at the top of the",
+    "textAfterTable": "Migrating to 64-bit platforms The same application code runs on both 32-bit and 64-bit platforms. Please note that: You must compile the application code separately for each platform. Even though the M source code is exactly the same, the generated object modules are different even on the same hardware architecture - the object cde differs between x86 and x86_64. Parameter-types that interface GT.M with non-M code using C calling conventions must match the data-types on their target platforms. Mostly, these parameters are for call-ins, external calls, internationalization (collation), and environment translation and are listed in the tables below. Note that most addresses on 64-bit platforms are 8 bytes long and require 8 byte alignment in structures whereas all addresses on 32-bit platforms are 4 bytes long and require 4-byte alignment in structures. Call-ins and External Calls Parameter type 32-Bit 64-bit Remarks gtm_long_t 4-byte (32-bit) 8-byte (64-bit) gtm_long_t is much the same as the C language long type, except on Tru64 UNIX, where GT.M remains a 32-bit application. gtm_ulong_t 4-byte 8-byte",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

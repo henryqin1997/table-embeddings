@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Type",
+            "Capec ID(s)",
+            "CWE ID(s)",
+            "Oval ID(s)",
+            "CPE ID(s)",
+            "osvdb(s)",
+            "ExploitDB Exploit(s)",
+            "Openvas Exploit(s)",
+            "Snort\u00ae Rule(s)",
+            "Nessus\u00ae Exploit(s)"
+        ],
+        [
+            "Count",
+            "11",
+            "2",
+            "10",
+            "32",
+            "10",
+            "5",
+            "40",
+            "2",
+            "81"
+        ]
+    ],
+    "pageTitle": "RHSA-2009:1601 - Alert Detail - Security Database",
+    "title": "",
+    "url": "http://www.security-database.com/detail.php?alert=RHSA-2009:1601",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00184-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 702481587,
+    "recordOffset": 702457319,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{142237=06 July 2015, 143505=Copyright Security-Database 2006-2015 - Powered by themself ;) in\u00a00.4293s\u00a0, 142695=28 July 2014, 2807=A buffer overflow flaw was found in the kdelibs string to floating point conversion routines. A web page containing malicious JavaScript could crash Konqueror or, potentially, execute arbitrary code with the privileges of the user running Konqueror. (CVE-2009-0689), 3470=This update is available via Red Hat Network. Details on how to use the Red Hat Network to apply this update are available at http://kbase.redhat.com/faq/docs/DOC-11259, 3720=539784 - CVE-2009-0689 kdelibs remote array overrun}",
+    "textBeforeTable": "Global Informations Multiple Updates 2014-02-17 11:53:04 Informations Date What's your Password? What's your Email? register. login or If you want to see full details history, please Alert History }); }); $(\".slidingDiv\").slideToggle(); $('.show_hide').click(function(){ $(\".show_hide\").show(); $(\".slidingDiv\").hide(); $(document).ready(function(){ 0",
+    "textAfterTable": "var linkedByIndex = {}; var curLinksData = []; var curNodesData = []; var showDetails; var hideDetails; var curNodesData; var curLinksData; var r = 6; charge = function(node) { return -Math.pow(node.radius, 2.0) / 2; }; setupData = function(data) { var circleRadius, countExtent, nodesMap; countExtent = d3.extent(data.nodes, function(d) { return d.links; }); circleRadius = d3.scale.sqrt().range([3, 12]).domain(countExtent); data.nodes.forEach(function(n) { var randomnumber; n.x = randomnumber = Math.floor(Math.random() * width); n.y = randomnumber = Math.floor(Math.random() * height); return n.radius = circleRadius(n.links); }); nodesMap = mapNodes(data.nodes); data.links.forEach(function(l) { l.source = nodesMap.get(l.source); l.target = nodesMap.get(l.target); return linkedByIndex[\"\" + l.source.id + \",\" + l.target.id] = 1; }); return data; }; mapNodes = function(nodes) { var nodesMap; nodesMap = d3.map(); nodes.forEach(function(n) { return nodesMap.set(n.id, n); }); return nodesMap; }; nodeCounts = function(nodes, attr) { var counts; counts = {}; nodes.forEach(function(d) { var _name; if (counts[_name = d[attr]] == null) { counts[_name] = 0; } return counts[d[attr]] += 1; }); return counts; }; neighboring = function(a, b) { return linkedByIndex[a.id + \",\" + b.id] || linkedByIndex[b.id + \",\" + a.id]; }; updateCenters = function(severities) { if (layout === \"radial\") { return groupCenters = RadialPlacement().center({ \"x\": width / 2, \"y\": height / 2 - 100 }).radius(300).increment(18).keys(severities); } }; updateNodes = function() { node = nodesG.selectAll(\"circle.node\").data(curNodesData, function(d) { return d.id; }); node.enter().append(\"circle\").attr(\"class\", \"node\").attr(\"cx\", function(d) { return d.x; }).attr(\"cy\", function(d) { return d.y; }).attr(\"r\", function(d) { return d.radius; }).on(\"click\", function(d) { var url = \"/detail.php?alert=\" + d.id $(location).attr('href', url); window.location = url; }).style(\"fill\", function(d) { if (\"Critical\" === d.severity) { return \"brown\"; }",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

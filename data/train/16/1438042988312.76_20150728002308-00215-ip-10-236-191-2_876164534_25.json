@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Name",
+            "dfs.http.address",
+            "dfs.datanode.address",
+            "dfs.datanode.http.address",
+            "dfs.datanode.ipc.address",
+            "dfs.secondary.http.address",
+            "mapred.job.tracker.http.address",
+            "mapred.task.tracker.http.address",
+            "mapreduce.history.server.http.address",
+            "templeton.port"
+        ],
+        [
+            "Value",
+            "namenodehost:30070",
+            "0.0.0.0:30010",
+            "0.0.0.0:30075",
+            "0.0.0.0:30020",
+            "0.0.0.0:30090",
+            "jobtrackerhost:30030",
+            "0.0.0.0:30060",
+            "0.0.0.0:31111",
+            "30111"
+        ]
+    ],
+    "pageTitle": "Release notes for Hadoop components on Azure HDInsight | Microsoft Azure",
+    "title": "",
+    "url": "https://azure.microsoft.com/en-us/documentation/articles/hdinsight-release-notes/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988312.76/warc/CC-MAIN-20150728002308-00215-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 876213427,
+    "recordOffset": 876164534,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{1095=United States: 1-800-867-1389 United States: 1-800-867-1389, 211345=HDInsight version 3.1 uses a Hadoop distribution that is based on the Hortonworks Data Platform 2.1.7. This is the default Hadoop cluster created when using the Azure portal after 11/7/2014. HDInsight 3.1 clusters created before 11/7/2014 were based on the Hortonworks Data Platform 2.1.1}",
+    "lastModified": "Fri, 31 Jul 2015 21:24:54 GMT",
+    "textBeforeTable": "This release contains the following updates. SDK 1.5.8 HDInsight 3.2.4.601.1610731 (HDP 2.2.6.1-0011) HDInsight 3.1.4.601.1610731 (HDP 2.1.15.0-2334 - unchanged) HDInsight 3.0.6.601.1610731 (HDP 2.0.13.0-2117 - unchanged) HDInsight 2.1.10.601.1610731 (HDP 1.3.12.0-01795 - unchanged) The full version numbers for HDInsight clusters deployed with this release: Notes for 06/26/2015 release of HDInsight N/A All Service With this release, HDInsight 3.2 deploys HDP 2.2.6.1-0012 Updated HDP versions for HDInsight 3.2 clusters JIRA (if applicable) Cluster Type (for example, Hadoop, HBase, or Storm) Impacted Area (for example, Service, component, or SDK) Description Title This release contains the following updates. SDK 1.5.8 HDInsight 3.2.4.610.1630216 (HDP 2.2.6.1-0012) HDInsight 3.1.4.610.1630216 (HDP 2.1.15.0-2334 - unchanged) HDInsight 3.0.6.610.1630216 (HDP 2.0.13.0-2117 - unchanged) HDInsight 2.1.10.610.1630216 (HDP 1.3.12.0-01795 - unchanged) The full version numbers for HDInsight clusters deployed with this release: Notes for 07/07/2015 release of HDInsight All Service With this release, HDInsight versions have been updated Updated HDInsight versions for all HDInsight clusters JIRA (if applicable) Cluster Type (for example, Hadoop, HBase, or Storm) Impacted Area (for example, Service, component, or SDK) Description Title This release contains the following updates. SDK 1.5.8 HDInsight 3.2.6.635.1684502 (HDP 2.2.6.1-0012 - unchanged) HDInsight 3.1.4.635.1684502 (HDP 2.1.15.0-2334 - unchanged) HDInsight 3.0.6.635.1684502 (HDP 2.0.13.0-2117 - unchanged) HDInsight 2.1.10.635.1684502 (HDP 1.3.12.0-01795 - unchanged) The full version numbers for HDInsight clusters deployed with this release:",
+    "textAfterTable": "Cloud Service All N/A Intermittent MapReduce shuffle issue for HDInsight 3.2 Fix for a rare, intermittent race condition in Map Reduce Shuffle on large clusters resulting in occassional task failures. See MAPREDUCE-6361 for more information. Hadoop Core All MAPREDUCE-6361 Move to Latest Azure Java SDK 2.2 for HDInsight 3.2 Moved to latest version of the Azure SDK for Java used by the WASB driver. The latest SDK has a few fixes and the release notes for the same are available at https://github.com/Azure/azure-storage-java/blob/master/ChangeLog.txt. Hadoop Core All HADOOP-11959 Move to HDP 2.1.15 for HDInsight 3.1 clusters Hortonworks release notes for the release are available here. HDP All N/A Notes for 06/04/2015 release of HDInsight The full version numbers for HDInsight clusters deployed with this release: HDInsight 2.1.10.583.1575584 (HDP 1.3.12.0-01795 - unchanged) HDInsight 3.0.6.583.1575584 (HDP 2.0.13.0-2117 - unchanged) HDInsight 3.1.3.583.1575584 (HDP 2.1.12.1-0003 - unchanged) HDInsight 3.2.4.583.1575584 (HDP 2.2.6.1-1) SDK 1.5.8 This release contains the following updates. Title Description Impacted Area (for example, Service, component, or SDK) Cluster Type (for example, Hadoop, HBase, or Storm) JIRA (if applicable) Fix for 502 bad gateway error for Storm clusters This release fixes a bug affecting the job submission API that caused the website to be down after a reboot. Service Storm N/A Notes for 06/01/2015 release of HDInsight The full version numbers",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

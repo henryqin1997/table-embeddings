@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Router> enable",
+            "Do one of the following: ping mpls ipv4 destination-address /destination-mask-length [repeat count] [exp exp-bits] [verbose] trace mpls ipv4 destination-address /destination-mask-length Example: Router# ping mpls ipv4 10.131.191.252/32 exp 5 repeat 5 verbose Example: Router# trace mpls ipv4 10.131.191.252/32",
+            "exit Example: Router# exit"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Selects an LDP IPv4 prefix FEC for validation.",
+            "Returns to user EXEC mode."
+        ]
+    ],
+    "pageTitle": "MPLS LSP Ping Traceroute for LDP TE and LSP Ping for VCCV\u00a0 [Support] - Cisco Systems",
+    "title": "",
+    "url": "http://www.cisco.com/en/US/docs/ios-xml/ios/mp_em_and_mibs/configuration/15-1mt/mp-ldp-te-lsp-vccv.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00278-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 367836355,
+    "recordOffset": 367777362,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{120628=Router# ping mpls ipv4 10.131.159.251/32 destination 127.0.0.1 127.0.0.2 1 repeat 2 sweep 1450 1475 25, 271146=The IP MTU in the show interface interface-name example is 1500 bytes. Subtract the number of bytes corresponding to the label stack from the MTU number. The output of the show mpls forwarding command indicates that the Tag stack consists of one label (21). Therefore, the largest MPLS echo request packet that can be sent in the LSP is 1500 - (2 x 4) = 1492., 272564=In this command, echo packets that have a range in size from 1492 to 1500 bytes are sent to the destination address. Only packets of 1492 bytes are sent successfully, as indicated by the exclamation point (!). Packets of byte sizes 1493 to 1500 are source-quenched, as indicated by the Qs., 318424=RFC 2113}",
+    "textBeforeTable": "DETAILED STEPS 3.\u00a0\u00a0\u00a0 exit trace mpls ipv4 destination-address /destination-mask-length ping mpls ipv4 destination-address /destination-mask-length [repeat count] [exp exp-bits] [verbose] 2.\u00a0\u00a0\u00a0Do one of the following: 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS Validating an LDP IPv4 FEC by Using MPLS LSP Ping and MPLS LSP Traceroute Returns to global configuration mode. \u00a0 Router(config-mpls)# exit \u00a0 Example: exit Step\u00a06 Sends the Cisco-specific extension of TLVs with echo packets. \u00a0 Router(config-mpls)# echo vendor-extension \u00a0 Example: echo vendor-extension Step\u00a05",
+    "textAfterTable": "Validating a Layer 2 FEC by Using MPLS LSP Ping and MPLS LSP Traceroute SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 ping mpls pseudowire ipv4-address vc-id vc-id 3.\u00a0\u00a0\u00a0 exit DETAILED STEPS \u00a0 Command or Action Purpose Step\u00a01 enable Example: Router> enable \u00a0 Enables privileged EXEC mode. Enter your password if prompted. \u00a0 Step\u00a02 ping mpls pseudowire ipv4-address vc-id vc-id Example: Router# ping mpls pseudowire 10.131.191.252 vc-id 333 \u00a0 Selects a Layer 2 FEC for validation. \u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

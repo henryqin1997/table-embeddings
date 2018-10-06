@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "Element",
+            "server_id",
+            "brick_dir",
+            "replica_count",
+            "stripe_count"
+        ],
+        [
+            "Type",
+            "string",
+            "string",
+            "integer",
+            "integer"
+        ],
+        [
+            "Description",
+            "A reference to the Red Hat Storage server.",
+            "Defines a brick directory on the Red Hat Storage server.",
+            "Defines the file replication count for the brick in the volume.",
+            "Defines the stripe count for the brick in the volume"
+        ],
+        [
+            "Properties",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Developer Guide",
+    "title": "",
+    "url": "https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Virtualization/3.1/html-single/Developer_Guide/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986625.58/warc/CC-MAIN-20150728002306-00332-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 854514639,
+    "recordOffset": 854396160,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 31 Oct 2013 01:31:28 GMT",
+    "textBeforeTable": "Table\u00a010.6.\u00a0Brick elements bricks sub-collection is defined using the following elements: bricks sub-collection to define individual bricks in a Red Hat Storage volume. The representation of a volume's glustervolumes sub-collection contains its own The 10.2.1.\u00a0 Bricks Sub-Collection glustervolumes sub-collection cannot be updated. Resources in the Important HTTP/1.1 204 No Content DELETE /api/clusters/99408929-82cf-4dc7-a532-9d998063fa95/glustervolumes/e199f877-900a-4e30-8114-8e3177f47651 HTTP/1.1   Example\u00a010.11.\u00a0Removing a Gluster volume   DELETE request. Remove a Red Hat Storage volume with a   </gluster_volume> <bricks> </brick> <brick_dir>/exp1</brick_dir> <server_id>server1</server_id> <brick> <bricks> <volume_type>DISTRIBUTED_REPLICATE</volume_type> <name>GlusterVolume1</name> <gluster_volume> Content-Type: application/xml Accept: application/xml POST /api/clusters/99408929-82cf-4dc7-a532-9d998063fa95/glustervolumes HTTP/1.1   Example\u00a010.10.\u00a0Creating a Red Hat Storage volume   bricks to the sub-collection. volume_type and name, POST request with the required Chapter\u00a08, Common Features. Create a Red Hat Storage volume via a glustervolumes sub-collection as described in An API user manipulates the   </gluster_volume> </options> </option> <value>536870912</value> <name>cluster.min-free-disk</name> <option> <options> <stripe_count>1</stripe_count> <replica_count>2</replica_count> </transport_types> <transport_type>TCP</transport_type> <transport_types> <volume_type>DISTRIBUTED_REPLICATE</volume_type> /glustervolume/e199f877-900a-4e30-8114-8e3177f47651/bricks\"/> href=\"/api/clusters/99408929-82cf-4dc7-a532-9d998063fa95 <link rel=\"bricks\" <name>GlusterVolume1</name> /glustervolume/e199f877-900a-4e30-8114-8e3177f47651\"> href=\"/api/clusters/99408929-82cf-4dc7-a532-9d998063fa95 <gluster_volume id=\"99408929-82cf-4dc7-a532-9d998063fa95\"   Example\u00a010.9.\u00a0An XML representation of a Red Hat Storage volume",
+    "textAfterTable": "An API user manipulates the glustervolumes sub-collection as described in Chapter\u00a08, Common Features. Create new bricks via a POST request with the required server_id and brick_dir to the sub-collection. Example\u00a010.12.\u00a0Adding a brick  POST /api/clusters/99408929-82cf-4dc7-a532-9d998063fa95/glustervolumes/e199f877-900a-4e30-8114-8e3177f47651/bricks HTTP/1.1 Accept: application/xml Content-Type: application/xml <brick> <server_id>server1</server_id> <brick_dir>/exp1</brick_dir> </brick> Remove a brick with a DELETE request. Example\u00a010.13.\u00a0Removing a brick  DELETE /api/clusters/99408929-82cf-4dc7-a532-9d998063fa95/glustervolumes/e199f877-900a-4e30-8114-8e3177f47651/bricks/0a473ebe-01d2-444d-8f58-f565a436b8eb HTTP/1.1 HTTP/1.1 204 No Content Important Resources in the bricks sub-collection cannot be updated. 10.2.2.\u00a0 Start Action The start action makes a Gluster volume available for use. Example\u00a010.14.\u00a0Starting a Volume  POST /api/clusters/99408929-82cf-4dc7-a532-9d998063fa95/glustervolumes/e199f877-900a-4e30-8114-8e3177f47651/start HTTP/1.1 Accept: application/xml Content-Type: application/xml <action/> Use an optional force Boolean element to force the action for a running volume. This is useful for starting disabled brick processes in a running volume. 10.2.3.\u00a0 Stop Action The stop action deactivates a Gluster volume.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

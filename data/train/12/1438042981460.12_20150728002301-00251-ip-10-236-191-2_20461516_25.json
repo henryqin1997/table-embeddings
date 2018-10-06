@@ -1,0 +1,142 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2012-13",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "FWN",
+            ""
+        ],
+        [
+            "GP",
+            "3",
+            "3"
+        ],
+        [
+            "GS",
+            "3",
+            "3"
+        ],
+        [
+            "Min",
+            "79.0",
+            "79.0"
+        ],
+        [
+            "FGM",
+            "16",
+            "16"
+        ],
+        [
+            "FGA",
+            "47",
+            "47"
+        ],
+        [
+            "FG%",
+            ".340",
+            ".340"
+        ],
+        [
+            "3FGM",
+            "1",
+            "1"
+        ],
+        [
+            "3FGA",
+            "7",
+            "7"
+        ],
+        [
+            "3P%",
+            ".143",
+            ".143"
+        ],
+        [
+            "FTM",
+            "0",
+            "0"
+        ],
+        [
+            "FTA",
+            "0",
+            "0"
+        ],
+        [
+            "FT%",
+            ".000",
+            ".000"
+        ],
+        [
+            "FIC",
+            "17",
+            "17"
+        ],
+        [
+            "OFF",
+            "4",
+            "4"
+        ],
+        [
+            "DEF",
+            "19",
+            "19"
+        ],
+        [
+            "Reb",
+            "23",
+            "23"
+        ],
+        [
+            "Ast",
+            "9",
+            "9"
+        ],
+        [
+            "Stl",
+            "2",
+            "2"
+        ],
+        [
+            "Blk",
+            "1",
+            "1"
+        ],
+        [
+            "PF",
+            "8",
+            "8"
+        ],
+        [
+            "TO",
+            "7",
+            "7"
+        ],
+        [
+            "Pts",
+            "33",
+            "33"
+        ]
+    ],
+    "pageTitle": "Khris Middleton Player Profile, Milwaukee Bucks, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Khris_Middleton/Summary/4294",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00251-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 20487791,
+    "recordOffset": 20461516,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{8687=Free Agent: PO-2019; UFA-2020, 8379=Early Entry Info: 2012 Early Entrant, 8479=Draft Entry: 2012 NBA Draft, 9524=Born: Aug 12, 1991 (23 years old)}",
+    "TableContextTimeStampAfterTable": "{104175=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 3 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ National ] [ Recent News ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "79 58 30.1 5.14 11.00 .467 1.38 3.39 .407 1.70 1.97 .859 9.21 0.61 3.78 4.39 2.30 1.54 0.14 2.32 1.43 13.35 CAREER \u00a0 188 122 28.3 4.49 9.91 .453 1.29 3.21 .403 1.48 1.73 .858 7.42 0.60 3.16 3.76 2.02 1.17 0.19 2.55 1.31 11.76 NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2012-13 DET 27 0 475.4 62 141 .440 14 45 .311 27 32 .844 95 4 46 50 28 15 4 53 11 165 2013-14 MIL 82 64 2460.4 376 854 .440 120 290 .414 118 137 .861 573 60 250 310 169 83 20 243 123 990 2014-15 MIL 79 58 2378.1 406 869 .467 109 268 .407 134 156 .859 728 48 299 347 182 122 11 183 113 1055 CAREER \u00a0 188 122 5313.9 844 1864 .453 243 603 .403 279 325 .858 1396 112 595 707 379 220 35 479 247 2210",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

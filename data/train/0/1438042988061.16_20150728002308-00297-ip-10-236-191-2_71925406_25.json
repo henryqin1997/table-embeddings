@@ -1,0 +1,33 @@
+{
+    "relation": [
+        [
+            "Dimension Name",
+            "Time",
+            "Customer Type",
+            "Product Offering"
+        ],
+        [
+            "Load level",
+            "Business Month",
+            "Customer Type",
+            "Product Offering"
+        ]
+    ],
+    "pageTitle": "Oracle Communications Data Model OLAP Model Cubes",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/doc.112/e28440/olap_cubes_cdm.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00297-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71990223,
+    "recordOffset": 71925406,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 03 Jul 2015 16:44:52 GMT",
+    "textBeforeTable": "Table 9-26 Cost Product Offering Cube Dimensions and Load Level The fact data of Cost Product Offering Cube is loaded from the relational schema at these dimension levels (leaf level). Dimensions and Load Level Physical Name: CCM This cube stores various cost values incurred by the carrier that are important from the analysis point of view such as subscriber acquisition cost, subscriber retention cost, and so on. Cost Product Offering Cube: CCM Total Cost Report Last Year LAG(COM.TCR, 1) OVER HIERARCHY (\"TIME\".HTBSNS BY ANCESTOR AT LEVEL \"TIME\".HTBSNS.BSNS_YR POSITION FROM BEGINNING) TCR_LY Total Cost Local Last Year LAG(COM.TCL, 1) OVER HIERARCHY (\"TIME\".HTBSNS BY ANCESTOR AT LEVEL \"TIME\".HTBSNS.BSNS_YR POSITION FROM BEGINNING) TCL_LY Total Cost Last Year LAG(COM.TC, 1) OVER HIERARCHY (\"TIME\".HTBSNS BY ANCESTOR AT LEVEL \"TIME\".HTBSNS.BSNS_YR POSITION FROM BEGINNING) TC_LY Operating Cost Share of Organization Parent SHARE(COM.OC OF ORG.HCHAIN PARENT) SHR_OC_ORG Investment Cost Share of",
+    "textAfterTable": "Aggregation Order/Operator The Cost Product Offering Cube will be aggregated by the following order and operators on dimensions Table 9-27 Cost Product Offering Cube Aggregation Operator and Order Dimension Name Operator Order Time Sum 1 Customer Type Sum 2 Product Offering Sum 3 Base Measures Table 9-28 shows the base measure for this data cube. Table 9-28 Cost Product Offering Cube Base Measures Physical Name Logical Name Physical Column ACA ACQUISITION COMMISSION AGREEMENT DWA_CUST_COST_MO.ACQSTN_CMISN_AGRMNT ACAL ACQUISITION COMMISSION AGREEMENT LOCAL",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

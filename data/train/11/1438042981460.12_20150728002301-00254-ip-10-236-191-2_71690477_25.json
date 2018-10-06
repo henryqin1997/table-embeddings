@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "instName",
+            "compName",
+            "compType",
+            "listener"
+        ],
+        [
+            "Definition",
+            "Specifies the name of the application server instance.",
+            "Specifies the name of the component instance.",
+            "Specifies the type of component. Valid values are 'ovd', 'oid', 'ohs', and 'webcache'.",
+            "Specifies the name of the component listener."
+        ]
+    ],
+    "pageTitle": "Infrastructure Security Custom WLST Commands",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E12839_01/web.1111/e13813/custom_infra_security.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00254-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71730999,
+    "recordOffset": 71690477,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{211130=The following command deletes the authentication engine with ID id1234., 98605=The following command generates a key pair with DN cn=www.acme.com, key size 1024, algorithm RSA and alias mykey in keys.jks, for Oracle Virtual Directory instance ovd1 in application server instance inst1:, 51346=The following command adds a self-signed certificate with DN cn=www.acme.com, key size 1024 to wallet1, for Oracle Internet Directory instance oid1, in application server instance inst1:, 47421=The following command generates a certificate signing request with DN cn=www.acme.com and key size 1024 in wallet1, for Oracle Internet Directory instance oid1, in application server instance inst1:, 213102=The following command deletes the engine with ID id1234.}",
+    "lastModified": "Wed, 13 May 2015 05:12:37 GMT",
+    "textBeforeTable": "getNonJavaEEAuditMBeanName(instName, compName, compType, svrName)  Syntax      This command displays the mbean name for non-Java EE components given the instance name, component name, component type, and the name of the Oracle WebLogic Server on which the component's audit mbean is running. The mbean name is a required parameter to other audit WLST commands when managing a non-Java EE component. Description    Online command that displays the mbean name for non-Java EE components. getNonJavaEEAuditMBeanName  For more information, see the Oracle Fusion Middleware Security Guide.       Online   Import a component's audit configuration.   importAuditConfig     Online   Export a component's audit configuration.   exportAuditConfig     Online   List audit events for one or all components.   listAuditEvents     Online   Update audit repository settings.   setAuditRepository     Online   Display audit repository settings.",
+    "textAfterTable": "Example The following interactive command displays the mBean name for an Oracle Internet Directory:  wls:/mydomain/serverConfig> getNonJavaEEAuditMBeanName(instName='inst1', compName='oid1', compType='oid', svrName='AdminServer') getAuditPolicy Online command that displays the audit policy settings. Description This command displays audit policy settings including the filter preset, special users, custom events, maximum log file size, and maximum log directory size. The component mbean name is required for non-Java EE components like Oracle Internet Directory and Oracle Virtual Directory. Note: You can obtain a non-Java EE component's MBean name using the getNonJavaEEAuditMBeanName command. Syntax  getAuditPolicy([mbeanName]) Argument Definition mbeanName Specifies the name of the component audit MBean for non-Java EE components. Examples The following command displays the audit settings for a Java EE component:  wls:/mydomain/serverConfig> getAuditPolicy() Location changed to domainRuntime tree. This is a read-only tree with DomainMBean as the root. For more help, use help(domainRuntime) FilterPreset:All",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

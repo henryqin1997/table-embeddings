@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Data Definition",
+            "EMSYSMetricsEMS",
+            "EMSYSTargetsEMS",
+            "EMSYSSecurityFilterEMS",
+            "EMSYSAlertsDataEMS",
+            "EMSYSMetricsDataEMS",
+            "EMSYSTargetStatusDataEMS",
+            "EMSYSTargetSLAEMS"
+        ],
+        [
+            "Description",
+            "Contains the EMS definition for incoming metric metadata.",
+            "Contains the EMS definition for incoming target metadata.",
+            "Contains the EMS definition for security filter data.",
+            "Contains the EMS definition for incoming alerts.",
+            "Contains the EMS definition for incoming metrics.",
+            "Contains the EMS definition for incoming target status messages.",
+            "Contains the EMS definition for incoming target SLA messages."
+        ]
+    ],
+    "pageTitle": "Building a Data Exchange Connector",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B16240_01/doc/em.102/b32521/em_data_ex.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.88/warc/CC-MAIN-20150728002308-00308-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71293095,
+    "recordOffset": 71264494,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{106132=For example, if the request is received as follows with the Timestamp sub-element, the indicators are inserted with this timestamp (2006-10-30 17:43:19.474):, 138893=2008-01-29 17:37:28.259 NOTIFICATION J2EE RMI-00004 Invalid username or password for default (oc4jadmin). Authentication failed.08/02/28 17:37:28 INFO: RMIProto .readConnectionHeader Local ORMI version = 1. 3 different from remote version 1.1 will use 1.12008-01-29 17:37:28.290 ERROR [RealmLoginModule] authentication failed, 9587=For example, if an outbound session is scheduled from 9:00 a.m. to 9:00 p.m. with an interval frequency of 30 minutes, initially (at 9:00 am) metric values collected between 8:00 a.m. and 9:00 a.m. are forwarded. Subsequently, the metric values received in that interval are sent. So at 9:30 a.m., metric values received between 9:00 a.m. and 9:30 a.m., and at 10:00 a.m. metric values received between 9:30 a.m. and 10:00 a.m., are forwarded.}",
+    "lastModified": "Thu, 15 Mar 2012 06:35:07 GMT",
+    "textBeforeTable": "Table 4-21 EM-BAM EMS Definitions Table 4-21 lists the enterprise message sources the import command creates. EM-BAM EMS Definitions Holds the archived data for /SYSMAN/EMSYSTargetStatusData /SYSMAN/EMSYSTargetStatus Data.Archive Holds the archived data for /SYSMAN/EMSYSMetricsData. /SYSMAN/EMSYSMetricsData. Archive Holds the archived data for /SYSMAN/EMSYSAlertsData. /SYSMAN/EMSYSAlertsData. Archive Acts as the security filter for all other data objects. It contains the session name and users who can access the corresponding session data. /SYSMAN/EMSYSSecurityFilter Holds the metrics information received from Enterprise Manager. It has information about the target and metric for which metrics are received along with metric value and timestamp. /SYSMAN/EMSYSMetricsData Contains target metadata information, such as target name and target type. /SYSMAN/EMSYSTargets Holds the target SLA information received from Enterprise Manager. /SYSMAN/EMSYSTargetSLAData Holds the incoming system",
+    "textAfterTable": "EM-BAM Enterprise Link Plans The plans in Table\u00a04\u201322 are created based on the import command. Table 4-22 EM-BAM Link Plans Plan Description EMSYSMetricsPlan Contains the definition to receive, transform, and persist incoming metric metadata messages. This should be running before creating and setting up an outbound session in Enterprise Manager. EMSYSTargetsPlan Contains the definition to receive, transform, and persist incoming target metadata messages. This should be running before creating and setting up an outbound session in Enterprise Manager. EMSYSSecurityFilterPlan Contains the definition to receive, transform, and persist incoming security filter messages. This should be running before creating and setting up an outbound session in Enterprise Manager. EMSYSAlertsDataPlan Contains the definition to receive, transform, and persist incoming alert messages. This should be running when the outbound session",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

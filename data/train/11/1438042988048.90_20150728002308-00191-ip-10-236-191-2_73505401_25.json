@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "Exception",
+            "nonmasterdef",
+            "duplicatevalue",
+            "missingrepgroup",
+            "missingprioritygroup",
+            "missingvalue",
+            "paramtype",
+            "typefailure",
+            "notquiesced"
+        ],
+        [
+            "Description",
+            "Invocation site is not the master definition site.",
+            "New value already exists in the priority group.",
+            "Specified master group does not exist.",
+            "Specified priority group does not exist.",
+            "Old value does not exist.",
+            "New value has the incorrect data type for the priority group.",
+            "Specified value has the incorrect data type for the priority group.",
+            "Specified master group is not quiesced."
+        ]
+    ],
+    "pageTitle": "DBMS_REPCAT",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B28359_01/server.111/b28327/rarrcatpac.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00191-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73558719,
+    "recordOffset": 73505401,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 09 Jul 2015 23:28:12 GMT",
+    "textBeforeTable": "Table 18-26 ALTER_PRIORITY_datatype Procedure Exceptions Exceptions New value that you want assigned to the priority group member. new_value     Current value of the priority group member.  old_value     Name of the priority group containing the value that you want to alter.  pgroup     Master group with which the priority group is associated.  gname      Description Parameter   Table 18-25 ALTER_PRIORITY_datatype Procedure Parameters  Parameters  | NVARCHAR2 } | NCHAR | RAW | DATE | CHAR | VARCHAR2 { NUMBER  where datatype:  new_value IN datatype); old_value IN datatype, pgroup IN VARCHAR2, gname IN VARCHAR2, DBMS_REPCAT.ALTER_PRIORITY_datatype (  Syntax Oracle Database Advanced ReplicationChapter 6, \"Configuring Conflict Resolution\" See Also:  This procedure alters the value of a member in a priority group.     for more information about conflict resolution methods  and",
+    "textAfterTable": "ALTER_SITE_PRIORITY Procedure This procedure alters the priority level associated with a specified site. You must call this procedure from the master definition site. See Also: Chapter 6, \"Configuring Conflict Resolution\" and Oracle Database Advanced Replication for more information about conflict resolution methods Syntax  DBMS_REPCAT.ALTER_SITE_PRIORITY ( gname IN VARCHAR2, name IN VARCHAR2, old_priority IN NUMBER, new_priority IN NUMBER); Parameters Table 18-27 ALTER_SITE_PRIORITY Procedure Parameters Parameter Description  gname Master group with which the site priority group is associated.  name Name of the site priority group whose member you are altering.  old_priority Current priority level of the site whose priority level you want to change.  new_priority New priority level for the site. A higher number indicates a higher priority level. Exceptions",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

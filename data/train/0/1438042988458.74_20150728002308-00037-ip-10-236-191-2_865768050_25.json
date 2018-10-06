@@ -1,0 +1,31 @@
+{
+    "relation": [
+        [
+            "",
+            "From",
+            "To"
+        ],
+        [
+            "Deprecation",
+            "none",
+            "OS X 10.6"
+        ]
+    ],
+    "pageTitle": "IOBluetooth Changes",
+    "title": "",
+    "url": "https://developer.apple.com/library/mac/releasenotes/General/APIDiffsMacOSX10_8/IOBluetooth.html",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00037-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 865784444,
+    "recordOffset": 865768050,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{186664=Copyright \u00a9 2015 Apple Inc. All rights reserved.}",
+    "textBeforeTable": "-[IOBluetoothDevice openL2CAPChannel:findExisting:newChannel:] Modified IOBluetoothDevice.h CBUUIDServiceChangedString Added CBUUIDServerCharacteristicConfigurationString Added CBUUIDReconnectionAddressString Added CBUUIDPeripheralPrivacyFlagString Added CBUUIDPeripheralPreferredConnectionParametersString Added CBUUIDGenericAttributeProfileString Added CBUUIDGenericAccessProfileString Added CBUUIDDeviceNameString Added CBUUIDClientCharacteristicConfigurationString Added CBUUIDCharacteristicUserDescriptionString Added CBUUIDCharacteristicFormatString Added CBUUIDCharacteristicExtendedPropertiesString Added CBUUIDCharacteristicAggregateFormatString Added CBUUIDAppearanceString Added CBUUID.data Added +[CBUUID UUIDWithString:] Added +[CBUUID UUIDWithData:] Added +[CBUUID UUIDWithCFUUID:] Added CBUUID Added CBUUID.h CBService.peripheral Added CBService.includedServices Added CBService.characteristics Added CBService.UUID Added CBService Added CBService.h CBCharacteristicWriteWithoutResponse Added CBCharacteristicWriteWithResponse",
+    "textAfterTable": "Modified -[IOBluetoothDevice openRFCOMMChannel:channel:] Deprecation From none To OS X 10.5 IOBluetoothDeviceInquiry.h Added -[IOBluetoothDeviceInquiry searchType] Added -[IOBluetoothDeviceInquiry setSearchType:] IOBluetoothHostController.h Removed -[IOBluetoothHostController getAddress:] Removed -[IOBluetoothHostController getSupportedFeatures:] Removed -[IOBluetoothHostController name] Removed -[IOBluetoothHostController readLinkQualityForDevice:] Removed -[IOBluetoothHostController readRSSIForDevice:] Removed -[NSObject controllerClassOfDeviceReverted:] Modified -[IOBluetoothHostController setClassOfDevice:forTimeInterval:] Deprecation From OS X 10.6 To none Modified -[IOBluetoothHostController classOfDevice] Deprecation From OS X 10.6 To none IOBluetoothL2CAPChannel.h Modified kIOBluetoothL2CAPChannelEventTypeReconfigured Header From IOBluetoothUserLib.h To IOBluetoothL2CAPChannel.h Modified IOBluetoothL2CAPChannelIncomingEventListener",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

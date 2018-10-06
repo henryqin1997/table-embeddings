@@ -1,0 +1,58 @@
+{
+    "relation": [
+        [
+            "",
+            "1",
+            "2",
+            "3"
+        ],
+        [
+            "A",
+            "Addressee",
+            "John Doe",
+            "Bill Smith"
+        ],
+        [
+            "B",
+            "Address",
+            "13 Main St",
+            "26 Elm St"
+        ],
+        [
+            "C",
+            "City, State zipcode",
+            "Hartford, CT 06111",
+            "Erie, PA 16501-1234"
+        ],
+        [
+            "D",
+            "",
+            "",
+            ""
+        ],
+        [
+            "E",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Rearranging Data in Columns",
+    "title": "",
+    "url": "http://dmcritchie.mvps.org/excel/join.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991076.30/warc/CC-MAIN-20150728002311-00242-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 70586347,
+    "recordOffset": 70545101,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{71617=One way, put the below formula in B1 if \"AB12FG\" is in cell A1, copy it down as long as needed. Peo Sjoblom <terre08@mindspring.com> 2001-07-09 in worksheet.functions, 48789=You can use Chip Pearson's Cell View to view the characters and their corresponding decimal or hexidecimal codes.\u00a0 This should be sufficient for most usage but Unicode values not in your font will show with a dec code of 063 or a hex code of 3F., 129587=In Excel 2000 the macro is very simple because Excel 2000 includes all separate ranges.\u00a0 Prior to Excel 2000, one would have to cycle through the separate ranges.\u00a0 Example of cycling through multiple ranges can be seen in the MarkSepAreas macro., 108681=Thank goodness for backups the remainder of this document starting from within the next topic was discovered missing 2004-11-08 and recovered from a backup from 2004-08-27. \u2014 \u2014 \u2014 \u2014, 17975=Since area codes are now required in most of the US even for local calls the preferred format will probably be xxx-555-1212 without parens, modify code below if that seems preferable., 149482=Copyright \u00a9 1997 - 2006,\u00a0 F.\u00a0David McRitchie,\u00a0 All Rights Reserved, 78274=With a macro you can process each area separately and until Excel 2000 that is what you had to do.\u00a0 Excel 2000 allows you process all selections as if they were one or as in MarkSepAareas you can still process each area in the same manner as had to be done in previous versions.}",
+    "lastModified": "Fri, 24 Oct 2008 22:30:24 GMT",
+    "textBeforeTable": "Name and Address List before SepLastTerm Minnie Mouse Mouse, Minnie Mickey Mouse Mouse, Mickey Donald Duck Duck, Donald After Before Use of firstname() \u00a0 \u00a0 Mouse, Minnie Minnie Mouse Mouse, Mickey Mouse, Mickey Duck, Donald Donald Duck After Before Use of Lastname() \u00a0 C7 B7 A7 5 \u00a0 C6 B6 A6 4 \u00a0 C3 C4 C5 B3 B5 A3 A4 3 \u00a0 C2 B2 A2 2 \u00a0 C1 B1 A1 1 D C B A \u00a0 after JOINROWS() \u00a0 \u00a0 C7 B7 A7 7 \u00a0 C6 B6 A6 6 \u00a0 C5 B5 \u00a0 5 \u00a0 C4 \u00a0 A4 4 \u00a0 C3 B3 A3 3 \u00a0 C2 B2 A2",
+    "textAfterTable": "\u00a0 Name and Address List after SepLastTerm on Col C \u00a0 A B C D E 1 Addressee Address City, State zipcode \u00a0 2 John Doe 13 Main St Hartford, CT 06111 \u00a0 3 Bill Smith 26 Elm St Erie, PA 16501-1234 \u00a0 When separating zip codes format the receiving column as text beforehand, since some zip codes begin with zero. Rotate Selection Area 90 degrees \u00a0 (#RotateCWx) Main Samples Area, begins immediately above.\u00a0 \u00a0 RotateCW() \u00a0 Before \u00a0 A B C D 1 E1 E2 E3 E4 2 D1 D2 D3 D4 3 C1 C2 C3 C4 4 B1 B2 B3 B4 5 A1 A2 A3 A4 \u00a0 \u00a0\u00a0 RotateCW() \u00a0 After Rows flipped \u00a0 A B C D 1 A1 A2 A3 A4 2 B1 B2 B3 B4 3 C1 C2 C3 C4 4 D1 D2 D3 D4 5 E1 E2 E3 E4",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

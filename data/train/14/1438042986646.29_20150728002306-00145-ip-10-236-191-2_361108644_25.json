@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6",
+            "Step 7",
+            "Step 8",
+            "Step 9",
+            "Step 10"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Router> enable",
+            "configure terminal Example: Router# configure terminal",
+            "ipv6 pim [vrf vrf-name] spt-threshold infinity [group-list access-list-name] Example: Router(config)# ipv6 pim spt-threshold infinity group-list acc-grp-1",
+            "ipv6 pim [vrf vrf-name] accept-register {list access-list | route-map map-name} Example: Router(config)# ipv6 pim accept-register route-map reg-filter",
+            "interface type number Example: Router(config)# interface FastEthernet 1/0",
+            "ipv6 pim dr-priority value Example: Router(config-if)# ipv6 pim dr-priority 3",
+            "ipv6 pim hello-interval seconds Example: Router(config-if)# ipv6 pim hello-interval 45",
+            "ipv6 pim join-prune-interval seconds Example: Router(config-if)# ipv6 pim join-prune-interval 75",
+            "exit Example: Router(config-if)# exit",
+            "show ipv6 pim [vrf vrf-name] join-prune statistic [interface-type] Example: Router# show ipv6 pim join-prune statistic"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Configures when a PIM leaf router joins the SPT for the specified groups.",
+            "Accepts or rejects registers at the RP.",
+            "Specifies an interface type and number, and places the router in interface configuration mode.",
+            "Configures the DR priority on a PIM router.",
+            "Configures the frequency of PIM hello messages on an interface.",
+            "Configures periodic join and prune announcement intervals for a specified interface.",
+            "Enter this command twice to exit interface configuration mode and enter privileged EXEC mode.",
+            "Displays the average join-prune aggregation for the most recently aggregated packets for each interface."
+        ]
+    ],
+    "pageTitle": "Implementing IPv6 Multicast\u00a0 [Cisco IOS 15.0SY] - Cisco Systems",
+    "title": "",
+    "url": "http://www.cisco.com/en/US/docs/ios-xml/ios/ipv6/configuration/15-0sy/ip6-multicast.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00145-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 361179759,
+    "recordOffset": 361108644,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{87270=On Cisco 12000 series router with IPv6 multicast enabled, if you delete a subinterface with IPv6 configured or if IPv6 is disabled on a subinterface, the associated main interface gets reset., 78192=IPv6 routers must also join the all-routers multicast group FF02:0:0:0:0:0:0:2 (scope is link-local)., 89387=On Cisco 12000 series ISE line cards, IPv6 multicast is implemented so that if the number of IPv6 multicast routes exceeds the hardware capacity of the ternary content addressable memory (TCAM), the following error message is displayed to describe how to increase the TCAM hardware capacity for IPv6 multicast routes:, 91412=In Cisco IOS Release 12.0(26)S, IPv6 multicast is supported on the Cisco 12000 series Internet router only on the following line cards:, 89904=On Cisco 12000 series line cards, the IPv6 multicast feature includes support for Protocol Independent Multicast sparse mode (PIM-SM), Multicast Listener Discovery (MLDv2), static mroutes, and the IPv6 distributed Multicast Forwarding Information Base (MFIB)., 81032=An IPv6 multicast address is an IPv6 address that has a prefix of FF00::/8 (1111 1111). An IPv6 multicast address is an identifier for a set of interfaces that typically belong to different nodes. A packet sent to a multicast address is delivered to all interfaces identified by the multicast address. The second octet following the prefix defines the lifetime and scope of the multicast address. A permanent multicast address has a lifetime parameter equal to 0; a temporary multicast address has a lifetime parameter equal to 1. A multicast address that has the scope of a node, link, site, or organization, or a global scope has a scope parameter of 1, 2, 5, 8, or E, respectively. For example, a multicast address with the prefix FF02::/16 is a permanent multicast address with a link scope. The figure below shows the format of the IPv6 multicast address., 89622=Forwarding of IPv6 multicast traffic is hardware-based on Cisco 12000 series IP Service Engine (ISE) line cards that support IPv6 multicast and software-based on all other supported Cisco 12000 series line cards.}",
+    "TableContextTimeStampAfterTable": "{226255=Router# show ipv6 rpf 2001:DB8::1:1:2, 449586=Protocol Independent Multicast - Sparse Mode PIM-SM): Protocol Specification (Revised) , March 6, 2003, 450476=Bootstrap Router (BSR) Mechanism for PIM Sparse Mode , February 25, 2003, 454823=RFC 2710, 454535=RFC 2462, 453382=RFC 2373, 449834=Embedding the Address of RP in IPv6 Multicast Address , May 23, 2003, 450257=Bi-directional Protocol Independent Multicast (BIDIR-PIM) , June 20, 2003, 453666=RFC 2375, 192964=Router(config)# ipv6 pim bsr candidate rp 2001:DB8:1:1:1 group-list list scope 6, 450048=PIM Upstream Detection Among Multiple Addresses , February 2003, 454245=RFC 2461, 455114=RFC 2711, 453948=RFC 2460, 191287=Router(config)# ipv6 pim bsr candidate bsr 2001:DB8:1:1:4, 319916=Router(config-if)# ipv6 address FE80::40:1:3 link-local}",
+    "textBeforeTable": "DETAILED STEPS 10.\u00a0\u00a0\u00a0 show ipv6 pim [vrf vrf-name] join-prune statistic [interface-type] 9.\u00a0\u00a0\u00a0 exit 8.\u00a0\u00a0\u00a0 ipv6 pim join-prune-interval seconds 7.\u00a0\u00a0\u00a0 ipv6 pim hello-interval seconds 6.\u00a0\u00a0\u00a0 ipv6 pim dr-priority value 5.\u00a0\u00a0\u00a0 interface type number 4.\u00a0\u00a0\u00a0 ipv6 pim [vrf vrf-name] accept-register {list access-list | route-map map-name} 3.\u00a0\u00a0\u00a0 ipv6 pim [vrf vrf-name] spt-threshold infinity [group-list access-list-name] 2.\u00a0\u00a0\u00a0 configure",
+    "textAfterTable": "Configuring Bidirectional PIM and Displaying Bidirectional PIM Information SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 ipv6 pim [vrf vrf-name] rp-address ipv6-address [group-access-list] [bidir] 4.\u00a0\u00a0\u00a0 exit 5.\u00a0\u00a0\u00a0 show ipv6 pim [vrf vrf-name] df [interface-type interface-number] [rp-address] 6.\u00a0\u00a0\u00a0 show ipv6 pim [vrf vrf-name] df winner[interface-type interface-number] [rp-address] DETAILED STEPS \u00a0 Command or Action Purpose Step\u00a01 enable Example: Router> enable \u00a0 Enables privileged EXEC mode. Enter your password if prompted. \u00a0 Step\u00a02",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,214 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2012-13",
+            "2014-15 *",
+            "2014-15",
+            "2014-15",
+            "2014-15 *"
+        ],
+        [
+            "Team",
+            "TIA",
+            "All Teams",
+            "KIA",
+            "BYB",
+            "KIA"
+        ],
+        [
+            "GP",
+            "31",
+            "19",
+            "10",
+            "9",
+            "10"
+        ],
+        [
+            "GS",
+            "10",
+            "19",
+            "10",
+            "9",
+            "10"
+        ],
+        [
+            "Min",
+            "30.8",
+            "36.2",
+            "42.5",
+            "29.2",
+            "42.5"
+        ],
+        [
+            "FGM",
+            "4.19",
+            "4.89",
+            "6.60",
+            "3.00",
+            "6.60"
+        ],
+        [
+            "FGA",
+            "8.10",
+            "8.95",
+            "11.60",
+            "6.00",
+            "11.60"
+        ],
+        [
+            "FG%",
+            ".518",
+            ".547",
+            ".569",
+            ".500",
+            ".569"
+        ],
+        [
+            "3FGM",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00"
+        ],
+        [
+            "3FGA",
+            "0.03",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00"
+        ],
+        [
+            "3P%",
+            ".000",
+            ".000",
+            ".000",
+            ".000",
+            ".000"
+        ],
+        [
+            "FTM",
+            "2.68",
+            "2.53",
+            "3.80",
+            "1.11",
+            "3.80"
+        ],
+        [
+            "FTA",
+            "4.68",
+            "5.53",
+            "8.50",
+            "2.22",
+            "8.50"
+        ],
+        [
+            "FT%",
+            ".572",
+            ".457",
+            ".447",
+            ".500",
+            ".447"
+        ],
+        [
+            "FIC",
+            "12.43",
+            "15.90",
+            "21.36",
+            "9.83",
+            "21.36"
+        ],
+        [
+            "OFF",
+            "3.00",
+            "3.42",
+            "4.40",
+            "2.33",
+            "4.40"
+        ],
+        [
+            "DEF",
+            "5.87",
+            "8.11",
+            "10.40",
+            "5.56",
+            "10.40"
+        ],
+        [
+            "Reb",
+            "8.87",
+            "11.53",
+            "14.80",
+            "7.89",
+            "14.80"
+        ],
+        [
+            "Ast",
+            "0.52",
+            "0.79",
+            "1.20",
+            "0.33",
+            "1.20"
+        ],
+        [
+            "Stl",
+            "0.58",
+            "0.63",
+            "0.80",
+            "0.44",
+            "0.80"
+        ],
+        [
+            "Blk",
+            "3.90",
+            "4.05",
+            "5.20",
+            "2.78",
+            "5.20"
+        ],
+        [
+            "PF",
+            "3.13",
+            "3.00",
+            "3.70",
+            "2.22",
+            "3.70"
+        ],
+        [
+            "TO",
+            "1.65",
+            "1.11",
+            "1.30",
+            "0.89",
+            "1.30"
+        ],
+        [
+            "Pts",
+            "11.06",
+            "12.32",
+            "17.00",
+            "7.11",
+            "17.00"
+        ]
+    ],
+    "pageTitle": "Hamady Ndiaye Player Profile, Brooklyn Nets, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Events Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Hamady_Ndiaye/Summary/6320",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00190-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 22698607,
+    "recordOffset": 22666737,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{8346=Draft Entry: 2010 NBA Draft, 8124=Draft Rights Trade: MIN to WAS, Jun 24, 2010, 9087=Born: Jan 12, 1987 (28 years old)}",
+    "TableContextTimeStampAfterTable": "{144651=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved., 110061=* International basketball history from 2011-2012}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 3 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] [ National ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "Blk PF TO Pts 2010-11 WAS 16 0 80.2 4 5 .800 0 0 .000 6 12 .500 6 2 5 7 0 2 5 18 3 14 2011-12 WAS 3 0 2.9 0 1 .000 0 0 .000 0 0 .000 -1 0 0 0 0 0 0 0 0 0 2013-14 SAC 14 0 74.2 3 9 .333 0 0 .000 0 1 .000 10 5 13 18 3 0 4 15 3 6 CAREER \u00a0 33 0 157.3 7 15 .467 0 0 .000 6 13 .462 16 7 18 25 3 2 9 33 6 20 NBA Regular Season Stats - Misc Stats Season Team GP GS Dbl Dbl Tpl Dbl 40 Pts 20 Reb 20 Ast Techs HOB Ast/TO Stl/TO FT/FGA W's L's Win % OWS DWS WS 2010-11 WAS 16 0 0 0 0 0 0 0 .007 0.00 0.67 2.40 3 13 0.188 0.03 0.01 0.04 2011-12 WAS 3 0 0 0 0 0 0 0 .000 0.00 0.00 0.00 0 3 0.000 -0.02 -0.00 -0.03",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "Date",
+            "21 Dec 1999",
+            "27 Dec 2006",
+            "28 Dec 2010",
+            "13 Feb 2015"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed"
+        ],
+        [
+            "Description",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            ""
+        ]
+    ],
+    "pageTitle": "Patent US6591271 - Model for the definition of world wide web sites and method for their design ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.ca/patents/US6591271?ie=ISO-8859-1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00196-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 471195831,
+    "recordOffset": 471164547,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{34327=A further model explicitly proposed for the design of hypertext and multimedia applications is HDM (Hypermedia Design Model) (F. Garzotto, L. Mainetti, P. Paolini, \u201cHypermedia Design, Analysis, and Evaluation Issues\u201d, Communications of the ACM, 1995, Volume 38, Number 8, pages 74-86). This model supports the separation of the data description from the navigation description, i.e., the ability of moving from one page to another page, but it does not support the specification of the composition of pages and of the presentation criteria. Moreover, the supported navigation capabilities are limited a-priori and cannot be extended by the designer., 33337=A well known conceptual model for data specification is the Entity-Relationship model (P. Chen, \u201cThe entity-relationship model: towards a unified view of data\u201d, ACM TODS, 1976, volume 1, number 1, pages 9-36), which introduces the notions of entity, attribute, and relationship, for describing the properties of persistent data managed by a computer application. The Entity-Relationship model does not deal with constructs for the description of features related to the publishing of data as Web pages., 34996=A further model is RMM (T. Isakowitz, E. Stohr, P. Balasubramanian: \u201cRMM: A Methodology for Structured Hypermedia Design\u201d, Communications of the ACM, 1995, Volume 38, Number 8, pages 34-44), which consists of an evolution of the HDM model and of the Entity-Relationship Model. This model is appropriate for the definition of hypermedia applications and Web sites. Also RMM, as HDM, does not support the separated definition of navigation, presentation, and composition, although it offers a limited number, defined a-priori, of possible navigation constructs. Another evolution of HDM is presented in OOHDM (Object-Oriented Hypermedia Design Method) (D. Schwabe, G. Rossi, S. Barbosa, \u201cSystematic Hypermedia Design with OOHDM\u201d, Proc. ACM Int. Conf. on Hypertext, 1996, Washington, USA, pp.116-128), which is also appropriate for the definition of hypermedia applications but adopts a limited number, defined a-priori, of possible navigation constructs and requires complex object-oriented modeling for defining the semantics of more powerful navigation mechanisms., 33859=A model proposed for the description of hypertexts is the Dexter model (F. G. Halasz and M. Schwartz, \u201cThe Dexter hypertext reference model\u201d, Communications of the ACM, 1994, volume 37, number 2, pages 30-39), which represents an hypertext as a set of nodes connected by links. The Dexter model is extremely simple and does not permit the separate description of the data structure, the navigation, the composition of nodes, and their presentation., 36080=Another model is Araneus (P. Atzeni, G. Mecca, P. Merialdo, \u201cTo Weave the Web\u201d, Proc. 23rd Conference on Very Large Data Bases, 1997, Athens, Greece, pages 206-215 and P. Atzeni, G. Mecca, P. Merialdo: \u201cDesign and Maintenance of Data-Intensive Web Sites\u201d. Proc. EDBT, 1998, Valencia, Spain, 436-450\u201d), which is a methodological proposal for the development of Web sites based on RMM.}",
+    "textBeforeTable": "Patent Citations As it is shown by the aforementioned FIG. 30, a physical page 108 contains an index page on a collection 109, which contains all articles, called \u201cArticleCollIndexPage\u201d, a data page 110, called \u201cArticleDataPage\u201d, which contains an article selected by the user among those visualized in page 109, an index page 111, called \u201cIncludedInIndexPage\u201d, which contains all the combinations to which the article shown in page 110 belongs and finally a data page 112, called \u201cCombinationDataPage\u201d, which shows a combination chosen among those listed in page 111. The hypertext is valid because with progressive selections on the content of index pages 109 and 111 all the content of the data pages can be selected and displayed. FIG. 30 illustrates a valid physical hypertext. FIG. 29 illustrates an invalid physical hypertext. As it is shown by the aforementioned figure, the physical page 104 includes an entry point 105 constituted by a navigation page on a collection, a data page 106 connected to it, and an isolated data page 107. On accessing the physical page by means of the entry link into the page 105, the content of the data page 107, which is not connected by a link to the page 105, is undefined. Rule (b) indicates that all logical pages require a context, i.e., that all data pages showing objects which are connected with other objects by means of relationships be connected to all the entry points",
+    "textAfterTable": "Minolta Co., Ltd. Apparatus for and method of retrieving images WO1998049617A2 15 Apr 1998 5 Nov 1998 Adobe Systems Inc Web site construction by inferring navigational structure from physical file structure * Cited by examiner Non-Patent Citations Reference 1 Atzeni et al, \"Design and Maintenance of Data-Intensive Web Sites\", Advances in Database Technology-EDBT '98. 7th Int'l. Conference on Extending Database Technology Proceedings, Valencia, Spain, Mar. 23-27, 1998, pp. 436-450. 2 Atzeni et al, \"Design and Maintenance of Data-Intensive Web Sites\", Advances in Database Technology\u2014EDBT '98. 7th Int'l. Conference on Extending Database Technology Proceedings, Valencia, Spain, Mar. 23-27, 1998, pp. 436-450. 3 Ceri et al, \"Design Principles for Data-Intensive Web Sites\", SIGMOD RECORD, Online!, vol. 28, No. 1, Mar. 1999, pp. 84-89. 4 Fraternali et al, \"A Conceptual Model and a Tool Environment for Developing More Scalable Dynamic, and Customizable Web Applications\", Advances in Database Technology-EDBT '98, 6th Int'l. Conference on Extending Database Technology Proceedings Valencia, Spain, Online! Mar. 23-27, 1998, pp. 421-435. 5",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,166 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2012-13",
+            "2014-15",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "IDA",
+            "SAN",
+            ""
+        ],
+        [
+            "GP",
+            "47",
+            "1",
+            "48"
+        ],
+        [
+            "GS",
+            "42",
+            "1",
+            "43"
+        ],
+        [
+            "Min",
+            "34.7",
+            "35.6",
+            "34.7"
+        ],
+        [
+            "FGM",
+            "6.17",
+            "9.00",
+            "6.23"
+        ],
+        [
+            "FGA",
+            "14.66",
+            "20.00",
+            "14.77"
+        ],
+        [
+            "FG%",
+            ".421",
+            ".450",
+            ".422"
+        ],
+        [
+            "3FGM",
+            "1.64",
+            "5.00",
+            "1.71"
+        ],
+        [
+            "3FGA",
+            "3.98",
+            "11.00",
+            "4.12"
+        ],
+        [
+            "3P%",
+            ".412",
+            ".455",
+            ".414"
+        ],
+        [
+            "FTM",
+            "3.30",
+            "3.00",
+            "3.29"
+        ],
+        [
+            "FTA",
+            "4.04",
+            "5.00",
+            "4.06"
+        ],
+        [
+            "FT%",
+            ".816",
+            ".600",
+            ".810"
+        ],
+        [
+            "FIC",
+            "12.05",
+            "19.88",
+            "12.21"
+        ],
+        [
+            "OFF",
+            "1.21",
+            "1.00",
+            "1.21"
+        ],
+        [
+            "DEF",
+            "4.06",
+            "5.00",
+            "4.08"
+        ],
+        [
+            "Reb",
+            "5.28",
+            "6.00",
+            "5.29"
+        ],
+        [
+            "Ast",
+            "2.51",
+            "4.00",
+            "2.54"
+        ],
+        [
+            "Stl",
+            "2.43",
+            "1.00",
+            "2.40"
+        ],
+        [
+            "Blk",
+            "1.17",
+            "2.00",
+            "1.19"
+        ],
+        [
+            "PF",
+            "2.09",
+            "0.00",
+            "2.04"
+        ],
+        [
+            "TO",
+            "2.04",
+            "1.00",
+            "2.02"
+        ],
+        [
+            "Pts",
+            "17.28",
+            "26.00",
+            "17.46"
+        ]
+    ],
+    "pageTitle": "Justin Holiday Player Profile, Golden State Warriors, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Events Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Justin-Holiday/Summary/6968",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988511.77/warc/CC-MAIN-20150728002308-00052-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 21711991,
+    "recordOffset": 21682475,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{9294=Born: Apr 5, 1989 (26 years old), 8323=Draft Entry: 2011 NBA Draft, 8476=Free Agent: UFA-2017}",
+    "TableContextTimeStampAfterTable": "{109876=* International basketball history from 2011-2012, 146804=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 2 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] [ Recent News ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2012-13 PHL 9 0 142.0 16 48 .333 4 16 .250 6 8 .750 25 0 14 14 15 3 6 7 9 42 2014-15 GOS 59 4 657.4 91 235 .387 35 109 .321 37 45 .822 163 12 61 73 48 40 12 54 29 254 CAREER \u00a0 68 4 799.4 107 283 .378 39 125 .312 43 53 .811 188 12 75 87 63 43 18 61 38 296 NBA Regular Season Stats - Misc Stats Season Team GP GS Dbl Dbl Tpl Dbl 40 Pts 20 Reb 20 Ast Techs HOB Ast/TO Stl/TO FT/FGA W's L's Win % OWS DWS WS 2012-13 PHL 9 0 0 0 0 0 0 0",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

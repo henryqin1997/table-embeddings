@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "orclUserv2 attributes",
+            "orclIsVisible",
+            "orclDisplayPersonalInfo",
+            "orclMaidenName",
+            "orclDateOfBirth",
+            "orclHireDate",
+            "orclDefaultProfileGroup",
+            "orclActiveStartDate",
+            "orclActiveEndDate",
+            "orclTimeZone",
+            "orclIsEnabled"
+        ],
+        [
+            "Comments",
+            "A flag to indicate whether the user should be hidden from all but administrators.",
+            "A flag to indicate whether a user's personal information should be hidden from all but administrators.",
+            "",
+            "",
+            "",
+            "Default user group for the person",
+            "When account was activated",
+            "when account was (or will be) terminated",
+            "",
+            "A flag to indicate whether the user account is active. If not active, the user will not be allowed to log in."
+        ]
+    ],
+    "pageTitle": "Securing Oracle Portal",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E15523_01/portal.1111/e10239/cg_secur.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00005-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 871226319,
+    "recordOffset": 871129772,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampAfterTable": "{24852=When viewing portal-related roles in Oracle Internet Directory Self-Service Console, the descriptions for these roles are prefixed with numbers, for example, portal.040823.142021.462000000. The numbers are actually the name of the Oracle Portal application, and are displayed to enable selection of roles in a multiple-portal environment where multiple portals associated with the same Identity Management system exist., 190842=add labeleduri: ldap://myserver.mycompany.com:12061/cn=users,dc=us,dc=mybiz,dc=com??sub?(title=Manager), 190761=ldapadd -h myserver -p 12061 -D cn=fmwadmin -w mybiz1 \u2013f managers.ldif \u2013v, 124163=The inetOrgPerson object class contains the entire user attributes defined by the Internet Engineering Task Force (IETF) Request for Comments (RFC) number 2798.}",
+    "lastModified": "Wed, 13 May 2015 05:14:47 GMT",
+    "textBeforeTable": "Table 7-14 orclUserV2 Attributes preferredLanguage userPassword User ID uid Employee's supervisor manager title Organization o Person's picture jpegPhoto Home address homePostalAddress Country of office c Postal code of office postalCode State of office st City of office l street facsimileTelephoneNumber pager",
+    "textAfterTable": "7.1.7.2.3 Group Attributes Stored in Oracle Internet Directory Oracle Portal, like all other components of Oracle Fusion Middleware, relies upon the directory to store group information. All groups in the directory are defined using the following object classes: The groupOfUniqueNames object class contains all of the group attributes defined by IETF (RFC 2256). The orclGroup object class contains a set of standard, additional attributes for Oracle Portal. Note: In Oracle Portal 9.0.2 and subsequent releases, you cannot scope groups to a specific page group. This option was available only in Oracle Portal 3.0.9.x and preceding releases. Figure 7-8 shows where the Oracle Portal information for groups is located in the directory's DIT structure. Figure 7-8 DIT Structure for Oracle Portal Groups Description of \"Figure 7-8 DIT Structure for Oracle Portal Groups\" The subsequent tables show the various group attributes stored in Oracle Internet Directory. Table 7-15",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,34 @@
+{
+    "relation": [
+        [
+            "Number",
+            "0",
+            "1 through 23",
+            "24 through 31",
+            "32 through 63"
+        ],
+        [
+            "Availability",
+            "Never used by this routine and always available",
+            "Initially reserved; available after being freed by LIB$FREE_EF",
+            "Reserved to OpenVMS",
+            "Initially free"
+        ]
+    ],
+    "pageTitle": "HP OpenVMS systems documentation",
+    "title": "",
+    "url": "http://h71000.www7.hp.com/doc/82final/5932/5932pro_039.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986148.56/warc/CC-MAIN-20150728002306-00096-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 111611040,
+    "recordOffset": 111602838,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The values of error-source and their meanings are as follows: error-source argument is the address of a longword containing the error source. Integer code indicating where the error was found. The by reference mechanism: read only access: longword integer (signed) type: longword_signed OpenVMS usage: error-sourcerms-stv argument is the address of an unsigned longword that contains this secondary condition code. Secondary condition code (FAB$L_STV) which describes the error that occurred. The by reference mechanism: read only access: longword (unsigned) type: cond_value OpenVMS usage: rms-stvrms-sts argument is the address of an unsigned longword that contains this primary condition code. Primary condition code (FAB$L_STS) which describes the error that occurred. The by reference mechanism: read only access: longword (unsigned) type: cond_value OpenVMS usage: rms-stsnew-resultant-name was specified, it is used to pass the string to the error routine. Otherwise, a class S, type T string is passed. Any string class is supported. RMS resultant file specification of the new file name being used when the error occurred. If by descriptor mechanism: read only access: character string type: char_string OpenVMS",
+    "textAfterTable": "type: longword (unsigned) access: read only mechanism: unspecified Value of user-specified-argument that LIB$RENAME_FILE passes to the error routine using the same passing mechanism that was used to pass it to LIB$RENAME_FILE. If the error routine returns a success status (bit 0 set), then LIB$RENAME_FILE will continue processing files. If the error routine returns a failure status (bit 0 clear), processing ceases immediately and LIB$RENAME_FILE returns with an error status. If the user-error-procedure argument is not specified, LIB$RENAME_FILE will return to its caller the most severe error status encountered while renaming the files. If the error routine is called for an error, the success status LIB$_ERRROUCAL is returned. The error routine is not called for errors related to string copying. Call Format for a Confirm Routine The calling format of a confirm routine is as follows: user-confirm-procedure old-filespec ,new-filespec ,old-fab [,user-specified-argument] old-filespec OpenVMS usage: char_string type: character string access: read only mechanism: by descriptor RMS resultant file specification of the file about to be renamed. If old-resultant-name was specified, it is used to pass the string to the confirm routine. Otherwise, a class S, type T",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

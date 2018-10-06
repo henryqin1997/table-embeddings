@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "r",
+            "scheme",
+            "realm",
+            "for_proxy"
+        ],
+        [
+            "Description",
+            "The HTTP response",
+            "The scheme for the required HTTP authentication",
+            "The realm for the required HTTP authentication",
+            "Returns the HTTP authentication information required for the access to the HTTP proxy server instead of the Web server? Default is FALSE"
+        ]
+    ],
+    "pageTitle": "UTL_HTTP",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/appdev.112/e10577/u_http.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00261-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72554999,
+    "recordOffset": 72509793,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{139115=The URL passed as an argument to this function is not examined for illegal characters, such as spaces, according to URL specification RFC 2396. You should escape those characters with the UTL_URL package to return illegal and reserved characters. URLs should consist of US-ASCII characters only. See Chapter 239, \"UTL_URL\" for a list of legal characters in URLs. Note that URLs should consist of US-ASCII characters only. The use of non-US-ASCII characters in a URL is generally unsafe., 238783=REQUEST_PIECES returns a PL/SQL table of type UTL_HTTP.HTML_PIECES. Each element of that PL/SQL table is a string of maximum length 2000. The elements of the PL/SQL table returned by REQUEST_PIECES are successive pieces of the data obtained from the HTTP request to that URL., 239498=The URL passed as an argument to this function will not be examined for illegal characters, for example, spaces, according to URL specification RFC 2396. The caller should escape those characters with the UTL_URL package. See the comments of the package for the list of legal characters in URLs. Note that URLs should consist of US-ASCII characters only. The use of non-US-ASCII characters in a URL is generally unsafe., 76767=Returns a PL/SQL table of 2000-byte pieces of the data retrieved from the given URL, 226637=This function returns up to the first 2000 bytes of data retrieved from the given URL. This function can be used directly in SQL queries. The URL may contain the username and password needed to authenticate the request to the server. The format is, 231608=The URL passed as an argument to this function is not examined for illegal characters, for example, spaces, according to URL specification RFC 2396. The caller should escape those characters with the UTL_URL package. See the comments of the package for the list of legal characters in URLs. Note that URLs should consist of US-ASCII characters only. The use of non-US-ASCII characters in a URL is generally unsafe., 76360=Returns up to the first 2000 bytes of the data retrieved from the given URL. This function can be used directly in SQL queries., 236458=(Optional) The maximum number of pieces (each 2000 characters in length, except for the last, which may be shorter), that REQUEST_PIECES should return. If provided, then that argument should be a positive integer., 233961=This function returns a PL/SQL table of 2000-byte pieces of the data retrieved from the given URL. You can define a username/password for the proxy to be specified in the proxy string. The format is, 231056=The return type is a string of length 2000 or less, which contains up to the first 2000 bytes of the HTML result returned from the HTTP request to the argument URL., 139686=BEGIN_REQUEST can send a URL whose length is up to 32767 bytes. However, different Web servers impose different limits on the length of the URL they can accept. This limit is often about 4000 bytes. If this limit is exceeded, the outcome will depend on the Web server. For example, a Web server might simply drop the HTTP connection without returning a response of any kind. If this happens, a subsequent invocation of the GET_RESPONSE Function will raise the PROTOCOL_ERROR exception.}",
+    "lastModified": "Tue, 19 May 2015 17:52:58 GMT",
+    "textBeforeTable": "Table 225-26 GET_AUTHENTICATION Procedure Parameters Parameters for_proxy IN BOOLEAN DEFAULT FALSE); realm OUT VARCHAR2, scheme OUT VARCHAR2, r IN OUT NOCOPY resp, UTL_HTTP.GET_AUTHENTICATION(  Syntax   HTTP Responses Subprograms HTTP Responses and See Also:  This procedure retrieves the HTTP authentication information needed for the request to be accepted by the Web server as indicated in the HTTP response header. GET_AUTHENTICATION Procedure       The HTTP response r Description Parameter Table 225-25 END_RESPONSE Procedure Parameters Parameters r IN OUT NOCOPY resp); UTL_HTTP.END_RESPONSE (  Syntax   HTTP Responses Subprograms HTTP Responses and See Also:  This procedure ends the HTTP response. It completes the HTTP request and response. Unless HTTP 1.1 persistent connection is used in this request, the network connection is also closed. END_RESPONSE Procedure",
+    "textAfterTable": "Usage Notes When a Web client is unaware that a document is protected, at least two HTTP requests are required for the document to be retrieved. In the first HTTP request, the Web client makes the request without supplying required authentication information; so the request is denied. The Web client can determine the authentication information required for the request to be authorized by calling GET_AUTHENTICATION. The Web client makes the second request and supplies the required authentication information with SET_AUTHORIZATION. If the authentication information can be verified by the Web server, the request will succeed and the requested document is returned. Before making the request, if the Web client knows that authentication information is required, it can supply the required authentication information in the first request, thus saving an extra request. GET_BODY_CHARSET Procedure This procedure retrieves the default character set of the body of all future HTTP requests. See Also: Session Settings and Session Settings Subprograms Syntax  UTL_HTTP.GET_BODY_CHARSET ( charset OUT NOCOPY VARCHAR2); Parameters Table 225-27 GET_BODY_CHARSET Procedure Parameters Parameter Description",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

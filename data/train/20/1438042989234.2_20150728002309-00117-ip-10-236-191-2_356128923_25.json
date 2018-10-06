@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "Command",
+            "switch# show interface port-channel channel-number",
+            "switch# show feature",
+            "switch# show resource",
+            "switch# show lacp {counters | interface type slot/port | neighbor | port-channel | system-identifier}",
+            "switch# show port-channel compatibility-parameters",
+            "switch# show port-channel database [interface port-channel channel-number]",
+            "switch# show port-channel summary",
+            "switch# show port-channel traffic",
+            "switch# show port-channel usage",
+            "switch# show port-channel database",
+            "switch# show port-channel load-balance"
+        ],
+        [
+            "Purpose",
+            "Displays the status of a EtherChannel interface.",
+            "Displays enabled features.",
+            "Displays the number of resources currently available in the system.",
+            "Displays LACP information.",
+            "Displays the parameters that must be the same among the member ports in order to join an EtherChannel.",
+            "Displays the aggregation state for one or more port-channel interfaces.",
+            "Displays a summary for the EtherChannel interfaces.",
+            "Displays the traffic statistics for EtherChannels.",
+            "Displays the range of used and unused channel numbers.",
+            "Displays information on current running of the EtherChannel feature.",
+            "Displays information about load-balancing using EtherChannels."
+        ]
+    ],
+    "pageTitle": "Cisco Nexus 5000 Series NX-OS Layer 2 Switching Configuration Guide, Release 4.2(1)N2(1) - Configuring EtherChannels [Cisco Nexus 5000 Series Switches] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5000/sw/layer2/421_n2_1/b_Cisco_n5k_layer2_config_gd_rel_421_N2_1/Cisco_n5k_layer2_config_gd_rel_421_N2_1_chapter7.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00117-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 356153463,
+    "recordOffset": 356128923,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{19893=LACP port priority\u2014Each port configured to use LACP has an LACP port priority. You can accept the default value of 32768 for the LACP port priority, or you can configure a value between 1 and 65535. LACP uses the port priority with the port number to form the port identifier. LACP uses the port priority to decide which ports should be put in standby mode when there is a limitation that prevents all compatible ports from aggregating and which ports should be put into active mode. A higher port priority value means a lower priority for LACP. You can configure the port priority so that specified ports have a lower priority for LACP and are most likely to be chosen as active links, rather than hot-standby links., 93066=src-ip: 1.1.10.10, 80604=Configures the port priority for use with LACP. Valid values are 1 through 65535, and higher numbers have lower priority. The default value is 32768., 18625=LACP system priority\u2014Each system that runs LACP has an LACP system priority value. You can accept the default value of 32768 for this parameter, or you can configure a value between 1 and 65535. LACP uses the system priority with the MAC address to form the system ID and also uses the system priority during negotiation with other devices. A higher system priority value means a lower priority., 91975=switch#show port-channel load-balance forwarding-path interface port-channel 10 vlan 1 dst-ip 1.225.225.225 src-ip 1.1.10.10 src-mac aa:bb:cc:dd:ee:ff l4-src-port 0 l4-dst-port 1, 75742=Configures the system priority for use with LACP. Valid values are 1 through 65535, and higher numbers have lower priority. The default value is 32768.}",
+    "textBeforeTable": "To display EtherChannel configuration information, perform one of the following tasks: Verifying EtherChannel Configuration  switch(config-if)# lacp port priority 40000 switch (config)# interface ethernet 1/4 switch# configure terminal This example shows how to set the LACP port priority for Ethernet interface 1/4 to 40000:    Configures the port priority for use with LACP. Valid values are 1 through 65535, and higher numbers have lower priority. The default value is 32768. \u00a0 switch(config-if)# lacp port-priority priority \u00a0 Step\u00a03 Specifies the interface to configure, and enters the interface configuration mode. \u00a0 switch(config)# interface type slot/port \u00a0 Step\u00a02 Enters configuration mode. \u00a0 switch# configure terminal \u00a0 Step\u00a01 Purpose Command or Action \u00a0 DETAILED STEPS switch(config-if)# lacp port-priority priority",
+    "textAfterTable": "Verifying the Load-Balancing Outgoing Port ID Command Guidelines The show port-channel load-balance command allows you to verify which ports a given frame is hashed to on a port channel. You need to specify the VLAN and the destination MAC in order to get accurate results. Note Certain traffic flows are not subject to hashing, for example when there is a single port in a port-channel. To display the load-balancing outgoing port ID, perform one of the tasks listed in the table below. Command Purpose switch# show port-channel load-balance forwarding-path interface port-channel port-channel-id vlan vlan-id dst-ip src-ip dst-mac src-mac l4-src-port port-id l4-dst-port port-id Displays the outgoing port ID. Example",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}
