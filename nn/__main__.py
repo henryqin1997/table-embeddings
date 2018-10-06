@@ -108,8 +108,7 @@ def main():  # to be implemented
                 print('train accuracy batch index {}\n'.format(test_index))
                 input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
                 target = torch.from_numpy(target).float()
-                prediction = neural.predict(net, input, batch_size)
-                prediction_poss = neural.predict_poss(net, input, batch_size)
+                prediction,prediction_poss = neural.predict(net, input, batch_size)
                 accuracy.append(train.accuracy(prediction, target, batch_size))
                 accuracy_no_other.append(train.accuracy_no_other(prediction, target, batch_size))
                 accuracy_poss.append(train.accuracy_possibility(prediction_poss,target,batch_size))
@@ -126,6 +125,8 @@ def main():  # to be implemented
             file.write('train_accuracy_threshold {}\n'.format(train_accuracy_threshold))
             print(train_accuracy)
             print(train_accuracy_no_other)
+            print(train_accuracy_poss)
+            print(train_accuracy_threshold)
 
         with torch.no_grad():
 
@@ -137,7 +138,7 @@ def main():  # to be implemented
             for test_index in range(train_size//batch_size,(train_size+100)//batch_size):
                 input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
                 target = torch.from_numpy(target).float()
-                prediction = neural.predict(net, input, batch_size)
+                prediction, prediction_poss = neural.predict(net, input, batch_size)
                 accuracy.append(train.accuracy(prediction, target, batch_size))
                 accuracy_no_other.append(train.accuracy_no_other(prediction, target, batch_size))
                 accuracy_poss.append(train.accuracy_possibility(prediction_poss, target, batch_size))
@@ -154,6 +155,8 @@ def main():  # to be implemented
             file.write('validation_accuracy_threshold {}\n'.format(validation_accuracy_threshold))
             print(validation_accuracy)
             print(validation_accuracy_no_other)
+            print(validation_accuracy_poss)
+            print(validation_accuracy_threshold)
 
 
 
