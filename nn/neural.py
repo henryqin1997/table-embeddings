@@ -68,7 +68,7 @@ def predict(net, input, batch_size=1):
         output_1 = []
         for i in range(batch_size):
             values = net(torch.from_numpy(input[i]).float().view(-1).to(device)).view(-1, net.word_size())
-            values_normed = torch.norm(values, p=1, dim=1)
+            values_normed = values/torch.norm(values, p=1, dim=1)
             values = values.div(values_normed.expand_as(values))
             output_1.append(values)
         return output_,output_1
@@ -82,7 +82,7 @@ def predict(net, input, batch_size=1):
             output[indice][j] = 1
             j = j + 1
         values = net(torch.from_numpy(input).float().view(-1).to(device)).view(-1, net.word_size())
-        values_normed = torch.norm(values, p=1, dim=1)
+        values_normed = values/torch.norm(values, p=1, dim=1)
         values = values.div(values_normed.expand_as(values))
         return output, values
     else:
@@ -94,14 +94,14 @@ def predict_poss(net, input, batch_size=1): #now predict the possibility to choo
         output_ = []
         for i in range(batch_size):
             values = net(torch.from_numpy(input[i]).float().view(-1).to(device)).view(-1, net.word_size())
-            values_normed = torch.norm(values, p=1, dim=1)
+            values_normed = values/torch.norm(values, p=1, dim=1)
             values = values.div(values_normed.expand_as(values))
             output_.append(values)
         return output_
 
     elif batch_size == 1:
         values = net(torch.from_numpy(input).float().view(-1).to(device)).view(-1, net.word_size())
-        values_normed = torch.norm(values, p=1, dim=1)
+        values_normed = values/torch.norm(values, p=1, dim=1)
         values = values.div(values_normed.expand_as(values))
         return values
     else:
