@@ -67,8 +67,8 @@ def predict(net, input, batch_size=1):
             output_.append(output)
         output_1 = []
         for i in range(batch_size):
-            values = net(torch.from_numpy(input[i]).float().view(-1).to(device)).view(-1, net.word_size())
-            values_normed = torch.transpose(values/torch.norm(values, p=1, dim=1).view(10,-1),0,1)
+            values = net(torch.from_numpy(input[i]).float().view(-1).to(device)).view(-1, net.word_size()).to(device)
+            values_normed = torch.transpose(values/torch.norm(values, p=1, dim=1).view(10,-1),0,1).to(device)
             output_1.append(values_normed)
 
         return output_,output_1
@@ -81,8 +81,8 @@ def predict(net, input, batch_size=1):
         for indice in indices:
             output[indice][j] = 1
             j = j + 1
-        values = net(torch.from_numpy(input).float().view(-1).to(device)).view(-1, net.word_size())
-        values_normed = torch.transpose(values/torch.norm(values, p=1, dim=1).view(10,-1),0,1)
+        values = net(torch.from_numpy(input).float().view(-1).to(device)).view(-1, net.word_size()).to(device)
+        values_normed = torch.transpose(values/torch.norm(values, p=1, dim=1).view(10,-1),0,1).to(device)
         return output, values_normed
     else:
         print('error: batchsize no less than 1')
