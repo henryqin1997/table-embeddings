@@ -73,8 +73,6 @@ def accuracy(prediction, target, batch_size=1):  # to be implemented
         col_size = target.shape[2]
         for batch_index in range(batch_size):
             for col_index in range(col_size):
-                print(prediction[batch_index][:,col_index])
-                print(target[batch_index][:,col_index])
                 correct_num = correct_num+float(prediction[batch_index][:,col_index].dot(target[batch_index][:,col_index]))
                 total_num = total_num + int(sum(target[batch_index][:, col_index]))
         return correct_num / col_size
