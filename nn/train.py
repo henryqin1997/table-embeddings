@@ -126,9 +126,8 @@ def accuracy_threshold(prediction_poss, target, batch_size=1, threshold = 0.05):
         total_num = 0
         correct_num = 0
         col_size = target.shape[1]
-        print(col_size)
         for col_index in range(col_size):
-            prob=float(prediction_poss[:, col_index].dot(target[:, col_index]))
+            prob = float(prediction_poss[:, col_index].dot(target[:, col_index]))
             if prob < threshold:
                 prob = 0
             correct_num = correct_num + prob
