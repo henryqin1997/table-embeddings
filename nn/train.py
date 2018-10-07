@@ -120,7 +120,7 @@ def accuracy_threshold(prediction_poss, target, batch_size=1, threshold = 0.05):
                 if prob<threshold:
                     prob=0
                 correct_num=correct_num+prob
-                total_num = total_num + int(sum(prediction_poss[batch_index][:, col_index]))
+                total_num = total_num + int(sum(target[batch_index][:, col_index]))
         accuracy=correct_num / total_num
     else:
         total_num = 0
@@ -132,6 +132,6 @@ def accuracy_threshold(prediction_poss, target, batch_size=1, threshold = 0.05):
             if prob < threshold:
                 prob = 0
             correct_num = correct_num + prob
-            total_num = total_num + int(sum(prediction_poss[:, col_index]))
+            total_num = total_num + int(sum(target[:, col_index]))
         accuracy=correct_num / total_num
     return accuracy
