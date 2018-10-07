@@ -1,11 +1,13 @@
 import json
 import os
 import numpy
+import torch
 
 training_data_dir = '../data/train'
 training_files_json = '../data/training_files_filtered.json'
 training_files = json.load(open(training_files_json))
 tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERCENT': 4, 'DATE': 5, 'TIME': 6}
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
 def one_hot(row):
