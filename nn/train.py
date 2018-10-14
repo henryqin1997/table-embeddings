@@ -184,3 +184,9 @@ def catagory_accuracy_possibility(prediction_poss,target,batch_size=1,threshold=
                 accuracy_list[index[0]][1] += 1
         #accuracy = correct_num / total_num
     return accuracy_list
+
+def compute_accuracy(accuracy_list):
+    accuracy=[]
+    for pair in accuracy_list:
+        accuracy.append(float(pair[0])/pair[1]);
+    return accuracy
