@@ -135,7 +135,31 @@ def accuracy_threshold(prediction_poss, target, batch_size=1, threshold = 0.05):
         accuracy=correct_num / total_num
     return accuracy
 
-def catagory_accuracy_maximum(prediction,target,batch_size=1):
+def pred_catagory_accuracy_maximum(prediction,target,batch_size=1):
+    if batch_size > 1:
+        accuracy_list = [[0, 0]] * target.shape[1]
+        col_size = target.shape[2]
+        for batch_index in range(batch_size):
+            for col_index in range(col_size):
+                #index_ = numpy.flatnonzero(numpy.array(target[batch_index][:, col_index]))
+                if int(sum(target[batch_index][:, col_index]))==1:
+                    index=numpy.flatnonzero(numpy.array(prediction[batch_index][:, col_index]))
+                    accuracy_list[index[0]][0] += int(target[batch_index][index[0], col_index])
+                    accuracy_list[index[0]][1] += 1
+        #accuracy = correct_num / total_num
+    else:
+        accuracy_list=[[0,0]]*target.shape[0]
+        col_size = target.shape[1]
+        for col_index in range(col_size):
+            #index = numpy.flatnonzero(numpy.array(target[:, col_index]))
+            if int(sum(target[:, col_index]))==1:
+                index=numpy.flatnonzero(numpy.array(prediction[:, col_index]))
+                accuracy_list[index[0]][0] += int(target[index[0], col_index])
+                accuracy_list[index[0]][1] += 1
+        #accuracy = correct_num / total_num
+    return accuracy_list
+
+def targ_catagory_accuracy_maximum(prediction,target,batch_size=1):
     if batch_size > 1:
         accuracy_list = [[0, 0]] * target.shape[1]
         col_size = target.shape[2]
@@ -156,8 +180,7 @@ def catagory_accuracy_maximum(prediction,target,batch_size=1):
                 accuracy_list[index[0]][1] += 1
         #accuracy = correct_num / total_num
     return accuracy_list
-
-def catagory_accuracy_possibility(prediction_poss,target,batch_size=1,threshold=0):
+def targ_catagory_accuracy_possibility(prediction_poss,target,batch_size=1,threshold=0):
     if batch_size > 1:
         accuracy_list = [[0, 0]] * target.shape[1]
         col_size = target.shape[2]
