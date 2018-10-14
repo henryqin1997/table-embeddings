@@ -211,5 +211,5 @@ def targ_catagory_accuracy_possibility(prediction_poss,target,batch_size=1,thres
 def compute_accuracy(accuracy_list):
     accuracy=[]
     for pair in accuracy_list:
-        accuracy.append(float(pair[0])/pair[1]);
+        accuracy.append(float(pair[0])/pair[1])
     return accuracy
