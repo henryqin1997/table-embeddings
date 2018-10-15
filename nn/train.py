@@ -1,6 +1,7 @@
 import json
 import os
 import numpy
+from collections import defaultdict
 
 training_data_dir = '../data/train'
 training_files_json = '../data/training_files_filtered.json'
@@ -223,10 +224,36 @@ def compute_accuracy(accuracy_list):
         accuracy.append(float(pair[0]) / pair[1])
     return accuracy
 
-
-def measure_distribution(distribution_cut, distribution_no_cut, input, target):
+def measure_distribution_cut(diction,input,target):
     input_transformed = input.transpose()
     target_transformed = target.transpose()
     for index, row in enumerate(input_transformed):
         if row[0] == 0:
-            distribution_cut[row.index(1)].append(target_transformed[index].index(1))
+            diction[row.index(1)].append(target_transformed[index].index(1))
+
+def measure_distribution_no_cut(diction,input,target):
+    return 0
+
+def main():
+    dic = defaultdict(list)
+    dic_no_cut = defaultdict(list)
+    train_size = 10000
+    batch_size = 50
+    batch_index = 0
+    while batch_size * batch_index < train_size:
+        input, target = load_data(batch_size=batch_size, batch_index=batch_index)
+        batch_index += 1
+        for i in range(batch_size):
+            measure_distribution_cut(dic,input[i],target[i])
+            measure_distribution_no_cut(dic_no_cut,input[i],target[i])
+    print('cuted columns')
+    for key in dic.keys():
+        if len(dic[key])>1:
+            print('{}:{}'.format(key,dic[key]))
+    print('table')
+    for key in dic_no_cut.keys():
+        if len(dic_no_cut[key])>1:
+            print('{}:{}'.format(key,dic_no_cut[key]))
+
+if __name__=='__main__':
+    main()
