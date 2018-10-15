@@ -229,5 +229,4 @@ def measure_distribution(distribution_cut, distribution_no_cut, input, target):
     target_transformed = target.transpose()
     for index, row in enumerate(input_transformed):
         if row[0] == 0:
-            distribution_cut[''.join(int(val) for val in row)].append(
-                ''.join(int(val) for val in target_transformed[index]))
+            distribution_cut[row.index(1)].append(target_transformed[index].index(1))
