@@ -224,36 +224,46 @@ def compute_accuracy(accuracy_list):
         accuracy.append(float(pair[0]) / pair[1])
     return accuracy
 
-def measure_distribution_cut(diction,input,target):
+
+def measure_distribution_cut(diction, input, target):
     input_transformed = input.transpose()
     target_transformed = target.transpose()
     for index, row in enumerate(input_transformed):
         if row[0] == 0:
-            diction[row.index(1)].append(target_transformed[index].index(1))
+            try:
+                i = list(row).index(1)
+                t = list(target_transformed[index]).index(1)
+                diction[i][t] += 1
+            except ValueError:
+                pass
 
-def measure_distribution_no_cut(diction,input,target):
+
+def measure_distribution_no_cut(diction, input, target):
     return 0
 
+
 def main():
-    dic = defaultdict(list)
-    dic_no_cut = defaultdict(list)
+    dic = defaultdict(lambda: defaultdict(int))
+    dic_no_cut = defaultdict(lambda: defaultdict(int))
     train_size = 10000
     batch_size = 50
     batch_index = 0
     while batch_size * batch_index < train_size:
+        print(batch_index)
         input, target = load_data(batch_size=batch_size, batch_index=batch_index)
         batch_index += 1
         for i in range(batch_size):
-            measure_distribution_cut(dic,input[i],target[i])
-            measure_distribution_no_cut(dic_no_cut,input[i],target[i])
+            measure_distribution_cut(dic, input[i], target[i])
+            measure_distribution_no_cut(dic_no_cut, input[i], target[i])
     print('cuted columns')
     for key in dic.keys():
-        if len(dic[key])>1:
-            print('{}:{}'.format(key,dic[key]))
+        if len(dic[key]) > 1:
+            print('{}:{}'.format(key, dic[key]))
     print('table')
     for key in dic_no_cut.keys():
-        if len(dic_no_cut[key])>1:
-            print('{}:{}'.format(key,dic_no_cut[key]))
+        if len(dic_no_cut[key]) > 1:
+            print('{}:{}'.format(key, dic_no_cut[key]))
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
     main()
