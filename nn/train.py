@@ -233,9 +233,14 @@ def main():
         for i in range(batch_size):
             measure_distribution_cut(dic,input[i],target[i])
             measure_distribution_no_cut(dic_no_cut,input[i],target[i])
+    print('cuted columns')
     for key in dic.keys():
         if len(dic[key])>1:
             print('{}:{}'.format(key,dic[key]))
+    print('table')
+    for key in dic_no_cut.keys():
+        if len(dic_no_cut[key])>1:
+            print('{}:{}'.format(key,dic_no_cut[key]))
 
 if __name__=='__main__':
     main()
