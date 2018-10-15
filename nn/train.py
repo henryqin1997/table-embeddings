@@ -65,13 +65,14 @@ def load_data(batch_size, batch_index=0):
 #   #correct prediction(no 'other')/#targetlabel(no other)
 
 def accuracy(prediction, target, batch_size=1):  # to be implemented
-    if batch_size>1:
+    if batch_size > 1:
         total_num = 0
         correct_num = 0.
         col_size = target.shape[2]
         for batch_index in range(batch_size):
             for col_index in range(col_size):
-                correct_num = correct_num+float(prediction[batch_index][:,col_index].dot(target[batch_index][:,col_index]))
+                correct_num = correct_num + float(
+                    prediction[batch_index][:, col_index].dot(target[batch_index][:, col_index]))
                 total_num = total_num + int(sum(target[batch_index][:, col_index]))
         return correct_num / col_size
     else:
@@ -85,13 +86,14 @@ def accuracy(prediction, target, batch_size=1):  # to be implemented
 
 
 def accuracy_no_other(prediction, target, batch_size=1):  # to be implemented
-    if batch_size>1:
+    if batch_size > 1:
         total_num = 0
         correct_num = 0
         col_size = target.shape[2]
         for batch_index in range(batch_size):
             for col_index in range(col_size):
-                correct_num=correct_num+float(prediction[batch_index][:-1,col_index].dot(target[batch_index][:-1,col_index]))
+                correct_num = correct_num + float(
+                    prediction[batch_index][:-1, col_index].dot(target[batch_index][:-1, col_index]))
                 total_num = total_num + int(sum(target[batch_index][:-1, col_index]))
         return correct_num / total_num
     else:
@@ -103,25 +105,27 @@ def accuracy_no_other(prediction, target, batch_size=1):  # to be implemented
             total_num = total_num + int(sum(target[:-1, col_index]))
         return correct_num / total_num
 
-def accuracy_possibility(prediction_poss, target, batch_size=1):
-    #to be implemented
-    return accuracy(prediction_poss,target,batch_size)
 
-def accuracy_threshold(prediction_poss, target, batch_size=1, threshold = 0.05):
+def accuracy_possibility(prediction_poss, target, batch_size=1):
+    # to be implemented
+    return accuracy(prediction_poss, target, batch_size)
+
+
+def accuracy_threshold(prediction_poss, target, batch_size=1, threshold=0.05):
     # to be implemented
     accuracy = 0
-    if batch_size>1:
+    if batch_size > 1:
         total_num = 0
         correct_num = 0
         col_size = target.shape[2]
         for batch_index in range(batch_size):
             for col_index in range(col_size):
-                prob=float(prediction_poss[batch_index][:, col_index].dot(target[batch_index][:, col_index]))
-                if prob<threshold:
-                    prob=0
-                correct_num=correct_num+prob
+                prob = float(prediction_poss[batch_index][:, col_index].dot(target[batch_index][:, col_index]))
+                if prob < threshold:
+                    prob = 0
+                correct_num = correct_num + prob
                 total_num = total_num + int(sum(target[batch_index][:, col_index]))
-        accuracy=correct_num / total_num
+        accuracy = correct_num / total_num
     else:
         total_num = 0
         correct_num = 0
@@ -132,88 +136,98 @@ def accuracy_threshold(prediction_poss, target, batch_size=1, threshold = 0.05):
                 prob = 0
             correct_num = correct_num + prob
             total_num = total_num + int(sum(target[:, col_index]))
-        accuracy=correct_num / total_num
+        accuracy = correct_num / total_num
     return accuracy
 
-def pred_catagory_accuracy_maximum(prediction,target,batch_size=1):
+
+def pred_catagory_accuracy_maximum(prediction, target, batch_size=1):
     if batch_size > 1:
         accuracy_list = [[0, 0]] * target.shape[1]
         col_size = target.shape[2]
         for batch_index in range(batch_size):
             for col_index in range(col_size):
-                #index_ = numpy.flatnonzero(numpy.array(target[batch_index][:, col_index]))
-                if int(sum(target[batch_index][:, col_index]))==1:
-                    index=numpy.flatnonzero(numpy.array(prediction[batch_index][:, col_index]))
+                # index_ = numpy.flatnonzero(numpy.array(target[batch_index][:, col_index]))
+                if int(sum(target[batch_index][:, col_index])) == 1:
+                    index = numpy.flatnonzero(numpy.array(prediction[batch_index][:, col_index]))
                     accuracy_list[index[0]][0] += int(target[batch_index][index[0], col_index])
                     accuracy_list[index[0]][1] += 1
-        #accuracy = correct_num / total_num
+        # accuracy = correct_num / total_num
     else:
-        accuracy_list=[[0,0]]*target.shape[0]
+        accuracy_list = [[0, 0]] * target.shape[0]
         col_size = target.shape[1]
         for col_index in range(col_size):
-            #index = numpy.flatnonzero(numpy.array(target[:, col_index]))
-            if int(sum(target[:, col_index]))==1:
-                index=numpy.flatnonzero(numpy.array(prediction[:, col_index]))
+            # index = numpy.flatnonzero(numpy.array(target[:, col_index]))
+            if int(sum(target[:, col_index])) == 1:
+                index = numpy.flatnonzero(numpy.array(prediction[:, col_index]))
                 accuracy_list[index[0]][0] += int(target[index[0], col_index])
                 accuracy_list[index[0]][1] += 1
-        #accuracy = correct_num / total_num
+        # accuracy = correct_num / total_num
     return accuracy_list
 
-def targ_catagory_accuracy_maximum(prediction,target,batch_size=1):
+
+def targ_catagory_accuracy_maximum(prediction, target, batch_size=1):
     if batch_size > 1:
         accuracy_list = [[0, 0]] * target.shape[1]
         col_size = target.shape[2]
         for batch_index in range(batch_size):
             for col_index in range(col_size):
                 index = numpy.flatnonzero(numpy.array(target[batch_index][:, col_index]))
-                if index.size==1:
+                if index.size == 1:
                     accuracy_list[index[0]][0] += int(prediction[batch_index][index[0], col_index])
                     accuracy_list[index[0]][1] += 1
-        #accuracy = correct_num / total_num
+        # accuracy = correct_num / total_num
     else:
-        accuracy_list=[[0,0]]*target.shape[0]
+        accuracy_list = [[0, 0]] * target.shape[0]
         col_size = target.shape[1]
         for col_index in range(col_size):
             index = numpy.flatnonzero(numpy.array(target[:, col_index]))
-            if index.size==1:
+            if index.size == 1:
                 accuracy_list[index[0]][0] += int(prediction[index[0], col_index])
                 accuracy_list[index[0]][1] += 1
-        #accuracy = correct_num / total_num
+        # accuracy = correct_num / total_num
     return accuracy_list
-def targ_catagory_accuracy_possibility(prediction_poss,target,batch_size=1,threshold=0):
+
+
+def targ_catagory_accuracy_possibility(prediction_poss, target, batch_size=1, threshold=0):
     if batch_size > 1:
         accuracy_list = [[0, 0]] * target.shape[1]
         col_size = target.shape[2]
         for batch_index in range(batch_size):
             for col_index in range(col_size):
                 index = numpy.flatnonzero(numpy.array(target[batch_index][:, col_index]))
-                if index.size==1:
+                if index.size == 1:
                     prob = float(prediction_poss[batch_index][index[0], col_index])
                     if prob < threshold:
                         prob = 0
                     accuracy_list[index[0]][0] += prob
                     accuracy_list[index[0]][1] += 1
-        #accuracy = correct_num / total_num
+        # accuracy = correct_num / total_num
     else:
-        accuracy_list=[[0,0]]*target.shape[0]
+        accuracy_list = [[0, 0]] * target.shape[0]
         col_size = target.shape[1]
         for col_index in range(col_size):
             index = numpy.flatnonzero(numpy.array(target[:, col_index]))
-            if index.size==1:
+            if index.size == 1:
                 prob = float(prediction_poss[index[0], col_index])
                 if prob < threshold:
                     prob = 0
                 accuracy_list[index[0]][0] += prob
                 accuracy_list[index[0]][1] += 1
-        #accuracy = correct_num / total_num
+        # accuracy = correct_num / total_num
     return accuracy_list
 
+
 def compute_accuracy(accuracy_list):
-    accuracy=[]
+    accuracy = []
     for pair in accuracy_list:
-        accuracy.append(float(pair[0])/pair[1])
+        accuracy.append(float(pair[0]) / pair[1])
     return accuracy
 
-def measure_distribution(diction,input,target):
 
-
+def measure_distribution(distribution_cut, distribution_no_cut, input, target):
+    input_transformed = input.transpose()
+    target_transformed = target.transpose()
+    for index, row in enumerate(input_transformed):
+        if row[0] == 0:
+            distribution_cut[''.join(int(val) for val in row)].append(
+                ''.join(int(val) for val in target_transformed[index]))
