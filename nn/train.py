@@ -1,6 +1,7 @@
 import json
 import os
 import numpy
+from collections import defaultdict
 
 training_data_dir = '../data/train'
 training_files_json = '../data/training_files_filtered.json'
@@ -214,6 +215,27 @@ def compute_accuracy(accuracy_list):
         accuracy.append(float(pair[0])/pair[1])
     return accuracy
 
-def measure_distribution(diction,input,target):
+def measure_distribution_cut(diction,input,target):
+    return 0
 
+def measure_distribution_no_cut(diction,input,target):
+    return 0
 
+def main():
+    dic = defaultdict(list)
+    dic_no_cut = defaultdict(list)
+    train_size = 10000
+    batch_size = 50
+    batch_index = 0
+    while batch_size * batch_index < train_size:
+        input, target = load_data(batch_size=batch_size, batch_index=batch_index)
+        batch_index += 1
+        for i in range(batch_size):
+            measure_distribution_cut(dic,input[i],target[i])
+            measure_distribution_no_cut(dic_no_cut,input[i],target[i])
+    for key in dic.keys():
+        if len(dic[key])>1:
+            print('{}:{}'.format(key,dic[key]))
+
+if __name__=='__main__':
+    main()
