@@ -257,8 +257,13 @@ def main():
             measure_distribution_no_cut(dic_no_cut, input[i], target[i])
     print('cuted columns')
     for key in dic.keys():
-        if len(dic[key]) > 1:
-            print('{}:{}'.format(key, dic[key]))
+        # if len(dic[key]) > 1:
+        # print('{}:{}'.format(key, dic[key]))
+        for label in dic[key].keys():
+            if dic[key][label] > 50:
+                print(key, label, 'count:{}'.format(dic[key][label]))
+            if dic[key][label] / sum(dic[key].values()) > 0.5:
+                print(key, label, 'percentage:{}%'.format(dic[key][label] / sum(dic[key].values()) * 100))
     print('table')
     for key in dic_no_cut.keys():
         if len(dic_no_cut[key]) > 1:
