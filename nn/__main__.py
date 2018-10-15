@@ -53,7 +53,7 @@ def main():  # to be implemented
     validation_accuracy_poss = []
     validation_accuracy_threshold = []
 
-    iteration = 2
+    iteration = 0
 
     with torch.no_grad():
 

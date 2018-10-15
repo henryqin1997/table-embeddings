@@ -213,3 +213,7 @@ def compute_accuracy(accuracy_list):
     for pair in accuracy_list:
         accuracy.append(float(pair[0])/pair[1])
     return accuracy
+
+def measure_distribution(diction,input,target):
+
+
