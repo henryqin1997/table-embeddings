@@ -252,7 +252,7 @@ def main():
         print(batch_index)
         input, target = load_data(batch_size=batch_size, batch_index=batch_index)
         batch_index += 1
-        for i in range(batch_size):
+        for i in range(len(input)):
             measure_distribution_cut(dic, input[i], target[i])
             measure_distribution_no_cut(dic_no_cut, input[i], target[i])
     print('cuted columns')
