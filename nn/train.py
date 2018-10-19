@@ -245,7 +245,7 @@ def measure_distribution_no_cut(diction, input, target):
 def main():
     dic = defaultdict(lambda: defaultdict(int))
     dic_no_cut = defaultdict(lambda: defaultdict(int))
-    train_size = 10000
+    train_size = 100000
     batch_size = 50
     batch_index = 0
     while batch_size * batch_index < train_size:
