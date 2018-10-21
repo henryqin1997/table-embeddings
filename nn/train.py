@@ -167,8 +167,6 @@ def pred_catagory_accuracy_maximum(prediction, target, batch_size=1):
 
 
 def targ_catagory_accuracy_maximum(prediction, target, batch_size=1):
-    print(prediction)
-    print(target)
     if batch_size > 1:
         accuracy_list = [[0, 0] for x in range(target.shape[1])]
         col_size = target.shape[2]
