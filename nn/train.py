@@ -239,7 +239,22 @@ def measure_distribution_cut(diction, input, target):
 
 
 def measure_distribution_no_cut(diction, input, target):
-    return 0
+    input_transformed = input.transpose()
+    target_transformed = target.transpose()
+    key_list = []
+    value_list = []
+    for index, row in enumerate(input_transformed):
+        try:
+            i = list(row).index(1)
+            t = list(target_transformed[index]).index(1)
+        except ValueError:
+            i = -1
+            t = -1
+        finally:
+            key_list.append(str(i))
+            value_list.append(str(t))
+    diction[','.join(key_list)][','.join(value_list)] += 1
+
 
 
 def main():
@@ -266,8 +281,8 @@ def main():
                 print(key, label, 'percentage:{}%'.format(dic[key][label] / sum(dic[key].values()) * 100))
     print('table')
     for key in dic_no_cut.keys():
-        if len(dic_no_cut[key]) > 1:
-            print('{}:{}'.format(key, dic_no_cut[key]))
+        for label in dic_no_cut[key].keys():
+            print(key, label, 'count:{}'.format(dic_no_cut[key][label]))
 
 
 if __name__ == '__main__':
