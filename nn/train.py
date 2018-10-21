@@ -143,7 +143,7 @@ def accuracy_threshold(prediction_poss, target, batch_size=1, threshold=0.05):
 
 def pred_catagory_accuracy_maximum(prediction, target, batch_size=1):
     if batch_size > 1:
-        accuracy_list = [[0, 0]] * target.shape[1]
+        accuracy_list = [[0, 0] for x in range(target.shape[1])]
         col_size = target.shape[2]
         for batch_index in range(batch_size):
             for col_index in range(col_size):
@@ -167,8 +167,10 @@ def pred_catagory_accuracy_maximum(prediction, target, batch_size=1):
 
 
 def targ_catagory_accuracy_maximum(prediction, target, batch_size=1):
+    print(prediction)
+    print(target)
     if batch_size > 1:
-        accuracy_list = [[0, 0]] * target.shape[1]
+        accuracy_list = [[0, 0] for x in range(target.shape[1])]
         col_size = target.shape[2]
         for batch_index in range(batch_size):
             for col_index in range(col_size):
@@ -191,7 +193,7 @@ def targ_catagory_accuracy_maximum(prediction, target, batch_size=1):
 
 def targ_catagory_accuracy_possibility(prediction_poss, target, batch_size=1, threshold=0):
     if batch_size > 1:
-        accuracy_list = [[0, 0]] * target.shape[1]
+        accuracy_list = [[0, 0] for x in range(target.shape[1])]
         col_size = target.shape[2]
         for batch_index in range(batch_size):
             for col_index in range(col_size):

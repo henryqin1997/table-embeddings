@@ -56,42 +56,43 @@ def main():  # to be implemented
 
     iteration = 0
 
-    # with torch.no_grad():
-    #
-    #     file.write("start predict iteration {}\n".format(iteration))
-    #     print("start predict train iteration {}\n".format(iteration))
-    #     accuracy_list_tar=np.array([[0, 0]] * net.word_size())
-    #     accuracy_list_pre=np.array([[0, 0]] * net.word_size())
-    #     for test_index in range(train_size // batch_size):
-    #         file.write('train accuracy batch index {}\n'.format(test_index))
-    #         print('train accuracy batch index {}\n'.format(test_index))
-    #         input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
-    #         target = torch.from_numpy(target).float().to(device)
-    #         prediction, prediction_poss = neural.predict(net, input, batch_size)
-    #         for predict in prediction:
-    #             print(np.flatnonzero(predict.numpy()))
-    #         accuracy_list_tar += np.array(train.targ_catagory_accuracy_maximum(prediction,target,batch_size))
-    #         accuracy_list_pre += np.array(train.pred_catagory_accuracy_maximum(prediction,target,batch_size))
-    #         print('train accuracy batch index {} end\n'.format(test_index))
-    #     print('category accuracy:{}'.format(accuracy_list_tar))
-    #     print('accuracy for each category in prediction:{}'.format(accuracy_list_pre))
-    #
-    # with torch.no_grad():
-    #
-    #     print("start predict validation iteration {}\n".format(iteration))
-    #     accuracy_list_tar = np.array([[0, 0]] * net.word_size())
-    #     accuracy_list_pre = np.array([[0, 0]] * net.word_size())
-    #     for test_index in range(train_size // batch_size, (train_size + 1000) // batch_size):
-    #         input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
-    #         target = torch.from_numpy(target).float().to(device)
-    #         prediction, prediction_poss = neural.predict(net, input, batch_size)
-    #         accuracy_list_tar += np.array(train.targ_catagory_accuracy_maximum(prediction, target, batch_size))
-    #         accuracy_list_pre += np.array(train.pred_catagory_accuracy_maximum(prediction, target, batch_size))
-    #     print('category accuracy:{}'.format(accuracy_list_tar))
-    #     print('accuracy for each category in prediction:{}'.format(accuracy_list_pre))
+    with torch.no_grad():
+
+        file.write("start predict iteration {}\n".format(iteration))
+        print("start predict train iteration {}\n".format(iteration))
+        accuracy_list_tar=np.array([[0, 0]] * net.word_size())
+        accuracy_list_pre=np.array([[0, 0]] * net.word_size())
+        for test_index in range(train_size // batch_size):
+            file.write('train accuracy batch index {}\n'.format(test_index))
+            print('train accuracy batch index {}\n'.format(test_index))
+            input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
+            target = torch.from_numpy(target).float().to(device)
+            prediction, prediction_poss = neural.predict(net, input, batch_size)
+            print('category accuracy:{}'.format(accuracy_list_tar))
+            print('accuracy for each category in prediction:{}'.format(accuracy_list_pre))
+            accuracy_list_tar += np.array(train.targ_catagory_accuracy_maximum(prediction,target,batch_size))
+            accuracy_list_pre += np.array(train.pred_catagory_accuracy_maximum(prediction,target,batch_size))
+            print('category accuracy:{}'.format(accuracy_list_tar))
+            print('accuracy for each category in prediction:{}'.format(accuracy_list_pre))
+        print('category accuracy:{}'.format(accuracy_list_tar))
+        print('accuracy for each category in prediction:{}'.format(accuracy_list_pre))
+
+    with torch.no_grad():
+
+        print("start predict validation iteration {}\n".format(iteration))
+        accuracy_list_tar = np.array([[0, 0]] * net.word_size())
+        accuracy_list_pre = np.array([[0, 0]] * net.word_size())
+        for test_index in range(train_size // batch_size, (train_size + 1000) // batch_size):
+            input, target = train.load_data(batch_size=batch_size, batch_index=test_index)
+            target = torch.from_numpy(target).float().to(device)
+            prediction, prediction_poss = neural.predict(net, input, batch_size)
+            accuracy_list_tar += np.array(train.targ_catagory_accuracy_maximum(prediction, target, batch_size))
+            accuracy_list_pre += np.array(train.pred_catagory_accuracy_maximum(prediction, target, batch_size))
+        print('category accuracy:{}'.format(accuracy_list_tar))
+        print('accuracy for each category in prediction:{}'.format(accuracy_list_pre))
 
 
-
+    '''
     while(iteration < 9):
 
         iteration += 1
@@ -204,7 +205,7 @@ def main():  # to be implemented
     # plot.plot_accuracy_no_other_over_iteration(train_accuracy_no_other, validation_accuracy_no_other, True)
 
     print("end training")
-
+    '''
 
 
 
