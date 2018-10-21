@@ -5,6 +5,7 @@ import os
 
 import neural
 import numpy as np
+np.set_printoptions(threshold=np.nan)
 import torch
 import torch.nn as nn
 import train
