@@ -277,7 +277,7 @@ def main():
         for label in dic[key].keys():
             if dic[key][label] > 50:
                 print(key, label, 'count:{}'.format(dic[key][label]))
-            if dic[key][label] / sum(dic[key].values()) > 0.5:
+            if dic[key][label] / sum(dic[key].values()) > 0.25:
                 print(key, label, 'percentage:{}%'.format(dic[key][label] / sum(dic[key].values()) * 100))
     print('table')
     for key in dic_no_cut.keys():
