@@ -66,7 +66,7 @@ def conduct_etl(training_files):
         data = json.load(open(os.path.join(webtables_dir, training_file), encoding='utf-8'))
         if satisfy_variants(data):
             table = Table(data)
-            if 'thread' in list(table.get_header()):
+            if 'thread' in [label.lower() for label in table.get_header()]:
                 print(table.get_data())
             continue
             # # Filter table with labels <= 10
