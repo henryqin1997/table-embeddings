@@ -65,11 +65,8 @@ def analyze_nocut():
     v_list_sorted = (sorted(filter(lambda item: len(item[1]) > 1, v_list.items()), key=(lambda item: len(item[1])), reverse=True))
 
     for i in range(len(k_list_sorted)):
-        print(k_list_sorted[i])
         k_list_sorted[i] = [list(map(convert_value_to_tags, k_list_sorted[i][0].split(','))),
                             [list(map(convert_value_to_label, labels.split(','))) for labels in k_list_sorted[i][1]]]
-        print(k_list_sorted[i])
-
 
     for i in range(len(v_list_sorted)):
         v_list_sorted[i] = [list(map(convert_value_to_label, v_list_sorted[i][0].split(','))),
