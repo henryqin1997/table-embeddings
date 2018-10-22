@@ -56,6 +56,8 @@ def main():  # to be implemented
 
     iteration = 0
 
+    file_cate = open('category','w')
+
     with torch.no_grad():
 
         file.write("start predict iteration {}\n".format(iteration))
@@ -74,8 +76,8 @@ def main():  # to be implemented
             accuracy_list_pre += np.array(train.pred_catagory_accuracy_maximum(prediction,target,batch_size))
             print('category accuracy:{}'.format(accuracy_list_tar))
             print('accuracy for each category in prediction:{}'.format(accuracy_list_pre))
-        print('category accuracy:{}'.format(accuracy_list_tar))
-        print('accuracy for each category in prediction:{}'.format(accuracy_list_pre))
+        file_cate.write('category accuracy:{}'.format(train.compute_accuracy(accuracy_list_tar)))
+        file_cate.write('accuracy for each category in prediction:{}'.format(train.compute_accuracy(accuracy_list_pre)))
 
     with torch.no_grad():
 
@@ -88,8 +90,8 @@ def main():  # to be implemented
             prediction, prediction_poss = neural.predict(net, input, batch_size)
             accuracy_list_tar += np.array(train.targ_catagory_accuracy_maximum(prediction, target, batch_size))
             accuracy_list_pre += np.array(train.pred_catagory_accuracy_maximum(prediction, target, batch_size))
-        print('category accuracy:{}'.format(accuracy_list_tar))
-        print('accuracy for each category in prediction:{}'.format(accuracy_list_pre))
+        file_cate.write('category accuracy:{}'.format(train.compute_accuracy(accuracy_list_tar)))
+        file_cate.write('accuracy for each category in prediction:{}'.format(train.compute_accuracy(accuracy_list_pre)))
 
 
     '''
