@@ -1,6 +1,7 @@
 import json
 import os
 import operator
+import numpy as np
 import matplotlib
 
 matplotlib.use('TkAgg')
@@ -12,6 +13,8 @@ input_dir = 'data/input'
 if __name__ == '__main__':
     x = []
     y = []
+    x2 = []
+    y2 = [[], [], [], []]
     table_num = 0
     word_num = 0
     word_count = {}
@@ -32,13 +35,41 @@ if __name__ == '__main__':
                             if word in word_count:
                                 word_count[word] += 1
                             else:
+                                word_count[word] = 1
                                 word_num += 1
                                 x.append(table_num)
                                 y.append(word_num)
-                                word_count[word] = 1
+
+                    if table_num % 5000 == 0:
+                        x2.append(table_num)
+                        y2[0].append(len(list(filter(lambda item: item[1] == 1, word_count.items()))))
+                        y2[1].append(len(
+                            list(filter(lambda item: item[1] > 1 and item[1] < 10, word_count.items()))))
+                        y2[2].append(len(
+                            list(filter(lambda item: item[1] >= 10 and item[1] < 50, word_count.items()))))
+                        y2[3].append(len(
+                            list(filter(lambda item: item[1] >= 50, word_count.items()))))
+
     word_count = dict(sorted(word_count.items(), key=operator.itemgetter(1), reverse=True))
     json.dump(word_count, open('data/wordlist_v2.json', 'w'), indent=4)
     plt.plot(x, y)
     plt.xlabel('# Tables')
     plt.ylabel('# Labels')
     plt.savefig('etl/wordlist.png')
+
+    plt.clf()
+    print(x2)
+    print(y2)
+    width = 3750
+    p1 = plt.bar(x2, y2[0], width, color='r')
+    p2 = plt.bar(x2, y2[1], width, bottom=y2[0], color='b')
+    p3 = plt.bar(x2, y2[2], width,
+                 bottom=np.array(y2[0]) + np.array(y2[1]), color='g')
+    p4 = plt.bar(x2, y2[3], width,
+                 bottom=np.array(y2[0]) + np.array(y2[1]) + np.array(y2[2]),
+                 color='c')
+    plt.xlabel('# Tables')
+    plt.ylabel('# Labels')
+    plt.legend((p1[0], p2[0], p3[0], p4[0]),
+               ('1', '(1,10)', '[10,50)', '[50,)'), fontsize=8, ncol=4, framealpha=0, fancybox=True)
+    plt.savefig('etl/wordlist_bar.png')
