@@ -44,11 +44,11 @@ if __name__ == '__main__':
                         x2.append(table_num)
                         y2[0].append(len(list(filter(lambda item: item[1] == 1, word_count.items()))))
                         y2[1].append(len(
-                            list(filter(lambda item: item[1] > 1 and item[1] < 10, word_count.items()))))
+                            list(filter(lambda item: 1 < item[1] < 10, word_count.items()))))
                         y2[2].append(len(
-                            list(filter(lambda item: item[1] >= 10 and item[1] < 50, word_count.items()))))
+                            list(filter(lambda item: 10 <= item[1] < 50, word_count.items()))))
                         y2[3].append(len(
-                            list(filter(lambda item: item[1] >= 50, word_count.items()))))
+                            list(filter(lambda item: 50 <= item[1], word_count.items()))))
 
     word_count = dict(sorted(word_count.items(), key=operator.itemgetter(1), reverse=True))
     json.dump(word_count, open('data/wordlist_v2.json', 'w'), indent=4)
