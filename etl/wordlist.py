@@ -2,6 +2,7 @@ import json
 import os
 import operator
 import matplotlib
+
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from .table import Table, satisfy_variants
@@ -35,9 +36,9 @@ if __name__ == '__main__':
                                 x.append(table_num)
                                 y.append(word_num)
                                 word_count[word] = 1
-    word_count = sorted(word_count.items(), key=operator.itemgetter(1), reverse=True)
-    print(word_count)
+    word_count = dict(sorted(word_count.items(), key=operator.itemgetter(1), reverse=True))
+    json.dump(word_count, open('data/wordlist_v2.json', 'w'), indent=4)
     plt.plot(x, y)
     plt.xlabel('# Tables')
-    plt.ylabel('Wordlist length')
+    plt.ylabel('# Labels')
     plt.savefig('etl/wordlist.png')
