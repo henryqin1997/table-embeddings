@@ -1,7 +1,7 @@
 #!/bin/bash
 rm -rf data/input
 mkdir data/input
-for i in `seq 0 31`
+for i in `seq 0 50`
 do
     echo $i
     for f in webtables/*/*$(printf %02d $i)-ip*25.json; do (cat "${f}"; echo) >> data/input/part-$(printf %05d $i); done
