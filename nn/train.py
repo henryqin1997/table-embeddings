@@ -260,34 +260,36 @@ def measure_distribution_no_cut(diction, input, target):
 def main():
 
     #dic = defaultdict(lambda: defaultdict(int))
-    dic_no_cut = defaultdict(lambda: defaultdict(int))
+    # dic_no_cut = defaultdict(lambda: defaultdict(int))
     dic_prediction = defaultdict(lambda: '')
-    train_size = 100000
-    batch_size = 50
-    batch_index = 0
-    while batch_size * batch_index < train_size:
-        print(batch_index)
-        input, target = load_data(batch_size=batch_size, batch_index=batch_index)
-        batch_index += 1
-        for i in range(len(input)):
-            #measure_distribution_cut(dic, input[i], target[i])
-            measure_distribution_no_cut(dic_no_cut, input[i], target[i])
-    # print('cuted columns')
-    # for key in dic.keys():
-    #     # if len(dic[key]) > 1:
-    #     # print('{}:{}'.format(key, dic[key]))
-    #     for label in dic[key].keys():
-    #         if dic[key][label] > 50:
-    #             print(key, label, 'count:{}'.format(dic[key][label]))
-    #         if dic[key][label] / sum(dic[key].values()) > 0.25:
-    #             print(key, label, 'percentage:{}%'.format(dic[key][label] / sum(dic[key].values()) * 100))
+    # train_size = 100000
+    # batch_size = 50
+    # batch_index = 0
+    # while batch_size * batch_index < train_size:
+    #     print(batch_index)
+    #     input, target = load_data(batch_size=batch_size, batch_index=batch_index)
+    #     batch_index += 1
+    #     for i in range(len(input)):
+    #         #measure_distribution_cut(dic, input[i], target[i])
+    #         measure_distribution_no_cut(dic_no_cut, input[i], target[i])
+    # # print('cuted columns')
+    # # for key in dic.keys():
+    # #     # if len(dic[key]) > 1:
+    # #     # print('{}:{}'.format(key, dic[key]))
+    # #     for label in dic[key].keys():
+    # #         if dic[key][label] > 50:
+    # #             print(key, label, 'count:{}'.format(dic[key][label]))
+    # #         if dic[key][label] / sum(dic[key].values()) > 0.25:
+    # #             print(key, label, 'percentage:{}%'.format(dic[key][label] / sum(dic[key].values()) * 100))
+    #
+    # with open('diction.json', 'w') as fp:
+    #     json.dump(dic_no_cut, fp)
+    #     print('diction saved')
+    #
+    # print('table')
 
-    with open('diction.json', 'w') as fp:
-        json.dump(dic_no_cut, fp)
-        print('diction saved')
-
-    print('table')
-
+    with open('diction.json', 'r') as fp:
+        dic_no_cut = json.load(fp)
 
     pre_acc = 0
     sum = 0
