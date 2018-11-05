@@ -15,6 +15,8 @@ if __name__ == '__main__':
     y = []
     x2 = []
     y2 = [[], [], [], []]
+    x3 = []
+    y3 = [[], [], []]
     table_num = 0
     word_num = 0
     word_count = {}
@@ -50,6 +52,14 @@ if __name__ == '__main__':
                         y2[3].append(len(
                             list(filter(lambda item: 50 <= item[1], word_count.items()))))
 
+                        x3.append(table_num)
+                        new0 = sum(
+                            list(map(lambda item: item[1], filter(lambda item: 50 <= item[1], word_count.items()))))
+                        y3[0].append(new0)
+                        new1 = sum(word_count.values())
+                        y3[1].append(new1)
+                        y3[2].append(new0 / new1)
+
     word_count = dict(sorted(word_count.items(), key=operator.itemgetter(1), reverse=True))
     json.dump(word_count, open('data/wordlist_v2.json', 'w'), indent=4)
     plt.plot(x, y)
@@ -73,3 +83,12 @@ if __name__ == '__main__':
     plt.legend((p1[0], p2[0], p3[0], p4[0]),
                ('1', '(1,10)', '[10,50)', '[50,)'), fontsize=8, ncol=4, framealpha=0, fancybox=True)
     plt.savefig('etl/wordlist_bar.png')
+
+    plt.clf()
+    print(x3)
+    print(y3)
+    p1 = plt.plot(x3, y3[2], color='r')
+    plt.xlabel('# Tables')
+    plt.ylabel('Top 1k Fraction')
+    plt.ylim([0, 1])
+    plt.savefig('etl/wordlist_1k_fraction.png')
