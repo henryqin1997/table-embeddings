@@ -286,10 +286,6 @@ def main():
         json.dump(dic_no_cut, fp)
         print('diction saved')
 
-    with open('diction_prediction.json', 'w') as fp1:
-        json.dump(dic_prediction, fp1)
-        print('decision tree saved')
-
     print('table')
 
 
@@ -308,6 +304,10 @@ def main():
         pre_acc+=max
         dic_prediction[key]=max_label
     print("train accuracy {}".format(pre_acc/sum))
+
+    with open('diction_prediction.json', 'w') as fp1:
+        json.dump(dic_prediction, fp1)
+        print('decision tree saved')
 
     # with open('diction_prediction.json', 'r') as f:
     #     dic_prediction = json.load(f)
@@ -342,7 +342,25 @@ def main():
                 correct+=1
     print('validation accuracy {}'.format(correct/total))
 
-
-
 if __name__ == '__main__':
+    # with open('diction.json', 'r') as fp:
+    #     dic_no_cut = json.load(fp)
+    # with open('diction_prediction.json', 'r') as fp1:
+    #     dic_prediction = json.load(fp1)
+    # num = 0
+    # no_other = 0
+    # for key in dic_no_cut.keys():
+    #     for label in dic_no_cut[key].keys():
+    #         print(label)
+    #         label_list = label.split(',')
+    #         for l in label_list:
+    #             if l!='-1':
+    #                 num += dic_no_cut[key][label]
+    #                 # if l!='4510':
+    #                 #     no_other+= dic_prediction[key][label]
+    #
+    #
+    #         #print(key, label, 'count:{}'.format(dic_no_cut[key][label]))
+
+    #print("train accuracy {}".format(no_other/num))
     main()
