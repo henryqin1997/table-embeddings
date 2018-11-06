@@ -260,38 +260,36 @@ def measure_distribution_no_cut(diction, input, target):
 def main():
 
     #dic = defaultdict(lambda: defaultdict(int))
-    dic_no_cut = defaultdict(lambda: defaultdict(int))
+    # dic_no_cut = defaultdict(lambda: defaultdict(int))
     dic_prediction = defaultdict(lambda: '')
-    train_size = 100000
-    batch_size = 50
-    batch_index = 0
-    while batch_size * batch_index < train_size:
-        print(batch_index)
-        input, target = load_data(batch_size=batch_size, batch_index=batch_index)
-        batch_index += 1
-        for i in range(len(input)):
-            #measure_distribution_cut(dic, input[i], target[i])
-            measure_distribution_no_cut(dic_no_cut, input[i], target[i])
-    # print('cuted columns')
-    # for key in dic.keys():
-    #     # if len(dic[key]) > 1:
-    #     # print('{}:{}'.format(key, dic[key]))
-    #     for label in dic[key].keys():
-    #         if dic[key][label] > 50:
-    #             print(key, label, 'count:{}'.format(dic[key][label]))
-    #         if dic[key][label] / sum(dic[key].values()) > 0.25:
-    #             print(key, label, 'percentage:{}%'.format(dic[key][label] / sum(dic[key].values()) * 100))
+    # train_size = 100000
+    # batch_size = 50
+    # batch_index = 0
+    # while batch_size * batch_index < train_size:
+    #     print(batch_index)
+    #     input, target = load_data(batch_size=batch_size, batch_index=batch_index)
+    #     batch_index += 1
+    #     for i in range(len(input)):
+    #         #measure_distribution_cut(dic, input[i], target[i])
+    #         measure_distribution_no_cut(dic_no_cut, input[i], target[i])
+    # # print('cuted columns')
+    # # for key in dic.keys():
+    # #     # if len(dic[key]) > 1:
+    # #     # print('{}:{}'.format(key, dic[key]))
+    # #     for label in dic[key].keys():
+    # #         if dic[key][label] > 50:
+    # #             print(key, label, 'count:{}'.format(dic[key][label]))
+    # #         if dic[key][label] / sum(dic[key].values()) > 0.25:
+    # #             print(key, label, 'percentage:{}%'.format(dic[key][label] / sum(dic[key].values()) * 100))
+    #
+    # with open('diction.json', 'w') as fp:
+    #     json.dump(dic_no_cut, fp)
+    #     print('diction saved')
+    #
+    # print('table')
 
-    with open('diction.json', 'w') as fp:
-        json.dump(dic_no_cut, fp)
-        print('diction saved')
-
-    with open('diction_prediction.json', 'w') as fp1:
-        json.dump(dic_prediction, fp1)
-        print('decision tree saved')
-
-    print('table')
-
+    with open('diction.json', 'r') as fp:
+        dic_no_cut = json.load(fp)
 
     pre_acc = 0
     sum = 0
@@ -308,6 +306,10 @@ def main():
         pre_acc+=max
         dic_prediction[key]=max_label
     print("train accuracy {}".format(pre_acc/sum))
+
+    with open('diction_prediction.json', 'w') as fp1:
+        json.dump(dic_prediction, fp1)
+        print('decision tree saved')
 
     # with open('diction_prediction.json', 'r') as f:
     #     dic_prediction = json.load(f)
@@ -342,7 +344,25 @@ def main():
                 correct+=1
     print('validation accuracy {}'.format(correct/total))
 
-
-
 if __name__ == '__main__':
+    # with open('diction.json', 'r') as fp:
+    #     dic_no_cut = json.load(fp)
+    # with open('diction_prediction.json', 'r') as fp1:
+    #     dic_prediction = json.load(fp1)
+    # num = 0
+    # no_other = 0
+    # for key in dic_no_cut.keys():
+    #     for label in dic_no_cut[key].keys():
+    #         print(label)
+    #         label_list = label.split(',')
+    #         for l in label_list:
+    #             if l!='-1':
+    #                 num += dic_no_cut[key][label]
+    #                 # if l!='4510':
+    #                 #     no_other+= dic_prediction[key][label]
+    #
+    #
+    #         #print(key, label, 'count:{}'.format(dic_no_cut[key][label]))
+
+    #print("train accuracy {}".format(no_other/num))
     main()
