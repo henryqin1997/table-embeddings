@@ -9,7 +9,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from .table import Table, satisfy_variants
 
-input_dir = 'data/input_old'
+input_dir = 'data/input'
 
 if __name__ == '__main__':
     x = []
