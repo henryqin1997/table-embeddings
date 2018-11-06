@@ -58,7 +58,7 @@ if __name__ == '__main__':
 
                 x3.append(table_num)
                 new0 = sum(
-                    list(map(lambda item: item[1], filter(lambda item: 50 <= item[1], word_count.items()))))
+                    list(map(lambda item: item[1], list(word_count.items())[:1000])))
                 y3[0].append(new0)
                 new1 = sum(word_count.values())
                 y3[1].append(new1)
