@@ -16,6 +16,7 @@ from .table import Table, satisfy_variants
 wordlist_json = 'data/wordlist_v4.json'
 input_dir = 'data/input'
 output_dir = 'data/sample_random_label'
+testing_filelist_json = 'data/testing_files_random_label.json'
 try:
     shutil.rmtree(os.path.join(output_dir, seed))
 except FileNotFoundError:
@@ -23,7 +24,20 @@ except FileNotFoundError:
 os.makedirs(os.path.join(output_dir, seed))
 total_table_num = 115859
 
+
+def generate_file_list():
+    folders = sorted(list(filter(lambda item: item.isdigit(), os.listdir(output_dir))))
+    filelist = []
+    for folder in folders:
+        filelist += [os.path.join(folder, filename) for filename in
+                     sorted(list(filter(lambda item: item.endswith('.json') and not item.endswith('_activate.json'),
+                                        os.listdir(os.path.join(output_dir, folder)))))]
+    return filelist
+
+
 if __name__ == '__main__':
+    # json.dump(generate_file_list(), open(testing_filelist_json, 'w+'), indent=4)
+    # exit(0)
     wordlist = json.load(open(wordlist_json))
     word_prob = dict([(item[0], float(sys.argv[2]) / item[1]) for item in wordlist.items()])
     word_count = defaultdict(int)
