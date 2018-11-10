@@ -28,7 +28,7 @@ training_data_dir = './data/sample_random_label_train'
 webtables_dir = './data/sample_random_label'
 num_processors = int(sys.argv[1])
 training_files_json = './data/testing_files_random_label.json'
-wordlist_json = './data/wordlist_v4.json'
+wordlist_json = './data/wordlist_v4_index.json'
 
 
 def generate_wordlist():
