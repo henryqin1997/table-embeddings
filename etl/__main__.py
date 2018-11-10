@@ -14,14 +14,21 @@ from .table import satisfy_variants
 from .tagger import st, tag_to_index
 
 data_dir = './data'
-training_data_dir = './data/train'
-webtables_dir = './webtables'
+# training_data_dir = './data/train'
+# webtables_dir = './webtables'
 wordlist_raw = './hadoop/output2/part-00000'
 tree_dir = './data/tree'
 num_folders = 51
+# num_processors = int(sys.argv[1])
+# training_files_json = './data/training_files.json'
+# wordlist_json = './data/wordlist.json'
+
+# For sample random label
+training_data_dir = './data/sample_random_label_train'
+webtables_dir = './data/sample_random_label'
 num_processors = int(sys.argv[1])
-training_files_json = './data/training_files.json'
-wordlist_json = './data/wordlist.json'
+training_files_json = './data/testing_files_random_label.json'
+wordlist_json = './data/wordlist_v4.json'
 
 
 def generate_wordlist():
