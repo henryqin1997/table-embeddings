@@ -13,7 +13,7 @@ import shutil
 from collections import defaultdict
 from .table import Table, satisfy_variants
 
-wordlist_json = 'data/wordlist_v3.json'
+wordlist_json = 'data/wordlist_v2.json'
 input_dir = 'data/input'
 output_dir = 'data/sample_random_label'
 try:
@@ -21,7 +21,7 @@ try:
 except FileNotFoundError:
     pass
 os.makedirs(os.path.join(output_dir, seed))
-total_table_num = 1677590
+total_table_num = 115859
 
 if __name__ == '__main__':
     wordlist = json.load(open(wordlist_json))
