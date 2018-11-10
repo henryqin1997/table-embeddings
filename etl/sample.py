@@ -13,7 +13,7 @@ import shutil
 from collections import defaultdict
 from .table import Table, satisfy_variants
 
-wordlist_json = 'data/wordlist_v2.json'
+wordlist_json = 'data/wordlist_v4.json'
 input_dir = 'data/input'
 output_dir = 'data/sample_random_label'
 try:
