@@ -97,12 +97,12 @@ def load_sample_random_lable(batch_size, batch_index=0):
     return result
 
 
-def sample_dict(sample_data,batch_index,missed_feature):
+def sample_dict(sample_data,sample_summary,missed_feature):
     batch_size=len(sample_data)
     #missed_feature=[]
     with open('diction_prediction.json', 'r') as fp:
         prediction=json.load(fp)
-    sample_summary = defaultdict(lambda: [0, 0])
+    #sample_summary = defaultdict(lambda: [0, 0])
     # for batch in range(iteration):
     #     sample_summary=defaultdict(lambda:[0,0])
     #     features=sample_feature[batch*batch_size:batch_size*(batch+1)]
@@ -123,14 +123,29 @@ def sample_dict(sample_data,batch_index,missed_feature):
                     sample_summary[target[i]][1]+=1
                     if target[i]==prediction[','.join(feature)][i]:
                         sample_summary[target[i]][0]+=1
-    with open("sample_dict_batch={}".format(batch_index),'w') as wfp:
-            json.dump(sample_summary,wfp)
+    # with open("sample_dict_batch={}".format(batch_index),'w') as wfp:
+    #         json.dump(sample_summary,wfp)
+    #
+    # with open("miss_features_batch={}".format(batch_index),'w') as wfp:
+    #     for f in missed_feature:
+    #         wfp.write(f+"\n")
 
-    with open("miss_features_batch={}".format(batch_index),'w') as wfp:
+def sample_print():
+    batch_size=50
+    sample_size=4500
+    missed_feature=[]
+    batch_index = 0
+    for sample_index in range(10):
+        sample_summary = defaultdict(lambda: [0, 0])
+        while batch_size*batch_index<sample_size*(sample_index+1):
+            sample_data=load_sample_random_lable(batch_size,batch_index)
+            sample_dict(sample_data,sample_summary,missed_feature)
+            batch_index+=1
+        with open("sample_dict_batch={}".format(sample_index), 'w') as wfp:
+            json.dump(sample_summary, wfp)
+    with open("miss_features",'w') as wfp:
         for f in missed_feature:
             wfp.write(f+"\n")
-
-
 ##########################333#3#
 # evaluation of model:
 # 1. accuracy of prediction of label over target     #correct prediction/#targetlabel
@@ -329,6 +344,7 @@ def measure_distribution_no_cut(diction, input, target):
 
 
 def main():
+    sample_print()
     # dic = defaultdict(lambda: defaultdict(int))
     # dic_no_cut = defaultdict(lambda: defaultdict(int))
     # dic_prediction = defaultdict(lambda: '')
