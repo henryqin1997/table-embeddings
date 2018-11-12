@@ -98,37 +98,55 @@ def load_sample_random_lable(sample_index, batch_size, batch_index):
     return result
 
 
-def sample_dict(sample_feature, sample_target, sample_active, iteration):
-    batch_size = len(sample_feature) / iteration
-    missed_feature = []
+def sample_dict(sample_data,sample_summary,missed_feature):
+    batch_size=len(sample_data)
+    #missed_feature=[]
     with open('diction_prediction.json', 'r') as fp:
-        prediction = json.load(fp)
-    for batch in range(iteration):
+        prediction=json.load(fp)
+    #sample_summary = defaultdict(lambda: [0, 0])
+    # for batch in range(iteration):
+    #     sample_summary=defaultdict(lambda:[0,0])
+    #     features=sample_feature[batch*batch_size:batch_size*(batch+1)]
+    #     targets=sample_target[batch*batch_size:batch_size*(batch+1)]
+    #     actives=sample_active[batch*batch_size:batch_size*(batch+1)]
+    for index in range(batch_size):
+        feature=sample_data[index][0]
+        target=sample_data[index][1]
+        activate=sample_data[index][2]
+        if ','.join(feature) not in prediction:
+            for i in range(10):
+                if activate[i]==1 and feature[i]!=-1:
+                    sample_summary[target[i]][1]+=1
+            missed_feature.append(','.join(feature))
+        else:
+            for i in range(10):
+                if activate[i]==1 and feature[i]!=-1:
+                    sample_summary[target[i]][1]+=1
+                    if target[i]==prediction[','.join(feature)][i]:
+                        sample_summary[target[i]][0]+=1
+    # with open("sample_dict_batch={}".format(batch_index),'w') as wfp:
+    #         json.dump(sample_summary,wfp)
+    #
+    # with open("miss_features_batch={}".format(batch_index),'w') as wfp:
+    #     for f in missed_feature:
+    #         wfp.write(f+"\n")
+
+def sample_print():
+    batch_size=50
+    sample_size=4500
+    missed_feature=[]
+    batch_index = 0
+    for sample_index in range(10):
         sample_summary = defaultdict(lambda: [0, 0])
-        features = sample_feature[batch * batch_size:batch_size * (batch + 1)]
-        targets = sample_target[batch * batch_size:batch_size * (batch + 1)]
-        actives = sample_active[batch * batch_size:batch_size * (batch + 1)]
-        for index in range(batch_size):
-            feature_split = features[index].split(',')
-            target_split = targets[index].split(',')
-            if features[index] not in prediction:
-                for i in range(10):
-                    if actives[index][i] == 1 and feature_split[i] != '-1':
-                        sample_summary[target_split[i]][1] += 1
-                missed_feature.append(features[index])
-            else:
-                for i in range(10):
-                    if actives[index][i] == 1 and feature_split[i] != '-1':
-                        sample_summary[target_split[i]][1] += 1
-                        if target_split[i] == prediction[features[index]][i]:
-                            sample_summary[target_split[i]][0] += 1
-        with open("sample_dict_batch={}".format(batch), 'w') as wfp:
+        while batch_size*batch_index<sample_size*(sample_index+1):
+            sample_data=load_sample_random_lable(batch_size,batch_index)
+            sample_dict(sample_data,sample_summary,missed_feature)
+            batch_index+=1
+        with open("sample_dict_batch={}".format(sample_index), 'w') as wfp:
             json.dump(sample_summary, wfp)
-    with open("miss_features_it={}".format(batch), 'w') as wfp:
+    with open("miss_features",'w') as wfp:
         for f in missed_feature:
-            wfp.write(f + "\n")
-
-
+            wfp.write(f+"\n")
 ##########################333#3#
 # evaluation of model:
 # 1. accuracy of prediction of label over target     #correct prediction/#targetlabel
@@ -327,9 +345,10 @@ def measure_distribution_no_cut(diction, input, target):
 
 
 def main():
+    sample_print()
     # dic = defaultdict(lambda: defaultdict(int))
     # dic_no_cut = defaultdict(lambda: defaultdict(int))
-    dic_prediction = defaultdict(lambda: '')
+    # dic_prediction = defaultdict(lambda: '')
     # train_size = 100000
     # batch_size = 50
     # batch_index = 0
@@ -356,61 +375,61 @@ def main():
     #
     # print('table')
 
-    with open('diction.json', 'r') as fp:
-        dic_no_cut = json.load(fp)
-
-    pre_acc = 0
-    sum = 0
-
-    for key in dic_no_cut.keys():
-        max = 0
-        max_label = []
-        for label in dic_no_cut[key].keys():
-            sum += dic_no_cut[key][label]
-            if dic_no_cut[key][label] > max:
-                max = dic_no_cut[key][label]
-                max_label = label
-            # print(key, label, 'count:{}'.format(dic_no_cut[key][label]))
-        pre_acc += max
-        dic_prediction[key] = max_label
-    print("train accuracy {}".format(pre_acc / sum))
-
-    with open('diction_prediction.json', 'w') as fp1:
-        json.dump(dic_prediction, fp1)
-        print('decision tree saved')
-
-    # with open('diction_prediction.json', 'r') as f:
-    #     dic_prediction = json.load(f)
-    batch_size = 50
-    batch_index = 2000
-    correct = 0
-    total = 0
-    while batch_size * batch_index < 103000:
-        print(batch_index)
-        input, target = load_data(batch_size=batch_size, batch_index=batch_index)
-        batch_index += 1
-        for i in range(len(input)):
-            total += 1
-            # measure_distribution_cut(dic, input[i], target[i])
-            input_transformed = input[i].transpose()
-            target_transformed = target[i].transpose()
-            key_list = []
-            value_list = []
-            for index, row in enumerate(input_transformed):
-                try:
-                    i = list(row).index(1)
-                    t = list(target_transformed[index]).index(1)
-                except ValueError:
-                    i = -1
-                    t = -1
-                finally:
-                    key_list.append(str(i))
-                    value_list.append(str(t))
-            key = ','.join(key_list)
-            value = ','.join(value_list)
-            if dic_prediction[key] == value:
-                correct += 1
-    print('validation accuracy {}'.format(correct / total))
+    # with open('diction.json', 'r') as fp:
+    #     dic_no_cut = json.load(fp)
+    #
+    # pre_acc = 0
+    # sum = 0
+    #
+    # for key in dic_no_cut.keys():
+    #     max = 0
+    #     max_label = []
+    #     for label in dic_no_cut[key].keys():
+    #         sum += dic_no_cut[key][label]
+    #         if dic_no_cut[key][label] > max:
+    #             max = dic_no_cut[key][label]
+    #             max_label = label
+    #         # print(key, label, 'count:{}'.format(dic_no_cut[key][label]))
+    #     pre_acc += max
+    #     dic_prediction[key] = max_label
+    # print("train accuracy {}".format(pre_acc / sum))
+    #
+    # with open('diction_prediction.json', 'w') as fp1:
+    #     json.dump(dic_prediction, fp1)
+    #     print('decision tree saved')
+    #
+    # # with open('diction_prediction.json', 'r') as f:
+    # #     dic_prediction = json.load(f)
+    # batch_size = 50
+    # batch_index = 2000
+    # correct = 0
+    # total = 0
+    # while batch_size * batch_index < 103000:
+    #     print(batch_index)
+    #     input, target = load_data(batch_size=batch_size, batch_index=batch_index)
+    #     batch_index += 1
+    #     for i in range(len(input)):
+    #         total += 1
+    #         # measure_distribution_cut(dic, input[i], target[i])
+    #         input_transformed = input[i].transpose()
+    #         target_transformed = target[i].transpose()
+    #         key_list = []
+    #         value_list = []
+    #         for index, row in enumerate(input_transformed):
+    #             try:
+    #                 i = list(row).index(1)
+    #                 t = list(target_transformed[index]).index(1)
+    #             except ValueError:
+    #                 i = -1
+    #                 t = -1
+    #             finally:
+    #                 key_list.append(str(i))
+    #                 value_list.append(str(t))
+    #         key = ','.join(key_list)
+    #         value = ','.join(value_list)
+    #         if dic_prediction[key] == value:
+    #             correct += 1
+    # print('validation accuracy {}'.format(correct / total))
 
 
 if __name__ == '__main__':
