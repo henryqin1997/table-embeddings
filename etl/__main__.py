@@ -28,7 +28,7 @@ training_data_dir = './data/sample_random_label_train'
 webtables_dir = './data/sample_random_label'
 num_processors = int(sys.argv[1])
 training_files_json = './data/testing_files_random_label.json'
-wordlist_json = './data/wordlist_v4_index.json'
+wordlist_json = './data/wordlist.json'
 
 
 def generate_wordlist():
@@ -82,8 +82,8 @@ def conduct_etl(training_files):
             json.dump(table.data,
                       open(os.path.join(training_data_dir, training_file), 'w+'),
                       indent=4)
-            numpy.savetxt(os.path.join(training_data_dir, '{}_ner.csv'.format(basename)),
-                          table.generate_ner_matrix(st, tag_to_index), fmt='%i', delimiter=",")
+            # numpy.savetxt(os.path.join(training_data_dir, '{}_ner.csv'.format(basename)),
+            #               table.generate_ner_matrix(st, tag_to_index), fmt='%i', delimiter=",")
             numpy.savetxt(os.path.join(training_data_dir, '{}_wordlist.csv'.format(basename)),
                           table.generate_wordlist_matrix(wordlist), fmt='%i', delimiter=",")
 
