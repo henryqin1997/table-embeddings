@@ -123,7 +123,7 @@ def sample_dict(sample_data,sample_summary,missed_feature):
             for i in range(10):
                 if activate[i]==1 and target[i]!=-1:
                     sample_summary[target[i]][1]+=1
-                    if target[i]==prediction[','.join(str(x) for x in feature)][i]:
+                    if str(target[i])==prediction[','.join(str(x) for x in feature)].split(',')[i]:
                         sample_summary[target[i]][0]+=1
     # with open("sample_dict_batch={}".format(batch_index),'w') as wfp:
     #         json.dump(sample_summary,wfp)
