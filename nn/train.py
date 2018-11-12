@@ -508,4 +508,5 @@ if __name__ == '__main__':
     #         #print(key, label, 'count:{}'.format(dic_no_cut[key][label]))
 
     # print("train accuracy {}".format(no_other/num))
+    print('version 2.1')
     main()
