@@ -10,7 +10,7 @@ training_files = json.load(open(training_files_json))
 testing_data_dir = 'data/sample_random_label_train'
 activate_data_dir = 'data/sample_random_label'
 testing_files_json = 'data/testing_files_random_label.json'
-testing_files = json.load(open(testing_files_json))
+testing_files = [[y for y in json.load(open(testing_files_json)) if y[0] == str(x)] for x in range(10)]
 tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERCENT': 4, 'DATE': 5, 'TIME': 6}
 
 
@@ -70,12 +70,13 @@ def indexOf(l, n):
     except ValueError:
         return -1
 
-def load_sample_random_lable(batch_size, batch_index=0):
+
+def load_sample_random_lable(sample_index, batch_size, batch_index):
     # load testing data of sample with random labels
     # put size number of data into one array
     # start from batch_index batch
     result = []
-    batch_files = testing_files[batch_size * batch_index:batch_size * (batch_index + 1)]
+    batch_files = testing_files[sample_index][batch_size * batch_index:batch_size * (batch_index + 1)]
     for batch_file in batch_files:
         table = Table(json.load(open(os.path.join(testing_data_dir, batch_file))))
         column_num = len(table.get_header())
@@ -97,35 +98,35 @@ def load_sample_random_lable(batch_size, batch_index=0):
     return result
 
 
-def sample_dict(sample_feature,sample_target,sample_active,iteration):
-    batch_size=len(sample_feature)/iteration
-    missed_feature=[]
+def sample_dict(sample_feature, sample_target, sample_active, iteration):
+    batch_size = len(sample_feature) / iteration
+    missed_feature = []
     with open('diction_prediction.json', 'r') as fp:
-        prediction=json.load(fp)
+        prediction = json.load(fp)
     for batch in range(iteration):
-        sample_summary=defaultdict(lambda:[0,0])
-        features=sample_feature[batch*batch_size:batch_size*(batch+1)]
-        targets=sample_target[batch*batch_size:batch_size*(batch+1)]
-        actives=sample_active[batch*batch_size:batch_size*(batch+1)]
+        sample_summary = defaultdict(lambda: [0, 0])
+        features = sample_feature[batch * batch_size:batch_size * (batch + 1)]
+        targets = sample_target[batch * batch_size:batch_size * (batch + 1)]
+        actives = sample_active[batch * batch_size:batch_size * (batch + 1)]
         for index in range(batch_size):
-            feature_split=features[index].split(',')
-            target_split=targets[index].split(',')
+            feature_split = features[index].split(',')
+            target_split = targets[index].split(',')
             if features[index] not in prediction:
                 for i in range(10):
-                    if actives[index][i]==1 and feature_split[i]!='-1':
-                        sample_summary[target_split[i]][1]+=1
+                    if actives[index][i] == 1 and feature_split[i] != '-1':
+                        sample_summary[target_split[i]][1] += 1
                 missed_feature.append(features[index])
             else:
                 for i in range(10):
-                    if actives[index][i]==1 and feature_split[i]!='-1':
-                        sample_summary[target_split[i]][1]+=1
-                        if target_split[i]==prediction[features[index]][i]:
-                            sample_summary[target_split[i]][0]+=1
-        with open("sample_dict_batch={}".format(batch),'w') as wfp:
-            json.dump(sample_summary,wfp)
-    with open("miss_features_it={}".format(batch),'w') as wfp:
+                    if actives[index][i] == 1 and feature_split[i] != '-1':
+                        sample_summary[target_split[i]][1] += 1
+                        if target_split[i] == prediction[features[index]][i]:
+                            sample_summary[target_split[i]][0] += 1
+        with open("sample_dict_batch={}".format(batch), 'w') as wfp:
+            json.dump(sample_summary, wfp)
+    with open("miss_features_it={}".format(batch), 'w') as wfp:
         for f in missed_feature:
-            wfp.write(f+"\n")
+            wfp.write(f + "\n")
 
 
 ##########################333#3#
