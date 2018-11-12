@@ -117,7 +117,7 @@ def sample_dict(sample_data,sample_summary,missed_feature):
             for i in range(10):
                 if activate[i]==1 and feature[i]!=-1:
                     sample_summary[target[i]][1]+=1
-            missed_feature.append(','.join(feature))
+            missed_feature.add(','.join(feature))
         else:
             for i in range(10):
                 if activate[i]==1 and feature[i]!=-1:
@@ -134,12 +134,12 @@ def sample_dict(sample_data,sample_summary,missed_feature):
 def sample_print():
     batch_size=50
     sample_size=4500
-    missed_feature=[]
-    batch_index = 0
+    missed_feature=set([])
     for sample_index in range(10):
         sample_summary = defaultdict(lambda: [0, 0])
-        while batch_size*batch_index<sample_size*(sample_index+1):
-            sample_data=load_sample_random_lable(batch_size,batch_index)
+        batch_index = 0
+        while batch_size*batch_index<sample_size:
+            sample_data=load_sample_random_lable(sample_index,batch_size,batch_index)
             sample_dict(sample_data,sample_summary,missed_feature)
             batch_index+=1
         with open("sample_dict_batch={}".format(sample_index), 'w') as wfp:
