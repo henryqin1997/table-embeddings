@@ -15,6 +15,12 @@ testing_files = [[y for y in json.load(open(testing_files_json)) if y[0] == str(
 tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERCENT': 4, 'DATE': 5, 'TIME': 6}
 
 
+def jaccard_similarity(list1, list2):
+    intersection = len(list(set(list1).intersection(list2)))
+    print(list(set(list1).intersection(list2)))
+    union = (len(list1) + len(list2)) - intersection
+    return float(intersection / union)
+
 def one_hot(row):
     assert len(row) > 0
     row_sum = int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
@@ -141,12 +147,16 @@ def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
     #         wfp.write(f+"\n")
 
 def diction_pred(dic,feature):
-    for i in range(10):
-        if ','.join(str(x) for x in feature) not in dic:
-            feature[i]=-1
-        else:
-            return dic[','.join(str(x) for x in feature)]
-    return ','.join(str(x) for x in feature)
+    maxkey=''
+    maxjac=0
+    feature_processed=[x for x in feature if x!=-1]
+    for key in dic.keys():
+        key_processed = [int(x) for x in key.split(',') if x!='-1']
+        jac = jaccard_similarity(feature_processed,key_processed)
+        if jac>maxjac:
+            maxkey=key
+            maxjac=jac
+    return dic[maxkey]
 
 def sample_print():
     batch_size=50
