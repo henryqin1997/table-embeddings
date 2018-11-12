@@ -2,10 +2,15 @@ import json
 import os
 import numpy
 from collections import defaultdict
+from etl import Table
 
-training_data_dir = '../data/train'
-training_files_json = '../data/training_files_filtered.json'
+training_data_dir = 'data/train'
+training_files_json = 'data/training_files_filtered.json'
 training_files = json.load(open(training_files_json))
+testing_data_dir = 'data/sample_random_label_train'
+activate_data_dir = 'data/sample_random_label'
+testing_files_json = 'data/testing_files_random_label.json'
+testing_files = json.load(open(testing_files_json))
 tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERCENT': 4, 'DATE': 5, 'TIME': 6}
 
 
@@ -57,6 +62,40 @@ def load_data(batch_size, batch_index=0):
         inputs_transformed.append(input_transformed.transpose())
         targets_transformed.append(target_transformed.transpose())
     return numpy.array(inputs_transformed), numpy.array(targets_transformed)
+
+
+def indexOf(l, n):
+    try:
+        return list(l).index(n)
+    except ValueError:
+        return -1
+
+
+def load_sample_random_lable(batch_size, batch_index=0):
+    # load testing data of sample with random labels
+    # put size number of data into one array
+    # start from batch_index batch
+    result = []
+    batch_files = testing_files[batch_size * batch_index:batch_size * (batch_index + 1)]
+    for batch_file in batch_files:
+        table = Table(json.load(open(os.path.join(testing_data_dir, batch_file))))
+        column_num = len(table.get_header())
+        batch_file_ner = batch_file.rstrip('.json') + '_ner.csv'
+        batch_file_wordlist = batch_file.rstrip('.json') + '_wordlist.csv'
+        batch_file_activate = batch_file.rstrip('.json') + '_activate.json'
+        input = numpy.genfromtxt(os.path.join(testing_data_dir, batch_file_ner), delimiter=',').transpose()
+        target = numpy.genfromtxt(os.path.join(testing_data_dir, batch_file_wordlist), delimiter=',').transpose()
+        activate = json.load(open(os.path.join(activate_data_dir, batch_file_activate)))
+
+        input_transformed = [
+            int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
+            if idx < column_num else -1 for idx, row in enumerate(input)]
+        target_transformed = [indexOf(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
+                              idx, row in enumerate(target)]
+        activate_transformed = [num if idx < column_num else -1 for idx, num in enumerate(activate)]
+
+        result.append([input_transformed, target_transformed, activate_transformed])
+    return result
 
 
 ##########################333#3#
@@ -256,10 +295,8 @@ def measure_distribution_no_cut(diction, input, target):
     diction[','.join(key_list)][','.join(value_list)] += 1
 
 
-
 def main():
-
-    #dic = defaultdict(lambda: defaultdict(int))
+    # dic = defaultdict(lambda: defaultdict(int))
     # dic_no_cut = defaultdict(lambda: defaultdict(int))
     dic_prediction = defaultdict(lambda: '')
     # train_size = 100000
@@ -298,14 +335,14 @@ def main():
         max = 0
         max_label = []
         for label in dic_no_cut[key].keys():
-            sum+=dic_no_cut[key][label]
-            if dic_no_cut[key][label]>max:
+            sum += dic_no_cut[key][label]
+            if dic_no_cut[key][label] > max:
                 max = dic_no_cut[key][label]
                 max_label = label
-            #print(key, label, 'count:{}'.format(dic_no_cut[key][label]))
-        pre_acc+=max
-        dic_prediction[key]=max_label
-    print("train accuracy {}".format(pre_acc/sum))
+            # print(key, label, 'count:{}'.format(dic_no_cut[key][label]))
+        pre_acc += max
+        dic_prediction[key] = max_label
+    print("train accuracy {}".format(pre_acc / sum))
 
     with open('diction_prediction.json', 'w') as fp1:
         json.dump(dic_prediction, fp1)
@@ -322,7 +359,7 @@ def main():
         input, target = load_data(batch_size=batch_size, batch_index=batch_index)
         batch_index += 1
         for i in range(len(input)):
-            total+=1
+            total += 1
             # measure_distribution_cut(dic, input[i], target[i])
             input_transformed = input[i].transpose()
             target_transformed = target[i].transpose()
@@ -340,9 +377,10 @@ def main():
                     value_list.append(str(t))
             key = ','.join(key_list)
             value = ','.join(value_list)
-            if dic_prediction[key]==value:
-                correct+=1
-    print('validation accuracy {}'.format(correct/total))
+            if dic_prediction[key] == value:
+                correct += 1
+    print('validation accuracy {}'.format(correct / total))
+
 
 if __name__ == '__main__':
     # with open('diction.json', 'r') as fp:
@@ -364,5 +402,5 @@ if __name__ == '__main__':
     #
     #         #print(key, label, 'count:{}'.format(dic_no_cut[key][label]))
 
-    #print("train accuracy {}".format(no_other/num))
+    # print("train accuracy {}".format(no_other/num))
     main()
