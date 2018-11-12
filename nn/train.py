@@ -102,7 +102,7 @@ def load_sample_random_lable(sample_index, batch_size, batch_index):
 def sample_dict(sample_data,sample_summary,missed_feature):
     batch_size=len(sample_data)
     #missed_feature=[]
-    with open('nn/diction_prediction.json', 'r') as fp:
+    with open('diction_prediction.json', 'r') as fp:
         prediction=json.load(fp)
     #sample_summary = defaultdict(lambda: [0, 0])
     # for batch in range(iteration):
@@ -143,9 +143,9 @@ def sample_print():
             sample_data=load_sample_random_lable(sample_index,batch_size,batch_index)
             sample_dict(sample_data,sample_summary,missed_feature)
             batch_index+=1
-        with open("nn/sample_dict_batch={}".format(sample_index), 'w') as wfp:
+        with open("sample_dict_batch={}".format(sample_index), 'w') as wfp:
             json.dump(sample_summary, wfp)
-    with open("nn/miss_features",'w') as wfp:
+    with open("miss_features",'w') as wfp:
         for f in missed_feature:
             wfp.write(f+"\n")
 ##########################333#3#
