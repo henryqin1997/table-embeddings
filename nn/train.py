@@ -9,8 +9,8 @@ training_files_json = 'data/training_files_filtered.json'
 training_files = json.load(open(training_files_json))
 testing_data_dir = 'data/sample_random_label_train'
 activate_data_dir = 'data/sample_random_label'
-#testing_files_json = 'data/testing_files_random_label.json'
-testing_files_json = 'data/testing_files_random_label_sample.json'
+testing_files_json = 'data/testing_files_random_label.json'
+# testing_files_json = 'data/testing_files_random_label_sample.json'
 testing_files = [[y for y in json.load(open(testing_files_json)) if y[0] == str(x)] for x in range(10)]
 tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERCENT': 4, 'DATE': 5, 'TIME': 6}
 
@@ -98,33 +98,41 @@ def load_sample_random_lable(sample_index, batch_size, batch_index):
         result.append([input_transformed, target_transformed, activate_transformed])
     return result
 
-
-def sample_dict(sample_data,sample_summary,missed_feature):
+def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
     batch_size=len(sample_data)
     #missed_feature=[]
-    with open('nn/diction_prediction.json', 'r') as fp:
-        prediction=json.load(fp)
     #sample_summary = defaultdict(lambda: [0, 0])
     # for batch in range(iteration):
     #     sample_summary=defaultdict(lambda:[0,0])
     #     features=sample_feature[batch*batch_size:batch_size*(batch+1)]
     #     targets=sample_target[batch*batch_size:batch_size*(batch+1)]
     #     actives=sample_active[batch*batch_size:batch_size*(batch+1)]
+
     for index in range(batch_size):
         feature=sample_data[index][0]
         target=sample_data[index][1]
         activate=sample_data[index][2]
         if ','.join(str(x) for x in feature) not in prediction:
+            pred = diction_pred(prediction,feature)
             for i in range(10):
                 if activate[i]==1 and target[i]!=-1:
                     sample_summary[target[i]][1]+=1
+                    if int(pred.split(',')[i])==target[i]:
+                        sample_summary[target[i]][0] += 1
             missed_feature.add(','.join(str(x) for x in feature))
         else:
             for i in range(10):
                 if activate[i]==1 and target[i]!=-1:
                     sample_summary[target[i]][1]+=1
-                    if str(target[i])==prediction[','.join(str(x) for x in feature)].split(',')[i]:
+                    if target[i]==int(prediction[','.join(str(x) for x in feature)].split(',')[i]):
                         sample_summary[target[i]][0]+=1
+                    else:
+                        mispred = [str(x) for x in target]
+                        for i in range(10):
+                            if activate[i]==1:
+                                mispred[i]+='*'
+                        mispred=','.join(mispred)
+                        faultdic[','.join(str(x) for x in feature)].append(mispred)
     # with open("sample_dict_batch={}".format(batch_index),'w') as wfp:
     #         json.dump(sample_summary,wfp)
     #
@@ -132,22 +140,55 @@ def sample_dict(sample_data,sample_summary,missed_feature):
     #     for f in missed_feature:
     #         wfp.write(f+"\n")
 
+def diction_pred(dic,feature):
+    for i in range(10):
+        if ','.join(str(x) for x in feature) not in dic:
+            feature[i]=-1
+        else:
+            return dic[','.join(str(x) for x in feature)]
+    return ','.join(str(x) for x in feature)
+
 def sample_print():
     batch_size=50
     sample_size=4500
     missed_feature=set([])
+    faultdic = defaultdict(lambda: [])
+    with open('nn/diction_prediction.json', 'r') as fp:
+        prediction = json.load(fp)
     for sample_index in range(10):
         sample_summary = defaultdict(lambda: [0, 0])
         batch_index = 0
         while batch_size*batch_index<sample_size:
             sample_data=load_sample_random_lable(sample_index,batch_size,batch_index)
-            sample_dict(sample_data,sample_summary,missed_feature)
+            sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction)
             batch_index+=1
         with open("nn/sample_dict_it={}".format(sample_index), 'w') as wfp:
             json.dump(sample_summary, wfp)
     with open("nn/miss_features",'w') as wfp:
         for f in missed_feature:
             wfp.write(f+"\n")
+    with open("nn/fault_diction.json",'w') as wfp:
+        json.dump(faultdic,wfp)
+
+
+
+
+# def sample_print_uniform():
+#     batch_size = 50
+#     sample_size = 4500
+#     missed_feature = set([])
+#     sample_summary = defaultdict(lambda: [0, 0])
+#     batch_index = 0
+#     while batch_size * batch_index < sample_size:
+#         sample_data = load_sample_random_lable(sample_index, batch_size, batch_index)
+#         sample_dict(sample_data, sample_summary, missed_feature)
+#         batch_index += 1
+#     with open("nn/sample_dict_it={}".format(sample_index), 'w') as wfp:
+#         json.dump(sample_summary, wfp)
+#     with open("nn/miss_features", 'w') as wfp:
+#         for f in missed_feature:
+#             wfp.write(f + "\n")
+
 ##########################333#3#
 # evaluation of model:
 # 1. accuracy of prediction of label over target     #correct prediction/#targetlabel
@@ -347,6 +388,9 @@ def measure_distribution_no_cut(diction, input, target):
 
 def main():
     sample_print()
+    diction_prediction=json.load()
+
+    print(len(list()))
     # dic = defaultdict(lambda: defaultdict(int))
     # dic_no_cut = defaultdict(lambda: defaultdict(int))
     # dic_prediction = defaultdict(lambda: '')
