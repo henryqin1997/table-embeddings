@@ -114,16 +114,16 @@ def sample_dict(sample_data,sample_summary,missed_feature):
         feature=sample_data[index][0]
         target=sample_data[index][1]
         activate=sample_data[index][2]
-        if ','.join(feature) not in prediction:
+        if ','.join(str(x) for x in feature) not in prediction:
             for i in range(10):
                 if activate[i]==1 and target[i]!=-1:
                     sample_summary[target[i]][1]+=1
-            missed_feature.add(','.join(feature))
+            missed_feature.add(','.join(str(x) for x in feature))
         else:
             for i in range(10):
                 if activate[i]==1 and target[i]!=-1:
                     sample_summary[target[i]][1]+=1
-                    if target[i]==prediction[','.join(feature)][i]:
+                    if target[i]==prediction[','.join(str(x) for x in feature)][i]:
                         sample_summary[target[i]][0]+=1
     # with open("sample_dict_batch={}".format(batch_index),'w') as wfp:
     #         json.dump(sample_summary,wfp)
