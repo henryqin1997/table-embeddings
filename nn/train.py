@@ -115,9 +115,12 @@ def sample_dict(sample_data,sample_summary,missed_feature,faultdic):
         target=sample_data[index][1]
         activate=sample_data[index][2]
         if ','.join(str(x) for x in feature) not in prediction:
+            pred = diction_pred(prediction,feature)
             for i in range(10):
                 if activate[i]==1 and target[i]!=-1:
                     sample_summary[target[i]][1]+=1
+                    if int(pred.split(',')[i])==target[i]:
+                        sample_summary[target[i]][0] += 1
             missed_feature.add(','.join(str(x) for x in feature))
         else:
             for i in range(10):
@@ -139,6 +142,13 @@ def sample_dict(sample_data,sample_summary,missed_feature,faultdic):
     #     for f in missed_feature:
     #         wfp.write(f+"\n")
 
+def diction_pred(dic,feature):
+    for i in range(10):
+        if ','.join(str(x) for x in feature) not in dic:
+            feature[i]=-1
+        else:
+            return dic[','.join(str(x) for x in feature)]
+    return ','.join(str(x) for x in feature)
 
 def sample_print():
     batch_size=50
@@ -162,21 +172,23 @@ def sample_print():
         json.dump(faultdic,wfp)
 
 
-def sample_print_uniform():
-    batch_size = 50
-    sample_size = 4500
-    missed_feature = set([])
-    sample_summary = defaultdict(lambda: [0, 0])
-    batch_index = 0
-    while batch_size * batch_index < sample_size:
-        sample_data = load_sample_random_lable(sample_index, batch_size, batch_index)
-        sample_dict(sample_data, sample_summary, missed_feature)
-        batch_index += 1
-    with open("nn/sample_dict_it={}".format(sample_index), 'w') as wfp:
-        json.dump(sample_summary, wfp)
-    with open("nn/miss_features", 'w') as wfp:
-        for f in missed_feature:
-            wfp.write(f + "\n")
+
+
+# def sample_print_uniform():
+#     batch_size = 50
+#     sample_size = 4500
+#     missed_feature = set([])
+#     sample_summary = defaultdict(lambda: [0, 0])
+#     batch_index = 0
+#     while batch_size * batch_index < sample_size:
+#         sample_data = load_sample_random_lable(sample_index, batch_size, batch_index)
+#         sample_dict(sample_data, sample_summary, missed_feature)
+#         batch_index += 1
+#     with open("nn/sample_dict_it={}".format(sample_index), 'w') as wfp:
+#         json.dump(sample_summary, wfp)
+#     with open("nn/miss_features", 'w') as wfp:
+#         for f in missed_feature:
+#             wfp.write(f + "\n")
 
 ##########################333#3#
 # evaluation of model:
