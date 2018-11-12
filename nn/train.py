@@ -143,7 +143,7 @@ def sample_print():
             sample_data=load_sample_random_lable(sample_index,batch_size,batch_index)
             sample_dict(sample_data,sample_summary,missed_feature)
             batch_index+=1
-        with open("nn/sample_dict_batch={}".format(sample_index), 'w') as wfp:
+        with open("nn/sample_dict_it={}".format(sample_index), 'w') as wfp:
             json.dump(sample_summary, wfp)
     with open("nn/miss_features",'w') as wfp:
         for f in missed_feature:
