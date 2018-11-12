@@ -102,7 +102,7 @@ def load_sample_random_lable(sample_index, batch_size, batch_index):
 def sample_dict(sample_data,sample_summary,missed_feature):
     batch_size=len(sample_data)
     #missed_feature=[]
-    with open('nn/diction_prediction.json', 'r') as fp:
+    with open('diction_prediction.json', 'r') as fp:
         prediction=json.load(fp)
     #sample_summary = defaultdict(lambda: [0, 0])
     # for batch in range(iteration):
@@ -114,16 +114,16 @@ def sample_dict(sample_data,sample_summary,missed_feature):
         feature=sample_data[index][0]
         target=sample_data[index][1]
         activate=sample_data[index][2]
-        if ','.join(feature) not in prediction:
+        if ','.join(str(x) for x in feature) not in prediction:
             for i in range(10):
                 if activate[i]==1 and target[i]!=-1:
                     sample_summary[target[i]][1]+=1
-            missed_feature.add(','.join(feature))
+            missed_feature.add(','.join(str(x) for x in feature))
         else:
             for i in range(10):
                 if activate[i]==1 and target[i]!=-1:
                     sample_summary[target[i]][1]+=1
-                    if target[i]==prediction[','.join(feature)][i]:
+                    if target[i]==prediction[','.join(str(x) for x in feature)][i]:
                         sample_summary[target[i]][0]+=1
     # with open("sample_dict_batch={}".format(batch_index),'w') as wfp:
     #         json.dump(sample_summary,wfp)
@@ -143,9 +143,9 @@ def sample_print():
             sample_data=load_sample_random_lable(sample_index,batch_size,batch_index)
             sample_dict(sample_data,sample_summary,missed_feature)
             batch_index+=1
-        with open("nn/sample_dict_batch={}".format(sample_index), 'w') as wfp:
+        with open("sample_dict_batch={}".format(sample_index), 'w') as wfp:
             json.dump(sample_summary, wfp)
-    with open("nn/miss_features",'w') as wfp:
+    with open("miss_features",'w') as wfp:
         for f in missed_feature:
             wfp.write(f+"\n")
 ##########################333#3#
