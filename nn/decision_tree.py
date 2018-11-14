@@ -113,5 +113,5 @@ def main():
                 correct += 1
     print('validation accuracy {}'.format(correct / total))
 
-if __name__=='__amin__':
+if __name__=='__main__':
     main()
