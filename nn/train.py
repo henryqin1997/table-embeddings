@@ -10,7 +10,7 @@ training_files = json.load(open(training_files_json))
 testing_data_dir = 'data/sample_random_label_train'
 activate_data_dir = 'data/sample_random_label'
 testing_files_json = 'data/testing_files_random_label.json'
-# testing_files_json = 'data/testing_files_random_label_sample.json'
+testing_files_json = 'data/testing_files_random_label_sample.json'
 testing_files = [[y for y in json.load(open(testing_files_json)) if y[0] == str(x)] for x in range(10)]
 tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERCENT': 4, 'DATE': 5, 'TIME': 6}
 
@@ -397,10 +397,7 @@ def measure_distribution_no_cut(diction, input, target):
 
 
 def main():
-    sample_print()
-    diction_prediction=json.load()
 
-    print(len(list()))
     # dic = defaultdict(lambda: defaultdict(int))
     # dic_no_cut = defaultdict(lambda: defaultdict(int))
     # dic_prediction = defaultdict(lambda: '')
@@ -433,22 +430,24 @@ def main():
     # with open('diction.json', 'r') as fp:
     #     dic_no_cut = json.load(fp)
     #
-    # pre_acc = 0
-    # sum = 0
-    #
-    # for key in dic_no_cut.keys():
-    #     max = 0
-    #     max_label = []
-    #     for label in dic_no_cut[key].keys():
-    #         sum += dic_no_cut[key][label]
-    #         if dic_no_cut[key][label] > max:
-    #             max = dic_no_cut[key][label]
-    #             max_label = label
-    #         # print(key, label, 'count:{}'.format(dic_no_cut[key][label]))
-    #     pre_acc += max
-    #     dic_prediction[key] = max_label
-    # print("train accuracy {}".format(pre_acc / sum))
-    #
+
+    dic_no_cut = json.load(open('nn/diction.json'))
+
+
+    pre_acc = 0
+    sum = 0
+
+    for key in dic_no_cut.keys():
+        if key!='-1,-1,-1,-1,-1,-1,-1,-1,-1,-1':
+            max = 0
+            for label in dic_no_cut[key].keys():
+                sum += dic_no_cut[key][label]
+                if dic_no_cut[key][label] > max:
+                    max = dic_no_cut[key][label]
+                # print(key, label, 'count:{}'.format(dic_no_cut[key][label]))
+            pre_acc += max
+    print("train accuracy {}".format(pre_acc / sum))
+
     # with open('diction_prediction.json', 'w') as fp1:
     #     json.dump(dic_prediction, fp1)
     #     print('decision tree saved')
