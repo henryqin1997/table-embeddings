@@ -3,17 +3,15 @@ import os
 import numpy
 from collections import defaultdict
 from etl import Table
-from .train import one_hot
 
 training_data_dir = 'data/train'
 training_files_json = 'data/training_files_filtered.json'
 training_files = json.load(open(training_files_json))
 testing_data_dir = 'data/sample_random_label_train'
 activate_data_dir = 'data/sample_random_label'
-# testing_files_json = 'data/testing_files_random_label.json'
-# testing_files = [[y for y in json.load(open(testing_files_json)) if y[0] == str(x)] for x in range(10)]
+#testing_files_json = 'data/testing_files_random_label.json'
+#testing_files = [[y for y in json.load(open(testing_files_json)) if y[0] == str(x)] for x in range(10)]
 tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERCENT': 4, 'DATE': 5, 'TIME': 6}
-
 
 def measure_distribution_no_cut(diction, input, target):
     input_transformed = input.transpose()
@@ -33,33 +31,6 @@ def measure_distribution_no_cut(diction, input, target):
     diction[','.join(key_list)][','.join(value_list)] += 1
 
 
-def load_data(batch_size, batch_index=0):
-    # load training data from file, to be implemented
-    # put size number of data into one array
-    # start from batch_index batch
-    batch_files = training_files[batch_size * batch_index:batch_size * (batch_index + 1)]
-    batch_files_ner = list(map(lambda batch_file: batch_file.rstrip('.json') + '_ner.csv', batch_files))
-    batch_files_wordlist = list(map(lambda batch_file: batch_file.rstrip('.json') + '_wordlist.csv', batch_files))
-    inputs = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_ner), delimiter=',') for batch_file_ner in
-         batch_files_ner])
-    targets = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
-         in batch_files_wordlist])
-
-    inputs_transformed = []
-    targets_transformed = []
-
-    # Use One Hot Encoding and remove column with all zeros
-    for i in range(len(inputs)):
-        input = inputs[i]
-        target = targets[i]
-        assert len(input) == len(tag_to_index)
-
-        inputs_transformed.append(numpy.array([one_hot(row) for row in input.transpose()]).transpose())
-        targets_transformed.append(target)
-    return numpy.array(inputs_transformed), numpy.array(targets_transformed)
-
 
 def main():
     print('decision tree v2.2')
@@ -73,7 +44,7 @@ def main():
         input, target = load_data(batch_size=batch_size, batch_index=batch_index)
         batch_index += 1
         for i in range(len(input)):
-            # measure_distribution_cut(dic, input[i], target[i])
+            #measure_distribution_cut(dic, input[i], target[i])
             measure_distribution_no_cut(dic_no_cut, input[i], target[i])
     # print('cuted columns')
     # for key in dic.keys():
@@ -96,7 +67,7 @@ def main():
 
     for key in dic_no_cut.keys():
         max = 0
-        maxlabel = ''
+        maxlabel=''
         for label in dic_no_cut[key].keys():
             sum += dic_no_cut[key][label]
             if dic_no_cut[key][label] > max:
@@ -104,11 +75,11 @@ def main():
                 maxlabel = label
             # print(key, label, 'count:{}'.format(dic_no_cut[key][label]))
         pre_acc += max
-        dic_prediction[key] = label
+        dic_prediction[key]=label
     print("train accuracy {}".format(pre_acc / sum))
 
-    with open('diction_prediction_with0.json', 'w') as fp:
-        json.dum(dic_prediction, fp)
+    with open('diction_prediction_with0.json','w') as fp:
+        json.dump(dic_prediction,fp)
         print('diciton prediction saved')
 
     batch_size = 50
@@ -142,6 +113,5 @@ def main():
                 correct += 1
     print('validation accuracy {}'.format(correct / total))
 
-
-if __name__ == '__amin__':
+if __name__=='__amin__':
     main()
