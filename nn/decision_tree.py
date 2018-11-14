@@ -113,3 +113,6 @@ def main():
             if dic_prediction[key] == value:
                 correct += 1
     print('validation accuracy {}'.format(correct / total))
+
+if __name__=='__amin__':
+    main()
