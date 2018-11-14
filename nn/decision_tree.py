@@ -108,7 +108,7 @@ def main():
     print("train accuracy {}".format(pre_acc / sum))
 
     with open('diction_prediction_with0.json', 'w') as fp:
-        json.dum(dic_prediction, fp)
+        json.dump(dic_prediction, fp)
         print('diciton prediction saved')
 
     batch_size = 50
@@ -143,5 +143,5 @@ def main():
     print('validation accuracy {}'.format(correct / total))
 
 
-if __name__ == '__amin__':
+if __name__ == '__main__':
     main()
