@@ -431,8 +431,6 @@ def main():
     #     dic_no_cut = json.load(fp)
     #
 
-    dic_no_cut = json.load(open('nn/diction.json'))
-
 
     pre_acc = 0
     sum = 0
