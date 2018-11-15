@@ -92,7 +92,7 @@ def random_table():
             lines += f.readlines()
     random.shuffle(lines)
 
-    for i, line in enumerate(lines[:3000]):
+    for i, line in enumerate(lines[:10000]):
         line = line.strip()
         data = json.loads(line)
         filename = str(i).zfill(4)
