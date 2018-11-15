@@ -1,7 +1,7 @@
 #!/bin/bash
 rm -f data/training_files_filtered.json
 echo "[" >> data/training_files_filtered.json
-for i in `seq 0 11`
+for i in `seq 0 50`
 do
     for f in data/train/$i/*; do
         if [[ $f == *.json ]]
