@@ -17,6 +17,9 @@ wordlist_json = 'data/wordlist_v4.json'
 input_dir = 'data/input'
 output_dir_random_label = 'data/sample_random_label'
 testing_filelist_json_random_label = 'data/testing_files_random_label.json'
+output_dir_random_table = 'data/sample_random_table'
+testing_filelist_json_random_table = 'data/testing_files_random_table.json'
+
 try:
     shutil.rmtree(os.path.join(output_dir_random_label, seed))
 except FileNotFoundError:
@@ -25,13 +28,22 @@ os.makedirs(os.path.join(output_dir_random_label, seed))
 total_table_num = 115859
 
 
-def generate_file_list():
+def generate_random_label_filelist():
     folders = sorted(list(filter(lambda item: item.isdigit(), os.listdir(output_dir_random_label))))
     filelist = []
     for folder in folders:
         filelist += [os.path.join(folder, filename) for filename in
                      sorted(list(filter(lambda item: item.endswith('.json') and not item.endswith('_activate.json'),
                                         os.listdir(os.path.join(output_dir_random_label, folder)))))]
+    return filelist
+
+def generate_random_table_filelist():
+    folders = sorted(list(filter(lambda item: item.isdigit(), os.listdir(output_dir_random_table))))
+    filelist = []
+    for folder in folders:
+        filelist += [os.path.join(folder, filename) for filename in
+                     sorted(list(filter(lambda item: item.endswith('.json') and not item.endswith('_activate.json'),
+                                        os.listdir(os.path.join(output_dir_random_table, folder)))))]
     return filelist
 
 
@@ -66,9 +78,11 @@ def random_label():
 
                 filename = str(table_num).zfill(4)
                 json.dump(data, open(os.path.join(output_dir_random_label, seed, filename + '.json'), 'w+'))
-                json.dump(activate, open(os.path.join(output_dir_random_label, seed, filename + '_activate.json'), 'w+'))
+                json.dump(activate,
+                          open(os.path.join(output_dir_random_label, seed, filename + '_activate.json'), 'w+'))
     print(table_num)
     # print(sorted(word_count.items(), key=operator.itemgetter(1)))
+
 
 def random_table():
     lines = []
@@ -78,14 +92,13 @@ def random_table():
             lines += f.readlines()
     random.shuffle(lines)
 
-    # for i, line in enumerate(lines[:5000]):
-    #     line = line.strip()
-    #     data = json.loads(line)
-    #     filename = str(i).zfill(4)
-    #     json.dump(data, open(os.path.join(output_dir_random_label, seed, filename + '.json'), 'w+'))
+    for i, line in enumerate(lines[:3000]):
+        line = line.strip()
+        data = json.loads(line)
+        filename = str(i).zfill(4)
+        json.dump(data, open(os.path.join(output_dir_random_table, seed, filename + '.json'), 'w+'))
 
 
 if __name__ == '__main__':
-    # json.dump(generate_file_list(), open(testing_filelist_json_random_label, 'w+'), indent=4)
-    # exit(0)
-    pass
+    random_table()
+    json.dump(generate_random_table_filelist(), open(testing_filelist_json_random_table, 'w+'), indent=4)
