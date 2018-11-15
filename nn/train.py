@@ -164,7 +164,7 @@ def sample_print():
     sample_size=4500
     missed_feature=set([])
     faultdic = defaultdict(lambda: [])
-    with open('nn/diction_prediction.json', 'r') as fp:
+    with open('nn/diction_prediction_with0.json', 'r') as fp:
         prediction = json.load(fp)
     for sample_index in range(10):
         sample_summary = defaultdict(lambda: [0, 0])
@@ -506,5 +506,6 @@ if __name__ == '__main__':
     #         #print(key, label, 'count:{}'.format(dic_no_cut[key][label]))
 
     # print("train accuracy {}".format(no_other/num))
-    print('version 2.1')
-    main()
+    print('version 2.2.1')
+    sample_print()
+    #main()
