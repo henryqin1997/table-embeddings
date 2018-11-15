@@ -7,10 +7,10 @@ from etl import Table
 training_data_dir = 'data/train'
 training_files_json = 'data/training_files_filtered.json'
 training_files = json.load(open(training_files_json))
-testing_data_dir = 'data/sample_random_label_train'
+testing_data_dir = 'data/sample_random_label_test'
 activate_data_dir = 'data/sample_random_label'
 testing_files_json = 'data/testing_files_random_label.json'
-testing_files_json = 'data/testing_files_random_label_sample.json'
+# testing_files_json = 'data/testing_files_random_label_sample.json'
 testing_files = [[y for y in json.load(open(testing_files_json)) if y[0] == str(x)] for x in range(10)]
 tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERCENT': 4, 'DATE': 5, 'TIME': 6}
 
@@ -56,6 +56,7 @@ def load_data(batch_size, batch_index=0):
         input = numpy.array([one_hot(row) for row in input.transpose()])
         target = target.transpose()
 
+        # Remove all zero columns
         input_transformed = numpy.zeros(input.shape)
         target_transformed = numpy.zeros(target.shape)
 
@@ -78,7 +79,7 @@ def indexOf(l, n):
         return -1
 
 
-def load_sample_random_lable(sample_index, batch_size, batch_index):
+def load_sample_random_label(sample_index, batch_size, batch_index):
     # load testing data of sample with random labels
     # put size number of data into one array
     # start from batch_index batch
@@ -169,7 +170,7 @@ def sample_print():
         sample_summary = defaultdict(lambda: [0, 0])
         batch_index = 0
         while batch_size*batch_index<sample_size:
-            sample_data=load_sample_random_lable(sample_index,batch_size,batch_index)
+            sample_data=load_sample_random_label(sample_index,batch_size,batch_index)
             sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction)
             batch_index+=1
         with open("nn/sample_dict_it={}".format(sample_index), 'w') as wfp:
@@ -190,7 +191,7 @@ def sample_print():
 #     sample_summary = defaultdict(lambda: [0, 0])
 #     batch_index = 0
 #     while batch_size * batch_index < sample_size:
-#         sample_data = load_sample_random_lable(sample_index, batch_size, batch_index)
+#         sample_data = load_sample_random_label(sample_index, batch_size, batch_index)
 #         sample_dict(sample_data, sample_summary, missed_feature)
 #         batch_index += 1
 #     with open("nn/sample_dict_it={}".format(sample_index), 'w') as wfp:
@@ -430,8 +431,6 @@ def main():
     # with open('diction.json', 'r') as fp:
     #     dic_no_cut = json.load(fp)
     #
-
-    dic_no_cut = json.load(open('nn/diction.json'))
 
 
     pre_acc = 0
