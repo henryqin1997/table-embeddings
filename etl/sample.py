@@ -20,11 +20,6 @@ testing_filelist_json_random_label = 'data/testing_files_random_label.json'
 output_dir_random_table = 'data/sample_random_table'
 testing_filelist_json_random_table = 'data/testing_files_random_table.json'
 
-try:
-    shutil.rmtree(os.path.join(output_dir_random_label, seed))
-except FileNotFoundError:
-    pass
-os.makedirs(os.path.join(output_dir_random_label, seed))
 total_table_num = 115859
 
 
@@ -100,5 +95,10 @@ def random_table():
 
 
 if __name__ == '__main__':
+    try:
+        shutil.rmtree(os.path.join(output_dir_random_table, seed))
+    except FileNotFoundError:
+        pass
+    os.makedirs(os.path.join(output_dir_random_table, seed))
     random_table()
     json.dump(generate_random_table_filelist(), open(testing_filelist_json_random_table, 'w+'), indent=4)
