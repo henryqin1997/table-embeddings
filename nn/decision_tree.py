@@ -165,7 +165,7 @@ def main():
 
 
 if __name__ == '__main__':
-    #main()
+    main()
     with open('dic_cut_with0.json','r') as fp:
         dic_cut=json.load(fp)
     dic_cut_pred=defaultdict(lambda: ['',0.])

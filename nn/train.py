@@ -158,7 +158,7 @@ def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
                         if int(pred.split(',')[i])==target[i]:
                             sample_summary[target[i]][0] += 1
                     else:
-                        dic_cut=json.load(open('dic_cut_pred.json'))
+                        dic_cut=json.load(open('nn/dic_cut_pred.json'))
                         if dic_cut[str(feature[i])][1]>=0.5:
                             if int(dic_cut[str(feature[i])][0])==target[i]:
                                 sample_summary[target[i]][0] += 1
@@ -189,7 +189,7 @@ def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
 
 def sample_dict_table(sample_data,sample_summary,missed_feature,faultdic,prediction):
     batch_size=len(sample_data)
-    dic_cut = json.load(open('dic_cut_pred.json'))
+    dic_cut = json.load(open('nn/dic_cut_pred.json'))
     for index in range(batch_size):
         feature=sample_data[index][0]
         target=sample_data[index][1]
