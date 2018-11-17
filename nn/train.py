@@ -7,11 +7,14 @@ from etl import Table
 training_data_dir = 'data/train'
 training_files_json = 'data/training_files_filtered.json'
 training_files = json.load(open(training_files_json))
-testing_data_dir = 'data/sample_random_label_test'
-activate_data_dir = 'data/sample_random_label'
-testing_files_json = 'data/testing_files_random_label.json'
-# testing_files_json = 'data/testing_files_random_label_sample.json'
-testing_files = [[y for y in json.load(open(testing_files_json)) if y[0] == str(x)] for x in range(10)]
+testing_data_random_label_dir = 'data/sample_random_label_test'
+activate_data_random_label_dir = 'data/sample_random_label'
+testing_files_random_label_json = 'data/testing_files_random_label.json'
+testing_files_random_label = [[y for y in json.load(open(testing_files_random_label_json)) if y[0] == str(x)] for x in range(10)]
+testing_data_random_table_dir = 'data/sample_random_table_test'
+activate_data_random_table_dir = 'data/sample_random_table'
+testing_files_random_table_json = 'data/testing_files_random_table.json'
+testing_files_random_table = [[y for y in json.load(open(testing_files_random_table_json)) if y[0] == str(x)] for x in range(1)]
 tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERCENT': 4, 'DATE': 5, 'TIME': 6}
 
 
@@ -88,16 +91,16 @@ def load_sample_random_label(sample_index, batch_size, batch_index):
     # put size number of data into one array
     # start from batch_index batch
     result = []
-    batch_files = testing_files[sample_index][batch_size * batch_index:batch_size * (batch_index + 1)]
+    batch_files = testing_files_random_label[sample_index][batch_size * batch_index:batch_size * (batch_index + 1)]
     for batch_file in batch_files:
-        table = Table(json.load(open(os.path.join(testing_data_dir, batch_file))))
+        table = Table(json.load(open(os.path.join(testing_data_random_label_dir, batch_file))))
         column_num = len(table.get_header())
         batch_file_ner = batch_file.rstrip('.json') + '_ner.csv'
         batch_file_wordlist = batch_file.rstrip('.json') + '_wordlist.csv'
         batch_file_activate = batch_file.rstrip('.json') + '_activate.json'
-        input = numpy.genfromtxt(os.path.join(testing_data_dir, batch_file_ner), delimiter=',').transpose()
-        target = numpy.genfromtxt(os.path.join(testing_data_dir, batch_file_wordlist), delimiter=',').transpose()
-        activate = json.load(open(os.path.join(activate_data_dir, batch_file_activate)))
+        input = numpy.genfromtxt(os.path.join(testing_data_random_label_dir, batch_file_ner), delimiter=',').transpose()
+        target = numpy.genfromtxt(os.path.join(testing_data_random_label_dir, batch_file_wordlist), delimiter=',').transpose()
+        activate = json.load(open(os.path.join(activate_data_random_label_dir, batch_file_activate)))
 
         input_transformed = [
             int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
@@ -108,6 +111,31 @@ def load_sample_random_label(sample_index, batch_size, batch_index):
 
         result.append([input_transformed, target_transformed, activate_transformed])
     return result
+
+
+def load_sample_random_table(sample_index, batch_size, batch_index):
+    # load testing data of sample with random tables
+    # put size number of data into one array
+    # start from batch_index batch
+    result = []
+    batch_files = testing_files_random_table[sample_index][batch_size * batch_index:batch_size * (batch_index + 1)]
+    for batch_file in batch_files:
+        table = Table(json.load(open(os.path.join(testing_data_random_table_dir, batch_file))))
+        column_num = len(table.get_header())
+        batch_file_ner = batch_file.rstrip('.json') + '_ner.csv'
+        batch_file_wordlist = batch_file.rstrip('.json') + '_wordlist.csv'
+        input = numpy.genfromtxt(os.path.join(testing_data_random_table_dir, batch_file_ner), delimiter=',').transpose()
+        target = numpy.genfromtxt(os.path.join(testing_data_random_table_dir, batch_file_wordlist), delimiter=',').transpose()
+
+        input_transformed = [
+            int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
+            if idx < column_num else -1 for idx, row in enumerate(input)]
+        target_transformed = [indexOf(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
+                              idx, row in enumerate(target)]
+
+        result.append([input_transformed, target_transformed])
+    return result
+
 
 def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
     batch_size=len(sample_data)
@@ -124,32 +152,79 @@ def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
         target=sample_data[index][1]
         activate=sample_data[index][2]
         if ','.join(str(x) for x in feature) not in prediction:
-            pred = diction_pred(prediction,feature)
+            sel_feature, pred = diction_pred(prediction,feature)
             for i in range(10):
                 if activate[i]==1 and target[i]!=-1:
                     sample_summary[target[i]][1]+=1
-                    if int(pred.split(',')[i])==target[i]:
-                        sample_summary[target[i]][0] += 1
+                    if feature[i]==sel_feature[i]:
+                        if int(pred.split(',')[i])==target[i]:
+                            sample_summary[target[i]][0] += 1
+                    else:
+                        dic_cut=json.load(open('dic_cut_pred.json'))
+                        if dic_cut[str(feature[i])][1]>=0.5:
+                            if int(dic_cut[str(feature[i])][0])==target[i]:
+                                sample_summary[target[i]][0] += 1
+
             missed_feature.add(','.join(str(x) for x in feature))
         else:
+            mis=False
             for i in range(10):
                 if activate[i]==1 and target[i]!=-1:
-                    sample_summary[target[i]][1]+=1
+                    sample_summary[target[i]][3]+=1
                     if target[i]==int(prediction[','.join(str(x) for x in feature)].split(',')[i]):
-                        sample_summary[target[i]][0]+=1
+                        sample_summary[target[i]][2]+=1
                     else:
-                        mispred = [str(x) for x in target]
-                        for i in range(10):
-                            if activate[i]==1:
-                                mispred[i]+='*'
-                        mispred=','.join(mispred)
-                        faultdic[','.join(str(x) for x in feature)].append(mispred)
+                        mis=True
+            if mis:
+                mispred = [str(x) for x in target]
+                for i in range(10):
+                    if activate[i]==1:
+                        mispred[i]+='*'
+                mispred=','.join(mispred)
+                faultdic[','.join(str(x) for x in feature)].append([prediction[','.join(str(x) for x in feature)],mispred])
     # with open("sample_dict_batch={}".format(batch_index),'w') as wfp:
     #         json.dump(sample_summary,wfp)
     #
     # with open("miss_features_batch={}".format(batch_index),'w') as wfp:
     #     for f in missed_feature:
     #         wfp.write(f+"\n")
+
+def sample_dict_table(sample_data,sample_summary,missed_feature,faultdic,prediction):
+    batch_size=len(sample_data)
+    dic_cut = json.load(open('dic_cut_pred.json'))
+    for index in range(batch_size):
+        feature=sample_data[index][0]
+        target=sample_data[index][1]
+        if ','.join(str(x) for x in feature) not in prediction:
+            sel_feature, pred = diction_pred(prediction,feature)
+            for i in range(10):
+                if target[i]!=-1:
+                    sample_summary[target[i]][1]+=1
+                    if feature[i]==sel_feature[i]:
+                        if int(pred.split(',')[i])==target[i]:
+                            sample_summary[target[i]][0] += 1
+                    else:
+                        if dic_cut[str(feature[i])][1]>=0.5:
+                            if int(dic_cut[str(feature[i])][0])==target[i]:
+                                sample_summary[target[i]][0] += 1
+
+            missed_feature.add(','.join(str(x) for x in feature))
+        else:
+            mis=False
+            for i in range(10):
+                if target[i]!=-1:
+                    sample_summary[target[i]][3]+=1
+                    if target[i]==int(prediction[','.join(str(x) for x in feature)].split(',')[i]):
+                        sample_summary[target[i]][2]+=1
+                    else:
+                        mis=True
+            if mis:
+                mispred = [str(x) for x in target]
+                for i in range(10):
+                    if target[i]!=-1 and target[i]!=prediction[','.join(str(x) for x in feature)].split(',')[i]:
+                        mispred[i]+='*'
+                mispred=','.join(mispred)
+                faultdic[','.join(str(x) for x in feature)].append([prediction[','.join(str(x) for x in feature)],mispred])
 
 def diction_pred(dic,feature):
     maxkey=''
@@ -161,7 +236,7 @@ def diction_pred(dic,feature):
         if sim>maxsim:
             maxkey=key
             maxsim=sim
-    return dic[maxkey]
+    return [int(x) for x in maxkey],dic[maxkey]
 
 def sample_print():
     batch_size=50
@@ -170,8 +245,9 @@ def sample_print():
     faultdic = defaultdict(lambda: [])
     with open('nn/diction_prediction_with0.json', 'r') as fp:
         prediction = json.load(fp)
+    print(len(prediction))
     for sample_index in range(10):
-        sample_summary = defaultdict(lambda: [0, 0])
+        sample_summary = defaultdict(lambda: [0, 0, 0, 0])
         batch_index = 0
         while batch_size*batch_index<sample_size:
             sample_data=load_sample_random_label(sample_index,batch_size,batch_index)
@@ -179,6 +255,20 @@ def sample_print():
             batch_index+=1
         with open("nn/sample_dict_it={}".format(sample_index), 'w') as wfp:
             json.dump(sample_summary, wfp)
+
+    sample_table_summary = defaultdict(lambda: [0, 0, 0, 0])
+    faultdic2=defaultdict(lambda: [])
+    batch_index = 0
+    while batch_size * batch_index < 10000:
+        sample_data = load_sample_random_table(0, batch_size, batch_index)
+        sample_dict_table(sample_data, sample_table_summary, missed_feature, faultdic2, prediction)
+        batch_index += 1
+
+    with open("nn/sample_table_pred", 'w') as wfp:
+        json.dump(sample_table_summary, wfp)
+    with open('nn/fault_table.json','w') as wfp:
+        json.dump(faultdic2,wfp)
+
     with open("nn/miss_features",'w') as wfp:
         for f in missed_feature:
             wfp.write(f+"\n")
