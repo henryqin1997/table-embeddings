@@ -20,13 +20,8 @@ tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERC
 
 def qin_similarity(list1, list2):
     intersection=0
-    union=0
-    print(list1)
-    print(list2)
-    for i in range(10):
-        print(i)
-        if list1[i]!=-1 or list2[i]!=-1:
-            union+=1
+    union=max(len(list1),len(list2))
+    for i in range(min(len(list1),len(list2))):
         if list1[i]==list2[i] and list1[i]!=-1:
             intersection+=1
     return float(intersection / union)
