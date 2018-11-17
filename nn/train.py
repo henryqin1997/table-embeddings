@@ -234,7 +234,7 @@ def diction_pred(dic,feature):
         if sim>maxsim:
             maxkey=key
             maxsim=sim
-    return [int(x) for x in maxkey],dic[maxkey]
+    return [int(x) for x in maxkey.split(',')],dic[maxkey]
 
 def sample_print():
     batch_size=50
