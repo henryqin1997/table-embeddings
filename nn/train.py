@@ -7,11 +7,14 @@ from etl import Table
 training_data_dir = 'data/train'
 training_files_json = 'data/training_files_filtered.json'
 training_files = json.load(open(training_files_json))
-testing_data_dir = 'data/sample_random_table_test'
-activate_data_dir = 'data/sample_random_table'
-testing_files_json = 'data/testing_files_random_table.json'
-# testing_files_json = 'data/testing_files_random_label_sample.json'
-testing_files = [[y for y in json.load(open(testing_files_json)) if y[0] == str(x)] for x in range(10)]
+testing_data_random_label_dir = 'data/sample_random_label_test'
+activate_data_random_label_dir = 'data/sample_random_label'
+testing_files_random_label_json = 'data/testing_files_random_label.json'
+testing_files_random_label = [[y for y in json.load(open(testing_files_random_label_json)) if y[0] == str(x)] for x in range(10)]
+testing_data_random_table_dir = 'data/sample_random_table_test'
+activate_data_random_table_dir = 'data/sample_random_table'
+testing_files_random_table_json = 'data/testing_files_random_table.json'
+testing_files_random_table = [[y for y in json.load(open(testing_files_random_table_json)) if y[0] == str(x)] for x in range(1)]
 tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERCENT': 4, 'DATE': 5, 'TIME': 6}
 
 
@@ -88,16 +91,16 @@ def load_sample_random_label(sample_index, batch_size, batch_index):
     # put size number of data into one array
     # start from batch_index batch
     result = []
-    batch_files = testing_files[sample_index][batch_size * batch_index:batch_size * (batch_index + 1)]
+    batch_files = testing_files_random_label[sample_index][batch_size * batch_index:batch_size * (batch_index + 1)]
     for batch_file in batch_files:
-        table = Table(json.load(open(os.path.join(testing_data_dir, batch_file))))
+        table = Table(json.load(open(os.path.join(testing_data_random_label_dir, batch_file))))
         column_num = len(table.get_header())
         batch_file_ner = batch_file.rstrip('.json') + '_ner.csv'
         batch_file_wordlist = batch_file.rstrip('.json') + '_wordlist.csv'
         batch_file_activate = batch_file.rstrip('.json') + '_activate.json'
-        input = numpy.genfromtxt(os.path.join(testing_data_dir, batch_file_ner), delimiter=',').transpose()
-        target = numpy.genfromtxt(os.path.join(testing_data_dir, batch_file_wordlist), delimiter=',').transpose()
-        activate = json.load(open(os.path.join(activate_data_dir, batch_file_activate)))
+        input = numpy.genfromtxt(os.path.join(testing_data_random_label_dir, batch_file_ner), delimiter=',').transpose()
+        target = numpy.genfromtxt(os.path.join(testing_data_random_label_dir, batch_file_wordlist), delimiter=',').transpose()
+        activate = json.load(open(os.path.join(activate_data_random_label_dir, batch_file_activate)))
 
         input_transformed = [
             int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
@@ -108,6 +111,31 @@ def load_sample_random_label(sample_index, batch_size, batch_index):
 
         result.append([input_transformed, target_transformed, activate_transformed])
     return result
+
+
+def load_sample_random_table(sample_index, batch_size, batch_index):
+    # load testing data of sample with random tables
+    # put size number of data into one array
+    # start from batch_index batch
+    result = []
+    batch_files = testing_files_random_table[sample_index][batch_size * batch_index:batch_size * (batch_index + 1)]
+    for batch_file in batch_files:
+        table = Table(json.load(open(os.path.join(testing_data_random_table_dir, batch_file))))
+        column_num = len(table.get_header())
+        batch_file_ner = batch_file.rstrip('.json') + '_ner.csv'
+        batch_file_wordlist = batch_file.rstrip('.json') + '_wordlist.csv'
+        input = numpy.genfromtxt(os.path.join(testing_data_random_table_dir, batch_file_ner), delimiter=',').transpose()
+        target = numpy.genfromtxt(os.path.join(testing_data_random_table_dir, batch_file_wordlist), delimiter=',').transpose()
+
+        input_transformed = [
+            int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
+            if idx < column_num else -1 for idx, row in enumerate(input)]
+        target_transformed = [indexOf(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
+                              idx, row in enumerate(target)]
+
+        result.append([input_transformed, target_transformed])
+    return result
+
 
 def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
     batch_size=len(sample_data)
