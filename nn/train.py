@@ -152,32 +152,79 @@ def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
         target=sample_data[index][1]
         activate=sample_data[index][2]
         if ','.join(str(x) for x in feature) not in prediction:
-            pred = diction_pred(prediction,feature)
+            sel_feature, pred = diction_pred(prediction,feature)
             for i in range(10):
                 if activate[i]==1 and target[i]!=-1:
                     sample_summary[target[i]][1]+=1
-                    if int(pred.split(',')[i])==target[i]:
-                        sample_summary[target[i]][0] += 1
+                    if feature[i]==sel_feature[i]:
+                        if int(pred.split(',')[i])==target[i]:
+                            sample_summary[target[i]][0] += 1
+                    else:
+                        dic_cut=json.load(open('dic_cut_pred.json'))
+                        if dic_cut[str(feature[i])][1]>=0.5:
+                            if int(dic_cut[str(feature[i])][0])==target[i]:
+                                sample_summary[target[i]][0] += 1
+
             missed_feature.add(','.join(str(x) for x in feature))
         else:
+            mis=False
             for i in range(10):
                 if activate[i]==1 and target[i]!=-1:
-                    sample_summary[target[i]][1]+=1
+                    sample_summary[target[i]][3]+=1
                     if target[i]==int(prediction[','.join(str(x) for x in feature)].split(',')[i]):
-                        sample_summary[target[i]][0]+=1
+                        sample_summary[target[i]][2]+=1
                     else:
-                        mispred = [str(x) for x in target]
-                        for i in range(10):
-                            if activate[i]==1:
-                                mispred[i]+='*'
-                        mispred=','.join(mispred)
-                        faultdic[','.join(str(x) for x in feature)].append(mispred)
+                        mis=True
+            if mis:
+                mispred = [str(x) for x in target]
+                for i in range(10):
+                    if activate[i]==1:
+                        mispred[i]+='*'
+                mispred=','.join(mispred)
+                faultdic[','.join(str(x) for x in feature)].append([prediction[','.join(str(x) for x in feature)],mispred])
     # with open("sample_dict_batch={}".format(batch_index),'w') as wfp:
     #         json.dump(sample_summary,wfp)
     #
     # with open("miss_features_batch={}".format(batch_index),'w') as wfp:
     #     for f in missed_feature:
     #         wfp.write(f+"\n")
+
+def sample_dict_table(sample_data,sample_summary,missed_feature,faultdic,prediction):
+    batch_size=len(sample_data)
+    dic_cut = json.load(open('dic_cut_pred.json'))
+    for index in range(batch_size):
+        feature=sample_data[index][0]
+        target=sample_data[index][1]
+        if ','.join(str(x) for x in feature) not in prediction:
+            sel_feature, pred = diction_pred(prediction,feature)
+            for i in range(10):
+                if target[i]!=-1:
+                    sample_summary[target[i]][1]+=1
+                    if feature[i]==sel_feature[i]:
+                        if int(pred.split(',')[i])==target[i]:
+                            sample_summary[target[i]][0] += 1
+                    else:
+                        if dic_cut[str(feature[i])][1]>=0.5:
+                            if int(dic_cut[str(feature[i])][0])==target[i]:
+                                sample_summary[target[i]][0] += 1
+
+            missed_feature.add(','.join(str(x) for x in feature))
+        else:
+            mis=False
+            for i in range(10):
+                if target[i]!=-1:
+                    sample_summary[target[i]][3]+=1
+                    if target[i]==int(prediction[','.join(str(x) for x in feature)].split(',')[i]):
+                        sample_summary[target[i]][2]+=1
+                    else:
+                        mis=True
+            if mis:
+                mispred = [str(x) for x in target]
+                for i in range(10):
+                    if target[i]!=-1 and target[i]!=prediction[','.join(str(x) for x in feature)].split(',')[i]:
+                        mispred[i]+='*'
+                mispred=','.join(mispred)
+                faultdic[','.join(str(x) for x in feature)].append([prediction[','.join(str(x) for x in feature)],mispred])
 
 def diction_pred(dic,feature):
     maxkey=''
@@ -189,7 +236,7 @@ def diction_pred(dic,feature):
         if sim>maxsim:
             maxkey=key
             maxsim=sim
-    return dic[maxkey]
+    return [int(x) for x in maxkey],dic[maxkey]
 
 def sample_print():
     batch_size=50
@@ -198,8 +245,9 @@ def sample_print():
     faultdic = defaultdict(lambda: [])
     with open('nn/diction_prediction_with0.json', 'r') as fp:
         prediction = json.load(fp)
+    print(len(prediction))
     for sample_index in range(10):
-        sample_summary = defaultdict(lambda: [0, 0])
+        sample_summary = defaultdict(lambda: [0, 0, 0, 0])
         batch_index = 0
         while batch_size*batch_index<sample_size:
             sample_data=load_sample_random_label(sample_index,batch_size,batch_index)
@@ -207,6 +255,20 @@ def sample_print():
             batch_index+=1
         with open("nn/sample_dict_it={}".format(sample_index), 'w') as wfp:
             json.dump(sample_summary, wfp)
+
+    sample_table_summary = defaultdict(lambda: [0, 0, 0, 0])
+    faultdic2=defaultdict(lambda: [])
+    batch_index = 0
+    while batch_size * batch_index < 10000:
+        sample_data = load_sample_random_table(0, batch_size, batch_index)
+        sample_dict_table(sample_data, sample_table_summary, missed_feature, faultdic2, prediction)
+        batch_index += 1
+
+    with open("nn/sample_table_pred", 'w') as wfp:
+        json.dump(sample_table_summary, wfp)
+    with open('nn/fault_table.json','w') as wfp:
+        json.dump(faultdic2,wfp)
+
     with open("nn/miss_features",'w') as wfp:
         for f in missed_feature:
             wfp.write(f+"\n")
