@@ -20,13 +20,8 @@ tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERC
 
 def qin_similarity(list1, list2):
     intersection=0
-    union=0
-    print(list1)
-    print(list2)
-    for i in range(10):
-        print(i)
-        if list1[i]!=-1 or list2[i]!=-1:
-            union+=1
+    union=max(len(list1),len(list2))
+    for i in range(min(len(list1),len(list2))):
         if list1[i]==list2[i] and list1[i]!=-1:
             intersection+=1
     return float(intersection / union)
@@ -163,7 +158,7 @@ def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
                         if int(pred.split(',')[i])==target[i]:
                             sample_summary[target[i]][0] += 1
                     else:
-                        dic_cut=json.load(open('dic_cut_pred.json'))
+                        dic_cut=json.load(open('nn/dic_cut_pred.json'))
                         if dic_cut[str(feature[i])][1]>=0.5:
                             if int(dic_cut[str(feature[i])][0])==target[i]:
                                 sample_summary[target[i]][0] += 1
@@ -194,7 +189,7 @@ def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
 
 def sample_dict_table(sample_data,sample_summary,missed_feature,faultdic,prediction):
     batch_size=len(sample_data)
-    dic_cut = json.load(open('dic_cut_pred.json'))
+    dic_cut = json.load(open('nn/dic_cut_pred.json'))
     for index in range(batch_size):
         feature=sample_data[index][0]
         target=sample_data[index][1]
@@ -239,7 +234,7 @@ def diction_pred(dic,feature):
         if sim>maxsim:
             maxkey=key
             maxsim=sim
-    return [int(x) for x in maxkey],dic[maxkey]
+    return [int(x) for x in maxkey.split(',')],dic[maxkey]
 
 def sample_print():
     batch_size=50
