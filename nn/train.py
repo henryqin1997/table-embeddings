@@ -245,15 +245,15 @@ def sample_print():
     with open('nn/diction_prediction_with0.json', 'r') as fp:
         prediction = json.load(fp)
     print(len(prediction))
-    # for sample_index in range(10):
-    #     sample_summary = defaultdict(lambda: [0, 0, 0, 0])
-    #     batch_index = 0
-    #     while batch_size*batch_index<sample_size:
-    #         sample_data=load_sample_random_label(sample_index,batch_size,batch_index)
-    #         sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction)
-    #         batch_index+=1
-    #     with open("nn/sample_dict_it={}".format(sample_index), 'w') as wfp:
-    #         json.dump(sample_summary, wfp)
+    for sample_index in range(10):
+        sample_summary = defaultdict(lambda: [0, 0, 0, 0])
+        batch_index = 0
+        while batch_size*batch_index<sample_size:
+            sample_data=load_sample_random_label(sample_index,batch_size,batch_index)
+            sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction)
+            batch_index+=1
+        with open("nn/sample_dict_it={}".format(sample_index), 'w') as wfp:
+            json.dump(sample_summary, wfp)
 
     sample_table_summary = defaultdict(lambda: [0, 0, 0, 0])
     faultdic2=defaultdict(lambda: [])
