@@ -203,9 +203,10 @@ def sample_dict_table(sample_data,sample_summary,missed_feature,faultdic,predict
                         if int(pred.split(',')[i])==target[i]:
                             sample_summary[target[i]][0] += 1
                     else:
-                        if dic_cut[str(feature[i])][1]>=0.5:
-                            if int(dic_cut[str(feature[i])][0])==target[i]:
-                                sample_summary[target[i]][0] += 1
+                        if str(feature[i]) in dic_cut.keys():
+                            if dic_cut[str(feature[i])][1]>=0.5:
+                                if int(dic_cut[str(feature[i])][0])==target[i]:
+                                    sample_summary[target[i]][0] += 1
 
             missed_feature.add(','.join(str(x) for x in feature))
         else:
