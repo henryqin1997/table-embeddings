@@ -259,7 +259,7 @@ def sample_print():
     sample_table_summary = defaultdict(lambda: [0, 0, 0, 0])
     faultdic2=defaultdict(lambda: [])
     batch_index = 0
-    while batch_size * batch_index < 10000:
+    while batch_size * batch_index < 9000:
         sample_data = load_sample_random_table(0, batch_size, batch_index)
         sample_dict_table(sample_data, sample_table_summary, missed_feature, faultdic2, prediction)
         batch_index += 1
