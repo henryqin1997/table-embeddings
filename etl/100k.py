@@ -9,7 +9,7 @@ all_files = []
 
 if __name__ == '__main__':
     for folder in range(num_folders):
-        folder = str(folder).zfill(2)
+        folder = str(folder)
         print(folder)
         for file in os.listdir(os.path.join('webtables', folder)):
             if random.random() < 0.001:
