@@ -159,9 +159,10 @@ def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
                             sample_summary[target[i]][0] += 1
                     else:
                         dic_cut=json.load(open('nn/dic_cut_pred.json'))
-                        if dic_cut[str(feature[i])][1]>=0.5:
-                            if int(dic_cut[str(feature[i])][0])==target[i]:
-                                sample_summary[target[i]][0] += 1
+                        if str(feature[i]) in dic_cut.keys():
+                            if dic_cut[str(feature[i])][1]>=0.5:
+                                if int(dic_cut[str(feature[i])][0])==target[i]:
+                                    sample_summary[target[i]][0] += 1
 
             missed_feature.add(','.join(str(x) for x in feature))
         else:
@@ -244,15 +245,15 @@ def sample_print():
     with open('nn/diction_prediction_with0.json', 'r') as fp:
         prediction = json.load(fp)
     print(len(prediction))
-    for sample_index in range(10):
-        sample_summary = defaultdict(lambda: [0, 0, 0, 0])
-        batch_index = 0
-        while batch_size*batch_index<sample_size:
-            sample_data=load_sample_random_label(sample_index,batch_size,batch_index)
-            sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction)
-            batch_index+=1
-        with open("nn/sample_dict_it={}".format(sample_index), 'w') as wfp:
-            json.dump(sample_summary, wfp)
+    # for sample_index in range(10):
+    #     sample_summary = defaultdict(lambda: [0, 0, 0, 0])
+    #     batch_index = 0
+    #     while batch_size*batch_index<sample_size:
+    #         sample_data=load_sample_random_label(sample_index,batch_size,batch_index)
+    #         sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction)
+    #         batch_index+=1
+    #     with open("nn/sample_dict_it={}".format(sample_index), 'w') as wfp:
+    #         json.dump(sample_summary, wfp)
 
     sample_table_summary = defaultdict(lambda: [0, 0, 0, 0])
     faultdic2=defaultdict(lambda: [])
@@ -270,7 +271,7 @@ def sample_print():
     with open("nn/miss_features",'w') as wfp:
         for f in missed_feature:
             wfp.write(f+"\n")
-    with open("nn/fault_diction.json",'w') as wfp:
+    with open("nn/fault_diction_table.json",'w') as wfp:
         json.dump(faultdic,wfp)
 
 
