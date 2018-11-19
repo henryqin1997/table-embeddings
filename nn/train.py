@@ -159,9 +159,10 @@ def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
                             sample_summary[target[i]][0] += 1
                     else:
                         dic_cut=json.load(open('nn/dic_cut_pred.json'))
-                        if dic_cut[str(feature[i])][1]>=0.5:
-                            if int(dic_cut[str(feature[i])][0])==target[i]:
-                                sample_summary[target[i]][0] += 1
+                        if str(feature[i]) in dic_cut.keys():
+                            if dic_cut[str(feature[i])][1]>=0.5:
+                                if int(dic_cut[str(feature[i])][0])==target[i]:
+                                    sample_summary[target[i]][0] += 1
 
             missed_feature.add(','.join(str(x) for x in feature))
         else:
@@ -202,9 +203,10 @@ def sample_dict_table(sample_data,sample_summary,missed_feature,faultdic,predict
                         if int(pred.split(',')[i])==target[i]:
                             sample_summary[target[i]][0] += 1
                     else:
-                        if dic_cut[str(feature[i])][1]>=0.5:
-                            if int(dic_cut[str(feature[i])][0])==target[i]:
-                                sample_summary[target[i]][0] += 1
+                        if str(feature[i]) in dic_cut.keys():
+                            if dic_cut[str(feature[i])][1]>=0.5:
+                                if int(dic_cut[str(feature[i])][0])==target[i]:
+                                    sample_summary[target[i]][0] += 1
 
             missed_feature.add(','.join(str(x) for x in feature))
         else:
@@ -257,7 +259,7 @@ def sample_print():
     sample_table_summary = defaultdict(lambda: [0, 0, 0, 0])
     faultdic2=defaultdict(lambda: [])
     batch_index = 0
-    while batch_size * batch_index < 10000:
+    while batch_size * batch_index < 9000:
         sample_data = load_sample_random_table(0, batch_size, batch_index)
         sample_dict_table(sample_data, sample_table_summary, missed_feature, faultdic2, prediction)
         batch_index += 1
@@ -270,7 +272,7 @@ def sample_print():
     with open("nn/miss_features",'w') as wfp:
         for f in missed_feature:
             wfp.write(f+"\n")
-    with open("nn/fault_diction.json",'w') as wfp:
+    with open("nn/fault_diction_table.json",'w') as wfp:
         json.dump(faultdic,wfp)
 
 
