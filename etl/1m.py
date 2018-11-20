@@ -14,7 +14,7 @@ if __name__ == '__main__':
         folder = str(folder)
         print(folder)
         for file in os.listdir(os.path.join('webtables', folder)):
-            if random.random() < 0.005:
+            if random.random() < 0.05:
                 data = json.load(open(os.path.join('webtables', folder, file)))
                 if satisfy_variants(data):
                     table = Table(data)
