@@ -10,6 +10,7 @@ all_files = []
 
 if __name__ == '__main__':
     files_1m = json.load(open(files_json_1m))
-    random.shuffle(files_1m)
-    all_files = files_1m[::10]
+    for file in files_1m:
+        if random.random() < 0.1:
+            all_files.append(file)
     json.dump(all_files, open('data/100k_files.json', 'w+'), indent=4)
