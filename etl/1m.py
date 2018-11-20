@@ -14,10 +14,10 @@ if __name__ == '__main__':
         folder = str(folder)
         print(folder)
         for file in os.listdir(os.path.join('webtables', folder)):
-            if random.random() < 0.05:
+            if random.random() < 0.035:
                 data = json.load(open(os.path.join('webtables', folder, file)))
                 if satisfy_variants(data):
                     table = Table(data)
                     if len(table.get_entities()) >= min_num_rows:
                         all_files.append(os.path.join(folder, file))
-    json.dump(all_files, open('temp_filelist.json', 'w+'), indent=4)
+    json.dump(all_files, open('data/1m_files.json', 'w+'), indent=4)
