@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from .table import Table, satisfy_variants
 
 input_dir = 'webtables'
-files_json = 'data/1m_files.json'
+files_json = 'data/100k_files.json'
 
 if __name__ == '__main__':
     # x = []
@@ -63,7 +63,7 @@ if __name__ == '__main__':
             #     y3[2].append(new0 / new1)
 
     word_count = dict(sorted(word_count.items(), key=operator.itemgetter(1), reverse=True))
-    json.dump(word_count, open('data/wordlist_v5.json', 'w'), indent=4)
+    json.dump(word_count, open('data/wordlist_v6.json', 'w'), indent=4)
     # plt.plot(x, y)
     # plt.xlabel('# Tables')
     # plt.ylabel('# Labels')
