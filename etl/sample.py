@@ -13,14 +13,13 @@ import shutil
 from collections import defaultdict
 from .table import Table, satisfy_variants
 
-wordlist_json = 'data/wordlist_v4.json'
-input_dir = 'data/input'
+wordlist_json = 'data/wordlist_v5.json'
+input_dir = 'webtables'
+input_files_json = 'data/1m_files.json'
 output_dir_random_label = 'data/sample_random_label'
 testing_filelist_json_random_label = 'data/testing_files_random_label.json'
 output_dir_random_table = 'data/sample_random_table'
 testing_filelist_json_random_table = 'data/testing_files_random_table.json'
-
-total_table_num = 115859
 
 
 def generate_random_label_filelist():
@@ -31,6 +30,7 @@ def generate_random_label_filelist():
                      sorted(list(filter(lambda item: item.endswith('.json') and not item.endswith('_activate.json'),
                                         os.listdir(os.path.join(output_dir_random_label, folder)))))]
     return filelist
+
 
 def generate_random_table_filelist():
     folders = sorted(list(filter(lambda item: item.isdigit(), os.listdir(output_dir_random_table))))
@@ -47,18 +47,15 @@ def random_label():
     word_prob = dict([(item[0], float(sys.argv[2]) / item[1]) for item in wordlist.items()])
     word_count = defaultdict(int)
 
-    lines = []
-    files = os.listdir(input_dir)
+    datas = []
+    files = json.load(open(input_files_json))
     for file in files:
-        with open(os.path.join(input_dir, file), encoding='utf-8') as f:
-            lines += f.readlines()
-    random.shuffle(lines)
+        datas.append(json.load(open(os.path.join(input_dir, file), encoding='utf-8')))
+    random.shuffle(datas)
 
     table_num = 0
 
-    for line in lines:
-        line = line.strip()
-        data = json.loads(line)
+    for data in datas:
         if satisfy_variants(data):
             table = Table(data)
             words = table.get_header()
@@ -80,25 +77,22 @@ def random_label():
 
 
 def random_table():
-    lines = []
-    files = os.listdir(input_dir)
+    datas = []
+    files = json.load(open(input_files_json))
     for file in files:
-        with open(os.path.join(input_dir, file), encoding='utf-8') as f:
-            lines += f.readlines()
-    random.shuffle(lines)
+        datas.append(json.load(open(os.path.join(input_dir, file), encoding='utf-8')))
+    random.shuffle(datas)
 
-    for i, line in enumerate(lines[:10000]):
-        line = line.strip()
-        data = json.loads(line)
+    for i, data in enumerate(datas[:10000]):
         filename = str(i).zfill(4)
         json.dump(data, open(os.path.join(output_dir_random_table, seed, filename + '.json'), 'w+'))
 
 
 if __name__ == '__main__':
     try:
-        shutil.rmtree(os.path.join(output_dir_random_table, seed))
+        shutil.rmtree(os.path.join(output_dir_random_label, seed))
     except FileNotFoundError:
         pass
-    os.makedirs(os.path.join(output_dir_random_table, seed))
-    random_table()
-    json.dump(generate_random_table_filelist(), open(testing_filelist_json_random_table, 'w+'), indent=4)
+    os.makedirs(os.path.join(output_dir_random_label, seed))
+    random_label()
+    json.dump(generate_random_label_filelist(), open(testing_filelist_json_random_label, 'w+'), indent=4)
