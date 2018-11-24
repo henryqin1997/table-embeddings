@@ -13,55 +13,18 @@ from .table import Table
 from .table import satisfy_variants
 from .tagger import st, tag_to_index
 
-data_dir = './data'
-# training_data_dir = './data/train'
-# webtables_dir = './webtables'
-wordlist_raw = './hadoop/output2/part-00000'
-tree_dir = './data/tree'
-num_folders = 51
-# num_processors = int(sys.argv[1])
-# training_files_json = './data/training_files.json'
-# wordlist_json = './data/wordlist.json'
-
-# For sample random label
-training_data_dir = './data/sample_random_table_test'
-webtables_dir = './data/sample_random_table'
+training_data_dir = './data/train'
+webtables_dir = './webtables'
 num_processors = int(sys.argv[1])
-training_files_json = './data/testing_files_random_table.json'
-wordlist_json = './data/wordlist.json'
+training_files_json = './data/training_files.json'
+wordlist_json = './data/wordlist_v6_index.json'
 
-
-def generate_wordlist():
-    wordlist = {}
-    index = 0
-    with open(wordlist_raw) as f:
-        lines = f.readlines()
-        for line in lines:
-            line = line.strip()
-            i = line.find('\t')
-            count = int(line[:i])
-            word = line[i + 1:]
-            if count > 1:
-                wordlist[word] = index
-                index += 1
-    return wordlist
-
-
-def training_file_filter(file, i):
-    i = str(i)
-    return bool(re.match(r'(.+?)25.json'.format(i.zfill(2)), file))
-
-
-def list_training_files():
-    all_files = []
-    for i in range(num_folders):
-        with open(os.path.join(tree_dir, str(i))) as f:
-            files = f.readlines()
-        files = list(
-            map(lambda file: os.path.join(str(i), file.strip()),
-                filter(lambda file: training_file_filter(file, i), files)))
-        all_files += files
-    return all_files
+# # For sample random label
+# training_data_dir = './data/sample_random_table_test'
+# webtables_dir = './data/sample_random_table'
+# num_processors = int(sys.argv[1])
+# training_files_json = './data/testing_files_random_table.json'
+# wordlist_json = './data/wordlist.json'
 
 
 def chunkify(lst,n):
