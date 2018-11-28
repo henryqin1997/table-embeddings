@@ -63,7 +63,6 @@ class Table():
         ner_tags_dict = {}
         m = numpy.zeros((len(tag_to_index), 10))
         for i, attribute in enumerate(self.attributes):
-            print(i)
             if i >= 10:
                 break
             for j, value in enumerate(attribute):
@@ -74,8 +73,6 @@ class Table():
                 except KeyError:
                     ner_tags = tagger.tag(value.split())
                     ner_tags_dict[repr(value.split())] = ner_tags
-                print(value)
-                print(ner_tags)
                 for ner_tag in ner_tags:
                     try:
                         m[tag_to_index[ner_tag[1]]][i] = 1
