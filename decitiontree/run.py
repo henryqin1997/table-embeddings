@@ -130,6 +130,10 @@ def train():
                 correct += 1
     print('validation accuracy {}'.format(correct / total))
 
+def rank_cc_pc_pairs():
+    '''Rank (cc,pc) pairs with their count and save to diction. Also want raw data for incorrect predictions.'''
+    return 0
+
 def test():
     return 0
 
