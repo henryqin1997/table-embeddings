@@ -9,12 +9,15 @@ training_files = json.load(open(training_files_json))
 testing_data_random_label_dir = 'data/sample_random_label_test'
 activate_data_random_label_dir = 'data/sample_random_label'
 testing_files_random_label_json = 'data/testing_files_random_label.json'
-testing_files_random_label = [[y for y in json.load(open(testing_files_random_label_json)) if y[0] == str(x)] for x in range(10)]
+testing_files_random_label = [[y for y in json.load(open(testing_files_random_label_json)) if y[0] == str(x)] for x in
+                              range(10)]
 testing_data_random_table_dir = 'data/sample_random_table_test'
 activate_data_random_table_dir = 'data/sample_random_table'
 testing_files_random_table_json = 'data/testing_files_random_table.json'
-testing_files_random_table = [[y for y in json.load(open(testing_files_random_table_json)) if y[0] == str(x)] for x in range(1)]
+testing_files_random_table = [[y for y in json.load(open(testing_files_random_table_json)) if y[0] == str(x)] for x in
+                              range(1)]
 tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERCENT': 4, 'DATE': 5, 'TIME': 6}
+
 
 def one_hot(row):
     assert len(row) > 0
@@ -32,6 +35,9 @@ def load_data(batch_size, batch_index=0):
     batch_files = training_files[batch_size * batch_index:batch_size * (batch_index + 1)]
     batch_files_ner = list(map(lambda batch_file: batch_file.rstrip('.json') + '_ner.csv', batch_files))
     batch_files_wordlist = list(map(lambda batch_file: batch_file.rstrip('.json') + '_wordlist.csv', batch_files))
+    raws = numpy.array(
+        [json.load(open(os.path.join(training_data_dir, batch_file), encoding='utf-8')) for batch_file in
+         batch_files])
     inputs = numpy.array(
         [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_ner), delimiter=',') for batch_file_ner in
          batch_files_ner])
@@ -50,7 +56,7 @@ def load_data(batch_size, batch_index=0):
 
         inputs_transformed.append(numpy.array([one_hot(row) for row in input.transpose()]).transpose())
         targets_transformed.append(target)
-    return numpy.array(inputs_transformed), numpy.array(targets_transformed)
+    return numpy.array(raws), numpy.array(inputs_transformed), numpy.array(targets_transformed)
 
 
 def indexOf(l, n):
@@ -73,7 +79,8 @@ def load_sample_random_label(sample_index, batch_size, batch_index):
         batch_file_wordlist = batch_file.rstrip('.json') + '_wordlist.csv'
         batch_file_activate = batch_file.rstrip('.json') + '_activate.json'
         input = numpy.genfromtxt(os.path.join(testing_data_random_label_dir, batch_file_ner), delimiter=',').transpose()
-        target = numpy.genfromtxt(os.path.join(testing_data_random_label_dir, batch_file_wordlist), delimiter=',').transpose()
+        target = numpy.genfromtxt(os.path.join(testing_data_random_label_dir, batch_file_wordlist),
+                                  delimiter=',').transpose()
         activate = json.load(open(os.path.join(activate_data_random_label_dir, batch_file_activate)))
 
         input_transformed = [
@@ -99,7 +106,8 @@ def load_sample_random_table(sample_index, batch_size, batch_index):
         batch_file_ner = batch_file.rstrip('.json') + '_ner.csv'
         batch_file_wordlist = batch_file.rstrip('.json') + '_wordlist.csv'
         input = numpy.genfromtxt(os.path.join(testing_data_random_table_dir, batch_file_ner), delimiter=',').transpose()
-        target = numpy.genfromtxt(os.path.join(testing_data_random_table_dir, batch_file_wordlist), delimiter=',').transpose()
+        target = numpy.genfromtxt(os.path.join(testing_data_random_table_dir, batch_file_wordlist),
+                                  delimiter=',').transpose()
 
         input_transformed = [
             int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
