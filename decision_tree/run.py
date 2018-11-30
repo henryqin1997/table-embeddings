@@ -1,6 +1,6 @@
 import json
 from collections import defaultdict
-from load import load_data,load_sample_random_label,load_sample_random_table
+from .load import load_data,load_sample_random_label,load_sample_random_table
 
 def measure_distribution_cut(diction, input, target):
     input_transformed = input.transpose()
