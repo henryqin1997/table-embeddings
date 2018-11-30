@@ -48,11 +48,11 @@ def train():
             measure_distribution_cut(dic_cut, input[i], target[i])
             measure_distribution_no_cut(dic_no_cut, input[i], target[i])
 
-    with open('diction.json', 'w') as fp:
+    with open('decision_tree/diction.json', 'w') as fp:
         json.dump(dic_no_cut, fp)
         print('diction saved')
 
-    with open('diction_cut.json', 'w') as fp:
+    with open('decision_tree/diction_cut.json', 'w') as fp:
         json.dump(dic_cut, fp)
         print('diction_cut saved')
 
@@ -78,7 +78,7 @@ def train():
         dic_prediction[key] = maxlabel
     print("train accuracy {}".format(pre_acc / sum))
 
-    with open('diction_prediction_with0.json', 'w') as fp:
+    with open('decision_tree/diction_prediction_with0.json', 'w') as fp:
         json.dump(dic_prediction, fp)
         print('diciton prediction saved')
 
@@ -95,7 +95,7 @@ def train():
                 maxlabel=key
         dic_cut_pred[key1]=[maxlabel,float(max/sum_num)]
 
-    with open('dic_cut_pred.json','w') as fp:
+    with open('decision_tree/dic_cut_pred.json','w') as fp:
         json.dump(dic_cut_pred,fp)
 
 
@@ -132,6 +132,10 @@ def train():
 
 def rank_cc_pc_pairs():
     '''Rank (cc,pc) pairs with their count and save to diction. Also want raw data for incorrect predictions.'''
+    dic_cut_pred = json.load(open('decision_tree/dic_cut_pred.json','r'))
+    dic_pred = json.load(open('decision_tree/diction_prediction_with0.json', 'r'))
+
+
     return 0
 
 def test():
