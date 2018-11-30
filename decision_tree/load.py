@@ -4,7 +4,7 @@ import numpy
 from etl import Table
 
 training_data_dir = 'data/train'
-training_files_json = 'data/training_files_filtered.json'
+training_files_json = 'data/training_files.json'
 training_files = json.load(open(training_files_json))
 testing_data_random_label_dir = 'data/sample_random_label_test'
 activate_data_random_label_dir = 'data/sample_random_label'
