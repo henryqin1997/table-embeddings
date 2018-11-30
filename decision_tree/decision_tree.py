@@ -1,5 +1,5 @@
 import json
-from .load import load_sample_random_label,load_sample_random_table,load_data
+from .load import load_sample_random_label,load_sample_random_table
 from collections import defaultdict
 
 training_data_dir = 'data/train'
