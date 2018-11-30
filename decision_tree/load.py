@@ -42,28 +42,14 @@ def load_data(batch_size, batch_index=0):
     inputs_transformed = []
     targets_transformed = []
 
-    # Use One Hot Encoding and remove column with all zeros
+    # Use One Hot Encoding
     for i in range(len(inputs)):
         input = inputs[i]
         target = targets[i]
         assert len(input) == len(tag_to_index)
 
-        input = numpy.array([one_hot(row) for row in input.transpose()])
-        target = target.transpose()
-
-        # Remove all zero columns
-        input_transformed = numpy.zeros(input.shape)
-        target_transformed = numpy.zeros(target.shape)
-
-        current_index = 0
-        for row in input:
-            if row[0] == 0:
-                input_transformed[current_index] = input[current_index]
-                target_transformed[current_index] = target[current_index]
-                current_index += 1
-
-        inputs_transformed.append(input_transformed.transpose())
-        targets_transformed.append(target_transformed.transpose())
+        inputs_transformed.append(numpy.array([one_hot(row) for row in input.transpose()]).transpose())
+        targets_transformed.append(target)
     return numpy.array(inputs_transformed), numpy.array(targets_transformed)
 
 

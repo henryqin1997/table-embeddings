@@ -32,6 +32,14 @@ def measure_distribution_no_cut(diction, input, target):
             value_list.append(str(t))
     diction[','.join(key_list)][','.join(value_list)] += 1
 
+def one_hot(row):
+    assert len(row) > 0
+    row_sum = int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
+    row_converted = numpy.zeros(2 ** len(row))
+    assert row_sum < len(row_converted)
+    row_converted[row_sum] = 1
+    return row_converted
+
 
 def load_data(batch_size, batch_index=0):
     # load training data from file, to be implemented
@@ -50,7 +58,7 @@ def load_data(batch_size, batch_index=0):
     inputs_transformed = []
     targets_transformed = []
 
-    # Use One Hot Encoding and remove column with all zeros
+    # Use One Hot Encoding
     for i in range(len(inputs)):
         input = inputs[i]
         target = targets[i]
