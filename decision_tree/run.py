@@ -1,6 +1,7 @@
 import json
 from collections import defaultdict
 from .load import load_data,load_data_with_raw,load_sample_random_label,load_sample_random_table
+from .decision_tree import diction_pred
 
 def measure_distribution_cut(diction, input, target):
     input_transformed = input.transpose()
@@ -138,14 +139,55 @@ def rank_cc_pc_pairs():
 
     cc_pc_count = defaultdict(int)
 
-    train_size = 100#000
+    train_size = 100000
     batch_size = 50
     batch_index = 0
+
     while batch_size * batch_index < train_size:
         print(batch_index)
         raw, input, target = load_data_with_raw(batch_size=batch_size, batch_index=batch_index)
         batch_index += 1
-        print(raw)
+
+        for j in range(len(input)):
+
+            feature = input[j]
+
+            if ','.join(str(x) for x in feature) not in dic_pred:
+                sel_feature, pred = diction_pred(dic_pred, feature)
+                for i in range(10):
+
+                    if target[j][i] != -1:
+
+                        if feature[i] != sel_feature[i] and str(feature[i]) in dic_cut_pred.keys():
+                            if dic_cut_pred[str(feature[i])][1] >= 0.5:
+                                cc_pc_count[(target[j][i], dic_cut_pred[str(feature[i])][0])] += 1
+                            else:
+                                cc_pc_count[(target[j][i], pred[i])] += 1
+
+                        else:
+                            cc_pc_count[(target[j][i], pred[i])] += 1
+                    else:
+                        break
+
+            else:
+                pred = dic_pred[','.join(str(x) for x in feature)]
+
+                for i in range(10):
+                    if target[i] != -1:
+                        cc_pc_count[(target[j][i],pred[i])]+=1
+                    else:
+                        break
+
+    with open('ccpc_count.json','w') as wfp:
+        json.dump(cc_pc_count,wfp)
+
+    acc=0
+    sum=0
+    for key in cc_pc_count.keys():
+        sum+=cc_pc_count[key]
+        if key[0]==key[1]:
+            acc+=1
+    print('label accuracy is {}'.format(float(acc.sum)))
 
     return 0
 
