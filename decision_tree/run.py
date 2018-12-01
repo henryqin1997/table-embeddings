@@ -139,7 +139,7 @@ def rank_cc_pc_pairs():
 
     cc_pc_count = defaultdict(int)
 
-    train_size = 100000
+    train_size = 100
     batch_size = 50
     batch_index = 0
 
