@@ -173,7 +173,7 @@ def rank_cc_pc_pairs():
                 pred = dic_pred[','.join(str(x) for x in feature)]
 
                 for i in range(10):
-                    if target[i] != -1:
+                    if target[j][i] != -1:
                         cc_pc_count[(target[j][i],pred[i])]+=1
                     else:
                         break
