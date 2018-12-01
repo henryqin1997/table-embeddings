@@ -153,6 +153,7 @@ def rank_cc_pc_pairs():
             feature = input[j]
             if ','.join(str(x) for x in feature) not in dic_pred:
                 sel_feature, pred = diction_pred(dic_pred, feature)
+                pred = [int(x) for x in pred.split(',')]
                 for i in range(10):
 
                     if target[j][i] != -1:
@@ -170,7 +171,7 @@ def rank_cc_pc_pairs():
 
             else:
                 pred = dic_pred[','.join(str(x) for x in feature)]
-
+                pred = [int(x) for x in pred.split(',')]
                 for i in range(10):
                     if target[j][i] != -1:
                         cc_pc_count[(target[j][i],pred[i])]+=1
