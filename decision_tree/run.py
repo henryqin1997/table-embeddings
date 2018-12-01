@@ -190,7 +190,7 @@ def rank_cc_pc_pairs():
         sum+=cc_pc_count[key]
         if key[0]==key[1]:
             acc+=1
-    print('label accuracy is {}'.format(float(acc.sum)))
+    print('label accuracy is {}'.format(float(acc/sum)))
 
     return 0
 
