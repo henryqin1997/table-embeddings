@@ -145,7 +145,7 @@ def rank_cc_pc_pairs():
 
     while batch_size * batch_index < train_size:
         print(batch_index)
-        raw, input, target = load_data_with_raw(batch_size=batch_size, batch_index=batch_index)
+        input, target = load_data(batch_size=batch_size, batch_index=batch_index)
         batch_index += 1
 
         for j in range(len(input)):
