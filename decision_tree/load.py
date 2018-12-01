@@ -21,11 +21,15 @@ tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERC
 
 def one_hot(row):
     assert len(row) > 0
-    row_sum = int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
+    sum = row_sum(row)
     row_converted = numpy.zeros(2 ** len(row))
-    assert row_sum < len(row_converted)
-    row_converted[row_sum] = 1
+    assert sum < len(row_converted)
+    row_converted[sum] = 1
     return row_converted
+
+
+def row_sum(row):
+    return int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
 
 
 def load_data(batch_size, batch_index=0):
@@ -52,8 +56,8 @@ def load_data(batch_size, batch_index=0):
         target = targets[i]
         assert len(input) == len(tag_to_index)
 
-        inputs_transformed.append(numpy.array([one_hot(row) for row in input.transpose()]).transpose())
-        targets_transformed.append(target)
+        inputs_transformed.append(numpy.array([row_sum(row) for row in input.transpose()]).transpose())
+        targets_transformed.append(numpy.array([list(row).index(1) for row in target.transpose()]).transpose())
     return numpy.array(inputs_transformed), numpy.array(targets_transformed)
 
 
@@ -84,8 +88,8 @@ def load_data_with_raw(batch_size, batch_index=0):
         target = targets[i]
         assert len(input) == len(tag_to_index)
 
-        inputs_transformed.append(numpy.array([one_hot(row) for row in input.transpose()]).transpose())
-        targets_transformed.append(target)
+        inputs_transformed.append(numpy.array([row_sum(row) for row in input.transpose()]).transpose())
+        targets_transformed.append(numpy.array([list(row).index(1) for row in target.transpose()]).transpose())
     return numpy.array(raws), numpy.array(inputs_transformed), numpy.array(targets_transformed)
 
 
