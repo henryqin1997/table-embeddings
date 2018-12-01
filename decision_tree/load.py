@@ -52,12 +52,18 @@ def load_data(batch_size, batch_index=0):
 
     # Use One Hot Encoding
     for i in range(len(inputs)):
+        table = Table(json.load(open(os.path.join(training_data_dir, batch_files[i]))))
+        column_num = len(table.get_header())
         input = inputs[i]
         target = targets[i]
         assert len(input) == len(tag_to_index)
 
-        inputs_transformed.append(numpy.array([row_sum(row) for row in input.transpose()]).transpose())
-        targets_transformed.append(numpy.array([list(row).index(1) for row in target.transpose()]).transpose())
+        inputs_transformed.append(
+            numpy.array([int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
+                         if idx < column_num else -1 for idx, row in enumerate(input.transpose())]).transpose())
+        targets_transformed.append(
+            numpy.array([indexOf(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
+                         idx, row in enumerate(target.transpose())]).transpose())
     return numpy.array(inputs_transformed), numpy.array(targets_transformed)
 
 
@@ -84,12 +90,18 @@ def load_data_with_raw(batch_size, batch_index=0):
 
     # Use One Hot Encoding
     for i in range(len(inputs)):
+        table = Table(json.load(open(os.path.join(training_data_dir, batch_files[i]))))
+        column_num = len(table.get_header())
         input = inputs[i]
         target = targets[i]
         assert len(input) == len(tag_to_index)
 
-        inputs_transformed.append(numpy.array([row_sum(row) for row in input.transpose()]).transpose())
-        targets_transformed.append(numpy.array([list(row).index(1) for row in target.transpose()]).transpose())
+        inputs_transformed.append(
+            numpy.array([int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
+                         if idx < column_num else -1 for idx, row in enumerate(input.transpose())]).transpose())
+        targets_transformed.append(
+            numpy.array([indexOf(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
+                         idx, row in enumerate(target.transpose())]).transpose())
     return numpy.array(raws), numpy.array(inputs_transformed), numpy.array(targets_transformed)
 
 
