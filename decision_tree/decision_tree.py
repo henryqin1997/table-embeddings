@@ -19,14 +19,14 @@ def qin_similarity(list1, list2):
     intersection=0
     union=max(len(list1),len(list2))
     for i in range(min(len(list1),len(list2))):
-        if list1[i]==list2[i] and list1[i]!='-1':
+        if list1[i]==list2[i] and list1[i]!=-1:
             intersection+=1
     return float(intersection / union)
 
 def diction_pred(dic,feature):
     maxkey=''
     maxsim=0
-    feature_processed=[x for x in feature if x!='-1']
+    feature_processed=[x for x in feature if x!=-1]
     for key in dic.keys():
         key_processed = [int(x) for x in key.split(',') if x!='-1']
         sim = qin_similarity(feature_processed,key_processed)
