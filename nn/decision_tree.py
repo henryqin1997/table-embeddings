@@ -7,11 +7,11 @@ from collections import defaultdict
 
 training_data_dir = 'data/train'
 training_files_json = 'data/training_files_filtered.json'
-#training_files = json.load(open(training_files_json))
+training_files = json.load(open(training_files_json))
 testing_data_dir = 'data/sample_random_label_test'
 activate_data_dir = 'data/sample_random_label'
-# testing_files_json = 'data/testing_files_random_label.json'
-# testing_files = [[y for y in json.load(open(testing_files_json)) if y[0] == str(x)] for x in range(10)]
+testing_files_json = 'data/testing_files_random_label.json'
+testing_files = [[y for y in json.load(open(testing_files_json)) if y[0] == str(x)] for x in range(10)]
 tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2, 'MONEY': 3, 'PERCENT': 4, 'DATE': 5, 'TIME': 6}
 
 
@@ -32,6 +32,14 @@ def measure_distribution_no_cut(diction, input, target):
             value_list.append(str(t))
     diction[','.join(key_list)][','.join(value_list)] += 1
 
+def one_hot(row):
+    assert len(row) > 0
+    row_sum = int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
+    row_converted = numpy.zeros(2 ** len(row))
+    assert row_sum < len(row_converted)
+    row_converted[row_sum] = 1
+    return row_converted
+
 
 def load_data(batch_size, batch_index=0):
     # load training data from file, to be implemented
@@ -50,7 +58,7 @@ def load_data(batch_size, batch_index=0):
     inputs_transformed = []
     targets_transformed = []
 
-    # Use One Hot Encoding and remove column with all zeros
+    # Use One Hot Encoding
     for i in range(len(inputs)):
         input = inputs[i]
         target = targets[i]
@@ -166,18 +174,18 @@ def main():
 
 if __name__ == '__main__':
     main()
-    with open('dic_cut_with0.json','r') as fp:
-        dic_cut=json.load(fp)
-    dic_cut_pred=defaultdict(lambda: ['',0.])
-    for key1 in dic_cut.keys():
-        sum_num=0
-        max=0
-        maxlabel=''
-        for key in dic_cut[key1].keys():
-            sum_num+=dic_cut[key1][key]
-            if dic_cut[key1][key]>max:
-                max=dic_cut[key1][key]
-                maxlabel=key
-        dic_cut_pred[key1]=[maxlabel,float(max/sum_num)]
-    with open('dic_cut_pred.json','w') as fp:
-        json.dump(dic_cut_pred,fp)
+    # with open('dic_cut_with0.json','r') as fp:
+    #     dic_cut=json.load(fp)
+    # dic_cut_pred=defaultdict(lambda: ['',0.])
+    # for key1 in dic_cut.keys():
+    #     sum_num=0
+    #     max=0
+    #     maxlabel=''
+    #     for key in dic_cut[key1].keys():
+    #         sum_num+=dic_cut[key1][key]
+    #         if dic_cut[key1][key]>max:
+    #             max=dic_cut[key1][key]
+    #             maxlabel=key
+    #     dic_cut_pred[key1]=[maxlabel,float(max/sum_num)]
+    # with open('dic_cut_pred.json','w') as fp:
+    #     json.dump(dic_cut_pred,fp)

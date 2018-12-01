@@ -191,6 +191,7 @@ def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
 def sample_dict_table(sample_data,sample_summary,missed_feature,faultdic,prediction):
     batch_size=len(sample_data)
     dic_cut = json.load(open('nn/dic_cut_pred.json'))
+
     for index in range(batch_size):
         feature=sample_data[index][0]
         target=sample_data[index][1]

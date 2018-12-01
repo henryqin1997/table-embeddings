@@ -4,6 +4,7 @@
 import numpy
 import json
 import hashlib
+import itertools
 
 
 def satisfy_variants(data):
@@ -64,7 +65,9 @@ class Table():
         for i, attribute in enumerate(self.attributes):
             if i >= 10:
                 break
-            for value in attribute:
+            for j, value in enumerate(attribute):
+                if j >= 5:
+                    break
                 try:
                     ner_tags = ner_tags_dict[repr(value.split())]
                 except KeyError:
