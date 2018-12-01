@@ -139,7 +139,7 @@ def rank_cc_pc_pairs():
 
     cc_pc_count = defaultdict(int)
 
-    train_size = 100000
+    train_size = 100
     batch_size = 50
     batch_index = 0
 
@@ -151,7 +151,6 @@ def rank_cc_pc_pairs():
         for j in range(len(input)):
 
             feature = input[j]
-            print(feature)
             if ','.join(str(x) for x in feature) not in dic_pred:
                 sel_feature, pred = diction_pred(dic_pred, feature)
                 for i in range(10):
@@ -160,12 +159,12 @@ def rank_cc_pc_pairs():
 
                         if feature[i] != sel_feature[i] and str(feature[i]) in dic_cut_pred.keys():
                             if dic_cut_pred[str(feature[i])][1] >= 0.5:
-                                cc_pc_count[(target[j][i], dic_cut_pred[str(feature[i])][0])] += 1
+                                cc_pc_count[target[j][i]+','+ dic_cut_pred[str(feature[i])][0]] += 1
                             else:
-                                cc_pc_count[(target[j][i], pred[i])] += 1
+                                cc_pc_count[target[j][i]+','+pred[i]] += 1
 
                         else:
-                            cc_pc_count[(target[j][i], pred[i])] += 1
+                            cc_pc_count[target[j][i]+','+ pred[i]] += 1
                     else:
                         break
 
@@ -174,7 +173,7 @@ def rank_cc_pc_pairs():
 
                 for i in range(10):
                     if target[j][i] != -1:
-                        cc_pc_count[(target[j][i],pred[i])]+=1
+                        cc_pc_count[target[j][i]+','+pred[i]]+=1
                     else:
                         break
 
