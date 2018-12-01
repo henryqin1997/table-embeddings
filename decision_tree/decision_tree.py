@@ -3,7 +3,7 @@ from .load import load_sample_random_label,load_sample_random_table
 from collections import defaultdict
 
 training_data_dir = 'data/train'
-training_files_json = 'data/training_files_filtered.json'
+training_files_json = 'data/training_files.json'
 training_files = json.load(open(training_files_json))
 testing_data_random_label_dir = 'data/sample_random_label_test'
 activate_data_random_label_dir = 'data/sample_random_label'
@@ -45,7 +45,7 @@ def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
     #     targets=sample_target[batch*batch_size:batch_size*(batch+1)]
     #     actives=sample_active[batch*batch_size:batch_size*(batch+1)]
 
-    dic_cut_pred = json.load(open('decitiontree/dic_cut_pred.json'))
+    dic_cut_pred = json.load(open('decision_tree/dic_cut_pred.json'))
     for index in range(batch_size):
         feature=sample_data[index][0]
         target=sample_data[index][1]
@@ -84,7 +84,7 @@ def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
 
 def sample_dict_table(sample_data,sample_summary,missed_feature,faultdic,prediction):
     batch_size=len(sample_data)
-    dic_cut = json.load(open('decitiontree/dic_cut_pred.json'))
+    dic_cut = json.load(open('decision_tree/dic_cut_pred.json'))
     for index in range(batch_size):
         feature=sample_data[index][0]
         target=sample_data[index][1]
@@ -126,7 +126,7 @@ def sample_print():
     sample_size=4500
     missed_feature=set([])
     faultdic = defaultdict(lambda: [])
-    with open('decitiontree/diction_prediction.json', 'r') as fp:
+    with open('decision_tree/diction_prediction.json', 'r') as fp:
         prediction = json.load(fp)
     print(len(prediction))
     for sample_index in range(10):
@@ -136,7 +136,7 @@ def sample_print():
             sample_data=load_sample_random_label(sample_index,batch_size,batch_index)
             sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction)
             batch_index+=1
-        with open("decitiontree/sample_dict_it={}".format(sample_index), 'w') as wfp:
+        with open("decision_tree/sample_dict_it={}".format(sample_index), 'w') as wfp:
             json.dump(sample_summary, wfp)
 
     sample_table_summary = defaultdict(lambda: [0, 0, 0, 0])
@@ -147,13 +147,13 @@ def sample_print():
         sample_dict_table(sample_data, sample_table_summary, missed_feature, faultdic2, prediction)
         batch_index += 1
 
-    with open("decitiontree/sample_table_pred", 'w') as wfp:
+    with open("decision_tree/sample_table_pred", 'w') as wfp:
         json.dump(sample_table_summary, wfp)
-    with open('decitiontree/fault_table.json','w') as wfp:
+    with open('decision_tree/fault_table.json','w') as wfp:
         json.dump(faultdic2,wfp)
 
-    with open("decitiontree/miss_features",'w') as wfp:
+    with open("decision_tree/miss_features",'w') as wfp:
         for f in missed_feature:
             wfp.write(f+"\n")
-    with open("decitiontree/fault_diction_table.json",'w') as wfp:
+    with open("decision_tree/fault_diction_table.json",'w') as wfp:
         json.dump(faultdic,wfp)
