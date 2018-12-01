@@ -26,7 +26,7 @@ def qin_similarity(list1, list2):
 def diction_pred(dic,feature):
     maxkey=''
     maxsim=0
-    feature_processed=[x for x in feature if x!=-1]
+    feature_processed=[x for x in feature if x!='-1']
     for key in dic.keys():
         key_processed = [int(x) for x in key.split(',') if x!='-1']
         sim = qin_similarity(feature_processed,key_processed)
