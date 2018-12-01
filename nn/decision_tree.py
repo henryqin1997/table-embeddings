@@ -174,18 +174,18 @@ def main():
 
 if __name__ == '__main__':
     main()
-    with open('dic_cut_with0.json','r') as fp:
-        dic_cut=json.load(fp)
-    dic_cut_pred=defaultdict(lambda: ['',0.])
-    for key1 in dic_cut.keys():
-        sum_num=0
-        max=0
-        maxlabel=''
-        for key in dic_cut[key1].keys():
-            sum_num+=dic_cut[key1][key]
-            if dic_cut[key1][key]>max:
-                max=dic_cut[key1][key]
-                maxlabel=key
-        dic_cut_pred[key1]=[maxlabel,float(max/sum_num)]
-    with open('dic_cut_pred.json','w') as fp:
-        json.dump(dic_cut_pred,fp)
+    # with open('dic_cut_with0.json','r') as fp:
+    #     dic_cut=json.load(fp)
+    # dic_cut_pred=defaultdict(lambda: ['',0.])
+    # for key1 in dic_cut.keys():
+    #     sum_num=0
+    #     max=0
+    #     maxlabel=''
+    #     for key in dic_cut[key1].keys():
+    #         sum_num+=dic_cut[key1][key]
+    #         if dic_cut[key1][key]>max:
+    #             max=dic_cut[key1][key]
+    #             maxlabel=key
+    #     dic_cut_pred[key1]=[maxlabel,float(max/sum_num)]
+    # with open('dic_cut_pred.json','w') as fp:
+    #     json.dump(dic_cut_pred,fp)

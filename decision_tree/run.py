@@ -1,6 +1,6 @@
 import json
 from collections import defaultdict
-from .load import load_data,load_sample_random_label,load_sample_random_table
+from .load import load_data,load_data_with_raw,load_sample_random_label,load_sample_random_table
 
 def measure_distribution_cut(diction, input, target):
     input_transformed = input.transpose()
@@ -37,6 +37,7 @@ def train():
     dic_cut = defaultdict(lambda: defaultdict(int))
     dic_no_cut = defaultdict(lambda: defaultdict(int))
     dic_prediction = defaultdict(lambda: '')
+
     train_size = 100000
     batch_size = 50
     batch_index = 0
@@ -135,6 +136,16 @@ def rank_cc_pc_pairs():
     dic_cut_pred = json.load(open('decision_tree/dic_cut_pred.json','r'))
     dic_pred = json.load(open('decision_tree/diction_prediction_with0.json', 'r'))
 
+    cc_pc_count = defaultdict(int)
+
+    train_size = 100#000
+    batch_size = 50
+    batch_index = 0
+    while batch_size * batch_index < train_size:
+        print(batch_index)
+        raw, input, target = load_data_with_raw(batch_size=batch_size, batch_index=batch_index)
+        batch_index += 1
+        print(raw)
 
     return 0
 
@@ -143,4 +154,5 @@ def test():
 
 
 if __name__=='__main__':
-    train()
+    #train()
+    rank_cc_pc_pairs()
