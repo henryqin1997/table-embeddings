@@ -19,7 +19,7 @@ def qin_similarity(list1, list2):
     intersection=0
     union=max(len(list1),len(list2))
     for i in range(min(len(list1),len(list2))):
-        if list1[i]==list2[i] and list1[i]!=-1:
+        if list1[i]==list2[i] and list1[i]!='-1':
             intersection+=1
     return float(intersection / union)
 

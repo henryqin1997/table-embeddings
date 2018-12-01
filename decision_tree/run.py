@@ -151,7 +151,7 @@ def rank_cc_pc_pairs():
         for j in range(len(input)):
 
             feature = input[j]
-
+            print(feature)
             if ','.join(str(x) for x in feature) not in dic_pred:
                 sel_feature, pred = diction_pred(dic_pred, feature)
                 for i in range(10):
