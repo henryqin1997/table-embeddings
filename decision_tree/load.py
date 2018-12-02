@@ -237,6 +237,3 @@ def load_sample_random_table(sample_index, batch_size, batch_index):
 
         result.append([input_transformed, target_transformed])
     return result
-
-if __name__ == '__main__':
-    print(load_data_100_sample(50,0))
