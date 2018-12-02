@@ -155,20 +155,11 @@ def rank_cl_pl_pairs():
 
             feature = input[j]
             if ','.join(str(x) for x in feature) not in dic_pred:
-                sel_feature, pred = diction_pred(dic_pred, feature)
-                pred = [int(x) for x in pred.split(',')]
+                pred = diction_pred(dic_pred,dic_cut_pred,feature)
                 for i in range(10):
 
                     if target[j][i] != -1:
-
-                        if feature[i] != sel_feature[i] and str(feature[i]) in dic_cut_pred.keys():
-                            if dic_cut_pred[str(feature[i])][1] >= 0.5:
-                                cl_pl_count[(target[j][i], dic_cut_pred[str(feature[i])][0])] += 1
-                            else:
-                                cl_pl_count[(target[j][i], pred[i])] += 1
-
-                        else:
-                            cl_pl_count[(target[j][i], pred[i])] += 1
+                        cl_pl_count[(target[j][i], pred[i])] += 1
                     else:
                         break
 
@@ -248,35 +239,25 @@ def draw_raw():
 
             feature = input[j]
             if ','.join(str(x) for x in feature) not in dic_pred:
-                sel_feature, pred = diction_pred(dic_pred, feature)
-                pred = [int(x) for x in pred.split(',')]
+                pred = diction_pred(dic_pred,dic_cut_pred,feature)
                 for i in range(10):
-
                     if target[j][i] != -1:
+                        new_key = str((target[j][i], pred[i]))
+                        if (target[j][i], pred[i]) in raw_check:
+                            with open('raw_to_deal/{}_{}.json'.format(new_key, cl_pl_count[
+                                new_key]), 'w') as wfp:
+                                json.dump(raw[j], wfp)
 
-                        if feature[i] != sel_feature[i] and str(feature[i]) in dic_cut_pred.keys():
-                            if dic_cut_pred[str(feature[i])][1] >= 0.5:
-                                if (target[j][i], dic_cut_pred[str(feature[i])][0]) in raw_check:
-                                    new_key = str((target[j][i], dic_cut_pred[str(feature[i])][0]))
-                                    with open('raw_to_deal/{}_{}.json'.format(new_key,
-                                                                              cl_pl_count[new_key]), 'w') as wfp:
-                                        json.dump(raw[j], wfp)
-                                        cl_pl_count[new_key] -= 1
-                                        break
-                            else:
-                                if (target[j][i], pred[i]) in raw_check:
-                                    with open('raw_to_deal/{}_{}.json'.format((target[j][i], pred[i]), cl_pl_count[
-                                        str((target[j][i], pred[i]))]), 'w') as wfp:
-                                        json.dump(raw[j], wfp)
-                                        cl_pl_count[str((target[j][i], pred[i]))] -= 1
-                                        break
-                        else:
-                            if (target[j][i], pred[i]) in raw_check:
-                                with open('raw_to_deal/{}_{}.json'.format((target[j][i], pred[i]), cl_pl_count[
-                                    str((target[j][i], pred[i]))]), 'w') as wfp:
-                                    json.dump(raw[j], wfp)
-                                    cl_pl_count[str((target[j][i], pred[i]))] -= 1
-                                    break
+                            with open('raw_to_deal/{}_{}.txt'.format(new_key,
+                                                                     cl_pl_count[new_key]), 'w') as wfp:
+                                wfp.write('feature')
+                                wfp.write(str(feature))
+                                wfp.write('prediction')
+                                wfp.write(str(pred))
+                                wfp.write('target')
+                                wfp.write(str(target[j]))
+                                cl_pl_count[str((target[j][i], pred[i]))] -= 1
+                                break
                     else:
                         break
 
@@ -285,10 +266,19 @@ def draw_raw():
                 pred = [int(x) for x in pred.split(',')]
                 for i in range(10):
                     if target[j][i] != -1:
+                        new_key = str((target[j][i], pred[i]))
                         if (target[j][i], pred[i]) in raw_check:
-                            with open('raw_to_deal/{}_{}.json'.format((target[j][i], pred[i]), cl_pl_count[
-                                str((target[j][i], pred[i]))]), 'w') as wfp:
+                            with open('raw_to_deal/{}_{}.json'.format(new_key, cl_pl_count[
+                                new_key]), 'w') as wfp:
                                 json.dump(raw[j], wfp)
+                            with open('raw_to_deal/{}_{}.txt'.format(new_key,
+                                                                     cl_pl_count[new_key]), 'w') as wfp:
+                                wfp.write('feature')
+                                wfp.write(str(feature))
+                                wfp.write('prediction')
+                                wfp.write(str(pred))
+                                wfp.write('target')
+                                wfp.write(str(target[j]))
                                 cl_pl_count[str((target[j][i], pred[i]))] -= 1
                                 break
                     else:
