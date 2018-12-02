@@ -116,10 +116,10 @@ def load_data_100_sample(batch_size, batch_index=0):
     batch_files_ner = list(map(lambda batch_file: batch_file.rstrip('.json') + '_ner.csv', batch_files))
     batch_files_wordlist = list(map(lambda batch_file: batch_file.rstrip('.json') + '_wordlist.csv', batch_files))
     inputs = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_ner), delimiter=',') for batch_file_ner in
+        [numpy.genfromtxt(os.path.join(training_data_100_sample_dir, batch_file_ner), delimiter=',') for batch_file_ner in
          batch_files_ner])
     targets = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
+        [numpy.genfromtxt(os.path.join(training_data_100_sample_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
          in batch_files_wordlist])
 
     inputs_transformed = []
@@ -127,7 +127,7 @@ def load_data_100_sample(batch_size, batch_index=0):
 
     # Use One Hot Encoding
     for i in range(len(inputs)):
-        table = Table(json.load(open(os.path.join(training_data_dir, batch_files[i]))))
+        table = Table(json.load(open(os.path.join(training_data_100_sample_dir, batch_files[i]))))
         column_num = len(table.get_header())
         input = inputs[i]
         target = targets[i]
@@ -151,13 +151,13 @@ def load_data_100_sample_with_raw(batch_size, batch_index=0):
     batch_files_ner = list(map(lambda batch_file: batch_file.rstrip('.json') + '_ner.csv', batch_files))
     batch_files_wordlist = list(map(lambda batch_file: batch_file.rstrip('.json') + '_wordlist.csv', batch_files))
     raws = numpy.array(
-        [json.load(open(os.path.join(training_data_dir, batch_file), encoding='utf-8')) for batch_file in
+        [json.load(open(os.path.join(training_data_100_sample_dir, batch_file), encoding='utf-8')) for batch_file in
          batch_files])
     inputs = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_ner), delimiter=',') for batch_file_ner in
+        [numpy.genfromtxt(os.path.join(training_data_100_sample_dir, batch_file_ner), delimiter=',') for batch_file_ner in
          batch_files_ner])
     targets = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
+        [numpy.genfromtxt(os.path.join(training_data_100_sample_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
          in batch_files_wordlist])
 
     inputs_transformed = []
@@ -165,7 +165,7 @@ def load_data_100_sample_with_raw(batch_size, batch_index=0):
 
     # Use One Hot Encoding
     for i in range(len(inputs)):
-        table = Table(json.load(open(os.path.join(training_data_dir, batch_files[i]))))
+        table = Table(json.load(open(os.path.join(training_data_100_sample_dir, batch_files[i]))))
         column_num = len(table.get_header())
         input = inputs[i]
         target = targets[i]
