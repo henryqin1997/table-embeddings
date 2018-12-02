@@ -139,7 +139,7 @@ def rank_cc_pc_pairs():
 
     cc_pc_count = defaultdict(int)
 
-    train_size = 100
+    train_size = 100000
     batch_size = 50
     batch_index = 0
 
@@ -153,32 +153,37 @@ def rank_cc_pc_pairs():
             feature = input[j]
             if ','.join(str(x) for x in feature) not in dic_pred:
                 sel_feature, pred = diction_pred(dic_pred, feature)
+                pred = [int(x) for x in pred.split(',')]
                 for i in range(10):
 
                     if target[j][i] != -1:
 
                         if feature[i] != sel_feature[i] and str(feature[i]) in dic_cut_pred.keys():
                             if dic_cut_pred[str(feature[i])][1] >= 0.5:
-                                cc_pc_count[target[j][i]+','+ dic_cut_pred[str(feature[i])][0]] += 1
+                                cc_pc_count[(target[j][i], dic_cut_pred[str(feature[i])][0])] += 1
                             else:
-                                cc_pc_count[target[j][i]+','+pred[i]] += 1
+                                cc_pc_count[(target[j][i], pred[i])] += 1
 
                         else:
-                            cc_pc_count[target[j][i]+','+ pred[i]] += 1
+                            cc_pc_count[(target[j][i], pred[i])] += 1
                     else:
                         break
 
             else:
                 pred = dic_pred[','.join(str(x) for x in feature)]
-
+                pred = [int(x) for x in pred.split(',')]
                 for i in range(10):
                     if target[j][i] != -1:
-                        cc_pc_count[target[j][i]+','+pred[i]]+=1
+                        cc_pc_count[(target[j][i],pred[i])]+=1
                     else:
                         break
 
+    dic_new={}
+    for key in cc_pc_count.keys():
+        dic_new[str(key)]=cc_pc_count[key]
+
     with open('ccpc_count.json','w') as wfp:
-        json.dump(cc_pc_count,wfp)
+        json.dump(dic_new,wfp)
 
     acc=0
     sum=0
@@ -186,7 +191,7 @@ def rank_cc_pc_pairs():
         sum+=cc_pc_count[key]
         if key[0]==key[1]:
             acc+=1
-    print('label accuracy is {}'.format(float(acc.sum)))
+    print('label accuracy is {}'.format(float(acc/sum)))
 
     return 0
 
