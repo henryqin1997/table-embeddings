@@ -23,7 +23,7 @@ def qin_similarity(list1, list2):
             intersection+=1
     return float(intersection / union)
 
-def diction_pred(dic,feature):
+def diction_pred(dic,dic_cut,feature):
     maxkey=''
     maxsim=0
     feature_processed=[x for x in feature if x!=-1]
@@ -33,7 +33,17 @@ def diction_pred(dic,feature):
         if sim>maxsim:
             maxkey=key
             maxsim=sim
-    return [int(x) for x in maxkey.split(',')],dic[maxkey]
+
+    pred = dic[maxkey]
+    pred = [int(x) for x in pred.split(',')]
+    maxkey = [int(x) for x in maxkey.split(',')]
+
+    for i in range(len(maxkey)):
+        if maxkey[i]!=feature[i]:
+            if dic_cut[str(feature[i])][1]>0.5:
+                pred[i]=int(dic_cut[str(feature[i])][0])
+
+    return pred
 
 def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
     batch_size=len(sample_data)
