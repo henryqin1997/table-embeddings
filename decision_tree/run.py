@@ -1,7 +1,11 @@
 import json
 from collections import defaultdict
-from .load import load_data,load_data_with_raw,load_sample_random_label,load_sample_random_table
+
+import numpy as np
+
 from .decision_tree import diction_pred
+from .load import load_data, load_data_with_raw, load_data_100_sample_with_raw
+
 
 def measure_distribution_cut(diction, input, target):
     input_transformed = input.transpose()
@@ -84,22 +88,20 @@ def train():
         json.dump(dic_prediction, fp)
         print('diciton prediction saved')
 
-
-    dic_cut_pred=defaultdict(lambda: ['',0.])
+    dic_cut_pred = defaultdict(lambda: ['', 0.])
     for key1 in dic_cut.keys():
-        sum_num=0
-        max=0
-        maxlabel=''
+        sum_num = 0
+        max = 0
+        maxlabel = ''
         for key in dic_cut[key1].keys():
-            sum_num+=dic_cut[key1][key]
-            if dic_cut[key1][key]>max:
-                max=dic_cut[key1][key]
-                maxlabel=key
-        dic_cut_pred[key1]=[maxlabel,float(max/sum_num)]
+            sum_num += dic_cut[key1][key]
+            if dic_cut[key1][key] > max:
+                max = dic_cut[key1][key]
+                maxlabel = key
+        dic_cut_pred[key1] = [maxlabel, float(max / sum_num)]
 
-    with open('decision_tree/dic_cut_pred.json','w') as fp:
-        json.dump(dic_cut_pred,fp)
-
+    with open('decision_tree/dic_cut_pred.json', 'w') as fp:
+        json.dump(dic_cut_pred, fp)
 
     print('validating')
     batch_size = 50
@@ -132,12 +134,13 @@ def train():
                 correct += 1
     print('validation accuracy {}'.format(correct / total))
 
-def rank_cc_pc_pairs():
+
+def rank_cl_pl_pairs():
     '''Rank (cc,pc) pairs with their count and save to diction. Also want raw data for incorrect predictions.'''
-    dic_cut_pred = json.load(open('decision_tree/dic_cut_pred.json','r'))
+    dic_cut_pred = json.load(open('decision_tree/dic_cut_pred.json', 'r'))
     dic_pred = json.load(open('decision_tree/diction_prediction_with0.json', 'r'))
 
-    cc_pc_count = defaultdict(int)
+    cl_pl_count = defaultdict(int)
 
     train_size = 100000
     batch_size = 50
@@ -160,12 +163,12 @@ def rank_cc_pc_pairs():
 
                         if feature[i] != sel_feature[i] and str(feature[i]) in dic_cut_pred.keys():
                             if dic_cut_pred[str(feature[i])][1] >= 0.5:
-                                cc_pc_count[(target[j][i], dic_cut_pred[str(feature[i])][0])] += 1
+                                cl_pl_count[(target[j][i], dic_cut_pred[str(feature[i])][0])] += 1
                             else:
-                                cc_pc_count[(target[j][i], pred[i])] += 1
+                                cl_pl_count[(target[j][i], pred[i])] += 1
 
                         else:
-                            cc_pc_count[(target[j][i], pred[i])] += 1
+                            cl_pl_count[(target[j][i], pred[i])] += 1
                     else:
                         break
 
@@ -174,31 +177,125 @@ def rank_cc_pc_pairs():
                 pred = [int(x) for x in pred.split(',')]
                 for i in range(10):
                     if target[j][i] != -1:
-                        cc_pc_count[(target[j][i],pred[i])]+=1
+                        cl_pl_count[(target[j][i], pred[i])] += 1
                     else:
                         break
 
-    dic_new={}
-    for key in cc_pc_count.keys():
-        dic_new[str(key)]=cc_pc_count[key]
+    dic_new = {}
+    for key in cl_pl_count.keys():
+        dic_new[str(key)] = cl_pl_count[key]
 
-    with open('ccpc_count.json','w') as wfp:
-        json.dump(dic_new,wfp)
+    with open('clpl_count.json', 'w') as wfp:
+        json.dump(dic_new, wfp)
 
-    acc=0
-    sum=0
-    for key in cc_pc_count.keys():
-        sum+=cc_pc_count[key]
-        if key[0]==key[1]:
-            acc+=1
-    print('label accuracy is {}'.format(float(acc/sum)))
+    acc = 0
+    sum = 0
+    for key in cl_pl_count.keys():
+        sum += cl_pl_count[key]
+        if key[0] == key[1]:
+            acc += cl_pl_count[key]
+    print('label accuracy is {}'.format(float(acc / sum)))
 
-    return 0
 
 def test():
     return 0
 
 
-if __name__=='__main__':
-    #train()
-    rank_cc_pc_pairs()
+def calculate_label_accuracy():
+    with open('decision_tree/clpl_count.json', 'r') as rfp:
+        cl_pl_count = json.load(rfp)
+    acc = 0
+    sum = 0
+    for key in cl_pl_count.keys():
+        sum += cl_pl_count[key]
+        key_transformed = eval(key)
+        print(key_transformed)
+        if key_transformed[0] == key_transformed[1]:
+            acc += cl_pl_count[key]
+
+    print('label accuracy is {}'.format(float(acc / sum)))
+
+
+def draw_raw():
+    with open('decision_tree/clpl_count.json', 'r') as rfp:
+        cl_pl_count = json.load(rfp)
+    maxlist = [['', 0] for i in range(5)]
+    for key in cl_pl_count.keys():
+        key_transformed = eval(key)
+        if key_transformed[0] != key_transformed[1]:
+            max_counts = np.array([maxlist[j][1] for j in range(5)])
+            i = np.random.choice(np.flatnonzero(max_counts == max_counts.min()))
+            if cl_pl_count[key] > maxlist[i][1]:
+                maxlist[i][1] = cl_pl_count[key]
+                maxlist[i][0] = key_transformed
+    print(maxlist)
+
+    raw_check = [x[0] for x in maxlist]
+
+    dic_cut_pred = json.load(open('decision_tree/dic_cut_pred.json', 'r'))
+    dic_pred = json.load(open('decision_tree/diction_prediction_with0.json', 'r'))
+
+    train_size = 100000
+    batch_size = 50
+    batch_index = 0
+
+    while batch_size * batch_index < train_size:
+        print(batch_index)
+        raw, input, target = load_data_with_raw(batch_size=batch_size, batch_index=batch_index)
+        batch_index += 1
+
+        for j in range(len(input)):
+
+            feature = input[j]
+            if ','.join(str(x) for x in feature) not in dic_pred:
+                sel_feature, pred = diction_pred(dic_pred, feature)
+                pred = [int(x) for x in pred.split(',')]
+                for i in range(10):
+
+                    if target[j][i] != -1:
+
+                        if feature[i] != sel_feature[i] and str(feature[i]) in dic_cut_pred.keys():
+                            if dic_cut_pred[str(feature[i])][1] >= 0.5:
+                                if (target[j][i], dic_cut_pred[str(feature[i])][0]) in raw_check:
+                                    new_key = str((target[j][i], dic_cut_pred[str(feature[i])][0]))
+                                    with open('raw_to_deal/{}_{}.json'.format(new_key,
+                                                                              cl_pl_count[new_key]), 'w') as wfp:
+                                        json.dump(raw[j], wfp)
+                                        cl_pl_count[new_key] -= 1
+                                        break
+                            else:
+                                if (target[j][i], pred[i]) in raw_check:
+                                    with open('raw_to_deal/{}_{}.json'.format((target[j][i], pred[i]), cl_pl_count[
+                                        str((target[j][i], pred[i]))]), 'w') as wfp:
+                                        json.dump(raw[j], wfp)
+                                        cl_pl_count[str((target[j][i], pred[i]))] -= 1
+                                        break
+                        else:
+                            if (target[j][i], pred[i]) in raw_check:
+                                with open('raw_to_deal/{}_{}.json'.format((target[j][i], pred[i]), cl_pl_count[
+                                    str((target[j][i], pred[i]))]), 'w') as wfp:
+                                    json.dump(raw[j], wfp)
+                                    cl_pl_count[str((target[j][i], pred[i]))] -= 1
+                                    break
+                    else:
+                        break
+
+            else:
+                pred = dic_pred[','.join(str(x) for x in feature)]
+                pred = [int(x) for x in pred.split(',')]
+                for i in range(10):
+                    if target[j][i] != -1:
+                        if (target[j][i], pred[i]) in raw_check:
+                            with open('raw_to_deal/{}_{}.json'.format((target[j][i], pred[i]), cl_pl_count[
+                                str((target[j][i], pred[i]))]), 'w') as wfp:
+                                json.dump(raw[j], wfp)
+                                cl_pl_count[str((target[j][i], pred[i]))] -= 1
+                                break
+                    else:
+                        break
+
+
+if __name__ == '__main__':
+    # train()
+    # rank_cl_pl_pairs()
+    draw_raw()
