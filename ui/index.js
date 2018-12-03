@@ -34,15 +34,12 @@ function extractEntities(data) {
 }
 
 $(document).ready(function () {
-    console.log("ready!");
     const vars = getUrlVars();
     if (vars.file) {
-        console.log(vars.file);
         $.getJSON(`http://127.0.0.1:3000/${vars.file}`, (data) => {
             $('#page-title').html(data.pageTitle);
             $('#title').html(data.title);
             $('#url').html(`<a href="${data.url}" target="_blank">${data.url}</a>`);
-            console.log(extractHeader(data));
             extractHeader(data).forEach(label => {
                 $('#table-header').append(`<th scope="col">${label}</th>`)
             });
