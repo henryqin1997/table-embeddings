@@ -213,7 +213,7 @@ def draw_raw():
     maxlist = [['', 0] for i in range(5)]
     for key in cl_pl_count.keys():
         key_transformed = eval(key)
-        if key_transformed[0] != key_transformed[1]:
+        if key_transformed[0] != key_transformed[1] and key_transformed[0] !=3333 and key_transformed[1] !=3333:
             max_counts = np.array([maxlist[j][1] for j in range(5)])
             i = np.random.choice(np.flatnonzero(max_counts == max_counts.min()))
             if cl_pl_count[key] > maxlist[i][1]:
@@ -244,11 +244,11 @@ def draw_raw():
                     if target[j][i] != -1:
                         new_key = str((target[j][i], pred[i]))
                         if (target[j][i], pred[i]) in raw_check:
-                            with open('raw_to_deal/{}_{}.json'.format(new_key, cl_pl_count[
+                            with open('raw_to_deal_no_other/{}_{}.json'.format(new_key, cl_pl_count[
                                 new_key]), 'w') as wfp:
                                 json.dump(raw[j], wfp)
 
-                            with open('raw_to_deal/{}_{}.txt'.format(new_key,
+                            with open('raw_to_deal_no_other/{}_{}.txt'.format(new_key,
                                                                      cl_pl_count[new_key]), 'w') as wfp:
                                 wfp.write('feature')
                                 wfp.write(str(feature))
@@ -268,10 +268,10 @@ def draw_raw():
                     if target[j][i] != -1:
                         new_key = str((target[j][i], pred[i]))
                         if (target[j][i], pred[i]) in raw_check:
-                            with open('raw_to_deal/{}_{}.json'.format(new_key, cl_pl_count[
+                            with open('raw_to_deal_no_other/{}_{}.json'.format(new_key, cl_pl_count[
                                 new_key]), 'w') as wfp:
                                 json.dump(raw[j], wfp)
-                            with open('raw_to_deal/{}_{}.txt'.format(new_key,
+                            with open('raw_to_deal_no_other/{}_{}.txt'.format(new_key,
                                                                      cl_pl_count[new_key]), 'w') as wfp:
                                 wfp.write('feature')
                                 wfp.write(str(feature))
@@ -287,5 +287,5 @@ def draw_raw():
 
 if __name__ == '__main__':
     # train()
-    # rank_cl_pl_pairs()
+    #rank_cl_pl_pairs()
     draw_raw()
