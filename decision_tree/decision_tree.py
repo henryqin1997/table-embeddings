@@ -23,6 +23,13 @@ def qin_similarity(list1, list2):
             intersection+=1
     return float(intersection / union)
 
+def li_similarity(list1,list2):
+    count=0
+    for i in range(len(list1)):
+        if list1[i]==list2[i]:
+            count+=1
+    return float(count/len(list1))
+
 def diction_pred(dic,dic_cut,feature):
     maxkey=''
     maxsim=0
@@ -45,6 +52,36 @@ def diction_pred(dic,dic_cut,feature):
 
     return pred
 
+def diction_pred_advanced(dic,feature):
+    maxkey = ''
+    maxsim = 0
+    feature_processed = [x for x in feature if x != -1]
+    for key in dic.keys():
+        key_processed = [int(x) for x in key.split(',')]
+        sim = li_similarity(feature_processed, key_processed)
+        if sim > maxsim:
+            maxkey = key
+            maxsim = sim
+
+    pred = dic[maxkey][0]
+    pred = [int(x) for x in pred.split(',')]
+    pred_key = [int(x) for x in maxkey.split(',')]
+
+    for i in range(len(feature_processed)):
+        maxkey = ''
+        maxsim = 0
+        if pred_key[i] != feature[i]:
+            for key in dic.keys():
+                if key[i]==feature[i]:
+                    key_processed = [int(x) for x in key.split(',')]
+                    sim = li_similarity(feature_processed, key_processed)
+                    if sim > maxsim:
+                        maxkey = key
+                        maxsim = sim
+            pred[i] = int(dic[maxkey][0].split(',')[i])
+
+    return pred
+
 def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
     batch_size=len(sample_data)
     #missed_feature=[]
@@ -61,18 +98,12 @@ def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
         target=sample_data[index][1]
         activate=sample_data[index][2]
         if ','.join(str(x) for x in feature) not in prediction:
-            sel_feature, pred = diction_pred(prediction,feature)
+            pred = diction_pred(prediction,dic_cut_pred,feature)
             for i in range(10):
                 if activate[i]==1 and target[i]!=-1:
                     sample_summary[target[i]][1]+=1
-                    if feature[i]==sel_feature[i]:
-                        if int(pred.split(',')[i])==target[i]:
-                            sample_summary[target[i]][0] += 1
-                    else:
-                        if str(feature[i]) in dic_cut_pred.keys():
-                            if dic_cut_pred[str(feature[i])][1]>=0.5:
-                                if int(dic_cut_pred[str(feature[i])][0])==target[i]:
-                                    sample_summary[target[i]][0] += 1
+                    if int(pred.split(',')[i])==target[i]:
+                        sample_summary[target[i]][0] += 1
 
             missed_feature.add(','.join(str(x) for x in feature))
         else:
@@ -87,7 +118,7 @@ def sample_dict(sample_data,sample_summary,missed_feature,faultdic,prediction):
             if mis:
                 mispred = [str(x) for x in target]
                 for i in range(10):
-                    if activate[i]==1:
+                    if activate[i]==1 and target[i]!=prediction[','.join(str(x) for x in feature)].split(',')[i]:
                         mispred[i]+='*'
                 mispred=','.join(mispred)
                 faultdic[','.join(str(x) for x in feature)].append([prediction[','.join(str(x) for x in feature)],mispred])
@@ -99,19 +130,12 @@ def sample_dict_table(sample_data,sample_summary,missed_feature,faultdic,predict
         feature=sample_data[index][0]
         target=sample_data[index][1]
         if ','.join(str(x) for x in feature) not in prediction:
-            sel_feature, pred = diction_pred(prediction,feature)
+            pred = diction_pred(prediction,dic_cut,feature)
             for i in range(10):
                 if target[i]!=-1:
                     sample_summary[target[i]][1]+=1
-                    if feature[i]==sel_feature[i]:
-                        if int(pred.split(',')[i])==target[i]:
-                            sample_summary[target[i]][0] += 1
-                    else:
-                        if str(feature[i]) in dic_cut.keys():
-                            if dic_cut[str(feature[i])][1]>=0.5:
-                                if int(dic_cut[str(feature[i])][0])==target[i]:
-                                    sample_summary[target[i]][0] += 1
-
+                    if int(pred.split(',')[i])==target[i]:
+                        sample_summary[target[i]][0] += 1
             missed_feature.add(','.join(str(x) for x in feature))
         else:
             mis=False
@@ -130,13 +154,74 @@ def sample_dict_table(sample_data,sample_summary,missed_feature,faultdic,predict
                 mispred=','.join(mispred)
                 faultdic[','.join(str(x) for x in feature)].append([prediction[','.join(str(x) for x in feature)],mispred])
 
+def sample_dict_advanced(sample_data,sample_summary,missed_feature,faultdic,prediction):
+    batch_size=len(sample_data)
+    for index in range(batch_size):
+        feature=sample_data[index][0]
+        target=sample_data[index][1]
+        activate=sample_data[index][2]
+        if ','.join(str(x) for x in feature) not in prediction:
+            pred = diction_pred(prediction,feature)
+            for i in range(10):
+                if activate[i]==1 and target[i]!=-1:
+                    sample_summary[target[i]][1]+=1
+                    if int(pred.split(',')[i])==target[i]:
+                        sample_summary[target[i]][0] += 1
+
+            missed_feature.add(','.join(str(x) for x in feature))
+        else:
+            mis=False
+            for i in range(10):
+                if activate[i]==1 and target[i]!=-1:
+                    sample_summary[target[i]][3]+=1
+                    if target[i]==int(prediction[','.join(str(x) for x in feature)][0].split(',')[i]):
+                        sample_summary[target[i]][2]+=1
+                    else:
+                        mis=True
+            if mis:
+                mispred = [str(x) for x in target]
+                for i in range(10):
+                    if activate[i]==1 and target[i]!=prediction[','.join(str(x) for x in feature)][0].split(',')[i]:
+                        mispred[i]+='*'
+                mispred=','.join(mispred)
+                faultdic[','.join(str(x) for x in feature)].append([prediction[','.join(str(x) for x in feature)][0],mispred])
+
+def sample_dict_table_advanced(sample_data,sample_summary,missed_feature,faultdic,prediction):
+    batch_size=len(sample_data)
+    for index in range(batch_size):
+        feature=sample_data[index][0]
+        target=sample_data[index][1]
+        if ','.join(str(x) for x in feature) not in prediction:
+            pred = diction_pred(prediction,feature)
+            for i in range(10):
+                if target[i]!=-1:
+                    sample_summary[target[i]][1]+=1
+                    if int(pred.split(',')[i])==target[i]:
+                        sample_summary[target[i]][0] += 1
+            missed_feature.add(','.join(str(x) for x in feature))
+        else:
+            mis=False
+            for i in range(10):
+                if target[i]!=-1:
+                    sample_summary[target[i]][3]+=1
+                    if target[i]==int(prediction[','.join(str(x) for x in feature)][0].split(',')[i]):
+                        sample_summary[target[i]][2]+=1
+                    else:
+                        mis=True
+            if mis:
+                mispred = [str(x) for x in target]
+                for i in range(10):
+                    if target[i]!=-1 and target[i]!=prediction[','.join(str(x) for x in feature)][0].split(',')[i]:
+                        mispred[i]+='*'
+                mispred=','.join(mispred)
+                faultdic[','.join(str(x) for x in feature)].append([prediction[','.join(str(x) for x in feature)][0],mispred])
 
 def sample_print():
     batch_size=50
     sample_size=4500
     missed_feature=set([])
     faultdic = defaultdict(lambda: [])
-    with open('decision_tree/diction_prediction.json', 'r') as fp:
+    with open('decision_tree/diction_prediction_with0.json', 'r') as fp:
         prediction = json.load(fp)
     print(len(prediction))
     for sample_index in range(10):
@@ -167,3 +252,40 @@ def sample_print():
             wfp.write(f+"\n")
     with open("decision_tree/fault_diction_table.json",'w') as wfp:
         json.dump(faultdic,wfp)
+
+def sample_print_advanced():
+    batch_size = 50
+    sample_size = 4500
+    missed_feature = set([])
+    faultdic = defaultdict(lambda: [])
+    with open('decision_tree/diction_prediction_advanced.json', 'r') as fp:
+        prediction = json.load(fp)
+    print(len(prediction))
+    for sample_index in range(10):
+        sample_summary = defaultdict(lambda: [0, 0, 0, 0])
+        batch_index = 0
+        while batch_size * batch_index < sample_size:
+            sample_data = load_sample_random_label(sample_index, batch_size, batch_index)
+            sample_dict_advanced(sample_data, sample_summary, missed_feature, faultdic, prediction)
+            batch_index += 1
+        with open("decision_tree/sample_dict_it={}".format(sample_index), 'w') as wfp:
+            json.dump(sample_summary, wfp)
+
+    sample_table_summary = defaultdict(lambda: [0, 0, 0, 0])
+    faultdic2 = defaultdict(lambda: [])
+    batch_index = 0
+    while batch_size * batch_index < 9000:
+        sample_data = load_sample_random_table(0, batch_size, batch_index)
+        sample_dict_table_advanced(sample_data, sample_table_summary, missed_feature, faultdic2, prediction)
+        batch_index += 1
+
+    with open("decision_tree/sample_table_pred", 'w') as wfp:
+        json.dump(sample_table_summary, wfp)
+    with open('decision_tree/fault_table.json', 'w') as wfp:
+        json.dump(faultdic2, wfp)
+
+    with open("decision_tree/miss_features", 'w') as wfp:
+        for f in missed_feature:
+            wfp.write(f + "\n")
+    with open("decision_tree/fault_diction_table.json", 'w') as wfp:
+        json.dump(faultdic, wfp)

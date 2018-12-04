@@ -2,7 +2,7 @@ import json
 from collections import defaultdict
 
 import numpy as np
-
+import decision_tree
 from .decision_tree import diction_pred
 from .load import load_data, load_data_with_raw, load_data_100_sample_with_raw
 
@@ -95,6 +95,7 @@ def train():
     with open('decision_tree/diction_prediction_with0.json', 'w') as fp:
         json.dump(dic_prediction, fp)
         print('diciton prediction saved')
+    generate_dic_pred()
 
     dic_cut_pred = defaultdict(lambda: ['', 0.])
     for key1 in dic_cut.keys():
@@ -305,6 +306,7 @@ def filter_feature(dic):
         json.dump(diction,fp)
 
 def generate_dic_pred():
+    prediction=defaultdict([])
     with open('decision_tree/diction.json','r') as fp:
         dic = json.load(fp)
     for key in dic.keys():
@@ -315,7 +317,18 @@ def generate_dic_pred():
                 findmax[i][seckey_transformed[i]]+=dic[key][seckey]
         maxlabel = ['-1' for i in range(10)]
         maxcount = [0 for i in range(10)]
-        #To be implement
+        for i in range(10):
+            total=0
+            for label,count in findmax[i].items():
+                total+=count
+                if count>maxcount[i]:
+                    maxcount[i]=count
+                    maxlabel[i]=label
+            maxcount[i]=float(maxcount[i]/total)
+        prediction[key].append(','.join(maxlabel))
+        prediction[key].append(maxcount)
+    with open('decision_tree/diction_prediction_advanced.json','w') as fp:
+        json.dump(prediction,fp)
 
 
 if __name__ == '__main__':
