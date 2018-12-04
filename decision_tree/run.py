@@ -6,6 +6,14 @@ import numpy as np
 from .decision_tree import diction_pred
 from .load import load_data, load_data_with_raw, load_data_100_sample_with_raw
 
+def judge_qualified(key_transformed,col):
+    if col>10 or col<0:
+        print('wrong col {} for qualified!'.format(col))
+        exit(0)
+    qualified = True
+    for i in range(col):
+        qualified = qualified and key_transformed[i] != 0 and key_transformed[i] != -1
+    return qualified
 
 def measure_distribution_cut(diction, input, target):
     input_transformed = input.transpose()
