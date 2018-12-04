@@ -310,21 +310,25 @@ def generate_dic_pred():
     with open('decision_tree/diction.json','r') as fp:
         dic = json.load(fp)
     for key in dic.keys():
-        findmax=[defaultdict(int) for i in range(10)]
+        length=len([x for x in key.split(',') if x!='-1'])
+        findmax=[defaultdict(int) for i in range(length)]
         for seckey in dic[key].keys():
             seckey_transformed=[x for x in seckey.split(',')]
-            for i in range(10):
+            for i in range(length):
                 findmax[i][seckey_transformed[i]]+=dic[key][seckey]
         maxlabel = ['-1' for i in range(10)]
         maxcount = [0 for i in range(10)]
         for i in range(10):
-            total=0
-            for label,count in findmax[i].items():
-                total+=count
-                if count>maxcount[i]:
-                    maxcount[i]=count
-                    maxlabel[i]=label
-            maxcount[i]=float(maxcount[i]/total)
+            if i<length:
+                total=0
+                for label,count in findmax[i].items():
+                    total+=count
+                    if count>maxcount[i]:
+                        maxcount[i]=count
+                        maxlabel[i]=label
+                maxcount[i]=float(maxcount[i]/total)
+            else:
+                maxcount[i]=1.0
         prediction[key].append(','.join(maxlabel))
         prediction[key].append(maxcount)
     with open('decision_tree/diction_prediction_advanced.json','w') as fp:
