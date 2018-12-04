@@ -5,6 +5,7 @@ import numpy as np
 import decision_tree
 from .decision_tree import diction_pred
 from .load import load_data, load_data_with_raw, load_data_100_sample_with_raw
+from urllib.parse import urlparse
 
 def judge_qualified(key_transformed,col):
     if col>10 or col<0:
@@ -149,7 +150,8 @@ def rank_cl_pl_pairs():
     dic_cut_pred = json.load(open('decision_tree/dic_cut_pred.json', 'r'))
     dic_pred = json.load(open('decision_tree/diction_prediction_with0.json', 'r'))
 
-    cl_pl_count = defaultdict(int)
+    #cl_pl_count = defaultdict(int)
+    cl_pl_qualified = defaultdict(lambda: [])
 
     train_size = 100000
     batch_size = 50
@@ -157,18 +159,27 @@ def rank_cl_pl_pairs():
 
     while batch_size * batch_index < train_size:
         print(batch_index)
-        input, target = load_data(batch_size=batch_size, batch_index=batch_index)
+        raw, input, target = load_data_with_raw(batch_size=batch_size, batch_index=batch_index)
         batch_index += 1
 
         for j in range(len(input)):
 
             feature = input[j]
+
+            parsed_uri = urlparse(raw[j]["url"])
+            result = '{uri.scheme}://{uri.netloc}/'.format(uri=parsed_uri)
+
+            if not judge_qualified(feature,5):
+                continue
+
             if ','.join(str(x) for x in feature) not in dic_pred:
                 pred = diction_pred(dic_pred,dic_cut_pred,feature)
                 for i in range(10):
 
                     if target[j][i] != -1:
-                        cl_pl_count[(target[j][i], pred[i])] += 1
+                        #cl_pl_count[(target[j][i], pred[i])] += 1
+                        if result not in cl_pl_qualified[(target[j][i], pred[i])]:
+                            cl_pl_qualified[(target[j][i], pred[i])].append(result)
                     else:
                         break
 
@@ -177,24 +188,29 @@ def rank_cl_pl_pairs():
                 pred = [int(x) for x in pred.split(',')]
                 for i in range(10):
                     if target[j][i] != -1:
-                        cl_pl_count[(target[j][i], pred[i])] += 1
+                        #cl_pl_count[(target[j][i], pred[i])] += 1
+                        if result not in cl_pl_qualified[(target[j][i], pred[i])]:
+                            cl_pl_qualified[(target[j][i], pred[i])].append(result)
                     else:
                         break
 
     dic_new = {}
-    for key in cl_pl_count.keys():
-        dic_new[str(key)] = cl_pl_count[key]
+    # for key in cl_pl_count.keys():
+    #     dic_new[str(key)] = cl_pl_count[key]
 
-    with open('clpl_count.json', 'w') as wfp:
+    for key in cl_pl_qualified.keys():
+        dic_new[str(key)] = len(cl_pl_qualified[key])
+
+    with open('clpl_qualified_count.json', 'w') as wfp:
         json.dump(dic_new, wfp)
 
-    acc = 0
-    sum = 0
-    for key in cl_pl_count.keys():
-        sum += cl_pl_count[key]
-        if key[0] == key[1]:
-            acc += cl_pl_count[key]
-    print('label accuracy is {}'.format(float(acc / sum)))
+    # acc = 0
+    # sum = 0
+    # for key in cl_pl_count.keys():
+    #     sum += cl_pl_count[key]
+    #     if key[0] == key[1]:
+    #         acc += cl_pl_count[key]
+    # print('label accuracy is {}'.format(float(acc / sum)))
 
 
 def test():
@@ -306,7 +322,7 @@ def filter_feature(dic):
         json.dump(diction,fp)
 
 def generate_dic_pred():
-    prediction=defaultdict([])
+    prediction=defaultdict(lambda: [])
     with open('decision_tree/diction.json','r') as fp:
         dic = json.load(fp)
     for key in dic.keys():
@@ -337,8 +353,6 @@ def generate_dic_pred():
 
 if __name__ == '__main__':
     # train()
-    #rank_cl_pl_pairs()
+    rank_cl_pl_pairs()
     #draw_raw()
-    with open('decision_tree/diction_prediction_with0.json','r') as fp:
-        dic = json.load(fp)
-    filter_feature(dic)
+    #generate_dic_pred()
