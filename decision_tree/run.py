@@ -2,7 +2,7 @@ import json
 from collections import defaultdict
 
 import numpy as np
-import decision_tree
+from .decision_tree import diction_pred_advanced
 from .decision_tree import diction_pred
 from .load import load_data, load_data_with_raw, load_data_100_sample_with_raw
 from urllib.parse import urlparse
@@ -149,7 +149,7 @@ def rank_cl_pl_pairs():
     '''Rank (cc,pc) pairs with their count and save to diction. Also want raw data for incorrect predictions.'''
     dic_cut_pred = json.load(open('decision_tree/dic_cut_pred.json', 'r'))
     dic_pred = json.load(open('decision_tree/diction_prediction_with0.json', 'r'))
-
+    dic_pred_ad=json.load(open('decision_tree/diction_prediction_advanced.json', 'r'))
     #cl_pl_count = defaultdict(int)
     cl_pl_qualified = defaultdict(lambda: [])
 
@@ -173,7 +173,8 @@ def rank_cl_pl_pairs():
                 continue
 
             if ','.join(str(x) for x in feature) not in dic_pred:
-                pred = diction_pred(dic_pred,dic_cut_pred,feature)
+                #pred = diction_pred(dic_pred,dic_cut_pred,feature)
+                pred = diction_pred_advanced(dic_pred_ad,feature)
                 for i in range(10):
 
                     if target[j][i] != -1:
@@ -184,7 +185,8 @@ def rank_cl_pl_pairs():
                         break
 
             else:
-                pred = dic_pred[','.join(str(x) for x in feature)]
+                #pred = dic_pred[','.join(str(x) for x in feature)]
+                pred = dic_pred_ad[','.join(str(x) for x in feature)][0]
                 pred = [int(x) for x in pred.split(',')]
                 for i in range(10):
                     if target[j][i] != -1:
