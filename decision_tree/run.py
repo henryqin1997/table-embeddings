@@ -201,7 +201,7 @@ def rank_cl_pl_pairs():
     for key in cl_pl_qualified.keys():
         dic_new[str(key)] = len(cl_pl_qualified[key])
 
-    with open('clpl_qualified_count.json', 'w') as wfp:
+    with open('decision_tree/clpl_qualified_count.json', 'w') as wfp:
         json.dump(dic_new, wfp)
 
     # acc = 0
