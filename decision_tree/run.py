@@ -233,7 +233,7 @@ def calculate_label_accuracy():
 
 
 def draw_raw():
-    with open('decision_tree/clpl_count.json', 'r') as rfp:
+    with open('decision_tree/clpl_qualified_count.json', 'r') as rfp:
         cl_pl_count = json.load(rfp)
     maxlist = [['', 0] for i in range(5)]
     for key in cl_pl_count.keys():
@@ -246,68 +246,68 @@ def draw_raw():
                 maxlist[i][0] = key_transformed
     print(maxlist)
 
-    # raw_check = [x[0] for x in maxlist]
-    #
-    # dic_cut_pred = json.load(open('decision_tree/dic_cut_pred.json', 'r'))
-    # dic_pred = json.load(open('decision_tree/diction_prediction_with0.json', 'r'))
-    #
-    # train_size = 100000
-    # batch_size = 50
-    # batch_index = 0
-    #
-    # while batch_size * batch_index < train_size:
-    #     print(batch_index)
-    #     raw, input, target = load_data_with_raw(batch_size=batch_size, batch_index=batch_index)
-    #     batch_index += 1
-    #
-    #     for j in range(len(input)):
-    #
-    #         feature = input[j]
-    #         if ','.join(str(x) for x in feature) not in dic_pred:
-    #             pred = diction_pred(dic_pred,dic_cut_pred,feature)
-    #             for i in range(10):
-    #                 if target[j][i] != -1:
-    #                     new_key = str((target[j][i], pred[i]))
-    #                     if (target[j][i], pred[i]) in raw_check:
-    #                         with open('raw_to_deal_no_other/{}_{}.json'.format(new_key, cl_pl_count[
-    #                             new_key]), 'w') as wfp:
-    #                             json.dump(raw[j], wfp)
-    #
-    #                         with open('raw_to_deal_no_other/{}_{}.txt'.format(new_key,
-    #                                                                  cl_pl_count[new_key]), 'w') as wfp:
-    #                             wfp.write('feature')
-    #                             wfp.write(str(feature))
-    #                             wfp.write('prediction')
-    #                             wfp.write(str(pred))
-    #                             wfp.write('target')
-    #                             wfp.write(str(target[j]))
-    #                             cl_pl_count[str((target[j][i], pred[i]))] -= 1
-    #                             break
-    #                 else:
-    #                     break
-    #
-    #         else:
-    #             pred = dic_pred[','.join(str(x) for x in feature)]
-    #             pred = [int(x) for x in pred.split(',')]
-    #             for i in range(10):
-    #                 if target[j][i] != -1:
-    #                     new_key = str((target[j][i], pred[i]))
-    #                     if (target[j][i], pred[i]) in raw_check:
-    #                         with open('raw_to_deal_no_other/{}_{}.json'.format(new_key, cl_pl_count[
-    #                             new_key]), 'w') as wfp:
-    #                             json.dump(raw[j], wfp)
-    #                         with open('raw_to_deal_no_other/{}_{}.txt'.format(new_key,
-    #                                                                  cl_pl_count[new_key]), 'w') as wfp:
-    #                             wfp.write('feature')
-    #                             wfp.write(str(feature))
-    #                             wfp.write('prediction')
-    #                             wfp.write(str(pred))
-    #                             wfp.write('target')
-    #                             wfp.write(str(target[j]))
-    #                             cl_pl_count[str((target[j][i], pred[i]))] -= 1
-    #                             break
-    #                 else:
-    #                     break
+    raw_check = [x[0] for x in maxlist]
+
+    dic_cut_pred = json.load(open('decision_tree/dic_cut_pred.json', 'r'))
+    dic_pred = json.load(open('decision_tree/diction_prediction_with0.json', 'r'))
+
+    train_size = 100000
+    batch_size = 50
+    batch_index = 0
+
+    while batch_size * batch_index < train_size:
+        print(batch_index)
+        raw, input, target = load_data_with_raw(batch_size=batch_size, batch_index=batch_index)
+        batch_index += 1
+
+        for j in range(len(input)):
+
+            feature = input[j]
+            if ','.join(str(x) for x in feature) not in dic_pred:
+                pred = diction_pred(dic_pred,dic_cut_pred,feature)
+                for i in range(10):
+                    if target[j][i] != -1:
+                        new_key = str((target[j][i], pred[i]))
+                        if (target[j][i], pred[i]) in raw_check:
+                            with open('raw_to_deal_5_no_other/{}_{}.json'.format(new_key, cl_pl_count[
+                                new_key]), 'w') as wfp:
+                                json.dump(raw[j], wfp)
+
+                            with open('raw_to_deal_5_no_other/{}_{}.txt'.format(new_key,
+                                                                     cl_pl_count[new_key]), 'w') as wfp:
+                                wfp.write('feature')
+                                wfp.write(str(feature))
+                                wfp.write('prediction')
+                                wfp.write(str(pred))
+                                wfp.write('target')
+                                wfp.write(str(target[j]))
+                                cl_pl_count[str((target[j][i], pred[i]))] -= 1
+                                break
+                    else:
+                        break
+
+            else:
+                pred = dic_pred[','.join(str(x) for x in feature)]
+                pred = [int(x) for x in pred.split(',')]
+                for i in range(10):
+                    if target[j][i] != -1:
+                        new_key = str((target[j][i], pred[i]))
+                        if (target[j][i], pred[i]) in raw_check:
+                            with open('raw_to_deal_5_no_other/{}_{}.json'.format(new_key, cl_pl_count[
+                                new_key]), 'w') as wfp:
+                                json.dump(raw[j], wfp)
+                            with open('raw_to_deal_5_no_other/{}_{}.txt'.format(new_key,
+                                                                     cl_pl_count[new_key]), 'w') as wfp:
+                                wfp.write('feature')
+                                wfp.write(str(feature))
+                                wfp.write('prediction')
+                                wfp.write(str(pred))
+                                wfp.write('target')
+                                wfp.write(str(target[j]))
+                                cl_pl_count[str((target[j][i], pred[i]))] -= 1
+                                break
+                    else:
+                        break
 
 def filter_feature(dic):
     diction={}
@@ -353,6 +353,6 @@ def generate_dic_pred():
 
 if __name__ == '__main__':
     # train()
-    rank_cl_pl_pairs()
-    #draw_raw()
+    #rank_cl_pl_pairs()
+    draw_raw()
     #generate_dic_pred()
