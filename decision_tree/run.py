@@ -173,8 +173,8 @@ def rank_cl_pl_pairs():
                 continue
 
             if ','.join(str(x) for x in feature) not in dic_pred:
-                #pred = diction_pred(dic_pred,dic_cut_pred,feature)
-                pred = diction_pred_advanced(dic_pred_ad,feature)
+                pred = diction_pred(dic_pred,dic_cut_pred,feature)
+                #pred = diction_pred_advanced(dic_pred_ad,feature)
                 for i in range(10):
 
                     if target[j][i] != -1:
@@ -185,8 +185,8 @@ def rank_cl_pl_pairs():
                         break
 
             else:
-                #pred = dic_pred[','.join(str(x) for x in feature)]
-                pred = dic_pred_ad[','.join(str(x) for x in feature)][0]
+                pred = dic_pred[','.join(str(x) for x in feature)]
+                #pred = dic_pred_ad[','.join(str(x) for x in feature)][0]
                 pred = [int(x) for x in pred.split(',')]
                 for i in range(10):
                     if target[j][i] != -1:
