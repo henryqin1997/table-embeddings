@@ -354,6 +354,6 @@ def generate_dic_pred():
 
 if __name__ == '__main__':
     # train()
-    #rank_cl_pl_pairs()
-    draw_raw()
+    rank_cl_pl_pairs()
+    #draw_raw()
     #generate_dic_pred()
