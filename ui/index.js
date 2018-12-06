@@ -29,7 +29,6 @@ function extractEntities(data) {
         return result;
     } else {
         return relation.filter((item, idx) => idx !== data['headerRowIndex']);
-
     }
 }
 
@@ -44,7 +43,6 @@ $(document).ready(function () {
                 $('#table-header').append(`<th scope="col">${label}</th>`)
             });
             extractEntities(data).forEach(entity => {
-
                 $('#table-body').append(`<tr>${entity.map(item => `<td>${item}</td>`).join('')}</tr>`)
             });
         });
