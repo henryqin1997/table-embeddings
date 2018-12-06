@@ -12,8 +12,7 @@ def judge_qualified(key_transformed,col):
         print('wrong col {} for qualified!'.format(col))
         exit(0)
     qualified = True
-    for i in range(col):
-        qualified = qualified and key_transformed[i] != 0 and key_transformed[i] != -1
+    qualified = qualified and (len(np.array([x for x in key_transformed if x!=0 and x!=-1]))>=5)
     return qualified
 
 def measure_distribution_cut(diction, input, target):
@@ -203,7 +202,7 @@ def rank_cl_pl_pairs():
     for key in cl_pl_qualified.keys():
         dic_new[str(key)] = len(cl_pl_qualified[key])
 
-    with open('decision_tree/clpl_qualified_count.json', 'w') as wfp:
+    with open('decision_tree/clpl_qualified_version2_count.json', 'w') as wfp:
         json.dump(dic_new, wfp)
 
     # acc = 0
