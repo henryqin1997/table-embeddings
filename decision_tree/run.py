@@ -148,7 +148,7 @@ def rank_cl_pl_pairs():
     '''Rank (cc,pc) pairs with their count and save to diction. Also want raw data for incorrect predictions.'''
     dic_cut_pred = json.load(open('decision_tree/dic_cut_pred.json', 'r'))
     dic_pred = json.load(open('decision_tree/diction_prediction_with0.json', 'r'))
-    dic_pred_ad=json.load(open('decision_tree/diction_prediction_advanced.json', 'r'))
+    #dic_pred_ad=json.load(open('decision_tree/diction_prediction_advanced.json', 'r'))
     #cl_pl_count = defaultdict(int)
     cl_pl_qualified = defaultdict(lambda: [])
 
