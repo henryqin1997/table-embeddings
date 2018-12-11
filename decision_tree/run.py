@@ -236,7 +236,7 @@ def calculate_label_accuracy():
 def draw_raw():
     with open('decision_tree/clpl_qualified_version4_count.json', 'r') as rfp:
         cl_pl_count = json.load(rfp)
-    maxlist = [['', 0] for i in range(5)]
+    maxlist = [['', 0] for i in range(10)]
     for key in cl_pl_count.keys():
         key_transformed = eval(key)
         if key_transformed[0] != key_transformed[1] and key_transformed[0] !=3333 and key_transformed[1] !=3333:
