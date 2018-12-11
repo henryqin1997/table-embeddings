@@ -240,7 +240,7 @@ def draw_raw():
     for key in cl_pl_count.keys():
         key_transformed = eval(key)
         if key_transformed[0] != key_transformed[1] and key_transformed[0] !=3333 and key_transformed[1] !=3333:
-            max_counts = np.array([maxlist[j][1] for j in range(5)])
+            max_counts = np.array([maxlist[j][1] for j in range(10)])
             i = np.random.choice(np.flatnonzero(max_counts == max_counts.min()))
             if cl_pl_count[key] > maxlist[i][1]:
                 maxlist[i][1] = cl_pl_count[key]
