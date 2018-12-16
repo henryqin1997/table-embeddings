@@ -36,19 +36,19 @@ def get_attributes(html):
         return None
 
 
-def get_wiki_info(query, title):
+def get_wiki_info(title):
     try:
         page = wikipedia.page(title)
         html = page.html()
-        return {'query': query, 'title': page.title, 'pageid': page.pageid, 'summary': page.summary,
+        return {'title': page.title, 'pageid': page.pageid, 'summary': page.summary,
                 'summary_1s': wikipedia.summary(title, sentences=1), 'attributes': get_attributes(html)}
     except wikipedia.exceptions.DisambiguationError as e:
         if title.lower() == e.options[0].lower():
-            return get_wiki_info(query, e.options[1])
+            return get_wiki_info(e.options[1])
         else:
-            return get_wiki_info(query, e.options[0])
+            return get_wiki_info(e.options[0])
     except wikipedia.exceptions.PageError:
-        return {'query': query, 'title': None, 'pageid': None, 'summary': None, 'summary_1s': None, 'attributes': None}
+        return {'title': None, 'pageid': None, 'summary': None, 'summary_1s': None, 'attributes': None}
 
 
 if __name__ == '__main__':
@@ -64,9 +64,7 @@ if __name__ == '__main__':
                 items = table.get_attributes()[key_column_index]
                 for item in items:
                     print(item)
-                    wiki_info = get_wiki_info('{} {}'.format(item, label), '{} {}'.format(item, label))
-                    if not wiki_info['title']:
-                        wiki_info = get_wiki_info(item, item)
+                    wiki_info = {**{'query': item}, **get_wiki_info(item)}
                     print(wiki_info)
                     results.append(wiki_info)
                 json.dump(results, open(os.path.join('ir', 'wiki', '0', file), 'w+'), indent=4, ensure_ascii=False)
