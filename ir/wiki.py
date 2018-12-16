@@ -19,6 +19,8 @@ def get_attributes(html):
 
             if tr.get('class') == ['mergedtoprow']:
                 merged_top_row = children[0].get_text()
+            elif tr.get('class') != ['mergedrow'] and tr.get('class') != ['mergedbottomrow']:
+                merged_top_row = None
 
             if [child.name for child in children] == ['th', 'td']:
                 key = children[0].get_text()
