@@ -47,7 +47,7 @@ def get_wiki_info(title):
             return get_wiki_info(e.options[1])
         else:
             return get_wiki_info(e.options[0])
-    except wikipedia.exceptions.PageError:
+    except (wikipedia.exceptions.PageError, wikipedia.exceptions.WikipediaException):
         return {'title': None, 'pageid': None, 'summary': None, 'summary_1s': None, 'attributes': None}
 
 
