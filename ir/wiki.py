@@ -38,23 +38,23 @@ def get_attributes(html):
 
 def get_wiki_info(query, title):
     try:
-        page = wikipedia.page(title)
+        page = wikipedia.page(title=title, preload=True)
         html = page.html()
         return {'query': query, 'title': page.title, 'pageid': page.pageid, 'summary': page.summary,
-                'attributes': get_attributes(html)}
+                'summary_1s': wikipedia.summary(title, sentences=1), 'attributes': get_attributes(html)}
     except wikipedia.exceptions.DisambiguationError as e:
         if title.lower() == e.options[0].lower():
             return get_wiki_info(query, e.options[1])
         else:
             return get_wiki_info(query, e.options[0])
     except wikipedia.exceptions.PageError:
-        return {'query': query, 'title': None, 'pageid': None, 'summary': None, 'attributes': None}
+        return {'query': query, 'title': None, 'pageid': None, 'summary': None, 'summary_1s': None, 'attributes': None}
 
 
 if __name__ == '__main__':
     sample_dir = 'data/train_100_sample/0'
     for file in os.listdir(sample_dir):
-        if file.endswith('.json'):
+        if file.endswith('.json') and file == '1438042988061.16_20150728002308-00016-ip-10-236-191-2_856699017_3.json':
             data = json.load(open(os.path.join(sample_dir, file)))
             if data['keyColumnIndex'] > 0:
                 results = []
@@ -64,7 +64,9 @@ if __name__ == '__main__':
                 items = table.get_attributes()[key_column_index]
                 for item in items:
                     print(item)
-                    wiki_info = get_wiki_info(item, item)
+                    wiki_info = get_wiki_info('{} {}'.format(item, label), '{} {}'.format(item, label))
+                    if not wiki_info['title']:
+                        wiki_info = get_wiki_info(item, item)
                     print(wiki_info)
                     results.append(wiki_info)
                 json.dump(results, open(os.path.join('ir', 'wiki', '0', file), 'w+'), indent=4, ensure_ascii=False)
