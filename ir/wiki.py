@@ -38,7 +38,7 @@ def get_attributes(html):
 
 def get_wiki_info(query, title):
     try:
-        page = wikipedia.page(title=title, preload=True)
+        page = wikipedia.page(title=title)
         html = page.html()
         return {'query': query, 'title': page.title, 'pageid': page.pageid, 'summary': page.summary,
                 'summary_1s': wikipedia.summary(title, sentences=1), 'attributes': get_attributes(html)}
