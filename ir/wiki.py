@@ -9,7 +9,7 @@ from etl.table import Table
 
 
 def get_attributes(html):
-    attributes = defaultdict(dict)
+    attributes = {}
     soup = BeautifulSoup(html, 'html.parser')
     infobox = soup.find('table', {'class': 'infobox'})
     if infobox:
@@ -20,18 +20,16 @@ def get_attributes(html):
             children = list(tr.children)
 
             if tr.get('class') == ['mergedtoprow']:
-                if [child.name for child in children] == ['th']:
-                    merged_top_row = children[0].get_text()
-                else:
-                    merged_top_row = None
+                merged_top_row = children[0].get_text()
 
             if [child.name for child in children] == ['th', 'td']:
                 key = children[0].get_text()
-                value = children[1].get_text()
-                if tr.get('class') == ['mergedrow'] and merged_top_row:
-                    attributes[merged_top_row][key] = value
-                else:
-                    attributes[key] = value
+                if len(key.strip()):
+                    value = children[1].get_text()
+                    if key[0] == '•' and merged_top_row:
+                        attributes['{} {}'.format(merged_top_row, key)] = value
+                    else:
+                        attributes[key] = value
 
         return attributes
     else:
@@ -56,7 +54,7 @@ def get_wiki_info(query, title):
 if __name__ == '__main__':
     sample_dir = 'data/train_100_sample/0'
     for file in os.listdir(sample_dir):
-        if file.endswith('.json'):
+        if file.endswith('.json') and file == '1438042988061.16_20150728002308-00016-ip-10-236-191-2_856699017_3.json':
             data = json.load(open(os.path.join(sample_dir, file)))
             if data['keyColumnIndex'] > 0:
                 results = []
