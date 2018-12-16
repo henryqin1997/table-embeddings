@@ -3,8 +3,6 @@ import wikipedia.exceptions
 from bs4 import BeautifulSoup
 import os
 import json
-import unicodedata
-from collections import defaultdict
 from etl.table import Table
 
 
