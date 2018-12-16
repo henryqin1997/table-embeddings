@@ -26,7 +26,7 @@ def get_attributes(html):
                 key = children[0].get_text()
                 if len(key.strip()):
                     value = children[1].get_text()
-                    if key[0] == '•' and merged_top_row:
+                    if key.strip()[0] == '•' and merged_top_row:
                         attributes['{} {}'.format(merged_top_row, key)] = value
                     else:
                         attributes[key] = value
@@ -54,7 +54,7 @@ def get_wiki_info(title):
 if __name__ == '__main__':
     sample_dir = 'data/train_100_sample/0'
     for file in os.listdir(sample_dir):
-        if file.endswith('.json'):
+        if file.endswith('.json') and file == '1438042988458.74_20150728002308-00063-ip-10-236-191-2_890299080_3.json':
             data = json.load(open(os.path.join(sample_dir, file)))
             if data['keyColumnIndex'] > 0:
                 results = []
