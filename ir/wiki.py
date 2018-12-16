@@ -54,7 +54,7 @@ def get_wiki_info(query, title):
 if __name__ == '__main__':
     sample_dir = 'data/train_100_sample/0'
     for file in os.listdir(sample_dir):
-        if file.endswith('.json') and file == '1438042988061.16_20150728002308-00016-ip-10-236-191-2_856699017_3.json':
+        if file.endswith('.json'):
             data = json.load(open(os.path.join(sample_dir, file)))
             if data['keyColumnIndex'] > 0:
                 results = []
