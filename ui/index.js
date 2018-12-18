@@ -32,13 +32,14 @@ function extractEntities(data) {
     }
 }
 
-$(document).ready(function () {
-    const vars = getUrlVars();
-    if (vars.file) {
-        $.getJSON(`http://127.0.0.1:3000/${vars.file}`, (data) => {
+function readTable(file) {
+    if (file) {
+        $.getJSON(`http://127.0.0.1:3000/${file}`, data => {
             $('#page-title').html(data.pageTitle);
             $('#title').html(data.title);
             $('#url').html(`<a href="${data.url}" target="_blank">${data.url}</a>`);
+            $('#table-header').empty();
+            $('#table-body').empty();
             extractHeader(data).forEach(label => {
                 $('#table-header').append(`<th scope="col">${label}</th>`)
             });
@@ -47,4 +48,27 @@ $(document).ready(function () {
             });
         });
     }
+}
+
+function addLink(key) {
+    const index = key.indexOf(' ');
+    const url = key.slice(0, index);
+    return `<a href="${url}" target="_blank">${url}</a><br/>${key.slice(index)}`;
+}
+
+$(document).ready(function () {
+    $.getJSON('http://127.0.0.1:3000/data/domain_schema_files_dict.json', dict => {
+        $('#radio-container').append(Object.keys(dict).map(key => `    
+    <div class="radio">
+        <label><input type="radio" name="domain-schema" value="${key}">${addLink(key)}</label>
+    </div>`).join('\n'));
+
+        $('input[type=radio]').change(function () {
+            const file = dict[$(this).val()];
+            readTable(`data/domain_schema_files/${file}`);
+        });
+    });
+
+    const vars = getUrlVars();
+    readTable(vars.file);
 });
