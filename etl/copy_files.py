@@ -12,8 +12,9 @@ if __name__ == '__main__':
     if type(files) is dict:
         files = files.values()
 
-    if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
+    os.makedirs(output_dir, exist_ok=True)
 
     for file in files:
+        dir_name, _ = os.path.split(file)
+        os.makedirs(os.path.join(output_dir, dir_name), exist_ok=True)
         shutil.copyfile(os.path.join(input_dir, file), os.path.join(output_dir, file))
