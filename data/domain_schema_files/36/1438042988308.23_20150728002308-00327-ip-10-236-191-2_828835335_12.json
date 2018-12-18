@@ -1,0 +1,99 @@
+{
+    "relation": [
+        [
+            "Name",
+            "event",
+            "target",
+            "type",
+            "id",
+            "idlocation",
+            "delay",
+            "namelist",
+            "hints"
+        ],
+        [
+            "Required",
+            "false",
+            "false",
+            "false",
+            "false",
+            "false",
+            "false",
+            "false",
+            "false"
+        ],
+        [
+            "Attribute Constraints",
+            "This attribute is mandatory if \"type\" is 'scxml'.",
+            "",
+            "",
+            "This attribute may not occur with 'idlocation'.",
+            "This attribute may not occur with 'id'.",
+            "This attribute may not be used with \"target\" '_internal'.",
+            "This attribute may not be specified in conjunction with the or elements. This attribute is supported only in profiles that contain the Data Module or the Script Module.",
+            ""
+        ],
+        [
+            "Type",
+            "Value expression",
+            "Value expression",
+            "Value expression",
+            "NMTOKEN",
+            "Location expression",
+            "Value expression",
+            "List of location expressions",
+            "Value expression"
+        ],
+        [
+            "Default Value",
+            "none",
+            "the current session",
+            "'scxml'",
+            "none",
+            "none",
+            "'0s'",
+            "none",
+            "none"
+        ],
+        [
+            "Valid Values",
+            "",
+            "A valid target URL",
+            "Any value expression that evaluates to a string.",
+            "Any valid token",
+            "Any valid location expression",
+            "A value expression which returns a time designation as defined in CSS2 [CSS2] format",
+            "List of data model locations",
+            "A value expression."
+        ],
+        [
+            "Description",
+            "A value expression which returns a character string that indicates the type of message being generated. See 8.3 Legal Data Values and Value Expressions for details. The message type may include alphanumeric characters and the \".\" (dot) character. The first character may not be a dot or a digit. Message type names are case-insensitive. If neither the event attribute or in-line content is specified, an error.fetch event will be thrown. If used in conjunction with the inline content, an error.fetch will be thrown.",
+            "A value expression returning a unique identifier of the message target that the platform should send the event to. See 8.3 Legal Data Values and Value Expressions for details. If the special value '_internal' is specified, the event is added to the internal event queue of the current session. If no value is specified, the event is added to the external event queue of the current session.",
+            "A value expression which returns a character string that specifies the type of the message target. See 8.3 Legal Data Values and Value Expressions for details. Values defined by the specification are: scxml. See G SCXML Event I/O Processor for details. basichttp. See H Basic HTTP Event I/O Processor for details.",
+            "A string literal to be used as the identifier for this instance of . It is the author's responsibility to insure that it is unique.",
+            "Any location expression evaluating to a data model location. See 8.2 Location Expressions for details. The location's value will be set to an internally generated unique identifier of type NMTOKEN to be associated with the message being sent.",
+            "The character string returned is interpreted as a time interval. The send tag will return immediately, but the message is not dispatched until the delay interval elapses. In this case, all arguments to send are evaluated when the send element is first processed, and not when the message is actually dispatched. Timers are useful for a wide variety of programming tasks, and can be implemented using this attribute. Note: The queue for messages events is maintained locally. Any messages waiting to be sent will be purged when the session that issued this request terminates.",
+            "A space-separated list of zero or more data model locations to be included with the message. See 8.2 Location Expressions for details.",
+            "The data returned contains information which may be used by the implementing platform to optimize message transmission. The meaning of these hints is platform-specific."
+        ]
+    ],
+    "pageTitle": "State Chart XML (SCXML): State Machine Notation for Control Abstraction",
+    "title": "",
+    "url": "http://www.w3.org/TR/2009/WD-scxml-20090507/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 12,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988308.23/warc/CC-MAIN-20150728002308-00327-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 828907471,
+    "recordOffset": 828835335,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{3756=This document was produced by a group operating under the 5 February 2004 W3C Patent Policy. W3C maintains a public list of any patent disclosures made in connection with the deliverables of the group; that page also includes instructions for disclosing a patent. An individual who has actual knowledge of a patent which the individual believes contains Essential Claim(s) must disclose the information in accordance with section 6 of the W3C Patent Policy., 3061=This document is the fifth Public Working Draft of SCXML published on 7 May 2009 for review by W3C Members and other interested parties, and has been developed by the Voice Browser Working Group as part of the W3C Voice Browser Activity. The main differences from the previous draft are a revision of the <send> and <invoke> elements and the introduction of Event I/O processors to support them.}",
+    "lastModified": "Wed, 06 May 2009 14:27:24 GMT",
+    "textBeforeTable": "3.1.1 Attribute Details The top-level root state, which carries version information etc. 3.1 <scxml> The Core Module contains the elements that define the basic Harel state machine. The Core Module can be used by itself (see 9.1 The Minimal Profile), but it will not be able to communicate with external entities or maintain an internal data model. The schema for the core module can be found at D.2 Schema for Core Module. 3 Core Module SCXML is defined in terms of modules, which define logical units of functionality. Modules are customized and combined into profiles, each of which can be thought of as defining a variant of the language. This modularity allows implementations flexibility in selecting the features that they want to support. It is particularly intended to allow them the choice of which data manipulation language (e.g., ECMAScript, XPath) to embed. At this point, only support for the most limited profile (see 9.1 The Minimal Profile) is mandatory. Support for all other profiles is optional, though this may change in future versions of the specification. SCXML combines concepts from CCXML and Harel State Tables. CCXML [W3C CCXML 1.0] is an event-based state machine language designed to support call control features in Voice Applications (specifically including VoiceXML but not limited to it). The CCXML 1.0 specification defines both a state machine and event handing syntax and a standardized set of call control elements.",
+    "textAfterTable": "Required Attribute Constraints Type Default Value Valid Values Description id true ID none A valid id as defined in [XML Schema] The identifier for this state. It MUST be unique within the document. src false URI none Any URI URI of a file containing material to be inserted into this state. See 3.13 Referencing External Files for details. initial false IDREFS none The IDs of one or more state or parallel elements contained in this state. If the IDs of multiple states or parallel elements are specified, they must all be children of a common <parallel> ancestor. The id of the default initial state (or states) for this state. This attribute is shorthand for an <initial> child containing an unconditional transition. 3.2.2 Children <onentry> Optional element holding executable content to be run upon entering this <state>. Occurs 0 or 1 times. See 3.12 Executable Content <onexit> Optional element holding executable content to be run when exiting this <state>. Occurs 0 or 1 times. See 3.12 Executable Content <transition> Defines an outgoing transition from this state. Occurs 0 or more times. See 3.3 <transition> <initial> In states that have substates, an optional child which identifies the default initial state. Any transition which takes the parent state as its target will result in the statemachine also taking the transition contained inside the <initial> element. See 3.5 <initial> <state>",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

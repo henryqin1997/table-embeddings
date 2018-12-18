@@ -1,0 +1,71 @@
+{
+    "relation": [
+        [
+            "TV-System",
+            "B/G",
+            "B/G",
+            "L",
+            "I",
+            "D/K",
+            "M M-Korea",
+            "Satellite"
+        ],
+        [
+            "Sound Carrier",
+            "5.5/5.7421875",
+            "5.5/5.85",
+            "6.5/5.85",
+            "6.0/6.552",
+            "6.5/6.2578125 D/K1 6.5/6.7421875 D/K2 6.5/5.85 D/K/NICAM",
+            "4.5 4.5/4.724212",
+            "6.5 7.02/7.20"
+        ],
+        [
+            "Sound Modulation",
+            "FM-Stereo",
+            "FM-Mono/NICAM",
+            "AM-Mono/NICAM",
+            "FM-Mono/NICAM",
+            "FM-Stereo FM-Mono/NICAM",
+            "FM-Mono FM-Stereo",
+            "FM-Mono FM-Stereo"
+        ],
+        [
+            "Color System",
+            "PAL",
+            "PAL",
+            "SECAM-L",
+            "PAL",
+            "SECAM-East",
+            "NTSC",
+            "PAL"
+        ],
+        [
+            "Country",
+            "Germany",
+            "Scandinavia,Spain",
+            "France",
+            "UK",
+            "USSR Hungary",
+            "USA Korea",
+            "ASTRA"
+        ]
+    ],
+    "pageTitle": "Audio Decoders - LinuxTVWiki",
+    "title": "",
+    "url": "http://www.linuxtv.org/wiki/index.php?title=Audio_Decoders&oldid=15876",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990445.44/warc/CC-MAIN-20150728002310-00087-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 552202339,
+    "recordOffset": 552194137,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{3854=6.5/6.7421875 D/K2 6.5/5.85 D/K/NICAM}",
+    "textBeforeTable": "TV Sound Standards 4 Sound Output 3 Sound Routing 2 TV Sound Decoding 1 TV Sound Standards Contents search navigation, Jump to: diff) Newer revision \u2192 ( diff) | Latest revision ( \u2190 Older revision | diff) ( (Talk | contribs) Gmy Revision as of 16:20, 29 January 2006 by From LinuxTVWiki Audio Decoders",
+    "textAfterTable": "TV Sound Decoding The TV sound needs to be decoded in order to receive an Audio Frequency (Sound_AF) signal. Historically this feature has been built into the tuner tin can, but this was only feasible for single TV sound standards. No programming was needed to get sound from the tuner. As an alternative tuners always had an extra output Sound_IF (Intermediate Frequency), which can be used by sound decoder chips to extract stereo or implement support for multiple sound standards. For stereo sound (and later Digital sound standards like NICAM) an external chips (e.g. msp3415 or other) was introduced and needs to be properly supported by the linux driver. For BTSC stereo also some discrete module (e.g. NE41S) exists on various cards. The next step was the integration of the sound decoder into the PCI chip (e.g. cx25840 and others). Sound Routing Another common problem are the multiple sound sources (e.g. Line In, Tuner Sound_AF, Sound-Decoder_AF) which have to be connected to the PCI interface chip. As this chip only had one sound input, an external switch (crossbar) is required, this is commonly a HEF4052 mux (but sound decoders can have also a crossbar). Sound Output Historically most TV cards had a Line Out for the TV sound. This can be connected directly to speakers/headphones of to Line In of the sound card. Some cards had amplifiers in order to drive speakers or headphones directly.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 4,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,81 @@
+{
+    "relation": [
+        [
+            "Browser",
+            "Microsoft Internet Explorer",
+            "Microsoft Internet Explorer",
+            "Microsoft Internet Explorer",
+            "Mozilla Firefox",
+            "Netscape Navigator",
+            "Opera",
+            "Opera",
+            "Safari",
+            "Google's Chrome"
+        ],
+        [
+            "Version",
+            "8 Beta 2",
+            "7",
+            "6 (SP1)",
+            "2.0.0.6",
+            "9.0b3",
+            "9.23",
+            "9.50",
+            "3.0",
+            "Beta (initial public release)"
+        ],
+        [
+            "Prevents Reads",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "No",
+            "Yes",
+            "No",
+            "Yes"
+        ],
+        [
+            "Prevents Writes",
+            "Yes",
+            "Yes",
+            "No",
+            "Yes",
+            "Yes",
+            "No",
+            "No",
+            "No",
+            "No"
+        ],
+        [
+            "Prevents Read within XMLHTTPResponse*",
+            "Partially (set-cookie is protected, but not set-cookie2, see [4]",
+            "Partially (set-cookie is protected, but not set-cookie2, see [5]",
+            "No (Possible that ms08-069 fixed IE 6 too, please verify with http://ha.ckers.org/httponly.cgi and update this page!)",
+            "No (almost yes, see [6])",
+            "No",
+            "No",
+            "No",
+            "No (almost yes, see [7])",
+            "No (almost yes, see [8])"
+        ]
+    ],
+    "pageTitle": "HttpOnly - OWASP",
+    "title": "Table 1: Browsers Supporting HTTPOnly",
+    "url": "https://www.owasp.org/index.php?title=HttpOnly&oldid=51851",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.92/warc/CC-MAIN-20150728002310-00220-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 909858935,
+    "recordOffset": 909839819,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{5075=According to a daily blog article by Jordan Wiens, \u201cNo cookie for you!,\u201d HTTPOnly cookies were first implemented in 2002 by Microsoft Internet Explorer developers for Internet Explorer 6 SP1. Wiens, [1], 10605=PHP supports setting the HttpOnly flag since version 5.2.0 (November 2006).}",
+    "textBeforeTable": "Using WebGoat's HTTPOnly lesson, the following web browsers have been tested for HTTPOnly support. If the browsers enforces HTTPOnly, a client side script will be unable to read or write the session cookie. However, there is currently no prevention of reading or writing the session cookie via a XMLHTTPRequest. The results are listed below in table 1. Browsers Supporting HTTPOnly PHP manual on HttpOnly session_set_cookie_params ( .., .., .., .., bool $httponly) or in and during a script via the function:  session.cookie_httponly The flag is set either permanently in php.ini through the parameter:  PHP supports setting the HttpOnly flag since version 5.2.0 (November 2006).  Using PHP to set HttpOnly  Response.Cookies[cookie].Path += \";HTTPOnly\"; However, in .NET 1.1, you would have to do this manually, e.g., Response.AppendCookie(myCookie) myCookie.HttpOnly = True Dim myCookie As HttpCookie = new HttpCookie(\"myCookie\") VB.NET Code:  Response.AppendCookie(myCookie); myCookie.HttpOnly = true; HttpCookie myCookie = new HttpCookie(\"myCookie\"); C# Code:  Or programmatically <httpCookies httpOnlyCookies=\"true\" \u2026> Via web.config in the system.web/httpCookies element In .NET 2.0, HTTPOnly can also be set via the HttpCookie object for all custom application cookies Forms Authentication cookie Session ID By default, .NET 2.0 sets the HTTPOnly attribute for Using .NET to Set HTTPOnly Note: This works OK",
+    "textAfterTable": "* An attacker could still read the session cookie in a response to an XmlHttpRequest. Using WebGoat to Test for HTTPOnly Support The goal of this section is to provide a step-by-step example of testing your browser for HTTPOnly support. WARNING The OWASP WEBGOAT HTTPOnly lab is broken and does not show IE 8 Beta 2 with ms08-069 as complete in terms of HTTPOnly XMLHTTPRequest header leakage protection. This error is being tracked via http://code.google.com/p/webgoat/issues/detail?id=18. Getting Started Figure 1 - Accessing WebGoat's HTTPOnly Test Lesson Assuming you have installed and launched WebGoat, begin by navigating to the \u2018HTTPOnly Test\u2019 lesson located within the Cross-Site Scripting (XSS) category. After loading the \u2018HTTPOnly Test\u2019 lesson, as shown in figure 1, you are now able to begin testing web browsers supporting HTTPOnly. Lesson Goal If the HTTPOnly flag is set, then your browser should not allow a client-side script to access the session cookie. Unfortunately, since the attribute is relatively new, several browsers may neglect to handle the new attribute properly. The purpose of this lesson is to test whether your browser supports the HTTPOnly cookie flag. Note",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

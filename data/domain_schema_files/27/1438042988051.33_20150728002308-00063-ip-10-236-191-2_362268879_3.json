@@ -1,0 +1,91 @@
+{
+    "relation": [
+        [
+            "Primary Applications",
+            "High Performance Distribution, Core Layer and Data Center",
+            "High Performance Distribution, Core Layer and Data Center",
+            "Data Center and Server Farm",
+            "Data Center and Server Farm",
+            "Base Server Farm",
+            "Base Server Farm",
+            "Base Server Farm"
+        ],
+        [
+            "Product Number",
+            "WS-X6748-SFP",
+            "WS-X6724-SFP",
+            "WS-X6816-GBIC",
+            "WS-X6516A-GBIC",
+            "WS-X6516-GBIC*",
+            "WS-X6416-GBIC",
+            "WS-X6408A-GBIC"
+        ],
+        [
+            "Interface Module Class",
+            "CEF720",
+            "CEF720",
+            "dCEF256",
+            "CEF256",
+            "CEF256",
+            "Classic",
+            "Classic"
+        ],
+        [
+            "Ports/Optics Interface Type",
+            "48, SFP",
+            "24, SFP",
+            "16, GBIC",
+            "16, GBIC",
+            "16, GBIC",
+            "16, GBIC",
+            "8, GBIC"
+        ],
+        [
+            "Queues per Port (Tx = Transmit, Rx = Receive)*",
+            "\u2022 Tx-1p3q8T \u2022 Rx-1q8T (2q8T when using dCEF)",
+            "\u2022 Tx-1p3q8T \u2022 Rx-1q8T (2q8T when using dCEF)",
+            "\u2022 Tx-1p2q2t \u2022 Rx-1p1q4t",
+            "\u2022 Tx-1p2q2t \u2022 Rx-1p1q4t",
+            "\u2022 Tx-1p2q2t \u2022 Rx-1p1q4t",
+            "\u2022 Tx-1p2q2t \u2022 Rx-1p1q4t",
+            "\u2022 Tx-1p2q2t \u2022 Rx-1p1q4t"
+        ],
+        [
+            "Scheduler",
+            "Deficit Weighted Round Robin (DWRR)",
+            "DWRR",
+            "Weighted Round Robin (WRR)",
+            "WRR",
+            "WRR",
+            "WRR",
+            "WRR"
+        ],
+        [
+            "Buffer Size per Port",
+            "\u2022 Rx-166KB \u2022 Tx-1.17MB",
+            "\u2022 Rx-166KB \u2022 Tx-1.17MB",
+            "512 KB",
+            "1 MB",
+            "512 KB",
+            "512 KB",
+            "512 KB"
+        ]
+    ],
+    "pageTitle": "Cisco Catalyst 6500 Series Mixed Media Gigabit Ethernet Modules - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/products/collateral/switches/catalyst-6500-series-switches/product_data_sheet0900aecd801459a7.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988051.33/warc/CC-MAIN-20150728002308-00063-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 362289703,
+    "recordOffset": 362268879,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{156414=\u25cf\u00a0\u00a0 21CFR1040, 153166=\u25cf\u00a0\u00a0 UL 1950, 164381=\u25cf\u00a0\u00a0 RFC1213-MIB (MIB-II), 118114=1300, 146608=Cisco 1000BASE-CWDM GBIC 1470 nm, 15644=Note:\u00a0 \u00a0 For Gigabit Ethernet over Copper requirements please refer to the Catalyst 6500 series 10/100 and 10/100/1000 Ethernet interface module data sheet., 123815=1550, 145911=Cisco CWDM SFP 1470 nm; Gigabit Ethernet and 1G/2G FC, 147285=1000BASE-DWDM 1560.61 Nm GBIC (100 GHz ITU grid)}",
+    "textBeforeTable": "Table 1.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Cisco Catalyst 6500 Series Gigabit Interface Module Applications and Key Features Cisco Catalyst 6500 series mixed media/fiber-based gigabit Ethernet interface modules are used in distribution and core layers, data-center and Metro Ethernet applications. These gigabit Ethernet interface modules deliver wire-speed switched connectivity and support several switch fabric connections and traffic forwarding options, these include: Classic, CEF256, dCEF256 and CEF720. With a range of port densities and modular physical layer interfaces, these modules also offer a choice of packet buffer depths for traffic shaping, and QoS granularity with varying number of queues and drop threshold options. These key features are important aspects to in determining best module for a given network application (Table 1). Gigabit Ethernet Applications and Key Features \u25cf\u00a0\u00a0 Extensive management tools: Support CiscoWorks network management platform, Simple Network Management Protocol (SNMP) versions 1, 2, and 3 and four RMON groups (statistics, history, alarms, and events) \u25cf\u00a0\u00a0 Superior traffic management: Available with large per-interface buffers and multiple-priority queues for traffic prioritization and policing, allowing for tight service-level agreement (SLA) enforcement \u25cf\u00a0\u00a0 Maximum network uptime and resiliency:",
+    "textAfterTable": "\u00a0 * Queues Legend: 1p2q2t= 1 priority queue, 2 round robin queues, 2 thresholds \u00a0 Superior Traffic Management and Queuing Characteristics of Catalyst 6500 series Gigabit Ethernet Modules The Cisco Catalyst 6500 Series Gigabit Ethernet modules support multiple queues per port for Quality of Service. Each port supports Weighted Random Early Detection (WRED) for congestion avoidance within each queue, and Weighted Round Robin (WRR) for scheduling between queues and a strict priority queue for voice traffic. Additionally, multiple thresholds can be configured to manage differentiated levels of service. Ideal for handling mission-critical, bursty, or low latency traffic such as enterprise resource planning (ERP) or voice applications, these interface modules, including the CEF720-based WS-X6724-SFP, scale network performance and intelligent services. These modules also feature transmit and receive packet buffers and a strict priority transmit queue. Cisco EtherChannel Technology\u2014Increases Link Resiliency and Provides Scalable Bandwidth Aggregation The Catalyst 6500 can aggregate up to eight physical Fast Ethernet, Gigabit Ethernet or 10Gigabit Ethernet links into a single virtual link using Cisco\u2019s Port Aggregation Protocol (PAgP) or IEEE 802.3ad technology. This provides network managers a reliable high-speed solution for the campus network backbone. The Cisco Catalyst 6500 Series also supports multimodule channeling technology, providing even greater resiliency by creating channels across ports on separate modules in the same chassis. As a result, connectivity is maintained even if one module (and corresponding ports) fails. This",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

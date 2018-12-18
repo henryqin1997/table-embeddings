@@ -1,0 +1,93 @@
+{
+    "relation": [
+        [
+            "60 Pin1",
+            "J1-48 J1-47",
+            "J1-51 J1-52",
+            "J1-46",
+            "J1-11 J1-12",
+            "J1-9 J1-10",
+            "J1-28 J1-27",
+            "J1-1 J1-2",
+            "J1-26 J1-25",
+            "J1-15 Shield"
+        ],
+        [
+            "Signal",
+            "GND MODE_2",
+            "GND MODE_DCE",
+            "Shield_GND",
+            "TxD/RxD+ TxD/RxD-",
+            "RTS/CTS+ RTS/CTS-",
+            "RxD/TxD+ RxD/TxD-",
+            "CTS/RTS+ CTS/RTS-",
+            "RxC/TxCE+ RxC/TxCE-",
+            "Control_GND -"
+        ],
+        [
+            "Description",
+            "Shorting group",
+            "Shorting group",
+            "Single",
+            "Twisted pair no. 3",
+            "Twisted pair no. 2",
+            "Twisted pair no. 6",
+            "Twisted pair no. 1",
+            "Twisted pair no. 5",
+            "Twisted pair no. 4"
+        ],
+        [
+            "Direction",
+            "-",
+            "-",
+            "-",
+            "--> -->",
+            "--> -->",
+            "<-- <--",
+            "<-- <--",
+            "<-- <--",
+            "- -"
+        ],
+        [
+            "15 Pin",
+            "-",
+            "-",
+            "J2-1",
+            "J2-2 J2-9",
+            "J2-3 J2-10",
+            "J2-4 J2-11",
+            "J2-5 J2-12",
+            "J2-6 J2-13",
+            "J2-8 Shield"
+        ],
+        [
+            "Signal",
+            "-",
+            "-",
+            "Shield GND",
+            "Transmit+ Transmit-",
+            "Control+ Control-",
+            "Receive+ Receive-",
+            "Indication+ Indication-",
+            "Timing+ Timing-",
+            "Control GND -"
+        ]
+    ],
+    "pageTitle": "Cisco X.21 DTE - AllPinouts",
+    "title": "",
+    "url": "http://www.allpinouts.org/index.php/Cisco_X.21_DTE",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00186-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 288687895,
+    "recordOffset": 288679693,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 22 May 2013 16:05:36 GMT",
+    "textBeforeTable": "X.21 DTE Cable Pinout (DB-60 to DB-15) //]]> google_ad_client=\"pub-2627887748647914\";google_ad_width=336;google_ad_height=280;google_ad_format=\"336x280_as\";google_ad_channel=\"3832427164\";google_ad_type=\"text_image\";google_color_border=\"EFEFEF\";google_color_bg=\"FFFFFF\";google_color_link=\"0060BF\";google_color_url=\"0060BF\";google_color_text=\"000000\"; // <script type=\"text/javascript\"> <div style=\"float:right;margin:10px;&quot;\"> <script type=\"text/javascript\" src=\"http://pagead2.googlesyndication.com/pagead/show_ads.js\"></script> </script> // google_ad_client=\"pub-2627887748647914\";google_ad_width=728;google_ad_height=90;google_ad_format=\"728x90_as\";google_ad_channel=\"3832427164\";google_ad_type=\"text_image\";google_color_border=\"EFEFEF\";google_color_bg=\"FFFFFF\";google_color_link=\"0060BF\";google_color_url=\"0060BF\";google_color_text=\"000000\"; // <script type=\"text/javascript\"> <script type=\"text/javascript\" src=\"http://s7.addthis.com/js/250/addthis_widget.js#pubid=nicolaasuni\"></script> </div> <a class=\"addthis_button_tweet\"></a> <a class=\"addthis_button_facebook_like\"></a> <a class=\"addthis_button_google_plusone\"></a> <div class=\"addthis_toolbox addthis_default_style\"> <!-- start content --> </div> <a href=\"#searchInput\">search</a> <a href=\"#column-one\">navigation</a>, Jump to: <div id=\"jump-to-nav\" class=\"mw-jump\"> <div id=\"contentSub\"></div> </div> From AllPinouts <div id=\"siteSub\"> <div id=\"bodyContent\" class=\"mw-body\"> <h1 id=\"firstHeading\" class=\"firstHeading\"><span dir=\"auto\">Cisco X.21 DTE Cable Pinout - AllPinouts</span></h1> <a id=\"top\"></a> <br /> </noscript> </div> </form> <img alt=\"\" border=\"0\" src=\"https://www.paypal.com/it_IT/i/scr/pixel.gif\" width=\"1\" height=\"1\" /> <input type=\"image\" src=\"https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif\" style=\"border:none;\" name=\"submit\" alt=\"Donate to AllPinouts via PayPal\" /> a small amount of money to secure the future of this website. <input type=\"hidden\" name=\"bn\" value=\"PP-DonationsBF:btn_donate_SM.gif:NonHostedGuest\" /> It appears that you are using AdBlocking software. The cost of running this website is covered by advertisements. If you like it please feel free to <input type=\"hidden\" name=\"currency_code\" value=\"GBP\" /> <input type=\"hidden\" name=\"no_note\" value=\"0\" /> <input type=\"hidden\" name=\"item_name\" value=\"AllPinouts\" /> <input type=\"hidden\" name=\"lc\" value=\"US\" /> <input type=\"hidden\" name=\"business\" value=\"paypal@tecnick.com\" /> <input type=\"hidden\" name=\"cmd\" value=\"_donations\" /> <form action=\"https://www.paypal.com/cgi-bin/webscr\" method=\"post\"> <div style=\"font-family:helvetica,arial;font-size:small;padding:0 4px 0 4px;background-color:#FFFFCC;color:#003399;border:1px;border-style:solid;border-width:1px;border-color:orange;\"> <noscript> </script> // if(adblock) {document.write(' It appears that",
+    "textAfterTable": "Notes Arrows indicate signal direction: --> indicates DTE to DCE, and <-- indicates DCE to DTE. (1) Any pin not referenced is not connected. References Cisco Systems, Inc. Retrieved from \" http://www.allpinouts.org/index.php?title=Cisco_X.21_DTE&oldid=4105\" Category: Serial Cables Views Page Discussion View source History Personal tools Log in",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

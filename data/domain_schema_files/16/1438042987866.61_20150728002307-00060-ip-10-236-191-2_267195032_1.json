@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Speaker",
+            "L\u00e9on Brocard (\u200eacme\u200e)",
+            "Ruben Fonseca (\u200eroot\u200e)",
+            "Andrew Johnson",
+            "Leo Lapworth (\u200eRanguard\u200e)",
+            "Michael Zedeler (\u200emzedeler\u200e)"
+        ],
+        [
+            "Talk title",
+            "\u200eWorking in the cloud\u200e [ Talk ]",
+            "\u200eMakefile::Parallel - Dependency Specification Language\u200e",
+            "\u200eAsynchronous Distributed Job Processing with Helios\u200e [ Talk ]",
+            "\u200eEvolving Architecture - further\u200e [ Talk ]",
+            "\u200eStream oriented processing with DSlib\u200e"
+        ],
+        [
+            "Duration",
+            "30 minutes",
+            "30 minutes",
+            "30 minutes",
+            "30 minutes",
+            "30 minutes"
+        ],
+        [
+            "Language",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Date",
+            "14/08/08 12:50",
+            "14/08/08 14:10",
+            "14/08/08 13:30",
+            "14/08/08 11:20",
+            "14/08/08 15:10"
+        ]
+    ],
+    "pageTitle": "List of talks",
+    "title": "",
+    "url": "http://vienna.yapceurope.org/ye2008/talks",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987866.61/warc/CC-MAIN-20150728002307-00060-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 267212183,
+    "recordOffset": 267195032,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "<% if (count) { %><%=count%><% } %> <%=title%> onClick =\"toggle_talk(this,<%=talk_id%>,<%=set%>);\" /> } }); }); toggle_image(this, $(this).val(), $(this).prop(\"checked\")); $(\":checkbox\").each(function() { $(\".mytalks_submit\").remove(); $(function() { }; toggle_count(talk_id, !set); toggle_image(elem, talk_id, !set); $.post(act.make_uri('ye2008', 'updatemytalks_a'), {talk_id: talk_id} ); toggle_talk = function(elem, talk_id, set) { }; )); } count: (parseInt($(elemcount + \" > .starcount\").text()) || 0) + (set ? 1 : -1) { talk_id: talk_id, act.template(\"tpl_starcount\", $(elemcount).replaceWith( var elemcount = \"#starcount-\" + talk_id; toggle_count = function(talk_id, set) { $(elem).replaceWith( act.template(\"tpl_mtbutton\", data) ); $(\"#my-\"+talk_id+\"-text\").replaceWith( act.template(\"tpl_mtlabel\", data) ); }; }; set: set talk_id: talk_id, title: titles[set ? 0 : 1 ], var data = { img_name: set ? 'picked' : 'unpicked', toggle_image = function(elem, talk_id, set) { var titles = [ 'remove from personal schedule', 'add to personal schedule', ]; if (window.act) {",
+    "textAfterTable": "}; toggle_talk = function(elem, talk_id, set) { $.post(act.make_uri('ye2008', 'updatemytalks_a'), {talk_id: talk_id} ); toggle_image(elem, talk_id, !set); toggle_count(talk_id, !set); }; $(function() { $(\".mytalks_submit\").remove(); $(\":checkbox\").each(function() { toggle_image(this, $(this).val(), $(this).prop(\"checked\")); }); }); } Speaker Talk title Duration Language Date L\u00e9on Brocard (\u200eacme\u200e) \u200eWorking in the cloud\u200e [ Talk ] 30 minutes 14/08/08 12:50 Ruben Fonseca (\u200eroot\u200e) \u200eMakefile::Parallel - Dependency Specification Language\u200e 30 minutes 14/08/08 14:10 Andrew Johnson \u200eAsynchronous Distributed Job Processing with Helios\u200e [ Talk ] 30 minutes 14/08/08 13:30 Leo Lapworth (\u200eRanguard\u200e) \u200eEvolving Architecture - further\u200e [ Talk ] 30 minutes 14/08/08 11:20 Michael Zedeler (\u200emzedeler\u200e) \u200eStream oriented processing with DSlib\u200e 30 minutes 14/08/08 15:10 Community",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

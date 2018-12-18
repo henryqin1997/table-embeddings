@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "# cfdisk /dev/sda",
+            "Name",
+            "sda1",
+            "sda2",
+            "sda3",
+            "sda5",
+            "sda6",
+            "sda7",
+            "sda8",
+            "sda9"
+        ],
+        [
+            "",
+            "Flags",
+            "Boot",
+            "",
+            "Boot",
+            "Boot",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "",
+            "Part Type",
+            "Primary",
+            "Primary",
+            "Primary",
+            "Logical",
+            "Logical",
+            "Logical",
+            "Logical",
+            "Logical"
+        ],
+        [
+            "",
+            "FS Type",
+            "NTFS",
+            "Linux swap",
+            "Linux raid autodetect",
+            "Linux raid autodetect",
+            "Linux raid autodetect",
+            "Linux raid autodetect",
+            "Linux raid autodetect",
+            "Linux raid autodetect"
+        ],
+        [
+            "",
+            "Size (MB)",
+            "10001.95",
+            "1998.75",
+            "254.99",
+            "12000.69",
+            "501.75",
+            "13999.43",
+            "1497.01",
+            "79777.00"
+        ]
+    ],
+    "pageTitle": "Partitioning: A Different Perspective with Encryption and RAIDs | The Linux Critic",
+    "title": "",
+    "url": "https://linuxcritic.wordpress.com/2009/06/16/partitioning-a-different-perspective-with-encryption-and-raids/?like=1&_wpnonce=fb65bac995",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989018.40/warc/CC-MAIN-20150728002309-00078-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 886744687,
+    "recordOffset": 886714614,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "For starters, I have 1GB of physical RAM, and 4GB of swap space split over two drives. I have two 120GB drives that I use for my primary system that are split into 8 partitions (and a logical ninth). Most of these partitions mirror (RAID-1) each other so that if one drive fails, the other maintains the system until I can replace it. You may note that the swaps are not mirrored, but both swaps and the md08 array are encrypted. Like Trent, I intended a dual boot with Windows, so the first partition on sda is NTFS. (Of course, I haven\u2019t actually had a Windows OS on that partition in about two years, but it\u2019s nice to know I have it if I find a game that won\u2019t play nice in Wine.) Also note that /boot is a mirrored partition, which keeps the data safe, but upon bootup the boot loader (LILO/GRUB) accesses only one of the two drives (i.e., sda3, not md3). Everybody\u2019s got an opinion, and I\u2019m no different. After reading Trent\u2019s piece yesterday, I thought I\u2019d add my two cents as my partitioning scheme is quite complex (though I can think of several ways to make it worse). For newbies, some of this is unlikely something to try, but you might want to read anyway to get an idea of what can be done. Introduction Partitioning: A Different Perspective with Encryption and\u00a0RAIDs 3",
+    "textAfterTable": "# cfdisk /dev/sdb Name Flags Part Type FS Type Size (MB) sdb1 Boot Primary Linux ReiserFS 10001.95 sdb2 Primary Linux swap 1998.75 sdb3 Boot Primary Linux raid autodetect 254.99 sdb5 Boot Logical Linux raid autodetect 12000.69 sdb6 Logical Linux raid autodetect 501.75 sdb7 Logical Linux raid autodetect 13999.43 sdb8 Logical Linux raid autodetect 1497.01 sdb9 Logical Linux raid autodetect 79777.00 # df -h Filesystem Size Used Avail Use% Mounted on /dev/root 479M 111M 368M 24% / /dev/md3 244M 45M 199M 19% /mnt/md03_boot /dev/md5 12G 9.9G 1.3G 89% /mnt/md05_alt /dev/md7 14G 7.3G 5.8G 56% /mnt/md07_apps /dev/mapper/cryptvar 1.4G 1.1G 344M 76% /mnt/md08_var /dev/md9 75G 72G 2.7G 97% /mnt/md09_home # cat /proc/swaps Filename Type Size Used Priority /dev/mapper/cryptswapa partition 1951888 52340 -1 /dev/mapper/cryptswapb partition 1951888 0 -2 \u00a0 Some Explanations My computer uses its swap space greedily despite my setting swappiness at 20. I often have a lot of memory intensive apps and commands going at once, so I use a lot of swap space. I also expect an upgrade in the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

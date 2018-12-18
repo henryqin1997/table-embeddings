@@ -1,0 +1,88 @@
+{
+    "relation": [
+        [
+            "Parameter Name",
+            "Print copy or original",
+            "Date from",
+            "Date to",
+            "Receipt number from",
+            "Receipt number to",
+            "Document number from",
+            "Document number to",
+            "Customer name"
+        ],
+        [
+            "Description",
+            "In regards with the user selection original or copy receipt will be produces (original may be produces only once)",
+            "Earliest receipt date for which you would like to print the receipt",
+            "Latest receipt date for which you would like to print the receipt",
+            "The lowest receipt number for which you would like to print a receipt. If you want to print more than one receipt, select here the lowest receipt number you would like to print receipts for.",
+            "The highest receipt number for which you would like to print a receipt. If you want to print more than one receipt, select here the highest receipt number you would like to print receipts for.",
+            "The lowest receipt document number for which you would like to print a receipt. If you want to print more than one receipt, select here the lowest receipt document number you would like to print receipts for.",
+            "The highest receipt document number for which you would like to print a receipt. If you want to print more than one receipt, select here the highest receipt document number you would like to print receipts for.",
+            "The customer name for which you would like to print the receipt(s) for."
+        ],
+        [
+            "Displayed",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes"
+        ],
+        [
+            "Required",
+            "Yes",
+            "No",
+            "No",
+            "No",
+            "No",
+            "No",
+            "No",
+            ""
+        ],
+        [
+            "Default Value",
+            "None",
+            "None",
+            "None",
+            "None",
+            "None",
+            "None",
+            "None",
+            ""
+        ],
+        [
+            "LOV",
+            "Yes",
+            "No",
+            "No",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes"
+        ]
+    ],
+    "pageTitle": "Oracle Receivables Implementation Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18727_01/doc.121/e13510/T447343T508516.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00211-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 67548932,
+    "recordOffset": 67540730,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{31063=Copyright \u00a9 1988, 2010, Oracle and/or its affiliates. All rights reserved.}",
+    "lastModified": "Tue, 23 Jun 2015 15:15:50 GMT",
+    "textBeforeTable": "Parameters The Open Balances Revaluation extract shows the revalued balance sheet accounts that are denominated in a foreign currency and also shows revaluation details such as unrealized gain or loss by customer. Oracle Receivables Open Balances Revaluation Oracle Receivables Report Extracts Next Previous Contents Oracle Receivables Implementation Guide Release 12.1 Part Number E13510-04 Skip Headers Browser version script",
+    "textAfterTable": "< CUST_TRANS_ID>442257< /CUST_TRANS_ID > Customer transaction ID < TEST >10500< /TEST > Total Transaction/Receipt Amount < INVOICE_NUMBER >510547< /INVOICE_NUMBER > Invoice Number < INTERNAL_INV_NUMBER/ > Document sequence Value / Voucher number < TRANSACTION_TYPE >INV< /TRANSACTION_TYPE > Transaction Type < INVOICE_DATE >2006-01-05T00:00:00.000-08:00< /INVOICE_DATE > Invoice Date < INVOICE_AMT_ENTERED >10500< /INVOICE_AMT_ENTERED > Entered Amount < INVOICE_AMT_ACCOUNTED >13458.09< /INVOICE_AMT_ACCOUNTED > Accounted Amount < EXCHANGE_RATE >1.2< /EXCHANGE_RATE > Exchange Rate < INV_AMT_DUE >10500< /INV_AMT_DUE > Unsettled invoice amount in foreign currency < INV_AMT_DUE_ER >13458.09< /INV_AMT_DUE_ER > Unsettled invoice amount revaluated to SKK using historical invoice exchange rate < INV_AMT_DUE_REVAL >12600< /INV_AMT_DUE_REVAL > Unsettled invoice amount revaluated to SKK using revaluation exchange rate < G_DUE_ER > XML Tag Description < INV_AMT_DUE1 >10500 < /INV_AMT_DUE1 > Unsettled invoice amount in foreign currency < INV_AMT_DUE_ER1 >13458.09 < /INV_AMT_DUE_ER1 > Unsettled invoice amount revaluated to SKK using historical invoice exchange rate < INV_AMT_DUE_REVAL1 > 12600< /INV_AMT_DUE_REVAL1 > Unsettled invoice amount revaluated to SKK using",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

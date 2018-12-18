@@ -1,0 +1,75 @@
+{
+    "relation": [
+        [
+            "Action",
+            "Save a screen capture from within the Grab application, entering the text \"Test\" in the file name portion of the save dialog box.",
+            "Go to the Finder, click on the file name to edit it, and enter the text \"Hello\" as the new name.",
+            "Rename the file in the Finder again, this time entering the text \"Hello.txt\" as the new name.",
+            "Rename the file in the Finder, entering the text \"Hello\" as the new name.",
+            "Rename the file in the Finder, entering the text \"Hello.gif\" as the new name.",
+            "Use the \"Name & Extension\" section of the Finder's \"Show Info\" pallette (cmd-i) to remove the \".gif\" extension from the file name."
+        ],
+        [
+            "File Name (Displayed/Actual)",
+            "Test Test.tiff",
+            "Hello Hello.tiff",
+            "Hello.txt Hello.txt",
+            "Hello Hello.txt",
+            "Hello.gif Hello.gif",
+            "Hello Hello"
+        ],
+        [
+            "Type/Creator",
+            "(none)",
+            "(none)",
+            "(none)",
+            "(none)",
+            "(none)",
+            "(none)"
+        ],
+        [
+            "Opens In",
+            "Preview",
+            "Preview",
+            "TextEdit",
+            "TextEdit",
+            "Preview",
+            "Preview"
+        ],
+        [
+            "Icon",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Other",
+            "N/A",
+            "N/A",
+            "A warning dialog pops up. (Click the \"Use .txt\" button.) When double-clicked, TextEdit opens the file and displays garbage.",
+            "When double-clicked, TextEdit opens the file and displays garbage.",
+            "A warning dialog pops up. (Click the \"Use .gif\" button.) Double-clicking the file causes Preview to display an error dialog.",
+            "A warning dialog pops up. (Click the \"OK\" button.)"
+        ]
+    ],
+    "pageTitle": "Mac OS X 10.1 - Page 11 - (10/2001)",
+    "title": "",
+    "url": "http://archive.arstechnica.com/reviews/01q4/macosx-10.1/m-macosx-10.1-11.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989897.84/warc/CC-MAIN-20150728002309-00326-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 12737434,
+    "recordOffset": 12721488,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{30789=System Guide: September edition, 33923=A closer look at Intel's processor numbers and 2004 road map, 20572=The ability to choose file names that are meaningful to the user rather than the OS, and to have complete control over those file names (not just the illusion of control), has been a hallmark of the Mac user experience since 1984. It's also been one of its biggest advantages. If Mac users truly valued interoperability above the local user experience, they would not be using Macs in the first place., 34772=Deploying a small business Windows 2003 network}",
+    "textBeforeTable": "The table below provides a brief taste of Mac OS X 10.1's metadata policies in action. It shows a sequence of user actions, the resulting file name (both actual and displayed in the Finder), type and creator codes, icon, application binding, and any other warnings or interactions. Mac OS X 10.1 Metadata in Action.subsection Furthermore, traditional, distinctly stored file type and creator metadata (in the form of HFS/HFS+ type and creator codes) is optional under the new policy. Application developers \"may\" set this information \"if they wish.\" The only benefit Apple lists for this action is \"increased interoperability with Mac OS 9 applications.\" The file name extension hiding and file name editing policies are geared towards preventing the Mac OS X 10.1 user from knowing which extensions actually exist in a file name at any given time, and preventing users from removing or changing this information. The guiding principle is described by Apple as \"what you see is what you typed\", meaning that the exact file name entered by the user in a save dialog box or while editing a file name in the Finder should be what is shown in the GUI. (Again, consult the official guidelines for a more thorough explanation.) The reasoning behind this policy is simple. If every file created on Mac OS X has its file type information encoded in its file name, no additional action is required (on the",
+    "textAfterTable": "For those keeping score, that's: four different displayed file names five different actual file names three situations where the actual file name differed from the displayed file name four different icons (one of which gave no indication of which application would open the file) three different applications that launched and attempted to open the file when it was double-clicked four warning dialog boxes in the Finder one error dialog in Preview two instances of garbage displayed in TextEdit (At no time were any HFS/HFS+ type or creator codes set.) The user actions that caused all this consisted of a \"Save\" from within an application and a series of rename operations in the Finder. For comparison, a similar sequence of steps in classic Mac OS would result in: a single icon displayed in the Finder a single application launched when the file is double clicked a displayed file name that always matched the actual file name Again, this was all a result of a simple save and a series of rename operations in 10.1. Yes, there were many warning dialogs, but the point is that renaming a file should not be so fraught with danger, warnings or no warnings. Furthermore, the warning dialogs displayed in the Finder mentioned only that the rename operations may cause the document to \"open in a different application.\"",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

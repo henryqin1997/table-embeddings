@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "Package",
+            "firefox",
+            "mozilla",
+            "mozilla",
+            "mozilla-firefox",
+            "mozilla-thunderbird"
+        ],
+        [
+            "Type",
+            "source",
+            "source",
+            "source",
+            "source",
+            "source"
+        ],
+        [
+            "Release",
+            "(unstable)",
+            "(unstable)",
+            "sarge",
+            "sarge",
+            "sarge"
+        ],
+        [
+            "Fixed Version",
+            "1.5.dfsg+1.5.0.1-1",
+            "2:1.7.13-0.1",
+            "2:1.7.8-1sarge5",
+            "(not affected)",
+            "1.0.2-2.sarge1.0.8"
+        ],
+        [
+            "Urgency",
+            "high",
+            "high",
+            "high",
+            "",
+            "high"
+        ],
+        [
+            "Origin",
+            "",
+            "",
+            "DSA-1046-1",
+            "",
+            ""
+        ],
+        [
+            "Debian Bugs",
+            "351442",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "CVE-2006-0293",
+    "title": "",
+    "url": "https://security-tracker.debian.org/tracker/CVE-2006-0293",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988922.24/warc/CC-MAIN-20150728002308-00097-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 894173212,
+    "recordOffset": 894165010,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "CVE-2006-0293",
+    "textAfterTable": "Origin Debian Bugs firefox source (unstable) 1.5.dfsg+1.5.0.1-1 high 351442 mozilla source (unstable) 2:1.7.13-0.1 high mozilla source sarge 2:1.7.8-1sarge5 high DSA-1046-1 mozilla-firefox source sarge (not affected) mozilla-thunderbird source sarge 1.0.2-2.sarge1.0.8 high Notes [sarge] - mozilla-firefox <not-affected> (Only Firefox 1.5 is affected) Search for package or bug name: Reporting problems Home - Debian Security - Source (SVN)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

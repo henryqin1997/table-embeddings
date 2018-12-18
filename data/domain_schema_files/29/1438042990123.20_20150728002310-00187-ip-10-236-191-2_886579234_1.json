@@ -1,0 +1,85 @@
+{
+    "relation": [
+        [
+            "Backend",
+            "regex-posix",
+            "regex-parsec",
+            "regex-tre",
+            "regex-tdfa",
+            "regex-pcre"
+        ],
+        [
+            "Grouping?",
+            "Yes",
+            "Yes",
+            "No",
+            "Yes",
+            "Yes"
+        ],
+        [
+            "POSIX/Perl",
+            "POSIX",
+            "POSIX,Perl",
+            "POSIX",
+            "POSIX",
+            "Perl"
+        ],
+        [
+            "Speed",
+            "very slow",
+            "slow",
+            "fast",
+            "fast",
+            "fast"
+        ],
+        [
+            "Native Impl?",
+            "No",
+            "Yes",
+            "No",
+            "Yes",
+            "No"
+        ],
+        [
+            "Stable?",
+            "Yes",
+            "Yes",
+            "No",
+            "Yes",
+            "Yes"
+        ],
+        [
+            "Lazy Bytestrings?",
+            "No",
+            "Coming",
+            "No",
+            "Coming",
+            "No"
+        ],
+        [
+            "Comments",
+            "",
+            "",
+            "uses buggy libtre (v0.7.5)",
+            "still being optimized",
+            ""
+        ]
+    ],
+    "pageTitle": "Regular expressions - HaskellWiki",
+    "title": "Feature Matrix of Backends",
+    "url": "https://wiki.haskell.org/index.php?title=Regular_expressions&oldid=11595",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990123.20/warc/CC-MAIN-20150728002310-00187-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 886595178,
+    "recordOffset": 886579234,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{5229=The version of regex-base that comes with ghc 6.6 is version 0.71 The version of regex-base that is in unstable is 0.81 (as of Feb 25th 2007)., 12638=The above article is slightly incomplete advocacy. I will explain in the (apples|oranges) section below ChrisKuklewicz 15:56, 30 January 2007 (UTC)}",
+    "textBeforeTable": "Chris Kuklewicz has developed a regular expression library for Haskell that has been implemented with a variety of backends. Some of these backends are native Haskell implementations, others are not and rely on external C libraries such libpcre. New users may feel overwhelmed with the various options that are available to them. The following table provides an overview of the various features supported by each backend: 1 Overview 5 Bounded space Posix proposal 4 (apple|orange) 3 Original proposal content of this article 2.1 DARCS 2 Release of regex-tdfa 1.8 regex-parsec 1.7 regex-dfa 1.6 regex-tre 1.5 regex-pcre 1.4 regex-compat 1.3 regex-posix 1.2 regex-tdfa 1.1 regex-base 1 Overview Contents searchnavigation diffNewer revision \u2192diffLatest revision , Jump to: ) ( ) | (",
+    "textAfterTable": "Note: speed is something that should be benchmarked by the actual user, since the story changes so much with the task, new GHC, compiler flags, etc. The algorithm used may be a useful thing (backtracking vs NFA/DFA). 1.1 regex-base The version of regex-base that comes with ghc 6.6 is version 0.71 The version of regex-base that is in unstable is 0.81 (as of Feb 25th 2007). This package exports Text.Regex.Base which re-exports Text.Regex.RegexLike and Text.Regex.Context. These do not provide the ability to do matching, but provide the type classes which all the other regex-* backends use. The backend packages also import the utility module Text.Regex.Impl to streamline instance declarations. The 0.71 version has a \"tail\" bug in one of the instances of RegexLike: instance (RegexLike a b) => RegexContext a b (MatchResult b) where which I hope to be fixed in ghc 6.6.1. Getting the unstable version of regex-base also fixes this, though you will have to get and re-compile all the other regex-* modules as well. The versions of the regex-* backends that come with GHC 6.6 do not re-export the RegexLike classes, so the usage of regex-BACKEND is import Text.Regex.Base import Text.Regex.BACKEND The versions in unstable are being upgraded to re-export RegexLike, so",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

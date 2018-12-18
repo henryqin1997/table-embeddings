@@ -1,0 +1,99 @@
+{
+    "relation": [
+        [
+            "Client:",
+            "000",
+            "000",
+            "000",
+            "000",
+            "000",
+            "000",
+            "000",
+            "000"
+        ],
+        [
+            "User",
+            "MUELLER",
+            "MUSTER",
+            "SCHMIDT",
+            "MAIER",
+            "SCHMITT",
+            "GRAF",
+            "HANSEN",
+            "FISCHER"
+        ],
+        [
+            "Transaction",
+            "SE38",
+            "SESSION_MANA",
+            "SE01",
+            "SE11",
+            "SESSION_MANA",
+            "OS_APPLICATI",
+            "OS_APPLICATI",
+            "SE61"
+        ],
+        [
+            "Roll",
+            "458.752",
+            "262.144",
+            "458.752",
+            "1.048.576",
+            "262.144",
+            "851.968",
+            "851.968",
+            "458.752"
+        ],
+        [
+            "Page",
+            "57.344",
+            "0",
+            "81.920",
+            "172.032",
+            "0",
+            "147.456",
+            "139.264",
+            "65.536"
+        ],
+        [
+            "Mem(Total)",
+            "5.225.243",
+            "1.161.577",
+            "4.551.960",
+            "13.572.756",
+            "1.161.577",
+            "18.664.742",
+            "16.085.115",
+            "3.463.431"
+        ],
+        [
+            "Mem(Priv.)",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ]
+    ],
+    "pageTitle": "MY SAP BASIS | All about SAP Netweaver Technology",
+    "title": "",
+    "url": "https://mysapbasis.wordpress.com/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062723.96/warc/CC-MAIN-20150728002422-00201-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 879888075,
+    "recordOffset": 879852121,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{44184=Under Oracle 10g, you must also ensure that the obligatory bug fixes from Note 871096 (10.2.0.2) or 1137346 have been implemented., 28407=Determine and solve the cause for the UNUSABLE indexes and restructure the determined indexes in accordance with Note 332677., 11356=06 Thursday Mar 2014, 49978=Oracle usually stores times internally in 1/100 seconds (that is, in hundredths of seconds). In R/3 transactions such as ST04, on the other hand, times are generally specified in 1/1000 seconds. In more recent Oracle releases, more and more times are stated in 1/1,000,000 seconds (that is, microseconds)., 37241=Check whether there are tables that are greatly fragmented as described in Note 821687 (question 5). If over a period of time, the data quantity in a table is smaller than the allocated space, you should consider a reorganization., 44431=Some older Oracle patches still contain bugs that can cause performance problems. Therefore, check whether there is a newer version of the Oracle patch set than the one you are using (Note 362060 for 8.1.7, Note 539921 for 9.2)., 62476=12 Saturday Apr 2014, 24493=Note 521264 contains causes and analysis options in the event of Oracle hanging., 29319=If parallel query is activated, this can have a significant effect on cost calculation and database accesses. As described in Note 651060, check, therefore, whether there are segments where parallel processing was accidentally activated and deactivate it., 14940=See Note 842240., 40900=However, in certain circumstances, increased page-out on Windows may lead to problems (for example, due to the problems regarding Windows 2003 that are described in Note 1009297)., 48251=Make sure that the parameters rsdb/max_blocking_factor and rsdb/max_in_blocking_factor are set in accordance with the recommendations from Note 881083. (in accordance with the SAP standard recommendations if in any doubt)., 12274=Title: ABAP Performance Tuning Author: Hermann Gahm Publisher: Galileo Press ISBN: 978-3-8362-1211-3, 71833=20 Sunday Apr 2014, 3151=25 Saturday Jan 2014, 26379=If the displayed patch level is older than the patch set used, the catalog scipts have not run correctly (see Note 539921). You can use Note 582427 to correct this problem. If objects are INVALID, validate them as described in Note 648203. In certain cases, serious performance problems may occur when the catalog information is obsolete., 76030=14 Wednesday May 2014, 8682=03 Monday Feb 2014, 27445=Check whether there are segments in dictionary managed tablespaces that include more than 1000 extents. If so, see Note 787533 and construct the segments with fewer extents when you have the opportunity., 79867=06 Friday Jun 2014, 46654=Ensure that you only maintain customer-specific entries that are actually still necessary in the statistical exceptions table DBSTATC. See also Note 122718, which contains the SAP standard exceptions. Avoid entries with OPTIO values with P<number> or R<number>, since this may cause the program to create statistics that are not sufficiently accurate. The DBSTATC entries suggested as standard by SAP can be taken from the dbstatc.sql script (for Oracle 9i or lower) or dbstatc10.sql (Oracle 10g or higher) , which is attached to Note 403704 and can be executed to initialize the exceptions table., 46957=Use Note 132861 to check whether statistical runs are scheduled on a regular basis and whether their parameters are set correctly., 25859=To optimize accesses to DBA views such as DBA_SEGMENTS, refer to Note 871455., 49443=Using Note 124361 (for Oracle 9i and lower), Note 830576 (for Oracle 10g) or Note 1431798 (for Oracle 11g) and the notes to which they refer, check whether the parameters correspond to the recommendations, and correct any that do not. For R/3 3.x, see also Note 160063. For I/O configuration, see Note 793113. The following parameters are particularly relevant to performance: DB_FILE_MULTIBLOCK_READ_COUNT, OPTIMIZER_MODE, OPTIMIZER_INDEX_COST_ADJ, OPTIMIZER_INDEX_CACHING, HASH_JOIN_ENABLED, STAR_TRANSFORMATION_ENABLED, DISK_ASYNCH_IO, EVENT, FILESYSTEMIO_OPTIONS, _FIX_CONTROL, and other underscore parameters.}",
+    "TableContextTimeStampAfterTable": "{7601=For more information, see SAP Note 762696 \u201cGrey rating for EarlyWatch Alert\u201d., 5137=10 Friday Jan 2014, 1573=19 Sunday Jan 2014, 8324=04 Saturday Jan 2014}",
+    "textBeforeTable": "You can display the consumption of various\u00a0SAP Memory Types\u00a0by choosing ->\u00a0Goto\u00a0->\u00a0Memory\u00a0->\u00a0Select the user(s) that you want to display the usage for. If you do not select any, the memory overview displays the usage for all users. memory, SAP Help Tags \u2248 Leave a comment Posted by Adhi in sap performance, SAP Web AS ABAP 20 Sunday Apr 2014 Display Memory Consumption of\u00a0Users notes : lob reorg 3GB takes 12 minutes Table reorg using brtools -> table reorg (action lob2lob) SQL Command : select table_name, segment_name, securefile from dba_lobs where table_name=\u2019SWPCMPCONT'; The PI tables are: SXMSCLUP, SXMSCLUP2, SXMSCLUR, SXMSCLUR2, XI_AF_MSG (<7.1), BC_MSG (\u22657.1). See\u00a0SAP Note 1426979\u00a0Oracle database\u00a011g: Integration in SAP environment. Use the securefile conversion on\u00a0the following PI\u00a0tables that use LOB data. Resolution Based on SAP Notes\u00a01675589 \u2013 SAP XI/PI Performance",
+    "textAfterTable": "The following table explains the meaning of each column. Column Meaning Client: SAP client User User logged on to the server (SAP user name) Transaction Executed SAP transaction (transaction code) Roll The\u00a0roll area\u00a0holds the user environment information needed by work processes when executing dialog steps. Page SAP Paging\u00a0is only used for a limited number of ABAP commands. Mem(Total) Specifies how much of the\u00a0SAP extended memory\u00a0was requested by this user. Mem(Priv.) Private memory\u00a0(heap memory) requested by the user. More information: The order in which the various memory classes are assigned to the dialog work process is described underAllocating Memory for User Contexts. For further information on SAP memory management, please refer to the documentation on\u00a0BC \u2013 Memory Management. SAP Note 618868 \u2013 FAQ: Oracle\u00a0performance 12 Saturday Apr 2014",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,81 @@
+{
+    "relation": [
+        [
+            "CDID",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        [
+            "CDs.ArtistID",
+            "1",
+            "1",
+            "2",
+            "2",
+            "1",
+            "3",
+            "4"
+        ],
+        [
+            "Artists.ArtistID",
+            "1",
+            "1",
+            "2",
+            "2",
+            "1",
+            "3",
+            "4"
+        ],
+        [
+            "ArtistName",
+            "Peter Gabriel",
+            "Peter Gabriel",
+            "Bruce Hornsby",
+            "Bruce Hornsby",
+            "Peter Gabriel",
+            "Lyle Lovett",
+            "Beach Boys"
+        ],
+        [
+            "Title",
+            "So",
+            "Us",
+            "The Way It Is",
+            "Scenes from the Southside",
+            "Security",
+            "Joshua Judges Ruth",
+            "Pet Sounds"
+        ],
+        [
+            "Year",
+            "1984",
+            "1992",
+            "1986",
+            "1990",
+            "1990",
+            "1992",
+            "1966"
+        ]
+    ],
+    "pageTitle": "The Outer Limits of SQL JOINs - O'Reilly Media",
+    "title": "",
+    "url": "http://www.linuxdevcenter.com/pub/a/onlamp/2001/06/27/aboutSQL.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00252-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 555644879,
+    "recordOffset": 555632590,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{37906=\u00a9 2015, O\u2019Reilly Media, Inc., 35326=Designing Great Data Products March 2012 $0.00 USD, 34668=Data Jujitsu: The Art of Turning Data into Product November 2012 $0.00 USD}",
+    "textBeforeTable": "An outer join is used to include the rows that are \"missing\" in an inner join. Using our ongoing CD database as an example may make things clearer. So far, we've created joins that pull our artist data and CD data together to create a catalog of the CD collection. But let's say I've heard a new artist on the radio and immediately decide to put them in the database -- David Gray, for example. When we discussed the Cartesian product (the \"cross join\"), we saw the raw results of a JOIN operation. The INNER JOIN statement provided a useful filter to that raw result by picking out only rows where the key fields have the same value. The result of the INNER JOIN operation is one row for each key value that exists in both joined tables. But what about situations where there are rows in one table that do not have a corresponding match in the other table? An inner join ignores these rows. Every type of SQL join effectively multiplies the row in one table by the rows in the other table that is participating in the join (and which can be extended to include as many tables are participating in the JOIN operation). The SQL outer join To refresh everyone's memory, we've started talking about SQL JOIN statements over the past few columns -- one of the most fundamentally important areas of SQL",
+    "textAfterTable": "The Way It Is 1986 4 2 2 Bruce Hornsby Scenes from the Southside 1990 5 1 1 Peter Gabriel Security 1990 6 3 3 Lyle Lovett Joshua Judges Ruth 1992 7 4 4 Beach Boys Pet Sounds 1966 These results accurately describe my catalog. But what about David Gray and all the others I'm planning on adding to the catalog? They completely disappear from the result because there is no matching row where CDs.ArtistID=5. Big deal you may say, but what if the two tables were Customers and Orders instead? Or maybe Orders and Items? Your questions and comments about using outer joins. Post your comments Also in aboutSQL: SQL Data Types Working With Tables Data Definition Language In the first case, only customers with orders would show up in the report; in the second case, only items that had actually been ordered would show up. This sort of \"missing\" information could completely ruin some types of calculations! An \"outer join\" operation will fix this problem. Using the outer join Outer joins come in three distinct flavors: LEFT OUTER JOIN (*=) RIGHT OUTER JOIN (=*) FULL OUTER JOIN Knowing that",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 4,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,78 @@
+{
+    "relation": [
+        [
+            "Sun",
+            "",
+            "7",
+            "14",
+            "21",
+            "28"
+        ],
+        [
+            "Mon",
+            "1",
+            "8",
+            "15",
+            "22",
+            "29"
+        ],
+        [
+            "Tue",
+            "2",
+            "9",
+            "16",
+            "23",
+            "30"
+        ],
+        [
+            "Wed",
+            "3",
+            "10",
+            "17",
+            "24",
+            ""
+        ],
+        [
+            "Thu",
+            "4",
+            "11",
+            "18",
+            "25",
+            ""
+        ],
+        [
+            "Fri",
+            "5",
+            "12",
+            "19",
+            "26",
+            ""
+        ],
+        [
+            "Sat",
+            "6",
+            "13",
+            "20",
+            "27",
+            ""
+        ]
+    ],
+    "pageTitle": "Calendar | Worthington Libraries",
+    "title": "",
+    "url": "http://www.worthingtonlibraries.org/calendar/2013-04?location=30&event=All&age=All",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988051.33/warc/CC-MAIN-20150728002308-00256-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 839029359,
+    "recordOffset": 839017008,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{40243=\u00a9 2008-2015 Worthington Libraries | Find yourself here. Talk to a librarian: (614) 807-2626 | Library administration: (614) 807-2600}",
+    "lastModified": "Fri, 31 Jul 2015 05:02:02 GMT",
+    "textBeforeTable": "Online Off site Worthington Park Northwest Old Worthington All libraries }); $(\"#customized_feed_url\").html('Subscribe'); // update a div with the new link. var feed_url = 'webcal://www.worthingtonlibraries.org/interact/feeds/ical/library-calendar.ics?' + full_querystring; // Create the customized feed link. } full_querystring = default_querystring; // Make sure all locations are selected by default. if (full_querystring == '') { // Determine if no filters where applied by the user. var full_querystring = location_querystring + audience_querystring + eventtype_querystring; // Assemble the full default iCal querystring. }); eval(vocab_name + \"_querystring = querystring_values\"); // variable with the querystring data. // Dynamically update the appropriately-named }); } counter++; // Increment the counter. querystring_values += vocab_index + '[' + counter + ']=' + $(selected).val() + '&'; // Append the variable with querystring data. if ($(selected).val() != 'All') { // Ensure that this isn't the default option. $(\"#edit-\" + vocab_index + \" :selected\").each(function(i, selected) { // Loop through each checked checkbox in the current section. var querystring_values = ''; var counter = 0; // Reset values. $.each({'location':'location', 'age':'audience', 'event':'eventtype'}, function(vocab_index, vocab_name) { // Loop through each group of vocabulary-themed checkboxes. }); } counter++; // Increment the counter. default_querystring += 'location[' + counter + ']=' + $(this).val() + '&'; // Create a querystring that",
+    "textAfterTable": "All libraries Old Worthington Northwest Worthington Park Off site Online Calendar Today at the Library Activities & crafts Author visits Book discussions Book sales Games & movies Job help Lectures & workshops Library Board meetings Storytimes All library events Register online! Our locations Old Worthington Northwest Worthington Park Library to Go Lending Machine Use the Library Catalog Research",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

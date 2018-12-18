@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Page",
+            "21",
+            "86",
+            "86",
+            "87",
+            ""
+        ],
+        [
+            "Main Heading",
+            "2.6 Obtaining PC-BSD",
+            "4.5 Dual Booting",
+            "4.5 Dual Booting",
+            "4.5 Dual Booting",
+            ""
+        ],
+        [
+            "SubHeading",
+            "2.6.1 Selecting Which File to Download",
+            "4.5.3.1 Adding PC-BSD to Legacy GRUB",
+            "4.5.3.2 Adding PC-BSD to GRUB Version 2",
+            "4.5.3.2 Adding PC-BSD to GRUB Version 2",
+            "Unverified"
+        ],
+        [
+            "As Published",
+            "There are two versions available for each type of file: one for 32-bit (i386) systems and one for 64-bit (amd64) systems. It is important that you download a file that matches your computer's processor type (32- or 64-bit).",
+            "Root: The root of the partition containing PC-BSD. In the above example, PC-BSD is installed on the first hard disk (hd0) and on the first partition (,1). Start counting your hard disk from zero (e.g. disk 0 for the first hard disk, disk 1 for the second hard disk) and your partition from one (e.g. 1 for the first partition on that disk, 2 for the second partition, etc.)",
+            "If you installed PC-BSD on the first hard drive, in the 3rd primary partition, the entry would look something like this:}}",
+            "If you are trying to dual-boot with GRUB2 under Fedora 16, run grub2-mkconfig -o /boot/grub2/grub.cfg as the superuser.",
+            ""
+        ],
+        [
+            "Adjustment",
+            "There are two versions available for each type of file: one for 32-bit (i386) systems and one for 64-bit (amd64) systems. It is important that you download a file that matches your computer's processor type (32- or 64-bit). Each media type includes a file, pcbsd-media which identifies the release version.",
+            "Root: The root of the partition containing PC-BSD. In the above example, PC-BSD is installed on the first hard disk (hd0) and on the second partition (,1). Start counting your hard disk from zero (e.g. disk 0 for the first hard disk, disk 1 for the second hard disk) and your partition from zero (e.g. 0 for the first primary partition on that disk, 1 for the second primary partition, etc.)",
+            "If you installed PC-BSD on the first hard drive, in the 3rd primary partition, the entry in the file /etc/grub.d/40_custom would look something like this:",
+            "If you are trying to dual-boot with GRUB2 under Fedora 16 or Gentoo, run grub2-mkconfig -o /boot/grub2/grub.cfg as the superuser (Please note that if using Sabayon, you need to use grub-mkconfig instead of grub2-mkconfig).",
+            "content=To enable Chinese input, it may be necessary to create and/or edit the .xinitrc file in your home directory to add two lines: 1. export XMODIFIERS='@im=ibus' 2. GTK_IM_MODULE=ibus"
+        ]
+    ],
+    "pageTitle": "Errata - PC-BSD Wiki",
+    "title": "Table Is there no version? Release 9.0 [Tables 2]",
+    "url": "http://wiki.pcbsd.org/index.php?title=Errata/en&oldid=52665",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.53/warc/CC-MAIN-20150728002308-00121-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 261167138,
+    "recordOffset": 261151183,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Isotope Newest published version first: Although every effort is made to create accurate instructions, sometimes the need for adjustment comes after a version of the handbook has been published. It is hoped that those changes are few and occur seldom. Here is where errors, omissions, and other changes or improvements will be recorded, organized by title and version. It is possible that html or wiki versions of the handbook may not contain all of the items mentioned below. Explanation 2 FreeBSD Errata 1.2 Legacy:Hubble 1.1 Isotope 1 Explanation Contents ErrataProtection (edit): Edited by: FuzzyBot searchnavigation diffNewer revision \u2192diffLatest revision , Jump to: ) ( ) |",
+    "textAfterTable": "86 4.5 Dual Booting 4.5.3.2 Adding PC-BSD to GRUB Version 2 If you installed PC-BSD on the first hard drive, in the 3rd primary partition, the entry would look something like this:}} If you installed PC-BSD on the first hard drive, in the 3rd primary partition, the entry in the file /etc/grub.d/40_custom would look something like this: 87 4.5 Dual Booting 4.5.3.2 Adding PC-BSD to GRUB Version 2 If you are trying to dual-boot with GRUB2 under Fedora 16, run grub2-mkconfig -o /boot/grub2/grub.cfg as the superuser. If you are trying to dual-boot with GRUB2 under Fedora 16 or Gentoo, run grub2-mkconfig -o /boot/grub2/grub.cfg as the superuser (Please note that if using Sabayon, you need to use grub-mkconfig instead of grub2-mkconfig). Unverified content=To enable Chinese input, it may be necessary to create and/or edit the .xinitrc file in your home directory to add two lines: 1. export XMODIFIERS='@im=ibus' 2. GTK_IM_MODULE=ibus Legacy:Hubble Table \u00a0Is there no version?\u00a0Release 8.2 [Tables 3] Page Main\u00a0Heading SubHeading As\u00a0Published Adjustment 22 2 Pre-Installation Tasks 2.6.1.2 Nero The",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

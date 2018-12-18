@@ -1,0 +1,93 @@
+{
+    "relation": [
+        [
+            "User",
+            "Sample User",
+            "mbriza",
+            "kvolny",
+            "tpopela",
+            "secipolla"
+        ],
+        [
+            "Smolt Profile",
+            "HW",
+            "Acer 5820TG",
+            "Lenovo B570e",
+            "Lenovo T61",
+            "AthlonXP/NVIDIA GF6200 [1]"
+        ],
+        [
+            "kdepim",
+            "none",
+            "none",
+            "fail [1]",
+            "",
+            "none"
+        ],
+        [
+            "calligra",
+            "none",
+            "none",
+            "N/A",
+            "",
+            "none"
+        ],
+        [
+            "kde-telepathy",
+            "none",
+            "none",
+            "fail [2][3][4][5][6][7]",
+            "fail [1]",
+            "none"
+        ],
+        [
+            "apper",
+            "none",
+            "pass",
+            "pass",
+            "pass",
+            "none"
+        ],
+        [
+            "Sound",
+            "none",
+            "pass",
+            "fail [8]",
+            "pass",
+            "fail [2]"
+        ],
+        [
+            "System Settings",
+            "none",
+            "none",
+            "pass [9]",
+            "pass",
+            "none"
+        ],
+        [
+            "References",
+            "",
+            "",
+            "\u2191 there are dozens of bugs reported already \u2191 https://bugzilla.redhat.com/show_bug.cgi?id=811489 \u2191 https://bugzilla.redhat.com/show_bug.cgi?id=641526 \u2191 https://bugzilla.redhat.com/show_bug.cgi?id=811494 \u2191 https://bugzilla.redhat.com/show_bug.cgi?id=811498 \u2191 https://bugzilla.redhat.com/show_bug.cgi?id=811503 \u2191 https://bugzilla.redhat.com/show_bug.cgi?id=811506 \u2191 kmix doesn't show all input streams (bug not reported yet, not sure about reproducer\u00e4 \u2191 I haven't tested with printer, but rather enabled autologin which needs root too",
+            "\u2191 https://bugzilla.redhat.com/show_bug.cgi?id=811494",
+            "\u2191 USB port works but Smolt page doesn't update \u2191 Amarok fails to open an audio CD and after some time trying and closing it I received a notif. that couldn't find the sound card. Trying to launch alsamixer gives: \"ALSA lib pulse.c:243:(pulse_connect) PulseAudio: Unable to connect: Connection refused\". System sounds and pulse mixer (kmix) worked fine but something probably crashed after trying to make Amarok work (maybe ran out of mem)."
+        ]
+    ],
+    "pageTitle": "Test Day:2012-04-10 KDE 4.8 - FedoraProject",
+    "title": "",
+    "url": "https://fedoraproject.org/w/index.php?title=Test_Day:2012-04-10_KDE_4.8&diff=284189&oldid=283710",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 6,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044271733.81/warc/CC-MAIN-20150728004431-00314-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 873858503,
+    "recordOffset": 873837428,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{138815=Copyright \u00a9 2015 Red Hat, Inc. and others. All Rights Reserved. For comments or queries, please contact us.}",
+    "textBeforeTable": "You may download a non-destructive pre-Fedora 17 live image for your architecture. Tips on using a live image are available at FedoraLiveCD. Please check the SHA256SUM is correct before booting! Verification Live image Boot latest Fedora 17 into KDE 4.8 Plasma Workspaces. How to test? Graphics adapters, virtual machines, or driver configurations not capable of compositing Wi-fi/bluetooth enabled networking devices Additional displays (monitors, TVs...) for testing multihead setup Also helpful, if you have or can get them: Your hardware profile uploaded to Smolt according to these instructions Use image linked below, or an updated Fedora 17 pre-release, Rawhide (tips on installing Rawhide below), or a nightly live image Prerequisite for Test Day Quality Assurance - Martin Holec (Martix), V\u00edt\u011bzslav Humpa (vhumpa), Adam Williamson (adamw) Development - Luk\u00e1\u0161 Tinkl (ltinkl), Rex Dieter (rdieter), Jaroslav \u0158ezn\u00edk (jreznik), Kevin Kofler (Kevin_Kofler), Than Ngo (than) The following",
+    "textAfterTable": "vicodan VirtualBox VM warn [1] pass pass pass pass \u2191 Test pass, but unable to activate openGL or use Blur honza.s HP Compaq dc7600 Small Form Factor pass pass none pass none Marcus Acer Extensa 5635Z pass pass none pass pass pavel Gigabyte Q1585n",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

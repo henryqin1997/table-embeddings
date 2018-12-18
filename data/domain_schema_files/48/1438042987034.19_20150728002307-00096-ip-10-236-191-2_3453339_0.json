@@ -1,0 +1,82 @@
+{
+    "relation": [
+        [
+            "GroupId",
+            "org.apache.geronimo.specs",
+            "org.apache.geronimo.specs",
+            "org.fusesource.hawtbuf",
+            "org.slf4j",
+            "commons-net",
+            "javax.jmdns",
+            "org.apache.activemq"
+        ],
+        [
+            "ArtifactId",
+            "geronimo-j2ee-management_1.1_spec",
+            "geronimo-jms_1.1_spec",
+            "hawtbuf",
+            "slf4j-api",
+            "commons-net",
+            "jmdns",
+            "activemq-openwire-generator"
+        ],
+        [
+            "Version",
+            "1.0.1",
+            "1.1.1",
+            "1.9",
+            "1.6.6",
+            "3.2",
+            "3.4.1",
+            "5.8.0"
+        ],
+        [
+            "Type",
+            "jar",
+            "jar",
+            "jar",
+            "jar",
+            "jar",
+            "jar",
+            "jar"
+        ],
+        [
+            "License",
+            "The Apache Software License, Version 2.0",
+            "The Apache Software License, Version 2.0",
+            "The Apache Software License, Version 2.0",
+            "MIT License",
+            "The Apache Software License, Version 2.0",
+            "Apache License, Version 2.0",
+            "The Apache Software License, Version 2.0"
+        ],
+        [
+            "Optional",
+            "No",
+            "No",
+            "No",
+            "No",
+            "Yes",
+            "Yes",
+            "Yes"
+        ]
+    ],
+    "pageTitle": "ActiveMQ :: Client - Project Dependencies",
+    "title": "",
+    "url": "http://activemq.apache.org/maven/5.8.0/activemq-client/dependencies.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987034.19/warc/CC-MAIN-20150728002307-00096-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 3461303,
+    "recordOffset": 3453339,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{14370=Description: JmDNS is a Java implementation of multi-cast DNS and can be used for service registration and discovery in local area networks. JmDNS is fully compatible with Apple's Bonjour. The project was originally started in December 2002 by Arthur van Hoff at Strangeberry. In November 2003 the project was moved to SourceForge, and the name was changed from JRendezvous to JmDNS for legal reasons. Many thanks to Stuart Cheshire for help and moral support.}",
+    "lastModified": "Mon, 11 Feb 2013 14:53:02 GMT",
+    "textBeforeTable": "The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application: compile Project Dependencies Project Reports Distribution Management Project Plugins Plugin Management Continuous Integration Dependency Convergence Dependencies Dependency Management Mailing Lists Issue Tracking Source Repository Project Team Project License Project Summary About Project Information Project Documentation ActiveMQ Parent Project ActiveMQ :: Client Version: 5.8.0 Last Published: 2013-02-08 \u00a0| ActiveMQ :: Client",
+    "textAfterTable": "test The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application: GroupId ArtifactId Version Type License junit junit 4.11 jar Common Public License Version 1.0 org.slf4j slf4j-log4j12 1.6.6 jar MIT License Project Transitive Dependencies The following is a list of transitive dependencies for this project. Transitive dependencies are the dependencies of the project dependencies. compile The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application: GroupId ArtifactId Version Type License annogen annogen 0.1.0 jar - ant ant 1.6.2 jar - groovy gram 1.1 jar - groovy groovy-all 1.0-jsr-03 jar - runtime The following is a list of runtime dependencies for this project. These dependencies are required to run the application: GroupId ArtifactId Version Type License log4j log4j 1.2.17 jar The Apache Software License, Version 2.0 test The following is a list",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,84 @@
+{
+    "relation": [
+        [
+            "Test",
+            "ISAPI In-Process",
+            "ISAPI Out-of-Process",
+            "CGI",
+            "Static file (file8k.txt)",
+            "ASP In-Process",
+            "ASP Out-Of-Process"
+        ],
+        [
+            "Non-SSL1 CPU",
+            "517",
+            "224",
+            "46",
+            "1109",
+            "60",
+            "50"
+        ],
+        [
+            "Non-SSL2 CPUs",
+            "723",
+            "244",
+            "59",
+            "1748",
+            "107",
+            "82"
+        ],
+        [
+            "Non-SSL4 CPUs",
+            "953",
+            "283",
+            "75",
+            "2242",
+            "153",
+            "109"
+        ],
+        [
+            "SSL1 CPU",
+            "50",
+            "48",
+            "29",
+            "48",
+            "38",
+            "28"
+        ],
+        [
+            "SSL2 CPUs",
+            "79",
+            "76",
+            "33",
+            "80",
+            "59",
+            "43"
+        ],
+        [
+            "SSL4 CPUs",
+            "113",
+            "95",
+            "42",
+            "108",
+            "83",
+            "56"
+        ]
+    ],
+    "pageTitle": "Chapter 4 - Capacity Planning",
+    "title": "",
+    "url": "https://technet.microsoft.com/en-us/library/bb742409.aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00149-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 899508775,
+    "recordOffset": 899468513,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{83634=Windows 2000 Server clustering provides mirroring with rapid failover, and is an excellent way to ensure reliability on, for example, a Microsoft\u00ae SQL Server\" connected to either a single Web server or a group., 79542=Each client: one Intel Pro100+ 10/100MB network adapter Server: four Intel Pro100+ 10/100MB network adapters Four separate networks were created to distribute the workload evenly for the server, with four clients per network. Two Cisco Catalyst 2900 switches were used, each having two Virtual LANs (VLANs) programmed., 136624=Web Performance Tuning by Patrick Killelea; Linda Mui, Editor,1998, Sebastopol: O'Reilly & Associates., 80483=IIS scaling to multiple processors is improving, but when all processors in one computer must share the system bus and other resources, symmetric multiprocessor (SMP) scaling simply cannot map 1:1 with the number of processors. Multiple system buses can help with this issue; but for computers in which all processors share a single bus, a pair of two\u00adprocessor machines can provide more throughput than a single four-processor machine, and may have a similar price tag., 123144=Spikes are not the only pitfalls. The continued expansion of day-to-day operations and the ongoing change in orientation from static HTML to dynamically generated pages and increased interactivity led to unforeseen difficulties at microsoft.com. Toward the end of 1996, for example, problems began to emerge at http://home.microsoft.com as users found error messages appearing on their browsers. By May of 1997, the servers had begun to show signs of blocking, as thousands of delayed access requests backed up. Performance of the Internet Start page went downhill gradually for two or three weeks, then suddenly took a nosedive. The site's existing hardware and software technology was simply unable to keep pace with demand., 135397=The following Web sites and books provide additional information about IIS 5.0 and about other features of Windows 2000 Server., 77816=2242, 110840=In 1998, e-commerce was the most rapidly expanding sector of activity on the Web. There is no reason to think that this will change in the immediate future., 82186=Microsoft supports two clustering solutions. The first of these is Windows 2000 Server clustering; the second is Network Load Balancing. The next two sections describe them., 83912=The Network Load Balancing feature of Windows 2000 Advanced Server allows you to create server clusters containing up to 32 machines. Network Load Balancing is fully distributed, and is entirely software-based; it does not use a centralized dispatcher, and does not require any specialized hardware., 77734=1109, 75101=The scripts and executables were tested with Beta 3 Release of IIS 5.0 and Microsoft\u00ae Windows\u00ae 2000 Server, using WCAT and the Web Application Stress Tool. The tests were run for 60 seconds, with 10 seconds of warm-up time and 10 seconds of cool-down time., 88144=As discussed earlier, there are also page construction and Web application issues. Will your server or servers primarily send out static HTML pages? (Doing so involves memory for caching files.) Will the server run scripts in ASP pages (ASP service involves queue\u00adlength optimization issues as well as cache space), ISAPI, and CGI applications? (ASP, ISAPI, and CGI are all processor-intensive, and CGI applications are inefficient under Windows 2000 Server.) Do you need to run some of your pages out of process, for testing or other purposes? (This is also processor-intensive.) In addition, you must figure in the constraints of budget, facilities, and staffing., 136439=Capacity Planning for Web Performance: Metrics, Models, and Methods by Daniel A. Menasce and Virgilio A. F. Almeida, 1998, Upper Saddle River: Prentice Hall., 118524=The microsoft.com site started in 1994 as a single computer under a developer's desk. It sustained as many as a million hits a day. Today, the site is one of the largest on the Internet. It has far more server hardware and bandwidth than necessary for day-to-day use, but all available capacity is needed for the inevitable spikes that occur when thousands of users concurrently download, register, or participate in some type of online activity, such as with a major product release., 82426=With Windows 2000 Server clustering you can set up applications on two servers (nodes) in a cluster and provide a single, virtual image of the cluster to clients, as shown in Figure 4.3. If one node fails, the applications on the failed node become available on the other node. That is, the actual content and applications are shared so that both machines have full access to them. Failover times range from 20 seconds to 2 minutes., 124588=The first step was to examine the hardware, beginning with the servers-Internet connection bandwidth was not saturated, and therefore could not be the central issue. With the number of viewers increasing rapidly, the servers were adding viewer requests to the queue faster than they were delivering responses. More servers were added to handle the load, but this alone was not sufficient. The task force began probing the connections among servers, databases, and viewers to find and eliminate possible signal breakdowns or bottlenecks. They also initiated a process of streamlining the site's HTML and ASP code to make it as lean and efficient as possible. By mid-June some progress had been made, but it was clear that something else was wrong., 79984=Server: Windows 2000 Beta 3 Advanced Server (Build 2031), IIS 5.0 Clients: Windows 2000 Professional (Build 2000.3) Testing: Web Application Stress Tool (Build 236), 123974=Because the Internet Start page at http://home.microsoft.com is the default home page for the Internet Explorer browser, the hit rate at the site is continually increasing. At the time of this writing, each of the servers was handling between 2,000 and 4,000 viewers per second. In May of 1997, as access to http://home.microsoft.com became increasingly difficult, a task force was formed and given the charter to find a solution. The group met daily for six weeks, working to return the site to nominal performance., 83074=Figure 4.3 A Windows 2000 Server Cluster, 119879=115 percent increase in page views between July 1997 and July 1998., 132114=The amount of content a site delivers does not necessarily indicate user satisfaction. To monitor the user download experience, the microsoft.com team periodically tests the access, search, and download times for specific pages, using 28.8 Kbps modems stationed in various U.S. cities. The test that was performed in January of 1997, showed that users averaged 50 seconds per task. A more recent test of download times indicated a 20\u00adsecond improvement to 30 seconds per task, thanks in part to the new network design., 121431=The site's involvement in the Microsoft\u00ae Windows\u00ae 95 launch led to a surge of activity inside Microsoft, as product and marketing groups added content to it. During 1996, the number of hits per month on the site grew from 118 million to over 2 billion (it is now considerably higher). The product groups' increased focus on Web-based marketing has fed the ramp-up, as additional users access more content on the site., 121883=Beyond continuing growth and regular periods of peak usage, irregular spikes and special events place much larger burdens on many Web sites and servers. For Microsoft, many of these coincide with software product releases. The release of Microsoft\u00ae Internet Explorer 4.0 in October of 1997 is a good example: In one week, more than 2 million users downloaded an average of 18 MB each. Peak usage exceeded 6 terabytes per day., 83150=Clustering is available with Windows 2000 Advanced Server. To use the Windows 2000 clustering feature, you must have two servers that are connected by a high-speed private network. Each of the servers must have at least one shared Small Computer Systems Interface (SCSI) bus, with a storage device connected to both servers, and at least one storage device that is not shared. For the most reliability, each computer should have its own uninterruptible power supply., 77775=1748}",
+    "textBeforeTable": "Table 4.1 Traffic Generated by a Request for a 5-KB Page Table 4.1 shows the traffic generated by a typical request for a 5-KB page. Note that all the figures for overhead are estimates. The precise number of bytes sent varies with each request. Data travelling on a network is split into packets. Each packet includes, in addition to the data it carries, roughly 20 bytes of header information and other network protocol information (all this extra information constitutes \"overhead\"). The amount of data in a packet is not fixed, and thus the ratio of overhead to data can vary. Most incoming HTTP requests are small. A typical request (for example, GET http://www.microsoft.com/default.asp), including the Transmission Control Protocol/Internet Protocol (TCP/IP) overhead, consists of no more than a few hundred bytes as it travels across the network. For a 5-KB file like the one in this example, protocol overhead is significant, amounting to about 30 percent of the file's size. For larger files, the overhead accounts for a smaller percentage of network traffic. Overhead can become an important consideration when you are estimating your site's bandwidth requirements and deciding how fast a connection you'll need. If you are close to the limits of your connection's capacity, an extra 20 percent for overhead may mean that you will require the next fastest type of connection. To start with a simple example, imagine a server that displays static Hypertext Markup Language (HTML), text-only pages that average 5 kilobytes (KB)",
+    "textAfterTable": "(Up to) 136 pages DS3/T3 44.736 Mbps 760 pages OC1 51.844 Mbps 880 pages 100-Mb Ethernet 80 Mbps (best case) (Up to) 1,360 pages OC3 155.532 Mbps 2,650 pages OC12 622.128 Mbps 10,580 pages 1-Gbps Ethernet 800 Mbps (best case) (Up to) 13,600 pages If you add a small graphic to the 5-KB page, the results will be considerably different. An image, in the form of a .jpg file that appears on screen as, perhaps, a 1-by-2-inch rectangle (the actual physical size depends on monitor settings), takes up about as much disk space as the original text file. Adding one such image file to each page nearly doubles the average page size. This increased size reduces the number of page requests that the server can send to the Internet on a DS1/T1 line to a maximum of about 15 pages per second, regardless of how fast the computer itself runs. If there are several images on each page, if",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

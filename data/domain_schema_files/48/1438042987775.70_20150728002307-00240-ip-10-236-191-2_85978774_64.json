@@ -1,0 +1,71 @@
+{
+    "relation": [
+        [
+            "Name",
+            "format",
+            "quality",
+            "multiplier",
+            "left",
+            "top",
+            "width",
+            "height"
+        ],
+        [
+            "Type",
+            "String",
+            "Number",
+            "Number",
+            "Number",
+            "Number",
+            "Number",
+            "Number"
+        ],
+        [
+            "Argument",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Default",
+            "png",
+            "1",
+            "1",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Description",
+            "The format of the output image. Either \"jpeg\" or \"png\"",
+            "Quality level (0..1). Only used for jpeg.",
+            "Multiplier to scale by",
+            "Cropping left offset. Introduced in v1.2.14",
+            "Cropping top offset. Introduced in v1.2.14",
+            "Cropping width. Introduced in v1.2.14",
+            "Cropping height. Introduced in v1.2.14"
+        ]
+    ],
+    "pageTitle": "JSDoc: Class: Triangle",
+    "title": "",
+    "url": "http://fabricjs.com/docs/fabric.Triangle.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 64,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987775.70/warc/CC-MAIN-20150728002307-00240-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 86003311,
+    "recordOffset": 85978774,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 22 Jul 2015 14:21:35 GMT",
+    "textBeforeTable": "Parameters: Returns fabric.Triangle instance from an object representation <static> fromObject(object) \u2192 {Object} \u00a7 Methods fabric.js, line 10793 Source: 0 Default Value: fabric.Object#width Inherited From: Number Type: Object width width :Number \u00a7 fabric.js, line 11031 Source: true Default Value: fabric.Object#visible Inherited From: Boolean Type: When set to `false`, an object is not rendered on canvas visible :Boolean \u00a7 fabric.js, line 14251 Source: \"triangle\" Default Value: String Type: Type of an object type :String \u00a7",
+    "textAfterTable": "Context to render on noTransform Boolean <optional> When true, context is not transformed Inherited From: fabric.Object#_renderControls Source: fabric.js, line 11485 _restoreCompositeOperation(ctx) \u00a7 Restores previously saved canvas globalCompositeOperation after obeject rendering Parameters: Name Type Description ctx CanvasRenderingContext2D Rendering canvas context Inherited From: fabric.Object#_restoreCompositeOperation Source: fabric.js, line 11948 _setupCompositeOperation(ctx) \u00a7 Sets canvas globalCompositeOperation for specific object custom composition operation for the particular object can be specifed using globalCompositeOperation property Parameters: Name Type Description ctx CanvasRenderingContext2D Rendering canvas context Inherited From: fabric.Object#_setupCompositeOperation Source: fabric.js, line",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

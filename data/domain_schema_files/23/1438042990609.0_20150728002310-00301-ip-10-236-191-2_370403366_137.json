@@ -1,0 +1,71 @@
+{
+    "relation": [
+        [
+            "Symbol (where applicable)",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Decimal Value",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Media File Name",
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ],
+        [
+            "Media File Content",
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+        ],
+        [
+            "Data Play Back Types / When Media File Is Used",
+            "DOW",
+            "DOW",
+            "DOW",
+            "DOW",
+            "DOW",
+            "DOW",
+            "DOW"
+        ]
+    ],
+    "pageTitle": "Cisco Packaged Contact Center Enterprise Administration and Configuration Guide, Release 10.0(1) - Scripting with Packaged CCE [Cisco Packaged Contact Center Enterprise] - Cisco",
+    "title": "Table 10 System Media Files, Days",
+    "url": "http://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/pcce/pcce_10_0_1/maintenance/guide/PCCE_BK_A11FD59F_00_administration-guide/PCCE_BK_A11FD59F_00_administration-guide_chapter_01010.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 137,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00301-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 370541687,
+    "recordOffset": 370403366,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{286923=Returns the current system time or the time portion of a date-time value. The given time can be a floating point value, a string of the form hh:mm:ss, or two or three numeric values: hh, mm [, ss ]. (with no arguments) returns the current time. Tests whether the current time is after 2:00 PM., 285579=Returns the current date and time, with the date represented as an integer and the time represented as a fraction. Note: You can use the date or time functions without any arguments to return just the current date or time. This function is useful for comparing the current date and time to a specific point in time. To test whether the current date and time is later than 10 P.M., December 24, 2001, use the expression., 894707=Detailed scripting information for Outbound Option is available in the Cisco Packaged Contact Center Enterprise Features Guide at http:/\u200b/\u200bwww.cisco.com/\u200ben/\u200bUS/\u200bproducts/\u200bps12586/\u200btsd_\u200bproducts_\u200bsupport_\u200bseries_\u200bhome.html., 680110=November, 282166=Returns the current system date or the date portion of a given date-time value. The given date can be a floating point value (as returned by the now function), a string of the form mm/dd/yy, or three integers: yyyy, mm, dd. date (with no arguments) returns the current date. = date (2001, 7, 15) tests whether the current date is July 15, 2001., 511894=Code Page 1252 is ANSI standard. It contains ASCII (characters 0-127) and extended characters from 128 to 255, 679545=October, 673263=January, 301165=Returns a substring of string beginning with start character and continuing for length characters. Returns the value 01851., 673829=February, 677312=July, 678705=September, 673128=January, 285049=Returns the month (1-12) of the current month or a given date. The given date must be a floating-point value, as returned by the date or now function. Tests whether the current month is June., 675925=May, 513519=YYYY options: the range of 1800 through 9999., 680949=December, 841443=By default a pre-configured network VRU script called VXML_Server has already been configured in Packaged CCE. This should be used in all Run External Script nodes that intend to execute a Call Studio script. When using an optional feature like Courtesy Callback, you must configure additional GS network VRU scripts. See the Courtesy Callback section in the Cisco Packaged Contact Center Enterprise Features Guide at http:/\u200b/\u200bwww.cisco.com/\u200ben/\u200bUS/\u200bproducts/\u200bps12586/\u200btsd_\u200bproducts_\u200bsupport_\u200bseries_\u200bhome.html for further details., 848421=You can pass up to 1050 characters to the Call Studio scripts executing on VXML server by using an ECC Variable array., 481727=To use the Play Media (PM) micro-application to play the \"July.wav\" Media file, using the System (S) Media library., 678141=August, 678006=August, 674532=March, 675228=April, 676617=June, 680812=December, 429873=VXML Server encounters a bad fetch error (for example, media or grammar file not found), 675362=April, 481574=pm,July,S, 679409=October}",
+    "textBeforeTable": "In a Packaged CCE deployment, two tools are available for creating routing and administration scripts\u2014Script Editor and Internet Script Editor. You can use either or both of these two tools. They provide the same functionality, and that functionality is documented in this section. This table lists some considerations: Script Editor and Internet Script Editor Outbound Option Scripting Unified CVP Scripting Utility Nodes Scripting Specifics in a Packaged CCE Environment Use of Formulas Multichannel Routing Network VRUs Selection of Routing Targets Contact Categorization Call Types, Contact Data, and Scripting Common Tasks Script Editor and Internet Script Editor Scripting with Packaged CCE Outbound Option Scripting Deploy Call Studio Scripts Using the Operations Console Deploy Call Studio Scripts Using Call Studio Call Studio Scripts in Unified CVP Integrate Call Studio Scripts with Packaged CCE Scripts Integrate Call Studio Scripts with Unified CCE Scripts - Traditional Method Call Studio ReqICMLabel Element to Pass Data High-Level Configuration Instructions Scripting for Unified CVP with Call Studio Passing Data Back",
+    "textAfterTable": "Install Internet Script Editor Before You Begin The Internet Script Editor installer requires Windows 7 (Professional, Enterprise, Ultimate). You cannot install it directly on a VM. For example, for Packaged CCE, you cannot install it on the Data Server or on an HDS. Procedure Step\u00a01\u00a0\u00a0 Point your browser to server-name/install/iscripteditor.htm, where server-name is the name of the computer on which you installed the distributor with the Internet Script Editor client package. Step\u00a02\u00a0\u00a0 Enter your Domain and User Name, and Password, then click OK. Step\u00a03\u00a0\u00a0 Click Download Internet Script Editor. You can also open the iscripteditor.exe file directly from the web page. Step\u00a04\u00a0\u00a0 Navigate to the directory where you want to save iscripteditor.exe. Step\u00a05\u00a0\u00a0 Click Save to begin the download. Step\u00a06\u00a0\u00a0 When the download is complete, close the browser. Step\u00a07\u00a0\u00a0 On your desktop, navigate to iscripteditor.exe and execute the file. Step\u00a08\u00a0\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

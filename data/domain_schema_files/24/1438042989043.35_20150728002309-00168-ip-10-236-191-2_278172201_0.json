@@ -1,0 +1,109 @@
+{
+    "relation": [
+        [
+            "Appl No",
+            "N022187",
+            "N022187",
+            "N022187",
+            "N022187",
+            "N022187",
+            "N022187",
+            "N022187",
+            "N022187"
+        ],
+        [
+            "Prod No",
+            "002",
+            "002",
+            "002",
+            "002",
+            "002",
+            "002",
+            "002",
+            "002"
+        ],
+        [
+            "Patent No",
+            "6878717",
+            "6878717",
+            "6878717",
+            "7037917",
+            "7037917",
+            "7037917",
+            "7887845",
+            "8003789"
+        ],
+        [
+            "Patent Expiration",
+            "Nov 5, 2019",
+            "Nov 5, 2019",
+            "Nov 5, 2019",
+            "Dec 13, 2020",
+            "Dec 13, 2020",
+            "Dec 13, 2020",
+            "Mar 25, 2019",
+            "Nov 1, 2019"
+        ],
+        [
+            "Drug Substance Claim",
+            "",
+            "",
+            "",
+            "Y",
+            "Y",
+            "Y",
+            "",
+            "Y"
+        ],
+        [
+            "Drug Product Claim",
+            "",
+            "",
+            "",
+            "Y",
+            "Y",
+            "Y",
+            "Y",
+            "Y"
+        ],
+        [
+            "Patent Use Code",
+            "U - 1016",
+            "U - 256",
+            "U - 1237",
+            "U - 1016",
+            "U - 256",
+            "U - 1237",
+            "",
+            ""
+        ],
+        [
+            "Delist Requested",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Orange Book: Approved Drug Products with Therapeutic Equivalence Evaluations",
+    "title": "",
+    "url": "http://www.accessdata.fda.gov/scripts/cder/ob/docs/patexclnew.cfm?Appl_No=022187&Product_No=002&table1=OB_Rx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989043.35/warc/CC-MAIN-20150728002309-00168-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 278188118,
+    "recordOffset": 278172201,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{166=Patent and Exclusivity Search Results from query on Appl No 022187 Product 002 in the OB_Rx list.}",
+    "textBeforeTable": "Patent Data Patent and Exclusivity Search Results from query on Appl No 022187 Product 002 in the OB_Rx list. } OpenWin = this.open(page, \"CtrlWindow\", \"toolbar=no,menubar=no,location=no, scrollbars=yes,resizable=yes, width=700,height=400\"); function LaunchPopup(page,width,height) { }; } window.top.location.href=url; switchToLang: function(url) { }, return false; } document.body.appendChild(script); script.src=location.protocol+'//'+MP.Domains[MP.UrlLang]+'/'+MP.SrcLang+MP.UrlLang+'/?1023749634;'+encodeURIComponent(location.href); var script=document.createElement('SCRIPT'); } else if(lang==MP.SrcLang && MP.UrlLang!=MP.SrcLang){ document.body.appendChild(script); script.src=location.protocol+'//'+MP.Domains[lang]+'/'+MP.SrcLang+lang+'/?1023749632;'+encodeURIComponent(MP.SrcUrl); var script=document.createElement('SCRIPT'); if(lang!=MP.SrcLang){ switchLanguage: function(lang){ }, document.cookie=cookie; cookie+='; expires='+now.toUTCString(); now.setTime(now.getTime()+1000*60*60*24*365); var now=new Date(); if(domain)cookie+='; domain='+domain; if(path)cookie+='; path='+path; var cookie=name+'='+escape(value); setCookie: function(name,value,path,domain){ }, return unescape(document.cookie.substring(start,end)); while (document.cookie.charAt(start)==' '){ start++; } if(end < 0) end=document.cookie.length; var end=document.cookie.indexOf(';', start); start=start+name.length+1; if(start < 0) return null; var start=document.cookie.indexOf(name+'='); getCookie: function(name){ }, } MP.UrlLang=MP.SrcLang;",
+    "textAfterTable": "Exclusivity Data Appl No Prod No Exclusivity Code Exclusivity Expiration N022187 002 NPP Mar 26, 2015 Additional information: Patents are published upon receipt by the Orange Book Staff and may not reflect the official receipt date as described in 21 CFR 314.53(d)(5). Patents listed prior to August 18, 2003 are flagged with method of use claims only as applicable and submitted by the sponsor. These patents may not be flagged with respect to other claims which may apply. View a list of all patent use codes View a list of all exclusivity codes Return to Electronic Orange Book Home Page FDA/Center for Drug Evaluation and Research Office of Generic Drugs Division of Labeling and Program Support Update Frequency: Orange Book Data - Monthly Generic Drug Product Information & Patent Information - Daily Orange Book Data Updated Through June 2015 Patent and Generic Drug Product Data Last Updated July 31, 2015 - -",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

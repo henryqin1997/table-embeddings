@@ -1,0 +1,98 @@
+{
+    "relation": [
+        [
+            "Operation / Dialect",
+            "ALTER TABLE RENAME TABLE",
+            "ALTER TABLE RENAME COLUMN",
+            "ALTER TABLE ADD COLUMN",
+            "ALTER TABLE DROP COLUMN",
+            "ALTER TABLE ALTER COLUMN",
+            "ALTER TABLE ADD CONSTRAINT",
+            "ALTER TABLE DROP CONSTRAINT",
+            "RENAME INDEX"
+        ],
+        [
+            "sqlite",
+            "yes",
+            "yes (workaround) [5]",
+            "yes (workaround) [6]",
+            "yes (workaround) [5]",
+            "yes (workaround) [5]",
+            "partial (workaround) [5]",
+            "partial (workaround) [5]",
+            "no"
+        ],
+        [
+            "postgres",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes"
+        ],
+        [
+            "mysql",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "no"
+        ],
+        [
+            "oracle",
+            "yes",
+            "yes",
+            "yes",
+            "yes",
+            "yes (with limitations) [7]",
+            "yes",
+            "yes",
+            "yes"
+        ],
+        [
+            "firebird",
+            "no",
+            "yes",
+            "yes",
+            "yes",
+            "yes [8]",
+            "yes",
+            "yes",
+            "yes"
+        ],
+        [
+            "mssql",
+            "not supported",
+            "not supported",
+            "not supported",
+            "not supported",
+            "not supported",
+            "not supported",
+            "not supported",
+            "not supported"
+        ]
+    ],
+    "pageTitle": "migrate - SQLAlchemy Migrate (schema change management) \u2014 sqlalchemy-migrate documentation",
+    "title": "",
+    "url": "https://sqlalchemy-migrate.readthedocs.org/en/v0.7.1/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062723.96/warc/CC-MAIN-20150728002422-00157-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 887022621,
+    "recordOffset": 887014419,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 28 Oct 2011 16:17:47 GMT",
+    "textBeforeTable": "Dialect support\u00b6 Development Download Download and Development\u00b6 Version 0.6 breaks backward compatibility, please read changelog for more info. Warning Currently, sqlalchemy-migrate supports Python versions from 2.4 to 2.7. SQLAlchemy Migrate 0.7.0 supports SQLAlchemy 0.5.x, 0.6.x and 0.7.x branches. The project was taken over by a small group of volunteers when Evan had no free time for the project. It is now hosted as a Google Code project. During the hosting change the project was renamed to SQLAlchemy Migrate. Migrate was started as part of Google\u2019s Summer of Code by Evan Rosson, mentored by Jonathan LaCour. Inspired by Ruby on Rails\u2019 migrations, SQLAlchemy Migrate provides a way to deal with database schema changes in SQLAlchemy projects. Overview Version: MIT License: October 28, 2011 Generated: http://jenkins.gnuviech-server.de/job/sqlalchemy-migrate-all/ \u00a0 Continuous Integration: http://code.google.com/p/sqlalchemy-migrate/ Source Code: http://code.google.com/p/sqlalchemy-migrate/issues/list Issues: Domen Ko\u017ear <",
+    "textAfterTable": "[5] (1, 2, 3, 4, 5) Table is renamed to temporary table, new table is created followed by INSERT statements. [6] See http://www.sqlite.org/lang_altertable.html for more information. In cases not supported my sqlite, table is renamed to temporary table, new table is created followed by INSERT statements. [7] You can not change datatype or rename column if table has NOT NULL data, see http://blogs.x2line.com/al/archive/2005/08/30/1231.aspx for more information. [8] Changing nullable is not supported Tutorials\u00b6 List of useful tutorials: Using migrate with Elixir Developing with migrations User guide\u00b6 SQLAlchemy Migrate is split into two parts, database schema versioning (migrate.versioning) and database migration management (migrate.changeset). The versioning API is",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

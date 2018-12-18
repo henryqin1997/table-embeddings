@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Horse number",
+            "1",
+            "2",
+            "3",
+            "4",
+            ""
+        ],
+        [
+            "Offered odds",
+            "Even",
+            "3 to 1 against",
+            "4 to 1 against",
+            "9 to 1 against",
+            ""
+        ],
+        [
+            "Implied probability",
+            "",
+            "",
+            "",
+            "",
+            "Total: 1.05"
+        ],
+        [
+            "Bet Price",
+            "$100",
+            "$50",
+            "$40",
+            "$20",
+            "Total: $210"
+        ],
+        [
+            "Bookie Pays if Horse Wins",
+            "$100 stake + $100",
+            "$50 stake + $150",
+            "$40 stake + $160",
+            "$20 stake + $180",
+            "Always: $200"
+        ]
+    ],
+    "pageTitle": "Dutch book - Wikipedia, the free encyclopedia",
+    "title": "",
+    "url": "https://en.wikipedia.org/wiki/Dutch_book",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00320-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 863984251,
+    "recordOffset": 863965375,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sun, 26 Jul 2015 03:18:28 GMT",
+    "textBeforeTable": "In one example, a bookmaker has offered the following odds and attracted one bet on each horse, making the result irrelevant. The implied probabilities, i.e. probability of each horse winning, add up to a number greater than 1. Gambling[edit] 5 External links 4 References 3 See also 2 Economics 1 Gambling Contents In economics a Dutch book usually refers to a sequence of trades that would leave one party strictly worse off and another strictly better off. Typical assumptions in consumer choice theory rule out the possibility that anyone can be Dutch-booked. In gambling a Dutch book or lock is a set of odds and bets which guarantees a profit, regardless of the outcome of the gamble. It is associated with probabilities implied by the odds not being coherent. Dutch literature. This article is about gambling. For books in the Dutch language, see This article includes a list of references, related reading or external links, but its sources remain unclear because it lacks",
+    "textAfterTable": "Whichever horse wins in this example, the bookmaker will pay out $200 (including returning the winning stake) - but the punter has bet $210, hence making a loss of $10 on the race. However, if Horse 4 was withdrawn and the bookmaker does not adjust the other odds, the implied probabilities would add up to 0.95. In such a case, a gambler could always reap a profit of $10 by betting $100, $50 and $40 on the remaining three horses, respectively, and not having to stake $20 on the withdrawn horse, which now cannot win. Other forms of Dutch books can exist when incoherent odds are offered on exotic bets such as forecasting the order in which horses will finish. With competitive fixed-odds gambling being offered electronically, gamblers can sometimes create a Dutch book by selecting the best odds from different bookmakers, in effect undertaking an arbitrage operation. The bookmakers should react by adjusting the offered odds in the light of demand, so as to remove the potential profit. In Bayesian probability, Frank P. Ramsey and Bruno de Finetti required personal degrees of belief to be coherent so that a Dutch book could not be made against them, whichever way bets were made. Necessary and sufficient conditions for this are that their degrees of belief satisfy the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

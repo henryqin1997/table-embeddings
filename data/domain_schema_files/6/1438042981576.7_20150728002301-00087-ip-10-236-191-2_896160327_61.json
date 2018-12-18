@@ -1,0 +1,67 @@
+{
+    "relation": [
+        [
+            "",
+            "1.",
+            "2.",
+            "3.",
+            "4.",
+            "5.",
+            "6."
+        ],
+        [
+            "Event Name",
+            "keydown",
+            "keyup",
+            "keydown",
+            "beforeinput",
+            "input",
+            "keyup"
+        ],
+        [
+            "KeyboardEvent key",
+            "'Dead'",
+            "'Dead'",
+            "'e'",
+            "",
+            "",
+            "'e'"
+        ],
+        [
+            "InputEvent data",
+            "",
+            "",
+            "",
+            "'e'",
+            "",
+            ""
+        ],
+        [
+            "Notes",
+            "The default action is prevented, e.g., by invoking Event.preventDefault().",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "UI Events Specification (formerly DOM Level 3 Events)",
+    "title": "",
+    "url": "https://w3c.github.io/uievents/?rev=1.239",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 61,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00087-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 896254083,
+    "recordOffset": 896160327,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{455866=Thanks also to Jan K\u00e4rrman, author of html2ps, which was previously used to generate PostScript versions of the specification., 450327=Andrew Watson (Object Management Group), Andy Heninger (IBM), Angel Diaz (IBM), Anne van Kesteren (Opera Software), Arnaud Le Hors (W3C and IBM), Arun Ranganathan (AOL), Ashok Malhotra (IBM and Microsoft), Ben Chang (Oracle), Bill Shea (Merrill Lynch), Bill Smith (Sun), Bj\u00f6rn H\u00f6hrmann, Bob Sutor (IBM), Charles McCathie-Nevile (Opera Software, Co-Chair), Chris Lovett (Microsoft), Chris Wilson (Microsoft), Christophe Jolif (ILOG), David Brownell (Sun), David Ezell (Hewlett-Packard Company), David Singer (IBM), Dean Jackson (W3C, W3C Team Contact), Dimitris Dimitriadis (Improve AB and invited expert), Don Park (invited), Doug Schepers (Vectoreal), Elena Litani (IBM), Eric Vasilik (Microsoft), Gavin Nicol (INSO), Gorm Haug Eriksen (Opera Software), Ian Davis (Talis Information Limited), Ian Hickson (Google), Ian Jacobs (W3C), James Clark (invited), James Davidson (Sun), Jared Sorensen (Novell), Jeroen van Rotterdam (X-Hive Corporation), Joe Kesselman (IBM), Joe Lapp (webMethods), Joe Marini (Macromedia), John Robinson (AOL), Johnny Stenback (Netscape/AOL), Jon Ferraiolo (Adobe), Jonas Sicking (Mozilla Foundation), Jonathan Marsh (Microsoft), Jonathan Robie (Texcel Research and Software AG), Kim Adamson-Sharpe (SoftQuad Software Inc.), Lauren Wood (SoftQuad Software Inc., former Chair), Laurence Cable (Sun), Luca Mascaro (HTML Writers Guild), Maciej Stachowiak (Apple Computer), Marc Hadley (Sun Microsystems), Mark Davis (IBM), Mark Scardina (Oracle), Martin D\u00fcrst (W3C), Mary Brady (NIST), Michael Shenfield (Research In Motion), Mick Goulish (Software AG), Mike Champion (Arbortext and Software AG), Miles Sabin (Cromwell Media), Patti Lutsky (Arbortext), Paul Grosso (Arbortext), Peter Sharpe (SoftQuad Software Inc.), Phil Karlton (Netscape), Philippe Le H\u00e9garet (W3C, W3C Team Contact and former Chair), Ramesh Lekshmynarayanan (Merrill Lynch), Ray Whitmer (iMall, Excite@Home, and Netscape/AOL, Chair), Rezaur Rahman (Intel), Rich Rollman (Microsoft), Rick Gessner (Netscape), Rick Jelliffe (invited), Rob Relyea (Microsoft), Robin Berjon (Expway, Co-Chair), Scott Hayman (Research In Motion), Scott Isaacs (Microsoft), Sharon Adler (INSO), St\u00e9phane Sire (IntuiLab), Steve Byrne (JavaSoft), Tim Bray (invited), Tim Yu (Oracle), Tom Pixley (Netscape/AOL), T.V. Raman (Google). Vidur Apparao (Netscape) and Vinod Anupam (Lucent)., 452773=Former editors: Tom Pixley (Netscape Communications Corporation) until July 2002, Philippe Le H\u00e9garet (W3C) until November 2003, Bj\u00f6rn H\u00f6hrmann (Invited Expert) until January 2008, Doug Schepers (W3C) from March 2008 to May 2011, and Jacob Rossi (Microsoft) from March 2011 to October 2011., 446720=The DOM Level 3 Events document was originally developed between 2000 and 2003, and published as a W3C Note, pending further feedback and interest from implementers. In 2006, it was picked up for revision and progress on the Recommendation Track, and was then revised to reflect the current state of implementation and the needs of script authors., 349902=keyCode holds a system- and implementation-dependent numerical code signifying the unmodified identifier associated with the key pressed. Unlike the KeyboardEvent.key attribute, the set of possible values are not normatively defined in this specification. Typically, these value of the keyCode SHOULD represent the decimal codepoint in ASCII [RFC20][US-ASCII] or Windows 1252 [WIN1252], but MAY be drawn from a different appropriate character set. Implementations that are unable to identify a key use the key value '0'., 453961=Thanks to all those who have helped to improve this specification by sending suggestions and corrections (please, keep bugging us with your issues!), or writing informative books or Web sites: Al Gilman, Alex Russell, Alexander J. Vincent, Alexey Proskuryakov, Arkadiusz Michalski, Brad Pettit, Cameron McCormack, Curt Arnold, David Flanagan, Dylan Schiemann, Erik Arvidsson, Garrett Smith, Giuseppe Pascale, James Su, Jan Goyvaerts (regular-expressions.info), Jorge Chamorro, Kazuyuki Ashimura, Ken Rehor, Magnus Kristiansen, Martijn Wargers, Martin D\u00fcrst, Michael B. Allen, Mike Taylor, Misha Wolf, Ojan Vafai, Oliver Hunt, Paul Irish, Peter-Paul Koch, Richard Ishida, Sean Hogan, Sergey Ilinsky, Sigurd Lerstad, Steven Pemberton, Tony Chang, William Edney and \u00d8istein E. Andersen.}",
+    "lastModified": "Fri, 12 Jun 2015 23:02:55 GMT",
+    "textBeforeTable": "Activation triggers and behavior can be defined in part by the events which are dispatched in a set order relative to one another. The following is the typical sequence of events for an element activated by a pointing device (with only pertinent events listed): Activation event order Note: The activation of an event target is device dependent, but is also application dependent, e.g., a link in a document can be activated using a mouse click or a mouse double click. Implementations MUST dispatch the synthesized click event as described above even if they do not normally dispatch such an event (e.g., when activation is requested by a voice command, since this specification does not address event types for voice input). When a user activates a hyperlink using a keyboard, such as by focusing the hyperlink element and pressing the 'Enter' or '\u00a0' key, a click event would be dispatched as the default action of the respective keydown event. If the instance of the activation trigger is not an event of event type click (that is, when it does not result from a user's activation of a button or link using a mouse or equivalent pointing device), the implementation MUST synthesize and dispatch an event of event type click as one of the default",
+    "textAfterTable": "Note: The exception EventException introduced in DOM Level 2 is removed in this specification as part of this specification's normative support of Web IDL. EventException formerly defined an exception code UNSPECIFIED_EVENT_TYPE_ERR which is replaced in this specification by the use of a DOMException of type InvalidStateError. The following DOMException types are used in this specification. Type Description InvalidStateError Thrown when the Event.type was not specified by initializing the event before dispatchEvent was called. Also thrown when the Event object provided to dispatchEvent is already being dispatched. NotSupportedError Thrown when DocumentEvent.createEvent() is passed an Event interface that the implementation does not support. Constructing Mouse and Keyboard Events Generally, when a constructor of an Event interface, or of an interface inherited from the Event interface, is invoked, the steps described in DOM4 [DOM4] should be followed. However the KeyboardEvent and MouseEvent interfaces provide additional dictionary members for initializing the internal state of the Event object's key modifiers: specifically, the internal state queried for using the KeyboardEvent.getModifierState() and MouseEvent.getModifierState() methods. This section supplements the DOM4 steps for intializing a new Event object with these optional modifier states. For the purposes of constructing a KeyboardEvent, MouseEvent, or object derived",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

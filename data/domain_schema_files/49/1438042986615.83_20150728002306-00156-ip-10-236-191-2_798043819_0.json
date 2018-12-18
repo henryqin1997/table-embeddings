@@ -1,0 +1,77 @@
+{
+    "relation": [
+        [
+            "CustomerID",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        [
+            "CustomerName",
+            "Alfreds Futterkiste",
+            "Ana Trujillo Emparedados y helados",
+            "Antonio Moreno Taquer\u00eda",
+            "Around the Horn",
+            "Berglunds snabbk\u00f6p"
+        ],
+        [
+            "ContactName",
+            "Maria Anders",
+            "Ana Trujillo",
+            "Antonio Moreno",
+            "Thomas Hardy",
+            "Christina Berglund"
+        ],
+        [
+            "Address",
+            "Obere Str. 57",
+            "Avda. de la Constituci\u00f3n 2222",
+            "Mataderos 2312",
+            "120 Hanover Sq.",
+            "Berguvsv\u00e4gen 8"
+        ],
+        [
+            "City",
+            "Berlin",
+            "M\u00e9xico D.F.",
+            "M\u00e9xico D.F.",
+            "London",
+            "Lule\u00e5"
+        ],
+        [
+            "PostalCode",
+            "12209",
+            "05021",
+            "05023",
+            "WA1 1DP",
+            "S-958 22"
+        ],
+        [
+            "Country",
+            "Germany",
+            "Mexico",
+            "Mexico",
+            "UK",
+            "Sweden"
+        ]
+    ],
+    "pageTitle": "SQL AND & OR Operators",
+    "title": "",
+    "url": "http://www.w3schools.com/sql/sql_and_or.asp",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986615.83/warc/CC-MAIN-20150728002306-00156-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 798055435,
+    "recordOffset": 798043819,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 29 Jul 2015 17:04:51 GMT",
+    "textBeforeTable": "Below is a selection from the \"Customers\" table: In this tutorial we will use the well-known Northwind sample database. Demo Database The OR operator displays a record if either the first condition OR the second condition is true. The AND operator displays a record if both the first condition AND the second condition are true. The SQL AND & OR Operators The AND & OR operators are used to filter records based on more than one condition. Next Chapter \u00bb \u00ab Previous SQL AND & OR Operators SQL Quiz SQL Quiz SQL Hosting SQL Quick Ref SQL Format() SQL Now() SQL Round() SQL Len() SQL Mid() SQL Lcase() SQL Ucase() SQL Having SQL Group By SQL Sum() SQL Min() SQL Max() SQL Last() SQL First() SQL Count() SQL Avg() SQL Functions",
+    "textAfterTable": "AND Operator Example The following SQL statement selects all customers from the country \"Germany\" AND the city \"Berlin\", in the \"Customers\" table: Example SELECT * FROM Customers WHERE Country='Germany' AND City='Berlin'; Try it yourself \u00bb OR Operator Example The following SQL statement selects all customers from the city \"Berlin\" OR \"M\u00fcnchen\", in the \"Customers\" table:\u00a0 Example SELECT * FROM Customers WHERE City='Berlin' OR City='M\u00fcnchen'; Try it yourself \u00bb Combining AND & OR You can also combine AND and OR (use parenthesis to form complex expressions). The following SQL statement selects all customers from the country \"Germany\" AND the city must be equal to \"Berlin\" OR \"M\u00fcnchen\", in the \"Customers\" table: Example SELECT * FROM Customers WHERE Country='Germany' AND (City='Berlin' OR City='M\u00fcnchen'); Try it yourself \u00bb \u00ab Previous Next Chapter \u00bb W3SCHOOLS EXAMS HTML, CSS, JavaScript, PHP, jQuery, and XML Certifications",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

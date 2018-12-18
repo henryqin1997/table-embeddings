@@ -1,0 +1,75 @@
+{
+    "relation": [
+        [
+            "DIMM Capacity",
+            "512 MB",
+            "1 GB",
+            "1 GB",
+            "2 GB",
+            "2 GB",
+            "4 GB",
+            "4 GB",
+            "8 GB"
+        ],
+        [
+            "Configuration",
+            "Single-sided",
+            "Single-sided",
+            "Single-sided",
+            "Double-sided",
+            "Single-sided",
+            "Double-sided",
+            "Single-sided",
+            "Double-sided"
+        ],
+        [
+            "SDRAM Density",
+            "1 Gbit",
+            "1 Gbit",
+            "2 Gbit",
+            "1 Gbit",
+            "2 Gbit",
+            "2 Gbit",
+            "4 Gbit",
+            "4 Gbit"
+        ],
+        [
+            "SDRAM Organization Front-side / Back-side",
+            "64 M x16/empty",
+            "128 M x8/empty",
+            "128 M x16/empty",
+            "128 M x8/128 M x8",
+            "128 M x16/empty",
+            "256 M x8/256 M x8",
+            "512 M x8/empty",
+            "512 M x8/512 M x8"
+        ],
+        [
+            "Number of SDRAM Devices",
+            "4",
+            "8",
+            "4",
+            "16",
+            "8",
+            "16",
+            "8",
+            "16"
+        ]
+    ],
+    "pageTitle": "Intel\u00ae Desktop Board DX79SI \u2014 System Memory",
+    "title": "",
+    "url": "http://www.intel.com/support/motherboards/desktop/dx79si/sb/CS-032852.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 10,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.88/warc/CC-MAIN-20150728002308-00094-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 524068568,
+    "recordOffset": 524060548,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "For full compliance with all applicable DDR SDRAM memory specifications, the board must use DIMMs that support the serial presence detect (SPD) data structure. This allows the BIOS to read the SPD data and program the chipset to accurately configure memory settings for optimum performance. 1.5 V is the recommended and default setting for DDR3 memory voltage. The other memory voltage settings in the BIOS Setup program are provided for performance tuning purposes only. Altering the memory voltage may (i) reduce system stability and the useful life of the system, memory, and processor; (ii) cause the processor and other system components to fail; (iii) cause reductions in system performance; (iv) cause additional heat or other damage; and (v) affect system data integrity. Intel has not tested and does not warranty the operation of the processor beyond its specifications. For information on the processor warranty, see the Processor Warranty Information. Intel assumes no responsibility that the memory installed on the desktop board, if used with altered clock frequencies and/or voltages, will be fit for any particular purpose. Check with the memory manufacturer for warranty terms and additional details. Supported memory configurations DIMM slots are numbered in installation order XMP performance profile support for memory speeds above 1600 MHz DDR3 2400 MHz, 2133 MHz, 1866 MHz, 1600 MHz, 1333 MHz, and 1066 MHz SDRAM DIMMs Serial Presence Detect Non-ECC and ECC DIMMs Minimum total system memory:",
+    "textAfterTable": "Tested memory Computer Memory Test Labs* (CMTL) tests third-party memory for compatibility with Intel boards as requested by memory manufacturers. See the CMTL Advanced Tested Memory List for this Intel\u00ae Desktop Board. The table below lists parts which passed testing during development. These part numbers might not be readily available throughout the product life cycle. Module Supplier Module Part Number Module Size Module Speed (MHz) ADATA* AX3U1600GB2G9-2G 2 GB 1600 ADATA M3OHYMH3J4130G2C5Z 2 GB 1333 ADATA AX3U1600GB2G9 2 GB 1600 Apacer* 240P 1 GB 1333 Crucial* CT1024648A1339-16FDD 8 GB 1333 Elixir* M2P2G64CB8HC9N-DG 2 GB 1600 Elpida* EBJ10UE8BBF0 1 GB 1066 Elpida EBJ10UE8BDF0 1 GB 1333 Elpida EBJ21UE8BBF0 2 GB 1066 Elpida EBJ21UE8BDF0-DJ-F 2 GB 1333 Elpida",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

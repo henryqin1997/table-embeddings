@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "",
+            "R. Johnson",
+            "E. McGuire",
+            "E. Reed",
+            "D. Figaro",
+            "J. Robinson",
+            "M. Carter"
+        ],
+        [
+            "REC",
+            "2",
+            "2",
+            "2",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "YDS",
+            "60",
+            "21",
+            "17",
+            "38",
+            "11",
+            "-4"
+        ],
+        [
+            "AVG",
+            "30.00",
+            "10.50",
+            "8.50",
+            "38.00",
+            "11.00",
+            "-4.00"
+        ],
+        [
+            "TD",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ]
+    ],
+    "pageTitle": "College Football Box Scores | KSL.com",
+    "title": "",
+    "url": "http://www.ksl.com/?nid=925&page=_sport_football_competition:38692/sport/ncaaf",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00044-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 544338895,
+    "recordOffset": 544303503,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "UL Lafayette at South Alabama (\u0000Ladd-Peebles Stadium, Mobile, Alabama) UL LAFAYETTE 8 SOUTH ALABAMA 30 FINAL On Off | Auto Refresh: College Football Box Scores beta --> window.onload=timedRefresh(30000); } document.getElementById('on').style.cursor = \"pointer\"; document.getElementById('on').innerHTML = \"On\"; document.getElementById('off').innerHTML = \"Off\"; clearTimeout(t); function stopCount(timeoutPeriod) { } t = setTimeout(\"saveScroll()\",timeoutPeriod); function timedRefresh(timeoutPeriod) { $(document).ready(function(){ loadScroll() }); var t; // add onload=\"loadScroll()\" onunload=\"saveScroll()\" to the opening BODY tag } } window.scrollTo(parseInt(ar[0]), parseInt(ar[1])) if(ar.length == 2){ var ar = inf.split(\"_\") if(!inf){ return } inf=getCookie(cookieName) function loadScroll(){ // added function } location.reload(true) setCookie(cookieName,Data,expdate) Data=x + \"_\" + y var y = (document.documentElement.scrollTop) var x = (document.pageXOffset?document.pageXOffset:document.documentElement.scrollLeft) expdate.setTime (expdate.getTime() + (2*60*1000)); // expiry date var expdate = new Date () function saveScroll(){ // added function } \"; expires=Thu, 01-Jan-00 00:00:01 GMT\" ((domain == null) ? \"\" : \"; domain=\" + domain) + ((path == null) ? \"\" : \"; path=\" + path) + document.cookie = name + \"=\" + function deleteCookie(name,path,domain){ } return unescape(document.cookie.substring(offset, endstr)) endstr =",
+    "textAfterTable": "0 10 3:29 USA - Kendall Houston 4 yd. rush (Aleem Sunanon kick) 0 17 2nd Quarter 10:16 USA - Aleem Sunanon 19 yd. field goal 0 20 0:55 USA - Aleem Sunanon 20 yd. field goal 0 23 0:16 USA - Qudarius Ford 42 yd. interception return (Aleem Sunanon kick) 0 30 4th Quarter 4:50 ULL - Ricky Johnson 47 yd. pass from Jalen Nixon (2 point conversion good) 8 30 Team Stats ULL USA Game Stats",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

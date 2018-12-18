@@ -1,0 +1,87 @@
+{
+    "relation": [
+        [
+            "Field",
+            "id",
+            "username",
+            "domain",
+            "event",
+            "etag",
+            "expires",
+            "received_time",
+            "body"
+        ],
+        [
+            "Type",
+            "int(10) unsigned",
+            "varchar(64)",
+            "varchar(64)",
+            "varchar(64)",
+            "varchar(64)",
+            "int(11)",
+            "int(11)",
+            "blob"
+        ],
+        [
+            "Null",
+            "NO",
+            "NO",
+            "NO",
+            "NO",
+            "NO",
+            "NO",
+            "NO",
+            "NO"
+        ],
+        [
+            "Key",
+            "PRI",
+            "MUL",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Default",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+        ],
+        [
+            "Extra",
+            "auto_increment",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "openSIPS | Resources / PresenceServer | History",
+    "title": "",
+    "url": "http://www.opensips.org/Resources/PresenceServer?action=diff",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989042.37/warc/CC-MAIN-20150728002309-00323-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 634229675,
+    "recordOffset": 634206127,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{26442=Thanks Regards . . . . Nov 25 13:41:56 [9189] DBG:db_mysql:db_mysql_connect: opening connection: mysql://xxxx:xxxx@localhost/opensips Nov 25 13:41:56 [9189] ERROR:db_mysql:db_mysql_connect: driver error(2002): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) Nov 25 13:41:56 [9189] ERROR:db_mysql:db_mysql_new_connection: initial connect failed Nov 25 13:41:56 [9189] ERROR:core:db_do_init: could not add connection to the pool Nov 25 13:41:56 [9189] ERROR:presence:mod_init: connecting to database failed Nov 25 13:41:56 [9189] ERROR:core:init_mod: failed to initialize module presence Nov 25 13:41:56 [9189] ERROR:core:main: error while initializing modules Nov 25 13:41:56 [9189] DBG:presence_xml:destroy: start Nov 25 13:41:56 [9189] NOTICE:presence:destroy: destroy module ... Nov 25 13:41:56 [9189] DBG:tm:tm_shutdown: tm_shutdown : start Nov 25 13:41:56 [9189] DBG:tm:unlink_timer_lists: emptying DELETE list Nov 25 13:41:56 [9189] DBG:tm:tm_shutdown: emptying hash table Nov 25 13:41:56 [9189] DBG:tm:tm_shutdown: releasing timers Nov 25 13:41:56 [9189] DBG:tm:tm_shutdown: removing semaphores Nov 25 13:41:56 [9189] DBG:tm:tm_shutdown: destroying callback lists Nov 25 13:41:56 [9189] DBG:tm:tm_shutdown: tm_shutdown : done Nov 25 13:41:56 [9189] DBG:core:shm_mem_destroy: Nov 25 13:41:56 [9189] DBG:core:shm_mem_destroy: destroying the shared memory lock}",
+    "textBeforeTable": "presentity The description of the tables Deleted lines 59-200: anca_vamanu - February 11, 2011, at 05:01 PM by Restore Thanks Regards . . . . Nov 25 13:41:56 [9189] DBG:db_mysql:db_mysql_connect: opening connection: mysql://xxxx:xxxx@localhost/opensips Nov 25 13:41:56 [9189] ERROR:db_mysql:db_mysql_connect: driver error(2002): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2) Nov 25 13:41:56 [9189] ERROR:db_mysql:db_mysql_new_connection: initial connect failed Nov 25 13:41:56 [9189] ERROR:core:db_do_init: could not add connection to the pool Nov 25 13:41:56 [9189] ERROR:presence:mod_init: connecting to database failed Nov 25 13:41:56 [9189] ERROR:core:init_mod: failed to initialize module presence Nov 25 13:41:56 [9189] ERROR:core:main: error while initializing modules Nov 25 13:41:56 [9189] DBG:presence_xml:destroy: start Nov 25 13:41:56 [9189] NOTICE:presence:destroy: destroy module ... Nov 25 13:41:56 [9189] DBG:tm:tm_shutdown: tm_shutdown : start Nov 25 13:41:56 [9189] DBG:tm:unlink_timer_lists: emptying DELETE list Nov 25 13:41:56 [9189] DBG:tm:tm_shutdown: emptying hash table Nov 25 13:41:56 [9189] DBG:tm:tm_shutdown: releasing timers Nov 25 13:41:56 [9189] DBG:tm:tm_shutdown: removing semaphores Nov 25 13:41:56 [9189] DBG:tm:tm_shutdown: destroying callback lists Nov 25 13:41:56 [9189] DBG:tm:tm_shutdown: tm_shutdown : done Nov 25 13:41:56 [9189] DBG:core:shm_mem_destroy: Nov 25 13:41:56 [9189] DBG:core:shm_mem_destroy: destroying the shared memory lock Hello I am trying to configure opensips with presence module. After making loading and parametizing both presence and db_mysql when I try to launch opensips. I get the following error.What could be the problem ?",
+    "textAfterTable": "CREATE TABLE `presentity` ( `id` int(10) unsigned NOT NULL auto_increment, `username` varchar(64) NOT NULL, `domain` varchar(64) NOT NULL, `event` varchar(64) NOT NULL, `etag` varchar(64) NOT NULL, `expires` int(11) NOT NULL, `received_time` int(11) NOT NULL, `body` blob NOT NULL, PRIMARY KEY (`id`), UNIQUE KEY `presentity_idx` (`username`,`domain`,`event`,`etag`) ) ENGINE=MyISAM; active_watchers Field Type Null Key Default Extra id int(10) unsigned NO PRI NULL auto_increment presentity_uri varchar(128) NO MUL NULL \u00a0 watcher_username varchar(64) NO \u00a0 NULL \u00a0 watcher_domain varchar(64) NO \u00a0 NULL \u00a0 to_user varchar(64) NO \u00a0 NULL \u00a0 to_domain varchar(64) NO \u00a0 NULL \u00a0 event varchar(64) NO \u00a0 presence \u00a0 event_id varchar(64) YES \u00a0 NULL \u00a0 to_tag varchar(64) NO \u00a0 NULL \u00a0 from_tag varchar(64) NO \u00a0 NULL \u00a0 callid varchar(64) NO \u00a0 NULL \u00a0 local_cseq int(11) NO \u00a0 NULL \u00a0 remote_cseq int(11) NO \u00a0 NULL \u00a0 contact varchar(64) NO \u00a0 NULL \u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

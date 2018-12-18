@@ -1,0 +1,68 @@
+{
+    "relation": [
+        [
+            "Ticket",
+            "#1853",
+            "#2075",
+            "#2224",
+            "#10367",
+            "#10504"
+        ],
+        [
+            "Type",
+            "bug",
+            "feature request",
+            "bug",
+            "bug",
+            "bug"
+        ],
+        [
+            "Summary",
+            "hpc mix files for Main modules overwrite each other",
+            "hpc should render information about the run in its html markup",
+            "-fhpc inteferes/prevents rewrite rules from firing",
+            "\"ghc: panic! (the 'impossible' happened)\"",
+            "GHC panics with dsImpSpecs on SPECIALISE pragma with -fhpc enabled"
+        ],
+        [
+            "Priority",
+            "lowest",
+            "lowest",
+            "lowest",
+            "normal",
+            "normal"
+        ],
+        [
+            "Owner",
+            "AndyGill",
+            "andy@\u2026",
+            "andy@\u2026",
+            "",
+            ""
+        ],
+        [
+            "Reporter",
+            "guest",
+            "dons",
+            "dons",
+            "bgwines",
+            "nh2"
+        ]
+    ],
+    "pageTitle": "Status/GHC-7.8/Libraries \u2013 GHC",
+    "title": "",
+    "url": "https://ghc.haskell.org/trac/ghc/wiki/Status/GHC-7.8/Libraries?version=31",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989826.86/warc/CC-MAIN-20150728002309-00172-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 878050255,
+    "recordOffset": 878032964,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "\u2192 2 1 Results (1 - 10 of 18) \u200bbase ready for release performed deprecation-removals & major version bump \u200barray TODO add changelogs TODO clean-up .cabal files Common tasks: GHC-owned Libraries TODO Hackage needs to be updated to use Cabal 1.18.x TODO Update Version History when GHC 7.8 release reaches RC phase. Status of GHC 7.8 Boot Libraries xhtml1 vector2 transformers time terminfo1 random2 primitive2 pretty haskeline1 containers bytestring binary Win32 Cabal 3rd Party Libraries DPH \u200bunix \u200btemplate-haskell \u200bstm \u200bprocess \u200bparallel \u200bold-time",
+    "textAfterTable": "#10084 feature request Data.List should have a takeLastN function normal leonbaum2 #10149 bug The argument of mask does not always restore the masking state normal facundo.dominguez #10163 feature request Export typeRepKinds in Data.Typeable normal RyanGlScott #10169 bug bracket not running the final action on termination through SIGTERM normal Kritzefitz #10193 bug TypeRep Show instance doesn't add parens around type operators normal pawel.nowak 1 2 \u2192 TODO make sure all recent additions are /Since:/-annotated TODO Deprecated functions since at least GHC 7.4:  module Control.Concurrent.Chan {-# DEPRECATED unGetChan \"if",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

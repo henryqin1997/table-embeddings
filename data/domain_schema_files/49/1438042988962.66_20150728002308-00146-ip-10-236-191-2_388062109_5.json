@@ -1,0 +1,133 @@
+{
+    "relation": [
+        [
+            "Year",
+            "2006",
+            "2007",
+            "Total",
+            "% Of All"
+        ],
+        [
+            "# of Vulnerabilities",
+            "1",
+            "1",
+            "2",
+            ""
+        ],
+        [
+            "DoS",
+            "",
+            "",
+            "",
+            "0.0"
+        ],
+        [
+            "Code Execution",
+            "1",
+            "",
+            "1",
+            "50.0"
+        ],
+        [
+            "Overflow",
+            "",
+            "",
+            "",
+            "0.0"
+        ],
+        [
+            "Memory Corruption",
+            "",
+            "",
+            "",
+            "0.0"
+        ],
+        [
+            "Sql Injection",
+            "",
+            "",
+            "",
+            "0.0"
+        ],
+        [
+            "XSS",
+            "",
+            "",
+            "",
+            "0.0"
+        ],
+        [
+            "Directory Traversal",
+            "",
+            "1",
+            "1",
+            "50.0"
+        ],
+        [
+            "Http Response Splitting",
+            "",
+            "",
+            "",
+            "0.0"
+        ],
+        [
+            "Bypass something",
+            "",
+            "",
+            "",
+            "0.0"
+        ],
+        [
+            "Gain Information",
+            "",
+            "",
+            "",
+            "0.0"
+        ],
+        [
+            "Gain Privileges",
+            "",
+            "",
+            "",
+            "0.0"
+        ],
+        [
+            "CSRF",
+            "",
+            "",
+            "",
+            "0.0"
+        ],
+        [
+            "File Inclusion",
+            "1",
+            "",
+            "1",
+            "50.0"
+        ],
+        [
+            "# of exploits",
+            "",
+            "1",
+            "1",
+            ""
+        ]
+    ],
+    "pageTitle": "Sitedepth : Products and vulnerabilities",
+    "title": "",
+    "url": "http://www.cvedetails.com/vendor/4873/Sitedepth.html",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988962.66/warc/CC-MAIN-20150728002308-00146-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 388075119,
+    "recordOffset": 388062109,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampAfterTable": "{21182=Warning : Vulnerabilities with publish dates before 1999 are not included in this table and chart. (Because there are not many of them and they make the page look bad; and they may not be actually published in those years.)}",
+    "textBeforeTable": "Vulnerability Trends Over Time 30 (Max 30 allowed) 20 10 5 Number of items in feed : Use the following url to fetch results as JSON: Default width of the iframe is 100%, and height is 300px. You can adjust iframe width and height manually if you want. 30 (Max 30 allowed) 20 10 5 Number of items in widget : Copy the code below and add it to your web page : } wl.select(); wl.focus(); wl.value=u; var wl=document.getElementById('jsonlink'); document.getElementById('wlink').style.display='none'; document.getElementById('jsonlinkdiv').style.display=''; u+=widgetjsoncommon(numrows); var u='http://www.cvedetails.com/json-feed.php?'; } numrows=10; if(!numrows || numrows <1 || numrows>30){ function jsonfeedgen(numrows){ } wl.select(); wl.focus(); wl.value=u; var wl=document.getElementById('widgetlink'); document.getElementById('wlink').style.display=''; document.getElementById('jsonlinkdiv').style.display='none'; u+='\" width=\"100%\" height=\"300px\">'; u+=widgetjsoncommon(numrows); var u=' </form> </table> </tbody> </tr> <td colspan=\"3\"> <input type=\"submit\" value=\"Generate RSS Feed\" /> <input type=\"button\" value=\"Generate Widget Code\" onclick=\"widgetgen()\" /> <input type=\"button\" value=\"Generate JSON URL\" onclick=\"jsonfeedgen()\" /> </td> <tr> </tr> <td> CVSS score &gt;= : <select name=\"cvssscoremin\" id=\"cvssscoremin\" style=\"width:40px; text-align:center;\"> <option value=\"0\" selected=\"\">0 </option> <option value=\"1\">1</option> <option value=\"2\">2</option> <option value=\"3\">3</option> <option value=\"4\">4</option> <option",
+    "textAfterTable": "Warning : Vulnerabilities with publish dates before 1999 are not included in this table and chart. (Because there are not many of them and they make the page look bad; and they may not be actually published in those years.) Vulnerabilities By Year 1 1 \u00a0 2006 1 2007 1 Vulnerabilities By Type 1 1 1 \u00a0 Execute Code 1 File Inclusion 1 Directory Traversal 1",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

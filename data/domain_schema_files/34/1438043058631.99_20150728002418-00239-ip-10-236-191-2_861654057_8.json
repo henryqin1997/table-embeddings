@@ -1,0 +1,102 @@
+{
+    "relation": [
+        [
+            "Query",
+            "",
+            "+united +states",
+            "\"united states\"",
+            "states",
+            "unite*",
+            "united states"
+        ],
+        [
+            "country",
+            "10.0%",
+            "7.2%",
+            "4.5%",
+            "6.5%",
+            "4.5%",
+            "4.6%"
+        ],
+        [
+            "unique10",
+            "10.2%",
+            "7.5%",
+            "4.2%",
+            "8.6%",
+            "5.3%",
+            "2.4%"
+        ],
+        [
+            "unique100",
+            "10.1%",
+            "7.7%",
+            "4.0%",
+            "7.3%",
+            "4.3%",
+            "3.2%"
+        ],
+        [
+            "unique1K",
+            "9.4%",
+            "8.5%",
+            "3.8%",
+            "6.9%",
+            "3.9%",
+            "3.4%"
+        ],
+        [
+            "unique10K",
+            "9.4%",
+            "8.4%",
+            "4.5%",
+            "7.5%",
+            "4.5%",
+            "1.9%"
+        ],
+        [
+            "unique100K",
+            "10.1%",
+            "7.1%",
+            "4.3%",
+            "9.4%",
+            "4.7%",
+            "4.8%"
+        ],
+        [
+            "unique1M",
+            "10.0%",
+            "5.4%",
+            "3.7%",
+            "9.9%",
+            "4.7%",
+            "3.3%"
+        ],
+        [
+            "score",
+            "5.1%",
+            "1.9%",
+            "4.2%",
+            "1.3%",
+            "0.4%",
+            "1.9%"
+        ]
+    ],
+    "pageTitle": "[LUCENE-2504] sorting performance regression - ASF JIRA",
+    "title": "",
+    "url": "https://issues.apache.org/jira/browse/LUCENE-2504?focusedCommentId=12909098&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043058631.99/warc/CC-MAIN-20150728002418-00239-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 861685927,
+    "recordOffset": 861654057,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{89611=Hmmm, turns out the sorting bug I just checked in (r996332) has been around a bit longer than I thought - since field cache was converted to bytes on 6/3/2010 ( LUCENE-2380)., 123261=NOTE: these results include the patch from LUCENE-2504, for both trunk & 3.x!, 157589=My guess is that this is caused by LUCENE-2380, but I opened a separate issue since I'm not sure. This is the same type of JVM performance issues reported by Mike in LUCENE-2143 and myself in LUCENE-2380.}",
+    "textBeforeTable": "branch_3x: Each run (of the complete set of fields) in a separate JVM since two runs in the same JVM didn't really differ as they did in the oracle JVM. I tried IBM's latest Java6 (SR8 FP1, 20100624) It seems to have some of the same pitfalls as Oracle's JVM, just different. The first run does not differ from the second run in the same JVM as it does with Oracle, but the first run itself has much more variation. The worst case is worse, and just like the Oracle JVM, it gets stuck in it's worst case. The open question is whether this hotspot fickleness is particular to Oracle's java impl, or, is somehow endemic to bytecode VMs (.NET included). edited 14/Sep/10 20:40 - Yonik Seeley added a comment - Permalink Hide 14/Sep/10 22:09 OK, I've committed the fix to always use the latest generation field comparator. Not sure if this is the best way to handle - but at least it's correct now and we can improve more later.",
+    "textAfterTable": "81 383 99 79 78 215 10000 254 73 346 101 106 108 267 1000 253 74 347 99 107 108 258 100 253 107 394 98 107 102 255 10 251 107 388 99 106 98 257 The second way of testing is to completely mix fields (no serial correlation between what field is sorted on). This is the test that is very predictable with the Oracle JVM, but I still see wide variability with the IBM JVM. Here is the list of different runs for the IBM JVM (ms): branch_3x 128 129 123 120 128 100 95 74 130 91 120 trunk 106 89 168 116 155 119 108 118 112 169 165 To my eye, it looks like we have more variability in trunk, due to increased use of abstractions? edit: corrected the table description - all times in this message are for the IBM JVM. Show",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,81 @@
+{
+    "relation": [
+        [
+            "GroupId",
+            "dom4j",
+            "org.apache.maven",
+            "org.apache.maven",
+            "org.apache.maven",
+            "org.apache.maven",
+            "org.apache.maven",
+            "org.apache.maven.wagon",
+            "org.codehaus.plexus",
+            "org.codehaus.plexus"
+        ],
+        [
+            "ArtifactId",
+            "dom4j",
+            "maven-artifact",
+            "maven-artifact-manager",
+            "maven-model",
+            "maven-plugin-api",
+            "maven-project",
+            "wagon-provider-api",
+            "plexus-container-default",
+            "plexus-utils"
+        ],
+        [
+            "Version",
+            "1.6.1",
+            "2.0.1",
+            "2.0.1",
+            "2.0.1",
+            "2.0.1",
+            "2.0.1",
+            "1.0-alpha-5",
+            "1.0-alpha-9",
+            "1.1"
+        ],
+        [
+            "Type",
+            "jar",
+            "jar",
+            "jar",
+            "jar",
+            "jar",
+            "jar",
+            "jar",
+            "jar",
+            "jar"
+        ],
+        [
+            "License",
+            "-",
+            "The Apache Software License, Version 2.0",
+            "The Apache Software License, Version 2.0",
+            "The Apache Software License, Version 2.0",
+            "The Apache Software License, Version 2.0",
+            "The Apache Software License, Version 2.0",
+            "The Apache Software License, Version 2.0",
+            "-",
+            "-"
+        ]
+    ],
+    "pageTitle": "Apache Maven IDEA Plugin (RETIRED) - Project Dependencies",
+    "title": "",
+    "url": "https://maven.apache.org/plugins/maven-idea-plugin/dependencies.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989018.48/warc/CC-MAIN-20150728002309-00201-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 881433730,
+    "recordOffset": 881425528,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 26 Jul 2013 20:10:58 GMT",
+    "textBeforeTable": "The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application: compile Project Dependencies Thanks Sponsoring Apache Foundation How Apache Works ASF Wagon Surefire Skins Shared Components SCM Plugin Tools Plugins Parent POMs Maven 2 & 3 Maven 1.x JXR Doxia Archetype Ant Tasks Maven Projects Project Reports Distribution Management Project Plugins Plugin Management Continuous Integration Dependencies Dependency Management Mailing Lists Issue Tracking Source Repository Project Team Project License Dependency Information Project Summary",
+    "textAfterTable": "test The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application: GroupId ArtifactId Version Type License junit junit 3.8.2 jar - org.apache.maven.shared maven-plugin-testing-harness 1.0-beta-1 jar The Apache Software License, Version 2.0 Project Transitive Dependencies The following is a list of transitive dependencies for this project. Transitive dependencies are the dependencies of the project dependencies. compile The following is a list of compile dependencies for this project. These dependencies are required to compile and run the application: GroupId ArtifactId Version Type License classworlds classworlds 1.1-alpha-2 jar - org.apache.maven maven-profile 2.0.1 jar The Apache Software License, Version 2.0 org.apache.maven maven-repository-metadata 2.0.1 jar The Apache Software License, Version 2.0 xml-apis xml-apis 1.0.b2 jar - test The following is a list of test dependencies for this project. These dependencies are only required to compile and run unit tests for the application: GroupId ArtifactId Version Type License com.jcraft jsch 0.1.23 jar BSD",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

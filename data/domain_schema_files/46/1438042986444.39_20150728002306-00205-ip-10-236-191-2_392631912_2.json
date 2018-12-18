@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Mainboard connector pin",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"
+        ],
+        [
+            "Mainboard pin Function",
+            "?",
+            "RX",
+            "TX",
+            "",
+            "Ground",
+            "?",
+            "",
+            "",
+            "?"
+        ],
+        [
+            "Standard DE9 pin connector",
+            "?",
+            "3",
+            "2",
+            "4",
+            "5",
+            "?",
+            "7",
+            "8",
+            "?"
+        ],
+        [
+            "Standard DE9 pin Function",
+            "?",
+            "TX",
+            "RX",
+            "DTR",
+            "Ground",
+            "?",
+            "RTS",
+            "CTS",
+            "?"
+        ],
+        [
+            "Mandatory for coreboot",
+            "No",
+            "Yes (you could do without but it's advised to get it, to be able to use certain functions of coreboot)",
+            "Yes",
+            "No",
+            "Yes",
+            "No",
+            "No",
+            "No",
+            "No"
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Board:asus/m4a785t-m\" - coreboot",
+    "title": "",
+    "url": "http://www.coreboot.org/index.php?title=ASUS_M4A785T-M&diff=11289&oldid=11288",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986444.39/warc/CC-MAIN-20150728002306-00205-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 392648306,
+    "recordOffset": 392631912,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Here's a table of corresponding pins: | | |02|01| |04|03| |06|05| |08|07| |NC|09| | _____________________ You'll need to build a serial port adapter to get the coreboot logs during. Here's a picture of the serial port connector on the mainboard:   And here's the kind of cable you will need:   And you'll need to build a cable similar to this one(on the picture the DB9 is connector is a male connector):   Here's how it looks like on the mainboard:  Building the serial port adapter The port is in the very early stages...(it will be ok when screen will not flickers at resolutions > 800x600)    it has DDR3 instead of DDR2  This pages is about the port to the M4A785T-M, this mainboard is very similar to the M4A785-M, but:  Introduction     The chip is SPI   OK   Flashrom       Untested   Wake on mouse       Untested   Wake on keyboard         Wake on LAN",
+    "textAfterTable": "Adapting GNU/Linux Before booting with coreboot, do the following: blacklist the snd-hda* modules (refer to the usual way to get help for the GNU/Linux distribution you want to run for doing that) 32bit GNU/Linux trisquel distribution tested 64bit GNU/Linux trisquel distribution failed to initialize the USB. Building Coreboot To build coreboot for this mainboard: checkout coreboot revision 1b1309f289d6fc9f6ec348686665d25218535030 Configure and Build it as usual(for having graphics you need to extract your VGA BIOS ROM from your BIOS) PCIe Requirements/Issues the -pae kernel didn't boot my LUKS hdd(failed at cryptsetup password entering)... => using a -generic kernel worked(however that sees only 2772M in htop(I've 4GB)) if you remove the PCIe card, the integrated ATI card won't come up... Patch From ab15ce791543cb0c1a09317962fe6bdc79e4e1b3 Mon Sep 17 00:00:00 2001 From: Denis 'GNUtoo' Carikli <GNUtoo@no-log.org> Date: Tue, 18 Sep 2012 19:35:44 +0200 Subject: [PATCH] IRQ tables for getting the PCIe graphic card working Thanks a lot for the help trough IRC in the #coreboot channel on the Freenode servers. Change-Id: Ie99ee5adaf997cb94c96eb1942d1089ab2528f85 Signed-off-by: Denis 'GNUtoo' Carikli <GNUtoo@no-log.org> --- src/mainboard/asus/m4a785t-m/devicetree.cb | 6 +++--- 1 files changed, 3 insertions(+), 3 deletions(-) diff --git a/src/mainboard/asus/m4a785t-m/devicetree.cb b/src/mainboard/asus/m4a785t-m/devicetree.cb index e8764b1..7095afd 100644 --- a/src/mainboard/asus/m4a785t-m/devicetree.cb +++ b/src/mainboard/asus/m4a785t-m/devicetree.cb @@ -10,8 +10,8 @@ chip northbridge/amd/amdfam10/root_complex device pci 18.0 on # northbridge chip southbridge/amd/rs780 device pci 0.0 on end # HT 0x9600 -\t\t\t\t\tdevice pci 1.0 on end # Internal Graphics",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

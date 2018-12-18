@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Document",
+            "Original Kermit article in BYTE",
+            "Kermit Protocol Manual",
+            "Kermit User Manual",
+            "International Text",
+            "Correctness Proof"
+        ],
+        [
+            "Date",
+            "1983",
+            "1986",
+            "1988",
+            "1994",
+            "1995"
+        ],
+        [
+            "Text",
+            "byte.txt",
+            "kproto.txt",
+            "kuser.txt",
+            "n/a/",
+            "n/a/"
+        ],
+        [
+            "PostScript",
+            "byte.ps",
+            "kproto.ps",
+            "kuser.ps",
+            "accents.ps",
+            "proof.ps"
+        ],
+        [
+            "PDF",
+            "byte.pdf",
+            "kproto.pdf",
+            "kuser.pdf",
+            "accents.pdf",
+            "proof.pdf"
+        ]
+    ],
+    "pageTitle": "Kermit Software Source Code Archive",
+    "title": "",
+    "url": "http://www.columbia.edu/kermit/archive.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 108,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991076.30/warc/CC-MAIN-20150728002311-00239-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 378266223,
+    "recordOffset": 378229370,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{159687=Another noteworthy event is that on August 16, 1988, we moved all the Kermit files from CU20B to a Unix machine (it was either a VAX-11/750 running 4.2BSD, or a VAX 8700 running Ultrix), just before CU20B was turned off for the last time. Since neither Kermit nor FTP nor ANSI-format tapes had a mechanism to preserve file dates, a lot of the older files in the present archive have that date. In putting this archive together, some of the earlier file dates were restored, but not consistently., 7950=The Kermit Software Archive: 1981-2011}",
+    "textBeforeTable": "The once-common '.doc' and '.hlp' plain-text-file extensions have been converted (foo.doc\u00a0\u2192\u00a0foodoc.txt; foo.hlp\u00a0\u2192\u00a0foohlp.txt) to avoid unwanted invocations of Microsoft Word or Help programs; others have been left as they were. Here are some common ones: Welcome to what might be the biggest collection on earth of software source code for implementations of the same program on different computers and operating systems in different programming languages. This page provides, for the first time, convenient Web (HTTP) access to all the programs in the Kermit software archive. Each program can be downloaded as either a \u201ctarball\u201d (gzip'd tar archive for Unix) or a Zip archive (for Windows, VMS, and other platforms that have Unzip), and if FTP is not blocked at your site, you can look at or download individual files by clicking on \"file\u00a0list\". In many cases manuals are also available, sometimes as PDF, others as plain text. Index to table: [TOP] [acorn] [amdahl] [alphamicro] [apollo] [apple] [atari] [basicfour] [belllabs] [bootstrap] [burroughs] [ccdos] [cdc] [cie] [ckermit] [commodore] [computervision] [convergent] [cpm80] [cpm86] [cray] [datageneral] [dec] [dtss] [EC] [ekermit] [emacs] [gec] [gkermit] [gould] [harris] [honeywell] [hp] [ibm] [icl] [intel] [kermit95] [lilith] [lispmachine] [luxor] [microware] [minix] [modcomp] [motorola] [msdos] [mskermit] [",
+    "textAfterTable": "Document for printing on a PostScript printer .pdf PDF Document for viewing with PDF reader or for printing Many more extensions can be found, for example for source code (.c, .h, .pas, .pl1, .for, .lsp, etc), but all files (with very few exceptions, such as PDF and PostScript) are plain text, unless they are in the archives or bin directories. More about the Kermit archive after the big table. If your browser refuses to show you a file because it can't find a \"helper\" for it, it needs a new button: \"just show it to me!\" Here are the programs in the Kermit software archive. In addition to these, there are hundreds, perhaps thousands, of Kermit protocol implementations in commercial and shareware software packages such as Reflexions, Crosstalk, Procomm, Hyperterminal. Kermit protocol is also embedded in numerous devices, including routers, switches, factory-floor devices, medical devices and implants, cash registers, and perhaps most famously, HP calculators. The Kermit Software Archive: 1981-2011 Name Version Date Language Platform Tar.gz Zip FTP C-Kermit: Kermit in C for many operating systems [Website] \u00a0 [Manual] \u00a0 [Binaries]",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

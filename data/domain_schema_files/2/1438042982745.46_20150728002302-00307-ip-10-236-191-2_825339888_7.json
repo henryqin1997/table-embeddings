@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust",
+            "Precipitation"
+        ],
+        [
+            "Avg",
+            "52 \u00b0F",
+            "39.2 \u00b0F",
+            "66.3 %",
+            "30.00 in",
+            "7.5 mph",
+            "",
+            "0.93 in"
+        ],
+        [
+            "Avg High",
+            "63.9 \u00b0F",
+            "45.1 \u00b0F",
+            "90.6 %",
+            "30.09 in",
+            "15.9 mph",
+            "25.9 mph",
+            ""
+        ],
+        [
+            "Avg Low",
+            "40 \u00b0F",
+            "33.1 \u00b0F",
+            "40.8 %",
+            "29.89 in",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Record High",
+            "81 \u00b0F (2012)",
+            "62.1 \u00b0F (2007)",
+            "",
+            "30.37 in (2003)",
+            "29.9 mph (2005)",
+            "39.1 mph (2006)",
+            "3.52 in (2007)"
+        ],
+        [
+            "Record Low",
+            "21.2 \u00b0F (2014)",
+            "19.9 \u00b0F (2015)",
+            "18 % (2010)",
+            "29.39 in (2005)",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "St. Louis, Missouri - March 30th - Daily Weather Averages (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherdaily.php3?s=43427&month=3&theday=30&cityname=St.+Louis%2C+Missouri%2C+United+States+of+America&units=us",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00307-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 825355887,
+    "recordOffset": 825339888,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] DAILY WEATHER AVERAGE - MARCH 30 [ \u2190 Previous Day ] } window.print(); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); return $(this).text().replace(\"2015\", \"\"); $('.datepicker-switch').text(function () { }); window.location = url; var url = \"/weather/weatherdaily.php3?s=43427&\" + pieces + \"&citynameSt.+Louis%2C+Missouri%2C+United+States+of+America&set=\"; var pieces = tosplit.replace(/(.*?)-(.*?)-(.*?)/,\"month=$2&theday=$3\"); var tosplit = event.format(); $('#datepicker').datepicker().on('changeDate', function (event) { }); endDate: \"2015-12-31\", startDate: \"2015-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 8.7 mi Wind Direction SSE (142.9 \u00b0) Weather Element Total Heating Degree Days 16.9 (Base 18.3) Cooling Degree Days 3.2 (Base 18.3) Growing Degree Days 9.1 (Base 10) Total Years on Record: 21",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

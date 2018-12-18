@@ -1,0 +1,75 @@
+{
+    "relation": [
+        [
+            "SMB error class",
+            "ERRDOS (0x01)",
+            "ERRDOS (0x01)",
+            "ERRDOS (0x01)",
+            "ERRSRV (0x02)",
+            "ERRSRV (0x02)",
+            "ERRSRV (0x02)",
+            "ERRSRV (0x02)",
+            "ERRHRD (0x03)"
+        ],
+        [
+            "SMB error code",
+            "ERRbadfile (0x0002)",
+            "ERRbadpath (0x0003)",
+            "ERRnoaccess (0x0005)",
+            "ERRerror (0x0001)",
+            "ERRinvtid (0x0005)",
+            "ERRnomem (0x0008)",
+            "ERRbaduid (0x005B)",
+            "ERRnowrite (0x0013)"
+        ],
+        [
+            "NT status code",
+            "STATUS_NO_SUCH_FILE (0xC000000F)",
+            "STATUS_OBJECT_PATH_SYNTAX_BAD (0xC000003B)",
+            "STATUS_ACCESS_DENIED (0xC0000022)",
+            "STATUS_INVALID_SMB (0x00010002)",
+            "STATUS_SMB_BAD_TID (0x00050002)",
+            "STATUS_INSUFF_SERVER_RESOURCES (0xC0000205)",
+            "STATUS_SMB_BAD_UID (0x005B0002)",
+            "STATUS_MEDIA_WRITE_PROTECTED (0xC00000A2)"
+        ],
+        [
+            "POSIX equivalent",
+            "ENOENT",
+            "ENOENT",
+            "EPERM",
+            "",
+            "",
+            "ENOMEM",
+            "",
+            "EROFS"
+        ],
+        [
+            "Description",
+            "The named file was not found.",
+            "The file path syntax is invalid.",
+            "Access denied.",
+            "Invalid SMB. Not enough parameter bytes were sent.",
+            "The TID is no longer valid.",
+            "The server is out of resources.",
+            "The UID supplied is not known to the session.",
+            "Attempt to write to a read-only file system."
+        ]
+    ],
+    "pageTitle": "[MS-CIFS]: Response",
+    "title": "",
+    "url": "https://msdn.microsoft.com/en-us/library/ee441772.aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990900.28/warc/CC-MAIN-20150728002310-00060-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 879788215,
+    "recordOffset": 879771934,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 \u00a0\u00a0 } \u00a0\u00a0 USHORT ByteCount; \u00a0\u00a0 { \u00a0SMB_Data \u00a0\u00a0 } \u00a0\u00a0 UCHAR WordCount; \u00a0\u00a0 { \u00a0SMB_Parameters  2.2.4.7.2 Response 2.2.4.7.2 Response 2.2.4.7.1 Request 2.2.4.7 SMB_COM_DELETE (0x06) 2.2.4 SMB Commands 2.2 Message Syntax 2 Messages [MS-CIFS]: Common Internet File System (CIFS) Protocol Technical Documents Windows Protocols Protocols Open Specifications MSDN Library",
+    "textAfterTable": "9 2 0 1 2 3 4 5 6 7 8 9 3 0 1 WordCount WordCount (1 byte): This field MUST be 0x00. No parameters are sent by this message. SMB_Data (2 bytes): 0 1 2 3 4 5 6 7 8 9 1 0 1 2 3 4 5 6 7 8 9 2 0 1 2 3 4 5 6 7 8 9 3 0 1 ByteCount ByteCount (2 bytes): This field MUST be 0x0000. No data is sent by this message. Error Codes SMB error class SMB error code NT status code POSIX equivalent Description ERRDOS (0x01) ERRbadfile (0x0002) STATUS_NO_SUCH_FILE (0xC000000F) ENOENT The named file",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 4,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,87 @@
+{
+    "relation": [
+        [
+            "Title",
+            "'quota' command does not work on GPFS",
+            "OnDemand with Safari",
+            "Issue when loading multiple Fluent or ANSYS modules simultaneously",
+            "Torque module on Oakley improperly setting environment variables",
+            "qsub filter rejects valid jobs",
+            "module spider/avail/show not showing MPI dependent modules",
+            "Matlab PCT broken due to pbsrsh modification",
+            "warning: libhwloc.so.1 may conflict with libhwloc.so.5"
+        ],
+        [
+            "Cat.",
+            "system software",
+            "Web Services",
+            "Software",
+            "",
+            "",
+            "Ruby",
+            "Matlab",
+            ""
+        ],
+        [
+            "Res.",
+            "Unresolved",
+            "Unresolved",
+            "Unresolved",
+            "Unresolved",
+            "Unresolved",
+            "Unresolved",
+            "Unresolved",
+            "Unresolved"
+        ],
+        [
+            "Description",
+            "The 'quota' command does not provide any information about file quotas on the GPFS filesystem. Until we fix this issue, please look at your file system usage in the message printed when you log in... (Read more)",
+            "Currently, if you have popups blocked in Safari, some services in OSC OnDemand (most notably the HPC terminal) will silently fail to work. We are working on a solution, as well as a workaround for... (Read more)",
+            "Due to the way our Fluent and ANSYS modules are configured, simultaneously loading multiple of either module will cause a cryptic error. The most common case of this happening is when multiple of... (Read more)",
+            "Intel library paths are being added to the environment variable LD_LIBRARY_PATH incorrectly when loading torque. Additionally the Intel paths remain when the torque... (Read more)",
+            "Job scripts submitted on Glenn, Oakley, or Ruby all go a submit filter before reaching the resource manager, Torque. A bug has been discovered in our submit filter which prevents jobs with the... (Read more)",
+            "On Ruby, the commands: module spider module avail module show... (Read more)",
+            "A change was made to the system wide pbsrsh script which Matlab relies on. It has been discovered that this change has broken the parallel computing toolbox (... (Read more)",
+            "Sometimes when building MPI programs the following warning appears. It is harmless and can be safely ignored. ld: warning: libhwloc.so.1, needed by /usr/local/mvapich2/1.7-intel/lib/... (Read more)"
+        ],
+        [
+            "Post",
+            "1 year 11 months ago",
+            "1 year 3 months ago",
+            "9 months 3 weeks ago",
+            "5 months 1 week ago",
+            "4 months 1 week ago",
+            "3 months 6 days ago",
+            "3 months 5 days ago",
+            "3 months 2 days ago"
+        ],
+        [
+            "Upd.",
+            "1 year 11 months",
+            "1 year 3 months",
+            "9 months 3 weeks",
+            "5 months 1 week",
+            "4 months 1 week",
+            "3 months 6 days",
+            "3 months 5 days",
+            "3 months 2 days"
+        ]
+    ],
+    "pageTitle": "Known Issues | Ohio Supercomputer Center",
+    "title": "",
+    "url": "https://www.osc.edu/supercomputing/known-issues-archive?resolution=0&tid=All&order=field_issue_resolution&sort=asc",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988840.31/warc/CC-MAIN-20150728002308-00316-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 937906960,
+    "recordOffset": 937891046,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 01 Aug 2015 16:21:56 GMT",
+    "textBeforeTable": "- Any -Account ManagementAccount/ShellArmstrongBackupsBatchConnectivityfilesystemGPUInfrastructureLicensingloginLogin ProblemsMaintenanceMatlabNetworkOakleyOnDemandOperationsOutageRubySoftwaresystem softwareWeb Services Category - Any -UnresolvedResolved Resolution Known Issues Supercomputing Support Supercomputing \u00bb Home \u00bb You are here Staff Directory Media Inquiries General Inquiries Supercomputing Support Contact Us Branding Press Releases Media Kit",
+    "textAfterTable": "Upcoming Events August 4 - XSEDE HPC Monthly Workshop: Big Data Aug 4 2015 - 11:00am to 5:00pm more Recent News Columbus, Ohio - Jun 5: SUG meeting provides opportunity to explain research Columbus, Ohio - Jun 4: Former P&G exec brings savvy to OSC industry engagement efforts",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Issue",
+            "Apple (AAPL)",
+            "VelocityShares3xLg (UGAZ)",
+            "Sprint (S)",
+            "SPDR S&P 500 (SPY)",
+            "BaxterIntl (BAX)"
+        ],
+        [
+            "Volume",
+            "122,492,967",
+            "82,544,367",
+            "79,956,527",
+            "77,036,540",
+            "75,952,862"
+        ],
+        [
+            "Price",
+            "114.64",
+            "2.03",
+            "3.49",
+            "209.38",
+            "40.31"
+        ],
+        [
+            "Chg",
+            "-3.80",
+            "0.12",
+            "0.15",
+            "-0.41",
+            "0.80"
+        ],
+        [
+            "% Chg",
+            "-3.21",
+            "6.28",
+            "4.49",
+            "-0.20",
+            "2.02"
+        ]
+    ],
+    "pageTitle": "Barrons Markets Data Center Home - Market Data, Indexes, Stock Quotes - Barrons.com",
+    "title": "",
+    "url": "http://online.barrons.com/mdc/public/page/9_3000.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 34,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062723.96/warc/CC-MAIN-20150728002422-00327-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 181050991,
+    "recordOffset": 181014345,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Composite Arca | Nasdaq | NYSE | (Roll over for charts and headlines) Most Active Stocks 5:36 pm EDT 08/04/15 // ]]> var mam = new MostActivesModule(); } this.activateDiv = activateDiv; // make the functions available via this class/namespace } return false; this.currentDiv = nextDiv; next.style.display = \"inline\"; curr.style.display = \"none\"; var next = document.getElementById( nextDiv ); var curr = document.getElementById( this.currentDiv ); // show/hide the div seealllink.innerHTML = this.links[nextDiv + \"_seeall\"]; var seealllink = document.getElementById(\"ma_seeall\"); nextlink.innerHTML = this.links[nextDiv + \"_text\"]; var nextlink = document.getElementById( nextDiv + \"_link\" ); currlink.innerHTML = this.links[this.currentDiv + \"_link\"]; var currlink = document.getElementById( this.currentDiv + \"_link\" ); function activateDiv( nextDiv ) { }; ' See all Most Actives' ma_Arca_seeall : 'Arca', ma_Arca_text : 'Arca', ma_Arca_link : ' See all Most Actives', ma_Nasdaq_seeall : 'Nasdaq', ma_Nasdaq_text : 'Nasdaq', ma_Nasdaq_link : ' See all Most Actives', ma_Composite_seeall : 'Composite', ma_Composite_text : 'Composite', ma_Composite_link : ' See all Most Actives', ma_NYSE_seeall : 'NYSE', ma_NYSE_text : 'NYSE', ma_NYSE_link : this.links = { // innerHTML for the",
+    "textAfterTable": "Issue Volume Price Chg % Chg Apple (AAPL) 123,277,186 114.64 -3.80 -3.21 FrontierComms (FTR) 33,949,493 5.25 0.10 1.94 Microsoft (MSFT) 32,752,175 47.54 0.73 1.56 Netflix (NFLX) 29,483,255 121.15 8.59 7.63 SiriusXMHoldings (SIRI) 27,996,209 3.95 -0.01 -0.25 Issue Volume Price Chg",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

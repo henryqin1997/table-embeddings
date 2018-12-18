@@ -1,0 +1,99 @@
+{
+    "relation": [
+        [
+            "CUI",
+            "C1508133",
+            "C1508134",
+            "C1508135",
+            "C1507669",
+            "C1507671",
+            "C1507672",
+            "C1507673",
+            "C1507670"
+        ],
+        [
+            "AUI",
+            "A18229163",
+            "A18345344",
+            "A18229169",
+            "A18267902",
+            "A18190729",
+            "A18113457",
+            "A18306743",
+            "A20085901"
+        ],
+        [
+            "LUI",
+            "L5519795",
+            "L5517421",
+            "L5519794",
+            "L8870771",
+            "L5313484",
+            "L5312839",
+            "L5519791",
+            "L5519792"
+        ],
+        [
+            "SUI",
+            "S11046154",
+            "S11041782",
+            "S11041960",
+            "S11039271",
+            "S11022331",
+            "S7401844",
+            "S11038244",
+            "S12898350"
+        ],
+        [
+            "SCUI",
+            "38222-6",
+            "38223-4",
+            "38224-2",
+            "38225-9",
+            "38227-5",
+            "38228-3",
+            "38229-1",
+            "38226-7"
+        ],
+        [
+            "CODE",
+            "38222-6",
+            "38223-4",
+            "38224-2",
+            "38225-9",
+            "38227-5",
+            "38228-3",
+            "38229-1",
+            "38226-7"
+        ],
+        [
+            "STR",
+            "Sensory perception Braden scale",
+            "Physical activity Braden scale",
+            "Physical mobility Braden scale",
+            "Nutrition intake pattern Braden scale",
+            "Braden scale total score",
+            "Braden scale skin assessment panel",
+            "Moisture exposure Braden scale",
+            "Friction and sheer Braden scale"
+        ]
+    ],
+    "pageTitle": "2012AB Braden Scale Source Information",
+    "title": "",
+    "url": "http://www.nlm.nih.gov/research/umls/sourcereleasedocs/current/LNC_BRADEN/termtypes.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990603.54/warc/CC-MAIN-20150728002310-00056-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 631807980,
+    "recordOffset": 631799778,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{23749=Last reviewed: 17 April 2013 Last updated: 17 April 2013 First published: 17 April 2013 Metadata| Permanence level: Permanence Not Guaranteed}",
+    "lastModified": "Fri, 17 Jul 2015 22:19:01 GMT",
+    "textBeforeTable": "(return to top) LC\u00a0\u00a0 Sample Data See Section 2.3 of the UMLS Reference Manual for more information on terms and term types in the UMLS Metathesaurus. See Metathesaurus Documentation for a list of sources and their associated term types, listed in default order of precedence. See Metathesaurus Documentation for a list of all term type abbreviations and their full names. Sample data are provided for every term type in the source (see below). Term types are assigned based on source documentation or NLM understanding of the source. Every atom has a separate row in MRCONSO.RRF. Every atom is assigned a term type. An atom is the smallest unit of naming in a source; that is, a specific string with specific code values and identifiers from a specific source. A term type indicates the role an atom plays in its source Notes 8 MTH Official fully specified name with expanded abbreviations MTH_LN 8 LOINC official fully specified name",
+    "textAfterTable": "LN\u00a0\u00a0 (return to top) CUI AUI LUI SUI SCUI CODE STR C1508133 A18113452 L6700467 S7796235 38222-6 38222-6 Sensory perception:Find:Pt:Skin:Ord:Observed.Braden scale C1508134 A18267901 L5311301 S7357401 38223-4 38223-4 Physical activity:Find:Pt:^Patient:Ord:Observed.Braden scale C1508135 A18229168 L5313479 S7357845 38224-2 38224-2 Physical mobility:Find:Pt:^Patient:Ord:Observed.Braden scale C1507669 A18383876 L5313477 S7350241 38225-9 38225-9 Nutrition intake pattern:Find:Pt:^Patient:Ord:Observed.Braden scale C1507670 A18229170 L6702310 S7804471 38226-7 38226-7 Friction & sheer:Find:Pt:Skin:Ord:Observed.Braden scale C1507671 A18113456 L5313471 S7401838 38227-5 38227-5 Braden scale score.total:Find:Pt:^Patient:Ord:Observed.Braden scale C1507672 A18267904 L5312838 S7401843 38228-3 38228-3 Braden scale skin assessment panel:-:Pt:^Patient:- C1507673 A18383879 L6700193 S7793088 38229-1 38229-1",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 6,
+    "headerRowIndex": 0
+}

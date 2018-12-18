@@ -1,0 +1,77 @@
+{
+    "relation": [
+        [
+            "",
+            "1st of Month",
+            "Week 1",
+            "Week 2",
+            "Week 3",
+            "Week 4"
+        ],
+        [
+            "Floating",
+            "0",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Mon",
+            "",
+            "3",
+            "3",
+            "3",
+            "3"
+        ],
+        [
+            "Tues",
+            "",
+            "4",
+            "4",
+            "4",
+            "4"
+        ],
+        [
+            "Wed",
+            "",
+            "5",
+            "5",
+            "5",
+            "5"
+        ],
+        [
+            "Thurs",
+            "",
+            "6",
+            "6",
+            "6",
+            "6"
+        ],
+        [
+            "Fri",
+            "",
+            "2",
+            "2",
+            "2",
+            "2"
+        ]
+    ],
+    "pageTitle": "High-Level View of Backing Up and Restoring <meta http-equiv=\"refresh\" content=\"0;url='http://www.oracle.com/pls/topic/lookup?ctx=solaris11'\"> UFS File Systems (Task Map) (System Administration Guide: Devices and File Systems)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19082-01/819-2723/bkupconcepts-21/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00042-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 78600491,
+    "recordOffset": 78592289,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 28 Aug 2013 19:39:51 GMT",
+    "textBeforeTable": "Table\u00a024\u20136 Guidelines for Backup Schedules The following table provides guidelines for scheduling backups. For additional backup schedule considerations, see Considerations for Scheduling Backups. Guidelines for Scheduling Backups Weekly incremental \u2013 Copies the files that have changed during the week since the previous weekly backup. Weekly cumulative \u2013 Copies the files that have changed during the week and includes the previous week's file changes. Daily, incremental \u2013 Copies a day's worth of file changes so that you have distinct tapes of Monday's changes, Tuesday's changes, and so on. Daily, cumulative \u2013 Copies a day's worth of file changes on Monday. Then, overwrites Monday's backup with file changes from Tuesday, Wednesday, and so on. Copies only those files in the specified file system that have changed since a previous backup. Incremental backup types include the following:\u00a0 Incremental backup\u00a0 Copies a complete file system or directory. \u00a0 Full backup\u00a0 Creates a temporary image of a file system.\u00a0 Snapshot\u00a0 Definition\u00a0 Term\u00a0 The following table describes backup interval terms and definitions. Backup Interval Terms and",
+    "textAfterTable": "Figure\u00a024\u20132 Incremental Backup: Daily Incremental In the preceding example, you could have used the sequence 6, 7, 8, 9 followed by 2, or 5, 6, 7, 8 followed by 3. Remember, the numbers themselves have no defined meaning. You attribute meaning by ordering them in a specified sequence, as described in the examples. Sample Backup Schedules This section provides sample backup schedules. All schedules assume that you begin with a full backup (dump level 0), and that you use the -u option to record each backup in the /etc/dumpdates file. Example\u2014Daily Cumulative, Weekly Cumulative Backup Schedule Table\u00a024\u20137 shows the most commonly used incremental backup schedule. This schedule is recommended for most situations. With this schedule, the following occurs: Each day, all files that have changed since the lower-level backup at the end of the previous week are saved. For each weekday level 9 backup, the previous level 0 or level 5 backup is the closest backup at a lower level. Therefore, each weekday tape contains all the files that changed since the end of the previous week or the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

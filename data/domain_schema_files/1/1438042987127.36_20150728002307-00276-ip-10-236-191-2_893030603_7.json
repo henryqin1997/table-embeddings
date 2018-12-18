@@ -1,0 +1,91 @@
+{
+    "relation": [
+        [
+            "Type",
+            "Email",
+            "News",
+            "Contact",
+            "Events",
+            "Notes",
+            "Feeds",
+            "Bookmarks"
+        ],
+        [
+            "Serializer",
+            "yes",
+            "yes (1)",
+            "yes",
+            "yes",
+            "no",
+            "yes",
+            "yes"
+        ],
+        [
+            "Multipart Support",
+            "partial",
+            "partial (1)",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+        ],
+        [
+            "Models",
+            "MessageModel, MessageCollectionModel, threading proxy model",
+            "(1)",
+            "ContactModel",
+            "EventModel",
+            "-",
+            "Feeds, Items",
+            "-"
+        ],
+        [
+            "Views",
+            "?",
+            "(1)",
+            "-",
+            "-",
+            "-",
+            "?",
+            "-"
+        ],
+        [
+            "Resources",
+            "maildir, IMAP",
+            "NNTP",
+            "vCard, facebook, KRes",
+            "iCal, KRes",
+            "-",
+            "OPML",
+            "local bookmarks, del.icio.us"
+        ],
+        [
+            "Notes",
+            "threading agent",
+            "",
+            "",
+            "",
+            "not started yet",
+            "GSoC in playground/pim",
+            ""
+        ]
+    ],
+    "pageTitle": "Projects/PIM/Akonadi - KDE TechBase",
+    "title": "",
+    "url": "https://techbase.kde.org/index.php?title=Projects/PIM/Akonadi&oldid=58705",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987127.36/warc/CC-MAIN-20150728002307-00276-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 893066051,
+    "recordOffset": 893030603,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{19636=That's the stuff we want to have in 4.2, very roughly ordered by priority. Releases are scheduled for early January 2009., 13451=Urgent tasks that need to be finished for the KDE 4.1 release (May 19th):}",
+    "textBeforeTable": "Overview on the current state of support for various types: Supported Types [mailto: <>] Not using the scheduler to avoid the serialization of operations, see RSS resource. (This will get very complicated. Maybe use a proxy ResourceBase for this, which is thread-pooled?) Alternative for Akonadi::ResourceBase TO DO [mailto: <>] Item change notification do not yet include their source collections (real and virtual) Extended notifications IN PROGRESS [mailto: <>] Data and settings from pre-Akonadi times, see below Migration IN PROGRESS <Tobias> The libakonadi move as well as the huge API changes following it broke lots of the docs technical and content-wise, see below Fix API docs IN PROGRESS Volker <vkrause@kde.org> see below Action framework IN PROGRESS",
+    "textAfterTable": "(1) see Email Mail specific extensions Status Item Description Contact TO DO Share mail flag code Standard actions, standard flag enum/constants, Nepomuk interaction [mailto: <>] Event/Todo/Journal specific extensions Status Item Description Contact TO DO Todo proxy model See KOrganizers To-Do view <Bruno?> DONE Subtype identification See discussion on kde-pim mailinglist <Kevin> IN PROGRESS Agenda view KOrganizer agenda view based on Akonadi <Sergio,Kevin> TO DO",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

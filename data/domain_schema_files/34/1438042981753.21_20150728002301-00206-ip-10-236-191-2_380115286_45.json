@@ -1,0 +1,93 @@
+{
+    "relation": [
+        [
+            "Low Optimal",
+            "2K",
+            "64K",
+            "128K",
+            "512K",
+            "1M",
+            "2M",
+            "4M",
+            "8M",
+            "16M"
+        ],
+        [
+            "High Optimal",
+            "4K",
+            "128K",
+            "256K",
+            "1024K",
+            "2M",
+            "4M",
+            "8M",
+            "16M",
+            "32M"
+        ],
+        [
+            "Total Execs",
+            "4,384",
+            "16",
+            "2",
+            "105",
+            "25",
+            "4",
+            "6",
+            "2",
+            "2"
+        ],
+        [
+            "Optimal Execs",
+            "4,384",
+            "16",
+            "2",
+            "105",
+            "25",
+            "4",
+            "2",
+            "0",
+            "0"
+        ],
+        [
+            "1-Pass Execs",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "4",
+            "2",
+            "2"
+        ],
+        [
+            "M-Pass Execs",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ]
+    ],
+    "pageTitle": "AWR Report for DB: ORCL, Inst: orcl, Snaps: 769-770",
+    "title": "",
+    "url": "http://www.databasejournal.com/img/Oracle_11gR2_IO_Performance_Tuning_AWR_Report.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 45,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981753.21/warc/CC-MAIN-20150728002301-00206-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 380170207,
+    "recordOffset": 380115286,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 27 Jul 2010 19:30:34 GMT",
+    "textBeforeTable": "Top 5 Timed Foreground Events 64.49 87.12 % Memory for SQL w/exec>1: 60.96 90.84 % SQL with executions>1: 47.58 81.68 Memory Usage %: End Begin Shared Pool Statistics 85.48 % Non-Parse CPU: 15.43 Parse CPU to Parse Elapsd %: 99.99 Latch Hit %: 57.02 Execute to Parse %: 90.22 Soft Parse %: 92.34 Library Hit %: 99.95 In-memory Sort %: 93.43 Buffer Hit %: 100.00 Redo NoWait %: 99.96 Buffer Nowait %: Instance Efficiency Percentages (Target 100%) \u00a0 \u00a0 \u00a0 0.2 Transactions: \u00a0 \u00a0 0.0 0.0 Rollbacks: \u00a0 \u00a0 114.8 23.4 Executes: \u00a0 \u00a0 0.4 0.1 Logons: \u00a0 \u00a0",
+    "textAfterTable": "5.3 14.0 0.0 Memory Statistics Begin End Host Mem (MB): 1,470.5 1,470.5 SGA use (MB): 752.0 752.0 PGA use (MB): 196.4 223.4 % Host Mem used for SGA+PGA: 64.50 66.33 Main Report Report Summary Wait Events Statistics SQL Statistics Instance Activity Statistics IO Stats Buffer Pool Statistics Advisory Statistics Wait Statistics Undo Statistics Latch Statistics Segment Statistics Dictionary Cache Statistics Library Cache Statistics Memory Statistics Streams Statistics Resource Limit Statistics Shared Server Statistics init.ora Parameters Back to Top Wait Events Statistics Time Model Statistics Operating System Statistics Operating System Statistics - Detail Foreground Wait Class Foreground Wait Events",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

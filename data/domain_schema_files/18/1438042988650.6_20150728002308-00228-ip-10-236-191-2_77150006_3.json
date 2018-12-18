@@ -1,0 +1,93 @@
+{
+    "relation": [
+        [
+            "Product Type",
+            "Cisco 7000",
+            "Cisco 7010",
+            "AGS+",
+            "MGS",
+            "Cisco 2500",
+            "Cisco 4000",
+            "Cisco 4500",
+            "Cisco 3104",
+            "Cisco 3204"
+        ],
+        [
+            "NRZ/NRZI",
+            "Both",
+            "Both",
+            "Both",
+            "Both",
+            "Both",
+            "Both",
+            "Both",
+            "Both",
+            "Both"
+        ],
+        [
+            "DTE/DCE",
+            "Both",
+            "Both",
+            "Both",
+            "Both",
+            "Both",
+            "Both",
+            "Both",
+            "Both",
+            "Both"
+        ],
+        [
+            "Full Duplex",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes"
+        ],
+        [
+            "Half Duplex",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "4T card only",
+            "4T card only",
+            "Dual serial card only",
+            "Dual serial card only"
+        ],
+        [
+            "Maximum MTU",
+            "4 KB",
+            "4 KB",
+            "4 KB",
+            "4 KB",
+            "8 KB",
+            "8 KB",
+            "8 KB",
+            "8 KB",
+            "8 KB"
+        ]
+    ],
+    "pageTitle": "Internetwork Design Guide -- Designing SDLC, SDLLC, and QLLC Internetworks - DocWiki",
+    "title": "",
+    "url": "http://docwiki.cisco.com/w/index.php?title=Internetwork_Design_Guide_--_Designing_SDLC,_SDLLC,_and_QLLC_Internetworks&diff=18582&oldid=18581",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00228-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 77177467,
+    "recordOffset": 77150006,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{64314=queue-list 2 protocol ip 3 tcp 1991, 63923=priority-list 4 protocol ip high tcp 1994, 64404=priority-list 4 protocol ip low tcp 1990, 64243=priority-list 4 protocol ip normal tcp 1991, 24251=Cisco 2500, 64153=queue-list 2 protocol ip 2 tcp 1992, 28880=000 P/F 0011 000 F 0111 000 P 0111 000 F 1111 010 F 0011 010 P 0111 011 F 0011 100 P 0011 110 P 1111 100 F 0111 101 P/F 1111 111 P/F 0011, 29886=RRR P/F 0001 RRR P/F 0101 RRR P/F 1101, 63992=queue-list 2 protocol ip 1 tcp 1994, 64082=priority-list 4 protocol ip medium tcp 1992, 64472=queue-list 2 protocol ip 4 tcp 1990}",
+    "textBeforeTable": "Table: SDLC Support for V.24 (EIA/TIA-232) This section provides information related to router-specific hardware implementation. Table: SDLC Support for V.24 (EIA/TIA-232) provides a matrix of SDLC support for V.24. Supported Data-Link Configurations The SDLC data link allows a reliable exchange of information over a communication facility between SNA devices. The protocol synchronizes receivers and transmitters and detects transmission errors. It accomplishes these functions by acknowledging frame receipt and by performing a cyclic redundancy check (CRC) on the data. Common physical link-layer implementations are V.24 (EIA/TIA-232, formerly RS-232), V.35, and X.21. This section describes SDLC as it applies to STUN. SDLC is the synchronous, bit-oriented protocol used by the SNA data-link control layer. As formally defined by IBM, SDLC is a line discipline for managing synchronous, code-transparent, serially transmitted bit information over a data link. Transmission exchanges can be full duplex or half duplex and can occur over switched or nonswitched links. The configuration of the link connection can be point-to-point, multidrop, or loop. SDLC Data Link Figure: Sample STUN network configuration Figure: Sample STUN network configuration illustrates elements of STUN configuration in an environment that includes front-end processors (FEPs) and cluster controllers. SDLC",
+    "textAfterTable": "The following notes apply to the entries in Table: SDLC Support for V.24 (EIA/TIA-232): For the Cisco 7000, Cisco 4000, Cisco 4500, and Cisco 3000 products, support of data terminal equipment (DTE) or data communications equipment (DCE) functionality depends on which cable is used. For the AGS+ and MGS, if you are using a nonreturn to zero inverted (NRZI) applique, the systems support DCE natively. A special cable is required to support DTE mode operation. Prior to the availability of the NRZI applique, customers specifically ordered a DCE or DTE applique. Half-duplex support is available for the AGS+ and MGS with Software Release 9.1(7) or later. The NRZI applique, three-port SCI card, and Software Release 9.1(7) or later are all required for half-duplex support. Prior to software releases 8.3(6), 9.0(3), or 9.1(2), only 2-KB frame sizes were supported. When increasing maximum transmission unit (MTU) size, consider interface card buffer memory size constraints. SDLC Frame Format The SDLC frame format is illustrated in Figure: SDLC frame format. Figure: SDLC frame format The Flag field starts and ends the frame and initiates and terminates error checking. When the link is idle, the router sends streaming flags to",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

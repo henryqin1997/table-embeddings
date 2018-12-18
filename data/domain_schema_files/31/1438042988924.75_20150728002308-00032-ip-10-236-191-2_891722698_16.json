@@ -1,0 +1,91 @@
+{
+    "relation": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "My Output",
+            "OnPass",
+            "OnPass",
+            "OnPass",
+            "OnPass",
+            "OnPass",
+            "OnPass",
+            "OnPass"
+        ],
+        [
+            "Target Entity",
+            "CP_A_1_Model",
+            "Bomb_CapArea",
+            "Round_Timer",
+            "Track_A_23",
+            "cap_sound",
+            "Bomb_Sparks",
+            "CP_A_1"
+        ],
+        [
+            "Target Input",
+            "Skin",
+            "CaptureCurrentCP",
+            "AddTeamTime",
+            "DisablePath",
+            "PlaySound",
+            "StopSpark",
+            "SetOwner"
+        ],
+        [
+            "Parameter",
+            "1",
+            "",
+            "3 240",
+            "",
+            "",
+            "",
+            "3"
+        ],
+        [
+            "Delay",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.10"
+        ],
+        [
+            "Only Once",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes"
+        ]
+    ],
+    "pageTitle": "TF2/Creating a Payload Map - Valve Developer Community",
+    "title": "",
+    "url": "https://developer.valvesoftware.com/wiki/TF2/Creating_a_Payload_Map",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 16,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988924.75/warc/CC-MAIN-20150728002308-00032-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 891740795,
+    "recordOffset": 891722698,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 31 Jul 2015 09:10:44 GMT",
+    "textBeforeTable": "Create a logic_auto entity and select the outputs tab. Create a tf_gamerules and name it GameRules. For this tutorial there is only 1 round but has been made with other rounds in mind. Game Rules and Logic Setting up the round 9 See also 8 Conclusion 7.3.1 Timeline 7.3 Final Explosion 7.2.3 Barrels in Pit 7.2.2 Doors to Pit 7.2.1 Pit Model 7.2 Explode Pit 7.1 Final Capture Point 7 Final Terminus 6.4 Capture Bell 6.3 Sparks 6.2 Flashing Light 6.1 Dispenser Beam 6 Additional Effects 5 Train Watcher 4.2 End point cap 4.1 Mid point cap 4 Adding a Capture Point 3 Building the Track",
+    "textAfterTable": "Property Name Description Value Name Name of the entity CP_Master Start Disabled Self-explanatory No Cap Layout Self-explanatory Restrict team from winning Self-explanatory Red Switch teams on map win? Self-explanatory Yes Scoring Style Self-explanatory Add team score for each captured point Play all rounds before changelevel Self-explanatory Only changelevel after all mini-rounds have been played to completion Partial cap rate Rate at which to give partial cap points for area captures 0.1 Note: Use Changelevel normally for the property \"Play all round before changelevel\" if you are designing a single-stage payload level. Round Entities Next, an entity must be set up for each round in a round-based payload map. Note: This entity is unnecessary for a single-stage payload level. Create a team_control_point_round entity, and name it Round_A. Set the",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

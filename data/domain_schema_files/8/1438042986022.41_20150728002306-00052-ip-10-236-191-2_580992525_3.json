@@ -1,0 +1,72 @@
+{
+    "relation": [
+        [
+            "Automatically generated error bar/Manually determined error bar",
+            "Above 300%",
+            "Between 200 and 300%",
+            "Between 150 and 200%",
+            "Between 66.7 and 150%",
+            "Between 50 and 66.7%",
+            "Between 33.3 and 50%",
+            "Below 33.3%"
+        ],
+        [
+            "Temperature (\u22121 m)",
+            "13 (0.5%)",
+            "166 (6.2%)",
+            "119 (4.5%)",
+            "2,131 (79.8%)",
+            "108 (4.0%)",
+            "92 (3.4%)",
+            "43 (1.6%)"
+        ],
+        [
+            "Temperature (\u22129.5 m)",
+            "1 (0.0%)",
+            "339 (12.7%)",
+            "84 (3.1%)",
+            "2,224 (83.2%)",
+            "9 (0.3%)",
+            "7 (0.3%)",
+            "8 (0.3%)"
+        ],
+        [
+            "Conductivity (\u22121 m)",
+            "547 (20.5%)",
+            "268 (10.0%)",
+            "336 (12.6%)",
+            "980 (36.6%)",
+            "99 (3.7%)",
+            "177 (6.6%)",
+            "265 (9.9%)"
+        ],
+        [
+            "Conductivity (\u22129.5 m)",
+            "537 (20.1%)",
+            "365 (13.7%)",
+            "342 (12.8%)",
+            "993 (37.2%)",
+            "138 (5.2%)",
+            "140 (5.2%)",
+            "157 (5.9%)"
+        ]
+    ],
+    "pageTitle": "Introduction",
+    "title": "",
+    "url": "http://www.mdpi.com/1424-8220/11/10/9589/xml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986022.41/warc/CC-MAIN-20150728002306-00052-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 581012239,
+    "recordOffset": 580992525,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{27266=The system was initially applied to data collected at the CSIRO Wharf in Hobart between 25 August and 5 November 2010. This node was composed of two EC-250 temperature and conductivity sensors fixed to the wharf, one at a depth of 1.0 m below chart datum and the other at a depth of 9.5 m below chart datum (chart datum was at the level of the lowest possible astronomical low tide). The sensors were field calibrated in early September 2010, following their deployment on 25 August 2010., 72327=\u03b1small was assigned a value equal to the sensor accuracy quoted by the manufacturer; the other coefficients were multiples of \u03b1small that were chosen empirically by trial and error using early 2008 data as a training set. Table 3 lists the values of \u03b1 obtained.}",
+    "lastModified": "Thu, 14 May 2015 11:46:43 GMT",
+    "textBeforeTable": "Membership functions for the parameters contributing to data quality. Table 1. Shallow water temperature with manually calculated and automatically generated error bars for a period late in the sensor deployment. Figure 5. Shallow water temperature with manually calculated and automatically generated error bars for a period early in the sensor deployment. Figure 4. Conductivity data, at a depth of one meter at the CSIRO Wharf, showing an example of a plateau followed by a drop in sensor data quality. Figure 3. Membership function for the parameter, time since last maintenance, for a number of sensors used in the TasMAN network. Figure 2. Location of node deployments and planned nodes in the TasMAN network. Figure 1. Figures and Tables 86 2003 Tasmania, Australia Derwent Estuary Program, Department of Primary Industries, Water and the Environment State of the Derwent Estuary 2003: A Review of Pollution Sources, Loads and Environmental Quality Data from 1997\u20132003 C Coughanowr G Green 20. 48 43 1 and 2 11\u201314 May 2009 Bremen, Germany Proceedings",
+    "textAfterTable": ">10.5% Table 2. Thresholds applied to physical parameters of temperature and conductivity. Parameter Minimum value accepted Maximum value accepted Temperature (\u00b0C) 5 25 Conductivity (\u03bcS/cm) 25,000 60,000 Table 3. Empirically determined coefficients used in Equation (3) . Parameter Small Medium Large Temperature (\u00b0C) 0.1 0.3 1.2 Conductivity (\u03bcS/cm) 200 1,000 8,000 Table 3. Ratio of automatically generated to manually determined error bars (expressed as a percentage) for eleven days chosen to be representative of the sensor deployment period. Automatically generated error bar/Manually determined error bar Temperature (\u22121 m) Temperature (\u22129.5 m) Conductivity (\u22121 m) Conductivity (\u22129.5 m) Above 300% 13 (0.5%)",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

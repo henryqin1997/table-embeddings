@@ -1,0 +1,83 @@
+{
+    "relation": [
+        [
+            "input type",
+            "str",
+            "str",
+            "str",
+            "str",
+            "str",
+            "str",
+            "str",
+            "int",
+            "ip"
+        ],
+        [
+            "match method",
+            "str",
+            "beg",
+            "sub",
+            "dir",
+            "dom",
+            "end",
+            "reg",
+            "int",
+            "ip"
+        ],
+        [
+            "output type str",
+            "map_str",
+            "map_beg",
+            "map_sub",
+            "map_dir",
+            "map_dom",
+            "map_end",
+            "map_reg",
+            "map_int",
+            "map_ip"
+        ],
+        [
+            "output type int",
+            "map_str_int",
+            "map_beg_int",
+            "map_sub_int",
+            "map_dir_int",
+            "map_dom_int",
+            "map_end_int",
+            "map_reg_int",
+            "map_int_int",
+            "map_ip_int"
+        ],
+        [
+            "output type ip",
+            "map_str_ip",
+            "map_end_ip",
+            "map_sub_ip",
+            "map_dir_ip",
+            "map_dom_ip",
+            "map_end_ip",
+            "map_reg_ip",
+            "map_int_ip",
+            "map_ip_ip"
+        ]
+    ],
+    "pageTitle": "HAProxy version 1.5.14 - Configuration Manual",
+    "title": "",
+    "url": "http://cbonte.github.io/haproxy-dconv/configuration-1.5.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 154,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00083-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 40437359,
+    "recordOffset": 40263406,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{131104=Converted with haproxy-dconv v0.3.1-27 on 2015/07/03, 130730=version 1.5.14, 130684=willy tarreau 2015/07/02}",
+    "TableContextTimeStampAfterTable": "{79875=May be used in sections :}",
+    "lastModified": "Wed, 29 Jul 2015 16:01:39 GMT",
+    "textBeforeTable": "specified in a previous \"defaults\" section. with \"default\" in order to restore default settings regardless of what has been and must be disabled for a specific instance. Such options may also be prefixed option contstats\". This makes sense when the option has been enabled by default marked with \"(*)\" can be optionally inverted using the \"no\" prefix, eg. \"no limited, and there are new recommended keywords to replace them. Keywords they are inherited from an old syntax which may be confusing or functionally limited set of section types. Some of them are marked as \"deprecated\" because The following list of keywords is supported. Most of them may only be used in a  4.1. Proxy keywords matrix   FCL | FCL | FCL | FCL | FCL | FCL ----+-----+-----+-----+-----+---- SCL | SCL | SCL | FCL | SCL | FCL ----+-----+-----+-----+-----+---- mode PCL | PCL | PCL | PCL | FCL | FCL Frontend ----+-----+-----+-----+-----+---- TUN | TUN | TUN | PCL | SCL | FCL ----+-----+-----+-----+-----+---- KAL | KAL | TUN | PCL | SCL | FCL ----+-----+-----+-----+-----+---- | KAL | TUN | PCL | SCL | FCL Backend mode weakest option and force close is the strongest. following matrix, but in short, the modes are symmetric, keep-alive is the frontend and a backend can be determined by both proxy modes according to the The effective mode that will be applied to a connection passing through a",
+    "textAfterTable": "capture response header \u00a0 \u00a0 (deprecated)clitimeout \u00a0 compression (deprecated)contimeout \u00a0 cookie \u00a0 default-server \u00a0 default_backend \u00a0 description \u00a0 disabled dispatch \u00a0 \u00a0",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

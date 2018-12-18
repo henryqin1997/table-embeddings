@@ -1,0 +1,86 @@
+{
+    "relation": [
+        [
+            "Feature",
+            "Create Page",
+            "Edit Page",
+            "Delete Page",
+            "Annotate Page",
+            "Comment on Page",
+            "Attach to Page",
+            "See all actions",
+            "See all actions in detail"
+        ],
+        [
+            "Steps to follow",
+            "Create a page; Go to main page;",
+            "Create a page; Edit the page again, and press \"Save and View\" Go to main page;",
+            "Delete a page; Go to main page;",
+            "Annotate a page; Go to main page;",
+            "Comment on a page; Go to main page;",
+            "Add an attachment to a page; Go to main page;",
+            "Go to main page; Press on the small arrow pointing down",
+            "Go to main page; Press on the small arrow pointing down; Some of the actions from the list have their own arrow; Press each arrow and see more details regarding that action"
+        ],
+        [
+            "Expected Result",
+            "See if the small icon denoting page creation is visible under your user",
+            "See if the small icon denoting page editing is visible under your user",
+            "See if the small icon denoting page deletion is visible under with user",
+            "See if the small icon denoting page annotation is visible with your user",
+            "See if the small icon denoting page comment is visible with your user",
+            "See if the small icon denoting adding attachment is visible with your user",
+            "Drop down should expand; All previous actions should be visible",
+            "Drop down should expand; All previous actions should be visible"
+        ],
+        [
+            "Result",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "JIRA",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+        ],
+        [
+            "Other Issues",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+        ]
+    ],
+    "pageTitle": "Manual Test Report for XE 3.4 M1 (TestReports.ManualTestReportXE34RC1) - XWiki.org",
+    "title": "",
+    "url": "http://www.xwiki.org/xwiki/bin/view/TestReports/ManualTestReportXE34RC1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 10,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044271733.81/warc/CC-MAIN-20150728004431-00181-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 842328835,
+    "recordOffset": 842297347,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Register/Log-In/Log-Out Features Spaces Macro (from Home Page) Attachment Selector Macro Dashboards Macro Macros User Status Search Suggest Search Document index Space index Document Index Panels Color Themes Blog Tags Information History Attachments Annotations Comments Comments/Annotations/Attachments/History/Information Tabs Search Suggest Wiki Administration Space Administration Administration Objects & Classes Editing Access Rights WYSIWYG Editor Wiki Editor Action Stream \"More Actions\" Menu \"Export\" Menu \"Edit\" Menu \"Profile\" Menu \"Page\" Menu \"Space\" Menu \"Wiki\" Menu \"Add\" Menu Action Menus User Profile Register/Log-In/Log-Out Features Jira Digest Conclusions Current Progress Introduction Important JIRAS: XWIKI-7254 Jira Digest Conclusions 16 Chrome 9.0.1 Firefox 3.6.23 Firefox",
+    "textAfterTable": "User Profile Feature\u00a0 Steps to follow Expected Result Result JIRA Other Issues \"Profile Page\" Click on \"Profile\"; Click \"Switch to Advanced edit mode\"; Click \"Save & View\" Changes are saved -\u00a0 - \"Profile Page\" Click on \"Profile\" ; Click \"Switch to Simple edit mode\"; Click \"Save & View\" Changes are saved -\u00a0 - \"Profile Page\" Click on \"Profile\" ; Click \"Default editor to use\"; Select \"Wiki\"; Click \"Save & View\" Changes are saved; Go to a page and click \"Edit\"; Wiki editor should load -\u00a0 - \"Profile Page\" Click on \"Profile\" ; Click \"Default editor to use\"; Select \"WYSIWYG\"; Click \"Save & View\" Changes are saved; Go to a page and click \"Edit\"; WYSIWYG editor should load -\u00a0 - \"Change your password\"\u00a0 Click on \"Profile\" ; Click \"Change your password\"; Fill in the new password; Reenter the password; Click \"Update\"\u00a0 Changes are saved -\u00a0 - \"Modify your profile\" Click on \"Profile\"; Click \"Modify your profile\"; Change your profile; Click \"Preview\"; Click \"Back to Edit\"\u00a0 Redirect to Edit page -\u00a0 - \"Modify your profile\" Click on \"Profile\"; Click \"Modify your profile\"; Change your profile; Click \"Save & Continue\"\u00a0 Changes are saved - \"Modify your profile\"\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

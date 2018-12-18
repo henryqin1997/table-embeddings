@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "Date",
+            "2012-04",
+            "2012-04",
+            "2012-04",
+            "2012-11",
+            "2013-03"
+        ],
+        [
+            "Arch",
+            "Intel 64-bit",
+            "Intel 64-bit",
+            "Intel 32-bit",
+            "Intel 64-bit",
+            "Intel 64-bit"
+        ],
+        [
+            "OS/XCode",
+            "Lion (10.7.3), XCode 4.3",
+            "Lion (10.7.3), Xcode 4.3",
+            "Snow Leopard (10.6.8), Xcode 3.2.6",
+            "Mountain Lion (10.8.2), Xcode 4.5.2",
+            "Mountain Lion (10.8.3), Xcode 4.6.1"
+        ],
+        [
+            "GHC",
+            "7.4.1",
+            "7.0.4",
+            "7.0.4",
+            "7.4.2",
+            "7.4.2"
+        ],
+        [
+            "Haskell Platform",
+            "",
+            "2011.4.0.0",
+            "2011.4.0.0",
+            "2012.4.0.0",
+            "2012.4.0.0 (64)"
+        ],
+        [
+            "wxWidgets",
+            "2.9.3 (HomeBrew)",
+            "2.9.3 (HomeBrew)",
+            "2.9.3 (MacPorts)",
+            "2.9.4",
+            "2.9.4"
+        ],
+        [
+            "wxHaskell",
+            "0.90 (see notes)",
+            "0.90",
+            "0.90 (see notes)",
+            "0.90.0.1 (see notes)",
+            "0.90.0.1"
+        ]
+    ],
+    "pageTitle": "WxHaskell/Mac - HaskellWiki",
+    "title": "",
+    "url": "https://wiki.haskell.org/index.php?title=WxHaskell/Mac&diff=next&oldid=54942",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043058631.99/warc/CC-MAIN-20150728002418-00242-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 903105304,
+    "recordOffset": 903097102,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "2 Known working configurations (see note 2012-04-24-MacPorts if you use MacPorts) ./HelloWorld.app/Contents/MacOS/HelloWorld cabal-macosx HelloWorld Compile and run a sample wxcore application: ghc --make HelloWorld.hs Now it's time to install the wxHaskell libraries proper:  cabal install wx cabal-macosx   (OS X 10.6 or below) Check your path to make sure you are using your wxWidgets and not the default Mac one. The command  which wx-config should not return the file path /usr/bin/wx-config.   make && make install --enable-richtext --enable-webkit --with-opengl --enable-propgrid --enable-xrc --enable-ribbon --prefix=/usr/local --enable-stc --enable-aui ./configure --enable-unicode --disable-debug --with-osx_cocoa Manual installation is not recommended, but if you want to do it anyway, download the source code and install it with the following flags  If you use the MacPorts package manager:  sudo port install wxWidgets-devel +universal   If you use the HomeBrew package manager: brew install wxmac --devel or on Lion, possibly brew install wxmac --use-llvm --devel   Install wxWidgets 2.9 by hand Install the Developer Tools  1 Installing on MacOS X   5 Troubleshooting 4 Using wxHaskell on MacOS X platforms 3 Notes 2 Known working configurations 1",
+    "textAfterTable": "3 Notes These notes tend to be a bit ephemeral and are thus dated to help you figure out if they may still apply or not. 2012-04-24 MacPorts: If you use MacPorts, you may run into a problem with the iconv library. Tell GHC that you prefer the system libraries first: ghc HelloWorld.hs -L/usr/lib 2012-04-17: The MacPorts version of wxWidgets 2.9.3 can be used. I added a few flags to the Portfile, but they are probably not necessary. 2012-04-14: On MacOS X Lion, to install wxWidgets 2.9 with HomeBrew, you may need to run brew install wxmac --use-llvm --devel 4 Using wxHaskell on MacOS X platforms Even though graphical applications on MacOS X look great, it is a still a developers nightmare to get them working\u00a0:-). This page describes how to circumvent some of the pitfalls. Executables generated with GHC do not work when executed directly if they use the graphical API; they need to be upgraded into so called application bundles for MacOS X. Use the cabal-macosx package to automate this. It can be integrated with Cabal and/or used as a standalone macosx-app script. Note: The following no longer applies to wxcore >= 0.90.0.1. Due to complicated MacOS X restrictions, graphical wxHaskell applications do not work directly when used from GHCi. Fortunately, Wolfgang Thaller has kindly provided an ingenious",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

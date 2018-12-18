@@ -1,0 +1,129 @@
+{
+    "relation": [
+        [
+            "",
+            "GTK+",
+            "Qt/Qt Extended",
+            "Middleware",
+            "Java",
+            "Python",
+            "Mono"
+        ],
+        [
+            "Om 2008.12",
+            "??",
+            "??",
+            "??",
+            "??",
+            "??",
+            "??"
+        ],
+        [
+            "Om 2008.9",
+            "??",
+            "??",
+            "??",
+            "??",
+            "??",
+            "??"
+        ],
+        [
+            "Om 2008.8",
+            "yes",
+            "yes",
+            "qtopia-x11",
+            "Jalimo",
+            "yes",
+            "yes (1)"
+        ],
+        [
+            "2007.2",
+            "yes",
+            "no",
+            "gsmd/neod",
+            "Jalimo",
+            "yes",
+            "yes (1)"
+        ],
+        [
+            "FSO",
+            "yes",
+            "yes ?",
+            "FSO",
+            "Jalimo",
+            "yes",
+            "??"
+        ],
+        [
+            "SHR",
+            "yes",
+            "yes ?",
+            "FSO",
+            "Jalimo",
+            "yes",
+            "no"
+        ],
+        [
+            "FDOM",
+            "yes",
+            "yes",
+            "qtopia-x11",
+            "yes",
+            "yes",
+            "??"
+        ],
+        [
+            "Qt Extended",
+            "no",
+            "yes",
+            "Qt Extended",
+            "??",
+            "yes",
+            "??"
+        ],
+        [
+            "Debian",
+            "yes",
+            "yes",
+            "FSO",
+            "CacaoVM, JamVM",
+            "yes",
+            "yes (1)"
+        ],
+        [
+            "Gentoo",
+            "??",
+            "??",
+            "??",
+            "??",
+            "??",
+            "??"
+        ],
+        [
+            "Android",
+            "??",
+            "??",
+            "??",
+            "??",
+            "??",
+            "??"
+        ]
+    ],
+    "pageTitle": "Distributions/de - Openmoko",
+    "title": "",
+    "url": "http://wiki.openmoko.org/index.php?title=Distributions/de&diff=62293&oldid=62292",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 10,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992201.62/warc/CC-MAIN-20150728002312-00323-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 263427775,
+    "recordOffset": 263394897,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{24794=Das Om 2008.9 Update is das erste Point-Release nach dem urspr\u00fcnglichen OM 2008.8 Release. Openmoko empfiehlt alle vorhandenen Installationen des Om 2008.8 auf diese Version zu updaten. Wir sind weiterhin weit vom angepeilten Qualit\u00e4tsziel entfernt, jedoch enth\u00e4lt diese Version grundlegende stabilit\u00e4tserweiternde Verbesserungen am Betriebssystem und einen neuen Splash-Screen. Es wurden keine Anwendungen hinzugef\u00fcgt oder entfernt. Nutzer mit den Anforderungen grundlegenden Anforderungen an ein Telefon empfinden es als so nutzbar wie ein allt\u00e4gliches Smartphone., 25663=Om 2008.8 wurde am 8. August 2008 ver\u00f6ffentlicht und ersetzt die Om 2007.2. Zuvor war ihr Codename ASU (April/August Software Update). Dies ist nach wie vor der Name ihrer Branch im Version Control System. Diese Distribution integriert das Qtopia Paket, mit einer Menge neuer Openmoko Anwendungen welche auf den Enlightenment Foundation Bibliotheken basieren. Da Qtopia ein ausgereifteres Projekt als die GNOME Mobile Plattform ist, arbeiten die Mobiltelefon Anwendungen (dialer, contacts, calculator, calendar) besser als in der 2007.2. Das in 2008.8 verwendete Qtopia Projekt wurde portiert um, im Gegensatz zum standard Qtopia, welches den Framebuffer nutzt, unter X11 zu arbeiten. Dies erlaubt nicht-Qt Anwendungen sich sicher den Schirm mit Qt Anwendungen zu teilen. Es handelt sich hierbei um ein .0 Release, viele ungel\u00f6ste Probleme verbleiben auf den unteren Schichten (kernel power management, sound, wifi drivers...)., 29631=SHR ist eine von der Community vorangetriebene Distribution. Mometan gibt es einen EFL dialer, Nachrichten und Kontakt Anwendungen welche in C geschrieben wurden. Bis zum 9. November 2008 gibt es kein 'stable Release' dieser Distribution, da das SHR Team nicht der Ansicht ist, sie sei gut genug. Images sind hier zu finden: SHR buildhost., 37829=Status: Aktiv, Fragen: #neo1973-germany, 28013=FSO ist eine Abk\u00fcrzung f\u00fcr FreeSmartphone.Org. Openmoko arbeitet an einem Stabilen services back-end. Das Hauptaugenmerk liegt auf stabilen highlevel services die man in jeder beliebigen Sprache oder mit jedem UI das dbus unterst\u00fctzt nutzen kann. Das Framwork wird in nachfolgenden Openmoko Distributionen genutzt werden. FSO ist reine Middle-Ware, aber wenn man einen Bootloader&Kernel darunter und Telephonie Anwendungen dar\u00fcber platziert, erh\u00e4lt man eine funktionierende Distribution. Diese werden als FSO-image Meilensteine zur Verf\u00fcgung gestellt. Openmoko Framework Image milestone IV wurde am 11. November 2008 released und 'Homework' genannt. Es wird berichtet, dass obwohl das FSO Projekt noch in den Kinderschuhen steckt, der phone Server bereits stabiler ist als sonst irgendwo. Der Kernel darunter ist ein Linux 2.6.24 Kernel mit separiert Modulen. Die Telephonie Anwendung dar\u00fcber ist Zhone. Sie ist ein Python basierter dialer/homescreen, welcher als Grundlage um die FSO Funktionen zu testen entworfen wurde. Auch wenn Zhone gut aussieht, ist code path coverage wichtiger als Benutzerfreundlichkeit., 26957=Om 2007.2 ist das Basis-System, das auf dem FreeRunner installiert ist, wenn es die Fabrik verl\u00e4sst. Das Interface was v\u00f6llig auf die Bedienung \u00fcber Finger ausgelegt, auf 285ppi angepasst und sehr orange. Es nutzte das GTK+ Paket, welches Teil der GNOME Mobile Plattform ist. Diese Distribution wird inzwischen als veraltet betrachtet und nicht weiter von Openmoko Inc. oder OpenedHand bearbeitet und gewartet. Es gibt Bem\u00fchungen der Community (Hackable:1) die GTK basierten Telephonie Anwendungen auf die k\u00fcnftige Middle-Ware von FSOzu portieren., 17318=Openmoko Distributionen wurden entwickelt um auf verschiedenen Mobilen Ger\u00e4ten zu arbeiten, allen voran den Openmoko Inc.'s Neo 1973 und Neo FreeRunner Mobiltelefonen. Es sind GNU/Linux Distributionen -- komplette Betriebssysteme mit mit Anwendungen, die mehr oder weniger f\u00fcr Endbenutzer geeignet sind. Sie k\u00f6nnen jede dieser Distributionen auf ihrem Smartphone installieren, oder sogar ein Multiboot System einrichten mit zwei installierten Distributionen.}",
+    "textBeforeTable": "Toolkits / Runtimes yes \u00a0?? yes (1) yes yes yes \u00a0? yes yes (1) \u00a0?? \u00a0?? Media Player \u00a0?? yes (1) yes yes \u00a0? \u00a0? yes (1) yes (1) \u00a0?? \u00a0?? XMPP Client yes \u00a0?? yes (1) yes yes \u00a0? \u00a0? \u00a0? yes \u00a0?? \u00a0?? Mail Client yes \u00a0?? yes (1) yes yes yes \u00a0? yes (1) yes (1) \u00a0?? \u00a0?? Web Browser yes \u00a0?? yes (1) yes yes yes yes yes yes \u00a0?? \u00a0?? Dialer yes \u00a0?? yes (1) yes yes yes yes yes yes \u00a0?? \u00a0?? Phonebook \u00a0?? \u00a0?? yes (1) yes yes",
+    "textAfterTable": "Images Latest and stable combinations for Neo FreeRunner gta02 OM FDOM Qt Extended Android current bootloader U-Boot from OM daily version gta02v5_and_up U-Boot from OM daily version gta02v5_and_up U-Boot from OM daily version gta02v5_and_up future bootloader Qi from Andy latest qi-andy.udfu Qi from Andy latest qi-andy.udfu Qi from Andy latest qi-andy.udfu splash U-Boot from OM releases or OM daily latest splash.gz U-Boot from OM releases or OM daily latest splash.gz U-Boot from OM releases or OM daily latest splash.gz kernel Linux from",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

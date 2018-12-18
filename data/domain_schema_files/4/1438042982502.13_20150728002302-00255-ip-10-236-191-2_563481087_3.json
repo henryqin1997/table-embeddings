@@ -1,0 +1,111 @@
+{
+    "relation": [
+        [
+            "1999\\2002",
+            "Agriculture",
+            "Bare land",
+            "Built-up area",
+            "Grassland",
+            "Sparse forest",
+            "Water body",
+            "Total cell",
+            "Changing Trend"
+        ],
+        [
+            "Agriculture",
+            "2018",
+            "187",
+            "81",
+            "5734",
+            "2950",
+            "30",
+            "11000",
+            "2232"
+        ],
+        [
+            "Bare land",
+            "63",
+            "279",
+            "179",
+            "770",
+            "554",
+            "23",
+            "1868",
+            "\u2212780"
+        ],
+        [
+            "Built-up area",
+            "529",
+            "737",
+            "15937",
+            "4445",
+            "1289",
+            "1697",
+            "24634",
+            "+4680"
+        ],
+        [
+            "Grassland",
+            "3841",
+            "1288",
+            "3278",
+            "20955",
+            "15547",
+            "617",
+            "45526",
+            "+1984"
+        ],
+        [
+            "Sparse forest",
+            "2275",
+            "148",
+            "324",
+            "11587",
+            "28763",
+            "160",
+            "43257",
+            "\u22125884"
+        ],
+        [
+            "Water body",
+            "42",
+            "9",
+            "155",
+            "51",
+            "38",
+            "15089",
+            "15384",
+            "\u22122232"
+        ],
+        [
+            "Total cell",
+            "8768",
+            "2648",
+            "19954",
+            "43542",
+            "49141",
+            "17616",
+            "141669",
+            ""
+        ]
+    ],
+    "pageTitle": "1. Introduction",
+    "title": "",
+    "url": "http://www.mdpi.com/2071-1050/5/4/1480/xml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00255-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 563508911,
+    "recordOffset": 563481087,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{13696=Thailand, a developing country in Southeast Asia, is experiencing rapid development, particularly urban growth as a response to the expansion of the tourism industry. Hua Hin city provides an excellent example of an area where urbanization has flourished due to tourism. This study focuses on how the dynamic urban horizontal expansion of the seaside city of Hua Hin is constrained by the coast, thus making sustainability for this popular tourist destination\u2014managing and planning for its local inhabitants, its visitors, and its sites\u2014an issue. The study examines the association of land use type and land use change by integrating Geo-Information technology, a statistic model, and CA-Markov analysis for sustainable land use planning. The study identifies that the land use types and land use changes from the year 1999 to 2008 have changed as a result of increased mobility; this trend, in turn, has everything to do with urban horizontal expansion. The changing sequences of land use type have developed from forest area to agriculture, from agriculture to grassland, then to bare land and built-up areas. Coastal urban growth has, for a decade, been expanding horizontally from a downtown center along the beach to the western area around the golf course, the southern area along the beach, the southwest grassland area, and then the northern area near the airport., 3177=Land use and land cover patterns for 1999, 2002, 2005 and 2008 were mapped by the use of LANDSAT Thematic Mapper data (row/path: 51/139 for LANDSAT 4 MSS and row/path: 51/129 from LANDSAT 5 TM and LANDSAT 7 ETM+), which have a 30-m ground resolution (except for the thermal IR band (band 6), which has a 120-m resolution) and seven spectral bands. A modified version of the Anderson scheme of land use/cover classification was adopted the categories include: (1) water body or sea (2) urban or built-up area (3) agriculture (4) grassland or scrubland (5) bare land and (6) sparse forest., 18540=The matrix result shows how many possibilities there are by which class I (from column) in the previous land use image can change to be each class in the next period (time t + n). The result shows that it is the possibility of a pixel in the year 1999 to be unchanged after a specific time period (three years). It shows how many pixels of land use in the year 1999 can change to be the state of another land use type in the year 2002, and so on. The percentage of escalating urban pixel of the CA LU in each year is 79.87% (years 1999 to 2002) (Table 3), 75.73% (years 2002 to 2005) (Table 5), and 86.48% (years 2005 to 2008) (Table 7), respectively. This could be an accurate way of displaying the escalating image of urban growth of the Hua Hin municipality.}",
+    "TableContextTimeStampAfterTable": "{58527=The political policy from Hua Hin municipality has encouraged changes in the direction of city growth. Comparing the actual land use from the primary years 2002, 2005 and 2008 with their CA-Markov models that were simulated from CA-Markov analysis, we found that the city growth direction spread less into the golf course in the western part of study area than the southern part, as it is a military area., 59637=Simulated land use and land cover change between the years 2005 to 2008., 59039=Simulated land use and land cover change between the years 1999 to 2002., 57679=From CA-Markov analysis, it can be seen that city growth has many growth directions. We found that the built-up area is growing and that its direction and the spatial direction are both positive compared to the actual land use in the year 1978., 59338=Simulated land use and land cover change between the years 2002 to 2005., 26471=Transition area of each class of LULC 1999 to 2002., 44666=Probability of transition class of LULC 2005 to 2008., 48885=Transition area of each class of LULC 2005 to 2008., 22251=Probability of transition class of LULC 1999 to 2002., 33465=Probability of transition class of LULC 2002 to 2005., 37683=Transition area of each class of LULC 2002 to 2005.}",
+    "lastModified": "Fri, 15 May 2015 16:43:11 GMT",
+    "textBeforeTable": "Accuracy assessment of Maximum Likelihood image classification. Table 1 sustainability-05-01480-t001_Table 1 The separability of the representative pixel of each training area (land use type). Figure 3 ) is 92.61 (year 1999), 91.93 (Year 2002), 95.88 (year 2005) and 98.59 (year 2008), respectively. Table 1 ) as a good representative of land use class was considered to calibrate the input data with the ground truth checks. The supervised classification image is well fitted with the representative pixel and can distinguish the land use class efficiently. The overall accuracy assessment from Maximum Likelihood technique ( Figure 3 Supervised classification by the Maximum Likelihood technique was applied to classify the LANDSAT images. The 30 training areas were designed and drawn to scale at the same position in the raw image to reserve the pixel spectral of each land use class. In addition, the separability of each training area ( . LANDSAT images were enhanced using linear contrast stretching and histogram equalization to improve the image to help identify ground control points in rectification. Images were rectified to a common UTM coordinate system based on 1:50,000 scale topographic maps. These data were resampled using the Nearest Neighbor algorithm, so that the original brightness values of pixels were kept unchanged. etc . Geometric correction is undertaken to avoid geometric distortions from a distorted image, and is achieved by establishing the relationship between the image",
+    "textAfterTable": "Figure 4 ) is the components of agreement and disagreement based on the pair of images between the actual land use image from the classified image and the CA-Markov-simulated land use image. Figure 4 displays the similarities and differences of each pair of images and indicates how they agree and disagree based on how they attribute each land use type in terms of both the quantity and location of the items. The accuracy of the model is the average value of the agreement and disagreement of the validated results based on both the percentage of correct results and the standard Kappa Index of Agreement mix disagreement of quantity with disagreement of location. The percent of accuracy from the simulated pixel and the actual pixel state ( Table 2 ) is 92.70 (year 1999), 91.92 (Year 2002), 91.72 (year 2005) and 94.41 (year 2008), respectively. sustainability-05-01480-t002_Table 2 Table 2 Percent of accuracy from simulated model. Year Percent of correct from CA-Markov Kappa no. 1999 92.70% 0.9149 2002 91.92% 0.9057 2005 91.72% 0.9034 2008 94.41% 0.9348 Figure 4 Validation of model outputs.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

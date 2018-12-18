@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "package",
+            "tabwins.v3.1.0.tgz",
+            "tabwins.v3.0.0.tgz",
+            "tabwins.v2.2.0.tgz",
+            "tabwins.v2.1.0.tgz",
+            "tabwins-master.v2.0.0.tgz",
+            "tabwins-master.tgz",
+            "tabwins-master.zip"
+        ],
+        [
+            "script version",
+            "3.1.0",
+            "3.0.0",
+            "2.2.0",
+            "2.1.0",
+            "2.0.0",
+            "1.8.0",
+            "1.7.0"
+        ],
+        [
+            "date",
+            "2013-12-08",
+            "2013-12-03",
+            "2013-11-24",
+            "2013-11-17",
+            "2013-11-13",
+            "2013-11-13",
+            "2013-11-11"
+        ],
+        [
+            "Vim version",
+            "7.0",
+            "7.0",
+            "7.0",
+            "7.0",
+            "7.0",
+            "7.0",
+            "7.0"
+        ],
+        [
+            "user",
+            "Charles Sheridan",
+            "Charles Sheridan",
+            "Charles Sheridan",
+            "Charles Sheridan",
+            "Charles Sheridan",
+            "Charles Sheridan",
+            "Charles Sheridan"
+        ],
+        [
+            "release notes",
+            "1. For fill_specs that are files, put line #1 at window top. 2. tabwins.txt: correct Fill_tab() key 'dir_cmd_name' to 'explore_cmd_name' 3. tabwins.txt: correct 'tabwins_dir_reader_name_default' to 'tabwins_explore_cmd_name_default' 4. tabwins.txt: various improvements.",
+            "0. No behavioral changes to command logic. 1. Tab option 'line_number_at_window_top' renamed => 'line_number_at_netrw_window_top' 2. Add configurable build of command aliases :T, :V, :H, and :TF for :Tabwins* commands. An alias is NOT BUILT IF an existing command has the same name. See \"\"Configuration\"/*TabwinsConfiguration* in tabwins.txt. 3. All defaults to Fill_tab() are now user-configurable global vars. 4. Most functions converted to vimscript ':s' scope -- the Explore_*() functions and Fill_tab() are the exceptions. 5. Demo tabs are now :Tabwins* commands rather than functions. 6. Remove the :Ot* abbreviated commands for the demo tabs. 7. tabwins.txt: Add example builder command, & various improvements. 8. Comments in code cleaned up.",
+            "- CLI commands support tab_option args ALL tabwins.vim capability is now available directly to the Vim command line. A developer should not have to call functions in tabwins.vim to create a tabwins command. - Configurable reloadability of tabwins.vim. - Add :TabwinsFindTabwins and include it in the 'Tabwins' menu. - Function Fill_tab() arg 'fill_content' renamed => 'fill_specs' - Rework documentation.",
+            "Enable command-line spec of window content.",
+            "1) As previewed in v1.8.0, the predefined asymmetric :{VH}{I } commands are removed, replaced with calls to :TabwinsVertical, :TabwinsHorizontal, and :Tabwins. All the Create_tab_{vh}*() commands are removed, as the :Tabwins* commands can create the same tabs, with arbitrary dimensions. 2) Addition of :Tabwins, establishing a plugin default to :TabwinsVertical 3) Lots of updates to comments, reflecting 1) & 2)",
+            "New commands :TabwinsVertical and :TabwinsHorizontal to create arbitrarily-dimensioned symmetric AND asymmetric tabs. In v.1.7.0, each asymmetric command required creation of a dedicated function, which is no longer the case. Most of the predefined asymmetric commands in v.1.7.0 will be removed in a later release.",
+            "Initial upload"
+        ]
+    ],
+    "pageTitle": "tabwins.vim - Create Tabs of symmetric or asymmetric Windows, empty or populated : vim online",
+    "title": "",
+    "url": "http://www.vim.org/scripts/script.php?script_id=4767",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00207-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 811636847,
+    "recordOffset": 811628645,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "script versions (upload new version) Click on the package to download. Life Changing Helpful Unfulfilling\u00a0 rate this script \u00a0 \u00a0\u00a0tabwins.vim tabwins/ dir is structured for deployment in a \u00a0\u00a0pathogen-managed bundle directory, e.g. ~/.vim/bundle/ \u00a0\u00a0If pathogen is not installed, copy the the files in the tabwins \u00a0\u00a0subdirs to the same subdirs in ~/.vim. \u00a0\u00a0Enable :h tabwins in a pathogen environment with \u00a0\u00a0\u00a0\u00a0:Helptags \u00a0\u00a0and in a non-pathogen environment with \u00a0\u00a0\u00a0\u00a0:helptags Also available at \u00a0\u00a0 https://github.com/cesheridan/tabwins install details \u00a0 Easy access to the power of the Vim GUI. \"I'm very impressed with it. It gets my highest accolade: the coveted 'Why The Hell Isn't This Functionality Built-In To Vim' award.\" - Damian Conway See the screen shots at \u00a0\u00a0https://github.com/cesheridan/graphics/tree/master/tabwins 1 command for immediate access to customized window structures and content ~during~ Vim sessions. The Developer \u00a0\u00a0- Avoids hit-or-miss, time-consuming, manual, repetitious \u00a0\u00a0\u00a0\u00a0runs of :split/:vsplit, and thought-sinks about how \u00a0\u00a0\u00a0\u00a0to",
+    "textAfterTable": "ip used for rating: 54.90.166.98 If you have questions or remarks about this site, visit the vimonline development pages. Please use this site responsibly. Questions about Vim should go to the maillist. Help Bram help Uganda. \u00a0 \u00a0",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

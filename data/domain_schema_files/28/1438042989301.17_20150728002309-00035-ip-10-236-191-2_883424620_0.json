@@ -1,0 +1,132 @@
+{
+    "relation": [
+        [
+            "id",
+            "1",
+            "44",
+            "215",
+            "392",
+            "961",
+            "1474",
+            "1590",
+            "1775"
+        ],
+        [
+            "contextlevel",
+            "10",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50",
+            "50"
+        ],
+        [
+            "instanceid",
+            "0",
+            "5",
+            "8",
+            "10",
+            "16",
+            "21",
+            "26",
+            "34"
+        ],
+        [
+            "path",
+            "/1",
+            "/1/491/3496/492/493/570/44",
+            "/1/491/3496/492/493/571/215",
+            "/1/491/3496/492/493/570/392",
+            "/1/491/3496/492/493/570/961",
+            "/1/491/3496/492/493/570/1474",
+            "/1/491/3496/492/493/570/1590",
+            "/1/491/3496/492/493/570/1775"
+        ],
+        [
+            "depth",
+            "1",
+            "7",
+            "7",
+            "7",
+            "7",
+            "7",
+            "7",
+            "7"
+        ],
+        [
+            "id",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+        ],
+        [
+            "contextlevel",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+        ],
+        [
+            "instanceid",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+        ],
+        [
+            "path",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+        ],
+        [
+            "depth",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL",
+            "NULL"
+        ]
+    ],
+    "pageTitle": "Moodle in English: Can not find data record in database table context",
+    "title": "",
+    "url": "https://moodle.org/mod/forum/discuss.php?d=199860",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00035-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 883451011,
+    "recordOffset": 883424620,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{37217=#1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON ctx.instanceid = c.id AND ctx.contextlevel = 50) LIMIT 0, 30' at line 1}",
+    "TableContextTimeStampAfterTable": "{107389=Strict Standards: Creating default object from empty value in /var/www/moodle/report/log/index.php on line 107 Coding problem - missing course modinfo property in get_fast_modinfo() call \u00a0\u00a0\u00a0 line 1384 of /lib/modinfolib.php: call to debugging() \u00a0\u00a0\u00a0 line 1803 of /lib/navigationlib.php: call to get_fast_modinfo() \u00a0\u00a0\u00a0 line 1870 of /lib/navigationlib.php: call to global_navigation->generate_sections_and_activities() \u00a0\u00a0\u00a0 line 420 of /course/format/lib.php: call to global_navigation->load_generic_course_sections() \u00a0\u00a0\u00a0 line 1782 of /lib/navigationlib.php: call to format_base->extend_course_navigation() \u00a0\u00a0\u00a0 line 1093 of /lib/navigationlib.php: call to global_navigation->load_course_sections() \u00a0\u00a0\u00a0 line 3178 of /lib/navigationlib.php: call to global_navigation->initialise() \u00a0\u00a0\u00a0 line 717 of /lib/pagelib.php: call to settings_navigation->__construct() \u00a0\u00a0\u00a0 line 734 of /lib/pagelib.php: call to moodle_page->magic_get_settingsnav() \u00a0\u00a0\u00a0 line 6348 of /lib/adminlib.php: call to moodle_page->__get() \u00a0\u00a0\u00a0 line 150 of /report/log/index.php: call to admin_externalpage_setup() Coding problem - missing course sectioncache property in get_fast_modinfo() call \u00a0\u00a0\u00a0 line 1388 of /lib/modinfolib.php: call to debugging() \u00a0\u00a0\u00a0 line 1803 of /lib/navigationlib.php: call to get_fast_modinfo() \u00a0\u00a0\u00a0 line 1870 of /lib/navigationlib.php: call to global_navigation->generate_sections_and_activities() \u00a0\u00a0\u00a0 line 420 of /course/format/lib.php: call to global_navigation->load_generic_course_sections() \u00a0\u00a0\u00a0 line 1782 of /lib/navigationlib.php: call to format_base->extend_course_navigation() \u00a0\u00a0\u00a0 line 1093 of /lib/navigationlib.php: call to global_navigation->load_course_sections() \u00a0\u00a0\u00a0 line 3178 of /lib/navigationlib.php: call to global_navigation->initialise() \u00a0\u00a0\u00a0 line 717 of /lib/pagelib.php: call to settings_navigation->__construct() \u00a0\u00a0\u00a0 line 734 of /lib/pagelib.php: call to moodle_page->magic_get_settingsnav() \u00a0\u00a0\u00a0 line 6348 of /lib/adminlib.php: call to moodle_page->__get() \u00a0\u00a0\u00a0 line 150 of /report/log/index.php: call to admin_externalpage_setup() Notice: Undefined property: stdClass::$format in /var/www/moodle/course/format/lib.php on line 171 Format plugin format_ is not found. Using default format_topics \u00a0\u00a0\u00a0 line 118 of /course/format/lib.php: call to debugging() \u00a0\u00a0\u00a0 line 179 of /course/format/lib.php: call to format_base::get_format_or_default() \u00a0\u00a0\u00a0 line 35 of /course/format/lib.php: call to format_base::instance() \u00a0\u00a0\u00a0 line 1807 of /lib/navigationlib.php: call to course_get_format() \u00a0\u00a0\u00a0 line 1870 of /lib/navigationlib.php: call to global_navigation->generate_sections_and_activities() \u00a0\u00a0\u00a0 line 420 of /course/format/lib.php: call to global_navigation->load_generic_course_sections() \u00a0\u00a0\u00a0 line 1782 of /lib/navigationlib.php: call to format_base->extend_course_navigation() \u00a0\u00a0\u00a0 line 1093 of /lib/navigationlib.php: call to global_navigation->load_course_sections() \u00a0\u00a0\u00a0 line 3178 of /lib/navigationlib.php: call to global_navigation->initialise() \u00a0\u00a0\u00a0 line 717 of /lib/pagelib.php: call to settings_navigation->__construct() \u00a0\u00a0\u00a0 line 734 of /lib/pagelib.php: call to moodle_page->magic_get_settingsnav() \u00a0\u00a0\u00a0 line 6348 of /lib/adminlib.php: call to moodle_page->__get() \u00a0\u00a0\u00a0 line 150 of /report/log/index.php: call to admin_externalpage_setup() Skip to main content}",
+    "textBeforeTable": "Showing rows 0 - 7\u00a0 ( 8 total, Query took 6.4536 sec) This is the output: \u00a0 Friday, April 6, 2012, 5:32 PM Richard Lian Re: Can not find data record in database table context Reply Show parent | Permalink | (1) Useful Average of ratings: \u00a0 If everything is OK, that query will return one row with contextlevel = 10, but in your case it should return more. SELECT * FROM mdl_context ctx LEFT JOIN mdl_context parent ON ctx.path LIKE CONCAT('%/', parent.id, '/', ctx.id) WHERE parent.id IS NULL OR ctx.path <> CONCAT(parent.path, '/', ctx.id) OK, try this So, can we do a query to locate that particular problem? Ah, I see. The problem is in\u00a0get_parent_contexts, which means that the problem is with the path for one of your contexts. (I wish I had",
+    "textAfterTable": "\u00a0 \u00a0 Average of ratings: - Permalink | Show parent | Reply Re: Can not find data record in database table context Richard Lian Friday, April 6, 2012, 8:34 PM \u00a0 I assume that output is what you expected. Is there a fix for it? \u00a0 Average of ratings: - Permalink | Show parent | Reply",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,66 @@
+{
+    "relation": [
+        [
+            "Title",
+            "Alien Versus Predator 1",
+            "Alien Versus Predator 2",
+            "Aviator 1",
+            "Aviator 2",
+            "Batman Begins",
+            "Beyond The Sea"
+        ],
+        [
+            "Comment",
+            "Sanaa Lathan, Raoul Bova, Lance Henriksen",
+            "Sanaa Lathan, Raoul Bova, Lance Henriksen",
+            "Leonardo DiCaprio, Cate Blanchett, Kate Beckinsale",
+            "Leonardo DiCaprio, Cate Blanchett, Kate Beckinsale",
+            "Christian Bale, Michael Caine, Liam Neeson",
+            "Kevin Spacey, Kate Bosworth"
+        ],
+        [
+            "Page",
+            "1",
+            "1",
+            "1",
+            "1",
+            "2",
+            "2"
+        ],
+        [
+            "Pocket",
+            "1",
+            "2",
+            "3",
+            "4",
+            "1",
+            "2"
+        ],
+        [
+            "pk",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ]
+    ],
+    "pageTitle": "* Encountering Ruby",
+    "title": "",
+    "url": "http://arachnoid.com/ruby/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988305.14/warc/CC-MAIN-20150728002308-00089-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 10360920,
+    "recordOffset": 10344947,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sun, 01 Nov 2009 02:33:29 GMT",
+    "textBeforeTable": "",
+    "textAfterTable": "Playing in Interactive Mode On hearing me say \"everything is an object\" in Ruby, readers may think I'm exaggerating. But:  13.class => Fixnum 13.0.class => Float \"my text\".class => String [ 1,2,3 ].class => Array String.class => Class String.ancestors => [String, Enumerable, Comparable, Object, Kernel] Class.ancestors => [Class, Module, Object, Kernel] 1.class.ancestors => [Fixnum, Integer, Precision, Numeric, Comparable, Object, Kernel] (The above output was created using the \"irb\" Interactive Ruby utility, more on this below) Matz (or, if you prefer, Matsumoto-san) believes in the Principle of Least Surprise, which can be taken to mean languages should try to act as one would expect, without necessarily consulting a manual, as well as being as consistent as possible. Ruby certainly meets this criterion \u2014 to a greater degree than most languages I've learned over three decades, I find Ruby requires minimum time spent poring over instructions, and maximum time spent producing useful, readable code. I think history will judge Ruby kindly, and possibly even identify it as the first computer language that is kind to its users. Before going on, I ask that my readers check for the presence of Ruby on their systems, and if necessary acquire Ruby from the first of the reference links provided at the bottom of this page. If you are running Linux, you may find that Ruby is already",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

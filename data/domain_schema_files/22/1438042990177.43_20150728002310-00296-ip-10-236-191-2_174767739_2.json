@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Comment",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        [
+            "Data Interval",
+            "Monthly",
+            "Daily",
+            "Hourly",
+            "Minute",
+            "Second"
+        ],
+        [
+            "Files",
+            "Year",
+            "Year",
+            "Month",
+            "Day",
+            "Day"
+        ],
+        [
+            "File Name Pattern",
+            "iagyyyytint.int",
+            "iagyyyytint.int",
+            "iagyyyymmtint.int",
+            "iagyyyymmddtint.int",
+            "iagyyyymmddtint.int"
+        ],
+        [
+            "Example Name",
+            "naq2002dmon.mon",
+            "naq2002dday.day",
+            "naq200201phor.hor",
+            "naq20020101pmin.min",
+            "naq20020211vsec.sec"
+        ]
+    ],
+    "pageTitle": "IAGA-2002 Exchange Format - 2003 Revision",
+    "title": "",
+    "url": "http://ngdc.noaa.gov/IAGA/vdat/iagaformat.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00296-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 174775941,
+    "recordOffset": 174767739,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{9258=To improve the ease with which data are exchanged and recognized, IAGA recommends the following guidelines and style for naming files containing magnetic observatory data. The recommendations closely follow the current International Standards Organization (ISO) Level II recommendations, and are fully compliant with both the Joliette extension to Level II and to the proposed modifications for the ISO standard. These recommendations are for data exchange and do not necessarily apply to data archive. Some changes have been made in this section in July 2003 to allow for existence of multiple fragments of data starting at different times (which is a possibility for some data transmission systems) and to ease usage with compression programs., 1444=This file provides information on the IAGA ASCII Exchange Format, adopted August 2001. Content includes some general information and description of the file header, comment records, data header and records, file naming recommendations, and sample data file (html and text)., 8588=Values beyond the time interval of the means being reported must be zero-filled i.e. 14:01:00.000 for 1 minute data for the 14th hour, first minute. DOY is the day of the year, from 1 - 365 (or 366 for leap years). Describe the method of average, i.e., centered to the hour for hourly means, in the comments area., 14758=Where: iag = IAGA 3-letter observatory code \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0yyyy = four digit year (i.e. 2002) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0mm = two digit month (i.e. 01 for January, 12 for December) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0dd = two digit day of month (01-31) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0hh = hour at which data starts (00-23) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0MM = minute at which data starts (00-59) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0ss = second at which data starts (00-59) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0t = type of data (p - provisional, d - definitive, q - quasi-definitive v - variation) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0int = data interval (mon - monthly, day - daily, hor - hourly, min - minute, sec - second), 11894=Where: iag = IAGA 3-letter observatory code \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0yyyy = four digit year (i.e. 2002) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0mm = two digit month (i.e. 01 for January, 12 for December) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0dd = two digit day of month (01-31) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0t = type of data (p - provisional, d - definitive, q - quasi-definitive v - variation) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0int = data interval (mon - monthly, day - daily, hor - hourly, min - minute, sec - second)}",
+    "textBeforeTable": "General format: iagyyyymmddtint.int Where: iag = IAGA 3-letter observatory code \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0yyyy = four digit year (i.e. 2002) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0mm = two digit month (i.e. 01 for January, 12 for December) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0dd = two digit day of month (01-31) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0t = type of data (p - provisional, d - definitive, q - quasi-definitive v - variation) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0int = data interval (mon - monthly, day - daily, hor - hourly, min - minute, sec - second) The first several characters in the base name are strictly defined. Files may be further defined with the remaining characters by using an underscore \"_\" to separate the standard name. For example, naq20020101dmin.min and naq20020101d_2-5min.min are both acceptable names for 2.5 minute definitive data from Narsarsuaq. File names must begin with the IAGA 3-Letter Code, Date, and Type of data. The Extension defines the Data Interval (monthly, daily, hourly, minute, or second data). The Extension is duplicated in the last three characters of the base name, so that if the Extension is stripped on compression the Data Interval is not lost. The file name only indicates the general data interval, specific information is contained in the file header Data Interval field (i.e. 2.5 and 1-minute averages are both \"minute\" data, 10 second averages and 1 second instantaneous are both \"second\" data). File names are composed of lower case a-z, 0-9, underscore \"_\", and dash \"-\" characters. No spaces, unusual characters (i.e. *, /,",
+    "textAfterTable": "File contains 1 year of definitive monthly data for 2002 from Narsarsuaq. File contains 1 year of definitive daily data for 2002 from Narsarsuaq. File contains 1 month of provisional hourly data for January 2002 from Narsarsuaq. File contains 1 day of provisional minute data for 1 January 2002 from Narsarsuaq. File contains 1 day of variation second data for 11 February 2002 from Narsarsuaq. Additional format to handle multiple fragments of data starting at different times:iagyyyymmddhhMMsstint.int Where: iag = IAGA 3-letter observatory code \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0yyyy = four digit year (i.e. 2002) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0mm = two digit month (i.e. 01 for January, 12 for December) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0dd = two digit day of month (01-31) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0hh = hour at which data starts (00-23) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0MM = minute at which data starts (00-59) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0ss = second at which data starts (00-59) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0t = type of data (p - provisional, d - definitive, q - quasi-definitive v - variation) \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0int = data interval (mon - monthly, day - daily, hor - hourly, min - minute, sec - second) Comment Data Interval Files File Name Pattern Example Name 1 Minute Part-day iagyyyymmddhhMMtint.int clf200306121320vmin.min 2 Second Part-day iagyyyymmddhhMMsstint.int clf20030612132000vsec.sec File",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

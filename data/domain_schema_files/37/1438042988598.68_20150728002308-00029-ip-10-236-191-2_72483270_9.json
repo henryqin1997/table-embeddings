@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "Accounting Attributes",
+            "Distribution Type",
+            "First Distribution Identifier",
+            "Second Distribution Identifier",
+            "Third Distribution Identifier",
+            "Fourth Distribution Identifier",
+            "Fifth Distribution Identifier"
+        ],
+        [
+            "Data Type",
+            "Alphanumeric",
+            "Alphanumeric",
+            "Alphanumeric",
+            "Alphanumeric",
+            "Alphanumeric",
+            "Alphanumeric"
+        ],
+        [
+            "Journal Entry Level",
+            "Line",
+            "Line",
+            "Line",
+            "Line",
+            "Line",
+            "Line"
+        ],
+        [
+            "Assignment to Rules",
+            "Event Class",
+            "Event Class",
+            "Event Class",
+            "Event Class",
+            "Event Class",
+            "Event Class"
+        ],
+        [
+            "Assignment Required?",
+            "Yes",
+            "Yes",
+            "No",
+            "No",
+            "No",
+            "No"
+        ],
+        [
+            "Validation Rules",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Oracle Fusion Applications Cost Accounting and Receipt Accounting Implementation Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E28271_01/fusionapps.1111/e22767/F466130AN3624C.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988598.68/warc/CC-MAIN-20150728002308-00029-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72505963,
+    "recordOffset": 72483270,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{64015=02-640-2210-1234, 63822=01-640-2210-0000, 63782=02-782-2210-0000, 56743=For example, the constant could be a completed account combination from the chart of accounts specified. An example is the account combination, 01.000.2210.0000.000. This is the simplest way to derive an account.}",
+    "lastModified": "Thu, 20 Sep 2012 07:50:40 GMT",
+    "textBeforeTable": "The accounted amount overwrite accounting attribute indicates whether the accounted amount calculated by the Create Accounting process should be overwritten by the value of the accounted amount accounting attribute. If the source value mapped to Accounted Amount Overwrite is 'Y', then an accounted amount must be provided. Accounted Amount Overwrite Accounting attribute groups are represented in the tables below: Accounting Attributes The details and descriptions of these attributes are included in the Accounting Attributes section. First Distribution Identifier Entered Currency Code Entered Amount Distribution Type Accounting Date In order to create a valid journal entry you must, at a minimum, set up the following accounting attribute assignments. Minimum Required Accounting Attribute Assignments An example of accounting attributes of this type is Accounting Reversal Indicator. You may have values that control the behavior of the Create Accounting process when processing a specific accounting event or transaction object line. Values that Control the Behavior of the Create Accounting Process Examples of accounting attributes are Entered Currency Code and Entered Amount. You may have values that are subject to special processing or values that are stored in named columns in journal entry headers and lines. Values that are Subject to Special Processing The types of accounting attributes values are as follows: Line: To be used when creating subledger journal entry lines. Header: To be used when creating subledger journal entry headers. Each accounting attribute is associated with a level: The",
+    "textAfterTable": "Accounting reversal accounting attributes are relevant to applications that wish to take advantage of the accounting reversal feature. The Create Accounting process uses them to identify transaction (distributions) whose accounting impact should be reversed. For the Create Accounting process to successfully create a line accounting reversal, the accounting reversal indicator, distribution type, and first distribution identifier should always be assigned to sources. The definition of the accounting reversal distribution type and distribution identifiers mirrors the definition of the distribution identifiers. Accounting Attributes Data Type Journal Entry Level Assignment to Rules Assignment Required? Validation Rules Accounting Reversal Distribution Type Alphanumeric Line Event Class Yes, if another accounting reversal accounting attribute is assigned. \u00a0 Accounting Reversal First Distribution Identifier Alphanumeric Line Event Class Yes, if another accounting reversal accounting attribute is assigned. \u00a0 Accounting Reversal Second Distribution Identifier Alphanumeric Line Event Class No \u00a0 Accounting Reversal Third Distribution Identifier Alphanumeric Line",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

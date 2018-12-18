@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "",
+            "Cellular Component (CC)",
+            "Cellular Component (CC)",
+            "Cellular Component (CC)",
+            "Cellular Component (CC)",
+            "Cellular Component (CC)"
+        ],
+        [
+            "GO term",
+            "intracellular part",
+            "intracellular",
+            "cell part",
+            "cell",
+            "cellular_component"
+        ],
+        [
+            "FDR (singleton)",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "FDR (all)",
+            "0.0001366",
+            "0.0001596",
+            "0.001426",
+            "0.001432",
+            "0.1633"
+        ],
+        [
+            "IC level",
+            "0.1323",
+            "0.1323",
+            "0.07967",
+            "0.07967",
+            "0"
+        ],
+        [
+            "SDFO level",
+            "--",
+            "--",
+            "--",
+            "--",
+            "--"
+        ],
+        [
+            "Annotation (direct or inherited)",
+            "DIRECT",
+            "DIRECT",
+            "INHERITED FROM: intracellular part || intracellular",
+            "INHERITED FROM: intracellular part || intracellular",
+            "INHERITED FROM: intracellular part || intracellular"
+        ]
+    ],
+    "pageTitle": "a domain/subunit of cytochrome bc1 complex (Ubiquinol-cytochrome c reductase) superfamily",
+    "title": "",
+    "url": "http://supfam.org/SUPERFAMILY/cgi-bin/scop.cgi?ipid=SSF81648",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 6,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00296-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 231751279,
+    "recordOffset": 231739844,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Superfamily statistics a domain/subunit of cytochrome bc1 complex (Ubiquinol-cytochrome c reductase) [\u00a081647] (2) Families: \u00a0 a domain/subunit of cytochrome bc1 complex (Ubiquinol-cytochrome c reductase) [\u00a081648] Superfamily: \u00a0 a domain/subunit of cytochrome bc1 complex (Ubiquinol-cytochrome c reductase) [\u00a081649] Fold: \u00a0 Membrane and cell surface proteins and peptides [\u00a056835] (58) Class: \u00a0 SCOP hierarchy in SUPERFAMILY [\u00a00] (11) Root: \u00a0 a domain/subunit of cytochrome bc1 complex (Ubiquinol-cytochrome c reductase) superfamilySCOP classification Taxonomic Distribution Domain Combinations Sequence Alignments Genome Assignments Structural Classification Sitemap Email list Contact us User support \u00a0HELP Documentation",
+    "textAfterTable": "Cellular Component (CC) intracellular part 0 0.0001366 0.1323 -- DIRECT Cellular Component (CC) intracellular 0 0.0001596 0.1323 -- DIRECT Cellular Component (CC) cell part 0 0.001426 0.07967 -- INHERITED FROM: intracellular part || intracellular Cellular Component (CC) cell 0 0.001432 0.07967 -- INHERITED FROM: intracellular part || intracellular Cellular Component (CC) cellular_component 0 0.1633 0 -- INHERITED FROM: intracellular part || intracellular Document: GO annotation of SCOP domains Gene Ontology (high-coverage)(show details) Highlighted in gray are those with either FDR_singleton>0.001 or FDR_all>0.001 GO term FDR (all) IC level SDFO level Annotation (direct or inherited) Biological Process (BP) oxidation-reduction process 0.00000319 1.259 -- DIRECT Biological Process (BP) metabolic process 0.6261 0.2304 -- INHERITED FROM: oxidation-reduction process Biological Process (BP) biological_process 1 0 -- INHERITED FROM: oxidation-reduction process",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

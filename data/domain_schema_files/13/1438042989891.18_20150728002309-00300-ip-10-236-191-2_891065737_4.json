@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "IRC Nickname",
+            "Lemma",
+            "jtamate",
+            "Dario_Andres",
+            "anselmolsm",
+            "anselmolsm",
+            "grundleborg",
+            "FiNeX",
+            "Ruchir"
+        ],
+        [
+            "KDE version used for testing",
+            "svn trunk r958924",
+            "opensuse r954171",
+            "trunk 958964",
+            "trunk 958853",
+            "trunk 959078",
+            "trunk 959002",
+            "trunk 959071",
+            "trunk 961515"
+        ],
+        [
+            "Graphics driver",
+            "NVIDIA 185.19",
+            "free ati radeon",
+            "intel2.6.3",
+            "NVidia 180.51",
+            "Intel 2.6.53-r1",
+            "fglrx",
+            "NVidia 180.44",
+            "Intel"
+        ],
+        [
+            "Qt",
+            "qt-copy",
+            "4.5.1",
+            "4.5.0+942255",
+            "4.5.0+942255",
+            "4.5.0+942255",
+            "4.5.0+955572",
+            "4.5.0",
+            "4.5.1"
+        ],
+        [
+            "X",
+            "1.6.1",
+            "1.6",
+            "1.6.1",
+            "1.5.3-r5",
+            "1.5.3-r5",
+            "1.5.2",
+            "1.6.1",
+            "1.5.2"
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Contribute/Bugsquad/BugDays/PlasmaDay1\" - KDE TechBase",
+    "title": "",
+    "url": "https://techbase.kde.org/index.php?title=Contribute/Bugsquad/BugDays/PlasmaDay1&diff=41521&oldid=41118",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00300-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 891094211,
+    "recordOffset": 891065737,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{155907=This is the page for PlasmaDay1 which takes place on Saturday/Sunday, April 25th/26th 2009, but feel free to start early. The aim of this bug day is to organize as many of the Plasma bugs as possible, identifying duplicate bug reports and already fixed bugs. Our targets for triage are bugs listed in bugs.kde.org under the product plasma.}",
+    "textBeforeTable": "\u00a0 Please list bugs here to get a second opinion before making the change in bugzilla. This also gives a record of what we've done for the developers to check. [edit] Double Check! Prioritizing is good. We're especially interested in problems that result in an unuseable desktop. Let's keep track of them. [edit] Is it a big bug? If something has no clear instructions on how to reproduce it, or has little useful information, add a comment asking the reporter for more detail. Then list it in the bugs awaiting feedback section. Be polite, we want to be nice to our bug reporters! [edit] Unclear Some bugs might have documents that expose the bugs attached, for some bugs you might be able to create data that shows the buggy behaviour. In both cases we have to add the testcase keyword. If you lack permissions to do so, additionally add the bug to the \"Needs testcase keyword\" section. [edit] Testcases If you're done with your batch, pick another one and start from the top\u00a0:-) Mark the bug as triaged by adding the triaged keyword",
+    "textAfterTable": "opensuse r954171 free ati radeon 4.5.1 1.6 Dario_Andres trunk 958964 intel2.6.3 4.5.0+942255 1.6.1 anselmolsm trunk 958853 NVidia 180.51 4.5.0+942255 1.5.3-r5 anselmolsm trunk 959078 Intel 2.6.53-r1 4.5.0+942255 1.5.3-r5 grundleborg trunk 959002 fglrx 4.5.0+955572 1.5.2 FiNeX trunk 959071 NVidia 180.44 4.5.0 1.6.1 Ruchir trunk 961515 Intel 4.5.1 1.5.2 [edit] Division of Labour Please choose a batch that is not already taken and then query bugs.kde.org for all bugs in that batch. Please mark you irc nickname in the table below to show which month's bugs you are working on to avoid duplication of effort. If you have to leave before you can finish your batch, please put the last bug you triaged as well as if you're going to finish triaging in the table so others will know where you left off. \u00a0 Warning With these more recent bugs, if the report has been looked at by a developer (i.e. they cc'd themself or commented on it or posted a patch), and it seems like the issue is fixed, BUT the developer didn't close it, make sure",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

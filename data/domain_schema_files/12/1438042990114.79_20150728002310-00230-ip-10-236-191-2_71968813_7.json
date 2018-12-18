@@ -1,0 +1,93 @@
+{
+    "relation": [
+        [
+            "Cisco Unified Communications Manager Version",
+            "6.1(5)",
+            "7.0(2)",
+            "7.1(5)",
+            "8.0(1)",
+            "8.0(2)",
+            "8.0(3)",
+            "8.5(1)",
+            "8.5(1)",
+            "8.5(2)"
+        ],
+        [
+            "Supported with Cisco Unified MeetingPlace Release 8.5.1",
+            "Y",
+            "Y",
+            "Y",
+            "Y",
+            "Y",
+            "Y",
+            "Y",
+            "N",
+            "N"
+        ],
+        [
+            "Supported with Cisco Unified MeetingPlace Release 8.5.2",
+            "Y",
+            "Y",
+            "Y",
+            "Y",
+            "Y",
+            "Y",
+            "Y",
+            "Y",
+            "Supported in MR1&MR3 (MP8.5.3/MP8.5.4)"
+        ],
+        [
+            "SIP Trunk Calls/Second",
+            "<17",
+            "17.77",
+            "18.52",
+            "24.69",
+            "24.69",
+            "8",
+            "36",
+            "36",
+            "36"
+        ],
+        [
+            "Number of Audio/Video Server Nodes Supported",
+            "1 node deployment only",
+            "4 node deployment (requires WebEx front-end)",
+            "4 node deployment (requires WebEx front-end)",
+            "1 node deployment only",
+            "1 node deployment only",
+            "4 server deployment (requires WebEx front-end)",
+            "16 server deployment (requires WebEx front-end)",
+            "16 server deployment (requires WebEx front-end)",
+            "16 server deployment (requires WebEx front-end)"
+        ],
+        [
+            "Notes",
+            "Not supported in WebEx-scheduling deployments",
+            "Lower scaleability with multinode, max of 8cps + 75% refers with 4 nodes, brings down ports per node to 800",
+            "Lower scaleability with multinode, max of 8cps + 75% refers with 4 nodes, brings down ports per node to 800",
+            "Not supported in WebEx-scheduling deployments",
+            "Not supported in WebEx-scheduling deployments",
+            "Supports 1000 ports per node. Verified 8cps incoming call rate with 75% call refer rate. CUCM 8.0(3) supports SIP Refers for multinode Cisco Unified MeetingPlace systems. You must open a case with Cisco TAC against Cisco Unified Communications Manager to obtain the latest Engineering Special (ES) or Service Update (SU) version of CUCM 8.0(3).",
+            "Supports 1200 ports per node Total number of nodes includes 12 Conferencing nodes, two additional Conferencing nodes for resiliency, and two Meeting Directors Not supported for ad-hoc meetings",
+            "Supports 1200 ports per node Total number of nodes includes 12 Conferencing nodes, two additional Conferencing nodes for resiliency, and two Meeting Directors",
+            "Supports 1200 ports per node Total number of nodes includes 12 Conferencing nodes, two additional Conferencing nodes for resiliency, and two Meeting Directors"
+        ]
+    ],
+    "pageTitle": "Cisco Unified MeetingPlace Release 8.5 -- Compatibility Matrix - DocWiki",
+    "title": "",
+    "url": "http://docwiki.cisco.com/w/index.php?title=Cisco_Unified_MeetingPlace_Release_8.5_--_Compatibility_Matrix&diff=53972&oldid=48159",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00230-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71984571,
+    "recordOffset": 71968813,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{80859=Released May 31, 2011, 122093=12.5.1.18395-6.2.9,CSF 8.5(3)-4.3.29, 60026=May 31, 2011, 121419=9.5.1.18395-6.2.9, CSF 8.5(3)-4.3.29, 65116=Released June 15, 2012, 63109=Nov. 12, 2007 - 2012, 101836=Cisco TelePresence System 1100, 63715=June 4, 2011, 71032=January 31, 2012, 82528=Note: MPWinOS_I3_5003.iso was released July 1, 2011., 65885=June 15, 2012, 60171=Mar. 26, 2010, 83726=Mar. 1, 2011, 70261=Released January 31, 2012, 121868=11.5.1.18395-6.2.9, CSF 8.5(3)-4.3.29, 68230=Nov. 12, 2007 - July 21, 2011, 63289=August 2011, 59751=Released October 31, 2012, 94680=8.5.1.18395-6.2.9, CSF 8.5(3)-4.3.29, 87507=Supports 1200 ports per node, 134823=(Release 8.5.1) Regarding failed test, dial in-endpoint is able to dial in but it is eventually thrown out of the conference. Check CSCtl01234. This is fixed for CUCM 8.6., 121643=10.5.1.18395-6.2.9, CSF 8.5(3)-4.3.29, 60370=August 24, 2011, 95569=8.5(105.17095), CSF 8.5(1)-4.0.12, 75407=Released August 24, 2011, 65849=8.5.4.12, 60522=October 31, 2012, 86904=Supports 1000 ports per node. Verified 8cps incoming call rate with 75% call refer rate., 144206=Table: Supported Video Formats lists the supported video formats for various combinations of the global video mode and the codec used by the video terminal.}",
+    "textBeforeTable": "The following table lists the components (and their release numbers) that are compatible with the Cisco Unified MeetingPlace Application Server Release 8.5.5. Note: For compatibility information for other Cisco Unified MeetingPlace releases, go to http://www.cisco.com/en/US/products/sw/ps5664/ps5669/products_device_support_tables_list.html. Component Compatibility for Release 8.5.5 8.4 Video Format Support 8.3 Terminology Used in Video Endpoint Compatibility Test Results 8.2.1 Related Topics 8.2 Compatibility Test Results with the Express Media Server 8.1 Compatibility Test Results with the Hardware Media Server 8 Video Endpoint Compatibility 7 Audio Endpoint Compatibility 6 Cisco Unified Communications Manager Compatibility 5 Component Compatibility for Release 8.5.1 4 Component Compatibility for Release 8.5.2 3 Component Compatibility for Release 8.5.3 2 Component Compatibility for Release 8.5.4 1 Component Compatibility for Release 8.5.5 Contents Note: Cisco Unified MeetingPlace Release 8.5 is not backwards compatible. All major components, such",
+    "textAfterTable": "Cisco Unified MeetingPlace for IBM Lotus Notes 8.5.5.2 October 31, 2012 Component Compatibility for Release 8.5.4 Note: For compatibility information for other Cisco Unified MeetingPlace releases, go to http://www.cisco.com/en/US/products/sw/ps5664/ps5669/products_device_support_tables_list.html. The following table lists the components (and their release numbers) that are compatible with the Cisco Unified MeetingPlace Application Server Release 8.5.4. Application Server Version Component Name Component Version Component Release Date 8.5.4.12 Released June 15, 2012 Note: The Express Media Server and Meeting Director are included with the Application Server and are therefore on the same version. Audio Blade 6.5.0.6.0 May 31, 2011 Video Blade 5.3.3.0.54A Mar. 26, 2010 Cisco WebEx Node for MCS 8.5.2.8 August 24, 2011 Web Server software 8.5.4.12 June 15, 2012 Web Server Operating System One of the following versions of the Cisco Unified MeetingPlace Windows OS depending on your Cisco platform: 5.0.0.3 (MPWinOS_I3_5003.iso) 4.1.0.3 (MPWinOS_I2_4103.iso) 4.1.0.2 (MPWinOS_H2_4102.iso) 1.0.0.3 (MPWinOS_VM_1003.iso) Notes:",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Product Name",
+            "Adobe Integrated Runtime 3.3",
+            "Adobe Flash Player 11.3",
+            "Integrated Performance Primitives (IPP)",
+            "LEADTOOLS",
+            "Windows Imaging Component (WIC)"
+        ],
+        [
+            "Publisher",
+            "Adobe Systems",
+            "Adobe Systems",
+            "Intel",
+            "LEAD Technologies",
+            "Microsoft"
+        ],
+        [
+            "Read support",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes"
+        ],
+        [
+            "Write support",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes"
+        ],
+        [
+            "",
+            "[38]",
+            "[38]",
+            "[39][40]",
+            "[41]",
+            ""
+        ]
+    ],
+    "pageTitle": "JPEG XR - Wikipedia, the free encyclopedia",
+    "title": "",
+    "url": "https://en.wikipedia.org/wiki/JPEG_XR",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00312-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 865433719,
+    "recordOffset": 865390007,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{31489=The HD Photo bitstream specification claims that \"HD Photo offers image quality comparable to JPEG-2000 with computational and memory performance more closely comparable to JPEG\", that it \"delivers a lossy compressed image of better perceptive quality than JPEG at less than half the file size\", and that \"lossless compressed images \u2026 are typically 2.5 times smaller than the original uncompressed data\"., 5695=Support for the format is available in Adobe Flash Player 11.0, Adobe AIR 3.0, Sumatra PDF 2.1, Windows Imaging Component, .NET Framework 3.0, Windows Vista, Windows 7, Windows 8, Internet Explorer 9, Internet Explorer 10, Internet Explorer 11.[7][8] As of August 2014, there were still no cameras that shoot photos in the JPEG XR (.JXR) format., 47705=Microsoft has patents on the technology in JPEG XR. A Microsoft representative stated in a January 2007 interview that in order to encourage the adoption and use of HD Photo, the specification is made available under the Microsoft Open Specification Promise, which asserts that Microsoft allows implementation of the specification for free, and will not file suits on the patented technology for its implementation,[43] as reportedly stated by Josh Weisberg, director of Microsoft's Rich Media Group. As of 15 August 2010, Microsoft made the resulting JPEG XR standard available under its Community Promise.[44], 8944=Microsoft first announced Windows Media Photo at WinHEC 2006,[9] and then renamed it to HD Photo in November of that year. In July 2007, the Joint Photographic Experts Group and Microsoft announced HD Photo to be under consideration to become a JPEG standard known as JPEG XR.[10][11] On 16 March 2009, JPEG XR was given final approval as ITU-T Recommendation T.832 and starting in April 2009, it became available from the ITU-T in \"pre-published\" form.[1] On 19 June 2009, it passed an ISO/IEC Final Draft International Standard (FDIS) ballot, resulting in final approval as International Standard ISO/IEC 29199-2.[12][13] The ITU-T updated its publication with a corrigendum approved in December 2009,[1] and ISO/IEC issued a new edition with similar corrections on 30 September 2010.[14], 48745=In July 2010, reference software to implement the JPEG XR standard was published as ITU-T Recommendation T.835 and International Standard ISO/IEC 29199-5. Microsoft included these publications in the list of specifications covered by its Community Promise.[44], 22342=New work has been started in the JPEG committee to enable the use of JPEG XR image coding within the JPX file storage format \u2014 enabling use of the JPIP protocol, which allows interactive browsing of networked images.[12] Additionally, a Motion JPEG XR specification was approved as an ISO standard for motion (video) compression in March 2010.[17], 11082=In 2010, after completion of the image coding specification, the ITU-T and ISO/IEC also published a motion format specification (ITU-T T.833 | ISO/IEC 29199-3), a conformance test set (ITU-T T.834 | ISO/IEC 29199-4), and reference software (ITU-T T.835 | ISO/IEC 29199-5) for JPEG XR. In 2011, they published a technical report describing the workflow architecture for the use of JPEG XR images in applications (ITU-T T.Sup2 | ISO/IEC TR 29199-1)., 47079=The 2011 video game, Rage, employs JPEG XR compression to compress its textures.[42], 49306=In April 2013, Microsoft released an open source JPEG XR library under the BSD licence.[45][46] This resolved any licencing issues with the library being implemented in software packages distributed under popular open source licences such as the GNU General Public License, with which the previously released \"HD Photo Device Porting Kit\"[47] was incompatible.}",
+    "lastModified": "Sun, 26 Jul 2015 22:11:08 GMT",
+    "textBeforeTable": "The following notable software products natively support JPEG XR: A reference software implementation of JPEG XR has been published as ITU-T Recommendation T.835 and ISO/IEC International Standard 29199-5. Software support[edit] The HD Photo bitstream specification claims that \"HD Photo offers image quality comparable to JPEG-2000 with computational and memory performance more closely comparable to JPEG\", that it \"delivers a lossy compressed image of better perceptive quality than JPEG at less than half the file size\", and that \"lossless compressed images \u2026 are typically 2.5 times smaller than the original uncompressed data\". Because all encoding phases except quantization are lossless, JPEG XR is lossless when all quantization coefficients are equal to 1. This is not true of JPEG. JPEG defines a separate lossless mode which does not use the DCT, but it is not implemented by libjpeg and therefore not widely supported. JPEG uses a single quantization step size per DC/AC component per color plane per image. JPEG XR allows a selection of DC quantization step sizes on a tile region basis, and allows lowpass and AC quantization step sizes to vary from macroblock to macroblock. JPEG XR's entropy coding phase is more adaptive and complex than JPEG's, involving a DC and AC coefficient prediction scheme, adaptive coefficient reordering (in contrast to JPEG's fixed zigzag ordering), and a form of adaptive Huffman coding for the coefficients themselves. JPEG XR",
+    "textAfterTable": "Microsoft Expression Design Microsoft Yes Yes [27] Microsoft Expression Media Microsoft Yes No Microsoft Image Composite Editor Microsoft Yes Yes [28] PhotoLine Computerinsel Yes Yes Serif PhotoPlus X7 Serif Europe Yes Yes Windows Live Photo Gallery Microsoft Yes Yes Windows Photo Gallery Microsoft Yes Yes Windows Photo Viewer Microsoft Yes N/A XnView Pierre-Emmanuel Gougelet Yes Yes [29][30] Xara Designer Pro Xara Group Limited Yes No [31] Zoner Photo Studio Zoner Software Yes Yes The following notable software support JPEG XR through a Plug-in: Product name Publisher Plug-in name Plug-in publisher Read support Write support",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

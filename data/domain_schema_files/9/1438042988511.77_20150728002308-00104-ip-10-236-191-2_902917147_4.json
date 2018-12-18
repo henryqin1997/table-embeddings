@@ -1,0 +1,119 @@
+{
+    "relation": [
+        [
+            "Category",
+            "Network & Connectivity",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Subcategory",
+            "",
+            "Network Settings",
+            "Network Settings",
+            "Network Settings",
+            "Network Settings",
+            ""
+        ],
+        [
+            "Name",
+            "",
+            "",
+            "Connection Preferences",
+            "Proxy",
+            "Service Discovery",
+            "Sharing"
+        ],
+        [
+            "kcmodule",
+            "",
+            "",
+            "netpref",
+            "proxy",
+            "kcmkdnssd",
+            "fileshare"
+        ],
+        [
+            "Icon",
+            "generic",
+            "generic",
+            "generic",
+            "generic",
+            "generic",
+            "generic"
+        ],
+        [
+            "BRs",
+            "",
+            "",
+            "use bko component kio/settings",
+            "use bko component kio/settings",
+            "",
+            ""
+        ],
+        [
+            "Comments",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Advanced",
+            "N",
+            "N",
+            "N",
+            "N",
+            "N",
+            "N"
+        ],
+        [
+            "Maintained",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Needs Root",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Y"
+        ],
+        [
+            "SVN Path",
+            "",
+            "",
+            "kdebase/apps/konqueror/settings/kio/",
+            "kdebase/apps/konqueror/settings/kio/",
+            "kdebase/runtime/kcontrol/dnssd/",
+            "kdenetwork/filesharing/simple"
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Projects/SystemSettings\" - KDE TechBase",
+    "title": "",
+    "url": "https://techbase.kde.org/index.php?title=Projects/SystemSettings&diff=73097&oldid=28999",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988511.77/warc/CC-MAIN-20150728002308-00104-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 902945471,
+    "recordOffset": 902917147,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "These modules are currently displayed in System Settings Y = Yes; N = No; M = Maybe Computer Administration Modules Check that User:DarioAndres/SS3 is implemented. 2009-03-11: polkit-Qt is there meanwhile, yeah! Now we just could need a way to provide a more portable implementation\u00a0:) (sebsauer) See also PolicyKit and PolicyKit-KDE - looking through the API it seems to be overall complicated to implement that for e.g. the datetime-kcm compared to the KDE3-way plus it does NOT seem to be portable (so, we would need a portable wrapper-lib around it). All in all it sounds like a lot of overhead imho (sebsauer) See also commit r559289: \"remove the ability to embed KCMs running as root: the GUI should run with user privileges and only the writing or calling of programs should run as root\" Reimplement administrator mode modules using minimal reader/writer root processes TODO Hook up to KCMultiWidget etc Custom Delegate Custom KCategoryDrawer with icon SortFilterProxyModel to replace KCMSearch. This should use X-KDE-Weight to set sort order and set a SearchHitRole on the items so that the custom delegate can dim them. Use KCategorizedView KCModuleModel Port to Interview and use KCategorizedView from",
+    "textAfterTable": "Keyboard & Mouse Keyboard Shortcuts keys Y 153282 N kdebase/workspace/kcontrol/keys Keyboard & Mouse Mouse mouse Y 153202 N kdebase/workspace/kcontrol/input Display Y N Display Size and Orientation randr Y Y kdebase/workspace/kcontrol/randr Display Power Control energy Y Removed in KDE4.4 code (replaced by PowerDevil) N N Removed Multimedia sound Y Report bugs to systemsettings/kcm_phonon overall Phonon config, like old \"Sound System\" N kdebase/runtime/phonon/kcm Look & Feel Category Subcategory Name kcmodule Icon BRs Comments Advanced Maintained",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

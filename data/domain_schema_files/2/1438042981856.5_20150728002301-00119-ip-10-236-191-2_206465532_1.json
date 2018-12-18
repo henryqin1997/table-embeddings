@@ -1,0 +1,67 @@
+{
+    "relation": [
+        [
+            "Sensor",
+            "Magnetic",
+            "Magnetic",
+            "Magnetic",
+            "Electric",
+            "Electric",
+            "Electric"
+        ],
+        [
+            "SEED Channels",
+            "VT?",
+            "LT?",
+            "BT?",
+            "VQ?",
+            "LQ?",
+            "BQ?"
+        ],
+        [
+            "Rate (samples/sec)",
+            "0.1",
+            "1.0",
+            "40.0",
+            "0.1",
+            "1.0",
+            "40.0"
+        ],
+        [
+            "Sampling Mode",
+            "Continuous",
+            "Continuous",
+            "Continuous",
+            "Continuous",
+            "Continuous",
+            "Continuous"
+        ],
+        [
+            "FIR Filter",
+            "Acausal",
+            "Acausal",
+            "Acausal",
+            "Acausal",
+            "Acausal",
+            "Acausal"
+        ]
+    ],
+    "pageTitle": "BSL: Electromagnetic Field Measurements",
+    "title": "",
+    "url": "http://seismo.berkeley.edu/bdsn/em.overview.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00119-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 206473734,
+    "recordOffset": 206465532,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{14668=Sites were initially established at SAO and PKD1. When the BDSN site at PKD1 was relocated to PKD, additional electromagnetic sensors were installed there. The PKD1 equipment was recorded in parallel with PKD for several months and then removed in early 1999.}",
+    "lastModified": "Fri, 01 May 2015 20:27:34 GMT",
+    "textBeforeTable": "Recorded Channels 72 hour backup power supply Dialup telephone access telemetry to UC Berkeley Continuous clock GPS Quanterra digital data logger 24-bit Multiple component electric field sensors (DC - 20 Hz) 3-component magnetic field sensors (0.0001 - 20 Hz) Current Station Equipment BK Network Code In addition, the BSL collaborates with Professor Steve Park of UC Riverside to collect and archive data from a low-frequency, long-baseline electric field project at site PKD2. This experiment (which is separate from the observatory at site PKD1), uses an 8 channel Quanterra datalogger to record the data. Sites were initially established at SAO and PKD1. When the BDSN site at PKD1 was relocated to PKD, additional electromagnetic sensors were installed there. The PKD1 equipment was recorded in parallel with PKD for several months and then removed in early 1999. In collaboration with Professor Frank Morrison of the Department of Civil and Environment Engineering, the Berkeley Seismological Laboratory has established electromagnetic field observatories at 2 BDSN sites. Electromagnetic Field Measurements",
+    "textAfterTable": "Network State of Health The BSL has been working with Dr. Gary Egbert at Oregon State University to install his software for automated data processing and quality control. Characteristics of integrated spectra and parameters of the first Earth-ionosphere cavity resonance are calculated routinely. Station and Channel Information Map of BDSN stations Table of BDSN stations BK Information Directory, including List of station locations List of available channels Year/month/day format Year,doy format Instrument Response SEED format Simplified Responses Information on Quanterra Timing Errors Data access Waveform data from the BK network are available in SEED format. Several tools provide access to SEED format data at the NCEDC, both in terms of querying the archives and allowing data requests. Querying the archives SeismiQuery at the NCEDC NetDC Request Form Requesting data NetDC Request Form Help on using these tools is available. The results of daily magnetic activity and Schumann resonance are available via anonymous ftp at the NCEDC. The README file provides some additional information. Reports",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}
