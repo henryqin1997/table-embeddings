@@ -57,14 +57,14 @@ function addLink(key) {
     return `<a href="${url}" target="_blank">${url}</a><br/>${key.slice(index)}`;
 }
 
-$(document).ready(function () {
+$(document).ready(() => {
     $.getJSON('http://127.0.0.1:3000/data/domain_schema_files_dict.json', dict => {
         $('#radio-container').append(Object.keys(dict).map(key => `    
     <div class="radio">
         <label><input type="radio" name="domain-schema" value="${key}">${addLink(key)}</label>
     </div>`).join('\n'));
 
-        $('input[type=radio]').change(function () {
+        $('input[type=radio]').change(() => {
             const file = dict[$(this).val()];
             readTable(`data/domain_schema_files/${file}`);
         });
