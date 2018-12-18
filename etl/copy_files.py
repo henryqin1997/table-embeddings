@@ -8,7 +8,7 @@ input_dir = sys.argv[2]
 output_dir = sys.argv[3]
 
 if __name__ == '__main__':
-    files = json.load(files_json)
+    files = json.load(open(files_json))
     if type(files) is dict:
         files = files.values()
 
