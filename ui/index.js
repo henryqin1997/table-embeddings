@@ -38,6 +38,7 @@ function readTable(file) {
             $('#page-title').html(data.pageTitle);
             $('#title').html(data.title);
             $('#url').html(`<a href="${data.url}" target="_blank">${data.url}</a>`);
+            $('#raw').html(`<a href="${`http://127.0.0.1:3000/${file}`}" target="_blank">${file}</a>`);
             $('#table-header').empty();
             $('#table-body').empty();
             extractHeader(data).forEach(label => {
