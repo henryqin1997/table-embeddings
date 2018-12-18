@@ -24,9 +24,9 @@ for file in files:
         if domain_schema_dict[result] == 1:
             domain_schema_files_dict[result] = file
 
-domain_schema_dict = sorted(domain_schema_dict.items(), key=itemgetter(1), reverse=True)
-domain_schema_files_dict = sorted(domain_schema_files_dict.items(), key=lambda item: domain_schema_dict[item[0]],
-                                  reverse=True)
+domain_schema_dict = dict(sorted(domain_schema_dict.items(), key=itemgetter(1), reverse=True))
+domain_schema_files_dict = dict(sorted(domain_schema_files_dict.items(), key=lambda item: domain_schema_dict[item[0]],
+                                  reverse=True))
 
 json.dump(domain_schema_dict, open('data/domain_schema_dict.json', 'w+'), indent=4)
 json.dump(domain_schema_files_dict, open('data/domain_schema_files_dict.json', 'w+'), indent=4)
