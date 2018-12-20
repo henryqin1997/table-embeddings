@@ -8,34 +8,15 @@ from .load import load_data_12k
 from urllib.parse import urlparse
 
 def measure_distribution_cut(diction, input, target):
-    input_transformed = input.transpose()
-    target_transformed = target.transpose()
-    for index, row in enumerate(input_transformed):
-        if row[0] == 0:
-            try:
-                i = list(row).index(1)
-                t = list(target_transformed[index]).index(1)
-                diction[i][t] += 1
-            except ValueError:
-                pass
+    for i in range(len(input)):
+        if input[i]!=-1:
+            diction[input[i]][target]
+        else:
+            break
 
 
 def measure_distribution_no_cut(diction, input, target):
-    input_transformed = input.transpose()
-    target_transformed = target.transpose()
-    key_list = []
-    value_list = []
-    for index, row in enumerate(input_transformed):
-        try:
-            i = list(row).index(1)
-            t = list(target_transformed[index]).index(1)
-        except ValueError:
-            i = -1
-            t = -1
-        finally:
-            key_list.append(str(i))
-            value_list.append(str(t))
-    diction[','.join(key_list)][','.join(value_list)] += 1
+    diction[','.join(input)][','.join(target)] += 1
 
 def generate_dic_pred():
     prediction=defaultdict(lambda: [])
@@ -80,6 +61,7 @@ def train():
         input, target = load_data_12k(batch_size=batch_size, batch_index=batch_index)
         batch_index += 1
         for i in range(len(input)):
+            print(input[i])
             measure_distribution_cut(dic_cut, input[i], target[i])
             measure_distribution_no_cut(dic_no_cut, input[i], target[i])
 
@@ -145,27 +127,14 @@ def train():
         input, target = load_data_12k(batch_size=batch_size, batch_index=batch_index)
         batch_index += 1
         for i in range(len(input)):
-            total += 1
-            input_transformed = input[i].transpose()
-            target_transformed = target[i].transpose()
-            key_list = []
-            value_list = []
-            for index, row in enumerate(input_transformed):
-                try:
-                    i = list(row).index(1)
-                    t = list(target_transformed[index]).index(1)
-                except ValueError:
-                    i = -1
-                    t = -1
-                finally:
-                    key_list.append(str(i))
-                    value_list.append(str(t))
 
-            pred = diction_pred(dic_prediction,dic_cut_pred,key_list)
-            for i in range(len(value_list)):
-                if value_list[i]!=-1:
+            total += 1
+            pred = diction_pred(dic_prediction,dic_cut_pred,input[i])
+
+            for j in range(len(target[i])):
+                if target[i][j]!=-1:
                     total+=1
-                    if pred[i]==value_list[i]:
+                    if pred[j]==target[i][j]:
                         correct+=1
                 else:
                     break
@@ -187,26 +156,12 @@ def test():
         batch_index += 1
         for i in range(len(input)):
             total += 1
-            input_transformed = input[i].transpose()
-            target_transformed = target[i].transpose()
-            key_list = []
-            value_list = []
-            for index, row in enumerate(input_transformed):
-                try:
-                    i = list(row).index(1)
-                    t = list(target_transformed[index]).index(1)
-                except ValueError:
-                    i = -1
-                    t = -1
-                finally:
-                    key_list.append(str(i))
-                    value_list.append(str(t))
 
-            pred = diction_pred(dic_pred, dic_cut_pred, key_list)
-            for i in range(len(value_list)):
-                if value_list[i] != -1:
+            pred = diction_pred(dic_pred, dic_cut_pred, input[i])
+            for j in range(len(target[i])):
+                if target[i][j] != -1:
                     total += 1
-                    if pred[i] == value_list[i]:
+                    if pred[i] == target[i]:
                         correct += 1
                 else:
                     break
