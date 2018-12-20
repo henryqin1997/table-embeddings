@@ -63,7 +63,6 @@ def train():
         input, target = load_data_12k(batch_size=batch_size, batch_index=batch_index)
         batch_index += 1
         for i in range(len(input)):
-            print(input[i])
             measure_distribution_cut(dic_cut, input[i], target[i])
             measure_distribution_no_cut(dic_no_cut, input[i], target[i])
 
