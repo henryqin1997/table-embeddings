@@ -10,12 +10,14 @@ from urllib.parse import urlparse
 def measure_distribution_cut(diction, input, target):
     for i in range(len(input)):
         if input[i]!=-1:
-            diction[input[i]][target]
+            diction[input[i]]=target[i]
         else:
             break
 
 
 def measure_distribution_no_cut(diction, input, target):
+    input = [str(x) for x in input]
+    target = [str(x) for x in target]
     diction[','.join(input)][','.join(target)] += 1
 
 def generate_dic_pred():
