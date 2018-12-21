@@ -70,6 +70,9 @@ $(document).ready(function () {
                 readTable(`data/domain_schema_files/${file}`);
             });
         });
+    } else {
+        $('#left-section').remove();
+        $('#right-section').css({'width': '100%', 'padding': '20px', 'box-sizing': 'border-box'});
     }
 
     if (vars.file) {
