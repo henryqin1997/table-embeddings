@@ -33,22 +33,20 @@ function extractEntities(data) {
 }
 
 function readTable(file) {
-    if (file) {
-        $.getJSON(`http://127.0.0.1:3000/${file}`, data => {
-            $('#page-title').html(data.pageTitle);
-            $('#title').html(data.title);
-            $('#url').html(`<a href="${data.url}" target="_blank">${data.url}</a>`);
-            $('#raw').html(`<a href="${`http://127.0.0.1:3000/${file}`}" target="_blank">${file}</a>`);
-            $('#table-header').empty();
-            $('#table-body').empty();
-            extractHeader(data).forEach(label => {
-                $('#table-header').append(`<th scope="col">${label}</th>`)
-            });
-            extractEntities(data).forEach(entity => {
-                $('#table-body').append(`<tr>${entity.map(item => `<td>${item}</td>`).join('')}</tr>`)
-            });
+    $.getJSON(`http://127.0.0.1:3000/${file}`, data => {
+        $('#page-title').html(data.pageTitle);
+        $('#title').html(data.title);
+        $('#url').html(`<a href="${data.url}" target="_blank">${data.url}</a>`);
+        $('#raw').html(`<a href="${`http://127.0.0.1:3000/${file}`}" target="_blank">${file}</a>`);
+        $('#table-header').empty();
+        $('#table-body').empty();
+        extractHeader(data).forEach(label => {
+            $('#table-header').append(`<th scope="col">${label}</th>`)
         });
-    }
+        extractEntities(data).forEach(entity => {
+            $('#table-body').append(`<tr>${entity.map(item => `<td>${item}</td>`).join('')}</tr>`)
+        });
+    });
 }
 
 function addLink(key) {
@@ -74,5 +72,7 @@ $(document).ready(function () {
         });
     }
 
-    readTable(vars.file);
+    if (vars.file) {
+        readTable(vars.file);
+    }
 });
