@@ -33,22 +33,20 @@ function extractEntities(data) {
 }
 
 function readTable(file) {
-    if (file) {
-        $.getJSON(`http://127.0.0.1:3000/${file}`, data => {
-            $('#page-title').html(data.pageTitle);
-            $('#title').html(data.title);
-            $('#url').html(`<a href="${data.url}" target="_blank">${data.url}</a>`);
-            $('#raw').html(`<a href="${`http://127.0.0.1:3000/${file}`}" target="_blank">${file}</a>`);
-            $('#table-header').empty();
-            $('#table-body').empty();
-            extractHeader(data).forEach(label => {
-                $('#table-header').append(`<th scope="col">${label}</th>`)
-            });
-            extractEntities(data).forEach(entity => {
-                $('#table-body').append(`<tr>${entity.map(item => `<td>${item}</td>`).join('')}</tr>`)
-            });
+    $.getJSON(`http://127.0.0.1:3000/${file}`, data => {
+        $('#page-title').html(data.pageTitle);
+        $('#title').html(data.title);
+        $('#url').html(`<a href="${data.url}" target="_blank">${data.url}</a>`);
+        $('#raw').html(`<a href="${`http://127.0.0.1:3000/${file}`}" target="_blank">${file}</a>`);
+        $('#table-header').empty();
+        $('#table-body').empty();
+        extractHeader(data).forEach(label => {
+            $('#table-header').append(`<th scope="col">${label}</th>`)
         });
-    }
+        extractEntities(data).forEach(entity => {
+            $('#table-body').append(`<tr>${entity.map(item => `<td>${item}</td>`).join('')}</tr>`)
+        });
+    });
 }
 
 function addLink(key) {
@@ -58,18 +56,26 @@ function addLink(key) {
 }
 
 $(document).ready(function () {
-    $.getJSON('http://127.0.0.1:3000/data/domain_schema_files_dict.json', dict => {
-        $('#radio-container').append(Object.keys(dict).map(key => `    
+    const vars = getUrlVars();
+
+    if (vars.list) {
+        $.getJSON(`http://127.0.0.1:3000/${vars.list}`, dict => {
+            $('#radio-container').append(Object.keys(dict).map(key => `    
     <div class="radio">
         <label><input type="radio" name="domain-schema" value="${key}">${addLink(key)}</label>
     </div>`).join('\n'));
 
-        $('input[type=radio]').change(function () {
-            const file = dict[$(this).val()];
-            readTable(`data/domain_schema_files/${file}`);
+            $('input[type=radio]').change(function () {
+                const file = dict[$(this).val()];
+                readTable(`data/domain_schema_files/${file}`);
+            });
         });
-    });
+    } else {
+        $('#left-section').remove();
+        $('#right-section').css({'width': '100%', 'padding': '20px', 'box-sizing': 'border-box'});
+    }
 
-    const vars = getUrlVars();
-    readTable(vars.file);
+    if (vars.file) {
+        readTable(vars.file);
+    }
 });
