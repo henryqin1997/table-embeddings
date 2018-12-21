@@ -46,39 +46,28 @@ def diction_pred(dic,dic_cut,feature):
     maxkey = [int(x) for x in maxkey.split(',')]
 
     for i in range(len(maxkey)):
-        if maxkey[i]!=feature[i]:
-            if dic_cut[str(feature[i])][1]>0.5:
-                pred[i]=int(dic_cut[str(feature[i])][0])
+        if feature[i]!=-1:
+            if maxkey[i]!=feature[i]:
+                if dic_cut[str(feature[i])][1]>0.5:
+                    pred[i]=int(dic_cut[str(feature[i])][0])
+        else:
+            break
 
     return pred
 
 def diction_pred_advanced(dic,feature):
     maxkey = ''
     maxsim = 0
-    feature_processed = [x for x in feature if x != -1]
+    feature_processed = [int(x) for x in feature if int(x) != -1]
     for key in dic.keys():
         key_processed = [int(x) for x in key.split(',')]
-        sim = li_similarity(feature_processed, key_processed)
+        sim = qin_similarity(feature_processed, key_processed)
         if sim > maxsim:
             maxkey = key
             maxsim = sim
 
     pred = dic[maxkey][0]
     pred = [int(x) for x in pred.split(',')]
-    pred_key = [int(x) for x in maxkey.split(',')]
-
-    for i in range(len(feature_processed)):
-        maxkey = ''
-        maxsim = 0
-        if pred_key[i] != feature[i]:
-            for key in dic.keys():
-                if key[i]==feature[i]:
-                    key_processed = [int(x) for x in key.split(',')]
-                    sim = li_similarity(feature_processed, key_processed)
-                    if sim > maxsim:
-                        maxkey = key
-                        maxsim = sim
-            pred[i] = int(dic[maxkey][0].split(',')[i])
 
     return pred
 
