@@ -4,6 +4,7 @@ import os
 
 keycolumn = 'date'
 
+
 def find_all():
     wordlist = json.load(open('data/wordlist_v6_index.json'))
     key_index = wordlist[keycolumn]
@@ -11,7 +12,7 @@ def find_all():
     if not os.path.exists('tools/{}'.format(keycolumn)):
         os.makedirs('tools/{}'.format(keycolumn))
 
-    wfp=open('tools/{}/columns.txt'.format(keycolumn),'w')
+    wfp = open('tools/{}/columns.txt'.format(keycolumn), 'w')
 
     size = 100000
     batch_size = 50
@@ -24,12 +25,12 @@ def find_all():
 
         for i in range(len(target)):
             for j in range(len(target[i])):
-                if target[i][j]==key_index:
-                    wfp.write(raw[i]['relation'][j])
-                    wfp.write('\n')
-                elif target[i][j]==-1:
+                if target[i][j] == key_index:
+                    wfp.write('{}\n'.format(raw[i]['relation'][j]))
+                elif target[i][j] == -1:
                     break
     wfp.close()
 
-if __name__=='__main__':
+
+if __name__ == '__main__':
     find_all()
