@@ -1,6 +1,7 @@
 from decision_tree.load import load_data_with_raw
 import json
 import os
+from etl.table import Table
 
 keycolumn = 'date'
 
@@ -26,7 +27,9 @@ def find_all():
         for i in range(len(target)):
             for j in range(len(target[i])):
                 if target[i][j] == key_index:
-                    wfp.write('{}\n'.format(raw[i]['relation'][j]))
+                    table = Table(raw[i])
+                    wfp.write('{}\n'.format(table.get_attributes()[j]))
+                    print(table.get_attributes()[j])
                 elif target[i][j] == -1:
                     break
     wfp.close()
