@@ -29,7 +29,6 @@ def find_all():
                 if target[i][j] == key_index:
                     table = Table(raw[i])
                     wfp.write('{}\n'.format(table.get_attributes()[j]))
-                    print(table.get_attributes()[j])
                 elif target[i][j] == -1:
                     break
     wfp.close()
