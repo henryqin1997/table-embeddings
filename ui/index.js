@@ -58,18 +58,21 @@ function addLink(key) {
 }
 
 $(document).ready(function () {
-    $.getJSON('http://127.0.0.1:3000/data/domain_schema_files_dict.json', dict => {
-        $('#radio-container').append(Object.keys(dict).map(key => `    
+    const vars = getUrlVars();
+
+    if (vars.list) {
+        $.getJSON(`http://127.0.0.1:3000/${vars.list}`, dict => {
+            $('#radio-container').append(Object.keys(dict).map(key => `    
     <div class="radio">
         <label><input type="radio" name="domain-schema" value="${key}">${addLink(key)}</label>
     </div>`).join('\n'));
 
-        $('input[type=radio]').change(function () {
-            const file = dict[$(this).val()];
-            readTable(`data/domain_schema_files/${file}`);
+            $('input[type=radio]').change(function () {
+                const file = dict[$(this).val()];
+                readTable(`data/domain_schema_files/${file}`);
+            });
         });
-    });
+    }
 
-    const vars = getUrlVars();
     readTable(vars.file);
 });
