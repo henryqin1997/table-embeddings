@@ -27,4 +27,3 @@ if __name__ == '__main__':
     print([wordlist[index] if 0 <= index < 3333 else 'OTHER' if index == 3333 else 'NULL' for index in prediction])
     print('target')
     print([wordlist[index] if 0 <= index < 3333 else 'OTHER' if index == 3333 else 'NULL' for index in target])
-    print(feature, prediction, target)
