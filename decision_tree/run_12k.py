@@ -67,9 +67,6 @@ def train():
             measure_distribution_cut(dic_cut, input[i], target[i])
             measure_distribution_no_cut(dic_no_cut, input[i], target[i])
 
-    for key in dic_cut.keys():
-        print(dic_cut[key])
-
     with open('decision_tree/diction_12k.json', 'w') as fp:
         json.dump(dic_no_cut, fp)
         print('diction saved')
