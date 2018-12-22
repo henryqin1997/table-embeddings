@@ -68,7 +68,7 @@ def load_data(batch_size, batch_index=0):
             numpy.array([int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
                          if idx < column_num else -1 for idx, row in enumerate(input.transpose())]).transpose())
         targets_transformed.append(
-            numpy.array([indexOf(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
+            numpy.array([index_of(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
                          idx, row in enumerate(target.transpose())]).transpose())
     return numpy.array(inputs_transformed), numpy.array(targets_transformed)
 
@@ -106,9 +106,10 @@ def load_data_with_raw(batch_size, batch_index=0):
             numpy.array([int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
                          if idx < column_num else -1 for idx, row in enumerate(input.transpose())]).transpose())
         targets_transformed.append(
-            numpy.array([indexOf(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
+            numpy.array([index_of(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
                          idx, row in enumerate(target.transpose())]).transpose())
     return numpy.array(raws), numpy.array(inputs_transformed), numpy.array(targets_transformed)
+
 
 def load_data_100_sample(batch_size, batch_index=0):
     # load training data from file, to be implemented
@@ -119,10 +120,12 @@ def load_data_100_sample(batch_size, batch_index=0):
     batch_files_ner = list(map(lambda batch_file: batch_file.rstrip('.json') + '_ner.csv', batch_files))
     batch_files_wordlist = list(map(lambda batch_file: batch_file.rstrip('.json') + '_wordlist.csv', batch_files))
     inputs = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_100_sample_dir, batch_file_ner), delimiter=',') for batch_file_ner in
+        [numpy.genfromtxt(os.path.join(training_data_100_sample_dir, batch_file_ner), delimiter=',') for batch_file_ner
+         in
          batch_files_ner])
     targets = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_100_sample_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
+        [numpy.genfromtxt(os.path.join(training_data_100_sample_dir, batch_file_wordlist), delimiter=',') for
+         batch_file_wordlist
          in batch_files_wordlist])
 
     inputs_transformed = []
@@ -140,7 +143,7 @@ def load_data_100_sample(batch_size, batch_index=0):
             numpy.array([int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
                          if idx < column_num else -1 for idx, row in enumerate(input.transpose())]).transpose())
         targets_transformed.append(
-            numpy.array([indexOf(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
+            numpy.array([index_of(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
                          idx, row in enumerate(target.transpose())]).transpose())
     return numpy.array(inputs_transformed), numpy.array(targets_transformed)
 
@@ -157,10 +160,12 @@ def load_data_100_sample_with_raw(batch_size, batch_index=0):
         [json.load(open(os.path.join(training_data_100_sample_dir, batch_file), encoding='utf-8')) for batch_file in
          batch_files])
     inputs = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_100_sample_dir, batch_file_ner), delimiter=',') for batch_file_ner in
+        [numpy.genfromtxt(os.path.join(training_data_100_sample_dir, batch_file_ner), delimiter=',') for batch_file_ner
+         in
          batch_files_ner])
     targets = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_100_sample_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
+        [numpy.genfromtxt(os.path.join(training_data_100_sample_dir, batch_file_wordlist), delimiter=',') for
+         batch_file_wordlist
          in batch_files_wordlist])
 
     inputs_transformed = []
@@ -178,9 +183,10 @@ def load_data_100_sample_with_raw(batch_size, batch_index=0):
             numpy.array([int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
                          if idx < column_num else -1 for idx, row in enumerate(input.transpose())]).transpose())
         targets_transformed.append(
-            numpy.array([indexOf(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
+            numpy.array([index_of(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
                          idx, row in enumerate(target.transpose())]).transpose())
     return numpy.array(raws), numpy.array(inputs_transformed), numpy.array(targets_transformed)
+
 
 def load_data_12k(batch_size, batch_index=0):
     # load training data from file, to be implemented
@@ -194,7 +200,8 @@ def load_data_12k(batch_size, batch_index=0):
         [numpy.genfromtxt(os.path.join(training_data_12k_dir, batch_file_ner), delimiter=',') for batch_file_ner in
          batch_files_ner])
     targets = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_12k_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
+        [numpy.genfromtxt(os.path.join(training_data_12k_dir, batch_file_wordlist), delimiter=',') for
+         batch_file_wordlist
          in batch_files_wordlist])
 
     inputs_transformed = []
@@ -212,9 +219,10 @@ def load_data_12k(batch_size, batch_index=0):
             numpy.array([int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
                          if idx < column_num else -1 for idx, row in enumerate(input.transpose())]).transpose())
         targets_transformed.append(
-            numpy.array([indexOf(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
+            numpy.array([index_of(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
                          idx, row in enumerate(target.transpose())]).transpose())
     return numpy.array(inputs_transformed), numpy.array(targets_transformed)
+
 
 def load_data_12k_with_raw(batch_size, batch_index=0):
     # load training data from file, to be implemented
@@ -231,7 +239,8 @@ def load_data_12k_with_raw(batch_size, batch_index=0):
         [numpy.genfromtxt(os.path.join(training_data_12k_dir, batch_file_ner), delimiter=',') for batch_file_ner in
          batch_files_ner])
     targets = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_12k_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
+        [numpy.genfromtxt(os.path.join(training_data_12k_dir, batch_file_wordlist), delimiter=',') for
+         batch_file_wordlist
          in batch_files_wordlist])
 
     inputs_transformed = []
@@ -249,11 +258,12 @@ def load_data_12k_with_raw(batch_size, batch_index=0):
             numpy.array([int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
                          if idx < column_num else -1 for idx, row in enumerate(input.transpose())]).transpose())
         targets_transformed.append(
-            numpy.array([indexOf(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
+            numpy.array([index_of(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
                          idx, row in enumerate(target.transpose())]).transpose())
     return numpy.array(raws), numpy.array(inputs_transformed), numpy.array(targets_transformed)
 
-def indexOf(l, n):
+
+def index_of(l, n):
     try:
         return list(l).index(n)
     except ValueError:
@@ -280,7 +290,7 @@ def load_sample_random_label(sample_index, batch_size, batch_index):
         input_transformed = [
             int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
             if idx < column_num else -1 for idx, row in enumerate(input)]
-        target_transformed = [indexOf(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
+        target_transformed = [index_of(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
                               idx, row in enumerate(target)]
         activate_transformed = [num if idx < column_num else -1 for idx, num in enumerate(activate)]
 
@@ -306,7 +316,7 @@ def load_sample_random_table(sample_index, batch_size, batch_index):
         input_transformed = [
             int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
             if idx < column_num else -1 for idx, row in enumerate(input)]
-        target_transformed = [indexOf(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
+        target_transformed = [index_of(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
                               idx, row in enumerate(target)]
 
         result.append([input_transformed, target_transformed])
