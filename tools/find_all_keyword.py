@@ -2,7 +2,7 @@ from decision_tree.load import load_data_with_raw
 import json
 import os
 
-keycolumn = 'date'
+keycolumn = 'score'
 
 
 def find_all():
