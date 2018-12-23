@@ -49,6 +49,8 @@ def identify_features(training_files):
             nst_count = defaultdict(int)
             for value in attribute:
                 nst_count[nst_encoding(identify_nst(value))] += 1
+                if nst_encoding(identify_nst(value)) == 0:
+                    print(value)
             print(nst_count)
         if not os.path.exists(os.path.join(training_data_dir, os.path.dirname(training_file))):
             os.makedirs(os.path.join(training_data_dir, os.path.dirname(training_file)))
