@@ -56,6 +56,13 @@ def identify_features(training_files):
         numpy.savetxt(os.path.join(training_data_dir, '{}_nst.csv'.format(basename)),
                       [[1, 2, 3, 4], [5, 6, 7, 8]], fmt='%i', delimiter=",")
 
+def if_ordered(numbers):
+    '''Input: a column of number with more than 3 values; output: boolean value whether they are ordered'''
+    sign = numpy.sign(numbers[0]-numbers[1])
+    for i in range(1,len(numbers)-1):
+        if numbers[i]-numbers[i+1]!=0 and numpy.sign(numbers[i]-numbers[i+1])!=sign:
+            return False
+    return True
 
 if __name__ == '__main__':
     identify_features(training_files)
