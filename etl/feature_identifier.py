@@ -4,6 +4,7 @@ import os
 import re
 import numpy
 from .table import Table
+from collections import defaultdict
 
 webtables_dir = './webtables'
 training_data_dir = './data/train_100_sample'
@@ -44,6 +45,11 @@ def identify_features(training_files):
         data = json.load(open(os.path.join(webtables_dir, training_file), encoding='utf-8'))
         table = Table(data)
         print(training_file)
+        for attribute in table.get_attributes():
+            nst_count = defaultdict(int)
+            for value in attribute:
+                nst_count[nst_encoding(identify_nst(value))] += 1
+            print(nst_count)
         if not os.path.exists(os.path.join(training_data_dir, os.path.dirname(training_file))):
             os.makedirs(os.path.join(training_data_dir, os.path.dirname(training_file)))
         basename = training_file.rstrip('.json')
