@@ -2,9 +2,13 @@ from dateutil.parser import parse
 import json
 import os
 import re
+import numpy
+from .table import Table
 
 webtables_dir = './webtables'
-training_data_dir = './data/train'
+training_data_dir = './data/train_100_sample'
+training_files_json = './data/training_files.json'
+training_files = json.load(open(training_files_json))
 
 
 def identify_date(value):
@@ -31,27 +35,21 @@ def identify_nst(value):
     return [identify_number(value), identify_symbol(value), identify_text(value)]
 
 
-# def identify_features(training_files):
-#     wordlist = json.load(open(wordlist_json))
-#     for training_file in training_files:
-#         data = json.load(open(os.path.join(webtables_dir, training_file), encoding='utf-8'))
-#         if satisfy_variants(data):
-#             table = Table(data)
-#             # # Filter table with labels <= 10
-#             # if len(table.get_header()) <= 10:
-#             print(training_file)
-#             if not os.path.exists(os.path.join(training_data_dir, os.path.dirname(training_file))):
-#                 os.makedirs(os.path.join(training_data_dir, os.path.dirname(training_file)))
-#             basename = training_file.rstrip('.json')
-#             json.dump(table.data,
-#                       open(os.path.join(training_data_dir, training_file), 'w+'),
-#                       indent=4)
-#             numpy.savetxt(os.path.join(training_data_dir, '{}_ner.csv'.format(basename)),
-#                           table.generate_ner_matrix(st, tag_to_index), fmt='%i', delimiter=",")
-#             numpy.savetxt(os.path.join(training_data_dir, '{}_wordlist.csv'.format(basename)),
-#                           table.generate_wordlist_matrix(wordlist), fmt='%i', delimiter=",")
+def nst_encoding(nst):
+    return (4 if nst[0] else 0) + (2 if nst[1] else 0) + (1 if nst[2] else 0)
+
+
+def identify_features(training_files):
+    for training_file in training_files:
+        data = json.load(open(os.path.join(webtables_dir, training_file), encoding='utf-8'))
+        table = Table(data)
+        print(training_file)
+        if not os.path.exists(os.path.join(training_data_dir, os.path.dirname(training_file))):
+            os.makedirs(os.path.join(training_data_dir, os.path.dirname(training_file)))
+        basename = training_file.rstrip('.json')
+        numpy.savetxt(os.path.join(training_data_dir, '{}_nst.csv'.format(basename)),
+                      [[1, 2, 3, 4], [5, 6, 7, 8]], fmt='%i', delimiter=",")
 
 
 if __name__ == '__main__':
-    value = '08/22/2015 - 10:00am'
-    print(identify_nst('12423.5'))
+    identify_features(training_files)
