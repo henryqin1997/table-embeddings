@@ -57,7 +57,7 @@ def identify_features(training_files):
                 nst_count[nst_encoding(identify_nst(value))] += 1
             nst_count = dict(sorted(nst_count.items(), key=itemgetter(1), reverse=True))
             nst_max, nst_max_count = list(nst_count.items())[0]
-            major.append(nst_max if nst_max_count > sum(nst_count.values()) * 0.5 else -1)
+            major.append(nst_max if nst_max_count > sum(nst_count.values()) * 0.5 else 0)
             max.append(nst_max)
             overall.append(reduce(lambda a, b: a | b, nst_count.keys()))
 
