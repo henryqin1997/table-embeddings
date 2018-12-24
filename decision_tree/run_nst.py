@@ -148,5 +148,8 @@ def train():
 
 
 if __name__=='__main__':
-    train()
-
+    #train()
+    for func_index, load_data in enumerate(
+            [load_nst_major, load_nst_max, load_nst_overall, load_nst_mm, load_nst_majo, load_nst_maxo, load_nst_mmo]):
+        print(func_index)
+        print(load_data(50,0))
