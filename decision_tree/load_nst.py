@@ -13,8 +13,8 @@ def load_nst_major(batch_size, batch_index):
     batch_files_nst = list(map(lambda batch_file: batch_file.rstrip('.json') + '_nst.csv', batch_files))
     batch_files_wordlist = list(map(lambda batch_file: batch_file.rstrip('.json') + '_wordlist.csv', batch_files))
     inputs = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_nst), delimiter=',')[0] for batch_file_nst in
-         batch_files_nst])
+        [list(map(to_int, numpy.genfromtxt(os.path.join(training_data_dir, batch_file_nst), delimiter=',')[0])) for
+         batch_file_nst in batch_files_nst])
     targets = numpy.array(
         [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
          in batch_files_wordlist])
@@ -37,8 +37,8 @@ def load_nst_max(batch_size, batch_index):
     batch_files_nst = list(map(lambda batch_file: batch_file.rstrip('.json') + '_nst.csv', batch_files))
     batch_files_wordlist = list(map(lambda batch_file: batch_file.rstrip('.json') + '_wordlist.csv', batch_files))
     inputs = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_nst), delimiter=',')[1] for batch_file_nst in
-         batch_files_nst])
+        [list(map(to_int, numpy.genfromtxt(os.path.join(training_data_dir, batch_file_nst), delimiter=',')[1])) for
+         batch_file_nst in batch_files_nst])
     targets = numpy.array(
         [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
          in batch_files_wordlist])
@@ -61,8 +61,8 @@ def load_nst_overall(batch_size, batch_index):
     batch_files_nst = list(map(lambda batch_file: batch_file.rstrip('.json') + '_nst.csv', batch_files))
     batch_files_wordlist = list(map(lambda batch_file: batch_file.rstrip('.json') + '_wordlist.csv', batch_files))
     inputs = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_nst), delimiter=',')[2] for batch_file_nst in
-         batch_files_nst])
+        [list(map(to_int, numpy.genfromtxt(os.path.join(training_data_dir, batch_file_nst), delimiter=',')[2])) for
+         batch_file_nst in batch_files_nst])
     targets = numpy.array(
         [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
          in batch_files_wordlist])
@@ -101,6 +101,10 @@ def index_of(l, n):
         return list(l).index(n)
     except ValueError:
         return -1
+
+
+def to_int(n):
+    return int(round(n))
 
 
 if __name__ == '__main__':
