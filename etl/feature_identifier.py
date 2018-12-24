@@ -47,19 +47,21 @@ def identify_features(training_files):
         data = json.load(open(os.path.join(webtables_dir, training_file), encoding='utf-8'))
         table = Table(data)
         print(training_file)
-        major = []
-        max = []
-        overall = []
+        major = [-1] * 10
+        max = [-1] * 10
+        overall = [-1] * 10
 
-        for attribute in table.get_attributes():
+        for idx, attribute in enumerate(table.get_attributes()):
+            if idx == 10:
+                break
             nst_count = defaultdict(int)
             for value in attribute:
                 nst_count[nst_encoding(identify_nst(value))] += 1
             nst_count = dict(sorted(nst_count.items(), key=itemgetter(1), reverse=True))
             nst_max, nst_max_count = list(nst_count.items())[0]
-            major.append(nst_max if nst_max_count > sum(nst_count.values()) * 0.5 else 0)
-            max.append(nst_max)
-            overall.append(reduce(lambda a, b: a | b, nst_count.keys()))
+            major[idx] = nst_max if nst_max_count > sum(nst_count.values()) * 0.5 else 0
+            max[idx] = nst_max
+            overall[idx] = reduce(lambda a, b: a | b, nst_count.keys())
 
         if not os.path.exists(os.path.join(training_data_dir, os.path.dirname(training_file))):
             os.makedirs(os.path.join(training_data_dir, os.path.dirname(training_file)))
