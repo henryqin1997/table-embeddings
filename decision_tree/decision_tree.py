@@ -278,3 +278,20 @@ def sample_print_advanced():
             wfp.write(f + "\n")
     with open("decision_tree/fault_diction_table.json", 'w') as wfp:
         json.dump(faultdic, wfp)
+
+def label_num_str(labels):
+    labels = [int(x) for x in labels.split(',') if x!=-1]
+    return len(labels)
+
+def label_num_arr(labels):
+    return len([x for x in labels if x!=-1])
+
+def correct_pred(pred, labels):
+    pred = [int(x) for x in pred.split(',')]
+    labels = [int(x) for x in labels.split(',')]
+    count = 0
+    for i in range(min(len(pred),len(labels))):
+        if labels[i]!=-1:
+            if pred[i]==labels[i]:
+                count+=1
+    return count
