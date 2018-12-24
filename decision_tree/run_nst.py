@@ -53,7 +53,8 @@ def train():
     dic_no_cut = defaultdict(lambda: defaultdict(int))
     dic_prediction = defaultdict(lambda: '')
 
-    for func_index,load_data in enumerate([load_nst_major,load_nst_max,load_nst_overall,load_nst_mm,load_nst_majo,load_nst_maxo,load_nst_mmo])
+    for func_index,load_data in enumerate(
+            [load_nst_major,load_nst_max,load_nst_overall,load_nst_mm,load_nst_majo,load_nst_maxo,load_nst_mmo]):
 
         train_size = 100000
         batch_size = 50
