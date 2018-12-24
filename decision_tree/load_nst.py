@@ -108,4 +108,4 @@ def to_int(n):
 
 
 if __name__ == '__main__':
-    print(load_nst_major(50, 0))
+    print(load_nst_major(50, 2060))
