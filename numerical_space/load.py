@@ -17,8 +17,6 @@ def summary(label, column):
     Input: a column of numerical values in list version
     Output: a list of label, mean, variance, min, max, is_ordered, is_real
     """
-    if label == 93:
-        print(column)
     column = np.array(column)
     values = column.astype(np.float)
     return [label, np.mean(values), np.var(values), np.min(values), np.max(values),
@@ -59,8 +57,6 @@ def load(batch_size, batch_index):
             if nst[j] == nst_encoding([True, False, False]) or nst[j] == nst_encoding([True, True, False]):
                 attribute = attributes[j]
                 if all([re.match(r'^[-+]?\d*\.\d+|\d+$', value) for value in attribute]):
-                    if target_transformed[j] == 93:
-                        print(batch_files[i])
                     result.append(summary(target_transformed[j], attribute))
                 else:
                     print(attribute)
