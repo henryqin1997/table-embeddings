@@ -48,7 +48,7 @@ def load(batch_size, batch_index):
         target = targets[i]
         nst = all_nst[i]
 
-        target_transformed = [index_of(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
+        target_transformed = [index_of(list(map(lambda num: to_int(num), row)), 1) if idx < column_num else -1 for
                               idx, row in enumerate(target.transpose())]
 
         for j in range(column_num):
