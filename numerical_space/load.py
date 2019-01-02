@@ -5,6 +5,9 @@ import numpy as np
 import json
 import os
 import re
+import locale
+
+locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 from etl import Table
 
 training_data_dir = 'data/train_100_sample'
@@ -18,7 +21,8 @@ def summary(label, column):
     Output: a list of label, mean, variance, min, max, is_ordered, is_real
     """
     column = np.array(column)
-    values = column.astype(np.float)
+    locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
+    values = np.array(list(map(locale.atof, column)))
     return [label, np.mean(values), np.var(values), np.min(values), np.max(values),
             1 if np.all(np.diff(values) > 0) else -1 if np.all(np.diff(values) < 0) else 0,
             '.' in ''.join(column)]
@@ -26,7 +30,8 @@ def summary(label, column):
 
 def load(batch_size, batch_index):
     """
-    return summarized data for a table, ie. a list of points summary.
+    return summarized data for a table, e.g. a list of points summary.
+    ignore numeric values with $, %, ", etc., i.e., only take the ones which can be parsed by locale.atof
     """
     batch_files = training_files[batch_size * batch_index:batch_size * (batch_index + 1)]
     batch_files_nst = list(map(lambda batch_file: batch_file.rstrip('.json') + '_nst.csv', batch_files))
@@ -56,7 +61,7 @@ def load(batch_size, batch_index):
                 break
             if nst[j] == nst_encoding([True, False, False]) or nst[j] == nst_encoding([True, True, False]):
                 attribute = attributes[j]
-                if all([re.match(r'^[-+]?\d*\.\d+|\d+$', value) for value in attribute]):
+                if all(list(map(is_numeric, attribute))):
                     result.append(summary(target_transformed[j], attribute))
                 else:
                     print(attribute)
@@ -81,6 +86,15 @@ def index_of(l, n):
 
 def to_int(n):
     return int(round(n))
+
+
+def is_numeric(n):
+    try:
+        locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
+        locale.atof(n)
+        return True
+    except ValueError:
+        return False
 
 
 if __name__ == '__main__':
