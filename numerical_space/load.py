@@ -4,10 +4,6 @@ To load all numerical columns from tables.
 import numpy as np
 
 
-def is_int(x):
-    return np.equal(np.mod(x, 1), 0)
-
-
 def summary(label, column):
     """
     Input: a column of numerical values in list version
