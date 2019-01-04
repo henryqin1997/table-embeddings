@@ -22,7 +22,7 @@ def summary(label, column):
     """
     column = np.array(column)
     locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
-    values = np.array(list(map(locale.atof, column)))
+    values = np.array(list(map(locale.atof, filter(is_numeric, column))))
     return [label, np.mean(values), np.var(values), np.min(values), np.max(values),
             1 if np.all(np.diff(values) > 0) else -1 if np.all(np.diff(values) < 0) else 0,
             '.' in ''.join(column)]
@@ -61,10 +61,8 @@ def load(batch_size, batch_index):
                 break
             if nst[j] == nst_encoding([True, False, False]) or nst[j] == nst_encoding([True, True, False]):
                 attribute = attributes[j]
-                if all(list(map(is_numeric, attribute))):
+                if all(list(map(lambda n: is_numeric(n) or n.upper() in ['', 'NA', 'N/A'], attribute))):
                     result.append(summary(target_transformed[j], attribute))
-                else:
-                    print(attribute)
         results.append(result)
     return results
 
