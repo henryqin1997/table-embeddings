@@ -10,8 +10,8 @@ import locale
 locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
 from etl import Table
 
-training_data_dir = 'data/train_100_sample'
-training_files_json = 'data/training_files_100_sample.json'
+training_data_dir = 'data/train'
+training_files_json = 'data/training_files.json'
 training_files = json.load(open(training_files_json))
 
 
