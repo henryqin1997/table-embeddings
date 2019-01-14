@@ -20,8 +20,7 @@ def build_space():
     dic_asc_int = defaultdict(lambda: [])
     dic_ran_int = defaultdict(lambda: [])
     dic_des_int = defaultdict(lambda: [])
-    #train_size = 100000
-    train_size=5
+    train_size = 100000
     batch_size = 50
     batch_index = 0
     while batch_size * batch_index < train_size:
