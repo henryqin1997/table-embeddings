@@ -6,12 +6,12 @@ from collections import defaultdict
 import json
 
 # For debug
-# training_data_dir = 'data/train_100_sample'
-# training_files_json = 'data/training_files_100_sample.json'
+training_data_dir = 'data/train_100_sample'
+training_files_json = 'data/training_files_100_sample.json'
 
 def build_space():
     '''
-    Build 6 diction, match (features)->(label,info), named numericall_dic_1_float
+    Build 6 diction, match (features)->(label,info), named numerical_dic_1_float
     features--mean, variance, min, max, is_ordered (1 ascending, 0 random, -1 descending), is_float (True/False)
     '''
     dic_asc_fl = defaultdict(lambda:defaultdict(int))
@@ -46,17 +46,17 @@ def build_space():
                         dic_des_int[feature_key][label_info_key]+=1
         batch_index += 1
 
-    with open('numerical_space/numericall_dic_1_float.json','w') as wfp:
+    with open('numerical_space/numerical_dic_1_float.json','w') as wfp:
         json.dump(dic_asc_fl,wfp)
-    with open('numerical_space/numericall_dic_0_float.json','w') as wfp:
+    with open('numerical_space/numerical_dic_0_float.json','w') as wfp:
         json.dump(dic_ran_fl,wfp)
-    with open('numerical_space/numericall_dic_-1_float.json','w') as wfp:
+    with open('numerical_space/numerical_dic_-1_float.json','w') as wfp:
         json.dump(dic_des_fl,wfp)
-    with open('numerical_space/numericall_dic_1_int.json','w') as wfp:
+    with open('numerical_space/numerical_dic_1_int.json','w') as wfp:
         json.dump(dic_asc_int,wfp)
-    with open('numerical_space/numericall_dic_0_int.json','w') as wfp:
+    with open('numerical_space/numerical_dic_0_int.json','w') as wfp:
         json.dump(dic_ran_int,wfp)
-    with open('numerical_space/numericall_dic_-1_int.json','w') as wfp:
+    with open('numerical_space/numerical_dic_-1_int.json','w') as wfp:
         json.dump(dic_des_int,wfp)
 
 if __name__ == '__main__':
