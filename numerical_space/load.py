@@ -23,7 +23,7 @@ training_files = json.load(open(training_files_json))
 def summary(label, column):
     """
     Input: a column of numerical values in list version
-    Output: a list of label, mean, variance, min, max, is_ordered (1 ascending, 0 random, -1 descending), is_real (True/False)
+    Output: a list of label, mean, variance, min, max, is_ordered (1 ascending, 0 random, -1 descending), is_float (True/False)
     """
     column = np.array(column)
     locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
