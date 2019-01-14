@@ -4,7 +4,7 @@ To build a space of numerical data points to predict label of them.
 from .load import load
 
 def build_space():
-    '''Build 6 diction, match (features)->(label,info)'''
+    '''Build 6 diction, match (features)->(label,info), named numericall_dic_1_float'''
 
     train_size = 100000
     batch_size = 50
