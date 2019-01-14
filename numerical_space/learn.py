@@ -14,12 +14,12 @@ def build_space():
     Build 6 diction, match (features)->(label,info), named numericall_dic_1_float
     features--mean, variance, min, max, is_ordered (1 ascending, 0 random, -1 descending), is_float (True/False)
     '''
-    dic_asc_fl = defaultdict(lambda: [])
-    dic_ran_fl = defaultdict(lambda: [])
-    dic_des_fl = defaultdict(lambda: [])
-    dic_asc_int = defaultdict(lambda: [])
-    dic_ran_int = defaultdict(lambda: [])
-    dic_des_int = defaultdict(lambda: [])
+    dic_asc_fl = defaultdict(lambda:defaultdict(int))
+    dic_ran_fl = defaultdict(lambda:defaultdict(int))
+    dic_des_fl = defaultdict(lambda:defaultdict(int))
+    dic_asc_int = defaultdict(lambda:defaultdict(int))
+    dic_ran_int = defaultdict(lambda:defaultdict(int))
+    dic_des_int = defaultdict(lambda:defaultdict(int))
     train_size = 100000
     batch_size = 50
     batch_index = 0
@@ -28,21 +28,22 @@ def build_space():
         summary = load(batch_size=batch_size, batch_index=batch_index)
         for table_summary in summary:
             for column_summary in table_summary:
-                key=','.join(map(str,column_summary[1:5]))
+                feature_key=','.join(map(str,column_summary[1:5]))
+                label_info_key=column_summary[0]
                 if column_summary[6]:
                     if column_summary[5]==1:
-                        dic_asc_fl[key].append(column_summary[0])
+                        dic_asc_fl[feature_key][label_info_key]+=1
                     elif column_summary[5]==0:
-                        dic_ran_fl[key].append(column_summary[0])
+                        dic_ran_fl[feature_key][label_info_key]+=1
                     else:
-                        dic_des_fl[key].append(column_summary[0])
+                        dic_des_fl[feature_key][label_info_key]+=1
                 else:
                     if column_summary[5]==1:
-                        dic_asc_int[key].append(column_summary[0])
+                        dic_asc_int[feature_key][label_info_key]+=1
                     elif column_summary[5]==0:
-                        dic_ran_int[key].append(column_summary[0])
+                        dic_ran_int[feature_key][label_info_key]+=1
                     else:
-                        dic_des_int[key].append(column_summary[0])
+                        dic_des_int[feature_key][label_info_key]+=1
         batch_index += 1
 
     with open('numerical_space/numericall_dic_1_float.json','w') as wfp:
