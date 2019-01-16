@@ -22,13 +22,13 @@ def falconn_test():
     dataset_asc_int = list(filter(lambda l: not l[6] and l[5] == 1, dataset))
 
     vectors = np.array([l[1:5] for l in dataset_asc_int])
+    vectors /= np.linalg.norm(vectors, axis=1).reshape(-1, 1)
     labels = np.array([l[0] for l in dataset_asc_int])
     print(vectors)
     print(labels)
 
     answers = []
     for query in vectors[-number_of_queries:]:
-        print(np.dot(vectors[:-number_of_queries], query).argmax())
         answers.append(labels[np.dot(vectors[:-number_of_queries], query).argmax()])
     print(answers)
 
