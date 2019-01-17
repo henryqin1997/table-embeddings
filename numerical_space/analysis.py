@@ -5,18 +5,19 @@ import json
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 def main():
-    # with open('numerical_space/numerical_dic_1_float.json','r') as fp:
-    #     dic = json.load(fp)
+    with open('numerical_space/numerical_dic_1_float.json','r') as fp:
+        dic_asc_fl = json.load(fp)
     with open('numerical_space/numerical_dic_0_float.json','r') as fp:
-        dic = json.load(fp)
-    # with open('numerical_space/numerical_dic_-1_float.json','r') as fp:
-    #     dic = json.load(fp)
-    # with open('numerical_space/numerical_dic_1_int.json','r') as fp:
-    #     dic = json.load(fp)
-    # with open('numerical_space/numerical_dic_0_int.json','r') as fp:
-    #     dic = json.load(fp)
-    # with open('numerical_space/numerical_dic_-1_int.json','r') as fp:
-    #     dic = json.load(fp)
+        dic_ran_fl = json.load(fp)
+    with open('numerical_space/numerical_dic_-1_float.json','r') as fp:
+        dic_des_fl = json.load(fp)
+    with open('numerical_space/numerical_dic_1_int.json','r') as fp:
+        dic_asc_int = json.load(fp)
+    with open('numerical_space/numerical_dic_0_int.json','r') as fp:
+        dic_ran_int = json.load(fp)
+    with open('numerical_space/numerical_dic_-1_int.json','r') as fp:
+        dic_des_int = json.load(fp)
+    dic=dic_asc_fl
 
     labels=[('16','b', 'o'), ('137','y', '^'),('221','r', 'x')]
     fig=plt.figure()
