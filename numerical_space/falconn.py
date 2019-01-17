@@ -1,9 +1,6 @@
 import numpy as np
-import falconn
-import timeit
 from numerical_space.load import load
 import itertools
-import json
 import math
 
 
