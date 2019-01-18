@@ -21,6 +21,7 @@ def falconn_test():
     # Filter out mean, variance, min, max all zero
     dataset = list(filter(lambda l: np.linalg.norm(l[1:5]) > 0, dataset))
 
+    # Filter data in ascending order and is integer
     dataset_asc_int = list(filter(lambda l: not l[6] and l[5] == 1, dataset))
 
     vectors = np.array([l[1:5] for l in dataset_asc_int])
@@ -31,7 +32,7 @@ def falconn_test():
     answers = []
     for k, query in enumerate(vectors[-number_of_queries:]):
         answers.append(labels[np.dot(vectors[:-number_of_queries], query).argmax()])
-        if k % 10 == 9:
+        if k % 100 == 9:
             print('{}/{} - Accuracy: {}'.format(
                 k + 1,
                 number_of_queries,
