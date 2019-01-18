@@ -24,3 +24,8 @@ http-server ui -p 8000
 ```
 open 'http://127.0.0.1:8000?file=data/train_100_sample/0/1438042988061.16_20150728002308-00010-ip-10-236-191-2_227851886_4.json'
 ```
+
+* Wrap up
+```
+http-server -p 3000 --cors & http-server ui -p 8000 & open 'http://127.0.0.1:8000?file=data/train_100_sample/0/1438042988061.16_20150728002308-00010-ip-10-236-191-2_227851886_4.json'; sleep 1; pkill -f 'node /usr/local/bin/http-server'
+```
