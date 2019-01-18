@@ -29,14 +29,21 @@ def falconn_test():
 
     print('Predict last 3k')
     answers = []
-    for i, query in enumerate(vectors[-number_of_queries:]):
-        if i % 10 == 0:
-            print('{}/{}'.format(i, number_of_queries))
+    for k, query in enumerate(vectors[-number_of_queries:]):
         answers.append(labels[np.dot(vectors[:-number_of_queries], query).argmax()])
+        if k % 10 == 9:
+            print('{}/{} - Accuracy: {}'.format(
+                k + 1,
+                number_of_queries,
+                vector_accuracy(answers,
+                                labels[len(labels) - number_of_queries:len(labels) - number_of_queries + k + 1])))
 
-    assert len(answers) == number_of_queries
-    print(
-        'Accuracy: {}/{}'.format(sum(i == j for i, j in zip(answers, labels[-number_of_queries:])), number_of_queries))
+    print('Accuracy: {}'.format(vector_accuracy(answers, labels[-number_of_queries:])))
+
+
+def vector_accuracy(a, b):
+    assert len(a) == len(b)
+    return sum(i == j for i, j in zip(a, b)) / len(a)
 
 
 if __name__ == '__main__':
