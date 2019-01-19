@@ -59,7 +59,7 @@ def falconn_test():
         print('No other accuracy {}: {}'.format(filter_name,
                                                 vector_accuracy_no_other(labels[-number_of_queries:], answers)))
         generate_report(labels[-number_of_queries:], answers,
-                        'numerical_space/dict_{}.json'.format(filter_name.replace(' ', '_')))
+                        'numerical_space/predict_{}.json'.format(filter_name.replace(' ', '_')))
 
 
 def vector_accuracy(a, b):
