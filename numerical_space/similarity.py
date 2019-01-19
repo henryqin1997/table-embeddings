@@ -61,6 +61,8 @@ def falconn_test():
                                                 vector_accuracy_no_other(labels[-number_of_queries:], answers)))
         generate_report(labels[-number_of_queries:], answers,
                         'numerical_space/predict_{}.json'.format(filter_name.replace(' ', '_')))
+        generate_report(answers, labels[-number_of_queries:],
+                        'numerical_space/predict_{}_reverse.json'.format(filter_name.replace(' ', '_')))
 
 
 def vector_accuracy(a, b):
