@@ -3,7 +3,7 @@ import json
 import os
 from etl.table import Table
 
-keycolumn = 'score'
+keycolumn = 'time'
 
 
 def find_all():
