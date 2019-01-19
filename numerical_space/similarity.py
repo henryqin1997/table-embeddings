@@ -52,12 +52,17 @@ def falconn_test():
             #         vector_accuracy(answers,
             #                         labels[len(labels) - number_of_queries:len(labels) - number_of_queries + k + 1])))
 
-        print('Accuracy {}: {}'.format(filter_name, vector_accuracy(answers, labels[-number_of_queries:])))
+        print('Accuracy {}: {}'.format(filter_name, vector_accuracy(labels[-number_of_queries:], answers)))
 
 
 def vector_accuracy(a, b):
     assert len(a) == len(b)
     return sum(i == j for i, j in zip(a, b)) / len(a)
+
+
+def vector_accuracy_no_other(a, b, other=3333):
+    no_other = list(filter(lambda item: item[0] != other, zip(a, b)))
+    return sum(i == j for i, j in no_other) / len(no_other)
 
 
 if __name__ == '__main__':
