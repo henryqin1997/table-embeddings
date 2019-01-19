@@ -5,6 +5,7 @@ import math
 import os
 import json
 from collections import defaultdict
+from operator import itemgetter
 
 filter_lambdas = [lambda l: not l[6] and l[5] == 1, lambda l: l[6] and l[5] == 1, lambda l: not l[6] and l[5] == 0,
                   lambda l: l[6] and l[5] == 0, lambda l: not l[6] and l[5] == -1, lambda l: l[6] and l[5] == -1]
@@ -87,6 +88,9 @@ def generate_report(a, b, filename, other=3333):
             if label not in report:
                 report[label] = defaultdict(int)
             report[label][get_label_by_index(j)] += 1
+    for label in report:
+        report[label] = dict(sorted(report[label].items(), key=itemgetter(1), reverse=True))
+    report = dict(sorted(report.items(), key=lambda item: sum(item[1].values()), reverse=True))
     json.dump(report, open(filename, 'w+'), indent=4)
 
 
