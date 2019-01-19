@@ -83,11 +83,10 @@ def get_label_by_index(index):
 def generate_report(a, b, filename, other=3333):
     report = {}
     for i, j in zip(a, b):
-        if i != other:
-            label = get_label_by_index(i)
-            if label not in report:
-                report[label] = defaultdict(int)
-            report[label][get_label_by_index(j)] += 1
+        label = get_label_by_index(i)
+        if label not in report:
+            report[label] = defaultdict(int)
+        report[label][get_label_by_index(j)] += 1
     for label in report:
         report[label] = dict(sorted(report[label].items(), key=itemgetter(1), reverse=True))
     report = dict(sorted(report.items(), key=lambda item: sum(item[1].values()), reverse=True))
