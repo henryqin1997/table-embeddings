@@ -53,6 +53,8 @@ def falconn_test():
             #                         labels[len(labels) - number_of_queries:len(labels) - number_of_queries + k + 1])))
 
         print('Accuracy {}: {}'.format(filter_name, vector_accuracy(labels[-number_of_queries:], answers)))
+        print('No other accuracy {}: {}'.format(filter_name,
+                                                vector_accuracy_no_other(labels[-number_of_queries:], answers)))
 
 
 def vector_accuracy(a, b):
