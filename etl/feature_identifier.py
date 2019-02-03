@@ -42,7 +42,7 @@ def nst_encoding(nst):
     return (4 if nst[0] else 0) + (2 if nst[1] else 0) + (1 if nst[2] else 0)
 
 
-def identify_features(training_files):
+def save_nst_tags(training_files):
     for training_file in training_files:
         data = json.load(open(os.path.join(webtables_dir, training_file), encoding='utf-8'))
         table = Table(data)
@@ -80,4 +80,4 @@ def if_ordered(numbers):
 
 
 if __name__ == '__main__':
-    identify_features(training_files)
+    save_nst_tags(training_files)
