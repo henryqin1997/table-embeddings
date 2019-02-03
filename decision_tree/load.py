@@ -47,7 +47,6 @@ def load_data(batch_size, batch_index=0):
     batch_files_ner = list(map(lambda batch_file: batch_file.rstrip('.json') + '_ner.csv', batch_files))
     batch_files_nst = list(map(lambda batch_file: batch_file.rstrip('.json') + '_nst.csv', batch_files))
     batch_files_date = list(map(lambda batch_file: batch_file.rstrip('.json') + '_date.csv', batch_files))
-    print(batch_files_date)
     batch_files_wordlist = list(map(lambda batch_file: batch_file.rstrip('.json') + '_wordlist.csv', batch_files))
     ner_inputs = numpy.array(
         [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_ner), delimiter=',') for batch_file_ner in
@@ -66,12 +65,14 @@ def load_data(batch_size, batch_index=0):
     targets_transformed = []
 
     assert len(ner_inputs) == len(nst_inputs)
+    assert len(ner_inputs) == len(date_inputs)
     for i in range(len(ner_inputs)):
         print(batch_files[i])
         table = Table(json.load(open(os.path.join(training_data_dir, batch_files[i]))))
         column_num = len(table.get_header())
         ner_input = ner_inputs[i]
         nst_input = nst_inputs[i]
+        date_input = date_inputs[i]
         target = targets[i]
         assert len(ner_input) == len(tag_to_index)
 
@@ -81,8 +82,9 @@ def load_data(batch_size, batch_index=0):
                                              enumerate(ner_input.transpose())]).transpose()
         print('ner', new_input_transformed)
         # Add encoded NST (1:text, 2:symbol, 3:number)
-        new_input_transformed = new_input_transformed + numpy.array(nst_input)
+        new_input_transformed = new_input_transformed + numpy.array(nst_input) + numpy.array(date_input) * (2 ** 6)
         print('nst', numpy.array(nst_input))
+        print('date', numpy.array(date_input) * (2 ** 6))
         print('overall', new_input_transformed)
 
         inputs_transformed.append(new_input_transformed)
