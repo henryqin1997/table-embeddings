@@ -13,10 +13,10 @@ from .table import Table
 from .table import satisfy_variants
 from .tagger import st, tag_to_index
 
-training_data_dir = './data/train'
+training_data_dir = './data/train_100_sample'
 webtables_dir = './webtables'
 num_processors = int(sys.argv[1])
-training_files_json = './data/training_files.json'
+training_files_json = './data/training_files_100_sample.json'
 wordlist_json = './data/wordlist_v6_index.json'
 
 # # For sample random label
