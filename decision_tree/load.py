@@ -6,7 +6,7 @@ from etl import Table
 from numerical_space.load import is_numeric, nst_encoding
 
 training_data_dir = 'data/train'
-training_files_json = 'data/training_files.json'
+training_files_json = 'data/training_files_shuffle.json'
 training_files = json.load(open(training_files_json))
 training_data_100_sample_dir = 'data/train_100_sample'
 training_files_100_sample_json = 'data/training_files_100_sample.json'
