@@ -46,6 +46,8 @@ def load_data(batch_size, batch_index=0):
     batch_files = training_files[batch_size * batch_index:batch_size * (batch_index + 1)]
     batch_files_ner = list(map(lambda batch_file: batch_file.rstrip('.json') + '_ner.csv', batch_files))
     batch_files_nst = list(map(lambda batch_file: batch_file.rstrip('.json') + '_nst.csv', batch_files))
+    batch_files_date = list(map(lambda batch_file: batch_file.rstrip('.json') + '_date.csv', batch_files))
+    print(batch_files_date)
     batch_files_wordlist = list(map(lambda batch_file: batch_file.rstrip('.json') + '_wordlist.csv', batch_files))
     ner_inputs = numpy.array(
         [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_ner), delimiter=',') for batch_file_ner in
@@ -53,6 +55,9 @@ def load_data(batch_size, batch_index=0):
     nst_inputs = numpy.array(
         [list(map(to_int, numpy.genfromtxt(os.path.join(training_data_dir, batch_file_nst), delimiter=',')[0])) for
          batch_file_nst in batch_files_nst])
+    date_inputs = numpy.array(
+        [list(map(to_int, numpy.genfromtxt(os.path.join(training_data_dir, batch_file_date), delimiter=','))) for
+         batch_file_date in batch_files_date])
     targets = numpy.array(
         [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
          in batch_files_wordlist])
