@@ -7,6 +7,7 @@ from .table import Table
 from collections import defaultdict
 from operator import itemgetter
 from functools import reduce
+from numerical_space.load import is_numeric
 
 webtables_dir = './data/train_100_sample'
 training_data_dir = './data/train_100_sample'
@@ -16,7 +17,11 @@ training_files = json.load(open(training_files_json))
 
 def identify_date(value):
     try:
-        parse(value, fuzzy_with_tokens=True)
+        result, tokens = parse(value, fuzzy_with_tokens=True)
+        for token in tokens:
+            value = value.replace(token, '')
+        if is_numeric(value) and not re.match(r'^(\d{4}|\d{6}|\d{8})$', value):
+            return False
         return True
     except (ValueError, OverflowError):
         return False
