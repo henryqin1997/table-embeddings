@@ -81,7 +81,7 @@ def load_data(batch_size, batch_index=0):
                                              if idx < column_num else -1 for idx, ner_row in
                                              enumerate(ner_input.transpose())]).transpose()
         print('ner', new_input_transformed)
-        # Add encoded NST (1:text, 2:symbol, 3:number)
+        # Add encoded NST and date (1:text, 2:symbol, 3:number, 7:date)
         new_input_transformed = new_input_transformed + numpy.array(nst_input) + numpy.array(date_input) * (2 ** 6)
         print('nst', numpy.array(nst_input))
         print('date', numpy.array(date_input) * (2 ** 6))
