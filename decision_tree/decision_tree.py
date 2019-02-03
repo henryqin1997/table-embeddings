@@ -61,7 +61,7 @@ def diction_pred_advanced(dic,feature):
     feature_processed = [int(x) for x in feature if int(x) != -1]
     for key in dic.keys():
         key_processed = [int(x) for x in key.split(',')]
-        sim = qin_similarity(feature_processed, key_processed)
+        sim = li_similarity(feature_processed, key_processed)
         if sim > maxsim:
             maxkey = key
             maxsim = sim

@@ -7,6 +7,7 @@ from .decision_tree import diction_pred
 from .decision_tree import label_num_arr, label_num_str, correct_pred
 from .load_nst import *
 from .load import load_data
+from .load import load_data_100_sample
 
 def measure_distribution_cut(diction, input, target):
     for i in range(len(input)):
