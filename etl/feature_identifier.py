@@ -8,9 +8,9 @@ from collections import defaultdict
 from operator import itemgetter
 from functools import reduce
 
-webtables_dir = './webtables'
-training_data_dir = './data/train'
-training_files_json = './data/training_files.json'
+webtables_dir = './data/train_100_sample'
+training_data_dir = './data/train_100_sample'
+training_files_json = './data/training_files_100_sample.json'
 training_files = json.load(open(training_files_json))
 
 
@@ -18,7 +18,7 @@ def identify_date(value):
     try:
         parse(value, fuzzy_with_tokens=True)
         return True
-    except ValueError:
+    except (ValueError, OverflowError):
         return False
 
 
@@ -70,6 +70,30 @@ def save_nst_tags(training_files):
                       [major, max, overall], fmt='%i', delimiter=",")
 
 
+def save_date_tags(training_files):
+    for training_file in training_files:
+        data = json.load(open(os.path.join(webtables_dir, training_file), encoding='utf-8'))
+        table = Table(data)
+        print(training_file)
+        is_date = [-1] * 10
+
+        for idx, attribute in enumerate(table.get_attributes()):
+            if idx == 10:
+                break
+            attribute_is_date = 0
+            for value in attribute:
+                if identify_date(value):
+                    attribute_is_date = 1
+                    break
+            is_date[idx] = attribute_is_date
+
+        if not os.path.exists(os.path.join(training_data_dir, os.path.dirname(training_file))):
+            os.makedirs(os.path.join(training_data_dir, os.path.dirname(training_file)))
+        basename = training_file.rstrip('.json')
+        numpy.savetxt(os.path.join(training_data_dir, '{}_date.csv'.format(basename)),
+                      [is_date], fmt='%i', delimiter=",")
+
+
 def if_ordered(numbers):
     '''Input: a column of number with more than 3 values; output: boolean value whether they are ordered'''
     sign = numpy.sign(numbers[0] - numbers[1])
@@ -80,4 +104,4 @@ def if_ordered(numbers):
 
 
 if __name__ == '__main__':
-    save_nst_tags(training_files)
+    save_date_tags(training_files)
