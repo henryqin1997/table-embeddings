@@ -2,6 +2,7 @@ import json
 import os
 import numpy
 from etl import Table
+from numerical_space.load import is_numeric, nst_encoding
 
 training_data_dir = 'data/train'
 training_files_json = 'data/training_files.json'
@@ -70,6 +71,7 @@ def load_data(batch_size, batch_index=0):
         print(batch_files[i])
         table = Table(json.load(open(os.path.join(training_data_dir, batch_files[i]))))
         column_num = len(table.get_header())
+        attributes = table.get_attributes()
         ner_input = ner_inputs[i]
         nst_input = nst_inputs[i]
         date_input = date_inputs[i]
@@ -85,6 +87,19 @@ def load_data(batch_size, batch_index=0):
         new_input_transformed = new_input_transformed + numpy.array(nst_input) + numpy.array(date_input) * (2 ** 6)
         print('nst', numpy.array(nst_input))
         print('date', numpy.array(date_input) * (2 ** 6))
+
+        is_numeric_input = [-1] * 10
+        for idx in range(min(column_num, 10)):
+            is_numeric_input[idx] = 0
+            if nst_input[idx] == nst_encoding([True, False, False]) or \
+                    nst_input[idx] == nst_encoding([True, True, False]):
+                attribute = attributes[idx]
+                if all(list(map(lambda n: is_numeric(n) or n.upper() in ['', 'NA', 'N/A'], attribute))):
+                    is_numeric_input[idx] = 1
+
+        new_input_transformed = new_input_transformed + numpy.array(is_numeric_input) * (2 ** 7)
+        print('is_numeric', numpy.array(is_numeric_input) * (2 ** 7))
+
         print('overall', new_input_transformed)
 
         inputs_transformed.append(new_input_transformed)
