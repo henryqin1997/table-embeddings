@@ -13,7 +13,7 @@ from .table import Table
 from .table import satisfy_variants
 from .tagger import st, tag_to_index
 
-training_data_dir = './data/train_7class'
+training_data_dir = './data/train'
 webtables_dir = './webtables'
 num_processors = int(sys.argv[1])
 training_files_json = './data/training_files.json'
