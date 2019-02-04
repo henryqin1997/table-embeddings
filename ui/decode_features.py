@@ -1,9 +1,4 @@
 import sys
-import re
-import json
-
-tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2}
-tags = list(tag_to_index.keys())
 
 
 def value_to_features(value):
