@@ -211,7 +211,7 @@ def cal_accuracy():
 
             target_str = ','.join([str(x) for x in target[i]])
             pred_str = ','.join([str(x) for x in pred])
-            dic_result[','.join(target_str)][pred_str] += 1
+            dic_result[target_str][pred_str] += 1
 
             for j in range(len(target[i])):
                 if target[i][j] != -1:
