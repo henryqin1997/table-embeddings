@@ -158,7 +158,7 @@ def train():
                 else:
                     break
     with open('decision_tree/dic_result_10digit.json', 'w')as fp:
-        json.dump(dic_result, fp, indent=4)
+        json.dump(sort_by_error_frequency(dic_result), fp, indent=4)
     print('validation {} accuracy {}'.format("10digits", correct / total))
     print('no other validation {} accuracy {}'.format("10digits", correct_noOther / total_noOther))
 
@@ -225,9 +225,22 @@ def cal_accuracy():
                 else:
                     break
     with open('decision_tree/dic_result_10digit.json', 'w')as fp:
-        json.dump(dic_result, fp, indent=4)
+        json.dump(sort_by_error_frequency(dic_result), fp, indent=4)
     print('validation {} accuracy {}'.format("10digits", correct / total))
     print('no other validation {} accuracy {}'.format("10digits", correct_noOther / total_noOther))
+
+
+def error_frequency(item):
+    key, value = item
+    sum = 0
+    for pred in value:
+        if pred != key:
+            sum += value[pred]
+    return sum
+
+
+def sort_by_error_frequency(dic_result):
+    return dict(sorted(dic_result.items(), key=error_frequency, reverse=True))
 
 
 if __name__ == '__main__':
