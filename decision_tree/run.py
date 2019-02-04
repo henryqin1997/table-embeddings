@@ -4,7 +4,7 @@ from collections import defaultdict
 import numpy as np
 from .decision_tree import diction_pred_advanced
 from .decision_tree import diction_pred
-from .decision_tree import label_num_arr, label_num_str,label_num_str_no_other, correct_pred, correct_pred_no_other
+from .decision_tree import label_num_arr, label_num_str, label_num_str_no_other, correct_pred, correct_pred_no_other
 from .load import load_data
 from .load import load_data_100_sample
 
@@ -132,9 +132,9 @@ def train():
     batch_index = 2000
     correct = 0
     total = 0
-    total_noOther=0
-    correct_noOther=0
-    dic_result=defaultdict(lambda: defaultdict(int))
+    total_noOther = 0
+    correct_noOther = 0
+    dic_result = defaultdict(lambda: defaultdict(int))
     while batch_size * batch_index < 103000:
         print(batch_index)
         input, target = load_data(batch_size=batch_size, batch_index=batch_index)
@@ -144,7 +144,7 @@ def train():
             total += 1
             pred = diction_pred(dic_prediction, dic_cut_pred, input[i])
 
-            dic_result[','.join(target[i])][','.join(pred)]+=1
+            dic_result[','.join(target[i])][','.join(pred)] += 1
 
             for j in range(len(target[i])):
                 if target[i][j] != -1:
@@ -157,14 +157,14 @@ def train():
                             correct_noOther += 1
                 else:
                     break
-    with open('decision_tree/dic_result_10digit.json')as fp:
+    with open('decision_tree/dic_result_10digit.json', 'w')as fp:
         json.dump(dic_result, fp, indent=4)
     print('validation {} accuracy {}'.format("10digits", correct / total))
     print('no other validation {} accuracy {}'.format("10digits", correct_noOther / total_noOther))
 
-def cal_accuracy():
 
-    dic_no_cut=json.load(open('decision_tree/diction_nst{}.json'.format("10digits")))
+def cal_accuracy():
+    dic_no_cut = json.load(open('decision_tree/diction_nst{}.json'.format("10digits")))
     pre_acc = 0
     sum = 0
     sum_no_other = 0
@@ -224,11 +224,12 @@ def cal_accuracy():
                             correct_noOther += 1
                 else:
                     break
-    with open('decision_tree/dic_result_10digit.json')as fp:
+    with open('decision_tree/dic_result_10digit.json', 'w')as fp:
         json.dump(dic_result, fp, indent=4)
     print('validation {} accuracy {}'.format("10digits", correct / total))
     print('no other validation {} accuracy {}'.format("10digits", correct_noOther / total_noOther))
 
+
 if __name__ == '__main__':
-    #train()
+    # train()
     cal_accuracy()
