@@ -3,7 +3,7 @@ import os.path
 from shutil import copyfile
 from urllib.parse import urlparse
 
-domain = 'http://www.usms.org/'
+domain = 'http://www.google.com/'
 domain_filename = ''.join(x for x in domain if x.isalnum())
 
 files = json.load(open('data/training_files.json'))
