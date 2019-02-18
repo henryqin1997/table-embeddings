@@ -16,9 +16,9 @@ for file in files:
         result = '{uri.scheme}://{uri.netloc}/'.format(uri=parsed_uri)
         if result == domain:
             results.append(file)
-            if not os.path.exists(os.path.join('domain_samples', domain_filename, os.path.dirname(file))):
-                os.makedirs(os.path.join('domain_samples', domain_filename, os.path.dirname(file)))
-            copyfile(os.path.join('webtables', file), os.path.join('domain_samples', domain_filename, file))
-            print(os.path.join('domain_samples', domain_filename, file))
+            if not os.path.exists(os.path.join('data', 'domain_samples', domain_filename, os.path.dirname(file))):
+                os.makedirs(os.path.join('data', 'domain_samples', domain_filename, os.path.dirname(file)))
+            copyfile(os.path.join('webtables', file), os.path.join('data', 'domain_samples', domain_filename, file))
+            print(os.path.join('data', 'domain_samples', domain_filename, file))
 
 json.dump(results, open('data/domains/{}.json'.format(domain_filename), 'w+'), indent=4)
