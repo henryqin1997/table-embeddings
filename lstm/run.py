@@ -5,11 +5,8 @@ import torch.optim as optim
 import torch.utils.data
 import numpy as np
 import json
-import matplotlib as mpl
-
-mpl.use('Agg')
-from matplotlib import pyplot as plt
 from .load import load_data, load_data_domain_sample
+from .plot import plot_performance
 
 torch.manual_seed(1)
 
@@ -160,22 +157,4 @@ if __name__ == "__main__":
         print("Validation accuracy: {}".format(compute_accuracy(predicted, correct)))
 
     json.dump(train_states, open("lstm/train_states.json", "w+"), indent=4)
-
-    plt.figure(figsize=(15, 5))
-
-    # Plot Loss
-    plt.subplot(1, 2, 1)
-    plt.title("Loss")
-    plt.plot([train_state[1] for train_state in train_states], label="train")
-    plt.plot([train_state[3] for train_state in train_states], label="val")
-    plt.legend(loc="upper right")
-
-    # Plot Accuracy
-    plt.subplot(1, 2, 2)
-    plt.title("Accuracy")
-    plt.plot([train_state[2] for train_state in train_states], label="train")
-    plt.plot([train_state[4] for train_state in train_states], label="val")
-    plt.legend(loc="lower right")
-
-    # Save figure
-    plt.savefig("lstm/performance.png")
+    plot_performance(*[[train_state[i] for train_state in train_states] for i in range(4)])
