@@ -9,6 +9,7 @@ from .load import load_data, load_data_domain_sample
 torch.manual_seed(1)
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+print(device)
 num_features = 2048
 num_labels = 3334
 num_epochs = 300
@@ -83,13 +84,16 @@ if __name__ == '__main__':
     EMBEDDING_DIM = 32
     HIDDEN_DIM = 32
 
-    model = LSTMTagger(EMBEDDING_DIM, HIDDEN_DIM, num_features, num_labels)
+    model = LSTMTagger(EMBEDDING_DIM, HIDDEN_DIM, num_features, num_labels).to(device)
     loss_function = nn.NLLLoss()
     optimizer = optim.SGD(model.parameters(), lr=learning_rate)
 
     total_step = len(train_dataset)
     for epoch in range(num_epochs):
         for i, (input, target) in enumerate(train_dataset):
+            input = input.to(device)
+            target = target.to(device)
+
             model.zero_grad()
 
             # Clear out the hidden state of the LSTM,
@@ -110,7 +114,7 @@ if __name__ == '__main__':
 
     model.eval()
     with torch.no_grad():
-        predicted = [torch.argmax(model(input), dim=1) for input, target in test_dataset]
+        predicted = [torch.argmax(model(input.to(device)), dim=1) for input, target in test_dataset]
         correct = [target for input, target in test_dataset]
 
         predicted = torch.cat(predicted)
