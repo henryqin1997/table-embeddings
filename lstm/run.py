@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
+import torch.utils.data
 import numpy as np
 from .load import load_data, load_data_domain_sample
 
@@ -41,23 +42,49 @@ class LSTMTagger(nn.Module):
         return tag_scores
 
 
+def calculate_accuracy(predicted, correct, no_other=True, other_index=3333):
+    assert len(predicted) == len(correct)
+    if no_other:
+        no_other_index = correct != other_index
+        predicted = predicted[no_other_index]
+        correct = correct[no_other_index]
+
+    return int((predicted == correct).sum()) / len(correct)
+
+
 if __name__ == '__main__':
-    load_inputs, load_targets = load_data_domain_sample(10, batch_index=0)
-    training_data = []
-    for input, target in zip(load_inputs, load_targets):
-        training_data.append((torch.from_numpy(np.array(input)[np.array(input) > -1]),
-                              torch.from_numpy(np.array(target)[np.array(target) > -1])))
-    print(training_data[0])
+    inputs = np.array([], dtype=np.int64).reshape(0, 10)
+    targets = np.array([], dtype=np.int64).reshape(0, 10)
+
+    batch_size = 50
+    batch_index = 0
+
+    while batch_size * batch_index < 1000:
+        print('Load batch {}'.format(batch_index))
+        load_inputs, load_targets = load_data_domain_sample(batch_size, batch_index)
+        inputs = np.concatenate((inputs, load_inputs), axis=0)
+        targets = np.concatenate((targets, load_targets), axis=0)
+        batch_index += 1
+
+    dataset = []
+    for input, target in zip(inputs, targets):
+        dataset.append((torch.from_numpy(np.array(input)[np.array(input) > -1]),
+                        torch.from_numpy(np.array(target)[np.array(target) > -1])))
+
+    train_size = int(0.8 * len(dataset))
+    test_size = len(dataset) - train_size
+    training_data, testing_data = torch.utils.data.random_split(dataset, [train_size, test_size])
 
     # These will usually be more like 32 or 64 dimensional.
-    EMBEDDING_DIM = 6
-    HIDDEN_DIM = 6
+    EMBEDDING_DIM = 32
+    HIDDEN_DIM = 32
 
     model = LSTMTagger(EMBEDDING_DIM, HIDDEN_DIM, 2048, 3334)
     loss_function = nn.NLLLoss()
     optimizer = optim.SGD(model.parameters(), lr=0.1)
 
     for epoch in range(300):
+        print('Epoch {}'.format(epoch))
         for input, target in training_data:
             model.zero_grad()
 
@@ -74,7 +101,11 @@ if __name__ == '__main__':
             optimizer.step()
 
     with torch.no_grad():
-        tag_scores = model(training_data[0][0])
+        for dataset, stage in zip([training_data, testing_data], ['Train', 'Validation']):
+            predicted = [torch.argmax(model(input), dim=1) for input, target in dataset]
+            correct = [target for input, target in dataset]
 
-        print(tag_scores)
-        print(torch.argmax(tag_scores, dim=1))
+            predicted = torch.cat(predicted)
+            correct = torch.cat(correct)
+
+            print('{} accuracy: {}'.format(stage, calculate_accuracy(predicted, correct)))
