@@ -20,8 +20,8 @@ for file in files:
             if not os.path.exists(os.path.join('data', 'domain_samples', domain_filename, os.path.dirname(file))):
                 os.makedirs(os.path.join('data', 'domain_samples', domain_filename, os.path.dirname(file)))
             for suffix in suffixes:
-                copyfile(os.path.join('webtables', os.path.splitext(files)[0] + suffix),
-                         os.path.join('data', 'domain_samples', domain_filename, os.path.splitext(files)[0] + suffix))
+                copyfile(os.path.join('webtables', os.path.splitext(file)[0] + suffix),
+                         os.path.join('data', 'domain_samples', domain_filename, os.path.splitext(file)[0] + suffix))
             print(os.path.join('data', 'domain_samples', domain_filename, file))
 
 json.dump(results, open('data/domains/{}.json'.format(domain_filename), 'w+'), indent=4)
