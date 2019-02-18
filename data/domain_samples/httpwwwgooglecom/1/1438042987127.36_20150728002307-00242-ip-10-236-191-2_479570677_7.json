@@ -1,0 +1,82 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US7454033",
+            "US7986807",
+            "US8050452",
+            "US8234495",
+            "US8315427",
+            "US8331724",
+            "US8532334",
+            "US20040250078 *",
+            "WO2012049659A2"
+        ],
+        [
+            "Filing date",
+            "Mar 22, 2002",
+            "Nov 18, 2008",
+            "Aug 3, 2010",
+            "Jun 24, 2008",
+            "Mar 30, 2010",
+            "Aug 11, 2011",
+            "Dec 11, 2012",
+            "Mar 22, 2002",
+            "Oct 14, 2011"
+        ],
+        [
+            "Publication date",
+            "Nov 18, 2008",
+            "Jul 26, 2011",
+            "Nov 1, 2011",
+            "Jul 31, 2012",
+            "Nov 20, 2012",
+            "Dec 11, 2012",
+            "Sep 10, 2013",
+            "Dec 9, 2004",
+            "Apr 19, 2012"
+        ],
+        [
+            "Applicant",
+            "Digimarc Corporation",
+            "Digimarc Corporation",
+            "Digimarc Corporation",
+            "Digimarc Corporation",
+            "Digimarc Corporation",
+            "Digimarc Corporation",
+            "Digimarc Corporation",
+            "John Stach",
+            "Centro De Investigaci\ufffdn Y De Estudios Avanzados Del Instituto Polit\ufffdcnico Nacional"
+        ],
+        [
+            "Title",
+            "Quantization-based data hiding employing calibration and locally adaptive quantization",
+            "Signal embedding and detection using circular structures in a transform domain of a media signal",
+            "Quantization-based data embedding in mapped data",
+            "Digital watermarking with variable orientation and protocols",
+            "Adaptive prediction filtering for encoding/decoding digital signals in media content",
+            "Methods and arrangements employing mixed-domain displays",
+            "Methods and arrangements for processing image data",
+            "Quantization -based data hiding employing calibration and locally adaptive quantization",
+            "High payload data-hiding method in audio signals based on a modified ofdm approach"
+        ]
+    ],
+    "pageTitle": "Patent US7391881 - Curve fitting for synchronizing readers of hidden auxiliary data - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7391881?dq=7,362,867",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987127.36/warc/CC-MAIN-20150728002307-00242-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 479600319,
+    "recordOffset": 479570677,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6417=FIG. 2 shows an example of quantizers for embedding a binary reference signal by quantizing features of the host media signal. One quantizer has a series of bins of size delta that correspond to a first binary symbol, while the other quantizer has a series of bins of size delta, offset by a distance delta/2 relative to the first quantizer, that correspond to a second binary symbol. The host signal feature, which has a value varying over some dimensions, such as time, space, time and space, frequency or frequency band, etc. is quantized at discrete samples to fall within a quantization bin corresponding to the reference signal values to be encoded in those samples. In this example, the reference signal comprises the sequence 1101001, and is repeated in the host signal features of the block being encoded.}",
+    "TableContextTimeStampAfterTable": "{24715=This patent application is a division of U.S. patent application Ser. No. 10/299,244, filed Nov. 18, 2002 (now U.S. Pat. No. 7,076,082) which is a continuation of U.S. patent application Ser. No. 09/895,867, filed Jun. 28, 2001 (now U.S. Pat. No. 6,483,927), which claims priority to U.S. Provisional Application No. 60/278,049, filed Mar. 22, 2001. These applications are hereby incorporated by reference., 72827=In this implementation, reference signal detection comprises extracting peaks from the Fourier magnitude data. There are numerous approaches for peak detection and extraction. For example, one could isolate points with high energy relative to the average energy in the Fourier magnitude plane. Alternatively, one could isolate points with high energy in a small local region. Statistical measures such as the mean, median, variance, etc. are usually employed to reliably detect peaks. One example of a peak detection and extraction strategy is described by Nicolas Devillard. See N. Devillard, \u201cInfrared jitter imaging data reduction algorithms\u201d, Jun. 21, 1999, which is hereby incorporated by reference. A copy of this paper is attached., 25154=The subject matter of the present application is related to that disclosed in U.S. Provisional Application No. 60/278,049 filed Mar. 22, 2001, and U.S. Provisional Application No. 60/256,629, filed Dec. 18, 2000, which are hereby incorporated by reference., 74377=The detector then fits the extracted peaks to an ellipse (128). The particular method is a variation of the least squares approach described by Fitzgibbon et al. See, A. Fitzgibbon, M. Pilu, R. Fisher \u201cDirect least-square fitting of Ellipses\u201d, International Conference on Pattern Recognition, Vienna, August 1996; Extended version available as DAI Research Paper #794; and M. Pilu, A. Fitzgibbon, R. Fisher \u201cEllipse-specific Direct least-square Fitting\u201d, IEEE International Conference on Image Processing, Lausanne, September 1996, which are hereby incorporated by reference. For this approach, it is beneficial to reflect the extracted points over the entire Fourier magnitude plane, taking care of the conjugate symmetry. Reflecting the points before feeding them to the ellipse fitting algorithm will ensure a better least squares ellipse fit. Note that reflection is not a necessary condition, the approach could also be applied to points located in a portion (e.g. half plane or quarter plane) of the Fourier domain. Copies of these papers are attached., 37832=For an example of embedding data in a spectrogram of an audio signal, see U.S. patent application Ser. No. 09/661,900, filed Sep. 14, 2000, entitled WATERMARKING IN THE TIME-FREQUENCY DOMAIN, which is hereby incorporated by reference. Quantization based embedding and reading of steganographic data as described in this document and those incorporated by reference may be performed in the time-frequency domain as detailed in application Ser. No. 09/661,900. In particular, the calibration and/or synchronization signals described in Ser. No. 09/661,900 may be embedded and read using the techniques described in this document.}",
+    "textBeforeTable": "Patent Citations The particular combinations of elements and features in the above-detailed embodiments are exemplary only; the interchanging and substitution of these teachings with other teachings in this and the incorporated-by-reference patents/applications are also contemplated. The methods, processes, and systems described above may be implemented in hardware, software or a combination of hardware and software. For example, the auxiliary data encoding processes may be implemented in a programmable computer or a special purpose digital circuit. Similarly, auxiliary data decoding may be implemented in software, firmware, hardware, or combinations of software, firmware and hardware. The methods and processes described above may be implemented in programs executed from a system's memory (a computer readable medium, such as an electronic, optical or magnetic storage device). Having described and illustrated the principles of the technology with reference to specific implementations, it will be recognized that the technology can be implemented in many other, different, forms. To provide a comprehensive disclosure without unduly lengthening the specification, applicants incorporate by reference the patents and patent applications referenced above. Concluding Remarks The reference signal may be used in video signals in a similar fashion. For example, the reference signal may be encoded into the spatial domain or spatial frequency domain of selected frames. Also, the reference circle may be encoded in the time-frequency spectrogram of an audio signal. As a further enhancement, the reference signal may be used as",
+    "textAfterTable": "US6978036 Jun 10, 2002 Dec 20, 2005 Digimarc Corporation Tamper-resistant authentication techniques for identification documents US7072490 Nov 22, 2002 Jul 4, 2006 Digimarc Corporation Symmetry watermark US7239734 Dec 19, 2005 Jul 3, 2007 Digimarc Corporation Authentication of identification documents and banknotes US20030012402 May 2, 2002 Jan 16, 2003 Kowa Co., Ltd. Technique of embedding and detecting digital watermark US20040030899 Apr 22, 2002 Feb 12, 2004 Jung-Soo Lee Method of inserting/detecting digital watermark and apparatus for using thereof * Cited by examiner Non-Patent Citations Reference 1 Kutter, \"Watermarking Resisting to Translation, Rotation and Scaling,\". SPIE vol. 3528, Nov. 1998, pp. 423-431. 2 Solachidis et al., \"Circularly Symmetric Watermark Embedding in 2-D DFT Domain,\" ICASSP'99, Mar. 1999. Referenced by Citing Patent",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

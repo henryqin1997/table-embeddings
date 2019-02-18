@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Mar 8, 1999",
+            "Feb 2, 2004",
+            "Feb 1, 2008",
+            "Feb 11, 2008",
+            "Feb 18, 2010",
+            "Sep 23, 2011"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: IOMEGA CORPORATION, UTAH Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:THOMAS, FRED C., III;REEL/FRAME:009809/0573 Effective date: 19971024",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "Owner name: EMC CORPORATION,MASSACHUSETTS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:IOMEGA CORPORATION;REEL/FRAME:023950/0391 Effective date: 20100211 Owner name: EMC CORPORATION, MASSACHUSETTS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:IOMEGA CORPORATION;REEL/FRAME:023950/0391 Effective date: 20100211",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6097562 - Disk drive for detecting a retroreflective marker on a data storage cartridge - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6097562?dq=5537618",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990445.44/warc/CC-MAIN-20150728002310-00035-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 477225523,
+    "recordOffset": 477195398,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{42832=In a preferred embodiment of this invention the disk drive 18 has a detection device 20a, an electrical circuit 20b and a head retraction system 42. This embodiment of this invention is described with reference to FIGS. 6-8. The head retraction system and other components of this disk drive 18 are described in commonly assigned co-pending application entitled \"An Improved Operating System For Operating An Eject System And A Head Retraction System of A Disk Drive,\" Ser. No. 08/866,189 filed May 30, 1997 (Attorney Docket No. IOM-9460). This application is hereby incorporated by reference., 25050=This application is a continuation-in-part application of U.S. patent application Ser. No. 08/833,032 filed on Apr. 3, 1997 U.S. Pat. No. 5,986,838 entitled \"Thin Retroreflective Marker For Data Storage Cartridge\" which is a continuation of U.S. patent application Ser. No. 08/388,242 filed on Feb. 14, 1995, entitled \"Retroreflective Marker For Data Storage Cartridge\" now U.S. Pat. No. 5,638,228. This application claims the benefit of the filing date of both of these applications and hereby incorporates by reference the contents of these documents., 29636=Recently issued U.S. Pat. No. 5,638,228 (the '228 patent), which issued on Jun. 10, 1997 is commonly assigned and has the same inventor, is hereby incorporated by reference. The '228 patent describes a disk cartridge that has a retroreflective material and a disk drive that has a light emitter and a light detector coupled to an electrical circuit that can be used to determine if the correct disk cartridge has been inserted into the disk drive. The emitter and detector determine if the correct data storage cartridge has been inserted into the disk drive by determining whether a data storage cartridge that has a retroreflector has been inserted into the disk drive. As described in the '228 patent, the magnitude of light reflected from a retroreflector to the detector will be greater than that reflected by a spectrol (mirror like) or diffuse deflector. Therefore, the detector can determine that a disk cartridge that has a retroreflective marker has been inserted into the disk drive when the magnitude of light received is above a predetermined threshold. Since the magnitude of light reflected from a spacial or diffuse reflector will not exceed the predetermined threshold, the detector will know that an improper data storage cartridge has been inserted when the magnitude of light received does not exceed the predetermined threshold., 40437=FIG. 1 illustrates a data storage cartridge that can operate in accordance with the present invention. This data storage cartridge is described in commonly assigned U.S. Pat. No. 5,650,891 entitled \"Apparatus for Performing Multiple Functions in a Data Storage Device Using a Single Electro-Mechanical Device,\" issued on Jun. 22, 1997 (Attorney Docket No. 8906), which is hereby incorporated by reference., 56998=In a most preferred embodiment of this invention, the resistor 32 is 10K and has a tolerance of +/-5%. The 2N3904 transistor 34 has a +/-50% tolerance on its Beta, the E/D pair 31 has a 2:1 range for phototransistor output current given a particular reflective target. The optical elements in the tag marker 13 have a maximum variance range of about 20% in their reflective efficiency., 28953=Retroreflective materials have been developed. This material has many periodic miniature corner cubes, or spherical elements, which reflect light striking it almost exactly upon its incident path. Retroreflective array materials are described in Jacobs, S. F., \"Experiments with retrodirective arrays,\" Optical Engineering, Vol. 21, No. 2, March/April 1982; Rennilson, J., \"Retroreflection--What is it and how is it used?\" ASTM Standardization News, February 1982; and Venable, W. H., Stephenson, H. F. and Tersteiege, H., \"Factor affecting the metrology of retroreflective materials,\" Applied Optics, Vol. 19, No. 8, April 15, 1980., 46602=There is a certain tongue length for a given wall height to which essentially no light from the front surface of the cartridge with is reflected specularly (Snell's law governed) will enter the aperture of the detector upon reflection. One will also find that there is for the same wall height a slightly longer tongue length which will inhibit any diffuse reflection for the same geometrically positioned surface from entering the aperture of the detector upon reflection. If this tongue length is less than the flat-to-flat distance of the hexagonal corner cube element (retroreflective element) and the corner cube element is aligned appropriately, some reflection from the corner cube will enter the aperture of the detector. If the tongue length needed is less than 1/2 the flat-to-flat distance the relative alignment between the retroreflective elements and the emitter detector pair and the light baffle becomes significantly less critical. Also the emitter (LED) used in conjunction with this invention must have an output divergence angle which is large enough, or directed in such a manner such that a significant portion of the energy is spread over an area outside the confines baffle tongue dimensions projection in space. The Full Width Half Maximum (FWHM) point for the source radiation distribution (LED) is on the order of 40 to 60 degrees for the LED used in this embodiment of the invention. In a preferred embodiment, the tongue length is limited to about 1/3 of the flat-to-flat distance of the corner cube or about 0.75 mm such that alignment of the emitter detector pair to the retroreflective cartridge marker is not critical to better than +/-1 mm. One will note from FIG. 17, described below, that for the case illustrated, the positional insensitivity (with baffle features this size) allows for a better than 5:1 discrimination ratio even with misalignments as large as +/-4.0 mm.}",
+    "textBeforeTable": "Patent Citations It is to be understood, however, that even in numerous characteristics and advantages of the present invention have been set forth in the foregoing description, together with details of the structure and function of the invention, the disclosure is illustrative only, and changes may be made to detail, especially in matters of shape, size and arrangement of parts within the principles of the invention to the full extent indicated by the broad general meaning of the terms in which the appended claims are expressed. The electrical circuit 20b is coupled to the solenoid 174. The emitter 21, detector 22, the baffle 23 and the electrical circuit 20b operate as described above in the first embodiment to determine if the correct disk cartridge 10, one with a retroreflective marker 11 has been inserted. If a data storage cartridge with a retroreflective marker is inserted, the electrical circuit 20b will cause the solenoid 174 to be powered. The solenoid 174 will then operate as described above to unlock the heads and permit them to be moved and interface with the data storage cartridge 10. A solenoid 174 has a drive shaft 176. When the solenoid 174 is energized by an electrical current, the drive shaft 176 moves in the X+ direction from a normally extended position toward a retracted position. As the drive shaft 176 of the solenoid 174 moves toward its retracted position, an enlarged operating end",
+    "textAfterTable": "US4649264 * Nov 1, 1985 Mar 10, 1987 Carson Manufacturing Company, Inc. Electronic voting machine US4652172 * Apr 2, 1986 Mar 24, 1987 Ludwig Eigenmann Method and equipment for improving horizontal marking strips US4683824 * Oct 29, 1984 Aug 4, 1987 Gibbs Robert L Cartridge launched - disk deployed chaff US4783672 * Oct 7, 1987 Nov 8, 1988 Itek Graphix Corp. Method and apparatus for coding photographic materials US5038359 * Oct 10, 1989 Aug 6, 1991 Hughes Aircraft Company Self-pumped, optical phase conjugation method and apparatus using pseudo-conjugator to produce retroreflected seed beam US5069577 * Oct 23, 1990 Dec 3, 1991 Murphy Patrick E Flexible raised pavement marker US5084883 * Mar 18, 1991 Jan 28, 1992 Escher-Grad Incorporated Laser scanning system for use in laser imaging US5159560",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

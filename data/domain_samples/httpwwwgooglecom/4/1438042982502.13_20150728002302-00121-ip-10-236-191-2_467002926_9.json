@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Feb 28, 1997",
+            "Dec 19, 2002",
+            "Jun 18, 2007",
+            "Nov 28, 2007",
+            "Nov 28, 2007",
+            "Apr 13, 2011",
+            "Jul 11, 2011"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "REMI",
+            "FPAY",
+            "SULP",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Fee payment",
+            "Surcharge for late payment",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: INTERNATIONAL BUSINESS MACHINES CORPORATION, NEW Y Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:BEAVIN, THOMAS ABEL;IYER, BALAKRISHNA RAGHAVENDRA;SHIBAMIYA, AKIRA;AND OTHERS;REEL/FRAME:010278/0552 Effective date: 19970227",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "Year of fee payment: 7",
+            "Year of fee payment: 12",
+            "Effective date: 20110630 Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:INTERNATIONAL BUSINESS MACHINES CORPORATION;REEL/FRAME:026569/0275 Owner name: GOOGLE INC., CALIFORNIA"
+        ]
+    ],
+    "pageTitle": "Patent US5995957 - Query optimization through the use of multi-column statistics to avoid the ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5995957?ie=ISO-8859-1&dq=6985872",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00121-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 467034243,
+    "recordOffset": 467002926,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{71504=Once the total number of rows is known, the number of rows belonging to each quantile can be obtained by dividing the total number of rows by the number of quantiles desired. For example, if the total number of ordered rows is 1000, and 10 quantiles are desired, then each quantile should contain 100 rows (1000/10).}",
+    "textBeforeTable": "Patent Citations While the preferred embodiment of the present invention has been illustrated in detail, it should be apparent that modifications and adaptations to that embodiment may occur to one skilled in the art without departing from the spirit or scope of the present invention as set forth in the following claims. One skilled in the art of computer science will easily be able to combine the software created as described with appropriate general purpose or special purpose computer hardware to create a computer system and/or computer subcomponents embodying the invention and to create a computer system and/or computer subcomponents for carrying out the method of the invention. A machine embodying the invention may involve one or more processing systems including, but not limited to, cpu, memory/storage devices, communication links, communication/transmitting devices, servers, I/O devices, or any subcomponents or individual parts of one or more processing systems, including software, firmware, hardware or any combination or subcombination thereof, which embody the invention as set forth in the claims. Memory devices include, but are not limited to, fixed (hard) disk drives, diskettes, optical disks, magnetic tape, semiconductor memories such as RAM, ROM, Proms, etc. Transmitting devices include, but are not limited to, the internet, intranets, electronic bulletin board and message/note exchanges, telephone/modem-based network communication, hard-wired/cabled communication network, cellular communication, radio wave communication, satellite communication, and other stationary or mobile network systems/communication links. Executing program code directly from one medium, storing",
+    "textAfterTable": "Publication date Applicant Title US6108647 * May 21, 1998 Aug 22, 2000 Lucent Technologies, Inc. Method, apparatus and programmed medium for approximating the data cube and obtaining approximate answers to queries in relational databases US6169985 * May 29, 1998 Jan 2, 2001 Epiphany, Inc. Method and apparatus for determining a set of database entries US6353821 * Dec 23, 1999 Mar 5, 2002 Bull Hn Information Systems Inc. Method and data processing system for detecting patterns in SQL to allow optimized use of multi-column indexes US6738755 * Feb 29, 2000 May 18, 2004 International Business Machines Corporation Query optimization method for incrementally estimating the cardinality of a derived relation when statistically correlated predicates are applied US7124146 Apr 30, 2003 Oct 17, 2006 International Business Machines Corporation Incremental cardinality estimation for a set of data values US7171408 Oct 30, 2001 Jan 30, 2007 International Business Machines Corporation Method of cardinality estimation using statistical",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

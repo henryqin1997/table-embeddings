@@ -1,0 +1,81 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US8055937 *",
+            "US8245078 *",
+            "US8291261 *",
+            "US8473697 *",
+            "US8527470 *",
+            "US8996823 *",
+            "US9069799",
+            "US20100169283 *",
+            "US20140115250 *"
+        ],
+        [
+            "Filing date",
+            "Dec 22, 2009",
+            "Dec 22, 2008",
+            "Nov 5, 2008",
+            "Oct 29, 2008",
+            "Dec 26, 2008",
+            "Dec 23, 2013",
+            "Dec 27, 2012",
+            "Dec 26, 2008",
+            "Dec 23, 2013"
+        ],
+        [
+            "Publication date",
+            "Nov 8, 2011",
+            "Aug 14, 2012",
+            "Oct 16, 2012",
+            "Jun 25, 2013",
+            "Sep 3, 2013",
+            "Mar 31, 2015",
+            "Jun 30, 2015",
+            "Jul 1, 2010",
+            "Apr 24, 2014"
+        ],
+        [
+            "Applicant",
+            "QuorumLabs, Inc.",
+            "American Megatrends, Inc.",
+            "Vulcan Technologies Llc",
+            "Netapp, Inc.",
+            "Rajeev Atluri",
+            "Commvault Systems, Inc.",
+            "Commvault Systems, Inc.",
+            "Rajeev Atluri",
+            "Commvault Systems, Inc."
+        ],
+        [
+            "Title",
+            "High availability and disaster recovery using virtualization",
+            "Recovery interface",
+            "Lightweight application-level runtime state save-and-restore utility",
+            "Method and system for volume based snapshot restore",
+            "Recovery point data view formation with generation of a recovery view and a coalesce policy",
+            "Parallel access virtual tape library and drives",
+            "Restoration of centralized data storage manager, such as data storage manager in a hierarchical data storage system",
+            "Recovery point data view formation with generation of a recovery view and a coalesce policy",
+            "Parallel access virtual tape library and drives"
+        ]
+    ],
+    "pageTitle": "Patent US7720817 - Method and system for browsing objects on a protected volume in a continuous ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7720817?dq=5893120",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00256-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 465202127,
+    "recordOffset": 465164307,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{25660=This application claims priority from U.S. Provisional Application No. 60/541,626, filed on Feb. 4, 2004 and U.S. Provisional Application No. 60/542,011, filed on Feb. 5, 2004, which are incorporated by reference as if fully set forth herein., 51187=The second way to access the recovered primary volume is to treat the recovered volume as a piece of removable media (e.g., a CD), that is inserted into a shared removable media drive. In order to properly recover data from the primary volume at a previous point in time, an image of the primary volume is loaded onto a location on the network, each location having a separate identification known as a logical unit number (LUN). This image of the primary volume can be built by using a method to recover data by accessing a previously stored snapshot, as disclosed in copending U.S. application Ser. No. 10/772,017, filed Feb. 4, 2004, which is incorporated by reference as if fully set forth herein.}",
+    "textBeforeTable": "Patent Citations While specific embodiments of the present invention have been shown and described, many modifications and variations could be made by one skilled in the art without departing from the scope of the invention. The above description serves to illustrate and not limit the particular invention in any way. Automated searches can be performed in a similar fashion, such that the system could automatically find a certain file or content. For example, if a virus struck and corrupted the system, it is difficult to navigate many volumes by time. This is because the virus could have been there already for a long time. Executable files don't change over time, except when a virus strikes, so the system could be queried to find the point in time when the executable changed. Another useful query would be to see a list of different versions of the same file, including size and attributes. From the list, the user can immediately determine the time when the file was updated, for example, during an all-night work session, because it will include the greatest number of changes. The method 400 provides a three-dimensional front end for browsing a file system. The range selected by the user (either by discrete snapshots or by a time window) defines the bounds of the objects that can be browsed. If a particular object exists in multiple snapshots, that object will appear in the list",
+    "textAfterTable": "US5485321 Dec 29, 1993 Jan 16, 1996 Storage Technology Corporation Format and method for recording optimization US5555371 Jul 18, 1994 Sep 10, 1996 International Business Machines Corporation Data backup copying with delayed directory updating and reduced numbers of DASD accesses at a back up site using a log structured array data storage US5638509 Jun 13, 1996 Jun 10, 1997 Exabyte Corporation Data storage and protection system US5666538 Jun 7, 1995 Sep 9, 1997 Ast Research, Inc. Disk power manager for network servers US5673382 May 30, 1996 Sep 30, 1997 International Business Machines Corporation Automated management of off-site storage volumes for disaster recovery US5774292 Apr 13, 1995 Jun 30, 1998 International Business Machines Corporation Disk drive power management system and method US5774643 Oct 13, 1995 Jun 30, 1998 Digital Equipment Corporation Enhanced raid write hole protection and recovery US5774715 Mar 27, 1996 Jun 30, 1998 Sun Microsystems, Inc. File",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

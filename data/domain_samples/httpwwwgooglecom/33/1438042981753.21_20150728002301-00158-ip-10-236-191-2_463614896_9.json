@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Feb 16, 1994",
+            "Dec 2, 1998",
+            "Mar 26, 2003",
+            "Sep 5, 2003",
+            "Nov 4, 2003"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: INTERNATIONAL BUSINESS MACHINES CORPORATION, NEW Y Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:CURRY, SEAN E.;DEAN, MARK E.;FAUCHER, MARC R.;AND OTHERS;REEL/FRAME:006856/0712;SIGNING DATES FROM 19940202 TO 19940208",
+            "Year of fee payment: 4",
+            "",
+            "",
+            "Effective date: 20030905"
+        ]
+    ],
+    "pageTitle": "Patent US5448521 - Connecting a short word length non-volatile memory to a long word length ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5448521?dq=inventor:%22Arthur+R.+Hair%22",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981753.21/warc/CC-MAIN-20150728002301-00158-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 463632931,
+    "recordOffset": 463614896,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations Though the invention has been described and illustrated by way of a specific embodiment, the systems and methods encompassed by the invention shoulcl be interpreted in keeping witli the breadth of the claims as set forth hereinafter. An alternative implementation is to transfer 8 bytes to the processor, continue address incrementation, and perform 4 beats similar to the slngle beat operation depicted in FIG. 5. The only fundamental change necessary would be to activate AACK only on the last beat. However, this sequence would be slow and prevent other operations, such as memory refresh, from occurring. Since data is repeated in the burst mode, some useless data is transferred to L1 cache 17 (FIG. 1). To avoid this repetition and useless, data transfer, processor instructions turn off L1 cache 17 periodically, reverting to single instruction fetches. These instructions are few in number and are in ROM 9. If the processor does not start in such burst mode, as does the PowerPC 601, this refinement is unnecessary. FIG. 7 illustrates the timing of signals when the PowerPC 601 processor is performing a burst (4 beat) transfer to fill L1 cache 17 (FIG. 1). As shown, the same 8 bytes of data are repeated in each of the four transfers (beats). Each clock cycle during which signal TA is held active causes 8 bytes to be transferred to the next successive 8 byte position in L1 cache 17.",
+    "textAfterTable": "Kabushiki Kaisha Toshiba 32-bit personal computer using a bus width converter and a latch for interfacing with 8-bit and 16-bit microprocessors US5217095 * Aug 31, 1992 Jun 8, 1993 Monroe Auto Equipment Company Method and apparatus for absorbing mechanical shock US5222046 * Oct 19, 1990 Jun 22, 1993 Intel Corporation Processor controlled command port architecture for flash memory US5293562 * Jun 28, 1993 Mar 8, 1994 Zilog, Inc. Device with multiplexed and non-multiplexed address and data I/O capability US5303353 * Apr 1, 1992 Apr 12, 1994 Mitsubishi Denki Kabushiki Kaisha Data transfer system US5341488 * Feb 14, 1992 Aug 23, 1994 Nec Electronics, Inc. N-word read/write access achieving double bandwidth without increasing the width of external data I/O bus EP0466970A1 * Jul 20, 1990 Jan 22, 1992 Siemens Aktiengesellschaft Microprocessor with multiple bus configurations EP0480417A2",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

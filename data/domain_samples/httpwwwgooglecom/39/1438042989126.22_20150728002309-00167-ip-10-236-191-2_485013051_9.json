@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 7, 1998",
+            "May 7, 2004",
+            "Mar 29, 2005",
+            "Feb 2, 2007",
+            "Apr 27, 2009",
+            "Oct 16, 2009",
+            "Dec 8, 2009"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: MOTOROLA, INC., ILLINOIS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:ROOKE, ALAN M.;REEL/FRAME:009639/0733 Effective date: 19981118",
+            "Owner name: FREESCALE SEMICONDUCTOR, INC.,TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:MOTOROLA, INC.;REEL/FRAME:015698/0657 Effective date: 20040404",
+            "Year of fee payment: 4",
+            "Owner name: CITIBANK, N.A. AS COLLATERAL AGENT,NEW YORK Free format text: SECURITY AGREEMENT;ASSIGNORS:FREESCALE SEMICONDUCTOR, INC.;FREESCALE ACQUISITION CORPORATION;FREESCALE ACQUISITION HOLDINGS CORP.;AND OTHERS;REEL/FRAME:018855/0129 Effective date: 20061201",
+            "",
+            "",
+            "Effective date: 20091016"
+        ]
+    ],
+    "pageTitle": "Patent US6304921 - System for serial peripheral interface with embedded addressing circuit for ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6304921?dq=645576",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989126.22/warc/CC-MAIN-20150728002309-00167-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 485040615,
+    "recordOffset": 485013051,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations The present invention provides for like-peripheral devices to be cascaded while unlike-devices are addressed in parallel. Thus, there are multiple short chains of peripheral devices on one chip select instead of one long chain. This improves the address latency. In summary, the present invention uses a microcontroller 12 to provide the address bit and device data start bits for the first PD in a string of PDs in a chain. Multiple chains of PDs operate under control of a single serial output and chip select of the microcontroller. Each chain of PDs has like-peripheral devices. Each PD includes a string of flipflops. The contents of a device status register are loaded into the flipflops. If the complete address matches, then the first PD shifts out the device data start bits for the next PD in the string. The address bit for the next PD is provided by the pull-up or pull-down device hard-wired on the SI of the next PD. The device data start bits for the next PD are provided by right-most flipflops of the previous PD. If the address bit and device data start bits match the contents of the device registers of the next PD, then that next PD enables SYSCLK to shift out the contents of flipflops. As the device control bits are clocked from conductor 14 into the SPI, the contents of the device status register are clocked out and sent",
+    "textAfterTable": "Referenced by Citing Patent Filing date Publication date Applicant Title US7515471 Oct 19, 2006 Apr 7, 2009 Mosaid Technologies Incorporated Memory with output control US7529149 Dec 12, 2006 May 5, 2009 Mosaid Technologies Incorporated Memory system and method with serial and parallel modes US7551492 Mar 8, 2007 Jun 23, 2009 Mosaid Technologies, Inc. Non-volatile semiconductor memory with page erase US7554855 Dec 20, 2006 Jun 30, 2009 Mosaid Technologies Incorporated Hybrid solid-state memory system having volatile and non-volatile memory US7586619 Dec 21, 2006 Sep 8, 2009 Honeywell International, Inc. Spectral balancing system and method for reducing noise in fiber optic gyroscopes US7652922 Dec 30, 2005 Jan 26, 2010 Mosaid Technologies Incorporated Multiple independent serial link memory US7688652 Jul 18, 2007 Mar 30, 2010 Mosaid Technologies Incorporated Storage of data in memory via packet strobing US7719892 Jul 25, 2008",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

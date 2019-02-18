@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jan 31, 1989",
+            "Sep 28, 1994",
+            "Sep 28, 1998",
+            "Nov 6, 2002",
+            "Apr 23, 2003",
+            "Jun 17, 2003"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: HITACHI, LTD., A CORP. OF JAPAN, JAPAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:KADONO, OSAMU;USHIZIMA, KUNIO;REEL/FRAME:005035/0908 Effective date: 19890120",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Effective date: 20030423"
+        ]
+    ],
+    "pageTitle": "Patent US5010238 - Automatic cash transaction system and method - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5010238?dq=645576",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00301-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 485490287,
+    "recordOffset": 485466010,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{51468=Next, the operation of the supervisory center for the case of a transaction failure at an ATM will be described. If it is judged as a questionable card at step 1239, or as a jam at step 1244, of the normal cash drawing transaction shown in FIGS. 12A and 12B, such transaction failure is processed in accordance with the supervisory center processing routine shown in the flow charts of FIGS. 15 to 17. Upon judgement as a questionable card at step 1239, the ATM generates a failure code indicating a questionable card (steps 1505 and 1510). Upon judgement as a jam at step 1244 by means of a jam sensor (not shown) mounted on the cash dispenser 6 (step 1505), the ATM generates a failure code indicating a jam (step 1510). The generated failure code indicating a questionable card or a jam is added to the above-described primary data (step 1515). The data thus obtained are edited in the format shown in FIG. 14 (step 1520) and sent to the supervisory center 21 via the supervisory line control unit 18., 47746=If a hard copy of the displayed data, i.e., the transaction journal, is desired, a print key is touched to obtain a print thereof from the account sheet printer 31 (steps 1328 to 1332). In printing out the hard copy, the data in the format as shown in FIG. 14 are edited to output a print having a format as shown in FIG. 9. Specifically, the numerical data and compressed card image data of the transaction journal respectively stored in the memory 8 are read out therefrom and edited so as to print them in a format as shown in FIG. 9. Prior to editing, the compressed card image data are subjected to expansion by the expansion circuit 9 in the manner opposite to the above-described compression process, the expansion process being performed by the similar technique to that used with facsimile apparatus and the like. If the next recent data to the data displayed at step 1326 are desired after the above process, a forward key is touched to read them (steps 1334 to 1338), following again steps 1326 to 1332 to obtain a print thereof. If a hard copy is not desired at step 1328 and the transaction data just before the displayed data are desired to be displayed again, then steps 1340, 1342 and 1338 follow. After printing, if the next data are not necessary, the flow advances to step 1344 to touch the end key and complete the search. In the above example, although it has been assumed that only the account number is given, it is apparent that other parameters even without the account number may be used for identifying past transactions. In such a case, the larger the number of parameters is, the less the number of corresponding transactions becomes so that a particular transaction to be searched can be more readily identified. The search flow as exemplarily described above is carried out in the usual manner as generally applied to computers. Specifically, if an account number only is entered as the search parameter, all the transaction records stored sequentially in the memory 8 in the order of transactions with the format shown in FIG. 14 are temporarily read out in the buffer of the controller 1. Then, the addresses of the transactions having the same account number and the number of such transactions stored in a specific area of the buffer. Thereafter, as described in the above flow, the number of transactions having the same account number is displayed and the most recent transaction is edited and displayed. Similarly, if a plurality of parameters are entered for identifying a particular transaction, all the transactions are read out from the memory 8 and temporarily stored in the buffer. Thereafter, the addresses of the transactions having the same parameters and the number of such transactions are listed in the specific area of the buffer., 46831=The search procedure will be described hereinbelow assuming that an account number is given for identifying the past transactions. First, the cursor is moved to the account number area (steps 1306 to 1314) to input the account number (step 1316). Upon touching an end key (step 1318), a search will start (1320). If there are transaction data corresponding to the entered account number, the number of past transactions is displayed (step 1324) and thereafter, the most recent transaction data among a plurality of past transactions are displayed (step 1326). This display is performed by filling all the blanked parameters shown in FIG. 9 and by giving the image of the card 30 at a predetermined blank portion of Fig. 9. Therefore, by checking the displayed embossed characters or the like, it becomes clear at once if the transaction was performed by using a correct card or a deceptive card., 44246=If a transaction failure such as a jam occurs at step 1244, the flow advances to the sub-routine which will be described in detail along with the description of the operation of the supervisory center 21. If the pass number does not coincide with the read-out pass number at step 1216 (in this embodiment, although the card is returned to the user if the erroneous input is made even once, it may be arranged such that a pass number is allowed to enter again) or if the central computer 20 judges the transaction as not permissible due to insufficiency of the account balance, the card 30 is returned to the user and the transaction is temporarily terminated. In this case, the user can resume the transaction from the first step thereof. As above, according to the present embodiment, each time a transaction is completed at an ATM, the transaction history of the account in the central computer 20 is renewed and stored as the transaction journal in the memory 8 together with the compressed, digitalized image data of the card., 28466=ATMs of this type are known as disclosed in JP-A-61-161572, JP-A-61-253597, and JP-B-62-548 which teach that the image of characters embossed on the surface of a card is photographed with an electronic camera and stored in a memory of an ATM., 41235=After checking the pass number, the guidance display shown in FIG. 5 is given on the touch panel so that the user enters the amount of money to be drawn, by using the ten-key displayed thereon (step 1218), and confirms the amount at the guidance display shown in Fig. 6 (step 1220) by touching the confirmation key (step 1222). In parallel with the operations at steps 1208 to 1222 including reading data recorded as magnetic stripes, checking pass number and entering the money amount, the image of information such as embossed characters formed on the surface of the card 30 is taken by the optical reader 11. Specifically, the light source 12 is turned on (step 1224) to make the image sensor 13 optically read the surface of the card 30 (step 1226). The read-out information is subjected to A/D conversion and coding compression (steps 1228 to 1232) and thereafter inputted to the controller 1. The operation of the coding compression circuit 16 can be realized easily by using the Hofmann coding method which is commonly applied to facsimile apparatus and the like. The account number obtained from the magnetic data, entered pass number, money amount, optical image data are edited as an intermediate history of the transaction (step 1234) and stored as primary data in a buffer memory (not shown) of the controller 1 (step 1236).}",
+    "textBeforeTable": "Patent Citations After completion of the above processes at the supervisory center 21, the ATM executes the routine shown in FIG. 17 in response to data reception from the supervisory center 21. Specifically, in response to the data reception from the supervisory center 21 (step 1705), the data are analyzed (step 1710). If the data indicate a card return instruction because of a correct card, a card return process is performed (step 1715) to return it to the user via the card reader 2 (step 1720). On the other hand, if the data indicate a card confiscation instruction because of a stolen or forged card, a card confiscation process is performed (step 1725) to confiscate it within a card confiscation box (not shown) provided in the ATM. In both the cases, the ATM causes the executed process result to be stored in the memory 8 as the transaction history. The stolen or forged card can thus be confiscated without attracting user's attention so that the authorities concerned can be informed of such a event, a photograph of the user can be taken, or other necessary actions can be made. After completion of the above routine, the processes shown in FIG. 16 are executed by the supervisory center 21. Specifically, in the flow at the supervisory center 21, when the data are sent from an ATM (step 1610), the card image data within the primary data sent from the",
+    "textAfterTable": "Referenced by Citing Patent Filing date Publication date Applicant Title US5329589 * Jun 3, 1993 Jul 12, 1994 At&T Bell Laboratories Mediation of transactions by a communications system US5389773 * Nov 15, 1993 Feb 14, 1995 Ncr Corporation Self-service system having transaction predictive capability and method of using US5438186 * Jun 17, 1994 Aug 1, 1995 Microbilt Corporation Multi-reader transaction terminal US5448047 * Jun 16, 1994 Sep 5, 1995 Microbilt Corporation Card validation method using multiple cord data regions US5488660 * Apr 3, 1995 Jan 30, 1996 Mas-Hamilton Group Electronic combination lock utilizing a one-time use combination US5546523 * Apr 13, 1995 Aug 13, 1996 Gatto; James G. Electronic fund transfer system US5562162 *",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

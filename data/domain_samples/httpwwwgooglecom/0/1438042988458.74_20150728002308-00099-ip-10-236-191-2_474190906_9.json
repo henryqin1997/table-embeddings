@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Nov 15, 1996",
+            "Apr 26, 1999",
+            "Oct 11, 2005",
+            "Jan 13, 2010",
+            "Feb 26, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: GARMIN CORORATION, KANSAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:KRULL, JAY DEE;BEESLEY, DARIN J.;REEL/FRAME:008317/0113 Effective date: 19961115",
+            "Owner name: GARMIN CORPORATION, TAIWAN Free format text: CHANGE OF ADDRESS;ASSIGNOR:GARMIN CORPORATION;REEL/FRAME:010009/0612 Effective date: 19990420",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6459987 - Method and apparatus for backtracking a path - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6459987?dq=6,049,612",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00099-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 474210483,
+    "recordOffset": 474190906,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{26899=With the reduction in cost for consumer electronic equipment an increasing number of Global Positioning Systems (GPS) have become available. These devices have gone from being an electronic gadget to being a heavily relied upon device for determining position as well as direction and distance to a destination. Likewise, the reliance on these devices have also increased. Currently, there are a number of GPS systems. For example, Garmin International produces hand held GPS units which may be used by small boaters and even hikers. An example of such a unit is described in the GPS 38 \u201cPersonal Navigator\u201d\u2122 Owner's Manual published in 1996.}",
+    "textBeforeTable": "Patent Citations Although the present invention has been fully described in conjunction with the preferred embodiment thereof with reference to the accompanying drawings, it is to be understood that various changes and modifications may be apparent to those skilled in the art. Such changes and modifications are to be understood as included within the scope of the present invention as defined by the appended claims, unless they depart therefrom. This process is repeated until there is a negative result from decision diamond 44. In that event, the backtracking may be accomplished by using the points in stack S as conventional way-points for system 10. If D is less than or equal to T, all data points strictly between B and E may be discarded without adversely affecting the backtrack route. This situation is illustrated in FIG. 4 by the point L. In this event, the logic will flow to block 42. This block 42 is illustrative of the following steps. First, since the point L is not needed for accurate backtracking, it will not be stored in stack S. To prevent L from being stored, counter C decremented by one. Next, the variable B is set to the current value of E. This is illustrated in FIG. 5 as B\u2032. Finally, the value of E is set to the location stored in stack S(c\u22121). This is illustrated in FIG. 5 as E. After this, the logic flow is",
+    "textAfterTable": "Jan 14, 1992 Nihon Dempa Kogyo Co., Ltd. Digital temperature-compensated oscillator US5087919 * Jul 6, 1990 Feb 11, 1992 Pioneer Electronic Corporation On-board navigation apparatus US5087969 * Jul 19, 1990 Feb 11, 1992 Fujitsu Limited Unmanned vehicle control system with guide line detection US5172075 Jun 22, 1990 Dec 15, 1992 Advanced Systems Research Pty. Limited Self-calibrating temperature-compensated frequency source US5204817 Feb 8, 1991 Apr 20, 1993 Clarion Co. Ltd. Car mounted navigation system US5225842 May 9, 1991 Jul 6, 1993 Navsys Corporation Vehicle tracking system employing global positioning system (gps) satellites US5297051 Mar 10, 1992 Mar 22, 1994 Pioneer Electronic Corporation Map display device US5311339 Aug 12, 1992 May 10, 1994 Optrex Europe Gmbh Liquid crystal display having a double-refracting compensation layer US5323164 Mar 5, 1993 Jun 21, 1994 Pioneer Electronic Corporation",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

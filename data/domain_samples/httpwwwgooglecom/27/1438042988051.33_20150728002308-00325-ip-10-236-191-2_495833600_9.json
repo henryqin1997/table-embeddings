@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Date",
+            "May 2, 2003",
+            "Aug 11, 2005",
+            "Dec 3, 2008",
+            "Aug 16, 2010",
+            "Mar 1, 2011",
+            "Oct 12, 2012",
+            "Jul 23, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: NETDEPOSIT, INC., UTAH Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:BUCHANAN, DANNE L.;TITUS, WILLIAM RONALD;REEL/FRAME:014023/0926 Effective date: 20030312",
+            "Owner name: NETDEPOSIT, INC., UTAH Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:ZIONS BANCORPORATION;REEL/FRAME:016633/0972 Effective date: 20030210",
+            "Owner name: NETDEPOSIT, LLC,UTAH Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:P5, INC.;NETDEPOSIT, INC.;REEL/FRAME:021936/0001 Effective date: 20080929",
+            "Year of fee payment: 4",
+            "Owner name: PPS DATA, LLC, UTAH Free format text: CHANGE OF NAME;ASSIGNOR:NET DEPOSIT, LLC;REEL/FRAME:025882/0286 Effective date: 20101008",
+            "Owner name: NETDEPOSIT, LLC, UTAH Free format text: MERGER;ASSIGNORS:NETDEPOSIT, INC.;P5, INC.;REEL/FRAME:029121/0847 Effective date: 20081001",
+            "Year of fee payment: 8"
+        ]
+    ],
+    "pageTitle": "Patent US7181430 - Method and system for processing financial instrument deposits physically ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7181430?dq=7,517,222",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988051.33/warc/CC-MAIN-20150728002308-00325-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 495887695,
+    "recordOffset": 495833600,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations The present invention may be embodied in other forms without departing from its spirit or essential characteristics. As properly understood, the preceding description of specific embodiments is illustrative only and in no way restrictive. The scope of the invention is, therefore, indicated solely by the appended claims as follows. Stepping back to query step 800, if the payee bank is not a clearing bank or correspondent bank, process step 810 sends the check image to the Federal Reserve Bank (FRB) serving as the clearing entity for the bank of first deposit. That branch of the Federal Reserve Bank forwards the check image to the Federal Reserve Bank serving as the clearing agent for the maker bank. That Federal Reserve Bank determines in query step 811 if the maker bank requires a paper duplicate of the original paper check. If the maker bank requires a paper item, the FRB prints the paper item in process step 812, incorporates the duplicate check in their processing systems as depicted in process step 813 where the item is sent in path 814 to process step 815 where the maker bank receives the paper item. If in query step 811 the maker bank does not require a paper check, the FRB sends the image to the maker bank that receives the image in process step 815 and passes, via path 816, either the check image or printed duplicate of",
+    "textAfterTable": "Method and apparatus for isolating image data for character recognition US4694147 Feb 6, 1986 Sep 15, 1987 Hitachi, Ltd. Slip reception terminal system US4730767 Apr 30, 1986 Mar 15, 1988 Westvaco Corporation Letter sheet with return envelope US4731524 Oct 11, 1985 Mar 15, 1988 Ncr Canada Ltd. - Ncr Canada Ltee Real time item processing apparatus using a thermal encoder US4750201 Aug 29, 1986 Jun 7, 1988 Plessey Overseas Limited Credit transaction arrangements US4843220 Mar 13, 1987 Jun 27, 1989 American Magnetics Corporation Automatic data capture for multiple form point of sale slip packs US4858121 Dec 12, 1986 Aug 15, 1989 Medical Payment Systems, Incorporated Medical payment system US4888812 Dec 18, 1987 Dec 19, 1989 International Business Machines Corporation Document image processing system US4912762 Apr 18, 1988 Mar 27, 1990 International Business Machines Corporation Management of cryptographic keys US4926325",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

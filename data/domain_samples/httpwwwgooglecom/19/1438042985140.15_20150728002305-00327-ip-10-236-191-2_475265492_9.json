@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Mar 10, 1988",
+            "Nov 15, 1993",
+            "May 14, 1996",
+            "Oct 29, 1997",
+            "Dec 4, 2001",
+            "Dec 26, 2001",
+            "Mar 5, 2003"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: CIRRUS LOGIC,CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:RAVINDRA, H.;PATIL, SUHAS S.;LIN, ERNEST S.;AND OTHERS;REEL/FRAME:004848/0276 Effective date: 19880304",
+            "Year of fee payment: 4",
+            "Owner name: BANK OF AMERICA NATIONAL TRUST & SAVINGS ASSOCIATI Free format text: SECURITY INTEREST;ASSIGNOR:CIRRUS LOGIC, INC.;REEL/FRAME:007986/0917 Effective date: 19960430",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Patent US4931946 - Programmable tiles - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4931946?dq=5572193",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985140.15/warc/CC-MAIN-20150728002305-00327-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 475315367,
+    "recordOffset": 475265492,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{46337=So-called \"channelless\" gate arrays reduce the amount of wasted space by permitting the routing of connections over the gate resources themselves rather than requiring dedicated space in between these resources. See, e.g., Hui et al., \"A 4K Gates Double Metal HCMOS Sea of Gates Array\", IEEE 1985 Custom Integrated Circuits Conference, June, 1985, pp. 15-17; LSI Semiconductor Device and Fabrication Thereof, Balyoz et al., U.S. Pat. No. 4,249,193, 2-3-81., 51858=Another type of logic array, however, known as a storage logic array or SLA, enables a more significant distribution of functionality than is possible with a PLA or PAL. SLAs permit the AND and OR arrays to be interleaved. In addition, SLAs provide means for segmenting the array's rows and columns, as well as for connecting storage elements to any row/column segment. These features dramatically increase design ease, not by limiting flexibility, but by permitting the creation of isolated functionality, such that intermediate results of computations may be utilized within other portions of the array itself. See, e.g., Storage/Logic Array, Patil, U.S. Pat. No. 4,293,783, 10-6-81; Asynchronous Logic Array, Patil, RE 31,287, 6-21-83; Storage Cells For Use in Two Conductor Data Column Storage Logic Arrays, Knapp et al., U.S. Pat. No. 4,442,508, 4-10-84; Storage Logic Array Having Two Conductor Data Column, Knapp et al., U.S. Pat. No. 4,414,547, 11-8-83., 48330=A channelless approach to standard cell design (analogous to that employed with gate arrays) results in a minor increase in density, although not nearly of the significance of the density increases yielded by channelless gate arrays. See Raza et al., \"Channel Architecture: A New Approach For CMOS Standard Cell Design\", IEEE 1985 Custom Integrated Circuits Conference, June, 1985, pp. 12-14 for a discussion of channelless standard cell design., 53588=Although others have in the past considered applying SLA to other technologies, such as the static CMOS technology employed in the preferred embodiment of this invention, such approaches have previously been analyzed from a limited, local perspective, and thus thought to yield insufficient densities. See, e.g., Smith, Kent F., \"Design of Regular Arrays Using CMOS in PPL, 1983 IEEE International Conference on Computer Design/VLSI in Computers\", October 31-November 3, 1983. In fact, as is demonstrated below, the use of static CMOS technology not only provides for low power usage, high speed and relatively-high noise immunity, but also yields global densities formerly achieved only with hand-crafted, custom designs.}",
+    "textBeforeTable": "Patent Citations It can thus be seen quite clearly that the tiling of the Cirrus CMOS Cell Set tiles enables the relatively simple creation not only of an extremely dense integrated circuit, but of one which can be modified, simply and inexpensively, throughout the design process, and even after a chip has been fabricated. For example, tile 2-2 of FIG. 12c (which was specified mistakenly as a \"0\" instead of a \"1\") has been correctly specified as a \"1\" in FIG. 12d. Similarly, tile 5-8 of FIG. 12c (which was specified mistakenly as a \"+\" instead of an \"X\") has been correctly specified as an \"X\" in FIG. 12d. All other differences between FIGS. 12c and 12d similarly correspond to those changes illustrated in FIG. 12b (from the Incorrect Control State Machine to the Corrected Control State Machine). Such changes are easily effected in software, and can also be effected after the chip has been fabricated, via the late mask programming modifications discussed above with respect to FIG. 6. A comparison of FIGS. 12c and 12d illustrates how, even in a relatively complex design, modifications such as those from the Incorrect Control State Machine to the Corrected Control State Machine of FIG. 12b can be effected with relative ease. It is important to emphasize again that the modifications to FIG. 12c (resulting in corrected FIG. 12d) can be made not only on paper (or, more likely, in software)",
+    "textAfterTable": "Non-Patent Citations Reference 1 A. Hui et al., \"A 4.1K Gates Double Metal HCMOS Sea of Gates Array\", IEEE 1985 Custom Integrated Circuits Conference, pp. 15-17. 2 * A. Hui et al., A 4.1K Gates Double Metal HCMOS Sea of Gates Array , IEEE 1985 Custom Integrated Circuits Conference, pp. 15 17. 3 Egan et al., \"Bipartite Folding and Partitioning of a PLA\", IEEE Transactions on Computer-Aided Design, vol. CAD-3, No. 3, Jul. 1984, pp. 191-199. 4 * Egan et al., Bipartite Folding and Partitioning of a PLA , IEEE Transactions on Computer Aided Design, vol. CAD 3, No. 3, Jul. 1984, pp. 191 199. 5 Hachtel et al., \"An Algorithm for Optimal PLA Folding\", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, vol. CAD-1, No. 2, Apr. 1982, pp. 63-75. 6 * Hachtel et al., An Algorithm for Optimal PLA Folding , IEEE Transactions on Computer Aided Design of Integrated Circuits and Systems, vol. CAD 1, No. 2, Apr. 1982, pp. 63 75.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

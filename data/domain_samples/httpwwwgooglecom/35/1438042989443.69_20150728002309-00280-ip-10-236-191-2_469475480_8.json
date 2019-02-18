@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Feb 23, 1998",
+            "Feb 25, 2002",
+            "Mar 5, 2002",
+            "Jun 10, 2002",
+            "Nov 18, 2005",
+            "May 19, 2006"
+        ],
+        [
+            "Code",
+            "FPAY",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Year of fee payment: 4",
+            "",
+            "",
+            "Year of fee payment: 8",
+            "Owner name: FRANKLIN FUELING SYSTEMS, INC., WISCONSIN Free format text: CHANGE OF NAME;ASSIGNOR:F E PETRO, INC.;REEL/FRAME:016793/0568 Effective date: 20040528",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US5372032 - Pressurized piping line leak detector - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5372032?dq=5191154",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989443.69/warc/CC-MAIN-20150728002309-00280-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 469510107,
+    "recordOffset": 469475480,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{92101=At this point the clock is checked for being equal to 4 hours and if it is, the 4 Hr flag is set. The 4 Hr flag will be used as a signal to the main program that a 0.2 GPH test can be performed. Then the clock is checked for being greater than 4:00:00 but less than 4:00:03, if so the solid state relay 26 is turned on. When the clock is no longer less than 4:00:03 then the solid state relay 26 is turned off. The solid state relay 26 is used for automatic pump activation as discussed earlier., 60473=Referring to Maresca, Jr. Et At, patents dated Jan. 7 and Feb. 25, 1992, the line leak detector therein described, utilizes a modified flow concept. The intent is to eliminate heat induction into the test fluid, during the test cycle. For flow detection methods to work, a constant pressure is required during the flow test. The line leak detector therein described, uses a pressure chamber with an air head, to provide a relatively constant pressure during the flow test. Sets of 3 tests are performed. Flow is determined by the change of height of the test fluid, in the pressure chamber. The first and third tests are flow tested at the selected test pressure, their results are averaged. The second test is performed at zero pressure. It is assumed at zero pressure, no leakage will occur from a potential hole in the piping. The flow if any is then attributed to thermal expansion or contraction of the fluid. Flow again is measured by the change of column height in the test chamber. The average flow from test 1 and 3, is corrected by adding or subtracting test 2, depending on contraction or expansion of the test fluid, from thermal effects. An assortment of valves, pressure chamber, controllers, flow switches, piping, cabling are utilized to obtain the desired performance. The subsequent patent improves with a positive displacement pump and other methods. In addition to the overall complication of this approach, the assumption that fluid will not be lost from a leaking pipe at zero pressure, ignores the inherent pressure head, from the location of the pressure chamber., 66398=38 Terminal Block TB4 AC Power}",
+    "textBeforeTable": "Patent Citations Existing fuel dispensing facilities experience a greater cost impact than new construction because of the relatively high cost of breaking concrete and excavation. Numerous patents have attempted to describe a solution, however performance, with affordable cost, as the market place demands has yet to be attained. The pressure decay line leak detector, yields the performance required and at an affordable cost. Federal and State laws require that underground pressurized fuel lines be continuously tested for 3 gph leaks and periodically tested for 0.1 or 0.2 gph leaks. Pressurized fuel lines pose a greater environmental risk, because even a small hole in piping can result in large volume spills. Compliance with the federal and state regulations, is difficult because of the financial burden on hundreds of thousands of fuel dispensing locations. CONCLUSION AND SCOPE Following the FAIL 3 GPH entry point the blink flags for the Alarm lamp 138 and the horn 118 are set and the counter is set to 2. The operating mode is then determined. If logic line MS 106 is 1 then the results are signaled as described above and the program goes to RESTART. If logic line MS 106 is not 1 then the dry contact relay 28 is turned on to disable the submersible pump 18 and then the program goes to RESTART. Following the CAT FAILURE entry point the blink flag for the LP lamp 146 is set",
+    "textAfterTable": "Semyon Brayman Method of measuring leak rates US4590793 * Jun 18, 1984 May 27, 1986 Staats Jr William L Pressure pump with volumetric leak rate detector US4608857 * Oct 31, 1983 Sep 2, 1986 Fried. Krupp Gmbh Method for checking pipes or pipe networks for leaks US4658986 * Jul 11, 1985 Apr 21, 1987 Freed Edward E Pressure-monitoring system US4723441 * Nov 7, 1985 Feb 9, 1988 Ply-Flow Engineering, Inc. Piping system for hazardous fluids US4797007 * Dec 18, 1987 Jan 10, 1989 Emhart Industries, Inc. Temperature and line pressure probe US4811252 * Sep 30, 1986 Mar 7, 1989 Kabushiki Kaisha Kosumo Keiki Leakage test equipment US4835717 * Dec 18, 1987 May 30, 1989 Emhart Industries, Inc. Intelligent line pressure probe US4852054",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

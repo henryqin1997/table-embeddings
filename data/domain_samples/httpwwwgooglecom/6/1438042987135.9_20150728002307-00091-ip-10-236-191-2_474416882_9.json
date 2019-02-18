@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 11, 1997",
+            "Aug 3, 1998",
+            "Jul 21, 2004",
+            "Aug 6, 2008",
+            "Jul 18, 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: PMC-SIERRA, INC., CANADA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:LANG, STEVEN FORBES;CARR, LARRIE SIMON;BINDLEY, GLENN KENNETH;AND OTHERS;REEL/FRAME:008936/0109 Effective date: 19971205",
+            "Owner name: PMC-SIERRA LTD., CANADA Free format text: CHANGE OF NAME;ASSIGNOR:PMC-SIERRA, INC.;REEL/FRAME:009371/0815 Effective date: 19980216",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6188699 - Multi-channel encoder/decoder - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6188699?dq=6,712,702",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00091-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 474471375,
+    "recordOffset": 474416882,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{134425=Referring to FIG. 10, channel assigner block 20.4 determines the channel number of the data byte currently being processed. In the illustrative embodiment, block 20.4 contains a 1024 word channel provision RAM 20.4.1. The channel assigner 20.4 performs a table lookup to indirectly address channel provision RAM 20.4.1 by concatenating the link number and the time-slot number of the current data byte. The fields of each RAM word hold the channel number and a time-slot enable flag. The time-slot enable flag labels the current time-slot as belonging to the channel indicated by the channel number field. For an unchannelized link, all incoming data bytes from such a link are mapped by channel assigner 20.4 to a single pre-determined channel., 121029=Flag sequences having a 01111110 bit pattern are used for frame synchronization and delineate the opening and closing of HDLC frames (also referred to here as data packets). In networks using HDLC, frame content between flag sequences is examined by the transmitter and a \u201c0\u201d bit is inserted after all sequences of 5 bit contiguous \u201c1\u201d bits in a process known as bit stuffing. Bit stuffing preserves frame synchronization by ensuring that the flag sequence is not simulated within the frame content., 197528=Channel assigner block 32.4 determines the channel number of a request selected by priority encoder 32.3 for processing. In the embodiment illustrated, channel assigner 32.4 includes a 1024 word channel provision RAM Channel assigner 32.4 performs a table lookup to indirectly address the channel provision RAM by concatenating the link number and the time-slot number of the highest priority requester. Each word in the channel provision RAM includes a channel number field and a time-slot enable flag. The time-slot enable flag labels the current time-slot as belonging to the channel indicated by the channel number field. If the current time-slot is enabled, channel assigner 32.4 issues a request to THDL 30, along with the channel number and the link number. Incoming data for all channels is received from THDL 30 on the TXDAT[7:0] bus in byte serial format (see FIG. 30)., 137063=HDLC Processor 22.1 preferably implements the state machine from applicant's co-owned U.S. Pat. No. 5,640,398, entitled \u201cSTATE MACHINE ARCHITECTURE FOR CONCURRENT PROCESSING OF MULTIPLEXED DATA STREAMS\u201d, issued Jun. 17, 1997, the whole of which is hereby incorporated by reference (see FIG. 11A). In accordance with the state machine architecture of U.S. Pat. No. '398, processor 22.1 stores the state vector and provisioning information for each channel in associated memory locations in an internal RAM. In the embodiment illustrated in FIG. 11, the state vector for a particular channel may hold a number of parameters, including partially completed FCS calculation, partial packet octet residue caused by stuffing bit removal, an indication as to whether or not frame synchronization has been achieved and a running count of the length of the current packet being processed on the respective channel.}",
+    "textBeforeTable": "Patent Citations While the present invention has been described with reference to illustrative embodiments, this description is not intended to be construed in a limiting sense. Various modifications of the illustrative embodiments, as well as other embodiments of the invention, will be apparent to persons skilled in the art upon reference to this description. By way of example, any number of physical links, each having any number of channels, may be coupled to the device. Certain links may have high-speed interface rates while other links may have lower-speed interface rates. In other configurations, all links may have high-speed interface rates or all links may have low-speed interface rates. The number of queues used by the RMAC and TMAC may vary with the selected application. The size and type of channel buffers may also vary in the RHDL and THDL blocks. A variety of management parameters may be included in the RPDs, TDs, and the respective tables. Where active low signals are used, one may readily configure the device for active high or other known signal levels and configurations. Further, while data streams are presented according to the telephonic convention of MSB first, it will be appreciated that device 10 is readily configurable to receive and transmit data according to the data communication standard of presenting the least significant bit (LSB) first. It is therefore contemplated that the appended claims will cover any such modifications or embodiments as fall",
+    "textAfterTable": "ITU-T Recommendation G.704 \"Synchronous Frame Structures Used at 1544,6312, 2048, 8488 and 44 736 kbit/s Hierarchical Levels\" Jul., 1995: pp. 1-33. Referenced by Citing Patent Filing date Publication date Applicant Title US6269413 * Oct 30, 1998 Jul 31, 2001 Hewlett Packard Company System with multiple dynamically-sized logical FIFOs sharing single memory and with read/write pointers independently selectable and simultaneously responsive to respective read/write FIFO selections US6304936 * Oct 30, 1998 Oct 16, 2001 Hewlett-Packard Company One-to-many bus bridge using independently and simultaneously selectable logical FIFOS US6357032 * Feb 8, 1999 Mar 12, 2002 International Business Machines Corporation Method and apparatus for implementing cyclic redundancy check calculation for data communications US6378051 * Jun 14, 1999 Apr 23, 2002 Maxtor Corporation Interrupt signal prioritized shared buffer memory access system and method US6473434 * Apr 20, 2001 Oct 29, 2002",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

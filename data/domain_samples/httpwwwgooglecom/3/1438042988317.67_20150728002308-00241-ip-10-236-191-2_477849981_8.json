@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US8437836 *",
+            "US8620046 *",
+            "US9040016",
+            "US20110105887 *",
+            "US20120172699 *"
+        ],
+        [
+            "Filing date",
+            "May 29, 2009",
+            "Jan 8, 2012",
+            "Jul 19, 2007",
+            "May 29, 2009",
+            ""
+        ],
+        [
+            "Publication date",
+            "May 7, 2013",
+            "Dec 31, 2013",
+            "May 26, 2015",
+            "May 5, 2011",
+            "Jul 5, 2012"
+        ],
+        [
+            "Applicant",
+            "Koninklijke Philips Electronics N.V.",
+            "Biosensors International Group, Ltd.",
+            "Biosensors International Group, Ltd.",
+            "Koninklijke Philips Electronics N.V.",
+            "Spectrum Dynamics Llc"
+        ],
+        [
+            "Title",
+            "Reverse data reconstruction for optimal time sampling of counts in physiological list-mode nuclear imaging",
+            "Radioactive-emission-measurement optimization to specific body structures",
+            "Diagnostic kit and methods for radioimaging myocardial perfusion",
+            "Reverse data reconstruction for optimal time sampling of counts in physiological list-mode nuclear imaging",
+            "Radioactive-emission-measurement optimization to specific body structures"
+        ]
+    ],
+    "pageTitle": "Patent US8111886 - Reconstruction stabilizer and active vision - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US8111886?dq=6,455,937",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00241-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 477931183,
+    "recordOffset": 477849981,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6362=In step 1430, the scores calculated in step 1425 are used to select one of the formed sets of views as the optimal set of views for the abovedescribed methods of performing radioactive-emission measurements of a body structure. A given scoring function may be used to select a set in a number of ways. In a first preferred embodiment, a required number of views is specified, and the highest scoring set with the specified number of views is selected. In a second preferred embodiment, the user may specify a minimal score which is known to provide satisfactory information quality, and select the smallest set which provides the specified score. However given a large collection of views the required number of calculations may be prohibitive. A third preferred embodiment used to reduce the computational burden is the greedy algorithm embodiment, similar to the abovedescribed method of FIGS. 10-11.}",
+    "TableContextTimeStampAfterTable": "{315977=In step 1425, sets of views are formed from the collection of views. A score is then calculated for each of the sets., 312199=We consider here the following problem: Assume that there is a large pool of candidate views to choose from, but due to time restrictions or other restrictions we are limited to a specific number of views N. Which are the best N projections in terms of the quality of the reconstruction? It is further assumed that the pool of projections may be constrained, and hence general sampling theorems (e.g., Radon Transform) cannot be applied. For instance, we consider a scenario in emission tomography where the detecting unit can be located on top of one face of a given volume but not on the others. In such cases, methods such as EM estimation do not clearly establish parameters, in the case shown a location (in the XYZ coordinate system), orientation (e), 0 and a) and collection angle \u03b4. The viewing parameters determine which voxels in volume 1500 are within a detecting unit's collection angle, and generally affect the probability of detection for each voxel. The probability of detection may be affected by additional factors, including the attenuation coefficients within the volume., 35644=This application is a National Phase of PCT Patent Application No. PCT/IL2006/000840 having International Filing Date of Jul. 19, 2006, which claims the benefit of the following U.S. Provisional Patent Applications: 60/816,970 filed on Jun. 28, 2006, 60/800,846 filed on May 17, 2006, 60/800,845 filed on May 17, 2006, 60/799,688 filed on May 11, 2006, 60/763,458 filed on Jan. 31, 2006, 60/750,597 filed on Dec. 15, 2005, 60/750,334 filed on Dec. 15, 2005, 60/750,287 filed on Dec. 13, 2005, 60/741,440 filed on Dec. 2, 2005, 60/720,652 filed on Sep. 27, 2005, 60/720,541 filed on Sep. 27, 2005, 60/720,034 filed on Sep. 26, 2005, 60/702,979 filed on Jul. 28, 2005, 60/700,753 filed on Jul. 20, 2005, 60/700,752 filed on Jul. 20, 2005, 60/700,318 filed on Jul. 19, 2005, 60/700,299 filed on Jul. 19, 2005 and 60/700,317 filed on Jul. 19, 2005., 36840=PCT Patent Application No. PCT/IL2006/000840 claims the benefit of Israel Patent Applications: 172349 filed on Nov. 27, 2005 and 171346 filed on Oct. 10, 2005., 36521=PCT Patent Application No. PCT/IL2006/000840 is also a Continuation-in-Part of the following PCT Patent Applications: PCT/IL2006/000562 filed on May 11, 2006, PCT/IL2006/000059 filed on Jan. 15, 2006, PCT/IL2005/001215 filed on Nov. 16, 2005 and PCT/IL2005/001173 filed on Nov. 9, 2005., 309560=In step 1220 at least one quality function is provided. Each quality function is for evaluating sets of views, essentially as described above. A single quality function may be used to select several sets of views, where each set of views contains a different number of views., 241619=An opposite approach for high-reliability portions of the volume is to subdivide high-reliability voxels into smaller voxels in order to improve resolution while still achieving a required reliability. For example, if there are 1000 different views independently covering 1 cubic cm and almost not affected by the surrounding voxels, then theoretically that volume can be divided up to about 1000 voxels, if the views create a linearly independent set of equations with a good condition number., 334528=This application further incorporates by reference all the information of the International Application entitled \u201cImaging Protocols\u201d which is being co-filed by the same assignee of the present invention on Jul. 19, 2006., 326668=Consider two possible sets of views: set {A, B, C} and set {B, C, D}. For set {A, B, C}, the total contribution of voxel 1610 is 0.8 (0.6+0.2+0) and of voxel 1620 is 0.8 (0+0.5+0.3). Normalizing these values for set {A, B, C} gives a probability set of [0.5,0.5]. For set {B, C, D}, the total contribution of voxel 1610 is 0.2 (0.2+0+0) and of voxel 1620 is 0.9 (0.5+0.3+0.1). Normalizing these values for set for set {B, C, D} gives a probability set of [0.18,0.82]. Thus: H({A,B,C})=\u2212(0.5*log20.5+0.5*log20.5)\u2212(\u22120.5\u22120.5)=1 H({B,C,D})=\u2212(0.18*log20.18+0.82*log20.82)=\u2212(\u22120.44\u22120.07)=0.51 Set {A, B, C} is thus seen to provide a more uniform coverage of volume 1600 than set {B, C, D}., 309875=In step 1230, multiple sets of further views (where a set may include a single further view) are formed from the collection of views, using the quality function(s) provided in step 1220. In a first preferred embodiment, each of the sets is formed using a different one of the quality functions. In an alternate preferred embodiment, emission measurements obtained from probe 1310. View definer 1330 dynamically defines further views for measurements, based on the analysis provided by analysis unit 1320. The analysis and view definition are performed substantially as described above.}",
+    "textBeforeTable": "Patent Citations Although the invention has been described in conjunction with specific embodiments thereof, it is evident that many alternatives, modifications and variations will be apparent to those skilled in the art. Accordingly, it is intended to embrace all such alternatives, modifications and variations that fall within the spirit and broad scope of the appended claims. All publications, patents and patent applications mentioned in this specification are herein incorporated in their entirety by reference into the specification, to the same extent as if each individual publication, patent or patent application was specifically and individually indicated to be incorporated herein by reference. In addition, citation or identification of any reference in this application shall not be construed as an admission that such reference is available as prior art to the present invention. It is appreciated that certain features of the invention, which are, for clarity, described in the context of separate embodiments, may also be provided in combination in a single embodiment. Conversely, various features of the invention, which are, for brevity, described in the context of a single embodiment, may also be provided separately or in any suitable subcombination. It is expected that during the life of this patent many relevant detection probes, detector types, radiation-based detection systems, algorithms for reconstruction and analyzing the reliability of reconstruction, and algorithms will be developed and the scope of the corresponding terms are intended to include all such",
+    "textAfterTable": "US3739279 Jun 30, 1971 Jun 12, 1973 Corning Glass Works Radio capsule oscillator circuit US3971362 Oct 27, 1972 Jul 27, 1976 The United States Of America As Represented By The Administrator Of The National Aeronautics And Space Administration Miniature ingestible telemeter devices to measure deep-body temperature US4015592 Jun 12, 1975 Apr 5, 1977 Bradley Moore Patrick Ralph Nuclear medicine system for imaging radiation US4278077 Jul 24, 1979 Jul 14, 1981 Olympus Optical Co., Ltd. Medical camera system US4302675 Jan 21, 1980 Nov 24, 1981 Technicare Corporation Method of multiplanar emission tomography and apparatus therefor US4364377 Feb 2, 1981 Dec 21, 1982 Walker Scientific, Inc. Magnetic field hemostasis US4521688 Jan 21, 1983 Jun 4, 1985 The United States Of America As Represented By The Administrator Of The National Aeronautics And Space Administration Three-dimensional and tomographic imaging device for x-ray and gamma-ray emitting objects US4595014 Oct 18, 1983 Jun 17, 1986 University",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

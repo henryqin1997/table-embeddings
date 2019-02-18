@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jan 17, 2003",
+            "Jan 7, 2007",
+            "Apr 4, 2011",
+            "Aug 31, 2011",
+            "Oct 18, 2011"
+        ],
+        [
+            "Code",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Effective date: 20110831"
+        ]
+    ],
+    "pageTitle": "Patent US5946385 - Method for updating a local switch internal database in a system having ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5946385?dq=5631832",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985647.51/warc/CC-MAIN-20150728002305-00304-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 488443595,
+    "recordOffset": 488403205,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{88119=(Step 2-1)--Subscriber A calls Subscriber B using 210-2111., 88645=(Step 2-3)--The call is translated; (i.e., Transaction Capabilities Application Part (TCAP) processing adds the Numbering Plan Area (NPA) code, here known to be Subscriber B's original, local, NPA of \"212\"), and a query for 212-210-1111 is launched to the External Local Number Portability Database (LNP DB) for the presence of Subscriber B. (The routing to, and from, the External Local Number Portability Database (LNP DB) may be Advanced Intelligent Network (AIN) or Intelligent Network (AI) protocols)., 89478=(Step 2-5)--The Signal Transfer Point (STP) sends the query response to the Local Service Provider (LSP1) End Office (EO2); 445-210-1111. An SPA classmark is added to call associated data indicating that the dialing information is from the External Local Number Portability Database (LNP DB)., 135475=Referring to FIG. 16, Subscriber D calls Subscriber B. Subscriber D dials (212) 335-1234. Local Service Provider (LSP3) routes call to Subscriber D's pre-subscribed Inter Exchange Carrier (IXC1). Inter Exchange Carrier (IXC1) dips into the External Local Number Portability Database (LNP DB). FIG. 16 shows a toll call in which the Inter Exchange Carrier (IXC) has direct connectivity to the Local Service Provider LSP that terminates the call. A call originates in Local Service Provider (LSP3); traverses the Inter Exchange Carrier (IXC) network, which performs an External Local Number Portability Database (LNP DB) query; and then is routed to the correct LSP in the terminating Local Access and Transport Area (LATA)., 87766=The previous service routing connection (indicated by the dashed line 12) was as follows: Subscriber A dialed 210-2111. Local Service Provider (LSP1) at End Office (EO2), which is connected to Subscriber A, routed the call to End Office (EO1) which is connected to Subscriber B., 136217=The sequence begins when Subscriber D dials 212-335-1234 to reach Subscriber B (Step 16-1). Local Service Provider (LSP3) recognizes this as a \"1-\" call and routes it directly to Subscriber D's prescribed Inter Exchange Carrier (IXC1) (Step 16-2). Inter Exchange Carrier (IXC1) determines that the NPA-NXX sent from Local Service Provider (LSP3) is portable (Step 16-3), and queries the External Local Number Portability Database (LNP DB) (Step 16-4)., 64885=This is a continuation of Ser. No. 08/497,281 filed Jun. 30, 1995, now abandoned., 138072=Consider, for example, that Subscriber D dials 212-335-1234 to reach Subscriber B (Step 17-1). The Local Service Provider (LSP3) recognizes this as an Inter-LATA call and routes it to Subscriber D's pre-subscribed Inter Exchange Carrier (IXC1) (Step 17-2). Inter Exchange Carrier (IXC1) determines that the NPA-NXX sent from Local Service Provider (LSP3) is portable, and performs a database query to the External Local Number Portability Database (LNP DB) (Step 17-3). The External Local Number Portability Database (LNP DB) returns SPA-NXX-XXXX for the Subscriber number (Step 17-4). Because Inter Exchange Carrier (IXCl) does not have direct connectivity with the correct Local Service Provider (LSP2), it routes the call to an access tandem, Local Service Provider (LSPl) access tandem (AT) (Step 17-5). Local Service Provider (LSPl) at the access tandem (AT) uses SPA-NXX to route the call to Local Service Provider (LSP2) (Step 17-6). Local Service Provider (LSP2) End Office (EO1) determines that this number is in its switch and terminates the call to Subscriber B (Step 17-7)., 132144=FIG. 14 illustrates call flow for an inter-switch call (i.e., between multiple switches and/or multiple Local Service Providers). Subscriber A calls Subscriber B. Subscriber A dials 335-1234. The Local Service Provider (LSP1) End Office (EO1) performs digit analysis, and based on the dialed number, recognizes that it is a call to a ported (i.e. changed) number and is not served by LSP1 :EO1, and that an External Local Number Portability Database (LNP DB) query is required., 134377=FIG. 15 is a call flow for an intra-switch call (i.e., one that involves only one switch). Here, Caller C on Local Service Provider (LSP2) End Office (EOl) dials 335-1234 to reach Subscriber B. That is, Subscriber C, in the example dials 335-1234 to reach Subscriber B (Step 15-1). The Local Service Provider (LSP2) End Office (EO1) recognizes 335 as an exchange code now served on its own switch. That is, Local Service Provider (LSP2) End Office (EO1) receives the call from Subscriber and performs digit analysis. Based on the dialed number, it determines that the dialed number resides in its own switch, and therefore an External Local Number Portability Database (LNP DB) query is not required. The call is completed within the switch.}",
+    "textBeforeTable": "Patent Citations Other embodiments are within the spirit and scope of the appended claims. Referring now to FIG. 29, an arrangement is shown for distributing the External Local Number Portability Database (LNP DB) among the local switches internal databases. As discussed above, when a local switch retrieves a Service Provider Area (SPA) code from the External Local Number Portability Database (LNP DB), the retrieved Service Provider Area (SPA) code may be stored in the internal database of the switch to reduce queries to the External Local Number Portability Database (LNP DB). Thus, here each End Office (EO), i.e., EO 29-1 to 29-n, and a centrally located office 29-C, contains a subset (LNP DB)'of the External Local Number Portability Database (LNP DB) for those NPA-NXX-XXXX directory numbers for which the NPA-NXX is a local exchange code (Office code). This internal (LNP DB') is updated from an Master External Local Number Portability Database (LNP DB), or from the specific switch that gets a new Subscriber. Any External Local Number Portability Database (LNP DB) queries are routed to the (LNP DB)' location based on the dialed NPA-NXX. The Master External Local Number Portability Database (LNP DB) owner may be designated, for each NPA-NXX, a set of, for example, 10,000 directory numbers. Thus, the Master External Local Number Portability Database (LNP DB) for a specific NPA-NXX may be located in the centralized LNP database 30-C, or in one of the End Office",
+    "textAfterTable": "US4577066 * Aug 3, 1983 Mar 18, 1986 At&T Bell Laboratories Telephone interexchange call routing US4611096 * Dec 1, 1983 Sep 9, 1986 At&T Bell Laboratories Telephone office service assist and handoff US4751728 * Mar 27, 1987 Jun 14, 1988 Treat John M Telephone call monitoring, metering and selection device US4754479 * Sep 17, 1986 Jun 28, 1988 American Telephone And Telegraph Company Station number portability US4827500 * Jan 30, 1987 May 2, 1989 American Telephone And Telegraph Company, At&T Bell Laboratories Automatic speech recognition to select among call destinations US4866763 * Aug 17, 1988 Sep 12, 1989 American Telephone And Telegraph Company, At&T Bell Laboratories Interexchange carrier automatic route selection system US4924510 * Dec 28, 1988 May 8, 1990 American Telephone And Telegraph Company Telecommunications database accessing method",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

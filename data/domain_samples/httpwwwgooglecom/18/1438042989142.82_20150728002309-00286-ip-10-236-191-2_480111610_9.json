@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Feb 25, 1991",
+            "Sep 1, 1995",
+            "Nov 26, 1996",
+            "Sep 29, 1999",
+            "Sep 30, 2003"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: NOVATEL COMMUNICATIONS, LTD., 1010-64TH AVENUE, N. Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:FENTON, PATRICK;NG, KWOK-KI KEITH;FORD, THOMAS J.;REEL/FRAME:005632/0757 Effective date: 19910207",
+            "Year of fee payment: 4",
+            "Owner name: NOVATEL INC, CANADA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:NOVATEL COMMUNICATIONS LTD.;REEL/FRAME:008246/0864 Effective date: 19961001",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US5101416 - Multi-channel digital receiver for global positioning system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5101416?dq=ininventor:oliver+ininventor:steele",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989142.82/warc/CC-MAIN-20150728002309-00286-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 480149099,
+    "recordOffset": 480111610,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{54279=Before beginning with a detailed discussion of the various components of the synchronizer 220, reference should be made to FIG. 6 which shows, on a distorted time scale, the relative durations of various components of a PRN ranging signal, and certain other signals in a preferred embodiment of the synchronizer 220. For example, starting at the bottom of FIG. 6, a single carrier cycle has a particular duration, C. A single cycle of the generated clock FS signal consists of K carrier cycles. A PRN code chip includes N FS cycles. A PRN code epoch consists of Z PRN code chips, where Z is also known as the sequence length of the PRN code. One data bit typically consists of T PRN code epochs: For the preferred embodiment of the invention adapted to receive the GPS L1 ranging signal, the carrier frequency is 1575.42 MHz, K is 77 so that FS equals 20.46 MHz, N is 20 so that the PRN code chip rate is 1.023 MHz, Z is 1023 so that the PRN code epoch rate is 1 kHz, and T is 20, so that the data bit rate is 50 Hz., 27538=For more information on the format of the GLONASS system signals, see \"The GLONASS System Technical Characteristics and Performance\", Working Paper, Special Committee on Future Air Navigation Systems (FANS), International Civil Aviation Organization (ICAO), Fourth Meeting, Montreal, Quebec, Canada, May 2-20, 1988., 59886=The chip counter 226b is used to determine the duration of a complete PRN code sequence. For the GPS embodiment, there are 1,023 C/A code chips in a PRN code epoch, and thus the chip counter 226b counts from zero to 1022. The most significant bit, INT1 indicates the end of a complete PRN code epoch; it is used to reset the local PRN code generator 230. Another clock signal, INT4, which is four times the rate of INT1 (i.e., the third most significant bit of the chip counter 226b) is also generated. Both INT1 and INT4 are used to interrupt the processor 16 to service the correlators 240 during an initial locking sequence, as will be described shortly.}",
+    "textBeforeTable": "Patent Citations The foregoing description has been limited to a specific embodiment of this invention. It will be apparent, however, that variations and modifications may be made to the invention, with the attainment of some or all of its advantages. Therefore, it is the object of the appended claims to cover all such variations and modifications as come within the true spirit and scope of the invention. Once the carrier and code have been locked, the data bits can be considered to be valid and can be demodulated by sampling the IA signal output from the punctual correlator 240a. Once the satellite is correctly locked onto frequency and code phase, correlator 240b is switched to the (Punctual, Early-Late) mode by moving the switch 256 to the exclusive-OR position. In this mode, the output of correlator 240b is used as required to maintain code lock. The delay between the early and late clocks E and L is also slowly decreased by adjusting the contents of the registers 226P and 226L (FIG. 5). By narrowing the delay, the noise level of the discrimination function performed by the Early-Late correlator 240b is decreased and its accuracy is increased. The common clock line CLDx to the correlators 240 is selected to be one of the INT1, INT4, or INT20 signals depending upon the mode of correlator 240. For example, during an initial fast seek mode, the INT4 signal may be used to",
+    "textAfterTable": "Apr 11, 1989 California Institute Of Technology Digital signal processor and processing method for GPS receivers US4847862 * Apr 7, 1988 Jul 11, 1989 Trimble Navigation, Ltd. Global positioning system course acquisition code receiver US4894842 * Oct 15, 1987 Jan 16, 1990 The Charles Stark Draper Laboratory, Inc. Precorrelation digital spread spectrum receiver US5016257 * Mar 13, 1989 May 14, 1991 Standard Elektrik Lorenz Ag Receiver for bandspread signals, particularly GPS receiver EP0312193A2 * Jul 20, 1988 Apr 19, 1989 Northern Telecom Limited Code correlation arrangement EP0351156A1 * Jul 10, 1989 Jan 17, 1990 Ashtech Inc. Global positioning system receiver with radio frequency and digital processing sections GB2215539A * Title not available * Cited by examiner Non-Patent Citations",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 28, 1992",
+            "Jun 7, 1995",
+            "Feb 1, 1999",
+            "Jan 8, 2003",
+            "Jan 19, 2007"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: AMERICAN TELEPHONE AND TELEGRAPH COMPANY, NEW YORK Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:BLAHUT, DONALD E.;SZURKOWSKI, EDWARD S.;REEL/FRAME:006411/0067 Effective date: 19921223",
+            "Owner name: AT&T CORP., NEW YORK Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:AMERICAN TELELPHONE AND TELEGRAPH COMPANY;REEL/FRAME:007527/0274 Effective date: 19940420 Owner name: AT&T IPM CORP., FLORIDA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:AT&T CORP.;REEL/FRAME:007528/0038 Effective date: 19950523",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US5442389 - Program server for interactive television system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5442389?dq=5726663",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989018.48/warc/CC-MAIN-20150728002309-00000-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 466845015,
+    "recordOffset": 466795771,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{111017=In step 1109, both command words cause the packets from their associated data blocks to be sent over the relevant channels at the appropriate intervals. Because the group identity in the HEAD field is the same in both command words, any \"standby\" or \"abort\" flag set in token memory 306 will affect both command words. Also, the response to a request such as \"fast-forward\" will require replacement of both command words and the \"clips\" described above will need both audio and video components. Thus, the scene list will have entries for both the audio and video packets at the beginning of a scene. Such packets can be chosen so that the audio and video are in synchronism at the beginning of a scene., 104531=FIG. 10 is a flow chart showing the steps involved in responding to a \"fast forward\" request. Such requests can be implemented, for example, by storing a scene list containing memory offsets in request processor 101, where each entry in the list indicates the relative address of the beginning of a scene with respect to the starting address of the movie. On receipt of a \"fast-forward\" request (step 1001), processor 101 sends a control message to server 200 requesting the status of the movie (step 1002). Microprocessor 300 sets the \"status\" flag in SRAM 501 in token memory 306 at the address corresponding to the group identity for the movie data block (step 1003), which causes the command word for such group to be entered into status FIFO 325. On receiving such command word, microprocessor 300 sends a status message to request processor 101 identifying the packet currently being sent according to the PA or T fields in the command word (step 1004). Request processor 101 then refers to the scene list to determine the address of the next scene (step 1005) and sends a control message to server 100 to send a short (e.g. 0.5 sec) clip from the movie starting at the beginning of the next scene (step 1006). Microprocessor 300 sets the \"abort\" flag in SRAM 501 in token memory 306 to delete the command word for the data block for the movie as presently being sent (block 1007) and then creates a new command word to send the clip (step 1008). Steps 1005, 1006 and 1008 are repeated as indicated by arrows 1009, 1010 and 1011, thereby traversing the scene list, until a \"play\" request is received (step 1012), whereupon processor 101 sends a control message to send the remainder of the movie beginning at the last-sent scene (step 1013). Each control message sent in steps 1006 and 1013 causes microprocessor 300 to create a new command word with the appropriate entries in the PA and T fields to send the clips (step 1006) or the remainder of the movie (step 1013) from the data block already resident in data memory 111. The viewer sees the succession of clips. Of course, the clips can be made any length necessary for comfortable scanning of the movie, and multiple \"fast forward\" instructions using clips of different lengths can be implemented if desired to give different scanning speeds. \"Fast reverse\" can be implemented in a similar manner by traversing the scene list in the opposite direction., 68631=One of the developments that has made the invention feasible is the availability of large RAMs for use in data memory 111 in server 100. In an exemplary embodiment, such memory contains 232 words\ufffd48 bytes per word (approximately 206 gigabytes) to store over 150 full-length movies. The four tape drives in the cartridge library described above can each read and transmit data at a sustained rate of 15 megabytes per second. Thus, four two-hour movies can be written into data memory 111 in 11/2 minutes. As will be described, a single movie stored in data memory 111 can be transmitted to multiple users, each on a different channel, with each user having control of the timing of his or her own presentation. Thus, assuming that some movies will be watched by more than one user, even at different times, the exemplary embodiment of server 100 has the capacity to serve far more than 150 customers simultaneously. As will be described, the exemplary embodiment of server 100 has the capacity to serve up to 1600 customers simultaneously at 1.5 megabits/second per customer.}",
+    "textBeforeTable": "Patent Citations The invention has been shown and described with reference to particular embodiments. However, it will be understood by those skilled in the art that various changes may be made therein without departing from the spirit and scope of the invention. Still other applications are possible in which the subscriber can interact with the material being transmitted. For example, a subscriber can request a movie in a particular language and switch to another language during the showing. The initial request is implemented by means of the steps shown in FIG. 11. A request to change languages causes request processor 101 to obtain the status of the movie from server 100, transmit a data block comprising at least the remainder of the soundtrack of the movie in the new language to data memory 111 in server 100 and then cause microprocessor 300 to create a new command word for the new soundtrack data block and abort the soundtrack for the old soundtrack data block. A similar application could be implemented regarding multiple versions of the same movie with different ratings in which the viewer may wish to switch back and forth between ratings depending on the audience. In such an application, certain scenes that might be included in one version could be skipped in another version, but without any time lapse being apparent at the point of the skipped scene. A similar application could be adapted to show",
+    "textAfterTable": "US4920533 * Oct 26, 1988 Apr 24, 1990 Videotron Ltee CATV subscriber terminal transmission control US5130792 * Feb 1, 1990 Jul 14, 1992 Usa Video Inc. Store and forward video system US5132992 * Jan 7, 1991 Jul 21, 1992 Paul Yurt Audio and video transmission and receiving system US5142532 * Mar 21, 1989 Aug 25, 1992 British Telecommunications Public Limited Company Communication system US5172413 * Dec 20, 1990 Dec 15, 1992 Sasktel Secure hierarchial video delivery system and method US5193208 * Apr 26, 1991 Mar 9, 1993 Sony Corporation Signal transmission system US5251909 * May 28, 1991 Oct 12, 1993 Reed Michael J Secured high throughput data channel for public broadcast system US5341474 * May 15, 1992 Aug 23, 1994",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

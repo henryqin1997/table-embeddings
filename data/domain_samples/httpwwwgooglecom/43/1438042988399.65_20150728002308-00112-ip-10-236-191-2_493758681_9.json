@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Nov 26, 1997",
+            "Oct 30, 2001",
+            "Jul 16, 2003",
+            "Aug 22, 2003",
+            "Aug 22, 2003",
+            "Jul 11, 2007",
+            "Dec 28, 2007",
+            "Feb 19, 2008"
+        ],
+        [
+            "Code",
+            "AS",
+            "CC",
+            "REMI",
+            "SULP",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Certificate of correction",
+            "Maintenance fee reminder mailed",
+            "Surcharge for late payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: INTERNATIONAL BUSINESS MACHINES CORPORATION, NEW Y Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:CICCARELLI, STEPHEN MATTHEW;REEL/FRAME:008913/0406 Effective date: 19971125",
+            "",
+            "",
+            "",
+            "Year of fee payment: 4",
+            "",
+            "",
+            "Effective date: 20071228"
+        ]
+    ],
+    "pageTitle": "Patent US6009422 - System and method for query translation/semantic translation using ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6009422?dq=6,757,710",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988399.65/warc/CC-MAIN-20150728002308-00112-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 493794823,
+    "recordOffset": 493758681,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{33488=Any grammar suffixes are removed from the search term prior to searching. Thus, Runner or Running becomes Run. Be careful of applying this Stemming Rule to proper nouns to which the rules of stemming do not apply. \"Lansing\", for instance, as in Lansing, Mich., will likely become \"Lanse\" and result in no database hits. Stemming is performed first if specified in the search., 25760=In the prior art, many information retrieval systems require custom code to translate a given search question into individual target search grammar. Such systems have been handicapped by programming language which does not address general purpose search and retrieval or the systems are tied to a specific commercial product which supports only the features of those products and not a full range of desired capabilities. What is needed is a system and method operation to generate a single query to reach and be processed by a large set of heterogeneous search engine products and then have the search results returned as a single, fused list of relevant information. More specifically, what is needed is to provide a client with a set of object classes which provide a template to perform required translations. The entire translation process is templated so that the process can logically be driven by altering a run-time configuration file rather than writing new code. Where code is required, the code may be inserted via a run-time binding to a shared object allowing a translation product to ship as a single, universal version., 37740=Eaual asks that documents match if the specified expression matches the field in its entirety. Thus, (Equal \"Date\" \"19970101\") would only match documents which have a date field of Jan. 1, 1997., 42140=Through the use of the various GQL search parts or expressions a user can select an expression and frame a single query which is more closely directed to the information sought than the requirements of the search engine grammar. GQL library is detailed in Appendix A and provides a grammar specification for preparing search queries., 27776=These and other objects, features and advantages are in an information retrieval system method in which a client expresses the query in a programming language which has a variety of operations to precisely specify the conditions of the query and enable a fused response to be provided from the data bases to the query. A client station translates the query into phrases contained in the programming library and constructs a complex search query which bridges the gap between the query and the low level of functionality provided in search engines associated with data bases. The query is transmitted to a search broker which checks the query for syntax errors; parses the associated query into individual search or partial queries and associated logical operation if the search syntax is correct and forwards the partial queries to agent stations for distribution to data base search engines. Each search engine translates the partial queries into database search grammar for searching purposes and retrieves search information in the form of a \"Hit List\" related to the query. Each search engine combines the \"Hit List\" in accordance with logical operations associated with a partial query and any constraints specified in the query to generate a search result having a common format appearance with other search engines. The agent station combines and forwards the \"Hit List\" results to the broker station. A fused response is generated and forwarded to the requesting client station by the broker station as a single response from the heterogeneous, dissimilar multiple databases., 53614=In a step 5, when one of the search agents receives such a search request, the agent traverses the list of partial queries, examining each of them. If a partial query is textual in nature (that is, that portion of the query is not restricted to a specific field or column of data), then the search is translated into target search grammar for a particular search engine. Since the search expressions at this level are very simple, the translation is largely driven by a simple configuration file which contains a script written in a language which defines simple, primitive reformatting operations., 31461=GQL is a computer search language designed to provide maximum search flexibility when specifying a potentially complex conditions which data objects must meet in order to be identified as candidates for return from a query operation. GQL is what is known as a \"prefix\" grammar. Unlike traditional math grammars, which are infix grammars, prefix grammars place the operator to the far left of a set of operands. For instance, one plus two plus three in an infix grammar is written as: 1+2+3. In a prefix grammar, the same equation would be written (+1 2 3). The latter does take some getting used to for people, but is much easier for a computer to use and process. GQL is not meant to be particularly friendly to users, however, but to accurately and correctly convey the search information from the client machine to the servers which will process it. However, GQL is intentionally designed to provide as much functionality in constructing searches, with the knowledge that few if any commercial engines will be able to provide the total specified functionality. A HitList library is included in GQL and designed to provide additional functionality that search engines might lack., 50143=A query translator 74 identifies and translates the GQL partial queries into native grammar for searching by a target search engine (which could be one of several engines) using Query Processing Logic (Q2). This process is the first step of query translation. A query optimizer 76 identifies which search operation can be modified using Query Processing Language (Q3) so that fewer accesses to the database engine are made. The partial queries are sent to the respective search engines using a query execution unit 78 and Query Processing Logic (Q4) and Document Retrieval Logic (R2). The search result provide identifiers which allow subsequent retrieval of document content., 27498=Another object is an information retrieval system and method of operation in which an improved programming language uses text and fielded-search constructs into a single grammar applicable to multiple, dissimilar, heterogeneous search engines and data bases., 38544=There are also two operators which require two values. These are: Between Inclusive and Between Exclusive. They test the contents of a given field against a range of values rather than a single value. For example, Date of Publication in January, 1997, is actual Date of Publication exclusively between Dec.31, 1996 and Feb. 1, 1997., 54232=In a step 6, if a partial query defines an operation which is restricted to a particular column or field (e.g., document title, for example, \"Huckleberry Finn\"), the agent translates that expression to an appropriate target or native search grammar, potentially modifying the field name and search values to some equivalent native form in the process. The result of this operation is a buffer which can be understood by the particular search engine for this source.}",
+    "textBeforeTable": "Patent Citations While the invention has been shown and described in terms of a preferred embodiment, various modifications may be made therein without departing from the spirit and scope of the invention as defined in the appended claims, in which:  APPENDIX A__________________________________________________________________________CURRENT PROPOSED GQL GRAMMAR SPECIFICATION__________________________________________________________________________expr: pattern-- expr |bool-- expr |field-- expr |prox-- expr |channel-- exprpattern-- expr: STRING //A string is a token expressionw ith :weight of \"50\" and:stem |token-- exprtoken-- expr: (TOKEN[:CASE] [:STEM] [:EXACT] [:WEIGHT \"x\"] [:WILD] [:FUZZY] [STRING) //CASE turns ON case sensitivity. STEM means to remove //suffixes from the specified search string. EXACT //means to search for whole words only. WEIGHT indicates //the relative importance of this token within the search. //WILD indicates that ? and * will match one and zero or //more arbitrary characters within a single word, //respectively. FUZZY means that synonyms or other similar //meaning words are legal as hits. |(BINARY STRING) //Format of BINARY token is TBI). It will bea 7-bit //ascii representation which includes code page info //probably in a base64 encoding. It will be used //for binary searches (images, sounds) as well as //non-ascii NLS searches.bool-- expr: ({AND|OR|SUBTRACT} expr-- list expr)bool-- text-- expr: ({AND|OR|SUBTRACT} text-- expr-- listtext-- expr)text-- expr: pattern-- expr |bool-- text-- expr |prox-- expr |channel-- text-- exprtext-- expr-- list: text-- expr |text-- expr-- list text-- exprexpr-- list: expr |expr-- list exprfield-- expr: ({START|EQ|IN|END} field-- nametext-- expr) |({GT|LT|GTE|LTE} field--name value) |({BETWEENI|BETWEENE} field-- name valuevalue)prox--",
+    "textAfterTable": "Ballesteros et al., Phrasal Translation and Query Expansion Techniques for Cross Language Information Retrieval ,SIGIR 97, ACM, 1997. * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US6108686 * Mar 2, 1998 Aug 22, 2000 Williams, Jr.; Henry R. Agent-based on-line information retrieval and viewing system US6175861 Feb 6, 1998 Jan 16, 2001 Henry R. Williams, Jr. Apparatus and method for providing computer display data from a computer system to a remote display device US6195797 Feb 6, 1998 Feb 27, 2001 Henry R. Williams, Jr. Apparatus and method for providing computer display data from a computer system to a remote display device US6202211 Feb 6, 1998 Mar 13, 2001 Henry R. Williams, Jr. Method and apparatus for providing television signals to multiple viewing systems on a network US6259443 Feb 6, 1998 Jul 10, 2001 Henry R. Williams, Jr. Method and apparatus for enabling multiple users",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

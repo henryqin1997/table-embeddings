@@ -1,0 +1,66 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US7890609 *",
+            "US8204965 *",
+            "US8244574",
+            "US8341247",
+            "US8589210",
+            "US8667102 *"
+        ],
+        [
+            "Filing date",
+            "Jan 15, 2010",
+            "Feb 9, 2011",
+            "Jun 27, 2011",
+            "Jun 15, 2012",
+            "Sep 28, 2012",
+            "Aug 14, 2012"
+        ],
+        [
+            "Publication date",
+            "Feb 15, 2011",
+            "Jun 19, 2012",
+            "Aug 14, 2012",
+            "Dec 25, 2012",
+            "Nov 19, 2013",
+            "Mar 4, 2014"
+        ],
+        [
+            "Applicant",
+            "Almondnet, Inc.",
+            "Almondnet, Inc.",
+            "Datonics, Llc",
+            "Almondnet, Inc.",
+            "Datonics, Llc",
+            "ioBridge, Inc."
+        ],
+        [
+            "Title",
+            "Requesting offline profile data for online use in a privacy-sensitive manner",
+            "Requesting offline profile data for online use in a privacy-sensitive manner",
+            "Method, computer system, and stored program for causing delivery of electronic advertisements based on provided profiles",
+            "Requesting offline profile data for online use in a privacy-sensitive manner",
+            "Providing collected profiles to media properties having specified interests",
+            "Module-based device interaction system"
+        ]
+    ],
+    "pageTitle": "Patent US7725944 - Matching session records of network users with corresponding transaction data - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7725944?dq=6,907,387",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 10,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988305.14/warc/CC-MAIN-20150728002308-00232-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 475700831,
+    "recordOffset": 475669782,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{42691=Thus, an order including a purchase of books and electronics would have bits 0 and 1 set. Thus, the first character would be the binary representation 0011, which is equivalent to 3. If an order includes office supplies and electronics, the first character would be 1010, or A., 26091=This application is a continuation of U.S. patent application Ser. No. 11/236,482, filed Sep. 27, 2005, which is a continuation of U.S. patent application Ser. No. 09/608,136 filed Jun. 30, 2000 and entitled Method and System for Monitoring Online Behavior at a Remote Site and Creating Online Behavior Profiles, to the filing dates of which priority is expressly claimed herein, and the disclosure of which is also specifically incorporated herein.}",
+    "textBeforeTable": "Patent Citations Embodiments of the present invention have now been generally described in a non-limiting matter. It will be appreciated that these examples are merely illustrative of the present invention which is defined by the following claims. Many variations and modifications will be apparent to those of ordinary skill in the art As discussed above, various embodiments of the present invention permit the collection of network utilization data while ensuring the privacy of individual users. In the embodiments discussed above, the system maintains the IP addresses of users in order to match data collected on the client side with data collected on the merchant side. The use of IP addresses alone can weaken the privacy-protection features of various embodiments of the present invention by providing an identifier that can possibly be traced to a particular user. In this embodiment, the IP addresses are hashed in a manner analogous to user identifiers. The aggregation server 501 retrieves all the information about the user's connections to Amazon.com\u2122 from the collection engine 103; however, that collection engine cannot determine whether a purchase was made. If Amazon.com\u2122 were running a merchant collection engine 106, then a transaction code containing information about the purchase would have been logged. The aggregation server 501 can collect the information from both collection engines and aggregate it into a single database so that the data can be analyzed to determine the actions that led",
+    "textAfterTable": "US6463533 Apr 15, 1999 Oct 8, 2002 Webtv Networks, Inc. System for generating site-specific user aliases in a computer network US6473740 Nov 29, 1998 Oct 29, 2002 Qpass, Inc. Electronic commerce using a transaction network US6546393 Oct 7, 1999 Apr 8, 2003 Clickmarks, Inc. System method and article of manufacture for dynamically user-generated internet search directory based on prioritized server-sided user bookmarks US6553367 Dec 3, 2001 Apr 22, 2003 Mercado Software, Ltd. Method for obtaining a unified information graph from multiple information resources US6601173 Jul 6, 1999 Jul 29, 2003 Avaya Technology Corp. Multi-user internet access and security system US6631496 Mar 22, 1999 Oct 7, 2003 Nec Corporation System for personalizing, organizing and managing web information US6654813 Aug 13, 1999 Nov 25, 2003 Alta Vista Company Dynamically categorizing entity information US6792458 Oct 4, 2000 Sep 14, 2004 Urchin Software Corporation System and method for monitoring and analyzing internet",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

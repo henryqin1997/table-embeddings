@@ -1,0 +1,81 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US8412665 *",
+            "US8615506 *",
+            "US8843429",
+            "US9076484 *",
+            "US20100058484 *",
+            "US20110153663 *",
+            "US20120123993 *",
+            "US20120179666 *",
+            "US20140068407 *"
+        ],
+        [
+            "Filing date",
+            "",
+            "Jan 27, 2012",
+            "Apr 1, 2013",
+            "Sep 3, 2008",
+            "",
+            "",
+            "Nov 17, 2010",
+            "",
+            "Aug 28, 2012"
+        ],
+        [
+            "Publication date",
+            "Apr 2, 2013",
+            "Dec 24, 2013",
+            "Sep 23, 2014",
+            "Jul 7, 2015",
+            "Mar 4, 2010",
+            "Jun 23, 2011",
+            "May 17, 2012",
+            "Jul 12, 2012",
+            "Mar 6, 2014"
+        ],
+        [
+            "Applicant",
+            "Microsoft Corporation",
+            "Vobile, Inc.",
+            "Microsoft Corporation",
+            "Sandisk Technologies Inc.",
+            "Jogand-Coulomb Fabrice E",
+            "At&T Intellectual Property I, L.P.",
+            "Microsoft Corporation",
+            "Vobile, Inc.",
+            "Adobe System Incorporated"
+        ],
+        [
+            "Title",
+            "Action prediction and identification temporal user behavior",
+            "Methods and systems for monitoring and tracking videos on the internet",
+            "Action prediction and identification of user behavior",
+            "Methods for estimating playback time and handling a cumulative playback time permission",
+            "Methods for estimating playback time and handling a cumulative playback time permission",
+            "Recommendation engine using implicit feedback observations",
+            "Action Prediction and Identification Temporal User Behavior",
+            "Methods and systems for monitoring and tracking videos on the internet",
+            "Identifying web pages that are likely to guide browsing viewers to improve conversion rate"
+        ]
+    ],
+    "pageTitle": "Patent US7930391 - Method and system for determining viewing time of an online video - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7930391?dq=5,825,242",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 6,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988310.3/warc/CC-MAIN-20150728002308-00069-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 484291747,
+    "recordOffset": 484262443,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{22062=Singh et al., U.S. Patent Publication Number 2003/0171977, for a Clickstream Analysis Methods And Systems, discloses modifying off-line businesses based on identified characteristics obtained by online actions., 35923=The following code sample is an example implementation of the disclosed subject matter to determine actual viewer video viewing time. Traditional measurement techniques measure \u201chits\u201d or page views by firing off javascript calls (or the like) generally once per web page, or by processing server logs. The challenge with determining the level of user interaction with an interactive application such as video is that the majority of the interaction occurs within the client, whether it is a Adobe Flash, Microsoft Silverlight, Windows desktop, Mac application, peer-to-peer, or other video implementation. By combining user-driven event calls from the video player with logic to signal when the user is skipping or rewinding over particular segments of the video file or stream, it is possible to measure the actual \u201ccaptive\u201d viewing time that the user experiences with the video. Example code for performing this function for a Flash player is set forth below (\ufffd 2008 Visible Measures Corp.):, 17700=This application is based on and claims priority from Ser. No. 60/915,687, filed May 3, 2007., 18809=Alternan, U.S. Patent Publication Number 2006/0048186, for a Method And Apparatus For Storing And Accessing Videos From A Remote Location discloses an application service platform that allows websites to accept video uploads, and which also includes a method for tracking the number of times the video was accessed or viewed on the website., 20392=Krzanowski, U.S. Patent Publication Number 2005/0246651, for a System, Method And Apparatus For Selecting, Displaying, Managing, Tracking And Transferring Access To Content Of Web Pages And Other Sources, discloses the previous in regard to web pages including online videos.}",
+    "textBeforeTable": "Patent Citations The hardware and software systems in which the invention is illustrated are merely representative. The invention may be practiced, typically in software, on one or more machines. Generalizing, a machine typically comprises commodity hardware and software, storage (e.g., disks, disk arrays, and the like) and memory (RAM, ROM, and the like). The particular machines used in the network are not a limitation of the present invention. A given machine includes network interfaces and software to connect the machine to a network in the usual manner. The server may be part of a managed service (e.g., in an ASP model) using the illustrated set of machines, which are connected or connectable to one or more networks. More generally, the service is provided by an operator using a set of one or more computing-related entities (systems, machines, processes, programs, libraries, functions, or the like) that together facilitate or provide the inventive functionality described above. In a typical implementation, the service comprises a set of one or more computers. A representative machine is a network-based server running commodity (e.g. Pentium-class) hardware, an operating system (e.g., Linux, Windows, OS-X, or the like), an application runtime environment (e.g., Java, .ASP), and a set of applications or processes (e.g., Java applets or servlets, linkable libraries, native code, or the like, depending on platform), that provide the functionality of a given system or subsystem. As described, the service may be implemented in",
+    "textAfterTable": "US20040049554 * Jul 26, 2002 Mar 11, 2004 Koichiro Watanabe Content providing apparatus, content providing method, stream content reproduction program, and recording medium containing the stream content reproduction program US20050108095 * Oct 13, 2004 May 19, 2005 Adicus Media. Inc. System and method for electronic advertising, advertisement play tracking and method of payment US20050246651 * Apr 28, 2004 Nov 3, 2005 Derek Krzanowski System, method and apparatus for selecting, displaying, managing, tracking and transferring access to content of web pages and other sources US20060048186 * Mar 24, 2005 Mar 2, 2006 Eric Alterman Method and apparatus for storing and accessing videos from a remote location * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US8412665 * Apr 2, 2013 Microsoft Corporation Action prediction and identification temporal user behavior",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

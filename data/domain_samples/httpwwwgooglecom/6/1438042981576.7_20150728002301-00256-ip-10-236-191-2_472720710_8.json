@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Apr 26, 2002",
+            "May 14, 2002",
+            "May 13, 2003",
+            "Apr 21, 2006",
+            "Apr 21, 2010"
+        ],
+        [
+            "Code",
+            "FPAY",
+            "REMI",
+            "CC",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Certificate of correction",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Year of fee payment: 4",
+            "",
+            "",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US5828616 - Sensing scheme for flash memory with multilevel cells - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5828616?dq=7,752,326",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00256-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 472750231,
+    "recordOffset": 472720710,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{18139=This is a continuation of application Ser. No. 08/721,559, filed Sep. 26, 1996, now abandoned.}",
+    "textBeforeTable": "Patent Citations In the foregoing specification the invention has been described with reference to specific exemplary embodiments thereof. It will, however, be evident that various modifications and changes may be made thereto without departing from the broader spirit and scope of the invention as set forth in the appended claims. The specification and drawings are, accordingly, to be regarded in an illustrative rather than restrictive sense. During a read operation, the counter is initialized to 0 such that the drain bias 467 is coupled to reference flash cell 486. The reference flash cell 486 has a threshold voltage Vt equal to VR2. The result of the first comparison is stored in latch 580. The first result is output by the latch 580 via signal line 590, which is fed back to the decoding circuit 563. If the first result is a logic 1, the reference flash cell 487, which has a threshold voltage Vt equal to VR1, is selected, and the voltage at node 465 is compared to the voltage at node 450. If the first result is a logic 0, the reference flash cell 488 having a threshold voltage Vt equal to VR3 is selected. The second result is output by the comparator 460 and stored in the latch 585. The second result is output by the latch 585 via signal line 591. Output signal line 590 outputs the high order bit Bit 1, and output signal",
+    "textAfterTable": "US4388702 * Aug 21, 1981 Jun 14, 1983 Mostek Corporation Multi-bit read only memory circuit US4415992 * Feb 25, 1981 Nov 15, 1983 Motorola, Inc. Memory system having memory cells capable of storing more than two states US4460982 * May 20, 1982 Jul 17, 1984 Intel Corporation Intelligent electrically programmable and electrically erasable ROM US4586163 * Jul 1, 1983 Apr 29, 1986 Toshiba Shibaura Denki Kabushiki Kaisha Multi-bit-per-cell read only memory circuit US4653023 * Sep 17, 1984 Mar 24, 1987 Fujitsu Limited Plural-bit-per-cell read-only memory US4701884 * Aug 14, 1986 Oct 20, 1987 Hitachi, Ltd. Semiconductor memory for serial data access US4771404 * Aug 28, 1985 Sep 13, 1988 Nippon Telegraph And Telephone Corporation Memory device employing multilevel storage circuits US4875188 *",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

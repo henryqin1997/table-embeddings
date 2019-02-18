@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jan 14, 1998",
+            "Mar 10, 2006",
+            "Mar 10, 2010",
+            "Apr 11, 2013",
+            "Apr 15, 2013",
+            "May 7, 2013",
+            "Mar 6, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: TELEFONAKTIEBOLAGET LM ERICSSON, SWEDEN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:GRUBECK, HANS G.;BEMING, PER J.;REEL/FRAME:008958/0273 Effective date: 19971222",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:TELEFONAKTIEBOLAGET L M ERICSSON (PUBL);REEL/FRAME:030201/0186 Effective date: 20130211 Owner name: CLUSTER LLC, DELAWARE",
+            "Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:CLUSTER LLC;REEL/FRAME:030219/0001 Owner name: UNWIRED PLANET, LLC, NEVADA Effective date: 20130213",
+            "Free format text: NOTICE OF GRANT OF SECURITY INTEREST IN PATENTS;ASSIGNOR:UNWIRED PLANET, LLC;REEL/FRAME:030369/0601 Effective date: 20130213 Owner name: CLUSTER LLC, SWEDEN",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6449484 - Method and arrangement in a radio communications system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6449484?dq=5,963,646",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00327-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 487179227,
+    "recordOffset": 487145373,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{162845=FIG. 10 illustrates an embodiment of the inventive arrangement. A control unit 1030 receives from a base station 1000 information relating to output power demand P, effective transmission times T and the relevant configuration of the angular power spectrum A for mobile stations in its vicinity. In the illustrated case, the control unit 1030 is included in a transceiver unit 1010 in the base station 1000, since the received parameters P, T and A are found available in the transceiver unit 1010. However, it is quite feasible to place the control unit in any other desired position within or outside the base station 1000. Information concerning the relevant configuration of the angular power spectrum A of the mobile stations may conveniently be obtained with the aid of an adaptive antenna 1020. However, the information A can be generated in accordance with alternative methods with the aid of, e.g., GPS receivers in the mobile stations (GPS=Global Positioning System)., 163898=The parameter values MSi(P,T,A) for the mobile stations MS1-MSn, where i=1, . . . , n in the vicinity of the base station 1000 are transferred from a processor unit 1040 in the control unit 1030 and stored in a first storage unit 1050. When the parameter values (MSi(P,T,A) for all mobile stations MS1-MSn have been registered in the first storage unit 1050, the processor unit 1040 distributes the mobile stations MS1-MSn over the available channels CH1-CHm in the base station 1000 in accordance with the proposed method, assigns each mobile station to a channel CHj(MSi), where j=1, . . . , m; i=1, . . . n and stores the result in a second storage unit 1060 which may, of course, also consist of a second partition of the first storage unit 1050. The processor unit 1040 then generates USFs for the channels CH1-CHm in accordance with the channel allocation. When a predetermined time \u03c4 has passed since the last registration of the parameter values MSi(P,T,A) for the mobile stations MS1-MSn, a timer unit 1070 delivers a first signal U which causes the processor unit 1040 to perform a new collection of parameter values P, T and/or A and a new assignment of mobile stations MS1-MSn to the base station channels CH1-CHm. After having received the first signal U, the processor unit 840 sets the timer unit 1070 to zero via a second signal R, wherewith the time parameter of the time unit 870 begins again to run.}",
+    "textBeforeTable": "Patent Citations The parameter values MSi(P,T,A) for the mobile stations MS1-MSn, where i=1, . . . , n in the vicinity of the base station 1000 are transferred from a processor unit 1040 in the control unit 1030 and stored in a first storage unit 1050. When the parameter values (MSi(P,T,A) for all mobile stations MS1-MSn have been registered in the first storage unit 1050, the processor unit 1040 distributes the mobile stations MS1-MSn over the available channels CH1-CHm in the base station 1000 in accordance with the proposed method, assigns each mobile station to a channel CHj(MSi), where j=1, . . . , m; i=1, . . . n and stores the result in a second storage unit 1060 which may, of course, also consist of a second partition of the first storage unit 1050. The processor unit 1040 then generates USFs for the channels CH1-CHm in accordance with the channel allocation. When a predetermined time \u03c4 has passed since the last registration of the parameter values MSi(P,T,A) for the mobile stations MS1-MSn, a timer unit 1070 delivers a first signal U which causes the processor unit 1040 to perform a new collection of parameter values P, T and/or A and a new assignment of mobile stations MS1-MSn to the base station channels CH1-CHm. After having received the first signal U, the processor unit 840 sets the timer unit 1070 to zero via a second signal R,",
+    "textAfterTable": "Mar 11, 2008 Motorola, Inc. Adaptive channel access scheme US7403538 Apr 21, 2004 Jul 22, 2008 At&T Corporation Voice data integrated multiaccess by self-reservation and contention algorithm US7451205 * Oct 1, 2001 Nov 11, 2008 Hewlett-Packard Development Company, L.P. Multimedia stream pre-fetching and redistribution in servers to accommodate mobile clients US7545774 * Aug 26, 1999 Jun 9, 2009 Nokia Corporation Method for indicating power consumption in a packet switched communication system US7555300 * Dec 17, 2004 Jun 30, 2009 Intel Corporation Base station interference control using timeslot resource management US7586949 * Nov 17, 2000 Sep 8, 2009 Nortel Networks Limited Interleaving data over frames communicated in a wireless channel US7630351 Sep 29, 2005 Dec 8, 2009 At&T Corp. RSVP/SBM based up-stream session setup, modification, and teardown for QoS-driven wireless LANs US7639657 Jan 17, 2006 Dec 29, 2009 At&T Corp.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

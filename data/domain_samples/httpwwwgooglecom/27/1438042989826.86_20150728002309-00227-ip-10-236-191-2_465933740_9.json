@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Mar 20, 1997",
+            "Mar 1, 2001",
+            "Jan 9, 2002",
+            "Jan 21, 2004",
+            "Dec 6, 2004"
+        ],
+        [
+            "Code",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US5247618 - Transferring data in a digital data processing system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5247618?dq=7493558",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989826.86/warc/CC-MAIN-20150728002309-00227-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 465958983,
+    "recordOffset": 465933740,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{34433=This is a continuation of application Ser. No. 07/374,253, filed Jun. 30, 1989, now abandoned.}",
+    "textBeforeTable": "Patent Citations Note that the result of a read operation issued to the target disk that specifies a range of logical blocks that is within or overlaps the range of logical blocks specified in a Copy Data command is unpredictable because data may not yet have been copied to the section of the target specified in the read command. Hosts should therefore rely solely on the contents of the source disk (or another active shadow set member) for read operations. As explained above, each host stores a table that lists data that the host needs to operate properly in the system. For example, each table will include information regarding the disks that make up the shadow set, etc. The table also stores status information that informs the host whether or not a new member is being added to the shadow set. Therefore, before a host executes an I/O request to the shadow set it will check the status field in its table, and if the host determines that a new member is being added, the host will implement the special procedures discussed above for avoiding possible data corruption. The table is kept current by requiring hosts that begin the process of adding a new member, to send a message to every other host in the system informing each host of the operation. A host that is controlling the addition of the new member will not begin the data",
+    "textAfterTable": "US4503534 * Jun 30, 1982 Mar 5, 1985 Intel Corporation Apparatus for redundant operation of modules in a multiprocessing system US4584681 * Sep 2, 1983 Apr 22, 1986 International Business Machines Corporation Memory correction scheme using spare arrays US4600990 * May 16, 1983 Jul 15, 1986 Data General Corporation Apparatus for suspending a reserve operation in a disk drive US4602368 * Apr 15, 1983 Jul 22, 1986 Honeywell Information Systems Inc. Dual validity bit arrays US4603406 * Feb 3, 1984 Jul 29, 1986 Hitachi, Ltd. Power backed-up dual memory system US4608687 * Sep 13, 1983 Aug 26, 1986 International Business Machines Corporation Bit steering apparatus and method for correcting errors in stored data, storing the address of the corrected data and using the address to maintain a correct data condition US4608688 * Dec 27, 1983 Aug",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

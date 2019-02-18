@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jun 22, 2006",
+            "Mar 6, 2012",
+            "Oct 31, 2013",
+            "Feb 27, 2014",
+            "May 8, 2014",
+            "May 16, 2014",
+            "Apr 13, 2015"
+        ],
+        [
+            "Code",
+            "AS",
+            "CC",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Certificate of correction",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: MCKESSON AUTOMATION INC., PENNSYLVANIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:BRAUN, PATRICK J.;GREYSHOCK, SHAWN T.;REEL/FRAME:017832/0859 Effective date: 20060602",
+            "",
+            "Owner name: SILICON VALLEY BANK, AS ADMINISTRATIVE AGENT, CALI Free format text: SECURITY AGREEMENT;ASSIGNOR:MCKESSON AUTOMATION INC.;REEL/FRAME:031649/0149 Effective date: 20131031",
+            "Owner name: AESYNT INCORPORATED, PENNSYLVANIA Free format text: CHANGE OF NAME;ASSIGNOR:MCKESSON AUTOMATION INC.;REEL/FRAME:032366/0589 Effective date: 20131104",
+            "Owner name: AESYNT INCORPORATED (FORMERLY KNOWN AS MCKESSON AU Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:SILICON VALLEY BANK, AS ADMINISTRATIVE AGENT;REEL/FRAME:032855/0305 Effective date: 20140508",
+            "Owner name: TPG SPECIALTY LENDING, INC., AS ADMINISTRATIVE AGE Free format text: PATENT SECURITY AGREEMENT;ASSIGNOR:AESYNT INCORPORATED;REEL/FRAME:032912/0215 Effective date: 20140508",
+            "Year of fee payment: 4"
+        ]
+    ],
+    "pageTitle": "Patent US8036773 - System, method and corresponding apparatus for storing, retrieving and ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US8036773?ie=ISO-8859-1&dq=5527183",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00102-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 469952263,
+    "recordOffset": 469911110,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6612=As shown in FIG. 15, the process of one exemplary embodiment begins where, in Step 1501, a plurality of unit dose blisters of different shapes and sizes are disposed in respective unit dose blister mounts, for example, of the form discussed above. For example, the unit dose blister may be deposited in a carrier disposed within or otherwise associated with a respective storage location with its unit dose medication, or medication cavity, down (i.e., within the cavity of the carrier), such that the support panel of the unit dose blister will lie substantially flat in the horizontal plane enabling the barcode, or similar identification code, and/or other identification information, displayed on the unit dose blister to be viewable from above. As discussed above, other means for disposing unit dose blisters in a repeatable, predetermined orientation, such that the identification code of the unit dose blister can be readily scanned and the unit dose blister itself can be easily handled by a robotic picking system, can likewise be used without departing from the spirit and scope of the present invention. This would include, for example, disposing the unit dose blisters in respective coils of one or more springs that are aligned to form rows and columns in a manner similar to a vending machine.}",
+    "TableContextTimeStampAfterTable": "{124393=In exemplary embodiments, Steps 1502 and 1503 may be sidestepped where, for example, a pharmacist or pharmacy technician manually inputs either the unique patient identification code associated with a particular patient, or the actual list of medications to be retrieved. This may be done, for example, where the pharmacist or pharmacy technician wants a single prescription filled immediately (i.e., not as part of the routine daily prescription fills\u2014e.g., in the case of an emergency or as a first dose)., 122460=In Step 1502, the identification code (e.g., barcode, RFID tag, text, or the like) associated with a patient-specific medication bin or container is read in order to determine the identity of a patient for which a prescription is to be filled. The identification code may, for example, store a unique patient identification code. The patient-specific medication container may, for example, be moving on a conveyor belt associated with the storage, retrieval and delivery system discussed above, such that when the container reaches a specified point, the identification code is automatically read to retrieve the identification information. In another exemplary embodiment, not shown, the container (referred to herein as a \u201cfloor stock container\u201d) may be associated with a particular cabinet or medication room within a hospital, or similar institution, that needs to be restocked. In other words, scanning the identification code of the floor stock container may identify the one or more unit dose medications necessary to restock the corresponding cabinet or medication room, rather than providing information relating to a specific patient., 126850=In Step 1507, the identification code of the unit dose blister is read by the picking system, for example, in the manner discussed above, in order to determine the identity of the unit dose medication packaged in the unit dose blister. It is then verified, in Step 1508, that the correct medication has been located. If the correct medication has been located, the unit dose blister is removed from the unit dose blister mount, for example using the blister removal mechanism discussed above, (Step 1509) and delivered to the patient-specific medication container (Step 1510). In particular, the unit dose blister may first be delivered to a container associated with the overall storage, retrieval and delivery system, and from which it can be dispelled out the back of the system into the patient-specific medication container, which is being carried by a conveyor belt. Alternatively, as noted above, the container into which the unit dose blister is ultimately dispelled may comprise a floor stock container associated not with a specific patient, but instead with a particular cabinet or medication room needing restocking. As yet another alternative, in the exemplary embodiment discussed above wherein a pharmacist or pharmacy technician has manually requested that the medication be retrieved (i.e., sidestepping Steps 1502 and 1503 in the event of an emergency or in order to fill a first dose), the unit dose blister may be individually dispelled from the first container, for example, out a chute on the front of the storage, retrieval and delivery system., 124947=A location of the unit dose blister corresponding with the first unit dose medication is then determined, in Step 1504. In particular, this may involve determining a location in, for example, the storage system described above, associated with a unit dose blister mount holding the unit dose blister (e.g., in the form of X, Y and Z coordinates). Where the unit dose blister mount includes two or more cavities for receiving unit dose medications, this step may further include determining in which cavity the unit dose medication is held.}",
+    "textBeforeTable": "Patent Citations Many modifications and other embodiments of the inventions set forth herein will come to mind to one skilled in the art to which these inventions pertain having the benefit of the teachings presented in the foregoing descriptions and the associated drawings. Therefore, it is to be understood that the inventions are not to be limited to the specific embodiments disclosed and that modifications and other embodiments are intended to be included within the scope of the appended claims. Although specific terms are employed herein, they are used in a generic and descriptive sense only and not for purposes of limitation. As described above, the method, system and apparatus of exemplary embodiments enable a pharmacy, a hospital or the like to store, retrieve and delivery unit dose blisters that have not be over-wrapped or repackaged. Unit dose blisters of various shapes and sizes are handled in their natural, raw state, thus taking advantage of the identification information currently displayed on each individual unit dose blister and cutting down on material costs and technician and pharmacist time associated with over-wrapping or repackaging, as well as with validating the process. Conclusion: The present invention also lends itself to various alternative embodiments. For example, the picking system may be configured such that the unit dose blister mount and the corresponding unit dose blister remains in the storage location while the identification code is read and verified",
+    "textAfterTable": "US5405048 Dec 6, 1993 Apr 11, 1995 Kvm Technologies, Inc. Vacuum operated medicine dispenser US5431299 Jan 26, 1994 Jul 11, 1995 Andrew E. Brewer Medication dispensing and storing system with dispensing modules US5460294 May 12, 1994 Oct 24, 1995 Pyxis Corporation Single dose pharmaceutical dispenser subassembly US5468110 Aug 25, 1994 Nov 21, 1995 Automated Healthcare, Inc. Automated system for selecting packages from a storage area US5480062 Jan 30, 1995 Jan 2, 1996 Kvm Technologies, Inc. Vacuum operated medicine dispenser US5502944 Dec 3, 1993 Apr 2, 1996 Owen Healthcare, Inc. Medication dispenser system US5504319 Feb 9, 1994 Apr 2, 1996 Symbol Technologies, Inc. Method and system for bar code acquisition US5520450 Aug 2, 1994 May 28, 1996 Pyxis Corporation Supply station with internal computer US5523552 Oct 19, 1994 Jun 4, 1996 Symbol Technologies, Inc. Method and",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

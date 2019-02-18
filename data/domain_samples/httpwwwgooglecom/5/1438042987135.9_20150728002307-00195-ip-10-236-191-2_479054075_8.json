@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jun 27, 2002",
+            "Feb 20, 2007",
+            "Jun 2, 2009",
+            "Feb 18, 2011",
+            "Mar 18, 2015"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "",
+            "Year of fee payment: 4",
+            "Owner name: GLOBALFOUNDRIES INC., CAYMAN ISLANDS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:AMD TECHNOLOGIES HOLDINGS, INC.;REEL/FRAME:022764/0544 Effective date: 20090302 Owner name: AMD TECHNOLOGIES HOLDINGS, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:ADVANCED MICRO DEVICES, INC.;REEL/FRAME:022764/0488 Effective date: 20090302",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6628163 - Circuit for tuning an active filter - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6628163?dq=6,907,387",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00195-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 479078079,
+    "recordOffset": 479054075,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{33114=An alternative approach is to produce tunable filters comprising linear resistors instead of MOSFET resistors, and a tunable array of capacitors. This is proposed by A. M. Durham, J. B. Hughes and W. Redman-White in \u201cCircuit Architectures for High Linearity Monolithic Continuous Time Filters\u201d, IEEE Transactions on Circuits and Systems\u2014II: Analog and Digital Signal Processing, Vol. 39, No. 9, September 1992, pp. 651\u201457. According to this technique the RC time constant of the filter is measured and compared with the nominal design value. The number of active capacitors in the array, that is, the number of capacitors actually connected to the RC network of the filter amplifier, is adjusted to keep the filter circuit within a desired RC range. Due to the employment of passive resistors instead of MOSFET elements, the filter is highly linear. Moreover, the RC time constant of the filter is determined by a digital code supplied to the array that may conveniently be stored in a latch once the digital code has been established. Although the accuracy of the RC time constant is limited by the available number of switchable capacitors in the array, and, hence, by the number of bits of the digital code, a range of \ufffd5% to \ufffd10% for the corner frequency of the filter is sufficient for many low to medium frequency applications so that the filters can be tuned with a relatively low number of capacitors in the array.}",
+    "textBeforeTable": "Patent Citations Further modifications and alternative embodiments of various aspects of the invention will be apparent to those skilled in the art in view of this description. Accordingly, this description is to be construed as illustrative only and is for the purpose of teaching those skilled in the art the general manner of carrying out the present invention. Although the embodiments have been described with reference to a filter circuit including an integrator it is to be understood that the embodiments described herein are also applicable to any other type of active filter circuits, such as Bessel filters, Chebeychev filters, Butterworth filters and the like. Furthermore, the time constant of the filter circuit to be tuned may be adjusted by providing an array of resistors to compensate for variations. The filter circuit may additionally include one or more inductive elements rather than only resistors and capacitors, or the resistor or the capacitors are replaced by inductors. While the embodiments contemplated may be particularly useful when the active filter circuit and the tuning circuit are incorporated in an integrated circuit, they may also be applied to a separately provided filter circuit. In this case, linear elements of the active filter circuit may be used as the tuning elements of the tuning circuit. Although the implementation of the conversion function in the decoder as a look-up table is described, in a further embodiment any other appropriate means, such as a",
+    "textAfterTable": "Aug 22, 2002 Jan 11, 2005 Cypress Semiconductor Corporation Calibration of integrated circuit time constants US7057452 * Jan 26, 2004 Jun 6, 2006 Stmicroelectronics S.A. Method and circuit for correcting the offset of an amplification chain US7071711 Jul 2, 2004 Jul 4, 2006 Micronas Gmbh Method and device for determining the ratio between an RC time constant in an integrated circuit and a set value US7116159 * Oct 30, 2003 Oct 3, 2006 Infineon Technologies Ag Method and apparatus for adjusting an active filter US7157945 * Dec 6, 2004 Jan 2, 2007 Texas Instruments Incorporated Window comparator and method of providing a window comparator function US7157954 * Nov 25, 2003 Jan 2, 2007 International Business Machines Corporation Semiconductor type two phase locked loop filter US7176754 * Feb 26, 2004 Feb 13, 2007 Stmicroelectronics, S.R.L. Control system for the characteristic parameters of an active filter",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,69 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Apr 27, 1995",
+            "Apr 1, 1997",
+            "Dec 28, 2000",
+            "Apr 5, 2001",
+            "Sep 30, 2004",
+            "Dec 6, 2006",
+            "Jan 2, 2009",
+            "Mar 7, 2013",
+            "Oct 9, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: AT&T IPM CORP., FLORIDA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:KLEM, RUSSELL D.;TOMASKO-DEAN, KIMBERLY SUE;REEL/FRAME:007507/0030 Effective date: 19950427",
+            "Owner name: LUCENT TECHNOLOGIES INC., NEW JERSEY Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:AT&T CORP.;REEL/FRAME:008511/0906 Effective date: 19960329",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "Owner name: LUCENT TECHNOLOGIES INC., NEW JERSEY Free format text: TERMINATION AND RELEASE OF SECURITY INTEREST IN PATENT RIGHTS;ASSIGNOR:JPMORGAN CHASE BANK, N.A. (FORMERLY KNOWN AS THE CHASE MANHATTAN BANK), AS ADMINISTRATIVE AGENT;REEL/FRAME:018584/0446 Effective date: 20061130",
+            "Year of fee payment: 12",
+            "Owner name: CREDIT SUISSE AG, NEW YORK Free format text: SECURITY INTEREST;ASSIGNOR:ALCATEL-LUCENT USA INC.;REEL/FRAME:030510/0627 Effective date: 20130130",
+            "Owner name: ALCATEL-LUCENT USA INC., NEW JERSEY Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:CREDIT SUISSE AG;REEL/FRAME:033950/0261 Effective date: 20140819"
+        ]
+    ],
+    "pageTitle": "Patent US5646978 - Method and apparatus for providing interswitch handover in personal ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5646978?ie=ISO-8859-1&dq=U.S.+Patent+No.+4,528,643",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986806.32/warc/CC-MAIN-20150728002306-00146-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 471377135,
+    "recordOffset": 471355090,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{29740=The operation of the system of the invention will be described with particular reference to the PCS system shown generally at 1 in FIG. 1. PCS system 1 consists of an ISDN electronic switching system 2 such as described in U.S. Pat. No. 4,592,048 issued to Beckner et al. on May 27, 1986. Such a switching system can consist of one of the 5ESS\ufffd family of switches, described in AT&T Technical Journal, Vol. 64, No. 6, part 2, pp. 1305-1564, July/August 1985, and manufactured by AT&T. The architecture of such a switching system includes a communications module 4 forming a hub and having a plurality of switch modules 6, and an administrative module 8 emanating therefrom. Each switch module 6 is controlled by processor 7 including a local data base and provides call processing, time division switching and signaling for the lines and trunks to which it is connected. Line units 10 provide interface to customer lines that connect to customer premise equipment, and trunk units 12 provide interface to trunks that connect the other elements of the network such as switches. Circuit units 14 provide tones, announcements, recorded messages, tone decoding and the like. The administrative module 8 provides functions that can be centralized such as maintenance control, craft interface, text and data base management, call routing and time slot allocation. The administrative module 8 consists of a control unit such as the AT&T 3B21D duplex processor 16 and main memory store 18. In some systems the administrative module is assisted by a separate processor that performs some of the administrative functions. The administrative module 8 also can include an input/output processor 20 providing communication between switching system 2 and peripheral devices 21 such as terminals, printers or the like. Communications module 4 is the hub of the switching system and allows communication between the administrative module 8 and the switch modules 6. Communications module 4 consists of a message switch that provides the administrative module-to-switch module and switch module-to-switch module message communications and a time multiplexed switch providing the switch module-to-switch module and switch module-to-administrative module time slot connection for voice and data communication and the clock distribution. Switching system 2 further includes a conference or three-way switching circuit 25 including a three port connection capable of establishing three way calls as will be understood by one skilled in the art. It will be appreciated that while the previously described switch architecture relates specifically to the AT&T 5ESS\ufffd switch, any switch having similar capabilities may be used and the specific switch architecture may vary., 23149=The typical PCS system, defined in Bellcore Generic Requirements GR-2801-CORE Issue 1, Dec. 1993, consists of a number of radio port control units (RPCU) each controlling a radio port having a radio transmitter/receiver for communicating with mobile stations located in the geographic service area served by that radio port. Multiple radio port control units, arranged such that their service areas are contiguous, are provided to extend the range of service beyond the geographic area served by a single RPCU. The RPCUs are connected to and communicate with switching systems over lines that transmit voice and call control signals therebetween. The switching systems are connected to, and form part of, the public switched telephone network (PSTN). Thus, PCS users are provided with wireless access to the public switched telephone network via a relatively inexpensive system.}",
+    "textBeforeTable": "Patent Citations It is to be understood that the above description is only of one preferred embodiment of the invention. Numerous other arrangements may be devised by one skilled in the art without departing from the scope of the invention. The invention is thus limited only as defined in the accompanying claims. As a result of the handover system of the invention, the call is routed directly from the anchor switch to the current switch without the need to maintain the connection through switching systems that had previously served the call. This eliminates the problem of maintaining prior connections where a call is routed through a plurality of switches that had previously served the call but are no longer required for normal routing purposes. Moreover, the handover system of the invention provides for interswitch handover without affecting existing PCS protocols. A further advantage of the interswitch handover procedure of the invention is that it facilitates the handling of interactions with supplementary telephony services such as conference calling and call waiting. The process of the invention allows these supplementary services to be controlled at the anchor switch, greatly simplifying the protocols for controlling these services thereby enhancing the networks ability to provide supplementary services. The method of operation of the system will be described with specific reference to the flowchart of FIGS. 3A and 3B. The system is initiated when a call is received at a switching system either",
+    "textAfterTable": "* Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US5850606 * May 17, 1996 Dec 15, 1998 Bellsouth Corporation Method and system for transferring a cellular telephone call between intelligent cell sites US5889769 * Aug 4, 1997 Mar 30, 1999 Fujitsu Limited Switching system linked to radio base station US6009326 * Nov 14, 1995 Dec 28, 1999 Telecordia Technologies, Inc. Anchor radio system based handover US6807419 * Nov 22, 2000 Oct 19, 2004 Telefonaktiebolaget Lm Ericsson (Publ) SRNS relocation in a UMTS network US6813293 Nov 21, 2002 Nov 2, 2004 Finisar Corporation Long wavelength VCSEL with tunnel junction, and implant US6836501 Apr 12, 2002 Dec 28, 2004 Finisar Corporation Resonant reflector for increased wavelength and polarization control US6887801",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

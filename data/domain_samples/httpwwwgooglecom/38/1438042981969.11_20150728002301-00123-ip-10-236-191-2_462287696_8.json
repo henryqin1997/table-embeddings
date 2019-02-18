@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Sep 4, 1992",
+            "Sep 26, 1996",
+            "Jan 16, 2001",
+            "Jun 24, 2001",
+            "Aug 28, 2001"
+        ],
+        [
+            "Code",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Effective date: 20010627"
+        ]
+    ],
+    "pageTitle": "Patent US4843295 - Method and apparatus for starting single phase motors - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4843295?dq=inassignee:doubleclick",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981969.11/warc/CC-MAIN-20150728002301-00123-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 462325071,
+    "recordOffset": 462287696,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations Although the invention has been described with respect to specific, preferred embodiments thereof, many variations and modifications will become apparent to those skilled in the art. It is the intent that the appended claims be interpreted as broadly as possible, in view of the prior art to include all such variations and modifications. Comparator CMPA is an input data comparator which senses the polarity of the VS1, VS2 signal and provides a polarity control POL, POL which is used to avoid phase errors by switching toggles V7A,B, V2C,D to maintain the same polarity being inputted into integrator V1B. This allows the measurement to start at any point of the input sine wave and still provide the desired integration. Integration is performed when line clock LCKO is true and is held when line clock LCKO is false. As described supra, during the hold period the integration data is processed by the other portions of the system. When the system goes into the run mode (state 4) signal SC4 is low setting counter U6 in a down count or decrement mode and also disabling gate U1, and enabling gate U2. In state 4 signal TCI is disabled so signal ZCK which generates TCI is fed to frequency divider U which divides its frequency by sixteen. The resultant lower clock signal ZCKlow frequency is fed through gates U2, U3 to counter U6 which decrements accumulated TCI counts at one",
+    "textAfterTable": "Referenced by Citing Patent Filing date Publication date Applicant Title US5017853 * Feb 27, 1990 May 21, 1991 Rexnord Corporation Spikeless motor starting circuit US5325034 * Jan 7, 1992 Jun 28, 1994 Reynolds William R Emergency power system for capacitor start motors US5559418 * May 3, 1995 Sep 24, 1996 Emerson Electric Co. Starting device for single phase induction motor having a start capacitor US5696432 * Oct 13, 1995 Dec 9, 1997 Temic Telefunken Microelectronic Gmbh Method of controlling the power of an induction motor US5808441 * Jun 10, 1996 Sep 15, 1998 Tecumseh Products Company Microprocessor based motor control system with phase difference detection US5811955 * Aug 29, 1996 Sep 22, 1998 Flint & Walling Industries, Inc. Electro-start motor switch US5973473",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

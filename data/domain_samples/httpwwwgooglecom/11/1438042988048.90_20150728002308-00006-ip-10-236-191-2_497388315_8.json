@@ -1,0 +1,70 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Apr 27, 2005",
+            "Jun 22, 2010",
+            "Oct 1, 2012",
+            "Oct 2, 2012",
+            "Oct 3, 2012",
+            "Oct 17, 2013",
+            "Oct 23, 2013",
+            "Oct 30, 2013",
+            "Aug 25, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: GLOWPOINT, INC., NEW JERSEY Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:MORRIS, STUART;REEL/FRAME:016173/0797 Effective date: 20040324",
+            "Owner name: SILICON VALLEY BANK,CALIFORNIA Free format text: SECURITY AGREEMENT;ASSIGNOR:GLOWPOINT, INC.;REEL/FRAME:024576/0239 Effective date: 20100616 Owner name: SILICON VALLEY BANK, CALIFORNIA Free format text: SECURITY AGREEMENT;ASSIGNOR:GLOWPOINT, INC.;REEL/FRAME:024576/0239 Effective date: 20100616",
+            "Owner name: COMERICA BANK, MICHIGAN Free format text: SECURITY AGREEMENT;ASSIGNOR:GLOWPOINT, INC.;REEL/FRAME:029062/0960 Effective date: 20121001",
+            "Owner name: GLOWPOINT, INC., NEW JERSEY Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:SILICON VALLEY BANK;REEL/FRAME:029059/0163 Effective date: 20121001",
+            "Owner name: ESCALATE CAPITAL PARTNERS SBIC I, L.P., TEXAS Free format text: SECURITY AGREEMENT;ASSIGNOR:GLOWPOINT, INC.;REEL/FRAME:029073/0808 Effective date: 20121001",
+            "Owner name: GLOWPOINT, INC., COLORADO Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:ESCALATE CAPITAL PARTNERS SBIC I, L.P.;REEL/FRAME:031425/0477 Effective date: 20131017",
+            "Owner name: GLOWPOINT, INC., NEW JERSEY Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:COMERICA BANK;REEL/FRAME:031464/0561 Effective date: 20131018",
+            "Owner name: MAIN STREET CAPITAL CORPORATION, TEXAS Free format text: SECURITY AGREEMENT;ASSIGNOR:GLOWPOINT INC.;REEL/FRAME:031515/0311 Effective date: 20131017",
+            "Year of fee payment: 4"
+        ]
+    ],
+    "pageTitle": "Patent US7916717 - Automated gateway routing, incoming and outgoing - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7916717?dq=7,633,076",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00006-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 497406711,
+    "recordOffset": 497388315,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6364=The gatekeeper 503 then checks its Wildcard Forwarding Table (an example of which is shown in FIG. 3) for a rule that matches the input number. If a matching rule is located, the input number is then manipulated. In this example the gatekeeper 503 locates a rule for input numbers beginning with 1 instructing the gatekeeper 503 to manipulate the number as follows: 12125551234->58#2125551234 where 58# is a service prefix for a dynamic mode gateway call. Once the service prefix is appended to the input number, the call is processed in the fashion described above with respect to the prior art.}",
+    "TableContextTimeStampAfterTable": "{48814=In this embodiment, a user initiates a videoconference call from a first IP based endpoint 501. While the call is depicted as a 384 kbps gateway call, the connection speed is not a critical factor, various embodiments can use any of a plurality of different connection speeds. In this example the videoconference call is initiated by dialing 12125551234. Again, while a standard telephone number is used in this example, the invention is not dependant on the standard used., 26325=This application claims the priority of previously filed U.S. Provisional Patent Application No. 60/540,009 filed on Jan. 30, 2004 which is herein incorporated in its entirety by reference., 49327=When the number is dialed, the first endpoint 501 transmits an ARQ to the gatekeeper 503; the gatekeeper 503 confirms that the first endpoint 501 is registered and returns an ACF to the first endpoint 501 and the call proceeds. The gatekeeper 503 receives signaling data from the first endpoint 501 which includes the input number, 12125551234. In this example the signaling data is in a Q.931 format, however, the format of the data is not critical to the practice of the invention.}",
+    "textBeforeTable": "Patent Citations ) for a rule that matches the dialed number. In this example, the gatekeeper 601 locates a rule for input numbers beginning with 011 an manipulates the input number as follows: 011472073900->5911#00442073900 where 5911# is a service prefix for a dynamic mode international gateway call. Once the number is manipulated, the call proceeds as shown above with respect to the prior art. FIG. 3 In this embodiment, the first endpoint 601 transmits an ARQ to the gatekeeper 503; the gatekeeper 603 then confirms that the first endpoint 601 is registered and returns an ACF to the first endpoint 601 and the call proceeds. The gatekeeper 601 receives signaling data including the dialed number, in this case 011 44 207 3900 from the first endpoint 601. The gatekeeper 601 then checks its Wildcard Forwarding Table (shown in an example of a call flow between an IP based endpoint and an international ISDN based endpoint using a call forwarding table according to an aspect of the present invention. In this illustrative embodiment a user initiates a videoconference call from a first IP based endpoint 601 to a second ISDN based endpoint 602 which is located in the UK. Once again, while this example depicts a connection speed of 384 kbps, the speed is not critical to the practice of the invention. In this example, the user initiates the call by inputting the number 011",
+    "textAfterTable": "Description Apr 27, 2005 AS Assignment Owner name: GLOWPOINT, INC., NEW JERSEY Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:MORRIS, STUART;REEL/FRAME:016173/0797 Effective date: 20040324 Jun 22, 2010 AS Assignment Owner name: SILICON VALLEY BANK,CALIFORNIA Free format text: SECURITY AGREEMENT;ASSIGNOR:GLOWPOINT, INC.;REEL/FRAME:024576/0239 Effective date: 20100616 Owner name: SILICON VALLEY BANK, CALIFORNIA Free format text: SECURITY AGREEMENT;ASSIGNOR:GLOWPOINT, INC.;REEL/FRAME:024576/0239 Effective date: 20100616 Oct 1, 2012 AS Assignment Owner name: COMERICA BANK, MICHIGAN Free format text: SECURITY AGREEMENT;ASSIGNOR:GLOWPOINT, INC.;REEL/FRAME:029062/0960 Effective date: 20121001 Oct 2, 2012 AS Assignment Owner name: GLOWPOINT, INC., NEW JERSEY Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:SILICON VALLEY BANK;REEL/FRAME:029059/0163 Effective date: 20121001 Oct 3, 2012 AS Assignment",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

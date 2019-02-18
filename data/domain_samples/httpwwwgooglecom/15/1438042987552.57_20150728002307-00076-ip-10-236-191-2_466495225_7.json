@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US8150266 *",
+            "US8943255 *",
+            "US8973074",
+            "US9081891 *",
+            "US20130326106 *",
+            "US20140040528 *",
+            "US20150067208 *",
+            "WO2013097228A1 *"
+        ],
+        [
+            "Filing date",
+            "Sep 12, 2003",
+            "May 29, 2012",
+            "May 9, 2011",
+            "Jul 31, 2012",
+            "May 29, 2012",
+            "Jul 31, 2012",
+            "Nov 12, 2014",
+            "Dec 31, 2011"
+        ],
+        [
+            "Publication date",
+            "Apr 3, 2012",
+            "Jan 27, 2015",
+            "Mar 3, 2015",
+            "Jul 14, 2015",
+            "Dec 5, 2013",
+            "Feb 6, 2014",
+            "Mar 5, 2015",
+            "Jul 4, 2013"
+        ],
+        [
+            "Applicant",
+            "Oracle America, Inc.",
+            "Lsi Corporation",
+            "Samsung Electronics Co., Ltd.",
+            "Hewlett-Packard Development Company, L.P.",
+            "Lsi Corporation",
+            "Jichuan Chang",
+            "Intel Corporation",
+            "Institute Of Automation,Chinese Academy Of Sciences"
+        ],
+        [
+            "Title",
+            "Method and apparatus for performing butterfly differential signaling",
+            "Methods and structure for accounting for connection resets between peripheral component interconnect express bridges and host devices",
+            "Method and system for isochronous communication in audio/video networks",
+            "Reconfigurable crossbar networks",
+            "Methods and structure for accounting for connection resets between peripheral component interconnect express bridges and host devices",
+            "Reconfigurable crossbar networks",
+            "High performance interconnect physical layer",
+            "Multi-granularity parallel storage system"
+        ]
+    ],
+    "pageTitle": "Patent US7802049 - Links having flexible lane allocation - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7802049?dq=4316055",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987552.57/warc/CC-MAIN-20150728002307-00076-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 466528819,
+    "recordOffset": 466495225,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{54473=The decoders 118 1 . . . 118 X and encoders 120 1 . . . 120 X may implement the well known 8b/10b encoding scheme which is described in PCI Express Base Specification, Revision 1.0, Jul. 22, 2002 and may respectively implement scramblers and descramblers. Generally, in such an encoding scheme, the decoders 118 1 . . . 118 X decode 10 bit symbols received from the port receivers 114 1 . . . 114 X to obtain 8 bit data units, and the encoders 120 1 . . . 120 X encode 8 bit data units to obtain 10 bit symbols to be serially transmitted by the port transmitters 116 1 . . . 116 X. Further, the encoders 120 1 . . . . 120 X may scramble the 10 bit symbols to effectively spread the transfer across a frequency spectrum to reduce generated interference, and the decoders 118 1 . . . 118 X may descramble the transmitted data units to obtain the 10 bit data symbols. Other embodiments of the root device may use a different encoding/decoding scheme or may transfer data units without encoding and/or scrambling. One advantage of the 8b/10b encoding scheme is that a clock signal is effectively embedded in the symbol transmission, thus allowing symbols to be transferred without one or more separate clock signal lines between the transmitter and receiver of the symbols., 40160=PCI (Peripheral Component Interconnect) Express is a high performance, general purpose I/O Interconnect defined for a wide variety of future computing and communication platforms. PCI Express maintains key PCI attributes, such as its usage model, load-store architecture, and software interfaces. PCI Express supports links between chips that may comprise x1, x2, x4, x8, x12, x16, or x32 lanes, and requires chips to support at least x1 links leaving chips to optionally support the other link widths. Further, PCI Express requires port interconnections between chips to be matched with some limited reordering. For example, chip A may support a x4 link using its ports 1-4, and chip B may support a x4 link using its ports 1-4. To create a x4 link between chip A and chip B, chip A ports 1-4 may be coupled respectively to chip B ports 1-4. PCI Express also indicates devices may optionally support lane reversal which allows for example chip A ports 1-4 to be respectively coupled to chip B ports 4-1. For further information regarding PCI Express, refer to PCI Express Base Specification Revision 1.0, Jul. 22, 2002 which may by obtained from the PCI-SIG at http://www.pcisig.org.}",
+    "textBeforeTable": "Patent Citations While certain features of the invention have been described with reference to example embodiments, the description is not intended to be construed in a limiting sense. Various modifications of the example embodiments, as well as other embodiments of the invention, which are apparent to persons skilled in the art to which the invention pertains are deemed to lie within the spirit and scope of the invention. Further, the use of the terms \u201cfirst\u201d, \u201csecond\u201d, \u201cthird\u201d etc. in the appended claims merely provide labels to distinguish between elements and are not intended to import an ordering of such elements. At this point, port identification is complete and lanes of the links between the DEVICES 0-5 are defined. In particular, LINK 1 consists of three lanes, LINK 2 consists of two lane, LINK 3 consists of two lanes, LINK 4 consists of one lane, and LINK 5 consists of one lane. The above embodiments enable a system designer to route signal lines between ports with minimal limitations imposed by the location of the device ports. In general, the system designer may simply interconnect ports in a manner that eases physical routing and allow the port identification methods of the devices discover/identify the port connections. Further, the port identification methods provide the system designer with fine grain control of bandwidth between devices by allowing the system designer to assign lanes to links on a per lane basis.",
+    "textAfterTable": "US5838681 * Jan 24, 1996 Nov 17, 1998 Bonomi; Flavio Dynamic allocation of port bandwidth in high speed packet-switched digital switching systems US6138185 * Oct 29, 1998 Oct 24, 2000 Mcdata Corporation High performance crossbar switch US6145024 * Jun 1, 1998 Nov 7, 2000 Hitachi, Ltd. Input/output optical fiber serial interface link that selectively transfers data in multiplex channel path mode or high speed single channel path mode US6317804 * Nov 30, 1998 Nov 13, 2001 Philips Semiconductors Inc. Concurrent serial interconnect for integrating functional blocks in an integrated circuit device US6501761 * Feb 25, 1999 Dec 31, 2002 Fairchild Semiconductor Corporation Modular network switch with peer-to-peer address mapping communication US6549540 * Mar 15, 1999 Apr 15, 2003 Sun Microsystems, Inc. Method and apparatus for bundling serial data transmission links to obtain increased data throughput US6611518 * Sep 18,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

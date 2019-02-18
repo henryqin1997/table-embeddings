@@ -1,0 +1,69 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Nov 13, 1991",
+            "Sep 12, 1997",
+            "Jan 5, 1998",
+            "Aug 28, 1998",
+            "Mar 12, 2002",
+            "Apr 12, 2002",
+            "Apr 12, 2002",
+            "Mar 21, 2005",
+            "Oct 5, 2005"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS",
+            "REMI",
+            "SULP",
+            "FPAY",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Surcharge for late payment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: HASHIMOTO CORPORATION Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNOR:HASHIMOTO, KAZUO;REEL/FRAME:005906/0864 Effective date: 19911021",
+            "Year of fee payment: 4",
+            "Owner name: PHONETEL COMMUNICATIONS, INC., TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:HASHIMOTO CORPORATION;REEL/FRAME:008876/0861 Effective date: 19971230",
+            "Owner name: PHONETEL COMMUNICATIONS, INC., TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:HASHIMOTO CORPORATION;REEL/FRAME:009414/0148 Effective date: 19980817",
+            "",
+            "Year of fee payment: 7",
+            "Year of fee payment: 8",
+            "",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US5341411 - Caller ID blocking method and processing system (block caller ID information) - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5341411?dq=7,177,838",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988399.65/warc/CC-MAIN-20150728002308-00252-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 464836775,
+    "recordOffset": 464817640,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{27940=Numeral 12 refers to a one-chip microprocessor CPU, containing a RAM for memorizing information of a caller's telephone number, and a ROM in which a program is stored. INT is an interruption terminal. I-1-I-4 are input ports. O-1 and O-2 are output ports. The output of the aforementioned photo transistor is applied to the input port I-1, and the program detects whether or not a ringing signal is being applied. 13 is an amplification circuit for amplifying an FSK signal which forms information of the telephone number. The output of the amplifying circuit 13 is input to FSK demodulator 16, for instance, IC chip XR-2211, after being shaped by a waveform shaper 14. The output of the carrier signal is applied to the input port I-3 and output of data are applied to the input port I-2. At this moment, the FSK signal is usually composed of two waves, such as 1200 Hz and 2200 Hz. In the case of 1200 Hz, data becomes \"1.\" On the other hand, in the case of 2200 Hz, data becomes \"0\". Therefore, when any one of 1200 Hz and 2200 Hz is applied, output of the aforementioned carrier signal is \"1.\", 23067=A caller ID telephone service system was developed in New Jersey, U.S.A. and was very successful. This system is fundamentally covered by U.S. Pat. No. Re. 31789 (Hashimoto Patent) and U.S. Pat. No. 4,551,581 (Doughty Patent)., 32668=If a caller is registered at the central office managing the switch-board 3 for receiving a service of blocking transmission of information of the caller's telephone number, the caller is given a key number, for instance \"#1234,\" which enables him to block transmission of information of the telephone number. If the caller dials the key number prior to dialing the telephone number of a called party, the key number is recognized by the switch-board 3 and therefore information of the caller's telephone number is not transmitted to the called party (t10-t11 in FIG. 2B).}",
+    "textBeforeTable": "Patent Citations Consequently, the present invention has great advantages for protecting the privacy of the calling party in Caller ID network. As stated above, owing to the invention, if the blocking operation is not actuated, the telephone number of the calling party is displayed, whereas if the blocking operation is actuated, the telephone number of the calling party is not displayed. Moreover, the present invention provides means to enable to stop ringing successively after the bell of a telephone set rings once and to detect a ringing signal by a telephone answering device even though the bell of the telephone set does not ring. However, as ringing signals continuously come in through the telephone line, the TAD, directly connected to the telephone line, initiates operation after the bell rings three times. The outgoing message is transmitted and the incoming message of the caller is recorded on the TAD. When the TAD operates, the telephone lines are engaged and no more ringing signal is transmitted from the central office thereafter. Thereafter, the flowchart returns to Step 31 via the aforementioned Step 41 to 43. In Step 31, the relay Y-1 stated above is disengaged. When the relay Y-1 is restored at t15 in FIG. 2B, the telephone set 7 is connected to the telephone line. Therefore, if the telephone set 7 is set off-hook, a conversation can be held with the caller. Therefore, in the case stated above, a",
+    "textAfterTable": "Filing date Publication date Applicant Title US5533106 * Jun 27, 1994 Jul 2, 1996 Us West Technologies, Inc. Method and system for processing calls wherein the display of calling party ID information has been inhibited US5588049 * Jan 25, 1993 Dec 24, 1996 Detering; Greig R. Method for the automatic insertion of removal of a calling number identification (CNID) blocking prefix from within a telephone number in a personal computer based telephone management system US5590184 * Mar 3, 1995 Dec 31, 1996 Lucent Technologies Inc. Communications privacy protection system by replacing calling party number with non-assigned number US5689551 * Oct 17, 1995 Nov 18, 1997 Thomson Consumer Electronics, Inc. Caller ID system with prescaler US5719931 * Oct 27, 1995 Feb 17, 1998 Lucent Technologies Inc. Access code dialing apparatus and method US5781613 * Jun 17, 1996 Jul 14, 1998 Casio Phonemate, Inc.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}
