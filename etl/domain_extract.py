@@ -1,6 +1,5 @@
 import json
 import os.path
-from collections import defaultdict
 from shutil import copyfile
 from urllib.parse import urlparse
 
