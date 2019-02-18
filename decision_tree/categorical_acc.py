@@ -14,10 +14,10 @@ def cal_accuracy():
 
     categorical_acc = defaultdict(lambda: [0,0,0])
 
-    pre_acc = 0
-    sum = 0
-    sum_no_other = 0
-    acc_no_other = 0
+    # pre_acc = 0
+    # sum = 0
+    # sum_no_other = 0
+    # acc_no_other = 0
 
     for key in dic_no_cut.keys():
         max = 0
@@ -45,8 +45,8 @@ def cal_accuracy():
         cat_max = maxlabel.split(',')
 
         for label in dic_no_cut[key].keys():
-            pre_acc += dic_no_cut[key][label] * correct_pred(maxlabel, label)
-            acc_no_other += dic_no_cut[key][label] * correct_pred_no_other(maxlabel, label)
+            # pre_acc += dic_no_cut[key][label] * correct_pred(maxlabel, label)
+            # acc_no_other += dic_no_cut[key][label] * correct_pred_no_other(maxlabel, label)
             cats=label.split(',')
             for i,cat in enumerate(cats):
                 if cat != '-1':
