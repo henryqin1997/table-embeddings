@@ -43,8 +43,11 @@ class LSTMTagger(nn.Module):
 
 if __name__ == '__main__':
     load_inputs, load_targets = load_data_domain_sample(10, batch_index=0)
-    print(load_inputs[0])
-    print(load_targets[0])
+    training_data = []
+    for input, target in zip(load_inputs, load_targets):
+        training_data.append((torch.from_numpy(np.array(input)[np.array(input) > -1]),
+                              torch.from_numpy(np.array(target)[np.array(target) > -1])))
+    print(training_data[0])
 
     # These will usually be more like 32 or 64 dimensional.
     EMBEDDING_DIM = 6
@@ -55,29 +58,23 @@ if __name__ == '__main__':
     optimizer = optim.SGD(model.parameters(), lr=0.1)
 
     for epoch in range(300):
-        for sentence, tags in zip(load_inputs, load_targets):
+        for input, target in training_data:
             model.zero_grad()
 
             # Clear out the hidden state of the LSTM,
             # detaching it from its history on the last instance.
             model.hidden = model.init_hidden()
 
-            # Get inputs ready for the network
-            sentence_in = torch.from_numpy(np.array(sentence)[np.array(sentence) > -1])
-            targets = torch.from_numpy(np.array(tags)[np.array(tags) > -1])
-
             # Run forward pass.
-            tag_scores = model(sentence_in)
+            tag_scores = model(input)
 
             # Compute the loss, gradients, and update the parameters
-            loss = loss_function(tag_scores, targets)
+            loss = loss_function(tag_scores, target)
             loss.backward()
             optimizer.step()
 
     with torch.no_grad():
-        inputs = load_inputs[0]
-        inputs = inputs[inputs > -1]
-        tag_scores = model(torch.from_numpy(np.array(inputs)))
+        tag_scores = model(training_data[0][0])
 
         print(tag_scores)
         print(torch.argmax(tag_scores, dim=1))
