@@ -149,7 +149,7 @@ if __name__ == "__main__":
 
         # Save state
         json.dump(train_states, open("lstm/train_states.json", "w+"), indent=4)
-        plot_performance(*[[train_state[i] for train_state in train_states] for i in range(4)])
+        plot_performance(*[[train_state[i] for train_state in train_states] for i in range(1, 5)])
 
     model.eval()
     with torch.no_grad():
