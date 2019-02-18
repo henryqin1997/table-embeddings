@@ -18,9 +18,9 @@ batch_size = 50
 num_batches = int(12000 / batch_size)
 train_size = 10000
 test_size = 2000
-learning_rate = 0.01
-embedding_dim = 64
-hidden_dim = 64
+learning_rate = 0.1
+embedding_dim = 8
+hidden_dim = 8
 
 
 class LSTMTagger(nn.Module):
