@@ -10,7 +10,7 @@ from .load import load_data, load_data_domain_sample
 
 torch.manual_seed(1)
 
-device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 num_features = 2048
 num_labels = 3334
 num_epochs = 100
@@ -68,12 +68,12 @@ def compute_accuracy(predicted, correct, no_other=True, other_index=3333):
     return (predicted == correct).sum().item() / len(correct)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     inputs = np.array([], dtype=np.int64).reshape(0, 10)
     targets = np.array([], dtype=np.int64).reshape(0, 10)
 
     for batch_index in range(num_batches):
-        print('Load batch {}'.format(batch_index + 1))
+        print("Load batch {}".format(batch_index + 1))
         load_inputs, load_targets = load_data_domain_sample(batch_size, batch_index)
         inputs = np.concatenate((inputs, load_inputs), axis=0)
         targets = np.concatenate((targets, load_targets), axis=0)
@@ -142,7 +142,7 @@ if __name__ == '__main__':
         train_state += [running_loss.item(), running_acc]
 
         print(
-            '[EPOCH]: {} | [TRAIN LOSS]: {:.4f} | [TRAIN ACC]: {:.4f} | [VAL LOSS]: {:.4f} | [VAL ACC]: {:.4f}'.format(
+            "[EPOCH]: {} | [TRAIN LOSS]: {:.4f} | [TRAIN ACC]: {:.4f} | [VAL LOSS]: {:.4f} | [VAL ACC]: {:.4f}".format(
                 *train_state))
         train_states.append(train_state)
 
@@ -154,25 +154,25 @@ if __name__ == '__main__':
         predicted = torch.cat(predicted)
         correct = torch.cat(correct)
 
-        print('Validation accuracy: {}'.format(compute_accuracy(predicted, correct)))
+        print("Validation accuracy: {}".format(compute_accuracy(predicted, correct)))
 
-    json.dump(train_states, open('lstm/train_states.json', 'w+'), indent=4)
+    json.dump(train_states, open("lstm/train_states.json", "w+"), indent=4)
 
     plt.figure(figsize=(15, 5))
 
     # Plot Loss
     plt.subplot(1, 2, 1)
-    plt.title('Loss')
-    plt.plot([train_state[1] for train_state in train_states], label='train')
-    plt.plot([train_state[3] for train_state in train_states], label='val')
-    plt.legend(loc='upper right')
+    plt.title("Loss")
+    plt.plot([train_state[1] for train_state in train_states], label="train")
+    plt.plot([train_state[3] for train_state in train_states], label="val")
+    plt.legend(loc="upper right")
 
     # Plot Accuracy
     plt.subplot(1, 2, 2)
-    plt.title('Accuracy')
-    plt.plot([train_state[2] for train_state in train_states], label='train')
-    plt.plot([train_state[4] for train_state in train_states], label='val')
-    plt.legend(loc='lower right')
+    plt.title("Accuracy")
+    plt.plot([train_state[2] for train_state in train_states], label="train")
+    plt.plot([train_state[4] for train_state in train_states], label="val")
+    plt.legend(loc="lower right")
 
     # Save figure
-    plt.savefig('lstm/performance.png')
+    plt.savefig("lstm/performance.png")
