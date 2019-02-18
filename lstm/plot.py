@@ -54,9 +54,12 @@ if __name__ == '__main__':
 [EPOCH]: 25 | [TRAIN LOSS]: 1.8425 | [TRAIN ACC]: 0.5331 | [VAL LOSS]: 5.6417 | [VAL ACC]: 0.1274
 [EPOCH]: 26 | [TRAIN LOSS]: 1.8342 | [TRAIN ACC]: 0.5343 | [VAL LOSS]: 5.6690 | [VAL ACC]: 0.1273
 [EPOCH]: 27 | [TRAIN LOSS]: 1.8260 | [TRAIN ACC]: 0.5357 | [VAL LOSS]: 5.6901 | [VAL ACC]: 0.1257
+[EPOCH]: 28 | [TRAIN LOSS]: 1.8185 | [TRAIN ACC]: 0.5369 | [VAL LOSS]: 5.7006 | [VAL ACC]: 0.1253
+[EPOCH]: 29 | [TRAIN LOSS]: 1.8113 | [TRAIN ACC]: 0.5381 | [VAL LOSS]: 5.7298 | [VAL ACC]: 0.1258
+[EPOCH]: 30 | [TRAIN LOSS]: 1.8051 | [TRAIN ACC]: 0.5391 | [VAL LOSS]: 5.7388 | [VAL ACC]: 0.1249
+[EPOCH]: 31 | [TRAIN LOSS]: 1.7988 | [TRAIN ACC]: 0.5401 | [VAL LOSS]: 5.7535 | [VAL ACC]: 0.1248
 '''
     train_states = re.findall(
         r'\[EPOCH\]: \d+ \| \[TRAIN LOSS\]: ([0-9.]+) \| \[TRAIN ACC\]: ([0-9.]+) \| \[VAL LOSS\]: ([0-9.]+) \| \[VAL ACC\]: ([0-9.]+)',
         input)
-    print(train_states)
     plot_performance(*[[float(train_state[i]) for train_state in train_states] for i in range(4)])
