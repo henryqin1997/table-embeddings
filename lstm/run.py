@@ -14,7 +14,7 @@ num_features = 2048
 num_labels = 3334
 num_epochs = 300
 batch_size = 50
-num_batches = int(1000 / batch_size)
+num_batches = int(100 / batch_size)
 learning_rate = 0.1
 
 
@@ -39,8 +39,8 @@ class LSTMTagger(nn.Module):
         # Refer to the Pytorch documentation to see exactly
         # why they have this dimensionality.
         # The axes semantics are (num_layers, minibatch_size, hidden_dim)
-        return (torch.zeros(1, 1, self.hidden_dim),
-                torch.zeros(1, 1, self.hidden_dim))
+        return (torch.zeros(1, 1, self.hidden_dim).to(device),
+                torch.zeros(1, 1, self.hidden_dim).to(device))
 
     def forward(self, sentence):
         embeds = self.word_embeddings(sentence)
