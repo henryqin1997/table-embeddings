@@ -6,7 +6,8 @@ import torch.utils.data
 import numpy as np
 import json
 import matplotlib as mpl
-mpl.use('TkAgg')
+
+mpl.use('Agg')
 from matplotlib import pyplot as plt
 from .load import load_data, load_data_domain_sample
 
@@ -95,7 +96,7 @@ if __name__ == "__main__":
 
     train_states = []
     for epoch in range(num_epochs):
-        train_state = [epoch]
+        train_state = [epoch + 1]
         model.train()
         running_loss = 0.0
         running_acc = 0.0
