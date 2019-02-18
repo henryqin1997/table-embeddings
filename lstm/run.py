@@ -14,9 +14,11 @@ num_labels = 3334
 num_epochs = 300
 batch_size = 50
 num_batches = int(103000 / batch_size)
-learning_rate = 0.01
 train_size = 100000
 test_size = 3000
+learning_rate = 0.01
+embedding_dim = 32
+hidden_dim = 32
 
 
 class LSTMTagger(nn.Module):
@@ -79,11 +81,7 @@ if __name__ == '__main__':
 
     train_dataset, test_dataset = torch.utils.data.random_split(dataset, [train_size, test_size])
 
-    # These will usually be more like 32 or 64 dimensional.
-    EMBEDDING_DIM = 32
-    HIDDEN_DIM = 32
-
-    model = LSTMTagger(EMBEDDING_DIM, HIDDEN_DIM, num_features, num_labels).to(device)
+    model = LSTMTagger(embedding_dim, hidden_dim, num_features, num_labels).to(device)
     loss_function = nn.NLLLoss()
     optimizer = optim.SGD(model.parameters(), lr=learning_rate)
 
