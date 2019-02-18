@@ -11,11 +11,11 @@ torch.manual_seed(1)
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 num_features = 2048
 num_labels = 3334
-num_epochs = 300
+num_epochs = 100
 batch_size = 50
-num_batches = int(103000 / batch_size)
-train_size = 100000
-test_size = 3000
+num_batches = int(2000 / batch_size)
+train_size = 1600
+test_size = 400
 learning_rate = 0.01
 embedding_dim = 32
 hidden_dim = 32
@@ -70,7 +70,7 @@ if __name__ == '__main__':
 
     for batch_index in range(num_batches):
         print('Load batch {}'.format(batch_index + 1))
-        load_inputs, load_targets = load_data(batch_size, batch_index)
+        load_inputs, load_targets = load_data_domain_sample(batch_size, batch_index)
         inputs = np.concatenate((inputs, load_inputs), axis=0)
         targets = np.concatenate((targets, load_targets), axis=0)
 

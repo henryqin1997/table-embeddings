@@ -11,8 +11,8 @@ training_files = json.load(open(training_files_json))
 training_data_100_sample_dir = 'data/train_100_sample'
 training_files_100_sample_json = 'data/training_files_100_sample.json'
 training_files_100_sample = json.load(open(training_files_100_sample_json))
-training_data_domain_sample_dir = 'data/domain_samples/httpwwwusmsorg'
-training_files_domain_sample_json = 'data/domains/httpwwwusmsorg.json'
+training_data_domain_sample_dir = 'data/domain_samples/googlecom'
+training_files_domain_sample_json = 'data/domains/googlecom.json'
 training_files_domain_sample = json.load(open(training_files_domain_sample_json))
 
 tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2}
