@@ -6,7 +6,6 @@ from urllib.parse import urlparse
 domain = 'http://www.usms.org/'
 
 files = json.load(open('data/training_files.json'))
-url_dict = defaultdict(int)
 results = []
 
 for file in files:
@@ -17,4 +16,4 @@ for file in files:
         if result == domain:
             results.append(file)
 
-json.dump(url_dict, open('data/domains/{}.json'.format(''.join(x for x in domain if x.isalnum())), 'w+'), indent=4)
+json.dump(results, open('data/domains/{}.json'.format(''.join(x for x in domain if x.isalnum())), 'w+'), indent=4)
