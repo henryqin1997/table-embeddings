@@ -5,6 +5,8 @@ import torch.optim as optim
 import torch.utils.data
 import numpy as np
 import json
+import matplotlib as mpl
+mpl.use('TkAgg')
 from matplotlib import pyplot as plt
 from .load import load_data, load_data_domain_sample
 
