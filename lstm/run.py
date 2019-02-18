@@ -63,7 +63,7 @@ def compute_accuracy(predicted, correct, no_other=True, other_index=3333):
         predicted = predicted[no_other_index]
         correct = correct[no_other_index]
         if len(correct) == 0:
-            return 1.0
+            return np.nan
 
     return (predicted == correct).sum().item() / len(correct)
 
@@ -117,6 +117,7 @@ if __name__ == "__main__":
 
             # Compute the train accuracy
             acc = compute_accuracy(torch.argmax(tag_scores, dim=1), target)
+            acc = running_acc if np.isnan(acc) else acc
             running_acc += (acc - running_acc) / (batch_index + 1)
 
         train_state += [running_loss.item(), running_acc]
@@ -136,6 +137,7 @@ if __name__ == "__main__":
 
             # Compute the validation accuracy
             acc = compute_accuracy(torch.argmax(tag_scores, dim=1), target)
+            acc = running_acc if np.isnan(acc) else acc
             running_acc += (acc - running_acc) / (batch_index + 1)
 
         train_state += [running_loss.item(), running_acc]
