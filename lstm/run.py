@@ -9,13 +9,12 @@ from .load import load_data, load_data_domain_sample
 torch.manual_seed(1)
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-print(device)
 num_features = 2048
 num_labels = 3334
 num_epochs = 300
 batch_size = 50
-num_batches = int(100 / batch_size)
-learning_rate = 0.1
+num_batches = int(1000 / batch_size)
+learning_rate = 0.01
 
 
 class LSTMTagger(nn.Module):
@@ -108,7 +107,7 @@ if __name__ == '__main__':
             loss.backward()
             optimizer.step()
 
-            if (i + 1) % 10 == 0:
+            if (i + 1) % 100 == 0:
                 print('Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}'
                       .format(epoch + 1, num_epochs, i + 1, total_step, loss.item()))
 
