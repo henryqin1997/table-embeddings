@@ -82,8 +82,7 @@ if __name__ == "__main__":
     for input, target in zip(inputs, targets):
         input = torch.from_numpy(np.array(input)[np.array(input) > -1])
         target = torch.from_numpy(np.array(target)[np.array(target) > -1])
-        if len(input) > 0 and len(target) > 0:
-            dataset.append((input, target))
+        dataset.append((input, target))
 
     train_dataset, test_dataset = torch.utils.data.random_split(dataset, [train_size, test_size])
 
