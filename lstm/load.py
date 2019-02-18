@@ -14,7 +14,7 @@ training_files_100_sample = json.load(open(training_files_100_sample_json))
 training_data_domain_sample_dir = 'data/domain_samples/googlecom'
 training_files_domain_sample_json = 'data/domains/googlecom.json'
 training_files_domain_sample = json.load(open(training_files_domain_sample_json))
-training_data_domain_schemas_dir = 'data/domain_schemas'
+training_data_domain_schemas_dir = 'data/domain_schema_files'
 training_files_domain_schemas_json = 'data/domain_schema_files_dict.json'
 training_files_domain_schemas = list(json.load(open(training_files_domain_schemas_json)).values())
 
