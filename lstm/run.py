@@ -5,7 +5,7 @@ import torch.optim as optim
 import torch.utils.data
 import numpy as np
 import json
-from .load import load_data, load_data_domain_sample, load_data_domain_schemas
+from .load import load_data_domain_schemas as load_data
 from .plot import plot_performance
 
 torch.manual_seed(1)
@@ -19,8 +19,8 @@ num_batches = int(12000 / batch_size)
 train_size = 10000
 test_size = 2000
 learning_rate = 0.1
-embedding_dim = 8
-hidden_dim = 8
+embedding_dim = 64
+hidden_dim = 64
 
 
 class LSTMTagger(nn.Module):
@@ -74,7 +74,7 @@ if __name__ == "__main__":
 
     for batch_index in range(num_batches):
         print("Load batch {}".format(batch_index + 1))
-        load_inputs, load_targets = load_data_domain_schemas(batch_size, batch_index)
+        load_inputs, load_targets = load_data(batch_size, batch_index)
         inputs = np.concatenate((inputs, load_inputs), axis=0)
         targets = np.concatenate((targets, load_targets), axis=0)
 
