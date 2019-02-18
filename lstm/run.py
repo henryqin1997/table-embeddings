@@ -13,8 +13,10 @@ num_features = 2048
 num_labels = 3334
 num_epochs = 300
 batch_size = 50
-num_batches = int(1000 / batch_size)
+num_batches = int(103000 / batch_size)
 learning_rate = 0.01
+train_size = 100000
+test_size = 3000
 
 
 class LSTMTagger(nn.Module):
@@ -66,7 +68,7 @@ if __name__ == '__main__':
 
     for batch_index in range(num_batches):
         print('Load batch {}'.format(batch_index + 1))
-        load_inputs, load_targets = load_data_domain_sample(batch_size, batch_index)
+        load_inputs, load_targets = load_data(batch_size, batch_index)
         inputs = np.concatenate((inputs, load_inputs), axis=0)
         targets = np.concatenate((targets, load_targets), axis=0)
 
@@ -75,8 +77,6 @@ if __name__ == '__main__':
         dataset.append((torch.from_numpy(np.array(input)[np.array(input) > -1]),
                         torch.from_numpy(np.array(target)[np.array(target) > -1])))
 
-    train_size = int(0.8 * len(dataset))
-    test_size = len(dataset) - train_size
     train_dataset, test_dataset = torch.utils.data.random_split(dataset, [train_size, test_size])
 
     # These will usually be more like 32 or 64 dimensional.
