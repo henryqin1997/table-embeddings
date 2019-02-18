@@ -115,7 +115,7 @@ if __name__ == '__main__':
     model.eval()
     with torch.no_grad():
         predicted = [torch.argmax(model(input.to(device)), dim=1) for input, target in test_dataset]
-        correct = [target for input, target in test_dataset]
+        correct = [target.to(device) for input, target in test_dataset]
 
         predicted = torch.cat(predicted)
         correct = torch.cat(correct)
