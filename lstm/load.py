@@ -14,6 +14,9 @@ training_files_100_sample = json.load(open(training_files_100_sample_json))
 training_data_domain_sample_dir = 'data/domain_samples/googlecom'
 training_files_domain_sample_json = 'data/domains/googlecom.json'
 training_files_domain_sample = json.load(open(training_files_domain_sample_json))
+training_data_domain_schemas_dir = 'data/domain_schemas'
+training_files_domain_schemas_json = 'data/domain_schema_files_dict.json'
+training_files_domain_schemas = json.load(open(training_files_domain_schemas_json)).values()
 
 tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2}
 
@@ -122,14 +125,20 @@ def load_data(batch_size, batch_index=0, training_data_dir=training_data_dir, tr
 
 def load_data_100_sample(batch_size, batch_index=0):
     return load_data(batch_size, batch_index=batch_index,
-              training_data_dir=training_data_100_sample_dir,
-              training_files=training_files_100_sample)
+                     training_data_dir=training_data_100_sample_dir,
+                     training_files=training_files_100_sample)
 
 
 def load_data_domain_sample(batch_size, batch_index=0):
     return load_data(batch_size, batch_index=batch_index,
-              training_data_dir=training_data_domain_sample_dir,
-              training_files=training_files_domain_sample)
+                     training_data_dir=training_data_domain_sample_dir,
+                     training_files=training_files_domain_sample)
+
+
+def load_data_domain_schemas(batch_size, batch_index=0):
+    return load_data(batch_size, batch_index=batch_index,
+                     training_data_dir=training_data_domain_schemas_dir,
+                     training_files=training_files_domain_schemas)
 
 
 def index_of(l, n):
