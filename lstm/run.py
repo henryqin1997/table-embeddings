@@ -8,6 +8,11 @@ from .load import load_data, load_data_domain_sample
 
 torch.manual_seed(1)
 
+device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+num_epochs = 300
+batch_size = 50
+learning_rate = 0.1
+
 
 class LSTMTagger(nn.Module):
 
@@ -49,17 +54,16 @@ def calculate_accuracy(predicted, correct, no_other=True, other_index=3333):
         predicted = predicted[no_other_index]
         correct = correct[no_other_index]
 
-    return int((predicted == correct).sum()) / len(correct)
+    return (predicted == correct).sum().item() / len(correct)
 
 
 if __name__ == '__main__':
     inputs = np.array([], dtype=np.int64).reshape(0, 10)
     targets = np.array([], dtype=np.int64).reshape(0, 10)
 
-    batch_size = 50
     batch_index = 0
 
-    while batch_size * batch_index < 1000:
+    while batch_size * batch_index < 100:
         print('Load batch {}'.format(batch_index))
         load_inputs, load_targets = load_data_domain_sample(batch_size, batch_index)
         inputs = np.concatenate((inputs, load_inputs), axis=0)
@@ -73,7 +77,15 @@ if __name__ == '__main__':
 
     train_size = int(0.8 * len(dataset))
     test_size = len(dataset) - train_size
-    training_data, testing_data = torch.utils.data.random_split(dataset, [train_size, test_size])
+    train_dataset, test_dataset = torch.utils.data.random_split(dataset, [train_size, test_size])
+
+    # train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
+    #                                            batch_size=batch_size,
+    #                                            shuffle=False)
+    #
+    # test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
+    #                                           batch_size=batch_size,
+    #                                           shuffle=False)
 
     # These will usually be more like 32 or 64 dimensional.
     EMBEDDING_DIM = 32
@@ -81,11 +93,11 @@ if __name__ == '__main__':
 
     model = LSTMTagger(EMBEDDING_DIM, HIDDEN_DIM, 2048, 3334)
     loss_function = nn.NLLLoss()
-    optimizer = optim.SGD(model.parameters(), lr=0.1)
+    optimizer = optim.SGD(model.parameters(), lr=learning_rate)
 
-    for epoch in range(300):
-        print('Epoch {}'.format(epoch))
-        for input, target in training_data:
+    total_step = len(train_dataset)
+    for epoch in range(num_epochs):
+        for i, (input, target) in enumerate(train_dataset):
             model.zero_grad()
 
             # Clear out the hidden state of the LSTM,
@@ -100,12 +112,16 @@ if __name__ == '__main__':
             loss.backward()
             optimizer.step()
 
+            if (i + 1) % 10 == 0:
+                print('Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}'
+                      .format(epoch + 1, num_epochs, i + 1, total_step, loss.item()))
+
+    model.eval()
     with torch.no_grad():
-        for dataset, stage in zip([training_data, testing_data], ['Train', 'Validation']):
-            predicted = [torch.argmax(model(input), dim=1) for input, target in dataset]
-            correct = [target for input, target in dataset]
+        predicted = [torch.argmax(model(input), dim=1) for input, target in test_dataset]
+        correct = [target for input, target in test_dataset]
 
-            predicted = torch.cat(predicted)
-            correct = torch.cat(correct)
+        predicted = torch.cat(predicted)
+        correct = torch.cat(correct)
 
-            print('{} accuracy: {}'.format(stage, calculate_accuracy(predicted, correct)))
+        print('Test accuracy: {}'.format(calculate_accuracy(predicted, correct)))
