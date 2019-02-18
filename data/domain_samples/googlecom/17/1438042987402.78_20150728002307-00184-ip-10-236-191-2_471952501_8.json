@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 12, 2000",
+            "Feb 4, 2004",
+            "Apr 8, 2008",
+            "Aug 6, 2012",
+            "Dec 26, 2012",
+            "Feb 12, 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Effective date: 20121226"
+        ]
+    ],
+    "pageTitle": "Patent US6167120 - Apparatus and methods for home networking - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6167120?dq=6,757,682",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00184-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 471986391,
+    "recordOffset": 471952501,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{55855=FIG. 10 is a diagrammatic view of an alternate embodiment whereby signal spreading and de-spreading is performed in the CPU by help of a software executed by the CPU, of a connected device on the home network system. Wherein a network card (not shown) could be provided for connection to a connected device such as a PC on the home network. This network card is made to transmit the data signal at 100 MHz so that the spreader/de-spreader function illustrated in the Embodiment of FIG. 8 can be eliminated. Rather, this function will now be performed in the CPU of a connected device as described above, and to be described in the following text. A 100 MHz based T-adapter 1000 is provided to transmit the data from a 100 MHz based network card to a PCI bus connector represented by input 1011 and output 1012 into a CPU. Inside the CPU spreader/de-spreader calculations are performed and the resulting data is reduced by approximately 1/8 of the actual transmitted bits of the original input data. Processed data proceeds from the CPU to an output connector 1001 from where data lines are run to a small tuner box containing the necessary components for modulation and demodulation such as are represented in the previous embodiment of FIG. 8. In this embodiment connected devices performing dedicated functions can be easily and inexpensively adapted so as to contain a 100 MHz micro-controller and the necessary tuner components in one small box linked to the CPU and the network cord as described above. The stated goal of an approach such as the one described directly above is to further flatten the spectrum of the signal significantly reducing possible radiation leakage. In this instant embodiment, collision detection is also performed in the CPU and connected cards are assigned addresses which are used by the CPU to tell whether a particular card has to \"listen\" for a signal or not. It will be apparent to one with skill in the art that there are many ways network cards may be utilized and implemented in a home network system without departing from the spirit and scope of the present invention such as using different frequencies, using different connections for different types of communication and so on., 15865=The present application is a Continuation-in Part of application Ser. No. 08/811,648, filed Mar. 5, 1997, which is a Continuation-in Part of copending patent application Ser. No. 08/744,287, filed Nov. 6, 1996 and incorporates all of the prior application by reference.}",
+    "textBeforeTable": "Patent Citations In the aspect of invention described with reference to FIG. 3, there are similarly many alterations that might be made without departing from the spirit and scope of the invention. Many of these options have already been described above. For example, there is a broad variance in PBX functions that may be utilized by micro-PBX 301. Similarly the data protocol used on the in-house wiring may be varied from embodiment to embodiment, depending on compatibility with the CSMA/CD-type network management provided on the in-house wiring. Design and placement of converter boxes may vary as well, and there are a number of alternatives in the way power for internal components may be supplied. The differences are numerous, and the invention is limited only by the breadth of the claims which follow. It will be apparent to those with skill in the art that there may be many alterations in the embodiments of the invention shown and described without departing from the spirit and scope of the invention. Many variations have been described above, such as an ability to handle any network protocol between various pieces of connected equipment. There are also many variations in the control routines that may be used, and in the hardware provided as Adapter Unit 101. FIG. 11 is a line-by-line listing of the typically required features of the micro-PBX of FIG. 3 in an embodiment of the present invention. No further explanation",
+    "textAfterTable": "US6370149 * Jul 20, 1998 Apr 9, 2002 Ameritech Corporation Telecommunication system, method and subscriber unit for use therein US6438109 * Feb 7, 2000 Aug 20, 2002 Motorola, Inc. Method to establish a home network on multiple physical layers US6574697 * Nov 30, 2001 Jun 3, 2003 Oki Electric Industry Co., Ltd. Data transfer equipment that provides high speed data transmission between data terminal equipment and data circuit terminating equipment US6693996 * Jan 31, 2002 Feb 17, 2004 Sharp Laboratories Of America, Inc. System and method for data backup in a home network telephone US6760601 * Nov 29, 1999 Jul 6, 2004 Nokia Corporation Apparatus for providing information services to a telecommunication device user US6771164 Sep 5, 2002 Aug 3, 2004 Nrc Corporation Automatic identification of local devices US7006523 Aug 13, 2004 Feb 28, 2006 Serconet Ltd. Local",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

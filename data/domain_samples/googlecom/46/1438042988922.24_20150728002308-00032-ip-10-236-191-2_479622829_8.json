@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Apr 5, 1991",
+            "Aug 21, 1996",
+            "Aug 30, 2000",
+            "Feb 12, 2003",
+            "Sep 30, 2004",
+            "Nov 30, 2009",
+            "Feb 10, 2010"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: TRW INC., Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNOR:LINSKY, STUART T.;REEL/FRAME:005727/0713 Effective date: 19910401",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Owner name: NORTHROP GRUMMAN CORPORATION,CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:TRW, INC. N/K/A NORTHROP GRUMMAN SPACE AND MISSION SYSTEMS CORPORATION, AN OHIO CORPORATION;REEL/FRAME:013751/0849 Effective date: 20030122",
+            "Year of fee payment: 12",
+            "Owner name: NORTHROP GRUMMAN SPACE & MISSION SYSTEMS CORP.,CAL Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:NORTHROP GRUMMAN CORPORTION;REEL/FRAME:023699/0551 Effective date: 20091125 Owner name: NORTHROP GRUMMAN SPACE & MISSION SYSTEMS CORP., CA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:NORTHROP GRUMMAN CORPORTION;REEL/FRAME:023699/0551 Effective date: 20091125",
+            "Owner name: NORTHROP GRUMMAN SYSTEMS CORPORATION,CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:NORTHROP GRUMMAN SPACE & MISSION SYSTEMS CORP.;REEL/FRAME:023915/0446 Effective date: 20091210 Owner name: NORTHROP GRUMMAN SYSTEMS CORPORATION, CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:NORTHROP GRUMMAN SPACE & MISSION SYSTEMS CORP.;REEL/FRAME:023915/0446 Effective date: 20091210"
+        ]
+    ],
+    "pageTitle": "Patent US5199050 - Pseudorandom (PN) signal synchronization circuit and related method - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5199050?ie=ISO-8859-1&dq=6,202,008",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988922.24/warc/CC-MAIN-20150728002308-00032-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 479641551,
+    "recordOffset": 479622829,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations It will be appreciated from the foregoing that the present invention represents a significant improvement in the field of detection and synchronization circuits for PN signals. In particular, the present invention provides for optimal performance, in terms of minimum signal-to-noise ratio, with simplified hardware of the type usually associated with a performance degraded by 3 dB in minimum signal-to-noise ratio. It will also be appreciated that, although an embodiment of the invention has been described in detail for purposes of illustration, various modifications may be made without departing from the spirit and scope of the invention. Accordingly, the invention is not to be limited except as by the appended claims. A more specific implementation choice is shown in FIG. 6. In this implementation, the received signal r(t) is first processed by a matched filter, such as a SAW (surface acoustic wave) filter, indicated at 80, the output of which is further processed by an amplitude limiter 82. In other approaches the received analog signal must be normalized, typically by means of an automatic gain control (AGC) circuit. Placing the limiter after the filter performs the normalization function with a minimum of signal degradation (approximately 1 dB), and simplifies threshold levels and the calculation of the number of bits that need to be retained at successive processing steps. Following the limiter 82 is an angle quantizer 84 for performing analog-to-digital (A/D) conversion. Because a limiter is used,",
+    "textAfterTable": "US7126982 Jul 21, 2000 Oct 24, 2006 L-3 Communications Corporation Apparatus for rapid PN code acquistion US7184464 Sep 19, 2003 Feb 27, 2007 Global Locate, Inc Apparatus for computing signal correlation at multiple resolutions US7190712 Mar 21, 2003 Mar 13, 2007 Global Locate, Inc Method and apparatus for performing signal correlation US7539239 Sep 20, 2006 May 26, 2009 L-3 Communications Corporation Apparatus for rapid PN code acquisition US7567636 Oct 22, 2003 Jul 28, 2009 Global Locate, Inc. Method and apparatus for performing signal correlation using historical correlation data US7672358 Jan 11, 2006 Mar 2, 2010 Broadcom Corporation Method and apparatus for performing signal correlation at multiple resolutions to mitigate multipath interference US7995682 Dec 19, 2005 Aug 9, 2011 Broadcom Corporation Method and apparatus for performing signal processing using historical correlation data US8170086 Mar 9, 2007 May 1, 2012 Global Locate, Inc. Method and apparatus for performing",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,81 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US8112812 *",
+            "US8787579 *",
+            "US8990394 *",
+            "US9015854 *",
+            "US20100049974 *",
+            "US20120215809 *",
+            "US20130036475 *",
+            "US20130297792 *",
+            "US20130297813 *"
+        ],
+        [
+            "Filing date",
+            "May 18, 2006",
+            "Jun 30, 2008",
+            "Oct 12, 2012",
+            "Dec 16, 2011",
+            "Apr 15, 2008",
+            "",
+            "",
+            "Oct 12, 2012",
+            "Oct 12, 2012"
+        ],
+        [
+            "Publication date",
+            "Feb 7, 2012",
+            "Jul 22, 2014",
+            "Mar 24, 2015",
+            "Apr 21, 2015",
+            "Feb 25, 2010",
+            "Aug 23, 2012",
+            "Feb 7, 2013",
+            "Nov 7, 2013",
+            "Nov 7, 2013"
+        ],
+        [
+            "Applicant",
+            "Konica Minolta Business Technologies, Inc.",
+            "Verizon Patent And Licensing Inc.",
+            "Wyse Technology L.L.C.",
+            "Tata Consultancy Services",
+            "Eli Winjum",
+            "Dai Nippon Printing Co., Ltd.",
+            "Tata Consultancy Services Limited",
+            "Wyse Technology Inc.",
+            "Wyse Technology Inc."
+        ],
+        [
+            "Title",
+            "Recording medium and device administration apparatus",
+            "Key-based content management and access systems and methods",
+            "System and method for providing session-level access management of access requests to a redirected device from a predetermined session",
+            "Access rights management in enterprise digital rights management systems",
+            "Method and apparatus for verification of information access in ict systems having multiple security dimensions and multiple security levels",
+            "Search mediation system",
+            "Access rights management in enterprise digital rights management systems",
+            "System and method for providing session-level access management of access requests to a redirected device from a predetermined session",
+            "System and method for providing session-level access management of a redirected device"
+        ]
+    ],
+    "pageTitle": "Patent US7577838 - Hybrid systems for securing digital assets - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7577838?dq=6,712,702",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988922.24/warc/CC-MAIN-20150728002308-00003-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 482489939,
+    "recordOffset": 482450074,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{61534=((File is crypt)AND(memberofGroup\u201cMKTG\u201d)AND(Time <5:00 PM)), 61629=where \u201cAND\u201d is a logic operator. It means that if a requestor attempts to access an encrypted file before 5:00 PM and also is a member of marketing group, the evaluation process carried out by the interpreter is considered successful. If the evaluation process fails, that means one of the parameters associated with the user or the access request can not be satisfied by the policy, the access to the file is then denied., 53935=To facilitate the understanding of the present invention, a detailed example is provided. A secured filed, xyz.doc, is located in a folder called \u201cfinance\u201d and imposed upon with an access policy that literally dictates \u201cxyz.doc can only be access by members of an executive team on the conditions: between 9:00 AM-6:00 PM of weekdays, after Aug. 3, 2002.\u201d When a user attempts to access the file, the software 202 is configured to intercept the request and determine if the user can access the finance folder guarded by an access control list. The access control list may not include an access privilege for the user depending on configuration therefor. In one configuration, the access control list permits other users in addition to the executive team to access the folder. In other words, if the user is not a member of the executive team, the software 202 is configured to further determine if the access policy imposed upon the file can be satisfied with respect to various parameters pertaining to the user. If the time of the access request is beyond the time range of \u201c9:00 AM 6:00 PM of weekdays\u201d or before \u201cAug. 3, 2002\u201d, the access request is still denied. When the time of the access request falls in the time range of \u201c9:00 AM-6:00 PM of weekdays\u201d or after \u201cAug. 3, 2002\u201d, the access request is granted., 31668=This application is related to U.S. patent application Ser. No. 10/074,804, filed Feb. 12, 2002, and entitled \u201cSecured Data Format for Access Control,\u201d now issued as U.S. Pat. No. 7,380,120, and U.S. patent application Ser. No. 10/127,109 and entitled \u201cEvaluation of Access Rights to Secured Digital Assets\u201d, both of which are hereby incorporated by reference.}",
+    "textBeforeTable": "Patent Citations The present invention has been described in sufficient details with a certain degree of particularity. It is understood to those skilled in the art that the present disclosure of embodiments has been made by way of examples only and that numerous changes in the arrangement and combination of parts may be resorted without departing from the spirit and scope of the invention as claimed. Accordingly, the scope of the present invention is defined by the appended claims rather than the foregoing description of embodiments. The advantages, features and benefits of the invention are numerous. Different embodiments or implementations may yield one or more of the following advantages. One advantage of the invention is that both techniques are combined under a single security management system allowing users to define elements of their security policies without regard to how each element will be enforced, through cryptography or through access control. Another advantage of the invention is, once a user has defined the conditions that must be met for a given data asset to be accessed, the system automatically enforces such conditions by using a combination of cryptographic and access control techniques. Still another advantage of the present invention is that the hybrid system is designed to enforce complex conditions other than user or group identity through the use of a software module that interprets the conditions and decided whether to grant or deny access to the",
+    "textAfterTable": "US5052040 May 25, 1990 Sep 24, 1991 Micronyx, Inc. Multiple user stored data cryptographic labeling system and method US5058164 May 3, 1990 Oct 15, 1991 National Semiconductor Corp. Encryption of streams of addressed information to be used for program code protection US5144660 Aug 31, 1989 Sep 1, 1992 Rose Anthony M Securing a computer against undesired write operations to or read operations from a mass storage device US5204897 Jul 14, 1992 Apr 20, 1993 Digital Equipment Corporation Management interface for license management system US5220657 Apr 15, 1991 Jun 15, 1993 Xerox Corporation Updating local copy of shared data in a collaborative system US5235641 Mar 12, 1991 Aug 10, 1993 Hitachi, Ltd. File encryption method and file cryptographic system US5247575 Apr 24, 1992 Sep 21, 1993 Sprague Peter J Information distribution system US5276735 Apr 17, 1992 Jan 4, 1994 Secure Computing Corporation Data enclave and trusted path system",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

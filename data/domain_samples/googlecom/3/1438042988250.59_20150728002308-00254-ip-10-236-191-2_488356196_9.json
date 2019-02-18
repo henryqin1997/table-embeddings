@@ -1,0 +1,58 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jun 28, 2001",
+            "May 23, 2003",
+            "May 7, 2010",
+            "Jul 18, 2014",
+            "Dec 5, 2014",
+            "Jan 27, 2015"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: MATSUSHITA GRAPHIC COMMUNICATION SYSTEMS INC., JAP Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:OZAWA, MASATOSHI;REEL/FRAME:011942/0541 Effective date: 20010627",
+            "Owner name: PANASONIC COMMUNICATIONS CO., LTD., JAPAN Free format text: MERGER;ASSIGNOR:MATSUSHITA GRAPHIC COMMUNICATION SYSTEMS, INC.;REEL/FRAME:014081/0220 Effective date: 20030106",
+            "Year of fee payment: 4",
+            "",
+            "",
+            "Effective date: 20141205"
+        ]
+    ],
+    "pageTitle": "Patent US7146406 - Server apparatus and method to distribute media data - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7146406?dq=5537618&ei=urENT6-uEoHegQe698i5Bw",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988250.59/warc/CC-MAIN-20150728002308-00254-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 488387215,
+    "recordOffset": 488356196,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6464=When the distribution server 66 distributes more than one piece of music data, the distribution server 66 transmits data end notification instead of distribution end notification in ST1013. And the information receiver 50 transmits data end confirmation instead of distribution end confirmation in ST1014. Receiving the data end confirmation, the distribution server 66 returns to the process to ST1013 as shown in FIG. 8 by a dotted line, and again transmits the distribution request B to the information receiver 50. And then the distribution server 66 repeats the same process as for the first piece of music data.}",
+    "TableContextTimeStampAfterTable": "{52996=The call process section 806 transmits a call signal to the information receiver 50 via the communication section 703 in accordance with instructions from the distribution control section 805. The distribution control section 805 provides such instructions based on the addressee's telephone number and the sound type stored in the distribution request storage section 804. The call process section 806 transmits a call signal of 1300 Hz to the information receiver 50 via the communication section 703 when the addressee's call type instructed by the distribution control section 805, is no sound(i.e. no ring). The call process section 806 transmits a call signal of 16 Hz via the communication section 703 when the instructed addressee's sound type is normal sound (i.e. a ring). In the call processing, it is possible to transmit 1300 Hz and 16 Hz only when the receiver is connected to an analogue telephone service network. When the receiver is connected to ISDN, the receiver is selected by the D channel control signal such as a sub-address identification signal identifying to device to receive the music data., 67286=The call process section 806 transmits a call signal of 1300 Hz to the information receiver 50 via the communication section 703 when the instructed addressee's sound type is no sound (ST803). And the call process section 806 transmits a call signal of 16 Hz via communication 703 when the instructed addressee's sound type is sound (ST804)., 100495=The present disclosure relates to subject matter contained in priority Japanese Application No. 2000-197097, filed on Jun. 29, 2000, which is herein expressly incorporated by reference in its entirety.}",
+    "textBeforeTable": "Patent Citations The present disclosure relates to subject matter contained in priority Japanese Application No. 2000-197097, filed on Jun. 29, 2000, which is herein expressly incorporated by reference in its entirety. It is noted that the foregoing examples have been provided merely for the purpose of explanation and are in no way to be construed as limiting of the present invention. While the present invention has been described with reference to certain embodiments, it is understood that the words which have been used herein are words of description and illustration, rather than words of limitation. Changes may be made, within the purview of the appended claims, as presently stated and as amended, without departing from the scope and spirit of the present invention in its aspects. Although the present invention has been described herein with reference to particular means, materials and embodiments, the present invention is not intended to be limited to the particulars disclosed herein; rather, the present invention extends to all functionally equivalent structures, methods and uses, such as are within the scope of the appended claims. Thus the information receiver 50 can receive one entire piece of music in the form of music data by combining block 1 and block 2 that were previously received, with block 3 to block n of music data received during the redistribution. In the case of music data redistribution, the process between the distribution server",
+    "textAfterTable": "Management of time and expense when communicating between a host and a communication network US6658247 * Mar 1, 2000 Dec 2, 2003 Sony Corporation Portable telephone terminal apparatus for receiving data and data receiving method therewith US6691165 * Apr 12, 2000 Feb 10, 2004 Rainfinity, Inc. Distributed server cluster for controlling network traffic US6748278 * Mar 13, 2000 Jun 8, 2004 Microsoft Corporation Remote controlled system with computer-based remote control facilitator US6763377 * Mar 3, 2000 Jul 13, 2004 International Business Machines Corporation Asset management and scheduling graphical user interface for media streamer US20010039560 * Jun 24, 1998 Nov 8, 2001 Nec Corporation A system for broadcasting electronic mails that separately stores and sends a portion of electronic mails with an access code for filtering and retrieving purposed JP2000032429A * Title not available JP2000076158A",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

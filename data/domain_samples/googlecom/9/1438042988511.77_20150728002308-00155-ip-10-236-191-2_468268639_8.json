@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Feb 1, 2001",
+            "Apr 19, 2001",
+            "Jan 28, 2004",
+            "Jul 12, 2004",
+            "Sep 7, 2004"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "",
+            "",
+            "",
+            "",
+            "Effective date: 20040711"
+        ]
+    ],
+    "pageTitle": "Patent US6088796 - Secure middleware and server control system for querying through a network ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6088796?dq=U.S.+patent+number+7,325,728",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988511.77/warc/CC-MAIN-20150728002308-00155-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 468317819,
+    "recordOffset": 468268639,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{94769=This architecture assumes a \"demilitarized zone\" (DMZ) that is partially protected from the Internet or corporate WAN by way of a packet-filtering router. All other sensitive systems, not shown in this diagram, are located behind a firewall. The DMZ protects the computers that run the components--including the messenger system and associated application servers--anchoring the distributed application while completely protecting other resources. The resources behind the firewall are not accessible from either the DMZ or the Internet or WAN. The recommended way to set up this deployment pattern is to configure the messenger system to accept TMSP (User Agent) connections only on address 127.0.0.1 (localhost) and some high-numbered TCP port that is not otherwise in use, for example 11600. The application servers must be configured to connect to the messenger system on this port. Web browsers accessing the system from outside the DMZ will connect via HTTP/HTTPS on the normal TCP ports for these protocols (80 and 443, respectively), so the messenger system must be configured to allow these connections, and to disallow TMSP connections on ports 80 and 443., 32703=This Application claims the benefit of U.S. Provisional Application Ser. No. 60/054,876 filed Aug. 6, 1997., 33397=Current HTTP servers, as described in RFC 2068, and proprietary server APIs have a limitation that the HTTP server cannot maintain a warm-socket connection to other running processes on the same or different computers. In addition, HTTP servers cannot provide asynchronous inter-process communications between programs running on disparate operating systems or between web browsers (including HTML and Java applets) and running programs which may or may not reside on the same computer as the HTTP server. As the use of distributed information in connection with the Internet, corporate intranets and increasingly complex network cooperative arrangements including extranets develop, there is a growing need for improved functionality at increased speeds with less operating system overhead and increased network security.}",
+    "textBeforeTable": "Patent Citations It is also to be understood that the following claims are intended to cover all of the generic and specific features of the invention, herein described and all statements of the scope of the invention which, as a matter of language, might be said to fall therebetween. Accordingly, it will thus be seen that the objects set forth above, among those made apparent from the preceding description are efficiently attained and, since certain changes may be made in the above constructions without departing from the spirit and scope of the invention, it is intended that all of the matter contained in the above description or shown in the accompanying drawings, shall be interpreted as illustrative, and not as limiting. Accordingly, an improved multi-protocol server that supports multiple protocols, increases security by restricting access across the firewall to outward bound connections and provides dynamic load balancing without the need for reconfiguration or reprogramming is provided. The messenger system is preferably implemented in connection with a firewall based security configuration with at least one messenger system enabled application server which is located within the firewall. The messenger system itself is located outside of the firewall. Generally, the communication across the firewall is controlled by the messenger system enabled application which must reach outward across the firewall to the messenger system component sitting outside of the firewall to establish a socket. Because the messenger system enabled application will only",
+    "textAfterTable": "US5790809 * Nov 17, 1995 Aug 4, 1998 Mci Corporation Registry communications middleware US5826029 * Oct 31, 1995 Oct 20, 1998 International Business Machines Corporation Secured gateway interface US5828833 * Aug 15, 1996 Oct 27, 1998 Electronic Data Systems Corporation Method and system for allowing remote procedure calls through a network firewall US5828893 * Aug 21, 1995 Oct 27, 1998 Motorola, Inc. System and method of communicating between trusted and untrusted computer systems US5835726 * Jun 17, 1996 Nov 10, 1998 Check Point Software Technologies Ltd. System for securing the flow of and selectively modifying packets in a computer network US5898830 * Oct 17, 1996 Apr 27, 1999 Network Engineering Software Firewall providing enhanced network security and user transparency US5903732 * Jul 3, 1996 May 11, 1999 Hewlett-Packard Company Trusted gateway",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

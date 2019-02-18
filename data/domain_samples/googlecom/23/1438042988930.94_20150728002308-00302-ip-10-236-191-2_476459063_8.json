@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Mar 16, 2005",
+            "Dec 10, 2008",
+            "Jun 27, 2011",
+            "Nov 20, 2011",
+            "Jan 10, 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: FUJITSU LIMITED, JAPAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:HOSONO, TOSHIKATSU;REEL/FRAME:016393/0883 Effective date: 20050221",
+            "Owner name: FUJITSU MICROELECTRONICS LIMITED,JAPAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:FUJITSU LIMITED;REEL/FRAME:021985/0715 Effective date: 20081104",
+            "",
+            "",
+            "Effective date: 20111120"
+        ]
+    ],
+    "pageTitle": "Patent US7299438 - Method and apparatus for verifying semiconductor integrated circuits - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7299438?dq=5754119",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00302-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 476490351,
+    "recordOffset": 476459063,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6391=Japanese Laid-Open Patent Publication No. 2001-184372 discloses a method for verifying pulse width using the above expression. For example, as shown in FIG. 3( a), a semiconductor integrated circuit includes two flip flop circuits 113 and 114. In this case, the timings of a data signal (Data) and a clock signal (CK), which are respectively provided to input terminals 114 a and 114 b of the flip flop circuit 114, are checked. In the timing check considering on-chip variations, strict checking is performed taking into consideration delay variations of one of the data signal (Data) and the clock signal (CK).}",
+    "TableContextTimeStampAfterTable": "{31170=This application is based upon and claims the benefit of priority from the prior Japanese Patent Application No. 2004-340797, filed on Nov. 25, 2004, the entire contents of which are incorporated herein by reference.}",
+    "textBeforeTable": "Patent Citations The present examples and embodiments are to be considered as illustrative and not restrictive, and the invention is not to be limited to the details given herein, but may be modified within the scope and equivalence of the appended claims. In the above embodiment, the timing check is executed based on the voltage variation amount. However, the timing check may be executed based on a temperature variation amount or a process variation amount. Although the above embodiment describes a case in which the timings for the data signal and the clock signal (setup time and hold time) are verified, other timings (removal time and recovery time, etc.) may be verified. The removal time is the time from when data at a specified input terminal is released to when an input at another relevant input terminal (e.g., clock input) is enabled to be changed. In this case, in addition to the clock signal and the data signal, control signals such as an enable signal, and signals provided to a clear terminal and a preset terminal may be subjected to the verification. In the above embodiment, the timing check and the pulse width check are executed at the same time. However, the timing check and the pulse width check may be executed separately. In this case, the processing necessary for the timing check and the processing necessary for the pulse width check may be",
+    "textAfterTable": "Mar 24, 2004 Apr 14, 2005 Fujitsu Limited Timing analysis apparatus, timing analysis method and program product US20050091620 * Oct 23, 2003 Apr 28, 2005 International Business Machines Corporation Simplified method for limiting clock pulse width JP2001184372A Title not available * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US7464355 * Oct 2, 2006 Dec 9, 2008 Fujitsu Limited Timing analyzing method and apparatus for semiconductor integrated circuit US7536663 * Feb 25, 2005 May 19, 2009 Verigy (Singapore) Pte. Ltd. Method and apparatus for quantifying the timing error induced by an impedance variation of a signal path US8056033 * Jun 20, 2008 Nov 8, 2011 Renesas Electronics Corporation Apparatus and method for integrated circuit design with improved delay variation calculation based on power",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

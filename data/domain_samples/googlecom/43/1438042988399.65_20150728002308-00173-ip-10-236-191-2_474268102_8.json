@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 22, 2004",
+            "Dec 18, 2006",
+            "Mar 6, 2007",
+            "Jan 5, 2009",
+            "Jun 28, 2009",
+            "Aug 18, 2009"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "",
+            "Owner name: ANDREW CORPORATION, GEORGIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:EMS TECHNOLOGIES, INC.;REEL/FRAME:018645/0318 Effective date: 20061201",
+            "Owner name: SUNTRUST BANK, GEORGIA Free format text: RELEASE OF PATENT SECURITY INTERESTS;ASSIGNOR:EMS TECHNOLOGIES, INC.;REEL/FRAME:018961/0907 Effective date: 20061220",
+            "",
+            "",
+            "Effective date: 20090628"
+        ]
+    ],
+    "pageTitle": "Patent US20030043076 - Method and system for producing dual polarization states with controlled RF ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US20030043076?ie=ISO-8859-1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988399.65/warc/CC-MAIN-20150728002308-00173-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 474292679,
+    "recordOffset": 474268102,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{76504=[0075]FIG. 14 illustrates a logical flow diagram 1400 for a method of generating RF radiation fields having dual, simultaneous polarization states and having substantially rotationally symmetric radiation patterns. The logical flow diagram 1400 highlights some key functions of the antenna system 100., 78922=[0080] In step 1460, the radiating elements such as the lower patch radiators 110 are excited with RF energy emitted from the slot 700 or the stubs 710 or both. Next, in step 1470, RF radiation is produced with nearly equal dual polarizations by the substantially compact antenna system 100. In routine 1480, the nearly equal dual polarizations are maintained and beamwidths can be adjusted with the beam shaping element 140. Further details of routine 1480 will be discussed below with respect to FIG. 16., 80106=[0082] Next, in step 1510, the slots 700 are shaped to be symmetrical and sized such that each slot 700 has an effective electrical length of less than or equal to a half wavelength for efficient RF coupling to or from the feed network 130 and the cavity 200 or radiating patch 110. The routine then returns to step 1460 of FIG. 14., 76870=[0076] Step 1410 is the first step of the inventive process 1400 in which the slot 700 disposed within the ground plane 530 are oriented orthogonal to one another. By orienting the slots orthogonal to one another in step 1410, isolation between separate RF polarizations can be maintained while cross-polarization can be reduced., 78605=[0079] In routine 1450, the slots disposed in ground plane 530 set up or establish a transverse magnetic (TM) mode of RF energy in the cavity 200. Further details of routine 1450 will be discussed in further detail below with respect to FIG. 15., 79535=[0081]FIG. 15 illustrates an exemplary slot excitation routine 1450 of FIG. 14. Routine 1450 begins with step 1500. In step 1500, the slots 700 are aligned along geometric diagonals 720 of the cavity 200, as illustrated in FIG. 7. This alignment of the slots 700 produces a desired transverse magnetic mode of RF energy in the cavity 200 while substantially reducing cross-polarization and increasing isolation between respective ports 160A and 160B., 77278=[0077] Next, in step 1420, the antenna system 100 is assembled without metal-to-metal contacts and soldering. More specifically, in this step, the antenna system 100 can be manufactured in a way to substantially reduce passive intermodulation (PIM). Dissimilar materials, ferrous materials, metal-to-metal contacts, and deformed or soldered junctions are typically not employed or are limited in the antenna system 100 in order to substantially reduce or eliminate PIM. One way in which PIM is substantially reduced or eliminated is the use of dielectric planer fasteners 540 in order to connect portions of the cavity 200 to the slotted ground plane 530 and the ground plane 120. Another way in which PIM is reduced or substantially eliminated is by employing open corners in the cavity 200 where respective walls, such as walls 1000C and 1000D of FIG. 10B, are spaced apart by the predetermined distance d., 81405=[0084] In step 1620, it is determined whether further beamwidth adjustment is needed. If the inquiry to decision step 1620 is positive, then the \u201cyes\u201d branch is followed to step 1630, in which the beamwidth of the antenna system 100 can be adjusted by changing the diameter of the beam forming element 140. It is noted that the present invention is not limited to the sequence or chronology of steps illustrated in these logic flow diagrams. Therefore, one of ordinary skill in the art recognizes that the beamwidth of antenna system 100 can be first adjusted by changing the diameter of the beam forming element 140 instead of first changing the spacing between the beam forming element 140 and radiating element 110. Further, those skilled in the art will also recognize that adjustments to beamwidth can also be made by changing both the spacing between the beam forming element 140 and the radiating element 110, as well as changing the size of the beam forming element 140. In step 1640, the routine returns to FIG. 14., 78307=[0078] Next, in step 1430 RF energy is propagated along the feed network 130 of the printed circuit board 150. In step 1440, heat is dissipated from the feed network 130 into flanges 520 of the cavity 200., 69798=[0066] Referring now to FIG. 10A, this figure further illustrates the details of the resonant cavity 200. The cavity 200 is preferably made from aluminum and has a design which promotes accurate repeatability while substantially reducing passive intermodulation (PIM). However, other conductive materials are not beyond the scope of the present invention. The cavity 200 comprises walls 1000A-D that are spaced apart from each other by a predetermined distance d (See FIG. 10B). This predetermined distance d between the walls 1000 at the corners allows for reasonable tolerances in manufacturing, but is typically small enough such that the cavity 200 electrically operates as a closed boundary for RF energy propagating within the cavity 200. In other words, the cavity 200 can function electrically as a closed boundary when mechanically the cavity has open corners. The open corners of the cavity typically have dimensions that permit resonance while substantially reducing passive intermodulation (PIM). The open corners of the cavity also function as drainage holes for any condensation that may form within a respective cavity 200., 80531=[0083]FIG. 16 illustrates an exemplary beam width adjustment routine 1480 of FIG. 14. Routine 1480 begins with step 1600, in which it is determined whether the beamwidth of the antenna system 100 needs adjustment. If the inquiry to decision step 1600 is positive, then the \u201cyes\u201d branch is followed to step 1610. In step 1610, the beamwidth of the antenna system 100 can be adjusted by changing the spacing between the beam forming element 140 and the radiating element 110. Typically, the spacing is of a non-resonant dimension since in one exemplary feature of the present invention, the beam forming element 140 does not resonate RF energy. If the inquiry to decision step 1600 is negative, then the \u201cno\u201d branch is followed to step 1640.}",
+    "textBeforeTable": "Patent Citations [0089] Alternative embodiments will become apparent to those skilled in the art to which the present invention pertains without departing from its spirit and scope. Thus, although this invention has been described in exemplary form with a certain degree of particularity, it should be understood that the present disclosure has been made only by way of example and that numerous changes in the details of construction and the combination and arrangement of parts may be resorted to without departing from the spirit and scope of the invention. Accordingly, the scope of the present invention is defined by the appended claims rather than the foregoing description. [0088] The present invention also employs two orthogonal forty-five degree slanted slots that are non-collocated along perpendicular lines of symmetry at forty-five degrees from an array axis. Such slots eliminate a need for a feed line to cross over to provide improved cross-polarization and port-to-port isolation. [0087] The present invention employs circular metallic radiating elements for the purpose of obtaining circular and symmetric (E) and (H) plane 3 dB beamwidths having simultaneous slant 45 dual polarization states. The spacing S2 of the radiating element 110 relative to the printed circuit board 150 and the diameter of the radiating element 110 is used to improve the impedance beamwidths of the antenna system 100. The beam forming element 140 is used to vary the 3",
+    "textAfterTable": "US20120139797 * Aug 20, 2010 Jun 7, 2012 Nec Corporation Antenna device WO2008073372A2 * Dec 11, 2007 Jun 19, 2008 Qualcomm Inc Multiple-antenna device having an isolation element WO2015065509A1 * Jan 22, 2014 May 7, 2015 Laird Technologies, Inc. Dual polarized low profile high gain panel antennas * Cited by examiner Classifications U.S. Classification 343/700.0MS, 343/844 International Classification H01Q21/06, H01Q21/24, H01Q25/00 Cooperative Classification H01Q21/065, H01Q21/24, H01Q25/002 European Classification H01Q25/00D4, H01Q21/24, H01Q21/06B3 Legal Events Date Code Event Description Dec 22, 2004 AS Assignment Dec 18, 2006",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

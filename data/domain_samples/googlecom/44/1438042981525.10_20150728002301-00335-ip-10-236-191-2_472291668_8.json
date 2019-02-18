@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Mar 6, 1991",
+            "Nov 19, 1996",
+            "Dec 4, 2000",
+            "Jan 23, 2001",
+            "Feb 5, 2001",
+            "Feb 3, 2005"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: CHIPS AND TECHNOLOGIES, INC., 3050 ZANKER ROAD, SA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:SHAK, MYRON;DECKER, TIMOTHY E.;BLOMGREN, JIM S.;REEL/FRAME:005633/0410 Effective date: 19910227",
+            "Year of fee payment: 4",
+            "",
+            "",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US5233553 - Apparatus for performing modulo arithmetic with three-port adder - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5233553?dq=%22Meaning-based+advertising+and+document+relevance+determination%22",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981525.10/warc/CC-MAIN-20150728002301-00335-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 472308062,
+    "recordOffset": 472291668,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations As will be understood by those familiar with the art, the present invention may be embodied in other specific forms without departing from the spirit or essential characteristics thereof. For example, the present invention can be used for calculating a linear address for any memory length. For example, the intermediate truncation resulting from the inhibition of the carry bit, may occur at a bit position other than bit 16. The present invention could also use logic other than NAND gates, or a lookup table to determine whether to allow or inhibit the carry function. Accordingly, the disclosure of the preferred embodiment of the invention is intended to be illustrative, but not limiting, the scope of the invention which is set forth in the following claims. The logic equation used to generate a carry into bit position 16 of adder 448 is \"E=AC'+AD'+AB+BC'D\". In this equation, A is represented by carry bit 15 of adder 454, B is carry bit 15 of adder 440, C is carry bit 15 of adder 438, D is the address mode line and E is the carry needed into bit position 16 of adder 448 (see FIG. 5). This logic equation can be implemented using NAND gates, exclusive OR gates or other standard logic. In the 16-bit mode carry bit 16 of adder 448 is modified according to states 1-8 of the truth table illustrated in FIG. 5. In the 16-bit",
+    "textAfterTable": "Jul 2, 1996 International Business Machines Corporation Combined decoder/adder circuit which provides improved access speed to a cache US5583806 * Mar 10, 1995 Dec 10, 1996 Advanced Micro Devices, Inc. Optimized binary adder for concurrently generating effective and intermediate addresses US5612911 * May 18, 1995 Mar 18, 1997 Intel Corporation Circuit and method for correction of a linear address during 16-bit addressing US5713001 * Aug 31, 1995 Jan 27, 1998 International Business Machines Corporation Circuit for converting address operands supplied by a program to hashed virtual address US5787492 * Apr 9, 1996 Jul 28, 1998 International Business Machines Corporation Address limit check apparatus with conditional carry logic US5913050 * Oct 22, 1996 Jun 15, 1999 Intel Corporation Method and apparatus for providing address-size backward compatibility in a processor using segmented memory US5960467 * Aug 13, 1998 Sep 28, 1999 Advanced Micro Devices, Inc.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jul 13, 1984",
+            "Sep 11, 1989",
+            "Mar 22, 1994",
+            "Aug 14, 1994",
+            "Oct 25, 1994"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: GENERAL ELECTRIC COMPANY A CORP OF NEW YORK Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:RIEBEN, WERNER P.;WILLSON, JILL M.;REEL/FRAME:004302/0059;SIGNING DATES FROM 19840711 TO 19840712",
+            "Year of fee payment: 4",
+            "",
+            "",
+            "Effective date: 19940817"
+        ]
+    ],
+    "pageTitle": "Patent US4606001 - Customized canned cycles for computer numerical control system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4606001?ie=ISO-8859-1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00340-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 464766575,
+    "recordOffset": 464744794,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{19832=At power-up, the system software contained in the bubble memory 13 is down-loaded from the bubble memory into the system memory 7. A part program can be input from an external device (for example, a paper tape or cassette reader) via the program port 23, or the ASCII keyboard of the N.C. Control Station 21. The part program is stored by the I/O controller 19 in nonvolatile memory 13. The part program is transferred into system memory. The computer numerical control operates under the control of the system CPU 5 executing programs which reside in the system memory. The system CPU directs the execution of part programs through the axis controller 9 and the analog and digital I/O controllers 15 and 17, respectively, which are all connected to the machine tool 27. Local digital I/O component 17 generates digitized actuator control signals and monitors the status of contact inputs. The local analog I/O component 15 enables the numerical control to control low precision servo driven devices. The axis controller 9 supplies variable dc voltage to axis feed drives contained in the machine tool to control axes and spindle movements. The axis controller is explained in further detail in copending application Ser. No. 415,507, filed Sept. 7, 1982 (now U.S. Pat. No. 4,515,814, the disclosure of which is incorporated herein by reference) and assigned to the instant assignee., 33922=Although the method of defining and executing canned cycles is applicable with any type of computer numerical control, the implementation disclosed herein is particularly applicable for use with a Mark Century\ufffd 2000 CNC available from General Electric Company. The hardware architecture for the Mark Century 2000 CNC is shown in FIG. 1.}",
+    "textBeforeTable": "Patent Citations While the invention has been particularly shown and described with reference to one preferred embodiment thereof, it will be understood by those skilled in the art that various changes in form and detail may be made without departing from the spirit and scope of the invention. The foregoing describes a method for defining and using customized canned cycles in a computer numerical controlled machine where both the original equipment manufacturer and the end user can alter the canned cycles supplied by the controller manufacturer or completely redefine the canned cycles. Although the method of defining and executing canned cycles is applicable with any type of computer numerical control, the implementation disclosed herein is particularly applicable for use with a Mark Century\ufffd 2000 CNC available from General Electric Company. The hardware architecture for the Mark Century 2000 CNC is shown in FIG. 1. The block synchronization task 39 retrieves axis records from the axis record queue and sends appropriate commands to the axis controller 9 and machine control logic 41. The axis board and the MCL, in turn, respond with axis motion and MCL functions, such as coolant on, operator feedhold off, etc. An explanation of the execution of a customized canned cycle will now be given with reference to FIGS. 2 and 3. Executing a program containing a customized canned cycle can be performed by entering a part program 24 from a part tape or from",
+    "textAfterTable": "Citing Patent Filing date Publication date Applicant Title US4740902 * Jun 20, 1985 Apr 26, 1988 Toyoda Koki Kabushiki Kaisha Numerical control apparatus having memory storage for machine patterns, plural individually selectable remachining patterns, and control parameters US4843566 * Apr 29, 1988 Jun 27, 1989 Hewlett-Packard Company Robot motion control system US4891763 * Apr 23, 1987 Jan 2, 1990 Brother Kogyo Kabushiki Kaisha NC program editing and programming device US4974160 * Jun 15, 1989 Nov 27, 1990 Computer Associates International, Inc. Menu selected application programs created from defined modules of code US5122717 * Oct 24, 1990 Jun 16, 1992 Toshiba Kikai Kabushiki Kaisha Apparatus for producing NC programs using menu icons to define operations and producing method thereof US5150306 * Sep 30, 1991 Sep 22, 1992 Fanuc Ltd. Cutting tool stop-control apparatus",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

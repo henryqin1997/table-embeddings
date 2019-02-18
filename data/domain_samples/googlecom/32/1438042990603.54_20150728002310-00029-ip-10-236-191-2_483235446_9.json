@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "28 Jul 2009",
+            "24 Apr 2012",
+            "9 Jul 2013",
+            "20 Aug 2014",
+            "3 Dec 2014"
+        ],
+        [
+            "Code",
+            "CC",
+            "FPAY",
+            "AS",
+            "AS",
+            "AS"
+        ],
+        [
+            "Event",
+            "Certificate of correction",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "",
+            "Year of fee payment: 4",
+            "Owner name: GENERAL INSTRUMENT HOLDINGS, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:GENERAL INSTRUMENT CORPORATION;REEL/FRAME:030764/0575 Effective date: 20130415 Owner name: MOTOROLA MOBILITY LLC, ILLINOIS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:GENERAL INSTRUMENT HOLDINGS, INC.;REEL/FRAME:030866/0113 Effective date: 20130528",
+            "Owner name: GENERAL INSTRUMENT CORPORATION, PENNSYLVANIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:BIRNBAUM, JACK M;SORDO, CHRIS DEL;ALLINSON, STEPHEN;AND OTHERS;SIGNING DATES FROM 20010912 TO 20010928;REEL/FRAME:033568/0600",
+            "Owner name: GOOGLE TECHNOLOGY HOLDINGS LLC, CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:MOTOROLA MOBILITY LLC;REEL/FRAME:034517/0001 Effective date: 20141028"
+        ]
+    ],
+    "pageTitle": "Patent US7451460 - Programming interface for configuring a television settop terminal - Google Patents",
+    "title": "",
+    "url": "http://www.google.com.au/patents/US7451460",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990603.54/warc/CC-MAIN-20150728002310-00029-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 483271039,
+    "recordOffset": 483235446,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{48434=The interface 30 separates the details of the driver model environment from the core system software 20, and is used to isolate the device drivers 32 from the specifics of the driver model provided by the operating environment. The low level device driver software 32 is hardware-specific and portable across operating environments. The driver model interface 30 ties the hardware-specific device driver 32 to the OS by providing the OS's desired interface to the driver. Device drivers are provided for each device supported on the settop. These include a graphics driver, which may be written, e.g., on an ATI Hardware Access Provider (HAP) layer available from ATI Technologies, Inc. A graphics library for use in the settop can written on the HAP. Other typical settop device drivers include a communications driver, the tuner (e.g., a combination of the General Instrument DOCSIS tuner and Quadrature Amplitude Modulation (QAM) code), serial ports (using, e.g., an IEEE 1394 high performance serial bus), parallel ports, Ethernet ports, Universal Serial Bus (USB) ports, Light-Emitting Diodes (LEDs), Keypad and/or Keyboard drivers, a DOCSIS driver, such as the Broadcom DOCSIS driver available from Broadcom Corporation of Irvine, Calif., U.S.A., and a smart card driver. A smart card may be used in the settop for consumer purchasing applications such as on-line buying. Each device in the settop requires a driver function to operate., 90211=Retrieves the processor, bridge type and crystal speeds for the settop, in addition to the MAC addresses for DOCSIS, Ethernet, 1394, USB, and Settop. The call returns a status indicating any errors encountered while servicing the API., 106606=This function is called to obtain the 1394 5C SRM (System Renewability Message(s)). These messages contain certificate revocation lists of devices that are no longer 5C compliant. This is used to ensure the long-term integrity of the system. The SRM format is described in chapter 7 of the 1394 5C specification \u201cDigital Transmission Content Protection Specification\u201d Volume 1, Revision 1.0 dated Apr. 12, 1999., 96373=Returns status of the 1394 port. The call returns a status indicating any errors encountered while servicing the API., 106311=Provides an alphanumeric description of the settop on the 1394 bus., 27233=This application is a divisional of U.S. patent application Ser. No. 09/980,768 filed on Nov. 15, 2001., 91235=Retrieves information about the 1394 interface installed in the settop. The call returns a status indicating any errors encountered while servicing the API.}",
+    "textBeforeTable": "Patent Citations Although the invention has been described in connection with various specific implementations, it should be appreciated that various adaptations and modifications can be made thereto without departing from the scope of the invention as set forth in the claims. The combination of the components described herein provides a basis for settop software to enable advanced features of an advanced settop box implementation. Each of the components provides necessary functions required by an advanced settop terminal. The novel architecture of the invention provides the benefits of reuse and portability of the core settop software to alternate operating environments, thereby allowing well-understood and previously tested software components to be reused. The architecture also allows implementations in alternate operating environments to be quickly and straightforwardly provided. The invention can be implemented using object oriented techniques, such as C++ or Java programming, although the invention is by no means limited to such an implementation. Moreover, the software interface is operable in an architecture that enables core settop software to be compatible with multiple settop operating environments. With this software architecture, it is not necessary to port the core software to different operating environments by rewriting code specific to each environment or through an abstraction layer. Instead, a unique device drivers-to-driver model interface is provided together with a kernel abstraction component that overcomes portability issues and provides for a clean interface between layers in the architecture.",
+    "textAfterTable": "US6467052 * 3 Jun 1999 15 Oct 2002 Microsoft Corporation Method and apparatus for analyzing performance of data processing system US6510557 * 3 Oct 1997 21 Jan 2003 Texas Instruments Incorporated Apparatus for the integration of television signals and information from an information service provider * Cited by examiner Non-Patent Citations Reference 1 * Evain \"The Multimedia Home Platform\" EBU Technical Review- Spring 1998- pp. 4-10. 2 * Lin \"Wireless Systems and Portable Multimedia\"-IEEE 1998- pp. 586-589. 3 * Nair \"Interactive Television Settop Terminal Architectures\"-IEEE 1996-pp. 233-238. 4 * Sambar \"PowerTV Operating System\" Release 1.5, Oct. 1998, pp. 1-52. 5 * Thrift et al. \"JTV-Java-enable Television\", Feb. 1998, pp. 117-122. 6",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

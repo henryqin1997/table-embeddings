@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Oct 31, 1996",
+            "Sep 27, 2001",
+            "Nov 18, 2005",
+            "Jan 18, 2010",
+            "Jun 16, 2010",
+            "Aug 3, 2010"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: SHARP KABUSHIKI KAISHA, JAPAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:INOUE, KOUJI;REEL/FRAME:008201/0834 Effective date: 19961017",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Effective date: 20100616"
+        ]
+    ],
+    "pageTitle": "Patent US5768199 - Semiconductor memory device with dual precharge operations - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5768199?ie=ISO-8859-1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990445.44/warc/CC-MAIN-20150728002310-00055-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 482674903,
+    "recordOffset": 482652872,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{18431=Furthermore, in recent years, the following memory has been developed for the, purpose of shortening the period of time required for the precharge operation. The memory device is supplied with a charge of a precharge level from the opposite side of where a precharge circuit is disposed (i.e., the side opposite to the side from which the bit lines are supplied with a charge by a precharge circuit) while performing ordinary operations of precharging the bit lines by the precharge circuit. One example of such a memory is disclosed in Japanese Laid-Open Patent Publication No. 2-12694.}",
+    "textBeforeTable": "Patent Citations Various other modifications will be apparent to and can be readily made by those skilled in the art without departing from the scope and spirit of this invention. Accordingly, it is not intended that the scope of the claims appended hereto be limited to the description as set forth herein, but rather that the claims be broadly construed. Furthermore, a charge of the precharge level is supplied to virtual ground lines other than the virtual ground line to be accessed, and the charge of the precharge level is not supplied to the virtual ground line to be accessed. Thus,, the access time can be significantly shortened. Furthermore, at the standby state, a charge of the precharge level can be maintained in all the bit lines. As a result, at the first access after the memory cell array gets out of the standby state, upon completing the activation of a word line corresponding to an input address, the sense operation for the bit line can be immediately performed. Thus, the access time can be significantly shortened. Furthermore, a circuit is disposed on the opposite side across a memory cell array storing data. While a column corresponding to an address is selected and accessed, the circuit precharges the bit lines corresponding to all the other columns. With such a structure, a charge of the precharge level can be constantly maintained in the bit lines. Thus, upon completing the",
+    "textAfterTable": "Jan 9, 2001 Nec Corporation Semiconductor memory device having a single transistor two functions as a GND/Y selecting transistor and a precharge selecting transistor US7436708 Mar 1, 2006 Oct 14, 2008 Micron Technology, Inc. NAND memory device column charging US7782677 Oct 6, 2008 Aug 24, 2010 Micron Technology, Inc. NAND memory device column charging US8040732 Aug 6, 2010 Oct 18, 2011 Micron Technology, Inc. NAND memory device column charging CN101421793B * Feb 27, 2007 Dec 24, 2014 \u7f8e\u5149\u79d1\u6280\u516c\u53f8 Nand memory device column charging WO2007103045A2 * Feb 27, 2007 Sep 13, 2007 Micron Technology Inc Nand memory device column charging * Cited by examiner Classifications U.S. Classification 365/203, 365/204 International Classification G11C7/12, G11C8/10, G11C16/06, G11C17/00, G11C7/10,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

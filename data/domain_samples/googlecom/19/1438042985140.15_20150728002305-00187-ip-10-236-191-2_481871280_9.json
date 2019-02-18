@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 6, 2001",
+            "Aug 1, 2005",
+            "Dec 9, 2009",
+            "Nov 2, 2010",
+            "Dec 17, 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "CC",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Certificate of correction",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: NETWORKS ASSOCIATES TECHNOLOGY, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:WOLFF, DANIEL JOSEPH;SPURLOCK, JOEL ROBERT;EDWARDS, JONATHAN LEWIS;REEL/FRAME:012361/0095;SIGNING DATES FROM 20011121 TO 20011127",
+            "Owner name: MCAFEE, INC.,CALIFORNIA Free format text: MERGER;ASSIGNOR:NETWORKS ASSOCIATES TECHNOLOGY, INC.;REEL/FRAME:016593/0812 Effective date: 20041119",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8"
+        ]
+    ],
+    "pageTitle": "Patent US7093002 - Handling of malware scanning of files stored within a file storage device of ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7093002?dq=6,208,537",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985140.15/warc/CC-MAIN-20150728002305-00187-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 481904239,
+    "recordOffset": 481871280,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6508=One of the problems with the approach illustrated in FIG. 1 is that the anti-virus scanner 40 may significantly impact the performance of the file server, particularly when the anti-virus scanner is configured to perform rigorous scanning of files (e.g. by scanning many file types, by employing multiple scanning algorithms, by scanning when files are both read and written, etc.). Furthermore, it is necessary to write a separate version of the anti-virus scanner for each operating system that may be used on the file server 30, for example Windows NT, Windows 2000, Novell Netware, etc.}",
+    "textBeforeTable": "Patent Citations Although particular embodiments have been described herein, it will be appreciated that the invention is not limited thereto and that many modifications and additions thereto may be made within the scope of the invention. For example, various combinations of the features of the following dependent claims can be made with the features of the independent claims without departing from the scope of the present invention. may be provided within a separate device, or alternatively in a multiprocessing environment might be provided within the same device as one or more of the proxy AV scanners 100. FIG. 8 could each be provided within separate hardware units, for example on separate desktop PCs, or alternatively in a multiprocessing environment could be located within a single device. Similarly, the file access request redirector 300 of FIGS. 8 and 9 It will be appreciated that the multiple proxy AV scanners 100 illustrated in , there are again multiple proxy AV scanners 100 arranged to service access requests directed to the file storage device 110, so as to reduce the likelihood of a bottleneck occurring. However, rather than performing any active load balancing, each individual client device (or alternatively each individual user) is configured to always direct its file access requests to a particular one of the proxy AV scanners. Hence, if there were twelve client devices on the network, four of them",
+    "textAfterTable": "Oct 9, 1998 May 8, 2001 Openwave Systems Inc. Shared-everything file storage for clustered system US6266774 * Dec 8, 1998 Jul 24, 2001 Mcafee.Com Corporation Method and system for securing, managing or optimizing a personal computer US6275937 * Nov 26, 1997 Aug 14, 2001 International Business Machines Corporation Collaborative server processing of content and meta-information with application to virus checking in a server network US6304904 * Dec 31, 1997 Oct 16, 2001 Intel Corporation Method and apparatus for collecting page-level performance statistics from a network device US6438576 * Mar 29, 1999 Aug 20, 2002 International Business Machines Corporation Method and apparatus of a collaborative proxy system for distributed deployment of object rendering US6446109 * Jun 29, 1998 Sep 3, 2002 Sun Microsystems, Inc. Application computing environment US6510464 * Dec 23, 1999 Jan 21, 2003 Verizon Corporate Services Group Inc. Secure",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

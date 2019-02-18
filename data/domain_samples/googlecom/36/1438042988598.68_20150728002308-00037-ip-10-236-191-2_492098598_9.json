@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Mar 19, 2007",
+            "Sep 28, 2007",
+            "Oct 8, 2007",
+            "Sep 23, 2011",
+            "Jul 9, 2015"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "REMI",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: HEWLETT-PACKARD DEVELOPMENT COMPANY, L.P., TEXAS Free format text: CHANGE OF NAME;ASSIGNOR:COMPAQ INFORMATION TECHNOLOGIES GROUP, L.P.;REEL/FRAME:019028/0515 Effective date: 20021001",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "Owner name: COMPAQ COMPUTER CORPORATION, TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:LESTER, ROBERT A.;MACLAREN, JOHN M.;FERGUSON, PATRICK L.;AND OTHERS;SIGNING DATES FROM 20010503 TO 20010507;REEL/FRAME:036048/0206"
+        ]
+    ],
+    "pageTitle": "Patent US6715116 - Memory data verify operation - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6715116?dq=6966484",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988598.68/warc/CC-MAIN-20150728002308-00037-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 492131951,
+    "recordOffset": 492098598,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{52589=The present application claims priority under 35 U.S.C \ufffd119(e) to provisional application No. 60/178,108 filed on Jan. 26, 2000.}",
+    "textBeforeTable": "Patent Citations While the invention may be susceptible to various modifications and alternative forms, specific embodiments have been shown by way of example in the drawings and will be described in detail herein. However, it should be understood that the invention is not intended to be limited to the particular forms disclosed. Rather, the invention is to cover all modifications, equivalents and alternatives falling within the spirit and scope of the invention as defined by the following appended claims. It should be noted that the error detection and scrubbing technique described herein may not distinguish between soft and hard errors. While corrected data may still be distributed through the output of the host controller 58, if the errors are hard errors, the scrubbing operation to correct the erroneous data words in the memory sub-system 40 will be unsuccessful. To solve this problem, software in the host controller 58 may track the number of data errors associated with a particular data word or memory location. After some pre-determined number of repeated errors are detected in the same data word or memory location, the host controller 58 may send an error message to a user or illuminate an LED corresponding to the device in which the repeat error is detected. Further, the host controller 58 may include a content addressable memory (CAM) controller 78. The CAM controller 78 provides a means of insuring that memory WRITEs are only performed when",
+    "textAfterTable": "* Cited by examiner Non-Patent Citations Reference 1 * B. Collins , D. Kitts , M. Devaney; Profiles in mass storage: a tale of two systems; Proceedings of the 1988 ACM/IEEE conference on Supercomputing Nov. 1988; pp. 222-228. * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US6883131 * Sep 28, 2001 Apr 19, 2005 Sun Microsystems, Inc. XOR processing incorporating error correction code data protection US6965537 Aug 31, 2004 Nov 15, 2005 Micron Technology, Inc. Memory system and method using ECC to achieve low power refresh US6987684 Dec 17, 2003 Jan 17, 2006 Integrated Device Technology, Inc. Content addressable memory (CAM) devices having multi-block error detection logic and entry selective error correction logic therein US6996686 Dec 23, 2002 Feb 7, 2006 Sun Microsystems, Inc.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

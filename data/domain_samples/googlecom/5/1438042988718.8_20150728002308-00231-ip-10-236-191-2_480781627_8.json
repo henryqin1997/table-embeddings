@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 7, 2000",
+            "May 24, 2002",
+            "Aug 19, 2005",
+            "Mar 24, 2009",
+            "Aug 11, 2010",
+            "Oct 24, 2014",
+            "Dec 17, 2014",
+            "Dec 17, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY",
+            "REMI",
+            "SULP",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Surcharge for late payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: DISCREET LOGIC INC., CANADA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:BOLDUC, MARC;REEL/FRAME:011382/0667 Effective date: 20000508",
+            "Owner name: AUTODESK CANADA INC., CANADA Free format text: CHANGE OF NAME;ASSIGNOR:DISCREET LOGIC INC.;REEL/FRAME:012897/0077 Effective date: 20020201",
+            "Owner name: AUTODESK CANADA CO.,CANADA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:AUTODESK CANADA INC.;REEL/FRAME:016641/0922 Effective date: 20050811",
+            "Owner name: AUTODESK, INC.,CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:AUTODESK CANADA CO.;REEL/FRAME:022445/0222 Effective date: 20090225",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 7",
+            "Year of fee payment: 8"
+        ]
+    ],
+    "pageTitle": "Patent US20020018640 - Editing video data - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US20020018640?dq=5,742,768",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00231-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 480807547,
+    "recordOffset": 480781627,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{33325=[0007] After 3:2 inserted video material has been produced, it may be necessary to perform post production activities resulting in material being modified. In order to do this, the inserted video is reconverted back into material at twenty-four frames per second whereafter (theoretically) edits could occur at any frame boundary. However, given that material must be written back to an inserted video stream, known systems only allow edits at the boundaries between a D Frame and an A Frame, that is to say, at the start of the insertion cycle. Consequently, material that has been processed in this way introduces a further limitation into the editing process which may result in artistic compromises being made or may result in the introduction of artefacts., 62236=[0060] At line 1005 the physical editing process is initiated by a command to cue to In pre-roll. This rewinds the tape recorder in accordance with established pre-roll techniques ensuring that the mechanism of the machine is fully in synchronism with the input video stream prior to the actual edit being initiated. This is then followed at line 1006 by the command to \u201cauto edit\u201d., 40736=[0023] At the video tape recorder 104, each of the generated frames is allocated a time-code, such as codes 223 to 227. In their full form, these time-codes represent hours: minutes: seconds: frames but in the example shown only entries for seconds and frames have been included. In the majority of situations, time-codes would often include an off-set such that, for example, the full time-code 223 may effectively start at the tenth hour and be fully represented as 10:00:00:01. Notionally, the originating progressive frames 201 to 209 also include time-codes, such as code 231 and in the system described subsequently, these codes are effectively reconstituted., 32285=[0005] A process of 2:3 insertion for converting from twenty-four frames per second to thirty frames per second is well known and results in five output frames being generated from four input frames on a repeating cycle. Input frames making up the cycle are usually referred to as A, B, C and D frames from which five output frames are generated. A further complication with commercial video systems is that each frame is generated from two interlaced fields therefore it is more correct to think in terms of generating ten output fields from four input frames., 50886=[0041] Manipulations have been performed on the computer system and from this it has been determined that the new material should be set-in from frame 03:14 and set-out at frame 05:07. In order to achieve an edit of this type without introducing artefacts, all material derived from frames 603, 604 and all the frames in-between up until frame 606 is to be replaced, whereas material derived from frame 602 and earlier frames along with material from frame 607 and later frames is to be retained without modification., 61647=[0058] At line 1003 edit tracks are identified usually in the form of a video track plus several audio tracks. The particular tracks under consideration are defined during the manipulation of the video data at step 504., 49600=[0039] When edits are specified by time-code, the code at the start of the edit is inclusive and that at the end of the edit is exclusive, therefore a set-in time-code represents a time-code of the first frame to be replaced and a set-out time-code represents the time-code of the frame after the last frame to be replaced. In the editing system, edits are defined at boundaries of 24P frames, after which the system is configured to reconstitute the edit from 2:3 pull down inserted frames in such a way as to faithfully restore the edit in the first format stored on video tape., 32891=[0006] The known 3:2 insertion process generates three output frames that are derived from a whole input frame. However, in addition to this, two frames are constructed in which interlaced fields are derived from different input frames such that when viewed as a still frame, there is a tendency for the image to jitter, particularly if movement has occurred between the two source frames., 51482=[0042] 24P frames 601 to 605 were generated from inserted frames 621 to 629 but frames 603 to 606 have been modified therefore similar modifications need to be made to appropriate frames/fields of the inserted video so that the appropriate portion of modified inserted video may be then written back to the tape recorder. Frame 622 at time-code 04:16 is derived from frame 602 at time-code 03:13 similarly, frame 623 is derived exclusively from frame 603. This facilitates an edit of the video material given that an edit cut may occur at the boundary between frame 622 and frame 623., 61924=[0059] At line 1004 an instruction to \u201cset the edit field\u201d is issued derived from the determination made at step 703. Thus, line 1004 identifies whether the edit is to be performed on the first field (F1) or on the second field (F2)., 47510=[0035] Steps 506 and 507 effectively take place in unison, with the system performing the 2:3 insertion process as the material is being written onto the tape, based on the reference A frame time-codes., 50224=[0040] An example of an edit is illustrated in FIG. 6. A clip consists of a sequence of 24P frames 601, 602, 603, 604 etc to frame 605 having time-codes 03:12 to 05:09; hours and minutes not being shown in order to improve clarity. Following operations performed to find a reference \u201cA\u201d frame on tape, the frame types are known, with frame 601 being of type D, frame 602 being of type A, frame 603 being of type B, frame 604 being of type C etc, with frame 606 being of type C, frame 607 being of type D and frame 605 being of type A., 41769=[0025] Input frame 202 is dealt with differently in that it inserts three output fields into the data stream consisting of field 213 and field 214, to make up output frame 00:02 while also making a contribution to output frame 00:03 by the insertion of data to field 215, this being the same data as inserted in field 213. Thus, on this occasion there has been a three field insertion., 41494=[0024] As illustrated in FIG. 2, a first output frame with time-code 00:01 is derived exclusively from input frame 201 or, looking at this the other way round, frame 201 inserts two data fields into the output stream., 61090=[0057] Step 707 of FIG. 7 generates instructions to the video tape recorder, over the serial interface 304, of the type illustrated in FIG. 10. At line 1001 a set-in instruction is sent instructing the video recorder to initiate an edit from the frame defined by the time-code calculated at step 701. At line 1002 a setout instruction is issued to the video tape recorder identifying a time-code for the end of the edit derived from the calculation performed at step 704., 56701=[0049] At step 704 a similar process is initiated for the end of the edit and a time-code is identified for the last first format type frame included in the edit. In the example shown in FIG. 6, this occurs at frame 627 which is derived from frames 606 and 607. Thus, on this occasion, a time-code is identified as 06:06 at step 704., 62676=[0061] As previously described, if the question asked at step 709 is answered in the negative, further action must be taken in order to ensure that the edit correctly terminates at the required field position. At step 710 the field edit flag is changed resulting in a further instruction being issued at step 711 as shown in FIG. 10. This takes the form of a further command at line 1011 similar to the command issued at line 1004, taking the form \u201cset edit field\u201d but on this occasion effectively deriving the field edit data from step 706.}",
+    "textBeforeTable": "Patent Citations [0062] Thus, these procedures facilitate accurate insertions to be made during an editing process such that editors are not restricted when source material includes inserted jitter frames and field accurate edits can be accomplished without the introduction of any artefacts. [0061] As previously described, if the question asked at step 709 is answered in the negative, further action must be taken in order to ensure that the edit correctly terminates at the required field position. At step 710 the field edit flag is changed resulting in a further instruction being issued at step 711 as shown in FIG. 10. This takes the form of a further command at line 1011 similar to the command issued at line 1004, taking the form \u201cset edit field\u201d but on this occasion effectively deriving the field edit data from step 706. [0060] At line 1005 the physical editing process is initiated by a command to cue to In pre-roll. This rewinds the tape recorder in accordance with established pre-roll techniques ensuring that the mechanism of the machine is fully in synchronism with the input video stream prior to the actual edit being initiated. This is then followed at line 1006 by the command to \u201cauto edit\u201d. [0059] At line 1004 an instruction to \u201cset the edit field\u201d is issued derived from the determination made at step 703. Thus, line",
+    "textAfterTable": "Aug 12, 2003 Feb 24, 2005 General Instrument Corporation Maintaining continuous film mode with bad edits US20090169168 * Dec 7, 2006 Jul 2, 2009 Nec Corporation Video Generation Device, Video Generation Method, and Video Generation Program * Cited by examiner Classifications U.S. Classification 386/278, 348/E07.015, G9B/27.012 International Classification H04N7/01, G11B27/034, G11B27/032 Cooperative Classification G11B2220/2545, G11B27/032, H04N7/0112, G11B2220/213, G11B27/034 European Classification G11B27/034, H04N7/01F Legal Events Date Code Event Description Dec 7, 2000 AS Assignment Owner name: DISCREET LOGIC INC., CANADA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:BOLDUC, MARC;REEL/FRAME:011382/0667 Effective date: 20000508",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jan 18, 1996",
+            "Aug 11, 1998",
+            "Sep 5, 2001",
+            "Aug 19, 2002",
+            "Nov 25, 2005",
+            "Dec 23, 2009",
+            "Dec 23, 2009",
+            "Feb 25, 2015"
+        ],
+        [
+            "Code",
+            "AS",
+            "CC",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "SULP",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Certificate of correction",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Surcharge for late payment",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: PRINCE CORPORATION, MICHIGAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:OLSON, THOMAS R.;GESCHKE, JAMES R.;GEERLINGS, STEVEN L.;REEL/FRAME:007867/0444;SIGNING DATES FROM 19960104 TO 19960117",
+            "",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "Year of fee payment: 11",
+            "Year of fee payment: 12",
+            "Owner name: VISTEON GLOBAL TECHNOLOGIES, INC., MICHIGAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:JOHNSON CONTROLS TECHNOLOGY COMPANY;REEL/FRAME:035091/0435 Effective date: 20140701"
+        ]
+    ],
+    "pageTitle": "Patent US5761094 - Vehicle compass system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5761094?dq=7,321,221",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988308.23/warc/CC-MAIN-20150728002308-00150-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 487768259,
+    "recordOffset": 487740689,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{48908=Circuit 44 essentially serves as an interface between sensor 40 and microprocessor 42, performing the same functions as the corresponding individual circuit components of the interfacing circuitry detailed in U.S. Pat. No. 4,953,305, issued on Aug. 4, 1990, entitled VEHICLE COMPASS WITH AUTOMATIC CONTINUOUS CALIBRATION, assigned to the present assignee and incorporated herein by reference. Interface circuit 44 preferably is an application specific integrated circuit (ASIC) essentially incorporating the individual circuits of the prior interfacing circuitry in a conventional manner to reduce the cost of the compass system. Circuit 44 converts the analog electrical signals supplied by sensing windings 60 and 62 to 8-bit digital signals (count values). These digital signals represent the magnetic field strength, in milligauss, detected by sensing windings 60 and 62 representing the two channels of compass information. In the preferred embodiment, each count of these count values represents five milligauss of magnetism. The digital signals are supplied to microprocessor 42 over serial communication line 45.}",
+    "textBeforeTable": "Patent Citations The above description is considered that of the preferred embodiments only. Modifications of the invention will occur to those skilled in the art and to those who make or use the invention. Therefore, it is understood that the embodiments shown in the drawings and described above are for illustrative purposes and are not intended to limit the scope of protection of the invention, which is defined by the following claims as interpreted according to the principles of patent law. Shown in FIG. 19 is an alternate embodiment of the compass system of the present invention in which GPS receiver 47 is replaced by a conventional RF transmitter/receiver or communication circuit 47' which is capable of communication with remote communication stations 75. Remote land-based stations 75 are located in each of the different variation zones, and are positioned such that the remote station closest to the vehicle is in the same variation zone as the vehicle. In this embodiment, the operator of the vehicle can request information relating to variation correction by operating one of buttons or actuators 38 of console 12 (FIG. 5). Normally, such a request would be made when the geographic area of operation of the vehicle is undergoing charge due to extensive travel. By pressing the appropriate button 38, a request signal is transmitted by transmitter/receiver 47' which is received by the remote station 75 closest to the current location of the vehicle.",
+    "textAfterTable": "US5046031 * Feb 6, 1989 Sep 3, 1991 Magnavox Government And Industrial Electronics Company Method and apparatus for automatic flux-gate compass calibration US5165269 * Oct 29, 1990 Nov 24, 1992 Iimorrow, Inc. Electronic flux gate compass calibration technique US5339246 * Mar 17, 1992 Aug 16, 1994 Zexel Corporation Diahatsu-Nissan Apparatus for correcting vehicular compass heading with the aid of the global positioning system US5345382 * May 15, 1992 Sep 6, 1994 Zexel Corporation Calibration method for a relative heading sensor US5390122 * May 7, 1993 Feb 14, 1995 Lectron Products, Inc. Method and apparatus for calibrating a vehicle compass system US5440303 * Jan 13, 1994 Aug 8, 1995 Mitsubishi Denki Kabushiki Kaisha Direction detecting apparatus and method thereof US5442340 * Apr 30, 1993 Aug 15, 1995 Prince Corporation Trainable RF transmitter including",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,70 @@
+{
+    "relation": [
+        [
+            "Property name",
+            "kind",
+            "nextPageToken",
+            "selfLink",
+            "nextLink",
+            "title",
+            "updated",
+            "id",
+            "items[]",
+            "etag"
+        ],
+        [
+            "Value",
+            "string",
+            "string",
+            "string",
+            "string",
+            "string",
+            "datetime",
+            "string",
+            "list",
+            "etag"
+        ],
+        [
+            "Description",
+            "Identifies this resource as a collection of activities. Value: \"plus#activityFeed\".",
+            "The continuation token, which is used to page through large result sets. Provide this value in a subsequent request to return the next page of results.",
+            "Link to this activity resource.",
+            "Link to the next page of activities.",
+            "The title of this collection of activities, which is a truncated portion of the content.",
+            "The time at which this collection of activities was last updated. Formatted as an RFC 3339 timestamp.",
+            "The ID of this collection of activities. Deprecated.",
+            "The activities in this page of results.",
+            "ETag of this response for caching purposes."
+        ],
+        [
+            "Notes",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Activities: list \u00a0 | \u00a0 Google+ Platform for Web \u00a0 | \u00a0 Google Developers",
+    "title": "",
+    "url": "https://developers.google.com/+/web/api/rest/latest/activities/list",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988310.3/warc/CC-MAIN-20150728002308-00251-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 871939239,
+    "recordOffset": 871925533,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{13262=Last updated May 28, 2015.}",
+    "lastModified": "Thu, 28 May 2015 08:29:00 GMT",
+    "textBeforeTable": "} ] activities Resource \"items\": [ \"id\": string, \"updated\": datetime, \"title\": string, \"nextLink\": string, \"selfLink\": string, \"nextPageToken\": string, \"etag\": etag, \"kind\": \"plus#activityFeed\", {  If successful, this method returns a response body with the following structure: Response  Do not supply a request body with this method. Request body     The continuation token, which is used to page through large result sets. To get the next page of results, set this parameter to the value of \"nextPageToken\" from the previous response.  string pageToken    The maximum number of activities to include in the response, which is used for paging. For any response, the actual number returned might be less than the specified maxResults. Acceptable values are 1 to 100, inclusive. (Default: 20)  unsigned integer maxResults   Optional query parameters    The ID of the user to get activities for. The special value \"me\" can be used to indicate the authenticated user.  string userId     \"public\": All public activities created by the specified user.  The collection of activities to list. Acceptable values are: string collection Path parameters Description Value Parameter name Parameters GET https://www.googleapis.com/plus/v1/people/userId/activities/collection HTTP request Request The collection parameter",
+    "textAfterTable": "Examples Note: The code examples available for this method do not represent all supported programming languages (see the client libraries page for a list of supported languages). Java Uses the Java client library. // This sample assumes a client object has been created. // To learn more about creating a client, check out the starter: // https://developers.google.com/+/quickstart/java Plus.Activities.List listActivities = plus.activities().list(\"me\", \"public\"); listActivities.setMaxResults(5L); // Execute the request for the first page ActivityFeed activityFeed = listActivities.execute(); // Unwrap the request and extract the pieces we want List<Activity> activities = activityFeed.getItems(); // Loop through until we arrive at an empty page while (activities != null) { for (Activity activity : activities) { System.out.println(\"ID \" + activity.getId() + \" Content: \" + activity.getObject().getContent()); } // We will know we are on the last page when the next page token is null. // If this is the case, break. if (activityFeed.getNextPageToken() == null) { break; } // Prepare to request the next page of activities listActivities.setPageToken(activityFeed.getNextPageToken()); // Execute and process the next page request activityFeed = listActivities.execute(); activities = activityFeed.getItems(); } PHP Uses the PHP client library. # This sample assumes a client object has been created. # To learn more about creating a client, check out the starter: # https://developers.google.com/+/quickstart/php $optParams = array('maxResults' => 5); $activities = $plus->activities->listActivities('me', 'public', $optParams); foreach ($activities['items'] as $activity) { $actor = $activity['actor']; print \"{$actor['displayName']} says:",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

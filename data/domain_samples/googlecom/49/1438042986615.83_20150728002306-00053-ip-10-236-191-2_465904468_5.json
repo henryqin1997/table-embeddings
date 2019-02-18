@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Cited Patent",
+            "US3366735 *",
+            "US3694806 *",
+            "US3720838 *",
+            "US3803443 *",
+            "US3815090 *",
+            "US3859515 *"
+        ],
+        [
+            "Filing date",
+            "Aug 17, 1964",
+            "Aug 20, 1970",
+            "Nov 3, 1971",
+            "Aug 18, 1972",
+            "Sep 26, 1972",
+            "Oct 2, 1973"
+        ],
+        [
+            "Publication date",
+            "Jan 30, 1968",
+            "Sep 26, 1972",
+            "Mar 13, 1973",
+            "Apr 9, 1974",
+            "Jun 4, 1974",
+            "Jan 7, 1975"
+        ],
+        [
+            "Applicant",
+            "Navy Usa",
+            "Bendix Corp",
+            "Us Navy",
+            "Northrop Corp",
+            "Siemens Ag",
+            "Burroughs Corp"
+        ],
+        [
+            "Title",
+            "Edge signal circuit for automatic tracking system which generates edge signals for edges at any angle to the direction of the scanning lines",
+            "Character recognition system",
+            "Multi-aperture image dissector tube",
+            "Charged particle beam scanning device with electrostatic control",
+            "Method and circuit arrangement for automatic recognition of characters with the help of a translation invariant classification matrix",
+            "Method and apparatus for signal spectrum analysis by hadamard transform"
+        ]
+    ],
+    "pageTitle": "Patent US3969699 - Image dissector with many apertures for Hadamard encoding - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US3969699?dq=6377161",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986615.83/warc/CC-MAIN-20150728002306-00053-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 465921895,
+    "recordOffset": 465904468,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations When the required 49 scans have been made of the increment of the total image which was represented by FIG. 6, horizontal and/or vertical deflection voltage generators advance the deflection of the image to the next portion to be considered whereupon the Hadamard coding and decoding is repreated. G = approximately 1/2 N1/2 The 7 \ufffd 7 Hadamard transform is shown in FIG. 14; the inverse of the transform S- 1 is diagrammed in FIG. 15 and the transpose of the inverse of the transform (S- 1)T is diagrammed in FIG. 16. The electron picture which was described in FIG. 6 and as it appears in the transform of FIG. 8 is now decoded. The Hadamard image information which has been stored in suitable storage means 40 is fed to inverse transform means 41 to compute the inverse transform in accordance with the relation S- 1 \ufffd Hadamard image \ufffd (S- 1)T = ([N + 1]/2)2 (Input). The inverse transform means may be a computer programmed with the inverse of the coding matrix. FIG. 17 diagrammatically shows this operation. First in a premultiplication step the inverse transform S- 1 is matrixmultiplied times the Hadamard image FIG. 17a. The intermediate product obtained is then post matrix-multiplied by the transpose of the inverse transform (S- 1)T In FIG. 17 b to provide a decoded output which is equal to ([N+ 1]/2) (input), where N is the number",
+    "textAfterTable": "* Cited by examiner Non-Patent Citations Reference 1 * Decker, \"Hadamard-Transform Image Scanning,\" Applied Optics, vol. 9, No. 6, June, 1970. pp. 1392-1395. 2 * ETT, \"Character Recognition Image Dissector,\" IBM Tech. Disclosure Bulletin, vol. 12, No. 9, Feb. 1970. pp. 1339-1340. * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US4209780 * May 2, 1978 Jun 24, 1980 The United States Of America As Represented By The United States Department Of Energy Coded aperture imaging with uniformly redundant arrays US4300123 * Jan 2, 1979 Nov 10, 1981 Westinghouse Electric Corp. Optical reading system US4360797 * Oct 11, 1979 Nov 23, 1982 The United States Of America As Represented By The United States Department Of",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

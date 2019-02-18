@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Nov 10, 2003",
+            "Aug 27, 2008",
+            "Nov 3, 2009",
+            "Jul 23, 2012",
+            "Aug 28, 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "",
+            "Year of fee payment: 4",
+            "Owner name: IPG ELECTRONICS 502 LIMITED Free format text: ASSIGNMENT OF ONE HALF (1/2) OF ALL OF ASSIGNORS RIGHT, TITLE AND INTEREST;ASSIGNOR:ELECTRONICS AND TELECOMMUNICATIONS RESEARCH INSTITUTE;REEL/FRAME:023456/0363 Effective date: 20081226",
+            "Owner name: PENDRAGON ELECTRONICS AND TELECOMMUNICATIONS RESEA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:IPG ELECTRONICS 502 LIMITED;ELECTRONICS AND TELECOMMUNICATIONS RESEARCH INSTITUTE;SIGNING DATES FROM 20120410 TO 20120515;REEL/FRAME:028611/0643",
+            "Year of fee payment: 8"
+        ]
+    ],
+    "pageTitle": "Patent US6861981 - Normalizing apparatus for adaptive beamforming in smart antenna receiving system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6861981?dq=6,272,646",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987228.91/warc/CC-MAIN-20150728002307-00161-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 467508863,
+    "recordOffset": 467491141,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6464=FIG. 1 is a block diagram illustrating the structure of a general smart antenna receiving system. Referring to FIG. 1, M antenna arrays 100-1, 100-2, . . . , and 100-M have the same characteristics and are arranged at predetermined intervals (M is an integer greater than 2). Symbol signals SR1, SR2, . . . , and, SRM which are received via antenna arrays 100-1, 1002, . . . , and 100-M, are analog signals, each signal including an in-phase (I) signal and a quadrature-phase (Q) signal. Therefore, the total number of received symbol signals is 2M. The 2M symbol signals are input to a pre-beamforming block 110. The pre-beamforming block 110 converts the input symbol signals from analog signals into digital signals, and performs over-sampling at a frequency higher by N times, and outputs the over sampled signals. Therefore, the total number of symbol signals output from the pre-beamforming block 110 is 2M\ufffdN. The symbol signals output from the pre-beamforming block 110 are input to a beamforming unit 130 and a decimator 120. The decimator 120 selects, as a sample, the most optimized one out of the N over-sampled symbol signals and outputs 2M optimized-symbol signals.}",
+    "TableContextTimeStampAfterTable": "{17272=This application claims the priority of Korean Patent Application No. 2002-74353 filed on Nov. 27, 2002, in Korean Intellectual Property Office, the disclosure of which is incorporated herein in its entirety by reference.}",
+    "textBeforeTable": "Patent Citations While this invention has been particularly shown and described with reference to preferred embodiments thereof, ft will be understood by those skilled in the art that various changes in form and details may be made therein without departing from the spirit and scope of the invention as defined by the appended claims. As described above, in the present invention, a normalizing apparatus for adaptive beamforming in a smart antenna receiving system performs a normalizing process by performing multiplication and division operations using addition and subtraction operations. For this reason, it is possible to remarkably reduce the size of hardware required for the system and increase the speed of processing signals in real-time. Accordingly, a smart antenna base station, according to the present invention, can support many more mobile users. As shown in Equations (1) and (2), the normalizing process performed in an NLMS algorithm requires performing multiplication and division operations several times. Let us assume that the total number of antennae is eight, speed of data input is 30.72 MHz, the resolution of an input byte is 8 bits, and the beam forming operational frequency is equivalent to the a chip rate. In this case, many operation units, e.g., sixteen 8\ufffd8 multipliers, sixteen 16-bit adders, and sixteen 22/14 dividers, are required. However, a normalizing apparatus according to the present invention, which is realized by hardware using binary logarithmic and binary inverse logarithmic principles,",
+    "textAfterTable": "Aug 8, 1997 Feb 19, 1998 Northern Telecom Ltd Eliminating division in nlms algorithm * Cited by examiner Non-Patent Citations Reference 1 A Pipeline Architecture of Quadratic Adaptive Volterra Filters Based on NLMS Algorithm, pp. II-785-II-788. 2 * F. Albu et al., The Gauss-Seidel fast affine projection algorithm, IEEE Workshop on Signal Processing Systems, p. 109-114, Oct. 2002.* * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US8115678 Jul 2, 2009 Feb 14, 2012 Raytheon Company Generating an array correlation matrix using a single receiver system US8259943 Sep 8, 2008 Sep 4, 2012 Htc Corporation Method for decrypting serial transmission signal Classifications",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

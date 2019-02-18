@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 21, 2001",
+            "Aug 7, 2007",
+            "Aug 28, 2007",
+            "Jul 15, 2010",
+            "Jun 25, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "CC",
+            "CC",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Certificate of correction",
+            "Certificate of correction",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: DATAPLOW, INC., MINNESOTA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:SOLTIS, STEVEN R.;REEL/FRAME:012412/0411 Effective date: 20011220",
+            "",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8"
+        ]
+    ],
+    "pageTitle": "Patent US7165096 - Storage area network file system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7165096?dq=6721967",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00002-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 472191263,
+    "recordOffset": 472151437,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations The invention is not to be taken as limited to all of the details thereof as modifications and variations thereof may be made without departing from the spirit or scope of the invention. For instance, the present invention was described and shown with the SAN and LAN networks appearing as separate, physical networks. However, as is well known in the prior art, it is possible to send SAN protocols and LAN protocols over the same physical network. The two networks are distinguishable by the protocols that are used to communicate between nodes on the network. In addition, although it is not shown in the drawings, it would be possible to use a client computer in the present invention as a file server that serves file requests from other computers. These other computers would likely have no access to the storage area network, but would have the ability to send file requests to the client computer of the present invention over a local area network. Because many such modifications and variations are present, the scope of the present invention is not to be limited to the above description, but rather is to be limited only by the following claims At step 418, the file is fully allocated for the request range. The Nasan write function writes the real-data to the SAN-attached devices 126 via the SAN write data-path 326. Once this real-data write completes, at",
+    "textAfterTable": "US5764972 Jun 7, 1995 Jun 9, 1998 Lsc, Inc. Archiving file system for data servers in a distributed network environment US5802366 * Oct 11, 1994 Sep 1, 1998 Auspex Systems, Inc. Parallel I/O network file server architecture US5828876 Jul 31, 1996 Oct 27, 1998 Ncr Corporation File system for a clustered processing system US5909540 May 2, 1997 Jun 1, 1999 Mangosoft Corporation System and method for providing highly available data storage using globally addressable memory US5931918 Jul 30, 1997 Aug 3, 1999 Auspex Systems, Inc. Parallel I/O network file server architecture US5933603 Jun 10, 1996 Aug 3, 1999 Emc Corporation Video file server maintaining sliding windows of a video data set in random access memories of stream server computers for immediate video-on-demand service beginning at any specified location US5978773 Oct 3, 1995 Nov 2, 1999 Neomedia Technologies, Inc. System and method for using an ordinary article of commerce to access a remote computer",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

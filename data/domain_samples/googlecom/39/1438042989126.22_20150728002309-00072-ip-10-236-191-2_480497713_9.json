@@ -1,0 +1,70 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 16, 2005",
+            "Jun 20, 2006",
+            "Jul 31, 2009",
+            "Oct 12, 2009",
+            "Oct 13, 2009",
+            "Jun 27, 2011",
+            "Mar 9, 2012",
+            "Mar 15, 2013",
+            "Mar 26, 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: UNISYS CORPORATION, PENNSYLVANIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:MAZZAGATTI, JANE CAMBPELL;REEL/FRAME:017352/0910 Effective date: 20051213",
+            "Owner name: CITIBANK, N.A.,NEW YORK Free format text: SECURITY AGREEMENT;ASSIGNORS:UNISYS CORPORATION;UNISYS HOLDING CORPORATION;REEL/FRAME:018003/0001 Effective date: 20060531",
+            "Owner name: UNISYS CORPORATION,PENNSYLVANIA Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:CITIBANK, N.A.;REEL/FRAME:023086/0255 Effective date: 20090601 Owner name: UNISYS HOLDING CORPORATION,DELAWARE Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:CITIBANK, N.A.;REEL/FRAME:023086/0255 Effective date: 20090601",
+            "",
+            "",
+            "Owner name: GENERAL ELECTRIC CAPITAL CORPORATION, AS AGENT, IL Free format text: SECURITY AGREEMENT;ASSIGNOR:UNISYS CORPORATION;REEL/FRAME:026509/0001 Effective date: 20110623",
+            "Year of fee payment: 4",
+            "Owner name: UNISYS CORPORATION, PENNSYLVANIA Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:DEUTSCHE BANK TRUST COMPANY;REEL/FRAME:030004/0619 Effective date: 20121127",
+            "Owner name: UNISYS CORPORATION, PENNSYLVANIA Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:DEUTSCHE BANK TRUST COMPANY AMERICAS, AS COLLATERAL TRUSTEE;REEL/FRAME:030082/0545 Effective date: 20121127"
+        ]
+    ],
+    "pageTitle": "Patent US7424480 - System and method for storing and accessing data in an interlocking trees ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7424480?dq=6008737",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989126.22/warc/CC-MAIN-20150728002309-00072-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 480542043,
+    "recordOffset": 480497713,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6435=In one embodiment of the invention, the dataset elements are comprised of fields of information separated by a delimiter such as but not limited to the blank character. In one embodiment, the dataset elements are derived from the input, although it will be understood that the invention is not so limited, as described above. Dataset elements encountered thus far in the input data are salesman name, (Bill and Tom), days of the week (Monday, Tuesday), number of items (40, 103, 100, 80, 13), status (sold, trial) and state (PA, NJ). In one embodiment of the invention, the interlocking trees datastore 1000 of FIG. 10 will result from this input. In FIG. 10, for space reasons, the first portion of the node is not shown. For example, although node 1002 is labeled \u201cBill\u201d, node 1002 actually represents \u201cBOT-Bill\u201d. Although node 1002 is labeled \u201cTuesday\u201d, node 1004 actually represents \u201cBOT-Bill-Tuesday\u201d and so on.}",
+    "TableContextTimeStampAfterTable": "{123310=The number of units sold may be determined by following the pointers from node 1024 to the root node representing the number 40 (not shown). It will be understood that this step can be performed after the intersection of end products is found or this information may be retrieved and stored as the branch is traversed., 31186=This application is a Divisional of our earlier filed U.S. patent application, Ser. No. 10/385,421, filed on Mar. 10, 2003, now U.S. Pat. No. 6,961,733, entitled SYSTEM AND METHOD FOR STORING AND ACCESSING DATA IN AN INTERLOCKING TREES DATASTORE, whose disclosure is incorporated by reference herein and which are assigned to the same assignee as this invention.}",
+    "textBeforeTable": "Patent Citations It is noted that the foregoing examples have been provided merely for the purpose of explanation and are in no way to be construed as limiting of the present invention. For example, the interlocking trees datastore can be implemented using object-oriented technologies, procedural technologies, a hybrid thereof or any other suitable methodology. Furthermore, although the examples presented show the dataset elements stored in a memory, one of skill in the art will understand that this functionality can be implemented in many different ways. For example, the invention contemplates the use of many different sets of dataset elements of many different universes stored on multiple remotely located machines. The methods and system described above may be embodied in the form of program code (i.e., instructions) stored on a computer-readable medium, such as a floppy diskette, CD-ROM, DVD-ROM, DVD-RAM, hard disk drive, or any other machine-readable storage medium, wherein, when the program code is loaded into and executed by a machine, such as a computer, the machine becomes an apparatus for practicing the invention. The present invention may also be embodied in the form of program code that is transmitted over some transmission medium, such as over electrical wiring or cabling, through fiber optics, over a network, including the Internet or an intranet, or via any other form of transmission, wherein, when the program code is received and loaded into and executed by a machine, such",
+    "textAfterTable": "Apr 8, 1997 Aug 15, 2000 Drexel University Multiresolutional decision support system US6115715 Jun 29, 1998 Sep 5, 2000 Sun Microsystems, Inc. Transaction management in a configuration database US6137492 * Apr 3, 1997 Oct 24, 2000 Microsoft Corporation Method and system for adaptive refinement of progressive meshes US6138115 Feb 5, 1999 Oct 24, 2000 International Business Machines Corporation Method and system for generating a decision-tree classifier in parallel in a multi-processor system US6138117 Apr 29, 1998 Oct 24, 2000 International Business Machines Corporation Method and system for mining long patterns from databases US6141655 * Sep 23, 1997 Oct 31, 2000 At&T Corp Method and apparatus for optimizing and structuring data by designing a cube forest data structure for hierarchically split cube forest template US6144962 Apr 11, 1997 Nov 7, 2000 Mercury Interactive Corporation Visualization of web sites and hierarchical data structures US6160549 Jan 21, 1997 Dec 12,",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

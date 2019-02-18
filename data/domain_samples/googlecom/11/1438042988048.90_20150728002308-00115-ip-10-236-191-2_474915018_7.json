@@ -1,0 +1,67 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US8032521 *",
+            "US8131688 *",
+            "US8386461 *",
+            "US8645334 *",
+            "US20110055174 *",
+            "US20120036366 *"
+        ],
+        [
+            "Filing date",
+            "Aug 8, 2007",
+            "Aug 26, 2009",
+            "",
+            "Feb 27, 2009",
+            "Aug 26, 2009",
+            ""
+        ],
+        [
+            "Publication date",
+            "Oct 4, 2011",
+            "Mar 6, 2012",
+            "Feb 26, 2013",
+            "Feb 4, 2014",
+            "Mar 3, 2011",
+            "Feb 9, 2012"
+        ],
+        [
+            "Applicant",
+            "International Business Machines Corporation",
+            "Lsi Corporation",
+            "Qualcomm Incorporated",
+            "Andrew LEPPARD",
+            "Lsi Corporation",
+            "Microsoft Corporation"
+        ],
+        [
+            "Title",
+            "Managing structured content stored as a binary large object (BLOB)",
+            "Storage system data compression enhancement",
+            "Method and apparatus for generating hash mnemonics",
+            "Minimize damage caused by corruption of de-duplicated data",
+            "Storage system data compression enhancement",
+            "Secure and verifiable data handling"
+        ]
+    ],
+    "pageTitle": "Patent US7814129 - Method and apparatus for storing data with reduced redundancy using data ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7814129?ie=ISO-8859-1&dq=6,563,928",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00115-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 474954411,
+    "recordOffset": 474915018,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6590=If the index is stored on disk, random access reads and writes to the index can be time consuming. So if there is a chance of an overflow from one slot into another, it makes sense to read and write more than one slot at a time. One way to do this is to divide the table into buckets 240 (FIG. 24) and read and write buckets instead of entries. For example, one could replace a table of 1024 slots with a table of 64 buckets each of which contains 16 slots. To search for an entry, a bucket can be read and a linear search performed within the bucket (or possibly a binary search if the keys in the bucket are sorted). Only occasionally will a bucket fill, in which case the overflow can move to the next bucket. So long as the table is not allowed to grow too full, overflow chains should not become very long.}",
+    "TableContextTimeStampAfterTable": "{84773=Hashes are relatively wide. If there were (say) 1000 subblocks within a cluster, the subblock identifier should only need to be about 10 bits wide, yet a typical hash is 128 bits wide. Use of the position (measured in subblocks) of a subblock within its cluster is more space efficient, but breaks down if subblocks are deleted from the cluster (as might happen if a BLOB containing the subblocks is deleted from the store). To avoid this, in exemplary embodiments, a unique identifier can be allocated to each subblock in the cluster (unique within the cluster). This identifier can be stored with each subblock's metadata in the cluster's directory. Such an identifier can be narrow enough (in bits) but still distinctly identify a subblock, even if the subblocks are shifted within the cluster., 68878=Wide hash functions: Wide hash functions are similar to narrow hash functions except that their output values are significantly wider. At a certain point this quantitative difference implies a qualitative difference. In a wide hash function, the output value is so wide (e.g. 128 bits) that the probability of any two randomly chosen blocks having the same hashed value is negligible (e.g. about one in 1038). This property enables these wide hashes to be used as \u201cidentities\u201d of the blocks of data from which they are calculated. For example, if entity E1 has a block of data and sends the wide hash of the block to an entity E2, then if entity E2 has a block that has the same hash, then the a-priori probability of the blocks actually being different is negligible. The only catch is that wide hash functions are not designed to be non-invertible. Thus, while the space of (say) 2128 values is too large to search in the manner described for narrow hash functions, it may be easy to analyse the hash function and calculate a block corresponding to a particular hash. Accordingly, E1 could fool E2 into thinking E1 had one block when it really had a different block. Examples of this class: any 128-bit CRC algorithm., 87642=Comparing the end of subblock A with the end of subblock E reveals that they share the same (say) 123-byte suffix. Similarly, comparing the beginning of subblock D with the beginning of subblock F reveals that they share the same (say) 1045-byte prefix. These are called partial subblock matches., 31998=This application claims the benefit of U.S. Provisional Application No. 60/661,273, filed Mar. 11, 2005, which is incorporated herein by reference in its entirety.}",
+    "textBeforeTable": "Patent Citations It will be appreciated by those skilled in the art that the invention is not restricted in its use to the particular application described. Neither is the present invention restricted in its preferred embodiment with regard to the particular elements and/or features described or depicted herein. It will be appreciated that various modifications can be made without departing from the principles of the invention. Therefore, the invention should be understood to include all such modifications within its scope. XXIV. A Note on Scope For example, in a security environment, it may be advantageous not to store the BLOB content itself, but use BLOB metadata to analyse BLOBs in relation to previously encountered BLOBs. By using the storage structures and metadata representative of existing BLOBs, a store can analyse a document with respect to a body of previously encountered BLOBs without requiring access to the previously encountered BLOBs. This could be applied in, for example, a secure gateway. ). In such embodiments, all the storage structures and metadata could be constructed, but the BLOB/subblock content not stored. An embodiment such as this could be useful in applications where a BLOB BLOB2 must be analysed in relation to a previously encountered BLOB 1, but in which neither BLOB must actually be stored. FIG. 35 An embodiment could be created that is identical to any of the embodiments previously discussed, but which does",
+    "textAfterTable": "US5857203 * Jul 29, 1996 Jan 5, 1999 International Business Machines Corporation Method and apparatus for dividing, mapping and storing large digital objects in a client/server library system US5860153 Nov 22, 1995 Jan 12, 1999 Sun Microsystems, Inc. Memory efficient directory coherency maintenance US5940841 Jul 11, 1997 Aug 17, 1999 International Business Machines Corporation Parallel file system with extended file attributes US5990810 Feb 15, 1996 Nov 23, 1999 Williams; Ross Neil Method for partitioning a block of data into subblocks and for storing and communcating such subblocks US6061678 * Oct 31, 1997 May 9, 2000 Oracle Corporation Approach for managing access to large objects in database systems using large object indexes US6119123 * Dec 2, 1997 Sep 12, 2000 U.S. Philips Corporation Apparatus and method for optimizing keyframe and blob retrieval and storage US6374266 Jul 24, 1999 Apr 16, 2002 Ralph Shnelvar Method and apparatus for storing information in",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

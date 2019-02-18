@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jan 24, 2001",
+            "Jul 12, 2001",
+            "Aug 20, 2002",
+            "Jul 7, 2005",
+            "Feb 7, 2007",
+            "Jul 1, 2009"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "Owner name: MASCOTECH, INC., MICHIGAN Free format text: TERMINATION AND RELEASE OF SECURITY INTEREST IN PATENT RIGHTS;ASSIGNOR:JPMORGAN CHASE BANK, N.A. (F/K/A THE CHASE MANHATTAN BANK), AS COLLATERAL AGENT;REEL/FRAME:018861/0449 Effective date: 20070111",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US5715426 - Set-associative cache memory with shared sense amplifiers - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5715426?dq=patent:4807115",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00245-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 463423455,
+    "recordOffset": 463400095,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{18132=This application is a continuation of application Ser. No. 07/875,766 filed Apr. 29, 1992, now abandoned.}",
+    "textBeforeTable": "Patent Citations Various modifications will become possible for those skilled in the art after receiving the teachings of the present disclosure without departing from the scope thereof. According to the invention, a selector is disposed in a macro block to switch and collect bit lines. Since ways are switched from one to another outside a memory array, the layout of an output data bus will not be complicated. The same bits of different ways may be collected into a group to share a single sense amplifier. Such group may be repeatedly prepared, to remarkably simplify a fabrication of memory cell arrays. Since each sense amplifier is shared by different ways according to the invention, it is not necessary to arrange each sense amplifier within a bit pitch. This may simplify layout designing of the sense amplifiers. Another cache memory according to the invention employs an s-way set-associative mapping system (s being an integer larger than 2). In this cache memory, one sense amplifier is shared by different ways, to reduce the number of sense amplifiers as well as cutting down power consumption of the cache memory to, for example, one fourth of the prior art. In summary, a cache memory according to the invention activates, in a read operation, sense amplifiers according to hit signals from tag memories. The sense amplifiers are activated only when a hit occurs. If a cache miss is detected, or if no cache",
+    "textAfterTable": "Mitsubishi Denki Kabushik Kaisha Cache memory with plurality of congruence sets and sense amplifiers shared among the congruence sets JPH023147A * Title not available JPH02244479A * Title not available * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US5920888 * Feb 12, 1997 Jul 6, 1999 Kabushiki Kaisha Toshiba Cache memory system having high and low speed and power consumption modes in which different ways are selectively enabled depending on a reference clock frequency US5982675 * Nov 18, 1997 Nov 9, 1999 Kabushiki Kaisha Toshiba Cache memory and microprocessor having the same US6016534 * Jul 30, 1997 Jan 18, 2000 International Business Machines Corporation Data processing system for controlling operation of a sense amplifier in a cache",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

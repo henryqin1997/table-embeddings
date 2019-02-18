@@ -1,0 +1,71 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US6081849 *",
+            "US6205494 *",
+            "US6247040 *",
+            "US7373448",
+            "US8635379",
+            "US20040068591 *",
+            "US20040123027 *"
+        ],
+        [
+            "Filing date",
+            "Oct 1, 1996",
+            "Dec 18, 1998",
+            "Sep 30, 1996",
+            "Mar 29, 2004",
+            "May 6, 2011",
+            "Oct 3, 2002",
+            "Oct 1, 2003"
+        ],
+        [
+            "Publication date",
+            "Jun 27, 2000",
+            "Mar 20, 2001",
+            "Jun 12, 2001",
+            "May 13, 2008",
+            "Jan 21, 2014",
+            "Apr 8, 2004",
+            "Jun 24, 2004"
+        ],
+        [
+            "Applicant",
+            "Lsi Logic Corporation",
+            "Western Digital Corporation",
+            "Lsi Logic Corporation",
+            "International Business Machines Corporation",
+            "Samsung Electronics Co., Ltd",
+            "Workman Michael Lee",
+            "Workman Michael Lee"
+        ],
+        [
+            "Title",
+            "Method and structure for switching multiple contexts in storage subsystem target device",
+            "Controller with automatic generation of linked list of data transfer descriptors for sequential commands, with linked list being used for execution of sequential data transfers",
+            "Method and structure for automated switching between multiple contexts in a storage subsystem target device",
+            "Method, system, and program for building a queue to test a device",
+            "Data storage device and method of operating the same",
+            "Systems and methods of multiple access paths to single ported storage devices",
+            "Systems and methods of multiple access paths to single ported storage devices"
+        ]
+    ],
+    "pageTitle": "Patent US5752083 - Method for receiving a first SCSI command, subsequent receiving second SCSI ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5752083?dq=6480844",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987228.91/warc/CC-MAIN-20150728002307-00295-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 463760611,
+    "recordOffset": 463722927,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{27527=This application is a division of application Ser. No. 08/205,002, filed Mar. 1, 1994, still pending.}",
+    "textBeforeTable": "Patent Citations Although specific embodiments of the present invention have been described for instructional purposes in order to illustrate the present invention, the present invention is not limited thereto. The definition of an autotransfer command for purposes of determining whether to execute a command without waiting for a communication from a microprocessor can be different from the specific definition used by the sequencer of the specific embodiment described. In some embodiments, some bits in the reserved fields of a command may be set and the command may nevertheless be considered an autotransfer command. Moreover, in some embodiments, a microprocessor may be interrupted more than two times for the execution of an autotransfer command. Although the specific embodiment of the CDB parsing state machine deparses fields of information into a set of transparent D-latches, other information storage devices may be used. The information storage devices in some embodiments are a plurality of microprocessor accessible registers which together comprise a first-in-first-out memory. In some embodiments, the SCSI interface portion is modular and can be realized on a single integrated circuit along with various other circuits. The processor may, for example, be integrated onto the same chip as the disk controller. In other embodiments, a disk controller integrated circuit operates in conjunction with two microprocessors external to the disk controller integrated circuit. Accordingly, various adaptations, modifications and substitutions of various of the features of the specific embodiments described can be practiced",
+    "textAfterTable": "US4901232 * Jan 9, 1987 Feb 13, 1990 Data General Corporation I/O controller for controlling the sequencing of execution of I/O commands and for permitting modification of I/O controller operation by a host processor US4965801 * Sep 28, 1987 Oct 23, 1990 Ncr Corporation Architectural arrangement for a SCSI disk controller integrated circuit US5022059 * Jul 13, 1989 Jun 4, 1991 Nec Corporation Counter circuit presettable with a plurality of count values US5065313 * Feb 8, 1991 Nov 12, 1991 Dell Usa Corporation Digital computer system having circuit for regulation of I/O command recovery time US5097439 * Dec 14, 1990 Mar 17, 1992 Quantum Corporation Expansible fixed disk drive subsystem for computer US5109500 * Oct 28, 1987 Apr 28, 1992 Hitachi, Ltd. Disk drive control unit having sets of operating command and operation length information and generating end signal based upon operation length information US5129072",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

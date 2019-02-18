@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 15, 1988",
+            "May 1, 1989",
+            "Jan 24, 1994",
+            "Sep 16, 1997",
+            "Dec 6, 2001"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: PARKER ELECTRONICS, INC., FLORIDA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:PARKER, EDWARD;PARKER, JEFFREY L.;REEL/FRAME:004999/0734 Effective date: 19881213",
+            "Owner name: CARRIER CORPORATION, NEW YORK Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNOR:PARKER ELECTRONICS INC.;REEL/FRAME:005091/0988 Effective date: 19890501",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US4947928 - VAV system coordinator - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4947928?dq=6,970,917",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00338-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 483555351,
+    "recordOffset": 483525674,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{80009=Thermostat Control System, Ser. No. 013869, filed Feb. 12, 1987; now U.S. Pat. No. 4,843,084., 80122=Method and System For Controlling A Single Zone HVAC Supplying Multiple Zones, Ser. No. 013870, filed Feb. 12, 1987; now abandoned., 79912=Thermostat, Ser. No. 013868, filed Feb. 1, 1987; now U.S. Pat. No. 4,884,214., 80273=Bypass Controller And Bypass System, Ser. No. 064540; filed June 22, 1987; now U.S. Pat. No. 4,829,447., 124782=Data communication on buses 30, 37, 39, 45, and 47 can be either at 2400 Band (ON) or at 4800 (OFF) as selected in function \"F11\"., 80396=Fan-Powered Mixing Box Assembly, Ser. No. 176,461 filed Apr. 1, 1988.}",
+    "textBeforeTable": "Patent Citations While the invention has been described with respect to certain specific embodiments, it will be appreciated that many modifications and changes may be made by those skilled in the art without departing from the spirit of the invention. It is intended, therefore, by the appended claims to cover all such modifications and changes as fall within the true spirit and scope of the invention. ##SPC1## The object code for the programs used in the VAV system coordinator (VSC) 11 is attached as Appendix A. In addition to providing the usual annunciators for \"heat\", \"cool\" and \"fan\" on Display 13 to indicate operation of system components, Display 13 also provides visual indication of certain diagnostic problems, called errors. Non-transparent errors indicate invalid data (storage failure, SF) or component failures or temperature sensors out of range (hardware failure, HF). In addition a transparent error, supply air temperature out of range, may exist. This error is not displayed and is cleared via the communication bus connected to the given VSC and need not be discussed further in this application. Diagnostics The air temperature at a given VSC 11, 36, 40 and 48 can be measured locally or via a remote sensor. This data is read from Display 13 via the extra temp switch S4. An additional function that is provided is the high limit time guard. This function presents an individual heating relay from being reenergized for",
+    "textAfterTable": "May 14, 1996 Aug 22, 2000 Diablo Research Corporation System and method for serial communication between a central unit and a plurality of remote units US6227961 Jan 14, 1999 May 8, 2001 General Electric Company HVAC custom control system US6892547 Feb 7, 2003 May 17, 2005 Honeywell International Inc. Cooling set point control US7395137 * Aug 21, 2006 Jul 1, 2008 International Business Machines Corporation Method and system for synchronizing climate control devices US7650206 * Feb 22, 2007 Jan 19, 2010 Lennox Industries Inc. Apparatus and method for environmentally conditioning a space US7702422 May 23, 2008 Apr 20, 2010 International Business Machines Corporation Method and system for synchronizing climate control devices US8219244 * Apr 15, 2008 Jul 10, 2012 Honeywell International Inc. Surrogate-based control system US8239066 Oct 21, 2009 Aug 7, 2012 Lennox Industries Inc. System and method of",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

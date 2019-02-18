@@ -1,0 +1,70 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Feb 24, 2000",
+            "May 15, 2009",
+            "Jul 6, 2010",
+            "Jul 15, 2010",
+            "Dec 6, 2011",
+            "May 1, 2012",
+            "Jun 28, 2013",
+            "Nov 15, 2013",
+            "Jan 7, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: 3COM CORPORATION, CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:JOSEPH, BOBY;FREED, MICHAEL;BORELLA, MICHAEL S.;REEL/FRAME:010583/0858 Effective date: 20000223",
+            "Year of fee payment: 4",
+            "Owner name: HEWLETT-PACKARD COMPANY, CALIFORNIA Free format text: MERGER;ASSIGNOR:3COM CORPORATION;REEL/FRAME:024630/0820 Effective date: 20100428",
+            "Owner name: HEWLETT-PACKARD COMPANY, CALIFORNIA Free format text: CORRECTIVE ASSIGNMENT TO CORRECT THE SEE ATTACHED;ASSIGNOR:3COM CORPORATION;REEL/FRAME:025039/0844 Effective date: 20100428",
+            "Owner name: HEWLETT-PACKARD DEVELOPMENT COMPANY, L.P., TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:HEWLETT-PACKARD COMPANY;REEL/FRAME:027329/0044 Effective date: 20030131",
+            "Owner name: HEWLETT-PACKARD DEVELOPMENT COMPANY, L.P., TEXAS Free format text: CORRECTIVE ASSIGNMENT PREVIUOSLY RECORDED ON REEL 027329 FRAME 0001 AND 0044;ASSIGNOR:HEWLETT-PACKARD COMPANY;REEL/FRAME:028911/0846 Effective date: 20111010",
+            "",
+            "",
+            "Effective date: 20131115"
+        ]
+    ],
+    "pageTitle": "Patent US6965992 - Method and system for network security capable of doing stronger encryption ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6965992?dq=6011510",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044160065.87/warc/CC-MAIN-20150728004240-00068-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 479354479,
+    "recordOffset": 479321372,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6206=As shown in FIG. 2A, the first encryption key 20 comprises a first base key 20 a and a first key extension 20 b. The first base key 20 a preferably has a length no greater than the threshold number of bits, t (e.g., 64 bits), and is based on a pseudo-random function of at least a first pre-shared key 20 c and a first computed private key 20 d. It should be understood that the first base key 20 a may be based on additional information, such as specified IPSEC control parameters. The first pre-shared key 20 c is not sent between the first and second network devices 12, 14, but is rather previously distributed to and shared by each of them. Preferably, but not necessarily, the first computed private key 20 d is a Diffie-Hellman key created through the well-known Diffie-Hellman algorithm. For more information on the Diffie-Hellman algorithm and its keys, see U.S. Pat. No. 4,200,770 to Hellman et al. and \u201cNew Directions in Cryptography,\u201d Diffie et al., IEEE Transactions on Information Theory, vol. IT-22, No. 6, November 1976, both of which are specifically incorporated herein by reference.}",
+    "TableContextTimeStampAfterTable": "{43655=Other members of the IPSEC suite of protocols include the Internet Security Association and Key Management Protocol (\u201cISAKMP\u201d), the ISAKMP Domain of Interpretation (\u201cDOI\u201d), and OAKLEY. ISAKMP provides detailed protocol descriptions and packet formats for IKE. The packet formats are created through the use of over a dozen different payload formats, which may appear in various combinations. Each payload holds a particular type of data used in key exchange, and contains a pointer to the next payload in the packet. By stringing together a series of these payloads, ISAKMP packets can contain all of the data necessary for a particular IKE message. ISAKMP also defines the processing requirements for each header. For more information on ISAKMP, see RFC 2408, specifically incorporated herein by reference., 45067=OAKLEY describes a family of canonical key exchange sequences and the security properties of each. Only a subset of the OAKLEY exchanges are used with IKE. The strengths of various encryption groups are presented as well. OAKLEY also discusses deriving new keys from existing keys and some protocol issues, such as how to handle message timeouts and how to format certain values. Overall, OAKLEY focuses on the mathematical side of key exchange, and serves as a guide for implementing protocols. For more information on OAKLEY, see RFC 2412, specifically incorporated herein by reference., 44495=Some packet formats and field values are not defined in ISAKMP, but instead are defined in the ISAKMP DOI. The ISAKMP DOI (also referred to as the IPSEC DOI, or just the DOI) defines an IPSEC-specific interpretation of certain parts of ISAKMP headers and payloads. For example, the DOI defines how to interpret ISAKMP fields that refer to specific encryption and authentication algorithms, and defines packet formats for holding IP addresses. For more information on ISAKMP DOI, see RFC 2407, specifically incorporated herein by reference., 80570=More specifically, IPSEC defines two security services, each having an associated header that is added to an IP packet that it protects. The two security services are an Authentication Header (\u201cAH\u201d) and an Encapsulating Security Payload (\u201cESP\u201d) header. The AH provides authentication and integrity protection for IP packets. For more information on the AH, see RFC-2402, specifically incorporated herein by reference. The ESP provides encryption protection as well as optional authentication and integrity protection. For more information on the ESP, see RFC-2406, specifically incorporated herein by reference. It should be understood, however, that more or fewer security services may also be used with IPSEC and the network security system of the present invention., 42109=IKE also allows the use of a public-key infrastructure, which is an architecture that allows entities to place their public key(s) into certificates. These certificates are data structures that bind the public key(s) to the entity. The binding is achieved by having a trusted third party (i.e., a certification authority (\u201cCA\u201d)) digitally \u201csign\u201d an entity's certificate. Typically, the CA will first verify that the public-key belongs to the entity through some out-of-band means, such as a phone call or a physical meeting. Thus, any second entity that trusts the CA will be reasonably assured of the certificate's veracity. By the establishment of a hierarchy of CAs, anyone with Internet access will be able to verify the public key of an entity that offers a certificate. Entities may store their certificates in public databases to ease retrieval. IKE typically uses such a public-key infrastructure in order for participants to authenticate themselves to one another when using public-key cryptography. The public-key infrastructure currently being standardized for the Internet is based on the framework set forth in the International Telecommunications Union Recommendation X.509, specifically incorporated herein by reference. For more information on Internet X.509 security certificates, see RFC-2459, specifically incorporated herein by reference. For more information on X.509 security certificate management, see RFC-2510 and RFC-2511, both of which are specifically incorporated herein by reference., 40812=The applications of IPSEC are numerous, including virtual private networks (\u201cVPNs\u201d), secure remote access, email privacy, and electronic commerce. However, in order for two network devices to communicate securely, they must be able to exchange keying material, typically over an insecure channel. Indeed, secure key exchange is an integral prerequisite of the IPSEC set of Internet security standards, and a comprehensive suite of protocols for allowing secure key exchange have been developed. The IPSEC standard for secure key exchange is the Internet Key Exchange (\u201cIKE\u201d) protocol. IKE allows two hosts to derive session keys via a series of messages that provide authentication and protection against flooding, replay, and spoofing attacks. IKE relies on the same cryptographic innovations that power most network security systems: public-key cryptography, such as Diffie-Hellman exchanges and RSA public-key/private-key pairs, symmetric-key cryptographic ciphers (e.g., data encryption algorithm (\u201cDES\u201d), triple DES (\u201c3DES\u201d), and international data encryption algorithm (\u201cIDEA\u201d)), and hashing algorithms for authentication (e.g., MD5 and secure hash algorithm (\u201cSHA\u201d)). For more information on IKE, see RFC 2409, specifically incorporated herein by reference., 40084=As known in the art, Internet Protocol is a common addressing protocol designed to facilitate the routing of traffic within a network or between networks. For more information on IP, see RFC 791, specifically incorporated herein by reference. Currently, a number of security options exist for Internet users implementing IP, including the Internet Protocol Security (\u201cIPSEC\u201d). IPSEC is a set of protocols for implementing security for communications on networks through the use of cryptographic key management procedures and protocols. For more information on IPSEC, see Internet Engineering Task Force (\u201cIETF\u201d), Requests For Comments (\u201cRFC\u201d) 2401, specifically incorporated herein by reference.}",
+    "textBeforeTable": "Patent Citations In view of the wide variety of embodiments to which the principles of the present invention can be applied, it should be understood that the illustrated embodiments are exemplary only, and should not be taken as limiting the scope of the present invention. Accordingly, the claims should not be read as limited to the described order or elements unless stated to that effect. Therefore, all embodiments that come within the scope and spirit of the following claims and equivalents thereto are claimed as the invention. It should be understood that the programs, processes, methods and systems described herein are not related or limited to any particular type of computer or network system (hardware or software), unless indicated otherwise. Various types of general purpose or specialized computer systems may be used with or perform operations in accordance with the teachings described herein. Similarly, modifications and variations may also be readily implemented into the present invention without departing from the spirit of the invention. For example, the steps of the flow diagrams may be taken in sequences other than those described, and more or fewer elements may be used in the block diagrams. In addition, it should be understood, however, that the base keys used for encryption may have any suitable length greater than or less than 64 bits (or 40 bits) for the threshold between stronger and weaker encryption, depending on network and user preferences,",
+    "textAfterTable": "IETF, RFC-2401, \"Security Architecture for the Internet Protocol,\" Nov. 1998, pp. 1-66. 4 IETF, RFC-2407, \"The Internet IP Security Domain of Interpretation for ISAKMP,\" Nov. 1998, pp. 1-32. 5 IETF, RFC-2408, \"Internet Security Association and Key Management Protocol (ISAKMP),\" Nov. 1998, pp. 1-86. 6 IETF, RFC-2409, \"The Internet Key Exchange (IKE),\" Nov. 1998, pp. 1-130. 7 IETF, RFC-2510, \"Internet X.509 Public Key Infrastructure Certificate Management Protocols,\" Mar. 1999, pp. 1-72. 8 Information Sciences Institute, Internet Engineering Task Force (\"IETF\"), Request for Comments (\"RFC\") RFC-791 \"Internet Protocol,\" Sep. 1981, pp. 1-49. 9 International Telecommunication Union (ITU-T), Recommendation X.509, \"Series X: Data Networks and Open System Communications,\" Mar. 2000. Referenced by Citing Patent Filing date Publication date Applicant Title US7225219 * Nov 29, 2000 May 29, 2007 Broadspider Networks, Inc. Distributed caching architecture for computer networks US7421082",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

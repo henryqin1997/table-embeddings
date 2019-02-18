@@ -1,0 +1,82 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US8595014 *",
+            "US8600754",
+            "US8645841",
+            "US8745636 *",
+            "US9071464 *",
+            "US20080307061 *",
+            "US20090192970 *",
+            "US20100107179 *",
+            "US20110257966 *"
+        ],
+        [
+            "Filing date",
+            "Apr 19, 2010",
+            "Oct 9, 2012",
+            "Jul 27, 2010",
+            "Oct 29, 2008",
+            "May 29, 2008",
+            "May 29, 2008",
+            "",
+            "Oct 29, 2008",
+            "Apr 19, 2010"
+        ],
+        [
+            "Publication date",
+            "Nov 26, 2013",
+            "Dec 3, 2013",
+            "Feb 4, 2014",
+            "Jun 3, 2014",
+            "Jun 30, 2015",
+            "Dec 11, 2008",
+            "Jul 30, 2009",
+            "Apr 29, 2010",
+            "Oct 20, 2011"
+        ],
+        [
+            "Applicant",
+            "Qualcomm Incorporated",
+            "Qualcomm Incorporated",
+            "Avaya Inc.",
+            "Dell Products L.P.",
+            "International Business Machines Corporation",
+            "Michal Jacovi",
+            "International Business Machines Corporation",
+            "Dell Products L.P.",
+            "Bohuslav Rychlik"
+        ],
+        [
+            "Title",
+            "Providing audible navigation system direction updates during predetermined time windows so as to minimize impact on conversations",
+            "System and method of providing voice updates from a navigation system that recognizes an active conversation",
+            "Unified greetings for social media",
+            "Communication event management methods, media and systems",
+            "Message notification in instant messaging",
+            "Message notification in instant messaging",
+            "Content and context based handling of instant messages",
+            "Communication Event Management Methods, Media and Systems",
+            "System and method of providing voice updates"
+        ]
+    ],
+    "pageTitle": "Patent US7827561 - System and method for public consumption of communication events between ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7827561?dq=6978253",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988962.66/warc/CC-MAIN-20150728002308-00180-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 479066627,
+    "recordOffset": 479007306,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6465=FIG. 25 is a diagram of a system 2100E illustrating a process receiving a communication event and providing a customized announcement in response thereto. As shown in FIG. 25, the evaluation component 2170 has determined that the user is busy and that the notification therefore fails. The evaluation component 2170 then provides this information, along with a copy of the notification, to the arbitrary process 2410. In response to this information, the arbitrary process 2410 sends an OOF message 2510 based on the user's calendar. More specifically, the arbitrary process 2410 has evaluated the sender of the notification (using whatever heuristics have been selected) and determined that the sender is important enough to the user to receive a customized announcement. For example, the customized busy announcement could state \u201cthe user you are trying to contact is giving a presentation right now, but if you try and contact him at time x, you will likely be successful as his calendar is free then.\u201d}",
+    "TableContextTimeStampAfterTable": "{48081=This application is a continuation-in-part of U.S. patent application Ser. No. 10/692,324, filed Oct. 23, 2003, which is continuation-in-part of U.S. patent application Ser. No. 10/402,075, filed Mar. 26, 2003, each of which is hereby incorporated by reference in its entirety, and priority from the filing dates of which is hereby claimed under 35 U.S.C. \ufffd 120., 159066=As an example of a scenario in which a notification would not be drawn (e.g., the user is busy such that a notification fails), in one circumstance the arbitrary process 2110 may be running in full screen. The user context 2150 would thus indicate to the notification system that the user is currently not available to interruption. For example, the user may be giving a presentation or may be otherwise fully occupied such that drawing anything on the screen would currently be inappropriate. Alternatively, if the user is available, then the user context 2150 will so indicate., 163752=At a block 2730, a second process registers for receiving communication events. The second process in one embodiment may be a program that has some domain knowledge of the user's activities outside of the data that the notification system has. For example, the second process may be a calendaring program and may have knowledge of what activities the user is currently engaged in., 131057=The portion 1520 relates to the icon for sending the notification. In one embodiment, minimum and maximum sizes are specified (e.g., in one example a minimum size is 16\ufffd16 and a maximum size is 80\ufffd80). The portion 1530 relates to the title text for the notification. The portion 1540 relates to the main BodyText for the notification. The portion 1550 relates to a property that should be set as True if the user is to be able to click inside the notification to trigger some event.}",
+    "textBeforeTable": "Patent Citations While the preferred embodiment of the invention has been illustrated and described, it will be appreciated that various changes can be made therein without departing from the spirit and scope of the invention. It will be appreciated that the elements of the system may be configured to address certain privacy concerns. For example, the system described above may be configured so as to properly broker the permissions for sending customized automated busy replies such that personal information is not revealed inappropriately. In one embodiment, the system brokers the permissions for a process to register to receive such busy replies, such that the system may not know what the arbitrary process is going to do, but the system can broker what processes can be registered and can help guide the user to understanding the implications of allowing a process to be registered. In addition, there are various possible implementations for how this new type of agent process can act on the user's behalf. For example, the process may choose to send the communication back to the communication initiator itself, or it may choose to manipulate a public object model of the process by which the communication was sent. In addition, there are various possible implementations as to the list of individuals for whom such an agent should send a busy reply. One implementation would be to send it to all individuals who initiated communication during",
+    "textAfterTable": "US5559948 Mar 22, 1995 Sep 24, 1996 International Business Machines Corporation Apparatus and method for manipulating an object in a computer system graphical user interface US5598524 Mar 3, 1993 Jan 28, 1997 Apple Computer, Inc. Method and apparatus for improved manipulation of data between an application program and the files system on a computer-controlled display system US5630042 Jun 6, 1995 May 13, 1997 Sun Microsystems, Inc. Method and apparatus for providing collection browsers US5680563 Jul 25, 1994 Oct 21, 1997 Object Technology Licensing Corporation Object-oriented operating system enhancement for filtering items in a window US5696486 Nov 16, 1995 Dec 9, 1997 Cabletron Systems, Inc. Method and apparatus for policy-based alarm notification in a distributed network management environment US5757925 Jul 23, 1996 May 26, 1998 Faybishenko; Yaroslav Secure platform independent cross-platform remote execution computer system and method US5790121 Sep 6, 1996 Aug 4, 1998 Sklar; Peter Clustering user interface US5802516 May 30, 1995",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Cited Patent",
+            "US3717852 *",
+            "US3764825 *",
+            "US4382289 *",
+            "US4384345 *",
+            "JPS5567997A *"
+        ],
+        [
+            "Filing date",
+            "Sep 17, 1971",
+            "Jan 10, 1972",
+            "Sep 2, 1981",
+            "May 8, 1981",
+            ""
+        ],
+        [
+            "Publication date",
+            "Feb 20, 1973",
+            "Oct 9, 1973",
+            "May 3, 1983",
+            "May 17, 1983",
+            ""
+        ],
+        [
+            "Applicant",
+            "Ibm",
+            "R Stewart",
+            "Tokyo Shibaura Denki Kabushiki Kaisha",
+            "Fujitsu Limited",
+            ""
+        ],
+        [
+            "Title",
+            "Electronically rewritable read-only memory using via connections",
+            "Active element memory",
+            "Semiconductor memory device",
+            "Read-only memory device",
+            "Title not available"
+        ]
+    ],
+    "pageTitle": "Patent US4441167 - Reprogrammable read only memory - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4441167?dq=inassignee:doubleclick",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989042.37/warc/CC-MAIN-20150728002309-00190-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 479589759,
+    "recordOffset": 479570413,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{16364=Referring now to FIG. 1, a programmable read-only memory (ROM) 10 is shown to include an array 11 of programmable memory elements 121,1 -12m,n arranged in a matrix of m rows and n columns, each one of such reprogrammable memory elements 121,1 -12m,n including a pair of serially connected programmable devices 14, 16, as shown. Programmable device 14 is here a polycrystalline silicon resistor such as that described in an article entitled \"A Novel MOS PROM Using A Highly Resistive Poly-Si Resistor\" by Masafumi Tanimoto, Junichi Murota, Yasuo Ohmori and Nobuaki Ieba, published in the IEEE Transactions on Electron Devices, Vol. ED-27, No. 3, March 1980, pages 517-520. Thus, programmable device 14 has a normally relatively high resistance characteristic which, when programmed by applying across it a voltage having a level greater than a predetermined threshold voltage in a manner to be described hereinafter, changes, irreversibly, to a relatively low resistance characteristic. Programmable device 16 is here a fusible link having a normally relatively low resistance characteristic (essentially a short circuit) which, when programmed by passing through the fusible link a current having a level greater than a predetermined level to blow or \"open\" such fusible link in a manner to be described hereinafter, changes, irreversibly, to a relatively high resistance characteristic (essentially an open circuit or substantially infinite resistance characteristic). It follows then that in the unprogrammed state, each one of the reprogrammable memory elements 121,1 -12m,n has a relatively high resistance characteristic which may represent a first logical state, here a logical 1 state. Each one of the reprogrammable memory elements 121,1 -12m,n may be initially programmed to represent a logical 0 state by changing, in a manner to be described hereinafter, the resistance characteristic of the programmable device 14 of such one of the memory elements 121,1 -12m,n from its normally high resistance characteristic to its low resistance characteristic as mentioned above. Once such one of the memory elements 121,1 -12m,n is programmed to represent the logical 0 state it can be subsequently programmed to represent again the logical 1 state by changing, in a manner to be described, the resistance characteristic of the programmable device 16 of such one of the memory elements 121,1 -12m,n from its normally low resistance characteristic to its relatively high resistance characteristic as mentioned above.}",
+    "textBeforeTable": "Patent Citations Having described a preferred embodiment of this invention, it will now be apparent to one of skill in the art that other embodiments incorporating its concept may be used. It is felt, therefore, that this invention should not be restricted to the disclosed embodiment but rather should be limited only by the spirit and scope of the appended claims. Referring now to FIG. 5 an alternative array 11' of reprogrammable read only memory element 121,1 -12m,n interconnected between row conductors 18'1 -18'm and column conductors 20'1 -20'n are shown. Such array 11' may be used in place of array 11 of the ROM 10 shown in FIG. 1. Here again each one of the programmable memory elements 121,1 -12m,n includes a pair of serially connected programmable devices 14, 16. Here, however, the emitter follower transistors 221,1 -22m,n of the circuit 10 shown in FIG. 1 are replaced with diodes 221,1 '-22m,n ' as shown. If memory element 122,1 had been reprogrammed by open circuiting the fusible link of device 16 of such element 122,1 the current source 42 will again draw its current from the +Vcc supply through resistor 88 and diode 86 so that transistor 61 will again be driven into saturation (for reasons described above), the voltage on bus 28 will be 0.7 volts and transistors 80, 82 will be \"OFF\". This will again produce a high level voltage at output terminal 48, such",
+    "textAfterTable": "* Cited by examiner Non-Patent Citations Reference 1 Simon, \"Writable Read-Only Memory Utilizing Electrophoresis\", IBM Tech. Disc. Bul., vol. 14, No. 7, 12/71, p. 2084. 2 * Simon, Writable Read Only Memory Utilizing Electrophoresis , IBM Tech. Disc. Bul., vol. 14, No. 7, 12/71, p. 2084. * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US4633429 * Dec 27, 1982 Dec 30, 1986 Motorola, Inc. Partial memory selection using a programmable decoder US4651409 * Sep 3, 1985 Mar 24, 1987 Ncr Corporation Method of fabricating a high density, low power, merged vertical fuse/bipolar transistor US4672576 * Jul 9, 1985 Jun 9, 1987 Motorola, Inc. Programmable read only memory output circuit US4698790",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

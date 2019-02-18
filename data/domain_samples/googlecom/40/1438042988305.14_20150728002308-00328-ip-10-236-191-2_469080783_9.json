@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 14, 2000",
+            "Jul 31, 2003",
+            "Jan 2, 2007",
+            "Nov 30, 2010",
+            "Feb 6, 2015"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed"
+        ],
+        [
+            "Description",
+            "",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            ""
+        ]
+    ],
+    "pageTitle": "Patent US6587112 - Window copy-swap using multi-buffer hardware support - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6587112?dq=5251294",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988305.14/warc/CC-MAIN-20150728002308-00328-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 469103211,
+    "recordOffset": 469080783,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations Therefore, it can be seen from the foregoing that the invention provides a fast copy-swap method and apparatus that executes faster than conventional bitBlt's to provide compatibility with certain software. Although several embodiments of the invention have been described and illustrated, the invention is not to be limited to the specific forms or arrangements of the parts so described and illustrated. Thus, having illustrated and described the principles of the invention in a preferred embodiment, it should be apparent to those of ordinary skill in the art that the invention can be modified in arrangement and detail without departing from such principles. Thus, because the data is not required to be passed between the four memory controllers A-D 64 a-d, the four memory controller can operation simultaneously and in parallel to perform the pixel copy operation. In the variation containing a second pair of multi-buffer pointers 74-76, steps 120-130 are repeated according to the offsets C and D 74-76. At step 128, the memory controller A 64 a determines whether all the pixels have been copied (i.e., whether the command list 78 is exhausted). If true, the operation is complete and control returns to step 114. Otherwise, the operation continues to the next pixel address (step 130 branching to step 120). Next at step 124, a write address is generated to write the pixel according to the same address of the pixel fill command. However, instead",
+    "textAfterTable": "Reference 1 * Sproull et al. \"The 8 by 8 Display\" ACM Transactions on Graphics, vol. 2, No. 1, pp 32-56, Jan., 1983. * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US6765579 Feb 13, 2002 Jul 20, 2004 Sony Corporation Pixel pages using combined addressing US6765580 Feb 15, 2002 Jul 20, 2004 Sony Corporation Pixel pages optimized for GLV US6768490 * Feb 15, 2002 Jul 27, 2004 Sony Corporation Checkerboard buffer using more than two memory devices US6784889 * Dec 13, 2000 Aug 31, 2004 Micron Technology, Inc. Memory system and method for improved utilization of read and write bandwidth of a graphics processing system US6791557 Jan 16, 2002 Sep 14, 2004 Sony Corporation Two-dimensional buffer pages",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

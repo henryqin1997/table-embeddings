@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Sep 1, 1995",
+            "Dec 14, 2001",
+            "Jan 9, 2002",
+            "Dec 16, 2005",
+            "Jan 18, 2010",
+            "Jun 16, 2010",
+            "Aug 3, 2010"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "REMI",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: NATIONAL SEMICONDUCTOR CORPORATION, CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:RAN, XIAONONG;REEL/FRAME:007653/0111 Effective date: 19950901",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Effective date: 20100616"
+        ]
+    ],
+    "pageTitle": "Patent US5768533 - Video coding using segmented frames and retransmission to overcome channel ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5768533?dq=3140553",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00280-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 491296367,
+    "recordOffset": 491265223,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{42389=Video encoder 170 generates separate digital codes for each frame segment. The coding process encodes the frame segments separately from each other to allow decoding of each sub-sequence without using information from other sub-sequences. In effect, each sub-sequence is an separate moving image for which any video compression process desired may be employed. In one embodiment, video encoder 170 uses a standard video encoding protocol referred to as H.263 which is described in Draft ITU-T Recommendation H.263, entitled \"Video Coding For Low Bitrate Communication,\" Jul. 5, 1995, which is incorporated by reference herein in its entirety.}",
+    "textBeforeTable": "Patent Citations Although the present invention has been described with reference to particular embodiments, the description is only an example of the invention's application and should not be taken as a limitation. In particular, even though much of preceding discussion was aimed at communications on mobile/wireless channels, alternative embodiments of this invention include systems working on hardwired or fiber optic channels. Various other adaptations and combinations of features of the embodiments disclosed are within the scope of the invention as defined by the following claims. A videophone can also be implemented as part of a personal computer which has an input interface for video capture from video source 155 and an output interface for transmission via channel 145. Such interfaces may be provided on a card which attaches to a slot on a local bus of the personal computer. For a videophone implemented in a personal computer, operational blocks such as video decoder 120, request controller 125, video encoder 170, buffer controller 175, and retransmission controller 185 can be implemented in software executed by the main CPU of the computer, and operational blocks such as output buffer 110, status buffer 115, receiving buffer 130, input buffer 160, status counters 165, transmission buffer 180, and FIFO buffer 190 can be formed in the main memory of the computer. Alternatively, the input and/or output interfaces can provide some or all operational blocks in receiver 100 and/or sender 150. The operational",
+    "textAfterTable": "Citing Patent Filing date Publication date Applicant Title US6014706 * Mar 14, 1997 Jan 11, 2000 Microsoft Corporation Methods and apparatus for implementing control functions in a streamed video display system US6173317 Mar 14, 1997 Jan 9, 2001 Microsoft Corporation Streaming and displaying a video stream with synchronized annotations over a computer network US6178448 * Jun 18, 1997 Jan 23, 2001 International Business Machines Corporation Optimal link scheduling for multiple links by obtaining and utilizing link quality information US6304295 * Jan 8, 1999 Oct 16, 2001 Sarnoff Corporation Region-based refresh strategy for video compression US6345375 * Feb 24, 1999 Feb 5, 2002 California Amplifier, Inc. Packet-based communication methods and systems having improved data throughput US6400724 * Jul 16, 1999 Jun 4, 2002 Qualcomm Inc. Method and apparatus for efficient data transmission in a voice-over-data communication system",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US6919769",
+            "US7650527 *",
+            "US8418046 *",
+            "US20010044783 *",
+            "US20050062548 *"
+        ],
+        [
+            "Filing date",
+            "Sep 24, 2003",
+            "Feb 7, 2006",
+            "Aug 25, 2008",
+            "Feb 16, 2001",
+            "Sep 24, 2003"
+        ],
+        [
+            "Publication date",
+            "Jul 19, 2005",
+            "Jan 19, 2010",
+            "Apr 9, 2013",
+            "Nov 22, 2001",
+            "Mar 24, 2005"
+        ],
+        [
+            "Applicant",
+            "Intel Corporation",
+            "Broadcom Corporation",
+            "Apple Inc.",
+            "Seth Weisberg",
+            "Lim Chee How"
+        ],
+        [
+            "Title",
+            "Method and apparatus for fast lock acquisition in self-biased phase locked loops",
+            "MIPS recovery technique",
+            "Data signal handling circuitry and methods with error analysis capabilities",
+            "On-line value-bearing indicium printing using DSA",
+            "Method and apparatus for fast lock acquisition in self-biased phase locked loops"
+        ]
+    ],
+    "pageTitle": "Patent US6587800 - Reference timer for frequency measurement in a microprocessor - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6587800?dq=6859936",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 6,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990603.54/warc/CC-MAIN-20150728002310-00130-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 473130607,
+    "recordOffset": 473108431,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{68855=FIG. 12 is a graphical representation 1200 that illustrates how one embodiment of the timer 300 overcomes delay error due to the leakage in the capacitor 506. An x-axis 1202 represents time and a y-axis 1204 represents voltage across the capacitor 506, which is the timer voltage 512. A level 1208 represents the reference voltage 530 (VHIGH). A level 1210 represents the reference voltage 532 (VMID). A level 1212 represents the reference voltage 534 (VLOW). Two waveforms 1222 and 1224 represent the timer voltage 512 for an ideal capacitor 506 and a non-ideal capacitor 506, repectively. The difference between the timer voltages for the two waveforms 1222 and 1224 is due to leakage current in the non-ideal capacitor 506. For a single ramp solution, the non-ideal capacitor leakage current is a direct source contributing to delay error. Because one embodiment of the timer 300 ramps the capacitor 506 in both directions, delay error caused by leakage current is eliminated during the subtraction process., 71299=The graphical representation 1300 shows that because there is non-zero propagation delay after the input to the comparator 502 crosses the trip point, and this delay can vary across process, accumulation of many of these delays would result in a loss of precision. Because the high amplitude and low amplitude waveforms 722 and 822, respectively, have the same number of transitions, however, the comparator 520 propagation delay is eliminated in the subtraction process. This holds true when the comparator 520 is designed such that the propagation delay does not vary significantly from the reference voltage 530 (VHIGH) to the reference voltage 532 (VMID)., 70079=FIG. 13 is a graphical representation 1300 that illustrates how one embodiment of the timer 300 overcomes the accumulation of delay error due to the comparator 520's transition time. An x-axis 1302 represents time and a y-axis 1304 represents voltage across the capacitor 506, which is the timer voltage 512. A level 1308 represents the reference voltage 530 (VHIGH). A level 1310 represents the reference voltage 532 (VMID). A level 1312 represents the reference voltage 534 (VLOW). The gray bars 1314, 1316, and 1318 represent accumulations of comparator 520 delay errors. Two waveforms 1320 and 1322 represent a capacitor with a fast ramp rate and a capacitor with a slow ramp rate, respectively. The waveform 1320 has two portions, a portion 1322 where the comparator 520 error accumulation is associated with the reference voltage 530 (VHIGH) and a portion 1324 where the comparator 520 error accumulation is associated with the reference voltage 532 (VMID)., 66764=FIG. 11 is a graphical representation 1100 that illustrates how one embodiment of the timer 300 overcomes delay error due to the comparator 520's offset voltage and noise. An x-axis 1102 represents time and a y-axis 1104 represents voltage across the capacitor 506, which is the timer voltage 512. A level 1108 represents the reference voltage 530 (VHIGH). A level 1110 represents the reference voltage 532 (VMID). A level 1112 represents the reference voltage 534 (VLOW). The gray bars 1114, 1116, and 1118 represent a range of possible comparator 520 trip points surrounding the levels 1108, 1110, and 1112, respectively. Two waveforms 1120 and 1130 represent a capacitor with a fast ramp rate and a capacitor with a slow ramp rate, respectively. The waveform 1120 has two portions, a portion 1122 where the comparator 520 trip point is the reference voltage 534 (VHIGH) and a portion 1124 where the comparator 520 trip point is the reference voltage 532 (VMID)., 64035=FIG. 10 is a graphical representation 1000 that illustrates the subtration process of one embodiment of the present invention. An x-axis 1002 represents time and a y-axis 1004 represents voltage across the capacitor 506, which is the timer voltage 512. A level 1008 represents the reference voltage 530 (VHIGH). A level 1010 represents the reference voltage 532 (VMID). A level 1012 represents the reference voltage 530 (VLOW). The graphical representation 1000 shows the VHIGH timing window/delay 730, the VMID timing window/delay 830, and a timing window/delay 1018., 64783=In the graphical representation 1000, the low amplitude waveform 822 is fractured and superimposed onto the high amplitude waveform 722 to generate a waveform 1022. Recall that only the capacitor 506's linear region when ramping up from the level 910 to the level 908 contributes to the net effective delay error for the capacitor 506. If the VMID timing window/delay 830 is subtracted from the VHIGH timing window/delay 730, the difference is equal to the capacitor 506 delay from to the portion of the waveform 722 above the region where the camparator 520 trip point is equal to the reference voltage 532 (VMID). Since capacitor non-linearity is most sensative to process variation when bias voltage is low, this technique allows the delay error to be dependent only on regions where the capacitor 506 is linear and/or less sensitive to process variation., 68006=Three regions 1126, 1128, and 1132 represent the usable area of the portions 1124 and 1122, and the waveform 1130, respectively, and show that the delay error caused by variations in the comparator 520's offset voltage is proportional to the capacitor 506's ramp rate. For a given timer duration, no additional error is accumulated because of offset voltage when comparing a single slow ramp to multiple fast ramps. Furthermore, if the capacitor 506 is linear, the delay error caused by comparator offset voltage is eliminated when subtracting the high amplitude delay from the low amplitude delay.}",
+    "textBeforeTable": "Patent Citations The terms used in the following claims should not be construed to limit the invention to the specific embodiments disclosed in the specification and the claims. Rather, the scope of the invention is to be determined entirely by the following claims, which are to be construed in accordance with established doctrines of claim interpretation. The above description of illustrated embodiments of the invention is not intended to be exhaustive or to limit the invention to the precise forms disclosed. While specific embodiments of, and examples for, the invention are described herein for illustrative purposes, various equivalent modifications are possible within the scope of the invention, as those skilled in the relevant art will recognize. These modifications can be made to the invention in light of the above detailed description. Aspects of the invention can be implemented using hardware, software, or a combination of hardware and software. Such implementations include state machines and application specific integrated circuits (ASICs). In implementations using software, the software may be stored on a computer program product (such as an optical disk, a magnetic disk, a floppy disk, etc.) or a program storage device (such as an optical disk drive, a magnetic disk drive, a floppy disk drive, etc.). Various embodiments of the invention have been described with reference to over clocking a microprocessor. It is to be understood, however, that aspects of the invention apply to under clocking a microprocessor as",
+    "textAfterTable": "US4627060 * Nov 29, 1984 Dec 2, 1986 Baxter Travenol Laboratories, Inc. Watchdog timer US4644498 * Sep 26, 1985 Feb 17, 1987 General Electric Company Fault-tolerant real time clock US4705970 * Feb 4, 1985 Nov 10, 1987 American Telephone And Telegraph Company, At&T Bell Laboratories Programmable interval timer with lock means US4809280 * Dec 17, 1987 Feb 28, 1989 Omron Tateisi Electronics Co. Microcomputer system with watchdog timer US4868525 * Sep 23, 1988 Sep 19, 1989 Dallas Semiconductor Corporation Temperature-stabilized oscillator US4956842 * Nov 16, 1988 Sep 11, 1990 Sundstrand Corporation Diagnostic system for a watchdog timer US4965800 * Oct 11, 1988 Oct 23, 1990 Farnbach William A Digital signal fault detector US5063355 * Mar 9, 1990 Nov 5, 1991",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

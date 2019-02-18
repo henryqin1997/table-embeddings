@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US7842173",
+            "US8313631",
+            "US8585875 *",
+            "US20110259752 *",
+            "US20130075264 *"
+        ],
+        [
+            "Filing date",
+            "Jan 29, 2007",
+            "Nov 2, 2010",
+            "Sep 23, 2011",
+            "Sep 16, 2008",
+            ""
+        ],
+        [
+            "Publication date",
+            "Nov 30, 2010",
+            "Nov 20, 2012",
+            "Nov 19, 2013",
+            "Oct 27, 2011",
+            "Mar 28, 2013"
+        ],
+        [
+            "Applicant",
+            "Semitool, Inc.",
+            "Applied Materials Inc.",
+            "Applied Materials, Inc.",
+            "Acm Research (Shanghai) Inc.",
+            "Applied Materials, Inc."
+        ],
+        [
+            "Title",
+            "Apparatus and methods for electrochemical processing of microfeature wafers",
+            "Apparatus and methods for electrochemical processing of microfeature wafers",
+            "Substrate plating apparatus with multi-channel field programmable gate array",
+            "Method for substantially uniform copper deposition onto semiconductor wafer",
+            "Substrate plating apparatus with multi-channel field programmable gate array"
+        ]
+    ],
+    "pageTitle": "Patent US7020537 - Tuning electrodes used in a reactor for electrochemically processing a ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7020537?dq=5,241,671",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 15,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00098-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 478107507,
+    "recordOffset": 478065730,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6516=The Jacobian sensitivity matrix, set forth below as Equation (A5), is an index of the Jacobian values computed using Equations (A1)\u2013(A4). The Jacobian matrix may be generated either using a simulation of the operation of the deposition chamber based upon a numerical model of the deposition chamber, or using experimental data derived from the plating of one or more test wafers. Construction of such a numerical model, as well as its use to simulate operation of the modeled deposition chamber, is discussed in detail in G. Ritter, P. McHugh, G. Wilson and T. Ritzdorf, \u201cTwo- and three-dimensional numerical modeling of copper electroplating for advanced ULSI metallization,\u201d Solid State Electronics, volume 44, issue 5, pp. 797\u2013807 (May 2000), available from http://www.elsevier.nl/gej-ng/10/30/25/29/28/27/article.pdf, also available from htttp://journals.ohiolink.edu/pdflinks/01040215463800982.pdf. J = \uf603 0.192982 0.071570 0.030913 0.017811 0.148448 0.084824 0.039650 0.022264 0.066126 0.087475 0.076612 0.047073 0.037112 0.057654 0.090725 0.092239 0.029689 0.045725 0.073924 0.138040 \uf604 Equation\ufffd\ufffd(A5)}",
+    "TableContextTimeStampAfterTable": "{107740=2. If the average seed-layer thickness changes significantly, the resistance of the seed-layer will change resulting in a modified current density distribution across the wafer and altered film uniformity. For example, if the seed layer decreases from 2000\u212b to 1000\u212b, the final film will not only be thinner (because the initial film is thinner) but it will also be relatively thicker at the outer edge due to the higher resistivity of the 1000\u212b seed-layer compared to the 2000 \u212b seed-layer (assuming an edge contact)., 92156=Table 1 below sets forth exemplary data corresponding to a test run in which a 200 mm wafer is plated with copper in a multiple anode system using a nominally 2000 \u212b thick initial copper seed-layer. Identical currents of 1.12 Amps (for 3 minutes) were provided to all four anodes A1\u2013A4. The resulting thickness at five radial locations was then measured and is recorded in the second column of Table 1. The 3 sigma uniformity of the wafer is 9.4% using a 49 point contour map. Target thickness were then provided and are set forth in column 3 of Table 1. In this example, because a flat coating is desired, the target thickness is the same at each radial position. The thickness errors (processed errors) between the plated film and the target thickness were then calculated and are provided in the last column of Table 1. These calculated thickness errors are used by the optimizer as a source of feedback control., 22571=The present application claims the benefit of U.S. Provisional Patent Application No. 60/206,663, filed May 24, 2000, and is a continuation-in-part of International Patent Application No. PCT/US00/10120, filed Apr. 13, 2000, designating the United States and claiming the benefit of U.S. Provisional Patent Application Nos. 60/182,160, filed Feb. 14, 2000; 60/143,769, filed Jul. 12, 1999; and 60/129,055, filed Apr. 13, 1999, the disclosures of each of which are hereby expressly incorporated by reference in their entireties.}",
+    "textBeforeTable": "Patent Citations Numerous modifications may be made to the described optimizer without departing from the basic teachings thereof. For example, although the present invention is described in the context of electrochemical processing of the microelectronic workpiece, the teachings herein can also be extended to other types of microelectronic workpiece processing, including various kinds of material deposition processes. For example, the optimizer may be used to control electrophoretic deposition of material, chemical or physical vapor deposition, etc. In effect, the teachings herein can be extended to other microelectronic workpiece processing systems that have individually controlled processing elements that are responsive to control parameters and that have interdependent effects on a physical characteristic of the microelectronic workpiece that is processed using the elements. Such systems may employ sensitivity tables/matrices as set forth herein and use them in calculations with one or more input parameters sets to arrive at control parameter values that accurately result in the targeted physical characteristic of the microelectronic workpiece. Although the present invention has been described in substantial detail with reference to one or more specific embodiments, those of skill in the art will recognize that changes may be made thereto without departing from the scope and spirit of the invention as set forth herein. The 3-\u03c3 for wafer #4220 is 1.97% over a range of 213.6 Angstroms. The procedure may continue to better the uniformity, but the for the purpose of this explanation,",
+    "textAfterTable": "US3664933 May 19, 1969 May 23, 1972 Udylite Corp Process for acid copper plating of zinc US3706635 Nov 15, 1971 Dec 19, 1972 Monsanto Co Electrochemical compositions and processes US3706651 Dec 30, 1970 Dec 19, 1972 Us Navy Apparatus for electroplating a curved surface US3716462 Oct 5, 1970 Feb 13, 1973 Jensen D Copper plating on zinc and its alloys US3798003 Feb 14, 1972 Mar 19, 1974 Ensley E Differential microcalorimeter US3878066 Aug 29, 1973 Apr 15, 1975 Dettke Manfred Bath for galvanic deposition of gold and gold alloys US3930963 Feb 11, 1972 Jan 6, 1976 Photocircuits Division Of Kollmorgen Corporation Method for the production of radiant energy imaged printed circuit boards US3968885 Aug 27, 1974 Jul 13, 1976 International Business Machines Corporation Method and apparatus for handling workpieces US4000046 Dec 23, 1974 Dec 28, 1976 P.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

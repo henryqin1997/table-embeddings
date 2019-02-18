@@ -1,0 +1,69 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Feb 21, 1996",
+            "Jul 6, 1998",
+            "Aug 31, 1998",
+            "Dec 30, 2002",
+            "Dec 18, 2006",
+            "Jan 3, 2011",
+            "Jun 16, 2011",
+            "Nov 30, 2011",
+            "Jul 9, 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "AS",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: ADAPTEC, INCORPORATED, CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:LAM, GEOFFREY T.;MALIK, AJAY;PONNUSWAMY, SENTHIL K.;REEL/FRAME:007880/0729 Effective date: 19960220",
+            "Owner name: ADAPTEC, INC., CALIFORNIA Free format text: CHANGE OF STATE OF INCORPORATION;ASSIGNOR:ADAPTEC, INC.;REEL/FRAME:009300/0309 Effective date: 19971119",
+            "Owner name: ADAPTEC, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:BATTLE, THOMAS M.;REEL/FRAME:009418/0281 Effective date: 19980827",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12",
+            "Owner name: HUPPER ISLAND LLC, DELAWARE Effective date: 20110601 Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:ADPT CORPORATION;REEL/FRAME:026459/0871",
+            "Owner name: DIGITUDE INNOVATIONS LLC, VIRGINIA Effective date: 20111122 Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:HUPPER ISLAND LLC;REEL/FRAME:027299/0396",
+            "Owner name: RPX CORPORATION, CALIFORNIA Effective date: 20120420 Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:DIGITUDE INNOVATIONS, LLC;REEL/FRAME:028509/0929"
+        ]
+    ],
+    "pageTitle": "Patent US5926636 - Remote procedural call component management method for a heterogeneous ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5926636?dq=5566337",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987034.19/warc/CC-MAIN-20150728002307-00010-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 479911899,
+    "recordOffset": 479881098,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{30534=RPCs are used widely. However, for desktop management of components within a single desktop computer system, another approach is used. A Desktop Management Interface (DMI) has been defined by the Desktop Management Task Force, MIS JF2-51, 2111 N.E. 25th Avenue, Hillsboro, Oreg. 97124. DMI is a local interface between management applications that manipulate information on components, e.g., physical or logical entities in a computer system, and the components. For a detailed description of DMI, see the Desktop Management Interface Specification, Version 1.0, Apr. 29, 1994, which is incorporated herein by reference in its entirety., 77737=In one embodiment of this invention, as indicated above, the client application is a Windows 3.1 application, and remote RPC command modules 515 and 525 are executable modules while component management APIs 512 and 522 are dynamically linked libraries. The invention was implemented using the EZ-RPC compiler provided by NobleNet, Inc., 337 Turnpike Rd., Southboro, Mass. 01772 and related tools available from NobleNet, Inc. to generate a portion of modules 515 and 525.}",
+    "textBeforeTable": "Patent Citations The embodiments of the invention described above are only illustrative of the principles of this invention. In view of this disclosure, those skilled in the art can implement a variety of application programming interfaces and the message transfer RPC commands to eliminate the problems associated with using RPCs over heterogeneous networks. The use of the single RPC command over heterogeneous networks eliminates the problems associated with conventional RPCs and a variety of versions of one or more APIs on the heterogeneous network. In one embodiment of this invention, as indicated above, the client application is a Windows 3.1 application, and remote RPC command modules 515 and 525 are executable modules while component management APIs 512 and 522 are dynamically linked libraries. The invention was implemented using the EZ-RPC compiler provided by NobleNet, Inc., 337 Turnpike Rd., Southboro, Mass. 01772 and related tools available from NobleNet, Inc. to generate a portion of modules 515 and 525. In another embodiment, remote RPC command modules 515 and 525 support operations over a plurality of transport stacks within network stacks 516 and 526 for example transport stacks that support the TCP/IP and SPX protocols. This allows client RPC command module 515 to communicate with server RPC command modules on both similar and different network transport protocols. In this embodiment, remote RPC command module 515, for example, includes a particular executable module for each transport protocol stack. Remote client application 511",
+    "textAfterTable": "Semyon Dukach Methods, systems, and machine readable programming for interposing front end servers between servers and clients US6647431 * Dec 31, 1997 Nov 11, 2003 Nortel Networks Limited Method and apparatus for handling I/O messages US6697878 * Jan 4, 1999 Feb 24, 2004 Fujitsu Limited Computer having a remote procedure call mechanism or an object request broker mechanism, and data transfer method for the same US6708210 * Mar 13, 2003 Mar 16, 2004 Intel Corporation Application programming interfaces and methods enabling a host to interface with a network processor US6732187 * Sep 24, 1999 May 4, 2004 Cisco Technology, Inc. Opaque packet handles US6735773 * Jun 25, 1999 May 11, 2004 Intel Corporation Method and apparatus for issuing commands to a network processor configured to provide a plurality of APIs US6748436 * May 4, 2000 Jun 8, 2004 International Business Machines Corporation System, method",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

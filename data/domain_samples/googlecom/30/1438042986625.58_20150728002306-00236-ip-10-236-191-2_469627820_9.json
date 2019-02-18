@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "Date",
+            "16 Mar 2001",
+            "27 Apr 2010",
+            "27 Jun 2014",
+            "14 Nov 2014",
+            "6 Jan 2015"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: HITACHI, LTD., JAPAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:SUZUKI, TOSHIAKI;MIMURA, ITARU;KAMEYAMA, TATSUYA;REEL/FRAME:011622/0508;SIGNING DATES FROM 20010112 TO 20010129",
+            "Year of fee payment: 4",
+            "",
+            "",
+            "Effective date: 20141114"
+        ]
+    ],
+    "pageTitle": "Patent US7136356 - Packet data transfer method and packet data transfer apparatus - Google Patents",
+    "title": "",
+    "url": "http://www.google.com.au/patents/US7136356?ie=ISO-8859-1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986625.58/warc/CC-MAIN-20150728002306-00236-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 469666995,
+    "recordOffset": 469627820,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6313=The data 42 and 43, as well as 44 and 45, in the form of layered packet data are provided with UDP headers 46 and 47 at their respective tops, to constitute UDP packet data. Moreover, the data 46, 42, and 43, as well as 47, 44, and 45, in the form of UDP packet data are divided by a predetermined size, i.e. 1480 bytes, and provided with IP headers 48, 49, 50 at the respective tops, thereby constituting IP packet data. FIG. 3 shows an example where the size of the UDP packet data consisting of the data 46, 42, and 43 exceeds 1480 bytes. The layered data (1), or 43, is thus divided into 43-1 and 43-2 before converted into IP packet data.}",
+    "TableContextTimeStampAfterTable": "{47192=Among data transmissions on ATM (Asynchronous Transfer Mode) networks is a UBR (Unspecified Bit Rate) service of best-efforts type. For a transmission control scheme that improves the throughput in this UBR transmission, there is known an EPD (Early Packet Discard) control scheme, described in \u201cA Study on A New Selective Cell Discard Scheme with Two Thresholds Control\u201d (IEICE Technical Report, Vol. 99, No. 621, pp. 55\u201360 (2000.02)). The UBR service is a best-efforts transmission service on an ATM network, and therefore congestion in the transmission network produces discard in ATM cells. When the discard by ATM cell occurs, the entire, yet-to-be partitioned packet data including the discarded cell becomes invalid. Nevertheless, those ATM cells having become invalid continue being transmitted after the cell discard, wasting the transmission channel bandwidth. For this reason, the EPD control scheme provides discard in steps of packet data rather than in cells upon the occurrence of congestion., 48232=Meanwhile, \u201cA Coding and Transmission Control Scheme for Video Multicast\u201d (THE JOURNAL OF THE INSTITUTE OF IMAGE INFORMATION AND TELEVISION ENGINEERS, Vol. 52, No. 6, pp. 863\u201370 (1998.6)) is known as an image data transmission scheme on IP (Internet Protocol) networks. This scheme describes a control scheme for transmitting layered coded audiovisual data from an image server to audiovisual terminals by using a plurality of channels (multicast address). In this scheme, video data is layered into a total of six types of coded data: namely, I-, P-, and B-frame data as defined in the international-standard MPEG (Moving Picture Experts Group) coding schemes, along with spatial frequency components, or a lower spatial frequency component and a higher spatial frequency component, of each of the frames. These coded data are distributed from the server to the audiovisual terminals by using the plurality of channels. Of the I-, P-, and B-frame data defined in the MPEG coding schemes, P-frame data requires I-frame data for reproduction. Besides, B-frame data requires I- and P-frame data for reproduction. This means that I, P, and B frames decrease in importance in this order. As for the spatial frequency components in each frame, there is such a relation in importance that a lower spatial frequency component which represents fundamental outlines of an image is more important than a higher spatial frequency component which expresses details. In this coding and transmission control scheme for video multicast, the above-mentioned six types of layered coded data are distributed from the image server to the audiovisual terminals through six channels.}",
+    "textBeforeTable": "Patent Citations Furthermore, according to the present invention, when audiovisual data consisting of a plurality of streams is transmitted, the discard of low priority packet data is performed in packet groups belonging to the low priority layer. Thus, there can be provided a data transfer method and transfer apparatus which prevent uneven replay at the receiver reproducer side. Moreover, according to the present invention, packet duplication at the time of data multicast distribution is initiated in accordance with the beginning of meaningful data such as image frames and slices rather than the duplication being initiated in the middle of the meaningful data. Thus, there can be provided a data transfer method and transfer apparatus which make effective use of transmission channel bandwidths. As has been described above, according to the present invention, meaningful data structures such as image frames and slices are divided for IP packet transmission, and when packet discard is required due to transmission network congestion, the packet discard is initiated/terminated in accordance with the beginning of meaningful data (image frame or slice) rather than in the middle of the meaningful data. Thus, there can be provided a data transfer method and transfer system which make effective use of transmission channel bandwidths. IPv6 networks are the next generation of the above-mentioned IP (more precisely, IPv4) networks. The fundamental IPv6 header has a 3-byte flow label field; therefore, a 2-byte conversion pad (such",
+    "textAfterTable": "International Business Machines Corporation Method and apparatus for checksum verification with receive packet processing US6324169 * 29 Feb 2000 27 Nov 2001 At&T Corp. Providing multimedia conferencing services over a wide area network interconnecting nonguaranteed quality of service LANs US6452915 * 9 Jul 1999 17 Sep 2002 Malibu Networks, Inc. IP-flow classification in a wireless point to multi-point (PTMP) transmission system US6590902 * 3 Sep 1999 8 Jul 2003 Hitachi, Ltd. Layer-coded data transmitting apparatus US6717912 * 16 Feb 2000 6 Apr 2004 Network Equipment Technologies, Inc. Fair discard system US6721273 * 3 Feb 2000 13 Apr 2004 Nortel Networks Limited Method and apparatus for traffic flow control in data switches US6751663 * 25 Mar 1999 15 Jun 2004 Nortel Networks Limited System wide flow aggregation process for aggregating network activity records US6788646 *",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

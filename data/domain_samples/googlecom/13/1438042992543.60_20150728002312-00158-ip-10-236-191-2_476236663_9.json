@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Apr 13, 1994",
+            "Jan 5, 2000",
+            "Jan 20, 2004",
+            "Apr 14, 2008",
+            "Oct 8, 2008",
+            "Nov 25, 2008"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: IBM CORPORATION, NEW YORK Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:GROSSMAN, BERTRAND M.;MCLEAN, JAMES G.;PICKOVER, CLIFFORD A.;AND OTHERS;REEL/FRAME:007182/0758;SIGNING DATES FROM 19940325 TO 19940412",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Effective date: 20081008"
+        ]
+    ],
+    "pageTitle": "Patent US5564004 - Method and system for facilitating the selection of icons - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5564004?dq=patent:4807115",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00158-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 476270559,
+    "recordOffset": 476236663,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{45950=After selecting which icon or icons are likely to be used next, those likely icons are positioned close to the (X,Y) cursor location determined in STEP 30, STEP 34 \"POSITION LIKELY ICONS CLOSE TO (X,Y) CURSOR LOCATION\". In particular, the likely icons are moved within a predetermined distance, D, from the current cursor location (X,Y). In one example, the predetermined distance may be, for instance, 100 pixels. For example, assuming that a screen has 1000\ufffd1000 pixels and the cursor is currently located at 500,500, a likely icon may be moved to position 600,500. If there is more than one icon to be moved, the additional likely icons can be spaced a certain distance apart from each other. For example, the next icon could be spaced at 500,600 and etc. The manner in which a plurality of icons is positioned could, for example, be stored in memory or on disk as a canned arrangement, or it can be set each time by an application or user., 63852=In one embodiment, when an element fades away, a user can select whether it will be a hard or a soft disappearance. For a hard disappearance, the session represented by the faded element is automatically closed by the system. This frees up system resources for use by other sessions. If a program is active in the faded session, the user may elect to be prompted before the session is shut down. One technique for closing a session is described in, for instance, Xlib Programming Manual, by Adrian Ney, published by O'Reilly & Associates, Inc. in 1988, Pages 380-382 and 407, which are incorporated herein by reference., 29751=Typically, the icons located on the computer display are stationary. However, in one prior art instance, a selected icon may be dragged over to a desired location on a computer display. This technique is described in U.S. Pat. No. 5,040,131, entitled \"Graphical Processing\", issued on Aug. 13, 1991 and assigned to International Business Machines Corporation. As described therein, a copy of an icon is dragged to a desired display point by using a press and hold operation of a mouse button., 51034=As described above, a user may select an icon by touching the icon and then clicking on, for example, a mouse button. In another embodiment, however, a technique is provided in which an icon may be selected without the user's cursor actually touching the icon. In accordance with the principles of the present invention, the user may merely place the cursor close to the icon to trigger it. In particular, the set of all points closest to the center of a given icon in an icon set than to all other icons in the set is computed. This set of points is a geometrical structure called a Voronoi polygon for the icon. The Voronoi polygon for an icon is made up of the perpendicular bisectors of the segments linking the center of the icon to those centers closest to it. Voronoi polygons are described in detail in Algorithms, by Robert Sedgewick, published by Addison-Wesley, 1988, Chapter 28, which is hereby incorporated by reference. The union of all the Voronoi polygons for an icon set is called an icon Voronoi diagram. One example of a Voronoi diagram is depicted in FIG. 5, in which each dot represents an icon., 52170=One example of the technique for selecting an icon by placing the cursor close to it is described with reference to FIG. 6. Initially, the (X,Y) location of the cursor is determined, as described above, STEP 50 \"DETERMINE (X,Y) LOCATION OF CURSOR\". Thereafter, in one embodiment, a determination is made as to which Voronoi polygon the cursor is in, STEP 52 \"DETERMINE WHICH VORONOI POLYGON CURSOR IS IN\". This determination is made by conventional techniques. One technique is described in Chapter 27 of Algorithms by Robert Sedgewick, published by Addison-Wesley in 1988, which is hereby incorporated by reference. If an icon is on the boundary of two or more polygons, then any one of the polygons may be selected based on predefined criteria. One example of predefined criteria would be a probability of use as determined from past history of use. Voronoi diagrams have many properties that lead to efficient algorithms for closest icon determination, and it is possible to organize Voronoi polygons in a structure like a two-dimensional tree to allow searching to be done efficiently.}",
+    "textBeforeTable": "Patent Citations Although preferred embodiments have been depicted and described in detail herein, it will be apparent to those skilled in the relevant art that various modifications, additions, substitutions and the like can be made without departing from the spirit of the invention and these are therefore considered to be within the scope of the invention as defined in the following claims. It will be apparent to those of ordinary skill in the art that the techniques described herein could be applied to many types of computer systems using graphical user interfaces including, for instance, IBM PS/1 and PS/2 systems and PC compatibles running Windows or DOS, and RS/6000 and other AIX work stations using graphical AIX interfaces. Described above are a number of techniques for facilitating the selection of one or more icons located on a computer display. Further, techniques are provided in which the computer display may be cleaned up and a graphical representation between icons may be presented. Subsequent to drawing the graphical representation between the icons, a determination is made as to whether there is a new icon on the display, INQUIRY 94 \"NEW ICON ON DISPLAY? \". If there is a new icon on the display, then flow passes back to STEP 90 to determine which icons should be linked. If there are no new icons, then the procedure is complete. In another embodiment, it is also possible to taper the size of",
+    "textAfterTable": "Reference 1 * Adrian Nye, Volume One, Xlib Programming Manual, for Version 11 of the X Window System , pp. 380 382 and 407; O Reilly & Associates, Inc. (1988). 2 Adrian Nye, Volume One, Xlib Programming Manual, for Version 11 of the X Window System, pp. 380-382 and 407; O'Reilly & Associates, Inc. (1988). 3 * Robert Sedgewick, Algorithms , Second Edition, Chapters 27 and 28; Addison Wesley Publishing Company (1988). 4 Robert Sedgewick, Algorithms, Second Edition, Chapters 27 and 28; Addison-Wesley Publishing Company (1988). * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US5687331 * Aug 3, 1995 Nov 11, 1997 Microsoft Corporation Method and system for displaying an animated focus item US5740390 * Sep 17, 1996 Apr 14, 1998 International Business Machines Corporation Method and system for facilitating the selection of",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

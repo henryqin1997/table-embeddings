@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Sep 14, 2000",
+            "Aug 27, 2001",
+            "Dec 27, 2004",
+            "Dec 24, 2008",
+            "Dec 29, 2008"
+        ],
+        [
+            "Code",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI"
+        ],
+        [
+            "Event",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed"
+        ],
+        [
+            "Description",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12",
+            ""
+        ]
+    ],
+    "pageTitle": "Patent US5642447 - Fiber optic network transmission system with integrated optical isolator ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5642447?dq=4393663",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00302-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 470360947,
+    "recordOffset": 470326931,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{76960=A particular adaptation of the laser diode 166, collimator 167 and isolator subassembly 168 is described in a co-pending patent application, U.S. application Ser. No. 08/361,604, entitled, \"MINIATURIZED LASER DIODE ASSEMBLY\", filed Dec. 21, 1994 and assigned to the present assignee. This adaptation is very compact and highly suited for insertion into the housing 150., 28251=An application of the fused coupler of FIG. 1A is a partially integrated WDM coupler and isolator device, which is described in U.S. Pat. No. 5,082,343, issued Jan. 21, 1992 to D. G. Coult et al. The fused WDM coupler is illustrated in FIG. 1B. The coupler 20 (again enclosed by dotted lines) has two input fibers 15, 16 and an output fiber 17. The two input fibers 15 and 16 are fused together and signals from the fused fibers are directed toward a collimator 18. A second collimator 19 refocuses the collimated light signals from the collimator 78 into the output fiber 17. The collimators 18 and 19 are shown as standard lens for purposes of illustration. One input fiber 15 carries signals of wavelength \u03bb1 ; the second input fiber 16 carries a signals of wavelength \u03bb2. A wavelength selective element 21 between the collimators 18 and 19 reflects the light of one of the wavelengths, say \u03bb1, and passes the \u03bb2 wavelength light. Thus the output fiber 17 carries the \u03bb2 signals., 55893=These materials heretofore used as Faraday rotators in optical isolators operate very well at wavelengths from 1200 to 1600 nm. However, optical isolators are sometimes used with lasers operating at shorter wavelengths, specifically, 980 and 1017 nm. CdMnTe (Cadmium manganese tellurium), or Hg-doped CdMnTe, has a large Verdet constant which permits the Faraday rotator to be small enough to fit into the integrated WDM coupler and isolator, as contemplated by the present invention and described below, and to effectively operate at such shorter wavelengths. CdMnTe (more precisely, Cd1-x Mnx Te) or Hg-doped CdMnTe may also be used as Faraday rotators for operations at light wavelengths from 1200 to 1600 nm, and may be used on Faraday rotators in standard optical isolators., 25907=Rule 60 Divisional application of Ser. No. 08/470,815, filed Jun. 6, 1995, which was a Continuation-in-Part of Ser. No. 08/361,610, filed Dec. 21, 1994 U.S. Pat. No. 5,555,330., 64912=The resulting integrated coupler and isolator can operate effectively with fiberoptic amplifiers energized by pump lasers operating at wavelengths between 900 to 1200 nm. For example, a message signals at 1550 nm wavelength can use shorter wavelengths from the pump laser to drive the coupled fiberoptic amplifier. If the pump laser generates an output at 1480 nm, say, then standard Faraday rotator materials can be used in the optical isolator subassembly 29. If a pump laser at 980 or 1017 nm is desired, a Faraday rotator of CdMnTe should be used. Of course, CdMnTe or Hg-doped CdMnTe may also be used for a Faraday rotator in a separate isolator device as described in U.S. Pat. No. 5,208,876 noted above., 54418=Light from either input fiber 30 or 31 is collimated by the GRIN lens 34. After passing through the optical isolator core, the collimated light is recollimated or focused at the end of the output fibers 32 or 39 by the GRIN lens 35. Conversely, one might think that light from the output fibers 32 or 39 might be collimated by the GRIN lens 35 and refocussed into the ends of the input fibers 30 and 31. However, the action of the optical isolator core allows light to travel in only one direction and blocks light in the opposite direction. An explanation of the action of the optical isolator core is found in U.S. Pat. No. 5,208,876, entitled, \"Optical Isolator,\" which issued May 4, 1993 and is assigned to the present assignee.}",
+    "textBeforeTable": "Patent Citations While the above is a complete description of the preferred embodiments of the present invention, various alternatives, modifications and equivalents may be used. It should be evident that the present invention is equally applicable by making appropriate modifications to the embodiment described above. For example, it should be evident from the couplers described above that more input and output fibers may be connected together according to the teachings of the present invention. Therefore, the above description should not be taken as limiting the scope of invention which is defined by the metes and bounds of the appended claims. Other arrangements may be made by combinations of the cascade and hybrid arrangements. For example, the light signals from the transmitting system can be split into multiple branches according to the hybrid arrangement. The long-pass filter of the splitting coupler is selected to divide half the incoming signals into each branch. Each branch is then arranged in a cascade. One observation from the table above is that the hybrid arrangement is superior to the prior art arrangement in both maximum insertion loss and in uniformity. Another is that the cascade arrangement has a smaller maximum insertion loss than the tree coupler configuration. ______________________________________Comparison Table 1x8 Fused 1x8 Cascaded 1x8 Hybrid Tree Coupler Filter-WDM Filter-WDM (ReceiverConfiguration (Conf. of (Conf. of System 12 inParameter FIG. 6) FIG. 7) FIG. 1)______________________________________Max. Insertion 4.2 1.8 10.0Loss (dB)Uniformity 3.0 0.3 1.2(dB)______________________________________",
+    "textAfterTable": "US5402509 * Sep 4, 1992 Mar 28, 1995 Fujitsu Limited Optical fiber coupling device including lenses and magnetooptics US5446813 * Aug 8, 1994 Aug 29, 1995 Industrial Technology Research Institute Optical isolator US5493440 * Oct 18, 1994 Feb 20, 1996 Matsushita Electric Industrial Co., Ltd. Optical isolator and optical fiber amplifier * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US5742712 * Oct 8, 1996 Apr 21, 1998 E-Tek Dynamics, Inc. Efficient electromechanical optical switches US5796889 * Mar 13, 1996 Aug 18, 1998 E-Tek Dynamics, Inc. Integrated WDM coupler devices for fiberoptic networks US5825950 * May 13, 1996 Oct 20, 1998 Jds Fitel Inc. Optical isolator US5838847",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

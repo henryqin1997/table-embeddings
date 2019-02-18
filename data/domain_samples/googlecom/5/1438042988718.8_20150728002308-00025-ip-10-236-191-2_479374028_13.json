@@ -1,0 +1,82 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US8021229 *",
+            "US8025564 *",
+            "US8062122 *",
+            "US8133112 *",
+            "US8277309",
+            "US8360857 *",
+            "US8568219",
+            "US20060040730 *",
+            "US20120004025 *"
+        ],
+        [
+            "Filing date",
+            "Apr 21, 2003",
+            "Aug 19, 2008",
+            "Jul 5, 2006",
+            "Nov 10, 2004",
+            "Jul 5, 2006",
+            "Nov 9, 2005",
+            "Mar 26, 2007",
+            "Nov 9, 2005",
+            ""
+        ],
+        [
+            "Publication date",
+            "Sep 20, 2011",
+            "Sep 27, 2011",
+            "Nov 22, 2011",
+            "Mar 13, 2012",
+            "Oct 2, 2012",
+            "Jan 29, 2013",
+            "Oct 29, 2013",
+            "Feb 23, 2006",
+            "Jan 5, 2012"
+        ],
+        [
+            "Applicant",
+            "Igt",
+            "Precedent Gaming, Inc.",
+            "Igt",
+            "Walker Digital, Llc",
+            "Igt",
+            "Igt",
+            "Igt",
+            "Walker Jay S",
+            "Kabushiki Kaisha Sega Doing Business As Sega Corporation"
+        ],
+        [
+            "Title",
+            "Method and apparatus for employing flat rate play",
+            "Dual-usage bonus point method for gaming machines",
+            "Method and apparatus for employing flat rate play",
+            "Gaming device for a flat rate play session and method of operating same",
+            "Method and apparatus for employing flat rate play",
+            "Systems, methods and apparatus for facilitating a flat rate play session on a gaming device and example player interfaces to facilitate such",
+            "Method and apparatus for employing flat rate play",
+            "Systems, methods and apparatus for facilitating a flat rate play session on a gaming device and example player interfaces to facilitate such",
+            "Game machine and program"
+        ]
+    ],
+    "pageTitle": "Patent US7887414 - Budget-defined flat rate play contract parameters - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7887414?ie=ISO-8859-1&dq=U.S.+Patent+No.+4,528,643)",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 13,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00025-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 479463423,
+    "recordOffset": 479374028,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6788=In step 1314, the CPU checks the total credits accumulated, as stored in the RAM, and transmits a payout command to a hopper controller (such as the hopper controller 240 of FIG. 2A). Consequently, in step 1316, the slot machine pays out the total number of credits to the player.}",
+    "TableContextTimeStampAfterTable": "{289126=The method 1600 may then continue, at 1604 for example, by determining a desired profit of the flat rate play at the gaming device. The gaming device and/or server may lookup a stored indication of a desired profit margin and/or profit rate to be associated with the gaming device, flat rate play contracts or sessions, particular games, etc. In some embodiments, such a desired profit may be set, defined, and/or established or managed by an operator. According to some embodiments, the desired profit may be determined (e.g., looked-up and/or calculated or algorithmically-defined) dynamically and/or in real time (e.g., based on stored rules, current machine usage, time of day, and/or other factors)., 151119=Once the player selectable price parameter options have been displayed to the player, the player inputs the player selected price parameters through the player interface. Then, in step 1220, the CPU receives the player selected price parameters from the player interface., 159794=In step 1522, the CPU receives an indication of payment from the coin acceptor and reconfigures the parameters of slot machine to meet the specifications of the flat rate price package selected by the player. Finally, in step 1524, flat rate play begins., 293598=The method 1600 may continue, according to some embodiments, by initializing play of the flat rate play session in accordance with the one or more parameters, at 1610. In the case that the player accepts the offer for the automatically defined session, for example, the gaming device and/or server may automatically initiate the accepted flat rate play session or contract. In some embodiments, the session may only be initiated or deemed accepted once the player provides the \u201cbudget\u201d price. In the case that the price is based on credits already available to the player via the gaming device, the credits may automatically be made available to purchase the accepted flat rate play session or contract. In some embodiments, the player may automatically accept the device-determined session before determination of the parameters (or some parameters). After winning, providing, and/or accruing a certain amount of credits at a gaming device, for example, the player may indicate (e.g., via a menu) that the player wishes to purchase a flat rate play session of a certain duration (or minimum duration) for the amount of available credits. The player may commit to the purchase provided that the automatically determined session or contract meets one or more criteria specified by the player (such as the minimum duration, a certain wager amount per play, etc.)., 384953=In step 2525 it is determined whether the adjusted tally exceeds a predetermined threshold. If it does, the method 2500 proceeds to step 2535 where the player is paid the amount by which the tally exceeds the threshold. Payment to the player may be achieved by, for example, outputting a monetary amount comprising the payment to the player at the gaming device or by crediting the amount of the payment to a financial account identifier associated with the player. If it is determined in step 2525 that the adjusted tally does not exceed the predetermined threshold then the method 2500 proceeds to step 2530 in which the amount by which the tally falls short of the threshold is collected from the insurer., 151974=Furthermore, once the slot machine CPU receives the player selected price parameters, it proceeds to access the calculation table. By accessing the calculation table, the CPU retrieves the flat rate price for the flat rate play session. Retrieving the flat rate price is shown as step 1224. Once the CPU retrieves the flat rate price, it proceeds to transmit the price, the length of the flat rate play session, and payment instructions to the video display area for player viewing, in step 1226., 152517=In step 1228, the player reads the data and instructions on the video display area and inserts money into the coin acceptor or a bill acceptor in order to initiate play of the slot machine. In an alternate embodiment, the player enters a stored value card such as a \u201csmart card\u201d into the card reader. Such a smart card has the players credit balance stored thereon. Payment using a smart card further entails the CPU debiting the player's balance on the smart card by the amount of the flat rate price. Further, the player may enter a credit card into the card reader., 291029=In some embodiments, the method 1600 may continue at 1608 by determining a flat rate play session with an expected cost substantially equal to the target cost, wherein the flat rate play session is defined by one or more parameters. The gaming device or server may utilize the target cost to query a database of available flat rate play sessions or contracts, for example. According to some embodiments, the expected cost of flat rate play sessions or contracts may be determined, such as via any of the methods described herein. In some embodiments, the one or more parameters may be determined. Instead of retrieving flat rate play sessions with expected costs substantially matching the target cost (and/or costs), for example, different values for one or more session parameters may be tested to determine which combinations of values for the parameters may result in expected session costs substantially equal to the target cost. In some embodiments, such an analysis (and/or retrieval from memory) may result in a plurality of available flat rate play sessions and/or contracts that have expected costs that substantially match the target cost. Rules and/or algorithms may then be used, for example, to determine which of the flat rate play session s or contracts to offer to the player. In such a manner, for example, the player may simply define a \u201cbudget\u201d that the player wishes to utilize for flat rate play at a gaming device, and the parameters of the particular flat rate play session or contract may then be determined and offered to the player. In some embodiments, the player may be allowed to choose between a plurality of available sessions or contracts having different parameters (and/or values thereof) but generally having similar prices (e.g., substantially equivalent to the player's \u201cbudget\u201d, or at least less than the player's budget). It should be understood that different games and/or game types may yield quite different parameters for the same or similar retail price. One game may be available for a \u201cbudget\u201d price and comprise one hundred (100) plays, spins, or hands, for example, while another game may be available for the same price yet may comprise four hundred (400) plays, spins, or hands. In some embodiments, such as in the case that the player's budget is too low, the closest session with a price higher than the budget may be offered to the player provided the player provides the difference between the budget and the session price (e.g., by depositing more coins or credits)., 289877=According to some embodiments, the method 1600 may continue by calculating, based at least upon the price and the desired profit, a target cost for the flat rate play at the gaming device, at 1606. The target cost for the flat rate play may, for example, simply be the price (e.g., retail price) of the session or contract less a profit margin. In the case that the desired profit is expressed in terms of a desired profit rate, the desired profit margin may be derived by multiplying the rate by a duration of the flat rate play (e.g., time and/or number of plays). In some embodiments, multiple durations may be tested and/or analyzed to determine the target cost to be associated with a desired profit rate. Pre-determined durations in intervals of half an hour may be multiplied by the desired profit rate, for example, to derive various desired profit margins for the different durations. Target costs may then be determined for each of the flat rate play durations. According to some embodiments, the target cost and/or other metrics may simply be retrieved from memory and/or looked up via a table., 369704=Note that the processor 1805 and the storage device 1815 may be, for example, located entirely within a single computer or other computing device or located in separate devices coupled through a communication channel., 372673=Note that the processor 2005 and the storage device 2025 may be, for example, located entirely within a single computer or other computing device or located in separate devices coupled through a communication channel., 46516=This application is a continuation of U.S. patent application Ser. No. 11/273,170, filed Nov. 14, 2005; now abandoned which claims priority and benefit under 35 U.S.C. \ufffd119(e) to U.S. Provisional Patent Application Ser. No. 60/627,670, filed on Nov. 12, 2004 and entitled \u201cGAMING DEVICE OFFERING A FLAT RATE PLAY SESSION AND METHODS THEREOF\u201d, the entirety of which is incorporated by reference herein., 367086=It should be understood that any number of gaming devices and any number of player devices may be used in system 1700. Although the system 1700 includes both a casino server 1705 and an insurer device 1710 as illustrated, one or the other of these elements may be omitted (for example, the insurer device 1710 may be omitted in embodiments that do not include an insurer and/or where the casino acts as the insurer). Similarly, although the system 1700 includes both a gaming device 1715 and a player device 1720 as illustrated, one or more of these embodiments may be omitted (for example, the player device 1720 may be omitted if the casino has not implemented remote gaming). Further, some or all of the functionality of a casino server 1705 may be carried out by insurer device 1710 and vice versa. Similarly, some or all of the functionality of casino server 1705 and/or insurer device 1710 may be carried out by gaming device 1715 and vice versa. In one embodiment, the casino server 1705 comprises one or more computers that are connected to a remote database server.}",
+    "textBeforeTable": "Patent Citations The present disclosure provides, to one of ordinary skill in the art, an enabling description of several embodiments and/or inventions. Some of these embodiments and/or inventions may not be claimed in the present application, but may nevertheless be claimed in one or more continuing applications that claim the benefit of priority of the present application. Applicants intend to file additional applications to pursue patents for subject matter that has been disclosed and enabled but not claimed in the present application. The present invention can be configured to work in a network environment including a computer that is in communication, via a communications network, with one or more devices. The computer may communicate with the devices directly or indirectly, via a wired or wireless medium such as the Internet, LAN, WAN or Ethernet, Token Ring, or via any appropriate communications means or combination of communications means. Each of the devices may comprise computers, such as those based on the Intel\ufffd Pentium\ufffd or Centrino\u2122 processor, that are adapted to communicate with the computer. Any number and type of machines may be in communication with the computer. Where databases are described, it will be understood by one of ordinary skill in the art that (i) alternative database structures to those described may be readily employed, and (ii) other memory structures besides databases may be readily employed. Any illustrations or descriptions of any sample databases presented herein",
+    "textAfterTable": "US4880237 Dec 29, 1987 Nov 14, 1989 Ryutaro Kishishita Tokenless slot machine system US4991848 Aug 7, 1989 Feb 12, 1991 Bally Manufacturing Corporation Gaming machine with a plateaued pay schedule US5018737 Aug 22, 1990 May 28, 1991 Kabushiki Kaisha Universal Slot machine US5042809 Nov 20, 1990 Aug 27, 1991 Richardson Joseph J Computerized gaming device US5069453 Jun 8, 1990 Dec 3, 1991 John R. Koza Ticket apparatus with a transmitter US5112050 Jan 5, 1990 May 12, 1992 John R. Koza Broadcast lottery US5123649 Jul 1, 1991 Jun 23, 1992 Bally Manufacturing Corporation Gaming machine with dynamic pay schedule US5135224 Jan 14, 1991 Aug 4, 1992 Leisure Create Co., Ltd. Pattern matching game machine of prepaid card system US5178390 Jan 28, 1992 Jan 12, 1993 Kabushiki Kaisha Universal Game machine US5257179",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

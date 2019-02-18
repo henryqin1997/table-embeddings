@@ -1,0 +1,69 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jun 8, 2001",
+            "Sep 4, 2001",
+            "Sep 5, 2003",
+            "Jan 12, 2004",
+            "Oct 18, 2004",
+            "Apr 17, 2005",
+            "Mar 2, 2006",
+            "Jun 3, 2009",
+            "Mar 11, 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: NEW MOON SYSTEMS, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:SALAS, JONATHAN C.;LAU, EDWIN J.;NAVARE, PRASHANT;AND OTHERS;REEL/FRAME:011899/0184 Effective date: 20010607",
+            "Owner name: NEW MOON SYSTEMS, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:SALAS, JONATHAN C.;LAU, EDWIN J.;NAVARE, PRASHANT;AND OTHERS;REEL/FRAME:012155/0208;SIGNING DATES FROM 20010607 TO 20010613",
+            "Owner name: SILICON VALLEY BANK, CALIFORNIA Free format text: SECURITY INTEREST;ASSIGNOR:TARANTELLA, INC.;REEL/FRAME:014455/0268 Effective date: 20030801",
+            "Owner name: TARANTELLA, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:NEW MOON, INC.;REEL/FRAME:014870/0075 Effective date: 20031208",
+            "Owner name: TARANTELLA, INC., CALIFORNIA Free format text: RELEASE;ASSIGNOR:SILICON VALLEY BANK;REEL/FRAME:015886/0690 Effective date: 20041008",
+            "Owner name: TARANTELLA, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:NEW MOON SYSTEMS, INC.;REEL/FRAME:015908/0142 Effective date: 20050407",
+            "Owner name: SUN MICROSYSTEMS, INC.,CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:TARANTELLA, INC.;REEL/FRAME:017302/0814 Effective date: 20060207",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8"
+        ]
+    ],
+    "pageTitle": "Patent US6983479 - Dynamic content activation by locating, coordinating and presenting content ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6983479?dq=No.+6,411,949",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985647.51/warc/CC-MAIN-20150728002305-00147-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 490074983,
+    "recordOffset": 490053695,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6464=Referring to FIG. 2, which provides a more detailed diagram of the system components of the content management system, all components of the system (content subscribers 1000, content locators 2000, and content publishers 3000) are connected to the system via registration through the administration module 500 and stored in a system database and/or directory service 600. The client component of a personal computer 10 comprises an input module 11 to request a resource, a client manager 12 to track input and output data, and an output module 13 to present content or a content publishing resource. Client 10 communicates to the other components of the system via a network such as the Internet, a local area network (LAN) and/or wide area network (WAN), wireless and/or wired, or other network communication infrastructure.}",
+    "textBeforeTable": "Patent Citations The above embodiments are only illustrative of the principles of this invention and are not intended to limit the invention to the particular embodiments described. One skilled in the art should recognize that resources could include all types of resources such as software applications, hardware devices, computing machines, and etc. In particular, it is contemplated that functional implementation of the invention described herein may be implemented equivalently in hardware, software, firmware, and/or other available functional components or building blocks. Accordingly, various modifications, adaptations, and combinations of various features of the described embodiments can be practiced without departing from the scope of the invention as set forth in the appended claims. If user requests to end the application, an application terminator ends the application and access allocation remaining on the sub-token(s) is returned to the system database and/or directory service 9400. If user continues to run the application, the token monitor initiates application via an application initiator 9200 until a sub-token expires. When a sub-token expires, the token monitor renews the sub-token 9500. If renewal is successful, a sub-token is created and sent to the token monitor 9100 and the fulfillment process reiterates 9000. If renewal is not successful, the token monitor ends the application 9600 via the application terminator. Additionally, the token monitor comprises a criteria evaluator (e.g. a timer, a counter, a calendar, a heat sensor, and etc.) that determines the expiration of",
+    "textAfterTable": "US8276115 Feb 4, 2008 Sep 25, 2012 Progress Software Corporation Automated construction and deployment of complex event processing applications and business activity monitoring dashboards US8301720 Jul 18, 2006 Oct 30, 2012 Progress Software Corporation Method and system to collect and communicate problem context in XML-based distributed applications US8301800 Jul 1, 2003 Oct 30, 2012 Actional Corporation Message processing for distributed computing environments US8516054 Nov 14, 2001 Aug 20, 2013 Aurea Software, Inc. Message handling US8656350 Feb 4, 2008 Feb 18, 2014 Software Ag Event-based process configuration US8688845 Jun 27, 2008 Apr 1, 2014 Microsoft Corporation Remote computing session feature differentiation US8819589 Jun 10, 2008 Aug 26, 2014 Microsoft Corporation Providing partner services within a host application US8832580 Nov 5, 2009 Sep 9, 2014 Aurea Software, Inc. Software with improved view of a business process US8966086 * Nov",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US8346584 *",
+            "US8688765",
+            "US9092607",
+            "US20080183524 *",
+            "US20140143005 *"
+        ],
+        [
+            "Filing date",
+            "Jan 30, 2008",
+            "Jun 9, 2009",
+            "Oct 1, 2012",
+            "Jan 30, 2008",
+            "Mar 13, 2012"
+        ],
+        [
+            "Publication date",
+            "Jan 1, 2013",
+            "Apr 1, 2014",
+            "Jul 28, 2015",
+            "Jul 31, 2008",
+            "May 22, 2014"
+        ],
+        [
+            "Applicant",
+            "Wisconsin Alumni Research Foundation",
+            "The Mathworks, Inc.",
+            "Oracle International Corporation",
+            "Krishnan Suresh",
+            "Hemant B. Jatla"
+        ],
+        [
+            "Title",
+            "Method and apparatus for determining design modification effects on a computerized engineering model",
+            "Methods and system for distributing data to technical computing workers",
+            "Dynamic flow control for access managers",
+            "Method and apparatus for determining design modification effects on a computerized engineering model",
+            "PLM IN A BOX is a proprietary Process in the development and implementation a Product Lifecycle Management Solution for product manufacturers developing products based on a customer specification. This process establishes a process framework to linking customer project to a product design originated for a specific customer project, links to the design exchanges with suppliers on those designs and the linkage engineering change notices that originate for those product designs"
+        ]
+    ],
+    "pageTitle": "Patent US7848834 - Computerized system for network-based management of engineering projects - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7848834?dq=mirroring+data+in+a+remote+data+storage+system",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00329-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 473649067,
+    "recordOffset": 473620748,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{50288=The data manager 62 manages data requests, checking data in and out of the databases and controlling the importation and exportation of data. The data is checked out or exported from the CDI system 66 into a working directory and, from there, checked back in or imported in to the databases via CDI 66. The data movement module 64 handles data movement between the working directory and the requesting application. It can include a data adapter for conversions of data between different systems. The data movement module 64 receives specific data movement requests, moves the data to the requested location or application, and generates associated notifications such as \u201cdata move completed\u201d or \u201cdata move failed.\u201d These two modules 62 and 64 can be implemented separately or as part of the CDI system 66, and the CDI 66 is used for overall management of the databases, receiving requests from the data manager 62 and interfacing to the different data sources to store and retrieve data. CDI 66 can be implemented in various ways and using conventional database systems, or can be implemented as described in U.S. Ser. No. 10/243,295, filed Sep. 13, 2002 and entitled \u201cDatabase Management System Having a Common Database Infrastructure.\u201d This prior filed application is assigned to the assignee of the present application and its entire contents are hereby incorporated by reference.}",
+    "textBeforeTable": "Patent Citations It will thus be apparent that there has been provided in accordance with the present invention a computerized system for network-based management of engineering projects, which achieves the aims and advantages, specified herein. It will of course be understood that the foregoing description is of preferred exemplary embodiments of the invention and that the invention is not limited to the specific embodiments shown. Various changes and modifications will become apparent to those skilled in the art. For example, the amount of centralized (server side) processing versus client processing can be varied from one system implementation to the next depending upon various deployment, management, and processing considerations that will be known to those skilled in the art. All such variations and modifications are intended to come within the scope of the appended claims. . The workflow rules are provided by the workflow module 44 (and can be stored along with the other data 36) and the data at each step (load, stress, and product life data in the example shown) is stored in the work book 46, meaning that it is stored in the database 36 but logged into and available to the user via his or her work book. FIG. 6 depicts a traditional approach to the use of CAE tools in the engineering of automotive systems. A first CAE tool 102 processes input data and generates loading information for a particular",
+    "textAfterTable": "US6502102 * Mar 27, 2000 Dec 31, 2002 Accenture Llp System, method and article of manufacture for a table-driven automated scripting architecture US6757576 * Feb 5, 2002 Jun 29, 2004 Gcc, Inc. System and method for drawing and manufacturing bent pipes US6907546 * Mar 27, 2000 Jun 14, 2005 Accenture Llp Language-driven interface for an automated testing framework US7013461 * Jan 5, 2001 Mar 14, 2006 International Business Machines Corporation Systems and methods for service and role-based software distribution US7020697 * Nov 3, 2000 Mar 28, 2006 Accenture Llp Architectures for netcentric computing systems US7047180 * Mar 30, 2000 May 16, 2006 Autodesk, Inc. Method and apparatus for providing access to drawing information US7143025 * Dec 13, 2002 Nov 28, 2006 Sun Microsystems, Inc. Web simulator US7149959",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

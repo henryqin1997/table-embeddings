@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Mar 1, 1996",
+            "Jun 29, 1999",
+            "Apr 1, 2002",
+            "May 12, 2006",
+            "May 12, 2010"
+        ],
+        [
+            "Code",
+            "AS",
+            "CC",
+            "FPAY",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Certificate of correction",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: SUN MICROSYSTEMS, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:KULKARNI, ABHAY S.;REEL/FRAME:007839/0480 Effective date: 19960129",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US5848243 - Network topology management system through a database of managed network ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5848243?dq=%22melissa+white%22",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00256-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 474425071,
+    "recordOffset": 474394345,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations The above description is illustrative and not restrictive. Many variations of the invention will become apparent to those of skill in the art upon review of this disclosure. Merely by way of example specific database relationships have been used for illustration, but the invention is not so limited. The scope of the invention should, therefore, be determined not with reference to the above description, but instead should be determined with reference to the appended claims along with their full scope of equivalents. ##SPC1## For most network configurations it will be useful to have multiple views of the network to represent functional groupings of network devices and to represent the network topology. Using the database model discussed above, one might want, for example, to depict devices in particular buildings, or a view that consists only of routers. Taking the example in FIG. 6A one might want to create a separate view for each subnet as well as separate views by type of device (routers, NFS servers, and print servers). A user would create these views one element at a time using a graphical user interface, which would then build the database elements discussed above. As an example, views grouping elements by function (software servers, routers, and print servers) and subnetwork(s) might be formed as shown in FIG. 6B. A high level view is shown in FIG. 6C. As shown therein, cloud icons represent the separate views that",
+    "textAfterTable": "Network management system and network status display method US5475838 * Nov 30, 1993 Dec 12, 1995 Digital Equipment Corporation Extensible entity management system including rule-based alarms US5504921 * May 16, 1994 Apr 2, 1996 Cabletron Systems, Inc. Network management system using model-based intelligence US5568605 * Jan 13, 1994 Oct 22, 1996 International Business Machines Corporation Resolving conflicting topology information US5572640 * Dec 1, 1994 Nov 5, 1996 Hewlett-Packard Company Batch transfer system and method for high performance graphic display of network topology US5590120 * Oct 31, 1995 Dec 31, 1996 Cabletron Systems, Inc. Port-link configuration tracking method and apparatus US5606664 * Apr 12, 1993 Feb 25, 1997 Bay Networks, Inc. Apparatus and method for automatically determining the topology of a local area network US5689645 * Dec 1, 1994 Nov 18, 1997",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

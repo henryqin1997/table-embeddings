@@ -1,0 +1,64 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Sep 9, 1985",
+            "Nov 9, 1987",
+            "Aug 24, 1990",
+            "Sep 1, 1994",
+            "Apr 27, 1998",
+            "Sep 22, 1998",
+            "Oct 26, 1998",
+            "Oct 26, 1998"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "REMI",
+            "SULP",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Surcharge for late payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: CROSFIELD ELECTRONICS (USA) LIMITED DE LA RUE HOUS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:JOHNSON, ANTHONY J.;FRANKLIN, PAUL E.;REEL/FRAME:004455/0926 Effective date: 19850903",
+            "Owner name: CROSFIELD ELECTRONICS LIMITED, DE LA RUE HOUSE, 3/ Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNOR:ROMON LIMITED;REEL/FRAME:004795/0823 Effective date: 19870821 Owner name: CROSFIELD ELECTRONICS LIMITED, DE LA RUE HOUSE, 3/ Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:ROMON LIMITED;REEL/FRAME:004795/0823 Effective date: 19870821",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Owner name: FUJIFILM ELECTRONIC IMAGING LIMITED, ENGLAND Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:CROSFIELD ELECTRONICS LIMITED;REEL/FRAME:009138/0216 Effective date: 19980226",
+            "",
+            "",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US4647963 - Color enhancement - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4647963?dq=645576",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00177-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 470549081,
+    "recordOffset": 470533122,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations The resultant factor is then used to multiply the reduced colour components and finally the multiplied reduced colour components are added either to the subtracted grey level or the original colour components. The microcomputer then determines whether the gain factor is to be modified or additionally modified in accordance with the subtracted grey level. This is similar to the modification described in relation to the first example. If such a modification is required, a look-up table is addressed using the subtracted grey level and a grey level factor is selected. This factor may, for example, be defined in a similar manner to that shown in FIG. 4. The selected gain factor, possibly after modification by a coefficient, is then multiplied by the grey level factor. Each of the coefficients will typically be in the range 0-1 but coefficients greater than 1.0 or less than zero are also feasible. Firstly, the gain factor may be modified in accordance with the colour of the maximum equivalent colour component. Since there are six possible equivalent colour components C, Y, M, R, G and V, six coefficients are empirically determined and stored in a look-up table. The microcomputer then determines whether modification by a coefficient is required and if it is determines the colour of the larger equivalent colour component and selects the corresponding coefficient. The previously selected gain factor is then multiplied by this coefficient. A typical coefficient has",
+    "textAfterTable": "Mar 13, 1991 Mar 15, 1994 Lee Aldric K Color conversion system for monochromatic optical scanner US5973801 * Jul 10, 1996 Oct 26, 1999 Scitex Corp., Ltd. Method for matching colors of an object to printing colors US6025826 * Jun 30, 1997 Feb 15, 2000 Sun Microsystems, Inc. Method and apparatus for handling alpha premultiplication of image data US6721000 Feb 23, 2000 Apr 13, 2004 Neomagic Corp. Adaptive pixel-level color enhancement for a digital camera US6947177 Aug 17, 2001 Sep 20, 2005 Paul Reed Smith Guitars Limited Partnership (Maryland) Method of color accentuation US6956581 Sep 19, 2002 Oct 18, 2005 Lexmark International, Inc. Gamut mapping algorithm for business graphics US20040105105 * Aug 17, 2001 Jun 3, 2004 Smith Paul Reed Method of color accentuation USRE43085 Apr 13, 2006 Jan 10, 2012 Faust Communications, Llc Adaptive pixel-level color enhancement for",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

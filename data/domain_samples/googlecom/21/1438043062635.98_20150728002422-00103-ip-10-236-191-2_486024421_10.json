@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Oct 13, 2000",
+            "Feb 2, 2001",
+            "Apr 6, 2007",
+            "Dec 19, 2008",
+            "Apr 7, 2011",
+            "Apr 29, 2015"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: INMARSAT LTD., ENGLAND Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:FARRELL, WADE NICHOLAS;RICE, MARK;REEL/FRAME:011217/0869;SIGNING DATES FROM 20000717 TO 20000719",
+            "",
+            "Year of fee payment: 4",
+            "Owner name: INMARSAT GLOBAL LIMITED, UNITED KINGDOM Free format text: CHANGE OF NAME;ASSIGNOR:INMARSAT LTD;REEL/FRAME:022011/0859 Effective date: 20050527",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6643331 - Coding method and apparatus - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6643331?dq=7,007,239",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 10,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00103-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 486045663,
+    "recordOffset": 486024421,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{28990=Parallel concatenated convolutional codes, known as \u2018Turbo\u2019 codes, have been disclosed in the paper \u2018Near Shannon Limit Error-Correcting Coding and Decoding: Turbo-Codes(1)\u2019, Berrou, Glavieux and Thitimajshima, ICC'93 Geneva, May 23-26, 1993, as well as in U.S. Pat. No. 5,446,747. This type of code has attracted much attention in the digital transmission field because of its bit error rate performance close to the Shannon limit. The Turbo encoder as originally proposed consists of two recursive systematic convolutional coders. The two encoders receive the same information bits, but the input of one of the encoders is connected to an interleaver so that the order of the input bits is scrambled., 53571=In the decoder 34, the bits are demodulated and a probability is estimated for each bit. The demodulated bits are separated into data bits d, non-interleaved parity bits p and interleaved parity bits q according to the format used for transmission. The bits are then decoded using a MAP decoder, of the type known from example from \u2018Implementation and performance of a serial MAP decoder for use in an iterative turbo decoder\u2019, S. S. Pietrobon, IEEE Int. Symp. Inform. Theory, Whistler, British Columbia, Canada, September 1995., 29712=Parallel concatenated encoders using constituent codes other than convolutional codes have also been proposed, for example in the article \u2018Unveiling Turbo Codes: Some Results on Parallel Concatenated Coding Schemes\u2019 by Benedetto and Montorsi, IEEE Transactions on Information Theory, Vol. 42, No. 2, March 1996, and in \u2018Iterative Decoding of Turbo Codes and Other Concatenated Codes\u2019, a dissertation dated February 1996, by S. A. Barbulescu of the Institute of Telecommunications Research, University of South Australia.}",
+    "textBeforeTable": "Patent Citations The above embodiments are provided purely by way of example, and further modifications may be envisaged without departing from the scope of the appended claims. Modifications of the above embodiments may be envisaged within the scope of the present invention. For example, alternative modulation schemes may be used, such as 8 PSK (8 phase shift keying). Alternative rate codes may be produced, by using different puncturing rates. Although recursive convolutional codes are preferred as the constituent codes of the encoder 20, other constituent codes such as block codes may be used. The data bits d may be pre-coded before being input to the encoder 20, and/or further encoded after being output from the buffer 21. In the decoder 34, the bits are demodulated and a probability is estimated for each bit. The demodulated bits are separated into data bits d, non-interleaved parity bits p and interleaved parity bits q according to the format used for transmission. The bits are then decoded using a MAP decoder, of the type known from example from \u2018Implementation and performance of a serial MAP decoder for use in an iterative turbo decoder\u2019, S. S. Pietrobon, IEEE Int. Symp. Inform. Theory, Whistler, British Columbia, Canada, September 1995. In a fourth embodiment of the present invention, as shown in FIG. 11, the effective delay is reduced to N/8, at the expense of the disadvantages of the second embodiment. In the first eighth of",
+    "textAfterTable": "Title not available GB2300540A Title not available WO1997000561A1 Jun 14, 1996 Jan 3, 1997 Feldman Howard Ray Communication method and apparatus using data compression * Cited by examiner Non-Patent Citations Reference 1 Barbulescu, Sorin Adrian, Iterative Decoding of Turbo Codes and Other Concatenated Codes, A Dissertation submitted to the School of Electronic Engineering Faculty of Engineering, University of South Australia for the Degree of Doctor of Philosophy, Feb. 1996, 8 pages. 2 Berrou, Claude et al., Near Shannon Limit Error-Correcting Coding and Decoding: Turbo-Codes (1), IEEE 1993, pp. 1064-1070. 3 Berrou, Claude et al., Near Shannon Limit Error\u2014Correcting Coding and Decoding: Turbo-Codes (1), IEEE 1993, pp. 1064-1070. 4 Pietrobon, Steven S., Implementation and Performance of a Serial MAP Decoder for use in an Iterative Turbo Decoder, Whistler Conference Centre, Whister, British Columbia, Canada, Sep. 17-22, 1995, Sponsored by The Information Theory Society of The Institute of Electrical and Electronics Engineers, 3 pages.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}
