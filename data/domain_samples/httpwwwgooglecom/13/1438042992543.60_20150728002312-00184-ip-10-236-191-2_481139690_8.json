@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Sep 21, 1982",
+            "Jun 22, 1992",
+            "May 17, 1996",
+            "May 8, 2000",
+            "Jun 28, 2002",
+            "Oct 31, 2003"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: XEROX CORPORATION STAMFORD,CT. A CORP OF N Y Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:CARTER, JEFF C.;FEDERICO, ANTHONY M.;COMPARETTA, CHRISTOPHER;REEL/FRAME:004046/0664 Effective date: 19820916",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12",
+            "Owner name: BANK ONE, NA, AS ADMINISTRATIVE AGENT, ILLINOIS Free format text: SECURITY INTEREST;ASSIGNOR:XEROX CORPORATION;REEL/FRAME:013153/0001 Effective date: 20020621",
+            "Owner name: JPMORGAN CHASE BANK, AS COLLATERAL AGENT,TEXAS Free format text: SECURITY AGREEMENT;ASSIGNOR:XEROX CORPORATION;REEL/FRAME:015134/0476 Effective date: 20030625"
+        ]
+    ],
+    "pageTitle": "Patent US4800521 - Task control manager - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4800521?dq=6,308,317",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00184-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 481175703,
+    "recordOffset": 481139690,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{28268=Other control boards are the Xerographic Remote (XER) control board 74 for monitoring and controlling the xerographic process, in particular the digital signa;s the Marking and Imaging Remote (MIR) control board 76 for controlling the operation of the optics and xerographic subsystems, in particular the analog signals. A Display Control Remote (DCR) control board 78 is also connected to the CPM control board 70 providing operation and diagnostic information on both an alphanumeric and liquid crystal display. Interconnecting the control boards is a shared communication line 80, preferably a shielded coaxial cable or twisted pair similar to that used in a Xerox Ethernet\ufffd Communication System. For a more detailed explanation of an Ethernet\ufffd Communication Ser, reference is made to pending applications U.S. Ser. No. 205,809; U.S. Ser. No. 205,822 and U.S. Ser. No. 205,821, all filed Nov. 10, 1980 and incorporated herein as references.}",
+    "textBeforeTable": "Patent Citations Explanation: Moves the task identified by $FOUND-- ID from the DEAD state to the QUEUED state, using the priority specified in $PRIORITY-- VALUE. ##SPC1## Outputs: None $FOUND-- ID Task to insert Inputs: $PRIORITY-- VALUE Priority of task to insert Primitive: $P-- STS $INSERT Explanation: Causes the Scheduler to indicate which task is to be given the next slice. Outputs: $CURRENT-- ID Inputs: $CURRENT-- ID Primitive: $P-- STS $SCHEDULE Explanation: Resets the Scheduler so that execution slices are allocated starting with the SYSTEM task and continue with the rest of the QUEUED tasks. Outputs: $CURRENT-- ID Inputs: $SYSTEM-- ID Identifier of $SYSTEM-- TASK Primitive: $P-- MTS $RESET Explanation: Sets up the Scheduler's internal data bases to include required system-related tasks. The system requires three operating system tasks: $SYSTEM-- TASK (priority=X'40'), $LEVEL TASK (priority =X'20'), and BOTTOM task (priority=X'00'). Note that most of the above Primitives will not perform properly with less than two tasks in the QUEUED state, so these three tasks must not be altered with Scheduler Primitives once the system is running. Outputs: None Inputs: None Primitive: $P-- MTS $INITIALIZE Explanation: Modifies the Scheduler's priority associated with the task identified by $CURRENT-- ID to the value contained in $PRIORITY VALUE. Note: If the desired priority is the same as the current priority, this primitive performs a NO-OP. Outputs: None $CURRENT-- ID The task to change priority Inputs: $PRIORITY-- VALUE The new Priority Primitive: $P-- MTS",
+    "textAfterTable": "* Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US5001666 * Oct 19, 1987 Mar 19, 1991 Motorola, Inc. Multiple interrupt tri-level microprocessor operating system US5025369 * Aug 25, 1988 Jun 18, 1991 David Schwartz Enterprises, Inc. Computer system US5060140 * Jan 16, 1986 Oct 22, 1991 Jupiter Technology Inc. Universal programmable data communication connection system US5079695 * Apr 25, 1988 Jan 7, 1992 Hewlett-Packard Company Object management facility which includes a snapshot facility for providing data transfer between two objects US5095369 * Sep 28, 1990 Mar 10, 1992 Xerox Corporation Method and apparatus for improved job stream printing in an electronic printer with various finishing function US5179702 * Jun 11, 1990 Jan 12, 1993 Supercomputer Systems",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

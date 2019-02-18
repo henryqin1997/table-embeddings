@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "21 Oct 1993",
+            "11 Apr 1996",
+            "30 May 2000",
+            "4 May 2004",
+            "30 May 2008",
+            "19 Jan 2010"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: TALIGENT, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:SEIDL, ROBERT;REEL/FRAME:006742/0094 Effective date: 19931021",
+            "Owner name: OBJECT TECHNOLOGY LICENSING CORP., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:TALIGENT, INC.;REEL/FRAME:007886/0500 Effective date: 19960403",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12",
+            "Owner name: APPLE INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:OBJECT TECHNOLOGY LICENSING CORPORATION;REEL/FRAME:023810/0315 Effective date: 20091210"
+        ]
+    ],
+    "pageTitle": "Patent US5583977 - Object-oriented curve manipulation system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com.au/patents/US5583977?ie=ISO-8859-1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989142.82/warc/CC-MAIN-20150728002309-00259-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 482963651,
+    "recordOffset": 482925640,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{100278=Once the ray from the eyepoint into the screen at x,y is transformed into model space it can then be determined whether the user had the pointer placed over the bounding box when the mouse button was pressed (to thus perform a manipulation). This is accomplished by finding the nearest intersection of the bounding box with the ray 507. Given a viewing ray (origin and direction) in 3D space, a 3D axis-aligned bounding box (where the planes/faces of the bounding box are perpendicular to the coordinate axis; note that this is also known as \"canonical\") with extents given by boxMin and boxMax (the coordinate-wise numerical minima and maxima, respectively, of the bounding box), and a 4\ufffd4 modeling transformation on the bounding box (in a preferred embodiment a concatenation of a scaling, a rotation and a translation transformation as was explained above and as will be further explained below), finding the intersection of the ray with the nearest face of the bounding box is a relatively simple matter which is well known in the art (see e.g., \"Fast Ray-Box Intersection\" by Andrew Woo, in Graphics Gems, Andrew Glassner, ed., Academic Press, 1990, or \"Essential Ray-Tracing Algorithms\" by Eric Haines, in An Introduction to Ray Tracing, Andrew Glassner, ed., Academic Press, 1989)., 105061=Referring now to FIG. 5, by either logically OR'ing, or numerically adding the resulting values, an index value is generated which indicates which particular active zone was selected. For example, if the bottom left corner active zone (scaling, in a preferred embodiment) is selected, then the X axis determination would yield a value of 2 (10 in binary) and the Y axis determination would yield a value of 8 (1000 in binary). In that case, the resulting index value of the selected active zone hitpoint would be 10 (1010 in binary). Similarly, if the right edge active zone (rotation in a preferred embodiment) is selected, then the X axis determination would yield a value of 1 (01 in binary) and the Y axis determination would yield a value of 0 (0000 in binary). In that case, the resulting index value of the selected active zone hitpoint would be 1 (or 0001 in binary).}",
+    "textBeforeTable": "Patent Citations While the invention has been described in terms of a preferred embodiment, those skilled in the art will recognize that the invention can be practiced with modification within the spirit and scope of the appended claims. Given that it is sometimes useful to adjust a virtual box origin, a way to interactively do this is provided in a preferred embodiment. For a given virtual box, a menu command (Show axes) is provided to invoke this processing. FIG. 39 illustrates the sequence of events associated with modifying the axis in accordance with a preferred embodiment. At 3900, the virtual box is shown before the modify axis is invoked. Then, at 3910, an illustration of the after axes are shown. Finally, at 3920, a modification of the axis is shown as the axis is dragged by the mouse pointer. This menu command toggles the display of the virtual box's rotation axis. Dots appear on the visible faces where they intersect the axes. These dots can be manipulated by clicking on them and dragging them within their face (a rotation axis should not be dragged outside the virtual box or else user interaction with the box will not be consistent). The movement of the other axis, while dragging a particular one, is automatically coupled so the three axes always intersect in the origin of the virtual box. A virtual box has an internal coordinate system, and origin. These are",
+    "textAfterTable": "US5119475 * 29 Aug 1991 2 Jun 1992 Schlumberger Technology Corporation Object-oriented framework for menu definition US5125091 * 8 Jun 1989 23 Jun 1992 Hazox Corporation Object oriented control of real-time processing US5133075 * 19 Dec 1988 21 Jul 1992 Hewlett-Packard Company Method of monitoring changes in attribute values of object in an object-oriented database US5136705 * 10 Jun 1991 4 Aug 1992 Tektronix, Inc. Method of generating instruction sequences for controlling data flow processes US5151987 * 23 Oct 1990 29 Sep 1992 International Business Machines Corporation Recovery objects in an object oriented computing environment US5181162 * 6 Dec 1989 19 Jan 1993 Eastman Kodak Company Document management and production system US5307453 * 3 Oct 1991 26 Apr 1994 Fuji Xerox Co., Ltd. Graphic data processing system",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

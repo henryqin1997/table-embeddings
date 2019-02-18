@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jun 5, 1998",
+            "Mar 6, 2001",
+            "Sep 9, 2003",
+            "Aug 23, 2007",
+            "Aug 18, 2011"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: GATEWAY 2000, INC., SOUTH DAKOTA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:CHAN, RIX S.;DORSETT, SEAN I.;REEL/FRAME:009234/0763;SIGNING DATES FROM 19980220 TO 19980223",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6038614 - Active volume control with hot key - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6038614?dq=7350717",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062723.96/warc/CC-MAIN-20150728002422-00148-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 468343407,
+    "recordOffset": 468312881,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{28086=Personal computers are evolving in several different directions. One of those directions leads toward a larger system including multimedia inputs from many different sources, presented to a user--or a group of users simultaneously--through a set of system output devices which have a configuration similar to that of an entertainment center or a home theater. This type of personal computer converges the capabilities of previously separate systems into a single system having greater capabilities than the sum of its parts, and at the same time reducing cost by eliminating the duplication of components providing the same function in the separate systems. An example of such a \"converged system\" is the publicly available Destination\ufffd PC/TV system from Gateway 2000, Inc. This product permits a user to enjoy the capabilities of both a personal computer system and a high-quality television system at a lower total cost than that of two separate systems.}",
+    "textBeforeTable": "Patent Citations Although specific embodiments have been illustrated and described herein, those of ordinary skill in the art will appreciate that any elements or arrangements of elements capable of achieving the same purpose may be substituted for the specific forms shown. This patent is intended to cover all adaptations or variations of the invention, limited only by the following claims and equivalents thereof. During the interval activated by step 510 (indicated by arrow 513) step 520 passes control via exit 521 to blocks 460-480 to modify parameter values for individual devices as shown in FIG. 4. At other times, however, exit 522 passes control to step 530. This step receives the scan code from the button press or other source, and substep 531 accesses from master controller 177 the parameter value indicated by the scan code. Step 540 determines the new value of that parameter, preferably in the same way as does step 470. Step 550 then writes the new parameter value back into master controller register 177, and exits at point 402. FIG. 5 is a flowchart 500 showing method steps for implementing the functions described in connection with FIG. 2B. Steps shared with flowchart 400 are shown reduced in FIG. 5. In method 500, the recognition of a device-selection button press at 411 activates a parameter-set interval at step 510; during this interval, one or more parameters may be modified. One way to define this interval",
+    "textAfterTable": "Filing date Publication date Applicant Title US6323873 * Jan 28, 1998 Nov 27, 2001 Gateway, Inc Computer keyboard display device control US6542882 * Apr 22, 1999 Apr 1, 2003 Gateway, Inc. System and method for providing a database of content having like associations US6763400 * Sep 12, 2001 Jul 13, 2004 Kabushiki Kaisha Toshiba Computer having control means for determining an operation state of an audio sources selecting switch when the computer is powered on/off, in a standby and a pause states US6853367 Feb 11, 2002 Feb 8, 2005 Gateway, Inc. Computer keyboard display device control US6930730 May 3, 2002 Aug 16, 2005 Mitsubishi Digital Electronics America, Inc. Control system and user interface for network of input devices US6954805 May 20, 2004 Oct 11, 2005 Kabushiki Kaisha Toshiba Computer detecting an activation factor due to a selection by a slidable switch when the computer is powered off, in a standby and a pause states",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

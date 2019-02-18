@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Aug 26, 2002",
+            "Apr 1, 2008",
+            "Aug 15, 2008",
+            "May 3, 2011",
+            "Jun 19, 2012",
+            "Oct 1, 2012",
+            "Feb 15, 2013",
+            "Apr 9, 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "RR",
+            "FPAY",
+            "AS",
+            "FPB1",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Request for reexamination filed",
+            "Fee payment",
+            "Assignment",
+            "Expired due to reexamination which canceled all claims",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "",
+            "Effective date: 20080208",
+            "Year of fee payment: 4",
+            "Owner name: NETAPP, INC., CALIFORNIA Free format text: CHANGE OF NAME;ASSIGNOR:NETWORK APPLIANCE, INC.;REEL/FRAME:026214/0947 Effective date: 20080310",
+            "",
+            "",
+            "",
+            "Effective date: 20130215"
+        ]
+    ],
+    "pageTitle": "Patent US20030229656 - Multiple concurrent active file systems - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US20030229656?dq=6,757,710",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00074-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 482940539,
+    "recordOffset": 482912860,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{80450=[0086]FIG. 11 shows a block diagram of a storage system including plural active file systems according to the invention. A system 1100 includes at least one file system processor 1110 (i.e., controller) and at least one storage device 1120 such as a hard disk or CD-ROM drive. The system also preferably includes interface 1130 to at least one computing device or network for receiving and sending information. In an alternative embodiment, processor 1100 is the processor for a computing device connected to the storage system via interface 1130., 83002=[0093] A file system cluster includes a plurality of file system processors 1200 and one or more file system disks 1210. In a preferred embodiment, each such processor 1200 is disposed for operating as a file server, capable of receiving file server requests and making file server responses, such as using a known file server protocol. In a preferred embodiment, the one or more file system disks 1210 include a plurality of such disks, so that no individual disk 1210 presents a single point of failure for the entire highly-available cluster. The Write Anywhere File system Layout (WAFL), which preferably is used with the invention, incorporates such an arrangement., 81518=[0088] In a preferred embodiment, at least one such storage device 1120 includes one or more boot records 1140. Each boot record 1140 includes two or more (preferably two) entries designating a root data block (i.e., mode) in a file system hierarchy for an active file system. Where there is a single active file system, there preferably is a single such boot record; where there is more than one such active file system, there preferably is more than one such boot record., 60364=[0036] U.S. patent application Ser. No. 08/454,921, filed May 31, 1995, in the name of inventors Hitz, Malcolm, Lau and Rakitzis, attorney docket number 103.1002.05, titled \u201cWrite Anywhere File-System Layout,\u201d now U.S. Pat. No. 5,819,292., 83751=[0094] As discussed above, the plurality of processors 1200 can maintain multiple parallel writeable active file systems 1210, along with all associated snapshots for those parallel writeable active file systems. The active file systems and snapshots can be maintained on the same set of disks 1220. Thus, the set of processors 1200 and the set of disks 1220 can provide a highly available cluster without need for substantial duplication of resources., 61468=[0040] U.S. patent application Ser. No. 09/642,065, filed Aug. 18, 2000, in the name of inventors Doucette, Lewis and Edwards, attorney docket number 103.1045.01, titled \u201cImproved Space Allocation in a Write Anywhere File System.\u201d, 60929=[0038] U.S. patent application Ser. No. 09/153,094, filed Sep. 14, 1998, in the name of inventors Hitz, Malcolm, Lau and Rakitzis, attorney docket number 103.1002.08, titled \u201cWrite Anywhere File-System Layout,\u201d now U.S. Pat. No. 6,289,356 B1., 82056=[0089] As noted above, more than one active file system might be present in storage device 1120. In such cases, the file system maintainer (i.e., processor 1110 operating under program control) preferably will designate and orderly maintain more than one boot record 1140, one for each such active file system., 78296=[0082] The top portion of FIG. 10 corresponds to FIG. 9, except that additional snapshots have been made from the active file systems. Thus, snapshot 1000 has been made of file system 800, and snapshot 1010 has been made of file system 830\u2032. In addition, snapshot 810 has been deleted to free up space on the storage device or devices. Both of active file systems 800 and 830\u2032 can trace back to a common snapshot 820. However, when that snapshot is deleted, the active file systems will no longer share a common snapshot. This situation has occurred with respect to file system 1020 and snapshots 1030 to 1050. This arrangement illustrates that it is possible to have a \u201cforest\u201d (i.e., a collection of unconnected trees) formed by the links between active file systems and their associated snapshots, all on one storage device or set of storage devices. Despite the fact that the file systems and their snapshots no longer point to a common snapshot, these snapshots and even the active file systems could still share some data (i.e., overlap), thereby preserving the efficiency of the invention., 59861=[0034] U.S. patent application Ser. No. 09/932,578, filed Aug. 17, 2001, in the name of inventors Lewis, Edwards and Viswanathan, attorney docket number 103.1072.01, titled \u201cInstant Snapshot.\u201d, 82431=[0090] Read-only snapshots also can be present in storage device 1120. In this case, pointers from active file systems to snapshots and from snapshots to other snapshots are stored in the storage device, as discussed above., 60096=[0035] U.S. patent application Ser. No. 08/071,643, filed Jun. 3, 1993, in the name of inventors Hitz, Malcolm, Lau and Rakitzis, attorney docket number 103.1002.01, titled \u201cWrite Anywhere File-System Layout,\u201d now abandoned., 81083=[0087] Processor 1110 performs the tasks associated with the file system, as described herein, under control of program and data memory, the program and data memory including appropriate software for controlling processor 1110 to perform operations on storage device 1120 (and possibly for controlling storage device 1120 to cooperate with processor 1110)., 59626=[0033] U.S. patent application Ser. No. 09/642,061, filed Aug. 18, 2000, in the name of inventors Lewis, Edwards and Viswanathan, attorney docket number 103.1035.01, titled \u201cInstant Snapshot.\u201d, 61215=[0039] U.S. patent application Ser. No. 09/954,522, filed Sep. 11, 2001, in the name of inventors Hitz, Malcolm, Lau and Rakitzis, attorney docket number 103.1002.12, titled \u201cWrite Anywhere File-System Layout.\u201d, 60646=[0037] U.S. patent application Ser. No. 09/108,022, filed Jun. 30, 1998, in the name of inventors Hitz, Malcolm, Lau and Rakitzis, attorney docket number 103.1002.07, titled \u201cWrite Anywhere File-System Layout,\u201d now U.S. Pat. No. 5,963,962.}",
+    "textBeforeTable": "Patent Citations [0098] Furthermore, although preferred embodiments of the invention are disclosed herein, many variations are possible which remain within the content, scope and spirit of the invention, and these variations would become clear to those skilled in the art after perusal of this application. [0097] In the preceding description, a preferred embodiment of the invention is described with regard to preferred process steps and data structures. However, those skilled in the art would recognize, after perusal of this application, that embodiments of the invention may be implemented using one or more general purpose processors or special purpose processors adapted to particular process steps and data structures operating under program control, that such process steps and data structures can be embodied as information stored in or transmitted to and from memories (e.g., fixed memories such as DRAMs, SRAMs, hard disks, caches, etc., and removable memories such as floppy disks, CD-ROMs, data tapes, etc.) including instructions executable by such processors (e.g., object code that is directly executable, source code that is executable after compilation, code that is executable through interpretation, etc.), and that implementation of the preferred process steps and data structures described herein using such equipment would not require undue experimentation or further invention. [0096] The invention can be embodied in methods for creating and maintaining plural active file systems, as well as in software and/or hardware such as a",
+    "textAfterTable": "US7343449 Mar 17, 2005 Mar 11, 2008 Hitachi, Ltd. Storage subsystem and storage system US7472243 Jun 9, 2006 Dec 30, 2008 Hitachi, Ltd. Storage system and control method thereof US7490096 * May 10, 2006 Feb 10, 2009 Sun Microsystems, Inc. Automatic intent log testing US7509467 Jul 3, 2007 Mar 24, 2009 Hitachi, Ltd. Storage controller and data management method US7613743 * Jun 10, 2005 Nov 3, 2009 Apple Inc. Methods and apparatuses for data protection US7664791 * Oct 26, 2005 Feb 16, 2010 Netapp, Inc. Concurrent creation of persistent point-in-time images of multiple independent file systems US7685169 Feb 14, 2005 Mar 23, 2010 Netapp, Inc. Multiple concurrent active file systems US7734870 Nov 30, 2007 Jun 8, 2010 Hitachi, Ltd. Storage subsystem and storage system US7765372 Dec 2, 2008",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

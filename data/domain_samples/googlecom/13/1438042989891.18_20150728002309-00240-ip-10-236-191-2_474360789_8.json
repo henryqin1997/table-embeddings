@@ -1,0 +1,77 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US8688250",
+            "US8959022 *",
+            "US9006551",
+            "US9029676",
+            "US9040801",
+            "US9082382",
+            "US20130142344 *",
+            "US20140009682 *"
+        ],
+        [
+            "Filing date",
+            "Mar 25, 2011",
+            "Nov 19, 2012",
+            "Jul 31, 2013",
+            "Sep 24, 2013",
+            "Sep 25, 2012",
+            "Jan 4, 2013",
+            "Jan 29, 2013",
+            "Nov 19, 2012"
+        ],
+        [
+            "Publication date",
+            "Apr 1, 2014",
+            "Feb 17, 2015",
+            "Apr 14, 2015",
+            "May 12, 2015",
+            "May 26, 2015",
+            "Jul 14, 2015",
+            "Jun 6, 2013",
+            "Jan 9, 2014"
+        ],
+        [
+            "Applicant",
+            "Yamaha Corporation",
+            "Motorola Solutions, Inc.",
+            "Yamaha Corporation",
+            "Yamaha Corporation",
+            "Yamaha Corporation",
+            "Yamaha Corporation",
+            "Hoshiko Llc",
+            "Motorola Solutions, Inc."
+        ],
+        [
+            "Title",
+            "Content data reproduction apparatus and a sound processing system",
+            "System for media correlation based on latent evidences of audio",
+            "Musical performance-related information output device, system including musical performance-related information output device, and electronic musical instrument",
+            "Musical score device that identifies and displays a musical score from emitted sound and a method thereof",
+            "Displaying content in relation to music reproduction by means of information processing apparatus independent of music reproduction apparatus",
+            "Musical performance apparatus and musical performance program",
+            "Automatic location-specific content selection for portable information retrieval devices",
+            "System for media correlation based on latent evidences of audio"
+        ]
+    ],
+    "pageTitle": "Patent US8126200 - Methods and systems employing digital content - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US8126200?dq=U.S.+Patent+%23+5,723,324",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00240-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 474434407,
+    "recordOffset": 474360789,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6639=The infrastructure between the device 10 and delivery of the audio to its ultimate destination can take myriad forms. One is shown in FIG. 4. In this arrangement, some or all of the data received by the relay station 24 is routed through the internet 26 to a server 28. (The server 28 can be a \u201cMediaBridge\u201d server of the type described, e.g., in the assignee's applications 60/164,619, filed Nov. 10, 1999, and Ser. No. 09/343,104, filed Jun. 29, 1999, and abandoned in favor of continuing application Ser. No. 10/764,430, filed Jan. 23, 2004.) Server 28 parses the data and routes some or all of it to a data repository 30 at which the audio requested by the user is stored. This repository, in turn, dispatches the audio to the user (e.g., to a computer, media player, storage device, etc.), again through the internet. (Address information detailing the destination 32 of the audio may be included in the data sent from the device 10, or can be retrieved from a database at the server 28 based on a user-ID sent from the device 10.)}",
+    "TableContextTimeStampAfterTable": "{93873=For example, GoodNoise is planning to embed a digital signature\u2014termed a multimedia identifier, or MMI\u2014in its MP3 music. MMI will register the song and its author with a licensing number. In addition to providing information about the songwriter and distributor, this digital encoding may also include lyrics, liner notes, and other information. But all of the proposed uses serve only to convey information from the distributor to the consumer; use for \u201ctracking\u201d is actively disclaimed. (Wired News, \u201cGoodNoise Tags MP3 Files,\u201d Feb. 3, 1999.), 144009=In a related embodiment, the last portion (e.g., 5 seconds, frame, etc.) of the content bears a different \u201cend of content\u201d watermark that triggers issuance of a receipt. Such a watermark can indicate the length of the content, to serve as a cross-check against the periodic watermark polling. (E.g., if periodic sampling at 2 second intervals yields 545 samples corresponding to the same content, and if the \u201cend of content\u201d watermark indicates that the content was 1090 seconds long, then receipt of the entire content can be confirmed.), 25002=The subject matter of the present application is also related to that disclosed in U.S. Pat. No. 5,862,260, and in application Ser. No. 08/746,613, filed Nov. 12, 1996 (now U.S. Pat. No. 6,122,403); 09/343,104, filed Jun. 29, 1999 (now abandoned in favor of continuing application Ser. No. 10/764,430, published as US20050013462); 60/164,619, filed Nov. 10, 1999; Ser. No. 09/503,881, filed Feb. 14, 2000 (now U.S. Pat. No. 6,614,914); 09/525,865, filed Mar. 15, 2000 (now U.S. Pat. No. 6,611,607); 60/191,778 filed Mar. 24, 2000; Ser. No. 09/547,664, filed Apr. 12, 2000 (now U.S. Pat. No. 7,206,820); and Ser. No. 08/508,083, filed Jul. 27, 1995 (now U.S. Pat. No. 5,841,978). The subject matter of the present application is also related to that disclosed in PCT Application PCT/US96/06618, filed May 7, 1996 (published as WO 96/36163)., 95089=A similar initiative has been announced by the Recording Industry Association of America (RIAA). Termed the Secure Digital Music Initiative (SDMI), the program seeks to define a voluntary specification that will assure proper compensation to those who produce and distribute music. One element of the system will likely be a watermarking component. (Dow Jones Newswire, \u201cSpurred By Maverick Technology, Music Industry Eyes Web,\u201d Dec. 31, 1998.), 63685=33 year old Mary is at home listening to the latest batch of holiday tunes being offered up over her 2-decade-long favorite radio station. She's spent many days now half-consciously culling the tunes for that perfect arrangement for the new year's bash that she regrettably agreed to host. 10:40 AM rolls around and some new tune catches her ear, a tune she knows can work well following the jingle-cats rendition of Strawberry Fields. She half jogs over to the stereo and hits the \u201cGoFetch\u201d button. In a few days, she'll sit down at the computer and put together the final sound track for the gala evening ahead, her play list dutifully waiting for her shuffling instructions and desired start time., 100679=In other embodiments, perceptually adaptive encoding is not used. In some such embodiments, no tailoring of the temporal or spectral characteristics of the watermark signal is employed. In others, the watermark signal is spectrally filtered to emphasize low frequency audio components (e.g. less than 500 hz), high frequency audio components (e.g. higher than 2500 hz), or mid-frequency audio components (500-2500 hz)., 138106=These three examples are but illustrations of many possible techniques for changing the rights associated with a work. Many other techniques are known. See, e.g., the proposals for watermark-based copy control systems for digital video at the Copy Protection Technical Working Group, http://www.dvcc.com/dhsg/, from which certain of the foregoing examples are drawn. See also Bloom et al, \u201cCopy Protection for DVD Video,\u201d IEEE Proceedings, Special Issue on Identification and Protection of Multimedia Information, June, 1999., 54238=The process of embedding a file identifier may be done at the time of encoding or transcoding a file. For example, the file identifier may be inserted during a ripping process, such as when a device or programmatic process converts a song from a format stored on packaged media, like a CD or DVD, to an electronic, and compressed form, such as MP3 or some other audio codec. As another example, the file identifier may be inserted when a device or programmatic process transcodes an electronic music file from one codec format to another. Yet another example is where a file is taken from a digital or analog uncompressed format, and placed in another format for distribution., 94450=The Genuine Music Coalition\u2014a partnership of various companies in the music distribution business\u2014likewise has announced plans to employ watermarking of MP3 music. The watermarking technology, to be provided by Liquid Audio, will convey data specifying the artist or producer contact, copyright data, and a number to track ownership. The Coalition hopes that the provision of this embedded information will help thwart piracy. Industry observers believe Liquid Audio will next introduce playback technology only plays audio in which its watermark is detected. (Wired News, \u201cLiquefying MP3,\u201d Jan. 23, 1999.), 24438=This application is a division of application Ser. No. 11/746,811, filed May 10, 2007 (now U.S. Pat. No. 7,565,294), which is a division of application Ser. No. 10/338,032, filed Jan. 6, 2003 (now U.S. Pat. No. 7,349,552), which is a division of application Ser. No. 09/563,664, filed May 2, 2000 (now U.S. Pat. No. 6,505,160), which is a continuation-in-part of application Ser. No. 09/476,686, filed Dec. 30, 1999 (now U.S. Pat. No. 7,562,392), which claims priority to provisional application No. 60/134,782, filed May 19, 1999., 82041=An arrangement like the foregoing may require that the decoded watermark information be interpreted for the user, so that the user is not presented simply a raw binary watermark payload. The interpreted information presented to the user can comprise, e.g., the source (CNN Airport News, WABC Radio, CD-ROM, MTV), the artist (Celine Dion), the title (That's the Way It Is), and/or the time decoded (3:38:02 p.m.), etc., 179149=Certain of the appliances contemplated above require user interfaces more sophisticated than are presently typical on such devices. The simplicity of the underlying audio appliance can be preserved, in many instances, by using a palmtop computer\u2014coupled by infrared or otherwise\u2014as a temporary user interface to the appliance. Some of the processing capability can likewise be off-loaded to an ancillary palmtop. (Palmtop is here meant to refer generally to any pocket-size programmable computing device.) Unless otherwise stated, it should be understood that the digital music, video, and imagery contemplated herein is not of any particular form or format. Audio, for example, can be of various forms, both streaming and non-streaming, and of various formats (e.g. MP3, MP4, MS Audio, Windows Media Technologies, RealAudio, *.WAV, MIDI, Csound, Dolby's Advanced Audio Codec (AAC), etc.}",
+    "textBeforeTable": "Patent Citations In view of the many embodiments to which the principles of the subject technology can be applied, it should be apparent that the detailed embodiments are illustrative only and should not be taken as limiting. Rather, we claim all such modifications as may fall within the scope and spirit of the following claims, and equivalents thereto. Certain of the appliances contemplated above require user interfaces more sophisticated than are presently typical on such devices. The simplicity of the underlying audio appliance can be preserved, in many instances, by using a palmtop computer\u2014coupled by infrared or otherwise\u2014as a temporary user interface to the appliance. Some of the processing capability can likewise be off-loaded to an ancillary palmtop. (Palmtop is here meant to refer generally to any pocket-size programmable computing device.) Unless otherwise stated, it should be understood that the digital music, video, and imagery contemplated herein is not of any particular form or format. Audio, for example, can be of various forms, both streaming and non-streaming, and of various formats (e.g. MP3, MP4, MS Audio, Windows Media Technologies, RealAudio, *.WAV, MIDI, Csound, Dolby's Advanced Audio Codec (AAC), etc. While the foregoing examples have each been illustrated with reference to a particular media type (e.g., video, audio, etc.), it will be recognized that the principles of each embodiment find application with the other media types as well. Likewise, while certain embodiments were illustrated with",
+    "textAfterTable": "US5581800 Jun 7, 1995 Dec 3, 1996 The Arbitron Company Method and apparatus for automatically identifying a program including a sound signal US5584050 Oct 7, 1994 Dec 10, 1996 A.C. Nielsen Company Program monitoring system US5602566 Aug 23, 1994 Feb 11, 1997 Hitachi, Ltd. Small-sized information processor capable of scrolling screen in accordance with tilt, and scrolling method therefor US5606609 Sep 19, 1994 Feb 25, 1997 Scientific-Atlanta Electronic document verification system and method US5613004 Jun 7, 1995 Mar 18, 1997 The Dice Company Steganographic method and device US5640193 Aug 15, 1994 Jun 17, 1997 Lucent Technologies Inc. Multimedia service access by reading marks on an object US5661787 Oct 27, 1994 Aug 26, 1997 Pocock; Michael H. System for on-demand remote access to a self-generating audio recording, storage, indexing and transaction system US5677708 May 5, 1995 Oct 14, 1997 Microsoft Corporation System for displaying a list on a display",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

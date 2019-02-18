@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Sep 1, 1981",
+            "Mar 11, 1987",
+            "Apr 24, 1987",
+            "Apr 24, 1987",
+            "Jan 18, 1991",
+            "Jan 30, 1995"
+        ],
+        [
+            "Code",
+            "AS",
+            "REMI",
+            "FPAY",
+            "SULP",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Fee payment",
+            "Surcharge for late payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: SONY CORPORATION, 7-35 KITASHINAGAWA-6, SHINAGAWA- Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNOR:WATANABE, NOBUHIKO;REEL/FRAME:003917/0006 Effective date: 19810825",
+            "",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US4398224 - Time base correcting apparatus - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4398224?dq=6978253",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982013.25/warc/CC-MAIN-20150728002302-00064-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 473749455,
+    "recordOffset": 473707826,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{43671=The control word is adapted to represent control data for the purpose of identifying the particular format that is used to record the digitized information. For example, the control word may represent the sampling rate that has been used to digitize the analog signal, the number of tracks per channel in which each channel of digitized information is recorded, and other elements which constitute respective formats. For example, different encoding schemes may be used to encode the digitized information, and the control word may be used to identify the particular scheme which has been used. In addition to being encoded in a desired encoding scheme, the encoded digitized information also may be modulated prior to recording, and the control word identifies the type of modulation which is used. One example of a type of modulation that may be used is described in application Ser. No. 222,278, filed Jan. 2, 1981, the disclosure of which is incorporated herein by reference. In this modulator, the encoded digital signals are modulated so as to establish strict limitations on the minimum and maximum intervals between successive transitions, thereby avoiding distortion when the digitized signals are reproduced. Of course, other types of modulation may be used, such as the so-called 3PM type, or MFM type, or bi-phase modulation, as desired., 27620=In addition to time base errors, signals which are recorded and reproduced from a magnetic medium may be subjected to distortion, dropout, and other errors which, generally, are inherent in magnetic media. Such errors are particularly noticeable when digital signals are recorded and reproduced. This is because the obliteration of even a portion of the digital signal may have a magnified distortional effect when that digital signal subsequently is converted back into analog form. Consequently, in order to minimize such delterious effects due to these errors, various error correction encoding techniques have been proposed for use in recording digital signals. One such technique is known as the time-interleaved error correction encoding technique and is described in copending application Ser. No. 195,625, filed Oct. 9, 1980. In the time-interleaved error correction encoding technique, digital words which are temporarily spaced far apart are selected and combined in a data block. Thus, such data words are \"time-interleaved\" with each other. Such time-interleaving generally is carried out in stages, with a parity word being generated at each stage. Such parity words also are time-interleaved, resulting in a data block formed of data and parity words derived from substantially time-separated information. With this technique, if a particular data word or an entire data block is obliterated, the actual effect is to destroy isolated data words which can be reconstructed either by conventional error correction techniques (such as parity techniques), or may be \"concealed\" by replacing the destroyed word with a simulated word that is produced by interpolating those \"good\" words which precede and follow it., 52723=Typical examples of electronic editing which may be used with the arrangement of the transducers shown in FIG. 3 are described in U.S. application Ser. No. 116,401, filed Jan. 29, 1980, and also in U.S. Ser. No. 195,625, filed Oct. 9, 1980, both of these applications being incorporated herein by reference.}",
+    "textBeforeTable": "Patent Citations It is intended that the appended claims be interpreted as including the foregoing as well as other such changes and modifications. While the present invention has been particularly shown and described with reference to a preferred embodiment, it will be readily apparent to those of ordinary skill in the art that various changes and modifications in form and details may be made without departing from the spirit and scope of the invention. For example, error flag memory 52 may be included in RAM 40 as a separate storage location therein. Also, multiplexer 53 may be omitted, and the actual state of write enable pulse WE may be used directly as the error flag written into error flag memory 52. Additionally, a suitable error flag write-in circuit may be provided such that, since each error flag is set to its binary \"1\" condition after being read out from the error flag memory, an error flag may be reset only if its associated data block is detected as being correct. Still further, although not shown in FIG. 10, a pulse generator, such as a one-shot circuit, may be used to generate a negative-going write enable pulse WE of proper duration in response to the setting of flip-flop circuit 50. Moreover, this flip-flop circuit may be replaced by such a one-shot circuit. Since the write-in address WA generated by ROM 51 is determined as a function of the block",
+    "textAfterTable": "Jan 8, 1985 Sony Corporation Time base correcting apparatus US4532629 * Jan 19, 1983 Jul 30, 1985 Sony Corporation Apparatus for error correction US4591925 * Apr 6, 1983 May 27, 1986 Ampex Corporation Encoded dropout compensator system US4622598 * Dec 6, 1983 Nov 11, 1986 Sony Corporation Method of recording odd and even words of one channel PCM signals in plural tracks US4638380 * May 9, 1984 Jan 20, 1987 Sony Corporation Digital video tape recorder apparatus US4641204 * Aug 14, 1984 Feb 3, 1987 Victor Company Of Japan, Ltd. Recording and reproducing system for recording both analogue and digital information on and from a disc US4642702 * Jul 13, 1984 Feb 10, 1987 U.S. Philips Corporation Apparatus for time base correction US4680638 * Jul 14, 1983 Jul 14,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

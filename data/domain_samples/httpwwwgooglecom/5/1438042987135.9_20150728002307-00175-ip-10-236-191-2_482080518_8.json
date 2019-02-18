@@ -1,0 +1,64 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Feb 5, 1996",
+            "Nov 9, 2000",
+            "Nov 4, 2004",
+            "Sep 13, 2005",
+            "Aug 14, 2006",
+            "Sep 26, 2006",
+            "Sep 30, 2008",
+            "Feb 10, 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: TELIA AB, SWEDEN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:ISAKSSON, MIKAEL;ENGSTROM, BO;REEL/FRAME:007847/0259;SIGNING DATES FROM 19960114 TO 19960116",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Owner name: TELIASONERA AB, SWEDEN Free format text: CHANGE OF NAME;ASSIGNOR:TELIA AB;REEL/FRAME:016769/0062 Effective date: 20021209",
+            "Owner name: DATA ADVISORS LLC, NEVADA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:TELIASONERA AB;TELIASONERA FINLAND OYJ;REEL/FRAME:018099/0680 Effective date: 20050422",
+            "Owner name: DATA ADVISORS LLC, NEVADA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:TELIASONERA AB;TELIASONERA FINLAND OYJ;REEL/FRAME:018313/0371 Effective date: 20050422",
+            "Year of fee payment: 12",
+            "Effective date: 20120206 Owner name: INTELLECTUAL VENTURES I LLC, DELAWARE Free format text: MERGER;ASSIGNOR:DATA ADVISORS LLC;REEL/FRAME:027682/0187"
+        ]
+    ],
+    "pageTitle": "Patent US5652772 - Method and apparatus for synchronization in digital transmisison systems of ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5652772?dq=%223do%22+dna",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00175-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 482109559,
+    "recordOffset": 482080518,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations Instead of inserting special synchronization frames, what are known as \"guard spaces\" in the data frames can be used as synchronization frames. This means that no degradation of transmission capacity is required for the synchronization. However, during synchronization the synchronization frame must be sampled at the same rate as the data frame and a shorter FFT carried out (type 1/8 data FFT) on this, which gives a worse resolution in frequency and correlation. This has, however, the advantage that the FFT operation is carried out much more quickly. An accurate estimate of frequency drift gives high potential for digital frequency regulation. By this is meant that if the limits of the frequency error are known, ie lie within a known interval, instead of regulation via analog components (numerically controlled oscillators, etc) regulation of the sampled signal can be carried out digitally. The method includes acquisition, ie finding the abovementioned initial parameters for the subsequent data, but provides a good basis for tracking (phase compensation, frequency regulation and channel correction during demodulation). The method gives a relatively high proportion of synchronization parameters from the same operations: time shift, phase turning, frequency drift and channel estimating. OFDM modulation by FFT technique automatically gives a high level of controllability of discrete frequencies and their phase position. The transmitter and receiver in an OFDM modem operate in the frequency domain. According to the invention, all synchronization parameters in the frequency",
+    "textAfterTable": "Aug 29, 2000 Intellon Corporation Synchronization of OFDM signals US6151295 * Feb 26, 1998 Nov 21, 2000 Wavesat Telecom Inc. OFDM receiving system US6181714 Sep 1, 1997 Jan 30, 2001 Telia Ab Multi-carrier transmission systems US6212243 * Dec 6, 1999 Apr 3, 2001 Siemens Aktiengesellschaft Channel estimation performed at varying time intervals US6263029 * Apr 17, 1997 Jul 17, 2001 Wavecom Digital signal with multiple reference blocks for channel estimation, channel estimation methods and corresponding receivers US6269132 Apr 26, 1999 Jul 31, 2001 Intellon Corporation Windowing function for maintaining orthogonality of channels in the reception of OFDM symbols US6317474 * Aug 6, 1998 Nov 13, 2001 Motorola, Inc. Method and apparatus for estimating time-of-arrival of a synchronization signal sent simultaneously from at least two non-collocated transmitters US6320903 Sep 1, 1997 Nov 20, 2001 St Microelectronics N.V. Multi-carrier",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

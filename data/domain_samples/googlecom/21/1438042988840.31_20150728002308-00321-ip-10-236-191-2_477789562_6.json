@@ -1,0 +1,81 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US5495591 *",
+            "US5613081 *",
+            "US5619676 *",
+            "US5687349 *",
+            "US5802566 *",
+            "US6078996 *",
+            "US6173392 *",
+            "US6393527 *",
+            "US7805595 *"
+        ],
+        [
+            "Filing date",
+            "Jun 30, 1992",
+            "Sep 11, 1995",
+            "Jul 2, 1996",
+            "Sep 23, 1996",
+            "Apr 29, 1992",
+            "Aug 31, 1998",
+            "Dec 4, 1998",
+            "Dec 18, 1998",
+            "Apr 20, 2007"
+        ],
+        [
+            "Publication date",
+            "Feb 27, 1996",
+            "Mar 18, 1997",
+            "Apr 8, 1997",
+            "Nov 11, 1997",
+            "Sep 1, 1998",
+            "Jun 20, 2000",
+            "Jan 9, 2001",
+            "May 21, 2002",
+            "Sep 28, 2010"
+        ],
+        [
+            "Applicant",
+            "Bull Hn Information Systems Inc.",
+            "Motorola, Inc.",
+            "Sharp Kabushiki Kaisha",
+            "Motorola, Inc.",
+            "Sun Microsystems, Inc.",
+            "Sun Microsystems, Inc.",
+            "Nec Corporation",
+            "Ati International Srl",
+            "Arm Limited"
+        ],
+        [
+            "Title",
+            "Method and system for cache miss prediction based on previous cache access requests",
+            "Method of operating a data processor with rapid address comparison for data forwarding",
+            "High speed semiconductor memory including a cache-prefetch prediction controller including a register for storing previous cycle requested addresses",
+            "Data processor with branch target address cache and subroutine return address cache and method of operation",
+            "Method and system for predicting addresses and prefetching data into a cache memory",
+            "Method for increasing the speed of data processing in a computer system",
+            "Prefetch controller automatically updating history addresses",
+            "Prefetch buffer with continue detect",
+            "Data processing apparatus and method for updating prediction data based on an operation's priority level"
+        ]
+    ],
+    "pageTitle": "Patent US5426764 - Cache miss prediction apparatus with priority encoder for multiple ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5426764?dq=inassignee:Temic",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 6,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988840.31/warc/CC-MAIN-20150728002308-00321-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 477813359,
+    "recordOffset": 477789562,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{19591=Thus, those skilled in the art will understand that it would be highly desirable to provide means for selecting operand information for transitory storage in a cache memory in such a manner as to significantly lower the cache miss ratio. That end was accomplished in accordance with the invention disclosed and claimed in U.S. Patent Application Ser. No. 07/364,943 filed Jun. 12, 1989, for METHOD AND APPARATUS FOR PREDICTING ADDRESS OF A SUBSEQUENT CACHE REQUEST UPON ANALYZING ADDRESS PATTERNS STORED IN SEPARATE MISS STACK by Charles P. Ryan, now U.S. Pat. No. 5,093,777, by special purpose apparatus in the cache memory which stores recent cache misses and searches for operand patterns therein. Any detected operand pattern is then employed to anticipate a succeeding cache miss by prefetching from main memory the block containing the predicted cache miss., 23733=The cache miss prediction circuit disclosed therein was best adapted to operate in an environment where the main memory address space is linear and unbroken. However, in many processors, the main memory address space is paged with the sizes of the pages typically falling within the range 1024-4096 bytes. In a paged main memory environment, the memory address developed during normal operation is a virtual address that must be translated from the virtual configuration to a physical configuration. This is typically achieved by dividing the address into two fields. Some lower number of bits, which represent addressing within a page, are not translated. All the remaining, upper bits are translated by a paging unit within the processor from the virtual address space to a physical address space in a manner which is invisible to the running program. The principal purpose of providing a paged main memory is to permit addressing a much larger virtual memory; however, secondary purposes of importance include the facilitation of providing security to selected main memory pages and the ability to continue operation if a page of main memory is faulty., 21823=The invention disclosed and claimed in U.S. Patent Application Ser. No. 07/841,687 filed Feb. 26, 1992, for SELECTIVELY ENABLED CACHE MISS PREDICTION METHOD AND APPARATUS by Charles P. Ryan overcomes the limiting effect of using the cache miss prediction mechanism continuously after a process has been changed by selectively enabling the cache miss prediction mechanism only during cache \"in-rush\" following a process change to increase the recovery rate; thereafter, it is disabled, based upon timing-out a timer or reaching a hit ratio threshold, in order that normal procedures allow the hit ratio to stabilize at a higher percentage than if the cache miss prediction mechanism were operated continuously., 22562=There are operating conditions, however, under which it would be advantageous to have the cache miss prediction mechanism in operation even after cache inrush following a process change. An example of such an operating condition is when very large sets (even in excess of the cache size) of regularly addressed operand data (matrix/vector/strings) are used by a procedure. An invention which takes advantage of this characteristic is disclosed in U.S. Patent Application Ser. No. 07/850,713 filed Mar. 13, 1992, for ADAPTIVE CACHE MISS PREDICTION MECHANISM by Charles P. Ryan. This feature is achieved by special purpose apparatus which stores recent cache misses and searches for address patterns therein. Any detected pattern is then employed to anticipate a succeeding cache miss by prefetching from main memory the block containing the predicted cache miss. The cache miss prediction mechanism is adaptively selectively enabled by an adaptive circuit that develops a short term operand cache hit ratio history and responds to ratio improving and ratio deteriorating trends by accordingly enabling and disabling the cache miss prediction mechanism., 26105=The method and apparatus disclosed in U.S. Pat. No. 5,093,777 has another drawback in that it is subject to making invalid predictions or a prediction that may cause a system problem when a page boundary in main memory is crossed since operation is with physical addresses. For example, a pattern which continues onto the next page of the physical main memory may enter memory space which is reserved to some other user (or even confidential) or process, or the next page may be damaged and not intended for use, or it may contain information which is of no value to have in the cache at the present time. If the prediction process carries across a page boundary into a reserved or damaged area of memory, the processor must handle the resulting invalid states before normal processing can continue, and such remedial action may impose a severe performance penalty. This drawback is addressed and overcome by the invention disclosed and claimed in United States Patent Application Ser. No. 07/921,825 filed Jul. 29, 1992, for CACHE MISS PREDICTION METHOD AND APPARATUS FOR USE WITH PAGED MAIN MEMORY IN A DATA PROCESSING SYSTEM by Charles P. Ryan. This end is achieved by special purpose apparatus which stores recent cache misses and searches for address patterns therein. Any detected pattern is then employed to anticipate a succeeding cache miss by prefetching from main memory the block containing the predicted cache miss. The efficiency of the apparatus operating in an environment incorporating a paged main memory is improved by the addition of logic circuitry which serves to inhibit prefetch if a paged boundary would be encountered., 24908=The method and apparatus disclosed in U.S. Pat. No. 5,093,777 also had the inherent drawback that the patterns are always searched in the same sequence. If, for example, the pattern found is the last of eight searched, it would always require seven search cycles to find the pattern, a fact which adversely affects the advantage of prefetching the next request. This drawback was addressed and overcome by the invention disclosed and claimed in U.S. Patent Application Ser. No. 07/906,618 filed Jun. 30, 1992, for PATTERN SEARCH OPTIMIZER FOR CACHE MISS PREDICTION METHOD AND APPARATUS by Charles P. Ryan. This end is achieved by special purpose apparatus which stores recent cache misses and searches for address patterns therein. Any detected pattern is then employed to anticipate a succeeding cache miss by prefetching from main memory the block containing the predicted cache miss. The efficiency of the apparatus is improved by placing the search order for trying patterns into a register stack and providing logic circuitry by which the most recently found select pattern value is placed on top the stack with the remaining select pattern values pushed down accordingly.}",
+    "textBeforeTable": "Patent Citations Thus, while the principles of the invention have now been made clear in an illustrative embodiment, there will be immediately obvious to those skilled in the art many modifications of structure, arrangements, proportions, the elements, materials, and components, used in the practice of the invention which are particularly adapted for specific environments and operating requirements without departing from those principles. Those skilled in the art will understand that the logic circuitry of FIGS. 2 and 3 is somewhat simplified since multiple binary digit information is presented as if it were single binary digit information. Similarly, FIG. 4 treats only a four-bit wide address difference. In practice, arrays of electronic switches, gates, etc. will actually be employed to handle the added dimension as may be necessary and entirely conventionally. Further, timing signals and logic for incorporating the cache miss prediction mechanism into a given data processing system environment will be those appropriate for that environment and will be the subject of straightforward logic design. The electronic switch 75 is a simple decoder responsive to the output from the priority encoder 76 to switch the appropriate input (four bits each in the example) from one of the subtraction circuits 66, 69, 72 to the adder circuit 77 (FIG. 3). The inputs from the subtraction circuits are applied to respective inputs to AND-gates 102, 103, 104 such that, if one of these AND-gates is fully enabled, the OR-gate 105",
+    "textAfterTable": "US5619676 * Jul 2, 1996 Apr 8, 1997 Sharp Kabushiki Kaisha High speed semiconductor memory including a cache-prefetch prediction controller including a register for storing previous cycle requested addresses US5687349 * Sep 23, 1996 Nov 11, 1997 Motorola, Inc. Data processor with branch target address cache and subroutine return address cache and method of operation US5802566 * Apr 29, 1992 Sep 1, 1998 Sun Microsystems, Inc. Method and system for predicting addresses and prefetching data into a cache memory US6078996 * Aug 31, 1998 Jun 20, 2000 Sun Microsystems, Inc. Method for increasing the speed of data processing in a computer system US6173392 * Dec 4, 1998 Jan 9, 2001 Nec Corporation Prefetch controller automatically updating history addresses US6393527 * Dec 18, 1998 May 21, 2002 Ati International Srl Prefetch buffer with continue detect US7805595 * Apr 20,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

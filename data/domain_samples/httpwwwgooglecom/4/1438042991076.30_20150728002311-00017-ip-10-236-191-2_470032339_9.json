@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jul 12, 1999",
+            "Jan 6, 2004",
+            "Dec 13, 2006",
+            "Feb 18, 2011",
+            "Feb 25, 2015"
+        ],
+        [
+            "Code",
+            "AS",
+            "CC",
+            "FPAY",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Certificate of correction",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: CARNEGIE MELLON UNIVERSITY, PENNSYLVANIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:JOHNSON, DAVID B.;BENNINGTON, BERNARD J.;STANCIL, DANIELD.;REEL/FRAME:010085/0030 Effective date: 19990625",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6625135 - Method and apparatus for incorporating environmental information for mobile ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6625135?dq=7,181,690",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991076.30/warc/CC-MAIN-20150728002311-00017-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 470071403,
+    "recordOffset": 470032339,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{34552=This application claims the benefit of provisional application No. 60/085,055, filed May 11, 1998.}",
+    "textBeforeTable": "Patent Citations Other aspects, objects and advantages of the present invention can be obtained from a study of the drawings, the disclosure and the appended claims. The example discussed above included only one work site, however, the present invention may be implemented to cover multiple work sites and multiple machines at each work site. Since the excavator has binding updates for the service laptop 76 and the mobile router 78, the packets are no longer routed over the wide area network 86. This utilizes network resources efficiently and minimizes the use of the low speed wide area network. Note that in the foregoing example, the Route Optimization software on the excavator 80 must perform double encapsulation in order to send packets directly to the service laptop 76. The excavator 80 receives the packet. Excavator 80 also receives the two binding updates from the home agent 88. The excavator 80 uses the binding updates to add entries to its binding cache. Once the excavator has binding cache entries for the service laptop 76 and the mobile router 78, it can send packets using Route Optimization until the binding cache entries expire. The excavator 80 first checks its binding cache, then the packet is encapsulated using the service laptop's 76 care-of address as the destination address, which is the mobile router's 78 address. The excavator 80 again finds an entry in its binding cache, this time for mobile router 78.",
+    "textAfterTable": "Automatic cellular phone tracking US5678182 Jun 19, 1995 Oct 14, 1997 Trimble Navigation Limited Self-locating radio system that automatically configures to the radio regulations for the location US5884147 * Jan 3, 1996 Mar 16, 1999 Metawave Communications Corporation Method and apparatus for improved control over cellular systems US6208295 * Jan 18, 2000 Mar 27, 2001 Trw Inc. Method for processing radio signals that are subject to unwanted change during propagation US6252544 * Jan 25, 1999 Jun 26, 2001 Steven M. Hoffberg Mobile communication device WO1996013951A1 Oct 16, 1995 May 9, 1996 Ericsson Telefon Ab L M Method and apparatus for detecting and predicting motion of mobile terminals * Cited by examiner Non-Patent Citations Reference 1 * Jan, Shiun-Chi and Jeng, Shyh-kang \"A Novel Propagation Modeling for Microcellular Communications in Urban Environments\".",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

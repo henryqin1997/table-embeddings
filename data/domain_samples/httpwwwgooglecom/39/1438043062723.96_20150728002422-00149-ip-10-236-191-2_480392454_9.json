@@ -1,0 +1,73 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Mar 12, 2001",
+            "Oct 28, 2002",
+            "Oct 29, 2003",
+            "Jan 16, 2004",
+            "Jan 16, 2004",
+            "Dec 22, 2006",
+            "Mar 19, 2007",
+            "Mar 22, 2007",
+            "Sep 14, 2007",
+            "Sep 14, 2011"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "REMI",
+            "FPAY",
+            "SULP",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Fee payment",
+            "Surcharge for late payment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: APRISMA MANAGEMENT TECHNOLOGIES, INC.,NEW HAMPSHIR Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:CABLETRON SYSTEMS, INC.;REEL/FRAME:011590/0363 Effective date: 20000929",
+            "",
+            "",
+            "Year of fee payment: 4",
+            "",
+            "Owner name: APRISMA MANAGEMENT TECHNOLOGIES, INC,NEW HAMPSHIRE Free format text: RELEASE OF SECURITY INTEREST RECORDED 10262002 R/F 013447/0331;ASSIGNOR:WELLS FARGO FOOTHILL, INC. (FORMERLY KNOWN AS FOOTHILL CAPITAL CORPORATION);REEL/FRAME:018668/0833 Effective date: 20050222",
+            "Owner name: CONCORD COMMUNICATIONS, INC.,MASSACHUSETTS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:APRISMA MANAGEMENT TECHNOLOGIES, INC.;REEL/FRAME:019028/0320 Effective date: 20070208",
+            "Owner name: COMPUTER ASSOCIATES THINK, INC.,NEW YORK Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:CONCORD COMMUNICATIONS, INC.;REEL/FRAME:019047/0414 Effective date: 20070208",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6049828 - Method and apparatus for monitoring the status of non-pollable devices in a ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6049828?dq=7565338",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062723.96/warc/CC-MAIN-20150728002422-00149-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 480438403,
+    "recordOffset": 480392454,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{23555=This application is a continuation of application Ser. No. 08/824,492 filed Mar. 27, 1997 (now U.S. Pat. No. 5,812,750) entitled METHOD AND APPARATUS FOR MONITORING THE STATUS OF NON-POLLABLE DEVICES IN A COMPUTER NETWORK, which is a continuation of U.S. Ser. No. 08/623,281 filed Mar. 28, 1996 (abandoned), which is a continuation of U.S. Ser. No. 08/355,430 filed Dec. 13, 1994 (now U.S. Pat. No. 5,559,955), which is a continuation of U.S. Ser. No. 08/216,696 filed Mar. 23, 1994 (abandoned), which is a continuation of U.S. Ser. No. 07/797,121 filed Nov. 22, 1991 (abandoned), which is a continuation-in-part of U.S. Ser. No. 07/583,509 filed Sep. 17, 1990 (abandoned).}",
+    "textBeforeTable": "Patent Citations While there have been shown and described what are at present considered the preferred embodiments of the present invention, it will be obvious to those skilled in the art that various changes and modifications may be made therein without departing from the scope of the invention as defined by the appended claims. It should be noted that the inferred connector models described herein are not limited to use in the network management system described above. The connector model can operate with any network management system that is capable of supplying the required information to it. The network management system must be capable of providing information when new devices are added to or deleted from the connector and when the status of any connected device changes. Now assume that at the next polling interval no response is received from PC 510. The current state of the network is illustrated in FIG. 13. When no response is received from PC 510, the following changes occur in the virtual network. Contact status within the model for PC 510 changes to \"lost\". This change triggers LOST-- CHILD-- COUNT in the model for the coax segment 500. LOST-- CHILD-- COUNT, accordingly, changes the data value lost-- child-- count. The change in lost-- child-- count triggers COMPOSITE-- BAD-- COUNT within the same model. COMPOSITE-- BAD-- COUNT changes the data value composite-- bad-- count accordingly. The change in composite-- bad-- count triggers CONTACT--",
+    "textAfterTable": "US5559955 * Dec 13, 1994 Sep 24, 1996 Cabletron Systems, Inc. Method and apparatus for monitoring the status of non-pollable device in a computer network US5606664 * Apr 12, 1993 Feb 25, 1997 Bay Networks, Inc. Apparatus and method for automatically determining the topology of a local area network US5802286 * May 22, 1995 Sep 1, 1998 Bay Networks, Inc. Method and apparatus for configuring a virtual network EP0347360A2 * May 23, 1989 Dec 20, 1989 International Business Machines Corporation Method of isolating and diagnosing problems in data communication networks WO1980001615A1 * Jan 29, 1980 Aug 7, 1980 Intertel Inc Enhanced communications network testing and control system * Cited by examiner Non-Patent Citations Reference 1 Allwood et al., \"Diagnosing Faults In A Telecommunications Network By An Expert System,\" IEEE Proceedings I.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

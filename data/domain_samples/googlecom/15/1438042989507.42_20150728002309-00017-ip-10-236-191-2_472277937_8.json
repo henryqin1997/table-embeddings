@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Feb 20, 2002",
+            "Jun 7, 2005",
+            "Sep 8, 2008",
+            "Nov 10, 2008",
+            "Nov 10, 2008",
+            "Sep 4, 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "CC",
+            "REMI",
+            "FPAY",
+            "SULP",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Certificate of correction",
+            "Maintenance fee reminder mailed",
+            "Fee payment",
+            "Surcharge for late payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "",
+            "",
+            "",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8"
+        ]
+    ],
+    "pageTitle": "Patent US20030105580 - Airport map system with compact feature data storage - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US20030105580?ie=ISO-8859-1&dq=5787449",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989507.42/warc/CC-MAIN-20150728002309-00017-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 472301415,
+    "recordOffset": 472277937,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{22708=[0001] This application claims the benefit of U.S. Provisional Application Nos. 60/336,752; 60/337,182; 60/337,192; and 60/337,295, all filed Dec. 4, 2001, the disclosure of each of which is incorporated by reference.}",
+    "textBeforeTable": "Patent Citations [0043] It will become apparent to those skilled in the art that various modifications to the preferred embodiment of the invention as described herein can be made without departing from the spirit or scope of the invention as defined by the appended claims. [0042] In addition to the location points discussed above, additional data for each airport facility may also be stored in the linked list without departing from the invention. For example, in one embodiment the elevation for each location point is also determined and stored in the taxi point record. Other information relevant to a particular location point may also be stored in the taxi point record. For example, if the point is a hold or yield location on the airport, this information may be stored in the taxi point record. [0041] In a similar manner, airport structures, buildings, ramp areas and the like are represented as a sequence of location points that represent the perimeter of the structure. The location points are stored in a sequence of taxi point records and the associated identifier is stored into a taxi path ID record along with a pointer to the taxi point records. [0040] Other airport facilities are stored in a similar compact manner. Some are stored in slightly different formats as can be deduced from the discussion above. For example, gates are defined",
+    "textAfterTable": "Referenced by Citing Patent Filing date Publication date Applicant Title US7286077 * Apr 18, 2005 Oct 23, 2007 Airbus France Method and device for aiding the landing of an aircraft on a runway US7587278 May 19, 2004 Sep 8, 2009 Honeywell International Inc. Ground operations and advanced runway awareness and advisory system US7702461 * Dec 10, 2004 Apr 20, 2010 Honeywell International Inc. Ground operations and imminent landing runway selection US20050015202 * May 19, 2004 Jan 20, 2005 Honeywell International, Inc. Ground operations and advanced runway awareness and advisory system US20050128129 * Dec 10, 2004 Jun 16, 2005 Honeywell International, Inc. Ground operations and imminent landing runway selection * Cited by examiner Classifications U.S. Classification 701/120,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

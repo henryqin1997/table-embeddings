@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jul 25, 1988",
+            "Feb 13, 1993",
+            "Feb 18, 1993",
+            "Mar 7, 1994",
+            "Oct 1, 1996",
+            "Apr 21, 1998",
+            "Sep 27, 1998",
+            "Dec 8, 1998"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: ARDENT COMPUTER CORPORATION, 880 WEST MAUDE AVENUE Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:RUBINSTEIN, JON;KLINGMAN, KENNETH C.;REEL/FRAME:004933/0906 Effective date: 19880607",
+            "Owner name: KUBOTA PACIFIC COMPUTER, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNOR:STARDENT COMPUTER, INC., A CORP. OF CA;REEL/FRAME:006452/0962 Effective date: 19911230",
+            "Owner name: STARDENT COMPUTER INC., MASSACHUSETTS Free format text: MERGER AND CHANGE OF NAME EFFECTIVE 10-24-1989;ASSIGNORS:STELLAR COMPUTER, INC. (MERGED INTO ARDENTCOMPUTER CORPORATION);ARDENT COMPUTER CORPORATION (NAME CHANGED TO STARDENT COMPUTER INC.);REEL/FRAME:006457/0003 Effective date: 19891024",
+            "Year of fee payment: 4",
+            "Owner name: KUBOTA U.S.A. INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:KUBOTA GRAPHICS LIQUIDATING TRUST;REEL/FRAME:008178/0442 Effective date: 19960920",
+            "",
+            "",
+            "Effective date: 19980925"
+        ]
+    ],
+    "pageTitle": "Patent US4959781 - System for assigning interrupts to least busy processor that already loaded ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4959781?dq=6985872",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00103-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 466415035,
+    "recordOffset": 466395689,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{27666=The computer system of the preferred embodiment utilizes a semaphore mechanism described in more detail in co-pending U.S. patent application Ser. No. 161997, filed on Feb. 29, 1988, titled Load and Synchronize Computer Architecture and Process, which is assigned to the assignee of the present invention. The semaphore mechanism is utilized to insure that when a first processor is updating one of the plurality of memory locations 132 of FIG. 1, that a second processor does not simultaneously access the memory location.}",
+    "textBeforeTable": "Patent Citations Thus, an apparatus and method for processing interrupts in a computer system having a plurality of processing units is described. Although the present invention has been described with specific reference to a number of details of the preferred embodiment, it will be obvious that a number of modifications and variations may be employed without departure from the scope and spirit of the present invention. Accordingly, all such variations and modifications are included within the intended scope of the invention as defined by the following claims. All processors in the computer system of the preferred embodiment reset their mask bits stored in registers 241 and 242 to a one approximately every 10 milliseconds. Resetting the mask bits insures a processor is available for processing of interrupts at least within 10 milliseconds of the interrupt being asserted. If an interrupt is asserted and the corresponding mask bit is a one, the processor first accesses the memory bit in memory register 232 corresponding to the interrupt class. As discussed previously, a one indicates the interrupt class is unassigned and a zero indicates the memory class is assigned. If the memory class is assigned, the processor sets its internal mask bit in register 241 or 242 corresponding to the interrupt class to zero. This effectively causes the processor to ignore or disable processing of interrupts in the interrupt class. The interrupt signals 223, 223 and 225 are AND'ed with corresponding",
+    "textAfterTable": "Data processor with means for separately receiving and processing different types of interrupts US5581770 * Apr 12, 1993 Dec 3, 1996 Mitsubishi Denki Kabushiki Kaisha Floating interruption handling system and method US5905897 * Mar 20, 1997 May 18, 1999 Industrial Technology Research Institute Method and apparatus for selecting a nonblocked interrupt request US6256701 * Feb 20, 1998 Jul 3, 2001 Sony Corporation Risc type microprocessor and information processing apparatus US6829667 * Sep 14, 2001 Dec 7, 2004 Intel Corporation Method and system for improved processing of CPU intensive communications protocols by disabling per frame interrupts for an interrupt period US7043583 Oct 28, 2004 May 9, 2006 Intel Corporation Method and system for improved processing of CPU intensive communications protocols US7117285 * Aug 29, 2003 Oct 3, 2006 Sun Microsystems, Inc. Method and system for efficiently directing interrupts US7162559 *",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

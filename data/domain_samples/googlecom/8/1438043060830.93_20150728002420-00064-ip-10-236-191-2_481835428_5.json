@@ -1,0 +1,66 @@
+{
+    "relation": [
+        [
+            "Cited Patent",
+            "US5349630 *",
+            "US5481561 *",
+            "US6421007 *",
+            "US6490256 *",
+            "US6609007 *",
+            "US20020151323 *"
+        ],
+        [
+            "Filing date",
+            "Aug 20, 1993",
+            "Oct 26, 1993",
+            "Apr 5, 1999",
+            "Apr 5, 2000",
+            "Sep 14, 1999",
+            "Jun 12, 2002"
+        ],
+        [
+            "Publication date",
+            "Sep 20, 1994",
+            "Jan 2, 1996",
+            "Jul 16, 2002",
+            "Dec 3, 2002",
+            "Aug 19, 2003",
+            "Oct 17, 2002"
+        ],
+        [
+            "Applicant",
+            "Nokia Mobile Phones, Ltd.",
+            "Comsat Corporation",
+            "Motorola, Inc.",
+            "Mororola, Inc.",
+            "Lucent Technologies Inc.",
+            "Bender Paul E."
+        ],
+        [
+            "Title",
+            "Radio telephone system",
+            "Fully meshed CDMA network for personal communications terminals",
+            "Method and apparatus for determining a direction of arrival of a signal",
+            "Method, subscriber device, wireless router, and communication system efficiently utilizing the receive/transmit switching time",
+            "Apparatus and method for controlling the transmission power of the forward link of a wireless communication system",
+            "Power control in a cellular system using Es/Io and Nt/Io values"
+        ]
+    ],
+    "pageTitle": "Patent US20020154616 - Base station apparatus, communication terminal apparatus, and communication ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US20020154616?ie=ISO-8859-1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00064-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 481856643,
+    "recordOffset": 481835428,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{93014=[0163] If fading fluctuation is severe and adequate compensation for phase shift is determined not to be possible by means of a common pilot signal alone, the pilot request signal generator 1002 generates a pilot request signal and outputs this signal to a modulation section 254., 91982=[0160] The configuration of the communication terminal apparatus 1000 shown in FIG. 14 differs from that of the communication terminal apparatus 200 shown in FIG. 6 in that a fading fluctuation detection section 1001 and pilot request signal generator 1002 have been added., 91487=[0159]FIG. 14 is a block diagram showing the configuration of a communication terminal apparatus 1000 that receives data by means of HDR from the base station apparatus 900 shown in FIG. 13. Parts in the communication terminal apparatus 1000 shown in FIG. 14 identical to those in the communication terminal apparatus 200 shown in FIG. 6 are assigned the same codes as in FIG. 6 and their detailed explanations are omitted., 92699=[0162] The fading fluctuation detection section 1001 detects the state of fading fluctuation based on the output signal from the despreading section 206, and outputs a signal indicating the detection result to the pilot request signal generator 1002., 95312=[0169] This application is based on Japanese Patent Application No.2000-255515 filed on Aug. 25, 2000, entire content of which is expressly incorporated by reference herein., 92327=[0161] A despreading section 206 refers to the radio wave arrival time, despreads the control signal part of the baseband signal, and outputs this to a channel estimation section 208, demodulation section 209, and CIR measurement section 251, and the fading fluctuation detection section 1001.}",
+    "textBeforeTable": "Patent Citations [0170] The present invention is suitable for use in a cellular communication system in which data is transmitted from a base station apparatus to a communication terminal apparatus at high speed using the CDMA method. INDUSTRIAL APPLICABILITY [0169] This application is based on Japanese Patent Application No.2000-255515 filed on Aug. 25, 2000, entire content of which is expressly incorporated by reference herein. [0168] As described above, according to the present invention, by having a base station apparatus transmit a dedicated pilot signal using one of the codes used for data transmission, a communication terminal apparatus can perform a path search using a dedicated pilot signal, and estimate channel fluctuation, making it possible to maintain data-part reception quality even when phase changes are sudden when using HDR. [0167] Also, in the above embodiments, a case has been described in which 16-code multiplexing is used for HDR data, but the present invention is not limited to this. Furthermore, in the above embodiments, a case has been described in which a dedicated pilot signal is transmitted using one of the codes used for data transmission, but the present invention is not limited to this, and a dedicated pilot signal may be transmitted using a plurality of codes. [0166] In this embodiment, a case has been described in which a communication terminal apparatus determines",
+    "textAfterTable": "* Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US7257423 * Nov 4, 2003 Aug 14, 2007 Matsushita Electric Industrial Co., Ltd. Base station apparatus and transmission assignment control method US7769358 Mar 23, 2005 Aug 3, 2010 Panasonic Corporation Radio system, radio transmitter, and radio receiver US7990942 * Aug 23, 2006 Aug 2, 2011 Hitachi, Ltd. Wireless data communication method for a base station using a common pilot channel and an individual pilot channel US8111681 Mar 28, 2011 Feb 7, 2012 Hitachi, Ltd. Wireless data communication method for a base station using a common pilot channel and an individual pilot channel US8228936 Sep 27, 2007 Jul 24, 2012 Nec Corporation Method for multiplexing control signals and reference signals in mobile communications system US8498650 * Dec 5, 2003 Jul 30, 2013",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

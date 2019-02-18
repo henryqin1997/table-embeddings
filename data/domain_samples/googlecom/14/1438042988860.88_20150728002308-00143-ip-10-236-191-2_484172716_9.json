@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Sep 23, 1996",
+            "Jan 21, 1997",
+            "Jan 16, 2001",
+            "Sep 23, 2002",
+            "Nov 13, 2006",
+            "Nov 12, 2010",
+            "Sep 22, 2011"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: HEWLETT-PACKARD COMPANY, CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:REED, MARK JOSEPH;ARNOVITZ, DAVID A.;WATT, CHARLES;AND OTHERS;REEL/FRAME:008160/0191;SIGNING DATES FROM 19960917 TO 19960918",
+            "Owner name: HEWLETT-PACKARD COMPANY, CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:REED, MARK J.;ARNOVITZ, DAVID A.;WATT, CHARLES;AND OTHERS;REEL/FRAME:008316/0892;SIGNING DATES FROM 19961203 TO 19970113",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12",
+            "Owner name: HEWLETT-PACKARD DEVELOPMENT COMPANY, L.P., TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:HEWLETT-PACKARD COMPANY;REEL/FRAME:026945/0699 Effective date: 20030131"
+        ]
+    ],
+    "pageTitle": "Patent US5903732 - Trusted gateway agent for web server programs - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5903732?dq=inventor:%22Arthur+R.+Hair%22&ei=VAy0Tsa4NYTl0QGQiqWiBA",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.88/warc/CC-MAIN-20150728002308-00143-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 484200091,
+    "recordOffset": 484172716,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{31300=Additional Internet security may be obtained through the use of a secure operating system. In particular, HP-UX 10.09.01 Compartmented Mode Workstation (CMW) sold by Hewlett-Packard Company provides an operating system that operates in accordance with a Mandatory Access Control (MAC) policy that governs the way data may be accessed on a trusted system. The MAC policy is a computerized version of the Department of Defense's long-standing multilevel security policy for handling classified information with labels that reflect sensitivity, to maintain those labels or files and processes in the system, and to prevent users not cleared for certain levels of classified information from accessing it. Under MAC, all information on the system is classified to reflect its sensitivity, all users are assigned clearances, and every application runs at a specific sensitivity level. Using the MAC policy, the operating system controls access based on the relative sensitivity of the applications running and the files they access., 41247=All files are labeled INSIDE or OUTSIDE (also, labels of SYSLO or SYSHI are employed in the preferred embodiment but not required to practice the invention), and the mandatory access control policy (as dictated by the underlying HPUX 10.09.01 CMW operating system) keeps them in separate compartments to prohibit communication between them. The mandatory access control policy further comprising a plurality of sensitivity labels (SL), wherein a SL of System Outside is assigned to any SWP files to which the Web server requires write access, a SL of System is assigned to any SWP files to which the Web server program 210 requires read-only access, and a SL of System Inside is assigned for those SWP files to which the Web server does not have any access. All of the programs that run on the Web server 210 are also assigned SL's based on where they are executed. In the default configuration, a program running with a SL of SYSTEM OUTSIDE can't change files having an SL of SYSTEM INSIDE. In the default configuration the compartments have the following relationships: (1) programs can always read and write files that reside at the same SL; (2) programs can never directly write files which have a different SL; (3) programs running at the SYSHI SL can read files in any compartment; (4) programs running in the SYSTEM OUTSIDE SL can only read files in the SYSLO and OUTSIDE compartments; (5) programs running at the SYSTEM INSIDE SL can only read files at the SYSLO and SYSTEM INSIDE SL, and (6) programs running at the SYSLO SL can only read files at the SYSLO SL. Some of the Webpages used by the Web server are stored with a SYSLO SL, while others are kept at the SYSTEM INSIDE SL. This allows very basic information pages (which may not need as much protection) to be accessed more quickly and prevent unauthorized modification. The CGI applications 225 and any databases used by the CGI application are kept at an SL of SYSTEM INSIDE., 39880=The invention provides a secure Web platform (SWP)layered on top of HP UNIX 10.09.01 CMW operating system to implement a mandatory access control policy enabling a plurality of remote users operating Web browsers Internet access to CGI applications in response to HyperText Transfer Protocol (HTTP) requests.}",
+    "textBeforeTable": "Patent Citations While the invention has been described and illustrated with reference to specific embodiments employing a UNIX CMW (Compartment Mode Workstation) based operating system running on an HP 9000 Series 700 workstation, those skilled in the art will recognize that modification and variations may be made such that the invention is equally applicable to secure Web platforms based on the Microsoft Windows NT operating system and most compatible hardware. While not disclosed in detail, the Secure Web Platform could also include another Netscape or similarly configured Web server within the inside compartment for interfacing the SWP to an internal Intranet. ##SPC1## Upon receipt of the \"ready\" acknowledgment, the gateway client program 237 copies its standard input through the network connection to the CGI application, and copies the output from that connection to its standard output(acting as a \"pass-through\" filter). Thus, the Web server 210 is writing (through the gateway client and gateway server) to the standard input of the CGI application 225, and reading that application's standard output (Step 350). Since that CGI application 225 has been invoked with the same argument and environment vectors used to invoke the gateway client 237 (which the Web server 210 \"thinks\" is the real CGI application), the trusted gateway agent 237 is transparent to both the Web server 210 and the CGI application 225. Additional HTTP requests are handled similarly as they are received by the Web server 210 (Step",
+    "textAfterTable": "1 Bowen, TS; \"OMI's Fast CGI Boosts Web Performance\"; InfoWorld; Apr. 15, 1996; v18 n16 p8(1). 2 * Bowen, TS; OMI s Fast CGI Boosts Web Performance ; InfoWorld; Apr. 15, 1996; v18 n16 p8(1). 3 * Deitel, H M; An Introduction to Operating Systems ; ISBN 0 201 18038 3; 1990; USA; pp. 400 401, 534 539. 4 Deitel, H M; An Introduction to Operating Systems; ISBN 0-201-18038-3; 1990; USA; pp. 400-401, 534-539. 5 * EDGE:Work Group Computing Report; Internetaccess:NCR Announces Robost Middleware . . . ; Jul. 1, 1996; v7 n320 p20(1). 6 EDGE:Work-Group Computing Report; \"Internetaccess:NCR Announces Robost Middleware . . . \"; Jul. 1, 1996; v7 n320 p20(1). 7 Lipshutz, R P; \"Microsoft Internet Information Server\"; PC Magazine; Apr. 23, 1996; v15 n 8. 8 * Lipshutz, R P; Microsoft Internet Information Server ; PC Magazine; Apr. 23, 1996; v15 n 8. 9 Luotonen, A; \"Access Authorization",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

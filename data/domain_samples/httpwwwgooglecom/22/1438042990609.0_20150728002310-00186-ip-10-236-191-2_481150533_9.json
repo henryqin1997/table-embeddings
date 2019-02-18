@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Mar 18, 2002",
+            "Oct 4, 2006",
+            "Feb 19, 2008",
+            "May 13, 2010",
+            "Sep 10, 2012",
+            "Jan 25, 2013",
+            "Mar 19, 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "",
+            "Owner name: RENESAS TECHNOLOGY AMERICA, INC., CALIFORNIA Free format text: CHANGE OF NAME;ASSIGNOR:HITACHI SEMICONDUCTOR (AMERICA) INC.;REEL/FRAME:018338/0889 Effective date: 20030331",
+            "Year of fee payment: 4",
+            "Owner name: RENESAS ELECTRONICS AMERICA INC.,CALIFORNIA Free format text: MERGER;ASSIGNOR:RENESAS TECHNOLOGY AMERICA, INC.;REEL/FRAME:024380/0300 Effective date: 20100401",
+            "",
+            "",
+            "Effective date: 20130125"
+        ]
+    ],
+    "pageTitle": "Patent US6845908 - Storage card with integral file system, access control and cryptographic support - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6845908?dq=6680675",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00186-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 481177719,
+    "recordOffset": 481150533,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{47085=Access to the crypto-media card 240 is at the user level and is done through the standard C library functions as defined by the ANSI X3.159-1989 and IEEE Std1003.1-1988 standards. There are special extensions to support the crypto media card 240, which are documented below:}",
+    "textBeforeTable": "Patent Citations The foregoing description of the illustrated embodiments of the present invention is by way of example only, and other variations and modifications of the above-described embodiments and methods are possible in light of the foregoing teaching. Further, components of this invention may be implemented using a programmed general purpose digital computer, using application specific integrated circuits, or using a network of interconnected conventional components and circuits. Connections may be wired, wireless, modem, etc. The embodiments described herein are not intended to be exhaustive or limiting. The present invention is limited only by the following claims. In an alternative embodiment of the invention, the data may not be encrypted and accordingly retrieving (550) and decrypting (560) are not performed. In another embodiment of the invention, repeated reads may only require entry of a password once. Accordingly, after a successful read, requesting (520) and receiving (530) need not be repeated. is a flowchart illustrating a method 500 for reading data on the crypto-media card 240. First, a read request is received (510). A password is then requested (520). In an alternative embodiment of method 500, a password may be sent concurrently with the read request. In another embodiment of method 500, biometric data may be used in place of or in addition to a password. The password is then received (530) and validated (530). The received password may be encrypted and therefore will need to",
+    "textAfterTable": "Samsung Electronics Co., Ltd. Memory card having a card management information area for improved format capability and recording, reproducing, and erasing methods therefor US5929428 Mar 28, 1997 Jul 27, 1999 Kabushiki Kaisha Toshiba File managing method requiring a change in key data and IC card device using the method US5999622 * Nov 22, 1995 Dec 7, 1999 Microsoft Corporation Method and apparatus for protecting widely distributed digital information US6006297 May 29, 1997 Dec 21, 1999 Gemplus Card International Computer PC-card able to perform internal programs US6031910 Jul 10, 1997 Feb 29, 2000 International Business Machines, Corp. Method and system for the secure transmission and storage of protectable information US6199128 Mar 26, 1998 Mar 6, 2001 Gemplus, S.C.A. Smart card system for use with peripheral devices US6296191 Aug 31, 1999 Oct 2, 2001 International Business Machines Corp. Storing data objects in a smart card memory US6378071 * Feb 26, 1998 Apr 23,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

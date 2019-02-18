@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jan 11, 2002",
+            "Feb 24, 2003",
+            "May 20, 2009",
+            "Dec 13, 2010",
+            "May 22, 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: NEC CORPORATION, JAPAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:ITO, KENICHI;KOBAYASHI, RYOUSAKU;REEL/FRAME:012457/0140 Effective date: 20011026",
+            "Owner name: NEC ELECTRONICS CORPORATION, JAPAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:NEC CORPORATION;REEL/FRAME:013785/0237 Effective date: 20021101",
+            "Year of fee payment: 4",
+            "Free format text: CHANGE OF NAME;ASSIGNOR:NEC ELECTRONICS CORPORATION;REEL/FRAME:025486/0592 Owner name: RENESAS ELECTRONICS CORPORATION, JAPAN Effective date: 20100401",
+            "Year of fee payment: 8"
+        ]
+    ],
+    "pageTitle": "Patent US6978391 - Asynchronous bus interface circuit, method of controlling the circuit ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6978391?dq=6526440",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00110-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 485351023,
+    "recordOffset": 485325494,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{93798=This application is based on Japanese Patent Application No. 2000-335012 filed on Nov. 1, 2000, and including specification, claims, drawings and summary. The priority of the above Japanese Patent Application is claimed.}",
+    "textBeforeTable": "Patent Citations This application is based on Japanese Patent Application No. 2000-335012 filed on Nov. 1, 2000, and including specification, claims, drawings and summary. The priority of the above Japanese Patent Application is claimed. Various embodiments and changes may be made thereonto without departing from the broad spirit and scope of the invention. The above-described embodiment is intended to illustrate the present invention, not to limit the scope of the present invention. The scope of the present invention is shown by the attached claims rather than the embodiment. Various modifications made within the meaning of an equivalent of the claims of the invention and within the claims are to be regarded to be in the scope of the present invention. According to the embodiment of the present invention, the synchronizing buffer 16 is arranged between the external register 15 and the internal register 17, the data written into the external register 15 is kept in the synchronizing buffer 16, and the kept data is written into the internal register 17 from the synchronizing buffer 16. Hence, data can be written into the external register 15 while data is written into the internal register 17, and the CPU it can not be in a bus-wait state. Therefore, the processing performance of the microcomputer will not be lowered even if the operational clock frequency of the macro circuits 13 is decreased. In the case where the CPU",
+    "textAfterTable": "Title not available JPS57182838A Title not available JPS57191749A Title not available JPS60160461A Title not available JPS61180357A Title not available * Cited by examiner Non-Patent Citations Reference 1 Japanese Office Action dated Feb. 12, 2003, with partial English translation. Referenced by Citing Patent Filing date Publication date Applicant Title US7395450 * Oct 21, 2004 Jul 1, 2008 Seiko Epson Corporation Synchronous/asynchronous interface circuit and electronic device * Cited by examiner Classifications",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

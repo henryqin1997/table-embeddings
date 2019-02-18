@@ -1,0 +1,58 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jul 24, 2002",
+            "Jun 18, 2003",
+            "Jul 6, 2009",
+            "Aug 16, 2013",
+            "Dec 20, 2013",
+            "Dec 20, 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "REMI",
+            "FPAY",
+            "SULP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Fee payment",
+            "Surcharge for late payment"
+        ],
+        [
+            "Description",
+            "Owner name: HEWLETT-PACKARD COMPANY, COLORADO Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:PRABHU, MANOHAR K.;REEL/FRAME:013122/0033 Effective date: 20020424",
+            "Owner name: HEWLETT-PACKARD DEVELOPMENT COMPANY, L.P.,COLORADO Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:HEWLETT-PACKARD COMPANY;REEL/FRAME:013776/0928 Effective date: 20030131",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "Year of fee payment: 7"
+        ]
+    ],
+    "pageTitle": "Patent US6983398 - Testing processors - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6983398?dq=6978253",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988310.3/warc/CC-MAIN-20150728002308-00299-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 482857055,
+    "recordOffset": 482830324,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6241=FIG. 2B shows a diagram used to illustrate a first embodiment of a scan test of chip 100. In FIG. 2B, a first processor, e.g., processor 110-1, scan tests or controls the scan test of a second processor, e.g., processor 110-2. Further, chip 100 includes a controller 210 for a test access port (TAP, not shown), an instruction register 220, and scan registers or scan cells 230-1 to 230-L. In one embodiment, the TAP accommodates scan pins including test clock (TCK), test mode select (TMS), and test reset (TRST). Additionally, the scan components 210, 220, and 230, etc., and thus the scan tests of processor 110-2 are in compliance with the IEEE 1149.1 standard. TAP controller 210 is a state machine and is programmed by the TMS and TCK inputs. TAP controller 210 controls the flow of data to instruction register 220 and data registers 230. Instruction register 220 decodes the instructions to be performed by scan registers 230, and selects scan registers 230 to be accessed. The TCK input provides the clock for the test logic and allows the serial test data path from TDI to TDO to be used independently of the system clock, e.g., the clock of processors 110 or of chip 100. The TMS input, in conjunction with the TCK input, changes the states in TAP controller 210, and also allows movement of data and TAP instructions. The TDI input provides serial inputs including both test instructions and test data. TDO is the serial output for test instructions and data from scan registers 230. A clock provided at the TCK input shifts the data in the chain between TDI input and TDO output. The TRST input provides asynchronous initialization of TAP controller 210, which in turns causes asynchronous initialization of other test logic. TRST, at reset, places processor 110-2 in the normal operating mode and inactivates scan registers 230.}",
+    "TableContextTimeStampAfterTable": "{69209=In one embodiment, memory structure 120 stores test programs to test various elements and/or different portions of chip 100. Exemplary elements of processors 110 to be tested include the arithmetic logic unit for mathematical calculations such as adding, subtracting, multiplying, etc., the control unit for decoding and executing instructions, the instruction fetch unit, the branch prediction units, the instruction queues, the floating point unit, etc. Exemplary elements of chip 100 to be tested include processors 110, memory structure 120, bus 1110 including data bus and instruction bus for processors 110 to communicate with each other and/or with memory structure 120, power control/reduction circuitry and logic, clock generation circuitry, etc. When all elements and portions of chip 100 are tested, the whole chip 100 is tested. In one embodiment, a test program includes instructions and data to stimulate functional elements of processors 110 and of chip 100. For example, if an adder is tested, then various values are provided to the inputs of the adder, which is then allowed to perform the adding function. If the result is as expected, i.e., it is the sum of the input values, then the adder is good. If bus structure 1110 is tested, then some data is provided to bus 1110 and the data should remain the same throughout bus 1110, etc. If memory structure 120 is tested, then the data written into the memory and the data read from the memory should be the same, etc., 93653=Processor 110-1 includes two registers 260 and 270. Processor 110-1 can write values into register 260 and read values from register 270. Register 260 includes bit\u2014TDI, bit\u2014TCK, bit\u2014TMS, and bit\u2014TRST each of which corresponds to each signal TDI, TCK, TMS, and TRST, respectively. Effectively, controlling register 260 via its bits controls the corresponding scan signals and thus the scan test of processor 110-2. For example, each of bit\u2014TMS, bit\u2014TRST, and bit\u2014TDI can be set to desirable values while bit\u2014TCK is pulsed as a clock. In one embodiment, register 260 changes voltage values for bit\u2014TCK in a monotonic way. Register 260 also includes bit\u2014SLCT, which controls the selection of the inputs and outputs of multiplexers and de-multiplexer 2050, 2150, 2250, 2350, and 2450. Generally, when processor 110-1 controls the scan test of processor 110-2, bit\u2014SLCT is set so that bit\u2014TDI, bit\u2014TCK, bit\u2014TMS, bit\u2014TRST, and bit\u2014TDO are connected to lines 2055, 2155, 2255, 2355, and 2455, respectively., 95630=Multiplexers 2050, 2150, 2250, 2350, and de-multiplexer 2450 connect the appropriate inputs and outputs of the multiplexers and de-multiplexer. For example, multiplexer 2050 selects either TDI or bit\u2014TDI to be output on line 2055. Multiplexer 2150 selects either TCK or bit\u2014TCK to be output on line 2155. Multiplexer 2250 selects either TMS or bit\u2014TMS to be output on line 2255, etc. Multiplexers and de-multiplexer are used as examples, any mechanism connecting the appropriate inputs and outputs is effective.}",
+    "textBeforeTable": "Patent Citations In the foregoing specification, the invention has been described with reference to specific embodiments thereof. However, it will be evident that various modifications and changes may be made thereto without departing from the broader spirit and scope of the invention. Accordingly, the specification and drawings are to be regarded as illustrative rather than as restrictive. In step 320, the processor analyzing the test results provides the result of the analysis, which, in one embodiment, is stored in memory structure 120. Alternatively, the test analysis result is provided via one or more pins 130 to outside of chip 100. In step 316, one or various processors analyze the sets of test results. How the test results are analyzed depend on how the tests were performed. For example, if processor 110-1 and processor 110-2 run identical tests, then a processor 110 compares the test results provided by the two processors 110-1 and 110-2. If the two sets of test results are the same, then that provides evidence that chip 100 may be good. However, if two sets of test results are different, then chip 100 is bad. In embodiments where it is not necessary to determine what causes chip 100 to be bad, no further analysis of the test results is performed. In step 312, each processor 110 stores its set of test results in the appropriate locations in memory structure 120. In",
+    "textAfterTable": "Nov 19, 1998 Mar 19, 2002 Compaq Computer Corporation Method and apparatus for determining a processor failure in a multiprocessor computer US6550020 * Jan 10, 2000 Apr 15, 2003 International Business Machines Corporation Method and system for dynamically configuring a central processing unit with multiple processing cores US6553525 * Nov 8, 1999 Apr 22, 2003 International Business Machines Corporation Method and apparatus for selectively enabling and disabling functions on a per array basis US6662133 * Mar 1, 2001 Dec 9, 2003 International Business Machines Corporation JTAG-based software to perform cumulative array repair US6779131 * May 1, 2001 Aug 17, 2004 Sun Microsystems, Inc. Reconfigurable multi-chip modules US20020059502 * Nov 8, 2001 May 16, 2002 Reimer Jay B. Multicore DSP device having shared program memory with conditional write protection US20020083387 * Dec 22, 2000 Jun 27, 2002 Miner David E. Test",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,71 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US7675896 *",
+            "US7974579 *",
+            "US8036207 *",
+            "US8139553 *",
+            "US8240572",
+            "US9031024 *",
+            "US20130163539 *"
+        ],
+        [
+            "Filing date",
+            "Dec 14, 2005",
+            "Dec 4, 2009",
+            "Jun 2, 2005",
+            "Jan 11, 2008",
+            "Mar 25, 2010",
+            "Dec 20, 2012",
+            "Dec 20, 2012"
+        ],
+        [
+            "Publication date",
+            "Mar 9, 2010",
+            "Jul 5, 2011",
+            "Oct 11, 2011",
+            "Mar 20, 2012",
+            "Aug 14, 2012",
+            "May 12, 2015",
+            "Jun 27, 2013"
+        ],
+        [
+            "Applicant",
+            "Canon Kabushiki Kaisha",
+            "Broadcom Corporation",
+            "Intellectual Ventures I Llc",
+            "Mediatek Inc.",
+            "Hand Held Products, Inc.",
+            "Kabushiki Kaisha Toshiba",
+            "Fengming Cao"
+        ],
+        [
+            "Title",
+            "Communication apparatus and control method thereof",
+            "Frequency separation for multiple bluetooth devices residing on a single platform",
+            "Adaptive routing",
+            "Methods and apparatuses for link management in a scatternet",
+            "Terminal with radio transceiver having power output",
+            "Radio resource management for distributed cellular systems",
+            "Radio resource management for distributed cellular systems"
+        ]
+    ],
+    "pageTitle": "Patent US7450577 - Flexible inter-network communication scheduling - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7450577?ie=ISO-8859-1&dq=U.S.+Patent+No.+4,528,643)",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988051.33/warc/CC-MAIN-20150728002308-00185-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 475723903,
+    "recordOffset": 475684518,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{34863=Bluetooth systems, in accordance with the Bluetooth Baseband Specification 1.1, use short range radio technology operating in the unlicensed 2.4 GHz Industrial-Scientific-Medical (ISM) band using a frequency hopping scheme. The IEEE 802.11 is another example of a specification utilizing the ISM band. The Bluetooth hopping scheme is performed on 79 RF channels spaced 1 MHz apart using a frequency hopping spread spectrum technique that changes its signal 1600 times per second. A frequency hop transceiver is applied to combat interference and fading. Bluetooth provides considerable data transfer capability at short ranges; e.g., up to approximately 720 Kbps within approximately 10 meters and up to approximately 100 meters with a power boost The Bluetooth system provides full-duplex transmission based on slotted Time Division Duplex (TDD) scheme, where each slot is approximately 0.625 ms long., 49828=Regardless of the workings of intra-piconet scheduling, inter-piconet scheduling is still needed to enable devices to simultaneously participate in multiple piconets. In fact, even PMP devices with inter-piconet scheduling capabilities have most of their communication traffic occurring within one piconet such that large portions of the PMP Bluetooth device's time will be as member of one piconet. Thus, the importance of efficient intra-piconet scheduling will not decrease when inter-piconet scheduling is introduced and the inter-piconet scheduler must not deteriorate the efficiency of the intra-piconet scheduler. Ideally, the inter-piconet scheduler should work integrally with the intra-piconet scheduler to provide the overall scatternet communication efficiency. One attempt at providing an efficient inter-piconet scheduler was proposed in previous U.S. patent application Ser. No. 09/454,758, filed Dec. 6, 1999, hereby incorporated by reference for all purposes. However, a more flexible approach as proposed by the present invention provides even better overall scatternet scheduling efficiency., 28413=The present application is a continuation of U.S. application Ser. No. 09/994,803, filed Nov. 28, 2001 now U.S. Pat. No. 7,058,050, which claims the benefit of provisional U.S. Patent Application Ser. No. 60/250,149, filed Dec. 1, 2000, the complete disclosures of which are hereby incorporated herein by reference for all purposes., 76601=As previously explained, the Bluetooth communication system is based on a master-slave architecture in which intra-piconet communication traffic flows between a master and a slave using Time Division Duplex (TDD) frames. The slaves in a piconet are synchronized with the frame and frequency hoping sequence of the master. For a single piconet the task of providing a controlled bit rate and delay of the traffic to the slaves is managed by the master alone and should be handled with a scheduler located in the master unit (e.g., intra-piconet scheduler 410). One method for intra-piconet scheduling may be a modified exhaustive polling algorithm, denoted Batched Fair Exhaustive Polling (B-FEP), is presented in commonly assigned U.S. patent application Ser. No. 09/455,172 filed Dec. 6, 1999, hereby incorporate by reference. B-FEP is believed to give high BW efficiency with a fair allocation, while still being simplistic. However, this method does not address inter-piconet scheduling.}",
+    "textBeforeTable": "Patent Citations Although particular embodiments of the present invention have been shown and described, it will be understood that it is not intended to limit the invention to the preferred embodiments disclosed herein and it will be obvious to those skilled in the art that various changes and modifications may be made without departing from the spirit and scope of the present invention. Thus, the invention is intended to cover alternatives, modifications, and equivalents, which may be included within the spirit and scope of the invention as defined by the claims. For example, another approach to providing flexible inter-piconet scheduling for IPSF and/or the JUMP mode may be to adjust the communication session and/or meeting window length based on probabilities derived from a history of traffic patterns so as to allocate communication time and frequency based on need. In this case, the system could monitor the traffic of data between the various piconets and set up or calculate an historical probability that a given piconet will need or try to communicate with a shared node (i.e. a jump node). In one variation, a maximum amount of communication time may be set for a given piconet. In another variation, a maximum amount of data may be set and monitored so that the maximum amount of data is reached the node switches to another piconet. Finally, although the present invention has been describe as being introduced with a new",
+    "textAfterTable": "US6735448 Nov 7, 2000 May 11, 2004 Hrl Laboratories, Llc Power management for throughput enhancement in wireless ad-hoc networks US6751200 Oct 26, 2000 Jun 15, 2004 Telefonaktiebolaget Lm Ericsson (Publ) Route discovery based piconet forming US6850965 Jun 26, 2001 Feb 1, 2005 Arthur Douglas Allen Method for connection acceptance and rapid determination of optimal multi-media content delivery over network US7024482 * Nov 20, 2001 Apr 4, 2006 Sharp Laboratories Of America, Inc. Pseudo-random dynamic scheduler for scheduling communication periods between electronic devices US7058050 * Nov 28, 2001 Jun 6, 2006 Telefonaktiebolaget L M Ericsson (Publ) Flexible inter-network communication scheduling US20010003191 Dec 1, 2000 Jun 7, 2001 Kovacs Ern?Ouml; Communication device and software for operating multimedia applications US20020150145 Apr 16, 2001 Oct 17, 2002 Fredrik Alriksson Rendezvous point interpiconet scheduling US20020176412 * Apr 24, 2001 Nov 28, 2002 Andras",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

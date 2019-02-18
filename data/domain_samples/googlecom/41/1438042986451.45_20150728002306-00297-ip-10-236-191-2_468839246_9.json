@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 16, 1999",
+            "Feb 6, 2003",
+            "Oct 2, 2006",
+            "Aug 13, 2009",
+            "Sep 29, 2010",
+            "Jul 2, 2012",
+            "Aug 5, 2014",
+            "Jun 30, 2015"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "",
+            "",
+            "Year of fee payment: 4",
+            "Owner name: SILICON VALLEY BANK,CALIFORNIA Free format text: SECURITY AGREEMENT;ASSIGNORS:WATCHGUARD TECHNOLOGIES, INC.;GLADIATOR CORPORATION;REEL/FRAME:023098/0771 Effective date: 20090730",
+            "Year of fee payment: 8",
+            "Owner name: GLADIATOR CORPORATION, WASHINGTON Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:SILICON VALLEY BANK;REEL/FRAME:028477/0268 Effective date: 20120628 Owner name: BANK OF MONTREAL, AS ADMINISTRATIVE AGENT, ILLINOI Free format text: SECURITY AGREEMENT;ASSIGNOR:WATCHGUARD TECHNOLOGIES, INC.;REEL/FRAME:028488/0917 Effective date: 20120628 Owner name: WATCHGUARD TECHNOLOGIES, INC., WASHINGTON Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:SILICON VALLEY BANK;REEL/FRAME:028477/0268 Effective date: 20120628",
+            "Year of fee payment: 12",
+            "Owner name: WATCHGUARD TECHNOLOGIES, INC., WASHINGTON Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:BANK OF MONTREAL, AS ADMINISTRATIVE AGENT;REEL/FRAME:035995/0466 Effective date: 20150629 Owner name: GOLDMAN SACHS SPECIALTY LENDING GROUP, L.P., AS CO Free format text: SECURITY INTEREST;ASSIGNOR:WATCHGUARD TECHNOLOGIES, INC.;REEL/FRAME:036038/0455 Effective date: 20150629"
+        ]
+    ],
+    "pageTitle": "Patent US6542508 - Policy engine using stream classifier and policy binding database to ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6542508?ie=ISO-8859-1&dq=6,373,753",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986451.45/warc/CC-MAIN-20150728002306-00297-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 468860271,
+    "recordOffset": 468839246,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{14828=This application claims the benefit of priority to U.S. Provisional Patent Application No. 60/112,976, filed Dec. 17, 1998.}",
+    "textBeforeTable": "Patent Citations 3) Platform for integrated services\u2014PAPI has the model of an integrated services platform in mind. Application developers can, over time, migrate their services into an integrated platform without worrying about the extensibility of the API and the performance penalty. 2) Maintain flexibility for developers' value-added\u2014PAPI may allow application developers to enhance or maintain their value-add so that vendors' differentiation is not compromised. 1) Time-to-market for application developers\u2014Since time-to-market is a major concern for application vendors, the PAPI design minimizes the development effort required by the application developers in order for the existing applications to take advantages of the policy engine's enhanced performance. It can be seen that in accordance with the present invention, use of the policy engine and policy cache not only addresses many if not all of the performance considerations discussed above in the Background, but also preserves a great amount of flexibility in setting network policies and the following consderations are taken into account. Thus, in summary, upon the completion of the policy binding \u201clearning\u201d process, the policy engine 106 may immediately take control of the bound stream and execute the appropriate actions in accordance with the action specifications 210 in the policy cache 209 without any intervention from the \u201chost\u201d (policy-based) application. This method also relieves the policy engine 106 hardware from doing complicated pattern matching because it can simply compute a hash value (or use some other identification function) from the",
+    "textAfterTable": "Abadi, M., et al, \"Secure Web Tunneling,\" http://pa.bell-labs.com/\u02dcabadi/Papers/tunnel/206.html, pp. 1-13 (Dec. 16, 2000). 13 Ferguson, Paul and D. Senie, \"Network Ingress Filtering: Defeating Denial of Service Attacks Which Employ IP Source Address Spoofing,\" http://andrew2.Andrew.cmu.edu/rfc/rfc2267.html, pp. 1-16 (Jan. 1998). 14 NetBoost SKD: Software Development Kit, Net Boost Corporation (1998). 15 Russell, Paul, \"Keeping the TCP/IP Stream Flowing,\" Linux Magazine, http://www.linux-mag.com/1999-08/bestdefemse02.html, pp. 1-8 (Aug. 1999). 16 U.S. Application Ser. No. 09/465.123, Lin, filed Dec. 16, 1999. Referenced by Citing Patent Filing date Publication date Applicant Title US6826387 * Nov 30, 2000 Nov 30, 2004 Palmsource, Inc. Efficient service registration for legacy applications in a bluetooth environment US6831893 * Apr 3, 2000 Dec 14, 2004 P-Cube, Ltd. Apparatus and method for wire-speed classification and pre-processing of data packets in a full duplex network US6957258 * Apr 11, 2001",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

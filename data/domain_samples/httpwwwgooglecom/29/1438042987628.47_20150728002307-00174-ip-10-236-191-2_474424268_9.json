@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "May 26, 1987",
+            "May 15, 1992",
+            "Aug 6, 1996",
+            "Jun 24, 1999",
+            "Aug 30, 2000"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: WESTINGHOUSE ELECTRIC CORPORATION, WESTINGHOUSE BU Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:LIPNER, MELVIN H.;MUNDY, ROGER A.;IMPINK, VICTOR N. K.;REEL/FRAME:004726/0695;SIGNING DATES FROM 19870305 TO 19870323 Owner name: WESTINGHOUSE ELECTRIC CORPORATION, A CORP OF PA,PE Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:LIPNER, MELVIN H.;MUNDY, ROGER A.;IMPINK, VICTOR N. K.;SIGNING DATES FROM 19870305 TO 19870323;REEL/FRAME:004726/0695",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Owner name: WESTINGHOUSE ELECTRIC CO. LLC, PENNSYLVANIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:CBS CORPORATION (FORMERLY KNOWN AS WESTINGHOUSE ELECTRIC CORPORATION;REEL/FRAME:010070/0819 Effective date: 19990322",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US4815014 - Machine assisted execution of process operating procedures - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4815014?dq=5,583,822",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987628.47/warc/CC-MAIN-20150728002307-00174-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 474453967,
+    "recordOffset": 474424268,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{31559=U.S. patent application Ser. No. 825,427 filed Feb. 3, 1986., 43689=The invention is directed to improvements in the method and apparatus for monitoring the execution of process operating procedures disclosed in copending commonly owned U.S. patent application Ser. No. 825,427 filed on Feb. 3, 1986 and entitled \"On-line Interactive Monitoring of the Execution of Process Operating Procedures\". As in that application, the invention will be described as applied to a pressurized water reactor (PWR) nuclear power plant, but it should be realized that it has application to a variety of complex process facilities such as, for example, chemical plants, refineries and the like. In fact, it is adaptable to various facilities where a human operator is required to follow preconceived, although not necessarily rigid, step-by-step procedures, and is most useful in those facilities in which the sequence of steps depends at least in part upon current conditions in the complex process facility. It may be used in monitoring the execution of a variety of types of procedures, however, for purposes of illustration the invention will be described as applied to monitoring the execution of emergency procedures for a PWR, and specifically, the Emergency Operating Procedures developed by the Westinghouse Owners Group., 47157=All of what has been described to this point is currently found in a typical PWR plant. The present invention provides improvements to the system described in U.S. patent application Ser. No. 825,427 filed Feb. 3, 1986, which in turn replaces the paper procedures 15 in providing guidance for the operator 11 in monitoring plant performance and manipulating the plant controls 13. It is an on-line tracking system which allows the operating staff to access and follow procedures in an easy, reliable and logical manner. The system performs irs functions through the execution of several concurrent but independent tasks including a read task, a main task, a parallel process task, and a display task. The read task gathers the plant parameter information and processes it for use by the main task. The main task controls the flow of the procedures and of the individual steps of the current procedure, and performs the logging functions. The parallel process task tracks system or safety conditions that may affect plant operations. The display task generates the visual displays for interfacing with the operator., 34569=U.S. patent application Ser. No. 825,427 filed on Feb. 3, 1986, and referred to above under the heading, Related Application, is directed to a computer based system which both assesses the plant data and provides guidance in light of predefined procedures. In this system, current plant data are used by the computer to trace a path through the logic of appropriate procedure steps in order to identify a recommended course of action. The course of action along, with related data, is displayed for the operator on one or more electronic display devices. The computer then uses the plant data and the operator's interactive response to proceed to the next appropriate procedure step. In addition, the computer simultaneously monitors certain functions which must normally be continuously monitored by the operator. If a problem becomes apparent in any of these functions, the operator is alerted and appropriate actions are displayed. In this manner, the operator is relieved of the duty of continually gathering and assessing large amounts of data, as required by the purely paper form of the procedures. This frees the operator to concentrate on operating the plant in a safe manner when hazardous conditions are not present, and to alleviate potential emergency situations when hazardous conditions exist.}",
+    "textBeforeTable": "Patent Citations While specific embodiments of the invention have been described in detail, it will be appreciated by those skilled in the art that various modifications and alternatives to those details could be developed in light of the overall teachings of the disclosure. Accordingly, the particular arrangements disclosed are meant to be illustrative only and not limiting as to the scope of the invention which is to be given the full breadth of the appended claims and any and all equivalents thereof. In summary, the present invention provides a more powerful computer based system for assisting an operator in executing procedures for a complex process facility. In particular, the use of buffering allows for continuous plant data monitoring and continuous re-execution of procedure logic to provide feedback to the operator and verify operator action. The use of text strings in a conditions recording subroutine generates a more complete and understandable record of plant conditions during an event in the form of a copy of the screen as the operator sees it. The provision of an override feature allows the operator to maintain control of the procedure and assists in identifying and making a record of faulty sensors. The use of multiple files in a review subroutine provide the capability for on-line review of the plant conditions record. Finally, the use of a high level textual statement file and a scanning subroutine provide the ability to view the high",
+    "textAfterTable": "* Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US4902469 * Jul 7, 1988 Feb 20, 1990 Westinghouse Electric Corp. Status tree monitoring and display system US4991076 * Jun 30, 1989 Feb 5, 1991 Icom Inc. Method and apparatus for creating custom displays for monitoring ladder logic programs US5027293 * Feb 3, 1989 Jun 25, 1991 Alliance Technical Services, Inc. Method and apparatus for analyzing machine control systems US5029068 * Sep 30, 1988 Jul 2, 1991 Fanuc Ltd. NC data creation method US5062147 * May 30, 1990 Oct 29, 1991 Votek Systems Inc. User programmable computer monitoring system US5068080 * Feb 7, 1989 Nov 26, 1991 Westinghouse Electric Corp. Operation state responsive automatic display",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

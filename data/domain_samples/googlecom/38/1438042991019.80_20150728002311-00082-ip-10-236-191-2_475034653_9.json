@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jul 11, 1996",
+            "Dec 31, 2001",
+            "Dec 20, 2002",
+            "Jan 21, 2004",
+            "Feb 28, 2007",
+            "Nov 30, 2010"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: COMPAQ COMPUTER CORPORATION, TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:ANGELO, MICHAEL F.;REEL/FRAME:008170/0788 Effective date: 19960709 Owner name: BROWN, DOUGLAS G., NORTH CAROLINA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:SCHULTHEISS, CHRISTOPHER J.;REEL/FRAME:008109/0657 Effective date: 19960709",
+            "",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US5944821 - Secure software registration and integrity assessment in a computer system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5944821?dq=2296019",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991019.80/warc/CC-MAIN-20150728002311-00082-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 475074371,
+    "recordOffset": 475034653,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{85489=When a computer system is operating in a standard mode, it is relatively easy for a programmer to \"hook\" keyboard interrupts and copy keystroke information as it is being communicated. Thus, the updating subroutine described in FIG. 4 is not entirely secure if the system leaves SMM. An improved method for establishing a secure keyboard link to enter password and other information is disclosed in U.S. Pat. No. 5,748,888 entitled \"METHOD AND APPARATUS FOR PROVIDING SECURE AND PRIVATE KEYBOARD COMMUNICATIONS IN COMPUTER SYSTEMS\", filed May 29, 1996 and hereby incorporated by reference. As described therein, to keep a password or other sensitive information from being visible to malicious code it can be communicated via a secure keyboard link to a \"black box\" security device integrated within a system component such as the PCI-ISA bridge 130. The password data as well as user-entered keystrokes are not stored in normal readable memory, preventing them from being surreptitiously obtained. The secured keyboard link is initiated by the SMI handler and each keystroke is sent to the black box while the system is in SMM. The keystrokes are not visible to any other processes, and the black box can only be written in this manner. It is contemplated that this method could be used to enter an administrative password required to update the secured hash table., 54597=A more secure technique is described in U.S. patent application Ser. No. 5,421,006, filed Apr. 20, 1994, entitled \"METHOD AND APPARATUS FOR ASSESSING INTEGRITY OF COMPUTER SOFTWARE\", which is hereby incorporated by reference. The described technique uses CMOS memory as a non-volatile memory (NVRAM). The NVRAM has one location which can be write-protected by a write once bit. Once set, the write protection cannot be removed until the computer is reset. This location holds secure hash values for certain operating system programs located on the hard disk. Software in the ROM BIOS needs the protected operating system programs and the hash values of those programs. If the calculated hash value matches that stored in the NVRAM, then the programs are secure and can be executed.}",
+    "textBeforeTable": "Patent Citations The foregoing disclosure and description of the invention are illustrative and explanatory thereof, and various changes in the size, shape, materials, components, circuit elements, wiring connections and contacts, as well as in the details of the illustrated circuitry and construction and method of operation may be made without departing from the spirit of the invention. Thus, a method for providing secure registration and integrity assessment of software in a computer system has been described. When the user attempts to execute the secured application, a system management interrupt is generated. An SMI handler then generates a hash value for the program to be executed. Next, the SMI handler checks a stored hash table for an entry for the secured application. If a hash value entry is found, it is compared with the newly calculated hash value for the secured application. In the event the two values match, the integrity of the application is guaranteed and it is loaded into either system management mode memory or normal memory and executed. If the two values do not match, the user is alerted to the discrepancy and may be given the option to update or override the stored hash table entry by entering an administrative password. The present invention operates in real time and incorporates both software protection and integrity assessment concepts, resulting in a more thorough and flexible approach to system security. The present invention can also be used",
+    "textAfterTable": "* Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US6138233 * Sep 23, 1998 Oct 24, 2000 Samsung Electronics Co., Ltd. Method of updating a BIOS ROM US6151707 * Nov 20, 1997 Nov 21, 2000 Remedy Corporation System and method for product registration US6189032 * Jan 29, 1998 Feb 13, 2001 Hitachi, Ltd. Client-server system for controlling access rights to certain services by a user of a client terminal US6240519 Apr 30, 1998 May 29, 2001 Compaq Computer Corporation Computer method and apparatus to prompt for administrative password to flash a corrupted non-volatile memory US6446177 * Sep 28, 1999 Sep 3, 2002 Kabushiki Kaisha Toshiba Memory system US6463535 * Oct 5, 1998 Oct 8, 2002 Intel Corporation System",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

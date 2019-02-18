@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jul 31, 1981",
+            "Apr 1, 1987",
+            "May 28, 1991",
+            "Oct 20, 1991",
+            "Dec 31, 1991"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: CHARLES STARK DRAPER LABORATORY THE, 555 TECHNOLOG Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNOR:SELTZER, DONALD S.;REEL/FRAME:003907/0268 Effective date: 19810723",
+            "Year of fee payment: 4",
+            "",
+            "",
+            "Effective date: 19911020"
+        ]
+    ],
+    "pageTitle": "Patent US4409736 - Null seeking system for remote center compliance device - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4409736?dq=6106459",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00274-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 482943143,
+    "recordOffset": 482927183,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{17668=Remote center compliance (RCC) devices, which are passively compliant, are available for assembly, mating and insertion tasks where it is desired to quickly and easily accommodate for relatively small misalignments. Three different types of RCC devices are disclosed in U.S. Pat. Nos. 4,098,001, 4,155,169, and application Ser. No. 140,768, filed Apr. 16, 1980, now U.S. Pat. No. 4,337,579 and incorporated herein by reference. These devices have now been instrumented, U.S. patent application Ser. Nos. 76,906 now abandoned and 76,907, filed Sept. 19, 1979, now U.S. Pat. No. 4,316,329 incorporated herein by reference, so that they are able to passively adjust to assemble misaligned parts and also indicate a measure of the misalignment.}",
+    "textBeforeTable": "Patent Citations Other embodiments will occur to those skilled in the art and are within the following claims: With this encoding scheme, the system will always be able to determine if the displacement is within the null region (-VT to VT), offset in one direction (>VT), or offset in the other direction (<-VT). In addition, if gating input Ax is high, the system can distinguish between a small offset (VT to V2T) and larger offsets (>V2T). If Ax is low, the system can distinguish between small offsets in the other direction (-V2T to -VT) and larger offsets in that direction (<-V2T)  TABLE I______________________________________ Ax = H Ax = LA0 A1 A2 A1 A2______________________________________>V2T L L L HVT to V2T L H L H-VT to VT H H H H-V2T to -VT H L H L<-V2T H L L L______________________________________ As shown in the truth table below: For this purpose correction circuit 26a may alternately include an encoder circuit 120, which includes four AND gates 122, 124, 126 and 128, which are paired to drive OR gates 130, 132 with inverters 134, 136 at their outputs. Encoder 120 also includes a gating circuit 140 comprised of two inverter amplifiers 142, 144, and a biasing resistor 146 connected to a +5 volt supply. The outputs A1 and A2 from inverters 134 and 136 can indicate four out of the five conditions deduced by comparator circuits",
+    "textAfterTable": "US4745681 * Apr 22, 1987 May 24, 1988 International Business Machines Corporation Controlled pin insertion using airflow sensing and active feedback US4882836 * Apr 22, 1988 Nov 28, 1989 Research Development Corporation Precision automatic assembly apparatus including air core coils and corresponding magnetic poles US4882837 * Apr 22, 1988 Nov 28, 1989 Research Development Corporation Precision automatic assembly apparatus including face to face magnets and an air core coil therebetween US4884329 * Apr 13, 1987 Dec 5, 1989 Research Development Corporation Precision automatic assembly apparatus, with electromagnetically supported member and assembly method using same US5729906 * Jan 15, 1997 Mar 24, 1998 The Boeing Company Hole diameter inspection US5777562 * Aug 19, 1996 Jul 7, 1998 Hoffman; David J. Centering device and method for centering US5848859 * Jan 8, 1997 Dec 15, 1998 The",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

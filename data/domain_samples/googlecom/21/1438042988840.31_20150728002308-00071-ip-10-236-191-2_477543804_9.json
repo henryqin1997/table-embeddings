@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jun 17, 1993",
+            "Jun 7, 1995",
+            "Jun 1, 1999",
+            "May 1, 2003",
+            "Jun 8, 2007",
+            "Mar 7, 2013",
+            "Oct 9, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: AMERICAN TELEPHONE AND TELEGRAPH COMPANY, NEW YORK Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:MIZRAHI, VICTOR;REEL/FRAME:007498/0953 Effective date: 19930617",
+            "Owner name: AT&T CORP., NEW YORK Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:AMERICAN TELELPHONE AND TELEGRAPH COMPANY;REEL/FRAME:007527/0274 Effective date: 19940420 Owner name: AT&T IPM CORP., FLORIDA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:AT&T CORP.;REEL/FRAME:007528/0038 Effective date: 19950523",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12",
+            "Owner name: CREDIT SUISSE AG, NEW YORK Effective date: 20130130 Free format text: SECURITY INTEREST;ASSIGNOR:ALCATEL-LUCENT USA INC.;REEL/FRAME:030510/0627",
+            "Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:CREDIT SUISSE AG;REEL/FRAME:033950/0261 Effective date: 20140819 Owner name: ALCATEL-LUCENT USA INC., NEW JERSEY"
+        ]
+    ],
+    "pageTitle": "Patent US5475780 - Optical waveguiding component comprising a band-pass filter - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5475780?ie=ISO-8859-1&dq=7,013,345/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988840.31/warc/CC-MAIN-20150728002308-00071-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 477569647,
+    "recordOffset": 477543804,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{34909=By way of illustration, FIG. 4 is the transmission spectrum of a Bragg grating, having at most a slight, unintentional tilt, that exhibits strong radiative scattering, and FIG. 5 is the transmission spectrum of a deliberately tilted grating (in a fiber of different design). The spectrum of FIG. 5 exhibits a sharp maximum near 1506.5 nm that is attributable to a so-called \"leaky\" mode. The grating of FIG. 4 was formed by exposing hydrogen-treated, erbium-doped, germanosilicate-core fibers to ultraviolet radiation at a wavelength of 242 nm. The average uv power was 20-30 mW, and the exposure time was 3-7 minutes. The grating of FIG. 5 was made by treating a standard AT&T communication fiber with hydrogen, and subsequently exposing the fiber using a phase mask., 29218=One method for forming filters 8 is to expose a suitable, photosensitive optical waveguiding medium to an interference pattern of actinic (typically, ultraviolet) radiation. This method is well known in the art and need not be described here in detail. An alternative method, especially useful for mass production, is to expose the medium to an interference pattern created by impinging a single actinic beam on a phase mask. A phase mask is a holographically patterned, diffractive medium that modulates the relative phase, rather than the amplitude, of the diffracted wavefronts. A phase mask is exemplarily made by reactive-ion etching of a fused-quartz substrate overlain by a chromium mask that has been patterned by electron-beam lithography. The use of phase masks to fabricate Bragg gratings is described in U.S. Pat. No. 5,327,515, issued to D. Z. Anderson et al. on Jul. 5, 1994., 33908=By contrast, one method to enhance the radiative scattering is to tilt the Bragg grating. That is, the refractive index perturbations that define an ordinary Bragg grating occur in planes perpendicular to the propagation axis. In a tilted grating, by contrast, these planes are tilted relative to the propagation axis. If, e.g., the Bragg grating is formed by an interference pattern of actinic radiation, tilted gratings are readily made by tilting the propagation axis of the waveguiding medium relative to the axis along which the interference pattern is periodic. A further advantage of tilted gratings is that because they can be effective for coupling reflected radiation into a radiative mode or a leaky mode (both of which exit the waveguiding medium), they can be designed to suppress back-reflected light that would otherwise be guided within the optical medium. Tilted gratings are described, e.g., in U.S. Pat. No. 5,042,897, issued to G. Meltz et al. on Aug. 27, 1991., 20890=Compound Bragg reflection filters made in planar waveguides are described in C. H. Henry et al., \"Compound Bragg Reflection Filters Made by Spatial Frequency Doubling Lithography,\" J. Lightwave Technol. 7 (1989) 1379-1385. As reported therein, a filter having desirable spectral properties can be made by forming a Bragg grating having many, e.g., 15, sections, each with a different spatial period. To avoid phase shifts near 90\ufffd between sections, the sections are made contiguous, resulting in a grating period that is piecewise constant, but discontinuously varied. Henry et al. does not teach how to make such a filter in an optical fiber. Moreover, the filter of Henry et al. is relatively complicated to manufacture, and it would still be desirable to provide a filter that is simpler to manufacture., 35711=We have observed that the optical spectra of at least some Bragg gratings include narrow peaks and valleys that fall on the high-energy side of the main reflection peak, and may encroach on it. This generally undesirable fine structure is attributed to multiple reflections between the peripheral portions of the grating, which generally have a smaller average refractive index than the central portion. These reflections are believed to cause Fabry-Perot resonances, leading to the observed fine structure. A currently preferred method for eliminating this fine structure is to chirp the grating such that a given vacuum wavelength of light will not simultaneously satisfy the Bragg condition in both ends of the grating. This and other techniques are described in detail in U.S. Pat. No. 5,309,260, issued to V. Mizrahi et al. on May 3, 1994., 30127=To produce strong gratings, we currently prefer to expose optical fibers that have been sensitized by exposure to hydrogen gas. This technique is described, e.g., in U.S. Pat. No. 5,235,659, issued to R. M. Atkins et al. on Aug. 10, 1993, and in a continuation-in-part thereof, U.S. Pat. No. 5,287,427, issued to R. M. Atkins et al. on Feb. 15, 1994. Briefly, a silica-based optical fiber or other optical waveguide is exposed to hydrogen gas at a temperature of 250\ufffd C. or less and a hydrogen partial pressure of at least 1 atmosphere. Actinic irradiation of the resulting hydrogenated waveguide can result in a normalized refractive index change of 10-3 or more, and even as high as 10-2 or more. For example, AT&T 5D fiber, a commercially available optical communications fiber having a germanosilicate core, was exposed for 48-72 hours to 14.7 MPa of hydrogen at 75\ufffd C. Ultraviolet irradiation of the hydrogenated fiber produced a normalized index change of 1.8\ufffd10-3.}",
+    "textBeforeTable": "Patent Citations Because radiative scattering is beneficial in this context, it may be desirable to form such a broadband filter in a section of, e.g., optical fiber of a type that only weakly confines the mode field of guided radiation to the fiber core. This fiber section can then be joined to one or more channel-selective filters formed in fiber sections having strong mode-field coupling. As noted, Fabry-Perot resonance effects can produce undesirable spectral fine structure. Yet another context in which effects of this type appear is provided when a pair of, e.g., adjacent Bragg gratings have the same, or nearly the same, period. In such a case, reflected light can resonate between the two gratings. This may, e.g., affect channel-selective filters having more than two gratings. It can also affect the performance of broadband rejection filters made from Bragg gratings. That is, it is convenient to make a broadband rejection filter by creating two or more Bragg gratings in a segment of optical fiber or other waveguiding medium. The periods of the gratings are closely spaced, such that the respective reflection peaks overlap. We believe that a rejection band 10 nm or more in width can readily be made by this method. A broad bandpass filter is readily made from two of these rejection filters having offset rejection bands. Such a bandpass filter is conveniently used, e.g., as ASE filter 10 of FIG. 1. However, Fabry-Perot fine",
+    "textAfterTable": "Jul 27, 1992 Feb 1, 1994 General Instrument Corporation, Jerrold Communications Optical systems with grating reflector US5287427 * Jan 28, 1993 Feb 15, 1994 At&T Bell Laboratories Method of making an article comprising an optical component, and article comprising the component US5309260 * Dec 23, 1992 May 3, 1994 At&T Bell Laboratories Method for forming distributed bragg reflectors in optical media US5327515 * Jan 14, 1993 Jul 5, 1994 At&T Laboratories Method for forming a Bragg grating in an optical medium US5351324 * Sep 10, 1993 Sep 27, 1994 The Regents Of The University Of California, Office Of Technology Transfer Fiber optic security seal including plural Bragg gratings * Cited by examiner Non-Patent Citations Reference 1 C. H. Henry et al., Journal of Lightwave Technology, vol. 7, No. 9, Sep. 1989, \"Compound Bragg Reflection Filters Made by Spatial",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

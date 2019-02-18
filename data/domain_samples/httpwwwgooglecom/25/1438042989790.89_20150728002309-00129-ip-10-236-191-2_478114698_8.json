@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jun 2, 1987",
+            "Oct 15, 1991",
+            "Aug 19, 1993",
+            "Sep 30, 1997",
+            "May 4, 2001"
+        ],
+        [
+            "Code",
+            "AS",
+            "CC",
+            "FPAY",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Certificate of correction",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: LSI LOGIC CORPORATION, 1551 MCCARTHY BOULEVARD, MI Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:MODARRES, HOSSEIN;RAAM, SUSAN;LAI, JIUN-HAO;REEL/FRAME:004770/0765 Effective date: 19870529 Owner name: LSI LOGIC CORPORATION,CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:MODARRES, HOSSEIN;RAAM, SUSAN;LAI, JIUN-HAO;REEL/FRAME:004770/0765 Effective date: 19870529",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US4918614 - Hierarchical floorplanner - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4918614?dq=6,460,050",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00129-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 478154027,
+    "recordOffset": 478114698,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{43899=Moreover, as discussed above, floorplanning at this \"level\" may well violate the hierarchy imposed by the logic designer. The need for truly hierarchical floorplanning is perhaps best evidenced by the desire of companies to classify essentially flat floorplanning techniques as hierarchical. See, e.g., McLeod, Jonah, \"Now Designers Can Skip Floor-Planning Details,\" Electonics, April 30, 1987, pp. 61-62; and Ueda, Kazuhiro, et al., \"CHAMP: Chip Floorplanning For Hierarchical VLSI Layout Design,\" IEEE Transactions on Computer-Aided Design, Vol. CAD-4, No. 1, January, 1985, pp. 12-22., 48918=To avoid unwarranted complexity, each function is geometrically represented as a rectangle. Moreover, each function must fall into one of the following three categories: (1) a \"megacell\" function (a terminal function, including pad functions, which contains only one cell, which cell has already been laid out, and therefore has fixed dimensions), (2) a \"macrocell\" function (a terminal function which contains many small cells, which may, for example, be approximately 2500 square microns each, the collection of which has not yet been laid out, and therefore has no fixed dimensions) or (3) a \"function of functions\" (a nonterminal function which has two or more children functions)., 88764=Thus, a second method, \"Heuristic Partitioning\" (illustrated in FIG. 6), is required. This method does not necessarily generate the partition which yields the minimum Partition Cost Function, but it does approximate this optimum solution, by applying a variation of the Kernighan-Lin heuristic technique. See Kernighan, B. W. and S. Lin, \"An Efficient Heuristic Procedure for Partitioning Graphs,\" The Bell System Technical Journal, February, 1970, pp. 291-307., 45062=Previous methods do, however, include single-level floorplanning techniques. One such technique involves \"partitioning\" the functions into two groups to minimize the number of interconnections between the groups. This procedure is recursively applied to force heavily connected functions to be placed next to one another, resulting in the formation of clusters of functions which minimize required routing space. See Kernighan, B. W. and S. Lin, \"An Efficient Heuristic Procedure for Partitioning Graphs,\" The Bell System Technical Journal, February, 1970, pp. 291-307., 45671=Another technique (often used in conjunction with partitioning) involves \"slicing\" or dissecting the chip area into rectangular \"slicing regions\" (regions within which each of the partitioned groups of functions can be placed), and then placing each partitioned group of functions in one of such regions, so as to minimize the wasted area, and hence the total chip area. See Otten, Ralph, H. J. M., \"Layout Structures,\" IBM Research Report, No. RC 9657 (#42647), October 28, 1982.}",
+    "textBeforeTable": "Patent Citations This routability percentage indicates, in essence, the additional manual effort required by the user to achieve an actual layout of the logic design in the specified chip area. The user can then, as an alternative to exerting that effort, increase the chip area slightly and/or manually adjust the floorplan, and then invoke the system again until a sufficiently high routability percentage is obtained. The routability percentage is determined in much the same manner as was the feasibility percentage described earlier. Instead of randomly placing the functions in the specified chip area, the system uses the actual floorplan it produces to determine how much routing space is actually required. The routability percentage equals the available space for routing (the specified chip area less the sum of the areas of all functions) divided by the routing space actually required. This percentage is, of course, limited to 100%. Finally, it displays Feasibility and Routability percentages which, as discussed earlier, indicate, respectively, the \"feasibility\" of laying out the user's logic design in the specified chip area, and the \"routability\" of the particular floorplan of that logic design produced by the system (i.e., the likelihood of successfully routing that floorplan in the specified chip area). Note, however, that the shapes and relative placement of functions A, B, C, D and E are very similar between FIG. 9 and FIG. 11. Regardless of the user's specified depth of automatic placement, the system",
+    "textAfterTable": "Jun 20, 1989 May 12, 1992 Digital Equipment Corporation Integrating the logical and physical design of electronically linked objects US5128871 * Mar 7, 1990 Jul 7, 1992 Advanced Micro Devices, Inc. Apparatus and method for allocation of resoures in programmable logic devices US5140526 * Jan 6, 1989 Aug 18, 1992 Minc Incorporated Partitioning of Boolean logic equations into physical logic devices US5151868 * Jan 31, 1990 Sep 29, 1992 Hitachi, Ltd. Signal line terminal allocation method US5175693 * Feb 28, 1990 Dec 29, 1992 Kabushiki Kaisha Toshiba Method of designing semiconductor integrated circuit device US5187668 * Dec 4, 1990 Feb 16, 1993 Matsushita Electric Industrial Co., Ltd. Placement optimization system aided by cad US5191542 * May 15, 1990 Mar 2, 1993 Kabushiki Kaisha Toshiba Automatic floorplan operation apparatus US5208759 *",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

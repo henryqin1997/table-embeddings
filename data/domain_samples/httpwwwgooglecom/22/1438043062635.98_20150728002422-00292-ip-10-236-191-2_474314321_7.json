@@ -1,0 +1,67 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US8572369 *",
+            "US8780887 *",
+            "US8966112",
+            "US9054913",
+            "US20110145571 *",
+            "US20120106559 *"
+        ],
+        [
+            "Filing date",
+            "Dec 11, 2009",
+            "Sep 16, 2011",
+            "Nov 29, 2010",
+            "Nov 29, 2010",
+            "Dec 11, 2009",
+            ""
+        ],
+        [
+            "Publication date",
+            "Oct 29, 2013",
+            "Jul 15, 2014",
+            "Feb 24, 2015",
+            "Jun 9, 2015",
+            "Jun 16, 2011",
+            "May 3, 2012"
+        ],
+        [
+            "Applicant",
+            "Sap Ag",
+            "Electronics And Telecommunications Research Institute",
+            "Dell Software Inc.",
+            "Dell Software Inc.",
+            "Sap Ag",
+            "Electronics And Telecommunications Research Institute"
+        ],
+        [
+            "Title",
+            "Security for collaboration services",
+            "Method of network-based communication in virtual network environment",
+            "Network protocol proxy",
+            "Network protocol proxy",
+            "Security for collaboration services",
+            "Method of network-based communication in virtual network environment"
+        ]
+    ],
+    "pageTitle": "Patent US8014421 - Systems and methods for adjusting the maximum transmission unit by an ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US8014421?dq=5,890,152",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00292-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 474383983,
+    "recordOffset": 474314321,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6494=In one aspect, the present invention is related to providing a peer-to-peer route optimization technique between a first computing device accessing a second computing device via a gateway, such as the gateway 340 illustrated in FIG. 1A. The peer-to-peer routing techniques provides a more optimal and direct communication between computing devices establishing or attempting to establish a communication session via a gateway. The illustrative method 260 of an embodiment of the present invention will be discussed in view of the illustrative environment 200 of FIG. 2A. In brief overview, the environment 200 includes a gateway 340 providing remote access connectivity to a private network, such as a network with IP address ranges 10.10.10.XXX. The gateway 340 in association with the private network may have assigned an IP address of 10.10.10.2 for communications on the private network. This private network may include a server 102 c. Also, the private network comprises a telecommunication device 210 c, such as any type and/or form of VoIP telephone. The telecommunication device 210 c is assigned IP address 10.10.10.100 on the private network.}",
+    "TableContextTimeStampAfterTable": "{158153=In some embodiments of illustrative step 266, the signal server 102 c may set up, negotiate, or establish any type and/or form of communication session, and in one embodiment the signaling server 102 c sets up a telecommunication session, such as the VoIP telephone call initiated by the telecommunication device 210 a. When setting up the telecommunication or other media session, the signaling server 102 c, at step 270, instructs, requests, signals or otherwise communicates to the initiating telecommunication device 210 a and/or first computing device 102 a to contact, signal, connect, or otherwise communicate to the peer telecommunication device 210 b via a certain network address. In some embodiments, the network address provided by the signaling server 102 c to the initiating telecommunication device 210 a comprises the network address for the computing device 102 b on the private network, i.e., 10.10.10.XXX, behind the gateway 340. In one embodiment, the network address for the peer telecommunication device 210 b may comprise an enterprise private network address., 149136=The first computing device 102 a of environment 200 may be part of a network, private or public, accessing the gateway 340 via network 104 over the connection 341 a and traversing the firewall 205 a. The firewall 205 a provides access to and traversal of a public network, and has assigned the IP address of 24.24.24.100. The first computing device 102 a may be in communication with, or interfaced or coupled to a telecommunication device 210 a, such as a VoIP communication device, or any other real-time data communication device. The second computing device 102 b may be part of a private network and have assigned the IP address of 192.168.20.20. Additionally, the second computing device 102 b may include a software based telecommunication device 210 b, such as software-based VoIP telecommunication device or program. The second computing device 102 b may access the gateway 340 via network 104 over connection 341 b and traversing firewall 205 b having a public network IP address of 216.216.10.10. The firewalls 205 a and 205 b may be any type and/or form of firewall as known to those ordinarily skilled in the art, such as a NAT firewall., 38003=This present application claims priority to and is a continuation of U.S. Non-Provisional application Ser. No. 11/188,279, entitled \u201cSystems and Methods for Adjusting the Maximum Transmission Unit for Encrypted Communications\u201d, filed Jul. 22, 2005, which claims priority to a U.S. Provisional Patent Application No. 60/590,837, entitled \u201cAd Hoc Distributed Networks And Remote Access Architecture\u201d, filed Jul. 23, 2004, and U.S. Provisional Patent Application No. 60/601,431, entitled \u201cSystem And Method For Assuring Redundancy In Remote Access Solution\u201d, filed Aug. 13, 2004, and U.S. Provisional Patent Application No. 60/607,420, entitled \u201cVirtual Network Bridging\u201d, filed Sep. 3, 2004, and U.S. Provisional Patent Application No. 60/608,814, entitled \u201cSystem And Method For Assuring Redundancy In Remote Access Solution\u201d, filed Sep. 10, 2004, all of which are incorporated herein by reference.}",
+    "textBeforeTable": "Patent Citations Many alterations and modifications may be made by those having ordinary skill in the art without departing from the spirit and scope of the invention. Therefore, it must be expressly understood that the illustrated embodiments have been shown only for the purposes of example and should not be taken as limiting the invention, which is defined by the following claims. These claims are to be read as including what they set forth literally and also those equivalent elements which are insubstantially different, even though not identical in other respects to what is shown and described in the above illustrations. . As such, the techniques of the present invention enables protocols that communicate their IP address over the protocol to continue to function. FIG. 2A , for example, the remote access client 120 of the present invention can distribute Dynamic Host Configuration Protocol (DHCP) IP addresses of the client 105 or the publicly visible IP addresses to the telecommunication device 210 a-210 b, such as either a hardware or software based VoIP telephone. The gateway 340 of the present invention facilitates the discovery of the public IP addresses of the client, such as client 105 b illustrated in FIG. 2A In yet a further aspect and in view of In one further illustrative example of the present invention, an online meeting, collaboration and/or desktop sharing service, such as the hosted",
+    "textAfterTable": "US5819020 Oct 16, 1995 Oct 6, 1998 Network Specialists, Inc. Real time backup system US5835726 Jun 17, 1996 Nov 10, 1998 Check Point Software Technologies Ltd. System for securing the flow of and selectively modifying packets in a computer network US5838920 Jul 18, 1997 Nov 17, 1998 Advanced System Technologies, Inc. Method and apparatus for identifying transactions US5850446 Jun 17, 1996 Dec 15, 1998 Verifone, Inc. System, method and article of manufacture for virtual point of sale processing utilizing an extensible, flexible architecture US5864837 Jun 12, 1996 Jan 26, 1999 Unisys Corporation Methods and apparatus for efficient caching in a distributed environment US5889863 Jun 17, 1996 Mar 30, 1999 Verifone, Inc. System, method and article of manufacture for remote virtual point of sale processing utilizing a multichannel, extensible, flexible architecture US5911051 Sep 27, 1996 Jun 8, 1999 Intel Corporation High-throughput interconnect allowing bus transactions based on partial access requests US5925100 Mar 21, 1996",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "May 2, 1996",
+            "Apr 27, 2001",
+            "Apr 22, 2005",
+            "Jan 14, 2009",
+            "Mar 5, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: VISONIC LTD., ISRAEL Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:TCHERNIHOVSKI, NAHUM;ZHEVELEV, BORIS;MOLDAVSKI, MARK;ANDOTHERS;REEL/FRAME:007990/0928;SIGNING DATES FROM 19960422 TO 19960423",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12",
+            "Effective date: 20130717 Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:VISONIC LTD.;REEL/FRAME:032356/0736 Owner name: TYCO FIRE & SECURITY GMBH, SWITZERLAND"
+        ]
+    ],
+    "pageTitle": "Patent US5693943 - Passive infrared intrusion detector - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5693943?dq=4484186",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988922.24/warc/CC-MAIN-20150728002308-00141-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 502097871,
+    "recordOffset": 502072081,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{50629=Additional, optional, features of the intrusion detector of the present invention are described in US. Pat. Nos. 5,237,300 and 4,604,524 and in Israel Patent Application 110,800, filed Aug. 28, 1994, which was filed in the PCT as application number PCT/EP95/01501, which are assigned to the assignee of the present application, the disclosures of all of which are incorporated herein by reference. For example, devices for detecting attempts to tamper with the intrusion detector may be used in conjunction with the present invention. The execution of such additional features is preferably also controlled by main controller 20.}",
+    "textBeforeTable": "Patent Citations It should be appreciated that the present invention is not limited to what has been thus far described with reference to preferred embodiments of the invention. Rather, the scope of the present invention is limited only by the following claims: ##SPC1## If T(NP)-T(NP -1)\u2266Tmax, processor 38 proceeds to determine whether a threshold number of detection pulses, NT, has been reached. If NP is greater than threshold number NT, which is typically between 2 and 5, processor 38 generates an intrusion detection signal to controller 40 which operates an alarm circuit as described above. If T(NP)-T(NP -1)>Tmax, the number of detection pulses, NP is reset to zero and the entire detection procedure described above is repeated to detect new pulses. It will be appreciated from FIG. 8B that the change in amplitude between consecutive extrema is generally dependent on the time interval between the consecutive extrema. Thus, in a preferred embodiment of the present invention, processor 38 determines a time-interval-dependent threshold, VT (TD), based on the predetermined relationship which generally exists between the time interval and amplitude change across consecutive extrema. The time-interval-dependent thresholds may be determined based on a look-up-table stored in a memory of processor 38. If VD |\u2266VT, extremum Vi is ignored and extremum Vi-1 is maintained as reference for the next extremum found in the search. However, if VD >VT, the number of detected pulses is raised by one, i.e. N=N+1. Then, the",
+    "textAfterTable": "US5077549 * Jul 10, 1990 Dec 31, 1991 Shmuel Hershkovitz Integrating passive infrared intrusion detector US5084696 * Jan 24, 1991 Jan 28, 1992 Aritech Corporation Signal detection system with dynamically adjustable detection threshold US5237330 * May 14, 1992 Aug 17, 1993 Visonic Ltd. Intrusion detection device JPH0236391A * Title not available JPH0375584A * Title not available JPH01162186A * Title not available JPH03238388A * Title not available JPH03238390A * Title not available JPH03293585A *",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

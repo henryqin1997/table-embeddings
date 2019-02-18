@@ -1,0 +1,72 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jan 16, 1990",
+            "Dec 30, 1994",
+            "Feb 14, 1995",
+            "Oct 13, 1998",
+            "Oct 21, 1998",
+            "Apr 9, 2001",
+            "Feb 19, 2002",
+            "Jul 30, 2002",
+            "Aug 25, 2009",
+            "May 4, 2010"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "REMI",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS",
+            "FPAY",
+            "RR",
+            "B1"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Request for reexamination filed",
+            "Reexamination certificate first reexamination"
+        ],
+        [
+            "Description",
+            "Owner name: AMTECH CORPORATION, A CORP. OF DE, NEW MEXICO Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:LANDT, JEREMY A.;KOELLE, ALFRED R.;REEL/FRAME:005226/0675;SIGNING DATES FROM 19890102 TO 19891215",
+            "Year of fee payment: 4",
+            "",
+            "Owner name: AMTECH SYSTEMS CORPORATION, TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:AMTECH CORPORATION;REEL/FRAME:009790/0736 Effective date: 19980611",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Year of fee payment: 12",
+            "Effective date: 20070627",
+            "Free format text: THE PATENTABILITY OF CLAIMS 4-6 IS CONFIRMED. CLAIM 1 IS CANCELLED. CLAIMS 2-3 AND 7-11 WERE NOT REEXAMINED."
+        ]
+    ],
+    "pageTitle": "Patent US5030807 - System for reading and writing data from and into remote tags - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5030807?dq=6526440",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00044-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 468126551,
+    "recordOffset": 468095653,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations As will be apparent to those skilled in the art, many modifications can be made to the preferred embodiment of the invention shown in FIGS. 1-4 and described above. Accordingly, the invention is only limited as set forth in the claims which follow. Reader synchronization may be done by wire or preferably using a self-synchronizing feature of the invention. If one interrogator is attempting to write to a tag, the modulation of the signal sent by that interrogator may cause interference with an adjacent interrogator. An integral part of the write cycle is to first read all data from the tag. During this reading time period, an adjacent interrogator can also read a tag if one is present, and consequently becomes synchronized automatically to the first interrogator. After both interrogators have acquired two frames of data from their respective tags, then both are ready to write and thus are in synchronization with each other. Time division multiplexing is used to separate the reader-to-tag communications from the tag-to-interrogator communications. Often, several or many interrogators must operate simultaneously in close proximity with one another. An example of such an installation is at a toll plaza on a toll road, tunnel, or bridge, where every lane may have an interrogator. In such installations, interrogators are synchronized so that the modulated signals produced by interrogators do not interfere with other interrogators reading data from other tags. Interference between interrogators while",
+    "textAfterTable": "US5469978 * Jul 12, 1994 Nov 28, 1995 Keystone Railway Equipment Company, Inc. Condition indicating system for railway car cushioning unit US5478991 * Feb 8, 1994 Dec 26, 1995 Nippondenso Co., Ltd. Aircraft baggage managing system utilizing a response circuit provided on a baggage tag US5485520 * Oct 7, 1993 Jan 16, 1996 Amtech Corporation Automatic real-time highway toll collection from moving vehicles US5491482 * Dec 29, 1992 Feb 13, 1996 David Sarnoff Research Center, Inc. Electronic system and method for remote identification of coded articles and the like US5502445 * May 22, 1995 Mar 26, 1996 David Sarnoff Research Center, Inc. System and method for remote identification of coded articles and the like US5543798 * May 12, 1994 Aug 6, 1996 Texas Instruments Deutschland Gmbh Method of providing a synchronized data stream suitable for use in a combined FDX and HDX RF-ID system US5557096",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

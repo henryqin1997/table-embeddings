@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Date",
+            "2 Mar 1998",
+            "14 Mar 2000",
+            "13 Jun 2000",
+            "22 Jun 2001",
+            "11 Jun 2003",
+            "24 Nov 2003",
+            "20 Jan 2004"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: LASER POWER CORPORATION, CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:HARGIS, DAVID E.;FLINT, GRAHAM;ASSA, SHLOMO;REEL/FRAME:009023/0944;SIGNING DATES FROM 19980113 TO 19980224",
+            "Owner name: PHOTOTERA TECHNOLOGIES, INC., A SUBSIDIARY OF SCHW Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:LASER POWER CORPORATION;REEL/FRAME:010703/0437 Effective date: 20000211",
+            "",
+            "",
+            "",
+            "",
+            "Effective date: 20031123"
+        ]
+    ],
+    "pageTitle": "Patent US5990983 - High resolution image projection system and method employing lasers - Google Patents",
+    "title": "",
+    "url": "http://www.google.com.au/patents/US5990983",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981921.1/warc/CC-MAIN-20150728002301-00209-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 478738123,
+    "recordOffset": 478701748,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{48349=These parameters will be used in the following description of the invention, with the understanding that they are examples only. The image may consist of more or less than 1200 lines and each laser array may have other than 120 elements., 43170=The use of lasers in the production of images, and in particular, the production of a sequential set of electrical signals which represents an original picture for direct display through the use of lasers (\"video imaging\") is known in the art. See for example, U.S. Pat. Nos. 3,549,800 and 3,721,756 (Baker); 3,571,493 and 3,621,133 (Baker et al.); 3,737,573 (Kessler); 3,818,129 (Yamamoto); 3,958,863, 3,977,770, and 3,994,569 (Isaacs et al.); 3,636,251 (Daly et al.); and 4,720,747 and 4,851,918 (Crowley). See also, Taneda et al., \"High-Quality Laser Color Television Display,\" Journal of the Society of Motion Pictures and Television Engineers, Volume 82, No. 6 (1973); Taneda et al., \"A 1125 Scanning-Line Laser Color TV Display,\" SID International Symposium and Expedition (1973); and Yamamoto, \"Laser Displays,\" Advances and Image Pick-up and Display, Academic Press, Inc., Vol. 2 (1975); and Glenn, \"Displays, High Definition Television and Lasers,\" SID International Symposium and Expedition (1993). For general references to video imaging, see U.S. Pat. Nos. 3,507,984, (Stavis); and 3,727,001 (Gottlieb)., 76714=With the proper composition, PLZT exhibits a large, fast electro-optic effect in the absence of a piezo-electric effect. The existence of a piezo-electric effect precludes the use of more conventional electro-optic crystals, such as LiNbO3, due to acoustic ringing which gives rise to significant cross-talk between elements within a linear modulator array. One composition for a spatial light modulator which satisfies the requirements set out above is a 9/65/35 PLZT which exhibits a cubic symmetry, a quadratic electro-optic effect, and a zero piezo-electric effect. Further, this material displays high transmission per unit length (\u02dc95%/mm) in the spectral region extending from \u02dc450 nm to \u02dc670 nm, the region of interest here. This composition has 9% lanthanum and the remainder is a 65:35 ratio mixture of lead zirconate and lead titanate, respectively. This is a non-ferroelectric state of PLZT, having a piezo-electric coefficient of zero. There are some PLZT compositions which exhibit a piezo-electric-effect and they would not be suitable for this application., 46642=A representative display system utilizes three linear arrays of 120 laser elements each--one red, one green, and one blue array. A particular configuration of such an array is disclosed herein. The arrays of light sources are scanned in two dimensions. During each horizontal scan 120 video lines are written, requiring 10 scans to complete a 1200 line image. While being scanned, the intensities of the lasers are modulated directed via the near-IR diode laser pumping energies, the currents to which diodes are so modulated. Alternatively, the microlasers can be run in a continuous wave mode and a linear array of external intensity modulators can be utilized., 55230=To satisfy typical HDTV requirements, an array of 1,200 lasers can be scanned horizontally in approximately 14.3 ms to attain a resolution of 1200 lines by 1400 pixels. Alternatively, arrays containing fewer individual microlasers can be used in a variety of multi-scan geometries. For example, in the multi-scan approach disclosed herein, three linear arrays of 120 microlaser elements each are employed--one red, one green, and one blue array. The arrays of light sources are scanned in two dimensions. With each horizontal scan 120 video lines are written, requiring 10 scans to complete the 1200 line image. While the lasers are scanned they are intensity modulated directly by means of the electrical current applied to the individual diode laser pumping sources., 56898=Many high resolution formats can be achieved with the array approach and with the apparatus shown in FIGS. 1 and 2, or a modification thereof. For example, to satisfy the HDTV requirements of 120 lines by 1400 pixels with a frame refresh rate of 70 Hz non-interlaced, the individual microlasers within a 120 element array can be intensity modulated at a rate of 490 KHz. Meanwhile, the effective gray level and color of each pixel is determined by the amplitude of the diode current and the relative powers in the RGB beams., 45632=Broadly speaking, the invention comprises a video display system which uses diode-pumped microlaser and/or diode laser array sources to produce images. The practical purpose of the invention is to achieve a high brightness (>1000 lumens) projection display on a screen of approximately 7.5 feet diagonal which combines HDTV resolution with 24-bit color., 52051=To compare microlaser projection technology with conventional technologies, it is instructive to examine two fundamental parameters which relate to their ultimate practicality. The first parameter can be defined as optical efficiency--in this case, the lumens of output per watt of input to the light source. The second is cost compatibility, that is, the extent to which the technology in question yields a cost effective solution to the requirements of a specific application. As an abstract from a paper by William Glen at the OSA Conference on Compact Blue-Green Lasers (February 1993), the parameters for the technologies which might possibly compete for the medium-screen and large-screen display market are listed in Table 1.}",
+    "textBeforeTable": "Patent Citations Upon review of the above detailed description it is likely that modifications and improvements will occur to those skilled in the art which are within the scope of the accompanying claims. The specifically described speckle eliminator is not the only one that can be used in the system. There may be applications of the system where no speckle eliminator is necessary. Further, while a glass/wax laminate plate is described, other substances which accomplish the function of an optical path randomizing media can be used. The particular microlaser array configuration of FIG. 10 is not absolutely required for proper operation of the system of the invention, although it offers some definite advantages over the known prior art. There are very significant advantages to this invention. Because of the parallel nature of the scanning configuration (multiple beams in a \"paintbrush\" arrangement), both amplitude modulation bandwidth and the power required for each microlaser emitted is reduced by a factor of 100 in relation to a single beam approach. A 100-element microlaser array-based projector requires a modulation bandwidth of \u02dc1 MHz for each microlaser beamlet. Of course, whether 100, 120, or some other number of microlaser elements is used only modifies the numbers without changing the invention. The combining element is shown as dichroic prism 31, but other structures could be devised to accomplish the same result. Unitary microlaser block 11 shown in FIG. 1 is actually contemplated to be",
+    "textAfterTable": "18 Jun 1974 Hitachi Ltd Laser imaging device US3958863 * 10 Jan 1975 25 May 1976 Westinghouse Electric Corporation Tl3 TaS4 and Tl3 TaSe4 crystals and acousto-optical devices US3977770 * 22 Sep 1975 31 Aug 1976 Westinghouse Electric Corporation Tl3 VS4 Tl3 NbS4 crystals and acousto-optical devices US3994569 * 17 Sep 1975 30 Nov 1976 Westinghouse Electric Corporation Tl3 PSe4 compound, single crystals, and acousto-optical devices US4035068 * 25 Jun 1975 12 Jul 1977 Xerox Corporation Speckle minimization in projection displays by reducing spatial coherence of the image light US4110014 * 22 Oct 1976 29 Aug 1978 Izon Corporation Parallel and series electro-optic viewing and recording apparatus US4155630 * 17 Nov 1977 22 May 1979 University Of Delaware Speckle elimination by random spatial phase modulation US4380023 * 29 Jan 1981",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

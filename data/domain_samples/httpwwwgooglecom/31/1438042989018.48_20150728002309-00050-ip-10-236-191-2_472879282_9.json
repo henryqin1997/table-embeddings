@@ -1,0 +1,69 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Aug 8, 1996",
+            "Oct 19, 2000",
+            "Apr 6, 2004",
+            "May 23, 2006",
+            "May 21, 2008",
+            "Nov 10, 2010",
+            "Nov 30, 2010",
+            "May 21, 2012",
+            "Nov 1, 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: CABLETRON SYSTEMS, INC., NEW HAMPSHIRE Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:BELSER, DAVID;BUSSIER, RICHARD;CIOLI, JEFF;AND OTHERS;REEL/FRAME:008096/0626 Effective date: 19960730",
+            "",
+            "Year of fee payment: 4",
+            "Owner name: WELLS FARGO FOOTHILL, INC., CALIFORNIA Free format text: SECURITY AGREEMENT;ASSIGNOR:ENTERASYS NETWORKS, INC.;REEL/FRAME:017656/0552 Effective date: 20060516 Owner name: OBSIDIAN, LLC, CALIFORNIA Free format text: SECURITY AGREEMENT;ASSIGNOR:ENTERASYS NETWORKS, INC.;REEL/FRAME:017656/0552 Effective date: 20060516",
+            "Year of fee payment: 8",
+            "Owner name: WELLS FARGO TRUST CORPORATION LIMITED, AS SECURITY Free format text: GRANT OF SECURITY INTEREST IN U.S. PATENTS;ASSIGNOR:ENTERASYS NETWORKS INC.;REEL/FRAME:025339/0875 Effective date: 20101109",
+            "Owner name: ENTERASYS NETWORKS, INC., MASSACHUSETTS Free format text: RELEASE AND REASSIGNMENT OF PATENTS AND PATENT APPLICATIONS AT REEL/FRAME NO. 17656/0552;ASSIGNORS:WELLS FARGO CAPITAL FINANCE, INC. (FORMERLY KNOWN AS WELLS FARGO FOOTHILL, INC.);ENTERPRISE COMMUNICATIONS FUNDING GMBH, AS SUCCESSOR IN INTEREST TO OBSIDIAN, LLC;REEL/FRAME:025406/0769 Effective date: 20101110",
+            "Year of fee payment: 12",
+            "Owner name: ENTERASYS NETWORKS INC., MASSACHUSETTS Free format text: TERMINATION AND RELEASE OF SECURITY INTEREST IN PATENTS AT REEL/FRAME NO. 25339/0875;ASSIGNOR:WELLSFARGO TRUST CORPORATION LIMITED;REEL/FRAME:031558/0677 Effective date: 20131031"
+        ]
+    ],
+    "pageTitle": "Patent US6151324 - Aggregation of mac data flows through pre-established path between ingress ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6151324?dq=6,243,373",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989018.48/warc/CC-MAIN-20150728002309-00050-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 472918135,
+    "recordOffset": 472879282,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{64815=FIG. 10 is a schematic illustration of an FPS switch 170 having a plurality of ports 171. A host port 172 connects the switch to its host CPU 173, which may be an 1960 microprocessor sold by Intel Corporation. The host CPU is connected to a system management bus (SMB) 174 for receipt and transmission of discovery and other control messages., 45894=There will next be described a specific embodiment for implementing the present invention. Various aspects of this embodiment may be more particularly described in copending and commonly owned U.S. Ser. No. 08/626,596 entitled \"Distributed Connection-Oriented Services For Switched Communications Networks,\" filed Apr. 2, 1996 by K. Dobbins et al., and hereby incorporated by reference in its entirety.}",
+    "textBeforeTable": "Patent Citations Having thus described several particular embodiments of the invention, various modifications and improvements will readily occur to those skilled in the art. Accordingly, the foregoing description is by way of example only, and not intended to be limiting. Because the virtual path 31 is a DA-SA pair, it is possible to operate this invention with legacy devices serving as trunk switches. If a legacy device is an ingress or egress switch, then: (1) aggregation cannot be used for traffic terminating with that device; or (2) the packet must be demultiplexed by the last non-legacy switch in the cloud before the legacy switch. To enable multicasting, special multicast aggregated connections could be programmed through the switch cloud. These connections could be established per VLAN, allowing multiple multicast destinations to be served by a single set of connections. In another alternative embodiment, layer 3 (i.e., network layer) switching could be used instead of layer 2 switching in the ingress switch as previously described to accomplish aggregation. In this approach, the layer 3 connection would point to the appropriate virtual path/virtual circuit. The egress switch would still be multiplexed on the level 2 address. Providing layer 3 aggregation allows different quality of service parameters to be used for different MAC addresses and in essence, provides a higher level of fidelity than layer 2. In an alternative embodiment, the \"Ether type\" field 33 could be used instead of the \"VLAN-ID\"",
+    "textAfterTable": "C.D. Comer, \"Internetworking with TCP/IP, vol. 1, Principals, Protocols and Architecture,\" Prentice Hall, Englewood Cliffs, New Jersey, 2nd Ed., Chap. 16, pp. 265-280. 3 * C.D. Comer, Internetworking with TCP/IP, vol. 1, Principals, Protocols and Architecture, Prentice Hall, Englewood Cliffs, New Jersey, 2nd Ed., Chap. 16, pp. 265 280. 4 Cheriton et al., \"Host Groups: A Multicast Extension For Datagram Internetworks,\" Data Communications Symposium, Sep. 1985, pp. 172-179 (USA). 5 * Cheriton et al., Host Groups: A Multicast Extension For Datagram Internetworks, Data Communications Symposium, Sep. 1985, pp. 172 179 (USA). 6 Gerla, M., et al.: \"Internetting LAN's and MAN's to B-ISDN's for Connectionless Traffic Support,\" IEEE Journal on Selected Areas in Communications, vol. 11, No. 8, pp. 1145-1159, XP000491811. 7 * Gerla, M., et al.: Internetting LAN s and MAN s to B ISDN s for Connectionless Traffic Support, IEEE Journal on Selected Areas in Communications, vol. 11, No. 8, pp. 1145 1159, XP000491811. 8 Hong Linh Truong: \"LAN Emulation on an ATM Network,\" IEEE Communications Magazine, vol. 33, No. 5, pp. 70-85, XP000518773 May 1995.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

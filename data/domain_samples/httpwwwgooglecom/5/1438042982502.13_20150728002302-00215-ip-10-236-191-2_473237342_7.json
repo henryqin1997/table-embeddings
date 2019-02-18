@@ -1,0 +1,66 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US4716580 *",
+            "US4833636 *",
+            "US6972707",
+            "US7015854",
+            "US7199409",
+            "US7750962"
+        ],
+        [
+            "Filing date",
+            "Jun 18, 1985",
+            "Jun 17, 1988",
+            "Jul 12, 2004",
+            "Jul 12, 2004",
+            "Aug 26, 2004",
+            "Feb 20, 2007"
+        ],
+        [
+            "Publication date",
+            "Dec 29, 1987",
+            "May 23, 1989",
+            "Dec 6, 2005",
+            "Mar 21, 2006",
+            "Apr 3, 2007",
+            "Jul 6, 2010"
+        ],
+        [
+            "Applicant",
+            "Thomson-Csf",
+            "Fuji Photo Film Co., Ltd.",
+            "Massachusetts Institute Of Technology",
+            "Massachusetts Institute Of Technology",
+            "Massachusetts Institute Of Technology",
+            "Massachusetts Institute Of Technology"
+        ],
+        [
+            "Title",
+            "Charge transfer analog comparator and devices using such a comparator",
+            "Analog, two signal correlator",
+            "Sub-ranging pipelined charge-domain analog-to-digital converter with improved resolution and reduced power consumption",
+            "Charge-domain A/D converter employing multiple pipelines for improved precision",
+            "Device for subtracting or adding charge in a charge-coupled device",
+            "Device for subtracting or adding charge in a charge-coupled device"
+        ]
+    ],
+    "pageTitle": "Patent US4639678 - Absolute charge difference detection method and structure for a charge ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4639678?dq=inventor:%22Arthur+R.+Hair%22",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00215-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 473253736,
+    "recordOffset": 473237342,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{15839=The invention is particularly useful in some image processing systems, for instance such as the systems described in a U.S. patent application Ser. No. 509,831 filed by S. G. Chamberlain, et al, on June 29, 1983 for an \"On-Chip CCD Realization of the Laplacian Operator for Image Signal Processing\", and assigned to the same assignee as the present application., 16624=Various approaches have been adopted for measuring the size of individual charge packets. One such approach is shown, for instance, in U.S. Pat. No. 4,306,300 issued Dec. 15, 1981 to Louis M. Terman and Yen S. Yee for a MULTI-LEVEL CHARGE-COUPLED DEVICE MEMORY SYSTEM INCLUDING ANALOG-TO-DIGITAL AND TRIGGER COMPARATOR CIRCUITS and assigned to the same assignee as the present application. In that patent there is disclosed a system in which the depth of a potential well containing an unknown charge packet in a charge coupled device is reduced in a stepwise manner until spillover occurs, at which time the detection of the spillover indicates the original size of the charge packet based on a determination of the step at which spillover occurred., 16230=The invention is also useful in analog to digital converters of the type described for instance by R. A. Blauschild in an article entitled \"An 8 b 50 ns Monolithic A/D Converter with Internal S/H\" which appears at pages 178-179 of the Digest of Technical Papers for the 1983 International Solid State Circuits Conference held on Feb. 23-25, 1983, at New York, N.Y., 17394=U.S. Pat. No. 4,300,210 issued Nov. 10, 1981 to Chakravarti et al for a CALIBRATED SENSING SYSTEM, and also assigned to the same assignee as the present application, is also of interest. In that patent, the summation of the signals generated in the electrode above an intermediate potential well by transferring an unknown charge packet into and out of that well, and then transferring a standard known charge packet into that well, provides an indication as to whether the unknown charge exceeded or was less than the standard charge packet. This provides a measure of the size of the charge packet.}",
+    "textBeforeTable": "Patent Citations While this invention has been shown and described in connection with a particular preferred embodiment, various alterations and modifications will occur to those skilled in the art. Accordingly, the following claims are intended to define the valid scope of this invention over the prior art, and to cover all changes and modifications falling within the true spirit and valid scope of this invention. The change in the charge on capacitor 38 in the final step may be characterized as an integration. It will be apparent that no matter which one of the charge packets is greater, the circuit will accurately measure the difference between the two charge packets. Thus, in the final measuring step, if the initial charge packet in well 26 had been greater than that in well 24, transistor 28 would have been conductive in the final step to change the charge on capacitor 38, rather than transistor 30. The charge packets Q1 and Q2 (as now equalized) can now be removed, so a new pair of signal charge packets can be introduced and measured. Removal is accomplished by any known charge coupled device technique, such as by a drop-clock method, into deeper adjacent potential wells (not shown). Another method is by the known push-clock technique which uses two additional field effect transistors and an additional clock pulse to lower the potential of electrodes 12 and 14. As a result, a positive transient is",
+    "textAfterTable": "* Cited by examiner Non-Patent Citations Reference 1 Baertsch et al., \"A New Surface Charge Analog Store\", IEEE Int. Electron Devices Meeting (12/73), Tech. Dig., pp. 134-137. 2 * Baertsch et al., A New Surface Charge Analog Store , IEEE Int. Electron Devices Meeting (12/73), Tech. Dig., pp. 134 137. * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US4716580 * Jun 18, 1985 Dec 29, 1987 Thomson-Csf Charge transfer analog comparator and devices using such a comparator US4833636 * Jun 17, 1988 May 23, 1989 Fuji Photo Film Co., Ltd. Analog, two signal correlator US6972707 Jul 12, 2004 Dec 6, 2005 Massachusetts Institute Of Technology Sub-ranging pipelined charge-domain analog-to-digital converter with improved resolution and reduced power consumption",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

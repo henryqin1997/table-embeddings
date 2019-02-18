@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Oct 23, 2000",
+            "Jan 15, 2008",
+            "May 9, 2008",
+            "Jun 25, 2012",
+            "Nov 9, 2012",
+            "Jan 1, 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "CC",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Certificate of correction",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "",
+            "",
+            "Year of fee payment: 4",
+            "",
+            "",
+            "Effective date: 20121109"
+        ]
+    ],
+    "pageTitle": "Patent US6816750 - System-on-a-chip - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6816750?dq=6,826,762",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 15,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00284-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 486421671,
+    "recordOffset": 486361637,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{60738=FIG. 11A depicts a preferred dual codec serial interface;, 211733=In accordance with the AC97 specification, interface 120 includes a port for receiving the AC97 bit clock (ABITLCK) and serial data (ASD1, ASD12) from one or two external AC97 codecs, as well as port for transmitting a sync signal (ASYNC), serial data (ASDO) and a reset signal (ARSTn). Generally, the external codec generates the bit clock ABITCLK which is then divided down by interface 120 to generate the sync signal ASYNC. ASYNC signals the start of each audio frame, with data transmitted onto the AC97 link on the rising edges of the bit clock and sampled on the receiving end on the falling edges of the bit clock., 51927=Ser. No. 09/590,596, entitled \u201cCLOCK GENERATOR\u201d, filed Jun. 9, 2000, currently pending; and, 212403=In the preferred embodiment, interface 120 supports a dual codec architecture in accordance with the AC97 specification, Revision 2.1. A preferred dual codec serial interface is shown in FIG. 11A. Serial data is input from the corresponding pair of codecs through input pins ASD1 and ASDI2 and a corresponding set of shift/data formatters 1101 and 1102. (If only one codec is being used, the second pin may be used for extended GPIO functionality.) The two external codecs receive data through a single data output Port ASDO supported by shift/data formatter 1103., 208250=EEPROM/I2C 119 interface is shown in FIG. 10A. According to one embodiment of system 100, interface 119 supports a connection to an external EEPROM 1001 for inputting configuration information on system power-up. (An external serial EEPROM is not required for operation of system 100, although it may be required to meet specific operating system compatibility requirements)., 52038=Ser. No. 09/591,124, entitled \u201cLEVEL SHIFTER\u201d, filed Jun. 9, 2000, currently pending., 213361=Interface 120 employs a double buffer mechanism for transferring data between AC97 link and system memory. This arrangement includes four 32-bit wide receive buffers 1105 and four 32-bit wide transmit buffers 1106, with the transmit buffers providing paths from system memory to the AC-link and the receive buffers providing paths from the AC-link to system memory. Each transmit and receive buffer is associated with a slot map register for controlling the exchange of data through the specified AC-link slots, as well as for defining the data format conversion to be used with the corresponding payload data. These exchanges are controlled either by host polling or through the DMA controller. In the case of polling, the host polls associated buffer status registers to determine whether the given buffers need to be filled or to be emptied through writes and reads. In the case of DMA operations, buffer status bits in register file 1104 are routed to DMA controller 105, which then handles any AC-link data requests, following initialization by system 100., 214484=Shift/data formatters 1101-1103, under the control of port timing and control logic 1107 and registers 1104 allow interface 120 to support multiple data formats. For example, monaural data can be handled as either 16-bit or 20-bit samples, which are right justified in memory. For 16-bit samples, a four bit left shift is performed while routing to the AC-link slot, and for 20-bit samples, the 20 LSBs of each 32-bit word are passed to the AC-link slot. (In the preferred embodiment, data are stored in system memory as 32-bit words.) For stereo data, 16-bit left and right samples can be packed into a 32-bit word and processed as a single unit. These left and right samples are unpacked and then left-shifted to fill 20-bit AC-link slot data fields. Since 20-bit data can not be packed into 32-bit words, stereo 20-bit data is essentially processed as two separate data streams., 51819=Ser. No. 09/591,659, entitled \u201cMATH COPROCESSOR\u201d, filed Jun. 9, 2000, currently pending;, 211432=An AC97/Inter\u2014IC Sound (I2S) interface 120 is provided on peripheral bus 102 in the preferred embodiment of system 100. A on-chip multiplexer allows the user to select between a connection to an external AC97 codec or an external I2S bus., 223489=Testing of the watchdog timer 129 is coordinated via the Test Interface Controller (TIC) harness 1201 shown in FIG. 12. Registers 1201 in the APB register interface communicate with the TIC via peripheral bus 103. Specifically, the watchdog control register is used to control the input multiplexer, reset status, and clock mode and the watchdog test clock enable register is used for generating clock enables in the register clocked test mode. Side band input signal values are controlled by the watchdog test input stimulus register 1203. The Watchdog Reset output signal and the watchdog counter value can be observed at the watchdog test output capture register 1204., 216331=Multiplexers 1108-1110 support and enhance the loop back modes available on AC97 compliant codecs. Bus-centric loop backs are illustrated in FIG. 11B where the loop back begins at the transmit buffers 1106 and ends at the received buffers 1105. Exemplary analog-centric loop backs are shown in FIG. 11C where the loop back starts and ends in the analog domain. Consequently, these loop backs generally require external analog test equipment such as an Audio Precision System 2., 213036=The serial interface is controlled by a set of registers in register files 1104. Register file 1104 includes a set of common registers for generally setting up the AC-link as well as AC-link registers for setting up the configuration of each specific link to each of the two external codecs., 123017=JTAG/TIC interface 110 supports testing in compliance with IEEE Std. 1149.1-1990, Standard Test Port and Boundary Scan Architecture. The Test Interface Controller supports on-chip testing of the various blocks on high speed bus 102. In the preferred embodiment, testing through interface 110 is in accordance with the specification of ARM920T processor 101. In particular, the JTAG part of the interface takes advantage of the ARM Multi_ICE in-circuit emulator while the TIC portion of the interface utilizes an ARM Test Interface Controller, which is a bus master on AMBA bus 102 and allows an off-chip testing device access to the AMBA peripherals.}",
+    "textBeforeTable": "Patent Citations It is therefore, contemplated that the claims will cover any such modifications or embodiments that fall within the true scope of the invention. Although the invention has been described with reference to a specific embodiments, these descriptions are not meant to be construed in a limiting sense. Various modifications of the disclosed embodiments, as well as alternative embodiments of the invention will become apparent to persons skilled in the art upon reference to the description of the invention. It should be appreciated by those skilled in the art that the conception and the specific embodiment disclosed may be readily utilized as a basis for modifying or designing other structures for carrying out the same purposes of the present invention. It should also be realized by those skilled in the art that such equivalent constructions do not depart from the spirit and scope of the invention as set forth in the appended claims. In the preferred embodiment, all blocks or subsystems 101-132 of system 100 are fabricated on a single integrated circuit chip. This can be accomplished for example using a 0.25 \u03bcm, four layer metal process, although other processes known in the art can also be used. In the illustrated embodiment, processor core 101 operates from a 2.5V nominal supply, although this may be reduced in alternate embodiments. The peripherals in the illustrated embodiment operate from a 3.3V supply. In this embodiment, the nominal clock speed",
+    "textAfterTable": "Mar 22, 2001 May 6, 2003 Seiko Epson Corporation Computer system with video display controller having power saving modes * Cited by examiner Non-Patent Citations Reference 1 * Adams, Lyle\"Overview of the CoreFrame Architecture\", Jan. 2002, Palmchip tech brief, pp. 1-7.* 2 Aldworth, P.J.; \"System-on-a-chip bus architecture for embedded applications\" Computer Design, 1999 (ICCD '99). Internat'l Conf. on Austin, TX, USA Oct. 10-13, 1999, Los Alamitos, CA, USA, IEEE Comput. Soc. US Oct. 10, 1999_pge 297-289 ISBN 0-7695-0406-X- The whole document. 3 Cordan, B.; \"Effective Memory Interfacing for System-On-AChip Designs\" Designcon. Proceedings of Designcon, vol. 5, Feb. 1, 1999 pp. 121-135 p. 130, right hand col.-p. 131, left hand col. 4 Cordan, B; \"An Efficient Bus Architecture for System-On-A-Chip Design\" Custom Integrated Circuits, 1999. Proceedings of the IEEE 1999 San Diego, CA USA May 16-19, 1999, Piscataway , NJ USA IEEE US May 16, 1999 pp. 623-626 ISBN 0-7803-5443-5 the whole document. 5 * Cordan, Bill, \"A Bus",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

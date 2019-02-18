@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Aug 28, 1997",
+            "Jan 22, 1998",
+            "Nov 30, 1999",
+            "Oct 25, 2002",
+            "Oct 27, 2006",
+            "Oct 20, 2010"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "CC",
+            "FPAY",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Certificate of correction",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: EPSON RESEARCH AND DEVELOPMENT, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:KAMEN, YAKOV;SHIRMAN, LEON;REEL/FRAME:008674/0542;SIGNING DATES FROM 19970815 TO 19970819",
+            "Owner name: SEIKO EPSON CORPORATION, JAPAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:EPSON RESEARCH AND DEVELOPMENT, INC.;REEL/FRAME:008925/0302 Effective date: 19980116",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US5905500 - Method and apparatus for adaptive nonlinear projective rendering - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5905500?dq=artistshare",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00272-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 477548663,
+    "recordOffset": 477514847,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{60824=This application claims priority to the provisional U.S. patent application entitled \"NONLINEAR RENDERING USING ADAPTIVE SUBDIVISION\", filed Feb. 19, 1997 in the name of Yakov Kamen and Leon Shirman, and identified by Ser. No. 60/038,111.}",
+    "textBeforeTable": "Patent Citations While the invention has been shown and described with regard to a preferred embodiment thereof, those skilled in the art will recognize that various changes in form and detail may be made herein without departing from the spirit and scope of the invention as defined by the appended claims. As mentioned above, the techniques described herein with regard to texture mapping coordinate u may also be used to assign values of texture mapping coordinate v, and are equally applicable to other types of nonlinear mappings, such as Gouraud shading and Phong shading. For Gouraud shading, the color values red (r), green (g) and blue (b) can be approximated in a perspectively correct manner through simple substitution of these values in place of the u and v values used in the texture mapping embodiments described above. Likewise, normal values N can be substituted for the u and v values in order to obtain appropriate perspectively correct approximation when Phong shading surface detailing is employed. The non-recursive methods of FIGS. 7-8B do not require the repetition of the recursive methods of FIGS. 3-6. However, some basic principles exist in both methods. All the methods rely on the fact that the maximum error which would result from an interpolation to determine u (rather than a straight mathematical calculation) will always reside on one of the sides of the triangle. This allows the implementation of the above methods, which use",
+    "textAfterTable": "Perspective correction of texture in graphics by adaptive approximation CA2164681A1 * Dec 7, 1995 Jun 20, 1996 Walter E. Donovan Perspective correction of texture in graphics by adaptive approximation EP0680020A2 * Apr 26, 1995 Nov 2, 1995 Sun Microsystems, Inc. Apparatus and method for direct calculation of clip region outcodes EP0718797A2 * Dec 19, 1995 Jun 26, 1996 Sun Microsystems, Inc. Perspective correction of texture in graphics by adaptive approximation * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US6009188 * Mar 20, 1996 Dec 28, 1999 Microsoft Corporation Method and system for digital plenoptic imaging US6023277 * Jul 1, 1997 Feb 8, 2000 Canon Kabushiki Kaisha Display control apparatus and method US6222937 Jun 30, 1997 Apr 24, 2001",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

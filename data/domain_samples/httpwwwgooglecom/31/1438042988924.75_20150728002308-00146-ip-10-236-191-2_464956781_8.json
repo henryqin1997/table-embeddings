@@ -1,0 +1,73 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Apr 26, 1990",
+            "Nov 12, 1992",
+            "Apr 4, 1995",
+            "May 12, 1995",
+            "Aug 29, 1995",
+            "Dec 11, 1995",
+            "Dec 11, 1995",
+            "Aug 17, 1999",
+            "Jan 23, 2000",
+            "Apr 4, 2000"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "REMI",
+            "FPAY",
+            "SULP",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Fee payment",
+            "Surcharge for late payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: SIGMEDICS, INC., ILLINOIS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:GRAUPE, DANIEL;ARBER, AMIHADAR;ROMEO, SILVANO A.;REEL/FRAME:005295/0222 Effective date: 19900423",
+            "Owner name: SANDERLING VENTURES, CALIFORNIA Free format text: SECURITY INTEREST;ASSIGNOR:SIGMEDICS, INC.;REEL/FRAME:006296/0592 Effective date: 19921109",
+            "Owner name: SANDERLING VENTURE PARTNERS, CALIFORNIA Free format text: RERECORD TO CORRECT ERROR IN RECORDATION DATE ON REEL 7482, FRAME 0841.;ASSIGNOR:SIGMEDICS, INC.;REEL/FRAME:007690/0562 Effective date: 19950313",
+            "Owner name: SANDERLING VENTURE PARTNERS, CALIFORNIA Free format text: SECURITY INTEREST;ASSIGNOR:SIGMEDICS, INC.;REEL/FRAME:007482/0841 Effective date: 19950313",
+            "",
+            "Year of fee payment: 4",
+            "",
+            "",
+            "",
+            "Effective date: 20000121"
+        ]
+    ],
+    "pageTitle": "Patent US5081989 - Microprocessor-controlled enhanced multiplexed functional electrical ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5081989?ie=ISO-8859-1&dq=7,603,356",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988924.75/warc/CC-MAIN-20150728002308-00146-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 464984231,
+    "recordOffset": 464956781,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{46048=This invention relates to functional electrical stimulation (FES) of paraplegics and more particularly to an improved microcomputer controlled apparatus and methodology. Work on functional electrical stimulation of paraplegics is based on the discovery of the Italain physiologist Luigi Galvani in the late 18th century that a muscle will contract when in contact with an electrical charge. This has been first applied systematically to paralyzed patients by W. Liberson in 1960 (in W. Liberson et al., Arch. Phys. Med. Rehab., Vol. 42, p. 101, 1961). Since then considerable work has been devoted to that topic, as reviewed by Graupe et al. (J. Biomed Eng. Vol. 5, pp. 220-226, July 1983), by Graupe et al. (Critical Reviews in Biomedical Engineering, CRC Press, Vol. 15, pp 187-210, 1988) and in a recent text by A. Kralj and T. Bajd (\"Functional Electrical Stimulation: Standing and Walking after Spinal Cord Injury\", CRC Press, Boca Raton, Fla., 1989)., 47034=It was thus shown that the application of trains of pulses of adequate amplitude, pulse-width and pulse-repetition-frequency at appropriate locations above the region of certain key muscle, enables paraplegic patients with complete or near-complete upper-motor-neuron lesions to stand up and to take steps with the support of parallel bars or a walker. The merits of such standing and of the primitive walking accomplished by these steps is both psychological and physiological in the exercise provided to the patient which enhances circulation, cardiac output and movement of joints to prevent or slow down ossification and contractures (Kralj and Bajd, \"Functional Electrical Stimulation: Standing and Walking after Spinal Cord Injury,\" CRC Press, Boca Raton, FLa., 1989, pp. 33, 68, 130-131). Furthermore, there are indications (not yet fully proven due to the limited application of FES which is presently available only in research labs and research clinics), that FES is beneficial in prevention or reduction of incidence of pressure sores and of osteoporosis (Krajl and Bajd, same as above, pp. 8, 33, 49, 69, 131 & 135) and in the reduction of severity of spasticity (Krajl and Bajd, same as above, pp. 3, 8, 37-47). FES is limited to upper-motor-neuron lesions since in that case the peripheral nerves (at the lower extremities, in our case) are intact though they cannot communicate with the central nervous system due to the spinal-cord lesion. However, since the peripheral nerves are healthy and intact, they respond to FES even after many years of paralysis without stimulation. In two patients, after 35 years of paralysis and with no stimulation over that whole time, the peripheral nerves responded to FES fully satisfactorily., 45831=This application is a continuation-in-part of co-pending application Ser. No. 07/335,197 filed 4-7-89 now U.S. Pat. No. 5,014,705., 58167=FIG. 2D shows a perspective view of the walker of FIGS. 2A-C;, 75849=Referring to FIGS. 8A-D, FIGS. 8A and 8B illustrate stimulus level versus time waveforms for the right quadriceps (FIG. 8A) and left quadriceps (FIG. 8B). FIGS. 8C and 8D illustrate step occurrence versus time waveforms for step right (FIG. 8C) and step left (FIG. 8D). Each of FIGS. 8A-8D is plotted against the same time axis in the horizontal direction. As illustrated in FIGS. 8A-C, when step right occurs as indicated by the positive pulse on FIG. 8C, the stimulus level to the right quadriceps (FIG. 8A) is turned off during leg movement to produce the step, while at that same time, the stimulus level to the left quadriceps is incremented as illustrated on FIG. 8B, approximately 15% over the steady state level. (An increase within the range of approximately 10 to 20% is acceptable). Thus, the stimulus level to the left quadriceps is increased temporarily during the step occurrence of the right step, corresponding to the turning off of the stimulus to the right quadriceps. Similarly, referring to FIGS. 8A, 8B and 8D, at the step occurrence of step left, the positive pulse in FIG. 8D, the stimulus to the left quadriceps, FIG. 8B, is turned off, while the stimulus level to the right quadriceps, FIG. 8A, is increased by the predefined value to increase the level of stimulus to the standing leg, the right leg, during the left step. To provide extra smooth landing of a given leg after a step has been taken with that leg, it may be advisable not to stimulate the quadriceps of that leg with a sharp instantaneous voltage rise, but to provide a voltage ramp rise-time of the stimuli to these quadriceps after each step}",
+    "textBeforeTable": "Patent Citations While there have been described herein various illustrated embodiments, it will be understood by those skilled in the art that various other embodiments emanate from those disclosed. This description is illustrative and not limiting, and the true scope of this invention is as set forth in the appended claims FIG. 6 illustrates a specific embodiment of the stimulator box 100 of FIG. 1, for a wired link 121, with corresponding numerals indicating like elements. Specific electronic device designations are illustrated in FIG. 6, such as the Hitachi HD63701 processor, 104. A battery supply 111, as illustrated, consists of 8 AAA 1.5 VDC batteries, which supplies power to all the circuits of the stimulator box 100 via 130. The battery supply is also coupled to activate a low-battery voltage warning via circuit 109 to provide the audible warning 108 and also a visual flashing warning light 110. The \"low-battery\" warning sound is programmed by the processor 104 to differ from the sound of the stimulus-level-saturation alarm discussed above. To avoid excessively high voltages at the output of the pulse-amplifier circuit 103, that output may also be connected, in parallel, to a ZNR type voltage sensitive load. This load presents to that output a load of no more than a few thousand ohms, if the voltage at that output reaches a certain predetermined value of between 50 and 130V, and which otherwise presents an additional open circuit. Referring",
+    "textAfterTable": "Jun 10, 2008 Levi Dempsey Bio-feedback walker device US7386348 Sep 24, 2003 Jun 10, 2008 Medtronic, Inc. Patient interactive neurostimulation system and method US7519431 Apr 10, 2006 Apr 14, 2009 Medtronic, Inc. Shifting between electrode combinations in electrical stimulation device US7593775 Feb 27, 2004 Sep 22, 2009 Therapeutic Innovations Sports equipment with resonant muscle stimulator for developing muscle strength US7957814 Feb 25, 2009 Jun 7, 2011 Medtronic, Inc. Shifting between electrode combinations in electrical stimulation device US7974703 Mar 18, 2009 Jul 5, 2011 Medtronic, Inc. Shifting between electrode combinations in electrical stimulation device US8140165 Jan 30, 2006 Mar 20, 2012 Encore Medical Asset Corporation Independent protection system for an electrical muscle stimulation apparatus and method of using same US8620438 Feb 13, 2007 Dec 31, 2013 Encore Medical Asset Corporation Method and apparatus for applying neuromuscular electrical stimulation US8738145 Oct 3, 2011 May 27, 2014",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

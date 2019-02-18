@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Aug 19, 1996",
+            "Oct 8, 2002",
+            "Feb 14, 2007",
+            "Dec 21, 2007",
+            "Mar 22, 2011"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: NCR CORPORATION, OHIO Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:BOGGS, GARY L.;COOPER, ROBERT S.;ERICKSON, GENE R.;AND OTHERS;REEL/FRAME:008207/0827;SIGNING DATES FROM 19960801 TO 19960807",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Owner name: TERADATA US, INC., OHIO Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:NCR CORPORATION;REEL/FRAME:020540/0786 Effective date: 20070924",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US5959994 - ATM/SONET network enhanced as a universal computer system interconnect - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5959994?ie=ISO-8859-1&dq=No.+6,411,949",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988922.24/warc/CC-MAIN-20150728002308-00063-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 476161727,
+    "recordOffset": 476131875,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{41484=Shared file system architectures require either a complete or partial implementation of a distributed file system manager providing various bookkeeping, file locking, and synchronization functions. FIG. 12 illustrates a shared file system architecture 1200. Processing systems 1202, 1204, 1206, 1208 are interconnected by a distributed file system manager interconnect cloud 1210. The distributed file system manager interconnect cloud 1210 may comprise a star, ring or bus topology. Again, node to node messaging between the processing systems 1202, 1204, 1206, 1208 are possible. The processing systems are also connected to a LAN cloud 1212 for communicating with clients. Further, each processing system 1202, 1204, 1206, 1208 may access a plurality of disk arrays 1222, 1224, 1226, 1228 via, for example, a SCSI bus 1230. The latencies required are even faster than massively parallel processing systems to support performance goals of shared file systems. Latencies for shared file systems should be in the 10 us and lower range., 77762=The payload for the SCSI response sequence format is illustrated with reference to FIGS. 10a and 10b. FIG. 10a illustrates the SCSI response sequence format 1000 for multiple transfers. A status field (FCP STATUS) 1070 provides a status indication to the source and a residual count field (FCP RESID) 1072 identifies the number of bytes that were transferred. A SNS length field (FCP SNS LEN) 1074 indicates the length or number of bytes in the SNS information. A response length field (FCP RSP LEN) 1076 identifies the number of valid bytes in the response information field (FCP RSP INFO) 1078 which describes protocol failures. FIG. 10b illustrates the SCSI response sequence format 1050 for the last cell of transfer. A SNS information field (FCP SNS INFO) 1080 provides the actual sense command., 40456=At the present time, CPU node interconnect and peripheral interconnects are not currently provided for by ATM technology. For example, massively parallel, shared-nothing architectures require message passing between nodes to coordinate parallel computing operations. FIG. 11 illustrates a massively parallel processing system 1100. Processing systems 1102, 1104, 1106, 1108 are interconnected by a node interconnect cloud 1110. The node interconnect cloud 1110 may comprise a star, ring or bus topology. Accordingly, node to node messaging between the processing systems 1102, 1104, 1106, 1108 are possible. The processing systems are also connected to a LAN cloud 1112 for communicating with clients. Further, each processing system 1102, 1104, 1106, 1108 may access a plurality of disk arrays 1122, 1124, 1126, 1128 via a peripheral bus 1130 such as a SCSI bus. However, message latencies from application to application must be orders of magnitude faster than currently provided by existing LAN latencies., 42539=FIG. 13 illustrates a symmetric multiprocessor processing system 1300. In the symmetric multiprocessor processing system 1300, a plurality of central processing units 1302, 1304, 1306, 1308 are connected to an I/O sub system 1320 and memory sub system 1330 via memory bus 1340. Thus, the symmetric multiprocessor processing system 1300 facilitates I/O operation between a CPU and the I/O sub system 1320. Each CPU may perform cache coherency messaging between a respective central processing unit. Finally each central processing unit may perform a memory operation between itself and the memory sub system 1330. Symmetric multiprocessor architecture requires cache coherency with latencies below 2 us.}",
+    "textBeforeTable": "Patent Citations The foregoing description of the exemplary embodiment of the invention has been presented for the purposes of illustration and description. It is not intended to be exhaustive or to limit the invention to the precise form disclosed. Many modifications and variations are possible in light of the above teaching. It is intended that the scope of the invention be limited not with this detailed description, but rather by the claims appended hereto. In summary, the requirement for different types of computer interconnect have been described, and ATM has been shown to meet the requirements of LANs, MANs and WANs. In the case of computer node interconnect for Massively Parallel, Shared and Symmetric Multi-Processing, the ATM interface can be designed to provide very low latency transfers between nodes. Peripheral interconnect can also be accomplished by ATM based links as described. By using ATM's natural ability as a LAN, MAN and WAN together with the above-described enhanced capabilities, an ATM network can be used as a universal interconnect and replace all other computer system interconnects. Further, the utilization of ATM as the universal interconnect significantly reduces interconnect cost, interconnect management, interconnect maintenance and improves availability. Thus, a protocol that provides FCP (SCSI serial protocol) commands to be transferred within the ATM standard is provided. A method of coordinating the assignment of VPI/VCI addresses of the source and destination for each I/O operation is also provided. This protocol definition",
+    "textAfterTable": "Non-Patent Citations Reference 1 * Anzaloni, A., et al., Fiber Channel (FCS)/ATM Interworking: A design solution, 1993 IEEE, pp. 1127 1133. 2 Anzaloni, A., et al., Fiber Channel (FCS)/ATM Interworking: A design solution, 1993 IEEE, pp. 1127-1133. 3 * Anzaloni, A., et al., Fiber Channel FCS/ATM Interworking: design and performance study, 1994 IEEE, pp. 1801 1807. 4 Anzaloni, A., et al., Fiber Channel FCS/ATM Interworking: design and performance study, 1994 IEEE, pp. 1801-1807. * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US6148421 * May 29, 1998 Nov 14, 2000 Crossroads Systems, Inc. Error detection and recovery for sequential access devices in a fibre channel protocol US6229808 * Aug 21, 1997 May 8, 2001 Advanced Micro Devices, Inc. Method",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

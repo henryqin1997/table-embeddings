@@ -1,0 +1,66 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US8342691 *",
+            "US8511838",
+            "US9006629 *",
+            "US20110187943 *",
+            "US20130044774 *",
+            "WO2013003480A2"
+        ],
+        [
+            "Filing date",
+            "Feb 3, 2010",
+            "Jun 29, 2011",
+            "Aug 17, 2012",
+            "",
+            "",
+            "Jun 27, 2012"
+        ],
+        [
+            "Publication date",
+            "Jan 1, 2013",
+            "Aug 20, 2013",
+            "Apr 14, 2015",
+            "Aug 4, 2011",
+            "Feb 21, 2013",
+            "Jan 3, 2013"
+        ],
+        [
+            "Applicant",
+            "International Business Machines Corporation",
+            "Microvision, Inc.",
+            "Stmicroelectronics International N.V.",
+            "International Business Machines Corporation",
+            "Stmicroelectronics International N.V.",
+            "Microvision, Inc."
+        ],
+        [
+            "Title",
+            "Information technology system with micro projector display",
+            "Scanning laser projector with safety system",
+            "Controlling laser power",
+            "Information Technology System With Micro Projector Display",
+            "Controlling laser power",
+            "Scanning laser projector with safety system"
+        ]
+    ],
+    "pageTitle": "Patent US7756174 - Laser projector safety monitoring system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7756174?ie=ISO-8859-1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990603.54/warc/CC-MAIN-20150728002310-00136-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 479647939,
+    "recordOffset": 479620539,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{24616=This application claims priority from co-pending U.S. provisional application Ser. No. 60/645,543, which was filed on Jan. 19, 2005, and which is incorporated herein by reference in its entirety.}",
+    "textBeforeTable": "Patent Citations Accordingly, In the drawings and specification, there have been disclosed a typical preferred embodiment of the invention, and although specific terms are employed, the terms are used in a descriptive sense only and not for purposes of limitation. The invention has been described in considerable detail with specific reference to these illustrated embodiments. It will be apparent, however, that various modifications and changes can be made within the spirit and scope of the invention as described in the foregoing specification and as defined in the appended claims. The safety shutter and intensity/blanking outputs are both monitored and checked for consistency with internal logic nodes using a simple but reliable exclusive OR gate, as known to the skilled. If the proper signal relationships are not maintained, one or more exclusive OR signals will be brought low, disengaging the relay and grounding the safety shutter and intensity/blanking output signals. Logic Sanity Monitor The velocity monitor incorporates a comparator circuit that is used in such a way that the safe condition is high rather than low as described above. However, another circuit monitors this signal and compares it against other signals as a \u201csanity check\u201d. If the signals inside the velocity monitor do not correlate to the X and Y position signals in a realistic fashion, a fault condition is generated. The velocity monitor incorporates a low pass filter. This low pass filter will",
+    "textAfterTable": "US6919892 Aug 14, 2002 Jul 19, 2005 Avaworks, Incorporated Photo realistic talking head creation system and method US7190329 Jun 20, 2003 Mar 13, 2007 Microvision, Inc. Apparatus for remotely imaging a region US7301558 Dec 6, 2006 Nov 27, 2007 Media Technologies Licensing, Llc Imaging system and method US20020167974 * Apr 4, 2002 Nov 14, 2002 Kennedy John T. Q-switched cavity dumped CO2 laser for material processing US20050024704 * Jun 29, 2004 Feb 3, 2005 Yoshitsugu Sakai Optical apparatus and laser display apparatus having laser beam scanner each US20060139319 Jan 18, 2006 Jun 29, 2006 General Electric Company System and method for generating most read images in a pacs workstation US20070279494 Apr 18, 2005 Dec 6, 2007 Aman James A Automatic Event Videoing, Tracking And Content Generation JP2000194302A Title not available *",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,67 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US8130135 *",
+            "US8138964 *",
+            "US8654002 *",
+            "US8909158 *",
+            "US20120019407 *",
+            "US20120214420 *"
+        ],
+        [
+            "Filing date",
+            "Oct 14, 2009",
+            "Oct 8, 2009",
+            "Mar 4, 2010",
+            "Apr 20, 2012",
+            "Mar 4, 2010",
+            "Apr 20, 2012"
+        ],
+        [
+            "Publication date",
+            "Mar 6, 2012",
+            "Mar 20, 2012",
+            "Feb 18, 2014",
+            "Dec 9, 2014",
+            "Jan 26, 2012",
+            "Aug 23, 2012"
+        ],
+        [
+            "Applicant",
+            "Raytheon Company",
+            "Raytheon Company",
+            "Onera (Office National D'etudes Et De Recherche Aerospatiales)",
+            "Pilatus Flugzeugwerke Ag",
+            "Marc Lesturgie",
+            "O'connor Daniel"
+        ],
+        [
+            "Title",
+            "Bi-static radar processing for ADS-B sensors",
+            "Tracking air and ground vehicles",
+            "Multistatic radar system for airport monitoring",
+            "Aircraft communication system",
+            "Multistatic radar system for airport monitoring",
+            "Aircraft Communication System"
+        ]
+    ],
+    "pageTitle": "Patent US7965227 - Aircraft tracking using low cost tagging as a discriminator - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7965227?dq=6,232,546",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989443.69/warc/CC-MAIN-20150728002309-00145-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 473662063,
+    "recordOffset": 473618457,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6411=FIG. 1 is a block diagram of a first embodiment of the present invention. Referring to FIG. 1, Surface Movement Radar (SMR) 110 may detect movement of aircraft on the ground using conventional radar techniques. SMR 110 outputs, for example, CAT20 messages 115 to data fusion block 130. CAT20 messages may comprise multilateration messages as described in the \u201cEurocontrol Standard Document for Surveillance Data Exchange, Part 14, Category 020\u201d published April, 2008 and incorporated herein by reference. Other types of data messages may be used within the spirit and scope of the present invention. The use of CAT20 messages is by way of example only.}",
+    "TableContextTimeStampAfterTable": "{43717=The use of elliptical surveillance is disclosed in parent patent application Ser. No. 11/429,926, (Evers et al.) filed on May 8, 2006, now U.S. Pat. No. 7,477,193, issued Jan. 13, 2009, entitled \u201cMethod and System for Elliptical-Based Surveillance,\u201d assigned to the same assignee as the present invention, and incorporated herein by reference. Evers discloses a system for performing elliptical-based and hybrid surveillance using one or more receiving and transmitting elements time synchronized to a common precision time reference. Antennas for transmitting and receiving elements are located at known positions separated from one another. At a given time, one of the transmitting elements transmits an interrogation signal to one or more targets, which respond to the interrogation with a reply transmission, received by one or more receiving elements. The central workstation calculates each target's ellipse of position with respect to each receiving element, using the interrogator element time of interrogation measurement and each receiving element's time of arrival measurement for the corresponding reply transmission, and then fuses the elliptical line of positions for each receiving element to compute target positions or augment passive surveillance position., 24831=The present application is a Continuation-In-Part of U.S. patent application Ser. No. 11/541,480 filed on Sep. 29, 2006, and incorporated herein by reference; application Ser. No. 11/541,480 is in turn a Continuation-In-Part of U.S. patent application Ser. No. 11/429,926, filed on May 8, 2006, now U.S. Pat. No. 7,477,193, also incorporated herein by reference., 36256=The aforementioned Rannoch NASA SBIR demonstrated tagging was feasible. That system, however used two 1090 MHz receivers, instead of a receiver/interrogator as in the present invention. A receiver/interrogator represents an improvement over the earlier system, as it allows the system to interrogate for Mode A identification. Data from a Surface Movement Radar (SMR) and a prototype MLAT system installed in at Hartsfield-Jackson Atlanta Airport (ATL) has been used to demonstrate the present invention. This test showed that it was feasible to use only two receiver sensors to get reliable tagging. Whether two receivers or a receiver/interrogator is used, the tagging technique is similar. When altitude is known, the system determines the Line-of-Position (LOP) of the aircraft transponder. LOP is either a hyperbola or an ellipse or a circle depending on how the system is configured., 28469=Evers, U.S. Pat. No. 6,211,811, issued Apr. 3, 2001, and incorporated herein by reference, discloses a method and apparatus for improving the surveillance coverage and target identification in a radar based surveillance system. The Evers '811 patent is assigned to the same assignee as the present application and names an inventor in common., 32336=That system provided a low-cost (i.e., under $300K) 1090 MHz Multilateration/Line of Position (LOP)/Automatic Dependent Surveillance-Broadcast (ADS-B) surface surveillance system, which uses the following cost-saving technology innovations: a two-receiver identification/position determination algorithm, GPS synchronization, and passive Mode A/C multilateration. The system addressed FAA Topic 01 Aviation Safety & Capacity, Subtopic 01.02 Advanced Concepts in Air Traffic Management, by providing low-cost surveillance technology, which can be used to locate and identify traffic operating on the airport surface. This surveillance enhances safety by enabling Air Traffic Control (ATC) to have a situational display of traffic movement, as well as automatic runway incursion detection alerting. The system may be used as an enhancement to primary surface radar (i.e., Airport Surface Detection Equipment or ASDE-3) by providing identification of aircraft targets and providing surveillance position aiding in regions where the radar does not provide reliable coverage. Another application of the system is standalone aircraft surveillance; a low-cost standalone system is needed at airports that have not qualified for any currently fielded surveillance system due to cost-benefits ratio analyses.}",
+    "textBeforeTable": "Patent Citations While the preferred embodiment and various alternative embodiments of the invention have been disclosed and described in detail herein, it may be apparent to those skilled in the art that various changes in form and detail may be made therein without departing from the spirit and scope thereof. Given the low overhead and installation costs, leasing the system (by charging only for the tagged CAT20 data) becomes a viable option that greatly improves the ability to quickly capture market-share with limited investment. Implementation of the present invention is as follows. In theory, only a single well-positioned co-located Transmitter/Receiver unit 200 is required. However in practice, it is likely that two such units may be used for enhanced accuracy, coverage, cross-reference, and redundancy. It should be further noted that receiving data from two co-located R/T stations can serve as the first step towards a complete multilateration system and can yield a core set of add-on capabilities. , then unique identification may not be possible, at least momentarily. However, given the dynamic nature of the movement of both the nests and SMR targets, many unique matching opportunities are consistently expected in a relatively small time-frame. It should be noted that this system is inherently capable of recognizing outstanding velocity and acceleration (as would occur on the runway) as heuristics in determining target identification. FIG. 2 then continues to track the target by",
+    "textAfterTable": "US4122522 Jun 2, 1977 Oct 24, 1978 Smith Gerald R Aircraft ground monitoring system US4167006 Oct 19, 1977 Sep 4, 1979 Toyo Tsushinki Kabushiki Kaisha Collision avoidance system of aircraft US4196474 Feb 11, 1974 Apr 1, 1980 The Johns Hopkins University Information display method and apparatus for air traffic control US4224669 Dec 22, 1977 Sep 23, 1980 The Boeing Company Minimum safe altitude monitoring, indication and warning system US4229737 Feb 6, 1978 Oct 21, 1980 Cubic Western Data Ranging system and method for determining the range of a vehicle from a plurality of reference points US4293857 Aug 10, 1979 Oct 6, 1981 Baldwin Edwin L Collision avoidance warning system US4315609 Jun 16, 1971 Feb 16, 1982 The United States Of America As Represented By The Secretary Of The Navy Target locating and missile guidance system US4327437 Jul 30, 1980 Apr 27, 1982 Nasa Reconfiguring redundancy management",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jan 10, 1997",
+            "Mar 6, 2000",
+            "Sep 10, 2003",
+            "Feb 23, 2004",
+            "Apr 20, 2004"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: CANON INFORMATION SYSTEMS, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:NEHAB, SMADAR;WICKRAMARATNE, MANJULA G.;KLARK, PAUL L.;REEL/FRAME:008460/0687;SIGNING DATES FROM 19961011 TO 19961014",
+            "",
+            "",
+            "",
+            "Effective date: 20040222"
+        ]
+    ],
+    "pageTitle": "Patent US6029182 - System for generating a custom formatted hypertext document by using a ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6029182?dq=Xerox+%2B+%22centroid",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987775.70/warc/CC-MAIN-20150728002307-00097-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 480699523,
+    "recordOffset": 480641091,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{99027=If a URL has been entered in field 44, processing proceeds to step S1006. In step S1006, the Web reader accesses the hypermedia document (e.g., a homepage) specified by the URL address. In step S1007, WebFormatter instructs the Web reader to traverse the hypermedia document. Thereafter, WebFormatter selects URL address(es) from the Web and stores the addresses in container 76. Once all desired addresses have been selected and a processing function, such as print, has been activated, WebFormatter downloads data stored at the addresses in container 76 into memory 5. WebFormatter then extracts predetermined data from the downloaded data based on the configuration information set in Optional dialog box 62, and stores the extracted data in memory 5. Thus, for example, if \"Text Only\" option 72 in Options Window 62 is on, only text is extracted from the downloaded data. Processing then proceeds to step S1011., 98664=Next in step S1005, it is determined whether a URL or a filename has been entered. As described above, in preferred embodiments of WebFormatter, only a URL may be entered. However, since alternative embodiments of WebFormatter may permit entry of a filename, a description of processing a file other than one at a URL address will be provided., 97839=Next, in step S1001, WebFormatter is configured, as described above via preferences dialog box 112 and options dialog box 62. This step is not necessary unless a user wishes to change WebFormatter's previously set configuration. In step S1002, document format data is input in fields 44 and 46 to 49 described above. More specifically, the user inputs a URL (or filename in alternative embodiments) into URL field 44. As described below, WebFormatter uses this information to process Web pages stored at the URL to create an RTF file based on the configuration of WebFormatter and the data input in fields 46 to 49., 97100=FIG. 10 is a flow diagram describing the operation of WebFormatter. WebFormatter is activated in step S1000. As described above, this can be done by double-clicking on a WebFormatter icon in a windowing environment. Depending upon how WebFormatter has been configured, i.e., in the fully-functional mode or the minimizing mode, either a graphical user interface similar to that of graphical user interface 43 or one similar to that of graphical user interface 116 is displayed in step S1000. For the sake of completeness, the following assumes that a graphical user interface similar to that of graphical user interface 43 is displayed in step S1000, since the default mode of WebFormatter is the fully-functional mode., 98474=In step S1003, a Web reader similar to that of Web reader 34 described above is executed. The Web reader connects to a network, such as the World Wide Web, in step S1004., 99972=On the other hand, if, in step S1005, a filename for an HTML source file is entered, WebFormatter instructs the Web reader to access a first site in the file. In steps S1008 and S1009, the site is traversed and data is extracted and stored in the same manner as in step S1007, described above. Then, in step S1010, WebFormatter determines if more sites are listed in the HTML source file. If more sites are listed in the file, flow returns to step S1008, and the next site is accessed. If no more sites are present, processing proceeds to step S1011,, 101156=Once the documents whose URLs are stored in the container have been downloaded, formatted according to the preset formats and configurations, and converted into RTF file(s) in step S1011, in step S1012, the RTF file(s) are output. Alternatively, the RTF files(s) can be edited or saved, depending upon which icon on the graphical user interface has been activated., 100542=In step S1011, WebFormatter processes the extracted data in accordance with the previously set format information. For example, if Columns field 48 is set to multiple, the extracted data will be formatted into a document having multiple columns. The above processing is initiated by activating one of Print icon 96, Edit icon 97 or Save icon 99, and is similar to the processing described above in the first embodiment, e.g., flattening the document and formatting the document based on the formatting information. Accordingly, a detailed description thereof is omitted for the sake of brevity.}",
+    "textBeforeTable": "Patent Citations  APPENDIX 3______________________________________DESCRIPTION OF MODULESAppendix 3A______________________________________THE PERSONAL NEWS PROFILE EDITOR MODULEThe Profile Editor manages access to the user profiles and isrepresented by CProfileMgr class. It also manages loading and saving ofthe profiles. The services provided by Profile Editor are:BOOL Newprofile(CString fileName);Creates a new profile given the file name.BOOL OpenProfile( );Opens the default profile.BOOL OpenProfile(CString fileName);Opens the named profile.CProfileEntry* GetFirstEntry( );Loads and returns the next profile entry.CProfileEntry* GetNextEntry( );Loads and returns the next profile entry.BOOL WriteEntry(CProfileEntry& entry);Saves a new entry in the profile.Each profile entry contains an extraction specification and an outputspecification as represented by CProfileEntry class. The methodsprovided are:CURL GetSiteId( );Returns the site id contained in the profile entry.CExtractionSpec GetExtractionSpec( );Returns the extraction specification contained in the profileentry. Extraction specification contains keywords forsearching, limits for levels, pages, size in kilo bytes.COutputSpec GetOutputSpec( );Returns the output specification contained in the profile entry.Output specification contains formatting instructions and treetraversal rules.THE Web READER MODULECWebPage class abstracts the interface to the Internet browser and isrepresentative of the actual Web page. It will be responsible forfetching aWeb page, extracting links or references to other URLs in the Web page,and maintaining the contents of a Web page. The methods provided are:BOOL Load( );Fetch the Web page using the URL, username and password.BOOL Parse( );Parses the data in the Web page and creates a list of links.Also resolves the relative URLs into absolute URLs.CURLList* GetLinks( );Returns the list of links in",
+    "textAfterTable": "US5392428 * Mar 23, 1994 Feb 21, 1995 Robins; Stanford K. Text analysis system US5408655 * Jun 18, 1992 Apr 18, 1995 Apple Computer, Inc. User interface system and method for traversing a database US5423043 * Jan 21, 1994 Jun 6, 1995 International Business Machines Corporation Method and apparatus for creating and monitoring logical associations among desktop objects US5530852 * Dec 20, 1994 Jun 25, 1996 Sun Microsystems, Inc. Method for extracting profiles and topics from a first file written in a first markup language and generating files in different markup languages containing the profiles and topics for use in accessing data described by the profiles and topics US5649186 * Aug 7, 1995 Jul 15, 1997 Silicon Graphics Incorporated System and method for a computer-based dynamic information clipping service US5737560 * Dec 29, 1995 Apr 7, 1998 Silicon Graphics, Inc. Graphical method and system for accessing information on a",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

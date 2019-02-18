@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jul 24, 2002",
+            "Jan 11, 2008",
+            "Jul 2, 2012",
+            "Sep 28, 2012",
+            "Sep 28, 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "REMI",
+            "FPAY",
+            "SULP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Fee payment",
+            "Surcharge for late payment"
+        ],
+        [
+            "Description",
+            "Owner name: INTERNATIONAL BUSINESS MACHINES CORPORATION, NEW Y Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:BALLAS, DONALD F.;BICKFORD, JEANNE P.S.;MAHEUX, THOMAS R.;AND OTHERS;REEL/FRAME:012919/0829;SIGNING DATES FROM 20020722 TO 20020724",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "Year of fee payment: 7"
+        ]
+    ],
+    "pageTitle": "Patent US6819967 - Relational database for producing bill-of-materials from planning information - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6819967?dq=U.S.+Patent+",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00121-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 494559855,
+    "recordOffset": 494528675,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations As shown above, the invention prepares a relational database of part numbers that describes all information that allows the planning and build of all manufacturing subassemblies needed to produce an end semiconductor (or any product) and provides interlock with design protocols to automatically define the development and manufacturing processes needed to create this product. The overall system provides the capability to plan capacity for manufacturing sub-components before the components are developed, early ordering for sub-components that exist, interlock of manufacturing and development processes, and a seamless process where the description of the undeveloped product can be altered and the impact on the released and unreleased sub-components can be seen instantly. When a decision is made to proceed to manufacturing, the data in the conceptual bill-of-material can be frozen and moved automatically to the system used to store manufacturing records and to the customer. A representative hardware environment for practicing the present invention is depicted in FIG. 7, which illustrates a typical hardware configuration of an information handling/computer system in accordance with the subject invention, having at least one processor or central processing unit (CPU) 10. CPUs 10 are interconnected via system bus 12 to random access memory (RAM) 14, read-only memory (ROM) 16, an input/output (I/O) adapter 18 for connecting peripheral devices, such as disk units 11 and tape drives 13, to bus 12, user interface adapter 19 for connecting keyboard 15, mouse 17, speaker 103,",
+    "textAfterTable": "US5317729 Oct 24, 1990 May 31, 1994 International Business Machines Corporation Method for the storage of multi-versioned data with retrieval based on searched query US5359508 * May 21, 1993 Oct 25, 1994 Rossides Michael T Data collection and retrieval system for registering charges and royalties to users US5550746 Dec 5, 1994 Aug 27, 1996 American Greetings Corporation Method and apparatus for storing and selectively retrieving product data by correlating customer selection criteria with optimum product designs based on embedded expert judgments US5675784 May 31, 1995 Oct 7, 1997 International Business Machnes Corporation Data structure for a relational database system for collecting component and specification level data related to products US5726898 Sep 1, 1994 Mar 10, 1998 American Greetings Corporation Method and apparatus for storing and selectively retrieving and delivering product data based on embedded expert judgements US5765137 Mar 4, 1996 Jun 9, 1998 Massachusetts Institute Of Technology Computer system and computer-implemented process for correlating product requirements to manufacturing cost US5768142 May 31, 1995",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

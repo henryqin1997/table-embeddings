@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Sep 8, 1998",
+            "May 22, 2003",
+            "Jun 11, 2003",
+            "Apr 24, 2007",
+            "May 23, 2011"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "REMI",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: CISCO TECHNOLOGY, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:TAPPAN, DANIEL C.;REEL/FRAME:009451/0797 Effective date: 19980902",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US5991300 - Technique for efficiently performing optional TTL propagation during label ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5991300?dq=6,250,774",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00183-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 481263295,
+    "recordOffset": 481233507,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{30495=One of this approach's advantages is that it relieves the receiving router of the need to perform an expensive longest-match search: the label directs the receiving router directly to the correct forwarding-table entry. More important, it affords ISPs the opportunity to have their ingress routers (which receive packets from outside the service-provider network) specify the egress routers through which received packets should issue from the provider network. This frees the ISP's interior (\"transit\") routers of the task of participating in forwarding policy and maintaining the associated information bases. Commonly assigned co-pending U.S. patent application Ser. No. 08/997,343, filed on Dec. 23, 1997, by Rekhter et al. for Peer-Model Support for Virtual Private Networks with Potentially Overlapping Addresses, describes in detail one proposal, known as Multiple-Protocol Label Switching (\"MPLS\"). for employing such shims. I hereby incorporate that application in its entirety by reference.}",
+    "textBeforeTable": "Patent Citations It is therefore apparent that the present invention can be used in a wide variety of implementations and that it is accordingly a significant advance in the art. So the simplicity of the bitwise-OR operation is beneficial even in circumstances in which the system's propagation-policy granularity does not need to be as fine as in the above examples. For instance, a system may switch between uniform propagation and non-propagation: although the policy can change, all packets would be subject to whatever the current policy is. In such a case, the system may maintain a single common variable, not stored in any of the replacement data structures, and use the contents of that single variable as the other operand in the bitwise-OR operation with the input packet's IP time-to-live value. Even though this approach does not yield the forwarding-table-based approach's fine TTL-propagation-policy granularity, still it avoids real-time branching, so it contributes to the speed and simplicity that are particularly important in high-speed routers. The advantage here is that none of these decisions is made in real time: they are made when the route is installed in the forwarding information base or at some later time before the information-base entry is used. At the time of actual use, the decision is implemented by the bitwise OR operation and thus requires no branching--and thus no instruction-pipeline flushing--in the processor that is assembling the outgoing packet. This method of implementing",
+    "textAfterTable": "Reliable transport protocol for internetwork routing US5555256 * Apr 14, 1995 Sep 10, 1996 Hewlett-Packard Company Channel identifier generation US5561669 * Oct 26, 1994 Oct 1, 1996 Cisco Systems, Inc. Computer network switching system with expandable number of ports US5563878 * Jan 5, 1995 Oct 8, 1996 International Business Machines Corporation Transaction message routing in digital communication networks US5623492 * Mar 24, 1995 Apr 22, 1997 U S West Technologies, Inc. Methods and systems for managing bandwidth resources in a fast packet switching network US5650993 * Mar 20, 1995 Jul 22, 1997 Bell Communications Research, Inc. Drop from front of buffer policy in feedback networks US5651002 * Jul 12, 1995 Jul 22, 1997 3Com Corporation Internetworking device with enhanced packet header translation and memory US5740375 * Feb 15, 1996 Apr 14, 1998",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

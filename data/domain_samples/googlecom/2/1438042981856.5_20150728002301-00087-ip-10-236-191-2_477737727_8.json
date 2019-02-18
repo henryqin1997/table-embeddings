@@ -1,0 +1,68 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jun 14, 2010",
+            "Nov 7, 2010",
+            "Dec 20, 2010",
+            "Dec 22, 2010",
+            "Dec 22, 2010",
+            "Dec 28, 2010",
+            "Jun 20, 2014",
+            "Nov 7, 2014",
+            "Dec 30, 2014"
+        ],
+        [
+            "Code",
+            "REMI",
+            "REIN",
+            "PRDP",
+            "SULP",
+            "FPAY",
+            "FP",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Maintenance fee reminder mailed",
+            "Reinstatement after maintenance fee payment confirmed",
+            "Patent reinstated due to the acceptance of a late maintenance fee",
+            "Surcharge for late payment",
+            "Fee payment",
+            "Expired due to failure to pay maintenance fee",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "",
+            "",
+            "Effective date: 20101222",
+            "",
+            "Year of fee payment: 4",
+            "Effective date: 20101107",
+            "",
+            "",
+            "Effective date: 20141107"
+        ]
+    ],
+    "pageTitle": "Patent US20040015701 - Multi-level and multi-category data labeling system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US20040015701?dq=artistshare",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00087-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 477763611,
+    "recordOffset": 477737727,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations [0029] It will be apparent to those skilled in the art that various modifications can be made to the multi-level and multi-category data labeling system and method of the instant invention without departing from the scope or spirit of the invention. It is intended that the present invention cover modifications and variations of the multi-level and multi-category data labeling system and method provided they come within the scope of the appended claims and their equivalents. [0028] All of the modes of operation of the Data Labeling System operate at the Application Layer of the TCP/IP Protocol Stack. This is important since it allows the Data Labeling System to supplement and be supplemented by the operation of any IPSec based VPN in a transparent manner since the VPN operates at the lower level Network Layer of the TCP/IP Protocol Stack. In operation the IPSec based VPN would essentially create a secure tunnel between the IP addresses of the Remote Client 1 and the Label Server 4 of the FIG. 1 Data Labeling System. The tunnel would consist of the authentication of the Remote Client IP to the Data Label Sever IP and the encryption of all data transferred between these IPs by any application on either the Data Label Sever 4 or the Remote Client 1. Once this secure tunnel is established the operation of the database and data labeling applications would",
+    "textAfterTable": "US7882227 * Mar 14, 2006 Feb 1, 2011 Oracle America, Inc. Mechanism for implementing file access control across a network using labeled containers US7885975 Feb 23, 2006 Feb 8, 2011 Oracle America, Inc. Mechanism for implementing file access control using labeled containers US8095962 Feb 17, 2005 Jan 10, 2012 At&T Intellectual Property I, L.P. Method and system of auditing databases for security compliance US8127133 Jan 25, 2007 Feb 28, 2012 Microsoft Corporation Labeling of data objects to apply and enforce policies US8136147 Apr 16, 2007 Mar 13, 2012 International Business Machines Corporation Privilege management US8166005 * Sep 21, 2004 Apr 24, 2012 Emc Corporation Pathname caching and protection of the root directory in a nested multilayer directory structure US8316222 Feb 24, 2010 Nov 20, 2012 Siemens Ag Method of providing data access in an industrial automation system, computer program product and industrial automation system US8412646",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

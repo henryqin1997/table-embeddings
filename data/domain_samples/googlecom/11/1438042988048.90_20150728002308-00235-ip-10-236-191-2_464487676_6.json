@@ -1,0 +1,66 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US5633661 *",
+            "US5764963 *",
+            "US5781496 *",
+            "US5805133 *",
+            "US6944087 *",
+            "US20020131317 *"
+        ],
+        [
+            "Filing date",
+            "Nov 21, 1994",
+            "Sep 20, 1995",
+            "May 28, 1997",
+            "Nov 22, 1996",
+            "Feb 15, 2002",
+            "Feb 15, 2002"
+        ],
+        [
+            "Publication date",
+            "May 27, 1997",
+            "Jun 9, 1998",
+            "Jul 14, 1998",
+            "Sep 8, 1998",
+            "Sep 13, 2005",
+            "Sep 19, 2002"
+        ],
+        [
+            "Applicant",
+            "International Business Machines Corporation",
+            "Rambus, Inc.",
+            "Hyundai Electronics America, Inc.",
+            "Samsung Semiconductor, Inc.",
+            "Intel Corporation",
+            "Ruban Kanapathippillai"
+        ],
+        [
+            "Title",
+            "Video display control system having block write with opaque pattern control expansion",
+            "Method and apparatus for performing maskable multiple color block writes",
+            "Block write power reduction memory with reduced power consumption during block write mode",
+            "Method and apparatus for increasing the rate of scrolling in a frame buffer system designed for windowing operations",
+            "Method and apparatus for off boundary memory access",
+            "Method and apparatus for off boundary memory access"
+        ]
+    ],
+    "pageTitle": "Patent US5533187 - Multiple block mode operations in a frame buffer system designed for ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5533187?dq=5,581,513",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 6,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00235-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 464518951,
+    "recordOffset": 464487676,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{86592=Those skilled in the art will understand that this selection of modes greatly enhances the speed with which the movement of large blocks may be accomplished in a frame buffer. For example, none of the accesses necessary to rewrite color registers are required. This eliminates at least two 120 nanosecond accesses in writing each line of a window. Moreover, since the central portion of the display is written in modes in which two colors are written simultaneously, only half as many accesses and half the time are required as to write prior art frame buffers. Consequently, as illustrated by the timing diagram of FIG. 6, these different block write modes with color 0&1 and 1&0 modes allows a 1024 pixels row to be written in a series of thirty-two pixels accesses which requires a single RAS signal and one GAS signals for each thirty-two pixels in the row. To write to the largest window in such a row requires at most 780 ns., 92534=A second additional mode is referred to as block 512 mode. In block 512 mode each data conductor affects the value of data written to thirty-two adjacent sixteen bit pixel positions. In this mode, the column address selects a total of half the columns in each plane simultaneously. This mode requires the increase in number of selection conductors, multiplexors 42, and other components discussed above to sixteen. This mode is used with the block 16 mode in the same manner that block 256 mode is used with block 8 mode to rapidly write to an entire row within a clipped window area of the display. A third additional mode is referred to as block 1024 mode. In block 1024 mode, all of the columns in each plane are selected simultaneously by the column address. This mode requires the increase in number of selection conductors, multiplexors 42, and other components discussed above to thirty-two. In block 1024 mode, each data conductor affects the value of data written to thirty-two adjacent thirty-two bit pixel positions. This mode is used with the block 32 mode in the same manner that block 256 mode is used with block 8 mode to rapidly write to an entire row within a clipped window area of the display. Each of these modes provides useful functions in the same manner as does block 256 mode but for configurations of frame buffers storing data describing sixteen bit and thirty-two bit pixels., 88436=Three additional modes of write access are provided by the present invention which further increase the speed of operation of the frame buffer. A first of these modes is referred to as block 256 mode. In block 256 mode, the value on each data conductor determines the color value written to thirty-two adjacent eight bit pixel positions. This is accomplished by the column address selecting one quarter of the total of columns (256) in each plane of the array simultaneously. Then each of the pixels connected to each of these columns receives the single color value in a color value register designated by the value carried on the data conductor in the particular color mode. It will be seen that in block 256 mode a total of thirty-two times thirty-two total eight bit pixels (1024 pixels) are affected at once by each write access. This is a typical number of pixels in a row of a modern computer color monitor. Thus, each access of eight bit pixels in block 256 mode may write all of the pixels in a 1024 pixel row. It will be appreciated that this mode may be used to very rapidly clear an entire screen or to write a pattern which varies in thirty-two bit blocks on the screen., 63395=Referring now to FIG. 4, there is illustrated a diagram useful in understanding the invention. FIG. 4 illustrates a circuit board upon which reside the various components of a frame buffer 30. The frame buffer 30 includes a plurality of memory cells which may include devices such as field effect transistor devices arranged to provide dynamic random access memory array 32. The arrangement of the cells constituting the array 32 is developed in accordance with principals well known to those skilled in the art. It is adapted to provide a sufficient number of addressable memory cells to describe the number of pixels to be presented on an output display device in a particular mode of operation. For example, such an array 32 might include thirty-two planes (only the first is illustrated in detail), each plane including 256 rows, each row including 1024 memory cells; such an arrangement would allow the storage of color data sufficient to display thirty-two bit color in a 512\ufffd512 mode on a color output display terminal., 59745=These two strobe cycles are required not only for accessing the memory positions in the frame buffer but also for all other accesses of the frame buffer such as for loading the color value register. Consequently, to write two colors to thirty-two pixel positions using the block write mode requires a number of time consuming steps. The lower two lines of FIG. 3 illustrate such steps. To load the color register with background color typically requires a first combined RAS/CAS access of 120 nanoseconds. This must then be followed by a second combined RAS/CAS cycle of 120 nanoseconds to write the background color stored in the color register to the thirty-two pixels. Reloading the color register with foreground color takes another 120 nanoseconds, and writing the foreground color takes another 120 nanoseconds. Thus, the entire operation to write thirty-two pixels requires 480 ns. or approximately 16 ns./pixel. Of course, when an entire row is written, the per pixel time to write using block write mode is shortened because the color value register need only be loaded twice for each row and each group of thirty-two pixels of the same color in the same row requires only 20 additional nanoseconds. Since writing a row requires only 20 additional nanoseconds for each thirty-two pixels written with each color, approximately 1240 ns. more time is required to write a row of 1024 pixels once the color has been loaded. Thus, the time necessary to reload the color register twice on each row (including the RAS/CAS cycle necessary to indicate the end of the load operation) and the requirement to write twice to each thirty-two-bit position in each row slow the operation significantly., 93957=Thus, it may be seen that the arrangement of the present invention provides very rapid access when writing a frame buffer to accomplish operations affecting large blocks of data. All that is necessary is to utilize the various modes in groups selected to provide the most rapid access for the particular operation involved. In particular, the normal mode, the block eight mode, and the block 256 mode are utilized when the frame buffer is configured to store data in eight bit pixel positions. The normal mode, the block sixteen mode, and the block 512 mode are utilized when the frame buffer is configured to store data in sixteen bit pixel positions. The normal mode, the block thirty-two mode, and the block 1024 mode are utilized when the frame buffer is configured to store data in sixteen bit pixel positions., 94792=It will be noted that in the block 256, 512, and 1024 modes of operation, a great number of memory devices are affected simultaneously. Those skilled in the art will recognize that this would normally require a great deal of power to accomplish since each of the drivers 53 must produce a sufficient amount of power to back drive a large number of individual sense amplifiers 43. In fact, such an operation could not be accomplished using prior art techniques. However, the present invention provides a unique method of overcoming this problem.}",
+    "textBeforeTable": "Patent Citations Although the present invention has been described in terms of a preferred embodiment, it will be appreciated that various modifications and alterations might be made by those skilled in the art without departing from the spirit and scope of the invention. The invention should therefore be measured in terms of the claims which follow. In this manner, very large numbers of cells may be changed at once with only a minimum amount of power being required. FIG. 9 illustrates the steps of the process described above by which different blocks of pixels including complete rows of the frame buffer may be written using the different block modes described. During the beginning of each RAS cycle, the sense amplifiers 43 are not yet turned on. If the column select devices are turned on to write to the appropriate columns on the falling edge of this RAS period when the sense amplifiers are off, the drivers 53 may write to the memory cells by writing around the sense amplifiers. Since the drivers 53 do not have to back drive the sense amplifiers 43 in order to effect the values stored in the memory cells 33, each of the memory cells 33 need only be driven sufficiently to register a new condition. Then, when the sense amplifiers 43 are turned on during the latter portion of the RAS cycle, these amplifiers 43 sense the new conditions as a part",
+    "textAfterTable": "* Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US5633661 * Nov 21, 1994 May 27, 1997 International Business Machines Corporation Video display control system having block write with opaque pattern control expansion US5764963 * Sep 20, 1995 Jun 9, 1998 Rambus, Inc. Method and apparatus for performing maskable multiple color block writes US5781496 * May 28, 1997 Jul 14, 1998 Hyundai Electronics America, Inc. Block write power reduction memory with reduced power consumption during block write mode US5805133 * Nov 22, 1996 Sep 8, 1998 Samsung Semiconductor, Inc. Method and apparatus for increasing the rate of scrolling in a frame buffer system designed for windowing operations US6944087 * Feb 15, 2002 Sep 13, 2005 Intel Corporation Method and apparatus for off boundary memory access US20020131317",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

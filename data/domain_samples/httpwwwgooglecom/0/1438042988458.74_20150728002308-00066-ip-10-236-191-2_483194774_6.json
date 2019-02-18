@@ -1,0 +1,77 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US7330677 *",
+            "US7539882 *",
+            "US8125658",
+            "US8127158",
+            "US8516279 *",
+            "US8850242",
+            "US20120246499 *",
+            "US20130257972 *"
+        ],
+        [
+            "Filing date",
+            "Oct 18, 2005",
+            "May 30, 2006",
+            "Dec 14, 2007",
+            "May 26, 2009",
+            "Feb 27, 2012",
+            "Jul 19, 2013",
+            "Feb 27, 2012",
+            "Mar 18, 2013"
+        ],
+        [
+            "Publication date",
+            "Feb 12, 2008",
+            "May 26, 2009",
+            "Feb 28, 2012",
+            "Feb 28, 2012",
+            "Aug 20, 2013",
+            "Sep 30, 2014",
+            "Sep 27, 2012",
+            "Oct 3, 2013"
+        ],
+        [
+            "Applicant",
+            "Canon Kabushiki Kaisha",
+            "Rambus Inc.",
+            "Brother Kogyo Kabushiki Kaisha",
+            "Rambus Inc.",
+            "Rambus Inc.",
+            "Invent.Ly, Llc",
+            "Jessup Holden D",
+            "Brother Kogyo Kabushiki Kaisha"
+        ],
+        [
+            "Title",
+            "Image-forming apparatus and method for controlling the same",
+            "Self-powered devices and methods",
+            "Electronic device including non-volatile display portion",
+            "Self-powered devices and methods",
+            "Self-powered devices and methods",
+            "Self-powered devices and methods",
+            "Self-Powered Devices and Methods",
+            "Image forming apparatus"
+        ]
+    ],
+    "pageTitle": "Patent US7278705 - Power management control method and printing apparatus - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7278705?ie=ISO-8859-1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 6,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00066-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 483225447,
+    "recordOffset": 483194774,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6238=For this reason, in recent years, when the printer is in a sleep mode, the power supplied to the main circuits other than the host I/F 1003 or the supply of a basic operation clock is cut off while maintaining the operation of the host I/F 1003 to perform communication with the host 1006 (see FIG. 6). In other words, when the printer 1001 is shifted from a normal operation mode (hereinafter referred to as a normal mode) to a sleep mode, the system controller 1002 and engine controller 1004 simultaneously cut off the power supplied to their main circuits or the supply of a basic operation clock. When the printer 1001 returns from the sleep mode to the normal mode, the system controller 1002 and engine controller 1004 recover the power supplied to their main circuits or the supply of the basic operation clock (e.g., Japanese Patent Application Laid-Open Nos. 2001-180083 and 2000-326590).}",
+    "TableContextTimeStampAfterTable": "{31314=Therefore, in a case where the time between one printing operation and the next printing operation is long, in order to prevent conspicuous streaked fading, the printer slightly conveys or rolls up the roll paper at predetermined time intervals so that the streaked fading is not concentrated at one location to be conspicuous (e.g., Japanese Patent Application Laid-Open No. 2002-254740). Hereinafter, such measure will be referred to as an anti-fading process., 28190=However, later, as demands became high for better functions and improved throughput of a printer, the circuit size of the system controller has enlarged and the speed of the CPU, memories or the like has increased, resulting in a great increase in power consumption of the system controller (e.g., refer to Japanese Patent Application Laid-Open No. 2002-103739)., 25115=This application claims priority from Japanese Patent Application No. 2003-134738, entitled \u201cPower Management Control Method\u201d and filed on May 13, 2003, the entire contents of which are incorporated herein by reference., 27213=In the above-described configuration, the host I/F 1003 receives a printing job sent from the host 1006, and transfers it to the system controller 1002. The system controller 1002 performs image processing on image data of the printing job, converts the image data to bitmap data that can be handled by the engine controller 1004, and transfers the bitmap data to the engine controller 1004., 29919=Since pigmented ink is a solution in which pigment particles are dispersed in a solvent by a dispersion agent, sedimentation easily takes place. Therefore, if the ink is left unused for a long time, it becomes impossible to perform printing at predetermined ink density. For this reason, a printer using pigmented ink stirs ink in an ink tank at predetermined time intervals (e.g., Japanese Patent Application Laid-Open No. 2002-225304). This process is called an anti-sedimentation process.}",
+    "textBeforeTable": "Patent Citations As many apparently widely different embodiments of the present invention can be made without departing from the spirit and scope thereof, it is to be understood that the invention is not limited to the specific embodiments thereof except as defined in the appended claims. The present invention can be applied to a system constituted by a plurality of devices or to an apparatus comprising a single device. In addition, the printer of the present invention may be used in the form of a copying machine combined with a reader, and the like, or a facsimile apparatus having a transmission/reception function, in addition to an integrally-provided or stand-alone image output terminal of a data processing equipment such as a computer. Furthermore, although each of the above-described embodiments adopts a serial-type printer which performs printing by scanning a printhead, a full-line type printer employing a printhead having a length corresponding to the width of a maximum printing medium may be adopted. For a full-line type printhead, either the arrangement which satisfies the full-line length by combining a plurality of printheads as described above or the arrangement as a single printhead obtained by forming printheads-integrally can be used. Each of the above-described embodiments comprises means (e.g., an electrothermal transducer or the like) for generating heat energy as energy utilized upon execution of ink discharge, and adopts the method which causes a change in state",
+    "textAfterTable": "JP2002225304A * Title not available JP2002254740A Title not available * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US7330677 * Oct 18, 2005 Feb 12, 2008 Canon Kabushiki Kaisha Image-forming apparatus and method for controlling the same US7539882 * May 30, 2006 May 26, 2009 Rambus Inc. Self-powered devices and methods US8125658 Dec 14, 2007 Feb 28, 2012 Brother Kogyo Kabushiki Kaisha Electronic device including non-volatile display portion US8127158 May 26, 2009 Feb 28, 2012 Rambus Inc. Self-powered devices and methods US8516279 * Feb 27, 2012 Aug 20, 2013 Rambus Inc. Self-powered devices and methods US8850242",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

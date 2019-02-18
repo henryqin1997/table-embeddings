@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 28, 2009",
+            "Jan 10, 2012",
+            "Sep 12, 2013",
+            "Feb 21, 2014",
+            "Jul 21, 2014",
+            "Jul 24, 2014"
+        ],
+        [
+            "Code",
+            "FPAY",
+            "AS",
+            "AS",
+            "REMI",
+            "PRDP",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Patent reinstated due to the acceptance of a late maintenance fee",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Year of fee payment: 4",
+            "Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:CORNISH, DARRYL;REEL/FRAME:027507/0652 Owner name: HUSTON, CHARLES D., TEXAS Effective date: 20110721",
+            "Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:HUSTON, CHARLES D.;REEL/FRAME:031191/0336 Effective date: 20130912 Owner name: FREIGHT TRACKING TECHNOLOGIES, LLC, TEXAS",
+            "",
+            "Effective date: 20140724",
+            "Year of fee payment: 8"
+        ]
+    ],
+    "pageTitle": "Patent US7075481 - System and method for determining freight container locations - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7075481?dq=5,960,411",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988962.66/warc/CC-MAIN-20150728002308-00033-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 474564807,
+    "recordOffset": 474541189,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{27579=Another correction approach which has not yet matured but is promising is a so-called \u201cpseudolite\u201d correction. With a pseudolite a GPS transmitter transmits a timing signal much like a GPS satellite. See, The Use of Pseudo-Satellites For Improving GPS Performance, D. Klein, B. Parkinson, Navigation (1984), reprinted Vol. III GPS Navigation p. 135 (1986); Optimal locations of Pseudolites for Differential GPS, B. Parkinson, K. Fitzgibbon, 30 Navigation J. No.4, winter 1986-87 (incorporated by reference for background). The pseudolite transmits from a known location on or near the standard GPS carrier frequency (e.g. L1 or L2) to appear to the GPS receiver like another gps satellite. The difference is the pseudolite does not have normal gps errors (or at least minimal), such as ephemeris, ionospheric, multipath, etc., and more importantly, the pseudolite does not have the intentional degradation, selective availability. Additionally, a differential correction signal can be added to the pseudolite signal if desired. A primary benefit of use of pseudolites is that unlike normal differential correction, pseudolites do not require a separate communications channel. That is, the pseudolites appear as another satellite channel to the receiver. Another benefit is that the timing data from the pseudolite channel is known to be much more precise., 22734=The present invention is a continuation-in-part of U.S. patent application Ser. No. 07/804,368 filed Dec. 10, 1991, now U.S. Pat. No. 5,364,093 entitled \u201cGolf Distance Measuring System and Method\u201d and a continuation of Ser. No. 08/334,733 filed Nov. 4, 1994, now U.S. Pat. No. 6,266,008 entitled \u201cSystem and Method for Determining Freight Container Locations.\u201d, 25422=As a GPS receiver locates 3 or 4 satellites it determines its distance from each satellite. The intersection of these 3 or 4 spheres enables a precise location of the receiver (and some compensation for timing errors in the receiver's internal clock). The GPS system should have 21 satellites and 3 spares once the system is fully deployed. The full constellation of 24 ellites was declared operational in 1994.}",
+    "textBeforeTable": "Patent Citations It should be understood that a variety of combinations of the above embodiments can be easily made. For example, a remote unit 10 may be configured to only operate when it is moved\u2014therefore it includes only the motion detector 54. Movement initiates operation of the repeater 50 and radio system 20 for a short time period or alternatively, when movement stops. ) and determines a location for each remote receiver. A differential correction from the calibration section 40 is applied to achieve a more accurate location if desired. FIG. 5 When operation is initiated, the repeater 50 simply begins to amplify an transmit the GPS timing signals it receives. Therefore, the repeater 50 transmits an identification and a number of GPS timing signals. Each timing signal includes a satellite identification. The base station 12 receives the GPS timing signals ( attached. The remote unit 10 is attached to a freight container 90 when it enters the freight yard. The remote unit 10 is configured to operate once a week unless it is moved. That is, the timer 52 is programmed to initiate operation of the remote unit 10 once every 7 days. Alternatively, motion detector 54 will initiate operation of the remote unit 10 whenever it senses movement. FIG. 6 , the freight yard has a number of freight containers 90 positioned along accessways 92. A number of the",
+    "textAfterTable": "Apr 17, 1992 Jun 29, 1993 Auto-Trac, Inc. Vehicle tracking and security system US5440491 * Oct 18, 1994 Aug 8, 1995 Kabushiki Kaisha Toshiba Pseudo GPS signal transmitting system in a base station US5491486 Apr 25, 1994 Feb 13, 1996 General Electric Company Mobile tracking units employing motion sensors for reducing power consumption therein US5512902 Apr 18, 1994 Apr 30, 1996 Northrop Grumman Corporation Stock locator system using GPS translator US5519403 Nov 29, 1993 May 21, 1996 Motorola, Inc. Global positioning system communications multi-interface US5539810 * Dec 28, 1993 Jul 23, 1996 Highwaymaster Communications, Inc. Data messaging in a communications network US5550551 Jul 25, 1994 Aug 27, 1996 At&T Corp. Position monitoring system and method US5956250 * May 1, 1995 Sep 21, 1999 Caterpillar Inc. Apparatus and method for autonomous vehicle navigation using absolute data",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Apr 23, 1998",
+            "Oct 27, 2003",
+            "Oct 26, 2007",
+            "Jan 2, 2012",
+            "Feb 22, 2012",
+            "Feb 22, 2012",
+            "Oct 31, 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "SULP",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Surcharge for late payment",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: NEC CORPORATION, A CORPORATION OF JAPAN, JAPAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:SHINOHARA, MASAYUKI, C/O NEC CORPORATION;REEL/FRAME:009135/0746 Effective date: 19971201",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "Year of fee payment: 11",
+            "Year of fee payment: 12",
+            "Owner name: RAKUTEN, INC., JAPAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:NEC CORPORATION;REEL/FRAME:029214/0476 Effective date: 20120514"
+        ]
+    ],
+    "pageTitle": "Patent US6067298 - ATM switching system which separates services classes and uses a code ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6067298?dq=6,621,746",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00156-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 477469827,
+    "recordOffset": 477437710,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{95622=The entire disclosure of Japanese Patent Application No. 8-279763 filed on Oct. 23, 1996 including specification, claims, drawing and summary are incorporated herein by reference in its entirety.}",
+    "textBeforeTable": "Patent Citations The entire disclosure of Japanese Patent Application No. 8-279763 filed on Oct. 23, 1996 including specification, claims, drawing and summary are incorporated herein by reference in its entirety. Furthermore, whether or not the packet reaching the output line corresponding queue within the input buffer module section 20 is received is decided by comparing the buffer occupancy by the VC to which a packet belong with the result obtained by dividing a fixed threshold value by the number of active VCs. Thus, equal throughput can be achieved between plural VCs via the same output line. Moreover, in the output line corresponding queue within the input buffer module section which can control the cell transfer to all the output lines but cannot control the cell transfer for each VC, the product of an acceptable rate computed using an output line corresponding queue within the output buffer module section and an active VC number in the output line corresponding queue can be set to the rate control section. This setting operation is performed to all the input buffer modules. Thus, even when the number of VCs for the same output line varies between input buffer module sections, the input buffer module section 20 decides the transmit rate by autonomically considering the number of VCs for each output line, so that an equal throughput can be guaranteed between VCs for the same output line. Furthermore, an acceptable rate which can",
+    "textAfterTable": "Lucent Technologies Inc. Method and apparatus for selectively discarding packets US6434115 * Jul 2, 1998 Aug 13, 2002 Pluris, Inc. System and method for switching packets in a network US6501757 * Mar 6, 2000 Dec 31, 2002 Centre For Development Of Telematics ATM switch US6526024 * Jun 30, 2000 Feb 25, 2003 Marconi Communications, Inc. Synchronization of asynchronous back-pressure from one destination to multiple sources US6529478 * Nov 24, 1998 Mar 4, 2003 Fluris, Inc. Pass/drop apparatus and method for network switching node US6529498 * Oct 13, 1998 Mar 4, 2003 Cisco Technology, Inc. Routing support for point-to-multipoint connections US6563798 Jun 29, 1998 May 13, 2003 Cisco Technology, Inc. Dynamically created service class-based routing tables US6567415 * Mar 20, 1999 May 20, 2003 Lucent Technologies Inc. Packet scheduling in a communication",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

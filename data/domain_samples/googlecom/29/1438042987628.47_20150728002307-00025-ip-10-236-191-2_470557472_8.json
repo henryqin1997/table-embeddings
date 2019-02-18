@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Aug 14, 2000",
+            "Feb 13, 2006",
+            "Feb 16, 2010",
+            "Sep 22, 2011",
+            "Mar 21, 2014",
+            "Aug 13, 2014",
+            "Sep 30, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Owner name: HEWLETT-PACKARD DEVELOPMENT COMPANY, L.P., TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:HEWLETT-PACKARD COMPANY;REEL/FRAME:026945/0699 Effective date: 20030131",
+            "",
+            "",
+            "Effective date: 20140813"
+        ]
+    ],
+    "pageTitle": "Patent US6433405 - Integrated circuit having provisions for remote storage of chip specific ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6433405?dq=5537618",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987628.47/warc/CC-MAIN-20150728002307-00025-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 470574699,
+    "recordOffset": 470557472,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{32603=FIG. 4 is a flowchart outlining the method of the present invention. Here it can be seen that at step 100 programming data is selected and received from an input source (typically a JTAG scan chain or a RDR scan chain) via a switching means, such as multiplexor 33. The input of programming data may come from, for example, an EEE JTAG compliant scan chain or a remote diagnosis scan chain 32 depending upon which input is selected. As programming of critical operation information in accordance with the IEEE 1149.1 (JTAG) standard is well known, it will not be further discussed herein. However, the provisions and disclosure of IEEE standard 1149.1 JTAG programming is incorporated herein by reference., 25495=The present invention seeks to solve the problems caused by programming too many programming fuses at one time so as to exceed the current limits of the programming power supply. Further the present invention provides for programming of programming fuses via both the IEEE 1149.1 JTAG scan method, in which no active CPU is required for programming the fuses and the Remote Diagnosis Register (RDR) scan method, in which an active CPU is required for programming.}",
+    "textBeforeTable": "Patent Citations It should be emphasized that the above-described embodiments of the present invention, particularly, any \u201cpreferred\u201d embodiments, are merely possible examples of implementations, merely set forth for a clear understanding of the principles of the invention. Many variations and modifications may be made to the above-described embodiment(s) of the invention without departing substantially from the spirit and principles of the invention. All such modifications and variations are intended to be included herein within the scope of the present invention and protected by the following claims. It will be recognized by those skilled in the art, that the programmable fuse 11 may be either electrically programmable or laser programmable. It will also be recognized that the programming procedure for a laser programmable fuse 11 will differ from that required by an electrically programmable fuse 11. Once programming data is input it is then transferred and stored in a storage device such as programming latch 34 (Step 101). Selected fuses to be programmed are enabled (STEP 102). The programming data stored in programming latch 34 is then burned into selected fuses 11 in fuse block 5 (STEP 103). Where additional fuses are to be burned, steps 100-103 are repeated (STEP 104). FIG. 4 is a flowchart outlining the method of the present invention. Here it can be seen that at step 100 programming data is selected and received from an input source (typically a JTAG scan chain or a",
+    "textAfterTable": "Aug 28, 2002 Apr 27, 2004 Matsushita Electric Industrial Co., Ltd. Programmed value determining circuit, semiconductor integrated circuit device including the same, and method for determining programmed value US6792489 Mar 30, 2001 Sep 14, 2004 Intel Corporation Multistage configuration and power setting US6874083 * Dec 22, 2000 Mar 29, 2005 Intel Corporation Method and apparatus to ensure proper voltage and frequency configuration signals are defined before applying power to processor US6885083 Oct 31, 2002 Apr 26, 2005 Hewlett-Packard Development Company, L.P. Drop generator die processing US7044633 Jan 9, 2003 May 16, 2006 International Business Machines Corporation Method to calibrate a chip with multiple temperature sensitive ring oscillators by calibrating only TSRO US7362645 Sep 30, 2004 Apr 22, 2008 Freescale Semiconductor, Inc. Integrated circuit fuses having corresponding storage circuitry US7713456 Jan 27, 2005 May 11, 2010 Hewlett-Packard Development Compnay, L.P. Drop generator die processing US20040087151 * Oct 31, 2002",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

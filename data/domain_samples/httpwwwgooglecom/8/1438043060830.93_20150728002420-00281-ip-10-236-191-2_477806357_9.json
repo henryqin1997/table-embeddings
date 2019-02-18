@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Sep 4, 1987",
+            "Feb 21, 1989",
+            "Dec 4, 1989",
+            "Nov 9, 1993",
+            "Feb 13, 1994",
+            "Apr 26, 1994"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: GENERAL ELECTRIC COMPANY, P.L.C., THE, 1 STANHOPE Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNOR:HODGKISS, WILLIAM;REEL/FRAME:004760/0164 Effective date: 19870807 Owner name: GENERAL ELECTRIC COMPANY, P.L.C., THE, A BRITISH C Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:HODGKISS, WILLIAM;REEL/FRAME:004760/0164 Effective date: 19870807",
+            "Owner name: GEC PLESSEY TELECOMMUNICATIONS LIMITED, ENGLAND Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNOR:GENERAL ELECTRIC COMPANY, P.L.C., THE;REEL/FRAME:005025/0756 Effective date: 19890109",
+            "Owner name: GPT INTERNATIONAL LIMITED Free format text: CHANGE OF NAME;ASSIGNOR:GEC PLESSEY TELECOMMUNICATIONS LIMITED (CHANGED TO);REEL/FRAME:005240/0917 Effective date: 19890917 Owner name: GEC PLESSEY TELECOMMUNICATIONS LIMITED, ENGLAND Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNOR:GPT INTERNATIONAL LIMITED;REEL/FRAME:005224/0225 Effective date: 19890917",
+            "",
+            "",
+            "Effective date: 19940213"
+        ]
+    ],
+    "pageTitle": "Patent US4901333 - Data transmission systems - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4901333?dq=5,832,511",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00281-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 477831119,
+    "recordOffset": 477806357,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{23450=Referring first to FIG. 1, the various functions or processes to be carriedout by the modem in preparing, say, a 9.6 Kbit/s. data stream for transmission, or in recovering the data stream from received signals, are represented by respective blocks. Thus a stream of bit values from a source 1 is subjected to scrambling, differential coding and mapping in preparation for modulation of two 1800 Hz carrier signals which are in phase quadrature, the filtered carrier signals then being converted from digital to analogue form and filtered again before being applied to a linepair 2 by way of hybrid 3., 22581=The modem is designed to meet requirements originally set out in CCITT draft recommendation V.aa (V.32), published in Com. XVII-R5-E, December 1983, pp 11-51. In accordance with that recommendation a V32 modem is required to transmit binary-coded data at either 4.8 Kbit/s. or 9.6 Kbit/s. as phase and amplitude modulation (QAM) of an 1800 Hz carrier signal at a line symbol rate of 2400 baud/s. over a conventional telephoneline pair, and to receive signals from the line pair in similar format and recover the binary-coded data. For a 4.8 Kbit/s. data rate a 4 QAM format is proposed, while for a 9.6 Kbit/s. data rate either a 16 QAM or a 32 QAMformat is proposed, depending on whether a 4/5 convolution or trellis code is used. In either case the spectrum of the modulated signals is then to be shaped to fall within the nominal 3 KHz voiceband., 24425=Referring also to FIGS. 2 and 3 most of these functions are carried out by means of two digital signal processors 4 and 5 and two gate arrays 6 and 7, under the control of a micro-processor 8, the only analogue circuits required being a digital-to-analogue convertor 9, a comparator 10, two sample-and-hold circuits 11 and 12, an interpolation filter 13 and an anti-aliasing filter 14. The allocation of the digital signal processing functions between the processors 4 and 5 and the gate arrays 6 and 7 are indicated in FIG. 3. The processors 4 and 5 may, for example, be Texas Instruments TMS 32010 and TMS 32020 digital signal processors respectively, each capable of working at an instruction rate of 5 MHz and incorporating a 16 bit processor, a 16 bit multiplier and data stores. Thegate array 6 is required to provide about 3000 gates, and the array 7 about4200, while the control microprocessor 8 may be a type Z80 8 bit microprocessor. The control microprocessor 8, the gate arrays 6 and 7, andthe processors 4 and 5 are interconnected by an 8 bit data bus 15 and by a control or address bus 16., 46477=The values cos (l12\u03c0f/fs) and sin (l12\u03c0f/fs) are pre-calculated and stored in a look-up table. If the detector is arranged to look for \"-1800 Hz\" the \"select\" operation becomes identical for the two tones., 26997=Referring to FIGS. 7 and 8, the signals I(i) are utilised to form the quadrature carrier signals digitally, within the processor 4, as sequencesof 12-bit pulse coded modulated amplitude sample values, which are then combined and converted to analogue form for transmission over the line 2. The sample rate chosen is 9.6 KHz, so that at the symbol rate of 2.4 KHz just four amplitude samples have to be generated in respect of each of thevalues I(i) and Q(i). It will be appreciated that for an 1800 Hz carrier signal each transmitted symbol period is only three quarters of a cycle long., 40691=A tone detector is therefore required to monitor received signals continuously to detect the presence and the phase of tones at specific frequencies. In accordance with the V32 specification the tones transmitted are at 600 Hz, 1800 Hz and 3000 Hz, but it may be sufficient to detect only 600 Hz and 1800 Hz tones, since certain of the tone sequences utilised may be recognised by the presence of 600 Hz only. The tone detector must when set to detect one particular tone reject interference from the other tones generated simultaneously by the modem transmitter which appear in the input path since they are not at this particular stage in the handshake cancelled by the echo canceller.}",
+    "textBeforeTable": "Patent Citations The change in polarity of the output signal of the tone detector, indicating a phase-reversal, occurs between two comparisons, so that the actual zero crossing can only be specified to an accuracy of \ufffdT/2, where T is one symbol period. If the actual values of the successive dot products are examined to see which is closer in magnitude to zero the zerocrossing can then be specified to within half a symbol period, that is to an accuracy of \ufffdT/2. Greater accuracy can be achieved if required with further stages of interpolation. The values cos (l12\u03c0f/fs) and sin (l12\u03c0f/fs) are pre-calculated and stored in a look-up table. If the detector is arranged to look for \"-1800 Hz\" the \"select\" operation becomes identical for the two tones. In order to detect phase reversals eight pairs of Yf(i) values are stored (M=8), giving a separation of 3.2 ms between the present estimate and the reference estimate. The computation of dYf(i) at symbol i, as shown schematically in FIG. 15, requires the storage of four pairs of cos and sin values, four x(n) values, four pairs of multiply and accumulate, and two select processes. Computing Yf(i) from four sequential values of dYf(i) then requires four pairs of store and add processes. in a cyclic fashion according to the value of i, which can be carried out a \"select\" operation. exp. (-iL2\u03c0f/fs)=\ufffd1 or \ufffdj With the particular",
+    "textAfterTable": "Non-Patent Citations Reference 1 \"A New Digital Echo Canceller for Two-Wire Full-Duplex Data Transmission\", Mueller, IEEE Transaction on Communications, vol. Com-24, No. 9 Sep. 1976 pp. 956-62 379/410. 2 \"Microprocessor Implementation of High-Speed Data Modems\", Van Gerwen et al., IEEE Transactions on Communications, vol. Com-25, No. 2, Feb. 1977 pp. 238-250. 3 * A New Digital Echo Canceller for Two Wire Full Duplex Data Transmission , Mueller, IEEE Transaction on Communications, vol. Com 24, No. 9 Sep. 1976 pp. 956 62 379/410. 4 * Microprocessor Implementation of High Speed Data Modems , Van Gerwen et al., IEEE Transactions on Communications, vol. Com 25, No. 2, Feb. 1977 pp. 238 250. * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US5016205 * Apr 27, 1989 May 14, 1991 Motorola, Inc. Digital signal processor based AGC US5267322",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

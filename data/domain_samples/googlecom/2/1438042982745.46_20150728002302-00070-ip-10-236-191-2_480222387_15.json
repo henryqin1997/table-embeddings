@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "10 Jun 1998",
+            "31 Dec 2001",
+            "21 Jan 2004",
+            "10 Jan 2005",
+            "12 Jan 2009",
+            "26 Dec 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: DIGITAL EQUIPMENT CORPORATION, MASSACHUSETTS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:ZALEWSKI, STEPHEN H.;MASON, ANDREW H.;JORDAN, GREGORY H.;AND OTHERS;REEL/FRAME:009249/0338 Effective date: 19980605",
+            "",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6260068 - Method and apparatus for migrating resources in a multi-processor computer ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com.au/patents/US6260068?ie=ISO-8859-1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 15,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00070-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 480285863,
+    "recordOffset": 480222387,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{193616=The same operation step is also illustrated in FIG. 10A. FIG. 10A shows an illustrative system consisting of two partitions: partition 1 (1000) and partition 2 (1002). Each partition 1000 and 1002 includes a console program schematically illustrated as boxes 1006 and 1016, respectively. Each partition 1000 and 1002 also contains an operating system instance illustrated in operating system instance 1 (1008) and operating system instance 2 (1018). Partition 1 (1000) also includes a resource 1010 which is being used by operating system instance 1 (1008) as indicated schematically by arrow 1011. In the first step of the migration process, operating system instance 2 (1018) makes a request, schematically indicated by arrow 1014, to operating system instance 1 (1008) to use resource 1010., 194618=In accordance with the push model used in the present invention, operating system instance 1 (1008) must agree to the transfer of the requested resource 1010 to operating system instance 2 (1018). If operating system instance 1 (1008) agrees, it quiesces the resource 1010 as indicated in step 904. The next step in the process is also illustrated schematically in FIG. 10B in which the elements common to FIG. 10A are indicated with the same numerical designations. For example, partition 1 is labeled 1000 in both FIGS. 10A and 10B. As shown in FIG. 10B, If operating system instance 1 (1008) agrees to migrate the resource, operating system instance 1, 1008 quiesces or stops its use of resource 1010 as indicated schematically by dotted arrow 1020., 196836=Finally, in step 910, operating system instance 1 (1008) in conjunction with console 1 (1006) informs operating system instance 2 (1018) in conjunction with console 2 (1016) of the transfer so that operating system instance 2 (1018) can begin using the resource. The routine then ends in step 912. This final step in the process is illustrated by FIG. 10E in which operating system instance 1 (1008) informs operating system instance 2 (1018) that the resource 1024 is now available. This operation is shown schematically by arrow 1030 and involves known and conventional interprocess communications. Operating system instance 2 (1018) may then use resource 1024 as shown schematically by arrow 1032., 196205=Next, in step 908, console 1 (1006) modifies the configuration tree 1012 to indicate the new owner of the resource. This step is illustrated schematically in FIG. 10D where console 1 (1006) modifies configuration tree 1012 as indicated schematically by arrow 1026. This modification effectively moves resource 1010 from partition 1 (1000) to partition 2 (1002) as shown schematically by arrow 1028 so that the resource now appears in partition 2 (1002) as shown schematically by element 1024., 195516=Next, operating system instance 1 (1008) informs console 1 (1006) of the intended change of ownership of the resource as indicated in step 906. This step in the migration process is illustrated in FIG. 10C. In this step, operating system instance 1 (1008) informs console 1 (1006) that a transfer of ownership is requested as indicated schematically by arrow 1022. In particular, operating system instance 1 (1008) informs console 1 (1006) to change the owner and current_owner fields for resource 1010 in configuration tree 1012, as described below.}",
+    "textBeforeTable": "Patent Citations Other aspects, such as the specific instructions utilized to achieve a particular function, as well as other modifications to the inventive concept are intended to be covered by the appended claims. In yet another approach, instances would allocate a resource from the unassigned pool when their needs require it. When they are finished with the resource, they return it to the unassigned pool. If the pool is empty, an instance has to operate with its then-existing allocation of the resource. So, we have a common pool, but no request/release protocol is required between instances. Although an exemplary embodiment of the invention has been disclosed, it will be apparent to those skilled in the art that various changes and modifications can be made which will achieve some of the advantages of the invention without departing from the spirit and scope of the invention. For example, it will be obvious to those reasonably skilled in the art that, although the description was directed to a particular hardware system and operating system, other hardware and operating system software could be used in the same manner as that described. Further, other migration scenarios are possible. For example, a system manager could direct the first operating system instance to quiesce a resource and then place the resource into the \u201cunassigned\u201d state. Some time later, a second instance could discover a need for the resource and remove it from the pool of",
+    "textAfterTable": "Compaq Computer Corp. Computer implemented method and apparatus for dynamic configuration of a computer system and circuit boards including computer resource allocation conflict resolution US5471609 22 Sep 1992 28 Nov 1995 International Business Machines Corporation Method for identifying a system holding a `Reserve` US5481707 11 Apr 1995 2 Jan 1996 Unisys Corporation Dedicated processor for task I/O and memory management US5481719 9 Sep 1994 2 Jan 1996 International Business Machines Corporation Exception handling method and apparatus for a microkernel data processing system US5517648 16 Mar 1995 14 May 1996 Zenith Data Systems Corporation Symmetric multiprocessing system with unified environment and distributed system functions US5537574 30 Mar 1992 16 Jul 1996 International Business Machines Corporation Sysplex shared data coherency method US5574914 8 Sep 1994 12 Nov 1996 Unisys Corporation Method and apparatus for performing system resource partitioning US5583987 21 Dec 1994 10 Dec 1996 Mitsubishi Denki Kabushiki Kaisha Method and apparatus for initializing a multiprocessor system",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

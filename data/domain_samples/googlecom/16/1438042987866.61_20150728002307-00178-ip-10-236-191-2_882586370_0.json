@@ -1,0 +1,55 @@
+{
+    "relation": [
+        [
+            "Property",
+            "itemReviewed (required*)",
+            "reviewBody",
+            "author (required)",
+            "datePublished",
+            "reviewRating",
+            "reviewRating.ratingValue",
+            "reviewRating.bestRating (required*)",
+            "reviewRating.worstRating (required*)"
+        ],
+        [
+            "Type",
+            "Thing",
+            "Text",
+            "Person or Organization",
+            "Date",
+            "Rating",
+            "Number",
+            "Number",
+            "Number"
+        ],
+        [
+            "Description",
+            "The item that is being reviewed. This needs to be a valid schema.org type. * If review is embedded into another schema.org type, using review property, then there is no need to mark up the itemReviewed property.",
+            "The actual body of the review.",
+            "The author of the review. The reviewer\u2019s name needs to be a valid name.",
+            "The date that the review was published, in ISO 8601 date format.",
+            "The rating given in this review. A nested schema.org/Rating (or more specific subtype, most typically AggregateRating).",
+            "A numerical quality rating for the item.",
+            "The highest value allowed in this rating system. * Required if the rating system is not on a 5-point scale. If bestRating is omitted, 5 is assumed.",
+            "The lowest value allowed in this rating system. * Required if the rating system is not on a 5-point scale. If worstRating is omitted, 1 is assumed."
+        ]
+    ],
+    "pageTitle": "Enabling Rich Snippets for Reviews and Ratings \u00a0 | \u00a0 Structured Data \u00a0 | \u00a0 Google Developers",
+    "title": "",
+    "url": "https://developers.google.com/structured-data/rich-snippets/reviews?hl=en&rd=1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987866.61/warc/CC-MAIN-20150728002307-00178-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 882602764,
+    "recordOffset": 882586370,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{47786=Last updated July 23, 2015.}",
+    "lastModified": "Thu, 23 Jul 2015 21:13:46 GMT",
+    "textBeforeTable": "Review type definition A review is someone's evaluation of something. In addition to the text of the review, the markup can include a reviewRating, which expresses a summary of the review as a numeric value. Reviews We support reviews and ratings for a wide range of schema.org types, including businesses, products, and different creative works such as books or movies. When Google finds valid reviews or ratings markup, we may show a rich snippet that includes stars and other summary info from reviews or ratings. Reviews and ratings are two ways to express an evaluation about a range of items. A review is the evaluation described as text, and a rating is an evaluation described on a numeric scale (such as 1 to 5). A rating can be marked marked up in conjunction with, and as part of, a textual review. Enabling Rich Snippets for Reviews and Ratings Show Navigation Structured Data Testing Tool Testing Your Markup Testing Show Your Site Name in Search",
+    "textAfterTable": "Examples Here we show a simple example of restaurant review. Note that itemReviewed property is explicitly described using a schema.org type. Try to use the most specific type for your reviewed items. We are in the process of implementing JSON-LD support for this Rich Snippet type. At the current time, we recommend using microdata or RDFa. Microdata <div itemscope itemtype=\"http://schema.org/Review\"> <div itemprop=\"itemReviewed\" itemscope itemtype=\"http://schema.org/Restaurant\"> <span itemprop=\"name\">Legal Seafood</span> </div> <span itemprop=\"reviewRating\" itemscope itemtype=\"http://schema.org/Rating\"> <span itemprop=\"ratingValue\">4</span> </span> stars - <b>\"<span itemprop=\"name\">A good seafood place.</span>\" </b> <span itemprop=\"author\" itemscope itemtype=\"http://schema.org/Person\"> <span itemprop=\"name\">Bob Smith</span> </span> <span itemprop=\"reviewBody\">The seafood is great.</span> </div> RDFa <div vocab=\"http://schema.org/\" typeof=\"Review\"> <div property=\"itemReviewed\" typeof=\"Restaurant\"> <span property=\"name\">Legal Seafood</span> </div> <span property=\"reviewRating\" typeof=\"http://schema.org/Rating\"> <span property=\"ratingValue\">4</span> </span> stars - <b>\"<span property=\"name\">A good seafood place.</span>\" </b> <span property=\"author\" typeof=\"http://schema.org/Person\"> <span property=\"name\">Bob Smith</span> </span> <span property=\"reviewBody\">The seafood is great.</span> </div> JSON-LD <script type=\"application/ld+json\"> { \"@context\": \"http://schema.org/\", \"@type\": \"Review\", \"itemReviewed\": { \"@type\": \"Restaurant\", \"name\": \"Legal Seafood\", }, \"reviewRating\": { \"@type\": \"Rating\", \"ratingValue\": \"4\" }, \"name\": \"A good seafood place.\", \"author\": { \"@type\": \"Person\", \"name\": \"Bob Smith\" }, \"reviewBody\": \"The seafood is great.\" } </script> Alternatively, you can embed a review into another schema.org type, using its review property. Microdata <div itemscope itemtype=\"http://schema.org/Product\"> <img itemprop=\"image\" src=\"catcher-in-the-rye-book-cover.jpg\" alt=\"Catcher in the Rye\"/> <span itemprop=\"name\">The Catcher in the Rye</span> <div itemprop=\"review\" itemscope itemtype=\"http://schema.org/Review\"> Review:",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

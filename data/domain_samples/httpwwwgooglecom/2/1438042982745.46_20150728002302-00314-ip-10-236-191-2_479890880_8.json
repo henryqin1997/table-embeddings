@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Date",
+            "May 7, 2001",
+            "Nov 20, 2006",
+            "Feb 7, 2011",
+            "Jun 10, 2011",
+            "Jun 10, 2011",
+            "Jul 12, 2011",
+            "Jan 1, 2015"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "REMI",
+            "FPAY",
+            "SULP",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Fee payment",
+            "Surcharge for late payment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "Year of fee payment: 7",
+            "Owner name: GOOGLE INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:INTERNATIONAL BUSINESS MACHINES CORPORATION;REEL/FRAME:026664/0866 Effective date: 20110503",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US20020194429 - Method and apparatus for cache synchronization in a clustered environment - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US20020194429?ie=ISO-8859-1&dq=mirroring+data+in+a+remote+data+storage+system",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00314-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 479926119,
+    "recordOffset": 479890880,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{41920=[0004] U.S. patent application Ser. No. xx/xxx,xxx, filed on the same date herewith, entitled \u201cMETHOD AND APPARATUS FOR IMPROVING WRITE PERFORMANCE IN A CLUSTER-BASED FILE SYSTEM\u201d, by Ying Chen et. al., Attorney Docket No. ARC9-2000-0089-US1., 41348=[0002] U.S. patent application Ser. No. 09/755,858, METHOD AND APPARATUS FOR SUPPORTING PARITY PROTECTED RAID IN A CLUSTERED ENVIRONMENT\u201d, by Lawrence Yium-chee Chiu et. al., Attorney Docket No. ARC9-2000-0054-US1, filed on Jan. 5, 2001;, 85340=[0083] A simple way to address cache 114 blocks distributed across different nodes 106-108 is through a global cache directory scheme. One or more embodiments of the invention utilize a global cache directory maintained in multiple nodes 106-108 in a storage cluster 116. A historic point of access list is maintained in a symbolic list of each entry in the cache directory. When an I/O operation is requested, the symbolic list is accessed to determine which node's 106-108 cache contains the data. Further, upon the completion of an I/O operation, the symbolic list is updated. The use of a global cache directory is described more fully in co-pending and commonly assigned U.S. patent application Ser. No. xx/xxx,xxx, filed on the same date herewith, entitled \u201cMETHOD AND APPARATUS FOR A GLOBAL CACHE DIRECTORY IN A STORAGE CLUSTER\u201d, by Lawrence Yium-chee Chiu et. al., Attorney Docket No. ARC9-2000-0055-US1, which application is hereby fully incorporated by reference herein., 41629=[0003] U.S. patent application Ser. No. xx/xxx,xxx, filed on the same date herewith, entitled \u201cMETHOD AND APPARATUS FOR A GLOBAL CACHE DIRECTORY IN A STORAGE CLUSTER\u201d, by Lawrence Yium-chee Chiu et. al., Attorney Docket No. ARC9-2000-0055-US1; and}",
+    "textBeforeTable": "Referenced by [0117] The foregoing description of one or more embodiments of the invention has been presented for the purposes of illustration and description. It is not intended to be exhaustive or to limit the invention to the precise form disclosed. Many modifications and variations are possible in light of the above teaching. It is intended that the scope of the invention be limited not by this detailed description, but rather by the claims appended hereto. The above specification, examples and data provide a complete description of the manufacture and use of the composition of the invention. Since many embodiments of the invention can be made without departing from the spirit and scope of the invention, the invention resides in the claims hereinafter appended. [0116] This concludes the description of one or more embodiments of the invention. In summary, the invention describes a method, apparatus, article of manufacture, and a memory structure for maintaining high availability cache coherency in a distributed cache environment for a storage cluster. Conclusion [0115] Because of simplicity, the concurrent node 106 installation process only supports adding one node 106-108 to the cluster at a time. If there are multiple nodes 106-108 that need to be added to the cluster, a selection process determines which node 106-108 will be added to the cluster first. The new node 106-108 or the failback node 106-108 \u201cA\u201d",
+    "textAfterTable": "US8990166 * Mar 25, 2011 Mar 24, 2015 Sap Se Variable page sizing for improved physical clustering US20050015567 * Jul 15, 2003 Jan 20, 2005 Ofir Zohar Distributed independent cache memory US20100077249 * Mar 25, 2010 Microsoft Corporation Resource arbitration for shared-write access via persistent reservation US20110225371 * Mar 10, 2010 Sep 15, 2011 Lsi Corporation Data prefetch for scsi referrals US20120089716 * Apr 12, 2012 Igor Katz Method for accelerating start up of a computerized system US20120246160 * Mar 25, 2011 Sep 27, 2012 Dirk Thomsen Variable page sizing for improved physical clustering US20140122718 * Nov 1, 2012 May 1, 2014 Netapp, Inc. Lock state synchronization for non-disruptive persistent operation US20140181420 * Feb 4, 2013 Jun",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

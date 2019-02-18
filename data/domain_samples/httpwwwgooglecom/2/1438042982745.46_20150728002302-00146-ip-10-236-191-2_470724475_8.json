@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Aug 4, 1987",
+            "Jul 30, 1991",
+            "Jun 25, 1993",
+            "Jun 30, 1997",
+            "Aug 2, 2001"
+        ],
+        [
+            "Code",
+            "AS",
+            "CC",
+            "FPAY",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Certificate of correction",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: CANON KABUSHIKI KAISHA, 30-2, 3-CHOME, SHIMOMARUKO Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNOR:FUNADA, MASAHIRO;REEL/FRAME:004754/0499 Effective date: 19870730",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US4903145 - Image quality control apparatus capable of density-correcting plural areas ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4903145?dq=5,581,513",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00146-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 470750327,
+    "recordOffset": 470724475,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{59522=During pre-scanning, the selectors 1102, 1103, 1106, and 1107 are connected to the b positions. The values of bit 0 to bit 3 of data (V0 to V7) sent together with the signal CK are input at the addresses of the RAMs 1105 and 1104. Corresponding data is read out in response to the input address data. More specifically, 16-data (H0 to H15) is sent to the adder 1108. The adder 1108 increments xi by one and outputs xi +1 (H0' to H15'). This output data is sent as data (H0 to H15) through the tristate gate 1110 at the trailing edge of the signal CK and is written again in the RAMs 1104 and 1105. As a result, a histogram is formed in the RAMs 1104 and 1105. The resultant histogram is sent to the MPU through the selectors 1102, 1103, 1105, and 1106 upon completion of pre-scanning., 62450=Upon completion of pre-scanning, the MPU 117 reads out the histograms stored in the RAMs 1104 and 105 and forms a density conversion table., 57507=When image data bits V0 to V7 represent a photograph area, i.e., when bit 3 is set at high level, an output from the gate 1004 serves as a positive edge every eight pixels along both the main scanning and subscanning directions. These positive edges are sent to the histogram calculator 1014, and a histogram can be calculated., 59036=FIGS. 12 is a block diagram of the histogram calculator 1012, 1013, or 1014. FIG. 13 is a timing chart of the histogram calculator. The histogram calculator includes DFFs 1101 and 1109, selectors 1102, 1103, 1106, and 1107, RAMs 1104 and 1105, an adder 1108, and a tristate gate 1110. Before pre-scanning, the selectors 1102, 1103, 1105, and 1106 are set in the a positions, and all \"0\" are written in the histogram calculator under the control of the MPU., 56781=The comparator 1001 determines this decision. If lower three bits y0 to y2 of the subscanning counter output are not equal to output bit 0 to bit 2 of the editing RAM, the gates 1003 and 1004 are kept disabled (i.e., kept at \"L\" level)., 57854=If the image data bits V0 to V7 represent character data, i.e., if bit 3 is set at \"L\" level, an output from the gate 1003 is generated every eight main scanning lines, and the signal VCLK is output. Therefore, maximum and minimum values during one main scanning cycle are calculated through the DFF 1007. The maximum value circuit 1010 outputs a larger one of inputs a and b. The DFF 1006 is cleared and outputs a signal of logic \"0\" in response to the main scanning sync signal HSYNC of \"L\" level, i.e., at a start timing of main scanning. As a result, the output from the maximum value circuit 1010 is sent to the histogram calculator 1012 as a maximum value during one main scanning cycle., 58597=Similarly, the minimum value circuit 1011 selects the smaller of inputs a and b. A DFF 1008 is set in response to the main scanning sync signal HSYNC of \"L\" level, i.e., at a start timing of main scanning. In this case, \"FF\" =255 is established. As a result, the output from the minimum value circuit 1011 is output to the histogram calculator 1013 as a minimum value during one main scanning cycle., 55652=FIG. 11 shows the density information extraction circuit. The extraction circuit includes a three-bit comparator 1001, a 1/8 frequency divider 1002, AND gates 1003 and 1004, an inverter 1005, DFFs 1006, 1007, 1008, and 1009, a maximum value detector 1010, a minimum value detector 1011, and histogram calculators 1012, 1013, and 1014., 66718=FIG. 18 is a flow chart for explaining the operation of the above embodiment. In step 2001, pre-scanning is performed. In step 2002, density histograms of the original are calculated. In step 2003, density conversion tables are formed on the basis of the resultant histograms. In step 2004, main scanning is performed to read an image.}",
+    "textBeforeTable": "Patent Citations The present invention is not limited to the particular embodiments described above. Various changes and modifications may be made within the spirit and scope of the invention without departing from the scope of the appended claims. In the above embodiment, interleaved sampling is performed for part of the original to obtain density histograms. However, the density histograms of the entire original, histograms of the maximum and minimum density levels during main scanning in place of the density histograms, or a combination thereof may be utilized. In the above embodiment, 64 gray scale levels as level 0 to level 63 are used as effective levels before and after density conversion. However, the number of gray scale levels can be arbitrarily and independently selected before and after conversion. After the values of the density conversion table are written in the RAM 209, the MPU 211 switches the selectors 208 and 210 to the sides of the A/D converter 207 and the output side I/F 219. Regular scanning as image reading is then started. Data corresponding to j (j=0 to 63) is written at the address corresponding to i (i=0 to 63). After pre-scanning is completed, the MPU 211 calculates the values of the density conversion tables according to the resultant histograms. After the selectors 208 and 210 are changed to the MPU sides, and the calculated values are written in the density conversion RAM 209. Therefore, the above",
+    "textAfterTable": "Image processing method US4731662 * Mar 12, 1986 Mar 15, 1988 Canon Kabushiki Kaisha Image processing method for processing an image signal differently depending on the range of an image characteristic thereof relative to the range within which an output device can reproduce the image characteristic US4731863 * Apr 7, 1986 Mar 15, 1988 Eastman Kodak Company Digital image processing method employing histogram peak detection US4733306 * Feb 3, 1987 Mar 22, 1988 Konishiroku Photo Industry Co., Ltd. Methods of discriminating and copying an image US4791678 * Feb 22, 1988 Dec 13, 1988 Fujitsu Limited Image processing system EP0113016A2 * Nov 22, 1983 Jul 11, 1984 International Business Machines Corporation Correction of shading effects in video images * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

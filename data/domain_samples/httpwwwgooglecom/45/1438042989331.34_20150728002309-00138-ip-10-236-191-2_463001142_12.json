@@ -1,0 +1,66 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Apr 14, 1998",
+            "May 30, 2002",
+            "Oct 22, 2002",
+            "Feb 23, 2005",
+            "Aug 15, 2005",
+            "Nov 21, 2005",
+            "Nov 23, 2009",
+            "Nov 21, 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "CC",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Certificate of correction",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: MORGAN STANLEY, DEAN WITTER, DISCOVER & CO., NEW Y Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:YOUNG, ANDREW R.;TICK, EVAN;TOWSE, ROBERT C.;AND OTHERS;REEL/FRAME:009154/0520;SIGNING DATES FROM 19971222 TO 19971230",
+            "",
+            "",
+            "",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US20010014875 - Computer method and apparatus for optimizing portfolios of multiple participants - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US20010014875?ie=ISO-8859-1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 12,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989331.34/warc/CC-MAIN-20150728002309-00138-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 463039335,
+    "recordOffset": 463001142,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6362=[0061] In the preferred embodiment, SELLi,j and BUYi,j are set to be mutually exclusive for all bonds i owned by a firm j and at least one other firm. This formulation translates into a mixed-integer linear program. The CPLEX software used in the referred embodiment provided for solving mixed-integer linear programming as well as for specifying mutual exclusion. See CPLEX Optimization, Inc. Using the CPLEX Callable Library. Version 4.0 930 Tahoe Blvd., Bldg. 802, Incline Village, Nev. 89451. http://www.cplex.com, 1995 incorporated herein by reference. In alternative embodiments that employ optimization software without this mutual-exclusion facility, but which support zero-one variables, the previous described formulation is appended with the following expressions to achieve the desired result (See also D. G. Luenberger, Linear and Nonlinear Programming, Addison-Wesley, Reading, Mass., Second Edition, 1984, incorporated herein by reference): SELL i , j - \u03b4 i , j \ue89e M \u2264 0 \u2211 i , k \u2208 \u03b8 \ue89e BUY i , k + \u03b4 i , j \ue89e M \u2264 M \u03b4 i , j \u2208 ( 0 , 1 )}",
+    "TableContextTimeStampAfterTable": "{157261=[0070] The following grammar for name expressions is used to specify sectors., 46948=[0005] As noted, in general, optimization techniques for financial applications are known. For example, Adamidou et al., Financial Optimization, S. A. Zenios, Ed., Cambridge University Press, Cambridge, 1993, describe the Prudential-Bache Optimal Portfolio System, based on linear optimization of security holdings. This system emphasizes \u201cscenario analysis,\u201d which involves the evaluation of stochastic price models over user views of volatility employing a linear programming optimization constrained by duration, convexity, and return of holdings., 57182=[0022] The data stored in the front end 30 is then processed by optimization interface 40 and supplied to the optimization engine 190 which preferably employs the CPLEX optimizer. See CPLEX Optimization, Inc., Using the CPLEX Callable Library, Version 4.0, 930 Tahoe Blvd., Bldg. 802, Incline Village, Nev. 89451 (http://www.cplex.com) 1995, incorporated herein by reference. The CPLEX product is installed on the server 120 which can be implemented as a personal computer, such as Dell Optiplex, GXPRO, or for example, as a Unix workstation such as Sun, SPARC-station 20. It should be noted that the server 120 is capable of supporting other workstations such as 100 so that in some embodiments several multi-party portfolio-based exchanges can be implemented using the optimization engine of the server., 61899=[0028] Tax law allows corporations to apply losses realized in a given year against gains incurred within the previous three years to receive tax rebate for previous taxes paid. See 1996 U.S. Master Tax Guide, 79th Edition, Chicago, November 1995, CCH Tax Law Editors. The exemplary application discussed herein utilizes computer technology of the preferred embodiment so as to rebalance a set of bond portfolios by swapping participants' respective holdings so that total book losses over all participants are substantially optimized, allowing the participant firms to realize tax savings., 171337=[0160] The optimization engine at step 230 solves the linear programming matrix provided to it by the optimization interface. Although as indicated previously, the optimization engine is CPLEX, a commercial program from CPLEX Optimization Inc., an alternative optimization program capable of handling mixed integer linear programming can be used. (See description of CPLEX above and CPLEX Optimization, Inc. Using the CPLEX Callable Library. Version 4.0 930 Tahoe Blvd., Bldg. 802, Incline Village, Nev. 89451. http://www.cplex.com, 1995, incorporated herein by reference). As noted, in the preferred embodiment, CPLEX is installed on server 120. In this way, multiple front-end programs can access the remote optimizer over the network., 162968=[0149] In the above grammar, \u201cprint-name\u201d is an optional string that provides textual representation of the constraint for summary purposes. The \u201cOr-applies\u201d expressions specify a group of firms in which a given constraint applies individually to each firm. The \u201cAnd-applies\u201d expressions specify a group of firms to which the constraint applies collectively., 47550=[0006] Optimization methodologies relating to financial applications are surveyed in H. Dahl, A. Meeraus, and S. A. Zenios, Some Financial Optimization Models: I Risk Management, Financial Optimization, S. A. Zenios, Editor, Cambridge University Press, Cambridge, 1993; and in H. Dahl, A. Meeraus, and S. A. Zenios, Some Financial Optimization Models: II Financial Engineering, Financial Optimization, S. A. Zenios, Editor, Cambridge University Press, Cambridge. 1993. Linear programs are described for general immunization of liabilities with fixed-income securities and \u201cdedication\u201d matching of assets to liabilities. The discussed programs become mixed-integer programs if round lots are to be traded. Mixed-integer programs are discussed for optimal settlement of financial forwards in a specific case of mortgage-backed securities and for optimal structuring of collateralized mortgage obligations., 56467=[0021] In the preferred embodiment, data obtained from external sources includes: bond indicatives (e.g., coupon, maturity, etc.) from EJV, Electronic Joint Venture (EJV) Capital Markets Services (http://www.ejv.com) 1996, and Bloomberg, Bloomberg L.P. 499 Park Ave., NY, N.Y. 10022 (http://www.bloomberg.com) 1996, databases, insurance company holdings from the Capital Access FINCOM database, Capital Access Corp. Mountain Heights Center, 430 Mountain Ave. Murray Hill, N.J. 07974 (http://www.interactive.net/\u02dccac) 1996, sector descriptions from EJV and Fact Set, FactSet Research Systems Inc., One Greenwich Plaza, Greenwich, Conn. 06830 (http://www.factset.com) 1996., 187434=[0180] One such approach to achieving fairness that may be used in an alternative embodiment is to employ a method developed by Shapley for constructing a \u201cfair\u201d solution to the classic coalition problem in game theory. See H. Raiffa, The Art and Science of Negotiation, Harvard University Press, Cambridge, 1982, incorporated herein by reference. The general problem considered by Shapley involves n players, each subgroup of which has a given, fixed utility. Usually the largest subgroup, i.e., the entire group, generates greater utility than any other partitioning of the players. The problem addressed by Shapley is to divide the gains among the players so that they all cooperate in a single large coalition rather than splitting apart into cliques. Shapley values give such a division based on fundamental principles, e.g., linear composition of solutions and no payments to players who contribute nothing., 159553=[0096] The following grammar is used for constraint specification:}",
+    "textBeforeTable": "Referenced by [0187] The present invention is not to be limited in scope by the specific embodiments described herein. Indeed, modifications of the invention in addition to those described herein will become apparent to those skilled in the art from the foregoing description and accompanying figures. Doubtless, numerous other embodiments can be conceived that would not depart from the teaching of the present invention, which scope is defined by the following claims. [0186] The intermediary entity must tightly control the timing of the swap, not allowing individual parties to stretch the target trade date. With time slippage comes the risk that the market will rally. If the market rallies, there will be fewer underwater securities in the pool and less losses embedded in each security. One technique of controlling timing is to limit participation and plan a series of swaps. [0185] Individual parties must be prevented or at worst dissuaded from \u201ccherry picking\u201d prices or securities, i.e., viewing the optimized trades and selectively committing to only certain trades. For example, a party which avoids an assigned buy trade that is perceived as too expensive is hoping to engage in a form of arbitrage. That party wants to buy at no worse than fair value, but of course does not identify the bonds it is selling above fair value. [0184] To negotiate an actual deal it is important",
+    "textAfterTable": "Systems and methods for multi-objective portfolio optimization US7574396 Dec 4, 2002 Aug 11, 2009 Andrew Kalotay Associates, Inc. Method of and apparatus for administering an asset-backed security using coupled lattice efficiency analysis US7593880 Mar 19, 2003 Sep 22, 2009 General Electric Company Methods and systems for analytical-based multifactor multiobjective portfolio risk optimization US7630928 Feb 20, 2004 Dec 8, 2009 General Electric Company Systems and methods for multi-objective portfolio analysis and decision-making using visualization techniques US7640201 Mar 19, 2003 Dec 29, 2009 General Electric Company Methods and systems for analytical-based multifactor Multiobjective portfolio risk optimization US7689493 * Nov 10, 2006 Mar 30, 2010 Merrill Lynch Co., Inc. Methods for asset index tracking US8126795 Feb 20, 2004 Feb 28, 2012 General Electric Company Systems and methods for initial sampling in multi-objective portfolio analysis US8219477 Feb 20, 2004 Jul 10, 2012 General Electric Company Systems and methods for multi-objective portfolio analysis using pareto sorting evolutionary algorithms",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

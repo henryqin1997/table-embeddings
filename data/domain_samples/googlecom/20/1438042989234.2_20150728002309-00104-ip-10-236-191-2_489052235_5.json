@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Cited Patent",
+            "US3345458 *",
+            "US3388391 *",
+            "US3396377 *",
+            "US3400377 *",
+            "US3528068 *"
+        ],
+        [
+            "Filing date",
+            "Oct 16, 1963",
+            "Apr 7, 1965",
+            "Jun 29, 1964",
+            "Oct 13, 1965",
+            "Feb 24, 1967"
+        ],
+        [
+            "Publication date",
+            "Oct 3, 1967",
+            "Jun 11, 1968",
+            "Aug 6, 1968",
+            "Sep 3, 1968",
+            "Sep 8, 1970"
+        ],
+        [
+            "Applicant",
+            "Rca Corp",
+            "Rca Corp",
+            "Gen Electric",
+            "Ibm",
+            "Computer Communication Inc"
+        ],
+        [
+            "Title",
+            "Digital storage and generation of video signals",
+            "Digital storage and generation of video signals",
+            "Display data processor",
+            "Character display system",
+            "Device for converting binary coded digital information to symbol form for video display"
+        ]
+    ],
+    "pageTitle": "Patent US3685039 - Video data display system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US3685039?dq=6480844",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00104-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 489076335,
+    "recordOffset": 489052235,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{11275=[22] Filed: April 9, 1969 [21] Appl. No.: 814,534, 27796=TABLE 1 Characters Pass- Raster ing Load Point Load Point line no. Function In Main Memory 3 Vertical Blanking 41-6-0 4 of Video Screen 61-80 8 61-80 10 32 33 Xfer lto Memory 1-20 34 Shift Register 21-40 35 41-60 36 Display Character 61-80 37 7-20 on Video Screen 1-20 38 i.e. (recirculate 7 21-40 39 times in character 41-60 40 memory shift register 10) 61-80 41 Xfer FM/C 1-20 42 Display FM/C on 21-40 43 Video Screen 1 41-60 44 61-80 45 Spare -1-20 46 Xfer 21-40 21-40 46 Xfer 21-40 2140 47 41-60 48 Display 61-80 49 Character 1-20 50 2 1-40 21-40 51 41-60 52 61-80 53 l-20 54 Xfer FM/C 21-40 55 41-60 56 Display FM/C 61-80 57 1-20 58 Spare 2 1-40 59 Xfer 41-60 41-60 60 61-80 61 l-20 62 Display 21-40 63 Character 41-60 64 41-60 61-80 65 1-20 66 21-40 67 Xfer FM/C 41-60 68 61-80 69 Display 1-20 70 21-40 71 Spare 41-60 72 Xfer 61-80 61-80 73 1-20 74 21-40 75 Display 41-60 76 Character 61-80 77 61-80 1-20 78 21-40 79 41-60 80 Xfer FM/C 61-80 81 1-20 82 Display FM/C 21-40 83 41-60 84 Spare 61-80 85 Spare l-20 86 Spare 21-40 87 Spare 41-60 88 Spare 61-80 89 1-20 B) 90 Xfer 1-20 (B) 91 92 Repeat 93 94 of 95 96 l-20 A) 6 97 98 99 100 101 102 Xfer 21-40 (B) Xfer 41-60(B) Xfer 61-80 (B) 145 Xfer 1-20 (C) 158 Xfer 21-40 (C) 171 Xfer 41-60 (C) 184 Xfer61-80(C) 201 Xfer 1-20 (D) 214 Xfer21-40 (D) 227 Xfer 41-60 (D) 240 Xfer 61-80 (D) 241 1-20 242 21-40 243 Display 41-60 244 Character 61-80 245 61-80 (D) 1-20 246 21-40 247 41-60 248 Xfer FM/C 61-80 249 1-20 250 Display F M/C 21-40 251 41-60 252 61-80 256 BLANK 61-80 260 61-80 264 61-80 END OF DlS- PLAY CHARACTER READ ONLY MEMORY (ROM) As indicated above, the characters to be displayed are originally stored in one of the several fields 8 (FIG. 4) of the main memory 7 in the form of a binary coded ACSII. A line of these characters is then brought out to the character memory shift register 4 for being presented or addressed to the read only memory or ROM 5 and to be thereby transformed to the video bit stream to form the visual indication of the characters on the display screen 1. The character ROM comprises a read only 512 (64x8) by five-bit memory matrix of the known design wired so that it reads out parallel bit signals for one line at a time for the top lines of each of the 20 characters as it is simultaneously addressed in turn by each of the 20 characters in the character memory shift register 4 and by a line address signal from the ROM control 12 for the appropriate one of the seven vertical character lines. This line address is provided by the character ROM control circuit 12 under the additional control of the video raster line counter 13 (FIG. 1) and the line counter control 14., 12735=3 Claims, 7 Drawing Figures PATENTEDAumsmn SHEETlHFG AMA C) PATENTED AUG 15 m2 SHEET 5 BF 6 1% w M Q Yaw wkm y w 5 tuw RQQ m N REM kg W WK Madam m A Mai/75L HA/YAGA y QQ Q mm g Q E V M 8 Mg PATENTEDAus 15 1972 SHEEI 6 OF 6 VIDEO DATA DISPLAY SYSTEM BACKGROUND OF THE INVENTION The present display system provides a visual indication of data which is stored in a memory circuit and which may have been pre-recorded or which is being recorded by an operator as, for example, on a magnetic recording tape. Such data is now stored and used in enormous volume in a wide variety of everyday business and other operations. One important recording medium now in use for data or computer systems is the well-known punch card. A standardized system for these cards records 80 characters across the face of a card utilizing vertically aligned perforations for each of the 80 characters which may be, for example, a punched recording of the regular USASCII (ASCII) character code., 11487=[56] References Cited UNITED STATES PATENTS 3,345,458 10/1967 Cole et a1 ..340/324 X 3,388,391 6/1968 Clark ..340/324 3,396,377 7/1968 Strout ..340/324 3,400,377 9/1968 Lee ..340/324 X 3,528,068 9/1970 Johnson ..340/324 A [451 Aug. 15, 1972 Primary ExaminerDavid L. Trafton Att0rneyCharles Hicken [57] ABSTRACT A data display system is disclosed utilizing a conventional television receiver for selectively displaying groups of characters comprising stored data and particularly data of the general type and quantity conventionally recorded on the usual computer punch cards. The video display system is adapted for transferring data already recorded or being recorded in a memory storage unit to the television antenna terminals or video inputs of a monitor without requiring any modification of the receiver or monitor. The display system operates with a master clock or timer circuit which facilitates the read out and conversion of the information from the coded memory data to a video bit stream. The master clock provides standard synchronizing signals for the video display and these same signals also are used to synchronize the several subcircuits utilized in the data transfer from a data memory to the video display.}",
+    "textBeforeTable": "Patent Citations and said output storage means comprises a plurality of flip-flops addressed in parallel and read out in series. 3. Apparatus for displaying characters in accordance with claim 2 wherein said permanent read only memory comprises a matrix for converting parallel bit input signals for one scan line at a time for the lines of each of the characters in a row in sequence as it is simultaneously addressed in turn by each of the characters in said character shift register and by said count signal to provide said parallel bit output signal in which the presence of a dot is represented by one binary digit and the absence of a dot is represented by the other binary digit, and means for applying said video pulses to said television display means to illuminate said dot spaces thereon. means responsive to said synchronizing signals for serially reading out the stored bits in said output storage means to provide a serial bit stream of video pulsescorresponding to dot spaces on said scanline for illumination to form the character portion represented by the corresponding parallel bit output signal, video generator means having output storage means for storing said parallel bit output signals, means for coupling said synchronizing signals to said first memory means, said character shift register means, said raster line counter means and said television display means for synchronizing said flow, synchronizing",
+    "textAfterTable": "* Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US3746793 * Aug 9, 1972 Jul 17, 1973 Phonics Corp Telephone communication system for the hearing impaired US3766313 * Aug 7, 1972 Oct 16, 1973 Rca Corp Circuit for transmitting digital signals to conventional television receiver US3774161 * May 14, 1971 Nov 20, 1973 Raytheon Co Visual display system US3775740 * Nov 29, 1971 Nov 27, 1973 Westinghouse Brake & Signal Display apparatus US3803584 * Feb 12, 1973 Apr 9, 1974 Courier Terminal Syst Inc Display system US3822363 * Aug 9, 1972 Jul 2, 1974 Digi Log Syst Inc Portable computer terminal using a standard television receiver US3838231",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

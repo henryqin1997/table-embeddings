@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jan 11, 1983",
+            "Jul 13, 1984",
+            "Nov 22, 1988",
+            "Mar 27, 1989",
+            "Feb 22, 1993",
+            "Mar 27, 1997"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: BURROUGHS CORPORATION, DETROIT, MI., A CORP. OF MI Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNOR:OSMAN, FAZIL I.;REEL/FRAME:004083/0214 Effective date: 19821223",
+            "Owner name: BURROUGHS CORPORATION Free format text: MERGER;ASSIGNORS:BURROUGHS CORPORATION A CORP OF MI (MERGED INTO);BURROUGHS DELAWARE INCORPORATEDA DE CORP. (CHANGED TO);REEL/FRAME:004312/0324 Effective date: 19840530",
+            "Owner name: UNISYS CORPORATION, PENNSYLVANIA Free format text: MERGER;ASSIGNOR:BURROUGHS CORPORATION;REEL/FRAME:005012/0501 Effective date: 19880509",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US4546273 - Dynamic re-programmable PLA - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4546273?dq=5527183",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988250.59/warc/CC-MAIN-20150728002308-00168-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 471146447,
+    "recordOffset": 471125464,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{18147=Serial No. 457,177, filed January 11, 1983 by David W. Page and entitled \"A Dynamic Data Re-programmable PLA\"., 17995=Serial No. 457,175, filed Jan. 11, 1983 by David W. Page and LuVerne R. Peterson and entitled \"A Re-programmable PLA\", and, 19209=An article describing PLA's in more detail is \"Field-PLA's Simplify Logic Designs\", which was published in Electronic Design of September 1, 1975, at pages 84-90. Another series of articles describing PLA's are \"Field-programmable Arrays: Powerful Alternatives to Random Logic\", Electronics, July 5, 1979, pages 109-114; and \"Field-programmable Logic, Part 2: Sequencers and Arrays Transform Truth Tables into Working Systems\", Electronics, July 19, 1979, pages 132-139., 29054=It should be noted that the bit lines BL1, BL2 . . . BLm are coupled to Refresh Logic 22, which logic is of conventional design. For example, a typical refresh logic suitable for Logic 22 is illustrated and described in an article entitled \"Peripheral Circuits for One-Transistor Cell MOS RAM's\" by F. C. Foss, at page 255 to 261 of the IEEE Journal of Solid State Circuits, Vol. SC-10, No. 5, October, 1975.}",
+    "textBeforeTable": "Patent Citations It may be appreciated from the description above that a dynamic re-programmable logic array has been described in detail. Thus, while the invention has been particularly shown and described in detail with reference to only one embodiment, it will be understood by those skilled in the art that the foregoing and other changes in form and details may be made without departing from the spirit and scope of the invention. Accordingly, it is intended that the present invention only be limited by the appended claims. The operation of this circuit is similar to that described above with reference to the element 18-1 (FIG. 1). Assume the flip-flop 70 is set and flip-flops 71 and 72 are reset. Thus, if the LOAD signal is at a high level, bit line BLa is at a high level while bit lines BLb and BLc are at a low level. If a high-level signal is supplied on the word line WLx at this time, the transistor Q56 will turn on and a charge will be placed on the capacitor C51. Hence, the transistor Q53 will be on and the transistors Q54 and Q55 will be off (bit lines BLb and BLc were at a low level). Therefore, the output signal appearing on Ox will be transferred through Q53 to the output OUT. If the flip-flop 71 is set and 70 and 72 are reset, the output appearing on Ox will",
+    "textAfterTable": "US4779229 * Jul 2, 1986 Oct 18, 1988 Advanced Micro Devices, Inc. Prom with programmable output structures US4787047 * Mar 22, 1985 Nov 22, 1988 Intersil Electrically erasable fused programmable logic array US4791603 * Jul 18, 1986 Dec 13, 1988 Honeywell Inc. Dynamically reconfigurable array logic US4831591 * Jul 8, 1986 May 16, 1989 Nec Corporation Semiconductor memory capable of executing logical operation US4835679 * Jan 14, 1986 May 30, 1989 Hitachi, Ltd. Microprogram control system US4876640 * Feb 7, 1986 Oct 24, 1989 Advanced Micro Devices, Inc. Logic controller having programmable logic \"and\" array using a programmable gray-code counter US4878195 * Sep 10, 1986 Oct 31, 1989 Thomson Semiconducteurs Instruction sequencer for network structure microprocessor US4894805 * Apr 28,",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

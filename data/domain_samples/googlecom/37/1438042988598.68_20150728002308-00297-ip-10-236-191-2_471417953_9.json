@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "Date",
+            "11 Dec 2000",
+            "18 Dec 2007",
+            "28 Mar 2011",
+            "21 Aug 2011",
+            "11 Oct 2011"
+        ],
+        [
+            "Code",
+            "AS",
+            "CC",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Certificate of correction",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: SONY CORPORATION, JAPAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:ASANO, TOMOYUKI;OSAWA, YOSHITOMO;REEL/FRAME:011465/0794 Effective date: 20001030",
+            "",
+            "",
+            "",
+            "Effective date: 20110821"
+        ]
+    ],
+    "pageTitle": "Patent US7260719 - Information processing system, information processing method, and ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com.au/patents/US7260719",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988598.68/warc/CC-MAIN-20150728002308-00297-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 471451599,
+    "recordOffset": 471417953,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6039=Specifically, in accordance with the IEEE 1394 standard, transmission is carried out by repeating the isochronous cycle (nominal cycle) as shown in FIG. 8. In this case, one isochronous cycle is set as 125 \u03bcsec, which corresponds to 100 MHZ as a band. It is prescribed that the isochronous cycle may be other than 125 \u03bcsec. For each isochronous cycle, the data is divided into packets and then transmitted.}",
+    "TableContextTimeStampAfterTable": "{222063=The present invention is applicable to a data transmission system (AV system) in which electronic apparatuses such as various types of digital AV (audio-visual) apparatuses, personal computer units and the like are interconnected via, for example, the IEEE (Institute of Electrical and Electronics Engineers) 1394 bus so that data can be transmitted and received among the apparatuses. In this AV system, a construction is adopted which enables reception of digital satellite broadcast and downloading of the received data., 254409=For example, when a particular equipment transmits ATRAC data, a request for a size of the isochronous packet that is sufficient to secure real-time transmission of the ATRAC data is made to an IRM (isochronous resource manager) inside the IEEE 1394 network system. In the IRM, the current data transmission status is monitored and permission/non-permission is given. If permission is given, it is possible to divide the ATRAC data into isochronous packets and transmit them by the designated channel. This is what is called band reservation in the IEEE 1394 interface., 273659=In this data transmission system, prior to data transmission, the authentication and key sharing protocol is performed by asynchronous transmission of IEEE 1394 between the data transmission apparatus 10 and the data receiving apparatus 20. Thus, the data transmission apparatus 10 and the data receiving apparatus 20 can authenticate the validity of each other and can share the encryption key for transmitting encrypted data by isochronous transmission and the encryption key for transmitting encrypted data by asynchronous transmission., 285399=In this data transmission system, prior to data transmission, the authentication and key sharing protocol is performed by asynchronous transmission of IEEE 1394 between the data transmission apparatus 10 and the data receiving apparatus 20. Thus, the data transmission apparatus 10 and the data receiving apparatus 20 can authenticate the validity of each other and can share the encryption key for transmitting encrypted data by isochronous transmission and the encryption key for transmitting encrypted data by asynchronous transmission., 257180=The music data and the related information recorded on the recording medium are reproduced by the media access section 26. The music data is converted into an analog signal and is outputted from an analog audio output terminal 26A. The related information is outputted from a video output terminal 26B. Also, the music data and the related information reproduced by the media access section 26 may be transmitted to another equipment via the IEEE 1394 interface., 253042=The generation timing of this cycle start packet is indicated by one specific apparatus inside the IEEE 1394 network system defined as a cycle master., 250979=In accordance with the IEEE 1394 standard, by adopting such a hardware-related data transmission mode, the need to transmit a transmission clock of a fast cycle between equipments by means of a cable is eliminated and the reliability of signal transmission is improved., 230115=In short, each of the IRD 112 and the MD recorder/player 1 constituting the AV system 103 has a data interface conforming to the IEEE 1394 standard as the data transmission standard., 229929=In the AV system 103, it is assumed that the IRD 112 and the MD recorder/player 1 are interconnected by an IEEE 1394 bus 116., 251862=In accordance with the IEEE 1394 standard, a transmission operation performed within the network connected via the IEEE 1394 bus is called a subaction, and the following two types of subactions are defined. That is, as the two subactions, an asynchronous transmission mode called \u201casynchronous data transfer\u201d for carrying out normal data transmission, and a synchronous transmission mode called \u201cisochronous data transfer\u201d in which a transmission band is ensured, are defined., 210575=For example, in an apparatus such as a video camera, a DVD player or the like having an interface of the IEEE (Institute of Electrical and Electronics Engineers) 1394 high-performance serial bus (hereinafter simply referred to as the IEEE 1394 serial bus), since data can be recorded with high fidelity, it is necessary to prevent data from being illegally copied., 251281=Although the specification of six pins is employed in the above description, there is also the specification of four pins in accordance with the IEEE 1394 format, consisting of only the signal line 601A and the signal line 601B, which are two sets of twisted wires, with the power source (VP) and the ground (VG) omitted. For example, the MD recorder/player 1 in this AV system 103 is actually configured in consideration that a simpler system can be provided for the user by using a cable of the four-pin specification., 244342=In this data transmission system, the data transmission apparatus 10 is a set top box, that is, the IRD 112, for receiving a satellite digital multi-channel broadcast program sent from a communication satellite, and is constituted by a central processing unit (CPU) 12 connected to an internal bus 11, a memory 13, an input interface 14, a user interface 15, and an input/output interface 16. A satellite antenna 115 is connected to the input interface 14. The input/output interface 16 is an IEEE (the Institute of Electrical and Electronics Engineers) 1394 high-performance serial bus interface (hereinafter simply referred to as the IEEE 1394 interface), which is a digital interface, and is connected to the transmission line 30 made of an IEEE 1394 bus., 246103=The data receiving apparatus 20 is a recording/playback apparatus for recording/playing back the contents (music data) and meta-data (related data) received by the data transmission apparatus 10, that is, the set top box, via a recording medium such as a magnetic tape or a magneto-optical disc. The data receiving apparatus 20 is constituted by a central processing unit 22 connected to an interface bus 21, a memory 23, an input/output interface 24, a user interface 25, and a media access section 26. The input/output interface 24 is an IEEE (the Institute of Electrical and Electronics Engineers) 1394 high-performance serial bus interface (hereinafter simply referred to as the IEEE 1394 interface), which is a digital interface, and is connected with the transmission line 30 made of the IEEE 1394 bus., 253741=In the manner as described above, in the IEEE 1394 system, it is possible to transmit and receive isochronous data on multiple channels by one transmission line.}",
+    "textBeforeTable": "Patent Citations Moreover, prior to data transmission, by executing a protocol for mutual authentication and sharing of a plurality of encryption keys between the data transmission apparatus and the data receiving apparatus, the data transmission apparatus and the data receiving apparatus can authenticate the validity of each other and share the encryption keys. Thus, the data requiring the assurance of a transmission band and the related data relating to the data can be transmitted safely and reliably. Also, the data requiring the assurance of a transmission band is encrypted by a first encryption key and then transmitted in the first transmission mode, and the related data relating to the data is encrypted by a second encryption key and then transmitted in the second transmission mode. Thus, the data requiring the assurance of a transmission band and the related data relating to the data can be transmitted safely. As is described above, in the present embodiment, via an interface having a first transmission mode in which a transmission band is ensured and a second transmission mode in which a transmission band is not ensured, data requiring the assurance of a transmission band is transmitted in the first transmission mode and related data relating to the data is transmitted in the second transmission mode. Thus, the data can be transmitted reliably by employing the two types of transmission modes, that is, transmission mode in which a transmission",
+    "textAfterTable": "Sony Corporation Transmission devices and methods EP0874503A2 20 Apr 1998 28 Oct 1998 Sony Corporation Data transmitting and/or receiving apparatus, methods and systems for preventint illegal use of data JPH0974408A Title not available JPH1021645A Title not available JPH1051439A Title not available JPH1127315A Title not available JPH1153264A Title not available JPH07264668A Title not available JPH10210023A Title not available JPH10224402A Title not available JPH10224763A Title not available JPH10303945A",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

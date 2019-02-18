@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Read IOPs",
+            "10000",
+            "8000",
+            "5000",
+            "1000",
+            "0"
+        ],
+        [
+            "Write IOPs",
+            "0",
+            "1000",
+            "2500",
+            "4500",
+            "5000"
+        ]
+    ],
+    "pageTitle": "The Google Developers Console and App Engine - App Engine \u2014 Google Cloud Platform",
+    "title": "",
+    "url": "https://cloud.google.com/appengine/docs/developers-console/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00105-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 857532383,
+    "recordOffset": 857508966,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{62614=If the app sets the Vary: Cookie header, the uniqueness of a resource is computed by combining the cookies and the URL for the request. This approach increases the burden on cache servers. There are 1000 possible values of GOOGAPPUID, and hence 1000 possible entries for each URL for your app. Depending on the load on the proxies between your users and your app, this may decrease the cache hit rate. Also note that for the 24 hours after adding a new batch of users to a version, they may still see cached resources. However, using Vary: Cookie can make it easier to rename static resources that are changing between versions., 63340=The Vary: Cookie technique doesn't work in all circumstances. In general, if your app is using cookies for other purposes, you must consider how this affects the burden on proxy servers. If codeninja had its own cookie that had 100 possible values, then the space of all possible cache entries becomes a very big number (100 * 1000 = 100,000). In the worst case, there is a unique cookie for every user. Two common examples of this are Google Analytics (__utma) and SiteCatalyst (s_vi). In these cases, every user gets a unique copy, which severely degrades cache performance and may also increase the billable instance hours consumed by your app.}",
+    "lastModified": "Tue, 07 Jul 2015 17:41:51 GMT",
+    "textBeforeTable": "A graph appears below the module/version selectors. Use the pulldown menu at the top left to select a performance metric or resource. Select a time period (from 1 hour to 20 days) at the top right, then select one of the graph types: Usage graphs A link appears to the right of these pulldowns. It will target your app to the level of detail that you've selected (using the default module and/or version as appropriate). A single module with one of its versions A single module with all of its versions All modules and versions At the top of the dashboard, a pair of pulldown menus sets the scope of the information to be displayed. You can select: App Engine applications are composed of one or more modules. Each module handles a particular set of HTTP requests. As your application evolves, you may deploy more than one version of a particular module, and establish routing rules so different requests may target different versions of the same module. The dashboard page is available in the left-side menu under Compute>App Engine>Dashboard. The App Engine dashboard The Developers Console lets you manage many other Google Cloud Platform features. Learn more. Datastore Memcache Taskqueues Quota usage Manage application resources Security scan View logs Traffic splitting Manage versions and modules Status of running instances Snapshots of current status Manage an App Engine",
+    "textAfterTable": "Memcache\u00a0Operations The count-per-second of all memcache key operations. Note that each item in a batch request counts as one key operation. Memcache\u00a0Compute Units This graph approximates the resource cost of memcache. It is measured in compute units per second, which is computed as a function of the characteristics of a memcache operation (value size, read vs. mutation, etc.). Memcache\u00a0Traffic Measured in bytes-per-second. It is broken down into memcache bytes sent and received. Requests\u00a0by\u00a0Type Static and dynamic requests per-second. Summary The per-second count of requests and errors. Total Requests includes static, dynamic, and cached requests. Errors are broken down into client (4xx) and server (5xx) errors. Traffic The number of bytes-per-second received and sent while handling all requests. Utilization The total CPU activity in cycles-per-second. Current status tables Five tables appear below the dashboard graph. They summarize the current status of the module(s) and version(s) that you've specified at the top of the page: Table Description Instances Instances are grouped by the App Engine release number. For each release, the table shows the App Engine release that's running the module, the total number of instances, and the average QPS, latency, and memory. Billing\u00a0Status Displays the current usage and cost of billable resources. Current\u00a0Load Application activity is shown by URI. For each URI the table shows requests/minute, total request in the past 24 hours, and",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

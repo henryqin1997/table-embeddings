@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 21, 1998",
+            "Jun 10, 2003",
+            "Jan 9, 2006",
+            "Jul 19, 2010",
+            "Dec 10, 2010",
+            "Feb 1, 2011"
+        ],
+        [
+            "Code",
+            "AS",
+            "CC",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Certificate of correction",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: INTERNATIONAL BUSINESS MACHINES CORPRATION, NEW YO Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:GUTHRIE, GUY L.;KELLEY, RICHARD A.;NEAL, DANNY M.;AND OTHERS;REEL/FRAME:009699/0350 Effective date: 19981221",
+            "",
+            "Year of fee payment: 4",
+            "",
+            "",
+            "Effective date: 20101210"
+        ]
+    ],
+    "pageTitle": "Patent US6493779 - Method and system for interrupt handling using device pipelined packet transfers - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6493779?ie=ISO-8859-1&dq=6,460,050",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00089-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 480993091,
+    "recordOffset": 480970483,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations The method and system of the present invention has been described in connection with a preferred embodiment as disclosed herein. Although an embodiment of the present invention has been shown and described in detail herein, along with certain variants thereof, many other varied embodiments that incorporate the teachings of the invention may be easily constructed by those skilled in the art. Accordingly, the present invention is not intended to be limited to the specific form set forth herein, but on the contrary, it is intended to cover such alternatives, modifications, and equivalents, as can be reasonably included within the spirit and scope of the invention. Since the interrupt completions can originate from the local interrupt controller 104 and go all the way back to the I/O device, 127 the interrupt service code does not need to write to the device 127 to signal interrupt completion. Likewise, on interrupt generation, the I/O device 127 sends the information needed by the device driver to determine the reason for the device's interrupt to the controller and therefore the latency of polling the I/O device on interrupt is eliminated. Lastly, all transaction go across the same path as data, and therefore the mechanisms used to extend the I/O out away from the box, will also work for the interrupt controller. The protocol developed by this invention allows the local interrupt controller 104 to bounce back interrupts to the I/O devices",
+    "textAfterTable": "US6240474 * Sep 16, 1997 May 29, 2001 International Business Machines Corporation Pipelined read transfers US6263397 * Dec 7, 1998 Jul 17, 2001 Intel Corporation Mechanism for delivering interrupt messages US6418497 * Dec 21, 1998 Jul 9, 2002 International Business Machines Corporation Method and system for interrupt handling using system pipelined packet transfers * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US8725921 * Jul 19, 2012 May 13, 2014 Panasonic Corporation Virtual multi-processor system US20120284443 * Jul 19, 2012 Nov 8, 2012 Panasonic Corporation Virtual multi-processor system * Cited by examiner Classifications U.S. Classification",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

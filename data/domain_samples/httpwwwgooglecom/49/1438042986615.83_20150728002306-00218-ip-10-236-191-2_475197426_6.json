@@ -1,0 +1,81 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US7616150",
+            "US7639175",
+            "US7843380",
+            "US8044857 *",
+            "US8089402",
+            "US8154445",
+            "US20130003783 *",
+            "CN101482605B",
+            "WO2013090571A1 *"
+        ],
+        [
+            "Filing date",
+            "Sep 27, 2007",
+            "Sep 27, 2007",
+            "Sep 27, 2007",
+            "Aug 26, 2009",
+            "Aug 26, 2009",
+            "Mar 30, 2010",
+            "",
+            "Jan 22, 2009",
+            "Dec 13, 2012"
+        ],
+        [
+            "Publication date",
+            "Nov 10, 2009",
+            "Dec 29, 2009",
+            "Nov 30, 2010",
+            "Oct 25, 2011",
+            "Jan 3, 2012",
+            "Apr 10, 2012",
+            "Jan 3, 2013",
+            "May 4, 2011",
+            "Jun 20, 2013"
+        ],
+        [
+            "Applicant",
+            "Rockwell Collins, Inc.",
+            "Rockwell Collins, Inc.",
+            "Rockwell Collins, Inc.",
+            "Raytheon Company",
+            "Raytheon Company",
+            "Raytheon Company",
+            "Qualcomm Incorporation",
+            "\u4e2d\u56fd\u6c11\u822a\u5927\u5b66",
+            "Northrop Grumman Guidance And Electronics Company, Inc."
+        ],
+        [
+            "Title",
+            "Null steering system and method for terrain estimation",
+            "Method and apparatus for estimating terrain elevation using a null response",
+            "Half aperture antenna resolution system and method",
+            "System and method for correcting global navigation satellite system pseudorange measurements in receivers having controlled reception pattern antennas",
+            "System and method for correcting global navigation satellite system carrier phase measurements in receivers having controlled reception pattern antennas",
+            "System and method for frequency domain correction of global navigation satellite system pseudorance measurements in receivers having controlled reception pattern antennas",
+            "Global navigation satellite system receiver with filter bypass mode for improved sensitivity",
+            "Null widened interference suppression method of high-dynamic satellite navigation system",
+            "Digital beam-forming for simultaneously mitigating weak and strong interference in a navigation system"
+        ]
+    ],
+    "pageTitle": "Patent US6999027 - Accommodation of anti-jamming delays in GNSS receivers - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6999027?dq=autodesk",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 6,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986615.83/warc/CC-MAIN-20150728002306-00218-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 475219931,
+    "recordOffset": 475197426,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{22374=GPS signals are very low in amplitude and are transmitted using a spread-spectrum signal bandwidth centered at 1575.42 and 1227.6 MHz. The GPS signals cover a frequency spread of about 20 MHz. GPS receivers are subject to disruption by jamming signals, which may be transmitted either as narrow band signals or broadband signals. Known GPS receiver systems may reduce the effects of a narrow band jamming by using frequency-selective filters, such as notch filters, to attenuate the jamming signal. However, broad band jamming signals are more difficult to reduce or eliminate (to \u201cnull-out\u201d) as the frequency spread of the jamming signals approximates the frequency spread of the GPS signal. However, because the frequency spreading sequence of the GPS signal is encrypted according to a pseudo-random noise code, the jamming signals cannot be precisely synchronized to the GPS signal. This permits the effects of the jamming signal to be reduced by nulling-out the jamming signal. Further, the signal strength of the jamming signal is typically much greater than the signal strength of the GPS signal and allows the jamming signal to be nulled down to the thermal noise floor., 20865=Each satellite transmits a pair of L-band signals. The pair of signals includes an L1 signal at a frequency of 1575.42 MHz and L2 signal at a frequency of 1227.6 MHz. The L1 and L2 signals are bi-phase signals modulated by pseudo-random noise (PRN) codes and an information signal (i.e., navigation data) encoded at 50 Hz. The PRN codes facilitate multiple access through the use of a different PRN code by each satellite.}",
+    "textBeforeTable": "Patent Citations It is understood that while the detailed drawings, specific examples and particular values given provide preferred exemplary embodiments of the present invention, they are for the purpose of illustration only. The exact hardware and equations described are not disclosed in a limiting fashion. The method and apparatus of the invention is not limited to the precise details and conditions disclosed. Various changes may be made to the details disclosed about departing from the spirit of the invention which is defined by the following claims. In one preferred embodiment, digital anti-jamming processing circuit 24 is a beamformer that supplies corrections via distortion calculator 30 to filter 36. The corrections are provided for each line of site to the raw pseudo range values used in ionospheric corrections circuit 48. By using filter 36, the first derivative of the corrections can be generated. In such an embodiment, filter 36 can be similar to an alpha-beta tracker (commonly used in engineering to track a parameter and its first derivative) or to a two state Kalman filter used for ionospheric corrections. By utilizing beamformer supplied corrections in the calculation of ionospheric corrections, the beamformer induced error is reduced significantly. If the errors after beamformer corrections on L1 and L2 signals are XX=(X\u2212X\u2032) and (YY=Y\u2212Y\u2032), respectively, the error can be represented by replacing X by XX and Y by YY in paragraphs 1 and 2 discussed in the background of",
+    "textAfterTable": "US20040145517 * Jan 5, 2004 Jul 29, 2004 Inmarsat, Ltd. Method and apparatus for a satellite payload and radiodetermination * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US7616150 Sep 27, 2007 Nov 10, 2009 Rockwell Collins, Inc. Null steering system and method for terrain estimation US7639175 Sep 27, 2007 Dec 29, 2009 Rockwell Collins, Inc. Method and apparatus for estimating terrain elevation using a null response US7843380 Sep 27, 2007 Nov 30, 2010 Rockwell Collins, Inc. Half aperture antenna resolution system and method US8044857 * Aug 26, 2009 Oct 25, 2011 Raytheon Company System and method for correcting global navigation satellite system pseudorange measurements in receivers having controlled reception pattern antennas US8089402 Aug 26, 2009 Jan 3, 2012 Raytheon Company System and method for correcting global navigation satellite system carrier phase",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

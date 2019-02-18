@@ -11,10 +11,14 @@ torch.manual_seed(1)
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 num_features = 2048
 num_labels = 3334
-num_epochs = 300
+num_epochs = 100
 batch_size = 50
-num_batches = int(1000 / batch_size)
+num_batches = int(2000 / batch_size)
+train_size = 1600
+test_size = 400
 learning_rate = 0.01
+embedding_dim = 32
+hidden_dim = 32
 
 
 class LSTMTagger(nn.Module):
@@ -75,15 +79,9 @@ if __name__ == '__main__':
         dataset.append((torch.from_numpy(np.array(input)[np.array(input) > -1]),
                         torch.from_numpy(np.array(target)[np.array(target) > -1])))
 
-    train_size = int(0.8 * len(dataset))
-    test_size = len(dataset) - train_size
     train_dataset, test_dataset = torch.utils.data.random_split(dataset, [train_size, test_size])
 
-    # These will usually be more like 32 or 64 dimensional.
-    EMBEDDING_DIM = 32
-    HIDDEN_DIM = 32
-
-    model = LSTMTagger(EMBEDDING_DIM, HIDDEN_DIM, num_features, num_labels).to(device)
+    model = LSTMTagger(embedding_dim, hidden_dim, num_features, num_labels).to(device)
     loss_function = nn.NLLLoss()
     optimizer = optim.SGD(model.parameters(), lr=learning_rate)
 

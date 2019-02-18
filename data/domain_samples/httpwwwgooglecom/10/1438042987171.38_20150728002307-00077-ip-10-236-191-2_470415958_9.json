@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jun 26, 2000",
+            "Jun 22, 2006",
+            "Sep 12, 2008",
+            "Jun 22, 2010",
+            "Jan 10, 2011",
+            "Jul 4, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "",
+            "Year of fee payment: 4",
+            "Owner name: TORSAL TECHNOLOGY GROUP LTD. LLC, DELAWARE Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:MOTOROLA, INC.;REEL/FRAME:021527/0213 Effective date: 20080620",
+            "Year of fee payment: 8",
+            "Owner name: CDC PROPRIETE INTELLECTUELLE, FRANCE Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:TORSAL TECHNOLOGY GROUP LTD. LLC;REEL/FRAME:025608/0043 Effective date: 20101103",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6507739 - Apparatus and methods for controlling a cellular communications network ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6507739?dq=7,003,515",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00077-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 470456515,
+    "recordOffset": 470415958,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{44288=As described previously, the payload functions as a transceiver or repeater, communicating data between cellular communication units and ART 220, which are each coupled to one or more BTS 206. In one embodiment, the payload communicates in one frequency range to ART 220 and in another frequency range to cellular communication units. The aircraft payload receives RF signals from ART 220 over ART link 222, downconverts those signals to appropriate cellular frequencies, and provides the cellular signals to the cellular communication units associated with users 212, via subscriber link 211. On the reverse path, the payload receives RF signals from the cellular communication units, upconverts the signals to the frequency range used on the ART link 222, and transmits the upconverted signals to ART 220. In one embodiment, RF signals are exchanged with ART 220 at frequencies within the C-band (e.g., 3-8 GHz), and they are exchanged with cellular communication units within a frequency range of about 800-1800 MHz. In other embodiments, signals could be exchanged with ART 220 or cellular communication units at frequencies within other ranges, depending, among other things, on the type of communications protocol used., 64476=In addition to collecting and transmitting flight parameter information to control center 404, aircraft payload 412 also provides communication channels to multiple cellular communication units 420 over RF links 422. As described previously, cellular communication units 420 send and receive data over wireless link 422 at a particular cellular frequency (e.g., in a range of about 800-1800 MHz) and using a particular cellular communication protocol (e.g., TDMA, CDMA, GSM or others). Aircraft payload 412 communicates this user data to one or more ART 424, via RF link 426. In one embodiment, as described previously, the information exchanged over link 426 is transmitted at a higher frequency (e.g., in a range of about 3-8 GHz) than the information exchanged over link 422.}",
+    "textBeforeTable": "Patent Citations This application is intended to cover any adaptations or variations of the present invention that fall within its scope. The foregoing detailed description, therefore, is not to be taken in a limiting sense, and it will be readily understood by those skilled in the art that various changes in the details, materials, and arrangements of the parts and operations which have been described and illustrated in order to explain the nature of this invention may be made without departing from the spirit and scope of the invention as expressed in the appended claims. It will be appreciated by those of ordinary skill in the art that any arrangement, which is calculated to achieve the same purpose, may be substituted for the specific embodiment shown. For example, although the description refers to implementing various functions of the present invention in particular network elements, many of these functions could be moved to other elements. For example, some or all of the control center functions could be moved into the terrestrial cellular network's OMC, MSO, BTS, and/or ART or into the aircraft payload or AFMS. In addition, some or all of the functions performed by the AOC could be performed by the SS&C, and vice versa. Also, some of the calculations performed by the control center, particularly calculations relating to network parameters, could be calculated by the aircraft, MSO or OMC. In addition, although handoffs and control channels are",
+    "textAfterTable": "Sep 26, 1994 Dec 26, 1995 At&T Corp. Cellular terminal for providing public emergency call location information US5530909 Mar 25, 1994 Jun 25, 1996 Sextant Avionique Method for Radio transmitting information using aircrafts as open transmission relays US5548292 Feb 2, 1995 Aug 20, 1996 Space Systems/Loral Mobile communication satellite payload US5557656 Mar 6, 1992 Sep 17, 1996 Aircell, Inc. Mobile telecommunications for aircraft and land based vehicles US5559865 Jul 8, 1994 Sep 24, 1996 Qualcomm Incorporated Airborne radiotelephone communications system US5574968 Jun 1, 1994 Nov 12, 1996 Motorola, Inc. Satellite cellular communication methods for performing cell-to-cell handoff US5619211 Nov 17, 1994 Apr 8, 1997 Motorola, Inc. Position locating and communication system using multiple satellite constellations US5625867 Sep 30, 1992 Apr 29, 1997 Alcatel Espace Method of handing off traffic in a low orbit satellite communication system serving terminals and communication system using a method of this kind",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

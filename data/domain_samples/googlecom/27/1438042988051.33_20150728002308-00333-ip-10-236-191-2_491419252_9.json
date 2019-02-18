@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Oct 31, 1990",
+            "Jul 1, 1994",
+            "Jun 29, 1998",
+            "Aug 13, 2002",
+            "Jan 29, 2003",
+            "Mar 25, 2003"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: HITACHI, LTD., 6, KANDA SURUGADAI 4-CHOME, CHIYODA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNOR:KYUSHIMA, ICHIRO;REEL/FRAME:005496/0151 Effective date: 19890906",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Effective date: 20030129"
+        ]
+    ],
+    "pageTitle": "Patent US4989145 - Syntax analysis and language processing system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4989145?dq=6978253",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988051.33/warc/CC-MAIN-20150728002308-00333-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 491440463,
+    "recordOffset": 491419252,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations According to the present invention, as described above, the recovery from a syntax error is attained by supposing a correct program from the indentation scheme of a given program and by restoring same, when the error is detected. Therefore, a more accurate and appropriate measure can be taken than in the case when the error recovery is conducted by regarding the program simply as the one-dimensional list of symbols. Additionally, a proper error message can be provided to a user. FIG. 12 illustrates an instance of an indentation rule table 6. In this embodiment, an indentation rule table includes a management table 101 and a rule description table 102. For each indentation rule, the following information is stored in an entry of management table 101: a rule number 103, a number 104 of symbols involved in the rule, and a pointer 105 to a unit of the rule description table 102. A unit of the rule description table is a list of symbol entries, each of which consists of a name 106 and an indentation level 107 of a symbol, arranged in order of appearance in an indentation rule. Lastly, the format of description in the indentation rule description file in the present invention is not limited to the method based on a BNF description method, which is shown in FIG. 3. For instance, a format may be used wherein such a program makes it possible",
+    "textAfterTable": "Referenced by Citing Patent Filing date Publication date Applicant Title US5129074 * Sep 20, 1989 Jul 7, 1992 Hitachi Vlsi Engineering Corporation Data string storage device and method of storing and retrieving data strings US5317509 * Jan 21, 1992 May 31, 1994 Hewlett-Packard Company Regular expression factoring for scanning multibyte character sets with a single byte automata machine US5412799 * Apr 2, 1993 May 2, 1995 Massachusetts Institute Of Technology Efficient data processor instrumentation for systematic program debugging and development US5414853 * Oct 30, 1992 May 9, 1995 International Business Machines Corporation Apparatus and method for checking microcode with a generated restriction checker US5421730 * Nov 27, 1991 Jun 6, 1995 National Education Training Group, Inc. Interactive learning system providing user feedback US5452206 * Sep 19, 1991 Sep 19, 1995 Pacific Bell",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

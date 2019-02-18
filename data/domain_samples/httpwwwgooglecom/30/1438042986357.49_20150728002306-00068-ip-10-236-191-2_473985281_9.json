@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 21, 1981",
+            "Nov 19, 1987",
+            "Nov 8, 1991",
+            "Apr 16, 1996",
+            "Sep 8, 1996",
+            "Nov 19, 1996"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: MOTOROLA, INC. SCHAUMBURG, IL A CORP. OF DE Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:NOUFER, GLENN E.;DONOGHUE, WILLIAM J.;REEL/FRAME:003970/0261 Effective date: 19811218",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Effective date: 19960911"
+        ]
+    ],
+    "pageTitle": "Patent US4471242 - TTL to CMOS Input buffer - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4471242?ie=ISO-8859-1&dq=5987118",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986357.49/warc/CC-MAIN-20150728002306-00068-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 474010587,
+    "recordOffset": 473985281,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations While the invention has been described in a preferred embodiment, it will be apparent to those skilled in the art that the disclosed invention may be modified in numerous ways and may assume many embodiments other than that specifically set out and described above. Accordingly, it is intended by the appended claims to cover all modificatons of the invention which fall within the true spirit and scope of the invention. In choosing reference voltage V48 consideration must also be given to the TTL signal in a logic \"0\" condition, which for TTL is ground to 0.8 volts. Transistor 50 must be on when the TTL signal is at 0.8 volts. Accordingly, the voltage at the source of transistor 50, V48, must be greater than 0.8 volts minus the smallest threshold voltage VT50, i.e., 0.8 minus -0.8 which equals 1.6 volts. Consequently reference voltage V48 should be between 1.6 and 2.4 volts. For reasons concerning speed, the voltage should be made closest to the higher of the two voltages. The utility for reference voltage generator 48 is apparent in the case, as is the case with TTL, where there is a substantial difference between the positive power supply voltage VCC and the lowest voltage level for a logic \"1\", 2.0 volts. If the lowest voltage level for a logic \"1\" is within a threshold voltage VT50 of VCC, then transistor 50 could be ensured of being off",
+    "textAfterTable": "International Business Machines Corporation Circuit and method for voltage level conversion US4380710 * Feb 5, 1981 Apr 19, 1983 Harris Corporation TTL to CMOS Interface circuit * Cited by examiner Non-Patent Citations Reference 1 Dingwall, \"TTL-to-CMOS Buffer Circuit\", RCA Tech. Notes, TN No. 1114, 6-11-1975, pp. 1-3. 2 * Dingwall, TTL to CMOS Buffer Circuit , RCA Tech. Notes, TN No. 1114, 6 11 1975, pp. 1 3. * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US4555642 * Sep 22, 1983 Nov 26, 1985 Standard Microsystems Corporation Low power CMOS input buffer circuit US4558237 * Mar 30, 1984 Dec 10, 1985 Honeywell Inc. Logic families interface circuit and having a CMOS",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

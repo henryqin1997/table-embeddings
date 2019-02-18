@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Feb 27, 1996",
+            "Jun 28, 1996",
+            "Dec 20, 1996",
+            "Dec 21, 2000",
+            "Dec 23, 2004",
+            "Dec 23, 2004"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY",
+            "SULP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment",
+            "Surcharge for late payment"
+        ],
+        [
+            "Description",
+            "Owner name: RTPC CORPORATION, DELAWARE Free format text: ASSIGNMENT OF 1% OF ASSIGNOR S INTEREST;ASSIGNOR:RTMC CORPORATION;REEL/FRAME:007824/0938 Effective date: 19960208 Owner name: TM PATENTS, L.P., DELAWARE Free format text: ASSIGNOR HAS ASSIGNED TO ASSIGNEE, PURSUANT TO THE ASSIGNMENT, A 1% INTEREST IN THE PATENTS, PATENTAPPLICATIONS AND OTHER PROPERTY DESCRIBED IN THE ASSIGNMENT;ASSIGNOR:RTPC CORPORATION;REEL/FRAME:007833/0001 Effective date: 19960208 Owner name: TM PATENTS, L.P., DELAWARE Free format text: ASSIGNMENT OF A 99% INTEREST;ASSIGNOR:RTMC CORPORATION;REEL/FRAME:007833/0719 Effective date: 19960208 Owner name: TMC CREDITORS, LLC, MASSACHUSETTS Free format text: SECURITY INTEREST;ASSIGNOR:TM PATENTS, L.P.;REEL/FRAME:007824/0887 Effective date: 19960208",
+            "Owner name: TM CREDITORS, LLC, MASSACHUSETTS Free format text: SECURITY INTEREST;ASSIGNOR:TM PATENTS, L.P.;REEL/FRAME:007919/0839 Effective date: 19960208",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12",
+            "Year of fee payment: 11"
+        ]
+    ],
+    "pageTitle": "Patent US5222237 - Apparatus for aligning the operation of a plurality of processors - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5222237?dq=6377161",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986022.41/warc/CC-MAIN-20150728002306-00116-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 477489927,
+    "recordOffset": 477462067,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{38226=This is a continuation of application Ser. No. 07/151,386, filed Feb. 2, 1988 now abandoned., 38582=Numerous multi-processors are known in the art. See Wang, A. and Brigg, F. A., Computer Architecture in Parallel Processing, (McGraw Hill, 1984). Illustrative such systems include the Illiac-IV, the Burroughs Scientific Processor (BSP) manufactured by Burroughs Corporation (now Unisys), the Massively Parallel Processor (MPP) developed at the NASA Goddard Space Flight Center and manufactured by Goodyear Aerospace, the DAP manufactured by ICL of England, the STARAN designed by Goodyear Aerospace, the IBM 370/168 MP and IBM 3081/3084 both manufactured by International Business Machines, the Univac 1100/80 manufactured by Sperry Univac (now Unisys), Tandem-16 Nonstop, D-825 manufactured by Burroughs Corporation (now Unisys), the HEP manufactured by Denelcor Inc., the Cray X-MP and Cray-2 each manufactured by Cray Research Inc., and the Cm* and C.mmp, each developed at Carnegie Mellon University.}",
+    "textBeforeTable": "Patent Citations As will be apparent to those skilled in the art, numerous modifications may be made in the practice of the invention. For example, while the invention has been described in terms of apparatus (AND gate 60) which tests for completion of communication on an interconnection network, it may be desirable to make other tests in place of or in addition to such a test of the communication network. Thus, if the computer systems includes mathematics co-processors or the software includes various subroutines whose outputs might alter data to be communicated from one processor to another, it will be desirable to test such equipment or operations to make sure they have completed their tasks before issuing the READY signal to the processors. Such a test can readily be made by using a global OR network to test the state of an activity flag associated with each hardware or software element whose operation must be completed before the program can proceed. The processors are all aligned at the time the READY signal goes logic high which occurs at some point between the request for alignment at line 6 and the time each processor initiates a successful test for a 1-bit in the AL register as at lines 20-23. It is not necessary, however, that each processor make such a test at the same time; and it is not necessary that the first such test be made after the",
+    "textAfterTable": "* Cited by examiner Non-Patent Citations Reference 1 \"The Piecewise Data Flow Architecture: Architectural Concepts\" by Requa and McGraw, IEEE Transactions on Computers, vol. C-32, No. 5--May 1983. 2 P. Tang et al., \"Processor Self-Scheduling for Multiple-Nested Parallel Loops,\" Proc. Int'l. Conf. on Parallel Processing, Aug. 1986, pp. 528-535. 3 * P. Tang et al., Processor Self Scheduling for Multiple Nested Parallel Loops, Proc. Int l. Conf. on Parallel Processing, Aug. 1986, pp. 528 535. 4 R. Gupta, \"The Fuzzy Barrier: A Mechanism for High Speed Synchronization of Processors,\" Proc. Third Int'l. Conf. on Architectural Support for Programming Languages and Operating Systems, Apr. 1989, pp. 54-63. 5 * R. Gupta, The Fuzzy Barrier: A Mechanism for High Speed Synchronization of Processors, Proc. Third Int l. Conf. on Architectural Support for Programming Languages and Operating Systems, Apr. 1989, pp. 54 63. 6 * The Piecewise Data Flow Architecture: Architectural Concepts by Requa and McGraw, IEEE Transactions on",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

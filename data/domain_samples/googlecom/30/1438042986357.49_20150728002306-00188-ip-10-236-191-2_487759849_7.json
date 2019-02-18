@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Feb 2, 1999",
+            "Feb 16, 2006",
+            "Apr 19, 2010",
+            "Sep 10, 2010",
+            "Nov 2, 2010"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: SYSTOLIX LIMITED, UNITED KINGDOM Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:DEWHURST, ANDREW;WORK, GORDON;REEL/FRAME:009732/0985 Effective date: 19990129",
+            "Year of fee payment: 4",
+            "",
+            "",
+            "Effective date: 20100910"
+        ]
+    ],
+    "pageTitle": "Patent US20020019925 - Field programmable processor using dedicated arithmetic fixed function ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US20020019925?ie=ISO-8859-1&dq=actionscript",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986357.49/warc/CC-MAIN-20150728002306-00188-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 487790391,
+    "recordOffset": 487759849,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{34960=[0006] A. Bratt and I. Macbeth describe in \u201cDesign and Implementation of a Field Programmable Analogue Array\u201d (proceedings of ACM FPGA '96 Conference, February 1996) an array of programmable cells. Each cell contains an operational amplifier (OPAMP), multiple programmable capacitors, and switching arrangements for connecting the capacitors in such as a way as to perform the desired function. As it is difficult to manufacture accurately and reliably absolute capacitor and resistor values in typical silicon chip fabrication, a technique known as \u2018switched capacitor filter design\u2019 has been developed and is described in \u201cAnalog MOS Integrated Circuits\u201d\u2014R. Gregorian, G. C. Temes, published by John Wiley & Sons, Inc., 1986. In this technique, reliable filter specification is achieved by a ratio of capacitors and an accurate control of the frequency of a \u2018sampling\u2019 clock. This technique provides programming flexibility but there are still substantial disadvantages in using a device manufactured in this way., 38198=[0011] It is known for digital signal processing devices to have an array of processing elements. Each processing element performs an operation on a piece of data and then passes the result forward to another element for a further operation to be carried out, possibly in combination with data output from other elements. A description of a such a processor array is given in Mead, C., Conway, 1., \u201cIntroduction to VLSI systems\u201d, published by Addison-Wesley, Reading, Mass., 1980 (pages 271 to 279). The connections between the processing elements of the array are fixed. These arrays are usually synchronous, i.e. input data is clocked in on one system clock pulse and the result out on the next clock pulse., 34411=[0005] The concept of Field Programmable Analogue Arrays is known. Hans Klein in \u201cThe EPAC Architecture: An Expert Cell Approach to Field Programmable Analogue Arrays\u201d (proceedings of ACM FPGA '96 Conference, February 1996) describes a device which can implement a limited set of programmable filter functions and gain stages. However, this does not offer the user any degree of design freedom in that all filters are pre-designed and the user only selects the filter which best matches his requirements.}",
+    "textBeforeTable": "Referenced by [0101] In the arrangement shown in FIG. 27 two data packets are multiplied together and the result is then added with separate data stream in the accumulator cell. The resulting output data packet is delayed before being transmitted out of the core array via the array interface. If data flags are set in either input data packet the multiplier will handle the error(s) and reset the flags in the output data packet passed to the accumulator. If the operation of the accumulator results in an error the appropriate error flags are set and these are propagated through as part of the output data packet to the array interface where the error condition is handled and the error flags are reset. [0100] In FIG. 26 data is processed successively by two accumulator cells before being delayed and then processed by a multiplier cell. If an error is detected in the first accumulator the appropriate flags are set and are transmitted to the second accumulator cell in the data packet output. If the second accumulator cell processing results in an error the appropriate flags are set otherwise the error flags form the previous operation are propagated through to the output data packet. When the data reaches the multiplier the error is handled in the appropriate manner and the flags are reset. [0099] Examples of error handling techniques for different sequences",
+    "textAfterTable": "US7577821 Feb 1, 2007 Aug 18, 2009 Ipflex Inc. IC containing matrices of plural type operation units with configurable routing wiring group and plural delay operation units bridging two wiring groups US7778736 Oct 24, 2003 Aug 17, 2010 Marvell International Ltd. Apparatus, method, and computer program for sprinkler control US8019482 Aug 12, 2010 Sep 13, 2011 Marvell International Ltd. Method and apparatus for controlling a sprinkler system US8145331 Oct 31, 2007 Mar 27, 2012 Marvell International Ltd. Apparatus, method, and computer program for recording and reproducing digital data US8145332 Jun 13, 2008 Mar 27, 2012 Marvell International Ltd. Vehicle for recording and reproducing digital data US8487653 * Apr 13, 2009 Jul 16, 2013 Tang System SDOC with FPHA and FPXC: system design on chip with field programmable hybrid array of FPAA, FPGA, FPLA, FPMA, FPRA, FPTA and frequency programmable xtaless clockchip with trimless/trimfree self-adaptive bandgap reference xtaless clockchip US8955160 * Jul 30, 2009 Feb 10, 2015",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

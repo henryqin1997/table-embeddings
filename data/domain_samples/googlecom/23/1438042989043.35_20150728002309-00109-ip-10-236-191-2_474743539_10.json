@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Oct 19, 2001",
+            "Apr 11, 2011",
+            "Apr 9, 2015",
+            "Apr 10, 2015",
+            "Apr 10, 2015"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY",
+            "SULP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment",
+            "Surcharge for late payment"
+        ],
+        [
+            "Description",
+            "Owner name: FAIRISAAC AND COMPANY, INC., CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:HOADLEY, BRUCE;ROSENBERGER, LARRY E.;FLINT, ANDREW;REEL/FRAME:012449/0354;SIGNING DATES FROM 20010815 TO 20010821",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 8",
+            "Year of fee payment: 7"
+        ]
+    ],
+    "pageTitle": "Patent US7280980 - Algorithm for explaining credit scores - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7280980?dq=5,581,513",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 10,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989043.35/warc/CC-MAIN-20150728002309-00109-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 474767647,
+    "recordOffset": 474743539,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{6054=FIG. 1 is a block schematic diagram showing targeted users, access and entry points, and services provided by myFICO.com 10. Access by consumers 12 may be through a credit reporting agency 13, using an identification verification process to access credit score reports 17, for opt-in/opt-out requests 16, to access a report service 18, and to initiated on line investigations 19; through a secure, one time connection 15 for one-off credit score reports 20; or through an entirely anonymous access method 14 (the latter also allows access by government agencies 22) for consumer oriented information 21. myFICO.com also provided an extranet logon facility 25 to credit score reports 37 for such users as financial counselors 24, mortgage brokers 26, and direct lenders 27; an automated application service provider entry 29 to credit score reports 30 and other reports 31 for such users as large credit issuers 28, on line financial service providers 32, and credit report resellers 33; and repository access 35 to credit score reports and other reports 36 for repository consumer representatives 34 and credit report resellers 33. See A. Flint, D. Lear, C. St. John, Method and Apparatus for Explaining Credit Scores, U.S. patent application Ser. No. 09/790,453 (Feb. 22, 2001).}",
+    "TableContextTimeStampAfterTable": "{52226=This application is a continuation in part of U.S. patent application Ser. No. 09/790,453, filed Feb. 22, 2001, and claims priority to U.S. patent application Ser. No. 60/222,231, filed Aug. 1, 2000 and U.S. Ser. No. 60/222,205, filed Aug. 1, 2000., 54820=A. Flint, D. Lear, C. St. John, Method and Apparatus for Explaining Credit Scores, U.S. patent application Ser. No. 09/790,453 (Feb. 22, 2001) describe a Web site containing an array of informative resources including for-pay services and extranet functions to serve consumers and traditional players in the financial services industry, including financial counselors, mortgage brokers, direct lenders, large national credit issuers, and third-party credit report re-sellers, plus information seekers such as the press, consumer groups, and government agencies. A primary focus of the Flint et al. invention is to educate consumers, consumer groups, and the consumer press by offering them access to the exceptionally high-quality information, both general and personal, about the practices of collection, storing, reporting, and evaluating consumer credit data., 61381=An exemplary Web-based score explanation service requires, for example, only the credit bureau identifier, credit score, and up to four reason codes as input. In contrast, the invention herein discloses an algorithm that is used to provide an explanation of the primary factors influencing the score based upon a rich data feed. This algorithm can be enhanced depending upon the amount of input data available, although the use of an enhanced algorithm is optional and not considered to be a key element of the subject invention. The actual explanations may be selected as appropriate for the application to which the invention is put. Typical explanations are those described in A. Flint, D. Lear, C. S. John, Method and Apparatus for Explaining Credit Scores, U.S. patent application Ser. No. 09/790,453 (Feb. 22, 2001).}",
+    "textBeforeTable": "Patent Citations Although the invention is described herein with reference to the preferred embodiment, one skilled in the art will readily appreciate that other applications may be substituted for those set forth herein without departing from the spirit and scope of the present invention. Accordingly, the invention should only be limited by the Claims included below. The algorithm described herein would work for any score, which can then be computed in a reasonably fast manner by application of the invention herein thereto. This includes neural networks and regression trees. Generality In the preferred embodiment, the total number of Areas for Improvement could be just about any number between five and 80. However, showing the customer the typical top four is presently preferred. The total number is preferably significantly more than four, i.e. five is too small. Twenty is presently preferred. This means that the five categories mentioned above in connection with the Fair Isaac site should be expanded to about twenty. The original 80 prediction characteristics should be put into about twenty categories. Number of Areas for Improvement The presently preferred embodiment of the herein disclosed invention requires a rich data feed, i.e. the values of the z*'s. However, the values of the x*'s are not needed, unless they are the same as the z*'s. Rich Data Feed The above formula for Ik takes into account automatically and precisely the",
+    "textAfterTable": "Apparatus and method for credit based management of telecommunication activity US5704029 May 23, 1994 Dec 30, 1997 Wright Strategies, Inc. System and method for completing an electronic form US5732400 Jan 4, 1995 Mar 24, 1998 Citibank N.A. System and method for a risk-based purchase of goods US5774883 May 25, 1995 Jun 30, 1998 Andersen; Lloyd R. Method for selecting a seller's most profitable financing program US5793972 May 3, 1996 Aug 11, 1998 Westminster International Computers Inc. System and method providing an interactive response to direct mail by creating personalized web page based on URL provided on mail piece US5875236 Nov 21, 1995 Feb 23, 1999 At&T Corp Call handling method for credit and fraud management US5878403 Sep 12, 1995 Mar 2, 1999 Cmsi Computer implemented automated credit application analysis and decision routing system US5930764 Aug 23, 1996 Jul 27, 1999 Citibank, N.A. Sales and marketing support system using a customer information database",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

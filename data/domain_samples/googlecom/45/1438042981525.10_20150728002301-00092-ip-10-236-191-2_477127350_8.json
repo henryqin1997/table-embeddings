@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Sep 25, 1989",
+            "Mar 1, 1996",
+            "Feb 25, 2000",
+            "Apr 14, 2004",
+            "Sep 29, 2004",
+            "Nov 23, 2004"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: U.S. PHILIPS CORPORATION, 100 EAST 42ND STREET, NE Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:GELIN, BENOIT;LEBOURG, MICHEL;REEL/FRAME:005148/0269 Effective date: 19890808",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Effective date: 20040929"
+        ]
+    ],
+    "pageTitle": "Patent US5151925 - Coherent demodulation method for a digitally modulated signal having a ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5151925?dq=7,134,016",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981525.10/warc/CC-MAIN-20150728002301-00092-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 477151615,
+    "recordOffset": 477127350,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{26662=The use of this narrow band modulation may be considered for many domains such as protected VHF and UHF communication systems, satellite transmissions or mobile radio-networks. The above advantages have caused the \"Groupe Special Mobile\" (GSM) of the CEPT to retain this narrow-band modulation to be used in the future digital Pan-European digital mobile network beginning in 1992., 61068=For the GMSK modulation the error rate curves obtained with the demodulation method according to the invention are represented in the FIGS. 8, 9 for the preamble sequences of 32 and 16 bits respectively, and with the frequency offsets \u0394f0 =800 Hz (curves 1) and \u0394f0 =1600 Hz (curves 2)., 29638=A digital demodulation method utilized for the 2SRC modulation was proposed in the article by LOUBATON and VALLET entitled: \"Demodulation pseudo-coherente de signaux de type MSK adaptee aux transmissions en EVF\" and published in the Revue Technique Thomson-CSF, Vol. 17, September 1985, No. 3, pp. 521-554., 30869=A demodulation technique for packet transmission by radio is given in the article by C. HEEGARD, J. A. HELLER and A. J. VITERBI, entitled: \"A microprocessor-based PSK Modem for Packet Transmission over Satellite Channels\" and published in IEEE Trans., Vol. COM-26, No. 5, May 1978, pp. 552-564., 49734=It may be shown (cf. P. A. LAURENT: \"Interpretation des modulations d'indice demi-entier. Extension ades indices voisins et applications\" 9th Colloque GRETSI, Nice, May 1983, pp. 503-509) that all the digital modulations of the form S(t,B)=exp[j.\u03c6(t,B)] can be represented in the form of an amplitude modulation according to the following expression: ##EQU12## wherein Fp (t) is the principal function., 61733=The results are slightly sensitive to the frequency offset as long as \u0394f0 <1000 Hz. Beyond that value, the results are slightly degraded.}",
+    "textBeforeTable": "Patent Citations This method is thus certainly compatible with operation in the TDMA or FH mode and it may be applied to whatever modulation presenting intersymbol interference. The results of the simulation show that this method shows good resistance to noise and to an even considerable frequency offset between the transmitter and the receiver. The method according to the invention has enabled to use an algorithm for coherent demodulation of the digital GMSK modulation. The results are slightly sensitive to the frequency offset as long as \u0394f0 <1000 Hz. Beyond that value, the results are slightly degraded. At an error rate of 10-2 there is a degradation of 1.2 dB for N=32 bits and 1.4 dB for N=16 bits relative to the theoretical error rate of which the curves A and B (already represented in FIG. 7) are also shown in the said Figures. For \u0394f0 =800 Hz the results are rather good. For the GMSK modulation the error rate curves obtained with the demodulation method according to the invention are represented in the FIGS. 8, 9 for the preamble sequences of 32 and 16 bits respectively, and with the frequency offsets \u0394f0 =800 Hz (curves 1) and \u0394f0 =1600 Hz (curves 2). When the error rate is 10-2, the degradation relative to the theoretical error rate is considerable (approximately 7 dB). Curve 3 corresponds with the result obtained with an analog differential demodulator. This type of demodulation",
+    "textAfterTable": "Aug 22, 1995 Hitachi America, Ltd. Synchronous pulse generator US5459762 * Sep 16, 1994 Oct 17, 1995 Rockwell International Corporation Variable multi-threshold detection for 0.3-GMSK US5625573 * Mar 1, 1995 Apr 29, 1997 Hughes Electronics Fast acquisition of GMSK-modulated signal for CDPD applications US5684836 * Jun 6, 1995 Nov 4, 1997 Mitsubishi Denki Kabushiki Kaisha Receiver with automatic frequency control US5796780 * Feb 9, 1996 Aug 18, 1998 Ericsson Inc. Coherent modulation of CPM signals US6031880 * Jul 2, 1996 Feb 29, 2000 Nortel Networks Corporation Carrier recovery in communications system US6449304 * May 14, 1999 Sep 10, 2002 The Aerospace Corporation Method of determining the carrier reference phase of coherent demodulation of frequency hopped continuous phase modulated signals with synch words arbitrarily located within the hop US6606363 Dec 28, 1999 Aug 12,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Date",
+            "5 Dec 2001",
+            "29 Dec 2004",
+            "29 Jan 2010",
+            "3 May 2010",
+            "24 Sep 2010",
+            "24 Sep 2010",
+            "26 Mar 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "REMI",
+            "SULP",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Surcharge for late payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: SCIENCE APPLICATIONS INTERNATIONAL CORP., CALIFORN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:BRADFORD, ROGER BURROWES;MNEK, JANUSZ;REEL/FRAME:012216/0015 Effective date: 20011205",
+            "Owner name: KAZEMINY, NASSER J., FLORIDA Free format text: SECURITY AGREEMENT;ASSIGNOR:CONTENT ANALYST COMPANY, LLC;REEL/FRAME:015494/0475 Effective date: 20041124 Owner name: SCIENCE APPLICATIONS INTERNATIONAL CORPORATION, VI Free format text: SECURITY AGREEMENT;ASSIGNOR:CONTENT ANALYST COMPANY, LLC;REEL/FRAME:015494/0468 Effective date: 20041124 Owner name: CONTENT ANALYST COMPANY, LLC, VIRGINIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:SCIENCE APPLICATIONS INTERNATIONAL CORPORATION;REEL/FRAME:015494/0449 Effective date: 20041124",
+            "Owner name: CONTENT ANALYST COMPANY, LLC,MINNESOTA Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:SCIENCE APPLICATIONS INTERNATIONAL CORPORATION;REEL/FRAME:023870/0181 Effective date: 20100129 Owner name: CONTENT INVESTORS, LLC,MINNESOTA Free format text: SECURITY AGREEMENT;ASSIGNOR:CONTENT ANALYST COMPANY, LLC;REEL/FRAME:023870/0205 Effective date: 20100129",
+            "",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8"
+        ]
+    ],
+    "pageTitle": "Patent US7113943 - Method for document comparison and selection - Google Patents",
+    "title": "",
+    "url": "http://www.google.com.au/patents/US7113943",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 10,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00332-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 470701279,
+    "recordOffset": 470666199,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{25624=This application claims benefit of, and hereby incorporates in its entirety, U.S. Provisional Patent Application No. 60/251,423 entitled Method for Document Comparison and Selection, and filed Dec. 6, 2000., 64289=The entity elaboration technique of the present invention provides a unique and valuable approach for dealing with the variations in terminology in different subject areas. The technique is quite general in nature and can be applied in a fully automated manner. It does require additional resources, namely one or more subject matter dictionaries. This, however, is a minor constraint, as large numbers of machine-readable dictionaries are currently available. Many such dictionaries are free and can be downloaded from the Internet. For example, Specialized Dictionaries 2000, yourDictionary.com http://www.yourdictionary.com/diction4.html [Accessed 12 Sep. 2000] provides links to hundreds of such dictionaries., 35185=The basic technique is described in Deerwester, S., et al, Indexing by Latent Semantic Analysis, in Journal of the Society for Information Science, 41(6), 391407 (October, 1990) [Deerwester I] and in U.S. Pat. No. 4,839,853 Computer Information Retrieval Using Latent Semantic Structure, to Deerwester et al. [Deerwester I]. The optimality of this technique is shown in Ding, C., A Similarity-based Probability Model for Latent Semantic Indexing, in Proceedings of the 22nd Annual SIGIR Conference, (August, 1999) [Ding]. The LSI technique has been shown to be of considerable value as an approach to text retrieval in both Dumais, S., LSI meets TREC: A Status Report, in The First Text Retrieval Conference (TREC1), National Institute of Standards and Technology Special Publication #500-207, 137\u2013152 (1993) [Dumais I] and Dumais, S., Using LSI for Information Filtering: TREC-3 Experiments, in The Third Text Retrieval Conference (TREC3) National Institute of Standards and Technology Special Publication #500-226, (1995) [Dumais II]. Each of the above is incorporated herein by reference., 50017=Although each of these extensions to the basic LSI technique is valuable in its own right, more effective application may be attained through combining their use. The techniques have the important virtue that they lend themselves to combination using current data fusion techniques. For details on such techniques see Proceedings of the Second International Conference on Information Fusion (FUSION'99), available from the International Society of Information Fusion, and GOODMAN, I., Mathematics of Data Fusion, Theory and Decision Library. Series B, Mathematical and Statistical Methods, Vol. 37, Kluwer Academic Publishers, 1997.}",
+    "textBeforeTable": "Patent Citations It should be recognized that various preferred embodiments and characteristics thereof that have been described are merely illustrative of the principles of this invention. Numerous modifications and adaptations thereof will be readily apparent to those skilled in the art without departing from the spirit and scope of the present invention. While the present invention makes use of the properties of the LSI vector space to explicitly compare documents, it should be noted that the use of the specific vector space generated using the LSI technique is not essential. A person skilled in the art could make use of slightly different vector space representations of the documents. However, it has been demonstrated that the LSI space is an optimal semantic subspace based on maximum likelihood estimation. [Ding]. Basing the comparison techniques on the LSI method allows an even greater degree of generality. The \u201cdocuments\u201d that are compared actually can be significantly more general objects. In fact, they can be any set of objects that can be represented by a collection of character strings. The \u201cdocuments\u201d dealt with, both as items of interest and items to be compared against, can be, for example, collections of documents as opposed to individual documents. The objects that are dealt with can even be surrogates for non-textual objects, such as images or protein sequences. A particularly interesting example is where the surrogate objects represent some aspect of people, such",
+    "textAfterTable": "5 Dumais, S., \"Latent Semantic Indexing (LSI): TREC-3 Report\", in: D. Harman (Ed.), The Third Text REtrieval Conference (TREC3), National Institute of Standards and Technology Special Publication #500-226, 1995. Available at website: http://lsi.argreenhouse.com/~remde/lsi/LSIpapers.html. 6 Dumais, S., \"LSI meets TREC: A Status Report\", in: D. Harman (Ed.), The First Text Retrieval Conference (TREC1), National Institute of Standards and Technology Special Publication #500-207, 1993, pp. 137-152. Available at website: http://lsi.argreenhouse.com/~remde/lsi/LSIpapers.html. 7 Dumais, S., et al., \"Automatic Cross-language Retrieval Using Latent Semantic Indexing\", in AAAI Spring Symposium on Cross-Language Text and Speech Retrieval, Mar. 1997. 8 Korfhage, R., \"Information Storage and Retrieval\", Section 5.7, Document Similarity, pp. 125-133, Wiley and Sons, 1997. 9 Landuer, T., et al., \"An Introduction to Latent Semantic Analysis, Discourse Processes\", vol. 25, 1998, pp. 259-284. 10 * Nello Cristianini, John Shawe-Taylor, Huma Lodhi. Latent Semantic Kernels. Kluwer Academic Publishers. (retrieved by Google Scholar on Nov. 24, 2005). 11 * Sergey Brin. Extracting Patterns and Relations from the World Wide Web. Computer Science Dep. Stanford University. (retrieved by Google Scholar on Nov. 24, 2005).",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

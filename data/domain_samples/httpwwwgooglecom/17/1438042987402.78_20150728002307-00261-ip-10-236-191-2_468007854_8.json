@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Mar 21, 2006",
+            "Nov 17, 2006",
+            "Jul 6, 2009",
+            "Jan 11, 2012",
+            "Aug 16, 2013",
+            "Jan 3, 2014",
+            "Feb 25, 2014"
+        ],
+        [
+            "Code",
+            "CC",
+            "AS",
+            "FPAY",
+            "AS",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Certificate of correction",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "",
+            "Owner name: ELECTRONIC POLYMERS, INC., TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:SHRIER, KAREN;REEL/FRAME:018540/0754 Effective date: 20061117",
+            "Year of fee payment: 4",
+            "Owner name: ELECTRONIC POLYMERS NEWCO, INC., TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:ELECTRONIC POLYMERS, INC.;REEL/FRAME:027518/0210 Effective date: 20090311",
+            "",
+            "",
+            "Effective date: 20140103"
+        ]
+    ],
+    "pageTitle": "Patent US20040160300 - ESD protection devices and methods of making same using standard ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US20040160300?dq=5920316",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00261-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 468039415,
+    "recordOffset": 468007854,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{63635=[0048] As explained above and illustrated in the process figure diagrams, the use of a electrode allows the use of standard PCB manufacturing techniques. It is believed that an electrode-polymer-electrode layer can be interspersed as a separate layer within a PCB or that such a three (3) layer structure, as described and illustrated herein, can be laminated on top of a PCB thereby providing total board and board component protection. This would be accomplished by burying of an electrode-polymer-electrode layer within the PCB so that one electrode is coupled to inputs of the PCB and the other electrode forms a connection to ground (or a ground plane) of the PCB which is switched upon the detection of a disturbance event. In practice, electrode-polymer-electrode layer could be implemented using standard multi-layer PCB (layer in a board) layout techniques such as thru-holes and vias. This would also apply in flex circuit applications. If so, the electrode surfaces would be pre-etched along desired signal routes and traces in order according to the final board schematic and application. The first step would involve etching the electrode into whatever pattern is desired. Depending on the application, whether it's a washer, connector, or standard surface mount profile component (0603, 0402, 01206, or 0201 for example) both electrode layers would be etched. Since a B stage epoxy can be used, attachment of the electrode surfaces to each other can be readily accomplished with each pass of an electrode through a heat and pressure cycle., 71462=[0059] To better understand the formulating of a polymer with the desired criteria, reference is made to FIG. 5 which illustrates a formulation process, denoted generally as 250, for preparing such a polymer. Process 250 involves the selection of a suitable polymeric solution, such as an epoxy, having a desired solvent level, step 252. For many applications, it has been found that an epoxy with an approximately 75% solvent level is satisfactory but this is only an example and should not limit the invention in any way. An example of such an Epoxy includes the Scotch-Weld\u2122 Epoxy Adhesive/Coating 2290 by 3M (Refer to Technical Data Sheets dated June 2000 available from the 3M Company; 3M claims Scotch-Weld as its trademark) although it is believed that the process will also work using a thermoset, thermoplastic, as well as other polymers such as polyethylenes, liquid crystal polymers, and acrylates., 78136=[0078]FIG. 7 is a graph illustrating the performance of a sample protective device according to the invention. As above, the input voltage 300 goes from a nominal operating value to a spike 310 which mimics the occurrence of a disturbance event. This could be replaced using a pulse generator having a 50 ohm transmission line output capable of generating at least a 1500 V waveform (able to deliver a 30 amp square wave pulse to stimulate an 8000 V double exponential ESD pulse.) The device is triggered by the voltage spike 310 and, after breakdown, current through the device safely flows to ground as indicated by the fulling side of the spike waveform. Eventually, the output of the device clamps at point 314 representing the clamping voltage of the protection device, a level that is presumably safe for the component being protected.}",
+    "textBeforeTable": "Patent Citations [0081] While the invention has been described with reference to illustrative embodiments, this description is not intended to be construed in a limiting sense. Various modifications in combinations of the illustrative embodiments, as well as other embodiments of the invention, will be apparent to persons skilled in the art upon reference to the description. It is therefore intended that the appended claims encompass any such modifications or embodiments. [0080] It has been found that the use of nanometer sized aluminum particles provides some particular advantages in that no aluminum nor aluminum oxide is required to be added as a separate step. For example, such nano-sized particles are available from TECHNANOGY and consist of 46.1 nm sized aluminum particles (i.e. aluminum powder) with 63.7% nano-aluminum and the remainder consisting of aluminum oxide. In addition, it has been observed that for an 0603 device, the overall added capacitance is decreased by almost half using such nano sized particles. [0079] Use of Nanoparticles [0078]FIG. 7 is a graph illustrating the performance of a sample protective device according to the invention. As above, the input voltage 300 goes from a nominal operating value to a spike 310 which mimics the occurrence of a disturbance event. This could be replaced using a pulse generator having a 50 ohm transmission line output capable of generating at least a 1500 V waveform",
+    "textAfterTable": "Surgx Corporation Variable voltage protection structures and method for making same US6542065 * Apr 10, 2001 Apr 1, 2003 Surgx Corporation Variable voltage protection structures and method for making same US6570765 * Dec 13, 2001 May 27, 2003 Gerald R. Behling Over-voltage protection for electronic circuits US6657532 * Aug 24, 1998 Dec 2, 2003 Surgx Corporation Single and multi layer variable voltage protection devices and method of making same * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US6912038 * Sep 30, 2003 Jun 28, 2005 Industrial Technology Research Institute Method for manufacturing liquid crystal display US6981319 Feb 13, 2003 Jan 3, 2006 Shrier Karen P Method of manufacturing devices to protect election components US7218492 Sep 17, 2004 May 15, 2007",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

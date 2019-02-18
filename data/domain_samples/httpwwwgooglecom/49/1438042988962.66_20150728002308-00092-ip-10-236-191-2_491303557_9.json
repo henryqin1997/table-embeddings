@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jun 5, 2001",
+            "Dec 22, 2003",
+            "Dec 21, 2007",
+            "Feb 27, 2012",
+            "Jul 18, 2012",
+            "Sep 4, 2012"
+        ],
+        [
+            "Code",
+            "CC",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Certificate of correction",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Effective date: 20120718"
+        ]
+    ],
+    "pageTitle": "Patent US6092181 - High-performance, superscalar-based computer system with out-of-order ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6092181?dq=5,815,794",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988962.66/warc/CC-MAIN-20150728002308-00092-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 491385655,
+    "recordOffset": 491303557,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{58950=This application is a continuation of application Ser. No. 08/602,021, filed Feb. 15, 1996, now U.S. Pat. No. 5,689,720, which is a continuation of application Ser. No. 07/817,810, filed Jan. 8, 1992, now U.S. Pat. No. 5,539,911, which is a continuation of application Ser. No. 07/727,006, filed Jul. 8, 1991, now abandoned., 60518=4. RISC Microprocessor Architecture Implementing Fast Trap and Exception State, invented by Nguyen et al., application Ser. No. 08/345,333, filed Nov. 21, 1994, now U.S. Pat. No. 5,481,685, which is a continuation of Ser. No. 08/171,968, filed Dec. 23, 1983 now abandoned, which is a continuation of Ser. No. 07/817,811, filed Jan. 8, 1992 now abandoned, which is a continuation of Ser. No. 07/726,942, filed Jul. 8, 1991 now abandoned;, 60313=3. RISC Microprocessor Architecture Implementing Multiple Typed Register Sets, invented by Garg et al., application Ser. No. 07/726,773, filed Jul. 8, 1991, now U.S. Pat. No. 5,493,687;, 61380=6. Microprocessor Architecture with a Switch Network for Data Transfer between Cache, Memory Port, and IOU, invented by Lentz et al., application Ser. No. 07/726,893, filed Jul. 8, 1991, now U.S. Pat. No. 5,440,752., 86242=The MCU 110 preferably includes a port switch unit 142 that is coupled by a uni-directional data bus 136 with the instruction cache 132 of the CCU 106 and a bi-directional data bus 138 to the data cache 134. The port switch 142 is, in essence, a large multiplexer allowing a physical address obtained from the control bus 140 to be routed to any one of a number of ports P0 -PN 1460-n and the bidirectional transfer of data from the ports to the data buses 136, 138. Each memory access request processed by the MCU 110 is associated with one of the ports 1460-n for purposes of arbitrating for access to the main system memory bus 162 as required for an access of the MAU 112. Once a data transfer connection has been established, the MCU provides control information via the control bus 140 to the CCU 106 to initiate the transfer of data between either the instruction or data cache 132, 134 and MAU 112 via the port switch 142 and the corresponding one of the ports 1460-n. In accordance with the preferred embodiments of the architecture 100 the MCU 110 does not actually store or latch data in transit between the CCU 106 and MAU 112. This is done to minimize latency in the transfer and to obviate the need for tracking or managing data that may be uniquely present in the MCU 110., 59532=1. High-Performance, Superscalar-Based Computer System with Out-Of-Order Instruction Execution and Concurrent Results Distribution, invented by Nguyen et al., application Ser. No. 08/397,016, filed Mar. 1, 1995, now U.S. Pat. No. 5,560,032, which is a continuation of Ser. No. 07/817,809, filed Jan. 8, 1992 now abandoned, which is a continuation of Ser. No. 07/727,058, filed Jul. 8, 1991 now abandoned;, 59956=2. RISC Microprocessor Architecture with Isolated Architectural Dependencies, invented by Nguyen et al., application Ser. No. 08/292,177, filed Aug. 18, 1994, now abandoned, which is a continuation of Ser. No. 07/817,807, filed Jan. 8, 1992 now abandoned, which is a continuation of Ser. No. 07/726,744, filed Jul. 8, 1991 now abandoned;, 60974=5. Page Printer Controller Including a Single Chip Superscalar Microprocessor with Graphics Functional Units, invented by Lentz et al., application Ser. No. 08/267,646, filed Jun. 28, 1994, now U.S. Pat. No. 5,394,515, which is a continuation of Ser. No. 07/817,813, filed Jan. 8, 1992 now abandoned, which is a continuation of Ser. No. 07/726,929, filed Jul. 8, 1991 now abandoned; and, 261554=The CCU 106 implements a substantially conventional cache controller function with respect to the separate instruction and data caches 132, 134. In the preferred architecture 100, the instruction cache 132 is a high speed memory providing for the storage of 256 128 bit wide instruction sets. The data cache 134 provides for the storage of 1024 32 bit wide words of data. Instruction and data requests that cannot be immediately satisfied from the contents of the instruction and data caches 132, 134 are passed on to the MCU 110. For instruction cache misses, the 28 bit wide physical address is provided to the MCU 110 via the address bus 860. The request ID and additional control signals for coordinating the operation of the CCU 106 and MCU 110 are provided on control lines 862. Once the MCU 110 has coordinated the necessary read access of the MAU 112, two consecutive 64 bit wide data transfers are performed directly from the MAU 112 through to the instruction cache 132. Two transfers are required given that the data bus 136 is, in the preferred architecture 100, a 64 bit wide bus. As the requested data is returned through the MCU 110 the request ID maintained during the pendency of the request operation is also returned to the CCU 106 via the control lines 862.}",
+    "textBeforeTable": "Patent Citations It is therefore to be understood that while the foregoing disclosure describes the preferred embodiment of the present invention, other variations and modifications may be readily made by those of average skill within the scope of the present invention. Thus, a high-performance RISC based microprocessor architecture has been disclosed. The architecture efficiently implements out-of-order execution of instructions, separate main and target instruction stream prefetch instruction transfer paths, and a procedural instruction recognition and dedicated prefetch path. The optimized instruction execution unit provides multiple optimized data processing paths supporting integer, floating point and boolean operations and incorporates respective temporary register files facilitating out-of-order execution and instruction cancellation while maintaining a readily established precise state-of-the-machine status. VI. Summary/Conclusion: Data transfer operations between the data cache 134 and MCU 110 are substantially the same as instruction cache operations. Since data load and store operations may reference a single byte, a full 32 bit wide physical address is provided to the MCU 110 via the address bus 864. Interface control signals and the request ExID are transferred via control lines 866. Bidirectional 64 bit wide data transfers are provided via the data cache bus 138. The CCU 106 implements a substantially conventional cache controller function with respect to the separate instruction and data caches 132, 134. In the preferred architecture 100, the instruction cache 132 is a high speed memory providing for the storage of 256 128 bit wide instruction",
+    "textAfterTable": "US4315314 * Dec 19, 1979 Feb 9, 1982 Rca Corporation Priority vectored interrupt having means to supply branch address directly US4410939 * Jul 16, 1980 Oct 18, 1983 Matsushita Electric Industrial Co. Ltd. System for program interrupt processing with quasi-stack of register-sets US4434461 * Sep 15, 1980 Feb 28, 1984 Motorola, Inc. Microprocessor with duplicate registers for processing interrupts US4459657 * Sep 22, 1981 Jul 10, 1984 Tokyo Shibaura Denki Kabushiki Kaisha Data processing system having re-entrant function for subroutines US4476525 * Aug 14, 1981 Oct 9, 1984 Nec Corporation Pipeline-controlled data processing system capable of performing a plurality of instructions simultaneously US4626989 * Aug 5, 1983 Dec 2, 1986 Hitachi, Ltd. Data processor with parallel-operating operation units US4675806 * Mar 2, 1983 Jun 23, 1987 Fujitsu Limited Data processing unit",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

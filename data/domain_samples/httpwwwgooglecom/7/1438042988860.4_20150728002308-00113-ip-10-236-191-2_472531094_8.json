@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Nov 12, 2004",
+            "Mar 17, 2009",
+            "May 3, 2013",
+            "Sep 20, 2013",
+            "Nov 12, 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "",
+            "Year of fee payment: 4",
+            "",
+            "",
+            "Effective date: 20130920"
+        ]
+    ],
+    "pageTitle": "Patent US6945054 - Method and apparatus for cooling microelectronic complexes including ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6945054?dq=6106459",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00113-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 472551759,
+    "recordOffset": 472531094,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{28858=The present application is based on U.S. provisional patent application No. 60/415,804, filed on Oct. 4, 2002, having the same inventor.}",
+    "textBeforeTable": "Patent Citations Although several embodiments have been illustrated, this was for the purpose of describing, but not limiting, the invention. Various modifications will become apparent to those skilled in the art and are within the scope of this invention, which is defined more particularly by the attached claims. Since temperature sensors are continuously measuring the temperatures of cells Y and Z, and periodically sending sensor measurement signals to the particular cooling module 20, the assessment of the cooling requirement of cell Y is performed repeatedly. Further, the cooling level for the particular cooling module 20 is adjusted accordingly. At step 59, the local control logic 92 of a particular cooling module 20 receives a sensor measurement signal 36 indicative of the temperature Ty of the respective cell 14, hereinafter cell Y, as well as a sensor measurement signal indicative of the temperature Tz of another cell 14, hereinafter cell Z, located adjacent cell Y. At step 60, the temperature measurements Ty and Tz are extracted from the sensor measurement signals. At step 62, a temperature differential between cell Y and cell Z is computed as follows: Td=Tz\u2212Ty. If the value of Td is equal to or greater than zero at step 64, cell Y does not require additional cooling and the current cooling level of the particular cooling module 20, which may be at or above the minimum cooling level, is maintained at step 68.",
+    "textAfterTable": "Apr 7, 1998 International Business Machines Corporation Switched management of thermal impedence to reduce temperature excursions US6014313 Dec 19, 1997 Jan 11, 2000 Telefonaktiebolgey Lm Ericsson Packaging structure for integrated circuits US6127725 Aug 3, 1998 Oct 3, 2000 Harris; Ellis D. Thin film electronics on insulator on metal US6176299 Feb 22, 1999 Jan 23, 2001 Agilent Technologies, Inc. Cooling apparatus for electronic devices US6213194 Jun 22, 1999 Apr 10, 2001 International Business Machines Corporation Hybrid cooling system for electronics module US6281120 Dec 18, 1998 Aug 28, 2001 National Semiconductor Corporation Temperature control structure for integrated circuit EP0820098A2 Jul 1, 1997 Jan 21, 1998 International Business Machines Corporation Switched management of thermal impedance to reduce temperature excursions EP1150330A2 Apr 25, 2001 Oct 31, 2001 Axcelis Technologies, Inc. Actively-cooled distribution plate for reducing reactive gas temperature in a plasma processing system JP2000299360A",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

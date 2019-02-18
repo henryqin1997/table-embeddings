@@ -3,7 +3,7 @@ import os.path
 from shutil import copyfile
 from urllib.parse import urlparse
 
-domain = 'http://www.usms.org/'
+domain = 'google.com'
 domain_filename = ''.join(x for x in domain if x.isalnum())
 
 files = json.load(open('data/training_files.json'))
@@ -15,7 +15,7 @@ for file in files:
     if 'url' in data:
         parsed_uri = urlparse(data['url'])
         result = '{uri.scheme}://{uri.netloc}/'.format(uri=parsed_uri)
-        if result == domain:
+        if domain in result:
             results.append(file)
             if not os.path.exists(os.path.join('data', 'domain_samples', domain_filename, os.path.dirname(file))):
                 os.makedirs(os.path.join('data', 'domain_samples', domain_filename, os.path.dirname(file)))

@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "May 13, 2005",
+            "May 13, 2009",
+            "Jun 21, 2013",
+            "Nov 13, 2013",
+            "Dec 31, 2013"
+        ],
+        [
+            "Code",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Effective date: 20131113"
+        ]
+    ],
+    "pageTitle": "Patent US6317807 - Data storage apparatus and method allocating sets of data - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6317807?ie=ISO-8859-1&dq=4316055",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981753.21/warc/CC-MAIN-20150728002301-00209-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 468515699,
+    "recordOffset": 468496125,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{13372=This is a Continuation Application of application Ser. No. 09/265,080, filed on Mar. 9, 1999 now U.S. Pat. No. 6,115,784, which, in turn, is a Divisional Application of Ser. No. 08,826,656 issued U.S. Pat. No. 5,943,690, filed on Apr. 7, 1997 and issued on Aug. 24, 1999.}",
+    "textBeforeTable": "Patent Citations Although illustrative embodiments of the invention have been described in detail herein with reference to the accompanying drawings, it is to be understood that the invention is not limited to those precise embodiments, and that various changes and modifications can be effected therein by one skilled in the art without departing from the scope and spirit of the invention as defined by the appended claims. As an example of such another criterion, where residual space is available in one of the spaces p which can be filled by a filed, that residual space is used instead of allocating according to Qp. In this way, the unused space on a nearly full space is minimised and available space maximised in the other space(s) p. It is desirable to use the spaces p efficiently to maximise the data storage capacity. Thus in a preferred embodiments the allocation means, in addition to allocating data sets to the spaces p in accordance with the said factors Qp, allocates the data sets in accordance with at least one other criterion. The allocation of data using Qp spreads the data across the spaces p. The usage indices indicate whether a space p is capable of storing the data at the time of allocation. Where both Qp and usage indices are needed, Qp may be determined before or after the usage indices are determined to allocate a file to a storage space. The",
+    "textAfterTable": "US5579507 Aug 5, 1993 Nov 26, 1996 Hitachi, Ltd. Data transfer control of virtual storage supported by three-level hierarchical storage US5657468 * Aug 17, 1995 Aug 12, 1997 Ambex Technologies, Inc. Method and apparatus for improving performance in a reduntant array of independent disks US5659704 * Dec 2, 1994 Aug 19, 1997 Hewlett-Packard Company Methods and system for reserving storage space for data migration in a redundant hierarchic data storage system by dynamically computing maximum storage space for mirror redundancy US5675726 Nov 8, 1995 Oct 7, 1997 Emc Corporation Flexible parity generation circuit US5732402 Feb 10, 1995 Mar 24, 1998 International Business Machines Corporation System and method for data space management using buddy system space allocation US5742792 May 28, 1996 Apr 21, 1998 Emc Corporation Remote data mirroring US5835959 Dec 1, 1995 Nov 10, 1998 Sand Technology Systems International, Inc. Memory management system and method using dual indexing structures",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

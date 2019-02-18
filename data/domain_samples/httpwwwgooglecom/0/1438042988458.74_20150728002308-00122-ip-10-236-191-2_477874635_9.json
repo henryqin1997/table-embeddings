@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Feb 5, 1999",
+            "May 20, 2004",
+            "Oct 31, 2007",
+            "Aug 14, 2008",
+            "Nov 17, 2010",
+            "Jan 31, 2011",
+            "Sep 5, 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: FIRST DATA CORPORATION, NEW JERSEY Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:MAHAFFEY, ANN;REEL/FRAME:009758/0923 Effective date: 19990129",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "Owner name: WELLS FARGO BANK, NATIONAL ASSOCIATION, AS COLLATE Free format text: SECURITY AGREEMENT;ASSIGNORS:DW HOLDINGS, INC.;FIRST DATA RESOURCES, INC. (K/N/A FIRST DATA RESOURCES, LLC);FUNDSXPRESS FINANCIAL NETWORKS, INC.;AND OTHERS;REEL/FRAME:025368/0183 Effective date: 20100820",
+            "Owner name: WELLS FARGO BANK, NATIONAL ASSOCIATION, AS COLLATE Free format text: SECURITY AGREEMENT;ASSIGNORS:DW HOLDINGS, INC.;FIRST DATA RESOURCES, LLC;FUNDSXPRESS FINANCIAL NETWORKS, INC.;AND OTHERS;REEL/FRAME:025719/0590 Effective date: 20101217",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6202005 - System for selectively printing messages and adding inserts to merchant ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6202005?dq=7395252",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988458.74/warc/CC-MAIN-20150728002308-00122-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 477898719,
+    "recordOffset": 477874635,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{27844=Both the enhanced messages and the selective inserts are based on the user being able to define attributes of selected merchant groups to which they would like to target messages and inserts. For instance, the user can set the rules such that for all merchants with a code of 1234, message one is printed, or for all merchants that are entitled to a certain product, insert three is provided, etc. The merchant attributes for which selection specifications can be defined include the following: market segment, standard industry classification, credit card merchant category code, marker bank, business number, bank number, agent number, corporate number, chain number, DBA state, bill to state, DBA zip code, bill to zip code, processing mode (paperless indicator), internal account merchant number, and status code.}",
+    "textBeforeTable": "Patent Citations Thus it is apparent that there has been provided, in accordance with the present invention, a system and method for selectively printing messages and adding inserts to merchant statements, that fully satisfy the objects, aims, and advantages set forth above. While the present invention has been described in conjunction with specific embodiments thereof, it is evident that many alternatives, modifications, and variations will be apparent to those skilled in the art in light of the foregoing description. Accordingly, it is intended to embrace all such alternatives, modifications, and variations as fall within the spirit and broad scope of the appended claims. Referring now to FIG. 9, after the selection rules have been defined, computer 32 may display merchant selection review screen 130. Merchant selection review screen 130 contains a list of those merchants that have qualified for the rules for a particular insert. Stuffing operators review the list to determine which merchants are to receive the insert with their monthly mailed statement. Each field to be tested entry along with the associated logical operator and values to test for is considered as a single rule. Each rule defined in merchant selection GUI 120 has an AND relationship with the other rules such that all defined rules on merchant selection GUI 120 must be true for a merchant to qualify for the insert. Like messages, an insert may be associated with more than one merchant selection GUI.",
+    "textAfterTable": "US5726897 * Jul 17, 1996 Mar 10, 1998 United States Computer Services Mail assembly system and method US5798930 * May 3, 1996 Aug 25, 1998 Hadewe B.V. Method for processing sheets in mail processing system; a mail processing system for the practice of such method; and a mail processing apparatus of such system US5819666 * Nov 21, 1996 Oct 13, 1998 Prinserter Corporation Mailing system controlled by the computer software * Cited by examiner Non-Patent Citations Reference 1 International Searching Authority, PCT International Search Report, Feb. 4, 2000, Commissioner of Patents and Trademarks. Referenced by Citing Patent Filing date Publication date Applicant Title US6348186 * Jun 5, 1995 Feb 19, 2002 Quadrant Healthcare (Uk) Limited Preparation of further diagnostic",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

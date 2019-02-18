@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Nov 28, 2000",
+            "Feb 13, 2003",
+            "Feb 9, 2007",
+            "Apr 11, 2011",
+            "Sep 7, 2011",
+            "Oct 25, 2011"
+        ],
+        [
+            "Code",
+            "CC",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Certificate of correction",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Effective date: 20110907"
+        ]
+    ],
+    "pageTitle": "Patent US5949481 - Image sensing and processing device - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5949481?dq=7222078",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00090-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 475241807,
+    "recordOffset": 475202793,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{62099=In connection with this problem, an image shake detecting device has been proposed as disclosed in an article entitled \"About an Image Plane Shake Compensating Device\", appeared in \"The Technical Report\" of the Television Society, Vol. 11, No. 3, pp. 43 to 48, PPOE, '87-12 (May, 1987). In the case of that device, the whole image plane is divided into 140 blocks of areas. A shake detection switch is arbitrarily turned on or off for each of these areas and an image shake is detected only from the areas for which the shake detection switch is turned on in accordance with a representing point matching method., 56826=This is a continuation application under 37 CFR 1.62 of prior application Ser. No. 08/434,793, filed May 4, 1995 which is a continuation of Ser. No. 08/152,244, filed Nov. 12, 1993 (abandoned), which is a continuation of Ser. No. 08/028,729, filed Mar. 8, 1993 (abandoned), which is a continuation of Ser. No. 07/919,626, filed Jul. 23, 1992 (abandoned), which is a continuation of Ser. No. 07/425,477, filed Oct. 23, 1989 (abandoned)., 66848=Further, there has been proposed an apparatus which uses an image shake detecting device for objects appearing within an image plane and is arranged to trace (track) a moving object and to continuously perform control for accurate automatic focusing and accurate automatic exposure control. For example, apparatuses of this kind have been disclosed in U.S. patent applications Ser. Nos. 737,163 filed on May 23, 1985; 106,427 filed on Oct. 8, 1987; 154,078 filed on Feb. 9, 1988; 237,511 filed on Aug. 26, 1988; 240,915 filed on Sep. 6, 1988; 258,692 filed on Oct. 17, 1988; and 264,204 filed on Oct. 28, 1988. However, as mentioned in the foregoing, it is difficult to accurately make a discrimination between the movement of only one object in a part of the image plane and the movement of the whole image plane due to the movement of the camera. In accordance with the above-stated method disclosed in Japanese Laid-Open Patent Application No. SHO 61-248681, the degree of accuracy would lower if there is no luminance difference because the method utilizes a difference in luminance between the background and the object to be photographed. Further, in accordance with the technique disclosed in the above-stated Technical Report of the Television Society, it becomes difficult to accurately determine the areas in a case where a plurality of objects come to move. In other words, each of the methods of the prior art has a disadvantage as well as an advantage. Therefore, with the prior art image shake detecting devices incorporated in a compact video camera in accordance with these methods, they are incapable of adequately coping with all image condition., 68532=With respect to the image shake detecting device of this kind, further examples have been disclosed in U.S. patent application Ser. No. 855,732 filed on Apr. 25, 1986, U.S. patent application Ser. No. 880,152 filed on Jun. 30;, 1986, etc. These patent applications disclose an image stabilizing camera which is arranged to compensate the optical axis of the lens system by detecting an image shake through the edge component of the image of an object to be photographed; and an arrangement to recognize an image through a histogram which represents the distribution of the feature of the image.}",
+    "textBeforeTable": "Patent Citations In accordance with the arrangement of the embodiment of this invention as mentioned in the foregoing, the optical flow of the image plane is obtained by detecting the movement vectors for each of the plurality of blocks on the image sensing plane; the occurrence or nonoccurrence of any movement of the object is detected from the displacement of the optical flow; a discrimination is accurately made between an approaching movement and a departing movement; and the necessity for restart of an automatic focus adjusting action is determined on the basis of the information thus obtained. Therefore, unlike the conventional modulation method, the embodiment obviates the necessity of having recourse to a highly precise and complex mechanism for positively modulating the focus signal by creating an in-focus or out-of-focus state in obtaining information on a near-focus or far-focus state. The automatic focusing device according to this invention is thus arranged to be capable of accurately and precisely determining the necessity for a restart of focus adjusting action from the image signal through an efficient and stable operation. Further, in accordance with the invention, a change in the object distance can be reliably detected by carrying out the statistical process on the movement vectors to compute the divergence of the optical flow vectors even in the event of a plurality of objects within the image sensing plane, a complex background or a hardly extractably image feature because of",
+    "textAfterTable": "US4788596 * Apr 25, 1986 Nov 29, 1988 Canon Kabushiki Kaisha Image stabilizing device US4864398 * May 31, 1988 Sep 5, 1989 Sony Corp. Motion vector processing in digital television images US4872058 * Oct 8, 1987 Oct 3, 1989 Canon Kabushiki Kaisha Automatic focusing device US4927250 * Aug 16, 1988 May 22, 1990 Canon Kabushiki Kaisha Optical system for compensating chromatic abherration of image US5012270 * Mar 6, 1989 Apr 30, 1991 Canon Kabushiki Kaisha Image shake detecting device US5053875 * Mar 16, 1990 Oct 1, 1991 Matsushita Electric Industrial Co., Ltd. Fluctuation stabilization image pickup device US5107293 * Sep 6, 1989 Apr 21, 1992 Canon Kabushiki Kaisha Automatic image stabilization device * Cited by examiner",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

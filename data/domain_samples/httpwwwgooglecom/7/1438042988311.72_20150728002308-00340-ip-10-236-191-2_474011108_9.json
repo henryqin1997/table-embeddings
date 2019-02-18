@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jul 11, 2002",
+            "Apr 17, 2009",
+            "Jul 19, 2013",
+            "Oct 11, 2013",
+            "Oct 11, 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "REMI",
+            "FPAY",
+            "SULP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Fee payment",
+            "Surcharge for late payment"
+        ],
+        [
+            "Description",
+            "Owner name: INTERNATIONAL BUSINESS MACHINES CORPORATION, NEW Y Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:DRERUP, BERNARD CHARLES;GANASAN, JAYA PRAKASH SUBRAMANIAM;HOFMANN, RICHARD GERARD;AND OTHERS;REEL/FRAME:013126/0122;SIGNING DATES FROM 20020708 TO 20020709",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "Year of fee payment: 7"
+        ]
+    ],
+    "pageTitle": "Patent US6973520 - System and method for providing improved bus utilization via target directed ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6973520?dq=4182933",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00340-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 474036175,
+    "recordOffset": 474011108,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations The particular embodiments disclosed above are illustrative only, as the invention may be modified and practiced in different but equivalent manners apparent to those skilled in the art having the benefit of the teachings herein. Furthermore, no limitations are intended to the details of construction or design herein shown, other than as described in the claims below. It is therefore evident that the particular embodiments disclosed above may be altered or modified and all such variations are considered within the scope and spirit of the invention. Accordingly, the protection sought herein is as set forth in the claims below. ), and the initiator 102C responds to the deasserted REQUESTMASK 3 signal by reinitiating the REQUEST 3 via the system bus 108. The REQUEST 2 and the REQUEST 3 may be completed in a manner similar to that of REQUEST 1. FIG. 1 ) detects the deassertion of MASKENABLE 2 signal (e.g., for two clock cycles) and responds by deasserting the corresponding REQUESTMASK 2 and REQUESTMASK 3 signals. The initiator 102B responds to the deasserted REQUESTMASK 2 signal by reinitiating the REQUEST 2 via the system bus 108 ( FIG. 1 ) then detects availability of the read data buffer and deasserts the MASKENABLE 2 signal. The RMCU 106 ( FIG. 1 The target 110 ( , by providing the data to the initiator 102A. FIG. 6",
+    "textAfterTable": "US5996036 Jan 7, 1997 Nov 30, 1999 Apple Computers, Inc. Bus transaction reordering in a computer system having unordered slaves US6061753 Jan 27, 1998 May 9, 2000 Emc Corporation Apparatus and method of accessing target devices across a bus utilizing initiator identifiers US6185651 Nov 5, 1997 Feb 6, 2001 Compaq Computer Corp SCSI bus extender utilizing tagged queuing in a multi-initiator environment US6275887 Mar 17, 1999 Aug 14, 2001 Intel Corporation Method and apparatus for terminating a bus transaction if the target is not ready US6282598 * Apr 17, 1998 Aug 28, 2001 Nec Corporation PCI bus system wherein target latency information are transmitted along with a retry request US6324617 Aug 4, 1999 Nov 27, 2001 International Business Machines Corporation Method and system for communicating tags of data access target and castout victim in a single data transfer US6343344 Aug 4, 1999 Jan 29, 2002 International Business Machines Corporation System bus directory snooping mechanism for read/castout (RCO)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

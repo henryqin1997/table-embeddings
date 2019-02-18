@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "19 Sep 1996",
+            "11 Apr 2002",
+            "7 Apr 2006",
+            "7 Jun 2010",
+            "3 Nov 2010",
+            "21 Dec 2010"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: SHARP KABUSHIKI KAISHA, JAPAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:SUGA, KAZUYUKI;KUSAO, HIROSHI;NISHIMURA, TAKASHI;AND OTHERS;REEL/FRAME:008228/0852 Effective date: 19960826",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Effective date: 20101103"
+        ]
+    ],
+    "pageTitle": "Patent US5832143 - Image data interpolating apparatus - Google Patents",
+    "title": "",
+    "url": "http://www.google.com.au/patents/US5832143",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00255-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 481381999,
+    "recordOffset": 481346110,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{92496=In the above, in one of the two fields, one interpolating pixel for movement detection was provided at a point between the scan lines which interiorly divides the pixel distance in the vertical direction at a ratio of 1:3, whereas in the other field, another interpolating pixel for movement detection was provided at a point between the scan lines which interiorly divides the pixel distance in the vertical direction at a ratio of 3:1. However, the way of taking interpolating pixels should not be limited to this. For example, the interpolating pixels may be positioned so that the pixel distance will be divided in a ratio of a:1-a where 0<a<1 and a\u22600.5. There is a concern that some slight error of the movement detection might occur because the composed pixels for movement detection are formed at positions displaced from the actual pixels. To deal with this, as shown in FIG. 24, other pixels can be produced at the symmetric positions in the vertical direction to perform the same movement detection and the logical sum of the two movement detected results can be calculated., 83819=From the inputted image data for one frame, frame memory 102 stores the image data for the first field into the memory locations corresponding to odd line addresses and the image data for the second field into the memory locations corresponding to even line addresses. Next, CPU 105 shown in FIG. 19 reads out the input image data at five points X(-2) to X(+2) shown in FIG. 20 from frame memory 102. Here, X(-2) to X(+2) correspond to the frame data of pixels designated by j,i-2!, . . . j, i+2!. Then, the following calculations will be made in CPU 105. First, image data Y1(0) and Y2(0) whose positions are shifted in the vertical by 1/4 pixel as shown in FIG. 20 are yielded within respective fields by intra-field linear interpolation. For example, image data Y1(0) is yielded based on X(1) and X(-1) in a weight ratio of 3:1 (this corresponds to the condition a=1/4 in the first invention) and shifted by 1/4 pixel from X(1). Similarly, image data Y2(0) is yielded based on X(0) and X(+2) and shifted by 1/4 pixel from X(0).}",
+    "textBeforeTable": "Patent Citations In this way, in accordance with the invention thus configured, it is possible to attain markedly exact movement detection for any types of images since errors of the movement detection due to minutely blurred portions can be prevented and since erroneous judgment of the edge of the stationary portion as a movement portion can be prevented. Finally, in accordance with the invention, since the threshold for the movement judgment will become large when pixels whose movements are detected lie in a horizontal edge of a stationary portion, erroneous judgment of the edge of the stationary portion as a movement portion can be prevented, thus making it possible to perform effective movement detection. Moreover, since in stead of the two frame scheme in which movement detection is performed by differencing two fields of the same type as stated in the prior art, one frame scheme is used in this invention, it is possible to manage to perform the operation with one frame memory. Therefore, a reduction of the cost can be expected. In accordance with the invention, since the threshold for the judgment of movement is given in the form of a sum of a variable component and a fixed component which is preset as a limit below which the image data cannot be recognized as a visual moving point, the fixed value is made predominant for the detection of moving portions. Consequently, it is possible to",
+    "textAfterTable": "Title not available JPH06141283A * Title not available * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US6002812 * 26 Nov 1997 14 Dec 1999 Samsung Electronics Co., Ltd. Interpolation method for binary image US6002813 * 29 May 1998 14 Dec 1999 Samsung Electronics Co., Ltd. Interpolation method for binary image US6128344 * 19 Apr 1999 3 Oct 2000 Sharp Kabushiki Kaisha Image coding/decoding apparatus utilizing sub-band encoding US6192164 * 25 Feb 1998 20 Feb 2001 Medison Co., Ltd. Digital scan conversion method and apparatus for an ultrasonic system US6424753 * 26 Jan 1999 23 Jul 2002 Nec Corporation Pixel interpolation method and circuit",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jun 2, 1997",
+            "Jan 10, 2005",
+            "Sep 30, 2008",
+            "Feb 18, 2013",
+            "Jul 10, 2013",
+            "Aug 27, 2013"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: SONY CORPORATION, JAPAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:ROSIN, ROBERT;HSU, P. ROBERT;SONODA, YUMIE;AND OTHERS;REEL/FRAME:008590/0667;SIGNING DATES FROM 19970516 TO 19970528 Owner name: SONY ELECTRONICS INC., NEW JERSEY Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:ROSIN, ROBERT;HSU, P. ROBERT;SONODA, YUMIE;AND OTHERS;REEL/FRAME:008590/0667;SIGNING DATES FROM 19970516 TO 19970528",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Effective date: 20130710"
+        ]
+    ],
+    "pageTitle": "Patent US6260192 - Filtering system based on pattern of usage - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6260192?dq=7,129,317",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991019.80/warc/CC-MAIN-20150728002311-00321-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 468204507,
+    "recordOffset": 468158026,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{76203=Direct memory access (DMA) driven multimedia input/output (I/O) units which operate independently to process data are connected to the CPU 30. The video input unit 52, video output unit 54, audio input unit 56, and audio output unit 58 are DMA-driven I/O units. The video input unit 52 can accept video data from a video decoder 60 which converts a composite Y/C video signal into YUV 4:2:2 digital video data. The video output unit can provide data in YUV 4:2:2 video output format to a digital video encoder 62. Both the video input and video output units can follow the CCIR656 format. For example, the video output unit can drive other CCIR656-compatible devices such as a digital video tape recorder. An I2C interface 64 can also be included. An audio code unit 66 having a 16-bit ADC and a 16-bit DAC for audio coding and decoding operations can be connected to the audio input and audio output units.}",
+    "textBeforeTable": "Patent Citations From the foregoing it will be appreciated that the system of the present invention provides advantages in presenting information in a simple, intuitive manner, while making the most efficient use of the available bandwidth source connections. While several particular forms of the invention have been illustrated and described, it will be apparent that various modifications can be made without departing from the spirit and scope of the invention. Accordingly, the invention is not to be limited, except as by the following claims. Data is often compressed for more rapid delivery over the limited bandwidth currently available. Different types of data files, such as sound, video and graphics files, are often compressed at different rates and ratios, often using different compression schemes. For example, video data can be compressed using the MPEG1 or MPEG2 standards, audio data as wav, au or aiff files, and graphic images can be compressed using either the JPEG or GIF standards. Such data may be decompressed at different rates, and the client may include specific hardware or software, or a combination of both, to properly synchronize the decompression of data for a document or file for simultaneous and coordinated presentation to the user of, for example, different combinations of sound and animation files. Different selected sound and animation files can be mixed and matched, and used together for different occasions, and can be synchronized for a coordinated presentation to the client user.",
+    "textAfterTable": "WO1997013368A1 Oct 2, 1996 Apr 10, 1997 Starsight Telecast Inc Systems and methods for providing television schedule information * Cited by examiner Non-Patent Citations Reference 1 \"Verknuepfung von TV Mit Internet\" Funkschau, vol. 68, No. 18, Aug. 16, 1996, pp. 70-71. 2 \"Web TV Networks Chooses Spyglass' Surfwatch Parental Controls\" Available from Internet, Jul. 10, 1996. 3 Aus Web 97, Technical, Agent Technology in Electronic Commerce and Information Retrieval on the Internet (Nov. 5, 1996). 4 Chen H et al.: \"Internet Categorization and Search: A Self-Organizing Approach\" Journal of Visual Communication and Image Representation, vol. 7, No. 1, Mar. 1996, pp. 88-102. 5 Henry Lieberman, Autonomous Interface Agents Proceedings of the International Join Conf. on Artificial Intelligence Material (Aug. 1995). 6 Henry Lieberman, Letizia: An Agent That Assists Web Browsing Proceedings of the ACM Conference on Computers and Human Interface, CHI-97, Atlanta, GA (Mar. 1997). 7 Kai",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

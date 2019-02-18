@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jun 17, 1992",
+            "Jun 9, 1997",
+            "Aug 29, 2001",
+            "May 7, 2004",
+            "Aug 26, 2005",
+            "Feb 2, 2007",
+            "May 13, 2010"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: MOTOROLA, INC. A DE CORP., ILLINOIS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:VIOT, J. GREG;SIBIGTROTH, JAMES M.;BROSEGHINI, JAMES L.;REEL/FRAME:006165/0321 Effective date: 19920612",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Owner name: FREESCALE SEMICONDUCTOR, INC.,TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:MOTOROLA, INC.;REEL/FRAME:015698/0657 Effective date: 20040404",
+            "Year of fee payment: 12",
+            "Owner name: CITIBANK, N.A. AS COLLATERAL AGENT,NEW YORK Free format text: SECURITY AGREEMENT;ASSIGNORS:FREESCALE SEMICONDUCTOR, INC.;FREESCALE ACQUISITION CORPORATION;FREESCALE ACQUISITION HOLDINGS CORP.;AND OTHERS;REEL/FRAME:018855/0129 Effective date: 20061201",
+            "Owner name: CITIBANK, N.A., AS COLLATERAL AGENT,NEW YORK Free format text: SECURITY AGREEMENT;ASSIGNOR:FREESCALE SEMICONDUCTOR, INC.;REEL/FRAME:024397/0001 Effective date: 20100413 Owner name: CITIBANK, N.A., AS COLLATERAL AGENT, NEW YORK Free format text: SECURITY AGREEMENT;ASSIGNOR:FREESCALE SEMICONDUCTOR, INC.;REEL/FRAME:024397/0001 Effective date: 20100413"
+        ]
+    ],
+    "pageTitle": "Patent US5295229 - Circuit and method for determining membership in a set during a fuzzy logic ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5295229?dq=6272333",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992201.62/warc/CC-MAIN-20150728002312-00089-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 485468507,
+    "recordOffset": 485432438,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{30591=A step referred to as \"fuzzification\" is used to relate an input to a membership function in a system which implements fuzzy logic. The fuzzification process attaches concrete numerical values to subjective expressions such as \"the temperature is warm.\" These numerical values attempt to provide a good approximation of human perception which is not generally limited to an environment of absolute truths. After the fuzzification step, a rule evaluation step is executed. During execution of the rule evaluation step, a technique referred to as \"min-max\" inference is used to calculate numerical conclusions to linguistic rules defined by a user. Conclusions from the rule evaluation step are referred to as \"fuzzy outputs\" and may be true to varying degrees. Thus, competing results may be produced. A last step in the fuzzy logic process is referred to as \"defuzzification.\" As the name implies, defuzzification is the process of combining all of the fuzzy outputs into a composite result which may be applied to a standard data processing system. For more information about fuzzy logic, refer to an article entitled \"Implementing Fuzzy Expert Rules in Hardware\" by James M. Sibigtroth. The article was published in the April, 1992 issue of AI EXPERT on pages 25 through 31.}",
+    "textBeforeTable": "Patent Citations While there have been described herein the principles of the invention, it is to be clearly understood to those skilled in the art that this description is made only by way of example and not as a limitation to the scope of the invention. Accordingly, it is intended, by the appended claims, to cover all modifications of the invention which fall within the true spirit and scope of the invention. The implementation of the invention described herein is provided by way of example only. However, many other implementations may exist for executing the function described herein. For example, the points necessary to define the membership set may be provided by a user of data processing system 10 as operands of the MEM instruction, rather than as previously stored data values in memory. Additionally, ALU 56 may be implemented such that thirty-two bit results may be obtained. In the case of either a multiplication or substraction operation, each of the low and high sides would produce a sixteen bit result during a split mode of operation. Additionally, by operating ALU 56 in split mode in which two eight bit results may be concurrently produced, further time is saved. ALU 56 provides a unique circuit which may be used to produce two eight bit results when in a split mode of operation, and a sixteen bit result when not in a split mode of operation. Due to the",
+    "textAfterTable": "Citing Patent Filing date Publication date Applicant Title US5486999 * Apr 20, 1994 Jan 23, 1996 Mebane; Andrew H. Apparatus and method for categorizing health care utilization US5553259 * Oct 24, 1995 Sep 3, 1996 Unisys Corporation Apparatus and method for synchronizing the simultaneous loading of cache program word addresses in dual slice registers US5561738 * Mar 25, 1994 Oct 1, 1996 Motorola, Inc. Data processor for executing a fuzzy logic operation and method therefor US5671332 * Dec 22, 1994 Sep 23, 1997 Motorola, Inc. Data processing system for performing efficient fuzzy logic operations and method therefor US5687289 * Dec 16, 1994 Nov 11, 1997 Motorola, Inc. Circuit and method for determining membership in a set during a fuzzy logic operation US5737493 * Dec 11, 1995 Apr 7, 1998 Motorola, Inc. Instruction set for",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

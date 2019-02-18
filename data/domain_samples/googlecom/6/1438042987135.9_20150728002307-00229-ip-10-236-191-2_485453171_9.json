@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "10 May 1999",
+            "20 Dec 2002",
+            "22 Dec 2006",
+            "22 Dec 2010",
+            "8 Apr 2014",
+            "22 Apr 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: MCI WORLDCOM, INC., MISSISSIPPI Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:FEE, JOHN A.;SZERENYI, LASZLO I.;REEL/FRAME:009957/0025;SIGNING DATES FROM 19990402 TO 19990421",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12",
+            "Free format text: CHANGE OF NAME;ASSIGNOR:MCI LLC;REEL/FRAME:032633/0983 Owner name: VERIZON BUSINESS GLOBAL LLC, VIRGINIA Effective date: 20061120 Effective date: 20040420 Owner name: MCI, INC., VIRGINIA Free format text: MERGER;ASSIGNOR:WORLDCOM, INC.;REEL/FRAME:032632/0913 Owner name: WORLDCOM, INC., MISSISSIPPI Effective date: 20000501 Free format text: CHANGE OF NAME;ASSIGNOR:MCI WORLDCOM, INC.;REEL/FRAME:032633/0071 Effective date: 20060106 Owner name: MCI LLC, VIRGINIA Free format text: MERGER;ASSIGNOR:MCI INC.;REEL/FRAME:032633/0085",
+            "Effective date: 20140409 Owner name: VERIZON PATENT AND LICENSING INC., NEW JERSEY Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:VERIZON BUSINESS GLOBAL LLC;REEL/FRAME:032734/0502"
+        ]
+    ],
+    "pageTitle": "Patent US5914794 - Method of and apparatus for detecting and reporting faults in an all-optical ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com.au/patents/US5914794",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00229-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 485473447,
+    "recordOffset": 485453171,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{34941=There has been proposed including on the optical fiber of all-optical systems an optical supervisory channel for the transmission of management, performance, signalling, and other overhead information. In order to make the full amplification region available for traffic, the optical supervisory channel may occupy wavelength band outside the traffic band. For example, in a system with erbium-doped fiber amplifiers, the wavelength for the optical supervisory channel may be about 1510 nm, which is outside the amplification region for erbium-doped fiber amplifiers but within the low fiber loss region for silica fibers., 41332=Referring now to the drawings, and first to FIG. 1, a portion of an all-optical communications system is designated generally by the numeral 11. Communications system 11 includes an inbound optical cable 13 and an outbound optical cable 15. Each optical cable 13 and 15 comprises a plurality of optical fibers. Preferably, each optical fiber in communications system 11 may carry a plurality of wavelength division multiplexed traffic channels in an amplification band, for example from about 1530 nm to about 1565 nm. Each optical fiber also carries an optical supervisory channel that preferably occupies a wavelength outside the traffic band at, for example, about 1510 nm. The traffic channels carry customer traffic and the optical supervisory channel carries system administration, signaling, and other overhead traffic. Those skilled in the art will recognize that the optical supervisory channel may be carried in the traffic band and that other wavelength bands may be used. Thus, a traffic band from about 1530 nm to about 1565 nm, and an out-of-band optical supervisory channel at about 1510 nm is disclosed for purposes of illustration and not for limitation., 33899=Recently, optical network operators have proposed and have begun to introduce \"all-optical\" systems. An all-optical system does not include electro-optical repeaters. Rather, all-optical systems use optical amplifiers, such as rare earth-doped fiber amplifiers, to amplify the optical signals along the route. Rare earth-doped fiber amplifiers are effective in an amplification region, which is a band of wavelengths. For example, erbium-doped fiber amplifiers are effective in an amplification region from about 1530 nanometers (nm) to about 1565 nm., 34480=All-optical systems may also use wavelength division multiplexing to increase bandwidth. In an optical wavelength division multiplexing system, optical signals with several carrier wavelengths, separated by a relatively small wavelength separation, are transmitted on the same optical fiber. Each carrier is individually modulated and carries different information. For example, optical channels may be set up around a wavelength of 1550 nm.}",
+    "textBeforeTable": "Patent Citations While the present invention has been illustrated and described with reference to preferred embodiments, those skilled in the art will recognize that the present invention may be implemented in other environments and that certain features of the invention may be implemented independently of other features. Accordingly, the spirit and scope of the invention may be determined with reference to the appended claims. From the foregoing, those skilled in the art will recognize that the method and system of the present invention are well adapted to overcome the shortcomings of the prior art. The present invention provides a method and system for detecting and reporting faults in an all-optical communications system. Moreover, the system is highly fault tolerant in that it can handle multiple failures at multiple points along the optical route. Also, those skilled in the art will recognize that the present invention may be implemented in a bidirectional system, and thereby provide additional redundancy. Likewise, if a break occurs in any or even all of the fibers of optical cable 61 between, for example, amplification station 17a and amplification station 17b, the lost signal or signals will be detected at one or more of the line supervisory modules at station 17b. The element manager at station 17b will form a message identifying the nature and location of the fault and pass that message to each of the line supervisory modules at station 17b for transmission",
+    "textAfterTable": "18 Sep 2001 Fujitsu Limited Method, device, and system for transmitting a supervisory optical signal US6323975 * 8 Nov 1999 27 Nov 2001 Nokia Networks Oy Optical add/drop device US6359708 * 18 Sep 1997 19 Mar 2002 Lucent Technologies Inc. Optical transmission line automatic power reduction system US6359729 * 17 Nov 1999 19 Mar 2002 Corvis Corporation Optical communication system and component control architectures and methods US6433903 * 29 Dec 1999 13 Aug 2002 Sycamore Networks, Inc. Optical management channel for wavelength division multiplexed systems US6456409 * 16 Jul 2001 24 Sep 2002 Sycamore Networks, Inc. Method and apparatus for extending fiber transmission distance with multiple pre-emphases in optically amplified DWDM system US6466886 * 17 May 2000 15 Oct 2002 Eci Telecom Ltd. Automatic optical signal type identification method US6490063 *",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}
