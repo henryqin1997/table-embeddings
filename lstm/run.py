@@ -9,8 +9,11 @@ from .load import load_data, load_data_domain_sample
 torch.manual_seed(1)
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+num_features = 2048
+num_labels = 3334
 num_epochs = 300
 batch_size = 50
+num_batches = int(1000 / batch_size)
 learning_rate = 0.1
 
 
@@ -61,14 +64,11 @@ if __name__ == '__main__':
     inputs = np.array([], dtype=np.int64).reshape(0, 10)
     targets = np.array([], dtype=np.int64).reshape(0, 10)
 
-    batch_index = 0
-
-    while batch_size * batch_index < 100:
-        print('Load batch {}'.format(batch_index))
+    for batch_index in range(num_batches):
+        print('Load batch {}'.format(batch_index + 1))
         load_inputs, load_targets = load_data_domain_sample(batch_size, batch_index)
         inputs = np.concatenate((inputs, load_inputs), axis=0)
         targets = np.concatenate((targets, load_targets), axis=0)
-        batch_index += 1
 
     dataset = []
     for input, target in zip(inputs, targets):
@@ -79,19 +79,11 @@ if __name__ == '__main__':
     test_size = len(dataset) - train_size
     train_dataset, test_dataset = torch.utils.data.random_split(dataset, [train_size, test_size])
 
-    # train_loader = torch.utils.data.DataLoader(dataset=train_dataset,
-    #                                            batch_size=batch_size,
-    #                                            shuffle=False)
-    #
-    # test_loader = torch.utils.data.DataLoader(dataset=test_dataset,
-    #                                           batch_size=batch_size,
-    #                                           shuffle=False)
-
     # These will usually be more like 32 or 64 dimensional.
     EMBEDDING_DIM = 32
     HIDDEN_DIM = 32
 
-    model = LSTMTagger(EMBEDDING_DIM, HIDDEN_DIM, 2048, 3334)
+    model = LSTMTagger(EMBEDDING_DIM, HIDDEN_DIM, num_features, num_labels)
     loss_function = nn.NLLLoss()
     optimizer = optim.SGD(model.parameters(), lr=learning_rate)
 
@@ -112,7 +104,7 @@ if __name__ == '__main__':
             loss.backward()
             optimizer.step()
 
-            if (i + 1) % 10 == 0:
+            if (i + 1) % 100 == 0:
                 print('Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}'
                       .format(epoch + 1, num_epochs, i + 1, total_step, loss.item()))
 
