@@ -165,14 +165,18 @@ def train():
 
 def cal_accuracy():
     dic_no_cut = json.load(open('decision_tree/diction_nst{}.json'.format("10digits")))
+    dic_prediction = json.load(open('decision_tree/diction_nst_prediction{}.json'.format("10digits")))
+    dic_cut_pred = json.load(open('decision_tree/dic_nst_cut_pred{}.json'.format("10digits")))
     pre_acc = 0
     sum = 0
     sum_no_other = 0
     acc_no_other = 0
 
     for key in dic_no_cut.keys():
-        max = 0
-        maxlabel = ''
+        # max = 0
+        # maxlabel = ''
+
+        pred = diction_pred(dic_prediction, dic_cut_pred, key)
         for label in dic_no_cut[key].keys():
             if label != '-1,-1,-1,-1,-1,-1,-1,-1,-1,-1':
                 sum += dic_no_cut[key][label] * label_num_str(label)
@@ -190,44 +194,45 @@ def cal_accuracy():
     print("train accuracy {}".format(pre_acc / sum))
     print("train accuracy no other {}".format(acc_no_other / sum_no_other))
 
-    dic_prediction = json.load(open('decision_tree/diction_nst_prediction{}.json'.format("10digits")))
-    dic_cut_pred = json.load(open('decision_tree/dic_nst_cut_pred{}.json'.format("10digits")))
 
-    batch_size = 50
-    batch_index = 2000
-    correct = 0
-    total = 0
-    total_noOther = 0
-    correct_noOther = 0
-    dic_result = defaultdict(lambda: defaultdict(int))
-    while batch_size * batch_index < 103000:
-        print(batch_index)
-        input, target = load_data(batch_size=batch_size, batch_index=batch_index)
-        batch_index += 1
-        for i in range(len(input)):
 
-            total += 1
-            pred = diction_pred(dic_prediction, dic_cut_pred, input[i])
 
-            target_str = ','.join([str(x) for x in target[i]])
-            pred_str = ','.join([str(x) for x in pred])
-            dic_result[target_str][pred_str] += 1
 
-            for j in range(len(target[i])):
-                if target[i][j] != -1:
-                    total += 1
-                    if pred[j] == target[i][j]:
-                        correct += 1
-                    if target[i][j] != 3333:
-                        total_noOther += 1
-                        if pred[j] == target[i][j]:
-                            correct_noOther += 1
-                else:
-                    break
-    with open('decision_tree/dic_result_10digit.json', 'w')as fp:
-        json.dump(sort_by_error_frequency(dic_result), fp, indent=4)
-    print('validation {} accuracy {}'.format("10digits", correct / total))
-    print('no other validation {} accuracy {}'.format("10digits", correct_noOther / total_noOther))
+    # batch_size = 50
+    # batch_index = 2000
+    # correct = 0
+    # total = 0
+    # total_noOther = 0
+    # correct_noOther = 0
+    # dic_result = defaultdict(lambda: defaultdict(int))
+    # while batch_size * batch_index < 103000:
+    #     print(batch_index)
+    #     input, target = load_data(batch_size=batch_size, batch_index=batch_index)
+    #     batch_index += 1
+    #     for i in range(len(input)):
+    #
+    #         total += 1
+    #         pred = diction_pred(dic_prediction, dic_cut_pred, input[i])
+    #
+    #         target_str = ','.join([str(x) for x in target[i]])
+    #         pred_str = ','.join([str(x) for x in pred])
+    #         dic_result[target_str][pred_str] += 1
+    #
+    #         for j in range(len(target[i])):
+    #             if target[i][j] != -1:
+    #                 total += 1
+    #                 if pred[j] == target[i][j]:
+    #                     correct += 1
+    #                 if target[i][j] != 3333:
+    #                     total_noOther += 1
+    #                     if pred[j] == target[i][j]:
+    #                         correct_noOther += 1
+    #             else:
+    #                 break
+    # with open('decision_tree/dic_result_10digit.json', 'w')as fp:
+    #     json.dump(sort_by_error_frequency(dic_result), fp, indent=4)
+    # print('validation {} accuracy {}'.format("10digits", correct / total))
+    # print('no other validation {} accuracy {}'.format("10digits", correct_noOther / total_noOther))
 
 
 def error_frequency(item):

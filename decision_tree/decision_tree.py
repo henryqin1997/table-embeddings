@@ -33,23 +33,31 @@ def li_similarity(list1,list2):
 def diction_pred(dic,dic_cut,feature):
     maxkey=''
     maxsim=0
-    feature_processed=[int(x) for x in feature if int(x)!=-1]
-    for key in dic.keys():
-        key_processed = [int(x) for x in key.split(',') if x!='-1']
-        sim = qin_similarity(feature_processed,key_processed)
-        if sim>maxsim:
-            maxkey=key
-            maxsim=sim
+    if(len(feature)>10):
+        feature_processed=[int(x) for x in feature if int(x)!=-1]
+    else:
+        feature_processed=[int(x) for x in feature if int(x)!=-1]
+        feature = ','.join([str(x) for x in feature])
+
+    if feature in dic:
+        maxkey=feature
+    else:
+        for key in dic.keys():
+            key_processed = [int(x) for x in key.split(',') if x!='-1']
+            sim = qin_similarity(feature_processed,key_processed)
+            if sim>maxsim:
+                maxkey=key
+                maxsim=sim
 
     pred = dic[maxkey]
     pred = [int(x) for x in pred.split(',')]
     maxkey = [int(x) for x in maxkey.split(',')]
 
-    for i in range(len(maxkey)):
-        if feature[i]!=-1:
-            if maxkey[i]!=feature[i]:
-                if dic_cut[str(feature[i])][1]>0.5:
-                    pred[i]=int(dic_cut[str(feature[i])][0])
+    for i in range(len(feature_processed)):
+        if feature_processed[i]!=-1:
+            if maxkey[i]!=feature_processed[i]:
+                if dic_cut[str(feature_processed[i])][1]>0.5:
+                    pred[i]=int(dic_cut[str(feature_processed[i])][0])
         else:
             break
 
@@ -280,10 +288,10 @@ def sample_print_advanced():
         json.dump(faultdic, wfp)
 
 def label_num_str(labels):
-    labels = [int(x) for x in labels.split(',') if x!=-1]
+    labels = [int(x) for x in labels.split(',') if int(x)!=-1]
     return len(labels)
 def label_num_str_no_other(labels):
-    labels = [int(x) for x in labels.split(',') if x != -1 and x!=3333]
+    labels = [int(x) for x in labels.split(',') if int(x) != -1 and int(x)!=3333]
     return len(labels)
 
 def label_num_arr(labels):
