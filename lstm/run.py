@@ -4,6 +4,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 import torch.utils.data
 import numpy as np
+import json
 from .load import load_data, load_data_domain_sample
 
 torch.manual_seed(1)
@@ -54,12 +55,14 @@ class LSTMTagger(nn.Module):
         return tag_scores
 
 
-def calculate_accuracy(predicted, correct, no_other=True, other_index=3333):
+def compute_accuracy(predicted, correct, no_other=True, other_index=3333):
     assert len(predicted) == len(correct)
     if no_other:
         no_other_index = correct != other_index
         predicted = predicted[no_other_index]
         correct = correct[no_other_index]
+        if len(correct) == 0:
+            return 1.0
 
     return (predicted == correct).sum().item() / len(correct)
 
@@ -76,8 +79,10 @@ if __name__ == '__main__':
 
     dataset = []
     for input, target in zip(inputs, targets):
-        dataset.append((torch.from_numpy(np.array(input)[np.array(input) > -1]),
-                        torch.from_numpy(np.array(target)[np.array(target) > -1])))
+        input = torch.from_numpy(np.array(input)[np.array(input) > -1])
+        target = torch.from_numpy(np.array(target)[np.array(target) > -1])
+        if len(input) > 0 and len(target) > 0:
+            dataset.append((input, target))
 
     train_dataset, test_dataset = torch.utils.data.random_split(dataset, [train_size, test_size])
 
@@ -85,9 +90,12 @@ if __name__ == '__main__':
     loss_function = nn.NLLLoss()
     optimizer = optim.SGD(model.parameters(), lr=learning_rate)
 
-    total_step = len(train_dataset)
+    train_states = []
     for epoch in range(num_epochs):
-        for i, (input, target) in enumerate(train_dataset):
+        train_state = [epoch]
+        running_loss = 0.0
+        running_acc = 0.0
+        for batch_index, (input, target) in enumerate(train_dataset):
             input = input.to(device)
             target = target.to(device)
 
@@ -102,12 +110,39 @@ if __name__ == '__main__':
 
             # Compute the loss, gradients, and update the parameters
             loss = loss_function(tag_scores, target)
+            running_loss += (loss - running_loss) / (batch_index + 1)
             loss.backward()
             optimizer.step()
 
-            if (i + 1) % 100 == 0:
-                print('Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}'
-                      .format(epoch + 1, num_epochs, i + 1, total_step, loss.item()))
+            # Compute the train accuracy
+            acc = compute_accuracy(torch.argmax(tag_scores, dim=1), target)
+            running_acc += (acc - running_acc) / (batch_index + 1)
+
+        train_state += [running_loss.item(), running_acc]
+
+        model.eval()
+        running_loss = 0.0
+        running_acc = 0.0
+        for batch_index, (input, target) in enumerate(test_dataset):
+            input = input.to(device)
+            target = target.to(device)
+
+            tag_scores = model(input)
+
+            # Compute the loss
+            loss = loss_function(tag_scores, target)
+            running_loss += (loss - running_loss) / (batch_index + 1)
+
+            # Compute the validation accuracy
+            acc = compute_accuracy(torch.argmax(tag_scores, dim=1), target)
+            running_acc += (acc - running_acc) / (batch_index + 1)
+
+        train_state += [running_loss.item(), running_acc]
+
+        print(
+            '[EPOCH]: {} | [TRAIN LOSS]: {:.4f} | [TRAIN ACC]: {:.4f} | [VAL LOSS]: {:.4f} | [VAL ACC]: {:.4f}'.format(
+                *train_state))
+        train_states.append(train_state)
 
     model.eval()
     with torch.no_grad():
@@ -117,4 +152,6 @@ if __name__ == '__main__':
         predicted = torch.cat(predicted)
         correct = torch.cat(correct)
 
-        print('Test accuracy: {}'.format(calculate_accuracy(predicted, correct)))
+        print('Validation accuracy: {}'.format(compute_accuracy(predicted, correct)))
+
+    json.dump(train_states, open('lstm/train_states.json', 'w+'), indent=4)
