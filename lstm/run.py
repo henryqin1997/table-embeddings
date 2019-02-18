@@ -16,7 +16,7 @@ torch.manual_seed(1)
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 num_features = 2048
 num_labels = 3334
-num_epochs = 10
+num_epochs = 50
 batch_size = 50
 num_batches = int(103000 / batch_size)
 train_size = 100000
