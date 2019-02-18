@@ -8,6 +8,7 @@ domain_filename = ''.join(x for x in domain if x.isalnum())
 
 files = json.load(open('data/training_files.json'))
 results = []
+suffixes = ['.json', '_date.csv', '_ner.csv', '_nst.csv', '_wordlist.csv']
 
 for file in files:
     data = json.load(open(os.path.join('data/train', file)))
@@ -18,7 +19,9 @@ for file in files:
             results.append(file)
             if not os.path.exists(os.path.join('data', 'domain_samples', domain_filename, os.path.dirname(file))):
                 os.makedirs(os.path.join('data', 'domain_samples', domain_filename, os.path.dirname(file)))
-            copyfile(os.path.join('webtables', file), os.path.join('data', 'domain_samples', domain_filename, file))
+            for suffix in suffixes:
+                copyfile(os.path.join('webtables', os.path.splitext(files)[0] + suffix),
+                         os.path.join('data', 'domain_samples', domain_filename, os.path.splitext(files)[0] + suffix))
             print(os.path.join('data', 'domain_samples', domain_filename, file))
 
 json.dump(results, open('data/domains/{}.json'.format(domain_filename), 'w+'), indent=4)
