@@ -147,6 +147,10 @@ if __name__ == "__main__":
                 *train_state))
         train_states.append(train_state)
 
+        # Save state
+        json.dump(train_states, open("lstm/train_states.json", "w+"), indent=4)
+        plot_performance(*[[train_state[i] for train_state in train_states] for i in range(4)])
+
     model.eval()
     with torch.no_grad():
         predicted = [torch.argmax(model(input.to(device)), dim=1) for input, target in test_dataset]
@@ -156,6 +160,3 @@ if __name__ == "__main__":
         correct = torch.cat(correct)
 
         print("Validation accuracy: {}".format(compute_accuracy(predicted, correct)))
-
-    json.dump(train_states, open("lstm/train_states.json", "w+"), indent=4)
-    plot_performance(*[[train_state[i] for train_state in train_states] for i in range(4)])
