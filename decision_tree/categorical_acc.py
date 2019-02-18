@@ -60,7 +60,7 @@ def cal_accuracy():
     # print("train accuracy {}".format(pre_acc / sum))
     # print("train accuracy no other {}".format(acc_no_other / sum_no_other))
 
-    with open('decision_tree/categorical_acc_previous.json', 'w') as fp:
+    with open('decision_tree/categorical_acc.json', 'w') as fp:
         json.dump(categorical_acc, fp, indent=4)
 
 
