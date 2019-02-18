@@ -6,10 +6,10 @@ from .decision_tree import label_num_arr, label_num_str, label_num_str_no_other,
 
 def cal_accuracy():
     dic_no_cut = json.load(open('decision_tree/diction_nst{}.json'.format("10digits")))
-    dic_prediction = json.load(open('decision_tree/diction_nst_prediction{}.json'.format("10digits")))
-    dic_cut_pred = json.load(open('decision_tree/dic_nst_cut_pred{}.json'.format("10digits")))
+    #dic_prediction = json.load(open('decision_tree/diction_nst_prediction{}.json'.format("10digits")))
+    #dic_cut_pred = json.load(open('decision_tree/dic_nst_cut_pred{}.json'.format("10digits")))
 
-    # dic_no_cut = json.load(open('decision_tree/diction.json'))
+    #dic_no_cut = json.load(open('decision_tree/diction.json'))
     # dic_prediction = json.load(open('decision_tree/diction_prediction_with0.json'))
     # dic_cut_pred = json.load(open('decision_tree/dic_cut_pred.json'))
 
@@ -60,7 +60,7 @@ def cal_accuracy():
     # print("train accuracy {}".format(pre_acc / sum))
     # print("train accuracy no other {}".format(acc_no_other / sum_no_other))
 
-    with open('decision_tree/categorical_acc.json', 'w') as fp:
+    with open('decision_tree/categorical_acc_previous.json', 'w') as fp:
         categorical_acc = dict(sorted(categorical_acc.items(), key=lambda item: item[1][0], reverse=True))
         # categorical_acc = dict(sorted(categorical_acc.items(), key=lambda item: item[1][2]))
         json.dump(categorical_acc, fp, indent=4)
