@@ -120,6 +120,18 @@ def load_data(batch_size, batch_index=0, training_data_dir=training_data_dir, tr
     return numpy.array(inputs_transformed), numpy.array(targets_transformed)
 
 
+def load_data_100_sample(batch_size, batch_index=0):
+    return load_data(batch_size, batch_index=batch_index,
+              training_data_dir=training_data_100_sample_dir,
+              training_files=training_files_100_sample)
+
+
+def load_data_domain_sample(batch_size, batch_index=0):
+    return load_data(batch_size, batch_index=batch_index,
+              training_data_dir=training_data_domain_sample_dir,
+              training_files=training_files_domain_sample)
+
+
 def index_of(l, n):
     try:
         return list(l).index(n)
@@ -132,6 +144,4 @@ def to_int(n):
 
 
 if __name__ == '__main__':
-    print(load_data(10, batch_index=0,
-                    training_data_dir=training_data_domain_sample_dir,
-                    training_files=training_files_domain_sample))
+    print(load_data_domain_sample(10, batch_index=0))
