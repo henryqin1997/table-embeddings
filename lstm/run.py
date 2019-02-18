@@ -108,7 +108,7 @@ if __name__ == '__main__':
             loss.backward()
             optimizer.step()
 
-            if (i + 1) % 100 == 0:
+            if (i + 1) % 10 == 0:
                 print('Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}'
                       .format(epoch + 1, num_epochs, i + 1, total_step, loss.item()))
 
