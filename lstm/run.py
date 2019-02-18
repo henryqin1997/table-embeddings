@@ -93,6 +93,7 @@ if __name__ == '__main__':
     train_states = []
     for epoch in range(num_epochs):
         train_state = [epoch]
+        model.train()
         running_loss = 0.0
         running_acc = 0.0
         for batch_index, (input, target) in enumerate(train_dataset):
