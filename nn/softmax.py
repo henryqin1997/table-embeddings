@@ -3,6 +3,8 @@ import torch
 import torch.optim as optim
 import time
 import torch.nn.functional as F
+from .load import load_data,load_data_100_sample
+
 
 class Table(nn.Module):
     def __init__(self):
@@ -68,6 +70,8 @@ def main():
     net = Table().to(device)
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(net.parameters(), lr=0.1)
+
+    trainset, testset = load_data_100_sample()
 
     trainloader = torch.utils.data.DataLoader(trainset, batch_size=100,
                                               shuffle=True)
