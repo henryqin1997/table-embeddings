@@ -24,12 +24,12 @@ def train(trainloader, net, criterion, optimizer, device):
         start = time.time()
         running_loss = 0.0
 
-        for i, (tables, labels) in enumerate(trainloader):
-            tables = tables.to(device)
+        for i, (columns, labels) in enumerate(trainloader):
+            columns = columns.to(device)
             labels = labels.to(device)
 
             optimizer.zero_grad()
-            out = net.forward(tables)
+            out = net.forward(columns)
             loss = criterion(out, labels)
             loss.backward()
             optimizer.step()
@@ -49,14 +49,14 @@ def test(testloader, net, device):
     total = 0
     with torch.no_grad():
         for data in testloader:
-            tables, labels = data
-            tables = tables.to(device)
+            columns, labels = data
+            columns = columns.to(device)
             labels = labels.to(device)
-            outputs = net(tables)
+            outputs = net(columns)
             _, predicted = torch.max(outputs.data, 1)
             total += labels.size(0)
             correct += (predicted == labels).sum().item()
-    print('Accuracy of the network on the 10000 test tables: %d %%' % (
+    print('Accuracy of the network on the 10000 test columns: %d %%' % (
             100 * correct / total))
 
 
