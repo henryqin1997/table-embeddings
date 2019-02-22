@@ -69,6 +69,10 @@ def main():
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(net.parameters(), lr=0.1)
 
+    trainloader = torch.utils.data.DataLoader(trainset, batch_size=100,
+                                              shuffle=True)
+    testloader = torch.utils.data.DataLoader(testset, batch_size=100,
+                                             shuffle=False)
     train(trainloader, net, criterion, optimizer, device)
     test(testloader, net, device)
 
