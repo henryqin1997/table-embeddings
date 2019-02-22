@@ -39,12 +39,12 @@ def to_binary(value):
     return [int(x) for x in reversed(list('{0:012b}'.format(value)))]
 
 
-def load_data(batch_size, batch_index=0, training_data_dir=training_data_dir, training_files=training_files):
+def load_data(training_data_dir=training_data_dir, training_files=training_files):
     # load training data from file, to be implemented
     # put size number of data into one array
     # start from batch_index batch
     # return two arrays: input, target
-    batch_files = training_files[batch_size * batch_index:batch_size * (batch_index + 1)]
+    batch_files = training_files
     batch_files_ner = list(map(lambda batch_file: batch_file.rstrip('.json') + '_ner.csv', batch_files))
     batch_files_nst = list(map(lambda batch_file: batch_file.rstrip('.json') + '_nst.csv', batch_files))
     batch_files_date = list(map(lambda batch_file: batch_file.rstrip('.json') + '_date.csv', batch_files))
@@ -70,6 +70,11 @@ def load_data(batch_size, batch_index=0, training_data_dir=training_data_dir, tr
     for i in range(len(ner_inputs)):
         # print(batch_files[i])
         table = Table(json.load(open(os.path.join(training_data_dir, batch_files[i]))))
+
+        # Skip tables without key column
+        if table.get_data()['keyColumnIndex'] < 0:
+            continue
+
         column_num = len(table.get_header())
         attributes = table.get_attributes()
         ner_input = ner_inputs[i]
@@ -124,28 +129,26 @@ def load_data(batch_size, batch_index=0, training_data_dir=training_data_dir, tr
         new_input_transformed = numpy.array([to_binary(value) for value in new_input_transformed]).reshape(-1)
         inputs_transformed.append(new_input_transformed)
 
+        # Only output label of key column
         targets_transformed.append(
             numpy.array([index_of(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
-                         idx, row in enumerate(target.transpose())]).transpose())
+                         idx, row in enumerate(target.transpose())]).transpose()[table.get_data()['keyColumnIndex']])
 
     return numpy.array(inputs_transformed), numpy.array(targets_transformed)
 
 
-def load_data_100_sample(batch_size, batch_index=0):
-    return load_data(batch_size, batch_index=batch_index,
-                     training_data_dir=training_data_100_sample_dir,
+def load_data_100_sample():
+    return load_data(training_data_dir=training_data_100_sample_dir,
                      training_files=training_files_100_sample)
 
 
-def load_data_domain_sample(batch_size, batch_index=0):
-    return load_data(batch_size, batch_index=batch_index,
-                     training_data_dir=training_data_domain_sample_dir,
+def load_data_domain_sample():
+    return load_data(training_data_dir=training_data_domain_sample_dir,
                      training_files=training_files_domain_sample)
 
 
-def load_data_domain_schemas(batch_size, batch_index=0):
-    return load_data(batch_size, batch_index=batch_index,
-                     training_data_dir=training_data_domain_schemas_dir,
+def load_data_domain_schemas():
+    return load_data(training_data_dir=training_data_domain_schemas_dir,
                      training_files=training_files_domain_schemas)
 
 
@@ -161,4 +164,7 @@ def to_int(n):
 
 
 if __name__ == '__main__':
-    print(load_data_domain_sample(5, batch_index=0))
+    train, test = load_data_100_sample()
+    print(train)
+    print(test)
+    print(train.shape, test.shape)
