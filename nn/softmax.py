@@ -67,7 +67,7 @@ def main():
 
     net = Table().to(device)
     criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(net.parameters(), lr=0.001)
+    optimizer = optim.Adam(net.parameters(), lr=0.1)
 
     train(trainloader, net, criterion, optimizer, device)
     test(testloader, net, device)
