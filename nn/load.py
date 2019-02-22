@@ -34,6 +34,11 @@ def row_sum(row):
     return int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
 
 
+def to_binary(value):
+    value = value if value > 0 else 2048
+    return [int(x) for x in reversed(list('{0:012b}'.format(value)))]
+
+
 def load_data(batch_size, batch_index=0, training_data_dir=training_data_dir, training_files=training_files):
     # load training data from file, to be implemented
     # put size number of data into one array
@@ -115,11 +120,14 @@ def load_data(batch_size, batch_index=0, training_data_dir=training_data_dir, tr
         new_input_transformed = numpy.array([x if x >= 0 else -1 for x in new_input_transformed])
         # print('overall', new_input_transformed)
 
+        # Convert to binary encoding
+        new_input_transformed = numpy.array([to_binary(value) for value in new_input_transformed]).reshape(-1)
         inputs_transformed.append(new_input_transformed)
 
         targets_transformed.append(
             numpy.array([index_of(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
                          idx, row in enumerate(target.transpose())]).transpose())
+
     return numpy.array(inputs_transformed), numpy.array(targets_transformed)
 
 
@@ -153,4 +161,4 @@ def to_int(n):
 
 
 if __name__ == '__main__':
-    print(load_data_domain_sample(10, batch_index=0))
+    print(load_data_domain_sample(5, batch_index=0))
