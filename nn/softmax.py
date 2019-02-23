@@ -1,8 +1,8 @@
 import torch.nn as nn
 import torch
 import torch.optim as optim
+import torch.utils.data
 import time
-import torch.nn.functional as F
 from .load import load_data,load_data_100_sample
 
 
@@ -76,9 +76,9 @@ def main():
 
     trainset, testset = torch.utils.data.random_split(dataset, [len(dataset)-6, 6])
 
-    trainloader = torch.utils.data.DataLoader(trainset, batch_size=100,
+    trainloader = torch.utils.data.DataLoader(trainset, batch_size=10,
                                               shuffle=True)
-    testloader = torch.utils.data.DataLoader(testset, batch_size=100,
+    testloader = torch.utils.data.DataLoader(testset, batch_size=10,
                                              shuffle=False)
     train(trainloader, net, criterion, optimizer, device)
     test(testloader, net, device)
