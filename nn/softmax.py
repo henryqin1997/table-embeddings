@@ -40,12 +40,12 @@ class TableDataset(torch.utils.data.Dataset):
         return self.inputs[index], self.targets[index]
 
 
-def train(trainloader, net, criterion, optimizer, device):
+def train(train_loader, net, criterion, optimizer, device):
     for epoch in range(10):  # loop over the dataset multiple times
         start = time.time()
         running_loss = 0.0
 
-        for i, (columns, labels) in enumerate(trainloader):
+        for i, (columns, labels) in enumerate(train_loader):
             columns = columns.to(device)
             labels = labels.to(device)
 
@@ -65,11 +65,11 @@ def train(trainloader, net, criterion, optimizer, device):
     print('Finished Training')
 
 
-def test(testloader, net, device):
+def test(test_loader, net, device):
     correct = 0
     total = 0
     with torch.no_grad():
-        for data in testloader:
+        for data in test_loader:
             columns, labels = data
             columns = columns.to(device)
             labels = labels.to(device)
