@@ -16,7 +16,7 @@ num_labels = 3334
 num_epochs = 10
 batch_size = 50
 learning_rate = 0.1
-test_size = 2000
+test_size = 3000
 
 
 class NeuralNet(nn.Module):
@@ -116,6 +116,10 @@ def main():
 
     print('Testing...')
     test(test_loader, model, device)
+
+    print('Saving state...')
+    torch.save(model.state_dict(), 'nn/model.pt')
+    torch.save(optimizer.state_dict(), 'nn/optimizer.pt')
 
 
 if __name__ == "__main__":
