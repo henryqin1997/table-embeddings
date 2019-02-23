@@ -24,7 +24,7 @@ def plot_performance(train_loss, train_acc, val_loss, val_acc):
 
     # Save figure
     plt.savefig("lstm/performance.png")
-    plt.clf()
+    plt.close()
 
 
 if __name__ == '__main__':
