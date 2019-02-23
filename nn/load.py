@@ -75,12 +75,16 @@ def load_data(training_data_dir=training_data_dir, training_files=training_files
 
     assert len(ner_inputs) == len(nst_inputs)
     assert len(ner_inputs) == len(date_inputs)
-    for i in range(len(ner_inputs)):
-        # print(batch_files[i])
+    input_size = len(ner_inputs)
+    for i in range(input_size):
+        # Print progress
+        if (i + 1) % 100 == 0:
+            print('[{}/{}]'.format(i + 1, input_size))
+
         table = Table(json.load(open(os.path.join(training_data_dir, batch_files[i]))))
 
-        # Skip tables without key column
-        if table.get_data()['keyColumnIndex'] < 0:
+        # Skip tables without key column or index >= 10
+        if table.get_data()['keyColumnIndex'] < 0 or table.get_data()['keyColumnIndex'] >= 10:
             continue
 
         column_num = len(table.get_header())
