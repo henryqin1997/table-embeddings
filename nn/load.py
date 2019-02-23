@@ -78,7 +78,7 @@ def load_data(training_data_dir=training_data_dir, training_files=training_files
     input_size = len(ner_inputs)
     for i in range(input_size):
         # Print progress
-        if (i + 1) % 100 == 0:
+        if (i + 1) % 1000 == 0:
             print('[{}/{}]'.format(i + 1, input_size))
 
         table = Table(json.load(open(os.path.join(training_data_dir, batch_files[i]))))
