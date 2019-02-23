@@ -48,47 +48,6 @@ class TableDataset(torch.utils.data.Dataset):
         return self.inputs[index], self.targets[index]
 
 
-def train(train_loader, model, criterion, optimizer, device):
-    for epoch in range(num_epochs):  # loop over the dataset multiple times
-        start = time.time()
-        running_loss = 0.0
-
-        total_iter = len(train_loader)
-        for i, (columns, labels) in enumerate(train_loader):
-            columns = columns.float().to(device)
-            labels = labels.to(device)
-
-            out = model(columns)
-            loss = criterion(out, labels)
-            optimizer.zero_grad()
-            loss.backward()
-            optimizer.step()
-
-            running_loss += loss.item()
-            if (i + 1) % 10 == 0:
-                end = time.time()
-                print('Epoch [{}/{}], Iter [{}/{}], Loss: {:.3f}, Elapsed time {:.3f}'.format(
-                    epoch + 1, num_epochs, i + 1, total_iter, running_loss / 100, end - start))
-                start = time.time()
-                running_loss = 0.0
-
-
-def test(test_loader, model, device):
-    correct = 0
-    total = 0
-    with torch.no_grad():
-        for data in test_loader:
-            columns, labels = data
-            columns = columns.float().to(device)
-            labels = labels.to(device)
-            outputs = model(columns)
-            _, predicted = torch.max(outputs.data, 1)
-            total += labels.size(0)
-            correct += (predicted == labels).sum().item()
-    print('Accuracy of the network on the test columns: {}%'.format(
-        100 * correct / total))
-
-
 def main():
     model = NeuralNet().to(device)
     criterion = nn.CrossEntropyLoss()
@@ -112,10 +71,43 @@ def main():
                                               shuffle=False)
 
     print('Training...')
-    train(train_loader, model, criterion, optimizer, device)
+    for epoch in range(num_epochs):
+        start = time.time()
+        running_loss = 0.0
+
+        total_iter = len(train_loader)
+        for i, (columns, labels) in enumerate(train_loader):
+            columns = columns.float().to(device)
+            labels = labels.to(device)
+
+            out = model(columns)
+            loss = criterion(out, labels)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+
+            running_loss += loss.item()
+            if (i + 1) % 10 == 0:
+                end = time.time()
+                print('Epoch [{}/{}], Iter [{}/{}], Loss: {:.3f}, Elapsed time {:.3f}'.format(
+                    epoch + 1, num_epochs, i + 1, total_iter, running_loss / 100, end - start))
+                start = time.time()
+                running_loss = 0.0
 
     print('Testing...')
-    test(test_loader, model, device)
+    correct = 0
+    total = 0
+    with torch.no_grad():
+        for data in test_loader:
+            columns, labels = data
+            columns = columns.float().to(device)
+            labels = labels.to(device)
+            outputs = model(columns)
+            _, predicted = torch.max(outputs.data, 1)
+            total += labels.size(0)
+            correct += (predicted == labels).sum().item()
+    print('Accuracy of the network on the test columns: {}%'.format(
+        100 * correct / total))
 
     print('Saving state...')
     torch.save(model.state_dict(), 'nn/model.pt')
