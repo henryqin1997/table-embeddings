@@ -64,13 +64,12 @@ def train(train_loader, model, criterion, optimizer, device):
             optimizer.step()
 
             running_loss += loss.item()
-            if (i + 1) % 100 == 0:
+            if (i + 1) % 10 == 0:
                 end = time.time()
                 print('Epoch [{}/{}], Iter [{}/{}], Loss: {:.3f}, Elapsed time {:.3f}'.format(
                     epoch + 1, num_epochs, i + 1, total_iter, running_loss / 100, end - start))
                 start = time.time()
                 running_loss = 0.0
-    print('Finished Training')
 
 
 def test(test_loader, model, device):
@@ -103,7 +102,11 @@ def main():
                                                shuffle=True)
     test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size,
                                               shuffle=False)
+
+    print('Training...')
     train(train_loader, model, criterion, optimizer, device)
+
+    print('Testing...')
     test(test_loader, model, device)
 
 
