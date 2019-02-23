@@ -92,14 +92,14 @@ def main():
     inputs, targets = load_data_100_sample()
     dataset = TableDataset(inputs, targets)
 
-    trainset, testset = torch.utils.data.random_split(dataset, [len(dataset) - 6, 6])
+    train_dataset, test_dataset = torch.utils.data.random_split(dataset, [len(dataset) - 6, 6])
 
-    trainloader = torch.utils.data.DataLoader(trainset, batch_size=10,
-                                              shuffle=True)
-    testloader = torch.utils.data.DataLoader(testset, batch_size=10,
-                                             shuffle=False)
-    train(trainloader, net, criterion, optimizer, device)
-    test(testloader, net, device)
+    train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=10,
+                                               shuffle=True)
+    test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=10,
+                                              shuffle=False)
+    train(train_loader, net, criterion, optimizer, device)
+    test(test_loader, net, device)
 
 
 if __name__ == "__main__":
