@@ -2,23 +2,42 @@ import torch.nn as nn
 import torch
 import torch.optim as optim
 import torch.utils.data
+import numpy as np
 import time
-from .load import load_data,load_data_100_sample
+from .load import load_data, load_data_100_sample
+
+torch.manual_seed(1)
 
 
 class Table(nn.Module):
     def __init__(self):
-        super(Table,self).__init__()
+        super(Table, self).__init__()
         self.fc = nn.Sequential(
-            #fc 100*300
-            #relu
-            #fc 300*3000
-            nn.Linear(120,300),
+            # fc 100*300
+            # relu
+            # fc 300*3000
+            nn.Linear(120, 300),
             nn.ReLU(),
-            nn.Linear(300,3334)
+            nn.Linear(300, 3334)
         )
-    def forward(self,x):
+
+    def forward(self, x):
         x = self.fc(x)
+
+
+class TableDataset(torch.utils.data.Dataset):
+    def __init__(self, inputs, targets):
+        inputs = np.array(inputs)
+        targets = np.array(targets)
+        assert inputs.shape[0] == targets.shape[0]
+        self.inputs = inputs
+        self.targets = targets
+
+    def __len__(self):
+        return self.inputs.shape[0]
+
+    def __getitem__(self, index):
+        return self.inputs[index], self.targets[index]
 
 
 def train(trainloader, net, criterion, optimizer, device):
@@ -66,15 +85,14 @@ def main():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     # device = torch.device('cpu')
 
-
     net = Table().to(device)
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(net.parameters(), lr=0.1)
 
     inputs, targets = load_data_100_sample()
-    dataset = [(input, target) for input, target in zip(inputs, targets)]
+    dataset = TableDataset(inputs, targets)
 
-    trainset, testset = torch.utils.data.random_split(dataset, [len(dataset)-6, 6])
+    trainset, testset = torch.utils.data.random_split(dataset, [len(dataset) - 6, 6])
 
     trainloader = torch.utils.data.DataLoader(trainset, batch_size=10,
                                               shuffle=True)
@@ -86,4 +104,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
