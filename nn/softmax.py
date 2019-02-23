@@ -3,9 +3,10 @@ import torch
 import torch.optim as optim
 import torch.utils.data
 import numpy as np
-import time
 import os
+import json
 from .load import load_data, load_data_100_sample, load_data_domain_schemas
+from .plot import plot_performance
 
 torch.manual_seed(1)
 
@@ -48,6 +49,18 @@ class TableDataset(torch.utils.data.Dataset):
         return self.inputs[index], self.targets[index]
 
 
+def compute_accuracy(predicted, correct, no_other=True, other_index=3333):
+    assert len(predicted) == len(correct)
+    if no_other:
+        no_other_index = correct != other_index
+        predicted = predicted[no_other_index]
+        correct = correct[no_other_index]
+        if len(correct) == 0:
+            return np.nan
+
+    return (predicted == correct).sum().item() / len(correct)
+
+
 def main():
     model = NeuralNet().to(device)
     criterion = nn.CrossEntropyLoss()
@@ -71,12 +84,14 @@ def main():
                                               shuffle=False)
 
     print('Training...')
+    train_states = []
     for epoch in range(num_epochs):
-        start = time.time()
+        train_state = [epoch + 1]
+        model.train()
         running_loss = 0.0
+        running_acc = 0.0
 
-        total_iter = len(train_loader)
-        for i, (columns, labels) in enumerate(train_loader):
+        for batch_index, (columns, labels) in enumerate(train_loader):
             columns = columns.float().to(device)
             labels = labels.to(device)
 
@@ -86,28 +101,57 @@ def main():
             loss.backward()
             optimizer.step()
 
-            running_loss += loss.item()
-            if (i + 1) % 10 == 0:
-                end = time.time()
-                print('Epoch [{}/{}], Iter [{}/{}], Loss: {:.3f}, Elapsed time {:.3f}'.format(
-                    epoch + 1, num_epochs, i + 1, total_iter, running_loss / 100, end - start))
-                start = time.time()
-                running_loss = 0.0
+            running_loss += (loss.item() - running_loss) / (batch_index + 1)
 
-    print('Testing...')
-    correct = 0
-    total = 0
-    with torch.no_grad():
-        for data in test_loader:
-            columns, labels = data
+            _, predicted = torch.max(out.data, 1)
+            acc = compute_accuracy(predicted, labels)
+            acc = running_acc if np.isnan(acc) else acc
+            running_acc += (acc - running_acc) / (batch_index + 1)
+
+        train_state += [running_loss, running_acc]
+
+        model.eval()
+        running_loss = 0.0
+        running_acc = 0.0
+
+        for batch_index, (columns, labels) in enumerate(test_loader):
             columns = columns.float().to(device)
             labels = labels.to(device)
-            outputs = model(columns)
-            _, predicted = torch.max(outputs.data, 1)
-            total += labels.size(0)
-            correct += (predicted == labels).sum().item()
-    print('Accuracy of the network on the test columns: {}%'.format(
-        100 * correct / total))
+
+            out = model(columns)
+            loss = criterion(out, labels)
+
+            running_loss += (loss.item() - running_loss) / (batch_index + 1)
+
+            _, predicted = torch.max(out.data, 1)
+            acc = compute_accuracy(predicted, labels)
+            acc = running_acc if np.isnan(acc) else acc
+            running_acc += (acc - running_acc) / (batch_index + 1)
+
+        train_state += [running_loss, running_acc]
+
+        print(
+            "[EPOCH]: {} | [TRAIN LOSS]: {:.4f} | [TRAIN ACC]: {:.4f} | [VAL LOSS]: {:.4f} | [VAL ACC]: {:.4f}".format(
+                *train_state))
+        train_states.append(train_state)
+
+        # Save state
+        json.dump(train_states, open("nn/train_states.json", "w+"), indent=4)
+        plot_performance(*[[train_state[i] for train_state in train_states] for i in range(1, 5)])
+
+    print('Testing...')
+    running_acc = 0.0
+    with torch.no_grad():
+        for batch_index, (columns, labels) in enumerate(test_loader):
+            columns = columns.float().to(device)
+            labels = labels.to(device)
+            out = model(columns)
+            _, predicted = torch.max(out.data, 1)
+            acc = compute_accuracy(predicted, labels)
+            acc = running_acc if np.isnan(acc) else acc
+            running_acc += (acc - running_acc) / (batch_index + 1)
+    print('Accuracy of the network on the test columns: {:.4f}%'.format(
+        100 * running_acc))
 
     print('Saving state...')
     torch.save(model.state_dict(), 'nn/model.pt')
