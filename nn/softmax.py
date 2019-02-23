@@ -14,9 +14,9 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 input_size = 120
 hidden_size = 500
 num_labels = 3334
-num_epochs = 10
+num_epochs = 25
 batch_size = 50
-learning_rate = 0.1
+learning_rate = 0.001
 test_size = 3000
 
 
