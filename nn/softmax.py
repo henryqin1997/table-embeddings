@@ -98,7 +98,7 @@ def main():
         inputs = np.genfromtxt('nn/inputs.csv', dtype='int64', delimiter=',')
         targets = np.genfromtxt('nn/targets.csv', dtype='int64', delimiter=',')
     else:
-        inputs, targets = load_data_domain_schemas()
+        inputs, targets = load_data()
         np.savetxt('nn/inputs.csv', inputs, fmt='%i', delimiter=',')
         np.savetxt('nn/targets.csv', targets, fmt='%i', delimiter=',')
 
