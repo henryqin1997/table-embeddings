@@ -17,7 +17,7 @@ num_labels = 3334
 num_epochs = 100
 batch_size = 50
 learning_rate = 0.0001
-test_size = 1000
+test_size = 3000
 
 
 class NeuralNet(nn.Module):
