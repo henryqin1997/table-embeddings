@@ -4,6 +4,7 @@ import torch.optim as optim
 import torch.utils.data
 import numpy as np
 import time
+import os
 from .load import load_data, load_data_100_sample, load_data_domain_schemas
 
 torch.manual_seed(1)
@@ -15,7 +16,7 @@ num_labels = 3334
 num_epochs = 10
 batch_size = 50
 learning_rate = 0.1
-test_size = 3000
+test_size = 2000
 
 
 class NeuralNet(nn.Module):
@@ -93,7 +94,14 @@ def main():
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
-    inputs, targets = load_data()
+    if os.path.exists('nn/inputs.csv') and os.path.exists('nn/targets.csv'):
+        inputs = np.genfromtxt('nn/inputs.csv', dtype='int64', delimiter=',')
+        targets = np.genfromtxt('nn/targets.csv', dtype='int64', delimiter=',')
+    else:
+        inputs, targets = load_data_domain_schemas()
+        np.savetxt('nn/inputs.csv', inputs, fmt='%i', delimiter=',')
+        np.savetxt('nn/targets.csv', targets, fmt='%i', delimiter=',')
+
     dataset = TableDataset(inputs, targets)
 
     train_dataset, test_dataset = torch.utils.data.random_split(dataset, [len(dataset) - test_size, test_size])
