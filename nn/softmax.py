@@ -150,7 +150,7 @@ def main():
             acc = compute_accuracy(predicted, labels)
             acc = running_acc if np.isnan(acc) else acc
             running_acc += (acc - running_acc) / (batch_index + 1)
-    print('Accuracy of the network on the test columns: {:.4f}%'.format(
+    print('Accuracy of the network on the test dataset: {:.2f}%'.format(
         100 * running_acc))
 
     print('Saving state...')
