@@ -71,15 +71,17 @@ def update_stats(stats, predicted, correct, no_other=True, other_index=3333):
             return
 
     for p, c in zip(predicted, correct):
-        stats[int(p == c)][correct] += 1
+        stats[c][p] += 1
 
 
 def stats_to_dict(stats):
     h, w = stats.shape
-    assert h == 2
+    assert h == w
     stats_dict = {}
     for i in range(w):
-        stats_dict[i] = (stats[0][i], stats[1][i])
+        d = {k: v for k, v in enumerate(stats[i]) if v}
+        if d:
+            stats_dict[i] = d
     return stats_dict
 
 
@@ -110,7 +112,7 @@ def main():
 
     print('Testing...')
     running_acc = 0.0
-    stats = np.zeros((2, num_labels), dtype='int64')
+    stats = np.zeros((num_labels, num_labels), dtype='int64')
     with torch.no_grad():
         for batch_index, (columns, labels) in enumerate(test_loader):
             columns = columns.float().to(device)
@@ -124,11 +126,12 @@ def main():
     print('Accuracy of the network on the test dataset: {:.2f}%'.format(
         100 * running_acc))
     stats_dict = stats_to_dict(stats)
-    stats_by_frequency = dict(sorted(stats_dict.items(), key=lambda item: sum(item[1]), reverse=True))
-    stats_by_accuracy = dict(sorted(filter(lambda item: sum(item[1]), stats_dict.items()),
-                                    key=lambda item: item[1][1] / sum(item[1]), reverse=True))
-    print(list(stats_by_frequency.items())[:10])
-    print(list(stats_by_accuracy.items())[:10])
+    stats_by_frequency = dict(sorted(stats_dict.items(), key=lambda item: sum(item[1].values()), reverse=True))
+    print(list(stats_by_frequency.items())[:100])
+    stats_by_accuracy = dict(sorted(filter(lambda item: sum(item[1].values()), stats_dict.items()),
+                                    key=lambda item: (item[1][item[0]] if item[0] in item[1] else 0) / sum(
+                                        item[1].values()), reverse=True))
+    print(list(stats_by_accuracy.items())[:100])
 
 
 if __name__ == "__main__":
