@@ -20,6 +20,9 @@ batch_size = 50
 learning_rate = 0.0001
 test_size = 3000
 
+wordlist = list(map(itemgetter(0), json.load(open('data/wordlist_v6_index.json')).items()))
+wordlist.append('OTHER')
+
 
 class NeuralNet(nn.Module):
     def __init__(self):
@@ -80,9 +83,9 @@ def stats_to_dict(stats):
     assert h == w
     stats_dict = {}
     for i in range(w):
-        d = {k: int(v) for k, v in enumerate(stats[i]) if v}
+        d = {wordlist[k]: int(v) for k, v in enumerate(stats[i]) if v}
         if d:
-            stats_dict[i] = dict(sorted(d.items(), key=itemgetter(1), reverse=True))
+            stats_dict[wordlist[i]] = dict(sorted(d.items(), key=itemgetter(1), reverse=True))
     return stats_dict
 
 
