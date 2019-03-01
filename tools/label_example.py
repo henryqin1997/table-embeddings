@@ -10,4 +10,4 @@ if __name__ == '__main__':
         data = json.load(open(os.path.join('data/train', file)))
         table = Table(data)
         if label in [header.lower() for header in table.get_header()]:
-            print(file)
+            print(os.path.join('data/train', file))
