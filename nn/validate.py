@@ -5,6 +5,7 @@ import torch.utils.data
 import numpy as np
 import os
 import json
+from operator import itemgetter
 from .load import load_data, load_data_100_sample, load_data_domain_schemas
 from .plot import plot_performance
 
@@ -79,9 +80,9 @@ def stats_to_dict(stats):
     assert h == w
     stats_dict = {}
     for i in range(w):
-        d = {k: v for k, v in enumerate(stats[i]) if v}
+        d = {k: int(v) for k, v in enumerate(stats[i]) if v}
         if d:
-            stats_dict[i] = d
+            stats_dict[i] = dict(sorted(d.items(), key=itemgetter(1), reverse=True))
     return stats_dict
 
 
@@ -127,11 +128,15 @@ def main():
         100 * running_acc))
     stats_dict = stats_to_dict(stats)
     stats_by_frequency = dict(sorted(stats_dict.items(), key=lambda item: sum(item[1].values()), reverse=True))
-    print(list(stats_by_frequency.items())[:100])
-    stats_by_accuracy = dict(sorted(filter(lambda item: sum(item[1].values()), stats_dict.items()),
-                                    key=lambda item: (item[1][item[0]] if item[0] in item[1] else 0) / sum(
-                                        item[1].values()), reverse=True))
-    print(list(stats_by_accuracy.items())[:100])
+    json.dump(stats_by_frequency, open('nn/stats_by_frequency.json', 'w+'), indent=4)
+    stats_by_accuracy_desc = dict(sorted(filter(lambda item: sum(item[1].values()), stats_dict.items()),
+                                         key=lambda item: ((item[1][item[0]] if item[0] in item[1] else 0) / sum(
+                                             item[1].values()), sum(item[1].values())), reverse=True))
+    json.dump(stats_by_accuracy_desc, open('nn/stats_by_accuracy_desc.json', 'w+'), indent=4)
+    stats_by_accuracy_asc = dict(sorted(filter(lambda item: sum(item[1].values()), stats_dict.items()),
+                                        key=lambda item: ((item[1][item[0]] if item[0] in item[1] else 0) / sum(
+                                            item[1].values()), -sum(item[1].values()))))
+    json.dump(stats_by_accuracy_asc, open('nn/stats_by_accuracy_asc.json', 'w+'), indent=4)
 
 
 if __name__ == "__main__":
