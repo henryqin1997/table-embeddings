@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Field",
+            "User name",
+            "Password",
+            "Confirm password",
+            "User must change password at next logon",
+            "Password never expires"
+        ],
+        [
+            "Value",
+            "snapshot_agent",
+            "p@ssw0rd",
+            "p@ssw0rd",
+            "Not selected",
+            "selected"
+        ]
+    ],
+    "pageTitle": "Creating a Mobile Application with SQL Server Compact Edition",
+    "title": "",
+    "url": "https://technet.microsoft.com/en-US/library/ms171908(d=printer,v=sql.90).aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00100-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 892942407,
+    "recordOffset": 892915937,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{43788=On the System Configuration Check screen, make sure that all items pass. The last item on the list will be listed as a warning if you do not have SQL Server 2000 installed. Because you are using SQL Server 2005, this is not a problem. Click Next., 21957=Before you create the application, you must configure a publication in SQL Server 2005. In the following steps, you will create a sample database and then publish data from that database. You will create the database by using a prebuilt script file, and then create the publication with the New Publication Wizard, 19673=In this walkthrough, you will learn how to create an application in Microsoft Visual Studio 2005 that uses Microsoft SQL Server 2005 Compact Edition. The SQL Server Compact Edition database will be a Subscriber to a SQL Server 2005 Publication and will use merge replication to download information from a SQL Server 2005 database to the SQL Server Compact Edition database., 53585=Open Visual Studio 2005., 53901=In the list of templates, select the type of project you want to create. For this walkthrough, select Pocket PC 2003 Application., 77723=If the Deploy dialog box is displayed, choose Pocket PC 2003 SE Emulator, and then click Deploy.}",
+    "textBeforeTable": "Type the following information in the New User dialog box, and then click Create: In Computer Management, expand System Tools, expand Local Users and Groups, right-click Users, and then choose New User. Open Computer Management from Administrative Tools in Control Panel. Create the snapshot user account Before you create a publication, you must prepare the server for publishing by creating a snapshot agent user account and creating a shared folder in which the snapshot files will be stored. When the snapshot folder is created, it is used for all publications on the server. If you have created publications previously on this server, you can skip these steps. Prepare the Server for Publishing Data To confirm that the database was created, in Object Explorer, expand (local), expand Databases, and then expand SQLMobile. If the SQLMobile database is not listed, update the list of databases by right-clicking Databases and selecting Refresh You can also press F5 or choose Execute from the Query menu to run the query. Note: Click Execute (!) to run the script and create the database. The script runs and creates a new database named SQLMobile.",
+    "textAfterTable": "Important: These settings should be used for testing only. In a production environment, make sure that your user account settings are in compliance with the network security requirements. Frequently, you will use a domain user account instead of a local user account for the snapshot agent. Create the snapshot folder In Windows Explorer, create a new folder named snapshot. For this walkthrough, you can create the folder in the root directory of drive C at c:\\snapshot. Right-click the snapshot folder and select Sharing and Security. On the Sharing tab, select Share this folder, and then click Permissions. In Permissions for snapshot, click Add. In Enter the object name to select, type computername\\snapshot_agent where computername is the name of the local computer, click Check Names, and then click OK. In Permissions for snapshot, select snapshot_agent, assign the Change and Read share permissions, and then click OK. Select the Security tab. Click Add. In Enter the object name to select, type computername\\snapshot_agent where computername is the name of the local computer, click Check Names, and then click OK. Select snapshot_agent and add the Write permission to the list of",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

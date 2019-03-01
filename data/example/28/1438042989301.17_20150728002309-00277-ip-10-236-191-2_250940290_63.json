@@ -1,0 +1,41 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Use Default Constructor",
+            "Use Method",
+            "Method",
+            "Use Factory",
+            "Factory Class",
+            "Factory Method",
+            "Instantiation Method"
+        ],
+        [
+            "Description",
+            "Specify if the default constructor of the class instantiates a new instance.",
+            "Specify a method to execute to create objects from the database.",
+            "Select the name of a method to be executed to create objects from the database. The method must be a public, static method on the descriptor's class and must return a new instance of the object.",
+            "Specify an object factory method.",
+            "Select the class of the factory object that creates the new instances.",
+            "Select the method to be used to obtain a factory object. Choose to use the default constructor.",
+            "Select the method to be called on the factory object to obtain a new instance that will be populated with data from the data source."
+        ]
+    ],
+    "pageTitle": "Configuring a Descriptor (ELUG) - Eclipsepedia",
+    "title": "",
+    "url": "http://wiki.eclipse.org/index.php?title=Configuring_a_Descriptor_(ELUG)&oldid=91845",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 63,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00277-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 251001675,
+    "recordOffset": 250940290,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{378570=29/08/2004, 415645=Copyright \u00a9 2014 The Eclipse Foundation. All Rights Reserved., 378655=31/08/2004}",
+    "textBeforeTable": "Use the following information to enter data in each field on the tab: Complete each field on the Instantiation tab. Click the Instantiation tab. Instantiation Tab In the Navigator, select a descriptor.If the Instantiation advanced property is not visible for the descriptor, right-click the descriptor and choose Select Advanced Properties > Instantiation from the context menu or from the Selected menu. To set the instantiation policy for a descriptor, use this procedure: How to Configure Instantiation Policy Using Workbench Factory: EclipseLink creates a new instance of a class by calling the appropriate methods on a separate class that you implement according to the Factory design pattern. Method: EclipseLink creates a new instance of a class by calling a public static method that you define on the class descriptor. Default: EclipseLink creates a new instance of a class by calling the class's default constructor. You can specify one of the following types of instantiation policy: XML Descriptors",
+    "textAfterTable": "How to Configure Instantiation Policy Using Java Use one of the following ClassDescriptor methods to set the appropriate type of instantiation policy: useDefaultConstructorInstantiationPolicy useMethodInstantiationPolicy useFactoryInstantiationPolicy Configuring Copy Policy The EclipseLink unit of work feature must be able to produce an exact copy (clone) persistent objects. This table summarizes which descriptors support a copy policy. Descriptor Using the Workbench Using Java Relational Descriptors Object-Relational Data Type Descriptors EIS Descriptors",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

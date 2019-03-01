@@ -1,0 +1,58 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Ghawar",
+            "Safaniya",
+            "Shaybah",
+            "Manifah",
+            "Berri",
+            "Abqaiq",
+            "Zuluf",
+            "Qatif",
+            "Abu Safah"
+        ],
+        [
+            "URR (Gb)",
+            "66-100",
+            "21-36",
+            "18-18",
+            "17-17",
+            "10-25",
+            "10-15",
+            "12.0-14.0",
+            "8.4",
+            "6.0"
+        ],
+        [
+            "Discovery Date",
+            "1938",
+            "1951",
+            "1969",
+            "1957",
+            "1965",
+            "1941",
+            "1965",
+            "1965",
+            "1969"
+        ]
+    ],
+    "pageTitle": "GraphOilogy: July 2006",
+    "title": "",
+    "url": "http://www.graphoilogy.com/2006_07_01_archive.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00169-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 477780887,
+    "recordOffset": 477753542,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{87119=Fig. 2 Traffic of Prospective Buyers index. The gray background gives the observed values between 1985 and 2005, the darker the shade the more frequent the corresponding value., 88257=Fig. 1 Housing Market Index (HMI) from 1995 to now (src: NAHB)., 85043=Fig. 5 Housing Market Index. The gray background gives the observed values between 1985 and 2005, the darker the shade the more frequent the corresponding value., 85723=Fig. 4 Current Single Family Sales. The gray background gives the observed values between 1985 and 2005, the darker the shade the more frequent the corresponding value., 86417=Fig. 3 Single Family Sales: Next 6 Months. The gray background gives the observed values between 1985 and 2005, the darker the shade the more frequent the corresponding value.}",
+    "lastModified": "Fri, 31 Jul 2015 03:38:57 GMT",
+    "textBeforeTable": "Unfortunately, there is no public database on Saudi Arabia oilfields. We don't need to get an exhaustive dataset but only a few estimates about the size of the largest fields. I found some data about the top 9 fields from various sources on the web and from Simmons's book (Twilight in the Desert). Application to Saudi Arabia with: a + b.log(i) + c.log(i)^2 > Size_Min URR= Sum_i(a + b.log(i) + c.log(i)^2) GraphOilogy for details). Once the PFL parameters are estimated we can derive an URR value by computing the area under the PFL curve given a small fieldsize cutoff: c=-0.1518/log(10)=-0.07. Interestingly, we get also the same value for the UK oil fields (see b=-1. Jean Lah\u00e8rrere has estimated the curvature for the world (excluding North America) and came up with the value c=0 and c the PFL curvature. In case of perfect self-similarity, we have i. we call Size(i) is the size of the oil field of rank where log(Size(i))= a + b.log(i) + c.log(i)^2 Parabolic Fractal Law (PFL) is an unperfect self-similar law where a quadratic term is added: The Fig. 1 Example of a simple self-similar object size distribution represented in a log(rank)-log(size) plane. The red line has a slope equals",
+    "textAfterTable": "Table I. Size estimates for Saudi Arabia Top 9 fields (src: IHS, Simmons). Because we have so little data, it will be difficult to reliably estimate a valid parabolic curvature. So we proceed asfollowing: The Field URR are ranked according to their size and represented in a log(rank)-log(URR) plane as shown on Fig. 2. When only an interval is available, we take the center value. a robust linear fit (no curvature) is applied on the data points (red line on Fig. 2). A parabolic model is then fitted using the slope established in 2) as first guess for the linear term b and a fixed curvature value c (blue lines on Fig. 2). The algorithm used for this step is the Levenberg-Marquardt algorithm. The URR values are estimated from the areas under the PFL curves conditionally to a particular minimum oil field size as shown on Fig. 3. Fig. 2. Estimation of various PF Laws with different fixed curvature values. Each data point is color coded according to the oil field age.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

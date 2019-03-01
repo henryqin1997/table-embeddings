@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Device Name",
+            "Description",
+            "Retry Video Call as Audio",
+            "Wait for Far End H.245 Terminal Capability Set",
+            "Gatekeeper Name",
+            "Terminal Type",
+            "Technology Prefix",
+            "Other parameters"
+        ],
+        [
+            "Value",
+            "A name that identifies this trunk.",
+            "A descriptive name for this trunk that connects to your IOS gatekeeper.",
+            "Check the check box.",
+            "Uncheck the check box.",
+            "Select the IOS H.323 Gatekeeper that was configured in the To Add an H.323 Gatekeeper.",
+            "Gateway.",
+            "The prefix or pattern that will route calls to Cisco Unified CallManager from the gatekeeper.",
+            "Values as appropriate for your environment."
+        ]
+    ],
+    "pageTitle": "Cisco Unified MeetingPlace Release 6.1 -- Installing the Cisco Unified MeetingPlace Video Integration Component - DocWiki",
+    "title": "",
+    "url": "http://docwiki.cisco.com/w/index.php?title=Cisco_Unified_MeetingPlace_Release_6.1_--_Installing_the_Cisco_Unified_MeetingPlace_Video_Integration_Component&oldid=44203",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990445.44/warc/CC-MAIN-20150728002310-00297-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 75353991,
+    "recordOffset": 75325474,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{31015=If your Cisco Unified MeetingPlace Audio Server is configured to use G.729, verify that the Cisco Unified Videoconferencing MCU is configured to support G.729. If you are using Cisco Unified Videoconferencing 4.x, a transcoder card may be needed. For information about specifying an audio codec, see the Cisco Unified Videoconferencing MCU Help., 78135=ADDRESS> 1719, 89825=Sound quality and bandwidth use are determined partly by the audio codec that the Cisco Unified MeetingPlace and Cisco Unified Videoconferencing systems use. The video signal of the video endpoint and its audio channel must share available bandwidth. As a result, better picture quality may degrade audio quality or delay audio transmission., 90180=The Cisco Unified MeetingPlace Audio Server supports the G.711 and G.729a compression codecs. To allocate resources between audio and video to best meet your needs, specify a voice data compression protocol on the Audio Server by using the setipcodec command. Use the following guidelines:, 29637=For detailed information about video-conferencing parameters, see the Cisco Unified Videoconferencing MCU documentation, at http://www.cisco.com/en/US/products/hw/video/ps1870/tsd_products_support_series_home.html.}",
+    "textBeforeTable": "Table: Media Processors That Support Video in Cisco Unified MeetingPlace Table: Media Processors That Support Video in Cisco Unified MeetingPlace provides information about which Cisco Unified Videoconferencing media processors support Cisco Unified MeetingPlace. You must create at least one Cisco Unified Videoconferencing MCU service for Cisco Unified MeetingPlace. Before you create a service in the Cisco Unified Videoconferencing MCU, verify that the media processor (MP) that the Cisco Unified Videoconferencing MCU uses supports Cisco Unified MeetingPlace. Creating Cisco Unified Videoconferencing MCU Services for Cisco Unified MeetingPlace Repeat Step 1 through Step 4 for each Cisco Unified Videoconferencing MCU that is to be used with Cisco Unified MeetingPlace. Click Send, then click Close. Tip: We recommend entering 1500 to establish an interval of 15 seconds. In the Parameter field, enter the value in milliseconds that you want Cisco Unified MeetingPlace to announce to video participants that they are in the waiting room and that the conference has not formally started. Your selection appears in the Command field.",
+    "textAfterTable": "To Install the Cisco Unified MeetingPlace Service Templates on an Existing Cisco Unified Videoconferencing MCU Installation and Erase Existing Services Run the Cisco Unified Videoconferencing MCU installer. At the first install screen, click Customize. Check the MCU Config File check box. Continue with the installation. After installation, log in to the Cisco Unified Videoconferencing MCU as administrator. Click MCU on the sidebar and click the Services tab. In the Services tab, choose the applicable template. Voice Activated allows participants to View Active Speaker, while Continuous Presence allows participants to View Multiple People. These settings are available to participants in the web-conferencing meeting room. See the appropriate table for the default service codes included with your MCU: Table: Default MeetingPlace service codes included with Cisco Unified Videoconferencing MCU Release 4.x Table: Default MeetingPlace service code included with Cisco Unified Videoconferencing MCU Release 5.x Table: Default MeetingPlace service codes included with Cisco Unified Videoconferencing MCU Release 4.x Service Prefix Supported Views Supported Endpoints Processors Required Format Allow Dynamic Scheme 887",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

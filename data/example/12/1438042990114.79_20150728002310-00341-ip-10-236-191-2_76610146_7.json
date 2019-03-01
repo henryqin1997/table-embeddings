@@ -1,0 +1,41 @@
+{
+    "relation": [
+        [
+            "Field",
+            "From file",
+            "To file",
+            "From member",
+            "To member or label",
+            "Replace or add records",
+            "Create file",
+            "Print format"
+        ],
+        [
+            "Explanation",
+            "The file and library containing the data to be copied. The file is F93002 and the library can default to *LIBL.",
+            "The name of the source file and your development source library. Generally, the file is JDESRC and the library is DEVSRC.",
+            "The member name that will be the beginning of the copy process. Generally, this value is *FIRST.",
+            "The member name that will be the beginning of the receiving process. Generally, this value is *FIRST.",
+            "Specifies whether the records copied should replace or be added to the records in the To file. In this case since the To file does not exist, this value is *NONE.",
+            "Specifies whether the To file does not exist and needs to be created. This value is *YES.",
+            "Specifies whether the characters are printed in character or character and hexadecimal format. This option only applies if the To file is *PRINT."
+        ]
+    ],
+    "pageTitle": "Development Environment",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E26228_01/doc.93/e21952/ch_developement_environ.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00341-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 76623119,
+    "recordOffset": 76610146,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 13 May 2015 05:24:31 GMT",
+    "textBeforeTable": "Description of \"Figure 4-2 Create Library screen\" Figure 4-2 Create Library screen Type the IBM command Create Library (CRTLIB) and press F4. To create a development object library 4.4.2 Creating a Development Object Library Generates a report to identify all the optional files. The report explains why the files are optional so that you can determine if they should be deleted. Generates reports to identify all the physical, logical, and join files created and to identify where they were created Creates the physical and logical files for various applications in your development library Creates the physical and logical files necessary for operations control in your development library Creates the physical and logical files that should be maintained in your common library Creates your libraries Repeat the above step for each of the development data libraries you have. The program automatically: Once you correctly complete the form and press Enter, the job (J98102) is submitted to batch. Complete the Create User Data Libraries form. Description of \"Figure 4-1 Create User Data",
+    "textAfterTable": "Figure 4-3 Create Library screen Description of \"Figure 4-3 Create Library screen\" Field Explanation Library Your development object library name. Library Type *PROD or *TEST Text 'description' The description of your library 4.5.1 Creating JDESRC for JD Edwards World Program Generator When an RPGIII or RPGIV program is moved into production at JD Edwards World, the record length is 92 bytes. If you have J.D. Edward's Program Generator product, the program source file format must be 142 bytes to allow for the Program Generator Serial Number and additional required data. To create JDESRC for JD Edwards World Program Generator To copy an existing file with the correct format (F93002), type the IBM Copy File command (CPYF) and press F4. Figure 4-4 Copy File screen Description of \"Figure 4-4 Copy File screen\"",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

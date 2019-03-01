@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Position Security Profile",
+            "Country Security Profile",
+            "LDG Security Profile",
+            "Person Security Profile (Person section)",
+            "Person Security Profile (Public Person section)",
+            "Document Type Security Profile"
+        ],
+        [
+            "Value",
+            "View All Positions",
+            "View All Countries",
+            "View All Legislative Data Groups",
+            "View Own Record",
+            "View All Workers",
+            "View All Document Types"
+        ]
+    ],
+    "pageTitle": "Oracle Fusion Applications Customer Data Management Implementation Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E25178_01/fusionapps.1111/e20433/F414889AN18A28.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988308.23/warc/CC-MAIN-20150728002308-00113-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 78933311,
+    "recordOffset": 78893356,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 20 Sep 2012 17:33:18 GMT",
+    "textBeforeTable": "On the Assign Data Role: Security Criteria page use the default values, as shown in this table. Assigning Security Profiles to the Abstract Role Click Assign. In the search results, highlight the entry for the Employee role. Click Search. On the Manage HCM Data Roles page, enter the abstract role name Employee in the Role field. In the Functional Setup Manager (FSM), click Go to Task for the Manage Data Role and Security Profiles task. Searching for the Abstract Role Oracle Fusion Applications users may need to access Oracle Fusion Human Capital Management (HCM) person data, such as lists of person names, in their product interfaces. To provide this access, you assign predefined HCM security profiles to relevant abstract roles, such as Employee. This example shows how to assign security profiles to the Employee abstract role. Setting Up Data Security for Employees: Worked Example Therefore, one security profile can inherit the data instance set defined by another. In a position security profile, to secure positions by department or business unit In a person security profile, to secure person records by department, business unit, or legal employer You can include security profiles in other security profiles. For example, you can include an organization security profile: Regardless of how you create them, all security profiles are reusable; they do not belong to particular",
+    "textAfterTable": "These are the security profiles that are typically assigned to the Employee abstract role. You may see a subset of these security profiles, depending on the combination of product offerings that you are implementing. Click Review. On the Assign Data Role: Review page, click Submit. Define Users Securing Identities and Users: Points To Consider Identity covers all aspects of an entity's existence within the contexts in which it is used. The identity of an enterprise user consists of HR attributes, roles, resources, and relationships. HR attributes include identifying information about a user that is relatively static and well understood, such as first and last name, title, and job function. Roles are part of a user's identity and define the user's purpose and responsibilities. Within identity management, resources define what a user can and does do. In an enterprise, this typically translates into what resources a user has access to, what privileges they have on that resource, and what they have been doing on that resource. Resources can be application accounts or physical devices such as laptops or access cards. The enterprise owns the resources, secures them, and manages access to the resources by managing the user's identity and access. Relationships establish the portion of user identities that involve organizational transactions such as approvals. An Oracle Fusion Applications user and corresponding identity are usually created in a single transaction, such",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

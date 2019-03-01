@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Enable automatic backup",
+            "Enable automatic archiving",
+            "Archiving method",
+            "Pathname location of archive",
+            "Remote archive host",
+            "Remote host user ID Remote host password",
+            "Notification email"
+        ],
+        [
+            "Description",
+            "Default: Yes",
+            "Whether to automatically archive the database after a backup. Default: No",
+            "Whether to enable archiving through FTP or SSH/rsync. Default: Remote (SSH/rsync)",
+            "Directory in which the archived database is saved. Requirement: Include a leading slash before the directory name. Example: /folder_name",
+            "Host name or IP address of the remote server to which the files are archived.",
+            "User ID and password to authenticate to the remote server. Requirement: Use an account that has the privileges to create, access, and write to directories.",
+            "Email address to which the system sends archive execution status."
+        ]
+    ],
+    "pageTitle": "Cisco Unified MeetingPlace Release 8.0 -- Administration Center Page References for Cisco Unified MeetingPlace (A - C pages) - DocWiki",
+    "title": "",
+    "url": "http://docwiki.cisco.com/wiki/Cisco_Unified_MeetingPlace_Release_8.0_--_Administration_Center_Page_References_for_Cisco_Unified_MeetingPlace_(A_-_C_pages)",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 14,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00079-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 74154855,
+    "recordOffset": 74118420,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{25382=(Optional) Combined with the Routing Codec, the system uses this information to generate an Extended dial prefix for the remote server:, 27747=Routing Codec, 27788=Select a codec to enable the system to generate an Extended dial prefix for the remote server., 146358=Which codec to use when the video terminal dials directly in to Cisco Unified MeetingPlace, or when the system dials directly out to the video terminal:, 28197=To enable the RSNA systems to generate the same extended dial prefix for this server, the same codec must be configured for this particular remote server entry on all RSNA systems:, 114086=You can change the order of the video types by selecting the up and down arrow keys. The video codec that is listed first is the default, and the system tries to use this one first., 145874=Video terminal codec, 45962=Details about the selected video type including the name, codec type, and bit rates.}",
+    "lastModified": "Fri, 06 Dec 2013 19:38:42 GMT",
+    "textBeforeTable": "Table: Field Reference: Ad-Hoc Cisco Unified Communications Manager Configuration Page To find this page, select System Configuration > Call Configuration > Ad-Hoc Cisco Unified Communications Manager Configuration. Use this page to configure TFTP server IP addresses for ad-hoc conferencing. Ad-Hoc Cisco Unified Communications Manager Configuration Page 21.2 Related Topics 21.1 Table: Field Reference: Customize Outlook Interface 21 Customize Outlook Interface 20.3 Related Topics 20.2 Table: Navigation Reference: Custom Prompts Page 20.1 Table: Field Reference: Custom Prompts Page 20 Custom Prompts Page 19.2 Related Topics 19.1 Table: Field Reference: Configure Logging Levels Page 19 Configure Logging Levels Page 18.2 Related Topics 18.1 Table: Fields Reference: Community Strings Page 18 Community Strings Page 17.2 Related Topics 17.1 Table: Field Reference: Cisco WebEx Site and Server Page",
+    "textAfterTable": "Application server MAC address Display only. MAC address of the Cisco Unified MeetingPlace Application Server. Use the value in this field to identify the Cisco Unified MeetingPlace server as the conference bridge in Cisco Unified Communications Manager configuration. Cisco Unified Communications Manager Registration Information Current Cisco Unified Communications Manager Display only. The current Cisco Unified Communications Manager TFTP server that is currently in use. Status Display only. Whether Cisco Unified MeetingPlace is registered with the Cisco Unified Communications Manager TFTP server. Related Topics Configuring Ad-Hoc Conferencing for Cisco Unified MeetingPlace module Add Meeting Categories Page To find this page, select System Configuration > Meeting Categories > Add New. Table: Field Reference: Add Meeting Categories Page and Edit Meeting Categories Page Field Description Name Identifies the meeting category on the scheduling page and in meeting details. Owner",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

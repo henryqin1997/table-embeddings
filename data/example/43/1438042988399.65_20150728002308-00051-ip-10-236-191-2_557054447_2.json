@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "Field",
+            "api_key",
+            "action",
+            "report_id",
+            "data_sections",
+            "page",
+            "per_page"
+        ],
+        [
+            "Value",
+            "Your API key",
+            "get_data",
+            "The id of the report",
+            "Array of data sections which to retrieve.",
+            "The page you want to retrieve",
+            "Number of data rows per page"
+        ],
+        [
+            "Comment",
+            "Check your accounts settings area for your personal API key",
+            "",
+            "You got this id when you started a report.",
+            "See below for a list of data sections for each tool. If not set, then all available data sections are returned.",
+            "If you have more than 25 input URLs in a report, you might have to get the data in separate batches. By default, the first page is shown.",
+            "This parameter defines how many data rows (input URLs + metrics) are shown per page. It is generally a good idea not to load 1,000 results in one batch but rather make several smaller requests. Default value is 25."
+        ]
+    ],
+    "pageTitle": "API \u00bb LinkResearchTools",
+    "title": "",
+    "url": "http://www.linkresearchtools.com/api/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988399.65/warc/CC-MAIN-20150728002308-00051-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 557072563,
+    "recordOffset": 557054447,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{36080=Jobs | Training | Services | FAQ | Terms & Conditions | Privacy | Contact | Everyday Superhero Tools All Content and Intellectual Property is under Copyright Protection | LinkResearchTools GmbH | \u00a9 2009-2015}",
+    "lastModified": "Sat, 01 Aug 2015 01:06:29 GMT",
+    "textBeforeTable": "To start a report send a request with data described in this section to the API URL. Starting a JUICE Report The Link Research Tools API is designed for internal customer applications only and specifically does not permit re-selling (like integration of the data into public available applications) of any data provided through the LinkResearchTools. For a reseller license, please contact us, we would be happy to provide data for your application. The request URL for all API calls is: http://www.linkresearchtools.com/toolkit/api.php You can access the API functionality via simple HTTP POST or GET requests. The response is JSON-formatted. The LinkResearchTools API allows you to start JUICE reports for a list of URLs and values. To use the API you need a unique API key which you can find on the Settings page of your account. API Basics Questions or Feedback? Download Example Scripts Error Codes Retrieving a List of Reports Retrieving a List of SEO Metrics (Value Names) Retrieving Report Data Starting a JUICE Report API Basics Table of Contents API Documentation",
+    "textAfterTable": "title Report title Optional: If not provided, the API will automatically generate a title project Project name Optional: If not provided, the project will be the default project. Response Object The response object is an object with the following fields. Field Value Comment status The request status code Error codes can be found here. message A descriptive status message. \u00a0 report An object with report information. This is only set when the API call succeeded. \u00a0 \u00a0report_id The id of the report You need this id to request the report data. \u00a0 \u00a0title The title of the report \u00a0 \u00a0 \u00a0urls The URLs for which the report was started. \u00a0 \u00a0 \u00a0value_names The values for which the report was started. \u00a0 \u00a0 \u00a0tool The tool. \u00a0 Retrieving Report Data To get report data send a request with data described in this section to the API URL. Request Data Field Value Comment api_key Your API key Check your accounts settings area for your personal API key action get_data \u00a0 report_id The id of the report You got this id when you started a report. data_sections Array of data sections which to retrieve. See below for a list of data",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

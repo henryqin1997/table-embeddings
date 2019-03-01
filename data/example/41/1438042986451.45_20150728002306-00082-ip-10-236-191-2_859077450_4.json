@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Size of previous packet",
+            "Packet Type",
+            "Payload Size",
+            "Timestamp Lower",
+            "Timestamp Upper",
+            "Stream ID",
+            "Payload Data"
+        ],
+        [
+            "Data Type",
+            "uint32_be",
+            "uint8",
+            "uint24_be",
+            "uint24_be",
+            "uint8",
+            "uint24_be",
+            "freeform"
+        ],
+        [
+            "Default",
+            "0",
+            "18",
+            "varies",
+            "0",
+            "0",
+            "0",
+            "varies"
+        ],
+        [
+            "Details",
+            "For first packet set to NULL",
+            "For first packet set to AMF Metadata",
+            "Size of packet data only",
+            "For first packet set to NULL",
+            "Extension to create a uint32_be value",
+            "For first stream of same type set to NULL",
+            "Data as defined by packet type"
+        ]
+    ],
+    "pageTitle": "Flash Video - Wikipedia, the free encyclopedia",
+    "title": "",
+    "url": "https://en.wikipedia.org/wiki/FLV",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986451.45/warc/CC-MAIN-20150728002306-00082-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 859111791,
+    "recordOffset": 859077450,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{20594=Audio in Flash Video files is usually encoded as MP3. However, audio in Flash Video FLV files recorded from the user's microphone use the proprietary Nellymoser Asao Codec.[8] (Flash Player 10 released in 2008 also supports the open source Speex codec.[17]) FLV files also support uncompressed audio or ADPCM format audio. Recent versions of Flash Player 9 support AAC (HE-AAC/AAC SBR, AAC Main Profile, and AAC-LC)., 45181=Flash Player 9 Update 3, released on 3 December 2007,[20] also includes support for the new Flash Video file format F4V and H.264 video standard (also known as MPEG-4 part 10, or AVC) which is even more computationally demanding, but offers significantly better quality/bitrate ratio.[21] Specifically, Flash Player now supports video compressed in H.264 (MPEG-4 Part 10), audio compressed using AAC (MPEG-4 Part 3), the F4V, MP4 (MPEG-4 Part 14), M4V, M4A, 3GP and MOV multimedia container formats, 3GPP Timed Text specification (MPEG-4 Part 17) which is a standardized subtitle format and partial parsing support for the 'ilst' atom which is the ID3 equivalent iTunes uses to store metadata. MPEG-4 Part 2 video (e.g. created with DivX or Xvid) is not supported.[5], 12506=Initial format since 2002 is Flash Video, file suffix is .flv with a MIME derived Internet media type of video/x-flv., 51497=On 29 June 2012, Adobe announced that, as they were discontinuing development of the mobile version of Flash, they would prevent the Flash player from installing from the Google Play Store on any Android devices that do not already have the Flash player installed, and that they would not be releasing a version of Flash certified for use with Android version 4.1, codenamed Jelly Bean.[24], 17533=Commonly, Flash Video FLV files contain video bit streams which are a proprietary variant of the H.263 video standard,[10] under the name of Sorenson Spark (FourCC FLV1).[11][12] Sorenson Spark is an older codec for FLV files but it is also a widely available and compatible one, because it was the first video codec supported in Flash Player.[13] It is the required video compression format for Flash Player 6 and 7.[14][15] Flash Player 8 and newer revisions also support the playback of On2 TrueMotion VP6 video bit streams (FourCC VP6F or FLV4). On2 VP6 is the preferred video compression format for use with Flash Player 8 and higher.[7][11] On2 VP6 can provide a higher visual quality than Sorenson Spark, especially when using lower bit rates. On the other hand it is computationally more complex and therefore will not run as well on certain older system configurations.[14][16], 10778=Support for video in SWF file format was added in Flash Player 6, released in 2002. In 2003, Flash Player 7 added direct support for FLV file format. Because of restrictions in the FLV file format, Adobe Systems has created in 2007 new file formats listed below, based on the ISO base media file format (MPEG-4 Part 12). Flash Player does not check the extension of the file, but rather looks inside the file to detect which format it is.[5][6] The new file formats are completely different from the older FLV file format. For example, F4V does not support Screen video, Sorenson Spark, VP6 video compression formats and ADPCM, Nellymoser audio compression formats.[1][6] Authors of Flash Player strongly encourage everyone to embrace the new standard file format F4V (ISO base media file format). There are functional limits with the FLV structure when streaming H.264 or AAC which could not be overcome without a redesign of the file format. This is one reason why Adobe Systems is moving away from the traditional FLV file structure.[6], 20048=The Flash Video FLV file format supports two versions of a so-called 'screenshare' (Screen video) codec which is an encoding format designed for screencasts. Both these formats are bitmap tile based, can be lossy by reducing color depths and are compressed using zlib. The second version is only playable in Flash Player 8 and newer., 12725=Extended from 2007 to support the ISO base media file format, Adobe branded file suffix is .f4v with the same MIME derived Internet media type of video/mp4 as the Apple file suffix of .m4v and the general file suffix of .mp4. Adobe branded file suffixes exist for .f4p which relates to media encrypted with their Adobe Access DRM scheme with .f4a and .f4b which relate respectively to .m4a and .m4b with the same MIME derived Internet media type of audio/mp4.}",
+    "lastModified": "Mon, 27 Jul 2015 06:02:44 GMT",
+    "textBeforeTable": "SWF files published for Flash Player 6 and later versions are able to exchange audio, video, and data over RTMP connections with the Adobe Flash Media Server. One way to feed data to Flash Media Server is from files in the FLV file format. Starting with SWF files created for Flash Player 7, Flash Player can play FLV file format directly (MIME type video/x-flv). Starting with SWF files created for Flash Player 9 Update 3, Flash Player can also play the new F4V file format.[1] Extended from 2007 to support the ISO base media file format, Adobe branded file suffix is .f4v with the same MIME derived Internet media type of video/mp4 as the Apple file suffix of .m4v and the general file suffix of .mp4. Adobe branded file suffixes exist for .f4p which relates to media encrypted with their Adobe Access DRM scheme with .f4a and .f4b which relate respectively to .m4a and .m4b with the same MIME derived Internet media type of audio/mp4. Initial format since 2002 is Flash Video, file suffix is .flv with a MIME derived Internet media type of video/x-flv. Support for video in SWF file format was added in Flash Player 6, released in 2002. In 2003, Flash Player 7 added direct support for FLV file format. Because of restrictions in the FLV file format, Adobe Systems has",
+    "textAfterTable": "2008 SWF, FLV On2 VP6, Sorenson Spark, Screen video, Screen video 2, H.264[*] MP3, ADPCM, Nellymoser, Speex, AAC[*] SWF, F4V, ISO base media file format H.264 AAC, MP3 Use of the H.264 and AAC compression formats in the FLV file format has some limitations and authors of Flash Player strongly encourage everyone to embrace the new standard F4V file format.[6] Encoding[edit] Commonly, Flash Video FLV files contain video bit streams which are a proprietary variant of the H.263 video standard,[10] under the name of Sorenson Spark (FourCC FLV1).[11][12] Sorenson Spark is an older codec for FLV files but it is also a widely available and compatible one, because it was the first video codec supported in Flash Player.[13] It is the required video compression format for Flash Player 6 and 7.[14][15] Flash Player 8 and newer revisions also support the playback of On2 TrueMotion VP6 video bit streams (FourCC VP6F or FLV4). On2 VP6 is the preferred video compression format for use with Flash Player 8 and higher.[7][11] On2 VP6 can provide a",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

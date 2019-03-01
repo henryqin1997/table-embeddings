@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Field",
+            "OSPFv3 Router with ID",
+            "Process ID 1",
+            "LS age",
+            "Options",
+            "LS Type",
+            "Link State ID",
+            "Advertising Router",
+            "LS Seq Number",
+            "Checksum",
+            "Length",
+            "Link connected to",
+            "Link Metric",
+            "Local Interface ID"
+        ],
+        [
+            "Description",
+            "Router ID number.",
+            "OSPFv3 process name.",
+            "Link-state age.",
+            "Type of service options (Type 0 only): DC\u2014Supports demand circuits.E\u2014Capable of processing external LSAs.MC\u2014Forwards IP multicast.N\u2014Supports Type 7 LSAs.R\u2014Router is active.V6\u2014Include in IPv6 routing calculations.",
+            "Link-state type.",
+            "Link-state ID of the designated router.",
+            "ID of the advertising router.",
+            "Link-state sequence (detects old or duplicate LSAs).",
+            "Link-state checksum (Fletcher checksum of the complete contents of the LSA).",
+            "Length (in bytes) of the LSA.",
+            "The type of network to which this interface is connected. Values are: Another Router (point-to-point). A Transit Network. A Virtual Link.",
+            "OSPF cost of using this link.",
+            "Number that uniquely identifies an interface on a router."
+        ]
+    ],
+    "pageTitle": "OSPFv3 Commands on Cisco IOS XR Software - Cisco",
+    "title": "This table describes the significant fields shown in the display. Table 10 show ospfv3 database router Field Descriptions",
+    "url": "http://www.cisco.com/c/en/us/td/docs/routers/crs/software/crs_r4-1/routing/command/reference/routing_cr41crs_chapter5.html?referring_site=smartnavRD",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 174,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988598.68/warc/CC-MAIN-20150728002308-00248-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 378400983,
+    "recordOffset": 378311899,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{211597=Maximum number of interfaces that can be configured for this OSPFv3 process. Range is 1 to 1024., 146318=The following example shows how to prevent OSPFv3 from redistributing routes that have 2001:e624 as the first 32 bits of the address. In addition, routes with a prefix beginning with 2064 are not redistributed from Border Gateway Protocol (BGP) autonomous system 1, and only those routes are redistributed from BGP autonomous system 5., 277213=If not specified, the default packet size is 1500 bytes., 678011=The following example shows how to change the start, hold, and maximum wait interval values to 5, 1000, and 90,000\u00a0milliseconds, respectively:, 241592=(Optional) Specifies an unsigned integer value (in seconds) reflecting the poll interval. RFC 1247 recommends that this value be much larger than the hello interval. The poll-interval keyword does not apply to point-to-multipoint interfaces., 615368=This argument must be in the form documented in RFC 2373, where the address is specified in hexadecimal using 16-bit values between colons., 300460=This argument must be in the form documented in RFC 2373, in which the address is specified in hexadecimal using 16-bit values between colons., 350075=The following example shows how to assign the IP address of 10.0.0.10 to the OSPFv3 process 109:, 629224=The following example shows how to set the minimum interval for accepting the same LSA at 2000 milliseconds:, 642382=Interval (in seconds) at which LSAs are grouped and refreshed, checksummed, or aged. Range is 10 to 1800 seconds., 667797=This example shows how to customize OSPFv3 LSA throttling so that the start interval is 200 milliseconds, the hold interval is 10,000 milliseconds, and the maximum interval is 45,000 milliseconds. The minimum interval between instances of receiving the same LSA is 2000 milliseconds., 240524=Link- local IP Version 6 (IPv6) address of the neighbor. This argument must be in the form documented in RFC 2373, in which the address is specified in hexadecimal using 16-bit values between colons., 625486=1000 milliseconds, 229686=This example shows how to set a maximum of 2000 prefixes that can be redistributed into OSPFv3 process 1. If the number of prefixes redistributed reaches 75 percent of 2000 (1500 prefixes), a warning message is logged. Another warning is logged if the limit is reached and no more routes are redistributed.}",
+    "textBeforeTable": "Neighbor (DR) Router ID: 10.0.0.0 Neighbor (DR) Interface ID: 1 Local Interface ID: 2 Link Metric: 10 Link connected to: a Transit Network Neighbor (DR) Router ID: 10.0.0.207 Neighbor (DR) Interface ID: 1 Local Interface ID: 1 Link Metric: 10 Link connected to: a Transit Network Number of Links: 2 Length: 56 Checksum: 0x51ca LS Seq Number: 8000003c Advertising Router: 0.0.0.1 Link State ID: 0 LS Type: Router Links Options: (V6-Bit E-Bit R-bit) LS age: 814 Router Link States (Area 0) OSPFv3 Router with ID (10.0.0.206) (Process ID 1) RP/0/RP0/CPU0:router# show ospfv3 database router  The following is sample output from the show ospfv3 database  command with the router keyword: Cost of the prefix. Metric LA indicates that the prefix is a local address. MC indicates that the prefix is multicast capable. NU indicates that the prefix is not unicast capable. P indicates the prefix should be propagated at an NSSA area border. Options Length of the prefix. Prefix Length Prefix associated with the router or network. Prefix",
+    "textAfterTable": "Related Commands Command Description router ospfv3 Configures an OSPFv3 routing process. show ospfv3 flood-list To display a list of Open Shortest Path First Version 3 (OSPFv3) link-state advertisements (LSAs) waiting to be flooded over an interface, use the show ospfv3 flood-list command in EXEC mode. show ospfv3 [ process-name ] [ area-id ] flood-list [ type interface-path-id ] Syntax Description process-name (Optional) Name that uniquely identifies an OSPFv3 routing process. The process name is defined by the router ospfv3 command. If this argument is included, only information for the specified routing process is displayed. area-id",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}
