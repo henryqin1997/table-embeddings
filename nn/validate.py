@@ -116,7 +116,11 @@ def main():
 
     print('Testing...')
     running_acc = 0.0
+
+    # stats is a 2d-array with shape (num_correct_labels, num_predicted_labels),
+    # which counts the frequency of each prediction case
     stats = np.zeros((num_labels, num_labels), dtype='int64')
+
     with torch.no_grad():
         for batch_index, (columns, labels) in enumerate(test_loader):
             columns = columns.float().to(device)
@@ -129,13 +133,22 @@ def main():
             update_stats(stats, predicted, labels)
     print('Accuracy of the network on the test dataset: {:.2f}%'.format(
         100 * running_acc))
+
+    # Convert stats to dict of dict,
+    # 1st level key is correct label, 2nd level key is predicted label, value is frequency
     stats_dict = stats_to_dict(stats)
+
+    # Sort by total frequency of each correct label
     stats_by_frequency = dict(sorted(stats_dict.items(), key=lambda item: sum(item[1].values()), reverse=True))
     json.dump(stats_by_frequency, open('nn/stats_by_frequency.json', 'w+'), indent=4)
+
+    # Sort by accuracy of each correct label, from high to low, then sort by frequency
     stats_by_accuracy_desc = dict(sorted(stats_dict.items(),
                                          key=lambda item: ((item[1][item[0]] if item[0] in item[1] else 0) / sum(
                                              item[1].values()), sum(item[1].values())), reverse=True))
     json.dump(stats_by_accuracy_desc, open('nn/stats_by_accuracy_desc.json', 'w+'), indent=4)
+
+    # Sort by accuracy of each correct label, from low to high, then sort by frequency
     stats_by_accuracy_asc = dict(sorted(stats_dict.items(),
                                         key=lambda item: ((item[1][item[0]] if item[0] in item[1] else 0) / sum(
                                             item[1].values()), -sum(item[1].values()))))
