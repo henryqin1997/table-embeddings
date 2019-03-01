@@ -132,11 +132,11 @@ def main():
     stats_dict = stats_to_dict(stats)
     stats_by_frequency = dict(sorted(stats_dict.items(), key=lambda item: sum(item[1].values()), reverse=True))
     json.dump(stats_by_frequency, open('nn/stats_by_frequency.json', 'w+'), indent=4)
-    stats_by_accuracy_desc = dict(sorted(filter(lambda item: sum(item[1].values()), stats_dict.items()),
+    stats_by_accuracy_desc = dict(sorted(stats_dict.items(),
                                          key=lambda item: ((item[1][item[0]] if item[0] in item[1] else 0) / sum(
                                              item[1].values()), sum(item[1].values())), reverse=True))
     json.dump(stats_by_accuracy_desc, open('nn/stats_by_accuracy_desc.json', 'w+'), indent=4)
-    stats_by_accuracy_asc = dict(sorted(filter(lambda item: sum(item[1].values()), stats_dict.items()),
+    stats_by_accuracy_asc = dict(sorted(stats_dict.items(),
                                         key=lambda item: ((item[1][item[0]] if item[0] in item[1] else 0) / sum(
                                             item[1].values()), -sum(item[1].values()))))
     json.dump(stats_by_accuracy_asc, open('nn/stats_by_accuracy_asc.json', 'w+'), indent=4)
