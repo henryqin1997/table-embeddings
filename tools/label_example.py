@@ -11,5 +11,7 @@ if __name__ == '__main__':
         data = json.load(open(os.path.join('data/train', file)))
         table = Table(data)
         if label in [header.lower() for header in table.get_header()]:
+            dir_name, _ = os.path.split(file)
+            os.makedirs(os.path.join('data/example', dir_name), exist_ok=True)
             copyfile(os.path.join('data/train', file), os.path.join('data/example', file))
-            print(os.path.join('data/train', file))
+            print(file)
