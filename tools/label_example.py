@@ -1,10 +1,11 @@
 import sys
 import json
 import os
-from shutil import copyfile
+from shutil import copyfile, rmtree
 from etl.table import Table
 
 if __name__ == '__main__':
+    rmtree('data/example')
     label = sys.argv[1]
     files = json.load(open('data/training_files.json'))
     for file in files:
