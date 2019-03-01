@@ -61,6 +61,28 @@ def compute_accuracy(predicted, correct, no_other=True, other_index=3333):
     return (predicted == correct).sum().item() / len(correct)
 
 
+def update_stats(stats, predicted, correct, no_other=True, other_index=3333):
+    assert len(predicted) == len(correct)
+    if no_other:
+        no_other_index = correct != other_index
+        predicted = predicted[no_other_index]
+        correct = correct[no_other_index]
+        if len(correct) == 0:
+            return
+
+    for p, c in zip(predicted, correct):
+        stats[int(p == c)][correct] += 1
+
+
+def stats_to_dict(stats):
+    h, w = stats.shape
+    assert h == 2
+    stats_dict = {}
+    for i in range(w):
+        stats_dict[i] = (stats[0][i], stats[1][i])
+    return stats_dict
+
+
 def main():
     model = NeuralNet().to(device)
     criterion = nn.CrossEntropyLoss()
@@ -88,6 +110,7 @@ def main():
 
     print('Testing...')
     running_acc = 0.0
+    stats = np.zeros((2, num_labels), dtype='int64')
     with torch.no_grad():
         for batch_index, (columns, labels) in enumerate(test_loader):
             columns = columns.float().to(device)
@@ -97,8 +120,15 @@ def main():
             acc = compute_accuracy(predicted, labels)
             acc = running_acc if np.isnan(acc) else acc
             running_acc += (acc - running_acc) / (batch_index + 1)
+            update_stats(stats, predicted, labels)
     print('Accuracy of the network on the test dataset: {:.2f}%'.format(
         100 * running_acc))
+    stats_dict = stats_to_dict(stats)
+    stats_by_frequency = dict(sorted(stats_dict.items(), key=lambda item: sum(item[1]), reverse=True))
+    stats_by_accuracy = dict(sorted(filter(lambda item: sum(item[1]), stats_dict.items()),
+                                    key=lambda item: item[1][1] / sum(item[1]), reverse=True))
+    print(list(stats_by_frequency.items())[:10])
+    print(list(stats_by_accuracy.items())[:10])
 
 
 if __name__ == "__main__":
