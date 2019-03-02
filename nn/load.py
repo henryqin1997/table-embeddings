@@ -176,7 +176,7 @@ def to_int(n):
 
 
 if __name__ == '__main__':
-    train, test = load_data_100_sample()
-    print(train)
-    print(test)
-    print(train.shape, test.shape)
+    inputs, targets = load_data_100_sample()
+    print(inputs)
+    print(targets)
+    print(inputs.shape, targets.shape)
