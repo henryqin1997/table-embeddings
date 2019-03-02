@@ -48,6 +48,8 @@ def nst_encoding(nst):
 
 
 def nst_decoding(nst):
+    if nst not in range(8):
+        raise ValueError
     return list(map(lambda c: c == '1', '{0:b}'.format(nst).zfill(3)))
 
 
