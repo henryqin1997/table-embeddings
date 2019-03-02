@@ -47,6 +47,10 @@ def nst_encoding(nst):
     return (4 if nst[0] else 0) + (2 if nst[1] else 0) + (1 if nst[2] else 0)
 
 
+def nst_decoding(nst):
+    return list(map(lambda c: c == '1', '{0:b}'.format(nst).zfill(3)))
+
+
 def save_nst_tags(training_files):
     for training_file in training_files:
         data = json.load(open(os.path.join(webtables_dir, training_file), encoding='utf-8'))
