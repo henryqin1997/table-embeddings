@@ -83,10 +83,6 @@ def load_data(training_data_dir=training_data_dir, training_files=training_files
 
         table = Table(json.load(open(os.path.join(training_data_dir, batch_files[i]))))
 
-        # Skip tables without key column or index >= 10
-        if table.get_data()['keyColumnIndex'] < 0 or table.get_data()['keyColumnIndex'] >= 10:
-            continue
-
         column_num = len(table.get_header())
         attributes = table.get_attributes()
         ner_input = ner_inputs[i]
