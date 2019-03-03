@@ -78,6 +78,9 @@ def main():
         np.savetxt('nn/inputs.csv', inputs, fmt='%i', delimiter=',')
         np.savetxt('nn/targets.csv', targets, fmt='%i', delimiter=',')
 
+    # Train model on the specified column index
+    targets = targets.transpose()[column_index]
+
     dataset = TableDataset(inputs, targets)
 
     train_dataset, test_dataset = torch.utils.data.random_split(dataset, [len(dataset) - test_size, test_size])
