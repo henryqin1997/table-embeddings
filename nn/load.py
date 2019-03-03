@@ -166,7 +166,6 @@ def load_data_domain_schemas():
 
 def index_of(l, n):
     try:
-        print(list(l).index(n))
         return list(l).index(n)
     except ValueError:
         return -1
