@@ -4,6 +4,7 @@ import torch.optim as optim
 import torch.utils.data
 import numpy as np
 import os
+import sys
 import json
 from .load import load_data, load_data_100_sample, load_data_domain_schemas
 from .plot import plot_performance
@@ -62,6 +63,9 @@ def compute_accuracy(predicted, correct, no_other=True, other_index=3333):
 
 
 def main():
+    column_index = int(sys.argv[1])
+    assert column_index in range(10)
+
     model = NeuralNet().to(device)
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
