@@ -52,23 +52,23 @@ def load_data(training_data_dir=training_data_dir, training_files=training_files
 
     print('Loading NER...')
     ner_inputs = np.array(
-        [np.genfromtxt(os.path.join(training_data_dir, batch_file_ner), delimiter=',') for batch_file_ner in
-         batch_files_ner])
+        [np.genfromtxt(os.path.join(training_data_dir, batch_file_ner), dtype='int64', delimiter=',') for
+         batch_file_ner in batch_files_ner])
 
     print('Loading NST...')
     nst_inputs = np.array(
-        [list(map(to_int, np.genfromtxt(os.path.join(training_data_dir, batch_file_nst), delimiter=',')[0])) for
+        [np.genfromtxt(os.path.join(training_data_dir, batch_file_nst), dtype='int64', delimiter=',')[0] for
          batch_file_nst in batch_files_nst])
 
     print('Loading date...')
     date_inputs = np.array(
-        [list(map(to_int, np.genfromtxt(os.path.join(training_data_dir, batch_file_date), delimiter=','))) for
+        [np.genfromtxt(os.path.join(training_data_dir, batch_file_date), dtype='int64', delimiter=',') for
          batch_file_date in batch_files_date])
 
     print('Loading labels...')
     targets = np.array(
-        [np.genfromtxt(os.path.join(training_data_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
-         in batch_files_wordlist])
+        [np.genfromtxt(os.path.join(training_data_dir, batch_file_wordlist), dtype='int64', delimiter=',') for
+         batch_file_wordlist in batch_files_wordlist])
 
     inputs_transformed = []
     targets_transformed = []
@@ -96,7 +96,7 @@ def load_data(training_data_dir=training_data_dir, training_files=training_files
         assert len(ner_input) == len(tag_to_index)
 
         # Encode 3 class NER (4:location, 5:person, 6:organization)
-        new_input_transformed = np.array([int(round(sum([(2 ** (i + 3)) * num for (i, num) in enumerate(ner_row)])))
+        new_input_transformed = np.array([sum([(2 ** (i + 3)) * num for (i, num) in enumerate(ner_row)])
                                           if idx < column_num else -1 for idx, ner_row in
                                           enumerate(ner_input.transpose())]).transpose()
         # print('ner', new_input_transformed)
@@ -143,7 +143,7 @@ def load_data(training_data_dir=training_data_dir, training_files=training_files
 
         # Only output label of key column
         targets_transformed.append(
-            np.array([index_of(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
+            np.array([index_of(row, 1) if idx < column_num else -1 for
                       idx, row in enumerate(target.transpose())]).transpose()[table.get_data()['keyColumnIndex']])
 
     return np.array(inputs_transformed), np.array(targets_transformed)
@@ -166,13 +166,10 @@ def load_data_domain_schemas():
 
 def index_of(l, n):
     try:
+        print(list(l).index(n))
         return list(l).index(n)
     except ValueError:
         return -1
-
-
-def to_int(n):
-    return int(round(n))
 
 
 if __name__ == '__main__':
