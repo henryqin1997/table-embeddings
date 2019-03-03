@@ -144,7 +144,7 @@ def load_data(training_data_dir=training_data_dir, training_files=training_files
         # Only output label of key column
         targets_transformed.append(
             np.array([index_of(row, 1) if idx < column_num else -1 for
-                      idx, row in enumerate(target.transpose())]).transpose()[table.get_data()['keyColumnIndex']])
+                      idx, row in enumerate(target.transpose())]).transpose())
 
     return np.array(inputs_transformed), np.array(targets_transformed)
 
