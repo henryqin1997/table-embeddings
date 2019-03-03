@@ -1,6 +1,6 @@
 import json
 import os
-import numpy
+import numpy as np
 import locale
 from etl import Table
 from numerical_space.load import is_numeric, nst_encoding
@@ -24,14 +24,14 @@ tag_to_index = {'LOCATION': 0, 'PERSON': 1, 'ORGANIZATION': 2}
 def one_hot(row):
     assert len(row) > 0
     sum = row_sum(row)
-    row_converted = numpy.zeros(2 ** len(row))
+    row_converted = np.zeros(2 ** len(row))
     assert sum < len(row_converted)
     row_converted[sum] = 1
     return row_converted
 
 
 def row_sum(row):
-    return int(round(sum(numpy.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
+    return int(round(sum(np.array([(2 ** i) * num for (i, num) in enumerate(row)]))))
 
 
 def to_binary(value):
@@ -51,23 +51,23 @@ def load_data(training_data_dir=training_data_dir, training_files=training_files
     batch_files_wordlist = list(map(lambda batch_file: batch_file.rstrip('.json') + '_wordlist.csv', batch_files))
 
     print('Loading NER...')
-    ner_inputs = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_ner), delimiter=',') for batch_file_ner in
+    ner_inputs = np.array(
+        [np.genfromtxt(os.path.join(training_data_dir, batch_file_ner), delimiter=',') for batch_file_ner in
          batch_files_ner])
 
     print('Loading NST...')
-    nst_inputs = numpy.array(
-        [list(map(to_int, numpy.genfromtxt(os.path.join(training_data_dir, batch_file_nst), delimiter=',')[0])) for
+    nst_inputs = np.array(
+        [list(map(to_int, np.genfromtxt(os.path.join(training_data_dir, batch_file_nst), delimiter=',')[0])) for
          batch_file_nst in batch_files_nst])
 
     print('Loading date...')
-    date_inputs = numpy.array(
-        [list(map(to_int, numpy.genfromtxt(os.path.join(training_data_dir, batch_file_date), delimiter=','))) for
+    date_inputs = np.array(
+        [list(map(to_int, np.genfromtxt(os.path.join(training_data_dir, batch_file_date), delimiter=','))) for
          batch_file_date in batch_files_date])
 
     print('Loading labels...')
-    targets = numpy.array(
-        [numpy.genfromtxt(os.path.join(training_data_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
+    targets = np.array(
+        [np.genfromtxt(os.path.join(training_data_dir, batch_file_wordlist), delimiter=',') for batch_file_wordlist
          in batch_files_wordlist])
 
     inputs_transformed = []
@@ -96,14 +96,14 @@ def load_data(training_data_dir=training_data_dir, training_files=training_files
         assert len(ner_input) == len(tag_to_index)
 
         # Encode 3 class NER (4:location, 5:person, 6:organization)
-        new_input_transformed = numpy.array([int(round(sum([(2 ** (i + 3)) * num for (i, num) in enumerate(ner_row)])))
-                                             if idx < column_num else -1 for idx, ner_row in
-                                             enumerate(ner_input.transpose())]).transpose()
+        new_input_transformed = np.array([int(round(sum([(2 ** (i + 3)) * num for (i, num) in enumerate(ner_row)])))
+                                          if idx < column_num else -1 for idx, ner_row in
+                                          enumerate(ner_input.transpose())]).transpose()
         # print('ner', new_input_transformed)
         # Add encoded NST and date (1:text, 2:symbol, 3:number, 7:date)
-        new_input_transformed = new_input_transformed + numpy.array(nst_input) + numpy.array(date_input) * (2 ** 6)
-        # print('nst', numpy.array(nst_input))
-        # print('date', numpy.array(date_input) * (2 ** 6))
+        new_input_transformed = new_input_transformed + np.array(nst_input) + np.array(date_input) * (2 ** 6)
+        # print('nst', np.array(nst_input))
+        # print('date', np.array(date_input) * (2 ** 6))
 
         # Check is_numeric, is_float and is_ordered (8:is_numeric, 9:is_float, 10:is_ordered)
         is_numeric_input = [-1] * 10
@@ -120,33 +120,33 @@ def load_data(training_data_dir=training_data_dir, training_files=training_files
                     is_numeric_input[idx] = 1
                     is_float_input[idx] = int('.' in ''.join(attribute))
                     locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
-                    values = numpy.array(list(map(locale.atof, filter(is_numeric, attribute))))
+                    values = np.array(list(map(locale.atof, filter(is_numeric, attribute))))
                     # 0: random, 1: desc, 2: asc
-                    is_ordered_input[idx] = 2 if numpy.all(numpy.diff(values) > 0) else \
-                        1 if numpy.all(numpy.diff(values) < 0) else 0
+                    is_ordered_input[idx] = 2 if np.all(np.diff(values) > 0) else \
+                        1 if np.all(np.diff(values) < 0) else 0
 
         new_input_transformed = new_input_transformed + \
-                                numpy.array(is_numeric_input) * (2 ** 7) + \
-                                numpy.array(is_float_input) * (2 ** 8) + \
-                                numpy.array(is_ordered_input) * (2 ** 9)
-        # print('is_numeric', numpy.array(is_numeric_input) * (2 ** 7))
-        # print('is_float', numpy.array(is_float_input) * (2 ** 8))
-        # print('is_ordered', numpy.array(is_ordered_input) * (2 ** 9))
+                                np.array(is_numeric_input) * (2 ** 7) + \
+                                np.array(is_float_input) * (2 ** 8) + \
+                                np.array(is_ordered_input) * (2 ** 9)
+        # print('is_numeric', np.array(is_numeric_input) * (2 ** 7))
+        # print('is_float', np.array(is_float_input) * (2 ** 8))
+        # print('is_ordered', np.array(is_ordered_input) * (2 ** 9))
 
         # Change all negative values to -1 (empty column)
-        new_input_transformed = numpy.array([x if x >= 0 else -1 for x in new_input_transformed])
+        new_input_transformed = np.array([x if x >= 0 else -1 for x in new_input_transformed])
         # print('overall', new_input_transformed)
 
         # Convert to binary encoding
-        new_input_transformed = numpy.array([to_binary(value) for value in new_input_transformed]).reshape(-1)
+        new_input_transformed = np.array([to_binary(value) for value in new_input_transformed]).reshape(-1)
         inputs_transformed.append(new_input_transformed)
 
         # Only output label of key column
         targets_transformed.append(
-            numpy.array([index_of(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
-                         idx, row in enumerate(target.transpose())]).transpose()[table.get_data()['keyColumnIndex']])
+            np.array([index_of(list(map(lambda num: int(round(num)), row)), 1) if idx < column_num else -1 for
+                      idx, row in enumerate(target.transpose())]).transpose()[table.get_data()['keyColumnIndex']])
 
-    return numpy.array(inputs_transformed), numpy.array(targets_transformed)
+    return np.array(inputs_transformed), np.array(targets_transformed)
 
 
 def load_data_100_sample():
