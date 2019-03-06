@@ -4,6 +4,7 @@ import torch.optim as optim
 import torch.utils.data
 import numpy as np
 import os
+import sys
 import json
 from operator import itemgetter
 from .load import load_data, load_data_100_sample, load_data_domain_schemas
@@ -90,6 +91,9 @@ def stats_to_dict(stats):
 
 
 def main():
+    column_index = int(sys.argv[1])
+    assert column_index in range(10)
+
     model = NeuralNet().to(device)
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
@@ -102,6 +106,9 @@ def main():
         np.savetxt('nn/inputs.csv', inputs, fmt='%i', delimiter=',')
         np.savetxt('nn/targets.csv', targets, fmt='%i', delimiter=',')
 
+    # Validate model on the specified column index
+    targets = targets.transpose()[column_index]
+
     dataset = TableDataset(inputs, targets)
 
     train_dataset, test_dataset = torch.utils.data.random_split(dataset, [len(dataset) - test_size, test_size])
@@ -111,7 +118,8 @@ def main():
     test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size,
                                               shuffle=False)
 
-    model.load_state_dict(torch.load('nn/model.pt', map_location=lambda storage, location: storage))
+    model.load_state_dict(torch.load('nn/model_{}.pt'.format(column_index),
+                                     map_location=lambda storage, location: storage))
     model.eval()
 
     print('Testing...')
@@ -140,19 +148,19 @@ def main():
 
     # Sort by total frequency of each correct label
     stats_by_frequency = dict(sorted(stats_dict.items(), key=lambda item: sum(item[1].values()), reverse=True))
-    json.dump(stats_by_frequency, open('nn/stats_by_frequency.json', 'w+'), indent=4)
+    json.dump(stats_by_frequency, open('nn/stats_by_frequency_{}.json'.format(column_index), 'w+'), indent=4)
 
     # Sort by accuracy of each correct label, from high to low, then sort by frequency
     stats_by_accuracy_desc = dict(sorted(stats_dict.items(),
                                          key=lambda item: ((item[1][item[0]] if item[0] in item[1] else 0) / sum(
                                              item[1].values()), sum(item[1].values())), reverse=True))
-    json.dump(stats_by_accuracy_desc, open('nn/stats_by_accuracy_desc.json', 'w+'), indent=4)
+    json.dump(stats_by_accuracy_desc, open('nn/stats_by_accuracy_desc_{}.json'.format(column_index), 'w+'), indent=4)
 
     # Sort by accuracy of each correct label, from low to high, then sort by frequency
     stats_by_accuracy_asc = dict(sorted(stats_dict.items(),
                                         key=lambda item: ((item[1][item[0]] if item[0] in item[1] else 0) / sum(
                                             item[1].values()), -sum(item[1].values()))))
-    json.dump(stats_by_accuracy_asc, open('nn/stats_by_accuracy_asc.json', 'w+'), indent=4)
+    json.dump(stats_by_accuracy_asc, open('nn/stats_by_accuracy_asc_{}.json'.format(column_index), 'w+'), indent=4)
 
 
 if __name__ == "__main__":
