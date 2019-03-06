@@ -65,6 +65,7 @@ def compute_accuracy(predicted, correct, no_other=True, other_index=3333):
 def main():
     column_index = int(sys.argv[1])
     if len(sys.argv)>2:
+        global device
         devi = str(sys.argv[2])
         if devi == 'cpu':
             device = torch.device('cpu')
