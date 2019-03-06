@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 import re
 
 
-def plot_performance(train_loss, train_acc, val_loss, val_acc):
+def plot_performance(train_loss, train_acc, val_loss, val_acc, path='nn/performance.png'):
     plt.figure(figsize=(15, 5))
 
     # Plot Loss
@@ -23,7 +23,7 @@ def plot_performance(train_loss, train_acc, val_loss, val_acc):
     plt.legend(loc="lower right")
 
     # Save figure
-    plt.savefig("nn/performance.png")
+    plt.savefig(path)
     plt.close()
 
 
