@@ -138,13 +138,14 @@ def main():
         train_state += [running_loss, running_acc]
 
         print(
-            "[EPOCH]: {} | [TRAIN LOSS]: {:.4f} | [TRAIN ACC]: {:.4f} | [VAL LOSS]: {:.4f} | [VAL ACC]: {:.4f}".format(
+            '[EPOCH]: {} | [TRAIN LOSS]: {:.4f} | [TRAIN ACC]: {:.4f} | [VAL LOSS]: {:.4f} | [VAL ACC]: {:.4f}'.format(
                 *train_state))
         train_states.append(train_state)
 
         # Save state
-        json.dump(train_states, open("nn/train_states.json", "w+"), indent=4)
-        plot_performance(*[[train_state[i] for train_state in train_states] for i in range(1, 5)])
+        json.dump(train_states, open('nn/train_states_{}.json'.format(column_index), 'w+'), indent=4)
+        plot_performance(*[[train_state[i] for train_state in train_states] for i in range(1, 5)],
+                         path='nn/performance_{}.png'.format(column_index))
 
     print('Testing...')
     running_acc = 0.0
@@ -161,9 +162,9 @@ def main():
         100 * running_acc))
 
     print('Saving state...')
-    torch.save(model.state_dict(), 'nn/model.pt')
-    torch.save(optimizer.state_dict(), 'nn/optimizer.pt')
+    torch.save(model.state_dict(), 'nn/model_{}.pt'.format(column_index))
+    torch.save(optimizer.state_dict(), 'nn/optimizer_{}.pt'.format(column_index))
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
