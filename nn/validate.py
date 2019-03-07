@@ -109,6 +109,10 @@ def main():
     # Validate model on the specified column index
     targets = targets.transpose()[column_index]
 
+    # Filter dataset so that target != -1
+    inputs = inputs[targets != -1]
+    targets = targets[targets != -1]
+
     dataset = TableDataset(inputs, targets)
 
     train_dataset, test_dataset = torch.utils.data.random_split(dataset, [len(dataset) - test_size, test_size])
