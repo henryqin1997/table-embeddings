@@ -153,8 +153,8 @@ def main():
         running_acc = 0.0
 
         for batch_index, (columns, labels) in enumerate(test_loader):
-            columns = columns[labels_ != -1]
-            labels = labels_[labels_ != -1]
+            columns = columns[labels != -1]
+            labels = labels_[labels != -1]
             columns = columns.float().to(device)
             labels = labels.to(device)
 
