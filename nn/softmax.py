@@ -107,32 +107,32 @@ def main():
 
         for batch_index, (columns, labels) in enumerate(train_loader):
 
-            if batch_index==2104:
-                print(columns)
-                print(columns.shape)
-                print(labels)
-                print(labels.shape)
-            else:
-                continue
+            # if batch_index==2104:
+            #     print(columns)
+            #     print(columns.shape)
+            #     print(labels)
+            #     print(labels.shape)
+            # else:
+            #     continue
 
             columns = columns[labels!=-1]
             labels = labels[labels!=-1]
 
-            print(columns)
-            print(columns.size())
-            print(labels)
-            print(labels.size())
+            # print(columns)
+            # print(columns.size())
+            # print(labels)
+            # print(labels.size())
 
             columns = columns.float().to(device)
             labels = labels.to(device)
 
             out = model(columns)
-            print(out)
-            print(out.shape)
-            print(labels<0)
-            print(labels>3333)
+            # print(out)
             # print(out.shape)
-            print(epoch,'/',batch_index)
+            # print(labels<0)
+            # print(labels>3333)
+            # # print(out.shape)
+            # print(epoch,'/',batch_index)
             loss = criterion(out, labels)
             optimizer.zero_grad()
             loss.backward()
