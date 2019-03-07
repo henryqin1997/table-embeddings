@@ -104,6 +104,10 @@ def main():
         running_acc = 0.0
 
         for batch_index, (columns, labels) in enumerate(train_loader):
+            columns = columns[labels!=-1]
+            labels = labels[labels!=-1]
+            if len(labels)==0:
+                continue
             columns = columns.float().to(device)
             labels = labels.to(device)
 
