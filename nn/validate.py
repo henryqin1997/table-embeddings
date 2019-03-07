@@ -19,7 +19,7 @@ num_labels = 3334
 num_epochs = 100
 batch_size = 50
 learning_rate = 0.0001
-test_size = 3000
+test_ratio = 0.1
 
 wordlist = list(map(itemgetter(0), json.load(open('data/wordlist_v6_index.json')).items()))
 wordlist.append('OTHER')
@@ -115,6 +115,7 @@ def main():
 
     dataset = TableDataset(inputs, targets)
 
+    test_size = int(len(dataset) * test_ratio)
     train_dataset, test_dataset = torch.utils.data.random_split(dataset, [len(dataset) - test_size, test_size])
 
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size,
