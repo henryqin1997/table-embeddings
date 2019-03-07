@@ -105,18 +105,18 @@ def main():
         running_acc = 0.0
         running_sum = 0
 
-        for batch_index, (columns, labels_) in enumerate(train_loader):
+        for batch_index, (columns, labels) in enumerate(train_loader):
 
             if batch_index==2104:
                 print(columns)
                 print(columns.shape)
-                print(labels_)
-                print(labels_.shape)
+                print(labels)
+                print(labels.shape)
             else:
                 continue
 
-            columns = columns[labels_!=-1]
-            labels = labels_[labels_!=-1]
+            columns = columns[labels!=-1]
+            labels = labels[labels!=-1]
 
             print(columns)
             print(columns.size())
@@ -154,7 +154,7 @@ def main():
 
         for batch_index, (columns, labels) in enumerate(test_loader):
             columns = columns[labels != -1]
-            labels = labels_[labels != -1]
+            labels = labels[labels != -1]
             columns = columns.float().to(device)
             labels = labels.to(device)
 
