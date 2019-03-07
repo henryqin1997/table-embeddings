@@ -153,13 +153,16 @@ def main():
         running_acc = 0.0
 
         for batch_index, (columns, labels) in enumerate(test_loader):
+            columns = columns[labels_ != -1]
+            labels = labels_[labels_ != -1]
             columns = columns.float().to(device)
             labels = labels.to(device)
 
             out = model(columns)
             loss = criterion(out, labels)
 
-            running_loss += (loss.item() - running_loss) / (batch_index + 1)
+            running_loss += len(labels) * (loss.item() - running_loss) / (running_sum + len(labels))
+            running_sum += len(labels)
 
             _, predicted = torch.max(out.data, 1)
             acc = compute_accuracy(predicted, labels)
