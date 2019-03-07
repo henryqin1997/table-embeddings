@@ -64,11 +64,12 @@ def compute_accuracy(predicted, correct, no_other=True, other_index=3333):
 
 def main():
     column_index = int(sys.argv[1])
-    if len(sys.argv)>2:
-        global device
-        devi = str(sys.argv[2])
-        if devi == 'cpu':
-            device = torch.device('cpu')
+    # if len(sys.argv)>2:
+    #     print(sys.argv)
+    #     global device
+    #     devi = str(sys.argv[2])
+    #     if devi == 'cpu':
+    #         device = torch.device('cpu')
     assert column_index in range(10)
 
     model = NeuralNet().to(device)
@@ -102,22 +103,43 @@ def main():
         model.train()
         running_loss = 0.0
         running_acc = 0.0
+        running_sum = 0
 
-        for batch_index, (columns, labels) in enumerate(train_loader):
-            columns = columns[labels!=-1]
-            labels = labels[labels!=-1]
-            if len(labels)==0:
+        for batch_index, (columns, labels_) in enumerate(train_loader):
+
+            if batch_index==2104:
+                print(columns)
+                print(columns.shape)
+                print(labels_)
+                print(labels_.shape)
+            else:
                 continue
+
+            columns = columns[labels_!=-1]
+            labels = labels_[labels_!=-1]
+
+            print(columns)
+            print(columns.size())
+            print(labels)
+            print(labels.size())
+
             columns = columns.float().to(device)
             labels = labels.to(device)
 
             out = model(columns)
+            print(out)
+            print(out.shape)
+            print(labels<0)
+            print(labels>3333)
+            # print(out.shape)
+            print(epoch,'/',batch_index)
             loss = criterion(out, labels)
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
 
-            running_loss += (loss.item() - running_loss) / (batch_index + 1)
+            running_loss += len(labels)*(loss.item() - running_loss) / (running_sum + len(labels))
+            running_sum += len(labels)
 
             _, predicted = torch.max(out.data, 1)
             acc = compute_accuracy(predicted, labels)
