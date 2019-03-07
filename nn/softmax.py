@@ -64,12 +64,6 @@ def compute_accuracy(predicted, correct, no_other=True, other_index=3333):
 
 def main():
     column_index = int(sys.argv[1])
-    # if len(sys.argv)>2:
-    #     print(sys.argv)
-    #     global device
-    #     devi = str(sys.argv[2])
-    #     if devi == 'cpu':
-    #         device = torch.device('cpu')
     assert column_index in range(10)
 
     model = NeuralNet().to(device)
@@ -87,6 +81,10 @@ def main():
     # Train model on the specified column index
     targets = targets.transpose()[column_index]
 
+    # Filter dataset so that target != -1
+    inputs = inputs[targets != -1]
+    targets = targets[targets != -1]
+
     dataset = TableDataset(inputs, targets)
 
     train_dataset, test_dataset = torch.utils.data.random_split(dataset, [len(dataset) - test_size, test_size])
@@ -103,43 +101,18 @@ def main():
         model.train()
         running_loss = 0.0
         running_acc = 0.0
-        running_sum = 0
 
         for batch_index, (columns, labels) in enumerate(train_loader):
-
-            # if batch_index==2104:
-            #     print(columns)
-            #     print(columns.shape)
-            #     print(labels)
-            #     print(labels.shape)
-            # else:
-            #     continue
-
-            columns = columns[labels!=-1]
-            labels = labels[labels!=-1]
-
-            # print(columns)
-            # print(columns.size())
-            # print(labels)
-            # print(labels.size())
-
             columns = columns.float().to(device)
             labels = labels.to(device)
 
             out = model(columns)
-            # print(out)
-            # print(out.shape)
-            # print(labels<0)
-            # print(labels>3333)
-            # # print(out.shape)
-            # print(epoch,'/',batch_index)
             loss = criterion(out, labels)
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
 
-            running_loss += len(labels)*(loss.item() - running_loss) / (running_sum + len(labels))
-            running_sum += len(labels)
+            running_loss += (loss.item() - running_loss) / (batch_index + 1)
 
             _, predicted = torch.max(out.data, 1)
             acc = compute_accuracy(predicted, labels)
@@ -153,16 +126,13 @@ def main():
         running_acc = 0.0
 
         for batch_index, (columns, labels) in enumerate(test_loader):
-            columns = columns[labels != -1]
-            labels = labels[labels != -1]
             columns = columns.float().to(device)
             labels = labels.to(device)
 
             out = model(columns)
             loss = criterion(out, labels)
 
-            running_loss += len(labels) * (loss.item() - running_loss) / (running_sum + len(labels))
-            running_sum += len(labels)
+            running_loss += (loss.item() - running_loss) / (batch_index + 1)
 
             _, predicted = torch.max(out.data, 1)
             acc = compute_accuracy(predicted, labels)
