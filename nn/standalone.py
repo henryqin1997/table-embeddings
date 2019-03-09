@@ -3,12 +3,8 @@ import torch
 import torch.optim as optim
 import torch.utils.data
 import numpy as np
-import os
-import sys
 import json
 from operator import itemgetter
-from .load import load_data, load_data_100_sample, load_data_domain_schemas
-from .plot import plot_performance
 from etl.standalone import generate_input_target
 
 torch.manual_seed(1)
@@ -40,21 +36,6 @@ class NeuralNet(nn.Module):
         return out
 
 
-class TableDataset(torch.utils.data.Dataset):
-    def __init__(self, inputs, targets):
-        inputs = np.array(inputs)
-        targets = np.array(targets)
-        assert inputs.shape[0] == targets.shape[0]
-        self.inputs = inputs
-        self.targets = targets
-
-    def __len__(self):
-        return self.inputs.shape[0]
-
-    def __getitem__(self, index):
-        return self.inputs[index], self.targets[index]
-
-
 def compute_accuracy(predicted, correct, no_other=True, other_index=3333):
     assert len(predicted) == len(correct)
     if no_other:
@@ -65,30 +46,6 @@ def compute_accuracy(predicted, correct, no_other=True, other_index=3333):
             return np.nan
 
     return (predicted == correct).sum().item() / len(correct)
-
-
-def update_stats(stats, predicted, correct, no_other=True, other_index=3333):
-    assert len(predicted) == len(correct)
-    if no_other:
-        no_other_index = correct != other_index
-        predicted = predicted[no_other_index]
-        correct = correct[no_other_index]
-        if len(correct) == 0:
-            return
-
-    for p, c in zip(predicted, correct):
-        stats[c][p] += 1
-
-
-def stats_to_dict(stats):
-    h, w = stats.shape
-    assert h == w
-    stats_dict = {}
-    for i in range(w):
-        d = {wordlist[k]: int(v) for k, v in enumerate(stats[i]) if v}
-        if d:
-            stats_dict[wordlist[i]] = dict(sorted(d.items(), key=itemgetter(1), reverse=True))
-    return stats_dict
 
 
 def predict(input, target):
