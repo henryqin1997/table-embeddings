@@ -73,12 +73,21 @@ def generate_input_target(data):
     input = np.concatenate((nst, ner, is_date, is_numeric_input, is_float_input, is_ordered_input, is_empty_column),
                            axis=1).astype(int)
 
-    label = table.generate_wordlist_matrix(wordlist).transpose().astype(int)
+    target = table.generate_wordlist_matrix(wordlist).astype(int)
+    target = np.array([index_of(row, 1) if idx < column_num else -1 for idx, row in enumerate(target.transpose())])
 
-    return input, label
+    return input, target
+
+
+def index_of(l, n):
+    try:
+        return list(l).index(n)
+    except ValueError:
+        return -1
 
 
 if __name__ == '__main__':
     data = json.load(
         open('data/train_100_sample/0/1438042988061.16_20150728002308-00106-ip-10-236-191-2_173137181_0.json'))
-    generate_input_target(data)
+    input, target = generate_input_target(data)
+    print(input.shape, target.shape)
