@@ -48,12 +48,14 @@ def compute_accuracy(predicted, correct, no_other=True, other_index=3333):
     return (predicted == correct).sum().item() / len(correct)
 
 
+def get_labels(target):
+    return [wordlist[i] for i in target if i != -1]
+
+
 def predict(input, target):
     prediction = np.array([-1] * 10)
 
     for column_index in range((target != -1).sum()):
-        print('Predicting column {} ...'.format(column_index))
-
         model = NeuralNet().to(device)
 
         model.load_state_dict(torch.load('nn/model_{}.pt'.format(column_index),
@@ -74,6 +76,7 @@ if __name__ == "__main__":
         open('data/train_100_sample/0/1438042988061.16_20150728002308-00106-ip-10-236-191-2_173137181_0.json'))
     input, target = generate_input_target(data)
     prediction = predict(input, target)
-    print(prediction)
+    print('Predict: {}'.format(get_labels(prediction)))
+    print('Correct: {}'.format(get_labels(target)))
     print('Accuracy of the network on the test table: {:.2f}%'.format(
         100 * compute_accuracy(prediction[target != -1], target[target != -1])))
