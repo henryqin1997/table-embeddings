@@ -66,27 +66,26 @@ def compute_accuracy(predicted, correct, no_other=True, other_index=3333):
     return (predicted == correct).sum().item() / len(correct)
 
 
-def update_stats(stats, predicted, correct, no_other=True, other_index=3333):
+def update_stats(stats, predicted, correct, indices, no_other=True, other_index=3333):
     assert len(predicted) == len(correct)
     if no_other:
         no_other_index = correct != other_index
         predicted = predicted[no_other_index]
         correct = correct[no_other_index]
+        indices = indices[no_other_index]
         if len(correct) == 0:
             return
 
-    for p, c in zip(predicted, correct):
-        stats[c][p] += 1
+    for p, c, i in zip(predicted, correct, indices):
+        stats[c.item()][p.item()].append(i.item())
 
 
 def stats_to_dict(stats):
-    h, w = stats.shape
-    assert h == w
     stats_dict = {}
-    for i in range(w):
-        d = {wordlist[k]: int(v) for k, v in enumerate(stats[i]) if v}
+    for i in range(len(stats)):
+        d = {wordlist[k]: {'count': len(v), 'indices': v} for k, v in enumerate(stats[i]) if v}
         if d:
-            stats_dict[wordlist[i]] = dict(sorted(d.items(), key=itemgetter(1), reverse=True))
+            stats_dict[wordlist[i]] = dict(sorted(d.items(), key=lambda item: item[1]['count'], reverse=True))
     return stats_dict
 
 
@@ -128,9 +127,9 @@ def main():
     print('Testing...')
     running_acc = 0.0
 
-    # stats is a 2d-array with shape (num_correct_labels, num_predicted_labels),
-    # which counts the frequency of each prediction case
-    stats = np.zeros((num_labels, num_labels), dtype='int64')
+    # stats is a 3d list with shape (num_correct_labels, num_predicted_labels),
+    # which lists the table index of each prediction case
+    stats = [[[] for i in range(num_labels)] for j in range(num_labels)]
 
     with torch.no_grad():
         for batch_index, (columns, labels, indices) in enumerate(test_loader):
@@ -141,7 +140,7 @@ def main():
             acc = compute_accuracy(predicted, labels)
             acc = running_acc if np.isnan(acc) else acc
             running_acc += (acc - running_acc) / (batch_index + 1)
-            update_stats(stats, predicted, labels)
+            update_stats(stats, predicted, labels, indices)
     print('Accuracy of the network on the test dataset: {:.2f}%'.format(
         100 * running_acc))
 
@@ -149,20 +148,26 @@ def main():
     # 1st level key is correct label, 2nd level key is predicted label, value is frequency
     stats_dict = stats_to_dict(stats)
 
+    def dict_total_count(d):
+        return sum([x['count'] for x in d.values()])
+
     # Sort by total frequency of each correct label
-    stats_by_frequency = dict(sorted(stats_dict.items(), key=lambda item: sum(item[1].values()), reverse=True))
+    stats_by_frequency = dict(sorted(stats_dict.items(), key=lambda item: dict_total_count(item[1]), reverse=True))
     json.dump(stats_by_frequency, open('nn/stats_by_frequency_{}.json'.format(column_index), 'w+'), indent=4)
 
     # Sort by accuracy of each correct label, from high to low, then sort by frequency
-    stats_by_accuracy_desc = dict(sorted(stats_dict.items(),
-                                         key=lambda item: ((item[1][item[0]] if item[0] in item[1] else 0) / sum(
-                                             item[1].values()), sum(item[1].values())), reverse=True))
+    stats_by_accuracy_desc = dict(sorted(
+        stats_dict.items(),
+        key=lambda item: ((item[1][item[0]]['count'] if item[0] in item[1] else 0) / dict_total_count(item[1]),
+                          dict_total_count(item[1])),
+        reverse=True))
     json.dump(stats_by_accuracy_desc, open('nn/stats_by_accuracy_desc_{}.json'.format(column_index), 'w+'), indent=4)
 
     # Sort by accuracy of each correct label, from low to high, then sort by frequency
-    stats_by_accuracy_asc = dict(sorted(stats_dict.items(),
-                                        key=lambda item: ((item[1][item[0]] if item[0] in item[1] else 0) / sum(
-                                            item[1].values()), -sum(item[1].values()))))
+    stats_by_accuracy_asc = dict(sorted(
+        stats_dict.items(),
+        key=lambda item: ((item[1][item[0]]['count'] if item[0] in item[1] else 0) / dict_total_count(item[1]),
+                          -dict_total_count(item[1]))))
     json.dump(stats_by_accuracy_asc, open('nn/stats_by_accuracy_asc_{}.json'.format(column_index), 'w+'), indent=4)
 
 
