@@ -24,6 +24,8 @@ test_ratio = 0.1
 wordlist = list(map(itemgetter(0), json.load(open('data/wordlist_v6_index.json')).items()))
 wordlist.append('OTHER')
 
+training_files = json.load(open('data/training_files_shuffle.json'))
+
 
 class NeuralNet(nn.Module):
     def __init__(self):
@@ -83,7 +85,8 @@ def update_stats(stats, predicted, correct, indices, no_other=True, other_index=
 def stats_to_dict(stats):
     stats_dict = {}
     for i in range(len(stats)):
-        d = {wordlist[k]: {'count': len(v), 'indices': v} for k, v in enumerate(stats[i]) if v}
+        d = {wordlist[k]: {'count': len(v), 'files': [training_files[index] for index in v]}
+             for k, v in enumerate(stats[i]) if v}
         if d:
             stats_dict[wordlist[i]] = dict(sorted(d.items(), key=lambda item: item[1]['count'], reverse=True))
     return stats_dict
