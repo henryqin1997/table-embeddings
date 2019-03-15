@@ -89,8 +89,8 @@ def main():
 
     # Filter dataset so that target != -1
     inputs = inputs[targets != -1]
-    targets = targets[targets != -1]
     indices = indices[targets != -1]
+    targets = targets[targets != -1]
 
     dataset = TableDataset(inputs, targets, indices)
 

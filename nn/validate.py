@@ -73,11 +73,13 @@ def main():
 
     # Table indices
     indices = np.linspace(0, inputs.shape[0] - 1, inputs.shape[0], dtype='int64')
+    print(inputs.shape, targets.shape, indices.shape)
+    exit()
 
     # Filter dataset so that target != -1
     inputs = inputs[targets != -1]
-    targets = targets[targets != -1]
     indices = indices[targets != -1]
+    targets = targets[targets != -1]
 
     dataset = TableDataset(inputs, targets, indices)
 
