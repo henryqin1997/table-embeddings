@@ -2,6 +2,6 @@
 for i in `seq 0 9`
 do
   echo $i
-  python -m nn.softmax $i
-  python -m nn.validate $i
+  python -u -m nn.softmax $i
+  python -u -m nn.validate $i
 done
