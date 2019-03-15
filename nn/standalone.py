@@ -67,13 +67,14 @@ def predict(input, target):
             columns = torch.from_numpy(input.reshape(-1)).float().to(device)
             out = model(columns)
             _, predicted = torch.max(out.data, 0)
+            # _, predicted = torch.max(out.data[:-1], 0)  # Do not predict OTHER
             prediction[column_index] = predicted.item()
 
     return prediction
 
 
 if __name__ == "__main__":
-    table_path = 'data/train/4/1438042982502.13_20150728002302-00334-ip-10-236-191-2_468708662_7.json'
+    table_path = 'data/train/11/1438042988048.90_20150728002308-00026-ip-10-236-191-2_548613437_0.json'
     data = json.load(open(table_path))
     input, target = generate_input_target(data)
     prediction = predict(input, target)
