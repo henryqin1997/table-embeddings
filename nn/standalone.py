@@ -4,6 +4,7 @@ import torch.optim as optim
 import torch.utils.data
 import numpy as np
 import json
+import os
 from operator import itemgetter
 from etl.standalone import generate_input_target
 
@@ -72,8 +73,10 @@ def predict(input, target):
 
 
 if __name__ == "__main__":
-    data = json.load(
-        open('data/train_100_sample/0/1438042988061.16_20150728002308-00106-ip-10-236-191-2_173137181_0.json'))
+    table_index = 49551
+    training_files = json.load(open('data/training_files_shuffle.json'))
+    table_path = os.path.join('data/train',training_files[table_index])
+    data = json.load(open(table_path))
     input, target = generate_input_target(data)
     prediction = predict(input, target)
     print('Predict: {}'.format(get_labels(prediction)))
