@@ -51,7 +51,7 @@ class TableDataset(torch.utils.data.Dataset):
         return self.inputs.shape[0]
 
     def __getitem__(self, index):
-        return self.inputs[index], self.targets[index]
+        return self.inputs[index], self.targets[index], index
 
 
 def compute_accuracy(predicted, correct, no_other=True, other_index=3333):
@@ -133,7 +133,7 @@ def main():
     stats = np.zeros((num_labels, num_labels), dtype='int64')
 
     with torch.no_grad():
-        for batch_index, (columns, labels) in enumerate(test_loader):
+        for batch_index, (columns, labels, indices) in enumerate(test_loader):
             columns = columns.float().to(device)
             labels = labels.to(device)
             out = model(columns)
