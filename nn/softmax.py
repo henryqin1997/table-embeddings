@@ -36,18 +36,21 @@ class NeuralNet(nn.Module):
 
 
 class TableDataset(torch.utils.data.Dataset):
-    def __init__(self, inputs, targets):
+    def __init__(self, inputs, targets, indices):
         inputs = np.array(inputs)
         targets = np.array(targets)
+        indices = np.array(indices)
         assert inputs.shape[0] == targets.shape[0]
+        assert inputs.shape[0] == indices.shape[0]
         self.inputs = inputs
         self.targets = targets
+        self.indices = indices
 
     def __len__(self):
         return self.inputs.shape[0]
 
     def __getitem__(self, index):
-        return self.inputs[index], self.targets[index], index
+        return self.inputs[index], self.targets[index], self.indices[index]
 
 
 def compute_accuracy(predicted, correct, no_other=True, other_index=3333):
@@ -81,11 +84,15 @@ def main():
     # Train model on the specified column index
     targets = targets.transpose()[column_index]
 
+    # Table indices
+    indices = np.linspace(0, inputs.shape[0] - 1, inputs.shape[0], dtype='int64')
+
     # Filter dataset so that target != -1
     inputs = inputs[targets != -1]
     targets = targets[targets != -1]
+    indices = indices[targets != -1]
 
-    dataset = TableDataset(inputs, targets)
+    dataset = TableDataset(inputs, targets, indices)
 
     test_size = int(len(dataset) * test_ratio)
     train_dataset, test_dataset = torch.utils.data.random_split(dataset, [len(dataset) - test_size, test_size])

@@ -9,6 +9,7 @@ import json
 from operator import itemgetter
 from .load import load_data, load_data_100_sample, load_data_domain_schemas
 from .plot import plot_performance
+from .softmax import NeuralNet, TableDataset, compute_accuracy
 
 torch.manual_seed(1)
 
@@ -25,47 +26,6 @@ wordlist = list(map(itemgetter(0), json.load(open('data/wordlist_v6_index.json')
 wordlist.append('OTHER')
 
 training_files = json.load(open('data/training_files_shuffle.json'))
-
-
-class NeuralNet(nn.Module):
-    def __init__(self):
-        super(NeuralNet, self).__init__()
-        self.fc = nn.Sequential(
-            nn.Linear(input_size, hidden_size),
-            nn.ReLU(),
-            nn.Linear(hidden_size, num_labels)
-        )
-
-    def forward(self, x):
-        out = self.fc(x)
-        return out
-
-
-class TableDataset(torch.utils.data.Dataset):
-    def __init__(self, inputs, targets):
-        inputs = np.array(inputs)
-        targets = np.array(targets)
-        assert inputs.shape[0] == targets.shape[0]
-        self.inputs = inputs
-        self.targets = targets
-
-    def __len__(self):
-        return self.inputs.shape[0]
-
-    def __getitem__(self, index):
-        return self.inputs[index], self.targets[index], index
-
-
-def compute_accuracy(predicted, correct, no_other=True, other_index=3333):
-    assert len(predicted) == len(correct)
-    if no_other:
-        no_other_index = correct != other_index
-        predicted = predicted[no_other_index]
-        correct = correct[no_other_index]
-        if len(correct) == 0:
-            return np.nan
-
-    return (predicted == correct).sum().item() / len(correct)
 
 
 def update_stats(stats, predicted, correct, indices, no_other=True, other_index=3333):
@@ -111,11 +71,15 @@ def main():
     # Validate model on the specified column index
     targets = targets.transpose()[column_index]
 
+    # Table indices
+    indices = np.linspace(0, inputs.shape[0] - 1, inputs.shape[0], dtype='int64')
+
     # Filter dataset so that target != -1
     inputs = inputs[targets != -1]
     targets = targets[targets != -1]
+    indices = indices[targets != -1]
 
-    dataset = TableDataset(inputs, targets)
+    dataset = TableDataset(inputs, targets, indices)
 
     test_size = int(len(dataset) * test_ratio)
     train_dataset, test_dataset = torch.utils.data.random_split(dataset, [len(dataset) - test_size, test_size])
