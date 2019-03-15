@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Report Name",
+            "Unattended Tasks",
+            "Tasks Priority",
+            "Tasks Cycle Time",
+            "Tasks Productivity",
+            "Tasks Time Distribution"
+        ],
+        [
+            "Description",
+            "Provides an analysis of tasks assigned to users' groups or reportees' groups that have not yet been acquired (the \"unattended\" tasks).",
+            "Provides an analysis of the number of tasks assigned to a user, reportees, or their groups, broken down by priority.",
+            "Provides an analysis of the time taken to complete tasks from assignment to completion based on users' groups or reportees' groups.",
+            "Provides an analysis of assigned tasks and completed tasks in a given time period for a user, reportees, or their groups.",
+            "Provides the time an assignee takes to perform a task."
+        ],
+        [
+            "Input Parameters",
+            "Assignee\u2014This option (required) selects tasks assigned to the user's group (My Group), tasks assigned to the reportee's groups (Reportees), tasks where the user is a creator (Creator), or tasks where the user is an owner (Owner). Creation Date\u2014An optional date range Expiration Date\u2014An optional date range Task State\u2014The state (optional) can by Any, Assigned, Expired, or Information Requested. Priority\u2014The priority (optional) can be Any, Highest, High, Normal, Low, or Lowest.",
+            "Assignee\u2014Depending on the assignee that you select, this required option includes tasks assigned to the logged-in user (My), tasks assigned to the user and groups that the user belongs to (My & Group), or tasks assigned to groups to which the user's reportees belong (Reportees). Creation Date\u2014An optional date range Ended Date\u2014An optional date range for the end dates of the tasks to be included in the report Priority\u2014The priority (optional) can by Any, Highest, High, Normal, Low, or Lowest.",
+            "Assignee\u2014Depending on the assignee that you select, this required option includes your tasks (My) or tasks assigned to groups to which your reportees belong (Reportees). Creation Date\u2014An optional date range Ended Date\u2014An optional date range for the end dates of the tasks to be included in the report Priority\u2014The priority (optional) can by Any, Highest, High, Normal, Low, or Lowest.",
+            "Assignee\u2014Depending on the assignee that the user selects, this required option includes the user's tasks (My & Group) or tasks assigned to groups to which the user's reportees belong (Reportees). Creation Date (range)\u2014An optional creation date range. The default is one week. Task Type\u2014Use the Search (flashlight) icon to select from a list of task titles. All versions of a task are listed on the Select Workflow Task Type page (optional).",
+            "Assignee\u2014Depending on the assignee that the user selects, this required option includes the user's tasks (My & Group) or tasks assigned to groups to which the user's reportees belong (Reportees). From...to (date range)\u2014An optional creation date range. The default is one week. Task Type\u2014Use the Search (flashlight) icon to select from a list of task titles. All versions of a task are listed on the Select Workflow Task Type page (optional)."
+        ]
+    ],
+    "pageTitle": "Using Oracle BPM Worklist",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E28280_01/dev.1111/e10224/bp_worklist.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 11,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987628.47/warc/CC-MAIN-20150728002307-00109-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 862376423,
+    "recordOffset": 862319891,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{118846=See Section 34.1.10, \"Evidence Store Service and Digital Signatures\" for more information., 261262=Section 32.13.8, \"What You May Need to Know About Mapped Attributes Task Flow\", 261530=Section 32.13.10, \"What You May Need to Know About Approval Groups Task Flow\", 260715=Section 32.13.4, \"What You May Need to Know About Task List Task Flow\", 261669=Section 32.13.11, \"What You May Need to Know About Task Configuration Task Flow\", 260847=Section 32.13.5, \"What You May Need to Know About Certificates Task Flow\", 261116=Section 32.13.7, \"What You May Need to Know About Application Preferences Task Flow\", 291401=For example, suppose that a corporate policy requires two levels of approvals for expense amounts greater than 1000. Suppose further that this policy is changed to require three levels. You can use Task Configuration to change the rule rather than having your IT department modify the rule in the underlying process and then deploy it again. Any change to the rule is applied starting with the next instance, and instances already in progress use the current rule definitions., 260982=Section 32.13.6, \"What You May Need to Know About the Reports Task Flow\", 261402=Section 32.13.9, \"What You May Need to Know About Rules Task Flow\", 122851=For more information about how certificates are uploaded and used, see Section 34.1.10, \"Evidence Store Service and Digital Signatures.\"}",
+    "lastModified": "Wed, 14 Jan 2015 14:07:40 GMT",
+    "textBeforeTable": "Table 32-12 Worklist Report Types Table 32-12 lists the worklist reports available for task analysis. 32.11 Creating Worklist Reports These fields are persisted in the database as customerAttributeString1, customerAttributeString2, customerAttributeNumber1, customerAttributeNumber2, customerAttributeDate1, customerAttributeDate2. task.getCustomerAttributes.setCustomerAttributeDate2() task.getCustomerAttributes.setCustomerAttributeDate1() task.getCustomerAttributes.setCustomerAttributeNumber2(9) task.getCustomerAttributes.getCustomerAttributeNumber1() task.getCustomerAttributes.setCustomerAttributeString1(\"String\") task.getCustomerAttributes.getCustomerAttributeString1() Use the following Java Architecture for XML Binding (JAXB) methods to set and get these attributes: Date customerAttributeDate2 Date customerAttributeDate1 Double customerAttributeNumber2 Double customerAttributeNumber1 String customerAttributeString2 String customerAttributeString1 Data Type Attribute Table 32-11 Custom Mapped Attributes The following mapped attributes are included in the WorkflowTask.xsd file and are available for your use without restrictions. 32.10.2 Custom Mapped Attributes",
+    "textAfterTable": "32.11.1 How To Create Reports Reports are available from the Reports link. Report results cannot be saved. To create a report: Click the Reports link. Click the type of report you want to create. Figure 32-60 shows the report types available. Figure 32-60 Oracle BPM Worklist Reports Description of \"Figure 32-60 Oracle BPM Worklist Reports\" Provide inputs to define the search parameters of the report. Figure 32-61 shows an example of the Unattended Tasks Report input page. The other reports are similar. See Table 32-12 for information about input parameters for all the report types. Figure 32-61 Unattended Tasks Report\u2014Input Page for Task Analysis Description of \"Figure 32-61 Unattended Tasks Report\u2014Input Page for Task Analysis\" Click Run. 32.11.2 What Happens When You Create Reports As shown in Figure 32-62, report results (for",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

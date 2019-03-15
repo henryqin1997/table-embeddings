@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Jan 27, 1999",
+            "Jan 3, 2003",
+            "Jan 24, 2007",
+            "Jul 6, 2007",
+            "Aug 28, 2007"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: SARNOFF CORPORATION, NEW JERSEY Free format text: MERGER;ASSIGNOR:DAVID SARNOFF RESEARCH CENTER, INC.;REEL/FRAME:009720/0217 Effective date: 19970404",
+            "Year of fee payment: 4",
+            "",
+            "",
+            "Effective date: 20070706"
+        ]
+    ],
+    "pageTitle": "Patent US5920199 - Charge detector with long integration time - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5920199?dq=6,587,403",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986444.39/warc/CC-MAIN-20150728002306-00121-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 478884007,
+    "recordOffset": 478864237,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{31166=This is a continuation of application Ser. No. 08/798,206 filed: Feb. 10, 1997, now U.S. Pat. No. 5,754,056., 38107=Each multiplexed signal line feeds an amplifier and low pass filter circuit 40 which is shown in FIG. 3. This circuit includes an amplifier 42 with a voltage gain of about 10 followed by a low pass filter (LPF) 44 which reduces the noise level of the amplified signal. Additionally, the LPF employs a bandwidth switching control technique through transistor 45 to optimize the response time during signal acquisition while still restricting the noise bandwidth during the integration interval. The output signals from these eight amplifier/LPF circuits are combined into a single 50 kHz output signal and provided through buffer amplifier 46 to drive the final multiplexers. The exemplary amplifier 42 uses a very low noise folded cascode MOS operational amplifier shown in FIG. 4. The cascode circuit provides a low noise amplified signal. In the exemplary embodiment of the invention R1 is 1800 ohms and R2 is 200 ohms. A closed loop SPICE circuit simulation of this amplifier is shown in FIG. 5. For an input step 510 of 0.1V the exemplary amplifier produces a 1V output signal 512 and, thus, has a gain of 10., 36575=The charge detector of the invention can be understood by its use in a particular instrument, here a solid state ion detector. In FIG. 1, the solid state ion detector consists of a linear array of metallic collecting electrodes 12-1 through 12-8 disposed on the surface of an integrated circuit which provides the functions of signal amplification, filtering and scanning for the linear array. Each metal electrode has a physical size of approximately 20 \u03bcm\ufffd2000 \u03bcm with a capacitance in the range of 0.5 pF. The gate of a low noise MOS transistor, configured as a source follower buffer 14, is connected to each electrode so that electric charge signals due to impinging positive ions can be buffered and multiplexed out to one of a set of horizontal signal lines 16. In the illustrative example shown schematically in FIG. 1, there are a total of eight multiplexed signal lines 16 (MSIG1-MSIG8) associated with a large group of electrodes, e.g., 512 electrodes. Each of the collecting electrodes 12 is also connected to a second MOS transistor 18 which is used to periodically reset the electrode to a reference potential VR prior to a specific signal integration period. The source electrode of the MOS source follower transistor 14 is connected to the multiplexed signal line via a third MOS transistor 20 controlled by a horizontal scanning shift register. The timing for the signals MUX1-MUX8 applied to the signal lines 16 which control the gates of these MOS transistors 20 is shown in FIG. 2., 50813=FIG. 10 shows the typical noise characteristics for an exemplary 20/1.5 \u03bcm PMOS transistor measured at an Ids current of 200 \u03bcA and the estimated noise characteristics for an exemplary PMOS device having a 1000 \u03bcm width is used for the 1st source follower, the input capacitance of the source follower is on the order of 0.5 pF, so the total collection electrode capacitance is approximately 1 pF. For an LPF filter bandwidth of 16 kHz, and based on the component sizes shown in FIGS. 3 and 4, the magnitudes of the individual noise terms referred to the detector node are calculated as follows:, 31294=This application claims the benefit of USC Provisional Appl. Ser. No. 60/016,642, filed Apr. 23, 1996.}",
+    "textBeforeTable": "Patent Citations It is to be understood that the apparatus and method of operation taught herein are illustrative of the invention. Modifications may readily be devised by those skilled in the art without departing from the spirit or scope of the invention. The invention can be used with any number of capacitors. Although the invention was illustrated with eight lines multiplexed together, any number can be used. The charge detector can be used with any apparatus which generates electrical charge in response to an input including for example, a photodetector, photomultiplier, ion detector, electron beam detector and piezoelectric charge detector and arrays of such devices. The invention is directed to an integrated solid state charge detector array having a long integration time and which can be manufactured at relatively low cost using conventional silicon IC processing. It is also desirable that this detector have low level sensitivity approaching a single ion event (such as may be achieved with the microchannel multiplier array), and yet have improved dynamic range capability as compared to the prior art. Another aspect of this invention is that by choosing the reset potential VR to be equal to the substrate potential of the MOS reset transistor, the diode leakage dark current is essentially zero. This can be seen directly from the current for a p-n junction diode given by: I=Is (e-qV/kT -1) where Is is the reverse saturation current. Therefore, if V<<kT/q then the",
+    "textAfterTable": "Referenced by Citing Patent Filing date Publication date Applicant Title US6501283 * Jan 16, 2001 Dec 31, 2002 Infineon Technologies Ag Circuit configuration for measuring the capacitance of structures in an integrated circuit US8072525 Jun 18, 2008 Dec 6, 2011 Infrared Newco, Inc. Imaging signal processing methods and apparatus US8634008 May 3, 2012 Jan 21, 2014 Infrared Newco, Inc. Imaging signal processing methods and apparatus DE102009015586A1 Mar 30, 2009 Oct 14, 2010 Perkinelmer Optoelectronics Gmbh & Co.Kg Sensorausleseschaltung, Sensor und Verfahren zum Auslesen eines Sensorelements EP1201065A1 * Jul 11, 2000 May 2, 2002 Time Domain Corporation Baseband signal converter for a wideband impulse radio receiver WO2010115497A1 Mar 9, 2010 Oct 14, 2010 Perkinelmer Optoelectronics Gmbh & Co. Kg Sensor readout circuit, sensor and method for reading out a sensor element * Cited by examiner",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

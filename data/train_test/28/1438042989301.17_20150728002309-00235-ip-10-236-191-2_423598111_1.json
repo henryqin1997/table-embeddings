@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Modifier and Type",
+            "void",
+            "void",
+            "void",
+            "java.util.Vector",
+            "java.util.Vector",
+            "java.util.Vector",
+            "boolean",
+            "void",
+            "void"
+        ],
+        [
+            "Method and Description",
+            "addAddedChangeSet(java.lang.Object changeSet) Add an added change set.",
+            "addChangedMapKeyChangeSet(java.lang.Object changeSet) Add an changed key change set.",
+            "addRemovedChangeSet(java.lang.Object changeSet) Add an removed change set.",
+            "getAdds() ADVANCED: Return the added stuff.",
+            "getChangedMapKeys() ADVANCED: Return the stuff whose Map keys have changed.",
+            "getRemoves() ADVANCED: Return the removed stuff.",
+            "hasChanges() Return whether any changes have been recorded with the change record.",
+            "simpleAddChangeSet(java.lang.Object changeSet) Add a change set after it has been applied.",
+            "simpleRemoveChangeSet(java.lang.Object changeSet) Remove a change set after it has been applied."
+        ]
+    ],
+    "pageTitle": "EISCollectionChangeRecord (EclipseLink 2.5.1, build 'v20130918-f2b9fc5' API Reference)",
+    "title": "Methods",
+    "url": "http://www.eclipse.org/eclipselink/api/2.5/org/eclipse/persistence/eis/EISCollectionChangeRecord.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00235-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 423605871,
+    "recordOffset": 423598111,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 10 Mar 2014 20:18:11 GMT",
+    "textBeforeTable": "Method Summary Construct a ChangeRecord that can be used to represent the changes to an unordered collection. EISCollectionChangeRecord(org.eclipse.persistence.internal.sessions.ObjectChangeSet\u00a0owner, java.lang.String\u00a0attributeName, DatabaseMapping\u00a0mapping) Constructor and Description \u00a0 Constructors Constructor Summary Fields inherited from class\u00a0org.eclipse.persistence.internal.sessions.ChangeRecordattribute, mapping, owner Fields inherited from class\u00a0org.eclipse.persistence.internal.sessions.DeferrableChangeRecord isDeferred, latestCollection, originalCollection Fields inherited from class\u00a0org.eclipse.persistence.internal.sessions.CollectionChangeRecord addObjectList, addOverFlow, orderedAddObjectIndices, orderedAddObjects, orderedChangeObjectList, orderedRemoveObjectIndices, orderedRemoveObjects, orderHasBeenRepaired, removeObjectList Field Summary Serialized Form See Also: INTERNAL: Capture the changes for an unordered collection as collections of adds and removes. implements EISCollectionChangeRecord extends org.eclipse.persistence.internal.sessions.CollectionChangeRecord public class EISCollectionChangeRecord EISCollectionChangeRecord CollectionChangeRecord, ChangeRecord, java.io.Serializable, All Implemented Interfaces:",
+    "textAfterTable": "Methods inherited from class\u00a0org.eclipse.persistence.internal.sessions.CollectionChangeRecord addAdditionChange, addOrderedAdditionChange, addOrderedRemoveChange, addRemoveChange, clearChanges, getAddObjectList, getAddOverFlow, getCurrentIndexesOfOriginalObjects, getOrderedAddObjectIndex, getOrderedAddObjectIndices, getOrderedAddObjects, getOrderedChangeObjectList, getOrderedRemoveObject, getOrderedRemoveObjectIndices, getOrderedRemoveObjects, getRemoveObjectList, internalRecreateOriginalCollection, mergeRecord, orderHasBeenRepaired, setAddObjectList, setOrderedAddObjectIndices, setOrderedAddObjects, setOrderedChangeObjectList, setOrderedRemoveObjects, setOrderHasBeenRepaired, setRemoveObjectList, updateReferences Methods inherited from class\u00a0org.eclipse.persistence.internal.sessions.DeferrableChangeRecord getLatestCollection, getOldValue, getOldValue, getOriginalCollection, isDeferred, recreateOriginalCollection, setIsDeferred, setLatestCollection, setOriginalCollection Methods inherited from class\u00a0org.eclipse.persistence.internal.sessions.ChangeRecord getAttribute, getMapping, getOwner, prepareForSynchronization, setAttribute, setMapping, setOwner, toString, updateChangeRecordWithNewValue Methods inherited from class\u00a0java.lang.Object clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait Methods inherited from interface\u00a0org.eclipse.persistence.sessions.changesets.ChangeRecord getAttribute, getOldValue, getOwner Constructor Detail EISCollectionChangeRecord public\u00a0EISCollectionChangeRecord(org.eclipse.persistence.internal.sessions.ObjectChangeSet\u00a0owner, java.lang.String\u00a0attributeName, DatabaseMapping\u00a0mapping) Construct a ChangeRecord that can be used to represent the changes to an unordered collection. Method Detail addAddedChangeSet public\u00a0void\u00a0addAddedChangeSet(java.lang.Object\u00a0changeSet) Add an added change set. addChangedMapKeyChangeSet public\u00a0void\u00a0addChangedMapKeyChangeSet(java.lang.Object\u00a0changeSet) Add",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,69 @@
+{
+    "relation": [
+        [
+            "Overview",
+            "Core files:",
+            "Missing core files:",
+            "Non core files:",
+            "Old core files:",
+            "Total files:",
+            "Integrity Check",
+            "Core files passed:",
+            "Core files failed:",
+            "Integrity incalculable:"
+        ],
+        [
+            "",
+            "2238",
+            "none",
+            "239",
+            "3",
+            "2480",
+            "( 1 files failed )",
+            "2236",
+            "1",
+            "1"
+        ],
+        [
+            "",
+            "8.58 mb",
+            "",
+            "3.84 mb",
+            "65 kb",
+            "12.48 mb",
+            "",
+            "8.32 mb",
+            "8 kb",
+            "256 kb"
+        ],
+        [
+            "Interpretation",
+            "",
+            "Any Missing? FTP the missing file/s individually up to the server.",
+            "Are the Non Core Files Yours? Do they belong to themes or plugins? Are they uploaded themes or images? Or worse maybe they have been put there by a Bot or Spammer?",
+            "",
+            "Counts may vary from release to release.",
+            "Locate and examine all failed files. Have you customised them? Consider putting them back as they should be? Write a Plugin, instead, then you can upgrade more smoothly.",
+            "Good :D",
+            "In this test case, e107_config.php was flagged. This is OKay because I know I edited it. I included ZB Block config option on my site.",
+            ""
+        ]
+    ],
+    "pageTitle": "File Inspector - e107 Wiki",
+    "title": "",
+    "url": "http://wiki.e107.org/index.php?title=File_Inspector",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00023-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 260622623,
+    "recordOffset": 260610138,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sun, 12 Apr 2015 18:55:55 GMT",
+    "textBeforeTable": "Here is a sample scan. Now you have ran the inspector check the results closely. Reviewing File Inspector Scan Results Choose Default All Options Go to Admin -> Tools -> File Inspector Running a Scan When the inspector encounters an e107 core file it checks it for file consistency to make sure it isn't corrupted and hasn't been tampered with (by comparing an md5 hash of the file with its corresponding md5 hash in the core image). File Inspector Scan See also Integrity check for checking Plugin validity. The File Inspector is an admin tool for scanning and analysing the files on your sites server. It can be found in your admin area under tools. As it scans your sites server it checks each file and compiles a break down based on whether the file is an e107 core file and passes an integrity check, or whether the file is unknown to e107. The results are displayed in an explorer style, directory tree interface and the files are clearly marked as to their status. File Inspector 3 See Also Integrity check For Plugins 2.4 If you are a CVS user 2.3 The file has been edited 2.2 The file is out of date",
+    "textAfterTable": "When you have problems with your website this should be one of your first debugging checks to do. Core File Inspector Failure Problems and Solutions This could mean several things... The file is corrupted This could be because the file was corrupted in the zip, got corrupted during extraction or got corrupted during file upload via FTP. You should try re-uploading the file to your server and re-run the scan to see if this resolves the error. The file is out of date If the file is from an older release of e107 to the version you are running then it will fail the integrity check. Make sure you have uploaded the newest version of this file. The file has been edited If you have edited this file in anyway it will not pass the integrity check. If you intentionally edited this file then you need not worry and can ignore this integrity check fail. If however the file was edited by someone else without authorisation you may want to re-upload the proper version of this file from the e107 zip. If you are a CVS user If you run checkouts of the e107 CVS on your site instead of the official e107 stable releases, then you will discover files have failed integrity check because they have been edited by a dev after the latest core image snapshot was created See",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

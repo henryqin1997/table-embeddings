@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Destination",
+            "Include field header names",
+            "Include ended meetings",
+            "Start date",
+            "End date"
+        ],
+        [
+            "Description",
+            "Destination of the exported information. For descriptions, restrictions, and recommendations for each option, see the How To Export Data.",
+            "Whether or not to include the field header names in the exported file.",
+            "Whether to include meetings that have already ended in the exported file.",
+            "Earliest date for which you want to export meeting details.",
+            "Latest date for which you want to export meeting details. If left blank, the exported output includes all future meetings."
+        ],
+        [
+            "Value",
+            "Screen/File/Printer Default: Screen",
+            "No/Yes Default: Yes",
+            "No/Yes Default: No",
+            "Date in the format MM/DD/YYYY Click ... to choose a date. Default: yesterday's date",
+            "Date in the format MM/DD/YYYY Click ... to choose a date. Default: today's date"
+        ]
+    ],
+    "pageTitle": "Cisco Unified MeetingPlace Express, Release 2.x -- About This Page: Meeting Information - DocWiki",
+    "title": "",
+    "url": "http://docwiki.cisco.com/w/index.php?title=Cisco_Unified_MeetingPlace_Express,_Release_2.x_--_About_This_Page:_Meeting_Information&oldid=8249",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00082-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73599611,
+    "recordOffset": 73586082,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Table: Fields on the Meeting Information Page Field Reference: Meeting Information 2.1 Table: Output Fields of the Meeting Information Page-Used to Import Meetings 2 Output Fields of the Meeting Information Page-Used for Importing Meetings 1.1 Table: Fields on the Meeting Information Page 1 Field Reference: Meeting Information Contents Output Fields of the Meeting Information Page-Used for Importing Meetings Field Reference: Meeting Information This page is used to export meeting information from the Cisco Unified MeetingPlace Express database for all meetings that occur during a specified range of dates. search navigation, Jump to: diff) Newer revision \u2192 ( diff) |",
+    "textAfterTable": "Output Fields of the Meeting Information Page-Used for Importing Meetings Table: Output Fields of the Meeting Information Page-Used to Import Meetings lists, in alphabetical order, the output fields that the system displays after exporting meeting information. It also includes field descriptions and values, which are useful when you use the exported output to create import files. Table: Output Fields of the Meeting Information Page-Used to Import Meetings Header Field Description Value Required Header Fields for Importing Meetings DialableConfID Unique number used by the local audio mixer to identify the voice meeting. This value is different from the meeting ID displayed to end users. Numeric characters ReqLengthOfConf The requested number of minutes for this meeting. Number Default: 30 StartDateTimeOfConf (Read only) The date and time for which this meeting is scheduled. MM/DD/YYYY HH:MM Optional Header Fields for Importing Meetings ActLenOfConf The actual length of the meeting, in seconds.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

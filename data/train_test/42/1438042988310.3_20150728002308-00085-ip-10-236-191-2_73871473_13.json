@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Column Name",
+            "INDEX_NAME",
+            "ATTRIBUTE_ID",
+            "ATTRIBUTE_ALIAS",
+            "SUBEXPRESSION",
+            "DATA_TYPE",
+            "INDEXED",
+            "OPERATOR_LIST",
+            "XMLTYPE_ATTR",
+            "XPTAG_TYPE",
+            "XPFILTER_TYPE"
+        ],
+        [
+            "Datatype",
+            "VARCHAR2",
+            "NUMBER",
+            "VARCHAR2",
+            "VARCHAR2",
+            "VARCHAR2",
+            "VARCHAR2",
+            "VARCHAR2",
+            "VARCHAR2",
+            "VARCHAR2",
+            "VARCHAR2"
+        ],
+        [
+            "Description",
+            "Name of the index.",
+            "Attribute identifier (unique for an index).",
+            "Alias given to the stored attribute.",
+            "The arithmetic expression that represents the stored attribute (also the LHS of predicates in the set).",
+            "Derived datatype for the stored attribute.",
+            "YES, if the stored attribute is also the indexed attribute; otherwise, NO.",
+            "String representation of the common operators configured for the attribute.",
+            "Name of the corresponding XMLType elementary attribute when the stored or indexed attribute is an XML tag.",
+            "Type of the XML tag: XML ELEMENT or XML ATTRIBUTE",
+            "Type of filter configured for the XML tag: POSITIONAL or [CHAR|INT|DATE] VALUE"
+        ]
+    ],
+    "pageTitle": "9 Expression Filter Views",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B13789_01/server.101/b10821/views.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 13,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988310.3/warc/CC-MAIN-20150728002308-00085-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73879675,
+    "recordOffset": 73871473,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 22 Mar 2004 20:13:00 GMT",
+    "textBeforeTable": "This view shows the exact list of stored and indexed attributes used for expression filter indexes in the user's schema. This view is defined with the columns described in the following table: 9.9 USER_EXPFIL_PREDTAB_ATTRIBUTES View FAILED RBLD: Index build or rebuild failed, and it can be rebuilt using the ALTER INDEX REBUILD statement. FAILED: Index build failed, and it should be dropped and re-created. VALID: Index was created successfully. Index status: VARCHAR2 STATUS Name of the column on which the index is defined. VARCHAR2 EXPRESSION_COLUMN Name of the table on which the index is defined. VARCHAR2 EXPRESSION_TABLE Name of the corresponding attribute set. VARCHAR2 ATTRIBUTE_SET Name of the package that defines the functions with queries on the predicate table. VARCHAR2 ACCESS_FUNC_PACKAGE Name of the predicate table used for the index. VARCHAR2 PREDICATE_TABLE Name of the index. VARCHAR2",
+    "textAfterTable": "9.10 USER_EXPFIL_PRIVILEGES View This view lists the privileges of the current user on expression sets belonging to other schemas and the privileges of other users on the expression sets owned by the current user. This view is defined with the columns described in the following table: Column Name Datatype Description EXPSET_OWNER VARCHAR2 Owner of the expression set. EXPSET_TABLE VARCHAR2 Name of the table storing expressions. EXPSET_COLUMN VARCHAR2 Name of the column storing the expressions. GRANTEE VARCHAR2 Grantee of the privilege. INSERT_PRIV VARCHAR2 Y if the grantee has the INSERT EXPRESSION privilege on the expression set; otherwise, N. UPDATE_PRIV VARCHAR2 Y if the grantee has the UPDATE EXPRESSION privilege on",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

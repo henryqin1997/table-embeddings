@@ -1,0 +1,47 @@
+{
+    "relation": [
+        [
+            "Field",
+            "Email Body Truncation",
+            "Maximum email Attachment Size Allowed - Administrator",
+            "Email Attachments",
+            "Email Attachment Size",
+            "Email Date Filter",
+            "Email Importance",
+            "Calendar Date Filter - Past Events/Future Events",
+            "Journal Date Filter",
+            "ToDo Status"
+        ],
+        [
+            "Action",
+            "Click to enable the email body truncation filter. When enabled, you can select the maximum number of email characters, in thousands of characters, to sync to the device. Specify how many characters from the body of the email are synced to the device before the email is truncated.",
+            "Specify the maximum combined size of all attachments in a document, in KB, that can be synced to a device. This administrator setting is one that Lotus Notes client users cannot change, and this setting is always locked.",
+            "Click to enable attachments to sync with the device.",
+            "Select the total combined size of attachments in a document, in KB, allowed to sync with the device. The value you specify cannot exceed the value in the Maximum Email Attachment Size Allowed - Administrator field.",
+            "Click to enable the email data filter, and select the number of days to keep a mail message on the device. If the filter is not enabled, all messages are synced.",
+            "Click to enable syncing for mail messages of high importance only.",
+            "Specify the date ranges of calendar events to sync. A repeating event is included when any of its instances are within a date range. All dates from a repeating entry display on the device calendar. When all instances of a calendar event fall outside the past event date range, it is removed from the device. Specify a date range for past events and one for future events as described below. Past Events -- click to enable the filter for past events. Select the length of time (how far into the past), calendar entries are to be synced. When the filter is not enabled, all past events sync. Future Events -- click to enable the filter for future events. Select the length of time (how far into the future), calendar entries are to be synced. When the filter is not enabled, all future events will sync.",
+            "Click to enable the journal date filter, and select the amount of time to keep a journal entry on the device. Entries are removed from the device when their modified date is older than the filter range.",
+            "Select Incomplete Status Only to sync only to-dos that have a status of Incomplete."
+        ]
+    ],
+    "pageTitle": "Lotus Notes Traveler 8.5.2",
+    "title": "Table 25. Filter Settings preferences",
+    "url": "http://infolib.lotus.com/resources/domino/traveler/8.5.2/doc/TR852ACD001/en_us/NotesTravelerAria.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 25,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988399.65/warc/CC-MAIN-20150728002308-00225-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 114554691,
+    "recordOffset": 114407435,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{17553=\u00a9 Copyright IBM Corporation 1993, 2010, 17843=August 2010}",
+    "TableContextTimeStampAfterTable": "{839901=Intellectual Property Licensing Legal and Intellectual Property Law IBM Japan, Ltd. 1623-14, Shimotsuruma, Yamato-shi, Kanagawa-ken 242-8502 Japan, 494005=Calendar entries past the year 2067, on both the device and server, are not synchronized., 212435=Enabled and 2000 characters, 553773=For example, JoeSmith_tpr_20100326173533.zip is a TPR from mobile user JoeSmith that was reported on March 26th, 2010 at 5:35:33 PM GMT., 217829=2000 KB, 841858=IBM Corporation Department LZMS 11501 Burnet Road Austin, TX 78758-3400 U.S.A., 9723=The Lotus Notes Traveler server sits inside your DMZ and should not contain any user mail files. You must open port 443 on the Internet-facing firewall to the Lotus Notes Traveler server for data syncing. Also, if you are using a pre-8.5.2 Windows Mobile or Nokia device, you must open port 8642 to the Lotus Notes Traveler server for auto sync. Then, on the intranet firewall, you must open up Notes RPC port 1352 to each IBM Lotus Domino mail server that contains user mail files. This topology is recommended only for pilot and testing purposes., 839561=IBM Director of Licensing IBM Corporation North Castle Drive Armonk, NY 10504-1785 U.S.A.}",
+    "lastModified": "Tue, 24 Aug 2010 01:14:44 GMT",
+    "textBeforeTable": "The following table provides a summary of the connection types used by the mobile devices and the ports they use by default. Only one data sync channel is used but the mobile devices can support either HTTP or HTTPS. Connection types and ports Apple devices use either HTTP or HTTPS communication channels to sync with the Lotus Notes Traveler server. These devices do not support the SMS push channel. ActiveSync (Apple) devices The Lotus Notes Traveler client running on Windows Mobile and Nokia devices uses a single communication channel for data syncing and push messages along with an optional SMS channel. The data sync channel uses HTTP or HTTPS to communicate with the server. This channel is always initiated from the mobile device. The channel should be secured either through a Virtual Private Network (VPN) or by using HTTPS so that all data sent is encrypted. The optional SMS channel is used to notify the mobile device of pending server changes. This short message is delivered to the device SMS mailbox and read by the Lotus Notes Traveler client. The Lotus Traveler client then carries out the command or begins a data sync. Windows Mobile and Nokia devices Where to place your IBM Lotus Notes Traveler server in your network depends on a number of factors. This section includes a list of possible scenarios and why one might",
+    "textAfterTable": "Note: You might want to consider running the mobile device client connection with the HTTP protocol rather than the HTTPS protocol when you are using a VPN. The VPN typically provides a secure data channel. There is some performance gain using HTTP rather than SSL because the mobile device and the IBM Lotus Notes Traveler server do not need to encrypt all data. However, this leaves the connection unencrypted between the VPN connection point and the Lotus Notes Traveler server. The type of VPN server that must be installed depends on the mobile device. Most of the mobile devices support some form of IPSEC or PPTP protocol, so network VPN appliances can be used by the mobile devices. The IBM Lotus Mobile Connect server provides mobile clients which support Windows Mobile and Nokia devices. It also offers a secure HTTP access solution for devices such as the Apple iPhone. For more information about the capabilities of Lotus Mobile Connect, see the IBM Lotus Mobile Connect page, which includes a link to Lotus Mobile Connect documentation. Using a reverse proxy The diagram in this topic shows a network topology where a reverse proxy resides in your DMZ and provides authentication services for the mobile device clients. This network topology does not allow as",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

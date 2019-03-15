@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Status",
+            "TO DO",
+            "DONE",
+            "TO DO",
+            "TO DO",
+            "TO DO"
+        ],
+        [
+            "Task",
+            "Draft support",
+            "Feedback while processing",
+            "Feedback while processing",
+            "Feedback while processing",
+            "Editor scrolling"
+        ],
+        [
+            "Description",
+            "Save and restore drafts",
+            "Disable input, avoid double send clicks",
+            "progress feedback",
+            "error reporting, looks like mails are currently silently discarded in case of a composing error!",
+            "Eg. by expanding the editor to show the entire content and using a toplevel QML Flickable element"
+        ],
+        [
+            "Contact",
+            "Anselmo",
+            "Anselmo",
+            "[mailto: <>]",
+            "[mailto: <>]",
+            "[mailto: <>]"
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Projects/PIM/Mobile\" - KDE TechBase",
+    "title": "",
+    "url": "https://techbase.kde.org/index.php?title=Projects/PIM/Mobile&diff=52341&oldid=52287",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985140.15/warc/CC-MAIN-20150728002305-00086-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 885857231,
+    "recordOffset": 885844966,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Composer KMail Mobile [mailto: <>] Initial Akonadi startup takes a bit, so show some progress for example. Also consider an error overlay like on the desktop. Startup Screen TO DO Artur <artur.souza@openbossa.org> Indicate that a folder/mail/etc. is currently being loaded - (logic by steveire - waiting graphics) Progress reporting IN PROGRESS [mailto: <>] There are ugly patches in komo/kdelibs which deal with some of them already Native file dialogs TO DO [mailto: <>] Find a way to organize more than 6 actions in there, Nuno, Bj\u00f6rn and Steve have various ideas for that already Action slideout panel for more actions TO DO Artur <artur.souza@openbossa.org> Key presses end up in text input fields without focus (Qt bug - being worked on) Text Input Focus",
+    "textAfterTable": "Calendering and Task Management Status Task Description Contact TO DO Reminder Daemon Needs Maemo5 platform integration for notifications [mailto: <>] Retrieved from \u2018 https://techbase.kde.org/index.php?title=Projects/PIM/Mobile&oldid=52341\u2019 Content is available under Creative Commons License SA 3.0 as well as the GNU Free Documentation License 1.2. Navigation Home Help Recent changes",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

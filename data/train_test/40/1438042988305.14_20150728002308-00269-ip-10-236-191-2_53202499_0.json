@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Adapter",
+            "model-in-memory.js",
+            "model-rest-json.js",
+            "model-rest-jsonp.js",
+            "model-websql.js",
+            "model-parse-dot-com.js"
+        ],
+        [
+            "Description",
+            "In-memory data store",
+            "Backbone.js default behavior. The application gets data through RESTFul services.",
+            "If the server serving your pages and the server serving your data are on different domains, use this adapter instead to avoid the same origin policy error.",
+            "Uses local database using the WebSQL api.",
+            "Don\u2019t want to host your own data infrastructure? Parse.com is a cloud service that will host your data for you. Use this adapter to test your app with sample data I deployed on Parse.com."
+        ],
+        [
+            "Back end Repo",
+            "No server required",
+            "directory-server-nodejs directory-server-php directory-server-java",
+            "directory-server-nodejs directory-server-php directory-server-java",
+            "No server required",
+            "No server required"
+        ]
+    ],
+    "pageTitle": "Sample Application with Backbone.js and Twitter Bootstrap: Updated and Improved | Christophe Coenraets",
+    "title": "",
+    "url": "http://coenraets.org/blog/2013/04/sample-application-with-backbone-js-and-twitter-bootstrap-updated-and-improved/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988305.14/warc/CC-MAIN-20150728002308-00269-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 53224399,
+    "recordOffset": 53202499,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{94739=\u00a9 2015 Christophe Coenraets. All Rights Reserved.}",
+    "lastModified": "Fri, 31 Jul 2015 00:39:43 GMT",
+    "textBeforeTable": "I initially published the application with two implementations of a RESTful back end: A Java version using Jersey, and a PHP version using Slim. A year later, I\u2019m adding the long overdue Node.js/MongoDB back end. Among the great feedback I received, a number of you mentioned you wanted a self-contained version of the app with no dependency on a specific back end to be able to \u201cdownload and run\u201d without having to set up a server and a database. So I rearchitected the persistence layer with simple and pluggable data adapters. By default the application now uses an in-memory data store, but other adapters are available. To change the data persistence strategy, just comment out model-in-memory.js in index.html and uncomment one of the other data adapters using the table below as a reference. Data Persistence Abstraction You can test the hosted version of the application here, or you can download the code (see GitHub repository information below) and test the application locally. Running the Application Bug fixes and cleaner code New GitHub repository organization (see below) Additional data persistence options: In-memory datastore, Node.js/MongoDB, Parse.com (In addition to PHP and Java) Data persistence layer is now abstracted (see below) Layout is now responsive Latest version of Twitter Bootstrap (2.3.1) Latest version of Backbone.js (1.0) New in this version: Because of the continued interest in the application as a starting point and a reference for Backbone.js and Twitter Bootstrap, I decided to give it a well deserved update. A",
+    "textAfterTable": "The Node.js, Java, and PHP RESTful back ends work with both JSON and JSONP. If the request includes a query parameter named \u201ccallback\u201d, a JSONP response is returned, otherwise, a regular JSON response is returned. New GitHub Repositories The original repository (backbone-directory) grew somewhat chaotically as I kept adding different versions and different data persistence options. So I decided to start fresh with new repositories. The client code for the application is available in the new directory-backbone-bootstrap repository. In the future, this new repository naming scheme will allow me to add different versions of the app (for example, directory-backbone-foundation or directory-angular-bootstrap) while keeping each repository clean and focused. Because the templates of this application are loaded using XMLHTTPRequest, you will get a cross domain error (Access-Control-Allow-Origin) if you load index.html from the file system (with the file:// protocol). Make sure you load the application from a web server. For example: http://localhost/directory-backbone-bootstrap. If you want to go beyond the in-memory datastore, you can download the REST services in the following repositories: directory-rest-nodejs (Node.js/MongoDB implementation) directory-rest-php (PHP implementation) directory-rest-java (Java implementation coming soon) Tweet Follow ccoenraets Follow Me",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

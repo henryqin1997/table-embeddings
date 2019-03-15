@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "Constant",
+            "IBASE_DEFAULT",
+            "IBASE_READ",
+            "IBASE_WRITE",
+            "IBASE_CONSISTENCY",
+            "IBASE_CONCURRENCY",
+            "IBASE_COMMITTED",
+            "IBASE_WAIT",
+            "IBASE_NOWAIT"
+        ],
+        [
+            "Description",
+            "The default transaction settings are to be used. This default is determined by the client library, which defines it as IBASE_WRITE|IBASE_CONCURRENCY|IBASE_WAIT in most cases.",
+            "Starts a read-only transaction.",
+            "Starts a read-write transaction.",
+            "Starts a transaction with the isolation level set to 'consistency', which means the transaction cannot read from tables that are being modified by other concurrent transactions.",
+            "Starts a transaction with the isolation level set to 'concurrency' (or 'snapshot'), which means the transaction has access to all tables, but cannot see changes that were committed by other transactions after the transaction was started.",
+            "Starts a transaction with the isolation level set to 'read committed'. This flag should be combined with either IBASE_REC_VERSION or IBASE_REC_NO_VERSION. This isolation level allows access to changes that were committed after the transaction was started. If IBASE_REC_NO_VERSION was specified, only the latest version of a row can be read. If IBASE_REC_VERSION was specified, a row can even be read when a modification to it is pending in a concurrent transaction.",
+            "Indicated that a transaction should wait and retry when a conflict occurs.",
+            "Indicated that a transaction should fail immediately when a conflict occurs."
+        ]
+    ],
+    "pageTitle": "PHP: Costanti predefinite - Manual",
+    "title": "Firebird/InterBase transaction flags",
+    "url": "http://php.net/manual/it/ibase.constants.php",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988399.65/warc/CC-MAIN-20150728002308-00075-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 190572791,
+    "recordOffset": 190564589,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 17 Apr 2015 17:20:04 GMT",
+    "textBeforeTable": "The following constants can be passed to ibase_trans() to specify transaction behaviour. Queste costanti sono definite da questa estensione e sono disponibili solo se l'estensione \u00e8 stata compilata nel PHP o se \u00e8 stata caricata dinamicamente a runtime. Costanti predefinite Report a Bug Edit English Brazilian Portuguese Chinese (Simplified) French German Japanese Korean Romanian Russian Spanish Turkish Other Change language: Firebird/InterBase Estensioni specifiche dei produttori di basi dati Estensioni di base dati Guida Funzioni Manuale PHP \u00ab Tipi di risorse Firebird/InterBase Funzioni \u00bb Focus search box / (current page) Goto search g s Goto homepage g h Scroll to top g g Scroll to bottom G Next man page g n Previous man page g p Previous menu item k",
+    "textAfterTable": "The following constants can be passed to ibase_fetch_row(), ibase_fetch_assoc() or ibase_fetch_object() to specify fetch behaviour. Firebird/InterBase fetch flags Constant Description IBASE_FETCH_BLOBS Also available as IBASE_TEXTfor backward compatibility. Causes BLOB contents to be fetched inline, instead of being fetched as BLOB identifiers. IBASE_FETCH_ARRAYS Causes arrays to be fetched inline. Otherwise, array identifiers are returned. Array identifiers can only be used as arguments to INSERT operations, as no functions to handle array identifiers are currently available. IBASE_UNIXTIME Causes date and time fields not to be returned as strings, but as UNIX timestamps (the number of seconds since the epoch, which is 1-Jan-1970 0:00 UTC). Might be problematic if used with dates before 1970 on some systems. The following constants are used to pass requests and options to the service API functions (ibase_server_info(), ibase_db_info(), ibase_backup(), ibase_restore() and ibase_maintain_db()). Please refer to the Firebird/InterBase manuals for the meaning of these options. IBASE_BKP_IGNORE_CHECKSUMS IBASE_BKP_IGNORE_LIMBO IBASE_BKP_METADATA_ONLY IBASE_BKP_NO_GARBAGE_COLLECT IBASE_BKP_OLD_DESCRIPTIONS IBASE_BKP_NON_TRANSPORTABLE",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

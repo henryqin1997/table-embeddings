@@ -1,0 +1,97 @@
+{
+    "relation": [
+        [
+            "Author",
+            "Tarek Ziad\u00e9",
+            "phillip.eby",
+            "phillip.eby",
+            "phillip.eby",
+            "phillip.eby",
+            "phillip.eby",
+            "phillip.eby",
+            "phillip.eby"
+        ],
+        [
+            "Commit",
+            "6ab9850",
+            "e4b3ff8",
+            "953d0d1",
+            "d5f550d",
+            "b1d0902",
+            "99dee48",
+            "cde31fb",
+            "b18d83e"
+        ],
+        [
+            "Message",
+            "#1 Added compatibility with Subversion 1.6.",
+            "Support subversion 1.5 (backport from trunk)",
+            "Fix ``resource_listdir('')`` always returning an empty list for zipped eggs. Fix missing import in sdist command when encountering unrecognized SVN entries format. (backports from trunk)",
+            "Should've used distutils.log.warn instead of warnings.warn (backport from trunk)",
+            "Support svn 1.4 working copy format (backport from trunk)",
+            "Source distributions now always include a ``setup.cfg`` file that explicitly sets ``egg_info`` options such that they produce an identical version number to the source distribution's version number. (Previously, the default version number could be different due to the use of ``--tag-date``, or if the version was overridden on the command line that built the source distribution.) (backport from trunk)",
+            "Fixed redundant warnings about missing ``README`` file(s); it should now appear only if you are actually a source distribution. (backport from trunk)",
+            "Creating a branch for the \"stable\" 0.6 development line of setuptools, so that it can continue forward to 0.6b1 and onward, while using the trunk for 0.7 development and Python 2.5 snapshots thereof."
+        ],
+        [
+            "Labels",
+            "Branches setuptools-0.6",
+            "Branches setuptools-0.6",
+            "Branches setuptools-0.6",
+            "Branches setuptools-0.6",
+            "Branches setuptools-0.6",
+            "Branches setuptools-0.6",
+            "Branches setuptools-0.6",
+            "Branches setuptools-0.6"
+        ],
+        [
+            "Comments",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Approvals",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Date",
+            "2009-07-16",
+            "2008-07-16",
+            "2008-02-15",
+            "2006-09-26",
+            "2006-09-17",
+            "2006-07-18",
+            "2006-07-10",
+            "2006-04-14"
+        ]
+    ],
+    "pageTitle": "tarek / distribute / source / setuptools / command / sdist.py \u2014 Bitbucket",
+    "title": "",
+    "url": "https://bitbucket.org/tarek/distribute/history-node/6ab9850e44be/setuptools/command/sdist.py?at=setuptools-0.6",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989507.42/warc/CC-MAIN-20150728002309-00295-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 861299359,
+    "recordOffset": 861282435,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The branch 'setuptools-0.6' does not exist. distribute / setuptools / command / sdist.py History Diff Source is a free Git and Mercurial client for Mac. Atlassian SourceTree is a free Git and Mercurial client for Windows. Atlassian SourceTree Check out in SourceTree data-ssh-url=\"ssh://hg@bitbucket.org/tarek/distribute\"> data-https-url=\"https://bitbucket.org/tarek/distribute\" data-modules=\"components/clone/clone-in-sourcetree\" > value=\"hg pull && hg update [[branchName]]\" Check out this branch on your local machine to begin working on it.",
+    "textAfterTable": "Blog Support Plans & pricing Documentation API Site status Version info Terms of service Privacy policy English Git 2.1.1 Mercurial 2.9 Django 1.7.8",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Fedwire Field Tag",
+            "{1510}",
+            "{2000}",
+            "{3400}",
+            "{3400}",
+            "{3600}",
+            "{4200}",
+            "{4200}",
+            "{4200}",
+            "{5000}",
+            "{6000}"
+        ],
+        [
+            "Fedwire Field Name",
+            "Type/Subtype",
+            "Amount",
+            "Receiver ABA Routing Number",
+            "Receiver ABA Short Name (account is with the Federal Reserve Bank of New York)",
+            "Business Function Code",
+            "Beneficiary ID Code",
+            "Beneficiary Identifier (account number)",
+            "Beneficiary Name",
+            "Originator",
+            "Originator to Beneficiary Information (up to 4 lines of 35 characters each)"
+        ],
+        [
+            "Required Information",
+            "1000",
+            "(enter payment amount)",
+            "021030004",
+            "TREAS NYC 33 Liberty Street New York, NY 10045",
+            "CTR (or CTP)",
+            "D",
+            "13100001",
+            "USPTO 2051 Jamieson Avenue, Suite 300 Alexandria, VA 22314",
+            "(enter your company name)",
+            "(enter the brief purpose of payment and information that helps identify the transaction (e.g., maintenance fee, patent#, application#), and a phone number)"
+        ]
+    ],
+    "pageTitle": "Fees & Payments FAQs | USPTO",
+    "title": "",
+    "url": "http://www.uspto.gov/learning-and-resources/fees-and-payment/fees-payments-faqs",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00014-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 826729599,
+    "recordOffset": 826692154,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{227232=The USPTO's D-U-N-S\u00ae Number is 07-092-1085., 221969=As of June 1, 2015, there is a $24,999.99 daily limit per credit card account.\u00a0There is no daily limit for debit cards., 228102=No. Patent maintenance fees are only required for maintaining an original or reissue patent, except for a design or plant patent, based on an application filed on or after December 12, 1980., 233064=You may call the USPTO Contact Center at 800-786-9199 or 571-272-1000., 201202=The USPTO is in full compliance with the Debt Collection Improvement Act of 1996, and accordingly is required to pay all vendors by Electronic Funds Transfer (EFT). However, if you qualify for a waiver pursuant to 31 CFR Part 208.4, you can be paid by check., 186401=Most fees can be paid with a credit or debit card using Online Services at uspto.gov. For credit or debit card payments submitted outside of uspto.gov (i.e., fax, mail, or hand-delivery), use the Credit Card Payment Form\u00a0(PTO-2038). If the credit or debit card number appears on any form or document other than the PTO-2038, the USPTO will not be liable in the event the credit or debit card number becomes public knowledge. (See 37 CFR 1.23(b).), 207402=Mail Stop 16 Director of the USPTO P.O. Box 1450 Alexandria , VA 22313-1450}",
+    "textBeforeTable": "Instructions for sending a domestic wire payment to the USPTO: Note: At this time, trademark fees cannot be submitted via a wire payment. (See the Trademark Fee Information page for acceptable methods of payment.) You must provide the purpose of the wire payment and information that helps identify the transaction (e.g., patent maintenance fee, patent#, application#) in the appropriate field or line to ensure timely processing of your payment. Failure to provide the required information in the correct fields or lines may result in delays or rejection of your wire payment. You may send your wire payment through the Federal Reserve Fedwire System by providing the below wire transfer information to your bank. Your bank may charge a fee, and your sending bank may use an intermediate bank to transfer the funds (and the intermediate bank may withhold their fee from the payment that is transmitted). Please ensure the full amount of the fee required in U.S. dollars is transmitted. How do I send a wire payment to the USPTO? Please verify with your financial institution that EFT payments can be processed through your checking or savings account before creating an EFT profile. If you have an ACH/EFT block or filter on your account, your account must be set up properly",
+    "textAfterTable": "Instructions for sending an international wire payment to the USPTO: Field Name Required Information (Beneficiary) Bank Number (Line 57a) //FW021030004 (Beneficiary) Bank Name TREAS NYC/FUNDS TRANSFER DIVISION Beneficiary Account Number (Line 59) 13100001 Amount (enter payment amount) Payment Details (Line 70) (up to 4 lines of 35 characters each) 13100001 USPTO (also enter the brief purpose of payment and information that helps identify the transaction (e.g., maintenance fee, patent#, application#), and a phone number) Details of Charges (Line 71a) Charge Our Important Notes: The above information should be transmitted from the remitter's bank to its U.S. Correspondent bank. The U.S. Correspondent bank will use the Fedwire system to complete the transfer. Bank Number (Line 57a) must be in the exact format above Beneficiary Account Number (Line 59) must be the USPTO's ALC of 13100001 or the payment will be returned. Details of Charges (Line 71a) must be coded as \"Charge Our\" to have any banking fees charged to the remitter and not deducted from the payment. Which credit and debit",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

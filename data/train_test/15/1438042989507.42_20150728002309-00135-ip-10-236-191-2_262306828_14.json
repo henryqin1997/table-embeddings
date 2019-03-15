@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Hardware",
+            "Neo 1973",
+            "FreeRunner",
+            "GTA04",
+            "HTC-Dream",
+            "Other"
+        ],
+        [
+            "Works",
+            "yes",
+            "yes",
+            "?",
+            "?",
+            "?"
+        ]
+    ],
+    "pageTitle": "Community Updates/2009-12-31 - Openmoko",
+    "title": "",
+    "url": "http://wiki.openmoko.org/index.php?title=Community_Updates/2009-12-31&oldid=78677",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 14,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989507.42/warc/CC-MAIN-20150728002309-00135-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 262324571,
+    "recordOffset": 262306828,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Codename: 'v16' Homepage: http://activationrecord.net/radekp/qtmoko/ Image: images Using Debian toolchain Fixed fso-keyring to latest version (ghislain) Updated kernel Glamo SD card clocking workaround Multiplexing can be enabled in configuration file Hopefully SMS receiving is fixed (mwester) New applications Enabled voip and google talk Fixed alsa scenario for voip Powering up modem from code For me GPRS is now more stable (with no multiplexing). Disabled modem multiplexing - fixes problems with hang in dialer after boot Added icon for sharing GPRS connection with PC 10MB smaller image size - no python preinstalled now Fixed RTC problems after apt-get upgrade Wlan - fixed WPA-PSK with AES (Torfinn Ingolfsen) Reading contacts from SIM in unicode (Ant) Better QVGA support (no flickering for QMplayer videos now) Using QT 4.6 (with 2 patches that should be upstream in QT 4.6.1) QtMoko [15+16] QtMoko is stable distribution that combines Debian/Qtopia using QT 4.6 on framebuffer as toolkit. It has also compatibility layer for running X applications. This is mainly bug fixing release. I hope SMS receiving is now OK thanks to old patch from Mike Westerhof. Modem multiplexing can be now enabled. The kernel is latest andy-tracking and",
+    "textAfterTable": "Hackable:1 Hackable:1 is a community distribution for hackable devices like the Neo Freerunner. It is based on Debian and implements the GNOME mobile platform. After rev5rc1, spent hours and hours debugging this or improving that to finally get the rev5 out. Here are the changes since rev4: Most of the software stack now runs under the 'hackable1' user, for security purposes. SMS proper implementation The contact list bug has been found and fixed! Power management improvements, suspend works, bluetooth and wifi are no longer turned on by default. An application called 'h1settings' can be used to configure phone features, as well as time and date. We created a new theme to celebrate this new release! We got a splashscreen! It features a Chuck figure to reflects the rev5 codename. For those who used to love the games on OM2007.2, we put them back! Boot time seems to have been improved a bit. This rev5 release has entirely been built from the automatic build system. CDBS is now used for some packages. Git repositories can now be used as sources for remote projects. A Linux kernel is now packaged in hackable:1, in order not",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Version",
+            "IIS 8.5",
+            "IIS 8.0",
+            "IIS 7.5",
+            "IIS 7.0",
+            "IIS 6.0"
+        ],
+        [
+            "Notes",
+            "The element was not modified in IIS 8.5.",
+            "Another value (\"v4.0\") was added to the managedRuntimeVersion attribute in IIS 8.0, and its default value was changed to \"\" instead of \"v2.0\".",
+            "The element was not modified in IIS 7.5.",
+            "The element was introduced in IIS 7.0.",
+            "The element replaces portions of the IIS 6.0 IIsApplicationPools metabase property."
+        ]
+    ],
+    "pageTitle": "Application Pool Defaults <applicationPoolDefaults> : The Official Microsoft IIS Site",
+    "title": "",
+    "url": "http://www.iis.net/configreference/system.applicationhost/applicationpools/applicationpooldefaults",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987034.19/warc/CC-MAIN-20150728002307-00062-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 504901467,
+    "recordOffset": 504885073,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Compatibility Note: Any default values that are not explicitly defined in the <applicationPoolDefaults> collection will still inherit the default values in the IIS 7 and later schema, and individual application pool settings override any default values. The <applicationPoolDefaults> collection of the <applicationPools> collection configures default values for all application pools on a Web server. Overview Sample Code Configuration How To Setup Compatibility Overview Application Pool Defaults <applicationPoolDefaults> HomeConfiguration Referencesystem.applicationHostapplicationPoolsapplicationPoolDefaults Forums Blogs More Help Resources Ask a Question in our Forums Get Help: Web Platform Installer WebMatrix Windows Internet Explorer Expression Studio Visual Studio Tools Microsoft Azure Web App Gallery SQL Server Windows Server Media PHP ASP.NET .NET Framework Technologies Solutions Reference Learn Downloads Home IIS Search Join Sign In",
+    "textAfterTable": "Setup The <applicationPools> collection is included in the default installation of IIS 7 and later. How To How to set up application pool defaults Open Internet Information Services (IIS) Manager: If you are using Windows Server 2012 or Windows Server 2012 R2: On the taskbar, click Server Manager, click Tools, and then click Internet Information Services (IIS) Manager. If you are using Windows 8 or Windows 8.1: Hold down the Windows key, press the letter X, and then click Control Panel. Click Administrative Tools, and then double-click Internet Information Services (IIS) Manager. If you are using Windows Server 2008 or Windows Server 2008 R2: On the taskbar, click Start, point to Administrative Tools, and then click Internet Information Services (IIS) Manager. If you are using Windows Vista or Windows 7: On the taskbar, click Start, and then click Control Panel. Double-click Administrative Tools, and then double-click Internet Information Services (IIS) Manager. In the Connections pane, expand the server name, and then click Application Pools. In the Actions pane, click Set Application Pool Defaults... On the Application Pool Defaults dialog box, specify your desired options. When you have finished specifying your settings, click OK. Configuration Attributes Attribute Description autoStart Optional Boolean attribute. When true, indicates",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

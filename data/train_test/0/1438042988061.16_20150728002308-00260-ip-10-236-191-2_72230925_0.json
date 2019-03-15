@@ -1,0 +1,63 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "httpbind.pool.nodeId",
+            "httpbind.pool.support",
+            "httpbind.config",
+            "httpbind.content_type",
+            "httpbind.hold",
+            "httpbind.inactivity",
+            "httpbind.log4j.config",
+            "httpbind.polling",
+            "httpbind.requests",
+            "httpbind.round_trip_delay",
+            "httpbind.wait_time"
+        ],
+        [
+            "Default Value",
+            "N/A",
+            "false",
+            "N/A",
+            "text/xml; charset=utf-8",
+            "N/A",
+            "180",
+            "N/A",
+            "1 (second)",
+            "2",
+            "1 (second)",
+            "120 (seconds)"
+        ],
+        [
+            "Description",
+            "If httpbind.pool.support is set to true, this parameter specifies the full URL for the server node in the server pool. This URL should not point to a load balancer, but to an Instant Messaging server instance.",
+            "This parameter defines whether or not the gateway is in a server pool deployment. If no httpbind.pool.nodeId is specified, the value for this parameter is set to false. The value for this parameter can be: true \u2013 the gateway is part of a server pool deployment. In addition, enable, on, yes, and 1 are also valid values. If you set this parameter to true, you must provide a value for httpbind.pool.nodeId. false \u2013 (default) the gateway is not part of a server pool deployment. Leaving the value blank (empty string) is also a valid value.",
+            "Contains a comma-separated list of ID keys, or gwdomain-id, which the gateway uses as a configuration key to determine which domains, hosts, host passwords, and component JIDs the gateway should use. See Table B\u20132 for more information on ID keys.",
+            "The default value for the content-type HTTP header the gateway uses when sending a response back to the client.",
+            "Specifies the maximum permissible value for the hold attribute in the client request as defined in JEP 124. If the client specifies a value higher than the gateway in the request, the gateway's value will be used. Otherwise, the value in the client request will be used.",
+            "The maximum time in seconds of client inactivity after which the gateway will terminate the connection to the client.",
+            "The location of the log4j configuration file the gateway will use for logging. If you leave this parameter blank, then logging for the gateway is turned off. The logger name is \u201chttpbind\u201d (log4j.logger.httpbind).",
+            "The minimum time, in seconds, a client must wait before sending another request.",
+            "The number of concurrent requests a client can make to the gateway. If the value of this parameter is less than the value for the JEP 124 hold attribute in the client request, the value for this parameter will be set to hold+1. Do not set this parameter to 1, as doing so could severely degrade performance. See httpbind.hold for more information.",
+            "The amount of time, in seconds, to allow in addition to time-outs for round trips to account for network latencies. Setting this value too high may degrade performance.",
+            "The default time, in seconds, within which the gateway will send a response to the client. If the client wait time is set to a value higher than the gateway wait time, the gateway's wait time is used."
+        ]
+    ],
+    "pageTitle": "Appendix\u00a0B Instant Messaging XMPP/HTTP Gateway Configuration Parameters in httpbind.conf (Sun Java System Instant Messaging 7.2 Administration Guide)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19893-01/819-4412/gbopw/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00260-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72239127,
+    "recordOffset": 72230925,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 27 Jan 2011 07:12:53 GMT",
+    "textBeforeTable": "httpbind.conf Table B\u20131 XMPP/HTTP Gateway Configuration Parameters in Table B\u20131 describes the configuration parameters in httpbind.conf. Instant Messaging XMPP/HTTP Gateway Configuration Parameters The httpbind.conf file is initialized by the configure utility and should be modified only as described in this guide. Note \u2013 If you make changes to httpbind.conf, you must refresh the gateway's web container in order for the new configuration settings to take effect. Within a value, if any special characters like comma, space, newline, tab, double quotes, or backslash are present, the entire value needs to be within double quotes. In addition, every carriage return, line feed, tab, backslash, and double quotes within the value must specified with a backslash (\\). Multiple values in the value string are separated using commas (,). The key consists of all the characters in the line starting with the first non-whitespace character and up to the first ASCII equal sign (=) or semi-colon (;). If the key is terminated by a semi-colon, it is followed by \u201clang-\u201d and a tag that indicates the language in which this value is to be interpreted. The language tag is followed by an equal sign (=). All whitespace characters before and after the equal sign are ignored. All remaining characters on the line become part of the associated value string. Each line is terminated by a line terminator (\\n, \\r, or \\r\\n).",
+    "textAfterTable": "Gateway Domain ID Key Parameters for httpbind.config Table B\u20132 describes the keys used to define each ID in the httpbind.config parameter. In each key described in the table, gwdomain-id is a domain identifier specified in httpbind.config. Table B\u20132 httpbind.config ID Keys Key\u00a0 Description\u00a0 gwdomain-id.domains Comma-separated list of domains for this ID.\u00a0 gwdomain-id.hosts Space-separated list of hosts for this ID. Each of these hosts must be able to service the domains listed in gwdomain-id.domains. This list helps provide failover across the domains. If no explicit route host mentioned in the request, one of the hosts listed in this key will be used to service that request. gwdomain-id.componentjid The component JID to use to connect to the host. \u00a0 gwdomain-id.password The password to use to connect to the host. \u00a0 Previous: Appendix\u00a0A Instant Messaging Configuration Parameters in iim.conf Next: Appendix\u00a0C Instant Messaging imadmin Tool Reference",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

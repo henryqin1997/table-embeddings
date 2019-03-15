@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "6",
+            "13",
+            "20",
+            "27"
+        ],
+        [
+            "M",
+            "",
+            "7",
+            "14",
+            "21 (34)",
+            "28"
+        ],
+        [
+            "T",
+            "1",
+            "8",
+            "15",
+            "22 (17)",
+            "29 (10)"
+        ],
+        [
+            "W",
+            "2",
+            "9",
+            "16",
+            "23 (17)",
+            "30 (1)"
+        ],
+        [
+            "T",
+            "3",
+            "10",
+            "17",
+            "24 (11)",
+            "31"
+        ],
+        [
+            "F",
+            "4",
+            "11",
+            "18",
+            "25 (1)",
+            ""
+        ],
+        [
+            "S",
+            "5",
+            "12",
+            "19",
+            "26",
+            ""
+        ]
+    ],
+    "pageTitle": "Python API documentation generation tool / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/epydoc/mailman/epydoc-commits/?viewmonth=200608&viewday=22&style=flat",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988250.59/warc/CC-MAIN-20150728002308-00087-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 229119095,
+    "recordOffset": 229097068,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun \u00a0 May \u00a0 Apr \u00a0 Mar \u00a0 Feb (2) Jan \u00a0 2009 Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun \u00a0 May \u00a0 Apr \u00a0 Mar (5) Feb (102) Jan (40) 2008 Dec \u00a0 Nov (3) Oct (1) Sep (62) Aug \u00a0 Jul (7) Jun (1) May (1) Apr \u00a0 Mar (25) Feb (135) Jan (17) 2007 Dec (1) Nov",
+    "textAfterTable": "Showing 17 results of 17 Flat | Threaded [Epydoc-commits] SF.net SVN: epydoc: [1297] trunk/epydoc/src/epydoc/apidoc.py From: <edloper@us...> - 2006-08-22 21:46:30 Revision: 1297 Author: edloper Date: 2006-08-22 14:46:27 -0700 (Tue, 22 Aug 2006) ViewCVS: http://svn.sourceforge.net/epydoc/?rev=1297&view=rev Log Message: ----------- - optimized DottedName.contextualize() and DottedName.dominates() for speed (based on patch provided by Daniel von Dincklage) Modified Paths: -------------- trunk/epydoc/src/epydoc/apidoc.py Modified: trunk/epydoc/src/epydoc/apidoc.py =================================================================== --- trunk/epydoc/src/epydoc/apidoc.py\t2006-08-22 16:46:03 UTC (rev 1296) +++ trunk/epydoc/src/epydoc/apidoc.py\t2006-08-22 21:46:27 UTC (rev 1297) @@ -192,9 +192,15 @@ >>> DottedName('a.b').dominates(DottedName('a.b.c.d')) True \"\"\" - if strict and len(self._identifiers)==len(name._identifiers): + len_self = len(self._identifiers) + len_name = len(name._identifiers) + + if (len_self > len_name) or (strict and len_self == len_name): return False - return self._identifiers == name._identifiers[:len(self)] + # The following is redundant (the first clause is implied by + # the second), but is done as an optimization. + return ((self._identifiers[0] == name._identifiers[0]) and + self._identifiers == name._identifiers[:len_self]) def contextualize(self, context): \"\"\" @@ -217,6 +223,22 @@ else: return self + # Find the first index where self & context differ. + for i in range(min(len(context), len(self))): + if self._identifiers[i] != context._identifiers[i]: + first_difference = i + break + else: +",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

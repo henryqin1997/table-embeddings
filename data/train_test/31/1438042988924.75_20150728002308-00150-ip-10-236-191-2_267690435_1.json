@@ -1,0 +1,82 @@
+{
+    "relation": [
+        [
+            "Download",
+            "7.1.0.1 Windows",
+            "7.1.0.1 All Unix",
+            "7.1.1.6 & 7.1.2.3 Windows",
+            "7.1.1.6 & 7.1.2.3 All Unix",
+            "8.0 All Platforms",
+            "8.0.0.1 All Platforms",
+            "7.1.1.8 & 7.1.2.5 All Platforms",
+            "7.1.1.9 & 7.1.2.6 All Platforms",
+            "8.0.0.2 All Platforms"
+        ],
+        [
+            "RELEASE DATE",
+            "5 Feb 2009",
+            "5 Feb 2009",
+            "1 Nov 2011",
+            "1 Nov 2011",
+            "1 Dec 2011",
+            "29 Dec 2011",
+            "29 Dec 2011",
+            "30 Apr 2012",
+            "30 Apr 2012"
+        ],
+        [
+            "LANGUAGE",
+            "English",
+            "English",
+            "English",
+            "English",
+            "English",
+            "English",
+            "English",
+            "English",
+            "English"
+        ],
+        [
+            "SIZE(Bytes)",
+            "365568",
+            "365568",
+            "367616",
+            "367616",
+            "482962",
+            "482960",
+            "364013",
+            "362230",
+            "482959"
+        ],
+        [
+            "Download Options",
+            "FTP",
+            "FTP",
+            "FTP",
+            "FTP",
+            "FTP",
+            "FTP",
+            "FTP",
+            "FTP",
+            "FTP"
+        ]
+    ],
+    "pageTitle": "IBM Rational ClearCase Remote Client Command Line Interface (CCRC CLI) - United States",
+    "title": "",
+    "url": "http://www-01.ibm.com/support/docview.wss?rs=984&context=SSSH27&dc=D400&uid=swg24021929&loc=en_US&cs=UTF-8&lang=en&rss=ct984rational",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988924.75/warc/CC-MAIN-20150728002308-00150-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 267708015,
+    "recordOffset": 267690435,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{28119=2012-04-30}",
+    "lastModified": "Fri, 21 Dec 2012 09:39:41 GMT",
+    "textBeforeTable": "By downloading, installing, copying, accessing or using this feature, you agree to the terms of the license agreement provided below. If you do not agree to these terms, do not download, install, copy, access, or use this feature. Note: Use All Unix download to setup CCRC CLI on Unix and Linux platforms. Download package Back to top Checkout command with option reserve (co -reserve) performs checkout as unreserved when version-controlled element is already checked out reserved. CCRC CLI may not work on a Windows system on which a platform emulator such as Cygwin or MKS are installed. when running rcleartool.bat a user may receive the error: unable to access \"com.ibm.rational.teamapi_\": The system cannot find the file specified. The problem occurs due to the presence of the find command in both Windows and the platform emulator. To avoid this issue, ensure that the Windows system path specified by PATH precedes the platform emulator path as rcleartool needs to find the operating system find.exe first. This problem can also be avoided by making the following change to rcleartool.bat entry: (line may wrap) for /f \"delims=/ tokens=1,*\" %%i in ('dir /AD/OD/b \"%CCSHARED%\\plugins\"^|find \"com.ibm.rational.teamapi_\"') do Set CMAPIFOLDER=%%i replace with",
+    "textAfterTable": "Disclaimer(s) ftp://public.dhe.ibm.com/software/rational/clearcase/ccrccli/licenses/en.html Product Alias/Synonym CCRCCLI Document information More support for: Rational ClearCase ClearCase Remote Client Software version: 7.1, 7.1.0.1, 7.1.0.2, 7.1.1, 7.1.1.1, 7.1.1.2, 7.1.1.3, 7.1.1.8, 7.1.1.9, 7.1.2, 7.1.2.1, 7.1.2.2, 7.1.2.3, 7.1.2.4, 7.1.2.5, 7.1.2.6, 8.0, 8.0.0.1, 8.0.0.2 Operating system(s): AIX, HP-UX, Linux, Solaris, Windows Reference #: 4021929 Modified date: 2012-04-30 Translate my page Machine Translation",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

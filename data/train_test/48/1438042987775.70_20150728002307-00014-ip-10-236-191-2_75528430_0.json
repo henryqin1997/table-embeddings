@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Message Body Type",
+            "StreamMessage",
+            "MapMessage",
+            "TextMessage",
+            "ObjectMessage",
+            "BytesMessage",
+            "Message"
+        ],
+        [
+            "Description",
+            "A message whose body contains a stream of Java primitive values. It is filled and read sequentially.",
+            "A message whose body contains a set of name-value pairs. The order of entries is not defined.",
+            "A message whose body contains a Java string, for example an XML message.",
+            "A message whose body contains a serialized Java object.",
+            "A message whose body contains a stream of uninterpreted bytes.",
+            "A message that contains a header and properties but no body."
+        ]
+    ],
+    "pageTitle": "Message Body (Sun GlassFish Message Queue 4.4 Technical Overview)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19587-01/821-0028/aerbs/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987775.70/warc/CC-MAIN-20150728002307-00014-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 75536632,
+    "recordOffset": 75528430,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 27 Jan 2011 01:34:19 GMT",
+    "textBeforeTable": "Table\u00a02\u20134 Message Body Types The JMS message body type determines what the body may contain and how it should be processed by the consumer, as specified in Table\u00a02\u20134. The Session object includes a create method for each type of message body. The message body contains the data that clients want to exchange. Message Body Next: Producing a Message Previous: Message Properties Sun GlassFish Message Queue 4.4 Technical Overview Messages \u00a0> Message Body Programming Objects \u00a0> Chapter\u00a02 Client Programming Model \u00a0> Sun GlassFish Message Queue 4.4 Technical Overview \u00a0> Documentation Home \u00a0>",
+    "textAfterTable": "Java clients can set a property to have the client runtime compress the body of a message being produced. The Message Queue runtime on the consumer side decompresses the message before delivering it. Previous: Message Properties Next: Producing a Message \u00a9 2010, Oracle Corporation and/or its affiliates",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

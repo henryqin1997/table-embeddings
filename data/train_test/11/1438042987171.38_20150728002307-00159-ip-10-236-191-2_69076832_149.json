@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Host",
+            "Solaris",
+            "HP",
+            "Linux",
+            "HP Tru64",
+            "IBM AIX",
+            "Windows"
+        ],
+        [
+            "Data Source",
+            "/etc/mnttab file entries",
+            "bdf command",
+            "df command",
+            "df command",
+            "/etc/mnttab file entries",
+            "not available"
+        ]
+    ],
+    "pageTitle": "Host",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E24628_01/em.121/e25162/host.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 149,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00159-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 69163843,
+    "recordOffset": 69076832,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{667051=SNMP MIB object: PCIDeviceStatus (1.3.6.1.4.1.674.10892.1.1100.80.1.5), 814476=SNMP MIB object: remoteAccessVersionInfoName (1.3.6.1.4.1.674.10892.1.1700.10.1.9), 843245=This metric displays 1 or 0. 1 indicates if any of the virtual switch (VSW) or virtual network (VNET) network devices have an maximum transmission unit (MTU) greater than 1500., 1120432=Logical devices virtual disk rollup status code(Object identifier:1.3.6.1.4.1.674.10893.1.20.140.1.1.19) is %value%, crossed warning (%warning_threshold%) or critical (%critical_threshold%) threshold.Status message is %VirtualDiskRollUpStatus%, 757182=SNMP MIB object: processorDeviceStatus (1.3.6.1.4.1.674.10892.1.1100.30.1.5), 661789=SNMP MIB object: pCIDeviceManufacturerName (1.3.6.1.4.1.674.10892.1.1100.80.1.8), 758648=SNMP MIB object: processorDeviceCurrentSpeed (1.3.6.1.4.1.674.10892.1.1100.30.1.12), 813056=SNMP MIB object: remoteAccessStatus (1.3.6.1.4.1.674.10892.1.1700.10.1.6), 802896=SNMP MIB object: remoteAccessNICCurrentIPAddress (1.3.6.1.4.1.674.10892.1.1700.10.1.30), 750721=SNMP MIB object: processorDeviceFamily (1.3.6.1.4.1.674.10892.1.1100.30.1.10), 660393=SNMP MIB object: pCIDeviceDescriptionName (1.3.6.1.4.1.674.10892.1.1100.80.1.9), 808663=SNMP MIB object: remoteAccessStateSettings (1.3.6.1.4.1.674.10892.1.1700.10.1.5), 812614=Status of Remote Access Card(Object identifier:1.3.6.1.4.1.674.10892.1.1700.10.1.6) is %value%, crossed warning (%warning_threshold%) or critical (%critical_threshold%) threshold.Status message is %RACStatus%., 760037=SNMP MIB object: processorDeviceVersionName (1.3.6.1.4.1.674.10892.1.1100.30.1.16), 671441=Physical devices array disk rollup status code(Object identifier:1.3.6.1.4.1.674.10893.1.20.130.4.1.23) is %value%, crossed warning (%warning_threshold%) or critical (%critical_threshold%) threshold.Status message is %ArrayDiskRollUpStatus%, 676012=Status of physical devices controller(Object identifier:1.3.6.1.4.1.674.10893.1.20.130.1.1.37) is %value%, crossed warning (%warning_threshold%) or critical (%critical_threshold%) threshold.Status message is %ControllerRollUpStatus%, 892722=Status of Global Storage management data group(Object identifier:1.3.6.1.4.1.674.10893.1.20.110.13) is %value%, crossed warning (%warning_threshold%) or critical (%critical_threshold%) threshold.Status message is %AgentGlobalSystemStatus%, 458967=SNMP MIB object: memoryDeviceStatus (1.3.6.1.4.1.674.10892.1.1100.50.1.5), 799875=SNMP MIB object: remoteAccessNICCurrentInfoFromDHCP (1.3.6.1.4.1.674.10892.1.1700.10.1.33), 752125=SNMP MIB object: processorDeviceManufacturerName (1.3.6.1.4.1.674.10892.1.1100.30.1.8), 468909=SNMP MIB object: memoryDeviceSize (1.3.6.1.4.1.674.10892.1.1100.50.1.14), 807246=SNMP MIB object: remoteAccessProductInfoName (1.3.6.1.4.1.674.10892.1.1700.10.1.7), 804328=SNMP MIB object: remoteAccessLANSettings (1.3.6.1.4.1.674.10892.1.1700.10.1.15), 466286=Status of Memory(Object identifier:1.3.6.1.4.1.674.10892.1.1100.50.1.5) at bank location %MemoryBankLocation% and location %MemoryLocation% is %value%, crossed warning (%warning_threshold%) or critical (%critical_threshold%) threshold. Status message is %MemoryStatus%, 801386=SNMP MIB object: remoteAccessNICCurrentGatewayAddress (1.3.6.1.4.1.674.10892.1.1700.10.1.32), 665741=Status of PCIDevice(Object identifier:1.3.6.1.4.1.674.10892.1.1100.80.1.5) is %PCIDeviceIndex% in chassis %ChassisIndex% is %value%, crossed warning (%warning_threshold%) or critical (%critical_threshold%) threshold.Status message is %PCIDeviceStatus%}",
+    "lastModified": "Wed, 22 Jul 2015 23:21:40 GMT",
+    "textBeforeTable": "The data sources for this metric include the following: Data Source Buffer Cache Read Hit Ratio %value%%% , has crossed warning (%warning_threshold%) or critical (%critical_threshold%) threshold. Not Defined Not Defined Every 5 Minutes All Versions Alert Text Default Critical Threshold Default Warning Threshold Evaluation and Collection Frequency Target Version Table 2-1 Metric Summary Table This metric represents the number of reads from block devices to buffer cache as a percentage of all buffer reads. 2.4.1 Buffer Cache Read Hit Ratio (%) The Buffer Activity metric category provides information about OS memory buffer usage. This metric reports buffer activity for transfers, accesses, and cache (kernel block buffer cache) hit ratios per second. 2.4 Buffer Activity Battery reading code(Object identifier:1.3.6.1.4.1.674.10892.1.600.50.1.6) is %value%, crossed warning (%warning_threshold%) or critical (%critical_threshold%) threshold.Status message is %BatteryReading%",
+    "textAfterTable": "This metric represents the number of reads performed on the buffer cache per second. Table 2-2 Metric Summary Table Target Version Evaluation and Collection Frequency Default Warning Threshold Default Critical Threshold Alert Text All versions Every 5 Minutes Not Defined Not Defined Buffer Cache Reads (per second) is %value% , crossed warning (%warning_threshold% ) or critical (%critical_threshold% ) threshold. Data Source The data sources for this metric include the following: Host Data Source Solaris sar command HP sar command IBM AIX sar command User Action Specific to your site. 2.4.3 Buffer Cache Write Hit Ratio (%) This",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

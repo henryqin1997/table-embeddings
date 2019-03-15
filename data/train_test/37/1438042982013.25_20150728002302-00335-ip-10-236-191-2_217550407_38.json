@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "MySQL Support",
+            "Active Persistent Links",
+            "Active Links",
+            "Client API version",
+            "MYSQL_MODULE_TYPE",
+            "MYSQL_SOCKET",
+            "MYSQL_INCLUDE",
+            "MYSQL_LIBS"
+        ],
+        [
+            "enabled",
+            "0",
+            "0",
+            "5.5.42-37.1",
+            "external",
+            "/var/lib/mysql/mysql.sock",
+            "-I/usr/include/mysql",
+            "-L/usr/lib64 -lmysqlclient"
+        ]
+    ],
+    "pageTitle": "phpinfo()",
+    "title": "",
+    "url": "http://sdmba.com/viewforum.php?f=17",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 38,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982013.25/warc/CC-MAIN-20150728002302-00335-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 217566019,
+    "recordOffset": 217550407,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "",
+    "textAfterTable": "Loaded Configuration File /opt/php52/lib/php.ini Scan this dir for additional .ini files (none) additional .ini files parsed (none) PHP API 20041225 PHP Extension 20060613 Zend Extension 220060519 Debug Build no Thread Safety disabled Zend Memory Manager enabled IPv6 Support enabled Registered PHP Streams https, ftps, compress.zlib, compress.bzip2, php, file, data, http, ftp, zip Registered Stream Socket Transports tcp, udp, unix, udg, ssl, sslv3, sslv2, tls Registered Stream Filters zlib.*, bzip2.*, convert.iconv.*, string.rot13, string.toupper, string.tolower, string.strip_tags, convert.*, consumed This program makes use of the Zend Scripting Language Engine: Zend\u00a0Engine\u00a0v2.2.0,\u00a0Copyright\u00a0(c)\u00a01998-2010\u00a0Zend\u00a0Technologies \u00a0\u00a0\u00a0\u00a0with\u00a0the\u00a0ionCube\u00a0PHP\u00a0Loader\u00a0v5.0.12,\u00a0Copyright\u00a0(c)\u00a02002-2015,\u00a0by\u00a0ionCube\u00a0Ltd. \u00a0\u00a0\u00a0\u00a0with\u00a0Zend\u00a0Optimizer\u00a0v3.3.9,\u00a0Copyright\u00a0(c)\u00a01998-2009,\u00a0by\u00a0Zend\u00a0Technologies Configuration PHP Core Directive Local Value Master Value allow_call_time_pass_reference On On allow_url_fopen On On allow_url_include On On always_populate_raw_post_data Off Off arg_separator.input & & arg_separator.output & &",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

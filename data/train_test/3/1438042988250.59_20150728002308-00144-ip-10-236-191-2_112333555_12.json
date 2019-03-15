@@ -1,0 +1,111 @@
+{
+    "relation": [
+        [
+            "Select Type",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE"
+        ],
+        [
+            "Table",
+            "featured",
+            "thread",
+            "user",
+            "post",
+            "featuredbyuser",
+            "node",
+            "permission"
+        ],
+        [
+            "Type",
+            "ALL",
+            "eq_ref",
+            "eq_ref",
+            "eq_ref",
+            "eq_ref",
+            "eq_ref",
+            "eq_ref"
+        ],
+        [
+            "Possible Keys",
+            "",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY"
+        ],
+        [
+            "Key",
+            "",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY"
+        ],
+        [
+            "Key Len",
+            "",
+            "4",
+            "4",
+            "4",
+            "4",
+            "4",
+            "35"
+        ],
+        [
+            "Ref",
+            "",
+            "jfuqua_xenforo.featured.thread_id",
+            "jfuqua_xenforo.thread.user_id",
+            "jfuqua_xenforo.thread.first_post_id",
+            "jfuqua_xenforo.featured.featured_by_user_id",
+            "jfuqua_xenforo.thread.node_id",
+            "const,const,jfuqua_xenforo.thread.node_id"
+        ],
+        [
+            "Rows",
+            "3",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Extra",
+            "Using filesort",
+            "",
+            "Using where",
+            "Using where",
+            "",
+            "Using where",
+            "Using where"
+        ]
+    ],
+    "pageTitle": "XenForo Debug Output",
+    "title": "",
+    "url": "http://gotitans.com/forums/other-sports.19/page-5?order=post_date&_debug=1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 12,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988250.59/warc/CC-MAIN-20150728002308-00144-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 112341757,
+    "recordOffset": 112333555,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Fri, 31 Jul 2015 11:30:13 GMT",
+    "textBeforeTable": "Run Time: 0.001418 WHERE data_key IN ('options', 'languages', 'contentTypes', 'codeEventListeners', 'deferredRun', 'simpleCache', 'addOns', 'defaultStyleProperties', 'routesPublic', 'routeFiltersIn', 'routeFiltersOut', 'nodeTypes', 'bannedIps', 'discouragedIps', 'styles', 'displayStyles', 'userBanners', 'smilies', 'bbCode', 'threadPrefixes', 'trophyUserTitles', 'reportCounts', 'moderationCounts', 'userModerationCounts', 'notices', 'userFieldsInfo') FROM xf_data_registry SELECT data_key, data_value   Queries (21, time: 0.0419s, 18.6%) Memory: 16.1158 MB (Peak: 18.5082 MB) Page Time: 0.2257s",
+    "textAfterTable": "Rows Extra SIMPLE event range category_date_edit category_date_edit 4 \u00a0 167 Using index condition; Using where; Using filesort SIMPLE category eq_ref PRIMARY PRIMARY 4 jfuqua_xenforo.event.category_id 1 \u00a0 SIMPLE user eq_ref PRIMARY PRIMARY 4 jfuqua_xenforo.event.user_id 1 \u00a0 SIMPLE user_profile eq_ref PRIMARY PRIMARY 4 jfuqua_xenforo.event.user_id 1 \u00a0  SELECT event.* , category.*, user.*, user_profile.*, IF(user.username IS NULL, event.username, user.username) AS username FROM xf_nflj_sportsbook_event AS event LEFT JOIN xf_nflj_sportsbook_category AS category ON (category.category_id = event.category_id) LEFT JOIN xf_user AS user ON (user.user_id = event.user_id) LEFT JOIN xf_user_profile AS user_profile ON (user_profile.user_id = event.user_id) WHERE (event.category_id IN ('1')) AND (event.event_status IN ('open','closed')) ORDER BY event.date_edit DESC LIMIT 5 Run Time: 0.001650 Select Type Table Type Possible Keys Key Key Len Ref Rows Extra SIMPLE event range category_date_edit category_date_edit 4 \u00a0 167 Using where SIMPLE category eq_ref PRIMARY PRIMARY 4 jfuqua_xenforo.event.category_id 1 \u00a0 SIMPLE user eq_ref PRIMARY PRIMARY 4 jfuqua_xenforo.event.user_id 1 \u00a0 SIMPLE user_profile eq_ref PRIMARY PRIMARY 4 jfuqua_xenforo.event.user_id 1 \u00a0  SELECT event.* , category.*, user.*, user_profile.*, IF(user.username IS NULL, event.username, user.username) AS username FROM xf_nflj_sportsbook_event AS event LEFT JOIN xf_nflj_sportsbook_category AS category ON (category.category_id = event.category_id) LEFT JOIN xf_user AS user ON (user.user_id = event.user_id) LEFT JOIN xf_user_profile AS user_profile ON (user_profile.user_id = event.user_id) WHERE (event.category_id IN ('1')) AND (event.event_status = 'open') ORDER BY event.date_create DESC LIMIT 5 Run Time: 0.001424",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

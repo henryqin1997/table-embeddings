@@ -1,0 +1,67 @@
+{
+    "relation": [
+        [
+            "Code or Value",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "."
+        ],
+        [
+            "Value Description",
+            "Not Done",
+            "Normal",
+            "Positive",
+            "Insufficient",
+            "Unreliable",
+            "Missing"
+        ],
+        [
+            "Count",
+            "535",
+            "2414",
+            "260",
+            "77",
+            "577",
+            "0"
+        ],
+        [
+            "Cumulative",
+            "535",
+            "2949",
+            "3209",
+            "3286",
+            "3863",
+            "3863"
+        ],
+        [
+            "Skip to Item",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "NHANES 2007 - 2008: Ophthalmology - Frequency Doubling Technology Data Documentation, Codebook, and Frequencies",
+    "title": "",
+    "url": "http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/OPXFDT_E.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 10,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987034.19/warc/CC-MAIN-20150728002307-00052-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 351507303,
+    "recordOffset": 351481101,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{58551=Title: Ophthalmology - Frequency Doubling Technology (OPXFDT_E ) Contact Number: 1-866-441-NCHS Years of Content: 2007 - 2008 First Published: January, 2010 Revised: NA Access Constraints: None Use Constraints: None Geographic Coverage: National Subject:Frequency Doubling Technology Visual Field Perimetry, ophthalmology, visual field loss Record Source: NHANES 2007 - 2008 Survey Methodology: NHANES 2007 - 2008 is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S. Medium: NHANES Web site; SAS transport files}",
+    "lastModified": "Fri, 09 May 2014 20:25:00 GMT",
+    "textBeforeTable": "Both males and females 40 YEARS - 150 YEARS Target: FDT STATUS English Text: FDT Exam Status SAS Label: OPASCST1 Variable Name: OPASCST1 - FDT Exam Status Both males and females 40 YEARS - 150 YEARS Target: Respondent sequence number. English Text: Respondent sequence number SAS Label: SEQN Variable Name: SEQN - Respondent sequence number Codebook and Frequencies National Center for Health Statistics. Ophthalmology Procedures Manual Guidelines are available on the NHANES website. National Center for Health Statistics. NHANES Analytic Guidelines are available on the NHANES website. Humphrey\u00ae Matrix\u2122 Visual Field Instrument User\u2019s Guide, Carl Zeiss Meditec, Inc., Dublin, California, USA. REV, A 4/30/2003 PN 112738 http://www.meditec.zeiss.com [Accessed on: 6/11/2009] References Exam sample weights should be used for analyses. Please refer to the Analytic Guidelines for further details on the use of sample weights and other analytic issues (National Center for Health Statistics, NHANES Analytic Guidelines). The Analytic Guidelines are available on the NHANES website. Various algorithms may be used to define visual field loss. For this data release file, the 2-2-1 algorithm incorporating the reliability indices defined persons as normal or positive or having insufficient or",
+    "textAfterTable": "FDT Exam Status Comment English Text: Reason for a Partial or Not Done Exam Target: Both males and females 40 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 1 Safety exclusion 6 6 2 SP refusal 36 42 3 No time 18 60 4 Physical limitation 99 159 5 Communication problem 43 202 6 Equipment failure 10 212 7 SP ill/emergency 9 221 12 Eye specific limitation 62 283 14 Interrupted 2 285 40 Unable to follow protocol 15 300 56 Came late/left early 315 615 72 Error (technician/software/supply) 3 618",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

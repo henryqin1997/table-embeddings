@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Device> enable",
+            "configure terminal Example: Device# configure terminal",
+            "interface type number Example: Device(config)# interface GigabitEthernet 0/0/0",
+            "no shut Example: Device(config)# no shut",
+            "no ipv6 next-hop-self eigrp as-number Example: Device(config-if)# no ipv6 next-hop-self eigrp 1"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Specifies the interface on which EIGRP is configured.",
+            "Enables no shut mode so the routing process can start running.",
+            "Changes the default IPv6 next-hop value and instructs EIGRP to use the received next-hop value."
+        ]
+    ],
+    "pageTitle": "IP Routing: EIGRP Configuration Guide, Cisco IOS XE Release 3S (Cisco ASR 1000) - IPv6 Routing: EIGRP Support [Support] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_eigrp/configuration/xe-3s/asr1000/ire-xe-3s-asr1000-book/ip6-route-eigrp-xe.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 6,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044160065.87/warc/CC-MAIN-20150728004240-00065-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 370197455,
+    "recordOffset": 370169433,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "DETAILED STEPS 11.\u00a0\u00a0\u00a0 show ipv6 eigrp [as-number] interfaces [type number] [as-number] 10.\u00a0\u00a0\u00a0 exit 9.\u00a0\u00a0\u00a0 router-id {ip-address | ipv6-address 8.\u00a0\u00a0\u00a0 ipv6 router eigrp as-number 7.\u00a0\u00a0\u00a0 ipv6 eigrp as-number 6.\u00a0\u00a0\u00a0 ipv6 enable 5.\u00a0\u00a0\u00a0 no shut 4.\u00a0\u00a0\u00a0 interface type number 3.\u00a0\u00a0\u00a0 ipv6 unicast-routing 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS EIGRP for IPv6 is directly configured on the interfaces over which it runs, which allows EIGRP for IPv6 to be configured without the use of a global IPv6 address. Enabling EIGRP for IPv6 on an Interface Deleting Entries from EIGRP for IPv6 Routing Tables",
+    "textAfterTable": "Step\u00a06 ipv6 enable Example:  Device(config-if)# ipv6 enable \u00a0 Enables IPv6 processing on an interface that has not been configured with an explicit IPv6 address. \u00a0 Step\u00a07 ipv6 eigrp as-number Example:  Device(config-if)# ipv6 eigrp 1 \u00a0 Enables EIGRP for IPv6 on a specified interface. \u00a0 Step\u00a08 ipv6 router eigrp as-number Example:  Device(config-if)# ipv6 router eigrp 1 \u00a0 Enters router configuration mode and creates an EIGRP IPv6 routing process. \u00a0 Step\u00a09 router-id {ip-address | ipv6-address Example:  Device(config-router)# router-id 10.1.1.1 \u00a0 Enables the use of a fixed router ID. Use this command only if an IPv4 address is not defined on the router eligible for router ID. \u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

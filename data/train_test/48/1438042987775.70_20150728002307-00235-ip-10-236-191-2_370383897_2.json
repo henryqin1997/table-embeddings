@@ -1,0 +1,47 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5",
+            "Step 6"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Device> enable",
+            "configure terminal Example: Device# configure terminal",
+            "router ospfv3 process-id Example: Device(config)# router ospfv3 1",
+            "area area-id filter-list prefix prefix-list-name {in | out} Example: Device(config-router)# area 1 filter-list prefix test_ipv6 out",
+            "end Example: Device(config-router)# end",
+            "ipv6 prefix-list list-name [seq seq-number] {deny ipv6-prefix/prefix-length | permit ipv6-prefix/prefix-length | description text} [ge ge-value] [le le-value] Example: Device(config)# ipv6 prefix-list test_ipv6 seq 5 permit 2011::1/128"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Configures the router to run an OSPFv3 process.",
+            "Configures the router to filter interarea routes out of the specified area.",
+            "Returns to global configuration mode.",
+            "Creates a prefix list with the name specified for the list-name argument."
+        ]
+    ],
+    "pageTitle": "IP Routing: OSPF Configuration Guide, Cisco IOS Release 15S - OSPFv3 ABR Type 3 LSA Filtering [Cisco IOS 15.5S] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/iproute_ospf/configuration/15-s/iro-15-s-book/iro-afsupport-v3.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987775.70/warc/CC-MAIN-20150728002307-00235-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 370399816,
+    "recordOffset": 370383897,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "DETAILED STEPS 6.\u00a0\u00a0\u00a0 ipv6 prefix-list list-name [seq seq-number] {deny ipv6-prefix/prefix-length | permit ipv6-prefix/prefix-length | description text} [ge ge-value] [le le-value] 5.\u00a0\u00a0\u00a0 end 4.\u00a0\u00a0\u00a0 area area-id filter-list prefix prefix-list-name {in | out} 3.\u00a0\u00a0\u00a0 router ospfv3 process-id 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS Configuring Area Filter Support for OSPFv3 How to Configure OSPFv3 ABR Type 3 LSA Filtering The Area Filter Support feature gives the administrator improved control of route distribution between OSPFv3 areas. OSPFv3 area filters allow the filtering of inter-area prefix LSAs on the ABRs. The filter, based on IPv6 prefix lists, can be applied in both directions. In the \u201cin\u201d direction, it filters out the LSAs coming from all other areas when sending the inter-area prefix LSAs into the specified area. In the \u201cout\u201d direction, it filters out the inter-area prefix",
+    "textAfterTable": "Configuration Examples for OSPFv3 ABR Type 3 LSA Filtering Example: Area Filter Support for OSPFv3 The following example shows how to configure Area Filter Support for OSPFv3: router ospfv3 1 ! address-family ipv4 unicast area 2 filter-list prefix test_ipv4 in exit-address-family ! address-family ipv6 unicast area 2 filter-list prefix test_ipv6 in exit-address-family ! ip prefix-list test_ipv4 seq 5 permit 2.2.2.2/32 ! ! ipv6 prefix-list test_ipv6 seq 5 deny 2011::1/128 Additional References for OSPFv3 ABR Type 3 LSA Filtering Related Documents Related Topic Document Title Configuring OSPF \u201cConfiguring OSPF\u201d OSPF commands Cisco IOS IP Routing: OSPF Command Reference Cisco IOS master command list, all releases Cisco IOS Master Command List, All Releases",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

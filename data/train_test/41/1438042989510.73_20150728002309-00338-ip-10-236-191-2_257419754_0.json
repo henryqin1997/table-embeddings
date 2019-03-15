@@ -1,0 +1,72 @@
+{
+    "relation": [
+        [
+            "Milestone",
+            "M1",
+            "M2",
+            "M3",
+            "M4",
+            "M5",
+            "M6",
+            "M7"
+        ],
+        [
+            "Date",
+            "May 9, 2010",
+            "May 23, 2010",
+            "June 20, 2010",
+            "July 4, 2010",
+            "July 25, 2010",
+            "August 8, 2010",
+            "August 14, 2010"
+        ],
+        [
+            "Planned items",
+            "A Research on the Hudson CI Server, Hudson Remote API and API access.",
+            "Set up basic mylyn connector infrastructure. Integrated basic functions of the Hudson API.",
+            "Implementing features to monitor the build status in Eclipse and basic detail view as well as running a build from within Eclipse",
+            "Polish detail view (view console output).",
+            "Add function for adding a build description and build deletion. View JUnit tests from a build. Add a new task based on a failed build.",
+            "Possible improve Mylyn/Build by providing code for common functionality.",
+            "Completing Documentation."
+        ],
+        [
+            "Status",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Bugzilla Entry",
+            "bug 312928 bug 314770",
+            "bug 317384 bug 315151 bug 317767",
+            "bug 315717 bug 315151 bug 318228 bug 317768 bug 319644 bug 318103 bug 319340",
+            "bug 321192",
+            "bug 321191",
+            "N/A",
+            "N/A"
+        ]
+    ],
+    "pageTitle": "Mylyn/Hudson Integration for Mylyn - Eclipsepedia",
+    "title": "",
+    "url": "http://wiki.eclipse.org/Mylyn/Hudson_Integration_for_Mylyn",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989510.73/warc/CC-MAIN-20150728002309-00338-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 257435710,
+    "recordOffset": 257419754,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{11741=Copyright \u00a9 2014 The Eclipse Foundation. All Rights Reserved., 7867=This page was last modified 04:28, 29 July 2010 by Markus Knittig. Based on work by Harshana Eranga Martin.}",
+    "lastModified": "Tue, 30 Dec 2014 14:52:36 GMT",
+    "textBeforeTable": "Schedule Build log Code changes (depends on Mylyn SCM) Tests (JUnit) Summary Specialized task view for builds with the following parts Flat or hierarchical -> probably both A builds view (See Bamboo and Cruise) The common builds API should consist of at least the following components: Common Builds API The project will consume the Hudson API via REST/XML with JAXB as marshaller (using the provided xml schemas). Remote API The project namespace will be org.eclipse.mylyn.hudson. The namespace for common build infrastructure will be org.eclipse.mylyn.builds. Package structure Details Adding a task from a failed build in Eclipse Viewing a build log in Eclipse Viewing test results in Eclipse Running a build from within Eclipse Viewing build details in Eclipse Monitoring build statuses in Eclipse The goal of this projects is to integrate Hudson with Mylyn. It will be part of Mylyn/Build after the restructuring of Mylyn. It should provided the following features: About 3 Schedule 2.3 Common Builds API 2.2 Remote API 2.1 Package structure",
+    "textAfterTable": "Category: SOC Retrieved from \" http://wiki.eclipse.org/index.php?title=Mylyn/Hudson_Integration_for_Mylyn&oldid=213331\" This page was last modified 04:28, 29 July 2010 by Markus Knittig. Based on work by Harshana Eranga Martin. This page has been accessed 11,047 times. Back to the top Eclipse Foundation About us Contact Us Donate Governance Logo and Artwork Board of Directors Legal Privacy Policy Terms of Use Copyright",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

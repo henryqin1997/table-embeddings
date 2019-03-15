@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Pin",
+            "1 & 2",
+            "3 & 4",
+            "5",
+            "6",
+            "7+"
+        ],
+        [
+            "Usage",
+            "First button",
+            "Second button",
+            "+12V continuous power",
+            "Ground",
+            "Unused"
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Dooropener\" - Whitespace (Hackerspace Gent)",
+    "title": "",
+    "url": "http://0x20.be/smw/index.php?title=Dooropener&diff=1024&oldid=1019",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988310.3/warc/CC-MAIN-20150728002308-00230-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 16384,
+    "recordOffset": 4474,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "first brown pair and then blue pair is connected currently only the first row is used Double line male pins, with female connector connected to in ethernet cable Remote Relais RJ45 connector on the bottom (IN) to receive power & signal Two RJ45 connectors The stripboard contains the following: Stripboard Remote IP65 Junction box 32 leds + controller are present on the case. Connection to the controller is made by 10-pin flatcable. Low-priority, but nice addition to the project. LED controller the +5V comes from the PSU but the beagle bord does the switching through pin 24 we are using the brown pair for this one pair carrying the signal to the relais (+5 Volt if on, plus ground) we are using the blue pair for this one pair carrying power to the remote (+12 Volt continuous plus ground) On the RJ45 connector is present: the pins on the connector have all been soldered, T568B style. Connected to the stripboard left first RJ45 connector on terminal server acts as output connector RJ45 output connector to the IP65 case ground 12v pair",
+    "textAfterTable": "Pin Usage 1 & 2 First button 3 & 4 Second button 5 +12V continuous power 6 Ground 7+ Unused Software Gatekeeper For the gatekeeper python script, see Gatekeeper Beagleboard 172.22.32.11 Retrieved from \" http://0x20.be/smw/index.php?title=Dooropener&oldid=1024\" Category: Project Navigation menu Personal tools Create account Log in Namespaces Page Discussion Variants",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

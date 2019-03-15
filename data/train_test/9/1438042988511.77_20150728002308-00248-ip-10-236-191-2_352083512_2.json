@@ -1,0 +1,77 @@
+{
+    "relation": [
+        [
+            "Code or Value",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "."
+        ],
+        [
+            "Value Description",
+            "Valid data",
+            "Objects not removed",
+            "Non-removable objects such as implants",
+            "Excessive x-ray noise due to obesity",
+            "Insufficient scan area",
+            "Movement",
+            "Other(degenerative diseases, spinal fusion, fractures)",
+            "Missing"
+        ],
+        [
+            "Count",
+            "6389",
+            "0",
+            "5",
+            "2",
+            "24",
+            "1",
+            "300",
+            "1013"
+        ],
+        [
+            "Cumulative",
+            "6389",
+            "6389",
+            "6394",
+            "6396",
+            "6420",
+            "6421",
+            "6721",
+            "7734"
+        ],
+        [
+            "Skip to Item",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "NHANES 2007 - 2008: Dual Energy X-ray Absorptiometry - Spine Data Documentation, Codebook, and Frequencies",
+    "title": "",
+    "url": "http://www.cdc.gov/nchs/nhanes/nhanes2007-2008/DXXSPN_E.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988511.77/warc/CC-MAIN-20150728002308-00248-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 352099906,
+    "recordOffset": 352083512,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{11320=The spine scans were acquired with\u00a0Hologic QDR-4500A fan-beam densitometers (Hologic, Inc., Bedford, Massachusetts). Hologic software version 8.26:a3* was used to acquire all scans through mid 2005. In 2005, the acquisition software was updated to Hologic Discovery v12.4. The radiation exposure from DXA for\u00a0the\u00a0spine scan is extremely low at less than 20 uSv., 4963=Values for DXXL1BCC, DXXL2BCC, DXXL3BCC, DXXL4BCC, 3796=All spine scans acquired in 2005-2006 and 2007-2008 were first analyzed with Hologic Discovery v12.4, then reanalyzed with Hologic APEX v3.0 software. Comparisons of total spine BMD from each software version were made for the total sample, and by age group, race/ethnicity, and gender., 9164=Hologic service engineers performed all routine densitometer maintenance and repairs. Copies of all reports completed by the manufacturer\u2019s service engineers were sent to the UCSF when the scanners were serviced or repaired so any changes in measurement as a result of the work could be assessed. No mechanical repairs were required for any of the three densitometers in 2007-08., 14106=Users of the 2007-2008 dual-energy X-ray absorptiometry spine bone data (DXXSPN_E) are encouraged to read the documentation before accessing the data file., 8772=Scan Analysis Each participant scan and phantom scan was reviewed and analyzed by the UCSF using standard radiologic techniques and study-specific protocols developed for the NHANES. The most recently released Hologic software, APEX v3.0, which has been shown to have increased precision (Fan), was used to analyze all spine scans acquired in 2007-08. Expert review was conducted by the UCSF on 100% of analyzed participant scans to verify the accuracy and consistency of the results., 6912=The UCSF used the Cumulative Statistics method (CUSUM) and the MEC-specific phantom data to determine breaks in the calibration of the densitometers over the course of the survey (Lu). There were no break points for any of the three MECs in\u00a0the spine\u00a0phantom data during 2007-2008, and therefore no corrections to the participant spine data were needed. Comparison of data for the phantoms that circulated among the MECs indicated no statistically significant differences so that data from the three MECs could be combined., 3497=Mean differences in BMD for the years 2005-2006 and 2007-2008 combined ranged from 0.00045 for the Other race/ethnic category to 0.00518 for participants 60 years of age and older. Simple kappa statistics for BMD ranged from 0.9622 for participants 50-59 years of age to 0.9899 for participants 8-49 years of age. There were no differences between the two software versions in the percentages of participants in the total sample with BMD values +/- 3 standard deviations (SD). Differences were observed by subgroup, but percentages were not consistent across the two software versions, meaning for some subgroups the Discovery version produced higher percentages of +/- 3 SD and for other subgroups the APEX software produced higher percentages., 14939=Title: Dual Energy X-ray Absorptiometry - Spine (DXXSPN_E ) Contact Number: 1-866-441-NCHS Years of Content: 2007 - 2008 First Published: October, 2010 Revised: NA Access Constraints: None Use Constraints: None Geographic Coverage: National Subject:Personal examination data on spine bone mineral content, bone area, and bone mineral density. Record Source: NHANES 2007 - 2008 Survey Methodology: NHANES 2007 - 2008 is a stratified multistage probability sample of the civilian non-institutionalized population of the U.S. Medium: NHANES Web site; SAS transport files, 13821=Dual-energy x-ray absorptiometry (DXA) is the most widely accepted method of measuring bone density due in part to its speed, ease of use, and low radiation exposure (Baran, Genant, Heymfield, Njeh). Beginning in 2005, DXA scans of the lumbar spine have been administered in the NHANES mobile examination center (MEC)., 7307=In 2007-2008, longitudinal monitoring was conducted through the daily spine phantom scans as required by the manufacturer\u00a0in order to correct any scanner-related changes in participant data. The circulating HSP-Q96 and block phantoms, which were scanned at the start of operations at each site, provided additional data for use in longitudinal monitoring and cross calibration.}",
+    "lastModified": "Fri, 09 May 2014 20:25:54 GMT",
+    "textBeforeTable": "Both males and females 8 YEARS - 150 YEARS Target: Spine scan status English Text: Spine scan status SAS Label: DXASPNST Variable Name: DXASPNST - Spine scan status Both males and females 8 YEARS - 150 YEARS Target: Respondent sequence number. English Text: Respondent sequence number SAS Label: SEQN Variable Name: SEQN - Respondent sequence number Codebook and Frequencies Njeh CF, Fuerst T, Hans D, Blake GM, Genant HK. Radiation exposure in bone mineral density assessment. Appl Radiat Isot 1999;50:215-36. Lu Y, Mathur AK, Blunt BA, et al. Dual X-ray absorptiometry quality control: comparison of visual examination and process-control charts. JBMR 1996;11:626-37. Hologic Product Support: Discovery. http://www.hologic.com/en/product-support/bone-densitometry/discovery/ [Accessed on: 06/24/2010] Heymsfield SB, Wang J, Heshka S, Kehayias JJ, Pierson RN Jr. Dual-photon absorptiometry: comparison of bone mineral and soft tissue measurements in vivo with established methods. Am J Clin Nutr 1989;49:1283-9. Genant HK, Engelke K, Fuerst T, G\u00fcer C-C, Grampp S, Harris ST, Jergas M, Lang T, Lu Y, Majumdar S, Mathur A, Takada M. Noninvasive assessment of bone mineral and structure: state of the art. J Bone Miner Res 1996;11:707-30. Fan B, Lewiecki EM, Sherman M, Lu Y, Miller PD, Genant HK, Shepherd JA.",
+    "textAfterTable": "Total spine BMD invalidity code English Text: Total spine BMD invalidity code Target: Both males and females 8 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 0 Valid data 5793 5793 1 Invalid data 929 6722 . Missing 1012 7734 DXXL1BCC - L1 BMD invalidity code Variable Name: DXXL1BCC SAS Label: L1 BMD invalidity code English Text: L1 BMD invalidity code Target: Both males and females 8 YEARS - 150 YEARS Code or Value Value Description Count Cumulative Skip to Item 0 Valid data 6389 6389 1 Objects not removed 0 6389 2 Non-removable objects such as implants 5 6394 3 Excessive x-ray noise due to obesity 2 6396",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

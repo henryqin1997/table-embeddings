@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "",
+            "Initial",
+            "4K",
+            "8K",
+            "16K",
+            "32K",
+            "64K"
+        ],
+        [
+            "size",
+            "53128K",
+            "17643K",
+            "16572K",
+            "15780K",
+            "15204K",
+            "14812K"
+        ],
+        [
+            "compression",
+            "100 %",
+            "33.2 %",
+            "31.2 %",
+            "29.7 %",
+            "28.6 %",
+            "27.9 %"
+        ]
+    ],
+    "pageTitle": "File Systems - eLinux.org",
+    "title": "",
+    "url": "http://www.elinux.org/index.php?title=File_Systems&oldid=10620",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981753.21/warc/CC-MAIN-20150728002301-00306-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 429958647,
+    "recordOffset": 429935165,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{23127=Despite having been in use on Linux in real products since 2004 it has not yet made it to the mainline., 14210=Matt Mackall writes (in July of 2007):, 17861=Squash Fs is a (more) compressed read-only file system for Linux. This file system has better compression than JFFS2 or CRAMFS. After spending a long time outside of the mainline kernel, Squashfs have finally been merged and released with kernel 2.6.29., 25384=It is unclear whether or not these data are made with a jffs2 driver that has the erase block summary patch applied. This patch is part of the jffs2 driver since 2005-09-07. A patch for an earlier version can be found at: http://www.inf.u-szeged.hu/jffs2/jffs2-summary-20050211.patch (or try your luck at http://web.archive.org/web/*/http://www.inf.u-szeged.hu/jffs2/mount.php)., 30094=See also union mounts, which are described at http://lkml.org/lkml/2007/6/20/18 (and also in Documentation/union-mounts.txt in the kernel source tree - or will be, when this feature is merged.), 30898=Apparently this is not maintained any more. Last information is from 2005.}",
+    "textBeforeTable": "The table below gives an idea of the amount of compression that is achieved by the various block sizes. Input was a root filesystem of an embedded device. If you care for the smallest filesystem you probably want to go with the largest block size. However, if your primary concern is performance you might want to experiment a little bit to see what works out best for you (and that could even be applying no compression at all! Mksquashfs has options: -noInodeCompression, -noDataCompression and \u2013noFragmentCompression to control this). If you also applied function reordering (see Boot Time#User-space and application speedups a large block size will probably work out well for you. It is possible to tune the amount of compression when running mksquashfs. The -b option allows you to specify the block size. A smaller block size generally gives less compression and a larger -b option gives more compression. However there is a downside to this. Data is read from the flash using blocks. So if you use a block size of 128k, and you need a page of 4k, still the compressed equivalent of 128k data will be read from flash. As 128k comprises 32 pages, it will result in 32 pages being read into the buffer cache, even though at the moment of reading you only need one. Often the other 31 pages will be needed as well, but if not you wasted some tiem to read and decompress the unused data. Also",
+    "textAfterTable": "A presentation on Squash FS by Phillip Lougher at ELC Europe 2008: slides and video. UBIFS UBIFS is a filesystem that works on top of UBI volumes UBIFS presentation slides: ubifs.odp YAFFS2 YAFFS - Yet Another Flash File System - a file system designed specifically for NAND flash. YAFFS2 is simple, portable, reliable and self-contained. It is widely used in embedded OSes other than Linux, and can also be used stand-alone without an OS, e.g. in bootloaders. When used with Linux it can use MTD or its own flash driver. Similarly it can use the VFS or its own posix layer. It is log-structured, and single-threaded. It does not do compression itself - either compress the data itself or use squashfs on top of YAFFS2. YAFFS2 is designed to boot quickly (insofar as a log-structured FS that has to scan the flash can). It uses checkpointing so that if a partition was unmounted cleanly then there is no need to rescan the flash on power-up. All the features of the FS are configuable so you can trade off things like maximum file/partition size, flash block size, file granulaity etc. Data is written straight through to the flash except for caching to ensure efficienct use of blocks. YAFFS2 normally uses the OOB are of",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

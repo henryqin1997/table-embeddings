@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Operator",
+            "and",
+            "or",
+            "&&",
+            "||",
+            "!"
+        ],
+        [
+            "Description",
+            "Called Logical AND operator. If both the operands are true then then condition becomes true.",
+            "Called Logical OR Operator. If any of the two operands are non zero then then condition becomes true.",
+            "Called Logical AND operator. If both the operands are non zero then then condition becomes true.",
+            "Called Logical OR Operator. If any of the two operands are non zero then then condition becomes true.",
+            "Called Logical NOT Operator. Use to reverses the logical state of its operand. If a condition is true then Logical NOT operator will make false."
+        ],
+        [
+            "Example",
+            "(A and B) is true.",
+            "(A or B) is true.",
+            "(A && B) is true.",
+            "(A || B) is true.",
+            "!(A && B) is false."
+        ]
+    ],
+    "pageTitle": "PHP Operator Types",
+    "title": "",
+    "url": "http://www.tutorialspoint.com/php/php_operator_types.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988922.24/warc/CC-MAIN-20150728002308-00140-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 801766166,
+    "recordOffset": 801757964,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{15596=\u00a9 Copyright 2015. All Rights Reserved.}",
+    "lastModified": "Sat, 01 Aug 2015 18:00:17 GMT",
+    "textBeforeTable": "Show Examples Assume variable A holds 10 and variable B holds 20 then: There are following arithmatic operators supported by PHP language: Arithmetic Operators Lets have a look on all operators one by one. Conditional (or ternary) Operators Assignment Operators Logical (or Relational) Operators Comparision Operators Arithmetic Operators What is Operator? Simple answer can be given using expression 4 + 5 is equal to 9. Here 4 and 5 are called operands and + is called operator. PHP language supports following type of operators. Next Page \u00a0 Previous Page google_ad_channel = \"\"; google_ad_type = \"image\"; google_ad_format = \"468x60_as\"; google_ad_height = 60; google_ad_width = 468; google_ad_client = \"pub-7133395778201029\";",
+    "textAfterTable": "++ Increment operator, increases integer value by one A++ will give 11 -- Decrement operator, decreases integer value by one A-- will give 9 Comparison Operators There are following comparison operators supported by PHP language Assume variable A holds 10 and variable B holds 20 then: Show Examples Operator Description Example == Checks if the value of two operands are equal or not, if yes then condition becomes true. (A == B) is not true. != Checks if the value of two operands are equal or not, if values are not equal then condition becomes true. (A != B) is true. > Checks if the value of left operand is greater than the value of right operand, if yes then condition becomes true. (A > B) is not true. < Checks if the value of left operand is less than the value of right operand, if yes then condition becomes true. (A < B) is true. >= Checks if the value of left operand is greater than or equal to the value of right operand, if yes then condition becomes true. (A >= B) is not true. <= Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true. (A <= B) is true. Logical",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

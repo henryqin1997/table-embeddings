@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Switch",
+            "/?, /h, /help",
+            "/quiet",
+            "/norestart",
+            "/warnrestart:",
+            "/promptrestart",
+            "/forcerestart",
+            "/log:",
+            "/extract:",
+            "/uninstall /kb:"
+        ],
+        [
+            "Description",
+            "Displays help on supported switches.",
+            "Suppresses the display of status or error messages.",
+            "When combined with /quiet, the system will not be restarted after installation even if a restart is required to complete installation.",
+            "When combined with /quiet, the installer will warn the user before initiating restart.",
+            "When combined with /quiet, the installer will prompt before initiating restart.",
+            "When combined with /quiet, the installer will forcefully close applications and initiate restart.",
+            "Enables logging to specified file.",
+            "Extracts the package contents to the destination folder.",
+            "Uninstalls the security update."
+        ]
+    ],
+    "pageTitle": "Microsoft Security Bulletin MS11-020 - Critical",
+    "title": "Supported Security Update Installation Switches",
+    "url": "https://technet.microsoft.com/library/security/ms11-020",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 17,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987775.70/warc/CC-MAIN-20150728002307-00049-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 886740871,
+    "recordOffset": 886709924,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{4636=*Server Core installation affected. This update applies, with the same severity rating, to supported editions of Windows Server 2008 or Windows Server 2008 R2 as indicated, whether or not installed using the Server Core installation option. For more information on this installation option, see the TechNet articles, Managing a Server Core Installation and Servicing a Server Core Installation. Note that the Server Core installation option does not apply to certain editions of Windows Server 2008 and Windows Server 2008 R2; see Compare Server Core Installation Options., 14738=Published: April 12, 2011 | Updated: April 27, 2011, 568=The following severity ratings assume the potential maximum impact of the vulnerability. For information regarding the likelihood, within 30 days of this security bulletin's release, of the exploitability of the vulnerability in relation to its severity rating and security impact, please see the Exploitability Index in the April bulletin summary. For more information, see Microsoft Exploitability Index.}",
+    "TableContextTimeStampAfterTable": "{17388=Microsoft provides detection and deployment guidance for security updates. This guidance contains recommendations and information that can help IT professionals understand how to use various tools for detection and deployment of security updates. For more information, see Microsoft Knowledge Base Article 961747., 32553=Note For supported versions of Windows XP Professional x64 Edition, this security update is the same as supported versions of the Windows Server 2003 x64 Edition security update., 33614=For more information about the installer, see Microsoft Knowledge Base Article 832475., 11059=What is Microsoft Server Message Block Version 2 (SMBv2)?\u00a0 Server Message Block (SMB) is the file sharing protocol used by default on Windows-based computers. SMB Version 2.0 (SMBv2) is an update to this protocol, and is only supported on computers running Windows Server 2008, Windows 7, and Windows Vista. SMBv2 can only be used if both client and server support it. If either client or server cannot support SMBv2, the SMB 1.0 protocol will be used instead. The SMB protocol version to be used for file operations is decided during the negotiation phase. During the negotiation phase, a Windows Vista client advertises to the server that the client can understand the new SMBv2 protocol. If the server (Windows Server 2008 or later) understands SMBv2, then SMBv2 is chosen for subsequent communication. Otherwise the client and server use SMB 1.0 and continue to function as normal. For more information on SMBv2, see the MSDN article, Server Message Block (SMB) Version 2 Protocol Specification., 94555=Built at 2014-04-18T13:49:36Z-07:00, 6171=To view this vulnerability as a standard entry in the Common Vulnerabilities and Exposures list, see CVE-2011-0661., 25552=For SMS 2.0 and SMS 2003, the Security Update Inventory Tool (SUIT) can be used by SMS to detect security updates. See also Downloads for Systems Management Server 2.0., 37977=Note You can combine these switches into one command. For backward compatibility, the security update also supports the setup switches that the earlier version of the Setup program uses. For more information about the supported installation switches, see Microsoft Knowledge Base Article 262841., 53082=Note You can combine these switches into one command. For backward compatibility, the security update also supports many of the setup switches that the earlier version of the Setup program uses. For more information about the supported installation switches, see Microsoft Knowledge Base Article 262841., 25806=For SMS 2003, the SMS 2003 Inventory Tool for Microsoft Updates (ITMU) can be used by SMS to detect security updates that are offered by Microsoft Update and that are supported by Windows Server Update Services. For more information about the SMS 2003 ITMU, see SMS 2003 Inventory Tool for Microsoft Updates. For more information about SMS scanning tools, see SMS 2003 Software Update Scanning Tools. See also Downloads for Systems Management Server 2003., 26600=System Center Configuration Manager 2007 uses WSUS 3.0 for detection of updates. For more information about Configuration Manager 2007 Software Update Management, visit System Center Configuration Manager 2007.}",
+    "textBeforeTable": "The following severity ratings assume the potential maximum impact of the vulnerability. For information regarding the likelihood, within 30 days of this security bulletin's release, of the exploitability of the vulnerability in relation to its severity rating and security impact, please see the Exploitability Index in the April bulletin summary. For more information, see Microsoft Exploitability Index. Severity Ratings and Vulnerability Identifiers Vulnerability Information Customers who require custom support for older software must contact their Microsoft account team representative, their Technical Account Manager, or the appropriate Microsoft partner representative for custom support options. Customers without an Alliance, Premier, or Authorized Contract can contact their local Microsoft sales office. For contact information, visit the Microsoft Worldwide Information Web site, select the country in the Contact Information list, and then click Go to see a list of telephone numbers. When you call, ask to speak with the local Premier Support sales manager. For more information, see the Microsoft Support Lifecycle Policy FAQ. It should be a priority for customers who have older releases of the software to migrate to supported releases to prevent potential exposure to vulnerabilities. To determine the support lifecycle for your software release, see Select a Product for Lifecycle Information. For more information about service packs for these software releases, see Lifecycle Supported Service Packs. I am using",
+    "textAfterTable": "Windows Server 2008 for 32-bit Systems and Windows Server 2008 for 32-bit Systems Service Pack 2* Critical\u00a0 Remote Code Execution Critical Windows Server 2008 for x64-based Systems and Windows Server 2008 for x64-based Systems Service Pack 2* Critical\u00a0 Remote Code Execution Critical Windows Server 2008 for Itanium-based Systems and Windows Server 2008 for Itanium-based Systems Service Pack 2 Critical\u00a0 Remote Code Execution Critical Windows 7 for 32-bit Systems and Windows 7 for 32-bit Systems Service Pack 1 Critical\u00a0 Remote Code Execution Critical Windows 7 for x64-based Systems and Windows 7 for x64-based Systems Service Pack 1 Critical\u00a0 Remote Code Execution Critical Windows Server 2008 R2 for x64-based Systems and Windows Server 2008 R2 for x64-based Systems Service Pack 1* Critical\u00a0 Remote Code Execution Critical Windows Server 2008 R2 for Itanium-based Systems and Windows Server 2008 R2 for Itanium-based Systems Service Pack 1 Critical\u00a0 Remote Code Execution Critical *Server Core installation affected. This update applies, with the same severity rating, to supported editions of Windows Server 2008 or Windows Server 2008 R2 as indicated, whether or not installed using the Server Core installation option. For more information on this installation option, see the TechNet articles, Managing a Server Core Installation and Servicing a Server Core Installation. Note that the",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

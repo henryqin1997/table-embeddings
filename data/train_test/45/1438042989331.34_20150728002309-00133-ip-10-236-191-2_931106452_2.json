@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "Item",
+            "Create a concept of Common UI factory design",
+            "Collect all bitmaps which have to have new colors for high contrast mode",
+            "Contact responsible person (MBA aka Mathias Bauer) to clarify the status quo and future of \"In-Run-Time-Exchangeable Bitmaps\"",
+            "Collect and pack all bitmaps from projects offmgr, sw, starmath and basctl",
+            "Collect and pack all bitmaps from project svx",
+            "Collect and pack all bitmaps from project sc",
+            "Collect and pack all bitmaps from projects sd and sch"
+        ],
+        [
+            "Responsible",
+            "FS",
+            "All",
+            "FS",
+            "OS",
+            "FS",
+            "DR",
+            "CL"
+        ],
+        [
+            "Status",
+            "stalled",
+            "splitted into several project specific tasks (see below)",
+            "new",
+            "new",
+            "new",
+            "new",
+            "new"
+        ]
+    ],
+    "pageTitle": "meeting minutes",
+    "title": "",
+    "url": "https://www.openoffice.org/ui/protocols/protocol_2002-02-21.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989331.34/warc/CC-MAIN-20150728002309-00133-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 931118959,
+    "recordOffset": 931106452,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{7722=February 21st 2002, 7932=10:00h, MEST}",
+    "textBeforeTable": "1 Action Items 4 High Contrast mode for Paragraph Preview window 3 Automatically collection of infos on used bitmaps while Update Process 2 Accessibility: \"In-Run-Time-Exchangeable Bitmaps\" for Toolbars etc. 1 Action Items Table of Contents http://ui.openoffice.org/protocols Distribution List GT (next: CL, OS, FS, PB, DR,GT) Minute Taker Hans-Peter Burow (PB) Gunnar Timm (GT) Christian Jansen (CJ) Daniel Rentz (DR) Oliver Specht (OS) Frank Sch\u00f6nheit (FS) Attendees Cupertino, eham-02 Location 10:00h, MEST Time February 21st 2002 Date Weekly Meeting Virtual User Interface (VUI) Team",
+    "textAfterTable": "2 Accessibility: \"In-Run-Time-Exchangeable Bitmaps\" for Toolbars etc. CJ rised up the info, that MBA (Mathias Bauer) has plans to implement a mechanism for \"In-Run-Time-Exchangeable Bitmaps\". Thus when switching e.g. in High Contrast mode the exchange of the standard bitmaps to specialized ones is done automatically for the most common cases (Toolbars, etc.). FS will contact MBA to get informed with the details and the future of this feature and what has to be done by the VUI Team. 3 Automatically collection of infos on used bitmaps during Update Process While discussing which bitmaps are still in use and which are obsolete and how to find them out, one suggested to collect infos on all used bitmaps during Update Process to get an up to date and complete overview. There was no decision on if, when and how. 4 High Contrast mode for Paragraph Preview window It was mentioned, that also the preview window for \"Indents & Spacing\" and \"Alignment\" of Paragraphs has to be enabled for High Contrast mode. So this will become a future task for the VUI Team Page 1 of 1",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

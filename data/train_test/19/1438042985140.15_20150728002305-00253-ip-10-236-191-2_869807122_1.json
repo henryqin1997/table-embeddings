@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Modifier and Type",
+            "void",
+            "String",
+            "boolean",
+            "boolean",
+            "void",
+            "void",
+            "void",
+            "void",
+            "void",
+            "void"
+        ],
+        [
+            "Method and Description",
+            "editProfileForUser(User user)",
+            "getViewMyProfileUrl()",
+            "hasDraftForContent(Page page)",
+            "hasDraftForContent(String pageTitle) Returns true if the specified page has a Draft entry.",
+            "openMyProfile()",
+            "setUserStatus(ConfluenceSeleniumAssertions assertThat, String status)",
+            "viewDrafts()",
+            "viewFavouriteLabelInUsersProfile()",
+            "viewFavouritesInUsersProfile()",
+            "viewWatches()"
+        ]
+    ],
+    "pageTitle": "UserProfile (Atlassian Confluence 5.8.6 API)",
+    "title": "All Methods Instance Methods Concrete Methods",
+    "url": "https://docs.atlassian.com/atlassian-confluence/latest/com/atlassian/confluence/selenium/client/UserProfile.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985140.15/warc/CC-MAIN-20150728002305-00253-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 869815324,
+    "recordOffset": 869807122,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{15603=Copyright \u00a9 2003\u20132015 Atlassian. All rights reserved.}",
+    "lastModified": "Tue, 21 Jul 2015 09:44:35 GMT",
+    "textBeforeTable": "Method Summary UserProfile(ConfluenceSeleniumClient\u00a0client)\u00a0 Constructor and Description \u00a0 Constructors Constructor Summary extends Object public class UserProfile   com.atlassian.confluence.selenium.client.UserProfile java.lang.Object Class UserProfile com.atlassian.confluence.selenium.client Method Constr\u00a0|\u00a0 Field\u00a0|\u00a0 Detail:\u00a0 Method Constr\u00a0|\u00a0 Field\u00a0|\u00a0 Nested\u00a0|\u00a0 Summary:\u00a0 //--> } allClassesLink.style.display = \"none\"; else { } allClassesLink.style.display = \"block\"; if(window==top) { allClassesLink = document.getElementById(\"allclasses_navbar_top\");",
+    "textAfterTable": "Methods inherited from class\u00a0java.lang.Object clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait Constructor Detail UserProfile public\u00a0UserProfile(ConfluenceSeleniumClient\u00a0client) Method Detail openMyProfile public\u00a0void\u00a0openMyProfile() getViewMyProfileUrl public\u00a0String\u00a0getViewMyProfileUrl() setUserStatus public\u00a0void\u00a0setUserStatus(ConfluenceSeleniumAssertions\u00a0assertThat, String\u00a0status) viewFavouritesInUsersProfile public\u00a0void\u00a0viewFavouritesInUsersProfile() viewFavouriteLabelInUsersProfile public\u00a0void\u00a0viewFavouriteLabelInUsersProfile()",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

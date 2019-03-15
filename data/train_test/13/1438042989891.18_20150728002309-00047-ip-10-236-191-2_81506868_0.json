@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Parts",
+            "BeagleBone Black",
+            "Adafruit's 16x24 Red LED Matrix Panel",
+            "buttons",
+            "220 ohm Resistors",
+            "wires"
+        ],
+        [
+            "Quantity",
+            "1",
+            "1",
+            "2",
+            "2",
+            "some"
+        ]
+    ],
+    "pageTitle": "ECE497 Project DotRun - eLinux.org",
+    "title": "",
+    "url": "http://elinux.org/index.php?title=ECE497_Project_DotRun&oldid=303758",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00047-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 81522450,
+    "recordOffset": 81506868,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{646=My BBB is running v3.8.13 Linux. And the LED Matrix uses the HT1632C LED driver.}",
+    "textBeforeTable": "To build up the hardware of this project, you need parts as follows: Packaging (Nice picture) This project is an electrical game on a 16*24 LED matrix playing with two buttons.There is a dot in the central of matrix and bars coming from right or left side of matrix. You can control the dot to move up and down to avoid the bars by clicking the buttons. Clicking on buttons will cause a voltage change on gpio pins, which will result the movement of dot. Bars are generated according to several patterns. The longer the game lasts, the faster bars are generated and the higher the score you get. Executive Summary (Inline Comment) Score: 10/100 Comments: I'm looking forward to seeing this. 00 Late 00 Demo 00 Conclusions 00 Future Work 00 Work Breakdown 00 Theory of Operation 00 Highlights - Not done 08 User Instructions 00 Installation Instructions - Not done 09 Executive Summary - Good, nice picture  I'm using the following template to grade. Each slot is 10 points. 0 = Missing, 5=OK, 10=Wow!  Grading Template   10 Conclusions 9 Future Work 8 Work Breakdown 7 Theory of Operation 6 Highlights",
+    "textAfterTable": "My BBB is running v3.8.13 Linux. And the LED Matrix uses the HT1632C LED driver. Installation Instructions Hardware 1. buttons Buttons are wired to gpio pins(GPIO_20 and GPIO_7) and VCC. [[File: 2. LED Matrix BBB Pins Panel Pins(wire color) 1 (GND) GND(brown) 3 (VDD_3V3EXP) VCC(red) 15 (R13/GPIO1_16) CS0(orange) 23 (V14/GPIO1_17) WR(yellow) 12 (A14/GPIO1_28) DATA(green) Reference: http://elinux.org/Adafruit:_16x24_Red_LED_Matrix_Panel Software requirements: get source on BeagleBone and make beagle$ git clone git@github.com:yuxuanzeng/project.git beagle$ cd project beagle$ make Then you can run the program by beagle$ ./matrix16x24 User Instructions Use the two buttons to control the dot run up or down. Clicking left button makes dot run up, clicking right button makes dot run down.If the dot hit the bars, game over. The longer",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

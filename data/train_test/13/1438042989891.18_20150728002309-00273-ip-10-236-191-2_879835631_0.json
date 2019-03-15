@@ -1,0 +1,59 @@
+{
+    "relation": [
+        [
+            "r8c720f9",
+            "1570",
+            "1571",
+            "",
+            "1572",
+            "1573",
+            "1574",
+            "1575",
+            "",
+            "1576",
+            "1577"
+        ],
+        [
+            "r0ba1606",
+            "1570",
+            "1571",
+            "1572",
+            "1573",
+            "1574",
+            "1575",
+            "",
+            "1576",
+            "1577",
+            "1578"
+        ],
+        [
+            "",
+            "const char *, void *)) {",
+            "struct datastore_onlooker_list *nnode;",
+            "vpsized_int *vonlookers = (void *)&onlookers;",
+            "nnode = calloc(1, sizeof(*nnode));",
+            "nnode->dispatch = f;",
+            "nnode->next = onlookers;",
+            "while(noit_atomic_casptr( (volatile void **)&onlookers,",
+            "while(noit_atomic_casptr( vonlookers,",
+            "nnode, nnode->next) != (void *)nnode->next)",
+            "nnode->next = onlookers;"
+        ]
+    ],
+    "pageTitle": "Reconnoiter ~ Changeset 0ba16060522984b6f0f311e3b6da4e135ea15433",
+    "title": "",
+    "url": "https://labs.omniti.com/labs/reconnoiter/changeset/0ba16060522984b6f0f311e3b6da4e135ea15433",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00273-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 879843833,
+    "recordOffset": 879835631,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "src/stratcon_datastore.c Moved Copied Modified Removed Added Unmodified Legend: src/stratcon_jlog_streamer.c (modified) (8\u00a0diffs) src/stratcon_iep.c (modified) (2\u00a0diffs) src/stratcon_datastore.c (modified) (1\u00a0diff) Files: a varity of strat aliasing problems and avoiding odd includes on Linux Message: Theo Schlossnagle <jesus@omniti.com> 1298494414 +0000 git-author: [2648da95633d939f2cb0dd601b14ada1d9ff0667] git-parent: Theo Schlossnagle <jesus@omniti.com> 1298494414 +0000 git-committer: Theo Schlossnagle <jesus@omniti.com> Author: 02/23/11 20:53:34 (4 years ago) Timestamp: White space changes Case changes Blank lines",
+    "textAfterTable": "src/stratcon_iep.c r4135087 r0ba1606 \u00a0 79 79 start_iep_daemon();\u00a0 80 80 \u00a0 81 \u00a0 static float\u00a0 \u00a0 81 static double\u00a0 82 82 stratcon_iep_age_from_line(char *data, struct timeval now) {\u00a0 83 \u00a0 \u00a0 float n, t;\u00a0 \u00a0 83 \u00a0 double n, t;\u00a0 84 84 \u00a0 if(data && (*data == 'S' || *data == 'M')) {\u00a0 85 85 \u00a0 \u00a0 if(data[1] != '\\t') return 0;\u00a0 86 \u00a0 \u00a0 \u00a0 t = strto f(data + 2, NULL);\u00a0 \u00a0 86 \u00a0 \u00a0 t = strto d(data + 2, NULL);\u00a0 87 87 \u00a0 \u00a0 n = (float)now.tv_sec + (float)now.tv_usec / 1000000.0;\u00a0 88 88 \u00a0 \u00a0 return n - t;\u00a0 \u2026 \u2026 \u00a0 361 361 stratcon_iep_submitter(eventer_t e, int mask, void *closure,\u00a0 362 362 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0struct timeval *now) {\u00a0",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Date",
+            "3 Sep 1991",
+            "29 Sep 1993",
+            "26 Jun 1997",
+            "29 Jun 2001",
+            "10 Aug 2005",
+            "25 Jan 2006",
+            "21 Mar 2006"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Description",
+            "Owner name: AMP INCORPORATED, PENNSYLVANIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:BABU, K.C.;COHEN, MICHAEL S.;DONNELLY, THOMAS A.;AND OTHERS;REEL/FRAME:005831/0908;SIGNING DATES FROM 19910830 TO 19910903",
+            "Owner name: AMP INVESTMENTS, DELAWARE Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:AMP INCORPORATED;REEL/FRAME:006714/0652 Effective date: 19920812 Owner name: WHITAKER CORPORATION, THE, DELAWARE Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:AMP INVESTMENTS;REEL/FRAME:006714/0644 Effective date: 19920812",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "",
+            "Effective date: 20060125"
+        ]
+    ],
+    "pageTitle": "Patent US5282237 - Trunk cable fault detection and reconfiguration arrangement in a ring ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.ca/patents/US5282237",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00063-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 473097674,
+    "recordOffset": 473081702,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{26943=Referring now to the drawings, FIG. 1 shows a ring communication network wherein a plurality of line concentrators 10 are connected together in a ring by a trunk cable including a main connection path 12 and an auxiliary connection path 14. Each of the concentrators 10 has a plurality of ports including a ring-in port 16, a ring-out port 18, and a plurality of station ports 20. A plurality of data stations 22 are each connected to a respective station port 20 and may be selectively inserted into the communications network in accordance with a protocol established for the particular type of network such as, for example, the IEEE Standard 802.5-1989 for token ring networks. As shown in FIG. 1, the main connection path 12 enters a concentrator 10 through its ring-in port 16 and extends through all of its station ports 20 before exiting the concentrator 10 through its ring-out port 18 Somewhat differently, the auxiliary connection path 14 enters a concentrator 10 through its ring-out port 18 and extends directly to its ring-in port 16, from which it exits the concentrator 10., 22950=In ring communications networks, such as for example those conforming to the IEEE Standard 802.5-1989 covering token ring networks, a plurality of line concentrators are connected together in a closed loop (i.e., a ring) by means of a trunk cable. Each concentrator includes a plurality of station ports to which a terminal, such as a computer, may be connected for communication over the ring with other such terminals in the network. Each concentrator also has a ring-in port and a ring-out port for interfacing with the trunk cable connected between the concentrators.}",
+    "textBeforeTable": "Patent Citations Accordingly, there has been disclosed an improved trunk cable fault detection and reconfiguration arrangement in a ring communications network. This arrangement possesses the advantages, among others, that it is simple and economical to implement, it is operative during data communications and it does not require the interruption of any such communications. While an illustrative embodiment of the present invention has been disclosed herein, it will be apparent to those of ordinary skill in the art that various modifications and adaptations to that embodiment are possible and it is only intended that the present invention be limited by the scope of the appended claims. An indicating arrangement is provided to indicate the fault detection status of the ring-in port 16. This indicating arrangement includes the green light emitting diode 228 and the red light emitting diode 230, along with associated circuitry. If neither of the diodes 228, 230 is lit, this indicates that the fault detection circuitry for the ring-in port 16 is disabled. If the green light emitting diode 228 is lit, this indicates that the fault detection circuitry is enabled and no ring-in fault has been detected. If the red light emitting diode 230 is lit, this indicates that the fault detection circuitry is enabled and a ring-in fault has been detected. If the ring-in fault detection feature is to be disabled, the signal on the lead 134 is low, thereby causing the lead 136",
+    "textAfterTable": "2 ANSI/IEEE Std 802.5-1985 pp. 77-80. * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US5383191 * 20 Dec 1990 17 Jan 1995 International Business Machines Corporation Dual ring reconfiguration switching unit US5384779 * 14 Apr 1993 24 Jan 1995 Digital Equipment Corporation State machines for configuration of a communications network US5394401 * 14 Apr 1993 28 Feb 1995 Digital Equipment Corporation Arrangement for a token ring communications network US5625621 * 13 Mar 1995 29 Apr 1997 International Business Machines Corporation Method and system of automatically configuring a LAN switch portof a multi-port LAN switch based on an attached device type US5680397 * 13 Mar 1995 21 Oct 1997 International Business Machines Corporation Multi-port LAN switch for a token-ring network",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

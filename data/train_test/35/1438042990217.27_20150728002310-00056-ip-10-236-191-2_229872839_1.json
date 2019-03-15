@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "7 (1)",
+            "14",
+            "21",
+            "28"
+        ],
+        [
+            "M",
+            "1",
+            "8",
+            "15",
+            "22",
+            "29"
+        ],
+        [
+            "T",
+            "2",
+            "9",
+            "16",
+            "23",
+            "30"
+        ],
+        [
+            "W",
+            "3 (1)",
+            "10",
+            "17",
+            "24",
+            "31 (1)"
+        ],
+        [
+            "T",
+            "4 (3)",
+            "11",
+            "18",
+            "25",
+            ""
+        ],
+        [
+            "F",
+            "5",
+            "12",
+            "19",
+            "26",
+            ""
+        ],
+        [
+            "S",
+            "6",
+            "13",
+            "20",
+            "27",
+            ""
+        ]
+    ],
+    "pageTitle": "ettercap / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/ettercap/mailman/ettercap-betatesting/?viewmonth=200403",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990217.27/warc/CC-MAIN-20150728002310-00056-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 229888467,
+    "recordOffset": 229872839,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun \u00a0 May \u00a0 Apr \u00a0 Mar \u00a0 Feb \u00a0 Jan (2) 2013 Dec \u00a0 Nov (3) Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun (1) May (1) Apr \u00a0 Mar (2) Feb \u00a0 Jan (9) 2012 Dec (12) Nov (10) Oct (1) Sep \u00a0 Aug (1) Jul \u00a0 Jun \u00a0 May \u00a0 Apr \u00a0 Mar \u00a0 Feb \u00a0 Jan (2) 2011 Dec \u00a0 Nov \u00a0",
+    "textAfterTable": "Showing 6 results of 6 Flat | Threaded [Ettercap-betatesting] [NG devel] NG-0.7.0_alpha3 From: Alberto Ornaghi <alor@us...> - 2004-03-31 13:29:08 Hi guys, here it is the alpha3 tarball. changes from alpha2: 1) SSL dissection layer. for now it is used only for https, in the next release we will support imaps, pop3s and everything-over-ssl. to enable it you have to provide a valid redir_command in the etter.conf file. please read the man carefully. 2) a new plugin to discover the lan gateway 3) the curses gui has now an online help (press the spacebar when needed) 4) you can filter the data of a live connection with regexp AVAILABILITY: CVS: cvs -d:pserver:anonymous@...:/cvsroot/ettercap login cvs -d:pserver:anonymous@...:/cvsroot/ettercap co ettercap_ng TARBALL: http://ettercap.sf.net/devel/ettercap-NG-0.7.0_alpha3.tar.gz -- --==> ALoR <==---------------------- - - - There are only 10 types of people in this world... Those who understand binary, and those who don't. [Ettercap-betatesting] [NG devel] NG-0.7.0_alpha2 From: Alberto Ornaghi <alor@us...> - 2004-03-07 14:16:27 Hi guys, here it is the alpha2 tarball. changes from alpha1: 1) many fixes in the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

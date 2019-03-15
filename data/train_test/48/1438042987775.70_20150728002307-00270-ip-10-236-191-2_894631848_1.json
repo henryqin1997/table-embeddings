@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Value",
+            "1st limit",
+            "2nd limit",
+            "3rd limit",
+            "4th limit",
+            "5th limit",
+            "6th value"
+        ],
+        [
+            "Default value",
+            "1 second",
+            "2 seconds",
+            "2 seconds",
+            "4 seconds",
+            "8 seconds",
+            "(Must be 0.)"
+        ],
+        [
+            "Attempt",
+            "Query the preferred DNS server on a preferred connection.",
+            "Query the preferred DNS server on all connections.",
+            "Query all DNS servers on all connections (1st attempt).",
+            "Query all DNS servers on all connections (2nd attempt).",
+            "Query all DNS servers on all connections (3rd attempt).",
+            ""
+        ]
+    ],
+    "pageTitle": "DNSQueryTimeouts",
+    "title": "",
+    "url": "https://technet.microsoft.com/en-ca/library/cc977482.aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987775.70/warc/CC-MAIN-20150728002307-00270-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 894647442,
+    "recordOffset": 894631848,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{23627=Windows\u00a02000 does not add this entry to the registry. You can add it by editing the registry or by using a program that edits the registry.}",
+    "textBeforeTable": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\Tcpip\\Parameters DNSQueryTimeouts TechNet Archive Other Microsoft Products and Technologies Windows Server Windows Azure Pack for Windows Server Windows System Center SQL Server Solutions Guidance for IT Professionals Security Guidance and Updates Scripting with Windows PowerShell Online Services Office Products",
+    "textAfterTable": "4th limit 4 seconds Query all DNS servers on all connections (2nd attempt). 5th limit 8 seconds Query all DNS servers on all connections (3rd attempt). 6th value (Must be\u00a00.) \u00a0 Note The integers in this entry each appear on a separate line in the registry editors. Windows\u00a02000 does not add this entry to the registry. You can add it by editing the registry or by using a program that edits the registry. Top Of Page Was this page helpful? Yes No Not accurate Not enough depth Need more code examples Tell us more... (1500 characters remaining)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

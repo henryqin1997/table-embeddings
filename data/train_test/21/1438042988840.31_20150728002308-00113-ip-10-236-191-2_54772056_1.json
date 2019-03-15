@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "metric",
+            "has tests in t dir",
+            "meta yml has license",
+            "has known license in source file",
+            "use warnings",
+            "is prereq"
+        ],
+        [
+            "remedy",
+            "This distribution contains either a file called 'test.pl' (the old test file) or is missing a directory called 't'. This indicates that it uses the old test mechanism or it has no test-suite. Add tests or move tests.pl to the t/ directory!",
+            "This distribution does not have a license defined in META.yml. Define the license if you are using in Build.PL. If you are using MakeMaker (Makefile.PL) you should upgrade to ExtUtils::MakeMaker version 6.31.",
+            "Does not have license information in any of its source files, or the information is not recognized by Software::License Add =head1 LICENSE and/or the proper text of the well-known license to the main module in your code.",
+            "This distribution does not 'use warnings;' (or its equivalents) in all of its modules. Note that this is not about that your modules actually warn when something bad happens. It's bad if nobody can tell if a module warns or not, without reading the source code of your favorite module that actually enforces warnings. In other words, it's bad if someone feels the need to add 'use warnings' to your modules. Add 'use warnings' (or its equivalents) to all modules (this will require perl > 5.6), or convince us that your favorite module is well-known enough and people can easily see the modules warn when something bad happens.",
+            "This distribution is not required by another distribution by another author. Convince / force / bribe another CPAN author to use this distribution."
+        ]
+    ],
+    "pageTitle": "CPANTS - SetDualVar",
+    "title": "",
+    "url": "http://cpants.cpanauthors.org/dist/SetDualVar",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988840.31/warc/CC-MAIN-20150728002308-00113-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 54780258,
+    "recordOffset": 54772056,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "These fails do affect your Kwalitee scores. This distribution may not be installed cleanly, or may have some issues in license or documentation. Please consider fixing them, or tell us if they are false. Core metrics Kwalitee Fails CPAN Testers rt.cpan.org search.cpan.org metacpan.org External Resources 80.00 Core Kwalitee 100.00 Kwalitee 1995-09-28 Release Date 1.0 (released by KJALB on 1995-09-28) 1.0 (latest) Version KJALB Author/Maintainer Releases Metadata Errors Provides Used By Prerequisites Overview SetDualVar SetDualVar Home Search Authors Search Distributions Recent Uploads Stats Ranking Kwalitee CPANTS Toggle navigation",
+    "textAfterTable": "use strict This distribution does not 'use strict;' (or its equivalents) in all of its modules. Note that this is not about the actual strictness of the modules. It's bad if nobody can tell whether the modules are strictly written or not, without reading the source code of your favorite clever module that actually enforces strictness. In other words, it's bad if someone feels the need to add 'use strict' to your modules. Add 'use strict' (or its equivalents) to all modules, or convince us that your favorite module is well-known enough and people can easily see the modules are strictly written. package version matches dist version None of the package versions in this distribution matches the distribution version. Fix the version(s). Extra metrics These fails affect your total Kwalitee score, but don't affect the one for the Game. Some of them should be fixed by all means. Others are just matters of taste. metric remedy has tests in t dir This distribution contains either a file called 'test.pl' (the old test file) or is missing a directory called 't'. This indicates that it uses the old test mechanism or it has no test-suite. Add tests or move tests.pl to the t/ directory! meta yml has license This distribution does not have a license defined in META.yml. Define the license if you are using",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

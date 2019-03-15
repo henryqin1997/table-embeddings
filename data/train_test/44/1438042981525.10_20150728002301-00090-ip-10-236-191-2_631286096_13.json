@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Do not report",
+            "Changes in the 4xx series fields that represent local variations in policy for series tracing",
+            "Changes that would, in effect, recatalog the entire record to different cataloging rules",
+            "Changes to classification numbers caused by revision of classification schedules",
+            "Errors or additions you can correct with your level of authorization",
+            "Indicator values reflecting local series tracing policies if there is no series authority record",
+            "Information needed only to complete the 300 field in CIP records",
+            "Insignificant variations in punctuation, capitalization and abbreviation, including final punctuation in any field or spacing in field 300",
+            "Records created before February 1, 1995 not using Format Integration, phase 1 content designation",
+            "Use of the \"Basic\" option or \"Enhanced\" option in field 505"
+        ],
+        [
+            "Notes/Examples",
+            "OCLC changes 4xx fields affecting tracing policy only on request of the inputting institution",
+            "Adding ISBD punctuation to a non-ISBD record or changing the choice of access points",
+            "",
+            "See the section 5.3 \"Replacing Records\" for more information on replacing master records",
+            "",
+            "Use the Lock and Replace procedure with a full-level or higher authorization to complete this field",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "5 Quality assurance",
+    "title": "",
+    "url": "http://www.oclc.org/bibformats/en/quality.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 13,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981525.10/warc/CC-MAIN-20150728002301-00090-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 631313527,
+    "recordOffset": 631286096,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{62953=The Library of Congress along with bibliographic utilities and other national library cooperative programs created the Cooperative Cataloging Council in November 1992. This Council created the Program for Cooperative Cataloging in February 1995. The following programs are components of the PCC:, 100518=\u00a9 2015 OCLC Domestic and international trademarks and/or service marks of OCLC Online Computer Library Center, Inc. and its affiliates, 1480=The Expert Community is an expansion of master record editing capabilities to all full level cataloging users. It was tested as the Expert Community Experiment in 2009. At the end of the experiment, the expanded capabilities were permanently added to the full level authorization.}",
+    "lastModified": "Mon, 27 Jul 2015 15:15:58 GMT",
+    "textBeforeTable": "Fields you can add or edit Make all Database Enrichments in one editing session. For example, add a call number in the same lock-and-replace session as a contents note. Make all enrichments in one editing session Database enrichment requires a Full-level cataloging authorization or higher. You can enrich master records by adding or editing the fields in the table below to any Full-level record, except an authenticated serial. A full-level record has one of these values in ELvl (Encoding Level): , 1, 4 (with field 042 coded pcc), I, or L). Some enrichments to the master record earn a database enrichment credit. The various conditions for adding these fields are given after the table below. Master record enrichment 5.3 Database Enrichment OCLC Cataloging Authorization Levels for Record Actions and Upgrades available here: http://www.oclc.org/support/documentation/connexion/client/catalogingauthorizationlevels.pdf For more detailed information, see You cannot lock, edit, and replace records. Search In Regular CONSER and National CONSER levels, you can lock, edit, and replace your own records and use Minimal-level Upgrade, Database Enrichment, and Expert Community capabilities as appropriate. You can also use CONSER replace capabilities on Serial records. CONSER In Regular Enhance and National Enhance, you can lock, edit, and replace your own records and use Minimal-level Upgrade, Database Enrichment, and Expert",
+    "textAfterTable": "No No N/A 024 Other Standard Identifier Yes Yes 2 No Yes N/A 027 Standard Technical Report Number Yes Yes No No N/A 028 Publisher Number Yes Yes No No N/A 030 CODEN Designation Yes No No No N/A 037 Source of Acquisition Yes No No Yes N/A 041 Language Code Yes Yes No No N/A 042 Authentication Code Yes, if authorized No Yes, if authorized No N/A 043 Geographic Area Code Yes No No No N/A 050 Library of Congress Call Number Yes Yes 3 No Yes N/A 052 Geographic Classification Yes Yes No No N/A 055 Call/Class Number Assigned in Canada Yes No No Yes N/A 060 National Library of Medicine Call Number Yes Yes 4 No Yes N/A 070 National Agricultural Library Copy Statement Yes No",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

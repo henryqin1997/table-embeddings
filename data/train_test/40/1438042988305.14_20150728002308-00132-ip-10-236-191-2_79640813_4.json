@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Event Name",
+            "Builtin",
+            "User Exit",
+            "MenuCreate",
+            "PLSQL",
+            "ExecQuery"
+        ],
+        [
+            "Details",
+            "BuiltinName, FormId",
+            "UserExitName, FormId",
+            "MenuName, FormID",
+            "PLSQLSTmt, FormID",
+            "Block Name"
+        ],
+        [
+            "Number",
+            "96",
+            "97",
+            "99",
+            "100",
+            "101"
+        ]
+    ],
+    "pageTitle": "Tracing and Diagnostics",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E23943_01/web.1111/e10240/tracing.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988305.14/warc/CC-MAIN-20150728002308-00132-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 79662767,
+    "recordOffset": 79640813,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{29414=1024 and higher}",
+    "lastModified": "Wed, 13 May 2015 05:20:19 GMT",
+    "textBeforeTable": "Table 12-5 Detailed Events 12.5.1.3 Detailed Events 69 FormId , Canvas Name Canvas 68 FormId , Editor Name Editor 67 LOV name, FormId LOV 66 TriggerName, FormName, BlockName, ItemName, FormID Trigger 65 Program Unit Name, FormID Program Unit 64 Form ID, Name, Path, Attached Libraries, Attached Menus Form Number Details Event Name Table 12-4 Forms Services Event Details 12.5.1.2 Forms Services Events 41,42,43,44",
+    "textAfterTable": "12.5.1.4 Three-Tier Events Table 12-6 Three-Tier Event Details Event Name Details Number Client Connect Timestamp 128 Client Handshake Timestamp 129 Heartbeat Timestamp 130 HTTP Reconnect NA 131 Socket FormId, Packets, Bytes 132 HTTP FormId, Packets, Bytes 133 HTTPS FormId, Packets, Bytes 134 DB Processing FormId, Statement 135 DB Logon FormId",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

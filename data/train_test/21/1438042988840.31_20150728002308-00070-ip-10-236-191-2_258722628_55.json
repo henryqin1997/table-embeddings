@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Attribute",
+            "source",
+            "target",
+            "persistenceinfo",
+            "log",
+            "loglevel"
+        ],
+        [
+            "Description",
+            "Specifies the location of the Java source files to weave: either a directory or a JAR file. If the persistence.xml file is not in a META-INF directory at this location, you must specify the location of the persistence.xml using the persistenceinfo attribute.",
+            "Specifies the output location: either a directory or a JAR file.",
+            "Specifies the location of the persistence.xml file if it is not in the same location as the source. Note: persistence.xml should be put in a directory called META-INF at this location",
+            "Specifies a logging file.",
+            "Specifies the amount and detail of log output. Valid java.util.logging.Level values are the following: OFF SEVERE WARNING INFO CONFIG FINE FINER FINEST For more information, see Logging."
+        ],
+        [
+            "Default",
+            "",
+            "",
+            "",
+            "See Logging.",
+            "Level.OFF"
+        ],
+        [
+            "Required or Optional",
+            "Required",
+            "Required",
+            "Optional",
+            "Optional",
+            "Optional"
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Using EclipseLink JPA Extensions (ELUG)\" - Eclipsepedia",
+    "title": "",
+    "url": "http://wiki.eclipse.org/index.php?title=Using_EclipseLink_JPA_Extensions_(ELUG)&diff=201542&oldid=196079",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 55,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988840.31/warc/CC-MAIN-20150728002308-00070-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 258788515,
+    "recordOffset": 258722628,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{327523=For information about the relationship between the value attribute and eclipselink.weaving.changetracking property, see What You May Need to Know About the Relationship Between the Change Tracking Annotation and Persistence Unit Property, 321022=Note: Persistence unit properties always override the corresponding annotations' attributes. For more information, see What You May Need to Know About Overriding Annotations in JPA and What You May Need to Know About Using EclipseLink JPA Persistence Unit Properties., 201872=For more information about persistence unit properties, see What You May Need to Know About Using EclipseLink JPA Persistence Unit Properties., 99953=For more information about persistence unit properties, see What you May Need to Know About Using EclipseLink JPA Persistence Unit Properties., 237292=Note: Setting an @OptimisticLocking may override any @Version specification (see Section 9.1.17 \"Version Annotation\" of the JPA Specification) on the entity: EclipseLink will not throw an exception, but will log a warning., 402094=For more information, see What You May Need to Know About Weaving and Java EE Application Servers., 371244=Using EclipseLink, you can specify positional parameters in a native query using the Java Persistence query language (JP QL) positional parameter convention ?n to specify a parameter by number. For more information on JP QL, see What You May Need to Know About Querying with Java Persistence Query Language., 421262=EclipseLink JPA provides a set of persistence unit properties (see What you May Need to Know About Using EclipseLink JPA Persistence Unit Properties) that you can specify in your persistence.xml file. The persistence unit properties always override the corresponding annotations' attributes., 122455=Note: You can also configure structure converters in a sessions.xml file (see What You May Need to Know About EclipseLink JPA Overriding Mechanisms)., 230324=Note: EclipseLink supports additional optimistic locking policies beyond what is supported through the JPA specification (such as @Version - see Section 9.1.17 \"Version Annotation\" of the JPA Specification). When mapping to a database schema where a version column does not exist and cannot be added, these locking policies enable the concurrency protection., 332994=For information about the relationship between the value attribute of the @ChangeTracking annotation and eclipselink.weaving.changetracking property, see What You May Need to Know About the Relationship Between the Change Tracking Annotation and Persistence Unit Property., 411589=In EclipseLink JPA, you either use JPA processing, or you specify the sessions.xml file resulting in creation of the project.xml file. For more information, see What You May Need to Know About EclipseLink JPA Overriding Mechanisms., 352702=For large queries that return a large number of objects you can configure the row fetch size used in the query to improve performance by reducing the number database hits required to satisfy the selection criteria. Most JDBC drivers default to a fetch size of 10, so if you are reading 1000 objects, increasing the fetch size to 256 can significantly reduce the time required to fetch the query's results. The optimal fetch size is not always obvious. Usually, a fetch size of one half or one quarter of the total expected result size is optimal. Note that if you are unsure of the result set size, incorrectly setting a fetch size too large or too small can decrease performance., 445403=Copyright \u00a9 2014 The Eclipse Foundation. All Rights Reserved., 294877=You can use this option as an alternative to annotations and deployment XML. If you specify this property, EclipseLink will override all class annotation and the object relational mapping from the persistence.xml, as well as ORM.xml and other mapping files, if present. For more information, see hat You May Need to Know About EclipseLink JPA Overriding Mechanisms., 280180=For more information about persistence unit properties, see hat You May Need to Know About Using EclipseLink JPA Persistence Unit Properties.}",
+    "textBeforeTable": "EclipseLink weave Ant Task Attributes </target> </weave> </classpath> <pathelement path=\"c:\\myjar-dependent.jar\"/> <classpath> persistenceinfo=\"c:\\myjar-containing-persistenceinfo.jar\"> target=\"c:\\wovenmyjar.jar\" <weave source=\"c:\\myjar.jar\" <target name=\"weaving\" description=\"perform weaving\" depends=\"define.task\"> </target> <taskdef name=\"weave\" classname=\"org.eclipse.persistence.tools.weaving.jpa.StaticWeaveAntTask\"/> <target name=\"define.task\" description=\"New task definition for EclipseLink static weaving\"/>  Configure the weave Ant task in your build script, as this example shows. The EclipseLink weave Ant Task Attributes table lists the attributes of this task. EclipseLink weave Ant Task Use the weave Ant task as follows: Execute the static static weaver in one of the following ways: To Configure Static Weaving for JPA Entities c:/classes/META-INF/persistence.xml  c:/classes/mypackage2/MyEntity3.class  c:/classes/mypackage/MyEntity2.class  c:/classes/mypackage/MyEntity1.class  e.g. If your base directory was c:/classes, the exploded directory structure would look as follows:  a META-INF directory containing your persistence.xml. Note: Using the persistenceunitinfo setting below, you can avoid this requirement  classes stored at the base in directories based on their package structure  2. An exploded directory structure  META-INF/persistence.xml  mypackage2/MyEntity3.class  mypackage/MyEntity2.class  mypackage/MyEntity1.class  e.g. mypersistenceunit.jar could contain  a META-INF directory containing your persistence.xml. Note: Using the persistenceunitinfo setting below, you can avoid this requirement  classes stored at the base in directories based on their package structure  1. A jar file - setup as specified in the JPA specification Prior to weaving,",
+    "textAfterTable": "Note: If source and target point to the same location and, if the source is a directory (not a JAR file), EclipseLink will weave in place. If source and target point to different locations, or if the source is a JAR file (as the EclipseLink weave Ant Task example shows), EclipseLink cannot weave in place. Configure the weave task with an appropriate <classpath> element, as the EclipseLink weave Ant Task example shows, so that EclipseLink can load all required source classes. Execute the Ant task using the command line that this example shows. In this example, the weave Ant task is in the build.xml file: EclipseLink weave Ant Task Command Line ant -lib C:\\eclipselink.jar -f build.xml weave Note: You must specify the eclipselink.jar file (the JAR that contains the EclipseLink weave Ant task) using the Ant command line -lib option instead of using the taskdef attribute classpath. Use the command line as follows: java org.eclipse.persistence.tools.weaving.jpa.StaticWeave [arguments] <source> <target> The following example shows how to use the StaticWeave class on Windows systems. The EclipseLink StaticWeave Class Command Line Arguments table lists the arguments",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,59 @@
+{
+    "relation": [
+        [
+            "Name",
+            "type",
+            "default",
+            "target",
+            "location",
+            "mode",
+            "nonotify",
+            "noform",
+            "nopost",
+            "remove",
+            "button"
+        ],
+        [
+            "Description",
+            "This is the name of the template to use for this comment. Comment templates are defined in a Foswiki template - see Customisation, below. If this attribute is not defined, the type is whatever is defined by COMMENTPLUGIN_DEFAULT_TYPE, either in this topic or in your WebPreferences.",
+            "Default text to put into the textarea of the prompt.",
+            "Name of the topic to add the comment to",
+            "Regular expression specifying the comment location in the target topic. Read carefully the CommentPlugin documentation!",
+            "For compatibility with older versions only, synonymous with type",
+            "Set to \"on\" to disable change notification for target topics",
+            "Set to \"on\" to disable the automatic form that encloses your comment block - remember to insert tags yourself! See CommentPluginExamples:noform for an example.",
+            "Set to \"on\" to disable insertion of the posted text into the topic.",
+            "Set to \"on\" to remove the comment prompt after the first time it is clicked.",
+            "Button label text"
+        ],
+        [
+            "Default",
+            "below",
+            "",
+            "the current topic",
+            "",
+            "",
+            "off",
+            "off",
+            "off",
+            "off",
+            "Add comment"
+        ]
+    ],
+    "pageTitle": "CommentPlugin < System < Wiki",
+    "title": "",
+    "url": "http://www.rockbox.org/wiki/System/CommentPlugin?sortcol=0;table=3;up=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044271733.81/warc/CC-MAIN-20150728004431-00136-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 687371887,
+    "recordOffset": 687358822,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The following standard attributes are recognized A %COMMENT% without parameters shows a simple text box. %COMMENT{attributes}% anywhere in a topic. Write Syntax in other topics, or other positions within the current topic. signed or unsigned, dated or undated (as defined by a template), in both forward and reverse chronological order, in different formats (as defined by a template), Inserts an edit box into the page that allows users to type in and save comments. Comments can be made Features CommentPluginExamples CommentPluginTemplates, Related topics: Plugin Info Plugin Installation Instructions Settings The OUTPUT template Customization example with custom form template Special macros Providing attribute values The PROMPT template Customization example Defining custom templates Customization Default templates Location relative to an arbitrary text string Location relative to an anchor Location relative to %COMMENT tag Positioning",
+    "textAfterTable": "(See also additional attributes) Positioning the comment %COMMENT supports several ways to specify where a comment should be inserted in the target topic. This is referred to as the location of the comment. Location relative to %COMMENT tag The default location is the %COMMENT tag itself. For example:  %COMMENT{type=\"below\"}% will add comments in the current topic, directly below the %COMMENT tag. Location relative to an anchor The target attribute may specify a web, and may also specify an anchor within the target topic; for example,  %COMMENT{type=\"above\" target=\"%MAINWEB%.PersonalRemarks#InsertHere\"}% This uses a standard in-topic anchor as the insertion location. See TextFormattingRules for more about Foswiki anchors. Location relative to an arbitrary text string Getting more sophisticated, you can also specify a regular expression for the target location using the location parameter. The target topic is searched for the regular expression, and the comment inserted relative to the string that the search matched. For example,  %COMMENT{type=\"above\" location=\"Flights of Fancy\"}% will place comments above the first occurrence of the string Flights of Fancy in the current topic. Warning of course, if a user's comment contains the string \"Flights of Fancy\" they may and up changing the location for the next comment! Also, if you use a tag in the location, then you've just inserted another tag in the page that contains",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

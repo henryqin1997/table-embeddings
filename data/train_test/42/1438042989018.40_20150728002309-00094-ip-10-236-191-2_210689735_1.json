@@ -1,0 +1,83 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "3",
+            "10",
+            "17 (1)",
+            "24 (4)",
+            "31 (2)"
+        ],
+        [
+            "M",
+            "",
+            "4",
+            "11 (1)",
+            "18 (4)",
+            "25 (1)",
+            ""
+        ],
+        [
+            "T",
+            "",
+            "5 (2)",
+            "12",
+            "19 (1)",
+            "26",
+            ""
+        ],
+        [
+            "W",
+            "",
+            "6",
+            "13",
+            "20 (1)",
+            "27",
+            ""
+        ],
+        [
+            "T",
+            "",
+            "7",
+            "14 (5)",
+            "21",
+            "28",
+            ""
+        ],
+        [
+            "F",
+            "1",
+            "8",
+            "15",
+            "22 (3)",
+            "29",
+            ""
+        ],
+        [
+            "S",
+            "2 (2)",
+            "9",
+            "16",
+            "23 (2)",
+            "30",
+            ""
+        ]
+    ],
+    "pageTitle": "Steel Bank Common Lisp / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/sbcl/mailman/sbcl-help/?viewmonth=200905&viewday=17",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989018.40/warc/CC-MAIN-20150728002309-00094-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 210703595,
+    "recordOffset": 210689735,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug (4) Jul (9) Jun (3) May (5) Apr (17) Mar (32) Feb (19) Jan (11) 2015 Dec (10) Nov (7) Oct (29) Sep (21) Aug (13) Jul (15) Jun (17) May (7) Apr (15) Mar (38) Feb (55) Jan (30) 2014 Dec (6) Nov (9) Oct (22) Sep (8) Aug (7) Jul (1) Jun (9) May \u00a0 Apr (10) Mar (17) Feb (8)",
+    "textAfterTable": "Showing 1 results of 1 Flat | Threaded [Sbcl-help] SBCL 1.0.28 on Windows: set_pseudo_atomic_atomic: pseudo atomic bits is 1. From: Michael Wood <esiotrot@gm...> - 2009-05-17 12:33:07 I tried out this ASCII Mandelbrot set code from an old post on Bill Clementson's blog on SBCL 1.0.28 on Windows XP and it crashed: http://bc.tech.coop/blog/040811.html C:\\Documents and Settings\\michael>sbcl This is SBCL 1.0.28, an implementation of ANSI Common Lisp. More information about SBCL is available at <http://www.sbcl.org/>;. SBCL is free software, provided as is, with absolutely no warranty. It is mostly in the public domain; some portions are provided under BSD-style licenses. See the CREDITS and COPYING files in the distribution for more information. This is experimental prerelease support for the Windows platform: use at your own risk. \"Your Kitten of Death awaits!\" * (loop for y from -1 to 1.1 by 0.1 do (loop for x from -2 to 1 by 0.04 do (let* ((c 126) (z (complex x y)) (a z)) (loop while (< (abs (setq z (+ (* z z) a))) 2) while (> (decf c) 32)) (princ (code-char c)))) (format t \"~%\")) ~~~~~~~~~~~~~}}}}}}}}}}}}}}}}}}}}||||||||{{{zyvrwum{|||||}}}}}}~~~~~~~~~~~~~ ~~~~~~~~~~}}}}}}}}}}}}}}}}}}}}|||||||||{{{zyxwoaqwxz{{{|||||}}}}}}~~~~~~~~~~ ~~~~~~~~}}}}}}}}}}}}}}}}}}}|||||||||{{zzzyxvn Knwyz{{{{||||}}}}}}~~~~~~~~ ~~~~~~}}}}}}}}}}}}}}}}}}||||||||{{zyxuxxxwvuq",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

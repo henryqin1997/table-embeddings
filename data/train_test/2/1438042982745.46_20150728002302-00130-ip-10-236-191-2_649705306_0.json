@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Property:",
+            "Values:",
+            "Initial:",
+            "Inherited:",
+            "Description:",
+            "Property:",
+            "Values:",
+            "Initial:",
+            "Inherited:",
+            "Description:"
+        ],
+        [
+            "-o-link",
+            "none | attr()",
+            "none",
+            "no",
+            "This property sets the value of the \"link\" variable which can later be used to generate a link through the \"-o-link-source\" property.",
+            "-o-link-source",
+            "none | current | next",
+            "none",
+            "no",
+            "This property sets the element to be a source anchor and, if so, declares which value of the '-o-link' variable that should be used: the current or the next."
+        ]
+    ],
+    "pageTitle": "Web Specifications Supported in Opera 9",
+    "title": "CSS Extensions for XML",
+    "url": "http://www.opera.com/docs/specs/opera9/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00130-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 649725259,
+    "recordOffset": 649705306,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{8678=Although Opera works with Unicode encodings (UTF-16 and UTF-8), most text on the Internet is encoded in legacy encodings, for instance ISO 8859-1, Windows-1251, Shift-JIS, EUC-KR. Opera handles this by detecting the character encoding used, and converting it to UTF-16. The user has three options for how to handle these pages.}",
+    "textBeforeTable": "Opera uses CSS-like properties to attach information to XML elements that cannot otherwise be represented. Three extension properties have been implemented to allow hyperlinks and images to be included in XML documents. Most often it's better for authors to use XHTML - rather than the properties described below - to represent document semantics, but they are described here for reference. Opera CSS linking extensions opacity box-sizing content is applicable on all elements, not just on the :before and :after pseudo-elements Partial support for Media Queries Note that these properties are at an early stage of development, they may be changed or removed from the specifications at any time. Use them as experimental. Proposed CSS 3 properties supported by Opera WAP CSS is an extension of CSS Mobile Profile. Opera fully supports WCSS versions 1.0 and 1.1. WAP CSS Opera fully supports CSS Mobile profile. CSS Mobile profile The visibility: collapse and white-space: pre-line property values Opera supports all of CSS2.1 with the exception of: CSS 2.1 is currently a W3C Candidate Recommendation, compliance is measured against the latest version, but the final Recommendation may differ. CSS Level 2 Revision 1 The :lang() selector The \"@font-face\" construct. Named pages (as described in section 13.3.2). These property/value combinations: \"display: marker\", \"text-align: <string>\", \"visibility: collapse\". The list style types cjk-ideographic, hebrew, hiragana, hiragana-iroha, katakana, katakana-iroha. These",
+    "textAfterTable": "-o-replace is discontinued. It is expected to be replaced by an equivalent CSS3 mechanism. XML and CSS In order to display an XML document, a CSS style sheet should be present. Authors can attach style sheets to their XML documents through a processing instruction. Here is a simple example:  <?XML version=\"1.0\"?> <?xml-stylesheet href=\"shakespeare.css\" type=\"text/css\"?> If no style sheet is present and the page is not namespaced to HTML, Opera 9 will use the initial values on all CSS properties to display the document. All elements will be inline, and all text will be rendered in the same font. ECMAScript support Complete table of ECMAScript support ECMAScript is the standardized version of JavaScript Core. It is being standardized through the ECMA standards body. ECMAScript does not include browser and document related objects. Opera supports the entire ECMA-262 2ed and 3ed standards, with no exceptions. They are more or less aligned with JavaScript 1.3/1.5 Core. DOM support Complete table of DOM 2 Core support Complete table of DOM 2 HTML support Complete table of DOM 2 Events support Complete table of DOM 2 Style support Complete table of DOM 2 Range and Traversal support Complete table of DOM 3 Load and Save support Complete table of DOM 3 XPath support Complete table of XMLHTTPRequest support Complete table of Canvas support Complete table of",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

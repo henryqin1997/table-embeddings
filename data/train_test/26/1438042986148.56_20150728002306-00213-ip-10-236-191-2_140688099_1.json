@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Option",
+            "center",
+            "zoom",
+            "layers",
+            "minZoom",
+            "maxZoom",
+            "maxBounds",
+            "crs"
+        ],
+        [
+            "Type",
+            "LatLng",
+            "Number",
+            "ILayer[]",
+            "Number",
+            "Number",
+            "LatLngBounds",
+            "CRS"
+        ],
+        [
+            "Default",
+            "null",
+            "null",
+            "null",
+            "null",
+            "null",
+            "null",
+            "L.CRS. EPSG3857"
+        ],
+        [
+            "Description",
+            "Initial geographical center of the map.",
+            "Initial map zoom.",
+            "Layers that will be added to the map initially.",
+            "Minimum zoom level of the map. Overrides any minZoom set on map layers.",
+            "Maximum zoom level of the map. This overrides any maxZoom set on map layers.",
+            "When this option is set, the map restricts the view to the given geographical bounds, bouncing the user back when he tries to pan outside the view. To set the restriction dynamically, use setMaxBounds method",
+            "Coordinate Reference System to use. Don't change this if you're not sure what it means."
+        ]
+    ],
+    "pageTitle": "Documentation - Leaflet - a JavaScript library for interactive maps",
+    "title": "",
+    "url": "http://leafletjs.com/reference.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986148.56/warc/CC-MAIN-20150728002306-00213-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 140729463,
+    "recordOffset": 140688099,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{244884=\u00a9 2015 Vladimir Agafonkin. Maps \u00a9 OpenStreetMap contributors.}",
+    "lastModified": "Tue, 28 Jul 2015 16:49:33 GMT",
+    "textBeforeTable": "Creation }); zoom: 13 center: [51.505, -0.09], var map = L.map('map', { // initialize the map on the \"map\" div with a given center and zoom Usage example The central class of the API \u2014 it is used to create a map on a page and manipulate it. Map This reference reflects Leaflet 0.7. Docs for 0.6 are available in the source form (see instructions for running docs).      version noConflict global switches Misc  ICRS IProjection IControl  ILayer IHandler Interfaces  Draggable PosAnimation DomUtil DomEvent DOM Utility  PolyUtil LineUtil Transformation Util Browser Class Utility  Event objects Event methods Events  Scale Layers Attribution Zoom Control Controls  DivIcon Icon Bounds Point LatLngBounds LatLng Basic Types  GeoJSON FeatureGroup LayerGroup Other Layers  CircleMarker Circle Rectangle MultiPolygon Polygon MultiPolyline Polyline Path Vector Layers  ImageOverlay TileLayer.Canvas TileLayer.WMS TileLayer Raster Layers  Popup Marker UI Layers  Panes Properties Map Misc  Other methods Conversion",
+    "textAfterTable": "Number null Minimum zoom level of the map. Overrides any minZoom set on map layers. maxZoom Number null Maximum zoom level of the map. This overrides any maxZoom set on map layers. maxBounds LatLngBounds null When this option is set, the map restricts the view to the given geographical bounds, bouncing the user back when he tries to pan outside the view. To set the restriction dynamically, use setMaxBounds method crs CRS L.CRS. EPSG3857 Coordinate Reference System to use. Don't change this if you're not sure what it means. Interaction Options Option Type Default Description dragging Boolean true Whether the map be draggable with mouse/touch or not. touchZoom Boolean true Whether the map can be zoomed by touch-dragging with two fingers. scrollWheelZoom Boolean true Whether the map can be zoomed by using the mouse wheel. If passed 'center', it will zoom to the center of the view regardless of where the mouse was. doubleClickZoom Boolean true Whether the map can be zoomed in by double clicking on it and zoomed out by double clicking while holding shift. If passed 'center', double-click zoom will zoom to the center of the view regardless of where the mouse was. boxZoom Boolean true Whether the map can be zoomed to a rectangular area specified by dragging",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

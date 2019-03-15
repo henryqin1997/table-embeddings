@@ -1,0 +1,102 @@
+{
+    "relation": [
+        [
+            "User",
+            "",
+            "Kashyap Chamarthy",
+            "Chao Yang",
+            "Kashyap Chamarthy",
+            "",
+            ""
+        ],
+        [
+            "OS Release",
+            "17",
+            "17",
+            "16",
+            "16",
+            "15",
+            "15"
+        ],
+        [
+            "Host Arch",
+            "x86_64",
+            "x86_64",
+            "x86_64",
+            "x86_64",
+            "x86_64",
+            "x86_64"
+        ],
+        [
+            "Guest Arch",
+            "i686",
+            "x86_64",
+            "i686",
+            "x86_64",
+            "i686",
+            "x86_64"
+        ],
+        [
+            "1: ISO media detect",
+            "none",
+            "pass",
+            "pass",
+            "pass",
+            "none",
+            "none"
+        ],
+        [
+            "2: Installation",
+            "none",
+            "pass",
+            "pass",
+            "pass",
+            "none",
+            "none"
+        ],
+        [
+            "3: Post-install first boot",
+            "none",
+            "pass",
+            "pass",
+            "pass",
+            "none",
+            "none"
+        ],
+        [
+            "4: Disk image inspect",
+            "none",
+            "pass",
+            "pass",
+            "pass",
+            "none",
+            "none"
+        ],
+        [
+            "Notes",
+            "",
+            "I was also able to create a F17 guest with btrfs. My KS and virt-install cmd-line http://goo.gl/wljur . My test results/stdout http://kashyapc.fedorapeople.org/f17-virt-test-day-results/",
+            "virtio nic, virtio qcow2 disk, NATed network, 2 vcpu, 1G memory",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Test Day:2012-04-12 Virtualization Test Day-GuestOS-Results - FedoraProject",
+    "title": "",
+    "url": "https://fedoraproject.org/w/index.php?title=Test_Day:2012-04-12_Virtualization_Test_Day-GuestOS-Results&diff=284618&oldid=283911",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990445.44/warc/CC-MAIN-20150728002310-00102-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 876735657,
+    "recordOffset": 876719753,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{151063=Copyright \u00a9 2015 Red Hat, Inc. and others. All Rights Reserved. For comments or queries, please contact us.}",
+    "textBeforeTable": "Fedora Test case 4: Disk image inspection - whether virt-inspect can find info for the resulting installed OS disk image Test case 3: Post-install first boot - verify the resulting installed image can successfully boot up again Test case 2: Installation - verify that the installer runs to completion without unexpected problems Test case 1: ISO media detection - whether osinfo-detect can find info for the ISO install media There are 4 test cases to be evaluated against each guest OS: This page provides the results of testing guest operating systems on a Fedora 17 KVM host. Guest OS Support Results 1.6 Other distro 1.5 Windows 1.4 FreeBSD 1.3 Ubuntu 1.2 RHEL 1.1 Fedora 1 Guest OS Support Results Contents Revision as of 02:58, 16 April 2012 | {{result|none}} \u00a0 | {{result|none}}",
+    "textAfterTable": "RHEL User OS Release Host Arch Guest Arch 1: ISO media detect 2: Installation 3: Post-install first boot 4: Disk image inspect Notes Chao Yang RHEL-6.2 x86_64 i686 pass pass pass pass virtio nic, virtio qcow2 disk, NATed network, 2 vcpu, 1G memory Chao Yang RHEL-6.2 x86_64 x86_64 pass pass pass pass virtio nic, virtio qcow2 disk, NATed network, 2 vcpu, 1G memory Chao Yang RHEL-5.8 x86_64 i686 pass pass",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

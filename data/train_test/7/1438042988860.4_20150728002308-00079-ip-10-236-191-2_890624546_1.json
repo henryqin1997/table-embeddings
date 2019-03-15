@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "rsync \u540c\u6b65\u7ec4\u4ef6",
+            "fedora-enchilada0",
+            "fedora-epel0",
+            "fedora-archive",
+            "fedora-secondary",
+            "fedora-alt"
+        ],
+        [
+            "\u63cf\u8ff0",
+            "Fedora - the whole enchilada",
+            "Extra Packages for Enterprise Linux",
+            "Historical Fedora releases",
+            "Fedora Secondary Arches",
+            "Fedora Other"
+        ],
+        [
+            "\u4e3b\u955c\u50cf\u670d\u52a1\u5668\u4e0a\u7684\u8def\u5f84",
+            "/pub/fedora",
+            "/pub/epel",
+            "/pub/archive",
+            "/pub/fedora-secondary",
+            "/pub/alt"
+        ],
+        [
+            "\u5907\u6ce8",
+            "Please use this if you can, it provides the all current Fedora content, including pre-bitflip content. This is open to specific mirrors by request. Mirrors participating in our tiering should use this.",
+            "Please use this to mirror EPEL",
+            "Fedora Core 1-6 and Extras 3-6, and obsolete releases 7 and higher",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Infrastructure/Mirroring/zh-cn - FedoraProject",
+    "title": "",
+    "url": "https://fedoraproject.org/w/index.php?title=Infrastructure/Mirroring/zh-cn&oldid=299152",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00079-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 890648707,
+    "recordOffset": 890624546,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{30485=Copyright \u00a9 2015 Red Hat, Inc. and others. All Rights Reserved. For comments or queries, please contact us.}",
+    "textBeforeTable": "\u5efa\u8bae\u7684\u540c\u6b65\u7684\u90e8\u5206 \u8bf7\u8981\u6ce8\u610f\u540c\u6b65\u7684\u5185\u5bb9: \u53ef\u7528\u5185\u5bb9 \u60a8\u9700\u8981 report_mirror \u548c report_mirror.conf\uff0c\u4e14\u5fc5\u987b\u914d\u7f6e report_mirror.conf \u4ee5\u4fbf\u8bc6\u522b\u60a8\u7684\u78c1\u76d8\u4e0a\u6240\u6709\u955c\u50cf\u6587\u4ef6\u4f4d\u7f6e\u3002 git clone http://git.fedorahosted.org/git/mirrormanager/ \u6216\u8005 git clone git://git.fedorahosted.org/git/mirrormanager \u6216\u8005\u8bbf\u95ee report_mirror files\u83b7\u53d6\u4ee3\u7801\u3002\u60a8\u4e5f\u53ef\u4ee5\u4f7f\u7528 git \u6765\u83b7\u53d6:  yum install mirrormanager-client \u955c\u50cf\u7ba1\u7406\u5668\u5305\u542b\u4e86\u4e00\u4e2a\u5de5\u5177 report_mirror \uff0c\u8be5\u5de5\u5177\u53ef\u4ee5\u5728\u60a8\u5b8c\u6210\u540c\u6b65\u4efb\u52a1\u540e\u901a\u62a5\u5b98\u65b9\u60a8\u7684\u955c\u50cf\u672c\u6b21\u540c\u6b65\u7684\u8be6\u7ec6\u4fe1\u606f\u3002\u8fd9\u5bf9\u6211\u4eec\u7684\u65e5\u5e38\u7ba1\u7406\u548c\u7528\u6237\u7684\u5b89\u88c5\u5f88\u6709\u5e2e\u52a9\u3002\u8bf7\u5728\u6bcf\u6b21\u540c\u6b65\u5b8c\u6210\u540e\u8fd0\u884c report_mirror\u3002\u8bf7\u901a\u8fc7\u4ee5\u4e0b\u65b9\u6cd5\u5b89\u88c5\u83b7\u53d6\uff1a   \u8fd0\u884c report_mirror    \u5982\u679c\u60a8\u4f7f\u7528 rsync 3.0\u4ee5\u4e0a\u7248\u672c\uff0c\u60a8\u53ef\u4ee5\u4f7f\u7528 --delete-delay \u9009\u9879\u66ff\u6362 --delete-after\uff0c\u8fd9\u79cd\u60c5\u51b5\u4e0b\u53ef\u4ee5\u63d0\u9ad8\u6027\u80fd\u3002\u5177\u4f53\u8d44\u6599\u8bf7\u89c1\uff1a\u8fd9\u4efd\u62a5\u544a\u3002    45 */6 * * * perl -le 'sleep rand 1800' && bash -l ~/mirror-fedora > /dev/null   \u60a8\u5e94\u8be5\u8bbe\u7f6e\u60a8\u7684\u7ad9\u70b9\u540c\u6b65\u65f6\u95f4\u4e3a\u4e00\u4e2a\u968f\u673a\u503c\u4ee5\u4fbf\u62c9\u5e73\u4e0a\u6e38\u955c\u50cf\u7684\u8d1f\u8f7d\u3002\u6700\u597d\u5199\u4e00\u4e2acron job:     \u60a8\u5e94\u8be5\u572808:00 UTC(\u6b64\u65f6\u662f rawhide \u7248\u672c\u53d1\u5e03)\u540e\u540c\u6b65, 14:00 UTC (when bitflips occur), \u4e14\u4e00\u5929\u540c\u6b65\u6b21\u6570\u4e3a3-5\u6b21\u3002     \u8bf7\u4ece1\u7ea7\u955c\u50cf\u7ad9\u70b9\u540c\u6b65\u3002\u8bf7\u89c1 Infrastructure/Mirroring/Tiering\u3002\u9664\u4e86\u4ee5\u4e0a\u65b9\u6cd5\uff0c\u60a8\u4e5f\u53ef\u4ee5\u9009\u62e9\u4ece\u4e00\u4e2a\u6bd4\u8f83\u5feb\u7684\u955c\u50cf\u540c\u6b65\u3002\u8bf7\u8054\u7cfb\u76f8\u5173\u7ad9\u70b9\u7ba1\u7406\u5458\u4ee5\u4fbf\u5c06\u60a8\u7684\u7ad9\u70b9\u6dfb\u52a0\u5230\u4ed6\u4eec\u7684\u8bbf\u95ee\u63a7\u5236\u5217\u8868\u4e2d\u3002     \u8981\u540c\u6b65\u7684\u5185\u5bb9\u7531\u60a8\u51b3\u5b9a\uff0c\u4e0d\u5fc5\u540c\u6b65\u6240\u6709\u5185\u5bb9\uff0c\u6bd4\u5982\u67d0\u4e9b\u7279\u6b8a\u67b6\u6784\u7684\u4e13\u7528\u7248\u60a8\u53ef\u4ee5\u9009\u62e9\u6027\u540c\u6b65\u3002   rsync://dl.fedoraproject.org/fedora-enchilada ${LOCAL_DIR} rsync -vaH --exclude-from=${EXCLUDES} --numeric-ids --delete --delete-after --delay-updates \\ \u6700\u7b80\u5355\u7684\u505a\u6cd5\uff0c\u4e5f\u662f\u6700\u901a\u7528\u7684\uff0c\u5c31\u662f\u7528 rsync \u5de5\u5177\u6765\u540c\u6b65\u3002\u6ce8\u610f\u8be5\u5de5\u5177\u7684 -H (\u4fdd\u7559\u786c\u94fe\u63a5)\uff0c --delay-updates\uff0c --numeric-ids \u548c --delete-after \u9009\u9879\u662f\u5fc5\u987b\u8981\u542f\u7528\u7684\u3002\u793a\u4f8b\uff1a   \u642d\u5efa  \u54cd\u5e94\u7684\u5c31\u662f TXT \u8bb0\u5f55\uff0c3614\u3002  1.1.166.143.asn.routeviews.org. 86400 IN TXT \"3614\" \"143.166.0.0\" \"16\" ;; ANSWER SECTION: $ dig txt 1.1.166.143.asn.routeviews.org @archive.routeviews.org   You may list your site's BGP Autonomous System Number (ASN). Clients on your ASN will be automatically redirected to your mirror for any content you carry. One way to lookup up your ASN is to query it from the routeviews.org DNS servers. It is like a PTR record lookup, but at a specific server.\u4f8b\u5982\uff0c\u60f3\u8981\u67e5\u627e143.166.1.1\uff0c\u8f93\u5165\uff1a   \u60a8\u53ef\u4ee5\u5217\u51fa\u60a8\u7684\u955c\u50cf\u7684 IP \u6bb5(IP \u5730\u5740\u8303\u56f4)\u3002\u4ece\u60a8\u7684 IP \u6bb5\u5185\u6765\u8bbf\u7684\u8bf7\u6c42\u4f1a\u81ea\u52a8\u8df3\u8f6c\u81f3\u60a8\u7684\u955c\u50cf\u3002   \u8bf7\u5728\u6bcf\u6b21\u540c\u6b65\u5b8c\u6210\u540e\u8fd0\u884c report_mirror\u3002   create a new Host, and sign up that",
+    "textAfterTable": "\u4ee5\u4e0b\u7ec4\u4ef6\u8bf7\u4e0d\u8981\u540c\u6b65\uff0c\u5b83\u4eec\u662f\u7279\u5b9a\u65f6\u671f\u7684\u4ea7\u7269\u3002 \u540c\u6b65\u7ec4\u4ef6 \u63cf\u8ff0 \u4e3b\u955c\u50cf\u670d\u52a1\u5668\u4e0a\u7684\u8def\u5f84 \u5907\u6ce8 fedora-enchilada Fedora - the whole enchilada /pub/fedora Please use this if you can, it provides the all Fedora content except pre-bitflip content. This is open for the general public to use. fedora-linux-releases Fedora Linux Releases /pub/fedora/linux/releases fedora-linux-development Fedora Linux Development (Rawhide) /pub/fedora/linux/development fedora-linux-updates Fedora Linux Updates /pub/fedora/linux/updates fedora-epel Extra Packages for Enterprise Linux /pub/epel EPEL doesn't do the bitflip trick, so this is the same as fedora-epel0 above. Red Hat Enterprise Linux Beta RHEL beta \u7248\u672c\u4e5f\u901a\u8fc7 MirrorManager \u5206\u53d1\u3002Fedora \u9879\u76ee\u7684\u4e00\u7ea7\u955c\u50cf\u53ef\u4ee5\u540c\u6b65\u8fd9\u4e9b\u5185\u5bb9\u3002 \u540c\u6b65\u7684\u76ee\u5f55 \u63cf\u8ff0 path on master server \u5907\u6ce8 rhel-beta RHEL /pub/redhat on rhm3.redhat.com DVD\uff0cCD \u548c exploded trees When a new release is available, it can be bandwidth-efficient to download only the ISOs first (say, the DVD ISOs), then explode those into the directory structure, then run a full normal rsync run. This lets you avoid downloading the same RPMs twice (both on ISOs and as plain RPMs). There's a tool somewhere to help do this. Regular hardlink runs While the Fedora release maintainers try to keep as little redundant packaging around as possible, there are some duplicate packages in the tree. For example, when a Fedora Test release comes out, the package",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

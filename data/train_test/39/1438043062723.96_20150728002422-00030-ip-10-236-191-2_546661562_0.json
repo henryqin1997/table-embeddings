@@ -1,0 +1,70 @@
+{
+    "relation": [
+        [
+            "Switch",
+            "v",
+            "h",
+            "i",
+            "w",
+            "e",
+            "s",
+            "p <10ths percent>",
+            "f",
+            "d"
+        ],
+        [
+            "Name",
+            "Version",
+            "Help",
+            "Input from stdin",
+            "Enable weigthing",
+            "Exclude list",
+            "Target size",
+            "Target percentage",
+            "Fidget max",
+            "debug"
+        ],
+        [
+            "Default",
+            "",
+            "",
+            "Off",
+            "Off",
+            "",
+            "",
+            "99.0%",
+            "100",
+            "Off - 0"
+        ],
+        [
+            "Description",
+            "Prints the version infomation",
+            "Displays brief command usage help",
+            "sets the list input to come from stdin",
+            "Turns on weighting percentage checking",
+            "File with list of entries to exclude",
+            "Output target size",
+            "percentage of the target size that is acceptable specified in tenths of a percent to allow for greater flexibility with large file sizes.",
+            "See theory of operation for a more detailed explanation of this option.",
+            "Turns debug output on."
+        ]
+    ],
+    "pageTitle": "Pick-set",
+    "title": "",
+    "url": "http://www.kyllikki.org/software/pick-set/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062723.96/warc/CC-MAIN-20150728002422-00030-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 546669764,
+    "recordOffset": 546661562,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{7706=100% hand typed HTML \u00a9 Vincent Sanders $Id: index.html,v 1.1 2002/12/14 23:53:10 vince Exp $}",
+    "lastModified": "Sat, 14 Dec 2002 23:53:10 GMT",
+    "textBeforeTable": "Option Switches and their explanations command usage pick-set -s <size> [options] listfile... Basic Operation Run fillrio Edit the fillrio script as required. Install pick-set in a bin directory if you want For Rio500 operation: Type make - Known to work on Linux and solaris 2.6 (with gcc)currently. Unpack the source tar. Basic Setup When selecting a set for my Rio 500 thats 63Mb of data, one percent of that is a lot of space, hence you need to be careful with specifying your acceptable limit (I usually use 99.9%) this is why the range was extended to tenths of a percent in the first place. When using weightings is you have say 5000 files a file stands a one in five thousand chance of being picked if the file has a 50% weighting you lengthen this to one in ten thousand, those are pretty slim odds. My point? be conservative with weightings unless you really hate a track (why keep it then?) as with lots of tracks they don't come round often anyway. Setting the fidget value higher generally gets a better result more often but takes longer. The exclusion list only removes the first occourance of a file so if you have a file 10 times in the input set only the first reference is removed and the set used for selection will still have 9 references to the file. In operation",
+    "textAfterTable": "Known Problems & Omissions Acceptable limit setting needs looking at (either 1000/percent or a size setting) Weighting system should be improved (allow for wildcard names to set weights - say for whole albums or artists). Need to develop a program/script to generate weightings based on number of tracks by artist name. Build environment is primitive (maybe autoconf?) Theory of operation Aim is to produce a random selection of files constrained by a given total size and a allowable percentile underun. Note this is not a best fit algorithm! It is intended that it not pick a non optimal set of results or the output set would be the same every time for a given input set! There are two lists the \"selected\" list and the \"unselected\" list these represent the basic data structures the program uses. At the program start input from the specified list file(s) is taken. Each line from the list file is read and the specified file examined (if readable) it is placed in the unselected list else it is discarded (error message indicating why the file was unsuitable is produced). If a command line switch is set the option of supplying a weighting for each file as a percentile value on the end of each line (default is 100%) is available. If required a scan is performed for an \"exclusion\" list of entries, this is primarily so a given set can be excluded from the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

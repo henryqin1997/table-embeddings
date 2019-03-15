@@ -1,0 +1,55 @@
+{
+    "relation": [
+        [
+            "Property",
+            "name (required)",
+            "image",
+            "description",
+            "brand",
+            "review",
+            "aggregateRating",
+            "offers",
+            "sku gtin8 gtin13 gtin14 mpn"
+        ],
+        [
+            "Type",
+            "Text",
+            "URL",
+            "Text",
+            "Text",
+            "Review",
+            "AggregateRating",
+            "Offer",
+            "Text"
+        ],
+        [
+            "Description",
+            "The name of the product.",
+            "The URL of a product photo. Pictures clearly showing the product, e.g. against a white background, are preferred.",
+            "Product description.",
+            "The brand of the product.",
+            "A nested Review of the product.",
+            "A nested aggregateRating of the product.",
+            "An offer to sell the product. Includes a nested Offer or AggregateOffer.",
+            "Various identification properties; these are described at schema.org/Product. Google recommends including brand and at least one identifier for each product."
+        ]
+    ],
+    "pageTitle": "Enabling Rich Snippets for Products \u00a0 | \u00a0 Structured Data \u00a0 | \u00a0 Google Developers",
+    "title": "",
+    "url": "https://developers.google.com/structured-data/rich-snippets/products?hl=en&rd=1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987775.70/warc/CC-MAIN-20150728002307-00173-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 872740990,
+    "recordOffset": 872724596,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{41518=Last updated July 23, 2015.}",
+    "lastModified": "Thu, 23 Jul 2015 21:13:46 GMT",
+    "textBeforeTable": "When you mark up your content for product information, use the following properties of the schema.org Product type: A Product can include an Offer or AggregateOffer (using \"offers\"); or an Offer or AggregateOffer can include one or more products (using \"itemOffered\"). Use the structure that works best for your content. AggregateOffer (aggregated details about multiple Offers for the same product, including the lowest and highest available prices). Offer (price and other offer information). A product offer consists of product information (details about the product itself, such as its name, brand, and model) plus one of the following: About product offers Examples for both types of markup appear below. See also the Reviews and ratings documentation. a shopping aggregator page that lists a single product, along with information about different sellers offering that product a product page that describes a single product This page explains how to mark up your product information so that Google can display rich snippets. There are two types of pages where you would typically use this markup: Control your product information. You can maintain the accuracy and freshness of your product information, so your customers find the relevant, current items they're looking for. Attract potential buyers while they are searching for items to buy on Google. Using markup to enable rich snippets lets you: If you're a merchant, you can give Google detailed",
+    "textAfterTable": "When marking up offers within a product, use the following properties of the schema.org Offer type: Property Type Description price (required) Number The price of the product. Follow schema.org formatting guidelines. priceCurrency (required) Text The currency used to describe the product price, in three-letter ISO 4217 format. priceValidUntil Date The date (in ISO 8601 date format) after which the price will no longer be available. (Your product snippet may not display if the priceValidUntil property indicates a past date.) availability ItemAvailability Value is taken from a constrained list of options, expressed in markup using URL links. Google also understands their short names (for example InStock or OutOfStock, without the full URL scope.) url URL A URL to the product web page (that includes the Offer). (Don't use offerURL for markup that appears on the product page itself.) itemOffered Thing The item being sold. Typically, this includes a nested product, but it can also contain other item types or free text. An AggregateOffer is a kind of Offer representing an aggregation of other offers. When marking up aggregate offers within a product, use the following properties of the schema.org AggregateOffer type: Property Type Description lowPrice (required) Number The lowest price of all offers available. Floating point number. highPrice Number The highest price",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "Parameter:",
+            "\"name\"",
+            "default=\"...\"",
+            "newline=\"\"",
+            "encode=\"entity\"",
+            "encode=\"url\"",
+            "multiple=\"on\" multiple=\"[[$item]]\"",
+            "separator=\", \""
+        ],
+        [
+            "Description:",
+            "The name of a URL parameter",
+            "Default value in case parameter is empty or missing",
+            "Convert newlines in textarea to other delimiters",
+            "Encode special characters into HTML entities, like a double quote into \". This is needed if text is put into an HTML form field",
+            "Encode special characters for URL parameter use, like a double quote into %22",
+            "If set, gets all selected elements of a tag. A format can be specified, with $item indicating the element, e.g. multiple=\"Option: $item\"",
+            "Separator between multiple selections. Only relevant if multiple is specified"
+        ],
+        [
+            "Default:",
+            "required",
+            "empty string",
+            "no conversion",
+            "no encoding",
+            "no encoding",
+            "first element",
+            "\"\\n\" (new line)"
+        ]
+    ],
+    "pageTitle": "(r1.2) TWikiVariables < Main < DENX",
+    "title": "",
+    "url": "http://www.denx.de/wiki/view/Main/TWikiVariables?rev=1.2&sortcol=0&table=6&up=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 10,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986625.58/warc/CC-MAIN-20150728002306-00077-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 390302727,
+    "recordOffset": 390282237,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Supported parameters: Syntax: %ENCODE{\"string\"}% ENCODE{\"string\"} -- encodes a string Related: DISPLAYTIME, GMTIME, SERVERTIME Example: %DISPLAYTIME{\"$hou:$min\"}% expands to 20:10 Syntax: %DISPLAYTIME{\"format\"}% Formatted time - either GMT or Local server time, depending on setting in TWiki.cfg. Same format qualifiers as %GMTIME% DISPLAYTIME{\"format\"} -- formatted display time Related: DISPLAYTIME{\"format\"}, GMTIME, SERVERTIME Expands to: 29 Jul 2015 - 20:10 Syntax: %DISPLAYTIME% DISPLAYTIME -- display time Related: BASETOPIC, INCLUDINGWEB, INCLUDE, WEB Syntax: %BASEWEB% The web name where the includes started, e.g. the web of the first topic of nested includes. Same as %WEB% in case there is no include. BASEWEB -- base web where an INCLUDE started Related: BASEWEB, INCLUDINGTOPIC, INCLUDE, TOPIC Syntax: %BASETOPIC% The name of the topic where a single or nested INCLUDE started - same as %TOPIC% if there is no INCLUDE BASETOPIC -- base topic where an INCLUDE started Related: ATTACHURL, PUBURL,",
+    "textAfterTable": "required topic=\"...\" Topic where form data is located. May be of the form Web.TopicName Current topic format=\"...\" Format string. $value expands to the field value \"$value\" default=\"...\" Text shown when no value is defined for the field \"\" alttext=\"...\" Text shown when field is not found in the form \"\" Example: %FORMFIELD{\"ProjectName\" topic=\"Projects.SushiProject\" default=\"(not set)\" alttext=\"ProjectName field found\"}% Related: SEARCH GMTIME -- GM time Syntax: %GMTIME% Expands to: 29 Jul 2015 - 20:10 Related: DISPLAYTIME, GMTIME{\"format\"}, SERVERTIME GMTIME{\"format\"} -- formatted GM time Syntax: %GMTIME{\"format\"}% Supported variables: Variable: Unit: Example $seconds seconds 59 $minutes minutes 59 $hours",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

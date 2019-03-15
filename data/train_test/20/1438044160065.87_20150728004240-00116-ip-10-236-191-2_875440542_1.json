@@ -1,0 +1,64 @@
+{
+    "relation": [
+        [
+            "Source Package",
+            "chromium-browser (PTS)",
+            "",
+            "",
+            "",
+            "",
+            "libxslt (PTS)",
+            "",
+            ""
+        ],
+        [
+            "Release",
+            "squeeze, squeeze (security)",
+            "wheezy, wheezy (security)",
+            "jessie",
+            "jessie (security)",
+            "stretch, sid",
+            "squeeze, squeeze (security)",
+            "wheezy",
+            "stretch, sid, jessie"
+        ],
+        [
+            "Version",
+            "6.0.472.63~r59945-5+squeeze6",
+            "37.0.2062.120-1~deb7u1",
+            "43.0.2357.65-1~deb8u1",
+            "44.0.2403.89-1~deb8u1",
+            "44.0.2403.107-1",
+            "1.1.26-6+squeeze3",
+            "1.1.26-14.1",
+            "1.1.28-2"
+        ],
+        [
+            "Status",
+            "vulnerable",
+            "fixed",
+            "fixed",
+            "fixed",
+            "fixed",
+            "fixed",
+            "fixed",
+            "fixed"
+        ]
+    ],
+    "pageTitle": "CVE-2013-2902",
+    "title": "",
+    "url": "https://security-tracker.debian.org/tracker/CVE-2013-2902",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044160065.87/warc/CC-MAIN-20150728004240-00116-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 875448744,
+    "recordOffset": 875440542,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "CVE-2013-2902",
+    "textAfterTable": "6.0.472.63~r59945-5+squeeze6 vulnerable wheezy, wheezy (security) 37.0.2062.120-1~deb7u1 fixed jessie 43.0.2357.65-1~deb8u1 fixed jessie (security) 44.0.2403.89-1~deb8u1 fixed stretch, sid 44.0.2403.107-1 fixed libxslt (PTS) squeeze, squeeze (security) 1.1.26-6+squeeze3 fixed wheezy 1.1.26-14.1 fixed stretch, sid, jessie 1.1.28-2 fixed The information below is based on the following data on fixed versions. Package Type Release Fixed Version Urgency Origin Debian Bugs chromium-browser source (unstable) 29.0.1547.57-1 high chromium-browser source squeeze (unfixed) end-of-life chromium-browser source wheezy 29.0.1547.57-1~deb7u1 high DSA-2741-1 libxslt source (unstable) (not affected) Notes - libxslt <not-affected> (according to https://chromiumcodereview.appspot.com/20856002 this is an issue on chromium's side of xslt handling) Search for package or bug name: Reporting problems Home - Debian Security - Source (SVN)",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

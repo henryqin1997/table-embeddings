@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust"
+        ],
+        [
+            "Average",
+            "-10.2 \u00b0C",
+            "-13.8 \u00b0C",
+            "74.9 %",
+            "1016.3 hPa",
+            "15.6 km/h",
+            ""
+        ],
+        [
+            "High",
+            "-7.8 \u00b0C (5:53 am)",
+            "-10.6 \u00b0C (8:53 am)",
+            "88 % (10:53 am)",
+            "1020.7 hPa (11:53 pm)",
+            "33.3 km/h (8:58 am)",
+            "44.4 km/h (4:53 pm)"
+        ],
+        [
+            "Low",
+            "-16 \u00b0C (11:44 pm)",
+            "-19.4 \u00b0C (6:53 pm)",
+            "59 % (1:53 am)",
+            "1013.5 hPa (1:09 pm)",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Ann Arbor, Michigan [21 January, 2013] - Weather Records By Hour (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherhourly.php3?s=32002&date=2013-01-21&cityname=Ann+Arbor%2C+Michigan%2C+United+States+of+America&units=metric",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992201.62/warc/CC-MAIN-20150728002312-00091-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 820624564,
+    "recordOffset": 820608170,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0F ] \u00a0 \u00b0C [ Next Day \u2192 ] WEATHER ALMANAC - 21 JANUARY, 2013 [ \u2190 Previous Day ] } PrintUrl('printIframe', 'http://www.weatherbase.com/weather/weatherhourly-print.php3?s=32002&date=2013-01-21&cityname=Ann+Arbor%2C+Michigan%2C+United+States+of+America&units=metric'); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); window.location = url; var url = \"/weather/weatherhourly.php3?s=32002&date=\" + event.format() + \"&citynameAnn+Arbor%2C+Michigan%2C+United+States+of+America&set=\"; $('#datepicker').datepicker().on('changeDate', function (event) { }); startView: 2 endDate: \"2015-08-03\", startDate: \"1995-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 6.8 km Wind Direction WNW (283.5 \u00b0) Weather Element Total Precipitation 1.02 mm Heating Degree Days 30.2 (Base 18.3) Averaged from 75 records on 21 January, 2013",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

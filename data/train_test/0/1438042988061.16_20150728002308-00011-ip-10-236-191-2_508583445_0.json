@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Version",
+            "IIS 8.5",
+            "IIS 8.0",
+            "IIS 7.5",
+            "IIS 7.0",
+            "IIS 6.0"
+        ],
+        [
+            "Notes",
+            "The element was not modified in IIS 8.5.",
+            "The element was added as a child element.",
+            "The element was not modified in IIS 7.5.",
+            "The element was introduced in IIS 7.",
+            "The element replaces the IIS 6.0 security metabase properties that related to certificates, authentication, and authorization."
+        ]
+    ],
+    "pageTitle": "Security <security> : The Official Microsoft IIS Site",
+    "title": "",
+    "url": "http://www.iis.net/configreference/system.webserver/security?showTreeNavigation=true",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00011-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 508599384,
+    "recordOffset": 508583445,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{5334=Note: For enhanced security, neither Windows Vista or Windows Server 2008 installs IIS 7 by default. When you do install IIS 7, IIS is automatically configured to serve only static content, including HTML and image files. You must manually install any other role services and features required by your Web sites and applications. This strategy greatly reduces the IIS 7 attack surface.}",
+    "textBeforeTable": "Compatibility Note: For enhanced security, neither Windows Vista or Windows Server 2008 installs IIS 7 by default. When you do install IIS 7, IIS is automatically configured to serve only static content, including HTML and image files. You must manually install any other role services and features required by your Web sites and applications. This strategy greatly reduces the IIS 7 attack surface. The <isapiCgiRestriction> element specifies a list of CGI and ISAPI applications that can run on IIS 7. This element allows you to ensure that malicious users cannot copy unauthorized CGI and ISAPI binaries to your Web server and then run them. The <applicationDependencies> element specifies an application that has dependencies to one or more CGI or ISAPI extension restrictions. You can combine the <isapiCgiRestriction> element with the <applicationDependencies> element in order to ensure your CGI or ISAPI extension restrictions are set properly. The <authentication> element defines configuration sections for all user authentication types that you can install and enable on your IIS 7 server, whereas the <authorization> element configures the user accounts that can access your site or application. You use <authorization> in combination with <authentication> to secure access to content on your server. The <access> element configures SSL settings for your Web server, site, or application. The settings in the <security> section group can be combined for extra security. For example: The <security> section group resides in the <system.webServer> section and contains all elements that configure security settings on an Internet",
+    "textAfterTable": "Setup The <security> element is included in the default installation of IIS 7. How To How to disable anonymous authentication Open Internet Information Services (IIS) Manager: If you are using Windows Server 2012 or Windows Server 2012 R2: On the taskbar, click Server Manager, click Tools, and then click Internet Information Services (IIS) Manager. If you are using Windows 8 or Windows 8.1: Hold down the Windows key, press the letter X, and then click Control Panel. Click Administrative Tools, and then double-click Internet Information Services (IIS) Manager. If you are using Windows Server 2008 or Windows Server 2008 R2: On the taskbar, click Start, point to Administrative Tools, and then click Internet Information Services (IIS) Manager. If you are using Windows Vista or Windows 7: On the taskbar, click Start, and then click Control Panel. Double-click Administrative Tools, and then double-click Internet Information Services (IIS) Manager. In the Connections pane, expand the server name, expand Sites, and go to the level in the hierarchy pane that you want to configure, and then click the Web site or Web application. Scroll to the Security section in the Home pane, and then double-click Authentication. In the Authentication pane, select Anonymous Authentication, and then click Disable in the Actions pane. How to change anonymous authentication credentials from the IUSR account",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

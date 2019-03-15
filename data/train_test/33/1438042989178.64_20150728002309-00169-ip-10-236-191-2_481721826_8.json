@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Feb 12, 2001",
+            "May 24, 2006",
+            "Oct 23, 2006",
+            "Oct 23, 2006",
+            "Oct 20, 2008",
+            "Apr 22, 2010",
+            "Feb 8, 2013",
+            "Apr 24, 2014"
+        ],
+        [
+            "Code",
+            "AS",
+            "REMI",
+            "FPAY",
+            "SULP",
+            "AS",
+            "FPAY",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Fee payment",
+            "Surcharge for late payment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "",
+            "",
+            "Year of fee payment: 4",
+            "",
+            "Owner name: OXSTAPO TRE ME, L.L.C., DELAWARE Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:ONDOTEK, INC.;REEL/FRAME:021701/0784 Effective date: 20080730",
+            "Year of fee payment: 8",
+            "Owner name: INTELLECTUAL VENTURES II LLC, DELAWARE Free format text: MERGER;ASSIGNOR:OXSTAPO TRE ME, L.L.C.;REEL/FRAME:029785/0263 Effective date: 20130207",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6477624 - Data image management via emulation of non-volatile storage device - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6477624?dq=5920316",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989178.64/warc/CC-MAIN-20150728002309-00169-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 481756543,
+    "recordOffset": 481721826,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{47302=This application claims the benefit of the following three U.S. Provisional Patent Applications: (1) U.S. Provisional Patent Application No. 60/163,954, filed, Nov. 8, 1999; (2) U.S. Provisional Application No. 60/211,291, filed Jun. 13, 2000; and (3) U.S. Provisional Application No. 60/240,138, filed Oct. 13, 2000, entitled \u201cComputer System Providing a Virtual Disk Image Management System in Software.\u201d All of the above mentioned provisional patent applications are incorporated herein in their entirety by this reference., 63089=Additionally, the DIMS can cache multiple master data images on the local hard disk. This is advantageous where the computer has more than one user and each user has his or her own personalized data image. The DIMS uses a standard coherent caching algorithm (such as described in the standard textbook: Almasi and Gottlieb, Parallel Computing, 2nd edition, 1994, the entire contents of which are incorporated herein by this reference.) and implementation to store the cached data images and maintain their coherency with the corresponding master data image. When the LDIM is unable to communicate with the RDIM, the computer in which it is installed can still operate to the extent that the required software and data is cached on the local hard disk., 68661=It is another object of the present invention to allow the DIMS to work with any operating system presently available on the market (including DOS, Windows 98/NT/2000/ME, Unix, Novell, OS/2, BeOS) or any future operating system that supports any of the standard persistent storage device interfaces.}",
+    "textBeforeTable": "Patent Citations It will thus be seen that the objects set forth above, among those made apparent from the preceding description, are efficiently attained and, since certain changes may be made in carrying out the above methods and in the devices as set forth without departing from the spirit and scope of the invention, it is intended that all matter contained in the above description and shown in the accompanying drawings shall be interpreted as illustrative and not in a limiting sense. Thus, the breadth and scope of the present invention should be defined only in accordance with the following claims and their equivalents. As the LDIM can include encryption/decryption capability, the images can be stored encrypted on the remote persistent storage device and on the local persistent device, if any. That is, before the LDIM performs a write, the LDIM encrypts the data to be written and then writes the encrypted data. Similarly, when the LDIM process a read request, it first reads the data (either from the cached data image or from the master data image) and then decrypts the data before passing the data to the CPU of the computer. A computer including a LDIM can be used by multiple users at different times, with each user's master data image being transparently provided to him. Also, a user can choose which master data image to use. Also, because the physical data image is stored remotely,",
+    "textAfterTable": "US7191261 * Aug 20, 2001 Mar 13, 2007 International Business Machines Corporation System and method to use unmodified operating system on diskless computer US7222229 Dec 2, 2005 May 22, 2007 Veritas Operating Corporation System for automated boot from disk image US7293150 Jun 28, 2002 Nov 6, 2007 Microsoft Corporation Method and system for creating and restoring an image file US7334099 * Jun 28, 2002 Feb 19, 2008 Microsoft Corporation Method and system for managing image files US7496920 Jun 25, 2007 Feb 24, 2009 Symantec Operating Corporation Dynamic computing environment using remotely allocable resources US7506151 Feb 14, 2006 Mar 17, 2009 Symantec Operating Corporation System for managing boot-up of target computers US7533374 * Jun 12, 2003 May 12, 2009 Intel Corporation Adaptively storing system code in non-volatile storage US7673130 Sep 30, 2005 Mar 2, 2010 Symantec Operating",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

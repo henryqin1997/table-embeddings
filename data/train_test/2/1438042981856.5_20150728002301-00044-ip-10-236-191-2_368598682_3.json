@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Element",
+            "seq no:",
+            "timestamp formats: mm/dd h h:mm:ss or hh:mm:ss (short uptime) or d h (long uptime)",
+            "facility",
+            "severity",
+            "MNEMONIC",
+            "description",
+            "hostname-n"
+        ],
+        [
+            "Description",
+            "Stamps log messages with a sequence number only if the service sequence-numbers global configuration command is configured.",
+            "Date and time of the message or event. This information appears only if the service timestamps log [datetime | log] global configuration command is configured.",
+            "The facility to which the message refers (for example, SNMP, SYS, and so forth).",
+            "Single-digit code from 0 to 7 that is the severity of the message.",
+            "Text string that uniquely describes the message.",
+            "Text string containing detailed information about the event being reported.",
+            "Hostname of a stack member and its switch number in the stack. Though the is a stack member, it does not append its hostname to system messages."
+        ]
+    ],
+    "pageTitle": "System Management Configuration Guide, Cisco IOS XE Release 3SE (Cisco WLC 5700 Series) - Configuring System Message Logs [Cisco 5700 Series Wireless LAN Controllers] - Cisco",
+    "title": "Table 1 System Log Message Elements",
+    "url": "http://www.cisco.com/c/en/us/td/docs/wireless/controller/5700/software/release/3se/system_management/configuration_guide/b_sm_3se_5700_cg/b_sm_32se_5700_cg_chapter_01101.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00044-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 368621615,
+    "recordOffset": 368598682,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "service timestamps log uptime service timestamps log datetime [localtime] [msec] [show-timezone] service timestamps log datetime service sequence-numbers The part of the message preceding the percent sign depends on the setting of these global configuration commands: seq no:timestamp: %facility-severity-MNEMONIC:description seq no:timestamp: %facility-severity-MNEMONIC:description (hostname-n) System log messages can contain up to 80 characters and a percent sign (%), which follows the optional sequence number or time-stamp information, if configured. Depending on the switch, messages appear in one of these formats: System Log Message Format The syslog format is compatible with 4.3 BSD UNIX. Note You can remotely monitor system messages by viewing the logs on a syslog server or by accessing the switch through Telnet, through the console port, or through the Ethernet management port. In a switch stack, all stack member consoles provide the same console output. You can access logged system messages by using the switch command-line interface (CLI) or by saving them to",
+    "textAfterTable": "Default System Message Logging Settings Table 2\u00a0Default System Message Logging Settings Feature Default Setting System message logging to the console Enabled. Console severity Debugging. Logging file configuration No filename specified. Logging buffer size 4096 bytes. Logging history size 1 message. Time stamps Disabled. Synchronous logging Disabled. Logging server Disabled. Syslog server IP address None configured. Server facility Local7",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

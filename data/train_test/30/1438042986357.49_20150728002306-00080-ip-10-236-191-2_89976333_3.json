@@ -1,0 +1,73 @@
+{
+    "relation": [
+        [
+            "Region",
+            "us-east-1",
+            "us-east-1",
+            "us-west-1",
+            "us-west-1",
+            "eu-west-1",
+            "eu-west-1",
+            "ap-southeast-1",
+            "ap-southeast-1",
+            "ap-northeast-1",
+            "ap-northeast-1"
+        ],
+        [
+            "Architecture",
+            "i386",
+            "x86_64",
+            "i386",
+            "x86_64",
+            "i386",
+            "x86_64",
+            "i386",
+            "x86_64",
+            "i386",
+            "x86_64"
+        ],
+        [
+            "Root store",
+            "EBS-backed",
+            "EBS-backed",
+            "EBS-backed",
+            "EBS-backed",
+            "EBS-backed",
+            "EBS-backed",
+            "EBS-backed",
+            "EBS-backed",
+            "EBS-backed",
+            "EBS-backed"
+        ],
+        [
+            "AMI ID",
+            "ami-2f69a446",
+            "ami-d96ea3b0",
+            "ami-6d4d1128",
+            "ami-7f5a063a",
+            "ami-c4fbc9b0",
+            "ami-d6fbc9a2",
+            "ami-c01b6192",
+            "ami-201b6172",
+            "ami-e6bb0fe7",
+            "ami-32bb0f33"
+        ]
+    ],
+    "pageTitle": "Test Day:2011-10-20 Cloud SIG Fedora EC2 - FedoraProject",
+    "title": "",
+    "url": "http://fedoraproject.org/w/index.php?title=Test_Day:2011-10-20_Cloud_SIG_Fedora_EC2&diff=257947&oldid=257945",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986357.49/warc/CC-MAIN-20150728002306-00080-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 89986047,
+    "recordOffset": 89976333,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{18048=Copyright \u00a9 2015 Red Hat, Inc. and others. All Rights Reserved. For comments or queries, please contact us.}",
+    "textBeforeTable": "Enter one of the ami IDs below into the text box and follow the prompts to launch the image: Click on the \"Community AMIs\" tab. In the main window, select launch instance. In the left pane, select the US-East-1 region. Choose the EC2 tab. Fedora EC2 images for test day are publicly accessible, but not broadly advertised. To launch an instance, log into the AWS Management Console. Test Day EC2 Images How to test? Standard Fedora repositories must be available. Internet connectivity for connecting to EC2 images. Note: If you do not have an EC2 account, you can contact Robyn (rbergero at fedoraproject dot org), or rbergeron on IRC (on freenode) to have temporary test day credentials issued to you. An Amazon EC2 account. Free time Prerequisite for Test Day Development - Justin Forbes (jforbes) The following cast of characters will be available testing, workarounds, bug fixes, and general discussion ... Who's available Today's instalment of Fedora Test Day will focus on Fedora EC2 Images What to test? 6.2 Issues that Were Identified 6.1",
+    "textAfterTable": "Testing the Images Launch one of the mentioned AMIs on EC2. Log in as 'ec2-user' using the ssh key you specified on launch 'sudo yum update' (this should work without requiring a root password) Is selinux enabled and functional? Use yum to install a workload that you are familiar with, are there any problems installing standard F16 packages? Test Results If you have problems with any of the tests, report a bug to Bugzilla. Need help? If you are unsure about exactly how to file the report or what other information to include, just ask on IRC and we will help you. Once you have completed the tests, add your results to the Results table below, following the example results from the first line as a template. The first column should be your name with a link to your User page in the Wiki if you have one, and the second should be a link to the Smolt profile of the system you tested. For each test case, use the result template to enter your result, as shown in the example result line. Issues that Were Identified User Smolt Profile Description References",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

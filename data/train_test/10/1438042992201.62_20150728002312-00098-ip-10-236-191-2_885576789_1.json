@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "date",
+            "2/8/2014",
+            "4/25/2014",
+            "4/26/2014",
+            "4/27/2014",
+            "10/11/2014"
+        ],
+        [
+            "city",
+            "Nichols",
+            "Milwaukee",
+            "Milwaukee",
+            "Milwaukee",
+            "Springfield"
+        ],
+        [
+            "state",
+            "NY",
+            "WI",
+            "WI",
+            "WI",
+            "MA"
+        ],
+        [
+            "venue",
+            "Tioga Downs",
+            "Vogel Hall at Marcus Center",
+            "Vogel Hall at Marcus Center",
+            "Vogel Hall at Marcus Center",
+            "CityStage"
+        ]
+    ],
+    "pageTitle": "Ted Vigil Concert Tickets | SeatGeek",
+    "title": "",
+    "url": "https://seatgeek.com/ted-vigil-tickets",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992201.62/warc/CC-MAIN-20150728002312-00098-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 885607115,
+    "recordOffset": 885576789,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "2015 Tour Dates } ); document.getElementById('location-autocomplete') }), } } window.location.href = window.location.pathname + '?lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id } else { window.location.href = window.location.href + '&lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id; if(window.location.href.match('/search')) { SG.GA.sendEvent('team-show-page', 'location-input', { label: selection.term }); onSelect: function(selection) { }, return (data.results && data.results.location) ? data.results.location : [] dataExtractionFunction: function(data) { placeholder: 'Search by City...', postSelectLoad: true, limit: 3, contentKey: 'term', idKey: 'id', queryString: \"types[]=location\", source: \"/autocomplete\", React.createFactory(Autocomplete)({ React.render( if (document.getElementById('location-autocomplete')) {",
+    "textAfterTable": "4/26/2014 Milwaukee WI Vogel Hall at Marcus Center 4/27/2014 Milwaukee WI Vogel Hall at Marcus Center 10/11/2014 Springfield MA CityStage 2013 date city state venue 1/18/2013 Annapolis MD Rams Head On Stage 4/6/2013 Sellersville PA Sellersville Theater 1894 5/16/2013 Springfield MA City Stage 5/17/2013 Springfield MA City Stage 9/13/2013 Lakewood OH The Winchester 12/27/2013 Annapolis MD Rams Head On Stage 12/29/2013 Alexandria VA Birchmere Music Hall 2012 date city state venue 10/26/2012 Norfolk CT Infinity Hall 12/14/2012 Birmingham AL Workplay Theatre 12/27/2012 Alexandria VA Birchmere Music Hall 12/28/2012 Pittsburgh PA Hard Rock Cafe 12/30/2012 Buffalo NY Tralf Music Hall",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

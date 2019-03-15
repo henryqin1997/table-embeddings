@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Value",
+            "M 40 60",
+            "L 10 60",
+            "L 40 42.68",
+            "M 60 60",
+            "L 90 60",
+            "L 60 42.68"
+        ],
+        [
+            "Action",
+            "Move pen to (40, 60)",
+            "Draw a line to (10, 60)",
+            "Draw a line to (40, 42.68)",
+            "Start a new subpath; move pen to (60, 60) \u2014 no line is drawn",
+            "Draw a line to (90, 60)",
+            "Draw a line to (60, 42.68)"
+        ]
+    ],
+    "pageTitle": "SVG Essentials/Paths - WikiContent",
+    "title": "",
+    "url": "http://commons.oreilly.com/wiki/index.php?title=SVG_Essentials/Paths&diff=26165&oldid=2658",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989891.18/warc/CC-MAIN-20150728002309-00166-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 48436403,
+    "recordOffset": 48414263,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Examining the last path more closely: </g> M 60 60, L 90 60, L 60 42.68\"/> <path d=\"M 40 60, L 10 60, L 40 42.68, <!-- two thirty-degree angles --> <path d=\"M 10, 20 L 100, 20 L 100,50\"/> <!-- a right angle --> <path d=\"M 10 10 L 100 10\"/> <!-- single line --> <g style=\"stroke: black; fill: none;\"> Example 6-1. Using moveto and lineto   This is followed by one or more lineto commands, denoted by a capital L, also followed by x- and y-coordinates, and separated by commas or whitespace. Example 6-1 has three paths. The first draws a single line, the second draws a right angle, and the third draws two thirty-degree angles. When you \"pick up\" the pen with another moveto, you are starting a new subpath. Notice that the use of commas and whitespace as separators is different, but perfectly legal, in all three paths. The result is Figure 6-1.  Every path must begin with a moveto command. The command letter is a capital M followed by an x- and y-coordinate, separated by commas or whitespace. This command sets the current location of the \"pen\" that's drawing the outline.  moveto, lineto, and closepath         11 Notes 10",
+    "textAfterTable": "Figure 6-1. Result of using moveto and lineto Note You may have noticed that the path data doesn't look very much like the typical values for XML attributes. Because the entire path data is contained in one attribute rather than an individual element for each point or line segment, a path takes up less memory when read into a Document Object Model structure by an XML parser. Additionally, a path's compact notation allows a complex graphic to be transmitted without requiring a great deal of bandwidth. If you want to use a <path> to draw a rectangle, you can draw all four lines, or you can draw the first three lines and then use the closepath command, denoted by a capital Z, to draw a straight line back to the beginning point of the current subpath. Example 6-2 is the SVG for Figure 6-2, which shows a rectangle drawn the hard way, a rectangle drawn with closepath, and a path that draws two triangles by opening and closing two subpaths. Example 6-2. Using closepath <g style=\"stroke: black; fill: none;\"> <!-- rectangle; all four lines --> <path d=\"M 10 10, L 40 10, L 40 30, L 10 30, L 10 10\"/> <!-- rectangle with closepath -->",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

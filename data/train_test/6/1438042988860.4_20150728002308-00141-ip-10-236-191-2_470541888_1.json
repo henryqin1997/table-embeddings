@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Capability Code",
+            "E",
+            "I",
+            "P",
+            "S",
+            "s"
+        ],
+        [
+            "Meaning",
+            "Extended Service Set (ESS). Indicates that the station is part of an infrastructure network rather than an IBSS/ad-hoc network.",
+            "IBSS/ad-hoc network. Indicates that the station is part of an ad-hoc network rather than an ESS network.",
+            "Privacy. Encryption is required for all data frames exchanged within the BSS using cryptographic means such as WEP, TKIP or AES-CCMP.",
+            "Short Preamble. Indicates that the network is using short preambles, defined in 802.11b High Rate/DSSS PHY, and utilizes a 56 bit sync field rather than the 128 bit field used in long preamble mode.",
+            "Short slot time. Indicates that the 802.11g network is using a short slot time because there are no legacy (802.11b) stations present."
+        ]
+    ],
+    "pageTitle": "31.3.\u00a0Wireless Networking",
+    "title": "",
+    "url": "http://www.freebsd.org/doc/en_US.ISO8859-1/books/handbook/network-wireless.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00141-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 470563791,
+    "recordOffset": 470541888,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 01 Aug 2015 17:30:44 GMT",
+    "textBeforeTable": "Table\u00a031.2.\u00a0Station Capability Codes The output of a scan request lists each BSS/IBSS network found. Besides listing the name of the network, the SSID, the output also shows the BSSID, which is the MAC address of the access point. The CAPS field identifies the type of each network and the capabilities of the stations operating there: The interface must be up before it can scan. Subsequent scan requests do not require the interface to be marked as up again. Note: freebsdap 00:11:95:c3:0d:ac 1 54M -83:96 100 EPS WPA dlinkap 00:13:46:49:41:76 11 54M -90:96 100 EPS WPA WME SSID/MESH ID BSSID CHAN RATE S:N INT CAPS # ifconfig wlan0 up scan # ifconfig wlan0 create wlandev ath0 To scan for available networks, use ifconfig(8). This request may take a few moments to complete as it requires the system to switch to each available wireless frequency and probe for available access points. Only the superuser can initiate a scan: 31.3.4.1.1.\u00a0How to Find Access Points 31.3.4.1.\u00a0FreeBSD Clients Infrastructure (BSS) mode is the mode that is typically used. In this mode, a number of wireless access points are connected to a wired network.",
+    "textAfterTable": "One can also display the current list of known networks with: # ifconfig wlan0 list scan This information may be updated automatically by the adapter or manually with a scan request. Old data is automatically removed from the cache, so over time this list may shrink unless more scans are done. 31.3.4.1.2.\u00a0Basic Settings This section provides a simple example of how to make the wireless network adapter work in FreeBSD without encryption. Once familiar with these concepts, it is strongly recommend to use WPA to set up the wireless network. There are three basic steps to configure a wireless network: select an access point, authenticate the station, and configure an IP address. The following sections discuss each step. 31.3.4.1.2.1.\u00a0Selecting an Access Point Most of the time, it is sufficient to let the system choose an access point using the builtin heuristics. This is the default behaviour when an interface is marked as up or it is listed in /etc/rc.conf: wlans_ath0=\"wlan0\" ifconfig_wlan0=\"DHCP\" If there are multiple access points, a specific one can be selected by its SSID: wlans_ath0=\"wlan0\" ifconfig_wlan0=\"ssid your_ssid_here DHCP\" In an environment where there are multiple access points with the same SSID, which is often done to simplify roaming, it may",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

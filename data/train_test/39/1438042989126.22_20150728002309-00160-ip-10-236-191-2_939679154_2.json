@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Tasks",
+            "Load data",
+            "Choose problem representation",
+            "Generate candidate features",
+            "fit to model",
+            "Win competition"
+        ],
+        [
+            "Status",
+            "started",
+            "started",
+            "0%",
+            "0%",
+            "0%"
+        ],
+        [
+            "target date",
+            "11/24",
+            "11/24",
+            "11/24",
+            "",
+            ""
+        ],
+        [
+            "subpage",
+            "Load data",
+            "Problem Representation",
+            "Features",
+            "Model",
+            "Prize Plan"
+        ]
+    ],
+    "pageTitle": "Machine Learning/Kaggle Social Network Contest - Noisebridge",
+    "title": "",
+    "url": "https://www.noisebridge.net/index.php?title=Machine_Learning/Kaggle_Social_Network_Contest&diff=14364&oldid=14278",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989126.22/warc/CC-MAIN-20150728002309-00160-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 939695548,
+    "recordOffset": 939679154,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Status Official Sample Submission File: http://dl.dropbox.com/u/14895843/social-network-kaggle/sample_submission.csv Official Test Data File: http://dl.dropbox.com/u/14895843/social-network-kaggle/social_test.txt Official Training Data File: http://dl.dropbox.com/u/14895843/social-network-kaggle/social_train.csv Official Data Downloads Data Details: http://kaggle.com/socialNetwork?viewtype=data (login required) Overview: http://kaggle.com/socialNetwork Official Contest Links 9 Possible Features 8 Working Data Dumps 7 Useful Links 6 Brainstorming on Strategy 5 Brainstorming on Process 4 Key Contest Info 3 Status 2 Official Data Downloads 1 Official Contest Links Contents Revision as of 00:46, 19 November 2010 |} \u00a0 |} \u00a0 | [[/what to do with all the money | Prize Plan]] \u00a0 | [[/what to do with all the money | Prize Plan]] \u00a0 | \u00a0 + 11/24 |",
+    "textAfterTable": "Key Contest Info The data has been downloaded using the API of a social network. There are 7.2m contacts/edges of 38k users/nodes. These have been drawn randomly ensuring a certain level of closedness. You are given 7,237,983 contacts/edges from a social network (social_train.zip). The first column is the outbound node and the second column is the inbound node. The ids have been encoded so that the users are anonymous. Ids reach from 1 to 1,133,547. There are 37,689 outbound nodes and 1,133,518 inbound nodes. Most outbound nodes are also inbound nodes so that the total number of unique nodes is 1,133,547. The way the contacts were sampled makes sure that the universe is roughly closed. Note that not every relationship is mutual. The test dataset contains 8,960 edges from 8,960 unique outbound nodes (social_test.csv). Of those 4,480 are true and 4,480 are false edges. You are tasked to predict which are true (1) and which are false (0). You need to supply back a file with outbound node id,inbound node id,[0,1] in each row. This means you can assign a probability of being true to an edge. You are being scored on the AUC. A random model will have an AUC of 0.5, so you need to try to do better than that (ie have a higher AUC). Your entry should conform to the format in sample_submission.csv. You are encouraged to explore techniques which explain the social network/graph. The",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

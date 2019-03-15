@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Technology, Feature or Patch",
+            "LTTng",
+            "SystemTap (and Kprobes) for non-i386 arches",
+            "Kernel Function Trace (KFT)",
+            "ftrace",
+            "printk-times (arch support)"
+        ],
+        [
+            "Status",
+            "core not mainlined. Markers were mainlined in 2.6.24",
+            "ARM support merged for 2.6.25",
+            "not mainlined",
+            "mainlined in 2.6.27",
+            "fully mainlined?"
+        ],
+        [
+            "When was last activity",
+            "?",
+            "?",
+            "Last published patches for 2.6.22",
+            "",
+            "April, 2005"
+        ],
+        [
+            "Notes",
+            "LTTng instrumentation was changed to use markers, in early 2007",
+            "KProbes ports for ARM, MIPS and PPC32 were reported on at ELC 2007, SystemTap for SH was demo'ed at ELC 2007",
+            "Nicholas McGuire was taking over maintainership from Tim Bird, with funding from CELF. Haven't heard much recently (as of June 2008)",
+            "This was formerly the latency-trace features from the RT-preempt patch set, refactored for general use",
+            "Some arches had problems with accessing the clock too early in the kernel bootup sequence, but a new setup routine defers turning on the timestamping until after timekeeping is initialized"
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Technology Watch List\" - eLinux.org",
+    "title": "",
+    "url": "http://elinux.org/index.php?title=Technology_Watch_List&diff=43873&oldid=6377",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989443.69/warc/CC-MAIN-20150728002309-00254-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 80037861,
+    "recordOffset": 80021467,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Size Stuff Kernel Stuff See also: Embedded linux status The Status field in the table below indicates whether this feature is on track for being mainlined. The When was last activity field indicates the kernel version number or date when the last activity was noted for this feature. This could be the last kernel version where bits from this patch were mainlined, or the last date of visible feature development activity outside the main tree. Latest Watchlist 3 Middleware 2.8 Miscellaneous 2.7 Bootup Time 2.6 Power Management 2.5 Security 2.4 Realtime 2.3 Tracing and instrumentation 2.2 File Systems 2.1 Size Stuff 2 Kernel Stuff 1 Latest Watchlist Contents Please add any information you have about the technology items listed below!! This page lists technologies and projects that CELF members are interested in the status of. This includes kernel patches, new technology research, and middleware and user-space projects of key interest for consumer electronics products. The projects may be the topics of discussion at CELF meetings, and we",
+    "textAfterTable": "gcc -ffunction-sections -fdata-sections Patches submitted to LKML July 2008 See Function sections File Systems Technology, Feature or Patch Status When was last activity Notes Squash Fs Mainlined in January 2009 (for 2.6.29) See http://lwn.net/Articles/314326/. As of Feb, 2009, Phillip was working on some user-space tools issues, to support the new filesystem format (version 4.0) Good job Phillip! AXFS Not mainlined. Some required (predecessor) bits were mainlined in March, 2008, A version was submitted to LKML in August 2008 Flash filesystem that allows for tuning the amount of XIP See AXFS: Architecture and Results - Jared Hulbert's presentation for ELC 2008 LogFS Not mainlined. Last mainline attempt was May, 2008. Home page is at: http://logfs.org/logfs/ J\u00f6rn Engel is working on a re-write to address several major issues. CELF is funding this work. UBIFS mainlined in 2.6.27 Resources: home page? white paper LWN.net article",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

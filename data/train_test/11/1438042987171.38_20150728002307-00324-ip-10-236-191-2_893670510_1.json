@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "date",
+            "12/6/2012",
+            "12/8/2012",
+            "12/8/2012",
+            "12/10/2012",
+            "12/13/2012"
+        ],
+        [
+            "city",
+            "New York",
+            "Brooklyn",
+            "Brooklyn",
+            "Los Angeles",
+            "San Francisco"
+        ],
+        [
+            "state",
+            "NY",
+            "NY",
+            "NY",
+            "CA",
+            "CA"
+        ],
+        [
+            "venue",
+            "Santos Party House",
+            "Brooklyn Bowl",
+            "Brooklyn Bowl",
+            "Drai'S Hollywood",
+            "Rickshaw Stop"
+        ]
+    ],
+    "pageTitle": "Willy Moon Concert Tickets | SeatGeek",
+    "title": "",
+    "url": "https://seatgeek.com/willy-moon-tickets",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00324-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 893699467,
+    "recordOffset": 893670510,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "2013 Tour Dates } ); document.getElementById('location-autocomplete') }), } } window.location.href = window.location.pathname + '?lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id } else { window.location.href = window.location.href + '&lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id; if(window.location.href.match('/search')) { SG.GA.sendEvent('team-show-page', 'location-input', { label: selection.term }); onSelect: function(selection) { }, return (data.results && data.results.location) ? data.results.location : [] dataExtractionFunction: function(data) { placeholder: 'Search by City...', postSelectLoad: true, limit: 3, contentKey: 'term', idKey: 'id', queryString: \"types[]=location\", source: \"/autocomplete\", React.createFactory(Autocomplete)({ React.render( if (document.getElementById('location-autocomplete')) {",
+    "textAfterTable": "2/12/2013 London London XOYO 2/14/2013 Pawtucket RI The Met 2/16/2013 Boston MA Brighton Music Hall 2/18/2013 New York NY Pianos 2/19/2013 Hartford CT Arch Street Tavern 2/21/2013 Virginia Beach VA The Jewish Mother 2/22/2013 Washington DC U Street Music Hall 2/23/2013 Philadelphia PA Underground Arts 2/25/2013 Detroit MI The Shelter 2/26/2013 Columbus OH A and R Music Bar 2/27/2013 Los Angeles CA Bootleg Theater 2/28/2013 San Diego CA House of Blues San Diego 3/1/2013 Las Vegas NV Backstage Bar & Billiards 3/5/2013 London London XOYO 3/12/2013 Austin TX Latitude 30 3/13/2013 Liverpool Lancashire The Kazimier Club 3/22/2013 Birmingham W Mids Hare and Hounds 3/23/2013 Glasgow Glg Broadcast 3/25/2013 Manchester Lan Manchester The Deaf Institute 3/26/2013 Brighton Bnh The Haunt 4/13/2013 Amsterdam North Holland Bitterzoet",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

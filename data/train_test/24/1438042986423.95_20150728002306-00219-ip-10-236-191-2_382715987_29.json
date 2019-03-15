@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Color",
+            "Off",
+            "Green",
+            "Blinking green",
+            "Amber",
+            "Blinking amber"
+        ],
+        [
+            "Description",
+            "StackPower cable is not connected, or the switch is in standalone mode.",
+            "Each StackPower port is connected to another switch.",
+            "This appears on the switch in a StackPower ring configuration that detects an open ring or has only one StackPower cable connected.",
+            "There is a fault: load shedding is occurring, a StackPower cable is defective, or an administrative action is required. See the switch software configuration guide for information about configuring StackPower.",
+            "The StackPower budget is not sufficient to meet current power demands."
+        ]
+    ],
+    "pageTitle": "Catalyst 3850 Switch Hardware Installation Guide - Product Overview [Cisco Catalyst 3850 Series Switches] - Cisco",
+    "title": "Table 8 S-PWR LED",
+    "url": "http://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3850/hardware/installation/guide/b_c3850_hig/b_c3850_hig_chapter_01.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 29,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00219-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 382748271,
+    "recordOffset": 382715987,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{50242=The switch rear panel includes StackWise connectors, StackPower or XPS 2200 connectors, ports, fan modules, and power supply modules., 20464=Stackable 48 10/100/1000 PoE+ ports, 1 network module slot, 1100 W power supply, 19822=Stackable 24 10/100/1000 Cisco UPOE3 ports, 1 network module slot, 1100 W power supply, 21105=Stackable 48 10/100/1000 PoE+ ports, 1 network module slot, 715 W power supply, 21797=Stackable 24 10/100/1000 PoE+2 ports, 1 network module slot, 715 W power supply, 18090=Stackable 24 10/100/1000 Ethernet ports, 1 network module slot, 350 W power supply, 10709=Stackable 12 100M/1G/2.5G/5G/10G and 36 1 G UPoE ports, 1 network module slot, 1100 W power supply, 18657=Stackable 12 100M/1G/2.5G/5G/10G and 36 1G UPoE ports, 1 network module slot, 1100 W power supply, 22442=Stackable 48 10/100/1000 Ethernet ports, 1 network module slot, 350 W power supply, 15609=Stackable 24 10/100/1000 Cisco UPOE ports, 1 network module slot, 1100 W power supply, 16984=Stackable 24 10/100/1000 PoE+ ports, 1 network module slot, 715 W power supply, 19124=Stackable 48 10/100/1000 Cisco UPOE ports, 1 network module slot, 1100 W power supply}",
+    "TableContextTimeStampAfterTable": "{9862=The PoE+ and Cisco Universal Power Over Ethernet (Cisco UPoE) ports use the same connectors as described in 10/\u200b100/\u200b1000 Port Connections. They provide:, 51561=For information about the XPS 2200, see the Cisco eXpandable Power System 2200 Hardware Installation Guide on Cisco.com:, 54952=The port operating speed: 10, 100, or 1000 Mb/s., 10293=PoE+ ports: Support for IEEE 802.3af-compliant powered devices (up to 15.4 W PoE per port) and support for IEEE 802.3at-compliant powered devices (up to 30 W PoE+ per port). The maximum total PoE power in a 1RU switch is 1800 W., 139073=Cisco Prime Infrastructure combines the wireless functionality of Cisco Prime Network Control System (NCS) and the wired functionality of Cisco Prime LAN Management Solution (LMS), with application performance monitoring and troubleshooting capabilities of Cisco Prime Assurance Manager. For more information, see the Cisco Prime Infrastructure documentation on Cisco.com: http:/\u200b/\u200bwww.cisco.com/\u200ben/\u200bUS/\u200bproducts/\u200bps12239/\u200bindex.html, 61674=Single green flash (on for 100 ms, off for 1900 ms), 61849=Port is operating at 1000 Mb/s., 60800=10/100/1000/SFP ports, 121207=(2) 1100 W, 132600=You can connect the switch to a host such as a Windows workstation or a terminal server through the 10/100/1000 Ethernet management port or one of the console ports. The 10/100/1000 Ethernet management port is a VPN routing/forwarding (VRF) interface and uses a RJ-45 crossover or straight-through cable., 109975=The 350-W and 715-W AC power supply modules are autoranging units that support input voltages between 100 and 240 VAC. The 1100-W power supply module is an autoranging unit that supports input voltages between 115 and 240 VAC. The 440-W DC power supply module has dual input feeds (A and B) and supports input voltages between 36 and 72 VDC. The output voltage range is 51 to 57 V., 121546=(2) 1100 W, 15991=The 10/100/1000 Ethernet management port connection uses a standard RJ-45 crossover or straight-through cable. The RJ-45 console port connection uses the supplied RJ-45-to-DB-9 female cable. The USB console port connection uses a USB Type A to 5-pin mini-Type B cable. The USB console interface speeds are the same as the RJ-45 console interface speeds., 50840=The XPS is in standby mode or in a fault condition. See the XPS 2200 documentation for information about the standby mode and fault conditions., 119372=(1) 1100 W, 120953=(1) 1100 W + (1) 715 W, 101493=MGMT (RJ-45 10/100/1000 management port), 86255=PoE mode is not selected. At least one of the 10/100/1000 ports has been denied power, or at least one of the 10/100/1000 ports has a PoE mode fault., 85478=PoE mode is not selected. None of the 10/100/1000 ports have been denied power or are in a fault condition., 2024=10/100/1000 PoE+ ports, 110381=Each AC power supply module has a power cord for connection to an AC power outlet. The 1100-W and 715-W modules use a 16-AWG cord (only North America). All other modules use an 18-AWG cord. The DC-power supply module must be wired to a DC-power source.}",
+    "textBeforeTable": "Switch Models Management Options Rear Panel Front Panel Switch Models This chapter contains these topics: Unless otherwise noted, the term switch refers to a standalone switch and to a switch stack. The Catalyst 3850 switches support stacking through Cisco StackWise-480 technology and power management through StackPower. The StackWise technology for the Catalyst 3850 switches is called StackWise-480. The Catalyst 3850 family of switches are Ethernet switches to which you can connect devices such as Cisco IP Phones, Cisco Wireless Access Points, workstations, and other network devices such as servers, routers, and other switches. Product Overview Management Options RJ-45 Console Port Ethernet Management Port Management Ports StackPower Connector Fan Module Power Supply Modules StackWise Ports RJ-45 Console Port LED Rear Panel Network Module LEDs UID/Beacon LED PoE LED STACK LED ACTV LED S-PWR LED USB Console LED",
+    "textAfterTable": "WS-C3850-24P-L LAN Base Stackable 24 10/100/1000 PoE+2 ports, 1 network module slot, 715 W power supply WS-C3850-48P-L LAN Base Stackable 48 10/100/1000 PoE+ ports, 1 network module slot, 715 W power supply WS-C3850-48F-L LAN Base Stackable 48 10/100/1000 PoE+ ports, 1 network module slot, 1100 W power supply WS-C3850-24U-L LAN Base Stackable 24 10/100/1000 Cisco UPOE3 ports, 1 network module slot, 1100 W power supply WS-C3850-48U-L LAN Base Stackable 48 10/100/1000 Cisco UPOE ports, 1 network module slot, 1100 W power supply",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

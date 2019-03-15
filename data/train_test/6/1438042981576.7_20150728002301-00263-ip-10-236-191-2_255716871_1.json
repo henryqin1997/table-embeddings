@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Variable",
+            "@sys.appcon.list",
+            "@sys.appcon.apps..started",
+            "@sys.appcon.apps..autostart",
+            "@sys.appcon.apps..runnable",
+            "@sys.appcon.apps.."
+        ],
+        [
+            "Read/Write",
+            "RO",
+            "RW",
+            "RW",
+            "RO",
+            "RO"
+        ],
+        [
+            "Description",
+            "list of all applications currently managed by appcon, as a single string of space-separated names",
+            "whether the application is currently started (Boolean)",
+            "whether the application starts automatically (Boolean)",
+            "whether it is a runnable application",
+            "The current value of every daemon attribute . Current attributes include: appname, priviledged, prog, wd, pid, startcount, lastexittype, lastexitcode"
+        ]
+    ],
+    "pageTitle": "Mihini/Device Management - Eclipsepedia",
+    "title": "",
+    "url": "http://wiki.eclipse.org/index.php?title=Mihini/Device_Management&oldid=330043",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00263-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 255732808,
+    "recordOffset": 255716871,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{30763=Copyright \u00a9 2014 The Eclipse Foundation. All Rights Reserved.}",
+    "textBeforeTable": "In order to send command from the server to the device, or from the device to the server, an M3DA data writing is to be done on a node path, encapsulated into an M3DA::Message object as stated into the protocol specification. This is an \"applicative level\" specification opposed to the \"serialization level\" specification from the M3DA Protocol document. This page references all generic commands used by the platform. The commands are serialized and sent using M3DA Protocol. Commands diff) Newer revision \u2192 ( diff) | Latest revision ( \u2190 Older revision | diff) ( (Talk | contribs) Bcabe.sierrawireless.com Revision as of 12:34, 1 March 2013 by < Mihini Mihini/Device Management History You can view its source [e]\" accesskey=\"e\" tabindex=\"-1\">View source Discussion Page",
+    "textAfterTable": "ReadyAgent persisted config is reset to defaultconfig ( depending on the differences between defaultconfig.lua and persisted config, this operation may impact: server url, hearbeat, ..., or any ReadyAgent config parameter) Treemgr mapping are reset: it will be regenerated from .map files on next boot Persisted M3DA data: asset and device data are reset Applications installed in ApplicationContainer are erased Update module: deletion of any update in progress software version list is cleared Not impacted modules/functionalities: M3DA security credentials are not cleared Note: This command is dependent on ReadyAgent integration, so ResetToFactoryDefault command implementation can differ from a device to another to fit integration needs, ReadyAgent product provides a generic implementation matching previous remarks -> If this is a boolean value and it is true, it requests the agent to be restarted with a default timeout (6 seconds) -> If this is a number and it is greater than zero, it requests the agent to be restarted in \"restart\" seconds == Software update == ExecuteScript \"url\" | \"1\" -> url to retrieve the Lua script (string) signature",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

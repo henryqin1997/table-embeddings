@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Property",
+            "Parameter type",
+            "Syntax",
+            "Default value",
+            "Modifiable",
+            "Range of values",
+            "Real Application Clusters"
+        ],
+        [
+            "Description",
+            "String",
+            "PARALLEL_INSTANCE_GROUP = group_name",
+            "A group consisting of all instances currently active",
+            "ALTER SESSION, ALTER SYSTEM",
+            "Any group name specified in the INSTANCE_GROUPS parameter of any active instance",
+            "Multiple instances can have different values."
+        ]
+    ],
+    "pageTitle": "PARALLEL_INSTANCE_GROUP",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/B13789_01/server.101/b10755/initparams152.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00229-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 77594851,
+    "recordOffset": 77586649,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 22 Mar 2004 20:21:00 GMT",
+    "textBeforeTable": "PARALLEL_INSTANCE_GROUP View PDF Next Previous Feedback Master\u00a0Index Index Contents Book List Home Oracle\u00ae Database Reference 10g Release 1 (10.1) Part Number B10755-01 Skip Headers",
+    "textAfterTable": "PARALLEL_INSTANCE_GROUP is a Real Application Clusters parameter that you can specify in parallel mode only. Used in conjunction with the INSTANCE_GROUPS parameter, it lets you restrict parallel query operations to a limited number of instances. This parameter identifies the parallel instance group Oracle will use for spawning parallel execution processes. Parallel operations will spawn parallel execution processes only on instances that specify a matching group in their INSTANCE_GROUPS parameter. If the value of PARALLEL_INSTANCE_GROUP does not correspond to an instance group name specified for an active instance, Oracle returns an error. See Also: Oracle Real Application Clusters Administrator's Guide for more information on parallel query execution in a Real Application Clusters environment Previous Next Copyright\u00a0\u00a9\u00a02002, 2003,\u00a0Oracle\u00a0Corporation All Rights Reserved.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

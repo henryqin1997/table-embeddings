@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Method Name",
+            "HTML_Menu_Renderer::finishLevel()",
+            "HTML_Menu_Renderer::finishMenu()",
+            "HTML_Menu_Renderer::finishRow()",
+            "HTML_Menu_Renderer::renderEntry()",
+            "HTML_Menu_Renderer::setMenuType()"
+        ],
+        [
+            "Summary",
+            "Finish the tree level (for types 'tree' and 'sitemap')",
+            "Finish the menu",
+            "Finish the row in the menu",
+            "Renders the element of the menu",
+            "Sets the type of the menu being rendered."
+        ]
+    ],
+    "pageTitle": "Manual :: The \"direct\" renderer for 'tree' and 'sitemap' menu types where level is represented by tags nesting.",
+    "title": "Inherited from HTML_Menu_Renderer",
+    "url": "http://pear.php.net/manual/pt_BR/package.html.html-menu.html-menu-directtreerenderer-summary.php",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986615.83/warc/CC-MAIN-20150728002306-00083-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 175062027,
+    "recordOffset": 175053825,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "HTML_Menu_DirectTreeRenderer Inherited Methods HTML_Menu_DirectTreeRenderer HTML_Menu_Renderer Class Trees for HTML_Menu_DirectTreeRenderer Idea and initial code contributed by Uwe Mindrup. </ul> <li>Menu item 2</li> </li> </ul> <li>Menu item 1.2</li> <li>Menu item 1.1</li> <ul> <li>Menu item 1 <ul>   The renderer is designed to output only the menus of type 'tree' and 'sitemap'. It shows the level of the menu by tags nesting, not by outputting some indentation and is able to output e.g. nested HTML lists:   Description   'sitemap' menu types where level is represented by tags nesting. 'tree' and HTML_Menu_DirectTreeRenderer \u2013 The \"direct\" renderer for Class Summary Class Summary HTML_Menu_DirectTreeRenderer API Documentation Package Info Package HTML_Menu Constants setIDPrefix() setDirectory() getMenu() exploreFile() browse() addFileInfo() Constructor Class Summary HTML_MenuBrowser Constructor Class Summary HTML_Menu_SigmaTreeRende rer Constructor Class Summary HTML_Menu_SigmaRenderer ArrayRenderer::toArray() Class Summary HTML_Menu_ArrayRenderer",
+    "textAfterTable": "returns the HTML generated for the menu (Previous) Sets the template for menu entry. (Next) Last updated: Wed, 29 Jul 2015 \u2014 Download Documentation Do you think that something on this page is wrong? Please file a bug report or add a note. View this page in: English \u00a0\u2022\u00a0 Brazilian Portuguese \u00a0\u2022\u00a0 Chinese \u00a0\u2022\u00a0 Dutch \u00a0\u2022\u00a0 French \u00a0\u2022\u00a0 German \u00a0\u2022\u00a0 Hungarian \u00a0\u2022\u00a0 Japanese \u00a0\u2022\u00a0 Polish \u00a0\u2022\u00a0 Russian \u00a0\u2022\u00a0 Spanish \u00a0\u2022\u00a0 Turkish User Notes: There are no user contributed notes for this page. PRIVACY POLICY\u00a0|\u00a0 CREDITS Copyright \u00a9 2001-2015 The PHP Group All rights reserved. Bandwidth and hardware provided by: eUKhost",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

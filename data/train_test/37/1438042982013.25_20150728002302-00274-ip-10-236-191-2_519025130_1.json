@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Price Description",
+            "Master Node",
+            "Master Node EMR",
+            "Core Node",
+            "Core Node EMR",
+            "Total Price Per Hour"
+        ],
+        [
+            "Spot Instance Price",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ],
+        [
+            "On Demand Price",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ]
+    ],
+    "pageTitle": "EC2 Performance, Spot Instance ROI and EMR Scalability | Jesse Anderson",
+    "title": "",
+    "url": "http://www.jesse-anderson.com/2012/02/ec2-performance-spot-instance-roi-and-emr-scalability/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982013.25/warc/CC-MAIN-20150728002302-00274-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 519052911,
+    "recordOffset": 519025130,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{15841=In 2011, I created the Million Monkeys Project (source code). \u00a0It is a good metric for CPU and memory speed in a Hadoop cluster as it is very computational and memory intensive in its character group testing. \u00a0This project will use the Million Monkeys code to profile the various EC2 instances and the scalability of EMR and Hadoop. \u00a0I will talk about the cost savings when running EMR jobs as Spot Instances (bid price) instead of On Demand instances (full price). \u00a0This post will help engineers in choosing the right EC2 instance types based on the amount of work or computation needed., 17095=In 2006, Amazon introduced Elastic Compute Cloud (EC2) to Amazon Web Services (AWS). \u00a0In 2009, Amazon introduced Elastic MapReduce (EMR). \u00a0EMR uses Hadoop to create MapReduce jobs using EC2 instances with Simple Storage Service (S3) as the permanent storage mechanism. \u00a0In 2011, Amazon added Spot Instance support for EMR jobs. \u00a0Spot Instances allow you to bid on EMR or EC2 instances that are not in use. \u00a0The pricing page under the Spot Instances heading gives up to date data on EMR and EC2 instance prices., 20005=Posted by Jesse+ on Feb 14, 2012 in Magnum Opus | 3 comments}",
+    "TableContextTimeStampAfterTable": "{29911=Copyright \u00a9 Jesse Anderson 2012. \u00a0All Rights Reserved. \u00a0All text, graphs and charts on this page are licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License., 54433=\u00a9 2011-2015 Jesse Anderson All Rights Reserved}",
+    "textBeforeTable": "Table 1.2 Spot Instance and On Demand Price Calculation To help illustrate the total pricing, Table 1.2 details the breakdown of total price per hour for Spot and On Demand instances. For example, when I ran the Hi-CPU Medium instance testing, I paid a spot price for the core instance group of $0.06 per hour ($0.17 On Demand). \u00a0I also had to pay for the EMR cluster\u2019s master node ($0.17 per hour) which was a Hi-CPU Medium instance as well. \u00a0On top that I have to pay the EMR price per hour ($0.03) for the master and core node. Chart 1.3 shows another cost breakdown by hour of usage and total costs. \u00a0Calculating total cost for a single node cluster with EMR can be done using interactive Table 1.2. \u00a0For an On Demand instance, the total cost per hour is master node group plus core instance(s) group, plus EMR costs for all instances. \u00a0For a Spot instance, the total cost per hour is master node instance plus core instance(s) group spot price plus EMR instance(s). Chart 1.3 Cost Per Hour For On Demand and Spot Instances I should point out that running on a Spot Instance does not require a code change per se. \u00a0However, an EMR job flow\u2019s Spot Instances can be taken away because of market price fluctuations. \u00a0A MapReduce",
+    "textAfterTable": "Spot Instance Price Per Hour On Demand Instance Price Per Hour \u00a0(Try out your own prices) It is possible to run the master node as a Spot instance instead of an On Demand instance. \u00a0Amazon recommends running the master node as an On Demand instance to prevent market price from taking out your master node and stopping the entire cluster. For these tests, I varied the master node instance type. \u00a0Table 1.3 shows a list of instance type for the core and the instance type for the master node I used. Table 1.3 Core Instance Group Type Used",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

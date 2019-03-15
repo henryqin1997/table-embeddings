@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "Name",
+            "foreign_table_catalog",
+            "foreign_table_schema",
+            "foreign_table_name",
+            "foreign_server_catalog",
+            "foreign_server_name",
+            "option_name",
+            "option_value"
+        ],
+        [
+            "Data Type",
+            "sql_identifier",
+            "sql_identifier",
+            "sql_identifier",
+            "sql_identifier",
+            "sql_identifier",
+            "sql_identifier",
+            "character_data"
+        ],
+        [
+            "Description",
+            "Name of the database that contains the foreign table (always the current database)",
+            "Name of the schema that contains the foreign table",
+            "Name of the foreign table",
+            "Name of the database that the foreign server is defined in (always the current database)",
+            "Name of the foreign server",
+            "Name of an option",
+            "Value of the option"
+        ]
+    ],
+    "pageTitle": "PostgreSQL: Documentation: 9.1: foreign_table_options",
+    "title": "",
+    "url": "http://www.postgresql.org/docs/9.1/interactive/infoschema-foreign-table-options.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00158-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 651351878,
+    "recordOffset": 651343676,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Table 34-26. foreign_table_options Columns The view foreign_table_options contains all the options defined for foreign tables in the current database. Only those foreign tables are shown that the current user has access to (by way of being the owner or having some privilege). 34.28. foreign_table_options Next Chapter 34. The Information Schema Up Prev PostgreSQL 9.1.18 Documentation 9.5devel9.49.39.29.1 PostgreSQL 9.1ManualsDocumentationHome Search Documentation:\u00a0 / \u00a0|\u00a0 Development versions: / / / This page in other versions: \u2192 \u2192 \u2192",
+    "textAfterTable": "Prev Home Next foreign_servers Up foreign_tables Privacy Policy | About PostgreSQL Copyright \u00a9 1996-2015 The PostgreSQL Global Development Group",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

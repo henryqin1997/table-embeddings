@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "5 Feb 1993",
+            "27 Jun 1994",
+            "30 Jul 1998",
+            "30 Jul 2002",
+            "22 Jun 2006"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: HOLMBO, DWIGHT N., MINNESOTA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNOR:THOMPSON, DAVID L.;REEL/FRAME:006436/0656 Effective date: 19930204",
+            "Owner name: MEDTRONIC, INC., MINNESOTA Free format text: A CORRECTIVE ASSIGNMENT TO CORRECT ASSIGNEE ON REEL 6436 FRAME 656;ASSIGNOR:THOMPSON, DAVID L.;REEL/FRAME:007036/0496 Effective date: 19930204",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US5391193 - Method and apparatus for battery depletion monitoring - Google Patents",
+    "title": "",
+    "url": "http://www.google.ca/patents/US5391193?ie=ISO-8859-1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981753.21/warc/CC-MAIN-20150728002301-00152-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 465238599,
+    "recordOffset": 465214003,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{30379=Medical device 10 in FIG. 1 is shown to further include a telemetry capability for communicating with a telemetry controller 30. The use of telemetry with implantable medical devices for controlling and reading signals from and to the implanted apparatus is now believed to be so well known in the art that no further general explanation is needed; see, for example, U.S. Pat. No. 4,231,027. A telemetry system suitable for use in the practice of the present invention is disclosed in U.S. Pat. No. 4,556,063issued to Thompson et al. on Dec. 3, 1985 and entitled \"Telemetry System for a Medical Device\" , which patent is hereby incorporated by reference herein in its entirety., 20693=Another component of internal resistance in lithium-iodine cells is caused by depletion of iodine in the cathode. The cathode is essentially a charge transfer complex of iodine and P2VP, and during discharge of the cell iodine is extracted from this complex. As noted above, the weight ratio of I2 to P2VP at beginning of life may range from 20:1 to 50:1. During extraction of iodine from the complex, the resistance to this process is low until the point is reached where the I2 -to-P2VP ratio is reduced to approximately 8:1, the ratio at which the cathode becomes a single phase and the iodine activity begins to be less than unity. At this point the resistance rises sharply. This gives rise to a non-linear internal resistance component which, for the lithium-iodine cell, is called variously the depletion resistance, depolarizer resistance, the charge-transfer complex resistance, or the pyridine resistance. By whatever names, the combination of the non-linear component with the linear component produces an overall resistance curve with a knee occurring toward EOL, the knee being caused by the reaching of the depletion of available charge carriers from the cathode., 19228=Lithium-iodine batteries have a characteristic feature that their internal resistance curve is substantially linear as a function of energy depletion until near EOL, at which time the curve exhibits a \"knee\" where internal resistance begins to rise rapidly. In lithium-iodine batteries, the cell cathode consists of molecular iodine weakly bonded to polyvinyl pyridine (P2VP). The initial cathode composition of lithium-iodine batteries is often expressed as the weight ratio of I2 to P2 VP. Typical values of this ratio range from 20:1 to 50:1 . No electrolyte as such is included in the construction of the cell, but a lithium iodine (LiI) electrolyte layer forms during cell discharge, between the anode and the cathode. The LiI layer presents an effective internal resistance to Li+ ions which travel through it. Since the LiI layer grows with the charge drawn from the battery, this component of the battery resistance increases linearly as a function of energy depletion. In the implantable device context, where there is typically a relatively continuous energy depletion, this component of the internal resistance increases continually over time. However, particularly for a demand type pacemaker which at any given time may or may not be called upon to deliver stimulating pulses, the increase in this component is continuous but not necessarily linear with time, due to the fact that current drain is not constant.}",
+    "textBeforeTable": "Patent Citations From the foregoing detailed description of specific embodiments of the invention, it should be apparent that a method and apparatus for estimating the remaining longevity of a battery in an implanted medical device has been disclosed. Although a particular method and apparatus have been disclosed herein in some detail, this has been done for the purposes of illustration only, and is not intended to be limiting with respect to the scope of the invention as defined in the appended claims. It is contemplated that various alterations, substitutions, and modifications to the disclosed method and apparatus may be made without departing from the spirit and scope of the invention as defined in the following claims. Alternatively, it is contemplated that the collection of look-up tables corresponding to a given nomograph could be contained in memory within the implanted device itself, to be accessed by numeric processing circuitry within the device, or that the tables may reside in the telemetry controller 30, to be accessed after measured impedance values are telemetered out of the device. Programmer 36, configured to perform linear or curve-fitting extrapolation based on the impedance data collected, can thus derive an equation fitted to the data. Once such an equation has been obtained, it is again a simple mathematical step to determine the point of intersection of that curve with the right-hand side of the nomograph. Although the Johnson reference has been specifically identified herein,",
+    "textAfterTable": "* Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US5620474 * 24 Apr 1995 15 Apr 1997 Vitatron Medical, B.V. System and method for determining indicated pacemaker replacement time based upon battery impedance measurement US5729116 * 20 Dec 1996 17 Mar 1998 Total Battery Management, Inc. Shunt recognition in lithium batteries US5744931 * 30 Aug 1996 28 Apr 1998 Yazaki Corporation Battery remaining capacity measuring apparatus US5899923 * 22 Mar 1996 4 May 1999 Angeion Corporation Automatic capacitor maintenance system for an implantable cardioverter defibrillator US5900718 * 16 Aug 1996 4 May 1999 Total Battery Management, Battery charger and method of charging batteries US5904705 * 8 Apr 1997 18 May 1999 Angeion Corporation Automatic battery-maintaining implantable cardioverter defibrillator and",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

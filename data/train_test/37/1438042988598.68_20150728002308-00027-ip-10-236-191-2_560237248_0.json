@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Page Size",
+            "4kB",
+            "8kB",
+            "16kB",
+            "32kB",
+            "64kB"
+        ],
+        [
+            "1 Level",
+            "21 bits / 2MB",
+            "23 bits / 8MB",
+            "25 bits / 32MB",
+            "27 bits / 128MB",
+            "29 bits / 512MB"
+        ],
+        [
+            "2 Level",
+            "30 bits / 1GB",
+            "33 bits / 8GB",
+            "36 bits / 64GB",
+            "39 bits / 512GB",
+            "42 bits / 4TB"
+        ],
+        [
+            "3 Levels",
+            "39 bits / 512GB",
+            "43 bits / 8TB",
+            "47 bits / 128TB",
+            "51 bits / 2PB",
+            "55 bits / 32PB"
+        ],
+        [
+            "4 Levels",
+            "48 bits / 256TB",
+            "53 bits / 8PB",
+            "58 bits / 256PB",
+            "64 bits / 4EB",
+            "68 bits / 256EB"
+        ]
+    ],
+    "pageTitle": "Page size - LinuxMIPS",
+    "title": "",
+    "url": "http://www.linux-mips.org/wiki?title=Page_size&oldid=11845",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988598.68/warc/CC-MAIN-20150728002308-00027-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 560245450,
+    "recordOffset": 560237248,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The size of the usable address space depends on the number of levels of the page tables, page size and the kernel model used. It always is 4GB for 32-bit kernels. Note that these 4GB are split into 2GB of userspace and 2GB of kernel addressing space. This split is hardwired in the MIPS architecture and (with the exception of the R6000) cannot be changed. The following table gives an overview over the situation on the 64-bit kernel. Accessible address space 2.2 Transparent Huge Pages 2.1 Hugetlbfs 2 Software support 1 Accessible address space Contents SPECbench numbers have been shown to be boosted significantly by 16kB pages and yet somewhat more by 64kB pages. Large pagesize eleminates cache aliases and the overhead and potencial for bugs associated with them. Large compute workloads benefit sometimes dramatically from the increased TLB reach. Downside: the memory overhead can be significant and at times prohibitive. The R8000 processor supports 8kB page size as it's smallest pagesize. It's also the only MIPS processor to support 8kB page size. The R6000 processor only supports 16kB page size. Since a while the Linux/MIPS kernel support page sizes other than 4kB.",
+    "textAfterTable": "This table is mostly meant to show how the numbers work out. In reality there are a few constraints, so it should be taken with a grain of salt: For 3\u00a0level page tableswith 4kB pages Linux uses two pages for the page directory so the actual virtual address space capacity is 40\u00a0bits\u00a0/ 1TB. The largest virtual address space supported by any MIPS processor is 48bits on the old and rather odd R8000 processor. Typical 64-bit MIPS processors support 36-bit, 40-bit or 44-bit address spaces but other sizes are permitted by the MIPS64 architecture. Address spaces of less than 2GB are not likely to be very useful either. Only 3-level tables are supported by 64-bit MIPS kernels. As of 2.6.18 16kB pagesize is supported for 64-bit kernels but experimental for the 32-bit kernel. 64kB is experimental. Software support Hugetlbfs Hugetlbfs is a special magic filesystem. Any file mmapped from hugetlbfs will use huge pages. The problem with hugetlbfs is that it software will need to be modified to use it and memory to be used for huge pages with hugetlbfs needs to be put aside manually. Cavium's SDK is able to put away with the need to modify software by using an special preload library that wraps malloc. This method works for most but not all applications. Transparent Huge Pages Transparent Huge Pages",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

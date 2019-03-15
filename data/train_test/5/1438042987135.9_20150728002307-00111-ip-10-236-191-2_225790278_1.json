@@ -1,0 +1,83 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "2",
+            "9",
+            "16",
+            "23",
+            "30"
+        ],
+        [
+            "M",
+            "",
+            "3 (7)",
+            "10",
+            "17",
+            "24",
+            "31"
+        ],
+        [
+            "T",
+            "",
+            "4 (2)",
+            "11",
+            "18",
+            "25",
+            ""
+        ],
+        [
+            "W",
+            "",
+            "5",
+            "12 (2)",
+            "19",
+            "26 (1)",
+            ""
+        ],
+        [
+            "T",
+            "",
+            "6",
+            "13 (1)",
+            "20",
+            "27",
+            ""
+        ],
+        [
+            "F",
+            "",
+            "7",
+            "14 (1)",
+            "21",
+            "28 (5)",
+            ""
+        ],
+        [
+            "S",
+            "1",
+            "8 (4)",
+            "15",
+            "22 (1)",
+            "29",
+            ""
+        ]
+    ],
+    "pageTitle": "Jungerl: A jungle of Erlang code / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/jungerl/mailman/jungerl-commit/?viewmonth=200405&style=flat",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00111-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 225823791,
+    "recordOffset": 225790278,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun \u00a0 May \u00a0 Apr \u00a0 Mar \u00a0 Feb \u00a0 Jan (7) 2011 Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep (3) Aug \u00a0 Jul (11) Jun \u00a0 May \u00a0 Apr \u00a0 Mar \u00a0 Feb (1) Jan (8) 2009 Dec \u00a0 Nov \u00a0 Oct (7) Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun \u00a0 May (4) Apr \u00a0 Mar (4) Feb (5) Jan \u00a0 2008 Dec \u00a0 Nov (1)",
+    "textAfterTable": "Showing 24 results of 24 Flat | Threaded jungerl/lib/ftpd/src Makefile,NONE,1.1 ftpd.erl,NONE,1.1 From: David N. Welton <davidw@us...> - 2004-05-28 14:13:43 Update of /cvsroot/jungerl/jungerl/lib/ftpd/src In directory sc8-pr-cvs1.sourceforge.net:/tmp/cvs-serv31995/src Added Files: Makefile ftpd.erl Log Message: * src/ftpd.erl: Added ftpd module to jungerl repository. --- NEW FILE: ftpd.erl --- %%% File : ftpd.erl %%% Maintainer: <davidw@...> %%% Author : <tony@...> %%% Purpose : FTP SERVER (RFC 765) (must update to 959) %%% Created : 29 Jan 1998 by <tony@...> %%% $Id: ftpd.erl,v 1.1 2004/05/28 14:13:32 davidw Exp $ %%% Updates by David N. Welton <davidw@...> May 2004. -module(ftpd). -author('tony@...'). -compile(export_all). -export([start/1, start/0]). -export([init/3, control/2]). -import(lists, [reverse/1, map/2, append/1, foreach/2]). -include_lib(\"kernel/include/file.hrl\"). -define(FTPD_PORT, 21). -define(FTPD_MAX_CONN, 40). -define(FTPD_LOGFILE, \"ftpd.log\"). -define(is_ip(X), size(X)==4, (element(1,X) bor element(2,X) bor element(3,X) bor element(4,X)) band (bnot 255) == 0). %% ftpd state record -record(state, { ftp_port = ?FTPD_PORT, %% port that ftpd listens on tcp_opts = [{active,false},{nodelay,true}], %% gen_tcp options max_connections = ?FTPD_MAX_CONN, %% max connections %% hosts allowed allow_hosts = [{{0,0,0,0},{0,0,0,0}}], %% all allowed %% hosts denied deny_hosts = [], %% none denied %% restricted users allowed allow_ruser = [anonymous,ftp,www], %% root directory rootwd = \"\", log_fd, %% log to file log_file = \"\"",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

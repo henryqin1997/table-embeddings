@@ -1,0 +1,66 @@
+{
+    "relation": [
+        [
+            "Cisco Client Type",
+            "CTI-OS Clients (All CILs)",
+            "CTI-OS Clients (All CILs)",
+            "CTI-OS Clients (All CILs)",
+            "Cisco Finesse",
+            "Cisco Finesse",
+            "Cisco Agent Desktop (CAD)"
+        ],
+        [
+            "Version",
+            "8.5(x), 9.0",
+            "8.5(x), 9.0",
+            "8.5(4), 9.0(2)",
+            "9.x",
+            "9.x",
+            "All"
+        ],
+        [
+            "Virtual Desktop Infrastructure",
+            "VMWare View 4.6, 5.0",
+            "Citrix XenDesktop 5.0, 5.5 or 6.0",
+            "Citrix XenDesktop 5.0, 5.5, 6.0, 6.5",
+            "VMware View 4.6, 5.x",
+            "Citrix XenDesktop 4.x, 5.0, 5.5, 6.0, 6.5, 7.0, 7.1",
+            "Not Supported"
+        ],
+        [
+            "OS Compatibility",
+            "Windows 7 32 bit - Supported Windows 7 WoW64 - Supported Windows XP 32 bit - Supported",
+            "Windows 7 32 bit - Supported Windows 7 WoW64 - Supported Windows XP 32 bit - Supported",
+            "Windows 7 32 bit - Supported Windows 7 WoW64 - Supported Windows XP 32 bit - Supported",
+            "Windows 7 (32 bit, 64 bit, and WOW64) Windows XP",
+            "Windows 7 (32 bit, 64 bit, and WOW64) Windows XP",
+            "Not Supported"
+        ],
+        [
+            "Cisco VXI Clients",
+            "VXC 2100 - N/A VXC 2200 - N/A VXC 2111 - Supported with Cisco Unified IP Phone 8961, 9951, and 9971 VXC 2211 - Supported VXC6215 - Supported with deskphone only",
+            "VXC 2100 - Supported with Cisco Unified IP Phone 8961, 9951, and 9971 VXC 2200 - Supported VXC 2111 - N/A VXC 2211 - N/A VXC6215 - Supported with deskphone only",
+            "VXC 2100 - Supported with Cisco Unified IP Phone 8961, 9951, and 9971 VXC 2200 - Supported VXC 2111 - N/A VXC 2211 - N/A VXC6215 - Supported with deskphone only",
+            "VXC 2100 - N/A VXC 2200 - N/A VXC 2111 - Not Supported VXC 2211 - Supported VXC6215 - Supported with deskphone only",
+            "VXC 2100 - Not Supported VXC 2200 - Supported VXC 2111 - N/A VXC 2211 - N/A VXC6215 - Supported with deskphone only",
+            "Not Supported"
+        ]
+    ],
+    "pageTitle": "Unified CCE Software Compatibility Matrix for 9.0(x) - DocWiki",
+    "title": "",
+    "url": "http://docwiki.cisco.com/w/index.php?title=Unified_CCE_Software_Compatibility_Matrix_for_9.0(x)&diff=56434&oldid=52601",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 11,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988310.3/warc/CC-MAIN-20150728002308-00196-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 67106427,
+    "recordOffset": 67086061,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{213830=VXC 2100 - N/A VXC 2200 - N/A VXC 2111 - Not Supported VXC 2211 - Supported, 215866=Windows Server 2008 R2 (SP1), 212141=VXC 2100 - N/A VXC 2200 - N/A VXC 2111 - Supported with Cisco Unified IP Phone 8961, 9951, and 9971 VXC 2211 - Supported, 212716=VXC 2100 - Supported with Cisco Unified IP Phone 8961, 9951, and 9971 VXC 2200 - Supported VXC 2111 - N/A VXC 2211 - N/A, 214342=VXC 2100 - Not Supported VXC 2200 - Supported VXC 2111 - N/A VXC 2211 - N/A}",
+    "textBeforeTable": "Note: The columns can be switched for forward compatibilty. For example, NAM at 8.0 and CICM at 9.0 is a supported configuration. VDI & Cisco VXI Support 8.0 9.0 8.5 9.0 CICM\u00a0Version NAM\u00a0Version Note: Backward compatible PGs are intended to be supported during the transition when you upgrade the Central Controller and PGs to the same version. Note: MR PG and Dialer must be at the same version. Note: For Outbound deployments, ES18 must be installed with UCCE 8.5(4) to work with Central Controller 9.x and 10.x. NAM/CICM\u00a0Compatibility 8.0 8.0 9.0 8.5 8.5 9.0 PG + CAD PG CentralController Central Controller Backward Compatibility Yes Yes Yes",
+    "textAfterTable": "Note: UCM Silent Monitoring is the only type of Silent Monitoring that is supported with VXI/VDI. Desktop solutions are supported on PC-like devices only that utilize a keyboard and mouse (no tablets or mobile devices supported at this time). The customer is not required to use Cisco VXI endpoints in a VDI solution. The customer can use any VDI endpoint that supports the specific Citrix or VMWare VDI solution versions supported by Cisco. The customer is responsible for ensuring that bandwidth and any other deployment considerations ensure that the solution can meet the performance and timing requirements of CTI-OS. For information about CAD wih thin client and virtual desktop environments, see the Integrating CAD with Thin Client and Virtual Desktop Environments document. Application Virtualization Windows Server 2008 R2 (SP1) Cisco Client Version Version Citrix/XenApp Remote Desktop Services platform CTI-OS Clients (All CILs) 9.0(x) XenApp 6.0 & 6.5 Windows Server 2008 R2 (SP1) Siebel Compatibility",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

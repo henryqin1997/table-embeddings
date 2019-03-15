@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Value",
+            "MB_ABORTRETRYIGNORE 0x00000002L",
+            "MB_CANCELTRYCONTINUE 0x00000006L",
+            "MB_HELP 0x00004000L",
+            "MB_OK 0x00000000L",
+            "MB_OKCANCEL 0x00000001L",
+            "MB_RETRYCANCEL 0x00000005L",
+            "MB_YESNO 0x00000004L",
+            "MB_YESNOCANCEL 0x00000003L"
+        ],
+        [
+            "Meaning",
+            "The message box contains three push buttons: Abort, Retry, and Ignore.",
+            "The message box contains three push buttons: Cancel, Try Again, Continue. Use this message box type instead of MB_ABORTRETRYIGNORE.",
+            "Adds a Help button to the message box. When the user clicks the Help button or presses F1, the system sends a WM_HELP message to the owner.",
+            "The message box contains one push button: OK. This is the default.",
+            "The message box contains two push buttons: OK and Cancel.",
+            "The message box contains two push buttons: Retry and Cancel.",
+            "The message box contains two push buttons: Yes and No.",
+            "The message box contains three push buttons: Yes, No, and Cancel."
+        ]
+    ],
+    "pageTitle": "MessageBox function (Windows)",
+    "title": "",
+    "url": "https://msdn.microsoft.com/en-us/library/windows/desktop/ms645505(v=vs.85).aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988312.76/warc/CC-MAIN-20150728002308-00327-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 880014183,
+    "recordOffset": 879989486,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "To indicate the buttons displayed in the message box, specify one of the following values. The contents and behavior of the dialog box. This parameter can be a combination of flags from the following groups of flags. Type: UINT uType [in] The dialog box title. If this parameter is NULL, the default title is Error. Type: LPCTSTR lpCaption [in, optional] The message to be displayed. If the string consists of more than one line, you can separate the lines using a carriage return and/or linefeed character between each line. Type: LPCTSTR lpText [in, optional] A handle to the owner window of the message box to be created. If this parameter is NULL, the message box has no owner window. Type: HWND hWnd [in, optional] Parameters ); _In_\u00a0\u00a0\u00a0\u00a0\u00a0UINT \u00a0\u00a0\u00a0uType _In_opt_\u00a0LPCTSTR lpCaption, _In_opt_\u00a0LPCTSTR lpText, _In_opt_\u00a0HWND \u00a0\u00a0\u00a0hWnd, int WINAPI MessageBox(     Copy   C++ Syntax Displays a modal dialog box that contains a system icon, a set of buttons, and a brief application-specific message, such as status or error information. The message box returns an integer value that indicates which button the user clicked. MessageBox function",
+    "textAfterTable": "\u00a0 To display an icon in the message box, specify one of the following values. Value Meaning MB_ICONEXCLAMATION 0x00000030L An exclamation-point icon appears in the message box. MB_ICONWARNING 0x00000030L An exclamation-point icon appears in the message box. MB_ICONINFORMATION 0x00000040L An icon consisting of a lowercase letter i in a circle appears in the message box. MB_ICONASTERISK 0x00000040L An icon consisting of a lowercase letter i in a circle appears in the message box. MB_ICONQUESTION 0x00000020L A question-mark icon appears in the message box. The question-mark message icon is no longer recommended because it does not clearly represent a specific type of message and because the phrasing of a message as a question could apply to any message type. In addition, users can confuse the message symbol question mark with Help information. Therefore, do not use this question mark message symbol in your message boxes. The system continues to support its inclusion only for backward compatibility. MB_ICONSTOP 0x00000010L A stop-sign icon appears",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

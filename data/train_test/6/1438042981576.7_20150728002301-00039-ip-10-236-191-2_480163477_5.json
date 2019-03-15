@@ -1,0 +1,81 @@
+{
+    "relation": [
+        [
+            "Cited Patent",
+            "US4864599 *",
+            "US5123111 *",
+            "US5329573 *",
+            "US5375251 *",
+            "US5404580 *",
+            "EP0562890A1 *",
+            "EP0584725A1 *",
+            "WO1991012698A1 *",
+            "WO1994030023A1 *"
+        ],
+        [
+            "Filing date",
+            "29 Jul 1988",
+            "18 Jan 1991",
+            "27 Nov 1991",
+            "11 Jun 1992",
+            "4 May 1994",
+            "29 Mar 1993",
+            "19 Aug 1993",
+            "14 Feb 1991",
+            "15 Jun 1994"
+        ],
+        [
+            "Publication date",
+            "5 Sep 1989",
+            "16 Jun 1992",
+            "12 Jul 1994",
+            "20 Dec 1994",
+            "4 Apr 1995",
+            "29 Sep 1993",
+            "2 Mar 1994",
+            "22 Aug 1991",
+            "22 Dec 1994"
+        ],
+        [
+            "Applicant",
+            "Nec Corporation",
+            "Alcatel Cit",
+            "At&T Bell Laboratories",
+            "Standard Elektrik Lorenz Aktiengesellschaft",
+            "Motorola, Inc.",
+            "Orange Personal Communications Services Limited",
+            "Nippon Telegraph And Telephone Corporation",
+            "Motorola Inc",
+            "Celltrace Communications Ltd"
+        ],
+        [
+            "Title",
+            "Registration of a new cordless telephone to an existing system",
+            "Cellular radiotelephone system, a method of protecting the data base of a visitor location register against saturation",
+            "Arrangement for obtaining authentication key parameters in a cellular mobile telecommunications switching network",
+            "Method for generating a temporary mobile subscriber identity signal (TMSI) from a permanent mobile station identity signal (TMSI)",
+            "Radio having memory means for storing radio user validation code",
+            "Mobile communication network with remote updating of subscriber identity modules in mobile terminals",
+            "Method of authentication with improved security for secrecy of authentication key",
+            "Radio having removable memory means for storing radio user validation code",
+            "Telecommunications system"
+        ]
+    ],
+    "pageTitle": "Patent US5675628 - Method and apparatus for enabling roaming of subscriber among plural mobile ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.co.uk/patents/US5675628",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00039-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 480190063,
+    "recordOffset": 480163477,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{29679=FIG. 1 shows schematically a portion of a GSM cellular radio system. In the cellular radio system, the area covered by the system is divided into radio cells. Base station controllers BSC1 and BSC2 are connected by digital transmission links 12 to a mobile exchange MSC. Furthermore, base stations BTS1, BTS2 and BTS3, BTS4 are connected by digital transmission links 11 to the base station controllers BSC1 and BSC2, respectively. Each BSC and the base stations BTS controlled by it form a base station system BSS. The radio coverage area of a single base station BTS typically creates a single radio cell. Each base station BTS1 to BTS4 has a predetermined fixed number of physical radio channels. The configuration and properties of the GSM system are described in more detail in the GSM specifications and in the book \"The GSM System for Mobile Communications, M. Mouly & M. B. Pautet, Palaiseau, France, 1992, ISBN:2-9507190-0-7, which are hereby incorporated by reference., 38980=In the preferred embodiment of the present invention, the above mentioned problem is solved by utilizing the bits 5 to 8 of the octet 6 in the TMSI to differentiate between different TMSI's of different systems. According to the invention, these bits are coded in all mobile radio systems in an uniform manner to indicate the mobile radio system which has allocated the TMSI. The remaining bit locations of the TMSI may be used in a mobile radio system-specific format. For example, if these bits are coded as \"1111\" for identifying the TMSIs of GSM900/DCS1800 systems, as shown in FIG. 4. All other codings of the bits 5 to 8 in the octet 6 may be used to identify TMSIs of other mobile radio systems, as shown by \"xxxx\" in FIG. 5., 29208=The present invention is applicable to all mobile radio systems utilizing subscriber identity modules SIMs or the like. The present invention is particularly advantaged when applied in the pan-European digital mobile radio system GSM or in the modification thereof, DCS1800. In the following, the preferred embodiment of the invention will be described as an application in a GSM system, to which the invention, however, is not intended to be limited., 20413=Also, other mobile radio systems in addition to GSM may use the same kind of smart card for similar purposes, thus enabling user specific information to roam between different mobile radio systems independently of the air interface specifications. For example, in the U.S.A. the so called Personal Communications Systems (PCS) are being developed having several different air interfaces. Also, in Europe, DCS 1800, which is a mobile radio system realized according to GSM specifications, expect different radio interface (carrier frequencies of approximately 1800 MHz instead of that of approximately 900 MHz in GSM system) utilizes SIM cards. The smart card may be the only common nominator between these systems to provide \"SIM roaming\" between systems. It is desirable to have the same smart card in different systems, because the user does not have to change his/her user profile when the terminal and/or air interface needs to be changed.}",
+    "textBeforeTable": "Patent Citations The figures and the description associated are only intended to illustrate the present invention. Changes and modifications to the described embodiments are possible without going beyond the scope and spirit of the attached claims. Referring now to the flow chart of FIG. 7, the VLR receives a location attempt from a new MS2 in one of its location areas. Also, the old TMSI allocated to the mobile subscriber in the mobile radio system I is received at the VLR2 at step 71. Then the VLR2 analyses bits 5 to 8 of octet 6 in the TMSI, in steps 72 and 73, in order to find out the actual structure of the old TMSI and the mobile radio system that allocated the old TMSI. If the decision in the step 73 is that the old TMSI is allocated by the same mobile radio system, namely system II, VLR2 makes a standard IMSI request in mobile radio system II, unless the old TMSI is already known by the VLR2, in step 74. In the present example, the VLR2 detects that the bits 5 to 8 of octet 6 in the TMSI are coded as \"1111\", and the decision that the old TMSI belongs to the mobile radio system I is made in step 73. As a consequence, the VLR2 requests the actual user identity, IMSI, from the VLR1 of the mobile radio system I because the VLR1 is",
+    "textAfterTable": "* Cited by examiner Non-Patent Citations Reference 1 \"The GSM System for Mobile Communications\", Michel Mouly et al, 1992, pp. 67-70, 468-469, 489-492. 2 * The GSM System for Mobile Communications , Michel Mouly et al, 1992, pp. 67 70, 468 469, 489 492. * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US5909652 * 16 Apr 1996 1 Jun 1999 Casio Computer Co., Ltd. Radio communication system and radio communication terminal US5924045 * 21 Nov 1996 13 Jul 1999 U.S. Philips Corporation Telephone comprising an identification module US5933785 * 20 May 1997 3 Aug 1999 Motorola, Inc. Telephone and method for concurrent registration of two identification numbers using multi-number sim card US5956653",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

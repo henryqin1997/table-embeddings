@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "4",
+            "11 (1)",
+            "18",
+            "25"
+        ],
+        [
+            "M",
+            "",
+            "5 (2)",
+            "12 (1)",
+            "19 (1)",
+            "26"
+        ],
+        [
+            "T",
+            "",
+            "6 (2)",
+            "13",
+            "20",
+            "27 (5)"
+        ],
+        [
+            "W",
+            "",
+            "7",
+            "14",
+            "21",
+            "28"
+        ],
+        [
+            "T",
+            "1 (5)",
+            "8",
+            "15",
+            "22 (1)",
+            "29 (12)"
+        ],
+        [
+            "F",
+            "2 (2)",
+            "9",
+            "16",
+            "23",
+            "30 (7)"
+        ],
+        [
+            "S",
+            "3 (3)",
+            "10",
+            "17",
+            "24",
+            "31 (1)"
+        ]
+    ],
+    "pageTitle": "Steel Bank Common Lisp / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/sbcl/mailman/sbcl-help/?viewmonth=201007&viewday=2",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987552.57/warc/CC-MAIN-20150728002307-00021-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 218204341,
+    "recordOffset": 218187947,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul (7) Jun (3) May (5) Apr (17) Mar (32) Feb (19) Jan (11) 2015 Dec (10) Nov (7) Oct (29) Sep (21) Aug (13) Jul (15) Jun (17) May (7) Apr (15) Mar (38) Feb (55) Jan (30) 2014 Dec (6) Nov (9) Oct (22) Sep (8) Aug (7) Jul (1) Jun (9) May \u00a0 Apr (10) Mar (17) Feb (8) Jan",
+    "textAfterTable": "Showing 2 results of 2 Flat | Threaded [Sbcl-help] threads on darwin (MAC OSX) ? From: Kevin Smith <k2msmith@gm...> - 2010-07-02 21:56:36 Attachments: Message as HTML\u00a0\u00a0\u00a0\u00a0 Are sb-threads on darwin intel platform still \"experimental\" I have 1.0.39 and I and experiencing weird hangup problems when running under slime. doesn't happen when built without threads and doesn't do it when running the program directly from the repl. I did try to build version 1.0.40, but unsuccessfully because the sb-posix contribution (whatever that is) didn't build and I needed to compile my packages. I'd be interested in where I can find any tips on building a workable sbcl platform on the mac (intel) with cl-opengl and a gui library (cl-gtk2 was suggested by another subscriber because it supports some things I'd like to do with a threaded system). I have bits and pieces working - but - man this is an uphill battle for me btw, I've tried other lisp systems (like closure cl) and actually ran into -MORE- problems (but a different set of them). maybe it's just me :-)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

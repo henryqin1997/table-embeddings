@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Icon",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Action",
+            "Copy the item in the left side to the right side, possibly overwriting the contents of the corresponding target item, if it already exists.",
+            "Copy the item in the right side to the left side, possibly overwriting the contents of the corresponding target item, if it already exists.",
+            "The items are treated identical with regard to the selected criterion of comparison. No action will be performed by default.",
+            "The items differ with regard to the selected criterion of comparison. No action will be performed by default. Explore the differences in the Differences Pane and change the intended action by clicking the icon.",
+            "The item is present only in one of the folders and will be removed."
+        ]
+    ],
+    "pageTitle": "PyCharm 4.5.3 Help :: Differences Viewer for Folders and DB Objects",
+    "title": "",
+    "url": "http://www.jetbrains.com/pycharm/help/differences-viewer-for-folders-and-db-objects.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986357.49/warc/CC-MAIN-20150728002306-00114-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 539919524,
+    "recordOffset": 539911322,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{4184=\u00a9 2000-2015 JetBrains s.r.o. All rights reserved.}",
+    "lastModified": "Mon, 20 Jul 2015 09:01:46 GMT",
+    "textBeforeTable": "The icon in this field indicates the action that will be applied to the pair of items in the current line upon clicking the Synchronize Selected\u00a0\u00a0or Synchronize All\u00a0\u00a0 toolbar button. To change the currently selected action, click the icon. * Local folders Local-remote folders These read-only fields show the timestamps of files under the folders being compared. Date Local folders Local-remote folders These read-only fields show the sizes of files under the folders being compared. Size All These read-only fields show the names of\u00a0 files \u00a0 under the object specified in the\u00a0 Path \u00a0 fields. Name Available for Description Item The list shows the items from the compared objects that meet the comparison criterion specified in the Compare by drop-down list and the filtering criteria specified through the toolbar buttons. List of items Local folders Local-remote folders These fields show the paths to the folders being compared. To change a directory, click the Browse button and specify another directory in the dialog that opens.",
+    "textAfterTable": "All Differences pane The differences pane is displayed only for files \u00a0 with the same names, which exist on both sides. For the files and DB objects that exist on one side only, the contents of the selected file/DB object is displayed. If the files have read-only status, they are not editable in the differences pane. Item Tooltip and shortcut Description F7/Shift+F7 Click this button to move to the next / previous difference. Ignore whitespace Use this drop-down list to define how the differences viewer should treat white spaces in the text. Do not ignore: white spaces are important, and the differences should be highlighted. Leading and trailing: Ignore the differences, if they appear in the end and in the beginning of a line. All: white spaces are not important, regardless of their location in the source code. Highlight Select the way differences granularity is highlighted. Possible options are: By word: changed words are highlighted By line: changed lines are highlighted",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

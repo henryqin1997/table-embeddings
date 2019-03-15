@@ -1,0 +1,47 @@
+{
+    "relation": [
+        [
+            "Boot Phase",
+            "BIOS",
+            "",
+            "Boot Programs",
+            "",
+            "",
+            "",
+            "",
+            "Kernel initialization",
+            "",
+            "init"
+        ],
+        [
+            "Description",
+            "1. When the system is turned on, the BIOS runs self-test diagnostics to verify the system's hardware and memory. The system begins to boot automatically if no errors are found. If errors are found, error messages are displayed that describe recovery options. The BIOS of additional hardware devices are run at this time.",
+            "2. The BIOS boot program tries to read the first disk sector from the boot device. This first disk sector on the boot device contains the master boot record mboot, which is loaded and executed. If no mboot file is found, an error message is displayed.",
+            "3. The master boot record, mboot, contains disk information needed to find the active partition and the location of the Solaris boot program, pboot, loads and executes pboot, mboot.",
+            "4. The Solaris boot program, pboot, loads bootblk, the primary boot program. The purpose of bootblk is to load the secondary boot program, which is located in the UFS file system.",
+            "5. If there is more than one bootable partition, bootblk reads the fdisk table to locate the default boot partition, and builds and displays a menu of available partitions. You have a 30 seconds to select an alternate partition from which to boot. This step occurs only if there is more than one bootable partition present on the system.",
+            "6. bootblk finds and executes the secondary boot program, boot.bin or ufsboot, in the root (/) file system. You have five seconds to interrupt the autoboot to start the Solaris Device Configuration Assistant.",
+            "7. The secondary boot program, boot.bin or ufsboot, starts a command interpreter that executes the /etc/bootrc script. This script provides a menu of choices for booting the system. The default action is to load and execute the kernel. You have a 5\u2013second interval to specify a boot option or to start the boot interpreter.",
+            "8. The kernel initializes itself and begins loading modules by using the secondary boot program (boot.bin or ufsboot) to read the files. When the kernel has loaded enough modules to mount the root (/) file system, the kernel unmaps the secondary boot program and continues, using its own resources.",
+            "9. The kernel creates a user process and starts the /sbin/init process, which starts other processes by reading the /etc/inittab file.",
+            "10. In this Oracle Solaris release, the /sbin/init process starts /lib/svc/bin/svc.startd, which starts system services that do the following: Check and mount file systems Configure network and devices Start various processes and perform system maintenance tasks In addition, svc.startd executes the run control (rc) scripts for compatibility."
+        ]
+    ],
+    "pageTitle": "",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19253-01/817-1985/hbx86boot-aaa/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 26,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986148.56/warc/CC-MAIN-20150728002306-00035-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 73229084,
+    "recordOffset": 73212690,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 06 Jan 2011 11:24:28 GMT",
+    "textBeforeTable": "Table\u00a016\u20131 x86: Boot Subsystems The following table summarizes the purpose of the primary x86 based system boot interfaces. See the sections that follow for a detailed description and example of each boot interface. The install Current Boot Parameters menu enables you to select the type of installation to be performed or to customize the boot process. The normal Current Boot Parameters menu enables you to boot the Solaris system with options, or enter the boot interpreter. Current Boot Parameters menu \u2013 Two forms of this menu exist, one menu for a normal Solaris boot and one menu for a Solaris installation boot: Interrupt the Autoboot Process \u2013 If the autoboot process is interrupted, you can access the Device Configuration Assistant menu. The Solaris Device Configuration Assistant enables you to boot the Solaris system from a different boot device, configure new or misconfigured hardware, or perform other device-related or boot-related tasks. Primary Boot Subsystem (Partition Boot Menu) \u2013 This first menu appears if multiple operating systems exist on the disk. The menu enables you to boot any of the operating systems installed. By default, the operating system that is designed as active is booted. Note that if you choose to boot a system other than the Oracle Solaris OS, you cannot reach the next two menus. At three points during the Solaris boot process, you can make the following choices",
+    "textAfterTable": "Several screens are displayed as the Device Configuration Assistant attempts to identify devices on the system. This section provides examples of the following boot subsystem screens: Device Configuration Assistant screen Bus Enumeration screen Scanning Devices screen Identified Devices screen x86: Device Configuration Assistant Screen Note \u2013 In this Oracle Solaris release, the Device Configuration Assistant Screen has been replaced with the GRUB menu on x86 based systems. For more information, see Booting an x86 Based System by Using GRUB (Task Map). In the Solaris 10 initial release, the autoboot process bypasses the Device Configuration Assistant menus, unless you press ESC when prompted by the system during the boot phase. If you choose to use the Device Configuration Assistant, the following screen is displayed. Solaris Device Configuration Assistant The Solaris(TM)Device Configuration Assistant scans to identify system hardware, lists identified devices, and can boot the Solaris software from a specified device. This program must be used to install the Solaris operating environment, add a driver, or change the hardware on the system. > To perform a full scan to identify all system hardware, choose Continue. > To diagnose possible full scan failures, choose Specific Scan. > To add new or updated device drivers, choose Add Driver. About navigation... - The mouse cannot be used. - If the keyboard does not",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

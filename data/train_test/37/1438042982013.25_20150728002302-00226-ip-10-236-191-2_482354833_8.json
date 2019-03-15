@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Mar 2, 1990",
+            "Oct 25, 1994",
+            "Nov 23, 1994",
+            "Nov 23, 1994",
+            "Aug 27, 1998",
+            "Aug 29, 2002"
+        ],
+        [
+            "Code",
+            "AS",
+            "REMI",
+            "FPAY",
+            "SULP",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Fee payment",
+            "Surcharge for late payment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: TERRA MARINE ENGINEERING, TEXAS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNOR:MCDAVID, WILLIAM T.;REEL/FRAME:005241/0685 Effective date: 19890215",
+            "",
+            "Year of fee payment: 4",
+            "",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US5001727 - Carrier and data recovery and demodulation system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US5001727?dq=5,890,152",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982013.25/warc/CC-MAIN-20150728002302-00226-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 482385503,
+    "recordOffset": 482354833,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations Although the preferred embodiment has been described in detail, it should be understood that various changes, substitutions and alterations can be made therein without departing from the spirit and scope of the invention as defined by the appended claims. In summary, there has been provided a demodulation and carrier recovery system. In this system, the composite phase difference between a received carrier and a local carrier clock is first determined, which is a combination of the free-running phase between the local clock and the carrier. The composite phase is then discriminated to determine the free-running phase error. Once the free-running phase is determined, it is subtracted from the composite phase to yield the phase modulation on the carrier. It can be seen that the only requirement for attaining the quadrature component of the signal x(t) is to take the Hilbert transform. The use of the phase splitter with reference to FIG. 1 provides a Hilbert transform. However, this is realized in the hardware in the embodiment of FIG. 1. The present system utilizes a digital signal processor as the Hilbert transform filter 310 to perform the calculation. \u03c6(t)=Im [ln u(t)] (b 7) so that ln u(t)=ln R(t)+i\u03c6(t) (6) Here, R(t) represents instantaneous amplitude and \u03c6(t) represents instantaneous phase. Instantaneous phase can be computed with the following alternative approach. Taking the logarithm of both sides of Equation (4), the",
+    "textAfterTable": "At&T Telephone And Telegraph Company, At&T Bell Laboratories Recovery of carrier signal from QAM double sideband suppressed carrier IF signal for use in synchronous demodulation * Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US5208837 * Aug 31, 1990 May 4, 1993 Allied-Signal Inc. Stationary interference cancellor US5301210 * Aug 31, 1992 Apr 5, 1994 France Telecom Coherent demodulating device with carrier wave recovering digital circuit US5422909 * Nov 30, 1993 Jun 6, 1995 Motorola, Inc. Method and apparatus for multi-phase component downconversion US5440587 * Jul 8, 1994 Aug 8, 1995 Kabushiki Kaisha Toshiba Demodulator for digitally modulated wave US5442654 * Aug 6, 1993 Aug 15, 1995 The United States Of America As Represented By The Secretary Of The Air Force Phase modulation measurement system",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

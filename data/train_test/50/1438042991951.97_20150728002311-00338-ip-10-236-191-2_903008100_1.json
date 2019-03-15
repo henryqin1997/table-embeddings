@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "GL_ZERO",
+            "GL_ONE",
+            "GL_SRC_COLOR",
+            "GL_ONE_MINUS_SRC_COLOR",
+            "GL_DST_COLOR",
+            "GL_ONE_MINUS_DST_COLOR",
+            "GL_SRC_ALPHA",
+            "GL_ONE_MINUS_SRC_ALPHA",
+            "GL_DST_ALPHA",
+            "GL_ONE_MINUS_DST_ALPHA",
+            "GL_SRC_ALPHA_SATURATE"
+        ],
+        [
+            "( fR, fG, fB, fA )",
+            "( 0, 0, 0, 0 )",
+            "( 1, 1, 1, 1 )",
+            "( Rs/kR, Gs/kG, Bs/kB, As/kA )",
+            "( 1, 1, 1, 1 ) - ( Rs/kR, Gs/kG, Bs/kB, As/kA )",
+            "( Rd/kR, Gd/kG, Bd/kB, Ad/kA )",
+            "( 1, 1, 1, 1 ) - ( Rd/kR, Gd/kG, Bd/kB, Ad/kA )",
+            "( As/kA, As/kA, As/kA, As/kA )",
+            "( 1, 1, 1, 1 ) - ( As/kA, As/kA, As/kA, As/kA )",
+            "( Ad/kA, Ad/kA, Ad/kA, Ad/kA )",
+            "( 1, 1, 1, 1 ) - ( Ad/kA, Ad/kA, Ad/kA, Ad/kA )",
+            "( i, i, i, 1 )"
+        ]
+    ],
+    "pageTitle": "glBlendFunc",
+    "title": "",
+    "url": "https://www.khronos.org/opengles/sdk/1.1/docs/man/glBlendFunc.xml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991951.97/warc/CC-MAIN-20150728002311-00338-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 903016302,
+    "recordOffset": 903008100,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{43826=Copyright \u00a9 2003-2004 Silicon Graphics, Inc. This document is licensed under the SGI Free Software B License. For details, see http://oss.sgi.com/projects/FreeB/.}",
+    "lastModified": "Sun, 13 Apr 2014 00:08:53 GMT",
+    "textBeforeTable": ", represent either source or destination factors. All scale factors have range [0, 1]. ) A f , B f , G f , R f ( . The scale factors described in the table, denoted ) A d , B d , G d , R d ( and ) A s , B s , G s , R s ( Source and destination scale factors are referred to as is the number of red, green, blue, and alpha bitplanes. ) A m , B m , G m , R m (",
+    "textAfterTable": "In the table, i = min ( A s , k A - A d ) / k A To determine the blended values of a pixel, the system uses the following equations: R d = min ( k R , R s s R + R d d R ) G d = min ( k G , G s s G + G d d G ) B d =",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

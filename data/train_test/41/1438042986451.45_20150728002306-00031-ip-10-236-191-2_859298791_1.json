@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "rc6a5f68",
+            "1387",
+            "1388",
+            "",
+            "1389",
+            "1390"
+        ],
+        [
+            "re20fb1d",
+            "1387",
+            "1388",
+            "1389",
+            "1390",
+            "1391"
+        ],
+        [
+            "",
+            "if(fqdn_out) *fqdn_out = info ? info->fqdn : NULL;",
+            "if(dsn_out) *dsn_out = info ? info->dsn : NULL;",
+            "assert(uuidinfo);",
+            "if(remote_cn_out) *remote_cn_out = uuidinfo->remote_cn;",
+            "if(storagenode_id_out) *storagenode_id_out = uuidinfo->storagenode_id;"
+        ]
+    ],
+    "pageTitle": "Reconnoiter ~ Changeset e20fb1d8dba51180495faf50e6b01af016c27bbb",
+    "title": "",
+    "url": "https://labs.omniti.com/labs/reconnoiter/changeset/e20fb1d8dba51180495faf50e6b01af016c27bbb",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986451.45/warc/CC-MAIN-20150728002306-00031-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 859306993,
+    "recordOffset": 859298791,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "src/noit_conf_checks.c Moved Copied Modified Removed Added Unmodified Legend: src/stratcon_datastore.c (modified) (1\u00a0diff) src/noit_conf_checks.c (modified) (1\u00a0diff) Files: refs #284 Message: Theo Schlossnagle <jesus@omniti.com> 1274981886 +0000 git-author: [aa45e644b918b00584053863f93e027dee108cca] git-parent: Theo Schlossnagle <jesus@omniti.com> 1274981886 +0000 git-committer: Theo Schlossnagle <jesus@omniti.com> Author: 05/27/10 17:38:06 (5 years ago) Timestamp: White space changes Case changes Blank lines Ignore: lines around each change Show",
+    "textAfterTable": "606 606 \u00a0 \u00a0 nc_printf(ncct, \"argument required when not in configuration mode\\n\");\u00a0 src/stratcon_datastore.c rc6a5f68 re20fb1d \u00a0 1387 1387 \u00a0 if(fqdn_out) *fqdn_out = info ? info->fqdn : NULL;\u00a0 1388 1388 \u00a0 if(dsn_out) *dsn_out = info ? info->dsn : NULL;\u00a0 \u00a0 1389 \u00a0 assert(uuidinfo);\u00a0 1389 1390 \u00a0 if(remote_cn_out) *remote_cn_out = uuidinfo->remote_cn;\u00a0 1390 1391 \u00a0 if(storagenode_id_out) *storagenode_id_out = uuidinfo->storagenode_id;\u00a0 Download in other formats: Unified Diff Zip Archive",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

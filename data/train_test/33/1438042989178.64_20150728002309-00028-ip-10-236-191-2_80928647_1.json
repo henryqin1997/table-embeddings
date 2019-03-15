@@ -1,0 +1,43 @@
+{
+    "relation": [
+        [
+            "Option",
+            "-c",
+            "-f",
+            "-v",
+            "-DDD",
+            "-s",
+            "--help",
+            "-c listtasks",
+            "-g"
+        ],
+        [
+            "Meaning",
+            "execute for the image or recipe being built. ex: bitbake -c fetch busybox. Some of the possible tasks are: fetch, configure, compile, package, clean",
+            "force execution of the operation, even if not required",
+            "show verbose output",
+            "show lots of debug information",
+            "show recipe version information",
+            "get usage help",
+            "show the tasks associated with an image or individual recipe",
+            "output dependency tree in graphviz format"
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Bitbake Cheat Sheet\" - eLinux.org",
+    "title": "",
+    "url": "http://elinux.org/index.php?title=Bitbake_Cheat_Sheet&diff=196244&oldid=196160",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989178.64/warc/CC-MAIN-20150728002309-00028-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 80944260,
+    "recordOffset": 80928647,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{17480=Here are some quick notes on bitbake syntax and rules. For an exhaustive list of functionality, and longer descriptions, see the bitbake manual at: http://docs.openembedded.org/bitbake/html/ (note that this link goes to the OpenEmbedded version of the bitbake manual, which is a version from 2006 as of this writing. A separate (yocto-specific?) bitbake manual is included in source form in the yocto project source directory, under bitbake/doc.)}",
+    "textBeforeTable": "Here are a few commonly-used command line options. Command Line options 4 Additional bitbake-related commands 3 .bb file syntax 2 User interfaces 1 Command Line options Contents Here are some quick notes on bitbake syntax and rules. For an exhaustive list of functionality, and longer descriptions, see the bitbake manual at: http://docs.openembedded.org/bitbake/html/ (note that this link goes to the OpenEmbedded version of the bitbake manual, which is a version from 2006 as of this writing. A separate (yocto-specific?) bitbake manual is included in source form in the yocto project source directory, under bitbake/doc.) Revision as of 12:43, 29 November 2012 |} + \u00a0 | + \u00a0 |Show dependency information in a graphical interface + \u00a0 |bitbake -g -u depexp <recipe-or-image-name> + \u00a0 |- + \u00a0 |see: http://www.crashcourse.ca/wiki/index.php/OE_bitbake-env_utility + \u00a0 |Show invidividual bitbake variable values + \u00a0",
+    "textAfterTable": "User interfaces Bitbake can be used with several different user interfaces. Here are some options: User interface Type NOTES bitbake <nothing> or \"bitbake -u knotty\" scrolling text interface This is the default user interface bitbake -u knotty2 fancier text-based interface This interface updates concurrently processed recipes in-place on text lines bitbake -u ncurses text-window based interface I couldn't figure out how to control or exit this interface bitbake -u hob graphical interface This is a full graphical interface which includes selecting machine, distro, etc. and performing a build bitbake -u goggle simple graphical interface This is a simple graphical wrapper over the streaming text output of bitbake. It's nice in that it shows collapsible trees for the logs for sub-tasks for each recipe. .bb file syntax This table lists some of the syntax found in recipe (.bb) files. Syntax Meaning NOTES VAR = \"foo\" simple assignment VAR\u00a0?= \"foo\" assign if no other value is already assigned (default assignment) VAR\u00a0??=foo weak default assignment takes lower precedence than\u00a0?= VAR = \"stuff ${OTHER_VAR} more\"",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

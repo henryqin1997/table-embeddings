@@ -1,0 +1,71 @@
+{
+    "relation": [
+        [
+            "Brevet citant",
+            "US8108771 *",
+            "US8312384",
+            "US8887085",
+            "US8935620 *",
+            "US9087337 *",
+            "US20110264804 *",
+            "US20150088970 *"
+        ],
+        [
+            "Date de d\ufffdp\ufffdt",
+            "9 sept. 2008",
+            "11 juin 2008",
+            "20 mars 2008",
+            "20 mars 2008",
+            "3 oct. 2008",
+            "",
+            "24 janv. 2014"
+        ],
+        [
+            "Date de publication",
+            "31 janv. 2012",
+            "13 nov. 2012",
+            "11 nov. 2014",
+            "13 janv. 2015",
+            "21 juil. 2015",
+            "27 oct. 2011",
+            "26 mars 2015"
+        ],
+        [
+            "D\ufffdposant",
+            "Yahoo! Inc.",
+            "Honeywell International Inc.",
+            "Amazon Technologies, Inc.",
+            "Amazon Technologies, Inc.",
+            "Google Inc.",
+            "Mario Vuksan",
+            "Yottaa Inc."
+        ],
+        [
+            "Titre",
+            "Secure inter-module communication mechanism",
+            "Apparatus and method for fault-tolerant presentation of multiple graphical displays in a process control system",
+            "Dynamic content navigation",
+            "Dynamic content management",
+            "Displaying vertical content on small display devices",
+            "Cloud-based web content filtering",
+            "Systems and methods for managing loading priority or sequencing of fragments of a web object"
+        ]
+    ],
+    "pageTitle": "Brevet US7849403 - Dynamically updating rendered content - Google\ufffdBrevets",
+    "title": "",
+    "url": "http://www.google.fr/patents/US7849403?hl=fr&ie=ISO-8859-1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.53/warc/CC-MAIN-20150728002308-00212-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 480801135,
+    "recordOffset": 480771060,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{51332=A commonly-used implementation of the third technique is a technology known as \u201cpushlets\u201d. Pushlets basically use an HTML frame to display the client's HTML and a hidden HTML frame to maintain a persistent connection to a servlet. The connection remains persistent because the servlet never closes the output stream of the HttpServletResponse that is destined for the hidden frame. Instead, the servlet holds onto this output stream and whenever a client update is needed, the server sends JavaScript commands to the hidden frame, where this JavaScript contains the updated HTML. A JavaScript listener function in the hidden frame receives the JavaScript commands, and uses Dynamic HTML (\u201cDHTML\u201d) to replace the contents of the visible frame accordingly. Refer to \u201cPushlets-Whitepaper\u201d, by Just van den Broecke, published Aug. 6, 2002 by Just Objects B. V. on the Internet at http://www.pushlets.com/doc/whitepaper-all.html for more information on pushlet technology.}",
+    "textBeforeTable": "Citations de brevets While preferred embodiments of the present invention have been described, additional variations and modifications in those embodiments may occur to those skilled in the art once they learn of the basic inventive concepts. The techniques disclosed herein are based partially upon certain predefined characteristics of the notations being processed. It will be obvious to one of ordinary skill in the art that the inventive concepts disclosed herein may be adapted to changes in the notations, should they occur. Furthermore, while preferred embodiments are described with reference to JavaScript and HTML, this is intended to encompass similar types of scripting components and similar markup languages. Therefore, it is intended that the appended claims shall be construed to include both the preferred embodiments and all such variations and modifications as fall within the spirit and scope of the invention. The computer program instructions may also be loaded onto a computer or other programmable data processing apparatus to cause a series of operational steps to be performed on the computer or other programmable apparatus to produce a computer implemented process such that the instructions which execute on the computer or other programmable apparatus provide steps for implementing the functions specified in the flowchart and/or block diagram block or blocks. These computer program instructions may also be stored in a computer-readable memory that can direct a computer or other programmable data processing apparatus to function in",
+    "textAfterTable": "US20020065899 30 nov. 2001 30 mai 2002 Smith Erik Richard System and method for delivering dynamic content US20020073149 9 oct. 2001 13 juin 2002 Young Christopher Tyler Dynamic content linking US20020107945 12 d\ufffdc. 2000 8 ao\ufffdt 2002 Ibm Corporation Mechanism to dynamically update a windows system with user specific application enablement support from a heterogeneous server environment US20020140729 * 30 mars 2001 3 oct. 2002 Price Stephen H. Dynamic web list display US20020152239 16 avr. 2001 17 oct. 2002 David Bautista-Lloyd Method, system, and program for providing data updates to a page including multiple regions of dynamic content US20020161634 * 27 avr. 2001 31 oct. 2002 Koninklijke Philips Electronics N.V. Electronic document with an automatically updated portion US20030021282 21 juin 2002 30 janv. 2003 Hospodor Andrew D. Providing streaming media data US20030137531 * 31 juil. 2002 24 juil. 2003",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

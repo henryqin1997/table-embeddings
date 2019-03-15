@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "5 (2)",
+            "12",
+            "19",
+            "26"
+        ],
+        [
+            "M",
+            "",
+            "6",
+            "13",
+            "20 (1)",
+            "27"
+        ],
+        [
+            "T",
+            "",
+            "7",
+            "14 (2)",
+            "21",
+            "28"
+        ],
+        [
+            "W",
+            "1",
+            "8 (1)",
+            "15 (3)",
+            "22",
+            "29"
+        ],
+        [
+            "T",
+            "2",
+            "9",
+            "16 (1)",
+            "23",
+            "30"
+        ],
+        [
+            "F",
+            "3",
+            "10",
+            "17 (5)",
+            "24",
+            "31"
+        ],
+        [
+            "S",
+            "4",
+            "11",
+            "18",
+            "25",
+            ""
+        ]
+    ],
+    "pageTitle": "TOra / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/tora/mailman/tora-cvs/?viewmonth=201305&viewday=16",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.92/warc/CC-MAIN-20150728002310-00172-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 221969007,
+    "recordOffset": 221953094,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun \u00a0 May \u00a0 Apr \u00a0 Mar \u00a0 Feb \u00a0 Jan (2) 2015 Dec (4) Nov (34) Oct \u00a0 Sep (4) Aug \u00a0 Jul (8) Jun \u00a0 May (2) Apr (16) Mar (25) Feb (44) Jan (41) 2014 Dec (43) Nov (39) Oct (63) Sep (47) Aug (123) Jul (18) Jun (16) May (15) Apr (34) Mar (50) Feb (38) Jan (6) 2013",
+    "textAfterTable": "Showing 1 results of 1 Flat | Threaded [Tora-cvs] SF.net SVN: tora:[4645] branches/tora3/extlibs From: <ibre5041@us...> - 2013-05-16 15:29:39 Revision: 4645 http://sourceforge.net/p/tora/code/4645 Author: ibre5041 Date: 2013-05-16 15:29:36 +0000 (Thu, 16 May 2013) Log Message: ----------- Cpp.stg/AST.stg cleanup, CommonTree reflects Java API Modified Paths: -------------- branches/tora3/extlibs/libantlr3cpp-3.5.1/include/antlr3commontree.hpp branches/tora3/extlibs/libantlr3cpp-3.5.1/include/antlr3commontree.inl branches/tora3/extlibs/libantlr3cpp-3.5.1/include/antlr3commontreeadaptor.inl branches/tora3/extlibs/libantlr3cpp-3.5.1/include/antlr3defs.hpp branches/tora3/extlibs/parsing.cpp/Makefile branches/tora3/extlibs/parsing.cpp/MySQLGuiLexer.g branches/tora3/extlibs/parsing.cpp/OraclePLSQL.g branches/tora3/extlibs/parsing.cpp/UserMiniTraits.hpp branches/tora3/extlibs/parsing.cpp/antlr-complete-3.5.1-SNAPSHOT.jar branches/tora3/extlibs/parsing.cpp/input/simple01.sql branches/tora3/extlibs/parsing.cpp/org/antlr/codegen/templates/Cpp/AST.stg branches/tora3/extlibs/parsing.cpp/org/antlr/codegen/templates/Cpp/Cpp.stg branches/tora3/extlibs/parsing.cpp/s0.cpp Modified: branches/tora3/extlibs/libantlr3cpp-3.5.1/include/antlr3commontree.hpp =================================================================== --- branches/tora3/extlibs/libantlr3cpp-3.5.1/include/antlr3commontree.hpp\t2013-05-15 20:25:01 UTC (rev 4644) +++ branches/tora3/extlibs/libantlr3cpp-3.5.1/include/antlr3commontree.hpp\t2013-05-16 15:29:36 UTC (rev 4645) @@ -45,55 +45,22 @@ typedef typename ImplTraits::StringType\tStringType; typedef typename ImplTraits::CommonTokenType CommonTokenType; typedef typename ImplTraits::TreeType TreeType; -\ttypedef CommonTree TokenType; +\t//typedef CommonTree TokenType; typedef typename AllocPolicyType::template VectorType<TreeType*> ChildrenType; typedef typename AllocPolicyType::template ListType<TreeType*>\tChildListType; -private: -\t/// The list of all the children that belong to this node. They are not part of the node - /// as they belong to the common tree node that implements this. - /// - ChildrenType\t\tm_children; - - /// This is used to store the current child index position while descending - /// and ascending trees as the tree walk progresses. - /// - ANTLR_MARKER\t\tm_savedIndex; - - /// Start token index that encases this tree - /// - ANTLR_MARKER\t\tm_startIndex; - - /// End token that encases this",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 6,
+    "headerRowIndex": 0
+}

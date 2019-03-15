@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Old Version",
+            "glibc-common 2.3.1-51a_7",
+            "glibc 2.3.1-51a_7",
+            "glibc-devel 2.3.1-51a_7",
+            "glibc-utils 2.3.1-51a_7",
+            "glibc-profile 2.3.1-51a_7",
+            "libstdc++ 3.3.3-11",
+            "libstdc++-devel 3.3.3-11",
+            "cpp 3.3.3-11",
+            "gcc 3.3.3-11",
+            "gcc-c++ 3.3.3-11",
+            "binutils 2.14-8"
+        ],
+        [
+            "New Version",
+            "2.3.1-51a_8",
+            "2.3.1-51a_8",
+            "2.3.1-51a_8",
+            "2.3.1-51a_8",
+            "2.3.1-51a_8",
+            "3.3.3-12",
+            "3.3.3-12",
+            "3.3.3-12",
+            "3.3.3-12",
+            "3.3.3-12",
+            "2.14-9"
+        ]
+    ],
+    "pageTitle": "ELDKUpdates < Know < DENX",
+    "title": "",
+    "url": "http://www.denx.de/wiki/view/Know/ELDKUpdates?sortcol=1&table=2&up=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00220-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 399727247,
+    "recordOffset": 399719045,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Target RPMs for appWeb: Changes: memory leak in appWeb web server Fixes: Patchset 389: Updates for ELDK 3.1.1: Patchset 408 Patchset 407: Patchset 406: Patchset 405: Patchset 404: Patchset 403: Updates for ELDK 3.1.2 Patchset 402: No Patchset: Patchset 401: Patchset 400: Patchset 395: Patchset 394: Patchset 393: Patchset 392: Patchset 391: Patchset 390: Patchset 389: Updates for ELDK 3.1.1: --> %CONTENTS{topic=\"ELDKUpdates\" depth=3}% TOC: No TOC in \"Know.ELDKUpdates\"",
+    "textAfterTable": "gcc-ppc_*-3.3.3-10 gcc-ppc_*-3.3.3-11 ELDK-3.0 LABEL_2004_12_25_2045 Patchset 391: Fixes: Improved the build script so that multiple ELDK builds can be run on the same host in parallel, and that all files are cleaned up upon interruption by Ctrl-C Changes: build.sh shell script; no changes visible to end users Old Package New Package build.sh:1.29 build.sh:1.30 CVS Tags: ELDK-3.0 none Patchset 392: Fixes: binutils (gas) problem: the native assembler did not understand the \"mftb\" mnemonic Changes: Target RPMs for binutils: Old Package New Package binutils-ppc_*-2.14-7 binutils-ppc_*-2.14-8 CVS Tags:",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

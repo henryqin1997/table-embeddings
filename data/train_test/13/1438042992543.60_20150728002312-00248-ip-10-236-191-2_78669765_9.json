@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Defined in header",
+            "template< class T > T real( const complex& z );",
+            "template< class T > constexpr T real( const complex& z );",
+            "long double real( long double z );",
+            "template< class DoubleOrInteger > double real( DoubleOrInteger z );",
+            "float real( float z );",
+            ""
+        ],
+        [
+            "",
+            "(1)",
+            "(1)",
+            "(2)",
+            "(3)",
+            "(4)",
+            ""
+        ],
+        [
+            "",
+            "(until C++14)",
+            "(since C++14)",
+            "(since C++11)",
+            "(since C++11)",
+            "(since C++11)",
+            ""
+        ]
+    ],
+    "pageTitle": "std::real(std::complex) - cppreference.com",
+    "title": "",
+    "url": "http://en.cppreference.com/w/cpp/numeric/complex/real2",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00248-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 78682747,
+    "recordOffset": 78669765,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 29 Jun 2015 08:10:53 GMT",
+    "textBeforeTable": "\u00a0 [edit] (C++11) atanh (C++11) acosh (C++11) asinh tanh cosh sinh Hyperbolic functions (C++11) atan (C++11) acos (C++11) asin tan",
+    "textAfterTable": "Returns the real component of the complex number z, i.e. z.real(). Additional overloads are provided for float, double, long double, and all integer types, which are treated as complex numbers with zero imaginary component. (since C++11) [edit] Parameters z - complex value [edit] Return value the real component of z [edit] See also real accesses the real part of the complex number (public member function) [edit] imag returns the imaginary component (function template) [edit] C documentation for creal",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

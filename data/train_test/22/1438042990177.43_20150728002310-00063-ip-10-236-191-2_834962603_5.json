@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "",
+            "WTA Singles Titles",
+            "WTA Doubles Titles",
+            "ITF Women's Circuit Singles Titles",
+            "ITF Women's Circuit Doubles Titles",
+            "Prize Money",
+            "W/L - Singles",
+            "W/L - Doubles"
+        ],
+        [
+            "YTD",
+            "0",
+            "0",
+            "0",
+            "0",
+            "$126",
+            "3 - 3",
+            "0 - 0"
+        ],
+        [
+            "Career",
+            "0",
+            "0",
+            "0",
+            "0",
+            "$1,019",
+            "10 - 11",
+            "1 - 6"
+        ]
+    ],
+    "pageTitle": "Players | WTA Tennis English",
+    "title": "",
+    "url": "http://www.wtatennis.com/players/player/16252/title/andreea-mihai",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00063-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 834982511,
+    "recordOffset": 834962603,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{1708=ITF // GERMANY // 09-Jun-2014 // $25,000 // Clay (Outdoor) // Draw: 32M/64Q/16D // Rank: - // Seed/Entry: /MD}",
+    "TableContextTimeStampAfterTable": "{8450=ITF // GERMANY // 17-Feb-2014 // $15,000 // Carpet (Indoor) // Draw: 32M/64Q/16D // Rank: - // Seed/Entry: /MD, 10183=ITF // GERMANY // 20-Jan-2014 // $10,000 // Carpet (Indoor) // Draw: 32M/64Q/16D // Rank: - // Seed/Entry: /MD}",
+    "textBeforeTable": ", USA. Aug 03 - Aug 09 Citi Open \">RTS http://www.wtatennis.com/road-singles-leaderboard WTA TV http://www.wtatennis.com/wtatv LIVE SCORES http://www.protennislive.com/LSHD/main.html?year=2015&amp;wkno=99&amp;eventid=&amp;tour=2&amp;lang=en&amp;ref=http://www.wtatennis.com 10 THINGS: STANFORD & DC http://www.wtatennis.com/news/article/4904029/title/10-things-to-know-stanford-dc \u4e2d\u6587 Espa\u00f1ol English If you continue using our website, we will assume that you consent to the cookies we set. To find out more about cookies, please see our Privacy Policy We use cookies on this website...",
+    "textAfterTable": "ptB: 0 } var int_42136 = setInterval(function() { $.ajax({ type: 'get', url: match_42136.url, dataType: 'xml', cache: false, success: function(data) { $(data).find('stats').each(function() { var this_ = $(this); match_42136.info = this_.find('MatchInfo'); match_42136.player1_set1 = (match_42136.info.attr('s1A') != '') ? match_42136.info.attr('s1A') : ''; match_42136.player1_set2 = (match_42136.info.attr('s2A') != '') ? match_42136.info.attr('s2A') : ''; match_42136.player1_set3 = (match_42136.info.attr('s3A') != '') ? match_42136.info.attr('s3A') : ''; match_42136.player2_set1 = (match_42136.info.attr('s1B') != '') ? match_42136.info.attr('s1B') : ''; match_42136.player2_set2 = (match_42136.info.attr('s2B') != '') ? match_42136.info.attr('s2B') : ''; match_42136.player2_set3 = (match_42136.info.attr('s3B') != '') ? match_42136.info.attr('s3B') : ''; match_42136.tb1 = match_42136.info.attr('tb1'); match_42136.tb2 = match_42136.info.attr('tb2'); match_42136.tb3 = match_42136.info.attr('tb3'); match_42136.ballA = match_42136.info.attr('ballA'); match_42136.ballB = match_42136.info.attr('ballB'); match_42136.ptA = match_42136.info.attr('ptA'); match_42136.ptB = match_42136.info.attr('ptB'); // apply to elements $('.42136 .ptA').text(match_42136.ptA); $('.42136 .ptB').text(match_42136.ptB); $('.42136 .p1s1 span').text(match_42136.player1_set1); $('.42136 .p1s2 span').text(match_42136.player1_set2); $('.42136 .p1s3 span').text(match_42136.player1_set3); $('.42136 .p2s1 span').text(match_42136.player2_set1); $('.42136 .p2s2 span').text(match_42136.player2_set2); $('.42136 .p2s3 span').text(match_42136.player2_set3); //$('.liveScoreBox sup').text(''); if (match_42136.player1_set1 > match_42136.player2_set1) { match_42136.player_set1_won = 1; $('.42136 .p1s1 span').addClass('pink'); $('.42136 .p2s1 span').removeClass('pink'); if (match_42136.tb1 != '') { $('.42136 .p2s1 sup').text(' ' + match_42136.tb1); if (parseInt(match_42136.tb1) >= 6) { $('.42136 .p1s1 sup').text(' ' + (parseInt(match_42136.tb1) + 2)); } else { $('.42136 .p1s1 sup').text('7'); } } } else if (match_42136.player1_set1 < match_42136.player2_set1) { match_42136.player_set1_won = 2; $('.42136 .p2s1 span').addClass('pink'); $('.42136 .p1s1 span').removeClass('pink'); if (match_42136.tb1 != '') { $('.42136 .p1s1 sup').text(' ' + match_42136.tb1); if (parseInt(match_42136.tb1) >= 6) { $('.42136 .p2s1 sup').text(' ' + (parseInt(match_42136.tb1) + 2)); } else { $('.42136 .p2s1 sup').text('7'); } } } if (match_42136.player1_set2 > match_42136.player2_set2) { match_42136.player_set2_won = 1; $('.42136 .p1s2 span').addClass('pink'); $('.42136 .p2s2 span').removeClass('pink'); if (match_42136.tb2 != '') { $('.42136 .p2s2 sup').text(' '",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

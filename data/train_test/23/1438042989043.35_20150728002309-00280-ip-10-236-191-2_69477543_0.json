@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Task or Feature",
+            "Minimize a window",
+            "Expand or enlarge a window",
+            "Remove pop-up windows and dialog boxes",
+            "Terminate an application",
+            "Move a wndow"
+        ],
+        [
+            "OpenWindows Method",
+            "Choose Close from Window menu",
+            "Double-click on window frame (expands vertically)",
+            "Click the pushpin",
+            "Choose Quit from the Window menu",
+            "Grab anywhere on window frame (except the corners) and move"
+        ],
+        [
+            "CDE Methods",
+            "Click the Minimize button",
+            "Click the Maximize button (window covers entire screen)",
+            "Choose Close or Cancel from the Window menu Click the Close or Cancel button in the dialog box",
+            "Choose Close from the Window menu or Exit from the File menu",
+            "Grab the title bar and move"
+        ]
+    ],
+    "pageTitle": "Windows and Objects (Solaris Common Desktop Environment: User's Transition Guide)",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E19455-01/806-1362/6jalee44c/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989043.35/warc/CC-MAIN-20150728002309-00280-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 69485745,
+    "recordOffset": 69477543,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 03 Feb 2011 11:30:16 GMT",
+    "textBeforeTable": "Table 1-1 Window Control Comparison In CDE and OpenWindows the verb to close has different meanings: When you close a CDE window, the application is killed; when you close an OpenWindows window, the application is displayed as an icon and continues to run. Minimize turns the window into an icon, and Maximize enlarges the window to its largest possible size, that is, the full screen. Figure 1-4 CDE Window Controls Application windows have common controls, title areas, and grab handles. Some of these are shown in the following figure. Working with Windows The appearance and use of windows, icons, dialog boxes, and so on differs slightly between the OpenWindows and CDE environments. Windows and Objects Next: User Preferences Previous: Desktop Solaris Common Desktop Environment: User's Transition Guide Chapter 1 Moving from the OpenWindows Environment to Solaris CDE \u00a0> Windows and Objects Solaris Common Desktop Environment: User's Transition Guide \u00a0> Documentation Home \u00a0>",
+    "textAfterTable": "Note - Do not confuse closing a window with closing a file within an application. For example, when you choose Close from the File menu of a CDE application, the file is closed, but the application window typically remains open. See also \"Chapter 1, Basic Skills\" in Solaris Common Desktop Environment: User's Guide. Moving Text and Objects CDE has a clipboard facility, a drag-and-drop facility, and a duplication facility. Clipboard CDE provides a clipboard facility that can handle text and graphics simultaneously. Most CDE applications have an Edit menu that provides the standard clipboard items (Cut, Copy, and Paste). Cut, Copy and Paste are also available through the following key combinations. Table 1-2 Clipboard Key Comparison \u00a0Task or Feature \u00a0OpenWindows Keys \u00a0CDE Keys \u00a0Cut \u00a0Meta+X, or Cut \u00a0Alt+X, or Control+Delete, or Cut \u00a0Copy \u00a0Meta+C, or Copy \u00a0Alt+C, or Control+Insert, or Copy \u00a0Paste \u00a0Meta+V, or Paste \u00a0Alt+V, or Shift+Insert, or Paste Drag and Drop As in OpenWindows, in CDE you can drag a selected object or text from one location to another inside",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

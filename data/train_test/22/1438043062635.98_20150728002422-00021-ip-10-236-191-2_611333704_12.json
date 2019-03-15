@@ -1,0 +1,109 @@
+{
+    "relation": [
+        [
+            "name",
+            "id",
+            "uuid",
+            "username",
+            "domain",
+            "attribute",
+            "type",
+            "value",
+            "last_modified"
+        ],
+        [
+            "type",
+            "unsigned int",
+            "string",
+            "string",
+            "string",
+            "string",
+            "int",
+            "string",
+            "datetime"
+        ],
+        [
+            "size",
+            "10",
+            "64",
+            "128",
+            "64",
+            "32",
+            "11",
+            "128",
+            "not specified"
+        ],
+        [
+            "default",
+            "default",
+            "''",
+            "0",
+            "''",
+            "''",
+            "0",
+            "''",
+            "'1900-01-01 00:00:01'"
+        ],
+        [
+            "null",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no",
+            "no"
+        ],
+        [
+            "key",
+            "primary",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "extra attributes",
+            "autoincrement",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "description",
+            "Unique ID",
+            "Unique user ID",
+            "Username / phone number",
+            "Domain name",
+            "AVP attribute",
+            "AVP type",
+            "AVP value",
+            "Date and time when this record was last modified."
+        ]
+    ],
+    "pageTitle": "openSIPS | Documentation / DB schema - 2.2",
+    "title": "",
+    "url": "http://www.opensips.org/Documentation/Install-DBSchema-2-2",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 12,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00021-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 611359019,
+    "recordOffset": 611333704,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{330768=A list of sockets use to connect to a set of RTPProxy. Example: \"udp:localhost:12221 udp:localhost:12222\"., 5159=Copyright \u00a9 2007-2014 OpenSIPS development Team}",
+    "textBeforeTable": "Table 1-1. Table \"acc\" This table is used by the ACC module for keeping track of missed calls. This table is similar to the 'acc' table. More information is available at: http://www.opensips.org/html/docs/modules/devel/acc.html missed_calls This table is used by the ACC module to report on transactions - accounted calls. More information is available at: http://www.opensips.org/html/docs/modules/devel/acc.html acc Chapter 1. Accounting Table \"location\" indexes 36-2. Table \"location\" 36-1. Table \"globalblacklist\" indexes 35-4. Table \"globalblacklist\" 35-3. Table \"userblacklist\" indexes 35-2. Table \"userblacklist\" 35-1. Table \"uri\" indexes 34-2. Table \"uri\" 34-1. Table \"version\" indexes 33-2. Table \"version\" 33-1. Table \"speed_dial\" indexes 32-2. Table \"speed_dial\" 32-1. Table \"sip_trace\" indexes 31-2. Table \"sip_trace\" 31-1. Table \"rtpproxy_sockets\" 30-1. Table \"rls_watchers\" indexes 29-4. Table \"rls_watchers\" 29-3. Table \"rls_presentity\" indexes 29-2. Table \"rls_presentity\" 29-1. Table \"aliases\" indexes 28-2. Table \"aliases\" 28-1. Table \"registrant\" indexes 27-2. Table \"registrant\" 27-1. Table \"pua\"",
+    "textAfterTable": "duration unsigned int 11 0 no \u00a0 \u00a0 Call duration (from 200OK INVITE to BYE request) - this filed is populated only if CDR support is enabled in ACC module (see cdr_flag parameter) setuptime unsigned int 11 0 no \u00a0 \u00a0 Call initialization duration - (from INVITE request to 200 OK INVITE) - this filed is populated only if CDR support is enabled in ACC module (see cdr_flag parameter) created datetime not specified NULL yes \u00a0 \u00a0 The call creation date and time. Table 1-2. Table \"acc\" indexes name type links description callid_idx default callid Table 1-3. Table \"missed_calls\" name type size default null key extra attributes description id unsigned int 10 default no primary autoincrement unique ID method string",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

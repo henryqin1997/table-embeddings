@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Expression",
+            "sizeof(sbyte)",
+            "sizeof(byte)",
+            "sizeof(short)",
+            "sizeof(ushort)",
+            "sizeof(int)",
+            "sizeof(uint)",
+            "sizeof(long)",
+            "sizeof(ulong)",
+            "sizeof(char)",
+            "sizeof(float)",
+            "sizeof(double)",
+            "sizeof(decimal)",
+            "sizeof(bool)"
+        ],
+        [
+            "Constant value",
+            "1",
+            "1",
+            "2",
+            "2",
+            "4",
+            "4",
+            "8",
+            "8",
+            "2 (Unicode)",
+            "4",
+            "8",
+            "16",
+            "1"
+        ]
+    ],
+    "pageTitle": "sizeof (C# Reference)",
+    "title": "",
+    "url": "https://msdn.microsoft.com/en-us/library/eahchzkf.aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00339-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 882009711,
+    "recordOffset": 881996253,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The sizeof operator cannot be overloaded. The values returned by the sizeof operator are of type int. The following table shows the constant values that are substituted for sizeof expressions that have certain built-in types as operands. Starting with version 2.0 of C#, applying sizeof to built-in types no longer requires that unsafe mode be used. Remarks int intSize = sizeof(int); // Constant value 4:     Copy   C# The following example shows how to retrieve the size of an int: User-defined structs that do not contain any fields or properties that are reference types Pointer types Enum types Used to obtain the size in bytes for an unmanaged type. Unmanaged types include the built-in types that are listed in the table that follows, and also the following: Visual Studio .NET 2003 Visual Studio 2005 Visual Studio 2008 Visual",
+    "textAfterTable": "For all other types, including structs, the sizeof operator can be used only in unsafe code blocks. Although you can use the Marshal.SizeOf method, the value returned by this method is not always the same as the value returned by sizeof. Marshal.SizeOf returns the size after the type has been marshaled, whereas sizeof returns the size as it has been allocated by the common language runtime, including any padding. Example C# Copy  class MainClass { // unsafe not required for primitive types\u00a0 static\u00a0void Main() { Console.WriteLine(\"The size of short is {0}.\", sizeof(short)); Console.WriteLine(\"The size of int is {0}.\", sizeof(int)); Console.WriteLine(\"The size of long is {0}.\", sizeof(long)); } } /* Output: The size of short is 2. The size of int is 4. The size of long is 8. */ C# Language Specification",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Motion Behavior Setting",
+            "Constant",
+            "Accelerating",
+            "Oscillating",
+            "Overshoot",
+            "Discrete"
+        ],
+        [
+            "Definition",
+            "This is the default behavior. The property value changes in equal increments from the start value to the end value.",
+            "This behavior speeds up (accelerates) the rate of transition from start value to end value when the Acceleration value is positive, or slows down (decelerates) the rate of transition when the value is negative.",
+            "This behavior takes a constant path between the start and end values and swings the property value back and forth over that path as the animation progresses to the end value. The number of times it swings is set by the Period count. Attenuation determines the significance of the dampening factor and Amplitude determines the magnitude of the value change for each swing.",
+            "This behavior causes the property value to exceed the end value, then return past the end value in the other direction. This process is repeated as specified by the Period count. Attenuation determines the significance of the dampening factor and Amplitude determines the length of the overshoot. Speed determines over what portion of the animation the effect occurs; a value of 10 is balanced, under 10 is weighted toward the first frame, and over 10 is weighted towards the last frame.",
+            "This behavior plots reference points at key frames only. Essentially, there is no transition between frames at all; the object retains the start value until the key frame is reached, then the end value is applied to the object property."
+        ]
+    ],
+    "pageTitle": "Motion behavior properties - User Guide - BlackBerry Composer - 6.0",
+    "title": "",
+    "url": "http://docs.blackberry.com/ko-kr/developers/deliverables/21108/Motion_behavior_properties_627036_11.jsp",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00334-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 77393375,
+    "recordOffset": 77385173,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{4223=Copyright \u00a9 2013 BlackBerry, unless otherwise noted.}",
+    "lastModified": "Thu, 16 Jan 2014 01:40:04 GMT",
+    "textBeforeTable": "Specify a Motion behavior to control how the object property transitions from the start value to the end value of the selected segment. Motion behavior properties }); }); } $(this).remove(); if (!$(this).hasClass(\"centralizedSearch\")) { $('.breadcrumbSearch').each(function(i, obj) { $(document).ready(function() { }); }); if($(this).attr('value') == ''){$(this).attr('value',''+docs.lang.searchAll+'')} $('#q').blur(function(){ $('#q').attr('onblur',\"if(this.value ==\\'\\') {this.value = '\"+docs.lang.searchAll+\"'}\"); $('#q').attr('value', docs.lang.searchAll); $(document).ready(function(){ } $('#smartphonesq').val(''); function clearMsg(){",
+    "textAfterTable": "Next topic: Path behavior properties Previous topic: Editing animation behavior between frames Was this information helpful? Send us your comments. \uc704\ub85c \ub3cc\uc544\uac00\uae30 BlackBerry.com Copyright \u00a9 2013 BlackBerry, unless otherwise noted. \ubc95\uc801 \uac1c\uc778 \uc815\ubcf4 \ubcf4\ud638 \uc815\ucc45 \uc0c1\ud45c BlackBerry site monitoring",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

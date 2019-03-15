@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "our code",
+            "pre",
+            "wrap",
+            "wiki",
+            "collapse",
+            "code",
+            "normal",
+            "override"
+        ],
+        [
+            "actual CSS",
+            "White-space: pre;",
+            "White-space: pre-wrap;",
+            "White-space: nowrap;",
+            "White-space: pre-line;",
+            "White-space: pre;",
+            "White-space: normal;",
+            "White-space: pre;"
+        ],
+        [
+            "Explanation",
+            "default: acts like 'pre' whitespace preserved, text wraps at box border and line breaks.",
+            "whitespace preserved, text wraps at box border and line breaks. Good for very long commands.",
+            "is this the brain damaged method the magic (prefix w/space) wiki text boxes use??",
+            "multiple white space collapses, text wraps at box border and line breaks.",
+            "easier to remember effect name.",
+            "multiple white space collapses, text wraps at box border.",
+            "use for simple 'pre' style formatting"
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Template:Txtbox\" - PC-BSD Wiki",
+    "title": "Table Is there no version? Wrap Options [Tables 1]",
+    "url": "http://wiki.pcbsd.org/index.php?title=Template:Txtbox&oldid=25286&diff=prev",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00218-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 264929667,
+    "recordOffset": 264913726,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Wrap Control This template encloses the provided text within a dashed line box. The text to the right of the box may be some type of comment such as \"a prompt asking for the root password will open.\". The effect will be shrink to fit but the width (depending upon wrap style) of the box can be adjusted if necessary. Note the <nowiki> 'prefixed with a space' formatting trick should be avoided. Other style markup like for italic or bold should be placed directly around the specific content and not around the entire template. Individual # symbols should be replaced with {{pound}} and a series of pound symbols may be enclosed within nowiki tags or they will be parsed as numbered list elements. Explanation 2.1 Result 2 Usage 1.1 Wrap Control 1 Explanation Contents Revision as of 02:17, 30 April 2013 This template encloses the provided text within a dashed line box. The text to the right of the box may be some type of comment such as ''\"a prompt asking for the root password will open.\"''. The effect will be shrink to fit but the width (depending upon wrap",
+    "textAfterTable": "NOTE: There is some weirdness with unintended blank lines at the bottom. For some situations this can be fixed by using one long line that includes a <br> to assist formatting. The default is reasonable for most situations but would require the fix to avoid the extra unneeded space/lines. Usage {{txtbox|width=value|box=content such as parens containing 5(\u00a0\u00a0\u00a0\u00a0\u00a0) spaces preserved, '''second line - {{highlight|note that bold and italic and highlight/redlight}}''' |txt=Text to right of box<br>''second line'' - {{redlight|are possible too.}}}} Result content such as parens containing 5( ) spaces preserved, second line - note that bold and italic and highlight/redlight Text to right of box second line - \u00a0are possible too.\u00a0 \u00a0Translator:\u00a0 Please update the last element on this page, and/or locate the {{groupListHeading|group=tables}} line, replace that with {{GroupRefHeading|{{putCommon|19}}}} Cite error: <ref> tags exist for a group named \"Tables\", but no corresponding <references group=\"Tables\"/> tag was found Retrieved from \u2018 http://wiki.pcbsd.org/index.php?title=Template:Txtbox&oldid=25286\u2019",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

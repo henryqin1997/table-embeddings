@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust",
+            "Precipitation"
+        ],
+        [
+            "Avg",
+            "27.3 \u00b0F",
+            "21 \u00b0F",
+            "78.1 %",
+            "30.05 in",
+            "7.1 mph",
+            "",
+            "0.14 in"
+        ],
+        [
+            "Avg High",
+            "34.1 \u00b0F",
+            "27.4 \u00b0F",
+            "90.8 %",
+            "30.22 in",
+            "14.4 mph",
+            "27.1 mph",
+            ""
+        ],
+        [
+            "Avg Low",
+            "18.5 \u00b0F",
+            "13.2 \u00b0F",
+            "60.6 %",
+            "29.89 in",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Record High",
+            "52 \u00b0F (2006)",
+            "44.6 \u00b0F (1999)",
+            "",
+            "30.52 in (2005)",
+            "27.6 mph (2011)",
+            "38 mph (2011)",
+            "0.36 in (2011)"
+        ],
+        [
+            "Record Low",
+            "1.9 \u00b0F (2015)",
+            "-2 \u00b0F (2004)",
+            "37 % (2004)",
+            "29.43 in (2015)",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Dorset, Ohio - February 2nd - Daily Weather Averages (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherdaily.php3?s=152233&month=2&theday=2&cityname=Dorset%2C+Ohio%2C+United+States+of+America&units=",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00274-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 831307937,
+    "recordOffset": 831291543,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] DAILY WEATHER AVERAGE - FEBRUARY 2 [ \u2190 Previous Day ] } window.print(); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); return $(this).text().replace(\"2015\", \"\"); $('.datepicker-switch').text(function () { }); window.location = url; var url = \"/weather/weatherdaily.php3?s=152233&\" + pieces + \"&citynameDorset%2C+Ohio%2C+United+States+of+America&set=\"; var pieces = tosplit.replace(/(.*?)-(.*?)-(.*?)/,\"month=$2&theday=$3\"); var tosplit = event.format(); $('#datepicker').datepicker().on('changeDate', function (event) { }); endDate: \"2015-12-31\", startDate: \"2015-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 6.1 mi Wind Direction S (178.3 \u00b0) Weather Element Total Heating Degree Days 38.7 (Base 18.3) Total Years on Record: 17",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

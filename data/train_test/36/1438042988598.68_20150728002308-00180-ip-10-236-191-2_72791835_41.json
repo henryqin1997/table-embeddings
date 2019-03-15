@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Setting Name",
+            "Above Ground",
+            "Above layer 1",
+            "Above Layer 2",
+            "Above Layer 3",
+            "Above Layer 4",
+            "Above Layer 5",
+            "At Bottom"
+        ],
+        [
+            "Token",
+            "[LEVELS_ABOVE_GROUND:]",
+            "[LEVELS_ABOVE_LAYER_1:]",
+            "[LEVELS_ABOVE_LAYER_2:]",
+            "[LEVELS_ABOVE_LAYER_3:]",
+            "[LEVELS_ABOVE_LAYER_4:]",
+            "[LEVELS_ABOVE_LAYER_5:]",
+            "[LEVELS_AT_BOTTOM:]"
+        ],
+        [
+            "Description",
+            "The number of Z-Levels of air above the highest surface level. Has no impact on how many Z-levels deep the surface layer is.",
+            "Z-Levels of stone above the first cavern layer. Making this higher will guarantee at least this many levels to build your fortress, but will have no impact on how many z-levels thick the surface layer is. Also, the top of a cavern may be higher than the rest of a cavern, so in practice there will be more \"solid\" levels than this above the cavern. As for version 0.31.25 this setting is inaccurate. The actual number of z-levels may vary in a range of approx. \u00b15, which may result in non-existence of any solid z-levels between a surface layer and first cavern layer.",
+            "Z-levels of earth between very top of second cavern and very bottom of first cavern.",
+            "Z-levels of earth between very top of third cavern and very bottom of second cavern.",
+            "Z-Levels of earth between very highest magma and very bottom of third cavern. Spoiler Hidden (select invisible text to read): Making this high will give a large area for HFS veins, so that it never touches caverns, giving more to mine if it was impacting the cavern previously.",
+            "Uncertain. May control the number of levels of \"Semi Molten Rock\" between HFS and Magma, may control number of levels of magma, may impact both. In experimentation, the overall depth of all magma sea and semi-molten rock levels appears to increase, but not consistent enough to say for certain. Only valid if Magma Layer present. Spoiler Hidden:Often the HFS vein will only extend as high as the highest magma, making this the only guaranteed way to increase amount of HFS to mine, but unfortunately also creating enormous useless semi-molten z-levels",
+            "Appears to be number of levels of HFS chamber. Only valid if Bottom Layer present. Often has no impact. Values larger than default results in strange things."
+        ]
+    ],
+    "pageTitle": "v0.31:Advanced world generation - Dwarf Fortress Wiki",
+    "title": "",
+    "url": "http://dwarffortresswiki.org/index.php/v0.31:Advanced_world_generation",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 41,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988598.68/warc/CC-MAIN-20150728002308-00180-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72825807,
+    "recordOffset": 72791835,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{126894=As for version 0.31.25 this setting is inaccurate. The actual number of z-levels may vary in a range of approx. \u00b15, which may result in non-existence of any solid z-levels between a surface layer and first cavern layer., 84592=According to research by Shandra on v0.31.25, this is the relationship between the value of this setting and the approximate number of gems and ore:, 73419=For example, if the Elevation Weighted Range parameters were set to (starting with the 0-20 range) 60:10:10:10:10 (these values do not have to add up to any particular number) then about 60% of the map squares (on average) will have an elevation in the range of 0-20, and the other ranges will be represented by around 10% of the map squares each. The exact distribution is still left up to chance though on average it will be close to this specification.}",
+    "lastModified": "Thu, 30 Jul 2015 06:03:32 GMT",
+    "textBeforeTable": "The following table assumes that you have 3 cavern layers. The Levels Above Layer settings control how many Z-Levels are above each layer. A layer may itself consist of multiple Z-Levels (and almost always does). These parameters control the \"thickness\" of various \"layers\" on the map. Note that a \"layer\" in this case does not refer to one Z-level, but refers to a number of related Z-levels such as \"levels above ground\". [edit] Z Levels (Depth) Settings [HAVE_BOTTOM_LAYER_2:1] [HAVE_BOTTOM_LAYER_2:<1 or 0>] Example Token If enabled, this will force the magma layer above it. (Unknown whether this has any impact on occurrence of HFS \"temple\".)Verify Determines if the space below the magma sea exists. If Yes the \"HFS\" layer is always present. Normally you want to leave this set to Yes for maximum fun. [edit] Bottom Layer [HAVE_BOTTOM_LAYER_1:1] [HAVE_BOTTOM_LAYER_1:<1 or 0>] Example Token Setting 1/Yes causes the magma layer to exist, value 0/No prevents",
+    "textAfterTable": "Some implications: The number of surface layers (e.g. soil), at this time, can not be controlled. For example, on a map with 1 layer of Peat, then a layer of Silt, then a layer of Obsidian, there is no control to let you increase either one to be, say, 20 z-levels. (though you may get lucky with the Obsidian). There can be multiple stone layers between the cavern and the surface. So increasing Levels Above Layer 1 may give you more Conglomerate, or more Granite, and you have no control over which stone layer spans those Z-Levels. The layers shown on embark span across the cavern layers in an unknown and inconsistent way. Sometimes those 10 different layers of stone are evenly distributed over your 400 z-level deep map, sometimes the first 9 get 1 z-level each and the last gets the other 391 levels. No way to control found yet. The HFS temple, if present, will always extend into the rock layers, and appears to always make contact with the bottom cave. Large values for levels above layer 5 and layer 4 can result in enormous temples, but the number of levels at the top (the part with undead) appears to be unaffected. Unconfirmed whether number of levels between caverns has any impact on cavern height. There will be connecting ramps and/or shafts between cavern layers no matter how many levels are between them. Very",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

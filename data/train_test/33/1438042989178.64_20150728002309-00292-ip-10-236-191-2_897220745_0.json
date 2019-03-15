@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Crawler",
+            "Googlebot (Google Web search)",
+            "Googlebot News",
+            "Googlebot Images",
+            "Googlebot Video",
+            "Google Mobile",
+            "Google Smartphone",
+            "Google Mobile AdSense",
+            "Google AdSense",
+            "Google AdsBot landing page quality check"
+        ],
+        [
+            "User-agents",
+            "Googlebot",
+            "Googlebot-News (Googlebot)",
+            "Googlebot-Image (Googlebot)",
+            "Googlebot-Video (Googlebot)",
+            "Googlebot-Mobile",
+            "Googlebot",
+            "Mediapartners-Google or Mediapartners (Googlebot)",
+            "Mediapartners-Google Mediapartners (Googlebot)",
+            "AdsBot-Google"
+        ],
+        [
+            "HTTP(S) requests user-agent",
+            "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) or (rarely used): Googlebot/2.1 (+http://www.google.com/bot.html)",
+            "Googlebot-News",
+            "Googlebot-Image/1.0",
+            "Googlebot-Video/1.0",
+            "[various mobile device types] (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+            "Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+            "[various mobile device types] (compatible; Mediapartners-Google/2.1; +http://www.google.com/bot.html)",
+            "Mediapartners-Google",
+            "AdsBot-Google (+http://www.google.com/adsbot.html)"
+        ]
+    ],
+    "pageTitle": "Google crawlers - Search Console Help",
+    "title": "",
+    "url": "https://support.google.com/webmasters/answer/1061943",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989178.64/warc/CC-MAIN-20150728002309-00292-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 897230815,
+    "recordOffset": 897220745,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "\"Crawler\" is a generic term for any program (such as a robot or spider) used to automatically discover and scan websites by following links from one webpage to another. Google's main crawler is called Googlebot. This table lists information about the common Google crawlers you may see in your referrer logs, and how they should be specified in robots.txt, the robots meta tags, and the X-Robots-Tag HTTP directives. See which robots Google uses to crawl the web Google crawlers Monitor crawling activity and errors Crawl Help Help forumForum Search Console Search Console Help",
+    "textAfterTable": "robots.txt Where several user-agents are recognized in the robots.txt file, Google will follow the most specific. If you want all of Google to be able to crawl your pages, you don't need a robots.txt file at all. If you want to block or allow all of Google's crawlers from accessing some of your content, you can do this by specifying Googlebot as the user-agent. For example, if you want all your pages to appear in Google search, and if you want AdSense ads to appear on your pages, you don't need a robots.txt file. Similarly, if you want to block some pages from Google altogether, blocking the user-agent Googlebot will also block all Google's other user-agents. But if you want more fine-grained control, you can get more specific. For example, you might want all your pages to appear in Google Search, but you don't want images in your personal directory to be crawled. In this case, use robots.txt to disallow the user-agent Googlebot-image from crawling the files in your /personal directory (while allowing Googlebot to crawl all files), like this:  User-agent: Googlebot Disallow: User-agent: Googlebot-Image Disallow: /personal To take another example, say that you want ads on all your pages, but you don't want those pages to appear in Google Search. Here, you'd block Googlebot, but allow Mediapartners-Google, like this:  User-agent: Googlebot Disallow: / User-agent: Mediapartners-Google Disallow: robots meta tag Some pages use multiple robots meta tags to specify directives for different crawlers, like this:",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

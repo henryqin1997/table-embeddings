@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Aug 21, 1998",
+            "Dec 9, 1998",
+            "Feb 16, 2004",
+            "Feb 15, 2008",
+            "Feb 25, 2008",
+            "Feb 8, 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "REMI",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: INTEL CORPORATION, CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:GRAUNKE, GARY L.;ROZAS, CARLOS V.;REEL/FRAME:009398/0087 Effective date: 19980811",
+            "Owner name: INTEL CORPORATION, CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:ILKBAHAR, ALPER;CHENG, CHRISTOPHER;REEL/FRAME:009635/0705;SIGNING DATES FROM 19981123 TO 19981201",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6105137 - Method and apparatus for integrity verification, authentication, and secure ... - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6105137?dq=6,757,710",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987866.61/warc/CC-MAIN-20150728002307-00262-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 494292467,
+    "recordOffset": 494268435,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations Thus, a method and apparatus for authenticating the integrity of software modules has been disclosed. Although the present invention has been described particularly with reference to the figures, it will be apparent to one of the ordinary skill in the art that the present invention may appear in any number of systems which provide data integrity verification and authentication functionality. It is further contemplated that many changes and modifications may be made by one of ordinary skill in the art without departing from the spirit and scope of the present invention. Since an operating system's program loader may modify software modules when the loader moves the modules from secondary memory such as data storage device 510 shown in FIG. 5 to primary memory such random access memory 504 shown in FIG. 5, the memory checker may include intelligence to reverse such modifications. In particular, a program loader often modifies program instructions to reflect the address changes from the secondary memory to the primary memory. The memory checker in one embodiment of the invention may elect to copy the affected regions of the modules from the primary memory, reverse the address modifications and then attempt to reconstruct and validate the signed image of the module. However, when Bob's module has been loaded into memory, Bob's module is verified using the digital signature verifier in steps 706 and 708. After the validation of Bob's module, Alice performs another",
+    "textAfterTable": "Method and apparatus for witnessed authentication of electronic documents US5887131 * Dec 31, 1996 Mar 23, 1999 Compaq Computer Corporation Method for controlling access to a computer system by utilizing an external device containing a hash value representation of a user password US5901227 * Jun 20, 1996 May 4, 1999 Novell, Inc. Method and apparatus for implementing partial and complete optional key escrow US5903721 * Mar 13, 1997 May 11, 1999 cha|Technologies Services, Inc. Method and system for secure online transaction processing US5903882 * Dec 13, 1996 May 11, 1999 Certco, Llc Reliance server for electronic transaction system US5915021 * Feb 7, 1997 Jun 22, 1999 Nokia Mobile Phones Limited Method for secure communications in a telecommunications system US5926548 * May 20, 1997 Jul 20, 1999 Nippon Telegraph And Telephone Corporation Method and apparatus for implementing hierarchical electronic cash US5933503",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

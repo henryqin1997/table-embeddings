@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Command",
+            "access-list",
+            "show snmp community",
+            "snmp-server enable traps",
+            "snmp-server host",
+            "snmp-server view"
+        ],
+        [
+            "Description",
+            "Configures the access list mechanism for filtering frames by protocol type or vendor code.",
+            "Displays SNMP community access strings.",
+            "Enables the router to send SNMP notification messages to a designated network management workstation.",
+            "Specifies the targeted recipient of an SNMP notification operation.",
+            "Creates or updates a view entry."
+        ]
+    ],
+    "pageTitle": "SNMP Command Reference, Cisco IOS XE Release 3SE (Catalyst 3850 Switches) - snmp mib event trigger owner through snmp-server enable informs [Cisco Catalyst 3850 Series Switches] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/snmp/command/snmp-xe-3se-3850-cr-book/snmp-xe-3se-3850-cr-book_chapter_010.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 10,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988250.59/warc/CC-MAIN-20150728002308-00167-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 362694135,
+    "recordOffset": 362679738,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{9032=This command was introduced on Cisco ASR 1000 Aggregation Series Routers., 2860=Alternatively, an integer from 1300 to 1999 that specifies a list of IP addresses in the expanded range of standard access list numbers that are allowed to use the community string to gain access to the SNMP agent.}",
+    "textBeforeTable": "Syntax Description chassis-id snmp-server no text chassis-id snmp-server To provide a message line identifying the Simple Network Management Protocol (SNMP) server serial number, use the snmp-server chassis-id command in global configuration mode. To restore the default value, if any, use the no form of this command. snmp-server chassis-id snmp-server contact snmp-server community snmp-server chassis-id snmp mib event trigger owner through snmp-server enable informs snmp-server contact snmp-server community snmp-server chassis-id snmp mib event trigger owner through snmp-server enable informs Contents snmp mib event trigger owner through snmp-server enable informs --> pre.screen { padding: 5px 5px 5px 5px; border: outset; background-color: #CCCCCC; margin-top: 2px; margin-bottom : 2px; white-space: pre} .nocellnorowborder { border:solid 1px; border-left:solid 1px; border-right:solid 1px; border-top:solid 1px; border-bottom:solid 1px;} .cell-norowborder { border:solid 1px; border-left:solid 1px; border-right:solid 1px; border-top:solid 1px; border-bottom:solid 1px;} .row-nocellborder { border:solid 1px; border-left:solid 1px; border-right:solid 1px; border-top:solid 1px; border-bottom:solid 1px;} .cellrowborder",
+    "textAfterTable": "Release Modification 10.0 This command was introduced. 12.2(33)SRA This command was integrated into Cisco IOS Release 12.2(33)SRA. 12.2SX This command is supported in the Cisco IOS Release 12.2SX train. Support in a specific 12.2SX release of this train depends on your feature set, platform, and platform hardware. Cisco IOS XE Release 3.2SE This command was implemented in Cisco IOS XE Release 3.2SE. Cisco IOS XE Release 3.3SE This command was implemented in Cisco IOS XE Release 3.3SE. Usage Guidelines The Cisco MIB provides a chassis MIB variable that enables the SNMP manager to gather data on system card descriptions, chassis type, chassis hardware version, chassis ID string, software version of ROM monitor, software version of system image in ROM, bytes of processor RAM",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

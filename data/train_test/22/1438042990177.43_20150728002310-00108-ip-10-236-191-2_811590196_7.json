@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust"
+        ],
+        [
+            "Average",
+            "56.2 \u00b0F",
+            "47.2 \u00b0F",
+            "77.1 %",
+            "30.22 in",
+            "1.9 mph",
+            ""
+        ],
+        [
+            "High",
+            "80.6 \u00b0F (3:55 pm)",
+            "51.8 \u00b0F (12:15 am)",
+            "100 % (1:15 am)",
+            "30.27 in (7:55 am)",
+            "11.5 mph (3:50 pm)",
+            "16.1 mph (5:45 pm)"
+        ],
+        [
+            "Low",
+            "42.8 \u00b0F (4:15 am)",
+            "42.8 \u00b0F (4:15 am)",
+            "26 % (3:55 pm)",
+            "30.16 in (3:55 pm)",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Carnelian Bay, California [August 7, 2014] - Weather Records By Hour (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherhourly.php3?s=764240&date=2014-08-07&cityname=Carnelian+Bay%2C+California%2C+United+States+of+America&units=",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00108-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 811605479,
+    "recordOffset": 811590196,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] WEATHER ALMANAC - AUGUST 7, 2014 [ \u2190 Previous Day ] } PrintUrl('printIframe', 'http://www.weatherbase.com/weather/weatherhourly-print.php3?s=764240&date=2014-08-07&cityname=Carnelian+Bay%2C+California%2C+United+States+of+America&units='); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); window.location = url; var url = \"/weather/weatherhourly.php3?s=764240&date=\" + event.format() + \"&citynameCarnelian+Bay%2C+California%2C+United+States+of+America&set=\"; $('#datepicker').datepicker().on('changeDate', function (event) { }); startView: 2 endDate: \"2015-08-02\", startDate: \"1995-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 7.6 mi Wind Direction ENE (79.2 \u00b0) Weather Element Total Precipitation --- Heating Degree Days 3.3 (Base 65) Growing Degree Days 11.7 (Base 50) Averaged from 50 records on August 7, 2014",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,70 @@
+{
+    "relation": [
+        [
+            "Date",
+            "2008-12-17",
+            "2008-12-06",
+            "2007-06-29",
+            "2006-11-24",
+            "2004-11-20",
+            "2004-09-23",
+            "2004-09-15",
+            "2004-06-26",
+            "2003-12-08"
+        ],
+        [
+            "Version",
+            "1.6.1",
+            "1.6",
+            "1.5",
+            "1.4",
+            "1.3",
+            "1.2.95 (alpha)",
+            "1.2.94 (alpha)",
+            "1.2.93 (alpha)",
+            "1.2"
+        ],
+        [
+            "Download (please use one of the mirrors instead)",
+            "radius-1.6.1.tar.gz and its signature radius-1.6.1.tar.bz2 and its signature",
+            "radius-1.6.tar.gz and its signature radius-1.6.tar.bz2 and its signature",
+            "radius-1.5.tar.gz and its signature radius-1.5.tar.bz2 and its signature",
+            "radius-1.4.tar.gz and its signature radius-1.4.tar.bz2 and its signature",
+            "radius-1.3.tar.gz and its signature radius-1.3.tar.bz2 and its signature",
+            "radius-1.2.95.tar.gz and its signature radius-1.2.95.tar.bz2 and its signature",
+            "radius-1.2.94.tar.gz and its signature radius-1.2.94.tar.bz2 and its signature",
+            "radius-1.2.93.tar.gz radius-1.2.93.tar.bz2",
+            "radius-1.2.tar.gz and its signature. radius-1.2.tar.bz2 and its signature."
+        ],
+        [
+            "Information",
+            "This minor release fixes compilation of radiusd with gcc version 4.3.0 (or later), which overly optimizes some code. It does such a remarkable job of optimization, that reduces a perfectly valid code to explicit dead loops in the produced object files. To avoid this, starting from this version GNU Radius will be compiled with -fno-strict-aliasing. I can only repeat after Linus Torvalds, that \"the aliasing code in particular is not even worth enabling, it's just not possible to sanely tell gcc when some things can alias.\"",
+            "The syslog statement (file raddb/config) takes an optional 3rd argument specifying the syslog tag to use, e.g.: channel default { syslog local1.info radiusd; }; New attributes: GNU-Server-Address Holds IP address of the RADIUS server that recieved the request. Notice, that the value of this attribute is \"0.0.0.0\" if there are no listen statement in your raddb/config. GNU-Server-Port Holds UDP port number of the RADIUS server that recieved the request. Autoconf function AM_GNU_RADIUS is provided, for checking if GNU Radius is installed from configure.ac scripts. Guile support requires Gule version 1.8 or later. Bugfixes: Pass NAS-IP-Address to mlc_stop_query.",
+            "Licensed under the GPLv3. The libgnuradius library uses its own namespace. Wildcard matching in raddb/hints considerably improved. The new code supports everything wildmat used to support plus allows to select arbitrary parts of the matched string using \\( and \\) grouping. Fix builds on non-glibc systems. Fix handling of max-port-count statement.",
+            "Hints are evaluated before verifying the user name validity. New builtin functions in Rewrite language: time, strftime. Exec-Program-Wait and Scheme-Procedure can occur in hints profiles. Rewrite expressions are allowed as values of Exec-Program and Exec-Program-Wait pairs. Bugfixes: Properly protect occurrences of define in scm4 files. Explicit assignments in naslist flags were incorrectly parsed. Rewrite functions correctly handle strings, containing nul characters. Fix format string vulnerability in sqllog (IDEF1590)",
+            "See the announcement.",
+            "This release fixes the following bugs: The first two file descriptors were not closed when launching a program by Exec-Program attribute, which, if the program was printing something on stdout, interfered with normal inter-process communication. Fixed timeout computation in RPP code. Radtest no longer requires libreadline",
+            "Announce and a list of user-visible changes since previous alpha 1.2.93.",
+            "NEWS and ChangeLog diffs to the previous version 1.2.",
+            "Latest stable release. See the official announce."
+        ]
+    ],
+    "pageTitle": "Radius - GNU Project - Free Software Foundation (FSF)",
+    "title": "",
+    "url": "http://www.gnu.org/software/radius/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981921.1/warc/CC-MAIN-20150728002301-00048-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 466639941,
+    "recordOffset": 466631739,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{1=Updated: $Date: 2009/09/17 21:55:42 $ $Author: gray $}",
+    "TableContextTimeStampAfterTable": "{5522=Radius allows for SNMP management of its activities. Its MIB tree contains MIBs proposed by RFC 2619 and 2621 as well as its private extensions., 18467=Copyright (C) 2001 Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111, USA}",
+    "textBeforeTable": "Latest Releases Alpha releases of the development version can be downloaded from alpha.gnu.org. The project's homepage at Savannah is the place to look for the latest news and patches for the project. Radius can be found on http://ftp.gnu.org/gnu/radius/ or one of the mirrors. Downloading Radius http://mail.gnu.org/mailman/listinfo/bug-gnu-radius. This list distributes bug reports, bugfixes, and suggestions for improvements in Radius. User discussion of Radius bugs also occurs here. The list is not moderated, postings are allowed for anybody. To subscribe to the list, visit <bug-gnu-radius@gnu.org> http://mail.gnu.org/mailman/listinfo/help-gnu-radius. This list is the place for users and installers of GNU Radius to ask for help. The list is not moderated, but postings are allowed for list members only. To subscribe to the list, visit <help-gnu-radius@gnu.org> http://mail.gnu.org/mailman/listinfo/info-gnu-radius. This list distributes announcements and progress reports on GNU Radius. This is a moderated list. Please, do not send bug reports or requests for help to this list, there exist special mailing lists for these purposes. To subscribe to the list, visit <info-gnu-radius@gnu.org> The following mailing lists are related to GNU Radius: Mailing Lists Complete documentation in Texinfo format is also included in the distribution. An online manual is available. The Free Software Foundation publishes a GNU Radius Reference Manual. You can order the manual in printed form from the Free Software Foundation. Manuals Radius is",
+    "textAfterTable": "Translations of this page: [ English | Polish ] Return to GNU's home page. Please send FSF & GNU inquiries & questions to gnu@gnu.org. There are also other ways to contact the FSF. Please send comments on these web pages to webmasters@gnu.org, send other questions to gnu@gnu.org. Copyright (C) 2001 Free Software Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111, USA Verbatim copying and distribution of this entire article is permitted in any medium, provided this notice is preserved. Updated: $Date: 2009/09/17 21:55:42 $ $Author: gray $",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

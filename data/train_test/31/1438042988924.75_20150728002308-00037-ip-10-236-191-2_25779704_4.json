@@ -1,0 +1,190 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2007-08",
+            "2008-09",
+            "2009-10",
+            "2010-11",
+            "CAREER"
+        ],
+        [
+            "School",
+            "Arizona State",
+            "Arizona State",
+            "Arizona State",
+            "Arizona State",
+            ""
+        ],
+        [
+            "Class",
+            "Fr",
+            "So",
+            "Jr",
+            "Sr",
+            ""
+        ],
+        [
+            "GP",
+            "27",
+            "30",
+            "31",
+            "27",
+            "115"
+        ],
+        [
+            "GS",
+            "13",
+            "30",
+            "26",
+            "22",
+            "91"
+        ],
+        [
+            "TS%",
+            ".530",
+            ".614",
+            ".605",
+            ".582",
+            ".590"
+        ],
+        [
+            "eFG%",
+            ".523",
+            ".607",
+            ".573",
+            ".559",
+            ".571"
+        ],
+        [
+            "ORB%",
+            "3.91",
+            "3.87",
+            "3.44",
+            "2.59",
+            "3.48"
+        ],
+        [
+            "DRB%",
+            "10.10",
+            "10.98",
+            "12.27",
+            "10.01",
+            "11.17"
+        ],
+        [
+            "TRB%",
+            "7.23",
+            "7.61",
+            "8.13",
+            "6.30",
+            "7.51"
+        ],
+        [
+            "AST%",
+            "15.02",
+            "10.70",
+            "14.02",
+            "14.49",
+            "13.22"
+        ],
+        [
+            "TOV%",
+            "12.12",
+            "14.41",
+            "11.47",
+            "10.69",
+            "12.15"
+        ],
+        [
+            "STL%",
+            "2.39",
+            "1.05",
+            "2.44",
+            "1.81",
+            "1.84"
+        ],
+        [
+            "BLK%",
+            "0.59",
+            "0.63",
+            "1.29",
+            "1.26",
+            "0.99"
+        ],
+        [
+            "USG%",
+            "19.94",
+            "16.87",
+            "21.95",
+            "20.26",
+            "19.68"
+        ],
+        [
+            "Total S %",
+            "136.91",
+            "153.80",
+            "171.56",
+            "160.08",
+            "161.33"
+        ],
+        [
+            "PPR",
+            "0.39",
+            "-0.84",
+            "-0.39",
+            "0.51",
+            "-0.19"
+        ],
+        [
+            "PPS",
+            "1.11",
+            "1.28",
+            "1.31",
+            "1.24",
+            "1.25"
+        ],
+        [
+            "ORtg",
+            "105.8",
+            "113.7",
+            "116.6",
+            "112.1",
+            "112.9"
+        ],
+        [
+            "DRtg",
+            "100.4",
+            "102.6",
+            "94.5",
+            "103.6",
+            "100.0"
+        ],
+        [
+            "PER",
+            "14.07",
+            "13.17",
+            "18.76",
+            "15.50",
+            "15.45"
+        ]
+    ],
+    "pageTitle": "Rihards Kuksiks Player Profile, Arizona State, NCAA Stats, International Stats, Events Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Rihards_Kuksiks/Summary/6676",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988924.75/warc/CC-MAIN-20150728002308-00037-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 25819267,
+    "recordOffset": 25779704,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{46947=Draft Entry: 2011 NBA Draft, 47758=Born: Jul 17, 1988 (27 years old)}",
+    "TableContextTimeStampAfterTable": "{21034=* International basketball history from 2011-2012, 96776=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NCAA Season Stats - Per Game College: Arizona State (2011) NCAA More NBA Transactions \u00bb Jun 23, 2011 - Rihards Kuksiks went undrafted in the 2011 NBA Draft making him an Unrestricted FA. NBA Transactions 0 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ International ] [ National ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\")",
+    "textAfterTable": "115 91 27.0 3.21 7.63 .420 2.30 5.72 .403 0.85 1.08 .790 6.29 0.65 2.30 2.96 1.61 0.78 0.22 2.04 1.12 9.57 NCAA Season Stats - Totals Season School Class GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2007-08 Arizona State Fr 27 13 464.0 51 132 .386 36 98 .367 8 13 .615 98 12 36 48 31 17 2 29 19 146 2008-09 Arizona State So 30 30 992.0 101 233 .433 81 185 .438 16 24 .667 195 26 82 108 50 16 5 75 41 299 2009-10 Arizona State Jr 31 26 910.0 125 286 .437 78 198 .394 46 52 .885 254 22 89 111 55 35 10 70 40 374 2010-11 Arizona State Sr 27 22 737.0 92 227 .405 70 177 .395 28 35 .800 177 15 58 73 49 22 8 61 29 282 CAREER \u00a0 \u00a0 115 91 3103.0 369 878 .420 265 658 .403 98 124 .790",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

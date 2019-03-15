@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Modifier and Type",
+            "void",
+            "void",
+            "protected static java.lang.String",
+            "protected static java.lang.String",
+            "protected static java.lang.String",
+            "static FontDetails",
+            "int",
+            "java.lang.String",
+            "int",
+            "int"
+        ],
+        [
+            "Method and Description",
+            "addChar(char c, int width)",
+            "addChars(char[] characters, int[] widths)",
+            "buildFontCharactersProperty(java.lang.String fontName)",
+            "buildFontHeightProperty(java.lang.String fontName)",
+            "buildFontWidthsProperty(java.lang.String fontName)",
+            "create(java.lang.String fontName, java.util.Properties fontMetricsProps) Create an instance of FontDetails by loading them from the provided property object.",
+            "getCharWidth(char c) Retrieves the width of the specified character.",
+            "getFontName()",
+            "getHeight()",
+            "getStringWidth(java.lang.String str) Gets the width of all characters in a string."
+        ]
+    ],
+    "pageTitle": "FontDetails (POI API Documentation)",
+    "title": "Methods",
+    "url": "http://poi.apache.org/apidocs/org/apache/poi/hssf/usermodel/FontDetails.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00221-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 191458804,
+    "recordOffset": 191450602,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{13521=Copyright 2015 The Apache Software Foundation or its licensors, as applicable.}",
+    "lastModified": "Tue, 06 Jan 2015 12:09:06 GMT",
+    "textBeforeTable": "Method Summary Construct the font details with the given name and height. FontDetails(java.lang.String\u00a0fontName, int\u00a0height) Constructor and Description \u00a0 Constructors Constructor Summary Stores width and height details about a font. extends java.lang.Object public class FontDetails   org.apache.poi.hssf.usermodel.FontDetails java.lang.Object Class FontDetails org.apache.poi.hssf.usermodel Method Constr\u00a0|\u00a0 Field\u00a0|\u00a0 Detail:\u00a0 Method Constr\u00a0|\u00a0 Field\u00a0|\u00a0 Nested\u00a0|\u00a0 Summary:\u00a0 //--> } allClassesLink.style.display = \"none\"; else { } allClassesLink.style.display = \"block\"; if(window==top) { allClassesLink = document.getElementById(\"allclasses_navbar_top\");",
+    "textAfterTable": "Methods inherited from class\u00a0java.lang.Object clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait Constructor Detail FontDetails public\u00a0FontDetails(java.lang.String\u00a0fontName, int\u00a0height) Construct the font details with the given name and height. Parameters: fontName - The font name. height - The height of the font. Method Detail getFontName public\u00a0java.lang.String\u00a0getFontName() getHeight public\u00a0int\u00a0getHeight() addChar public\u00a0void\u00a0addChar(char\u00a0c, int\u00a0width) getCharWidth public\u00a0int\u00a0getCharWidth(char\u00a0c) Retrieves the width of the specified character. If the metrics for a particular character are not available it defaults to returning the width for the 'W' character. addChars public\u00a0void\u00a0addChars(char[]\u00a0characters, int[]\u00a0widths) buildFontHeightProperty protected static\u00a0java.lang.String\u00a0buildFontHeightProperty(java.lang.String\u00a0fontName) buildFontWidthsProperty protected static\u00a0java.lang.String\u00a0buildFontWidthsProperty(java.lang.String\u00a0fontName)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

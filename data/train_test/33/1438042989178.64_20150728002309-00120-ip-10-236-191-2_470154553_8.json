@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Fecha",
+            "25 Feb 1997",
+            "4 Abr 2000",
+            "13 May 2004",
+            "7 Feb 2008",
+            "17 Abr 2008",
+            "20 Oct 2008"
+        ],
+        [
+            "C\ufffddigo",
+            "CC",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Evento",
+            "Certificate of correction",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Descripci\ufffdn",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Owner name: FIFTH GENERATION SYSTEMS, INC., LOUISIANA Free format text: MERGER;ASSIGNOR:SALIENT SOFTWARE, INC.;REEL/FRAME:020468/0757 Effective date: 19951220",
+            "Year of fee payment: 12",
+            "Owner name: SYMANTEC CORPORATION, CALIFORNIA Free format text: MERGER;ASSIGNOR:FIFTH GENERATION SYSTEMS, INC.;REEL/FRAME:021719/0484 Effective date: 19951220"
+        ]
+    ],
+    "pageTitle": "Patente US5577248 - Method and apparatus for finding longest and closest matching string in ... - Google Patentes",
+    "title": "",
+    "url": "http://www.google.es/patents/US5577248?dq=flatulence",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989178.64/warc/CC-MAIN-20150728002309-00120-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 470180007,
+    "recordOffset": 470154553,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{18530=This application is a division of Ser. No. 07/958,008, filed Oct. 8, 1992, now U.S. Pat. No. 5,455,943 which is a continuation-in-part of Ser. No. 07/840,869, filed Feb. 25, 1992, now U.S. Pat. No. 5,481,701 which is a continuation-in-part of Ser. No. 07/839,958, filed Feb. 21, 1992, now U.S. Pat. No. 5,426,779 which is a continuation-in-part of Ser. No. 07/759,226, filed Sep. 13, 1991 now U.S. Pat. No. 5,155,484., 36622=In accordance with the invention, the codes in the first and second bytes of current string 163 are combined to form a 16-bit long \"index-pair\" code 166 (e.g. \"AB\"). A data look-up table (DLT) 170 is provided for converting any given index-pair code 166 into a corresponding top-of-list pointer 176. There are 216 possible index-pair codes, and accordingly, the DLT 170 contains a corresponding number (216) of entries. These entries are symbolized in FIG. 1, using hexadecimal format, as: 0000-PTR, 0001-PTR, 0002-PTR, . . . , 00AA-PTR, 00AB-PTR, 00AC-PTR, . . . , FFFD-PTR, FFFE-PTR, FFFF-PTR., 20397=(B) Ser. No. 07/839,958 filed Feb. 21, 1992, by Lloyd L. Chambers IV and entitled METHOD AND APPARATUS FOR LOCATING LONGEST PRIOR TARGET STRING MATCHING CURRENT STRING IN BUFFER, now U.S. Pat. No. 5,246,779., 20187=(A) Ser. No. 07/759,226 filed Sep. 13, 1991, by Lloyd L. Chambers IV and entitled FAST DATA COMPRESSOR WITH DIRECT LOOKUP TABLE INDEXING INTO HISTORY BUFFER, now U.S. Pat. No. 5,155,484; and}",
+    "textBeforeTable": "Citas de patentes Given the above disclosure of general concepts and specific embodiments, the scope of protection sought is to be defined by the claims appended hereto. By way of further example, instead of using linked-lists 181, 182, etc. to locate the start of each matching old string (MOS) and to determine the relative distances and/or order of the MOS's relative to the current position 163a, other data structures which provide the substantially the same function could be used. One possibility would be a set of files (e.g. circular buffer files) with expansion room being provided in each file for adding new records into the file. The new records are added to point to the start of each newly encountered string 163 as the current pointer 165 advances and the just encountered string 163 becomes a potentially-matching old string (MOS) for the next, subsequently processed string 164. By way of example, instead of using DLT 170 to locate the head of each linked-list 181, 182, etc., a nonsorted table can be provided with the name e.g. AA, AB, AC, etc. of each linked list and the address of its head record. A binary or other search through the nonsorted table (not shown) would be used to convert an index-pair code 166 into a head-of-list pointer 176. The search could be carried with software or, if speed is important, with the aid of a hardware chip that is dedicated",
+    "textAfterTable": "4 Jul 1989 6 Oct 1992 British Telecommunications Public Limited Company Method and apparatus for encoding, decoding and transmitting data in compressed form US5179378 * 30 Jul 1991 12 Ene 1993 University Of South Florida Method and apparatus for the compression and decompression of data using Lempel-Ziv based techniques US5228133 * 1 Oct 1990 13 Jul 1993 Carl Oppedahl Method to perform text search in application programs in computer by selecting a character and scanning the text string to/from the selected character offset position US5243341 * 1 Jun 1992 7 Sep 1993 Hewlett Packard Company Lempel-Ziv compression scheme with enhanced adapation US5253325 * 8 Dic 1989 12 Oct 1993 British Telecommunications Public Limited Company Data compression with dynamically compiled dictionary US5298895 * 19 Nov 1991 29 Mar 1994 Hewlett-Packard Company Data compression method and apparatus utilizing an adaptive dictionary US5353024 * 1 May 1992",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

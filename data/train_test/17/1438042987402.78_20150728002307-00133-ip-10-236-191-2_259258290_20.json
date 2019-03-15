@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Hardware",
+            "Neo 1973",
+            "FreeRunner",
+            "GTA04",
+            "HTC-Dream",
+            "Other"
+        ],
+        [
+            "Works",
+            "{{{Neo1973}}}",
+            "{{{FreeRunner}}}",
+            "{{{GTA04}}}",
+            "{{{HTC-Dream}}}",
+            "{{{Other}}}"
+        ]
+    ],
+    "pageTitle": "Community Updates/2010-07-01 - Openmoko",
+    "title": "",
+    "url": "http://wiki.openmoko.org/index.php?title=Community_Updates/2010-07-01&diff=prev&oldid=81416",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 20,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00133-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 259273886,
+    "recordOffset": 259258290,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{14409=SHR is a community driven GNU/Linux distribution for smartphones based on OpenEmbedded using E17 (illume) as window manager and own gui apps on top of FSO. After hopefully lucky incident we have finally switched to new kernel (based on 2.6.32.13, KMS enabled):}",
+    "textBeforeTable": "Debian GNU/Linux Debian (http://wiki.openmoko.org/wiki/Debian) is a universal operating system used on many other embedded devices, and also on home computers. Using Debian on the FreeRunner gives access to the Huge army of software packaged in the Debian repositories, already compiled for the Neo's arm(v4) processor. Moreover, one can build one's own source files for programs without having to learn the OpenEmbedded way. For an existing Debian/Ubuntu user, choosing Debian for Neo FreeRunner makes phone a very familiar, trustworthy and flexible place to hack in. The FSO phone stack and SHR user applications have seen a lot of updates. The following packages have been updated to official Debian archives and also made their way to testing repository (which will become Debian 6.0):: libphone-ui 0.1+git20100517.1, libphone-utils 0.1+git20100219-1, libfsotransport 0.9.5.9+git20100507-2, fso-abyss 0.9.0+git20100310-1, libgsm0710mux 0.9.1+git20100322-2, phonefsod 0.1+git20100515-1. The majority of FSO/SHR stack is now in Debian official archives, a major step forward from hosting them only pkg-fso team's own repository. Literki keyboard was also transferred and improved from pkg-fso to official Debian repositories. Jonas Smedegaard drew a nice overview graph of the all the old and new components in the stack: http://wiki.debian.org/Teams/DebianFSO?action=AttachFile&do=view&target=pkgdeps.png As a final note, the new FSO2/cornucopia GSM daemon, fso-gsmd 0.5.0+git20100602-1, has just been uploaded to Debian. Codename: 'sid' Homepage: http://wiki.debian.org/DebianOnFreeRunner Image: http://wiki.openmoko.org/wiki/Debian",
+    "textAfterTable": "SHR [unstable] SHR is a community driven GNU/Linux distribution for smartphones based on OpenEmbedded using E17 (illume) as window manager and own gui apps on top of FSO. After hopefully lucky incident we have finally switched to new kernel (based on 2.6.32.13, KMS enabled): New images are built with kernel and all needed changes are already included. Images doesn't have udevd installed by default (using devtmpfs), which makes it boot about twice as fast as before (less then 1 min to PIN dialog). But it also won't mount your uSD automatically (it was blacklisted before, but removing it from blacklist won't help now). Included packages contains latest stuff like xserver-1.9 (RC3), foxtrotgps and tangogps 0.99.4, QT 4.7.0-beta1 and QML enabled navit. Distribution revision was changed in OE, this means that every package installed from shr-unstable feeds will be upgraded during next opkg upgrade (so be sure that you have enough time and space in /var partition). Consider flashing new image, it can be faster and safer in the end. Used GCC was upgraded from version 4.4.4 to 4.5 (svn revision 160764 from gcc-4.5-branch, because released 4.5.0 has few issues on ARM targets). New GCC brings LTO optimizations, which can give us 30% speedup in some",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

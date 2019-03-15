@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "Day",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+        ],
+        [
+            "Morning",
+            "8:00am",
+            "8:00am",
+            "8:00am",
+            "8:00am",
+            "8:00am",
+            "8:00am",
+            "Closed"
+        ],
+        [
+            "Afternoon",
+            "5:30pm",
+            "5:30pm",
+            "5:30pm",
+            "5:30pm",
+            "5:30pm",
+            "12:00pm",
+            "Closed"
+        ]
+    ],
+    "pageTitle": "Small Animal Vet Clinic in Tucson, AZ",
+    "title": "",
+    "url": "http://www.tucsonsmallanimal.org/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989826.86/warc/CC-MAIN-20150728002309-00104-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 803162007,
+    "recordOffset": 803136443,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{51128=Call today: (520) 296-2324, 40784=\"I've been seeing Dr. Moore since 1985. I've had 4 dogs that Dr. Moore has seen in that time. Both Dr. Armstrong and Dr. Moore are gentle and caring and I refer friends to Tucson Small Animal Hospital, Ltd. too., 35103=Tucson Veterinarian | Tucson Small Animal Hospital, Ltd. | (520) 296-2324, 36041=We have a number of resources that will help you take the best possible care of your pet.\u00a0 There are many informational articles on this site and also on our Pet Portal site. Please, feel free to browse these at your leisure. Our staff is always available to answer any questions you might have regarding the care of your pet. We feel preventive care is essential to your pet living a long, healthy life with you, so please contact us at any time to discuss how we can help keep your friend healthy. You can call us at 520-296-2324, or send us a note through your Pet Portal. Our Tucson veterinary office is very easy to locate-you can find directions on our \"Contact Us\" page. We also welcome you to subscribe to our newsletter, which is created especially for Tucson pet owners., 34245=Sign-up using the form or call us at (520) 296-2324 to take advantage of this exclusive offer.}",
+    "textBeforeTable": "Office Hours Print Directions Reverse Directions Driving Directions: Get Directions To:\u00a0 From:\u00a0 }); YAHOO.util.Event.onDOMReady(map_initialize); // as soon as the DOM is ready, make the request to draw the google map } YAHOO.util.Event.addListener('directions_reversemap_module', 'click', getDirections, { clear: false, reverse: true }); YAHOO.util.Event.addListener('directions_getmap_module', 'click', getDirections, { clear: true, reverse: false }); // attach custom events google.maps.event.addListener(marker, 'click', function() { ballon.open(map, marker); }); // attach google events } }); } YAHOO.util.Dom.setStyle(YAHOO.util.Dom.get('bottom_controls'), 'display', 'block'); directionsDisplay.setDirections(result); if (status == google.maps.DirectionsStatus.OK) { directionsService.route(directionsRequest, function(result, status) { // request the route's directions }; avoidTolls: true // optional avoidHighways: false, // optional travelMode: google.maps.DirectionsTravelMode.DRIVING, // required destination: waypoints[1], // required origin: waypoints[0], // required var directionsRequest = { // callback function for the 'route' request } return; alert('Please insure that both the \\'To\\' and \\'From\\' fields are populated'); if (!waypoints[0] || !waypoints[1]) { // make sure the user has supplied both locations for the route before processing } waypoints.reverse(); if (config.reverse) { // reverse the results if the option to do so is selected } getWaypoints(); if (!waypoints.length || config.clear) { // or a new address was provided in the 'From' field // initialize the waypoint values if this is the first time the directions",
+    "textAfterTable": "Hospital Hours: 7:00am - 7:00pm Daily Featured Articles Hidden Dangers of Over-the-Counter Medications There are many medications available over the counter (OTC) at pharmacies and grocery stores that we consider to be safe, their use to be routine. We don\u2019t think twice about picking up medicatio ... View Article Pet Therapy Are you dealing with extreme levels of emotional stress, exhaustion or depression? If so, pet therapy might be right for you. Companionship is only one of the many benefits pet therapy provides. K ... View Article All About Hairballs Does your favorite feline leave you hairballs as gifts? If so, you\u2019re not alone. Although we love cats for being meticulous groomers, it\u2019s safe to say we don\u2019t like finding hairy presents ar ... View Article When Is a Goopy Eye a Problem? Many dogs have",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

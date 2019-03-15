@@ -1,0 +1,70 @@
+{
+    "relation": [
+        [
+            "Patente citante",
+            "US6768816 *",
+            "US7092870 *",
+            "US7409381 *",
+            "US7523102",
+            "US7970740 *",
+            "US20070219983 *",
+            "WO2009015047A1 *"
+        ],
+        [
+            "Fecha de presentaci\ufffdn",
+            "13 Jun 2002",
+            "15 Sep 2000",
+            "30 Jul 1999",
+            "8 Jun 2005",
+            "23 Sep 2004",
+            "22 Feb 2007",
+            "18 Jul 2008"
+        ],
+        [
+            "Fecha de publicaci\ufffdn",
+            "27 Jul 2004",
+            "15 Ago 2006",
+            "5 Ago 2008",
+            "21 Abr 2009",
+            "28 Jun 2011",
+            "20 Sep 2007",
+            "29 Ene 2009"
+        ],
+        [
+            "Solicitante",
+            "Convey Corporation",
+            "International Business Machines Corporation",
+            "British Telecommunications Public Limited Company",
+            "Getty Images, Inc.",
+            "Oracle America, Inc.",
+            "Fish Robert D",
+            "Google Inc"
+        ],
+        [
+            "T\ufffdtulo",
+            "Method and system for interactive ground-truthing of document images",
+            "System and method for managing a textual archive using semantic units",
+            "Index to a semi-structured database",
+            "Content search in complex language, such as Japanese",
+            "Automated service configuration snapshots and fallback",
+            "Methods and apparatus for facilitating context searching",
+            "Identifying and linking similar passages in a digital text corpus"
+        ]
+    ],
+    "pageTitle": "Patente US6470334 - Document retrieval apparatus - Google Patentes",
+    "title": "",
+    "url": "http://www.google.es/patents/US6470334?hl=es&ie=ISO-8859-1&dq=flatulence",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 6,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987127.36/warc/CC-MAIN-20150728002307-00047-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 478120555,
+    "recordOffset": 478088809,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Citas de patentes Also in accordance with the present invention, information on the word class and form such as conjugation may be stored in the index in less capacity, and such information may be collated faster. For example, in accordance with the present invention, the morpheme analysis results of documents may be stored in the index with a smaller capacity without modification so as to enable faster access from any arbitrary words to the index and the intended retrieval search. As have been described above, in accordance with the present invention, full text retrieval search with the relationship between words taken into consideration may be performed, without storing the full text of documents, by using only the index of relatively smaller capacity, on the documents not only in Indo-European languages but also in such a language as Japanese, which does not clearly articulate breakpoints between words, as well as the full text of documents resulting from the retrieval search may be output. In accordance with the present embodiment, the target documents are narrowed prior to the retrieval search using indexes, allowing reducing the load of relatively time-consuming index search to yield totally faster retrieval search. The document retrieval part 2 then uses the indexes 1 a through 1 d corresponding to the candidate documents in the inter-document indexing part 10 to output one or more documents satisfying the sequence of words specified in the retrieval search criteria from",
+    "textAfterTable": "US5940624 * 2 Ene 1991 17 Ago 1999 Wang Laboratories, Inc. Text management system US6076086 * 13 Mar 1998 13 Jun 2000 Fuji Xerox Co., Ltd. Associate document retrieving apparatus and storage medium for storing associate document retrieving program US6275610 * 8 Oct 1997 14 Ago 2001 Convey Corporation File structure for scanned documents JPH08249346A T\ufffdtulo no disponible JPH08249354A T\ufffdtulo no disponible * Citada por examinador Citada por Patente citante Fecha de presentaci\ufffdn Fecha de publicaci\ufffdn Solicitante T\ufffdtulo US6768816 * 13 Jun 2002 27 Jul 2004 Convey Corporation Method and system for interactive ground-truthing of document images US7092870 * 15 Sep 2000",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

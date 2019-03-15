@@ -1,0 +1,69 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Sep 1, 1989",
+            "Jan 1, 1991",
+            "Jun 18, 1991",
+            "Dec 10, 1991",
+            "Oct 1, 1993",
+            "Oct 14, 1997",
+            "Feb 27, 2002",
+            "Feb 27, 2002",
+            "Nov 19, 2009"
+        ],
+        [
+            "Code",
+            "AS",
+            "RR",
+            "RR",
+            "CC",
+            "FPAY",
+            "FPAY",
+            "SULP",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Request for reexamination filed",
+            "Request for reexamination filed",
+            "Certificate of correction",
+            "Fee payment",
+            "Fee payment",
+            "Surcharge for late payment",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: IN FOCUS SYSTEMS, INC., OREGON Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:CONNER, ARLIE R.;GULICK, PAUL E.;REEL/FRAME:005119/0215 Effective date: 19890801",
+            "Effective date: 19901119",
+            "Effective date: 19910501",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 11",
+            "Year of fee payment: 12",
+            "Owner name: RPX CORPORATION,CALIFORNIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:INFOCUS CORPORATION;REEL/FRAME:023538/0709 Effective date: 20091019 Owner name: SEIKO EPSON CORPORATION,JAPAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:RPX CORPORATION;REEL/FRAME:023538/0889 Effective date: 20091026"
+        ]
+    ],
+    "pageTitle": "Patent US4917465 - Color display system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US4917465?dq=%22melissa+white%22",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986451.45/warc/CC-MAIN-20150728002306-00281-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 476111411,
+    "recordOffset": 476060060,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{75386=As noted, such a three panel subassembly can produce the color \"black\" (the absence of light) by deselecting each panel. Since the light passing through the subassembly is progressively stripped of its green, blue and red components, theoretically no light exits the subassembly. As a practical matter, however, the imperfect responses of the three panels permit some light of various colors to leak through at an attenuated level. The net result is a dark brown or grey color. While such an arrangement yields a contrast ratio of approximately 10:1--more than adequate for many applications--some applications require contrast ratios on the order of 100:1. To achieve such ratios, a fourth panel, such as the \"black\" panel 16 illustrated in FIG. 3, may be included in the subassembly. The characteristics of the black panel may be optimized for the intended application., 47148=As noted, it is the minute difference between the select and deselect driving voltages that permits STN cells to be highly multiplexed. This difference is generally less than 10%, permitting MUX rates in excess of 100:1. Theoretically, arbitrarily high MUX rates can be achieved if the driving voltage difference is made small enough. Differences of 6% are often used to achieve 240:1 MUX rates., 40909=The present invention is a continuation-in-part of copending applications Ser. Nos. 07/378,997, filed July 12, 1989, 07/363,099, filed June 7, 1989, and 07/329,938, filed Mar. 28, 1989. These applications are incorporated herein by reference., 45249=During recent years, so called \"supertwisted\" or \"highly twisted\" nematic cells have become popular in many applications. Such cells are described, inter alia, in U.S. Pat. Nos. 4,697,884 and 4,634,229, and in Scheffer et al., \"A New, Highly Multiplexable Liquid Crystal Display,\" Appl. Phys. Lett. 45 (1), 15 November 1984, pp. 1021-1023, and Kinugawa et al., \"640\ufffd400 Pixel LCD Using Highly Twisted Birefringence Effect With Low Tilt Angle,\" 1986 SID Digest, pp. 122-125. The '884 and '229 patents are incorporated herein by reference., 76822=In contrast, \"full color\" systems (i.e. television or high quality color computer graphics) require high contrast. To achieve the 256 or more colors that such systems require, an overall contrast ratio of 100:1 may be needed. Since the basic magenta/yellow/cyan (M/Y/C) subassembly delivers only a 10:1 contrast ratio, the black panel must provide a 10:1 ratio on its own. Thus, it must be optimized for blackest black. By cascading the two systems (M/Y/C and black), the contrast figures are multiplied, producing 100:1 overall white to black contrast, and allowing excellent grey shading and range of color. Of course, highly saturated primary colors still require M/Y/C contrast, but the black panel provides greater depth in the shadows and details in the highlights., 76297=In one application, namely digital computer graphics using the RGBI standard, an \"intensity\" signal is used to differentiate each of the eight basic colors used in RGB systems into two colors, yielding a total of 16 colors. In such application, the black cell is optimized for maximum transmission when in the selected state. The contrast provided by the cell is of lesser importance. That is, a contrast range of 2:1, or even 1.5:1, will suffice to distinguish the 16 colors of the RGBI system., 43536=While the color mosaic technique addresses certain shortcomings of the stacked panel approach, it introduces certain problems of its own. One is that brightness is limited because less than a third of the active area transmits light for any given color. Another is that pixel density must be increased by a factor of three to obtain the same resolution as the stacked cell approach. That is, to provide a color display with a horizontal resolution of 640 colored pixels, for example, the LCD panels must have 1920 pixels, 640 for each of the red, green and blue filter elements. This introduces fabrication problems that decrease yields and increase panel costs.}",
+    "textBeforeTable": "Patent Citations In view of the wide variety of embodiments to which the principles of our invention may be applied, it should be recognized that the illustrated embodiments are to be considered illustrative only and not as limiting the scope of the invention. Instead, we claim as our invention all such modifications as may come within the scope and spirit of the following claims and equivalents thereto. It will further be recognized that the invention can be practiced with more or less panels than the three or four illustrated. For example, it is advantageous to provide laboratory instruments, such as oscilloscopes and analyzers, with displays formed by stacking two supertwisted birefringent panels with one or more colored polarizers. The display may take virtually any of the forms discussed above and still be suitable for inclusion in the instrument. While color gamut is compromised somewhat by such a two panel stack, brightness is increased and cost is reduced. It will be recognized that known grey scaling techniques can readily be applied to the present invention to provide the full gamut of possible colors. In one such embodiment, grey scaling is applied to each of the three colored cells. In another embodiment, grey scaling is applied simply to a fourth (typically black) cell included in the stack. U.S. Pat. Nos. 4,840,462, 4,840,460, 4,818,078, 4,766,430, 4,743,096, 4,709,995, 4,560,982, 4,508,427, 4,427,978 and 4,043,640 teach various grey scaling techniques and are incorporated herein",
+    "textAfterTable": "Jan 28, 1980 Sep 14, 1982 Hoffman William C Liquid crystal display system using fiber optic faceplates US4394069 * Jun 5, 1979 Jul 19, 1983 Beckman Instruments, Inc. Liquid crystal tuned birefringent filter US4411496 * Dec 12, 1980 Oct 25, 1983 Sharp Kabushiki Kaisha DAP, LCD Device with a bias voltage US4416514 * Nov 10, 1980 Nov 22, 1983 Polaroid Corporation Color filter US4443065 * Dec 3, 1981 Apr 17, 1984 Sharp Kabushiki Kaisha Interference color compensation double layered twisted nematic display US4487481 * Mar 20, 1981 Dec 11, 1984 Epson Corporation Backlighted liquid crystal display US4547043 * Jan 22, 1982 Oct 15, 1985 Penz Perry A Stacked LCD graphics display US4549174 * Oct 31, 1983 Oct 22, 1985 Sharp Kabushiki Kaisha Electrode",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

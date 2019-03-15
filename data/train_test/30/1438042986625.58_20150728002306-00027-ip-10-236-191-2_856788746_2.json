@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Friday",
+            "F18 retrospective",
+            "F19 supported hardware",
+            "grub2 on media",
+            "",
+            ""
+        ],
+        [
+            "Saturday",
+            "Releng meeting?",
+            "Secondary Arch process",
+            "Arch:PPC page rewrite",
+            "SDK tutorial",
+            "Infra review"
+        ],
+        [
+            "Sunday",
+            "Bug review",
+            "Releng meeting?",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Unscheduled",
+            "EPEL discussion",
+            "Collaborative Articles",
+            "Test Templates",
+            "More optimization opportunities?",
+            "Write F18 release notes"
+        ]
+    ],
+    "pageTitle": "Architectures/PowerPC/Meetings/FUDCon Lawrence 2013 - FedoraProject",
+    "title": "",
+    "url": "https://fedoraproject.org/w/index.php?title=Architectures/PowerPC/Meetings/FUDCon_Lawrence_2013&diff=321782&oldid=311482",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986625.58/warc/CC-MAIN-20150728002306-00027-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 856811903,
+    "recordOffset": 856788746,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{101652=Copyright \u00a9 2015 Red Hat, Inc. and others. All Rights Reserved. For comments or queries, please contact us., 83607=Members of the Fedora on PowerPC project will be attending the 2013 FUDCon event in Lawrence, KS. Currently there aren't any real sessions planned, it'll be more like a discussion. This page is intended to gather topics we'd like to cover during the FUDCo. Please see below for further details., 88138=As the Fedora Secondary Arch Team for Power met again this year at the North American FUDCon, this year in Lawrence we've put together a pretty long list of topics we wanted to cover and discuss during those days. Details were available here https://fedoraproject.org/wiki/Architectures/PowerPC/Meetings/FUDCon_Lawrence_2013 which was linked from the main secondary arch wiki for Power on fp.org the last few months., 89938=For the signing issues we had we've already started to address some of the know issues during the development for F18. The main things that still bugged us were the reliability and the overall process. For reliability we'll be working with Miloslav Trmac to provide network dumps and error messages. Several from the team will also be at the DevConf in Brno in February to work with him on this. Regarding the process issues we've discussed several options and came up with the following flow:}",
+    "textBeforeTable": "[edit] Schedule We're online most of the time in #fedora-ppc on Freenode IRC, just post your question there and wait for someone to answer. [edit] Contacts Everyone who is interested in PowerPC hardware, i.e. IBM PowerPC hardware. Even though the Fedora on PPC project focuses on IBM hardware, we'd like to also invite people with Apple PPC hardware to join us to discuss how they can help us with the project. If we don't get some developers who are willing to provide patches soon, we might have to drop support for these older hardware due to lack of manpower to maintain it. [edit] Audience Members of the Fedora on PowerPC project will be attending the 2013 FUDCon event in Lawrence, KS. Currently there aren't any real sessions planned, it'll be more like a discussion. This page is intended to gather topics we'd like to cover during the FUDCo. Please see below for further details. [edit] Summary 1.4 Full notes of discussions at the meeting 1.3 Schedule 1.2 Contacts 1.1 Audience 1 Summary Contents",
+    "textAfterTable": "Topics: Introductions, not everyone from the PPC team has been at the last meeting in Blacksburg Retrospective F18, what do we need to improve for F19 more communication, i.e. more communication on the fedora-ppc mailinglist more communication with the other secondary arch maintainers about common problems, tools, processes, involvement etc. Supported archs/hardware for F19 grub2 as bootloader on install media (DVD) Discuss use of test templates as used on primary: https://fedoraproject.org/wiki/QA:Fedora_18_Install_Results_Template Ideas on how to improve the visibility of the whole process (koji-shadow logs, signing progress, updates, etc.) Infrstructure review Continued optimization opportunities SDK tutorial/demo - discussion on applicability for Fedora Collaberative articles (brainstorm session) Project page rewrite/re-do/redesign EPEL discussion should we install 32bit packages at all or shall we copy x86_64 and leave 32bit for the user to install manually after the system install\u00a0? Releng discussion w/ primary (process & schedule, checklist items) Bug review [edit] Full notes of discussions at the meeting Hi everyone. As the Fedora Secondary Arch Team for Power met again this year at the North American FUDCon, this year in Lawrence we've put together a pretty long list of topics we wanted to cover and",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

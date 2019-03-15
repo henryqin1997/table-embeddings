@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "",
+            "High School Graduates",
+            "College Degree - 2 year",
+            "College Degree - 4 year",
+            "Graduate Degree",
+            "Expenditures per Student",
+            "Students per Teacher"
+        ],
+        [
+            "City",
+            "91.85",
+            "9.75",
+            "38.43",
+            "9.79",
+            "12,299",
+            "18.6"
+        ],
+        [
+            "County",
+            "90.36",
+            "7.73",
+            "32.1",
+            "8.89",
+            "12,299",
+            "19.5"
+        ]
+    ],
+    "pageTitle": "Shorewood, IL Real Estate Overview | Real Living Real Estate",
+    "title": "",
+    "url": "http://www.realliving.com/IL/Shorewood",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 26,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00113-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 663174095,
+    "recordOffset": 663153345,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{54015=The average high temperature in July is 86 degrees, with an average low temperature in January of 15.7 degrees. The average rainfall is approximately 34.2 inches per year, with 23.6 inches of snow per year., 56160=Real Living Gobber Realty 1860 S. Mannheim Rd. Westchester, IL 708-531-0800 Real Estate Agents & Staff}",
+    "textBeforeTable": "Education near Shorewood, IL \u00a0 Demographics \u00a0 \u00a0\u00a0 \u00a0 Schools \u00a0 Shorewood Schools and Demographics 30-day change # Active listings 201 7.7% change since last quarter Median sales price $225,400 Shorewood Real Estate Market Conditions } } }); $(this).show(); links.each(function () { toggle.html(lessText); else { } resetSchools(id); toggle.html(moreText); if (toggle.html().indexOf(\"Less\") > -1) { var moreText = \"More \u00bb\"; var lessText = \"Less \u00ab\"; var toggle = $(\"#\" + id + \"-toggle\"); var links = $(\"#\" + id + \" tr\"); function toggleSchools(id) { } $(\"#\" + id + \"-toggle\").hide(); else } }); i++; $(this).hide(); if (i > 5) links.each(function () { if (links && links.length > 6) { links = $(\"#\" + id + \" tr\"); var i = 0; function resetSchools(id) { }); var d = $(\".remc-list li.c0 div\"); if (d.length) d.html().indexOf(\"-\") != -1 ? $(\".remc-list li.c0\").addClass(\"neg\") : $(\".remc-list li.c0\").addClass(\"pos\") function a(b) { var c = $(\"#schools-demographics-tab-container\"); $(\".search_tab_on\", c).removeClass(\"search_tab_on\").addClass(\"search_tab\"); $('div[id$=\"-tab-section\"]').hide(); $(\"#\" + b + \"-section\").show(); $(\"#\" + b, c).parent(\":first\").removeClass(\"search_tab\").addClass(\"search_tab_on\") } $(\"#demographics-tab-section\").hide(); $(\"table.community-grid\").each(function () { $(\"tbody tr:even\", this).addClass(\"alt-row\") }); $(\"#schools-tab\").click(function () { a($(this).attr(\"id\")) }); $(\"#demographics-tab\").click(function",
+    "textAfterTable": "Elementary Schools near Shorewood, IL Grades Students P/T Ratio ZIP Carl Sandburg Elementary School 01 - 05 319 17.7 60435 Crystal Lawns Elementary School KG - 05 423 16.9 60435 Farragut Elementary School KG - 05 695 20.4 60435 Grand Prairie Elementary School KG - 05 729 19.2 60431 Jones Elementary School KG - 04 441 23.2 60431 Laraway Elementary School 01 - 08 308 13.1 60436 Lynne Thigpen Elementary School KG - 05 678 19.1 60436 M J Cunningham Elementary School KG - 05 663 21.8 60435 Marycrest Early Childhood Center PK - PK 277 17.3 60436",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed"
+        ],
+        [
+            "Average",
+            "42.3 \u00b0F",
+            "24.2 \u00b0F",
+            "51.3 %",
+            "30.16 in",
+            "8.1 mph"
+        ],
+        [
+            "High",
+            "51.8 \u00b0F (4:00 pm)",
+            "30.2 \u00b0F (6:00 pm)",
+            "81 % (9:00 pm)",
+            "30.21 in (9:00 pm)",
+            "18.4 mph (9:00 am)"
+        ],
+        [
+            "Low",
+            "33.8 \u00b0F (7:00 am)",
+            "17.6 \u00b0F (10:00 am)",
+            "34 % (12:00 pm)",
+            "30.12 in (7:00 am)",
+            ""
+        ]
+    ],
+    "pageTitle": "Miyakonojo, Japan [February 13, 2013] - Weather Records By Hour (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherhourly.php3?s=92874&date=2013-02-13&cityname=Miyakonojo%2C+Miyazaki+Prefecture%2C+Japan&units=",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00296-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 829322099,
+    "recordOffset": 829306945,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] WEATHER ALMANAC - FEBRUARY 13, 2013 [ \u2190 Previous Day ] } PrintUrl('printIframe', 'http://www.weatherbase.com/weather/weatherhourly-print.php3?s=92874&date=2013-02-13&cityname=Miyakonojo%2C+Miyazaki+Prefecture%2C+Japan&units='); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); window.location = url; var url = \"/weather/weatherhourly.php3?s=92874&date=\" + event.format() + \"&citynameMiyakonojo%2C+Miyazaki+Prefecture%2C+Japan&set=\"; $('#datepicker').datepicker().on('changeDate', function (event) { }); startView: 2 endDate: \"2015-07-31\", startDate: \"1996-07-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 5.6 mi Wind Direction WSW (233.3 \u00b0) Weather Element Total Precipitation --- Heating Degree Days 22.2 (Base 65) Averaged from 15 records on February 13, 2013",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

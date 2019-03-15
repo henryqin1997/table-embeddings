@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Compared points",
+            "Recombination via",
+            "Enzymes for recombination",
+            "Reliability",
+            "Host requirements",
+            "Plasmid construction",
+            "Transformation efficiency required",
+            "Transformation procedures required",
+            "Marker gene used for integration",
+            "Unnecessary genome arrangement",
+            "Bacteria proven to be applicable"
+        ],
+        [
+            "pSC101ts-sacB method by Blomfield et al. [8]",
+            "Two times of single crossover",
+            "endogenous enzymes",
+            "Low due to resolution of original gene organizations",
+            "Only recombination-proficient hosts",
+            "Necessary",
+            "Low",
+            "Once",
+            "Not retained",
+            "No",
+            "E. coli [6\u20139], M. xanthus [10], C. glutamicum [11], Rhodococcus spp. [12], and P. putida [13]"
+        ],
+        [
+            "\u03bb-Red recombinase method by Datsenko et al. [14]",
+            "One time of double crossover and FLP (flippase)\u2013FRT recombination",
+            "\u03bb Gam, Bet, Exo, and flippase",
+            "High",
+            "Any",
+            "unnecessary",
+            "High",
+            "Twice",
+            "Not retained",
+            "Yes, leaving an 81\u201385-bp \u201cscar\u201d sequence [19]",
+            "E. coli [14], Salmonella spp. [15], M. tuberculosis [16], Streptomyces spp. [17], and B. subtilis [18]"
+        ]
+    ],
+    "pageTitle": "Introduction",
+    "title": "",
+    "url": "http://www.mdpi.com/1422-0067/15/2/2773/xml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989507.42/warc/CC-MAIN-20150728002309-00075-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 577957199,
+    "recordOffset": 577922442,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{212489=In 1989, a plasmid-based gene knockout method was developed in Escherichia coli that is achieved through two recombination events (i.e., integration and resolution) [6]. A plasmid carrying a replacing gene fragment containing homologous ends is integrated into a target gene locus through homologous recombination. To this end, the replacing gene fragment is cloned into a plasmid containing a temperature-sensitive replication origin, pSC101ts, which replicates at low temperatures (e.g., 30 \u00b0C), but not high temperatures (e.g., 43 \u00b0C ; Step (a) in Figure 1). Using the plasmid, E. coli is transformed and colonies are selected at a permissive, low temperature in the presence of the appropriate antibiotic. Transformants are then transferred to fresh medium and grown at a high temperature to prohibit self-replication of the plasmid. By selecting transformants in the presence of the antibiotic, the modified genomic fragment harbored on the plasmid is forced to integrate into the targeted genome locus through homologous recombination (Step (b) in Figure 1). After integration, the second recombination event takes place; resolved (disintegrated) progeny is selected at low, permissive temperatures at which the plasmid is able to replicate. During the resolving step, the specific region between the homologous sequences is deleted from the genome (Step (c) in Figure 1). This approach has been successfully applied to replace the bolA gene in the E. coli genome. However, the frequency to obtain the desired clone (\u201chit-rate\u201d) was rather low and thus labor-intensive, especially at the resolution step [6]. It was hence improved by adding a counterselective marker gene onto the vector. The marker was a sucrose-sensitive suicide sacB gene of Bacillus subtilis; recombinants carrying the gene cannot grow on sucrose-containing plates, which are effective for the enrichment of clones lacking the gene during resolution. This improved method has been applied to various bacteria, including E. coli [6\u20139], Myxococcus xanthus [10], Corynebacterium glutamicum [11], Rhodococcus spp. [12], and Pseudomonas putida [13]., 164524=We thank the members of our research group for their assistance. This work was partly supported by the Japan Society for the Promotion of Science (JSPS) Grant-in-Aid for Young Scientist 23780096 (to Nobutaka Nakashima), Grant-in-Aid for Scientific Research (B) 23380197 (to Kentaro Miyazaki), Grant-in-Aid for Scientific Research on Innovative Areas 24119515 (to Kentaro Miyazaki), and Grant-in-Aid for Challenging Exploratory Research 24651231 (to Kentaro Miyazaki).}",
+    "lastModified": "Thu, 14 May 2015 00:09:45 GMT",
+    "textBeforeTable": ". a Comparison of two gene knockout methods Table 1. Summary of gene knockout and gene silencing. Figure 7. ) The structure of HPasRNAs is shown. \u201cNNNN\u2026.NNNN\u201d indicates an antisense sequence or a MCS control sequence in the case of an empty plasmid. b ), and a box indicates the pSC101H replication origin (high copy version of pSC101). Restriction enzyme sites in the multiple cloning site (MCS) are unique; ( rrnB terminator (T rrnB ), or trc promoter (P trc ), the r kan and kanamycin-resistance gene, q lacI ) Arrows indicate open reading frames ( a Schematic map of the HPasRNA expression vector, pHN1270. ( Figure 6. Mechanism of asRNAs. Red lines indicate a ribosome-binding site (RBS) on the target mRNA. Figure 5. Gene knock-in. Blue box indicates a gene locus to which a target gene is integrated. Red and yellow boxes are neighboring genes, and purple boxes indicate the heterologous gene to be knocked-in. The open reading frames that are derived from a plasmid are dotted. The integration step should occur via one of the two homologous regions, but only one of the two integration patterns is shown here for simplicity. Figure 4. . The",
+    "textAfterTable": "a Advantageous features are shown in bold. Table 2. Comparison of typical efficiency of genome editing. Host bacteria Method used Efficiency Reference E. coli \u03bb-red recombinase method, double stranded DNA 103 to 104 recombinants per 108 viable cells a [ 92 ] E. coli \u03bb-red recombinase method, single stranded DNA ~107 recombinants per 108 viable cells [ 92 ] E. coli \u03bb-red recombinase method, single stranded DNA 25% b [ 25 ] L. reuteri \u03bb-red recombinase method, single stranded DNA 0.4%\u201319% b [ 31 ] E. coli mobile group II introns 1%\u201380% b [ 43 ] C. thermocellum mobile group II introns 67%\u2013100% b [ 49 ]",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

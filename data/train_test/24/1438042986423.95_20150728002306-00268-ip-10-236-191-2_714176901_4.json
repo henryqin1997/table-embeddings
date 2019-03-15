@@ -1,0 +1,42 @@
+{
+    "relation": [
+        [
+            "Value",
+            "business",
+            "interstate",
+            "ramp",
+            "regular",
+            "square",
+            "state",
+            "us"
+        ],
+        [
+            "Definition",
+            "Business loops (e.g. Business Loop 70)",
+            "Interstate highways (e.g. I-70)",
+            "Highway entrance and exit ramps",
+            "Roads other than highways, business loops, and ramps",
+            "State lettered highways (e.g. B, WW)",
+            "State numbered highways (e.g. 22, 124)",
+            "U.S. highways (e.g. US Highway 63)"
+        ]
+    ],
+    "pageTitle": "Assessor.SDE.Roads",
+    "title": "",
+    "url": "http://www.showmeboone.com/GIS/metadatafiles/roads_faq.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00268-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 714185103,
+    "recordOffset": 714176901,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{6187=The horizontal datum used is North American Datum of 1983. The ellipsoid used is Geodetic Reference System 80. The semi-major axis of the ellipsoid used is 6378137.000000. The flattening of the ellipsoid used is 1/298.257222.}",
+    "lastModified": "Thu, 26 Jan 2012 21:54:32 GMT",
+    "textBeforeTable": "'County type'. Type of road name (AVE, DR, LN, CT, RD, etc.) (Source: Boone County GIS Department) CNTY_TYPE 'County name'. Name of the road, without prefix or suffix directions or road types. (Source: Boone County GIS Department) CNTY_NAME 'County direction prefix'. Used for roads that have a directional qualifier at the beginning of their name (N,S,E,W). (Source: Boone County GIS Department) CNTY_DIRP Coordinates defining the features. Feature geometry. (Source: ESRI) Shape 'To address right'. Upper end of address range for a given road segment, on the right side of the road. (Source: Boone County GIS Department) TOADDR Assessor.SDE.Roads How does the data set describe geographic features? Explicit elevation coordinate included with horizontal coordinates Altitude_Encoding_Method: Altitude_Resolution: 1.000000 Altitude_System_Definition: Vertical_Coordinate_System_Definition: Planar coordinates are encoded using coordinate pair Abscissae (x-coordinates) are specified to the nearest 0.000200 Ordinates (y-coordinates) are specified to the nearest 0.000200 Planar coordinates are specified in survey feet The horizontal datum used is North American Datum of 1983. The ellipsoid used is Geodetic Reference System 80. The semi-major axis of the ellipsoid used",
+    "textAfterTable": "LOOP Loop PKWY Parkway PL Place RAMP Ramp (highway) RD Road RIDGE Ridge ROUNDABOUT Roundabout SPUR Spur SQ Square ST Street TER Terrace TRL Trail WAY Way CNTY_DIRS 'County direction suffix'. Used for roads that have a directional qualifier at the end of their name (N,S,E,W). (Source: Boone County GIS Department) ZIP Zip code that the road segment is in (Source: Boone County GIS Department) ALIAS Another name that the road is known by (Source: Boone County GIS Department) LABELNAME Used only for highways, this field contains the letter(s) or number name of the highway, which is used to label the appropriate corresponding highway shield (Source: Boone County GIS Department) RDNO 'Road number'. Number created by County Public Works to refer to a section of a County-maintained road, for their inventory/planning/repair purposes. (Source: Boone County GIS Department) SOURCE Source of the digital road feature. (Source: Boone County GIS Department)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

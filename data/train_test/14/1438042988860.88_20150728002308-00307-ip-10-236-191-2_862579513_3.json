@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "serverURL",
+            "compositeName",
+            "revision",
+            "user",
+            "password",
+            "partition"
+        ],
+        [
+            "Definition",
+            "URL of the server that hosts the SOA Infrastructure application (for example, http://myhost10:7001).",
+            "Name of the SOA composite application.",
+            "Revision ID of the SOA composite application.",
+            "Optional. User name to access the composite deployer servlet when basic authentication is configured.",
+            "Optional. Password to access the composite deployer servlet when basic authentication is configured.",
+            "Optional. The name of the partition in which the SOA composite application is located. The default value is default. If you do not specify a partition, the default partition is searched for the SOA composite application. However, no other partitions are searched."
+        ]
+    ],
+    "pageTitle": "Oracle SOA Suite Custom WLST Commands",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E17904_01/web.1111/e13813/custom_soa.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.88/warc/CC-MAIN-20150728002308-00307-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 862602267,
+    "recordOffset": 862579513,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 13 May 2015 05:16:48 GMT",
+    "textBeforeTable": "sca_undeployComposite(serverURL, compositeName, revision, [user], [password], [partition])  Syntax      Undeploys a currently deployed SOA composite application. Description    Use with WLST: Offline Command Category: Deployment Commands sca_undeployComposite    \"/tmp/sca_HelloWorld_rev1.0.jar\", partition=\"myPartition\") wls:/mydomain/ServerConfig> sca_deployComposite(\"http://stadp10:7001\",  The following example deploys the HelloWorld application to the myPartition partition. \"/tmp/HelloWorld.zip\") wls:/mydomain/ServerConfig> sca_deployComposite(\"http://myhost:7001\",  The following example deploys the HelloWorld ZIP file, which can include multiple SARs, MARs, or both. configplan=\"/tmp/deployplan.xml\") \"/tmp/sca_HelloWorld_rev1.0.jar\", forceDefault=false, wls:/mydomain/ServerConfig> sca_deployComposite(\"http://myhost10:7001\",  The following example deploys the HelloWorld application and applies the configuration plan named deployplan.xml. Password: \"/tmp/sca_HelloWorld_rev1.0.jar\", user=\"weblogic\") wls:/mydomain/ServerConfig> sca_deployComposite(\"http://myhost10:7001\",  The following example deploys the HelloWorld application with a required user name when basic authentication is configured. You are then prompted to provide the password for this user name. \"/tmp/sca_HelloWorld_rev1.0.jar\", true) wls:/mydomain/ServerConfig> sca_deployComposite(\"http://myhost10:7001\",  The following example deploys the HelloWorld application as the default version. \"/tmp/sca_HelloWorld_rev1.0.jar\") wls:/mydomain/ServerConfig> sca_deployComposite(\"http://myhost10:7001\",  The following example deploys the HelloWorld application. Examples      Rules defined on a task definition in one partition can apply to the same definition in another partition. For the same task definition type, mapped attributes defined in one",
+    "textAfterTable": "Examples The following example undeploys the HelloWorld application.  wls:/mydomain/ServerConfig> sca_undeployComposite(\"http://myhost10:7001\", \"HelloWorld\", \"1.0\") The following example undeploys the HelloWorld application with a required user name when basic authentication is configured. You are then prompted to provide the password for this user name.  wls:/mydomain/ServerConfig> sca_undeployComposite(\"http://myhost10:7001\", \"HelloWorld\", \"1.0\", user=\"weblogic\") Password: The following example undeploys the HelloWorld application in the myPartition partition.  wls:/mydomain/ServerConfig> sca_undeployComposite(\"http://stadp10:7001\", \"HelloWorld\", \"1.0\", partition='myPartition') SOA Composite Application Management Commands Use the management commands, listed in Table 10-3, to start, stop, activate, retire, assign a default revision version, and list deployed SOA composite applications. Table 10-3 SOA Composite Application Management Commands for WLST Configuration Use this command... To... Use with WLST... sca_startComposite Start a previously stopped SOA composite application. Offline sca_stopComposite Stop a SOA composite application.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

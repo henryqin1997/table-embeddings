@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust",
+            "Precipitation"
+        ],
+        [
+            "Avg",
+            "59 \u00b0F",
+            "52.6 \u00b0F",
+            "82 %",
+            "30.07 in",
+            "6.1 mph",
+            "",
+            "0.46 in"
+        ],
+        [
+            "Avg High",
+            "70.4 \u00b0F",
+            "58.7 \u00b0F",
+            "96.9 %",
+            "30.17 in",
+            "16.5 mph",
+            "27.8 mph",
+            ""
+        ],
+        [
+            "Avg Low",
+            "49.2 \u00b0F",
+            "43.8 \u00b0F",
+            "53.6 %",
+            "29.98 in",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Record High",
+            "80.1 \u00b0F (1999)",
+            "69.1 \u00b0F (2000)",
+            "",
+            "30.44 in (2002)",
+            "27.6 mph (2010)",
+            "40.3 mph (2010)",
+            "2.25 in (1999)"
+        ],
+        [
+            "Record Low",
+            "33.8 \u00b0F (2008)",
+            "21.9 \u00b0F (2004)",
+            "20 % (2004)",
+            "29.69 in (2006)",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Bayou La Batre, Alabama - March 9th - Daily Weather Averages (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherdaily.php3?s=308110&cityname=Bayou-La-Batre-Alabama-United-States-of-America&month=3&theday=9&units=us",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00312-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 829829743,
+    "recordOffset": 829812240,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] DAILY WEATHER AVERAGE - MARCH 9 [ \u2190 Previous Day ] } window.print(); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); return $(this).text().replace(\"2015\", \"\"); $('.datepicker-switch').text(function () { }); window.location = url; var url = \"/weather/weatherdaily.php3?s=308110&\" + pieces + \"&citynameBayou+La+Batre%2C+Alabama%2C+United+States+of+America&set=\"; var pieces = tosplit.replace(/(.*?)-(.*?)-(.*?)/,\"month=$2&theday=$3\"); var tosplit = event.format(); $('#datepicker').datepicker().on('changeDate', function (event) { }); endDate: \"2015-12-31\", startDate: \"2015-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 7.4 mi Wind Direction ESE (98.7 \u00b0) Weather Element Total Heating Degree Days 7.2 (Base 18.3) Cooling Degree Days 5.2 (Base 18.3) Growing Degree Days 11.4 (Base 10) Total Years on Record: 18",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

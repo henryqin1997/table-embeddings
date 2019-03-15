@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Status",
+            "TO DO",
+            "IN PROGRESS",
+            "TO DO",
+            "DONE",
+            "IN PROGRESS",
+            "IN PROGRESS"
+        ],
+        [
+            "Project",
+            "attachment:/ kio-slave",
+            "KAlarm",
+            "sieve: implement wizard",
+            "HTML Replies",
+            "KMail import",
+            "Agent control workspace integration"
+        ],
+        [
+            "Description",
+            "Implement kio-slave to access (email) attachments in Akonadi",
+            "Port to Akonadi",
+            "Implement wizard to help user to create sieve script",
+            "Give messagecomposer (especially for KMail) the ability to compose replies in HTML",
+            "KMail1 setup import instead of migration",
+            "Monitoring and control of Akonadi agents through Plasma workspace facilitites"
+        ],
+        [
+            "Contact",
+            "Friedrich W. H. Kossebau",
+            "David Jarvie",
+            "Montel Laurent",
+            "Torgny Nyblom",
+            "Kevin Krammer",
+            "Kevin Krammer"
+        ]
+    ],
+    "pageTitle": "Schedules/KDE4/4.8 Feature Plan - KDE TechBase",
+    "title": "",
+    "url": "https://techbase.kde.org/index.php?title=Schedules/KDE4/4.8_Feature_Plan&oldid=67263",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 10,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981525.10/warc/CC-MAIN-20150728002301-00229-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 885599783,
+    "recordOffset": 885578025,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "kdelibs 13 kdeutils 12 kdesdk 11 kdeplasma-addons 10 kdepim 9 kdenetwork 8 kdemultimedia 7 kdegraphics 6 kdegames 5 kdeedu 4 kde-baseapps 3 kde-workspace 2 kde-runtime 1 kdelibs Contents done => completed in-progress => started, but not completed yet todo => not started yet Legend: Schedules/KDE4/4.7 Feature Plan (previous major release) Schedules/KDE4/4.8 Release Goals Schedules/KDE4/4.8 Release Schedule See also: This is a list of planned features for the SC 4.8 release. search navigation, Jump to: diff) Newer revision \u2192 ( diff) | Latest revision (",
+    "textAfterTable": "IN PROGRESS kdeui/util Connect KWallet class to KSecretsService client API Valentin Rusu <kde@rusu.info> IN PROGRESS kcookiejar New domain specific cookie policy based on patch provided in bug#54300 Dawit A. <adawit@kde.org> kde-runtime Status Project Description Contact IN PROGRESS ksecretsserviced KSecretsService daemon implementing the freedesktop.org secrets API. KDE applications will want to use the related kdelibs API (see below) Valentin Rusu <kde@rusu.info> IN PROGRESS DrKonqi Better duplicate detection Matthias Fuchs <mat69@gmx.net> IN PROGRESS KIO Thumbnails",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

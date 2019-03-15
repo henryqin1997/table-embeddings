@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4",
+            "Step 5"
+        ],
+        [
+            "Command or Action",
+            "enable Example: Router> enable",
+            "configure terminal Example: Router# configure terminal",
+            "pfr master Example: Router(config)# pfr master",
+            "mode route observe Example: Router(config-pfr-mc)# mode route observe",
+            "end Example: Router(config-pfr-mc)# end"
+        ],
+        [
+            "Purpose",
+            "Enables privileged EXEC mode. Enter your password if prompted.",
+            "Enters global configuration mode.",
+            "Enters PfR master controller configuration mode to configure a router as a master controller and to configure global operations and policies.",
+            "Configures PfR to passively monitor and report without making any changes.",
+            "Exits PfR master controller configuration mode and returns to privileged EXEC mode."
+        ]
+    ],
+    "pageTitle": "PfR Simplification Phase 1\u00a0 [Cisco IOS 15.2S] - Cisco Systems",
+    "title": "",
+    "url": "http://www.cisco.com/en/US/docs/ios-xml/ios/pfr/configuration/15-2s/pfr-simple-ph1.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989507.42/warc/CC-MAIN-20150728002309-00194-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 364416319,
+    "recordOffset": 364398295,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{22945=To simplify PfR configuration, CSCtr2697 enabled PfR learn mode using throughput-based learning by default.}",
+    "textBeforeTable": "DETAILED STEPS 5.\u00a0\u00a0\u00a0 end 4.\u00a0\u00a0\u00a0 mode route observe 3.\u00a0\u00a0\u00a0 pfr master 2.\u00a0\u00a0\u00a0 configure terminal 1.\u00a0\u00a0\u00a0 enable SUMMARY STEPS With CSCtr26978, the mode route control command behavior is the default. Perform this task at the master controller to configure PfR to use route observe mode instead of the default route control mode. In route observe mode, the master controller monitors prefixes and exit links based on default and user-defined policies and then reports the status of the network and the decisions that should be made, but it does not implement any changes. In route control mode, the master controller coordinates information from the borders routers in the same way as route observe mode, but commands are sent back to the border routers to alter routing in the PfR managed network to implement the policy decisions. Enabling PfR Route Observe Mode",
+    "textAfterTable": "Disabling Automatic PBR Route Control Perform this task at the master controller to disable the default route control behavior when a RIB mismatch is found and allow PfR to use a single protocol to control a traffic class. Note With CSCtr26978, the no mode route protocol pbr command behavior is enabled by default. Perform this task to override the default behavior. SUMMARY STEPS 1.\u00a0\u00a0\u00a0 enable 2.\u00a0\u00a0\u00a0 configure terminal 3.\u00a0\u00a0\u00a0 pfr master 4.\u00a0\u00a0\u00a0 no mode route protocol pbr 5.\u00a0\u00a0\u00a0 end DETAILED STEPS \u00a0 Command or Action Purpose Step\u00a01",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

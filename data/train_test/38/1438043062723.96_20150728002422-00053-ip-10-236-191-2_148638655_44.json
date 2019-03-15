@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Violation",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Message",
+            "Missing a Javadoc comment.",
+            "Missing a Javadoc comment.",
+            "Missing a Javadoc comment.",
+            "'<' is not preceded with whitespace.",
+            "'<' is not followed by whitespace.",
+            "'>' is not preceded with whitespace.",
+            "Missing a Javadoc comment.",
+            "Expected @throws tag for 'RepositoryMetadataDeploymentException'.",
+            "Expected @throws tag for 'RepositoryMetadataInstallationException'."
+        ],
+        [
+            "Line",
+            "28",
+            "31",
+            "34",
+            "34",
+            "34",
+            "34",
+            "38",
+            "51",
+            "60"
+        ]
+    ],
+    "pageTitle": "Maven Core - Checkstyle Results",
+    "title": "",
+    "url": "http://maven.apache.org/ref/3.0.3/maven-core/checkstyle.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 44,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062723.96/warc/CC-MAIN-20150728002422-00053-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 148680655,
+    "recordOffset": 148638655,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 03 Sep 2012 17:01:24 GMT",
+    "textBeforeTable": "Summary The following document contains the results of Checkstyle.\u00a0 Checkstyle Results Wagon Surefire Shared Components SCM Plugins Mercury Maven 2 Maven 1.x JXR Doxia Ant Tasks Maven Projects Test Source Xref Test JavaDocs Tag List Surefire Report Source Xref PMD Report JavaDocs CPD Report Checkstyle Project Reports Project Information Project Documentation Apache Maven Parent Project Last Published: 2011-03-03 \u00a0| Version: 3.0.3 Maven Core Apache Maven > Apache >",
+    "textAfterTable": "0 2 0 org/apache/maven/DefaultArtifactFilterManager.java 1 5 44 org/apache/maven/DefaultMaven.java 2 3 164 org/apache/maven/DefaultProjectDependenciesResolver.java 0 4 105 org/apache/maven/DefaultProjectDependencyGraph.java 0 0 46 org/apache/maven/DuplicateProjectException.java 0 0 29 org/apache/maven/FilteredProjectDependencyGraph.java 0 0 42 org/apache/maven/InternalErrorException.java 0 1 0 org/apache/maven/Maven.java 1 1 1 org/apache/maven/MavenExecutionException.java 0 4 0 org/apache/maven/MissingModuleException.java 0 3 1 org/apache/maven/ProjectBuildFailureException.java 0 3 1 org/apache/maven/ProjectCycleException.java 0 1 0 org/apache/maven/ProjectDependenciesResolver.java 0 8 39 org/apache/maven/ReactorReader.java 0 0 48 org/apache/maven/RepositoryUtils.java 0 11 66 org/apache/maven/artifact/DependencyResolutionRequiredException.java 0 1 0 org/apache/maven/artifact/InvalidRepositoryException.java 0 5 0 org/apache/maven/artifact/factory/ArtifactFactory.java 1 12 2 org/apache/maven/artifact/factory/DefaultArtifactFactory.java 0 12 3 org/apache/maven/artifact/handler/DefaultArtifactHandler.java 0 14 0 org/apache/maven/artifact/handler/manager/ArtifactHandlerManager.java 1 2 3 org/apache/maven/artifact/handler/manager/DefaultArtifactHandlerManager.java 0 3 16 org/apache/maven/artifact/metadata/AbstractArtifactMetadata.java 0 1 1 org/apache/maven/artifact/metadata/ArtifactMetadataRetrievalException.java 0 1 1 org/apache/maven/artifact/metadata/ArtifactMetadataSource.java 0 5 16 org/apache/maven/artifact/metadata/ResolutionGroup.java 0 2 16 org/apache/maven/artifact/repository/DefaultRepositoryRequest.java 0 13 13 org/apache/maven/artifact/repository/LegacyLocalRepositoryManager.java 0 13 9 org/apache/maven/artifact/repository/MavenArtifactRepository.java 0 36 15 org/apache/maven/artifact/repository/RepositoryRequest.java 0 0 6 org/apache/maven/artifact/repository/layout/DefaultRepositoryLayout.java 0 5",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

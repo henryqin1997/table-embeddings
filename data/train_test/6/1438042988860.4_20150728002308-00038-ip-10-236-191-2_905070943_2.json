@@ -1,0 +1,68 @@
+{
+    "relation": [
+        [
+            "date",
+            "1/24/2013",
+            "2/22/2013",
+            "2/24/2013",
+            "5/9/2013",
+            "5/10/2013",
+            "9/14/2013",
+            "11/1/2013",
+            "11/7/2013",
+            "12/20/2013"
+        ],
+        [
+            "city",
+            "Annapolis",
+            "Winnipeg",
+            "Winnipeg",
+            "Lakewood",
+            "Lakewood",
+            "Saint Charles",
+            "New York",
+            "Kitchener",
+            "Toronto"
+        ],
+        [
+            "state",
+            "MD",
+            "MB",
+            "MB",
+            "OH",
+            "OH",
+            "IL",
+            "NY",
+            "ON",
+            "ON"
+        ],
+        [
+            "venue",
+            "Rams Head On Stage",
+            "Centennial Concert Hall",
+            "Centennial Concert Hall",
+            "The Winchester",
+            "The Winchester",
+            "Arcada Theater",
+            "B.B. King Blues Club & Grill",
+            "Centre in the Square",
+            "Hugh's Room"
+        ]
+    ],
+    "pageTitle": "Rik Emmett Concert Tickets | SeatGeek",
+    "title": "",
+    "url": "https://seatgeek.com/rik-emmett-tickets",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00038-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 905089735,
+    "recordOffset": 905070943,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "2015 Tour Dates } ); document.getElementById('location-autocomplete') }), } } window.location.href = window.location.pathname + '?lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id } else { window.location.href = window.location.href + '&lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id; if(window.location.href.match('/search')) { SG.GA.sendEvent('team-show-page', 'location-input', { label: selection.term }); onSelect: function(selection) { }, return (data.results && data.results.location) ? data.results.location : [] dataExtractionFunction: function(data) { placeholder: 'Search by City...', postSelectLoad: true, limit: 3, contentKey: 'term', idKey: 'id', queryString: \"types[]=location\", source: \"/autocomplete\", React.createFactory(Autocomplete)({ React.render( if (document.getElementById('location-autocomplete')) {",
+    "textAfterTable": "date city state venue 1/24/2013 Annapolis MD Rams Head On Stage 2/22/2013 Winnipeg MB Centennial Concert Hall 2/24/2013 Winnipeg MB Centennial Concert Hall 5/9/2013 Lakewood OH The Winchester 5/10/2013 Lakewood OH The Winchester 9/14/2013 Saint Charles IL Arcada Theater 11/1/2013 New York NY B.B. King Blues Club & Grill 11/7/2013 Kitchener ON Centre in the Square 12/20/2013 Toronto ON Hugh's Room 2012 date city state venue 8/10/2012 Niagara Falls NY Bears Den At Seneca Niagara Casino & Hotel 8/23/2012 Toronto ON Sound Academy 11/10/2012 New York NY B.B. King Blues Club & Grill 12/8/2012 Hamilton ON Molson Canadian Studio at Hamilton Place",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

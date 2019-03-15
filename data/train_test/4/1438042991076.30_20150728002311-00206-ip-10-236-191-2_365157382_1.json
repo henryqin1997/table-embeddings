@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "Value",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        [
+            "Category",
+            "Poorest",
+            "Second",
+            "Middle",
+            "Fourth",
+            "Richest"
+        ]
+    ],
+    "pageTitle": "Yemen Multiple Indicator Cluster Survey 2006 : Variable wlthind5 : Wealth index quintiles",
+    "title": "",
+    "url": "http://www.childinfo.org/mics/mics3/archives/yemen/survey0/dataSet/dataFiles/dataFile3/var180.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991076.30/warc/CC-MAIN-20150728002311-00206-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 365165584,
+    "recordOffset": 365157382,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 27 May 2009 19:15:57 GMT",
+    "textBeforeTable": "Categories Variable constructed for analysis Source of information Women aged 15-49 Universe File: wm Invalid: 0 (0) Valid case(s): 3912 (3924.3) Range: 0-5 Decimal(s): 0 Width: 1 Format: numeric Type: Discrete Overview Variable wlthind5 : Wealth index quintiles",
+    "textAfterTable": "Pre-question Recoded variable Imputation The wealth index is calculated by the program wealth.sps, which creates a data file wealth.sav that contains identification variables, a variable containing each household wealth score and a variable containing each household's wealth index. The program wealth.sps first produces frequencies of all household variables concerned with wealth or assets. It then recodes variables describing household and individual assets into dichotomous variables. The program then uses factor analysis (specifically principal components analysis) to calculate a wealth score for each household. Finally, it uses the wealth score to create household wealth quintiles (that is, the wealth index) and then saves them in an SPSS data file. Once the wealth index has been calculated, executing the program wealth_merge.sps will add it to the analysis files. All the above mentioned SPSS files can be found in the data processing folder under technical information. Generated: MAY-27-2009 using the IHSN Microdata Management Toolkit",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

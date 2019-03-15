@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "Related Topic",
+            "IPv6 addressing and connectivity",
+            "Cisco IOS commands",
+            "IPv6 commands",
+            "Cisco IOS IPv6 features",
+            "Traffic Policing"
+        ],
+        [
+            "Document Title",
+            "IPv6 Configuration Guide",
+            "Cisco IOS Master Commands List, All Releases",
+            "Cisco IOS IPv6 Command Reference",
+            "Cisco_IOS_IPv6_Feature_Mapping",
+            "\"Traffic Policing\" module in the QoS: Policing and Shaping Configuration Guide."
+        ]
+    ],
+    "pageTitle": "IPv6 QoS: MQC Traffic Policing\u00a0 [Support] - Cisco Systems",
+    "title": "",
+    "url": "http://www.cisco.com/en/US/docs/ios-xml/ios/qos_plcshp/configuration/15-2s/ip6-qos-traf-polic.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00204-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 378030395,
+    "recordOffset": 378022193,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Related Documents Additional References Congestion management for IPv6 is similar to IPv4, and the commands used to configure queueing and traffic shaping features for IPv6 environments are the same commands as those used for IPv4. Traffic shaping allows you to limit the packet dequeue rate by holding additional packets in the queues and forwarding them as specified by parameters configured for traffic shaping features. Traffic shaping uses flow-based queueing by default. CBWFQ can be used to classify and prioritize the packets. Class-based policer and generic traffic shaping (GTS) or Frame Relay traffic shaping (FRTS) can be used for conditioning and policing traffic. Traffic Policing in IPv6 Environments Apply the policy. Build the policy to treat the traffic. Work from the edge toward the core in applying QoS features. Create a policy to mark each class. Create classes based on the criteria you establish for your network. In particular, if the same network is also carrying IPv4 traffic along with IPv6, decide if you want to treat",
+    "textAfterTable": "Standards and RFCs Standard/RFC Title RFCs for IPv6 IPv6 RFCs MIBs MIB MIBs Link To locate and download MIBs for selected platforms, Cisco IOS releases, and feature sets, use Cisco MIB Locator found at the following URL: http://www.cisco.com/go/mibs Technical Assistance Description Link The Cisco Support and Documentation website provides online resources to download documentation, software, and tools. Use these resources to install and configure the software and to troubleshoot and resolve technical issues",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

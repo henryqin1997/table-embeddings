@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "appName",
+            "verbose",
+            "name",
+            "server",
+            "applicationVersion"
+        ],
+        [
+            "Definition",
+            "Name of the WebCenter application for which to list BPEL server connections.",
+            "Optional. Displays BPEL server connection details in verbose mode. Valid options are 1 (true) and 0 (false). When set to 1, listBPELConnections lists all of the BPEL server connections that are configured, along with their details. When set to 0, listBPELConnections lists connection names only. This argument defaults to 0. If you set this argument to 0, do not specify the name argument.",
+            "Optional. Name of an existing BPEL server connection. You can use this argument to view details about a specific connection. To list all the connections, omit the name argument.",
+            "Optional. Name of the managed server where the WebCenter application is deployed. For example, WC_Spaces. Required when applications with the same name are deployed to different servers and also when you have a cluster.",
+            "Optional. Version number of the deployed application. Required if more than one version of the WebCenter application is deployed."
+        ]
+    ],
+    "pageTitle": "Oracle WebCenter Custom WLST Commands",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E21764_01/web.1111/e13813/custom_webcenter_admin.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 194,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985647.51/warc/CC-MAIN-20150728002305-00330-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 882029259,
+    "recordOffset": 881925983,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{268718=Edits an existing Microsoft SharePoint 2007 repository connection. This command requires that you specify values for appName and name, plus at least one additional argument., 162353=The following example archives activity stream data that is older than October 1, 2009:, 463069=Choose OCS for Microsoft Office Communications Server 2007., 187205=Create a Microsoft SharePoint 2007 repository connection., 627383=The following example creates a connection named MyPEConnection for a WebCenter Spaces. The connection points to a Microsoft Exchange Server 2003., 460508=Use the listIMPAdapters command to find out which types of instant messaging and presence servers are supported. Out-of-the-box, WebCenter applications support Oracle WebLogic Communications Server (OWLCS), Microsoft Live Communications Server (LCS), and Microsoft Communications Server 2007 (OCS)., 587711=The frequency, in seconds, that Space distribution lists are checked for new incoming emails. The default is 1800 seconds (30 minutes)., 626838=The following example creates a connection named MyPEConnection for WebCenter Spaces (appName='webcenter'). The connection points to a Microsoft Exchange Server 2007 and is designated as the default connection for the Personal Events service., 187625=Edit a Microsoft SharePoint 2007 repository connection., 173817=The following example archives activity stream data associated with Spaces that have been inactive (no activities have occurred, regardless of open or closed status) since October 1, 2009:, 621416=The Personal Events service supports connections to Microsoft Exchange Server 2003 and Microsoft Exchange Server 2007.While you can register multiple personal events connections for a WebCenter application, only one connection is used for personal events services - the default (or active) connection., 188045=List all Microsoft SharePoint 2007 connections that are configured for a WebCenter application., 261480=Creates a connection to a Microsoft SharePoint 2007 repository., 178409=The following example restores activity stream data archived since October 1, 2009:}",
+    "lastModified": "Wed, 13 May 2015 05:19:31 GMT",
+    "textBeforeTable": "listBPELConnections(appName, [verbose], [name], [server], [applicationVersion])  Syntax      Without any arguments, this command lists all the BPEL connections that are configured for a specific WebCenter application. All BPEL connections are listed, even connections not currently used. Description    Use with WLST: Online Module: Oracle WebCenter listBPELConnections    name='WebCenter Worklist', policy='GPA') wls:/weblogic/serverConfig> setBPELConnection(appName='webcenter',  The following example changes the security policy to use Global Policy Attachments (GPA): saml_token_with_message_protection_client_policy', recipientKeyAlias='myalias', linkUrl='http://mySSO.com:7777') name='WebCenter Worklist',url='http://myhost.com:6666', policy='oracle/wss10_ wls:/weblogic/serverConfig> setBPELConnection(appName='webcenter',  The following example updates the BPEL server URL, security policy, recipient key alias, and link url for a connection named WebCenter Worklist. Examples       Optional. Version number of the deployed application. Required if more than one version of the WebCenter application is deployed. applicationVersion    Optional. Name of the managed server where the WebCenter application is deployed. For example, WC_Spaces. Required when applications with the same name are deployed to different servers and also when you have a cluster.  server    Optional. URL used to link",
+    "textAfterTable": "Examples The following example lists the names of all the BPEL server connections that are configured for a WebCenter application.  wls:/weblogic/serverConfig> listBPELConnections(appName='webcenter') ------------------ WebCenter Worklist ------------------ ------------------ Human Resources Worklist ------------------ The following example lists the names and details of all of the BPEL server connections that are configured for a WebCenter application.  wls:/weblogic/serverConfig> listBPELConnections(appName='webcenter', verbose=1)  ------------------ WebCenter Worklist ------------------ Connection Name: WebCenter Worklist PolicyURI:oracle/wss10_saml_token_client_policy URL:http://myhost.com:8001 ------------------ Human Resources Worklist ------------------ Connection Name: Human Resources Worklist PolicyURI:oracle/wss10_saml_token_client_policy URL:http://myhost.com:8888 ------------------ addWorklistConnection Module: Oracle WebCenter Use with WLST: Online Description Enable an existing BPEL server connection for Worklist services. The Worklist service supports multiple connections so that WebCenter users can monitor and manage assignments and notifications from a range of BPEL servers. The name must specify an existing BPEL server connection. Syntax  addWorklistConnection(appName, name,[verbose, server, applicationVersion]) Argument Definition  appName Name of the WebCenter application in which to perform this operation.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

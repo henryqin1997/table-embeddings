@@ -1,0 +1,66 @@
+{
+    "relation": [
+        [
+            "Patente citante",
+            "US6724845 *",
+            "US6728538 *",
+            "US7499695 *",
+            "US7688917",
+            "US8204161",
+            "US8576952"
+        ],
+        [
+            "Fecha de presentaci\ufffdn",
+            "16 Ago 2000",
+            "4 Feb 2003",
+            "22 Dic 2005",
+            "22 Dic 2005",
+            "19 Feb 2010",
+            "1 May 2012"
+        ],
+        [
+            "Fecha de publicaci\ufffdn",
+            "20 Abr 2004",
+            "27 Abr 2004",
+            "3 Mar 2009",
+            "30 Mar 2010",
+            "19 Jun 2012",
+            "5 Nov 2013"
+        ],
+        [
+            "Solicitante",
+            "Koninklijke Philips Electronics N.V.",
+            "Qualcomm Incorporated",
+            "Infineon Technologies Ag",
+            "Infineon Technologies Ag",
+            "Intel Mobile Communications GmbH",
+            "Intel Mobile Communications GmbH"
+        ],
+        [
+            "T\ufffdtulo",
+            "Modified filtering for asynchronous inputs",
+            "Method and apparatus for generating pilot strength measurement messages",
+            "Configurable all-digital coherent demodulator system for spread spectrum applications",
+            "Configurable all-digital coherent demodulator system for spread spectrum applications",
+            "Configurable all-digital coherent demodulator system for spread spectrum applications",
+            "Configurable all-digital coherent demodulator system for spread spectrum applications"
+        ]
+    ],
+    "pageTitle": "Patente US6539069 - Dynamic filtering of pilot energy samples in a wireless communication system - Google Patentes",
+    "title": "",
+    "url": "http://www.google.es/patents/US6539069?dq=flatulence",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 6,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990123.20/warc/CC-MAIN-20150728002310-00255-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 477938163,
+    "recordOffset": 477920002,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{18794=The spread spectrum modulation technique of CDMA has significant advantages over other modulation techniques for multiple access communication systems. The use of CDMA techniques in a multiple access communication system is disclosed in U.S. Pat. No. 4,901,307, issued Feb. 13, 1990, entitled \u201cSPREAD SPECTRUM MULTIPLE ACCESS COMMUNICATION SYSTEM USING SATELLITE OR TERRESTRIAL REPEATERS\u201d, assigned to the assignee of the present invention, of which the disclosure thereof is incorporated by reference herein., 19323=Space or path diversity is obtained by providing multiple signal paths through simultaneous links from a mobile user through two or more cell-sites. Furthermore, path diversity may be obtained by exploiting the multipath environment through spread spectrum processing by allowing a signal arriving with different propagation delays to be received and processed separately. Examples of path diversity are illustrated in U.S. Pat. No. 5,101,501, issued Mar. 31, 1992, entitled \u201cSOFT HANDOFF IN A CDMA CELLULAR TELEPHONE SYSTEM\u201d, and U.S. Pat. No. 5,109,390, issued Apr. 28, 1992, entitled \u201cDIVERSITY RECEIVER IN A CDMA CELLULAR TELEPHONE SYSTEM\u201d, both assigned to the assignee of the present invention and incorporated by reference herein., 20080=The deleterious effects of fading can be further controlled to a certain extent in a CDMA system by controlling transmitter power. A system for cell-site and mobile unit power control is disclosed in U.S. Pat. No. 5,056,109, issued Oct. 8, 1991, entitled \u201cMETHOD AND APPARATUS FOR CONTROLLING TRANSMISSION POWER IN A CDMA CELLULAR MOBILE TELEPHONE SYSTEM\u201d, Ser. No. 07/433,031, filed Nov. 7, 1989, also assigned to the assignee of the present invention. The use of CDMA techniques in a multiple access communication system is further disclosed in U.S. Pat. No. 5,103,459, issued Apr. 7, 1992, entitled \u201cSYSTEM AND METHOD FOR GENERATING SIGNAL WAVEFORMS IN A CDMA CELLULAR TELEPHONE SYSTEM\u201d, assigned to the assignee of the present invention, of which the disclosure thereof is incorporated by reference herein.}",
+    "textBeforeTable": "Citas de patentes The previous description of the preferred embodiments is provided to enable any person skilled in the art to make or use the present invention. The various modifications to these embodiments will be readily apparent to those skilled in the art, and the generic principles defined herein may be applied to other embodiments without the use of the inventive faculty. Thus, the present invention is not intended to be limited to the embodiments shown herein but is to be accorded the widest scope consistent with the principles and novel features disclosed herein. The base station sends a response message either accepting or rejecting the proposed promotion or demotion and in block 212 the mobile station 2 receives the response message. If the response indicates that the particular pilot under consideration should be promoted or demoted as proposed, then the control processor 62 recalculates the filter length NF in block 202 and the process continues. If the response indicates that the particular pilot under consideration should not be moved from one set population to another, the control processor 62 may skip block 202 and merely continue measuring the next pilot signal sample NEW_SAMPLE in block 204. In block 208, the filtered energy value XN is compared with the threshold TADD and TDROP to determine whether it should be promoted or demoted, respectively into another set population. For example, if the particular pilot being measured is determined to",
+    "textAfterTable": "Fecha de presentaci\ufffdn Fecha de publicaci\ufffdn Solicitante T\ufffdtulo US6724845 * 16 Ago 2000 20 Abr 2004 Koninklijke Philips Electronics N.V. Modified filtering for asynchronous inputs US6728538 * 4 Feb 2003 27 Abr 2004 Qualcomm Incorporated Method and apparatus for generating pilot strength measurement messages US7499695 * 22 Dic 2005 3 Mar 2009 Infineon Technologies Ag Configurable all-digital coherent demodulator system for spread spectrum applications US7688917 22 Dic 2005 30 Mar 2010 Infineon Technologies Ag Configurable all-digital coherent demodulator system for spread spectrum applications US8204161 19 Feb 2010 19 Jun 2012 Intel Mobile Communications GmbH Configurable all-digital coherent demodulator system for spread spectrum applications US8576952 1 May 2012 5 Nov 2013 Intel Mobile Communications GmbH Configurable all-digital coherent demodulator system for spread spectrum applications * Citada por examinador Clasificaciones",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

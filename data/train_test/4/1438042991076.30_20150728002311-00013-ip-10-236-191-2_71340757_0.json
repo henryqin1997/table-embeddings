@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Type of user",
+            "User that always works on the same fixed PC in the office",
+            "User that uses roaming profiles and logs in on different fixed PC\u2019\u200bs in the office",
+            "User that works with a fixed PC remote from a sub department over a small bandwidth internet connection",
+            "User with a laptop that is inside the office most of the time",
+            "User with a laptop that is always out of the office",
+            "User that works on a Terminal Server"
+        ],
+        [
+            "Zarafa profile type",
+            "Online",
+            "Online",
+            "Cached Zarafa Mode",
+            "Detect at startup",
+            "Cached Zarafa Mode",
+            "Online"
+        ]
+    ],
+    "pageTitle": "Zarafa Collaboration Platform",
+    "title": "",
+    "url": "http://doc.zarafa.com/7.1/User_Manual/zh-CN/html-single/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991076.30/warc/CC-MAIN-20150728002311-00013-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71395863,
+    "recordOffset": 71340757,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 12 Mar 2015 13:20:33 GMT",
+    "textBeforeTable": "\u8868\u00a04.1.\u00a0Connection type options 4.2.4.\u00a0What is the best connection type to choose? \u7b2c\u00a05.1.2\u00a0\u8282 \u201cLimitations of working offline\u201d. Please consider the limitations of the use of offline storage as described in \u91cd\u8981 The third type of connection is Cached Zarafa Mode. This type is similar to the caching mode of MS Exchange. If this type is selected, the offline storage will always be used. When there is a network connection available all items of the user`s own store will be synchronised to the offline storage. The first time the Outlook profile is being configured it is required to have a connection to the Zarafa server. After the profile is created and Outlook can be started, all folders and items will be synchronised. 4.2.3.\u00a0Cached Zarafa Mode \u7b2c\u00a04.2.1\u00a0\u8282 \u201cOnline\u201d. \u7b2c\u00a04.2.3\u00a0\u8282 \u201cCached Zarafa Mode\u201d, effectively. In case it decides to work online, the behaviour of that session will be as described above in Whenever the \u201c\u200b_Detect at startup_\u201d\u200b mode decides to work offline, the behaviour for that session will be as described below in \u6ce8\u610f When Outlook is started and there",
+    "textAfterTable": "\u91cd\u8981 The Zarafa client is not designed to allow switching between the different connection types. If a user should be able to work with an online and cached connection it is recommended to create two separate profiles. 4.3.\u00a0Advanced configuration Since version 6.20 two new settings are introduced in order to improve connection to the Zarafa server. \u56fe\u00a04.1.\u00a0Connection settings 4.3.1.\u00a0Proxy settings If the zarafa server is only reachable via a proxy server it is possible to enter the information of the proxy server into the client settings. 4.3.2.\u00a0Other connection settings Two other connection settings are configurable: Compression: Uncheck this option if compression is not wanted. This option is on by default. Server connection timeout: Depending on the connection quality it is possible to change the timeout to the zarafa server. Default is 30 seconds. 4.4.\u00a0Public Folder Favourites",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Release",
+            "12.4(22)T",
+            "12.2(33)SRE",
+            "Cisco IOS XE Release 3.1S",
+            "15.1(3)T",
+            "12.2(58)SE",
+            "15.2(4)M",
+            "Cisco IOS XE Release 3.8S",
+            "Cisco IOS XE Release 3.2SE"
+        ],
+        [
+            "Modification",
+            "This command was introduced.",
+            "This command was modified. Support for this command was implemented on the Cisco 7200 and Cisco 7300 Network Processing Engine (NPE) series routers.",
+            "This command was integrated into Cisco IOS XE Release 3.1S.",
+            "This command was modified. Support for the Cisco Performance Monitor was added.",
+            "This command was modified. Support for the Cisco Performance Monitor was added.",
+            "This command was modified. The ipfix keyword was added in Cisco IOS Release 15.2(4)M.",
+            "This command was integrated into Cisco IOS XE Release 3.8S.",
+            "This command was integrated into Cisco IOS XE Release 3.2SE without the support for the netflow-v5 and ipfix keywords."
+        ]
+    ],
+    "pageTitle": "Flexible Netflow Command Reference, Cisco IOS XE Release 3SE (Catalyst 3850 Switches) - cache (Flexible NetFlow) through match flow [Cisco Catalyst 3850 Series Switches] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/ios-xml/ios/fnetflow/command/fnf-xe-3se-3850-cr-book/fnf-xe-3se-3850-cr-book_chapter_00.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 69,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985140.15/warc/CC-MAIN-20150728002305-00342-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 368240667,
+    "recordOffset": 368192190,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{3167=This command controls the aging behavior of the normal type of cache. If a flow has been active for a long time, it is usually desirable to age it out (starting a new flow for any subsequent packets in the flow). This age out process allows the monitoring application that is receiving the exports to remain up to date. By default this timeout is 1800 seconds (30 minutes), but it can be adjusted according to system requirements. A larger value ensures that long-lived flows are accounted for in a single flow record; a smaller value results in a shorter delay between starting a new long-lived flow and exporting some data for it., 13795=Specifies the update timeout, in seconds, for a permanent flow cache. Range: 1 to 604800 (7 days). Default: 1800., 7807=This command was modified. Support for this command was implemented on the Cisco 12000 series routers., 1768=This command controls the periodic updates sent by the permanent type of cache. This behavior is similar to the active timeout, except that it does not result in the removal of the cache entry from the cache. By default this timer value is 1800 seconds (30 minutes)., 14665=Specifies the active flow timeout in seconds. Range: 1 to 604800 (7 days). Default: 1800.}",
+    "TableContextTimeStampAfterTable": "{45950=This command was modified. Support for this Cisco was implemented on the 12000 series routers., 12327=This command was modified. Support for this command was implemented on the Cisco 12000 series routers., 64171=This command was implemented on the Cisco 12000 series routers., 54299=Variance = (50,000/4) - (400/4)2 = 2500, 109344=This command was modified. Support for this command was implemented on the Cisco 12000 series routers.}",
+    "textBeforeTable": "Syntax Description { active | inactive | update } | type } { timeout cache no normal } seconds } | type seconds | update seconds | inactive { active { timeout cache Cisco IOS XE Release 3.2SE transaction-end } | type } { active | inactive | update | event { entries | timeout cache no { immediate | normal | permanent } } transaction-end } | type seconds | event seconds | update seconds | inactive { active number | timeout { entries cache To configure the flow cache parameter for a Flexible NetFlow flow monitor, use the cache command in Flexible NetFlow flow monitor configuration mode. To remove a flow cache parameter for a Flexible NetFlow flow monitor, use the no form of this command. cache (Flexible NetFlow) match flow match datalink vlan match datalink mac match datalink ethertype match datalink dot1q vlan match datalink dot1q priority ipv6 flow monitor ip flow monitor",
+    "textAfterTable": "Command Default The default Flexible NetFlow flow monitor flow cache parameters are used. The following flow cache parameters for a Flexible NetFlow flow monitor are enabled: Cache type: normal Maximum number of entries in the flow monitor cache: 4096 Active flow timeout: 1800 seconds Inactive flow timeout: 15 seconds Update timeout for a permanent flow cache: 1800 seconds Command Modes Flexible NetFlow flow monitor configuration (config-flow-monitor) Command History Release Modification 12.4(9)T This command was introduced. 12.2(31)SB2 This command was integrated into Cisco IOS Release 12.2(31)SB2. 12.0(33)S",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

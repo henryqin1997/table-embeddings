@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Level",
+            "CRITICAL",
+            "ERROR",
+            "WARNING",
+            "INFO",
+            "DEBUG",
+            "NOTSET"
+        ],
+        [
+            "Numeric value",
+            "50",
+            "40",
+            "30",
+            "20",
+            "10",
+            "0"
+        ]
+    ],
+    "pageTitle": "Logging HOWTO \u2014 Python 3.3.6 documentation",
+    "title": "",
+    "url": "https://docs.python.org/3.3/howto/logging.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981921.1/warc/CC-MAIN-20150728002301-00249-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 857660535,
+    "recordOffset": 857633027,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sun, 12 Oct 2014 07:05:03 GMT",
+    "textBeforeTable": "Logging provides a set of convenience functions for simple logging usage. These are debug(), info(), warning(), error() and critical(). To determine when to use logging, see the table below, which states, for each of a set of common tasks, the best tool to use for it. When to use logging\u00b6 Logging is a means of tracking events that happen when some software runs. The software\u2019s developer adds logging calls to their code to indicate that certain events have occurred. An event is described by a descriptive message which can optionally contain variable data (i.e. data that is potentially different for each occurrence of the event). Events also have an importance which the developer ascribes to the event; the importance can also be called the level or severity. Basic Logging Tutorial\u00b6 Vinay Sajip <vinay_sajip at red-dove dot com> Author: Logging HOWTO\u00b6",
+    "textAfterTable": "Level When it\u2019s used DEBUG Detailed information, typically of interest only when diagnosing problems. INFO Confirmation that things are working as expected. WARNING An indication that something unexpected happened, or indicative of some problem in the near future (e.g. \u2018disk space low\u2019). The software is still working as expected. ERROR Due to a more serious problem, the software has not been able to perform some function. CRITICAL A serious error, indicating that the program itself may be unable to continue running. The default level is WARNING, which means that only events of this level and above will be tracked, unless the logging package is configured to do otherwise. Events that are tracked can be handled in different ways. The simplest way of handling tracked events is to print them to the console. Another common way is to write them to a disk file. A simple example\u00b6 A very simple example is: import logging logging.warning('Watch out!') # will print a message to the console logging.info('I told you so')",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

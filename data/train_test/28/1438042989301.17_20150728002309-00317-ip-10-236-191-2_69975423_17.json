@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "object_id",
+            "owner",
+            "objname",
+            "namespace",
+            "edition_name"
+        ],
+        [
+            "Description",
+            "ID number of the object to be validated See \"INVALIDATE procedure\" for information about object IDs.",
+            "Name of the user who owns the object Same as the OWNER field in ALL_OBJECTS.",
+            "Name of the object to be validated Same as the OBJECT_NAME field in ALL_OBJECTS.",
+            "Namespace of the object Same as the namespace field in obj$. Equivalent numeric values are as follows: 1 - Table or procedure 2 - Body 3 - Trigger (not applicable for TimesTen) 4 - Index 5 - Cluster 9 - Directory 10 - Queue 11 - Replication object group 12 - Replication propagator 13 - Java source (not applicable for TimesTen) 14 - Java resource (not applicable for TimesTen) 58 - Model (data mining)",
+            "Reserved for future use"
+        ]
+    ],
+    "pageTitle": "DBMS_UTILITY",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/timesten.112/e21645/d_util.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 17,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00317-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 69998487,
+    "recordOffset": 69975423,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{36435=This output shows the call stack at the point where an exception was raised. It shows the backtrace error message as the call stack unwound, starting at the unhandled exception ORA-01476 raised at SCOTT.P0 line 4, back to SCOTT.Top_Naive line 3., 32400=The call stack, up to 2000 bytes, 45933=For example, to get a hash value on a string where the hash value should be between 1000 and 3047, use 1000 as the base value and 2048 as the hash_size value. Using a power of 2 for hash_size works best., 37535=This output shows the call stack at the point where an exception was raised. It shows the backtrace error message as the call stack unwound, starting at the unhandled exception ORA-01476 raised at SCOTT.P0 line 4, back to SCOTT.Top_With_Logging line 6., 38951=The error stack, up to 2000 bytes (or a null string if no error is currently being handled)}",
+    "lastModified": "Fri, 03 Jul 2015 16:47:22 GMT",
+    "textBeforeTable": "Table 8-18 VALIDATE procedure parameters Parameters edition_name VARCHAR2 := NULL; namespace NUMBER, objname IN VARCHAR2, owner IN VARCHAR2, DBMS_UTILITY.VALIDATE( object_id IN NUMBER); DBMS_UTILITY.VALIDATE(  Syntax Validates the object described either by owner, name, and namespace or by object ID. VALIDATE procedure    A VARCHAR2 value with a comma-delimited list and the number of elements found in the table Return value  Comma-delimited list of tables list Number of tables in the PL/SQL table tablen PL/SQL table that contains list of table names tab Description Parameter Table 8-17 TABLE_TO_COMMA procedure parameters Parameters list OUT VARCHAR2); tablen OUT BINARY_INTEGER, tab IN dbms_utility.lname_array, DBMS_UTILITY.TABLE_TO_COMMA ( list OUT VARCHAR2); tablen OUT BINARY_INTEGER, tab IN dbms_utility.uncl_array, DBMS_UTILITY.TABLE_TO_COMMA (  Syntax This procedure converts a PL/SQL table of names into a comma-delimited list of names. This takes a PL/SQL table, 1..n,",
+    "textAfterTable": "Usage notes Executing VALIDATE on a subprogram also validates subprograms that it references. (See the example below.) No errors are raised if the object does not exist, is already valid, or is an object that cannot be validated. The INVALIDATE procedure invalidates a database object and optionally changes its PL/SQL compiler parameter settings. The object to be invalidated is specified by its object_id value. Examples This example starts where the INVALIDATE example in \"INVALIDATE procedure\" left off. Assume P5, Top_Naive, and Top_With_Logging are invalid, shown as follows:  Command> select * from user_objects where status='INVALID'; < P5, <NULL>, 302, <NULL>, PROCEDURE, 2009-09-18 12:53:45, 2009-09-18 12:58:22, 2009-09-18:12:58:22, INVALID, N, N, N, 1, <NULL> > < TOP_NAIVE, <NULL>, 303, <NULL>, PROCEDURE, 2009-09-18 12:53:45, 2009-09-18 12: 58:22, 2009-09-18:12:58:22, INVALID, N, N, N, 1, <NULL> > < TOP_WITH_LOGGING, <NULL>, 304, <NULL>, PROCEDURE, 2009-09-18 12:53:45, 2009-09 -18 15:19:16, 2009-09-18:15:19:16, INVALID, N, N, N, 1, <NULL> > 3 rows found. Validating Top_With_Logging, for example, also validates P5, because it calls P5 (leaving only Top_Naive invalid):  Command> begin > dbms_utility.validate(304); > end; > / PL/SQL procedure successfully completed. Command> select * from user_objects where status='INVALID'; < TOP_NAIVE, <NULL>, 303, <NULL>, PROCEDURE, 2009-09-18 12:53:45, 2009-09-21 11: 14:37, 2009-09-21:11:14:37, INVALID, N, N, N, 1, <NULL> > 1 row found.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

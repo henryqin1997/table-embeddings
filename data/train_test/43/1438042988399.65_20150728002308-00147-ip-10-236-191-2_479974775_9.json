@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Fecha",
+            "27 Nov 2000",
+            "23 Oct 2002",
+            "16 Ene 2003",
+            "27 May 2005",
+            "20 May 2009",
+            "8 Mar 2013",
+            "15 Jul 2014",
+            "16 Jul 2014"
+        ],
+        [
+            "C\ufffddigo",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "AS"
+        ],
+        [
+            "Evento",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Assignment"
+        ],
+        [
+            "Descripci\ufffdn",
+            "",
+            "Owner name: CIENA CORPORATION, MARYLAND Free format text: MERGER;ASSIGNOR:ONI SYSTEMS CORP.;REEL/FRAME:013429/0154 Effective date: 20020621",
+            "",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12",
+            "Owner name: DEUTSCHE BANK AG NEW YORK BRANCH, NEW YORK Free format text: SECURITY INTEREST;ASSIGNOR:CIENA CORPORATION;REEL/FRAME:033329/0417 Effective date: 20140715",
+            "Owner name: BANK OF AMERICA, N.A., AS ADMINISTRATIVE AGENT, NO Free format text: PATENT SECURITY AGREEMENT;ASSIGNOR:CIENA CORPORATION;REEL/FRAME:033347/0260 Effective date: 20140715"
+        ]
+    ],
+    "pageTitle": "Patente US6331906 - Method and apparatus for operation, protection and restoration of ... - Google Patentes",
+    "title": "",
+    "url": "http://www.google.es/patents/US6331906?dq=flatulence",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988399.65/warc/CC-MAIN-20150728002308-00147-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 480020611,
+    "recordOffset": 479974775,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{42594=Application Ser. No. 09/019,347, filed Feb. 5, 1998, now U.S. Pat. No. 5,986,783, of Rohit Sharma and Larry R. McAdams, entitled \u201cMETHOD AND APPARATUS FOR OPERATION, PROTECTION, AND RESTORATION OF HETEROGENEOUS OPTICAL COMMUNICATION NETWORKS.\u201d, 42243=This application is a continuation of U.S. patent aplication Ser. No. 09/020,954, filed Feb. 9, 1998, now U.S. Pat. No. 6,046,833, which claims priority from the following U.S. Applications, the disclosures of which, including all attached documents and appendices, are incorporated by reference in their entirety for all purposes:, 58983=Prior to the development of erbium-doped fiber amplifiers, it was necessary to interpose regenerators (sometimes referred to as repeaters) in order to maintain the signal. A regenerator would convert the optical signal to an electrical signal, amplify the electric signal, and then reconvert the amplified electric signal to an optical signal. The regenerator may also reshape or otherwise condition the electrical signal and resynchronize the electrical signal to a master network clock (if available) before reconverting it to an optical signal. Common wavelengths for use in fiberoptic transmission include wavelengths in the neighborhoods of 1310 nm and 1550 nm. However, the erbium amplifiers operate only in the 1550-nm range, and so as a practical matter, 1550 nm remains the wavelength of choice. In a typical multi-wavelength environment, the wavelengths are spaced by 0.8 nm (corresponding to 100 GHz at 1550 nm) or 1.6 nm, and are typically in the range of 1530-1570 nm. It is noted that a regenerator for multi-wavelength fiber would require that each wavelength be separately regenerated, thus requiring a WDM demultiplexer for sending each wavelength on the incoming fiber to a separate regenerator and a WDM multiplexer to recombine the regenerated optical signals onto the outgoing fiber., 103670=The supervisory messages are carried on a wavelength that is removed from the wavelengths of the network data messages (1530-1570 nm), and typically are at a lower bit rate (say OC-3 or 155 Mbps). Thus, while the fiber amplifiers in the network may not provide as much gain as they do for the signals in the main wavelength band, the detectors in receivers 165 do not need as much gain for the signals at the lower bit rate. Candidate wavelengths include 1310 nm, 1480 nm, 1510 nm, and 1625 nm, with 1510 nm being presently preferred., 42857=Application Ser. No. 60/038,149, filed Feb. 10, 1997, of Rohit Sharma and Larry R. McAdams, entitled \u201cMETHOD AND APPARATUS FOR SIMULTANEOUS OPERATION OF SINGLE AND MULTIPLE WAVELENGTH LIGHTWAVE COMMUNICATION NETWORKS.\u201d}",
+    "textBeforeTable": "Citas de patentes Therefore, the above description should not be taken as limiting the scope of the invention as defined by the claims. While the above is a complete description of specific embodiments of the invention, various modifications, alternative constructions, and equivalents may be used. For example, FIG. 13 shows the OSN and its control electronics as being responsible for implementing the supervisory channel by generating and monitoring messages from adjacent nodes. It is possible, however, to have the terminal equipment implement the supervisory channel for controlling the OSN. Since WDM terminal systems monitor the signals on a link, a WDM-terminal controlled version of the OSN can also be implemented. Such an OSN would be completely controlled by the WDM terminals, which would determine the need for span switching or ring switching through the use of the WDM supervisory channel and other monitoring features. The physical configuration of the OSN would be similar to the particular implementation described above. The WDM terminal control system (Element Manager) would be required to send the required control signals (to set the OSN in one of the valid states for restoration). Such a configuration would have lower loss (since WDM couplers for the supervisory channel would not be required) and lower complexity since less processor capability would be required. In conclusion it can be seen that the present invention provides powerful and elegant techniques for providing enhanced restoration in optical fiber networks.",
+    "textAfterTable": "4 Hamel, A. et al., \"WDM technique and MS protection in a standard ring: the \"coloured section' ring,\" Broadband Superhighway, 1996, pp. 255-260. 5 Hamel, A. et al., \"WDM technique and MS protection in a standard ring: the \u2018coloured section\u2019 ring,\" Broadband Superhighway, 1996, pp. 255-260. 6 Hasegawa, Satoshi et al., \"Control Algorithms of SONET Integrated Self-Healing Networks,\" IEEE Journal on Selected Areas in Communications, vol. 12, No. 1, Jan. 1994, pp. 110-118. 7 Iannone, Eugenio et al., \"Optical Path Technologies: A Comparison AMong Different Cross-Connect Architectures,\" IEEE Journal of Lightwave Technology, vol. 14, No. 10, Oct. 1996, pp. 2184-2196. 8 Sato, Ken-ichi et al., \"Network Performance and Integrity Enhancement with Optical Path Layer Technologies,\" IEEE Journal on Selected Areas in Communications, vol. 12, No. 1, Jan. 1994, pp. 159-170. 9 Shiragaki, Tatsuya et al., \"Optical Digital Cross-Connect System Using Photonic Switch Matrices and Optical Amplifiers,\" IEEE Journal of Lightwave Technology, vol. 12, No. 8, Aug. 1994, pp. 1490-1496. 10 Slevinsky, J.B. et al., \"An Algorithm for Survivable Network Design Employing Multiple Self-healing Rings,\" IEEE Communications Society REPRINT, 1993, pp. 1568-1573.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

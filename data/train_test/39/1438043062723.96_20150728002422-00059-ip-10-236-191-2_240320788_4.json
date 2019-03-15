@@ -1,0 +1,93 @@
+{
+    "relation": [
+        [
+            "Select Type",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE"
+        ],
+        [
+            "Table",
+            "post",
+            "user",
+            "user_profile",
+            "user_privacy",
+            "session_activity"
+        ],
+        [
+            "Type",
+            "range",
+            "eq_ref",
+            "eq_ref",
+            "eq_ref",
+            "ref"
+        ],
+        [
+            "Possible Keys",
+            "thread_id_post_date,thread_id_position",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY"
+        ],
+        [
+            "Key",
+            "thread_id_position",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY"
+        ],
+        [
+            "Key Len",
+            "8",
+            "4",
+            "4",
+            "4",
+            "4"
+        ],
+        [
+            "Ref",
+            "",
+            "terrylove_xenforo.post.user_id",
+            "terrylove_xenforo.post.user_id",
+            "terrylove_xenforo.post.user_id",
+            "terrylove_xenforo.post.user_id"
+        ],
+        [
+            "Rows",
+            "8",
+            "1",
+            "1",
+            "1",
+            "11"
+        ],
+        [
+            "Extra",
+            "Using where; Using filesort",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "XenForo Debug Output",
+    "title": "",
+    "url": "http://terrylove.com/forums/index.php?threads/help-i-need-a-deep-large-single-basin-sink.10449/&_debug=1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062723.96/warc/CC-MAIN-20150728002422-00059-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 240328990,
+    "recordOffset": 240320788,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 05 Aug 2015 08:19:42 GMT",
+    "textBeforeTable": "Run Time: 0.000224 WHERE data_key IN ('options', 'languages', 'contentTypes', 'codeEventListeners', 'deferredRun', 'simpleCache', 'addOns', 'defaultStyleProperties', 'routeFiltersIn', 'routeFiltersOut', 'routesPublic', 'nodeTypes', 'bannedIps', 'discouragedIps', 'styles', 'displayStyles', 'userBanners', 'smilies', 'bbCode', 'threadPrefixes', 'userTitleLadder', 'reportCounts', 'moderationCounts', 'userModerationCounts', 'notices', 'userFieldsInfo') FROM xf_data_registry SELECT data_key, data_value   Queries (17, time: 0.0084s, 4.7%) Memory: 12.9481 MB (Peak: 14.8666 MB) Page Time: 0.1782s",
+    "textAfterTable": "'' AS draft_message, NULL AS draft_extra FROM xf_thread AS thread LEFT JOIN xf_user AS user ON (user.user_id = thread.user_id) WHERE thread.thread_id = ? Params: 10449 Run Time: 0.000628 Select Type Table Type Possible Keys Key Key Len Ref Rows Extra SIMPLE thread const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE user const PRIMARY PRIMARY 4 const 1 \u00a0  SELECT node.*, forum.* , permission.cache_value AS node_permission_cache, NULL AS forum_read_date FROM xf_forum AS forum INNER JOIN xf_node AS node ON (node.node_id = forum.node_id) LEFT JOIN xf_permission_cache_content AS permission ON (permission.permission_combination_id = 1 AND permission.content_type = 'node' AND permission.content_id = forum.node_id) WHERE node.node_id = ? Params: 6 Run Time: 0.000457 Select Type Table Type Possible Keys Key Key Len Ref Rows Extra SIMPLE forum const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE node const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE permission const PRIMARY PRIMARY 35 const,const,const 1 \u00a0  SELECT post.* , user.*, IF(user.username IS NULL, post.username, user.username) AS username, user_profile.*, user_privacy.*, session_activity.view_date AS last_view_date, 0 AS like_date FROM xf_post AS post LEFT JOIN xf_user AS user ON (user.user_id = post.user_id) LEFT JOIN xf_user_profile AS user_profile ON (user_profile.user_id = post.user_id) LEFT JOIN xf_user_privacy AS user_privacy ON (user_privacy.user_id = post.user_id) LEFT JOIN xf_session_activity AS session_activity ON (post.user_id > 0 AND session_activity.user_id = post.user_id) WHERE post.thread_id = ? AND (post.position >=",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Category identifiers",
+            "AVAudioSessionCategoryAmbient",
+            "AVAudioSessionCategoryAudioProcessing",
+            "AVAudioSessionCategoryMultiRoute",
+            "AVAudioSessionCategoryPlayAndRecord",
+            "AVAudioSessionCategoryPlayback",
+            "AVAudioSessionCategoryRecord",
+            "AVAudioSessionCategorySoloAmbient"
+        ],
+        [
+            "Silenced by the Ring/Silent switch and by screen locking see note",
+            "Yes",
+            "\u2013",
+            "No",
+            "No",
+            "No",
+            "No (recording continues with the screen locked)",
+            "Yes"
+        ],
+        [
+            "Interrupts non-mixable apps audio",
+            "No",
+            "Yes",
+            "Yes",
+            "Yes by default; no by using override switch",
+            "Yes by default; no by using override switch",
+            "Yes",
+            "Yes"
+        ],
+        [
+            "Allows audio input (recording) and output (playback)",
+            "Output only",
+            "No input and no output",
+            "Input and output",
+            "Input and output",
+            "Output only",
+            "Input only",
+            "Output only"
+        ]
+    ],
+    "pageTitle": "Audio Session Categories and Modes",
+    "title": "Table B-1 Audio session category behavior",
+    "url": "https://developer.apple.com/library/prerelease/ios/documentation/Audio/Conceptual/AudioSessionProgrammingGuide/AudioSessionCategoriesandModes/AudioSessionCategoriesandModes.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.88/warc/CC-MAIN-20150728002308-00305-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 877407888,
+    "recordOffset": 877399686,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{5420=Copyright \u00a9 2014 Apple Inc. All Rights Reserved. Terms of Use | Privacy Policy | Updated: 2014-09-17}",
+    "textBeforeTable": "You tell iOS your app\u2019s audio intentions by designating a category for your audio session. Table B-1 provides details on each of the categories. The default category, AVAudioSessionCategorySoloAmbient, is shaded. For an explanation of how categories work, see Working with Categories. For an explanation of the mixing override switch, see Choosing the Best Category. Audio Session Categories and Modes Previous Next Download Sample Code Jump To\u0085 Table of Contents PDF Companion File Audio Session Programming Guide Search iOS Developer Library \u2014 Prerelease Search Developer iOS Developer Library \u2014 Prerelease",
+    "textAfterTable": "Note:\u00a0For your app to continue playing audio when the Ring/Silent switch is set to silent and the screen is locked, make sure the UIBackgroundModes audio key has been added to your app\u2019s Info.plist file. This requirement is in addition to your using the correct category. Table B-2 provides a list of modes and what categories each mode can be used with. Table B-2\u00a0\u00a0Modes and associated categories Mode identifiers Compatible categories AVAudioSessionModeDefault All AVAudioSessionModeVoiceChat AVAudioSessionCategoryPlayAndRecord AVAudioSessionModeGameChat AVAudioSessionCategoryPlayAndRecord AVAudioSessionModeVideoRecording AVAudioSessionCategoryPlayAndRecord AVAudioSessionCategoryRecord AVAudioSessionModeMoviePlayback AVAudioSessionCategoryPlayback AVAudioSessionModeMeasurement AVAudioSessionCategoryPlayAndRecord AVAudioSessionCategoryRecord AVAudioSessionCategoryPlayback AVAudioSessionModeVideoChat AVAudioSessionCategoryPlayAndRecord Next Previous Copyright \u00a9 2014 Apple Inc. All Rights Reserved. Terms of Use | Privacy Policy | Updated: 2014-09-17 Feedback Sending feedback\u2026 We\u2019re sorry, an error has occurred. Please try submitting",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

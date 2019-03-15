@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "p_idx",
+            "p_value",
+            "p_list_values",
+            "p_attributes",
+            "p_show_null",
+            "p_null_value",
+            "p_null_text",
+            "p_item_id",
+            "p_item_label",
+            "p_show_extra"
+        ],
+        [
+            "Description",
+            "Form element name. For example, 1 equals F01 and 2 equals F02. Typically the P_IDX parameter is constant for a given column.",
+            "Current value. This value should be a value in the P_LIST_VALUES parameter.",
+            "List of static values separated by commas. Displays values and returns values that are separated by semicolons. Note that this is only available in the SELECT_LIST function.",
+            "Extra HTML parameters you want to add.",
+            "Extra select option to enable the NULL selection. Range of values is YES and NO.",
+            "Value to be returned when a user selects the NULL option. Only relevant when p_show_null equals YES.",
+            "Value to be displayed when a user selects the NULL option. Only relevant when p_show_null equals YES.",
+            "HTML attribute ID for the tag.",
+            "Invisible lable created for the item.",
+            "Shows the current value even if the value of p_value is not located in the select list."
+        ]
+    ],
+    "pageTitle": "APEX_ITEM",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/appdev.112/e12510/apex_item.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 15,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00211-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71432575,
+    "recordOffset": 71413138,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{26484=p_col_sep}",
+    "lastModified": "Sat, 14 Aug 2010 15:00:16 GMT",
+    "textBeforeTable": "Table 3-12 SELECT_LIST Parameters Table 3-12 describes the parameters available in the SELECT_LIST function. Parameters RETURN VARCHAR2; p_show_extra IN VARCHAR2 DEFAULT 'YES') p_item_label IN VARCHAR2 DEFAULT NULL, p_item_id IN VARCHAR2 DEFAULT NULL, p_null_text IN VARCHAR2 DEFAULT '%', p_null_value IN VARCHAR2 DEFAULT '%NULL%', p_show_null IN VARCHAR2 DEFAULT 'NO', p_attributes IN VARCHAR2 DEFAULT NULL, p_list_values IN VARCHAR2 DEFAULT NULL, p_value IN VARCHAR2 DEFAULT NULL, p_idx IN NUMBER, APEX_ITEM.SELECT_LIST( Syntax  This function dynamically generates a static select list. Similar to other functions available in the APEX_ITEM package, these select list functions are designed to generate forms with F01 to F50 form array elements. SELECT_LIST Function      ORDER BY 1 FROM dept SELECT APEX_ITEM.RADIOGROUP (1,deptno,'20',dname) dt The following example demonstrates how to select department 20 from the emp table as a default in a radio group. Example   Invisible label created for the item p_item_label HTML attribute ID for the <input> tag p_item_id JavaScript to execute in the onFocus event. p_onfocus",
+    "textAfterTable": "Example The following example demonstrates a static select list that displays Yes, returns Y, defaults to Y, and generates a F01 form item. SELECT APEX_ITEM.SELECT_LIST(1,'Y','Yes;Y,No;N')yn FROM emp The following example demonstrates the use of APEX_ITEM.SELECT_LIST to generate a static select list where: A form array element F03 will be generated (p_idx parameter). The initial value for each element will be equal to the value for deptno for the row from emp (p_value parameter). The select list will contain 4 options (p_list_values parameter). The text within the select list will display in red (p_attributes parameter). A null option will be displayed (p_show_null) and this option will display -Select- as the text (p_null_text parameter). An HTML ID attribute will be generated for each row, where #ROWNUM# will be substituted for the current row rownum (p_item_id parameter). (So an ID of 'f03_4' will be generated for row 4.) A HTML label element will be generated for each row (p_item_label parameter). The current value for deptno will be displayed, even if it is not contained with the list of values passed in the p_list_values parameter (p_show_extra parameter). SELECT empno \"Employee #\", ename \"Name\", APEX_ITEM.SELECT_LIST( p_idx => 3, p_value => deptno, p_list_values => 'ACCOUNTING;10,RESEARCH;20,SALES;30,OPERATIONS;40', p_attributes => 'style=\"color:red;\"', p_show_null => 'YES', p_null_value => NULL, p_null_text => '-Select-', p_item_id => 'f03_#ROWNUM#', p_item_label =>",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

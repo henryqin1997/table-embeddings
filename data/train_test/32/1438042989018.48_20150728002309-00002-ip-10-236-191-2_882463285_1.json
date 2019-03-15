@@ -1,0 +1,68 @@
+{
+    "relation": [
+        [
+            "date",
+            "2/20/2014",
+            "3/14/2014",
+            "5/3/2014",
+            "5/8/2014",
+            "6/12/2014",
+            "6/19/2014",
+            "7/16/2014",
+            "9/11/2014",
+            "9/23/2014"
+        ],
+        [
+            "city",
+            "St. Petersburg",
+            "St. Petersburg",
+            "St. Petersburg",
+            "Orlando",
+            "St Louis",
+            "Denver",
+            "Seattle",
+            "Philadelphia",
+            "Louisville"
+        ],
+        [
+            "state",
+            "FL",
+            "FL",
+            "FL",
+            "FL",
+            "MO",
+            "CO",
+            "WA",
+            "PA",
+            "KY"
+        ],
+        [
+            "venue",
+            "The Ale And The Witch",
+            "The Ale And The Witch",
+            "The Ale And The Witch",
+            "Will's Pub",
+            "The Gramophone",
+            "Cervantes' Other Side",
+            "Sunset Tavern",
+            "World Cafe Live",
+            "The New Vintage"
+        ]
+    ],
+    "pageTitle": "Hymn For Her Concert Tickets | SeatGeek",
+    "title": "",
+    "url": "https://seatgeek.com/hymn-for-her-tickets",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989018.48/warc/CC-MAIN-20150728002309-00002-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 882491759,
+    "recordOffset": 882463285,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "2015 Tour Dates } ); document.getElementById('location-autocomplete') }), } } window.location.href = window.location.pathname + '?lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id } else { window.location.href = window.location.href + '&lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id; if(window.location.href.match('/search')) { SG.GA.sendEvent('team-show-page', 'location-input', { label: selection.term }); onSelect: function(selection) { }, return (data.results && data.results.location) ? data.results.location : [] dataExtractionFunction: function(data) { placeholder: 'Search by City...', postSelectLoad: true, limit: 3, contentKey: 'term', idKey: 'id', queryString: \"types[]=location\", source: \"/autocomplete\", React.createFactory(Autocomplete)({ React.render( if (document.getElementById('location-autocomplete')) {",
+    "textAfterTable": "6/12/2014 St Louis MO The Gramophone 6/19/2014 Denver CO Cervantes' Other Side 7/16/2014 Seattle WA Sunset Tavern 9/11/2014 Philadelphia PA World Cafe Live 9/23/2014 Louisville KY The New Vintage 2013 date city state venue 1/5/2013 Sarasota FL The Ice House 1/13/2013 Tampa FL Ella's Americana Folk Art Cafe 1/14/2013 Orlando FL Stardust Video and Coffee 1/27/2013 Punta Gorda FL Tilly's Tap 2/2/2013 Sarasota FL The Ice House 2/10/2013 Tampa FL Ella's Americana Folk Art Cafe 2/11/2013 Orlando FL Stardust Video and Coffee 2/21/2013 Tampa FL Grand Central at Kennedy 3/2/2013 Sarasota FL The Ice House 3/10/2013 Tampa FL Ella's Americana Folk Art Cafe 3/11/2013 Orlando FL Stardust Video and Coffee 3/15/2013 St. Petersburg FL The Ale And The Witch 3/23/2013 Tampa FL New World Brewery 4/5/2013",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

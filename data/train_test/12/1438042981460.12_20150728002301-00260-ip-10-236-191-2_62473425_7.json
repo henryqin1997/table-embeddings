@@ -1,0 +1,63 @@
+{
+    "relation": [
+        [
+            "Field",
+            "type",
+            "start_time",
+            "utc_offset",
+            "total_distance",
+            "duration",
+            "total_calories",
+            "source",
+            "entry_mode",
+            "tracking_mode",
+            "has_path",
+            "uri"
+        ],
+        [
+            "Type",
+            "String",
+            "String",
+            "Integer",
+            "Double",
+            "Double",
+            "Double",
+            "String",
+            "String",
+            "String",
+            "Boolean",
+            "String"
+        ],
+        [
+            "Description",
+            "The type of activity, as one of the following values: Running, Cycling, Mountain Biking, Walking, Hiking, Downhill Skiing, Cross-Country Skiing, Snowboarding, Skating, Swimming, Wheelchair, Rowing, Elliptical, Other",
+            "The starting time for the activity (e.g., Sat, 1 Jan 2011 00:00:00)",
+            "The UTC offset of the timezone for the activity (if available)",
+            "The total distance for the activity, in meters",
+            "The duration of the activity, in seconds",
+            "The total calories burned (omitted if not available)",
+            "The name of the application that last modified this activity",
+            "The mode by which this activity was originally entered, as one of the following values: API, Web",
+            "The mode by which this activity was originally tracked, as one of the following values: indoor, outdoor",
+            "Whether a path exists for this activity",
+            "The URI of the detailed information for the past activity"
+        ]
+    ],
+    "pageTitle": "HealthGraph",
+    "title": "",
+    "url": "http://developer.runkeeper.com/healthgraph/fitness-activities",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00260-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 62493983,
+    "recordOffset": 62473425,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{45596=\u00a9 2014 FitnessKeeper, Inc.}",
+    "textBeforeTable": "Because a user\u2019s activity feed can grow very large, feeds are divided into pages. Each page contains links to the previous and next pages as well as the total number of activities across all pages. Each page of a user\u2019s activity feed has the following structure: Feed Note: The term \u201cfitness activity\u201d is historical. With the addition of strength training activities, fitness activities will likely be renamed \u201ccardio activities.\u201d Any such change will retain backwards compatibility with existing applications. Fitness activities appear in a user\u2019s fitness feed on the Runkeeper website. Fitness activities take one of several forms, depending upon whether they reflect past events, newly-completed events, or in-progress events (\u201clive activities\u201d). Fitness activities are grouped in reverse chronological order in a fitness activity feed. Introduction Fitness Activities Runkeeper Terms of Service Health Graph API Policies Official Business Developer Blog Developer Console Third-Party Libraries Developer Forum Developer Tools Runkeeper Connect Plugins",
+    "textAfterTable": "Editable uri String The URI for this activity N userID Integer The unique ID of the user for the activity N type String The type of activity, as one of the following values: Running , Cycling , Mountain Biking , Walking , Hiking , Downhill Skiing , Cross-Country Skiing , Snowboarding , Skating , Swimming , Wheelchair , Rowing , Elliptical , Other , Yoga , Pilates , CrossFit , Spinning , Zumba , Barre , Group Workout , Dance , Bootcamp , Boxing / MMA , Meditation , Strength Training , Circuit Training , Core Strengthening , Arc Trainer , Stairmaster / Stepwell , Sports , Nordic Walking Y secondary_type String The secondary type of the activity, as a free-form string (max. 64 characters). This field is used only if the type field is Other.\" Y equipment String The equipment used to complete this activity, as one of the following values: None, Treadmill, Stationary Bike, Elliptical, Row Machine. (Optional; if not specified, None is assumed.) Y start_time String The starting time for the activity (e.g., Sat, 1 Jan 2011 00:00:00) Y utc_offset Integer The UTC offset of the timezone for the activity N total_distance Double The total distance traveled, in meters Y distance Distance[] The sequence of time-stamped distance measurements (empty if not",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

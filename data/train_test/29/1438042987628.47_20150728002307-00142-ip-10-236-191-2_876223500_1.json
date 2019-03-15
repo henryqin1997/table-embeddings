@@ -1,0 +1,72 @@
+{
+    "relation": [
+        [
+            "date",
+            "4/30/2014",
+            "5/3/2014",
+            "5/17/2014",
+            "5/21/2014",
+            "5/22/2014",
+            "5/28/2014",
+            "5/30/2014",
+            "5/31/2014",
+            "6/1/2014",
+            "6/5/2014"
+        ],
+        [
+            "city",
+            "Hamburg",
+            "Berlin",
+            "Oostende",
+            "Leeds",
+            "Glasgow",
+            "London",
+            "Bristol",
+            "Cambridge",
+            "Southampton",
+            "Groningen"
+        ],
+        [
+            "state",
+            "HH",
+            "BE",
+            "Vwv",
+            "Yorkshire",
+            "Glg",
+            "London",
+            "Bst",
+            "Cam",
+            "Southampton",
+            "GR"
+        ],
+        [
+            "venue",
+            "Molotow",
+            "Bi Nuu",
+            "4AD",
+            "Brudenell Social Club",
+            "Mono",
+            "Heaven",
+            "Fleece",
+            "Portland Arms",
+            "Joiners",
+            "Vera"
+        ]
+    ],
+    "pageTitle": "Melt Banana Concert Tickets | SeatGeek",
+    "title": "",
+    "url": "https://seatgeek.com/melt-banana-tickets",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987628.47/warc/CC-MAIN-20150728002307-00142-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 876256891,
+    "recordOffset": 876223500,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "2015 Tour Dates Low price $16 High price $51 Average Price $31 Past 12 Months Find Tickets Melt Banana Ticket Prices } ); document.getElementById('location-autocomplete') }), } } window.location.href = window.location.pathname + '?lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id } else { window.location.href = window.location.href + '&lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id; if(window.location.href.match('/search')) { SG.GA.sendEvent('team-show-page', 'location-input', { label: selection.term }); onSelect: function(selection) { }, return (data.results && data.results.location) ? data.results.location : [] dataExtractionFunction: function(data) { placeholder: 'Search by City...', postSelectLoad: true, limit: 3, contentKey: 'term', idKey: 'id', queryString: \"types[]=location\", source: \"/autocomplete\", React.createFactory(Autocomplete)({ React.render( if (document.getElementById('location-autocomplete')) {",
+    "textAfterTable": "5/25/2015 Carrboro NC Cat's Cradle Back Room 5/28/2015 Orlando FL Backbooth 5/30/2015 Tampa FL The Orpheum 6/1/2015 Atlanta GA The Earl 6/4/2015 Baton Rouge LA Spanish Moon 6/6/2015 Dallas TX Three Links 6/10/2015 Tucson AZ Club Congress 6/12/2015 Santa Cruz CA The Catalyst 6/13/2015 Sacramento CA Harlows Night Club 7/2/2015 Portland OR Dante's 7/3/2015 Seattle WA Chop Suey 7/4/2015 Vancouver BC Venue 7/7/2015 Calgary AB The Gateway 7/10/2015 Winnipeg MB Pyramid Cabaret 7/11/2015 Fargo ND The Aquarium 7/13/2015 Indianapolis IN The Hi Fi 7/14/2015 Chicago IL Empty Bottle 7/15/2015 Madison WI High Noon Saloon 7/16/2015 Des Moines IA Wooly's 7/20/2015 Nashville TN Exit In 7/22/2015 Kansas City MO The Record Bar 7/24/2015 Denver CO Larimer Lounge 7/25/2015",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

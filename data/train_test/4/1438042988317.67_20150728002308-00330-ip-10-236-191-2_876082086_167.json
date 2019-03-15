@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "appName",
+            "connectionName",
+            "dataGroup",
+            "topNRows",
+            "server",
+            "applicationVersion"
+        ],
+        [
+            "Definition",
+            "Name of the WebCenter application in which to perform this operation.",
+            "Optional. Names the search connection that the Search service must use.",
+            "Optional. Names the Secure Enterprise Search data group in which to search. If a value is not provided, everything in the Oracle Secure Enterprise Search instance will be searched.",
+            "Optional. Number of top N rows of search results for gathering refinement data.",
+            "Optional. Name of the managed server where the WebCenter application is deployed. For example, WC_Spaces. Required when applications with the same name are deployed to different servers and also when you have a cluster.",
+            "Optional. Version number of the deployed application. Required if more than one version of the WebCenter application is deployed."
+        ]
+    ],
+    "pageTitle": "Oracle WebCenter Custom WLST Commands",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E21764_01/web.1111/e13813/custom_webcenter_admin.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 167,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988317.67/warc/CC-MAIN-20150728002308-00330-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 876184759,
+    "recordOffset": 876082086,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{268718=Edits an existing Microsoft SharePoint 2007 repository connection. This command requires that you specify values for appName and name, plus at least one additional argument., 162353=The following example archives activity stream data that is older than October 1, 2009:, 463069=Choose OCS for Microsoft Office Communications Server 2007., 187205=Create a Microsoft SharePoint 2007 repository connection., 627383=The following example creates a connection named MyPEConnection for a WebCenter Spaces. The connection points to a Microsoft Exchange Server 2003., 460508=Use the listIMPAdapters command to find out which types of instant messaging and presence servers are supported. Out-of-the-box, WebCenter applications support Oracle WebLogic Communications Server (OWLCS), Microsoft Live Communications Server (LCS), and Microsoft Communications Server 2007 (OCS)., 587711=The frequency, in seconds, that Space distribution lists are checked for new incoming emails. The default is 1800 seconds (30 minutes)., 626838=The following example creates a connection named MyPEConnection for WebCenter Spaces (appName='webcenter'). The connection points to a Microsoft Exchange Server 2007 and is designated as the default connection for the Personal Events service., 187625=Edit a Microsoft SharePoint 2007 repository connection., 173817=The following example archives activity stream data associated with Spaces that have been inactive (no activities have occurred, regardless of open or closed status) since October 1, 2009:, 621416=The Personal Events service supports connections to Microsoft Exchange Server 2003 and Microsoft Exchange Server 2007.While you can register multiple personal events connections for a WebCenter application, only one connection is used for personal events services - the default (or active) connection., 188045=List all Microsoft SharePoint 2007 connections that are configured for a WebCenter application., 261480=Creates a connection to a Microsoft SharePoint 2007 repository., 178409=The following example restores activity stream data archived since October 1, 2009:}",
+    "lastModified": "Wed, 13 May 2015 05:19:31 GMT",
+    "textBeforeTable": "[applicationVersion]) setSearchSESConfig(appName,[connectionName],[dataGroup],[topNRows], [server],  Syntax       Configures search settings for an existing Oracle Secure Enterprise Search (SES) search connection. If a parameter is not specified it is not modified. Description     Use with WLST: Online Module: Oracle WebCenter setSearchSESConfig     verbose=1, name='SESConn1') wls:/weblogic/serverConfig> listSESConnections(appName='WebCenterApp',  The following example displays connection details for an SES search connection named SESConn1. wls:/weblogic/serverConfig> listSESConnections(appName='WebCenterApp', verbose=1)  The following example displays connection details for all SES search connections configured for a WebCenter application named WebCenterApp. Examples       Optional. Version number of the deployed application. Required if more than one version of the WebCenter application is deployed. applicationVersion    Optional. Name of the managed server where the WebCenter application is deployed. For example, WC_Spaces. Required when applications with the same name are deployed to different servers and also when you have a cluster.  server    Optional. Name of an existing search connection. You can use this argument to",
+    "textAfterTable": "Example The following example specifies that the Search service must use the SES search connection named SESConn1, and to search the data group named group2.  wls:/weblogic/serverConfig> setSearchSESConfig  (appName='webcenter',connectionName='SESConn1', dataGroup='group2', topNRows=200); The following example changes the maximum number of search results that the Search service returns. No connection name is specified, in this example, so this configuration change is applied to the current default (or active) search connection.  wls:/weblogic/serverConfig> setSearchSESConfig(appName='webcenter', topNRows=500); Already in Domain Runtime Tree Restart is needed for the service connection changes to take effect. listSearchSESConfig Module: Oracle WebCenter Use with WLST: Online Description Lists SES search settings for a WebCenter application. Syntax  listSearchSESConfig(appName, [server, applicationVersion]) Argument Definition  appName Name of the WebCenter application for which to perform this operation.  server",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

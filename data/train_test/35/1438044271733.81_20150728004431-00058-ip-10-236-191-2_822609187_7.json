@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust",
+            "Precipitation"
+        ],
+        [
+            "Avg",
+            "80.3 \u00b0F",
+            "75.6 \u00b0F",
+            "86.1 %",
+            "29.79 in",
+            "10 mph",
+            "",
+            "0.32 in"
+        ],
+        [
+            "Avg High",
+            "85.1 \u00b0F",
+            "77.7 \u00b0F",
+            "94.9 %",
+            "29.85 in",
+            "16.6 mph",
+            "27.8 mph",
+            ""
+        ],
+        [
+            "Avg Low",
+            "76.2 \u00b0F",
+            "72.7 \u00b0F",
+            "72.6 %",
+            "29.73 in",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Record High",
+            "86 \u00b0F (2010)",
+            "83.7 \u00b0F (2011)",
+            "",
+            "29.96 in (1997)",
+            "25.3 mph (2012)",
+            "38 mph (2012)",
+            "0.75 in (2009)"
+        ],
+        [
+            "Record Low",
+            "73 \u00b0F (2013)",
+            "66.2 \u00b0F (2011)",
+            "65 % (2011)",
+            "29.60 in (2004)",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Umatac, Guam - October 20th - Daily Weather Averages (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherdaily.php3?s=588419&month=10&theday=20&cityname=Umatac%2C+Guam%2C+United+States+of+America&units=",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044271733.81/warc/CC-MAIN-20150728004431-00058-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 822621031,
+    "recordOffset": 822609187,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] DAILY WEATHER AVERAGE - OCTOBER 20 [ \u2190 Previous Day ] } window.print(); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); return $(this).text().replace(\"2015\", \"\"); $('.datepicker-switch').text(function () { }); window.location = url; var url = \"/weather/weatherdaily.php3?s=588419&\" + pieces + \"&citynameUmatac%2C+Guam%2C+United+States+of+America&set=\"; var pieces = tosplit.replace(/(.*?)-(.*?)-(.*?)/,\"month=$2&theday=$3\"); var tosplit = event.format(); $('#datepicker').datepicker().on('changeDate', function (event) { }); endDate: \"2015-12-31\", startDate: \"2015-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 7.4 mi Wind Direction SE (134.5 \u00b0) Weather Element Total Cooling Degree Days 15.7 (Base 18.3) Growing Degree Days 30.7 (Base 10) Total Years on Record: 19",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

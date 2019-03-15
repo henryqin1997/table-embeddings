@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Date",
+            "5 Sep 2000",
+            "4 Dec 2001",
+            "25 Feb 2003",
+            "11 May 2004",
+            "13 Dec 2006",
+            "27 Feb 2007",
+            "13 May 2008",
+            "9 May 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "CC",
+            "AS",
+            "FPAY",
+            "AS",
+            "CC",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Certificate of correction",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Certificate of correction",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "",
+            "",
+            "",
+            "Year of fee payment: 4",
+            "Owner name: U.S. DEPARTMENT OF ENERGY, DISTRICT OF COLUMBIA Free format text: CONFIRMATORY LICENSE;ASSIGNOR:INLIGHT SOLUTIONS, INC.;REEL/FRAME:018627/0267 Effective date: 20061016 Owner name: ENERGY, U.S. DEPARTMENT OF, DISTRICT OF COLUMBIA Free format text: CONFIRMATORY LICENSE;ASSIGNOR:INLIGHT SOLUTIONS, INC.;REEL/FRAME:018627/0321 Effective date: 20061016",
+            "",
+            "Year of fee payment: 8",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6157041 - Methods and apparatus for tailoring spectroscopic calibration models - Google Patents",
+    "title": "",
+    "url": "http://www.google.ca/patents/US6157041",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986357.49/warc/CC-MAIN-20150728002306-00294-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 472660823,
+    "recordOffset": 472610181,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{98894=A second means for transmitting infrared energy is operatively connected to the output element. The light transmitted through the second means far transmitting infrared energy is transmitted to the spectrum analyzer. In a preferred embodiment, the operative connection to the output element includes transmission of the reflected or transmitted light energy exiting the output element through a fiber optic or air to the spectrum analyzer. A mirror or series of mirrors may be utilized to direct this light energy to the spectrum analyzer. In a preferred embodiment, a specular control device is incorporated to separate the specular reflected light from diffusely reflected light. This device is disclosed in co-pending and commonly assigned application Ser. No. 08/513,094, filed Aug. 9, 1995, and entitled \"Improved Diffuse Reflectance Monitoring Apparatus,\" now U.S. Pat. no. 5,636, 633, issued Jun. 10, 1997, the disclosure of which is incorporated herein by reference., 131336=Additional tests have also been performed that enabled the subject tailored prediction methods to be tested. The test data used spectral measurements obtained from 20 subjects over a total span of 16 weeks. The protocol for the study required that each subject have spectral measurements taken on 2 or 3 separate days per week for 8 weeks, spanning the 16-week study duration. Each time a subject came in for a study \"sitting,\" 4 separate spectral measurements at different spatial positions on the underside of the forearm were acquired over a 15-minute period, as well as two capillary glucose reference measurements, which bounded the spectral collection. A total of 1248 spectra (reflectance sampling from 4200-7200 wavenumbers [390 discrete wavelengths]) and associated reference glucose values were used to develop the calibration data. The resulting data set was processed through the mean centering method and generic calibration data were obtained. To adequately test the true prediction capabilities of the methods, the subject to be evaluated was excluded from the data used to develop the generic calibration data. The exclusion of one patient from the calibration data with subsequent evaluation of their performance is commonly referred to as patient-out cross-validation. The cross-validated generic calibration data was adapted for each of the 16 diabetic subjects (4 subjects were not present for the entire study) and resulted in predictions the final two days of that subject's data. Adaptation to each subject was performed using data from 5 separate sittings of the subject, 4 sittings were from the first two weeks of data collection and the fifth sitting was from a day that was two days prior to the first validation day. The second validation day occurred two days after the first. FIGS. 13 and 14 provide the prospective (in time) prediction results associated with the subjects. The figures show the predicted glucose values for the two validation days relative to the corresponding glucose reference values obtained by capillary draw for all 16 subjects measured. FIG. 13 shows the results using the direct-tailored method discussed in the body of this disclosure. FIG. 14 shows the results using the composite-tailored method, also discussed earlier in this disclosure. From these figures it is clear than clinically useful predictions of blood-glucose can be made using the proposed method., 66351=In order to avoid the issue of variability across subjects, one approach involves building a completely new model for each subject. Such a method involves a substantial period of observation for each subject, as taught by R. Marbach et al.,\"Noninvasive Blood Glucose Assay by Near-Infrared Diffuse Reflectance Spectroscopy of the Human Inner Lip,\" Applied Spectroscopy, 1993, 47, 875-881. This method would be inefficient and impractical for commercial glucose applications due to the intensive optical sampling that would be needed for each subject., 54012=The present application is a continuation-in-part of U.S. patent application Ser. No. 09/170,022, filed Oct. 13, 1998, now abandoned., 68431=In an article by Lorber et al., \"Local Centering in Multivariate Calibration,\" Journal of Chemometrics, 1996, 10, 215-220, a method of local centering the calibration data by using a single spectrum is described. For each unknown sample, the spectrum used for centering the calibration data set is selected to be that spectrum that is the closest match (with respect to Mahalanobis distance) to the spectrum. of the unknown. A separate partial least-squares model is then constructed for each unknown. The method does not reduce the overall spectroscopic variation in the calibration data set., 56265=The various proposed non-invasive methods for determining blood glucose level generally utilize quantitative infrared spectroscopy as a theoretical basis for analysis. In general, these methods involve probing glucose containing tissue using infrared radiation in absorption or attenuated total reflectance mode. Infrared spectroscopy measures the electromagnetic radiation (0.7-25 \u03bcm) a substance absorbs all various wavelengths. Molecules do not maintain fixed positions with respect to each other, but vibrate back and forth about an average distance. Absorption of light at the appropriate energy causes the molecules to become excited to a higher vibration level. The excitation of the molecules to an excited state occurs only at certain discrete energy levels, which are characteristic for that particular molecule. The most primary vibrational states occur in the mid-infrared frequency region (i.e., 2.5-25 \u03bcm). However, non-invasive analyte determination in blood in this region is problematic, if not impossible, due to the absorption of the light by water. The problem is overcome through the use of shorter wavelengths of light which are not as attenuated by water. Overtones of the primary vibrational states exist at shorter wavelengths and enable quantitative determinations at these wavelengths., 66931=Another approach taught by K. Ward et al., \"Post-Prandial Blood Glucose Determination by Quantitative Mid-Infrared Spectroscopy,\" Applied Spectroscopy, 1992, 46, 959-965, utilizes partial least-squares multivariate calibration models based on whole blood glucose levels. When the models were based on in vitro measurements using whole blood, a subject-dependent concentration bias was retrospectively observed, indicating that additional calibration would be necessary., 67430=In an article by Haaland et al., \"Reagentless Near-Infrared Determination of Glucose in Whole Blood Using Multivariate Calibration,\" Applied Spectroscopy, 1992, 46, 1575-1578, the authors suggest the use of derivative spectra for reducing subject-to-subject (or inter-subject) spectral differences. The method was not found to be effective on the data presented in the paper. First derivatives are an example of a general set of processing methods that are commonly used for spectral pretreatrment. A general but incomplete list of these pretreatment methods would include trimming, wavelength selection, centering, scaling, normalization, taking first or higher derivatives, smoothing, Fourier transforming, principle component selection, linearization, and transformation. This general class of processing methods has been examined by the inventors and has not been found to effectively reduce the spectral variance to the level desired for clinical prediction results., 126028=Spectral and reference data were acquired twice per week from most subjects. A few subjects were unable to keep all of their appointments to provide spectral and reference data. During each appointment, 5 separate spectral measurements at different spatial positions on the underside of the forearm were acquired over a 15-minute period using reflectance sampling from 4200-7200 wavenumbers (390 discrete wavelengths were involved). In addition, two capillary glucose reference measurements were obtained via blood draws from each subject during each data acquisition period. The blood draws were performed immediately before and after th(e acquisition of the spectral data. Time-based interpolation was used to assign an appropriate capillary glucose reference value to each spectrum. A total of 1161 spectra (some acquired spectra were deemed outliers and were discarded) and associated reference glucose values comprise the calibration data.}",
+    "textBeforeTable": "Patent Citations New characteristics and advantages of the invention covered by this document have been set forth in the foregoing description. It will be understood, however, that this disclosure is, in many respects, only illustrative. Changes may be made in details, particularly in matters of shape, size, and arrangement of parts, without exceeding the scope of the invention. The scope of the invention is, of course, defined in the language in which the appended claims are expressed. In addition, while the invention is disclosed as a method of calibrating a single measurement device, it is also contemplated that the meancentered data could be obtained form a number of units that measure both the same subjects and different subjects. Lastly, the generic calibration discussed above preferably uses more than one subject because multiple subjects permit a sufficient quantity of intra-subject variation data to be obtained in a short period of time. However, for other situations where there are not multiple subjects, such as the observation of a unique chemical process, the calibration data may be obtained from the one site over an extended period of time. It is intended that the scope of the invention be defined by the claims appended hereto. The particular examples discussed above are cited merely to illustrate particular embodiments of this invention. It is contemplated that the use of the invention may involve methods for multivariate calibration and prediction and their application to the",
+    "textAfterTable": "US4882492 * 19 Jan 1988 21 Nov 1989 Biotronics Associates, Inc. Non-invasive near infrared measurement of blood analyte concentrations US4975581 * 21 Jun 1989 4 Dec 1990 University Of New Mexico Method of and apparatus for determining the similarity of a biological analyte from a model constructed from known biological fluids US5015100 * 2 Mar 1990 14 May 1991 Axiom Analytical, Inc. Apparatus and method for normal incidence reflectance spectroscopy US5019715 * 2 Mar 1990 28 May 1991 Spectra-Tech, Inc. Optical system and method for sample analyzation US5028787 * 19 Jan 1989 2 Jul 1991 Futrex, Inc. Non-invasive measurement of blood glucose US5051602 * 14 Dec 1990 24 Sep 1991 Spectra-Tech, Inc. Optical system and method for sample analyzation US5068536 * 9 Apr 1991 26 Nov 1991 Futrex, Inc. Method for providing",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

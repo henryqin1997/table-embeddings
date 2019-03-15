@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "Verification to Perform",
+            "System requirements verification",
+            "Oracle ACFS verification",
+            "Storage verifications",
+            "Network verification",
+            "Connectivity verifications",
+            "Cluster Time Synchronization Services verification",
+            "User and Permissions verification",
+            "Node comparison and verification",
+            "Installation verification",
+            "Deletion verification",
+            "Cluster Integrity verification",
+            "Oracle Clusterware and Oracle ASM Component verifications"
+        ],
+        [
+            "CVU Commands to Use",
+            "cluvfy comp sys",
+            "cluvfy stage [-pre | -post] cfs",
+            "cluvfy comp cfs cluvfy comp space cluvfy comp ssa cluvfy stage [-pre | -post] acfscfg",
+            "cluvfy stage -post hwos",
+            "cluvfy comp nodecon cluvfy comp nodereach",
+            "cluvfy comp clocksync",
+            "cluvfy comp admprv",
+            "cluvfy comp peer",
+            "cluvfy stage -pre dbcfg cluvfy stage -pre dbinst cluvfy stage [-pre | -post] crsinst cluvfy stage [-pre | -post] hacfg cluvfy stage [-pre | -post] nodeadd",
+            "cluvfy stage -post nodedel",
+            "cluvfy comp clu",
+            "cluvfy comp acfs cluvfy comp asm cluvfy comp clumgr cluvfy comp crs cluvfy comp dhcp cluvfy comp dns cluvfy comp gns cluvfy comp gpnp cluvfy comp ha cluvfy comp nodeapp cluvfy comp ocr cluvfy comp ohasd cluvfy comp olr cluvfy comp scan cluvfy comp software cluvfy comp vdisk"
+        ]
+    ],
+    "pageTitle": "Cluster Verification Utility Reference",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18283_01/rac.112/e16794/cvu.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988065.26/warc/CC-MAIN-20150728002308-00067-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 77202075,
+    "recordOffset": 77175994,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 14 Aug 2010 15:00:51 GMT",
+    "textBeforeTable": "Table A-1 Performing Various CVU Verifications Table A-1 lists verifications you can perform using CVU. CVU can verify the primary cluster components during an operational phase or stage. A component can be basic, such as free disk space, or it can be complex, such as checking Oracle Clusterware integrity. For example, CVU can verify multiple Oracle Clusterware subcomponents across Oracle Clusterware layers. Additionally, CVU can check disk space, memory, processes, and other important cluster components. A stage could be, for example, database installation, for which CVU can verify whether your system meets the criteria for an Oracle Real Application Clusters (Oracle RAC) installation. Other stages include the initial hardware setup and the establishing of system requirements through the fully operational cluster setup. Overview Special Topics Operational Notes Overview This section includes topics which relate to using CVU. About Cluster Verification Utility Troubleshooting and Diagnostic Output for CVU Cluster Verification Utility Command Reference Special Topics Operational Notes Overview About Cluster Verification Utility This appendix describes CVU under the following topics: http://www.oracle.com/technology/index.html Note: Check for and download updated versions of CVU",
+    "textAfterTable": "Operational Notes This section includes the following topics: Installation Requirements Usage Information CVU Configuration File Privileges and Security Using CVU Help Installation Requirements CVU installation requirements are: At least 30 MB free space for the CVU software on the node from which you run CVU A work directory with at least 25 MB free space on each node. The default location of the work directory is /tmp on Linux and UNIX systems, and the value specified in the TEMP environment variable on Windows systems. You can specify a different location by setting the CV_DESTLOC environment variable. When using CVU, the utility attempts to copy any needed information to the CVU work directory. It checks for the existence of the work directory on each node. If it does not find one, then it attempts to create one. Make sure that the CVU work directory either exists on all nodes in your cluster or proper permissions are established on each node for the user running CVU to create that directory. Java 1.4.1 on the local node Usage Information CVU includes two scripts: runcluvfy.sh (runcluvfy.bat on Windows), which you use before installing Oracle software, and cluvfy",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

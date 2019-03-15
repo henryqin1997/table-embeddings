@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "S",
+            "1",
+            "8",
+            "15",
+            "22",
+            "29"
+        ],
+        [
+            "M",
+            "2",
+            "9",
+            "16",
+            "23",
+            "30"
+        ],
+        [
+            "T",
+            "3",
+            "10",
+            "17",
+            "24",
+            "31"
+        ],
+        [
+            "W",
+            "4",
+            "11",
+            "18",
+            "25",
+            ""
+        ],
+        [
+            "T",
+            "5",
+            "12",
+            "19",
+            "26 (1)",
+            ""
+        ],
+        [
+            "F",
+            "6",
+            "13",
+            "20",
+            "27",
+            ""
+        ],
+        [
+            "S",
+            "7",
+            "14",
+            "21",
+            "28",
+            ""
+        ]
+    ],
+    "pageTitle": "Steel Bank Common Lisp / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/sbcl/mailman/sbcl-announce/?style=flat&viewmonth=200505",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988250.59/warc/CC-MAIN-20150728002308-00250-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 231007351,
+    "recordOffset": 230994647,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul (1) Jun (1) May (1) Apr (1) Mar (1) Feb (2) Jan (1) 2015 Dec (1) Nov (1) Oct (1) Sep (1) Aug (1) Jul (1) Jun (1) May (1) Apr (1) Mar (1) Feb (1) Jan (1) 2014 Dec \u00a0 Nov (1) Oct (1) Sep (1) Aug (1) Jul (2) Jun (2) May (1) Apr (2) Mar (1) Feb (1) Jan",
+    "textAfterTable": "Showing 1 results of 1 Flat | Threaded [Sbcl-announce] sbcl-0.9.1 released From: William Harold Newman <william.newman@ai...> - 2005-05-26 20:09:50 sbcl-0.9.1 has been released. Enjoy. From the NEWS file in the distribution: changes in sbcl-0.9.1 relative to sbcl-0.9.0: * fixed cross-compiler leakages that prevented building a 32-bit target with a 64-bit host compiler. * fixed a bug in CLOSE :ABORT T: no longer attempts to remove files opened with :IF-EXISTS :OVERWRITE. * fixed bug 281: error for an invalid qualifier in a short-form method combination method is not signalled until the faulty method is called. * bug fix: iteration variable type inferrer failed to deal with open intervals. (reported by Alan Shields) * bug fix: dynamically loading (via LOAD-SHARED-OBJECT or similar) \"frameworks\" on Mac OS X no longer causes an EXC_BAD_ACCESS if two or more runtime options were provided to the sbcl binary. * compiled code is not steppable if COMPILATION-SPEED >= DEBUG. * contrib improvement: implement SB-POSIX:MKSTEMP (Yannick Gingras) * optimization: there's now a fast-path for fixnum arguments in the generic subtraction routines on x86/x86-64. (Thanks to Lutz Euler) * optimization: the code generated on x86-64 is more compact thanks to",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

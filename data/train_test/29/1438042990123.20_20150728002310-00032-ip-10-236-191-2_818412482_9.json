@@ -1,0 +1,68 @@
+{
+    "relation": [
+        [
+            "package",
+            "ReloadScript-1.21.vmb.gz",
+            "ReloadScript.vba.gz",
+            "ReloadScript.vim",
+            "ReloadScript.vim",
+            "ReloadScript.vim"
+        ],
+        [
+            "script version",
+            "1.21",
+            "1.20",
+            "1.10.005",
+            "1.10.004",
+            "1.00.003"
+        ],
+        [
+            "date",
+            "2012-08-28",
+            "2011-01-09",
+            "2008-07-29",
+            "2008-02-28",
+            "2007-05-22"
+        ],
+        [
+            "Vim version",
+            "7.0",
+            "7.0",
+            "7.0",
+            "7.0",
+            "7.0"
+        ],
+        [
+            "user",
+            "Ingo Karkat",
+            "Ingo Karkat",
+            "Ingo Karkat",
+            "Ingo Karkat",
+            "Ingo Karkat"
+        ],
+        [
+            "release notes",
+            "- Avoid because of its unescaping behavior. - Also no global inclusion guard for ftdetect scripts.",
+            "- BUG: Avoiding \"E471: Argument required\" error on empty buffer name. - ENH: Explicitly checking for the existence of the file, as we don't want to put the :source command inside try...catch (it would stop showing all resulting errors and show only the first), and because :runtime doesn't complain at all. - Added separate help file and packaging the plugin as a vimball.",
+            "Combined missing inclusion guard warning with reload message to avoid the \"Hit ENTER\" prompt. No missing inclusion guard warning for scripts that do not need one (e.g. after-directory, autoload, ftplugin, indent, syntax, ...)",
+            "A scriptname argument with path and/or extension is sourced as-is. This allows a third usage: :ReloadScript path/to/script.vim",
+            "Initial upload"
+        ]
+    ],
+    "pageTitle": "ReloadScript - Reload a Vim script during script development. : vim online",
+    "title": "",
+    "url": "http://www.vim.org/scripts/script.php?script_id=1904",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990123.20/warc/CC-MAIN-20150728002310-00032-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 818420684,
+    "recordOffset": 818412482,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "script versions (upload new version) Click on the package to download. Life Changing Helpful Unfulfilling\u00a0 rate this script \u00a0 INSTALLATION This script is packaged as a vimball. If you have the \"gunzip\" decompressor in your PATH, simply edit the *.vmb.gz package in Vim; otherwise, decompress the archive first, e.g. using WinZip. Inside Vim, install by sourcing the vimball or via the :UseVimball command. \u00a0\u00a0\u00a0\u00a0vim ReloadScript*.vmb.gz \u00a0\u00a0\u00a0\u00a0:so % To uninstall, use the :RmVimball command. DEPENDENCIES - Requires Vim 7.0 or higher. install details \u00a0 DESCRIPTION Re-sources a Vim script. The script may use a multiple inclusion guard variable g:loaded_{scriptname} (with {scriptname} having either the same case as specified or all lowercase.) If you specify the bare scriptname (without .vim extension), the script must reside in plugin/{scriptname}.vim somewhere on 'runtimepath'. Otherwise, the passed filespec is interpreted as the file system location of a Vim script and sourced as-is. If you execute :ReloadScript without passing a scriptname, the current buffer is re-sourced. RELATED WORKS - scriptease.vim (vimscript #4394)",
+    "textAfterTable": "ip used for rating: 54.167.76.176 If you have questions or remarks about this site, visit the vimonline development pages. Please use this site responsibly. Questions about Vim should go to the maillist. Help Bram help Uganda. \u00a0 \u00a0",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

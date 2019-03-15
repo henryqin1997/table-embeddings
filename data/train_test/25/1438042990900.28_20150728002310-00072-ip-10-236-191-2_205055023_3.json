@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Instructions",
+            "MOVX @DPTR,A",
+            "MOVX @R0,A",
+            "MOVX @R1,A",
+            "MOVX A,@DPTR",
+            "MOVX A,@R0",
+            "MOVX A,@R1"
+        ],
+        [
+            "OpCode",
+            "0xF0",
+            "0xF2",
+            "0xF3",
+            "0xE0",
+            "0xE2",
+            "0xE3"
+        ],
+        [
+            "Bytes",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Cycles",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2",
+            "2"
+        ],
+        [
+            "Flags",
+            "None",
+            "None",
+            "None",
+            "None",
+            "None",
+            "None"
+        ]
+    ],
+    "pageTitle": "Movx - 8051 instruction - Tutorials",
+    "title": "",
+    "url": "http://romux.com/tutorials/8051-instruction/movx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990900.28/warc/CC-MAIN-20150728002310-00072-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 205063225,
+    "recordOffset": 205055023,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MOVX operand1,operand2 Syntax: Move Data To/From External Memory (XRAM) Function: MOVX Operation: MOVX 8051 instruction :: Movx //--> google_ad_height = 90; google_ad_width = 160; google_ad_slot = \"1243909493\"; /* LLDIV160x90 */ google_ad_client = \"pub-2749910568817823\";",
+    "textAfterTable": "Description: MOVX moves a byte to or from External Memory into or from the Accumulator. If operand1 is @DPTR, the Accumulator is moved to the 16-bit External Memory address indicated by DPTR. This instruction uses both P0 (port 0) and P2 (port 2) to output the 16-bit address and data. If operand2 is DPTR then the byte is moved from External Memory into the Accumulator. If operand1 is @R0 or @R1, the Accumulator is moved to the 8-bit External Memory address indicated by the specified Register. This instruction uses only P0 (port 0) to output the 8-bit address and data. P2 (port 2) is not affected. If operand2 is @R0 or @R1 then the byte is moved from External Memory into the Accumulator. Post Your Comments Here : \u00a0 Related Topics",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,110 @@
+{
+    "relation": [
+        [
+            "name",
+            "aether",
+            "eirene",
+            "erebus",
+            "nyx",
+            "phanes"
+        ],
+        [
+            "os",
+            "Win 2k8",
+            "ESX",
+            "ESX",
+            "ESX",
+            "ESX"
+        ],
+        [
+            "HW",
+            "DPE r210",
+            "DPE r720",
+            "DPE r515",
+            "DPE r710",
+            "DPE r510"
+        ],
+        [
+            "CPU",
+            "X3430@2.4GHz 1x4=4",
+            "E5-2665@2.4GHz 2x8x2=32",
+            "4176HE@2.4GHz 2x6x1=12",
+            "E5530@2.4GHz 2x4x2=16",
+            "X5670@2.93GHz 2x6x2=24"
+        ],
+        [
+            "RAM",
+            "8x2@1333MHz = 16GB",
+            "256GB",
+            "8x8GB@1333MHz = 64GB",
+            "24GB",
+            "8x16@1066MHz"
+        ],
+        [
+            "Disk",
+            "2x500GB@7.2k",
+            "? = 830GB",
+            "1x2TB@7.2k",
+            "TBD",
+            "2x300GB@10k"
+        ],
+        [
+            "Arrays",
+            "None",
+            "? = 2 x 1.6TB",
+            "TBD",
+            "Storform D53J:12x300GB@15k",
+            "(chaos) SM Storform iServ R518.v2.1. 3 x 120GB SSD Front : 24 x 1TB SAS"
+        ],
+        [
+            "Services",
+            "VM mgmt",
+            "VM host",
+            "VM host",
+            "VM host",
+            "VM host"
+        ],
+        [
+            "Location",
+            "OSUOSL",
+            "OSUOSL",
+            "OSUOSL",
+            "OSUOSL",
+            "OSUOSL"
+        ],
+        [
+            "Comissioned",
+            "2011/03",
+            "2013/??",
+            "2010/12",
+            "2009/07",
+            "2012/05"
+        ],
+        [
+            "Class",
+            "",
+            "vms",
+            "vms",
+            "vms",
+            "vms"
+        ]
+    ],
+    "pageTitle": "Machines List",
+    "title": "",
+    "url": "http://www.apache.org/dev/machines.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989897.84/warc/CC-MAIN-20150728002309-00320-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 301557371,
+    "recordOffset": 301547514,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{40345=Copyright \u00a9 2015 The Apache Software Foundation, Licensed under the Apache License, Version 2.0.}",
+    "lastModified": "Fri, 24 Jul 2015 10:32:41 GMT",
+    "textBeforeTable": "FreeBSD:\u00b6 table { font-size: 12px } } visibility: hidden; .headerlink, .elementid-permalink { */ * has the :hover property. * Hide class=\"elementid-permalink\", except when an enclosing heading /* It was originally lifted from http://subversion.apache.org/style/site.css */ /* The following code is added by mdx_elementid.py",
+    "textAfterTable": "harmonia 9.1-RELEASE DPE r510 E5649@2.53GHz 2x6=12 6x4@1333MHz = 24GB 2x300GB SAS@15k, 2x100GB SSD, 6x2TB SATA EU: svn, ldap FUB 2012/06 svn hermes 9.1-RELEASE DPE 2950 E5420@2.50GHz 2x4=8 4x2@667MHz = 8GB (750GB+1TB)@7.2k gmirror + (3x750GB@7.2k + 1x1TB@7.2k)raidz1 qpsmtpd, qpmail, ezmlm OSUOSL 2008/05 smtp loki 9.1-RELEASE DPE 2950 E5420@2.50GHz 2x4=8 4x2@667MHz = 8GB 4x750GB@7.2k + 2x1TB@7.2k gpt+raidz2 nfs, tb, ftp, [hotspare] OSUOSL 2009/01 hotspare, tb, ftp, nfs metis 9.1-RELEASE DPE r510 X5650@2.66GHz 2x6=12 8x4@1333MHz = 32GB 6x600GB@15k 2x100GB SSD Jails - TLPs OSUOSL 2010/12 dm minotaur 9.1-RELEASE HP DL580G7 E7540@2.00GHz 4x2x6=48 8*4@1333MHz = 32GB 4x146GB@10k Powervault 220S:15x500GB@7.2k raidz2 + 2x120GB SSD l2arc e-mail, SSH, seed OSUOSL 2011/04 people sigyn 9.1-RELEASE DPE r710 E5530@2.40GHz 2x4x2=16 8x2@1333MHz = 16GB 4x136GB@15k raidz2 Storform D53J:9x600GB@15k +3x160GB SSD Jails - TLPs OSUOSL 2009/12 dm SunOS:\u00b6 name os HW Arrays Services Location Comissioned Class odyne 10u5 x86 n/a Zones SARA 2008/05 zones thor 10u8 Sun T5220 Sparc Dist,private arch,Confluence(cwiki) OSUOSL 2008/07 dist Ubuntu:\u00b6 Name Os HW CPU RAM Disk Arrays Services Location Comissioned Class arcas 12.04.2 LTS r410 X5550@2.67GHz 2x4x2=16 8x8GB@1333MHz = 64GB Jira OSUOSL 2010/07 jira crius 12.04.5 LTS r720 E5-2665@2.6GHz 4x16=64 @ 1600MHz 1x200SSD + 2x300SAS RAID1 + 5 x 600SAS",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

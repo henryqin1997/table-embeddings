@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust",
+            "Precipitation"
+        ],
+        [
+            "Avg",
+            "82.7 \u00b0F",
+            "75.1 \u00b0F",
+            "78.6 %",
+            "29.85 in",
+            "10.6 mph",
+            "",
+            "1.10 in"
+        ],
+        [
+            "Avg High",
+            "87.8 \u00b0F",
+            "76.9 \u00b0F",
+            "89.5 %",
+            "29.91 in",
+            "17.5 mph",
+            "26.8 mph",
+            ""
+        ],
+        [
+            "Avg Low",
+            "78.5 \u00b0F",
+            "73 \u00b0F",
+            "63.5 %",
+            "29.79 in",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Record High",
+            "91 \u00b0F (2013)",
+            "80.6 \u00b0F (2000)",
+            "",
+            "30.01 in (1995)",
+            "35.7 mph (2002)",
+            "46 mph (2015)",
+            "5.27 in (2015)"
+        ],
+        [
+            "Record Low",
+            "75 \u00b0F (2005)",
+            "71.1 \u00b0F (1999)",
+            "55 % (1999)",
+            "29.40 in (2015)",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Camp Quezon, Guam - May 16th - Daily Weather Averages (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherdaily.php3?s=912132&month=5&theday=16&cityname=Camp+Quezon%2C+Guam%2C+United+States+of+America&units=",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990445.44/warc/CC-MAIN-20150728002310-00288-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 831271021,
+    "recordOffset": 831254627,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] DAILY WEATHER AVERAGE - MAY 16 [ \u2190 Previous Day ] } window.print(); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); return $(this).text().replace(\"2015\", \"\"); $('.datepicker-switch').text(function () { }); window.location = url; var url = \"/weather/weatherdaily.php3?s=912132&\" + pieces + \"&citynameCamp+Quezon%2C+Guam%2C+United+States+of+America&set=\"; var pieces = tosplit.replace(/(.*?)-(.*?)-(.*?)/,\"month=$2&theday=$3\"); var tosplit = event.format(); $('#datepicker').datepicker().on('changeDate', function (event) { }); endDate: \"2015-12-31\", startDate: \"2015-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 8.7 mi Wind Direction E (95.3 \u00b0) Weather Element Total Cooling Degree Days 18.2 (Base 18.3) Growing Degree Days 33.2 (Base 10) Total Years on Record: 20",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

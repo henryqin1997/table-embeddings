@@ -1,0 +1,40 @@
+{
+    "relation": [
+        [
+            "metric",
+            "has meta yml",
+            "has changelog",
+            "has tests",
+            "has license in source file",
+            "manifest matches dist",
+            "prereq matches use",
+            "package version matches dist version"
+        ],
+        [
+            "remedy",
+            "The file \"META.yml\" is missing from this distribution. META.yml is needed by people maintaining module collections (like CPAN), for people writing installation tools, or just people who want to know some stuff about a distribution before downloading it. Add a META.yml to the distribution. Your buildtool should be able to autogenerate it.",
+            "The distribution hasn't got a Changelog (named something like m/^chang(es?|log)|history$/i. A Changelog helps people decide if they want to upgrade to a new version. Add a Changelog (best named 'Changes') to the distribution. It should list at least major changes implemented in newer versions.",
+            "This distribution doesn't contain either a file called 'test.pl' or a directory called 't'. This indicates that it doesn't contain even the most basic test-suite. This is really BAD! Add tests!",
+            "Does not have license information in any of its source files Add =head1 LICENSE and the text of the license to the main module in your code.",
+            "MANIFEST does not match the contents of this distribution. Run a proper command (\"make manifest\" or \"./Build manifest\", maybe with a force option), or use a distribution builder to generate the MANIFEST. Or update MANIFEST manually.",
+            "This distribution uses a module or a dist that's not listed as a prerequisite. List all used modules in META.yml requires",
+            "None of the package versions in this distribution matches the distribution version. Fix the version(s)."
+        ]
+    ],
+    "pageTitle": "CPANTS - WWW-Shorten-LYTN",
+    "title": "",
+    "url": "http://cpants.cpanauthors.org/dist/WWW-Shorten-LYTN",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981921.1/warc/CC-MAIN-20150728002301-00003-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 54268859,
+    "recordOffset": 54260657,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "These fails do affect your Kwalitee scores. This distribution may not be installed cleanly, or may have some issues in license or documentation. Please consider fixing them, or tell us if they are false. Core metrics Kwalitee Fails CPAN Testers rt.cpan.org search.cpan.org metacpan.org External Resources 80.00 Core Kwalitee 102.86 Kwalitee 2011-06-01 Release Date 0.001 (released by ABLAKELY on 2011-05-31) 0.002 (released by ABLAKELY on 2011-05-31) 0.003 (released by ABLAKELY on 2011-06-01) 0.003 (latest) Version ABLAKELY Author/Maintainer Releases Metadata Errors Provides Used By Prerequisites Overview WWW-Shorten-LYTN WWW-Shorten-LYTN Home Search Authors Search Distributions Recent Uploads Stats Ranking Kwalitee CPANTS Toggle navigation",
+    "textAfterTable": "Extra metrics These fails affect your total Kwalitee score, but don't affect the one for the Game. Some of them should be fixed by all means. Others are just matters of taste. metric remedy has tests in t dir This distribution contains either a file called 'test.pl' (the old test file) or is missing a directory called 't'. This indicates that it uses the old test mechanism or it has no test-suite. Add tests or move tests.pl to the t/ directory! meta yml has license This distribution does not have a license defined in META.yml. Define the license if you are using in Build.PL. If you are using MakeMaker (Makefile.PL) you should upgrade to ExtUtils::MakeMaker version 6.31. has known license in source file Does not have license information in any of its source files, or the information is not recognized by Software::License Add =head1 LICENSE and/or the proper text of the well-known license to the main module in your code. is prereq This distribution is not required by another distribution by another author. Convince / force / bribe another CPAN author to use this distribution. Experimental metrics Excellent. Your distribution passes all the experimental metrics. History",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

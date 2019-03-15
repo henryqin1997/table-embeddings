@@ -1,0 +1,72 @@
+{
+    "relation": [
+        [
+            "Status",
+            "IN PROGRESS",
+            "DONE",
+            "DONE",
+            "DONE",
+            "DONE",
+            "DONE",
+            "DONE",
+            "DONE",
+            "DONE",
+            "DONE"
+        ],
+        [
+            "Project",
+            "libkipi",
+            "okular",
+            "okular",
+            "okular",
+            "okular",
+            "okular",
+            "okular",
+            "okular",
+            "Gwenview",
+            "Gwenview"
+        ],
+        [
+            "Description",
+            "Porting libkipi to KDE-XML GUI",
+            "Tiled rendering",
+            "Active based UI",
+            "PDF Embedded Video improvements",
+            "Make document scroll as necessary when in text selection mode",
+            "Support high precision QTabletEvents for creating annotations",
+            "Additional mouse buttons trigger history navigation",
+            "Annotation editing improvements",
+            "Recursive importer",
+            "Color profile support"
+        ],
+        [
+            "Contact",
+            "Victor Dodon",
+            "Okular Developers",
+            "Okular Developers",
+            "Okular Developers",
+            "Okular Developers",
+            "Okular Developers",
+            "Okular Developers",
+            "Okular Developers",
+            "Aur\u00e9lien G\u00e2teau",
+            "Aur\u00e9lien G\u00e2teau"
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Schedules/KDE4/4.10 Feature Plan\" - KDE TechBase",
+    "title": "",
+    "url": "https://techbase.kde.org/index.php?title=Schedules/KDE4/4.10_Feature_Plan&diff=77234&oldid=75794",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00032-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 887694407,
+    "recordOffset": 887661432,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "kdelibs 13 kdeutils 12 kdesdk 11 kdeplasma-addons 10 kdepim 9 kdenetwork 8 kdemultimedia 7 kdegraphics 6 kdegames 5 kdeedu 4 kde-baseapps 3 kde-workspace 2 kde-runtime 1 kdelibs Contents done => completed in-progress => started, but not completed yet to do => not started yet Legend: Schedules/KDE4/4.9 Feature Plan (previous major release) Schedules/KDE4/4.10 Release Schedule See also: This is a list of planned features for the SC 4.10 release. Revision as of 19:04, 12 December 2012 <br> \u00a0 <br> \u00a0 |} \u00a0 |} \u00a0 {{FeatureInProgress|Ark|Make it possible to disable internal previewer|kde@privat.broulik.de|Kai Uwe Broulik}} + \u00a0 \u00a0",
+    "textAfterTable": "kde-workspace Status Project Description Contact DONE ksmserver Merge the new qml based screen locker Marco Martin <mart@kde.org> TO DO kwin windows that are moved to another desktop should be treated as sticky windows (bug #213847) <kwin-bugs-null@kde.org> TO DO kwin Fix fullscreen state handling: NETWM says it's bound to focus and not stacking order, also see bug #224600 (bug #296076) <kwin-bugs-null@kde.org> TO DO kwin Medium focus stealing prevention should also prevent focus stealing when the timestamp on the active window is uncertain (bug #304746)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

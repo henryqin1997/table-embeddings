@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Name",
+            "Alter()",
+            "DataFileVolumeNotIn(List)",
+            "Equals(Object)",
+            "Finalize()",
+            "GetHashCode()",
+            "GetType()",
+            "GetVolume(String)",
+            "MemberwiseClone()",
+            "Refresh()",
+            "ToString()"
+        ],
+        [
+            "Description",
+            "Alters database adapter base properties.",
+            "Returns a Boolean value that is associated with the database adapter base.",
+            "(Inherited from Object.)",
+            "(Inherited from Object.)",
+            "(Inherited from Object.)",
+            "(Inherited from Object.)",
+            "Returns the volume name as it appears in the PATH variable.",
+            "(Inherited from Object.)",
+            "Refreshes the database adapter.",
+            "(Inherited from Object.)"
+        ]
+    ],
+    "pageTitle": "DatabaseAdapterBase Class\u00a0(Microsoft.SqlServer.Management.Smo)",
+    "title": "",
+    "url": "https://technet.microsoft.com/en-us/library/cc286934.aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00117-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 857317986,
+    "recordOffset": 857302032,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{4734=Applies To: SQL Server 2016 Preview}",
+    "textBeforeTable": "Methods Gets or sets a value that indicates whether database is set to Trustworthy. Trustworthy Returns target recovery time setting of a database. TargetRecoveryTime Gets the database status. Status Gets the database size in megabytes (MB). Size Gets or sets the database adapter recovery model. RecoveryModel Gets or sets a value that indicates whether database is set to read-only. ReadOnly Gets a Boolean value that indicates whether the PageVerify setting is set to checksum. PageVerify Gets a Datetime object that indicates the time of the last log backup. LastLogBackupDate Gets a Datetime object that indicates the time of the last backup.",
+    "textAfterTable": "Thread Safety Any public static (Shared in Visual Basic) members of this type are thread safe. Any instance members are not guaranteed to be thread safe. See Also Microsoft.SqlServer.Management.Smo Namespace Return to top Was this page helpful? Yes No Not accurate Not enough depth Need more code examples Tell us more... (1500 characters remaining) Submit Thank you for your feedback",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

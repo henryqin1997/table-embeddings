@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "5",
+            "12",
+            "19",
+            "26 (4)"
+        ],
+        [
+            "M",
+            "",
+            "6",
+            "13",
+            "20",
+            "27 (3)"
+        ],
+        [
+            "T",
+            "",
+            "7",
+            "14",
+            "21 (1)",
+            "28 (2)"
+        ],
+        [
+            "W",
+            "1",
+            "8",
+            "15",
+            "22",
+            "29 (3)"
+        ],
+        [
+            "T",
+            "2",
+            "9",
+            "16 (11)",
+            "23",
+            "30"
+        ],
+        [
+            "F",
+            "3",
+            "10 (3)",
+            "17 (5)",
+            "24",
+            ""
+        ],
+        [
+            "S",
+            "4",
+            "11",
+            "18 (4)",
+            "25",
+            ""
+        ]
+    ],
+    "pageTitle": "Fail2Ban / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/fail2ban/mailman/fail2ban-users/?viewmonth=201009&viewday=16",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00305-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 220007619,
+    "recordOffset": 219987801,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug (9) Jul (110) Jun (89) May (52) Apr (50) Mar (35) Feb (72) Jan (60) 2015 Dec (43) Nov (37) Oct (44) Sep (53) Aug (64) Jul (93) Jun (21) May (59) Apr (62) Mar (45) Feb (50) Jan (76) 2014 Dec (74) Nov (61) Oct (81) Sep (39) Aug (41) Jul (71) Jun (87) May (79) Apr (50) Mar (50) Feb (83)",
+    "textAfterTable": "Showing 11 results of 11 Flat | Threaded Re: [Fail2ban-users] development? From: Ren\u00e9 Berber <rberber@ca...> - 2010-09-16 21:38:52 On 9/16/2010 4:17 PM, Roy Sigurd Karlsbakk wrote: > is fail2ban still in development or is it stagnant or dormant? i > posted some patches to make it work with solaris, and still haven't > got any feedback. there are also issues with tcpwrappers-based bans, > where those aren't being cancelled after the ban time. > > please update me on this - if the project is still alive Its alive and stable, so don't expect many changes. Why do you expect feedback? The Solaris service integration was a third-party addition as far as I remember, yours looks pretty bad quality, I don't want to review anything but it looks like you don't really know fail2ban, nor Solaris. I have used the tcp-wrappers part for a long time with no problem (in Solaris, Linux, and Windows), they are banned and unbanned as expected. -- Ren\u00e9 Berber Re: [Fail2ban-users] tai64n trouble From: Ren\u00e9 Berber <rberber@ca...> - 2010-09-16 21:32:13",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

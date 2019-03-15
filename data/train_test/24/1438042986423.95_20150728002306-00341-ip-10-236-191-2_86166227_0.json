@@ -1,0 +1,37 @@
+{
+    "relation": [
+        [
+            "PAM",
+            "PAM100",
+            "PAM120",
+            "PAM160",
+            "PAM200",
+            "PAM250"
+        ],
+        [
+            "BLOSUM",
+            "BLOSUM90",
+            "BLOSUM80",
+            "BLOSUM60",
+            "BLOSUM52",
+            "BLOSUM45"
+        ]
+    ],
+    "pageTitle": "BLOSUM - Wikipedia, the free encyclopedia",
+    "title": "",
+    "url": "http://en.wikipedia.org/wiki/BLOSUM",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00341-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 86188519,
+    "recordOffset": 86166227,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 20 Jul 2015 18:03:11 GMT",
+    "textBeforeTable": "Since both PAM and BLOSUM are different methods for showing the same scoring information, the two can be compared but due to the very different method of obtaining this score, a PAM100 does not equal a BLOSUM100.[18] In addition to BLOSUM matrices, a previously developed scoring matrix can be used. This is known as a PAM. The two result in the same scoring outcome, but use differing methodologies. BLOSUM directly look at mutations in motifs of related sequences while PAM's extrapolate evolutionary information based on closely related sequences.[1] Comparing PAM and BLOSUM[edit] BLOSUM matrices are also used as a scoring matrix when comparing DNA sequences or protein sequences to judge the quality of the alignment. This form of scoring system is utilized by a wide range of alignment software including BLAST.[17] Use in BLAST[edit] A novel input representation has been developed consisting of a combination of sparse encoding, Blosum encoding, and input derived from hidden Markov models. this method predicts T-cell epitopes for the genome of hepatitis C virus and discuss possible applications of the prediction method to guide the process of rational vaccine design.[16] Reliable prediction of T-cell epitopes[edit] DNA sequences of",
+    "textAfterTable": "The relationship between PAM and BLOSUM[edit] PAM BLOSUM To compare the closely related sequences, PAM matrices with lower numbers are created. To compare the closely related sequences, BLOSUM matrices with higher numbers are created. To compare the distantly related proteins, PAM matrices with high numbers are created. To compare the distantly related proteins, BLOSUM matrices with low numbers are created. The differences between PAM and BLOSUM[edit] PAM BLOSUM Based on global alignments of closely related proteins. based on local alignments. PAM1 is the matrix calculated from comparisons of sequences with no more than 1% divergence. BLOSUM 62 is a matrix calculated from comparisons of sequences with no more than 62% identical. Other PAM matrices are extrapolated from PAM1. Based on observed alignments; they are not extrapolated from comparisons of closely related proteins. Higher numbers in matrices naming scheme denote larger evolutionary distance. Larger numbers in matrices naming scheme denote higher sequence similarity and therefore smaller evolutionary distance.[19] See also[edit] Sequence alignment",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

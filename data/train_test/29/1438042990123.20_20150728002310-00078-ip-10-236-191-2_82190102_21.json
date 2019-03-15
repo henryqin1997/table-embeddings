@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Character conversions",
+            "UTF-16",
+            "UCS2",
+            "UTF-32/UCS4 (char32_t)",
+            "UCS2/UCS4 (wchar_t)",
+            "wide (wchar_t)"
+        ],
+        [
+            "narrow multibyte (char)",
+            "mbrtoc16(one way)",
+            "c16rtomb(one way)",
+            "mbrtoc32 / c32rtomb",
+            "No",
+            "codecvt mbsrtowcs / wcsrtombs"
+        ],
+        [
+            "UTF-8 (char)",
+            "codecvt codecvt_utf8_utf16 codecvt_utf8_utf16 codecvt_utf8_utf16",
+            "codecvt_utf8",
+            "codecvt codecvt_utf8",
+            "codecvt_utf8",
+            "No"
+        ],
+        [
+            "UTF-16 (char16_t)",
+            "N/A",
+            "codecvt_utf16",
+            "codecvt_utf16",
+            "codecvt_utf16",
+            "No"
+        ]
+    ],
+    "pageTitle": "std::wstring_convert - cppreference.com",
+    "title": "",
+    "url": "http://en.cppreference.com/mwiki/index.php?title=cpp/locale/wstring_convert&oldid=43053",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 21,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990123.20/warc/CC-MAIN-20150728002310-00078-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 82205555,
+    "recordOffset": 82190102,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "See also Template:cpp/locale/wstring convert/dcl list stateTemplate:cpp/locale/wstring convert/dcl list convertedTemplate:cpp/locale/wstring convert/dcl list to bytesTemplate:cpp/locale/wstring convert/dcl list from bytesTemplate:cpp/locale/wstring convert/dcl list ~wstring convertTemplate:cpp/locale/wstring convert/dcl list wstring convert Member functions wide_string::traits_type::int_type int_type Codecvt::state_type state_type std::basic_string<Elem, char_traits<Elem>, Wide_alloc> wide_string std::basic_string<char, char_traits<char>, Byte_alloc> byte_string Definition Member type Member types Class template std::wstring_convert performs conversions between byte string std::string and wide string std::basic_string<Elem>, using an individual code conversion facet Codecvt. std::wstring_convert assumes ownership of the conversion facet, and cannot use a facet managed by a locale. The standard facets suitable for use with std::wstring_convert are",
+    "textAfterTable": "Template:cpp/locale/dcl list wbuffer convert Template:cpp/locale/dcl list codecvt utf8 Template:cpp/locale/dcl list codecvt utf8 utf16 Retrieved from \" http://en.cppreference.com/mwiki/index.php?title=cpp/locale/wstring_convert&oldid=43053\" Navigation Support us Recent changes FAQ Offline version Toolbox What links here Related changes Upload file Special pages Printable version Permanent",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

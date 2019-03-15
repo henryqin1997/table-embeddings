@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Round",
+            "Q-R64",
+            "Q-R32",
+            "Q-R16",
+            "R32",
+            "R16"
+        ],
+        [
+            "Result",
+            "Win",
+            "Win",
+            "Win",
+            "Win",
+            "Loss"
+        ],
+        [
+            "Opponent",
+            "[W] Spirit Edley (USA)",
+            "Chloe Ouellet-Pizer (USA)",
+            "[4] Maria Fernanda Alves (BRA)",
+            "Tori Kinard (USA)",
+            "Usue Maitane Arconada (USA)"
+        ],
+        [
+            "Rank",
+            "0",
+            "-",
+            "640",
+            "458",
+            "546"
+        ],
+        [
+            "Score",
+            "6-0 6-0",
+            "6-4 7-5",
+            "4-6 7-6 (7) 6-1",
+            "6-7 (3) 7-6 (5) 6-1",
+            "6-3 6-1"
+        ]
+    ],
+    "pageTitle": "Players | WTA Tennis English",
+    "title": "",
+    "url": "http://www.wtatennis.com/players/player/11451/title/keri-wong?ATCLID=205874771&SPID=103710&DB_LANG=C&DB_OEM_ID=28500",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986148.56/warc/CC-MAIN-20150728002306-00009-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 855479931,
+    "recordOffset": 855457556,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{1884=ITF // CANADA // 20-Jul-2015 // $50,000 // Hard (Outdoor) // Draw: 32M/32Q/16D // Rank: - // Seed/Entry: /MD}",
+    "TableContextTimeStampAfterTable": "{19182=ITF // USA // 16-Feb-2015 // $25,000 // Hard (Outdoor) // Draw: 32M/32Q/16D // Rank: - // Seed/Entry: /MD, 13625=ITF // USA // 20-Apr-2015 // $50,000 // Hard (Outdoor) // Draw: 32M/32Q/16D // Rank: - // Seed/Entry: /MD, 16543=ITF // USA // 06-Apr-2015 // $25,000 // Clay (Outdoor) // Draw: 32M/64Q/16D // Rank: - // Seed/Entry: /MD, 15084=ITF // USA // 13-Apr-2015 // $25,000 // Clay (Outdoor) // Draw: 32M/64Q/16D // Rank: - // Seed/Entry: /MD, 18016=ITF // USA // 23-Feb-2015 // $25,000 // Hard (Outdoor) // Draw: 32M/64Q/16D // Rank: - // Seed/Entry: /MD, 9831=ITF // USA // 22-Jun-2015 // $25,000 // Hard (Outdoor) // Draw: 32M/64Q/16D // Rank: 1211 // Seed/Entry: /MD, 12170=ITF // USA // 27-Apr-2015 // $50,000 // Clay (Outdoor) // Draw: 32M/32Q/16D // Rank: - // Seed/Entry: /MD}",
+    "textBeforeTable": "Baku, AZERBAIJAN. Jul 27 - Aug 02 Baku Cup \">RTS http://www.wtatennis.com/road-singles-leaderboard WTA TV http://www.wtatennis.com/wtatv LIVE SCORES http://www.protennislive.com/LSHD/main.html?year=2015&amp;wkno=99&amp;eventid=&amp;tour=2&amp;lang=en&amp;ref=http://www.wtatennis.com NANCHANG FREE LIVE STREAMING http://www.wtatennis.com/news/article/4890487/title/watch-free-live-streaming-from-nanchang \u4e2d\u6587 Espa\u00f1ol English If you continue using our website, we will assume that you consent to the cookies we set. To find out more about cookies, please see our Privacy Policy We use cookies on this website...",
+    "textAfterTable": "var int_42033 = setInterval(function() { $.ajax({ type: 'get', url: match_42033.url, dataType: 'xml', cache: false, success: function(data) { $(data).find('stats').each(function() { var this_ = $(this); match_42033.info = this_.find('MatchInfo'); match_42033.player1_set1 = (match_42033.info.attr('s1A') != '') ? match_42033.info.attr('s1A') : ''; match_42033.player1_set2 = (match_42033.info.attr('s2A') != '') ? match_42033.info.attr('s2A') : ''; match_42033.player1_set3 = (match_42033.info.attr('s3A') != '') ? match_42033.info.attr('s3A') : ''; match_42033.player2_set1 = (match_42033.info.attr('s1B') != '') ? match_42033.info.attr('s1B') : ''; match_42033.player2_set2 = (match_42033.info.attr('s2B') != '') ? match_42033.info.attr('s2B') : ''; match_42033.player2_set3 = (match_42033.info.attr('s3B') != '') ? match_42033.info.attr('s3B') : ''; match_42033.tb1 = match_42033.info.attr('tb1'); match_42033.tb2 = match_42033.info.attr('tb2'); match_42033.tb3 = match_42033.info.attr('tb3'); match_42033.ballA = match_42033.info.attr('ballA'); match_42033.ballB = match_42033.info.attr('ballB'); match_42033.ptA = match_42033.info.attr('ptA'); match_42033.ptB = match_42033.info.attr('ptB'); // apply to elements $('.42033 .ptA').text(match_42033.ptA); $('.42033 .ptB').text(match_42033.ptB); $('.42033 .p1s1 span').text(match_42033.player1_set1); $('.42033 .p1s2 span').text(match_42033.player1_set2); $('.42033 .p1s3 span').text(match_42033.player1_set3); $('.42033 .p2s1 span').text(match_42033.player2_set1); $('.42033 .p2s2 span').text(match_42033.player2_set2); $('.42033 .p2s3 span').text(match_42033.player2_set3); //$('.liveScoreBox sup').text(''); if (match_42033.player1_set1 > match_42033.player2_set1) { match_42033.player_set1_won = 1; $('.42033 .p1s1 span').addClass('pink'); $('.42033 .p2s1 span').removeClass('pink'); if (match_42033.tb1 != '') { $('.42033 .p2s1 sup').text(' ' + match_42033.tb1); if (parseInt(match_42033.tb1) >= 6) { $('.42033 .p1s1 sup').text(' ' + (parseInt(match_42033.tb1) + 2)); } else { $('.42033 .p1s1 sup').text('7'); } } } else if (match_42033.player1_set1 < match_42033.player2_set1) { match_42033.player_set1_won = 2; $('.42033 .p2s1 span').addClass('pink'); $('.42033 .p1s1 span').removeClass('pink'); if (match_42033.tb1 != '') { $('.42033 .p1s1 sup').text(' ' + match_42033.tb1); if (parseInt(match_42033.tb1) >= 6) { $('.42033 .p2s1 sup').text(' ' + (parseInt(match_42033.tb1) + 2)); } else { $('.42033 .p2s1 sup').text('7'); } } } if (match_42033.player1_set2 > match_42033.player2_set2) { match_42033.player_set2_won = 1; $('.42033 .p1s2 span').addClass('pink'); $('.42033 .p2s2 span').removeClass('pink'); if (match_42033.tb2 != '') { $('.42033 .p2s2 sup').text(' ' + match_42033.tb2); if",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

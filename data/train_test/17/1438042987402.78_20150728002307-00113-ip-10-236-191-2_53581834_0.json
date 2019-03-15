@@ -1,0 +1,36 @@
+{
+    "relation": [
+        [
+            "metric",
+            "has manifest",
+            "has meta yml",
+            "has changelog",
+            "manifest matches dist",
+            "prereq matches use"
+        ],
+        [
+            "remedy",
+            "The file \"MANIFEST\" is missing from this distribution. The MANIFEST lists all files included in the distribution. Add a MANIFEST to the distribution. Your buildtool should be able to autogenerate it (eg \"make manifest\" or \"./Build manifest\")",
+            "The file \"META.yml\" is missing from this distribution. META.yml is needed by people maintaining module collections (like CPAN), for people writing installation tools, or just people who want to know some stuff about a distribution before downloading it. Add a META.yml to the distribution. Your buildtool should be able to autogenerate it.",
+            "The distribution hasn't got a Changelog (named something like m/^chang(es?|log)|history$/i. A Changelog helps people decide if they want to upgrade to a new version. Add a Changelog (best named 'Changes') to the distribution. It should list at least major changes implemented in newer versions.",
+            "MANIFEST does not match the contents of this distribution. Run a proper command (\"make manifest\" or \"./Build manifest\", maybe with a force option), or use a distribution builder to generate the MANIFEST. Or update MANIFEST manually.",
+            "This distribution uses a module or a dist that's not listed as a prerequisite. List all used modules in META.yml requires"
+        ]
+    ],
+    "pageTitle": "CPANTS - Config-INI-Access-0.9999",
+    "title": "",
+    "url": "http://cpants.cpanauthors.org/dist/Config-INI-Access-0.9999",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00113-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 53590036,
+    "recordOffset": 53581834,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "These fails do affect your Kwalitee scores. This distribution may not be installed cleanly, or may have some issues in license or documentation. Please consider fixing them, or tell us if they are false. Core metrics Kwalitee Fails CPAN Testers rt.cpan.org search.cpan.org metacpan.org External Resources 85.71 Core Kwalitee 111.43 Kwalitee 2009-01-08 Release Date 0.9 (released by ANDY on 2008-03-25) 0.99 (released by ANDY on 2008-03-25) 0.999 (released by ANDY on 2008-03-25) 0.9999 (released by ANDY on 2009-01-08) 0.9999 (latest) Version ANDY Author/Maintainer Releases Metadata Errors Provides Used By Prerequisites Overview Config-INI-Access Config-INI-Access-0.9999 Home Search Authors Search Distributions Recent Uploads Stats Ranking Kwalitee CPANTS Toggle navigation",
+    "textAfterTable": "Extra metrics These fails affect your total Kwalitee score, but don't affect the one for the Game. Some of them should be fixed by all means. Others are just matters of taste. metric remedy meta yml has license This distribution does not have a license defined in META.yml. Define the license if you are using in Build.PL. If you are using MakeMaker (Makefile.PL) you should upgrade to ExtUtils::MakeMaker version 6.31. use warnings This distribution does not 'use warnings;' (or its equivalents) in all of its modules. Note that this is not about that your modules actually warn when something bad happens. It's bad if nobody can tell if a module warns or not, without reading the source code of your favorite module that actually enforces warnings. In other words, it's bad if someone feels the need to add 'use warnings' to your modules. Add 'use warnings' (or its equivalents) to all modules (this will require perl > 5.6), or convince us that your favorite module is well-known enough and people can easily see the modules warn when something bad happens. is prereq This distribution is not required by another distribution by another author. Convince / force / bribe another CPAN author to use this distribution. Experimental metrics These fails are not serious and don't affect your Kwalitee scores at all.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

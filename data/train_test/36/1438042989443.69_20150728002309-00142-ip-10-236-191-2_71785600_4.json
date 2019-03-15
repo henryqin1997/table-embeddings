@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "Variable",
+            "LD_LIBRARY_PATH (UNIX) PATH (Windows)",
+            "TNS_ADMIN",
+            "TWO_TASK (UNIX) LOCAL (Windows)",
+            "NLS_LANG",
+            "NLS_SORT",
+            "NLS_LENGTH_SEMANTICS",
+            "NLS_NCHAR_CONV_EXCP"
+        ],
+        [
+            "Required or optional",
+            "Required",
+            "Required if you use the tnsnames naming method",
+            "Optional",
+            "Optional",
+            "Optional",
+            "Optional",
+            "Optional"
+        ],
+        [
+            "Settings",
+            "Must be set so that the Oracle Instant Client directory precedes the Oracle Database libraries in the path. The path will be set properly if you use either of the following scripts under install_dir: bin/ttenv quickstart/ttquickstartenv (Unless you installed Quick Start in a different location.)",
+            "Specifies the directory where the tnsnames.ora file is located. This is also where TimesTen looks for a sqlnet.ora file.",
+            "You can use this, whichever is appropriate for your platform, instead of specifying the dbname argument in your OCI logon call. The setting consists of a valid TNS name or easy connect string. See \"Connecting to a TimesTen database from OCI\" for more information.",
+            "See \"Character sets\". Only the character set component is honored and it must indicate a character set supported by TimesTen. The language and territory values are ignored. This environment variable overrides the TimesTen default character set.",
+            "See \"Additional globalization features\". The sort order must be a value supported by TimesTen. This overrides the TimesTen NLS_SORT general connection attribute.",
+            "See \"Additional globalization features\". This overrides the TimesTen NLS_LENGTH_SEMANTICS general connection attribute.",
+            "See \"Additional globalization features\". This overrides the TimesTen NLS_NCHAR_CONV_EXCP general connection attribute."
+        ]
+    ],
+    "pageTitle": "TimesTen Support for Oracle Call Interface",
+    "title": "",
+    "url": "http://download.oracle.com/otn_hosted_doc/timesten/1121/doc/timesten.1121/e13066/oci.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989443.69/warc/CC-MAIN-20150728002309-00142-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71811203,
+    "recordOffset": 71785600,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 01 Feb 2011 02:12:02 GMT",
+    "textBeforeTable": "Table 3-1 Environment variables for TimesTen OCI Refer to \"Environment variables\" in Oracle TimesTen In-Memory Database Installation Guide for additional information about environment variables and ttenv. quickstart/sample_code/proc/ quickstart/sample_code/oci/ You can also use the TimesTen OCI and Pro*C/C++ Makefiles provided with the Quick Start demos to implement appropriate environment settings. These are in the following locations: After installation, you can modify environment variables as appropriate through the TimesTen install_dir/bin/ttenv script or quickstart/ttquickstartenv script applicable to your operating system. Environment variables for executing a TimesTen OCI application are described in Table 3-1. Settings apply to both direct mode and client/server mode except as noted. Environment variables for TimesTen OCI      OCI demo programs  Signal handling and diagnostic framework considerations  Error reporting  Connecting to a TimesTen database from OCI  Compiling and linking OCI applications  Environment variables for TimesTen OCI  This section discusses the following topics for getting started with a TimesTen OCI application: Getting started with TimesTen OCI  Specify an input file or directory for the program to be scanned and an output directory for the ttSrcScan reports.",
+    "textAfterTable": "Note: Refer to \"NLS general connection attributes\" in Oracle TimesTen In-Memory Database Reference for information about the NLS connection attributes mentioned in the table. Compiling and linking OCI applications No changes are required for the steps to compile and link an OCI application in TimesTen. OCI programs that use the Oracle Client 11.1.0.7 library do not have to be recompiled or relinked to be executed with TimesTen. Connecting to a TimesTen database from OCI TimesTen OCI uses the Oracle Instant Client to connect to the TimesTen database. You can connect to the database through either the tnsnames or the easy connect naming method, similarly to how you would connect to an Oracle database through those methods. This section covers the following topics: Using the tnsnames naming method to connect Using an easy connect string to connect Configuring whether to use tnsnames.ora or easy connect Connecting as an externally identified user in OCI Refer to \"Configuring Naming Methods\" in Oracle Database Net Services Administrator's Guide for additional information about tnsnames, easy connect, and",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

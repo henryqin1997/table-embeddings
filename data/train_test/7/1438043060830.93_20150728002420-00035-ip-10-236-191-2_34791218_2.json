@@ -1,0 +1,93 @@
+{
+    "relation": [
+        [
+            "Select Type",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE"
+        ],
+        [
+            "Table",
+            "user",
+            "user_profile",
+            "user_option",
+            "user_privacy",
+            "session_activity"
+        ],
+        [
+            "Type",
+            "const",
+            "const",
+            "const",
+            "const",
+            "const"
+        ],
+        [
+            "Possible Keys",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY"
+        ],
+        [
+            "Key",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY"
+        ],
+        [
+            "Key Len",
+            "4",
+            "4",
+            "4",
+            "4",
+            "8"
+        ],
+        [
+            "Ref",
+            "const",
+            "const",
+            "const",
+            "const",
+            "const,const"
+        ],
+        [
+            "Rows",
+            "1",
+            "1",
+            "1",
+            "1",
+            "0"
+        ],
+        [
+            "Extra",
+            "",
+            "",
+            "",
+            "",
+            "unique row not found"
+        ]
+    ],
+    "pageTitle": "",
+    "title": "",
+    "url": "http://boards.theforce.net/members/lefty2u.1159320/?_debug=1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043060830.93/warc/CC-MAIN-20150728002420-00035-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 34799420,
+    "recordOffset": 34791218,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 05 Aug 2015 04:54:13 GMT",
+    "textBeforeTable": "Run Time: 0.003187 WHERE data_key IN ('options', 'languages', 'contentTypes', 'codeEventListeners', 'cron', 'simpleCache', 'routesPublic', 'nodeTypes', 'bannedIps', 'discouragedIps', 'styles', 'displayStyles', 'smilies', 'bbCode', 'threadPrefixes', 'trophyUserTitles', 'reportCounts', 'moderationCounts', 'notices', 'userFieldsInfo') FROM xf_data_registry SELECT data_key, data_value   Queries (9, time: 0.0081s, 5.6%) Memory: 7.7467 MB (Peak: 8.1913 MB) Page Time: 0.1443s",
+    "textAfterTable": "session_activity.view_date, session_activity.controller_name, session_activity.controller_action, session_activity.params, session_activity.ip, 0 AS following_0 FROM xf_user AS user INNER JOIN xf_user_profile AS user_profile ON (user_profile.user_id = user.user_id) INNER JOIN xf_user_option AS user_option ON (user_option.user_id = user.user_id) INNER JOIN xf_user_privacy AS user_privacy ON (user_privacy.user_id = user.user_id) LEFT JOIN xf_session_activity AS session_activity ON (session_activity.user_id = user.user_id AND session_activity.unique_key = user.user_id) WHERE user.user_id = ? Params: 1159320 Run Time: 0.002691 Select Type Table Type Possible Keys Key Key Len Ref Rows Extra SIMPLE user const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE user_profile const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE user_option const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE user_privacy const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE session_activity const PRIMARY PRIMARY 8 const,const 0 unique row not found INSERT INTO `xf_session` (`session_id`, `session_data`, `expiry_date`) VALUES (?, ?, ?) Params: 6e8939f4b422e4fd0f7463b847ebf0ad, a:5:{s:12:\"sessionStart\";i:1438750453;s:2:\"ip\";i:1796481709;s:9:\"userAgent\";s:39:\"CCBot/2.0 (http://commoncrawl.org/faq/)\";s:7:\"isRobot\";b:0;s:16:\"previousActivity\";i:0;}, 1438754053 Run Time: 0.000218  SELECT title, template_compiled FROM xf_template_compiled WHERE title IN ('page_nav', 'bdtagme_tag', 'error_with_login', 'nat_childlinks') AND style_id = ? AND language_id = ? Params: 8, 1 Run Time: 0.000339 Select Type Table Type Possible Keys Key Key Len Ref Rows Extra SIMPLE xf_template_compiled range PRIMARY PRIMARY 160 \u00a0 3 Using where  SELECT title, phrase_text FROM xf_phrase_compiled WHERE language_id = ? AND title IN ('login_required') Params: 1 Run Time: 0.000216",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

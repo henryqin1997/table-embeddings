@@ -1,0 +1,58 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "Pixel scale",
+            "Pixel pitch",
+            "Pixels",
+            "FOV",
+            "FOV diameter 1",
+            "Read noise",
+            "CDS Exp time",
+            "Fowler read noise 2",
+            "Full well"
+        ],
+        [
+            "Value",
+            "0.035",
+            "18",
+            "1024x1024",
+            "20x20",
+            "28",
+            "14.6",
+            "10.6",
+            "5.25",
+            "1.0\u00d710^5"
+        ],
+        [
+            "Units",
+            "arcsecs/pixel",
+            "microns",
+            "pixels",
+            "arcsec",
+            "arcsecs",
+            "e-/CDS read",
+            "seconds",
+            "e-",
+            "e-"
+        ]
+    ],
+    "pageTitle": "ShARCS Sensitivity",
+    "title": "",
+    "url": "http://www.ucolick.org/~srikar/ShARCS/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 14,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00078-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 804925071,
+    "recordOffset": 804910128,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{26626=Modified: 2013-10-10 22:43, 2650=The ShaneAO system upgrade is in the process of being tested and installed on the Shane telescope with plans for first light in late 2013. This upgrade comprises:, 438=The Lick Observatory\u2019s Shane 3-meter telescope is receiving a new infrared camera, adaptive optics system and laser guide star, collectively called ShaneAO. We present the results of modelling the emissivity and throughput of the ShaneAO system in the form of sky backgrounds and limiting magnitudes in the J , H and K bands for point sources and constant surface brightness patches. In addition, for spectroscopy we provide minimum exposure times required to overcome detector limits and sky background noise and magnitude limits for point sources. Future updates to this site will include details on imaging and spectroscopy limits for sources with surface brightness profiles and information on the polarimetric capabilities of the new system. Initial numbers presented here highlight the limits of an intermediate system state planned for the latter half of the first observing semester of 2014 dubbed ShARCS 8 in which the new IR camera, ShARCS, will be installed and operational but not the new laser, thus limiting the AO system to 8x8 subapertures. Observing time for this duration will be in shared-risk mode. Once the new laser is operational and wavefront sensing starts using 16x16 subapertures, the system will operate at the levels labelled ShARCS 16. The model, whose results are presented below, was validated by comparing its results to the Keck telescope adaptive optics system model and by estimating the sky background and limiting magnitudes for IRCAL, the existing infra-red detector on the Shane telescope, and comparing to measured results. We predict that the ShaneAO system will measure lower sky backgrounds and achieve 20% higher throughput across the JHK bands despite having more optical surfaces than the current system once the new laser is in operation. It will enable imaging and spectroscopy of fainter objects (by 1-2 magnitudes) and will be faster to reach a fiducial signal-to-noise ratio by a factor of 10-13. Full details of the model's assumptions and output are available here.}",
+    "lastModified": "Mon, 14 Apr 2014 03:51:30 GMT",
+    "textBeforeTable": "Table 1: Sky background and throughput results for new ShaneAO system. The new system will use the same filters as the current system (IRCAL filters) and all numbers presented below assume a dust coating fraction of 3% of the area on optics outside the dewar. A worst-case summer time dome temperature of 291 K (18 C) and a coating degradation of 2.5% for aluminized surfaces is also assumed. Hence, the system should perform better on colder nights and after the primary mirror is re-coated (scheduled for 2014). Strehl ratios for all calculations are derived from models detailed in [6]. Sky backgrounds and throughput The new optical system passes a 120\" diameter field of regard to the tip/tilt sensor which allows a much wider radius from which to select a tip/tilt guide star (~16th R magnitude or brighter) when using the AO system in laser guide star (LGS) mode. For natural guide star mode (NGS), the field of view is 20\" square (or 28\" diagonal). Conservatively, we advise using the NGS magnitude limit for the old system (R~13th magnitude). We expect these limits to improve with the new system but will only know by how much once it is on-sky. Spectroscopy will also be much improved because of the aforementioned improvements in stability. The ability to reliably rotate the instrument structure and the slit will allow stable object",
+    "textAfterTable": "IRCAL, our model predicts that the background in the K band will be a magnitude fainter and throughput will increase by 20-30% across all bands. The reduced background for ShaneAO is illustrated by Figure 1. Figure 1: Total background and emissivity comparison as determined by our model between the existing system (IRCAL) and the new system (ShARCS). Limiting magnitudes - point sources Limiting magnitudes for a SNR=5 detection of point sources for the current and new systems is shown in Table 2. ShaneAO should be able to image point sources 1.3-2 magnitudes fainter than the existing system can. Table 2: Point source limiting magnitudes (Vega system) in LGS mode: IRCAL predicted (300s Fowler sample - 16 reads) and ShARCS (8 or 16 subapertures) predicted (300s Fowler sample - 32 reads). Filter IRCAL ShARCS 8 ShARCS",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

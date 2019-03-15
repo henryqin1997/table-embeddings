@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Name",
+            "Statement of Hon. Christopher H. Smith",
+            "Statement of Hon. Ben Nighthorse Campbell",
+            "Diane F. Orentlicher",
+            "Ina Zoon",
+            "The Hon. Monika Horakova",
+            "Rumyan Russinov",
+            "Angela Kocze",
+            "Karolina Bamanova"
+        ],
+        [
+            "Title",
+            "Chairman",
+            "Co-Chairman",
+            "Professor of Law",
+            "Consultant",
+            "M.P.",
+            "Director",
+            "Human Rights Education Director",
+            "Member"
+        ],
+        [
+            "Affiliation",
+            "Helsinki Commission",
+            "Helsinki Commission",
+            "American University",
+            "Open Society Institute",
+            "Czech Parliament",
+            "Roma Participation Project",
+            "European Roma Rights Center",
+            "Czechoslovak Roma Association in Canada"
+        ]
+    ],
+    "pageTitle": "CSCE :: Hearing :: Hearing: Human Rights of the Romani Minority",
+    "title": "",
+    "url": "http://csce.gov/index.cfm?FuseAction=ContentRecords.ViewDetail&ContentRecord_id=51&Region_id=78&Issue_id=0&ContentType=H,B&ContentRecordType=H&CFID=9098727&CFTOKEN=80717269",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043058631.99/warc/CC-MAIN-20150728002418-00147-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 56714899,
+    "recordOffset": 56700906,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Witnesses: Official Transcript: HEARING: HUMAN RIGHTS OF THE ROMANI MINORITY June 8, 2000 - } return tabName.substring(3,tabName.length); function getDivFromTab(tabName){ } } } currentTab = callingElement.id; // set currentTab $(getDivFromTab(callingElement.id)).style.display = \"block\"; // show this div content $(currentTab).select(\".TabActive_Right\").each( function(el){ tmp=el.removeClassName(\"TabActive_Right\"); tmp=el.addClassName(\"Tab_Right\"); } ); $(currentTab).select(\".TabActive_Label\").each( function(el){ tmp=el.removeClassName(\"TabActive_Label\"); tmp=el.addClassName(\"Tab_Label\"); } ); $(currentTab).select(\".TabActive_Left\").each( function(el){ tmp=el.removeClassName(\"TabActive_Left\"); tmp=el.addClassName(\"Tab_Left\"); } ); $(currentTab).className = \"Tab\"; // reset the currently active tab $(getDivFromTab(currentTab)).style.display = \"none\"; // hide current content if(callingElement.id != currentTab){ // if not current } else { window.location=\"http://csce.gov/index.cfm?FuseAction=ContentRecords.Home&ContentType=G\"; } else if(callingElement.id == \"tabReportArticles\"){ window.location=\"http://csce.gov/index.cfm?FuseAction=AboutCommission.WorkOfCommission\"; } else if(callingElement.id == \"tabBackToAboutCommission\"){ window.open(\"http://www.osce.org/documents/\",\"_blank\"); } else if(callingElement.id == \"tabDocumentLibrary\"){ window.location=\"http://csce.gov/index.cfm?FuseAction=AboutHelsinkiProcess.OSCE\"; } else if(callingElement.id == \"tabAboutHelsinkiProcess\"){ window.location=\"http://csce.gov/index.cfm?FuseAction=AboutCommission.WorkOfCommission&activeTab=3\"; if(callingElement.id == \"tabBackToCommissionStaff\"){ // OVERRIDES!! function clickAct(callingElement){ } } $(callingElement).select(\".TabActive_Right\").each( function(el){ tmp=el.removeClassName(\"TabActive_Right\"); tmp=el.addClassName(\"Tab_Right\"); } ); $(callingElement).select(\".TabActive_Label\").each( function(el){ tmp=el.removeClassName(\"TabActive_Label\"); tmp=el.addClassName(\"Tab_Label\"); } ); $(callingElement).select(\".TabActive_Left\").each( function(el){ tmp=el.removeClassName(\"TabActive_Left\"); tmp=el.addClassName(\"Tab_Left\"); } ); callingElement.className = \"Tab\"; // reset the image if(callingElement.id != currentTab){ // if not Hearings & Briefings",
+    "textAfterTable": "Filter by: \u00a0 -- Issue -- Citizenship and Political Rights Combating Corruption Conflict Prevention/Rehabilitation Confidence and Security Building Measures Economic Cooperation Elections Environment Equality of Opportunity for Men and Women Freedom of Association Freedom of the Media Freedom of Movement Freedom of Speech and Expression Freedom of Thought, Conscience, and Religion or Belief International Humanitarian Law Migration, Refugees and Displaced Persons Military Aspects of Security National Minorities OSCE Institutions/Structures/Meetings Right of Peaceful Assembly Prevention of Torture Property Restitution Racism/Anti-Semitism Roma Rule of Law/Independence of Judiciary Trafficking in Human Beings \u00a0 \u00a0 -- Country -- -- Participating States -- Albania Andorra Armenia Australia Austria Azerbaijan Belarus Belgium Bosnia",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

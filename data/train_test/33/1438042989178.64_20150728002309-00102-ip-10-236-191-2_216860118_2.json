@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "Ticket",
+            "#1116",
+            "#1206",
+            "#1242",
+            "#1076",
+            "#1109"
+        ],
+        [
+            "Summary",
+            "TypeError: cannot concatenate 'str' and 'int' objects",
+            "upload_to field of File/ImageField ignored",
+            "hstore add_column default must be '' not {}",
+            "MySQL: delete_unique() fails if the index \"supports\" a FK",
+            "m2m tables greted twice"
+        ],
+        [
+            "Status",
+            "new",
+            "new",
+            "new",
+            "accepted",
+            "accepted"
+        ],
+        [
+            "Owner",
+            "andrew",
+            "andrew",
+            "andrew",
+            "andrew",
+            "andrew"
+        ],
+        [
+            "Type",
+            "defect",
+            "defect",
+            "defect",
+            "defect",
+            "defect"
+        ],
+        [
+            "Priority",
+            "minor",
+            "minor",
+            "major",
+            "minor",
+            "minor"
+        ],
+        [
+            "Milestone",
+            "1.0",
+            "1.0",
+            "",
+            "1.0",
+            "The Future"
+        ]
+    ],
+    "pageTitle": "Custom Query \u2013 South",
+    "title": "",
+    "url": "http://south.aeracode.org/query?status=!closed&version=0.7.5&desc=1&order=status",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989178.64/warc/CC-MAIN-20150728002309-00102-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 216868223,
+    "recordOffset": 216860118,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Max items per page Show under each result: Description Group results by Component Milestone Owner Priority Reporter Resolution Status Type Version descending Cc Keywords Reporter Modified Created Resolution Component Milestone Priority Type Owner Status Version Summary Columns Or\u00a0 CcComponentCreatedDescriptionKeywordsMilestoneModifiedOwnerPriorityReporterResolution",
+    "textAfterTable": "Note: See TracQuery for help on using queries. Download in other formats: RSS Feed Comma-delimited Text Tab-delimited Text Powered by Trac 0.12.3 By Edgewall Software. South, intelligent migrations for Django An Aeracode project",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "5 (7)",
+            "12 (5)",
+            "19 (1)",
+            "26 (5)"
+        ],
+        [
+            "M",
+            "",
+            "6 (4)",
+            "13 (4)",
+            "20 (7)",
+            "27 (1)"
+        ],
+        [
+            "T",
+            "",
+            "7",
+            "14",
+            "21 (3)",
+            "28 (6)"
+        ],
+        [
+            "W",
+            "1 (1)",
+            "8 (2)",
+            "15 (6)",
+            "22",
+            "29"
+        ],
+        [
+            "T",
+            "2 (1)",
+            "9",
+            "16",
+            "23 (3)",
+            "30 (3)"
+        ],
+        [
+            "F",
+            "3",
+            "10",
+            "17 (2)",
+            "24 (3)",
+            "31 (6)"
+        ],
+        [
+            "S",
+            "4 (2)",
+            "11 (3)",
+            "18",
+            "25",
+            ""
+        ]
+    ],
+    "pageTitle": "Jmol / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/jmol/mailman/jmol-commits/?viewmonth=201305&viewday=23",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00101-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 222133871,
+    "recordOffset": 222115474,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul (57) Jun (48) May (48) Apr (49) Mar (74) Feb (82) Jan (76) 2015 Dec (15) Nov (58) Oct (54) Sep (49) Aug (68) Jul (35) Jun (84) May (72) Apr (125) Mar (132) Feb (146) Jan (82) 2014 Dec (90) Nov (148) Oct (136) Sep (73) Aug (104) Jul (126) Jun (103) May (75) Apr (143) Mar (81) Feb (53)",
+    "textAfterTable": "Showing 3 results of 3 Flat | Threaded [Jmol-commits] SF.net SVN: jmol:[18246] trunk/Jmol/src/org/jmol/adapter/readers/pymol/ PyMOLReader.java From: <hansonr@us...> - 2013-05-23 23:47:34 Revision: 18246 http://sourceforge.net/p/jmol/code/18246 Author: hansonr Date: 2013-05-23 23:47:30 +0000 (Thu, 23 May 2013) Log Message: ----------- ___JmolVersion=\"13.1.16_dev_2013.05.23a\" PyMOL: measurement font/offsets enabled -- adds measure ID \"xxx\" FONT scale face style -- adds measure ID \"xxx\" OFFSET [mode, sx, sy, sz, ax, ay, az] -- adds measure ID \"xxx\" OFFSET {sx, sy, sz} code: Text.java, Object2d.java moved from shapes to modelset Modified Paths: -------------- trunk/Jmol/src/org/jmol/adapter/readers/pymol/PyMOLReader.java Modified: trunk/Jmol/src/org/jmol/adapter/readers/pymol/PyMOLReader.java =================================================================== --- trunk/Jmol/src/org/jmol/adapter/readers/pymol/PyMOLReader.java\t2013-05-23 23:45:04 UTC (rev 18245) +++ trunk/Jmol/src/org/jmol/adapter/readers/pymol/PyMOLReader.java\t2013-05-23 23:47:30 UTC (rev 18246) @@ -1866,7 +1866,7 @@ @SuppressWarnings(\"unchecked\") private void processScenes(Map<String, Object> map) { JmolList<Object> order = getMapList(map, \"scene_order\"); - if (order.size() == 0) + if (order == null || order.size() == 0) return; Map<String, Object> scenes = (Map<String, Object>) map.get(\"scene_dict\"); //JmolList<Object> names = getMapList(map, \"names\"); This was sent by the SourceForge.net collaborative development platform, the world's largest Open Source development site. [Jmol-commits] SF.net SVN: jmol:[18244] trunk/Jmol/src/org/jmol/adapter/readers/pymol From: <hansonr@us...> - 2013-05-23 18:10:15",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

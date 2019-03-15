@@ -1,0 +1,72 @@
+{
+    "relation": [
+        [
+            "Status",
+            "IN PROGRESS",
+            "TO DO",
+            "DONE",
+            "DONE",
+            "DONE",
+            "DONE",
+            "IN PROGRESS",
+            "IN PROGRESS",
+            "IN PROGRESS",
+            "IN PROGRESS"
+        ],
+        [
+            "Project",
+            "Microblog",
+            "StackFolder",
+            "ComicStrip",
+            "Calculator",
+            "QML Wallpapers",
+            "Dictionary KRunner",
+            "Eyes",
+            "FifteenPuzzle",
+            "Luna",
+            "Timer"
+        ],
+        [
+            "Description",
+            "replace with QML version",
+            "Add applet for quick browse the stack of folders",
+            "Replace with QML version",
+            "Replace with QML version",
+            "Make it possible to have animated wallpapers written in QtQuick technologies.",
+            "Look up words in the dictionary by typing in 'define {word}' in krunner. Blog",
+            "replace with QML version",
+            "replace with QML version",
+            "replace with QML version",
+            "replace with QML version"
+        ],
+        [
+            "Contact",
+            "Sebastian K\u00fcgler",
+            "Ural Mullabaev",
+            "Reza Fatahilah Shah",
+            "Luiz Rom\u00e1rio Santana Rios",
+            "Aleix Pol Gonzalez",
+            "Jason A. Donenfeld",
+            "Davide Bettio",
+            "Davide Bettio",
+            "Davide Bettio",
+            "Davide Bettio"
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Schedules/KDE4/4.10 Feature Plan\" - KDE TechBase",
+    "title": "",
+    "url": "https://techbase.kde.org/index.php?title=Schedules/KDE4/4.10_Feature_Plan&diff=77234&oldid=75934",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 12,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00053-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 904165591,
+    "recordOffset": 904134598,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "kdelibs 13 kdeutils 12 kdesdk 11 kdeplasma-addons 10 kdepim 9 kdenetwork 8 kdemultimedia 7 kdegraphics 6 kdegames 5 kdeedu 4 kde-baseapps 3 kde-workspace 2 kde-runtime 1 kdelibs Contents done => completed in-progress => started, but not completed yet to do => not started yet Legend: Schedules/KDE4/4.9 Feature Plan (previous major release) Schedules/KDE4/4.10 Release Schedule See also: This is a list of planned features for the SC 4.10 release. Revision as of 19:04, 12 December 2012 |} \u00a0 |} \u00a0 {{FeatureTodo|Umbrello|add spline based association lines to avoid autolayout widget/line overlapping (needs volunteers)|ralf.habacker@freenet.de|Ralf Habacker}} \u00a0 {{FeatureTodo|Umbrello|add spline based association lines to avoid autolayout widget/line overlapping (needs volunteers)|ralf.habacker@freenet.de|Ralf Habacker}} \u00a0",
+    "textAfterTable": "kde-workspace Status Project Description Contact DONE ksmserver Merge the new qml based screen locker Marco Martin <mart@kde.org> TO DO kwin windows that are moved to another desktop should be treated as sticky windows (bug #213847) <kwin-bugs-null@kde.org> TO DO kwin Fix fullscreen state handling: NETWM says it's bound to focus and not stacking order, also see bug #224600 (bug #296076) <kwin-bugs-null@kde.org> TO DO kwin Medium focus stealing prevention should also prevent focus stealing when the timestamp on the active window is uncertain (bug #304746)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

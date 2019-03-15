@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust",
+            "Precipitation"
+        ],
+        [
+            "Avg",
+            "56.9 \u00b0F",
+            "46.8 \u00b0F",
+            "71 %",
+            "29.94 in",
+            "6.9 mph",
+            "",
+            "0.20 in"
+        ],
+        [
+            "Avg High",
+            "65.1 \u00b0F",
+            "52.9 \u00b0F",
+            "91.1 %",
+            "30.03 in",
+            "11 mph",
+            "25.7 mph",
+            ""
+        ],
+        [
+            "Avg Low",
+            "48.8 \u00b0F",
+            "39.8 \u00b0F",
+            "47 %",
+            "29.85 in",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Record High",
+            "81.9 \u00b0F (2015)",
+            "60.3 \u00b0F (2009)",
+            "",
+            "30.36 in (2004)",
+            "24.2 mph (2010)",
+            "36.8 mph (2010)",
+            "0.36 in (2001)"
+        ],
+        [
+            "Record Low",
+            "40.5 \u00b0F (2006)",
+            "22.1 \u00b0F (2006)",
+            "14 % (2006)",
+            "29.55 in (2010)",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Put In Bay, Ohio - May 8th - Daily Weather Averages (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherdaily.php3?s=288633&cityname=Put-In-Bay-Ohio-United-States-of-America&month=5&theday=8&units=us",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00173-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 821896590,
+    "recordOffset": 821880690,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] DAILY WEATHER AVERAGE - MAY 8 [ \u2190 Previous Day ] } window.print(); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); return $(this).text().replace(\"2015\", \"\"); $('.datepicker-switch').text(function () { }); window.location = url; var url = \"/weather/weatherdaily.php3?s=288633&\" + pieces + \"&citynamePut+In+Bay%2C+Ohio%2C+United+States+of+America&set=\"; var pieces = tosplit.replace(/(.*?)-(.*?)-(.*?)/,\"month=$2&theday=$3\"); var tosplit = event.format(); $('#datepicker').datepicker().on('changeDate', function (event) { }); endDate: \"2015-12-31\", startDate: \"2015-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Wind Direction SSE (153.4 \u00b0) Weather Element Total Heating Degree Days 9.9 (Base 18.3) Cooling Degree Days 2.6 (Base 18.3) Growing Degree Days 8.6 (Base 10) Total Years on Record: 14",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

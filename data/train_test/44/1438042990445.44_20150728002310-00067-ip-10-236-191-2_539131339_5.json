@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "",
+            "J. Randle",
+            "C. Chelf",
+            "J. Smith",
+            "J. Stewart",
+            "W. Lunt"
+        ],
+        [
+            "ATT",
+            "15",
+            "4",
+            "3",
+            "1",
+            "1"
+        ],
+        [
+            "YDS",
+            "43",
+            "33",
+            "9",
+            "8",
+            "-6"
+        ],
+        [
+            "AVG",
+            "2.87",
+            "8.25",
+            "3.00",
+            "8.00",
+            "-6.00"
+        ],
+        [
+            "TD",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ]
+    ],
+    "pageTitle": "College Football Box Scores | KSL.com",
+    "title": "",
+    "url": "http://www.ksl.com/?nid=925&page=_sport_football_competition:32104/sport/ncaaf",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990445.44/warc/CC-MAIN-20150728002310-00067-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 539168379,
+    "recordOffset": 539131339,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Oklahoma State at Kansas State (\u0000Bill Snyder Family Football Stadium, Manhattan, Kansas) OKLAHOMA STATE 30 KANSAS STATE 44 FINAL On Off | Auto Refresh: College Football Box Scores beta --> window.onload=timedRefresh(30000); } document.getElementById('on').style.cursor = \"pointer\"; document.getElementById('on').innerHTML = \"On\"; document.getElementById('off').innerHTML = \"Off\"; clearTimeout(t); function stopCount(timeoutPeriod) { } t = setTimeout(\"saveScroll()\",timeoutPeriod); function timedRefresh(timeoutPeriod) { $(document).ready(function(){ loadScroll() }); var t; // add onload=\"loadScroll()\" onunload=\"saveScroll()\" to the opening BODY tag } } window.scrollTo(parseInt(ar[0]), parseInt(ar[1])) if(ar.length == 2){ var ar = inf.split(\"_\") if(!inf){ return } inf=getCookie(cookieName) function loadScroll(){ // added function } location.reload(true) setCookie(cookieName,Data,expdate) Data=x + \"_\" + y var y = (document.documentElement.scrollTop) var x = (document.pageXOffset?document.pageXOffset:document.documentElement.scrollLeft) expdate.setTime (expdate.getTime() + (2*60*1000)); // expiry date var expdate = new Date () function saveScroll(){ // added function } \"; expires=Thu, 01-Jan-00 00:00:01 GMT\" ((domain == null) ? \"\" : \"; domain=\" + domain) + ((path == null) ? \"\" : \"; path=\" + path) + document.cookie = name + \"=\" + function deleteCookie(name,path,domain){ } return unescape(document.cookie.substring(offset,",
+    "textAfterTable": "OKST - Austin Hays 54 yd. pass from Wes Lunt (Quinn Sharp kick) 7 0 5:58 KSU - John Hubert 1 yd. rush (Anthony Cantele kick) 7 7 2nd Quarter 14:13 KSU - Anthony Cantele 23 yd. field goal 7 10 10:51 KSU - John Hubert 5 yd. rush (Anthony Cantele kick) 7 17 7:47 OKST - Quinn Sharp 25 yd. field goal 10 17 7:35 KSU - Kansas State touchdown. 10 24 7:24 OKST - Oklahoma State touchdown. 17 24 2:35 KSU - Allen Chapman 29 yd. interception return (Anthony Cantele kick) 17 31 3rd Quarter 9:47",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

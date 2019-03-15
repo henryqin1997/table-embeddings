@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Subprogram",
+            "GET_CLIENT_HOSTNAME Function",
+            "GET_CLIENT_IP Function",
+            "GET_PASSWORD Function",
+            "GET_USER_ID Function",
+            "SET_AUTHORIZATION Procedure",
+            "SET_PROTECTION_REALM Procedure"
+        ],
+        [
+            "Description",
+            "Returns the client's hostname",
+            "Returns the client's IP address",
+            "Returns the password that the user entered",
+            "Returns the username that the user entered",
+            "Enables the PL/SQL application to use custom authentication",
+            "Defines the realm that the page is in"
+        ]
+    ],
+    "pageTitle": "OWA_SEC",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E11882_01/appdev.112/e23448/w_sec.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985647.51/warc/CC-MAIN-20150728002305-00205-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 77588074,
+    "recordOffset": 77579872,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 19 May 2015 17:52:56 GMT",
+    "textBeforeTable": "Table 193-1 OWA_SEC Package Subprograms Summary of OWA_SEC Subprograms Parameters that have default values are optional. Operational Notes Operational Notes Using OWA_SEC Summary of OWA_SEC Subprograms Operational Notes Using OWA_SEC The chapter contains the following topics: Oracle Fusion Middleware User's Guide for mod_plsql Oracle Fusion Middleware Administrator's Guide for Oracle HTTP Server See Also: For more information about implementation of this package: The OWA_SEC package provides an interface for custom authentication. 193 OWA_SEC 197/265 Skip Headers-->",
+    "textAfterTable": "GET_CLIENT_HOSTNAME Function This function returns the hostname of the client. Syntax  OWA_SEC.GET_CLIENT_HOSTNAME RETURN VARCHAR2; Return Values The hostname. GET_CLIENT_IP Function This function returns the IP address of the client. Syntax  OWA_SEC.GET_CLIENT_IP RETURN OWA_UTIL.IP_ADDRESS; Return Values The IP address. The owa_util.ip_address data type is a PL/SQL table where the first four elements contain the four numbers of the IP address. For example, if the IP address is 123.45.67.89 and the variable ipaddr is of the owa_util.ip_address data type, the variable would contain the following values:  ipaddr(1) = 123 ipaddr(2) = 45 ipaddr(3) = 67 ipaddr(4) = 89 GET_PASSWORD Function This function returns the password that the user used to log in. Syntax  OWA_SEC.GET_PASSWORD RETURN VARCHAR2; Return Values The password. Usage Notes For security reasons, this function returns a true value only when custom authentication is used. If you call this function when you are not using custom authentication, the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

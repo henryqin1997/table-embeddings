@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "$value",
+            "$i",
+            "$prefix",
+            "$enabled",
+            "$checkbox",
+            "$publish_up",
+            "$publish_down"
+        ],
+        [
+            "Type",
+            "int",
+            "int",
+            "array",
+            "boolean",
+            "string",
+            "string",
+            "string"
+        ],
+        [
+            "Default",
+            "",
+            "",
+            "",
+            "true",
+            "'cb'",
+            "null",
+            "null"
+        ],
+        [
+            "Description",
+            "The state value.",
+            "The row index",
+            "An optional task prefix or an array of options",
+            "An optional setting for access control on the action.",
+            "An optional prefix for checkboxes.",
+            "An optional start publishing date.",
+            "An optional finish publishing date."
+        ]
+    ],
+    "pageTitle": "API17:JHtmlJGrid::published - Joomla! Documentation",
+    "title": "",
+    "url": "https://docs.joomla.org/index.php?title=API17:JHtmlJGrid::published&direction=prev&oldid=57033",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.92/warc/CC-MAIN-20150728002310-00341-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 878459423,
+    "recordOffset": 878448821,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "public static JHtmlJGrid::published ($value, $i, $prefix= '', $enabled=true, $checkbox= 'cb', $publish_up=null, $publish_down=null)   Synopsis Since Description:JHtmlJGrid::published [Edit Descripton] Returns a published state on a grid. Description JHtmlJGrid::published    Joomla! version which is no longer supported. It exists only as a historical reference, will not be improved and its content may be incomplete. Create Pages in this namespace. Pages contain information for a Do Not Edit or This Namespace has been archived - Please      diff) Newer revision \u2192 ( diff) | Latest revision ( \u2190 Older revision | diff) (",
+    "textAfterTable": "Returns The Html code Defined in libraries/joomla/html/html/jgrid.php (line 122) see source code in BitBucket Referenced by See also [Edit See Also] JHtmlJGrid Other versions of this method SeeAlso:JHtmlJGrid::published Examples <CodeExamplesForm /> Retrieved from \u2018 https://docs.joomla.org/index.php?title=API17:JHtmlJGrid::published&oldid=49958\u2019 Categories: JHtmlJGrid JHtmlJGrid::published Content is available under Joomla! EDL unless otherwise noted. Joomla!\u00ae is a registered trademark of Open Source Matters, Inc. Privacy policy About Joomla! Documentation",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

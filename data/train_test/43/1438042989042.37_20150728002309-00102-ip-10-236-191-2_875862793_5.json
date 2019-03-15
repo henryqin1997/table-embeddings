@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Function",
+            "array ticket.priority.getAll()",
+            "string ticket.priority.get(string name)",
+            "int ticket.priority.delete(string name)",
+            "int ticket.priority.create(string name, string value)",
+            "int ticket.priority.update(string name, string value)"
+        ],
+        [
+            "Description",
+            "Get a list of all ticket priority names.",
+            "Get a ticket priority.",
+            "Delete a ticket priority",
+            "Create a new ticket priority with the given value.",
+            "Update ticket priority with the given value."
+        ],
+        [
+            "Permission required",
+            "TICKET_VIEW",
+            "TICKET_VIEW",
+            "TICKET_ADMIN",
+            "TICKET_ADMIN",
+            "TICKET_ADMIN"
+        ]
+    ],
+    "pageTitle": "Remote Procedure Call (RPC) \u2013 Django",
+    "title": "",
+    "url": "https://code.djangoproject.com/rpc",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989042.37/warc/CC-MAIN-20150728002309-00102-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 875870995,
+    "recordOffset": 875862793,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{34503=\u00a9 2005-2015 Django Software Foundation unless otherwise noted. Django is a registered trademark of the Django Software Foundation.}",
+    "textBeforeTable": "search - Search Trac. RPC exported functions [1, 1, 2-r13776] >>> p.system.getAPIVersion() >>> p = ServerProxy('https://anonymous:your_password@code.djangoproject.com/login/rpc') >>> from xmlrpclib import ServerProxy  The following snippet illustrates how to perform authenticated calls in Python.  <value><string>= Welcome to.... <param> <params> <methodResponse> <?xml version='1.0'?> user: ~ > curl -H \"Content-Type: application/xml\" --data @body.xml https://code.djangoproject.com/rpc </methodCall> </params> <param><string>WikiStart</string></param> <params> <methodName>wiki.getPage</methodName> <methodCall> <?xml version=\"1.0\"?> user: ~ > cat body.xml  There should be XML-RPC client implementations available for all popular programming languages. Example call using curl:      https://code.djangoproject.com/login/xmlrpc for authenticated access  https://code.djangoproject.com/login/rpc for authenticated access  https://code.djangoproject.com/xmlrpc for anonymous access  https://code.djangoproject.com/rpc for anonymous access  {'Content-Type': 'text/xml'} header with request to:   https://code.djangoproject.com/login/xmlrpc for authenticated access  https://code.djangoproject.com/login/rpc for authenticated access  https://code.djangoproject.com/xmlrpc for anonymous access  https://code.djangoproject.com/rpc for anonymous access  {'Content-Type': 'application/xml'} header with request to: For XML-RPC protocol, use any one of: XML-RPC     \"id\" is optional, and any marker value received with a request is returned with the response.   {\"__jsonclass__\": [\"binary\", \"<base64-encoded>\"]} => Binary  {\"__jsonclass__\": [\"datetime\", \"YYYY-MM-DDTHH:MM:SS\"]} => DateTime (UTC)   JSON-RPC has no formalized type system, so a class-hint system is used for input and output of non-standard types: Implementation details:",
+    "textAfterTable": "array system.listMethods() This method returns a list of strings, one for each (non-system) method supported by the RPC server. XML_RPC string system.methodHelp(string method) This method takes one parameter, the name of a method implemented by the RPC server. It returns a documentation string describing the use of that method. If no such string is available, an empty string is returned. The documentation string may contain HTML markup. XML_RPC array system.methodSignature(string method) This method takes one parameter, the name of a method implemented by the RPC server. It returns an array of possible signatures for this method. A signature is an array of types. The first of these types is the return type of the method, the rest are parameters. XML_RPC array system.getAPIVersion() Returns a list with three elements. First element is the epoch (0=Trac 0.10, 1=Trac 0.11 or higher). Second element is the major version number, third is the minor. Changes to the major version indicate API breaking changes, while minor version changes are simple additions, bug fixes, etc. XML_RPC ticket - An interface to Trac's ticketing system. Function Description Permission required array ticket.query(string qstr=\"status!=closed\") Perform a ticket query, returning a list of ticket ID's. All queries will use stored settings for maximum number",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}
