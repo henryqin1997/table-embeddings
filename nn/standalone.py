@@ -77,7 +77,7 @@ if __name__ == "__main__":
     data = json.load(open(table_path))
     input, target = generate_input_target(data)
     prediction = predict(input, target)
-    print('Predict: {}'.format(get_labels(prediction)))
     print('Correct: {}'.format(get_labels(target)))
+    print('Predict: {}'.format(get_labels(prediction)))
     print('Accuracy of the network on the test table: {:.2f}%'.format(
         100 * compute_accuracy(prediction[target != -1], target[target != -1])))
