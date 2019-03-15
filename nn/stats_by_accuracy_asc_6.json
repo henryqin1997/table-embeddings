@@ -3,6 +3,10 @@
         "score": 2,
         "OTHER": 1
     },
+    "sun": {
+        "OTHER": 2,
+        "saturday": 1
+    },
     "low": {
         "OTHER": 2
     },
@@ -63,8 +67,14 @@
     "mpg": {
         "gpg": 1
     },
+    "source": {
+        "OTHER": 1
+    },
     "occupation": {
         "OTHER": 1
+    },
+    "sleeve": {
+        "inseam": 1
     },
     "pct.": {
         "OTHER": 1
@@ -166,34 +176,25 @@
         "OTHER": 1
     },
     "sh/g": {
-        "reb/40": 1
+        "reb/g": 1
     },
     "[only registered and activated users can see links. ]": {
         "fg%": 1
     },
-    "long": {
-        "lng": 20,
-        "OTHER": 4,
-        "long": 2
-    },
-    "inseam": {
-        "sleeve": 3,
-        "inseam": 1
-    },
     "pim": {
-        "OTHER": 5,
-        "pim": 3,
+        "OTHER": 6,
+        "pim": 2,
         "total": 1
-    },
-    "sun": {
-        "sun": 1,
-        "saturday": 1,
-        "OTHER": 1
     },
     "gap": {
         "time": 1,
         "gap": 1,
         "OTHER": 1
+    },
+    "lng": {
+        "long": 13,
+        "lng": 9,
+        "OTHER": 3
     },
     "total": {
         "OTHER": 5,
@@ -202,14 +203,15 @@
         "runs": 1
     },
     "saturday": {
-        "OTHER": 14,
+        "OTHER": 13,
         "saturday": 11,
-        "friday": 2
+        "friday": 2,
+        "points": 1
     },
     "yds": {
         "yds": 25,
-        "lng": 20,
-        "long": 2,
+        "long": 13,
+        "lng": 9,
         "OTHER": 2,
         "fga": 1
     },
@@ -253,6 +255,11 @@
         "rush td": 1,
         "OTHER": 1
     },
+    "long": {
+        "long": 14,
+        "lng": 8,
+        "OTHER": 4
+    },
     "sat": {
         "sat": 26,
         "OTHER": 12,
@@ -278,15 +285,9 @@
         "prize": 2,
         "OTHER": 1
     },
-    "hometown": {
-        "hometown": 5,
-        "previous school": 1,
-        "OTHER": 1
-    },
-    "lng": {
-        "lng": 18,
-        "long": 4,
-        "OTHER": 3
+    "att/g": {
+        "att/g": 2,
+        "rec./g": 1
     },
     "avg": {
         "avg": 8,
@@ -295,8 +296,9 @@
     },
     "sack": {
         "sack": 19,
-        "lng": 4,
-        "OTHER": 3
+        "long": 3,
+        "OTHER": 3,
+        "lng": 1
     },
     "sunday": {
         "sunday": 3,
@@ -316,15 +318,20 @@
     },
     "def": {
         "def": 5,
-        "lng": 1
+        "long": 1
     },
     "type": {
         "type": 6,
         "severity": 1
     },
+    "hometown": {
+        "hometown": 6,
+        "OTHER": 1
+    },
     "year": {
         "year": 13,
-        "OTHER": 2
+        "int": 1,
+        "OTHER": 1
     },
     "points": {
         "points": 7,
@@ -336,7 +343,7 @@
     },
     "ppg": {
         "ppg": 8,
-        "+/-": 1
+        "OTHER": 1
     },
     "pts": {
         "pts": 57,
@@ -356,8 +363,8 @@
         "price": 1
     },
     "notes": {
-        "notes": 25,
-        "OTHER": 1
+        "notes": 24,
+        "OTHER": 2
     },
     "analysis": {
         "analysis": 73
@@ -500,6 +507,9 @@
     "downloads": {
         "downloads": 4
     },
+    "inseam": {
+        "inseam": 4
+    },
     "indivs": {
         "indivs": 4
     },
@@ -583,9 +593,6 @@
     },
     "40forty,asc": {
         "40forty,asc": 3
-    },
-    "att/g": {
-        "att/g": 3
     },
     "h-v": {
         "h-v": 3
@@ -787,12 +794,6 @@
     },
     "avg.": {
         "avg.": 1
-    },
-    "source": {
-        "source": 1
-    },
-    "sleeve": {
-        "sleeve": 1
     },
     "bike": {
         "bike": 1

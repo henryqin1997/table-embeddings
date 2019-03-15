@@ -8,9 +8,6 @@
     "status": {
         "status": 21
     },
-    "era": {
-        "era": 19
-    },
     "gwg": {
         "gwg": 18
     },
@@ -335,6 +332,9 @@
     "3pt%": {
         "3pt%": 1
     },
+    "int./g": {
+        "int./g": 1
+    },
     "signed": {
         "signed": 1
     },
@@ -347,23 +347,26 @@
     "ints": {
         "ints": 1
     },
+    "era": {
+        "era": 18,
+        "OTHER": 1
+    },
     "yds": {
         "yds": 31,
         "OTHER": 2
+    },
+    "pts": {
+        "pts": 34,
+        "OTHER": 2,
+        "yds": 1
     },
     "fg%": {
         "fg%": 8,
         "drb%": 1
     },
-    "pts": {
-        "pts": 32,
-        "OTHER": 4,
-        "yds": 1
-    },
     "pct": {
         "pct": 18,
-        "OTHER": 2,
-        "fum": 1
+        "fum": 3
     },
     "sog": {
         "sog": 5,
@@ -376,7 +379,8 @@
     },
     "tfl": {
         "tfl": 18,
-        "OTHER": 6
+        "OTHER": 5,
+        "fum": 1
     },
     "ast": {
         "ast": 3,
@@ -416,17 +420,13 @@
         "hits": 1,
         "OTHER": 1
     },
-    "ft/g": {
-        "ft/g": 1,
-        "OTHER": 1
-    },
     "year-7": {
         "OTHER": 2,
         "year-7": 1
     },
     "fum": {
-        "OTHER": 29,
-        "fum": 4
+        "OTHER": 27,
+        "fum": 6
     },
     "pen": {
         "gwg": 3
@@ -439,6 +439,10 @@
     },
     "overall": {
         "OTHER": 2
+    },
+    "ft/g": {
+        "ft/40": 1,
+        "OTHER": 1
     },
     "2006": {
         "OTHER": 2
@@ -538,9 +542,6 @@
     },
     "against": {
         "pts": 1
-    },
-    "int./g": {
-        "total/g": 1
     },
     "poles": {
         "OTHER": 1

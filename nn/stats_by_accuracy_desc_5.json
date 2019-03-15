@@ -14,9 +14,6 @@
     "rcv": {
         "rcv": 23
     },
-    "comments (what should be improved, responsible person)": {
-        "comments (what should be improved, responsible person)": 18
-    },
     "annual mean wage (2)": {
         "annual mean wage (2)": 15
     },
@@ -160,9 +157,6 @@
     },
     "local value": {
         "local value": 4
-    },
-    "change": {
-        "change": 4
     },
     "off": {
         "off": 4
@@ -314,6 +308,9 @@
     "blk": {
         "blk": 2
     },
+    "fg%": {
+        "fg%": 2
+    },
     "ppg": {
         "ppg": 2
     },
@@ -331,6 +328,9 @@
     },
     "large": {
         "large": 2
+    },
+    "wickets": {
+        "wickets": 2
     },
     "pages": {
         "pages": 2
@@ -359,17 +359,23 @@
     "catches": {
         "catches": 2
     },
+    "shots": {
+        "shots": 2
+    },
     "sizes": {
         "sizes": 2
     },
     "noc": {
         "noc": 2
     },
+    "bats": {
+        "bats": 2
+    },
+    "record #": {
+        "record #": 2
+    },
     "cash bonus ($)": {
         "cash bonus ($)": 2
-    },
-    "pts.": {
-        "pts.": 2
     },
     "hometown/high school": {
         "hometown/high school": 2
@@ -548,11 +554,17 @@
     "branch": {
         "branch": 1
     },
+    "econ": {
+        "econ": 1
+    },
     "show": {
         "show": 1
     },
     "average": {
         "average": 1
+    },
+    "sh%": {
+        "sh%": 1
     },
     "pacs": {
         "pacs": 1
@@ -713,6 +725,9 @@
     "interest group": {
         "interest group": 1
     },
+    "reaction time": {
+        "reaction time": 1
+    },
     "clicks": {
         "clicks": 1
     },
@@ -782,14 +797,18 @@
     "wage rank": {
         "wage rank": 1
     },
+    "rating": {
+        "rating": 45,
+        "OTHER": 1
+    },
     "wides": {
         "wides": 56,
         "wkts": 1,
         "OTHER": 1
     },
-    "rating": {
-        "rating": 44,
-        "OTHER": 2
+    "comments (what should be improved, responsible person)": {
+        "comments (what should be improved, responsible person)": 17,
+        "coments (what should be improved)": 1
     },
     "int": {
         "int": 16,
@@ -803,30 +822,16 @@
         "info": 13,
         "OTHER": 1
     },
-    "description": {
-        "description": 8,
-        "OTHER": 1
-    },
-    "inseam": {
-        "inseam": 8,
-        "zip-ups": 1
-    },
     "pts": {
-        "pts": 94,
-        "OTHER": 7,
-        "y/r": 5,
+        "pts": 96,
+        "OTHER": 6,
+        "avg": 4,
         "dbl dbl": 1
     },
     "location": {
         "location": 27,
         "OTHER": 3,
         "engine": 1
-    },
-    "y/r": {
-        "y/r": 24,
-        "avg": 2,
-        "tot": 1,
-        "OTHER": 1
     },
     "height": {
         "height": 6,
@@ -840,6 +845,14 @@
         "pct.": 6,
         "OTHER": 1
     },
+    "pim": {
+        "pim": 11,
+        "OTHER": 2
+    },
+    "status": {
+        "status": 12,
+        "OTHER": 3
+    },
     "date": {
         "date": 4,
         "OTHER": 1
@@ -848,12 +861,16 @@
         "extras": 4,
         "OTHER": 1
     },
-    "pim": {
-        "pim": 10,
-        "OTHER": 3
+    "description": {
+        "description": 7,
+        "OTHER": 2
     },
     "thursday": {
         "thursday": 3,
+        "OTHER": 1
+    },
+    "change": {
+        "change": 3,
         "OTHER": 1
     },
     "odds": {
@@ -866,21 +883,13 @@
         "domain": 1,
         "component": 1
     },
-    "status": {
-        "status": 10,
-        "OTHER": 5
-    },
-    "team": {
-        "team": 4,
-        "OTHER": 2
-    },
     "component": {
         "component": 4,
         "OTHER": 2
     },
     "era": {
         "era": 2,
-        "OTHER": 1
+        "pct.": 1
     },
     "per": {
         "per": 2,
@@ -892,7 +901,7 @@
     },
     "download": {
         "download": 2,
-        "OTHER": 1
+        "status": 1
     },
     "aff": {
         "aff": 2,
@@ -900,23 +909,45 @@
     },
     "tot": {
         "tot": 12,
-        "y/r": 7
+        "OTHER": 3,
+        "avg": 2,
+        "pct": 2
+    },
+    "total": {
+        "total": 8,
+        "OTHER": 4,
+        "kicks/punts blocked": 1
     },
     "fri": {
-        "fri": 34,
-        "OTHER": 16,
-        "friday": 3,
-        "description": 1,
-        "speed": 1
+        "fri": 33,
+        "OTHER": 15,
+        "friday": 7
+    },
+    "avg": {
+        "avg": 18,
+        "pct": 10,
+        "OTHER": 2
     },
     "price": {
         "price": 3,
         "score": 1,
-        "OTHER": 1
+        "average": 1
+    },
+    "friday": {
+        "friday": 25,
+        "OTHER": 17,
+        "saturday": 2,
+        "fri": 1
     },
     "saturday": {
         "saturday": 6,
-        "OTHER": 5
+        "OTHER": 3,
+        "friday": 2
+    },
+    "thu": {
+        "thu": 3,
+        "OTHER": 2,
+        "friday": 1
     },
     "long": {
         "long": 2,
@@ -942,10 +973,6 @@
         "min": 1,
         "OTHER": 1
     },
-    "fg%": {
-        "ast": 1,
-        "fg%": 1
-    },
     "assists": {
         "assists": 1,
         "OTHER": 1
@@ -966,29 +993,25 @@
         "hips": 1,
         "OTHER": 1
     },
+    "gaa": {
+        "gaa": 1,
+        "OTHER": 1
+    },
     "wt.": {
         "wt.": 1,
         "OTHER": 1
     },
-    "shots": {
-        "shots": 1,
-        "OTHER": 1
-    },
-    "bats": {
-        "bats": 1,
-        "throws": 1
+    "priority": {
+        "component": 1,
+        "priority": 1
     },
     "phase": {
         "noc": 1,
         "phase": 1
     },
-    "record #": {
-        "record #": 1,
-        "pg.": 1
-    },
-    "throws": {
-        "bats": 1,
-        "throws": 1
+    "pts.": {
+        "pts": 1,
+        "pts.": 1
     },
     "tdp": {
         "price": 1,
@@ -998,23 +1021,25 @@
         "employment per 1,000 jobs": 1,
         "percent of total employment": 1
     },
-    "friday": {
-        "friday": 21,
-        "OTHER": 18,
-        "saturday": 4,
-        "fri": 1,
-        "inseam": 1
+    "pct": {
+        "avg": 14,
+        "pct": 12,
+        "OTHER": 1
     },
-    "total": {
-        "total": 6,
-        "OTHER": 6,
-        "kicks/punts blocked": 1
+    "inseam": {
+        "hip": 4,
+        "inseam": 4,
+        "zip-ups": 1
     },
     "year": {
         "year": 2,
-        "comments": 1,
+        "friday": 1,
         "date added": 1,
         "OTHER": 1
+    },
+    "hip": {
+        "inseam": 3,
+        "hip": 2
     },
     "hometown": {
         "hometown": 2,
@@ -1027,10 +1052,9 @@
         "points": 3,
         "pts": 1
     },
-    "thu": {
-        "OTHER": 3,
-        "thu": 2,
-        "friday": 1
+    "team": {
+        "OTHER": 4,
+        "team": 2
     },
     "country": {
         "country": 1,
@@ -1042,32 +1066,29 @@
         "rec": 1,
         "OTHER": 1
     },
-    "avg": {
-        "y/r": 21,
-        "avg": 8,
-        "OTHER": 1
-    },
-    "pct": {
-        "y/r": 19,
-        "pct": 6,
-        "avg": 2
+    "comments": {
+        "OTHER": 2,
+        "comments": 1,
+        "friday": 1,
+        "details": 1
     },
     "+/-": {
         "OTHER": 4,
         "+/-": 1
     },
-    "hip": {
-        "inseam": 4,
-        "hip": 1
-    },
-    "comments": {
-        "OTHER": 5
+    "y/r": {
+        "avg": 11,
+        "pct": 11,
+        "OTHER": 3,
+        "y/r": 2,
+        "tot": 1
     },
     "notes": {
         "OTHER": 5
     },
     "2014": {
-        "OTHER": 3
+        "total": 2,
+        "OTHER": 1
     },
     "score": {
         "OTHER": 2
@@ -1083,21 +1104,15 @@
         "gap": 1,
         "OTHER": 1
     },
-    "gaa": {
-        "OTHER": 2
-    },
-    "wickets": {
-        "OTHER": 2
-    },
     "sku": {
         "OTHER": 2
     },
-    "priority": {
-        "version": 1,
-        "component": 1
+    "throws": {
+        "bats": 2
     },
     "1999": {
-        "OTHER": 2
+        "2014": 1,
+        "OTHER": 1
     },
     "cleveland indians": {
         "OTHER": 2
@@ -1154,13 +1169,13 @@
         "OTHER": 1
     },
     "overall": {
-        "OTHER": 1
+        "total": 1
     },
     "def": {
         "OTHER": 1
     },
     "fees": {
-        "sleeve": 1
+        "OTHER": 1
     },
     "product": {
         "thursday": 1
@@ -1169,7 +1184,7 @@
         "rcv": 1
     },
     "whip": {
-        "OTHER": 1
+        "+/-": 1
     },
     "occupation": {
         "OTHER": 1
@@ -1180,17 +1195,11 @@
     "xxl": {
         "OTHER": 1
     },
-    "econ": {
-        "OTHER": 1
-    },
     "condition": {
         "OTHER": 1
     },
     "file": {
-        "OTHER": 1
-    },
-    "sh%": {
-        "OTHER": 1
+        "link": 1
     },
     "race": {
         "OTHER": 1
@@ -1211,7 +1220,7 @@
         "OTHER": 1
     },
     "humidity": {
-        "age": 1
+        "weight": 1
     },
     "genre": {
         "color": 1
@@ -1220,10 +1229,10 @@
         "type": 1
     },
     "usg%": {
-        "OTHER": 1
+        "fg%": 1
     },
     "remarks": {
-        "OTHER": 1
+        "year": 1
     },
     "default": {
         "6-9 pm": 1
@@ -1300,9 +1309,6 @@
     "atl": {
         "pit": 1
     },
-    "reaction time": {
-        "OTHER": 1
-    },
     "def/g": {
         "pct": 1
     },
@@ -1325,7 +1331,7 @@
         "OTHER": 1
     },
     "ram": {
-        "OTHER": 1
+        "type": 1
     },
     "bid": {
         "OTHER": 1
@@ -1343,7 +1349,7 @@
         "OTHER": 1
     },
     "your name": {
-        "OTHER": 1
+        "status": 1
     },
     "kansas city royals": {
         "OTHER": 1
