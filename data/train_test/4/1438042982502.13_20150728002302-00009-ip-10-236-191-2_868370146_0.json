@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "date",
+            "4/18/2014",
+            "4/28/2014",
+            "4/29/2014",
+            "4/30/2014",
+            "5/2/2014",
+            "5/3/2014",
+            "12/20/2014"
+        ],
+        [
+            "city",
+            "Offenbach",
+            "Canterbury",
+            "Bristol",
+            "Exeter",
+            "Nottingham",
+            "Brixton",
+            "Chicago"
+        ],
+        [
+            "state",
+            "Hesse",
+            "Ken",
+            "Bst",
+            "Dev",
+            "Ngm",
+            "Lbh",
+            "IL"
+        ],
+        [
+            "venue",
+            "Hafen 2",
+            "The Ballroom",
+            "The Exchange",
+            "Cavern Club Exeter",
+            "The Chameleon Arts Cafe",
+            "The Windmill",
+            "Metro"
+        ]
+    ],
+    "pageTitle": "Tim Kasher Concert Tickets | SeatGeek",
+    "title": "",
+    "url": "https://seatgeek.com/tim-kasher-tickets",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00009-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 868397223,
+    "recordOffset": 868370146,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "2014 Tour Dates } ); document.getElementById('location-autocomplete') }), } } window.location.href = window.location.pathname + '?lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id } else { window.location.href = window.location.href + '&lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id; if(window.location.href.match('/search')) { SG.GA.sendEvent('team-show-page', 'location-input', { label: selection.term }); onSelect: function(selection) { }, return (data.results && data.results.location) ? data.results.location : [] dataExtractionFunction: function(data) { placeholder: 'Search by City...', postSelectLoad: true, limit: 3, contentKey: 'term', idKey: 'id', queryString: \"types[]=location\", source: \"/autocomplete\", React.createFactory(Autocomplete)({ React.render( if (document.getElementById('location-autocomplete')) {",
+    "textAfterTable": "2013 date city state venue 3/12/2013 Hamden CT The Space 3/13/2013 Philadelphia PA Johnny Brenda's 3/14/2013 Brooklyn NY Knitting Factory 3/15/2013 Hoboken NJ Maxwells 3/16/2013 Allston MA Great Scott 3/20/2013 Omaha NE O'Leaver's 3/21/2013 Omaha NE O'Leaver's 3/22/2013 Champaign IL Mike 'N' Molly's 3/23/2013 Chicago IL Schubas Tavern 10/5/2013 Omaha NE The Waiting Room 10/6/2013 Denver CO Larimer Lounge 10/8/2013 Salt Lake City UT Urban Lounge 10/9/2013 Boise ID Neurolux Lounge 10/10/2013 Portland OR Doug Fir Lounge 10/11/2013 Vancouver BC Electric Owl 10/12/2013 Seattle WA Barboza 10/15/2013 San Francisco CA Rickshaw Stop 10/16/2013 Santa Cruz CA The Crepe Place 10/17/2013 Santa Ana CA Constellation Room 10/18/2013 Los Angeles CA The Echo 10/19/2013 Las Vegas",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Signal Name",
+            "LCD_E",
+            "LCD_RS",
+            "LCD_RW",
+            "LCD_DB7",
+            "LDC_DB6",
+            "LCD_DB5",
+            "LCD_DB4"
+        ],
+        [
+            "Description",
+            "Read/Write Enable Pulse 0: Disabled 1: Read/Write operation enabled",
+            "Register Select 0:Instruction register during write 1:Data for read or write operation",
+            "Read/Write Control 0:Write, LCD accepts data 1:Read, LCD presents data",
+            "Data Bus bit 7",
+            "Data Bus bit 6",
+            "Data Bus bit 5",
+            "Data Bus bit 4"
+        ],
+        [
+            "GPIO pin",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        [
+            "FPGA pin location",
+            "AE13",
+            "AC17",
+            "AB17",
+            "AF12",
+            "AE12",
+            "AC10",
+            "AB10"
+        ]
+    ],
+    "pageTitle": "FPGA design from scratch. Part 36 \u00ab New Horizons Zynq Blog",
+    "title": "",
+    "url": "http://svenand.blogdrive.com/archive/69.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044271733.81/warc/CC-MAIN-20150728004431-00036-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 237835311,
+    "recordOffset": 237820512,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The LCD drivers (once more) Now it's time to return to the LCD driver application program again. We will start by running a simulation to find out how everything is connected. Let's use a really simple program. int main(void) { \u00a0\u00a0\u00a0 XStatus Status; \u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0 // Initialize the GPIO component \u00a0\u00a0\u00a0 Status = XGpio_Initialize(&GpioLCD, GPIO_LCD_DEVICE_ID); \u00a0\u00a0\u00a0 if (Status != XST_SUCCESS) return XST_FAILURE; \u00a0 \u00a0 \u00a0 // Set the direction for all bits to be outputs \u00a0\u00a0\u00a0 XGpio_SetDataDirection(&GpioLCD,\u00a0\u00a0\u00a0 LCD_CHANNEL, 0x00);\u00a0\u00a0 \u00a0 \u00a0\u00a0\u00a0 // Display one character \u00a0\u00a0\u00a0 XromWriteData(0x6,0x1); \u00a0\u00a0\u00a0 return XST_SUCCESS; \u00a0\u00a0\u00a0 \u00a0\u00a0\u00a0 } Here is the simulation waveform plot showing the GPIO bus connected to the LCD. From this plot we can find",
+    "textAfterTable": "Editing the user constraints file We will change the pin mapping in the ETC_system.ucf file. #### Module LCD_16x2 constraints NET LCD_16x2_GPIO_IO_pin<0> LOC=\"AE13\"; NET LCD_16x2_GPIO_IO_pin<0> IOSTANDARD = LVCMOS33; NET LCD_16x2_GPIO_IO_pin<0> PULLDOWN; NET LCD_16x2_GPIO_IO_pin<0> TIG; NET LCD_16x2_GPIO_IO_pin<1> LOC=AC17; NET LCD_16x2_GPIO_IO_pin<1> IOSTANDARD = LVCMOS33; NET LCD_16x2_GPIO_IO_pin<1> PULLDOWN; NET LCD_16x2_GPIO_IO_pin<1> TIG; NET LCD_16x2_GPIO_IO_pin<2> LOC=AB17; NET LCD_16x2_GPIO_IO_pin<2> IOSTANDARD = LVCMOS33; NET LCD_16x2_GPIO_IO_pin<2> PULLDOWN; NET LCD_16x2_GPIO_IO_pin<2> TIG; NET LCD_16x2_GPIO_IO_pin<3> LOC=AF12; NET LCD_16x2_GPIO_IO_pin<3> IOSTANDARD = LVCMOS33; NET LCD_16x2_GPIO_IO_pin<3> PULLDOWN; NET LCD_16x2_GPIO_IO_pin<3> TIG; NET LCD_16x2_GPIO_IO_pin<4> LOC=AE12; NET LCD_16x2_GPIO_IO_pin<4> IOSTANDARD = LVCMOS33; NET LCD_16x2_GPIO_IO_pin<4> PULLDOWN; NET LCD_16x2_GPIO_IO_pin<4> TIG; NET LCD_16x2_GPIO_IO_pin<5> LOC=AC10; NET LCD_16x2_GPIO_IO_pin<5> IOSTANDARD =",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

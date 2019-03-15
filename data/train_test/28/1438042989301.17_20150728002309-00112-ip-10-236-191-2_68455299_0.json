@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Sensor",
+            "TYPE_AMBIENT_TEMPERATURE",
+            "TYPE_LIGHT",
+            "TYPE_PRESSURE",
+            "TYPE_RELATIVE_HUMIDITY",
+            "TYPE_TEMPERATURE"
+        ],
+        [
+            "Sensor event data",
+            "event.values[0]",
+            "event.values[0]",
+            "event.values[0]",
+            "event.values[0]",
+            "event.values[0]"
+        ],
+        [
+            "Units of measure",
+            "\u00b0C",
+            "lx",
+            "hPa or mbar",
+            "%",
+            "\u00b0C"
+        ],
+        [
+            "Data description",
+            "Ambient air temperature.",
+            "Illuminance.",
+            "Ambient air pressure.",
+            "Ambient relative humidity.",
+            "Device temperature.1"
+        ]
+    ],
+    "pageTitle": "Environment Sensors | Android Developers",
+    "title": "",
+    "url": "http://developer.android.com/guide/topics/sensors/sensors_environment.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989301.17/warc/CC-MAIN-20150728002309-00112-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 68473131,
+    "recordOffset": 68455299,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Table 1. Environment sensors that are supported on the Android platform. Unlike most motion sensors and position sensors, which return a multi-dimensional array of sensor values for each SensorEvent, environment sensors return a single sensor value for each data event. For example, the temperature in \u00b0C or the pressure in hPa. Also, unlike motion sensors and position sensors, which often require high-pass or low-pass filtering, environment sensors do not typically require any data filtering or data processing. Table 1 provides a summary of the environment sensors that are supported on the Android platform. The Android platform provides four sensors that let you monitor various environmental properties. You can use these sensors to monitor relative ambient humidity, illuminance, ambient pressure, and ambient temperature near an Android-powered device. All four environment sensors are hardware-based and are available only if a device manufacturer has built them into a device. With the exception of the light sensor, which most device manufacturers use to control screen brightness, environment sensors are not always available on devices. Because of this, it's particularly important that you verify at runtime whether an environment sensor exists before you attempt to acquire data from it. Motion Sensors Position Sensors Sensors Overview Sensors See also API Demos (OS - Sensors) API Demos (OS - RotationVectorDemo) Accelerometer Play Related samples Using the Humidity Sensor Using the Light, Pressure, and Temperature Sensors",
+    "textAfterTable": "1 Implementations vary from device to device. This sensor was deprecated in Android 4.0 (API Level 14). Using the Light, Pressure, and Temperature Sensors The raw data you acquire from the light, pressure, and temperature sensors usually requires no calibration, filtering, or modification, which makes them some of the easiest sensors to use. To acquire data from these sensors you first create an instance of the SensorManager class, which you can use to get an instance of a physical sensor. Then you register a sensor listener in the onResume() method, and start handling incoming sensor data in the onSensorChanged() callback method. The following code shows you how to do this:  public class SensorActivity extends Activity implements SensorEventListener { private SensorManager mSensorManager; private Sensor mPressure; @Override public final void onCreate(Bundle savedInstanceState) { super.onCreate(savedInstanceState); setContentView(R.layout.main); // Get an instance of the sensor service, and use that to get an instance of // a particular sensor. mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE); mPressure = mSensorManager.getDefaultSensor(Sensor.TYPE_PRESSURE); } @Override public final void onAccuracyChanged(Sensor sensor, int accuracy) { // Do something here if sensor accuracy changes. } @Override public final void onSensorChanged(SensorEvent event) { float millibars_of_pressure = event.values[0]; // Do something with this sensor data. } @Override protected void onResume() { // Register a listener for the sensor. super.onResume(); mSensorManager.registerListener(this, mPressure, SensorManager.SENSOR_DELAY_NORMAL); } @Override protected void onPause() { // Be sure to unregister the sensor when the activity pauses. super.onPause(); mSensorManager.unregisterListener(this); } } You must always include implementations of both",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

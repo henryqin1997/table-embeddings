@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "System Property",
+            "org.eclipse.mylyn.linkProviderTimeout",
+            "mylyn.discovery.directory",
+            "org.eclipse.mylyn.wikitext.tests.disableOutput",
+            "org.eclipse.mylyn.tests.all",
+            "mylyn.test.server",
+            "mylyn.test.exclude",
+            "org.eclipse.mylyn.https.protocols"
+        ],
+        [
+            "Mylyn Version",
+            "3.1",
+            "3.2",
+            "3.4",
+            "3.7",
+            "3.7",
+            "3.7",
+            "3.7"
+        ],
+        [
+            "Default",
+            "5000",
+            "http://www.eclipse.org/mylyn/discovery/directory.xml",
+            "false",
+            "false",
+            "mylyn.org",
+            "",
+            ""
+        ],
+        [
+            "Description",
+            "Number of milli-seconds before link providers are timed out. Set to -1 to disable link providers timing out.",
+            "URL for the discovery directory.",
+            "Set to true to suppress output on the console when running Mylyn Docs tests.",
+            "Set to true to run all connector tests. The default is to run heartbeat tests only.",
+            "Host name of server that hosts test repositories.",
+            "This is a comma separated list of test repository URLs that should be excluded when running tests. Example: http://mylyn.org/bugs36,http://mylyn.org/bugs40",
+            "A comma separated list of SSL protocols that should be enabled when connecting through https. Example: SSLv3"
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Mylyn/FAQ\" - Eclipsepedia",
+    "title": "",
+    "url": "http://wiki.eclipse.org/index.php?title=Mylyn/FAQ&diff=333533&oldid=270176",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989126.22/warc/CC-MAIN-20150728002309-00200-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 277544103,
+    "recordOffset": 277482878,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{202936=If you\u2019re having problems opening the web task editor on Linux and the message Could not create Browser page: XPCOM error -2147221164 appears in the error log, try installing the packages xulrunner and xulrunner-gnome-support on your Linux distribution., 132168=The update site link in the 3.0 and 3.0.1 features for Eclipse 3.3 points to the Mylyn for Eclipse 3.4 update site (bug 244618). An attempt to update will result in an error: \u201cMylyn Task List (Required) (3.0.1.v20080721-2100-e3x) requires plug-in \"org.eclipse.ui (3.4.0.I20070918)\", or later version.\u201d, 180765=The built-in NTLM support of the JDK which is used by Eclipse does not work with Mylyn since it uses the HttpClient library to access repositories. Limitations in regard to NTLM authentication are documented in the NTLM FAQ and also discussion on bug 201911., 256486=Update: at EclipseCon 2007 the IBM Jazz team showed a Mylyn connector for Jazz., 261377=Copyright \u00a9 2014 The Eclipse Foundation. All Rights Reserved., 152718=For more information see the Eclispe FAQ entry. Details of the problem are on Platform bug 92250., 222197=this is most likely due to something interrupting the proposal operation (e.g. garbage collection). Ignore it if it does not recur, increase Eclipse\u2019s memory if it does (e.g via -Xmx384M command line argument). See bug 141457 for more details., 222576=Note that Mylyn should only add a trivial amount of overhead to content assist computation, however, the standard content assist mechanism will not report timeouts of this sort (i.e. taking longer than 5s to compute proposals). If the system that you are working on is so large that increasing memeory does not reduce the timings to avoid the message, you could also consider disabling the Mylyn-specific content assist, as described above, but if doing so please comment on bug 141457., 223579=The Package Presentation \u2192 Hierarchical mode is not supported on the Project Explorer view in Eclipse 3.2 through 3.3M3 and possibly later versions bug 161362. Use the view menu to set Package Presentation \u2192 Flat as a work-around., 122258=On Eclipse versions earlier than 3.3 (final) use only the \u201cSearch for new features\u2026\u201d option when updating Mylyn. If you use \u201cSearch for updates\u2026\u201d the Update Manager will allow a partial install that can cause Mylyn to fail to start, and you will need to run update again. See the feature configuration problem section below for details. If you encounter this problemm consider voting for Platform bug 132450., 255288=At the EclipseCon and JavaONE 2006 conferences IBM demonstrated previews of Jazz, a collaborative team server and Eclipse-based client. Articles have remarked on the similarities between Mylyn and Jazz because both integrate tasks into Eclipse (Jazz\u2019s \u201cwork items\u201d and Mylyn\u2019s \u201ctasks\u201d), and both provide change sets grouped by task. But there are both significant differences and complementary aspects to the two approaches. A key goal of Mylyn is to provide an open source framework to support integration of task management with existing issue trackers and source repositories. According to the presentations, components that come with Jazz include include a next-generation issue tracker and source repository and related lifecycle management tools such as project health. In addition, a driving and unique goal of Mylyn is to focus the UI around a usage-based and degree-of-interested weighted task context, which is complementary to the Jazz platform. Just as it integrates with Mylyn\u2019s Task List, Mylyn\u2019s Task Focused UI and task context model components are possible to integrate with other kinds of task management systems, such as the one provided by Jazz., 254938=For an example study see: http://kerstens.org/mik/publications/mylar-ieee2006.pdf}",
+    "textBeforeTable": "See the download page. What versions of Eclipse are supported? 3.4 1.3 3.4 3.4 3.4 (Helios) 3.4.2 1.3.2 3.4.2 3.4.2 3.4.2 (Helios SR1) 3.4.3 1.3.2 3.4.3 3.4.3 3.4.3 (Helios SR2) 0.7 3.5 1.4 3.5 3.5 0.7 3.5 0.8 3.6 1.5 3.6 3.6 0.8 3.6 (Indigo) 3.6.2 1.5.2 3.6.2 3.6.2 0.8.2 3.6.2 (Indigo SR1) 3.6.5 1.5.5 3.6.5 3.6.5 0.8.5 3.6.5 (Indigo SR2) 0.9 3.7 0.9 1.6 3.7 3.7 0.9 3.7 1.0 3.8 1.0 1.7 3.8 3.8 1.0 3.8 (Juno) Mylyn Versions Mylyn Tasks Mylyn Reviews Mylyn Docs Mylyn Context Mylyn Commons Mylyn Builds Sub-projects Mylyn Version List of major and release train versions: See the New & Noteworthy. Which sub-projects are included in Mylyn releases? Release builds: see the project plan Weekly builds: available every Wednesday and on-demand (should be used by all Mylyn contributors not self-hosting from CVS straight from CVS) What is the release schedule? Press the Install... button to install Mylyn",
+    "textAfterTable": "Trac 0.11, 0.12 Hudson 2.1.2, 2.2.0 Jenkins 1.424.6 Gerrit 2.2.1, 2.2.2 Mylyn 3.6 Eclipse 3.5, 3.6, 3.7 Bugzilla 3.0, 3.2, 3.4, 3.6, 4.0 Trac 0.10, 0.11, 0.12 Hudson 1.367, 2.0, 2.1 Jenkins 1.367 Gerrit 2.1.5 Mylyn 3.5 Eclipse 3.5, 3.6 Bugzilla 3.0, 3.2, 3.4, 3.6, 4.0 Trac 0.10, 0.11, 0.12 Hudson 1.367 Jenkins 1.367 Gerrit 2.1.5 Mylyn 3.4 Eclipse 3.4, 3.5, 3.6 Bugzilla 3.0, 3.2, 3.4, 3.6, 4.0 Trac 0.9, 0.10, 0.11, 0.12 What version of Java is required? Mylyn needs the Java 5 virtual machine. To check the version of the Java virtual machine that Eclipse was launched with to to Help \u2192 About Eclipse SDK \u2192 Configuration Details and verify that the java.vm.version is 1.5. Mac users should refer to the last comment on bug 1163477 for instructions on how to change the 1.4 default. If you do not have Java 5, you can download it from Sun\u2019s web site. If you have more than one VM, you need to specify that Eclipse should use the JDK1.5 VM. In Unix, set the",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

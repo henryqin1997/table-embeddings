@@ -1,0 +1,102 @@
+{
+    "relation": [
+        [
+            "Select Type",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE"
+        ],
+        [
+            "Table",
+            "user",
+            "user_profile",
+            "user_option",
+            "user_privacy",
+            "permission_combination",
+            "session_activity"
+        ],
+        [
+            "Type",
+            "const",
+            "const",
+            "const",
+            "const",
+            "const",
+            "ref"
+        ],
+        [
+            "Possible Keys",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY"
+        ],
+        [
+            "Key",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY"
+        ],
+        [
+            "Key Len",
+            "4",
+            "4",
+            "4",
+            "4",
+            "4",
+            "4"
+        ],
+        [
+            "Ref",
+            "const",
+            "const",
+            "const",
+            "const",
+            "const",
+            "const"
+        ],
+        [
+            "Rows",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Extra",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "XenForo Debug Output",
+    "title": "",
+    "url": "http://www.danceforums.com/members/love2swing.1284/?_debug=1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00025-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 391327961,
+    "recordOffset": 391319759,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sat, 01 Aug 2015 11:50:51 GMT",
+    "textBeforeTable": "Run Time: 0.000271 Params: 1 WHERE permission_combination_id = ? FROM xf_permission_combination SELECT cache_value   Queries (9, time: 0.0091s, 2.7%) Memory: 6.7844 MB (Peak: 7.2339 MB) Page Time: 0.3373s",
+    "textAfterTable": "SIMPLE user_profile const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE user_option const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE user_privacy const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE permission_combination const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE session_activity ref PRIMARY PRIMARY 4 const 1 \u00a0  SELECT user_field.* , field_value.field_value FROM xf_user_field AS user_field LEFT JOIN xf_user_field_value AS field_value ON (field_value.field_id = user_field.field_id AND field_value.user_id = 1284) WHERE (user_field.display_group <> 'preferences' AND user_field.viewable_profile = 1) ORDER BY user_field.display_group, user_field.display_order Run Time: 0.001421 Select Type Table Type Possible Keys Key Key Len Ref Rows Extra SIMPLE user_field ALL display_group_order \u00a0 \u00a0 \u00a0 8 Using where; Using filesort SIMPLE field_value eq_ref PRIMARY,field_id PRIMARY 31 const,dancefo2_xeno2.user_field.field_id 1 \u00a0  SELECT COUNT(*) FROM xf_user_follow WHERE follow_user_id = ? Params: 1284 Run Time: 0.000312 Select Type Table Type Possible Keys Key Key Len Ref Rows Extra SIMPLE xf_user_follow ref follow_user_id follow_user_id 4 const 1 Using index  SELECT user.*, user_profile.*, user_option.* FROM xf_user_follow AS user_follow INNER JOIN xf_user AS user ON (user.user_id = user_follow.user_id AND user.is_banned = 0) INNER JOIN xf_user_profile AS user_profile ON (user_profile.user_id = user.user_id) INNER JOIN xf_user_option AS user_option ON (user_option.user_id = user.user_id) WHERE user_follow.follow_user_id = ? ORDER BY RAND() LIMIT 6 Params: 1284 Run Time: 0.002653",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

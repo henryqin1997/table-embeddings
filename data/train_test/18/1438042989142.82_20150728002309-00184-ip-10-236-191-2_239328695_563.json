@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "",
+            "1) Extremely well",
+            "2) Quite well",
+            "3) Not too well",
+            "4) Not well at all",
+            "8) Don't know",
+            "9) Refused",
+            "Missing",
+            "TOTAL"
+        ],
+        [
+            "TOTAL",
+            "112",
+            "336",
+            "158",
+            "72",
+            "2",
+            "1",
+            "830",
+            "681"
+        ],
+        [
+            "%",
+            "16.4",
+            "49.3",
+            "23.2",
+            "10.6",
+            "0.3",
+            "0.1",
+            "",
+            "100.0"
+        ]
+    ],
+    "pageTitle": "Codebook | American National Election Studies, 2002 | Data Archive | The Association of Religion Data Archives",
+    "title": "",
+    "url": "http://thearda.com/Archive/Files/Codebooks/NES2002_CB.asp",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 563,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989142.82/warc/CC-MAIN-20150728002309-00184-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 239432931,
+    "recordOffset": 239328695,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "1) ICPSR Archive Number - 3740 (ICPSRNO) All frequencies are raw numbers (no weights used). Download Search Codebook Summary Data Archive > U.S. Surveys > General Population > National > National Election Studies > Codebook American National Election Studies, 2002 -->",
+    "textAfterTable": "3) For Panel cases, this is the ID from the 2000 Study. [INAP = 2002 Fresh cross-section respondent] (PANEL_ID) N Mean Std.Deviation TOTAL 1187 882.751 525 4) Pre-Election Post-stratified weight: This is a 6-digit variable with a coded decimal point and 4 decimal places. This weight compensates for the unequal probabilities of selection for respondents in different size households and for different non-response across geographic sample design categories. A post stratification adjustment used the 2000 CPS March Supplement estimates as the standard. The cells were formed by crossing 6 age groups by 4 levels of education. The age groups were: 18-29, 30-39, 40-49, 50-59, 60-69, 70+. The education levels were: lt high school graduation, high school graduate, some college, and 4 years of college or more. (WEIGHT1) N Mean Std.Deviation TOTAL 1511 1 1 5) Post-Election Post-stratified weight: This is a 6-digit variable with a coded decimal point and 4 decimal places (See WEIGHT1). WEIGHT2 values are constructed for the cases re-interviewed in the Post. [0 = No Post interview] (WEIGHT2) N Mean Std.Deviation TOTAL 1511 .89 1 6) STUDY 2002:",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

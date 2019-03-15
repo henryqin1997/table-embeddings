@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "kernel",
+            "func.yes-printk.yes-do.na/vmlinux",
+            "func.yes-printk.no-do.none/vmlinux",
+            "func.no-printk.na-do.na/vmlinux",
+            "func.yes-printk.no-do.init.star/vmlinux",
+            "func.yes-printk.no-do.init.main.c/vmlinux"
+        ],
+        [
+            "CONFIG_PRINTK_FUNC",
+            "yes",
+            "yes",
+            "no",
+            "yes",
+            "yes"
+        ],
+        [
+            "CONFIG_PRINTK",
+            "yes",
+            "no",
+            "not applicable",
+            "no",
+            "no"
+        ],
+        [
+            "DO_PRINTK used with files...",
+            "not applicable",
+            "none",
+            "not applicable",
+            "init/*.c",
+            "init/main.c"
+        ],
+        [
+            "Notes",
+            "This is a pretty regularly-configured kernel (used for baseline in first set of comparisons)",
+            "Turn off all messages, but leave printk function in place",
+            "Turn off all messages and remove printk function",
+            "Turn off most messages, preserve messages from files in 'init' source directory",
+            "Turn off most messages, preserve messages from init/main.c"
+        ]
+    ],
+    "pageTitle": "Do Printk - eLinux.org",
+    "title": "",
+    "url": "http://elinux.org/index.php?title=Do_Printk&oldid=1969",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00245-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 84675715,
+    "recordOffset": 84662012,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{9981=On an x86 machine, using kernel.org 2.6.17.4 kernel, I got the results below, using the DO_PRINTK feature in combination with the PRINTK configuration option.}",
+    "textBeforeTable": "Here is the key for the following tables: On an x86 machine, using kernel.org 2.6.17.4 kernel, I got the results below, using the DO_PRINTK feature in combination with the PRINTK configuration option. Case Study 1 Examples of use with measurement of the effects. Sample Results EXTRA_CFLAGS += -DDO_PRINTK      To affect all the files in a directory, set EXTRA_CFLAGS, like so:  CFLAGS_foo.o += -DDO_PRINTK      For example, in the Makefile that compiles foo.c , add the line:  To affect an individual file, add -DDO_PRINTK for the CFLAGS for that file:  2) add an option to CFLAGS to the Makefile which controls the building of the file(s) you want to affect     this definition will override the CONFIG_PRINTK=n directive, and allow printks in the file to work normally  this must appear before any #include lines for the file  #define DO_PRINTK   1) add to the top of the file a line consisting of: There are actually several ways to get DO_PRINTK defined for a particular file:  Ways to force printks to be preserved   Install the kernel  (optionally) Examine the kernel size, and rejoice at your size savings  Compile the kernel    (see below for details)",
+    "textAfterTable": "Summary of image size results Kernel sizes (sorted by decreasing size): text data bss dec hex filename 2621433 564958 137072 3323463 32b647 func.yes-printk.yes-do.na/vmlinux (a.k.a. baseline) 2376317 564958 137072 3078347 2ef8cb func.yes-printk.no-do.init.star/vmlinux 2375508 564958 137072 3077538 2ef5a2 func.yes-printk.no-do.init.main.c/vmlinux 2374733 564958 137072 3076763 2ef29b func.yes-printk.no-do.none/vmlinux (a.k.a. printk-off baseline) 2371463 564514 120688 3056665 2ea419 func.no-printk.na-do.na/vmlinux Image size results compared to baseline The following tables show the image sizes of various kernels compared with a baseline kernel. The baseline kernel has a fairly normally i386 configuration, with CONFIG_PRINTK_FUNC=y and CONFIG_PRINTK=y. Size delta results: section baseline/vmlinux func.no-printk.na-do.na/vmlinux change percent text 2621433 2371463 -249970 -9% data 564958 564514 -444 0% bss 137072 120688 -16384",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

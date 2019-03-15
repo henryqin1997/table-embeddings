@@ -1,0 +1,41 @@
+{
+    "relation": [
+        [
+            "Versiune",
+            "5.6.5",
+            "5.6.0",
+            "5.5.21",
+            "5.3.7",
+            "5.3.2",
+            "5.3.2",
+            "5.3.0"
+        ],
+        [
+            "Descriere",
+            "When the failure string \"*0\" is given as the salt, \"*1\" will now be returned for consistency with other crypt implementations. Prior to this version, PHP 5.6 would incorrectly return a DES hash.",
+            "Raise E_NOTICE security warning if salt is omitted.",
+            "When the failure string \"*0\" is given as the salt, \"*1\" will now be returned for consistency with other crypt implementations. Prior to this version, PHP 5.5 (and earlier branches) would incorrectly return a DES hash.",
+            "Added $2x$ and $2y$ Blowfish modes to deal with potential high-bit attacks.",
+            "Added SHA-256 and SHA-512 crypt based on Ulrich Drepper's \u00bb implementation.",
+            "Fixed Blowfish behaviour on invalid rounds to return \"failure\" string (\"*0\" or \"*1\"), instead of falling back to DES.",
+            "PHP now contains its own implementation for the MD5 crypt, Standard DES, Extended DES and the Blowfish algorithms and will use that if the system lacks of support for one or more of the algorithms."
+        ]
+    ],
+    "pageTitle": "PHP: crypt - Manual",
+    "title": "",
+    "url": "http://www.php.net/manual/ro/function.crypt.php",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992201.62/warc/CC-MAIN-20150728002312-00280-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 643301019,
+    "recordOffset": 643277092,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Tue, 04 Aug 2015 04:25:39 GMT",
+    "textBeforeTable": "Istoricul schimb\u0103rilor When validating passwords, a string comparison function that isn't vulnerable to timing attacks should be used to compare the output of crypt() to the previously known hash. PHP 5.6 onwards provides hash_equals() for this purpose. Avertizare Returns the hashed string or a string that is shorter than 13 characters and is guaranteed to differ from the salt on failure. Valorile \u00eentoarse An optional salt string to base the hashing on. If not provided, the behaviour is defined by the algorithm implementation and can lead to unexpected results. salt Using the CRYPT_BLOWFISH algorithm, will result in the str parameter being truncated to a maximum length of 72 characters. Precau\u0163ie The string to be hashed. str Parametri As of PHP 5.3.0, PHP contains its own implementation and will use that if the system lacks of support for one or more of the algorithms. Not\u0103: CRYPT_SHA512 - SHA-512 hash with a sixteen character salt prefixed with $6$. If the salt string starts with 'rounds=<N>$', the numeric value of N is used to",
+    "textAfterTable": "Exemple Example #1 crypt() examples <?php $hashed_password\u00a0=\u00a0crypt('mypassword');\u00a0//\u00a0let\u00a0the\u00a0salt\u00a0be\u00a0automatically\u00a0generated /*\u00a0You\u00a0should\u00a0pass\u00a0the\u00a0entire\u00a0results\u00a0of\u00a0crypt()\u00a0as\u00a0the\u00a0salt\u00a0for\u00a0comparing\u00a0a \u00a0\u00a0\u00a0password,\u00a0to\u00a0avoid\u00a0problems\u00a0when\u00a0different\u00a0hashing\u00a0algorithms\u00a0are\u00a0used.\u00a0(As \u00a0\u00a0\u00a0it\u00a0says\u00a0above,\u00a0standard\u00a0DES-based\u00a0password\u00a0hashing\u00a0uses\u00a0a\u00a02-character\u00a0salt, \u00a0\u00a0\u00a0but\u00a0MD5-based\u00a0hashing\u00a0uses\u00a012.)\u00a0*/ if\u00a0(hash_equals($hashed_password,\u00a0crypt($user_input,\u00a0$hashed_password)))\u00a0{ \u00a0\u00a0\u00a0echo\u00a0\"Password\u00a0verified!\"; } ?> Example #2 Using crypt() with htpasswd <?php //\u00a0Set\u00a0the\u00a0password $password\u00a0=\u00a0'mypassword'; //\u00a0Get\u00a0the\u00a0hash,\u00a0letting\u00a0the\u00a0salt\u00a0be\u00a0automatically\u00a0generated $hash\u00a0=\u00a0crypt($password); ?> Example #3 Using crypt() with different hash types <?php /*\u00a0These\u00a0salts\u00a0are\u00a0examples\u00a0only,\u00a0and\u00a0should\u00a0not\u00a0be\u00a0used\u00a0verbatim\u00a0in\u00a0your\u00a0code. \u00a0\u00a0\u00a0You\u00a0should\u00a0generate\u00a0a\u00a0distinct,\u00a0correctly-formatted\u00a0salt\u00a0for\u00a0each\u00a0password. */ if\u00a0(CRYPT_STD_DES\u00a0==\u00a01)\u00a0{ \u00a0\u00a0\u00a0\u00a0echo\u00a0'Standard\u00a0DES:\u00a0'\u00a0.\u00a0crypt('rasmuslerdorf',\u00a0'rl')\u00a0.\u00a0\"\\n\"; } if\u00a0(CRYPT_EXT_DES\u00a0==\u00a01)\u00a0{ \u00a0\u00a0\u00a0\u00a0echo\u00a0'Extended\u00a0DES:\u00a0'\u00a0.\u00a0crypt('rasmuslerdorf',\u00a0'_J9..rasm')\u00a0.\u00a0\"\\n\"; } if\u00a0(CRYPT_MD5\u00a0==\u00a01",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust",
+            "Precipitation"
+        ],
+        [
+            "Avg",
+            "70.9 \u00b0F",
+            "58.6 \u00b0F",
+            "67.6 %",
+            "30.03 in",
+            "7.8 mph",
+            "",
+            "---"
+        ],
+        [
+            "Avg High",
+            "80.2 \u00b0F",
+            "63.1 \u00b0F",
+            "91.8 %",
+            "30.09 in",
+            "14.9 mph",
+            "28.2 mph",
+            ""
+        ],
+        [
+            "Avg Low",
+            "61.4 \u00b0F",
+            "53.8 \u00b0F",
+            "41.2 %",
+            "29.97 in",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Record High",
+            "95 \u00b0F (2006)",
+            "69.8 \u00b0F (2014)",
+            "",
+            "30.32 in (2010)",
+            "23 mph (2015)",
+            "32.2 mph (2007)",
+            "--- ()"
+        ],
+        [
+            "Record Low",
+            "51.8 \u00b0F (2011)",
+            "42.8 \u00b0F (2012)",
+            "15 % (2012)",
+            "29.74 in (2007)",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Bordeaux, France - July 24th - Daily Weather Averages (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherdaily.php3?s=1570&month=7&theday=24&cityname=Bordeaux%2C+Aquitaine%2C+France&units=",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00236-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 816925346,
+    "recordOffset": 816908952,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] DAILY WEATHER AVERAGE - JULY 24 [ \u2190 Previous Day ] } window.print(); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); return $(this).text().replace(\"2015\", \"\"); $('.datepicker-switch').text(function () { }); window.location = url; var url = \"/weather/weatherdaily.php3?s=1570&\" + pieces + \"&citynameBordeaux%2C+Aquitaine%2C+France&set=\"; var pieces = tosplit.replace(/(.*?)-(.*?)-(.*?)/,\"month=$2&theday=$3\"); var tosplit = event.format(); $('#datepicker').datepicker().on('changeDate', function (event) { }); endDate: \"2015-12-31\", startDate: \"2015-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 6.9 mi Wind Direction SSW (196.8 \u00b0) Weather Element Total Heating Degree Days 5.1 (Base 18.3) Cooling Degree Days 6.4 (Base 18.3) Growing Degree Days 20.8 (Base 10) Total Years on Record: 20",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

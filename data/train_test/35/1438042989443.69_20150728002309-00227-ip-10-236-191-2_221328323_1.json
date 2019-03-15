@@ -1,0 +1,83 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "3",
+            "10",
+            "17 (1)",
+            "24",
+            "31"
+        ],
+        [
+            "M",
+            "",
+            "4",
+            "11",
+            "18",
+            "25",
+            ""
+        ],
+        [
+            "T",
+            "",
+            "5",
+            "12",
+            "19",
+            "26",
+            ""
+        ],
+        [
+            "W",
+            "",
+            "6",
+            "13",
+            "20",
+            "27",
+            ""
+        ],
+        [
+            "T",
+            "",
+            "7",
+            "14",
+            "21",
+            "28",
+            ""
+        ],
+        [
+            "F",
+            "1",
+            "8 (1)",
+            "15",
+            "22",
+            "29",
+            ""
+        ],
+        [
+            "S",
+            "2",
+            "9",
+            "16",
+            "23 (3)",
+            "30",
+            ""
+        ]
+    ],
+    "pageTitle": "Python API documentation generation tool / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/epydoc/mailman/epydoc-devel/?style=flat&viewmonth=200905",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989443.69/warc/CC-MAIN-20150728002309-00227-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 221344717,
+    "recordOffset": 221328323,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun \u00a0 May \u00a0 Apr (1) Mar \u00a0 Feb \u00a0 Jan \u00a0 2014 Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun \u00a0 May \u00a0 Apr \u00a0 Mar (1) Feb \u00a0 Jan \u00a0 2012 Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun (2) May (1) Apr \u00a0 Mar \u00a0 Feb \u00a0 Jan \u00a0 2010 Dec \u00a0 Nov \u00a0 Oct \u00a0",
+    "textAfterTable": "Showing 5 results of 5 Flat | Threaded Re: [Epydoc-devel] Proposal: give possibility to use derived customized HTMLWriter From: Thomas K. <sourceforge@sc...> - 2009-05-23 09:50:12 Hi, I forgot a detail for my patch. To use this patch, and especially the extension for checker class, it's necessary also to extend basic DocChecker class. There must be too a extra argument like in HTMLWriter class to receive commandline options, if necessary. Here is this patch: diff -ruN epydoc-3.0.1_orig/epydoc/checker.py epydoc_3.0.1/epydoc/checker.py --- epydoc-3.0.1_orig/epydoc/checker.py\t2007-08-02 18:58:09.000000000 +0200 +++ epydoc_3.0.1/epydoc/checker.py\t2008-06-04 18:54:29.000000000 +0200 @@ -144,7 +144,7 @@ ALL = ALL_T + ALL_C + PRIVATE - def __init__(self, docindex): + def __init__(self, docindex, **extra_args): \"\"\" Create a new C{DocChecker} that can be used to run checks on the documentation of the objects documented by C{docindex} @@ -152,6 +152,8 @@ @param docindex: A documentation map containing the documentation for the objects to be checked. @type docindex: L{Docindex<apidoc.DocIndex>} + @param extra_args: extra arguments and options, actually not used + @type extra_args: C{dict} \"\"\" self._docindex = docindex [Epydoc-devel] Proposal: give possibility to use derived customized HTMLWriter From: Thomas K.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Address",
+            "0\u00d700000000\u201900100000",
+            "0\u00d700000000\u201900100008",
+            "0\u00d700000000\u201900100010",
+            "0\u00d700000000\u201900100018",
+            "\u2026",
+            "Bottom of Stack"
+        ],
+        [
+            "Element",
+            "StackBase+0 (0)",
+            "StackBase+8 (8)",
+            "StackBase+10 (16)",
+            "StackBase+18 (24)",
+            "StackBase+20 (32)",
+            "StackBase+X"
+        ]
+    ],
+    "pageTitle": "Knockin\u2019 on Heaven\u2019s Gate \u2013 Dynamic Processor Mode Switching | RCE.co",
+    "title": "",
+    "url": "http://rce.co/knockin-on-heavens-gate-dynamic-processor-mode-switching/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00288-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 194883951,
+    "recordOffset": 194858129,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{14113=As you can see the offset +0x0c0 points the the WOW32Reserved field which contains the address 0x74f82320. All WoW64 calls to the kernel are being redirected to this address. If we disassemble any other ntdll32 functions such as ZwOpenProcess, NtLoadDriver, etc we can see that the same CALL instruction with the same address is called., 88878=Copyright \u00a9 2015 RCE.co | Powered by zBench and WordPress}",
+    "textBeforeTable": "Before we begin doing any library loading we need to align the stack on a 64bit boundary. This means that the stack needs to be aligned on an 8byte boundary from it\u2019s base. For example, if the stack is allocated at address 0\u00d700000000\u201900100000 then all proceeding elements should be referenced at multiples of 8 resulting to a stack which resembles the following structure: Solving Issue 1 Over the next few paragraphs, we shall describe the payload stub\u2019s code which is responsible for overcoming the issues identified above. Henceforth, whenever we refer to the payload, we refer to the piece of 64bit code that executes right after passing through the heaven\u2019s gate. Constructing The Payload The above paragraphs have walked us through the process of protecting the pages where crucial libraries are supposed to be loaded at. However, since the protection placed is just a memory allocation, it can be overcome by simply freeing that memory page. Next, the function re-iterates using \u201cuser32.dll\u201d as known section handle and proceeds with executing the same algorithm of allocating the memory page. Once finished, the function returns towow64!ProcessInit and the initialization process continues. Figure 19: Call to ntdll!NtAllocateVirtualMemory So far we have deducted that wow64 loads the section of kernel32 into memory at it\u2019s correct base address ( also verified by the",
+    "textAfterTable": "Additionally, any modifications to the stack need to be backed up so the stack can be realigned back to it\u2019s original 32bit boundary. The solution is rather simple, since the 64bit alignment allows only the first 61 bits of the stack pointer value to be set then the last 3 bits have to be discarded. In order to understand this, let us have a look at some binary values along with their hexadecimal representations as well as what happens when we take away the last three bits of that value: Binary Value Hex Value Without Last 3 Bits 0000 0001 0\u00d701 0000 0000 (0\u00d700) 0000 0011 0\u00d702 0000 0000 (0\u00d700) 0000 0100 0\u00d704 0000 0000 (0\u00d700) 0000 1000 0\u00d708 0000 1000 (0\u00d708) 0001 0000 0\u00d710 0001 0000 (0\u00d710) 0011 1001 0\u00d739 0011 1000 (0\u00d738) As you can see when taking away the last 3 bits of each value, it becomes 64bit aligned. In order to code this in assembly all we require is the AND and SUB instructions as follows: MOV RAX, RSP Move the value of the stack pointer RSP to RAX. AND RAX, 07h Logical AND RAX with value 07h ( first 3 bits set ). CMP RAX, 0 Compare RAX with 0. JE main_stack_ok If RAX is 0 (",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

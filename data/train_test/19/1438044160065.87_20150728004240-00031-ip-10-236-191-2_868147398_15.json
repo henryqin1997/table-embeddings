@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "-dbType database_type",
+            "-dbConnectString database_connect_string",
+            "-dbaUserName database_admin_user",
+            "-odiMasterUserName ODI_master_user_name",
+            "-odiSupervisorName ODI_supervisor_name",
+            "-odiWorkrep ODI_work_repository_list",
+            "-odiWorkrepUserName ODI_work_repository_user_name_list",
+            "[-cloneOption | -noCloneOption]",
+            "[-kmOption | -noKmOption]",
+            "[-topologyOption | -noTopologyOption]",
+            "-[no]ErrorMode -[no]CheckMode -[no]UpgradeMode"
+        ],
+        [
+            "Description",
+            "Replace database_type with one of the following: Oracle Microsoft IBM Postgres Sybase Hypersonic The default (if you do not enter a value) is Oracle.",
+            "Replace database_connect_string with the URL connect string for the database that contains the 10g schema. For a complete description of the connect string required for each database types, see the description of the Connect String field in the section, \"Target Database,\" in the Oracle Fusion Middleware Upgrade Guide for Oracle Data Integrator. This is a required argument.",
+            "Replace database_admin_user with the database administrator user name that will be used to connect to the database: For Oracle databases, use the SYS user or a user with the DBA role. For Microsoft SQL Server, enter sa or a user with db_owner role. For IBM DB2, enter db2admin. This is a required argument.",
+            "Replace ODI_master_user_name with the user name of the Oracle Data Integrator master repository owner. For example: DEV_ODI_REPO This is a required argument.",
+            "Replace ODI_supervisor_name with the user name of the Oracle Data Integrator User with Supervisor privileges. For example: SUPERVISOR This is a required argument.",
+            "Replace ODI_work_repository_list with a comma-separated list of one or more ODI work repository names.",
+            "Replace ODI_work_repository_user_name_list with a comma-separated list of the user names associated with each work repository listed in the -odiWorkrep argument.",
+            "Corresponds to the Check That Upgrade Occurs Only on Cloned Repositories option on the Specify Operation screen in the Upgrade Assistant graphical user interface. For more information, see \"Specify Operation\" in the Oracle Fusion Middleware Upgrade Guide for Oracle Data Integrator. The default setting is -cloneOption.",
+            "Corresponds to the Replace KMs with Mandatory Updates option on the Specify Operation screen in the Upgrade Assistant graphical user interface. For more information, see \"Specify Operation\" in the Oracle Fusion Middleware Upgrade Guide for Oracle Data Integrator. The default setting is -kmOption.",
+            "Corresponds to the Update Topology and Security Metadata option on the Specify Operation screen in the Upgrade Assistant graphical user interface. For more information, see \"Specify Operation\" in the Oracle Fusion Middleware Upgrade Guide for Oracle Data Integrator. The default setting is -topologyOption.",
+            "See Table A-4, \"Upgrade Assistant Command-Line Arguments Common to All Schema Upgrades\"."
+        ]
+    ],
+    "pageTitle": "Using the Upgrade Assistant Command-Line Interface",
+    "title": "",
+    "url": "https://docs.oracle.com/cd/E28280_01/upgrade.1111/e10125/ua_command_line.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 15,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438044160065.87/warc/CC-MAIN-20150728004240-00031-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 868163792,
+    "recordOffset": 868147398,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 14 Jan 2015 14:04:28 GMT",
+    "textBeforeTable": "Table A-16 Summary of the Upgrade Assistant Command-Line Arguments When Upgrading the Oracle Data Integrator Schema Refer to Table A-16 for a description of the command line arguments available when you are upgrading the Oracle Data Integrator schema. [-noTopologyOption] [-topologyOption] [-noKmOption] [-kmOption] [-noCloneOption] [-cloneOption] -odiWorkrepUserName ODI_work_repository_user_name_list -odiWorkrep ODI_work_repository_list -odiSupervisorName ODI_supervisor_name -odiMasterUserName ODI_master_user_name -dbaUserName <dba_user_name> -dbConnectionString database_connect_string [-dbtype database_type] ORACLE_HOME/bin/ua ODI On UNIX systems:  [-noTopologyOption] [-topologyOption] [-noKmOption] [-kmOption] [-noCloneOption] [-cloneOption] -odiWorkrepUserName ODI_work_repository_user_name_list -odiWorkrep ODI_work_repository_list -odiSupervisorName ODI_supervisor_name -odiMasterUserName ODI_master_user_name -dbaUserName <dba_user_name> -dbConnectionString database_connect_string [-dbtype database_type] ORACLE_HOME\\bin\\ua.bat ODI On Windows systems:   To use the Upgrade Assistant command line to upgrade the Oracle Data Integrator schema, enter the following command at the operating system prompt: A.8.2 Oracle Data Integrator Schema Upgrade Assistant Command-Line Arguments   On UNIX systems, you can use this argument if you have multiple Oracle inventory files on the host. For more information, see Section B.7, \"Starting the Upgrade Assistant on UNIX Systems When Using Multiple Oracle Universal Installer Inventory Locations\". -invPtrLoc inventory_location Use this argument to output detailed information to the screen when you are running the Upgrade Assistant in command-line mode.",
+    "textAfterTable": "A.9 Using the Upgrade Assistant Command Line to Upgrade Oracle Business Intelligence The following sections describe how to use the Upgrade Assistant command-line interface to upgrade Oracle BI Enterprise Edition and Oracle Business Intelligence Publisher: Oracle BI Enterprise Edition Middle Tier Upgrade Assistant Command-Line Arguments Oracle Business Intelligence Publisher Middle Tier Upgrade Assistant Command-Line Arguments Oracle Business Intelligence Scheduler Schema Upgrade Assistant Command-Line Arguments A.9.1 Oracle BI Enterprise Edition Middle Tier Upgrade Assistant Command-Line Arguments To use the Upgrade Assistant command line to upgrade a Oracle BI Enterprise Edition middle tier, enter the following command at the operating system prompt: On Windows systems:  ORACLE_HOME\\bin\\ua.bat -BIEE -rpdFile rpd_file -rpdAdminUser rpd_admin_user -webCatDir webcat_directory -webCatDeliveriesDir webcatdeliveries_directory -wlsPort wls_port -wlsUserName wls_user [-logLevel log_level] [-[no]verbose] On UNIX systems:  ORACLE_HOME/bin/ua MT -BIEE -rpdFile rpd_file -rpdAdminUser rpd_admin_user -webCatDir webcat_directory -webCatDeliveriesDir webcatdeliveries_directory -wlsPort wls_port -wlsUserName wls_user [-logLevel log_level] [-[no]verbose] [[-invPtrLoc inventory_loc] Refer to Table A-17 for a description of the command line arguments available when you are upgrading a middle tier. Many of the command-line options represent the options available in the",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

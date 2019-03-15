@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Name",
+            "Add(ObjectEvent^, ObjectEvent^)",
+            "BitwiseOr(ObjectEvent^, ObjectEvent^)",
+            "Equals(Object^)",
+            "GetHashCode()",
+            "GetType()",
+            "ToString()"
+        ],
+        [
+            "Description",
+            "Returns the object event set that is created by adding two object events.",
+            "Creates a new object event set by performing a BitwiseOr operation on two ObjectEvent objects",
+            "Returns a value whether the ObjectEvent is equal to the specified object.(Overrides Object::Equals(Object^).)",
+            "This method supports the SMO infrastructure and is not intended to be used directly from your code.(Overrides Object::GetHashCode().)",
+            "(Inherited from Object.)",
+            "Overrides T:System.ToString method in a ObjectEvent object.(Overrides Object::ToString().)"
+        ]
+    ],
+    "pageTitle": "ObjectEvent Class\u00a0(Microsoft.SqlServer.Management.Smo)",
+    "title": "",
+    "url": "https://technet.microsoft.com/en-us/library/microsoft.sqlserver.management.smo.objectevent.aspx?cs-save-lang=1&cs-lang=cpp",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00108-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 894275679,
+    "recordOffset": 894259285,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{4456=Applies To: SQL Server 2016 Preview}",
+    "textBeforeTable": "Methods Gets an object event that can be included in the event set. Drop Gets an object event that can be included in the event set. Alter Description Name Properties publicref classsealed     Copy   VB  F#  C++  C# Syntax Microsoft.SqlServer.Management.Smo::ObjectEvent \u00a0\u00a0 System::Object Inheritance Hierarchy ObjectEvent",
+    "textAfterTable": "Operators Name Description Addition(ObjectEvent^,\u00a0ObjectEvent^) Creates a object event set by performing an addition operation on two ObjectEvent objects. BitwiseOr(ObjectEvent^,\u00a0ObjectEvent^) Creates an object event set by performing a bitwise OR operation on two ObjectEvent objects. Equality(ObjectEvent^,\u00a0ObjectEvent^) Creates a object event set by performing an equality operation on two ObjectEvent objects. Implicit(ObjectEvent^\u00a0to\u00a0ObjectEventSet^) :Microsoft.SqlServer.Management.Smo.ObjectEventSetCreates a new object event set by implicitly converting a ObjectEvent. Inequality(ObjectEvent^,\u00a0ObjectEvent^) Creates an object event set by performing an inequality operation on two ObjectEvent objects. Remarks The ObjectEvent object",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

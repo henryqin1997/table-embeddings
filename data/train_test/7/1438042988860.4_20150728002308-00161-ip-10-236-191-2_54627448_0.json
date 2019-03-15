@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Name",
+            "String",
+            "Integer",
+            "Real",
+            "Boolean",
+            "Character"
+        ],
+        [
+            "Type of Data",
+            "Holds Text",
+            "Holds whole numbers",
+            "Holds Decimal Numbers",
+            "Holds True or False",
+            "Holds a single character"
+        ],
+        [
+            "Examples",
+            "'New York', 'Evan'",
+            "3, 6, 1024",
+            "3.14, 503.2",
+            "TRUE, FALSE",
+            "'A', 'E'"
+        ]
+    ],
+    "pageTitle": "Pascal Variables and Data Types",
+    "title": "",
+    "url": "http://cs.nyu.edu/courses/fall99/A22.0002-003/variables.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988860.4/warc/CC-MAIN-20150728002308-00161-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 54635650,
+    "recordOffset": 54627448,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Overview of Pascal Data Types: VAR Heading: every variable must be assigned a data type and given a unique name. Declaration of variables must be done in the VAR heading section. Data Type: defines the type of data that will be stored in a variable. Variable: provides temporary storage of data. Definitions: Pascal Variables and Data Types",
+    "textAfterTable": "Strings: When declaring a string variable, you usually indicate its maximum length (1- 255). For example, to create a variable called City that can hold up to 25 characters, you would type: city: String[25]; If you do not include a maximum size, the string is given a default maximum size = 255. Variable Ranges Data Type Minimum Value Maximum Value Integer -32,768 32,767 LongInt -2,147,483,648 2,147,487,647 ShortInt -128 128 Real 2.9 x 10 E-39 1.7 x 10 E+38 Rules for Identifier Names All identifier names, including program names and variable names must follow the following rules: Must begin with a letter or underscore (_) Can only contain letters, numbers, or underscore (_) Cannot contain any blank spaces Examples of Illegal Identifiers: 2Length, AB*3, Len gth. Operator Precedence The following precedence table applies to Real and Integer operators. Parentheses always have the highest priority, and operators of equal priority are always performed left to right. Priority Operation First * / DIV MOD Second + - For example: To evaluate 4.0 + 6.0 * 3.0, you must follow the precedence table and perform the multiplication first, and the addition second. Hence, evaluating this expression will always give an answer of 22.0. If you want to perform the addition first, you must include the 4.0 + 6.0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

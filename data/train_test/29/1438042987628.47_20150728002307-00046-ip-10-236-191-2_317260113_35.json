@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "who",
+            "topic",
+            "unsubscribe",
+            "format",
+            "formatunsubscribe"
+        ],
+        [
+            "Default",
+            "Logged-in user",
+            "Current topic",
+            "Not set",
+            "Simple HTML Link with an action anchor \"Subscribe\" or \"Unsubscribe\"",
+            "format"
+        ],
+        [
+            "Meaning",
+            "Who to subscribe (wikiname, no web)",
+            "Topic to subscribe to. Wildcards may be used e.g. topic=\"Item*\" will subscribe to all topics starting with Item. Use topic=\"Main.*\" to subscribe to the WebNotify for that web.",
+            "If set to \"on\", will unsubscribe the user",
+            "Defines custom look-and-feel for subscribe link using the following format variables: $topics, $url, $wikiname, $action",
+            "Serves same function as format, but allows the user to define a different format than subscribe."
+        ]
+    ],
+    "pageTitle": "Macros < System < Biofuels Wiki",
+    "title": "",
+    "url": "http://www.biofuelswiki.org/System/Macros?sortcol=1;table=4;up=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 35,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987628.47/warc/CC-MAIN-20150728002307-00046-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 317342731,
+    "recordOffset": 317260113,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Parameters: BUTTON{\"text\" ...} -- renders a nice button Related: BR, BB, BB2, BB3, BB4, CARET, VBAR Current value: BULLET = \u2022 BULLET -- bullet character StandardColors DefaultPreferences, ENDCOLOR, Related: %RED% some text %ENDCOLOR% %GREEN% more text %ENDCOLOR% %ENDCOLOR%, e.g. write %ENDCOLOR%. If you want to switch from one color to another one you first need to end the active color with %<color>% text must end with BROWN is one of the shortcut macros predefined in DefaultPreferences. See the section shortcut macros in that topic for a complete list of colors. Example: %BROWN% brown text %ENDCOLOR% Expands to: brown text BROWN -- start brown colored text Related: BULLET, BB, BB2, BB3, BB4, CARET, VBAR Current value: BR = BR -- line break StandardColors DefaultPreferences, ENDCOLOR, Related: %RED% some text %ENDCOLOR% %GREEN% more text %ENDCOLOR% %ENDCOLOR%, e.g. write %ENDCOLOR%. If you want to switch from one color",
+    "textAfterTable": "id html id for this button \u00a0 onclick javascript event triggered when clicking the button \u00a0 onmouseout javascript event triggered when the pointer leaves the button \u00a0 onmouseover javascript event triggered when the pointer hovers over the button \u00a0 target topic to open when clicking on the button \u00a0 title popup title displayed when hovering over the button \u00a0 type type of action to be performed; available actions are button: (default) normal click button, target specified in target or href parameter clear: clears all input fields in the form that contains the button reset: resets all input fields in a form to their initial value submit: submits the form that contains the button save: same as submit but takes care of extra validation steps when saving a wiki topic button",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

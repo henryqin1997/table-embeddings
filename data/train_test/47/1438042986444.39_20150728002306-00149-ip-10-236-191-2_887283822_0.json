@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Certificate permission",
+            "CONTROL",
+            "TAKE OWNERSHIP",
+            "ALTER",
+            "REFERENCES",
+            "VIEW DEFINITION"
+        ],
+        [
+            "Implied by certificate permission",
+            "CONTROL",
+            "CONTROL",
+            "CONTROL",
+            "CONTROL",
+            "CONTROL"
+        ],
+        [
+            "Implied by database permission",
+            "CONTROL",
+            "CONTROL",
+            "ALTER ANY CERTIFICATE",
+            "REFERENCES",
+            "VIEW DEFINITION"
+        ]
+    ],
+    "pageTitle": "GRANT Certificate Permissions (Transact-SQL)",
+    "title": "",
+    "url": "https://msdn.microsoft.com/en-US/library/ms186278(v=sql.100).aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986444.39/warc/CC-MAIN-20150728002306-00149-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 887299768,
+    "recordOffset": 887283822,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "A certificate is a database-level securable contained by the database that is its parent in the permissions hierarchy. The most specific and limited permissions that can be granted on a certificate are listed below, together with the more general permissions that include them by implication. Remarks database user not mapped to a server principal. database user mapped to an asymmetric key database user mapped to a certificate database user mapped to a Windows group database user mapped to a Windows login application role database role database user Specifies a principal from which the principal executing this query derives its right to grant the permission. One of the following: granting_principal AS Indicates that the principal will also be given the ability to grant the specified permission to other principals. GRANT OPTION database user not mapped to a server principal. database user mapped to an asymmetric key database user mapped to a certificate database user mapped to a Windows group database user mapped to a Windows login application role database role database user Specifies the principal to which the permission is being granted. One of the following: database_principal Specifies the certificate on which the permission is being granted. The scope qualifier \"::\"",
+    "textAfterTable": "Permissions The grantor (or the principal specified with the AS option) must have either the permission itself with GRANT OPTION, or a higher permission that implies the permission being granted. If using the AS option, these additional requirements apply. AS granting_principal Additional permission required Database user IMPERSONATE permission on the user, membership in the db_securityadmin fixed database role, membership in the db_owner fixed database role, or membership in the sysadmin fixed server role. Database user mapped to a Windows login IMPERSONATE permission on the user, membership in the db_securityadmin fixed database role, membership in the db_owner fixed database role, or membership in the sysadmin fixed server role. Database user mapped to a Windows group Membership in the Windows group, membership in the db_securityadmin fixed database role, membership in the db_owner fixed database role, or membership in the sysadmin fixed server role. Database user mapped to a certificate Membership in the db_securityadmin fixed database role, membership in the db_owner fixed database role, or membership in the sysadmin fixed server role. Database user mapped to an asymmetric key Membership in the db_securityadmin fixed database role, membership in the db_owner fixed database role, or membership in the sysadmin fixed server role. Database user not",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

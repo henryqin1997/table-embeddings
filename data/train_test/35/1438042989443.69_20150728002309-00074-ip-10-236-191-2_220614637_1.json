@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "6 (3)",
+            "13",
+            "20",
+            "27 (1)"
+        ],
+        [
+            "M",
+            "",
+            "7 (2)",
+            "14 (1)",
+            "21",
+            "28 (1)"
+        ],
+        [
+            "T",
+            "1",
+            "8 (1)",
+            "15 (1)",
+            "22",
+            "29 (4)"
+        ],
+        [
+            "W",
+            "2 (1)",
+            "9",
+            "16 (1)",
+            "23",
+            "30 (5)"
+        ],
+        [
+            "T",
+            "3 (8)",
+            "10 (1)",
+            "17 (2)",
+            "24",
+            "31 (1)"
+        ],
+        [
+            "F",
+            "4 (1)",
+            "11 (1)",
+            "18",
+            "25",
+            ""
+        ],
+        [
+            "S",
+            "5 (1)",
+            "12 (3)",
+            "19",
+            "26",
+            ""
+        ]
+    ],
+    "pageTitle": "CLISP - an ANSI Common Lisp / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/clisp/mailman/clisp-devel/?viewmonth=200912&viewday=12",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989443.69/warc/CC-MAIN-20150728002309-00074-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 220627567,
+    "recordOffset": 220614637,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug (1) Jul \u00a0 Jun \u00a0 May \u00a0 Apr (5) Mar (23) Feb (8) Jan \u00a0 2015 Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug (1) Jul (1) Jun \u00a0 May (8) Apr (1) Mar (16) Feb \u00a0 Jan \u00a0 2014 Dec \u00a0 Nov (6) Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun \u00a0 May \u00a0 Apr (5) Mar (3) Feb (4) Jan (6) 2013 Dec (5)",
+    "textAfterTable": "Showing 3 results of 3 Flat | Threaded [ clisp-Bugs-2913228 ] wrong version of libsigsegv? From: SourceForge.net <noreply@so...> - 2009-12-12 11:31:50 Bugs item #2913228, was opened at 2009-12-12 22:26 Message generated for change (Settings changed) made by titanium_geek You can respond by visiting: https://sourceforge.net/tracker/?func=detail&atid=101355&aid=2913228&group_id=1355 Please note that this message will contain a full copy of the comment thread, including the initial issue submission, for this request, not just the latest update. Category: None Group: build problems Status: Open Resolution: None >Priority: 5 Private: No Submitted By: titanium (titanium_geek) Assigned to: Nobody/Anonymous (nobody) Summary: wrong version of libsigsegv? Initial Comment: I downloaded CLISP 2.48 from sourceforge.net on the 12th of December 2009, and attempted to compile it on my Intel Core2duo macbook (OS X 10.5.8). I Have XCode installed. The ./configure file gave me the wrong version of libsigsegv, I think. libsigsegv: no, consider installing GNU libsigsegv Please install libsigsegv like this: mkdir tools; cd tools; prefix=`pwd`/i386-apple-darwin9.8.0 wget http://ftp.gnu.org/pub/gnu/libsigsegv/libsigsegv-2.6.tar.gz tar xfz libsigsegv-2.6.tar.gz cd libsigsegv-2.6 ./configure --prefix=${prefix} && make && make check && make install cd ../.. rm -f src/config.cache ./configure --with-libsigsegv-prefix=${prefix} As you can see libsigsegv is 2.6,",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

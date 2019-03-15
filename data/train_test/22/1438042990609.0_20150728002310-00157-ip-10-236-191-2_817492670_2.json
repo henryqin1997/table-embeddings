@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "value",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        [
+            "'font-size' keyword",
+            "xx-small",
+            "small",
+            "medium",
+            "large",
+            "x-large",
+            "xx-large",
+            "xxx-large"
+        ],
+        [
+            "Notes",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "see below"
+        ]
+    ],
+    "pageTitle": "10 Rendering \u2014 HTML5",
+    "title": "",
+    "url": "http://www.w3.org/TR/2010/WD-html5-20101019/rendering.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00157-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 817530963,
+    "recordOffset": 817492670,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{6154=User agents are not required to present HTML documents in any particular way. However, this section provides a set of suggestions for rendering HTML documents that, if followed, are likely to lead to a user experience that closely resembles the experience intended by the documents' authors. So as to avoid confusion regarding the normativity of this section, RFC2119 terms have not been used. Instead, the term \"expected\" is used to indicate behavior that will lead to this experience.}",
+    "lastModified": "Tue, 08 Feb 2011 20:10:50 GMT",
+    "textBeforeTable": "For each property in the table below, given a body element, the first attribute that exists maps to the pixel length property on the body element. If none of the attributes for a property are found, or if the value of the attribute that was found cannot be parsed successfully, then a default value of 8px is expected to be used for that property instead. x x x x x h1 { margin-top: 2.33em; margin-bottom: 2.33em; } x x x x h1 { margin-top: 1.67em; margin-bottom: 1.67em; } x x x h1 { margin-top: 1.33em; margin-bottom: 1.33em; } x x h1 { margin-top: 1.00em; margin-bottom: 1.00em; } x h1 { margin-top: 0.83em; margin-bottom: 0.83em; } @namespace url(http://www.w3.org/1999/xhtml); The article, aside, nav, and section elements are expected to affect the margins of h1 elements, based on the nesting depth. If x is a selector that matches elements that are either article, aside, nav, or section elements, then the following rules capture what is expected: td, th { padding: 1px; } table { border-spacing: 2px; border-collapse: separate; } blockquote, figure { margin-left: 40px; margin-right: 40px; } dir, menu, ol, ul { padding-left: 40px; } /* LTR-specific: use 'padding-right' for rtl elements */ dd { margin-left: 40px; } /* LTR-specific: use 'margin-right' for rtl elements */ h6 { margin-top: 2.33em;",
+    "textAfterTable": "body element's marginwidth attribute The body element's container frame element's marginwidth attribute body element's leftmargin attribute If the body element's Document's browsing context is a nested browsing context, and the browsing context container of that nested browsing context is a frame or iframe element, then the container frame element of the body element is that frame or iframe element. Otherwise, there is no container frame element. The above requirements imply that a page can change the margins of another page (including one from another origin) using, for example, an iframe. This is potentially a security risk, as it might in some cases allow an attack to contrive a situation in which a page is rendered not as the author intended, possibly for the purposes of phishing or otherwise misleading the user. If the Document has a root element, and the Document's browsing context is a nested browsing context, and the browsing context container of that nested browsing context is a frame or iframe element, and that element has a scrolling attribute, then the user agent is expected to compare the value of the attribute in an ASCII case-insensitive manner to the values in the first column of the following table, and if",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

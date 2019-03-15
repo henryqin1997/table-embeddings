@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Fecha",
+            "20 Oct 2000",
+            "29 Oct 2007",
+            "5 Nov 2007",
+            "11 Ago 2011",
+            "27 Oct 2011",
+            "9 Dic 2012"
+        ],
+        [
+            "C\ufffddigo",
+            "AS",
+            "FPAY",
+            "REMI",
+            "AS",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Evento",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Assignment",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Descripci\ufffdn",
+            "Owner name: MALLINCKRODT INC., MISSOURI Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:DELACHE, ALAIN J.;HANSEN, GARY;BOWMAN, BRUCE;REEL/FRAME:011550/0846;SIGNING DATES FROM 20001018 TO 20001019",
+            "Year of fee payment: 4",
+            "",
+            "Owner name: NELLCOR PURITAN BENNETT LLC, COLORADO Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:MALLINCKRODT INC.;REEL/FRAME:026738/0261 Effective date: 20110623",
+            "Year of fee payment: 8",
+            "Owner name: COVIDIEN LP, MASSACHUSETTS Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:NELLCOR PURITAN BENNETT LLC;REEL/FRAME:029432/0521 Effective date: 20120929"
+        ]
+    ],
+    "pageTitle": "Patente US6728589 - Customized respiratory mask and method of manufacturing same - Google Patentes",
+    "title": "",
+    "url": "http://www.google.es/patents/US6728589?dq=flatulence",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988840.31/warc/CC-MAIN-20150728002308-00254-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 478606071,
+    "recordOffset": 478582722,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{57767=In step 1007, the method searches inward from an edge of the image to find a maximal extent of an illumination pattern of the image. In this manner, the image boundaries are approximated., 57981=In step 1014, all brightness peaks along a vertical line are located and recorded. The recordation includes recording the pixels associated with the brightness peaks., 57052=In step 1004, a digital enhancement is performed on the image. In the preferred embodiment, the digital enhancement method looks at a single vertical scan of pixels that cuts across the lines of the image. A maximum and minimum brightness is found, and a local scale is defined, with the scale being 255 for the maximum brightness, and 0 for the minimum. Then pixels within the image that do not exceed a predetermined brightness threshold are set to zero, while pixels that do exceed the predetermined brightness threshold are set to a value of 255. It should be understood that other enhancement methods may be used, such as standard image enhancement routines commonly used in the art., 58174=In step 1019, the vertical line and the associated brightness peaks are rejected if less than a predetermined number of such peaks are found. This step ensures that areas having drop-offs or blank spots in the image do not adversely affect the final result., 58794=In step 1027, the image lines are converted into physical dimensions by applying a scaling factor. In the preferred embodiment, each pixel represents about 0.3 millimeter., 58992=In step 1031, a geometric conversion is applied in order to determine the contour heights of the facial area. The height determination is performed in accordance with the formula discussed in conjunction with FIG. 5 above., 58458=In step 1025, the finding process of step 1014 is repeated a predetermined number of times. The number of vertical lines thereby inspected will control the accuracy and resolution of the method. The brightness peaks found will form the horizontal lines of the light pattern of the preferred embodiment., 56941=FIG. 10 shows a flowchart 1000 of a second embodiment of the pixel selection method.}",
+    "textBeforeTable": "Citas de patentes While the invention has been described in detail above, the invention is not intended to be limited to the specific embodiments as described. It is evident that those skilled in the art may now make numerous uses and modifications of and departures from the specific embodiments described herein without departing from the inventive concepts. In step 1031, a geometric conversion is applied in order to determine the contour heights of the facial area. The height determination is performed in accordance with the formula discussed in conjunction with FIG. 5 above. In step 1027, the image lines are converted into physical dimensions by applying a scaling factor. In the preferred embodiment, each pixel represents about 0.3 millimeter. In step 1025, the finding process of step 1014 is repeated a predetermined number of times. The number of vertical lines thereby inspected will control the accuracy and resolution of the method. The brightness peaks found will form the horizontal lines of the light pattern of the preferred embodiment. In step 1019, the vertical line and the associated brightness peaks are rejected if less than a predetermined number of such peaks are found. This step ensures that areas having drop-offs or blank spots in the image do not adversely affect the final result. In step 1014, all brightness peaks along a vertical line are located and recorded. The recordation includes recording the pixels associated with the brightness peaks. In",
+    "textAfterTable": "US5559334 22 May 1995 24 Sep 1996 General Electric Company Epipolar reconstruction of 3D structures US5587912 7 Jul 1994 24 Dic 1996 Nobelpharma Ab Computer aided processing of three-dimensional object and apparatus therefor US5629808 15 Dic 1995 13 May 1997 National Research Council Of Canada D-shape laser beam projector US5647357 8 Sep 1995 15 Jul 1997 Respironics, Inc. Respiratory mask facial seal US5659478 21 Feb 1995 19 Ago 1997 Motorola, Inc. Rapid product realization process US5721416 28 May 1996 24 Feb 1998 Microlas Lasersystem Gmbh Optics for forming a sharp illuminating line of a laser beam US5753931 * 13 Jul 1995 19 May 1998 Nike, Inc. Object imaging device and method using line striping US6069748 20 Oct 1998 30 May 2000 Eastman Kodak Company Laser line generator system WO2000059567A1 * 30",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

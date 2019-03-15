@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Value",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8-255"
+        ],
+        [
+            "Name",
+            "Reserved",
+            "NORM_CMD(FLUSH)",
+            "NORM_CMD(EOT)",
+            "NORM_CMD(SQUELCH)",
+            "NORM_CMD(CC)",
+            "NORM_CMD(REPAIR_ADV)",
+            "NORM_CMD(ACK_REQ)",
+            "NORM_CMD(APPLICATION)",
+            "Unassigned"
+        ],
+        [
+            "Reference",
+            "[RFC5740]",
+            "[RFC5740]",
+            "[RFC5740]",
+            "[RFC5740]",
+            "[RFC5740]",
+            "[RFC5740]",
+            "[RFC5740]",
+            "[RFC5740]",
+            ""
+        ]
+    ],
+    "pageTitle": "Negative-ACKnowledgment (NACK) Oriented Reliable Multicast (NORM) Parameters",
+    "title": "",
+    "url": "https://www.iana.org/assignments/norm-parameters/norm-parameters.xhtml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989826.86/warc/CC-MAIN-20150728002309-00157-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 905456505,
+    "recordOffset": 905448303,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 30 Jan 2014 17:45:15 GMT",
+    "textBeforeTable": "CSV Available Formats RFC5740] [ Reference Specification Required Registration Procedure(s) NORM_CMD Message Sub-types Unassigned 1-65535 [RFC5740] NORM_STREAM_END 0 Reference Name Value CSV Available Formats RFC5740] [ Reference Specification Required Registration Procedure(s) NORM Stream Control Codes Unassigned 129-255 [RFC5740] EXT_RATE 128 Unassigned 65-127 [RFC5740] EXT_FTI 64 Unassigned 4-63 [RFC5740] EXT_CC 3 Unassigned 2 [RFC5740] EXT_AUTH 1 Unassigned 0 Reference Name Value CSV Available Formats RFC5740] [ Reference Specification Required Registration Procedure(s) NORM Header Extension Types NORM_CMD Message Sub-types NORM Stream Control Codes NORM Header Extension Types Registries included below Plain text HTML",
+    "textAfterTable": "",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

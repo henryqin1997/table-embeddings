@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Command",
+            "help",
+            "abbreviated-command-entry ? Controller# di? dir disable disconnect",
+            "abbreviated-command-entry Controller# sh conf Controller# show configuration",
+            "? Switch> ?",
+            "command ? Switch> show ?",
+            "command keyword ? Controller(config)# cdp holdtime ? <10-255> Length of time (in sec) that receiver must keep this packet"
+        ],
+        [
+            "Purpose",
+            "Obtains a brief description of the help system in any command mode.",
+            "Obtains a list of commands that begin with a particular character string.",
+            "Completes a partial command name.",
+            "Lists all commands available for a particular command mode.",
+            "Lists the associated keywords for a command.",
+            "Lists the associated arguments for a keyword."
+        ]
+    ],
+    "pageTitle": "High Availability Command Reference Guide, Cisco IOS XE Release 3SE (Cisco WLC 5700 Series) - Using the Command-Line Interface [Cisco 5700 Series Wireless LAN Controllers] - Cisco",
+    "title": "Table 2 Help Summary",
+    "url": "http://www.cisco.com/c/en/us/td/docs/wireless/controller/5700/software/release/3se/ha/command_reference/b_ha_3se_5700_cr/b_ha_3se_5700_cr_chapter_01.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987174.71/warc/CC-MAIN-20150728002307-00177-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 367673523,
+    "recordOffset": 367654588,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "This table describes the main command modes, how to access each one, the prompt you see in that mode, and how to exit the mode. The examples in the table use the hostname Switch. Using the configuration modes (global, interface, and line), you can make changes to the running configuration. If you save the configuration, these commands are stored and used when the switch reboots. To access the various configuration modes, you must start at global configuration mode. From global configuration mode, you can enter interface configuration mode and line configuration mode. To have access to all commands, you must enter privileged EXEC mode. Normally, you must enter a password to enter privileged EXEC mode. From this mode, you can enter any privileged EXEC command or enter global configuration mode. When you start a session on the switch, you begin in user mode, often called user EXEC mode. Only a limited subset of the commands are available in user EXEC mode. For example, most of the user EXEC commands are one-time commands, such as show commands, which show the current configuration status, and clear commands, which clear counters or interfaces. The user EXEC commands are not saved when the switch reboots. The Cisco IOS user interface is divided into many different modes. The commands available to you depend on which mode you are currently in. Enter a question mark (?) at the system prompt to obtain a list",
+    "textAfterTable": "While in global configuration mode, enter the vlan vlan-id command.  Controller(config-vlan)# To exit to global configuration mode, enter the exit command. To return to privileged EXEC mode, press Ctrl-Z or enter end. Use this mode to configure VLAN parameters. When VTP mode is transparent, you can create extended-range VLANs (VLAN IDs greater than 1005) and save configurations in the switch startup configuration file. Interface configuration While in global configuration mode, enter the interface command (with a specific interface).  Controller(config-if)# To exit to global configuration mode, enter exit. To return to privileged EXEC mode, press Ctrl-Z or enter end. Use this mode to configure parameters for the Ethernet ports. Line configuration While in global configuration mode, specify a line with the line\u00a0vty or line console command.  Controller(config-line)# To exit to global configuration mode, enter exit. To return to privileged EXEC mode, press",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

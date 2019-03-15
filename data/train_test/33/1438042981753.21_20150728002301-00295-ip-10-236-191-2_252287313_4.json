@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Topic",
+            "Name",
+            "Synopsis",
+            "Description",
+            "AUTHOR",
+            "Reads",
+            "Writes",
+            "Opens",
+            "Calls"
+        ],
+        [
+            "Description",
+            "daps2ll",
+            "/infobank/programs/refmt/daps2ll/daps2ll.for",
+            "Program to convert DAPS format to .ll.",
+            "Clint Steele 10/9/01",
+            "read (90, '(a)', end = 99) ALine",
+            "write (91, '(a)') '&g write (91, '(t9,a,t38,a)') * ALine(26:35), ALine(16:24)",
+            "",
+            "call openem (1,-1)"
+        ]
+    ],
+    "pageTitle": "USGS InfoBank program -- daps2ll",
+    "title": "Expanded Description",
+    "url": "http://walrus.wr.usgs.gov/infobank/programs/refmt/daps2ll/daps2ll.doc.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981753.21/warc/CC-MAIN-20150728002301-00295-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 252295515,
+    "recordOffset": 252287313,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{6914=U.S. Department of the Interior | U.S. Geological Survey URL: http://walrus.wr.usgs.gov/infobank/programs/refmt/daps2ll/daps2ll.doc.html Page Contact Information: InfoBank staff Page Last Modified: Mon Sep 16 03:38:31 PDT 2013 \u00a0(chd)}",
+    "lastModified": "Mon, 16 Sep 2013 10:38:31 GMT",
+    "textBeforeTable": "\u00a0 --> Boothill by\u00a0Topic \u00a0 USGS\u00a0Disclaimer Web Plotting GIS General\u00a0Tools by\u00a0Data\u00a0Type \u00a0\u00a0\u00a0 customSearchControl.draw('cse-search-form', options);}, true); \u00a0\u00a0\u00a0 options.enableSearchboxOnly(\"http://google.com/cse?cx=010922335342421557629:utgg6x7e8l8\"); \u00a0\u00a0\u00a0 \u00a0\u00a0 \u00a0var options = new google.search.DrawOptions(); \u00a0\u00a0\u00a0 customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET); \u00a0\u00a0\u00a0 var customSearchControl = new google.search.CustomSearchControl('010922335342421557629:utgg6x7e8l8'); \u00a0 google.setOnLoadCallback(function() { \u00a0 google.load('search', '1', {language : 'en', style : google.loader.themes.SHINY}); Loading Skip\u00a0navigational\u00a0links USGS InfoBank program -- daps2ll MoreRelated SitesGeology SchoolAtlasActivitiesFACSHome",
+    "textAfterTable": "Skip\u00a0footer\u00a0navigational\u00a0links Coastal and Marine Science Centers:\u00a0 Pacific \u00a0 St.\u00a0Petersburg \u00a0 Woods\u00a0Hole \u00a0 InfoBank \u00a0 Coastal\u00a0and\u00a0Marine\u00a0Geology\u00a0Program \u00a0 Geologic\u00a0Information \u00a0 Ask-A-Geologist \u00a0 USGS\u00a0Disclaimer \u00a0 Accessibility FOIA Privacy Policies and Notices U.S. Department of the Interior | U.S. Geological Survey URL: http://walrus.wr.usgs.gov/infobank/programs/refmt/daps2ll/daps2ll.doc.html Page Contact Information: InfoBank staff Page Last Modified: Mon Sep 16 03:38:31 PDT 2013 \u00a0(chd)",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

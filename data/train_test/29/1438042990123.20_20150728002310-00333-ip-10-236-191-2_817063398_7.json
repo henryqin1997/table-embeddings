@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust"
+        ],
+        [
+            "Average",
+            "8.1 \u00b0F",
+            "-7.1 \u00b0F",
+            "51.9 %",
+            "30.25 in",
+            "6.1 mph",
+            ""
+        ],
+        [
+            "High",
+            "17.6 \u00b0F (2:15 pm)",
+            "-2.2 \u00b0F (1:35 am)",
+            "78 % (7:35 am)",
+            "30.33 in (6:35 pm)",
+            "13.8 mph (10:55 am)",
+            "18.4 mph (10:55 am)"
+        ],
+        [
+            "Low",
+            "-2.2 \u00b0F (7:15 am)",
+            "-11.2 \u00b0F (11:15 am)",
+            "32 % (1:15 pm)",
+            "30.03 in (12:35 am)",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Peru, Vermont [February 17, 2014] - Weather Records By Hour (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherhourly.php3?s=533634&date=2014-02-17&cityname=Peru%2C+Vermont%2C+United+States+of+America&units=",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990123.20/warc/CC-MAIN-20150728002310-00333-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 817078235,
+    "recordOffset": 817063398,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] WEATHER ALMANAC - FEBRUARY 17, 2014 [ \u2190 Previous Day ] } PrintUrl('printIframe', 'http://www.weatherbase.com/weather/weatherhourly-print.php3?s=533634&date=2014-02-17&cityname=Peru%2C+Vermont%2C+United+States+of+America&units='); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); window.location = url; var url = \"/weather/weatherhourly.php3?s=533634&date=\" + event.format() + \"&citynamePeru%2C+Vermont%2C+United+States+of+America&set=\"; $('#datepicker').datepicker().on('changeDate', function (event) { }); startView: 2 endDate: \"2015-07-29\", startDate: \"1995-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 10 mi Wind Direction SSW (196.9 \u00b0) Weather Element Total Precipitation --- Heating Degree Days 57.3 (Base 65) Averaged from 71 records on February 17, 2014",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Option",
+            "[...]",
+            "defaultGroup",
+            "debugCacheLiteFunction",
+            "dontCacheWhenTheOutputContainsNOCACHE",
+            "dontCacheWhenTheResultIsFalse",
+            "dontCacheWhenTheResultIsNull"
+        ],
+        [
+            "Data Type",
+            "[...]",
+            "string",
+            "boolean",
+            "boolean",
+            "boolean",
+            "boolean"
+        ],
+        [
+            "Default Value",
+            "[...]",
+            "Cache_Lite_Function",
+            "FALSE",
+            "FALSE",
+            "FALSE",
+            "FALSE"
+        ],
+        [
+            "Description",
+            "See Cache_Lite constructor for more options",
+            "default cache group for function caching",
+            "debug the caching process",
+            "Don't cache the method call when its output contains the string \"NOCACHE\". If set to true, the output of the method will never be displayed (because the output is used to control the cache)",
+            "Don't cache the method call when its result is false",
+            "Don't cache the method call when its result is null"
+        ]
+    ],
+    "pageTitle": "Manual :: Constructor",
+    "title": "",
+    "url": "http://pear.php.net/manual/ru/package.default.cache-lite.cache-lite-function.cache-lite-function.php",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988310.3/warc/CC-MAIN-20150728002308-00038-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 180712373,
+    "recordOffset": 180704171,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "associative array to set a lot of options (see Cache_Lite constructor for details). Be careful, with Cache_Lite_Function, additional options are available (comparatively to Cache_Lite). There are described on the following table. $options array Parameter The constructor of the Cache_Lite_Output class. You can give an associative array as an argument to set a lot of options. Description void constructor Cache_Lite_Function::Cache_Lite_Function ( array $options = array(NULL) ) require_once 'Cache/Lite/Function.php'; Synopsis Cache_Lite_Function::Cache_Lite_Function() \u2013 Constructor constructor constructor Cache_Lite_Function::Cache_Lite_Function API Documentation Package Info get Constructor drop call Constructor end start Constructor extendLife raiseError lastModified getMemoryCachingState saveMemoryCachingState setLifeTime setToDebug clean remove save get Constructor Introduction Cache_Lite PEAR Manual",
+    "textAfterTable": "Note This function can not be called statically. Stop the output buffering started by the start() method and store the output to a cache file (Previous) Calls a cacheable function or method (or not if there is already a cache for it) (Next) Last updated: Fri, 31 Jul 2015 \u2014 Download Documentation Do you think that something on this page is wrong? Please file a bug report or add a note. View this page in: English \u00a0\u2022\u00a0 Brazilian Portuguese \u00a0\u2022\u00a0 Chinese \u00a0\u2022\u00a0 Dutch \u00a0\u2022\u00a0 French \u00a0\u2022\u00a0 German \u00a0\u2022\u00a0 Hungarian \u00a0\u2022\u00a0 Japanese \u00a0\u2022\u00a0 Polish \u00a0\u2022\u00a0 Russian \u00a0\u2022\u00a0 Spanish \u00a0\u2022\u00a0 Turkish User Notes: There are no user contributed notes for this page. PRIVACY POLICY\u00a0|\u00a0 CREDITS Copyright \u00a9 2001-2015 The PHP Group All rights reserved. Bandwidth and hardware provided by: eUKhost",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

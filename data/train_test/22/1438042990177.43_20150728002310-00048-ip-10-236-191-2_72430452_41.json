@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Quantity",
+            "1",
+            "2",
+            "8",
+            "2",
+            "1",
+            "2"
+        ],
+        [
+            "Cisco Part Number",
+            "N20-B6620-1",
+            "N20-X00002",
+            "N01-M304GB1",
+            "A03-D146GA2",
+            "N20-AQ0002",
+            "N20-BHTS1"
+        ],
+        [
+            "Description",
+            "UCS B200 M1 Blade Server w/o CPU, memory, HDD, mezzanine",
+            "2.53GHz Xeon E5540 80W CPU/8MB cache/DDR3 1066MHz",
+            "4GB DDR3-1333MHz RDIMM/PC3-10600/dual rank 1Gb DRAMs",
+            "146GB 6Gb SAS 10K RPM SFF HDD/hot plug/drive sled mounted",
+            "UCS M71KR-Q QLogic Converged Network Adapter/PCIe/2port 10Gb",
+            "Auto-included: CPU Heat Sink for UCS B200 M1 Blade Server"
+        ]
+    ],
+    "pageTitle": "UC Virtualization Supported Hardware - DocWiki",
+    "title": "",
+    "url": "http://docwiki.cisco.com/w/index.php?title=UC_Virtualization_Supported_Hardware&diff=53175&oldid=52284",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 41,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00048-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 72468079,
+    "recordOffset": 72430452,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{270278=2X4GB DDR3-1333-MHz RDIMM/PC3-10600/single rank/x1/1.35v, 238944=E.g. if the TRC BOM was tested with 2-socket Intel Xeon E5-2680 (Romley/SandyBridge-EP, 8-core, 2.7 GHz), then 2-sockets of any 8-core CPU of 2.7 GHz or higher with the E5-26xx/46xx (Intel\u00a0Xeon Romley/SandyBridge-EP architecture) may be substituted., 268060=2.70 GHz E5-2680 130W 8C/20MB Cache/DDR3 1600MHz, 310940=R210-2121605, 266221=2.4 GHz E7-2870 130W 10C/30M Cache, 319693=QLogic QLE2462, 4Gb dual port Fibre Channel Host Bus Adapter, 268010=UCS-CPU-E5-2680, 268672=VIC 1240 modular LOM for M3 blade servers, 266397=2X8GB DDR3-1333-MHz RDIMM/PC3-10600/dual rank/x4/1.35v, 264394=2X8GB DDR3-1333-MHz RDIMM/PC3-10600/dual rank/x2/1.35v, 271574=UCSC-PSU2-1200, 269695=C260-BASE-2646, 236299=For purposes of sizing rules and co-residency, virtualized UC apps see equivalent performance from one physical CPU core on any of the above architectures. E.g. UC apps perform eqiuvalently on 1 physical core of 5600 at 2.53+\u00a0GHz or 1 physical core of E5-2600 at 2.50+ GHz or 1 physical core of E7-2800 at 2.40+\u00a0GHz., 266172=UCS-CPU-E72870}",
+    "textBeforeTable": "This BOM was also quotable via fixed-configuration bundle UCS-B440M2-VCDL1. B440 M2 TRC#1 If the bundle does NOT meet TRC requirements and also does NOT meet Specs-based requirements, then it may NOT be quoted for UC on UCS at all without modification. If the bundle does NOT meet TRC requirements but DOES meet Specs-based requirements, then it may be quoted for UC on UCS Specs-based only. If the bundle meets TRC requirements on this page, it may be quoted for UC on UCS TRC. Bundle SKUs for UC on UCS TRCs are listed in the UC on UCS section of Cisco Commerce Build and Price tool. Do not assume that other UCS bundle SKUs on Cisco Commerce Build and Price can be used with UC on UCS. Before quoting one of these bundles, identify the BOM that it ships and see below: Note: UC on UCS TRC Bills of Material (BOMs) Cisco TAC is not obligated troubleshoot UC apps issues in a deployment with insufficient or overloaded I/O devices. Storage access adapters must be able to accommodate the storage IOPS (described in the",
+    "textAfterTable": "4 N20-BHTS3 Auto-included: CPU heat sink for UCS B440 Blade Server 1 N20-LBLKU Auto-included: Blanking panel for B440 M1 battery backup bay B230 M2 TRC#1 This BOM was also quotable via fixed-configuration bundle UCS-B230M2-VCDL1 (has extra RAM vs. minimum below). Quantity Cisco Part Number Description 1 B230-BASE-M2UPG UCS B230 M2 Blade Server w/o CPU, memory, SSD, mezzanine1 2 UCS-CPU-E72870 2.4 GHz E7-2870 130W 10C/30M Cache 8 UCS-MR-2X082RX-B 2X8GB DDR3-1333-MHz RDIMM/PC3-10600/dual rank/x4/1.35v 1 N20-AC0002 UCS M81KR Virtual Interface Card/PCIe/2-port 10Gb1 16 UCS-MKIT-082RX-B Auto-included: Mem kit for UCS-MR-2X082RX-B 2 N20-BBLKD-7MM Auto-included: UCS 7MM SSD Blank Filler 2 N20-BHTS6 Auto-included: CPU heat sink for UCS B230 Blade Server B200 M3 TRC#1 This configuration is also quotable as",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}
