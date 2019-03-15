@@ -1,0 +1,68 @@
+{
+    "relation": [
+        [
+            "place#",
+            "1",
+            "6",
+            "7",
+            "8",
+            "25"
+        ],
+        [
+            "parent#",
+            "0",
+            "1",
+            "6",
+            "7",
+            "8"
+        ],
+        [
+            "level",
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        [
+            "place",
+            "USA",
+            "California",
+            "Los Angeles",
+            "Beverley Hills",
+            "135 Copley Place"
+        ],
+        [
+            "long",
+            "W100.00",
+            "W119.300",
+            "W118.230",
+            "W118.400",
+            "W118.4224"
+        ],
+        [
+            "lati",
+            "N39.00",
+            "N36.000",
+            "N34.05",
+            "N34.07",
+            "N34.0767"
+        ]
+    ],
+    "pageTitle": "Geonames - Gramps",
+    "title": "",
+    "url": "https://gramps-project.org/wiki/index.php?title=Geonames&oldid=16972",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00034-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 881509779,
+    "recordOffset": 881501577,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "So the computer application will think in reverse to us, preferring to start with a country, then finding the names of the places sub-ordinate to it, and so on. Accordingly, the database setup needs to reflect this. As an example: So, I would prefer to think of all those geographic descriptors as \"levels\", starting with the country (we can all agree on that, I think) as the base level - Level 0 - and then moving on to Level 1 etc. Having defined our Level 0, all Level 1s are therefore sub-ordinate to it. You can, of course, have as many 'Level 0's as you need. In the world of databases, parsing an address like the one above would be most inefficient - if it could be done at all. It is better to use the database and its strengths to assist us. When we think about places, we tend to think of them in our own situation. So, I might live at 135 Copley Place, Beverley Hills, Los Angeles, California, USA. (I don't). I think of them, in order, as Address, Suburb, City, State and Country. Other places use different nomenclature - county, province, prefecture, arondisment...to name just a few. Storage methods You can see the list at http://www.geonames.org/countries/ There are still some confusions in the list - eg, the United Kingdom/Great Britain tangle. There is an existing ISO (ISO-3166) that is used as the baseline for",
+    "textAfterTable": "Other places in Los Angeles would \"share\" the first 3 rows in the table, but then start a new branch. GEDCOM A well-designed database could derive from a GEDCOM using the correct structure:  0 INDI @987@ 1 BIRT 2 DATE 23 JUN 1967 2 PLAC Beverley Hills, California, USA 3 MAP 4 LATI N34.05 4 LONG 118.230 but in practical use, the last 3 lines can be left out, and the 2 PLAC information linked to a lookup \"places\" table to prevent bloating the GEDCOM with repeat information. Not all applications adhere to this pattern. TMG expects you to enter the data in this format: DDMMSSCDDDMMSSC where the first seven characters represent the latitude and the last eight characters represent the longitude. DD is degrees, MM is minutes and SS is seconds. The \"C\" is the compass heading (NSEW) TMG exports the lat/lon data as the last portion of the PLAC record, like this:  1 BAPM 2 DATE 23 JUN 1935 2 PLAC St Columba's Church, 2340 W. Lehigh Avenue, Philadelphia, Philadelphia Co, Pennsylvania, USA, 395945N0751013W It really needs to look like this:  1 BAPM 2 DATE 23 JUN 1935 2 PLAC St Columba's Church, 2340 W. Lehigh Avenue, Philadelphia, Philadelphia Co, Pennsylvania, USA 3 MAP 4 LATI N39.9958 4 LONG W75.1703 Discipline If there is a problem with this, it is that you might need to edit",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

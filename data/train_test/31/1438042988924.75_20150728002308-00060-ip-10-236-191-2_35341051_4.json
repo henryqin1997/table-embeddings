@@ -1,0 +1,93 @@
+{
+    "relation": [
+        [
+            "Select Type",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE"
+        ],
+        [
+            "Table",
+            "post",
+            "user",
+            "user_profile",
+            "post_dice",
+            "post_edit"
+        ],
+        [
+            "Type",
+            "range",
+            "eq_ref",
+            "eq_ref",
+            "eq_ref",
+            "ref"
+        ],
+        [
+            "Possible Keys",
+            "thread_id_post_date,thread_id_position",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "post_id"
+        ],
+        [
+            "Key",
+            "thread_id_position",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "post_id"
+        ],
+        [
+            "Key Len",
+            "8",
+            "4",
+            "4",
+            "4",
+            "4"
+        ],
+        [
+            "Ref",
+            "",
+            "tfnforum.post.user_id",
+            "tfnforum.post.user_id",
+            "tfnforum.post.post_id",
+            "tfnforum.post.post_id"
+        ],
+        [
+            "Rows",
+            "18",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Extra",
+            "Using where; Using filesort",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "",
+    "title": "",
+    "url": "http://boards.theforce.net/threads/good-morning-good-afternoon-and-good-night.7548161/page-2?_debug=1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988924.75/warc/CC-MAIN-20150728002308-00060-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 35349252,
+    "recordOffset": 35341051,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Sun, 02 Aug 2015 00:35:20 GMT",
+    "textBeforeTable": "Run Time: 0.004128 WHERE data_key IN ('options', 'languages', 'contentTypes', 'codeEventListeners', 'cron', 'simpleCache', 'routesPublic', 'nodeTypes', 'bannedIps', 'discouragedIps', 'styles', 'displayStyles', 'smilies', 'bbCode', 'threadPrefixes', 'trophyUserTitles', 'reportCounts', 'moderationCounts', 'notices', 'userFieldsInfo') FROM xf_data_registry SELECT data_key, data_value   Queries (18, time: 0.0594s, 13.0%) Memory: 10.3482 MB (Peak: 11.1283 MB) Page Time: 0.4565s",
+    "textAfterTable": "LEFT JOIN xf_user AS user ON (user.user_id = thread.user_id) LEFT JOIN xf_thread_rpg AS threadRpg ON (thread.thread_id = threadRpg.thread_id) WHERE thread.thread_id = ? Params: 7548161 Run Time: 0.000629 Select Type Table Type Possible Keys Key Key Len Ref Rows Extra SIMPLE thread const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE user const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE threadRpg const PRIMARY PRIMARY 4 const 0 unique row not found  SELECT node.*, forum.* , permission.cache_value AS node_permission_cache, NULL AS forum_read_date FROM xf_forum AS forum INNER JOIN xf_node AS node ON (node.node_id = forum.node_id) LEFT JOIN xf_permission_cache_content AS permission ON (permission.permission_combination_id = 1 AND permission.content_type = 'node' AND permission.content_id = forum.node_id) WHERE node.node_id = ? Params: 10390 Run Time: 0.000822 Select Type Table Type Possible Keys Key Key Len Ref Rows Extra SIMPLE forum const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE node const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE permission const PRIMARY PRIMARY 85 const,const,const 1 \u00a0  SELECT post.* , user.*, IF(user.username IS NULL, post.username, user.username) AS username, user_profile.*, 0 AS like_date,dice_data,list_data, IF(post_edit.user_id IS NULL, 0, post_edit.user_id) AS post_edit_user_id, IF(post_edit.username IS NULL, \"\", post_edit.username) AS post_edit_username, IF(post_edit.date IS NULL, 0, post_edit.date) AS post_edit_date, IF(post_edit.reason IS NULL, \"\", post_edit.reason) AS post_edit_reason FROM xf_post AS post LEFT JOIN xf_user AS user ON (user.user_id = post.user_id) LEFT",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

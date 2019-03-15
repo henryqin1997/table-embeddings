@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Problem",
+            "creating a list with given elements",
+            "creating a list with stepsize 1",
+            "creating a list with different stepsize",
+            "creating an infinite constant list",
+            "creating an infinite list with stepsize 1"
+        ],
+        [
+            "Solution",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+        ],
+        [
+            "Examples",
+            "3 : 12 : 42 : [] --> [3,12,42] 'f' : 'o' : 'o' : [] --> \"foo\"",
+            "[1..10] --> [1,2,3,4,5,6,7,8,9,10] ['a'..'z'] --> \"abcdefghijklmnopqrstuvwxyz\"",
+            "[1,3..10] --> [1,3,5,7,9] ['a','c'..'z'] --> \"acegikmoqsuwy\"",
+            "[1,1..] --> [1,1,1,1,1,...",
+            "[1..] --> [1,2,3,4,5,..."
+        ]
+    ],
+    "pageTitle": "Cookbook/Lists and strings - HaskellWiki",
+    "title": "",
+    "url": "https://wiki.haskell.org/index.php?title=Cookbook/Lists_and_strings&diff=33408&oldid=27947",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986451.45/warc/CC-MAIN-20150728002306-00093-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 889769307,
+    "recordOffset": 889755090,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "1.1 Creating simple lists In Haskell, lists are what Arrays are in most other languages. 1 Lists 2.7 Unicode 2.6 Performance 2.5 Interpolation 2.4 Converting case 2.3 Reversing a string by words or characters 2.2 Converting between characters and values 2.1 Multiline strings 2 Strings 1.5 Splitting lists 1.4 Accessing sublists 1.3 Combining lists 1.2 List comprehensions 1.1 Creating simple lists 1 Lists Contents Revision as of 02:10, 1 February 2010 (11 intermediate revisions by one user not shown) Newer edit \u2192 (Fixed a couple of the list shorthands) m (Talk | contribs) Effigies",
+    "textAfterTable": "1.2 List comprehensions The list of all squares can also be written in a more comprehensive way, using list comprehensions: squares = [x*x | x <- [1..]] List comprehensions allow for constraints as well: -- multiples of 3 or 5 mults = [ x | x <- [1..], mod x 3 == 0 || mod x 5 == 0 ] 1.3 Combining lists Problem Solution Examples combining two lists (++) \"foo\" ++ \"bar\" --> \"foobar\" [42,43] ++ [60,61] --> [42,43,60,61] combining many lists concat concat [\"foo\", \"bar\", \"baz\"] --> \"foobarbaz\"",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

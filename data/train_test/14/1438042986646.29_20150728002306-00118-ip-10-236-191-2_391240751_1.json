@@ -1,0 +1,102 @@
+{
+    "relation": [
+        [
+            "Select Type",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE",
+            "SIMPLE"
+        ],
+        [
+            "Table",
+            "user",
+            "user_profile",
+            "user_option",
+            "user_privacy",
+            "permission_combination",
+            "session_activity"
+        ],
+        [
+            "Type",
+            "const",
+            "const",
+            "const",
+            "const",
+            "const",
+            "const"
+        ],
+        [
+            "Possible Keys",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY"
+        ],
+        [
+            "Key",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            "PRIMARY",
+            ""
+        ],
+        [
+            "Key Len",
+            "4",
+            "4",
+            "4",
+            "4",
+            "4",
+            ""
+        ],
+        [
+            "Ref",
+            "const",
+            "const",
+            "const",
+            "const",
+            "const",
+            ""
+        ],
+        [
+            "Rows",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Extra",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Impossible ON condition"
+        ]
+    ],
+    "pageTitle": "XenForo Debug Output",
+    "title": "",
+    "url": "http://www.danceforums.com/members/maseunmak.60544/?_debug=1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986646.29/warc/CC-MAIN-20150728002306-00118-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 391248953,
+    "recordOffset": 391240751,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 29 Jul 2015 22:07:55 GMT",
+    "textBeforeTable": "Run Time: 0.000276 Params: 1 WHERE permission_combination_id = ? FROM xf_permission_combination SELECT cache_value   Queries (9, time: 0.0078s, 2.4%) Memory: 6.7851 MB (Peak: 7.2368 MB) Page Time: 0.3278s",
+    "textAfterTable": "SIMPLE user_profile const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE user_option const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE user_privacy const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE permission_combination const PRIMARY PRIMARY 4 const 1 \u00a0 SIMPLE session_activity const PRIMARY \u00a0 \u00a0 \u00a0 1 Impossible ON condition  SELECT user_field.* , field_value.field_value FROM xf_user_field AS user_field LEFT JOIN xf_user_field_value AS field_value ON (field_value.field_id = user_field.field_id AND field_value.user_id = 60544) WHERE (user_field.display_group <> 'preferences' AND user_field.viewable_profile = 1) ORDER BY user_field.display_group, user_field.display_order Run Time: 0.000909 Select Type Table Type Possible Keys Key Key Len Ref Rows Extra SIMPLE user_field ALL display_group_order \u00a0 \u00a0 \u00a0 8 Using where; Using filesort SIMPLE field_value eq_ref PRIMARY,field_id PRIMARY 31 const,dancefo2_xeno2.user_field.field_id 1 \u00a0  SELECT COUNT(*) FROM xf_user_follow WHERE follow_user_id = ? Params: 60544 Run Time: 0.000321 Select Type Table Type Possible Keys Key Key Len Ref Rows Extra SIMPLE xf_user_follow ref follow_user_id follow_user_id 4 const 1 Using index  SELECT user.*, user_profile.*, user_option.* FROM xf_user_follow AS user_follow INNER JOIN xf_user AS user ON (user.user_id = user_follow.user_id AND user.is_banned = 0) INNER JOIN xf_user_profile AS user_profile ON (user_profile.user_id = user.user_id) INNER JOIN xf_user_option AS user_option ON (user_option.user_id = user.user_id) WHERE user_follow.follow_user_id = ? ORDER BY RAND() LIMIT 6 Params: 60544 Run Time: 0.002306",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

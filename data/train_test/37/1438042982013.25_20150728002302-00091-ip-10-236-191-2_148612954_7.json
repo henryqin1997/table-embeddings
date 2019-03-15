@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Category",
+            "Preferred Language for Behavior",
+            "Templates",
+            "Web Server",
+            "Portal Engine",
+            "Zero Admin (Web Start Single Click Install/Upgrade)"
+        ],
+        [
+            "Luxor",
+            "Java for hard-core programming and Python for scripting; JavaScript is currently not supported; however, JavaScript support can be added using Netscape's 100 % Java Rhino JavaScript engine",
+            "Luxor doesn't support Mozilla's XUL specific template syntax using tags; instead Luxor uses Apache Velocity plus XSL/T",
+            "Built-In; lets you serve up XUL documents, HTML pages, icons and more from your app's own jars",
+            "Built-In; lets you build web pages (aka portals) mixing static XHTML content with dynamic HTML content from portlets that differs from request to request (portlets are also known as HTML controls or HTML pagelets and are basically like servlets, but return HTML snippets instead of complete HTML pages)",
+            "Yes; everything can be packed up in jars and delivered to your users desktop using Web Start; no loose files required"
+        ],
+        [
+            "Mozilla",
+            "JavaScript; other languages such as Java or Python are supported through XPCOM",
+            "Mozilla XUL specific template syntax using",
+            "n/a",
+            "n/a",
+            "n/a"
+        ]
+    ],
+    "pageTitle": "Luxor XML UI Language (XUL) Toolkit",
+    "title": "",
+    "url": "http://luxor-xul.sourceforge.net/?source=navbar",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982013.25/warc/CC-MAIN-20150728002302-00091-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 148621156,
+    "recordOffset": 148612954,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{14369=The Open XUL Alliance site lists more than a dozen alternative XML UI language formats and projects such as Thinlet, Vexi, Ibex, SwiXml, Beryl, Xoetrope, Jazilla and many more. For a quick overview browse the XUL Challenge 2004 Counter Sample Showcase., 5976=To see how all the pieces fit together and why they exist and how you can benefit, check out the Luxor Tech Talk, December 2001, where Gerald Bauer (Luxor Project Leader) answers Jeff Duska (President of the Upstate New York Java Users Group)'s questions about Luxor., 10232=Bernhard wrote a two-page Luxor tutorial for the German Linux Magazin published in the June 2002 issue and graciously donated the example code, now included in the Ramses example suite.}",
+    "lastModified": "Mon, 28 Mar 2005 18:49:21 GMT",
+    "textBeforeTable": "Table: Luxor XUL/Mozilla XUL differences (Note, this is no criticism of Mozilla XUL. Mozilla is a phantastic piece of software. Luxor XUL and Mozilla XUL just follow different goals that lead to different designs. Put simply Luxor tries to reuse some hand-picked Mozilla XUL goodies.) Luxor XUL != Mozilla XUL. Luxor XUL doesn't strive to be a 100 % Mozilla XUL clone. Instead Luxor XUL tries to add more value to XUL through a built-in web server, portal engine or template engine, for example. How does Luxor XUL differ from Mozilla XUL? Get Involved. Join a winning team; see How To Help Out And Contribute for getting started today. Bernhard works for AGIS mbH (Allianz Gesellschaft f\u00fcr Informatik Service mbH) and writes the monthly Linux Magazin \"Java Coffee-Shop\" column. Bernhard also maintains a stable of his own open-source projects including a CD-bootable Linux distro. Bernhard wrote a two-page Luxor tutorial for the German Linux Magazin published in the June 2002 issue and graciously donated the example code, now included in the Ramses example suite. Bernhard Bablok Martin hacked together an Eclipse SWT (\"Standard\" Widget Toolkit) Luxor prototype proving that XUL works with any GUI toolkit not just Swing. Get your two-meg Luxor SWT seeing-is-believing package today. Martin",
+    "textAfterTable": "Links/Other Projects Using XML For Building UIs In the near future it will be possible to create your UIs using third-party UI designers and then transform their XML UI language flavor into Luxor XUL using XSL/T. This will open up new choices for UI designers such as Visual Studio, Qt Designer or Glade, for example. Alternative XML UI Language Formats And Projects The Open XUL Alliance site lists more than a dozen alternative XML UI language formats and projects such as Thinlet, Vexi, Ibex, SwiXml, Beryl, Xoetrope, Jazilla and many more. For a quick overview browse the XUL Challenge 2004 Counter Sample Showcase. More Quick Links: Batik SVG \u00b7 Velocity \u00b7 Python \u00b7 Jython \u00b7 Groovy \u00b7 JDOM \u00b7 dom4j \u00b7 Jaxen \u00b7 XDoclet \u00b7 Eclipse SWT \u00b7 wx4j \u00b7 Java Gnome \u00b7 KDE/Qt Java \u00b7 Kaffe \u00b7 gcj \u00b7 SableVM \u00b7 IKVM \u00b7 Mono \u00b7 DotGNU \u00b7 Gtk# \u00b7 Qt# \u00b7 Parrot \u00b7 Mozilla \u00b7",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,71 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US7086022 *",
+            "US7450616 *",
+            "US7630388 *",
+            "US7660916 *",
+            "US7920584",
+            "US7924858",
+            "US20040165611 *"
+        ],
+        [
+            "Filing date",
+            "Sep 19, 2002",
+            "Jan 9, 2004",
+            "May 4, 2005",
+            "Jun 16, 2005",
+            "Apr 12, 2006",
+            "Apr 13, 2006",
+            "Jan 9, 2004"
+        ],
+        [
+            "Publication date",
+            "Aug 1, 2006",
+            "Nov 11, 2008",
+            "Dec 8, 2009",
+            "Feb 9, 2010",
+            "Apr 5, 2011",
+            "Apr 12, 2011",
+            "Aug 26, 2004"
+        ],
+        [
+            "Applicant",
+            "Oki Electric Industry Co., Ltd.",
+            "Texas Instruments Incorporated",
+            "Arm Limited",
+            "Agere Systems Inc.",
+            "Arm Limited",
+            "Arm Limited",
+            "Govindarajan Subash Chandar"
+        ],
+        [
+            "Title",
+            "Semiconductor integrated circuit using the same",
+            "Area efficient serializer implementation for small functional-to-serial clock ratios",
+            "Software defined FIFO memory for storing a set of data from a stream of source data",
+            "Emulation of independent active DMA channels with a single DMA capable bus master hardware and firmware",
+            "Data processing system",
+            "Use of a data engine within a data processing apparatus",
+            "Area efficient serializer implementation for small functional-to-serial clock ratios"
+        ]
+    ],
+    "pageTitle": "Patent US6643716 - Method and apparatus for processing serial data using a single receive fifo - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6643716?dq=%22frederick+douglis%22",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 14,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986806.32/warc/CC-MAIN-20150728002306-00231-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 486931455,
+    "recordOffset": 486907268,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{37110=Flushing an asynchronous transmit (AT) packet refers to a process of discarding the AT packet in the FIFO after a 1394 bus reset. A bus reset may change the destination identification (ID) code for the packet. Therefore, after a bus reset, the packet data in the FIFO may still contain the old destination ID which is no longer valid. One way to flush the invalid packets is to read each entry in the FIFO to flush the entire FIFO. However, for a 256-entry FIFO, this flushing may take up to 256 clocks. This can be a long wait when there are many DMA transmit packets ready to be sent to the AT FIFO., 43359=FIG. 1 is a diagram illustrating one embodiment of a system 100 in accordance with the teachings of the invention. The system 100 includes a processor 105, a north bridge 115, a host bus 110, a memory 120, a graphics processor 125, an Accelerated Graphics Port (AGP) interface 117, a peripheral bridge 130, a south bridge 150, N peripheral devices 140 1 to 140 N, a 1394 physical interface 155, a serial bus 165, P nodes 160 1 to 160 P, an expansion bridge 170, and K expansion devices 180 1 to 180 K. It is to be appreciated by one skilled in the art that the specific architecture of the system 100 is not critical in practicing the present invention, as variations may be made to the system 100 without departing from the spirit and scope of the present invention., 46558=The south bridge 150 bridges transactions from the peripheral bus 130 and the serial bus 165. In one embodiment, the serial bus is a 1394 serial bus in accordance with the \u201cIEEE 1394-1995 High Performance Serial Bus\u201d published in 1995, although any other serial bus architecture may be used. The south bridge 150 is coupled to the 1394 physical link interface 155. The physical link interface 155 provides the physical-level interfaces to the nodes 160 1 to 160 P. The nodes 160 1 to 160 P are the serial (e.g., 1394) nodes which correspond to devices that are coupled to the serial bus such as video disk systems, printer, etc., 34526=An OHCI-compliant device has both transmitter and receiver functionalities and acts as an interface between the host processor in the PC and the physical link to the 1394 peripheral devices. To enhance transfer rate, direct memory access (DMA) engines are used to transfer data in and out of the host processor's memory. In addition, first-in-first-out (FIFO) memories are used to buffer transmitted and received data for the corresponding DMA engines., 34282=To promote product development and enhance industry, the Open Host Controller Interface (OHCI) specification defines basic protocols and operational modes to support the IEEE 1394 standard and its enhancements (e.g., 1394a)., 40405=The present invention discloses a method and apparatus for processing serial packet data using a single receive FIFO and an asynchronous transmit FIFO. Formats of end-of-context (EOC), start-of-packet (SOP), and end-of-packet (EOP) messages are defined. Control bits of the messages are used to insert the packet trailer into the packet data stream. A self-ID generation counter is incremented when a 1394 bus reset is detected. The self-ID field of the SOP transmit packet is compared with the self-ID generation counter to determine whether or not the AT packet is invalid and needs to be flushed. The invention provides a simple and efficient technique to process 1394 packet data with minimal hardware., 52950=The EOP delimiter is useful to mark the end of a packet. Its position can be used to insert a quadlet packet trailer into the data stream as required by the 1394 OHCI. The packet trailer consists of the 1394 time stamp at the time the packet was received along with the current contents of the lower 16 bits of the context control register which includes DMA and packet status information. When a packet arrives at the top of the FIFO, the DMA engine issues commands to the bus interface unit, the PCI interface 210 on FIG. 2, to transfer the FIFO contents to memory. In one embodiment, the packet trailer is not in the FIFO, but rather is created by merging contents of the context control register control bits, the event and speed codes, and the time stamp from the EOP message as shown in FIG. 3B., 33901=The Institute of Electrical and Electronics Engineers (IEEE) 1394 is a high-speed serial interconnect that makes the convergence of consumer electronics and personal computers (PCs) possible. Products supporting 1394 protocols at 100 to 400 Megabits/sec (Mbps) are now commercially available. Products with speeds up to 3200 Mbps are available in a near future., 42827=Self ID: During bus reset processing, each node sends out a self-ID packet. A self-ID packet contains 1394 node information such as the node number and physical speed. The serial bus manager uses the self-ID information to build a speed map and a topology map., 36702=Packet trailer processing refers to the process in which a 32-bit packet trailer is written into memory as required by the 1394 OHCI. One way to do this is to write the packet trailer as a stand-alone operation after the packet has been written into the memory. This method, however, wastes bandwidth due to additional overhead for the DMA engine to process the packet trailer separately.}",
+    "textBeforeTable": "Patent Citations While this invention has been described with reference to illustrative embodiments, this description is not intended to be construed in a limiting sense. Various modifications of the illustrative embodiments, as well as other embodiments of the invention, which are apparent to persons skilled in the art to which the invention pertains are deemed to lie within the spirit and scope of the invention. The present invention therefore provides a technique to facilitate the processing of data on the receive and transmit sides. The receive technique includes the shutdown of the DMA context efficiently, the encoding of the quadlet with useful information, and the insertion of the quadlet trailer into the FIFO stream. The transmit technique includes the flushing of the FIFO data after a bus reset. These operations can be performed without incurring significant hardware overhead. If the AT FIFO is not in the read mode, the process P900 terminates the operation. Otherwise, the process P900 reads data from the AT FIFO (B960) and compares the self-ID generation field of the SOP message with the value at the self-ID counter (element 810 in FIG. 8) (B965). Then it is determined if these values are the same. If they are the same, then the packet is valid and the transmit FIFDO data is sent to the link interface. If they are not the same, it implies that the packet has been written into the FIFO before the",
+    "textAfterTable": "US6016401 * Sep 22, 1997 Jan 18, 2000 Lsi Logic Corporation High speed network interface having SAR plus physical interface US6032204 * Mar 9, 1998 Feb 29, 2000 Advanced Micro Devices, Inc. Microcontroller with a synchronous serial interface and a two-channel DMA unit configured together for providing DMA requests to the first and second DMA channel US6154793 * Apr 30, 1997 Nov 28, 2000 Zilog, Inc. DMA with dynamically assigned channels, flexible block boundary notification and recording, type code checking and updating, commands, and status reporting US6226267 * Apr 10, 1998 May 1, 2001 Top Layer Networks, Inc. System and process for application-level flow connection of data processing networks US6425021 * Nov 16, 1998 Jul 23, 2002 Lsi Logic Corporation System for transferring data packets of different context utilizing single interface and concurrently processing data packets of different contexts * Cited by examiner Non-Patent Citations",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

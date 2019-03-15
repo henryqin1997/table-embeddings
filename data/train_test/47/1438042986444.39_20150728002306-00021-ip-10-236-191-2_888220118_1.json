@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Feature",
+            "Primary mechanism",
+            "Processes",
+            "Threads",
+            "Performance",
+            "Process hierarchy",
+            "Security inherited"
+        ],
+        [
+            "Windows",
+            "Threads",
+            "Yes",
+            "Yes",
+            "Very good at creating threads.",
+            "No, but the information can be collected and acted on by the application itself.",
+            "Yes"
+        ],
+        [
+            "UNIX",
+            "Processes",
+            "Yes",
+            "Yes, but different implementations.",
+            "Very good at creating processes.",
+            "Yes",
+            "Yes (except setuid)"
+        ]
+    ],
+    "pageTitle": "Chapter 1: Introduction to Win32/Win64",
+    "title": "",
+    "url": "https://technet.microsoft.com/zh-tw/library/bb496995.aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986444.39/warc/CC-MAIN-20150728002306-00021-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 888253239,
+    "recordOffset": 888220118,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{73105=Windows\u00a0Server\u00a02003 includes new authentication protocols based on Internet standards, including Kerberos\u00a05 and Transport Layer Security (TLS). For backward compatibility, Windows\u00a0Server\u00a02003 supports existing Windows\u00a0NT LAN Manager Challenge/Response (NTLM) authentication protocols., 29099=In the data models of both UNIX/64 and 64-bit versions of Windows\u00a0Server\u00a02003 operating systems, abstract types are defined in terms of basic types. This means that when you use abstract types, you ensure that parameters and structure fields always contain the correctly sized data for 32-bit or 64-bit compilation., 41596=Initially, UNIX did not expose threads to programmers. However, POSIX does have user-programmable threads. In fact, POSIX has two different implementations of threads, depending on the POSIX version. Windows applications use threads to take advantage of SMP computers and to maintain interactive capabilities when some threads take a long time to execute. Windows\u00a0Server\u00a02003 supports preemptive multitasking, which creates the effect of simultaneously executing multiple threads from multiple processes., 73435=The Windows implementation of secure channel security protocols, such as Secure Sockets Layer (SSL) 3.0/TLS, supports strong client authentication by mapping user credentials in the form of public-key certificates to existing Windows\u00a0NT accounts. Administrators use common administration tools to manage account information and access control, whether the administrators are using password authentication or certificates. External users who do not have Windows Server\u00a02003 accounts can be authenticated through public-key certificates and mapped to an existing Windows account. This allows businesses to give trading partners limited or full access to their internal networks., 72527=Windows Server\u00a02003 introduced the Active Directory directory service, which is used to store information about objects. The objects can include users, computers, printers, and every domain on one or more wide area networks (WANs). Active Directory can scale from a single computer to many large computer networks. Active Directory provides the store for all domain security policy and account information. It replaces the flat account namespace in earlier versions of Windows with a hierarchical namespace for user, group, and computer account information., 88550=Windows can provide sessions that run applications on a server but are displayed on a client workstation. These sessions can be implemented with both Terminal Server (on Windows\u00a0Server\u00a02003 and Windows\u00a0XP) and Citrix.}",
+    "textBeforeTable": "Table 1.1. Differences Between LLP64 and LP64 Data Types In the LP64 data model, long is a 64-bit type, pointers are 64 bit, and no new data types are introduced. The difference in data types between the two models are listed in Table 1.1. The LLP64 data model is sometimes described as a 32-bit model with 64-bit addresses. In this model, int and long are 32-bit types and pointers are 64 bits. Data objects such as structures, which do not contain pointers, are of the same size as on a 32-bit system. A 64-bit data type longlong (or int64) is introduced to substitute for a 64-bit type of int and long. The key difference between 64-bit programming in UNIX and Windows is the programming model. UNIX uses the LP64 model and Windows uses the LLP64 model. 64-Bit Programming in UNIX and Windows A new set of data types is also defined in Win64 to write cleaner code. In the Win32 API, data types long and pointers were of the same size, so data types such as DWORD and pointers could be used interchangeably and could also be used to typecast from one to another. The same code in Win64 would lead to errors because in the Win64 API, long is 32 bits while pointer is 64 bits. The Windows API also supports programming on 64-bit versions of Windows operating systems. The Win64 API takes advantage of the benefits of the 64-bit Windows architecture. The programming model and API",
+    "textAfterTable": "Following are some additional facts about the LLP64 and LP64 models: In the data models of both UNIX/64 and 64-bit versions of Windows\u00a0Server\u00a02003 operating systems, abstract types are defined in terms of basic types. This means that when you use abstract types, you ensure that parameters and structure fields always contain the correctly sized data for 32-bit or 64-bit compilation. In the UNIX/64 data model: The size of int is 32 bits and the size of long and pointers is 64 bits. There are some new explicitly sized types. There are a few new functions. The most scalable and biggest architecture data type is long. In the Win64 model: The Windows API follows the Uniform Data Model (UDM). UDM proposes to use identically named data types for both the Win32 and Win64 environments. Using this model, you can maintain a single source code development environment for both Win32 and Win64, provided no architecture-specific design features are implemented. The size of int and long is 32 bits; the size of int64 (new type) and pointers is 64 bits. Abstract types are identical for 32-bit and 64-bit environments, thus simplifying cross-compilation for both of them. There are explicitly sized and scalable data types. Some types are \"upgraded\" and can also be used in Win32 sources. The scalable and biggest architecture integral type",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

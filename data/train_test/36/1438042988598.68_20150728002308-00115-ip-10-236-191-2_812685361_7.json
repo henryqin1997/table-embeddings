@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust",
+            "Precipitation"
+        ],
+        [
+            "Avg",
+            "81.8 \u00b0F",
+            "72.5 \u00b0F",
+            "73.4 %",
+            "29.86 in",
+            "7.4 mph",
+            "",
+            "---"
+        ],
+        [
+            "Avg High",
+            "87.6 \u00b0F",
+            "75.5 \u00b0F",
+            "85.6 %",
+            "29.91 in",
+            "17.3 mph",
+            "28.6 mph",
+            ""
+        ],
+        [
+            "Avg Low",
+            "76.7 \u00b0F",
+            "69.6 \u00b0F",
+            "57.8 %",
+            "29.82 in",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Record High",
+            "91.4 \u00b0F (1998)",
+            "78.8 \u00b0F (2007)",
+            "",
+            "30.01 in (2011)",
+            "35.8 mph (2013)",
+            "35.7 mph (2013)",
+            "--- ()"
+        ],
+        [
+            "Record Low",
+            "75.2 \u00b0F (2011)",
+            "66 \u00b0F (2014)",
+            "48 % (2012)",
+            "29.68 in (2010)",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Faaa, French Polynesia - January 26th - Daily Weather Averages (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherdaily.php3?s=919380&month=1&theday=26&cityname=Faaa%2C+Windward+Islands%2C+French+Polynesia&units=",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988598.68/warc/CC-MAIN-20150728002308-00115-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 812700055,
+    "recordOffset": 812685361,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] DAILY WEATHER AVERAGE - JANUARY 26 [ \u2190 Previous Day ] } window.print(); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); return $(this).text().replace(\"2015\", \"\"); $('.datepicker-switch').text(function () { }); window.location = url; var url = \"/weather/weatherdaily.php3?s=919380&\" + pieces + \"&citynameFaaa%2C+Windward+Islands%2C+French+Polynesia&set=\"; var pieces = tosplit.replace(/(.*?)-(.*?)-(.*?)/,\"month=$2&theday=$3\"); var tosplit = event.format(); $('#datepicker').datepicker().on('changeDate', function (event) { }); endDate: \"2015-12-31\", startDate: \"2015-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 6.8 mi Wind Direction E (91.5 \u00b0) Weather Element Total Cooling Degree Days 17.1 (Base 18.3) Growing Degree Days 32.1 (Base 10) Total Years on Record: 19",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

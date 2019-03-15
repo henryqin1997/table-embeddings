@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Patch Set Number",
+            "8404955",
+            "5746866",
+            "7685124",
+            "8372141",
+            "6522654",
+            "7675269",
+            "8291981",
+            "9007079",
+            "8607693",
+            "7682186"
+        ],
+        [
+            "Description and Purpose",
+            "Before you can perform the Oracle B2B schema upgrade, you must apply this required patch to the Oracle Application Server Integration B2B 10g Release 2 (10.1.2) middle tier. This patch set is required in order to enable the Java command that you use to export the trading partner agreements, as described in the following step.",
+            "If the database that hosts your Oracle Application Server 10g schemas is an Oracle Database 10g (10.1.0.x) database, then make sure that this database patch (or database patch 5126270) has been applied to the 10g (10.1.0.x) database before you upgrade the database to the required Oracle Database 10g (10.2.0.4). Note that database patch 5746866 includes patch 5126270.",
+            "Apply this patch against Oracle Secure Enterprise Search (10.1.8.3.0) before you attempt to use Oracle Secure Enterprise Search with Oracle Portal 11g.",
+            "Apply this patch on your Oracle Application Server 10g Release 3 (10.1.3.4) environment to enable interoperability between Oracle SOA Suite 10g Release 3 (10.1.3.4) and Oracle BPEL Process Manager 11g. This patch is also referred to as the Oracle SOA Suite 10g Release 3 (10.1.3.4) Cumulative MLR #7.",
+            "Apply this patch to your Oracle Database before you attempt to upgrade your Oracle BAM schema. If you do not apply this patch to your Oracle Database 10g (10.2.0.3), 10g (10.2.0.4), or Oracle Database 11g (11.1.0.7) before performing the schema upgrade, you will likely see the following error: BAM MRUA: SCHEMA UPGRADE FAILED SQLException: ORA-39002: invalid operation The description for this patch on My Oracle Support is \"USING DATA PUMP THROUGH DBLINK CAUSED DATA CORRUPTION FOR CLOB VALUES\".",
+            "Apply this patch to prevent the occurrence of an ORA-01591 error in an Oracle Real Application Clusters (Oracle RAC) 11g (11.1.0.7) database. This error can occur for rows locked by transactions which were in the middle of two-phase commit. The description of this patch on My Oracle Support is \"ODAC 2008:RAC NODE AFFINITY: DISTRIBUTED TXN ABORTS WITH ORA-01591.\"",
+            "Apply this patch to correct a problem where Metadata Repository (MDS) queries against an Oracle Database 11g (11.1.0.7) database do not find all of the results (documents or elements) that they should. The description of this patch on My Oracle Support is: \"SELECT INCORRECT RESULTS: SOME RESULTS NOT FOUND\".",
+            "Apply this bundled patch to your Oracle Database 11g (11.1.0.7) Real Application Clusters (Oracle RAC) environment to address three known issues while using the Oracle RAC database with Oracle Fusion Middleware Oracle SOA Suite components. See the Readme file for the patch for a list of the bugs addressed by the patch. The description of this patch on My Oracle Support is: \"MERGE REQUEST FOR 8886255 AND 7675269\".",
+            "Apply this patch to your Oracle Real Application Clusters (Oracle RAC) 11g (11.1.0.7) database to prevent an error that can occur if an XA transaction branch was being asynchronously rolled back by two or more sessions. The description of this patch on My Oracle Support is: \"STRESS SOA - ORA-00600: INTERNAL ERROR CODE, ARGUMENTS: [504] (Oracle AC)\".",
+            "Apply this patch to your Oracle Real Application Clusters (Oracle RAC) 11g (11.1.0.7) database to prevent an issue that results in an ORA-600 error. Behavior includes CR-inconsistencies between index and the block, or incorrect results in an Oracle RAC multi-node global transaction environment. The description of this patch on My Oracle Support is: \"ORA-600[KDSGRP1] SIGNALLED DURING BUGOLTP-XA WORKLOAD\"."
+        ],
+        [
+            "Additional Information",
+            "\"Task 6b: If Necessary, Upgrade the B2B Schema\" in the Oracle Fusion Middleware Upgrade Guide for Oracle SOA Suite, WebCenter, and ADF",
+            "\"Upgrading to Oracle Database 10g Release 2 (10.2.0.4)\" in the Oracle Fusion Middleware Upgrade Planning Guide",
+            "\"Oracle Secure Enterprise Search\" in the Oracle Fusion Middleware Administrator's Guide for Oracle Portal Section 31.4, \"Interoperability Issues and Workarounds.\"",
+            "\"Applying Patch Sets to Address Specific Upgrade Interoperability Issues\" in the Oracle Fusion Middleware Upgrade Planning Guide \"Upgrading Oracle SOA Suite Client Applications\" in the Oracle Fusion Middleware Upgrade Guide for Oracle SOA Suite, WebCenter, and ADF",
+            "\"Task 6c: If Necessary, Upgrade the BAM Schema\" in the Oracle Fusion Middleware Upgrade Guide for Oracle SOA Suite, WebCenter, and ADF Section 3.1.3.1, \"Datapump Export for Oracle BAM Upgrade Plug-in Fails in Oracle Database 10g (10.2.0.3), 10g (10.1.2.0.4), and Oracle Database 11g (11.1.0.7)\"",
+            "\"Upgrading and Preparing Your Databases\" in the Oracle Fusion Middleware Upgrade Planning Guide",
+            "\"Managing the MDS Repository\" in the Oracle Fusion Middleware Administrator's Guide",
+            "\"Oracle Real Application Clusters and Fusion Middleware\" in the Oracle Fusion Middleware High Availability Guide.",
+            "\"Oracle Real Application Clusters and Fusion Middleware\" in the Oracle Fusion Middleware High Availability Guide.",
+            "\"Oracle Real Application Clusters and Fusion Middleware\" in the Oracle Fusion Middleware High Availability Guide."
+        ]
+    ],
+    "pageTitle": "Upgrade",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E21764_01/doc.1111/e14773/upgrade.htm",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982502.13/warc/CC-MAIN-20150728002302-00132-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 67938423,
+    "recordOffset": 67912121,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{2627=Section 3.1.14, \"Providing Input to Upgrade Assistant Screens When Oracle Internet Directory Upgrade Fails\", 2762=Section 3.1.13, \"Stopping Oracle Virtual Directory Processes During Upgrade\", 2903=Section 3.1.12, \"Additional Steps Required When Upgrading Human Taskflow Projects\", 3265=Section 3.1.10, \"Misleading Error Message When Upgrading Oracle Internet Directory\", 2341=Section 3.1.16, \"Inaccurate Results When Running the Upgrade Assistant Verify Feature\", 2461=Section 3.1.15, \"Upgrading Oracle Access Manager Middle Tier\", 3123=Section 3.1.11, \"Additional Steps Required When Redeploying the SOA Order Booking Sample Application on Oracle Fusion Middleware 11g\", 2058=Section 3.1.18, \"Test Suites in Oracle SOA Suite 10g Projects Not Upgraded to 11g\", 2196=Section 3.1.17, \"Missing jdk_version.log File When Launching Upgrade Assistant\"}",
+    "TableContextTimeStampAfterTable": "{12613=Patch 8451592 is also referred to as Oracle Database Server Version 11.1.0.7 Patch 11., 12323=In addition, if the database is running on a Microsoft Windows 32-bit computer, then you must also apply patch 8451592 to the Oracle Database 11g (10.1.0.7) database before you can run the Upgrade Assistant to upgrade the Oracle BAM schema to 11g., 3457=8372141, 4641=6522654, 7064=8291981, 9873=7682186, 16922=Before you upgrade the Oracle BAM 11g schema to 11g, you must first apply patch 6522654 to your Oracle Database 10g (10.2.0.3), 10g (10.1.2.0.4), and Oracle Database 11g (11.1.0.7)., 6206=Apply this patch to prevent the occurrence of an ORA-01591 error in an Oracle Real Application Clusters (Oracle RAC) 11g (11.1.0.7) database., 6489=The description of this patch on My Oracle Support is \"ODAC 2008:RAC NODE AFFINITY: DISTRIBUTED TXN ABORTS WITH ORA-01591.\"}",
+    "lastModified": "Wed, 13 May 2015 05:18:51 GMT",
+    "textBeforeTable": "Table 3-1 Patches Required to Address Specific Upgrade and Compatibility Requirements Section 3.1.1.2, \"Upgrading the Oracle BAM Schema on Oracle Database 11g on Microsoft Windows\" Section 3.1.1.1, \"Obtaining Patches and Support Documents From My Oracle Support (Formerly OracleMetaLink)\" For more information, refer to the following sections: Table 3-1 lists the specific patch sets required to address specific upgrade and compatibility requirements for Oracle Fusion Middleware 11g. In addition, in some specific cases, you must apply an additional software patches to your Oracle Application Server 10g components before you start the upgrade process. These patches are designed to address specific interoperability issues that you might encounter while upgrading your Oracle Application Server 10g environment to Oracle Fusion Middleware 11g. In general, Oracle assumes that you are running the latest Oracle Application Server 10g patch sets before you begin the upgrade to Oracle Fusion Middleware 11g. 3.1.1 Patches Required to Address Specific Upgrade and Compatibility Requirements Section 3.1.18, \"Test Suites in Oracle SOA Suite 10g Projects Not Upgraded to 11g\" Section 3.1.17, \"Missing jdk_version.log File When Launching Upgrade Assistant\" Section 3.1.16, \"Inaccurate Results When Running the Upgrade Assistant Verify Feature\" Section 3.1.15, \"Upgrading Oracle Access Manager Middle Tier\" Section 3.1.14,",
+    "textAfterTable": "3.1.1.1 Obtaining Patches and Support Documents From My Oracle Support (Formerly OracleMetaLink) To obtain a patch, log in to My Oracle Support (formerly OracleMetaLink), click Patches and Updates, and search for the patch number:  http://support.oracle.com/ To obtain a support note or document, log in to My Oracle Support and enter the support note number in the Quick Find search field at the top of the My Oracle Support window and search the Knowledge Base for the note number. 3.1.1.2 Upgrading the Oracle BAM Schema on Oracle Database 11g on Microsoft Windows If the Oracle Database you use to host your Oracle BAM schema is an Oracle Database 11g database, then you must apply the required patches to upgrade your database to Oracle Database 11g (10.1.0.7). In addition, if the database is running on a Microsoft Windows 32-bit computer, then you must also apply patch 8451592 to the Oracle Database 11g (10.1.0.7) database before you can run the Upgrade Assistant to upgrade the Oracle BAM schema to 11g. Patch 8451592 is also referred to as Oracle Database Server Version 11.1.0.7 Patch 11. Important: You must perform the steps described in Section 3.3.5, \"Post Installation Instructions\" of the Oracle Database Server Version 11.1.0.7",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

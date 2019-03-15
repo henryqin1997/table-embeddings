@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "Owner",
+            "APPLSYS",
+            "WSH",
+            "AR",
+            "HR",
+            "HR"
+        ],
+        [
+            "Tablespace Name",
+            "APPS_TS_TX_IDX",
+            "APPS_TS_TX_DATA",
+            "APPS_ASSM_IDX",
+            "APPS_ASSM_IDX",
+            "APPS_TS_TX_IDX"
+        ],
+        [
+            "Object Name",
+            "WF_ITEM_ACTIVITY_STATUSES_N1",
+            "WSH_TRIP_STOPS",
+            "RA_CUST_TRX_LINE_GL_DIST_U1",
+            "PAY_RUN_RESULT_VALUES_PK",
+            "PAY_COSTS_FK2"
+        ],
+        [
+            "Subobject Name",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Obj. Type",
+            "INDEX",
+            "TABLE",
+            "INDEX",
+            "INDEX",
+            "INDEX"
+        ],
+        [
+            "Row Lock Waits",
+            "20,341",
+            "18,505",
+            "4,117",
+            "1,606",
+            "1,601"
+        ],
+        [
+            "% of Capture",
+            "36.24",
+            "32.97",
+            "7.33",
+            "2.86",
+            "2.85"
+        ]
+    ],
+    "pageTitle": "awr_0417b-3000",
+    "title": "",
+    "url": "http://www.oracle.com/us/solutions/benchmark/apps-benchmark/report/awr-0417b-3000-167011.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 46,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982013.25/warc/CC-MAIN-20150728002302-00300-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 613019495,
+    "recordOffset": 612944434,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Ordered by % or DB time desc, Statistic name Statistics including the word \"background\" measure background process time, and so do not contribute to the DB time statistic Total time in database user-calls (DB Time): 36084.2s Time Model Statistics Back to Top Service Wait Class Stats Service Statistics Operating System Statistics Background Wait Events Wait Events Wait Class Time Model Statistics Wait Events Statistics Back to Top init.ora Parameters Resource Limit Statistics Streams Statistics Memory Statistics Library Cache Statistics Dictionary Cache Statistics Segment Statistics Latch Statistics Undo Statistics Wait Statistics Advisory Statistics Buffer Pool Statistics IO Stats Instance Activity Statistics SQL Statistics Wait Events Statistics Report Summary Main Report System I/O 1.0 0 354 890,739 log file parallel write Other",
+    "textAfterTable": "PL/SQL compilation elapsed time 8.03 0.02 hard parse (sharing criteria) elapsed time 2.18 0.01 failed parse elapsed time 1.69 0.00 hard parse (bind mismatch) elapsed time 1.31 0.00 DB time 36,084.22 \u00a0 background elapsed time 771.60 \u00a0 background cpu time 182.13 \u00a0 Back to Wait Events Statistics Back to Top Wait Class s - second cs - centisecond - 100th of a second ms - millisecond - 1000th of a second us - microsecond - 1000000th of a second ordered by wait time desc, waits desc Wait Class Waits %Time -outs Total Wait Time (s) Avg wait (ms) Waits /txn User I/O 1,122,595 0.00 3,590 3 0.89 Concurrency 987,445 1.01 855 1 0.78 Commit 516,876 0.00 735 1 0.41 Other 213,558 28.58 656",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

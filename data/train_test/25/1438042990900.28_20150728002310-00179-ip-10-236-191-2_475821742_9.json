@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Dec 22, 2000",
+            "Oct 1, 2003",
+            "Sep 13, 2005",
+            "Jul 22, 2007",
+            "Oct 13, 2011"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "",
+            "",
+            "Owner name: MEDIATEK INC., TAIWAN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:ALI CORPORATION;REEL/FRAME:016522/0275 Effective date: 20050907",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8"
+        ]
+    ],
+    "pageTitle": "Patent US6721917 - Method and system for optical disk decoding - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6721917?dq=5,381,459",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990900.28/warc/CC-MAIN-20150728002310-00179-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 475844939,
+    "recordOffset": 475821742,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{37489=This application incorporates by reference Taiwanese application Serial No. 89111797, filed Jun. 16, 2000.}",
+    "textBeforeTable": "Patent Citations While the invention has been described by way of example and in terms of the preferred embodiment, it is to be understood that the invention is not limited to the disclosed embodiment. To the contrary, it is intended to cover various modifications and similar arrangements and procedures, and the scope of the appended claims therefore should be accorded the broadest interpretation so as to encompass all such modifications and similar arrangements and procedures. The DVD decoding method and system are disclosed in the above embodiment, in which the decoding sequence is changed and the EDC checking is performed during performing the inner code decoding. In this way, it results in reducing the time of access to memory, increasing the speed of the decoding, and improving the error correction capability. On the other hand, the determination as to whether the correction is unable to be performed since the errors are over the limitation of the error correction can be made by finding out the number of erasure flags that are of zero. If the number of zero-valued erasure flags exceeds a limitation of the decoding system, it indicates that the ECC block has too many errors to be corrected. In this case, the DVD decoding system will not perform error correction on the ECC block. Finally, for the determination as to whether the decoding operations are performed for a number of times but the correction is not",
+    "textAfterTable": "US5778011 * Jun 7, 1995 Jul 7, 1998 International Business Machines Corporation Method and apparatus for writing and protecting against random and cluster errors in image blocks US5907564 * Jul 12, 1996 May 25, 1999 U.S. Philips Corporation Reversible multitrack magnetic tape storage system with multiframe error protection facility US5920578 * Apr 23, 1997 Jul 6, 1999 Cirrus Logic, Inc. Method and apparatus for efficiently processing a multi-dimensional code US5944848 * Apr 11, 1997 Aug 31, 1999 United Microelectronics Corp. Error decoding method and apparatus for Reed-Solomon codes US5991911 * Nov 14, 1997 Nov 23, 1999 Cirrus Logic, Inc. Concurrent generation of ECC error syndromes and CRC validation syndromes in a DVD storage device US6041431 * Sep 19, 1997 Mar 21, 2000 Adapter, Inc. Method and apparatus for performing error correction code operations US6048090 * Apr 23, 1997",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

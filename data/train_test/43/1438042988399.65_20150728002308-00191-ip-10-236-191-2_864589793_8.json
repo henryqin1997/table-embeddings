@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Date",
+            "10/15/12",
+            "09/11/12",
+            "09/11/12",
+            "09/27/11",
+            "07/29/05"
+        ],
+        [
+            "Event",
+            "Sale",
+            "Sale",
+            "Sale",
+            "Sale",
+            "Sale"
+        ],
+        [
+            "Price",
+            "$1",
+            "$1",
+            "$109,500",
+            "$522,000",
+            "$685,000"
+        ],
+        [
+            "Source",
+            "Public Records",
+            "Public Records",
+            "Public Records",
+            "Public Records",
+            "Public Records"
+        ]
+    ],
+    "pageTitle": "10 WINDSOR ST, MELROSE, MA \u2014 ZipRealty",
+    "title": "",
+    "url": "http://www.ziprealty.com/property/10-WINDSOR-ST-MELROSE-MA-02176/35573400/detail",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988399.65/warc/CC-MAIN-20150728002308-00191-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 864617439,
+    "recordOffset": 864589793,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{37159=Copyright 1999-2015 and Patent Pending, ZipRealty. All rights reserved.}",
+    "textBeforeTable": "Price History for 10 Windsor St }); new ZipRealty.util.AsyncWidgetOnDOMReadyLoader(aw); var aw = new ZipRealty.util.AsyncWidget(document.getElementById(\"price-estimates-widget\"), '/property/async/avm?addressId=35573400'); addOnLoadEvent(function() { }); //new ZipRealty.util.AsyncWidgetOnScrollLoader(aw, 250); aw.load(); var aw = new ZipRealty.util.AsyncWidget(document.getElementById(\"comments-or-carousel\"), '/property/async/comments-or-carousel?addressId=35573400&metro=boston&companyId=26&postalCode=02176'); addOnLoadEvent(function() { }) localOverlay = new IFramePanel('localInfoOverlay', 820, 630, '/property/10-WINDSOR-ST-MELROSE-MA-02176/35573400/local_info_overlay'); Z.addOnLoadEventHandler(function() { var localOverlay = null; }); YAHOO.util.Connect.asyncRequest('GET', '/xhr/walkscore?lat=42.47160025&lon=-71.04985669&address=10 WINDSOR ST, MELROSE, MA 02176', callback); }; } //alert something? failure: function(o) { }, } elem2.innerHTML = s[0]; if(elem2) { var elem2 = document.getElementById(\"ws_score_seo\"); //alert(s[0]); document.getElementById(\"ws_parent\").style.display = \"inline\"; } document.getElementById(\"ws_link\").href = s[2]; /*document.getElementById(\"ws_desc\").innerHTML = s[1];*/ elem.innerHTML = s[0]; if(elem) { var elem = document.getElementById(\"ws_score\"); var s = o.responseText.split(\"\\t\"); success: function(o) { var callback = { Z.addOnLoadEventHandler(function() {",
+    "textAfterTable": "See nearby schools Schools Information for 10 Windsor St From Public Records School District: Score \u00a0 \u00a0 \u00a0 Melrose School District 6.7 \u00a0 \u00a0 \u00a0 Saved Places Add Place Price Trends Chart: } Median Sale Price Median Price Per Square Foot Number Sold Median List Price Median List to Sale Price Ratio Average Days on Market Property: SFR Condo",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

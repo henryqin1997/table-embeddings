@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "Name",
+            "Kevin Priest",
+            "Gina Dozier",
+            "Nancy Hillger",
+            "Jess Tharpe",
+            "Crystal Griffin",
+            "Jason Ishley",
+            "Rachel Greene",
+            "PJ Minzie",
+            "Tiffany Martin",
+            ""
+        ],
+        [
+            "Position",
+            "CEO/President",
+            "Chief Operating Officer",
+            "Chief Financial Officer",
+            "Development Director",
+            "Human Resources Officer",
+            "Clinical Director-Non-Residential",
+            "Clinical Director-Residential",
+            "Someplace Else Program Manager",
+            "Transitional Living Program Manager",
+            ""
+        ],
+        [
+            "Phone Ext. #",
+            "311",
+            "306",
+            "312",
+            "328",
+            "308",
+            "309",
+            "318",
+            "305",
+            "326",
+            ""
+        ]
+    ],
+    "pageTitle": "Contact Us | Serving Youth | Saving Families",
+    "title": "",
+    "url": "http://www.ccys.org/contact-us/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986451.45/warc/CC-MAIN-20150728002306-00241-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 355302792,
+    "recordOffset": 355294590,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{4961=2407 Roberts Ave Tallahassee, FL 32310 Tel. 850.576.6000 - Fax. 850.576.2580}",
+    "textBeforeTable": "Capital City Youth Services is located in Tallahassee, Florida. If you need to get in touch with us, someone is here to answer your call 24 hours a day, 7 days a week. To request services for a youth or family, call 850/576.6000 and press 1. Please note that emails will receive a response within one to two business days. });}); showMarker('officemarker0'); google.maps.event.addDomListener(window, 'load', initialize);jQuery('#officemarker0').on('click',function(){ } }); latLng: center google.maps.event.trigger(gMarker, 'click', { } center = centralOfficeMarker; gMarker = centralOfficeMarker; else if(marker === 'centralOfficeMarker') { } center = officecenter0; gMarker = officemarker0; if(marker === 'officemarker0') { var center = null; var gMarker = null; function showMarker(marker){ centralOfficeMarker.setMap(map); } }); infowindow.open(map,centralOfficeMarker); infowindow.setContent(\"CCYS \"); infowindow = new google.maps.InfoWindow(); } infowindow.close(); if (infowindow) { map.setCenter(centralOfficeMarker.getPosition()); map.setZoom(15); google.maps.event.addListener(centralOfficeMarker,'click',function() { officemarker0.setMap(map); }); infowindow.open(map,officemarker0); infowindow.setContent(\"CCYS \"); infowindow = new google.maps.InfoWindow(); } infowindow.close(); if (infowindow) { map.setCenter(officemarker0.getPosition()); map.setZoom(15); var map=new google.maps.Map(document.getElementById(\"googleMap\"),mapProp);google.maps.event.addListener(officemarker0,'click',function() { }; maptype: google.maps.MapTypeId.ROADMAP draggable: isDraggable, scrollwheel: false, popup: false, zoom:15, center:mapCenter, var mapProp = { var infowindow = null; var mapCenter = new google.maps.LatLng(30.428808 , -84.326352); var isDraggable = jQuery(document).width() > 480 ? true : false; { function initialize() }); icon: image position: centralOffice, var centralOfficeMarker = new google.maps.Marker({ var centralOffice = new google.maps.LatLng(30.428808,-84.326352); //Default Adress }); icon: image position:officecenter0, var officemarker0 = new google.maps.Marker({ var officecenter0 = new google.maps.LatLng(30.428808,-84.326352); var image = 'http://www.ccys.org/wp-content/themes/philanthropy-parent/images/pin.png'; jQuery(document).ready(function(){",
+    "textAfterTable": "CONTACT FORM",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

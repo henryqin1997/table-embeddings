@@ -1,0 +1,64 @@
+{
+    "relation": [
+        [
+            "date",
+            "2/1/2013",
+            "3/6/2013",
+            "5/23/2013",
+            "9/19/2013",
+            "9/27/2013",
+            "10/18/2013",
+            "11/10/2013",
+            "11/14/2013"
+        ],
+        [
+            "city",
+            "Oberhausen",
+            "Hamburg",
+            "Dortmund",
+            "Potsdam",
+            "Koln",
+            "Stuttgart",
+            "Hamburg",
+            "Nuremberg"
+        ],
+        [
+            "state",
+            "NW",
+            "HH",
+            "NW",
+            "Brandenburg",
+            "North Rhine-westphal",
+            "",
+            "HH",
+            ""
+        ],
+        [
+            "venue",
+            "Druckluft",
+            "Kulturhaus III",
+            "Subrosa",
+            "Waschhaus Arena",
+            "Underground",
+            "Merlin",
+            "Uebel & Gefahrlich",
+            "Gostner Hoftheater"
+        ]
+    ],
+    "pageTitle": "Tom Liwa Concert Tickets | SeatGeek",
+    "title": "",
+    "url": "https://seatgeek.com/tom-liwa-tickets",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989126.22/warc/CC-MAIN-20150728002309-00214-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 890400719,
+    "recordOffset": 890375900,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "2014 Tour Dates } ); document.getElementById('location-autocomplete') }), } } window.location.href = window.location.pathname + '?lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id } else { window.location.href = window.location.href + '&lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id; if(window.location.href.match('/search')) { SG.GA.sendEvent('team-show-page', 'location-input', { label: selection.term }); onSelect: function(selection) { }, return (data.results && data.results.location) ? data.results.location : [] dataExtractionFunction: function(data) { placeholder: 'Search by City...', postSelectLoad: true, limit: 3, contentKey: 'term', idKey: 'id', queryString: \"types[]=location\", source: \"/autocomplete\", React.createFactory(Autocomplete)({ React.render( if (document.getElementById('location-autocomplete')) {",
+    "textAfterTable": "9/27/2013 Koln North Rhine-westphal Underground 10/18/2013 Stuttgart Merlin 11/10/2013 Hamburg HH Uebel & Gefahrlich 11/14/2013 Nuremberg Gostner Hoftheater 2012 date city state venue 10/20/2012 Hildesheim NI Kulturfabrik Loseke Learn More Platform Get in Touch What's Hot SeatGeek App Send a download link to your phone Send",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

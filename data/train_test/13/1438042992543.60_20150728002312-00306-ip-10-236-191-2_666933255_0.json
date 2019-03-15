@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Name",
+            "Binlor Ironshield",
+            "Dracul",
+            "Glowing Guardian",
+            "Jehora Jeheyu",
+            "Mystera Annur",
+            "Taurog",
+            "Tikki Tooki",
+            "The Earthmother",
+            ""
+        ],
+        [
+            "Worship Bonuses",
+            "Free ENDISWAL Glyph on join PUNISHMENT: Removes all player resistances",
+            "Starting piety: Killed enemies x2 PUNISHMENT: -20 from Max HP",
+            "Free Cleansing on worship PUNISHMENT: Removes all glyphs/items from inventory",
+            "Free WEYTWUT glyph on joining MINOR PUNISHMENT: Poison, mana burn, corrode, or weaken player MAJOR PUNISHMENT: 50% chance you're character instantly dies",
+            "PUNISHMENT: +15% to all monsters' resistances (both)",
+            "Starting Piety: Killed enemies x2 PUNISHMENT: -50% bonus damage",
+            "No starting bonus PUNISHMENT: All enemies gain First Strike, Weakening",
+            "Starting Bonus: Always +5 Free IMAWAL glyph on joining. PUNISHMENT: Inflicts 5 levels of Corrosion.",
+            ""
+        ],
+        [
+            "Rewarded/Repent Actions",
+            "Destroy a wall +5 Piety",
+            "Attack with Lifesteal (once per monster) +1 Piety Drink a Blood Pool +3 Piety Kill a living monster +2 Piety Destroy HALPMEH or CYDSTEPP glyph +10 Piety Destroy health potion +5 Piety",
+            "Become Poisoned +1 Piety Become Mana Burned +1 Piety Kill an undead (Any level) +1 Piety Gain Level +5 Piety Kill a monster N levels higher than you +2N Piety Convert a potion or other small-slot item +2 Piety Convert APHEELSIK or BLUDTUPOWA glyph +10 Piety Convert any other item or glyph +5 Piety",
+            "Randomly grants piety +3-5 Piety on taking any action, including dungeon exploration",
+            "Use a glyph +(MP Cost / 2) Piety",
+            "Kill an enemy +4 Piety Kill an enemy that uses magical attack +8 Piety Convert a glyph +10 Piety",
+            "Kill any enemy below your level +5 Piety Dodge any attack +1-3(?) Piety Poison an enemy (either using APHEELSIK or Poison Blade including the one begotten from Tikki Tooki) +1 Piety Use WEYTWUT glyph +1 Piety Use PISORF glyph? Untested",
+            "Use IMAWAL on a monster +10 Piety Use IMAWAL on a plant +5 Piety Use IMAWAL on the instant kill plant +10 Piety",
+            ""
+        ],
+        [
+            "Penalized Actions",
+            "Gain a level -10 Piety",
+            "Kill an undead monster -5 Piety Use a health potion -5 Piety Use a CYDSTEPP or HALPMEH glyph -5 Piety",
+            "Kill a monster which has a lower level than you (Undead excepted) -(2 x level difference) Piety Use a Health or Mana potion -10 Piety Use poison (Venom blade, APHEELSIK glyph) -10 Piety Use lifesteal -10 Piety Everything below is untested in the beta version. Testing is appreciated. Activate the BLUDTUPOWA glyph -20 Piety BLUDTUPOWA is not activated Drink a Potion -10 Piety Regenerate Health by \"sucking up\" a Blood-stain -10 Piety",
+            "Randomly inflicts MINOR PUNISHMENT on taking any action, including dungeon exploration",
+            "Destroy a glyph -10 Piety Kill an enemy that uses a magical attack (wraiths excepted) -3 Piety",
+            "Use a glyph -2 Piety per use Convert Taurog's Equipment Instant punishment, but no piety loss",
+            "Get hit twice or more (by the same monster) in combat -2 Piety per hit Trigger a death protection effect(occurs when lethal attack is survived, not on cast) -10 Piety",
+            "Kill a plant -15 Piety Testing needed: Use Lifesteal -? Piety Testing needed: Drink blood pool -? Piety",
+            ""
+        ],
+        [
+            "Boons",
+            "Boon: Stone Soup (Repeat) Cost: 5 Piety Effect: Petrifies all lower-level monsters on main floor; 5 Piety gained per monster Boon: Wall Wipe (Repeat) Cost: 10 Piety Effect: Destroys up to 30 nearby wall segments Boon: Stone Skin (Repeat) Cost: 30 Piety Effect: Destroys 5 nearby wall segments, gives temporary +50% to physical resistance Boon: Stone Form Cost: 25 Piety Effect: Destroys 10 nearby wall segments, +20% bonus damage when Stone Skin is active Boon: Stone Fist Cost: 40 Piety Effect: Destroys 20 nearby wall segments, +50% knockback damage Boon: Stone Heart (Repeat) Cost: 10 Piety Effect: Destroys 10 nearby wall segments, restores 20 HP",
+            "Boon: Blood Curse Cost: Increases level by 1 (no stat increase, no HP/MP fill) Effect: +20 Piety Boon: Blood Tithe (Repeat) Cost: -10 Max Health Effect: +20 Piety Boon: Blood Power (Repeat) Cost: 10 + 10n Piety Effect: +2 Max MP Boon: Blood Hunger (Repeat) Cost: 20 + 5n Piety, -10% to maximum resistances Effect: +5 Life Steal Boon: Blood Shield Cost: 40 Piety Effect: +20% to physical AND magical resistances Boon: Blood Swell (Repeat) Cost: 15 + 10n Piety Effect: Restore all HP",
+            "Boon: Humility Cost: 5 Piety Effect: Reduces level by 1, but maintains stats Boon: Absolution Cost: 5 Piety Effect: +3 max HP for monsters of lower level, removes monsters of lower level from game (Exception: Undead, monsters on different dungeon levels) Boon: Sanctify (Repeat) Cost: 3 + 2n Piety Effect: -75% damage to next strike, +10 piety if next strike is a killing blow (no piety loss for lower-level kill) Boon: Cleansing (Repeat) Cost: 5 + 5n Piety Recover from Poison, Mana Burn, 1 level of Weakness and 1 level of Corrosion Boon: Protection (Repeat) Cost: 15 + 10n Piety Restores 50% HP and 50% MP Boon: Enlightenment Cost: 100 Piety +10% physical AND magical resistance, +2 maximum MP, +10 maximum HP, +5 base damage, +100 conversion points",
+            "Petition Cost: 50 Piety Effect: Stops inflicting MINOR PUNISHMENT Last Chance Cost: 1 Piety Effect: Drain remaining piety and uses it making an X out of 100 roll. If you succeed your hp and mp are fully recovered. Madness Cost: 25 Piety Effect: Add 10% dodge boost Boost Health Cost: 25 + 5n Piety Effect: Destroy a health potion and gain +10 max health Boost Mana Cost: 25 + 5n Piety Effect: Destroy a mana potion and gain +2 max mana Chaos Avatar Cost: 100 Piety Effect: Gain a level, lose all corrosion and weakening, gain 100 conversion points, and all monsters have their resistances reduced by 20% (same screen only)",
+            "Boon: Glyph Magnet Cost: 10 Piety Effect: All glyphs on the floor are summoned to nearby positions Boon: Magic (Repeat) Cost: 4 + 4n Piety Effect: +1 Max Mana, +3% to all monsters' physical AND magical resistance Boon: Refreshment (Repeat) Cost: 10 + 10n Piety Effect: Restores all player mana and cures mana burn; restores all monsters' HP to maximum Boon: Flames Cost: 40 Piety Effect: +1 damage/level for BURNDAYRAZ glyph attack, -50% attack bonus Boon: Weakening (Repeat) Cost: 30 + 10n Piety Effect: -10% magic resistance to both player and all monsters Boon: Mana Leak Cost: 1 piety Effect: Damage equal to remaining piety is dealt to every monster and the player (does not reduce below 1 HP)",
+            "Boon: Taurog's Blade Cost: 20 Piety, -2 Max Mana Effect: Obtain Taurog's Skullpicker (+5 Base Damage) Boon: Taurog's Shield Cost: 25 Piety, -2 Max Mana Effect: Obtain Taurog's Wereward (-5 All Incoming Damage) Boon: Taurog's Helm Cost: 25 Piety, -2 Max Mana Effect: Obtain Taurog's Gloat (+15% to magical resistance) Boon: Taurog's Boots Cost: 25 Piety, -2 Max Mana Effect: Obtain Taurog's Cliffstompers (+20% damage bonus) Boon: Taurog's Armour Cost: 25 Piety, -2 Max Mana Effect: Obtain Taurog's Will (+15% to physical resistance) Boon: Unstoppable Fury (Repeat) Cost: 25 + 10n Piety Prerequisite: Must be equipped with all of Taurog's Equipment Effect: Death Protection",
+            "Boon: Tribute (Repeat) Cost: 10 Gold Effect: +10 Piety Quicksilver (Repeat) Cost: 25 Piety Effect: Convert mana potion to dodge potion, +10 Gold Reflexes (Repeat) Cost: 25 Piety Effect: Convert health potion to reflex potion, +10 Gold Boon: Dodging Cost: 25 Piety Effect: +10% Dodge, +10 Gold Boon: Poison Cost: 50 Piety Effect: All Physical attacks cause Poison, +10 Gold Boon: Tikki's Edge (Repeat) Cost: 25 + 25n Piety Effect: +1 to experience from all XP kills, +10 Gold",
+            "Plantation (Repeat) Cost: 5 Piety Effect: Spawn 1 Plant on each bloodstain (acid pools excluded) for 5 Piety each. Clearance (Repeat) Cost: 5 Piety Effect: Remove 10 random plants. Greenblood (Repeat) Cost: 5 + 5n Piety Effect: All enemies are Corroded. Spawns 5 random plants. Entanglement (Repeat) Cost: 5 Piety Effect: All enemies are slowed. Spawns 5 random plants. Vine Form (Repeat) Cost: 5 + 3n Piety Effect: Grants permanent +1 to damage reduction and +2 to health. Spawns 5 random plants. Power of Earth (Repeat) Cost: 5 + 3n Piety Effect: +20 item conversion points. Spawns 5 random plants.",
+            ""
+        ]
+    ],
+    "pageTitle": "Gods - DDwiki",
+    "title": "",
+    "url": "http://www.qcfdesign.com/wiki/DesktopDungeons/index.php?title=Full:Gods&oldid=7099",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00306-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 666944065,
+    "recordOffset": 666933255,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Two other major changes have occurred to the way altars work. First is Desecration: If worshipping a god, you can smash up another god's altar to gain 25 piety and immunity from the next \"major punishment\" you would receive; in turn, however, the god whose altar you desecrated will punish you as if you had been a follower but reached 0 piety. Second, you can convert from any god to any other god, at any time, at the cost of half your piety (you must have at least 50 piety to do so). The exception is, naturally, if you destroyed an altar, in which case you can't damn well worship there, can you? Sometimes you can really be quite daft. In addition, no altars will spawn at the beginning of the game. Occasionally, the player will find a subdungeon with a particular challenge; this challenge, when conquered, will convert the player to the god they just discovered (even if they were already worshipping another one) and allow this god's altars to spawn in any dungeon. Generally, 3 altars will spawn per dungeon (assuming at least 3 gods have been discovered). Gods work much the same way in the beta version, but all the gods that are implemented have their boons and piety actions changed up, making them in some cases just slightly different (e.g. Tikki Tooki) and in others encouraging an almost entirely different playstyle than before (e.g. Mystera Annur). Some boons can even be used more than",
+    "textAfterTable": "Retrieved from \" http://www.qcfdesign.com/wiki/DesktopDungeons/index.php?title=Gods&oldid=7099\" Navigation menu Views Page Discussion View source History Personal tools Create account Log in Navigation Main page Recent changes Random page",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

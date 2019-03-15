@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust",
+            "Precipitation"
+        ],
+        [
+            "Avg",
+            "31.9 \u00b0F",
+            "24.5 \u00b0F",
+            "78 %",
+            "30.15 in",
+            "7.4 mph",
+            "",
+            "0.12 in"
+        ],
+        [
+            "Avg High",
+            "42.3 \u00b0F",
+            "31 \u00b0F",
+            "93.5 %",
+            "30.25 in",
+            "16.8 mph",
+            "27.2 mph",
+            ""
+        ],
+        [
+            "Avg Low",
+            "21.3 \u00b0F",
+            "18.7 \u00b0F",
+            "55.4 %",
+            "30.02 in",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Record High",
+            "56.8 \u00b0F (1996)",
+            "44.6 \u00b0F (2001)",
+            "",
+            "30.58 in (2013)",
+            "31.1 mph (2006)",
+            "34.5 mph (2006)",
+            "0.28 in (2007)"
+        ],
+        [
+            "Record Low",
+            "(2014)",
+            "4.6 \u00b0F (2015)",
+            "30 % (2011)",
+            "29.47 in (2011)",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Baker, Oregon - February 15th - Daily Weather Averages (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherdaily.php3?s=32637&month=2&theday=15&cityname=Baker%2C+Oregon%2C+United+States+of+America&units=",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00339-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 826161958,
+    "recordOffset": 826146062,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] DAILY WEATHER AVERAGE - FEBRUARY 15 [ \u2190 Previous Day ] } window.print(); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); return $(this).text().replace(\"2015\", \"\"); $('.datepicker-switch').text(function () { }); window.location = url; var url = \"/weather/weatherdaily.php3?s=32637&\" + pieces + \"&citynameBaker%2C+Oregon%2C+United+States+of+America&set=\"; var pieces = tosplit.replace(/(.*?)-(.*?)-(.*?)/,\"month=$2&theday=$3\"); var tosplit = event.format(); $('#datepicker').datepicker().on('changeDate', function (event) { }); endDate: \"2015-12-31\", startDate: \"2015-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 10.2 mi Wind Direction SE (135.4 \u00b0) Weather Element Total Heating Degree Days 33.2 (Base 18.3) Total Years on Record: 21",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

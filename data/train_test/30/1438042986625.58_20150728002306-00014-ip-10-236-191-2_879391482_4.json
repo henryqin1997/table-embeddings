@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "date",
+            "3/12/2011",
+            "4/7/2011",
+            "4/9/2011",
+            "9/23/2011",
+            "9/30/2011",
+            "10/14/2011"
+        ],
+        [
+            "city",
+            "Asheville",
+            "Grapevine",
+            "Austin",
+            "Dallas",
+            "Saint Louis",
+            "Cleveland"
+        ],
+        [
+            "state",
+            "NC",
+            "TX",
+            "TX",
+            "TX",
+            "MO",
+            "OH"
+        ],
+        [
+            "venue",
+            "The Grey Eagle",
+            "Glass Cactus",
+            "Antone's",
+            "Granada Theater",
+            "Old Rock House",
+            "Beachland Ballroom"
+        ]
+    ],
+    "pageTitle": "Chris Knight Concert Tickets | SeatGeek",
+    "title": "",
+    "url": "https://seatgeek.com/chris-knight-tickets",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986625.58/warc/CC-MAIN-20150728002306-00014-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 879425135,
+    "recordOffset": 879391482,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "2015 Tour Dates Low price $25 High price $53 Average Price $38 Past 12 Months Find Tickets Chris Knight Ticket Prices } ); document.getElementById('location-autocomplete') }), } } window.location.href = window.location.pathname + '?lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id } else { window.location.href = window.location.href + '&lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id; if(window.location.href.match('/search')) { SG.GA.sendEvent('team-show-page', 'location-input', { label: selection.term }); onSelect: function(selection) { }, return (data.results && data.results.location) ? data.results.location : [] dataExtractionFunction: function(data) { placeholder: 'Search by City...', postSelectLoad: true, limit: 3, contentKey: 'term', idKey: 'id', queryString: \"types[]=location\", source: \"/autocomplete\", React.createFactory(Autocomplete)({ React.render( if (document.getElementById('location-autocomplete')) {",
+    "textAfterTable": "1/29/2015 Conroe TX Dosey Doe Music Cafe 1/30/2015 McKinney TX Hank's Texas Grill 1/31/2015 Ardmore OK Two Frogs Grill 3/11/2015 Tomball TX Main Street Crossing 3/13/2015 Justin TX Mule Barn 4/1/2015 Nashville TN City Winery Nashville 4/3/2015 Decatur GA Eddie's Attic 5/7/2015 New Braunfels TX River Road Icehouse 6/4/2015 St. Louis MO Off Broadway 6/6/2015 Bloomington IN Bluebird Nightclub 6/19/2015 Washington DC Hill Country DC 7/8/2015 Birmingham AL Workplay Theatre 7/9/2015 Jackson MS Duling Hall 7/10/2015 New Orleans LA House of Blues New Orleans 7/22/2015 Cleveland OH Beachland Ballroom 7/23/2015 Columbus OH Rumba Cafe 7/24/2015 Chicago IL Joe'S Bar 7/25/2015 Newport KY Southgate House 2014 date city state venue 1/30/2014 Conroe TX Dosey Doe Music Cafe 2/20/2014 Denton TX",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

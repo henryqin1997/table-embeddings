@@ -1,0 +1,61 @@
+{
+    "relation": [
+        [
+            "Web Page",
+            "Daily Precipitation Verification Plots",
+            "NAM Parallel vs. Operational QPF Verification Scores",
+            "Operational versus Parallel NDAS, NAM analysis comparison page",
+            "Operational and Parallel 12-km NDAS Surface Parameters",
+            "PARALLEL NAM-12 FORECAST VERIFICATION STATS",
+            "Operational versus Parallel NAM Forecast 500 Mb Height Differences",
+            "Operational NAM-12 versus Parallel NAM-12 versus RTMA/NDAS analysis comparison page (00Z, 12Z runs)"
+        ],
+        [
+            "Description",
+            "This site is an archive of model forecast precipitation vs. 24-h (12Z-12Z) observed precipitation analysis",
+            "30-day precipitation verification scores for 3-h/24-h forecast precipitation versus observed precipitation",
+            "Comparison of Operational vs Parallel NDAS, NAM analysis to observations, with full fields (height/wind, temperature, specific humidity, total column precipitable water) and analysis/observation increments",
+            "2-d graphics (animated) of NDAS surface fields (e.g., 12-h precip, soil temperature/moisture) over the CONUS/North America",
+            "Verification (bias and RMS errors) of 12-84 h forecasts of 500 and 250 mb Height, 700 mb RH, 850, 700, 500, 250, 100, and 50 mb Temperature, and 250 MB Vector Wind vs. rawinsondes over the CONUS and Alaska; 2-m T/Td/RH and 10-m winds vs. surface observations",
+            "This page shows the forecast height difference at 500 mb for the NCEP Operational and Parallel NAM runs, compared to the NCEP Final (GDAS) analysis.",
+            "This page is a comparison of the Operational and Parallel NAM forecasts from 0-84 h and the best available RTMA or NDAS analyses valid at the same time. Certain fields are also compared to surface or upper air observations"
+        ],
+        [
+            "Models Displayed",
+            "NAM, GFS, GFSX, CMC, CMC Global, UK Met, ECMWF, JMA, DWD, Meteo France, HiResWindow runs, various NAM parallels, DGEX",
+            "Ops and parallel NAM and NAM nests",
+            "Operational and Parallel NDAS, NAM analyses",
+            "12 km Operational and Parallel NDAS",
+            "Ops NAM-12 vs various 12km NAM parallels",
+            "Ops NAM, various NAM parallels",
+            "Operational and Parallel NAM, RTMA/NDAS analyses, surface and upper air observations"
+        ],
+        [
+            "Retention Period",
+            "December 2001 - present",
+            "Last 30 days",
+            "7 days",
+            "120 hours",
+            "Past 21 days vs rawinsondes, past 8 days vs surface data",
+            "3-4 months",
+            "7 days"
+        ]
+    ],
+    "pageTitle": "National Centers for Environmental Prediction",
+    "title": "",
+    "url": "http://www.emc.ncep.noaa.gov/NAM/clog.php",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 6,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00018-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 415630303,
+    "recordOffset": 415591858,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{77366=Note : This code error, in the forecast code since the unified Noah land-surface physics was implemented on 31 March 2008, was never invoked in the operational NDAS until it began to be initialized from the GDAS first guess on 16 December 2008.}",
+    "textBeforeTable": "1. NCEP OPERATIONAL MODEL FORECAST GRAPHICS Please note : Most of the NCEP real-time model web pages listed below are generated on the NCEP development computer, and therefore will not be updated when this computer is down. The web graphics for the NAM 12-km parent, GFS, GEFS, Alaska/CONUS NAM nests, SREF, HiRes Window runs, RTMA, RAP, and HRRR on the NCEP Model Analysis and Guidance (MAG) site are operational, created in near real-time, and subject to 24/7 monitoring by NCEP Central Operations. If you have any questions please email Eric Rogers at eric.rogers@noaa.gov. MISCELLANEOUS LINKS ON-LINE DOCUMENTATION OF MAJOR CHANGES TO EMC MESOSCALE MODELING SYSTEMS PARALLEL VERIFICATION / DIAGNOSTICS OPERATIONAL VERIFICATION / DIAGNOSTICS PARALLEL/EXPERIMENTAL MODEL FORECAST GRAPHICS NCEP OPERATIONAL MODEL FORECAST GRAPHICS Table of Contents Mesoscale Branch Web Page Reference List Mesoscale Branch Web Page Reference List  NAM/HIRESW Disclaimer Contacts Parallel Experiment Change Log Operational Change Log FAQ Documentation and Code Collaborators Model Configuration Verification and Diagnostics Experimental Forecast Graphics Operational Forecast Graphics HIRESW Operational Products NAM Operational Products Home NAM > CHANGE LOG",
+    "textAfterTable": "Ops NAM 12km run, NAM nests 60-h 3 hour (1-h for NAM Alaska and CONUS nest hourly web page) Yes 7 days NAM Nest runs on NCEP Model Analysis and Guidance Page (Model Type = \"NAM-HIRES\") 6 km Alaska nest or 4 km CONUS nest Model Area = ALASKA for 6 km Alaska nest Model Area = NAMER for 4 km CONUS nest 60-h 3 hour Yes 1 day NAM CONUS Nest runs (\"quick look\" web page) 4 km CONUS NAM CONUS nest 60-h 3 hour Yes Last 4 cycles NAM Fire Weather Nest 1.333 km (CONUS) or 1.5 km (Alaska) NAM Fire weather nest 36-h 1 hour Yes 7 days NCEP Model Graphics NAM, GFS, NAM or GFS parallel (if running) 84-h 6 hours Yes 7 days NCEP Operational NAM-12 : Convective Forecasting Page for 00Z/12Z cycles NAM 84-h 3 hours Yes No NCEP HiResWindow Forecast Page - EMC Web pages CONUS NMMB and ARW (00Z,12Z) vs ops NAM CONUS nest Hawaii NMMB and ARW (00Z/12Z) vs",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

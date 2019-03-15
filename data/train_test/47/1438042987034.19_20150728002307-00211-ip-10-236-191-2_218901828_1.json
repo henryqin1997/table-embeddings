@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "3",
+            "10",
+            "17 (1)",
+            "24 (3)"
+        ],
+        [
+            "M",
+            "",
+            "4",
+            "11",
+            "18",
+            "25"
+        ],
+        [
+            "T",
+            "",
+            "5",
+            "12 (1)",
+            "19",
+            "26"
+        ],
+        [
+            "W",
+            "",
+            "6",
+            "13",
+            "20 (3)",
+            "27"
+        ],
+        [
+            "T",
+            "",
+            "7",
+            "14",
+            "21 (2)",
+            "28"
+        ],
+        [
+            "F",
+            "1 (1)",
+            "8",
+            "15",
+            "22",
+            "29"
+        ],
+        [
+            "S",
+            "2 (1)",
+            "9 (1)",
+            "16 (1)",
+            "23",
+            "30"
+        ]
+    ],
+    "pageTitle": "CEDET / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/cedet/mailman/cedet-devel/?viewmonth=200609&viewday=9",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987034.19/warc/CC-MAIN-20150728002307-00211-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 218915435,
+    "recordOffset": 218901828,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul (2) Jun (8) May (6) Apr (26) Mar (34) Feb (58) Jan (83) 2015 Dec (26) Nov (12) Oct (21) Sep (27) Aug (26) Jul (19) Jun (50) May (24) Apr (9) Mar (36) Feb (47) Jan (12) 2014 Dec (37) Nov (43) Oct (41) Sep (38) Aug (39) Jul (5) Jun (3) May (31) Apr (8) Mar (131) Feb (38)",
+    "textAfterTable": "Showing 1 results of 1 Flat | Threaded [CEDET-devel] Changes to run-with-idle-timer in CVS emacs From: Suraj Acharya <sacharya@gm...> - 2006-09-09 08:10:42 Hello, I was trying out a recent build of windows CVS emacs when I noticed that the semantic-idle timer was eating away a lot of CPU when emacs is idle. I managed to trace the problem down to a change in timer.el on Aug 20: http://cvs.savannah.gnu.org/viewcvs/emacs/emacs/lisp/emacs-lisp/timer.el?r1=1.11&r2=1.12 This change affects the behavior of idle timers created while emacs is idle. If emacs has already been idle for the idle period of this timer when this timer was created, then the timer is run immediately. Before this change emacs would run this timer only after the idle period. (I hope this makes some sense.) The upshot is that because semantic-idle-scheduler-function destroys the old timer on entry and then creates new one just before it quits, emacs keeps calling the new timer right away after it has been idle for semantic-idle-scheduler-idle-time seconds. I'm not sure why semantic-idle-scheduler-function does this trick of destroying and creating the timer. I tried removing those calls and things seem to work fine so far. Any",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

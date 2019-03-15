@@ -1,0 +1,202 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2012-13",
+            "2013-14",
+            "2014-15 *",
+            "2014-15",
+            "2014-15 *",
+            "2014-15 *"
+        ],
+        [
+            "Team",
+            "TRO",
+            "TRO",
+            "All Teams",
+            "AVT",
+            "AVT",
+            "AVT"
+        ],
+        [
+            "GP",
+            "15",
+            "5",
+            "45",
+            "45",
+            "32",
+            "13"
+        ],
+        [
+            "GS",
+            "15",
+            "0",
+            "45",
+            "45",
+            "32",
+            "13"
+        ],
+        [
+            "TS%",
+            ".620",
+            ".496",
+            ".542",
+            ".542",
+            ".535",
+            ".561"
+        ],
+        [
+            "eFG%",
+            ".539",
+            ".442",
+            ".474",
+            ".474",
+            ".460",
+            ".512"
+        ],
+        [
+            "ORB%",
+            "3.57",
+            "6.46",
+            "4.19",
+            "4.19",
+            "3.45",
+            "6.01"
+        ],
+        [
+            "DRB%",
+            "8.87",
+            "22.20",
+            "10.44",
+            "10.44",
+            "9.75",
+            "12.01"
+        ],
+        [
+            "TRB%",
+            "6.30",
+            "13.79",
+            "7.42",
+            "7.42",
+            "6.68",
+            "9.18"
+        ],
+        [
+            "AST%",
+            "22.06",
+            "5.19",
+            "37.89",
+            "37.89",
+            "36.06",
+            "42.33"
+        ],
+        [
+            "TOV%",
+            "11.85",
+            "20.37",
+            "18.93",
+            "18.93",
+            "17.58",
+            "22.58"
+        ],
+        [
+            "STL%",
+            "3.90",
+            "1.81",
+            "2.18",
+            "2.18",
+            "2.00",
+            "2.62"
+        ],
+        [
+            "BLK%",
+            "0.16",
+            "1.06",
+            "0.27",
+            "0.27",
+            "0.23",
+            "0.37"
+        ],
+        [
+            "USG%",
+            "26.29",
+            "19.92",
+            "25.23",
+            "25.23",
+            "26.11",
+            "23.10"
+        ],
+        [
+            "Total S %",
+            "167.23",
+            "120.09",
+            "158.34",
+            "158.34",
+            "156.61",
+            "163.91"
+        ],
+        [
+            "PPR",
+            "1.21",
+            "-6.62",
+            "4.52",
+            "4.52",
+            "4.22",
+            "5.10"
+        ],
+        [
+            "PPS",
+            "1.58",
+            "1.19",
+            "1.29",
+            "1.29",
+            "1.29",
+            "1.32"
+        ],
+        [
+            "ORtg",
+            "126.4",
+            "92.3",
+            "112.6",
+            "112.6",
+            "111.7",
+            "114.5"
+        ],
+        [
+            "DRtg",
+            "110.7",
+            "112.2",
+            "111.7",
+            "111.7",
+            "114.2",
+            "105.6"
+        ],
+        [
+            "PER",
+            "21.56",
+            "9.09",
+            "17.41",
+            "17.41",
+            "46.54",
+            "0.00"
+        ]
+    ],
+    "pageTitle": "Courtney Fortson Player Profile, Los Angeles Clippers, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Courtney-Fortson/Summary/3642",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 34,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043058631.99/warc/CC-MAIN-20150728002418-00237-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 22788231,
+    "recordOffset": 22746712,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{47229=Draft Entry: 2010 NBA Draft, 47129=Early Entry Info: 2010 Early Entrant, 48018=Born: May 23, 1988 (27 years old)}",
+    "TableContextTimeStampAfterTable": "{96261=* International basketball history from 2011-2012, 130672=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 1 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] [ High School ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "Ast Stl Blk PF TO Pts 2011-12 * All Teams 10 0 95.2 11 32 .344 3 13 .231 10 15 .667 19 6 9 15 10 3 0 5 10 35 2011-12 * HOU 6 0 49.3 6 20 .300 2 9 .222 4 6 .667 8 2 5 7 5 3 0 2 5 18 2011-12 * LAC 4 0 45.9 5 12 .417 1 4 .250 6 9 .667 10 4 4 8 5 0 0 3 5 17 CAREER \u00a0 10 0 95.2 11 32 .344 3 13 .231 10 15 .667 19 6 9 15 10 3 0 5 10 35 NBA Regular Season Stats - Misc Stats Season Team GP GS Dbl Dbl Tpl Dbl 40 Pts 20 Reb 20 Ast Techs HOB Ast/TO Stl/TO FT/FGA W's L's Win % OWS DWS WS 2011-12 * All Teams 10 0 0 0 0 0 0 0 .059 1.00 0.30 0.47 5 5 0.500 -0.10 0.08 -0.02 2011-12 * HOU 6 0 0 0 0 0 0 0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

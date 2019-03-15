@@ -1,0 +1,108 @@
+{
+    "relation": [
+        [
+            "Name",
+            "Open",
+            "High",
+            "Low",
+            "Close",
+            "Change",
+            "Traded Volume",
+            "Turnover",
+            "\u00d8 Daily Turnover"
+        ],
+        [
+            "Today",
+            "94.50",
+            "94.50",
+            "91.50",
+            "-",
+            "-1.42%",
+            "14,105",
+            "1.31 m.",
+            "1.31 m."
+        ],
+        [
+            "1 Month",
+            "97.00",
+            "99.44",
+            "88.00",
+            "96.11",
+            "-3.61%",
+            "635,467",
+            "58.64 m.",
+            "2.55 m."
+        ],
+        [
+            "3 Months",
+            "105.50",
+            "105.95",
+            "88.00",
+            "103.35",
+            "-10.36%",
+            "1.76 m.",
+            "171.39 m.",
+            "2.68 m."
+        ],
+        [
+            "6 Months",
+            "89.00",
+            "123.70",
+            "87.05",
+            "89.34",
+            "3.69%",
+            "3.91 m.",
+            "398.64 m.",
+            "3.16 m."
+        ],
+        [
+            "1 Year",
+            "68.56",
+            "123.70",
+            "62.32",
+            "69.11",
+            "34.05%",
+            "7.13 m.",
+            "643.93 m.",
+            "2.53 m."
+        ],
+        [
+            "2 Years",
+            "101.00",
+            "123.70",
+            "62.32",
+            "99.55",
+            "-6.94%",
+            "14.00 m.",
+            "1.22 bn.",
+            "2.40 m."
+        ],
+        [
+            "3 Years",
+            "79.30",
+            "123.70",
+            "62.32",
+            "78.78",
+            "17.59%",
+            "21.27 m.",
+            "1.85 bn.",
+            "2.43 m."
+        ]
+    ],
+    "pageTitle": "Dr\u00e4gerwerk AG & Co. KGaA Vz | Equity | 555063 | DE0005550636 | B\u00f6rse Frankfurt (Frankfurt Stock Exchange)",
+    "title": "",
+    "url": "http://boerse-frankfurt.com/en/equities/draegerwerk+ag+co+kgaa+vz+DE0005550636/price+turnover+history",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987628.47/warc/CC-MAIN-20150728002307-00120-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 34354707,
+    "recordOffset": 34337662,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Tick Data } load_kurs_umsatz(val); $('.PRE7a89a8cc24ea466488fa8ea5bbd63a28_data_chart').attr('data-boerse_id', val ); function d29706101_fkt_set_par( val ) { } $(obj).addClass('current'); $('.brs_d29706101_li').removeClass('current'); function d29706101_fkt_set_active( obj ) { }); }); load_kurs_umsatz(boerse_id_glob); $('.PRE7a89a8cc24ea466488fa8ea5bbd63a28_inpt_set_period').click(function(){ $(document).ready(function(){ }; }); } $('#kurs_umsatz_PRE7a89a8cc24ea466488fa8ea5bbd63a28').fadeIn('fast'); $('#kurs_umsatz_PRE7a89a8cc24ea466488fa8ea5bbd63a28').html(data); $('#kurs_umsatz_PRE7a89a8cc24ea466488fa8ea5bbd63a28').fadeOut('fast'); success: function(data){ }, COMPONENT_ID: 'PRE7a89a8cc24ea466488fa8ea5bbd63a28' link_id_perf: '', link_id_hist: '9530', link_id_ticks: '10302', titel_perf: 'Performance', titel_hist: 'Historical Data', titel_ticks: 'Tick Data', boerse_id: boerse_id_glob, template: 0, secu: '2268', data: { url:'/en/parts/boxes/history/kurs_umsatz.m', $.ajax({ boerse_id_glob = boerse_id; function load_kurs_umsatz(boerse_id) { var boerse_id_glob = '6'; /* ]]> */ }); }); last_t = data['T']; } $(document).attr('title', 'DRW3 B: ' + format.security_price(prev_bid, 'AG') + ' A: ' + format.security_price(prev_ask, 'AG')); prev_ask = data['a'] || prev_ask; prev_bid = data['b'] || prev_bid; if ((data['b'] || data['a']) && data['T'] >",
+    "textAfterTable": "24/07/2015 91.65 93.76 91.65 92.90 11,553 1.07 m. Performance Name Today 1 Month 3 Months 6 Months 1 Year 2 Years 3 Years Open 94.50 97.00 105.50 89.00 68.56 101.00 79.30 High 94.50 99.44 105.95 123.70 123.70 123.70 123.70 Low 91.50 88.00 88.00",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

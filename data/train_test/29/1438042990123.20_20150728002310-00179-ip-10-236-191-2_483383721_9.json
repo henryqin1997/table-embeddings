@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Fecha",
+            "5 Mar 1999",
+            "7 Jul 2005",
+            "2 Nov 2009",
+            "26 Mar 2010",
+            "18 May 2010"
+        ],
+        [
+            "C\ufffddigo",
+            "AS",
+            "FPAY",
+            "REMI",
+            "LAPS",
+            "FP"
+        ],
+        [
+            "Evento",
+            "Assignment",
+            "Fee payment",
+            "Maintenance fee reminder mailed",
+            "Lapse for failure to pay maintenance fees",
+            "Expired due to failure to pay maintenance fee"
+        ],
+        [
+            "Descripci\ufffdn",
+            "Owner name: INTERNATIONAL BUSINESS MACHINES CORPORATION, NEW Y Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:CORONEL, PHILIPPE;MACCAGNAN, RENZO;REEL/FRAME:009799/0137 Effective date: 19990104",
+            "Year of fee payment: 4",
+            "",
+            "",
+            "Effective date: 20100326"
+        ]
+    ],
+    "pageTitle": "Patente US6363294 - Method and system for semiconductor wafer fabrication process real-time in ... - Google Patentes",
+    "title": "",
+    "url": "http://www.google.es/patents/US6363294?dq=flatulence",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990123.20/warc/CC-MAIN-20150728002310-00179-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 483423351,
+    "recordOffset": 483383721,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{69781=As mentioned above, at the initial stage of the \u201cAB ETCH\u201d process, i.e. step A, photoresist layer AB1 is normally present. The case where structure 19 has no defect is represented by curves 26 to 29 in the graph of FIG. 4. As apparent from FIG. 4, the derivative signal S\u20321 (curve 27) exhibits a very sharp transient at the end of the step. Now turning to FIG. 8 which illustrates the signals 31, S\u20321, S2 and S\u20322 when the AB1 photoresist layer 24 is missing. In this case, the S\u20321 signal represented by curve 34 has a more gradual slope instead. This difference will be used by the expert information to distinguish the two cases. To characterize the absence of the AB1 photoresist layer, the following rule has been established: if signal S\u20321 is higher than 500 (arbitrary units) and lower than 1600 during at least about 25 s, the AB1 photoresist layer is considered missing. Then, the consequence of such a situation is considered for an appropriate response. If AB1 photoresist layer is missing and step A performed as usual, during steps B and C, the totality of the TEOS SiO2 layer 22 will be etched leading to a major cause of rejection. Therefore, as soon as the AB1 photoresist layer is detected \u201cmissing\u201d the etching must be immediately stopped, so that in this case, the alert code is \u201cIMMEDIATE STEP STOP\u201d and the recommended action is to by-pass steps B and C in chamber 11-1. In this case, the wafer is reworkable., 72611=Still another frequent failure that occurs in the manufacturing at the \u201cAB ETCH\u201d level is the absence of the AB2 photoresist layer 25. If AB2 photoresist layer 25 is missing when step A is initiated in chamber 11-1, the chemistry that is currently used at this step, etches both the TEOS SiO2 material of layer 22 and the photoresist material of AB1 layer 24 at the same rate. In a few minutes, the totality of the AB1 photoresist is removed plus a large amount of the TEOS SiO2 material. As a consequence, the wafer needs to be rejected at this stage of the fabrication process. In this case, signal S\u20321 will be used, and as soon as an interference is detected, which means that TEOS SiO2 material is being etched, the etching is immediately stopped. FIG. 10 shows signals S1, S\u20321, S2 and S\u20322 in that particular situation, wherein signal S\u20321 is represented by curve 36. In this case, the rule is: starting from RATE TIME RT of signal S\u20321 for a maximum duration of 120 s, if signal S\u20321 amplitude raises above 1500 (arbitrary unit) and decreases below 600 and then raises again above 1500, this means that the etch rate is too high. The alert code is \u201cIMMEDIATE TOOL STOP\u201d and the recommended action is thus to stop the plasma etcher tool. In this particular case, all the remaining wafers of the lot undergoing processing are visually controlled to check the presence of the AB2 photoresist layer 25.}",
+    "textBeforeTable": "Citas de patentes Finally, the supervisor 35 that fully controls all the steps of the \u201cAB ETCH/AB STRIP\u201d process, through EPD controllers 14-1 and 14-2 now guarantees that only good wafers will be completely processed. Moreover, the method and system of the present invention allows a total clusterized (i.e. in-situ) \u201cAB ETCH/AB STRIP\u201d process. Finally, failed wafers can now be immediately identified at the tool output by their identification number (wafer ID). Finally, some components of the database (e.g. batch history and batch statistics files) may reveal to be of great value for other processes or in other locations of the manufacturing line. For instance, the exploitation of data related to the set of \u201cbatch history\u201d of good wafers provide interesting information as to the evolution of operating characteristics of the process tool, allowing thereby to develop the predictive maintenance of the process tool and to change some process parameters thereof to correct some drifts that could occur during a long period in the manufacturing line. The study of a specific process parameter through a number of \u201cbatch history\u201d, for instance the etch rate at a determined step of the wafer processing, could reveal to be an important data of the \u201cbatch statistics\u201d file for the same reasons. Finally, the exploitation of the data related to the \u201cwafer/batch history\u201d of bad wafers is also of great value, for instance for reworkable wafers. Flow chart referenced 60 in FIG.",
+    "textAfterTable": "US5859964 * 25 Oct 1996 12 Ene 1999 Advanced Micro Devices, Inc. System and method for performing real time data acquisition, process modeling and fault detection of wafer fabrication processes US6090632 * 4 Sep 1998 18 Jul 2000 Samsung Electronics Co., Ltd. Method for controlling semiconductor processing equipment in real time US6185511 * 28 Nov 1997 6 Feb 2001 Advanced Micro Devices, Inc. Method to accurately determine classification codes for defects during semiconductor manufacturing US6192291 * 8 Oct 1998 20 Feb 2001 Samsung Electronics Co., Ltd. Method of controlling semiconductor fabricating equipment to process wafers of a single lot individually EP0072004A2 6 Ago 1982 16 Feb 1983 Australasian Training Aids (Pty) Ltd. Target range status indicator and controller GB2126374A T\ufffdtulo no disponible * Citada por examinador Otras citas Referencia",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

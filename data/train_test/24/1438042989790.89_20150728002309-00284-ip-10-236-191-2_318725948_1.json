@@ -1,0 +1,111 @@
+{
+    "relation": [
+        [
+            "Time",
+            "Weather Conditions",
+            "Temperature (\u00b0C/\u00b0F)",
+            "Wind Speed (mph/km/h)",
+            "Wind Direction",
+            "Humidity",
+            "Visibility (E = Excellent, VG = Very Good, G = Good, M = Moderate, P = Poor, VP = Very Poor)",
+            "Pressure (Millibars)"
+        ],
+        [
+            "1700 hours",
+            "",
+            "31\u00b0C 88\u00b0F",
+            "Wind Speed 14 km/h 9 mph East South Easterly",
+            "ESE",
+            "66%",
+            "VG",
+            "1000"
+        ],
+        [
+            "2000 hours",
+            "",
+            "29\u00b0C 84\u00b0F",
+            "Wind Speed 3 km/h 2 mph North Easterly",
+            "NE",
+            "82%",
+            "VG",
+            "1001"
+        ],
+        [
+            "2300 hours",
+            "",
+            "28\u00b0C 82\u00b0F",
+            "Wind Speed 3 km/h 2 mph West North Westerly",
+            "WNW",
+            "91%",
+            "G",
+            "1002"
+        ],
+        [
+            "0200 hours Tue",
+            "",
+            "27\u00b0C 81\u00b0F",
+            "Wind Speed 3 km/h 2 mph Westerly",
+            "W",
+            "93%",
+            "G",
+            "1001"
+        ],
+        [
+            "0500 hours",
+            "",
+            "27\u00b0C 81\u00b0F",
+            "Wind Speed 2 km/h 1 mph Westerly",
+            "W",
+            "94%",
+            "G",
+            "1001"
+        ],
+        [
+            "0800 hours",
+            "",
+            "29\u00b0C 84\u00b0F",
+            "Wind Speed 3 km/h 2 mph West North Westerly",
+            "WNW",
+            "82%",
+            "VG",
+            "1001"
+        ],
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "BBC Weather - Pesh\u0101war",
+    "title": "Weather forecast details for Monday 3 August. Each column contains hourly forecast details for weather conditions, temperature, wind speed, wind direction, humidity, visibility and pressure.",
+    "url": "http://www.bbc.com/weather/1168197",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989790.89/warc/CC-MAIN-20150728002309-00284-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 318756695,
+    "recordOffset": 318725948,
+    "tableOrientation": "VERTICAL",
+    "TableContextTimeStampAfterTable": "{106120=Copyright \u00a9 2015 BBC. The BBC is not responsible for the content of external sites. Read more., 42973=Last updated 12:33, 93684=Average Conditions data \u00a9 Copyright RM, 2011. All rights reserved. Helicon Publishing is a division of RM., 97351=Observed at 13:00, Monday 3 August}",
+    "textBeforeTable": "Table Graph Last updated 12:33 Sunset 19:13 Sunrise 05:26 35\u00b0C 95\u00b0F 27\u00b0C 81\u00b0F Wind Speed 11 km/h 7 mph South Westerly Wed 12th 35\u00b0C 95\u00b0F 27\u00b0C 81\u00b0F Wind Speed 11 km/h",
+    "textAfterTable": "Environmental Summary UV: 7 European range: 1-11+",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

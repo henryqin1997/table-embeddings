@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust",
+            "Precipitation"
+        ],
+        [
+            "Avg",
+            "35.6 \u00b0F",
+            "24.4 \u00b0F",
+            "67 %",
+            "30.04 in",
+            "11.1 mph",
+            "",
+            "0.14 in"
+        ],
+        [
+            "Avg High",
+            "41.5 \u00b0F",
+            "30.8 \u00b0F",
+            "80.4 %",
+            "30.16 in",
+            "18.4 mph",
+            "27.2 mph",
+            ""
+        ],
+        [
+            "Avg Low",
+            "29.7 \u00b0F",
+            "17.8 \u00b0F",
+            "54.2 %",
+            "29.91 in",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Record High",
+            "55.9 \u00b0F (2007)",
+            "54 \u00b0F (2007)",
+            "",
+            "30.53 in (2000)",
+            "28.8 mph (2015)",
+            "41.4 mph (2015)",
+            "0.54 in (2004)"
+        ],
+        [
+            "Record Low",
+            "12.9 \u00b0F (1996)",
+            "-7.1 \u00b0F (2015)",
+            "24 % (2009)",
+            "29.47 in (1997)",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Brooklyn, New York - January 5th - Daily Weather Averages (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherdaily.php3?s=697506&month=1&theday=5&cityname=Brooklyn%2C+New+York%2C+United+States+of+America&units=",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981969.11/warc/CC-MAIN-20150728002301-00224-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 815590011,
+    "recordOffset": 815572564,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] DAILY WEATHER AVERAGE - JANUARY 5 [ \u2190 Previous Day ] } window.print(); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); return $(this).text().replace(\"2015\", \"\"); $('.datepicker-switch').text(function () { }); window.location = url; var url = \"/weather/weatherdaily.php3?s=697506&\" + pieces + \"&citynameBrooklyn%2C+New+York%2C+United+States+of+America&set=\"; var pieces = tosplit.replace(/(.*?)-(.*?)-(.*?)/,\"month=$2&theday=$3\"); var tosplit = event.format(); $('#datepicker').datepicker().on('changeDate', function (event) { }); endDate: \"2015-12-31\", startDate: \"2015-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 9.1 mi Wind Direction SW (220.5 \u00b0) Weather Element Total Heating Degree Days 29.4 (Base 18.3) Growing Degree Days 1.4 (Base 10) Total Years on Record: 21",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

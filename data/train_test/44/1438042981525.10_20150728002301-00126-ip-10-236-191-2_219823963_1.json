@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "4",
+            "11",
+            "18",
+            "25"
+        ],
+        [
+            "M",
+            "",
+            "5 (2)",
+            "12",
+            "19",
+            "26"
+        ],
+        [
+            "T",
+            "",
+            "6",
+            "13",
+            "20 (4)",
+            "27"
+        ],
+        [
+            "W",
+            "",
+            "7",
+            "14",
+            "21 (2)",
+            "28"
+        ],
+        [
+            "T",
+            "1",
+            "8",
+            "15",
+            "22",
+            "29"
+        ],
+        [
+            "F",
+            "2 (7)",
+            "9 (1)",
+            "16 (1)",
+            "23",
+            "30"
+        ],
+        [
+            "S",
+            "3",
+            "10 (1)",
+            "17",
+            "24",
+            ""
+        ]
+    ],
+    "pageTitle": "ddccontrol / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/ddccontrol/mailman/ddccontrol-devel/?viewmonth=200509",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981525.10/warc/CC-MAIN-20150728002301-00126-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 219841223,
+    "recordOffset": 219823963,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun \u00a0 May \u00a0 Apr \u00a0 Mar \u00a0 Feb \u00a0 Jan (3) 2013 Dec (2) Nov \u00a0 Oct \u00a0 Sep (7) Aug \u00a0 Jul \u00a0 Jun \u00a0 May \u00a0 Apr \u00a0 Mar \u00a0 Feb \u00a0 Jan (5) 2012 Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun \u00a0 May \u00a0 Apr \u00a0 Mar \u00a0 Feb (1) Jan \u00a0 2011 Dec \u00a0 Nov \u00a0 Oct",
+    "textAfterTable": "Showing 18 results of 18 Flat | Threaded Re: [ddccontrol-devel] Re: [ddccontrol-users] Icon needed From: Nicolas Boichat <nicolas@bo...> - 2005-09-21 18:20:25 Hi Christian, On Wed, 2005-09-21 at 19:08 +0200, Christian Schilling wrote: > hi nicolas, > [snip] > > Ok. Please also test what happens if the icon is not installed on the > > system, it should not display a message box or something like that. > > i think most user will have it, as it is part of gnome. but in case it's > not on the system there is no error message, but an other icon is shown > instead (red cross on \"paper\") Ok fine. > > > the integration of intltool also changes the way POTFILES.in is > > > maintained. the \"intltool-update -m\" command scans the sources and > > > creates a \"missing\" file containing all sources not mentioned in > > > POTFILES.in > > > > Great! .-) I thought that my small trick was not the correct way of > > doing this .-) Thanks! > > intltool can also handle updating of the .po files themselves: > intltool-update fr > will get all marked",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

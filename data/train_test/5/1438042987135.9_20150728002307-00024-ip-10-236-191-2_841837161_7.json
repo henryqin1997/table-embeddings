@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust",
+            "Precipitation"
+        ],
+        [
+            "Avg",
+            "27.5 \u00b0C",
+            "24.3 \u00b0C",
+            "83 %",
+            "1010.5 hPa",
+            "13.8 km/h",
+            "",
+            "36.32 mm"
+        ],
+        [
+            "Avg High",
+            "30.2 \u00b0C",
+            "25.3 \u00b0C",
+            "91.9 %",
+            "1011.9 hPa",
+            "26.6 km/h",
+            "43.9 km/h",
+            ""
+        ],
+        [
+            "Avg Low",
+            "25.6 \u00b0C",
+            "22.9 \u00b0C",
+            "68.5 %",
+            "1008.8 hPa",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Record High",
+            "32.2 \u00b0C (2007)",
+            "27 \u00b0C (2002)",
+            "",
+            "1014.6 hPa (1995)",
+            "46.3 km/h (2007)",
+            "64.9 km/h (2006)",
+            "183.9 mm (2008)"
+        ],
+        [
+            "Record Low",
+            "23.9 \u00b0C (2008)",
+            "21.7 \u00b0C (1998)",
+            "58 % (1998)",
+            "1004.7 hPa (2006)",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Agat, Guam - 8th July - Daily Weather Averages (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherdaily.php3?s=171219&cityname=Agat-Guam-United-States-of-America&month=7&theday=8&units=metric",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00024-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 841853063,
+    "recordOffset": 841837161,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0F ] \u00a0 \u00b0C [ Next Day \u2192 ] DAILY WEATHER AVERAGE - 8 JULY [ \u2190 Previous Day ] } window.print(); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); return $(this).text().replace(\"2015\", \"\"); $('.datepicker-switch').text(function () { }); window.location = url; var url = \"/weather/weatherdaily.php3?s=171219&\" + pieces + \"&citynameAgat%2C+Guam%2C+United+States+of+America&set=\"; var pieces = tosplit.replace(/(.*?)-(.*?)-(.*?)/,\"month=$2&theday=$3\"); var tosplit = event.format(); $('#datepicker').datepicker().on('changeDate', function (event) { }); endDate: \"2015-12-31\", startDate: \"2015-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 13.5 km Wind Direction ESE (109.5 \u00b0) Weather Element Total Cooling Degree Days 9.6 (Base 18.3) Growing Degree Days 17.9 (Base 10) Total Years on Record: 19",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

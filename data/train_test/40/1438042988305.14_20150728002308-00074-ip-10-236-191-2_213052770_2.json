@@ -1,0 +1,75 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Mon 24 Feb 2014 08:08:39 PM UTC",
+            "",
+            "Sun 23 May 2010 03:24:11 AM UTC",
+            "Sun 23 May 2010 03:19:16 AM UTC",
+            "",
+            ""
+        ],
+        [
+            "Changed By",
+            "bens",
+            "",
+            "astyanax",
+            "astyanax",
+            "",
+            ""
+        ],
+        [
+            "Updated Field",
+            "Status",
+            "Open/Closed",
+            "Carbon-Copy",
+            "Severity",
+            "Status",
+            "Assigned to"
+        ],
+        [
+            "Previous Value",
+            "In Progress",
+            "Open",
+            "-",
+            "3 - Normal",
+            "None",
+            "None"
+        ],
+        [
+            "=>",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Replaced By",
+            "Fixed",
+            "Closed",
+            "Added skibrianski",
+            "4 - Important",
+            "In Progress",
+            "astyanax"
+        ]
+    ],
+    "pageTitle": "GNU nano - Bugs: bug #29514, [nano 2.2.2] backup should ignore... [Savannah]",
+    "title": "",
+    "url": "http://savannah.gnu.org/bugs/index.php?reload=1&func=detailitem&item_id=29514",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988305.14/warc/CC-MAIN-20150728002308-00074-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 213069039,
+    "recordOffset": 213052770,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{2184=getcwd(\"/home/otheruser/file.txt\", 4097) stat(\"file.txt\", {st_mode=S_IFREG|0664, st_size=3226, ...}) = 0 getcwd(\"/home/otheruser/file.txt\", 4097) stat(\"file.txt\", {st_mode=S_IFREG|0664, st_size=3226, ...}) = 0 stat(\"/home/otheruser/file.txt\", {st_mode=S_IFREG|0664, st_size=3226, ...}) = 0 lstat(\"file.txt\", {st_mode=S_IFREG|0664, st_size=3226, ...}) = 0 stat(\"file.txt\", {st_mode=S_IFREG|0664, st_size=3226, ...}) = 0 open(\"file.txt\", O_RDONLY) = 3 getcwd(\"/home/otheruser\", 4097) = 65 stat(\"file.txt\", {st_mode=S_IFREG|0664, st_size=3226, ...}) = 0 stat(\"/home/myuser/.nanobak/!home!otheruser!file.txt~\", {st_mode=S_IFREG|0664, st_size=3226, ...}) = 0 stat(\"/home/myuser/.nanobak/!home!otheruser!file.txt~.1\", 0x7cc82f818860) = -1 ENOENT (No such file or directory) open(\"/home/myuser/.nanobak/!home!otheruser!file.txt~.1\", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 4 chmod(\"/home/myuser/.nanobak/!home!otheruser!file.txt~.1\", 0100664) = 0 fstat(3, {st_mode=S_IFREG|0664, st_size=3226, ...}) = 0 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x396a8ec91000 read(3, \"contents of the file ...\"..., 8192) = 3226 read(3, \"\", 4096) = 0 fstat(4, {st_mode=S_IFREG|0664, st_size=0, ...}) = 0 mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x396a8ec92000 read(3, \"\", 8192) = 0 close(3) = 0 munmap(0x396a8ec91000, 4096) = 0 write(4, \"contents of the file ...\"..., 3226) = 3226 close(4) = 0, 16322=Source Code Copyright \u00a9 2015 \u00a0Free Software Foundation, Inc. Verbatim copying and distribution of this entire article is permitted in any medium, provided this notice is preserved. The Levitating, Meditating, Flute-playing Gnu logo is a GNU GPL'ed image provided by the Nevrax Design Team., 4054=munmap(0x396a8ec92000, 262144) = 0 chown(\"/home/myuser/.nanobak/!home!otheruser!file.txt~.1\", 2011, 2011) = -1 EPERM (Operation not permitted)}",
+    "textBeforeTable": "Discussion document.write('(+) Discussion'); document.write('(-) Discussion'); document.write(''); document.write('(+) Post a Comment'); document.write('(-) Post a Comment');",
+    "textAfterTable": "document.write('(+) Votes'); Votes Do you think this task is very important? If so, you can click here to add your encouragement to it. This task has 0 encouragements so far. Only logged-in users can vote. \u00a0 Please enter the title of George Orwell's famous dystopian book (it's a date): \u00a0 \u00a0 History Follow 6 latest changes. Date Changed By Updated Field Previous Value => Replaced By Mon 24 Feb 2014 08:08:39 PM UTC bens Status In Progress Fixed \u00a0 \u00a0 Open/Closed Open Closed Sun 23 May 2010 03:24:11 AM UTC astyanax Carbon-Copy -",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

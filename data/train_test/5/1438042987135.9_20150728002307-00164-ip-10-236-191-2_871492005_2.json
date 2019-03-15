@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Symmetric Key permission",
+            "ALTER",
+            "CONTROL",
+            "REFERENCES",
+            "TAKE OWNERSHIP",
+            "VIEW DEFINITION"
+        ],
+        [
+            "Implied by symmetric key permission",
+            "CONTROL",
+            "CONTROL",
+            "CONTROL",
+            "CONTROL",
+            "CONTROL"
+        ],
+        [
+            "Implied by database permission",
+            "ALTER ANY SYMMETRIC KEY",
+            "CONTROL",
+            "REFERENCES",
+            "CONTROL",
+            "VIEW DEFINITION"
+        ]
+    ],
+    "pageTitle": "REVOKE Symmetric Key Permissions (Transact-SQL)",
+    "title": "",
+    "url": "https://msdn.microsoft.com/en-US/library/ms173788(v=sql.105).aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00164-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 871508399,
+    "recordOffset": 871492005,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Indicates that the right to grant the specified permission to other principals will be revoked. The permission itself will not be revoked. GRANT OPTION Specifies the symmetric key on which the permission is being revoked. The scope qualifier (::) is required. asymmetric_key_name ON SYMMETRIC KEY :: Specifies a permission that can be revoked on a symmetric key. For a list of the permissions, see the Remarks section later in this topic. permission Arguments | Database_user_with_no_login | Database_user_mapped_to_asymmetric_key | Database_user_mapped_to_certificate | Database_user_mapped_to_Windows_Group | Database_user_mapped_to_Windows_User | Application_role | Database_role Database_user <database_principal> ::= [ AS <database_principal> ] [ CASCADE ] { TO | FROM } <database_principal> [ ,...n ] ON SYMMETRIC KEY :: symmetric_key_name REVOKE [ GRANT OPTION FOR ] permission [ ,...n ]     Copy  Syntax Transact-SQL Syntax Conventions Revokes permissions granted and denied on a symmetric key.",
+    "textAfterTable": "Specifies the principal from which the permission is being revoked. AS <database_principal> Specifies a principal from which the principal executing this query derives its right to revoke the permission. Database_user Specifies a database user. Database_role Specifies a database role. Application_role Specifies an application role. Database_user_mapped_to_Windows_User Specifies a database user mapped to a Windows user. Database_user_mapped_to_Windows_Group Specifies a database user mapped to a Windows group. Database_user_mapped_to_certificate Specifies a database user mapped to a certificate. Database_user_mapped_to_asymmetric_key Specifies a database user mapped to an asymmetric key. Database_user_with_no_login Specifies a database user with no corresponding server-level principal. Remarks Information about symmetric keys is visible in the sys.symmetric_keys catalog view. The statement will fail if CASCADE is not specified when revoking a permission from a principal that was granted that permission with GRANT OPTION specified. A symmetric key is a database-level securable contained by the database that is its parent in the permissions hierarchy. The most specific and limited permissions that can be granted on a symmetric key are listed in the following table,",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

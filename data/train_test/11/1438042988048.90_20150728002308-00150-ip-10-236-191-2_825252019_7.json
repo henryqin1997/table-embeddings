@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust",
+            "Precipitation"
+        ],
+        [
+            "Avg",
+            "70 \u00b0F",
+            "62.5 \u00b0F",
+            "79.4 %",
+            "30.01 in",
+            "5.9 mph",
+            "",
+            "0.78 in"
+        ],
+        [
+            "Avg High",
+            "80.8 \u00b0F",
+            "66.4 \u00b0F",
+            "96.2 %",
+            "30.07 in",
+            "13.3 mph",
+            "22.3 mph",
+            ""
+        ],
+        [
+            "Avg Low",
+            "61.6 \u00b0F",
+            "57.5 \u00b0F",
+            "54.2 %",
+            "29.95 in",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Record High",
+            "87.1 \u00b0F (2012)",
+            "75.9 \u00b0F (2004)",
+            "",
+            "30.31 in (2002)",
+            "20.7 mph (2005)",
+            "27.6 mph (2013)",
+            "3.51 in (2012)"
+        ],
+        [
+            "Record Low",
+            "50 \u00b0F (2010)",
+            "45 \u00b0F (2001)",
+            "28 % (2001)",
+            "29.71 in (2005)",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Livonia, Michigan - August 27th - Daily Weather Averages (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherdaily.php3?s=725373&month=8&theday=27&cityname=Livonia%2C+Michigan%2C+United+States+of+America&units=",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988048.90/warc/CC-MAIN-20150728002308-00150-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 825267562,
+    "recordOffset": 825252019,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] DAILY WEATHER AVERAGE - AUGUST 27 [ \u2190 Previous Day ] } window.print(); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); return $(this).text().replace(\"2015\", \"\"); $('.datepicker-switch').text(function () { }); window.location = url; var url = \"/weather/weatherdaily.php3?s=725373&\" + pieces + \"&citynameLivonia%2C+Michigan%2C+United+States+of+America&set=\"; var pieces = tosplit.replace(/(.*?)-(.*?)-(.*?)/,\"month=$2&theday=$3\"); var tosplit = event.format(); $('#datepicker').datepicker().on('changeDate', function (event) { }); endDate: \"2015-12-31\", startDate: \"2015-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 7.6 mi Wind Direction SE (134.5 \u00b0) Weather Element Total Heating Degree Days 1.5 (Base 18.3) Cooling Degree Days 7.1 (Base 18.3) Growing Degree Days 21.2 (Base 10) Total Years on Record: 19",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

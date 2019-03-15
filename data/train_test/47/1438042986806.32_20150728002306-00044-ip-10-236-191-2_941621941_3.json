@@ -1,0 +1,50 @@
+{
+    "relation": [
+        [
+            "Field Name",
+            "FILEID",
+            "FILETYPE",
+            "STUSAB",
+            "CHARITER",
+            "SEQUENCE",
+            "LOGRECNO",
+            "Field # 7 and up"
+        ],
+        [
+            "Description",
+            "File Identification",
+            "File Type",
+            "State/U. S. - Abbreviation (USPS)",
+            "Character Iteration",
+            "Sequence Number",
+            "Logical Record Number",
+            "Estimates"
+        ],
+        [
+            "Field Size",
+            "6 Characters",
+            "6 Characters",
+            "2 Characters",
+            "3 Characters",
+            "4 Characters",
+            "7 Characters",
+            "Various"
+        ]
+    ],
+    "pageTitle": "2. How to Use the ACS Summary File - ACS 2010 5-Year Summary File: Technical Documentation - Survey ACS 2010 (5-Year Estimates) - Social Explorer",
+    "title": "",
+    "url": "https://www.socialexplorer.com/data/ACS2010_5yr/documentation/8e3c4281-bf9f-4995-ad91-83e5c77aabb3",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986806.32/warc/CC-MAIN-20150728002306-00044-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 941634711,
+    "recordOffset": 941621941,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The following table provides the layout of the geography file: The geography files contain geographic information for an ACS tabulated area, including the name of the area. One variable on the file, called LOGRECNO, is the logical record number and is used to link the level of geography to the estimate and margin of error files. An example of how to use LOGRECNO is discusses in Chapter 2.5. Geography files are named using the following convention: There is a geography file that comes with the estimate and margin of error files. This file begins with a \"g\" and is an ASCII file using either a position based format or comma delimited format. A geography file exists for each state or state level equivalent. back to top 2.4. Geography File To find the sequence number associated with the table B08406, for example, a user must open and look for that Table ID in the Sequence Number and Table Number Lookup file. Shown below is a screenshot of this file, for the 2010 ACS 1-year, opened to where the \"tblid\" is B08406. The next column in the file, \"seq\", shows that this",
+    "textAfterTable": "LOGRECNO Logical Record Number 7 14 All Summary Levels GEOGRAPHIC AREA CODES \u00a0 \u00a0 \u00a0 \u00a0 US US 1 21 10 REGION Census Region 1 22 20 DIVISION Census Division 1 23 30 STATECE State (Census Code) 2 24 Reserved for future use STATE State (FIPS Code) 2 26 040, 050, 060, 160, 230, 312, 352, 500, 795, 950, 960, 970 COUNTY County of current residence 3 28 050, 060 COUSUB County Subdivision (FIPS) 5 31 60 PLACE Place (FIPS Code) 5 36 160, 312, 352 TRACT Census Tract 6 41 Reserved for future use BLKGRP Block Group 1 47 Reserved for future use CONCIT Consolidated City 5 48 Reserved for future use AIANHH American Indian Area/Alaska Native Area/ Hawaiian Home Land (Census) 4 53 250 AIANHHFP American Indian Area/Alaska Native Area/ Hawaiian Home Land (FIPS) 5 57 Reserved for future use AIHHTLI American Indian Trust Land/ Hawaiian Home Land Indicator 1 62 Reserved for future use AITSCE American Indian Tribal Subdivision (Census) 3 63 Reserved for future use AITS American Indian Tribal Subdivision (FIPS) 5 66 Reserved for future use ANRC Alaska Native Regional Corporation (FIPS) 5 71 230 CBSA Metropolitan and Micropolitan Statistical Area 5 76 310, 312, 314 CSA Combined Statistical Area 3 81 330",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

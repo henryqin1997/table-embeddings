@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Datum",
+            "18. Dez. 2006",
+            "16. Nov. 2010",
+            "29. Mai 2014",
+            "21. Nov. 2014",
+            "9. M\ufffdrz 2015"
+        ],
+        [
+            "Code",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "FPAY",
+            "AS"
+        ],
+        [
+            "Ereignis",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment",
+            "Assignment"
+        ],
+        [
+            "Beschreibung",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Owner name: STIFEL FINANCIAL CORP., MISSOURI Free format text: SECURITY INTEREST;ASSIGNORS:EXAR CORPORATION;CADEKA MICROCIRCUITS, LLC;REEL/FRAME:033062/0123 Effective date: 20140527",
+            "Year of fee payment: 12",
+            "Owner name: CADEKA MICROCIRCUITS, LLC, COLORADO Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:STIFEL FINANCIAL CORP.;REEL/FRAME:035168/0384 Effective date: 20150309 Owner name: EXAR CORPORATION, CALIFORNIA Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:STIFEL FINANCIAL CORP.;REEL/FRAME:035168/0384 Effective date: 20150309"
+        ]
+    ],
+    "pageTitle": "Patent US6580258 - Control circuit and method for maintaining high efficiency over broad ... - Google Patente",
+    "title": "",
+    "url": "http://www.google.de/patents/US6580258?hl=de",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043058631.99/warc/CC-MAIN-20150728002418-00160-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 484803195,
+    "recordOffset": 484738750,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{38231=The present application is a continuation of application Ser. No. 09/395,895, filed Sep. 14, 1999, now U.S. Pat. No. 6,304,066, which is a continuation of application Ser. No. 08/978,167, filed Nov. 26, 1997, now U.S. Pat. No. 5,994,885, which is a division of application Ser. No. 08/799,467, filed Feb. 13, 1997, now U.S. Pat. No. 5,731,694, which is a continuation of application Ser. No. 08/634,688, filed Apr. 18, 1996 now abandoned, which is a continuation of application Ser. No. 08/476,232, filed Jun. 07, 1995 now abandoned, which is a division of application Ser. No. 08/036,047, filed Mar. 23, 1993, now U.S. Pat. No. 5,481,178., 64551=In accordance with the present invention, control circuit 70 maintains MOSFETS 16 and 17 OFF over periods of time when the output current is low enough to allow the output capacitor COUT to maintain the output voltage substantially at the regulated voltage. Typically, such periods of OFF time, wherein both MOSFETS 16 and 17 are maintained OFF even though the switching regulator is providing a regulated voltage, can extend from less than 100 microseconds to over a few seconds (respectively corresponding to a few switch cycles to over one-hundred-thousand switch cycles for a switching frequency of 100 kiloHertz). Such OFF times typically allow high efficiency to be obtained (e.g., over 90%) over an output current range in excess of 100:1. Because other components in addition the switching transistors can also be maintained OFF during such periods, even higher efficiencies can typically be obtained., 90891=Whenever P-MOSFET 16 is ON, its gate-to-source voltage also appears across MOSFET 334, turning MOSFET 334 ON. This pulls the drain of MOSFET 334 HIGH, and inhibits N-drive 27. Following a LOW-to-HIGH VSWB transition, the voltage on the gate of P-MOSFET 16 must rise to a level where MOSFET 334 is conducting less than current source 335 before the drain voltage of MOSFET 334 falls and allows the N-MOSFET 17 to be turned ON. Current IM1 is purposely made small so that the gate of MOSFET 334 must rise to within 2 volts of the input voltage VIN before the drive is enabled, ensuring that the P-MOSFET is completely OFF when N-MOSFET 17 turns ON. In a similar manner, MOSFET 332 and current source IM2 333 ensure that the N-MOSFET 17 is completely OFF when the P-MOSFET 16 turns ON. This prevents simultaneous conduction regardless of the driver speeds or MOSFET sizes, ensuring maximum possible efficiency. This feature of the present embodiment is discussed in more detail in copending commonly-assigned U.S. patent application (LT-20) Ser. No. 07/893,523, filed Jun. 4, 1992, which is hereby incorporated by reference in its entirety. If desired, the control circuit of the present invention can also include circuitry for accommodating transient switch signals as described in copending commonly-assigned U.S. patent application (LT-20CIP) Ser. No. 08/035,423, filed concurrently herewith, which is also hereby incorporated by reference in its entirety.}",
+    "textBeforeTable": "Patentzitate One skilled in the art will thus appreciate that the present invention can be practiced by other than the described embodiments, which are presented for purposes of illustration and not of limitation, and the present invention is limited only by the claims which follow. Thus, a control circuit and method for maintaining high efficiency over broad current ranges in a switching regulator circuit has been provided. It will also be apparent that although the present invention has been discussed above with reference to FIGS. 1-10, wherein the power switches were either a pair of complementary MOSFETS (i.e., one p-channel and one n-channel) or a single p-channel MOSFET (FIG. 3), the present invention is applicable to other types of switches as well. For example, the power switch could include a pair of N-channel MOSFETS, a pair of P-channel MOSFETS, or bipolar junction transistors. It will be apparent to those of ordinary skill in the art that although the present invention has been discussed above with reference to a hysteretic voltage comparator for generating the sleep mode control signal to cause the switching regulator to go into and awake from the sleep-mode, other means for performing the same function are also possible. For example, if desired, the sleep mode control signal could be generated in response to a monitored output current. Furthermore, the switching regulator could be taken out of the sleep mode a predetermined time period after going",
+    "textAfterTable": "US3978393 * 21. Apr. 1975 31. Aug. 1976 Burroughs Corporation High efficiency switching regulator US3992638 22. Febr. 1974 16. Nov. 1976 Silec-Semi-Conducteurs Synchronous switch US4013939 30. Dez. 1974 22. M\ufffdrz 1977 Trw Inc. Multiple feedback control apparatus for power conditioning equipment US4035710 20. Okt. 1975 12. Juli 1977 International Business Machines Corporation Pulse width modulated voltage regulator-converter/power converter having means for improving the static stability characteristics thereof US4071884 14. Juni 1976 31. Jan. 1978 Micro Components Corporation Integrated circuit high voltage DC converter US4160288 17. Mai 1978 3. Juli 1979 Communications Satellite Corp. Active filter circuit for regulated dc to dc power supplies US4326245 23. Febr. 1981 20. Apr. 1982 Siemens Corporation Current foldback circuit for a DC power supply US4395675 22. Okt. 1981 26. Juli 1983 Bell Telephone Laboratories, Incorporated Transformerless noninverting buck boost switching regulator US4428015",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

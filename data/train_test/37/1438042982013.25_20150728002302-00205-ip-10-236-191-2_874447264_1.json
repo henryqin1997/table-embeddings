@@ -1,0 +1,72 @@
+{
+    "relation": [
+        [
+            "Source Package",
+            "mariadb-10.0 (PTS)",
+            "",
+            "",
+            "",
+            "mysql-5.1 (PTS)",
+            "",
+            "mysql-5.5 (PTS)",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Release",
+            "jessie",
+            "jessie (security)",
+            "stretch",
+            "sid",
+            "squeeze, squeeze (security)",
+            "squeeze (lts)",
+            "wheezy",
+            "wheezy (security)",
+            "stretch, sid, jessie",
+            "jessie (security)"
+        ],
+        [
+            "Version",
+            "10.0.16-1",
+            "10.0.20-0+deb8u1",
+            "10.0.19-1",
+            "10.0.20-3",
+            "5.1.73-1",
+            "5.1.73-1+deb6u1",
+            "5.5.40-0+wheezy1",
+            "5.5.44-0+deb7u1",
+            "5.5.43-0+deb8u1",
+            "5.5.44-0+deb8u1"
+        ],
+        [
+            "Status",
+            "fixed",
+            "fixed",
+            "fixed",
+            "fixed",
+            "fixed",
+            "fixed",
+            "fixed",
+            "fixed",
+            "fixed",
+            "fixed"
+        ]
+    ],
+    "pageTitle": "CVE-2014-2440",
+    "title": "",
+    "url": "https://security-tracker.debian.org/tracker/CVE-2014-2440",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982013.25/warc/CC-MAIN-20150728002302-00205-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 874455466,
+    "recordOffset": 874447264,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "CVE-2014-2440",
+    "textAfterTable": "stretch 10.0.19-1 fixed sid 10.0.20-3 fixed mysql-5.1 (PTS) squeeze, squeeze (security) 5.1.73-1 fixed squeeze (lts) 5.1.73-1+deb6u1 fixed mysql-5.5 (PTS) wheezy 5.5.40-0+wheezy1 fixed wheezy (security) 5.5.44-0+deb7u1 fixed stretch, sid, jessie 5.5.43-0+deb8u1 fixed jessie (security) 5.5.44-0+deb8u1 fixed The information below is based on the following data on fixed versions. Package Type Release Fixed Version Urgency Origin Debian Bugs mariadb-10.0 source (unstable) (not affected) mariadb-5.5 source (unstable) 5.5.37-1 medium 745330 mysql-5.1 source (unstable) (not affected) mysql-5.5 source (unstable) 5.5.37-1 medium 744910 mysql-5.5 source wheezy 5.5.37-0+wheezy1 medium DSA-2919-1 percona-xtradb-cluster-5.5 source (unstable) 5.5.37-25.10+dfsg-1 medium Notes - mariadb-10.0 <not-affected> (Fixed before initial upload) - mysql-5.1 <not-affected> (Only affects Mysql 5.5/5.6) this is the same issue as CVE-2014-0001, see http://www.openwall.com/lists/oss-security/2014/09/11/23 Search for package or bug name: Reporting problems Home - Debian Security - Source (SVN)",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

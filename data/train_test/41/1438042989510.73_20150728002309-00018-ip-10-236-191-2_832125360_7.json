@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust"
+        ],
+        [
+            "Average",
+            "78.3 \u00b0F",
+            "35 \u00b0F",
+            "22 %",
+            "30.02 in",
+            "5.7 mph",
+            ""
+        ],
+        [
+            "High",
+            "89.6 \u00b0F (2:35 pm)",
+            "39.2 \u00b0F (12:35 am)",
+            "37 % (2:55 am)",
+            "30.05 in (10:35 am)",
+            "13.8 mph (1:35 pm)",
+            "19.6 mph (1:35 pm)"
+        ],
+        [
+            "Low",
+            "66.2 \u00b0F (2:55 am)",
+            "30.2 \u00b0F (7:55 pm)",
+            "14 % (5:55 pm)",
+            "29.98 in (12:35 am)",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Placerville, California [July 13, 2013] - Weather Records By Hour (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherhourly.php3?s=88257&date=2013-07-13&cityname=Placerville%2C+California%2C+United+States+of+America&units=",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989510.73/warc/CC-MAIN-20150728002309-00018-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 832141754,
+    "recordOffset": 832125360,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] WEATHER ALMANAC - JULY 13, 2013 [ \u2190 Previous Day ] } PrintUrl('printIframe', 'http://www.weatherbase.com/weather/weatherhourly-print.php3?s=88257&date=2013-07-13&cityname=Placerville%2C+California%2C+United+States+of+America&units='); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); window.location = url; var url = \"/weather/weatherhourly.php3?s=88257&date=\" + event.format() + \"&citynamePlacerville%2C+California%2C+United+States+of+America&set=\"; $('#datepicker').datepicker().on('changeDate', function (event) { }); startView: 2 endDate: \"2015-08-01\", startDate: \"2009-07-10\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 10 mi Wind Direction SSE (160.7 \u00b0) Weather Element Total Precipitation --- Cooling Degree Days 12.9 (Base 65) Growing Degree Days 27.9 (Base 50) Averaged from 71 records on July 13, 2013",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,222 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2011-12",
+            "2012-13",
+            "2013-14",
+            "2014-15",
+            "CAREER"
+        ],
+        [
+            "School",
+            "Marquette",
+            "Marquette",
+            "Marquette",
+            "Marquette",
+            ""
+        ],
+        [
+            "Class",
+            "Fr",
+            "So",
+            "Jr",
+            "Sr",
+            ""
+        ],
+        [
+            "GP",
+            "24",
+            "35",
+            "31",
+            "31",
+            "121"
+        ],
+        [
+            "GS",
+            "0",
+            "31",
+            "19",
+            "27",
+            "77"
+        ],
+        [
+            "Min",
+            "108.0",
+            "456.0",
+            "417.0",
+            "883.0",
+            "1864.0"
+        ],
+        [
+            "FGM",
+            "5",
+            "32",
+            "37",
+            "97",
+            "171"
+        ],
+        [
+            "FGA",
+            "13",
+            "97",
+            "98",
+            "198",
+            "406"
+        ],
+        [
+            "FG%",
+            ".385",
+            ".330",
+            ".378",
+            ".490",
+            ".421"
+        ],
+        [
+            "3FGM",
+            "0",
+            "12",
+            "5",
+            "16",
+            "33"
+        ],
+        [
+            "3FGA",
+            "0",
+            "42",
+            "26",
+            "46",
+            "114"
+        ],
+        [
+            "3P%",
+            ".000",
+            ".286",
+            ".192",
+            ".348",
+            ".289"
+        ],
+        [
+            "FTM",
+            "6",
+            "17",
+            "19",
+            "47",
+            "89"
+        ],
+        [
+            "FTA",
+            "9",
+            "30",
+            "26",
+            "85",
+            "150"
+        ],
+        [
+            "FT%",
+            ".667",
+            ".567",
+            ".731",
+            ".553",
+            ".593"
+        ],
+        [
+            "FIC",
+            "17",
+            "95",
+            "110",
+            "226",
+            "448"
+        ],
+        [
+            "OFF",
+            "7",
+            "26",
+            "38",
+            "68",
+            "139"
+        ],
+        [
+            "DEF",
+            "13",
+            "74",
+            "64",
+            "110",
+            "261"
+        ],
+        [
+            "Reb",
+            "20",
+            "100",
+            "102",
+            "178",
+            "400"
+        ],
+        [
+            "Ast",
+            "4",
+            "30",
+            "32",
+            "54",
+            "120"
+        ],
+        [
+            "Stl",
+            "4",
+            "22",
+            "31",
+            "35",
+            "92"
+        ],
+        [
+            "Blk",
+            "1",
+            "12",
+            "6",
+            "12",
+            "31"
+        ],
+        [
+            "PF",
+            "8",
+            "63",
+            "59",
+            "77",
+            "207"
+        ],
+        [
+            "TO",
+            "8",
+            "28",
+            "30",
+            "64",
+            "130"
+        ],
+        [
+            "Pts",
+            "16",
+            "93",
+            "98",
+            "257",
+            "464"
+        ]
+    ],
+    "pageTitle": "Juan Anderson Player Profile, Marquette, NCAA Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Juan_Anderson/Summary/30442",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00082-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 20671087,
+    "recordOffset": 20641980,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{20890=Draft Entry: 2015 NBA Draft, 21612=Born: Apr 10, 1993 (22 years old)}",
+    "TableContextTimeStampAfterTable": "{31512=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NCAA Season Stats - Per Game College: Marquette (2015) NCAA More NBA Transactions \u00bb Jun 25, 2015 - Juan Anderson went undrafted in the 2015 NBA Draft making him an Unrestricted FA. NBA Transactions 0 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "NCAA Season Stats - Totals Season School Class GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2011-12 Marquette Fr 24 0 108.0 5 13 .385 0 0 .000 6 9 .667 17 7 13 20 4 4 1 8 8 16 2012-13 Marquette So 35 31 456.0 32 97 .330 12 42 .286 17 30 .567 95 26 74 100 30 22 12 63 28 93 2013-14 Marquette Jr 31 19 417.0 37 98 .378 5 26 .192 19 26 .731 110 38 64 102 32 31 6 59 30 98 2014-15 Marquette Sr 31 27 883.0 97 198 .490 16 46 .348 47 85 .553 226 68 110 178 54 35 12 77 64 257 CAREER \u00a0 \u00a0 121 77 1864.0 171 406 .421 33 114 .289 89 150 .593 448 139 261 400 120 92 31 207 130 464 NCAA Season Stats - Misc Stats",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

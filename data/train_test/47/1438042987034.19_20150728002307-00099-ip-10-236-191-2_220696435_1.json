@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "4",
+            "11 (2)",
+            "18",
+            "25"
+        ],
+        [
+            "M",
+            "",
+            "5",
+            "12",
+            "19",
+            "26"
+        ],
+        [
+            "T",
+            "",
+            "6",
+            "13",
+            "20",
+            "27"
+        ],
+        [
+            "W",
+            "",
+            "7",
+            "14",
+            "21",
+            "28"
+        ],
+        [
+            "T",
+            "1",
+            "8",
+            "15",
+            "22",
+            "29"
+        ],
+        [
+            "F",
+            "2",
+            "9",
+            "16",
+            "23",
+            "30"
+        ],
+        [
+            "S",
+            "3",
+            "10",
+            "17",
+            "24",
+            "31"
+        ]
+    ],
+    "pageTitle": "DVB tools / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/dvbtools/mailman/dvbtools-cvs/?viewmonth=200401",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987034.19/warc/CC-MAIN-20150728002307-00099-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 220712386,
+    "recordOffset": 220696435,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun \u00a0 May \u00a0 Apr \u00a0 Mar \u00a0 Feb \u00a0 Jan (1) 2009 Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun \u00a0 May \u00a0 Apr \u00a0 Mar (1) Feb \u00a0 Jan \u00a0 2008 Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep (5) Aug \u00a0 Jul \u00a0 Jun \u00a0 May (2) Apr \u00a0 Mar (26) Feb \u00a0 Jan \u00a0 2007 Dec \u00a0 Nov \u00a0 Oct",
+    "textAfterTable": "Showing 2 results of 2 Flat | Threaded [dvbtools-cvs] dvbstream dvbstream.c,1.11,1.12 rtp.h,1.1.1.1,1.2 From: <linuxstb@us...> - 2004-01-11 12:33:33 Update of /cvsroot/dvbtools/dvbstream In directory sc8-pr-cvs1:/tmp/cvs-serv27146 Modified Files: dvbstream.c rtp.h Log Message: Code reformatting, simple -analyse option, plus (from Nico) a patch to add -o:file.ts functionality to output (possibly overlapping) sets of PIDs to seperate named files Index: dvbstream.c =================================================================== RCS file: /cvsroot/dvbtools/dvbstream/dvbstream.c,v retrieving revision 1.11 retrieving revision 1.12 diff -C2 -d -r1.11 -r1.12 *** dvbstream.c\t15 Nov 2003 22:04:54 -0000\t1.11 --- dvbstream.c\t11 Jan 2004 12:33:30 -0000\t1.12 *************** *** 24,27 **** --- 24,28 ---- */ + // Linux includes: #include <stdio.h> *************** *** 134,138 **** // There seems to be a limit of 8 simultaneous filters in the driver ! #define MAX_CHANNELS 8 void set_ts_filt(int fd,uint16_t pid, dmx_pes_type_t pestype) --- 135,145 ---- // There seems to be a limit of 8 simultaneous filters in the driver ! #ifdef NEWSTRUCT ! #define MAX_CHANNELS 16 ! #else ! #define MAX_CHANNELS 8 ! #endif ! ! void set_ts_filt(int fd,uint16_t pid, dmx_pes_type_t pestype) *************** *** 140,143 **** --- 147,151 ---- struct dmx_pes_filter_params pesFilterParams; + fprintf(stderr,\"Setting filter for PID %d\\n\",pid); pesFilterParams.pid = pid; pesFilterParams.input = DMX_IN_FRONTEND; *************** *** 190,193 **** --- 198,202 ---- int fd[MAX_CHANNELS];",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Date",
+            "Feb 5, 1992",
+            "Nov 9, 1995",
+            "Nov 8, 2004",
+            "Nov 10, 2008",
+            "May 18, 2011",
+            "Sep 28, 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: SUNDISK CORPORATION A CORP. OF DELAWARE, CALIFORN Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNOR:NORMAN, ROBERT D.;REEL/FRAME:006013/0607 Effective date: 19911125 Owner name: WESTERN DIGITAL CORPORATION A CORP. OF DELAWARE, Free format text: ASSIGNMENT OF ASSIGNORS INTEREST.;ASSIGNORS:LOFGREN, KARL M.J.;THELIN, GREGORY B.;GUPTA, ANIL;REEL/FRAME:006013/0603;SIGNING DATES FROM 19911209 TO 19911218",
+            "Owner name: SANDISK CORPORATION, CALIFORNIA Free format text: CHANGE OF NAME;ASSIGNOR:SUNDISK CORPORATION;REEL/FRAME:007707/0512 Effective date: 19950828",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Owner name: SANDISK TECHNOLOGIES INC., TEXAS Effective date: 20110404 Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:SANDISK CORPORATION;REEL/FRAME:026299/0972",
+            "Year of fee payment: 12"
+        ]
+    ],
+    "pageTitle": "Patent US6230233 - Wear leveling techniques for flash EEPROM systems - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US6230233?ie=ISO-8859-1&dq=7,172,682",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00321-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 485627751,
+    "recordOffset": 485578272,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{72909=It is this latter technique that is used in a specific implementation which will be described with respect to FIGS. 3-6. FIG. 3 provides an outline of a specific system in which this wear leveling technique is employed. The memory controller 13 includes appropriate circuits 43 for interfacing with the computer system bus 15, a controller microprocessor 45, volatile buffer memory 47 for temporarily storing data being written to or read from the memory, and control logic circuitry 49. These circuit units are interconnected and under the control of the microprocessor 45. The control logic circuitry 49 includes the memory system address translation table 27\u2032, corresponding to the table 27 described with respect to FIG. 2. The EEPROM banks 11 are formed of a number of individual integrated circuit chips, such as circuit chips 51 and 53, which are connected to the controller logic 49 over circuits 55. The number of EEPROM circuit chips employed depends upon storage capacity desired for the memory system. Further details of the system illustrated in FIG. 3 can be had by reference to a co-pending patent application entitled \u201cDevice and Method for Controlling Solid-State Memory System\u201d, Ser. No. 07/736,733, filed Jul. 26, 1991, naming Robert D. Norman, Karl M. J. Lofgren, Jeffrey Donald Stai, Anil Gupta, and Sanjay Mehrotra as inventors.}",
+    "textBeforeTable": "Patent Citations Although the various aspects of the present invention have been described to its preferred embodiments, it will be understood that the invention is entitled to protection within the full scope of the appended claims. Alternatively, a spare bank of EEPROM memory need not be designated for the wear leveling process, thus freeing up another bank for storing data. Data can simply be swapped between the banks experiencing the maximum and minimum cycles to-date, and the translation table 27\u2032 then being updated to redirect data accordingly. The controller buffer memory 47 can be used for temporary storage of data from the maximum and minimum use banks as data is being swapped between them. The count of the most heavily used bank is then remembered and used in the comparison step 35 when determining whether the imbalance is sufficient to justify the wear leveling process being performed. However, since the buffer memory 47 is usually preferred to be RAM, any power failure or significant power glitches occurring during the wear leveling process will cause data to be lost. The use of the spare bank in the manner described above will prevent such a data loss since the data of each block being swapped will remain in EEPROM memory at all times. Finally, as indicated by a step 101, the translation table 27\u2032 is updated so that blocks of data within the swapped banks are redirected to those new",
+    "textAfterTable": "US4803707 Dec 21, 1987 Feb 7, 1989 Ncr Corporation Nonvolatile electronic odometer with excess write cycle protection US4899272 Oct 23, 1987 Feb 6, 1990 Chips & Technologies, Inc. Addressing multiple types of memory devices US4922456 Apr 29, 1988 May 1, 1990 Scientific-Atlanta, Inc. Method of reducing wearout in a non-volatile memory with double buffer US4924375 Oct 23, 1987 May 8, 1990 Chips And Technologies, Inc. Page interleaved memory access US4943962 Oct 28, 1988 Jul 24, 1990 Kabushiki Kaisha Toshiba Nonvolatile semiconductor memory having page mode programming function US4947410 Feb 23, 1989 Aug 7, 1990 General Motors Corporation Method and apparatus for counting with a nonvolatile memory US4953073 Feb 6, 1986 Aug 28, 1990 Mips Computer Systems, Inc. Cup chip having tag comparator and address translation unit on chip and connected to off-chip cache and main memories US5034926 Aug 10, 1989 Jul 23, 1991 Kabushiki Kaisha Toshiba Non-volatile semiconductor",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

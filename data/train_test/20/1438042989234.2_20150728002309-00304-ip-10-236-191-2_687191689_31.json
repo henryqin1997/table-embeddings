@@ -1,0 +1,51 @@
+{
+    "relation": [
+        [
+            "",
+            "Neighborhood Type",
+            "Population",
+            "Population Density",
+            "Median Age",
+            "People per Household",
+            "Median Household Income",
+            "Average Income per Capita"
+        ],
+        [
+            "City",
+            "Small Town",
+            "96",
+            "11",
+            "51.7",
+            "1.6",
+            "14,223",
+            "10,992"
+        ],
+        [
+            "County",
+            "",
+            "20,784",
+            "22",
+            "43.1",
+            "2.5",
+            "43,273",
+            "24,706"
+        ]
+    ],
+    "pageTitle": "Altair, TX Real Estate Overview | Real Living Real Estate",
+    "title": "",
+    "url": "http://www.realliving.com/TX/Altair",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 31,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989234.2/warc/CC-MAIN-20150728002309-00304-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 687210035,
+    "recordOffset": 687191689,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{41832=The average high temperature in July is 95 degrees, with an average low temperature in January of 37.1 degrees. The average rainfall is approximately 42.8 inches per year, with 0.3 inches of snow per year., 43961=Real Living The Hatmaker Group 1021 61st Street, Suite 100-B Galveston, TX 409-744-4622 Real Estate Agents & Staff}",
+    "textBeforeTable": "Education near Altair, TX \u00a0 Demographics \u00a0 \u00a0\u00a0 \u00a0 Schools \u00a0 Altair Schools and Demographics 30-day change # Active listings 2 Median sales price N/A Altair Real Estate Market Conditions } } }); $(this).show(); links.each(function () { toggle.html(lessText); else { } resetSchools(id); toggle.html(moreText); if (toggle.html().indexOf(\"Less\") > -1) { var moreText = \"More \u00bb\"; var lessText = \"Less \u00ab\"; var toggle = $(\"#\" + id + \"-toggle\"); var links = $(\"#\" + id + \" tr\"); function toggleSchools(id) { } $(\"#\" + id + \"-toggle\").hide(); else } }); i++; $(this).hide(); if (i > 5) links.each(function () { if (links && links.length > 6) { links = $(\"#\" + id + \" tr\"); var i = 0; function resetSchools(id) { }); var d = $(\".remc-list li.c0 div\"); if (d.length) d.html().indexOf(\"-\") != -1 ? $(\".remc-list li.c0\").addClass(\"neg\") : $(\".remc-list li.c0\").addClass(\"pos\") function a(b) { var c = $(\"#schools-demographics-tab-container\"); $(\".search_tab_on\", c).removeClass(\"search_tab_on\").addClass(\"search_tab\"); $('div[id$=\"-tab-section\"]').hide(); $(\"#\" + b + \"-section\").show(); $(\"#\" + b, c).parent(\":first\").removeClass(\"search_tab\").addClass(\"search_tab_on\") } $(\"#demographics-tab-section\").hide(); $(\"table.community-grid\").each(function () { $(\"tbody tr:even\", this).addClass(\"alt-row\") }); $(\"#schools-tab\").click(function () { a($(this).attr(\"id\")) }); $(\"#demographics-tab\").click(function () { a($(this).attr(\"id\")) });",
+    "textAfterTable": "Grades Students P/T Ratio ZIP Columbus Elementary School PK - 05 725 13.7 78934 Eagle Lake Pri PK - 03 327 16.4 77434 Garwood Elementary School PK - 06 146 12.9 77442 Sheridan Elementary School PK - 06 91 9.6 77475 More \u00bb Middle Schools near Altair, TX Grades Students P/T Ratio ZIP Columbus Junior High School 06 - 08 347 12.5 78934 Eagle Lake Intermediate School 04 - 06 206 13.4 77434 Rice Junior High School 07 - 08 182 11.3 77412 West Brazos Junior High School 07 - 09 439 13.1",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

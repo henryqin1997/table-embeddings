@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "",
+            "T. Jones",
+            "T. Eifert",
+            "D. Daniels",
+            "R. Toma",
+            "C. Brown",
+            "T. Riddick"
+        ],
+        [
+            "REC",
+            "5",
+            "3",
+            "2",
+            "2",
+            "1",
+            "1"
+        ],
+        [
+            "YDS",
+            "55",
+            "22",
+            "36",
+            "13",
+            "50",
+            "12"
+        ],
+        [
+            "AVG",
+            "11.00",
+            "7.33",
+            "18.00",
+            "6.50",
+            "50.00",
+            "12.00"
+        ],
+        [
+            "TD",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+        ]
+    ],
+    "pageTitle": "College Football Box Scores | KSL.com",
+    "title": "",
+    "url": "http://www.ksl.com/?nid=925&page=_sport_football_competition:32034/sport/ncaaf",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00139-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 549724127,
+    "recordOffset": 549693237,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "#11 Notre Dame at #19 Oklahoma (\u0000Gaylord Family - Oklahoma Memorial Stadium, Norman, Oklahoma) #11 NOTRE DAME 30 #19 OKLAHOMA 13 FINAL On Off | Auto Refresh: College Football Box Scores beta --> window.onload=timedRefresh(30000); } document.getElementById('on').style.cursor = \"pointer\"; document.getElementById('on').innerHTML = \"On\"; document.getElementById('off').innerHTML = \"Off\"; clearTimeout(t); function stopCount(timeoutPeriod) { } t = setTimeout(\"saveScroll()\",timeoutPeriod); function timedRefresh(timeoutPeriod) { $(document).ready(function(){ loadScroll() }); var t; // add onload=\"loadScroll()\" onunload=\"saveScroll()\" to the opening BODY tag } } window.scrollTo(parseInt(ar[0]), parseInt(ar[1])) if(ar.length == 2){ var ar = inf.split(\"_\") if(!inf){ return } inf=getCookie(cookieName) function loadScroll(){ // added function } location.reload(true) setCookie(cookieName,Data,expdate) Data=x + \"_\" + y var y = (document.documentElement.scrollTop) var x = (document.pageXOffset?document.pageXOffset:document.documentElement.scrollLeft) expdate.setTime (expdate.getTime() + (2*60*1000)); // expiry date var expdate = new Date () function saveScroll(){ // added function } \"; expires=Thu, 01-Jan-00 00:00:01 GMT\" ((domain == null) ? \"\" : \"; domain=\" + domain) + ((path == null) ? \"\" : \"; path=\" + path) + document.cookie = name + \"=\" + function deleteCookie(name,path,domain){",
+    "textAfterTable": "7 3 2nd Quarter 5:58 ND - Kyle Brindza 34 yd. field goal 10 3 0:43 OKLA - Michael Hunnicutt 30 yd. field goal 10 6 4th Quarter 13:57 ND - Kyle Brindza 44 yd. field goal 13 6 9:10 OKLA - Blake Bell 1 yd. rush (Michael Hunnicutt kick) 13 13 5:05 ND - Everett Golson 1 yd. rush (Kyle Brindza kick) 20 13 3:22 ND - Kyle Brindza 46 yd. field goal 23 13 1:36 ND - Theo Riddick 15 yd. rush (Kyle Brindza kick) 30 13",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

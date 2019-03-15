@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "date",
+            "3/17/2014",
+            "4/2/2014",
+            "7/23/2014",
+            "10/26/2014",
+            "11/4/2014",
+            "12/27/2014"
+        ],
+        [
+            "city",
+            "Winnipeg",
+            "Winnipeg",
+            "Denver",
+            "Philadelphia",
+            "Minneapolis",
+            "Winnipeg"
+        ],
+        [
+            "state",
+            "MB",
+            "MB",
+            "CO",
+            "PA",
+            "MN",
+            "MB"
+        ],
+        [
+            "venue",
+            "Pyramid Cabaret",
+            "Pyramid Cabaret",
+            "Marquis Theater",
+            "Union Transfer",
+            "7th Street Entry",
+            "Pyramid Cabaret"
+        ]
+    ],
+    "pageTitle": "The Revival Tour Concert Tickets | SeatGeek",
+    "title": "",
+    "url": "https://seatgeek.com/the-revival-tour-tickets",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986022.41/warc/CC-MAIN-20150728002306-00313-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 880134491,
+    "recordOffset": 880108155,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "2015 Tour Dates Low price $57 High price $57 Average Price $57 Past 12 Months Find Tickets The Revival Tour Ticket Prices } ); document.getElementById('location-autocomplete') }), } } window.location.href = window.location.pathname + '?lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id } else { window.location.href = window.location.href + '&lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id; if(window.location.href.match('/search')) { SG.GA.sendEvent('team-show-page', 'location-input', { label: selection.term }); onSelect: function(selection) { }, return (data.results && data.results.location) ? data.results.location : [] dataExtractionFunction: function(data) { placeholder: 'Search by City...', postSelectLoad: true, limit: 3, contentKey: 'term', idKey: 'id', queryString: \"types[]=location\", source: \"/autocomplete\", React.createFactory(Autocomplete)({ React.render( if (document.getElementById('location-autocomplete')) {",
+    "textAfterTable": "7/23/2014 Denver CO Marquis Theater 10/26/2014 Philadelphia PA Union Transfer 11/4/2014 Minneapolis MN 7th Street Entry 12/27/2014 Winnipeg MB Pyramid Cabaret 2013 date city state venue 2/8/2013 Oklahoma City OK J.J.s Saloon 3/18/2013 Dallas TX Trees 3/19/2013 Houston TX Fitzgerald's 3/20/2013 New Orleans LA Tipitinas 3/21/2013 Pensacola FL Vinyl Music Hall 3/22/2013 Orlando FL The Social 3/23/2013 Jacksonville FL Jack Rabbits 3/24/2013 Atlanta GA The Loft 3/25/2013 Asheville NC The Orange Peel 3/26/2013 Washington DC Black Cat 3/27/2013 Philadelphia PA Theatre of Living Arts 3/28/2013 New York NY Irving Plaza 3/29/2013 Boston MA Paradise Rock Club 3/30/2013 Brooklyn NY The Bell House 3/31/2013 Montreal QC Cabaret Du Mile-End 4/1/2013 Toronto ON Lee's Palace 4/2/2013",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

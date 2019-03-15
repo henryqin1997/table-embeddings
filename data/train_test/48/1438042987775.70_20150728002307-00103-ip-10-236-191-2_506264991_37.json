@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Value",
+            "OpenFailed",
+            "AuthenticationFailed",
+            "SetupFailed",
+            "UnknownProtocol",
+            "Refused"
+        ],
+        [
+            "Encoding",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        [
+            "Description",
+            "The client was unable to open the connection (e.g. a call to IceOpenConnection() failed). If the client is able to distinguish authentication or authorization errors from general errors, then the preferred reply is AuthenticationFailed for authorization errors.",
+            "Authentication or authorization of the connection or protocol setup was refused. This reply will be given only if the client is able to distinguish it from OpenFailed otherwise OpenFailed will be returned.",
+            "The client was unable to initiate the specified protocol on the connection (e.g. a call to IceProtocolSetup() failed).",
+            "The client does not recognize the requested protocol. (This represents a semantic error on the part of the answering party.)",
+            "The client was in the process of removing ICE_INITIATE_pname from its ICE_PROTOCOLS list when the client message was sent; the client no longer is willing to establish the specified ICE communication."
+        ]
+    ],
+    "pageTitle": "Inter-Client Exchange (ICE) Protocol",
+    "title": "",
+    "url": "http://www.ibiblio.org/pub/packages/solaris/sparc/libice.1.0.8.SPARC.64bit.Solaris.11.pkg",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 37,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987775.70/warc/CC-MAIN-20150728002307-00103-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 506536559,
+    "recordOffset": 506264991,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{23418=Copyright \u00a9 1993, 1994 X Consortium}",
+    "lastModified": "Mon, 31 Mar 2014 05:25:43 GMT",
+    "textBeforeTable": "Primitive Types pad(E,\u00a0b)\u00a0=\u00a0(b\u00a0-\u00a0(E\u00a0mod\u00a0b))\u00a0mod\u00a0b ICE messages contain several types of data. Byte order is negotiated in the initial connection messages; in general data is sent in the sender's byte order and the receiver is required to swap it appropriately. In order to support 64-bit machines, ICE messages are padded to multiples of 8 bytes. All messages are designed so that fields are \\*Qnaturally\\*U aligned on 16-, 32-, and 64-bit boundaries. The following formula gives the number of bytes necessary to pad E bytes to the next multiple of b: Message Format Complex Types Primitive Types Table of Contents Chapter\u00a03.\u00a0Data Types It should be noted that the party that initiates the connection isn't necessarily the same as the one that initiates setting up a subprotocol. For example, suppose party A connects to party B. Party A will issue the ConnectionSetup message and party B will respond with a ConnectionReply message. (The authentication steps are omitted here for brevity.) Typically, party A will also issue the ProtocolSetup message and expect a ProtocolReply from party B. Once the connection is established, however, either party may initiate the negotiation",
+    "textAfterTable": "Complex Types Type Name Type VERSION [Major, minor: CARD16] STRING LISTofLPCE LISTof<type> denotes a counted collection of <type>. The exact encoding varies depending on the context; see the encoding section. Message Format All ICE messages include the following information: Field Type Description CARD8 protocol major opcode CARD8 protocol minor opcode CARD32 length of remaining data in 8-byte units The fields are as follows: Protocol major opcode This specifies what subprotocol the message is intended for. Major opcode 0 is reserved for ICE control messages. The major opcodes of other subprotocols are dynamically assigned and exchanged at protocol negotiation time. Protocol minor opcode This specifies what protocol-specific operation is to be performed. Minor opcode 0 is reserved for Errors; other values are protocol-specific. Length of data in 8-byte units This specifies the length of the",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust",
+            "Precipitation"
+        ],
+        [
+            "Avg",
+            "31.7 \u00b0F",
+            "20 \u00b0F",
+            "64.7 %",
+            "30.09 in",
+            "7.9 mph",
+            "",
+            "0.61 in"
+        ],
+        [
+            "Avg High",
+            "40 \u00b0F",
+            "25.3 \u00b0F",
+            "80.1 %",
+            "30.26 in",
+            "14.2 mph",
+            "25.1 mph",
+            ""
+        ],
+        [
+            "Avg Low",
+            "23.1 \u00b0F",
+            "14.8 \u00b0F",
+            "50.1 %",
+            "29.96 in",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Record High",
+            "71.1 \u00b0F (2003)",
+            "37 \u00b0F (2002)",
+            "",
+            "30.80 in (2015)",
+            "26.5 mph (2015)",
+            "38 mph (2015)",
+            "0.61 in (2008)"
+        ],
+        [
+            "Record Low",
+            "-0.9 \u00b0F (2010)",
+            "-8 \u00b0F (2003)",
+            "15 % (2003)",
+            "29.32 in (2006)",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Kansas City - University of Missouri, Missouri - January 8th - Daily Weather Averages (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherdaily.php3?s=973432&month=1&theday=8&cityname=Kansas+City+-+University+of+Missouri%2C+Missouri%2C+United+States+of+America&units=",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986423.95/warc/CC-MAIN-20150728002306-00261-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 830547051,
+    "recordOffset": 830534150,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] DAILY WEATHER AVERAGE - JANUARY 8 [ \u2190 Previous Day ] } window.print(); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); return $(this).text().replace(\"2015\", \"\"); $('.datepicker-switch').text(function () { }); window.location = url; var url = \"/weather/weatherdaily.php3?s=973432&\" + pieces + \"&citynameKansas+City+-+University+of+Missouri%2C+Missouri%2C+United+States+of+America&set=\"; var pieces = tosplit.replace(/(.*?)-(.*?)-(.*?)/,\"month=$2&theday=$3\"); var tosplit = event.format(); $('#datepicker').datepicker().on('changeDate', function (event) { }); endDate: \"2015-12-31\", startDate: \"2015-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 8.8 mi Wind Direction S (183.5 \u00b0) Weather Element Total Heating Degree Days 33.5 (Base 18.3) Growing Degree Days 5.1 (Base 10) Total Years on Record: 21",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

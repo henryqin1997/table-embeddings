@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "Method",
+            "Method",
+            "Method",
+            "Method",
+            "Method",
+            "Method"
+        ],
+        [
+            "__init__",
+            "getAddress",
+            "getRegistrationInfo",
+            "registerAddress",
+            "unregisterAddress",
+            "_expireRegistration"
+        ],
+        [
+            "Undocumented",
+            "Return physical URL of server for logical URL of user.",
+            "Get registration info for logical URL.",
+            "Register the physical address of a logical URL.",
+            "Unregister the physical address of a logical URL.",
+            "Undocumented"
+        ]
+    ],
+    "pageTitle": "twisted.protocols.sip.InMemoryRegistry : API documentation",
+    "title": "",
+    "url": "http://twistedmatrix.com/documents/13.0.0/api/twisted.protocols.sip.InMemoryRegistry.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00038-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 246527838,
+    "recordOffset": 246519636,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Wed, 03 Apr 2013 09:21:36 GMT",
+    "textBeforeTable": "A simplistic registry for a specific domain. Implements interfaces: twisted.protocols.sip.ILocator, twisted.protocols.sip.IRegistry Part of twisted.protocols.sip View Source View In Hierarchy t.p.s.InMemoryRegistry : class documentation Go to the latest version of this document.",
+    "textAfterTable": "def __init__(self, domain): (source) Undocumented def getAddress(self, userURI): (source) from twisted.protocols.sip.ILocator Return physical URL of server for logical URL of user. Parameters logicalURL a logical URL. Returns Deferred which becomes URL or fails with LookupError. def getRegistrationInfo(self, userURI): (source) from twisted.protocols.sip.IRegistry Get registration info for logical URL. Returns Deferred of Registration object or failure of LookupError. def _expireRegistration(self, username): (source) Undocumented def registerAddress(self, domainURL, logicalURL, physicalURL): (source) from twisted.protocols.sip.IRegistry Register the physical address of a logical URL. Returns Deferred of Registration or failure with RegistrationError.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Sequence",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        [
+            "Done?",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Task",
+            "Download the CiscoMediaBlender901.ova..",
+            "Create the virtual machine for the Cisco Media Blender.",
+            "Install Microsoft Windows Server 2003 Service Pack 2.",
+            "Install VMware Tools.",
+            "Install antivirus software.",
+            "Install Cisco Media Blender."
+        ],
+        [
+            "Notes",
+            "See Open Virtualization Format Files.",
+            "Follow the procedure Create Virtual Machines from Cisco HCS for Contact Center OVA.",
+            "Follow the procedure, Install Microsoft Windows Server 2003 SP2 .",
+            "Follow the procedure Install VMware Tools.",
+            "Follow the procedure Install Antivirus Software.",
+            "Follow the procedure Install the Cisco Media Blender."
+        ]
+    ],
+    "pageTitle": "Installing and Configuring Cisco HCS for Contact Center 9.2(1) - Install and Configure Optional Cisco Components [Cisco Hosted Collaboration Solution for Contact Center] - Cisco",
+    "title": "",
+    "url": "http://www.cisco.com/c/en/us/td/docs/voice_ip_comm/cust_contact/contact_center/hcs-cc/9_2_1/CHCS_BK_I4A9C004_00_installing-and-configuring-hcs-cc/CHCS_BK_I4A9C004_00_installing-and-configuring-hcs-cc_chapter_01100.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 30,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988311.72/warc/CC-MAIN-20150728002308-00335-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 362751107,
+    "recordOffset": 362646000,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{153522=The Windows Server 2003 setup page opens., 523071=Configure Listener Instance for 1250 Multimedia Agent Deployment, 44427=SQL Server (MSSQLSERVER) for Microsoft SQL 2008., 544440=Configure Cisco RSM for A-Law Codec, 146817=Follow the procedure, Install Microsoft Windows Server 2003 SP2 ., 318285=Setting up Cisco Service for 1250 Multimedia Agent Deployment, 258368=The SQL Server 2008 R2 Setup wizard opens., 4260=You must install a Windows Server 2008 R2 compatible maintenance release (MR) for this software to function on Windows Server 2008 R2., 21187=Install Microsoft Windows Server 2008 R2 Service Pack 1., 256421=Install Microsoft SQL Server 2008 R2 x64 and store the SQL Server log and temporary files on the same physical disk as the operating system (typically the C drive). Use the secondary drive to store the Logger database (typically the D drive)., 309770=Install Microsoft Windows Server 2003 Service Pack 2., 543885=Configure Cisco RSM for 500 and 1000 Agent Deployment, 38005=Install Microsoft SQL Server 2008 SP1 Standard Edition x64 for Unified WIM and EIM Collocated deployment. See Install Microsoft SQL Server 2008 SP1 Standard Edition x64. Install Microsoft SQL Server 2008 SP1 Enterprise Edition x64 for Unified WIM and EIM Distributed server deployment. See Install Microsoft SQL Server 2008 SP1 Enterprise Edition x64., 35847=Follow the procedure Install Microsoft SQL Server 2008 SP1 Standard Edition x64., 146639=Install Microsoft Windows Server 2003 Service Pack 2., 150567=Install Microsoft Windows Server 2003 SP2, 245860=Install Microsoft Windows Server 2008 R2 Service Pack 1., 200511=Install the Microsoft SQL Server 2008 SP1 Standard Edition x64., 35659=Install the Microsoft SQL Server 2008 SP1 Standard Edition x64., 653047=For more information, see Configure Cisco RSM for 500 and 1000 Agent Deployment or Set RSM Configuration Settings for 4000 Agent Deployment., 165476=Windows 2003 ISO or CD is required, to install the IIS service., 254578=Install the Microsoft SQL Server 2008 SP1 Enterprise Edition x64., 572438=For Example: If \"VLEngine_PassPrefix\" String is set to RSM1RSM and you want a supervisor to log in with PIN 1234, then set supervisor's password to RSM1RSM1234., 309951=Follow the procedure, Install Microsoft Windows Server 2003 SP2 ., 545803=Configure the Cisco RSM (Remote Silent Monitoring) Server for 500 and 1000 agent deployment in the distributed mode, in the following order:, 546831=Set RSM Configuration Settings for 500 and 1000 Agent Deployment, 279193=Follow the procedure Install Microsoft SQL Server 2008 SP1 Enterprise Edition x64., 588116=SUPERVISOR_LOGIN_TIMEOUT\u2014Time out for Supervisor Login. This value is normally set to 1500., 692092=Ensure that calls between simphones and agent phones use the G.711 codec., 152275=Complete the following procedure to install Microsoft Windows Server 2003 SP2.}",
+    "textBeforeTable": "After each task, return to this page to mark the task \"done \" and continue the sequence. Follow this sequence of tasks to install Unified WIM and EIM File Server. Install Unified WIM and EIM File Server for 120 Multimedia Agent Deployment Install Cisco Media Blender for 120 Multimedia Agent Deployment Install Unified WIM and EIM Services Server for 120 Multimedia Agent Deployment Install Unified WIM and EIM Web Server for 120 Multimedia Agent Deployment Install Unified WIM and EIM Messaging Server for 120 Multimedia Agent Deployment Install Unified WIM and EIM Application Server for 120 Multimedia Agent Deployment Install Unified WIM and EIM Database Server for 120 Multimedia Agent Deployment Install Unified WIM and EIM File Server for 120 Multimedia Agent Deployment Install Cisco Media Blender for 120 Multimedia Agent Deployment Install Unified WIM and EIM Services Server for 120 Multimedia Agent Deployment Install Unified WIM and EIM Web Server for 120 Multimedia Agent Deployment Install Unified WIM and EIM Messaging Server for 120 Multimedia Agent Deployment Install Unified WIM and EIM Application Server for 120 Multimedia",
+    "textAfterTable": "After you install, you can configure the Unified WIM and EIM file server on the destination system. Install Unified WIM and EIM File Server Install Unified WIM and EIM File Server To install a file server component on the Cisco Interaction Manager, perform the following steps : Procedure Step\u00a01\u00a0\u00a0 Add the virtual machine into the destination domain. Step\u00a02\u00a0\u00a0 Mount the Cisco WIM and EIM ISO image to the virtual machine. For more information, see Mount and Unmount ISO Files. Step\u00a03\u00a0\u00a0 Run the installer file of Cisco Unified Interaction Manager The Unified E-Mail Interaction Manager & Unified Web Interaction Manager console appears. Step\u00a04\u00a0\u00a0 Click Next. Step\u00a05\u00a0\u00a0 Click the option I accept the terms of the License Agreement and click Next. Step\u00a06\u00a0\u00a0 Check the File Server check box and click Next. Step\u00a07\u00a0\u00a0 Browse to a folder to",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

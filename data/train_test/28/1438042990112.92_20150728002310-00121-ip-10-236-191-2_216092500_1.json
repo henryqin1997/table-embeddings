@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "5",
+            "12 (1)",
+            "19",
+            "26 (4)"
+        ],
+        [
+            "M",
+            "",
+            "6",
+            "13 (5)",
+            "20 (2)",
+            "27 (7)"
+        ],
+        [
+            "T",
+            "",
+            "7 (3)",
+            "14 (2)",
+            "21",
+            "28 (7)"
+        ],
+        [
+            "W",
+            "1",
+            "8 (4)",
+            "15 (1)",
+            "22",
+            "29 (11)"
+        ],
+        [
+            "T",
+            "2",
+            "9 (14)",
+            "16 (9)",
+            "23",
+            "30 (6)"
+        ],
+        [
+            "F",
+            "3",
+            "10 (8)",
+            "17 (1)",
+            "24 (2)",
+            "31"
+        ],
+        [
+            "S",
+            "4",
+            "11",
+            "18",
+            "25 (2)",
+            ""
+        ]
+    ],
+    "pageTitle": "Saxon XSLT and XQuery Processor / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/saxon/mailman/saxon-help/?viewmonth=201208&viewday=17",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.92/warc/CC-MAIN-20150728002310-00121-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 216108687,
+    "recordOffset": 216092500,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul (38) Jun (80) May (30) Apr (42) Mar (31) Feb (48) Jan (63) 2015 Dec (69) Nov (47) Oct (92) Sep (65) Aug (30) Jul (81) Jun (103) May (73) Apr (47) Mar (63) Feb (98) Jan (110) 2014 Dec (142) Nov (61) Oct (88) Sep (166) Aug (73) Jul (77) Jun (93) May (122) Apr (100) Mar (81) Feb (108)",
+    "textAfterTable": "Showing 1 results of 1 Flat | Threaded Re: [saxon] Bug in SAXON XSD validator -- its internal representation of the XLink namespace appears to be interfering with an explicit XLink schema document From: Michael Kay <mike@sa...> - 2012-08-17 05:48:25  On 16/08/2012 22:20, Costello, Roger L. wrote: > Thanks Michael, that is great advice. > > What schemas does SAXON know about? The W3 XML schema and what else? Saxon knows about the schemas for the XML namespace, the XML Schema namespace, the XSI namespace, and the FN namespace (used in the result of the new XPath 3.0 analyze-string function). But the list could change. > > Are there a certain set of namespaces (i.e. schemas) that *all* XML Schema validators are expected to know about? > > The XS and XSI namespaces are the only ones that don't need to be imported (in fact, IIRC XSD 1.1 says they MUST NOT be imported). The spec does make it fairly clear that schema processors are likely to have built in knowledge of the schema-for-schema-documents, and that if you try to present a schema processor with a modified version of the",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

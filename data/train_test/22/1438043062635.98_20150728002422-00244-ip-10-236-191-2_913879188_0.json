@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Param Setting",
+            "GL_NEAREST",
+            "GL_LINEAR",
+            "GL_NEAREST_MIPMAP_NEAREST",
+            "GL_LINEAR_MIPMAP_NEAREST",
+            "GL_NEAREST_MIPMAP_LINEAR",
+            "GL_LINEAR_MIPMAP_LINEAR"
+        ],
+        [
+            "Linear within mip-level",
+            "No",
+            "Yes",
+            "No",
+            "Yes",
+            "No",
+            "Yes"
+        ],
+        [
+            "Has mipmapping",
+            "No",
+            "No",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes"
+        ],
+        [
+            "Linear between mip-levels",
+            "",
+            "",
+            "No",
+            "No",
+            "Yes",
+            "Yes"
+        ]
+    ],
+    "pageTitle": "Texture - OpenGL.org",
+    "title": "",
+    "url": "https://www.opengl.org/wiki_132/index.php?title=Texture&oldid=4152",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043062635.98/warc/CC-MAIN-20150728002422-00244-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 913896795,
+    "recordOffset": 913879188,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The OpenGL minification settings for these are as follows: When doing minification, you can choose to use mipmapping or not. Using mipmapping means selecting between multiple mipmaps based on the angle and size of the texture relative to the screen. Whether you use mipmapping or not, you can still select between linear blending of the particular layer or nearest. And if you do use mipmapping, you can choose to either select a single mipmap to sample from, or you can sample the two adjacent mipmaps and linearly blend the resulting values to get the final result. The minification filter is controlled by the GL_TEXTURE_MIN_FILTER texture parameter. To understand these values better, it is important to discuss what the particular options are. The magnification filter is controlled by the GL_TEXTURE_MAG_FILTER texture parameter. This value can be GL_LINEAR or GL_NEAREST. If GL_NEAREST is used, then the implementation will select the texel nearest the texture coordinate; this is commonly called \"point sampling\"). If GL_LINEAR is used, the implementation will perform a weighted linear blend between the nearest adjacent samples. Filtering is the process of accessing a particular sample from a texture. There are two cases for filtering: minification and magnification. Magnification means that the area of the fragment in texture space is smaller than a texel, and minification means that the area of the fragment in texture space is larger than a texel. Filtering for these two cases can be set independently. Filtering Locations in a",
+    "textAfterTable": "A note on terminology. This discussion has refrained from using the common filtering terms \"bilinear\" and \"trilinear.\" This is for a good reason; these terms are often misunderstood and do not carry over to all texture types. Take the term \"bilinear\". This term is used because it refers to linear filtering in 2 axes: horizontally and vertically in a 2D texture. A monolinear would be filtering in one axis, and thus trilinear is filtering in 3 axes. The problem is that what constitutes \"bilinear\" depends on the texture type. Or specifically, its dimensionality. Setting GL_TEXTURE_MAG_FILTER and MIN_FILTERs to GL_LINEAR will create monolinear filtering in a 1D texture, bilinear filtering in a 2D texture, and trilinear in a 3D texture. In all cases, it is simply doing a linear filter between the nearest samples; some texture types simply have more nearest samples than others. Unfortunately, what most people think of as \"trilinear\" is not linear filtering of a 3D texture, but what in OpenGL terms is GL_LINEAR mag filter and GL_LINEAR_MIPMAP_LINEAR in the min filter in a 2D texture. That is, it is bilinear filtering of each appropriate mipmap level, and doing a third linear filter between the adjacent mipmap levels. Hence the term \"trilinear\". This is easily confused with what is just GL_LINEAR for 3D textures. That is why OpenGL and this discussion does not use these terms. Anisotropic filtering Note: This is not core behavior; it is governed",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

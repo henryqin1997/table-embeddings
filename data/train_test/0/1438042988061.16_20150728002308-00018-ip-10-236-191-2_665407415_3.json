@@ -1,0 +1,100 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "151.68500",
+            "451.92500",
+            "454.45000",
+            "461.73750",
+            "462.35000",
+            "463.22500",
+            "463.82500"
+        ],
+        [
+            "License",
+            "WSR707",
+            "WPUD274",
+            "",
+            "WQCQ526",
+            "WPYE614",
+            "WPBK486",
+            "WPYE614"
+        ],
+        [
+            "Type",
+            "BM",
+            "BM",
+            "BM",
+            "BM",
+            "BM",
+            "BM",
+            "RM"
+        ],
+        [
+            "Tone",
+            "100.0 PL",
+            "103.5 PL",
+            "",
+            "143 DPL",
+            "107.2 PL",
+            "88.5 PL",
+            "1 CC"
+        ],
+        [
+            "Alpha Tag",
+            "Mt Calvary",
+            "NXEGEN",
+            "Construction",
+            "City View",
+            "Aurubis",
+            "Kenilworth",
+            "Aurubis Recy"
+        ],
+        [
+            "Description",
+            "Mount Calvary Cemetery",
+            "NXEGEN Heating Oil Delivery",
+            "Construction Company - Dump Trucks",
+            "City View Properties Building - Security",
+            "Aurubis - Plant Maintenance",
+            "Kenilworth Electronics",
+            "Aurubis Recycling"
+        ],
+        [
+            "Mode",
+            "FM",
+            "FM",
+            "NXDN",
+            "FM",
+            "FM",
+            "FM",
+            "DMR"
+        ],
+        [
+            "Tag",
+            "Business",
+            "Business",
+            "Business",
+            "Security",
+            "Business",
+            "Business",
+            "Business"
+        ]
+    ],
+    "pageTitle": "Business Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?aid=7787",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 3,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00018-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 665415617,
+    "recordOffset": 665407415,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Buffalo Erie County //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { }); }); } act=1; setEsc(this,origHtml); this.innerHTML = getTagsHTML; getTagsHTML += '\\n'; } getTagsHTML += '' + tagNames[i] + '\\n'; for (var i=0;",
+    "textAfterTable": "Depew Frequency\u00a0 License\u00a0 Type\u00a0 Tone\u00a0 Alpha Tag\u00a0 Description\u00a0 Mode\u00a0 Tag\u00a0 151.68500\u00a0 KNJB371\u00a0 BM 162.2 PL Bates Inc Bates Snowplowing\u00a0 FM\u00a0 Business\u00a0 Tonawanda",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 4,
+    "headerRowIndex": 0
+}

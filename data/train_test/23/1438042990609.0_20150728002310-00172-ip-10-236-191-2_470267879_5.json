@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "Brevet cit\ufffd",
+            "US4991133 *",
+            "US5414707 *",
+            "US5638370 *",
+            "US5790786 *",
+            "US5951707 *",
+            "US6311204 *",
+            "US6385751 *",
+            "US6438678 *"
+        ],
+        [
+            "Date de d\ufffdp\ufffdt",
+            "7 oct. 1988",
+            "1 d\ufffdc. 1993",
+            "28 d\ufffdc. 1994",
+            "28 juin 1995",
+            "27 juin 1997",
+            "11 oct. 1996",
+            "15 d\ufffdc. 1999",
+            "11 ao\ufffdt 1998"
+        ],
+        [
+            "Date de publication",
+            "5 f\ufffdvr. 1991",
+            "9 mai 1995",
+            "10 juin 1997",
+            "4 ao\ufffdt 1998",
+            "14 sept. 1999",
+            "30 oct. 2001",
+            "7 mai 2002",
+            "20 ao\ufffdt 2002"
+        ],
+        [
+            "D\ufffdposant",
+            "International Business Machines Corp.",
+            "Bell Communications Research, Inc.",
+            "Intel Corporation",
+            "National Semiconductor Corporation",
+            "International Business Machines Corporation",
+            "C-Cube Semiconductor Ii Inc.",
+            "Texas Instruments Incorporated",
+            "Cisco Technology, Inc."
+        ],
+        [
+            "Titre",
+            "Specialized communications processor for layered protocols",
+            "Broadband ISDN processing method and system",
+            "Status bit controlled HDLC accelerator",
+            "Multi-media-access-controller circuit for a network hub",
+            "Method of partitioning CRC calculation for a low-cost ATM adapter",
+            "Processing system with register-based process sharing",
+            "Programmable, reconfigurable DSP implementation of a Reed-Solomon encoder/decoder",
+            "Apparatus and method for operating on data in a data communications system"
+        ]
+    ],
+    "pageTitle": "Brevet US6629288 - Single clock cycle CRC engine - Google\ufffdBrevets",
+    "title": "",
+    "url": "http://www.google.fr/patents/US6629288",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00172-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 470292983,
+    "recordOffset": 470267879,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{29556=4) U.S. patent application Ser. No. 09/410,167, filed Sep. 30, 1999, entitled \u201cSystem And Method For Providing An Improved Synchronous Operation Of An Advanced Peripheral Bus With Backward Compatibility\u201d., 29013=1)U.S. Provisional Application Ser. No. 60/183,130, filed Feb. 17, 2000, entitled \u201cCable Modem Having a Programmable Media Access Controller\u201d;, 29399=3) U.S. patent application Ser. No. 09/409,820, filed Sep. 30, 1999, entitled \u201cAsochronous Centralized Multi-Channel DMA Controller\u201d; and, 47614=The CRC engine 102, as well as other circuitry described below, are coupled to a peripheral bus 110. The peripheral bus 110 of the disclosed embodiment of the invention is linked to a system bus 112 via bridge circuitry 114. The bridge circuitry 114 comprises a centralized multi-channel DMA controller 116 for facilitating the movement of data in the cable modem 100. The bridge 114 may serve as master of both a system bus 112 and peripheral bus 110, and utilizes burst transfers and pipelining of data to optimize bus efficiency. The DMA controller 116 of the disclosed embodiment is constructed to provide lower data latency, minimal data buffering, guaranteed data bandwidth, and asochronous demand support. Further details of one such DMA controller and associated circuitry may be found in previously-incorporated U.S. patent application Ser. No. 09/409,820, \u201cAsochronous Centralized Multi-Channel DMA Controller\u201d and U.S. patent application Ser. No. 09/410,167, filed Sep. 30, 1999, entitled \u201cSystem And Method For Providing An Improved Synchronous Operation Of An Advanced Peripheral Bus With Backward Compatibility.\u201d In the disclosed embodiment of the invention, the peripheral bus 110 provides the basic peripheral macrocell communications infrastructure. Such peripherals typically have interfaces which are memory-mapped registers, have few high-bandwidth interfaces, and are accessed under program control (such as the programmable MAC).}",
+    "textBeforeTable": "Citations de brevets In view of the above detailed description of the present invention and associated drawings, other modifications and variations will now become apparent to those skilled in the art. It should also be apparent that such other modifications and variations may be effected without departing from the spirit and scope of the present invention. Thus, a communication device (such as a cable modem) has been described having a programmable MAC supported by a programmable CRC engine. The CRC engine efficiently computes CRC values for data written to it by the programmable MAC or other software process, thereby relieving processing circuitry of these computationally burdensome functions. The CRC engine may advantageously utilize one or more polynomials as determined by the programmable MAC. Further, the CRC engine of the disclosed embodiment may receive data of varying sizes such that write processes may be optimized. The programmable nature of the CRC engine permits compliance with a wide variety standards, including evolving standards such as DOCSIS, without requiring expensive hardware upgrades. Next, in step 402, the data to be validated (e.g., MCNS header information) is received by the data register 104. The validation process continues in step 404 where a CRC computation is performed on the receive data in accordance with the initialization information provided in step 400. Finally, in step 406, the resulting CRC value is written to an output data register for comparison to a received CRC value.",
+    "textAfterTable": "* Cit\ufffd par l'examinateur Citations hors brevets R\ufffdf\ufffdrence 1 McGoldrick, \"Super chip is the first to get the cable modem down to size,\" Electronic Design, pp. 67-74, Jun. 9, 1997. R\ufffdf\ufffdrenc\ufffd par Brevet citant Date de d\ufffdp\ufffdt Date de publication D\ufffdposant Titre US6760814 * 14 f\ufffdvr. 2002 6 juil. 2004 Lsi Logic Corporation Methods and apparatus for loading CRC values into a CRC cache in a storage controller US6772289 24 janv. 2002 3 ao\ufffdt 2004 Lsi Logic Corporation Methods and apparatus for managing cached CRC values in a storage controller US6801958 * 6 d\ufffdc. 2000 5 oct. 2004 Texas Instruments Incorporated Method and system for data transfer US6886180 * 16 ao\ufffdt 2000 26 avr. 2005 Intel Corporation Implementing",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

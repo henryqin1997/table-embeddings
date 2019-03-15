@@ -1,0 +1,68 @@
+{
+    "relation": [
+        [
+            "Part Description",
+            "100 ohm 1/8 watt resistor",
+            "2.2 K 1/8 watt resistor",
+            "0.1uF tantalum capacitor",
+            "Quad Buffer",
+            "16 pin wire mount IDC socket",
+            "25 pin D connector",
+            "D-SUB Housing",
+            "16 pin Header",
+            "Printed Circuit Board"
+        ],
+        [
+            "Quantity",
+            "5",
+            "4",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Mouser Part Number",
+            "270-100-RC",
+            "270-2.2K-RC",
+            "80-T350A104K035",
+            "511-M74HC125",
+            "517-89116-0001",
+            "538-DBKL25PUTI",
+            "152-9025-E",
+            "517-2316-6121TG",
+            "circuit board"
+        ],
+        [
+            "Comment",
+            "Shown on component layout as 100. First 4 of 5 tripes are Brown Black Black Brown",
+            "Shown on component layout as 2.2K. First 4 of 5 tripes are Red Red Black Brown",
+            "Shown on component layout as C1.",
+            "Shown on component layout as 74HC125.",
+            "-",
+            "-",
+            "-",
+            "-",
+            "Order from www.expressPCB, 21 boards total for $59. Single boards may also be available from one of the wiki maintainers. Board revised to attach solder side of D25 to ground."
+        ]
+    ],
+    "pageTitle": "Building a JTAG Interface - NAS-Central Buffalo - The Linkstation Wiki",
+    "title": "",
+    "url": "http://buffalo.nas-central.org/w/index.php?title=Building_a_JTAG_Interface&oldid=11459",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990177.43/warc/CC-MAIN-20150728002310-00252-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 38648963,
+    "recordOffset": 38636687,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "In order to build one of these you will need the following parts: Parts Required 12 Install the Header in the Kuro 11 Button up the Cable 10 Inspect the Assembled Circuit 9 Attach the IDE connector Cable 8 Assemble the IDE Connector 7 Install the 0.1uF Capacitor 6 Install the Integrated Circuit 5 Install the 2.2K Resistors 4 Install the 100 OHM Resistors 3 Solder the D25 Connector 2 Tools Required 1 Parts Required Contents Building a JTAG interface cable can be accomplished in part of an evening by following these instructions. I have built 10 of these and assembled 12 kits with all parts and an etched predrilled circuit board which we are making available to the community in an effort to spur more development (sounds like a contest entry). There is a thread in the Forums for discussion and announcememnts regarding the availability of these kits. If you are interested in assembling and distributing kits or have any assembly questions, please post a note in",
+    "textAfterTable": "All of the parts save the circuit board can be obtained from Mouser Electronics. They are also available at many electrical parts suppliers. The circuit board can be purchased in quantities of 21 from www.expressPCB.com. Kits and/or single circuit boards may also be made available by one of the maintainers here. Tools Required 15 watt (maximum) soldering iron Diagonal cutters for trimming component leads Thin rosin core 60/40 solder (included in kit) Wire strippers. Three hands (a small vice will also work) Solder the D25 Connector Solder the D25 connector to the circuit board. pay close attention to the orientation of the circuit board and the D25 connector. Note in the photo in the following step the side of the D25 connector with 13 pins is facing up and pin 2 (on the right in the photo) is aligned with the first pad on the circuit board. Also note that the circuit board is double sided and you must make sure that you have the same side facing up as shown in the photo below. In some cases the board may have been cut a bit short on the D25 connector edge. Just line up the ends of the pins with the top of the solder pads on the circuit board and solder it in place. A good example of this condition is in the \"Install the 2.2K resistors\" photo. Also",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Product(s)",
+            "SUSE Linux Enterprise Desktop 11 SP1 SUSE Linux Enterprise Desktop 11 SP2 SUSE Linux Enterprise Server 11 SP1 SUSE Linux Enterprise Server 11 SP2",
+            "SUSE Linux Enterprise Server 11 SP1 for VMware",
+            "SUSE Linux Enterprise Desktop 10 SP4 for x86 SUSE Linux Enterprise Server 10 SP4 for IBM POWER SUSE Linux Enterprise Server 10 SP4 for IPF SUSE Linux Enterprise Server 10 SP4 for x86",
+            "SUSE Linux Enterprise Desktop 10 SP4 for AMD64 and Intel EM64T SUSE Linux Enterprise Server 10 SP4 for AMD64 and Intel EM64T SUSE Linux Enterprise Server 10 SP4 for IBM zSeries 64bit",
+            "SLE SDK 10 SP4 for IBM iSeries and IBM pSeries SLE SDK 10 SP4 for IBM zSeries SLE SDK 10 SP4 for IPF SLE SDK 10 SP4 for X86-64 SLE SDK 10 SP4 for x86",
+            "openSUSE 11.4"
+        ],
+        [
+            "Fixed package version(s)",
+            "MozillaFirefox >= 10.0.6-0.4.1 MozillaFirefox-branding-SLED >= 7-0.6.7.70 MozillaFirefox-translations >= 10.0.6-0.4.1",
+            "MozillaFirefox >= 10.0.6-0.4.1 MozillaFirefox-translations >= 10.0.6-0.4.1",
+            "MozillaFirefox >= 10.0.6-0.6.1 MozillaFirefox-branding-SLED >= 7-0.8.25 MozillaFirefox-translations >= 10.0.6-0.6.1 firefox3-gtk2 >= 2.10.6-0.12.1",
+            "MozillaFirefox >= 10.0.6-0.6.1 MozillaFirefox-branding-SLED >= 7-0.8.25 MozillaFirefox-translations >= 10.0.6-0.6.1 firefox3-gtk2 >= 2.10.6-0.12.1 firefox3-gtk2-32bit >= 2.10.6-0.12.1",
+            "MozillaFirefox-branding-upstream >= 10.0.6-0.6.1 firefox3-gtk2-devel >= 2.10.6-0.12.1 firefox3-gtk2-doc >= 2.10.6-0.12.1",
+            "MozillaFirefox >= 14.0.1-28.1 MozillaFirefox-branding-upstream >= 14.0.1-28.1 MozillaFirefox-buildsymbols >= 14.0.1-28.1 MozillaFirefox-debuginfo >= 14.0.1-28.1 MozillaFirefox-debugsource >= 14.0.1-28.1 MozillaFirefox-devel >= 14.0.1-28.1 MozillaFirefox-translations-common >= 14.0.1-28.1 MozillaFirefox-translations-other >= 14.0.1-28.1"
+        ],
+        [
+            "References",
+            "Builds SAT Patch Nr: 6574",
+            "Builds SAT Patch Nr: 6574",
+            "Builds ZYPP Patch Nr: 8226",
+            "Builds ZYPP Patch Nr: 8226",
+            "Builds ZYPP Patch Nr: 8226",
+            "Patchnames: openSUSE-2012-410"
+        ]
+    ],
+    "pageTitle": "CVE-2012-1950",
+    "title": "",
+    "url": "https://www.suse.com/security/cve/CVE-2012-1950.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987155.85/warc/CC-MAIN-20150728002307-00029-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 929026055,
+    "recordOffset": 929017853,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{776=CVE-2012-1950 at MITRE}",
+    "textBeforeTable": "List of released packages openSUSE-SU-2012:0924-1, published Mon, 30 Jul 2012 17:08:56 +0200 (CEST) openSUSE-SU-2012:0899-1, published Mon, 23 Jul 2012 14:08:16 +0200 (CEST) SUSE-SU-2012:0896-1, published Sat, 21 Jul 2012 03:08:21 +0200 (CEST) SUSE-SU-2012:0895-1, published Sat, 21 Jul 2012 01:08:17 +0200 (CEST) SUSE Security Advisories: 771583 SUSE information SUSE Bugzilla entry: NVD CVSS v2 Base Score: 6.4 (AV:N/AC:L/Au:N/C:N/I:P/A:P) Description The drag-and-drop implementation in Mozilla Firefox 4.x through 13.0 and Firefox ESR 10.x before 10.0.6 allows remote attackers to spoof the address bar by canceling a page load. CVE-2012-1950 at MITRE Upstream information [Next] [Index] [Previous] Common Vulnerabilities and Exposures CVE-2012-1950 support >",
+    "textAfterTable": "",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

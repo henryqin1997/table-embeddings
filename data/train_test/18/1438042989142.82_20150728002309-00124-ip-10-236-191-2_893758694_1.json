@@ -1,0 +1,72 @@
+{
+    "relation": [
+        [
+            "date",
+            "2/23/2013",
+            "3/1/2013",
+            "4/5/2013",
+            "4/26/2013",
+            "5/3/2013",
+            "5/24/2013",
+            "6/21/2013",
+            "6/29/2013",
+            "7/7/2013",
+            "8/18/2013"
+        ],
+        [
+            "city",
+            "Auburn",
+            "Culver City",
+            "Culver City",
+            "Altadena",
+            "Culver City",
+            "Bremen",
+            "Kinross",
+            "Bedford",
+            "Birmingham",
+            "Santa Monica"
+        ],
+        [
+            "state",
+            "CA",
+            "CA",
+            "CA",
+            "CA",
+            "CA",
+            "HB",
+            "",
+            "",
+            "Birmingham",
+            "CA"
+        ],
+        [
+            "venue",
+            "Auburn Event Center",
+            "Cinema Bar",
+            "Cinema Bar",
+            "The Coffee Gallery Backstage",
+            "Cinema Bar",
+            "Kulturzentrum Lagerhaus",
+            "Green Hotel",
+            "The Ent Shed (East West Promotions)",
+            "The Kitchen Garden Cafe",
+            "Mccabe'S Bar"
+        ]
+    ],
+    "pageTitle": "I See Hawks in L.A. Concert Tickets | SeatGeek",
+    "title": "",
+    "url": "https://seatgeek.com/i-see-hawks-in-l-a-tickets",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989142.82/warc/CC-MAIN-20150728002309-00124-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 893786279,
+    "recordOffset": 893758694,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "2014 Tour Dates } ); document.getElementById('location-autocomplete') }), } } window.location.href = window.location.pathname + '?lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id } else { window.location.href = window.location.href + '&lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id; if(window.location.href.match('/search')) { SG.GA.sendEvent('team-show-page', 'location-input', { label: selection.term }); onSelect: function(selection) { }, return (data.results && data.results.location) ? data.results.location : [] dataExtractionFunction: function(data) { placeholder: 'Search by City...', postSelectLoad: true, limit: 3, contentKey: 'term', idKey: 'id', queryString: \"types[]=location\", source: \"/autocomplete\", React.createFactory(Autocomplete)({ React.render( if (document.getElementById('location-autocomplete')) {",
+    "textAfterTable": "6/21/2013 Kinross Green Hotel 6/29/2013 Bedford The Ent Shed (East West Promotions) 7/7/2013 Birmingham Birmingham The Kitchen Garden Cafe 8/18/2013 Santa Monica CA Mccabe'S Bar Learn More Platform Get in Touch What's Hot SeatGeek App Send a download link to your phone Send App Store",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

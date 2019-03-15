@@ -1,0 +1,83 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "2",
+            "9",
+            "16",
+            "23",
+            "30"
+        ],
+        [
+            "M",
+            "",
+            "3",
+            "10",
+            "17",
+            "24",
+            ""
+        ],
+        [
+            "T",
+            "",
+            "4",
+            "11",
+            "18",
+            "25",
+            ""
+        ],
+        [
+            "W",
+            "",
+            "5",
+            "12",
+            "19",
+            "26",
+            ""
+        ],
+        [
+            "T",
+            "",
+            "6",
+            "13 (11)",
+            "20 (1)",
+            "27",
+            ""
+        ],
+        [
+            "F",
+            "",
+            "7 (2)",
+            "14 (34)",
+            "21 (4)",
+            "28",
+            ""
+        ],
+        [
+            "S",
+            "1",
+            "8",
+            "15",
+            "22",
+            "29",
+            ""
+        ]
+    ],
+    "pageTitle": "FlexWiki / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/flexwiki/mailman/flexwiki-commits/?viewmonth=200604",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988250.59/warc/CC-MAIN-20150728002308-00093-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 224285591,
+    "recordOffset": 224123081,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov (9) Oct (35) Sep (14) Aug (22) Jul (7) Jun (6) May (1) Apr (2) Mar (55) Feb (41) Jan (18) 2008 Dec (8) Nov (18) Oct (29) Sep (29) Aug (153) Jul (39) Jun (10) May (13) Apr (17) Mar (22) Feb (23) Jan (6) 2007 Dec \u00a0 Nov (18) Oct (201) Sep (67) Aug (18) Jul (26) Jun (18) May (42) Apr (52) Mar (16) Feb",
+    "textAfterTable": "Showing 25 50 100 250 results of 52 Flat | Threaded 1 2 3 > >> (Page 1 of 3) [Flexwiki-commits] FlexWikiCore flexwikicore.build,1.21.2.1,1.21.2.2 From: Craig Andera <candera@us...> - 2006-04-21 20:22:30 Update of /cvsroot/flexwiki/FlexWikiCore In directory sc8-pr-cvs1.sourceforge.net:/tmp/cvs-serv31664 Modified Files: Tag: branch-1-8 flexwikicore.build Log Message: BUILD: Minor syntax cleanup, changed to skip FxCop by default. Index: flexwikicore.build =================================================================== RCS file: /cvsroot/flexwiki/FlexWikiCore/flexwikicore.build,v retrieving revision 1.21.2.1 retrieving revision 1.21.2.2 diff -C2 -d -r1.21.2.1 -r1.21.2.2 *** flexwikicore.build\t20 Apr 2006 22:21:10 -0000\t1.21.2.1 --- flexwikicore.build\t21 Apr 2006 20:22:25 -0000\t1.21.2.2 *************** *** 147,151 **** <!-- Set this property to true here (or override elsewhere) to skip running fxcop as part of the build. --> ! <property name=\"fxcop.skip\" value=\"false\" unless=\"${property::exists('fxcop.skip')}\" /> --- 147,151 ---- <!-- Set this property to true here (or override elsewhere) to skip running fxcop as part of the build. --> ! <property name=\"fxcop.skip\" value=\"true\" unless=\"${property::exists('fxcop.skip')}\" /> *************** *** 265,272 **** </imports> <attributes> !  <attribute type=\"AssemblyVersionAttribute\" !  value=\"${vermajor}.${verminor}.${verbuild}.${verrevision}\" /> !  <attribute type=\"AssemblyCopyrightAttribute\" !  value=\"Copyright (c) 2005 Microsoft Corporation\" /> </attributes> </asminfo> --- 265,272 ---- </imports> <attributes> ! <attribute type=\"AssemblyVersionAttribute\" !",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

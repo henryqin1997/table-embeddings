@@ -1,0 +1,39 @@
+{
+    "relation": [
+        [
+            "Value",
+            "Smallest DATE value",
+            "Largest DATE value",
+            "Smallest TIME value",
+            "Largest TIME value",
+            "Smallest TIMESTAMP value",
+            "Largest TIMESTAMP value"
+        ],
+        [
+            "Limit",
+            "0001-01-01",
+            "9999-12-31",
+            "00:00:00",
+            "24:00:00",
+            "0001-01-01-00.00.00.000000",
+            "9999-12-31-23.59.59.999999"
+        ]
+    ],
+    "pageTitle": "DATE, TIME, and TIMESTAMP limitations",
+    "title": "Table 1. DATE, TIME, and TIMESTAMP limitations",
+    "url": "http://db.apache.org/derby/docs/10.8/ref/rrefdttlimits.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990609.0/warc/CC-MAIN-20150728002310-00000-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 58981701,
+    "recordOffset": 58973499,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 24 Jan 2013 13:53:05 GMT",
+    "textBeforeTable": "The following table lists limitations on date, time, and timestamp values in Derby. DATE, TIME, and TIMESTAMP limitations",
+    "textAfterTable": "Parent topic: Derby limitations Related reference Limitations for database values Limitations on identifier length Numeric limitations String limitations XML limitations",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

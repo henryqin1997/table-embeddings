@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "3",
+            "10",
+            "17",
+            "24"
+        ],
+        [
+            "M",
+            "",
+            "4 (3)",
+            "11",
+            "18",
+            "25"
+        ],
+        [
+            "T",
+            "",
+            "5 (3)",
+            "12",
+            "19",
+            "26"
+        ],
+        [
+            "W",
+            "",
+            "6",
+            "13 (6)",
+            "20",
+            "27"
+        ],
+        [
+            "T",
+            "",
+            "7 (2)",
+            "14 (5)",
+            "21",
+            "28"
+        ],
+        [
+            "F",
+            "1",
+            "8",
+            "15 (8)",
+            "22 (2)",
+            "29"
+        ],
+        [
+            "S",
+            "2 (1)",
+            "9",
+            "16 (1)",
+            "23",
+            "30"
+        ]
+    ],
+    "pageTitle": "Steel Bank Common Lisp / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/sbcl/mailman/sbcl-help/?viewmonth=201104&viewday=22",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989510.73/warc/CC-MAIN-20150728002309-00322-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 220090463,
+    "recordOffset": 220074069,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug (4) Jul (9) Jun (3) May (5) Apr (17) Mar (32) Feb (19) Jan (11) 2015 Dec (10) Nov (7) Oct (29) Sep (21) Aug (13) Jul (15) Jun (17) May (7) Apr (15) Mar (38) Feb (55) Jan (30) 2014 Dec (6) Nov (9) Oct (22) Sep (8) Aug (7) Jul (1) Jun (9) May \u00a0 Apr (10) Mar (17) Feb (8)",
+    "textAfterTable": "Showing 2 results of 2 Flat | Threaded Re: [Sbcl-help] Bug in the SBCL man page From: Stas Boukarev <stassats@gm...> - 2011-04-22 21:57:39 Sebastian Tennant <sebyte@...> writes: > Hello all, > > In the section 'Supported runtime options', it reads: > > --script <filename> > As a runtime option equivalent to --noinform > --disable-ldb --lose-on-corruption --END-TOPLEVEL-OPTIONS > --script <filename>. See the description of --script as a > toplevel option below. > > whereas I believe it should read: > > --script <filename> > As a runtime option equivalent to --noinform > --disable-ldb --lose-on-corruption --END-RUNTIME-OPTIONS > --script <filename>. See the description of --script as a > toplevel option below. Indeed, fixed in CVS, thanks! -- With best regards, Stas. [Sbcl-help] Bug in the SBCL man page From: Sebastian Tennant <sebyte@sm...> - 2011-04-22 20:51:24 Hello all, In the section 'Supported runtime options', it reads: --script <filename> As a runtime option equivalent to --noinform --disable-ldb --lose-on-corruption --END-TOPLEVEL-OPTIONS --script <filename>. See the description of --script as a toplevel option below. whereas",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

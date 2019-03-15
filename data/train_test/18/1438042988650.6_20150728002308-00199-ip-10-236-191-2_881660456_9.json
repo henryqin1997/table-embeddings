@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Status",
+            "DONE",
+            "IN PROGRESS",
+            "IN PROGRESS",
+            "IN PROGRESS",
+            "IN PROGRESS",
+            "IN PROGRESS"
+        ],
+        [
+            "Project",
+            "Libkdegames",
+            "KSudoku",
+            "KSudoku",
+            "KSudoku",
+            "KGoldrunner",
+            "KGoldrunner"
+        ],
+        [
+            "Description",
+            "Improve graphics performance in all games by standardizing on the use of Qt Raster Graphics.",
+            "Add a new generator and solver to KSudoku, based on published algorithms. This will provide a full range of puzzle difficulties, rather than mainly easy puzzles, and will address bug 217925 and its duplicates 228614 and 237262 (now nearly two years old).",
+            "Re-implement the puzzle-symmetry feature.",
+            "Re-order the puzzle types on the welcome screen. Use KDE Games Difficulty combo-box instead of a slider. Save user's choices of puzzle between sessions. Do minor tidy-ups of the user interface.",
+            "Add the championship level \"Gold Rush\" game, with Traditional rules, contributed by Gabriel Miltschitzky.",
+            "Add the championship level \"Jail Break\" game, with KGoldrunner rules, contributed by Gabriel Miltschitzky."
+        ],
+        [
+            "Contact",
+            "Stefan Majewsky",
+            "Ian Wadham",
+            "Ian Wadham",
+            "Ian Wadham",
+            "Ian Wadham",
+            "Ian Wadham"
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Schedules/KDE4/4.8 Feature Plan\" - KDE TechBase",
+    "title": "",
+    "url": "https://techbase.kde.org/index.php?title=Schedules/KDE4/4.8_Feature_Plan&diff=66982&oldid=66981",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.6/warc/CC-MAIN-20150728002308-00199-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 881677507,
+    "recordOffset": 881660456,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "kdesdk Torgny Nyblom <nyblom@kde.org> Give messagecomposer (especially for KMail) the ability to compose replies in HTML HTML Replies IN PROGRESS Montel Laurent <montel@kde.org> Implement wizard to help user to create sieve script sieve: implement wizard TO DO David Jarvie <djarvie@kde.org> Port to Akonadi KAlarm IN PROGRESS Friedrich W. H. Kossebau <kossebau@kde.org> Implement kio-slave to access (email) attachments in Akonadi attachment:/ kio-slave TO DO Contact Description Project Status kdepim",
+    "textAfterTable": "TO DO Okteta add support for memory mapping of files and 64-bit addressing Friedrich W. H. Kossebau <kossebau@kde.org> TO DO Okteta add support for jobs like io, printing, string search or filter Friedrich W. H. Kossebau <kossebau@kde.org> TO DO Okteta Add view profiles, incl. editor/manager Friedrich W. H. Kossebau <kossebau@kde.org> TO DO Okteta copy again puts also a value or char variant of the data to clipboard Friedrich W. H. Kossebau <kossebau@kde.org> TO DO Okteta Improve the titels of the changes to the bytearray to be more descriptive, best using ids to avoid text string Friedrich W. H. Kossebau <kossebau@kde.org> TO DO Okteta",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

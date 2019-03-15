@@ -1,0 +1,72 @@
+{
+    "relation": [
+        [
+            "date",
+            "2/22/2014",
+            "3/7/2014",
+            "3/15/2014",
+            "3/17/2014",
+            "5/2/2014",
+            "6/13/2014",
+            "7/24/2014",
+            "8/22/2014",
+            "10/10/2014",
+            "12/5/2014"
+        ],
+        [
+            "city",
+            "Springfield",
+            "Dayton",
+            "Springfield",
+            "Dayton",
+            "Dayton",
+            "Dayton",
+            "Omaha",
+            "Dayton",
+            "Dayton",
+            "Dayton"
+        ],
+        [
+            "state",
+            "OH",
+            "OH",
+            "OH",
+            "OH",
+            "OH",
+            "OH",
+            "NE",
+            "OH",
+            "OH",
+            "OH"
+        ],
+        [
+            "venue",
+            "Buckeye Sports Lodge",
+            "Trolley Stop",
+            "Main St. Pub",
+            "Boston's",
+            "Trolley Stop",
+            "Trolley Stop",
+            "21st Saloon",
+            "Trolley Stop",
+            "Trolley Stop",
+            "Trolley Stop"
+        ]
+    ],
+    "pageTitle": "Eric Jerardi Band Concert Tickets | SeatGeek",
+    "title": "",
+    "url": "https://seatgeek.com/eric-jerardi-band-tickets",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991019.80/warc/CC-MAIN-20150728002311-00213-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 870347039,
+    "recordOffset": 870321864,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "2014 Tour Dates } ); document.getElementById('location-autocomplete') }), } } window.location.href = window.location.pathname + '?lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id } else { window.location.href = window.location.href + '&lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id; if(window.location.href.match('/search')) { SG.GA.sendEvent('team-show-page', 'location-input', { label: selection.term }); onSelect: function(selection) { }, return (data.results && data.results.location) ? data.results.location : [] dataExtractionFunction: function(data) { placeholder: 'Search by City...', postSelectLoad: true, limit: 3, contentKey: 'term', idKey: 'id', queryString: \"types[]=location\", source: \"/autocomplete\", React.createFactory(Autocomplete)({ React.render( if (document.getElementById('location-autocomplete')) {",
+    "textAfterTable": "2013 date city state venue 1/12/2013 Galena OH Mudflats 2/1/2013 Dayton OH The Oregon Express 2/15/2013 Maryville TN Brackins Blues Club 2/16/2013 Sullivan's Island SC Fiery Ron's Home Team BBQ 3/6/2013 Chicago IL House of Blues 3/7/2013 St. Louis MO BB's Jazz Blues & Soups 3/8/2013 Manitowoc WI Rock-N-Blues Haus 3/9/2013 Bettendorf IA Muddy Waters 3/10/2013 Quincy IL The Club Tavern 3/15/2013 Dayton OH The Oregon Express 3/16/2013 Indianapolis IN Slippery Noodle 3/30/2013 Springfield OH Bogey's Bar and Grill 7/7/2013 Quebec City QC Le Casbah 7/13/2013 Quebec QC Plains Of Abraham 8/10/2013 Rock Springs WY Pickin Palace 9/26/2013 Indianapolis IN Slippery Noodle 11/21/2013 Cincinnati OH Tin Roof 11/27/2013 Cleveland OH Wilberts 12/6/2013 Dayton OH The Oregon Express",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

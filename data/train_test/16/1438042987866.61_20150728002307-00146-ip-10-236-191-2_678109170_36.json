@@ -1,0 +1,56 @@
+{
+    "relation": [
+        [
+            "Parameter:",
+            "\"text\"",
+            "before",
+            "after",
+            "afterload",
+            "id",
+            "url",
+            "width",
+            "height",
+            "container"
+        ],
+        [
+            "Description:",
+            "label of the tab",
+            "when switching tabs, this is the javascript fragment to be executed just before the tab is displayed",
+            "this javascript handler is to be executed after the tab has been made visible",
+            "this javascript handler will be called when content loaded asynchronously (using the url parameter, below) has finished loading; depending on the network latency, this can be significantly later than execution of the after handler above",
+            "id of this tab; this id can be used in the TABPANEs select parameter to display this tab; this id is also added to the class attribute of the html element representing the tab button",
+            "link from where to load the content of the tab asynchronously when selecting this tab; the result of the addressed handler will replace the content area; if no url is set the content of the TAB ... ENDTAB area will be shown when the tab is selected",
+            "width of the tab area",
+            "height of the tab area",
+            "element where ajax content will be loaded; this is only used together with url"
+        ],
+        [
+            "Default:",
+            "Tab",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "auto",
+            "auto",
+            ""
+        ]
+    ],
+    "pageTitle": "Macros < System < Wiki",
+    "title": "",
+    "url": "http://www.rockbox.org/wiki/System/Macros?sortcol=0;table=43;up=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 36,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987866.61/warc/CC-MAIN-20150728002307-00146-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 678195047,
+    "recordOffset": 678109170,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Parameters: Syntax: %ENCODE{\"string\"}% Encode character sequences in \"string\", by mapping characters (or sequences of characters) to an alternative character (or sequence of characters). This macro can be used to encode strings for use in URLs, to encode to HTML entities, to protect quotes, and for as many other uses as you can imagine. ENCODE{\"string\"} -- encodes a string EditTablePlugin for more details Related: See two Foo Type Name Produces: | Foo | two | | *Name* | *Type* | %EDITTABLE{ format=\"| text, 20 | select, 1, one, two, three |\" changerows=\"on\" }% Example:    JAVASCRIPTINTERFACE plugin setting Use javascript to directly move and delete row without page refresh. Enable with \"on\", disable",
+    "textAfterTable": "| Blah | | More blah | - this encoding is useful to protect special TML characters in tables. %ENCODE{\"10xx1x01x\" old=\"1,x,0\" new=\"A,,B\"}% expands to ABABA %ENCODE{\"1,2\" old=\"$comma\" new=\";\"}% expands to 1;2 Values for HTML input fields must be entity encoded. Example: <input type=\"text\" name=\"address\" value=\"%ENCODE{ \"any text\" type=\"entity\" }%\" /> ENCODE can be used to filter user input from URL parameters and similar to help protect against cross-site scripting. The safest approach is to use type=\"entity\". This can however prevent an application from fully working. You can alternatively use type=\"safe\" which encodes only the characters '\"<>% into HTML entities. When ENCODE is passing a string inside another macro always use double quotes (\"\") type=\"quote\". For maximum protection against cross-site scripting you are advised to install the Foswiki:Extensions.SafeWikiPlugin. Double quotes in strings must be escaped when passed into other macros. Example: %SEARCH{ \"%ENCODE{ \"string with \"quotes\"\" type=\"quotes\" }%\" noheader=\"on\" }% When using old and new, be aware that the results of applying earlier tokens are not processed again using later tokens. For example:  %ENCODE{\"A\" old=\"A,B\" new=\"B,C\"}% will result in 'B' (not 'C'), %ENCODE{\"asd\" old=\"as,d\" new=\"d,f\"}% will yield 'df', and %ENCODE{\"A\" old=\"A,AA\" new=\"AA,B\"}% will give 'AA' and. %ENCODE{\"asdf\" old=\"a,asdf\" new=\"a,2\"}% will give 'asdf' Related: URLPARAM",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,58 @@
+{
+    "relation": [
+        [
+            "Product",
+            "IMS",
+            "CICS",
+            "DB2",
+            "FORTRAN",
+            "COBOL",
+            "z/OS"
+        ],
+        [
+            "zELC",
+            "zELC Model 004",
+            "zELC Model 004",
+            "zELC Model 004",
+            "zELC Model 004",
+            "zELC Model 004",
+            "zELC Model 004"
+        ],
+        [
+            "Full-Capacity EWLC",
+            "EWLC 108 MSUs",
+            "EWLC 108 MSUs",
+            "EWLC 108 MSUs",
+            "zELC Model 004",
+            "EWLC 108 MSUs",
+            "EWLC 108 MSUs"
+        ],
+        [
+            "Sub-Capacity EWLC",
+            "EWLC 55 MSUs",
+            "EWLC 55 MSUs",
+            "EWLC 55 MSUs",
+            "zELC Model 004",
+            "EWLC 50 MSUs",
+            "EWLC 93 MSUs"
+        ]
+    ],
+    "pageTitle": "IBM System z - Software Pricing - EWLC",
+    "title": "",
+    "url": "http://www-03.ibm.com/systems/z/resources/swprice/mlc/ewlc.html",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987628.47/warc/CC-MAIN-20150728002307-00012-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 259899998,
+    "recordOffset": 259891796,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{3693=In support of an on demand operating environment, IBM offers Entry Workload License Charges (EWLC) for IBM System z10 Business Class (z10 BC), IBM System z9 Business Class (z9 BC), IBM eServer zSeries z890 and z800 customers. EWLC is not available on zEnterprise 114 (z114) servers. EWLC enables qualifying customers to pay for sub-capacity eligible\u00a0IBM software based on the utilization of the LPAR or LPARs where that product executes. This sub-capacity pricing provides the potential to lower software charges on a standalone z10 BC, z9 BC, z890 or z800., 467=Customers operating a z10 BC, z9 BC, z890 or a z800 in a qualified Parallel Sysplex may elect to have their server priced as a stand-alone machine (zELC, EWLC and TWLC) or may elect aggregated PSLC or aggregated WLC pricing, subject to applicable terms and conditions. If the customer selects aggregated pricing then zELC, EWLC and TWLC price structures do not apply. While EWLC is MSU-based, aggregation of MSUs is not permitted if EWLC is selected., 1182=z10 BC, z9 BC and z890 standalone customers will have EWLC pricing. All sub-capacity eligible products will be priced using the EWLC pricing metric. The remaining, non-sub-capacity eligible products will be priced using the Tiered EWLC (TWLC) price structure. The TWLC price structure, for non-subcapacity products offers flat pricing based on z10 BC, z9 BC and z890 server capacity using a tiered structure. The TWLC price structure is exclusive to the z10 BC, z9 BC and z890 servers. Note: the smallest z10 BC and z9 BC, capacity setting A01, and the smallest z890, capacity setting 110, are priced using zELC.}",
+    "TableContextTimeStampAfterTable": "{8056=On 09 September 2003, IBM announced (PDF, 124KB) Entry Workload License Charges, LPAR-based pricing for key monthly license charge software on the z800 platform., 7302=On 27 April 2006, IBM announced (PDF, 85KB) software pricing terms and conditions for IBM System z9 Business Class. IBM is extending Entry Workload License Charge (EWLC) and Tiered Entry Workload License Charge (TWLC) pricing metrics to the IBM System z9 Business Class (z9 BC) servers., 7733=On 07 April 2004, IBM announced (PDF, 319KB) pricing terms and conditions for the z890 server including the introduction of Entry Workload License Charges Tiered price structure.}",
+    "textBeforeTable": "Customers operating a z10 BC, z9 BC, z890 or a z800 in a qualified Parallel Sysplex may elect to have their server priced as a stand-alone machine (zELC, EWLC and TWLC) or may elect aggregated PSLC or aggregated WLC pricing, subject to applicable terms and conditions. If the customer selects aggregated pricing then zELC, EWLC and TWLC price structures do not apply. While EWLC is MSU-based, aggregation of MSUs is not permitted if EWLC is selected. z10 BC, z9 BC, z890 or z800 Servers in a Qualified Parallel Sysplex z10 BC, z9 BC and z890 standalone customers will have EWLC pricing. All sub-capacity eligible products will be priced using the EWLC pricing metric. The remaining, non-sub-capacity eligible products will be priced using the Tiered EWLC (TWLC) price structure. The TWLC price structure, for non-subcapacity products offers flat pricing based on z10 BC, z9 BC and z890 server capacity using a tiered structure. The TWLC price structure is exclusive to the z10 BC, z9 BC and z890 servers. Note: the smallest z10 BC and z9 BC, capacity setting A01, and the smallest z890, capacity setting 110, are priced using zELC. \u00a0 EWLC and TWLC on z10 BC, z9 BC and z890 Standalone z800 standalone customers may choose to adopt EWLC pricing. The other option for z800 standalone customers is zSeries Entry License Charges (zELC).If they choose to adopt the EWLC pricing metric, then all sub-capacity eligible products must be moved to the EWLC",
+    "textAfterTable": "TWLC Structure (flat monthly pricing, not available on z800) Tier Machine Capacity Tier A 1 - 11 MSUs Tier B 12 - 15 MSUs Tier C 16 - 40 MSUs Tier D 41 - 75 MSUs Tier E 76 - 1500 MSUs Tier F 1501+ MSUs EWLC on z800 Example This example shows a two LPAR z800 machine, model 004 with a rated capacity of 108 MSUs. The highest rolling 4-hour average for LPAR SYSA is shown as 55 MSUs, the highesr rolling 4-hour average for LPAR SYSB is shown as 50 MSUs and the highest rolling combined 4-hour average for LPARs SYSA and SYSB is 93 MSUs. Also, the software shown in each LPAR is indicated in the diagram, below: This example assumes that the customer has fully migrated to z/OS in 64-bit mode (there is no OS/390 or MVS on this machine) and all other EWLC Sub-Capacity terms and conditions are met. Therefore, the following are the pricing options available for this machine: Product zELC Full-Capacity EWLC Sub-Capacity EWLC IMS zELC Model 004 EWLC 108 MSUs EWLC 55 MSUs CICS",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

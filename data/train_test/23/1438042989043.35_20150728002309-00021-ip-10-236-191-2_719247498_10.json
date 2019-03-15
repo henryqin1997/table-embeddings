@@ -1,0 +1,47 @@
+{
+    "relation": [
+        [
+            "Household member",
+            "Alice",
+            "Albert",
+            "Aaron",
+            "Brian",
+            "Beatrice",
+            "Ben"
+        ],
+        [
+            "Relationship to Alice",
+            "self (householder)",
+            "spouse",
+            "related child",
+            "unrelated individual",
+            "unrelated individual",
+            "unrelated individual"
+        ],
+        [
+            "Income",
+            "$5,000",
+            "$40,000",
+            "$0",
+            "$0",
+            "$5,000",
+            "$0"
+        ]
+    ],
+    "pageTitle": "Under .50 - T184_002 - Ratio Of Income In 1999 To Poverty Level - Social Explorer Tables (SE) - Survey Census 2000 - Social Explorer",
+    "title": "",
+    "url": "http://www.socialexplorer.com/data/C2000/metadata/?ds=SE&var=T184_002",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 10,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989043.35/warc/CC-MAIN-20150728002309-00021-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 719268831,
+    "recordOffset": 719247498,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "For example, for 3-person families, 1999 weighted thresholds were calculated in the following way using information from the 2000 Current Population Survey: Even though the official poverty data are based on the 48 thresholds arranged by family size and number of children within the family, data users often want to get an idea of the \"average\" threshold for a given family size. The weighted average thresholds provide that summary. They are weighted averages because for any given family size, families with a certain number of children may be more or less common than families with a different number of children. In other words, among 3-person families, there are more families with two adults and one child than families with three adults. To get the weighted average threshold for families of a particular size, multiply each threshold by the number of families for whom that threshold applies; then add up those products, and divide by the total number of families who are of that family size. back to top Weighted average thresholds To determine a person's poverty status, one compares the persons total family income with the poverty threshold appropriate for that persons family size and composition (see table below). If the total income of that persons family is less than the threshold appropriate for that family, then",
+    "textAfterTable": "$213,656,584 Source: Current Population Survey, March 2000. Dividing $213,656,584 by 16,077 (the total number of 3-person families) yields $13,290, the weighted average threshold for 3-person families. Please note that the thresholds are weighted not just by the number of poor families, but by all families for which the thresholds apply: the thresholds are used to determine which families are at or above poverty, as well as below poverty. Individuals for whom poverty status is determined back to top Poverty status was determined for all people except institutionalized people, people in military group quarters, people in college dormitories, and unrelated individuals under 15 years old. These groups also were excluded from the numerator and denominator when calculating poverty rates. They are considered neither \"poor\" nor \"nonpoor.\" Specified poverty levels back to top For various reasons, the official poverty definition does not satisfy all the needs of data users. Therefore, some of the data reflect the number of people below different percentages of the poverty level. These specified poverty levels are obtained by multiplying the official thresholds by the appropriate factor. For example, the average income cutoff at 125 percent of the poverty level",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

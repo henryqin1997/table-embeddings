@@ -1,0 +1,72 @@
+{
+    "relation": [
+        [
+            "Status",
+            "TO DO",
+            "IN PROGRESS",
+            "IN PROGRESS",
+            "DONE",
+            "DONE",
+            "IN PROGRESS",
+            "TO DO",
+            "DONE",
+            "IN PROGRESS",
+            "DONE"
+        ],
+        [
+            "Project",
+            "System Settings",
+            "PolicyKit integration",
+            "KPackageKit",
+            "Eigen",
+            "Eigen",
+            "KNotify",
+            "Dikku Context Framework",
+            "kwrited",
+            "Akonadi",
+            "Printer Admin"
+        ],
+        [
+            "Description",
+            "add Administrator mode button. See Bug 151669",
+            "Add PolicyKit support for KDE",
+            "Pushing in KPackageKit (dependant on PolicyKit integration)",
+            "Make Eigen 2 ready for KDE, and move it to kdesupport",
+            "Port all Eigen-using code in KDE and KOffice to Eigen 2.0",
+            "Create OSD based replacement for current KPassivePopup [Deferred to 4.3]",
+            "Create a context framework with working activities",
+            "Use knotify in kwrited",
+            "Various Akonadi related items can be found here http://techbase.kde.org/Projects/PIM/Akonadi#Scheduled_for_4.2",
+            "KDEPrint is dead, long live system-config-printer-kde (kdeadmin) and printer-applet (kdeutils)! Thanks to jriddell for these."
+        ],
+        [
+            "Contact",
+            "Alessandro Diaferia",
+            "Dario Freddi",
+            "Daniel",
+            "Beno\u00eet Jacob",
+            "Beno\u00eet Jacob",
+            "Ben Cooksley",
+            "Harikrishna Anandhan",
+            "George Kiagiadakis",
+            "Akonadi Developers",
+            ""
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"Schedules/KDE4/4.2 Feature Plan\" - KDE TechBase",
+    "title": "",
+    "url": "https://techbase.kde.org/index.php?title=Schedules/KDE4/4.2_Feature_Plan&diff=37031&oldid=37028",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987135.9/warc/CC-MAIN-20150728002307-00327-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 900262403,
+    "recordOffset": 900234529,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Other 17 kdeplasma-addons 16 kdebase-apps 15 kdebase-runtime 14 kdegraphics 13 kdeaccessibility 12 kdemultimedia 11 kdeedu 10 kdesdk 9 kdegames 8 kdebindings 7 kdeutils 6 kdepim 5 kdenetwork 4 kdepimlibs 3 kdebase-workspace 2 kdelibs 1 Other Contents done => completed in-progress => started, but not completed yet todo => not started yet Legend: Schedules/KDE4/4.1 Feature Plan Schedules/KDE4/4.3 Feature Plan Schedules/KDE4/4.2 Release Goals Schedules/KDE4/4.2 Release Schedule See also: This is a list of planned features for the 4.2 release. Revision as of 19:54, 3 January 2009 {{FeatureDone|Kopete|Message delivery notifications|kedgedev@centrum.cz|Roman Jarosz}} \u00a0 {{FeatureDone|Kopete|Message delivery notifications|kedgedev@centrum.cz|Roman",
+    "textAfterTable": "kdelibs Status Project Description Contact DONE kross Extend QtScript integration. Sebastian Sauer <mail@dipe.org> DONE KLocale Implement KLocale based methods to return correct working week start and end days and day of religious worship for the locale. John Layt <john@layt.net> DONE KDateTable Correctly draw weekends and day of worship for locale using new KLocale settings. John Layt <john@layt.net> TO DO Phonon add Port class for fine grained control over data flow between Phonon objects Matthias Kretz <kretz@kde.org> IN PROGRESS Phonon make AbstractMediaStream/Streamterface threadsafe",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

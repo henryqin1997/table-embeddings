@@ -1,0 +1,65 @@
+{
+    "relation": [
+        [
+            "Date",
+            "11 Jul 1997",
+            "9 May 2003",
+            "2 May 2007",
+            "26 Oct 2007",
+            "5 May 2008",
+            "9 May 2011",
+            "18 Jan 2012",
+            "19 Jan 2012"
+        ],
+        [
+            "Code",
+            "AS",
+            "FPAY",
+            "FPAY",
+            "AS",
+            "AS",
+            "FPAY",
+            "AS",
+            "AS"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Fee payment",
+            "Fee payment",
+            "Assignment",
+            "Assignment",
+            "Fee payment",
+            "Assignment",
+            "Assignment"
+        ],
+        [
+            "Description",
+            "Owner name: OPTIMAY CORPORATION, DISTRICT OF COLUMBIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:KING, MICHAEL ROY;REEL/FRAME:008767/0177 Effective date: 19970522",
+            "Year of fee payment: 4",
+            "Year of fee payment: 8",
+            "Owner name: AGERE SYSTEMS INC., PENNSYLVANIA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:LUCENT TECHNOLOGIES INC.;REEL/FRAME:020035/0704 Effective date: 20020531",
+            "Owner name: INFINEON TECHNOLOGIES AG, GERMANY Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:AGERE SYSTEMS INC.;REEL/FRAME:020897/0219 Effective date: 20071024",
+            "Year of fee payment: 12",
+            "Effective date: 20110131 Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:INFINEON TECHNOLOGIES AG;REEL/FRAME:027548/0623 Owner name: INTEL MOBILE COMMUNICATIONS TECHNOLOGY GMBH, GERMA",
+            "Owner name: INTEL MOBILE COMMUNICATIONS GMBH, GERMANY Effective date: 20111031 Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNOR:INTEL MOBILE COMMUNICATIONS TECHNOLOGY GMBH;REEL/FRAME:027556/0709"
+        ]
+    ],
+    "pageTitle": "Patent US5983366 - Data processing system having monitoring of software activity - Google Patents",
+    "title": "",
+    "url": "http://www.google.ca/patents/US5983366",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986451.45/warc/CC-MAIN-20150728002306-00170-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 470641275,
+    "recordOffset": 470601852,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{43301=FIG. 3 illustrates a block diagram of the three layer protocol stack 200 associated with the hardware 202 of a GSM transceiver which may be as illustrated in FIG. 1 and a user interface 204 which is implemented to conform to GSM specifications 0.2.30 permitting different product configurations. Layer 1 is identified by the legend \"L1\" and reference numeral 106 and layer 2 is identified by the legend \"L2\" and reference numeral 206. Layer 1 conforms to the description of FIG. 2. Layer 3 is identified by reference numeral 208 and performs a plurality of functions as described below. Speech 210 is transmitted between the hardware 202 and the user interface 204. Data 212 is transmitted between hardware 202 and the user interface 204.}",
+    "textBeforeTable": "Patent Citations While a preferred embodiment of the present invention is the tracing of the operation of a data processing system of a GSM transceiver, it should be understood that the invention is not limited thereto. It is intended that all such modifications fall within the scope of the appended claims. As a result of sharing of the overhead of tracing the execution of selected parts of a computer program of a data processing system with a host processor, the data processing systems of devices, such as GSM transceivers, may have their programs traced without burdening their data processing capacity as typified by prior art usages of print messages. MN TCH attaching to TCh: state DSPSpeechLoaded\u2192DSPSpeechActive The host processor trace information 308 produced for the host system is a file of binary data which contains all the strings declared in the trace definition files 302, along with trace control data similar to the trace control data supplied to the transceiver which allows the host processor program to look up the trace id and then correctly unpack the trace message and display the trace string and its parameters in the way defined in the trace control file at step 314. In the example above, this results in the following trace output being generated at step 314: 4) GSMExternalTrace must look up the trace given in trace control tables of the embedded data processing system information 306 so it knows",
+    "textAfterTable": "US6279122 21 Dec 2000 21 Aug 2001 International Business Machines Corporation Apparatus and method for self generating error simulation test data from production code US6282701 * 30 Jul 1998 28 Aug 2001 Mutek Solutions, Ltd. System and method for monitoring and analyzing the execution of computer programs US6510533 26 Dec 2000 21 Jan 2003 Micron Technology, Inc. Method for detecting or repairing intercell defects in more than one array of a memory device US6601183 * 30 Sep 1999 29 Jul 2003 Silicon Graphics, Inc. Diagnostic system and method for a highly scalable computing system US6609144 19 Oct 2000 19 Aug 2003 Matsushita Electric Industrial Co., Ltd. Program reception/execution apparatus that can commence execution of a machine program having only received the program in part, and a program transmission apparatus that enables such execution US6615370 * 1 Oct 1999 2 Sep 2003 Hitachi, Ltd. Circuit for storing trace information US6684348 1 Oct 1999",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,111 @@
+{
+    "relation": [
+        [
+            "",
+            "GTK+",
+            "Qt/Qt Extended",
+            "Middleware",
+            "Java",
+            "Python",
+            "Mono",
+            "Ruby"
+        ],
+        [
+            "Om 2009",
+            "yes",
+            "yes",
+            "FSO",
+            "??",
+            "yes",
+            "??",
+            "??"
+        ],
+        [
+            "Om 2008",
+            "yes",
+            "yes",
+            "qtopia-x11",
+            "Jalimo",
+            "yes",
+            "yes (1)",
+            "yes"
+        ],
+        [
+            "Om 2007.2",
+            "yes",
+            "no",
+            "gsmd/neod",
+            "Jalimo",
+            "yes",
+            "yes (1)",
+            "??"
+        ],
+        [
+            "SHR",
+            "yes",
+            "yes ?",
+            "FSO",
+            "Jalimo",
+            "yes",
+            "no",
+            "??"
+        ],
+        [
+            "Qt Extended Improved",
+            "no",
+            "yes",
+            "Qt Extended",
+            "??",
+            "yes",
+            "??",
+            "??"
+        ],
+        [
+            "Debian",
+            "yes",
+            "yes",
+            "FSO",
+            "CacaoVM, JamVM",
+            "yes",
+            "yes (1)",
+            "yes (1)"
+        ],
+        [
+            "Gentoo",
+            "yes",
+            "yes",
+            "FSO",
+            "??",
+            "yes",
+            "??",
+            "yes (1)"
+        ],
+        [
+            "Android",
+            "??",
+            "??",
+            "??",
+            "??",
+            "??",
+            "??",
+            "??"
+        ]
+    ],
+    "pageTitle": "Distributions/eu - Openmoko",
+    "title": "",
+    "url": "http://wiki.openmoko.org/index.php?title=Distributions/eu&diff=prev&oldid=79237",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 46,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00021-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 255290931,
+    "recordOffset": 255259992,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{26993=Openmoko banaketak hainbat mobiletan erabiltzeko diseinatu dira, baina helburu nagusia Openmoko Inc. proiektuaren Neo 1973 eta Neo FreeRunner telefono mugikorretan funtzionatzea dute. GNU/Linux banaketak dira, alegia, Linux sistema eragilea eta erabilera zabaleko hainbat aplikazioz osatutako aplikazio multzoak dira. Zeure telefonoan banaketa horietako edozein instala zenezake, edo nahi izanez gero, banaketa bat baino gehiago eduki ditzakezu eta pizterakoan aukeratu zein banaketarekin abiarazi nahi duzun. Banaketaren bat deskargatzeko ikusi Download, instalaziorako argibideak FreeRunnerrean banaketen instalazioa orrian aurkituko dituzu., 38048=Hackable1 is a community distribution for hackable devices like the Neo Freerunner. It is based on Debian and 2007.2 userland which has been abandoned by Openmoko. It follows the GNOME mobile platform., 53361=SHR is a community driven distribution. It contains some basic EFL based applications which make use of the FSO. There currently is an EFL (with elementary) dialer, messages and contacts application programmed in C, as well as a nice Settings-GUI in Python. As of April 12th, 2009, there is no stable release of this distribution yet, as the SHR team doesn't feel it to be good enough. You can find images though on the SHR buildhost., 55235=As of release 12.2, Slackware is now officially supported on the Neo Freerunner [2] --djdas 15:54, 13 June 2009 (UTC)There aren't any confirmations of ArmedSlack running on Freerunner either on the website or the official ML, do you have any link pointing on that?, 28275=2009ko abuztuaz geroztik egindako inkesta baten arabera SHR da gehien erabiltzen den banaketa, eta horri openmokoren banaketek jarraitzen diote (Om 2007, Om 2008 eta Om 2009 hirurak bakar baten moduan hartuz gero beti ere), beste hainbat aukera ere badaude: Debian, Debianen oinarritutako Hackable:1, Qt Extended Improved, Android, Qtmoko eta abar.[1] Om 2009 banaketaren garapena geratu egin da ordea, eta beraz bere erabiltzaileek beste banaketaren batera pasa beharko dute., 49853=On 5th March 2009 Qt Software released Qt Extended 4.4.3. On 3rd March 2009 Qt Software announced that Qt Extended 4.4.3 would be the last release of the Qt Extended product. Prior to version 4.3, Qt Extended was known as Qtopia., 56997=FDOM was a distribution based on Om 2008, updated with many ready-to-use applications and with fixes posted in the mailing lists.}",
+    "textBeforeTable": "Hardware Support Open source applications: more games, scientific, you name it... Smartphone applications: GPS, media player, simple games, web browser... Basic telephony applications: voice calls, SMS, alarm clock... Libraries and application framework (widget toolkit and and graphical environment)\u00a0: EFL, Qt, Gtk+ or Java\u00a0? Display driver. The original Qt Extended uses the framebuffer, most other distributions today use X11. Middleware: daemons to handle GSM calls or GPS, sound system, personal information storage and so on. Qt and Android have their own subsystems, FreeSmartphone.Org (FSO) is working towards a standard-based Free Software one. The kernel. GNU/Linux kernels versions 2.6.24, 2.6.26 or 2.6.28 can be found. Some have modules compiled in, others have modules compiled separately. If compiled separately, modules can be distributed in the same package file as the kernel or separately. The bootloader. Theoretically, any version of uboot could be used with any distribution. In the future Qi will replace uboot. The bootsplash screen image. This is purely decorative. Generally, distributions can differ on one or more of the following components: Features by distribution/release target Archlinux is a distribution that follows the KISS principle. mySTEP by Openmoko distributor Golden Delicious Computers is based on GNUstep and brings a Objective-C API to the Neo. Core GUI frameworks are \"Foundation\"",
+    "textAfterTable": "yes Not through UI yes VoIP no \u00a0?? \u00a0?? \u00a0?? yes (1) yes \u00a0?? no Bluetooth no yes (*) yes (*) yes (*) yes (*) yes (*) yes yes GPS yes (1) yes (1) yes yes yes yes (1) yes (1) yes Power Om 2009 Om 2008 Om 2007.2 SHR Qt Extended Improved Debian Gentoo Android Suspend yes yes \u00a0?? yes yes yes yes yes Resumes on Event yes \u00a0?? \u00a0?? yes yes yes yes \u00a0?? Functions after Resume yes yes",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

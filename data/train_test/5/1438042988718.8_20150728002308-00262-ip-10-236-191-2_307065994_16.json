@@ -1,0 +1,125 @@
+{
+    "relation": [
+        [
+            "Qtr",
+            "1st",
+            "2nd",
+            "3rd",
+            "4th",
+            "Tot"
+        ],
+        [
+            "FG",
+            "9",
+            "19",
+            "9",
+            "7",
+            "44"
+        ],
+        [
+            "FGA",
+            "19",
+            "25",
+            "17",
+            "19",
+            "80"
+        ],
+        [
+            "FG%",
+            ".474",
+            ".760",
+            ".529",
+            ".368",
+            ".550"
+        ],
+        [
+            "2P",
+            "7",
+            "17",
+            "8",
+            "7",
+            "39"
+        ],
+        [
+            "2PA",
+            "14",
+            "22",
+            "13",
+            "15",
+            "64"
+        ],
+        [
+            "2P%",
+            ".500",
+            ".773",
+            ".615",
+            ".467",
+            ".609"
+        ],
+        [
+            "3P",
+            "2",
+            "2",
+            "1",
+            "0",
+            "5"
+        ],
+        [
+            "3PA",
+            "5",
+            "3",
+            "4",
+            "4",
+            "16"
+        ],
+        [
+            "3P%",
+            ".400",
+            ".667",
+            ".250",
+            ".000",
+            ".312"
+        ],
+        [
+            "eFG%",
+            ".526",
+            ".800",
+            ".559",
+            ".368",
+            ".581"
+        ],
+        [
+            "Ast'd",
+            "6",
+            "8",
+            "6",
+            "1",
+            "21"
+        ],
+        [
+            "%Ast'd",
+            ".667",
+            ".421",
+            ".667",
+            ".143",
+            ".477"
+        ]
+    ],
+    "pageTitle": "Denver Nuggets at Memphis Grizzlies Shot Charts, February 13, 2011 | Basketball-Reference.com",
+    "title": "",
+    "url": "http://www.basketball-reference.com/boxscores/shot-chart/201102130MEM.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 16,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988718.8/warc/CC-MAIN-20150728002308-00262-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 307082388,
+    "recordOffset": 307065994,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{17413=Mobile Site You Are Here\u00a0>\u00a0BBR Home\u00a0>\u00a0Box Scores\u00a0>\u00a0Denver Nuggets at Memphis Grizzlies Shot Charts, February 13, 2011}",
+    "textBeforeTable": "Make Tiny URL Denver Nuggets } } } update_shot_chart(team); } $('#player-' + team).val(player); player = player[1]; if ( player !== null && player.length > 0 ) { var player = url.match(/player=([a-z]{3,7}[0-9]{2})/); // Get the player } $('#quarter-' + team).val(quarter); quarter = quarter[1]; if ( quarter !== null && quarter.length > 0 ) { var quarter = url.match(/quarter=([0-9]{1})/); // Get the quarter setTimeout(function(){$(\"#shot_chart-\" + team).css(\"box-shadow\", \"none\")}, 2500); $(\"#shot_chart-\" + team).css(\"box-shadow\", \"0px 0px 5px \" + color + \", inset 0px 0px 2px \" + color); var color = $(\"#shot_chart-\" + team).find(\"h2\").css(\"background-color\"); $(\"#shot_chart-\" + team)[0].scrollIntoView(true); // Scroll to the team shot chart team = team[1]; if ( team !== null && team.length > 0 ) { var team = url.match(/team=([A-Z]{3})/); // Get the team and other params var url = location.href; if (document.readyState == \"complete\") { document.onreadystatechange = function () { } $('#shots-' + team_id + ' span').show(); $('#player-' + team_id).val('0'); $('#quarter-' + team_id).val('0'); function reset_shot_chart(team_id) { // Reset the shot chart } } $('#shots-' + team_id + ' span').not('.p-' + player).hide(); if ( player != '' ) { } $('#shots-' + team_id + ' span').not('.q-' + quarter).hide(); if ( quarter != '' ) { $('#shots-' + team_id + ' span').show(); player = $('#player-' + team_id).val(); quarter = $('#quarter-' + team_id).val(); function update_shot_chart(team_id) { // Update the shot chart } makeTinyURL(elem, url); url += \"&player=\" + $(\"#player-\" + team).val();",
+    "textAfterTable": "All Quarters 1st Quarter 2nd Quarter 3rd Quarter 4th Quarter All Players Arron Afflalo Chris Andersen Carmelo Anthony Chauncey Billups Al Harrington Nene Hilario Ty Lawson Kenyon Martin J.R. Smith Reset \u00d7 \u00d7 \u2022 \u2022 \u00d7 \u2022 \u2022 \u00d7",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,68 @@
+{
+    "relation": [
+        [
+            "Date",
+            "13 Oct 2004",
+            "18 Apr 2005",
+            "10 Nov 2006",
+            "22 Nov 2006",
+            "1 Mar 2010",
+            "11 Mar 2010",
+            "13 Feb 2015",
+            "27 Mar 2015",
+            "27 Mar 2015"
+        ],
+        [
+            "Code",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "AS",
+            "REMI",
+            "SULP",
+            "FPAY"
+        ],
+        [
+            "Event",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Assignment",
+            "Maintenance fee reminder mailed",
+            "Surcharge for late payment",
+            "Fee payment"
+        ],
+        [
+            "Description",
+            "Owner name: ZARLINK SEMICONDUCTOR INC., CANADA Free format text: ASSIGNMENT OF ASSIGNORS INTEREST;ASSIGNORS:CHANG, RONG-FENG;TWU, MIKE;BARRACK, CRAIG;AND OTHERS;REEL/FRAME:015883/0908 Effective date: 20040907",
+            "Owner name: ZARLINK SEMICONDUCTOR INC., CANADA Free format text: CORRECTIVE ASSIGNMENT TO CORRECT THE ASSIGNMENT TEXT WHICH INCORRECTLY IDENTIFIES THE SUBJECT APPLICATION PREVIOUSLY RECORDED ON REEL 015889 FRAME 0908. ASSIGNOR(S) HEREBY CONFIRMS THE ASSIGNMENT;ASSIGNORS:CHANG, RONG-FENG;TWU, MIKE;BARRACK, CRAIG;AND OTHERS;REEL/FRAME:015910/0624 Effective date: 20041101",
+            "",
+            "Owner name: BANK OF NEW YORK TRUST COMPANY, N.A.,ILLINOIS Free format text: SECURITY AGREEMENT;ASSIGNOR:CONEXANT SYSTEMS, INC.;REEL/FRAME:018711/0818 Effective date: 20061113",
+            "Owner name: CONEXANT SYSTEMS, INC.,CALIFORNIA Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:THE BANK OF NEW YORK MELLON TRUST COMPANY, N.A. (FORMERLY, THE BANK OF NEW YORK TRUST COMPANY, N.A.);REEL/FRAME:023998/0838 Effective date: 20100128 Owner name: CONEXANT SYSTEMS, INC., CALIFORNIA Free format text: RELEASE BY SECURED PARTY;ASSIGNOR:THE BANK OF NEW YORK MELLON TRUST COMPANY, N.A. (FORMERLY, THE BANK OF NEW YORK TRUST COMPANY, N.A.);REEL/FRAME:023998/0838 Effective date: 20100128",
+            "Owner name: THE BANK OF NEW YORK, MELLON TRUST COMPANY, N.A.,I Free format text: SECURITY AGREEMENT;ASSIGNORS:CONEXANT SYSTEMS, INC.;CONEXANT SYSTEMS WORLDWIDE, INC.;CONEXANT, INC.;AND OTHERS;REEL/FRAME:024066/0075 Effective date: 20100310 Owner name: THE BANK OF NEW YORK, MELLON TRUST COMPANY, N.A., Free format text: SECURITY AGREEMENT;ASSIGNORS:CONEXANT SYSTEMS, INC.;CONEXANT SYSTEMS WORLDWIDE, INC.;CONEXANT, INC.;AND OTHERS;REEL/FRAME:024066/0075 Effective date: 20100310",
+            "",
+            "",
+            "Year of fee payment: 4"
+        ]
+    ],
+    "pageTitle": "Patent US7974272 - Remote control of a switching node in a stack of switching nodes - Google Patents",
+    "title": "",
+    "url": "http://www.google.ca/patents/US7974272",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 13,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988962.66/warc/CC-MAIN-20150728002308-00155-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 482183119,
+    "recordOffset": 482151966,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Patent Citations The embodiments presented are exemplary only and persons skilled in the art would appreciate that variations to the above described embodiments may be made without departing from the spirit of the invention. The scope of the invention is solely defined by the appended claims. , management processor 306-A and management processor 306-B both initialize their own domains as described above. A clash occurs when both management processor try to initialize the same switching node 302-S. To address the clash, suppose that management processor 306-A initializes switching node 302-S first. When management processor 306-B tries to re-initialize the switching node 302-S by sending it a command frame 410, the command engine 310 of switching node 302-S will send the corresponding acknowledgment back to management processor 302-A because management processor 306-A is the controlling management processor 306 of switching node 302-S in accordance with the then current configuration. The management processor 302-A recognizes the clash when the management processor 302-A receives an acknowledgment for a command frame 410 that it never sent. Following the receipt of such an acknowledgement, management processors 306-A and 306-B communicate directly and negotiate which switching nodes will be controlled by each. FIG. 10 In . FIG. 10 . As long as each switching node 302 has knowledge of the location of its own controlling management processor 306, the methods and algorithms described above apply with no modification.",
+    "textAfterTable": "* Cited by examiner Non-Patent Citations Reference 1 * D. Harrington, \"RFC 2571: An Architecture for Describing SNMP Management Frameworks,\" Apr. 1999, Network Working Group, p. 1-62. 2 First Foreign Office Action for DE102005032479.7-31 mailed Jan. 29, 2009. 3 First Office Action for CN20051088804.2 mailed Jan. 18, 2008. 4 First Office Action for JP2005-219529 mailed Mar. 4, 2008. 5 Fourth Office Action for CN20051088804.2 mailed Jun. 5, 2009. 6 Second Foreign Office Action for DE102005032479.7-31 mailed Jan. 11, 2010. 7 Second Office Action for CN20051088804.2 mailed Aug. 29, 2008. 8 Second Office Action for JP2005-219529 mailed Jun. 24, 2008. 9 Third Office Action for CN20051088804.2 mailed Jan. 16, 2009. * Cited by examiner Referenced by Citing Patent",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,48 @@
+{
+    "relation": [
+        [
+            "Component",
+            "Lines",
+            "Triangle",
+            "Square",
+            "Pentagon",
+            "Hexagon",
+            "Circle"
+        ],
+        [
+            "Layer",
+            "Red",
+            "Red",
+            "0",
+            "Blue",
+            "Blue",
+            "0"
+        ],
+        [
+            "Color",
+            "30 (\"orange\")",
+            "ByLayer",
+            "ByLayer",
+            "ByLayer",
+            "ByBlock",
+            "ByBlock"
+        ]
+    ],
+    "pageTitle": "The Architect's Desktop: January 2008",
+    "title": "",
+    "url": "http://architects-desktop.blogspot.com/2008_01_01_archive.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989510.73/warc/CC-MAIN-20150728002309-00013-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 11116355,
+    "recordOffset": 11088835,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Thu, 30 Jul 2015 21:42:11 GMT",
+    "textBeforeTable": "To illustrate the effects of ByLayer and ByBlock, I created a block definition that included the following items, with the noted layer and color properties. The effects of ByLayer and ByBlock, when applied to linetype, lineweight or plot style would be similar. The drawing file in which the block was created has four layers of interest: 0, color 7; Red, color red; Blue, color blue; and Magenta, color magenta. BYBLOCK to a property of a nested object \u2013 such as an object within a block definition or a component of a dimension, causes that object to inherit the property of the parent object. If BYBLOCK is assigned to a main object, the default value for that property (color 7, continuous linetype, the drawing default lineweight and the Normal plot style) will be used for the object until it is made part of a block. Assigning BYLAYER to a property causes the object to inherit the value for that property from the layer on which the object resides. Nested items within a block definition that are defined on the special layer \"0\" inherit the layer of the parent object, and, when \"BYLAYER\" is specified for a property, the value assigned to that property on the layer of the parent object. Assigning In addition to assigning explicit values for color, linetype, lineweight and plot style, there are two \"special\" options, BYLAYER and BYBLOCK. ByLayer and ByBlock Plot",
+    "textAfterTable": "In the image below, the parent block is inserted on the Magenta layer in both cases; on the left side, the parent block color is set to ByLayer, which would be \"magenta\", and on the right side, the parent block color is set to \"green\". Lines: In both cases, the two lines are \"orange\" (color 30), as they were defined with that color explicitly assigned, so neither the color of the layer on which they reside (\"red\", for the Red layer) nor the color of the parent block (\"magenta\" on the left or \"green\" on the right) have any effect on them. Triangle: The triangle is \"red\" in both cases, because the triangle was defined on layer Red, and its color was set to \"ByLayer\", so it inherits the color of the layer on which it was placed. Square: The square is \"magenta\" in both cases, because the square was defined on the special layer 0 and color was set to \"ByLayer\", so it inherits the layer of the parent object (Magenta) and therefore the color of that layer. Pentagon: Like the square, the pentagon has an explicit layer assignment, in this case Blue, and therefore the \"ByLayer\" assignment results in the color being \"blue\" in both cases. Hexagon: The hexagon is also placed on the Blue layer, but",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

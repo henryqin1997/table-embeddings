@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Podcast",
+            "Elementarfragen 9",
+            "Fanboys Podcast 49",
+            "Engadget Podcast 270",
+            "Newz of the world 1",
+            "Naked Scientists",
+            "Pressrecord 16",
+            "Disney Land News Today",
+            "Inside Home Recording",
+            "Fubar Podcast 6"
+        ],
+        [
+            "Encoder",
+            "GarageBand",
+            "Hindenburg Journalist",
+            "GarageBand",
+            "iTunes",
+            "unknown",
+            "GarageBand",
+            "GarageBand",
+            "GarageBand",
+            "Hindenburg Journalist"
+        ],
+        [
+            "Used Tags",
+            "name, artist, composer, encoded with, date, album, genre (Podcast), comments (for URL), description, lyrics (for show notes)",
+            "name, artist, encoded with, album, track, genre (Podcast), comments (for show notes), description (for show notes), lyrics (for show notes)",
+            "name, artist, encoded with, date, album, track, genre (Podcast), comments (for URL)",
+            "name, artist, encoded with, date, album, track, genre (Podcast), BPM, album artist",
+            "name, artist, encoded with, date, album, description (for show notes), genre (Podcast), BPM",
+            "name, artist, composer, encoded with, album, comments (for show notes)",
+            "name, encoded with",
+            "name, artist, composer, encoded with, date, album, track, genre (Podcast), lyrics (for show notes)",
+            "name, artist, encoded with, album, genre (Podcast), album artist, lyrics (for show notes)"
+        ]
+    ],
+    "pageTitle": "Auphonic Blog: Podcast Comparison, Part 4: MPEG-4 iTunes-style Metadata (AAC Audio, M4A, MP4)",
+    "title": "",
+    "url": "http://auphonic.com/blog/2012/02/18/podcast-comparison-part-4-mpeg-4-itunes-style-metadata-aac-audio-m4a-mp4/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990114.79/warc/CC-MAIN-20150728002310-00313-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 18290401,
+    "recordOffset": 18282199,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{1668=Written by Georg Holzmann on Feb. 18, 2012 in Audio., 32332=\u00a9 2015 by Auphonic, 4513=Helpful tools to analyze MP4 audio are mp4v2 (including the tools mp4chaps, mp4art, mp4file, mp4info, mp4track) and faad, the Free Advanced Audio Decoder, can list AAC codec details and metadata tags.}",
+    "textBeforeTable": "But now let's look at some real life MP4 files. The following table lists iTunes-style metadata tags and the encoding/tagging software of a few podcasts: Used Tags Helpful tools to analyze MP4 audio are mp4v2 (including the tools mp4chaps, mp4art, mp4file, mp4info, mp4track) and faad, the Free Advanced Audio Decoder, can list AAC codec details and metadata tags. So far so good, but iTunes-style metadata isn't defined in any publicly available document. Its format is determined by the types of files that iTunes and the iTunes Music Store produce and provide (see AtomicParsley, MPEG4 Files, bottom). Some open source projects assembled a list of currently known iTunes tags: iTunes Metadata (mp4v2) and Known iTunes Metadata Atoms (AtomicParsley) Unfortunately no official metadata or tagging standard exists for MP4. The MPEG-4 specification just defines a standard place to put metadata, but there is no standard on any fields, except cprt for copyright :). Therefore different metadata styles are possible: iTunes-style metadata, 3gp-style metadata, MP4 ID3v2 tags and more. Most podcasts and audio files use iTunes-style metadata. The MPEG-4 container format is based on Apple's QuickTime container and each MPEG-4 file must have a major file brand. For example, an AAC audio file typically lists M4A as its major file brand. See AtomicParsley for a description of the MPEG-4 container and MP4 Registration Authority for a list of official file brand",
+    "textAfterTable": "AAC Details, Chapter Marks and Images It's also interesting to analyze which AAC flavours (LC or HE AAC, for a short description see AAC Details) and bitrates are used. Furthermore we compared mostly Enhanced Podcasts, which contain chapter marks. And there are of course multiple ways to embed chapter marks in an MP4 audio stream (e.g. QuickTime chapters, Nero chapters), but basically all podcasts use QuickTime chapters. The next table shows AAC details, bitrates, cover image size, number of chapter marks and length of the analyzed podcasts: Podcast Format Image Chapter Marks Length Elementarfragen 9 LC AAC, 128kbps jpeg, 1024x1024 15 02:04:22 Fanboys Podcast 49 HE AAC, 56kbps png 320x320, jpeg 1024x1024 24 01:08:17 Engadget Podcast 270 LC AAC, 80kbps jpeg, 300x300 6 01:26:35 Newz of the world 1 HE AAC, 49kbps jpeg, 600x600 6 57:52 Naked Scientists LC AAC, 48kbps jpeg, 300x300 26 01:07:32 Pressrecord 16 LC AAC, 128kbps jpeg, 300x300 No 01:20:48 Disney Land News Today LC AAC, 192kbps jpeg, 300x300 4 01:58:22 Inside Home Recording LC AAC, 128kbps jpeg, 300x300 8 01:02:08 Fubar Podcast 6 HE AAC, 80kbps jpeg, 1200x1200 33 04:04:30 Podcast Comparison Series If you are interested in",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

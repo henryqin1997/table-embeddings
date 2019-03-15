@@ -1,0 +1,54 @@
+{
+    "relation": [
+        [
+            "SOLUTION",
+            "Access point",
+            "Wireless gateway",
+            "Hotspot provider",
+            "A second Internet connection",
+            "A firewall with separate VLANs"
+        ],
+        [
+            "WHY?",
+            "Basic wireless connectivity",
+            "Increased control over your wireless network",
+            "Ease of maintenance",
+            "Improved security",
+            "Improved security"
+        ],
+        [
+            "COST",
+            "$50 to $80",
+            "$500 to $1500",
+            "$500 to $1000 startup cost and $50 per month",
+            "$25 to $50 per month",
+            "$500 to $1500"
+        ],
+        [
+            "TIME AND LABOR",
+            "One to two hours",
+            "Variable, depending on what features you want, but gateways are more difficult to configure than a regular access point",
+            "Depends on your package, but providers often perform all setup and troubleshooting for you and your patrons",
+            "One to two hours",
+            "Variable, but firewalls are complex devices, and you may need outside help to configure it properly"
+        ]
+    ],
+    "pageTitle": "Networking and Security",
+    "title": "",
+    "url": "http://www.techsoupforlibraries.org/book/export/html/592",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990611.52/warc/CC-MAIN-20150728002310-00040-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 741162163,
+    "recordOffset": 741117448,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{68973=Our branches are on the same wide area network and different subnets, but we\u2019re going away from that model. We are going to put individual connections in different libraries because the more you send traffic through a central location, the slower things get. Right now, the smaller libraries have 256-Kbps connections, and the first of July they\u2019re going to go to T\u00ad1s. And then we are going to put in a fiber connection with two T-\u00ad1s here at the main branch. Our ISP actually owns our routers, so they do all the router maintenance for us. And we go through Merit, which is an ISP for nonprofits in Michigan. They are really easy to work with, and we have never had a problem. This will be our tenth year with them. Actually, the cost of bandwidth went down for us when we went from the 256-\u00adKbps lines to the T-\u00ad1s this year. It will actually cost less for them to have the T-\u00ad1 than it was to have the 256. As a consortium, we buy Internet access, and our libraries can buy into that if they want to. But we don\u2019t have all 20 of the libraries that we support doing that. We have five libraries that don\u2019t come back through the main branch \u2014 they have their own firewalls. And we have about ten that actually come through our firewall first before they go out to the Internet., 25591=We have one central firewall now that we allow multiple libraries to use, so all of their web traffic comes here and then out.\u00a0 When the kids want to play in the library and someone asks me to open a port, I\u2019ll try to determine what port number it is, and then I go out on the Internet and look and see if there are any vulnerabilities to that port.\u00a0 Is there a known Trojan horse or virus that\u2019s coming in on that port?\u00a0 If there is, then we don\u2019t allow the port; if I don\u2019t find anything, then we will allow it, but we might only allow it for a few machines.}",
+    "lastModified": "Tue, 04 Aug 2015 11:45:34 GMT",
+    "textBeforeTable": "The following chart is an overview of some wireless options. Wireless Options Comparison Chart A Basic Wireless Network Each wireless device has a wireless network adapter \u2014 a specific piece of hardware that connects a computer to a WLAN. Wireless adapters come in all shapes and sizes. Some adapters are built into the computer. Others need to be purchased separately and then plugged into the Universal Serial Bus (USB) port or PC Card port. Also, there are \u201cwireless devices.\u201d These are the computers and gadgets that use the access point in order to hook into your network and your Internet connection. The first wireless device that comes to mind for most people is a laptop computer. However, there are hundreds of gadgets that can access wireless networks these days. Library patrons use cell phones, smartphones, personal digital assistants (PDAs), personal gaming devices (like Playstation) and more to connect themselves to wireless networks. Through the rest of this book, \u201claptop\u201d will be used as shorthand for all of the wireless devices out there. First, there\u2019s the wireless access point. The center of a wireless network acts like the hub, or switch, of your wired network, though it also has many of the features of a standard router. On one side, it connects to the Internet, usually through a standard Ethernet cable, and on the other side, it broadcasts a wireless",
+    "textAfterTable": "Note: Sorting through the variations of this approach can be confusing. You might want to talk to an experienced network consultant first. Quick Checklist for Setting Your Wireless Access Policy Use this \u201cQuick Look\u201d checklist to make sure you\u2019re covering your bases when it comes to crafting a wireless policy for your library. Check your existing Internet (Computer) Use Policy. Do you need to add anything to it relating to use of the wireless? You may decide that it covers your situation. However, do keep in mind the following possible additions: Network Security: If you\u2019re providing a fairly open network, consider a disclaimer about the possibility of radio signals (wireless) being intercepted. This is more specific to wireless than the equally useful disclaimers in your Internet policy about how the \u201clibrary is not responsible for lost data due to network failure\u201d and \u201cbeware of viruses\u201d and \u201cbe careful about transmitting your personal information on an open network.\u201d Network Availability: WLANs can be flaky, and patron laptops can be even more so. Note that they may lose signal at random and the library takes no responsibility for lost data, etc. Limitations on Use: Time limits, bandwidth limits, no FTP, no telnet, no streaming content. Do you offer printing? Web-based email only (no SMTP server)? Personal Equipment Security: Warn patrons that the library is not responsible for stolen equipment, lost data due to their",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

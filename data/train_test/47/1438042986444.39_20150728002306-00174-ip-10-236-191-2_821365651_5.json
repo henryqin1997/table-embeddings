@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "JSON",
+            "{\"given\": \"Mark\", \"family\": \"Smith\"}",
+            "{\"name\": \"Mark\", \"age\": 21}",
+            "{\"selected\": true}",
+            "{\"cities\": [\"Amsterdam\", \"Paris\", \"London\"]}",
+            "{\"load\": [0.31, 0.33, 0.32]}",
+            "{\"father\": {\"given\": \"Mark\", \"family\": \"Smith\"}, \"mother\": {\"given\": \"Mary\", \"family\": \"Smith\"}}",
+            "{\"p\": null}",
+            "{\"$v\": 0}",
+            "{\"1\": \"one\"}",
+            "3",
+            "\"Disconnected\"",
+            "[\"red\", \"green\", \"blue\"]",
+            "{g: [[\"a\", \"b\", \"c\"], [\"d\", \"e\"]]"
+        ],
+        [
+            "Transformation",
+            "MarkSmith",
+            "Mark21",
+            "true",
+            "Amsterdam Paris London",
+            "0.31 0.33 0.32",
+            "MarkSmith MarySmith",
+            "",
+            "<_v name=\"$v\" type=\"number\">0",
+            "<_1 name=\"1\">one",
+            "3",
+            "Disconnected",
+            "<_ name=\"\" array=\"true\">red <_ name=\"\" array=\"true\">green <_ name=\"\" array=\"true\">blue",
+            "<_ name=\"\" array=\"true\">a <_ name=\"\" array=\"true\">b <_ name=\"\" array=\"true\">c <_ name=\"\" array=\"true\">d <_ name=\"\" array=\"true\">e"
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"XForms 2.0\" - W3C XForms Group Wiki (Public)",
+    "title": "",
+    "url": "http://www.w3.org/MarkUp/Forms/wiki/index.php?title=XForms_2.0&curid=349&diff=3848&oldid=3847",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986444.39/warc/CC-MAIN-20150728002306-00174-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 821528375,
+    "recordOffset": 821365651,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{103198=The namespace URI for XForms is http://www.w3.org/2002/xforms. The XForms schema has the target namespace specified and as such is compatible with the XForms 1.0 definition., 9242=Copyright \u00a9 2010 W3C\u00ae (MIT, ERCIM, Keio), All Rights Reserved. W3C liability, trademark and document use rules apply., 251979=Here, we have associated a relevant property with element my:discount to indicate a discount is relevant when the order amount is greater than 1000., 254015=Here, we have associated a relevant property with element my:discount to indicate a discount of 10% is relevant when the order amount is greater than 1000., 906280=This XML Schema for XML Events is referenced by the XML Schema for XForms, and located at http://www.w3.org/TR/2003/REC-xml-events-20031014/#a_schema_attribs., 77526=xforms: The XForms namespace, e.g. http://www.w3.org/2002/xforms (see Namespace for XForms) html: An XHTML namespace, e.g. http://www.w3.org/1999/xhtml (see [XHTML 1.0]) xs: The XML Schema namespace http://www.w3.org/2001/XMLSchema (see [XML Schema part 1]) xsd: The XML Schema namespace http://www.w3.org/2001/XMLSchema (see [XML Schema part 2]) xsi: The XML Schema for instances namespace http://www.w3.org/2001/XMLSchema-instance (see [XML Schema part 1]) ev: The XML Events namespace http://www.w3.org/2001/xml-events (see [XML Events]) my: Any user defined namespace, 427145=Lexical: 1998-01-19 Full: 19 janvier 1998 Minimal: 19/01/1998, 905528=The RELAXNG ([RELAXNG], [RELAXNG Compact]) Schema for XForms, which includes the target namespace http://www.w3.org/2002/xforms as well as the version suitable for import to a host language namespace, is located at http://www.w3.org/MarkUp/Forms/2007/XForms-11-RELAXNG.zip., 443417=Notice that the attributes of this element encapsulate sufficient metadata that in conjunction with the type information available from the XForms Model proves sufficient to produce meaningful prompts when using modalities such as speech, e.g., when using an accessibility aid. Thus, in the example below, an aural user agent might speak a prompt of the form Please pick a date in the range January 1, 2001 through December 31, 2001., 905144=The XML Schema for XForms, which has a target namespace http://www.w3.org/2002/xforms, is located at http://www.w3.org/MarkUp/Forms/2007/XForms-11-Schema.xsd., 919927=This section presents complete XForms examples. These and additional examples are maintained at http://www.w3.org/MarkUp/Forms/2002/Examples., 119195=If creation of the XPath data model for the instance data fails, then processing halts after dispatching an xforms-link-exception with a resource-uri indicating either the URI for an external instance, a fragment identifier URI reference (including the leading # mark) for an identified internal instance, or empty string for an unidentified internal instance. This exception could happen, for example, if the content had no top-level element or more than one top-level element, neither of which is permitted by the grammar of XML.}",
+    "textBeforeTable": "Examples This format can be serialized back to JSON with a submission element with a serialization attribute value of \"application/json\". Elements not in the default namespace and unknown attributes are ignored when serialising to JSON. null produces empty content, and an attribute type=\"null\" is added to its element. true and false are copied across, and an attribute type=\"boolean\" is added to its element. A number is copied across, and an attribute type=\"number\" is added to its element. The content of a string is copied across. Escaped characters are transformed as necessary; characters and escapes that have no equivalent XML character (\\b, \\f, and characters of the form \\uxxxx less than \\u0020) are transformed by adding \\uE000 to them. If a value is an (anonymous) array (either being the top-level value, or itself an element of an array), then each element of the transformed array is given the name \"_\" and an attribute name=\"\" is added to the element. If the value part is an array, then each value in the array is so treated, and each such element is given an attribute array=\"true\". Each name/value member is encoded as an XML element whose name is the name of the member, and whose content is the transformation of the value part of the member. If any character of the element name is not an allowable XML name",
+    "textAfterTable": "Note that the mapping is designed to be round-trippable, to allow as natural as possible selectors, and to easily support structural additions and deletions. Example selectors <repeat ref=\"cities\">... <input ref=\"father/given\">... <output ref=\"cities[1]\"/> <output ref=\"g[1]/_[1]\"/> 3.2.2.3 External CSV values When an XForms processor receives a CSV value [CSV], it treats it as follows: A root element <csv/> is created whose content is the transformation of the CSV value. Each row is enclosed in an <r> element. If the first row of the external value contains labels (marked by the header parameter of the media type), then each value in the row is surrounded by an element consisting of the name from the respective header. If the name contains characters that are not XML name characters, they are replaced by the underscore character \"_\"; if the first character may not start an XML name, an underscore is prepended. If the first row of the CSV value does not contain headers, then each value is surrounded by a <v> element. This format can be serialized back to CSV with a submission element with a serialization attribute value of \"text/csv\", with optional charset and header parameters [CSV]. When no header parameter is supplied, it has the same effect as header=absent. Examples",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,47 @@
+{
+    "relation": [
+        [
+            "Field name",
+            "id",
+            "title",
+            "yr",
+            "director",
+            "budget",
+            "gross"
+        ],
+        [
+            "Type",
+            "INTEGER",
+            "CHAR(70)",
+            "DECIMAL(4)",
+            "INT",
+            "INTEGER",
+            "INTEGER"
+        ],
+        [
+            "Notes",
+            "An arbitrary unique identifier",
+            "The name of the film - usually in the language of the first release.",
+            "Year of first release.",
+            "A reference to the actor table.",
+            "How much the movie cost to make (in a variety of currencies unfortunately).",
+            "How much the movie made at the box office."
+        ]
+    ],
+    "pageTitle": "JOIN Quiz 2 - SQLZOO",
+    "title": "movie",
+    "url": "http://sqlzoo.net/w/index.php?title=JOIN_Quiz_2&oldid=1841",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985140.15/warc/CC-MAIN-20150728002305-00303-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 236090544,
+    "recordOffset": 236082342,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "JOIN Quiz - part 2 search navigation, Jump to: diff) Newer revision \u2192 ( diff) | Latest revision ( \u2190 Older revision | diff) ( (Talk | contribs) Marek Revision as of 09:13, 19 July 2012 by From SQLZOO JOIN Quiz 2",
+    "textAfterTable": "actor Field name Type Notes id INTEGER An arbitrary unique identifier name CHAR(36) The name of the actor (the term actor is used to refer to both male and female thesps.) casting Field name Type Notes movieid INTEGER A reference to the movie table. actorid INTEGER A reference to the actor table. ord INTEGER The ordinal position of the actor in the cast list. The star of the movie will have ord value 1 the co-star will have value 2, ... <quiz shuffle=none display=simple> {Which of the following statements lists the unfortunate directors of the movies which have caused financial loses? (gross < budget) |type=\"()\"} - SELECT JOIN(name FROM actor, movie ON actor.id:director WHERE gross < budget) GROUP BY name - SELECT name FROM actor INNER JOIN movie BY actor.id = director HAVING gross < budget + SELECT name FROM actor INNER JOIN movie ON actor.id = director WHERE gross < budget - SELECT name FROM actor INNER JOIN movie ON actor.id:director WHERE gross < budget - SELECT name FROM director INNER JOIN movie ON movie.id = director.id WHERE gross < budget {Select the correct example of JOINing three tables |type=\"()\"} - SELECT * FROM actor JOIN casting BY actor.id = actorid JOIN movie BY movie.id = movieid - SELECT * FROM actor JOIN casting ON actor.id =",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

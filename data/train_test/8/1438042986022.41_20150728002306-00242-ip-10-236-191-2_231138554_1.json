@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "5",
+            "12",
+            "19",
+            "26"
+        ],
+        [
+            "M",
+            "",
+            "6",
+            "13",
+            "20",
+            "27 (1)"
+        ],
+        [
+            "T",
+            "",
+            "7",
+            "14",
+            "21",
+            "28"
+        ],
+        [
+            "W",
+            "1",
+            "8",
+            "15",
+            "22 (1)",
+            "29 (2)"
+        ],
+        [
+            "T",
+            "2",
+            "9",
+            "16 (1)",
+            "23",
+            "30"
+        ],
+        [
+            "F",
+            "3",
+            "10",
+            "17 (1)",
+            "24",
+            ""
+        ],
+        [
+            "S",
+            "4",
+            "11",
+            "18",
+            "25",
+            ""
+        ]
+    ],
+    "pageTitle": "Sguil / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/sguil/mailman/sguil-cvs/?viewmonth=200409",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986022.41/warc/CC-MAIN-20150728002306-00242-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 231150486,
+    "recordOffset": 231138554,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep (2) Aug \u00a0 Jul \u00a0 Jun \u00a0 May \u00a0 Apr \u00a0 Mar \u00a0 Feb \u00a0 Jan (2) 2013 Dec (5) Nov (6) Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun \u00a0 May \u00a0 Apr \u00a0 Mar (2) Feb \u00a0 Jan \u00a0 2012 Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul \u00a0 Jun (1) May (2) Apr \u00a0 Mar (6) Feb \u00a0 Jan \u00a0 2011 Dec \u00a0 Nov \u00a0 Oct",
+    "textAfterTable": "Showing 6 results of 6 Flat | Threaded [Sguil-cvs] sguil/client sguil.tk,1.141,1.142 From: Steve Halligan <shalligan@us...> - 2004-09-29 21:15:17 Update of /cvsroot/sguil/sguil/client In directory sc8-pr-cvs1.sourceforge.net:/tmp/cvs-serv729 Modified Files: sguil.tk Log Message: unreverting one revision, I went too far back -srh Index: sguil.tk =================================================================== RCS file: /cvsroot/sguil/sguil/client/sguil.tk,v retrieving revision 1.141 retrieving revision 1.142 diff -C2 -d -r1.141 -r1.142 *** sguil.tk\t12 Aug 2004 17:55:30 -0000\t1.141 --- sguil.tk\t29 Sep 2004 21:15:08 -0000\t1.142 *************** *** 2678,2686 **** } ! bind . <MouseWheel> { ! if { $currentSelectedPane != 0 } { ! WheelScroll %D $currentSelectedPane \"MouseWheel\" ! } ! } # Toggle SOUND when off/on is clicked bind $soundStatus <Button-1> { --- 2678,2688 ---- } ! # Should be depreciated ! #bind . <MouseWheel> { ! # if { $currentSelectedPane != 0 } { ! # puts \"DEBUG #### %W\" ! #\tWheelScroll %D $currentSelectedPane \"MouseWheel\" ! # } ! #} # Toggle SOUND when off/on is clicked bind $soundStatus <Button-1> { [Sguil-cvs] sguil/client sguil.tk,1.143,1.144 From: Steve Halligan <shalligan@us...> - 2004-09-29 20:32:40 Update of /cvsroot/sguil/sguil/client In directory sc8-pr-cvs1.sourceforge.net:/tmp/cvs-serv24181 Modified",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

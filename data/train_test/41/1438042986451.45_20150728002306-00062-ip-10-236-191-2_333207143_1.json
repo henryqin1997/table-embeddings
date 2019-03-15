@@ -1,0 +1,73 @@
+{
+    "relation": [
+        [
+            "Argument name",
+            "OPTIMAP",
+            "SEQUENCE",
+            "OUTPUT_DIR",
+            "ALLOW_RC",
+            "REUSE_LOCATIONS",
+            "SUPERS",
+            "MIN_QUAL",
+            "OPTI_XML",
+            "SUPERS_XML",
+            "ALIGN_XML"
+        ],
+        [
+            "Argument type",
+            "String",
+            "String",
+            "String",
+            "Bool",
+            "Bool",
+            "String",
+            "UnsignedInt",
+            "String",
+            "String",
+            "String"
+        ],
+        [
+            "Default value",
+            "opticalMap/optimap.simple",
+            "CCTNAGG",
+            "[None]",
+            "True",
+            "False",
+            "[None]",
+            "40",
+            "optimap.xml",
+            "supers.xml",
+            "optialign.xml"
+        ],
+        [
+            "Meaning",
+            "The optical map file.",
+            "Cutting site sequence.",
+            "",
+            "Allow or suppress rc aligns.",
+            "Allow for more than one scaffold to occupy a single location on the map.",
+            "Supers to process.",
+            "Minimum consensus quality to call a splice site.",
+            "Output: the map, reformatted (in SUBDIR).",
+            "Output: info about the assembly (in SUBDIR).",
+            "Output: the alignments (in SUBDIR)."
+        ]
+    ],
+    "pageTitle": "OptiDetailedAligns - ArachneWiki",
+    "title": "",
+    "url": "http://www.broad.mit.edu/crd/wiki/index.php/OptiDetailedAligns",
+    "hasHeader": true,
+    "headerPosition": "MIXED",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986451.45/warc/CC-MAIN-20150728002306-00062-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 333215345,
+    "recordOffset": 333207143,
+    "tableOrientation": "HORIZONTAL",
+    "lastModified": "Mon, 23 Apr 2012 17:45:38 GMT",
+    "textBeforeTable": "Parameters The module OptiDetailedAligns performs a multi-pass alignment between an assembly and an optical map. The input optical map must be in Arachne file format; use OpgenMap2Arachne if necessary. ARACHNE_DIR/optical Source location OPTIMAP, SEQUENCE, OUTPUT_DIR, ALLOW_RC, REUSE_LOCATIONS, SUPERS, MIN_QUAL, OPTI_XML, SUPERS_XML, ALIGN_XML Special CLAs PRE, DATA, RUN, SUBDIR, GDB, NO_HEADER Standard CLAs Analysis Phase Optical map Function OptiDetailedAligns searchnavigation From ArachneWiki OptiDetailedAligns , Jump to:",
+    "textAfterTable": "Typically, running with the default parameters results in decent alignments; however, in special cases, one might want to have more control over the aligner, e.g. in case of large-scale segmental duplications, unusually low quality scores etc. Identifying the cutting site sequence The original map format contains the name of the enzyme used, e.g. \"BsiWI\". A quick Google search should find the sequence associated with the enzyme. Retrieved from \" http://www.broad.mit.edu/crd/wiki/index.php/OptiDetailedAligns\" Categories: Optical map modules | Analysis modules Views Article Discussion View source History Personal tools Log in / create account Navigation",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

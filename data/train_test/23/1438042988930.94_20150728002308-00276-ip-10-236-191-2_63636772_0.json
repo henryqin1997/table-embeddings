@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Option",
+            "auto updater.notify",
+            "auto updater.download",
+            "auto updater.delay",
+            "auto updater.last",
+            "metrics",
+            "background compiler",
+            "ignore version check",
+            "suppressed reports"
+        ],
+        [
+            "Default",
+            "true",
+            "true",
+            "43200",
+            "0",
+            "true",
+            "true",
+            "None",
+            "None"
+        ],
+        [
+            "Description",
+            "Inform any player with the permission protocol.info when a new version of ProtocolLib is out.",
+            "Automatically download and install the newest version of ProtocolLib. The installation will take effect when the server restarts.",
+            "The number of seconds between each check for a new update.",
+            "This simply records the last time (in seconds since 01.01.1970) an update check was performed. Set it to 0 to force a new update check.",
+            "If TRUE, ProtocolLib will publish anonymous usage data to mcstats.org. Set it to FALSE to opt-out.",
+            "If TRUE, ProtocolLib will try and improve performance by replacing reflection with compiled code on-the-fly.",
+            "Force ProtocolLib to start for a specified Minecraft version, even if it is incompatible.",
+            "If any error or warning report is present in this list, they will not appear in the console or the log."
+        ]
+    ],
+    "pageTitle": "ProtocolLib - Bukkit",
+    "title": "",
+    "url": "http://dev.bukkit.org/bukkit-plugins/protocollib/?page=61",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00276-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 63657495,
+    "recordOffset": 63636772,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Global section A small set of configuration options are available: Configuration This should be much more convenient than having to compile a test plugin and reload the whole server. Note that this feature is disabled by default for security reasons. To enable it, add \"debug: true\" to config.yml. Added filter entity_filter. >} > return packet.a == 1000; function(event, packet) { Enter filter program ('}' to complete or CANCEL): > filter add entity_filter 40 Added listener ListeningWhitelist{priority=MONITOR, packets=[40]} > packet add server 40 true  The filter system (introduced in 2.4.1) uses the built in JavaScript interpreter in JVM 6 (Rhino) to extend the packet command with filtering capabilities - it is now possible to, say, only print entity metadata packet events (packet add server 40) for a given entity ID: Filter Note that this command should rarely be used on a production server. Listening to too many packets may crash the server.   /packet remove server /packet remove client  Remove all listeners:   /packet",
+    "textAfterTable": "For more information, take a look at the default configuration file. Tutorial for developers See this page for more information. Compatibility One of the main goals of this project was to achieve maximum compatibility with CraftBukkit. And the end result is quite good - in tests I successfully ran an unmodified ProtocolLib on CraftBukkit 1.8.0, and it should be resilient against future changes. It's likely that I won't have to update ProtocolLib for anything but bug and performance fixes. How is this possible? It all comes down to reflection in the end. Essentially, no name is hard coded - every field, method and class is deduced by looking at field types, package names or parameter types. It's remarkably consistent across different versions. Plugins that appear to be compatible NoLagg NoCheatPlus Plugins known to be compatible SpoutPlugin Plugins using ProtocolLib Orebfuscator TagAPI DisguiseCraft VanishNoPacket (v3.18.5 and earlier) BkCommonLib CraftBook ChairsReloaded (3.0.2 and earlier) Scavenger TabAPI Individual-Signs ItemRenamer RandomCoords AntiCommandTab Sneaky Spy Statues Seasons Safe Command Block PlayerHider Phantasma Chat Filter Ghost Hunt ReMap AttributeHider uCars uPlanes PropHunt Portable-Horses",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

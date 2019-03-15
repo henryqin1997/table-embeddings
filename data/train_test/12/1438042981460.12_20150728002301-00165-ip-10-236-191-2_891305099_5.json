@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Type",
+            "Envelope",
+            "Specification",
+            "Specification",
+            "Specification",
+            "Specification",
+            "Port",
+            "Channel"
+        ],
+        [
+            "Format",
+            "X12",
+            "X12 4010",
+            "X12 4010",
+            "XML",
+            "XML",
+            "-",
+            "-"
+        ],
+        [
+            "Name",
+            "X12",
+            "X12 850 Purchase Order",
+            "X12 997 Acknowledgement/Receipt",
+            "Common Purchase Order",
+            "Receipt",
+            "Incoming Purchase Orders",
+            "Incoming X12-850 Purchase Order"
+        ],
+        [
+            "Comment",
+            "The format tells BizTalk Server what parser to use when parsing the file. No specification is required.",
+            "This is the specification describing the EDI format of the purchasing file.",
+            "This is the specification describing the EDI format of the receipt to be sent to the customer.",
+            "This is the specification describing the common purchase order and its associated XML structure.",
+            "This is the specification describing the canonical receipt and its associated XML structure.",
+            "This outputs a file into the inbound directory for the company.",
+            "This transforms the EDI standard message to the XML representation of the data required by the system and delivers it to the port."
+        ]
+    ],
+    "pageTitle": "Legacy File Integration Using Microsoft BizTalk Server 2000",
+    "title": "",
+    "url": "https://technet.microsoft.com/en-US/library/ee265742(v=bts.10).aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981460.12/warc/CC-MAIN-20150728002301-00165-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 891338611,
+    "recordOffset": 891305099,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{28925=February 2001, 27101=A member of the Microsoft\u00ae .NET Enterprise Server family of products, Microsoft BizTalk\u2122 Server 2000 unites, in a single product, enterprise application integration (EAI) and business-to-business integration. BizTalk Server 2000 enables developers, IT professionals, and business analysts to easily build dynamic business processes that span applications, platforms, and businesses over the Internet., 396=Note that in some instances the default BizTalk Server setting has been selected specifically to highlight it. Most parameters within the specifications and envelopes have a default setting that is utilized when the user does not explicitly select an option. A comprehensive list of these can be found in the Microsoft BizTalk Server 2000 online Help., 28897=Summary: This article discusses the integration of existing legacy systems using Microsoft BizTalk Server 2000. It is intended as an introduction to a range of concepts associated with BizTalk Server 2000 and is suitable for both technical and non-technical audiences who might be working with BizTalk Server for the first time., 26682=In addition to BizTalk Server 2000, Microsoft, with its industry partners, has led innovation on enabling technologies that are necessary for Internet-based business solutions, including BizTalk Framework 2.0, which is a platform-independent, Extensible Markup Language (XML) framework for application integration and electronic commerce. BizTalk Framework 2.0 provides the basis for interoperable reliable messaging for BizTalk Server 2000., 26226=As well as these innovations, Microsoft recognizes there are many legacy systems in enterprises today that do not currently support XML. To provide a complete solution framework, BizTalk Server 2000 integrates with a wide range of file formats. This paper discusses the integration of existing legacy systems within EAI and business-to-business frameworks that use BizTalk Server 2000. It is intended as an introduction to a range of concepts associated with BizTalk Server 2000 and is useful to technical and non-technical audiences that might be working with BizTalk Server for the first time.}",
+    "TableContextTimeStampAfterTable": "{55371=Unpublished work. \u00a92001 Microsoft Corporation. All rights reserved., 10552=Once the specifications and envelopes have been created, they must be registered within BizTalk Server, and the relevant ports, channels, and applications must be created. Note: If you have run the installation script then you have already completed this step. The definition of ports, channels, organizations, and applications is covered in detail in the Microsoft BizTalk Server 2000 online Help, and is dealt with specifically in the online tutorial.}",
+    "textBeforeTable": "Note that in some instances the default BizTalk Server setting has been selected specifically to highlight it. Most parameters within the specifications and envelopes have a default setting that is utilized when the user does not explicitly select an option. A comprehensive list of these can be found in the Microsoft BizTalk Server 2000 online Help. Once the specification has been created, the parsing information can be created to allow BizTalk Server to process the flat files into and out of the system. Important settings that are specified within BizTalk Editor are reviewed in the following tables. Information received in the standard message format is translated by the BizTalk Mapper tool. BizTalk Mapper requires two specifications to facilitate the translation of the data into the legacy format. The starting format is the standard XML message (A2A_CustomerUpdateMessage.xml), while the legacy format is represented by the specification (A2A_ERPCustomerUpdateFile.XML). The parsing information to allow BizTalk Messaging to both serialize the XML file into flat files and to parse flat files and create the matching XML document is in the specification, and the envelope type instructs BizTalk Server to serialize to a flat file specifically. The ERP system is able to import this into a standard format for processing as a batch. 2, CustomerCode,FirstName,Surname,Phone,Email,DateUpdated,UpdatedBy 1, CustomerCode,AddressType,Street,StreetAddress,DateUpdated,UpdatedBy     Copy",
+    "textAfterTable": "\u00a0 \u00a0 Append Newline This value is set to Yes. The output file required a record delimiter similar to that of a text file. This delimiter is a CRLF (carriage return line feed). By selecting to append a new line, BizTalk Server automatically adds an LF (line feed) to the end of each record during serialization from the XML document to the flat file. \u00a0 \u00a0 Skip Carriage Return This value is set to No. Because files sometimes have superfluous CR and LF characters to make the file readable, BizTalk Server enables you to automatically skip these when parsing the file. In this instance the default record delimiter is CR, which specifies to process this character. \u00a0 \u00a0 Skip Line Feed This value is set to Yes. In this instance the default record delimiter is CR, and the additional LF during the parsing process can be skipped. AddressDetails Reference Maximum Occurrences This value is set to * because this record type can appear multiple times. \u00a0 Parse Structure The structure for the AddressDetails records will be Delimited. \u00a0 \u00a0 Source Tag Identifier This value is set to 1. The record identifier for address details is the record type. \u00a0 \u00a0 Field Order The field order is InFix, indicating that the field delimiters within this record are between the fields.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

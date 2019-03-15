@@ -1,0 +1,44 @@
+{
+    "relation": [
+        [
+            "Argument",
+            "event",
+            "rc",
+            "prc",
+            "action",
+            "eventArguments"
+        ],
+        [
+            "Type",
+            "coldbox.system.web.context.RequestContext",
+            "struct",
+            "struct",
+            "string",
+            "struct"
+        ],
+        [
+            "Description",
+            "The request context object reference",
+            "The request collection",
+            "The private request collection",
+            "The name of the action that got intercepted for pre/post interceptions only.",
+            "The structure of name-value pairs the event was called with if called via runEvent()"
+        ]
+    ],
+    "pageTitle": "",
+    "title": "",
+    "url": "http://wiki.coldbox.org/wiki/EventHandlers/word.cfm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990217.27/warc/CC-MAIN-20150728002310-00273-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 256706511,
+    "recordOffset": 256675070,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Since ColdBox is built with a solid cache foundation, CacheBox, your handlers can also be cached in the default cache provider. You will do this by adding meta data attributes to the cfcomponent tag. By default handlers WILL BE cached for performance, unless you specifically use the cache meta data attributes to tell the framework NOT to cache it. Caching of handlers simulates persistence, so remember this if you are planning handlers that can maintain their own persistence and ALWAYS ALWAYS var scope your function variables. That is the number one reason for illusive errors and bad best practices. The Caching Parameters If you use the no inheritance approach, your CFCs will be mixed in a decorated at runtime to receive all the functionality of our core Base Event Handler. So it is a simulated inheritance. You can easily wire up dependencies in your handler by using the WireBox injection DSL. Handlers are cached by default, unless the handler caching setting is off. You can configure persistence via metadata. Private events have an access type of private and can only be called from within the application by using the runEvent() method. They must have public methods (actions) that will respond to ColdBox events. If the handlers are called via the ColdBox Proxy from Flex/Air/Remote applications, your event handlers will return data by having a return type and returning a value. They",
+    "textAfterTable": "Sample Handler Component Declaration Below is a sample handler component declaration which can exhibit some caching parameters discussed below and the default action method (index):  // with default caching component{ function index(event,rc,prc){} } // with singleton metadata component singleton{ function index(event,rc,prc){} } // with caching metadata component cacheTimeout=\"20\" cacheLastAccessTimeout=\"5\"{ function index(event,rc,prc){} } // do not cache this handler component cache=false{ function index(event,rc,prc){} } Composed Properties It is imperative that you realize that there is a great object model behind every event handler that will enable you to do your work more efficiently. The following are the composed properties every event handler has in their variables scope, you do not need to do anything to retreive them, they are already there :) Property Description cacheBox A reference to the CacheBox framework factory (coldbox.system.cache.CacheFactory) controller A reference to the application's ColdBox Controller (coldbox.system.web.Controller) flash A reference to the current configured Flash Object Implementation that inherits from the AbstractFlashScope AbstractFlashScope (derived coldbox.system.web.flash.AbstractFlashScope) logBox The reference to the LogBox",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

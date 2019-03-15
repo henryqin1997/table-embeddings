@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Name",
+            "name",
+            "displayName",
+            "description",
+            "virtualCurrency",
+            "status",
+            "creditLimit",
+            "organization"
+        ],
+        [
+            "Description",
+            "The ISO 4217 code for the currency, such as USD for United States dollar.",
+            "The name to display for the supported currency.",
+            "A description of the supported currency.",
+            "Indicates whether the supported currency is virtual currency. The value can be one of the following: true. The supported currency is virtual currency. false. The supported currency is not virtual currency.",
+            "The status of the supported currency. The value can be one of the following: ACTIVE. The supported currency is available for use. INACTIVE. The supported currency is not available for use.",
+            "This property applies only to postpaid developers. The credit limit for the supported currency. The credit limit can be overridden for a developer in the developer's postpaid balance.",
+            "The organization for the supported currency."
+        ],
+        [
+            "Default",
+            "N/A",
+            "N/A",
+            "N/A",
+            "N/A",
+            "N/A",
+            "N/A",
+            "N/A"
+        ],
+        [
+            "Required?",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "No",
+            "No"
+        ]
+    ],
+    "pageTitle": "Manage supported currencies | Apigee Product Documentation",
+    "title": "",
+    "url": "http://apigee.com/docs/monetization/content/manage-supported-currencies?rate=hZzwHPJ44No8Nm_OQQaBWQVK-BL3iyF7DW8LxdFzj-0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981576.7/warc/CC-MAIN-20150728002301-00324-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 9453463,
+    "recordOffset": 9421311,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{10858=\u00a9 2015 Apigee Corp. All rights reserved}",
+    "lastModified": "Tue, 28 Jul 2015 05:50:27 GMT",
+    "textBeforeTable": "The following supported currencies configuration options are exposed to the API: Supported currency configuration settings for the API Back to top --> If your organization is a group organization, any supported currency that you delete from a sub-organization is automatically removed from the currencies supported by the parent organization \u2014 unless the currency is used by a developer or in a rate plan. If you try to delete a supported currency that is used by a developer or rate plan, you will get an error.",
+    "textAfterTable": "Back to top Next steps Learn how to set up bank accounts for your organization in Add bank accounts. You only need to set up bank accounts if you plan to support postpaid developers, and you want monetization to generate billing documents. Back to top Help or comments? If something's not working: Ask the Apigee Community or see\u00a0Apigee Support. If something's wrong with the docs:\u00a0Send Docs Feedback (Incorrect? Unclear? Broken link? Typo?) \u00a0 < > Products Edge - APIs Insights - Big Data Plans Datasheets Developer Overview Documentation",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

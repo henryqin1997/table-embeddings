@@ -1,0 +1,47 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "baseweb",
+            "newtopic",
+            "newweb",
+            "nosearchall",
+            "webbgcolor",
+            "websummary"
+        ],
+        [
+            "Description",
+            "Name of the web to copy to create the new web",
+            "Value of %TOPIC% within the web creation message. Optionally used in some skins to signify a non-default home topic.",
+            "Name of the new web",
+            "Value for NOSEARCHALL",
+            "value for WEBBGCOLOR",
+            "Value for WEBSUMMARY"
+        ],
+        [
+            "Default",
+            "required",
+            "",
+            "required",
+            "''",
+            "''",
+            "''"
+        ]
+    ],
+    "pageTitle": "CommandAndCGIScripts < System < Wiki",
+    "title": "",
+    "url": "http://www.rockbox.org/wiki/System/CommandAndCGIScripts?sortcol=0;table=9;up=0",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987228.91/warc/CC-MAIN-20150728002307-00029-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 683266599,
+    "recordOffset": 683241540,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "upload. This script is part of the transactions sequence executed when a file is uploaded from the browser. it just generates the \"new attachment\" page for a topic. attach Despite the name, this script doesn't actually attach a file to a topic - for that, use \u00a0 Any other parameter name passed to the script is passed through for possible use by the script. This is typically only applicable to the edit, save and view scripts. <any name> \u00a0 part of cross-site scripting protection. Any request sent from browsers that might change data stored on the server must carry a key that indentifies the source of the request. validation_key \u00a0 Command-line only; set the name of the user performing the action. Note: this usage is inherently insecure, as it bypasses webserver login constraints. For this reason only authorised users should be allowed to execute scripts from the command line. user \u00a0 Overrides the web.topic path given in the URL (specify Web.TopicName) topic generally set to current time, in seconds",
+    "textAfterTable": "%SEARCH%, while this script reads the changes file in each web, making it much faster. NOTE: The result from changes script and the topic WebChanges can be different, if the changes file is deleted from a web. In particular, in new installations the changes script will return no results while the WebChanges topic will. configure configure is the browser script used for inspection of, and changes to, the site configuration. None of the parameters to this script are useable for any purpose except configure. See configure. edit The edit script understands the following parameters, typically supplied by HTML input fields. A major role of the edit script is new topic creation. Parameters that are mainly relevant to new topic creation are marked with Parameter name Description Default action If action=text, then hide the form. If action=form, then hide the normal text area and only edit the form. edit both breaklock If set, any lease conflicts will be ignored, and the edit",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

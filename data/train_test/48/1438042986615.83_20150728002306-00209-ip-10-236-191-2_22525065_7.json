@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Pos",
+            "C",
+            "1B",
+            "2B",
+            "3B",
+            "SS",
+            "OF",
+            "Util",
+            "Pos",
+            "Pitchers"
+        ],
+        [
+            "Played",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "Played",
+            "0"
+        ],
+        [
+            "Remaining",
+            "162",
+            "162",
+            "162",
+            "162",
+            "162",
+            "486",
+            "324",
+            "Remaining",
+            "1400"
+        ],
+        [
+            "Projected",
+            "62 (-100)",
+            "62 (-100)",
+            "62 (-100)",
+            "62 (-100)",
+            "62 (-100)",
+            "186 (-300)",
+            "124 (-200)",
+            "Projected",
+            "537 (-862.0)"
+        ],
+        [
+            "Max",
+            "162",
+            "162",
+            "162",
+            "162",
+            "162",
+            "486",
+            "324",
+            "Max",
+            "1400"
+        ]
+    ],
+    "pageTitle": "Yahoo Public 37624 - | Fantasy Baseball | Yahoo Sports",
+    "title": "",
+    "url": "http://baseball.fantasysports.yahoo.com/b1/37624/13?date=2013-04-01",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986615.83/warc/CC-MAIN-20150728002306-00209-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 22566083,
+    "recordOffset": 22525065,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Maximum Games }); } }, {\"overlayname\": \"whats-this\"}); } showEl(cur); cur = items.item(0); hideEl(cur); if(carousel !== null) { //reset to first showing animEventHandle.cancel(); //stop animation Y.on(\"ysfoverlay:overlayclosed\", function(e) { //closed, remove dat animation }, {\"overlayname\": \"whats-this\"}); }, null, false); }, null, true); } cur = next; showEl(next); hideEl(cur); var next = items.item((items.indexOf(cur)+1 >= items.size()) ? 0 : items.indexOf(cur)+1); if(carousel !== null) { animEventHandle = Y.later(3000, this, function(e) { Y.later(1000, this, function(e) { //start animation Y.on(\"ysfoverlay:overlayopened\", function(e) { //EVENT shown showEl(cur); }); items.setStyle(\"opacity\",0); items.each(function(e) { //init cur = items.item(0); var items = carousel.all(\"div\"), if(carousel !== null) { carousel = Y.one(\".overlay-carousel\"); var animEventHandle, } }); opacity: 100 duration: 0.5, easing: \"linear\", el.transition({ el.show(); function showEl(el) { } }); this.hide(); },function() { opacity: 0 duration: 0.5, easing: \"linear\", el.transition({ function hideEl(el) { } },\"#whats-this\"); Y.fire(\"ysfoverlay:open\",{\"overlayname\": \"whats-this\"}); Y.on(\"available\", function(e) { if(showHelp === true) { //if so display it now var showHelp = Att ? Att : false; //have we seen before var Att = false; YSF.use(\"node\", \"event\", \"ysf-overlay\", \"transition\", function(Y) {",
+    "textAfterTable": "What's This? Maximum Games \ue009 Each active batter position on your roster has a limit for maximum number of games played. Your entire pitching staff has a cumulative limit for total innings pitched. Players on your bench don't contribute to these limits, and limits are not counted for individual players (just starting positions). This table tracks how many of each you have used, how many you have remaining, your projected pace and the maximum allowed. Once you exceed a maximum, you will no longer accumulate stats at that position.",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

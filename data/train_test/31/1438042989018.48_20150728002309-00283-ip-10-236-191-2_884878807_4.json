@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "date",
+            "3/18/2011",
+            "5/29/2011",
+            "9/27/2011",
+            "10/5/2011",
+            "10/15/2011",
+            "10/17/2011",
+            "11/23/2011"
+        ],
+        [
+            "city",
+            "Ottawa",
+            "Denver",
+            "West Hollywood",
+            "Houston",
+            "Nashville",
+            "Vienna",
+            "Denver"
+        ],
+        [
+            "state",
+            "ON",
+            "CO",
+            "CA",
+            "TX",
+            "TN",
+            "VA",
+            "CO"
+        ],
+        [
+            "venue",
+            "Bronson Centre",
+            "Bluebird Theater",
+            "The Roxy Theatre",
+            "House of Blues - Houston",
+            "Rocketown",
+            "Jammin Java",
+            "Bluebird Theater"
+        ]
+    ],
+    "pageTitle": "Tyler Ward Concert Tickets | SeatGeek",
+    "title": "",
+    "url": "https://seatgeek.com/tyler-ward-tickets",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 4,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989018.48/warc/CC-MAIN-20150728002309-00283-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 884915167,
+    "recordOffset": 884878807,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "2015 Tour Dates } ); document.getElementById('location-autocomplete') }), } } window.location.href = window.location.pathname + '?lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id } else { window.location.href = window.location.href + '&lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id; if(window.location.href.match('/search')) { SG.GA.sendEvent('team-show-page', 'location-input', { label: selection.term }); onSelect: function(selection) { }, return (data.results && data.results.location) ? data.results.location : [] dataExtractionFunction: function(data) { placeholder: 'Search by City...', postSelectLoad: true, limit: 3, contentKey: 'term', idKey: 'id', queryString: \"types[]=location\", source: \"/autocomplete\", React.createFactory(Autocomplete)({ React.render( if (document.getElementById('location-autocomplete')) {",
+    "textAfterTable": "5/23/2014 Koln NW Burgerhaus Stollwerck 5/24/2014 Hamburg HH Knust 5/27/2014 Vancouver BC Fortune Sound Club 5/28/2014 Seattle WA El Corazon 5/29/2014 Portland OR Alberta Rose Theatre 5/30/2014 San Francisco CA Brick & Mortar Music Hall 6/2/2014 West Hollywood CA Whisky A Go Go 6/3/2014 San Diego CA The Irenic 6/4/2014 Scottsdale AZ Pub Rock 6/6/2014 Salt Lake City UT Kilby Court 6/7/2014 Denver CO Bluebird Theater 6/10/2014 Austin TX Stubbs BBQ 6/13/2014 Saint Louis MO The Firebird 6/14/2014 Joliet IL Mojoes 6/16/2014 Detroit MI The Shelter 6/18/2014 Toronto ON The Opera House 6/19/2014 Montreal QC Le National 6/20/2014 Boston MA Brighton Music Hall 6/21/2014 New York NY Santos Party House 6/23/2014 Atlanta GA Vinyl 8/1/2014 West Warwick RI Manchester 65 8/3/2014",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

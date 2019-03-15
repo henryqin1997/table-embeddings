@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed"
+        ],
+        [
+            "Average",
+            "88.5 \u00b0F",
+            "75.4 \u00b0F",
+            "63.8 %",
+            "29.81 in",
+            "8.6 mph"
+        ],
+        [
+            "High",
+            "95 \u00b0F (1:00 pm)",
+            "79 \u00b0F (8:00 am)",
+            "79 % (3:00 am)",
+            "29.87 in (11:00 am)",
+            "12.7 mph (1:00 pm)"
+        ],
+        [
+            "Low",
+            "80 \u00b0F (5:00 am)",
+            "73.4 \u00b0F (1:00 pm)",
+            "43 % (5:00 pm)",
+            "29.74 in (3:00 pm)",
+            ""
+        ]
+    ],
+    "pageTitle": "Quezon City, Philippines [May 9, 2013] - Weather Records By Hour (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherhourly.php3?s=984300&date=2013-05-09&cityname=Quezon+City%2C+National+Capital+Region%2C+Philippines&units=us",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988511.77/warc/CC-MAIN-20150728002308-00062-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 826964846,
+    "recordOffset": 826949327,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] WEATHER ALMANAC - MAY 9, 2013 [ \u2190 Previous Day ] } PrintUrl('printIframe', 'http://www.weatherbase.com/weather/weatherhourly-print.php3?s=984300&date=2013-05-09&cityname=Quezon+City%2C+National+Capital+Region%2C+Philippines&units=us'); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); window.location = url; var url = \"/weather/weatherhourly.php3?s=984300&date=\" + event.format() + \"&citynameQuezon+City%2C+National+Capital+Region%2C+Philippines&set=\"; $('#datepicker').datepicker().on('changeDate', function (event) { }); startView: 2 endDate: \"2015-07-30\", startDate: \"1996-07-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 6.1 mi Wind Direction ESE (117.4 \u00b0) Weather Element Total Precipitation --- Cooling Degree Days 22.5 (Base 65) Growing Degree Days 37.5 (Base 50) Averaged from 31 records on May 9, 2013",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

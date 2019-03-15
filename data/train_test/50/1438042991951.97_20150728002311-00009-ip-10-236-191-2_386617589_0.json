@@ -1,0 +1,46 @@
+{
+    "relation": [
+        [
+            "Google Publication",
+            "GFS & MapReduce (2004)",
+            "Sawzall (2005)",
+            "BigTable (2006)",
+            "Dremel (2010)",
+            "Spanner (2012)"
+        ],
+        [
+            "Hadoop",
+            "HDFS & MapReduce (2006)",
+            "Pig & Hive (2008)",
+            "HBase (2008)",
+            "Impala (2012)",
+            "????"
+        ],
+        [
+            "Characteristics",
+            "Batch Programs",
+            "Batch Queries",
+            "Online key/value",
+            "Online Queries",
+            "Transactions, Etc."
+        ]
+    ],
+    "pageTitle": "Meet Impala: Open Source Real-Time SQL Queries on Hadoop | CUBRID Blog",
+    "title": "Table 1: Google Gives Us A Map (source: Strata + Hadoop World 2012 Keynote: Beyond Batch - Doug Cutting)",
+    "url": "http://www.cubrid.org/?document_srl=694566&mid=textyle&l=ko",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991951.97/warc/CC-MAIN-20150728002311-00009-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 386639471,
+    "recordOffset": 386617589,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{24122=To resolve the inconveniences of using MapReduce, platforms such as Pig and Hive appeared in 2008. Pig and Hive are sub-projects of Hadoop (Hadoop is also an ecosystem of multiple platforms; a variety of products based on Hadoop have been created). Both Pig and Hive have a form of high-level language, but Pig has a procedural form and Hive has a declarative language form similar to SQL. With the advent of Pig and Hive, Hadoop users could conduct big data analytics easier., 23078=With the advent of Hadoop in 2006, big data analytics was no longer a task that could be performed by only a few companies or groups. This is because Hadoop was an open-source framework, and thus many companies and groups that needed big data analytics could use Hadoop easily at low cost. In other words, big data analytics became a universal technology., 28430=In October 2012, when announcing Impala, Cloudera introduced it as follows:, 27086=Cloudera's Impala,\u00a0introduced in this article, was also established under the influence of Google. It was created based on Google's Dremel paper, which was published back in 2010. Impala is an open-source system under an Apache license, which is an interactive/real-time SQL query system that runs on HDFS., 22294=UPDATED on July 16 2013:\u00a0the article has been updated inline considering the feedbacks on Twitter and comments below., 65340=About CUBRID | Contact us | \u00a9 2012 CUBRID.org. All rights reserved.}",
+    "lastModified": "Tue, 04 Aug 2015 20:01:39 GMT",
+    "textBeforeTable": "This progress of Hadoop (Hadoop eco-System) was greatly influenced by Google. HDFS itself was implemented on the basis of papers on GFS published by Google, and Hbase appears to have been based on Google's papers on BigTable. Table 1\u00a0below shows this influential relationship. This is why HBase, a column-based NoSQL appeared. HBase, which enables faster input/output of key/value data, finally provided Hadoop-based systems with an environment in which data could be processed in real time. However, as Hive and Pig are related to the data retrieval interface, they cannot contribute to accelerating big data analytics work. Internally, both Hive and Pig use MapReduce as well. To resolve the inconveniences of using MapReduce, platforms such as Pig and Hive appeared in 2008. Pig and Hive are sub-projects of Hadoop (Hadoop is also an ecosystem of multiple platforms; a variety of products based on Hadoop have been created). Both Pig and Hive have a form of high-level language, but Pig has a procedural form and Hive has a declarative language form similar to SQL. With the advent of Pig and Hive, Hadoop users could conduct big data analytics easier. Its processing is slow. It is very inconvenient to use. There is no limit to one's needs. The Hadoop user group tried to overcome Hadoop's limits in terms of functionality and performance, and develop it more. Complaints were focused on the use of MapReduce. MapReduce has two main disadvantages. The core of Hadoop is Hadoop Distributed File System (HDFS) and MapReduce.\u00a0Hadoop",
+    "textAfterTable": "Cloudera's Impala,\u00a0introduced in this article, was also established under the influence of Google. It was created based on Google's Dremel paper, which was published back in 2010. Impala is an open-source system under an Apache license, which is an interactive/real-time SQL query system that runs on HDFS. SQL is very familiar to many developers and is able to express data manipulation/retrieval briefly. As Impala supports SQL and provides real-time big data processing functionality, it has the potential to be utilized as a business intelligence (BI) system. For this reason, some BI vendors are said to have already launched BI system development projects using Impala. The ability to get real-time analytics results by using SQL makes the prospect of big data brighter and also extends the application scope of Hadoop. Cloudera Impala Cloudera, which created Impala, said they had been technically inspired by Google's Dremel paper,\u00a0which made them think that it would be possible to perform real-time, ad-hoc queries in Apache Hadoop. In October 2012, when announcing Impala, Cloudera introduced it as follows: \u201cReal-Time Queries in Apache Hadoop, For Real\u201d Impala adopted Hive-SQL\u00a0as an interface. As mentioned above, Hive-SQL is similar in terms of syntax to SQL, a popularly used query language. For this reason, users can access data stored in HDFS through a very familiar method. As Hive-SQL uses Hive, you can access the same data through the same method. However, not all Hive-SQLs are supported by Impala. For this reason, you had",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

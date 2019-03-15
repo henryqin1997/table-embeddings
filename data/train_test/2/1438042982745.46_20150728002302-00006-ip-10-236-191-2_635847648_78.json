@@ -1,0 +1,66 @@
+{
+    "relation": [
+        [
+            "BugId",
+            "6598160",
+            "6497734",
+            "4823811",
+            "6740278",
+            "6680432",
+            "6603064",
+            "6618901",
+            "6176036"
+        ],
+        [
+            "Category",
+            "java",
+            "java",
+            "java",
+            "java",
+            "java_deployment",
+            "java_plugin",
+            "java_plugin",
+            "jndi"
+        ],
+        [
+            "Subcategory",
+            "classes_net",
+            "classes_nio",
+            "classes_text",
+            "dragndrop",
+            "security",
+            "other",
+            "plugin",
+            "ldap"
+        ],
+        [
+            "Description",
+            "Windows IPv6 Socket implementation doesn't set the handle to not inherit",
+            "(dc) assert \"JNI handle should not be null\" under Java_sun_nio_ch_FileDispatcher_preClose0()",
+            "[Fmt-Da] SimpleDateFormat patterns don't allow embedding of some literal punctuation",
+            "An image(256 colors) in clipboard should be displayed correctly",
+            "Display only Digital Signature key usage certificate in client authentication dialog box.",
+            "Legacy_lifecycle:Exception getting thrown on while making LiveConnect calls once applet is refreshed",
+            "6.0 JRE applet running on Vista limits heap to 64 MB",
+            "Require a way to specify read timeout for LDAP operations"
+        ]
+    ],
+    "pageTitle": "Java SE 5.0 Advanced",
+    "title": "",
+    "url": "http://www.oracle.com/technetwork/es/java/javasebusiness/documentation/index.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 78,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042982745.46/warc/CC-MAIN-20150728002302-00006-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 635891023,
+    "recordOffset": 635847648,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{1=In December, 2008, Java SE 1.4.2 reached its end of service life with the release of 1.4.2_19. Future revisions of Java SE 1.4.2 (1.4.2_20 and above) are available to Java for Business subscribers.}",
+    "TableContextTimeStampAfterTable": "{78439=In December, 2008, Java SE 1.4.2 reached its end of service life with the release of 1.4.2_19. Future revisions of Java SE 1.4.2 (1.4.2_20 and above) are available to Java for Business subscribers., 61380=This release contains fixes for security vulnerabilities. For more information, see Oracle Security Alert for CVE-2013-1493., 32883=See 8061765 (not public).}",
+    "textBeforeTable": "Bug Fixes \u00a0 Changes in 5.0u17-rev-b11 For details, refer to the JDK 5.0u18 Update Release Notes which describe the release upon which this update is based. \u00a0 Changes in 5.0u18 Please note that fixes from prior revisions (5.0u17-rev) are included in this revision. IllegalArgumentException: \"Invalid ICC Profile Data\" when reading certain JPEGs imageio java 6404011 Creating text in a JTextPane using Chinese text causes undesired behavior classes_swing java 6699856 BigApp cause 1.4.2 server JVM crash with SIGBUS (0xa) runtime_system hotspot 6788951 Memory leak occurs in JVMTI(jdk5.0u16) jvmti hotspot 6751861 CMS: Incorrect encoding of overflown object arrays during concurrent precleaning garbage_collector hotspot 6722112 1.5.0_15 C2 compiler crashes in PhaseChaitin::Split() compiler2 hotspot 6754146 code fails with impossible ArrayIndexOutOfBounds Exception compiler2 hotspot 6435614 crash in C2 compiler in MachSpillCopyNode::implementation on 5.0_U4 compiler2 hotspot 6394438 fix set_ctrl() inconsistencies in loopopts compiler2 hotspot 6260293 Description Subcategory Category BugId Bug Fixes \u00a0 Changes in 5.0u18-rev-b03 \u00a0 Chinese Characters in JTextPane Cause Pane to Hang classes_awt java 6707023 REGRESSION : Different behavior of Container.findComponentAt",
+    "textAfterTable": "\u00a0 Changes in 5.0u17-rev-b10 \u00a0 OlsonData 2009a This release contains Olson time zone data version 2009a. For more information, refer to Timezone Data Versions in the JRE Software. \u00a0 Bug Fixes BugId Category Subcategory Description 6277781 idl serialization Serialization of Enums over IIOP is broke. 6614558 idl serialization jmx interop JDK5 - JDK6 issue when calling getMBeanInfo 6446855 java classes_net https connections failing when connecting through a proxy 6796489 java classes_util_i18n (tz) Support tzdata2009a 6591117 jce pkcs11_csp Poor preformance of PKCS#11 security provider compared to Sun default provider 6796140 jets other Further ORB changes after 6725987 \u00a0 Changes in 5.0u17-rev-b09 \u00a0 Bug Fixes BugId Category Subcategory Description 6676016 hotspot garbage_collector ParallelOldGC leaks memory 6461933 java classes_awt To adjust system boot time in nowMillisUTC() frequently 6637607 java classes_awt 1st char. is discarded after a modal dialogue shows up and disappears 6677578 java classes_awt Print dialog doesn't come up when brower window is maximized 6571589 java",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 2,
+    "headerRowIndex": 0
+}

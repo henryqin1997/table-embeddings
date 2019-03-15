@@ -1,0 +1,52 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed"
+        ],
+        [
+            "Average",
+            "41.2 \u00b0F",
+            "32.1 \u00b0F",
+            "69.8 %",
+            "29.82 in",
+            "16.1 mph"
+        ],
+        [
+            "High",
+            "44.6 \u00b0F (12:00 pm)",
+            "39.2 \u00b0F (12:30 am)",
+            "93 % (2:00 am)",
+            "29.94 in (1:00 pm)",
+            "25.3 mph (5:00 pm)"
+        ],
+        [
+            "Low",
+            "37.4 \u00b0F (2:30 am)",
+            "30.2 \u00b0F (3:30 am)",
+            "50 % (1:00 pm)",
+            "29.71 in (1:00 am)",
+            ""
+        ]
+    ],
+    "pageTitle": "Bystrice, Czech Republic [January 31, 2013] - Weather Records By Hour (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherhourly.php3?s=78711&date=2013-01-31&cityname=Bystrice%2C+Kralovehradecky+Kraj%2C+Czech+Republic&units=",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988840.31/warc/CC-MAIN-20150728002308-00258-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 829577503,
+    "recordOffset": 829558075,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] WEATHER ALMANAC - JANUARY 31, 2013 [ \u2190 Previous Day ] } PrintUrl('printIframe', 'http://www.weatherbase.com/weather/weatherhourly-print.php3?s=78711&date=2013-01-31&cityname=Bystrice%2C+Kralovehradecky+Kraj%2C+Czech+Republic&units='); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); window.location = url; var url = \"/weather/weatherhourly.php3?s=78711&date=\" + event.format() + \"&citynameBystrice%2C+Kralovehradecky+Kraj%2C+Czech+Republic&set=\"; $('#datepicker').datepicker().on('changeDate', function (event) { }); startView: 2 endDate: \"2015-07-31\", startDate: \"1997-01-10\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 7.6 mi Wind Direction SW (223.3 \u00b0) Weather Element Total Precipitation --- Heating Degree Days 24 (Base 65) Averaged from 51 records on January 31, 2013",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

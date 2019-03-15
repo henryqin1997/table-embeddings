@@ -1,0 +1,74 @@
+{
+    "relation": [
+        [
+            "Organization",
+            "Yahoo",
+            "NaCTem",
+            "ClearForest SWS",
+            "Translated Labs",
+            "TermeExtractor",
+            "Whatizit"
+        ],
+        [
+            "Web Service",
+            "Yes",
+            "Yes",
+            "Yes",
+            "No",
+            "No",
+            "Yes"
+        ],
+        [
+            "Online Tool",
+            "NO",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes"
+        ],
+        [
+            "Type (based on above categories)",
+            "Keyword",
+            "Keyword",
+            "Entity",
+            "Keyword",
+            "Keyword",
+            "Keyword/Entity"
+        ],
+        [
+            "Freeware",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes",
+            "Yes"
+        ],
+        [
+            "Comments",
+            "",
+            "",
+            "They also provide Java Desktop client and Firefox Add",
+            "",
+            "To use full version you need to create a login. Also the tool only works in Firefox.",
+            "Whatizit has interesting concept of pipeline which allows you to select a vocabulary"
+        ]
+    ],
+    "pageTitle": "Online Text Mining Tools & WebServices | Memento",
+    "title": "",
+    "url": "https://ragrawal.wordpress.com/2007/07/17/online-text-mining-tools-webservices/",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042991076.30/warc/CC-MAIN-20150728002311-00328-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 877264055,
+    "recordOffset": 877245330,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "List of\u00a0text-mining tools 4. Document Relation Extractors: The objective here is to go beyound the limits of a single document and identify common themes between different documents and how they related to each other. I haven\u2019t seen any tool that currently provide such feature. 3. Entity Relation extractors: The objective here is not only to find entities mentioned in the document, but also how they are related to each other. I wasn\u2019t able to find any freely available online tools that do this, but I am aware that some PennState researchers are working on this. 2. Entity Extractor \u2013 Current text-mining\u00a0tools go beyond identifying\u00a0terms but they also try to classify these terms into\u00a0basic categories such as person, orgnaization, city, region,\u00a0money, etc. Such text-mining tools are often referred as \u201centity-extraction tools\u201d (checkout the table below). 1. Keyword Extractors \u2013 Traditionally, text-mining tools mainly involve determining important keywords\u00a0in a document. This is done\u00a0by creating a \u201cterm vector matrix\u201d and assigning certain score to each\u00a0word.\u00a0This\u00a0approach forms the core of any search engine (checkout the table below). Classification of Text-mining approaches: Currently, many projects in\u00a0GeoVista\u00a0center\u00a0 (at Pennsylvania State University)\u00a0deal with unstructured textual data and require parsing of space, time, and entitiy information\u00a0from\u00a0textual document. Trying to compare one of our text-mining tool with other projects, I stumbled across many\u00a0freely available\u00a0text-mining tools. However, comparing them directly wouldn\u2019t have made sense as they offer\u00a0different levels of functionality. Hence, I have classified text-mining\u00a0approaches into four categories and the table below list some of the text-mining tools that",
+    "textAfterTable": "Based on my personal\u00a0evaluation, I felt ClearForest SWS\u00a0does a pretty good job of entity extraction. It was able to find people, organizations, cities, regions, country. Further it\u00a0offers its technology and tools in various formats such as firefox addon, desktop java\u00a0application, webservice, and an online tool. Below is an image of\u00a0clearForest tool as a firefox-addon. Enjoy Rate this: Share: Email Pinterest Google Tumblr LinkedIn Twitter Facebook Related About Ritesh Agrawal I am a applied researcher who enjoys anything related to statistics, large data analysis, data mining, machine",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

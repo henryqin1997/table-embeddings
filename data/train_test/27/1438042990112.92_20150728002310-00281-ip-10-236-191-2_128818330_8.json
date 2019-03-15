@@ -1,0 +1,53 @@
+{
+    "relation": [
+        [
+            "Symb",
+            "ITRK.L",
+            "RR.L",
+            "ICAG.L",
+            "SAB.L",
+            "SMIN.L"
+        ],
+        [
+            "Last",
+            "2,721.00",
+            "841.00",
+            "551.00",
+            "3,454.00",
+            "1,149.00"
+        ],
+        [
+            "Change",
+            "+274.00",
+            "+47.00",
+            "+17.00",
+            "+89.50",
+            "+20.00"
+        ],
+        [
+            "Chg %",
+            "+11.20",
+            "+5.92",
+            "+3.18",
+            "+2.66",
+            "+1.77"
+        ]
+    ],
+    "pageTitle": "Stock Quote News - Stock Market Quotes, Online Stock Quotes, India",
+    "title": "",
+    "url": "http://in.reuters.com/finance/stocks-quotes",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 8,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.92/warc/CC-MAIN-20150728002310-00281-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 128837311,
+    "recordOffset": 128818330,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{23750=MUMBAI - When Hindustan Construction Ltd (HCC) was building a bridge in 2008 to transform the congested commute in Mumbai, its stock was at a record high as low interest rates had sparked a construction boom., 28081=MUMBAI - The Supreme Court on Monday asked the Securities and Exchange Board of India (SEBI) to submit an application by September 14 seeking its approval to appoint a receiver to auction conglomerate Sahara's assets and refund investors in the troubled group's illegal bonds.}",
+    "textBeforeTable": "Gainers RTR_Tabs.hiLiteTab(\"Gainers_0\"); RTR_Tabs.init(\"Gainers\"); RTR_Tabs.addTab(\"Gainers_4\", \"FTSE\"); RTR_Tabs.addTab(\"Gainers_3\", \"NIKKEI\"); RTR_Tabs.addTab(\"Gainers_2\", \"NYSE\"); RTR_Tabs.addTab(\"Gainers_1\", \"NSE\"); RTR_Tabs.addTab(\"Gainers_0\", \"BSE\"); RTR_Tabs.addTabGroup(\"Gainers\", \"\", \"standard\", \"\", \"\", \"\"); Gainers & Losers document.getElementById('btnStockSearchSubmit_321').onclick = searchSubmit_321; Reuters.utils.enableSearchBox('stockSearchSymbol_321', 'Search by Company Name or Symbol', searchSubmit_321); } return false; OnStockSearchSubmit('321'); function searchSubmit_321() { } }catch(e){} } eval('OnClickGo(document.forms[\"'+stockSearch+'\"].'+stockSearchType+', encodeURIComponent(symbol))'); } else { return false; if(symbol === \"\" || symbol === \"Search by Company Name or Symbol\") { var symbol = document.getElementById(stockSearchSymbol).value; try { var stockSearchType = 'stockSearchType_'+sId; var stockSearchSymbol = 'stockSearchSymbol_'+sId; var stockSearch = 'stockSearch_'+sId; function OnStockSearchSubmit(sId) { } }catch(e){} } document.location.href = url; url = url.replace(\"[ric]\", symbol); var url = inputs.value; } else { } } break; document.location.href = url; url = url.replace(\"[ric]\", symbol); var url = inputs[i].value; if(inputs[i].checked) { for(var i = 0;i < inputs.length;i++) { if(inputs.length) { try { function OnClickGo(inputs, symbol) {",
+    "textAfterTable": "Losers Symb Last Change Chg % AQUP.BO 16.00 -4.00 -20.00 BCPC.BO 38.65 -9.65 -19.98 CHET.BO 30.25 -7.55 -19.97 COVI.BO 6.35 -1.55 -19.62 MAZD.BO 274.80 -37.20 -11.92 Data as of\u00a0Tue Aug 4, 2015 12:43am IST. Source: Thomson Reuters Gainers Symb Last Change Chg % VIFY.NS 0.15 +0.05 +50.00 THRM.NS 239.40 +39.90 +20.00 RSPR.NS 0.30 +0.05 +20.00 SPND.NS 15.30 +2.55 +20.00",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

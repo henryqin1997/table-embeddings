@@ -1,0 +1,62 @@
+{
+    "relation": [
+        [
+            "Parameter",
+            "p_cash_receipt_id",
+            "p_receipt_number",
+            "p_receivable_application_id",
+            "p_reversal_gl_date",
+            "p_org_id"
+        ],
+        [
+            "Type",
+            "IN",
+            "IN",
+            "IN",
+            "IN",
+            ""
+        ],
+        [
+            "Data-type",
+            "NUMBER(15)",
+            "VARCHAR2 (30)",
+            "NUMBER(15)",
+            "DATE",
+            ""
+        ],
+        [
+            "Required",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Description",
+            "The cash_receipt_id of the receipt whose application has to be unapplied. Default: None Validation: Status must not be Reversed or Approved. The receipt must have an on-account application on it. Error: AR_RAPI_CASH_RCPT_ID_INVALID",
+            "The receipt number of the receipt which is to be unapplied. Used to default the cash_receipt_id. Default: None Validation: None Error: AR_RAPI_RCPT_NUM_INVALID",
+            "Identifies the receivable application. Used to derive the customer trx id, cash_receipt_id and the applied_ps_id, if not specified. Default: Refer to Validation. Validation: Application type = 'CASH'. Display flag = 'Y' (latest application) and status = 'ACC'. The applied payment schedule id of the receivable application record must correspond to the p_applied_payment_schedules_id, if specified. The cash receipt id must correspond to the cash receipt id specified. Error: AR_RAPI_REC_APP_ID_INVALID",
+            "The reversal gl date. Default: Gets defaulted to the application gl date if it is a valid gl_date. Validation: It is valid if the following conditions are true: The date is in an Open or Future period. The period cannot be an Adjustment period. The reversal GL date >= application GL date. The reversal GL date >= receipt GL date. If the date is invalid, then: If the most recent open period is prior to the receipt date: last date of that period If there is a period open after the receipt date first date of the last open period Error: AR_INVALID_APP_GL_DATE AR_RW_BEFORE_APP_GL_DATE AR_RW_BEFORE_RECEIPT_GL_DATE",
+            ""
+        ]
+    ],
+    "pageTitle": "Oracle Receivables Reference Guide",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E18727_01/doc.121/e13512/T447348T399045.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 18,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989510.73/warc/CC-MAIN-20150728002309-00211-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 71996627,
+    "recordOffset": 71954944,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{268122=Copyright \u00a9 1988, 2010, Oracle and/or its affiliates. All rights reserved.}",
+    "lastModified": "Tue, 23 Jun 2015 15:16:00 GMT",
+    "textBeforeTable": "The following table illustrates the integration between Oracle Payments and the Receipt API routines that create receipts: Integration with Oracle Payments Creating a cash receipt and an on-account application in one pass Receipt-to-receipt application Other account application, such as Claim Investigation Creating a miscellaneous receipt Activity application, such as Receipt Write-off Reversing the receipt Unapplying the receipt application to a particular transaction Unapplying the on-account application On-account application Creating a cash receipt and applying it to a debit item in one pass Applying a cash receipt to a debit item Creating a cash receipt The Receipt API provides the following basic functionality via different API calls: Basic Business Needs Through forms, utilizing the capability of Forms6 to have a procedure as its underlying base table As standard PL/SQL server-side routine calls You can access these APIs: This document outlines the specifications and the methodology for using the various Receipt APIs. These APIs provide an extension to existing functionality of creating and manipulating receipts through standard AR Receipts forms and lockboxes. Overview Receipt API User Notes Next",
+    "textAfterTable": "p_attribute1 IN VARCHAR2, p_attribute2 IN VARCHAR2, p_attribute3 IN VARCHAR2, p_attribute4 IN VARCHAR2, p_attribute5 IN VARCHAR2, p_attribute6 IN VARCHAR2, p_attribute7 IN VARCHAR2, p_attribute8 IN VARCHAR2, p_attribute9 IN VARCHAR2, p_attribute10 IN VARCHAR2, p_attribute11 IN VARCHAR2, p_attribute12 IN VARCHAR2, p_attribute13 IN VARCHAR2, p_attribute14 IN VARCHAR2, p_attribute15 IN VARCHAR2); The input global descriptive flexfield parameter is a record of type global_ attribute_rec_type. TYPE global_attribute_rec_type IS RECORD (p_global_attribute_category IN VARCHAR2, p_global_attribute1 IN VARCHAR2, p_global_attribute2 IN VARCHAR2, p_global_attribute3 IN VARCHAR2, p_global_attribute4 IN VARCHAR2, p_global_attribute5 IN VARCHAR2, p_global_attribute6 IN VARCHAR2, p_global_attribute7 IN VARCHAR2, p_global_attribute8 IN VARCHAR2, p_global_attribute9 IN VARCHAR2, p_global_attribute10 IN VARCHAR2, p_global_attribute11 IN VARCHAR2, p_global_attribute12 IN VARCHAR2, p_global_attribute13 IN VARCHAR2, p_global_attribute14 IN VARCHAR2, p_global_attribute15 IN VARCHAR2, p_global_attribute16 IN VARCHAR2, p_global_attribute17 IN VARCHAR2, p_global_attribute18 IN VARCHAR2, p_global_attribute19 IN VARCHAR2, p_global_attribute20 IN VARCHAR2); The following table lists standard API parameters that are common to all the routines in the Receipt API. Parameter Type Data-type Required Default Value Description p_api_version IN NUMBER Yes \u00a0 Used to compare version numbers of incoming calls to its current version number. Unexpected error is raised if version incompatibility exists. In the current version of the API, you should pass in a value of 1.0 for this parameter. p_init_msg_list IN VARCHAR2 \u00a0 FND_API.G_FALSE Allows API callers to request",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

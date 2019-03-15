@@ -1,0 +1,80 @@
+{
+    "relation": [
+        [
+            "Weather Element",
+            "Temperature",
+            "Dewpoint",
+            "Humidity",
+            "Barometer",
+            "Wind Speed",
+            "Wind Gust",
+            "Precipitation"
+        ],
+        [
+            "Avg",
+            "81.5 \u00b0F",
+            "75.4 \u00b0F",
+            "82.2 %",
+            "29.81 in",
+            "7.2 mph",
+            "",
+            "0.14 in"
+        ],
+        [
+            "Avg High",
+            "86.9 \u00b0F",
+            "77.6 \u00b0F",
+            "93.9 %",
+            "29.86 in",
+            "14.1 mph",
+            "25.2 mph",
+            ""
+        ],
+        [
+            "Avg Low",
+            "76.6 \u00b0F",
+            "73.3 \u00b0F",
+            "69.2 %",
+            "29.76 in",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Record High",
+            "89.1 \u00b0F (2012)",
+            "80.1 \u00b0F (2009)",
+            "",
+            "29.94 in (2000)",
+            "23 mph (2009)",
+            "32.2 mph (2009)",
+            "0.68 in (2009)"
+        ],
+        [
+            "Record Low",
+            "73 \u00b0F (1999)",
+            "70 \u00b0F (2012)",
+            "61 % (2012)",
+            "29.52 in (2009)",
+            "",
+            "",
+            ""
+        ]
+    ],
+    "pageTitle": "Dededo, Guam - September 15th - Daily Weather Averages (Weatherbase)",
+    "title": "",
+    "url": "http://www.weatherbase.com/weather/weatherdaily.php3?s=110006&cityname=Dededo-Guam-United-States-of-America&month=9&theday=15&units=us",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987866.61/warc/CC-MAIN-20150728002307-00169-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 816813067,
+    "recordOffset": 816796215,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "[ \u00b0C ] \u00a0 \u00b0F [ Next Day \u2192 ] DAILY WEATHER AVERAGE - SEPTEMBER 15 [ \u2190 Previous Day ] } window.print(); function myPrint(){ } services_exclude: 'print' var addthis_config = { }); return $(this).text().replace(\"2015\", \"\"); $('.datepicker-switch').text(function () { }); window.location = url; var url = \"/weather/weatherdaily.php3?s=110006&\" + pieces + \"&citynameDededo%2C+Guam%2C+United+States+of+America&set=\"; var pieces = tosplit.replace(/(.*?)-(.*?)-(.*?)/,\"month=$2&theday=$3\"); var tosplit = event.format(); $('#datepicker').datepicker().on('changeDate', function (event) { }); endDate: \"2015-12-31\", startDate: \"2015-01-01\", format: 'yyyy-mm-dd', $('#datepicker').datepicker({",
+    "textAfterTable": "Weather Element Average Visibility 9 mi Wind Direction SSE (146.8 \u00b0) Weather Element Total Cooling Degree Days 16.8 (Base 18.3) Growing Degree Days 31.8 (Base 10) Total Years on Record: 19",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

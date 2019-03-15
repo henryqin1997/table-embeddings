@@ -1,0 +1,222 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2006-07",
+            "2007-08",
+            "2008-09",
+            "2012-13",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "NOP",
+            "NOP",
+            "NOP",
+            "LAC",
+            ""
+        ],
+        [
+            "Location",
+            "Las Vegas",
+            "Las Vegas",
+            "Las Vegas",
+            "Las Vegas",
+            ""
+        ],
+        [
+            "GP",
+            "4",
+            "4",
+            "6",
+            "5",
+            "19"
+        ],
+        [
+            "GS",
+            "3",
+            "4",
+            "6",
+            "5",
+            "18"
+        ],
+        [
+            "Min",
+            "17.5",
+            "25.0",
+            "31.2",
+            "25.6",
+            "25.5"
+        ],
+        [
+            "FGM",
+            "3.50",
+            "5.25",
+            "4.67",
+            "3.00",
+            "4.11"
+        ],
+        [
+            "FGA",
+            "5.75",
+            "11.75",
+            "9.67",
+            "5.80",
+            "8.26"
+        ],
+        [
+            "FG%",
+            ".609",
+            ".447",
+            ".483",
+            ".517",
+            ".497"
+        ],
+        [
+            "3FGM",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00",
+            "0.00"
+        ],
+        [
+            "3FGA",
+            "0.00",
+            "0.00",
+            "0.17",
+            "0.00",
+            "0.05"
+        ],
+        [
+            "3P%",
+            ".000",
+            ".000",
+            ".000",
+            ".000",
+            ".000"
+        ],
+        [
+            "FTM",
+            "2.50",
+            "5.25",
+            "4.67",
+            "1.20",
+            "3.42"
+        ],
+        [
+            "FTA",
+            "2.75",
+            "8.00",
+            "6.33",
+            "2.80",
+            "5.00"
+        ],
+        [
+            "FT%",
+            ".909",
+            ".656",
+            ".737",
+            ".429",
+            ".684"
+        ],
+        [
+            "FIC",
+            "4.34",
+            "5.75",
+            "5.67",
+            "7.50",
+            "5.89"
+        ],
+        [
+            "OFF",
+            "2.00",
+            "1.75",
+            "1.83",
+            "2.40",
+            "2.00"
+        ],
+        [
+            "DEF",
+            "2.75",
+            "3.75",
+            "3.83",
+            "4.00",
+            "3.63"
+        ],
+        [
+            "Reb",
+            "4.75",
+            "5.50",
+            "5.67",
+            "6.40",
+            "5.63"
+        ],
+        [
+            "Ast",
+            "0.25",
+            "0.75",
+            "0.67",
+            "1.40",
+            "0.79"
+        ],
+        [
+            "Stl",
+            "0.00",
+            "0.50",
+            "0.17",
+            "0.40",
+            "0.26"
+        ],
+        [
+            "Blk",
+            "0.25",
+            "1.50",
+            "1.00",
+            "2.20",
+            "1.26"
+        ],
+        [
+            "PF",
+            "3.25",
+            "4.50",
+            "5.50",
+            "2.20",
+            "3.95"
+        ],
+        [
+            "TO",
+            "2.75",
+            "3.25",
+            "2.50",
+            "2.60",
+            "2.74"
+        ],
+        [
+            "Pts",
+            "9.50",
+            "15.75",
+            "14.00",
+            "7.20",
+            "11.63"
+        ]
+    ],
+    "pageTitle": "Hilton Armstrong Player Profile, Golden State Warriors, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Hilton_Armstrong/Summary/80",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 9,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042992543.60/warc/CC-MAIN-20150728002312-00174-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 30249427,
+    "recordOffset": 30212069,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{9152=Born: Nov 23, 1984 (30 years old), 8234=Draft Entry: 2006 NBA Draft}",
+    "TableContextTimeStampAfterTable": "{191793=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved., 145119=* International basketball history from 2011-2012}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 6 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "0.00 0.11 .000 0.00 0.22 .000 0.03 0.56 0.11 0.67 0.33 0.56 0.00 1.11 0.56 1.11 2009-10 * SAC 6 0 9.3 0.67 2.00 .333 0.00 0.00 .000 0.33 0.33 1.000 2.25 0.83 1.50 2.33 0.33 0.33 0.67 0.83 0.67 1.67 2010-11 * All Teams 53 2 9.2 0.70 1.43 .487 0.04 0.08 .500 0.30 0.62 .485 2.16 0.79 1.68 2.47 0.26 0.34 0.40 1.58 0.53 1.74 2010-11 * WAS 41 2 10.1 0.76 1.56 .484 0.02 0.07 .333 0.34 0.56 .609 2.30 0.95 1.83 2.78 0.24 0.37 0.39 1.83 0.61 1.88 2010-11 * ATL 12 0 6.4 0.50 1.00 .500 0.08 0.08 1.000 0.17 0.83 .200 1.69 0.25 1.17 1.42 0.33 0.25 0.42 0.75 0.25 1.25 2013-14 GOS 15 1 6.4 0.60 1.27 .474 0.00 0.00 .000 0.47 1.07 .438 3.08 1.27 1.87 3.13 0.33 0.27 0.27 0.73 0.40 1.67 CAREER \u00a0 292 40 11.6 1.19 2.37 .501 0.01 0.02 .286 0.63 1.08 .582 2.47 1.00 1.62 2.62 0.35 0.31 0.49 1.86 0.79 3.01 NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

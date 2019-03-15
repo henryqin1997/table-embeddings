@@ -1,0 +1,147 @@
+{
+    "relation": [
+        [
+            "Standard",
+            "Number of lines",
+            "Field Rate (Hz)",
+            "Frame Rate (Hz)",
+            "Color Subcarrier Frequency (on associated color std)",
+            "Channel Bandwidth (MHz)",
+            "Audio modulation"
+        ],
+        [
+            "A",
+            "405",
+            "50",
+            "25",
+            "-",
+            "5",
+            "AM"
+        ],
+        [
+            "B",
+            "625",
+            "50",
+            "25",
+            "4.43 MHz",
+            "7",
+            "FM"
+        ],
+        [
+            "C",
+            "625",
+            "50",
+            "25",
+            "-",
+            "7",
+            "AM"
+        ],
+        [
+            "D",
+            "625",
+            "50",
+            "25",
+            "4.43 MHz",
+            "8",
+            "FM"
+        ],
+        [
+            "E",
+            "819",
+            "50",
+            "25",
+            "-",
+            "14",
+            "AM"
+        ],
+        [
+            "F",
+            "819",
+            "50",
+            "25",
+            "-",
+            "7",
+            "AM"
+        ],
+        [
+            "G",
+            "625",
+            "50",
+            "25",
+            "4.43 MHz",
+            "8",
+            "FM"
+        ],
+        [
+            "H",
+            "625",
+            "50",
+            "25",
+            "4.43 MHz",
+            "8",
+            "FM"
+        ],
+        [
+            "I",
+            "625",
+            "50",
+            "25",
+            "4.43 MHz",
+            "8",
+            "FM"
+        ],
+        [
+            "K",
+            "625",
+            "50",
+            "25",
+            "4.406 MHz",
+            "8",
+            "FM"
+        ],
+        [
+            "L",
+            "625",
+            "50",
+            "25",
+            "4.406 MHz",
+            "8",
+            "AM"
+        ],
+        [
+            "M",
+            "525",
+            "59.94",
+            "29.97",
+            "3.579545 MHz (NTSC) or 3.575611 MHz (PAL)",
+            "6",
+            "FM"
+        ],
+        [
+            "N",
+            "625",
+            "50",
+            "25",
+            "3.58 MHz",
+            "6",
+            "FM"
+        ]
+    ],
+    "pageTitle": "Analog TV - LinuxTVWiki",
+    "title": "ITU-R defined video standards",
+    "url": "http://linuxtv.org/wiki/index.php?title=Analog_TV&oldid=28509",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988650.53/warc/CC-MAIN-20150728002308-00135-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 140141345,
+    "recordOffset": 140125396,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{4276=PAL (Phase Alternating Line) is the most widely used color standard for analog TV in the world, used almost everywhere. It is generally associated with monochromatic standards with a resolution of 625 Lines, 50 half frames per second. It can also be associated with M standard (PAL/M), having a resolution of 525 lines, about 30 frames per second. It is generally associated with 4:3 aspect. There is a 16:9 extension of PAL called PALplus. See PAL page on Wikipedia for much more detail.}",
+    "textBeforeTable": "A summary of the monochromatic standards is provided in the following table: ITU-T defines monochrome television systems designated A, B, C, D, E, F, G, H, I, K, L, M, N. (A, C, E and F are no longer in use). They are esentially the same, but differ in the number of lines per field (405/525/625/819), frame rate (25/29.97), channel width, visual band width, vestigial band width, video modulation polarity (+/-), sound modulation type (AM/FM) and sound frequency offset (-6.5/-3.5/+4.5/+5.5/+5.996/+6.5/+13.5 MHz). Analogue TV Standards 3 External Links 2 Hardware Devices supporting Analog TV and/or Framegrabbing facilities 1.3 PAL 1.2 NTSC 1.1 SECAM 1 Analogue TV Standards Contents Regardless of the actual schedule or pace for the transition to digital, the analogue TV standards will maintain considerable relevance into the foreseeable future due to their interrelatedness with the analogue outputs found on many types of existing consumer hardware; such as analogue camcorders, VCR/VHS players, most DVD players and so forth. Thus, even when analogue TV tuner devices will eventually only be able to pick up static off the airwaves (i.e. rendered completely obsolete), there will likely still be plenty of interest in using the analogue input signal facilities offered by framegrabber devices. Analogue TV",
+    "textAfterTable": "A color TV system is obtained by adding a color subcarrier encoded by one of the three color systems: PAL, SECAM or NTSC. Theoretically one can combine any picture system with any color system. In practice only some combinations are used. The frequency of the color subcarrier is generally Example: PAL-I, the I television system with PAL color is used in Britain. SECAM SECAM (Sequential Couleur A M\u00e9moire) is a color standard used on France, Russia, and few countries at Central, East Europe, America, Africa and Asia. It is generally associated with monochromatic standards B, G, D, K and L (so, its typical resolution is 625 Lines, 25 frames per second). See SECAM page on Wikipedia for much more detail. NTSC NTSC (National Television System Committee) is used in USA, Canada, and Japan. It is generally associated with monochromatic standard M (NTSC/M), so, its typical resolution is 525 Lines, about 30 frames per second. Less quality then PAL, therefore sometimes called Never Twice the Same Color, since the colors can shift as the phase of the color subcarrier shifts on broadcast.\u00a0;-) See NTSC page on Wikipedia for much more detail. PAL PAL (Phase Alternating Line) is the most widely used color standard for analog TV in the world, used almost everywhere. It is generally associated with monochromatic standards with a resolution of 625 Lines, 50 half frames per second. It can",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

@@ -1,0 +1,64 @@
+{
+    "relation": [
+        [
+            "Data Type",
+            "String",
+            "String",
+            "String",
+            "String",
+            "String",
+            "String",
+            "HTML",
+            "String"
+        ],
+        [
+            "Context",
+            "HTML Body",
+            "Safe HTML Attributes",
+            "GET Parameter",
+            "Untrusted URL in a SRC or HREF attribute",
+            "CSS Value",
+            "JavaScript Variable",
+            "HTML Body",
+            "DOM XSS"
+        ],
+        [
+            "Code Sample",
+            "UNTRUSTED DATA",
+            "",
+            "clickme",
+            "clickme",
+            "Selection",
+            "",
+            "UNTRUSTED HTML",
+            ""
+        ],
+        [
+            "Defense",
+            "HTML Entity Encoding",
+            "Aggressive HTML Entity Encoding Only place untrusted data into a whitelist of safe attributes (listed below). Strictly validate unsafe attributes such as background, id and name.",
+            "URL Encoding",
+            "Cannonicalize input URL Validation Safe URL verification Whitelist http and https URL's only (Avoid the JavaScript Protocol to Open a new Window) Attribute encoder",
+            "Strict structural validation CSS Hex encoding Good design of CSS Features",
+            "Ensure JavaScript variables are quoted JavaScript Hex Encoding JavaScript Unicode Encoding Avoid backslash encoding (\\\" or \\' or \\\\)",
+            "HTML Validation (JSoup, AntiSamy, HTML Sanitizer)",
+            "DOM based XSS Prevention Cheat Sheet"
+        ]
+    ],
+    "pageTitle": "Difference between revisions of \"XSS (Cross Site Scripting) Prevention Cheat Sheet\" - OWASP",
+    "title": "",
+    "url": "https://www.owasp.org/index.php?title=XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet&curid=8079&diff=157720&oldid=157526",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988310.3/warc/CC-MAIN-20150728002308-00013-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 930691695,
+    "recordOffset": 930667865,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "The following snippets of HTML demonstrate how to safely render untrusted data in a variety of different contexts. XSS Prevention Rules Summary Preventing all XSS flaws in an application is hard, as you can see. To help mitigate the impact of an XSS flaw on your site, OWASP also recommends you set the HTTPOnly flag on your session cookie and any custom cookies you have that are not accessed by any Javascript you wrote. This cookie flag is typically on by default in .NET apps, but in other languages you have to set it manually. For more details on the HTTPOnly cookie flag, including what it does, and how to use it, see the OWASP article on HTTPOnly. Bonus Rule: Use HTTPOnly cookie flag For details on what DOM-based XSS is, and defenses against this type of XSS flaw, please see the OWASP article on DOM based XSS Prevention Cheat Sheet. RULE #7 - Prevent DOM-based XSS PHP Html Purifier - http://htmlpurifier.org/ JavaScript/Node.JS Bleach - https://github.com/ecto/bleach Python Bleach - https://pypi.python.org/pypi/bleach Other libraries that provide HTML Sanitization include: For more information on OWASP Java HTML Sanitizer policy construction, see http://owasp-java-html-sanitizer.googlecode.com/svn/trunk/distrib/javadoc/org/owasp/html/Sanitizers.html String cleanResults = sanitizer.sanitize(\"<p>Hello, <b>World!</b>\"); PolicyFactory sanitizer = Sanitizers.FORMATTING.and(Sanitizers.BLOCKS); import org.owasp.html.PolicyFactory;  import org.owasp.html.Sanitizers; OWASP Java HTML Sanitizer -",
+    "textAfterTable": "Safe HTML Attributes include: align, alink, alt, bgcolor, border, cellpadding, cellspacing, class, color, cols, colspan, coords, dir, face, height, hspace, ismap, lang, marginheight, marginwidth, multiple, nohref, noresize, noshade, nowrap, ref, rel, rev, rows, rowspan, scrolling, shape, span, summary, tabindex, title, usemap, valign, value, vlink, vspace, width Output Encoding Rules Summary The purpose of output encoding (as it relates to Cross Site Scripting) is to convert untrusted input into a safe form where the input is displayed as data to the user without executing as code in the browser. The following charts details a list of critical output encoding methods needed to stop Cross Site Scripting. Encoding Type Encoding Mechanism HTML Entity Encoding Convert & to &amp; Convert < to &lt; Convert > to &gt; Convert \" to &quot; Convert ' to &#x27; Convert / to &#x2F; HTML Attribute Encoding Except for alphanumeric characters, escape all characters with the HTML Entity &#xHH; format, including spaces. (HH = Hex Value) URL Encoding Standard percent encoding, see: http://www.w3schools.com/tags/ref_urlencode.asp. URL encoding should only be used to encode parameter values, not the entire URL or path fragments of a URL. JavaScript Encoding Except for alphanumeric characters, escape all characters with the \\uXXXX unicode escaping format (X = Integer). CSS Hex Encoding",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

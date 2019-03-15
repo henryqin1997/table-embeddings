@@ -1,0 +1,60 @@
+{
+    "relation": [
+        [
+            "date",
+            "4/30/2010",
+            "10/21/2010",
+            "10/23/2010",
+            "10/25/2010",
+            "10/27/2010",
+            "11/7/2010",
+            "11/13/2010"
+        ],
+        [
+            "city",
+            "Charlottesville",
+            "Columbus",
+            "Cleveland",
+            "New York",
+            "Boston",
+            "Dallas",
+            "Charlottesville"
+        ],
+        [
+            "state",
+            "VA",
+            "OH",
+            "OH",
+            "NY",
+            "MA",
+            "TX",
+            "VA"
+        ],
+        [
+            "venue",
+            "Jefferson Theater",
+            "The Basement",
+            "Beachland Ballroom",
+            "Bowery Ballroom",
+            "Paradise Rock Club",
+            "House of Blues Dallas",
+            "Jefferson Theater"
+        ]
+    ],
+    "pageTitle": "Parachute Concert Tickets | SeatGeek",
+    "title": "",
+    "url": "https://seatgeek.com/parachute-tickets",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990611.52/warc/CC-MAIN-20150728002310-00214-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 886749399,
+    "recordOffset": 886713966,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "2015 Tour Dates Low price $9 High price $301 Average Price $59 Past 12 Months Find Tickets Parachute Ticket Prices } ); document.getElementById('location-autocomplete') }), } } window.location.href = window.location.pathname + '?lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id } else { window.location.href = window.location.href + '&lat=' + selection.data.lat + '&lon=' + selection.data.lon + '&location_id=' + selection.data.id; if(window.location.href.match('/search')) { SG.GA.sendEvent('team-show-page', 'location-input', { label: selection.term }); onSelect: function(selection) { }, return (data.results && data.results.location) ? data.results.location : [] dataExtractionFunction: function(data) { placeholder: 'Search by City...', postSelectLoad: true, limit: 3, contentKey: 'term', idKey: 'id', queryString: \"types[]=location\", source: \"/autocomplete\", React.createFactory(Autocomplete)({ React.render( if (document.getElementById('location-autocomplete')) {",
+    "textAfterTable": "3/15/2015 Lawrence KS Granada 3/17/2015 Minneapolis MN State Theatre 3/18/2015 Madison WI Orpheum Theatre 3/20/2015 Royal Oak MI Royal Oak Music Theatre 3/22/2015 Toronto ON Phoenix Concert Theatre 3/24/2015 New York NY Best Buy Theater 3/25/2015 Boston MA House of Blues Boston 3/27/2015 Philadelphia PA Union Transfer 3/28/2015 Silver Spring MD The Fillmore Silver Spring 3/30/2015 Raleigh NC The Ritz 3/31/2015 Charleston SC Charleston Music Hall 4/2/2015 Birmingham AL Iron City 4/4/2015 Nashville TN Ryman Auditorium 4/11/2015 Santa Ana CA Constellation Room 6/18/2015 Saginaw MI FirstMerit Bank Event Park 7/8/2015 Somerville MA Arts at the Armory 7/9/2015 Washington DC The Hamilton 7/10/2015 Philadelphia PA World Cafe Live 7/19/2015 Phoenix AZ Crescent Ballroom 7/20/2015 Seattle WA Triple Door 7/22/2015 San Diego CA House of Blues San Diego",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

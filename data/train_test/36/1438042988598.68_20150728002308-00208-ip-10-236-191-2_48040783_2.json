@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Type",
+            "\"eat\"",
+            "\"spit \"",
+            "\"grip\"",
+            "\"grex\"",
+            "\"clok\"",
+            "\"mhlr\"",
+            "\"imco\"",
+            "\"imdc\"",
+            "\"rtpm\""
+        ],
+        [
+            "Java wrapper class",
+            "MovieImporter",
+            "MovieExporter",
+            "GraphicsImporter",
+            "GraphicsExporter",
+            "Clock (provides timing and callback services)",
+            "MediaHandler",
+            "None; image compressor (used for still images and video)",
+            "None; image decompressor (used for still images and video)",
+            "None; real-time packetizer (used for streaming)"
+        ],
+        [
+            "Sample subtypes",
+            "\"AVI\", \"AIFF\", \"MP3\", \"SWF\"",
+            "\"VfW\", \"MooV\", \"mpg4\"",
+            "\"BMP\", \"GIF\", \"JPEG\"",
+            "\"BMP\", \"JPEG\"",
+            "\"tick\", \"micr\"",
+            "\"vide\", \"soun\", \"text\"",
+            "\"jpeg\", \"mp4v\", \"h263\"",
+            "\"jpeg\", \"mp4v\", \"h263\"",
+            "\"263+\", \"mpeg\", \"mp4a\", \"mp4v\""
+        ]
+    ],
+    "pageTitle": "QuickTime for Java: A Developer's Notebook/Working with Components - WikiContent",
+    "title": "",
+    "url": "http://commons.oreilly.com/wiki/index.php?title=QuickTime_for_Java:_A_Developer's_Notebook/Working_with_Components&oldid=4308",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988598.68/warc/CC-MAIN-20150728002308-00208-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 48062427,
+    "recordOffset": 48040783,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{2752=When QuickTime came out in 1990, it could play movies the size of a postage stamp\u2014barely\u2014on $7,000 hardware. It used audio and video codecs that, although still supported today, have long since been abandoned by users. Yet it's been a smooth transition from Apple Video to Cinepak to MPEG-4. This is thanks to an extraordinarily modular design\u2014most of the heavy lifting in QuickTime is performed by components , or shared code fragments that can be discovered and used dynamically. Components provide support for importing and exporting image and movie formats, performing image and sound compression and decompression, accessing system resources, and much more. The QuickTime installer provides components for many features, and components added later by the end user, from either Apple or third parties, can provide more functionality, like support for more media formats.}",
+    "textBeforeTable": "Table 4-1. Some important QuickTime for Java components Documenting and explaining every kind of component is beyond the scope of this book\u2014in fact, it filled up a whole volume of the old Inside Macintosh series. Still, a few of the important ones are listed in Table 4-1. Note that not all components have (or need) a Java wrapper class. The key is the line that gets a ComponentDescriptor via a no-arg constructor. This creates a completely blank template for ComponentIdentifier.find( ) to run against. Of course, if you just wanted to tour components of a specific type, you could pass in a type constant such as StdQTConstants.movieImportType, which would limit the search to MovieImporters, and thus indicate what kinds of formats QuickTime can import. What just happened? [...] [java] Apple: AUVarispeed (aufc/vari) Apple's varispeed playback [java] Apple: AUConverter (aufc/conv) AudioConverter unit [java] Applet (aplt/scpt) The component that runs script applications into IMA4 [java] Apple IMA4 Encoder (aenc/ima4) An AudioCodec that encodes linear PCM data data into Apple Lossless [java] Apple Lossless Encoder (aenc/alac) An AudioCodec that encodes linear PCM into MPEG-4 AAC [java] MPEG-4 AAC Encoder (aenc/aac ) An AudioCodec that encodes linear PCM data PCM data [java] Apple IMA4 Decoder (adec/ima4) An AudioCodec that decodes IMA4 into linear into linear PCM data [java] Apple Lossless Decoder (adec/alac) An AudioCodec that decodes Apple Lossless linear PCM data [java] MPEG-4",
+    "textAfterTable": "Note Yep, \"eat\" and \"spit\" for movie importers and exporters. Hardy har har. It's important to remember that all types and subtypes are FOUR_CHAR_CODE s\u2014any type or subtype seemingly shorter than that is padded with space characters. Retrieved from \" http://commons.oreilly.com/wiki/index.php/QuickTime_for_Java:_A_Developer%27s_Notebook/Working_with_Components\" Views Article Discussion View source History Personal tools Log in / create account Navigation O'Reilly Commons Community portal Current events Recent changes",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

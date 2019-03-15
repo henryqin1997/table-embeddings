@@ -1,0 +1,66 @@
+{
+    "relation": [
+        [
+            "Cited Patent",
+            "US2700227 *",
+            "US2731631 *",
+            "US2742714 *",
+            "US3015169 *",
+            "US3100351 *",
+            "US3154864 *"
+        ],
+        [
+            "Filing date",
+            "30 Jul 1951",
+            "31 Oct 1952",
+            "28 Feb 1952",
+            "13 Sep 1957",
+            "7 Mar 1960",
+            "6 Mar 1961"
+        ],
+        [
+            "Publication date",
+            "25 Jan 1955",
+            "17 Jan 1956",
+            "24 Apr 1956",
+            "2 Jan 1962",
+            "13 Aug 1963",
+            "3 Nov 1964"
+        ],
+        [
+            "Applicant",
+            "Univ New York",
+            "Rca Corp",
+            "Allgaier Earl L",
+            "Chedister Ronald K",
+            "Burroughs Corp",
+            "Rockwell Mfg Co"
+        ],
+        [
+            "Title",
+            "Training apparatus",
+            "Code converter circuit",
+            "Driver training equipment",
+            "Driver training and testing equipment",
+            "Keyboard training device",
+            "Vehicle simulator"
+        ]
+    ],
+    "pageTitle": "Patent US3266173 - Training apparatus - Google Patents",
+    "title": "",
+    "url": "http://www.google.co.uk/patents/US3266173?ie=ISO-8859-1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042981856.5/warc/CC-MAIN-20150728002301-00193-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 501178919,
+    "recordOffset": 501152890,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{11359=- gE/ fi/ 56 66 INVENTOR ATTORN EY United States Patent Continuation of application Ser. No. 180,428, Mar. 19,, 10580=Aug. 16, 1966 s. H. SHERIDAN TRAINING APPARATUS 7 SheetsSheet 3 Original Filed March 19, 1962 INVENTOR BY ATTORNEY 7 Sheets-Sheet 4 G. H. SHERIDAN TRAINING APPARATUS 6.9/5 M Sake/0W INVENTOR 1/ BYi r ATTORNEY Aug. 16, 1966 Original Filed March 19, 1962 Aug. 16, 1966 G. H. SHERIDAN TRAINING APPARATUS 7 Sheets-Sheet v5 Original Filed March 19, 1962 l'lll'llllll T oI &, 10275=TRAINING APPARATUS Original Filed March 19, 1962 7 Sheets-Sheet 2 INVENTOR ATTORNEY DIN 0 am I m I m L. 2 .0 L 1. 0 .Lld Mhr a .rI 0.1 I954 u has H INZUIEQJ 07 :LIZ 03 m. 10 0 J Du? m Tm o IWQA WUIFJI- at mu-o Tad-52W 12.529 P N MI II J: m math. SGRMRM or .m %.0 m W mm IUF SW 1 7520,, 11145=INVENTOR ATTORNEY 16, 1966 G. H. SHERIDAN 3,266,173, 10973=45m fi e/MM /A//E/vr0@ BY Fa/41M ATTORNEY Aug. 16, 1966 5. H. SHERIDAN TRAINING APPARATUS 7 Sheets-Sheet 6 Original Filed March 19, 1962 .T lznnw &, 11490=1962. This application Jan. 10, W64, Sier. No. 337,096 29 Claims. Ci. 35-11) This invention relates to automobile trainer apparatus, and in particular to improved apparatus for use in training students in proper automobile driving practices and this application is a continuation of my prior copending application Serial No. 180,428, filed March 19, 1962, and now abandoned. A variety of prior art auto trainers are described in the literature. Many of the prior art trainers utilizer mock-ups simulating the drivers station of an automobile provided with a plurality of dummy controls operable by a student to effect simulated automobile travel, and provided with a plurality of instruments simulating the dashboard instruments of an actual automobile. To provide increased realism and to determine student response to simulated emergencies and other situations which require certain driver responses, it has been common for many years to project visual displays, as by means of motion picture projectors, for example, for observation by students as they operate the dummy controls. The present invention centers around improvement of such training devices., 11217=TRAINING APPARATUS Original Filed March 19, 1962 '7 Sheets-Sheet '7 l E z 5-4 P o o o o i 0 X o 0 k Z/ b/ -a/ A f 76, 70', 10081=Aug. 16, 1966 G. H. SHERIDAN TRAINING APPARATUS '7 Sheets-Sheet 1 Original Filed March 19, 1962 GENE b4 S/sewnfl INVENTOR BY ATTORNEY Aug. 16', 1966 G. H. SHERIDAN 3,266,173, 12669=In order to achieve extensive use, a primary requisite of automobile trainers is that they be extremely economical to construct, as compared to flight simulators, for example. The much greater cost and relative unavailability of airplanes and the much greater danger to life in practicing flight emergencies in generally regarded as justifying the construction of extremely elaborate and expensive training devices, many of which currently sell for well over $1,000,000 each. If high schools and driver training schools are to afford driving training apparatus, the cost of a trainer must be near, perhaps, $1000. In order to provide maximum effective training, however, it is highly desirable that automobile driving trainers be as realistic as is possible, at as low a cost as possible. For example, it is highly desirable that an automobile trainer realistically respond to almost every type of student operation of the controls, whether the operation is proper or improper. Because automobile trainers of the prior art necessarily have been designed under stringent cost limitations, most of them of which I am aware have utilized simple electromechanical hardware and have made little or no attempt to provide continuous and accurate analog simulation. Thus it is a primary object of the invention to provide extremely realistic and relatively accurate analog simulation using extremel inexpensive circuitry., 42860=The projector which provides the visual display to be seen by the students is provided with conventional sound pickup means, such as a photocell which provides electrical signals in accordance with the character of pulses recorded on the sound track of the film. In the invention, pulses are coded in the sound track to provide fivedigit serial binary numbers. Each series of coded pulses is preceded by a synchronizing pulse which signals the advent of a serial train of pulses. By providing pulses and no pulses during the five-digit times of the signal period, a serial binary number will be seen to result. FIG. 4b shows as waveform #1 a synchronizing pulse followed by five signal pulses, indicating the binary number 11111 or, 32 in decimal form. If no pulse were recorded in the position of pulse #11 in FIG. 4a, for example, the binary number would instead be 10111 or 24 in decimal form. The serial binary numbers read from the film sound track are converted to parallel binary form by the apparatus shown in FIG. 4a, and then decoded to energize selectively one of a group of output conductors. For example, if the binary number six is encoded at a given place on the film, conductor number 6 of the output conductor group Will be energized as the place on the film passes through the projector.}",
+    "textBeforeTable": "Patent Citations Examiners. S. M. BENDER, Assistant Examiner. LAWRENCE CHARLES, LEONARD W. VARNER, References Cited by the Examiner EUGENE R. CAPOZIO, Primary Examiner. 29. Apparatus according to claim 28 in which said means for converting includes a digital shift register means. 28. Apparatus according to claim 23 in which said different electrical signals comprise serial pulse trains, and in which the last-recited mean-s includes: means for converting each such serial pulse train to a respective first parallel digital signal; a plurality of switch means connected to said one or selected group of controls for providing a second parallel digital signal; and means for comparing said first and second dig-ital signals to provide an error signal for selectively operating said error-indicating means. 27. Apparatus according to claim 23 in which the laststated means includes means for providing error output signals and recorder means for recording sai-d error output signals. 26. Apparatus according to claim 23 having a further error-indicating means at each of said stations; and means responsive to operation of one or more of said controls but independent of said sequence of different elec trical signals for actuating said further error-indicating means. 25. Apparatus according to claim 23 in which at least one of said electrical signals is coded to require a desired simulated condition corresponding to a predetermined history of operation of one or",
+    "textAfterTable": "* Cited by examiner Referenced by Citing Patent Filing date Publication date Applicant Title US3508346 * 24 Nov 1967 28 Apr 1970 Usa Audio visual instructional apparatus US3523374 * 21 Jul 1967 11 Aug 1970 Schuster Donald H Driver training and testing equipment US3537191 * 21 Oct 1968 3 Nov 1970 Mitsubishi Precision Co Ltd Driving skill testing apparatus US3591931 * 30 Oct 1969 13 Jul 1971 Lowa State University Research Adaptive auditory pattern recognition system for driver training and testing equipment US3704526 * 23 Dec 1970 5 Dec 1972 Aetna Life & Casuality Rc clutch stall circuit for a driver-trainer simulator US3936955 * 17 Dec 1974 10 Feb 1976 Driver Training Institute Driver training simulator",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

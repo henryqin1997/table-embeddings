@@ -1,0 +1,100 @@
+{
+    "relation": [
+        [
+            "Frequency",
+            "155.01000",
+            "154.34000",
+            "155.38500",
+            "155.77500",
+            "155.49000",
+            "151.01000",
+            "156.24000"
+        ],
+        [
+            "License",
+            "KBF875",
+            "WPPY918",
+            "WPPD517",
+            "WNUW944",
+            "",
+            "WQHL387",
+            "WNVN439"
+        ],
+        [
+            "Type",
+            "RM",
+            "RM",
+            "RM",
+            "RM",
+            "RM",
+            "RM",
+            "RM"
+        ],
+        [
+            "Tone",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Alpha Tag",
+            "WC Sheriff",
+            "WCVFD",
+            "WCEMS",
+            "WC Rescue",
+            "WCEMA",
+            "WC-911",
+            "WC Roads"
+        ],
+        [
+            "Description",
+            "Sheriff Dispatch",
+            "Volunteer Fire Department",
+            "EMS",
+            "Rescue Squad",
+            "EMA",
+            "911 District Ops",
+            "Road Department"
+        ],
+        [
+            "Mode",
+            "DMR",
+            "DMR",
+            "DMR",
+            "DMR",
+            "DMR",
+            "DMR",
+            "DMR"
+        ],
+        [
+            "Tag",
+            "Law Dispatch",
+            "Fire Dispatch",
+            "EMS Dispatch",
+            "Emergency Ops",
+            "Emergency Ops",
+            "Emergency Ops",
+            "Public Works"
+        ]
+    ],
+    "pageTitle": "White County, Tennessee (TN) Scanner Frequencies and Radio Frequency Reference",
+    "title": "",
+    "url": "http://www.radioreference.com/apps/db/?ctid=2520&ts=2",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 5,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988061.16/warc/CC-MAIN-20150728002308-00256-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 660380525,
+    "recordOffset": 660372323,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "White County White County //--> google_ad_height = 90; google_ad_width = 728; google_ad_slot = \"8101595564\"; /* p5 Generic 728/90 Leader */ google_ad_client = \"ca-pub-0543475854053093\"; } }); } act=0; $(document).unbind(\"keyup\"); tar.innerHTML = origHtml; if (e.keyCode == 27) { $(document).keyup(function(e) { function setEsc(tar,origHtml) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uTag\",\"tagId\" : value, \"fid\" : id}, function(response,status,xhr) { $(tar).html(''); function updateTag(value,id) { } act=0; $(document).unbind(\"keyup\"); }); } alert('Error Updating: ' + xhr.status + \" \" + xhr.statusText); $(tar).html(origHtml); if (status == \"error\") { $(tar).load(\"/apps/db/ajax.php\", {\"a\" : \"uAlpha\",\"alphaTag\" : alphaTag.value, \"fid\" : alphaTag.id}, function(response,status,xhr) { $(tar).html(''); function updateAlpha(alphaTag) { }); }); } act=1; setEsc(this,origHtml); this.innerHTML = getTagsHTML; getTagsHTML += '\\n'; } getTagsHTML += '' + tagNames[i] + '\\n'; for",
+    "textAfterTable": "Sparta Frequency\u00a0 License\u00a0 Type\u00a0 Tone\u00a0 Alpha Tag\u00a0 Description\u00a0 Mode\u00a0 Tag\u00a0 154.81500\u00a0 WPPG943\u00a0 RM SPD Dispatch Police Department\u00a0 DMR\u00a0 Law Dispatch\u00a0 153.63500\u00a0 WPEM967\u00a0",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

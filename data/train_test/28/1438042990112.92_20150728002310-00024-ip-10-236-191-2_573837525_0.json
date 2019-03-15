@@ -1,0 +1,66 @@
+{
+    "relation": [
+        [
+            "Parameters",
+            "R ^A",
+            "\u03b5 \u00af ^ 1",
+            "\u03b5 \u00af ^ 2",
+            "\u03b5 \u00af ^ 3",
+            "\u03b5 \u00af ^ 4",
+            "\u03b5 \u00af ^ 5",
+            "\u03b5 \u00af ^ 6",
+            "\u03b5 \u00af ^ 7"
+        ],
+        [
+            "Estimate",
+            "2.56986",
+            "0.49519",
+            "0.70226",
+            "0.71396",
+            "0.74050",
+            "0.69724",
+            "0.63358",
+            "0.64320"
+        ],
+        [
+            "Standard Error",
+            "0.18414",
+            "0.03397",
+            "0.01831",
+            "0.01829",
+            "0.02203",
+            "0.01876",
+            "0.02272",
+            "0.02016"
+        ],
+        [
+            "P-value",
+            "<2e-16",
+            "<2e-16",
+            "<2e-16",
+            "<2e-16",
+            "<2e-16",
+            "<2e-16",
+            "<2e-16",
+            "<2e-16"
+        ]
+    ],
+    "pageTitle": "Introduction",
+    "title": "",
+    "url": "http://www.mdpi.com/1424-8220/8/4/2695/xml",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042990112.92/warc/CC-MAIN-20150728002310-00024-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 573857887,
+    "recordOffset": 573837525,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{625=Estimated 90-m TIR radiances of ASTER channel 13 by physical downscaling. Solid lines are the fitted models and dotted lines are 1:1 lines. Units for both axis are w / (m2 sr \u03bcm)., 92430=When the model parameter estimates obtained at the resolution of 990-m were applied to land cover fractions at the spatial resolution of 90-m, the 90-m TIR radiances were obtained. After bias correction (see Equation (7)), the final model estimates of the 90-m TIR radiances were shown in Figure 3(c). A visual comparison revealed that (1) the general patterns of the 90-m TIR radiances in Figure 3(a) were well captured in Figure 3(c); and (2) considerable spatial details in Figure 3(c), which were originally unresolvable in Figure 3(b), appeared in Figure 3(c). However, some hotspots (pixels with high TIR radiances) depicted in red in Figure 3(a) were not captured in Figure 3(c). This is due to the fact that there is a lack of individual patches (hotspots) comprised by more than 11 \u00d7 11 pixels of the 90-m resolution in the original thermal image. Additionally, a small portion of the map in Figure 3(c) illustrated some smoothing and blocking effects, which might be a consequence of the assumption of isothermal pixel. Further comparison between the model estimates and the true values (i.e. the observed 90-m TIR radiances of ASTER channel 13) is illustrated by a scatter plot in Figure 4. The scatter plot showed that most of the points lied along a 1:1 line (dotted line) with only a small portion of points departing far from the 1:1 line, indicating a general good agreement between the physical model estimates and the true values. To evaluate the results quantitatively, a simple linear regression model was fitted between the estimated values and the true values using all the 90-m pixels (n = 75625). The results demonstrated that the estimated values matched very well with the true values as evidenced by (1) a very high coefficient of determination (r2 = 0.777), (2) the closeness of the fitted line (solid line) and the 1:1 line in the scatter plot, and (3) a small residual standard error (0.2831)., 271=Estimated 90-m TIR radiances of ASTER channel 13 by statistical downscaling. Solid lines are the fitted models and dotted lines are 1:1 lines. Units for both axis are w / (m2 sr \u03bcm).}",
+    "lastModified": "Thu, 14 May 2015 09:55:39 GMT",
+    "textBeforeTable": "The parameter estimates of the physical model. Table 1. Estimated 90-m TIR radiances of ASTER channel 13 by statistical downscaling. Solid lines are the fitted models and dotted lines are 1:1 lines. Units for both axis are w / (m2 sr \u03bcm). Figure 5. Estimated 90-m TIR radiances of ASTER channel 13 by physical downscaling. Solid lines are the fitted models and dotted lines are 1:1 lines. Units for both axis are w / (m2 sr \u03bcm). Figure 4. (a) The original 90-m TIR radiances of ASTER channel 13, (b) The simulated 990-m TIR radiances of ASTER channel 13, (c) The estimated 90-m TIR radiances by physical downscaling, and (d) The estimated 90-m TIR radiances by statistical downscaling. Unit for the scale bar is w / (m2 sr \u03bcm). Figure 3. The false color display of the 15-m ASTER VNIR imagery in the study area. Figure 2. Procedure of statistical downscaling method. Figure 1. Figures and Table Jet Propulsion Laboratory Pasadena, CA 1999 ASTER user handbook, version 2 B. Ramachandran S. Hook M. Abrams 19.",
+    "textAfterTable": "",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

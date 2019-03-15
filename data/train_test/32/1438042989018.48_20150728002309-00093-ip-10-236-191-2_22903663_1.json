@@ -1,0 +1,238 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2012-13",
+            "2013-14 *",
+            "2013-14 *",
+            "2013-14 *",
+            "2014-15",
+            "CAREER"
+        ],
+        [
+            "Team",
+            "NOP",
+            "All Teams",
+            "PHL",
+            "CLE",
+            "PHL",
+            ""
+        ],
+        [
+            "GP",
+            "2",
+            "46",
+            "26",
+            "20",
+            "73",
+            "121"
+        ],
+        [
+            "GS",
+            "0",
+            "25",
+            "25",
+            "0",
+            "32",
+            "57"
+        ],
+        [
+            "Min",
+            "4.8",
+            "875.0",
+            "706.6",
+            "168.4",
+            "1398.6",
+            "2278.4"
+        ],
+        [
+            "FGM",
+            "2",
+            "130",
+            "112",
+            "18",
+            "238",
+            "370"
+        ],
+        [
+            "FGA",
+            "3",
+            "274",
+            "229",
+            "45",
+            "502",
+            "779"
+        ],
+        [
+            "FG%",
+            ".667",
+            ".474",
+            ".489",
+            ".400",
+            ".474",
+            ".475"
+        ],
+        [
+            "3FGM",
+            "0",
+            "0",
+            "0",
+            "0",
+            "4",
+            "4"
+        ],
+        [
+            "3FGA",
+            "0",
+            "1",
+            "1",
+            "0",
+            "22",
+            "23"
+        ],
+        [
+            "3P%",
+            ".000",
+            ".000",
+            ".000",
+            ".000",
+            ".182",
+            ".174"
+        ],
+        [
+            "FTM",
+            "0",
+            "90",
+            "82",
+            "8",
+            "106",
+            "196"
+        ],
+        [
+            "FTA",
+            "0",
+            "121",
+            "107",
+            "14",
+            "137",
+            "258"
+        ],
+        [
+            "FT%",
+            ".000",
+            ".744",
+            ".766",
+            ".571",
+            ".774",
+            ".760"
+        ],
+        [
+            "FIC",
+            "2",
+            "304",
+            "258",
+            "46",
+            "439",
+            "745"
+        ],
+        [
+            "OFF",
+            "2",
+            "104",
+            "82",
+            "22",
+            "121",
+            "227"
+        ],
+        [
+            "DEF",
+            "0",
+            "133",
+            "99",
+            "34",
+            "238",
+            "371"
+        ],
+        [
+            "Reb",
+            "2",
+            "237",
+            "181",
+            "56",
+            "359",
+            "598"
+        ],
+        [
+            "Ast",
+            "0",
+            "52",
+            "47",
+            "5",
+            "79",
+            "131"
+        ],
+        [
+            "Stl",
+            "0",
+            "28",
+            "23",
+            "5",
+            "39",
+            "67"
+        ],
+        [
+            "Blk",
+            "0",
+            "20",
+            "13",
+            "7",
+            "30",
+            "50"
+        ],
+        [
+            "PF",
+            "1",
+            "116",
+            "84",
+            "32",
+            "135",
+            "252"
+        ],
+        [
+            "TO",
+            "1",
+            "41",
+            "33",
+            "8",
+            "99",
+            "141"
+        ],
+        [
+            "Pts",
+            "4",
+            "350",
+            "306",
+            "44",
+            "586",
+            "940"
+        ]
+    ],
+    "pageTitle": "Henry Sims Player Profile, Philadelphia Sixers, News, Rumors, NBA Stats, NCAA Stats, D-League Stats, International Stats, Events Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Henry-Sims/Summary/2371",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989018.48/warc/CC-MAIN-20150728002309-00093-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 22933791,
+    "recordOffset": 22903663,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{9229=Born: Mar 27, 1990 (25 years old), 8296=Draft Entry: 2012 NBA Draft}",
+    "TableContextTimeStampAfterTable": "{122797=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved., 101944=* International basketball history from 2011-2012}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 3 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ D-League ] [ International ] [ High School ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2012-13 NOP 2 0 4.8 2 3 .667 0 0 .000 0 0 .000 2 2 0 2 0 0 0 1 1 4 2013-14 * All Teams 46 25 875.0 130 274 .474 0 1 .000 90 121 .744 304 104 133 237 52 28 20 116 41 350 2013-14 * PHL 26 25 706.6 112 229 .489 0 1 .000 82 107 .766 258 82 99 181 47 23 13 84 33 306 2013-14 * CLE 20 0 168.4 18 45 .400 0 0 .000 8 14 .571 46 22 34 56 5 5 7 32 8 44 2014-15 PHL 73 32 1398.6 238 502 .474 4 22 .182 106 137 .774 439 121 238 359 79 39 30 135 99 586 CAREER \u00a0 121 57 2278.4 370 779 .475 4 23 .174 196 258 .760 745 227 371 598",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

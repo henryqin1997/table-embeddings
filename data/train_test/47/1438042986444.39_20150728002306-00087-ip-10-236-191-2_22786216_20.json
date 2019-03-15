@@ -1,0 +1,211 @@
+{
+    "relation": [
+        [
+            "Year",
+            "2013",
+            "2011",
+            "2007",
+            "2006",
+            "AVERAGES",
+            "TOTAL"
+        ],
+        [
+            "Event",
+            "EuroBasket",
+            "EuroBasket",
+            "EuroBasket",
+            "FIBA World Cup",
+            "",
+            ""
+        ],
+        [
+            "GP",
+            "10",
+            "5",
+            "6",
+            "6",
+            "27",
+            "27"
+        ],
+        [
+            "Min",
+            "31:42",
+            "32:00",
+            "27:30",
+            "21:20",
+            "28:31",
+            "770:00"
+        ],
+        [
+            "FGM",
+            "4.4",
+            "3.8",
+            "5.0",
+            "4.3",
+            "4.4",
+            "119"
+        ],
+        [
+            "FGA",
+            "13.3",
+            "11.0",
+            "11.0",
+            "12.2",
+            "12.1",
+            "327"
+        ],
+        [
+            "FG%",
+            ".331",
+            ".345",
+            ".455",
+            ".356",
+            ".364",
+            ".364"
+        ],
+        [
+            "3FGM",
+            "1.6",
+            "1.8",
+            "1.5",
+            "2.3",
+            "1.8",
+            "48"
+        ],
+        [
+            "3FGA",
+            "5.5",
+            "6.4",
+            "5.2",
+            "8.2",
+            "6.2",
+            "167"
+        ],
+        [
+            "3P%",
+            ".291",
+            ".281",
+            ".290",
+            ".286",
+            ".287",
+            ".287"
+        ],
+        [
+            "FTM",
+            "3.2",
+            "2.6",
+            "4.0",
+            "2.5",
+            "3.1",
+            "84"
+        ],
+        [
+            "FTA",
+            "4.2",
+            "3.4",
+            "4.3",
+            "3.3",
+            "3.9",
+            "105"
+        ],
+        [
+            "FT%",
+            ".762",
+            ".765",
+            ".923",
+            ".750",
+            ".800",
+            ".800"
+        ],
+        [
+            "Reb",
+            "4.0",
+            "2.8",
+            "2.2",
+            "1.5",
+            "2.8",
+            "76"
+        ],
+        [
+            "Ast",
+            "2.2",
+            "3.2",
+            "1.0",
+            "1.7",
+            "2.0",
+            "54"
+        ],
+        [
+            "Stl",
+            "0.8",
+            "1.2",
+            "0.7",
+            "1.0",
+            "0.9",
+            "24"
+        ],
+        [
+            "Blk",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0.0",
+            "0"
+        ],
+        [
+            "PF",
+            "3.2",
+            "3.2",
+            "1.0",
+            "2.0",
+            "2.4",
+            "66"
+        ],
+        [
+            "TO",
+            "1.9",
+            "1.4",
+            "1.5",
+            "1.3",
+            "1.6",
+            "43"
+        ],
+        [
+            "Pts",
+            "13.6",
+            "12.0",
+            "15.5",
+            "13.5",
+            "13.7",
+            "370"
+        ],
+        [
+            "Place",
+            "8th",
+            "17th",
+            "9th",
+            "9th",
+            "-",
+            "-"
+        ]
+    ],
+    "pageTitle": "Marco Belinelli Player Profile, San Antonio Spurs, News, Rumors, NBA Stats, Events Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Marco_Belinelli/Summary/48",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 20,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042986444.39/warc/CC-MAIN-20150728002306-00087-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 22820815,
+    "recordOffset": 22786216,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{8009=Early Entry Info: 2007 Early Entrant, 9408=Born: Mar 25, 1986 (29 years old), 8109=Draft Entry: 2007 NBA Draft, 8336=Free Agent: UFA-2018}",
+    "TableContextTimeStampAfterTable": "{50382=* Since the 1946-1947 season, 105578=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved.}",
+    "textBeforeTable": "NBA Regular Season Stats - Per Game 8 Years Of Service NBA Jump to: [ NBA ] [ National ] [ Recent News ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": ".395 1.08 3.03 .357 1.93 2.30 .839 4.60 0.18 1.74 1.92 2.03 0.60 0.08 1.92 1.12 9.62 2013-14 SAN 80 25 25.2 4.21 8.69 .485 1.57 3.66 .430 1.39 1.64 .847 7.38 0.23 2.60 2.83 2.24 0.62 0.09 1.62 1.19 11.39 2014-15 SAN 62 9 22.4 3.21 7.58 .423 1.39 3.71 .374 1.35 1.60 .848 5.28 0.42 2.11 2.53 1.52 0.50 0.05 1.37 0.98 9.16 CAREER \u00a0 502 209 22.8 3.38 7.85 .430 1.31 3.35 .392 1.36 1.66 .819 4.96 0.24 1.80 2.04 1.61 0.59 0.07 1.56 1.03 9.43 NBA Regular Season Stats - Totals Season Team GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2007-08 GOS 33 0 240.5 36 93 .387 16 41 .390 7 9 .778 34 3 11 14 15 5 0 15 12 95 2008-09 GOS 42 23 881.9 140 317 .442 52 131 .397 40 52 .769 200 10 61 71 88 36 1 73 59 372 2009-10 TOR 66 1",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

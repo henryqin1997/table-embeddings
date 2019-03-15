@@ -1,0 +1,38 @@
+{
+    "relation": [
+        [
+            "Template variable:",
+            "%TMPL:DEF{\"sep\"}%",
+            "%TMPL:DEF{\"htmldoctype\"}%",
+            "%TMPL:DEF{\"standardheader\"}%",
+            "%TMPL:DEF{\"simpleheader\"}%",
+            "%TMPL:DEF{\"standardfooter\"}%",
+            "%TMPL:DEF{\"oops\"}%"
+        ],
+        [
+            "Defines:",
+            "\"|\" separator",
+            "Start of all HTML pages",
+            "Standard header (ex: view, index, search)",
+            "Simple header with reduced links (ex: edit, attach, oops)",
+            "Footer, excluding revision and copyright parts",
+            "Skeleton of oops dialog"
+        ]
+    ],
+    "pageTitle": "TWikiTemplates < TWiki < DENX",
+    "title": "",
+    "url": "http://www.denx.de/wiki/TWiki/TWikiTemplates?sortcol=0&table=2&up=1",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 0,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438043058631.99/warc/CC-MAIN-20150728002418-00143-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 398241391,
+    "recordOffset": 398229300,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "twiki.tmpl is the default master template. Common parts, appearing in two or more templates, can be defined in a master template and then shared by others: Master Templates Template Topics: Defines default text when you create a new topic HTML Page Templates: Defines the layout of DENX pages Master Template: Stores common parts; included by other templates There are three types of template: Types of Template NOTE: Template directives work only for templates: they do not get processed in topic text. Use of template directives is optional: templates work without them. Templates and TWikiSkins work transparently and interchangeably. For example, you can create a skin that overloads only the twiki.tmpl master template, like twiki.print.tmpl, that redefines the header and footer. Two-pass processing lets you use a variable before or after declaring it. Variables live in a global name space: there is no parameter passing. %TMPL:P{\"var\"}%: Prints a previously defined variable. %TMPL:END%: Ends variable definition. %TMPL:DEF{\"var\"}%: Define a variable. Text between this and the END directive is not returned, but put into a hash for later use. %TMPL:INCLUDE{\"file\"}%: Includes a template file. The template directory of the current web is searched first, then",
+    "textAfterTable": "HTML Page Templates TWiki uses HTML template files for all actions, like topic view, edit, and preview. This allows you to change the look and feel of all pages by editing just a few template files. Templates are stored either in the twiki/templates directory or in user topics. As an example, twiki/templates/view.tmpl is the template file for the twiki/bin/view script. Templates can be overloaded by individual webs. TWikiSkins can overload the standard templates. TWiki uses the following search order to determine which template to use: If a skin is specified If no skin is specified templates/script.skin.tmpl templates/script.tmpl templates/%WEB%/script.skin.tmpl templates/%WEB%/script.tmpl data/TWiki/SkinSkinScriptTemplate.txt data/TWiki/ScriptTemplate.txt data/%WEB%/SkinSkinScriptTemplate.txt data/%WEB%/ScriptTemplate.txt Legend: \u2022 script refers to the script name, e.g view, edit \u2022 Script refers to the same, but with the first character capitalized, e.g View",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

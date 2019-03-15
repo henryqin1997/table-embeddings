@@ -1,0 +1,222 @@
+{
+    "relation": [
+        [
+            "Season",
+            "2005-06",
+            "2006-07",
+            "2007-08",
+            "2008-09",
+            "CAREER"
+        ],
+        [
+            "School",
+            "Lewis & Clark",
+            "Lewis-Clark St.",
+            "New Hampshire",
+            "New Hampshire",
+            ""
+        ],
+        [
+            "Class",
+            "Fr",
+            "So",
+            "Jr",
+            "Sr",
+            ""
+        ],
+        [
+            "GP",
+            "-",
+            "-",
+            "28",
+            "17",
+            "45"
+        ],
+        [
+            "GS",
+            "-",
+            "-",
+            "17",
+            "7",
+            "24"
+        ],
+        [
+            "Min",
+            "-",
+            "-",
+            "25.8",
+            "19.9",
+            "23.6"
+        ],
+        [
+            "FGM",
+            "-",
+            "-",
+            "2.79",
+            "2.18",
+            "2.56"
+        ],
+        [
+            "FGA",
+            "-",
+            "-",
+            "7.50",
+            "6.18",
+            "7.00"
+        ],
+        [
+            "FG%",
+            "-",
+            "-",
+            ".371",
+            ".352",
+            ".365"
+        ],
+        [
+            "3FGM",
+            "-",
+            "-",
+            "1.07",
+            "1.41",
+            "1.20"
+        ],
+        [
+            "3FGA",
+            "-",
+            "-",
+            "2.89",
+            "3.41",
+            "3.09"
+        ],
+        [
+            "3P%",
+            "-",
+            "-",
+            ".370",
+            ".414",
+            ".388"
+        ],
+        [
+            "FTM",
+            "-",
+            "-",
+            "3.57",
+            "2.29",
+            "3.09"
+        ],
+        [
+            "FTA",
+            "-",
+            "-",
+            "4.57",
+            "3.06",
+            "4.00"
+        ],
+        [
+            "FT%",
+            "-",
+            "-",
+            ".781",
+            ".750",
+            ".772"
+        ],
+        [
+            "FIC",
+            "-",
+            "-",
+            "6.15",
+            "4.10",
+            "5.38"
+        ],
+        [
+            "OFF",
+            "-",
+            "-",
+            "0.79",
+            "0.53",
+            "0.69"
+        ],
+        [
+            "DEF",
+            "-",
+            "-",
+            "1.68",
+            "1.29",
+            "1.53"
+        ],
+        [
+            "Reb",
+            "-",
+            "-",
+            "2.46",
+            "1.82",
+            "2.22"
+        ],
+        [
+            "Ast",
+            "-",
+            "-",
+            "2.75",
+            "2.59",
+            "2.69"
+        ],
+        [
+            "Stl",
+            "-",
+            "-",
+            "1.54",
+            "0.35",
+            "1.09"
+        ],
+        [
+            "Blk",
+            "-",
+            "-",
+            "0.07",
+            "0.06",
+            "0.07"
+        ],
+        [
+            "PF",
+            "-",
+            "-",
+            "2.54",
+            "2.18",
+            "2.40"
+        ],
+        [
+            "TO",
+            "-",
+            "-",
+            "1.86",
+            "1.59",
+            "1.76"
+        ],
+        [
+            "Pts",
+            "-",
+            "-",
+            "10.21",
+            "8.06",
+            "9.40"
+        ]
+    ],
+    "pageTitle": "Eric Gilchrese Player Profile, New Hampshire, NCAA Stats, International Stats, Game Logs, Bests, Awards - RealGM",
+    "title": "",
+    "url": "http://basketball.realgm.com/player/Eric_Gilchrese/Summary/17853",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042989331.34/warc/CC-MAIN-20150728002309-00239-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 24330803,
+    "recordOffset": 24292798,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampBeforeTable": "{45445=Draft Entry: 2009 NBA Draft, 46189=Born: Jun 30, 1987 (28 years old)}",
+    "TableContextTimeStampAfterTable": "{46342=All content \u00a9 2000-2015 RealGM, L.L.C. All rights reserved., 20365=* International basketball history from 2011-2012}",
+    "textBeforeTable": "NCAA Season Stats - Per Game College: New Hampshire (2009) NCAA More NBA Transactions \u00bb Jun 25, 2009 - Eric Gilchrese went undrafted in the 2009 NBA Draft making him an Unrestricted FA. NBA Transactions 0 Years Of Service NBA Jump to: [ NBA ] [ NCAA ] [ International ] }); }); } }); } } $(\"#result\").html('Error'); }else{ window.location = msg; if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=player&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&pageid=summary&playerid=\" + $(this).val(), type: \"POST\", $.ajax({ if ($(this).val() != \"\") { $(\"#player\").change( function() { }); } }); } } $(\"#result\").html('Error'); }else{ $(\"#result\").html(''); $(\"#player\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=team&season=\" + $(\"#season\").val() + \"&league=\" + $(\"#league\").val() + \"&team=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); if ($(this).val() != \"\") { $(\"#team\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#team\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=league&season=\" + $(\"#season\").val() + \"&league=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); if ($(this).val() != \"\") { $(\"#league\").change( function() { }); } }); } } $(\"#result\").html(''); $(\"#league\").html(msg).show(); if (msg != ''){ success: function(msg){ url: \"/ajax/player_nav.phtml\", data: \"type=season&season=\" + $(this).val(), type: \"POST\", $.ajax({ $(\"#result\").html('Loading ...'); $(\"#player\").hide(); $(\"#team\").hide(); $(\"#league\").hide(); if ($(this).val() != \"\") { $(\"#season\").change( function() { $(document).ready(function(){",
+    "textAfterTable": "NCAA Season Stats - Totals Season School Class GP GS Min FGM FGA FG% 3FGM 3FGA 3P% FTM FTA FT% FIC OFF DEF Reb Ast Stl Blk PF TO Pts 2005-06 Lewis & Clark Fr - - - - - - - - - - - - - - - - - - - - - - 2006-07 Lewis-Clark St. So - - - - - - - - - - - - - - - - - - - - - - 2007-08 New Hampshire Jr 28 17 722.0 78 210 .371 30 81 .370 100 128 .781 172 22 47 69 77 43 2 71 52 286 2008-09 New Hampshire Sr 17 7 338.0 37 105 .352 24 58 .414 39 52 .750 70 9 22 31 44 6 1 37 27 137 CAREER \u00a0 \u00a0 45 24 1060.0 115 315 .365 54 139 .388 139 180 .772 242 31 69 100 121 49 3 108 79 423 NCAA Season Stats - Misc Stats",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

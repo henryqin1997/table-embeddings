@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "Operator",
+            "+",
+            "-",
+            "*",
+            "/",
+            "rem",
+            "( )"
+        ],
+        [
+            "Name",
+            "Addition",
+            "Subtraction",
+            "Multiplication",
+            "Division",
+            "Remainder",
+            "Precedence"
+        ],
+        [
+            "Description",
+            "Adds numeric data types. Concatenates Strings.",
+            "Subtracts numeric data types.",
+            "Multiplies numeric data types.",
+            "Divides numeric data types.",
+            "Calculates the remainder of a division in which the divisor does not exactly divide the dividend.",
+            "Indicates the order of evaluation of an arithmetic expression."
+        ]
+    ],
+    "pageTitle": "Working with Data Objects and Expressions",
+    "title": "",
+    "url": "http://docs.oracle.com/cd/E15586_01/doc.1111/e15177/dataobj_expression_bpmcu.htm",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987402.78/warc/CC-MAIN-20150728002307-00211-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 75358387,
+    "recordOffset": 75340715,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{37097=unitsSold <= 1200, 6802=Represents a specific time expressed as: year-month day hour:minute:second. For example: 1995-02-03 13:30:28-08:00}",
+    "lastModified": "Thu, 20 Sep 2012 17:26:42 GMT",
+    "textBeforeTable": "Table 7-4 Arithmetic Operators Table 7-4, Table 7-5, Table 7-6, and Table 7-7 describe the supported operators in the simple expression builder. unitsSold <= 1200 activationCount > 3 totalAmount - discount The following examples of expressions use operators: You can use these operators to write expressions and conditions to define your process flow. Generally these expressions perform their calculations based on the data objects in your process. You can write expressions and conditions using the value of the data objects, but you cannot modify their value. Conditional Operators Equality and Relational Operators Unary Operators Arithmetic Operators Simple expressions support the following operator types: 7.4.2.1 Operator Types Simple expressions are defined using a basic expression language supported by Oracle BPM. 7.4.2 Simple Expressions XML Literal Plain text Simple Oracle Business Process Composer supports the following types of expressions: 7.4.1 Types of Expressions Expressions do not allow you to directly reassign the values to data objects. However, you can use expressions to change the",
+    "textAfterTable": "Table 7-5 Unary Operators Operator Name Description + Plus Has no effect in the value of the numeric operand. Use it to indicate explicitly that a certain value is positive. - Minus Negates an arithmetic expression. * Not Logical complement operator. Negates the value of a boolean expression. Table 7-6 Equality and Relational Operators Operator Name Description = or ==",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 1,
+    "headerRowIndex": 0
+}

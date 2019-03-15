@@ -1,0 +1,71 @@
+{
+    "relation": [
+        [
+            "Citing Patent",
+            "US7856217 *",
+            "US7860746 *",
+            "US8010397 *",
+            "US9059967 *",
+            "US20070294334 *",
+            "US20130268608 *",
+            "USRE45362 *"
+        ],
+        [
+            "Filing date",
+            "Nov 24, 2008",
+            "Jul 31, 2007",
+            "Jan 23, 2007",
+            "Oct 27, 2006",
+            "Oct 27, 2006",
+            "Jun 3, 2013",
+            "Dec 14, 2012"
+        ],
+        [
+            "Publication date",
+            "Dec 21, 2010",
+            "Dec 28, 2010",
+            "Aug 30, 2011",
+            "Jun 16, 2015",
+            "Dec 20, 2007",
+            "Oct 10, 2013",
+            "Feb 3, 2015"
+        ],
+        [
+            "Applicant",
+            "Chan Hark C",
+            "Intuit Inc.",
+            "Sprint Communications Company L.P.",
+            "Reference Ltd., Limited Liability Company",
+            "Hickman Paul L",
+            "Online News Link Llc",
+            "Hark C Chan"
+        ],
+        [
+            "Title",
+            "Transmission and receiver system operating on multiple audio programs",
+            "System and method for determining paid taxes",
+            "Enterprise infrastructure development systems and methods",
+            "Method and apparatus for controlling a computer over a TCP/IP protocol network",
+            "Method and apparatus for controlling a computer over a TCP/IP protocol network",
+            "Information distribution and processing system",
+            "Transmission and receiver system operating on multiple audio programs"
+        ]
+    ],
+    "pageTitle": "Patent US7627750 - Information distribution and processing system - Google Patents",
+    "title": "",
+    "url": "http://www.google.com/patents/US7627750?dq=4200770",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 7,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987171.38/warc/CC-MAIN-20150728002307-00310-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 488728187,
+    "recordOffset": 488678549,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{33929=This application is a continuation of application Ser. No. 10/244,850 filed Sep. 17, 2002 now U.S. Pat. No. 6,789,198, which is a continuation of application Ser. No. 09/177,681 filed Oct. 22, 1998, now U.S. Pat. No. 6,473,860, which is a continuation in part of application Ser. No. 08/939,368 filed Sep. 29, 1997, now U.S. Pat. No. 6,021,307, which is a continuation in part of application Ser. No. 08/644,838 filed May 10, 1996, now abandoned, which is a continuation in part of application Ser. No. 08/279,424 filed Jul. 25, 1994, now abandoned, and application Ser. No. 08/255,649 filed Jun. 8, 1994, now abandoned, which is a continuation in part of application Ser. No. 08/224,280 filed Apr. 7, 1994, now abandoned. All these patent applications are incorporated herein by reference., 72055=If communication link 448 is a broadcasting communication link, central station 446 can broadcast the key and secret data on link 448. Communication interface 424 can listen to link 448 and retrieve information directed thereto. Other software distribution and processing systems connected to link 448 would not be able to retrieve such information. Examples of secret broadcasting are also disclosed in \u201cApplied Cryptography Protocols, Algorithms, and Source Code in C,\u201d published 1994 by John Wiley & Sons, Inc., and the references cited therein., 70838=Preferably, communication interface 424 contains means for error detection and correction. Communication interface 424 preferably contains means for allowing mutual authentication between secure processor 420 and central station 446. Such authentication means are well known. Examples of such means are disclosed in \u201cApplied Cryptography: Protocols, Algorithms, and Source Code in C,\u201d published 1994 by John Wiley & Sons., Inc., and the references cited therein., 71365=Communication interface 424 also contains means for allowing central station 446 to send a decryption key and other secret data to secure processor 420, preferably after authentication has been confirmed. It also allows secure processor 420 to send secret data, such as accounting data, to central station 446. Means for sending data (e.g., keys) securely via an insecure communication channel are well known. Examples of such means are key exchange protocols disclosed in \u201cApplied Cryptography: Protocols, Algorithms, and Source Code in C,\u201d published 1994 by John Wiley & Sons, Inc., and the references cited therein., 53139=It should be pointed out that even though the degree of error tolerance has some relationship to the degree of correlation of information, it does not depend solely on the degree of correlation. For example, a person typically does not tolerate a small distortion in a familiar song while may tolerate a large distortion in a new song, even though the degree of correlation of these two songs is the same. As another example, a reader is likely to tolerate a large number of missing words in a newspaper article. On the other hand, the same reader probably would not tolerate the same percentage of missing words in a poem. Thus, even though the degree of correlation of the newspaper article and poem may be the same (because they follow essentially the same grammar rules), the degree of error tolerance is different. This is because error tolerance depends, to a certain extent, on subjective considerations., 51301=In the middle of this spectrum of correlation is text information. The structure of many languages dictates that redundant words or letters be used at predetermined positions of a sentence. Thus, it is possible to guess missing words and letters in a sentence. For example, the grammar of the English language imposes a set of rules which includes putting the letter \u201cs\u201d at the end of a noun to designate plural quantity. In many sentences, the noun is not the only place where plural quantity is indicated. For example, the sentence \u201cthere are two birds\u201d uses the word \u201ctwo\u201d to indicate the existence of more than one bird, in addition to the letter \u201cs\u201d attached to the word \u201cbird.\u201d Thus, the letter \u201cs\u201d at the end of the word \u201cbird\u201d is correlated to the word \u201ctwo\u201d in the above sentence. Similarly, the word \u201care\u201d is correlated with the word \u201ctwo.\u201d}",
+    "textBeforeTable": "Patent Citations There has thus shown and described a novel information distribution and process system. Many changes, modifications, variations and other uses and application of the subject invention will become apparent to those skilled in the art after considering this specification and the accompanying drawings. All such changes, modifications, variations, uses, and applications are covered by the scope of this invention which is limited only by the appended claims. In another embodiment of system 400, the \u201cunencrypted\u201d set of data is actually encrypted using a simple encryption algorithm. This embodiment increases the cost of the system, and in return, improves the security of the system. Thus, the present invention offers different level of security to match the need of the information providers. In response to the digitized movie data, video interface 436 generates analog video signal. Even though the above described method and device is able to distribute and process digital signals securely, the analog output video signal could be recorded and copied. Thus, it may be desirable to include a system of analog copy protection 438 in video interface 436. Examples of such a system are described in U.S. Pat. Nos. 4,577,216 and 4,631,603 issued to Ryan. Alternatively, digital signals for generating analog copy protection signal may be embedded into the digitized movie data. Secure processor 420 decompresses and decrypts the encryption residual data using the decryption key received from the central station",
+    "textAfterTable": "US4307416 Nov 5, 1979 Dec 22, 1981 Spano John D Television signal modification apparatus US4430639 May 21, 1981 Feb 7, 1984 Benvar Associates, C/O Dale Bennett Visual message intercommunication unit and system US4442502 Mar 30, 1981 Apr 10, 1984 Datapoint Corporation Digital information switching system US4528643 Jan 10, 1983 Jul 9, 1985 Fpdc, Inc. System for reproducing information in material objects at a point of sale location US4556904 Mar 4, 1983 Dec 3, 1985 Rca Corporation Teletext system having user prompt commands US4563702 May 27, 1983 Jan 7, 1986 M/A-Com Linkabit, Inc. Video signal scrambling and descrambling systems US4598318 Jun 10, 1983 Jul 1, 1986 General Instrument Corporation Video encryption system US4635113 Jun 29, 1984 Jan 6, 1987 Sony Corporation Apparatus for descrambling transmitted scrambled television signals US4649384 Oct 7, 1983 Mar 10, 1987 Dialogic Systems Corp.",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 3,
+    "headerRowIndex": 0
+}

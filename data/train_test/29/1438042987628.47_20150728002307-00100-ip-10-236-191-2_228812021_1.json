@@ -1,0 +1,76 @@
+{
+    "relation": [
+        [
+            "S",
+            "",
+            "6 (1)",
+            "13 (2)",
+            "20",
+            "27 (1)"
+        ],
+        [
+            "M",
+            "",
+            "7 (10)",
+            "14 (2)",
+            "21",
+            "28 (1)"
+        ],
+        [
+            "T",
+            "1",
+            "8 (7)",
+            "15",
+            "22",
+            "29"
+        ],
+        [
+            "W",
+            "2 (4)",
+            "9 (3)",
+            "16",
+            "23",
+            "30 (2)"
+        ],
+        [
+            "T",
+            "3 (5)",
+            "10 (10)",
+            "17",
+            "24 (3)",
+            "31"
+        ],
+        [
+            "F",
+            "4 (6)",
+            "11",
+            "18",
+            "25",
+            ""
+        ],
+        [
+            "S",
+            "5 (1)",
+            "12",
+            "19",
+            "26 (1)",
+            ""
+        ]
+    ],
+    "pageTitle": "Inkscape / Mailing Lists",
+    "title": "",
+    "url": "http://sourceforge.net/p/inkscape/mailman/inkscape-translator/?viewmonth=200801&page=2",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042987628.47/warc/CC-MAIN-20150728002307-00100-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 228824247,
+    "recordOffset": 228812021,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "Dec \u00a0 Nov \u00a0 Oct \u00a0 Sep \u00a0 Aug \u00a0 Jul (27) Jun (13) May (12) Apr (11) Mar (8) Feb (42) Jan (31) 2015 Dec \u00a0 Nov (7) Oct (28) Sep (1) Aug \u00a0 Jul (2) Jun (2) May (8) Apr (14) Mar \u00a0 Feb (1) Jan (1) 2014 Dec (7) Nov (2) Oct (2) Sep \u00a0 Aug (1) Jul \u00a0 Jun \u00a0 May (2) Apr (5) Mar (12) Feb \u00a0 Jan (21) 2013",
+    "textAfterTable": "Showing 25 50 100 250 results of 59 Flat | Threaded << < 1 2 3 (Page 3 of 3) Re: [Inkscape-translator] Breton file sent :) From: Luca Bruno <gnug.torte@em...> - 2008-01-03 19:15:36 Attachments: Message as HTML\u00a0\u00a0\u00a0\u00a0 alan.monfort@... scrisse: > Hi, > I've sent it. > Thanks for your speedy answer :) Hi Alan and thanks for your contribution. I've just committed it within SVN rev 16919. Can you please confirm that your locale code is br_FR? (it should be that, if I've read right all the docs). Some of your strings contained a bad markup (many unclosed <b> tag); please note that we have a check-markup script (in the po/ dir) to automatically find them all (and correct :). Moreover, it looks like the po was edited under Windows, so in future the next one who'll commit it please remember to check that and=20 convert the end-of-line from DOS to UNIX style if needed again. > Best regards > Alan Cheers, Luca --=20 .''`. ** Debian GNU/Linux ** | Luca Bruno : :' : The Universal",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

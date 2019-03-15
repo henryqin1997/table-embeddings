@@ -1,0 +1,45 @@
+{
+    "relation": [
+        [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Name",
+            "Action",
+            "Path",
+            "PermissionAccess",
+            "TypeId",
+            "Unrestricted"
+        ],
+        [
+            "Description",
+            "Gets or sets a security action. (Inherited from SecurityAttribute.)",
+            "Gets or sets a path to an Active Directory Domain Services node to which the permissions apply.",
+            "Gets or sets the access levels that are used in creating permissions.",
+            "When implemented in a derived class, gets a unique identifier for this Attribute. (Inherited from Attribute.)",
+            "Gets or sets a value indicating whether full (unrestricted) permission to the resource protected by the attribute is declared. (Inherited from SecurityAttribute.)"
+        ]
+    ],
+    "pageTitle": "DirectoryServicesPermissionAttribute Class (System.DirectoryServices)",
+    "title": "",
+    "url": "https://msdn.microsoft.com/en-US/library/system.directoryservices.directoryservicespermissionattribute(v=vs.100).aspx",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042985647.51/warc/CC-MAIN-20150728002305-00102-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 895510359,
+    "recordOffset": 895493455,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{16998=Windows 7, Windows Vista SP1 or later, Windows XP SP3, Windows XP SP2 x64 Edition, Windows Server 2008 (Server Core not supported), Windows Server 2008 R2 (Server Core supported with SP1 or later), Windows Server 2003 SP2}",
+    "textBeforeTable": "Properties Top Initializes a new instance of the DirectoryServicesPermissionAttribute class. DirectoryServicesPermissionAttribute Description Name \u00a0 Constructors The DirectoryServicesPermissionAttribute type exposes the following members. publicclassfalsetrue     Copy   VB  F#  C++  C# Syntax System.DirectoryServices (in System.DirectoryServices.dll) Assembly: \u00a0 System.DirectoryServices Namespace: \u00a0 System.DirectoryServices.DirectoryServicesPermissionAttribute \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 System.Security.Permissions.CodeAccessSecurityAttribute \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 System.Security.Permissions.SecurityAttribute \u00a0\u00a0\u00a0\u00a0 System.Attribute \u00a0\u00a0 System.Object DirectoryServicesPermissionAttribute : CodeAccessSecurityAttribute Inherited = )] [AttributeUsageAttribute(AttributeTargets.Assembly|AttributeTargets.Class|AttributeTargets.Struct|AttributeTargets.Constructor|AttributeTargets.Method|AttributeTargets.Event, AllowMultiple = , [SerializableAttribute]",
+    "textAfterTable": "Top Methods \u00a0 Name Description CreatePermission Creates permissions based on the attribute's specifications. (Overrides SecurityAttribute.CreatePermission().) Equals Infrastructure. Returns a value that indicates whether this instance is equal to a specified object. (Inherited from Attribute.) Finalize Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection. (Inherited from Object.) GetHashCode Returns the hash code for this instance. (Inherited from Attribute.) GetType Gets the Type of the current instance. (Inherited from Object.) IsDefaultAttribute When overridden in a derived class, indicates whether the value of this instance is the default value for the derived class. (Inherited from Attribute.) Match",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

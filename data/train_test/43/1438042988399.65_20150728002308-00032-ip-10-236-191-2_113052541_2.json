@@ -1,0 +1,49 @@
+{
+    "relation": [
+        [
+            "Item",
+            "type",
+            "capacity",
+            "usedCapacity",
+            "maxCapacity",
+            "queueName",
+            "queues"
+        ],
+        [
+            "Data Type",
+            "string",
+            "float",
+            "float",
+            "float",
+            "string",
+            "array of queues(JSON)/zero or more queue objects(XML)"
+        ],
+        [
+            "Description",
+            "Scheduler type - capacityScheduler",
+            "Configured queue capacity in percentage relative to its parent queue",
+            "Used queue capacity in percentage",
+            "Configured maximum queue capacity in percentage relative to its parent queue",
+            "Name of the queue",
+            "A collection of queue resources"
+        ]
+    ],
+    "pageTitle": "Apache Hadoop 2.4.1 - ResourceManager REST API's.",
+    "title": "",
+    "url": "http://hadoop.apache.org/docs/r2.4.1/hadoop-yarn/hadoop-yarn-site/ResourceManagerRest.html",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 2,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988399.65/warc/CC-MAIN-20150728002308-00032-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 113068487,
+    "recordOffset": 113052541,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{60634=Multiple parameters can be specified. The started and finished times have a begin and end parameter to allow you to specify ranges. For example, one could request all applications that started between 1:00am and 2:00pm on 12/19/2011 with startedTimeBegin=1324256400&startedTimeEnd=1324303200. If the Begin parameter is not specified, it defaults to 0, and if the End parameter is not specified, it defaults to infinity.}",
+    "lastModified": "Mon, 30 Jun 2014 08:10:58 GMT",
+    "textBeforeTable": "Elements of the clusterInfo object  None Query Parameters Supported  * GET HTTP Operations Supported * http://<rm http address:port>/ws/v1/cluster/info  * http://<rm http address:port>/ws/v1/cluster  Both of the following URI's give you the cluster information. URI The cluster information resource provides overall information about the cluster. Cluster Information API The ResourceManager REST API's allow the user to get information about the cluster - status on the cluster, metrics on the cluster, scheduler information, information about nodes in the cluster, and information about applications on the cluster. Overview Cluster Node API Cluster Nodes API Cluster Application Attempts API Cluster Application API Cluster Application Statistics API Cluster Applications API Cluster Scheduler API Cluster Metrics API Cluster Information API Overview ResourceManager REST API's. [ Go Back ] ResourceManager REST API's.",
+    "textAfterTable": "resourceManagerVersionBuiltOn string Timestamp when ResourceManager was built (in ms since epoch) hadoopVersion string Version of hadoop common hadoopBuildVersion string Hadoop common build string with build version, user, and checksum hadoopVersionBuiltOn string Timestamp when hadoop common was built(in ms since epoch) Response Examples JSON response HTTP Request:  GET http://<rm http address:port>/ws/v1/cluster/info Response Header:  HTTP/1.1 200 OK Content-Type: application/json Transfer-Encoding: chunked Server: Jetty(6.1.26) Response Body: { \"clusterInfo\": { \"id\":1324053971963, \"startedOn\":1324053971963, \"state\":\"STARTED\", \"resourceManagerVersion\":\"0.23.1-SNAPSHOT\", \"resourceManagerBuildVersion\":\"0.23.1-SNAPSHOT from 1214049 by user1 source checksum 050cd664439d931c8743a6428fd6a693\", \"resourceManagerVersionBuiltOn\":\"Tue Dec 13 22:12:48 CST 2011\", \"hadoopVersion\":\"0.23.1-SNAPSHOT\", \"hadoopBuildVersion\":\"0.23.1-SNAPSHOT from 1214049 by user1 source checksum 11458df3bb77342dca5f917198fad328\", \"hadoopVersionBuiltOn\":\"Tue Dec 13 22:12:26 CST 2011\" } } XML response HTTP Request:  Accept: application/xml GET http://<rm http address:port>/ws/v1/cluster/info Response Header:  HTTP/1.1 200 OK Content-Type: application/xml Content-Length: 712 Server: Jetty(6.1.26) Response Body: <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?> <clusterInfo> <id>1324053971963</id> <startedOn>1324053971963</startedOn> <state>STARTED</state> <resourceManagerVersion>0.23.1-SNAPSHOT</resourceManagerVersion> <resourceManagerBuildVersion>0.23.1-SNAPSHOT from 1214049 by user1 source checksum 050cd664439d931c8743a6428fd6a693</resourceManagerBuildVersion> <resourceManagerVersionBuiltOn>Tue Dec 13 22:12:48 CST 2011</resourceManagerVersionBuiltOn> <hadoopVersion>0.23.1-SNAPSHOT</hadoopVersion> <hadoopBuildVersion>0.23.1-SNAPSHOT from 1214049 by user1 source checksum 11458df3bb77342dca5f917198fad328</hadoopBuildVersion> <hadoopVersionBuiltOn>Tue Dec 13 22:12:48 CST 2011</hadoopVersionBuiltOn> </clusterInfo> Cluster Metrics API The cluster metrics resource provides some overall metrics about the cluster. More detailed metrics should be retrieved from the jmx interface. URI  * http://<rm http address:port>/ws/v1/cluster/metrics",
+    "hasKeyColumn": true,
+    "keyColumnIndex": 0,
+    "headerRowIndex": 0
+}

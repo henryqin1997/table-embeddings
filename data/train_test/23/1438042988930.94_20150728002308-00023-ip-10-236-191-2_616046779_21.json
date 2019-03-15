@@ -1,0 +1,64 @@
+{
+    "relation": [
+        [
+            "Count",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1",
+            "1"
+        ],
+        [
+            "Component",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        [
+            "Identifier",
+            "latitude",
+            "longitude_min",
+            "sea_level_elev_ft",
+            "obs_grav",
+            "terr_corr",
+            "curvature_corr",
+            "Free_air_anom",
+            "Bouguer_anom"
+        ],
+        [
+            "Descriptor",
+            "This is the geographic latitude expressed as a decimal number. The units are degrees. The range is -90.0 to +90.0.",
+            "The minute portion of the longitude when the longitude is given in degrees, minutes, and seconds. Values range from 0 to less than 60.",
+            "Height of the surface of observation above sea level, in feetNOTE: most often from terrain surface but may be from lake surface.",
+            "The observed, or measured value of gravity in mGals at an occupied gravity station.",
+            "The terrain correction is an adjustment to the simple Bouguer correction that accounts for variations in terrain above and below the elevation of the gravity station at distances away from the point of measurement. Terrain below and above the level of the theoretical horizontal slab used to make the simple Bouguer correction results in a mass deficiency or excess that always yields an erroneously low gravity measurement at the point of observation. As a consequence, the terrain correction is always added to the simple Bouguer correction.",
+            "The Bouguer gravity correction assumes that the mass between the measurement elevation and sea level can be approximated by an infinite slab (often using a slab density of 2.67 grams per cc). The curvature correction is subtracted from the Bouguer gravity correction and compensates for the mass of this slab which extends beyond the curvature of the Earth. The U.S. Geological Survey computes it as follows: curvature_corr = elev*(1.4639108e-3+elev*(4.449648e-14*elev-3.532715e-7))Where elev is the elevation of the gravity station in meters and the curvature correction is in units of milligals. This correction rarely exceeds a few tenths of a milligal and is often omitted.",
+            "The anomalous gravity difference between an observed value and theoretical value. The gravity data has been corrected for latitude and elevation (free-air correction), but not for the density of the rock between datum and the plane of measurement (Bouguer correction).",
+            "The residual value obtained after latitude correction, elevation correction (including both free-air and Bouguer corrections) and terrain corrections have been applied to gravity data. In many situations the terrain correction is assumed to be zero. When this is explicitly documented, the term \" Simple Bouguer Anomaly \" is often used. When one explicitly documents that the terrain correction has been applied the term \" Complete Bouguer Anomaly \" is often used."
+        ]
+    ],
+    "pageTitle": "Docucomp ISO19115Components-HTMLTable",
+    "title": "",
+    "url": "http://www.ngdc.noaa.gov/docucomp/page?xml=NOAA/NESDIS/NGDC/MGG/Geophysics/iso/xml/G01475.xml&view=ISO19115Components-HTMLTable&altview=none",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 21,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988930.94/warc/CC-MAIN-20150728002308-00023-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 616054981,
+    "recordOffset": 616046779,
+    "tableOrientation": "HORIZONTAL",
+    "textBeforeTable": "MD_DataIdentification Aggregation Info | Bands | Citations | Constraints | Coverage Descriptions | Dimensions | Extents | Formats | Geographic Bounding Box Georectified Information | Georeferenceable Information | Identifiers | Instruments | Mediums | OnlineResources | Operations Platforms | Process Steps | Range Elements | Reference Systems | Responsible Parties | Series | Sources | Spatial Grids | Temporal Extents Metadata Identifier: gov.noaa.ngdc.mgg.geophysics:G01475Get DataFAQHTML, 19139 XML Assess Metadata For: Completeness, DOI Readiness, CSW Readiness, Components ISO Table ViewBack to Collection NOAA/NESDIS/NGDC/MGG/Geophysics View Metadata As: , , } background-color:#F0F0F0; th{ } empty-cells:show; table{",
+    "textAfterTable": "2012-08-10 1 GCMD Data Center Keywords NASA/GCMD Data Center Keywords 1 GCMD Location Keywords NASA/GCMD Location Keywords 1 NASA/GCMD Science Keywords NASA/Global Change Master Directory (GCMD) Earth Science Keywords 2007-04 1 Uncontrolled Keywords Top CI_Series none found Top CI_ResponsibleParty Count Component Individual Organization Position Email Role Linkage 1 resourceProvider http://www.epsg-registry.org/export.htm?gml=urn:ogc:def:crs:EPSG::5715 2 GCMD Valids custodian http://gcmd.nasa.gov/learn/keyword_list.html 2 Brian Meyer Brian Meyer DOC/NOAA/NESDIS/NGDC > National Geophysical Data Center, NESDIS, NOAA, U.S. Department of Commerce Brian.Meyer@noaa.gov pointOfContact",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}

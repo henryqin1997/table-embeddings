@@ -1,0 +1,57 @@
+{
+    "relation": [
+        [
+            "Warning",
+            "C4146",
+            "C4308",
+            "C4532",
+            "C4533",
+            "C4700",
+            "C4703",
+            "C4789",
+            "C4995",
+            "C4996"
+        ],
+        [
+            "Command line switch",
+            "/we4146",
+            "/we4308",
+            "/we4532",
+            "/we4533",
+            "/we4700",
+            "/we4703",
+            "/we4789",
+            "/we4995",
+            "/we4996"
+        ],
+        [
+            "Description",
+            "A unary minus operator was applied to an unsigned type, resulting in an unsigned result",
+            "A negative integral constant converted to unsigned type, resulting in a possibly meaningless result",
+            "Use of \"continue\", \"break\" or \"goto\" keywords in a __finally/finally block has undefined behavior during abnormal termination",
+            "Code initializing a variable will not be executed",
+            "Use of an uninitialized local variable",
+            "Potential use of an uninitialized local pointer variable",
+            "Buffer overrun when specific C runtime (CRT) functions are used",
+            "Use of a function marked with pragma deprecated",
+            "Use of a function marked as deprecated"
+        ]
+    ],
+    "pageTitle": "Secure Development Is Much Easier Than You Think | Dr Dobb's",
+    "title": "",
+    "url": "http://www.drdobbs.com/open-source/mojax-mobile-ajax-framework/mobile/secure-development-is-much-easier-than-y/240158709",
+    "hasHeader": true,
+    "headerPosition": "FIRST_ROW",
+    "tableType": "RELATION",
+    "tableNum": 1,
+    "s3Link": "common-crawl/crawl-data/CC-MAIN-2015-32/segments/1438042988065.26/warc/CC-MAIN-20150728002308-00340-ip-10-236-191-2.ec2.internal.warc.gz",
+    "recordEndOffset": 422423243,
+    "recordOffset": 422393993,
+    "tableOrientation": "HORIZONTAL",
+    "TableContextTimeStampAfterTable": "{26292=Finally, there is an easy way! Visual Studio 2012 has introduced the SDL switch, which enables these functions and more automatically. In addition to enabling the flags already discussed, /SDL causes a number of compiler warnings to be treated as errors \u0097 the Microsoft SDL treats these warnings as mandatory for native code:, 24961=Note that/GS is enabled by default in Visual Studio 2012., 18275=By Arjuna Shunn, July 22, 2013}",
+    "textBeforeTable": "The /GS switch provides a \"speed bump\" or cookie between the buffer and the return address. If an overflow writes over the return address, it will have to overwrite the cookie put in between it and the buffer, resulting in a new stack layout: Buffer Security Check It is important to automate your build to use the right flags and switches. Some security switches exist in Visual Studio that will mitigate a wide variety of known and dangerous issues. Some of these issues are the most common types of attacks seen against client software (non-Web based); specifically, memory corruption and error handling. To effectively mitigate memory-corruption issues, there are two tacks to take. The first of these, and easiest, is to randomize the stack and heap so that even if an app causes an overflow condition, the randomized location of that program in memory makes it extremely difficult to actually predict the execution path for the injected instructions. Randomizing the heap and stack, and mitigating other common exploits, can be done simply by enabling the /GS, /DYNAMICBASE, /NXCOMPAT, /SAFESEH, and APTCA functions in Visual Studio. To break these down a bit, let's examine each in turn: Visual Studio When it comes to code-time security, compiler flags are your best friend for identifying low-hanging fruit and are still vastly underutilized for the benefit they provide. Security at Code-Time Tools are good, automated is better. If a developer must stop coding or break out of the IDE to run a test, the",
+    "textAfterTable": "C4533 /we4533 Code initializing a variable will not be executed C4700 /we4700 Use of an uninitialized local variable C4703 /we4703 Potential use of an uninitialized local pointer variable C4789 /we4789 Buffer overrun when specific C runtime (CRT) functions are used C4995 /we4995 Use of a function marked with pragma deprecated C4996 /we4996 Use of a function marked as deprecated GCC While the aforementioned are Microsoft-centric approaches to security during compile, other compilers are not lacking for such features. GCC, for example, has a suite of capabilities that provide much of the same type of coverage, from stack protection to setting memory sections to read-only, to ASLR. Let's look at each in turn. gcc \u00adfstack\u00adprotector -fstack-protector provides a randomized stack \"canary\" that protects against stack overflows and reduces the chances of arbitrary code execution by controlling return address destinations. RELRO ld \u00adz relro hardens ELF programs against loader memory area overwrites by having the loader mark any areas of the relocation table as read-only for any symbols resolved at load-time (\"read-only relocations\") to reduce possible GOT-overwrite-style memory corruption attacks. PIE ld \u00adpie / gcc \u00adfPIE: The gcc equivalent to DYNAMICBASE is -fPIE, which provides ASLR support. This protects against \"return-to-text\" and provides good mitigation of memory",
+    "hasKeyColumn": false,
+    "keyColumnIndex": -1,
+    "headerRowIndex": 0
+}
