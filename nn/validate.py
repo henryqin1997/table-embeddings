@@ -120,8 +120,8 @@ def main():
     test_size = int(len(dataset) * test_ratio)
     train_dataset, test_dataset = torch.utils.data.random_split(dataset, [len(dataset) - test_size, test_size])
 
-    train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size)
-    test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size)
+    train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+    test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 
     model.load_state_dict(torch.load('nn/model_{}.pt'.format(column_index),
                                      map_location=lambda storage, location: storage))
