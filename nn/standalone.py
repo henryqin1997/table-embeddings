@@ -73,9 +73,7 @@ def predict(input, target):
 
 
 if __name__ == "__main__":
-    table_index = 49551
-    training_files = json.load(open('data/training_files_shuffle.json'))
-    table_path = os.path.join('data/train',training_files[table_index])
+    table_path = os.path.join('data/train/4/1438042982502.13_20150728002302-00334-ip-10-236-191-2_468708662_7.json')
     data = json.load(open(table_path))
     input, target = generate_input_target(data)
     prediction = predict(input, target)
