@@ -66,8 +66,8 @@ def predict(input, target):
         with torch.no_grad():
             columns = torch.from_numpy(input.reshape(-1)).float().to(device)
             out = model(columns)
-            _, predicted = torch.max(out.data, 0)
-            # _, predicted = torch.max(out.data[:-1], 0)  # Do not predict OTHER
+            # _, predicted = torch.max(out.data, 0)
+            _, predicted = torch.max(out.data[:-1], 0)  # Do not predict OTHER
             prediction[column_index] = predicted.item()
 
     return prediction
