@@ -22,6 +22,8 @@ test_ratio = 0.1
 wordlist = list(map(itemgetter(0), json.load(open('data/wordlist_v6_index.json')).items()))
 wordlist.append('OTHER')
 
+wordlist_mapping = json.load(open('data/wordlist_v6_mapping_index.json'))
+
 
 class NeuralNet(nn.Module):
     def __init__(self):
@@ -80,5 +82,6 @@ if __name__ == "__main__":
     prediction = predict(input, target)
     print('Correct: {}'.format(get_labels(target)))
     print('Predict: {}'.format(get_labels(prediction)))
+    target_mapped = np.vectorize(lambda label: wordlist_mapping[label])(target[target != -1])
     print('Accuracy of the network on the test table: {:.2f}%'.format(
-        100 * compute_accuracy(prediction[target != -1], target[target != -1])))
+        100 * compute_accuracy(prediction[target != -1], target_mapped)))
