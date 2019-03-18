@@ -103,7 +103,8 @@ def main():
             columns = columns.float().to(device)
             labels = labels.to(device)
             out = model(columns)
-            _, predicted = torch.max(out.data, 1)
+            # _, predicted = torch.max(out.data, 1)
+            _, predicted = torch.max(out.data[:, :-1], 1)  # Do not predict OTHER
             acc = compute_accuracy(predicted, labels)
             acc = running_acc if np.isnan(acc) else acc
             running_acc += (acc - running_acc) / (batch_index + 1)
