@@ -25,6 +25,8 @@ test_ratio = 0.1
 wordlist = list(map(itemgetter(0), json.load(open('data/wordlist_v6_index.json')).items()))
 wordlist.append('OTHER')
 
+wordlist_mapping = json.load(open('data/wordlist_v6_mapping_index.json'))
+
 training_files = json.load(open('data/training_files_shuffle.json'))
 
 
@@ -78,6 +80,9 @@ def main():
     inputs = inputs[targets != -1]
     indices = indices[targets != -1]
     targets = targets[targets != -1]
+
+    # Label mapping (multilingual, synonym, etc.)
+    targets = np.vectorize(lambda label: wordlist_mapping[label])(targets)
 
     dataset = TableDataset(inputs, targets, indices)
 
