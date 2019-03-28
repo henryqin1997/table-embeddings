@@ -9,7 +9,7 @@ if __name__ == '__main__':
     for table in tables('data/training_files.json', prefix='webtables', print_progress=True):
         index = table.get_data()['keyColumnIndex']
         if index >= 0:
-            key_column_stats[table.get_header()[index]][index] += 1
+            key_column_stats[table.get_header()[index].lower().strip()][index] += 1
 
     for k, v in key_column_stats.items():
         key_column_stats[k] = dict(sorted(key_column_stats[k].items(), key=itemgetter(1), reverse=True))
