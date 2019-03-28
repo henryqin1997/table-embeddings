@@ -6,7 +6,7 @@ from .generator import tables
 if __name__ == '__main__':
     key_column_stats = defaultdict(lambda: defaultdict(int))
 
-    for table in tables('data/training_files_100_sample.json', prefix='data/train_100_sample'):
+    for table in tables('data/training_files.json', prefix='webtables'):
         index = table.get_data()['keyColumnIndex']
         if index >= 0:
             key_column_stats[table.get_header()[index]][index] += 1
